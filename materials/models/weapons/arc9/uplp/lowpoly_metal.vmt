@@ -1,0 +1,11 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/uplp/pallete"
+	"$bumpmap" "models/weapons/arc9/uplp/nrm"
+	"$phongwarptexture" "models/weapons/arc9/uplp/phongwarp"
+	"$phong" "1"
+	"$phongboost" "0.75"
+	"$phongexponent" "50"
+	"$phongfresnelranges" "[666.6 14 211]"
+	"$nocull" "1"
+}
