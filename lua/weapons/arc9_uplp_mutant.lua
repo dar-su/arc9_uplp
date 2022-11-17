@@ -158,7 +158,14 @@ SWEP.WorldModelOffset = {
 
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineTime = 0.4
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
+SWEP.DropMagazineTime = 0.75
+SWEP.DropMagazineQCA = 5
+SWEP.DropMagazinePos = Vector(0, 0, 0)
+SWEP.DropMagazineAng = Angle(0, 0, 0)
+SWEP.DropMagazineVelocity = Vector(25, 0, -15)
+-- SWEP.DropMagazineVelocity = Vector(0, 0, 0)
+
 -- Weapon sounds --
 
 local pathAK = "weapons/arccw/ak105/"
@@ -267,7 +274,7 @@ SWEP.Animations = {
             { s = path556 .. "end.ogg", t = 45 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.5},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0.5}
         },
     },
     
@@ -373,7 +380,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, -1),
-        Integral = true
+        Integral = false
     },
     -- {
     --     PrintName = "Optic",
