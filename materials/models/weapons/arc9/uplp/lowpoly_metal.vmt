@@ -8,7 +8,7 @@
 	"$phongexponent" "45"
 	"$phongfresnelranges" "[666.6 14 211]"
 	"$nocull" "1"
-	"$color2" "[.93 .93 .93]"
+	"$color2" "[.75 .75 .75]"
 	"$phongalbedotint" 			"1"
 
 	// "$halflambert" "1"
