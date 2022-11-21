@@ -3,9 +3,9 @@ $modelname "weapons\arc9\c_uplp_mutant.mdl"
 $bodygroup "mutant" {
 	studio "mutant.smd"
 }  
-$bodygroup "mag" {
-	studio "ak762pmag_legacy.smd"
-}  
+// $bodygroup "mag" {
+	// studio "ak762pmag_legacy.smd"
+// }  
 $bodygroup "barrel" {
 	studio "mutant_barrelshort.smd"
 	studio "mutant_barrellong.smd"

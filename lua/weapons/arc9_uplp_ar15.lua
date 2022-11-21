@@ -74,11 +74,12 @@ SWEP.RecoilSide = 0.8
 SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.3
 SWEP.RecoilAutoControl = 7
-
 SWEP.RecoilRise = 0
 SWEP.VisualRecoilMult = 0.5
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
+
+SWEP.RecoilMultSights = 0.8
 
 -- Firerate / Firemodes --
 
@@ -160,11 +161,11 @@ SWEP.WorldModelOffset = {
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
-SWEP.DropMagazineTime = 0.75
-SWEP.DropMagazineQCA = 5
-SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(0, 0, 0)
-SWEP.DropMagazineVelocity = Vector(25, 0, -15)
+SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineQCA = 4
+SWEP.DropMagazinePos = Vector(0, 5, -3)
+SWEP.DropMagazineAng = Angle(90, 90, 90)
+SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 -- SWEP.DropMagazineVelocity = Vector(0, 0, 0)
 
 -- Weapon sounds --
@@ -187,26 +188,7 @@ SWEP.BulletBones = {
 }
 
 -- Animations --
-SWEP.HideBones = {
-    "fakemag",
-    "fakerounds",
-    "bullet1",
-    "bullet2",
-    "bullet3",
-}
 
-SWEP.ReloadHideBoneTables = {
-    [1] = {
-        "mag",
-    },
-    [2] = {
-        "fakemag",
-        "fakerounds",
-        "bullet1",
-        "bullet2",
-        "bullet3",
-    }
-}
 
 SWEP.Animations = {
     ["idle"] = {
@@ -249,21 +231,16 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        HideBoneIndex = 1,
         EventTable = {
             { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = path .. "magout_metal.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = path .. "magdrop_metal.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = path .. "magin_metal.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 27 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.5},
-            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        HideBoneIndex = 1,
         EventTable = {
             { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = path .. "magout_metal.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -271,9 +248,6 @@ SWEP.Animations = {
             { s = path .. "magin_metal.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path .. "chamber.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.5},
-            {hide = 2, t = 0.5}
         },
     },
     
@@ -348,6 +322,13 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_rs"},
         Bone = "body",
         Pos = Vector(0.045, -0.2, 0.326),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = "Optic",
+        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Bone = "body",
+        Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
     },
     {
