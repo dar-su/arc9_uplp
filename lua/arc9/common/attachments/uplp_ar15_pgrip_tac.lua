@@ -5,7 +5,7 @@ ATT.Description = [[A Tactical pistol grip for AR-15 type rifles.]]
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
-ATT.ModelBodygroups = "2"
+ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
 -- ATT.SortOrder = 0

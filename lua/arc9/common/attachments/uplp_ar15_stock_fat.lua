@@ -1,6 +1,6 @@
-ATT.PrintName = "M4 SOPMOD Stock"
-ATT.CompactName = "SOPMOD"
-ATT.Description = [[A M4 SOPMOD stock for AR-15 type rifles.]]
+ATT.PrintName = "M4 Bravo Stock"
+ATT.CompactName = "Bravo"
+ATT.Description = [[A M4 Bravo stock for AR-15 type rifles.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

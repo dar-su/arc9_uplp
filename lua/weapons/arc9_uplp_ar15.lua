@@ -333,7 +333,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = "Stock",
-        Category = {"uplp_ar15_stock"},
+        Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
         Bone = "body",
         Pos = Vector(0.045, 0.99, -2.98),
         Ang = Angle(90, 90, 180),

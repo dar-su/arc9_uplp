@@ -10,6 +10,8 @@ $bodygroup "body"
 	studio "grip_massive.smd" // 3
 	studio "grip_416.smd" // 4
 	studio "grip_psg.smd" // 5
+	studio "grip_skelet.smd" // 6
+	studio "grip_skelet_red.smd" // 7
 }
 
 $sequence "idle" {

@@ -18,4 +18,10 @@ ATT.Attachments = {
         Pos = Vector(-13.4, 0, 0.4),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = "Muzzle",
+        Category = "uplp_muzzle",
+        Pos = Vector(-18.97, 0, 0.34),
+        Ang = Angle(0, 0, 0),
+    },
 }
