@@ -97,9 +97,8 @@ $sequence "fire_01" {
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
-	fadein 0.05
-	fadeout 0.05
-	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.08
 }
 
 $sequence "fire_02" {
@@ -108,9 +107,8 @@ $sequence "fire_02" {
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
-	fadein 0.05
-	fadeout 0.05
-	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.08
 }
 
 $sequence "fire_03" {
@@ -119,9 +117,8 @@ $sequence "fire_03" {
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
-	fadein 0.05
-	fadeout 0.05
-	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.08
 }
 
 $sequence "fire_empty" {
@@ -130,9 +127,8 @@ $sequence "fire_empty" {
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
-	fadein 0.03
-	fadeout 0.03
-	{ event 5001 0 "1" }
+	fadein 0.02
+	fadeout 0.08
 }
 
 $sequence "ready" {

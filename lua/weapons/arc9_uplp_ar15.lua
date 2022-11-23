@@ -85,13 +85,13 @@ SWEP.RecoilMultCrouch = 0.75
 
 
 SWEP.UseVisualRecoil = true 
-SWEP.VisualRecoil = 1
-SWEP.VisualRecoilMultHipFire = 0
+SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoilMultHipFire = 0.03
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.5 -- Vertical tilt
-SWEP.VisualRecoilSide = 0.2 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 4 -- Roll tilt
+SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
+SWEP.VisualRecoilSide = 0 -- Horizontal tilt
+SWEP.VisualRecoilRoll = 2 -- Roll tilt
 SWEP.VisualRecoilPunch = 4 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 50
 SWEP.VisualRecoilSpringMagnitude = 0.14
@@ -209,6 +209,7 @@ SWEP.BulletBones = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
+        -- Time = 0.1,
     },
     ["ready"] = {
         Source = "ready",
@@ -224,13 +225,23 @@ SWEP.Animations = {
             { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
         },
     },
-    -- ["draw"] = {
-    --     Source = "idle",
-    --     time = 0.95,
-    -- },
+
+            ["draw"] = {
+                Source = "ready",
+                -- Framerate = 30,
+                -- time = 35 / 30,
+                -- LHIK = true,
+                -- LHIKIn = 0,
+                -- LHIKEaseOut = 0.2,
+                -- LHIKOut = 0.6,
+                EventTable = {
+                    { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+                    { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
+                    { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+                },
+            },
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
-        Framerate = 30,
         Time = 18 / 30,
         ShellEjectAt = 0.01,
         EventTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},

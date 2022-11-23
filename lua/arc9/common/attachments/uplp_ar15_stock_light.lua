@@ -14,8 +14,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
 
-ATT.RecoilMult = 1.05
-ATT.VisualRecoilMultMult = 1.05
-ATT.VisualRecoilMultSights = 1.05
+ATT.RecoilMult = 0.65
+ATT.VisualRecoilMultMult = 0.65
+ATT.VisualRecoilMultSights = 0.65
 ATT.SpeedMult = 1.05
 ATT.SprintToFireTimeMult = 0.4

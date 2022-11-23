@@ -10,6 +10,8 @@ ATT.FoldSights = true
 ATT.SprintToFireTimeMult = 1.1
 ATT.AimDownSightsTimeMult = 1.1
 ATT.RecoilMultSights = 0.4
+ATT.VisualRecoilPunchMultSights = 0.7
+ATT.VisualRecoilRollMultSights = 0.3
 
 ATT.Sights = {
     {
@@ -17,6 +19,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
+        RTScopeFOV = 57/4,
     },
     {
         Pos = Vector(0, 7, -2.68),
@@ -31,7 +34,7 @@ ATT.Sights = {
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 36/3
+ATT.RTScopeFOV = 57/4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true

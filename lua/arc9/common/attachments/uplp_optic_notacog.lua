@@ -16,14 +16,15 @@ ATT.Sights = {
         Pos = Vector(0, 4, -1.328),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+        RTScopeFOV = 57/3,
     }
 }
 
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 36/3
+ATT.RTScopeFOV = 57/3
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
