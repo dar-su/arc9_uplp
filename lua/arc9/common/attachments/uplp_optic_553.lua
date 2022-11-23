@@ -20,9 +20,9 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 666
+ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"

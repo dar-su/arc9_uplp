@@ -77,7 +77,6 @@ $sequence "idle"{
 	"ACT_VM_IDLE" 1
  	blend "sights" 0 1
 	loop
-	snap
 	node "Ready"
 }
 
