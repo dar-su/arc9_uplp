@@ -9,7 +9,6 @@ SWEP.UseHands = true
 SWEP.MuzzleEffect = "muzzleflash_suppressed" -- Iron sights are much easier to use this way
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellScale = 1.2
-SWEP.ShellMaterial = "models/weapons/arcticcw/shell_556mm"
 SWEP.ShellPitch = 90
 
 SWEP.MuzzleEffectQCA = 1
@@ -310,6 +309,15 @@ SWEP.Animations = {
 
 
 -- Attachments --
+SWEP.Hook_ModifyBodygroups = function(wep, data)
+    local eles = data.elements
+    local mdl = data.model
+    if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] then
+        if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
+            mdl:SetBodygroup(1,1)
+        end
+    end
+end
 
 SWEP.AttachmentElements = {
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
@@ -318,10 +326,11 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } } },
 
 
-    ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } } },
+    ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
     ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
-    ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 } } },
-    ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 } } },
+    ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
+    ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
+    ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
 
     
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
@@ -347,6 +356,7 @@ SWEP.Attachments = {
     {
         PrintName = "Rear sight",
         Category = {"uplp_ar15_rs"},
+        ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
         Bone = "body",
         Pos = Vector(0.045, -0.2, 0.326),
         Ang = Angle(90, 90, 180),
@@ -404,9 +414,30 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         Integral = true
     },
-    {
+    { -- regular mag
         PrintName = "Magazine",
         Category = {"uplp_ar15_556_mag"},
+        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
+        Bone = "mag",
+        Pos = Vector(0, -2.406, -2.428),
+        Ang = Angle(90, 90, 180),
+        Icon_Offset = Vector(1.5, 0, -3),
+        Integral = false
+    },
+    { -- 45acp mag
+        PrintName = "Magazine",
+        Category = {"uplp_ar15_45_mag"},
+        RequireElements = {"uplp_ar15_reciever_45acp"},
+        Bone = "mag",
+        Pos = Vector(0, -2.406, -2.428),
+        Ang = Angle(90, 90, 180),
+        Icon_Offset = Vector(1.5, 0, -3),
+        Integral = false
+    },
+    { -- glock mag
+        PrintName = "Magazine",
+        Category = {"uplp_ar15_glock_mag"},
+        RequireElements = {"uplp_ar15_reciever_stm9"},
         Bone = "mag",
         Pos = Vector(0, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
