@@ -6,7 +6,7 @@ SWEP.UseHands = true
 
 -- Muzzle and shell effects --
 
-SWEP.MuzzleEffect = "muzzleflash_suppressed" -- Iron sights are much easier to use this way
+SWEP.MuzzleEffect = "muzzleflash_1" -- Iron sights are much easier to use this way
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
@@ -91,9 +91,9 @@ SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
 SWEP.VisualRecoilSide = 0 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 2 -- Roll tilt
-SWEP.VisualRecoilPunch = 4 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 50
-SWEP.VisualRecoilSpringMagnitude = 0.14
+SWEP.VisualRecoilSpringMagnitude = 0.44
 
 
 -- Firerate / Firemodes --
@@ -101,10 +101,9 @@ SWEP.VisualRecoilSpringMagnitude = 0.14
 SWEP.RPM = 800
 SWEP.Num = 1
 SWEP.Firemodes = {
-    { Mode = -1 }, 
-    { Mode = 1, RecoilMult = 0.5, RPM = 555 }
+    { Mode = -1, PoseParam = 1 }, 
+    { Mode = 1, RecoilMult = 0.5, RPM = 555, PoseParam = 2 }
 }
-
 SWEP.ShootPitch = 90
 SWEP.ShootVol = 120
 
@@ -128,6 +127,8 @@ SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.5
 SWEP.SprintToFireTime = 0.5
+
+SWEP.AimDownSightsTimeMultRecoil = 2
 
 -- Gun length --
 
@@ -225,20 +226,40 @@ SWEP.Animations = {
         },
     },
 
-            ["draw"] = {
-                Source = "ready",
-                -- Framerate = 30,
-                -- time = 35 / 30,
-                -- LHIK = true,
-                -- LHIKIn = 0,
-                -- LHIKEaseOut = 0.2,
-                -- LHIKOut = 0.6,
-                EventTable = {
-                    { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-                    { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-                    { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
-                },
-            },
+    ["draw"] = {
+        Source = "draw",
+        EventTable = {
+            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["holster"] = {
+        Source = "holster",
+        EventTable = {
+            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+        },
+    },    
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        EventTable = {
+            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["holster_empty"] = {
+        Source = "holster_empty",
+        EventTable = {
+            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
         Time = 18 / 30,
@@ -246,7 +267,7 @@ SWEP.Animations = {
         EventTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},
     },
     ["fire_empty"] = {
-        Source = {"fire_01","fire_02","fire_03"},
+        Source = "fire_empty",
         Framerate = 30,
         Time = 18 / 30,
         ShellEjectAt = 0.01,
@@ -279,31 +300,79 @@ SWEP.Animations = {
     
     -- Inspecc --
 
-    ["enter_inspect"] = {
-        Source = "enter_inspect",
-        time = 10 / 30,
-        Framerate = 30,
-        LHIK = true,
-        LHIKIn = 0.2,
-        LHIKOut = 0,
+    ["inspect"] = {
+        Source = "inspect",
+        -- time = 10 / 30,
+        -- Framerate = 30,
+        -- LHIK = true,
+        -- LHIKIn = 0.2,
+        -- LHIKOut = 0,
+    },    
+    ["inspect_empty"] = {
+        Source = "inspect_empty",
+        -- time = 10 / 30,
+        -- Framerate = 30,
+        -- LHIK = true,
+        -- LHIKIn = 0.2,
+        -- LHIKOut = 0,
     },
-    ["idle_inspect"] = {
-        Source = "idle_inspect",
-        time = 120 / 30,
-        Framerate = 30,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKOut = 0,
+    -- ["idle_inspect"] = {
+    --     Source = "idle_inspect",
+    --     time = 120 / 30,
+    --     Framerate = 30,
+    --     LHIK = true,
+    --     LHIKIn = 0,
+    --     LHIKOut = 0,
+    -- },
+    -- ["exit_inspect"] = {
+    --     Source = "exit_inspect",
+    --     time = 20 / 30,
+    --     Framerate = 30,
+    --     LHIK = true,
+    --     LHIKIn = 0,
+    --     LHIKEaseIn = 0.2,
+    --     LHIKEaseOut = 0.2,
+    --     LHIKOut = 0.5,
+    -- },
+
+    -- Firemodee -- 
+
+    ["firemode_1"] = {
+        Source = "firemode_0",
     },
-    ["exit_inspect"] = {
-        Source = "exit_inspect",
-        time = 20 / 30,
-        Framerate = 30,
-        LHIK = true,
-        LHIKIn = 0,
-        LHIKEaseIn = 0.2,
-        LHIKEaseOut = 0.2,
-        LHIKOut = 0.5,
+    ["firemode_2"] = {
+        Source = "firemode_1",
+    },
+    ["toggle"] = {
+        Source = "modeswitch",
+        EventTable = {
+            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+        }
+    },
+    ["switchsights"] = {
+        Source = "modeswitch",
+        EventTable = {
+            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+        }
+    },    
+    -- same
+    ["firemode_1_empty"] = {
+        Source = "firemode_0_empty",
+    },
+    ["firemode_2_empty"] = {
+        Source = "firemode_1_empty",
+    },
+    ["toggle_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = {
+            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+        }
+    },
+    ["switchsights_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = {
+            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
+        }
     },
 }
 

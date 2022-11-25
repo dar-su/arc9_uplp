@@ -63,11 +63,35 @@ $bbox 0 0 0 0 0 0
 $cbox 0 0 0 0 0 0
 
 $poseparameter "sights" 0 1 loop 0
-$sequence "ref"{
-	"anims\idle_iron.smd"
+$poseparameter "firemode" 1 2 loop 0
+
+$sequence "pose_firemode0" "anims\idle_firemode.smd" {
 	fps 30
-	"ACT_VM_IDLE" 1
 	snap
+}
+
+$sequence "pose_firemode1" "anims\idle.smd" {
+	fps 30
+	snap
+}
+
+$sequence "firemode_pose" {
+	"anims\idle.smd"
+	"anims\idle_firemode.smd"
+	blend "firemode" 1 2
+	blendwidth 2
+	delta
+	autoplay
+	loop
+	fps 10
+	snap
+	subtract "pose_firemode1" 0
+}
+
+$sequence "idle_firemode"{
+	"anims\idle_firemode.smd" 
+	fps 24
+	loop
 }
 
 $sequence "idle"{
@@ -78,6 +102,8 @@ $sequence "idle"{
  	blend "sights" 0 1
 	loop
 	node "Ready"
+	fadein 0
+	fadeout 0.2
 }
 
 $sequence "idle_empty"{
@@ -89,6 +115,8 @@ $sequence "idle_empty"{
 	loop
 	snap
 	node "Ready"
+	fadein 0
+	fadeout 0.2
 }
 
 $sequence "fire_01" {
@@ -140,6 +168,80 @@ $sequence "ready" {
 	snap
 }
 
+
+
+$sequence "draw" {
+	"anims\draw.smd"
+	fps 24
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "draw_empty" {
+	"anims\draw_empty.smd"
+	fps 24
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster" {
+	"anims\holster.smd"
+	fps 24
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster_empty" {
+	"anims\holster_empty.smd"
+	fps 24
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+
+$sequence "firemode_0" {
+	"anims\firemode0.smd"
+	"anims\firemode0_ads.smd"
+	blend "sights" 0 1
+	fps 24
+	snap
+}
+$sequence "firemode_1" {
+	"anims\firemode1.smd"
+	"anims\firemode1_ads.smd"
+	blend "sights" 0 1
+	fps 24
+	snap
+}
+$sequence "firemode_0_empty" {
+	"anims\firemode0_empty.smd"
+	"anims\firemode0_empty_ads.smd"
+	blend "sights" 0 1
+	fps 24
+	snap
+}
+$sequence "firemode_1_empty" {
+	"anims\firemode1_empty.smd"
+	"anims\firemode1_empty_ads.smd"
+	blend "sights" 0 1
+	fps 24
+	snap
+}
+
+$sequence "modeswitch" {
+	"anims\modeswitch.smd"
+	"anims\modeswitch_ads.smd"
+	blend "sights" 0 1
+	fps 24
+	snap
+}
+
+$sequence "modeswitch_empty" {
+	"anims\modeswitch_empty.smd"
+	"anims\modeswitch_empty_ads.smd"
+	blend "sights" 0 1
+	fps 24
+	snap
+}
+
+
 $sequence "reload" {
 	"anims\reload.smd"
 	"anims\reload_iron.smd"
@@ -158,51 +260,62 @@ $sequence "reload_empty" {
 	snap
 }
 
-$sequence "enter_inspect" {
-	"anims\enter_inspect.smd"
-	"ACT_VM_IDLE" 1
+$sequence "inspect" {
+	"anims\a9inspect.smd"
 	snap
-	fps 30
+	fps 24
+}
+$sequence "inspect_empty" {
+	"anims\a9inspect_empty.smd"
+	snap
+	fps 24
 }
 
-$sequence "idle_inspect" {
-	"anims\idle_inspect.smd"
-	"ACT_VM_IDLE" 1
-	snap
-	fps 30
-}
+// $sequence "enter_inspect" {
+// 	"anims\enter_inspect.smd"
+// 	"ACT_VM_IDLE" 1
+// 	snap
+// 	fps 30
+// }
 
-$sequence "exit_inspect" {
-	"anims\exit_inspect.smd"
-	"anims\exit_inspect_iron.smd"
-	blend "sights" 0 1
-	"ACT_VM_IDLE" 1
-	snap
-	fps 30
-}
+// $sequence "idle_inspect" {
+// 	"anims\idle_inspect.smd"
+// 	"ACT_VM_IDLE" 1
+// 	snap
+// 	fps 30
+// }
 
-$sequence "enter_inspect_empty" {
-	"anims\enter_inspect_empty.smd"
-	"ACT_VM_IDLE" 1
-	snap
-	fps 30
-}
+// $sequence "exit_inspect" {
+// 	"anims\exit_inspect.smd"
+// 	"anims\exit_inspect_iron.smd"
+// 	blend "sights" 0 1
+// 	"ACT_VM_IDLE" 1
+// 	snap
+// 	fps 30
+// }
 
-$sequence "idle_inspect_empty" {
-	"anims\idle_inspect_empty.smd"
-	"ACT_VM_IDLE" 1
-	snap
-	fps 30
-}
+// $sequence "enter_inspect_empty" {
+// 	"anims\enter_inspect_empty.smd"
+// 	"ACT_VM_IDLE" 1
+// 	snap
+// 	fps 30
+// }
 
-$sequence "exit_inspect_empty" {
-	"anims\exit_inspect_empty.smd"
-	"anims\exit_inspect_empty_iron.smd"
-	blend "sights" 0 1
-	"ACT_VM_IDLE" 1
-	snap
-	fps 30
-}
+// $sequence "idle_inspect_empty" {
+// 	"anims\idle_inspect_empty.smd"
+// 	"ACT_VM_IDLE" 1
+// 	snap
+// 	fps 30
+// }
+
+// $sequence "exit_inspect_empty" {
+// 	"anims\exit_inspect_empty.smd"
+// 	"anims\exit_inspect_empty_iron.smd"
+// 	blend "sights" 0 1
+// 	"ACT_VM_IDLE" 1
+// 	snap
+// 	fps 30
+// }
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"
