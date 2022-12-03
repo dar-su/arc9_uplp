@@ -65,45 +65,30 @@ $cbox 0 0 0 0 0 0
 $poseparameter "sights" 0 1 loop 0
 $poseparameter "firemode" 1 2 loop 0
 
-$sequence "pose_firemode0" "anims\idle_firemode.smd" {
+$sequence "idle"{
+	"anims\idle.smd" 
+	"anims\idle_iron.smd"
 	fps 30
-	snap
-}
-
-$sequence "pose_firemode1" "anims\idle.smd" {
-	fps 30
-	snap
+ 	blend "sights" 0 1
+	loop
+	fadein 0
+	fadeout 0.2
 }
 
 $sequence "firemode_pose" {
 	"anims\idle.smd"
 	"anims\idle_firemode.smd"
+	"anims\idle_iron.smd"
+	"anims\idle_firemode_iron.smd"
 	blend "firemode" 1 2
+ 	blend "sights" 0 1
 	blendwidth 2
 	delta
 	autoplay
 	loop
-	fps 10
-	snap
-	subtract "pose_firemode1" 0
-}
-
-$sequence "idle_firemode"{
-	"anims\idle_firemode.smd" 
-	fps 24
-	loop
-}
-
-$sequence "idle"{
-	"anims\idle.smd" 
-	"anims\idle_iron.smd"
 	fps 30
-	"ACT_VM_IDLE" 1
- 	blend "sights" 0 1
-	loop
-	node "Ready"
-	fadein 0
-	fadeout 0.2
+	snap
+	subtract "idle" 0
 }
 
 $sequence "idle_empty"{
