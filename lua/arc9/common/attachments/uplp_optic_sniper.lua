@@ -14,7 +14,7 @@ ATT.SpeedMult = 0.89
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -1.49),
+        Pos = Vector(0.01, 8, -1.475),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 36,

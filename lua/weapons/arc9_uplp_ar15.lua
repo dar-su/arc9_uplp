@@ -116,9 +116,9 @@ SWEP.NPCWeight = 60
 
 -- Accuracy --
 
-SWEP.Spread = 0.04
-SWEP.SpreadSights = 0.005
-SWEP.SpreadMultMove = 2.5
+SWEP.Spread = 0.01
+SWEP.SpreadMultSights = 0.001
+SWEP.SpreadMultMove = 5
 
 -- Speed mult --
 
@@ -262,14 +262,15 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
-        Time = 18 / 30,
+        -- Source = "fire_03",
+        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},
     },
     ["fire_empty"] = {
         Source = "fire_empty",
-        Framerate = 30,
-        Time = 18 / 30,
+        -- Framerate = 30,
+        -- Time = 18 / 30,
         ShellEjectAt = 0.01,
         EventTable = {{ s = "weapons/arccw/arx160/lowpolyarx160_empty.ogg", t = 0.03 }},
     },
