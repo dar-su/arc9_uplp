@@ -24,6 +24,9 @@ ATT.Sights = {
     },
 }
 
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 1)
+end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
@@ -70,11 +73,11 @@ end
 
 ATT.RTScopeFLIRHotOnlyFunc = function(swep)
     DrawSharpen(4, 0.6)
-    DrawSobel(0.1)
+    DrawSobel(0.05)
 end
 
 ATT.RTScopePostInvertFunc = function(swep)
-    DrawBloom(0.61, 5, 2, 2, 0, 1, 1, 1, 1)
+    DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
     DrawSharpen(4, 0.6)
 end
 

@@ -18,6 +18,10 @@ ATT.Sights = {
     }
 }
 
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)

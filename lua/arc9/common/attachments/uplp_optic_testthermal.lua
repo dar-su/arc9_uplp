@@ -13,6 +13,10 @@ ATT.SprintToFireTimeMult = 1.1
 ATT.AimDownSightsTimeMult = 1.1
 ATT.RecoilMultSights = 0.4
 
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.75)
+end
+
 ATT.Sights = {
     {
         Pos = Vector(-0.005, 3.5, -1.635),
@@ -57,13 +61,14 @@ end
 
 ATT.RTScopeFLIRHotOnlyFunc = function(swep)
     DrawSharpen(4, 0.6)
-    DrawSobel(0.1)
+    DrawSobel(0.05)
 end
 
 ATT.RTScopePostInvertFunc = function(swep)
-    DrawBloom(0.61, 5, 2, 2, 0, 1, 1, 1, 1)
+    DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
     DrawSharpen(4, 0.6)
 end
+
 
 
 ATT.RTScope = true

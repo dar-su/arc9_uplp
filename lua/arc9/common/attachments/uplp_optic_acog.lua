@@ -31,6 +31,10 @@ ATT.Sights = {
     },
 }
 
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.5)
+end
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
