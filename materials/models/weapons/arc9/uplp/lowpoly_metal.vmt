@@ -17,5 +17,5 @@
 	"$envmapfresnel" 			"1"
 	"$envmapFresnelMinMaxExp" "[0 5 .4]"
 	"$envmaptint"	"[1 1 1]"
-
+	"$halflambert" "1"
 }

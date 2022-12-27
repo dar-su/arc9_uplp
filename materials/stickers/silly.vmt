@@ -1,0 +1,16 @@
+"vertexlitgeneric"
+{
+	"$basetexture"	"stickers/silly"
+     "$alphatest"	"1"
+     "$decal"		"1"
+     "$nocull"		"1"
+     "Proxies"
+	{
+	"AnimatedTexture"
+	{
+	"animatedTextureVar" "$basetexture"
+	"animatedTextureFrameNumVar" "$frame"
+	"animatedTextureFrameRate" "30"
+	}
+   }
+}
