@@ -435,6 +435,7 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
+        CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
     },
