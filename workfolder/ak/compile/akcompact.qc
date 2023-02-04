@@ -338,13 +338,18 @@ $sequence "reload_empty_bizon" {
 
 
 
-$sequence "inspect1" {
+$sequence "inspect0" {
 	"anims\inspect1.smd"
 	snap
 	fps 30
 }
-$sequence "inspect2" {
-	"anims\inspect2_545.smd"
+$sequence "inspect_9mm" {
+	"anims\inspect2_9mm.smd"
+	snap
+	fps 30
+}
+$sequence "inspect_bizon" {
+	"anims\inspect2_bizon.smd"
 	snap
 	fps 30
 }

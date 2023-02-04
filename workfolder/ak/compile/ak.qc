@@ -446,13 +446,33 @@ $sequence "reload_empty_drum" {
 
 
 
-$sequence "inspect1" {
+$sequence "inspect0" {
 	"anims\inspect1.smd"
 	snap
 	fps 30
 }
-$sequence "inspect2" {
+$sequence "inspect_762" {
+	"anims\inspect2_762.smd"
+	snap
+	fps 30
+}
+$sequence "inspect_545" {
 	"anims\inspect2_545.smd"
+	snap
+	fps 30
+}
+$sequence "inspect_556" {
+	"anims\inspect2_556.smd"
+	snap
+	fps 30
+}
+$sequence "inspect_308" {
+	"anims\inspect2_308.smd"
+	snap
+	fps 30
+}
+$sequence "inspect_drum" {
+	"anims\inspect2_drum.smd"
 	snap
 	fps 30
 }
