@@ -7,7 +7,14 @@ $bodygroup "rec" { // 0
 	studio "main 12 alt.smd" // 3
 }   
 
-$bodygroup "br" { // 1
+$bodygroup "fireselector" { // 1
+	studio "fireselector std.smd" // 0
+	studio "fireselector old.smd" // 1
+	studio "fireselector 12.smd" // 2
+	studio "fireselector m1.smd" // 3
+}   
+
+$bodygroup "br" { // 2
 	studio "br std.smd" // 0
 	studio "br compact.smd" // 1
 	studio "br akm.smd" // 2
@@ -20,7 +27,7 @@ $bodygroup "br" { // 1
 	studio "br rpk16.smd" // 9
 }   
 
-$bodygroup "dc" { // 2
+$bodygroup "dc" { // 3
 	studio "dc std.smd" // 0
 	studio "dc flat.smd" // 1
 	studio "dc old.smd" // 2
@@ -32,7 +39,7 @@ $bodygroup "dc" { // 2
 	blank  // 8
 }   
 
-$bodygroup "grip" { // 3
+$bodygroup "grip" { // 4
 	studio "grip std.smd" // 0
 	studio "grip bak.smd" // 1
 	studio "grip old.smd" // 2
@@ -44,7 +51,7 @@ $bodygroup "grip" { // 3
 	studio "grip 12 evo.smd" // 8
 }   
 
-$bodygroup "hg" { // 4
+$bodygroup "hg" { // 5
 	studio "hg std.smd" // 0
 	studio "hg 100.smd" // 1
 	studio "hg old.smd" // 2
@@ -60,9 +67,10 @@ $bodygroup "hg" { // 4
 	studio "br su hg dong.smd" // 8
 	studio "hg 12.smd" // 9
 	studio "hg rpk16.smd" // 10
+	blank  // 11
 }   
 
-$bodygroup "stock" { // 5
+$bodygroup "stock" { // 6
 	studio "stock std.smd" // 0
 	studio "stock fold.smd" // 1
 	studio "stock skelet.smd" // 2
@@ -81,10 +89,12 @@ $bodygroup "stock" { // 5
 	studio "stock 12.smd" // 15
 	studio "stock 12 evo.smd" // 16
 	studio "stock 12 evo extended.smd" // 17
-	blank // 18
+	studio "stock ppk.smd" // 18
+	studio "stock ppk folded.smd" // 19
+	blank // 20
 }   
 
-$bodygroup "rnd" { // 6
+$bodygroup "rnd" { // 7
 	studio "rnd 762.smd" // 0
 	studio "rnd 545.smd" // 1
 	studio "rnd 556.smd" // 2
@@ -92,7 +102,7 @@ $bodygroup "rnd" { // 6
 	studio "rnd 939.smd" // 4
 }   
 
-$bodygroup "mag" { // 7
+$bodygroup "mag" { // 8
 	studio "mag 762.smd" // 0
 	studio "mag 762 bak.smd" // 1
 	studio "mag 762 12.smd" // 2
@@ -118,18 +128,16 @@ $bodygroup "mag" { // 7
 	studio "mag 939.smd" // 19
 }   
 
-$bodygroup "nmount" { // 8
+$bodygroup "nmount" { // 9
 	blank // 0
 	studio "nmount.smd" // 1
 	studio "nmount compact.smd" // 2
 	studio "nmount old.smd" // 3
 }   
 
-$bodygroup "rs" { // 9
+$bodygroup "rs" { // 10 HITTING LIMITS AFTER SU RS!!!!!!!!! dont add anything more or gun will become funny
 	blank // 0
 	studio "rs su.smd" // 1
-	studio "rs 12.smd" // 2
-	studio "rs 12 evo.smd" // 3
 }   
 	
 $cdmaterials "models\weapons\arc9\uplp"
@@ -249,6 +257,36 @@ $sequence "firemode_1" {
 	snap
 }
 
+$sequence "firemode_0_12" {
+	"anims\firemode1_12.smd"
+	"anims\firemode1_12_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+$sequence "firemode_1_12" {
+	"anims\firemode2_12.smd"
+	"anims\firemode2_12_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+
+$sequence "firemode_0_evo" {
+	"anims\firemode1_evo.smd"
+	"anims\firemode1_evo_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+$sequence "firemode_1_evo" {
+	"anims\firemode2_evo.smd"
+	"anims\firemode2_evo_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+
 $sequence "modeswitch" {
 	"anims\switch.smd"
 	"anims\switch_iron.smd"
@@ -258,23 +296,155 @@ $sequence "modeswitch" {
 }
 
 
-$sequence "reload" {
-	"anims\reload.smd"
-	"anims\reload_iron.smd"
+$sequence "reload_545" {
+	"anims\reload_545.smd"
+	"anims\reload_iron_545.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_545" {
+	"anims\reload_empty_545.smd"
+	"anims\reload_empty_iron_545.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 
-$sequence "reload_empty" {
-	"anims\reload_empty.smd"
-	"anims\reload_empty_iron.smd"
+
+$sequence "reload_556" {
+	"anims\reload_556.smd"
+	"anims\reload_iron_556.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
+$sequence "reload_empty_556" {
+	"anims\reload_empty_556.smd"
+	"anims\reload_empty_iron_556.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+$sequence "reload_545fat" {
+	"anims\reload_545fat.smd"
+	"anims\reload_iron_545fat.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_545fat" {
+	"anims\reload_empty_545fat.smd"
+	"anims\reload_empty_iron_545fat.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+$sequence "reload_545long" {
+	"anims\reload_545long.smd"
+	"anims\reload_iron_545long.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_545long" {
+	"anims\reload_empty_545long.smd"
+	"anims\reload_empty_iron_545long.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+$sequence "reload_308" {
+	"anims\reload_308.smd"
+	"anims\reload_iron_308.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_308" {
+	"anims\reload_empty_308.smd"
+	"anims\reload_empty_iron_308.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+$sequence "reload_762" {
+	"anims\reload_762.smd"
+	"anims\reload_iron_762.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_762" {
+	"anims\reload_empty_762.smd"
+	"anims\reload_empty_iron_762.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+$sequence "reload_762long" {
+	"anims\reload_762long.smd"
+	"anims\reload_iron_762long.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_762long" {
+	"anims\reload_empty_762long.smd"
+	"anims\reload_empty_iron_762long.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+$sequence "reload_drum" {
+	"anims\reload_drum.smd"
+	"anims\reload_iron_drum.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty_drum" {
+	"anims\reload_empty_drum.smd"
+	"anims\reload_empty_iron_drum.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+
+
+
+
+
 
 $sequence "inspect1" {
 	"anims\inspect1.smd"
