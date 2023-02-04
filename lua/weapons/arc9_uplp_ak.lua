@@ -256,7 +256,7 @@ SWEP.Animations = {
     -- Reloads --
 
     ["reload"] = {
-        Source = "reload",
+        Source = "reload_545",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -266,7 +266,7 @@ SWEP.Animations = {
         },
     },
     ["reload_empty"] = {
-        Source = "reload_empty",
+        Source = "reload_empty_545",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
