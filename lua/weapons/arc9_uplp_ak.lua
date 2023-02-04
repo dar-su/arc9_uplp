@@ -256,7 +256,7 @@ SWEP.Animations = {
     -- Reloads --
 
     ["reload"] = {
-        Source = "reload_545",
+        Source = "reload_762",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -266,7 +266,175 @@ SWEP.Animations = {
         },
     },
     ["reload_empty"] = {
+        Source = "reload_empty_762",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --7.62 40rnd--
+
+    ["reload_40rnd"] = {
+        Source = "reload_762long",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_40rnd"] = {
+        Source = "reload_empty_762long",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --5.45--
+
+    ["reload_545"] = {
+        Source = "reload_545",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_545"] = {
         Source = "reload_empty_545",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --5.45 45rnd--
+
+    ["reload_545_45rnd"] = {
+        Source = "reload_545long",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_545_45rnd"] = {
+        Source = "reload_empty_545long",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --5.45 60rnd--
+
+    ["reload_545_45rnd"] = {
+        Source = "reload_545fat",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_545_45rnd"] = {
+        Source = "reload_empty_545fat",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --5.56--
+
+    ["reload_556"] = {
+        Source = "reload_556",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_556"] = {
+        Source = "reload_empty_556",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --drum--
+
+    ["reload_drum"] = {
+        Source = "reload_drum",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_drum"] = {
+        Source = "reload_empty_drum",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+        },
+    },
+
+    --.308--
+
+    ["reload_308"] = {
+        Source = "reload_308",
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
+            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["reload_empty_308"] = {
+        Source = "reload_empty_308",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -342,141 +510,70 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.AttachmentElements = {
-    ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
-    ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } } },
-    ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 } } },
-    ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } } },
 
+    --calibers
+    ["uplp_ak_calib_545"] = { Bodygroups = { { 7, 1 } } },
+    ["uplp_ak_calib_556"] = { Bodygroups = { { 7, 2 } } },
+    ["uplp_ak_calib_308"] = { Bodygroups = { { 7, 3 } } },
+    ["uplp_ak_calib_939"] = { Bodygroups = { { 7, 4 } } },
 
-    ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
-    ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
-    ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
-    ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
-    ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
+    --mags
 
+    --7.62--
+
+    ["uplp_ak_mag_762_30_bak"] = { Bodygroups = { { 8, 1 } } },
+    ["uplp_ak_mag_762_30_12"] = { Bodygroups = { { 8, 2 } } },
+    ["uplp_ak_mag_762_30_old"] = { Bodygroups = { { 8, 3 } } },
+    ["uplp_ak_mag_762_30_oldest"] = { Bodygroups = { { 8, 4 } } },
+
+    ["uplp_ak_mag_762_40"] = { Bodygroups = { { 8, 5 } } },
+    ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 8, 6 } } },
+
+    ["uplp_ak_mag_762_drum"] = { Bodygroups = { { 8, 7 } } },
     
-    ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
-    ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
-    ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
-    ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } } },
+    --5.45--
 
-    ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } } },
-    ["uplp_ar15_hg_tac_red"] = { Bodygroups =       { { 2, 6 } } },
-    ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 7 } } },
-    ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =  { { 2, 8 } } },
+    ["uplp_ak_mag_545_30"] = { Bodygroups = { { 8, 8 } } },
+    ["uplp_ak_mag_545_30_bak"] = { Bodygroups = { { 8, 9 } } },
+    ["uplp_ak_mag_545_30_pmag"] = { Bodygroups = { { 8, 10 } } },
+    ["uplp_ak_mag_545_30_12"] = { Bodygroups = { { 8, 11 } } },
 
-    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 9 } } },
-    ["uplp_ar15_hg_mlokshort"] = { Bodygroups =     { { 2, 10 } } },
+    ["uplp_ak_mag_545_45"] = { Bodygroups = { { 8, 12 } } },
 
-    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 11 } } },
-    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 13 } } },
-    ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 12 } } },
-    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 14 } } },
+    ["uplp_ak_mag_545_60"] = { Bodygroups = { { 8, 13 } } },
+
+    ["uplp_ak_mag_545_drum"] = { Bodygroups = { { 8, 14 } } },
+
+    --5.56--
+
+    ["uplp_ak_mag_556_30"] = { Bodygroups = { { 8, 15 } } },
+    ["uplp_ak_mag_556_30_12"] = { Bodygroups = { { 8, 16 } } },
+    ["uplp_ak_mag_556_30_pmag"] = { Bodygroups = { { 8, 17 } } },
+
+    --Other--
+
+    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 8, 18 } } },
+
+    ["uplp_ak_mag_939_30"] = { Bodygroups = { { 8, 19 } } },
+
 }
-
 SWEP.Attachments = {
-    {
-        PrintName = "Rear sight",
-        Category = {"uplp_ar15_rs"},
-        ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
-        Bone = "body",
-        Pos = Vector(0.045, -0.2, 0.326),
-        Ang = Angle(90, 90, 180),
-    },
     {
         PrintName = "Optic",
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
+        CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = "Stock",
-        Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
-        Bone = "body",
-        Pos = Vector(0.045, 0.99, -2.98),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = "Pistol grip",
-        Category = {"uplp_ar15_pgrip"},
-        Bone = "body",
-        Pos = Vector(0.045, 3.2, -0.56),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = "Charge",
-        Category = {"uplp_ar15_chandle"},
-        Bone = "chandle",
-        Pos = Vector(-0.01, 0.094, -0.05),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = "Barrel",
-        Category = {"uplp_ar15_barrel"},
-        Bone = "body",
-        Pos = Vector(0.045, 0.633, 5.672),
-        Ang = Angle(90, 90, 180),
-        Integral = true
-    },
-    {
-        PrintName = "Handguard",
-        Category = {"uplp_ar15_hg",""},
-        Bone = "body",
-        Pos = Vector(0.045, -0.2, 7.703),
-        Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(0, 0, -1),
-        Integral = true
-    },
-    {
-        PrintName = "Reciever",
-        Category = {"uplp_ar15_reciever"},
-        Bone = "body",
-        Pos = Vector(0, 1, 2),
-        Ang = Angle(90, 90, 180),
-        Integral = true
-    },
-    { -- regular mag
         PrintName = "Magazine",
-        Category = {"uplp_ar15_556_mag"},
-        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
-        Bone = "mag",
-        Pos = Vector(0, -2.406, -2.428),
+        Category = {"uplp_ak_mag"},
+        Bone = "body",
+        CorrectiveAng = Angle(0.4, -0.4, -5),
+        Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1.5, 0, -3),
-        Integral = false
     },
-    { -- 45acp mag
-        PrintName = "Magazine",
-        Category = {"uplp_ar15_45_mag"},
-        RequireElements = {"uplp_ar15_reciever_45acp"},
-        Bone = "mag",
-        Pos = Vector(0, -2.406, -2.428),
-        Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1.5, 0, -3),
-        Integral = false
-    },
-    { -- glock mag
-        PrintName = "Magazine",
-        Category = {"uplp_ar15_glock_mag"},
-        RequireElements = {"uplp_ar15_reciever_stm9"},
-        Bone = "mag",
-        Pos = Vector(0, -2.406, -2.428),
-        Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1.5, 0, -3),
-        Integral = false
-    },
-    -- {
-    --     PrintName = "Optic",
-    --     Slot = {"lowpoly_optic_lp", "lowpoly_optic", "lowpoly_optic_sniper"},
-    --     DefaultAttName = "Iron Sights",
-    --     Bone = "Body",
-    --     Offset = {
-    --         vpos = Vector(0, -0.4, 5),
-    --         vang = Angle(90, 0, -90),
-    --     },
-    --     InstalledEles = {"nofs"},
-    -- },
     -- {
     --     PrintName = "Muzzle",
     --     DefaultAttName = "Standard Muzzle",
