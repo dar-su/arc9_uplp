@@ -185,7 +185,10 @@ ATT.Description = [[A wooden handguard with an integral foregrip for the AK.]] -
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-ATT.ExcludeElements = {"uplp_ak_hgflush"}
+
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
+ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
+ATT.LHIK = true
 
 ATT.ActivateElements = {"uplp_ak_hg_su_dong","uplp_su_hgexists"}
 
