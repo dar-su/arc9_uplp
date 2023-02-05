@@ -598,17 +598,17 @@ SWEP.AttachmentElements = {
 
     --barrels
 
-    ["uplp_ak_brl_comp"] = { Bodygroups = { { 2, 1 } } },
-    ["uplp_ak_brl_akm"] =  { Bodygroups = { { 2, 2 } } },
-    ["uplp_ak_brl_rpk"] =  { Bodygroups = { { 2, 3 } } },
-    ["uplp_ak_brl_109"] =  { Bodygroups = { { 2, 4 } } },
+    ["uplp_ak_brl_comp"] = { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.76, 17.7), }}},
+    ["uplp_ak_brl_akm"] =  { Bodygroups = { { 2, 2 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 22.75),}}},
+    ["uplp_ak_brl_rpk"] =  { Bodygroups = { { 2, 3 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.7, 30),    }}},
+    ["uplp_ak_brl_109"] =  { Bodygroups = { { 2, 4 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 23.6), }}},
 
-    ["uplp_ak_brl_su"] =   { Bodygroups = { { 2, 5 } } },
+    ["uplp_ak_brl_su"] =   { Bodygroups = { { 2, 5 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.75, 14.3), }}},
 
-    ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } },
-    ["uplp_ak_brl_12k"] =  { Bodygroups = { { 2, 7 } } },
-    ["uplp_ak_brl_19"] =   { Bodygroups = { { 2, 8 } } },
-    ["uplp_ak_brl_rpk16"] ={ Bodygroups = { { 2, 9 } } },
+    ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
+    ["uplp_ak_brl_12k"] =  { Bodygroups = { { 2, 7 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 15.2), }}},
+    ["uplp_ak_brl_19"] =   { Bodygroups = { { 2, 8 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
+    ["uplp_ak_brl_rpk16"] ={ Bodygroups = { { 2, 9 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
 
     --handguards
 
@@ -648,6 +648,14 @@ SWEP.Attachments = {
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0.045, -0.1, 1.326),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = "Muzzle",
+        Category = {"uplp_muzzle"},
+        Bone = "body",
+        CorrectiveAng = Angle(0.4, -0.4, 0),
+        Pos = Vector(0, 1.768, 22.3),
         Ang = Angle(90, 90, 180),
     },
     {
