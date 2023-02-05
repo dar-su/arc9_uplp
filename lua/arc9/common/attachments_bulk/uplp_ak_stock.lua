@@ -154,8 +154,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_stock_tube12"}
 
-ATT.Folder = "AK Tube"
-
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_tube12")
 
 -------------------------------------------
@@ -179,8 +177,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "AK Tube"
-
 ATT.ActivateElements = {"uplp_ak_stock_tube"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_tube")
@@ -192,17 +188,24 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_tube")
 
 ATT = {}
 
-ATT.PrintName = "Standard"
-ATT.CompactName = "STANDARD"
+ATT.PrintName = "AK Underfolding Stock"
+ATT.CompactName = "UNDERFOLD"
 ATT.Description = [[An underfolding stock for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "AK Underfolding Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_underfold"}
+ATT.ToggleStats = {
+    {
+        PrintName = "Standard",
+        ActivateElements = {"uplp_ak_stock_underfold"},
+    },
+    {
+        PrintName = "Folded",
+        ActivateElements = {"uplp_ak_stock_underfold_f"},
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_underfold")
 
@@ -210,35 +213,24 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_underfold")
 
 ATT = {}
 
-ATT.PrintName = "Folded"
-ATT.CompactName = "FOLDED"
-ATT.Description = [[An underfolding stock for the AK. Folding the stock Helps with maneuverability.]]
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-ATT.Folder = "AK Underfolding Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_underfold_f"}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_stock_underfold_f")
-
--------------------------------------------
-
-ATT = {}
-
-ATT.PrintName = "Standard"
-ATT.CompactName = "STANDARD"
+ATT.PrintName = "AK PT1 Stock"
+ATT.CompactName = "PT1"
 ATT.Description = [[An extendable PT1 stock for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "AK PT1 Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_pt1"}
+ATT.ToggleStats = {
+    {
+        PrintName = "Standard",
+        ActivateElements = {"uplp_ak_stock_pt1"},
+    },
+    {
+        PrintName = "Extended",
+        ActivateElements = {"uplp_ak_stock_pt1_ext"},
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt1")
 
@@ -246,35 +238,24 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt1")
 
 ATT = {}
 
-ATT.PrintName = "Extended"
-ATT.CompactName = "EXT"
-ATT.Description = [[An extendable PT1 stock for the AK. Extending the stock improves recoil control.]]
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-ATT.Folder = "AK PT1 Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_pt1_ext"}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt1_ext")
-
--------------------------------------------
-
-ATT = {}
-
-ATT.PrintName = "Standard"
-ATT.CompactName = "STANDARD"
+ATT.PrintName = "AK PT3 Stock"
+ATT.CompactName = "PT3"
 ATT.Description = [[An extendable PT3 stock for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "AK PT3 Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_pt3"}
+ATT.ToggleStats = {
+    {
+        PrintName = "Standard",
+        ActivateElements = {"uplp_ak_stock_pt3"},
+    },
+    {
+        PrintName = "Extended",
+        ActivateElements = {"uplp_ak_stock_pt3_ext"},
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt3")
 
@@ -282,35 +263,25 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt3")
 
 ATT = {}
 
-ATT.PrintName = "Extended"
-ATT.CompactName = "EXT"
-ATT.Description = [[An extendable PT3 stock for the AK. Extending the stock improves recoil control.]]
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-ATT.Folder = "AK PT3 Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_pt3_ext"}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt3_ext")
-
--------------------------------------------
-
-ATT = {}
-
-ATT.PrintName = "Standard"
-ATT.CompactName = "STANDARD"
+ATT.PrintName = "AK EVO Stock"
+ATT.CompactName = "EVO"
 ATT.Description = [[An extendable EVO stock for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "AK EVO Stock"
+ATT.ToggleStats = {
+    {
+        PrintName = "Standard",
+        ActivateElements = {"uplp_ak_stock_evo"},
+    },
+    {
+        PrintName = "Extended",
+        ActivateElements = {"uplp_ak_stock_evo_ext"},
+    },
+}
 
-ATT.ActivateElements = {"uplp_ak_stock_evo"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_evo")
 
@@ -318,54 +289,25 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_evo")
 
 ATT = {}
 
-ATT.PrintName = "Extended"
-ATT.CompactName = "EXT"
-ATT.Description = [[An extendable EVO stock for the AK. Extending the stock improves recoil control.]]
+ATT.PrintName = "AK PPK Stock"
+ATT.CompactName = "PPK"
+ATT.Description = [[A foldable PPK stock for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "AK EVO Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_evo_ext"}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_stock_evo_ext")
-
--------------------------------------------
-
-ATT = {}
-
-ATT.PrintName = "Standard"
-ATT.CompactName = "STANDARD"
-ATT.Description = [[An PPK stock for the AK.]]
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-ATT.Folder = "AK PPK Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_ppk"}
+ATT.ToggleStats = {
+    {
+        PrintName = "Standard",
+        ActivateElements = {"uplp_ak_stock_ppk"},
+    },
+    {
+        PrintName = "Folded",
+        ActivateElements = {"uplp_ak_stock_ppk_f"},
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_ppk")
-
--------------------------------------------
-
-ATT = {}
-
-ATT.PrintName = "Folded"
-ATT.CompactName = "FOLDED"
-ATT.Description = [[An PPK stock for the AK. Folding the stock Helps with maneuverability.]]
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-ATT.Folder = "AK PPK Stock"
-
-ATT.ActivateElements = {"uplp_ak_stock_ppk_f"}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_stock_ppk_f")
 
 -------------------------------------------
