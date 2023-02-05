@@ -198,7 +198,7 @@ SWEP.DistantShootSound = {pathAK .. "fire-dist-01.ogg", pathAK .. "fire-dist-02.
 
 -- Bodygroups --
 
-SWEP.DefaultBodygroups = "00000000000"
+SWEP.DefaultBodygroups = "000000k0000"
 
 SWEP.BulletBones = {
     [1] = "bullet1",    [2] = "bullet2",    [3] = "bullet3",    [4] = "bullet4"
@@ -671,6 +671,7 @@ SWEP.AttachmentElements = {
 
     --STOCKS
 
+    ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
     ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
     ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
     ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
@@ -680,7 +681,6 @@ SWEP.AttachmentElements = {
     ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
     ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
     ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
-    ["uplp_ak_stock_no"] =         { Bodygroups = { { 6, 20} } },
 
     ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
     ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
@@ -698,9 +698,34 @@ SWEP.AttachmentElements = {
     ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
 
+    --GRIPS
+
+    ["uplp_ak_grip_bak"] =         { Bodygroups = { { 4, 1 } } },
+    ["uplp_ak_grip_old"] =         { Bodygroups = { { 4, 2 } } },
+    ["uplp_ak_grip_tac"] =         { Bodygroups = { { 4, 3 } } },
+    ["uplp_ak_grip_tapco"] =       { Bodygroups = { { 4, 4 } } },
+    ["uplp_ak_grip_vityaz"] =      { Bodygroups = { { 4, 5 } } },
+    ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
+    ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
+    ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
+
+
+    --DUST COVERS
+
+    ["uplp_ak_dc_std"] =           { Bodygroups = { { 3, 0 } } },
+    ["uplp_ak_dc_flat"] =          { Bodygroups = { { 3, 1 } } },
+    ["uplp_ak_dc_old"] =           { Bodygroups = { { 3, 2 } } },
+    ["uplp_ak_dc_rail"] =          { Bodygroups = { { 3, 3 } } },
+    ["uplp_ak_dc_rail2"] =         { Bodygroups = { { 3, 4 } } },
+    ["uplp_ak_dc_zen"] =           { Bodygroups = { { 3, 5 } } },
+    ["uplp_ak_dc_beryl"] =         { Bodygroups = { { 3, 6 } }, AttPosMods = {[1] = { Pos = Vector(0, -0.35, 0.5), }}},
+    ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
+    ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
+
     --misc
 
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
+    
 
 }
 SWEP.Attachments = {
@@ -708,15 +733,14 @@ SWEP.Attachments = {
         PrintName = "Optic",
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, 0),
-        Pos = Vector(0.045, -0.1, 1.326),
+        Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),
+        RequireElements = {"use_optics"},
     },
     {
         PrintName = "Muzzle",
         Category = {"uplp_muzzle"},
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0, 1.768, 22.3),
         Ang = Angle(90, 90, 180),
     },
@@ -724,7 +748,6 @@ SWEP.Attachments = {
         PrintName = "Magazine",
         Category = {"uplp_ak_mag"},
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, -5),
         Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
     },
@@ -733,16 +756,21 @@ SWEP.Attachments = {
         Category = {"uplp_ak_barrel"},
         Bone = "body",
         Installed = "uplp_ak_brl_16",
-        Integral = true,
-        CorrectiveAng = Angle(0.4, -0.4, -5),
+        Integral = "uplp_ak_brl_16",
         Pos = Vector(0.045, 1.5, 17),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = "Grip",
+        Category = {"uplp_ak_grip"},
+        Bone = "body",
+        Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = "Stock",
         Category = {"uplp_ak_stock"},
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, -5),
         Pos = Vector(0.045, 2, -3),
         Ang = Angle(90, 90, 180),
     },

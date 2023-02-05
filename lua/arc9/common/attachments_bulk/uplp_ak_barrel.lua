@@ -19,6 +19,14 @@ ATT.Attachments = {
         Pos = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_16")
@@ -42,6 +50,14 @@ ATT.Attachments = {
         PrintName = "Handguard",
         Category = "uplp_handguard_normal",
         Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -69,6 +85,14 @@ ATT.Attachments = {
         Pos = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_akm")
@@ -94,6 +118,14 @@ ATT.Attachments = {
         Pos = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk")
@@ -110,7 +142,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_109"}
+ATT.ActivateElements = {"uplp_ak_brl_109","uplp_ak_dc_no"}
 
 ATT.Attachments = {
     {
@@ -144,6 +176,14 @@ ATT.Attachments = {
         Pos = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
+        Ang = Angle(0, 0, 0),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_su")
@@ -167,8 +207,16 @@ ATT.Attachments = {
         PrintName = "Handguard",
         Category = "uplp_handguard_flush",
         Installed = "uplp_ak_hg_12",
-        Integral = true,
+        Integral = "uplp_ak_hg_12",
         Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -195,8 +243,16 @@ ATT.Attachments = {
         PrintName = "Handguard",
         Category = "uplp_handguard_flush",
         Installed = "uplp_ak_hg_12",
-        Integral = true,
+        Integral = "uplp_ak_hg_12",
         Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -209,7 +265,7 @@ ATT = {}
 
 ATT.PrintName = "AK 16 inch AK19 Barrel"
 ATT.CompactName = "16\' 19 "
-ATT.Description = [[A ?? inch AK19 barrel for the AK.]]
+ATT.Description = [[A 16 inch AK19 barrel for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -222,8 +278,16 @@ ATT.Attachments = {
         PrintName = "Handguard",
         Category = "uplp_handguard_flush",
         Installed = "uplp_ak_hg_12",
-        Integral = true,
+        Integral = "uplp_ak_hg_12",
         Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -249,8 +313,16 @@ ATT.Attachments = {
         PrintName = "Handguard",
         Category = "uplp_handguard_flush",
         Installed = "uplp_ak_hg_rpk16",
-        Integral = true,
+        Integral = "uplp_ak_hg_rpk16",
         Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Dust Cover",
+        Category = "uplp_ak_dc",
+        Installed = "uplp_ak_dc_std",
+        Integral = "uplp_ak_dc_std",
+        Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }

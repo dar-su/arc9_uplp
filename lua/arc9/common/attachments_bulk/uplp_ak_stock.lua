@@ -149,17 +149,21 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_beryl")
 
 ATT = {}
 
-ATT.PrintName = "No Stock"
-ATT.CompactName = "NO"
-ATT.Description = [[Removes the standard issue stock.]]
+ATT.PrintName = "AK Polymer Stock"
+ATT.CompactName = "POLY"
+ATT.Description = [[A standard issue polymer stock for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_stock_no"}
+-- balance pls
+ATT.RecoilMult = 0.55
+ATT.VisualRecoilMult = 0.55
 
-ARC9.LoadAttachment(ATT, "uplp_ak_stock_no")
+ATT.ActivateElements = {"uplp_ak_stock_poly"}
+
+ARC9.LoadAttachment(ATT, "uplp_ak_stock_poly")
 
 -------------------------------------------
 
