@@ -722,6 +722,18 @@ SWEP.AttachmentElements = {
     ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
     ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
 
+    --RECIEVERS
+
+    ["uplp_ak_rec_old"] =         { Bodygroups = { { 0, 1 } } },
+    ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
+    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
+
+    --FIRE SELECTORS
+
+    ["uplp_ak_fs_old"] =         { Bodygroups = { { 1, 1 } } },
+    ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
+    ["uplp_ak_fs_m1"] =          { Bodygroups = { { 1, 3 } } },
+
     --misc
 
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
