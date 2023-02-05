@@ -10,6 +10,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+-- balance pls
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
 ATT.ActivateElements = {"uplp_ak_stock_fold"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_fold")
@@ -25,6 +29,10 @@ ATT.Description = [[A foldable skeleton stock for the AK.]]
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- balance pls
+ATT.RecoilMult = 0.6
+ATT.VisualRecoilMult = 0.6
 
 ATT.ActivateElements = {"uplp_ak_stock_skele"}
 
@@ -42,6 +50,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+-- balance pls
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
+
 ATT.ActivateElements = {"uplp_ak_stock_old"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_old")
@@ -57,6 +70,11 @@ ATT.Description = [[A wooden RPK stock for the AK.]]
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- balance pls
+ATT.RecoilMult = 0.35
+ATT.VisualRecoilMult = 0.35
+
 
 ATT.ActivateElements = {"uplp_ak_stock_rpk"}
 
@@ -74,6 +92,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+-- balance pls
+ATT.RecoilMult = 0.4
+ATT.VisualRecoilMult = 0.4
+
+
 ATT.ActivateElements = {"uplp_ak_stock_rpk74"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_rpk74")
@@ -90,6 +113,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+-- balance pls
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
+
 ATT.ActivateElements = {"uplp_ak_stock_wood"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_wood")
@@ -105,6 +133,11 @@ ATT.Description = [[A beryl style stock for the AK.]]
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- balance pls
+ATT.RecoilMult = 0.55
+ATT.VisualRecoilMult = 0.55
+
 
 ATT.ActivateElements = {"uplp_ak_stock_beryl"}
 
@@ -142,8 +175,8 @@ ATT.Description = [[An AK12 buffer tube for the AK. Accepts AR platform stocks.]
 ATT.Attachments = {
     {
         PrintName = "Stock",
-        Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
-        Pos = Vector(1, 0, 0.2),
+        Category = {"uplp_ar15_stock"},
+        Pos = Vector(0.8, 0, 0.3),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -167,8 +200,8 @@ ATT.Description = [[A red buffer tube for the AK. Accepts AR platform stocks.]]
 ATT.Attachments = {
     {
         PrintName = "Stock",
-        Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
-        Pos = Vector(1.2, 0, 0.1),
+        Category = {"uplp_ar15_stock"},
+        Pos = Vector(1.0, 0, 0.07),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -200,6 +233,12 @@ ATT.ToggleStats = {
     {
         PrintName = "Standard",
         ActivateElements = {"uplp_ak_stock_underfold"},
+        -- balance pls
+        
+        RecoilMult = 0.5,
+        VisualRecoilMult = 0.5,
+        
+        
     },
     {
         PrintName = "Folded",
@@ -220,6 +259,11 @@ ATT.Description = [[An extendable PT1 stock for the AK.]]
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- balance pls
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
 
 ATT.ToggleStats = {
     {
@@ -246,6 +290,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+-- balance pls
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
+
 ATT.ToggleStats = {
     {
         PrintName = "Standard",
@@ -270,6 +319,11 @@ ATT.Description = [[An extendable EVO stock for the AK.]]
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- balance pls
+ATT.RecoilMult = 0.5
+ATT.VisualRecoilMult = 0.5
+
 
 ATT.ToggleStats = {
     {
@@ -301,6 +355,11 @@ ATT.ToggleStats = {
     {
         PrintName = "Standard",
         ActivateElements = {"uplp_ak_stock_ppk"},
+        -- balance pls
+        RecoilMult = 0.66,
+        VisualRecoilMult = 0.66,
+        
+        
     },
     {
         PrintName = "Folded",

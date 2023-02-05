@@ -497,10 +497,14 @@ ATT.ActivateElements = {"uplp_ak_mag_308_20", "uplp_ak_calib_308"}
 
 ATT.RPMMult = 550/600
 
-ATT.DamageMaxMult = 1.2
+ATT.DamageMaxMult = 1.4
 ATT.DamageMinMult = 1.1
 
-ATT.RecoilMult = 1.2
+ATT.RecoilMult = 1.5
+ATT.RecoilSideMult = 2
+ATT.RecoilAutoControlMult = 0.5
+ATT.VisualRecoilMult = 1.5
+
 
 ATT.ClipSizeOverride = 20
 
@@ -517,9 +521,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 
 ATT = {}
 
-ATT.PrintName = "AK 30 Round 9x39 Mag"
-ATT.CompactName = "9x39 30-RND"
-ATT.Description = [[A 30 round magazine chambered in 9x39.]]
+ATT.PrintName = "AK 20 Round 9x39 Mag"
+ATT.CompactName = "9x39 20-RND"
+ATT.Description = [[A 20 round magazine chambered in 9x39.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
@@ -527,7 +531,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_mag_939_30", "uplp_ak_calib_939"}
 
-ATT.RPMMult = 550/600
+ATT.RPMMult = 775/600
+ATT.ClipSizeOverride = 20
 
 ATT.DamageMaxMult = 0.9
 ATT.DamageMinMult = 1.1

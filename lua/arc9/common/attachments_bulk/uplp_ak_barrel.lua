@@ -215,7 +215,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_19","uplp_ak_rearsight"}
+ATT.ActivateElements = {"uplp_ak_brl_19"}
 
 ATT.Attachments = {
     {
@@ -242,7 +242,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_rpk16","uplp_ak_rearsight"}
+ATT.ActivateElements = {"uplp_ak_brl_rpk16"}
 
 ATT.Attachments = {
     {

@@ -67,12 +67,12 @@ SWEP.ClipSize = 30 -- Self-explanatory.
 
 -- Recoil --
 
-SWEP.Recoil = 1.1
+SWEP.Recoil = 5
 SWEP.RecoilUp = 0.7
 SWEP.RecoilSide = 0.8
 SWEP.RecoilRandomUp = 0.4
 SWEP.RecoilRandomSide = 0.3
-SWEP.RecoilAutoControl = 7
+SWEP.RecoilAutoControl = 4
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
@@ -102,7 +102,7 @@ SWEP.RPM = 600
 SWEP.Num = 1
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 1 }, 
-    { Mode = 1, RecoilMult = 0.5, RPM = 450, PoseParam = 2 }
+    { Mode = 1, RecoilMult = 0.75, RecoilAutoControlMult = 2.5, RPM = 450, PoseParam = 2 }
 }
 SWEP.ShootPitch = 90
 SWEP.ShootVol = 120
@@ -128,7 +128,7 @@ SWEP.SpeedMultSights = 0.65
 SWEP.AimDownSightsTime = 0.5
 SWEP.SprintToFireTime = 0.5
 
-SWEP.AimDownSightsTimeMultRecoil = 2
+-- SWEP.AimDownSightsTimeMultRecoil = 2
 
 -- Gun length --
 
@@ -151,7 +151,7 @@ SWEP.IronSights = {
 }
 
 SWEP.ActivePos = Vector(0, 0, 0)
-SWEP.ActiveAng = Angle(0, 0, -1)
+SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(14, 30, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
@@ -177,11 +177,11 @@ SWEP.WorldModelOffset = {
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.6
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 5, -3)
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 2)
+SWEP.DropMagazineVelocity = Vector(0, -50, -10)
 -- SWEP.DropMagazineVelocity = Vector(0, 0, 0)
 
 -- Weapon sounds --
@@ -201,9 +201,32 @@ SWEP.DistantShootSound = {pathAK .. "fire-dist-01.ogg", pathAK .. "fire-dist-02.
 SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.BulletBones = {
-    [1] = "bullet1",    [2] = "bullet2",    [3] = "bullet3"
+    [1] = "bullet1",    [2] = "bullet2",    [3] = "bullet3",    [4] = "bullet4"
 }
 
+SWEP.HideBones = {
+    "fakemag",
+    "fakerounds",
+    "bullet1",
+    "bullet2",
+    "bullet3",
+    "bullet4",
+}
+
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+    },
+    [2] = {
+        "fakemag",
+        "fakerounds",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+        "bullet4",
+    }
+}
+-- SWEP.ReloadHideBonesFirstPerson = true 
 -- Animations --
 
 
@@ -263,6 +286,9 @@ SWEP.Animations = {
             { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.6}
         },
     },
     ["reload_empty"] = {
@@ -274,6 +300,9 @@ SWEP.Animations = {
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.6}
         },
     },
 
@@ -311,6 +340,9 @@ SWEP.Animations = {
             { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.6}
         },
     },
     ["reload_empty_545"] = {
@@ -322,6 +354,9 @@ SWEP.Animations = {
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.6}
         },
     },
 

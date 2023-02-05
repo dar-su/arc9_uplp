@@ -113,6 +113,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
+ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
+ATT.LHIK = true
 
 ATT.ActivateElements = {"uplp_ak_hg_dong"}
 
