@@ -2,6 +2,31 @@
 
 local ATT = {}
 
+ATT.PrintName = "AK 16 inch Standard Barrel"
+ATT.CompactName = "16\'"
+ATT.Description = [[A 16 inch barrel for the AK.]]
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ak_barrel"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_brl_16"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_normal",
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "uplp_ak_brl_16")
+
+-------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "AK 12 inch Compact Barrel"
 ATT.CompactName = "12\' COMP "
 ATT.Description = [[A 12 inch compact barrel for the AK.]]
@@ -11,6 +36,15 @@ ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_comp"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_normal",
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_comp")
 
@@ -28,6 +62,15 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_akm"}
 
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_normal",
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_akm")
 
 -------------------------------------------
@@ -43,6 +86,15 @@ ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_normal",
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk")
 
@@ -60,21 +112,39 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_109"}
 
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_normal",
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_109")
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "AK 8 inch SU Barrel"
-ATT.CompactName = "8\' SU "
-ATT.Description = [[A 8 inch SU barrel for the AK.]]
+ATT.PrintName = "AK 8 inch U Barrel"
+ATT.CompactName = "8\' U "
+ATT.Description = [[A 8 inch U barrel for the AK.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_su","uplp_ak_rearsight","uplp_ak_hgsu"}
+ATT.ActivateElements = {"uplp_ak_brl_su","uplp_ak_rearsight"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_su",
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_su")
 
@@ -90,7 +160,18 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_12","uplp_ak_hgflush"}
+ATT.ActivateElements = {"uplp_ak_brl_12"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_flush",
+        Installed = "uplp_ak_hg_12",
+        Integral = true,
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_12")
 
@@ -107,7 +188,18 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_12k","uplp_ak_hgflush"}
+ATT.ActivateElements = {"uplp_ak_brl_12k"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_flush",
+        Installed = "uplp_ak_hg_12",
+        Integral = true,
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_12k")
 
@@ -123,7 +215,18 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_19","uplp_ak_rearsight","uplp_ak_hgflush"}
+ATT.ActivateElements = {"uplp_ak_brl_19","uplp_ak_rearsight"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_flush",
+        Installed = "uplp_ak_hg_12",
+        Integral = true,
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_19")
 
@@ -139,7 +242,18 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_brl_rpk16","uplp_ak_rearsight","uplp_ak_hgflush"}
+ATT.ActivateElements = {"uplp_ak_brl_rpk16","uplp_ak_rearsight"}
+
+ATT.Attachments = {
+    {
+        PrintName = "Handguard",
+        Category = "uplp_handguard_flush",
+        Installed = "uplp_ak_hg_rpk16",
+        Integral = true,
+        Pos = Vector(2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk16")
 

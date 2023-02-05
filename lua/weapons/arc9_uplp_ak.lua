@@ -550,14 +550,14 @@ end
 
 SWEP.AttachmentElements = {
 
-    --calibers
+    --CALIBERS
 
     ["uplp_ak_calib_545"] = { Bodygroups = { { 7, 1 } } },
     ["uplp_ak_calib_556"] = { Bodygroups = { { 7, 2 } } },
     ["uplp_ak_calib_308"] = { Bodygroups = { { 7, 3 } } },
     ["uplp_ak_calib_939"] = { Bodygroups = { { 7, 4 } } },
 
-    --mags
+    --MAGS
 
     --7.62--
 
@@ -596,7 +596,7 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_mag_939_30"] = { Bodygroups = { { 8, 19 } } },
 
-    --barrels
+    --BARRELS
 
     ["uplp_ak_brl_comp"] = { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.76, 17.7), }}},
     ["uplp_ak_brl_akm"] =  { Bodygroups = { { 2, 2 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 22.75),}}},
@@ -634,11 +634,38 @@ SWEP.AttachmentElements = {
     ["uplp_ak_hg_12"] =      { Bodygroups = { { 5, 13 } } },
     ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 5, 14 } } },
 
+    --STOCKS
+
+    ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
+    ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
+    ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
+    ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
+    ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
+    ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
+    ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
+    ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
+    ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
+    ["uplp_ak_stock_no"] =         { Bodygroups = { { 6, 20} } },
+
+    ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
+    ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
+
+    ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
+    ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
     
+    ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
+    ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
+
+    ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
+    ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
+
+    ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
+    ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
+
+
     --misc
 
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
-    ["uplp_su_hgexists"]  =  {}, 
 
 }
 SWEP.Attachments = {
@@ -670,16 +697,18 @@ SWEP.Attachments = {
         PrintName = "Barrel",
         Category = {"uplp_ak_barrel"},
         Bone = "body",
+        Installed = "uplp_ak_brl_16",
+        Integral = true,
         CorrectiveAng = Angle(0.4, -0.4, -5),
         Pos = Vector(0.045, 1.5, 17),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = "Handguard",
-        Category = {"uplp_ak_handguard"},
+        PrintName = "Stock",
+        Category = {"uplp_ak_stock"},
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, -5),
-        Pos = Vector(0.045, 1.5, 11),
+        Pos = Vector(0.045, 2, -3),
         Ang = Angle(90, 90, 180),
     },
 
