@@ -137,6 +137,9 @@ ATT.ActivateElements = {"uplp_ak_mag_762_drum"}
 ATT.ClipSizeOverride = 75
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_drum"
+    end
     return anim .. "_drum"
 end
 
@@ -168,6 +171,9 @@ ATT.DamageMinMult = 0.9
 ATT.RecoilMult = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
     return anim .. "_545"
 end
 
@@ -196,7 +202,10 @@ ATT.DamageMinMult = 0.9
 
 ATT.RecoilMult = 0.9
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "inspect" then
+        return anim .. "_545"
+    end 
     return anim .. "_545"
 end
 
@@ -226,6 +235,9 @@ ATT.DamageMinMult = 0.9
 ATT.RecoilMult = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
     return anim .. "_545"
 end
 
@@ -255,6 +267,9 @@ ATT.DamageMinMult = 0.9
 ATT.RecoilMult = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
     return anim .. "_545"
 end
 
@@ -286,6 +301,9 @@ ATT.RecoilMult = 0.9
 ATT.ClipSizeOverride = 45
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
     return anim .. "_545_45rnd"
 end
 
@@ -317,6 +335,9 @@ ATT.RecoilMult = 0.9
 ATT.ClipSizeOverride = 60
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
     return anim .. "_545_60rnd"
 end
 
@@ -348,6 +369,9 @@ ATT.RecoilMult = 0.9
 ATT.ClipSizeOverride = 75
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_drum"
+    end
     return anim .. "_drum"
 end
 
@@ -380,6 +404,9 @@ ATT.RecoilMult = 0.85
 
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_556"
+    end
     return anim .. "_556"
 end
 
@@ -410,6 +437,9 @@ ATT.RecoilMult = 0.85
 
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_556"
+    end
     return anim .. "_556"
 end
 
@@ -439,7 +469,10 @@ ATT.DamageMinMult = 0.8
 ATT.RecoilMult = 0.85
 
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "inspect" then
+        return anim .. "_556"
+    end
     return anim .. "_556"
 end
 
@@ -472,6 +505,9 @@ ATT.RecoilMult = 1.2
 ATT.ClipSizeOverride = 20
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_308"
+    end
     return anim .. "_308"
 end
 
@@ -499,6 +535,9 @@ ATT.DamageMinMult = 1.1
 ATT.RecoilMult = 0.8
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
     return anim .. "_545"
 end
 

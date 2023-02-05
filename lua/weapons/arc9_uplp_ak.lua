@@ -448,7 +448,43 @@ SWEP.Animations = {
     -- Inspecc --
 
     ["inspect"] = {
-        Source = {"inspect2", "inspect1"},
+        Source = {"inspect_762", "inspect0"},
+        -- time = 10 / 30,
+        -- Framerate = 30,
+        -- LHIK = true,
+        -- LHIKIn = 0.2,
+        -- LHIKOut = 0,
+    },  
+
+    ["inspect_545"] = {
+        Source = {"inspect_545", "inspect0"},
+        -- time = 10 / 30,
+        -- Framerate = 30,
+        -- LHIK = true,
+        -- LHIKIn = 0.2,
+        -- LHIKOut = 0,
+    },
+
+    ["inspect_556"] = {
+        Source = {"inspect_556", "inspect0"},
+        -- time = 10 / 30,
+        -- Framerate = 30,
+        -- LHIK = true,
+        -- LHIKIn = 0.2,
+        -- LHIKOut = 0,
+    },
+
+    ["inspect_308"] = {
+        Source = {"inspect_308", "inspect0"},
+        -- time = 10 / 30,
+        -- Framerate = 30,
+        -- LHIK = true,
+        -- LHIKIn = 0.2,
+        -- LHIKOut = 0,
+    },
+
+    ["inspect_drum"] = {
+        Source = {"inspect_drum", "inspect0"},
         -- time = 10 / 30,
         -- Framerate = 30,
         -- LHIK = true,
@@ -502,6 +538,9 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
+    if eles["uplp_ak_brl_su"] and not eles["uplp_su_hgexists"] then
+        mdl:SetBodygroup(5,10)
+    end
     -- if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] then
     --     if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
     --         mdl:SetBodygroup(1,1)
@@ -512,6 +551,7 @@ end
 SWEP.AttachmentElements = {
 
     --calibers
+
     ["uplp_ak_calib_545"] = { Bodygroups = { { 7, 1 } } },
     ["uplp_ak_calib_556"] = { Bodygroups = { { 7, 2 } } },
     ["uplp_ak_calib_308"] = { Bodygroups = { { 7, 3 } } },
@@ -556,6 +596,50 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_mag_939_30"] = { Bodygroups = { { 8, 19 } } },
 
+    --barrels
+
+    ["uplp_ak_brl_comp"] = { Bodygroups = { { 2, 1 } } },
+    ["uplp_ak_brl_akm"] =  { Bodygroups = { { 2, 2 } } },
+    ["uplp_ak_brl_rpk"] =  { Bodygroups = { { 2, 3 } } },
+    ["uplp_ak_brl_109"] =  { Bodygroups = { { 2, 4 } } },
+
+    ["uplp_ak_brl_su"] =   { Bodygroups = { { 2, 5 } } },
+
+    ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } },
+    ["uplp_ak_brl_12k"] =  { Bodygroups = { { 2, 7 } } },
+    ["uplp_ak_brl_19"] =   { Bodygroups = { { 2, 8 } } },
+    ["uplp_ak_brl_rpk16"] ={ Bodygroups = { { 2, 9 } } },
+
+    --handguards
+
+    --normal--
+
+    ["uplp_ak_hg_100"] =   { Bodygroups = { { 5, 1 } } },
+    ["uplp_ak_hg_old"] =   { Bodygroups = { { 5, 2 } } },
+    ["uplp_ak_hg_rpk"] =   { Bodygroups = { { 5, 3 } } },
+    ["uplp_ak_hg_beryl"] = { Bodygroups = { { 5, 4 } } },
+    ["uplp_ak_hg_tac"] =   { Bodygroups = { { 5, 5 } } },
+    ["uplp_ak_hg_wood"] =  { Bodygroups = { { 5, 6 } } },
+    ["uplp_ak_hg_dong"] =  { Bodygroups = { { 5, 7 } } },
+    ["uplp_ak_hg_zen_c"] = { Bodygroups = { { 5, 8 } } },
+    ["uplp_ak_hg_zen"] =   { Bodygroups = { { 5, 9 } } },
+
+    --su--
+
+    ["uplp_ak_hg_su_tac"] = { Bodygroups = { { 5, 11 } } },
+    ["uplp_ak_hg_su_dong"] ={ Bodygroups = { { 5, 12 } } },
+
+    --no sight--
+
+    ["uplp_ak_hg_12"] =      { Bodygroups = { { 5, 13 } } },
+    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 5, 14 } } },
+
+    
+    --misc
+
+    ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
+    ["uplp_su_hgexists"]  =  {}, 
+
 }
 SWEP.Attachments = {
     {
@@ -571,9 +655,26 @@ SWEP.Attachments = {
         Category = {"uplp_ak_mag"},
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, -5),
-        Pos = Vector(0.045, -0.1, 1.326),
+        Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
     },
+    {
+        PrintName = "Barrel",
+        Category = {"uplp_ak_barrel"},
+        Bone = "body",
+        CorrectiveAng = Angle(0.4, -0.4, -5),
+        Pos = Vector(0.045, 1.5, 17),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = "Handguard",
+        Category = {"uplp_ak_handguard"},
+        Bone = "body",
+        CorrectiveAng = Angle(0.4, -0.4, -5),
+        Pos = Vector(0.045, 1.5, 11),
+        Ang = Angle(90, 90, 180),
+    },
+
     -- {
     --     PrintName = "Muzzle",
     --     DefaultAttName = "Standard Muzzle",
