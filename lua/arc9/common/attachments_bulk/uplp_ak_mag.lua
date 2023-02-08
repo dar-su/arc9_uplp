@@ -11,6 +11,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_30_bak"}
 
@@ -29,6 +30,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_30_12"}
 
@@ -47,6 +49,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_30_old"}
 
@@ -65,6 +68,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_30_oldest"}
 
@@ -83,6 +87,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_40"}
 
@@ -107,6 +112,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_40_old"}
 
@@ -133,6 +139,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "7.62"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_drum"}
+ATT.DropMagazineTime = 0.85
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_drum.mdl"
 
 ATT.ClipSizeOverride = 75
 
@@ -160,6 +168,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30", "uplp_ak_calib_545"}
 
@@ -192,6 +201,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_bak.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30_bak", "uplp_ak_calib_545"}
 
@@ -224,6 +234,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30_pmag", "uplp_ak_calib_545"}
 
@@ -256,6 +267,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_12.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30_12", "uplp_ak_calib_545"}
 
@@ -288,6 +300,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_45", "uplp_ak_calib_545"}
 
@@ -322,6 +335,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_60.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_60", "uplp_ak_calib_545"}
 
@@ -356,8 +370,11 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_drum", "uplp_ak_calib_545"}
+ATT.DropMagazineTime = 0.85
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
 ATT.RPMMult = 700/600
 
@@ -392,6 +409,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.56"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_556_30", "uplp_ak_calib_556"}
 
@@ -425,6 +443,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.56"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_556_30_pmag", "uplp_ak_calib_556"}
 
@@ -458,6 +477,7 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.56"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_12.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_556_30_12", "uplp_ak_calib_556"}
 
@@ -495,6 +515,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_mag_308_20", "uplp_ak_calib_308"}
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_308.mdl"
+
 ATT.RPMMult = 550/600
 
 ATT.DamageMaxMult = 1.4
@@ -530,6 +552,8 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_mag_939_30", "uplp_ak_calib_939"}
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_939.mdl"
 
 ATT.RPMMult = 775/600
 ATT.ClipSizeOverride = 20

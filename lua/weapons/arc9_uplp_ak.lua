@@ -177,11 +177,11 @@ SWEP.WorldModelOffset = {
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
-SWEP.DropMagazineTime = 0.6
+SWEP.DropMagazineTime = 0.75
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, -50, -10)
+SWEP.DropMagazineAng = Angle(90, 95, 90)
+SWEP.DropMagazineVelocity = Vector(0, 80, -80)
 -- SWEP.DropMagazineVelocity = Vector(0, 0, 0)
 
 -- Weapon sounds --
@@ -216,10 +216,10 @@ SWEP.HideBones = {
 SWEP.ReloadHideBoneTables = {
     [1] = {
         "mag",
+        "fakerounds",
     },
     [2] = {
         "fakemag",
-        "fakerounds",
         "bullet1",
         "bullet2",
         "bullet3",
@@ -283,12 +283,11 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 0.6}
+            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty"] = {
@@ -296,13 +295,12 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 0.6}
+            {hide = 2, t = 0.75}
         },
     },
 
@@ -313,9 +311,11 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 37 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty_40rnd"] = {
@@ -323,10 +323,12 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 43 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
 
@@ -337,12 +339,11 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 0.6}
+            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty_545"] = {
@@ -350,13 +351,12 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 0.6}
+            {hide = 2, t = 0.75}
         },
     },
 
@@ -367,9 +367,11 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 37 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty_545_45rnd"] = {
@@ -377,34 +379,40 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 43 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
 
     --5.45 60rnd--
 
-    ["reload_545_45rnd"] = {
+    ["reload_545_60rnd"] = {
         Source = "reload_545fat",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
-    ["reload_empty_545_45rnd"] = {
+    ["reload_empty_545_60rnd"] = {
         Source = "reload_empty_545fat",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 44 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 54 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
 
@@ -415,9 +423,11 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty_556"] = {
@@ -425,10 +435,12 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
 
@@ -438,21 +450,25 @@ SWEP.Animations = {
         Source = "reload_drum",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.3},
+            {hide = 2, t = 0.85}
         },
     },
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 54 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 64 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.3},
+            {hide = 2, t = 0.85}
         },
     },
 
@@ -463,9 +479,11 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 25 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
     ["reload_empty_308"] = {
@@ -473,10 +491,12 @@ SWEP.Animations = {
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 22 / 30, c = ca, v = 1 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
         },
     },
     
