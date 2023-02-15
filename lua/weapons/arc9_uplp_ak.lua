@@ -504,11 +504,17 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = {"inspect_762", "inspect0"},
+        
         -- time = 10 / 30,
         -- Framerate = 30,
         -- LHIK = true,
         -- LHIKIn = 0.2,
         -- LHIKOut = 0,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
     },  
 
     ["inspect_545"] = {
@@ -556,6 +562,9 @@ SWEP.Animations = {
     --     EventTable = {
     --         { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
     --         { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+    --         {hide = 1, t = 0},
+    --         {hide = 0, t = 0.5},
+    --         {hide = 2, t = 1.1}
     --     },
     -- },   
 
