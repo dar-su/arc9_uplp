@@ -191,9 +191,39 @@ local pathDist = "weapons/arccw/hk416/"
 local pathXC = "weapons/arccw/xcrm/"
 local pathCSR = "weapons/arccw/csr338/"
 
+
+
+
+-- silly old
+
 SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
 SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
 SWEP.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+
+
+-- uncomment and make good
+
+-- SWEP.ShootSound = { path .. "fire_new/ak101_outdoor_close_loop_1.ogg", path .. "fire_new/ak101_outdoor_close_loop_2.ogg", path .. "fire_new/ak101_outdoor_close_loop_3.ogg", path .. "fire_new/ak101_outdoor_close_loop_4.ogg" }
+-- SWEP.LayerSound = path .. "fire_new/ak101_outdoor_close_loop_tail.ogg"
+
+-- SWEP.ShootSoundSilenced = { path .. "fire_new/ak101_outdoor_silenced_close_loop_1.ogg", path .. "fire_new/ak101_outdoor_silenced_close_loop_2.ogg", path .. "fire_new/ak101_outdoor_silenced_close_loop_3.ogg", path .. "fire_new/ak101_outdoor_silenced_close_loop_4.ogg" }
+-- SWEP.LayerSoundSilenced = path .. "fire_new/ak101_outdoor_silenced_close_loop_tail.ogg"
+
+-- SWEP.ShootSoundIndoor = { path .. "fire_new/ak101_indoor_close_loop_1.ogg", path .. "fire_new/ak101_indoor_close_loop_2.ogg", path .. "fire_new/ak101_indoor_close_loop_3.ogg", path .. "fire_new/ak101_indoor_close_loop_4.ogg" }
+-- SWEP.LayerSoundIndoor = path .. "fire_new/ak101_indoor_close_loop_tail.ogg"
+
+-- SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/ak101_indoor_silenced_close_loop_1.ogg", path .. "fire_new/ak101_indoor_silenced_close_loop_2.ogg", path .. "fire_new/ak101_indoor_silenced_close_loop_3.ogg", path .. "fire_new/ak101_indoor_silenced_close_loop_4.ogg" }
+-- SWEP.LayerSoundSilencedIndoor = path .. "fire_new/ak101_indoor_silenced_close_loop_tail.ogg"
+
+        -- distants not really required
+-- SWEP.DistantShootSound = { path .. "fire_new/ak101_outdoor_distant_loop_1.ogg", path .. "fire_new/ak101_outdoor_distant_loop_2.ogg" }
+-- SWEP.DistantShootSoundSilenced = { path .. "fire_new/ak101_outdoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak101_outdoor_silenced_distant_loop_2.ogg" }
+-- SWEP.DistantShootSoundIndoor = { path .. "fire_new/ak101_indoor_distant_loop_1.ogg", path .. "fire_new/ak101_indoor_distant_loop_2.ogg" }
+-- SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak101_indoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak101_indoor_silenced_distant_loop_2.ogg" }
+
+
+
+
 
 -- Bodygroups --
 
