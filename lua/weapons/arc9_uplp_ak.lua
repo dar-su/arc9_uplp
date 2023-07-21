@@ -6,7 +6,7 @@ SWEP.UseHands = true
 
 -- Muzzle and shell effects --
 
-SWEP.MuzzleEffect = "muzzleflash_1" -- Iron sights are much easier to use this way
+SWEP.MuzzleParticle = "muzzleflash_ak47" -- Iron sights are much easier to use this way
 SWEP.ShellModel = "models/shells/shell_556.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90

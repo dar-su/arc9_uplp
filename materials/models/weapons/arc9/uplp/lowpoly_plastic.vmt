@@ -3,4 +3,5 @@
 	"$basetexture" "models/weapons/arc9/uplp/pallete"
 	"$nocull" "1"
 	"$halflambert" "1"
+    "$color2" "[1.1 1.1 1.1]"
 }

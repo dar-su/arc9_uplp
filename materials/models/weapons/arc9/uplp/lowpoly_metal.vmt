@@ -1,21 +1,41 @@
 "VertexLitGeneric"
 {
-	"$basetexture" "models/weapons/arc9/uplp/pallete"
-	"$bumpmap" "models/weapons/arc9/uplp/nrm"
-	"$phongwarptexture" "models/weapons/arc9/uplp/phongwarp"
-	"$phong" "1"
-	"$phongboost" "1"
-	"$phongexponent" "45"
-	"$phongfresnelranges" "[666.6 14 211]"
-	"$nocull" "1"
-	"$color2" "[.75 .75 .75]"
-	"$phongalbedotint" 			"1"
-
-	// "$halflambert" "1"
-	
-	"$envmap" "env_cubemap"
-	"$envmapfresnel" 			"1"
-	"$envmapFresnelMinMaxExp" "[0 5 .4]"
-	"$envmaptint"	"[1 1 1]"
+	"$basetexture" "models/weapons/arc9/uplp/palletetr"
 	"$halflambert" "1"
+	"$nocull" "1"
+
+
+	"$phongwarptexture"			"models/weapons/arc9/uplp/phongwarp" // string -- phong gradient texture: 256x16 texture where x:0 = unlit, x:256 = fully lit (default is a perfect 0-256 black to white gradient)
+
+    "$bumpmap" "models/weapons/arc9/uplp/nrm"
+    "$phongexponenttexture" "models/weapons/arc9/uplp/exp"
+    "$color2" "[0.3 0.3 0.3]"
+    "$blendtintbybasealpha" "1"
+
+    "$phong" "1"
+    "$phongboost" "0.5"
+	"$phongalbedoboost" "45"
+    "$phongfresnelranges" "[0 0.1 1]"
+    "$phongalbedotint" "1"
+
+    //rimlight doesn't properly show in hlmv, make sure you're changing these values in game
+    "$rimlight" "1"
+    "$rimlightexponent" "25"
+    "$rimmask" "0"
+    "$rimlightboost" "0.3"
+
+    "$normalmapalphaenvmapmask" "1"
+    "$envmapfresnel" "0"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.2 0.2 0.2]"
+
+    "Proxies"
+    {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.25"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" "0.4"                       //change this if too bright in game
+        }
+    }
 }
