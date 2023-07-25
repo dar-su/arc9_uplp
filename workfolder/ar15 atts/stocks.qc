@@ -15,6 +15,7 @@ $bodygroup "body"
 	studio "stock_ak12.smd" // 8
 	studio "stock_light.smd" // 9
 	studio "stock_pdw.smd" // 10 a
+	studio "magpulstock.smd" // 11 b
 }
 
 $sequence "idle" {

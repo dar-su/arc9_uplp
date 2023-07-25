@@ -2,7 +2,7 @@ $modelname "weapons\arc9\uplp\ak_lhik_dong.mdl"
  
 $bodygroup "owo" { // 0
 	// blank
-	//studio "bizon mag.smd" // 0
+	studio "fakething.smd" // 0
 }   
 
 $cdmaterials "models\weapons\arc9\uplp"

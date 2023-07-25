@@ -116,7 +116,7 @@ SWEP.NPCWeight = 60
 -- Accuracy --
 
 SWEP.Spread = 10 * ARC9.MOAToAcc
-SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddHipFire = 0.01
 SWEP.SpreadMultMove = 1.5
 SWEP.SpreadAddRecoil = 0.03
 SWEP.SpreadAddMove = 0.015
@@ -321,16 +321,17 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Mult = 1.1,
-        -- Framerate = 30,
-        -- time = 35 / 30,
-        -- LHIK = true,
-        -- LHIKIn = 0,
-        -- LHIKEaseOut = 0.2,
-        -- LHIKOut = 0.6,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
             { s = pathURBANNNN .. "slidepull.ogg", t = 12 / 60, c = ca },
             { s = pathURBANNNN .. "chamber.ogg", t = 20 / 60, c = ca },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -339,11 +340,25 @@ SWEP.Animations = {
         EventTable = {
             {s = pathURBANNNNcommon .. "raise.ogg", t = 0.05},
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
             {s = pathURBANNNNcommon .. "raise.ogg", t = 0.05},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },    
 
@@ -373,6 +388,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -393,6 +415,13 @@ SWEP.Animations = {
             {hide = 1, t = 0.8},
             {hide = 1, t = 2},
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["reload_ext"] = {
@@ -410,6 +439,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.733}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     ["reload_empty_ext"] = {
@@ -431,6 +467,13 @@ SWEP.Animations = {
             {hide = 1, t = 1.07},
             {hide = 1, t = 2.333},
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     -- Inspecc --
@@ -442,6 +485,13 @@ SWEP.Animations = {
             { s = rottle, t = 54 / 30, c = ca },
             { s = rottle, t = 92 / 30, c = ca },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },  
     ["inspect_empty"] = {
         Source = "inspect_empty",
@@ -449,6 +499,13 @@ SWEP.Animations = {
             { s = rottle, t = 0 / 30, c = ca },
             { s = rottle, t = 54 / 30, c = ca },
             { s = rottle, t = 92 / 30, c = ca },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },  
 
@@ -539,6 +596,13 @@ SWEP.Attachments = {
         Category = {"uplp_deag_grip"},
         Bone = "body",
         Pos = Vector(0, 0, 0.7),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = "Front Grip",
+        Category = {"uplp_grip_vert"},
+        Bone = "body",
+        Pos = Vector(0, -1.35, 7.5),
         Ang = Angle(90, 90, 180),
     },
 

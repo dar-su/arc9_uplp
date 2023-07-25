@@ -83,7 +83,8 @@ SWEP.RecoilMultCrouch = 0.75
 
 
 
-SWEP.UseVisualRecoil = true 
+SWEP.UseVisualRecoil = false 
+SWEP.PhysicalVisualRecoil = false 
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultHipFire = 0.03
 SWEP.VisualRecoilMultSights = 1
@@ -254,6 +255,13 @@ SWEP.Animations = {
             { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["draw"] = {
@@ -316,6 +324,13 @@ SWEP.Animations = {
             { s = path .. "magin_metal.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 27 / 30, c = ca, v = 0.8 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
@@ -327,25 +342,36 @@ SWEP.Animations = {
             { s = path .. "chamber.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 36 / 30, c = ca, v = 0.8 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     
     -- Inspecc --
 
     ["inspect"] = {
         Source = "inspect",
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },    
     ["inspect_empty"] = {
         Source = "inspect_empty",
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     -- ["idle_inspect"] = {
     --     Source = "idle_inspect",
