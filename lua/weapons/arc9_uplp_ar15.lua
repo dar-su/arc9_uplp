@@ -21,22 +21,29 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "AR-15" 
+SWEP.PrintName = "Carbine-64" 
 SWEP.TrueName = "AR-15" 
 
 -- Trivia --
 
-SWEP.Class = "Assault Rifle"
+SWEP.Class = "Carbine Rifle"
+SWEP.SubCategory = SWEP.Class
 
 SWEP.Trivia = {
-    Manufacturer1 = "NW",
-    Calibre2 = "5.56x45mm NATO",
-    Mechanism3 = "Long Stroke, Gas Piston",
-    Country4 = "USA",
-    Year5 = 2004
+    Manufacturer = "U.S. Ordnance",
+    Calibre = "5.56x45mm NATO",
+    Mechanism = "Gas-operated, closed rotating bolt",
+    Country = "United States",
+    Year = "1964 > Present"
 }
 
-SWEP.Description = [[tremendo mutante]]
+SWEP.Description = "DESC FOR AR-15"
+
+SWEP.Credits = {
+    Authors = "Darsu | Moka",
+    Assets = "LIST ASSETS"
+}
+
 -- Weapon slot --
 
 SWEP.Slot = 2
@@ -501,6 +508,8 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.99, -2.98),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ar15_stock_m4",
+        Integral = "uplp_ar15_stock_m4",
     },
     {
         PrintName = "Pistol grip",
@@ -508,6 +517,8 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 3.2, -0.56),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ar15_pgrip_std",
+        Integral = "uplp_ar15_pgrip_std",
     },
     {
         PrintName = "Charge",
@@ -515,6 +526,8 @@ SWEP.Attachments = {
         Bone = "chandle",
         Pos = Vector(-0.01, 0.094, -0.05),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ar15_chandle_std",
+        Integral = "uplp_ar15_chandle_std",
     },
     {
         PrintName = "Barrel",
@@ -522,7 +535,9 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.633, 5.672),
         Ang = Angle(90, 90, 180),
-        Integral = true
+        Integral = true,
+        Installed = "uplp_ar15_barrel_10",
+        Integral = "uplp_ar15_barrel_10",
     },
     {
         PrintName = "Handguard",
@@ -531,7 +546,9 @@ SWEP.Attachments = {
         Pos = Vector(0.045, -0.2, 7.703),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, -1),
-        Integral = true
+        Integral = true,
+        Installed = "uplp_ar15_hg_risshort",
+        Integral = "uplp_ar15_hg_risshort",
     },
     {
         PrintName = "Reciever",
@@ -539,7 +556,9 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1, 2),
         Ang = Angle(90, 90, 180),
-        Integral = true
+        Integral = true,
+        Installed = "uplp_ar15_reciever_m16",
+        Integral = "uplp_ar15_reciever_m16",
     },
     { -- regular mag
         PrintName = "Magazine",
@@ -549,7 +568,8 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
-        Integral = false
+        Integral = "uplp_ar15_mag_stanag30",
+        Installed = "uplp_ar15_mag_stanag30",
     },
     { -- 45acp mag
         PrintName = "Magazine",
@@ -559,7 +579,8 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
-        Integral = false
+        Installed = "uplp_ar15_mag_45_20",
+        Integral = "uplp_ar15_mag_45_20",
     },
     { -- glock mag
         PrintName = "Magazine",
@@ -569,7 +590,8 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
-        Integral = false
+		Installed = "uplp_ar15_mag_glock_17",
+        Integral = "uplp_ar15_mag_glock_17",
     },
     -- {
     --     PrintName = "Optic",

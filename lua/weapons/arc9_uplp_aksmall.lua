@@ -21,22 +21,29 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "small AK" 
-SWEP.TrueName = "small AK" 
+SWEP.PrintName = "Compact AR-59" 
+SWEP.TrueName = "Compact AK"
 
 -- Trivia --
 
-SWEP.Class = "Sub   machine"
+SWEP.Class = "Assault Rifle"
+SWEP.SubCategory = SWEP.Class
 
 SWEP.Trivia = {
-    Manufacturer1 = "NW",
-    Calibre2 = "7.62x39mm NATO",
-    Mechanism3 = "Long Stroke, Gas Piston",
-    Country4 = "RUSSIA",
-    Year5 = 1024
+    Manufacturer = "Izhmash",
+    Calibre = "7.62x39mm Soviet",
+    Mechanism = "Long Stroke, Gas Piston",
+    Country = "Soviet Union",
+    Year = "1959 > Present"
 }
 
-SWEP.Description = [[tremendo mutante]]
+SWEP.Description = "DESC FOR COMPACT AK"
+
+SWEP.Credits = {
+    Authors = "Darsu | Moka",
+    Assets = "LIST ASSETS"
+}
+
 -- Weapon slot --
 
 SWEP.Slot = 2

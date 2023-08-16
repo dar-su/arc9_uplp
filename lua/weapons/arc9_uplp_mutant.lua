@@ -22,22 +22,29 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "MUTANT" 
+SWEP.PrintName = "Mutant Rifle" 
 SWEP.TrueName = "Mk47 Mutant" 
 
 -- Trivia --
 
 SWEP.Class = "Assault Rifle"
+SWEP.SubCategory = SWEP.Class
 
 SWEP.Trivia = {
-    Manufacturer1 = "NW",
-    Calibre2 = "7.62x39mm Soviet",
-    Mechanism3 = "Gas-operated, Rotating bolt",
-    Country4 = "USA",
-    Year5 = 2004
+    Manufacturer = "CMMG Inc.",
+    Calibre = "7.62x39mm Soviet",
+    Mechanism = "Gas-operated, rotating bolt",
+    Country = "United States",
+    Year = "2014 > Present"
 }
 
-SWEP.Description = [[tremendo mutante]]
+SWEP.Description = "DESC FOR MK47 MUTANT"
+
+SWEP.Credits = {
+    Authors = "Darsu | Moka",
+    Assets = "LIST ASSETS"
+}
+
 -- Weapon slot --
 
 SWEP.Slot = 2

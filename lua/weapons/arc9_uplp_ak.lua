@@ -21,22 +21,29 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "AK" 
-SWEP.TrueName = "AK" 
+SWEP.PrintName = "AR-59" 
+SWEP.TrueName = "AKM" 
 
 -- Trivia --
 
 SWEP.Class = "Assault Rifle"
+SWEP.SubCategory = SWEP.Class
 
 SWEP.Trivia = {
-    Manufacturer1 = "NW",
-    Calibre2 = "7.62x39mm NATO",
-    Mechanism3 = "Long Stroke, Gas Piston",
-    Country4 = "RUSSIA",
-    Year5 = 1024
+    Manufacturer = "Izhmash",
+    Calibre = "7.62x39mm Soviet",
+    Mechanism = "Long Stroke, Gas Piston",
+    Country = "Soviet Union",
+    Year = "1959 > Present"
 }
 
-SWEP.Description = [[tremendo mutante]]
+SWEP.Description = "DESC FOR AKM"
+
+SWEP.Credits = {
+    Authors = "Darsu | Moka",
+    Assets = "LIST ASSETS"
+}
+
 -- Weapon slot --
 
 SWEP.Slot = 2
@@ -791,6 +798,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ak_mag_762_30_old",
     },
     {
         PrintName = "Barrel",
@@ -807,6 +815,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ak_grip_old",
     },
     {
         PrintName = "Stock",
@@ -814,6 +823,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 2, -3),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ak_stock_old",
     },
 
     -- {

@@ -21,22 +21,29 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "Deagle" 
-SWEP.TrueName = "Deagle" 
+SWEP.PrintName = "Hawk Cannon" 
+SWEP.TrueName = "Desert Eagle" 
 
 -- Trivia --
 
-SWEP.Class = "Mega pistol"
+SWEP.Class = "Handgun"
+SWEP.SubCategory = SWEP.Class
 
 SWEP.Trivia = {
-    Manufacturer1 = "aa",
-    Calibre2 = "fifty ae",
-    Mechanism3 = "Long Stroke, Gas Piston",
-    Country4 = "aaa",
-    Year5 = 1024
+    Manufacturer = "Magnum Research",
+    Calibre = ".50 AE",
+    Mechanism = "Gas-operated, closed rotating bolt",
+    Country = "Israel",
+    Year = "1983 > Present"
 }
 
-SWEP.Description = [[tremendo mutante]]
+SWEP.Description = "DESC FOR DESERT EAGLE"
+
+SWEP.Credits = {
+    Authors = "Darsu | Moka",
+    Assets = "LIST ASSETS"
+}
+
 -- Weapon slot --
 
 SWEP.Slot = 2
