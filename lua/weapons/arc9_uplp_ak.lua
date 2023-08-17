@@ -21,8 +21,7 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "AR-59" 
-SWEP.TrueName = "AKM" 
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak103")
 
 -- Trivia --
 
@@ -37,7 +36,7 @@ SWEP.Trivia = {
     Year = "1959 > Present"
 }
 
-SWEP.Description = "DESC FOR AKM"
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak103_desc")
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",
@@ -123,9 +122,20 @@ SWEP.NPCWeight = 60
 
 -- Accuracy --
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.035
+
+SWEP.SpreadAddRecoil = 0.05
+
 SWEP.SpreadMultSights = 0.001
-SWEP.SpreadMultMove = 5
+SWEP.SpreadMultMove = 2
+
+SWEP.RecoilDissipationRate = 10
+SWEP.RecoilResetTime = 0
+SWEP.RecoilPerShot = 0.5
+SWEP.RecoilMax = 1
+
+SWEP.RecoilModifierCapSights = 0.25
 
 -- Speed mult --
 
@@ -153,14 +163,14 @@ SWEP.HoldTypeNPC = nil
 SWEP.IronSights = {
      Pos = Vector(-2.3, -3, 0.975),
      Ang = Angle(0.34, 0, -2.5),
-     Magnification = 1,
-     ViewModelFOV = 70,
+     Magnification = 1.15,
+     ViewModelFOV = 60,
 }
 
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.CustomizePos = Vector(14, 30, 5)
+SWEP.CustomizePos = Vector(14, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 
 SWEP.HolsterPos = Vector(1, 0, -3)
@@ -296,6 +306,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty"] = {
         Source = "reload_empty_762",
@@ -308,6 +325,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -510,79 +534,57 @@ SWEP.Animations = {
     -- Inspecc --
 
     ["inspect"] = {
-        Source = {"inspect_762", "inspect0"},
-        
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
+        Source = {"inspect_762"},
+        MinProgress = 0.1,
+        FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 117.5 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect"] = {
+        Source = {"inspect0"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
         },
     },  
 
     ["inspect_545"] = {
         Source = {"inspect_545", "inspect0"},
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
     },
 
     ["inspect_556"] = {
         Source = {"inspect_556", "inspect0"},
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
     },
 
     ["inspect_308"] = {
         Source = {"inspect_308", "inspect0"},
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
     },
 
     ["inspect_drum"] = {
         Source = {"inspect_drum", "inspect0"},
-        -- time = 10 / 30,
-        -- Framerate = 30,
-        -- LHIK = true,
-        -- LHIKIn = 0.2,
-        -- LHIKOut = 0,
     },  
-    
-    -- please sound anims here, thing on top is for bad random without soundtables
-    -- remove 1/2 from "inspectX" and comment out top thing
-    -- then when done put number back, ill do random with soundtables later 
-
-    -- ["inspect1"] = { -- look at that
-    --     Source = "inspect1",
-    --     EventTable = {
-    --         { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-    --         { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
-    --         {hide = 1, t = 0},
-    --         {hide = 0, t = 0.5},
-    --         {hide = 2, t = 1.1}
-    --     },
-    -- },   
-
-    -- ["inspect2"] = { -- mag trick
-    --     Source = "inspect2",
-    --     EventTable = {
-    --         { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-    --         { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
-    --     },
-    -- },   
-
 
     ["firemode_1"] = {
         Source = "firemode_0",
@@ -590,6 +592,7 @@ SWEP.Animations = {
     ["firemode_2"] = {
         Source = "firemode_1",
     },
+	
     ["toggle"] = {
         Source = "modeswitch",
         EventTable = {
@@ -784,6 +787,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),
         RequireElements = {"use_optics"},
+        CorrectiveAng = Angle(0.45, -0.25, 0),
     },
     {
         PrintName = "Muzzle",
@@ -791,6 +795,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.768, 22.3),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_muzzle_slim",
     },
     {
         PrintName = "Magazine",
@@ -798,7 +803,6 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_mag_762_30_old",
     },
     {
         PrintName = "Barrel",
@@ -815,7 +819,6 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_grip_old",
     },
     {
         PrintName = "Stock",
@@ -823,7 +826,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 2, -3),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_stock_old",
+        Installed = "uplp_ak_stock_fold",
     },
 
     -- {

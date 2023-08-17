@@ -21,8 +21,7 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "Hawk Cannon" 
-SWEP.TrueName = "Desert Eagle" 
+SWEP.PrintName = "Desert Eagle" 
 
 -- Trivia --
 

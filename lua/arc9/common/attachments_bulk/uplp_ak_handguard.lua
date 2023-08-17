@@ -116,6 +116,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
 ATT.LHIK = true
+ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_ak_hg_dong"}
 

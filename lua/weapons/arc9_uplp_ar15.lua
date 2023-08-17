@@ -21,8 +21,7 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "Carbine-64" 
-SWEP.TrueName = "AR-15" 
+SWEP.PrintName = "AR-15" 
 
 -- Trivia --
 

@@ -2,9 +2,9 @@
 
 local ATT = {}
 
-ATT.PrintName = "AK 16 inch Standard Barrel"
-ATT.CompactName = "16\'"
-ATT.Description = [[A 16 inch barrel for the AK.]]
+ATT.PrintName = "AK-100 400mm Barrel"
+ATT.CompactName = "400mm"
+ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -16,14 +16,16 @@ ATT.Attachments = {
     {
         PrintName = "Handguard",
         Category = "uplp_handguard_normal",
+        Installed = "uplp_ak_hg_100",
+        Integral = "uplp_ak_hg_100",
         Pos = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = "Dust Cover",
         Category = "uplp_ak_dc",
-        Installed = "uplp_ak_dc_std",
-        Integral = "uplp_ak_dc_std",
+        Installed = "uplp_ak_dc_flat",
+        Integral = "uplp_ak_dc_flat",
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
@@ -35,9 +37,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_16")
 
 ATT = {}
 
-ATT.PrintName = "AK 12 inch Compact Barrel"
-ATT.CompactName = "12\' COMP "
-ATT.Description = [[A 12 inch compact barrel for the AK.]]
+ATT.PrintName = "Draco 300mm Barrel"
+ATT.CompactName = "Draco 300mm"
+ATT.Description = "Short 300mm (12\") barrel used on the Draco."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -68,9 +70,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_comp")
 
 ATT = {}
 
-ATT.PrintName = "AK 16 inch AKM Barrel"
-ATT.CompactName = "16\' AKM "
-ATT.Description = [[A 16 inch AKM barrel for the AK.]]
+ATT.PrintName = "AKM 400mm Barrel"
+ATT.CompactName = "AKM 400mm"
+ATT.Description = "Standard 400mm (16\") barrel used on the AKM."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -101,9 +103,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_akm")
 
 ATT = {}
 
-ATT.PrintName = "AK 23 inch RPK Barrel"
-ATT.CompactName = "23\' RPK "
-ATT.Description = [[A 23 inch RPK barrel for the AK.]]
+ATT.PrintName = "RPK 585mm Barrel"
+ATT.CompactName = "RPK 585mm"
+ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-74 and RPK-74M."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -134,9 +136,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk")
 
 ATT = {}
 
-ATT.PrintName = "AK 17 inch AK109 Barrel"
-ATT.CompactName = "17\' 109 "
-ATT.Description = [[A 17 inch AK109 barrel for the AK.]]
+ATT.PrintName = "AK-109 432mm Barrel"
+ATT.CompactName = "AK-109 432mm"
+ATT.Description = "Longer 432mm (17\") barrel used on the AK-109."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -159,9 +161,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_109")
 
 ATT = {}
 
-ATT.PrintName = "AK 8 inch U Barrel"
-ATT.CompactName = "8\' U "
-ATT.Description = [[A 8 inch U barrel for the AK.]]
+ATT.PrintName = "74U 203mm Barrel"
+ATT.CompactName = "74U 203mm"
+ATT.Description = "Compact 203mm (8\") barrel used on the AKS-74U."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -192,9 +194,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_su")
 
 ATT = {}
 
-ATT.PrintName = "AK 16 inch AK12 Barrel"
-ATT.CompactName = "16\' 12 "
-ATT.Description = [[A 16 inch AK12 barrel for the AK.]]
+ATT.PrintName = "AK-12 400mm"
+ATT.CompactName = "AK-12 400mm"
+ATT.Description = "Standard 400mm (16\") barrel used on the AK-12."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -228,9 +230,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_12")
 
 ATT = {}
 
-ATT.PrintName = "AK 9 inch AK12-K Barrel"
-ATT.CompactName = "9\' 12K "
-ATT.Description = [[A 9 inch AK12-K barrel for the AK.]]
+ATT.PrintName = "AK-12K 230mm Barrel"
+ATT.CompactName = "AK-12K 230mm"
+ATT.Description = "Shortened 230mm (9\") barrel from the prototype AK-12K."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -263,9 +265,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_12k")
 
 ATT = {}
 
-ATT.PrintName = "AK 16 inch AK19 Barrel"
-ATT.CompactName = "16\' 19 "
-ATT.Description = [[A 16 inch AK19 barrel for the AK.]]
+ATT.PrintName = "AK-19 400mm Barrel"
+ATT.CompactName = "AK-19 400mm"
+ATT.Description = "Shortened 400mm (16\") barrel used on the AK-19, an export version of the AK-12."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -298,9 +300,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_19")
 
 ATT = {}
 
-ATT.PrintName = "AK 23 inch RPK16 Barrel"
-ATT.CompactName = "23\' 16 "
-ATT.Description = [[A 23 inch RPK16 barrel for the AK.]]
+ATT.PrintName = "RPK-16 585mm Barrel"
+ATT.CompactName = "RPK-16 585mm"
+ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-16."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
