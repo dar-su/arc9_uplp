@@ -250,20 +250,28 @@ SWEP.ReloadHideBoneTables = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        -- Time = 0.1,
+    },
+    ["enter_sights"] = {
+        Source = "idle",
+        IKTimeLine = { { t = 0, lhik = 1 } },
+    },
+    ["enter_sprint"] = {
+        Source = "idle",
+        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
-        -- Framerate = 30,
-        -- time = 35 / 30,
-        -- LHIK = true,
-        -- LHIKIn = 0,
-        -- LHIKEaseOut = 0.2,
-        -- LHIKOut = 0.6,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "charge.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = path556 .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -277,6 +285,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -287,9 +296,7 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
-        -- Source = "fire_03",
-        -- Time = 1,
-        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {{ s = {pathAK .. "mech-01.ogg", pathAK .. "mech-02.ogg", pathAK .. "mech-03.ogg", pathAK .. "mech-04.ogg", pathAK .. "mech-05.ogg", pathAK .. "mech-06.ogg"}, t = 0 }},
     },
 
@@ -297,11 +304,12 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload_762",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 32 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -310,18 +318,19 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty_762",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "charge.ogg", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -329,8 +338,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -348,6 +357,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_40rnd"] = {
         Source = "reload_empty_762long",
@@ -360,6 +376,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -376,6 +399,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_545"] = {
         Source = "reload_empty_545",
@@ -388,6 +418,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -404,6 +441,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_545_45rnd"] = {
         Source = "reload_empty_545long",
@@ -416,6 +460,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -432,6 +483,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_545_60rnd"] = {
         Source = "reload_empty_545fat",
@@ -444,6 +502,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -460,6 +525,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_556"] = {
         Source = "reload_empty_556",
@@ -472,6 +544,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -488,6 +567,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.3},
             {hide = 2, t = 0.85}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
@@ -500,6 +586,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 0.85}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -516,6 +609,13 @@ SWEP.Animations = {
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_308"] = {
         Source = "reload_empty_308",
@@ -528,6 +628,13 @@ SWEP.Animations = {
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     
@@ -571,20 +678,139 @@ SWEP.Animations = {
     },  
 
     ["inspect_545"] = {
-        Source = {"inspect_545", "inspect0"},
-    },
+        Source = {"inspect_545"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_545"] = {
+        Source = {"inspect0"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
 
     ["inspect_556"] = {
-        Source = {"inspect_556", "inspect0"},
+        Source = {"inspect_556"},
     },
+    ["1_inspect_556"] = {
+        Source = {"inspect0"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+
 
     ["inspect_308"] = {
-        Source = {"inspect_308", "inspect0"},
-    },
+        Source = {"inspect_308"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_308"] = {
+        Source = {"inspect0"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+
 
     ["inspect_drum"] = {
-        Source = {"inspect_drum", "inspect0"},
+        Source = {"inspect_drum"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 145 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
     },  
+    ["1_inspect_drum"] = {
+        Source = {"inspect0"},
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+
 
     ["firemode_1"] = {
         Source = "firemode_0",

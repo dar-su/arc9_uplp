@@ -57,7 +57,7 @@ L["uplp_class_weapon_throwable"] = "Throwable"
 
 -- [[ Weapon Names and Descriptions ]]
 L["uplp_weapon_ak103"] = "AK-103"
-L["uplp_weapon_ak103_desc"] = "The modern AK-103 is based on the AK-74M and is chambered in the 7_62x39mm M43 cartridge. Thanks to its very customizable nature, the 103 can equip a variety of pistol grips, handguards, stocks and magazines."
+L["uplp_weapon_ak103_desc"] = "The modern AK-103 is based on the AK-74M and is chambered in the 7.62x39mm M43 cartridge. Thanks to its very customizable nature, the 103 can equip a variety of pistol grips, handguards, stocks and magazines."
 
 -- [[ Attachments ]]
 -- Attachment category slots
