@@ -21,22 +21,24 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak103")
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak")
 
 -- Trivia --
 
-SWEP.Class = "Assault Rifle"
-SWEP.SubCategory = SWEP.Class
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar")
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
 
 SWEP.Trivia = {
-    Manufacturer = "Izhmash",
-    Calibre = "7.62x39mm Soviet",
-    Mechanism = "Long Stroke, Gas Piston",
-    Country = "Soviet Union",
-    Year = "1959 > Present"
+    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x32mm"),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
+																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1959" ),
 }
 
-SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak103_desc")
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",
@@ -73,20 +75,22 @@ SWEP.ClipSize = 30 -- Self-explanatory.
 
 -- Recoil --
 
-SWEP.Recoil = 5
+SWEP.Recoil = 1.5
 SWEP.RecoilUp = 0.7
-SWEP.RecoilSide = 0.8
-SWEP.RecoilRandomUp = 0.4
-SWEP.RecoilRandomSide = 0.3
+SWEP.RecoilSide = 1.15
+SWEP.RecoilRandomUp = 0.65
+SWEP.RecoilRandomSide = 0.75
 SWEP.RecoilAutoControl = 4
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
 
-SWEP.RecoilMultSights = 0.8
+SWEP.RecoilAutoControl = 0.2
+
+SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
 
-
+SWEP.Sway = 0
 
 
 SWEP.UseVisualRecoil = true 
@@ -123,16 +127,17 @@ SWEP.NPCWeight = 60
 -- Accuracy --
 
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.035
+SWEP.SpreadAddHipFire = 0.02
 
-SWEP.SpreadAddRecoil = 0.05
+SWEP.SpreadAddRecoil = 0.065
+SWEP.SpreadAddMove = 0.04
 
 SWEP.SpreadMultSights = 0.001
-SWEP.SpreadMultMove = 2
+SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 10
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.5
+SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
 SWEP.RecoilModifierCapSights = 0.25
@@ -348,6 +353,7 @@ SWEP.Animations = {
 
     ["reload_40rnd"] = {
         Source = "reload_762long",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -367,6 +373,7 @@ SWEP.Animations = {
     },
     ["reload_empty_40rnd"] = {
         Source = "reload_empty_762long",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -390,6 +397,7 @@ SWEP.Animations = {
 
     ["reload_545"] = {
         Source = "reload_545",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -409,6 +417,7 @@ SWEP.Animations = {
     },
     ["reload_empty_545"] = {
         Source = "reload_empty_545",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -432,6 +441,7 @@ SWEP.Animations = {
 
     ["reload_545_45rnd"] = {
         Source = "reload_545long",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -451,6 +461,7 @@ SWEP.Animations = {
     },
     ["reload_empty_545_45rnd"] = {
         Source = "reload_empty_545long",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -474,6 +485,7 @@ SWEP.Animations = {
 
     ["reload_545_60rnd"] = {
         Source = "reload_545fat",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -493,6 +505,7 @@ SWEP.Animations = {
     },
     ["reload_empty_545_60rnd"] = {
         Source = "reload_empty_545fat",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -516,6 +529,7 @@ SWEP.Animations = {
 
     ["reload_556"] = {
         Source = "reload_556",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -535,6 +549,7 @@ SWEP.Animations = {
     },
     ["reload_empty_556"] = {
         Source = "reload_empty_556",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -558,6 +573,7 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
@@ -577,6 +593,7 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
@@ -600,6 +617,7 @@ SWEP.Animations = {
 
     ["reload_308"] = {
         Source = "reload_308",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -619,6 +637,7 @@ SWEP.Animations = {
     },
     ["reload_empty_308"] = {
         Source = "reload_empty_308",
+		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -716,7 +735,23 @@ SWEP.Animations = {
 
     ["inspect_556"] = {
         Source = {"inspect_556"},
-    },
+        MinProgress = 0.1,
+        FireASAP = true,
+        EventTable = {
+            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = pathAK .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
+            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
     ["1_inspect_556"] = {
         Source = {"inspect0"},
         MinProgress = 0.1,
@@ -850,54 +885,17 @@ end
 
 SWEP.AttachmentElements = {
 
-    --CALIBERS
+    -- RECIEVERS
+    ["uplp_ak_rec_old"] =         { Bodygroups = { { 0, 1 } } },
+    ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
+    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
 
-    ["uplp_ak_calib_545"] = { Bodygroups = { { 7, 1 } } },
-    ["uplp_ak_calib_556"] = { Bodygroups = { { 7, 2 } } },
-    ["uplp_ak_calib_308"] = { Bodygroups = { { 7, 3 } } },
-    ["uplp_ak_calib_939"] = { Bodygroups = { { 7, 4 } } },
+    -- FIRE SELECTORS
+    ["uplp_ak_fs_old"] =         { Bodygroups = { { 1, 1 } } },
+    ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
+    ["uplp_ak_fs_m1"] =          { Bodygroups = { { 1, 3 } } },
 
-    --MAGS
-
-    --7.62--
-
-    ["uplp_ak_mag_762_30_bak"] = { Bodygroups = { { 8, 1 } } },
-    ["uplp_ak_mag_762_30_12"] = { Bodygroups = { { 8, 2 } } },
-    ["uplp_ak_mag_762_30_old"] = { Bodygroups = { { 8, 3 } } },
-    ["uplp_ak_mag_762_30_oldest"] = { Bodygroups = { { 8, 4 } } },
-
-    ["uplp_ak_mag_762_40"] = { Bodygroups = { { 8, 5 } } },
-    ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 8, 6 } } },
-
-    ["uplp_ak_mag_762_drum"] = { Bodygroups = { { 8, 7 } } },
-    
-    --5.45--
-
-    ["uplp_ak_mag_545_30"] = { Bodygroups = { { 8, 8 } } },
-    ["uplp_ak_mag_545_30_bak"] = { Bodygroups = { { 8, 9 } } },
-    ["uplp_ak_mag_545_30_pmag"] = { Bodygroups = { { 8, 10 } } },
-    ["uplp_ak_mag_545_30_12"] = { Bodygroups = { { 8, 11 } } },
-
-    ["uplp_ak_mag_545_45"] = { Bodygroups = { { 8, 12 } } },
-
-    ["uplp_ak_mag_545_60"] = { Bodygroups = { { 8, 13 } } },
-
-    ["uplp_ak_mag_545_drum"] = { Bodygroups = { { 8, 14 } } },
-
-    --5.56--
-
-    ["uplp_ak_mag_556_30"] = { Bodygroups = { { 8, 15 } } },
-    ["uplp_ak_mag_556_30_12"] = { Bodygroups = { { 8, 16 } } },
-    ["uplp_ak_mag_556_30_pmag"] = { Bodygroups = { { 8, 17 } } },
-
-    --Other--
-
-    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 8, 18 } } },
-
-    ["uplp_ak_mag_939_30"] = { Bodygroups = { { 8, 19 } } },
-
-    --BARRELS
-
+    -- BARRELS
     ["uplp_ak_brl_comp"] = { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.76, 17.7), }}},
     ["uplp_ak_brl_akm"] =  { Bodygroups = { { 2, 2 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 22.75),}}},
     ["uplp_ak_brl_rpk"] =  { Bodygroups = { { 2, 3 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.7, 30),    }}},
@@ -910,10 +908,29 @@ SWEP.AttachmentElements = {
     ["uplp_ak_brl_19"] =   { Bodygroups = { { 2, 8 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
     ["uplp_ak_brl_rpk16"] ={ Bodygroups = { { 2, 9 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
 
-    --handguards
+    -- DUST COVERS
+    ["uplp_ak_dc_std"] =           { Bodygroups = { { 3, 0 } } },
+    ["uplp_ak_dc_flat"] =          { Bodygroups = { { 3, 1 } } },
+    ["uplp_ak_dc_old"] =           { Bodygroups = { { 3, 2 } } },
+    ["uplp_ak_dc_rail"] =          { Bodygroups = { { 3, 3 } } },
+    ["uplp_ak_dc_rail2"] =         { Bodygroups = { { 3, 4 } } },
+    ["uplp_ak_dc_zen"] =           { Bodygroups = { { 3, 5 } } },
+    ["uplp_ak_dc_beryl"] =         { Bodygroups = { { 3, 6 } }, AttPosMods = {[1] = { Pos = Vector(0, -0.35, 0.5), }}},
+    ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
+    ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
 
-    --normal--
+    -- PISTOL GRIPS
+    ["uplp_ak_grip_bak"] =         { Bodygroups = { { 4, 1 } } },
+    ["uplp_ak_grip_old"] =         { Bodygroups = { { 4, 2 } } },
+    ["uplp_ak_grip_tac"] =         { Bodygroups = { { 4, 3 } } },
+    ["uplp_ak_grip_tapco"] =       { Bodygroups = { { 4, 4 } } },
+    ["uplp_ak_grip_vityaz"] =      { Bodygroups = { { 4, 5 } } },
+    ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
+    ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
+    ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
 
+    -- HANDGUARDS
+    -- Standard
     ["uplp_ak_hg_100"] =   { Bodygroups = { { 5, 1 } } },
     ["uplp_ak_hg_old"] =   { Bodygroups = { { 5, 2 } } },
     ["uplp_ak_hg_rpk"] =   { Bodygroups = { { 5, 3 } } },
@@ -924,18 +941,13 @@ SWEP.AttachmentElements = {
     ["uplp_ak_hg_zen_c"] = { Bodygroups = { { 5, 8 } } },
     ["uplp_ak_hg_zen"] =   { Bodygroups = { { 5, 9 } } },
 
-    --su--
-
     ["uplp_ak_hg_su_tac"] = { Bodygroups = { { 5, 11 } } },
     ["uplp_ak_hg_su_dong"] ={ Bodygroups = { { 5, 12 } } },
-
-    --no sight--
 
     ["uplp_ak_hg_12"] =      { Bodygroups = { { 5, 13 } } },
     ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 5, 14 } } },
 
     --STOCKS
-
     ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
     ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
     ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
@@ -962,52 +974,57 @@ SWEP.AttachmentElements = {
     ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
     ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
+    --CALIBERS
+    ["uplp_ak_calib_545"] = { Bodygroups = { { 7, 1 } } },
+    ["uplp_ak_calib_556"] = { Bodygroups = { { 7, 2 } } },
+    ["uplp_ak_calib_308"] = { Bodygroups = { { 7, 3 } } },
+    ["uplp_ak_calib_939"] = { Bodygroups = { { 7, 4 } } },
 
-    --GRIPS
+    -- MAGAZINES
+    -- 7.62
+    ["uplp_ak_mag_762_30_bak"] = { Bodygroups = { { 8, 1 } } },
+    ["uplp_ak_mag_762_30_12"] = { Bodygroups = { { 8, 2 } } },
+    ["uplp_ak_mag_762_30_old"] = { Bodygroups = { { 8, 3 } } },
+    ["uplp_ak_mag_762_30_oldest"] = { Bodygroups = { { 8, 4 } } },
 
-    ["uplp_ak_grip_bak"] =         { Bodygroups = { { 4, 1 } } },
-    ["uplp_ak_grip_old"] =         { Bodygroups = { { 4, 2 } } },
-    ["uplp_ak_grip_tac"] =         { Bodygroups = { { 4, 3 } } },
-    ["uplp_ak_grip_tapco"] =       { Bodygroups = { { 4, 4 } } },
-    ["uplp_ak_grip_vityaz"] =      { Bodygroups = { { 4, 5 } } },
-    ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
-    ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
-    ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
+    ["uplp_ak_mag_762_40"] = { Bodygroups = { { 8, 5 } } },
+    ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 8, 6 } } },
 
-
-    --DUST COVERS
-
-    ["uplp_ak_dc_std"] =           { Bodygroups = { { 3, 0 } } },
-    ["uplp_ak_dc_flat"] =          { Bodygroups = { { 3, 1 } } },
-    ["uplp_ak_dc_old"] =           { Bodygroups = { { 3, 2 } } },
-    ["uplp_ak_dc_rail"] =          { Bodygroups = { { 3, 3 } } },
-    ["uplp_ak_dc_rail2"] =         { Bodygroups = { { 3, 4 } } },
-    ["uplp_ak_dc_zen"] =           { Bodygroups = { { 3, 5 } } },
-    ["uplp_ak_dc_beryl"] =         { Bodygroups = { { 3, 6 } }, AttPosMods = {[1] = { Pos = Vector(0, -0.35, 0.5), }}},
-    ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
-    ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
-
-    --RECIEVERS
-
-    ["uplp_ak_rec_old"] =         { Bodygroups = { { 0, 1 } } },
-    ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
-    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
-
-    --FIRE SELECTORS
-
-    ["uplp_ak_fs_old"] =         { Bodygroups = { { 1, 1 } } },
-    ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
-    ["uplp_ak_fs_m1"] =          { Bodygroups = { { 1, 3 } } },
-
-    --misc
-
-    ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
+    ["uplp_ak_mag_762_drum"] = { Bodygroups = { { 8, 7 } } },
     
+    -- 5.45
+    ["uplp_ak_mag_545_30"] = { Bodygroups = { { 8, 8 } } },
+    ["uplp_ak_mag_545_30_bak"] = { Bodygroups = { { 8, 9 } } },
+    ["uplp_ak_mag_545_30_pmag"] = { Bodygroups = { { 8, 10 } } },
+    ["uplp_ak_mag_545_30_12"] = { Bodygroups = { { 8, 11 } } },
+
+    ["uplp_ak_mag_545_45"] = { Bodygroups = { { 8, 12 } } },
+
+    ["uplp_ak_mag_545_60"] = { Bodygroups = { { 8, 13 } } },
+
+    ["uplp_ak_mag_545_drum"] = { Bodygroups = { { 8, 14 } } },
+
+    -- 5.56
+    ["uplp_ak_mag_556_30"] = { Bodygroups = { { 8, 15 } } },
+    ["uplp_ak_mag_556_30_12"] = { Bodygroups = { { 8, 16 } } },
+    ["uplp_ak_mag_556_30_pmag"] = { Bodygroups = { { 8, 17 } } },
+
+    -- Other
+    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 8, 18 } } },
+
+    ["uplp_ak_mag_939_30"] = { Bodygroups = { { 8, 19 } } },
+
+    ["uplp_ak_nmount"] = { Bodygroups = { { 9, 1 } } },
+    ["uplp_ak_nmount_compact"] = { Bodygroups = { { 9, 2 } } },
+    ["uplp_ak_nmount_old"] = { Bodygroups = { { 9, 3 } } },
+
+    -- 74U Rear Sight
+    ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
 
 }
 SWEP.Attachments = {
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
         Pos = Vector(0, -0.1, 0.5),
@@ -1016,7 +1033,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.45, -0.25, 0),
     },
     {
-        PrintName = "Muzzle",
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_muzzle"},
         Bone = "body",
         Pos = Vector(0, 1.768, 22.3),
@@ -1024,30 +1041,41 @@ SWEP.Attachments = {
         Installed = "uplp_muzzle_slim",
     },
     {
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("uplp_category_barrel"),
+        Category = {"uplp_ak_barrel"},
+        Bone = "body",
+        Installed = "uplp_ak_brl_16",
+        Integral = "uplp_ak_brl_16",
+		RejectAttachments = {
+			["uplp_ak_brl_12"] = true,
+			["uplp_ak_brl_12k"] = true,
+			["uplp_ak_brl_19"] = true,
+			["uplp_ak_brl_rpk16"] = true,
+		},
+        Pos = Vector(0.045, 1.5, 17),
+		Icon_Offset = Vector(-5, 0, 0.5),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_ak_mag"},
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = "Barrel",
-        Category = {"uplp_ak_barrel"},
-        Bone = "body",
-        Installed = "uplp_ak_brl_16",
-        Integral = "uplp_ak_brl_16",
-        Pos = Vector(0.045, 1.5, 17),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip"},
         Bone = "body",
+		RejectAttachments = {
+			["uplp_ak_grip_12"] = true,
+			["uplp_ak_grip_12evo"] = true,
+		},
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ak_stock"},
         Bone = "body",
         Pos = Vector(0.045, 2, -3),

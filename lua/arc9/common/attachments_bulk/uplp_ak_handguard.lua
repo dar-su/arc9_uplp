@@ -2,9 +2,9 @@
 
 local ATT = {}
 
-ATT.PrintName = "AK 100 Handguard"
-ATT.CompactName = "100 "
-ATT.Description = [[An AK100 style polymer handguard for the AK.]]
+ATT.PrintName = "100-Series Handguard"
+ATT.CompactName = "100-S"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -13,15 +13,32 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_100"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(3, 0, 1.35),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(4, 0, 1.3),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_100")
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "AK Vintage Handguard"
-ATT.CompactName = "OLD"
-ATT.Description = [[An old wooden handguard for the AK.]]
+ATT.PrintName = "Vintage Handguard"
+ATT.CompactName = "Vintage"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -36,9 +53,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_old")
 
 ATT = {}
 
-ATT.PrintName = "AK Heavy Wooden Handguard"
+ATT.PrintName = "RPK Handguard"
 ATT.CompactName = "RPK"
-ATT.Description = [[A heavy wooden handguard for the AK.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -54,9 +71,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk")
 
 ATT = {}
 
-ATT.PrintName = "AK Railed Handguard"
-ATT.CompactName = "BERYL"
-ATT.Description = [[A railed handguard for the AK.]]
+ATT.PrintName = "FB Beryl Handguard"
+ATT.CompactName = "Beryl"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -65,15 +82,32 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_beryl"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(3, 0, 1.1),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(4.25, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_beryl")
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "AK Tactical Handguard"
-ATT.CompactName = "TAC"
-ATT.Description = [[A tactical red handguard for the AK.]]
+ATT.PrintName = "Tactical Handguard"
+ATT.CompactName = "Tactical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -88,9 +122,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_tac")
 
 ATT = {}
 
-ATT.PrintName = "AK Wooden Handguard"
-ATT.CompactName = "WOOD"
-ATT.Description = [[A wooden handguard for the AK.]]
+ATT.PrintName = "Wooden Handguard"
+ATT.CompactName = "Wooden"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -105,9 +139,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_wood")
 
 ATT = {}
 
-ATT.PrintName = "AK Dong Handguard"
-ATT.CompactName = "DONG"
-ATT.Description = [[A wooden handguard with an integral foregrip for the AK.]] --HOW DO I LHIK HELP
+ATT.PrintName = "PM md. 63 Handguard"
+ATT.CompactName = "PM md. 63"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -127,9 +161,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_dong")
 
 ATT = {}
 
-ATT.PrintName = "AK Zenith Compact Handguard"
-ATT.CompactName = "ZEN-C"
-ATT.Description = [[A shortened Zenith handguard for the AK.]]
+ATT.PrintName = "Zenith Compact Handguard"
+ATT.CompactName = "Zenith C"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
@@ -138,21 +172,55 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_zen_c"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(3, 0, 1.1),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(4.25, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_zen_c")
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "AK Zenith Handguard"
-ATT.CompactName = "ZEN"
-ATT.Description = [[A Zenith handguard for the AK.]]
+ATT.PrintName = "Zenith Handguard"
+ATT.CompactName = "Zenith"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_zen"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(3, 0, 1.1),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(4.25, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_zen")
 
@@ -163,9 +231,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_zen")
 
 ATT = {}
 
-ATT.PrintName = "AK U Tactical Handguard"
-ATT.CompactName = "U TAC"
-ATT.Description = [[A short tactical handguard for the AK.]]
+ATT.PrintName = "Tactical Handguard"
+ATT.CompactName = "Tactical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
@@ -173,15 +241,32 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_su_tac","uplp_su_hgexists"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(3, 0, 1),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(3.7, 0, 1),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_su_tac")
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "AK U DONG Handguard"
-ATT.CompactName = "U DONG"
-ATT.Description = [[A wooden handguard with an integral foregrip for the AK.]] --HOW DO I LHIK HELP
+ATT.PrintName = "PM md. 63 Handguard"
+ATT.CompactName = "Md. 63"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
@@ -190,6 +275,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
 ATT.LHIK = true
+ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_ak_hg_su_dong","uplp_su_hgexists"}
 
@@ -201,35 +287,32 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_su_dong")
 
 ATT = {}
 
-ATT.PrintName = "AK 12 Handguard"
-ATT.CompactName = "12"
-ATT.Description = [[An AK12 style handguard for the AK.]]
+ATT.PrintName = "AK-12 Handguard"
+ATT.CompactName = "AK-12"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_hg_12"}
+ATT.ActivateElements = {"uplp_ak_hg_12", "ak12_part"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_12")
 
 -------------------------------------------
 
---FLUSH--
-
-
 ATT = {}
 
-ATT.PrintName = "AK RPK16 Handguard"
-ATT.CompactName = "16"
-ATT.Description = [[An RPK16 style handguard for the AK.]] --HOW DO I LHIK HELP
+ATT.PrintName = "RPK-16 Handguard"
+ATT.CompactName = "RPK-16"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ExcludeElements = {"uplp_ak_hgsu"}
 
-ATT.ActivateElements = {"uplp_ak_hg_rpk16"}
+ATT.ActivateElements = {"uplp_ak_hg_rpk16", "ak12_part"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk16")
 

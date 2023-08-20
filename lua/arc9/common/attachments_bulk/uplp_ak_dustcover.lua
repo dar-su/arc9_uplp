@@ -2,26 +2,26 @@
 
 local ATT = {}
 
-ATT.PrintName = "AK Ribbed Dust Cover"
-ATT.CompactName = "RIBBED"
-ATT.Description = [[A ribbed dust cover for the AK.]]
+-- ATT.PrintName = "AKM Dust Cover"
+-- ATT.CompactName = "AKM"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+-- ATT.Category = "uplp_ak_dc"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
-ATT.ActivateElements = {"uplp_ak_dc_std"}
+-- ATT.ActivateElements = {"uplp_ak_dc_std"}
 
-ARC9.LoadAttachment(ATT, "uplp_ak_dc_std")
+-- ARC9.LoadAttachment(ATT, "uplp_ak_dc_std")
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "AK Flat Dust Cover"
-ATT.CompactName = "FLAT"
-ATT.Description = [[A flat dust cover for the AK.]]
+ATT.PrintName = "Smooth Dust Cover"
+ATT.CompactName = "Smooth"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -35,9 +35,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_flat")
 
 ATT = {}
 
-ATT.PrintName = "AK Railed Dust Cover"
-ATT.CompactName = "RAILED"
-ATT.Description = [[A railed dust cover for the AK.]]
+ATT.PrintName = "Dust Cover with Rail"
+ATT.CompactName = "Rail"
+ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -53,9 +53,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_rail")
 
 ATT = {}
 
-ATT.PrintName = "AK Zenith Dust Cover"
-ATT.CompactName = "ZENITH"
-ATT.Description = [[A Zenith style dust cover for the AK.]]
+ATT.PrintName = "Zenith Dust Cover"
+ATT.CompactName = "Zenith"
+ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -71,9 +71,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_zen")
 
 ATT = {}
 
-ATT.PrintName = "AK Beryl Dust Cover"
-ATT.CompactName = "BERYL"
-ATT.Description = [[A Beryl style dust cover for the AK.]]
+ATT.PrintName = "FB Beryl Dust Cover & Rail"
+ATT.CompactName = "FB Beryl"
+ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -88,9 +88,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_beryl")
 
 ATT = {}
 
-ATT.PrintName = "AK 12 Dust Cover"
-ATT.CompactName = "AK12"
-ATT.Description = [[An AK12 style dust cover for the AK.]]
+ATT.PrintName = "AK-12 Dust Cover"
+ATT.CompactName = "AK-12"
+ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")

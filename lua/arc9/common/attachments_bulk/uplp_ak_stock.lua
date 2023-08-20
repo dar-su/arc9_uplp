@@ -11,8 +11,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.5
-ATT.VisualRecoilMult = 0.5
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 ATT.ActivateElements = {"uplp_ak_stock_fold"}
 
@@ -31,8 +32,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.6
-ATT.VisualRecoilMult = 0.6
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 ATT.ActivateElements = {"uplp_ak_stock_skele"}
 
@@ -51,8 +53,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.5
-ATT.VisualRecoilMult = 0.5
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ActivateElements = {"uplp_ak_stock_old"}
@@ -72,8 +75,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.35
-ATT.VisualRecoilMult = 0.35
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ActivateElements = {"uplp_ak_stock_rpk"}
@@ -93,8 +97,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.4
-ATT.VisualRecoilMult = 0.4
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ActivateElements = {"uplp_ak_stock_rpk74"}
@@ -114,8 +119,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.5
-ATT.VisualRecoilMult = 0.5
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ActivateElements = {"uplp_ak_stock_wood"}
@@ -135,8 +141,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.55
-ATT.VisualRecoilMult = 0.55
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ActivateElements = {"uplp_ak_stock_beryl"}
@@ -158,8 +165,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.55
-ATT.VisualRecoilMult = 0.55
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 ATT.ActivateElements = {"uplp_ak_stock_poly"}
 
@@ -233,14 +241,18 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
+
 ATT.ToggleStats = {
     {
         PrintName = "Standard",
         ActivateElements = {"uplp_ak_stock_underfold"},
         -- balance pls
         
-        RecoilMult = 0.5,
-        VisualRecoilMult = 0.5,
+        -- RecoilMult = 0.5,
+        -- VisualRecoilMult = 0.5,
         
         
     },
@@ -265,8 +277,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.5
-ATT.VisualRecoilMult = 0.5
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ToggleStats = {
@@ -295,8 +308,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.5
-ATT.VisualRecoilMult = 0.5
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 
 ATT.ToggleStats = {
@@ -325,9 +339,9 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 -- balance pls
-ATT.RecoilMult = 0.5
-ATT.VisualRecoilMult = 0.5
-
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
 
 ATT.ToggleStats = {
     {
@@ -355,13 +369,17 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.RecoilMult = 0.85
+ATT.VisualRecoilMult = 0.85
+ATT.RecoilAutoControlMult = 3
+
 ATT.ToggleStats = {
     {
         PrintName = "Standard",
         ActivateElements = {"uplp_ak_stock_ppk"},
         -- balance pls
-        RecoilMult = 0.66,
-        VisualRecoilMult = 0.66,
+        -- RecoilMult = 0.66,
+        -- VisualRecoilMult = 0.66,
         
         
     },
