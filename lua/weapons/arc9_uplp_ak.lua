@@ -135,7 +135,8 @@ SWEP.SpreadAddMove = 0.04
 SWEP.SpreadMultSights = 0.001
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 10
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
