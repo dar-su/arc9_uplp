@@ -310,6 +310,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload_762",
+		MinProgress= 0.6,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -330,6 +331,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty_762",
+		MinProgress= 0.7,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -354,6 +356,7 @@ SWEP.Animations = {
 
     ["reload_40rnd"] = {
         Source = "reload_762long",
+		MinProgress= 0.55,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -374,6 +377,7 @@ SWEP.Animations = {
     },
     ["reload_empty_40rnd"] = {
         Source = "reload_empty_762long",
+		MinProgress= 0.725,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -398,6 +402,7 @@ SWEP.Animations = {
 
     ["reload_545"] = {
         Source = "reload_545",
+		MinProgress= 0.6,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -418,6 +423,7 @@ SWEP.Animations = {
     },
     ["reload_empty_545"] = {
         Source = "reload_empty_545",
+		MinProgress= 0.7,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -442,6 +448,7 @@ SWEP.Animations = {
 
     ["reload_545_45rnd"] = {
         Source = "reload_545long",
+		MinProgress= 0.6,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -462,6 +469,7 @@ SWEP.Animations = {
     },
     ["reload_empty_545_45rnd"] = {
         Source = "reload_empty_545long",
+		MinProgress= 0.75,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -486,6 +494,7 @@ SWEP.Animations = {
 
     ["reload_545_60rnd"] = {
         Source = "reload_545fat",
+		MinProgress= 0.575,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -506,6 +515,7 @@ SWEP.Animations = {
     },
     ["reload_empty_545_60rnd"] = {
         Source = "reload_empty_545fat",
+		MinProgress= 0.725,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -530,6 +540,7 @@ SWEP.Animations = {
 
     ["reload_556"] = {
         Source = "reload_556",
+		MinProgress= 0.6,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -550,6 +561,7 @@ SWEP.Animations = {
     },
     ["reload_empty_556"] = {
         Source = "reload_empty_556",
+		MinProgress= 0.675,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -574,6 +586,7 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
+		MinProgress= 0.625,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -594,6 +607,7 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
+		MinProgress= 0.775,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -618,6 +632,7 @@ SWEP.Animations = {
 
     ["reload_308"] = {
         Source = "reload_308",
+		MinProgress= 0.625,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -638,6 +653,7 @@ SWEP.Animations = {
     },
     ["reload_empty_308"] = {
         Source = "reload_empty_308",
+		MinProgress= 0.7,
 		Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },

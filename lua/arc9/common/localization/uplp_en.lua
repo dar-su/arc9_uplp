@@ -158,7 +158,7 @@ L["uplp_ak_dc_12.printname"] = "AK-12 Dust Cover and Receiver"
 L["uplp_ak_dc_12.compactname"] = "AK-12"
 L["uplp_ak_dc_12.description"] = " "
 
-//// Pistol Grips
+///// Pistol Grips
 L["uplp_ak_grip_bak.printname"] = "Polymer Pistol Grip"
 L["uplp_ak_grip_bak.compactname"] = "Polymer"
 L["uplp_ak_grip_bak.description"] = "Polymer pistol grip used on the AK-74."
@@ -191,7 +191,7 @@ L["uplp_ak_grip_12evo.printname"] = "Evolution Pistol Grip"
 L["uplp_ak_grip_12evo.compactname"] = "Evolution"
 L["uplp_ak_grip_12evo.description"] = "Upgraded pistol grip and trigger guard for use on the AK-12."
 
-//// Handguards
+///// Handguards
 L["uplp_ak_hg_100.printname"] = "100-Series Handguard"
 L["uplp_ak_hg_100.compactname"] = "100-S"
 L["uplp_ak_hg_100.description"] = "Modern plastic handguard used on the AK-103. Comes with a bottom rail for use with foregrips."
@@ -243,3 +243,95 @@ L["uplp_ak_hg_12.description"] = "Standard handguard used on the AK-12."
 L["uplp_ak_hg_rpk16.printname"] = "RPK-16 Handguard"
 L["uplp_ak_hg_rpk16.compactname"] = "RPK-16"
 L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the RPK-16."
+
+///// Magazines
+//// 7.62x39mm
+local loaded = "\n"
+local loaded762 = loaded .. "Loaded with 7.62x39mm Soviet used by the AK-47, AK-103 and AK-15."
+
+L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62x39mm (Bakelite)"
+L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
+L["uplp_ak_mag_762_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
+
+L["uplp_ak_mag_762_30_12.printname"] = "30-Round 7.62x39mm (AK-12-Style)"
+L["uplp_ak_mag_762_30_12.compactname"] = "30R 7.62 (12)"
+L["uplp_ak_mag_762_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded762
+
+L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
+L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
+
+L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
+L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
+
+L["uplp_ak_mag_762_30_oldest.printname"] = "30-Round 7.62x39mm (Smooth Steel)"
+L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (SS)"
+L["uplp_ak_mag_762_30_oldest.description"] = "30-round magazine made with smoothened out steel." .. loaded762
+
+L["uplp_ak_mag_762_40.printname"] = "40-Round 7.62x39mm (Bakelite)"
+L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (B)"
+L["uplp_ak_mag_762_40.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
+
+L["uplp_ak_mag_762_40_old.printname"] = "40-Round 7.62x39mm (Steel)"
+L["uplp_ak_mag_762_40_old.compactname"] = "40R 7.62 (S)"
+L["uplp_ak_mag_762_40_old.description"] = "40-round magazine made with good, old-fashioned steel." .. loaded762
+
+L["uplp_ak_mag_762_drum.printname"] = "75-Round 7.62x39mm Drum"
+L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
+L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
+
+//// 5.45x39mm
+local loaded545 = loaded .. "Loaded with 5.45x39mm used by the AK-74 and AK-105."
+
+L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45x39mm (Polymer)"
+L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
+L["uplp_ak_mag_545_30.description"] = "30-round magazine made out of polymer." .. loaded545
+
+L["uplp_ak_mag_545_30_bak.printname"] = "30-Round 5.45x39mm (Bakelite)"
+L["uplp_ak_mag_545_30_bak.compactname"] = "30R 5.45 (B)"
+L["uplp_ak_mag_545_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
+
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45x39mm (Magpul)"
+L["uplp_ak_mag_545_30_pmag.compactname"] = "30R 5.45 (PM)"
+L["uplp_ak_mag_545_30_pmag.description"] = "30-round PMAG manufactured by Magpul." .. loaded545
+
+L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45x39mm (AK-12-Style)"
+L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (12)"
+L["uplp_ak_mag_545_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded545
+
+L["uplp_ak_mag_545_45.printname"] = "45-Round 5.45x39mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
+L["uplp_ak_mag_545_45.description"] = "45-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
+
+L["uplp_ak_mag_545_60.printname"] = "60-Round 5.45x39mm Quadstacked"
+L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\n\n\nThicc boi"
+
+L["uplp_ak_mag_545_drum.printname"] = "75-Round 5.45x39mm Drum"
+L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 (D)"
+L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine." .. loaded545
+
+//// 5.56x45mm NATO
+local loaded556 = loaded .. "Loaded with 5.56x45mm used by the AK-101 and AK-102."
+
+L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
+L["uplp_ak_mag_556_30.description"] = "30-round magazine made out of polymer." .. loaded556
+
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56x45mm (Magpul)"
+L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (PM)"
+L["uplp_ak_mag_556_30_pmag.description"] = "30-round PMAG manufactured by Magpul." .. loaded556
+
+L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56x45mm (AK-12-Style)"
+L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (12)"
+L["uplp_ak_mag_556_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded556
+
+//// Other
+L["uplp_ak_mag_308_20.printname"] = "20-Round .308"
+L["uplp_ak_mag_308_20.compactname"] = "20R .308"
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with .308 Winchester rounds."
+
+L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
+L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
+L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with 9x39mm used by the AK-9."

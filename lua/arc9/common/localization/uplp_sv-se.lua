@@ -239,3 +239,95 @@ L["uplp_ak_hg_12.description"] = "Standard handgrepp som används på AK-12:an."
 L["uplp_ak_hg_rpk16.printname"] = "RPK-16 Handgrepp"
 L["uplp_ak_hg_rpk16.compactname"] = "RPK-16"
 L["uplp_ak_hg_rpk16.description"] = "Längre handgrepp som används på RPK-16."
+
+///// Magazines
+//// 7.62x39mm
+local loaded = "\n"
+local loaded762 = loaded .. "Laddat med 7,62x39mm Sovjet som används av AK-47:an, AK-103:an och AK-15."
+
+L["uplp_ak_mag_762_30_bak.printname"] = "30-Skott 7.62x39mm (Bakelit)"
+L["uplp_ak_mag_762_30_bak.compactname"] = "30S 7.62 (B)"
+L["uplp_ak_mag_762_30_bak.description"] = "30-skotts magasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
+
+L["uplp_ak_mag_762_30_12.printname"] = "30-Skott 7.62x39mm (AK-12-Style)"
+L["uplp_ak_mag_762_30_12.compactname"] = "30S 7.62 (12)"
+L["uplp_ak_mag_762_30_12.description"] = "30-skotts magasin gjorda att likna AK-12-magasinen." .. loaded762
+
+L["uplp_ak_mag_762_30_old.printname"] = "30-Skott 7.62x39mm (Stål)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30S 7.62 (S)"
+L["uplp_ak_mag_762_30_old.description"] = "30-skotts magasin gjorda av det goda gamla stålet." .. loaded762
+
+L["uplp_ak_mag_762_30_old.printname"] = "30-Skott 7.62x39mm (Stål)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30S 7.62 (S)"
+L["uplp_ak_mag_762_30_old.description"] = "30-skotts magasin gjorda av det goda gamla stålet." .. loaded762
+
+L["uplp_ak_mag_762_30_oldest.printname"] = "30-Skott 7.62x39mm (Utjämnad Stål)"
+L["uplp_ak_mag_762_30_oldest.compactname"] = "30S 7.62 (US)"
+L["uplp_ak_mag_762_30_oldest.description"] = "30-skotts magasin gjorda utav utjämnad stål." .. loaded762
+
+L["uplp_ak_mag_762_40.printname"] = "40-Skott 7.62x39mm (Bakelit)"
+L["uplp_ak_mag_762_40.compactname"] = "40S 7.62 (B)"
+L["uplp_ak_mag_762_40.description"] = "40-skotts magasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
+
+L["uplp_ak_mag_762_40_old.printname"] = "40-Skott 7.62x39mm (Stål)"
+L["uplp_ak_mag_762_40_old.compactname"] = "40S 7.62 (S)"
+L["uplp_ak_mag_762_40_old.description"] = "40-skotts magasin gjorda av det goda gamla stålet." .. loaded762
+
+L["uplp_ak_mag_762_drum.printname"] = "75-Skott 7.62x39mm Trumma"
+L["uplp_ak_mag_762_drum.compactname"] = "75S 7.62 T"
+L["uplp_ak_mag_762_drum.description"] = "75-skott cylindriskt trummagasin." .. loaded762
+
+//// 5.45x39mm
+local loaded545 = loaded .. "Laddat med 5.45x39mm som används av AK-74:an och AK-105:an."
+
+L["uplp_ak_mag_545_30.printname"] = "30-Skott 5.45x39mm (Polymer)"
+L["uplp_ak_mag_545_30.compactname"] = "30S 5.45 (P)"
+L["uplp_ak_mag_545_30.description"] = "30-skotts magasin gjorda utav polymer." .. loaded545
+
+L["uplp_ak_mag_545_30_bak.printname"] = "30-Skott 5.45x39mm (Bakelit)"
+L["uplp_ak_mag_545_30_bak.compactname"] = "30S 5.45 (B)"
+L["uplp_ak_mag_545_30_bak.description"] = "30-skotts magasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
+
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Skott 5.45x39mm (Magpul)"
+L["uplp_ak_mag_545_30_pmag.compactname"] = "30S 5.45 (PM)"
+L["uplp_ak_mag_545_30_pmag.description"] = "30-skott PMAG tillverkad av Magpul." .. loaded545
+
+L["uplp_ak_mag_545_30_12.printname"] = "30-Skott 5.45x39mm (AK-12-Style)"
+L["uplp_ak_mag_545_30_12.compactname"] = "30S 5.45 (12)"
+L["uplp_ak_mag_545_30_12.description"] = "30-skotts magasin gjorda att likna AK-12-magasinen." .. loaded545
+
+L["uplp_ak_mag_545_45.printname"] = "45-Skott 5.45x39mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "45S 5.45 (B)"
+L["uplp_ak_mag_545_45.description"] = "45-skotts magasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
+
+L["uplp_ak_mag_545_60.printname"] = "60-Skott 5.45x39mm Quadstack"
+L["uplp_ak_mag_545_60.compactname"] = "60S 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-skott polymer-magasin expanderad horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\n\n\nTjock jäkel"
+
+L["uplp_ak_mag_545_drum.printname"] = "75-Skott 5.45x39mm Trumma"
+L["uplp_ak_mag_545_drum.compactname"] = "75S 5.45 (D)"
+L["uplp_ak_mag_545_drum.description"] = "75-skott cylindriskt trummagasin." .. loaded545
+
+//// 5.56x45mm NATO
+local loaded556 = loaded .. "Laddat med 5.56.x45mm som används av AK-101:an och AK-102:an."
+
+L["uplp_ak_mag_556_30.printname"] = "30-Skott 5.56x45mm (Polymer)"
+L["uplp_ak_mag_556_30.compactname"] = "30S 5.56 (P)"
+L["uplp_ak_mag_556_30.description"] = "30-skotts magasin gjorda utav polymer." .. loaded556
+
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Skott 5.56x45mm (Magpul)"
+L["uplp_ak_mag_556_30_pmag.compactname"] = "30S 5.56 (PM)"
+L["uplp_ak_mag_556_30_pmag.description"] = "30-skott PMAG tillverkad av Magpul." .. loaded556
+
+L["uplp_ak_mag_556_30_12.printname"] = "30-Skott 5.56x45mm (AK-12-Style)"
+L["uplp_ak_mag_556_30_12.compactname"] = "30S 5.56 (12)"
+L["uplp_ak_mag_556_30_12.description"] = "30-skotts magasin gjorda att likna AK-12-magasinen." .. loaded556
+
+//// Other
+L["uplp_ak_mag_308_20.printname"] = "20-Skott .308"
+L["uplp_ak_mag_308_20.compactname"] = "20S .308"
+L["uplp_ak_mag_308_20.description"] = "20-skotts magasin ladded med .308 Winchester-skott."
+
+L["uplp_ak_mag_939_30.printname"] = "20-Skott 9x39mm"
+L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
+L["uplp_ak_mag_939_30.description"] = "20-skotts magasin laddade med 9x39mm som används av AK-9:an."
