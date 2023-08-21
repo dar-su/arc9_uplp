@@ -45,6 +45,16 @@ SWEP.Credits = {
     Assets = "LIST ASSETS"
 }
 
+SWEP.StandardPresets = {
+"[FB Beryl]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUCm4d16R22fa4mB2i2cwj7CJu8XDVOt8n636yhjAhTTav1tDDyoB4vd+ctpmtesNNMCtYVhR2MEK45AaqfTtCHPOlPPvkckO3iFo11eEtSBQbgHUa18j+P6++XfWNXlkhf7jS+fnOxtdgMWyLziQ3dCoL1sCA=",
+"[AK-47]XQAAAQAOAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtQyXDt2tb27kPU2jzTxBTjrYRnBMXiE0lpw92Jzdx1JYBDqsiodGgI9nOuGO/IZgHG0o/s3bX4ToiyohPVIvGi2tA5vQZQyTAmBIJT0hDkJDiM9FITJktcZ7/chYupoYwwEPdNu+IjJgCqvgnXLC6wA=",
+"[AK-74]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0U0N5nVl64+vr74h/wEGLDQ5U9Iv/UealLS+ojrv0cNfIa3d6wksEl25x+4EN9WF5I0n0cb5at0upRXD/l/t5m/R2kJHKtQ==",
+"[RPK-74]XQAAAQAcAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZbJnKynvrJU8QgUevVMriFsvl01r3RAR1fa2CNlfaf1QTMcnTE5qjrRN2Lo48HlkfZVx+G57QMcpjwjlTG7i/rg4jO3xrQLqotwnJJmQA=",
+"[PM md 63]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0URrcTYLjshsIy4gtvNVZPIcLUKVrHCwHWWi/CH4LagEksHsQwQnZVj6a96x97xDmsBUH4+us7DbiOHB5Ft/pRhXrwT/Hw8s7P2A=",
+"[RPK-74M]XQAAAQDyAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZaYXQITZAmJpVgQl19r3xbln7A4OL+1Jp2I2jJsB/idLOiz+EKn9w3GcvtcpDyrzxY8RcWY+lFIHysPoGAiotP4ojBXgA=",
+"[AK-9]XQAAAQAmAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIptDFa78UtfHBv23OZnbpcN8oUN1POCSFOZsC/AWUW94/XcPKIu0RNJCL8MkS5wcV3G7y7k2+UtJFurqNnWaDBUdsrCqo0O9Hwo8QEz6+47e/u9qySGAtDuaVL1bJKBR0xXBrK82THwM+Y+XgA",
+}
+
 -- Weapon slot --
 
 SWEP.Slot = 2
@@ -63,8 +73,10 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 -- Damage parameters --
 
 SWEP.DamageMax = 50
-SWEP.DamageMin = 20
-SWEP.Range = 100
+SWEP.DamageMin = 30
+-- SWEP.Range = 100
+SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 SWEP.Penetration = 30
 SWEP.DamageType = DMG_BULLET
 SWEP.MuzzleVelocity = 719
@@ -168,10 +180,33 @@ SWEP.HoldTypeNPC = nil
 
 SWEP.IronSights = {
      Pos = Vector(-2.3, -3, 0.975),
-     Ang = Angle(0.34, 0, -2.5),
+     Ang = Angle(0.375, 0, -2.5),
      Magnification = 1.15,
-     ViewModelFOV = 60,
+     ViewModelFOV = 55,
 }
+
+SWEP.IronSightsHook = function(self)
+    local attached = self:GetElements()
+
+     if attached["uplp_ak_brl_su"] then
+        return {
+			 Pos = Vector(-2.3, -3, 0.8),
+			 Ang = Angle(0.375, 0, -2.5),
+			 Magnification = 1.15,
+			 ViewModelFOV = 60,
+        }
+    end
+	
+     if attached["uplp_ak_brl_109"] then
+        return {
+			 Pos = Vector(-2.3, -3, 0.875),
+			 Ang = Angle(0.34, 0, -2.5),
+			 Magnification = 1.15,
+			 ViewModelFOV = 60,
+        }
+    end
+
+end
 
 SWEP.ActivePos = Vector(0, 0, 0)
 SWEP.ActiveAng = Angle(0, 0, 0)
@@ -187,6 +222,9 @@ SWEP.CrouchAng = Angle(0, 0, -5)
 
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
+
+-- SWEP.PeekPos = Vector(-1.5, 0, -1)
+-- SWEP.PeekAng = Angle(0, 0, -30)
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
@@ -1051,7 +1089,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_muzzle"},
+        Category = {"uplp_muzzle", "uplp_ak_muzzle"},
         Bone = "body",
         Pos = Vector(0, 1.768, 22.3),
         Ang = Angle(90, 90, 180),

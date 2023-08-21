@@ -9,6 +9,7 @@ ATT = {}
 ATT.PrintName = "3-Hole muzzle device"
 ATT.CompactName = "3-Hole"
 ATT.Description = [[A 3-Hole muzzle device.]]
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -32,6 +33,7 @@ ATT = {}
 ATT.PrintName = "Cage muzzle device"
 ATT.CompactName = "Cage"
 ATT.Description = [[A Cage muzzle device.]]
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -55,6 +57,7 @@ ATT = {}
 ATT.PrintName = "Fat muzzle device"
 ATT.CompactName = "Fat"
 ATT.Description = [[A Fat muzzle device.]]
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -78,6 +81,7 @@ ATT = {}
 ATT.PrintName = "Flashhider"
 ATT.CompactName = "Flashhider"
 ATT.Description = [[A Flashhider muzzle device.]]
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -101,6 +105,7 @@ ATT = {}
 ATT.PrintName = "Slim muzzle device"
 ATT.CompactName = "Slim"
 ATT.Description = [[A Slim muzzle device.]]
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

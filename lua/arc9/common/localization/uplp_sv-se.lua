@@ -1,8 +1,8 @@
 L = {}
 
 //////////////////////////////////////////////////////////////////////
-/////////// Various Universal Information
-////////// Trivia
+///////////////////////////// Various Universal Information
+//////////////////// Trivia
 L["uplp_country"] = "Ursprungsland"
 
 L["uplp_country_austria"] = "Österrike"
@@ -20,23 +20,22 @@ L["uplp_country_switzerland"] = "Schweiz"
 L["uplp_country_uk"] = "Storbritannien"
 L["uplp_country_usa"] = "Förenta Staterna"
 
-////////// Trivia
-///////// Caliber
+/////////// Caliber
 L["uplp_caliber"] = "Kaliber"
 
 L["uplp_caliber_7.62x32mm"] = "7.62x39mm Soviet"
 
-//////// Manufacturer
+/////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 
-/////// Year
+/////////// Year
 L["uplp_year"] = "År"
 L["uplp_year_present"] = "%s > Nutid"
 L["uplp_year_year"] = "%s > %s"
 
-////// Mechanism
+/////////// Mechanism
 L["uplp_mechanism"] = "Mekanism"
 
 L["uplp_mechanism_2"] = "%s, %s"
@@ -45,11 +44,11 @@ L["uplp_mechanism_3"] = "%s, %s, %s"
 L["uplp_mechanism_gasoperated"] = "Gaslås"
 L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
 
-///// Authors
+/////////// Authors
 L["uplp_authors"] = "Tillverkare"
 L["uplp_assets"] = "Tillgångar"
 
-//// Weapon Categories
+/////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Automatkarbiner"
 L["uplp_category_weapon_melee"] = "Närstridsvapen"
 L["uplp_category_weapon_mg"] = "Kulsprutor"
@@ -58,7 +57,7 @@ L["uplp_category_weapon_shotgun"] = "Hagelbössor"
 L["uplp_category_weapon_smg"] = "Kulsprutepistoler"
 L["uplp_category_weapon_sniper"] = "Krypskyttegevär"
 
-/// Weapon Classes
+/////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Automatkarbin"
 L["uplp_class_weapon_melee"] = "Närstridsvapen"
 L["uplp_class_weapon_mg"] = "Kulspruta"
@@ -69,8 +68,8 @@ L["uplp_class_weapon_sniper"] = "Krypskyttegevär"
 L["uplp_class_weapon_throwable"] = "Kastbar"
 
 //////////////////////////////////////////////////////////////////////
-/////////// Attachments
-////////// Category Names
+///////////////////////////// Attachments
+//////////////////// Category Names
 L["uplp_category_optic"] = "Riktmedel"
 L["uplp_category_muzzle"] = "Mynning"
 L["uplp_category_magazine"] = "Magasin"
@@ -81,22 +80,23 @@ L["uplp_category_handguard"] = "Handgrepp"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_grip"] = "Framgrepp"
 
-///////// Toggle Stats Names
+//////////////////// Toggle Stats Names
 L["uplp_togglestat_default"] = "Standard"
 L["uplp_togglestat_extended"] = "Förlängd"
 L["uplp_togglestat_folded"] = "Invikt"
 
-//////// Weapon Names, Descriptions and unique attachments
+//////////////////////////////////////////////////////////////////////
+///////////////////////////// Weapon Names, Descriptions and unique attachments
 
-/////// AK
+//////////////////// AK
 L["uplp_weapon_ak"] = "AK"
 L["uplp_weapon_ak_desc"] = "Automatkarbinen AK, designad av Mikhail Kalashnikov år 1947, är känd för sin robusta pålitlighet och enkelhet. Den avfyrar vanligtvis kalibern 7,62x39mm och har vidtagna användningsområden av militära styrkor och rebellgrupper världen över på grund av sin hållbarhet och förmåga att skjuta både i enkelskott och automatiskt."
 
 L["uplp_weapon_ak12"] = "AK-12"
 L["uplp_weapon_ak12_desc"] = "AK-12 är ett modernt automatgevär designat i Ryssland, avsett att vara en uppdaterad version av den ikoniska AK-47. Det har förbättrad ergonomi, modularitet och ökad noggrannhet samtidigt som det behåller den berömda tillförlitligheten hos AK-serien."
 
-////// Attachments
-///// Barrels
+/////////// Attachments
+////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK-100 Pipa"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
 L["uplp_ak_brl_16.description"] = "Standard 400mm pipa som används på AK-100-gevär."
@@ -137,7 +137,7 @@ L["uplp_ak_brl_rpk16.printname"] = "585mm RPK-16 Pipa"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm RPK"
 L["uplp_ak_brl_rpk16.description"] = "Tung 585mm pipa som används på RPK-16."
 
-///// Dust Covers
+////// Dust Covers
 L["uplp_ak_dc_std.printname"] = "AKM Dammskydd"
 L["uplp_ak_dc_std.compactname"] = "AKM"
 L["uplp_ak_dc_std.description"] = "Standard räfflat dammskydd som används på AKM."
@@ -158,7 +158,7 @@ L["uplp_ak_dc_beryl.printname"] = "FB Beryl Dammskydd & Skena"
 L["uplp_ak_dc_beryl.compactname"] = "FB Beryl"
 L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena tillverkad av polska FB \"Łucznik\" Radom för användning av FB Beryl."
 
-//// Pistol Grips
+////// Pistol Grips
 L["uplp_ak_grip_bak.printname"] = "Polymer Pistolgrepp"
 L["uplp_ak_grip_bak.compactname"] = "Polymer"
 L["uplp_ak_grip_bak.description"] = "Polymer pistolgrepp som används på AK-74:an."
@@ -175,7 +175,7 @@ L["uplp_ak_grip_tapco.printname"] = "Tapco-Pistolgrepp"
 L["uplp_ak_grip_tapco.compactname"] = "Tapco"
 L["uplp_ak_grip_tapco.description"] = "Gummerat pistolgrepp av Tapco."
 
-L["uplp_ak_grip_vityaz.printname"] = "Vityaz-Pistolgrepp"
+L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistolgrepp"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
 L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på PP-19-01 Vityaz."
 
@@ -191,7 +191,7 @@ L["uplp_ak_grip_12evo.printname"] = "Evolution Pistolgrepp"
 L["uplp_ak_grip_12evo.compactname"] = "Evolution"
 L["uplp_ak_grip_12evo.description"] = "Uppgraderat pistolgrepp och varbygel för användning på AK-12:an."
 
-//// Handguards
+////// Handguards
 L["uplp_ak_hg_100.printname"] = "100-Serie Handgrepp"
 L["uplp_ak_hg_100.compactname"] = "100-S"
 L["uplp_ak_hg_100.description"] = "Modernt handgrepp utav plast som används på AK-103:an. Kommer med undermontad skena för användning av framgrepp."
@@ -245,8 +245,8 @@ L["uplp_ak_hg_rpk16.printname"] = "RPK-16 Handgrepp"
 L["uplp_ak_hg_rpk16.compactname"] = "RPK-16"
 L["uplp_ak_hg_rpk16.description"] = "Längre handgrepp som används på RPK-16."
 
-///// Magazines
-//// 7.62x39mm
+////// Magazines
+/// 7.62x39mm
 local loaded = "\n"
 local loaded762 = loaded .. "Laddat med 7,62x39mm Sovjet som används av AK-47:an, AK-103:an och AK-15."
 
@@ -282,7 +282,7 @@ L["uplp_ak_mag_762_drum.printname"] = "75-Skott 7.62x39mm Trumma"
 L["uplp_ak_mag_762_drum.compactname"] = "75S 7.62 T"
 L["uplp_ak_mag_762_drum.description"] = "75-skott cylindriskt trummagasin." .. loaded762
 
-//// 5.45x39mm
+/// 5.45x39mm
 local loaded545 = loaded .. "Laddat med 5.45x39mm som används av AK-74:an och AK-105:an."
 
 L["uplp_ak_mag_545_30.printname"] = "30-Skott 5.45x39mm (Polymer)"
@@ -313,7 +313,7 @@ L["uplp_ak_mag_545_drum.printname"] = "75-Skott 5.45x39mm Trumma"
 L["uplp_ak_mag_545_drum.compactname"] = "75S 5.45 (D)"
 L["uplp_ak_mag_545_drum.description"] = "75-skott cylindriskt trummagasin." .. loaded545
 
-//// 5.56x45mm NATO
+/// 5.56x45mm NATO
 local loaded556 = loaded .. "Laddat med 5.56.x45mm som används av AK-101:an och AK-102:an."
 
 L["uplp_ak_mag_556_30.printname"] = "30-Skott 5.56x45mm (Polymer)"
@@ -328,7 +328,7 @@ L["uplp_ak_mag_556_30_12.printname"] = "30-Skott 5.56x45mm (AK-12-Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30S 5.56 (12)"
 L["uplp_ak_mag_556_30_12.description"] = "30-skotts magasin gjorda att likna AK-12-magasinen." .. loaded556
 
-//// Other
+/// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Skott .308"
 L["uplp_ak_mag_308_20.compactname"] = "20S .308"
 L["uplp_ak_mag_308_20.description"] = "20-skotts magasin ladded med .308 Winchester-skott."
@@ -337,7 +337,48 @@ L["uplp_ak_mag_939_30.printname"] = "20-Skott 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
 L["uplp_ak_mag_939_30.description"] = "20-skotts magasin laddade med 9x39mm som används av AK-9:an."
 
-///// Stocks
+////// Muzzles
+L["uplp_ak_mz_std.printname"] = "100-Serie Mynningsbroms"
+L["uplp_ak_mz_std.compactname"] = "100-S MB"
+L["uplp_ak_mz_std.description"] = "Standard mynningsbroms som används på AK-103:an."
+
+L["uplp_ak_mz_akm.printname"] = "AKM Mynningsbroms"
+L["uplp_ak_mz_akm.compactname"] = "AKM MB"
+L["uplp_ak_mz_akm.description"] = "Standard mynningsbroms som används på AKM."
+
+L["uplp_ak_mz_compact.printname"] = "74U Mynningsbroms"
+L["uplp_ak_mz_compact.compactname"] = "74U MB"
+L["uplp_ak_mz_compact.description"] = "Standard mynningsbroms som används på AKS-74U."
+
+L["uplp_ak_mz_rpk.printname"] = "RPK Mynningsbroms"
+L["uplp_ak_mz_rpk.compactname"] = "RPK MB"
+L["uplp_ak_mz_rpk.description"] = "Standard mynningsbroms som används på RPK, RPK-74 och RPK-74M."
+
+L["uplp_ak_mz_vityaz.printname"] = "Vityaz Mynningsbroms"
+L["uplp_ak_mz_vityaz.compactname"] = "Vityaz MB"
+L["uplp_ak_mz_vityaz.description"] = "Standard mynningsbroms som används på PP-19-01 Vityaz."
+
+L["uplp_ak_mz_bizon.printname"] = "Bizon Mynningsbroms"
+L["uplp_ak_mz_bizon.compactname"] = "Bizon MB"
+L["uplp_ak_mz_bizon.description"] = "Standard mynningsbroms som används på PP-19 Bizon."
+
+L["uplp_ak_mz_12.printname"] = "AK-12 Mynningsbroms"
+L["uplp_ak_mz_12.compactname"] = "AK-12 MB"
+L["uplp_ak_mz_12.description"] = "Standard mynningsbroms som används på AK-12."
+
+L["uplp_ak_mz_19.printname"] = "AK-19 Mynningsbroms"
+L["uplp_ak_mz_19.compactname"] = "AK-19 MB"
+L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK-19, en exportversion av AK-12:an."
+
+L["uplp_ak_mz_rpk16.printname"] = "RPK-16 Mynningsbroms"
+L["uplp_ak_mz_rpk16.compactname"] = "RPK-16 MB"
+L["uplp_ak_mz_rpk16.description"] = "Standard mynningsbroms som används på RPK-16."
+
+L["uplp_ak_mz_silencer.printname"] = "PBS-1 Ljuddämpare"
+L["uplp_ak_mz_silencer.compactname"] = "PBS-1"
+L["uplp_ak_mz_silencer.description"] = "Standard utfärdad ljuddämpare som använts på flera militära AK-gevär."
+
+////// Stocks
 L["uplp_ak_stock_fold.printname"] = "Polymer Fällbar Kolv"
 L["uplp_ak_stock_fold.compactname"] = "Polymer F"
 L["uplp_ak_stock_fold.description"] = "Fällbar kolv som används av AK-103:an."

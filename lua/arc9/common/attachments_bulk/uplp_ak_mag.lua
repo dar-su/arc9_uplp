@@ -172,19 +172,21 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30", "uplp_ak_calib_545"}
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545"
 end
+
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.75
+-- ATT.DamageMaxMult = 0.9
+ATT.DamageMinMult = 0.9
+
+ATT.RangeMaxMult = 0.85
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.7
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30")
 

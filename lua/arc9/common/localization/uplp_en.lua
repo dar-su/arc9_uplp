@@ -1,8 +1,8 @@
 L = {}
 
 //////////////////////////////////////////////////////////////////////
-/////////// Various Universal Information
-////////// Trivia
+///////////////////////////// Various Universal Information
+//////////////////// Trivia
 L["uplp_country"] = "Country of Origin"
 
 L["uplp_country_austria"] = "Austria"
@@ -20,23 +20,22 @@ L["uplp_country_switzerland"] = "Switzerland"
 L["uplp_country_uk"] = "United Kingdom"
 L["uplp_country_usa"] = "United States"
 
-////////// Trivia
-///////// Caliber
+/////////// Caliber
 L["uplp_caliber"] = "Calibre"
 
 L["uplp_caliber_7.62x32mm"] = "7.62x39mm Soviet"
 
-//////// Manufacturer
+/////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 
-/////// Year
+/////////// Year
 L["uplp_year"] = "Year"
 L["uplp_year_present"] = "%s > Present"
 L["uplp_year_year"] = "%s > %s"
 
-////// Mechanism
+/////////// Mechanism
 L["uplp_mechanism"] = "Mechanism"
 
 L["uplp_mechanism_2"] = "%s, %s"
@@ -45,11 +44,11 @@ L["uplp_mechanism_3"] = "%s, %s, %s"
 L["uplp_mechanism_gasoperated"] = "Gas-operated"
 L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 
-///// Authors
+/////////// Authors
 L["uplp_authors"] = "Authors"
 L["uplp_assets"] = "Assets"
 
-//// Weapon Categories
+/////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Assault Rifles"
 L["uplp_category_weapon_melee"] = "Melees"
 L["uplp_category_weapon_mg"] = "Machine Guns"
@@ -58,7 +57,7 @@ L["uplp_category_weapon_shotgun"] = "Shotguns"
 L["uplp_category_weapon_smg"] = "SMGs"
 L["uplp_category_weapon_sniper"] = "Sniper Rifles"
 
-/// Weapon Classes
+/////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Assault Rifle"
 L["uplp_class_weapon_melee"] = "Melee"
 L["uplp_class_weapon_mg"] = "Machine Gun"
@@ -69,8 +68,8 @@ L["uplp_class_weapon_sniper"] = "Sniper Rifle"
 L["uplp_class_weapon_throwable"] = "Throwable"
 
 //////////////////////////////////////////////////////////////////////
-/////////// Attachments
-////////// Category Names
+///////////////////////////// Attachments
+//////////////////// Category Names
 L["uplp_category_optic"] = "Optic"
 L["uplp_category_muzzle"] = "Muzzle"
 L["uplp_category_magazine"] = "Magazine"
@@ -81,22 +80,23 @@ L["uplp_category_handguard"] = "Handguard"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_grip"] = "Foregrip"
 
-///////// Toggle Stats Names
+//////////////////// Toggle Stats Names
 L["uplp_togglestat_default"] = "Default"
 L["uplp_togglestat_extended"] = "Extended"
 L["uplp_togglestat_folded"] = "Folded"
 
-//////// Weapon Names, Descriptions and unique attachments
+//////////////////////////////////////////////////////////////////////
+///////////////////////////// Weapon Names, Descriptions and unique attachments
 
-/////// AK
+//////////////////// AK
 L["uplp_weapon_ak"] = "AK"
 L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed by Mikhail Kalashnikov in 1947, is renowned for its rugged reliability and simplicity. It typically fires the 7.62x39mm cartridge and has been widely used by military forces and insurgents worldwide due to its durability and select-fire capability."
 
 L["uplp_weapon_ak12"] = "AK-12"
 L["uplp_weapon_ak12_desc"] = "The AK-12 is a modern assault rifle designed in Russia as a successor to the iconic AK-47. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
 
-////// Attachments
-///// Barrels
+/////////// Attachments
+////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK-100 Barrel"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
 L["uplp_ak_brl_16.description"] = "Standard 400mm (16\") barrel used on AK-100 rifles."
@@ -137,7 +137,7 @@ L["uplp_ak_brl_rpk16.printname"] = "585mm RPK-16 Barrel"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm RPK"
 L["uplp_ak_brl_rpk16.description"] = "Heavy 585mm (23\") barrel used on the RPK-16."
 
-///// Dust Covers
+////// Dust Covers
 L["uplp_ak_dc_std.printname"] = "AKM Dust Cover"
 L["uplp_ak_dc_std.compactname"] = "AKM"
 L["uplp_ak_dc_std.description"] = "Standard ribbed dust cover used on the AKM."
@@ -163,7 +163,7 @@ L["uplp_ak_dc_12.printname"] = "AK-12 Dust Cover and Receiver"
 L["uplp_ak_dc_12.compactname"] = "AK-12"
 L["uplp_ak_dc_12.description"] = " "
 
-///// Pistol Grips
+////// Pistol Grips
 L["uplp_ak_grip_bak.printname"] = "Polymer Pistol Grip"
 L["uplp_ak_grip_bak.compactname"] = "Polymer"
 L["uplp_ak_grip_bak.description"] = "Polymer pistol grip used on the AK-74."
@@ -196,7 +196,7 @@ L["uplp_ak_grip_12evo.printname"] = "Evolution Pistol Grip"
 L["uplp_ak_grip_12evo.compactname"] = "Evolution"
 L["uplp_ak_grip_12evo.description"] = "Upgraded pistol grip and trigger guard for use on the AK-12."
 
-///// Handguards
+////// Handguards
 L["uplp_ak_hg_100.printname"] = "100-Series Handguard"
 L["uplp_ak_hg_100.compactname"] = "100-S"
 L["uplp_ak_hg_100.description"] = "Modern plastic handguard used on the AK-103. Comes with a bottom rail for use with foregrips."
@@ -249,8 +249,8 @@ L["uplp_ak_hg_rpk16.printname"] = "RPK-16 Handguard"
 L["uplp_ak_hg_rpk16.compactname"] = "RPK-16"
 L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the RPK-16."
 
-///// Magazines
-//// 7.62x39mm
+////// Magazines
+/// 7.62x39mm
 local loaded = "\n"
 local loaded762 = loaded .. "Loaded with 7.62x39mm Soviet used by the AK-47, AK-103 and AK-15."
 
@@ -286,7 +286,7 @@ L["uplp_ak_mag_762_drum.printname"] = "75-Round 7.62x39mm Drum"
 L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
 L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
 
-//// 5.45x39mm
+/// 5.45x39mm
 local loaded545 = loaded .. "Loaded with 5.45x39mm used by the AK-74 and AK-105."
 
 L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45x39mm (Polymer)"
@@ -317,7 +317,7 @@ L["uplp_ak_mag_545_drum.printname"] = "75-Round 5.45x39mm Drum"
 L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 (D)"
 L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine." .. loaded545
 
-//// 5.56x45mm NATO
+/// 5.56x45mm NATO
 local loaded556 = loaded .. "Loaded with 5.56x45mm used by the AK-101 and AK-102."
 
 L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56x45mm (Polymer)"
@@ -332,7 +332,7 @@ L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56x45mm (AK-12-Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (12)"
 L["uplp_ak_mag_556_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded556
 
-//// Other
+/// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Round .308"
 L["uplp_ak_mag_308_20.compactname"] = "20R .308"
 L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with .308 Winchester rounds."
@@ -341,7 +341,48 @@ L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
 L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with 9x39mm used by the AK-9."
 
-///// Stocks
+////// Muzzles
+L["uplp_ak_mz_std.printname"] = "100-Series Muzzle Brake"
+L["uplp_ak_mz_std.compactname"] = "100-S MB"
+L["uplp_ak_mz_std.description"] = "Standard muzzle brake used on the AK-103."
+
+L["uplp_ak_mz_akm.printname"] = "AKM Muzzle Brake"
+L["uplp_ak_mz_akm.compactname"] = "AKM MB"
+L["uplp_ak_mz_akm.description"] = "Standard muzzle brake used on the AKM."
+
+L["uplp_ak_mz_compact.printname"] = "74U Muzzle Brake"
+L["uplp_ak_mz_compact.compactname"] = "74U MB"
+L["uplp_ak_mz_compact.description"] = "Standard muzzle brake used on the AKS-74U."
+
+L["uplp_ak_mz_rpk.printname"] = "RPK Muzzle Brake"
+L["uplp_ak_mz_rpk.compactname"] = "RPK MB"
+L["uplp_ak_mz_rpk.description"] = "Standard muzzle brake used on the RPK, RPK-74 and RPK-74M."
+
+L["uplp_ak_mz_vityaz.printname"] = "Vityaz Muzzle Brake"
+L["uplp_ak_mz_vityaz.compactname"] = "Vityaz MB"
+L["uplp_ak_mz_vityaz.description"] = "Standard muzzle brake used on the PP-19-01 Vityaz."
+
+L["uplp_ak_mz_bizon.printname"] = "Bizon Muzzle Brake"
+L["uplp_ak_mz_bizon.compactname"] = "Bizon MB"
+L["uplp_ak_mz_bizon.description"] = "Standard muzzle brake used on the PP-19 Bizon."
+
+L["uplp_ak_mz_12.printname"] = "AK-12 Muzzle Brake"
+L["uplp_ak_mz_12.compactname"] = "AK-12 MB"
+L["uplp_ak_mz_12.description"] = "Standard muzzle brake used on the AK-12."
+
+L["uplp_ak_mz_19.printname"] = "AK-19 Muzzle Brake"
+L["uplp_ak_mz_19.compactname"] = "AK-19 MB"
+L["uplp_ak_mz_19.description"] = "Standard muzzle brake used on the AK-19, an export version of the AK-12."
+
+L["uplp_ak_mz_rpk16.printname"] = "RPK-16 Muzzle Brake"
+L["uplp_ak_mz_rpk16.compactname"] = "RPK-16 MB"
+L["uplp_ak_mz_rpk16.description"] = "Standard muzzle brake used on the RPK-16."
+
+L["uplp_ak_mz_silencer.printname"] = "PBS-1 Suppressor"
+L["uplp_ak_mz_silencer.compactname"] = "PBS-1"
+L["uplp_ak_mz_silencer.description"] = "Standard issue suppressor used on multiple military AK rifles."
+
+////// Stocks
 L["uplp_ak_stock_fold.printname"] = "Polymer Folding Stock"
 L["uplp_ak_stock_fold.compactname"] = "Polymer F"
 L["uplp_ak_stock_fold.description"] = "Folding stock used on the AK-103."
