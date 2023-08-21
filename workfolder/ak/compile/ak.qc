@@ -39,19 +39,11 @@ $bodygroup "dc" { // 3
 	blank  // 8
 }   
 
-$bodygroup "grip" { // 4
-	studio "grip std.smd" // 0
-	studio "grip bak.smd" // 1
-	studio "grip old.smd" // 2
-	studio "grip tac.smd" // 3
-	studio "grip tapco.smd" // 4
-	studio "grip vityaz.smd" // 5
-	studio "grip beryl.smd" // 6
-	studio "grip 12.smd" // 7
-	studio "grip 12 evo.smd" // 8
-}   
+// $bodygroup "grip" { // 4
+// 	blank
+// }   
 
-$bodygroup "hg" { // 5
+$bodygroup "hg" { // 4
 	studio "hg std.smd" // 0
 	studio "hg 100.smd" // 1
 	studio "hg old.smd" // 2
@@ -70,31 +62,11 @@ $bodygroup "hg" { // 5
 	blank  // 11
 }   
 
-$bodygroup "stock" { // 6
-	studio "stock std.smd" // 0
-	studio "stock fold.smd" // 1
-	studio "stock skelet.smd" // 2
-	studio "stock ms.smd" // 3
-	studio "stock ms folded.smd" // 4
-	studio "stock old.smd" // 5
-	studio "stock pt1.smd" // 6
-	studio "stock pt1 extended.smd" // 7
-	studio "stock pt3.smd" // 8
-	studio "stock pt3 extended.smd" // 9
-	studio "stock rpk.smd" // 10
-	studio "stock rpk74m.smd" // 11
-	studio "stock tube.smd" // 12
-	studio "stock wood.smd" // 13
-	studio "stock beryl.smd" // 14
-	studio "stock 12.smd" // 15
-	studio "stock 12 evo.smd" // 16
-	studio "stock 12 evo extended.smd" // 17
-	studio "stock ppk.smd" // 18
-	studio "stock ppk folded.smd" // 19
-	blank // 20
-}   
+// $bodygroup "stock" { // 6
+// 	blank // 20
+// }   
 
-$bodygroup "rnd" { // 7
+$bodygroup "rnd" { // 5
 	studio "rnd 762.smd" // 0
 	studio "rnd 545.smd" // 1
 	studio "rnd 556.smd" // 2
@@ -102,7 +74,7 @@ $bodygroup "rnd" { // 7
 	studio "rnd 939.smd" // 4
 }   
 
-$bodygroup "mag" { // 8
+$bodygroup "mag" { // 6
 	studio "mag 762.smd" // 0
 	studio "mag 762 bak.smd" // 1
 	studio "mag 762 12.smd" // 2
@@ -128,7 +100,7 @@ $bodygroup "mag" { // 8
 	studio "mag 939.smd" // 19
 }   
 
-$bodygroup "nmount" { // 9
+$bodygroup "nmount" { // 7
 	blank // 0
 	studio "nmount.smd" // 1
 	studio "nmount compact.smd" // 2

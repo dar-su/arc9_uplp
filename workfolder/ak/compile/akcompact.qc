@@ -30,17 +30,17 @@ $bodygroup "dc" { // 3
 	blank  // 4
 }   
 
-$bodygroup "grip" { // 4
-	studio "grip std.smd" // 0
-	studio "grip bak.smd" // 1
-	studio "grip old.smd" // 2
-	studio "grip tac.smd" // 3
-	studio "grip tapco.smd" // 4
-	studio "grip vityaz.smd" // 5
-	studio "grip beryl.smd" // 6
-	studio "grip 12.smd" // 7
-	studio "grip 12 evo.smd" // 8
-}   
+// $bodygroup "grip" { // 4
+// 	studio "grip std.smd" // 0
+// 	studio "grip bak.smd" // 1
+// 	studio "grip old.smd" // 2
+// 	studio "grip tac.smd" // 3
+// 	studio "grip tapco.smd" // 4
+// 	studio "grip vityaz.smd" // 5
+// 	studio "grip beryl.smd" // 6
+// 	studio "grip 12.smd" // 7
+// 	studio "grip 12 evo.smd" // 8
+// }   
 
 $bodygroup "hg" { // 5
 	studio "hgp std.smd" // 0
@@ -54,29 +54,29 @@ $bodygroup "hg" { // 5
 	blank  // 8
 }   
 
-$bodygroup "stock" { // 6
-	studio "stock std.smd" // 0
-	studio "stock fold.smd" // 1
-	studio "stock skelet.smd" // 2
-	studio "stock ms.smd" // 3
-	studio "stock ms folded.smd" // 4
-	studio "stock old.smd" // 5
-	studio "stock pt1.smd" // 6
-	studio "stock pt1 extended.smd" // 7
-	studio "stock pt3.smd" // 8
-	studio "stock pt3 extended.smd" // 9
-	studio "stock rpk.smd" // 10
-	studio "stock rpk74m.smd" // 11
-	studio "stock tube.smd" // 12
-	studio "stock wood.smd" // 13
-	studio "stock beryl.smd" // 14
-	studio "stock 12.smd" // 15
-	studio "stock 12 evo.smd" // 16
-	studio "stock 12 evo extended.smd" // 17
-	studio "stock ppk.smd" // 18
-	studio "stock ppk folded.smd" // 19
-	blank // 20
-}   
+// $bodygroup "stock" { // 6
+// 	studio "stock std.smd" // 0
+// 	studio "stock fold.smd" // 1
+// 	studio "stock skelet.smd" // 2
+// 	studio "stock ms.smd" // 3
+// 	studio "stock ms folded.smd" // 4
+// 	studio "stock old.smd" // 5
+// 	studio "stock pt1.smd" // 6
+// 	studio "stock pt1 extended.smd" // 7
+// 	studio "stock pt3.smd" // 8
+// 	studio "stock pt3 extended.smd" // 9
+// 	studio "stock rpk.smd" // 10
+// 	studio "stock rpk74m.smd" // 11
+// 	studio "stock tube.smd" // 12
+// 	studio "stock wood.smd" // 13
+// 	studio "stock beryl.smd" // 14
+// 	studio "stock 12.smd" // 15
+// 	studio "stock 12 evo.smd" // 16
+// 	studio "stock 12 evo extended.smd" // 17
+// 	studio "stock ppk.smd" // 18
+// 	studio "stock ppk folded.smd" // 19
+// 	blank // 20
+// }   
 
 $bodygroup "rnd" { // 7
 	studio "rnd 919.smd" // 0
