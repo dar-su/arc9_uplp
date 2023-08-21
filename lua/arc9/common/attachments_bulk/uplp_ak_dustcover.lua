@@ -94,7 +94,7 @@ ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_dc"
+ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics"}

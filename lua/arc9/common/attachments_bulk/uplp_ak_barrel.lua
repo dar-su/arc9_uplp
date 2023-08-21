@@ -27,9 +27,6 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_flat",
         -- Integral = "uplp_ak_dc_flat",
-		RejectAttachments = {
-			["uplp_ak_dc_12"] = true,
-		},
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
@@ -41,9 +38,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_16")
 
 ATT = {}
 
-ATT.PrintName = "300mm Draco Barrel"
-ATT.CompactName = "300mm Draco"
-ATT.Description = "Short 300mm (12\") barrel used on the Draco."
+ATT.PrintName = "300mm AK-100 Barrel"
+ATT.CompactName = "300mm"
+ATT.Description = "Short 300mm (12\") barrel used on the AK-102 and AK-104."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
@@ -64,9 +61,6 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_std",
         -- Integral = "uplp_ak_dc_std",
-		RejectAttachments = {
-			["uplp_ak_dc_12"] = true,
-		},
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
@@ -101,9 +95,6 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_std",
         -- Integral = "uplp_ak_dc_std",
-		RejectAttachments = {
-			["uplp_ak_dc_12"] = true,
-		},
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
@@ -138,9 +129,6 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_std",
         -- Integral = "uplp_ak_dc_std",
-		RejectAttachments = {
-			["uplp_ak_dc_12"] = true,
-		},
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
     },
@@ -223,7 +211,7 @@ ATT.CompactName = "400mm AK-12"
 ATT.Description = "Standard 400mm (16\") barrel used on the AK-12."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_barrel"
+ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12", "ak12_part"}
@@ -260,7 +248,7 @@ ATT.CompactName = "230mm AK-12K"
 ATT.Description = "Shortened 230mm (9\") barrel from the prototype AK-12K."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_barrel"
+ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
@@ -296,7 +284,7 @@ ATT.CompactName = "400mm AK-19"
 ATT.Description = "Shortened 400mm (16\") barrel used on the AK-19, an export version of the AK-12."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_barrel"
+ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
@@ -332,7 +320,7 @@ ATT.CompactName = "585mm RPK-16"
 ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-16."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_barrel"
+ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}

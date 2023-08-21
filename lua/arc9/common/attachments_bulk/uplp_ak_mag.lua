@@ -91,11 +91,15 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_40"}
 
-ATT.ClipSizeOverride = 40
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_40rnd"
 end
+
+/// Positives
+ATT.ClipSizeOverride = 40
+
+/// Negatives
+ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40")
 
@@ -116,11 +120,15 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_762_40_old"}
 
-ATT.ClipSizeOverride = 40
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_40rnd"
 end
+
+/// Positives
+ATT.ClipSizeOverride = 40
+
+/// Negatives
+ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40_old")
 
@@ -142,14 +150,18 @@ ATT.ActivateElements = {"uplp_ak_mag_762_drum"}
 ATT.DropMagazineTime = 0.85
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_drum.mdl"
 
-ATT.ClipSizeOverride = 75
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_drum"
     end
     return anim .. "_drum"
 end
+
+/// Positives
+ATT.ClipSizeOverride = 75
+
+/// Negatives
+ATT.ReloadTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 
@@ -179,14 +191,16 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
+/// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
--- ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-ATT.RangeMaxMult = 0.85
-ATT.RangeMinMult = 0.9
-ATT.PhysBulletMuzzleVelocityMult = 0.7
+/// Negatives
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30")
 
@@ -207,19 +221,23 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_bak.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30_bak", "uplp_ak_calib_545"}
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
+ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_545"
-    end 
+    end
     return anim .. "_545"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+/// Negatives
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_bak")
 
@@ -240,19 +258,23 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30_pmag", "uplp_ak_calib_545"}
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+/// Negatives
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_pmag")
 
@@ -273,19 +295,23 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_12.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_30_12", "uplp_ak_calib_545"}
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+/// Negatives
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_12")
 
@@ -306,21 +332,26 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_45", "uplp_ak_calib_545"}
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
-ATT.ClipSizeOverride = 45
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545_45rnd"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+ATT.ClipSizeOverride = 45
+
+/// Negatives
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
+ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
@@ -341,21 +372,26 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_60.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_545_60", "uplp_ak_calib_545"}
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
-ATT.ClipSizeOverride = 60
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545_60rnd"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+ATT.ClipSizeOverride = 60
+
+/// Negatives
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
+ATT.ReloadTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_60")
 
@@ -378,21 +414,26 @@ ATT.ActivateElements = {"uplp_ak_mag_545_drum", "uplp_ak_calib_545"}
 ATT.DropMagazineTime = 0.85
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
-ATT.RPMMult = 700/600
-
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 0.9
-
-ATT.RecoilMult = 0.9
-
-ATT.ClipSizeOverride = 75
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_drum"
     end
     return anim .. "_drum"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+ATT.ClipSizeOverride = 75
+
+/// Negatives
+ATT.ReloadTimeMult = 1.15
+ATT.DamageMaxAdd = -15
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 
@@ -415,20 +456,23 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_556_30", "uplp_ak_calib_556"}
 
-ATT.RPMMult = 750/600
-
-ATT.DamageMaxMult = 0.8
-ATT.DamageMinMult = 0.8
-
-ATT.RecoilMult = 0.85
-
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_556"
     end
     return anim .. "_556"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.65
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -16
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30")
 
@@ -449,20 +493,23 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_556_30_pmag", "uplp_ak_calib_556"}
 
-ATT.RPMMult = 750/600
-
-ATT.DamageMaxMult = 0.8
-ATT.DamageMinMult = 0.8
-
-ATT.RecoilMult = 0.85
-
-
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
         return anim .. "_556"
     end
     return anim .. "_556"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.65
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -16
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_pmag")
 
@@ -483,20 +530,23 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_12.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mag_556_30_12", "uplp_ak_calib_556"}
 
-ATT.RPMMult = 750/600
-
-ATT.DamageMaxMult = 0.8
-ATT.DamageMinMult = 0.8
-
-ATT.RecoilMult = 0.85
-
-
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_556"
     end
     return anim .. "_556"
 end
+
+/// Positives
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.65
+ATT.PhysBulletMuzzleVelocityMult = 1.26
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -16
+ATT.DamageMinAdd = -5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_12")
 
@@ -519,18 +569,16 @@ ATT.ActivateElements = {"uplp_ak_mag_308_20", "uplp_ak_calib_308"}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_308.mdl"
 
-ATT.RPMMult = 550/600
+-- ATT.RPMMult = 550/600
 
-ATT.DamageMaxMult = 1.4
-ATT.DamageMinMult = 1.1
+-- ATT.DamageMaxMult = 1.4
+-- ATT.DamageMinMult = 1.1
 
-ATT.RecoilMult = 1.5
-ATT.RecoilSideMult = 2
-ATT.RecoilAutoControlMult = 0.5
-ATT.VisualRecoilMult = 1.5
+-- ATT.RecoilMult = 1.5
+-- ATT.RecoilSideMult = 2
+-- ATT.RecoilAutoControlMult = 0.5
+-- ATT.VisualRecoilMult = 1.5
 
-
-ATT.ClipSizeOverride = 20
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -538,6 +586,20 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
     return anim .. "_308"
 end
+
+/// Positives
+ATT.DamageMaxAdd = 15
+ATT.DamageMinAdd = 5
+
+ATT.RangeMaxMult = 1.35
+ATT.RangeMinMult = 1.6
+ATT.PhysBulletMuzzleVelocityMult = 1.119
+
+/// Negatives
+ATT.RecoilMult = 1.2
+ATT.RPMAdd = -100
+ATT.ClipSizeOverride = 20
+ATT.ReloadTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 
@@ -557,13 +619,13 @@ ATT.ActivateElements = {"uplp_ak_mag_939_30", "uplp_ak_calib_939"}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_939.mdl"
 
-ATT.RPMMult = 775/600
-ATT.ClipSizeOverride = 20
+-- ATT.RPMMult = 775/600
+-- ATT.ClipSizeOverride = 20
 
-ATT.DamageMaxMult = 0.9
-ATT.DamageMinMult = 1.1
+-- ATT.DamageMaxMult = 0.9
+-- ATT.DamageMinMult = 1.1
 
-ATT.RecoilMult = 0.8
+-- ATT.RecoilMult = 0.8
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -571,6 +633,20 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
     return anim .. "_545"
 end
+
+/// Positives
+
+ATT.RecoilMult = 0.6
+ATT.RPMAdd = 150
+
+ATT.RangeMaxMult = 0.25
+ATT.RangeMinMult = 0.45
+
+/// Negatives
+ATT.DamageMaxAdd = -10
+ATT.DamageMinAdd = -10
+ATT.ClipSizeOverride = 20
+ATT.PhysBulletMuzzleVelocityMult = 0.45
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_939_30")
 

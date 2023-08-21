@@ -101,9 +101,9 @@ L["uplp_ak_brl_16.printname"] = "400mm AK-100 Pipa"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
 L["uplp_ak_brl_16.description"] = "Standard 400mm pipa som används på AK-100-gevär."
 
-L["uplp_ak_brl_comp.printname"] = "300mm Draco-Pipa"
-L["uplp_ak_brl_comp.compactname"] = "300mm Draco"
-L["uplp_ak_brl_comp.description"] = "Kort 300mm pipa som används på Draco."
+L["uplp_ak_brl_comp.printname"] = "300mm AK-100 Pipa"
+L["uplp_ak_brl_comp.compactname"] = "300mm"
+L["uplp_ak_brl_comp.description"] = "Kort 300mm pipa som används på AK-102:an och AK-104:an."
 
 L["uplp_ak_brl_akm.printname"] = "400mm AK-Pipa"
 L["uplp_ak_brl_akm.compactname"] = "400mm"

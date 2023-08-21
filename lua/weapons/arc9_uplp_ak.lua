@@ -75,11 +75,16 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.DamageMax = 50
 SWEP.DamageMin = 30
 -- SWEP.Range = 100
-SWEP.RangeMin = 1000 -- How far bullets retain their maximum damage for.
-SWEP.RangeMax = 11000 -- In Hammer units, how far bullets can travel before dealing DamageMin.
+SWEP.RangeMin = 75 * 39.37 -- How far bullets retain their maximum damage for.
+SWEP.RangeMax = 200 * 39.37 -- In Hammer units, how far bullets can travel before dealing DamageMin.
 SWEP.Penetration = 30
 SWEP.DamageType = DMG_BULLET
-SWEP.MuzzleVelocity = 719
+
+--  Physical Bullets --
+
+SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.5
 
 -- Mag size --
 SWEP.ChamberSize = 1
@@ -87,17 +92,17 @@ SWEP.ClipSize = 30 -- Self-explanatory.
 
 -- Recoil --
 
-SWEP.Recoil = 2
+SWEP.Recoil = 3
 SWEP.RecoilUp = 0.7
 SWEP.RecoilSide = 1.15
 SWEP.RecoilRandomUp = 0.65
 SWEP.RecoilRandomSide = 0.75
-SWEP.RecoilAutoControl = 4
+-- SWEP.RecoilAutoControl = 4
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
 
-SWEP.RecoilAutoControl = 0.2
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
@@ -111,7 +116,7 @@ SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
-SWEP.VisualRecoilSide = 0.05 -- Horizontal tilt
+SWEP.VisualRecoilSide = 0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 30 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
@@ -119,7 +124,7 @@ SWEP.VisualRecoilSpringMagnitude = 0.44
 
 SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 5
-SWEP.VisualRecoilSideHipFire = 0.2
+SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 20
 SWEP.VisualRecoilPunchHipFire = 0.5
 SWEP.VisualRecoilDampingConstHipFire = 45
@@ -265,7 +270,7 @@ SWEP.DistantShootSound = {pathAK .. "fire-dist-01.ogg", pathAK .. "fire-dist-02.
 
 -- Bodygroups --
 
-SWEP.DefaultBodygroups = "000000k0000"
+SWEP.DefaultBodygroups = "00000000000"
 
 SWEP.BulletBones = {
     [1] = "bullet1",    [2] = "bullet2",    [3] = "bullet3",    [4] = "bullet4"
@@ -1049,38 +1054,38 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_939_30"] = { Bodygroups = { { 6, 19 } } },
 
     --STOCKS
-    ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
-    ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
-    ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
-    ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
-    ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
-    ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
-    ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
-    ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
-    ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
-    ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
+    -- ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
+    -- ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
+    -- ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
+    -- ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
+    -- ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
+    -- ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
+    -- ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
+    -- ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
+    -- ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
+    -- ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
 
-    ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
-    ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
+    -- ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
+    -- ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
 
-    ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
-    ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
+    -- ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
+    -- ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
     
-    ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
-    ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
+    -- ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
+    -- ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
 
-    ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
-    ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
+    -- ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
+    -- ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
 
-    ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
-    ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
+    -- ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
+    -- ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
-    ["uplp_ak_nmount"] = { Bodygroups = { { 9, 1 } } },
-    ["uplp_ak_nmount_compact"] = { Bodygroups = { { 9, 2 } } },
-    ["uplp_ak_nmount_old"] = { Bodygroups = { { 9, 3 } } },
+    -- ["uplp_ak_nmount"] = { Bodygroups = { { 9, 1 } } },
+    -- ["uplp_ak_nmount_compact"] = { Bodygroups = { { 9, 2 } } },
+    -- ["uplp_ak_nmount_old"] = { Bodygroups = { { 9, 3 } } },
 
     -- 74U Rear Sight
-    ["uplp_ak_rearsight"] =  { Bodygroups = { { 10, 1 } } },
+    ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
 
 }
 SWEP.Attachments = {
@@ -1099,7 +1104,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.768, 22.3),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_muzzle_slim",
+        Installed = "uplp_ak_mz_std",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -1107,12 +1112,6 @@ SWEP.Attachments = {
         Bone = "body",
         Installed = "uplp_ak_brl_16",
         Integral = "uplp_ak_brl_16",
-		RejectAttachments = {
-			["uplp_ak_brl_12"] = true,
-			["uplp_ak_brl_12k"] = true,
-			["uplp_ak_brl_19"] = true,
-			["uplp_ak_brl_rpk16"] = true,
-		},
         Pos = Vector(0.045, 1.5, 17),
 		Icon_Offset = Vector(-5, 0, 0.5),
         Ang = Angle(90, 90, 180),
@@ -1128,12 +1127,10 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip"},
         Bone = "body",
-		RejectAttachments = {
-			["uplp_ak_grip_12"] = true,
-			["uplp_ak_grip_12evo"] = true,
-		},
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_ak_grip_std",
+        Integral = "uplp_ak_grip_std",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),

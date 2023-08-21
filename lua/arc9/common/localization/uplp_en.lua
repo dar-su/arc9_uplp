@@ -101,9 +101,9 @@ L["uplp_ak_brl_16.printname"] = "400mm AK-100 Barrel"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
 L["uplp_ak_brl_16.description"] = "Standard 400mm (16\") barrel used on AK-100 rifles."
 
-L["uplp_ak_brl_comp.printname"] = "300mm Draco Barrel"
-L["uplp_ak_brl_comp.compactname"] = "300mm Draco"
-L["uplp_ak_brl_comp.description"] = "Short 300mm (12\") barrel used on the Draco."
+L["uplp_ak_brl_comp.printname"] = "300mm AK-100 Barrel"
+L["uplp_ak_brl_comp.compactname"] = "300mm"
+L["uplp_ak_brl_comp.description"] = "Short 300mm (12\") barrel used on the AK-102 and AK-104."
 
 L["uplp_ak_brl_akm.printname"] = "400mm AK Barrel"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
@@ -164,9 +164,13 @@ L["uplp_ak_dc_12.compactname"] = "AK-12"
 L["uplp_ak_dc_12.description"] = " "
 
 ////// Pistol Grips
-L["uplp_ak_grip_bak.printname"] = "Polymer Pistol Grip"
-L["uplp_ak_grip_bak.compactname"] = "Polymer"
-L["uplp_ak_grip_bak.description"] = "Polymer pistol grip used on the AK-74."
+L["uplp_ak_grip_std.printname"] = "Polymer Pistol Grip"
+L["uplp_ak_grip_std.compactname"] = "Polymer"
+L["uplp_ak_grip_std.description"] = "Polymer pistol grip used on the AK-103."
+
+L["uplp_ak_grip_bak.printname"] = "Bakelite Pistol Grip"
+L["uplp_ak_grip_bak.compactname"] = "Bakelite"
+L["uplp_ak_grip_bak.description"] = "Pistol grip made out of AG-4S molding compound, but resembles bakelite. Made for the AK-74."
 
 L["uplp_ak_grip_old.printname"] = "Vintage Pistol Grip"
 L["uplp_ak_grip_old.compactname"] = "Vintage"

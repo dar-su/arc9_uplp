@@ -10,6 +10,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "1"
+ATT.ModelOffset = Vector(-9.02, -3.55, 4.89)
+
 -- balance pls
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -31,6 +35,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "2"
+ATT.ModelOffset = Vector(-9.0, -3.55, 4.89)
+
 -- balance pls
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -51,6 +59,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "5"
+ATT.ModelOffset = Vector(-9, -3.55, 4.89)
 
 -- balance pls
 ATT.RecoilMult = 0.85
@@ -74,6 +86,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "a"
+ATT.ModelOffset = Vector(-8.85, -3.55, 4.86)
+
 -- balance pls
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -95,6 +111,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "b"
+ATT.ModelOffset = Vector(-9.02, -3.55, 4.89)
 
 -- balance pls
 ATT.RecoilMult = 0.85
@@ -118,6 +138,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "d"
+ATT.ModelOffset = Vector(-8.935, -3.55, 4.85)
+
 -- balance pls
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -139,6 +163,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "e"
+ATT.ModelOffset = Vector(-9, -3.55, 4.875)
 
 -- balance pls
 ATT.RecoilMult = 0.85
@@ -163,6 +191,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "0"
+ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 -- balance pls
 ATT.RecoilMult = 0.85
@@ -194,10 +226,14 @@ ATT.Attachments = {
 }
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
+ATT.Category = "uplp_ak_stock_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "Buffer Tube"
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "f"
+ATT.ModelOffset = Vector(-9, -3.55, 4.9)
+
+-- ATT.Folder = "Buffer Tube"
 
 ATT.ActivateElements = {"uplp_ak_stock_tube12"}
 
@@ -224,7 +260,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "Buffer Tube"
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "c"
+ATT.ModelOffset = Vector(-8.9, -3.55, 4.85)
+
+-- ATT.Folder = "Buffer Tube"
 
 ATT.ActivateElements = {"uplp_ak_stock_tube"}
 
@@ -249,17 +289,23 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 -- ATT.VisualRecoilMult = 0.85
 -- ATT.RecoilAutoControlMult = 3
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+-- ATT.ModelBodygroups = "c"
+ATT.ModelOffset = Vector(-8.9, -3.55, 5)
+
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
-        ActivateElements = {"uplp_ak_stock_underfold"},
+        -- ActivateElements = {"uplp_ak_stock_underfold"},
+		ModelBodygroups = "3",
 		RecoilMult = 0.85,
 		VisualRecoilMult = 0.85,
 		RecoilAutoControlMult = 3,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
-        ActivateElements = {"uplp_ak_stock_underfold_f"},
+        -- ActivateElements = {"uplp_ak_stock_underfold_f"},
+		ModelBodygroups = "4",
     },
 }
 
@@ -277,6 +323,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+-- ATT.ModelBodygroups = "c"
+ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
+
 -- balance pls
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -287,10 +337,12 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_pt1"},
+		ModelBodygroups = "6",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt1_ext"},
+		ModelBodygroups = "7",
     },
 }
 
@@ -308,6 +360,10 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+-- ATT.ModelBodygroups = "c"
+ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
+
 -- balance pls
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -318,10 +374,12 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_pt3"},
+		ModelBodygroups = "8",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt3_ext"},
+		ModelBodygroups = "9",
     },
 }
 
@@ -336,8 +394,12 @@ ATT.CompactName = "Evolution"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
+ATT.Category = "uplp_ak_stock_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+-- ATT.ModelBodygroups = "c"
+ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 -- balance pls
 ATT.RecoilMult = 0.85
@@ -348,10 +410,12 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_evo"},
+		ModelBodygroups = "g",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_evo_ext"},
+		ModelBodygroups = "h",
     },
 }
 
@@ -367,8 +431,12 @@ ATT.CompactName = "PPK"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_stock"
+ATT.Category = "uplp_ak_stock_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+-- ATT.ModelBodygroups = "c"
+ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 ATT.RecoilMult = 0.85
 ATT.VisualRecoilMult = 0.85
@@ -378,15 +446,12 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_ppk"},
-        -- balance pls
-        -- RecoilMult = 0.66,
-        -- VisualRecoilMult = 0.66,
-        
-        
+		ModelBodygroups = "i",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_ak_stock_ppk_f"},
+		ModelBodygroups = "j",
     },
 }
 

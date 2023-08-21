@@ -86,7 +86,7 @@ ATT.CompactName = "Vityaz MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_muzzle"
+ATT.Category = "uplp_ak_muzzle_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
@@ -106,7 +106,7 @@ ATT.CompactName = "Bizon MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_muzzle"
+ATT.Category = "uplp_ak_muzzle_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
@@ -126,7 +126,7 @@ ATT.CompactName = "AK-12 MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_muzzle"
+ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
@@ -146,7 +146,7 @@ ATT.CompactName = "AK-19 MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_muzzle"
+ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
@@ -166,7 +166,7 @@ ATT.CompactName = "RPK-16 MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_muzzle"
+ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
