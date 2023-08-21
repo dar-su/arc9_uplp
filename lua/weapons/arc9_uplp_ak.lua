@@ -87,7 +87,7 @@ SWEP.ClipSize = 30 -- Self-explanatory.
 
 -- Recoil --
 
-SWEP.Recoil = 1.5
+SWEP.Recoil = 2
 SWEP.RecoilUp = 0.7
 SWEP.RecoilSide = 1.15
 SWEP.RecoilRandomUp = 0.65
@@ -106,17 +106,23 @@ SWEP.Sway = 0
 
 
 SWEP.UseVisualRecoil = true 
+SWEP.PhysicalVisualRecoil = false
 SWEP.VisualRecoil = 0.5
-SWEP.VisualRecoilMultHipFire = 0.03
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
-SWEP.VisualRecoilSide = 0 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 2 -- Roll tilt
+SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilSide = 0.05 -- Horizontal tilt
+SWEP.VisualRecoilRoll = 30 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 50
+SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 
+SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilUpHipFire = 5
+SWEP.VisualRecoilSideHipFire = 0.2
+SWEP.VisualRecoilRollHipFire = 20
+SWEP.VisualRecoilPunchHipFire = 0.5
+SWEP.VisualRecoilDampingConstHipFire = 45
 
 -- Firerate / Firemodes --
 
