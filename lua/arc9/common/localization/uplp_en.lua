@@ -69,8 +69,8 @@ L["uplp_class_weapon_sniper"] = "Sniper Rifle"
 L["uplp_class_weapon_throwable"] = "Throwable"
 
 //////////////////////////////////////////////////////////////////////
-////////// Attachments
-///////// Category Names
+/////////// Attachments
+////////// Category Names
 L["uplp_category_optic"] = "Optic"
 L["uplp_category_muzzle"] = "Muzzle"
 L["uplp_category_magazine"] = "Magazine"
@@ -80,6 +80,11 @@ L["uplp_category_stock"] = "Stock"
 L["uplp_category_handguard"] = "Handguard"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_grip"] = "Foregrip"
+
+///////// Toggle Stats Names
+L["uplp_togglestat_default"] = "Default"
+L["uplp_togglestat_extended"] = "Extended"
+L["uplp_togglestat_folded"] = "Folded"
 
 //////// Weapon Names, Descriptions and unique attachments
 
@@ -335,3 +340,65 @@ L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with .308 Winche
 L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
 L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with 9x39mm used by the AK-9."
+
+///// Stocks
+L["uplp_ak_stock_fold.printname"] = "Polymer Folding Stock"
+L["uplp_ak_stock_fold.compactname"] = "Polymer F"
+L["uplp_ak_stock_fold.description"] = "Folding stock used on the AK-103."
+
+L["uplp_ak_stock_skele.printname"] = "Skeleton Stock"
+L["uplp_ak_stock_skele.compactname"] = "Skeleton"
+L["uplp_ak_stock_skele.description"] = "Folding lightweight stock used on the AKS-74U."
+
+L["uplp_ak_stock_old.printname"] = "Vintage Stock"
+L["uplp_ak_stock_old.compactname"] = "Vintage"
+L["uplp_ak_stock_old.description"] = "Vintage stock used on the AK-47."
+
+L["uplp_ak_stock_rpk.printname"] = "Wooden RPK Stock"
+L["uplp_ak_stock_rpk.compactname"] = "RPK W"
+L["uplp_ak_stock_rpk.description"] = "Heavy wooden stock used on the RPK and RPK-74."
+
+L["uplp_ak_stock_rpk74.printname"] = "Polymer RPK Stock"
+L["uplp_ak_stock_rpk74.compactname"] = "RPK P"
+L["uplp_ak_stock_rpk74.description"] = "Heavy polymer stock used on the RPK-74M."
+
+L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
+L["uplp_ak_stock_wood.compactname"] = "Wooden"
+L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK-74."
+
+L["uplp_ak_stock_beryl.printname"] = "FB Beryl Stock"
+L["uplp_ak_stock_beryl.compactname"] = "FB Beryl"
+L["uplp_ak_stock_beryl.description"] = "Tactical stock manufactured by the Polish FB \"Łucznik\" Radom for use on the FB Beryl."
+
+L["uplp_ak_stock_poly.printname"] = "Polymer Stock"
+L["uplp_ak_stock_poly.compactname"] = "Polymer"
+L["uplp_ak_stock_poly.description"] = "Lightweight polymer stock for AK rifles."
+
+L["uplp_ak_stock_tube12.printname"] = "Buffer Tube (AK-12)"
+L["uplp_ak_stock_tube12.compactname"] = "Buffer (12)"
+L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used on the AK-12. Allows installation of AR-15 compatible stocks."
+
+L["uplp_ak_stock_tube.printname"] = "Buffer Tube"
+L["uplp_ak_stock_tube.compactname"] = "Buffer"
+L["uplp_ak_stock_tube.description"] = "Buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
+
+L["uplp_ak_stock_underfold.printname"] = "Underfolding Stock"
+L["uplp_ak_stock_underfold.compactname"] = "Underfolding"
+L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKM.\nImproves recoil control when extended and improves weapon handling when folded.\nNot compatible with 40-round or above magazines. Also disables the use of custom foregrips on certain handguards."
+
+L["uplp_ak_stock_pt1.printname"] = "Zenith Stock"
+L["uplp_ak_stock_pt1.compactname"] = "Zenith"
+L["uplp_ak_stock_pt1.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
+
+L["uplp_ak_stock_pt3.printname"] = "Zenith-2 Stock"
+L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
+L["uplp_ak_stock_pt3.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
+
+L["uplp_ak_stock_evo.printname"] = "Evolution Stock"
+L["uplp_ak_stock_evo.compactname"] = "Evolution"
+L["uplp_ak_stock_evo.description"] = "Upgraded tactical stock for use on the AK-12.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
+
+L["uplp_ak_stock_ppk.printname"] = "PPK-20 Stock"
+L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
+-- L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nWhen \"Extended\": Multiplies benefits by an additional 20%, but multiplies downsides by 35%."
+L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nImproves recoil control when extended and improves weapon handling when folded."

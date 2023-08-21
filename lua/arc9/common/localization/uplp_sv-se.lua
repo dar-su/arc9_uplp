@@ -69,8 +69,8 @@ L["uplp_class_weapon_sniper"] = "Krypskyttegevär"
 L["uplp_class_weapon_throwable"] = "Kastbar"
 
 //////////////////////////////////////////////////////////////////////
-////////// Attachments
-///////// Category Names
+/////////// Attachments
+////////// Category Names
 L["uplp_category_optic"] = "Riktmedel"
 L["uplp_category_muzzle"] = "Mynning"
 L["uplp_category_magazine"] = "Magasin"
@@ -80,6 +80,11 @@ L["uplp_category_stock"] = "Kolv"
 L["uplp_category_handguard"] = "Handgrepp"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_grip"] = "Framgrepp"
+
+///////// Toggle Stats Names
+L["uplp_togglestat_default"] = "Standard"
+L["uplp_togglestat_extended"] = "Förlängd"
+L["uplp_togglestat_folded"] = "Invikt"
 
 //////// Weapon Names, Descriptions and unique attachments
 
@@ -331,3 +336,65 @@ L["uplp_ak_mag_308_20.description"] = "20-skotts magasin ladded med .308 Winches
 L["uplp_ak_mag_939_30.printname"] = "20-Skott 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
 L["uplp_ak_mag_939_30.description"] = "20-skotts magasin laddade med 9x39mm som används av AK-9:an."
+
+///// Stocks
+L["uplp_ak_stock_fold.printname"] = "Polymer Fällbar Kolv"
+L["uplp_ak_stock_fold.compactname"] = "Polymer F"
+L["uplp_ak_stock_fold.description"] = "Fällbar kolv som används av AK-103:an."
+
+L["uplp_ak_stock_skele.printname"] = "Skelettkolv"
+L["uplp_ak_stock_skele.compactname"] = "Skelett"
+L["uplp_ak_stock_skele.description"] = "Fällbar, lättvikt kolv som används av AKS-74U."
+
+L["uplp_ak_stock_old.printname"] = "Gammaldags Kolv"
+L["uplp_ak_stock_old.compactname"] = "Gammaldags"
+L["uplp_ak_stock_old.description"] = "Gammaldags kolv som används av AK-47:an."
+
+L["uplp_ak_stock_rpk.printname"] = "RPK-Träkolv"
+L["uplp_ak_stock_rpk.compactname"] = "RPK-T"
+L["uplp_ak_stock_rpk.description"] = "Tung träkolv som används av RPK och RPK-74:an."
+
+L["uplp_ak_stock_rpk74.printname"] = "Polymer RPK-Kolv"
+L["uplp_ak_stock_rpk74.compactname"] = "RPK P"
+L["uplp_ak_stock_rpk74.description"] = "Tung polymer-kolv som används av RPK-74M."
+
+L["uplp_ak_stock_wood.printname"] = "Träkolv"
+L["uplp_ak_stock_wood.compactname"] = "Trä"
+L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK-74:an."
+
+L["uplp_ak_stock_beryl.printname"] = "FB Beryl Kolv"
+L["uplp_ak_stock_beryl.compactname"] = "FB Beryl"
+L["uplp_ak_stock_beryl.description"] = "Taktisk kolv tillverkad av polska FB \"Łucznik\" Radom för användning av FB Beryl."
+
+L["uplp_ak_stock_poly.printname"] = "Polymer-Kolv"
+L["uplp_ak_stock_poly.compactname"] = "Polymer"
+L["uplp_ak_stock_poly.description"] = "Lättvikt polymer-kolv till AK-gevär."
+
+L["uplp_ak_stock_tube12.printname"] = "Bufferrör (AK-12)"
+L["uplp_ak_stock_tube12.compactname"] = "Buffer (12)"
+L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som används av AK-12:an. Tillåter installering av AR-15-kompatibla kolvar."
+
+L["uplp_ak_stock_tube.printname"] = "Bufferrör"
+L["uplp_ak_stock_tube.compactname"] = "Buffer"
+L["uplp_ak_stock_tube.description"] = "Bufferrör montering kompatibel med AK-gevär. Tillåter installering av AR-15-kompatibla kolvar."
+
+L["uplp_ak_stock_underfold.printname"] = "Undervikbar Kolv"
+L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"
+L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKM.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt.\nInte kompatibel med 40-skott eller högre magasin. Tillåter också inte användningen av anpassade framgrepp på vissa handskydd."
+
+L["uplp_ak_stock_pt1.printname"] = "Zenith-Kolv"
+L["uplp_ak_stock_pt1.compactname"] = "Zenith"
+L["uplp_ak_stock_pt1.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
+
+L["uplp_ak_stock_pt3.printname"] = "Zenith-2-Stock"
+L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
+L["uplp_ak_stock_pt3.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
+
+L["uplp_ak_stock_evo.printname"] = "Evolution Kolv"
+L["uplp_ak_stock_evo.compactname"] = "Evolution"
+L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning av AK-12:an.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
+
+L["uplp_ak_stock_ppk.printname"] = "PPK-20-Kolv"
+L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
+-- L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nOm den är \"Förlängd\": Multiplicerar förmåner med 20% till, men multiplicerar nackdelar med 35%."
+L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt."

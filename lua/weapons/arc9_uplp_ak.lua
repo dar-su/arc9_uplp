@@ -964,33 +964,6 @@ SWEP.AttachmentElements = {
     ["uplp_ak_hg_12"] =      { Bodygroups = { { 5, 13 } } },
     ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 5, 14 } } },
 
-    --STOCKS
-    ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
-    ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
-    ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
-    ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
-    ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
-    ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
-    ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
-    ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
-    ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
-    ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
-
-    ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
-    ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
-
-    ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
-    ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
-    
-    ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
-    ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
-
-    ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
-    ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
-
-    ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
-    ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
-
     --CALIBERS
     ["uplp_ak_calib_545"] = { Bodygroups = { { 7, 1 } } },
     ["uplp_ak_calib_556"] = { Bodygroups = { { 7, 2 } } },
@@ -1030,6 +1003,33 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_308_20"] = { Bodygroups = { { 8, 18 } } },
 
     ["uplp_ak_mag_939_30"] = { Bodygroups = { { 8, 19 } } },
+
+    --STOCKS
+    ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
+    ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
+    ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
+    ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
+    ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
+    ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
+    ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
+    ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
+    ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
+    ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
+
+    ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
+    ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
+
+    ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
+    ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
+    
+    ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
+    ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
+
+    ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
+    ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
+
+    ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
+    ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
     ["uplp_ak_nmount"] = { Bodygroups = { { 9, 1 } } },
     ["uplp_ak_nmount_compact"] = { Bodygroups = { { 9, 2 } } },
