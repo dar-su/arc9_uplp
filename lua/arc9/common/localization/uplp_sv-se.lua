@@ -95,6 +95,9 @@ L["uplp_weapon_ak_desc"] = "Automatkarbinen AK, designad av Mikhail Kalashnikov 
 L["uplp_weapon_ak12"] = "AK-12"
 L["uplp_weapon_ak12_desc"] = "AK-12 är ett modernt automatgevär designat i Ryssland, avsett att vara en uppdaterad version av den ikoniska AK-47. Det har förbättrad ergonomi, modularitet och ökad noggrannhet samtidigt som det behåller den berömda tillförlitligheten hos AK-serien."
 
+L["uplp_weapon_ak_smg"] = "AK KPist."
+L["uplp_weapon_ak_smg_desc"] = "Diverse kompakta kulsprutepistoler baserade på automatkarbinen AK. Med AK-plattformen som en bas så erbjuder AK Kpist. förtrogenhet till dem som redan har kunskap med olika AK-gevär ur dess familj med den kompakta naturen av kulsprutepistoler."
+
 /////////// Attachments
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK-100 Pipa"
@@ -131,7 +134,7 @@ L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK-12
 
 L["uplp_ak_brl_19.printname"] = "400mm AK-19 Pipa"
 L["uplp_ak_brl_19.compactname"] = "400mm 19"
-L["uplp_ak_brl_19.description"] = "Förkortad 400mm pipa som används på AK-19, en exportversion av AK-12:an."
+L["uplp_ak_brl_19.description"] = "Förkortad 400mm pipa som används på AK-19, en 5.56x45mm exportversion av AK-12:an."
 
 L["uplp_ak_brl_rpk16.printname"] = "585mm RPK-16 Pipa"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm RPK"
@@ -154,9 +157,9 @@ L["uplp_ak_dc_zen.printname"] = "Zenith-Dammskydd"
 L["uplp_ak_dc_zen.compactname"] = "Zenith"
 L["uplp_ak_dc_zen.description"] = "Modernt dammskydd för AK-gevär. Kommer med inbyggd toppmonterad skena för riktmedel."
 
-L["uplp_ak_dc_beryl.printname"] = "FB Beryl Dammskydd & Skena"
-L["uplp_ak_dc_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena tillverkad av polska FB \"Łucznik\" Radom för användning av FB Beryl."
+L["uplp_ak_dc_beryl.printname"] = "Beryl Dammskydd & Skena"
+L["uplp_ak_dc_beryl.compactname"] = "Beryl"
+L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena gjorda för ett AK-gevär av polskt ursprung."
 
 ////// Pistol Grips
 L["uplp_ak_grip_bak.printname"] = "Polymer Pistolgrepp"
@@ -179,16 +182,16 @@ L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistolgrepp"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
 L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på PP-19-01 Vityaz."
 
-L["uplp_ak_grip_beryl.printname"] = "FB Beryl Pistolgrepp"
-L["uplp_ak_grip_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_grip_beryl.description"] = "Alternativt pistolgrepp tillverkad av polska FB \"Łucznik\" Radom för användning av FB Beryl."
+L["uplp_ak_grip_beryl.printname"] = "Beryl Pistolgrepp"
+L["uplp_ak_grip_beryl.compactname"] = "Beryl"
+L["uplp_ak_grip_beryl.description"] = "Alternativt pistolgrepp gjorda för ett AK-gevär av polskt ursprung."
 
 L["uplp_ak_grip_12.printname"] = "AK-12 Pistolgrepp"
 L["uplp_ak_grip_12.compactname"] = "AK-12"
 L["uplp_ak_grip_12.description"] = "Standard pistolgrepp som används på AK-12:an."
 
-L["uplp_ak_grip_12evo.printname"] = "Evolution Pistolgrepp"
-L["uplp_ak_grip_12evo.compactname"] = "Evolution"
+L["uplp_ak_grip_12evo.printname"] = "EVO-Pistolgrepp"
+L["uplp_ak_grip_12evo.compactname"] = "EVO"
 L["uplp_ak_grip_12evo.description"] = "Uppgraderat pistolgrepp och varbygel för användning på AK-12:an."
 
 ////// Handguards
@@ -200,13 +203,13 @@ L["uplp_ak_hg_old.printname"] = "Gammaldags Handgrepp"
 L["uplp_ak_hg_old.compactname"] = "Gammaldags"
 L["uplp_ak_hg_old.description"] = "Gammaldags handgrepp som används på AK-47:an."
 
-L["uplp_ak_hg_rpk.printname"] = "RPK-Handgrepp"
-L["uplp_ak_hg_rpk.compactname"] = "RPK"
+L["uplp_ak_hg_rpk.printname"] = "Klassiskt RPK-Handgrepp"
+L["uplp_ak_hg_rpk.compactname"] = "K. RPK"
 L["uplp_ak_hg_rpk.description"] = "Trähandgrepp som används på RPK och RPK-74:an."
 
-L["uplp_ak_hg_beryl.printname"] = "FB Beryl Handgrepp"
-L["uplp_ak_hg_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_hg_beryl.description"] = "Taktiskt handgrepp tillverkat av polska FB \"Łucznik\" Radom för användning av FB Beryl."
+L["uplp_ak_hg_beryl.printname"] = "Beryl Handgrepp"
+L["uplp_ak_hg_beryl.compactname"] = "Beryl"
+L["uplp_ak_hg_beryl.description"] = "Taktiskt handgrepp tillverkat av polska FB \"Łucznik\" Radom för användning av Beryl."
 
 L["uplp_ak_hg_tac.printname"] = "Taktiskt Handgrepp"
 L["uplp_ak_hg_tac.compactname"] = "Taktiskt"
@@ -216,10 +219,9 @@ L["uplp_ak_hg_wood.printname"] = "Trähandgrepp"
 L["uplp_ak_hg_wood.compactname"] = "Trä"
 L["uplp_ak_hg_wood.description"] = "Trähandgrepp som används på AK-74:an."
 
-L["uplp_ak_hg_dong.printname"] = "PM md. 63 Handgrepp"
-L["uplp_ak_hg_dong.compactname"] = "PM md. 63"
-L["uplp_ak_hg_dong.description"] = "Wooden handguard with built-in foregrip used on the Romanian PM md. 63."
-L["uplp_ak_hg_dong.description"] = "Trähandgrepp med inbyggt framgrepp som används av rumänska PM md. 63."
+L["uplp_ak_hg_dong.printname"] = "Dong-Handgrepp"
+L["uplp_ak_hg_dong.compactname"] = "Dong"
+L["uplp_ak_hg_dong.description"] = "Trähandgrepp med inbyggt framgrepp som används av ett AK-gevär med rumänskt ursprung."
 
 L["uplp_ak_hg_zen.printname"] = "Zenith-Handgrepp"
 L["uplp_ak_hg_zen.compactname"] = "Zenith"
@@ -233,9 +235,9 @@ L["uplp_ak_hg_su_tac.printname"] = "Taktiskt Handgrepp"
 L["uplp_ak_hg_su_tac.compactname"] = "Taktiskt"
 L["uplp_ak_hg_su_tac.description"] = "En ersättning till nedersta handgreppet som lägger till RIS-skena funktionalitet."
 
-L["uplp_ak_hg_su_dong.printname"] = "PM md. 63 Handgrepp"
-L["uplp_ak_hg_su_dong.compactname"] = "PM md. 63"
-L["uplp_ak_hg_su_dong.description"] = "Trähandgrepp från den rumänska PM md. 63 med inbyggt framgrepp."
+L["uplp_ak_hg_su_dong.printname"] = "Dong-Handgrepp"
+L["uplp_ak_hg_su_dong.compactname"] = "Dong"
+L["uplp_ak_hg_su_dong.description"] = "Trähandgrepp från ett AK-gevär med rumänskt ursprung med inbyggt framgrepp."
 
 L["uplp_ak_hg_12.printname"] = "AK-12 Handgrepp"
 L["uplp_ak_hg_12.compactname"] = "AK-12"
@@ -309,9 +311,9 @@ L["uplp_ak_mag_545_60.printname"] = "60-Skott 5.45x39mm Quadstack"
 L["uplp_ak_mag_545_60.compactname"] = "60S 5.45 (Q)"
 L["uplp_ak_mag_545_60.description"] = "60-skott polymer-magasin expanderad horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\n\n\nTjock jäkel"
 
-L["uplp_ak_mag_545_drum.printname"] = "75-Skott 5.45x39mm Trumma"
+L["uplp_ak_mag_545_drum.printname"] = "75-Skott 5.45x39mm RPK-16 Trumma"
 L["uplp_ak_mag_545_drum.compactname"] = "75S 5.45 (D)"
-L["uplp_ak_mag_545_drum.description"] = "75-skott cylindriskt trummagasin." .. loaded545
+L["uplp_ak_mag_545_drum.description"] = "75-skott cylindriskt trummagasin från RPK-16." .. loaded545
 
 /// 5.56x45mm NATO
 local loaded556 = loaded .. "Laddat med 5.56.x45mm som används av AK-101:an och AK-102:an."
@@ -329,9 +331,9 @@ L["uplp_ak_mag_556_30_12.compactname"] = "30S 5.56 (12)"
 L["uplp_ak_mag_556_30_12.description"] = "30-skotts magasin gjorda att likna AK-12-magasinen." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Skott .308"
-L["uplp_ak_mag_308_20.compactname"] = "20S .308"
-L["uplp_ak_mag_308_20.description"] = "20-skotts magasin ladded med .308 Winchester-skott."
+L["uplp_ak_mag_308_20.printname"] = "20-Skott AK-308 7.62x51mm"
+L["uplp_ak_mag_308_20.compactname"] = "20S 7.62x51"
+L["uplp_ak_mag_308_20.description"] = "20-skotts magasin ladded med 7.62x51mm-skott."
 
 L["uplp_ak_mag_939_30.printname"] = "20-Skott 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
@@ -346,11 +348,11 @@ L["uplp_ak_mz_akm.printname"] = "AKM Mynningsbroms"
 L["uplp_ak_mz_akm.compactname"] = "AKM MB"
 L["uplp_ak_mz_akm.description"] = "Standard mynningsbroms som används på AKM."
 
-L["uplp_ak_mz_compact.printname"] = "74U Mynningsbroms"
-L["uplp_ak_mz_compact.compactname"] = "74U MB"
-L["uplp_ak_mz_compact.description"] = "Standard mynningsbroms som används på AKS-74U."
+L["uplp_ak_mz_compact.printname"] = "74U / 105 Mynningsbroms"
+L["uplp_ak_mz_compact.compactname"] = "74U/105 MB"
+L["uplp_ak_mz_compact.description"] = "Standard mynningsbroms som används på AKS-74U och AK-105:an."
 
-L["uplp_ak_mz_rpk.printname"] = "RPK Mynningsbroms"
+L["uplp_ak_mz_rpk.printname"] = "Klassisk RPK Mynningsbroms"
 L["uplp_ak_mz_rpk.compactname"] = "RPK MB"
 L["uplp_ak_mz_rpk.description"] = "Standard mynningsbroms som används på RPK, RPK-74 och RPK-74M."
 
@@ -368,7 +370,7 @@ L["uplp_ak_mz_12.description"] = "Standard mynningsbroms som används på AK-12.
 
 L["uplp_ak_mz_19.printname"] = "AK-19 Mynningsbroms"
 L["uplp_ak_mz_19.compactname"] = "AK-19 MB"
-L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK-19, en exportversion av AK-12:an."
+L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK-19, en 5.56x45mm exportversion av AK-12:an."
 
 L["uplp_ak_mz_rpk16.printname"] = "RPK-16 Mynningsbroms"
 L["uplp_ak_mz_rpk16.compactname"] = "RPK-16 MB"
@@ -403,9 +405,9 @@ L["uplp_ak_stock_wood.printname"] = "Träkolv"
 L["uplp_ak_stock_wood.compactname"] = "Trä"
 L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK-74:an."
 
-L["uplp_ak_stock_beryl.printname"] = "FB Beryl Kolv"
-L["uplp_ak_stock_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_stock_beryl.description"] = "Taktisk kolv tillverkad av polska FB \"Łucznik\" Radom för användning av FB Beryl."
+L["uplp_ak_stock_beryl.printname"] = "Beryl Kolv"
+L["uplp_ak_stock_beryl.compactname"] = "Beryl"
+L["uplp_ak_stock_beryl.description"] = "Taktisk kolv gjorda för ett AK-gevär av polskt ursprung."
 
 L["uplp_ak_stock_poly.printname"] = "Polymer-Kolv"
 L["uplp_ak_stock_poly.compactname"] = "Polymer"
@@ -419,7 +421,7 @@ L["uplp_ak_stock_tube.printname"] = "Bufferrör"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
 L["uplp_ak_stock_tube.description"] = "Bufferrör montering kompatibel med AK-gevär. Tillåter installering av AR-15-kompatibla kolvar."
 
-L["uplp_ak_stock_underfold.printname"] = "Undervikbar Kolv"
+L["uplp_ak_stock_underfold.printname"] = "AKMS Undervikbar Kolv"
 L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"
 L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKM.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt.\nInte kompatibel med 40-skott eller högre magasin. Tillåter också inte användningen av anpassade framgrepp på vissa handskydd."
 
@@ -431,11 +433,27 @@ L["uplp_ak_stock_pt3.printname"] = "Zenith-2-Stock"
 L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
 L["uplp_ak_stock_pt3.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
 
-L["uplp_ak_stock_evo.printname"] = "Evolution Kolv"
-L["uplp_ak_stock_evo.compactname"] = "Evolution"
+L["uplp_ak_stock_evo.printname"] = "EVO-Kolv"
+L["uplp_ak_stock_evo.compactname"] = "EVO"
 L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning av AK-12:an.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
 
 L["uplp_ak_stock_ppk.printname"] = "PPK-20-Kolv"
 L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
 -- L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nOm den är \"Förlängd\": Multiplicerar förmåner med 20% till, men multiplicerar nackdelar med 35%."
 L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt."
+
+//////////////////// AR15
+L["uplp_weapon_ar15"] = "AR-15"
+L["uplp_weapon_ar15_desc"] = "AR-15 är ett lättviktigt, luftkyld, gasdrivet, magasinfött helautomatiskt gevär som har blivit populärt för sin modularitet och mångsidighet. Det används allmänt av militära och polisiära organisationer, känt för sin noggrannhet och anpassningsförmåga till olika stridssituationer."
+
+//////////////////// Deagle
+L["uplp_weapon_deagle"] = "Deagle"
+L["uplp_weapon_deagle_desc"] = "Deagle är en halvautomatisk pistol känd för sin distinkta design och kraftfulla patronalternativ, inklusive .50 AE. Den är känd för sitt stora ram, gasdrivna mekanism och sitt rykte som en av de mest kraftfulla handeldvapnen i världen."
+
+//////////////////// Mutant
+L["uplp_weapon_mutant"] = "Mutant"
+L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla 7,62x39mm-kalibern som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
+
+//////////////////// Molot
+L["uplp_weapon_molot"] = "Molot"
+L["uplp_weapon_molot_desc"] = "Molot är en rysktillverkad halvautomatisk hagelgevär känd för sin robusta och pålitliga design. Den är kamrad för 12-kalibriga patroner och är populär bland skyttar och samlare för sin hållbarhet och prestanda. Denna version av Molot är fabriksgjord för användning inom sportskytte vilket resulterade i inkluderingen av ett tvåhändigt laddningshandtag."

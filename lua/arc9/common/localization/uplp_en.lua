@@ -95,6 +95,9 @@ L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed by Mikhail Kalashniko
 L["uplp_weapon_ak12"] = "AK-12"
 L["uplp_weapon_ak12_desc"] = "The AK-12 is a modern assault rifle designed in Russia as a successor to the iconic AK-47. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
 
+L["uplp_weapon_ak_smg"] = "AK SMG"
+L["uplp_weapon_ak_smg_desc"] = "Various compact submachine guns based on the AK assault rifle. With the base being that of the AK platform, the AK SMG provides familiarity to those already familiar with the various AK family of rifles with the compact nature of SMGs."
+
 /////////// Attachments
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK-100 Barrel"
@@ -131,7 +134,7 @@ L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the protot
 
 L["uplp_ak_brl_19.printname"] = "400mm AK-19 Barrel"
 L["uplp_ak_brl_19.compactname"] = "400mm 19"
-L["uplp_ak_brl_19.description"] = "Shortened 400mm (16\") barrel used on the AK-19, an export version of the AK-12."
+L["uplp_ak_brl_19.description"] = "Shortened 400mm (16\") barrel used on the AK-19, a 5.56x45mm export version of the AK-12."
 
 L["uplp_ak_brl_rpk16.printname"] = "585mm RPK-16 Barrel"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm RPK"
@@ -154,9 +157,9 @@ L["uplp_ak_dc_zen.printname"] = "Zenith Dust Cover"
 L["uplp_ak_dc_zen.compactname"] = "Zenith"
 L["uplp_ak_dc_zen.description"] = "Modernized dust cover for AK rifles. Comes with built-in top rail for optics."
 
-L["uplp_ak_dc_beryl.printname"] = "FB Beryl Dust Cover & Rail"
-L["uplp_ak_dc_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_dc_beryl.description"] = "Dust cover and top rail combination manufactured by the Polish FB \"Łucznik\" Radom for use on the FB Beryl."
+L["uplp_ak_dc_beryl.printname"] = "Beryl Dust Cover & Rail"
+L["uplp_ak_dc_beryl.compactname"] = "Beryl"
+L["uplp_ak_dc_beryl.description"] = "Dust cover and top rail combination made for an AK rifle of Polish origin."
 
 -- IGNORE; remove if non-English file
 L["uplp_ak_dc_12.printname"] = "AK-12 Dust Cover and Receiver"
@@ -180,24 +183,24 @@ L["uplp_ak_grip_tac.printname"] = "Tactical Pistol Grip"
 L["uplp_ak_grip_tac.compactname"] = "Tactical"
 L["uplp_ak_grip_tac.description"] = "Comfortable and sporty pistol grip for AK rifles."
 
-L["uplp_ak_grip_tapco.printname"] = "Tapco Pistol Grip"
-L["uplp_ak_grip_tapco.compactname"] = "Tapco"
-L["uplp_ak_grip_tapco.description"] = "Rubberized pistol grip by Tapco."
+L["uplp_ak_grip_tapco.printname"] = "PAWCO Pistol Grip"
+L["uplp_ak_grip_tapco.compactname"] = "PAWCO"
+L["uplp_ak_grip_tapco.description"] = "Rubberized pistol grip by PAWCO."
 
 L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistol Grip"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
 L["uplp_ak_grip_vityaz.description"] = "Larger pistol grip used on the PP-19-01 Vityaz."
 
-L["uplp_ak_grip_beryl.printname"] = "FB Beryl Pistol Grip"
-L["uplp_ak_grip_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_grip_beryl.description"] = "Alternative pistol grip manufactured by the Polish FB \"Łucznik\" Radom for use on the FB Beryl."
+L["uplp_ak_grip_beryl.printname"] = "Beryl Pistol Grip"
+L["uplp_ak_grip_beryl.compactname"] = "Beryl"
+L["uplp_ak_grip_beryl.description"] = "Alternative pistol grip made for an AK rifle of Polish origin."
 
 L["uplp_ak_grip_12.printname"] = "AK-12 Pistol Grip"
 L["uplp_ak_grip_12.compactname"] = "AK-12"
 L["uplp_ak_grip_12.description"] = "Standard pistol grip used on the AK-12."
 
-L["uplp_ak_grip_12evo.printname"] = "Evolution Pistol Grip"
-L["uplp_ak_grip_12evo.compactname"] = "Evolution"
+L["uplp_ak_grip_12evo.printname"] = "EVO Pistol Grip"
+L["uplp_ak_grip_12evo.compactname"] = "EVO"
 L["uplp_ak_grip_12evo.description"] = "Upgraded pistol grip and trigger guard for use on the AK-12."
 
 ////// Handguards
@@ -209,13 +212,13 @@ L["uplp_ak_hg_old.printname"] = "Vintage Handguard"
 L["uplp_ak_hg_old.compactname"] = "Vintage"
 L["uplp_ak_hg_old.description"] = "Vintage handguard used on the AK-47."
 
-L["uplp_ak_hg_rpk.printname"] = "RPK Handguard"
-L["uplp_ak_hg_rpk.compactname"] = "RPK"
+L["uplp_ak_hg_rpk.printname"] = "Classic RPK Handguard"
+L["uplp_ak_hg_rpk.compactname"] = "C. RPK"
 L["uplp_ak_hg_rpk.description"] = "Wooden handguard used on the RPK and RPK-74."
 
-L["uplp_ak_hg_beryl.printname"] = "FB Beryl Handguard"
-L["uplp_ak_hg_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_hg_beryl.description"] = "Tactical handguard manufactured by the Polish FB \"Łucznik\" Radom for use on the FB Beryl."
+L["uplp_ak_hg_beryl.printname"] = "Beryl Handguard"
+L["uplp_ak_hg_beryl.compactname"] = "Beryl"
+L["uplp_ak_hg_beryl.description"] = "Tactical handguard made for an AK rifle of Polish origin."
 
 L["uplp_ak_hg_tac.printname"] = "Tactical Handguard"
 L["uplp_ak_hg_tac.compactname"] = "Tactical"
@@ -225,9 +228,9 @@ L["uplp_ak_hg_wood.printname"] = "Wooden Handguard"
 L["uplp_ak_hg_wood.compactname"] = "Wooden"
 L["uplp_ak_hg_wood.description"] = "Wooden handguard used on the AK-74."
 
-L["uplp_ak_hg_dong.printname"] = "PM md. 63 Handguard"
-L["uplp_ak_hg_dong.compactname"] = "PM md. 63"
-L["uplp_ak_hg_dong.description"] = "Wooden handguard with built-in foregrip used on the Romanian PM md. 63."
+L["uplp_ak_hg_dong.printname"] = "Dong Handguard"
+L["uplp_ak_hg_dong.compactname"] = "Dong"
+L["uplp_ak_hg_dong.description"] = "Wooden handguard with built-in foregrip used on an AK rifle of Romanian origin."
 
 L["uplp_ak_hg_zen.printname"] = "Zenith Handguard"
 L["uplp_ak_hg_zen.compactname"] = "Zenith"
@@ -241,9 +244,9 @@ L["uplp_ak_hg_su_tac.printname"] = "Tactical Handguard"
 L["uplp_ak_hg_su_tac.compactname"] = "Tactical"
 L["uplp_ak_hg_su_tac.description"] = "A replacement bottom handguard that adds RIS rail functionality."
 
-L["uplp_ak_hg_su_dong.printname"] = "PM md. 63 Handguard"
-L["uplp_ak_hg_su_dong.compactname"] = "PM md. 63"
-L["uplp_ak_hg_su_dong.description"] = "Wooden handguard from the Romanian PM md. 63 with built-in foregrip."
+L["uplp_ak_hg_su_dong.printname"] = "Dong Handguard"
+L["uplp_ak_hg_su_dong.compactname"] = "Dong"
+L["uplp_ak_hg_su_dong.description"] = "Wooden handguard from an AK rifle of Romanian origin with built-in foregrip."
 
 L["uplp_ak_hg_12.printname"] = "AK-12 Handguard"
 L["uplp_ak_hg_12.compactname"] = "AK-12"
@@ -317,9 +320,9 @@ L["uplp_ak_mag_545_60.printname"] = "60-Round 5.45x39mm Quadstacked"
 L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
 L["uplp_ak_mag_545_60.description"] = "60-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\n\n\nThicc boi"
 
-L["uplp_ak_mag_545_drum.printname"] = "75-Round 5.45x39mm Drum"
+L["uplp_ak_mag_545_drum.printname"] = "75-Round 5.45x39mm RPK-16 Drum"
 L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 (D)"
-L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine." .. loaded545
+L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine from the RPK-16." .. loaded545
 
 /// 5.56x45mm NATO
 local loaded556 = loaded .. "Loaded with 5.56x45mm used by the AK-101 and AK-102."
@@ -337,11 +340,11 @@ L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (12)"
 L["uplp_ak_mag_556_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Round .308"
-L["uplp_ak_mag_308_20.compactname"] = "20R .308"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with .308 Winchester rounds."
+L["uplp_ak_mag_308_20.printname"] = "20-Round AK-308 7.62x51mm"
+L["uplp_ak_mag_308_20.compactname"] = "20R 7.62x51"
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with 7.62x51mm rounds."
 
-L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
+L["uplp_ak_mag_939_30.printname"] = "20-Round AK-9 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
 L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with 9x39mm used by the AK-9."
 
@@ -354,11 +357,11 @@ L["uplp_ak_mz_akm.printname"] = "AKM Muzzle Brake"
 L["uplp_ak_mz_akm.compactname"] = "AKM MB"
 L["uplp_ak_mz_akm.description"] = "Standard muzzle brake used on the AKM."
 
-L["uplp_ak_mz_compact.printname"] = "74U Muzzle Brake"
-L["uplp_ak_mz_compact.compactname"] = "74U MB"
-L["uplp_ak_mz_compact.description"] = "Standard muzzle brake used on the AKS-74U."
+L["uplp_ak_mz_compact.printname"] = "74U / 105 Muzzle Brake"
+L["uplp_ak_mz_compact.compactname"] = "74U/100 MB"
+L["uplp_ak_mz_compact.description"] = "Standard muzzle brake used on the AKS-74U and AK-105."
 
-L["uplp_ak_mz_rpk.printname"] = "RPK Muzzle Brake"
+L["uplp_ak_mz_rpk.printname"] = "Classic RPK Muzzle Brake"
 L["uplp_ak_mz_rpk.compactname"] = "RPK MB"
 L["uplp_ak_mz_rpk.description"] = "Standard muzzle brake used on the RPK, RPK-74 and RPK-74M."
 
@@ -376,7 +379,7 @@ L["uplp_ak_mz_12.description"] = "Standard muzzle brake used on the AK-12."
 
 L["uplp_ak_mz_19.printname"] = "AK-19 Muzzle Brake"
 L["uplp_ak_mz_19.compactname"] = "AK-19 MB"
-L["uplp_ak_mz_19.description"] = "Standard muzzle brake used on the AK-19, an export version of the AK-12."
+L["uplp_ak_mz_19.description"] = "Standard muzzle brake used on the AK-19, a 5.56x45mm export version of the AK-12."
 
 L["uplp_ak_mz_rpk16.printname"] = "RPK-16 Muzzle Brake"
 L["uplp_ak_mz_rpk16.compactname"] = "RPK-16 MB"
@@ -411,9 +414,9 @@ L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
 L["uplp_ak_stock_wood.compactname"] = "Wooden"
 L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK-74."
 
-L["uplp_ak_stock_beryl.printname"] = "FB Beryl Stock"
-L["uplp_ak_stock_beryl.compactname"] = "FB Beryl"
-L["uplp_ak_stock_beryl.description"] = "Tactical stock manufactured by the Polish FB \"Łucznik\" Radom for use on the FB Beryl."
+L["uplp_ak_stock_beryl.printname"] = "Beryl Stock"
+L["uplp_ak_stock_beryl.compactname"] = "Beryl"
+L["uplp_ak_stock_beryl.description"] = "Tactical stock made for an AK rifle of Polish origin."
 
 L["uplp_ak_stock_poly.printname"] = "Polymer Stock"
 L["uplp_ak_stock_poly.compactname"] = "Polymer"
@@ -427,9 +430,9 @@ L["uplp_ak_stock_tube.printname"] = "Buffer Tube"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
 L["uplp_ak_stock_tube.description"] = "Buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
 
-L["uplp_ak_stock_underfold.printname"] = "Underfolding Stock"
+L["uplp_ak_stock_underfold.printname"] = "AKMS Underfolding Stock"
 L["uplp_ak_stock_underfold.compactname"] = "Underfolding"
-L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKM.\nImproves recoil control when extended and improves weapon handling when folded.\nNot compatible with 40-round or above magazines. Also disables the use of custom foregrips on certain handguards."
+L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKMS.\nImproves recoil control when extended and improves weapon handling when folded.\nNot compatible with 40-round or above magazines. Also disables the use of custom foregrips on certain handguards."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith Stock"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
@@ -439,11 +442,27 @@ L["uplp_ak_stock_pt3.printname"] = "Zenith-2 Stock"
 L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
 L["uplp_ak_stock_pt3.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
 
-L["uplp_ak_stock_evo.printname"] = "Evolution Stock"
-L["uplp_ak_stock_evo.compactname"] = "Evolution"
+L["uplp_ak_stock_evo.printname"] = "EVO Stock"
+L["uplp_ak_stock_evo.compactname"] = "EVO"
 L["uplp_ak_stock_evo.description"] = "Upgraded tactical stock for use on the AK-12.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
 
 L["uplp_ak_stock_ppk.printname"] = "PPK-20 Stock"
 L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
 -- L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nWhen \"Extended\": Multiplies benefits by an additional 20%, but multiplies downsides by 35%."
 L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nImproves recoil control when extended and improves weapon handling when folded."
+
+//////////////////// AR15
+L["uplp_weapon_ar15"] = "AR-15"
+L["uplp_weapon_ar15_desc"] = "The AR-15 is a lightweight, air-cooled, gas-operated, magazine-fed fully automatic rifle that has gained popularity for its modularity and versatility. It's widely used by military and law enforcement agencies, known for its accuracy and adaptability to various combat situations."
+
+//////////////////// Deagle
+L["uplp_weapon_deagle"] = "Deagle"
+L["uplp_weapon_deagle_desc"] = "The Deagle is a semi-automatic pistol known for its distinctive design and powerful chambering options, including .50 AE. It is recognized for its large frame, gas-operated mechanism, and reputation for being one of the most powerful handguns in the world."
+
+//////////////////// Mutant
+L["uplp_weapon_mutant"] = "Mutant"
+L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62x39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
+
+//////////////////// Molot
+L["uplp_weapon_molot"] = "Molot"
+L["uplp_weapon_molot_desc"] = "The Molot is a Russian-made semi-automatic shotgun renowned for its robust and reliable design. It is chambered for 12-gauge shells and is popular among shooters and collectors for its durability and performance. This version of the Molot was factory made for use in sporting competitions, which resulted in the inclusion of an ambidextrous charging handle."

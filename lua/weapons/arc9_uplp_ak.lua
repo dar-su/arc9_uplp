@@ -47,12 +47,13 @@ SWEP.Credits = {
 
 SWEP.StandardPresets = {
 "[FB Beryl]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUCm4d16R22fa4mB2i2cwj7CJu8XDVOt8n636yhjAhTTav1tDDyoB4vd+ctpmtesNNMCtYVhR2MEK45AaqfTtCHPOlPPvkckO3iFo11eEtSBQbgHUa18j+P6++XfWNXlkhf7jS+fnOxtdgMWyLziQ3dCoL1sCA=",
-"[AK-47]XQAAAQAOAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtQyXDt2tb27kPU2jzTxBTjrYRnBMXiE0lpw92Jzdx1JYBDqsiodGgI9nOuGO/IZgHG0o/s3bX4ToiyohPVIvGi2tA5vQZQyTAmBIJT0hDkJDiM9FITJktcZ7/chYupoYwwEPdNu+IjJgCqvgnXLC6wA=",
+"[AK-47]XQAAAQASAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCAoqlx+D16rlwSFHCB3X4QgBaWkDW7ZO2EtbWl/eiHUndJHLwwPB3WJI5AX+OYJdIyZInPx1ft4FZ/q4EqvvVCK4+26DgWIAOoKXAtvPKeNgL3gL+5uP/bzhVXiWtY+yuCzPdzNvWmjE44wPYNY",
 "[AK-74]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0U0N5nVl64+vr74h/wEGLDQ5U9Iv/UealLS+ojrv0cNfIa3d6wksEl25x+4EN9WF5I0n0cb5at0upRXD/l/t5m/R2kJHKtQ==",
 "[RPK-74]XQAAAQAcAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZbJnKynvrJU8QgUevVMriFsvl01r3RAR1fa2CNlfaf1QTMcnTE5qjrRN2Lo48HlkfZVx+G57QMcpjwjlTG7i/rg4jO3xrQLqotwnJJmQA=",
 "[PM md 63]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0URrcTYLjshsIy4gtvNVZPIcLUKVrHCwHWWi/CH4LagEksHsQwQnZVj6a96x97xDmsBUH4+us7DbiOHB5Ft/pRhXrwT/Hw8s7P2A=",
 "[RPK-74M]XQAAAQDyAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZaYXQITZAmJpVgQl19r3xbln7A4OL+1Jp2I2jJsB/idLOiz+EKn9w3GcvtcpDyrzxY8RcWY+lFIHysPoGAiotP4ojBXgA=",
 "[AK-9]XQAAAQAmAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIptDFa78UtfHBv23OZnbpcN8oUN1POCSFOZsC/AWUW94/XcPKIu0RNJCL8MkS5wcV3G7y7k2+UtJFurqNnWaDBUdsrCqo0O9Hwo8QEz6+47e/u9qySGAtDuaVL1bJKBR0xXBrK82THwM+Y+XgA",
+"[AKS-74U]XQAAAQAXAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spa/HCvjLEF18pEnhlyUplx5E87kB8J+Tej94m0uBdo54kXFAtVFVOn+OzTPThVRlZtBNamLjg/aBU21nmObi91swCEaETaUhcyib8S5mBkcAA=",
 }
 
 -- Weapon slot --
@@ -1169,5 +1170,10 @@ SWEP.Attachments = {
     --         vpos = Vector(0, 0.3, 15),
     --         vang = Angle(90, 0, 90),
     --     },
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("csgo_category_camo"),
+        -- Category = {"universal_camo"},
+        -- CosmeticOnly = true,
     -- },
 }
