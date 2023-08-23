@@ -95,10 +95,14 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_40rnd"
 end
 
+ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
 /// Positives
 ATT.ClipSizeOverride = 40
 
 /// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
 ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40")
@@ -124,10 +128,14 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_40rnd"
 end
 
+ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
 /// Positives
 ATT.ClipSizeOverride = 40
 
 /// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
 ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40_old")
@@ -157,11 +165,16 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_drum"
 end
 
+ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
 /// Positives
 ATT.ClipSizeOverride = 75
+ATT.RecoilMult = 0.95
 
 /// Negatives
-ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.15
+ATT.ReloadTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 
@@ -193,7 +206,7 @@ end
 
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -230,7 +243,7 @@ end
 
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -267,7 +280,7 @@ end
 
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -304,7 +317,7 @@ end
 
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -339,9 +352,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545_45rnd"
 end
 
+ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -352,6 +367,8 @@ ATT.ClipSizeOverride = 45
 ATT.DamageMaxAdd = -15
 ATT.DamageMinAdd = -5
 ATT.ReloadTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
@@ -379,9 +396,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545_60rnd"
 end
 
+ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -392,6 +411,8 @@ ATT.ClipSizeOverride = 60
 ATT.DamageMaxAdd = -15
 ATT.DamageMinAdd = -5
 ATT.ReloadTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_60")
 
@@ -421,9 +442,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_drum"
 end
 
+ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
 /// Positives
 ATT.RPMAdd = 50
-ATT.RecoilMult = 0.85
+ATT.RecoilMult = 0.7
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
@@ -431,9 +454,11 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 ATT.ClipSizeOverride = 75
 
 /// Negatives
-ATT.ReloadTimeMult = 1.15
+ATT.ReloadTimeMult = 1.1
 ATT.DamageMaxAdd = -15
 ATT.DamageMinAdd = -5
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 

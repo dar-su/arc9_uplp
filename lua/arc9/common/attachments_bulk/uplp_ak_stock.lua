@@ -14,10 +14,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "1"
 ATT.ModelOffset = Vector(-9.02, -3.55, 4.89)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.35
+ATT.VisualRecoilMultHipFire = 0.15
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.1
 
 ATT.ActivateElements = {"uplp_ak_stock_fold"}
 
@@ -39,10 +43,13 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "2"
 ATT.ModelOffset = Vector(-9.0, -3.55, 4.89)
 
--- balance pls
+/// Positives
 ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+ATT.RecoilAutoControlMult = 1.15
+ATT.VisualRecoilMultHipFire = 0.3
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
 
 ATT.ActivateElements = {"uplp_ak_stock_skele"}
 
@@ -64,11 +71,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "5"
 ATT.ModelOffset = Vector(-9, -3.55, 4.89)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.2
+ATT.VisualRecoilMultHipFire = 0.3
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.15
 
 ATT.ActivateElements = {"uplp_ak_stock_old"}
 
@@ -90,11 +100,15 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "a"
 ATT.ModelOffset = Vector(-8.85, -3.55, 4.86)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.65
+ATT.RecoilAutoControlMult = 1.4
+ATT.VisualRecoilMultHipFire = 0.1
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.25
+ATT.ReloadTimeMult = 1.05
 
 ATT.ActivateElements = {"uplp_ak_stock_rpk"}
 
@@ -116,11 +130,15 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "b"
 ATT.ModelOffset = Vector(-9.02, -3.55, 4.89)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.RecoilAutoControlMult = 1.25
+ATT.VisualRecoilMultHipFire = 0.15
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.2
+ATT.ReloadTimeMult = 1.025
 
 ATT.ActivateElements = {"uplp_ak_stock_rpk74"}
 
@@ -142,11 +160,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "d"
 ATT.ModelOffset = Vector(-8.935, -3.55, 4.85)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.75
+ATT.RecoilAutoControlMult = 1.3
+ATT.VisualRecoilMultHipFire = 0.25
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.2
 
 ATT.ActivateElements = {"uplp_ak_stock_wood"}
 
@@ -156,8 +177,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_wood")
 
 ATT = {}
 
-ATT.PrintName = "FB Beryl Stock"
-ATT.CompactName = "FB Beryl"
+ATT.PrintName = "Beryl Stock"
+ATT.CompactName = "Beryl"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -168,11 +189,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "e"
 ATT.ModelOffset = Vector(-9, -3.55, 4.875)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.9
+ATT.RecoilAutoControlMult = 1.1
+ATT.VisualRecoilMultHipFire = 0.3
+ATT.AimDownSightsTimeMult = 0.95
 
+/// Negatives
+ATT.SprintToFireTimeMult = 1.1
 
 ATT.ActivateElements = {"uplp_ak_stock_beryl"}
 
@@ -196,10 +220,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "0"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
--- balance pls
+/// Positives
 ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+ATT.RecoilAutoControlMult = 1.3
+ATT.VisualRecoilMultHipFire = 0.3
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
 
 ATT.ActivateElements = {"uplp_ak_stock_poly"}
 
@@ -285,22 +313,46 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
--- ATT.RecoilMult = 0.85
--- ATT.VisualRecoilMult = 0.85
--- ATT.RecoilAutoControlMult = 3
-
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 -- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.9, -3.55, 5)
+
+ATT.ActiveElements = {"uplp_ak_stock_underfold"}
+
+ATT.ExcludeElements= {
+"uplp_ak_mag_762_40",
+"uplp_ak_mag_762_40_old",
+"uplp_ak_mag_762_drum",
+"uplp_ak_mag_545_45",
+"uplp_ak_mag_545_60",
+"uplp_ak_mag_545_drum",
+-- "uplp_ak_mag_762_drum",
+-- "uplp_ak_mag_762_drum",
+}
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-15%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+30%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.visualrecoil") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-70%",
+}
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+5%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+5%",
+}
 
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         -- ActivateElements = {"uplp_ak_stock_underfold"},
 		ModelBodygroups = "3",
+		/// Positives
 		RecoilMult = 0.85,
-		VisualRecoilMult = 0.85,
-		RecoilAutoControlMult = 3,
+		RecoilAutoControlMult = 1.3,
+		VisualRecoilMultHipFire = 0.25,
+		/// Negatives
+		AimDownSightsTimeMult = 1.05,
+		SprintToFireTimeMult = 1.05,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -327,11 +379,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 -- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.2
+ATT.VisualRecoilMultHipFire = 0.3
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.15
 
 ATT.ToggleStats = {
     {
@@ -343,6 +398,13 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt1_ext"},
 		ModelBodygroups = "7",
+		/// Positives
+		RecoilMult = 0.7,
+		RecoilAutoControlMult = 1.3,
+		VisualRecoilMultHipFire = 0.2,
+		/// Negatives
+		AimDownSightsTimeMult = 1.15,
+		SprintToFireTimeMult = 1.2,
     },
 }
 
@@ -364,11 +426,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 -- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
--- balance pls
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+/// Positives
+ATT.RecoilMult = 0.9
+ATT.RecoilAutoControlMult = 1.15
+ATT.VisualRecoilMultHipFire = 0.45
+ATT.AimDownSightsTimeMult = 0.9
 
+/// Negatives
+ATT.SprintToFireTimeMult = 1.1
 
 ATT.ToggleStats = {
     {
@@ -380,6 +445,13 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt3_ext"},
 		ModelBodygroups = "9",
+		/// Positives
+		RecoilMult = 0.8,
+		RecoilAutoControlMult = 1.25,
+		VisualRecoilMultHipFire = 0.35,
+		AimDownSightsTimeMult = 0.8,
+		/// Negatives
+		SprintToFireTimeMult = 1.15,
     },
 }
 
@@ -395,16 +467,21 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_12"
+-- ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 -- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
--- balance pls
+/// Positives
 ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+ATT.RecoilAutoControlMult = 1.3
+ATT.VisualRecoilMultHipFire = 0.25
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.2
 
 ATT.ToggleStats = {
     {
@@ -416,6 +493,13 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_evo_ext"},
 		ModelBodygroups = "h",
+		/// Positives
+		RecoilMult = 0.75,
+		RecoilAutoControlMult = 1.4,
+		VisualRecoilMultHipFire = 0.15,
+		/// Negatives
+		AimDownSightsTimeMult = 1.2,
+		SprintToFireTimeMult = 1.25,
     },
 }
 
@@ -426,27 +510,42 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_evo")
 
 ATT = {}
 
-ATT.PrintName = "PPK Stock"
-ATT.CompactName = "PPK"
+ATT.PrintName = "PPK-20 Stock"
+ATT.CompactName = "PPK-20"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_smg"
+-- ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 -- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
-ATT.RecoilMult = 0.85
-ATT.VisualRecoilMult = 0.85
-ATT.RecoilAutoControlMult = 3
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-20%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+25%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.visualrecoil") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-60%",
+}
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+5%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+15%",
+}
 
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_ppk"},
 		ModelBodygroups = "i",
+		/// Positives
+		RecoilMult = 0.8,
+		RecoilAutoControlMult = 1.25,
+		VisualRecoilMultHipFire = 0.4,
+		/// Negatives
+		AimDownSightsTimeMult = 1.05,
+		SprintToFireTimeMult = 1.15,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),

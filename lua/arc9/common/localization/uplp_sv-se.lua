@@ -423,19 +423,19 @@ L["uplp_ak_stock_tube.description"] = "Bufferrör montering kompatibel med AK-ge
 
 L["uplp_ak_stock_underfold.printname"] = "AKMS Undervikbar Kolv"
 L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"
-L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKM.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt.\nInte kompatibel med 40-skott eller högre magasin. Tillåter också inte användningen av anpassade framgrepp på vissa handskydd."
+L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKMS.\nInte kompatibel med 40-skott eller högre magasin. Tillåter också inte användningen av anpassade framgrepp på vissa handskydd."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith-Kolv"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
-L["uplp_ak_stock_pt1.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
+L["uplp_ak_stock_pt1.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Lägger till 10% till alla förmåner men lägger också till 5% till alla nackdelar."
 
 L["uplp_ak_stock_pt3.printname"] = "Zenith-2-Stock"
 L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
-L["uplp_ak_stock_pt3.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
+L["uplp_ak_stock_pt3.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Lägger till 10% till alla förmåner men lägger också till 5% till alla nackdelar."
 
 L["uplp_ak_stock_evo.printname"] = "EVO-Kolv"
 L["uplp_ak_stock_evo.compactname"] = "EVO"
-L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning av AK-12:an.\nOm den är \"Förlängd\": Multiplicerar förmåner med 10% till, men multiplicerar nackdelar med 20%."
+L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning av AK-12:an.\nOm den är \"Förlängd\": Lägger till 10% till alla förmåner men lägger också till 5% till alla nackdelar."
 
 L["uplp_ak_stock_ppk.printname"] = "PPK-20-Kolv"
 L["uplp_ak_stock_ppk.compactname"] = "PPK-20"

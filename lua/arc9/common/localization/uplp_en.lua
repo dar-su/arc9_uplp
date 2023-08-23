@@ -432,19 +432,19 @@ L["uplp_ak_stock_tube.description"] = "Buffer tube assembly compatible with AK r
 
 L["uplp_ak_stock_underfold.printname"] = "AKMS Underfolding Stock"
 L["uplp_ak_stock_underfold.compactname"] = "Underfolding"
-L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKMS.\nImproves recoil control when extended and improves weapon handling when folded.\nNot compatible with 40-round or above magazines. Also disables the use of custom foregrips on certain handguards."
+L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKMS.\nNot compatible with 40-round or above magazines. Also disables the use of custom foregrips on certain handguards."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith Stock"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
-L["uplp_ak_stock_pt1.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
+L["uplp_ak_stock_pt1.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 10% to all benefits but also adds 5% to all downsides."
 
 L["uplp_ak_stock_pt3.printname"] = "Zenith-2 Stock"
 L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
-L["uplp_ak_stock_pt3.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
+L["uplp_ak_stock_pt3.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 10% to all benefits but also adds 5% to all downsides."
 
 L["uplp_ak_stock_evo.printname"] = "EVO Stock"
 L["uplp_ak_stock_evo.compactname"] = "EVO"
-L["uplp_ak_stock_evo.description"] = "Upgraded tactical stock for use on the AK-12.\nWhen \"Extended\": Multiplies benefits by an additional 10%, but multiplies downsides by 20%."
+L["uplp_ak_stock_evo.description"] = "Upgraded tactical stock for use on the AK-12.\nWhen \"Extended\": Adds 10% to all benefits but also adds 5% to all downsides."
 
 L["uplp_ak_stock_ppk.printname"] = "PPK-20 Stock"
 L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
