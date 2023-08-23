@@ -93,17 +93,17 @@ SWEP.ClipSize = 30 -- Self-explanatory.
 
 -- Recoil --
 
-SWEP.Recoil = 3
+SWEP.Recoil = 2.5
 SWEP.RecoilUp = 0.7
 SWEP.RecoilSide = 1.15
-SWEP.RecoilRandomUp = 0.65
+SWEP.RecoilRandomUp = 0.9
 SWEP.RecoilRandomSide = 0.75
 -- SWEP.RecoilAutoControl = 4
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
 
-SWEP.RecoilAutoControl = 1
+SWEP.RecoilAutoControl = 1.25
 
 SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
@@ -116,12 +116,15 @@ SWEP.PhysicalVisualRecoil = false
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
-SWEP.VisualRecoilSide = 0.015 -- Horizontal tilt
+SWEP.VisualRecoilUp = 0.2 -- Vertical tilt
+SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 30 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
+
+SWEP.VisualRecoilPositionBumpUp = .5
+SWEP.VisualRecoilPositionBumpUpSights = .1
 
 SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 5
@@ -136,7 +139,7 @@ SWEP.RPM = 600
 SWEP.Num = 1
 SWEP.Firemodes = {
     { Mode = -1, PoseParam = 1 }, 
-    { Mode = 1, RecoilMult = 0.75, RecoilAutoControlMult = 2.5, RPM = 450, PoseParam = 2 }
+    { Mode = 1, RPM = 450, PoseParam = 2 }
 }
 SWEP.ShootPitch = 90
 SWEP.ShootVol = 120
@@ -173,7 +176,7 @@ SWEP.SpeedMult = 0.9
 SWEP.SpeedMultSights = 0.65
 
 SWEP.AimDownSightsTime = 0.5
-SWEP.SprintToFireTime = 0.5
+SWEP.SprintToFireTime = 0.35
 
 -- SWEP.AimDownSightsTimeMultRecoil = 2
 
@@ -361,7 +364,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_762",
 		MinProgress= 0.6,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -382,7 +385,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty_762",
 		MinProgress= 0.7,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -407,7 +410,7 @@ SWEP.Animations = {
     ["reload_40rnd"] = {
         Source = "reload_762long",
 		MinProgress= 0.55,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -428,7 +431,7 @@ SWEP.Animations = {
     ["reload_empty_40rnd"] = {
         Source = "reload_empty_762long",
 		MinProgress= 0.725,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -453,7 +456,7 @@ SWEP.Animations = {
     ["reload_545"] = {
         Source = "reload_545",
 		MinProgress= 0.6,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -474,7 +477,7 @@ SWEP.Animations = {
     ["reload_empty_545"] = {
         Source = "reload_empty_545",
 		MinProgress= 0.7,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -499,7 +502,7 @@ SWEP.Animations = {
     ["reload_545_45rnd"] = {
         Source = "reload_545long",
 		MinProgress= 0.6,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -520,7 +523,7 @@ SWEP.Animations = {
     ["reload_empty_545_45rnd"] = {
         Source = "reload_empty_545long",
 		MinProgress= 0.75,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -545,7 +548,7 @@ SWEP.Animations = {
     ["reload_545_60rnd"] = {
         Source = "reload_545fat",
 		MinProgress= 0.575,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -566,7 +569,7 @@ SWEP.Animations = {
     ["reload_empty_545_60rnd"] = {
         Source = "reload_empty_545fat",
 		MinProgress= 0.725,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -591,7 +594,7 @@ SWEP.Animations = {
     ["reload_556"] = {
         Source = "reload_556",
 		MinProgress= 0.6,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -612,7 +615,7 @@ SWEP.Animations = {
     ["reload_empty_556"] = {
         Source = "reload_empty_556",
 		MinProgress= 0.675,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -637,7 +640,7 @@ SWEP.Animations = {
     ["reload_drum"] = {
         Source = "reload_drum",
 		MinProgress= 0.625,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
@@ -658,7 +661,7 @@ SWEP.Animations = {
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
 		MinProgress= 0.775,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
@@ -683,7 +686,7 @@ SWEP.Animations = {
     ["reload_308"] = {
         Source = "reload_308",
 		MinProgress= 0.625,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
@@ -704,7 +707,7 @@ SWEP.Animations = {
     ["reload_empty_308"] = {
         Source = "reload_empty_308",
 		MinProgress= 0.7,
-		Mult = 1.15,
+		-- Mult = 1.15,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
