@@ -12,6 +12,8 @@ $bodygroup "grip" { // 4
 	studio "grip beryl.smd" // 6
 	studio "grip 12.smd" // 7
 	studio "grip 12 evo.smd" // 8
+
+	studio "grip vepr.smd" // 9
 }  
 
 $sequence "idle" {

@@ -14,18 +14,26 @@ $bodygroup "stock" {
 	studio "stock pt1 extended.smd" // 7
 	studio "stock pt3.smd" // 8
 	studio "stock pt3 extended.smd" // 9
-	studio "stock rpk.smd" // 10
-	studio "stock rpk74m.smd" // 11
-	studio "stock tube.smd" // 12
-	studio "stock wood.smd" // 13
-	studio "stock beryl.smd" // 14
-	studio "stock 12.smd" // 15
-	studio "stock 12 evo.smd" // 16
-	studio "stock 12 evo extended.smd" // 17
-	studio "stock ppk.smd" // 18
-	studio "stock ppk folded.smd" // 19
-	blank // 20
-}   
+	studio "stock rpk.smd" // 10 a 
+	studio "stock rpk74m.smd" // 11  b
+	studio "stock tube.smd" // 12 c
+	studio "stock wood.smd" // 13 d 
+	studio "stock beryl.smd" // 14 e 
+	studio "stock 12.smd" // 15 f
+	studio "stock 12 evo.smd" // 16 g
+	studio "stock 12 evo extended.smd" // 17 h
+	studio "stock ppk.smd" // 18 i 
+	studio "stock ppk folded.smd" // 19 j
+
+	studio "stock vepr.smd" // 20 k
+	studio "stock pt1 VEPR.smd" // 21 l
+	studio "stock pt1 extended VEPR.smd" // 22 m
+	studio "stock pt3 VEPR.smd" // 23 n
+	studio "stock pt3 extended VEPR.smd" // 24 o
+	studio "stock rpk74m VEPR.smd" // 25 p
+	studio "stock skelet VEPR.smd" // 26 q
+}
+
 $sequence "idle" {
 	"stock std.smd"
 }
