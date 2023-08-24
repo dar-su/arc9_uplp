@@ -174,6 +174,9 @@ SWEP.CrouchAng = Angle(0, 0, -15)
 SWEP.RestPos = Vector(1.5, 2, -5)
 SWEP.RestAng = Angle(-5, 40, -7)
 
+SWEP.PeekPos = Vector(-0.7, 1, -3)
+SWEP.PeekAng = Angle(0, 0.4, -33)
+
 SWEP.MirrorVMWM = true
 
 SWEP.TPIKParentToSpine4 = true  

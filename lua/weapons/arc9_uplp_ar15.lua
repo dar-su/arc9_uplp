@@ -25,8 +25,8 @@ SWEP.PrintName = "AR-15"
 
 -- Trivia --
 
-SWEP.Class = "Carbine Rifle"
-SWEP.SubCategory = SWEP.Class
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar")
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
 
 SWEP.Trivia = {
     Manufacturer = "U.S. Ordnance",
@@ -159,6 +159,7 @@ SWEP.IronSights = {
 
 SWEP.ActivePos = Vector(-0.2, -1.0, 0.5)
 SWEP.ActiveAng = Angle(0, 0, -1)
+SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
 
 SWEP.CustomizePos = Vector(14, 30, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
@@ -171,6 +172,9 @@ SWEP.CrouchAng = Angle(0, 0, -5)
 
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
+
+SWEP.PeekPos = Vector(-1.5, 4, -3)
+SWEP.PeekAng = Angle(0, 0.4, -40)
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {

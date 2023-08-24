@@ -42,7 +42,7 @@ $bodygroup "dc" { // 3
 // 	studio "grip 12 evo.smd" // 8
 // }   
 
-$bodygroup "hg" { // 5
+$bodygroup "hg" { // 4
 	studio "hgp std.smd" // 0
 	studio "hgp 100.smd" // 1
 	studio "hgp old.smd" // 2
@@ -78,19 +78,19 @@ $bodygroup "hg" { // 5
 // 	blank // 20
 // }   
 
-$bodygroup "rnd" { // 7
+$bodygroup "rnd" { // 5
 	studio "rnd 919.smd" // 0
 	studio "rnd 919 bizon.smd" // 1
 }   
 
-$bodygroup "mag" { // 8
+$bodygroup "mag" { // 6
 	studio "mag 919.smd" // 0
 	studio "mag 919 tac.smd" // 1
 	studio "bizon mag.smd" // 2
 	studio "bizon mag old.smd" // 3
 }   
 
-$bodygroup "nmount" { // 9
+$bodygroup "nmount" { // 7
 	blank // 0
 	studio "nmount.smd" // 1
 	studio "nmount compact.smd" // 2

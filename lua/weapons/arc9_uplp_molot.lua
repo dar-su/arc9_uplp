@@ -25,8 +25,8 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_molot")
 
 -- Trivia --
 
-SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sg")
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sg")
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sg") or "Shotgun"
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sg") or "Shotguns"
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
@@ -127,10 +127,10 @@ SWEP.VisualRecoilPositionBumpUpSights = -0.05
 SWEP.VisualRecoilPositionBumpUp = -0.1
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 50
+SWEP.VisualRecoilUpHipFire = 20
 SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 22
+SWEP.VisualRecoilPunchHipFire = 12
 SWEP.VisualRecoilDampingConstHipFire = 45
 
 -- Firerate / Firemodes --
@@ -238,8 +238,8 @@ SWEP.CrouchAng = Angle(0, 0, -5)
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
 
--- SWEP.PeekPos = Vector(-1.5, 0, -1)
--- SWEP.PeekAng = Angle(0, 0, -30)
+SWEP.PeekPos = Vector(-1.5, 4, -3)
+SWEP.PeekAng = Angle(0, 0.4, -40)
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {

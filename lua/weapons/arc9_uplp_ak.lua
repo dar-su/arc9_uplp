@@ -239,8 +239,8 @@ SWEP.CrouchAng = Angle(0, 0, -5)
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
 
--- SWEP.PeekPos = Vector(-1.5, 0, -1)
--- SWEP.PeekAng = Angle(0, 0, -30)
+SWEP.PeekPos = Vector(-1.5, 4, -3)
+SWEP.PeekAng = Angle(0, 0.4, -40)
 
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {

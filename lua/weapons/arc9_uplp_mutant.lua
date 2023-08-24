@@ -26,8 +26,8 @@ SWEP.PrintName = "Mk47 Mutant"
 
 -- Trivia --
 
-SWEP.Class = "Assault Rifle"
-SWEP.SubCategory = SWEP.Class
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar")
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
 
 SWEP.Trivia = {
     Manufacturer = "CMMG Inc.",

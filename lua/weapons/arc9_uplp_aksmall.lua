@@ -7,8 +7,8 @@ SWEP.UseHands = true
 -- Muzzle and shell effects --
 
 SWEP.MuzzleParticle = "muzzleflash_smg" -- Iron sights are much easier to use this way
-SWEP.ShellModel = "models/shells/shell_9mm.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
+SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 90
 
 SWEP.MuzzleEffectQCA = 1
@@ -21,12 +21,12 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "Compact AK-103" 
+SWEP.PrintName = "AK SMG" 
 
 -- Trivia --
 
-SWEP.Class = "Assault Rifle"
-SWEP.SubCategory = SWEP.Class
+SWEP.Class = "Small Machine Gun"
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
 
 SWEP.Trivia = {
     Manufacturer = "Izhmash",
@@ -172,6 +172,9 @@ SWEP.CrouchAng = Angle(0, 0, -5)
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
 
+SWEP.PeekPos = Vector(-1.5, 4, -3)
+SWEP.PeekAng = Angle(0, 0.4, -40)
+
 SWEP.MirrorVMWM = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-3.5, 3, -8),
@@ -205,7 +208,7 @@ SWEP.DistantShootSound = {pathAK .. "fire-dist-01.ogg", pathAK .. "fire-dist-02.
 
 -- Bodygroups --
 
-SWEP.DefaultBodygroups = "000000k00000000"
+SWEP.DefaultBodygroups = "00000k00000000"
 
 SWEP.BulletBones = {
     [1] = "bullet1",    [2] = "bullet2",    [3] = "bullet3",    [4] = "bullet4"
@@ -471,9 +474,9 @@ SWEP.AttachmentElements = {
 
     --MAGS
 
-    ["uplp_aksmal_mag_tac"] = { Bodygroups = { { 8, 1 } } },
-    ["uplp_aksmal_mag_bizon"] = { Bodygroups = { { 8, 2 }, { 0, 2 }, { 7, 1 }, { 5, 8 }, { 3, 2 }, { 2, 5 } } },
-    ["uplp_aksmal_mag_bizon_old"] = { Bodygroups = { { 8, 3 }, { 0, 2 }, { 7, 1 }, { 5, 8 }, { 3, 2 }, { 2, 5 } } },
+    ["uplp_aksmal_mag_tac"] = { Bodygroups = { { 6, 1 } } },
+    ["uplp_aksmal_mag_bizon"] = { Bodygroups = { { 6, 2 }, { 0, 2 }, { 5, 1 }, { 4, 8 }, { 3, 2 }, { 2, 5 } } },
+    ["uplp_aksmal_mag_bizon_old"] = { Bodygroups = { { 6, 3 }, { 0, 2 }, { 5, 1 }, { 4, 8 }, { 3, 2 }, { 2, 5 } } },
 
     --BARRELS
 
@@ -482,54 +485,54 @@ SWEP.AttachmentElements = {
 
     --handguards
 
-    ["uplp_ak_hg_100"] =   { Bodygroups = { { 5, 1 } } },
-    ["uplp_ak_hg_old"] =   { Bodygroups = { { 5, 2 } } },
-    ["uplp_ak_hg_rpk"] =   { Bodygroups = { { 5, 3 } } },
-    ["uplp_ak_hg_beryl"] = { Bodygroups = { { 5, 4 } } },
-    ["uplp_ak_hg_tac"] =   { Bodygroups = { { 5, 5 } } },
-    ["uplp_ak_hg_wood"] =  { Bodygroups = { { 5, 6 } } },
-    ["uplp_ak_hg_dong"] =  { Bodygroups = { { 5, 7 } } },
-    ["uplp_ak_hg_zen_c"] = { Bodygroups = { { 5, 8 } } },
+    ["uplp_ak_hg_100"] =   { Bodygroups = { { 4, 1 } } },
+    ["uplp_ak_hg_old"] =   { Bodygroups = { { 4, 2 } } },
+    ["uplp_ak_hg_rpk"] =   { Bodygroups = { { 4, 3 } } },
+    ["uplp_ak_hg_beryl"] = { Bodygroups = { { 4, 4 } } },
+    ["uplp_ak_hg_tac"] =   { Bodygroups = { { 4, 5 } } },
+    ["uplp_ak_hg_wood"] =  { Bodygroups = { { 4, 6 } } },
+    ["uplp_ak_hg_dong"] =  { Bodygroups = { { 4, 7 } } },
+    ["uplp_ak_hg_zen_c"] = { Bodygroups = { { 4, 8 } } },
 
     --STOCKS
 
-    ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
-    ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
-    ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
-    ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
-    ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
-    ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
-    ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
-    ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
-    ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
-    ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
+    -- ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
+    -- ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
+    -- ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
+    -- ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
+    -- ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
+    -- ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
+    -- ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
+    -- ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
+    -- ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
+    -- ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
 
-    ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
-    ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
+    -- ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
+    -- ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
 
-    ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
-    ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
+    -- ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
+    -- ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
     
-    ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
-    ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
+    -- ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
+    -- ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
 
-    ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
-    ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
+    -- ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
+    -- ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
 
-    ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
-    ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
+    -- ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
+    -- ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
 
     --GRIPS
 
-    ["uplp_ak_grip_bak"] =         { Bodygroups = { { 4, 1 } } },
-    ["uplp_ak_grip_old"] =         { Bodygroups = { { 4, 2 } } },
-    ["uplp_ak_grip_tac"] =         { Bodygroups = { { 4, 3 } } },
-    ["uplp_ak_grip_tapco"] =       { Bodygroups = { { 4, 4 } } },
-    ["uplp_ak_grip_vityaz"] =      { Bodygroups = { { 4, 5 } } },
-    ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
-    ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
-    ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
+    -- ["uplp_ak_grip_bak"] =         { Bodygroups = { { 4, 1 } } },
+    -- ["uplp_ak_grip_old"] =         { Bodygroups = { { 4, 2 } } },
+    -- ["uplp_ak_grip_tac"] =         { Bodygroups = { { 4, 3 } } },
+    -- ["uplp_ak_grip_tapco"] =       { Bodygroups = { { 4, 4 } } },
+    -- ["uplp_ak_grip_vityaz"] =      { Bodygroups = { { 4, 5 } } },
+    -- ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
+    -- ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
+    -- ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
 
 
     --DUST COVERS
