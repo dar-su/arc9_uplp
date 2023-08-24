@@ -80,10 +80,16 @@ L["uplp_category_handguard"] = "Handguard"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_grip"] = "Foregrip"
 
+//////////////////// Folder Names
+L["uplp_folder_suppressor"] = "Suppressors"
+
 //////////////////// Toggle Stats Names
 L["uplp_togglestat_default"] = "Default"
 L["uplp_togglestat_extended"] = "Extended"
 L["uplp_togglestat_folded"] = "Folded"
+
+//////////////////// Stat
+L["uplp_stat_suppressed"] = "Suppressed"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments

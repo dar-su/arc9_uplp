@@ -74,6 +74,9 @@ ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "3"
 ATT.ModelOffset = Vector(-10.925, -3.55, 7.7)
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
+
 ATT.ActivateElements = {"uplp_ak_grip_tac"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_tac")
@@ -93,6 +96,9 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "4"
 ATT.ModelOffset = Vector(-10.925, -3.55, 7.8)
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
 
 ATT.ActivateElements = {"uplp_ak_grip_tapco"}
 
@@ -122,8 +128,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_grip_vityaz")
 
 ATT = {}
 
-ATT.PrintName = "FB Beryl Pistol Grip"
-ATT.CompactName = "FB Beryl"
+ATT.PrintName = "Beryl Pistol Grip"
+ATT.CompactName = "Beryl"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -142,8 +148,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_grip_beryl")
 
 ATT = {}
 
-ATT.PrintName = "AK 12 Pistol Grip"
-ATT.CompactName = "AK12"
+ATT.PrintName = "AK-12 Pistol Grip"
+ATT.CompactName = "AK-12"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -173,6 +179,14 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "8"
 ATT.ModelOffset = Vector(-11, -3.55, 7.85)
+
+/// Positives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.1
+
+/// Negatives
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.9
 
 ATT.ActivateElements = {"uplp_ak_grip_12evo"}
 

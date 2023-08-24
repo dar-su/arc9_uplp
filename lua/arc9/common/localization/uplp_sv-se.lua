@@ -80,10 +80,16 @@ L["uplp_category_handguard"] = "Handgrepp"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_grip"] = "Framgrepp"
 
+//////////////////// Folder Names
+L["uplp_folder_suppressor"] = "Ljuddämpare"
+
 //////////////////// Toggle Stats Names
 L["uplp_togglestat_default"] = "Standard"
 L["uplp_togglestat_extended"] = "Förlängd"
 L["uplp_togglestat_folded"] = "Invikt"
+
+//////////////////// Stat
+L["uplp_stat_suppressed"] = "Ljuddämpad"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments

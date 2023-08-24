@@ -14,6 +14,14 @@ ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 ATT.ModelBodygroups = "0"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
 
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.05
+ATT.RecoilRandomSideMult = 0.6
+ATT.SpreadAddRecoil = -0.01
+
+/// Negatives
+
 ATT.ActivateElements = {"uplp_ak_mz_std"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_std")
@@ -32,6 +40,14 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 ATT.ModelBodygroups = "1"
+
+/// Positives
+ATT.RecoilMult = 0.85
+ATT.RecoilAutoControlMult = 1.05
+ATT.VisualRecoilMult = 0.85
+ATT.SpreadAddRecoil = -0.01
+
+/// Negatives
 
 ATT.ActivateElements = {"uplp_ak_mz_akm"}
 
@@ -53,6 +69,13 @@ ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 ATT.ModelBodygroups = "2"
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
+/// Positives
+ATT.RecoilMult = 0.9
+ATT.RecoilRandomSideMult = 0.85
+ATT.SpreadAddRecoil = -0.015
+
+/// Negatives
+
 ATT.ActivateElements = {"uplp_ak_mz_compact"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_compact")
@@ -72,6 +95,10 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 ATT.ModelBodygroups = "3"
 ATT.ModelOffset = Vector(-0.215, 0, 0)
+
+/// Positives
+ATT.RecoilMult = 0.85
+ATT.SpreadAddRecoil = -0.01
 
 ATT.ActivateElements = {"uplp_ak_mz_rpk"}
 
@@ -189,7 +216,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = "Suppressors"
+ATT.Folder = ARC9:GetPhrase("uplp_folder_suppressor")
 
 ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 ATT.ModelBodygroups = "9"
@@ -199,6 +226,17 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.SpreadAddRecoil = -0.01
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
+}
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
 
 ATT.ActivateElements = {"uplp_ak_mz_silencer"}
 

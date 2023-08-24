@@ -48,6 +48,14 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_comp"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.9
+
+/// Negatives
+ATT.RangeMaxMult = 0.8
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -116,6 +124,16 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk"}
 
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RangeMaxMult = 1.1
+ATT.RangeMinMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -150,6 +168,14 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_109","uplp_ak_dc_no"}
 
+/// Positives
+ATT.RangeMaxMult = 1.05
+ATT.RangeMinMult = 1.1
+ATT.PhysBulletMuzzleVelocityMult = 1.05
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -175,6 +201,16 @@ ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_su","uplp_ak_rearsight"}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.75
+ATT.SprintToFireTimeMult = 0.8
+
+/// Negatives
+ATT.RecoilMult = 1.15
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.75
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ATT.Attachments = {
     {
