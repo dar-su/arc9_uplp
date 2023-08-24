@@ -45,7 +45,10 @@ $bodygroup "hg" { // 3
 	studio "hg cool2 mini.smd" // 18 i 
 	studio "hg cool2 micro.smd" // 19 j
 
-	blank  // 20 k
+	studio "hg mini.smd" // 20 k
+	studio "hg micro.smd" // 21 l
+
+	blank  // 22 m
 }
 
 $bodygroup "underhg" { // 4

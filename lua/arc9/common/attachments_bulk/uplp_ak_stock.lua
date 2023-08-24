@@ -273,7 +273,7 @@ ATT.Attachments = {
     {
         PrintName = "Stock",
         Category = {"uplp_ar15_stock"},
-        Pos = Vector(1.0, 0, 0.07),
+        Pos = Vector(1.0, 0.045, 0.07),
         Ang = Angle(0, 0, 0),
     },
 }

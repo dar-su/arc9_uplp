@@ -10,8 +10,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "0"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "0"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_std.mdl"
+ATT.MuzzleDevice = true 
+
 ATT.ModelOffset = Vector(-0.125, 0, 0)
 
 /// Positives
@@ -38,8 +42,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "1"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "1"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_akm.mdl"
+-- ATT.MuzzleDevice = true 
 
 /// Positives
 ATT.RecoilMult = 0.85
@@ -65,8 +72,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "2"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "2"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_compact.mdl"
+ATT.MuzzleDevice = true
+
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 /// Positives
@@ -92,8 +103,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "3"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "3"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_rpk.mdl"
+-- ATT.MuzzleDevice = true
+
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 /// Positives
@@ -116,8 +131,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "4"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "4"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_vityaz.mdl"
+-- ATT.MuzzleDevice = true
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_vityaz"}
@@ -136,8 +154,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "5"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "5"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_bizon.mdl"
+-- ATT.MuzzleDevice = true
 -- ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_bizon"}
@@ -156,8 +177,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "6"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "6"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_12.mdl"
+ATT.MuzzleDevice = true
+
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_12"}
@@ -176,8 +201,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "7"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "7"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_19.mdl"
+ATT.MuzzleDevice = true
+
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_19"}
@@ -196,8 +225,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "8"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "8"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_rpk16.mdl"
+ATT.MuzzleDevice = true
+
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_rpk16"}
@@ -216,10 +249,14 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.Folder = ARC9:GetPhrase("uplp_folder_suppressor")
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_suppressor")
 
-ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
-ATT.ModelBodygroups = "9"
+-- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
+-- ATT.ModelBodygroups = "9"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_silencer.mdl"
+ATT.MuzzleDevice = true
+
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.Silencer = true
