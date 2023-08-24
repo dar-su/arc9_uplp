@@ -356,6 +356,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+		MinProgress = 0.5,
         EventTable = {
             {s = pathURBANNNNcommon .. "raise.ogg", t = 0.05},
         },

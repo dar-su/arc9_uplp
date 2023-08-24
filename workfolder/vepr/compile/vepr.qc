@@ -84,7 +84,7 @@ $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 $attachment "2" "bolt" 0 0 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "fakemag" 0 0 0 rotate -90 0 0
-// $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
+$attachment "5" "mag" 0 0 0 rotate -90 0 0
  
 $surfaceprop "default"
  
@@ -95,6 +95,30 @@ $illumposition 0 0 0
 $bbox 0 0 0 0 0 0
  
 $cbox 0 0 0 0 0 0
+
+
+$bonemerge "round1"
+$bonemerge "round2"
+$bonemerge "round3"
+$bonemerge "round4"
+$bonemerge "round5"
+$bonemerge "round6"
+$bonemerge "round7"
+$bonemerge "round8"
+$bonemerge "round9"
+$bonemerge "round10"
+$bonemerge "round11"
+$bonemerge "round12"
+$bonemerge "round13"
+$bonemerge "round14"
+$bonemerge "round15"
+$bonemerge "round16"
+$bonemerge "round17"
+$bonemerge "round18"
+$bonemerge "round19"
+$bonemerge "fakerounds"
+$bonemerge "fakemag"
+$bonemerge "chamberround"
 
 $poseparameter "sights" 0 1 loop 0
 

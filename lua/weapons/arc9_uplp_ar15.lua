@@ -280,6 +280,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+		MinProgress = 0.5,
         EventTable = {
             { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -296,6 +297,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
+		MinProgress = 0.5,
         EventTable = {
             { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },

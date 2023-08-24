@@ -14,8 +14,6 @@ ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "0"
 ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
 
-ATT.ActivateElements = {"uplp_ak_grip_std"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_std")
 
 -------------------------------------------
@@ -34,8 +32,6 @@ ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "1"
 ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
 
-ATT.ActivateElements = {"uplp_ak_grip_bak"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_bak")
 
 -------------------------------------------
@@ -53,8 +49,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "2"
 ATT.ModelOffset = Vector(-11.015, -3.55, 8)
-
-ATT.ActivateElements = {"uplp_ak_grip_old"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_old")
 
@@ -77,8 +71,6 @@ ATT.ModelOffset = Vector(-10.925, -3.55, 7.7)
 /// Positives
 ATT.AimDownSightsTimeMult = 0.95
 
-ATT.ActivateElements = {"uplp_ak_grip_tac"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_tac")
 
 -------------------------------------------
@@ -100,8 +92,6 @@ ATT.ModelOffset = Vector(-10.925, -3.55, 7.8)
 /// Positives
 ATT.AimDownSightsTimeMult = 0.95
 
-ATT.ActivateElements = {"uplp_ak_grip_tapco"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_tapco")
 
 -------------------------------------------
@@ -119,8 +109,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "5"
 ATT.ModelOffset = Vector(-10.935, -3.55, 7.85)
-
-ATT.ActivateElements = {"uplp_ak_grip_vityaz"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_vityaz")
 
@@ -140,9 +128,25 @@ ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "6"
 ATT.ModelOffset = Vector(-11, -3.55, 7.85)
 
-ATT.ActivateElements = {"uplp_ak_grip_beryl"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_beryl")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "molot Pistol Grip"
+ATT.CompactName = "molot"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ak_grip"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
+ATT.ModelBodygroups = "9"
+ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
+
+ARC9.LoadAttachment(ATT, "uplp_ak_grip_molot")
 
 -------------------------------------------
 
@@ -159,8 +163,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "7"
 ATT.ModelOffset = Vector(-10.95, -3.55, 7.85)
-
-ATT.ActivateElements = {"uplp_ak_grip_12"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_12")
 
@@ -187,8 +189,6 @@ ATT.SprintToFireTimeMult = 1.1
 /// Negatives
 ATT.RecoilMult = 1.05
 ATT.RecoilAutoControlMult = 0.9
-
-ATT.ActivateElements = {"uplp_ak_grip_12evo"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_12evo")
 

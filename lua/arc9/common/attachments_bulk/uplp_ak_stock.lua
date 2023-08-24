@@ -23,8 +23,6 @@ ATT.VisualRecoilMultHipFire = 0.15
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.ActivateElements = {"uplp_ak_stock_fold"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_fold")
 
 -------------------------------------------
@@ -51,7 +49,11 @@ ATT.VisualRecoilMultHipFire = 0.3
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.05
 
-ATT.ActivateElements = {"uplp_ak_stock_skele"}
+ATT.DrawFunc = function(swep, model)
+    if swep:GetClass() == "arc9_uplp_molot" then
+        model:SetBodygroup(0, 26)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_skele")
 
@@ -79,8 +81,6 @@ ATT.VisualRecoilMultHipFire = 0.3
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
-
-ATT.ActivateElements = {"uplp_ak_stock_old"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_old")
 
@@ -110,8 +110,6 @@ ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.25
 ATT.ReloadTimeMult = 1.05
 
-ATT.ActivateElements = {"uplp_ak_stock_rpk"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_rpk")
 
 -------------------------------------------
@@ -140,7 +138,11 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.2
 ATT.ReloadTimeMult = 1.025
 
-ATT.ActivateElements = {"uplp_ak_stock_rpk74"}
+ATT.DrawFunc = function(swep, model)
+    if swep:GetClass() == "arc9_uplp_molot" then
+        model:SetBodygroup(0, 25)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_rpk74")
 
@@ -169,8 +171,6 @@ ATT.VisualRecoilMultHipFire = 0.25
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.2
 
-ATT.ActivateElements = {"uplp_ak_stock_wood"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_wood")
 
 -------------------------------------------
@@ -197,8 +197,6 @@ ATT.AimDownSightsTimeMult = 0.95
 
 /// Negatives
 ATT.SprintToFireTimeMult = 1.1
-
-ATT.ActivateElements = {"uplp_ak_stock_beryl"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_beryl")
 
@@ -228,8 +226,6 @@ ATT.VisualRecoilMultHipFire = 0.3
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
-
-ATT.ActivateElements = {"uplp_ak_stock_poly"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_poly")
 
@@ -263,8 +259,6 @@ ATT.ModelOffset = Vector(-9, -3.55, 4.9)
 
 -- ATT.Folder = "Buffer Tube"
 
-ATT.ActivateElements = {"uplp_ak_stock_tube12"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_tube12")
 
 -------------------------------------------
@@ -294,9 +288,33 @@ ATT.ModelOffset = Vector(-8.9, -3.55, 4.85)
 
 -- ATT.Folder = "Buffer Tube"
 
-ATT.ActivateElements = {"uplp_ak_stock_tube"}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_tube")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "molot"
+ATT.CompactName = "molot"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ak_stock"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "k"
+ATT.ModelOffset = Vector(-9.0, -3.55, 4.89)
+
+/// Positives
+ATT.RecoilMult = 0.85
+ATT.RecoilAutoControlMult = 1.15
+ATT.VisualRecoilMultHipFire = 0.3
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_ak_stock_molot")
 
 -------------------------------------------
 
@@ -398,6 +416,7 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt1_ext"},
 		ModelBodygroups = "7",
+        UPLPFoldStock = true,
 		/// Positives
 		RecoilMult = 0.7,
 		RecoilAutoControlMult = 1.3,
@@ -407,6 +426,12 @@ ATT.ToggleStats = {
 		SprintToFireTimeMult = 1.2,
     },
 }
+
+ATT.DrawFunc = function(swep, model)
+    if swep:GetClass() == "arc9_uplp_molot" then
+        model:SetBodygroup(0, swep:GetValue("UPLPFoldStock") and 22 or 21)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt1")
 
@@ -445,6 +470,7 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt3_ext"},
 		ModelBodygroups = "9",
+        UPLPFoldStock = true,
 		/// Positives
 		RecoilMult = 0.8,
 		RecoilAutoControlMult = 1.25,
@@ -454,6 +480,12 @@ ATT.ToggleStats = {
 		SprintToFireTimeMult = 1.15,
     },
 }
+
+ATT.DrawFunc = function(swep, model)
+    if swep:GetClass() == "arc9_uplp_molot" then
+        model:SetBodygroup(0, swep:GetValue("UPLPFoldStock") and 24 or 23)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt3")
 

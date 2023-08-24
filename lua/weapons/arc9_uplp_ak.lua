@@ -7,7 +7,7 @@ SWEP.UseHands = true
 -- Muzzle and shell effects --
 
 SWEP.MuzzleParticle = "muzzleflash_ak47" -- Iron sights are much easier to use this way
-SWEP.ShellModel = "models/shells/shell_556.mdl"
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
 
@@ -228,6 +228,7 @@ SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.CustomizePos = Vector(14, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
 
 SWEP.HolsterPos = Vector(1, 0, -3)
 SWEP.HolsterAng = Angle(40, -10, -40)
@@ -272,6 +273,7 @@ SWEP.ShootSound = {pathAK .. "fire-01.ogg", pathAK .. "fire-02.ogg", pathAK .. "
 SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
 SWEP.DistantShootSound = {pathAK .. "fire-dist-01.ogg", pathAK .. "fire-dist-02.ogg", pathAK .. "fire-dist-03.ogg", pathAK .. "fire-dist-04.ogg", pathAK .. "fire-dist-05.ogg", pathAK .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
+SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 -- Bodygroups --
 
 SWEP.DefaultBodygroups = "00000000000"
@@ -310,14 +312,14 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    ["enter_sights"] = {
-        Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
-    },
-    ["enter_sprint"] = {
-        Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
-    },
+    -- ["enter_sights"] = {
+    --     Source = "idle",
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    -- },
+    -- ["enter_sprint"] = {
+    --     Source = "idle",
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    -- },
     ["ready"] = {
         Source = "ready",
         EventTable = {
@@ -344,6 +346,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+		MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -731,7 +734,7 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = {"inspect_762"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -750,7 +753,7 @@ SWEP.Animations = {
     },  
     ["1_inspect"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -768,7 +771,7 @@ SWEP.Animations = {
 
     ["inspect_545"] = {
         Source = {"inspect_545"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -787,7 +790,7 @@ SWEP.Animations = {
     },  
     ["1_inspect_545"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -805,7 +808,7 @@ SWEP.Animations = {
 
     ["inspect_556"] = {
         Source = {"inspect_556"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -824,7 +827,7 @@ SWEP.Animations = {
     },  
     ["1_inspect_556"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -843,7 +846,7 @@ SWEP.Animations = {
 
     ["inspect_308"] = {
         Source = {"inspect_308"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -862,7 +865,7 @@ SWEP.Animations = {
     },  
     ["1_inspect_308"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -881,7 +884,7 @@ SWEP.Animations = {
 
     ["inspect_drum"] = {
         Source = {"inspect_drum"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -900,7 +903,7 @@ SWEP.Animations = {
     },  
     ["1_inspect_drum"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
+        -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
