@@ -18,7 +18,7 @@ $bodygroup "br" { // 2
 	studio "br micro.smd" // 4
 }
 
-$bodygroup "hg" { // 5
+$bodygroup "hg" { // 3
 	studio "hg std.smd" // 0
 	studio "hg 100.smd" // 1
 	studio "hg wood.smd" // 2
@@ -48,19 +48,19 @@ $bodygroup "hg" { // 5
 	blank  // 20 k
 }
 
-$bodygroup "underhg" { // 7
+$bodygroup "underhg" { // 4
 	blank  // 0
 	studio "hg2 nomount for cool.smd" // 1
 	studio "hg2 rail for cool.smd" // 2
 }
 
-$bodygroup "mag" { // 8
+$bodygroup "mag" { // 5
 	studio "mag std.smd" // 0
 	studio "mag long.smd" // 1
 	studio "mag drum.smd" // 2
 }
 
-$bodygroup "rnd" { // 7
+$bodygroup "rnd" { // 6
 	studio "ammo r.smd" // 0
 	studio "ammo b.smd" // 1
 	studio "ammo bl.smd" // 2
