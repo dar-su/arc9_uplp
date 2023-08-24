@@ -21,12 +21,12 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "Desert Eagle" 
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_deagle")
 
 -- Trivia --
 
-SWEP.Class = "Handgun"
-SWEP.SubCategory = SWEP.Class
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_pistol")
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol")
 
 SWEP.Trivia = {
     Manufacturer = "Magnum Research",
@@ -36,7 +36,7 @@ SWEP.Trivia = {
     Year = "1983 > Present"
 }
 
-SWEP.Description = "DESC FOR DESERT EAGLE"
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_deagle_desc")
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",

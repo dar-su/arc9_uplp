@@ -139,8 +139,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_wood")
 
 ATT = {}
 
-ATT.PrintName = "PM md. 63 Handguard"
-ATT.CompactName = "PM md. 63"
+ATT.PrintName = "Dong Handguard"
+ATT.CompactName = "Dong"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -151,6 +151,10 @@ ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
+
+/// Positives
+ATT.RecoilMult = 0.75
+ATT.RecoilAutoControlMult = 1.25
 
 ATT.ActivateElements = {"uplp_ak_hg_dong"}
 

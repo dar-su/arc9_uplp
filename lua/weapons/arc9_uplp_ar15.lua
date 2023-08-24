@@ -21,7 +21,7 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "AR-15" 
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ar15") 
 
 -- Trivia --
 
@@ -36,7 +36,7 @@ SWEP.Trivia = {
     Year = "1964 > Present"
 }
 
-SWEP.Description = "DESC FOR AR-15"
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_ar15_desc") 
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",

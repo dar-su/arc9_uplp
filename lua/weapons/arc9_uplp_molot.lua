@@ -25,8 +25,8 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_molot")
 
 -- Trivia --
 
-SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sg") or "Shotgun"
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sg") or "Shotguns"
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun")
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun")
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
@@ -38,7 +38,7 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1959" ),
 }
 
-SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_molot_desc")
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",

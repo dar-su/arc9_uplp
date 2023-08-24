@@ -21,12 +21,12 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "AK SMG" 
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak_smg")
 
 -- Trivia --
 
-SWEP.Class = "Small Machine Gun"
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_smg")
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_smg")
 
 SWEP.Trivia = {
     Manufacturer = "Izhmash",
@@ -36,7 +36,7 @@ SWEP.Trivia = {
     Year = "1959 > Present"
 }
 
-SWEP.Description = "DESC FOR COMPACT AK"
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_smg_desc")
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",

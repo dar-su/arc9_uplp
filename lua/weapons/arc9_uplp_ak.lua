@@ -271,6 +271,7 @@ local pathCSR = "weapons/arccw/csr338/"
 
 local pathsound = "uplp_temp/ak/"
 local pathreloadsound = pathsound .. "reload/wpfoly_ak47_reload_"
+local shootsoundsupp = pathsound .. "shoot/suppressed/h1_wpn_supp_ar1_"
 local shootsound762 = pathsound .. "shoot/762/wpn_h1_ak47_"
 local shootsound545 = pathsound .. "shoot/545/wpn_h1_ak74u_"
 local shootsound556 = pathsound .. "shoot/556/wpn_h1_mp44_"
@@ -283,7 +284,12 @@ shootsound762 .. "shot_04.ogg"}
 
 SWEP.DistantShootSound = {shootsound762 .. "tail_ext.ogg"}
 
-SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
+shootsoundsupp .. "02.ogg",
+shootsoundsupp .. "03.ogg",
+shootsoundsupp .. "04.ogg"}
+
+SWEP.DistantShootSoundSilenced = {pathsound .. "shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 -- Bodygroups --
@@ -419,7 +425,7 @@ SWEP.Animations = {
 			shootsound308 .. "shot_lyr_02.ogg",
 			shootsound308 .. "shot_lyr_03.ogg",
 			shootsound308 .. "shot_lyr_04.ogg",
-			}, t = 0, v = 0.5 },
+			}, t = 0, v = 0.35 },
         },
     },
 

@@ -22,7 +22,7 @@ SWEP.TracerSize = 1
 
 -- Name --
 
-SWEP.PrintName = "Mk47 Mutant" 
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_mutant")
 
 -- Trivia --
 
@@ -37,7 +37,7 @@ SWEP.Trivia = {
     Year = "2014 > Present"
 }
 
-SWEP.Description = "DESC FOR MK47 MUTANT"
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_mutant_desc")
 
 SWEP.Credits = {
     Authors = "Darsu | Moka",
