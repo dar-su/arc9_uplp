@@ -269,9 +269,21 @@ local pathDist = "weapons/arccw/hk416/"
 local pathXC = "weapons/arccw/xcrm/"
 local pathCSR = "weapons/arccw/csr338/"
 
-SWEP.ShootSound = {pathAK .. "fire-01.ogg", pathAK .. "fire-02.ogg", pathAK .. "fire-03.ogg", pathAK .. "fire-04.ogg", pathAK .. "fire-05.ogg", pathAK .. "fire-06.ogg"} -- Maybe Not Placeholder
+local pathsound = "uplp_temp/ak/"
+local pathreloadsound = pathsound .. "reload/wpfoly_ak47_reload_"
+local shootsound762 = pathsound .. "shoot/762/wpn_h1_ak47_"
+local shootsound545 = pathsound .. "shoot/545/wpn_h1_ak74u_"
+local shootsound556 = pathsound .. "shoot/556/wpn_h1_mp44_"
+local shootsound308 = pathsound .. "shoot/308/wpn_h1_g3_"
+
+SWEP.ShootSound = {shootsound762 .. "shot_01.ogg",
+shootsound762 .. "shot_02.ogg",
+shootsound762 .. "shot_03.ogg",
+shootsound762 .. "shot_04.ogg"}
+
+SWEP.DistantShootSound = {shootsound762 .. "tail_ext.ogg"}
+
 SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-SWEP.DistantShootSound = {pathAK .. "fire-dist-01.ogg", pathAK .. "fire-dist-02.ogg", pathAK .. "fire-dist-03.ogg", pathAK .. "fire-dist-04.ogg", pathAK .. "fire-dist-05.ogg", pathAK .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 -- Bodygroups --
@@ -323,9 +335,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 4 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 18 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -339,9 +351,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 6 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -349,17 +359,68 @@ SWEP.Animations = {
 		MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
         },
     },    
-
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {{ s = {pathAK .. "mech-01.ogg", pathAK .. "mech-02.ogg", pathAK .. "mech-03.ogg", pathAK .. "mech-04.ogg", pathAK .. "mech-05.ogg", pathAK .. "mech-06.ogg"}, t = 0 }},
+        EventTable = {
+            { s = {
+			shootsound762 .. "mech_01.ogg",
+			shootsound762 .. "mech_02.ogg",
+			shootsound762 .. "mech_03.ogg",
+			shootsound762 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = shootsound762 .. "punch.ogg", t = 0 },
+        },
+    },
+
+    ["fire_545"] = {
+        Source = {"fire_01","fire_02","fire_03"},
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound545 .. "mech_01.ogg",
+			shootsound545 .. "mech_02.ogg",
+			shootsound545 .. "mech_03.ogg",
+			shootsound545 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = shootsound545 .. "punch.ogg", t = 0 },
+        },
+    },
+
+    ["fire_556"] = {
+        Source = {"fire_01","fire_02","fire_03"},
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound762 .. "mech_01.ogg",
+			shootsound762 .. "mech_02.ogg",
+			shootsound762 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = shootsound556 .. "punch.ogg", t = 0 },
+        },
+    },
+
+    ["fire_308"] = {
+        Source = {"fire_01","fire_02","fire_03"},
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound308 .. "mech_01.ogg",
+			shootsound308 .. "mech_02.ogg",
+			shootsound308 .. "mech_03.ogg",
+			shootsound308 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = {
+			shootsound308 .. "shot_lyr_01.ogg",
+			shootsound308 .. "shot_lyr_02.ogg",
+			shootsound308 .. "shot_lyr_03.ogg",
+			shootsound308 .. "shot_lyr_04.ogg",
+			}, t = 0, v = 0.5 },
+        },
     },
 
     -- Reloads --
@@ -369,10 +430,10 @@ SWEP.Animations = {
 		MinProgress= 0.6,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 32 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -390,11 +451,11 @@ SWEP.Animations = {
 		MinProgress= 0.7,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 37.5 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -415,10 +476,10 @@ SWEP.Animations = {
 		MinProgress= 0.55,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 37 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 37 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -436,11 +497,11 @@ SWEP.Animations = {
 		MinProgress= 0.725,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 43 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 57 / 30, c = ca, v = 0.8 },
+			{ s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 57 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -461,10 +522,10 @@ SWEP.Animations = {
 		MinProgress= 0.6,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 32 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -482,11 +543,11 @@ SWEP.Animations = {
 		MinProgress= 0.7,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -507,10 +568,10 @@ SWEP.Animations = {
 		MinProgress= 0.6,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 37 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 37 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -528,11 +589,11 @@ SWEP.Animations = {
 		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 43 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 55 / 30, c = ca, v = 0.8 },
+			{ s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 57 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -553,10 +614,10 @@ SWEP.Animations = {
 		MinProgress= 0.575,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 37 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -574,11 +635,11 @@ SWEP.Animations = {
 		MinProgress= 0.725,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 54 / 30, c = ca, v = 0.8 },
+			{ s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 57 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -599,10 +660,10 @@ SWEP.Animations = {
 		MinProgress= 0.6,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 32 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -620,11 +681,11 @@ SWEP.Animations = {
 		MinProgress= 0.675,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -645,10 +706,14 @@ SWEP.Animations = {
 		MinProgress= 0.625,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            -- { s = pathAK .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "end.ogg", t = 36 / 30, c = ca, v = 0.8 },
+			{ s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 26 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 42.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 0.85}
@@ -666,11 +731,11 @@ SWEP.Animations = {
 		MinProgress= 0.775,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 54 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 64 / 30, c = ca, v = 0.8 },
+			{ s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 26 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 52 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 68 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 0.85}
@@ -691,10 +756,10 @@ SWEP.Animations = {
 		MinProgress= 0.625,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 32 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -712,11 +777,11 @@ SWEP.Animations = {
 		MinProgress= 0.7,
 		-- Mult = 1.15,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "charge.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "chamber_v4.wav", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "lift_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -737,10 +802,12 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 117.5 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -756,8 +823,9 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -774,10 +842,12 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -793,8 +863,9 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -811,10 +882,12 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -830,8 +903,9 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -849,10 +923,12 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -868,8 +944,9 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -887,10 +964,12 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magin.ogg", t = 130 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 145 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 65 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 130 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -906,8 +985,9 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {

@@ -192,6 +192,10 @@ L["uplp_ak_grip_beryl.printname"] = "Beryl Pistolgrepp"
 L["uplp_ak_grip_beryl.compactname"] = "Beryl"
 L["uplp_ak_grip_beryl.description"] = "Alternativt pistolgrepp gjorda för ett AK-gevär av polskt ursprung."
 
+L["uplp_ak_grip_molot.printname"] = "Molot Pistolgrepp"
+L["uplp_ak_grip_molot.compactname"] = "Molot"
+L["uplp_ak_grip_molot.description"] = "Standard pistolgrepp som används på hagelbössan Molot."
+
 L["uplp_ak_grip_12.printname"] = "AK-12 Pistolgrepp"
 L["uplp_ak_grip_12.compactname"] = "AK-12"
 L["uplp_ak_grip_12.description"] = "Standard pistolgrepp som används på AK-12:an."
@@ -426,6 +430,10 @@ L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som anv
 L["uplp_ak_stock_tube.printname"] = "Bufferrör"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
 L["uplp_ak_stock_tube.description"] = "Bufferrör montering kompatibel med AK-gevär. Tillåter installering av AR-15-kompatibla kolvar."
+
+L["uplp_ak_stock_molot.printname"] = "Molot-Kolv"
+L["uplp_ak_stock_molot.compactname"] = "Molot"
+L["uplp_ak_stock_molot.description"] = "Taktisk kolv som används på hagelbössan Molot."
 
 L["uplp_ak_stock_underfold.printname"] = "AKMS Undervikbar Kolv"
 L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"

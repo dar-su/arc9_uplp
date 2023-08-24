@@ -201,6 +201,10 @@ L["uplp_ak_grip_beryl.printname"] = "Beryl Pistol Grip"
 L["uplp_ak_grip_beryl.compactname"] = "Beryl"
 L["uplp_ak_grip_beryl.description"] = "Alternative pistol grip made for an AK rifle of Polish origin."
 
+L["uplp_ak_grip_molot.printname"] = "Molot Pistol Grip"
+L["uplp_ak_grip_molot.compactname"] = "Molot"
+L["uplp_ak_grip_molot.description"] = "Standard pistol grip used on the Molot shotgun."
+
 L["uplp_ak_grip_12.printname"] = "AK-12 Pistol Grip"
 L["uplp_ak_grip_12.compactname"] = "AK-12"
 L["uplp_ak_grip_12.description"] = "Standard pistol grip used on the AK-12."
@@ -435,6 +439,10 @@ L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used o
 L["uplp_ak_stock_tube.printname"] = "Buffer Tube"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
 L["uplp_ak_stock_tube.description"] = "Buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
+
+L["uplp_ak_stock_molot.printname"] = "Molot Stock"
+L["uplp_ak_stock_molot.compactname"] = "Molot"
+L["uplp_ak_stock_molot.description"] = "Tactical stock used on the Molot shotgun."
 
 L["uplp_ak_stock_underfold.printname"] = "AKMS Underfolding Stock"
 L["uplp_ak_stock_underfold.compactname"] = "Underfolding"

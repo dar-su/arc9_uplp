@@ -134,8 +134,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_grip_beryl")
 
 ATT = {}
 
-ATT.PrintName = "molot Pistol Grip"
-ATT.CompactName = "molot"
+ATT.PrintName = "Molot Pistol Grip"
+ATT.CompactName = "Molot"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")

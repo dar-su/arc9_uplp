@@ -294,8 +294,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_tube")
 
 ATT = {}
 
-ATT.PrintName = "molot"
-ATT.CompactName = "molot"
+ATT.PrintName = "Molot Stock"
+ATT.CompactName = "Molot"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")

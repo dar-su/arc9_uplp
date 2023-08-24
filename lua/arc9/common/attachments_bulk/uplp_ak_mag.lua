@@ -168,6 +168,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 -------------------------------------------
 
 ----- 5.45 MAGS -----
+local pathshootsound = "uplp_temp/ak/shoot/"
+local shootsound545 = pathshootsound .. "545/wpn_h1_ak74u_"
 
 local ATT = {}
 
@@ -181,6 +183,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545.mdl"
+
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -219,6 +228,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_bak.mdl"
 
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -255,6 +271,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
+
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -293,6 +316,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_12.mdl"
 
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -329,6 +359,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45.mdl"
+
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -374,6 +411,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_60.mdl"
 
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -418,6 +462,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+-- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 ATT.DropMagazineTime = 0.85
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
@@ -452,6 +503,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 -------------------------------------------
 
 -----5.56-----
+local shootsound556 = pathshootsound .. "556/wpn_h1_mp44_"
 
 local ATT = {}
 
@@ -465,6 +517,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556.mdl"
+
+ATT.ShootSound = {shootsound556 .. "shot_01.ogg",
+shootsound556 .. "shot_02.ogg",
+shootsound556 .. "shot_03.ogg",
+shootsound556 .. "shot_04.ogg"}
+
+ATT.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
 
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
@@ -503,6 +562,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
+ATT.ShootSound = {shootsound556 .. "shot_01.ogg",
+shootsound556 .. "shot_02.ogg",
+shootsound556 .. "shot_03.ogg",
+shootsound556 .. "shot_04.ogg"}
+
+ATT.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
+
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -540,6 +606,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_12.mdl"
 
+ATT.ShootSound = {shootsound556 .. "shot_01.ogg",
+shootsound556 .. "shot_02.ogg",
+shootsound556 .. "shot_03.ogg",
+shootsound556 .. "shot_04.ogg"}
+
+ATT.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
+
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -566,6 +639,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_12")
 
 
 ----- OTHER CALIBERS -----
+local shootsound308 = pathshootsound .. "308/wpn_h1_g3_"
 
 ATT = {}
 
@@ -579,18 +653,14 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_308"}
 
+ATT.ShootSound = {shootsound308 .. "shot_01.ogg",
+shootsound308 .. "shot_02.ogg",
+shootsound308 .. "shot_03.ogg",
+shootsound308 .. "shot_04.ogg"}
+
+ATT.DistantShootSound = {shootsound308 .. "tail_ext.ogg"}
+
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_308.mdl"
-
--- ATT.RPMMult = 550/600
-
--- ATT.DamageMaxMult = 1.4
--- ATT.DamageMinMult = 1.1
-
--- ATT.RecoilMult = 1.5
--- ATT.RecoilSideMult = 2
--- ATT.RecoilAutoControlMult = 0.5
--- ATT.VisualRecoilMult = 1.5
-
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -628,6 +698,13 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_939"}
+
+ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
+shootsound545 .. "shot_02.ogg",
+shootsound545 .. "shot_03.ogg",
+shootsound545 .. "shot_04.ogg"}
+
+ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_939.mdl"
 
