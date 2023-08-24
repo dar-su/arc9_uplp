@@ -738,8 +738,8 @@ SWEP.AttachmentElements = {
     
     ["uplp_molot_hg_100"] =     { Bodygroups = { { 3, 1 } } },
     ["uplp_molot_hg_wood"] =    { Bodygroups = { { 3, 2 } } },
-    ["uplp_molot_hg_zen"] =     { Bodygroups = { { 3, 3 } } },
-    ["uplp_molot_hg_zen_c"] =   { Bodygroups = { { 3, 4 } } },
+    ["uplp_molot_hg_azen"] =     { Bodygroups = { { 3, 3 } } },
+    ["uplp_molot_hg_azen_c"] =   { Bodygroups = { { 3, 4 } } },
     ["uplp_molot_hg_tac"] =     { Bodygroups = { { 3, 5 } } },
     ["uplp_molot_hg_tac_b"] =   { Bodygroups = { { 3, 8 } } },
     ["uplp_molot_hg_tac_w"] =   { Bodygroups = { { 3, 11 } } },
