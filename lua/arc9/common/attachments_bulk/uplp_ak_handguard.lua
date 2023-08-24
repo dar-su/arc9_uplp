@@ -174,7 +174,7 @@ ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
-ATT.ActivateElements = {"uplp_ak_hg_zen_c"}
+ATT.ActivateElements = {"uplp_ak_hg_azen_c"}
 
 ATT.Attachments = {
     {
@@ -193,7 +193,7 @@ ATT.Attachments = {
     },
 }
 
-ARC9.LoadAttachment(ATT, "uplp_ak_hg_zen_c")
+ARC9.LoadAttachment(ATT, "uplp_ak_hg_azen_c")
 
 -------------------------------------------
 
@@ -207,7 +207,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_hg_zen"}
+ATT.ActivateElements = {"uplp_ak_hg_azen"}
 
 ATT.Attachments = {
     {
@@ -226,7 +226,7 @@ ATT.Attachments = {
     },
 }
 
-ARC9.LoadAttachment(ATT, "uplp_ak_hg_zen")
+ARC9.LoadAttachment(ATT, "uplp_ak_hg_azen")
 
 -------------------------------------------
 

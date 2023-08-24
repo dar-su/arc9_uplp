@@ -235,7 +235,7 @@ ATT.Attachments = {
         -- Integral = "uplp_ak_dc_flat",
 		RejectAttachments = {
 			["uplp_ak_dc_rail"] = true,
-			["uplp_ak_dc_zen"] = true,
+			["uplp_ak_dc_azen"] = true,
 			["uplp_ak_dc_beryl"] = true,
 			["uplp_ak_dc_12"] = true,
 		},

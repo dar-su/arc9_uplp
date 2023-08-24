@@ -63,9 +63,9 @@ ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
-ATT.ActivateElements = {"uplp_ak_dc_zen","use_optics"}
+ATT.ActivateElements = {"uplp_ak_dc_azen","use_optics"}
 
-ARC9.LoadAttachment(ATT, "uplp_ak_dc_zen")
+ARC9.LoadAttachment(ATT, "uplp_ak_dc_azen")
 
 -------------------------------------------
 
