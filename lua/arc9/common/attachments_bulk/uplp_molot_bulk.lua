@@ -111,7 +111,7 @@ ATT.Attachments = {
     },
 }
 
-ARC9.LoadAttachment(ATT, "uplp_molot_hg_zen")
+ARC9.LoadAttachment(ATT, "uplp_molot_hg_azen")
 
 -------------------------------------------
 
@@ -134,7 +134,7 @@ ATT.Attachments = {
     },
 }
 
-ARC9.LoadAttachment(ATT, "uplp_molot_hg_zen_c")
+ARC9.LoadAttachment(ATT, "uplp_molot_hg_azen_c")
 
 -------------------------------------------
 
