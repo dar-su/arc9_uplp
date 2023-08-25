@@ -332,7 +332,6 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
--- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.9, -3.55, 5)
 
 ATT.ActiveElements = {"uplp_ak_stock_underfold"}
@@ -344,8 +343,6 @@ ATT.ExcludeElements= {
 "uplp_ak_mag_545_45",
 "uplp_ak_mag_545_60",
 "uplp_ak_mag_545_drum",
--- "uplp_ak_mag_762_drum",
--- "uplp_ak_mag_762_drum",
 }
 
 ATT.CustomPros = { 
@@ -362,7 +359,6 @@ ATT.CustomCons = {
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
-        -- ActivateElements = {"uplp_ak_stock_underfold"},
 		ModelBodygroups = "3",
 		/// Positives
 		RecoilMult = 0.85,
@@ -374,7 +370,6 @@ ATT.ToggleStats = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
-        -- ActivateElements = {"uplp_ak_stock_underfold_f"},
 		ModelBodygroups = "4",
     },
 }
@@ -394,7 +389,6 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
--- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 /// Positives
@@ -448,7 +442,6 @@ ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
--- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 /// Positives
@@ -503,7 +496,6 @@ ATT.Category = "uplp_ak_stock_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
--- ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 /// Positives

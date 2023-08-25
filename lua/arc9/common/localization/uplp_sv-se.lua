@@ -592,10 +592,10 @@ L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lättvik
 
 L["uplp_ar15_hg_ris.printname"] = "RIS Handgrepp"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
-L["uplp_ar15_hg_ris.description"] = "Standard militär grad handgrepp med inbyggt RIS-skenafunktionalitet." .. requires14
+L["uplp_ar15_hg_ris.description"] = "Standard militär grad handgrepp med inbyggt RIS-skenafunktionalitet." .. requires16
 
 L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handgrepp"
-L["uplp_ar15_hg_risshort.compactname"] = "RIS"
+L["uplp_ar15_hg_risshort.compactname"] = "RIS S"
 L["uplp_ar15_hg_risshort.description"] = "Förkortad version av ett militär grad handgrepp med inbyggt RIS-skenafunktionalitet."
 
 L["uplp_ar15_hg_tac.printname"] = "Taktiskt Handgrepp"

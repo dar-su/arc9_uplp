@@ -12,15 +12,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ar15_barrel_10"}
+ATT.ActivateElements = {"uplp_ar15_barrel_short"}
+ATT.ExcludeElements = {"uplp_ar15_handguard_long", "uplp_ar15_handguard_mid"}
 
 ATT.Attachments = {
     {
@@ -55,15 +51,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ar15_barrel_14"}
+ATT.ActivateElements = {"uplp_ar15_barrel_mid"}
+ATT.ExcludeElements = {"uplp_ar15_handguard_long"}
 
 ATT.Attachments = {
     {
@@ -98,15 +90,10 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ar15_barrel_16"}
+ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 
 ATT.Attachments = {
     {
@@ -141,15 +128,10 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ar15_barrel_20"}
+ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 
 ATT.Attachments = {
     {
@@ -184,15 +166,10 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ar15_barrel_22"}
+ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 
 ATT.Attachments = {
     {

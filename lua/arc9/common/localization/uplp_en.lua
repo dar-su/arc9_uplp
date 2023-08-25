@@ -603,10 +603,10 @@ L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweig
 
 L["uplp_ar15_hg_ris.printname"] = "RIS Handguard"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
-L["uplp_ar15_hg_ris.description"] = "Standard military-grade handguard with built-in RIS rail system." .. requires14
+L["uplp_ar15_hg_ris.description"] = "Standard military-grade handguard with built-in RIS rail system." .. requires16
 
 L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handguard"
-L["uplp_ar15_hg_risshort.compactname"] = "RIS"
+L["uplp_ar15_hg_risshort.compactname"] = "RIS S"
 L["uplp_ar15_hg_risshort.description"] = "Shortened version of a military-grade handguard with built-in RIS rail system."
 
 L["uplp_ar15_hg_tac.printname"] = "Tactical Handguard"

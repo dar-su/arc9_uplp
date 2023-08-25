@@ -12,6 +12,8 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
+ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
+
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "2"
 -- ATT.ModelOffset = Vector(0, 0, 0)
@@ -35,6 +37,8 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
+ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
+
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "3"
 -- ATT.ModelOffset = Vector(0, 0, 0)
@@ -54,7 +58,7 @@ ATT = {}
 
 ATT.PrintName = "Compact Gas Block"
 ATT.CompactName = "GB"
-ATT.Description = [[A Compact gasblock for AR-15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -77,9 +81,7 @@ ATT = {}
 
 ATT.PrintName = "Compact Gas Block (Sporty Red)"
 ATT.CompactName = "GB (SR)"
-ATT.Description = [[A Compact gasblock for AR-15 rifle.
-
-Red edition.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -102,9 +104,11 @@ ATT = {}
 
 ATT.PrintName = "Gas Block with Rail"
 ATT.CompactName = "GB R"
-ATT.Description = [[A Rail gasblock for AR-15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+
+ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "4"
