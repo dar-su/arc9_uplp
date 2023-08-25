@@ -18,7 +18,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.ClipSize = 20
+ATT.ClipSizeOverride = 20
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -45,7 +45,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.ClipSize = 40
+ATT.ClipSizeOverride = 40
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -70,7 +70,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 
-ATT.ClipSize = 100
+ATT.ClipSizeOverride = 100
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
@@ -100,7 +100,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.ClipSize = 17
+ATT.ClipSizeOverride = 17
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -127,7 +127,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.ClipSize = 33
+ATT.ClipSizeOverride = 33
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -154,7 +154,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
-ATT.ClipSize = 50
+ATT.ClipSizeOverride = 50
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -204,7 +204,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 
-ATT.ClipSize = 10
+ATT.ClipSizeOverride = 10
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
@@ -231,7 +231,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 
-ATT.ClipSize = 20
+ATT.ClipSizeOverride = 20
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
@@ -284,7 +284,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 
-ATT.ClipSize = 60
+ATT.ClipSizeOverride = 60
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
@@ -335,7 +335,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 
-ATT.ClipSize = 40
+ATT.ClipSizeOverride = 40
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
@@ -362,7 +362,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 
-ATT.ClipSize = 60
+ATT.ClipSizeOverride = 60
 -- ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 

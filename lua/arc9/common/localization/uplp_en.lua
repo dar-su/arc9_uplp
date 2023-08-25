@@ -85,6 +85,7 @@ L["uplp_category_receiver"] = "Receiver"
 L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_stock"] = "Stock"
+L["uplp_category_charginghandle"] = "Charging Handle"
 
 //////////////////// Folder Names
 L["uplp_folder_suppressor"] = "Suppressors"

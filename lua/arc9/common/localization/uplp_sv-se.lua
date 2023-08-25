@@ -83,6 +83,7 @@ L["uplp_category_receiver"] = "Låda"
 L["uplp_category_sight_front"] = "Stolpkorn"
 L["uplp_category_sight_rear"] = "Bakre Sikte"
 L["uplp_category_stock"] = "Kolv"
+L["uplp_category_charginghandle"] = "Manöverhandtag"
 
 //////////////////// Folder Names
 L["uplp_folder_suppressor"] = "Ljuddämpare"
@@ -472,19 +473,19 @@ L["uplp_ar15_barrel_10.description"] = "254mm pipa som används på AR-15-gevär
 
 L["uplp_ar15_barrel_14.printname"] = "356mm Pipa"
 L["uplp_ar15_barrel_14.compactname"] = "356mm"
-L["uplp_ar15_barrel_14.description"] = "356mm som används på AR-15-gevär."
+L["uplp_ar15_barrel_14.description"] = "356mm pipa som används på AR-15-gevär."
 
 L["uplp_ar15_barrel_16.printname"] = "406mm Pipa"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
-L["uplp_ar15_barrel_16.description"] = "406mm som används på AR-15-gevär."
+L["uplp_ar15_barrel_16.description"] = "406mm pipa som används på AR-15-gevär."
 
 L["uplp_ar15_barrel_20.printname"] = "508mm Pipa"
 L["uplp_ar15_barrel_20.compactname"] = "508mm"
-L["uplp_ar15_barrel_20.description"] = "508mm som används på AR-15-gevär."
+L["uplp_ar15_barrel_20.description"] = "508mm pipa som används på AR-15-gevär."
 
 L["uplp_ar15_barrel_22.printname"] = "559mm Pipa"
 L["uplp_ar15_barrel_22.compactname"] = "559mm"
-L["uplp_ar15_barrel_22.description"] = "559mm som används på AR-15-gevär."
+L["uplp_ar15_barrel_22.description"] = "559mm pipa som används på AR-15-gevär."
 
 ////// Charging Handles
 L["uplp_ar15_chandle_modern.printname"] = "Kompakt Manöverhandtag"

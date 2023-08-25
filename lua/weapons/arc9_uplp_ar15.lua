@@ -1,32 +1,18 @@
-SWEP.Base = "arc9_base"
+AddCSLuaFile()
+SWEP.Base = "arc9_uplp_base"
+SWEP.Category = "ARC9 - UPLP"
 SWEP.Spawnable = true
-SWEP.Category = "ARC9 - Low Poly (wip)"
-SWEP.AdminOnly = false
-SWEP.UseHands = true
 
--- Muzzle and shell effects --
+//// FUNDAMENTALS
 
-SWEP.MuzzleParticle = "muzzleflash_1" -- Iron sights are much easier to use this way
-SWEP.ShellModel = "models/shells/shell_556.mdl"
-SWEP.ShellScale = 1.2
-SWEP.ShellPitch = 90
+SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
-SWEP.MuzzleEffectQCA = 1
-SWEP.CaseEffectQCA = 2
-SWEP.CamQCA = 3
-SWEP.CamOffsetAng = Angle(0, 0, 90)
+//// Name, Description, Class, Category and Trivia
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ar15")
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_ar15_desc")
 
-SWEP.TracerNum = 1 -- Tracer every X
-SWEP.TracerSize = 1
-
--- Name --
-
-SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ar15") 
-
--- Trivia --
-
-SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar")
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_uso" ),
@@ -38,92 +24,109 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1964" ),
 }
 
-SWEP.Description = ARC9:GetPhrase("uplp_weapon_ar15_desc") 
-
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_authors" ) ] = "Darsu | Moka",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "LIST ASSETS"
 }
 
--- Weapon slot --
+SWEP.StandardPresets = {
 
-SWEP.Slot = 2
+}
 
+//// Muzzle Effects, Shell Effects, Camera
+SWEP.MuzzleParticle = "muzzleflash_1"
+SWEP.MuzzleEffectQCA = 1
 
+SWEP.TracerNum = 1
+SWEP.TracerSize = 1
 
--- Viewmodel / Worldmodel / Model FOV / Animations --
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
+SWEP.ShellScale = 1.2
+SWEP.ShellPitch = 90
 
-SWEP.MirrorVMWM = true
+SWEP.CaseEffectQCA = 2
+SWEP.CamQCA = 3
+SWEP.CamOffsetAng = Angle(0, 0, 90)
+
+//// View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_ar15.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
-SWEP.ViewModelFOVBase = 70
+
+SWEP.MirrorVMWM = true
+SWEP.NoTPIKVMPos = true
+-- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_ar15.mdl"
+SWEP.WorldModelOffset = {
+    Pos = Vector(-3.5, 3, -8),
+    Ang = Angle(0, 0, 180),
+    TPIKPos = Vector(-4.5, 2, -7),
+    TPIKAng = Angle(0, 0, 180),
+    Scale = 1
+}
+
+SWEP.ViewModelFOVBase = 75
+
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
--- Damage parameters --
-
-SWEP.DamageMax = 35
-SWEP.DamageMin = 20
-SWEP.Range = 100
-SWEP.Penetration = 30
+//// Weapon Stats and Behaviour
+-- Damage
+SWEP.DamageMax = 50 -- Damage dealt point-blank
+SWEP.DamageMin = 30 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
-SWEP.MuzzleVelocity = 719
 
--- Mag size --
+SWEP.Penetration = 30 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 8 -- How much kick things will have when hit
+
+-- Range
+SWEP.RangeMin = 75 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 200 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+
+-- Physical Bullets
+SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
+SWEP.PhysBulletGravity = 1.5
+SWEP.PhysBulletDrag = 1.5
+
+-- Magazine Info
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 30 -- Self-explanatory.
+SWEP.ClipSize = 30
 
--- Recoil --
-
-SWEP.Recoil = 1.1
+-- Recoil
+SWEP.Recoil = 1.75
 SWEP.RecoilUp = 0.7
-SWEP.RecoilSide = 0.8
-SWEP.RecoilRandomUp = 0.4
-SWEP.RecoilRandomSide = 0.3
-SWEP.RecoilAutoControl = 7
+SWEP.RecoilSide = 1.65
+
+SWEP.RecoilRandomUp = 1
+SWEP.RecoilRandomSide = 1.1
+
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
+SWEP.RecoilAutoControl = 1.75
 
-SWEP.RecoilMultSights = 0.8
+SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
 
-SWEP.Sway = 0
-
-SWEP.UseVisualRecoil = false 
-SWEP.PhysicalVisualRecoil = false 
+-- Visual Recoil
 SWEP.VisualRecoil = 0.5
-SWEP.VisualRecoilMultHipFire = 0.03
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
-SWEP.VisualRecoilSide = 0 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 2 -- Roll tilt
-SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 50
+SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
+SWEP.VisualRecoilRoll = 30 -- Roll tilt
+SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
+SWEP.VisualRecoilPositionBumpUp = .25
 
+SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilUpHipFire = 2
+SWEP.VisualRecoilSideHipFire = -0.1
+SWEP.VisualRecoilRollHipFire = 20
+SWEP.VisualRecoilPunchHipFire = 2
+SWEP.VisualRecoilDampingConstHipFire = 45
+SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
--- Firerate / Firemodes --
-
-SWEP.RPM = 800
-SWEP.Num = 1
-SWEP.Firemodes = {
-    { Mode = -1, PoseParam = 1 }, 
-    { Mode = 1, RecoilMult = 0.5, RPM = 555, PoseParam = 2 }
-}
-SWEP.ShootPitch = 90
-SWEP.ShootVol = 120
-
-SWEP.ReloadInSights = true
-
--- NPC stuff -- 
-
-SWEP.NPCWeaponType = "weapon_ar2"
-SWEP.NPCWeight = 60
-
--- Accuracy --
-
+-- Accuracy and Spread
 SWEP.Spread = 0
 SWEP.SpreadAddHipFire = 0.02
 
@@ -141,64 +144,87 @@ SWEP.RecoilMax = 1
 
 SWEP.RecoilModifierCapSights = 0.1
 
--- Speed mult --
+-- Weapon handling
+SWEP.SpeedMult = 0.9 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.65 -- When aiming
 
-SWEP.SpeedMult = 0.9
-SWEP.SpeedMultSights = 0.65
+SWEP.AimDownSightsTime = 0.5 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.5 -- Time it takes to fully enter sprint
 
-SWEP.AimDownSightsTime = 0.5
-SWEP.SprintToFireTime = 0.5
+-- Shooting and Firemodes
+SWEP.RPM = 800 -- How fast gun shoot
 
--- SWEP.AimDownSightsTimeMultRecoil = 2
+SWEP.Num = 1 -- How many bullets shot at once
 
--- Gun length --
+SWEP.Firemodes = {
+    { Mode = -1, -- Full
+	PoseParam = 1 },
+    { Mode = 1, -- Semi
+	RecoilMult = 0.5,
+	RPM = 555,
+	PoseParam = 2 }
+}
 
--- Ironsight / Customization / Active pos ang --
+SWEP.ShootPitch = 90
+SWEP.ShootVol = 120
 
-
+-- HoldType Info
 SWEP.HoldType = "ar2"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = nil
 SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = nil
 
+-- NPC Info
+SWEP.NPCWeaponType = "weapon_ar2"
+SWEP.NPCWeight = 60
+
+-- Iron Sight and Sight Info
 SWEP.IronSights = {
      Pos = Vector(-2.275, -3, 0.35),
      Ang = Angle(0.35, 0.125, -3),
      Magnification = 1.15,
-     ViewModelFOV = 55,
+     ViewModelFOV = 65,
 }
 
-SWEP.ActivePos = Vector(-0.2, -1.0, 0.5)
-SWEP.ActiveAng = Angle(0, 0, -1)
-SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
+SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    local attached = self:GetElements()
 
-SWEP.CustomizePos = Vector(14, 30, 5)
+     if attached["uplp_ar15_rs_mbus"] or attached["uplp_ar15_rs_type1"] or attached["uplp_ar15_rs_type3"] then
+		if (attached["uplp_ar15_fs_m4"] 
+		or attached["uplp_ar15_fs_scalar"]
+		or attached["uplp_ar15_fs_type2"]
+		or attached["uplp_ar15_fs_utg"]
+		or attached["uplp_ar15_gasblock_m16"]
+		or attached["uplp_ar15_gasblock_m16rail"]
+		) then
+			return { -- if incorrect front size
+				 Pos = Vector(-2.275, -3, 0.125),
+				 Ang = Angle(0.35, 0.8, -3),
+				 Magnification = 1.15,
+				 ViewModelFOV = 65,
+			}
+		end
+        return { -- if matching front size
+			Pos = Vector(-2.275, -3, 0.225),
+			Ang = Angle(0.35, 0.125, -3),
+			Magnification = 1.15,
+			ViewModelFOV = 65,
+        }
+    end
+
+end
+
+-- Customization Menu Info
+SWEP.CustomizePos = Vector(15, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
 
-SWEP.HolsterPos = Vector(1, 0, -3)
-SWEP.HolsterAng = Angle(40, -10, -40)
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
+SWEP.CustomizeSnapshotFOV = 90
 
-SWEP.CrouchPos = Vector(0, 0, 1)
-SWEP.CrouchAng = Angle(0, 0, -5)
-
-SWEP.RestPos = Vector(3, 0, 0)
-SWEP.RestAng = Angle(35, -10, -20)
-
-SWEP.PeekPos = Vector(-1.5, 4, -3)
-SWEP.PeekAng = Angle(0, 0.4, -40)
-
-SWEP.MirrorVMWM = true
-SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
-    Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-4.5, 2, -7),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
-}
-
+-- Dropped Magazine
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
@@ -207,73 +233,82 @@ SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 5, -3)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, 0, 2)
--- SWEP.DropMagazineVelocity = Vector(0, 0, 0)
 
--- Weapon sounds --
-
+//// Sounds
 local path = "weapons/arccw/xhr50/"
 local pathDist = "weapons/arccw/hk416/"
 local pathXC = "weapons/arccw/xcrm/"
 local pathCSR = "weapons/arccw/csr338/"
 
+local path556 = path
 
+local pathsound = "uplp_temp/ak/"
+local pathreloadsound = pathsound .. "reload/wpfoly_ak47_reload_"
+local shootsoundsupp = pathsound .. "shoot/suppressed/h1_wpn_supp_ar1_"
+local shootsound762 = pathsound .. "shoot/762/wpn_h1_ak47_"
+local shootsound545 = pathsound .. "shoot/545/wpn_h1_ak74u_"
+local shootsound556 = pathsound .. "shoot/556/wpn_h1_mp44_"
+local shootsound308 = pathsound .. "shoot/308/wpn_h1_g3_"
 
+SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg",
+path .. "fire-03.ogg", path .. "fire-04.ogg",
+path .. "fire-05.ogg", path .. "fire-06.ogg"}
 
--- silly old
+SWEP.DistantShootSound = {path .. "fire-dist-01.ogg",
+path .. "fire-dist-02.ogg",
+path .. "fire-dist-03.ogg",
+path .. "fire-dist-04.ogg",
+path .. "fire-dist-05.ogg",
+path .. "fire-dist-06.ogg"}
 
-SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
-SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-SWEP.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
+shootsoundsupp .. "02.ogg",
+shootsoundsupp .. "03.ogg",
+shootsoundsupp .. "04.ogg"}
 
+SWEP.DistantShootSoundSilenced = {pathsound .. "shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
 
--- uncomment and make good
+SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 
--- SWEP.ShootSound = { path .. "fire_new/ak101_outdoor_close_loop_1.ogg", path .. "fire_new/ak101_outdoor_close_loop_2.ogg", path .. "fire_new/ak101_outdoor_close_loop_3.ogg", path .. "fire_new/ak101_outdoor_close_loop_4.ogg" }
--- SWEP.LayerSound = path .. "fire_new/ak101_outdoor_close_loop_tail.ogg"
-
--- SWEP.ShootSoundSilenced = { path .. "fire_new/ak101_outdoor_silenced_close_loop_1.ogg", path .. "fire_new/ak101_outdoor_silenced_close_loop_2.ogg", path .. "fire_new/ak101_outdoor_silenced_close_loop_3.ogg", path .. "fire_new/ak101_outdoor_silenced_close_loop_4.ogg" }
--- SWEP.LayerSoundSilenced = path .. "fire_new/ak101_outdoor_silenced_close_loop_tail.ogg"
-
--- SWEP.ShootSoundIndoor = { path .. "fire_new/ak101_indoor_close_loop_1.ogg", path .. "fire_new/ak101_indoor_close_loop_2.ogg", path .. "fire_new/ak101_indoor_close_loop_3.ogg", path .. "fire_new/ak101_indoor_close_loop_4.ogg" }
--- SWEP.LayerSoundIndoor = path .. "fire_new/ak101_indoor_close_loop_tail.ogg"
-
--- SWEP.ShootSoundSilencedIndoor = { path .. "fire_new/ak101_indoor_silenced_close_loop_1.ogg", path .. "fire_new/ak101_indoor_silenced_close_loop_2.ogg", path .. "fire_new/ak101_indoor_silenced_close_loop_3.ogg", path .. "fire_new/ak101_indoor_silenced_close_loop_4.ogg" }
--- SWEP.LayerSoundSilencedIndoor = path .. "fire_new/ak101_indoor_silenced_close_loop_tail.ogg"
-
-        -- distants not really required
--- SWEP.DistantShootSound = { path .. "fire_new/ak101_outdoor_distant_loop_1.ogg", path .. "fire_new/ak101_outdoor_distant_loop_2.ogg" }
--- SWEP.DistantShootSoundSilenced = { path .. "fire_new/ak101_outdoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak101_outdoor_silenced_distant_loop_2.ogg" }
--- SWEP.DistantShootSoundIndoor = { path .. "fire_new/ak101_indoor_distant_loop_1.ogg", path .. "fire_new/ak101_indoor_distant_loop_2.ogg" }
--- SWEP.DistantShootSoundSilencedIndoor = { path .. "fire_new/ak101_indoor_silenced_distant_loop_1.ogg", path .. "fire_new/ak101_indoor_silenced_distant_loop_2.ogg" }
-
-
-
-
-
--- Bodygroups --
-
-SWEP.DefaultBodygroups = "00000000000"
-
+//// Animations
+-- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
-    [1] = "bullet1",    [2] = "bullet2",    [3] = "bullet3"
+    [1] = "bullet1",
+	[2] = "bullet2",
+	[3] = "bullet3",
 }
 
--- Animations --
+-- SWEP.HideBones = {
+    -- "fakemag",
+    -- "fakerounds",
+    -- "bullet1",
+    -- "bullet2",
+    -- "bullet3",
+    -- "bullet4",
+-- }
 
+-- SWEP.ReloadHideBoneTables = {
+    -- [1] = {
+        -- "mag",
+        -- "fakerounds",
+    -- },
+    -- [2] = {
+        -- "fakemag",
+        -- "bullet1",
+        -- "bullet2",
+        -- "bullet3",
+        -- "bullet4",
+    -- }
+-- }
 
+-- Animations
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        -- Time = 0.1,
+        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
-        -- Framerate = 30,
-        -- time = 35 / 30,
-        -- LHIK = true,
-        -- LHIKIn = 0,
-        -- LHIKEaseOut = 0.2,
-        -- LHIKOut = 0.6,
         EventTable = {
             { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -304,6 +339,7 @@ SWEP.Animations = {
             -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
         },
+        IKTimeLine = { { t = 0, lhik = 1 } },
     },    
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -321,21 +357,20 @@ SWEP.Animations = {
             -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
         },
+        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
-        -- Source = "fire_03",
-        -- Time = 1,
         ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},
     },
     ["fire_empty"] = {
         Source = "fire_empty",
-        -- Framerate = 30,
-        -- Time = 18 / 30,
         ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {{ s = "weapons/arccw/arx160/lowpolyarx160_empty.ogg", t = 0.03 }},
     },
 
@@ -381,43 +416,38 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = "inspect",
+        FireASAP = true,
+		MinProgress = 0.925,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 70 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.825, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },    
     ["inspect_empty"] = {
         Source = "inspect_empty",
+        FireASAP = true,
+		MinProgress = 0.925,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 70 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.825, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
-    -- ["idle_inspect"] = {
-    --     Source = "idle_inspect",
-    --     time = 120 / 30,
-    --     Framerate = 30,
-    --     LHIK = true,
-    --     LHIKIn = 0,
-    --     LHIKOut = 0,
-    -- },
-    -- ["exit_inspect"] = {
-    --     Source = "exit_inspect",
-    --     time = 20 / 30,
-    --     Framerate = 30,
-    --     LHIK = true,
-    --     LHIKIn = 0,
-    --     LHIKEaseIn = 0.2,
-    --     LHIKEaseOut = 0.2,
-    --     LHIKOut = 0.5,
-    -- },
-
     -- Firemodee -- 
 
     ["firemode_1"] = {
@@ -459,8 +489,7 @@ SWEP.Animations = {
     },
 }
 
-
--- Attachments --
+//// Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -506,7 +535,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     {
-        PrintName = "Rear sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
         Category = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
         Bone = "body",
@@ -514,7 +543,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = "Optic",
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, 0),
@@ -522,16 +551,16 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = "Stock",
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
         Bone = "body",
         Pos = Vector(0.045, 0.99, -2.98),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ar15_stock_m4",
-        Integral = "uplp_ar15_stock_m4",
+        -- Installed = "uplp_ar15_stock_m4",
+        -- Integral = "uplp_ar15_stock_m4",
     },
     {
-        PrintName = "Pistol grip",
+        PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ar15_pgrip"},
         Bone = "body",
         Pos = Vector(0.045, 3.2, -0.56),
@@ -540,7 +569,7 @@ SWEP.Attachments = {
         Integral = "uplp_ar15_pgrip_std",
     },
     {
-        PrintName = "Charge",
+        PrintName = ARC9:GetPhrase("uplp_category_charginghandle"),
         Category = {"uplp_ar15_chandle"},
         Bone = "chandle",
         Pos = Vector(-0.01, 0.094, -0.05),
@@ -549,7 +578,7 @@ SWEP.Attachments = {
         Integral = "uplp_ar15_chandle_std",
     },
     {
-        PrintName = "Barrel",
+        PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_ar15_barrel"},
         Bone = "body",
         Pos = Vector(0.045, 0.633, 5.672),
@@ -559,7 +588,7 @@ SWEP.Attachments = {
         Integral = "uplp_ar15_barrel_10",
     },
     {
-        PrintName = "Handguard",
+        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_ar15_hg",""},
         Bone = "body",
         Pos = Vector(0.045, -0.2, 7.703),
@@ -570,17 +599,17 @@ SWEP.Attachments = {
         Integral = "uplp_ar15_hg_risshort",
     },
     {
-        PrintName = "Reciever",
+        PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = {"uplp_ar15_reciever"},
         Bone = "body",
         Pos = Vector(0, 1, 2),
         Ang = Angle(90, 90, 180),
         Integral = true,
-        Installed = "uplp_ar15_reciever_m16",
-        Integral = "uplp_ar15_reciever_m16",
+        Installed = "uplp_ar15_reciever_m4",
+        Integral = "uplp_ar15_reciever_m4",
     },
     { -- regular mag
-        PrintName = "Magazine",
+        PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_ar15_556_mag"},
         ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
         Bone = "mag",
@@ -590,66 +619,26 @@ SWEP.Attachments = {
         Integral = "uplp_ar15_mag_stanag30",
         Installed = "uplp_ar15_mag_stanag30",
     },
-    { -- 45acp mag
-        PrintName = "Magazine",
-        Category = {"uplp_ar15_45_mag"},
-        RequireElements = {"uplp_ar15_reciever_45acp"},
-        Bone = "mag",
-        Pos = Vector(0, -2.406, -2.428),
-        Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1.5, 0, -3),
-        Installed = "uplp_ar15_mag_45_20",
-        Integral = "uplp_ar15_mag_45_20",
-    },
-    { -- glock mag
-        PrintName = "Magazine",
-        Category = {"uplp_ar15_glock_mag"},
-        RequireElements = {"uplp_ar15_reciever_stm9"},
-        Bone = "mag",
-        Pos = Vector(0, -2.406, -2.428),
-        Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1.5, 0, -3),
-		Installed = "uplp_ar15_mag_glock_17",
-        Integral = "uplp_ar15_mag_glock_17",
-    },
-    -- {
-    --     PrintName = "Optic",
-    --     Slot = {"lowpoly_optic_lp", "lowpoly_optic", "lowpoly_optic_sniper"},
-    --     DefaultAttName = "Iron Sights",
-    --     Bone = "Body",
-    --     Offset = {
-    --         vpos = Vector(0, -0.4, 5),
-    --         vang = Angle(90, 0, -90),
-    --     },
-    --     InstalledEles = {"nofs"},
+    -- { -- 45acp mag
+        -- PrintName = ARC9:GetPhrase("uplp_category_magazine"),
+        -- Category = {"uplp_ar15_45_mag"},
+        -- RequireElements = {"uplp_ar15_reciever_45acp"},
+        -- Bone = "mag",
+        -- Pos = Vector(0, -2.406, -2.428),
+        -- Ang = Angle(90, 90, 180),
+        -- Icon_Offset = Vector(1.5, 0, -3),
+        -- Installed = "uplp_ar15_mag_45_20",
+        -- Integral = "uplp_ar15_mag_45_20",
     -- },
-    -- {
-    --     PrintName = "Muzzle",
-    --     DefaultAttName = "Standard Muzzle",
-    --     Slot = {"lowpoly_muzzle"},
-    --     Bone = "Barrel",
-    --     Offset = {
-    --         vpos = Vector(0, 0, -2.5),
-    --         vang = Angle(90, 0, -90),
-    --     },
-    -- },
-    -- { 
-    --     PrintName = "Underbarrel",
-    --     Slot = {"lowpoly_foregrip"},
-    --     Bone = "Body",
-    --     Offset = {
-    --         vpos = Vector(0, 2.2, 11),
-    --         vang = Angle(90, 0, -90),
-    --     },
-    --     InstalledEles = {"fgrail"},
-    -- },
-    -- {
-    --     PrintName = "Tactical",
-    --     Slot = {"lowpoly_tac"},
-    --     Bone = "Body",
-    --     Offset = {
-    --         vpos = Vector(0, 0.3, 15),
-    --         vang = Angle(90, 0, 90),
-    --     },
+    -- { -- glock mag
+        -- PrintName = ARC9:GetPhrase("uplp_category_magazine"),
+        -- Category = {"uplp_ar15_glock_mag"},
+        -- RequireElements = {"uplp_ar15_reciever_stm9"},
+        -- Bone = "mag",
+        -- Pos = Vector(0, -2.406, -2.428),
+        -- Ang = Angle(90, 90, 180),
+        -- Icon_Offset = Vector(1.5, 0, -3),
+		-- Installed = "uplp_ar15_mag_glock_17",
+        -- Integral = "uplp_ar15_mag_glock_17",
     -- },
 }
