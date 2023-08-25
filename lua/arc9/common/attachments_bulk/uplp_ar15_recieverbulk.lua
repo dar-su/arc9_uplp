@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "M16K .45 ACP Reciever"
-ATT.CompactName = "M16K"
-ATT.Description = [[A M16K .45 ACP conversion or something]]
+ATT.PrintName = ".45 ACP Conversion - TO BE SCRAPPED"
+ATT.CompactName = ".45 ACP"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -50,9 +50,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_45acp")
 
 ATT = {}
 
-ATT.PrintName = "M-16 Reciever"
-ATT.CompactName = "M-16"
-ATT.Description = [[A M-16 conversion or something]]
+ATT.PrintName = "Standard Receiver with Carry Handle"
+ATT.CompactName = "Standard CH"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -82,9 +82,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m16")
 
 ATT = {}
 
-ATT.PrintName = "M4A1 Reciever"
-ATT.CompactName = "M4A1"
-ATT.Description = [[A M4A1 conversion or something]]
+ATT.PrintName = "Standard Receiver"
+ATT.CompactName = "Standard"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -116,7 +116,7 @@ ATT = {}
 
 ATT.PrintName = "Tactical Reciever"
 ATT.CompactName = "Tactical"
-ATT.Description = [[A Tactical cool ass lower and upper reciever or something]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -146,9 +146,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern")
 
 ATT = {}
 
-ATT.PrintName = "STM-9 Reciever"
+ATT.PrintName = "STM-9 9x19mm Conversion - TO BE SCRAPPED"
 ATT.CompactName = "STM-9"
-ATT.Description = [[A STM-9 conversion or something]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

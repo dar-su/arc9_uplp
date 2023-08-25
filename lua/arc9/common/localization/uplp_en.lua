@@ -81,6 +81,7 @@ L["uplp_category_magazine"] = "Magazine"
 L["uplp_category_muzzle"] = "Muzzle"
 L["uplp_category_optic"] = "Optic"
 L["uplp_category_pistol_grip"] = "Pistol Grip"
+L["uplp_category_receiver"] = "Receiver"
 L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_stock"] = "Stock"
@@ -336,7 +337,7 @@ L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
 L["uplp_ak_mag_545_60.description"] = "60-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\n\n\nThicc boi"
 
 L["uplp_ak_mag_545_drum.printname"] = "75-Round 5.45x39mm RPK-16 Drum"
-L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 (D)"
+L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 D"
 L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine from the RPK-16." .. loaded545
 
 /// 5.56x45mm NATO
@@ -623,10 +624,70 @@ L["uplp_ar15_hg_tacshort_red.printname"] = "Tactical Short Handguard (Sporty Red
 L["uplp_ar15_hg_tacshort_red.compactname"] = "Tactical S (SR)"
 L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles.\nSpecial Sporty Red version."
 
+////// Magazines
+/// .45 ACP
+L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 ACP"
+L["uplp_ar15_mag_45_20.compactname"] = "20R .45"
+L["uplp_ar15_mag_45_20.description"] = "Converts the AR-15 to accept 20-round .45 ACP magazines."
+
+L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 ACP"
+L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
+L["uplp_ar15_mag_45_40.description"] = "Converts the AR-15 to accept 40-round .45 ACP magazines."
+
+/// 9x19mm
+L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
+L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
+L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 to accept 17-round 9x19mm magazines from an Austrian handgun."
+
+L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm"
+L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19"
+L["uplp_ar15_mag_glock_33.description"] = "Converts the AR-15 to accept 33-round 9x19mm magazines from an Austrian handgun."
+
+L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9x19mm Drum"
+L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19"
+L["uplp_ar15_mag_glock_50.description"] = "Converts the AR-15 to accept a 50-round 9x19mm drum magazine made for an Austrian handgun."
+
+/// 5.56x45mm
+L["uplp_ar15_mag_drum.printname"] = "100-Round 5.56x45mm C-Drum"
+L["uplp_ar15_mag_drum.compactname"] = "100R 5.56 D"
+L["uplp_ar15_mag_drum.description"] = "100-round C-Drum magazine."
+
+L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
+L["uplp_ar15_mag_hk.compactname"] = "30R 5.56 (416)"
+L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin."
+
+L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56x45mm (Polymer)"
+L["uplp_ar15_mag_pmag10.compactname"] = "10R 5.56 (P)"
+L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer."
+
+L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
+L["uplp_ar15_mag_pmag20.compactname"] = "20R 5.56 (P)"
+L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer."
+
+L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_ar15_mag_pmag30.compactname"] = "30R 5.56 (P)"
+L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer."
+
+L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Drum"
+L["uplp_ar15_mag_pmag60.compactname"] = "60R 5.56 D"
+L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer."
+
+L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag30.compactname"] = "30R 5.56 (A)"
+L["uplp_ar15_mag_stanag30.description"] = "30-round magazine made out of aluminium."
+
+L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag40.compactname"] = "40R 5.56 (A)"
+L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of aluminium."
+
+L["uplp_ar15_mag_stanag60.printname"] = "60-Round 5.56x45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.compactname"] = "60R 5.56 (Q)"
+L["uplp_ar15_mag_stanag60.description"] = "60-round aluminium magazine expanded horizontally to hold more ammunition."
+
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416 Pistol Grip"
 L["uplp_ar15_pgrip_416.compactname"] = "416"
-L["uplp_ar15_pgrip_416.description"] = "Standard pistol grip used on a modified AR-15 of German origin."
+L["uplp_ar15_pgrip_416.description"] = "Standard pistol grip from a modified AR-15 of German origin."
 
 L["uplp_ar15_pgrip_massive.printname"] = "Massive Pistol Grip"
 L["uplp_ar15_pgrip_massive.compactname"] = "Massive"
@@ -655,6 +716,89 @@ L["uplp_ar15_pgrip_std.description"] = "Traditional pistol grip for AR-15 rifles
 L["uplp_ar15_pgrip_tac.printname"] = "Tactical Pistol Grip"
 L["uplp_ar15_pgrip_tac.compactname"] = "Tactical"
 L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles."
+
+////// Receiver
+L["uplp_ar15_reciever_m16.printname"] = "Standard Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16.compactname"] = "Standard CH"
+L["uplp_ar15_reciever_m16.description"] = "Standard military-grade receiver with built-in carrying handle."
+
+L["uplp_ar15_reciever_m4.printname"] = "Standard Receiver"
+L["uplp_ar15_reciever_m4.compactname"] = "Standard"
+L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
+
+L["uplp_ar15_reciever_modern.printname"] = "Tactical Receiver"
+L["uplp_ar15_reciever_modern.compactname"] = "Tactical"
+L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed."
+
+////// Rear Sights
+L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
+L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
+L["uplp_ar15_rs_m4.description"] = "Standard issue rear sight for AR-15 rifles."
+
+L["uplp_ar15_rs_mbus.printname"] = "Flip-up MBUS Rear Sight"
+L["uplp_ar15_rs_mbus.compactname"] = "MBUS"
+L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by Magpul."
+
+L["uplp_ar15_rs_scalar.printname"] = "Scalarworks Rear Sight"
+L["uplp_ar15_rs_scalar.compactname"] = "Scalarworks"
+L["uplp_ar15_rs_scalar.description"] = "Adjustable rear sight manufactured by Scalarworks."
+
+L["uplp_ar15_rs_type1.printname"] = "Type 1 Rear Sight"
+L["uplp_ar15_rs_type1.compactname"] = "Type 1"
+L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
+
+L["uplp_ar15_rs_type2.printname"] = "Type 2 Rear Sight"
+L["uplp_ar15_rs_type2.compactname"] = "Type 2"
+L["uplp_ar15_rs_type2.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
+
+L["uplp_ar15_rs_type3.printname"] = "Type 3 Rear Sight"
+L["uplp_ar15_rs_type3.compactname"] = "Type 3"
+L["uplp_ar15_rs_type3.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
+
+////// Stocks
+L["uplp_ar15_stock_416.printname"] = "416 Stock"
+L["uplp_ar15_stock_416.compactname"] = "416"
+L["uplp_ar15_stock_416.description"] = "Standard stock from a modified AR-15 of German origin."
+
+L["uplp_ar15_stock_ak12.printname"] = "AK-12 Stock"
+L["uplp_ar15_stock_ak12.compactname"] = "AK-12"
+L["uplp_ar15_stock_ak12.description"] = "Standard stock used on the AK-12."
+
+L["uplp_ar15_stock_fat.printname"] = "Bravo Stock"
+L["uplp_ar15_stock_fat.compactname"] = "Bravo"
+L["uplp_ar15_stock_fat.description"] = "Custom adjustable stock for AR-15 rifles."
+
+L["uplp_ar15_stock_light.printname"] = "Light Battle Stock"
+L["uplp_ar15_stock_light.compactname"] = "Light"
+L["uplp_ar15_stock_light.description"] = "Lightweight adjustable stock for AR-15 rifles."
+
+L["uplp_ar15_stock_m16.printname"] = "Fixed Stock"
+L["uplp_ar15_stock_m16.compactname"] = "Fixed"
+L["uplp_ar15_stock_m16.description"] = "Fixed stock used on the M16."
+
+L["uplp_ar15_stock_m4.printname"] = "M4 Stock"
+L["uplp_ar15_stock_m4.compactname"] = "M4"
+L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4."
+
+L["uplp_ar15_stock_modern.printname"] = "Competition Stock"
+L["uplp_ar15_stock_modern.compactname"] = "Competition"
+L["uplp_ar15_stock_modern.description"] = "Lightweight stock made for competition for AR-15 rifles."
+
+L["uplp_ar15_stock_pdw.printname"] = "PDW Stock"
+L["uplp_ar15_stock_pdw.compactname"] = "PDW"
+L["uplp_ar15_stock_pdw.description"] = "Slim, compact and adjustable PDW stock for AR-15 rifles."
+
+L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter Stock"
+L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
+L["uplp_ar15_stock_sniper.description"] = "Adjustable heavy stock for AR-15 rifles."
+
+L["uplp_ar15_stock_tac.printname"] = "Tactical Stock"
+L["uplp_ar15_stock_tac.compactname"] = "Tactical"
+L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles."
+
+L["uplp_ar15_stock_veryheavy.printname"] = "Marksman Stock"
+L["uplp_ar15_stock_veryheavy.compactname"] = "Marksman"
+L["uplp_ar15_stock_veryheavy.description"] = "Very heavy stock for AR-15 rifles."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
