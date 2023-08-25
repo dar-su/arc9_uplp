@@ -24,11 +24,13 @@ L["uplp_country_usa"] = "United States"
 L["uplp_caliber"] = "Calibre"
 
 L["uplp_caliber_7.62x32mm"] = "7.62x39mm Soviet"
+L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
+L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 
 /////////// Year
 L["uplp_year"] = "Year"
@@ -70,15 +72,18 @@ L["uplp_class_weapon_throwable"] = "Throwable"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments
 //////////////////// Category Names
-L["uplp_category_optic"] = "Optic"
-L["uplp_category_muzzle"] = "Muzzle"
-L["uplp_category_magazine"] = "Magazine"
 L["uplp_category_barrel"] = "Barrel"
-L["uplp_category_pistol_grip"] = "Pistol Grip"
-L["uplp_category_stock"] = "Stock"
-L["uplp_category_handguard"] = "Handguard"
 L["uplp_category_dustcover"] = "Dust Cover"
+L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Foregrip"
+L["uplp_category_handguard"] = "Handguard"
+L["uplp_category_magazine"] = "Magazine"
+L["uplp_category_muzzle"] = "Muzzle"
+L["uplp_category_optic"] = "Optic"
+L["uplp_category_pistol_grip"] = "Pistol Grip"
+L["uplp_category_sight_front"] = "Front Sight"
+L["uplp_category_sight_rear"] = "Rear Sight"
+L["uplp_category_stock"] = "Stock"
 
 //////////////////// Folder Names
 L["uplp_folder_suppressor"] = "Suppressors"
@@ -159,9 +164,9 @@ L["uplp_ak_dc_rail.printname"] = "Dust Cover with Rail"
 L["uplp_ak_dc_rail.compactname"] = "Rail"
 L["uplp_ak_dc_rail.description"] = "Alternative dust cover with built-in rail for optics."
 
-L["uplp_ak_dc_zen.printname"] = "Zenith Dust Cover"
-L["uplp_ak_dc_zen.compactname"] = "Zenith"
-L["uplp_ak_dc_zen.description"] = "Modernized dust cover for AK rifles. Comes with built-in top rail for optics."
+L["uplp_ak_dc_azen.printname"] = "Zenith Dust Cover"
+L["uplp_ak_dc_azen.compactname"] = "Zenith"
+L["uplp_ak_dc_azen.description"] = "Modernized dust cover for AK rifles. Comes with built-in top rail for optics."
 
 L["uplp_ak_dc_beryl.printname"] = "Beryl Dust Cover & Rail"
 L["uplp_ak_dc_beryl.compactname"] = "Beryl"
@@ -242,13 +247,13 @@ L["uplp_ak_hg_dong.printname"] = "Dong Handguard"
 L["uplp_ak_hg_dong.compactname"] = "Dong"
 L["uplp_ak_hg_dong.description"] = "Wooden handguard with built-in foregrip used on an AK rifle of Romanian origin."
 
-L["uplp_ak_hg_zen.printname"] = "Zenith Handguard"
-L["uplp_ak_hg_zen.compactname"] = "Zenith"
-L["uplp_ak_hg_zen.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
+L["uplp_ak_hg_azen.printname"] = "Zenith Handguard"
+L["uplp_ak_hg_azen.compactname"] = "Zenith"
+L["uplp_ak_hg_azen.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
 
-L["uplp_ak_hg_zen_c.printname"] = "Shortened Zenith Handguard"
-L["uplp_ak_hg_zen_c.compactname"] = "S Zenith"
-L["uplp_ak_hg_zen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
+L["uplp_ak_hg_azen_c.printname"] = "Shortened Zenith Handguard"
+L["uplp_ak_hg_azen_c.compactname"] = "S Zenith"
+L["uplp_ak_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
 
 L["uplp_ak_hg_su_tac.printname"] = "Tactical Handguard"
 L["uplp_ak_hg_su_tac.compactname"] = "Tactical"
@@ -468,6 +473,188 @@ L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "The AR-15 is a lightweight, air-cooled, gas-operated, magazine-fed fully automatic rifle that has gained popularity for its modularity and versatility. It's widely used by military and law enforcement agencies, known for its accuracy and adaptability to various combat situations."
+
+/////////// Attachments
+////// Barrels
+L["uplp_ar15_barrel_10.printname"] = "254mm Barrel"
+L["uplp_ar15_barrel_10.compactname"] = "254mm"
+L["uplp_ar15_barrel_10.description"] = "254mm (10\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_14.printname"] = "356mm Barrel"
+L["uplp_ar15_barrel_14.compactname"] = "356mm"
+L["uplp_ar15_barrel_14.description"] = "356mm (14\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_16.printname"] = "406mm Barrel"
+L["uplp_ar15_barrel_16.compactname"] = "406mm"
+L["uplp_ar15_barrel_16.description"] = "406mm (16\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_20.printname"] = "508mm Barrel"
+L["uplp_ar15_barrel_20.compactname"] = "508mm"
+L["uplp_ar15_barrel_20.description"] = "508mm (20\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_22.printname"] = "559mm Barrel"
+L["uplp_ar15_barrel_22.compactname"] = "559mm"
+L["uplp_ar15_barrel_22.description"] = "559mm (22\") barrel used on AR-15 rifles."
+
+////// Charging Handles
+L["uplp_ar15_chandle_modern.printname"] = "Slim Charging Handle"
+L["uplp_ar15_chandle_modern.compactname"] = "Slim"
+L["uplp_ar15_chandle_modern.description"] = "A slim rear charging handle for use on AR-15 rifles."
+
+L["uplp_ar15_chandle_std.printname"] = "Standard Charging Handle"
+L["uplp_ar15_chandle_std.compactname"] = "Standard"
+L["uplp_ar15_chandle_std.description"] = "Traditional rear charging handle for use on AR-15 rifles."
+
+L["uplp_ar15_chandle_tac.printname"] = "Tactical Charging Handle"
+L["uplp_ar15_chandle_tac.compactname"] = "Tactical"
+L["uplp_ar15_chandle_tac.description"] = "A sporty, tactical charging handle for use on AR-15 rifles."
+
+L["uplp_ar15_chandle_tacblack.printname"] = "Tactical Charging Handle (Pitch Black)"
+L["uplp_ar15_chandle_tacblack.compactname"] = "Tactical (PB)"
+L["uplp_ar15_chandle_tacblack.description"] = "A sporty, tactical charging handle for use on AR-15 rifles.\n\nSpecial Pitch Black version."
+
+////// Front Sights
+L["uplp_ar15_fs_mbus.printname"] = "Flip-up MBUS Front Sight"
+L["uplp_ar15_fs_mbus.compactname"] = "MBUS"
+L["uplp_ar15_fs_mbus.description"] = "A flip-up front sight manufactured by Magpul."
+
+L["uplp_ar15_fs_scalar.printname"] = "Scalarworks Front Sight"
+L["uplp_ar15_fs_scalar.compactname"] = "Scalarworks"
+L["uplp_ar15_fs_scalar.description"] = "Adjustable front sights manufactured by Scalarworks."
+
+L["uplp_ar15_fs_type1.printname"] = "Type 1 Front Sight"
+L["uplp_ar15_fs_type1.compactname"] = "Type 1"
+L["uplp_ar15_fs_type1.description"] = "Alternative flip-up front sights for use on AR-15 rifles."
+
+L["uplp_ar15_fs_type2.printname"] = "Type 2 Front Sight"
+L["uplp_ar15_fs_type2.compactname"] = "Type 2"
+L["uplp_ar15_fs_type2.description"] = "Alternative flip-up front sights for use on AR-15 rifles."
+
+L["uplp_ar15_fs_utg.printname"] = "Type 3 Front Sight"
+L["uplp_ar15_fs_utg.compactname"] = "Type 3"
+L["uplp_ar15_fs_utg.description"] = "Alternative flip-up front sights for use on AR-15 rifles."
+
+////// Gasblocks
+L["uplp_ar15_gasblock_m16.printname"] = "Gas Block with built-in Front Sight"
+L["uplp_ar15_gasblock_m16.compactname"] = "GB FS"
+L["uplp_ar15_gasblock_m16.description"] = "Gas block with built-in M16/M4 front sight."
+
+L["uplp_ar15_gasblock_m16rail.printname"] = "Gas Block with built-in Front Sight and Rail Assembly"
+L["uplp_ar15_gasblock_m16rail.compactname"] = "GB FS (R)"
+L["uplp_ar15_gasblock_m16rail.description"] = "Gas block with built-in M16/M4 front sight. Comes with additional rails for mounting accessories."
+
+L["uplp_ar15_gasblock_min.printname"] = "Compact Gas Block"
+L["uplp_ar15_gasblock_min.compactname"] = "GB"
+L["uplp_ar15_gasblock_min.description"] = "The bare minimum gas block allowing the AR-15 rifle to function."
+
+L["uplp_ar15_gasblock_min_red.printname"] = "Compact Gas Block (Sporty Red)"
+L["uplp_ar15_gasblock_min_red.compactname"] = "GB (SR)"
+L["uplp_ar15_gasblock_min_red.description"] = "The bare minimum gas block allowing the AR-15 rifle to function.\n\nSpecial Sporty Red version."
+
+L["uplp_ar15_gasblock_rail.printname"] = "Gas Block with Rail"
+L["uplp_ar15_gasblock_rail.compactname"] = "GB R"
+L["uplp_ar15_gasblock_rail.description"] = "Gas block with built-in top rail for mounting front sights."
+
+////// Handguards
+local requires = "\n\n"
+local requires14 = requires .. "Requires 356mm (14\") or longer barrel."
+local requires16 = requires .. "Requires 406mm (16\") or longer barrel."
+local requires20 = requires .. "Requires 508mm (20\") or longer barrel."
+local requires22 = requires .. "Requires 559mm (22\") or longer barrel."
+local onlycompact = "\n" .. "Can only use Compact Gas Block."
+
+L["uplp_ar15_hg_grenadier.printname"] = "Grenadier Handguard"
+L["uplp_ar15_hg_grenadier.compactname"] = "Grenadier"
+L["uplp_ar15_hg_grenadier.description"] = "AR-15 handguard used on the M16 equipped with the M203 grenade launcher." .. requires16
+
+L["uplp_ar15_hg_m16.printname"] = "A2 Handguard"
+L["uplp_ar15_hg_m16.compactname"] = "A2"
+L["uplp_ar15_hg_m16.description"] = "AR-15 handguard used on the M16A2." .. requires16
+
+L["uplp_ar15_hg_m16short.printname"] = "A2 Short Handguard"
+L["uplp_ar15_hg_m16short.compactname"] = "A2 S"
+L["uplp_ar15_hg_m16short.description"] = "Shortened AR-15 handguard used on the M16A2." .. requires14
+
+L["uplp_ar15_hg_mlok.printname"] = "M-LOK Handguard"
+L["uplp_ar15_hg_mlok.compactname"] = "M-LOK"
+L["uplp_ar15_hg_mlok.description"] = "Tactical M-LOK handguard allowing installation of various accessories." .. requires16 .. onlycompact
+
+L["uplp_ar15_hg_mlokshort.printname"] = "M-LOK Short Handguard"
+L["uplp_ar15_hg_mlokshort.compactname"] = "M-LOK S"
+L["uplp_ar15_hg_mlokshort.description"] = "Shortened version of the tactical M-LOK handguard allowing installation of various accessories."
+
+L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuku S-15 Handguard"
+L["uplp_ar15_hg_nwsu_s15.compactname"] = "S-15"
+L["uplp_ar15_hg_nwsu_s15.description"] = "Lightweight S-15 handguard manufactured by Nowosuko." .. requires14 .. onlycompact
+
+L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15 Handguard (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
+L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuko.\nSpecial Sporty Red version." .. requires14 .. onlycompact
+
+L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL Handguard"
+L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
+L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko." .. requires16 .. onlycompact
+
+L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL Handguard (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko.\nSpecial Sporty Red version." .. requires16 .. onlycompact
+
+L["uplp_ar15_hg_ris.printname"] = "RIS Handguard"
+L["uplp_ar15_hg_ris.compactname"] = "RIS"
+L["uplp_ar15_hg_ris.description"] = "Standard military-grade handguard with built-in RIS rail system." .. requires14
+
+L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handguard"
+L["uplp_ar15_hg_risshort.compactname"] = "RIS"
+L["uplp_ar15_hg_risshort.description"] = "Shortened version of a military-grade handguard with built-in RIS rail system."
+
+L["uplp_ar15_hg_tac.printname"] = "Tactical Handguard"
+L["uplp_ar15_hg_tac.compactname"] = "Tactical"
+L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 rifles." .. requires16
+
+L["uplp_ar15_hg_tac_red.printname"] = "Tactical Handguard (Sporty Red)"
+L["uplp_ar15_hg_tac_red.compactname"] = "Tactical (SR)"
+L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles.\nSpecial Sporty Red version." .. requires16
+
+L["uplp_ar15_hg_tacshort.printname"] = "Tactical Short Handguard"
+L["uplp_ar15_hg_tacshort.compactname"] = "Tactical S"
+L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handguard for AR-15 rifles."
+
+L["uplp_ar15_hg_tacshort_red.printname"] = "Tactical Short Handguard (Sporty Red)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "Tactical S (SR)"
+L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles.\nSpecial Sporty Red version."
+
+////// Pistol Grips
+L["uplp_ar15_pgrip_416.printname"] = "416 Pistol Grip"
+L["uplp_ar15_pgrip_416.compactname"] = "416"
+L["uplp_ar15_pgrip_416.description"] = "Standard pistol grip used on a modified AR-15 of German origin."
+
+L["uplp_ar15_pgrip_massive.printname"] = "Massive Pistol Grip"
+L["uplp_ar15_pgrip_massive.compactname"] = "Massive"
+L["uplp_ar15_pgrip_massive.description"] = "Oversized pistol grip for AR-15 rifles."
+
+L["uplp_ar15_pgrip_modern.printname"] = "Modern Pistol Grip"
+L["uplp_ar15_pgrip_modern.compactname"] = "Modern"
+L["uplp_ar15_pgrip_modern.description"] = "Modernized pistol grip for AR-15 rifles."
+
+L["uplp_ar15_pgrip_psg.printname"] = "Sharpshooter Pistol Grip"
+L["uplp_ar15_pgrip_psg.compactname"] = "Sharpshooter"
+L["uplp_ar15_pgrip_psg.description"] = "Heavy pistol grip with built-in palm shelf for AR-15 rifles."
+
+L["uplp_ar15_pgrip_skel.printname"] = "Skeleton Pistol Grip"
+L["uplp_ar15_pgrip_skel.compactname"] = "Skeleton"
+L["uplp_ar15_pgrip_skel.description"] = "Lightweight pistol grip for AR-15 rifles."
+
+L["uplp_ar15_pgrip_skel_red.printname"] = "Skeleton Pistol Grip (Sporty Red)"
+L["uplp_ar15_pgrip_skel_red.compactname"] = "Skeleton (SR)"
+L["uplp_ar15_pgrip_skel_red.description"] = "Lightweight pistol grip for AR-15 rifles.\nSpecial Sporty Red version."
+
+L["uplp_ar15_pgrip_std.printname"] = "Standard Pistol Grip"
+L["uplp_ar15_pgrip_std.compactname"] = "Standard"
+L["uplp_ar15_pgrip_std.description"] = "Traditional pistol grip for AR-15 rifles."
+
+L["uplp_ar15_pgrip_tac.printname"] = "Tactical Pistol Grip"
+L["uplp_ar15_pgrip_tac.compactname"] = "Tactical"
+L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"

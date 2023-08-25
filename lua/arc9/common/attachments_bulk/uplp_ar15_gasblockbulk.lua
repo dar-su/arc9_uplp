@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "M-16 gasblock"
-ATT.CompactName = "M-16"
-ATT.Description = [[A M-16 gasblock for AR-15 rifle.]]
+ATT.PrintName = "Gasblock with built-in Front Sight"
+ATT.CompactName = "GB FS"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -29,9 +29,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16")
 
 ATT = {}
 
-ATT.PrintName = "M-16 gasblock with rails"
-ATT.CompactName = "M-16 Tac"
-ATT.Description = [[A M-16 gasblock with rails for AR-15 rifle.]]
+ATT.PrintName = "Gasblock with built-in Front Sight and Rail Assembly"
+ATT.CompactName = "GB FS (R)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -52,8 +52,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Compact gasblock"
-ATT.CompactName = "Compact"
+ATT.PrintName = "Compact Gas Block"
+ATT.CompactName = "GB"
 ATT.Description = [[A Compact gasblock for AR-15 rifle.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -75,8 +75,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Compact gasblock (Red)"
-ATT.CompactName = "Compact (R)"
+ATT.PrintName = "Compact Gas Block (Sporty Red)"
+ATT.CompactName = "GB (SR)"
 ATT.Description = [[A Compact gasblock for AR-15 rifle.
 
 Red edition.]]
@@ -100,8 +100,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min_red")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Rail gasblock"
-ATT.CompactName = "Rail"
+ATT.PrintName = "Gas Block with Rail"
+ATT.CompactName = "GB R"
 ATT.Description = [[A Rail gasblock for AR-15 rifle.]]
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")

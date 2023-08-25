@@ -70,15 +70,18 @@ L["uplp_class_weapon_throwable"] = "Kastbar"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments
 //////////////////// Category Names
-L["uplp_category_optic"] = "Riktmedel"
-L["uplp_category_muzzle"] = "Mynning"
-L["uplp_category_magazine"] = "Magasin"
 L["uplp_category_barrel"] = "Pipa"
-L["uplp_category_pistol_grip"] = "Pistolgrepp"
-L["uplp_category_stock"] = "Kolv"
-L["uplp_category_handguard"] = "Handgrepp"
 L["uplp_category_dustcover"] = "Dammskydd"
+L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
+L["uplp_category_Handgrepp"] = "Handgrepp"
+L["uplp_category_magazine"] = "Magasin"
+L["uplp_category_muzzle"] = "Mynning"
+L["uplp_category_optic"] = "Riktmedel"
+L["uplp_category_pistol_grip"] = "Pistolgrepp"
+L["uplp_category_sight_front"] = "Framkorn"
+L["uplp_category_sight_rear"] = "Bakre Sikte"
+L["uplp_category_stock"] = "Kolv"
 
 //////////////////// Folder Names
 L["uplp_folder_suppressor"] = "Ljuddämpare"
@@ -159,9 +162,9 @@ L["uplp_ak_dc_rail.printname"] = "Dammskydd med Skena"
 L["uplp_ak_dc_rail.compactname"] = "Skena"
 L["uplp_ak_dc_rail.description"] = "Alternativt dammskydd med inbyggd skena för riktmedel."
 
-L["uplp_ak_dc_zen.printname"] = "Zenith-Dammskydd"
-L["uplp_ak_dc_zen.compactname"] = "Zenith"
-L["uplp_ak_dc_zen.description"] = "Modernt dammskydd för AK-gevär. Kommer med inbyggd toppmonterad skena för riktmedel."
+L["uplp_ak_dc_azen.printname"] = "Zenith-Dammskydd"
+L["uplp_ak_dc_azen.compactname"] = "Zenith"
+L["uplp_ak_dc_azen.description"] = "Modernt dammskydd för AK-gevär. Kommer med inbyggd toppmonterad skena för riktmedel."
 
 L["uplp_ak_dc_beryl.printname"] = "Beryl Dammskydd & Skena"
 L["uplp_ak_dc_beryl.compactname"] = "Beryl"
@@ -233,13 +236,13 @@ L["uplp_ak_hg_dong.printname"] = "Dong-Handgrepp"
 L["uplp_ak_hg_dong.compactname"] = "Dong"
 L["uplp_ak_hg_dong.description"] = "Trähandgrepp med inbyggt framgrepp som används av ett AK-gevär med rumänskt ursprung."
 
-L["uplp_ak_hg_zen.printname"] = "Zenith-Handgrepp"
-L["uplp_ak_hg_zen.compactname"] = "Zenith"
-L["uplp_ak_hg_zen.description"] = "Lättviktigt handgrepp med RIS-skenafunktionalitet byggd till AK-gevär."
+L["uplp_ak_hg_azen.printname"] = "Zenith-Handgrepp"
+L["uplp_ak_hg_azen.compactname"] = "Zenith"
+L["uplp_ak_hg_azen.description"] = "Lättviktigt handgrepp med RIS-skenafunktionalitet byggd till AK-gevär."
 
-L["uplp_ak_hg_zen_c.printname"] = "Förkortat Zenith-Handgrepp"
-L["uplp_ak_hg_zen_c.compactname"] = "F Zenith"
-L["uplp_ak_hg_zen_c.description"] = "Lättviktigt handgrepp med RIS-skena funktionalitet byggd till AK-gevär."
+L["uplp_ak_hg_azen_c.printname"] = "Förkortat Zenith-Handgrepp"
+L["uplp_ak_hg_azen_c.compactname"] = "F Zenith"
+L["uplp_ak_hg_azen_c.description"] = "Lättviktigt handgrepp med RIS-skena funktionalitet byggd till AK-gevär."
 
 L["uplp_ak_hg_su_tac.printname"] = "Taktiskt Handgrepp"
 L["uplp_ak_hg_su_tac.compactname"] = "Taktiskt"
@@ -459,6 +462,188 @@ L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av k
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "AR-15 är ett lättviktigt, luftkyld, gasdrivet, magasinfött helautomatiskt gevär som har blivit populärt för sin modularitet och mångsidighet. Det används allmänt av militära och polisiära organisationer, känt för sin noggrannhet och anpassningsförmåga till olika stridssituationer."
+
+/////////// Attachments
+////// Barrels
+L["uplp_ar15_barrel_10.printname"] = "254mm Pipa"
+L["uplp_ar15_barrel_10.compactname"] = "254mm"
+L["uplp_ar15_barrel_10.description"] = "254mm pipa som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_14.printname"] = "356mm Pipa"
+L["uplp_ar15_barrel_14.compactname"] = "356mm"
+L["uplp_ar15_barrel_14.description"] = "356mm som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_16.printname"] = "406mm Pipa"
+L["uplp_ar15_barrel_16.compactname"] = "406mm"
+L["uplp_ar15_barrel_16.description"] = "406mm som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_20.printname"] = "508mm Pipa"
+L["uplp_ar15_barrel_20.compactname"] = "508mm"
+L["uplp_ar15_barrel_20.description"] = "508mm som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_22.printname"] = "559mm Pipa"
+L["uplp_ar15_barrel_22.compactname"] = "559mm"
+L["uplp_ar15_barrel_22.description"] = "559mm som används på AR-15-gevär."
+
+////// Charging Handles
+L["uplp_ar15_chandle_modern.printname"] = "Kompakt Laddningshandtag"
+L["uplp_ar15_chandle_modern.compactname"] = "Kompakt"
+L["uplp_ar15_chandle_modern.description"] = "Ett kompakt laddningshandtag som används på AR-15-gevär."
+
+L["uplp_ar15_chandle_std.printname"] = "Standard Laddningshandtag"
+L["uplp_ar15_chandle_std.compactname"] = "Standard"
+L["uplp_ar15_chandle_std.description"] = "Traditionellt laddningshandtag som används på AR-15-gevär."
+
+L["uplp_ar15_chandle_tac.printname"] = "Taktiskt Laddningshandtag"
+L["uplp_ar15_chandle_tac.compactname"] = "Taktiskt"
+L["uplp_ar15_chandle_tac.description"] = "Sportigt och taktiskt laddningshandtag som används på AR-15-gevär."
+
+L["uplp_ar15_chandle_tacblack.printname"] = "Taktiskt Laddningshandtag (Pitch Black)"
+L["uplp_ar15_chandle_tacblack.compactname"] = "Taktiskt (PB)"
+L["uplp_ar15_chandle_tacblack.description"] = "Sportigt och taktiskt laddningshandtag som används på AR-15-gevär.\n\nSpeciell \"Pitch Black\"-version."
+
+////// Front Sights
+L["uplp_ar15_fs_mbus.printname"] = "MBUS Flip-up-Framkorn"
+L["uplp_ar15_fs_mbus.compactname"] = "MBUS"
+L["uplp_ar15_fs_mbus.description"] = "Ett flip-up-framkorn tillverkat av Magpul."
+
+L["uplp_ar15_fs_scalar.printname"] = "Scalarworks-Framkorn"
+L["uplp_ar15_fs_scalar.compactname"] = "Scalarworks"
+L["uplp_ar15_fs_scalar.description"] = "Justerbart framkorn tillverkat av Scalarworks."
+
+L["uplp_ar15_fs_type1.printname"] = "Typ 1 Framkorn"
+L["uplp_ar15_fs_type1.compactname"] = "Typ 1"
+L["uplp_ar15_fs_type1.description"] = "Alternativa flip-up-framkorn för användning på AR-15-gevär."
+
+L["uplp_ar15_fs_type2.printname"] = "Typ 2 Framkorn"
+L["uplp_ar15_fs_type2.compactname"] = "Typ 2"
+L["uplp_ar15_fs_type2.description"] = "Alternativa flip-up-framkorn för användning på AR-15-gevär."
+
+L["uplp_ar15_fs_utg.printname"] = "Typ 3 Framkorn"
+L["uplp_ar15_fs_utg.compactname"] = "Typ 3"
+L["uplp_ar15_fs_utg.description"] = "Alternativa flip-up-framkorn för användning på AR-15-gevär."
+
+////// Gasblocks
+L["uplp_ar15_gasblock_m16.printname"] = "Gasregulator med inbyggt Framkorn"
+L["uplp_ar15_gasblock_m16.compactname"] = "GR FK"
+L["uplp_ar15_gasblock_m16.description"] = "Gasregulator med inbyggt M16/M4-framkorn."
+
+L["uplp_ar15_gasblock_m16rail.printname"] = "Gasregulator med inbyggt Framkorn och Skenafunktionalitet"
+L["uplp_ar15_gasblock_m16rail.compactname"] = "GR FK (S)"
+L["uplp_ar15_gasblock_m16rail.description"] = "Gasregulator med inbyggt M16/M4-framkorn. Kommer med flera skenor för att montera tillbehör."
+
+L["uplp_ar15_gasblock_min.printname"] = "Kompakt Gasregulator"
+L["uplp_ar15_gasblock_min.compactname"] = "GR"
+L["uplp_ar15_gasblock_min.description"] = "Minimum gasregulator som tillåter AR-15-gevär att fungera."
+
+L["uplp_ar15_gasblock_min_red.printname"] = "Kompakt Gasregulator (Sporty Red)"
+L["uplp_ar15_gasblock_min_red.compactname"] = "GR (SR)"
+L["uplp_ar15_gasblock_min_red.description"] = "Minimum gasregulator som tillåter AR-15-gevär att fungera.\n\nSpeciell \"Sporty Red\"-version."
+
+L["uplp_ar15_gasblock_rail.printname"] = "Gasregulator med Skena"
+L["uplp_ar15_gasblock_rail.compactname"] = "GR S"
+L["uplp_ar15_gasblock_rail.description"] = "Gasregulator med inbyggd toppmonterad skena för att montera framkorn."
+
+////// Handguards
+local requires = "\n\n"
+local requires14 = requires .. "Kräver 356mm eller längre pipa."
+local requires16 = requires .. "Kräver 406mm eller längre pipa."
+local requires20 = requires .. "Kräver 508mm eller längre pipa."
+local requires22 = requires .. "Kräver 559mm eller längre pipa."
+local onlycompact = "\n" .. "Kan endast använda Kompakt Gasregulator."
+
+L["uplp_ar15_hg_grenadier.printname"] = "Grenadjär Handgrepp"
+L["uplp_ar15_hg_grenadier.compactname"] = "Grenadjär"
+L["uplp_ar15_hg_grenadier.description"] = "AR-15-handgrepp som användes på M16 utrustat med granattillsatsen M203." .. requires16
+
+L["uplp_ar15_hg_m16.printname"] = "A2-Handgrepp"
+L["uplp_ar15_hg_m16.compactname"] = "A2"
+L["uplp_ar15_hg_m16.description"] = "AR-15-handgrepp som användes på M16A2." .. requires16
+
+L["uplp_ar15_hg_m16short.printname"] = "A2 Kort Handgrepp"
+L["uplp_ar15_hg_m16short.compactname"] = "A2 S"
+L["uplp_ar15_hg_m16short.description"] = "Förkortat AR-15-handgrepp som användes på M16A2." .. requires14
+
+L["uplp_ar15_hg_mlok.printname"] = "M-LOK-Handgrepp"
+L["uplp_ar15_hg_mlok.compactname"] = "M-LOK"
+L["uplp_ar15_hg_mlok.description"] = "Taktiskt M-LOK-handgrepp som tillåter installation av diverse tillbehör." .. requires16 .. onlycompact
+
+L["uplp_ar15_hg_mlokshort.printname"] = "M-LOK Kort Handgrepp"
+L["uplp_ar15_hg_mlokshort.compactname"] = "M-LOK S"
+L["uplp_ar15_hg_mlokshort.description"] = "Förkortad version av det taktiska M-LOK-handgreppet som tillåter installation av diverse tillbehör."
+
+L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuku S-15-Handgrepp"
+L["uplp_ar15_hg_nwsu_s15.compactname"] = "S-15"
+L["uplp_ar15_hg_nwsu_s15.description"] = "Lättvikt S-15-handgrepp tillverkat av Nowosuko." .. requires14 .. onlycompact
+
+L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15-Handgrepp (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
+L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lättvikt S-15-handgrepp tillverkat av Nowosuko.\nSpeciell \"Sporty Red\"-version." .. requires14 .. onlycompact
+
+L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL-Handgrepp"
+L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
+L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Längre variant av det lättvikta S-15-handgreppet tillverkat av Nowosuko." .. requires16 .. onlycompact
+
+L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL-Handgrepp (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lättvikta S-15-handgreppet tillverkat av Nowosuko.\nSpeciell \"Sporty Red\"-version." .. requires16 .. onlycompact
+
+L["uplp_ar15_hg_ris.printname"] = "RIS Handgrepp"
+L["uplp_ar15_hg_ris.compactname"] = "RIS"
+L["uplp_ar15_hg_ris.description"] = "Standard militär grad handgrepp med inbyggt RIS-skenafunktionalitet." .. requires14
+
+L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handgrepp"
+L["uplp_ar15_hg_risshort.compactname"] = "RIS"
+L["uplp_ar15_hg_risshort.description"] = "Förkortad version av ett militär grad handgrepp med inbyggt RIS-skenafunktionalitet."
+
+L["uplp_ar15_hg_tac.printname"] = "Taktiskt Handgrepp"
+L["uplp_ar15_hg_tac.compactname"] = "Taktiskt"
+L["uplp_ar15_hg_tac.description"] = "Lättvikt taktiskt handgrepp till AR-15-gevär." .. requires16
+
+L["uplp_ar15_hg_tac_red.printname"] = "Taktiskt Handgrepp (Sporty Red)"
+L["uplp_ar15_hg_tac_red.compactname"] = "Tactical (SR)"
+L["uplp_ar15_hg_tac_red.description"] = "Lättvikt taktiskt handgrepp till AR-15-gevär.\nSpeciell \"Sporty Red\"-version." .. requires16
+
+L["uplp_ar15_hg_tacshort.printname"] = "Tactical Short Handgrepp"
+L["uplp_ar15_hg_tacshort.compactname"] = "Tactical S"
+L["uplp_ar15_hg_tacshort.description"] = "Förkortat och lättvikt taktiskt handgrepp till AR-15-gevär."
+
+L["uplp_ar15_hg_tacshort_red.printname"] = "Tactical Short Handguard (Sporty Red)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "Tactical S (SR)"
+L["uplp_ar15_hg_tacshort_red.description"] = "Förkortat och lättvikt taktiskt handgrepp till AR-15-gevär.\nSpeciell \"Sporty Red\"-version."
+
+////// Pistol Grips
+L["uplp_ar15_pgrip_416.printname"] = "416-Pistolgrepp"
+L["uplp_ar15_pgrip_416.compactname"] = "416"
+L["uplp_ar15_pgrip_416.description"] = "Standard pistolgrepp som används på en anpassad AR-15 av tyskt ursprung."
+
+L["uplp_ar15_pgrip_massive.printname"] = "Massivt Pistolgrepp"
+L["uplp_ar15_pgrip_massive.compactname"] = "Massivt"
+L["uplp_ar15_pgrip_massive.description"] = "Förstorat pistolgrepp till AR-15-gevär."
+
+L["uplp_ar15_pgrip_modern.printname"] = "Modernt Pistolgrepp"
+L["uplp_ar15_pgrip_modern.compactname"] = "Modernt"
+L["uplp_ar15_pgrip_modern.description"] = "Moderniserat pistolgrepp till AR-15-gevär."
+
+L["uplp_ar15_pgrip_psg.printname"] = "Sharpshooter-Pistolgrepp"
+L["uplp_ar15_pgrip_psg.compactname"] = "Sharpshooter"
+L["uplp_ar15_pgrip_psg.description"] = "Tungt pistolgrepp med inbyggt handledsstöd till AR-15-gevär."
+
+L["uplp_ar15_pgrip_skel.printname"] = "Skelett Pistolgrepp"
+L["uplp_ar15_pgrip_skel.compactname"] = "Skelett"
+L["uplp_ar15_pgrip_skel.description"] = "Lättvikt pistolgrepp till AR-15-gevär."
+
+L["uplp_ar15_pgrip_skel_red.printname"] = "Skelett Pistolgrepp (Sporty Red)"
+L["uplp_ar15_pgrip_skel_red.compactname"] = "Skelett (SR)"
+L["uplp_ar15_pgrip_skel_red.description"] = "Lättvikt pistolgrepp till AR-15-gevär.\nSpeciell \"Sporty Red\"-version."
+
+L["uplp_ar15_pgrip_std.printname"] = "Standard Pistolgrepp"
+L["uplp_ar15_pgrip_std.compactname"] = "Standard"
+L["uplp_ar15_pgrip_std.description"] = "Traditionellt pistolgrepp till AR-15-gevär."
+
+L["uplp_ar15_pgrip_tac.printname"] = "Taktiskt Pistolgrepp"
+L["uplp_ar15_pgrip_tac.compactname"] = "Taktiskt"
+L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"

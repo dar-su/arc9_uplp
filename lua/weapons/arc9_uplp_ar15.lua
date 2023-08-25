@@ -29,18 +29,20 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar")
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar")
 
 SWEP.Trivia = {
-    Manufacturer = "U.S. Ordnance",
-    Calibre = "5.56x45mm NATO",
-    Mechanism = "Gas-operated, closed rotating bolt",
-    Country = "United States",
-    Year = "1964 > Present"
+    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_uso" ),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
+																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1964" ),
 }
 
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ar15_desc") 
 
 SWEP.Credits = {
-    Authors = "Darsu | Moka",
-    Assets = "LIST ASSETS"
+    [ ARC9:GetPhrase( "uplp_authors" ) ] = "Darsu | Moka",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "LIST ASSETS"
 }
 
 -- Weapon slot --
@@ -86,8 +88,7 @@ SWEP.RecoilPunch = 0
 SWEP.RecoilMultSights = 0.8
 SWEP.RecoilMultCrouch = 0.75
 
-
-
+SWEP.Sway = 0
 
 SWEP.UseVisualRecoil = false 
 SWEP.PhysicalVisualRecoil = false 
@@ -123,9 +124,22 @@ SWEP.NPCWeight = 60
 
 -- Accuracy --
 
-SWEP.Spread = 0.01
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.02
+
+SWEP.SpreadAddRecoil = 0.08
+SWEP.SpreadAddMove = 0.04
+
 SWEP.SpreadMultSights = 0.001
-SWEP.SpreadMultMove = 5
+SWEP.SpreadMultMove = 1
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilDissipationRateSights = 10
+SWEP.RecoilResetTime = 0
+SWEP.RecoilPerShot = 0.25
+SWEP.RecoilMax = 1
+
+SWEP.RecoilModifierCapSights = 0.1
 
 -- Speed mult --
 
@@ -135,7 +149,7 @@ SWEP.SpeedMultSights = 0.65
 SWEP.AimDownSightsTime = 0.5
 SWEP.SprintToFireTime = 0.5
 
-SWEP.AimDownSightsTimeMultRecoil = 2
+-- SWEP.AimDownSightsTimeMultRecoil = 2
 
 -- Gun length --
 
@@ -151,10 +165,10 @@ SWEP.HoldTypeBlindfire = "pistol"
 SWEP.HoldTypeNPC = nil
 
 SWEP.IronSights = {
-     Pos = Vector(-2.24, -3, 0.5),
-     Ang = Angle(0.17, 0, 0),
-     Magnification = 1,
-     ViewModelFOV = 70,
+     Pos = Vector(-2.275, -3, 0.35),
+     Ang = Angle(0.35, 0.125, -3),
+     Magnification = 1.15,
+     ViewModelFOV = 55,
 }
 
 SWEP.ActivePos = Vector(-0.2, -1.0, 0.5)
@@ -570,7 +584,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_556_mag"},
         ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
         Bone = "mag",
-        Pos = Vector(0, -2.406, -2.428),
+        Pos = Vector(0.04, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
         Integral = "uplp_ar15_mag_stanag30",

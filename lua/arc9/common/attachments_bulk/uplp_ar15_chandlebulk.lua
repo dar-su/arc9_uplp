@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "Modern charging handle"
-ATT.CompactName = "Modern"
-ATT.Description = [[A Modern charging handle for AR-15 type rifles.]]
+ATT.PrintName = "Slim Charging Handle"
+ATT.CompactName = "Slim"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -29,9 +29,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_modern")
 
 ATT = {}
 
-ATT.PrintName = "Standard charging handle"
+ATT.PrintName = "Standard Charging Handle"
 ATT.CompactName = "Standard"
-ATT.Description = [[A standard charging handle for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -52,9 +52,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_std")
 
 ATT = {}
 
-ATT.PrintName = "Tactical charging handle"
+ATT.PrintName = "Tactical Charging Handle"
 ATT.CompactName = "Tactical"
-ATT.Description = [[A Tactical charging handle for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -75,11 +75,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tac")
 
 ATT = {}
 
-ATT.PrintName = "Tactical charging handle (Black)"
+ATT.PrintName = "Tactical Charging Handle (Black)"
 ATT.CompactName = "Tactical (B)"
-ATT.Description = [[A standard charging handle for AR-15 type rifles.
-
-Black edition for rzenith.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

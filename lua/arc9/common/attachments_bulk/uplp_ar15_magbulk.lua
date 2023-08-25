@@ -317,8 +317,6 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag30")
 
 

@@ -41,8 +41,8 @@ SWEP.Trivia = {
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
 
 SWEP.Credits = {
-    Authors = "Darsu | Moka",
-    Assets = "LIST ASSETS"
+    [ ARC9:GetPhrase( "uplp_authors" ) ] = "Darsu | Moka",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "LIST ASSETS"
 }
 
 SWEP.StandardPresets = {
@@ -156,7 +156,7 @@ SWEP.NPCWeight = 60
 SWEP.Spread = 0
 SWEP.SpreadAddHipFire = 0.02
 
-SWEP.SpreadAddRecoil = 0.065
+SWEP.SpreadAddRecoil = 0.075
 SWEP.SpreadAddMove = 0.04
 
 SWEP.SpreadMultSights = 0.001
@@ -168,7 +168,7 @@ SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 0.33
 SWEP.RecoilMax = 1
 
-SWEP.RecoilModifierCapSights = 0.25
+SWEP.RecoilModifierCapSights = 0.15
 
 -- Speed mult --
 

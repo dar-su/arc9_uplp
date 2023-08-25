@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "HK416 pistol grip"
+ATT.PrintName = "416 Pistol Grip"
 ATT.CompactName = "416"
-ATT.Description = [[A HK416 pistol grip for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -34,9 +34,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_416")
 
 ATT = {}
 
-ATT.PrintName = "Massive pistol grip"
+ATT.PrintName = "Massive Pistol Grip"
 ATT.CompactName = "Massive"
-ATT.Description = [[A Massive pistol grip for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -62,9 +62,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_massive")
 
 ATT = {}
 
-ATT.PrintName = "Modern pistol grip"
+ATT.PrintName = "Modern Pistol Grip"
 ATT.CompactName = "Modern"
-ATT.Description = [[A Modern pistol grip for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -90,9 +90,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_modern")
 
 ATT = {}
 
-ATT.PrintName = "Sniper pistol grip"
-ATT.CompactName = "Sniper"
-ATT.Description = [[A Sniper pistol grip for AR-15 type rifles.]]
+ATT.PrintName = "Sharpshooter Pistol Grip"
+ATT.CompactName = "Sharpshooter"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -120,9 +120,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_psg")
 
 ATT = {}
 
-ATT.PrintName = "Skeleton pistol grip"
+ATT.PrintName = "Skeleton Pistol Grip"
 ATT.CompactName = "Skeleton"
-ATT.Description = [[A Skeleton pistol grip for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -151,11 +151,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel")
 
 ATT = {}
 
-ATT.PrintName = "Skeleton pistol grip (Red)"
-ATT.CompactName = "Skeleton R"
-ATT.Description = [[A Skeleton pistol grip for AR-15 type rifles.
-
-Red edition.]]
+ATT.PrintName = "Skeleton Pistol Grip (Sporty Red)"
+ATT.CompactName = "Skeleton (SR)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -184,9 +182,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel_red")
 
 ATT = {}
 
-ATT.PrintName = "Standard pistol grip"
+ATT.PrintName = "Standard Pistol Grip"
 ATT.CompactName = "Standard"
-ATT.Description = [[A standard pistol grip for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -212,9 +210,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_std")
 
 ATT = {}
 
-ATT.PrintName = "Tactical pistol grip"
+ATT.PrintName = "Tactical Pistol Grip"
 ATT.CompactName = "Tactical"
-ATT.Description = [[A Tactical pistol grip for AR-15 type rifles.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

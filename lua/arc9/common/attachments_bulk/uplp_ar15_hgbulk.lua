@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "M-16 Grenadier handguard"
+ATT.PrintName = "Grenadier Handguard"
 ATT.CompactName = "Grenadier"
-ATT.Description = [[A M-16 Grenadier handguard for AR15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -22,7 +22,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     -- {
-    --     PrintName = "Front sight",
+    --     PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
     --     Category = "uplp_ar15_fs",
     --     Pos = Vector(-13.3, 0, 0),
     --     Ang = Angle(0, 0, 0),
@@ -38,9 +38,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_grenadier")
 
 ATT = {}
 
-ATT.PrintName = "M-16 handguard"
-ATT.CompactName = "M-16"
-ATT.Description = [[A M-16 handguard for AR15 rifle.]]
+ATT.PrintName = "A2 Handguard"
+ATT.CompactName = "A2"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -62,9 +62,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m16")
 
 ATT = {}
 
-ATT.PrintName = "M-16 Short handguard"
-ATT.CompactName = "M-16 S"
-ATT.Description = [[A M-16 Short handguard for AR15 rifle.]]
+ATT.PrintName = "Shortened A2 handguard"
+ATT.CompactName = "A2 S"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -86,9 +86,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m16short")
 
 ATT = {}
 
-ATT.PrintName = "AR15 M-LOK handguard"
+ATT.PrintName = "M-LOK Handguard"
 ATT.CompactName = "M-LOK"
-ATT.Description = [[A M-LOK handguard for AR15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -102,13 +102,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-12.0, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -124,9 +124,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
 
 ATT = {}
 
-ATT.PrintName = "AR15 short M-LOK handguard"
+ATT.PrintName = "Shortened M-LOK Handguard"
 ATT.CompactName = "M-LOK S"
-ATT.Description = [[A M-LOK handguard for AR15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -140,13 +140,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-4.9, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -162,9 +162,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlokshort")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Nowosuku S-15 handguard"
-ATT.CompactName = "NOWOSUKU"
-ATT.Description = [[A Nowosuku S-15 handguard for AR15 rifle.]]
+ATT.PrintName = "Nowosuku S-15 Handguard"
+ATT.CompactName = "S-15"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -178,13 +178,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-7.5, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -200,11 +200,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Nowosuku S-15 handguard (Red)"
-ATT.CompactName = "NOWOS. R"
-ATT.Description = [[A Nowosuku S-15 handguard for AR15 rifle.
-
-Red edition.]]
+ATT.PrintName = "Nowosuku S-15 Handguard (Sporty Red)"
+ATT.CompactName = "S-15 (SR)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -218,13 +216,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-7.5, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -240,9 +238,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_red")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Nowosuku S-15 XL handguard"
-ATT.CompactName = "NOWOS. XL"
-ATT.Description = [[A Nowosuku S-15 XL handguard for AR15 rifle.]]
+ATT.PrintName = "Nowosuku S-15 XL Handguard"
+ATT.CompactName = "S-15 XL"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -256,13 +254,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -278,11 +276,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Nowosuku S-15 XL handguard (Red)"
-ATT.CompactName = "NOWO. XLR"
-ATT.Description = [[A Nowosuku S-15 XL handguard for AR15 rifle.
-
-Red edition.]]
+ATT.PrintName = "Nowosuku S-15 XL Handguard (Sporty Red)"
+ATT.CompactName = "S-15 XL (SR)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -296,13 +292,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -318,9 +314,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl_red")
 
 ATT = {}
 
-ATT.PrintName = "AR15 RIS handguard"
+ATT.PrintName = "RIS Handguard"
 ATT.CompactName = "RIS"
-ATT.Description = [[A RIS handguard for AR15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -334,13 +330,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-9.15, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -356,9 +352,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
 ATT = {}
 
-ATT.PrintName = "AR15 RIS Short handguard"
+ATT.PrintName = "Shortened RIS Handguard"
 ATT.CompactName = "RIS S"
-ATT.Description = [[A short RIS handguard for AR15 rifle.]]
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -372,13 +368,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-4.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -394,9 +390,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_risshort")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Tactical handguard"
-ATT.CompactName = "Tac"
-ATT.Description = [[A Tactical Handguard for AR15 rifle.]]
+ATT.PrintName = "Tactical Handguard"
+ATT.CompactName = "Tactical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -410,13 +406,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -432,9 +428,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Short Tactical handguard"
-ATT.CompactName = "Tac. S"
-ATT.Description = [[A Short Tactical Handguard for AR15 rifle.]]
+ATT.PrintName = "Short Tactical handguard"
+ATT.CompactName = "Tactical S"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -448,13 +444,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-5.1, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -470,11 +466,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Short Tactical handguard (Red)"
-ATT.CompactName = "Tac. S R"
-ATT.Description = [[A Short Tactical Handguard for AR15 rifle.
-
-Red edition.]]
+ATT.PrintName = "Short Tactical Handguard (Sporty Red)"
+ATT.CompactName = "Tactical S (RS)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -488,13 +482,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-5.1, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
@@ -510,11 +504,9 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort_red")
 
 ATT = {}
 
-ATT.PrintName = "AR15 Tactical handguard (Red)"
-ATT.CompactName = "Tac. R"
-ATT.Description = [[A Tactical Handguard for AR15 rifle.
-
-Red edition.]]
+ATT.PrintName = "Tactical Handguard (Sporty Red)"
+ATT.CompactName = "Tactical (SR)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -528,13 +520,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
-        PrintName = "Grip",
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
