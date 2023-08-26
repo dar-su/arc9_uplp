@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "uplp_grip_vert"
-ATT.CompactName = "uplp_grip_vert"
-ATT.Description = [[uplp_grip_vert]]
+ATT.PrintName = "Vertical Foregrip"
+ATT.CompactName = "Vertical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -30,9 +30,9 @@ ARC9.LoadAttachment(ATT, "uplp_grip_vert")
 
 ATT = {}
 
-ATT.PrintName = "uplp_grip_skelet"
-ATT.CompactName = "uplp_grip_skelet"
-ATT.Description = [[uplp_grip_skelet]]
+ATT.PrintName = "Skeleton Foregrip"
+ATT.CompactName = "Skeleton"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -55,9 +55,9 @@ ARC9.LoadAttachment(ATT, "uplp_grip_skelet")
 
 ATT = {}
 
-ATT.PrintName = "uplp_grip_handstop"
-ATT.CompactName = "uplp_grip_handstop"
-ATT.Description = [[uplp_grip_handstop]]
+ATT.PrintName = "Angled Handstop"
+ATT.CompactName = "Handstop"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

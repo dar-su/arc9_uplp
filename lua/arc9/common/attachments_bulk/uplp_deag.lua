@@ -1,10 +1,10 @@
------ 7.62 MAGS -----
+----- Magazines -----
 
 local ATT = {}
 
-ATT.PrintName = "ext"
-ATT.CompactName = "ext"
-ATT.Description = [[ext]]
+ATT.PrintName = "13-Round Extended"
+ATT.CompactName = "13R Ext"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
@@ -28,9 +28,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_mag_ext")
 
 ATT = {}
 
-ATT.PrintName = "tac"
-ATT.CompactName = "tac"
-ATT.Description = [[tac]]
+ATT.PrintName = "Speed Magazine"
+ATT.CompactName = "Speed"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
@@ -47,9 +47,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_mag_tac")
 
 ATT = {}
 
-ATT.PrintName = "tac grip"
-ATT.CompactName = "tac grip"
-ATT.Description = [[tac grip]]
+ATT.PrintName = "Rubberized Grip"
+ATT.CompactName = "Rubber"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_grip"
@@ -64,9 +64,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_grip_tac")
 
 ATT = {}
 
-ATT.PrintName = "heavy"
-ATT.CompactName = "heavy"
-ATT.Description = [[heavy]]
+ATT.PrintName = "Heavy Trigger"
+ATT.CompactName = "Heavy"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
@@ -83,9 +83,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_trig_heavy")
 
 ATT = {}
 
-ATT.PrintName = "light"
-ATT.CompactName = "light"
-ATT.Description = [[light]]
+ATT.PrintName = "Lightweight Trigger"
+ATT.CompactName = "Light"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
@@ -101,9 +101,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_trig_light")
 
 ATT = {}
 
-ATT.PrintName = "auto"
-ATT.CompactName = "auto"
-ATT.Description = [[auto]]
+ATT.PrintName = "Automatic Trigger"
+ATT.CompactName = "Automatic"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
@@ -120,9 +120,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")
 
 ATT = {}
 
-ATT.PrintName = "classic"
-ATT.CompactName = "classic"
-ATT.Description = [[classic]]
+ATT.PrintName = "Standard Barrel"
+ATT.CompactName = "Standard"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
@@ -139,9 +139,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_barrel_classic")
 
 ATT = {}
 
-ATT.PrintName = "longclassic"
-ATT.CompactName = "longclassic"
-ATT.Description = [[longclassic]]
+ATT.PrintName = "Long Barrel"
+ATT.CompactName = "Long"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
@@ -160,9 +160,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_barrel_long")
 
 ATT = {}
 
-ATT.PrintName = "tac"
-ATT.CompactName = "tac"
-ATT.Description = [[tac]]
+ATT.PrintName = "Tactical Barrel"
+ATT.CompactName = "Tactical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
@@ -178,9 +178,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_barrel_tac")
 
 ATT = {}
 
-ATT.PrintName = "longtac"
-ATT.CompactName = "longtac"
-ATT.Description = [[longtac]]
+ATT.PrintName = "Long Tactical Barrel"
+ATT.CompactName = "Long Tac."
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
@@ -199,9 +199,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_barrel_longtac")
 
 ATT = {}
 
-ATT.PrintName = "cut"
-ATT.CompactName = "cut"
-ATT.Description = [[cut]]
+ATT.PrintName = "Vertical Compensator"
+ATT.CompactName = "Vertical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
@@ -218,9 +218,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_cut")
 
 ATT = {}
 
-ATT.PrintName = "heavy"
-ATT.CompactName = "heavy"
-ATT.Description = [[heavy]]
+ATT.PrintName = "Heavy Compensator"
+ATT.CompactName = "Heavy"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
@@ -239,9 +239,9 @@ ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_heavy")
 
 ATT = {}
 
-ATT.PrintName = "tri"
-ATT.CompactName = "tri"
-ATT.Description = [[tri]]
+ATT.PrintName = "Horizontal Compensator"
+ATT.CompactName = "Horizontal"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"

@@ -98,6 +98,22 @@ L["uplp_togglestat_folded"] = "Folded"
 //////////////////// Stat
 L["uplp_stat_suppressed"] = "Suppressed"
 
+
+//////////////////////////////////////////////////////////////////////
+///////////////////////////// Universal Attachments
+/////////// Grips
+L["uplp_grip_vert.printname"] = "Vertical Foregrip"
+L["uplp_grip_vert.compactname"] = "Vertical"
+L["uplp_grip_vert.description"] = "Rail-mounted foregrip to reduce recoil."
+
+L["uplp_grip_skelet.printname"] = "Skeleton Foregrip"
+L["uplp_grip_skelet.compactname"] = "Skeleton"
+L["uplp_grip_skelet.description"] = "Rail-mounted, lightweight foregrip to improve ergonomics and reduce recoil."
+
+L["uplp_grip_handstop.printname"] = "Angled Handstop"
+L["uplp_grip_handstop.compactname"] = "Handstop"
+L["uplp_grip_handstop.description"] = "Angled handstop to improve ergonomics."
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 
