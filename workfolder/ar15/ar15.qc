@@ -1,18 +1,18 @@
 $modelname "weapons\arc9\c_uplp_ar15.mdl"
  
-$bodygroup "ar15" {
+$bodygroup "ar15" { // 0
 	studio "reciever_m4.smd"
 	studio "reciever_m16.smd"
 	studio "reciever_45acp.smd"
 	studio "reciever_modern.smd"
 	studio "stm9_reciever.smd"
 }   
-$bodygroup "addition" {
+$bodygroup "addition" { // 1
 	blank
 	studio "m16_rail.smd"
 	studio "stm9_magwell.smd"
 }  
-$bodygroup "hg" {
+$bodygroup "hg" { // 2
 	studio "hg_ris.smd"
 	studio "hg_risshort.smd"
 	studio "hg_m16.smd"
@@ -29,19 +29,37 @@ $bodygroup "hg" {
 	studio "hg_nowosuku_s15_xl.smd"
 	studio "hg_nowosuku_s15_xl_red.smd"
 }  
-$bodygroup "barrel" {
+$bodygroup "barrel" { // 3
 	studio "brl_16.smd"
 	studio "brl_10.smd"
 	studio "brl_14.smd"
 	studio "brl_20.smd"
 	studio "brl_22.smd"
 } 
-$bodygroup "ammo" {
-	studio "556.smd"
-	studio "458socom.smd"
-	studio "50beo.smd"
-	studio "9mm.smd"
-	studio "45acp.smd"
+
+$bodygroup "ammo" { // 4
+	studio "556.smd" // 0
+	studio "458socom.smd" // 1
+	studio "50beo.smd" // 2
+	studio "9mm.smd" // 3
+	studio "45acp.smd" // 4
+}
+
+
+
+$bodygroup "gripdef" { // 5
+	studio "grip_stda.smd" // 0
+	blank
+}
+
+$bodygroup "chargedef" { // 6
+	studio "charge_stda.smd" // 0
+	blank
+}
+
+$bodygroup "magdef" { // 7
+	studio "mag_stanag30.smd" // 0
+	blank
 }
 
 $cdmaterials "models\weapons\arc9\uplp"
