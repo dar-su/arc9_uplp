@@ -2,9 +2,10 @@
 
 local ATT = {}
 
-ATT.PrintName = "llong Barrel"
-ATT.CompactName = "long"
-ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
+ATT.PrintName = "520mm Barrel"
+ATT.CompactName = "520mm"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
@@ -16,9 +17,10 @@ ARC9.LoadAttachment(ATT, "uplp_molot_brl_long")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_brl_compact"
-ATT.CompactName = "uplp_molot_brl_compact"
-ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
+ATT.PrintName = "350mm Barrel"
+ATT.CompactName = "350mm"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 50
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
@@ -30,9 +32,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_brl_compact")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_brl_mini"
-ATT.CompactName = "uplp_molot_brl_mini"
-ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
+ATT.PrintName = "350mm \"Mini\" Barrel"
+ATT.CompactName = "350mm Mini"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
@@ -44,9 +46,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_brl_mini")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_brl_micro"
-ATT.CompactName = "uplp_molot_brl_micro"
-ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
+ATT.PrintName = "325mm \"Micro\" Barrel"
+ATT.CompactName = "325mm Micro"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
@@ -62,9 +64,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_brl_micro")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_100"
-ATT.CompactName = "uplp_molot_hg_100"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "100-Series Handguard"
+ATT.CompactName = "100-S"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -78,9 +80,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_100")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_wood"
-ATT.CompactName = "uplp_molot_hg_wood"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Wooden Handguard"
+ATT.CompactName = "Wooden"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -94,9 +96,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_wood")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_zen"
-ATT.CompactName = "uplp_molot_hg_zen"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Zenith Handguard"
+ATT.CompactName = "Zenith"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -117,9 +119,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_azen")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_zen_c"
-ATT.CompactName = "uplp_molot_hg_zen_c"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Zenith Compact Handguard"
+ATT.CompactName = "Zenith C"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -140,9 +142,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_azen_c")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_tac (Red)"
-ATT.CompactName = "uplp_molot_hg_tac (R)"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Tactical Handguard (Sporty Red)"
+ATT.CompactName = "Tactical (SR)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -163,9 +165,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_tac (Black)"
-ATT.CompactName = "uplp_molot_hg_tac (B)"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Tactical Handguard (Pitch Black)"
+ATT.CompactName = "Tactical (PB)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -186,9 +188,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac_b")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_tac (White)"
-ATT.CompactName = "uplp_molot_hg_tac (W)"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Tactical Handguard (Arctic White)"
+ATT.CompactName = "Tactical (AW)"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -209,9 +211,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac_w")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_cool"
-ATT.CompactName = "uplp_molot_hg_cool"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "International Competitive Sport Shooting Competition Handguard Mk1"
+ATT.CompactName = "ICSSC Mk1"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -232,9 +234,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_cool")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_hg_cool2"
-ATT.CompactName = "uplp_molot_hg_cool2"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "International Competitive Sport Shooting Competition Handguard Mk2"
+ATT.CompactName = "ICSSC Mk2"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
@@ -257,9 +259,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_cool2")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_bolt_light"
-ATT.CompactName = "uplp_molot_bolt_light"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Lightweight Sport Shooting Internals"
+ATT.CompactName = "Lightweight"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
@@ -271,9 +273,9 @@ ARC9.LoadAttachment(ATT, "uplp_molot_bolt_light")
 
 ATT = {}
 
-ATT.PrintName = "uplp_molot_bolt_heavy"
-ATT.CompactName = "uplp_molot_bolt_heavy"
-ATT.Description = "aaaaaaaaaa"
+ATT.PrintName = "Reinforced Internals"
+ATT.CompactName = "Reinforced"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
@@ -290,8 +292,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_bolt_heavy")
 
 local ATT = {}
 
-ATT.PrintName = "long"
-ATT.CompactName = "long"
+ATT.PrintName = "8-Round Extended"
+ATT.CompactName = "8R Ext"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -313,8 +315,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_mag_long")
 
 ATT = {}
 
-ATT.PrintName = "dru,m"
-ATT.CompactName = "dum"
+ATT.PrintName = "19-Round Drum"
+ATT.CompactName = "19R D"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -346,8 +348,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_mag_drum")
 
 ATT = {}
 
-ATT.PrintName = "red"
-ATT.CompactName = "red"
+ATT.PrintName = "12-Gauge Buckshot"
+ATT.CompactName = "Buckshot"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -357,6 +359,86 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_red")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "12-Gauge Birdshot"
+ATT.CompactName = "Birdshot"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_sg_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_blue.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_sg_shell_blue")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "12-Gauge Slug"
+ATT.CompactName = "Slug"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_sg_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_sg_shell_green")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "12-Gauge Double Slug"
+ATT.CompactName = "Slug x2"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_sg_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_sg_shell_black")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "12-Gauge Dragon's Breath"
+ATT.CompactName = "DB"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_sg_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_orange.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_sg_shell_orange")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "12-Gauge Explosive Slug"
+ATT.CompactName = "Exp. Slug"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_sg_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_sg_shell_yellow")
 
 --[[
     uplp_sg_shell_red - regular buckshot
@@ -369,15 +451,14 @@ ARC9.LoadAttachment(ATT, "uplp_sg_shell_red")
     maybe also make blue shell be birdshot (many projectiles but lower dmg)
 ]]--
 
-
 -- muzzle
 
 -------------------------------------------
 
 ATT = {}
 
-ATT.PrintName = "uplp_sg_mz_vepr"
-ATT.CompactName = "uplp_sg_mz_vepr"
+ATT.PrintName = "Molot Choke"
+ATT.CompactName = "Molot C"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -393,8 +474,8 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_vepr")
 
 ATT = {}
 
-ATT.PrintName = "uplp_sg_mz_choke"
-ATT.CompactName = "uplp_sg_mz_choke"
+ATT.PrintName = "Shotgun Full Choke"
+ATT.CompactName = "SG FC"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -410,8 +491,8 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_choke")
 
 ATT = {}
 
-ATT.PrintName = "uplp_sg_mz_gk"
-ATT.CompactName = "uplp_sg_mz_gk"
+ATT.PrintName = "Shotgun Muzzle Brake"
+ATT.CompactName = "SG MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -427,8 +508,8 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
 
 ATT = {}
 
-ATT.PrintName = "uplp_sg_mz_heavy"
-ATT.CompactName = "uplp_sg_mz_heavy"
+ATT.PrintName = "Heavy Shotgun Muzzle Brake"
+ATT.CompactName = "SG Heavy MB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -444,9 +525,10 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
 
 ATT = {}
 
-ATT.PrintName = "uplp_sg_mz_silencer"
-ATT.CompactName = "uplp_sg_mz_silencer"
+ATT.PrintName = "Shotgun Suppressor"
+ATT.CompactName = "SG S."
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
@@ -477,9 +559,10 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
 
 ATT = {}
 
-ATT.PrintName = "uplp_sg_mz_silencer_heavy"
-ATT.CompactName = "uplp_sg_mz_silencer_heavy"
+ATT.PrintName = "Heavy Shotgun Suppressor"
+ATT.CompactName = "SG Heavy S."
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 101
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"

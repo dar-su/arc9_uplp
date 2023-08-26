@@ -71,7 +71,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk")
 
 ATT = {}
 
-ATT.PrintName = "FB Beryl Handguard"
+ATT.PrintName = "Beryl Handguard"
 ATT.CompactName = "Beryl"
 ATT.Description = ATT.PrintName
 

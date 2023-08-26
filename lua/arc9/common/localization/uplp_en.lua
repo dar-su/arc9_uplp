@@ -114,8 +114,59 @@ L["uplp_grip_handstop.printname"] = "Angled Handstop"
 L["uplp_grip_handstop.compactname"] = "Handstop"
 L["uplp_grip_handstop.description"] = "Angled handstop to improve ergonomics."
 
+/////////// Muzzle
+L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
+L["uplp_sg_mz_choke.compactname"] = "SG FC"
+L["uplp_sg_mz_choke.description"] = "Compact full choke muzzle for shotguns."
+
+L["uplp_sg_mz_gk.printname"] = "Shotgun Muzzle Brake"
+L["uplp_sg_mz_gk.compactname"] = "SG MB"
+L["uplp_sg_mz_gk.description"] = "Muzzle brake for shotguns that redirects propelled gases sideways for reduced horizontal recoil."
+
+L["uplp_sg_mz_heavy.printname"] = "Heavy Shotgun Muzzle Brake"
+L["uplp_sg_mz_heavy.compactname"] = "SG Heavy MB"
+L["uplp_sg_mz_heavy.description"] = "Heavy muzzle brake for shotguns that redirects propelled gases sideways for even more reduced horizontal recoil."
+
+L["uplp_sg_mz_silencer.printname"] = "Shotgun Suppressor"
+L["uplp_sg_mz_silencer.compactname"] = "SG S."
+L["uplp_sg_mz_silencer.description"] = "Sound suppressor for shotguns."
+
+L["uplp_sg_mz_silencer_heavy.printname"] = "Heavy Shotgun Suppressor"
+L["uplp_sg_mz_silencer_heavy.compactname"] = "SG Heavy S."
+L["uplp_sg_mz_silencer_heavy.description"] = "Heavy sound suppressor for shotguns."
+
+/////////// Ammunition
+L["uplp_sg_shell_red.printname"] = "00 Buckshot Rounds"
+L["uplp_sg_shell_red.compactname"] = "Buckshot"
+L["uplp_sg_shell_red.description"] = "Standard 12-gauge shotgun ammunition."
+
+L["uplp_sg_shell_blue.printname"] = "Birdshot Rounds"
+L["uplp_sg_shell_blue.compactname"] = "Birdshot"
+L["uplp_sg_shell_blue.description"] = "Lower damage but more pellets."
+
+L["uplp_sg_shell_green.printname"] = "Slug Rounds"
+L["uplp_sg_shell_green.compactname"] = "Slug"
+L["uplp_sg_shell_green.description"] = "Replace all the pellets with a singular hardened slug."
+
+L["uplp_sg_shell_black.printname"] = "Double Slug Rounds"
+L["uplp_sg_shell_black.compactname"] = "Slug x2"
+L["uplp_sg_shell_black.description"] = "Replace all the pellets with two hardened slugs."
+
+L["uplp_sg_shell_orange.printname"] = "Dragon's Breath Rounds"
+L["uplp_sg_shell_orange.compactname"] = "DB"
+L["uplp_sg_shell_orange.description"] = "Shells filled with chemicals that have a chance at igniting targets it hits."
+
+L["uplp_sg_shell_yellow.printname"] = "Explosive Slug Rounds"
+L["uplp_sg_shell_yellow.compactname"] = "Exp. Slug"
+L["uplp_sg_shell_yellow.description"] = "Replace the pellets with a single slug that explodes on impact."
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
+//////////////////// Universal translations for easy use
+local sportyred = "\n\n" .. "Special Sporty Red version."
+local pitchblack = "\n\n" .. "Special Pitch Black version."
+local arcticwhite = "\n\n" .. "Special Arctic White version."
+
 
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
@@ -269,8 +320,8 @@ L["uplp_ak_hg_azen.printname"] = "Zenith Handguard"
 L["uplp_ak_hg_azen.compactname"] = "Zenith"
 L["uplp_ak_hg_azen.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
 
-L["uplp_ak_hg_azen_c.printname"] = "Shortened Zenith Handguard"
-L["uplp_ak_hg_azen_c.compactname"] = "S Zenith"
+L["uplp_ak_hg_azen_c.printname"] = "Zenith Compact Handguard"
+L["uplp_ak_hg_azen_c.compactname"] = "Zenith C"
 L["uplp_ak_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
 
 L["uplp_ak_hg_su_tac.printname"] = "Tactical Handguard"
@@ -567,7 +618,7 @@ L["uplp_ar15_gasblock_min.description"] = "The bare minimum gas block allowing t
 
 L["uplp_ar15_gasblock_min_red.printname"] = "Compact Gas Block (Sporty Red)"
 L["uplp_ar15_gasblock_min_red.compactname"] = "GB (SR)"
-L["uplp_ar15_gasblock_min_red.description"] = "The bare minimum gas block allowing the AR-15 rifle to function.\n\nSpecial Sporty Red version."
+L["uplp_ar15_gasblock_min_red.description"] = "The bare minimum gas block allowing the AR-15 rifle to function." .. sportyred
 
 L["uplp_ar15_gasblock_rail.printname"] = "Gas Block with Rail"
 L["uplp_ar15_gasblock_rail.compactname"] = "GB R"
@@ -607,7 +658,7 @@ L["uplp_ar15_hg_nwsu_s15.description"] = "Lightweight S-15 handguard manufacture
 
 L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15 Handguard (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
-L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuko.\nSpecial Sporty Red version." .. requires14 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuko." .. requires14 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL Handguard"
 L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
@@ -615,7 +666,7 @@ L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Longer variant of the lightweight S
 
 L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL Handguard (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
-L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko.\nSpecial Sporty Red version." .. requires16 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko." .. requires16 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_ris.printname"] = "RIS Handguard"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
@@ -631,7 +682,7 @@ L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 ri
 
 L["uplp_ar15_hg_tac_red.printname"] = "Tactical Handguard (Sporty Red)"
 L["uplp_ar15_hg_tac_red.compactname"] = "Tactical (SR)"
-L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles.\nSpecial Sporty Red version." .. requires16
+L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles." .. requires16 .. sportyred
 
 L["uplp_ar15_hg_tacshort.printname"] = "Tactical Short Handguard"
 L["uplp_ar15_hg_tacshort.compactname"] = "Tactical S"
@@ -639,7 +690,7 @@ L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handgua
 
 L["uplp_ar15_hg_tacshort_red.printname"] = "Tactical Short Handguard (Sporty Red)"
 L["uplp_ar15_hg_tacshort_red.compactname"] = "Tactical S (SR)"
-L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles.\nSpecial Sporty Red version."
+L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles." .. sportyred
 
 ////// Magazines
 /// .45 ACP
@@ -724,7 +775,7 @@ L["uplp_ar15_pgrip_skel.description"] = "Lightweight pistol grip for AR-15 rifle
 
 L["uplp_ar15_pgrip_skel_red.printname"] = "Skeleton Pistol Grip (Sporty Red)"
 L["uplp_ar15_pgrip_skel_red.compactname"] = "Skeleton (SR)"
-L["uplp_ar15_pgrip_skel_red.description"] = "Lightweight pistol grip for AR-15 rifles.\nSpecial Sporty Red version."
+L["uplp_ar15_pgrip_skel_red.description"] = "Lightweight pistol grip for AR-15 rifles." .. sportyred
 
 L["uplp_ar15_pgrip_std.printname"] = "Standard Pistol Grip"
 L["uplp_ar15_pgrip_std.compactname"] = "Standard"
@@ -886,3 +937,81 @@ L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combine
 //////////////////// Molot
 L["uplp_weapon_molot"] = "Molot"
 L["uplp_weapon_molot_desc"] = "The Molot is a Russian-made semi-automatic shotgun renowned for its robust and reliable design. It is chambered for 12-gauge shells and is popular among shooters and collectors for its durability and performance. This version of the Molot was factory made for use in sporting competitions, which resulted in the inclusion of an ambidextrous charging handle."
+
+/////////// Attachments
+////// Barrels
+L["uplp_molot_brl_long.printname"] = "520mm Barrel"
+L["uplp_molot_brl_long.compactname"] = "520mm"
+L["uplp_molot_brl_long.description"] = "Extended 520mm (20.47\") barrel for the Molot."
+
+L["uplp_molot_brl_compact.printname"] = "350mm Barrel"
+L["uplp_molot_brl_compact.compactname"] = "350mm"
+L["uplp_molot_brl_compact.description"] = "Shortened 350mm (13.78\") barrel for the Molot."
+
+L["uplp_molot_brl_mini.printname"] = "350mm \"Mini\" Barrel"
+L["uplp_molot_brl_mini.compactname"] = "350mm Mini"
+L["uplp_molot_brl_mini.description"] = "Shortened 350mm (13.78\") mini barrel for the Molot."
+
+L["uplp_molot_brl_micro.printname"] = "325mm \"Micro\" Barrel"
+L["uplp_molot_brl_micro.compactname"] = "325mm Micro"
+L["uplp_molot_brl_micro.description"] = "Shortened 325mm (12.8\") micro barrel for the Molot."
+
+////// Handguards
+L["uplp_molot_hg_100.printname"] = "100-Series Handguard"
+L["uplp_molot_hg_100.compactname"] = "100-S"
+L["uplp_molot_hg_100.description"] = "Modern plastic handguard originally used on the AK-103. Comes with a bottom rail for use with foregrips."
+
+L["uplp_molot_hg_wood.printname"] = "Classic RPK Handguard"
+L["uplp_molot_hg_wood.compactname"] = "C. RPK"
+L["uplp_molot_hg_wood.description"] = "Wooden handguard originally used on the RPK and RPK-74."
+
+L["uplp_molot_hg_azen.printname"] = "Zenith Handguard"
+L["uplp_molot_hg_azen.compactname"] = "Zenith"
+L["uplp_molot_hg_azen.description"] = "Lightweight handguard with RIS-rail functionality built for AK-rifles."
+
+L["uplp_molot_hg_azen_c.printname"] = "Zenith Compact Handguard"
+L["uplp_molot_hg_azen_c.compactname"] = "Zenith C"
+L["uplp_molot_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK-rifles."
+
+L["uplp_molot_hg_tac.printname"] = "Tactical Handguard (Sporty Red)"
+L["uplp_molot_hg_tac.compactname"] = "Tactical (SR)"
+L["uplp_molot_hg_tac.description"] = "Tactical, lightweight and sporty handguard for AK rifles." .. sportyred
+
+L["uplp_molot_hg_tac_b.printname"] = "Tactical Handguard (Pitch Black)"
+L["uplp_molot_hg_tac_b.compactname"] = "Tactical (PB)"
+L["uplp_molot_hg_tac_b.description"] = "Tactical, lightweight and sporty handguard for AK rifles." .. pitchblack
+
+L["uplp_molot_hg_tac_w.printname"] = "Tactical Handguard (Arctic White)"
+L["uplp_molot_hg_tac_w.compactname"] = "Tactical (AW)"
+L["uplp_molot_hg_tac_w.description"] = "Tactical, lightweight and sporty handguard for AK rifles." .. arcticwhite
+
+L["uplp_molot_hg_cool.printname"] = "ICSSC Handguard Mk1"
+L["uplp_molot_hg_cool.compactname"] = "ICSSC Mk1"
+L["uplp_molot_hg_cool.description"] = "Competitive handguard built for the ICSSC (International Competitive Sport Shooting Competition).\nMade out of polymer with sporty red accents."
+
+L["uplp_molot_hg_cool2.printname"] = "ICSSC Handguard Mk2"
+L["uplp_molot_hg_cool2.compactname"] = "ICSSC Mk2"
+L["uplp_molot_hg_cool2.description"] = "Competitive handguard built for the ICSSC (International Competitive Sport Shooting Competition).\nMade out of aluminium with sporty red accents."
+
+////// Internals
+L["uplp_molot_bolt_light.printname"] = "Lightweight Sport Shooting Internals"
+L["uplp_molot_bolt_light.compactname"] = "Lightweight"
+L["uplp_molot_bolt_light.description"] = "Replaces the internal springs and bolts, trigger, magazine release, charging handle, bolt and safety with much more lightweight parts."
+
+L["uplp_molot_bolt_heavy.printname"] = "Reinforced Internals"
+L["uplp_molot_bolt_heavy.compactname"] = "Reinforced"
+L["uplp_molot_bolt_heavy.description"] = "Replaces the internal springs and bolts, trigger, magazine release, charging handle, bolt and safety with more reinforced and stronger parts."
+
+////// Magazines
+L["uplp_molot_mag_long.printname"] = "8-Round Extended"
+L["uplp_molot_mag_long.compactname"] = "8R Ext"
+L["uplp_molot_mag_long.description"] = "8-round extended magazine."
+
+L["uplp_molot_mag_drum.printname"] = "19-Round Drum"
+L["uplp_molot_mag_drum.compactname"] = "19R D"
+L["uplp_molot_mag_drum.description"] = "19-round drum magazine."
+
+////// Muzzle
+L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
+L["uplp_sg_mz_vepr.compactname"] = "Molot C"
+L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
