@@ -1012,6 +1012,7 @@ SWEP.AttachmentElements = {
     -- ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
     -- ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
     -- ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
+    ["uplp_ak_grip"] =       { Bodygroups = { { 9, 1 } } },
 
     -- HANDGUARDS
     -- Standard
@@ -1144,11 +1145,13 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip"},
+		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
+        RejectAttachments = {
+		["uplp_ak_grip_std"] = true,
+		},
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_grip_std",
-        Integral = "uplp_ak_grip_std",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),

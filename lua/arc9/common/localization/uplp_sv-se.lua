@@ -32,6 +32,7 @@ L["uplp_manufacturer"] = "Tillverkare"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
+L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
 
 /////////// Year
 L["uplp_year"] = "År"
@@ -100,6 +101,8 @@ L["uplp_togglestat_folded"] = "Invikt"
 
 //////////////////// Stat
 L["uplp_stat_suppressed"] = "Ljuddämpad"
+L["uplp_stat_ignite_chance"] = "Vid Träff: Chans att Tända Fyr på Mål"
+L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
 
 
 //////////////////////////////////////////////////////////////////////

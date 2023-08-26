@@ -805,15 +805,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.AttachmentElements = {
+	-- INTERNALS
     ["uplp_molot_bolt_light"] = { Bodygroups = { { 1, 2 } } },
     ["uplp_molot_bolt_heavy"] = { Bodygroups = { { 1, 1 } } },
     
+	-- BARRELS
     -- ["uplp_molot_brl_std"] =    { Bodygroups = { { 2, 0 } } },
     ["uplp_molot_brl_long"] =   { Bodygroups = { { 2, 1 } }, AttPosMods = {[2] = { Pos = Vector(0, 1.75, 26.02) } } },
     ["uplp_molot_brl_compact"] ={ Bodygroups = { { 2, 2 } }, AttPosMods = {[2] = { Pos = Vector(0, 1.75, 18.28) } } },
     ["uplp_molot_brl_mini"] =   { Bodygroups = { { 2, 3 }, { 3, 20 } }, AttPosMods = {[2] = { Pos = Vector(0, 1.75, 18.45) } } },
     ["uplp_molot_brl_micro"] =  { Bodygroups = { { 2, 4 }, { 3, 21 } }, AttPosMods = {[2] = { Pos = Vector(0, 1.75, 17.35) } } },
     
+	-- HANDGUARDS
     ["uplp_molot_hg_100"] =     { Bodygroups = { { 3, 1 } } },
     ["uplp_molot_hg_wood"] =    { Bodygroups = { { 3, 2 } } },
     ["uplp_molot_hg_azen"] =     { Bodygroups = { { 3, 3 } } },
@@ -824,15 +827,22 @@ SWEP.AttachmentElements = {
     ["uplp_molot_hg_cool"] =    { Bodygroups = { { 3, 14 }, { 4, 1 } } },
     ["uplp_molot_hg_cool2"] =   { Bodygroups = { { 3, 17 }, { 4, 1 } } },
 
+	-- MAGAZINES
     ["uplp_molot_mag_long"] = { Bodygroups = { { 5, 1 } } },
     ["uplp_molot_mag_drum"] = { Bodygroups = { { 5, 2 } } },
 
+	-- SHELLS
     ["uplp_sg_shell_red"] = { Bodygroups = { { 6, 0 } } },
     ["uplp_sg_shell_blue"] = { Bodygroups = { { 6, 1 } } },
     ["uplp_sg_shell_black"] = { Bodygroups = { { 6, 2 } } },
     ["uplp_sg_shell_green"] = { Bodygroups = { { 6, 3 } } },
     ["uplp_sg_shell_orange"] = { Bodygroups = { { 6, 4 } } },
     ["uplp_sg_shell_yellow"] = { Bodygroups = { { 6, 5 } } },
+	
+	
+    -- PISTOL GRIPS
+    ["uplp_ak_grip"] =       { Bodygroups = { { 7, 1 } } },
+	
 }
 
 SWEP.Attachments = {
@@ -893,11 +903,13 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip"},
+		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
-        Pos = Vector(0.045, 5, -1),
+        RejectAttachments = {
+		["uplp_ak_grip_molot"] = true,
+		},
+        Pos = Vector(0.045, 5, -1.1),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_grip_molot",
-        Integral = "uplp_ak_grip_molot",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),

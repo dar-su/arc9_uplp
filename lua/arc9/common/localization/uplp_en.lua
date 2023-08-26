@@ -32,6 +32,7 @@ L["uplp_manufacturer"] = "Manufacturer"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
+L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
 
 /////////// Year
 L["uplp_year"] = "Year"
@@ -100,6 +101,8 @@ L["uplp_togglestat_folded"] = "Folded"
 
 //////////////////// Stat
 L["uplp_stat_suppressed"] = "Suppressed"
+L["uplp_stat_ignite_chance"] = "On Hit: Chance to Ignite Target"
+L["uplp_stat_ignite"] = "On Hit: Ignite Target"
 
 
 //////////////////////////////////////////////////////////////////////
