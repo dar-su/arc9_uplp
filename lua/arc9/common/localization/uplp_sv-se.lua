@@ -25,6 +25,7 @@ L["uplp_caliber"] = "Kaliber"
 
 L["uplp_caliber_7.62x32mm"] = "7,62x39mm Soviet"
 L["uplp_caliber_5.56x45mm"] = "5,56x45mm"
+L["uplp_caliber_12gauge"] = "12-Kaliber"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare"
@@ -72,11 +73,14 @@ L["uplp_class_weapon_throwable"] = "Kastbar"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments
 //////////////////// Category Names
+L["uplp_category_ammo"] = "Ammo"
 L["uplp_category_barrel"] = "Pipa"
+L["uplp_category_charginghandle"] = "Manöverhandtag"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
 L["uplp_category_handguard"] = "Handskydd"
+L["uplp_category_internals"] = "Interndelar"
 L["uplp_category_magazine"] = "Magasin"
 L["uplp_category_muzzle"] = "Mynning"
 L["uplp_category_optic"] = "Riktmedel"
@@ -85,7 +89,6 @@ L["uplp_category_receiver"] = "Låda"
 L["uplp_category_sight_front"] = "Stolpkorn"
 L["uplp_category_sight_rear"] = "Bakre Sikte"
 L["uplp_category_stock"] = "Kolv"
-L["uplp_category_charginghandle"] = "Manöverhandtag"
 
 //////////////////// Folder Names
 L["uplp_folder_suppressor"] = "Ljuddämpare"

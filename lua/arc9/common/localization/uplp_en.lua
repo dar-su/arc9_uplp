@@ -25,6 +25,7 @@ L["uplp_caliber"] = "Calibre"
 
 L["uplp_caliber_7.62x32mm"] = "7.62x39mm Soviet"
 L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
+L["uplp_caliber_12gauge"] = "12 Gauge"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer"
@@ -72,11 +73,14 @@ L["uplp_class_weapon_throwable"] = "Throwable"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments
 //////////////////// Category Names
+L["uplp_category_ammo"] = "Ammo"
 L["uplp_category_barrel"] = "Barrel"
+L["uplp_category_charginghandle"] = "Charging Handle"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Foregrip"
 L["uplp_category_handguard"] = "Handguard"
+L["uplp_category_internals"] = "Internals"
 L["uplp_category_magazine"] = "Magazine"
 L["uplp_category_muzzle"] = "Muzzle"
 L["uplp_category_optic"] = "Optic"
@@ -85,7 +89,6 @@ L["uplp_category_receiver"] = "Receiver"
 L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_stock"] = "Stock"
-L["uplp_category_charginghandle"] = "Charging Handle"
 
 //////////////////// Folder Names
 L["uplp_folder_suppressor"] = "Suppressors"

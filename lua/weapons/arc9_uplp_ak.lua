@@ -298,14 +298,6 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    -- ["enter_sights"] = {
-    --     Source = "idle",
-    --     IKTimeLine = { { t = 0, lhik = 1 } },
-    -- },
-    -- ["enter_sprint"] = {
-    --     Source = "idle",
-    --     IKTimeLine = { { t = 0, lhik = 1 } },
-    -- },
     ["ready"] = {
         Source = "ready",
         EventTable = {
