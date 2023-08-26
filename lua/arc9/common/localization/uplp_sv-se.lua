@@ -745,9 +745,113 @@ L["uplp_ar15_rs_type3.printname"] = "Typ 3 Bakre Sikte"
 L["uplp_ar15_rs_type3.compactname"] = "Typ 3"
 L["uplp_ar15_rs_type3.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
 
+////// Stocks
+L["uplp_ar15_stock_416.printname"] = "416-Kolv"
+L["uplp_ar15_stock_416.compactname"] = "416"
+L["uplp_ar15_stock_416.description"] = "Standard kolv från en anpassad AR-15 av tyskt ursprung."
+
+L["uplp_ar15_stock_ak12.printname"] = "AK-12 Kolv"
+L["uplp_ar15_stock_ak12.compactname"] = "AK-12"
+L["uplp_ar15_stock_ak12.description"] = "Standard kolv som används på AK-12:an."
+
+L["uplp_ar15_stock_fat.printname"] = "Bravo-Kolv"
+L["uplp_ar15_stock_fat.compactname"] = "Bravo"
+L["uplp_ar15_stock_fat.description"] = "Anpassad och justerbar kolv till AR-15-gevär."
+
+L["uplp_ar15_stock_light.printname"] = "Lätt Stridskolv"
+L["uplp_ar15_stock_light.compactname"] = "Lätt"
+L["uplp_ar15_stock_light.description"] = "Lättvikt och justerbar kolv till AR-15-gevär."
+
+L["uplp_ar15_stock_m16.printname"] = "Fast Kolv"
+L["uplp_ar15_stock_m16.compactname"] = "Fast"
+L["uplp_ar15_stock_m16.description"] = "Fast kolv som används på M16."
+
+L["uplp_ar15_stock_m4.printname"] = "M4 Kolv"
+L["uplp_ar15_stock_m4.compactname"] = "M4"
+L["uplp_ar15_stock_m4.description"] = "Standard justerbar kolv som används på M4:an."
+
+L["uplp_ar15_stock_modern.printname"] = "Tävlingskolv"
+L["uplp_ar15_stock_modern.compactname"] = "Tävlings"
+L["uplp_ar15_stock_modern.description"] = "Lättvikt kolv gjord för sportskytte till AR-15-gevär."
+
+L["uplp_ar15_stock_pdw.printname"] = "PDW-Kolv"
+L["uplp_ar15_stock_pdw.compactname"] = "PDW"
+L["uplp_ar15_stock_pdw.description"] = "Smal, kompakt och justerbar PDW-kolv till AR-15-gevär."
+
+L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter-Kolv"
+L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
+L["uplp_ar15_stock_sniper.description"] = "Justerbar tung kolv till AR-15-gevär."
+
+L["uplp_ar15_stock_tac.printname"] = "Taktiskt Kolv"
+L["uplp_ar15_stock_tac.compactname"] = "Taktisk"
+L["uplp_ar15_stock_tac.description"] = "Taktisk kolv till AR-15-gevär."
+
+L["uplp_ar15_stock_veryheavy.printname"] = "Marksman-Kolv"
+L["uplp_ar15_stock_veryheavy.compactname"] = "Marksman"
+L["uplp_ar15_stock_veryheavy.description"] = "Väldigt tung kolv till AR-15-gevär."
+
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
 L["uplp_weapon_deagle_desc"] = "Deagle är en halvautomatisk pistol känd för sin distinkta design och kraftfulla patronalternativ, inklusive .50 AE. Den är känd för sitt stora ram, gasdrivna mekanism och sitt rykte som en av de mest kraftfulla handeldvapnen i världen."
+
+/////////// Attachments
+////// Magazines
+L["uplp_deag_mag_ext.printname"] = "13-Patroner Förstorad"
+L["uplp_deag_mag_ext.compactname"] = "13P För."
+L["uplp_deag_mag_ext.description"] = "Standardmagasin med förlängd basplatta som håller 13 patroner."
+
+L["uplp_deag_mag_tac.printname"] = "7-Patroner Ergo-Mag"
+L["uplp_deag_mag_tac.compactname"] = "7P Ergo"
+L["uplp_deag_mag_tac.description"] = "Standardmagasin med ergonomisk basplatta för snabbare omladdningar."
+
+////// Pistol Grip
+L["uplp_deag_grip_tac.printname"] = "Gummerat Grepp"
+L["uplp_deag_grip_tac.compactname"] = "Gummerat"
+L["uplp_deag_grip_tac.description"] = "Ersätter pistolgreppet med en mer ergonomisk."
+
+////// Actions
+L["uplp_deag_trig_heavy.printname"] = "Tung Avtryckare och Hane"
+L["uplp_deag_trig_heavy.compactname"] = "Tung"
+L["uplp_deag_trig_heavy.description"] = "Ersätter avtryckaren, fjädrarna och hanen med några tyngre."
+
+L["uplp_deag_trig_light.printname"] = "Lättvikt Avtryckare och Hane"
+L["uplp_deag_trig_light.compactname"] = "Lättvikt"
+L["uplp_deag_trig_light.description"] = "Ersätter avtryckaren, fjädrarna och hanen med några lättare."
+
+L["uplp_deag_trig_sport.printname"] = "Automatisk Aktion"
+L["uplp_deag_trig_sport.compactname"] = "Automatisk"
+L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in fully automatic, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones."
+L["uplp_deag_trig_sport.description"] = "Konverterar Deagle att skjuta helautomatiskt men offrar rekylkontroll.\nErsätter också avtryckaren och hanen med några mer taktiska."
+
+////// Barrels
+L["uplp_deag_barrel_classic.printname"] = "Klassisk Pipa"
+L["uplp_deag_barrel_classic.compactname"] = "Klassisk"
+L["uplp_deag_barrel_classic.description"] = "Klassisk pipa och framdel från fabriken."
+
+L["uplp_deag_barrel_long.printname"] = "Lång Klassisk Pipa"
+L["uplp_deag_barrel_long.compactname"] = "Klassisk L"
+L["uplp_deag_barrel_long.description"] = "Förlängd pipa med klassisk framdel."
+
+L["uplp_deag_barrel_tac.printname"] = "Taktisk Pipa"
+L["uplp_deag_barrel_tac.compactname"] = "Taktisk"
+L["uplp_deag_barrel_tac.description"] = "Lättare taktisk pipa med utskurna ventilationshål."
+
+L["uplp_deag_barrel_longtac.printname"] = "Lång Taktisk Pipa"
+L["uplp_deag_barrel_longtac.compactname"] = "Taktisk L"
+L["uplp_deag_barrel_longtac.description"] = "Förlängd taktisk pipa med utskurna ventilationshål."
+
+////// Muzzles
+L["uplp_deag_muzzle_cut.printname"] = "Vertikal Kompensator"
+L["uplp_deag_muzzle_cut.compactname"] = "Vertikal"
+L["uplp_deag_muzzle_cut.description"] = "En kompensator som omdirigerar framdrivna gaser nedåt för att sänka vertikal rekyl."
+
+L["uplp_deag_muzzle_heavy.printname"] = "Tung Kompensator"
+L["uplp_deag_muzzle_heavy.compactname"] = "Tung"
+L["uplp_deag_muzzle_heavy.description"] = "En tung kompensator som omdirigerar framdrivna gaser till sidan för att sänka generell rekyl."
+
+L["uplp_deag_muzzle_tri.printname"] = "Horisontal Kompensator"
+L["uplp_deag_muzzle_tri.compactname"] = "Horisontal"
+L["uplp_deag_muzzle_tri.description"] = "En kompensator som omdirigerar framdrivna gaser till sidan för att sänka horisontal rekyl."
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"

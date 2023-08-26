@@ -821,6 +821,64 @@ L["uplp_ar15_stock_veryheavy.description"] = "Very heavy stock for AR-15 rifles.
 L["uplp_weapon_deagle"] = "Deagle"
 L["uplp_weapon_deagle_desc"] = "The Deagle is a semi-automatic pistol known for its distinctive design and powerful chambering options, including .50 AE. It is recognized for its large frame, gas-operated mechanism, and reputation for being one of the most powerful handguns in the world."
 
+/////////// Attachments
+////// Magazines
+L["uplp_deag_mag_ext.printname"] = "13-Round Extended"
+L["uplp_deag_mag_ext.compactname"] = "13R Ext"
+L["uplp_deag_mag_ext.description"] = "Standard magazine with an enlarged base plate holding 13 rounds."
+
+L["uplp_deag_mag_tac.printname"] = "7-Round Ergo Mag"
+L["uplp_deag_mag_tac.compactname"] = "7R Ergo"
+L["uplp_deag_mag_tac.description"] = "Standard magazine with an ergonomic base plate for faster reloads."
+
+////// Pistol Grip
+L["uplp_deag_grip_tac.printname"] = "Rubberized Grip"
+L["uplp_deag_grip_tac.compactname"] = "Rubberized"
+L["uplp_deag_grip_tac.description"] = "Replaces the pistol grip with a more ergonomic one."
+
+////// Actions
+L["uplp_deag_trig_heavy.printname"] = "Heavy Trigger and Hammer"
+L["uplp_deag_trig_heavy.compactname"] = "Heavy"
+L["uplp_deag_trig_heavy.description"] = "Replaces the trigger, springs and hammer with heavier ones."
+
+L["uplp_deag_trig_light.printname"] = "Lightweight Trigger and Hammer"
+L["uplp_deag_trig_light.compactname"] = "Lightweight"
+L["uplp_deag_trig_light.description"] = "Replaces the trigger, springs and hammer with more light ones."
+
+L["uplp_deag_trig_sport.printname"] = "Automatic Action"
+L["uplp_deag_trig_sport.compactname"] = "Automatic"
+L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in fully automatic, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones."
+
+////// Barrels
+L["uplp_deag_barrel_classic.printname"] = "Classic Barrel"
+L["uplp_deag_barrel_classic.compactname"] = "Classic"
+L["uplp_deag_barrel_classic.description"] = "Classic factory barrel and front end."
+
+L["uplp_deag_barrel_long.printname"] = "Long Classic Barrel"
+L["uplp_deag_barrel_long.compactname"] = "Classic L"
+L["uplp_deag_barrel_long.description"] = "Extended barrel with classic front end."
+
+L["uplp_deag_barrel_tac.printname"] = "Tactical Barrel"
+L["uplp_deag_barrel_tac.compactname"] = "Tactical"
+L["uplp_deag_barrel_tac.description"] = "Lighter tactical barrel with cut out vent holes."
+
+L["uplp_deag_barrel_longtac.printname"] = "Long Tactical Barrel"
+L["uplp_deag_barrel_longtac.compactname"] = "Tactical L"
+L["uplp_deag_barrel_longtac.description"] = "Extended tactical barrel with cut out vent holes."
+
+////// Muzzles
+L["uplp_deag_muzzle_cut.printname"] = "Vertical Compensator"
+L["uplp_deag_muzzle_cut.compactname"] = "Vertical"
+L["uplp_deag_muzzle_cut.description"] = "A compensator that redirects the propelled gases downwards to reduce vertical recoil."
+
+L["uplp_deag_muzzle_heavy.printname"] = "Heavy Compensator"
+L["uplp_deag_muzzle_heavy.compactname"] = "Heavy"
+L["uplp_deag_muzzle_heavy.description"] = "A heavy compensator that redirects the propelled gases sideways to reduce overall recoil."
+
+L["uplp_deag_muzzle_tri.printname"] = "Horizontal Compensator"
+L["uplp_deag_muzzle_tri.compactname"] = "Horizontal"
+L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propelled gases sideways to reduce horizontal recoil."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62x39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."

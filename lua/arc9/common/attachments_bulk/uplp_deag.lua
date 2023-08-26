@@ -5,6 +5,7 @@ local ATT = {}
 ATT.PrintName = "13-Round Extended"
 ATT.CompactName = "13R Ext"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
@@ -28,8 +29,8 @@ ARC9.LoadAttachment(ATT, "uplp_deag_mag_ext")
 
 ATT = {}
 
-ATT.PrintName = "Speed Magazine"
-ATT.CompactName = "Speed"
+ATT.PrintName = "7-Round Ergo Mag"
+ATT.CompactName = "7R Ergo"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -64,7 +65,7 @@ ARC9.LoadAttachment(ATT, "uplp_deag_grip_tac")
 
 ATT = {}
 
-ATT.PrintName = "Heavy Trigger"
+ATT.PrintName = "Heavy Trigger and Hammer"
 ATT.CompactName = "Heavy"
 ATT.Description = ATT.PrintName
 
@@ -83,7 +84,7 @@ ARC9.LoadAttachment(ATT, "uplp_deag_trig_heavy")
 
 ATT = {}
 
-ATT.PrintName = "Lightweight Trigger"
+ATT.PrintName = "Lightweight Trigger and Hammer"
 ATT.CompactName = "Light"
 ATT.Description = ATT.PrintName
 
@@ -101,7 +102,7 @@ ARC9.LoadAttachment(ATT, "uplp_deag_trig_light")
 
 ATT = {}
 
-ATT.PrintName = "Automatic Trigger"
+ATT.PrintName = "Automatic Action"
 ATT.CompactName = "Automatic"
 ATT.Description = ATT.PrintName
 
@@ -120,8 +121,8 @@ ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")
 
 ATT = {}
 
-ATT.PrintName = "Standard Barrel"
-ATT.CompactName = "Standard"
+ATT.PrintName = "Classic Barrel"
+ATT.CompactName = "Classic"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -139,8 +140,8 @@ ARC9.LoadAttachment(ATT, "uplp_deag_barrel_classic")
 
 ATT = {}
 
-ATT.PrintName = "Long Barrel"
-ATT.CompactName = "Long"
+ATT.PrintName = "Long Classic Barrel"
+ATT.CompactName = "Classic L"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -179,7 +180,7 @@ ARC9.LoadAttachment(ATT, "uplp_deag_barrel_tac")
 ATT = {}
 
 ATT.PrintName = "Long Tactical Barrel"
-ATT.CompactName = "Long Tac."
+ATT.CompactName = "Tactical L"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
