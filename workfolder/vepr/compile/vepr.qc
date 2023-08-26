@@ -62,7 +62,6 @@ $bodygroup "mag" { // 5
 	studio "mag long.smd" // 1
 	studio "mag drum.smd" // 2
 }
-
 $bodygroup "rnd" { // 6
 	studio "ammo r.smd" // 0
 	studio "ammo b.smd" // 1
@@ -79,6 +78,11 @@ $bodygroup "rnd" { // 6
 	studio "ammo drum y.smd" // 11 b
 
 	blank  // 12 c
+}
+
+$bodygroup "gripdef" { // 7
+	studio "grip vepr.smd"
+	blank
 }
 
 $cdmaterials "models\weapons\arc9\uplp"

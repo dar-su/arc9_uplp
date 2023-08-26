@@ -107,11 +107,16 @@ $bodygroup "nmount" { // 7
 	studio "nmount old.smd" // 3
 }   
 
-$bodygroup "rs" { // 10 HITTING LIMITS AFTER SU RS!!!!!!!!! dont add anything more or gun will become funny
+$bodygroup "rs" { // 8 HITTING LIMITS AFTER SU RS!!!!!!!!! dont add anything more or gun will become funny
 	blank // 0
 	studio "rs su.smd" // 1
 }   
 	
+$bodygroup "gripdef" { // 9
+	studio "grip std.smd" // 0
+	blank
+}
+
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
