@@ -96,12 +96,10 @@ $bodygroup "nmount" { // 7
 	studio "nmount compact.smd" // 2
 }   
 
-// $bodygroup "rs" { // 9
-// 	blank // 0
-// 	studio "rs 12.smd" // 2
-// 	studio "rs 12 evo.smd" // 3
-// 	studio "rs m1.smd" // 4
-// }   
+$bodygroup "rs" { // 9
+	blank // 0
+	studio "rs m1.smd" // 4
+}   
 
 	
 $bodygroup "gripdef" { // 8

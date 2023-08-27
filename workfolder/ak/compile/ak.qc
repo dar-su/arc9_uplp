@@ -110,6 +110,9 @@ $bodygroup "nmount" { // 7
 $bodygroup "rs" { // 8 HITTING LIMITS AFTER SU RS!!!!!!!!! dont add anything more or gun will become funny
 	blank // 0
 	studio "rs su.smd" // 1
+	studio "rs 12.smd" // 2
+	studio "rs 12 evo.smd" // 3
+	studio "rs m1.smd" // 3
 }   
 	
 $bodygroup "gripdef" { // 9
