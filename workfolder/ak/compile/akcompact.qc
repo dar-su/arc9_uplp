@@ -103,6 +103,12 @@ $bodygroup "nmount" { // 7
 // 	studio "rs m1.smd" // 4
 // }   
 
+	
+$bodygroup "gripdef" { // 8
+	studio "grip std.smd" // 0
+	blank
+}
+
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
