@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "3-Hole muzzle device"
-ATT.CompactName = "3-Hole"
-ATT.Description = [[A 3-Hole muzzle device.]]
+ATT.PrintName = "3-Hole Muzzle Brakre"
+ATT.CompactName = "3H MB"
+ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -30,10 +30,10 @@ ARC9.LoadAttachment(ATT, "uplp_muzzle_3h")
 
 ATT = {}
 
-ATT.PrintName = "Cage muzzle device"
-ATT.CompactName = "Cage"
-ATT.Description = [[A Cage muzzle device.]]
-ATT.SortOrder = 100
+ATT.PrintName = "Flash Hider"
+ATT.CompactName = "FH"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 95
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -54,9 +54,9 @@ ARC9.LoadAttachment(ATT, "uplp_muzzle_cage")
 
 ATT = {}
 
-ATT.PrintName = "Fat muzzle device"
-ATT.CompactName = "Fat"
-ATT.Description = [[A Fat muzzle device.]]
+ATT.PrintName = "Heavy Muzzle Brake"
+ATT.CompactName = "Heavy MB"
+ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -78,10 +78,10 @@ ARC9.LoadAttachment(ATT, "uplp_muzzle_fat")
 
 ATT = {}
 
-ATT.PrintName = "Flashhider"
-ATT.CompactName = "Flashhider"
-ATT.Description = [[A Flashhider muzzle device.]]
-ATT.SortOrder = 100
+ATT.PrintName = "3-Pronged Flash Hider"
+ATT.CompactName = "3P FH"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 95
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -102,9 +102,9 @@ ARC9.LoadAttachment(ATT, "uplp_muzzle_fhider")
 
 ATT = {}
 
-ATT.PrintName = "Slim muzzle device"
-ATT.CompactName = "Slim"
-ATT.Description = [[A Slim muzzle device.]]
+ATT.PrintName = "Slim Muzzle Brake"
+ATT.CompactName = "Slim MB"
+ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")

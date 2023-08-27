@@ -121,6 +121,27 @@ L["uplp_grip_handstop.compactname"] = "Handstop"
 L["uplp_grip_handstop.description"] = "Angled handstop to improve ergonomics."
 
 /////////// Muzzle
+L["uplp_muzzle_3h.printname"] = "3-Hole Muzzle Brake"
+L["uplp_muzzle_3h.compactname"] = "3H MB"
+L["uplp_muzzle_3h.description"] = "Muzzle brake that redirects propelled gases upwards for reduced vertical recoil."
+
+L["uplp_muzzle_cage.printname"] = "Flash Hider"
+L["uplp_muzzle_cage.compactname"] = "Flash Hider"
+L["uplp_muzzle_cage.description"] = "Muzzle device that hides the muzzle flash when firing."
+
+L["uplp_muzzle_fat.printname"] = "Heavy Muzzle Brake"
+L["uplp_muzzle_fat.compactname"] = "Heavy MB"
+L["uplp_muzzle_fat.description"] = "Heavy muzzle brake that adds more weight to the front of the gun, reducing overall recoil."
+
+L["uplp_muzzle_fhider.printname"] = "3-Pronged Flash Hider"
+L["uplp_muzzle_fhider.compactname"] = "3P FH"
+L["uplp_muzzle_fhider.description"] = "Muzzle device that hides the muzzle flash when firing."
+
+L["uplp_muzzle_slim.printname"] = "Slim Muzzle Brake"
+L["uplp_muzzle_slim.compactname"] = "Slim MB"
+L["uplp_muzzle_slim.description"] = "Muzzle brake that redirects propelled gases sideways for reduced horizontal recoil."
+
+////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
 L["uplp_sg_mz_choke.compactname"] = "SG FC"
 L["uplp_sg_mz_choke.description"] = "Compact full choke muzzle for shotguns."
@@ -926,7 +947,7 @@ L["uplp_deag_barrel_longtac.description"] = "Extended tactical barrel with cut o
 ////// Muzzles
 L["uplp_deag_muzzle_cut.printname"] = "Vertical Compensator"
 L["uplp_deag_muzzle_cut.compactname"] = "Vertical"
-L["uplp_deag_muzzle_cut.description"] = "A compensator that redirects the propelled gases downwards to reduce vertical recoil."
+L["uplp_deag_muzzle_cut.description"] = "A compensator that redirects the propelled gases upwards to reduce vertical recoil."
 
 L["uplp_deag_muzzle_heavy.printname"] = "Heavy Compensator"
 L["uplp_deag_muzzle_heavy.compactname"] = "Heavy"
@@ -939,6 +960,36 @@ L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propel
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62x39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
+
+/////////// Attachments
+////// Barrels
+L["uplp_mutant_barrel_long.printname"] = "500mm Barrel"
+L["uplp_mutant_barrel_long.compactname"] = "500mm"
+L["uplp_mutant_barrel_long.description"] = "Extended 500mm (19.7\") barrel for the Mutant."
+
+L["uplp_mutant_barrel_short.printname"] = "409mm Barrel"
+L["uplp_mutant_barrel_short.compactname"] = "409mm"
+L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the Mutant."
+
+////// Handguards
+local requires = "\n\n"
+local requires19 = requires .. "Requires 500mm (19.7\") or longer barrel."
+
+L["uplp_mutant_hg_long.printname"] = "Tactical XL Handguard"
+L["uplp_mutant_hg_long.compactname"] = "Tactical XL"
+L["uplp_mutant_hg_long.description"] = "Long tactical handguard made for the Mutant." .. requires19
+
+L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6 Handguard"
+L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
+L["uplp_mutant_hg_nowosuku.description"] = "Lightweight SX6 handguard manufactured by Nowosuko."
+
+L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
+L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
+L["uplp_mutant_hg_nowosuku_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuko." .. requires19
+
+L["uplp_mutant_hg_short.printname"] = "Tactical Handguard"
+L["uplp_mutant_hg_short.compactname"] = "Tactical"
+L["uplp_mutant_hg_short.description"] = "Tactical handguard made for the Mutant."
 
 //////////////////// Molot
 L["uplp_weapon_molot"] = "Molot"

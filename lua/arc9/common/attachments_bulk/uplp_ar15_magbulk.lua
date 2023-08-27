@@ -15,8 +15,25 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Folder = ".45 ACP"
+
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag"}
+
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.DamageMax = 20
+ATT.DamageMin = 10
+ATT.Range = 50
+ATT.MuzzleVelocity = 350
+ATT.RPM = 1000
+ATT.RecoilMult = 0.5
+ATT.SpreadMult = 1.5
+
+local path = "weapons/arccw/mp7/"
+
+ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+
 
 ATT.ClipSizeOverride = 20
 -- ATT.SortOrder = 0
@@ -42,8 +59,25 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Folder = ".45 ACP"
+
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag"}
+
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.DamageMax = 20
+ATT.DamageMin = 10
+ATT.Range = 50
+ATT.MuzzleVelocity = 350
+ATT.RPM = 1000
+ATT.RecoilMult = 0.5
+ATT.SpreadMult = 1.5
+
+local path = "weapons/arccw/mp7/"
+
+ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+
 
 ATT.ClipSizeOverride = 40
 -- ATT.SortOrder = 0
@@ -53,34 +87,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_40")
-
-
-///////////////////////////////////////      uplp_ar15_mag_drum
-
-
-ATT = {}
-
-ATT.PrintName = "100-Round 5.56x45mm Beta C-Mag"
-ATT.CompactName = "100R 5.56 Drum"
-ATT.Description = ATT.PrintName
-ATT.SortOrder = 100
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-
-ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
-
-ATT.ClipSizeOverride = 100
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
-ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
-
-ARC9.LoadAttachment(ATT, "uplp_ar15_mag_drum")
 
 
 ///////////////////////////////////////      uplp_ar15_mag_glock_17
@@ -97,15 +103,38 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Folder = "9x19mm"
+
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
+
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.DamageMax = 18
+ATT.DamageMin = 8
+ATT.Range = 75
+ATT.MuzzleVelocity = 450
+ATT.RPM = 1200
+ATT.RecoilMult = 0.75
+ATT.SpreadMult = 1.25
+
+local path = "weapons/arccw/glock/"
+
+ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
 ATT.ClipSizeOverride = 17
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Attachments = {
+    {
+        PrintName = "Magwell",
+        Category = "uplp_stm9_magwell",
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_glock_17")
 
@@ -124,15 +153,38 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Folder = "9x19mm"
+
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
+
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.DamageMax = 18
+ATT.DamageMin = 8
+ATT.Range = 75
+ATT.MuzzleVelocity = 450
+ATT.RPM = 1200
+ATT.RecoilMult = 0.75
+ATT.SpreadMult = 1.25
+
+local path = "weapons/arccw/glock/"
+
+ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
 ATT.ClipSizeOverride = 33
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Attachments = {
+    {
+        PrintName = "Magwell",
+        Category = "uplp_stm9_magwell",
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_glock_33")
 
@@ -151,15 +203,38 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.Folder = "9x19mm"
+
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
+
+ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.DamageMax = 18
+ATT.DamageMin = 8
+ATT.Range = 75
+ATT.MuzzleVelocity = 450
+ATT.RPM = 1200
+ATT.RecoilMult = 0.75
+ATT.SpreadMult = 1.25
+
+local path = "weapons/arccw/glock/"
+
+ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
 ATT.ClipSizeOverride = 50
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Attachments = {
+    {
+        PrintName = "Magwell",
+        Category = "uplp_stm9_magwell",
+        Pos = Vector(0, 0, 3),
+        Ang = Angle(0, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_glock_50")
 
@@ -178,8 +253,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
@@ -204,10 +278,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 
-ATT.ClipSizeOverride = 10
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
+ATT.ClipSizeOverride = 10
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -231,10 +304,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 
-ATT.ClipSizeOverride = 20
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
+ATT.ClipSizeOverride = 20
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -258,8 +330,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
@@ -284,10 +355,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 
-ATT.ClipSizeOverride = 60
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
+ATT.ClipSizeOverride = 60
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -311,8 +381,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
@@ -335,10 +404,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 
-ATT.ClipSizeOverride = 40
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
+ATT.ClipSizeOverride = 40
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -362,10 +430,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 
-ATT.ClipSizeOverride = 60
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ActivateElements = {"uplp_ar15_mag"}
 
+ATT.ClipSizeOverride = 60
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -374,3 +441,29 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag60")
 
+
+///////////////////////////////////////      uplp_ar15_mag_drum
+
+
+ATT = {}
+
+ATT.PrintName = "100-Round 5.56x45mm Beta C-Mag"
+ATT.CompactName = "100R 5.56 Drum"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+ATT.ClipSizeOverride = 100
+-- ATT.SortOrder = 0
+ATT.Category = "uplp_ar15_556_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_mag_drum")

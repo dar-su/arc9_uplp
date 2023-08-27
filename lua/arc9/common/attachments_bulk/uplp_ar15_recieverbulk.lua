@@ -3,7 +3,7 @@ local ATT = {}
 
 ///////////////////////////////////////      uplp_ar15_reciever_45acp
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = ".45 ACP Conversion - TO BE SCRAPPED"
@@ -44,6 +44,7 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_45acp")
 
+--]]
 
 ///////////////////////////////////////      uplp_ar15_reciever_m16
 
@@ -79,7 +80,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m16")
 
 ///////////////////////////////////////      uplp_ar15_reciever_m4
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = "Standard Receiver"
@@ -107,7 +108,7 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m4")
-
+]]--
 
 ///////////////////////////////////////      uplp_ar15_reciever_modern
 
@@ -143,7 +144,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern")
 
 ///////////////////////////////////////      uplp_ar15_reciever_stm9
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = "STM-9 9x19mm Conversion - TO BE SCRAPPED"
@@ -182,4 +183,4 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_stm9")
-
+]]--

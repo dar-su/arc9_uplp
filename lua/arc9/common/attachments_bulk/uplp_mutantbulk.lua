@@ -6,9 +6,9 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "MUTANT Long barrel"
-ATT.CompactName = "Long"
-ATT.Description = [[A Long barrel for MUTANT rifle.]]
+ATT.PrintName = "500mm Barrel"
+ATT.CompactName = "500mm"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -29,9 +29,9 @@ ARC9.LoadAttachment(ATT, "uplp_mutant_barrel_long")
 
 ATT = {}
 
-ATT.PrintName = "MUTANT Short barrel"
-ATT.CompactName = "Short"
-ATT.Description = [[A Short barrel for MUTANT rifle.]]
+ATT.PrintName = "409mm Barrel"
+ATT.CompactName = "409mm"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -52,9 +52,9 @@ ARC9.LoadAttachment(ATT, "uplp_mutant_barrel_short")
 
 ATT = {}
 
-ATT.PrintName = "MUTANT Extended Handguard"
-ATT.CompactName = "Extended HG"
-ATT.Description = [[A Extended Handguard for MUTANT rifle.]]
+ATT.PrintName = "Tactical XL Handguard"
+ATT.CompactName = "Tactical XL"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -68,7 +68,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-13.3, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -84,9 +84,9 @@ ARC9.LoadAttachment(ATT, "uplp_mutant_hg_long")
 
 ATT = {}
 
-ATT.PrintName = "AR-10 NOWOSUKU SX6 handguard"
-ATT.CompactName = "NOWOSUKU"
-ATT.Description = [[A NOWOSUKU SX6 handguard for AR-10 rifles.]]
+ATT.PrintName = "Nowosuku SX6 Handguard"
+ATT.CompactName = "SX6"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -100,7 +100,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-8.2, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -116,9 +116,9 @@ ARC9.LoadAttachment(ATT, "uplp_mutant_hg_nowosuku")
 
 ATT = {}
 
-ATT.PrintName = "AR-10 NOWOSUKU SX6-XL handguard"
-ATT.CompactName = "NOWOS. XL"
-ATT.Description = [[A NOWOSUKU SX6-XL handguard for AR-10 rifles.]]
+ATT.PrintName = "Nowosuku SX6 XL Handguard"
+ATT.CompactName = "SX6 XL"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -131,7 +131,7 @@ ATT.Category = "uplp_ar10_hgg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-11.5, 0, 0),
         Ang = Angle(0, 0, 0),
@@ -147,9 +147,9 @@ ARC9.LoadAttachment(ATT, "uplp_mutant_hg_nowosuku_xl")
 
 ATT = {}
 
-ATT.PrintName = "MUTANT Short Handguard"
-ATT.CompactName = "Short HG"
-ATT.Description = [[A Short Handguard for MUTANT rifle.]]
+ATT.PrintName = "Tactical Handguard"
+ATT.CompactName = "Tactical"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -163,7 +163,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Attachments = {
     {
-        PrintName = "Front sight",
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-7.7, 0, 0),
         Ang = Angle(0, 0, 0),

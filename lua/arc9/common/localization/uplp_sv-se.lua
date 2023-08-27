@@ -121,6 +121,27 @@ L["uplp_grip_handstop.compactname"] = "Handstopp"
 L["uplp_grip_handstop.description"] = "Vinklat handstopp för förbättrad ergonomi."
 
 /////////// Muzzle
+L["uplp_muzzle_3h.printname"] = "Mynningsbroms med 3 Hål"
+L["uplp_muzzle_3h.compactname"] = "3H MB"
+L["uplp_muzzle_3h.description"] = "Mynningsbroms som omdirigerar framdrivna gaser uppåt för nedsänkt vertikal rekyl."
+
+L["uplp_muzzle_cage.printname"] = "Flamdämpare"
+L["uplp_muzzle_cage.compactname"] = "FD"
+L["uplp_muzzle_cage.description"] = "Mynningsenhet som gömmer mynningsflamman under avfyrning."
+
+L["uplp_muzzle_fat.printname"] = "Tung Mynningsbroms"
+L["uplp_muzzle_fat.compactname"] = "Tung MB"
+L["uplp_muzzle_fat.description"] = "Tung mynningsbroms som lägger till vikt på vapnets ände och sänker generell rekyl."
+
+L["uplp_muzzle_fhider.printname"] = "3-Delad Flamdämpare"
+L["uplp_muzzle_fhider.compactname"] = "3D FD"
+L["uplp_muzzle_fhider.description"] = "Mynningsenhet som gömmer mynningsflamman under avfyrning."
+
+L["uplp_muzzle_slim.printname"] = "Kompakt Mynningsbroms"
+L["uplp_muzzle_slim.compactname"] = "Kompakt MB"
+L["uplp_muzzle_slim.description"] = "Mynningsbroms som omdirigerar framdrivna gaser till sidan för nedsänkt horisontal rekyl."
+
+////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Hagelgevär Full Choke"
 L["uplp_sg_mz_choke.compactname"] = "HG FC"
 L["uplp_sg_mz_choke.description"] = "Kompakt full choke mynningstillbehör till hagelgevär."
@@ -658,11 +679,11 @@ L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lättvikt S-15-handskydd tillverka
 
 L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL-Handskydd"
 L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
-L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Längre variant av det lättvikta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact
 
 L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL-Handskydd (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
-L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lättvikta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_ris.printname"] = "RIS Handskydd"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
@@ -916,7 +937,7 @@ L["uplp_deag_barrel_longtac.description"] = "Förlängd taktisk pipa med utskurn
 ////// Muzzles
 L["uplp_deag_muzzle_cut.printname"] = "Vertikal Kompensator"
 L["uplp_deag_muzzle_cut.compactname"] = "Vertikal"
-L["uplp_deag_muzzle_cut.description"] = "En kompensator som omdirigerar framdrivna gaser nedåt för att sänka vertikal rekyl."
+L["uplp_deag_muzzle_cut.description"] = "En kompensator som omdirigerar framdrivna gaser uppåt för att sänka vertikal rekyl."
 
 L["uplp_deag_muzzle_heavy.printname"] = "Tung Kompensator"
 L["uplp_deag_muzzle_heavy.compactname"] = "Tung"
@@ -929,6 +950,36 @@ L["uplp_deag_muzzle_tri.description"] = "En kompensator som omdirigerar framdriv
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla 7,62x39mm-kalibern som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
+
+/////////// Attachments
+////// Barrels
+L["uplp_mutant_barrel_long.printname"] = "500mm Pipa"
+L["uplp_mutant_barrel_long.compactname"] = "500mm"
+L["uplp_mutant_barrel_long.description"] = "Förlängd 500mm pipa till Mutant."
+
+L["uplp_mutant_barrel_short.printname"] = "409mm Pipa"
+L["uplp_mutant_barrel_short.compactname"] = "409mm"
+L["uplp_mutant_barrel_short.description"] = "Standard 409mm pipa till Mutant."
+
+////// Handguards
+local requires = "\n\n"
+local requires19 = requires .. "Kräver 500mm eller längre pipa."
+
+L["uplp_mutant_hg_long.printname"] = "Taktiskt XL Handskydd"
+L["uplp_mutant_hg_long.compactname"] = "Taktiskt XL"
+L["uplp_mutant_hg_long.description"] = "Långt taktiskt handskydd gjort till Mutant." .. requires19
+
+L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6-Handskydd"
+L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
+L["uplp_mutant_hg_nowosuku.description"] = "Lättvikt SX6-handskydd tillverkat av Nowosuko."
+
+L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
+L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
+L["uplp_mutant_hg_nowosuku_xl.description"] = "Längre variant av det lätta SX6-handskyddet tillverkat av Nowosuko." .. requires19
+
+L["uplp_mutant_hg_short.printname"] = "Taktiskt Handskydd"
+L["uplp_mutant_hg_short.compactname"] = "Taktiskt"
+L["uplp_mutant_hg_short.description"] = "Taktiskt handskydd gjort till Mutant."
 
 //////////////////// Molot
 L["uplp_weapon_molot"] = "Molot"

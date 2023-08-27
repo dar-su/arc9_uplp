@@ -22,7 +22,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
         Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_min",
+        Installed = "uplp_ar15_gasblock_m16",
         Integral = "uplp_ar15_gasblock_min",
         Pos = Vector(-8.7, 0, 0.4),
         Ang = Angle(0, 0, 0),
@@ -61,7 +61,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
         Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_min",
+        Installed = "uplp_ar15_gasblock_m16",
         Integral = "uplp_ar15_gasblock_min",
         Pos = Vector(-10.2, 0, 0.4),
         Ang = Angle(0, 0, 0),
@@ -99,7 +99,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
         Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_min",
+        Installed = "uplp_ar15_gasblock_m16",
         Integral = "uplp_ar15_gasblock_min",
         Pos = Vector(-13.4, 0, 0.4),
         Ang = Angle(0, 0, 0),
@@ -137,7 +137,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
         Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_min",
+        Installed = "uplp_ar15_gasblock_m16",
         Integral = "uplp_ar15_gasblock_min",
         Pos = Vector(-13.4, 0, 0.4),
         Ang = Angle(0, 0, 0),
@@ -175,7 +175,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
         Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_min",
+        Installed = "uplp_ar15_gasblock_m16",
         Integral = "uplp_ar15_gasblock_min",
         Pos = Vector(-13.4, 0, 0.4),
         Ang = Angle(0, 0, 0),

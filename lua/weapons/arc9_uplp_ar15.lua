@@ -217,9 +217,9 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 32.5, 5)
+SWEP.CustomizePos = Vector(12.5, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(12.5, -2, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 90
@@ -501,19 +501,20 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.AttachmentElements = {
+	-- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } } },
     ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 } } },
     ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } } },
 
-
+	-- RECEIVERS
     ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
     ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
+	
     ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
-    ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
 
-    
+    -- HANDGUARDS
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
     ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
     ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
@@ -531,6 +532,18 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 13 } } },
     ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 12 } } },
     ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 14 } } },
+	
+	-- PISTOL GRIPS
+    ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 1 } } },
+	
+	-- CHARGING HANDLES
+    ["uplp_ar15_chandle"] = { Bodygroups={ { 6, 1 } } },
+	
+	-- MAGAZINES
+    ["uplp_ar15_mag"] = { Bodygroups={ { 7, 1 } } },
+	
+	-- OTHER
+    ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
 }
 
 SWEP.Attachments = {
@@ -539,6 +552,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
         Bone = "body",
+        Installed = "uplp_ar15_rs_m4",
         Pos = Vector(0.045, -0.2, 0.326),
         Ang = Angle(90, 90, 180),
     },
@@ -554,28 +568,31 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
         Bone = "body",
+        Installed = "uplp_ar15_stock_m4",
         Pos = Vector(0.045, 0.99, -2.98),
         Ang = Angle(90, 90, 180),
-        -- Installed = "uplp_ar15_stock_m4",
-        -- Integral = "uplp_ar15_stock_m4",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ar15_pgrip"},
+		ActiveElements = {"uplp_ar15_pgrip"},
         Bone = "body",
+        RejectAttachments = {
+		["uplp_ar15_pgrip_std"] = true,
+		},
         Pos = Vector(0.045, 3.2, -0.56),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ar15_pgrip_std",
-        Integral = "uplp_ar15_pgrip_std",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_charginghandle"),
         Category = {"uplp_ar15_chandle"},
         Bone = "chandle",
+		ActiveElements = {"uplp_ar15_chandle"},
+        RejectAttachments = {
+		["uplp_ar15_chandle_std"] = true,
+		},
         Pos = Vector(-0.01, 0.094, -0.05),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ar15_chandle_std",
-        Integral = "uplp_ar15_chandle_std",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -589,7 +606,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = {"uplp_ar15_hg",""},
+        Category = {"uplp_ar15_hg"},
         Bone = "body",
         Pos = Vector(0.045, -0.2, 7.703),
         Ang = Angle(90, 90, 180),
@@ -601,44 +618,26 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = {"uplp_ar15_reciever"},
+        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
         Bone = "body",
+        RejectAttachments = {
+		["uplp_ar15_reciever_m4"] = true,
+		["uplp_ar15_reciever_stm9"] = true,
+		["uplp_ar15_reciever_45acp"] = true,
+		},
         Pos = Vector(0, 1, 2),
         Ang = Angle(90, 90, 180),
-        Integral = true,
-        Installed = "uplp_ar15_reciever_m4",
-        Integral = "uplp_ar15_reciever_m4",
+        Integral = false,
     },
-    { -- regular mag
+    {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_ar15_556_mag"},
-        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
+        Category = {"uplp_ar15_556_mag", "uplp_ar15_45_mag", "uplp_ar15_glock_mag"},
+        RejectAttachments = {
+		["uplp_ar15_mag_stanag30"] = true,
+		},
         Bone = "mag",
         Pos = Vector(0.04, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
-        Integral = "uplp_ar15_mag_stanag30",
-        Installed = "uplp_ar15_mag_stanag30",
     },
-    -- { -- 45acp mag
-        -- PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        -- Category = {"uplp_ar15_45_mag"},
-        -- RequireElements = {"uplp_ar15_reciever_45acp"},
-        -- Bone = "mag",
-        -- Pos = Vector(0, -2.406, -2.428),
-        -- Ang = Angle(90, 90, 180),
-        -- Icon_Offset = Vector(1.5, 0, -3),
-        -- Installed = "uplp_ar15_mag_45_20",
-        -- Integral = "uplp_ar15_mag_45_20",
-    -- },
-    -- { -- glock mag
-        -- PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        -- Category = {"uplp_ar15_glock_mag"},
-        -- RequireElements = {"uplp_ar15_reciever_stm9"},
-        -- Bone = "mag",
-        -- Pos = Vector(0, -2.406, -2.428),
-        -- Ang = Angle(90, 90, 180),
-        -- Icon_Offset = Vector(1.5, 0, -3),
-		-- Installed = "uplp_ar15_mag_glock_17",
-        -- Integral = "uplp_ar15_mag_glock_17",
-    -- },
 }
