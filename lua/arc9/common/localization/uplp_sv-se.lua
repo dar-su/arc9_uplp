@@ -728,9 +728,9 @@ L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
 L["uplp_ar15_mag_45_40.description"] = "Konverterar AR-15 att acceptera 40-patroners .45 ACP magasin."
 
 /// 9x19mm
-L["uplp_ar15_stm9_magwell.printname"] = "STM-9 Magwell"
-L["uplp_ar15_stm9_magwell.compactname"] = "Magwell"
-L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier reloads."
+L["uplp_ar15_stm9_magwell.printname"] = "STM-9-Magasinbrunn"
+L["uplp_ar15_stm9_magwell.compactname"] = "Magasinbrunn"
+L["uplp_ar15_stm9_magwell.description"] = "Sätter på en utsvängd magasinbrunn för snabbare omladdningar."
 
 L["uplp_ar15_mag_glock_17.printname"] = "17-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17S 9x19"

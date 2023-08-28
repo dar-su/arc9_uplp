@@ -20,27 +20,29 @@ ATT.Folder = ".45 ACP"
 ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
-ATT.DamageMax = 20
-ATT.DamageMin = 10
-ATT.Range = 50
-ATT.MuzzleVelocity = 350
-ATT.RPM = 1000
-ATT.RecoilMult = 0.5
-ATT.SpreadMult = 1.5
 
 local path = "weapons/arccw/mp7/"
+local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
-ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+-- ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+-- ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
+ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.75
+ATT.SprintToFireTimeMult = 0.75
+ATT.RecoilMult = 0.75
+
+/// Negatives
 ATT.ClipSizeOverride = 20
--- ATT.SortOrder = 0
+ATT.PhysBulletMuzzleVelocityMult = 0.65
+ATT.DamageMaxAdd = -5
+ATT.RangeMaxMult = 0.5
+ATT.RangeMinMult = 0.8
+
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_20")
 
@@ -64,27 +66,30 @@ ATT.Folder = ".45 ACP"
 ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
-ATT.DamageMax = 20
-ATT.DamageMin = 10
-ATT.Range = 50
-ATT.MuzzleVelocity = 350
-ATT.RPM = 1000
-ATT.RecoilMult = 0.5
-ATT.SpreadMult = 1.5
 
 local path = "weapons/arccw/mp7/"
+local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
-ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+-- ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
+-- ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
+ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
 ATT.ClipSizeOverride = 40
--- ATT.SortOrder = 0
+ATT.RecoilMult = 0.7
+
+/// Negatives
+ATT.PhysBulletMuzzleVelocityMult = 0.65
+ATT.DamageMaxAdd = -5
+ATT.RangeMaxMult = 0.5
+ATT.RangeMinMult = 0.8
+ATT.ReloadTimeMult = 1.15
+
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_40")
 
@@ -128,24 +133,38 @@ ATT.Folder = "9x19mm"
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
-ATT.DamageMax = 18
-ATT.DamageMin = 8
-ATT.Range = 75
-ATT.MuzzleVelocity = 450
-ATT.RPM = 1200
-ATT.RecoilMult = 0.75
-ATT.SpreadMult = 1.25
 
-local path = "weapons/arccw/glock/"
+local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
-ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSound = {shootsound9 .. "shot_01.ogg",
+shootsound9 .. "shot_02.ogg",
+shootsound9 .. "shot_03.ogg",
+shootsound9 .. "shot_04.ogg",
+}
 
-ATT.ClipSizeOverride = 17
+ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_9"
+end
+
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.RPMMult = 1.2
+ATT.AimDownSightsTimeMult = 0.7
+ATT.SprintToFireTimeMult = 0.7
+ATT.RecoilMult = 0.85
+
+/// Negatives
+ATT.ClipSizeOverride = 17
+ATT.PhysBulletMuzzleVelocityMult = 0.45
+ATT.DamageMaxAdd = -10
+ATT.DamageMinAdd = -5
+ATT.RangeMaxMult = 0.35
+ATT.RangeMinMult = 0.65
 
 ATT.Attachments = {
     {
@@ -178,25 +197,39 @@ ATT.Folder = "9x19mm"
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
-ATT.DamageMax = 18
-ATT.DamageMin = 8
-ATT.Range = 75
-ATT.MuzzleVelocity = 450
-ATT.RPM = 1200
-ATT.RecoilMult = 0.75
-ATT.SpreadMult = 1.25
-ATT.ReloadTimeMult = 1.2
 
-local path = "weapons/arccw/glock/"
+local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
-ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSound = {shootsound9 .. "shot_01.ogg",
+shootsound9 .. "shot_02.ogg",
+shootsound9 .. "shot_03.ogg",
+shootsound9 .. "shot_04.ogg",
+}
 
-ATT.ClipSizeOverride = 33
+ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_9"
+end
+
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.RPMMult = 1.2
+ATT.AimDownSightsTimeMult = 0.8
+ATT.SprintToFireTimeMult = 0.8
+ATT.RecoilMult = 0.8
+ATT.ClipSizeOverride = 33
+
+/// Negatives
+ATT.PhysBulletMuzzleVelocityMult = 0.45
+ATT.DamageMaxAdd = -10
+ATT.DamageMinAdd = -5
+ATT.RangeMaxMult = 0.35
+ATT.RangeMinMult = 0.65
+ATT.ReloadTimeMult = 1.15
 
 ATT.Attachments = {
     {
@@ -229,25 +262,39 @@ ATT.Folder = "9x19mm"
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
-ATT.DamageMax = 18
-ATT.DamageMin = 8
-ATT.Range = 75
-ATT.MuzzleVelocity = 450
-ATT.RPM = 1200
-ATT.RecoilMult = 0.75
-ATT.SpreadMult = 1.25
-ATT.ReloadTimeMult = 1.4
 
-local path = "weapons/arccw/glock/"
+local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
-ATT.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+ATT.ShootSound = {shootsound9 .. "shot_01.ogg",
+shootsound9 .. "shot_02.ogg",
+shootsound9 .. "shot_03.ogg",
+shootsound9 .. "shot_04.ogg",
+}
 
-ATT.ClipSizeOverride = 50
+ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_9"
+end
+
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.RPMMult = 1.2
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.95
+ATT.RecoilMult = 0.8
+
+/// Negatives
+ATT.ClipSizeOverride = 50
+ATT.PhysBulletMuzzleVelocityMult = 0.45
+ATT.DamageMaxAdd = -10
+ATT.DamageMinAdd = -5
+ATT.RangeMaxMult = 0.35
+ATT.RangeMinMult = 0.65
+ATT.ReloadTimeMult = 1.25
 
 ATT.Attachments = {
     {

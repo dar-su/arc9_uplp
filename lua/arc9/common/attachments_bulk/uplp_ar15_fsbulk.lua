@@ -15,13 +15,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "4"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     4     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
--- ATT.ModelOffset = Vector(0, 0, 0)
 
+ATT.ExcludeElements = {"uplp_ar15_rs_short"}
 
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_mbus")
 
@@ -40,13 +38,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "8"
 -- ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     4     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
--- ATT.ModelOffset = Vector(0, 0, 0)
 
+ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_scalar")
 
@@ -65,13 +61,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "0"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
--- ATT.ModelOffset = Vector(0, 0, 0)
 
+ATT.ExcludeElements = {"uplp_ar15_rs_short"}
 
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type1")
 
@@ -90,13 +84,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "2"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     2     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
--- ATT.ModelOffset = Vector(0, 0, 0)
 
+ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type2")
 
@@ -106,8 +98,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type2")
 
 ATT = {}
 
-ATT.PrintName = "UTG Front Sight"
-ATT.CompactName = "UTG"
+ATT.PrintName = "Type 3 Front Sight"
+ATT.CompactName = "Type 3"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -115,13 +107,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "6"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     6     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
--- ATT.ModelOffset = Vector(0, 0, 0)
 
+ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_utg")
 

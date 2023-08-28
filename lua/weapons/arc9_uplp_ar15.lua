@@ -30,7 +30,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+"[416]XQAAAQCcAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lOdO3dT3s+KVkh0yljNW9rFoFBWxxGwKyq3gyRrrHVDzLdmXlrOGRHbGDjz9I0k4Iu1hhGi88vzmxOFdX1RceI0AYsYKMe5EA",
+"[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
+"[SR PDW]XQAAAQAPAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgBo1NQ6kf06vykQIzaiinq5RceSpKykxZ5jTFIc+A3ESup+X72dZH2YytydKRG2I0a5fH8TX6ke/qy8QDxweZs5Sl4RvuBhhlAr+VMhKTgwN7wMw12zhG+kyxr5yGj7o2JuQnN2gcivb2rsD8J1JZ98=",
 }
 
 //// Muzzle Effects, Shell Effects, Camera
@@ -78,8 +80,8 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 75 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 200 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 50 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 150 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -149,7 +151,7 @@ SWEP.SpeedMult = 0.9 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.65 -- When aiming
 
 SWEP.AimDownSightsTime = 0.5 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.5 -- Time it takes to fully enter sprint
+SWEP.SprintToFireTime = 0.4 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
 SWEP.RPM = 800 -- How fast gun shoot
@@ -191,28 +193,23 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if attached["uplp_ar15_rs_mbus"] or attached["uplp_ar15_rs_type1"] or attached["uplp_ar15_rs_type3"] then
-		if (attached["uplp_ar15_fs_m4"] 
-		or attached["uplp_ar15_fs_scalar"]
-		or attached["uplp_ar15_fs_type2"]
-		or attached["uplp_ar15_fs_utg"]
-		or attached["uplp_ar15_gasblock_m16"]
-		or attached["uplp_ar15_gasblock_m16rail"]
-		) then
-			return { -- if incorrect front size
-				 Pos = Vector(-2.275, -3, 0.125),
-				 Ang = Angle(0.35, 0.8, -3),
-				 Magnification = 1.15,
-				 ViewModelFOV = 65,
-			}
-		end
-        return { -- if matching front size
+	if attached["uplp_ar15_rs_mbus"] or attached["uplp_ar15_rs_type1"] then
+		return {
 			Pos = Vector(-2.275, -3, 0.225),
 			Ang = Angle(0.35, 0.125, -3),
 			Magnification = 1.15,
 			ViewModelFOV = 65,
         }
-    end
+	end
+	
+	if attached["uplp_ar15_rs_type3"] then
+		return {
+			 Pos = Vector(-2.275, -3, 0.15),
+			 Ang = Angle(0.35, 0.65, -3),
+			 Magnification = 1.15,
+			 ViewModelFOV = 65,
+        }
+	end
 
 end
 
@@ -242,31 +239,26 @@ local pathCSR = "weapons/arccw/csr338/"
 
 local path556 = path
 
-local pathsound = "uplp_temp/ak/"
-local pathreloadsound = pathsound .. "reload/wpfoly_ak47_reload_"
-local shootsoundsupp = pathsound .. "shoot/suppressed/h1_wpn_supp_ar1_"
-local shootsound762 = pathsound .. "shoot/762/wpn_h1_ak47_"
-local shootsound545 = pathsound .. "shoot/545/wpn_h1_ak74u_"
-local shootsound556 = pathsound .. "shoot/556/wpn_h1_mp44_"
-local shootsound308 = pathsound .. "shoot/308/wpn_h1_g3_"
+local reloadsound = "uplp_temp/ar15/reload/wpfoly_m4_"
+local shootsoundsupp = "uplp_temp/ak47/shoot/suppressed/h1_wpn_supp_ar1_"
+local shootsound556 = "uplp_temp/ar15/shoot/556/wpn_h1_m16a4_"
+local shootsound45 = "uplp_temp/ar15/shoot/45/wpn_h1_m16a4_"
+local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-SWEP.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg",
-path .. "fire-03.ogg", path .. "fire-04.ogg",
-path .. "fire-05.ogg", path .. "fire-06.ogg"}
+SWEP.ShootSound = {shootsound556 .. "shot_01.ogg",
+shootsound556 .. "shot_02.ogg",
+shootsound556 .. "shot_03.ogg",
+shootsound556 .. "shot_04.ogg",
+}
 
-SWEP.DistantShootSound = {path .. "fire-dist-01.ogg",
-path .. "fire-dist-02.ogg",
-path .. "fire-dist-03.ogg",
-path .. "fire-dist-04.ogg",
-path .. "fire-dist-05.ogg",
-path .. "fire-dist-06.ogg"}
+SWEP.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
 
 SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
 shootsoundsupp .. "02.ogg",
 shootsoundsupp .. "03.ogg",
 shootsoundsupp .. "04.ogg"}
 
-SWEP.DistantShootSoundSilenced = {pathsound .. "shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
+SWEP.DistantShootSoundSilenced = {"uplp_temp/ak47/shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 
@@ -310,9 +302,9 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_chamber.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 21 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -326,52 +318,123 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
 		MinProgress = 0.5,
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },    
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
 		MinProgress = 0.5,
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = path .. "charge.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
-
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {{ s = {path .. "mech-01.ogg", path .. "mech-02.ogg", path .. "mech-03.ogg", path .. "mech-04.ogg", path .. "mech-05.ogg", path .. "mech-06.ogg"}, t = 0 }},
+        EventTable = {
+            { s = {
+			shootsound556 .. "mech_01.ogg",
+			shootsound556 .. "mech_02.ogg",
+			shootsound556 .. "mech_03.ogg",
+			shootsound556 .. "mech_04.ogg",
+			}, t = 0 },
+        },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {{ s = "weapons/arccw/arx160/lowpolyarx160_empty.ogg", t = 0.03 }},
+        EventTable = {
+            { s = {
+			shootsound556 .. "mech_01.ogg",
+			shootsound556 .. "mech_02.ogg",
+			shootsound556 .. "mech_03.ogg",
+			shootsound556 .. "mech_04.ogg",
+			}, t = 0 },
+        },
+    },
+
+    ["fire_45"] = {
+        Source = {"fire_01","fire_02","fire_03"},
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound9 .. "mech_01.ogg",
+			shootsound9 .. "mech_02.ogg",
+			shootsound9 .. "mech_03.ogg",
+			shootsound9 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = {
+			shootsound9 .. "punch.ogg",
+			}, t = 0 },
+        },
+    },
+    ["fire_empty_45"] = {
+        Source = "fire_empty",
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound9 .. "mech_01.ogg",
+			shootsound9 .. "mech_02.ogg",
+			shootsound9 .. "mech_03.ogg",
+			shootsound9 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = {
+			shootsound9 .. "punch.ogg",
+			}, t = 0 },
+        },
+    },
+
+    ["fire_9"] = {
+        Source = {"fire_01","fire_02","fire_03"},
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound9 .. "mech_01.ogg",
+			shootsound9 .. "mech_02.ogg",
+			shootsound9 .. "mech_03.ogg",
+			shootsound9 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = {
+			shootsound9 .. "punch.ogg",
+			}, t = 0 },
+        },
+    },
+    ["fire_empty_9"] = {
+        Source = "fire_empty",
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = {
+			shootsound9 .. "mech_01.ogg",
+			shootsound9 .. "mech_02.ogg",
+			shootsound9 .. "mech_03.ogg",
+			shootsound9 .. "mech_04.ogg",
+			}, t = 0 },
+            { s = {
+			shootsound9 .. "punch.ogg",
+			}, t = 0 },
+        },
     },
 
     -- Reloads --
@@ -379,11 +442,10 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "magout_metal.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = path .. "magdrop_metal.ogg", t = 11 / 30, c = ca, v = 1 },
-            { s = path .. "magin_metal.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 27 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 30 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -396,12 +458,11 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         EventTable = {
-            { s = path .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path .. "magout_metal.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = path .. "magdrop_metal.ogg", t = 11 / 30, c = ca, v = 1 },
-            { s = path .. "magin_metal.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path .. "chamber.ogg", t = 28 / 30, c = ca, v = 0.8 },
-            { s = path .. "end.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -419,9 +480,9 @@ SWEP.Animations = {
         FireASAP = true,
 		MinProgress = 0.925,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 40 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 70 / 30, c = ca, v = 0.8 },
+            { s = "uplp_temp/ar15/inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = "uplp_temp/ar15/inspect_02.wav", t = 40 / 30, c = ca, v = 0.8 },
+            { s = "uplp_temp/ar15/inspect_03.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -436,9 +497,9 @@ SWEP.Animations = {
         FireASAP = true,
 		MinProgress = 0.925,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 40 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 70 / 30, c = ca, v = 0.8 },
+            { s = "uplp_temp/ar15/inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = "uplp_temp/ar15/inspect_02.wav", t = 40 / 30, c = ca, v = 0.8 },
+            { s = "uplp_temp/ar15/inspect_03.wav", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
