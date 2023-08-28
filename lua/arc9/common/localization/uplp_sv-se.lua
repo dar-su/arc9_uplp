@@ -25,6 +25,7 @@ L["uplp_caliber"] = "Kaliber"
 
 L["uplp_caliber_7.62x32mm"] = "7,62x39mm Soviet"
 L["uplp_caliber_5.56x45mm"] = "5,56x45mm"
+L["uplp_caliber_5.45x39mm"] = "5,45x39mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
 
 /////////// Manufacturer

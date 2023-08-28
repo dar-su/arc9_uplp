@@ -10,6 +10,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ak_grip"}
+
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "0"
 ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
@@ -27,6 +29,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_grip"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "1"
@@ -46,6 +50,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ak_grip"}
+
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "2"
 ATT.ModelOffset = Vector(-11.015, -3.55, 8)
@@ -63,6 +69,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_grip"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "3"
@@ -85,6 +93,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ak_grip"}
+
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "4"
 ATT.ModelOffset = Vector(-10.925, -3.55, 7.8)
@@ -106,6 +116,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ak_grip"}
+
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "5"
 ATT.ModelOffset = Vector(-10.935, -3.55, 7.85)
@@ -123,6 +135,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_grip"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "6"
@@ -142,6 +156,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ak_grip"}
+
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "9"
 ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
@@ -160,9 +176,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ak_grip"}
+
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "7"
-ATT.ModelOffset = Vector(-10.95, -3.55, 7.85)
+ATT.ModelOffset = Vector(-10.9, -3.55, 7.95)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_12")
 
@@ -177,6 +195,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_grip"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "8"

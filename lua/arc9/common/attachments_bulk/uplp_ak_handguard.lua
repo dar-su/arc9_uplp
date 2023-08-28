@@ -301,6 +301,23 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_12", "ak12_part"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(3, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(4, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_12")
 
 -------------------------------------------

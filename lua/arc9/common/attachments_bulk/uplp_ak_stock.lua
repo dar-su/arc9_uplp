@@ -246,6 +246,7 @@ ATT.Attachments = {
         Category = {"uplp_ar15_stock"},
         Pos = Vector(0.8, 0, 0.3),
         Ang = Angle(0, 0, 0),
+		Installed = "uplp_ar15_stock_ak12",
     },
 }
 

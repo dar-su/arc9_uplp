@@ -8,20 +8,20 @@ SWEP.Spawnable = true
 SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
 //// Name, Description, Class, Category and Trivia
-SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak")
-SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak12")
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak12_desc")
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x32mm"),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.45x39mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
 																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
 																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
-    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1959" ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_russia" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "2018" ),
 }
 
 SWEP.Credits = {
@@ -30,14 +30,8 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-"[Beryl]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUCm4d16R22fa4mB2i2cwj7CJu8XDVOt8n636yhjAhTTav1tDDyoB4vd+ctpmtesNNMCtYVhR2MEK45AaqfTtCHPOlPPvkckO3iFo11eEtSBQbgHUa18j+P6++XfWNXlkhf7jS+fnOxtdgMWyLziQ3dCoL1sCA=",
-"[Vintage AK]XQAAAQASAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCAoqlx+D16rlwSFHCB3X4QgBaWkDW7ZO2EtbWl/eiHUndJHLwwPB3WJI5AX+OYJdIyZInPx1ft4FZ/q4EqvvVCK4+26DgWIAOoKXAtvPKeNgL3gL+5uP/bzhVXiWtY+yuCzPdzNvWmjE44wPYNY",
-"[Classic AK]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0U0N5nVl64+vr74h/wEGLDQ5U9Iv/UealLS+ojrv0cNfIa3d6wksEl25x+4EN9WF5I0n0cb5at0upRXD/l/t5m/R2kJHKtQ==",
-"[Classic RPK]XQAAAQAcAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZbJnKynvrJU8QgUevVMriFsvl01r3RAR1fa2CNlfaf1QTMcnTE5qjrRN2Lo48HlkfZVx+G57QMcpjwjlTG7i/rg4jO3xrQLqotwnJJmQA=",
-"[Romanian AK]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0URrcTYLjshsIy4gtvNVZPIcLUKVrHCwHWWi/CH4LagEksHsQwQnZVj6a96x97xDmsBUH4+us7DbiOHB5Ft/pRhXrwT/Hw8s7P2A=",
-"[Modern RPK]XQAAAQDyAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZaYXQITZAmJpVgQl19r3xbln7A4OL+1Jp2I2jJsB/idLOiz+EKn9w3GcvtcpDyrzxY8RcWY+lFIHysPoGAiotP4ojBXgA=",
-"[AK 9mm]XQAAAQAmAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIptDFa78UtfHBv23OZnbpcN8oUN1POCSFOZsC/AWUW94/XcPKIu0RNJCL8MkS5wcV3G7y7k2+UtJFurqNnWaDBUdsrCqo0O9Hwo8QEz6+47e/u9qySGAtDuaVL1bJKBR0xXBrK82THwM+Y+XgA",
-"[AKSU]XQAAAQAXAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spa/HCvjLEF18pEnhlyUplx5E87kB8J+Tej94m0uBdo54kXFAtVFVOn+OzTPThVRlZtBNamLjg/aBU21nmObi91swCEaETaUhcyib8S5mBkcAA=",
+"[AK-19]XQAAAQCJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobDJpHotQzVQehcAkNiD2eWB2lpBjhogO2OSLiL3ZOWkhJnQaTKP7QvAdS5aKvdnGZsPy54jy64U8Mem9JEEiKPa3c12f42Ugk+ekZ4wK4ClVTMCzs5b7L6m4NTIbwlh3a9omfALkuDpLKVeByGJpYOxy0I4BjpgA",
+"[RPK-16]XQAAAQB5AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KkqeaUAj/0+ounm+tZWCgTNHSQYsZcjkSNM9jeQxjGbm1JNzMy+Q+k1eBVlKM9wZwbtI5ofYbSvhQpe2fm0CNPgymDotdybPLX8bQVL+WOFSPtQYxkncvR8N8wrA8MaAFjngBOguqjtw+HZz5B2LkINVe9g==",
 }
 
 //// Muzzle Effects, Shell Effects, Camera
@@ -125,7 +119,7 @@ SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .1
 
-SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilMultHipFire = 0.5
 SWEP.VisualRecoilUpHipFire = 5
 SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 20
@@ -188,8 +182,8 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.3, -3, 0.975),
-     Ang = Angle(0.375, 0, -2.5),
+     Pos = Vector(-2.29, -3, 0.485),
+     Ang = Angle(0.35, 1, -2.5),
      Magnification = 1.15,
      ViewModelFOV = 55,
 }
@@ -197,21 +191,12 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if attached["uplp_ak_brl_su"] then
+     if attached["uplp_ak_brl_12k"] then
         return {
-			 Pos = Vector(-2.3, -3, 0.8),
-			 Ang = Angle(0.375, 0, -2.5),
+			 Pos = Vector(-2.29, -3, 0.465),
+			 Ang = Angle(0.35, 1.15, -2.5),
 			 Magnification = 1.15,
-			 ViewModelFOV = 60,
-        }
-    end
-	
-     if attached["uplp_ak_brl_109"] then
-        return {
-			 Pos = Vector(-2.3, -3, 0.875),
-			 Ang = Angle(0.34, 0, -2.5),
-			 Magnification = 1.15,
-			 ViewModelFOV = 60,
+			 ViewModelFOV = 55,
         }
     end
 end
@@ -970,86 +955,33 @@ end
 SWEP.AttachmentElements = {
 
     -- RECIEVERS
-    ["uplp_ak_rec_old"] =         { Bodygroups = { { 0, 1 } } },
     ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
     ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
 
     -- FIRE SELECTORS
-    ["uplp_ak_fs_old"] =         { Bodygroups = { { 1, 1 } } },
     ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
-    ["uplp_ak_fs_m1"] =          { Bodygroups = { { 1, 3 } } },
 
     -- BARRELS
-    ["uplp_ak_brl_comp"] = { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.76, 17.7), }}},
-    ["uplp_ak_brl_akm"] =  { Bodygroups = { { 2, 2 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 22.75),}}},
-    ["uplp_ak_brl_rpk"] =  { Bodygroups = { { 2, 3 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.7, 30),    }}},
-    ["uplp_ak_brl_109"] =  { Bodygroups = { { 2, 4 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 23.6), }}},
-
-    ["uplp_ak_brl_su"] =   { Bodygroups = { { 2, 5 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.75, 14.3), }}},
-
     ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
     ["uplp_ak_brl_12k"] =  { Bodygroups = { { 2, 7 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 15.2), }}},
     ["uplp_ak_brl_19"] =   { Bodygroups = { { 2, 8 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
     ["uplp_ak_brl_rpk16"] ={ Bodygroups = { { 2, 9 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
 
     -- DUST COVERS
-    ["uplp_ak_dc_std"] =           { Bodygroups = { { 3, 0 } } },
-    ["uplp_ak_dc_flat"] =          { Bodygroups = { { 3, 1 } } },
-    ["uplp_ak_dc_old"] =           { Bodygroups = { { 3, 2 } } },
-    ["uplp_ak_dc_rail"] =          { Bodygroups = { { 3, 3 } } },
-    ["uplp_ak_dc_rail2"] =         { Bodygroups = { { 3, 4 } } },
-    ["uplp_ak_dc_azen"] =           { Bodygroups = { { 3, 5 } } },
-    ["uplp_ak_dc_beryl"] =         { Bodygroups = { { 3, 6 } }, AttPosMods = {[1] = { Pos = Vector(0, -0.35, 0.5), }}},
     ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
-    ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
 
     -- PISTOL GRIPS
-    -- ["uplp_ak_grip_bak"] =         { Bodygroups = { { 4, 1 } } },
-    -- ["uplp_ak_grip_old"] =         { Bodygroups = { { 4, 2 } } },
-    -- ["uplp_ak_grip_tac"] =         { Bodygroups = { { 4, 3 } } },
-    -- ["uplp_ak_grip_tapco"] =       { Bodygroups = { { 4, 4 } } },
-    -- ["uplp_ak_grip_vityaz"] =      { Bodygroups = { { 4, 5 } } },
-    -- ["uplp_ak_grip_beryl"] =       { Bodygroups = { { 4, 6 } } },
-    -- ["uplp_ak_grip_12"] =          { Bodygroups = { { 4, 7 } } },
-    -- ["uplp_ak_grip_12evo"] =       { Bodygroups = { { 4, 8 } } },
     ["uplp_ak_grip"] =       { Bodygroups = { { 9, 1 } } },
 
     -- HANDGUARDS
     -- Standard
-    ["uplp_ak_hg_100"] =   { Bodygroups = { { 4, 1 } } },
-    ["uplp_ak_hg_old"] =   { Bodygroups = { { 4, 2 } } },
-    ["uplp_ak_hg_rpk"] =   { Bodygroups = { { 4, 3 } } },
-    ["uplp_ak_hg_beryl"] = { Bodygroups = { { 4, 4 } } },
-    ["uplp_ak_hg_tac"] =   { Bodygroups = { { 4, 5 } } },
-    ["uplp_ak_hg_wood"] =  { Bodygroups = { { 4, 6 } } },
-    ["uplp_ak_hg_dong"] =  { Bodygroups = { { 4, 7 } } },
-    ["uplp_ak_hg_azen_c"] = { Bodygroups = { { 4, 8 } } },
-    ["uplp_ak_hg_azen"] =   { Bodygroups = { { 4, 9 } } },
-
-    ["uplp_ak_hg_su_tac"] = { Bodygroups = { { 4, 11 } } },
-    ["uplp_ak_hg_su_dong"] ={ Bodygroups = { { 4, 12 } } },
-
     ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } },
     ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } },
 
     --CALIBERS
     ["uplp_ak_calib_545"] = { Bodygroups = { { 5, 1 } } },
-    ["uplp_ak_calib_556"] = { Bodygroups = { { 5, 2 } } },
-    ["uplp_ak_calib_308"] = { Bodygroups = { { 5, 3 } } },
-    ["uplp_ak_calib_939"] = { Bodygroups = { { 5, 4 } } },
 
     -- MAGAZINES
-    -- 7.62
-    ["uplp_ak_mag_762_30_bak"] = { Bodygroups = { { 6, 1 } } },
-    ["uplp_ak_mag_762_30_12"] = { Bodygroups = { { 6, 2 } } },
-    ["uplp_ak_mag_762_30_old"] = { Bodygroups = { { 6, 3 } } },
-    ["uplp_ak_mag_762_30_oldest"] = { Bodygroups = { { 6, 4 } } },
-
-    ["uplp_ak_mag_762_40"] = { Bodygroups = { { 6, 5 } } },
-    ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 6, 6 } } },
-
-    ["uplp_ak_mag_762_drum"] = { Bodygroups = { { 6, 7 } } },
-    
     -- 5.45
     ["uplp_ak_mag_545_30"] = { Bodygroups = { { 6, 8 } } },
     ["uplp_ak_mag_545_30_bak"] = { Bodygroups = { { 6, 9 } } },
@@ -1062,52 +994,12 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_mag_545_drum"] = { Bodygroups = { { 6, 14 } } },
 
-    -- 5.56
-    ["uplp_ak_mag_556_30"] = { Bodygroups = { { 6, 15 } } },
-    ["uplp_ak_mag_556_30_12"] = { Bodygroups = { { 6, 16 } } },
-    ["uplp_ak_mag_556_30_pmag"] = { Bodygroups = { { 6, 17 } } },
-
-    -- Other
-    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 6, 18 } } },
-
-    ["uplp_ak_mag_939_30"] = { Bodygroups = { { 6, 19 } } },
-
-    --STOCKS
-    -- ["uplp_ak_stock_poly"] =       { Bodygroups = { { 6, 0 } } },
-    -- ["uplp_ak_stock_fold"] =       { Bodygroups = { { 6, 1 } } },
-    -- ["uplp_ak_stock_skele"] =      { Bodygroups = { { 6, 2 } } },
-    -- ["uplp_ak_stock_old"] =        { Bodygroups = { { 6, 5 } } },
-    -- ["uplp_ak_stock_rpk"] =        { Bodygroups = { { 6, 10} } },
-    -- ["uplp_ak_stock_rpk74"] =      { Bodygroups = { { 6, 11} } },
-    -- ["uplp_ak_stock_tube"] =       { Bodygroups = { { 6, 12} } },
-    -- ["uplp_ak_stock_wood"] =       { Bodygroups = { { 6, 13} } },
-    -- ["uplp_ak_stock_beryl"] =      { Bodygroups = { { 6, 14} } },
-    -- ["uplp_ak_stock_tube12"] =     { Bodygroups = { { 6, 15} } },
-
-    -- ["uplp_ak_stock_underfold"] =  { Bodygroups = { { 6, 3 } } },
-    -- ["uplp_ak_stock_underfold_f"] ={ Bodygroups = { { 6, 4 } } },
-
-    -- ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
-    -- ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
-    
-    -- ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
-    -- ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
-
-    -- ["uplp_ak_stock_evo"] =        { Bodygroups = { { 6, 16} } },
-    -- ["uplp_ak_stock_evo_ext"] =    { Bodygroups = { { 6, 17} } },
-
-    -- ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
-    -- ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
-
-    -- ["uplp_ak_nmount"] = { Bodygroups = { { 9, 1 } } },
-    -- ["uplp_ak_nmount_compact"] = { Bodygroups = { { 9, 2 } } },
-    -- ["uplp_ak_nmount_old"] = { Bodygroups = { { 9, 3 } } },
-
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
     ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 2 } } },
 
 }
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -1116,36 +1008,40 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),
         RequireElements = {"use_optics"},
+		ActiveElements = {"uplp_optic_used"},
         CorrectiveAng = Angle(0.45, -0.25, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_muzzle", "uplp_ak_muzzle"},
+        Category = {"uplp_ak_muzzle_12"},
         Bone = "body",
         Pos = Vector(0, 1.768, 22.3),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_mz_std",
+        Installed = "uplp_ak_mz_12",
+        Integral = "uplp_ak_mz_12",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
-        Category = {"uplp_ak_barrel"},
+        Category = {"uplp_ak_barrel_12"},
         Bone = "body",
-        Installed = "uplp_ak_brl_16",
-        Integral = "uplp_ak_brl_16",
+        Installed = "uplp_ak_brl_12",
+        Integral = "uplp_ak_brl_12",
         Pos = Vector(0.045, 1.5, 17),
 		Icon_Offset = Vector(-5, 0, 0.5),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_ak_mag"},
+        Category = {"uplp_ak_mag_545"},
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
+		Installed = "uplp_ak_mag_545_30_12",
+		Integral = "uplp_ak_mag_545_30_12",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
-        Category = {"uplp_ak_grip"},
+        Category = {"uplp_ak_grip_12"},
 		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         RejectAttachments = {
@@ -1153,14 +1049,16 @@ SWEP.Attachments = {
 		},
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
+		Installed = "uplp_ak_grip_12",
+		Integral = "uplp_ak_grip_12",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
-        Category = {"uplp_ak_stock"},
+        Category = {"uplp_ak_stock_12"},
         Bone = "body",
         Pos = Vector(0.045, 2, -3),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ak_stock_fold",
+        Installed = "uplp_ak_stock_tube12",
     },
     -- {
         -- PrintName = ARC9:GetPhrase("csgo_category_camo"),

@@ -10,6 +10,8 @@ ATT.PrintName = "HOLOSIGHT-553"
 ATT.CompactName = "553"
 ATT.Description = [[A HOLOSIGHT-553 holographic sight for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_553.mdl"
@@ -51,6 +53,8 @@ ATT = {}
 ATT.PrintName = "kobra"
 ATT.CompactName = "kobra"
 ATT.Description = [[A kobrakobrakobra holographic sight for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -94,6 +98,8 @@ ATT.PrintName = "rx1"
 ATT.CompactName = "rx1"
 ATT.Description = [[A rx1 holographic sight for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_rx01.mdl"
@@ -135,6 +141,8 @@ ATT = {}
 ATT.PrintName = "srs"
 ATT.CompactName = "srs"
 ATT.Description = [[A srs holographic sight for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -178,6 +186,8 @@ ATT.PrintName = "compm4"
 ATT.CompactName = "compm4"
 ATT.Description = [[A Hcompm4 holographic sight for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_compm2.mdl"
@@ -218,6 +228,8 @@ ATT = {}
 ATT.PrintName = "dcl110"
 ATT.CompactName = "dcl110"
 ATT.Description = [[A massive fucking machine gun sight dcl110 holographic sight for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -289,6 +301,8 @@ ATT.PrintName = "NCOG-4"
 ATT.CompactName = "NCOG-4"
 ATT.Description = [[A NCOG-4 4x scope for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_acog.mdl"
@@ -350,6 +364,8 @@ ATT.PrintName = "ELCA-n"
 ATT.CompactName = "ELCA-n"
 ATT.Description = [[A ELCA-ndfsdgfd sgvdx scope for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_elcan.mdl"
@@ -404,6 +420,8 @@ ATT = {}
 ATT.PrintName = "B.ASS variable zoom Scope (8-16x) with mounted rangefinder"
 ATT.CompactName = "BA 8-16x"
 ATT.Description = [[A B.ASS variable zoom Scope (8-16x) with mounted rangefinder for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -527,6 +545,8 @@ ATT = {}
 ATT.PrintName = "B.ASS FLIR zoom Scope (12x) with mounted rangefinder and"
 ATT.CompactName = "FLIR 12x"
 ATT.Description = [[A B.ASS FLIR Scope (12x) with mounted rangefinder for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -683,6 +703,8 @@ ATT.PrintName = "D-1 Low Profile sight"
 ATT.CompactName = "D-1 L"
 ATT.Description = [[A D-1 Low Profile sight for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_t1.mdl"
@@ -721,6 +743,8 @@ ATT = {}
 ATT.PrintName = "D-1 High Profile sight"
 ATT.CompactName = "D-1 H"
 ATT.Description = [[A D-1 High Profile sight for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -764,6 +788,8 @@ ATT.PrintName = "tacrds"
 ATT.CompactName = "tacrds"
 ATT.Description = [[A tacrds   sight for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_tacrds.mdl"
@@ -801,6 +827,8 @@ ATT = {}
 ATT.PrintName = "rmr"
 ATT.CompactName = "rmr"
 ATT.Description = [[A rmr   sight for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -840,6 +868,8 @@ ATT.PrintName = "rmr hihj"
 ATT.CompactName = "rmr high"
 ATT.Description = [[A rmr   sight for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_rmrhigh.mdl"
@@ -877,6 +907,8 @@ ATT = {}
 ATT.PrintName = "IMI X3"
 ATT.CompactName = "IMI X3"
 ATT.Description = [[A IMI X3 3x scope for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -927,6 +959,8 @@ ATT = {}
 ATT.PrintName = "COMP-1"
 ATT.CompactName = "COMP-1"
 ATT.Description = [[A COMP-1 2x scope for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -979,6 +1013,8 @@ ATT = {}
 ATT.PrintName = "Precision Systems variable zoom Scope (6-10x)"
 ATT.CompactName = "PS 6-10x"
 ATT.Description = [[A Precision Systems variable zoom Scope for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -1041,6 +1077,8 @@ ATT = {}
 ATT.PrintName = "ez 6x"
 ATT.CompactName = "ez 6x"
 ATT.Description = [[A ez 6xez 6xez 6xez 6xez 6xez 6xez 6xez 6xez 6xPrecision Systems variable zoom Scope for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -1110,6 +1148,8 @@ ATT.PrintName = "ez 8x"
 ATT.CompactName = "ez 8x"
 ATT.Description = [[A ez 8xez 6xez 6xez 6xez 6xez 6xez 6xez 6xez 6xPrecision Systems variable zoom Scope for weaver rail.]]
 
+ATT.ActivateElements = {"uplp_optic_used"}
+
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_ez8x.mdl"
@@ -1163,6 +1203,8 @@ ATT = {}
 ATT.PrintName = "pm3 12x"
 ATT.CompactName = "pm3 12x"
 ATT.Description = [[A epm3 12xcision Systems variable zoom Scope for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -1220,6 +1262,8 @@ ATT.CompactName = "Thermal"
 ATT.Description = [[Testing stuff
 
 A Thermal ?x scope for weaver rail.]]
+
+ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 

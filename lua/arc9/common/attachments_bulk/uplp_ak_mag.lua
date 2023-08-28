@@ -178,7 +178,7 @@ ATT.CompactName = "30R 5.45 (P)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
@@ -222,7 +222,7 @@ ATT.CompactName = "30R 5.45 (B)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
@@ -266,7 +266,7 @@ ATT.CompactName = "30R 5.45 (MP)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
@@ -310,7 +310,7 @@ ATT.CompactName = "30R 5.45 (12)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
@@ -354,7 +354,7 @@ ATT.CompactName = "45R 5.45 (B)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
@@ -405,7 +405,7 @@ ATT.CompactName = "60R 5.45 (Q)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"
@@ -456,7 +456,7 @@ ATT.CompactName = "75R 5.45 (D)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Folder = "5.45"

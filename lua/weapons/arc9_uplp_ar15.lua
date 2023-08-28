@@ -240,7 +240,7 @@ local pathCSR = "weapons/arccw/csr338/"
 local path556 = path
 
 local reloadsound = "uplp_temp/ar15/reload/wpfoly_m4_"
-local shootsoundsupp = "uplp_temp/ak47/shoot/suppressed/h1_wpn_supp_ar1_"
+local shootsoundsupp = "uplp_temp/ak/shoot/suppressed/h1_wpn_supp_ar1_"
 local shootsound556 = "uplp_temp/ar15/shoot/556/wpn_h1_m16a4_"
 local shootsound45 = "uplp_temp/ar15/shoot/45/wpn_h1_m16a4_"
 local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
@@ -258,7 +258,7 @@ shootsoundsupp .. "02.ogg",
 shootsoundsupp .. "03.ogg",
 shootsoundsupp .. "04.ogg"}
 
-SWEP.DistantShootSoundSilenced = {"uplp_temp/ak47/shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
+SWEP.DistantShootSoundSilenced = {"uplp_temp/ak/shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 

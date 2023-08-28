@@ -74,6 +74,23 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ExcludeElements = {"uplp_molot_brl_mini", "uplp_molot_brl_micro"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        Pos = Vector(4, 0, 0.25),
+        Ang = Angle(0, 0, 0),
+		MergeSlots = {2},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_horiz"},
+        Pos = Vector(5, 0, 0.3),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_molot_hg_100")
 
 -------------------------------------------

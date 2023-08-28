@@ -392,7 +392,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-		MinProgress= 0.6,
+		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
             { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
@@ -414,7 +414,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress= 0.7,
+		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
             { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
@@ -440,7 +440,7 @@ SWEP.Animations = {
 
     ["reload_long"] = {
         Source = "reload_long",
-		MinProgress= 0.55,
+		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
             { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
@@ -462,7 +462,7 @@ SWEP.Animations = {
     },
     ["reload_empty_long"] = {
         Source = "reload_long_empty",
-		MinProgress= 0.725,
+		MinProgress= 0.825,
 		-- Mult = 1.15,
         EventTable = {
             { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
@@ -488,7 +488,7 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
-		MinProgress= 0.55,
+		MinProgress= 0.75,
         MagSwapTime = 1.3,
 		-- Mult = 1.15,
         EventTable = {
@@ -501,14 +501,14 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
+            { t = 0.85, lhik = 0 },
             { t = 0.925, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["reload_empty_drum"] = {
         Source = "reload_drum_empty",
-		MinProgress= 0.725,
+		MinProgress= 0.85,
         MagSwapTime = 1.3,
 		-- Mult = 1.15,
         EventTable = {
@@ -525,8 +525,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.75, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.85, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -862,10 +862,10 @@ SWEP.Attachments = {
         Installed = "uplp_sg_mz_vepr",
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_bolt"),
+        PrintName = ARC9:GetPhrase("uplp_category_internals"),
         Category = {"uplp_molot_bolt"},
         Bone = "body",
-        Pos = Vector(0.045, 1.8, 7.5),
+        Pos = Vector(0.045, 1.25, 5.25),
         Ang = Angle(90, 90, 180),
     },
     {

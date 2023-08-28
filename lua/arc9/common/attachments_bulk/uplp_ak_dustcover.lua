@@ -99,7 +99,37 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics"}
 
+ATT.Attachments = {
+    {
+        PrintName = "If you see this then wtf?",
+        Category = "uplp_ak12_rearsight",
+        Installed = "uplp_ak12_rearsight",
+        Integral = "uplp_ak12_rearsight",
+		ExcludeElements = {"uplp_optic_used"},
+        Pos = Vector(2, 0, 0),
+		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Ang = Angle(0, 0, 0),
+		Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "AK-12 Rear Sight"
+ATT.CompactName = "AK-12"
+ATT.Description = "DO NOT TRANSLATE"
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ak12_rearsight"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak12_rearsight"}
+
+ARC9.LoadAttachment(ATT, "uplp_ak12_rearsight")
 
 -------------------------------------------
 

@@ -272,11 +272,12 @@ ATT.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        -- Installed = "uplp_ak_dc_std",
-        -- Integral = "uplp_ak_dc_std",
+        Category = "uplp_ak_dc_12",
+        Installed = "uplp_ak_dc_12",
+        Integral = "uplp_ak_dc_12",
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
+		Hidden = true,
     },
 }
 
@@ -309,11 +310,12 @@ ATT.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        Installed = "uplp_ak_dc_std",
-        Integral = "uplp_ak_dc_std",
+        Category = "uplp_ak_dc_12",
+        Installed = "uplp_ak_dc_12",
+        Integral = "uplp_ak_dc_12",
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
+		Hidden = true,
     },
 }
 
@@ -323,9 +325,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_12k")
 
 ATT = {}
 
-ATT.PrintName = "400mm AK-19 Barrel"
-ATT.CompactName = "400mm AK-19"
-ATT.Description = "Shortened 400mm (16\") barrel used on the AK-19, an export version of the AK-12."
+ATT.PrintName = "483mm AK-19 Barrel"
+ATT.CompactName = "483mm AK-19"
+ATT.Description = "Shortened 483mm (19\") barrel used on the AK-19, an export version of the AK-12."
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
@@ -345,11 +347,12 @@ ATT.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        -- Installed = "uplp_ak_dc_std",
-        -- Integral = "uplp_ak_dc_std",
+        Category = "uplp_ak_dc_12",
+        Installed = "uplp_ak_dc_12",
+        Integral = "uplp_ak_dc_12",
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
+		Hidden = true,
     },
 }
 
@@ -373,19 +376,20 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_flush",
-        Installed = "uplp_ak_hg_rpk16",
-        Integral = "uplp_ak_hg_rpk16",
+        Installed = "uplp_ak_hg_12",
+        Integral = "uplp_ak_hg_12",
         Pos = Vector(2, 0, 0),
 		Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        -- Installed = "uplp_ak_dc_std",
-        -- Integral = "uplp_ak_dc_std",
+        Category = "uplp_ak_dc_12",
+        Installed = "uplp_ak_dc_12",
+        Integral = "uplp_ak_dc_12",
         Pos = Vector(15, 0, -1),
         Ang = Angle(0, 0, 0),
+		Hidden = true,
     },
 }
 
