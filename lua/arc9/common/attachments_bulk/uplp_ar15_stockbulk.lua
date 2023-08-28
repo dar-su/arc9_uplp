@@ -20,15 +20,14 @@ ATT.ModelBodygroups = "7"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.RecoilAutoControlMult = 1.35
+ATT.VisualRecoilMultHipFire = 0.15
 
-
--- ATT.RecoilMult = 0.45
--- ATT.VisualRecoilMultMult = 0.45
--- ATT.VisualRecoilMultSights = 0.45
--- ATT.SpeedMult = 0.8
--- ATT.SprintToFireTimeMult = 0.55
--- ATT.AimDownSightsTimeMult = 0.55
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_416")
 
@@ -52,15 +51,14 @@ ATT.ModelBodygroups = "8"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.5
+ATT.RecoilAutoControlMult = 1.25
+ATT.VisualRecoilMultHipFire = 0.45
 
-
--- ATT.RecoilMult = 0.5
--- ATT.VisualRecoilMultMult = 0.5
--- ATT.VisualRecoilMultSights = 0.5
--- ATT.SpeedMult = 0.85
--- ATT.SprintToFireTimeMult = 0.5
--- ATT.AimDownSightsTimeMult = 0.5
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_ak12")
 
@@ -84,15 +82,14 @@ ATT.ModelBodygroups = "1"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.RecoilAutoControlMult = 1.65
+ATT.VisualRecoilMultHipFire = 0.3
 
-
--- ATT.RecoilMult = 0.4
--- ATT.VisualRecoilMultMult = 0.4
--- ATT.VisualRecoilMultSights = 0.4
--- ATT.SpeedMult = 0.75
--- ATT.SprintToFireTimeMult = 0.6
--- ATT.AimDownSightsTimeMult = 0.6
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.3
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_fat")
 
@@ -116,14 +113,14 @@ ATT.ModelBodygroups = "9"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.85
+ATT.RecoilAutoControlMult = 1.15
+ATT.VisualRecoilMultHipFire = 0.4
+ATT.AimDownSightsTimeMult = 0.9
 
-
--- ATT.RecoilMult = 0.65
--- ATT.VisualRecoilMultMult = 0.65
--- ATT.VisualRecoilMultSights = 0.65
--- ATT.SpeedMult = 1.05
--- ATT.SprintToFireTimeMult = 0.4
-
+/// Negatives
+ATT.SprintToFireTimeMult = 1.3
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_light")
 
@@ -147,17 +144,14 @@ ATT.ModelBodygroups = "2"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.5
+ATT.RecoilAutoControlMult = 1.65
+ATT.VisualRecoilMultHipFire = 0.15
 
-
--- ATT.RecoilMult = 0.38
--- ATT.VisualRecoilMultMult = 0.38
--- ATT.VisualRecoilMultSights = 0.38
--- ATT.SwayMultSights = 0.5
--- ATT.SwayMultHipfire = 1.05
--- ATT.SpeedMult = 0.7
--- ATT.SprintToFireTimeMult = 0.71
--- ATT.AimDownSightsTimeMult = 0.71
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m16")
 
@@ -181,15 +175,14 @@ ATT.ModelBodygroups = "0"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.RecoilAutoControlMult = 1.35
+ATT.VisualRecoilMultHipFire = 0.35
 
-
--- ATT.RecoilMult = 0.5
--- ATT.VisualRecoilMultMult = 0.5
--- ATT.VisualRecoilMultSights = 0.5
--- ATT.SpeedMult = 0.85
--- ATT.SprintToFireTimeMult = 0.5
--- ATT.AimDownSightsTimeMult = 0.5
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4")
 
@@ -213,15 +206,14 @@ ATT.ModelBodygroups = "3"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilAutoControlMult = 1.75
+ATT.VisualRecoilMultHipFire = 0.15
+ATT.AimDownSightsTimeMult = 0.8
+ATT.SprintToFireTimeMult = 0.75
 
-
--- ATT.RecoilMult = 0.5
--- ATT.VisualRecoilMultMult = 0.5
--- ATT.VisualRecoilMultSights = 0.5
--- ATT.SpeedMult = 0.85
--- ATT.SprintToFireTimeMult = 0.5
--- ATT.AimDownSightsTimeMult = 0.5
-
+/// Negatives
+ATT.RecoilMult = 1.4
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_modern")
 
@@ -245,14 +237,14 @@ ATT.ModelBodygroups = "a"
 ATT.Category = "uplp_ar15_stock_shorttube"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.RecoilAutoControlMult = 1.35
+ATT.VisualRecoilMultHipFire = 0.15
 
-
--- ATT.RecoilMult = 0.75
--- ATT.VisualRecoilMultMult = 0.75
--- ATT.VisualRecoilMultSights = 0.75
--- ATT.SpeedMult = 1.1
--- ATT.SprintToFireTimeMult = 0.3
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_pdw")
 
@@ -276,17 +268,14 @@ ATT.ModelBodygroups = "5"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.5
+ATT.RecoilAutoControlMult = 1.65
+ATT.VisualRecoilMultHipFire = 0.15
 
-
--- ATT.RecoilMult = 0.35
--- ATT.VisualRecoilMultMult = 0.35
--- ATT.VisualRecoilMultSights = 0.35
--- ATT.SwayMultSights = 0.35
--- ATT.SwayMultHipfire = 1.25
--- ATT.SpeedMult = 0.69
--- ATT.SprintToFireTimeMult = 0.69
--- ATT.AimDownSightsTimeMult = 0.69
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_sniper")
 
@@ -310,15 +299,14 @@ ATT.ModelBodygroups = "4"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.RecoilAutoControlMult = 1.35
+ATT.VisualRecoilMultHipFire = 0.15
 
-
--- ATT.RecoilMult = 0.5
--- ATT.VisualRecoilMultMult = 0.5
--- ATT.VisualRecoilMultSights = 0.5
--- ATT.SpeedMult = 0.85
--- ATT.SprintToFireTimeMult = 0.5
--- ATT.AimDownSightsTimeMult = 0.5
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_tac")
 
@@ -342,17 +330,14 @@ ATT.ModelBodygroups = "6"
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.65
+ATT.RecoilAutoControlMult = 2
+ATT.VisualRecoilMultHipFire = 0.05
 
-
--- ATT.RecoilMult = 0.25
--- ATT.VisualRecoilMultMult = 0.25
--- ATT.VisualRecoilMultSights = 0.25
--- ATT.SwayMultSights = 0.3
--- ATT.SwayMultHipfire = 1.25
--- ATT.SpeedMult = 0.5
--- ATT.SprintToFireTimeMult = 0.85
--- ATT.AimDownSightsTimeMult = 0.85
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.65
+ATT.SprintToFireTimeMult = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_veryheavy")
 

@@ -1,6 +1,71 @@
------ AMMO -----
-
 local ATT = {}
+
+///Rifle Ammo
+
+ATT = {}
+
+ATT.PrintName = ".458 SOCOM Ammo"
+ATT.CompactName = ".458 SOCOM"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ar15_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.DamageMinMult = 1.25
+ATT.DamageMaxMult = 2
+
+/// Negatives
+ATT.RPMMult = 0.75
+ATT.RecoilMult = 1.8
+ATT.RecoilAutoControlMult = 0.25
+ATT.SpreadAddRecoil = 0.1
+ATT.RangeMaxMult = 0.75
+ATT.RangeMinMult = 0.5
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.ClipSizeMult = 0.33
+
+
+-- ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_ammo_458")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = ".50 Beowulf Ammo"
+ATT.CompactName = ".50 Beowulf"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ar15_ammo"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.DamageMinMult = 1.25
+ATT.DamageMaxMult = 2
+
+/// Negatives
+ATT.RPMMult = 0.6
+ATT.RecoilMult = 1.45
+ATT.RecoilAutoControlMult = 0.9
+ATT.SpreadAddRecoil = 0.04
+ATT.RangeMaxMult = 0.75
+ATT.RangeMinMult = 0.5
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.ClipSizeMult = 0.33
+
+
+-- ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_ammo_50")
+
+-------------------------------------------
+/// Shotgun Ammo
+
+ATT = {}
 
 ATT.PrintName = "12-Gauge Buckshot"
 ATT.CompactName = "Buckshot"

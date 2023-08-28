@@ -70,8 +70,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 50 -- Damage dealt point-blank
-SWEP.DamageMin = 30 -- Damage dealt after maximum range
+SWEP.DamageMax = 35 -- Damage dealt point-blank
+SWEP.DamageMin = 25 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 30 -- Units of wood that can be penetrated
@@ -317,8 +317,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -389,7 +389,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -407,7 +407,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -541,6 +541,10 @@ SWEP.AttachmentElements = {
 	
 	-- MAGAZINES
     ["uplp_ar15_mag"] = { Bodygroups={ { 7, 1 } } },
+
+	-- AMMO
+    ["uplp_ar15_ammo_458"] = { Bodygroups={ { 4, 1 } } },
+    ["uplp_ar15_ammo_50"] = { Bodygroups={ { 4, 2 } } },
 	
 	-- OTHER
     ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
@@ -639,5 +643,12 @@ SWEP.Attachments = {
         Pos = Vector(0.04, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ammo"),
+        Category = {"uplp_ar15_ammo"},
+        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
+        Bone = "mag",
+        Pos = Vector(.04, -2.406, -1.428),
     },
 }

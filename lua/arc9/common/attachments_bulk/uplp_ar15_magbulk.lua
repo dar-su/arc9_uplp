@@ -89,6 +89,26 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_40")
 
 
+///////////////////////////////////////      uplp_ar15_stm9_magwell
+
+ATT = {}
+
+ATT.PrintName = "STM-9 Magwell"
+ATT.CompactName = "Magwell"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+
+-- ATT.SortOrder = 0
+ATT.Category = "uplp_stm9_magwell"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.ReloadTimeMult = 0.85
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_stm9_magwell")
+
+
 ///////////////////////////////////////      uplp_ar15_mag_glock_17
 
 
@@ -165,6 +185,7 @@ ATT.MuzzleVelocity = 450
 ATT.RPM = 1200
 ATT.RecoilMult = 0.75
 ATT.SpreadMult = 1.25
+ATT.ReloadTimeMult = 1.2
 
 local path = "weapons/arccw/glock/"
 
@@ -215,6 +236,7 @@ ATT.MuzzleVelocity = 450
 ATT.RPM = 1200
 ATT.RecoilMult = 0.75
 ATT.SpreadMult = 1.25
+ATT.ReloadTimeMult = 1.4
 
 local path = "weapons/arccw/glock/"
 
@@ -280,8 +302,14 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.9
+ATT.ReloadTimeMult = 0.9
+
+/// Negatives
 ATT.ClipSizeOverride = 10
--- ATT.SortOrder = 0
+
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -306,8 +334,14 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+ATT.ReloadTimeMult = 0.95
+
+/// Negatives
 ATT.ClipSizeOverride = 20
--- ATT.SortOrder = 0
+
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -339,32 +373,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag30")
-
-
-///////////////////////////////////////      uplp_ar15_mag_pmag60
-
-
-ATT = {}
-
-ATT.PrintName = "60-Round 5.56x45mm Drum"
-ATT.CompactName = "60R 5.56 D"
-ATT.Description = ATT.PrintName
-
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-
-ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
-
-ATT.ActivateElements = {"uplp_ar15_mag"}
-
-ATT.ClipSizeOverride = 60
--- ATT.SortOrder = 0
-ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
-
-ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag60")
 
 
 ///////////////////////////////////////      uplp_ar15_mag_stanag30
@@ -406,14 +414,52 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
+/// Positives
 ATT.ClipSizeOverride = 40
--- ATT.SortOrder = 0
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
+ATT.ReloadTimeMult = 1.1
+
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag40")
+
+
+///////////////////////////////////////      uplp_ar15_mag_pmag60
+
+
+ATT = {}
+
+ATT.PrintName = "60-Round 5.56x45mm Drum"
+ATT.CompactName = "60R 5.56 D"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+/// Positives
+ATT.ClipSizeOverride = 60
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.2
+ATT.ReloadTimeMult = 1.2
+
+ATT.Category = "uplp_ar15_556_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag60")
 
 
 ///////////////////////////////////////      uplp_ar15_mag_stanag60
@@ -432,8 +478,14 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
+/// Positives
 ATT.ClipSizeOverride = 60
--- ATT.SortOrder = 0
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.2
+ATT.ReloadTimeMult = 1.2
+
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -459,8 +511,14 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
+/// Positives
 ATT.ClipSizeOverride = 100
--- ATT.SortOrder = 0
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.3
+ATT.ReloadTimeMult = 1.3
+
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

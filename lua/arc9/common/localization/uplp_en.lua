@@ -163,6 +163,14 @@ L["uplp_sg_mz_silencer_heavy.compactname"] = "SG Heavy S."
 L["uplp_sg_mz_silencer_heavy.description"] = "Heavy sound suppressor for shotguns."
 
 /////////// Ammunition
+L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
+L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
+L["uplp_ar15_ammo_458.description"] = "Large and powerful .458 SOCOM cartridges that pack a huge punch."
+
+L["uplp_ar15_ammo_50.printname"] = ".50 Beowulf Ammo"
+L["uplp_ar15_ammo_50.compactname"] = ".50 Beowulf"
+L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 Beowulf cartridges that pack a huge punch."
+
 L["uplp_sg_shell_red.printname"] = "00 Buckshot Rounds"
 L["uplp_sg_shell_red.compactname"] = "Buckshot"
 L["uplp_sg_shell_red.description"] = "Standard 12-gauge shotgun ammunition."
@@ -730,6 +738,10 @@ L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
 L["uplp_ar15_mag_45_40.description"] = "Converts the AR-15 to accept 40-round .45 ACP magazines."
 
 /// 9x19mm
+L["uplp_ar15_stm9_magwell.printname"] = "STM-9 Magwell"
+L["uplp_ar15_stm9_magwell.compactname"] = "Magwell"
+L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier reloads."
+
 L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
 L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 to accept 17-round 9x19mm magazines from an Austrian handgun."

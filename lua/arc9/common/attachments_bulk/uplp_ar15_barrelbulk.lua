@@ -57,6 +57,15 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_ar15_barrel_mid"}
 ATT.ExcludeElements = {"uplp_ar15_handguard_long"}
 
+/// Positives
+ATT.RangeMaxMult = 1.05
+ATT.RangeMinMult = 1.1
+ATT.PhysBulletMuzzleVelocityMult = 1.05
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
@@ -94,6 +103,16 @@ ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_long"}
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RangeMaxMult = 1.35
+ATT.RangeMinMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.15
 
 ATT.Attachments = {
     {
@@ -133,6 +152,16 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 
+/// Positives
+ATT.RecoilMult = 0.9
+ATT.RangeMaxMult = 1.4
+ATT.RangeMinMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.25
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.2
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
@@ -170,6 +199,16 @@ ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_long"}
+
+/// Positives
+ATT.RecoilMult = 0.85
+ATT.RangeMaxMult = 1.5
+ATT.RangeMinMult = 1.35
+ATT.PhysBulletMuzzleVelocityMult = 1.3
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.5
+ATT.SprintToFireTimeMult = 1.35
 
 ATT.Attachments = {
     {

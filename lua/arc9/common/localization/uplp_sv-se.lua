@@ -163,6 +163,14 @@ L["uplp_sg_mz_silencer_heavy.compactname"] = "HG Tung Ljud."
 L["uplp_sg_mz_silencer_heavy.description"] = "Tung ljuddämpare till hagelgevär."
 
 /////////// Ammunition
+L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM-Patroner"
+L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
+L["uplp_ar15_ammo_458.description"] = "Stora och kraftfulla .458 SOCOM-patroner som träffar väldigt hårt."
+
+L["uplp_ar15_ammo_50.printname"] = ".50 Beowulf-Patroner"
+L["uplp_ar15_ammo_50.compactname"] = ".50 Beowulf"
+L["uplp_ar15_ammo_50.description"] = "Stora och kraftfulla .50 Beowulf-patroner som träffar väldigt hårt."
+
 L["uplp_sg_shell_red.printname"] = "Hagelskott Patroner"
 L["uplp_sg_shell_red.compactname"] = "Hagelskott"
 L["uplp_sg_shell_red.description"] = "Standard 12-kaliber hagelgevär ammunition."
@@ -720,6 +728,10 @@ L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
 L["uplp_ar15_mag_45_40.description"] = "Konverterar AR-15 att acceptera 40-patroners .45 ACP magasin."
 
 /// 9x19mm
+L["uplp_ar15_stm9_magwell.printname"] = "STM-9 Magwell"
+L["uplp_ar15_stm9_magwell.compactname"] = "Magwell"
+L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier reloads."
+
 L["uplp_ar15_mag_glock_17.printname"] = "17-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17S 9x19"
 L["uplp_ar15_mag_glock_17.description"] = "Konverterar AR-15 att acceptera 17-patroners 9x19mm magasin från ett österrikiskt sidovapen."
