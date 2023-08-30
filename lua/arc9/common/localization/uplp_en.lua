@@ -277,10 +277,17 @@ L["uplp_ak_dc_beryl.printname"] = "Beryl Dust Cover & Rail"
 L["uplp_ak_dc_beryl.compactname"] = "Beryl"
 L["uplp_ak_dc_beryl.description"] = "Dust cover and top rail combination made for an AK rifle of Polish origin."
 
--- IGNORE; remove if non-English file
-L["uplp_ak_dc_12.printname"] = "AK-12 Dust Cover and Receiver"
-L["uplp_ak_dc_12.compactname"] = "AK-12"
-L["uplp_ak_dc_12.description"] = " "
+L["uplp_ak_dc_12.printname"] = "2023 AK-12M1 Configuration"
+L["uplp_ak_dc_12.compactname"] = "'23 AK-12M1"
+L["uplp_ak_dc_12.description"] = "Modern 2023 AK-12M1 configuration that applies the following changes to the weapon:\n- Replaces the rear sight with a more robust peephole sight.\n- Adds an ambidextrous fire selector."
+
+L["uplp_ak_dc_12_22.printname"] = "2022 AK-12 Configuration"
+L["uplp_ak_dc_12_22.compactname"] = "'22 AK-12"
+L["uplp_ak_dc_12_22.description"] = "Standard 2022 AK-12 configuration that, compared to 2016, applies the following changes:\n- Replaces the rear sight with a peephole sight."
+
+L["uplp_ak_dc_12_16.printname"] = "2016 AK-12 Configuration"
+L["uplp_ak_dc_12_16.compactname"] = "'16 AK-12"
+L["uplp_ak_dc_12_16.description"] = "Old 2016 AK-12 configuration."
 
 ////// Pistol Grips
 L["uplp_ak_grip_std.printname"] = "Polymer Pistol Grip"

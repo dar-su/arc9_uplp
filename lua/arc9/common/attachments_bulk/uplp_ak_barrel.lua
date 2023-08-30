@@ -275,9 +275,9 @@ ATT.Attachments = {
         Category = "uplp_ak_dc_12",
         Installed = "uplp_ak_dc_12",
         Integral = "uplp_ak_dc_12",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(9, 0, -0.9),
         Ang = Angle(0, 0, 0),
-		Hidden = true,
+		Hidden = false,
     },
 }
 
@@ -313,9 +313,9 @@ ATT.Attachments = {
         Category = "uplp_ak_dc_12",
         Installed = "uplp_ak_dc_12",
         Integral = "uplp_ak_dc_12",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(9, 0, -0.9),
         Ang = Angle(0, 0, 0),
-		Hidden = true,
+		Hidden = false,
     },
 }
 
@@ -350,9 +350,9 @@ ATT.Attachments = {
         Category = "uplp_ak_dc_12",
         Installed = "uplp_ak_dc_12",
         Integral = "uplp_ak_dc_12",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(9, 0, -0.9),
         Ang = Angle(0, 0, 0),
-		Hidden = true,
+		Hidden = false,
     },
 }
 
@@ -387,9 +387,9 @@ ATT.Attachments = {
         Category = "uplp_ak_dc_12",
         Installed = "uplp_ak_dc_12",
         Integral = "uplp_ak_dc_12",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(9, 0, -0.9),
         Ang = Angle(0, 0, 0),
-		Hidden = true,
+		Hidden = false,
     },
 }
 

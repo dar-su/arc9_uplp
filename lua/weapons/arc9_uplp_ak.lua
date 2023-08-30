@@ -1099,9 +1099,9 @@ SWEP.AttachmentElements = {
     -- ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
     -- ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
-    -- ["uplp_ak_nmount"] = { Bodygroups = { { 9, 1 } } },
-    -- ["uplp_ak_nmount_compact"] = { Bodygroups = { { 9, 2 } } },
-    -- ["uplp_ak_nmount_old"] = { Bodygroups = { { 9, 3 } } },
+    ["uplp_ak_nmount"] = { Bodygroups = { { 8, 1 } } },
+    ["uplp_ak_nmount_compact"] = { Bodygroups = { { 8, 2 } } },
+    ["uplp_ak_nmount_old"] = { Bodygroups = { { 8, 3 } } },
 
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },

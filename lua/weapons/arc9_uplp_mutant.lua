@@ -181,9 +181,24 @@ local pathDist = "weapons/arccw/hk416/"
 local pathXC = "weapons/arccw/xcrm/"
 local pathCSR = "weapons/arccw/csr338/"
 
-SWEP.ShootSound = {path762 .. "fire-01.ogg", path762 .. "fire-02.ogg", path762 .. "fire-03.ogg", path762 .. "fire-04.ogg", path762 .. "fire-05.ogg", path762 .. "fire-06.ogg"} -- Maybe Not Placeholder
-SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
-SWEP.DistantShootSound = {path762 .. "fire-dist-01.ogg", path762 .. "fire-dist-02.ogg", path762 .. "fire-dist-03.ogg", path762 .. "fire-dist-04.ogg", path762 .. "fire-dist-05.ogg", path762 .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+local pathCTX_MUTANT = "ulplp_ctx/mutant/"
+local pathCTX_MUTANT_MAGDROP = "ulplp_ctx/magdrop_rifle-"
+local pathCTX = "ulplp_ctx/"
+
+-- SWEP.ShootSound = {path762 .. "fire-01.ogg", path762 .. "fire-02.ogg", path762 .. "fire-03.ogg", path762 .. "fire-04.ogg", path762 .. "fire-05.ogg", path762 .. "fire-06.ogg"} -- Maybe Not Placeholder
+-- SWEP.ShootSoundSilenced = "weapons/arccw/arx160/lowpolyarx160_supp.ogg" -- Placeholder
+-- SWEP.DistantShootSound = {path762 .. "fire-dist-01.ogg", path762 .. "fire-dist-02.ogg", path762 .. "fire-dist-03.ogg", path762 .. "fire-dist-04.ogg", path762 .. "fire-dist-05.ogg", path762 .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+
+SWEP.ShootSound = {
+pathCTX_MUTANT .. "firen-1.ogg",
+pathCTX_MUTANT .. "firen-2.ogg",
+pathCTX_MUTANT .. "firen-3.ogg",
+pathCTX_MUTANT .. "firen-4.ogg",
+}
+
+SWEP.DistantShootSound = {
+pathCTX_MUTANT .. "fire_dist-1.ogg"
+}
 
 -- Bodygroups --
 
@@ -221,16 +236,14 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        -- Framerate = 30,
-        -- time = 35 / 30,
-        -- LHIK = true,
-        -- LHIKIn = 0,
-        -- LHIKEaseOut = 0.2,
-        -- LHIKOut = 0.6,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "charge.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "charge.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "end.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathCTX .. "foley_reload1.ogg", t = 0 / 30, c = ca, v = 0.6 },
+            -- { s = pathCTX_MUTANT .. "mutant_bolt_draw.ogg", t = 0 / 30, c = ca, v = 0.9 },
+            { s = pathCTX_MUTANT .. "mutant_bolt_seq.ogg", t = 5 / 30, c = ca, v = 0.8, p = 105 },
+            { s = pathCTX_MUTANT .. "mutant_foley.ogg", t = 15 / 30, c = ca, v = 0.4 },
         },
     },
     -- ["draw"] = {
@@ -249,7 +262,9 @@ SWEP.Animations = {
         Framerate = 30,
         Time = 18 / 30,
         ShellEjectAt = 0.01,
-        EventTable = {{ s = "weapons/arccw/arx160/lowpolyarx160_empty.ogg", t = 0.03 }},
+        EventTable = {
+		{ s = pathCTX_MUTANT .. "mutant_bolt-2.ogg", t = 0.05, v = 0.7 },
+		},
     },
 
     -- Reloads --
@@ -258,11 +273,16 @@ SWEP.Animations = {
         Source = "reload",
         HideBoneIndex = 1,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 19 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 26 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathAK .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "magdrop.ogg", t = 19 / 30, c = ca, v = 1 },
+            -- { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "end.ogg", t = 26 / 30, c = ca, v = 0.8 },
+            { s = pathCTX .. "foley_reload1.ogg", t = 0 / 30, c = ca, v = 0.4 },
+            { s = pathCTX_MUTANT .. "mutant_magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
+            { s = pathCTX .. "mutant_magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = {pathCTX_MUTANT_MAGDROP .. "1.ogg", pathCTX_MUTANT_MAGDROP .. "2.ogg", pathCTX_MUTANT_MAGDROP .. "3.ogg", pathCTX_MUTANT_MAGDROP .. "4.ogg"}, t = 32 / 30, c = ca, v = 0.35, p = 100 },
+            { s = pathCTX_MUTANT .. "mutant_foley.ogg", t = 32 / 30, c = ca, v = 0.35, p = 100 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.5},
             {hide = 2, t = 0.75}
@@ -272,12 +292,19 @@ SWEP.Animations = {
         Source = "reload_empty",
         HideBoneIndex = 1,
         EventTable = {
-            { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathAK .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "magdrop.ogg", t = 19 / 30, c = ca, v = 1 },
-            { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "charge.ogg", t = 29 / 30, c = ca, v = 0.8 },
-            { s = path556 .. "end.ogg", t = 45 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathAK .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "magdrop.ogg", t = 19 / 30, c = ca, v = 1 },
+            -- { s = pathAK .. "magin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "charge.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            -- { s = path556 .. "end.ogg", t = 45 / 30, c = ca, v = 0.8 },
+            { s = pathCTX .. "foley_reload1.ogg", t = 0 / 30, c = ca, v = 0.4, p = 100  },
+            { s = pathCTX_MUTANT .. "mutant_magout.ogg", t = 10 / 30, c = ca, v = 0.8, p = 95 },
+            { s = pathCTX_MUTANT .. "mutant_magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = {pathCTX_MUTANT_MAGDROP .. "1.ogg", pathCTX_MUTANT_MAGDROP .. "2.ogg", pathCTX_MUTANT_MAGDROP .. "3.ogg", pathCTX_MUTANT_MAGDROP .. "4.ogg"}, t = 32 / 30, c = ca, v = 0.4, p = 70 },
+            { s = pathCTX .. "foley_reload1.ogg", t = 35 / 42, c = ca, v = 0.9, p = 120 },
+            { s = pathCTX_MUTANT .. "mutant_bolt_seq.ogg", t = 37.5 / 30, c = ca, v = 0.8, p = 105 },
+            { s = pathCTX_MUTANT .. "mutant_foley.ogg", t = 50 / 30, c = ca, v = 0.5 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.5},
             {hide = 2, t = 0.5}

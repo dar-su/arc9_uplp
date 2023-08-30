@@ -441,6 +441,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
+		MinProgress = 0.65,
         EventTable = {
             { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -457,6 +458,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
+		MinProgress = 0.65,
         EventTable = {
             { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },

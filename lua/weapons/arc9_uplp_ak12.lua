@@ -191,7 +191,7 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if attached["uplp_ak_brl_12k"] then
+     if attached["uplp_ak_brl_12k"] and not attached["uplp_ak12_rearsight_m1"] then
         return {
 			 Pos = Vector(-2.29, -3, 0.465),
 			 Ang = Angle(0.35, 1.15, -2.5),
@@ -199,6 +199,16 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 			 ViewModelFOV = 55,
         }
     end
+	
+     if attached["uplp_ak12_rearsight_m1"] then
+        return {
+			 Pos = Vector(-2.29, -3, 0.85),
+			 Ang = Angle(0.4, 0.2, -2.5),
+			 Magnification = 1.15,
+			 ViewModelFOV = 55,
+        }
+    end	
+
 end
 
 -- Customization Menu Info
@@ -947,8 +957,8 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_ak_brl_su"] and not eles["uplp_su_hgexists"] then
-        mdl:SetBodygroup(4,10)
+    if eles["uplp_optic_used"] then
+        mdl:SetBodygroup(8,0)
     end
 end
 
@@ -960,6 +970,7 @@ SWEP.AttachmentElements = {
 
     -- FIRE SELECTORS
     ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
+    ["uplp_ak_fs_12alt"] =          { Bodygroups = { { 1, 3 } } },
 
     -- BARRELS
     ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
@@ -997,6 +1008,13 @@ SWEP.AttachmentElements = {
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
     ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 2 } } },
+    ["uplp_ak12_rearsight_evo"] =  { Bodygroups = { { 8, 3 } } },
+    ["uplp_ak12_rearsight_m1"] =  { Bodygroups = { { 8, 4 } } },
+
+	-- SIGHT MOUNTS
+    ["uplp_ak_nmount"] = { Bodygroups = { { 7, 1 } } },
+    ["uplp_ak_nmount_compact"] = { Bodygroups = { { 7, 2 } } },
+    ["uplp_ak_nmount_old"] = { Bodygroups = { { 7, 3 } } },
 
 }
 
@@ -1010,6 +1028,7 @@ SWEP.Attachments = {
         RequireElements = {"use_optics"},
 		ActiveElements = {"uplp_optic_used"},
         CorrectiveAng = Angle(0.45, -0.25, 0),
+		Icon_Offset = Vector(1.5, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

@@ -88,8 +88,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_beryl")
 
 ATT = {}
 
-ATT.PrintName = "AK-12 Dust Cover"
-ATT.CompactName = "AK-12"
+ATT.PrintName = "2023 AK-12M1 Package"
+ATT.CompactName = "'23 AK-12M1"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
@@ -97,21 +97,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics"}
-
-ATT.Attachments = {
-    {
-        PrintName = "If you see this then wtf?",
-        Category = "uplp_ak12_rearsight",
-        Installed = "uplp_ak12_rearsight",
-        Integral = "uplp_ak12_rearsight",
-		ExcludeElements = {"uplp_optic_used"},
-        Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
-}
+ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12alt","use_optics", "uplp_ak12_rearsight_m1"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
 
@@ -119,17 +105,34 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
 
 ATT = {}
 
-ATT.PrintName = "AK-12 Rear Sight"
-ATT.CompactName = "AK-12"
-ATT.Description = "DO NOT TRANSLATE"
+ATT.PrintName = "2022 AK-12 Package"
+ATT.CompactName = "'22 AK-12"
+ATT.Description = ATT.PrintName
+ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-ATT.Category = "uplp_ak12_rearsight"
+ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak12_rearsight"}
+ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight_evo"}
 
-ARC9.LoadAttachment(ATT, "uplp_ak12_rearsight")
+ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_22")
 
 -------------------------------------------
 
+ATT = {}
+
+ATT.PrintName = "2016 AK-12 Package"
+ATT.CompactName = "'16 AK-12"
+ATT.Description = ATT.PrintName
+ATT.ExcludeElements = {"uplp_ak_rearsight"}
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_ak_dc_12"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight"}
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_16")
+
+-------------------------------------------

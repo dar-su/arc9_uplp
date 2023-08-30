@@ -276,6 +276,18 @@ L["uplp_ak_dc_beryl.printname"] = "Beryl Dammskydd & Skena"
 L["uplp_ak_dc_beryl.compactname"] = "Beryl"
 L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena gjorda för ett AK-gevär av polskt ursprung."
 
+L["uplp_ak_dc_12.printname"] = "2023 AK-12M1 Konfiguering"
+L["uplp_ak_dc_12.compactname"] = "'23 AK-12M1"
+L["uplp_ak_dc_12.description"] = "Modern 2023 AK-12M1 konfiguering som tillämpar följande ändringar på vapnet:\n- Ersätter bakre siktet med ett starkare dioptersikte.\n- Lägger till en tvåhändig skottomställare"
+
+L["uplp_ak_dc_12_22.printname"] = "2022 AK-12 Konfiguering"
+L["uplp_ak_dc_12_22.compactname"] = "'22 AK-12"
+L["uplp_ak_dc_12_22.description"] = "Standard 2022 AK-12 konfiguering som, till skillnad till 2016, tillämpar följande ändringar:\n- Ersätter bakre siktet med ett dioptersikte."
+
+L["uplp_ak_dc_12_16.printname"] = "2016 AK-12 Konfiguering"
+L["uplp_ak_dc_12_16.compactname"] = "'16 AK-12"
+L["uplp_ak_dc_12_16.description"] = "Gammal 2016 AK-12 konfiguering."
+
 ////// Pistol Grips
 L["uplp_ak_grip_bak.printname"] = "Polymer Pistolgrepp"
 L["uplp_ak_grip_bak.compactname"] = "Polymer"
