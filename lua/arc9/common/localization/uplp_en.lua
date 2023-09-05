@@ -108,6 +108,91 @@ L["uplp_stat_ignite"] = "On Hit: Ignite Target"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
+/////////// Optics
+L["uplp_optic_553.printname"] = "Holographic Sight"
+L["uplp_optic_553.compactname"] = "Holo."
+L["uplp_optic_553.description"] = "Traditional military-grade holographic sight of American origin intended for small arms."
+
+L["uplp_optic_kobra.printname"] = "Kobra Collimator"
+L["uplp_optic_kobra.compactname"] = "Kobra"
+L["uplp_optic_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle."
+
+L["uplp_optic_rx1.printname"] = "Military Red Dot"
+L["uplp_optic_rx1.compactname"] = "Military"
+L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin intended for small arms."
+
+L["uplp_optic_srs.printname"] = "Robust Red Dot"
+L["uplp_optic_srs.compactname"] = "Robust"
+L["uplp_optic_srs.description"] = "Large reflex optic of American origin intended for use in harsh environments."
+
+L["uplp_optic_compm4.printname"] = "Spec-Ops Red Dot"
+L["uplp_optic_compm4.compactname"] = "Spec-Ops"
+L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cylindrical design."
+
+L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight with Magnifier"
+L["uplp_optic_dcl110.compactname"] = "MG RS"
+L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns."
+
+L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
+L["uplp_optic_acog.compactname"] = "4x NCOG-4"
+L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification."
+
+L["uplp_optic_elcan.printname"] = "4x Combat Scope"
+L["uplp_optic_elcan.compactname"] = "4x Combat"
+L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification."
+
+L["uplp_optic_bigass.printname"] = "8-12x Variable Zoom Scope with Rangefinder"
+L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
+L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n- Rangefinder module that calculates how many meters away the target is."
+
+L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope with Rangefinder"
+L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
+L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n- Rangefinder module that calculates how many meters away the target is.\n- Thermal imaging capability that highlights targets."
+
+L["uplp_optic_d1.printname"] = "D-1 Red Dot - Low Profile"
+L["uplp_optic_d1.compactname"] = "D-1 - LP"
+L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms."
+
+L["uplp_optic_d1high.printname"] = "D-1 Red Dot - High Profile"
+L["uplp_optic_d1high.compactname"] = "D-1 - HP"
+L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms.\nMounted higher up using a spacer."
+
+L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
+L["uplp_optic_tacrds.compactname"] = "Pistol"
+L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+
+L["uplp_optic_rmr.printname"] = "Sport Shooting Red Dot - Low Profile"
+L["uplp_optic_rmr.compactname"] = "Sport - LP"
+L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+
+L["uplp_optic_rmrhigh.printname"] = "Sport Shooting Red Dot - High Profile"
+L["uplp_optic_rmrhigh.compactname"] = "Sport - HP"
+L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms.\nMounted higher up using a spacer."
+
+L["uplp_optic_notacog.printname"] = "3x Military Scope"
+L["uplp_optic_notacog.compactname"] = "3x Military"
+L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3x magnification."
+
+L["uplp_optic_compm1.printname"] = "Competition Scope"
+L["uplp_optic_compm1.compactname"] = "Comp."
+L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting."
+
+L["uplp_optic_sniper.printname"] = "6-8x Variable Zoom Scope"
+L["uplp_optic_sniper.compactname"] = "6-8x VZS"
+L["uplp_optic_sniper.description"] = "Long range scope with 6-8x variable magnification."
+
+L["uplp_optic_ez6x.printname"] = "1-6x Hunter Scope"
+L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
+L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification."
+
+L["uplp_optic_pm3.printname"] = "12x Military Marksman Scope"
+L["uplp_optic_pm3.compactname"] = "12x MMS"
+L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification."
+
+L["uplp_optic_testthermal.printname"] = "Competition Thermal Scope"
+L["uplp_optic_testthermal.compactname"] = "Comp. T"
+L["uplp_optic_testthermal.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting.\nComes with thermal imaging capability that highlights targets."
+
 /////////// Grips
 L["uplp_grip_vert.printname"] = "Vertical Foregrip"
 L["uplp_grip_vert.compactname"] = "Vertical"

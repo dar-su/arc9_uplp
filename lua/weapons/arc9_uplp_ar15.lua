@@ -32,7 +32,7 @@ SWEP.Credits = {
 SWEP.StandardPresets = {
 "[416]XQAAAQCcAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lOdO3dT3s+KVkh0yljNW9rFoFBWxxGwKyq3gyRrrHVDzLdmXlrOGRHbGDjz9I0k4Iu1hhGi88vzmxOFdX1RceI0AYsYKMe5EA",
 "[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
-"[SR PDW]XQAAAQAPAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgBo1NQ6kf06vykQIzaiinq5RceSpKykxZ5jTFIc+A3ESup+X72dZH2YytydKRG2I0a5fH8TX6ke/qy8QDxweZs5Sl4RvuBhhlAr+VMhKTgwN7wMw12zhG+kyxr5yGj7o2JuQnN2gcivb2rsD8J1JZ98=",
+"[Sporty Red PDW]XQAAAQAPAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgBo1NQ6kf06vykQIzaiinq5RceSpKykxZ5jTFIc+A3ESup+X72dZH2YytydKRG2I0a5fH8TX6ke/qy8QDxweZs5Sl4RvuBhhlAr+VMhKTgwN7wMw12zhG+kyxr5yGj7o2JuQnN2gcivb2rsD8J1JZ98=",
 }
 
 //// Muzzle Effects, Shell Effects, Camera
@@ -710,7 +710,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
         Category = {"uplp_ar15_ammo"},
-        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
+        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp", "uplp_ar15_mag_ext"},
         Bone = "mag",
         Pos = Vector(.04, -2.406, -1.428),
     },

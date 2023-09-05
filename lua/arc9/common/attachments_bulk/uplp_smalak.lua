@@ -1,9 +1,9 @@
 
 local ATT = {}
 
-ATT.PrintName = "def"
-ATT.CompactName = "def"
-ATT.Description = [[this shit here only for lhik ghhh]]
+ATT.PrintName = "30-Round Vityaz"
+ATT.CompactName = "30R Vityaz"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_smalak_mag"
@@ -21,9 +21,9 @@ ARC9.LoadAttachment(ATT, "uplp_aksmal_mag_def")
 
 ATT = {}
 
-ATT.PrintName = "tac"
-ATT.CompactName = "tac"
-ATT.Description = [[tac]]
+ATT.PrintName = "30-Round Vityaz Banana"
+ATT.CompactName = "30R Vityaz B."
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_smalak_mag"
@@ -46,9 +46,9 @@ ARC9.LoadAttachment(ATT, "uplp_aksmal_mag_tac")
 
 ATT = {}
 
-ATT.PrintName = "bizon"
-ATT.CompactName = "bizon"
-ATT.Description = [[bizon]]
+ATT.PrintName = "64-Round Bizon"
+ATT.CompactName = "64R Bizon"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_smalak_mag"
@@ -75,9 +75,9 @@ ARC9.LoadAttachment(ATT, "uplp_aksmal_mag_bizon")
 
 ATT = {}
 
-ATT.PrintName = "bizon old"
-ATT.CompactName = "bizon old"
-ATT.Description = [[bizon old]]
+ATT.PrintName = "64-Round Vintage Bizon"
+ATT.CompactName = "64R V. Bizon"
+ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_smalak_mag"

@@ -12,6 +12,9 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ar15_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ar15_ammo"}
+ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
+
 /// Positives
 ATT.DamageMinMult = 1.25
 ATT.DamageMaxMult = 2
@@ -42,6 +45,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_ar15_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ar15_ammo"}
+ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
 /// Positives
 ATT.DamageMinMult = 1.25

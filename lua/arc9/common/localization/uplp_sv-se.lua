@@ -108,6 +108,93 @@ L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
+/////////// Optics
+L["uplp_optic_553.printname"] = "Holografiskt Sikte"
+L["uplp_optic_553.compactname"] = "Holo."
+L["uplp_optic_553.description"] = "Traditionellt militär grad holografiskt sikte av amerikanskt ursprung gjort för finkalibriga vapen."
+
+L["uplp_optic_kobra.printname"] = "Kobra Collimator"
+L["uplp_optic_kobra.compactname"] = "Kobra"
+L["uplp_optic_kobra.description"] = "Militär grad reflexsikte av ryskt ursprung med ett kors hårkors."
+
+L["uplp_optic_rx1.printname"] = "Militär Rödpunktsikte"
+L["uplp_optic_rx1.compactname"] = "Militär"
+L["uplp_optic_rx1.description"] = "Lättanvändligt militär grad rödpunktsikte av amerikanskt ursprung gjorda för finkalibriga vapen."
+
+L["uplp_optic_srs.printname"] = "Kraftigt Rödpunktsikte"
+L["uplp_optic_srs.compactname"] = "Kraftigt"
+L["uplp_optic_srs.description"] = "Stort reflexsikte av amerikanskt ursprung gjord för användning i hårda miljöer."
+
+L["uplp_optic_compm4.printname"] = "Spec-Ops-Rödpunktsikte"
+L["uplp_optic_compm4.compactname"] = "Spec-Ops"
+L["uplp_optic_compm4.description"] = "Reflexsikte av svenskt ursprung med en cylindsrisk design."
+
+L["uplp_optic_dcl110.printname"] = "Kulspruta Reflexsikte med Förstoringsglas"
+L["uplp_optic_dcl110.compactname"] = "KR F"
+L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd förstoringsglas gjorda för användning på kulsprutor."
+
+L["uplp_optic_acog.printname"] = "4x NCOG-4-Sikte"
+L["uplp_optic_acog.compactname"] = "4x NCOG-4"
+L["uplp_optic_acog.description"] = "Military-grade compact optic of American origin with 4x magnification."
+L["uplp_optic_acog.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering."
+
+L["uplp_optic_elcan.printname"] = "4x Stridssikte"
+L["uplp_optic_elcan.compactname"] = "4x Strid"
+L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering."
+
+L["uplp_optic_bigass.printname"] = "8-12x Variabel Zoom Kikarsikte med Avståndsmätare"
+L["uplp_optic_bigass.compactname"] = "8-12x VZK-A"
+L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är."
+
+L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med Avståndsmätare"
+L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
+L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor."
+
+L["uplp_optic_d1.printname"] = "D-1 Red Dot - Low Profile"
+L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte - Låg Profil"
+L["uplp_optic_d1.compactname"] = "D-1 - LP"
+L["uplp_optic_d1.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen."
+
+L["uplp_optic_d1high.printname"] = "D-1 Rödpunktsikte - Hög Profil"
+L["uplp_optic_d1high.compactname"] = "D-1 - HP"
+L["uplp_optic_d1high.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen.\nMonterat högre upp med en spacer."
+
+L["uplp_optic_tacrds.printname"] = "Pistol Rödpunktsikte"
+L["uplp_optic_tacrds.compactname"] = "Pistol"
+L["uplp_optic_tacrds.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen."
+
+L["uplp_optic_rmr.printname"] = "Sportskytte Rödpunktsikte - Låg Profil"
+L["uplp_optic_rmr.compactname"] = "Sport - LP"
+L["uplp_optic_rmr.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen."
+
+L["uplp_optic_rmrhigh.printname"] = "Sportskytte Rödpunktsikte - Hög Profile"
+L["uplp_optic_rmrhigh.compactname"] = "Sport - HP"
+L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen.\nMonterat högre upp med en spacer."
+
+L["uplp_optic_notacog.printname"] = "3x Militärsikte"
+L["uplp_optic_notacog.compactname"] = "3x Militär"
+L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt ursprung med 3x magnifiering."
+
+L["uplp_optic_compm1.printname"] = "Tävlingssikte"
+L["uplp_optic_compm1.compactname"] = "Tävling"
+L["uplp_optic_compm1.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte."
+
+L["uplp_optic_sniper.printname"] = "6-8x Variabel Zoom Kikarsikte"
+L["uplp_optic_sniper.compactname"] = "6-8x VZK"
+L["uplp_optic_sniper.description"] = "Lång räckvidd sikte med 6-8x variabel magnifiering."
+
+L["uplp_optic_ez6x.printname"] = "1-6x Jägare Sikte"
+L["uplp_optic_ez6x.compactname"] = "1-6x Jägare"
+L["uplp_optic_ez6x.description"] = "Variabel zoom sikte med 1-6x magnifiering."
+
+L["uplp_optic_pm3.printname"] = "12x Militär Krypskyttesikte"
+L["uplp_optic_pm3.compactname"] = "12x MK"
+L["uplp_optic_pm3.description"] = "Lång räckvidd krypskyttesikte med 12x magnifiering."
+
+L["uplp_optic_testthermal.printname"] = "Tävling Värmesikte"
+L["uplp_optic_testthermal.compactname"] = "Tävling V."
+L["uplp_optic_testthermal.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte.\nKommer med värmesikte förmåga som märker måltavlor."
+
 /////////// Grips
 L["uplp_grip_vert.printname"] = "Vertikalt Framgrepp"
 L["uplp_grip_vert.compactname"] = "Vertikalt"

@@ -6,9 +6,11 @@ local ATT = {}
 
 ATT = {}
 
-ATT.PrintName = "HOLOSIGHT-553"
-ATT.CompactName = "553"
-ATT.Description = [[A HOLOSIGHT-553 holographic sight for weaver rail.]]
+ATT.PrintName = "Holographic Sight" -- EoTech 553
+ATT.CompactName = "Holo."
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -50,9 +52,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_553")
 
 ATT = {}
 
-ATT.PrintName = "kobra"
-ATT.CompactName = "kobra"
-ATT.Description = [[A kobrakobrakobra holographic sight for weaver rail.]]
+ATT.PrintName = "Kobra Collimator"
+ATT.CompactName = "Kobra"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -94,9 +98,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_kobra")
 
 ATT = {}
 
-ATT.PrintName = "rx1"
-ATT.CompactName = "rx1"
-ATT.Description = [[A rx1 holographic sight for weaver rail.]]
+ATT.PrintName = "Military Red Dot" -- RX1 Sight
+ATT.CompactName = "Military"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -138,9 +144,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rx1")
 
 ATT = {}
 
-ATT.PrintName = "srs"
-ATT.CompactName = "srs"
-ATT.Description = [[A srs holographic sight for weaver rail.]]
+ATT.PrintName = "Robust Red Dot" -- SRS Red Dot
+ATT.CompactName = "Robust"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -182,9 +190,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_srs")
 
 ATT = {}
 
-ATT.PrintName = "compm4"
-ATT.CompactName = "compm4"
-ATT.Description = [[A Hcompm4 holographic sight for weaver rail.]]
+ATT.PrintName = "Spec-Ops Reflex Sight" -- CompM4 Sight
+ATT.CompactName = "Spec-Ops"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -225,9 +235,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_compm4")
 
 ATT = {}
 
-ATT.PrintName = "dcl110"
-ATT.CompactName = "dcl110"
-ATT.Description = [[A massive fucking machine gun sight dcl110 holographic sight for weaver rail.]]
+ATT.PrintName = "Machine Gun Reflex Sight with Magnifier" -- DCL-110 Machine Gun Reflex Sight
+ATT.CompactName = "MG RS"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -297,9 +309,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
 ATT = {}
 
-ATT.PrintName = "NCOG-4"
-ATT.CompactName = "NCOG-4"
-ATT.Description = [[A NCOG-4 4x scope for weaver rail.]]
+ATT.PrintName = "4x NCOG-4 Scope" -- "ACOG 4x32 Scope"
+ATT.CompactName = "4x NCOG-4"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -360,9 +374,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_acog")
 
 ATT = {}
 
-ATT.PrintName = "ELCA-n"
-ATT.CompactName = "ELCA-n"
-ATT.Description = [[A ELCA-ndfsdgfd sgvdx scope for weaver rail.]]
+ATT.PrintName = "4x Combat Scope" -- ELCAN Scope
+ATT.CompactName = "4x Combat"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -417,9 +433,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_elcan")
 
 ATT = {}
 
-ATT.PrintName = "B.ASS variable zoom Scope (8-16x) with mounted rangefinder"
-ATT.CompactName = "BA 8-16x"
-ATT.Description = [[A B.ASS variable zoom Scope (8-16x) with mounted rangefinder for weaver rail.]]
+ATT.PrintName = "8-12x Variable Zoom Scope with Rangefinder" -- B.ASS Variable Zoom Scope with Rangefinder
+ATT.CompactName = "8-12x VZS-R"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -542,9 +560,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass")
 
 ATT = {}
 
-ATT.PrintName = "B.ASS FLIR zoom Scope (12x) with mounted rangefinder and"
-ATT.CompactName = "FLIR 12x"
-ATT.Description = [[A B.ASS FLIR Scope (12x) with mounted rangefinder for weaver rail.]]
+ATT.PrintName = "8-12x Variable Zoom Thermal Scope with Rangefinder" -- B.ASS Variable Zoom Thermal Scope with Rangefinder
+ATT.CompactName = "8-12x VZTS-R"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -699,9 +719,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
 ATT = {}
 
-ATT.PrintName = "D-1 Low Profile sight"
-ATT.CompactName = "D-1 L"
-ATT.Description = [[A D-1 Low Profile sight for weaver rail.]]
+ATT.PrintName = "D-1 Red Dot - Low Profile"
+ATT.CompactName = "D-1 - LP"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -740,9 +762,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
 ATT = {}
 
-ATT.PrintName = "D-1 High Profile sight"
-ATT.CompactName = "D-1 H"
-ATT.Description = [[A D-1 High Profile sight for weaver rail.]]
+ATT.PrintName = "D-1 Red Dot - High Profile"
+ATT.CompactName = "D-1 - HP"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -784,9 +808,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_d1high")
 
 ATT = {}
 
-ATT.PrintName = "tacrds"
-ATT.CompactName = "tacrds"
-ATT.Description = [[A tacrds   sight for weaver rail.]]
+ATT.PrintName = "Pistol Red Dot" -- Tactical Red Dot
+ATT.CompactName = "Pistol"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -824,9 +850,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
 ATT = {}
 
-ATT.PrintName = "rmr"
-ATT.CompactName = "rmr"
-ATT.Description = [[A rmr   sight for weaver rail.]]
+ATT.PrintName = "Sport Shooting Red Dot - Low Profile" -- RMR Sight - Low Profile
+ATT.CompactName = "Sport - LP"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -864,9 +892,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
 ATT = {}
 
-ATT.PrintName = "rmr hihj"
-ATT.CompactName = "rmr high"
-ATT.Description = [[A rmr   sight for weaver rail.]]
+ATT.PrintName = "Sport Shooting Red Dot - High Profile" -- RMR Sight - High Profile
+ATT.CompactName = "Sport - HP"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -904,9 +934,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
 ATT = {}
 
-ATT.PrintName = "IMI X3"
-ATT.CompactName = "IMI X3"
-ATT.Description = [[A IMI X3 3x scope for weaver rail.]]
+ATT.PrintName = "3x Military Scope" -- IMI X3 Scope
+ATT.CompactName = "3x Military"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -956,9 +988,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_notacog")
 
 ATT = {}
 
-ATT.PrintName = "COMP-1"
-ATT.CompactName = "COMP-1"
-ATT.Description = [[A COMP-1 2x scope for weaver rail.]]
+ATT.PrintName = "Competition Scope" -- CompM4 Scope
+ATT.CompactName = "Comp."
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1010,9 +1044,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_compm1")
 
 ATT = {}
 
-ATT.PrintName = "Precision Systems variable zoom Scope (6-10x)"
-ATT.CompactName = "PS 6-10x"
-ATT.Description = [[A Precision Systems variable zoom Scope for weaver rail.]]
+ATT.PrintName = "6-8x Variable Zoom Scope" -- Precision Systems Variable Zoom Scope
+ATT.CompactName = "6-8x VZS"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1074,9 +1110,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_sniper")
 
 ATT = {}
 
-ATT.PrintName = "ez 6x"
-ATT.CompactName = "ez 6x"
-ATT.Description = [[A ez 6xez 6xez 6xez 6xez 6xez 6xez 6xez 6xez 6xPrecision Systems variable zoom Scope for weaver rail.]]
+ATT.PrintName = "1-6x Hunter Scope"
+ATT.CompactName = "1-6x Hunter"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1144,9 +1182,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_ez6x")
 
 ATT = {}
 
-ATT.PrintName = "ez 8x"
-ATT.CompactName = "ez 8x"
-ATT.Description = [[A ez 8xez 6xez 6xez 6xez 6xez 6xez 6xez 6xez 6xPrecision Systems variable zoom Scope for weaver rail.]]
+ATT.PrintName = "8x Hunter Scope"
+ATT.CompactName = "8x HS"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1200,9 +1240,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_ez8x")
 
 ATT = {}
 
-ATT.PrintName = "pm3 12x"
-ATT.CompactName = "pm3 12x"
-ATT.Description = [[A epm3 12xcision Systems variable zoom Scope for weaver rail.]]
+ATT.PrintName = "12x Military Marksman Scope"
+ATT.CompactName = "12x MMS"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1257,11 +1299,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_pm3")
 
 ATT = {}
 
-ATT.PrintName = "Thermal"
-ATT.CompactName = "Thermal"
-ATT.Description = [[Testing stuff
+ATT.PrintName = "Competition Thermal Scope" -- CompM4s Thermal Scope
+ATT.CompactName = "Comp. T"
+ATT.Description = ATT.PrintName
 
-A Thermal ?x scope for weaver rail.]]
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 

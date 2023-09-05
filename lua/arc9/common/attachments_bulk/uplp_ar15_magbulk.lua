@@ -460,6 +460,8 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
+-- ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+-- ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
 ATT.ClipSizeOverride = 40
@@ -491,7 +493,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 
-ATT.ActivateElements = {"uplp_ar15_mag"}
+ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
 ATT.ClipSizeOverride = 60
@@ -523,7 +526,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 
-ATT.ActivateElements = {"uplp_ar15_mag"}
+ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
 ATT.ClipSizeOverride = 60
@@ -556,7 +560,8 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 
-ATT.ActivateElements = {"uplp_ar15_mag"}
+ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
 ATT.ClipSizeOverride = 100
