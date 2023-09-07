@@ -287,7 +287,11 @@ L["uplp_sg_shell_yellow.description"] = "Replace the pellets with a single slug 
 local sportyred = "\n\n" .. "Special Sporty Red version."
 local pitchblack = "\n\n" .. "Special Pitch Black version."
 local arcticwhite = "\n\n" .. "Special Arctic White version."
-
+local aquablue = "\n\n" .. "Special Aqua Blue version."
+local stealthgray = "\n\n" .. "Special Stealth Gray version."
+local forestgreen = "\n\n" .. "Special Forest Green version."
+local hunterorange = "\n\n" .. "Special Hunter Orange version."
+local partypurple = "\n\n" .. "Special Party Purple version."
 
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
@@ -1177,3 +1181,96 @@ L["uplp_molot_mag_drum.description"] = "19-round drum magazine."
 L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
 L["uplp_sg_mz_vepr.compactname"] = "Molot C"
 L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
+
+//////////////////// PSG-90
+L["uplp_weapon_awp"] = "PSG-90"
+L["uplp_weapon_awp_desc"] = "The PSG-90 rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
+
+/////////// Attachments
+////// Barrels
+L["uplp_awp_brl_awp.printname"] = "610mm Police Barrel"
+L["uplp_awp_brl_awp.compactname"] = "610mm"
+L["uplp_awp_brl_awp.description"] = "Shortened 610mm (24\") barrel for the Police variant of the PSG-90."
+
+L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
+L["uplp_awp_brl_aws.compactname"] = "409mm S."
+L["uplp_awp_brl_aws.description"] = "Shortened, integrally suppressed 409mm (16\") barrel for the PSG-90."
+
+L["uplp_awp_brl_long.printname"] = "686mm Magnum Barrel"
+L["uplp_awp_brl_long.compactname"] = "686mm"
+L["uplp_awp_brl_long.description"] = "Slightly longer 686mm (27\") Magnum barrel for the PSG-90."
+
+L["uplp_awp_brl_short.printname"] = "350mm Compact Barrel"
+L["uplp_awp_brl_short.compactname"] = "350mm"
+L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the PSG-90."
+
+////// Bipods
+L["uplp_awp_bp.printname"] = "Built-in PSG-90 Bipod"
+L["uplp_awp_bp.compactname"] = "PSG-90 B."
+L["uplp_awp_bp.description"] = "Standard built-in bipod used on the PSG-90 and almost all of its variants."
+
+L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
+L["uplp_awp_hbp.compactname"] = "RM B."
+L["uplp_awp_hbp.description"] = "RIS-compatible bipod allowing mounting on various surfaces and objects to stabilize the weapon."
+
+////// Magazines
+L["uplp_awp_mag_awm.printname"] = "5-Round .338"
+L["uplp_awp_mag_awm.compactname"] = "5R .338"
+L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 ammunition."
+
+L["uplp_awp_mag_awp.printname"] = "5-Round .308"
+L["uplp_awp_mag_awp.compactname"] = "5R .308"
+L["uplp_awp_mag_awp.description"] = "Standard 5-round magazine loaded with .308 ammunition."
+
+L["uplp_awp_mag_awp_big.printname"] = "8-Round .308"
+L["uplp_awp_mag_awp_big.compactname"] = "8R .308"
+L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .308 ammunition."
+
+L["uplp_awp_mag_awp_tac.printname"] = "5-Round 6.5mm"
+L["uplp_awp_mag_awp_tac.compactname"] = "5R 6.5mm"
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition."
+
+////// Stocks
+L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"
+L["uplp_awp_stock_at.compactname"] = "Foldable M."
+L["uplp_awp_stock_at.description"] = "Modern foldable stock with more comfortable ergonomics."
+
+L["uplp_awp_stock_atx.printname"] = "eXtreme Stock"
+L["uplp_awp_stock_atx.compactname"] = "X"
+L["uplp_awp_stock_atx.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc."
+
+L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock (Aqua Blue)"
+L["uplp_awp_stock_atx_blue.compactname"] = "X (AB)"
+L["uplp_awp_stock_atx_blue.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. aquablue
+
+L["uplp_awp_stock_atx_gray.printname"] = "eXtreme Stock (Stealth Gray)"
+L["uplp_awp_stock_atx_gray.compactname"] = "X (SG)"
+L["uplp_awp_stock_atx_gray.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. stealthgray
+
+L["uplp_awp_stock_atx_green.printname"] = "eXtreme Stock (Forest Green)"
+L["uplp_awp_stock_atx_green.compactname"] = "X (FG)"
+L["uplp_awp_stock_atx_green.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. forestgreen
+
+L["uplp_awp_stock_atx_orange.printname"] = "eXtreme Stock (Hunter Orange)"
+L["uplp_awp_stock_atx_orange.compactname"] = "X (HO)"
+L["uplp_awp_stock_atx_orange.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. hunterorange
+
+L["uplp_awp_stock_atx_purple.printname"] = "eXtreme Stock (Party Purple)"
+L["uplp_awp_stock_atx_purple.compactname"] = "X (PP)"
+L["uplp_awp_stock_atx_purple.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. partypurple
+
+L["uplp_awp_stock_atx_white.printname"] = "eXtreme Stock (Arctic White)"
+L["uplp_awp_stock_atx_white.compactname"] = "X (AW)"
+L["uplp_awp_stock_atx_white.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. arcticwhite
+
+L["uplp_awp_stock_awm.printname"] = "Foldable Stock"
+L["uplp_awp_stock_awm.compactname"] = "Foldable"
+L["uplp_awp_stock_awm.description"] = "Standard stock with foldable capabilities for storage."
+
+L["uplp_awp_stock_awp.printname"] = "Police Stock"
+L["uplp_awp_stock_awp.compactname"] = "Police"
+L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide."
+
+L["uplp_awp_stock_awp.printname"] = "Police Stock with Buffer Tube"
+L["uplp_awp_stock_awp.compactname"] = "Police BT"
+L["uplp_awp_stock_awp.description"] = "Standard stock with an attached buffer tube for using AR-15 stocks."

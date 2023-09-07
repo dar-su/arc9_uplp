@@ -289,6 +289,11 @@ L["uplp_sg_shell_yellow.description"] = "Ersätter alla skotten med ett enkelt g
 local sportyred = "\n\n" .. "Speciell \"Sporty Red\"-version."
 local pitchblack = "\n\n" .. "Speciell \"Pitch Black\"-version."
 local arcticwhite = "\n\n" .. "Speciell \"Arctic White\"-version."
+local aquablue = "\n\n" .. "Speciell \"Aqua Blue\"-version."
+local stealthgray = "\n\n" .. "Speciell \"Stealth Gray\"-version."
+local forestgreen = "\n\n" .. "Speciell \"Forest Green\"-version."
+local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
+local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
 
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
@@ -599,13 +604,13 @@ L["uplp_ak_mz_silencer.compactname"] = "PBS-1"
 L["uplp_ak_mz_silencer.description"] = "Standard utfärdad ljuddämpare som använts på flera militära AK-gevär."
 
 ////// Stocks
-L["uplp_ak_stock_fold.printname"] = "Polymer Fällbar Kolv"
-L["uplp_ak_stock_fold.compactname"] = "Polymer F"
-L["uplp_ak_stock_fold.description"] = "Fällbar kolv som används av AK-103:an."
+L["uplp_ak_stock_fold.printname"] = "Polymer Vikbar Kolv"
+L["uplp_ak_stock_fold.compactname"] = "Polymer V"
+L["uplp_ak_stock_fold.description"] = "Vikbar kolv som används av AK-103:an."
 
 L["uplp_ak_stock_skele.printname"] = "Skelettkolv"
 L["uplp_ak_stock_skele.compactname"] = "Skelett"
-L["uplp_ak_stock_skele.description"] = "Fällbar, lättvikt kolv som används av AKS-74U."
+L["uplp_ak_stock_skele.description"] = "Vikbar, lättvikt kolv som används av AKS-74U."
 
 L["uplp_ak_stock_old.printname"] = "Gammaldags Kolv"
 L["uplp_ak_stock_old.compactname"] = "Gammaldags"
@@ -1175,3 +1180,97 @@ L["uplp_molot_mag_drum.description"] = "19-patroners trummagasin."
 L["uplp_sg_mz_vepr.printname"] = "Molot-Choke"
 L["uplp_sg_mz_vepr.compactname"] = "Molot-C"
 L["uplp_sg_mz_vepr.description"] = "Standard choke till hagelgeväret Molot."
+
+//////////////////// PSG-90
+L["uplp_weapon_awp"] = "PSG-90"
+L["uplp_weapon_awp_desc"] = "PSG-90-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
+
+/////////// Attachments
+////// Barrels
+L["uplp_awp_brl_awp.printname"] = "610mm Polis Pipa"
+L["uplp_awp_brl_awp.compactname"] = "610mm"
+L["uplp_awp_brl_awp.description"] = "Förkortad 610mm pipa för Polisversionen av PSG-90."
+
+L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
+L["uplp_awp_brl_aws.printname"] = "409mm Internt Ljuddämpad Pipa"
+L["uplp_awp_brl_aws.compactname"] = "409mm Ljud."
+L["uplp_awp_brl_aws.description"] = "Förkortad och internt ljuddämpad 409mm pipa till PSG-90."
+
+L["uplp_awp_brl_long.printname"] = "686mm Magnum-Pipa"
+L["uplp_awp_brl_long.compactname"] = "686mm"
+L["uplp_awp_brl_long.description"] = "Lite förlängd 686mm Magnum-pipa till PSG-90."
+
+L["uplp_awp_brl_short.printname"] = "350mm Kompakt Pipa"
+L["uplp_awp_brl_short.compactname"] = "350mm"
+L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till PSG-90."
+
+////// Bipods
+L["uplp_awp_bp.printname"] = "Inbyggd PSG-90-Benstöd"
+L["uplp_awp_bp.compactname"] = "PSG-90 B."
+L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på PSG-90 och nästan alla dess versioner."
+
+L["uplp_awp_hbp.printname"] = "Skenamonterat Benstöd"
+L["uplp_awp_hbp.compactname"] = "SM B."
+L["uplp_awp_hbp.description"] = "RIS-kompatibelt benstöd som tillåter montering på diverse ytor och föremål för att stabilisera vapnet."
+
+////// Magazines
+L["uplp_awp_mag_awm.printname"] = "5-Patroner .338"
+L["uplp_awp_mag_awm.compactname"] = "5P .338"
+L["uplp_awp_mag_awm.description"] = "Standard 5-patronersmagasin laddat med .338-ammunition."
+
+L["uplp_awp_mag_awp.printname"] = "5-Patroner .308"
+L["uplp_awp_mag_awp.compactname"] = "5P .308"
+L["uplp_awp_mag_awp.description"] = "Standard 5-patronersmagasin laddat med .308-ammunition."
+
+L["uplp_awp_mag_awp_big.printname"] = "8-Patroner .308"
+L["uplp_awp_mag_awp_big.compactname"] = "8P .308"
+L["uplp_awp_mag_awp_big.description"] = "Förstorat 8-patronersmagasin laddat med .308-ammunition."
+
+L["uplp_awp_mag_awp_tac.printname"] = "5-Patroner 6.5mm"
+L["uplp_awp_mag_awp_tac.compactname"] = "5P 6.5mm"
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-patronersmagasin laddat med 6.5mm ammunition."
+
+////// Stocks
+L["uplp_awp_stock_at.printname"] = "Vikbar Moderniserad Kolv"
+L["uplp_awp_stock_at.compactname"] = "Vikbar M."
+L["uplp_awp_stock_at.description"] = "Modern, vikbar kolv med mer bekväm ergonomi."
+
+L["uplp_awp_stock_atx.printname"] = "eXtreme-Kolv"
+L["uplp_awp_stock_atx.compactname"] = "X"
+L["uplp_awp_stock_atx.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc."
+
+L["uplp_awp_stock_atx_blue.printname"] = "eXtreme-Kolv (Aqua Blue)"
+L["uplp_awp_stock_atx_blue.compactname"] = "X (AB)"
+L["uplp_awp_stock_atx_blue.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. aquablue
+
+L["uplp_awp_stock_atx_gray.printname"] = "eXtreme-Kolv (Stealth Gray)"
+L["uplp_awp_stock_atx_gray.compactname"] = "X (SG)"
+L["uplp_awp_stock_atx_gray.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. stealthgray
+
+L["uplp_awp_stock_atx_green.printname"] = "eXtreme-Kolv (Forest Green)"
+L["uplp_awp_stock_atx_green.compactname"] = "X (FG)"
+L["uplp_awp_stock_atx_green.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. forestgreen
+
+L["uplp_awp_stock_atx_orange.printname"] = "eXtreme-Kolv (Hunter Orange)"
+L["uplp_awp_stock_atx_orange.compactname"] = "X (HO)"
+L["uplp_awp_stock_atx_orange.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. hunterorange
+
+L["uplp_awp_stock_atx_purple.printname"] = "eXtreme-Kolv (Party Purple)"
+L["uplp_awp_stock_atx_purple.compactname"] = "X (PP)"
+L["uplp_awp_stock_atx_purple.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. partypurple
+
+L["uplp_awp_stock_atx_white.printname"] = "eXtreme-Kolv (Arctic White)"
+L["uplp_awp_stock_atx_white.compactname"] = "X (AW)"
+L["uplp_awp_stock_atx_white.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. arcticwhite
+
+L["uplp_awp_stock_awm.printname"] = "Vikbar Kolv"
+L["uplp_awp_stock_awm.compactname"] = "Vikbar"
+L["uplp_awp_stock_awm.description"] = "Standardkolv med möjlighet att vikas till sidan för lagring."
+
+L["uplp_awp_stock_awp.printname"] = "Polis Kolv"
+L["uplp_awp_stock_awp.compactname"] = "Polis"
+L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt."
+
+L["uplp_awp_stock_awp.printname"] = "Polis Kolv med Bufferrör"
+L["uplp_awp_stock_awp.compactname"] = "Polis B."
+L["uplp_awp_stock_awp.description"] = "Standard kolv med ett påsatt bufferrör för användning med AR-15-kolvar."
