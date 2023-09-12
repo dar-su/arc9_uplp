@@ -11,6 +11,16 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RangeMaxMult = 1.1
+ATT.RangeMinMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_long")
 
 -------------------------------------------
@@ -26,6 +36,15 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.75
+ATT.AimDownSightsTimeMult = 0.9
+
+/// Negatives
+ATT.RangeMaxMult = 0.8
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_compact")
 
 -------------------------------------------
@@ -40,6 +59,15 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
+ATT.RecoilMult = 0.75
+ATT.AimDownSightsTimeMult = 0.9
+
+/// Negatives
+ATT.RangeMaxMult = 0.8
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_mini")
 
 -------------------------------------------
@@ -53,6 +81,15 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.7
+ATT.AimDownSightsTimeMult = 0.85
+
+/// Negatives
+ATT.RangeMaxMult = 0.8
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_micro")
 
@@ -322,6 +359,10 @@ ATT.DropMagazineVelocity = Vector(0, -30, 15)
 
 ATT.ClipSize = 8
 
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_long"
 end
@@ -340,7 +381,16 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Positives
 ATT.ClipSize = 19
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.35
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
+}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_drum.mdl"
 ATT.DropMagazineVelocity = Vector(0, -30, 15)
@@ -375,6 +425,12 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_vepr_default.mdl"
 -- ATT.MuzzleDevice = true
 
+/// Positives
+ATT.SpreadAdd = -0.025
+
+/// Negatives
+ATT.RecoilAutoControlMult = 1.05
+
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_vepr")
 
 -------------------------------------------
@@ -391,6 +447,12 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_choke.mdl"
 ATT.MuzzleDevice = true
+
+/// Positives
+ATT.SpreadAdd = -0.025
+
+/// Negatives
+ATT.RecoilAutoControlMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_choke")
 
@@ -409,6 +471,16 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_gk.mdl"
 ATT.MuzzleDevice = true
 
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.05
+ATT.RecoilRandomSideMult = 0.6
+ATT.SpreadAddRecoil = -0.01
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
 
 -------------------------------------------
@@ -425,6 +497,16 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy.mdl"
 ATT.MuzzleDevice = true
+
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.25
+ATT.RecoilRandomSideMult = 0.5
+ATT.SpreadAddRecoil = -0.02
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
 
@@ -459,6 +541,7 @@ ATT.CustomPros = {
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
 
@@ -484,14 +567,15 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
 /// Positives
-ATT.RecoilMult = 0.95
-ATT.SpreadAddRecoil = -0.01
+ATT.RecoilMult = 0.85
+ATT.SpreadAddRecoil = -0.02
 
 ATT.CustomPros = { 
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer_heavy")
