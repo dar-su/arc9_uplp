@@ -187,13 +187,21 @@ L["uplp_optic_ez6x.printname"] = "1-6x Jägare Sikte"
 L["uplp_optic_ez6x.compactname"] = "1-6x Jägare"
 L["uplp_optic_ez6x.description"] = "Variabel zoom sikte med 1-6x magnifiering."
 
+L["uplp_optic_ez8x.printname"] = "8x Jägare Sikte"
+L["uplp_optic_ez8x.compactname"] = "8x Jägare"
+L["uplp_optic_ez8x.description"] = "Lång räckvidd sikte med 8x magnifiering."
+
 L["uplp_optic_pm3.printname"] = "12x Militär Krypskyttesikte"
 L["uplp_optic_pm3.compactname"] = "12x MK"
 L["uplp_optic_pm3.description"] = "Lång räckvidd krypskyttesikte med 12x magnifiering."
 
-L["uplp_optic_testthermal.printname"] = "Tävling Värmesikte"
-L["uplp_optic_testthermal.compactname"] = "Tävling V."
-L["uplp_optic_testthermal.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte.\nKommer med värmesikte förmåga som märker måltavlor."
+-- L["uplp_optic_testthermal.printname"] = "Tävling Värmesikte"
+-- L["uplp_optic_testthermal.compactname"] = "Tävling V."
+-- L["uplp_optic_testthermal.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte.\nKommer med värmesikte förmåga som märker måltavlor."
+
+L["uplp_optic_generic.printname"] = "10x Precisionssikte"
+L["uplp_optic_generic.compactname"] = "10x Precision"
+L["uplp_optic_generic.description"] = "Lång räckvidd krypskyttesikte med 10x magnifiering."
 
 /////////// Grips
 L["uplp_grip_vert.printname"] = "Vertikalt Framgrepp"
@@ -1181,33 +1189,32 @@ L["uplp_sg_mz_vepr.printname"] = "Molot-Choke"
 L["uplp_sg_mz_vepr.compactname"] = "Molot-C"
 L["uplp_sg_mz_vepr.description"] = "Standard choke till hagelgeväret Molot."
 
-//////////////////// PSG-90
-L["uplp_weapon_awp"] = "PSG-90"
-L["uplp_weapon_awp_desc"] = "PSG-90-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
+//////////////////// AW Sniper
+L["uplp_weapon_awp"] = "Prickskyttegevär AW"
+L["uplp_weapon_awp_desc"] = "AW-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
 
 /////////// Attachments
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "610mm Polis Pipa"
 L["uplp_awp_brl_awp.compactname"] = "610mm"
-L["uplp_awp_brl_awp.description"] = "Förkortad 610mm pipa för Polisversionen av PSG-90."
+L["uplp_awp_brl_awp.description"] = "Förkortad 610mm pipa för Polisversionen av AW-geväret."
 
-L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
 L["uplp_awp_brl_aws.printname"] = "409mm Internt Ljuddämpad Pipa"
 L["uplp_awp_brl_aws.compactname"] = "409mm Ljud."
-L["uplp_awp_brl_aws.description"] = "Förkortad och internt ljuddämpad 409mm pipa till PSG-90."
+L["uplp_awp_brl_aws.description"] = "Förkortad och internt ljuddämpad 409mm pipa till AW-geväret."
 
 L["uplp_awp_brl_long.printname"] = "686mm Magnum-Pipa"
 L["uplp_awp_brl_long.compactname"] = "686mm"
-L["uplp_awp_brl_long.description"] = "Lite förlängd 686mm Magnum-pipa till PSG-90."
+L["uplp_awp_brl_long.description"] = "Lite förlängd 686mm Magnum-pipa till AW-geväret."
 
 L["uplp_awp_brl_short.printname"] = "350mm Kompakt Pipa"
 L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till PSG-90."
+L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret."
 
 ////// Bipods
-L["uplp_awp_bp.printname"] = "Inbyggd PSG-90-Benstöd"
-L["uplp_awp_bp.compactname"] = "PSG-90 B."
-L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på PSG-90 och nästan alla dess versioner."
+L["uplp_awp_bp.printname"] = "Inbyggd AW-Benstöd"
+L["uplp_awp_bp.compactname"] = "AW B."
+L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner."
 
 L["uplp_awp_hbp.printname"] = "Skenamonterat Benstöd"
 L["uplp_awp_hbp.compactname"] = "SM B."

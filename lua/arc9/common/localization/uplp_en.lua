@@ -185,13 +185,21 @@ L["uplp_optic_ez6x.printname"] = "1-6x Hunter Scope"
 L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
 L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification."
 
+L["uplp_optic_ez8x.printname"] = "8x Hunter Scope"
+L["uplp_optic_ez8x.compactname"] = "8x Hunter"
+L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification."
+
 L["uplp_optic_pm3.printname"] = "12x Military Marksman Scope"
 L["uplp_optic_pm3.compactname"] = "12x MMS"
 L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification."
 
-L["uplp_optic_testthermal.printname"] = "Competition Thermal Scope"
-L["uplp_optic_testthermal.compactname"] = "Comp. T"
-L["uplp_optic_testthermal.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting.\nComes with thermal imaging capability that highlights targets."
+-- L["uplp_optic_testthermal.printname"] = "Competition Thermal Scope"
+-- L["uplp_optic_testthermal.compactname"] = "Comp. T"
+-- L["uplp_optic_testthermal.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting.\nComes with thermal imaging capability that highlights targets."
+
+L["uplp_optic_generic.printname"] = "10x Precision Scope"
+L["uplp_optic_generic.compactname"] = "10x Precision"
+L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
 
 /////////// Grips
 L["uplp_grip_vert.printname"] = "Vertical Foregrip"
@@ -1182,32 +1190,32 @@ L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
 L["uplp_sg_mz_vepr.compactname"] = "Molot C"
 L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
 
-//////////////////// PSG-90
-L["uplp_weapon_awp"] = "PSG-90"
-L["uplp_weapon_awp_desc"] = "The PSG-90 rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
+//////////////////// AW Sniper
+L["uplp_weapon_awp"] = "AW Sniper"
+L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
 
 /////////// Attachments
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "610mm Police Barrel"
 L["uplp_awp_brl_awp.compactname"] = "610mm"
-L["uplp_awp_brl_awp.description"] = "Shortened 610mm (24\") barrel for the Police variant of the PSG-90."
+L["uplp_awp_brl_awp.description"] = "Shortened 610mm (24\") barrel for the Police variant of the AW rifle."
 
 L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
 L["uplp_awp_brl_aws.compactname"] = "409mm S."
-L["uplp_awp_brl_aws.description"] = "Shortened, integrally suppressed 409mm (16\") barrel for the PSG-90."
+L["uplp_awp_brl_aws.description"] = "Shortened, integrally suppressed 409mm (16\") barrel for the AW rifle."
 
 L["uplp_awp_brl_long.printname"] = "686mm Magnum Barrel"
 L["uplp_awp_brl_long.compactname"] = "686mm"
-L["uplp_awp_brl_long.description"] = "Slightly longer 686mm (27\") Magnum barrel for the PSG-90."
+L["uplp_awp_brl_long.description"] = "Slightly longer 686mm (27\") Magnum barrel for the AW rifle."
 
 L["uplp_awp_brl_short.printname"] = "350mm Compact Barrel"
 L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the PSG-90."
+L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the AW rifle."
 
 ////// Bipods
-L["uplp_awp_bp.printname"] = "Built-in PSG-90 Bipod"
-L["uplp_awp_bp.compactname"] = "PSG-90 B."
-L["uplp_awp_bp.description"] = "Standard built-in bipod used on the PSG-90 and almost all of its variants."
+L["uplp_awp_bp.printname"] = "Built-in AW Bipod"
+L["uplp_awp_bp.compactname"] = "AW B."
+L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants."
 
 L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
 L["uplp_awp_hbp.compactname"] = "RM B."

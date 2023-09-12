@@ -1183,7 +1183,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_ez6x")
 ATT = {}
 
 ATT.PrintName = "8x Hunter Scope"
-ATT.CompactName = "8x HS"
+ATT.CompactName = "8x Hunter"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
@@ -1295,7 +1295,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_pm3")
 
 
 ///////////////////////////////////////      uplp_optic_testthermal
-
+--[[
 
 ATT = {}
 
@@ -1391,4 +1391,65 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_optic_testthermal")
+
+]]--
+
+
+///////////////////////////////////////      uplp_optic_generic
+
+
+ATT = {}
+
+ATT.PrintName = "10x Precision Scope"
+ATT.CompactName = "10x Precision"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_generic.mdl"
+ATT.FoldSights = true
+
+-- ATT.SprintToFireTimeMult = 1.5
+-- ATT.AimDownSightsTimeMult = 1.5
+-- ATT.RecoilMultSights = 0.5
+-- ATT.SpeedMult = 0.89
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 9, -1.62),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 45,
+        RTScopeFOV = 57/6,
+        Blur = false,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, -1, 1)
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57/6
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+
+ATT.ScopeScreenRatio = 0.66
+
+ATT.Category = "uplp_optic_big"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+
+ATT.ModelOffset = Vector(-0.25, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
