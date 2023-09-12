@@ -1,8 +1,8 @@
 $modelname "weapons\arc9\c_uplp_awp.mdl"
  
 $bodygroup "awoopa" {
-	studio "body awp.smd"
 	studio "body awm.smd"
+	studio "body awp.smd"
 }   
 $bodygroup "stock" {
 	studio "stock awp.smd"
@@ -30,8 +30,8 @@ $bodygroup "fs" {
 	studio "fs short.smd"
 }
 $bodygroup "mag" {
-	studio "mag awp.smd"
 	studio "mag awm.smd"
+	studio "mag awp.smd"
 	studio "mag awp big.smd"
 	studio "mag awp tac.smd"
 
@@ -216,7 +216,7 @@ $sequence "inspect_xstock" {
 	"anims\inspect_xstock.smd"
 	fps 30
 }
-$sequence "inspect_xstock_empty" {
+$sequence "inspect_empty_xstock" {
 	"anims\inspect_xstock_empty.smd"
 	fps 30
 }
