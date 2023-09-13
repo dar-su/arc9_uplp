@@ -173,3 +173,132 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_short")
 
+
+///////////////////////////////////////      uplp_mutant_mag_30_bak
+
+
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62x39mm (Bakelite)"
+ATT.CompactName = "30R 7.62 (B)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_mutant_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_bak")
+
+
+///////////////////////////////////////      uplp_mutant_mag_30_12
+
+
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62x39mm (AK-12-Style)"
+ATT.CompactName = "30R 7.62 (12)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_mutant_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_12")
+
+
+///////////////////////////////////////      uplp_mutant_mag_30_old
+
+
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62x39mm (Steel)"
+ATT.CompactName = "30R 7.62 (S)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_mutant_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_old")
+
+
+///////////////////////////////////////      uplp_mutant_mag_30_oldest
+
+
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62x39mm (Smooth Steel)"
+ATT.CompactName = "30R 7.62 (SS)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_mutant_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_oldest")
+
+
+///////////////////////////////////////      uplp_mutant_mag_40
+
+
+ATT = {}
+
+ATT.PrintName = "40-Round 7.62x39mm (Bakelite)"
+ATT.CompactName = "40R 7.62 (B)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_mutant_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
+
+/// Positives
+ATT.ClipSizeOverride = 40
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
+ATT.ReloadTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_mutant_mag_40")
+
+
+///////////////////////////////////////      uplp_mutant_mag_40_old
+
+
+ATT = {}
+
+ATT.PrintName = "40-Round 7.62x39mm (Steel)"
+ATT.CompactName = "40R 7.62 (S)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Category = "uplp_mutant_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
+
+/// Positives
+ATT.ClipSizeOverride = 40
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
+ATT.ReloadTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_mutant_mag_40_old")

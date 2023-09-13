@@ -162,7 +162,6 @@ SWEP.Firemodes = {
     { Mode = -1, -- Full
 	PoseParam = 1 },
     { Mode = 1, -- Semi
-	RecoilMult = 0.5,
 	RPM = 555,
 	PoseParam = 2 }
 }

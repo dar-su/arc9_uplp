@@ -23,7 +23,7 @@ L["uplp_country_usa"] = "Förenta Staterna"
 /////////// Caliber
 L["uplp_caliber"] = "Kaliber"
 
-L["uplp_caliber_7.62x32mm"] = "7,62x39mm Soviet"
+L["uplp_caliber_7.62x39mm"] = "7,62x39mm Sovjet"
 L["uplp_caliber_5.56x45mm"] = "5,56x45mm"
 L["uplp_caliber_5.45x39mm"] = "5,45x39mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
@@ -483,36 +483,36 @@ L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på RPK-16."
 local loaded = "\n"
 local loaded762 = loaded .. "Laddat med 7,62x39mm Sovjet som används av AK-47:an, AK-103:an och AK-15."
 
-L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7.62x39mm (Bakelit)"
-L["uplp_ak_mag_762_30_bak.compactname"] = "30P 7.62 (B)"
+L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7,62x39mm (Bakelit)"
+L["uplp_ak_mag_762_30_bak.compactname"] = "30P 7,62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
 
-L["uplp_ak_mag_762_30_12.printname"] = "30-Patroner 7.62x39mm (AK-12-Style)"
-L["uplp_ak_mag_762_30_12.compactname"] = "30P 7.62 (12)"
+L["uplp_ak_mag_762_30_12.printname"] = "30-Patroner 7,62x39mm (AK-12-Style)"
+L["uplp_ak_mag_762_30_12.compactname"] = "30P 7,62 (12)"
 L["uplp_ak_mag_762_30_12.description"] = "30-patronersmagasin gjorda för att likna AK-12:ans magasin." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7.62x39mm (Stål)"
-L["uplp_ak_mag_762_30_old.compactname"] = "30P 7.62 (S)"
+L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62x39mm (Stål)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30P 7,62 (S)"
 L["uplp_ak_mag_762_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7.62x39mm (Stål)"
-L["uplp_ak_mag_762_30_old.compactname"] = "30P 7.62 (S)"
+L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62x39mm (Stål)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30P 7,62 (S)"
 L["uplp_ak_mag_762_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet." .. loaded762
 
-L["uplp_ak_mag_762_30_oldest.printname"] = "30-Patroner 7.62x39mm (Utjämnad Stål)"
-L["uplp_ak_mag_762_30_oldest.compactname"] = "30P 7.62 (US)"
+L["uplp_ak_mag_762_30_oldest.printname"] = "30-Patroner 7,62x39mm (Utjämnad Stål)"
+L["uplp_ak_mag_762_30_oldest.compactname"] = "30P 7,62 (US)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål." .. loaded762
 
-L["uplp_ak_mag_762_40.printname"] = "40-Patroner 7.62x39mm (Bakelit)"
-L["uplp_ak_mag_762_40.compactname"] = "40P 7.62 (B)"
+L["uplp_ak_mag_762_40.printname"] = "40-Patroner 7,62x39mm (Bakelit)"
+L["uplp_ak_mag_762_40.compactname"] = "40P 7,62 (B)"
 L["uplp_ak_mag_762_40.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
 
-L["uplp_ak_mag_762_40_old.printname"] = "40-Patroner 7.62x39mm (Stål)"
-L["uplp_ak_mag_762_40_old.compactname"] = "40P 7.62 (S)"
+L["uplp_ak_mag_762_40_old.printname"] = "40-Patroner 7,62x39mm (Stål)"
+L["uplp_ak_mag_762_40_old.compactname"] = "40P 7,62 (S)"
 L["uplp_ak_mag_762_40_old.description"] = "40-patronersmagasin gjorda av det goda gamla stålet." .. loaded762
 
-L["uplp_ak_mag_762_drum.printname"] = "75-Patroner 7.62x39mm Trumma"
-L["uplp_ak_mag_762_drum.compactname"] = "75P 7.62 T"
+L["uplp_ak_mag_762_drum.printname"] = "75-Patroner 7,62x39mm Trumma"
+L["uplp_ak_mag_762_drum.compactname"] = "75P 7,62 T"
 L["uplp_ak_mag_762_drum.description"] = "75-patroners cylindriskt trummagasin." .. loaded762
 
 /// 5,45x39mm
@@ -562,8 +562,8 @@ L["uplp_ak_mag_556_30_12.compactname"] = "30P 5,56 (12)"
 L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin gjorda för att likna AK-12:ans magasin." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Patroner AK-308 7.62x51mm"
-L["uplp_ak_mag_308_20.compactname"] = "20S 7.62x51"
+L["uplp_ak_mag_308_20.printname"] = "20-Patroner AK-308 7,62x51mm"
+L["uplp_ak_mag_308_20.compactname"] = "20S 7,62x51"
 L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddede med 7,62x51mm patroner."
 
 L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9x39mm"
@@ -1105,6 +1105,35 @@ L["uplp_mutant_hg_nowosuku_xl.description"] = "Längre variant av det lätta SX6
 L["uplp_mutant_hg_short.printname"] = "Taktiskt Handskydd"
 L["uplp_mutant_hg_short.compactname"] = "Taktiskt"
 L["uplp_mutant_hg_short.description"] = "Taktiskt handskydd gjort till Mutant."
+
+////// Magazines
+L["uplp_mutant_mag_30_bak.printname"] = "30-Patroner 7,62x39mm (Bakelit)"
+L["uplp_mutant_mag_30_bak.compactname"] = "30P 7,62 (B)"
+L["uplp_mutant_mag_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit."
+
+L["uplp_mutant_mag_30_12.printname"] = "30-Patroner 7,62x39mm (AK-12-Style)"
+L["uplp_mutant_mag_30_12.compactname"] = "30P 7,62 (12)"
+L["uplp_mutant_mag_30_12.description"] = "30-patronersmagasin gjorda för att likna AK-12:ans magasin."
+
+L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62x39mm (Stål)"
+L["uplp_mutant_mag_30_old.compactname"] = "30P 7,62 (S)"
+L["uplp_mutant_mag_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet."
+
+L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62x39mm (Stål)"
+L["uplp_mutant_mag_30_old.compactname"] = "30P 7,62 (S)"
+L["uplp_mutant_mag_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet."
+
+L["uplp_mutant_mag_30_oldest.printname"] = "30-Patroner 7,62x39mm (Utjämnad Stål)"
+L["uplp_mutant_mag_30_oldest.compactname"] = "30P 7,62 (US)"
+L["uplp_mutant_mag_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål."
+
+L["uplp_mutant_mag_40.printname"] = "40-Patroner 7,62x39mm (Bakelit)"
+L["uplp_mutant_mag_40.compactname"] = "40P 7,62 (B)"
+L["uplp_mutant_mag_40.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit."
+
+L["uplp_mutant_mag_40_old.printname"] = "40-Patroner 7,62x39mm (Stål)"
+L["uplp_mutant_mag_40_old.compactname"] = "40P 7,62 (S)"
+L["uplp_mutant_mag_40_old.description"] = "40-patronersmagasin gjorda av det goda gamla stålet."
 
 //////////////////// Molot
 L["uplp_weapon_molot"] = "Molot"
