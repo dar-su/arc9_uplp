@@ -12,14 +12,21 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_mutant_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = "uplp_muzzle",
+        Pos = Vector(-16.125, 0, 0.175),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_muzzle_fhider",
+    },
+}
+
+ATT.ActivateElements = {"uplp_ar15_barrel_long"}
+-- ATT.ExcludeElements = {"uplp_ar15_handguard_short"}
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_barrel_long")
 
@@ -35,14 +42,21 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_mutant_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_ar15_barrel_short"}
+-- ATT.ExcludeElements = {"uplp_ar15_handguard_long"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = "uplp_muzzle",
+        Pos = Vector(-10.15, 0, 0.175),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_muzzle_fhider",
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_barrel_short")
 
@@ -58,11 +72,6 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_mutant_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -72,9 +81,12 @@ ATT.Attachments = {
         Category = "uplp_ar15_fs",
         Pos = Vector(-13.3, 0, 0),
         Ang = Angle(0, 0, 0),
+		Installed = "uplp_ar15_fs_scalar",
     },
 }
 
+ATT.ActivateElements = {"uplp_ar15_handguard_long"}
+ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_long")
 
@@ -90,11 +102,6 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar10_hgg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -104,9 +111,12 @@ ATT.Attachments = {
         Category = "uplp_ar15_fs",
         Pos = Vector(-8.2, 0, 0),
         Ang = Angle(0, 0, 0),
+		Installed = "uplp_ar15_fs_scalar",
     },
 }
 
+ATT.ActivateElements = {"uplp_ar15_handguard_short"}
+-- ATT.ExcludeElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_nowosuku")
 
@@ -122,22 +132,21 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_ar10_hgg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
         Pos = Vector(-11.5, 0, 0),
         Ang = Angle(0, 0, 0),
+		Installed = "uplp_ar15_fs_scalar",
     },
 }
 
+ATT.ActivateElements = {"uplp_ar15_handguard_long"}
+ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_nowosuku_xl")
 
@@ -153,11 +162,6 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
--- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
--- ATT.ModelBodygroups = "1"
--- ATT.ModelOffset = Vector(0, 0, 0)
-
--- ATT.SortOrder = 0
 ATT.Category = "uplp_mutant_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -167,9 +171,12 @@ ATT.Attachments = {
         Category = "uplp_ar15_fs",
         Pos = Vector(-7.7, 0, 0),
         Ang = Angle(0, 0, 0),
+		Installed = "uplp_ar15_fs_scalar",
     },
 }
 
+ATT.ActivateElements = {"uplp_ar15_handguard_short"}
+-- ATT.ExcludeElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_short")
 

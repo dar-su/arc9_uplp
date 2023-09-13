@@ -24,10 +24,10 @@ ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -1.5),
+        Pos = Vector(0, 7, -1.5),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
@@ -44,6 +44,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ModelOffset = Vector(0, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_553")
 
@@ -73,7 +74,7 @@ ATT.Sights = {
         Pos = Vector(0, 6, -1.8),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
@@ -82,9 +83,9 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 800
+ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
@@ -116,10 +117,10 @@ ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5.5, -1.75),
+        Pos = Vector(0, 5.5, -1.7),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
@@ -128,9 +129,9 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 800
+ATT.HoloSightSize = 1600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
@@ -162,10 +163,10 @@ ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -1.55),
+        Pos = Vector(0, 6, -1.525),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
@@ -174,9 +175,9 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 800
+ATT.HoloSightSize = 1600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
@@ -208,10 +209,10 @@ ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.2),
+        Pos = Vector(0, 13, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 45
+        ViewModelFOV = 30
     }
 }
 
@@ -220,7 +221,7 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
@@ -254,15 +255,16 @@ ATT.SpeedMult = 0.9
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -2.4),
+        Pos = Vector(0, 10, -2.4),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ShadowPos = Vector(16,0,0),
         Disassociate = true,
         Blur = true,
+        ViewModelFOV = 57
     },
     {
-        Pos = Vector(-0.64, 9, -2.49),
+        Pos = Vector(-0.64, 9.5, -2.49),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         RTScopeFOV = 38/4,
@@ -322,23 +324,23 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_acog.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.1
-ATT.RecoilMultSights = 0.4
-ATT.VisualRecoilPunchMultSights = 0.7
-ATT.VisualRecoilRollMultSights = 0.3
+-- ATT.SprintToFireTimeMult = 1.1
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.RecoilMultSights = 0.4
+-- ATT.VisualRecoilPunchMultSights = 0.7
+-- ATT.VisualRecoilRollMultSights = 0.3
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 4.2, -1.448),
+        Pos = Vector(0, 5.5, -1.448),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57,
+        ViewModelFOV = 45,
         RTScopeFOV = 57/4,
     },
     {
-        Pos = Vector(0, 7, -2.68),
-        Ang = Angle(0, -0, 0),
+        Pos = Vector(0, 8, -2.75),
+        Ang = Angle(0, -0.65, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
         ShadowPos = Vector(0,0,3),
@@ -395,10 +397,10 @@ ATT.VisualRecoilRollMultSights = 0.3
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -1.511),
+        Pos = Vector(0, 7, -1.511),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57,
+        ViewModelFOV = 45,
         RTScopeFOV = 57/4,
     },
 }
@@ -446,25 +448,25 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_bigassscope.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 4
-ATT.AimDownSightsTimeMult = 4
-ATT.RecoilMultSights = 0.35
-ATT.SpeedMult = 0.8
+-- ATT.SprintToFireTimeMult = 4
+-- ATT.AimDownSightsTimeMult = 4
+-- ATT.RecoilMultSights = 0.35
+-- ATT.SpeedMult = 0.8
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -1.15),
+        Pos = Vector(0, 10, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 40,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/8,
         Blur = false,
     },
     {
-        Pos = Vector(0, 8, -1.15),
+        Pos = Vector(0, 10, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 36,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/16,
         Blur = false,
     },
@@ -573,20 +575,27 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_bigassscope.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 4
-ATT.AimDownSightsTimeMult = 4
-ATT.RecoilMultSights = 0.35
-ATT.SpeedMult = 0.8
+-- ATT.SprintToFireTimeMult = 4
+-- ATT.AimDownSightsTimeMult = 4
+-- ATT.RecoilMultSights = 0.35
+-- ATT.SpeedMult = 0.8
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 8, -1.15),
+        Pos = Vector(0, 10, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 40,
-        RTScopeFOV = 57/12,
+        ViewModelFOV = 20,
+        RTScopeFOV = 57/8,
         Blur = false,
-        InvertColors = true,
+    },
+    {
+        Pos = Vector(0, 10, -1.15),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 20,
+        RTScopeFOV = 57/16,
+        Blur = false,
     },
 }
 
@@ -737,17 +746,17 @@ ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -0.73),
+        Pos = Vector(0, 7, -0.73),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 40
     }
 }
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1111
+ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
@@ -779,10 +788,10 @@ ATT.SprintToFireTimeMult = 1.06
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -1.5),
+        Pos = Vector(0, 7, -1.525),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 40
     }
 }
 
@@ -793,7 +802,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1111
+ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
@@ -826,17 +835,17 @@ ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -0.6),
+        Pos = Vector(0, 6, -0.625),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1111
+ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
@@ -868,17 +877,17 @@ ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -0.6),
+        Pos = Vector(0, 7, -0.55),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1111
+ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
@@ -910,17 +919,17 @@ ATT.AimDownSightsTimeMult = 0.95
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5, -1.28),
+        Pos = Vector(0, 7, -1.28),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        -- ViewModelFOV = 57
+        ViewModelFOV = 57
     }
 }
 
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1111
+ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
@@ -947,16 +956,16 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_notacog.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.1
-ATT.RecoilMultSights = 0.4
+-- ATT.SprintToFireTimeMult = 1.1
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.RecoilMultSights = 0.4
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 4, -1.328),
+        Pos = Vector(0, 5.5, -1.328),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57,
+        ViewModelFOV = 45,
         RTScopeFOV = 57/3,
     }
 }
@@ -1001,16 +1010,16 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_compm1.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.1
-ATT.RecoilMultSights = 0.4
+-- ATT.SprintToFireTimeMult = 1.1
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.RecoilMultSights = 0.4
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.005, 3.5, -1.635),
+        Pos = Vector(0, 6, -1.635),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57,
+        ViewModelFOV = 30,
         RTScopeFOV = 57/3,
     }
 }
@@ -1057,25 +1066,25 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_sniper.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.5
-ATT.AimDownSightsTimeMult = 1.5
-ATT.RecoilMultSights = 0.5
-ATT.SpeedMult = 0.89
+-- ATT.SprintToFireTimeMult = 1.5
+-- ATT.AimDownSightsTimeMult = 1.5
+-- ATT.RecoilMultSights = 0.5
+-- ATT.SpeedMult = 0.89
 
 ATT.Sights = {
     {
-        Pos = Vector(0.01, 8, -1.475),
+        Pos = Vector(0, 12, -1.49),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 36,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
     },
     {
-        Pos = Vector(0, 8, -1.49),
+        Pos = Vector(0, 12, -1.49),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 36,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/10,
         Blur = false,
     },
@@ -1123,25 +1132,25 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.5
-ATT.AimDownSightsTimeMult = 1.5
-ATT.RecoilMultSights = 0.5
-ATT.SpeedMult = 0.89
+-- ATT.SprintToFireTimeMult = 1.5
+-- ATT.AimDownSightsTimeMult = 1.5
+-- ATT.RecoilMultSights = 0.5
+-- ATT.SpeedMult = 0.89
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -1.69),
+        Pos = Vector(0, 10, -1.69),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 36,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
     },
     {
-        Pos = Vector(0, 6, -1.69),
+        Pos = Vector(0, 10, -1.69),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 36,
+        ViewModelFOV = 20,
         RTScopeFOV = 40,
         Blur = false,
     },
@@ -1195,17 +1204,17 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_ez8x.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.5
-ATT.AimDownSightsTimeMult = 1.5
-ATT.RecoilMultSights = 0.5
-ATT.SpeedMult = 0.89
+-- ATT.SprintToFireTimeMult = 1.5
+-- ATT.AimDownSightsTimeMult = 1.5
+-- ATT.RecoilMultSights = 0.5
+-- ATT.SpeedMult = 0.89
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -1.3),
+        Pos = Vector(0, 13, -1.305),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 36,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
     },
@@ -1253,17 +1262,27 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_pm312x.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.5
-ATT.AimDownSightsTimeMult = 1.5
-ATT.RecoilMultSights = 0.5
-ATT.SpeedMult = 0.89
+-- ATT.SprintToFireTimeMult = 1.5
+-- ATT.AimDownSightsTimeMult = 1.5
+-- ATT.RecoilMultSights = 0.5
+-- ATT.SpeedMult = 0.89
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        Category = "uplp_optic_small",
+        Pos = Vector(0.75, 0, -2.6),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_muzzle_fhider",
+    },
+}
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -1.38),
+        Pos = Vector(0, 14, -1.38),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 45,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
     },
@@ -1420,10 +1439,10 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -1.62),
+        Pos = Vector(0, 16, -1.62),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 45,
+        ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
     },

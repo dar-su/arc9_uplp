@@ -621,6 +621,7 @@ SWEP.Attachments = {
         Installed = "uplp_ar15_rs_m4",
         Pos = Vector(0.045, -0.2, 0.326),
         Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_optic_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -629,6 +630,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
+		Icon_Offset = Vector(1, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),

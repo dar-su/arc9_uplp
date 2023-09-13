@@ -1116,7 +1116,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),
         RequireElements = {"use_optics"},
-        CorrectiveAng = Angle(0.45, -0.25, 0),
+        CorrectiveAng = Angle(0.4, -0.35, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

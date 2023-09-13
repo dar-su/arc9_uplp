@@ -181,8 +181,8 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.25, -3, 0.6),
-     Ang = Angle(0.1, 0, 0),
+     Pos = Vector(-2.25, -3, 0.62),
+     Ang = Angle(0, 0, 0),
      Magnification = 1,
      ViewModelFOV = 70,
 }
@@ -192,8 +192,8 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
 	if attached["uplp_ar15_rs_mbus"] or attached["uplp_ar15_rs_type1"] then
 		return {
-			Pos = Vector(-2.275, -3, 0.225),
-			Ang = Angle(0.35, 0.125, -3),
+			Pos = Vector(-2.25, -3, 0.62),
+			Ang = Angle(0, 0, 0),
 			Magnification = 1.15,
 			ViewModelFOV = 65,
         }
@@ -201,8 +201,8 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 	
 	if attached["uplp_ar15_rs_type3"] then
 		return {
-			 Pos = Vector(-2.275, -3, 0.15),
-			 Ang = Angle(0.35, 0.65, -3),
+			 Pos = Vector(-2.25, -3, 0.4),
+			 Ang = Angle(0, 0.5, 0),
 			 Magnification = 1.15,
 			 ViewModelFOV = 65,
         }
@@ -434,6 +434,15 @@ SWEP.Attachments = {
         Pos = Vector(0.045, -0.52, 0.366),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ar15_rs_m4",
+		ExcludeElements = {"uplp_optic_used"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Bone = "body",
+        Pos = Vector(0, -0.5, 1),
+        Ang = Angle(90, 90, 180),
+		Icon_Offset = Vector(1, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -467,7 +476,8 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.633, 5.672),
         Ang = Angle(90, 90, 180),
-        Integral = true
+        Installed = "uplp_mutant_barrel_short",
+        Integral = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -476,8 +486,8 @@ SWEP.Attachments = {
         Pos = Vector(0.045, -0.52, 7.703),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, -1),
-		Installed = "uplp_mutant_hg_long",
-        Integral = "uplp_mutant_hg_long",
+		Installed = "uplp_mutant_hg_short",
+        Integral = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),

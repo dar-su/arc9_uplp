@@ -46,3 +46,8 @@ SWEP.RestAng = Angle(35, -10, -20)
 
 SWEP.PeekPos = Vector(-1.5, 4, -3)
 SWEP.PeekAng = Angle(0, 0.4, -40)
+
+SWEP.SightMidPoint = {
+    Pos = Vector(-1, 20, -5),
+    Ang = Angle(0, 0, -45),
+}

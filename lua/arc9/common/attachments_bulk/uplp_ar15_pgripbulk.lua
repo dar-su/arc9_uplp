@@ -20,12 +20,6 @@ ATT.ModelBodygroups = "4"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-ATT.SprintToFireTimeAdd = -0.1
-ATT.AimDownSightsTimeAdd = -0.1
-
-
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_416")
 
 
@@ -47,12 +41,6 @@ ATT.ModelBodygroups = "3"
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
-
-ATT.SprintToFireTimeAdd = -0.2
-ATT.AimDownSightsTimeAdd = -0.2
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_massive")
 
@@ -76,12 +64,6 @@ ATT.ModelBodygroups = "2"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-ATT.SprintToFireTimeAdd = -0.1
-ATT.AimDownSightsTimeAdd = -0.1
-
-
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_modern")
 
 
@@ -104,13 +86,13 @@ ATT.ModelBodygroups = "5"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-ATT.SprintToFireTimeAdd = -0.4
-ATT.AimDownSightsTimeAdd = -0.4
+/// Positives
 ATT.RecoilMult = 0.95
-ATT.SpeedMult = 0.95
+ATT.RecoilAutoControlMult = 1.05
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_psg")
 
@@ -134,14 +116,8 @@ ATT.ModelBodygroups = "6"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-ATT.SprintToFireTimeAdd = -0.2
-ATT.AimDownSightsTimeAdd = -0.2
-ATT.RecoilMult = 1.05
-ATT.VisualRecoilMultMult = 1.05
-ATT.VisualRecoilMultSights = 1.05
-
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel")
 
@@ -165,14 +141,8 @@ ATT.ModelBodygroups = "7"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-ATT.SprintToFireTimeAdd = -0.2
-ATT.AimDownSightsTimeAdd = -0.2
-ATT.RecoilMult = 1.05
-ATT.VisualRecoilMultMult = 1.05
-ATT.VisualRecoilMultSights = 1.05
-
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel_red")
 
@@ -196,12 +166,6 @@ ATT.ModelBodygroups = "0"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-ATT.SprintToFireTimeAdd = -0.1
-ATT.AimDownSightsTimeAdd = -0.1
-
-
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_std")
 
 
@@ -223,12 +187,6 @@ ATT.ModelBodygroups = "1"
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
-
-ATT.SprintToFireTimeAdd = -0.1
-ATT.AimDownSightsTimeAdd = -0.1
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_tac")
 
