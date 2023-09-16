@@ -44,6 +44,10 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
 ATT.ModelOffset = Vector(0, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_553")
@@ -91,6 +95,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_optic_kobra")
 
@@ -137,6 +144,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rx1")
 
@@ -183,6 +193,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_optic_srs")
 
@@ -229,6 +242,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm4")
 
@@ -249,10 +265,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_dcl110.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.5
-ATT.AimDownSightsTimeMult = 1.5
-ATT.SpeedMult = 0.9
-
 ATT.Sights = {
     {
         Pos = Vector(0, 10, -2.4),
@@ -264,11 +276,12 @@ ATT.Sights = {
         ViewModelFOV = 57
     },
     {
-        Pos = Vector(-0.64, 9.5, -2.49),
+        Pos = Vector(-0.64, 13, -2.49),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         RTScopeFOV = 38/4,
         Blur = false,
+        ViewModelFOV = 30
     },
 }
 
@@ -304,6 +317,10 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ModelOffset = Vector(2, 0, 0)
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.35
+ATT.SprintToFireTimeMult = 1.2
+
 ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
 ///////////////////////////////////////      uplp_optic_acog
@@ -324,18 +341,12 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_acog.mdl"
 ATT.FoldSights = true
 
--- ATT.SprintToFireTimeMult = 1.1
--- ATT.AimDownSightsTimeMult = 1.1
--- ATT.RecoilMultSights = 0.4
--- ATT.VisualRecoilPunchMultSights = 0.7
--- ATT.VisualRecoilRollMultSights = 0.3
-
 ATT.Sights = {
     {
-        Pos = Vector(0, 5.5, -1.448),
+        Pos = Vector(0, 7, -1.448),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 45,
+        ViewModelFOV = 30,
         RTScopeFOV = 57/4,
     },
     {
@@ -368,6 +379,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_optic_acog")
 
@@ -388,12 +402,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_elcan.mdl"
 ATT.FoldSights = true
-
-ATT.SprintToFireTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.1
-ATT.RecoilMultSights = 0.4
-ATT.VisualRecoilPunchMultSights = 0.7
-ATT.VisualRecoilRollMultSights = 0.3
 
 ATT.Sights = {
     {
@@ -427,6 +435,10 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ModelOffset = Vector(1, 0, 0)
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.25
+
 ARC9.LoadAttachment(ATT, "uplp_optic_elcan")
 
 
@@ -447,11 +459,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_bigassscope.mdl"
 ATT.FoldSights = true
-
--- ATT.SprintToFireTimeMult = 4
--- ATT.AimDownSightsTimeMult = 4
--- ATT.RecoilMultSights = 0.35
--- ATT.SpeedMult = 0.8
 
 ATT.Sights = {
     {
@@ -539,20 +546,12 @@ ATT.DrawFunc = function(swep, model, wm)
     cam.End3D2D()
 end
 
-
-
-
-
-
-
-
-
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.5
+ATT.SprintToFireTimeMult = 1.4
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass")
 
@@ -574,11 +573,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_bigassscope.mdl"
 ATT.FoldSights = true
-
--- ATT.SprintToFireTimeMult = 4
--- ATT.AimDownSightsTimeMult = 4
--- ATT.RecoilMultSights = 0.35
--- ATT.SpeedMult = 0.8
 
 ATT.Sights = {
     {
@@ -705,20 +699,12 @@ ATT.DrawFunc = function(swep, model, wm)
     cam.End3D2D()
 end
 
-
-
-
-
-
-
-
-
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
-
-
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.5
+ATT.SprintToFireTimeMult = 1.4
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
@@ -741,9 +727,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_t1.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 0.95
-
 ATT.Sights = {
     {
         Pos = Vector(0, 7, -0.73),
@@ -761,7 +744,6 @@ ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
@@ -783,8 +765,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_t1high.mdl"
 ATT.FoldSights = true
-
-ATT.SprintToFireTimeMult = 1.06
 
 ATT.Sights = {
     {
@@ -808,7 +788,6 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
 ARC9.LoadAttachment(ATT, "uplp_optic_d1high")
 
 
@@ -830,9 +809,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_tacrds.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 0.95
-
 ATT.Sights = {
     {
         Pos = Vector(0, 6, -0.625),
@@ -850,7 +826,6 @@ ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
@@ -872,9 +847,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_rmr.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 0.95
-
 ATT.Sights = {
     {
         Pos = Vector(0, 7, -0.55),
@@ -892,7 +864,6 @@ ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
@@ -914,9 +885,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_rmrhigh.mdl"
 ATT.FoldSights = true
 
-ATT.SprintToFireTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 0.95
-
 ATT.Sights = {
     {
         Pos = Vector(0, 7, -1.28),
@@ -934,7 +902,6 @@ ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
@@ -955,10 +922,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_notacog.mdl"
 ATT.FoldSights = true
-
--- ATT.SprintToFireTimeMult = 1.1
--- ATT.AimDownSightsTimeMult = 1.1
--- ATT.RecoilMultSights = 0.4
 
 ATT.Sights = {
     {
@@ -990,6 +953,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "uplp_optic_notacog")
 
@@ -1044,6 +1010,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm1")
 
@@ -1110,6 +1079,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.45
+ATT.SprintToFireTimeMult = 1.35
 
 ARC9.LoadAttachment(ATT, "uplp_optic_sniper")
 
@@ -1131,11 +1103,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
-
--- ATT.SprintToFireTimeMult = 1.5
--- ATT.AimDownSightsTimeMult = 1.5
--- ATT.RecoilMultSights = 0.5
--- ATT.SpeedMult = 0.89
 
 ATT.Sights = {
     {
@@ -1181,6 +1148,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.25
 
 ATT.ModelOffset = Vector(-1, 0, 0)
 
@@ -1203,11 +1173,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_ez8x.mdl"
 ATT.FoldSights = true
-
--- ATT.SprintToFireTimeMult = 1.5
--- ATT.AimDownSightsTimeMult = 1.5
--- ATT.RecoilMultSights = 0.5
--- ATT.SpeedMult = 0.89
 
 ATT.Sights = {
     {
@@ -1239,6 +1204,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.4
+ATT.SprintToFireTimeMult = 1.35
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
@@ -1261,11 +1229,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_pm312x.mdl"
 ATT.FoldSights = true
-
--- ATT.SprintToFireTimeMult = 1.5
--- ATT.AimDownSightsTimeMult = 1.5
--- ATT.RecoilMultSights = 0.5
--- ATT.SpeedMult = 0.89
 
 ATT.Attachments = {
     {
@@ -1307,6 +1270,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.6
+ATT.SprintToFireTimeMult = 1.5
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
@@ -1432,11 +1398,6 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_generic.mdl"
 ATT.FoldSights = true
 
--- ATT.SprintToFireTimeMult = 1.5
--- ATT.AimDownSightsTimeMult = 1.5
--- ATT.RecoilMultSights = 0.5
--- ATT.SpeedMult = 0.89
-
 ATT.Sights = {
     {
         Pos = Vector(0, 16, -1.62),
@@ -1467,6 +1428,9 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.25
 
 ATT.ModelOffset = Vector(-0.25, 0, 0)
 

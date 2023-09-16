@@ -183,8 +183,8 @@ SWEP.NPCWeight = 60
 SWEP.IronSights = {
      Pos = Vector(-2.25, -3, 0.62),
      Ang = Angle(0, 0, 0),
-     Magnification = 1,
-     ViewModelFOV = 70,
+     Magnification = 1.15,
+     ViewModelFOV = 65,
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
