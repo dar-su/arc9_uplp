@@ -77,6 +77,7 @@ L["uplp_class_weapon_throwable"] = "Kastbar"
 //////////////////// Category Names
 L["uplp_category_ammo"] = "Ammo"
 L["uplp_category_barrel"] = "Pipa"
+L["uplp_category_bipod"] = "Benstöd"
 L["uplp_category_charginghandle"] = "Manöverhandtag"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_gasblock"] = "Gasregulator"
@@ -1241,13 +1242,14 @@ L["uplp_awp_brl_short.compactname"] = "350mm"
 L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret."
 
 ////// Bipods
-L["uplp_awp_bp.printname"] = "Inbyggd AW-Benstöd"
+-- L["uplp_awp_bp.printname"] = "Inbyggd AW-Benstöd"
+L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegevär AW"
 L["uplp_awp_bp.compactname"] = "AW B."
 L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner."
 
-L["uplp_awp_hbp.printname"] = "Skenamonterat Benstöd"
-L["uplp_awp_hbp.compactname"] = "SM B."
-L["uplp_awp_hbp.description"] = "RIS-kompatibelt benstöd som tillåter montering på diverse ytor och föremål för att stabilisera vapnet."
+-- L["uplp_awp_hbp.printname"] = "Skenamonterat Benstöd"
+-- L["uplp_awp_hbp.compactname"] = "SM B."
+-- L["uplp_awp_hbp.description"] = "RIS-kompatibelt benstöd som tillåter montering på diverse ytor och föremål för att stabilisera vapnet."
 
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Patroner .338"
@@ -1307,6 +1309,6 @@ L["uplp_awp_stock_awp.printname"] = "Polis Kolv"
 L["uplp_awp_stock_awp.compactname"] = "Polis"
 L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt."
 
-L["uplp_awp_stock_awp.printname"] = "Polis Kolv med Bufferrör"
-L["uplp_awp_stock_awp.compactname"] = "Polis B."
-L["uplp_awp_stock_awp.description"] = "Standard kolv med ett påsatt bufferrör för användning med AR-15-kolvar."
+L["uplp_awp_stock_tube.printname"] = "Polis Kolv med Bufferrör"
+L["uplp_awp_stock_tube.compactname"] = "Polis B."
+L["uplp_awp_stock_tube.description"] = "Standard kolv med ett påsatt bufferrör för användning med AR-15-kolvar."

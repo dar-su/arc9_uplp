@@ -51,3 +51,5 @@ SWEP.SightMidPoint = {
     Pos = Vector(-1, 20, -5),
     Ang = Angle(0, 0, -45),
 }
+
+SWEP.Bipod = false

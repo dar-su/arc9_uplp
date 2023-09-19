@@ -24,6 +24,7 @@ L["uplp_country_usa"] = "United States"
 L["uplp_caliber"] = "Calibre"
 
 L["uplp_caliber_7.62x39mm"] = "7.62x39mm Soviet"
+L["uplp_caliber_7.62x51mm"] = "7.62x51mm"
 L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
 L["uplp_caliber_5.45x39mm"] = "5.45x39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
@@ -35,6 +36,7 @@ L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
 L["uplp_manufacturer_cmmg"] = "CMMG Inc."
+L["uplp_manufacturer_ai"] = "Accuracy International"
 
 /////////// Year
 L["uplp_year"] = "Year"
@@ -49,6 +51,7 @@ L["uplp_mechanism_3"] = "%s, %s, %s"
 
 L["uplp_mechanism_gasoperated"] = "Gas-operated"
 L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
+L["uplp_mechanism_boltaction"] = "Bolt-action"
 
 /////////// Authors
 L["uplp_authors"] = "Authors"
@@ -78,6 +81,7 @@ L["uplp_class_weapon_throwable"] = "Throwable"
 //////////////////// Category Names
 L["uplp_category_ammo"] = "Ammo"
 L["uplp_category_barrel"] = "Barrel"
+L["uplp_category_bipod"] = "Bipod"
 L["uplp_category_charginghandle"] = "Charging Handle"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_gasblock"] = "Gas Block"
@@ -1243,13 +1247,14 @@ L["uplp_awp_brl_short.compactname"] = "350mm"
 L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the AW rifle."
 
 ////// Bipods
-L["uplp_awp_bp.printname"] = "Built-in AW Bipod"
+-- L["uplp_awp_bp.printname"] = "Built-in AW Bipod"
+L["uplp_awp_bp.printname"] = "AW Sniper Bipod"
 L["uplp_awp_bp.compactname"] = "AW B."
 L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants."
 
-L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
-L["uplp_awp_hbp.compactname"] = "RM B."
-L["uplp_awp_hbp.description"] = "RIS-compatible bipod allowing mounting on various surfaces and objects to stabilize the weapon."
+-- L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
+-- L["uplp_awp_hbp.compactname"] = "RM B."
+-- L["uplp_awp_hbp.description"] = "RIS-compatible bipod allowing mounting on various surfaces and objects to stabilize the weapon."
 
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Round .338"
@@ -1309,6 +1314,6 @@ L["uplp_awp_stock_awp.printname"] = "Police Stock"
 L["uplp_awp_stock_awp.compactname"] = "Police"
 L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide."
 
-L["uplp_awp_stock_awp.printname"] = "Police Stock with Buffer Tube"
-L["uplp_awp_stock_awp.compactname"] = "Police BT"
-L["uplp_awp_stock_awp.description"] = "Standard stock with an attached buffer tube for using AR-15 stocks."
+L["uplp_awp_stock_tube.printname"] = "Police Stock with Buffer Tube"
+L["uplp_awp_stock_tube.compactname"] = "Police BT"
+L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer tube for using AR-15 stocks."
