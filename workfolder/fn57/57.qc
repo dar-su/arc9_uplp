@@ -15,6 +15,7 @@ $bodygroup "trig" {
 $bodygroup "cap" {
 	studio "cap.smd"
 	studio "cap tan.smd"
+	blank
 }  
 $bodygroup "mag" {
 	studio "mag.smd"
