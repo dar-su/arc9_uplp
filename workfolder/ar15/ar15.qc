@@ -13,21 +13,18 @@ $bodygroup "addition" { // 1
 	studio "stm9_magwell.smd"
 }  
 $bodygroup "hg" { // 2
-	studio "hg_ris.smd"
+	studio "hg_rislong.smd"
 	studio "hg_risshort.smd"
 	studio "hg_m16.smd"
 	studio "hg_m16short.smd"
 	studio "hg_grenadier.smd"
-	studio "hg_tac.smd"
-	studio "hg_tac_red.smd"
+	studio "hg_taclong.smd"
 	studio "hg_tacshort.smd"
-	studio "hg_tacshort_red.smd"
 	studio "hg_mlok.smd"
-	studio "hg_mlokshort.smd"
-	studio "hg_nowosuku_s15.smd"
-	studio "hg_nowosuku_s15_red.smd"
-	studio "hg_nowosuku_s15_xl.smd"
-	studio "hg_nowosuku_s15_xl_red.smd"
+	studio "mutant_hg_nowosuku_s15.smd"
+	studio "mutant_hg_nowosuku_s15_red.smd"
+	studio "mutant_hg_nowosuku_s15_xl.smd"
+	studio "mutant_hg_nowosuku_s15_xl_red.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"
@@ -263,62 +260,163 @@ $sequence "reload_empty" {
 	snap
 }
 
+$sequence "reload10" {
+	"anims\reload10.smd"
+	"anims\reload_iron10.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty10" {
+	"anims\reload_empty10.smd"
+	"anims\reload_empty_iron10.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload20" {
+	"anims\reload20.smd"
+	"anims\reload_iron20.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty20" {
+	"anims\reload_empty20.smd"
+	"anims\reload_empty_iron20.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload40" {
+	"anims\reload40.smd"
+	"anims\reload_iron40.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty40" {
+	"anims\reload_empty40.smd"
+	"anims\reload_empty_iron40.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload60" {
+	"anims\reload60.smd"
+	"anims\reload_iron60.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty60" {
+	"anims\reload_empty60.smd"
+	"anims\reload_empty_iron60.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload100" {
+	"anims\reload100.smd"
+	"anims\reload_iron100.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty100" {
+	"anims\reload_empty100.smd"
+	"anims\reload_empty_iron100.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reloadg17" {
+	"anims\reloadg17.smd"
+	"anims\reload_irong17.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_emptyg17" {
+	"anims\reload_emptyg17.smd"
+	"anims\reload_empty_irong17.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reloadg33" {
+	"anims\reloadg33.smd"
+	"anims\reload_irong33.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_emptyg33" {
+	"anims\reload_emptyg33.smd"
+	"anims\reload_empty_irong33.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reloadg50" {
+	"anims\reloadg50.smd"
+	"anims\reload_irong50.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_emptyg50" {
+	"anims\reload_emptyg50.smd"
+	"anims\reload_empty_irong50.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+
+
+
+
 $sequence "inspect" {
 	"anims\a9inspect.smd"
 	snap
-	fps 24
+	fps 30
 }
 $sequence "inspect_empty" {
 	"anims\a9inspect_empty.smd"
 	snap
-	fps 24
+	fps 30
 }
-
-// $sequence "enter_inspect" {
-// 	"anims\enter_inspect.smd"
-// 	"ACT_VM_IDLE" 1
-// 	snap
-// 	fps 30
-// }
-
-// $sequence "idle_inspect" {
-// 	"anims\idle_inspect.smd"
-// 	"ACT_VM_IDLE" 1
-// 	snap
-// 	fps 30
-// }
-
-// $sequence "exit_inspect" {
-// 	"anims\exit_inspect.smd"
-// 	"anims\exit_inspect_iron.smd"
-// 	blend "sights" 0 1
-// 	"ACT_VM_IDLE" 1
-// 	snap
-// 	fps 30
-// }
-
-// $sequence "enter_inspect_empty" {
-// 	"anims\enter_inspect_empty.smd"
-// 	"ACT_VM_IDLE" 1
-// 	snap
-// 	fps 30
-// }
-
-// $sequence "idle_inspect_empty" {
-// 	"anims\idle_inspect_empty.smd"
-// 	"ACT_VM_IDLE" 1
-// 	snap
-// 	fps 30
-// }
-
-// $sequence "exit_inspect_empty" {
-// 	"anims\exit_inspect_empty.smd"
-// 	"anims\exit_inspect_empty_iron.smd"
-// 	blend "sights" 0 1
-// 	"ACT_VM_IDLE" 1
-// 	snap
-// 	fps 30
-// }
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"
