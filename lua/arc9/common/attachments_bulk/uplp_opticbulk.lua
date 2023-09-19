@@ -1233,7 +1233,7 @@ ATT.FoldSights = true
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = "uplp_optic_small",
+        Category = {"uplp_optic_small"},
         Pos = Vector(0.75, 0, -2.6),
         Ang = Angle(0, 0, 0),
 		Installed = "uplp_muzzle_fhider",

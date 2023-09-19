@@ -145,7 +145,7 @@ shootsound9 .. "shot_04.ogg",
 ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
-    return anim .. "_9"
+    return anim .. "_g17"
 end
 
 -- ATT.SortOrder = 0
@@ -157,6 +157,10 @@ ATT.RPMMult = 1.2
 ATT.AimDownSightsTimeMult = 0.7
 ATT.SprintToFireTimeMult = 0.7
 ATT.RecoilMult = 0.85
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
+}
 
 /// Negatives
 ATT.ClipSizeOverride = 17
@@ -209,7 +213,7 @@ shootsound9 .. "shot_04.ogg",
 ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
-    return anim .. "_9"
+    return anim .. "_g33"
 end
 
 -- ATT.SortOrder = 0
@@ -274,7 +278,7 @@ shootsound9 .. "shot_04.ogg",
 ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
-    return anim .. "_9"
+    return anim .. "_g50"
 end
 
 -- ATT.SortOrder = 0
@@ -294,7 +298,11 @@ ATT.DamageMaxAdd = -10
 ATT.DamageMinAdd = -5
 ATT.RangeMaxMult = 0.35
 ATT.RangeMinMult = 0.65
-ATT.ReloadTimeMult = 1.25
+-- ATT.ReloadTimeMult = 1.25
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
 
 ATT.Attachments = {
     {
@@ -352,7 +360,11 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 /// Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
-ATT.ReloadTimeMult = 0.9
+-- ATT.ReloadTimeMult = 0.9
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
+}
 
 /// Negatives
 ATT.ClipSizeOverride = 10
@@ -360,7 +372,9 @@ ATT.ClipSizeOverride = 10
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_10"
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag10")
 
@@ -386,13 +400,19 @@ ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 ATT.ReloadTimeMult = 0.95
 
+-- ATT.CustomPros = { 
+-- [ARC9:GetPhrase("autostat.reloadtime")] = "+5%",
+-- }
+
 /// Negatives
 ATT.ClipSizeOverride = 20
 
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_20"
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag20")
 
@@ -416,8 +436,6 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag30")
 
@@ -469,12 +487,20 @@ ATT.ClipSizeOverride = 40
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
-ATT.ReloadTimeMult = 1.1
+-- ATT.ReloadTimeMult = 1.1
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
+
+ATT.ModelOffset = Vector(0.15, 0, 0)
 
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_40"
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag40")
 
@@ -502,12 +528,18 @@ ATT.ClipSizeOverride = 60
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
-ATT.ReloadTimeMult = 1.2
+-- ATT.ReloadTimeMult = 1.2
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
+}
 
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_60"
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag60")
 
@@ -535,12 +567,18 @@ ATT.ClipSizeOverride = 60
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
-ATT.ReloadTimeMult = 1.2
+-- ATT.ReloadTimeMult = 1.2
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
+}
 
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_60"
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag60")
 
@@ -569,11 +607,17 @@ ATT.ClipSizeOverride = 100
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.3
-ATT.ReloadTimeMult = 1.3
+-- ATT.ReloadTimeMult = 1.3
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-30%",
+}
 
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_100"
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_drum")

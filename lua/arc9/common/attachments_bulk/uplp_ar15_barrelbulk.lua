@@ -63,7 +63,7 @@ ATT.RangeMinMult = 1.1
 ATT.PhysBulletMuzzleVelocityMult = 1.05
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 ATT.Attachments = {
@@ -106,13 +106,13 @@ ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 
 /// Positives
 ATT.RecoilMult = 0.95
-ATT.RangeMaxMult = 1.35
+ATT.RangeMaxMult = 1.3
 ATT.RangeMinMult = 1.2
-ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
 
 ATT.Attachments = {
     {
@@ -156,11 +156,11 @@ ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 ATT.RecoilMult = 0.9
 ATT.RangeMaxMult = 1.4
 ATT.RangeMinMult = 1.25
-ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.15
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.15
 
 ATT.Attachments = {
     {
@@ -204,10 +204,10 @@ ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 ATT.RecoilMult = 0.85
 ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.35
-ATT.PhysBulletMuzzleVelocityMult = 1.3
+ATT.PhysBulletMuzzleVelocityMult = 1.2
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.25
 
 ATT.Attachments = {

@@ -30,9 +30,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-"[416]XQAAAQCcAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lOdO3dT3s+KVkh0yljNW9rFoFBWxxGwKyq3gyRrrHVDzLdmXlrOGRHbGDjz9I0k4Iu1hhGi88vzmxOFdX1RceI0AYsYKMe5EA",
+"[416]XQAAAQDEAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lRog8bNlpT/fMoQM3Yovfk/vkufsbWcDJD/kQUskENfbRfUOzGOhrWeH1o+lp/9vJrUmcO3CIU0m6IU1kndZYueyWDuP9ErD0N2blNTQUZ8aJ/6ii5xMA",
 "[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
-"[Sporty Red PDW]XQAAAQAPAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgBo1NQ6kf06vykQIzaiinq5RceSpKykxZ5jTFIc+A3ESup+X72dZH2YytydKRG2I0a5fH8TX6ke/qy8QDxweZs5Sl4RvuBhhlAr+VMhKTgwN7wMw12zhG+kyxr5yGj7o2JuQnN2gcivb2rsD8J1JZ98=",
+"[Sporty Red PDW]XQAAAQD2AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgCZB0ilL6eKibS+tef/nGAP4l/N9U0r6by2YQEs3qKxOe8hgzJzFWaZyeCtBiSHRRYsodOP/yojO7sHIu3s7pznhu4/IWgpk9GWp/yMFlxez5+uWqMe9Nyq1H1L+JF0dcfXz1Pb1spMe8A==",
 }
 
 //// Muzzle Effects, Shell Effects, Camera
@@ -403,38 +403,38 @@ SWEP.Animations = {
         },
     },
 
-    ["fire_9"] = {
-        Source = {"fire_01","fire_02","fire_03"},
-        ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound9 .. "mech_01.ogg",
-			shootsound9 .. "mech_02.ogg",
-			shootsound9 .. "mech_03.ogg",
-			shootsound9 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = {
-			shootsound9 .. "punch.ogg",
-			}, t = 0 },
-        },
-    },
-    ["fire_empty_9"] = {
-        Source = "fire_empty",
-        ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound9 .. "mech_01.ogg",
-			shootsound9 .. "mech_02.ogg",
-			shootsound9 .. "mech_03.ogg",
-			shootsound9 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = {
-			shootsound9 .. "punch.ogg",
-			}, t = 0 },
-        },
-    },
+    -- ["fire_g17"] = {
+        -- Source = {"fire_01","fire_02","fire_03"},
+        -- ShellEjectAt = 0.01,
+        -- IKTimeLine = { { t = 0, lhik = 1 } },
+        -- EventTable = {
+            -- { s = {
+			-- shootsound9 .. "mech_01.ogg",
+			-- shootsound9 .. "mech_02.ogg",
+			-- shootsound9 .. "mech_03.ogg",
+			-- shootsound9 .. "mech_04.ogg",
+			-- }, t = 0 },
+            -- { s = {
+			-- shootsound9 .. "punch.ogg",
+			-- }, t = 0 },
+        -- },
+    -- },
+    -- ["fire_empty_g17"] = {
+        -- Source = "fire_empty",
+        -- ShellEjectAt = 0.01,
+        -- IKTimeLine = { { t = 0, lhik = 1 } },
+        -- EventTable = {
+            -- { s = {
+			-- shootsound9 .. "mech_01.ogg",
+			-- shootsound9 .. "mech_02.ogg",
+			-- shootsound9 .. "mech_03.ogg",
+			-- shootsound9 .. "mech_04.ogg",
+			-- }, t = 0 },
+            -- { s = {
+			-- shootsound9 .. "punch.ogg",
+			-- }, t = 0 },
+        -- },
+    -- },
 
     -- Reloads --
 
@@ -464,6 +464,294 @@ SWEP.Animations = {
             { s = reloadsound .. "reload_clipin.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = reloadsound .. "chamber_close.ogg", t = 29 / 30, c = ca, v = 0.8 },
             { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    
+    ["reload_10"] = {
+        Source = "reload10",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 27 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_10"] = {
+        Source = "reload_empty10",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 37 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+        
+    ["reload_20"] = {
+        Source = "reload20",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_20"] = {
+        Source = "reload_empty20",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 27 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+         
+    ["reload_40"] = {
+        Source = "reload40",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 33 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_40"] = {
+        Source = "reload_empty40",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 45 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    
+    ["reload_60"] = {
+        Source = "reload60",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_60"] = {
+        Source = "reload_empty60",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 50 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    
+    ["reload_100"] = {
+        Source = "reload100",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_100"] = {
+        Source = "reload_empty100",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_chamber.ogg", t = 45 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 55 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    
+    ["reload_g17"] = {
+        Source = "reloadg17",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 27 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_g17"] = {
+        Source = "reload_emptyg17",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 37 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    
+    ["reload_g33"] = {
+        Source = "reloadg33",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_g33"] = {
+        Source = "reload_emptyg33",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 16 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+        
+    ["reload_g50"] = {
+        Source = "reloadg50",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_g50"] = {
+        Source = "reload_emptyg50",
+		MinProgress = 0.65,
+        EventTable = {
+            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_clipin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "chamber_close.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_lift.ogg", t = 50 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -583,17 +871,17 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } } },
 
     ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } } },
-    ["uplp_ar15_hg_tac_red"] = { Bodygroups =       { { 2, 6 } } },
-    ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 7 } } },
-    ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =  { { 2, 8 } } },
+    -- ["uplp_ar15_hg_tac_red"] = { Bodygroups =       { { 2, 6 } } },
+    ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 6 } } },
+    -- ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =  { { 2, 8 } } },
 
-    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 9 } } },
-    ["uplp_ar15_hg_mlokshort"] = { Bodygroups =     { { 2, 10 } } },
+    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } } },
+    -- ["uplp_ar15_hg_mlokshort"] = { Bodygroups =     { { 2, 10 } } },
 
-    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 11 } } },
-    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 13 } } },
-    ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 12 } } },
-    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 14 } } },
+    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 } } },
+    ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 9 } } },
+    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } } },
+    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 11 } } },
 	
 	-- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 1 } } },
