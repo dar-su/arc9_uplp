@@ -169,7 +169,7 @@ $sequence "modeswitch_empty" {
 
 $sequence "reload" {
 	"anims\reload.smd"
-	"anims\ready_iron.smd"
+	"anims\reload_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
