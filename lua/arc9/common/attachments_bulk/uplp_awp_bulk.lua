@@ -206,6 +206,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
 ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx")
@@ -224,6 +229,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock"}
 
@@ -244,6 +254,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
 ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_gray")
@@ -262,6 +277,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock"}
 
@@ -282,6 +302,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
 ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_orange")
@@ -301,6 +326,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
 ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_purple")
@@ -319,6 +349,11 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock"}
 
