@@ -28,6 +28,7 @@ L["uplp_caliber_7.62x51mm"] = "7.62x51mm"
 L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
 L["uplp_caliber_5.45x39mm"] = "5.45x39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
+L["uplp_caliber_50ae"] = ".50 AE"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer"
@@ -36,7 +37,10 @@ L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
 L["uplp_manufacturer_cmmg"] = "CMMG Inc."
+L["uplp_manufacturer_magnum"] = "Magnum Research"
 L["uplp_manufacturer_ai"] = "Accuracy International"
+L["uplp_manufacturer_fn"] = "FN Herstal"
+L["uplp_manufacturer_hk"] = "Heckler & Koch"
 
 /////////// Year
 L["uplp_year"] = "Year"
@@ -1317,3 +1321,51 @@ L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law 
 L["uplp_awp_stock_tube.printname"] = "Police Stock with Buffer Tube"
 L["uplp_awp_stock_tube.compactname"] = "Police BT"
 L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer tube for using AR-15 stocks."
+
+//////////////////// FN57
+L["uplp_weapon_fn57"] = "MRD57"
+L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for its unique chambering in the 5.7x28mm cartridge, originally designed for use in select fire weapons. It features a high-capacity magazine, low recoil, and is prized for its armor-piercing capabilities, making it popular among military and law enforcement units worldwide."
+
+/////////// Attachments
+////// Mags
+L["uplp_fn57_mag_ext.printname"] = "27-Round Extended Magazine"
+L["uplp_fn57_mag_ext.compactname"] = "27R Ext."
+L["uplp_fn57_mag_ext.description"] = "Larger 27-round magazine for the MRD57."
+
+////// Trigger
+L["uplp_fn57_trigger_auto.printname"] = "Automatic Action"
+L["uplp_fn57_trigger_auto.compactname"] = "Automatic"
+L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in fully automatic, sacrificing recoil control."
+
+////// Skins
+L["uplp_fn57_skin_tan_full.printname"] = "Full Tan"
+L["uplp_fn57_skin_tan_full.compactname"] = "Full Tan"
+L["uplp_fn57_skin_tan_full.description"] = "Replaces the slide and lower pistol frame with desert tan coloured ones."
+
+L["uplp_fn57_skin_tan_half.printname"] = "Half Tan"
+L["uplp_fn57_skin_tan_half.compactname"] = "Half Tan"
+L["uplp_fn57_skin_tan_half.description"] = "Replaces the lower pistol frame with a desert tan coloured one."
+
+L["uplp_fn57_skin_panda.printname"] = "Panda"
+L["uplp_fn57_skin_panda.compactname"] = "Panda"
+L["uplp_fn57_skin_panda.description"] = "Replaces the slide with a desert tan coloured one."
+
+//////////////////// MP7
+L["uplp_weapon_mp7"] = "PDW-7"
+L["uplp_weapon_mp7_desc"] = "The PDW-7 is a compact and lightweight submachine gun known for its high rate of fire and versatility, capable of firing armor-piercing rounds. It is often used by military and law enforcement units for close-quarters combat and special operations."
+
+/////////// Attachments
+////// Stocks
+L["uplp_mp7_stock_folded.printname"] = "Collapsed Stock"
+L["uplp_mp7_stock_folded.compactname"] = "Collapsed"
+L["uplp_mp7_stock_folded.description"] = "Collapses the stock."
+
+////// Mags
+L["uplp_mp7_mag_20.printname"] = "20-Round Magazine"
+L["uplp_mp7_mag_20.compactname"] = "20R"
+L["uplp_mp7_mag_20.description"] = "Shortened magazine that holds 20 rounds."
+
+////// Irons
+L["uplp_mp7_sight_folded.printname"] = "PDW Iron Sights"
+L["uplp_mp7_sight_folded.compactname"] = "PDW IS"
+L["uplp_mp7_sight_folded.description"] = "Flips the iron sights down and makes them smaller for quicker target acquisition."

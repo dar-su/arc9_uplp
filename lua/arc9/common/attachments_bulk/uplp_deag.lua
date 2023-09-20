@@ -209,8 +209,8 @@ ATT.Category = "uplp_deag_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.AimDownSightsTimeMult = 1.15
-ATT.RecoilMult = 1.05
-ATT.RecoilSideMult = 0.3
+ATT.RecoilMult = 0.95
+ATT.RecoilUpMult = 0.5
 ATT.RecoilAutoControlMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_cut")
@@ -229,7 +229,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.AimDownSightsTimeMult = 1.25
 ATT.RecoilMult = 0.8
-ATT.RecoilUpMult = 0.5
+ATT.RecoilUpMult = 0.6
 ATT.RecoilSideMult = 3
 ATT.RecoilRandomSideMult = 3
 ATT.RecoilAutoControlMult = 2

@@ -37,6 +37,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_awp_barrel_aws"}
 
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
 

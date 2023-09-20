@@ -24,6 +24,7 @@ L["uplp_country_usa"] = "Förenta Staterna"
 L["uplp_caliber"] = "Kaliber"
 
 L["uplp_caliber_7.62x39mm"] = "7,62x39mm Sovjet"
+L["uplp_caliber_7.62x51mm"] = "7,62x51mm"
 L["uplp_caliber_5.56x45mm"] = "5,56x45mm"
 L["uplp_caliber_5.45x39mm"] = "5,45x39mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
@@ -34,6 +35,10 @@ L["uplp_manufacturer"] = "Tillverkare"
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
+L["uplp_manufacturer_cmmg"] = "CMMG Inc."
+L["uplp_manufacturer_ai"] = "Accuracy International"
+L["uplp_manufacturer_fn"] = "FN Herstal"
+L["uplp_manufacturer_hk"] = "Heckler & Koch"
 
 /////////// Year
 L["uplp_year"] = "År"
@@ -48,6 +53,7 @@ L["uplp_mechanism_3"] = "%s, %s, %s"
 
 L["uplp_mechanism_gasoperated"] = "Gaslås"
 L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
+L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 
 /////////// Authors
 L["uplp_authors"] = "Tillverkare"
@@ -136,7 +142,6 @@ L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd för
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4-Sikte"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
-L["uplp_optic_acog.description"] = "Military-grade compact optic of American origin with 4x magnification."
 L["uplp_optic_acog.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering."
 
 L["uplp_optic_elcan.printname"] = "4x Stridssikte"
@@ -151,7 +156,6 @@ L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med 
 L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
 L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor."
 
-L["uplp_optic_d1.printname"] = "D-1 Red Dot - Low Profile"
 L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte - Låg Profil"
 L["uplp_optic_d1.compactname"] = "D-1 - LP"
 L["uplp_optic_d1.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen."
@@ -390,9 +394,13 @@ L["uplp_ak_dc_12_16.compactname"] = "'16 AK-12"
 L["uplp_ak_dc_12_16.description"] = "Gammal 2016 AK-12 konfiguering."
 
 ////// Pistol Grips
-L["uplp_ak_grip_bak.printname"] = "Polymer Pistolgrepp"
-L["uplp_ak_grip_bak.compactname"] = "Polymer"
-L["uplp_ak_grip_bak.description"] = "Polymer pistolgrepp som används på AK-74:an."
+L["uplp_ak_grip_std.printname"] = "Polymer Pistolgrepp"
+L["uplp_ak_grip_std.compactname"] = "Polymer"
+L["uplp_ak_grip_std.description"] = "Polymer pistolgrepp som används på AK-74:an."
+
+L["uplp_ak_grip_bak.printname"] = "Bakelit Pistolgrepp"
+L["uplp_ak_grip_bak.compactname"] = "Bakelit"
+L["uplp_ak_grip_bak.description"] = "Bakelit pistolgrepp gjort utav formmassan AG-4S, men liknar bakelit. Gjort till AK-74:an."
 
 L["uplp_ak_grip_old.printname"] = "Gammaldags Pistolgrepp"
 L["uplp_ak_grip_old.compactname"] = "Gammal"
@@ -402,9 +410,9 @@ L["uplp_ak_grip_tac.printname"] = "Taktiskt Pistolgrepp"
 L["uplp_ak_grip_tac.compactname"] = "Taktiskt"
 L["uplp_ak_grip_tac.description"] = "Bekväm och sportigt pistolgrepp till AK-gevär."
 
-L["uplp_ak_grip_tapco.printname"] = "Tapco-Pistolgrepp"
-L["uplp_ak_grip_tapco.compactname"] = "Tapco"
-L["uplp_ak_grip_tapco.description"] = "Gummerat pistolgrepp av Tapco."
+L["uplp_ak_grip_tapco.printname"] = "PAWCO-Pistolgrepp"
+L["uplp_ak_grip_tapco.compactname"] = "PAWCO"
+L["uplp_ak_grip_tapco.description"] = "Gummerat pistolgrepp av PAWCO."
 
 L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistolgrepp"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
@@ -835,7 +843,7 @@ L["uplp_ar15_hg_tacshort_red.description"] = "Förkortat och lättvikt taktiskt 
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 ACP"
 L["uplp_ar15_mag_45_20.compactname"] = "20S .45"
-L["uplp_ar15_mag_45_20.description"] = "Konverterar AR-15 att acceptera 20-skott .45 ACP magasin."
+L["uplp_ar15_mag_45_20.description"] = "Konverterar AR-15 att acceptera 20-patroners .45 ACP magasin."
 
 L["uplp_ar15_mag_45_40.printname"] = "40-Patroner .45 ACP"
 L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
@@ -1312,3 +1320,51 @@ L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flert
 L["uplp_awp_stock_tube.printname"] = "Polis Kolv med Bufferrör"
 L["uplp_awp_stock_tube.compactname"] = "Polis B."
 L["uplp_awp_stock_tube.description"] = "Standard kolv med ett påsatt bufferrör för användning med AR-15-kolvar."
+
+//////////////////// FN57
+L["uplp_weapon_fn57"] = "MRD57"
+L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt unika kaliber i 5,7x28mm, ursprungligen designad för användning i automatvapen. Den har en högkapacitetsmagasin, låg rekyl och är eftertraktad för sin förmåga att tränga igenom skydd, vilket gör den populär bland militära och polisenheter över hela världen.."
+
+/////////// Attachments
+////// Mags
+L["uplp_fn57_mag_ext.printname"] = "27-Patron Förlängt Magasin"
+L["uplp_fn57_mag_ext.compactname"] = "27R Förl."
+L["uplp_fn57_mag_ext.description"] = "Större 27-patronersmagasin till MRD57."
+
+////// Trigger
+L["uplp_fn57_trigger_auto.printname"] = "Automatisk Aktion"
+L["uplp_fn57_trigger_auto.compactname"] = "Automatisk"
+L["uplp_fn57_trigger_auto.description"] = "Konverterar MRD57 att skjuta helautomatiskt men offrar rekylkontroll."
+
+////// Skins
+L["uplp_fn57_skin_tan_full.printname"] = "Helt Tanfärgad"
+L["uplp_fn57_skin_tan_full.compactname"] = "Helt Tan."
+L["uplp_fn57_skin_tan_full.description"] = "Ersätter slutstycket och lägre pistolramen med öken tanfärgade."
+
+L["uplp_fn57_skin_tan_half.printname"] = "Halft Tanfärgad"
+L["uplp_fn57_skin_tan_half.compactname"] = "Halft Tan."
+L["uplp_fn57_skin_tan_half.description"] = "Ersätter lägre pistolramen med en öken tanfärgad."
+
+L["uplp_fn57_skin_panda.printname"] = "Panda"
+L["uplp_fn57_skin_panda.compactname"] = "Panda"
+L["uplp_fn57_skin_panda.description"] = "Ersätter slutstycket med en öken tanfärgad."
+
+//////////////////// MP7
+L["uplp_weapon_mp7"] = "PDW-7"
+L["uplp_weapon_mp7_desc"] = "PDW-7 är en kompakt och lätt submaskinpistol känd för sin höga eldhastighet och mångsidighet, kapabel att avfyra pansar genomborrande skott. Den används ofta av militära och polisiära enheter för närstrid och specialoperationer."
+
+/////////// Attachments
+////// Stocks
+L["uplp_mp7_stock_folded.printname"] = "Kollapsad Kolv"
+L["uplp_mp7_stock_folded.compactname"] = "Kollapsad"
+L["uplp_mp7_stock_folded.description"] = "Kollapsar kolven."
+
+////// Mags
+L["uplp_mp7_mag_20.printname"] = "20-Patronersmagasin"
+L["uplp_mp7_mag_20.compactname"] = "20P"
+L["uplp_mp7_mag_20.description"] = "Förkortat magasin som håller 20 patroner."
+
+////// Irons
+L["uplp_mp7_sight_folded.printname"] = "PDW-Riktmedel"
+L["uplp_mp7_sight_folded.compactname"] = "PDW-R"
+L["uplp_mp7_sight_folded.description"] = "Fäller ner riktmedlen och gör dem smalare för snabbare målförvärv."
