@@ -28,6 +28,8 @@ L["uplp_caliber_7.62x51mm"] = "7,62x51mm"
 L["uplp_caliber_5.56x45mm"] = "5,56x45mm"
 L["uplp_caliber_5.45x39mm"] = "5,45x39mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
+L["uplp_caliber_50ae"] = ".50 AE"
+L["uplp_caliber_5.7x28mm"] = "FN 5,7x28mm"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare"
@@ -51,6 +53,7 @@ L["uplp_mechanism"] = "Mekanism"
 L["uplp_mechanism_2"] = "%s, %s"
 L["uplp_mechanism_3"] = "%s, %s, %s"
 
+L["uplp_mechanism_delayed"] = "Fördröjt slutstycke"
 L["uplp_mechanism_gasoperated"] = "Gaslås"
 L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
 L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
@@ -82,6 +85,7 @@ L["uplp_class_weapon_throwable"] = "Kastbar"
 ///////////////////////////// Attachments
 //////////////////// Category Names
 L["uplp_category_ammo"] = "Ammo"
+L["uplp_category_appearance"] = "Utseende"
 L["uplp_category_barrel"] = "Pipa"
 L["uplp_category_bipod"] = "Benstöd"
 L["uplp_category_charginghandle"] = "Manöverhandtag"

@@ -29,6 +29,7 @@ L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
 L["uplp_caliber_5.45x39mm"] = "5.45x39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
 L["uplp_caliber_50ae"] = ".50 AE"
+L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer"
@@ -53,6 +54,7 @@ L["uplp_mechanism"] = "Mechanism"
 L["uplp_mechanism_2"] = "%s, %s"
 L["uplp_mechanism_3"] = "%s, %s, %s"
 
+L["uplp_mechanism_delayed"] = "Delayed blowback"
 L["uplp_mechanism_gasoperated"] = "Gas-operated"
 L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 L["uplp_mechanism_boltaction"] = "Bolt-action"
@@ -84,6 +86,7 @@ L["uplp_class_weapon_throwable"] = "Throwable"
 ///////////////////////////// Attachments
 //////////////////// Category Names
 L["uplp_category_ammo"] = "Ammo"
+L["uplp_category_appearance"] = "Appearance"
 L["uplp_category_barrel"] = "Barrel"
 L["uplp_category_bipod"] = "Bipod"
 L["uplp_category_charginghandle"] = "Charging Handle"
