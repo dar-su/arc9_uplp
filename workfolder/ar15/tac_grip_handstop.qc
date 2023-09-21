@@ -2,6 +2,7 @@ $modelname "weapons\arc9\uplp\tac_grip_handstop.mdl"
  
 $bodygroup "owo" { // 0
 	studio "tac_grip_handstop.smd" // 0
+	studio "tac_grip_handstopb.smd" // 0
 }   
 
 $cdmaterials "models\weapons\arc9\uplp"
