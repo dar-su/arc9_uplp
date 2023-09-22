@@ -32,6 +32,7 @@ ATT.Attachments = {
         Category = "uplp_muzzle",
         Pos = Vector(-9.45, 0, 0.34),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(1, 0, 0),
     },
 }
 
@@ -80,6 +81,7 @@ ATT.Attachments = {
         Category = "uplp_muzzle",
         Pos = Vector(-11.44, 0, 0.34),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(1, 0, 0),
     },
 }
 
@@ -128,6 +130,7 @@ ATT.Attachments = {
         Category = "uplp_muzzle",
         Pos = Vector(-14.24, 0, 0.34),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(1, 0, 0),
     },
 }
 

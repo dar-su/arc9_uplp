@@ -909,7 +909,7 @@ SWEP.Attachments = {
         Installed = "uplp_ar15_rs_m4",
         Pos = Vector(0.045, -0.2, 0.326),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_optic_used"},
+		ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_optic_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -976,14 +976,8 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_reciever"},
         ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
         Bone = "body",
-        RejectAttachments = {
-		["uplp_ar15_reciever_m4"] = true,
-		["uplp_ar15_reciever_stm9"] = true,
-		["uplp_ar15_reciever_45acp"] = true,
-		},
-        Pos = Vector(0, 1, 2),
+        Pos = Vector(0, 1.5, 1.5),
         Ang = Angle(90, 90, 180),
-        Integral = false,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),

@@ -17,7 +17,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 
 ATT.Folder = ".45 ACP"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short"}
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
@@ -63,7 +63,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 
 ATT.Folder = ".45 ACP"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short"}
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 

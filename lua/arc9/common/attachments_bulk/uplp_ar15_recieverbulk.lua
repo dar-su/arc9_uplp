@@ -57,7 +57,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_rs_short"}
+ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short"}
 
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
