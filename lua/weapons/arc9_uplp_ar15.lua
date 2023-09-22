@@ -114,7 +114,7 @@ SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 30 -- Roll tilt
+SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -1001,6 +1001,6 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_ammo"},
         ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp", "uplp_ar15_mag_ext"},
         Bone = "mag",
-        Pos = Vector(.04, -2.406, -1.428),
+        Pos = Vector(0, -1.5, -1.25),
     },
 }
