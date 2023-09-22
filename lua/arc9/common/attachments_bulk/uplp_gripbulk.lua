@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/"
 
 ///////////////////////////////////////      uplp_grip_half
 
@@ -10,7 +11,7 @@ ATT.PrintName = "Heavy Handstop"
 ATT.CompactName = "H. Handstop"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "half.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_half.mdl"
 ATT.LHIK = true
@@ -43,7 +44,7 @@ ATT.PrintName = "Lightweight Handstop"
 ATT.CompactName = "L. Handstop"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hsb.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_handstop.mdl"
 ATT.LHIK = true
@@ -72,7 +73,7 @@ ATT.PrintName = "Skeleton Foregrip"
 ATT.CompactName = "Skeleton"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "skeb.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_skelet.mdl"
 ATT.LHIK = true
@@ -103,7 +104,7 @@ ATT.PrintName = "Compact Foregrip"
 ATT.CompactName = "Compact"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stub.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_stub.mdl"
 ATT.LHIK = true
@@ -134,7 +135,7 @@ ATT.PrintName = "Vertical Foregrip"
 ATT.CompactName = "Vertical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vert.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_vert.mdl"
 ATT.LHIK = true

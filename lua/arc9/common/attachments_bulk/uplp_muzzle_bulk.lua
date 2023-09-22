@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/"
 
 ///////////////////////////////////////      uplp_muzzle_3h
 
@@ -11,7 +12,7 @@ ATT.CompactName = "3P FH"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mz3h.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "1"
@@ -44,7 +45,7 @@ ATT.CompactName = "FH"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 95
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzstd.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "0"
@@ -74,7 +75,7 @@ ATT.CompactName = "Heavy MB"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzfat.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "3"
@@ -106,7 +107,7 @@ ATT.CompactName = "3P FH"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 95
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzsharp.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "4"
@@ -136,7 +137,7 @@ ATT.CompactName = "Slim MB"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzcomp.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "2"

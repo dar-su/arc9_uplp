@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/fsrs/"
 
 ///////////////////////////////////////      uplp_ar15_rs_m4
 
@@ -10,7 +11,7 @@ ATT.PrintName = "M4 Rear Sight"
 ATT.CompactName = "M4 RS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r4.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
@@ -33,7 +34,7 @@ ATT.PrintName = "MBUS Flip-up Rear Sight"
 ATT.CompactName = "MBUS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rm.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "8"
@@ -56,7 +57,7 @@ ATT.PrintName = "Scalarworks Rear Sight"
 ATT.CompactName = "Scalarworks"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rsw.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "a"
@@ -79,7 +80,7 @@ ATT.PrintName = "Type 1 Rear Sight"
 ATT.CompactName = "Type 1"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r1.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "0"
@@ -102,7 +103,7 @@ ATT.PrintName = "Type 2 Rear Sight"
 ATT.CompactName = "Type 2"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r2.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "2"
@@ -125,7 +126,7 @@ ATT.PrintName = "Type 3 Rear Sight"
 ATT.CompactName = "Type 3"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ridk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "4"

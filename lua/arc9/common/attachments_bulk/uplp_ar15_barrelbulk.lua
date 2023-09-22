@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/barr/"
 
 ///////////////////////////////////////      uplp_ar15_barrel_10
 
@@ -10,7 +11,7 @@ ATT.PrintName = "254mm Barrel"
 ATT.CompactName = "254mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "10.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -50,7 +51,7 @@ ATT.PrintName = "356mm Barrel"
 ATT.CompactName = "356mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "14.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -99,7 +100,7 @@ ATT.PrintName = "406mm Barrel"
 ATT.CompactName = "406mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -148,7 +149,7 @@ ATT.PrintName = "508mm Barrel"
 ATT.CompactName = "508mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "20.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -196,7 +197,7 @@ ATT.PrintName = "559mm Barrel"
 ATT.CompactName = "559mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "22.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

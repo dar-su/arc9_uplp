@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/"
 
 ///////////////////////////////////////      uplp_optic_553
 
@@ -14,7 +15,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "553.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_553.mdl"
 ATT.FoldSights = true
@@ -65,7 +66,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "kobra.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_kobra.mdl"
 ATT.FoldSights = true
@@ -114,7 +115,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rx.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_rx01.mdl"
 ATT.FoldSights = true
@@ -163,7 +164,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "srs.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_srs.mdl"
 ATT.FoldSights = true
@@ -212,7 +213,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "m2.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_compm2.mdl"
 ATT.FoldSights = true
@@ -260,7 +261,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "dcl.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_dcl110.mdl"
 ATT.FoldSights = true
@@ -336,7 +337,7 @@ ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "acog.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_acog.mdl"
 ATT.FoldSights = true
@@ -398,7 +399,7 @@ ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "elcan.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_elcan.mdl"
 ATT.FoldSights = true
@@ -410,6 +411,25 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 45,
         RTScopeFOV = 57/4,
+    },
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(1.2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-4, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
 }
 
@@ -455,7 +475,7 @@ ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "bigass.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_bigassscope.mdl"
 ATT.FoldSights = true
@@ -476,6 +496,25 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/16,
         Blur = false,
+    },
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(0.9, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-2.75, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
 }
 
@@ -569,7 +608,7 @@ ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "bigass.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_bigassscope.mdl"
 ATT.FoldSights = true
@@ -590,6 +629,25 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/16,
         Blur = false,
+    },
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(0.9, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-2.75, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
 }
 
@@ -714,7 +772,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
 ATT = {}
 
-ATT.PrintName = "D-1 Red Dot - Low Profile"
+ATT.PrintName = "D-1 Red Dot - Low Profile" -- Aimpoint T1 Red Dot - Low Profile
 ATT.CompactName = "D-1 - LP"
 ATT.Description = ATT.PrintName
 
@@ -722,7 +780,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "t1.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_t1.mdl"
 ATT.FoldSights = true
@@ -753,7 +811,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
 ATT = {}
 
-ATT.PrintName = "D-1 Red Dot - High Profile"
+ATT.PrintName = "D-1 Red Dot - High Profile" -- Aimpoint T1 Red Dot - High Profile
 ATT.CompactName = "D-1 - HP"
 ATT.Description = ATT.PrintName
 
@@ -761,7 +819,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "t1h.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_t1high.mdl"
 ATT.FoldSights = true
@@ -804,7 +862,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tacrds.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_tacrds.mdl"
 ATT.FoldSights = true
@@ -842,7 +900,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rmr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_rmr.mdl"
 ATT.FoldSights = true
@@ -880,7 +938,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rmrh.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_rmrhigh.mdl"
 ATT.FoldSights = true
@@ -918,7 +976,7 @@ ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "imi.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_notacog.mdl"
 ATT.FoldSights = true
@@ -931,6 +989,25 @@ ATT.Sights = {
         ViewModelFOV = 45,
         RTScopeFOV = 57/3,
     }
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(1.4, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-3.3, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
+    },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -971,7 +1048,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "m1.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_compm1.mdl"
 ATT.FoldSights = true
@@ -1030,7 +1107,7 @@ ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_sniper.mdl"
 ATT.FoldSights = true
@@ -1059,6 +1136,25 @@ ATT.Sights = {
     },
 }
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(1.55, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-4.2, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
+    },
+}
+
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 1)
 end
@@ -1083,6 +1179,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.45
 ATT.SprintToFireTimeMult = 1.35
 
+ATT.ModelOffset = Vector(-1.25, 0, 0)
+
 ARC9.LoadAttachment(ATT, "uplp_optic_sniper")
 
 
@@ -1099,7 +1197,7 @@ ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
@@ -1120,6 +1218,25 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 40,
         Blur = false,
+    },
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(1.2, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-3.65, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
 }
 
@@ -1152,7 +1269,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.25
 
-ATT.ModelOffset = Vector(-1, 0, 0)
+ATT.ModelOffset = Vector(0.5, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_ez6x")
 
@@ -1169,7 +1286,7 @@ ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ez8.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_ez8x.mdl"
 ATT.FoldSights = true
@@ -1182,6 +1299,25 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
+    },
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(1.5, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
+        Category = "uplp_backup_optic_front",
+        Pos = Vector(-3.65, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
 }
 
@@ -1225,7 +1361,7 @@ ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "pm3.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_pm312x.mdl"
 ATT.FoldSights = true
@@ -1236,7 +1372,6 @@ ATT.Attachments = {
         Category = {"uplp_optic_small"},
         Pos = Vector(0.75, 0, -2.6),
         Ang = Angle(0, 0, 0),
-		Installed = "uplp_muzzle_fhider",
     },
 }
 
@@ -1393,7 +1528,7 @@ ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gen.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_generic.mdl"
 ATT.FoldSights = true
@@ -1406,6 +1541,18 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
+    },
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = "uplp_backup_optic",
+        Pos = Vector(1.45, 0, 0),
+        Ang = Angle(0, 0, 0),
+        RejectAttachments = {
+		["uplp_backup_optic_is"] = true,
+		},
     },
 }
 
@@ -1432,7 +1579,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.25
 
-ATT.ModelOffset = Vector(-0.25, 0, 0)
+ATT.ModelOffset = Vector(0.65, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 

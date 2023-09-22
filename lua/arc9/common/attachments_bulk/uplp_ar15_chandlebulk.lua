@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/"
 
 ///////////////////////////////////////      uplp_ar15_chandle_modern
 
@@ -10,7 +11,7 @@ ATT.PrintName = "Slim Charging Handle"
 ATT.CompactName = "Slim"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "cmod.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
 ATT.ModelBodygroups = "1"
@@ -33,7 +34,7 @@ ATT.PrintName = "Standard Charging Handle"
 ATT.CompactName = "Standard"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "cstd.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
 ATT.ModelBodygroups = "0"
@@ -56,7 +57,7 @@ ATT.PrintName = "Tactical Charging Handle"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ctac.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
 ATT.ModelBodygroups = "2"
@@ -79,7 +80,7 @@ ATT.PrintName = "Tactical Charging Handle (Black)"
 ATT.CompactName = "Tactical (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ctacb.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
 ATT.ModelBodygroups = "3"

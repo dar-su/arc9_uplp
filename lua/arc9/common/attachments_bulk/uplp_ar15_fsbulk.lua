@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/fsrs/"
 
 ///////////////////////////////////////      uplp_ar15_fs_mbus
 
@@ -10,7 +11,7 @@ ATT.PrintName = "Flip-up MBUS Front Sight"
 ATT.CompactName = "MBUS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "fm.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "4"
@@ -33,7 +34,7 @@ ATT.PrintName = "Scalarworks Front Sight"
 ATT.CompactName = "Scalarworks"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "fsw.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "8"
@@ -56,7 +57,7 @@ ATT.PrintName = "Type 1 Front Sight"
 ATT.CompactName = "Type 1"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "f1.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "0"
@@ -79,7 +80,7 @@ ATT.PrintName = "Type 2 Front Sight"
 ATT.CompactName = "Type 2"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "f2.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "2"
@@ -102,7 +103,7 @@ ATT.PrintName = "Type 3 Front Sight"
 ATT.CompactName = "Type 3"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "fu.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_fs.mdl"
 ATT.ModelBodygroups = "6"

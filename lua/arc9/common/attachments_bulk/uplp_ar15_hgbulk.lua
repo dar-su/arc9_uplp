@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/hg/"
 
 ///////////////////////////////////////      uplp_ar15_hg_grenadier
 
@@ -10,7 +11,7 @@ ATT.PrintName = "Grenadier Handguard"
 ATT.CompactName = "Grenadier"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "g.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -47,7 +48,7 @@ ATT.PrintName = "A2 Handguard"
 ATT.CompactName = "A2"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -69,7 +70,7 @@ ATT.PrintName = "Shortened A2 handguard"
 ATT.CompactName = "A2 S"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16s.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
@@ -91,7 +92,7 @@ ATT.PrintName = "M-LOK Handguard"
 ATT.CompactName = "M-LOK"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mlok.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -160,7 +161,7 @@ ATT.PrintName = "Nowosuku S-15 Handguard"
 ATT.CompactName = "S-15"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s15.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -196,7 +197,7 @@ ATT.PrintName = "Nowosuku S-15 Handguard (Sporty Red)"
 ATT.CompactName = "S-15 (SR)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s15r.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -232,7 +233,7 @@ ATT.PrintName = "Nowosuku S-15 XL Handguard"
 ATT.CompactName = "S-15 XL"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s15x.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -268,7 +269,7 @@ ATT.PrintName = "Nowosuku S-15 XL Handguard (Sporty Red)"
 ATT.CompactName = "S-15 XL (SR)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s15xr.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -304,7 +305,7 @@ ATT.PrintName = "RIS Handguard"
 ATT.CompactName = "RIS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rislong.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -340,7 +341,7 @@ ATT.PrintName = "Shortened RIS Handguard"
 ATT.CompactName = "RIS S"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "risshort.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -373,7 +374,7 @@ ATT.PrintName = "Tactical Handguard"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -409,7 +410,7 @@ ATT.PrintName = "Short Tactical handguard"
 ATT.CompactName = "Tactical S"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tacs.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

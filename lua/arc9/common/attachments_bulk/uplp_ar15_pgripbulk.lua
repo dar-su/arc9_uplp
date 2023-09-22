@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/"
 
 ///////////////////////////////////////      uplp_ar15_pgrip_416
 
@@ -10,7 +11,7 @@ ATT.PrintName = "416 Pistol Grip"
 ATT.CompactName = "416"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "g416.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "4"
@@ -32,7 +33,7 @@ ATT.PrintName = "Massive Pistol Grip"
 ATT.CompactName = "Massive"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gmass.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "3"
@@ -54,7 +55,7 @@ ATT.PrintName = "Modern Pistol Grip"
 ATT.CompactName = "Modern"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gmod.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "2"
@@ -76,7 +77,7 @@ ATT.PrintName = "Sharpshooter Pistol Grip"
 ATT.CompactName = "Sharpshooter"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gpsg.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "5"
@@ -106,7 +107,7 @@ ATT.PrintName = "Skeleton Pistol Grip"
 ATT.CompactName = "Skeleton"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gskelb.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "6"
@@ -131,7 +132,7 @@ ATT.PrintName = "Skeleton Pistol Grip (Sporty Red)"
 ATT.CompactName = "Skeleton (SR)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gskelr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "7"
@@ -156,7 +157,7 @@ ATT.PrintName = "Standard Pistol Grip"
 ATT.CompactName = "Standard"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gstd.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "0"
@@ -178,7 +179,7 @@ ATT.PrintName = "Tactical Pistol Grip"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gtac.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "1"

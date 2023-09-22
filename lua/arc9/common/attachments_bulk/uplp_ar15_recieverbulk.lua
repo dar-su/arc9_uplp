@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/"
 
 ///////////////////////////////////////      uplp_ar15_reciever_45acp
 
@@ -10,7 +11,7 @@ ATT.PrintName = ".45 ACP Conversion - TO BE SCRAPPED"
 ATT.CompactName = ".45 ACP"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rec45.png", "mips smooth")
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 ATT.DamageMax = 20
@@ -55,7 +56,7 @@ ATT.PrintName = "Standard Receiver with Carry Handle"
 ATT.CompactName = "Standard CH"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short"}
 
@@ -84,7 +85,7 @@ ATT.PrintName = "Standard Receiver"
 ATT.CompactName = "Standard"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "recm4.png", "mips smooth")
 
 -- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
 -- ATT.ModelBodygroups = "1"
@@ -116,7 +117,7 @@ ATT.PrintName = "Tactical Reciever"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rectac.png", "mips smooth")
 
 -- ATT.Model = "models/weapons/arc9/uplp/ar15_chandles.mdl"
 -- ATT.ModelBodygroups = "1"
@@ -148,7 +149,7 @@ ATT.PrintName = "STM-9 9x19mm Conversion - TO BE SCRAPPED"
 ATT.CompactName = "STM-9"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "recstm.png", "mips smooth")
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 ATT.DamageMax = 18

@@ -1,12 +1,14 @@
 ----- 7.62 MAGS -----
 
+local iconfolder = "entities/uplp_attachements/ak/mag/"
+
 local ATT = {}
 
 ATT.PrintName = "30-Round 7.62x39mm (Bakelite)"
 ATT.CompactName = "30R 7.62 (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "762b.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -23,7 +25,7 @@ ATT.PrintName = "30-Round 7.62x39mm (AK-12-Style)"
 ATT.CompactName = "30R 7.62 (12)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "76212.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -40,7 +42,7 @@ ATT.PrintName = "30-Round 7.62x39mm (Steel)"
 ATT.CompactName = "30R 7.62 (S)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "762old.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -57,7 +59,7 @@ ATT.PrintName = "30-Round 7.62x39mm (Smooth Steel)"
 ATT.CompactName = "30R 7.62 (SS)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "762oldest.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -74,7 +76,7 @@ ATT.PrintName = "40-Round 7.62x39mm (Bakelite)"
 ATT.CompactName = "40R 7.62 (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "76240.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -105,7 +107,7 @@ ATT.PrintName = "40-Round 7.62x39mm (Steel)"
 ATT.CompactName = "40R 7.62 (S)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "76240old.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -136,7 +138,7 @@ ATT.PrintName = "75-Round 7.62x39mm Drum"
 ATT.CompactName = "75R 7.62 D"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "76275.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -177,7 +179,7 @@ ATT.PrintName = "30-Round 5.45x39mm (Polymer)"
 ATT.CompactName = "30R 5.45 (P)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "545p.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -221,7 +223,7 @@ ATT.PrintName = "30-Round 5.45x39mm (Bakelite)"
 ATT.CompactName = "30R 5.45 (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "545b.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -265,7 +267,7 @@ ATT.PrintName = "30-Round 5.45x39mm (Magpul)"
 ATT.CompactName = "30R 5.45 (MP)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "545p.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -309,7 +311,7 @@ ATT.PrintName = "30-Round 5.45x39mm (AK-12)"
 ATT.CompactName = "30R 5.45 (12)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "54512.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -353,7 +355,7 @@ ATT.PrintName = "45-Round 5.45x39mm (Bakelite)"
 ATT.CompactName = "45R 5.45 (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "54545.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -404,7 +406,7 @@ ATT.PrintName = "60-Round 5.45 Quadstacked"
 ATT.CompactName = "60R 5.45 (Q)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "54560.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -455,7 +457,7 @@ ATT.PrintName = "75-Round 5.45x39mm Drum"
 ATT.CompactName = "75R 5.45 (D)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "54595.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -511,7 +513,7 @@ ATT.PrintName = "30-Round 5.56x45mm (Polymer)"
 ATT.CompactName = "30R 5.56 (P)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "556.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -555,7 +557,7 @@ ATT.PrintName = "30-Round 5.56x45mm (Magpul)"
 ATT.CompactName = "30R 5.56 (MP)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "556p.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -599,7 +601,7 @@ ATT.PrintName = "30-Round 5.56x45mm (AK-12)"
 ATT.CompactName = "30R 5.56 (12)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "55612.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -647,7 +649,7 @@ ATT.PrintName = "20-Round .308"
 ATT.CompactName = "20R .308"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "308.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -693,7 +695,7 @@ ATT.PrintName = "20-Round 9x39mm"
 ATT.CompactName = "20R 9x19"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "939.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

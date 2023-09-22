@@ -88,6 +88,7 @@ L["uplp_class_weapon_throwable"] = "Throwable"
 //////////////////// Category Names
 L["uplp_category_ammo"] = "Ammo"
 L["uplp_category_appearance"] = "Appearance"
+L["uplp_category_backup"] = "Backup Sight"
 L["uplp_category_barrel"] = "Barrel"
 L["uplp_category_bipod"] = "Bipod"
 L["uplp_category_charginghandle"] = "Charging Handle"
@@ -213,6 +214,15 @@ L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnificat
 L["uplp_optic_generic.printname"] = "10x Precision Scope"
 L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
+
+/////////// Backup Optics
+L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
+L["uplp_backup_optic_rmr.compactname"] = "CRD"
+L["uplp_backup_optic_rmr.description"] = "Compact red dot sight mounted at an angle to provide easy target acquisition when using magnified optics."
+
+L["uplp_backup_optic_is.printname"] = "Canted Iron Sights"
+L["uplp_backup_optic_is.compactname"] = "CIS"
+L["uplp_backup_optic_is.description"] = "A front and rear iron sight mounted at an angle to provide easy target acquisition when using magnified optics."
 
 /////////// Grips
 L["uplp_grip_half.printname"] = "Heavy Handstop"

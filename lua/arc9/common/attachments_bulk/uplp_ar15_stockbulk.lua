@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/"
 
 ///////////////////////////////////////      uplp_ar15_stock_416
 
@@ -10,7 +11,7 @@ ATT.PrintName = "H&K HK416 Stock"
 ATT.CompactName = "416"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s416.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "7"
@@ -41,7 +42,7 @@ ATT.PrintName = "AK-12 Stock"
 ATT.CompactName = "AK-12"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s12.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "8"
@@ -72,7 +73,7 @@ ATT.PrintName = "Bravo Stock"
 ATT.CompactName = "Bravo"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "sfat.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "1"
@@ -103,7 +104,7 @@ ATT.PrintName = "Light Battle Stock"
 ATT.CompactName = "Light"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "MISSING.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "9"
@@ -134,7 +135,7 @@ ATT.PrintName = "Fixed Stock"
 ATT.CompactName = "Fixed"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s16.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "2"
@@ -165,7 +166,7 @@ ATT.PrintName = "M4 Stock"
 ATT.CompactName = "M4"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "s4.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "0"
@@ -196,7 +197,7 @@ ATT.PrintName = "Competition Stock"
 ATT.CompactName = "Competition"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "smpd.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "3"
@@ -207,13 +208,13 @@ ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Positives
-ATT.RecoilAutoControlMult = 1.75
+ATT.RecoilAutoControlMult = 3
 ATT.VisualRecoilMultHipFire = 0.15
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.75
 
 /// Negatives
-ATT.RecoilMult = 1.4
+ATT.RecoilMult = 1.3
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_modern")
 
@@ -227,7 +228,7 @@ ATT.PrintName = "PDW Stock"
 ATT.CompactName = "PDW"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "MISSING.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "a"
@@ -258,7 +259,7 @@ ATT.PrintName = "Sharpshooter Stock"
 ATT.CompactName = "Sharpshooter"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ssnip.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "5"
@@ -289,7 +290,7 @@ ATT.PrintName = "Tactical Stock"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stac.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "4"
@@ -320,7 +321,7 @@ ATT.PrintName = "Marksman Stock"
 ATT.CompactName = "Marksman"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "svheavy.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "6"

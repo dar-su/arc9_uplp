@@ -87,6 +87,7 @@ L["uplp_class_weapon_throwable"] = "Kastbar"
 L["uplp_category_ammo"] = "Ammo"
 L["uplp_category_appearance"] = "Utseende"
 L["uplp_category_barrel"] = "Pipa"
+L["uplp_category_backup"] = "Reservsikte"
 L["uplp_category_bipod"] = "Benstöd"
 L["uplp_category_charginghandle"] = "Manöverhandtag"
 L["uplp_category_dustcover"] = "Dammskydd"
@@ -211,6 +212,15 @@ L["uplp_optic_pm3.description"] = "Lång räckvidd krypskyttesikte med 12x magni
 L["uplp_optic_generic.printname"] = "10x Precisionssikte"
 L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Lång räckvidd krypskyttesikte med 10x magnifiering."
+
+/////////// Backup Optics
+L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
+L["uplp_backup_optic_rmr.compactname"] = "VRPS"
+L["uplp_backup_optic_rmr.description"] = "Ett kompekt rödpunktsikte monterat på en vinkel för att erbjuda snabb målförvärv när magnifierade riktmedel används."
+
+L["uplp_backup_optic_is.printname"] = "Vinklade Korn"
+L["uplp_backup_optic_is.compactname"] = "VK"
+L["uplp_backup_optic_is.description"] = "Ett stolpkorn och bakre sikte monterat på en vinkel för att erbjuda snabb målförvärv när magnifierade riktmedel används."
 
 /////////// Grips
 L["uplp_grip_half.printname"] = "Tungt Handstopp"

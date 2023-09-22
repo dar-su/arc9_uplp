@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/gas/"
 
 ///////////////////////////////////////      uplp_ar15_gasblock_m16
 
@@ -10,7 +11,7 @@ ATT.PrintName = "Gasblock with built-in Front Sight"
 ATT.CompactName = "GB FS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 
@@ -35,7 +36,7 @@ ATT.PrintName = "Gasblock with built-in Front Sight and Rail Assembly"
 ATT.CompactName = "GB FS (R)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16r.png", "mips smooth")
 
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 
@@ -60,7 +61,7 @@ ATT.PrintName = "Compact Gas Block"
 ATT.CompactName = "GB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "m.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "0"
@@ -83,7 +84,7 @@ ATT.PrintName = "Compact Gas Block (Sporty Red)"
 ATT.CompactName = "GB (SR)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "1"
@@ -106,7 +107,7 @@ ATT.PrintName = "Gas Block with Rail"
 ATT.CompactName = "GB R"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r.png", "mips smooth")
 
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 

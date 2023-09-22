@@ -1,12 +1,14 @@
 ----- STOCKS -----
 
+local iconfolder = "entities/uplp_attachements/ak/stock/"
+
 local ATT = {}
 
 ATT.PrintName = "Polymer Folding Stock"
 ATT.CompactName = "Polymer F"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "fold.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -33,7 +35,7 @@ ATT.PrintName = "Skeleton Stock"
 ATT.CompactName = "Skeleton"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "skel.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -65,7 +67,7 @@ ATT.PrintName = "Vintage Stock"
 ATT.CompactName = "Vintage"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -92,7 +94,7 @@ ATT.PrintName = "Wooden RPK Stock"
 ATT.CompactName = "RPK"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -120,7 +122,7 @@ ATT.PrintName = "Polymer RPK Stock"
 ATT.CompactName = "RPK P."
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r74.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -154,7 +156,7 @@ ATT.PrintName = "Wooden Stock"
 ATT.CompactName = "Wooden"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "w.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -181,7 +183,7 @@ ATT.PrintName = "Beryl Stock"
 ATT.CompactName = "Beryl"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "b.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -210,7 +212,7 @@ ATT.PrintName = "Polymer Stock"
 ATT.CompactName = "Polymer"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -250,7 +252,7 @@ ATT.Attachments = {
     },
 }
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12t.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -279,7 +281,7 @@ ATT.Attachments = {
     },
 }
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "t.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -299,7 +301,7 @@ ATT.PrintName = "Molot Stock"
 ATT.CompactName = "Molot"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "REPLACE.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -328,7 +330,7 @@ ATT.PrintName = "Underfolding Stock"
 ATT.CompactName = "Underfolder"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ms.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -385,7 +387,7 @@ ATT.PrintName = "Zenith Stock"
 ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "p1.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -438,7 +440,7 @@ ATT.PrintName = "Zenith-2 Stock"
 ATT.CompactName = "Zenith-2"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "p3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -491,7 +493,7 @@ ATT.PrintName = "Evolution Stock"
 ATT.CompactName = "Evolution"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_12"
 -- ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -539,7 +541,7 @@ ATT.PrintName = "PPK-20 Stock"
 ATT.CompactName = "PPK-20"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ppk1.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_smg"
 -- ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

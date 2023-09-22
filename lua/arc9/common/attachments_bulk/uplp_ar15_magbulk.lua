@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/ar15/mag/"
 
 ///////////////////////////////////////      uplp_ar15_mag_45_20
 
@@ -10,7 +11,7 @@ ATT.PrintName = "20-Round .45 ACP"
 ATT.CompactName = "20R .45"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "4520.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
@@ -56,7 +57,7 @@ ATT.PrintName = "40-Round .45 ACP"
 ATT.CompactName = "40R .45"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "4540.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
@@ -102,7 +103,7 @@ ATT.PrintName = "STM-9 Magwell"
 ATT.CompactName = "Magwell"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/stmmagwel.png", "mips smooth")
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_stm9_magwell"
@@ -123,7 +124,7 @@ ATT.PrintName = "17-Round 9x19mm Glock"
 ATT.CompactName = "17R 9x19mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "g17.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
@@ -191,7 +192,7 @@ ATT.PrintName = "33-Round 9x19mm Glock"
 ATT.CompactName = "33R 9x19mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "g33.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
@@ -256,7 +257,7 @@ ATT.PrintName = "50-Round 9x19mm Glock Drum"
 ATT.CompactName = "50R 9x19mm"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "g50.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
@@ -325,7 +326,7 @@ ATT.PrintName = "30-Round 5.56x45mm (H&K)"
 ATT.CompactName = "30R 5.56 (H&K)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
@@ -350,7 +351,7 @@ ATT.PrintName = "10-Round 5.56x45mm (PMAG)"
 ATT.CompactName = "10R 5.56 (PMAG)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "p10.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
@@ -388,7 +389,7 @@ ATT.PrintName = "20-Round 5.56x45mm (PMAG)"
 ATT.CompactName = "20R 5.56 (PMAG)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "p20.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
@@ -426,7 +427,7 @@ ATT.PrintName = "30-Round 5.56x45mm (PMAG)"
 ATT.CompactName = "30R 5.56 (PMAG)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "p30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
@@ -449,7 +450,7 @@ ATT.PrintName = "30-Round 5.56x45mm (Aluminium)"
 ATT.CompactName = "30R 5.56 (A)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
@@ -472,7 +473,7 @@ ATT.PrintName = "40-Round 5.56x45mm (Aluminium)"
 ATT.CompactName = "40R 5.56 (A)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "40.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag40.mdl"
@@ -514,7 +515,7 @@ ATT.PrintName = "60-Round 5.56x45mm Drum"
 ATT.CompactName = "60R 5.56 D"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "p60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
@@ -553,7 +554,7 @@ ATT.PrintName = "60-Round 5.56x45mm Quadstacked"
 ATT.CompactName = "60R 5.56 (Q)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
@@ -593,7 +594,7 @@ ATT.CompactName = "100R 5.56 Drum"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "100.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"

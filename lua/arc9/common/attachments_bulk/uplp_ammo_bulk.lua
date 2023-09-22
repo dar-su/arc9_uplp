@@ -1,5 +1,7 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/"
+
 ///Rifle Ammo
 
 ATT = {}
@@ -8,7 +10,8 @@ ATT.PrintName = ".458 SOCOM Ammo"
 ATT.CompactName = ".458 SOCOM"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ar15/458.png", "mips smooth")
+
 ATT.Category = "uplp_ar15_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -42,7 +45,8 @@ ATT.PrintName = ".50 Beowulf Ammo"
 ATT.CompactName = ".50 Beowulf"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ar15/50.png", "mips smooth")
+
 ATT.Category = "uplp_ar15_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
