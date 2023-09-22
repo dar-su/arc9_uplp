@@ -30,6 +30,7 @@ L["uplp_caliber_5.45x39mm"] = "5.45x39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
 L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer"
@@ -214,17 +215,25 @@ L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
 
 /////////// Grips
-L["uplp_grip_vert.printname"] = "Vertical Foregrip"
-L["uplp_grip_vert.compactname"] = "Vertical"
-L["uplp_grip_vert.description"] = "Rail-mounted foregrip to reduce recoil."
+L["uplp_grip_half.printname"] = "Heavy Handstop"
+L["uplp_grip_half.compactname"] = "H. Handstop"
+L["uplp_grip_half.description"] = "Heavy angled handstop that improves ergonomics and reduces recoil."
+
+L["uplp_grip_handstop.printname"] = "Lightweight Handstop"
+L["uplp_grip_handstop.compactname"] = "L. Handstop"
+L["uplp_grip_handstop.description"] = "Lightweight angled handstop that improves ergonomics."
 
 L["uplp_grip_skelet.printname"] = "Skeleton Foregrip"
 L["uplp_grip_skelet.compactname"] = "Skeleton"
-L["uplp_grip_skelet.description"] = "Rail-mounted, lightweight foregrip to improve ergonomics and reduce recoil."
+L["uplp_grip_skelet.description"] = "Lightweight foregrip that improves ergonomics and reduces recoil."
 
-L["uplp_grip_handstop.printname"] = "Angled Handstop"
-L["uplp_grip_handstop.compactname"] = "Handstop"
-L["uplp_grip_handstop.description"] = "Angled handstop to improve ergonomics."
+L["uplp_grip_stub.printname"] = "Compact Foregrip"
+L["uplp_grip_stub.compactname"] = "Compact"
+L["uplp_grip_stub.description"] = "Compact foregrip that improves ergonomics and reduces recoil."
+
+L["uplp_grip_vert.printname"] = "Vertical Foregrip"
+L["uplp_grip_vert.compactname"] = "Vertical"
+L["uplp_grip_vert.description"] = "Rail-mounted foregrip that reduces recoil."
 
 /////////// Muzzle
 L["uplp_muzzle_3h.printname"] = "3-Hole Muzzle Brake"

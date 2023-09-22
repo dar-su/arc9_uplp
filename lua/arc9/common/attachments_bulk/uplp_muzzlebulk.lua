@@ -21,6 +21,8 @@ ATT.ModelBodygroups = "1"
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
 /// Positives
 ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
@@ -50,6 +52,8 @@ ATT.ModelBodygroups = "0"
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
 /// Positives
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -77,6 +81,8 @@ ATT.ModelBodygroups = "3"
 
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
 ATT.RecoilMult = 0.8
@@ -108,6 +114,8 @@ ATT.ModelBodygroups = "4"
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
 /// Positives
 ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
@@ -137,6 +145,8 @@ ATT.ModelBodygroups = "2"
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
 ATT.RecoilMult = 0.95

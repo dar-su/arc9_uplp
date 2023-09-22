@@ -308,40 +308,34 @@ SWEP.Animations = {
             { s = reloadsound .. "firstraise_lift_v2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, c = ca, v = 0.8 },
         },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.5, lhik = 0 },
-            { t = 0.8, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
+        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "firstraise_lift_v2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
 		MinProgress = 0.5,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_end_v1.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },    
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "firstraise_lift_v2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
 		MinProgress = 0.5,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = reloadsound .. "reload_end_v1.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },

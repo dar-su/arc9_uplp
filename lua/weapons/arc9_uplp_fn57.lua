@@ -5,7 +5,7 @@ SWEP.Spawnable = true
 
 //// FUNDAMENTALS
 
-SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
+SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
 
 //// Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_fn57")
@@ -15,7 +15,7 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_pistol") -- In the Customization 
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol") -- In the Spawnmenu
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_magnum" ),
+    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_fn" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.7x28mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase( "uplp_mechanism_delayed"),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_belgium" ),
@@ -38,7 +38,7 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
 
@@ -307,8 +307,9 @@ SWEP.Animations = {
         Mult = 1.1,
         EventTable = {
             { s = rottle, t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "bolt_back.ogg", t = 12 / 60, c = ca },
-            { s = reloadfn57 .. "bolt_forward.ogg", t = 20 / 60, c = ca },
+            { s = reloadfn57 .. "up.ogg", t = 0 / 60, c = ca },
+            { s = reloadfn57 .. "draw.ogg", t = 5 / 60, c = ca },
+            { s = reloadfn57 .. "reload3.ogg", t = 25 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -322,7 +323,20 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            {s = reloadfn57 .. "raise01.ogg", t = 0.05},
+            {s = reloadfn57 .. "draw.ogg", t = 0.05},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        EventTable = {
+            {s = reloadfn57 .. "draw.ogg", t = 0.05},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -336,7 +350,21 @@ SWEP.Animations = {
         Source = "holster",
 		MinProgress = 0.5,
         EventTable = {
-            {s = reloadfn57 .. "down.ogg", t = 0.05},
+            {s = reloadfn57 .. "holster.ogg", t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },    
+    ["holster_empty"] = {
+        Source = "holster_empty",
+		MinProgress = 0.5,
+        EventTable = {
+            {s = reloadfn57 .. "holster.ogg", t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -537,14 +565,6 @@ SWEP.Attachments = {
         Category = {"uplp_fn57_action"},
         Bone = "body",
         Pos = Vector(0, -1.5, 2.65),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
-        -- Category = {"uplp_fn57_grip"},
-        Category = {""},
-        Bone = "body",
-        Pos = Vector(0, 0, 0.8),
         Ang = Angle(90, 90, 180),
     },
     {

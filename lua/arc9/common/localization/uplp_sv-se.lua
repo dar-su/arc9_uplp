@@ -213,17 +213,25 @@ L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Lång räckvidd krypskyttesikte med 10x magnifiering."
 
 /////////// Grips
-L["uplp_grip_vert.printname"] = "Vertikalt Framgrepp"
-L["uplp_grip_vert.compactname"] = "Vertikalt"
-L["uplp_grip_vert.description"] = "Skenamonterat framgrepp för nedsänkt rekyl."
+L["uplp_grip_half.printname"] = "Tungt Handstopp"
+L["uplp_grip_half.compactname"] = "T. Handstopp"
+L["uplp_grip_half.description"] = "Tung vinklat handstopp som förbättrar ergonomin och sänker rekylen."
+
+L["uplp_grip_handstop.printname"] = "Lättvikt Handstopp"
+L["uplp_grip_handstop.compactname"] = "L. Handstopp"
+L["uplp_grip_handstop.description"] = "Lättvikt vinklat handstopp som förbättrar ergonomin."
 
 L["uplp_grip_skelet.printname"] = "Skelett Framgrepp"
 L["uplp_grip_skelet.compactname"] = "Skelett"
-L["uplp_grip_skelet.description"] = "Skenamonterat, lättviktigt framgrepp för förbättrad ergonomi och nedsänkt rekyl."
+L["uplp_grip_skelet.description"] = "Lättvikt framgrepp som förbättrar ergonomin och sänker rekylen."
 
-L["uplp_grip_handstop.printname"] = "Vinklat Handstopp"
-L["uplp_grip_handstop.compactname"] = "Handstopp"
-L["uplp_grip_handstop.description"] = "Vinklat handstopp för förbättrad ergonomi."
+L["uplp_grip_stub.printname"] = "Kompakt Framgrepp"
+L["uplp_grip_stub.compactname"] = "Kompakt"
+L["uplp_grip_stub.description"] = "Kompakt framgrepp som förbättrar ergonomin och sänker rekylen."
+
+L["uplp_grip_vert.printname"] = "Vertikalt Framgrepp"
+L["uplp_grip_vert.compactname"] = "Vertikalt"
+L["uplp_grip_vert.description"] = "Skenamonterat framgrepp som sänker rekylen."
 
 /////////// Muzzle
 L["uplp_muzzle_3h.printname"] = "Mynningsbroms med 3 Hål"
