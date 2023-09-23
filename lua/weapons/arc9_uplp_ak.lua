@@ -85,8 +85,8 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 75 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 200 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 15 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 100 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -999,7 +999,11 @@ SWEP.AttachmentElements = {
     ["uplp_ak_dc_rail"] =          { Bodygroups = { { 3, 3 } } },
     ["uplp_ak_dc_rail2"] =         { Bodygroups = { { 3, 4 } } },
     ["uplp_ak_dc_azen"] =           { Bodygroups = { { 3, 5 } } },
-    ["uplp_ak_dc_beryl"] =         { Bodygroups = { { 3, 6 } }, AttPosMods = {[1] = { Pos = Vector(0, -0.35, 0.5), }}},
+    ["uplp_ak_dc_beryl"] =         { Bodygroups = { { 3, 6 } }, AttPosMods = {
+	[1] = { Pos = Vector(0, -0.35, 1), }, 
+	[7] = { Pos = Vector(0, -0.35, 0.25), },
+	[8] = { Pos = Vector(0, -0.35, 6.5), }
+	}},
     ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
     ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
 
@@ -1113,7 +1117,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
-        Pos = Vector(0, -0.1, 0.5),
+        Pos = Vector(0, -0.1, 1.5),
         Ang = Angle(90, 90, 180),
         RequireElements = {"use_optics"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
@@ -1162,9 +1166,26 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ak_stock_fold",
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_camo"),
-        -- Category = {"universal_camo"},
-        -- CosmeticOnly = true,
-    -- },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic"},
+        Bone = "body",
+        Pos = Vector(0, -0.1, 0.5),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_no_backup"},
+        RequireElements = {"use_optics"},
+        CorrectiveAng = Angle(0.4, -0.35, 0),
+		Icon_Offset = Vector(-1, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic_front"},
+        Bone = "body",
+        Pos = Vector(0, -0.1, 5.5),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
+    },
 }

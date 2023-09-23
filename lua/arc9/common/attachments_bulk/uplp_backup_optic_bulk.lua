@@ -13,6 +13,8 @@ ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_backup_optic"}
 
+ATT.ExcludeElements = {"uplp_no_backup"}
+
 ATT.Icon = Material(iconfolder .. "crmr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/rmr_cunted.mdl"
@@ -35,6 +37,8 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_backup_optic"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ModelOffset = Vector(-0.75, 0, -0.12)
+
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_rmr")
 
 
@@ -49,6 +53,8 @@ ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_backup_optic", "uplp_backup_optic_is"}
 
+ATT.ExcludeElements = {"uplp_no_backup", "uplp_no_backup_is"}
+
 ATT.Icon = Material(iconfolder .. "crs.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/rs_cunted.mdl"
@@ -62,7 +68,7 @@ ATT.Sights = {
     }
 }
 
-ATT.ModelOffset = Vector(0.5, 0, 0)
+ATT.ModelOffset = Vector(-0.75, 0, -0.12)
 
 ATT.Category = "uplp_backup_optic"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -81,11 +87,15 @@ ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_backup_optic_front"}
 
+ATT.ExcludeElements = {"uplp_no_backup"}
+
 ATT.Icon = Material(iconfolder .. "cfs.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/fs_cunted.mdl"
 
 ATT.Category = "uplp_backup_optic_front"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ModelOffset = Vector(0, 0, -0.12)
 
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_is_front")

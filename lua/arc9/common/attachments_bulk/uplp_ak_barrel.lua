@@ -30,7 +30,7 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_flat",
         -- Integral = "uplp_ak_dc_flat",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(10.5, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -73,7 +73,7 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_std",
         -- Integral = "uplp_ak_dc_std",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(10.5, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -110,7 +110,7 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_std",
         -- Integral = "uplp_ak_dc_std",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(10.5, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -154,7 +154,7 @@ ATT.Attachments = {
         Category = "uplp_ak_dc",
         -- Installed = "uplp_ak_dc_std",
         -- Integral = "uplp_ak_dc_std",
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(10.5, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -239,7 +239,7 @@ ATT.Attachments = {
 			["uplp_ak_dc_beryl"] = true,
 			["uplp_ak_dc_12"] = true,
 		},
-        Pos = Vector(15, 0, -1),
+        Pos = Vector(10.5, 0, -1),
         Ang = Angle(0, 0, 0),
     },
 }

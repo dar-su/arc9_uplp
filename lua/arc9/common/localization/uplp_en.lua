@@ -1255,6 +1255,11 @@ L["uplp_weapon_awp"] = "AW Sniper"
 L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
 
 /////////// Attachments
+////// Irons
+L["uplp_awp_rs.printname"] = "AW Sniper Iron Sights"
+L["uplp_awp_rs.compactname"] = "AW IS"
+L["uplp_awp_rs.description"] = "Factory set of iron sights for the AW Sniper."
+
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "610mm Police Barrel"
 L["uplp_awp_brl_awp.compactname"] = "610mm"
@@ -1285,6 +1290,7 @@ L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Round .338"
 L["uplp_awp_mag_awm.compactname"] = "5R .338"
+-- L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 ammunition.\n\nRequires a < Stock > attachment."
 L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 ammunition."
 
 L["uplp_awp_mag_awp.printname"] = "5-Round .308"
@@ -1338,10 +1344,10 @@ L["uplp_awp_stock_awm.description"] = "Standard stock with foldable capabilities
 
 L["uplp_awp_stock_awp.printname"] = "Police Stock"
 L["uplp_awp_stock_awp.compactname"] = "Police"
-L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide."
+L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide.\n\nNot compatible with < 5-Round .338 >"
 
-L["uplp_awp_stock_tube.printname"] = "Police Stock with Buffer Tube"
-L["uplp_awp_stock_tube.compactname"] = "Police BT"
+L["uplp_awp_stock_tube.printname"] = "Foldable Stock with Buffer Tube"
+L["uplp_awp_stock_tube.compactname"] = "Foldable BT"
 L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer tube for using AR-15 stocks."
 
 //////////////////// FN57

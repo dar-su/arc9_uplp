@@ -33,6 +33,8 @@ SWEP.StandardPresets = {
 "[eXtreme]XQAAAQDLAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIHQh6BFtT/SikTP/4dCNGQ8U9eLqcJolWImIlildE/OacNljh4p687F9+YoEMMWBZ+wFmJkQxYtVN2CS51OJ1Vo2MWyva6fsA",
 }
 
+SWEP.DefaultBodygroups = "101010000000000000" -- Might as well prepare for the future
+
 //// Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_1"
 SWEP.MuzzleEffectQCA = 1
@@ -620,14 +622,16 @@ SWEP.AttachmentElements = {
     ["uplp_awp_barrel_awp"] = { Bodygroups = { { 2, 0 } } },
     ["uplp_awp_barrel_long"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_awp_barrel_short"] = { Bodygroups = { { 2, 2 } } },
-    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } } },
+    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
+	[7] = { Pos = Vector(0, -0.3, 26.5), },
+	}},
 
 	-- MAGAZINES
-    ["uplp_awp_mag_awm"] = { Bodygroups={ { 4, 0 } } },
+    ["uplp_awp_mag_awm"] = { Bodygroups={ { 4, 0 }, { 0, 0 } } },
     ["uplp_awp_mag_awp"] = { Bodygroups={ { 4, 1 } } },
     ["uplp_awp_mag_awp_big"] = { Bodygroups={ { 4, 2 } } },
     ["uplp_awp_mag_awp_tac"] = { Bodygroups={ { 4, 3 } } },
-
+	
 	-- IRON SIGHTS
     ["uplp_awp_rs"] = { Bodygroups = { { 7, 1 } }},
 	
@@ -641,14 +645,11 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
-        Category = {"uplp_awp_rs"},
+        Category = {"uplp_awp_rs", "uplp_backup_optic"},
         Bone = "body",
         Installed = "uplp_awp_rs",
-        Integral = "uplp_awp_rs",
-        Pos = Vector(0, -0.2, 0.326),
+        Pos = Vector(0, -0.3, 0.55),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_optic_used"},
-		Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -666,8 +667,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.6, -2.98),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_awp_stock_awp",
-        Integral = "uplp_awp_stock_awp",
+        Integral = false,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -682,19 +682,10 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_bipod"),
         Category = {"uplp_awp_bipod"},
         Bone = "body",
-        Pos = Vector(0, -0.5, 14),
+        Pos = Vector(0, 2, 15.5),
         Ang = Angle(90, 90, 180),
 		Integral = false,
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_receiver"),
-        -- Category = {"uplp_awp_reciever"},
-        -- ExcludeElements = {"uplp_awp_reciever_stm9"},
-        -- Bone = "body",
-        -- Pos = Vector(0, 1, 2),
-        -- Ang = Angle(90, 90, 180),
-        -- Integral = false,
-    -- },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_awp_mag"},
@@ -702,8 +693,19 @@ SWEP.Attachments = {
         Pos = Vector(0, -1, -3.4),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
-        Installed = "uplp_awp_mag_awp",
-        Integral = "uplp_awp_mag_awp",
+        -- Installed = "uplp_awp_mag_awp",
+        Integral = false,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic_front"},
+        Bone = "body",
+        Pos = Vector(0, -0.3, 6.25),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_ammo"),

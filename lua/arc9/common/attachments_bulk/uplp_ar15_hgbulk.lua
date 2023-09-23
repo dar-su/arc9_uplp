@@ -13,7 +13,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "g.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_handguard_long"}
+ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
 
 ATT.Category = "uplp_ar15_hg"
@@ -50,7 +50,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_handguard_long"}
+ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
 
 ATT.Category = "uplp_ar15_hg"
@@ -72,7 +72,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16s.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_handguard_mid"}
+ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_no_backup_is"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
 
 ATT.Category = "uplp_ar15_hg"

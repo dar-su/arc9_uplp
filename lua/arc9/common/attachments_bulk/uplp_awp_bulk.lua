@@ -101,6 +101,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_awm.mdl"
 
 ATT.ActivateElements = {"uplp_awp_mag_awm"}
+-- ATT.RequireElements = {"uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awm")
 
@@ -108,22 +109,22 @@ ARC9.LoadAttachment(ATT, "uplp_awp_mag_awm")
 ///////////////////////////////////////      uplp_awp_mag_awp
 
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "5-Round .308"
-ATT.CompactName = "5R .308"
-ATT.Description = ATT.PrintName
+-- ATT.PrintName = "5-Round .308"
+-- ATT.CompactName = "5R .308"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+-- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
-ATT.Category = "uplp_awp_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Category = "uplp_awp_mag"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
+-- ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
 
-ATT.ActivateElements = {"uplp_awp_mag_awp"}
+-- ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
-ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
+-- ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
 
 ///////////////////////////////////////      uplp_awp_mag_awp_big
@@ -192,7 +193,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_at"}
+ATT.ActivateElements = {"uplp_awp_stock_at", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_at")
 
@@ -216,7 +217,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx")
 
@@ -240,7 +241,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_blue")
 
@@ -264,7 +265,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_gray")
 
@@ -288,7 +289,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_green")
 
@@ -312,7 +313,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_orange")
 
@@ -336,7 +337,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_purple")
 
@@ -360,7 +361,7 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock"}
+ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_white")
 
@@ -379,7 +380,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_awm"}
+ATT.ActivateElements = {"uplp_awp_stock_awm", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm")
 
@@ -387,20 +388,21 @@ ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm")
 ///////////////////////////////////////      uplp_awp_stock_awp
 
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Police Stock"
-ATT.CompactName = "Police"
-ATT.Description = ATT.PrintName
+-- ATT.PrintName = "Police Stock"
+-- ATT.CompactName = "Police"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+-- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
-ATT.Category = "uplp_awp_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Category = "uplp_awp_stock"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_awp"}
+-- ATT.ActivateElements = {"uplp_awp_stock_awp"}
+-- ATT.ExcludeElements = {"uplp_awp_mag_awm"}
 
-ARC9.LoadAttachment(ATT, "uplp_awp_stock_awp")
+-- ARC9.LoadAttachment(ATT, "uplp_awp_stock_awp")
 
 
 ///////////////////////////////////////      uplp_awp_stock_tube
@@ -408,8 +410,8 @@ ARC9.LoadAttachment(ATT, "uplp_awp_stock_awp")
 
 ATT = {}
 
-ATT.PrintName = "Police Stock with Buffer Tube"
-ATT.CompactName = "Police BT"
+ATT.PrintName = "Foldable Stock with Buffer Tube"
+ATT.CompactName = "Foldable BT"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
@@ -417,7 +419,7 @@ ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_tube"}
+ATT.ActivateElements = {"uplp_awp_stock_tube", "uplp_awp_stock"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_tube")
 

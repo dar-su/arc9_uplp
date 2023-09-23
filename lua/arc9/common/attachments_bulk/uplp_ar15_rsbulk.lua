@@ -15,6 +15,8 @@ ATT.Icon = Material(iconfolder .. "r4.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
+ATT.ExcludeElements = {"uplp_optic_used"}
+
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "6"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     6     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
@@ -42,6 +44,8 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     8     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact"}
 
+ATT.ExcludeElements = {"uplp_optic_used"}
+
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -64,6 +68,8 @@ ATT.ModelBodygroups = "a"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     10     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
+
+ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -88,6 +94,8 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact"}
 
+ATT.ExcludeElements = {"uplp_optic_used"}
+
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -111,6 +119,8 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     2     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
+ATT.ExcludeElements = {"uplp_optic_used"}
+
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -133,6 +143,8 @@ ATT.ModelBodygroups = "4"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     4     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
+
+ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

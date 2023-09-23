@@ -957,7 +957,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_optic_used"] then
+    if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
         mdl:SetBodygroup(8,0)
     end
 end
@@ -1023,7 +1023,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
-        Pos = Vector(0, -0.1, 0.5),
+        Pos = Vector(0, -0.1, 1.5),
         Ang = Angle(90, 90, 180),
         RequireElements = {"use_optics"},
 		ActiveElements = {"uplp_optic_used"},
@@ -1079,9 +1079,26 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ak_stock_tube12",
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("csgo_category_camo"),
-        -- Category = {"universal_camo"},
-        -- CosmeticOnly = true,
-    -- },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic"},
+        Bone = "body",
+        Pos = Vector(0, -0.1, 0.5),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_no_backup"},
+        RequireElements = {"use_optics"},
+        CorrectiveAng = Angle(0.4, -0.35, 0),
+		Icon_Offset = Vector(-1, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic_front"},
+        Bone = "body",
+        Pos = Vector(0, -0.1, 14),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
+    },
 }

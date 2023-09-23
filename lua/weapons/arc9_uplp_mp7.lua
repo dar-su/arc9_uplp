@@ -204,11 +204,11 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(16, 32.5, 6.5)
+SWEP.CustomizePos = Vector(16, 28, 6)
 SWEP.CustomizeAng = Angle(90, 0, -1.5)
 SWEP.CustomizeRotateAnchor = Vector(16, -3, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 0, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
@@ -526,11 +526,9 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    -- if eles["uplp_mp7_reciever_m16"] or eles["uplp_mp7_reciever_45acp"] then
-        -- if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
-            -- mdl:SetBodygroup(1,1)
-        -- end
-    -- end
+    if eles["uplp_backup_optic"] then
+		mdl:SetBodygroup(5, 0)
+    end
 end
 
 SWEP.AttachmentElements = {
@@ -590,5 +588,25 @@ SWEP.Attachments = {
         Bone = "mag",
         Pos = Vector(0, 0, -0.4),
         Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic"},
+        Bone = "body",
+        Pos = Vector(0, -0.95, -2),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_no_backup"},
+		Icon_Offset = Vector(-1, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic_front"},
+        Bone = "body",
+        Pos = Vector(0, -0.95, 7),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
 }

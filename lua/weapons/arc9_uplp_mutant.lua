@@ -429,18 +429,17 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
-        Category = {"uplp_ar15_rs"},
+        Category = {"uplp_ar15_rs", "uplp_backup_optic"},
         Bone = "body",
         Pos = Vector(0.045, -0.52, 0.366),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ar15_rs_m4",
-		ExcludeElements = {"uplp_optic_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
-        Pos = Vector(0, -0.5, 1),
+        Pos = Vector(0, -0.5, 2),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(1, 0, 0),
     },
@@ -506,6 +505,17 @@ SWEP.Attachments = {
         Icon_Offset = Vector(-0.75, 0, 1.5),
         Installed = "uplp_mutant_mag_30_oldest",
         Integral = true
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic_front"},
+        Bone = "body",
+        Pos = Vector(0.045, -0.52, 14.5),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+		Hidden = true,
     },
     -- {
     --     PrintName = "Optic",

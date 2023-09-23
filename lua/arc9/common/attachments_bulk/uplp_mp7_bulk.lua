@@ -84,6 +84,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
+ATT.ExcludeElements = {"uplp_backup_optic"}
+
 /// Positives
 ATT.AimDownSightsTimeMult = 0.75
 

@@ -69,7 +69,7 @@ L["uplp_category_weapon_mg"] = "Kulsprutor"
 L["uplp_category_weapon_pistol"] = "Pistoler"
 L["uplp_category_weapon_shotgun"] = "Hagelbössor"
 L["uplp_category_weapon_smg"] = "Kulsprutepistoler"
-L["uplp_category_weapon_sniper"] = "Krypskyttegevär"
+L["uplp_category_weapon_sniper"] = "Prickskyttegevär"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Automatkarbin"
@@ -78,7 +78,7 @@ L["uplp_class_weapon_mg"] = "Kulspruta"
 L["uplp_class_weapon_pistol"] = "Pistol"
 L["uplp_class_weapon_shotgun"] = "Hagelbössa"
 L["uplp_class_weapon_smg"] = "Kulsprutepistol"
-L["uplp_class_weapon_sniper"] = "Krypskyttegevär"
+L["uplp_class_weapon_sniper"] = "Prickskyttegevär"
 L["uplp_class_weapon_throwable"] = "Kastbar"
 
 //////////////////////////////////////////////////////////////////////
@@ -201,9 +201,9 @@ L["uplp_optic_ez8x.printname"] = "8x Jägare Sikte"
 L["uplp_optic_ez8x.compactname"] = "8x Jägare"
 L["uplp_optic_ez8x.description"] = "Lång räckvidd sikte med 8x magnifiering."
 
-L["uplp_optic_pm3.printname"] = "12x Militär Krypskyttesikte"
+L["uplp_optic_pm3.printname"] = "12x Militär Precisionssikte"
 L["uplp_optic_pm3.compactname"] = "12x MK"
-L["uplp_optic_pm3.description"] = "Lång räckvidd krypskyttesikte med 12x magnifiering."
+L["uplp_optic_pm3.description"] = "Lång räckvidd precisionssikte med 12x magnifiering."
 
 -- L["uplp_optic_testthermal.printname"] = "Tävling Värmesikte"
 -- L["uplp_optic_testthermal.compactname"] = "Tävling V."
@@ -211,7 +211,7 @@ L["uplp_optic_pm3.description"] = "Lång räckvidd krypskyttesikte med 12x magni
 
 L["uplp_optic_generic.printname"] = "10x Precisionssikte"
 L["uplp_optic_generic.compactname"] = "10x Precision"
-L["uplp_optic_generic.description"] = "Lång räckvidd krypskyttesikte med 10x magnifiering."
+L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x magnifiering."
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
@@ -1254,6 +1254,11 @@ L["uplp_weapon_awp"] = "Prickskyttegevär AW"
 L["uplp_weapon_awp_desc"] = "AW-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
 
 /////////// Attachments
+////// Irons
+L["uplp_awp_rs.printname"] = "Prickskyttegevär AW Järn och Korn"
+L["uplp_awp_rs.compactname"] = "AW JK"
+L["uplp_awp_rs.description"] = "Järn och korn från fabriken till prickskyttegeväret AW."
+
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "610mm Polis Pipa"
 L["uplp_awp_brl_awp.compactname"] = "610mm"
@@ -1273,7 +1278,7 @@ L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret
 
 ////// Bipods
 -- L["uplp_awp_bp.printname"] = "Inbyggd AW-Benstöd"
-L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegevär AW"
+L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegeväret AW"
 L["uplp_awp_bp.compactname"] = "AW B."
 L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner."
 
@@ -1284,6 +1289,7 @@ L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-ge
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Patroner .338"
 L["uplp_awp_mag_awm.compactname"] = "5P .338"
+-- L["uplp_awp_mag_awm.description"] = "Standard 5-patronersmagasin laddat med .338-ammunition.\n\nKräver ett < Kolv >-tillbehör."
 L["uplp_awp_mag_awm.description"] = "Standard 5-patronersmagasin laddat med .338-ammunition."
 
 L["uplp_awp_mag_awp.printname"] = "5-Patroner .308"
@@ -1337,10 +1343,10 @@ L["uplp_awp_stock_awm.description"] = "Standardkolv med möjlighet att vikas til
 
 L["uplp_awp_stock_awp.printname"] = "Polis Kolv"
 L["uplp_awp_stock_awp.compactname"] = "Polis"
-L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt."
+L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt.\n\nEj kompatibel med < 5-Patroners .338 >"
 
-L["uplp_awp_stock_tube.printname"] = "Polis Kolv med Bufferrör"
-L["uplp_awp_stock_tube.compactname"] = "Polis B."
+L["uplp_awp_stock_tube.printname"] = "Vikbar Kolv med Bufferrör"
+L["uplp_awp_stock_tube.compactname"] = "Vikbar B."
 L["uplp_awp_stock_tube.description"] = "Standard kolv med ett påsatt bufferrör för användning med AR-15-kolvar."
 
 //////////////////// FN57

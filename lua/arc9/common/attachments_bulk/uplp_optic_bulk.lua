@@ -259,7 +259,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
 
 ATT.Icon = Material(iconfolder .. "dcl.png", "mips smooth")
 
@@ -414,25 +414,6 @@ ATT.Sights = {
     },
 }
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(1.2, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-4, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
-    },
-}
-
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 0.5)
 end
@@ -496,25 +477,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/16,
         Blur = false,
-    },
-}
-
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(0.9, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-2.75, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
     },
 }
 
@@ -629,25 +591,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/16,
         Blur = false,
-    },
-}
-
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(0.9, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-2.75, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
     },
 }
 
@@ -991,25 +934,6 @@ ATT.Sights = {
     }
 }
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(1.4, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-3.3, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
-    },
-}
-
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 0.5)
 end
@@ -1136,25 +1060,6 @@ ATT.Sights = {
     },
 }
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(1.55, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-4.2, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
-    },
-}
-
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 1)
 end
@@ -1221,25 +1126,6 @@ ATT.Sights = {
     },
 }
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(1.2, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-3.65, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
-    },
-}
-
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 1)
 end
@@ -1302,25 +1188,6 @@ ATT.Sights = {
     },
 }
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(1.5, 0, 0),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = "Backup Sight - Front - SHOULD NOT BE SEEN",
-        Category = "uplp_backup_optic_front",
-        Pos = Vector(-3.65, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
-    },
-}
-
 ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 1)
 end
@@ -1359,7 +1226,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
 
 ATT.Icon = Material(iconfolder .. "pm3.png", "mips smooth")
 
@@ -1541,18 +1408,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
-    },
-}
-
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = "uplp_backup_optic",
-        Pos = Vector(1.45, 0, 0),
-        Ang = Angle(0, 0, 0),
-        RejectAttachments = {
-		["uplp_backup_optic_is"] = true,
-		},
     },
 }
 
