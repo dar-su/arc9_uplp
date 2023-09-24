@@ -44,7 +44,7 @@ SWEP.StandardPresets = {
 SWEP.DefaultBodygroups = "0011000000000000000" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_1"
+SWEP.MuzzleParticle = "muzzleflash_m24"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
@@ -121,8 +121,8 @@ SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
-SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
+SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 20 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -494,8 +494,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -566,8 +566,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.725, lhik = 0 },
+            { t = 0.875, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -584,8 +584,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -602,7 +602,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.725, lhik = 0 },
             { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -620,8 +620,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -656,8 +656,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -988,7 +988,7 @@ SWEP.Attachments = {
         Pos = Vector(0.045, -0.2, 7.703),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, -1),
-        Integral = true,
+        Integral = nil,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),

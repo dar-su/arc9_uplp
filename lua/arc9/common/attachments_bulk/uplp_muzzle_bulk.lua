@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/"
 
 ATT = {}
 
-ATT.PrintName = "3-Pronged Flash Hider"
-ATT.CompactName = "3P FH"
+ATT.PrintName = "3-Hole Muzzle Brake"
+ATT.CompactName = "3H MB"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
@@ -25,9 +25,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
+ATT.MuzzleParticleOverride = "muzzleflash_smg"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
 ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomUpMult = 0.6
+ATT.RecoilRandomMult = 0.8
 ATT.SpreadAddRecoil = -0.01
 
 /// Negatives
@@ -56,9 +60,10 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+ATT.NoFlash = true
 
 /// Negatives
 
@@ -86,6 +91,10 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
+ATT.MuzzleParticleOverride = "muzzleflash_m14"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.25
 ATT.SpreadAddRecoil = -0.02
@@ -118,9 +127,10 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
+ATT.NoFlash = true
 
 /// Negatives
 
@@ -150,9 +160,13 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
+ATT.MuzzleParticleOverride = "muzzleflash_4"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
 ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomSideMult = 0.6
+ATT.RecoilRandomSideMult = 0.8
 ATT.SpreadAddRecoil = -0.01
 
 /// Negatives

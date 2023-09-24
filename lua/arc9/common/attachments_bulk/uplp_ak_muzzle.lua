@@ -262,7 +262,7 @@ ATT.MuzzleDevice = true
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 

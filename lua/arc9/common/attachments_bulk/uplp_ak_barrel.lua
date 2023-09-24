@@ -236,9 +236,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_su",
+        DefaultIcon = Material("entities/uplp_attachements/def/akhg.png", "mips smooth"),
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-7, 0, -0.5),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(-7, 0, -0.5),
     },
 }
 

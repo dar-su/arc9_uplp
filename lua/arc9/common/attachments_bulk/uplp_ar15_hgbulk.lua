@@ -2,6 +2,9 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ar15/hg/"
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 ///////////////////////////////////////      uplp_ar15_hg_grenadier
 
 
@@ -23,6 +26,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-5.1, 0, 0),
         Ang = Angle(0, 0, 0),
 		Hidden = true,
@@ -30,8 +34,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2.45),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -104,14 +110,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-12.0, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -137,12 +146,14 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         -- Category = "uplp_ar15_fs",
+        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         -- Pos = Vector(-4.9, 0, 0),
         -- Ang = Angle(0, 0, 0),
     -- },
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
         -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         -- Pos = Vector(-1, 0, 2),
         -- Ang = Angle(0, 0, 0),
     -- },
@@ -173,14 +184,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-7.5, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -209,14 +223,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-7.5, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -245,14 +262,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -281,14 +301,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -317,14 +340,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-9.15, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -333,7 +359,6 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
 
 ///////////////////////////////////////      uplp_ar15_hg_risshort
-
 
 ATT = {}
 
@@ -350,14 +375,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-4.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -386,14 +414,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-10.7, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -419,14 +450,17 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         Category = "uplp_ar15_fs",
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Pos = Vector(-5.1, 0, 0),
         Ang = Angle(0, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 2),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
     },
 }
 
@@ -452,14 +486,17 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         -- Category = "uplp_ar15_fs",
+        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         -- Pos = Vector(-5.1, 0, 0),
         -- Ang = Angle(0, 0, 0),
     -- },
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
         -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         -- Pos = Vector(-1, 0, 2),
         -- Ang = Angle(0, 0, 0),
+		-- Icon_Offset = Vector(0, 0, -1),
     -- },
 -- }
 
@@ -488,14 +525,17 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
         -- Category = "uplp_ar15_fs",
+        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         -- Pos = Vector(-10.7, 0, 0),
         -- Ang = Angle(0, 0, 0),
     -- },
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
         -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         -- Pos = Vector(-1, 0, 2),
         -- Ang = Angle(0, 0, 0),
+		-- Icon_Offset = Vector(0, 0, -1),
     -- },
 -- }
 

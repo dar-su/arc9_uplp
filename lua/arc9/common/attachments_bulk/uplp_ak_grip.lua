@@ -205,12 +205,12 @@ ATT.ModelBodygroups = "8"
 ATT.ModelOffset = Vector(-11, -3.55, 7.85)
 
 /// Positives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.1
+ATT.RecoilAutoControlMult = 1.15
+ATT.AimDownSightsTimeMult = 0.9
 
 /// Negatives
 ATT.RecoilMult = 1.05
-ATT.RecoilAutoControlMult = 0.9
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_12evo")
 

@@ -35,8 +35,8 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-"[AK-19]XQAAAQCJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobDJpHotQzVQehcAkNiD2eWB2lpBjhogO2OSLiL3ZOWkhJnQaTKP7QvAdS5aKvdnGZsPy54jy64U8Mem9JEEiKPa3c12f42Ugk+ekZ4wK4ClVTMCzs5b7L6m4NTIbwlh3a9omfALkuDpLKVeByGJpYOxy0I4BjpgA",
-"[RPK-16]XQAAAQB5AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KkqeaUAj/0+ounm+tZWCgTNHSQYsZcjkSNM9jeQxjGbm1JNzMy+Q+k1eBVlKM9wZwbtI5ofYbSvhQpe2fm0CNPgymDotdybPLX8bQVL+WOFSPtQYxkncvR8N8wrA8MaAFjngBOguqjtw+HZz5B2LkINVe9g==",
+-- "[AK-19]XQAAAQCJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobDJpHotQzVQehcAkNiD2eWB2lpBjhogO2OSLiL3ZOWkhJnQaTKP7QvAdS5aKvdnGZsPy54jy64U8Mem9JEEiKPa3c12f42Ugk+ekZ4wK4ClVTMCzs5b7L6m4NTIbwlh3a9omfALkuDpLKVeByGJpYOxy0I4BjpgA",
+-- "[RPK-16]XQAAAQB5AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KkqeaUAj/0+ounm+tZWCgTNHSQYsZcjkSNM9jeQxjGbm1JNzMy+Q+k1eBVlKM9wZwbtI5ofYbSvhQpe2fm0CNPgymDotdybPLX8bQVL+WOFSPtQYxkncvR8N8wrA8MaAFjngBOguqjtw+HZz5B2LkINVe9g==",
 }
 
 SWEP.DefaultBodygroups = "2267d1b021000000000000" -- Might as well prepare for the future
@@ -1048,7 +1048,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_ak_barrel_12"},
-        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "akbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 1.5, 17),
 		Icon_Offset = Vector(-5, 0, 0.5),
@@ -1068,13 +1068,15 @@ SWEP.Attachments = {
         Category = {"uplp_ak_dc_12"},
         DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.5, 4),
+        Pos = Vector(0.045, 1.5, 0),
         Ang = Angle(90, 90, 180),
+		Installed = "uplp_ak_dc_12",
+		Integral = "uplp_ak_dc_12",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_ak_mag_545"},
-        DefaultIcon = Material(defatt .. "mag_ak.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
         Ang = Angle(90, 90, 180),
@@ -1084,21 +1086,22 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip_12"},
-        DefaultIcon = Material(defatt .. "grip_ak.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
 		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
-		Installed = "uplp_ak_grip_12",
-		Integral = "uplp_ak_grip_12",
+		Installed = "uplp_ak_grip_12evo",
+		Integral = "uplp_ak_grip_12evo",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ak_stock_12"},
-        DefaultIcon = Material(defatt .. "stock_ak.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 2, -3),
         Ang = Angle(90, 90, 180),
+		Installed = "uplp_ak_stock_evo",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
@@ -1115,7 +1118,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic_front"},
         Bone = "body",
-        Pos = Vector(0, -0.1, 5.5),
+        Pos = Vector(0, -0.1, 13),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_backup_optic_is"},
         Installed = "uplp_backup_optic_is_front",

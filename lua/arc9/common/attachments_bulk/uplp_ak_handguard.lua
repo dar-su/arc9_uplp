@@ -19,8 +19,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.35),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
 		MergeSlots = {2},
     },
     {
@@ -88,8 +90,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.1),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.25),
 		MergeSlots = {2},
     },
     {
@@ -182,8 +186,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.1),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.25),
 		MergeSlots = {2},
     },
     {
@@ -215,8 +221,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.1),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.25),
 		MergeSlots = {2},
     },
     {
@@ -251,9 +259,10 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(4, 0, 1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1),
+		Icon_Offset = Vector(0, 0, -1.25),
 		MergeSlots = {2},
     },
     {
@@ -292,6 +301,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_su_dong")
 
 ---FLUSH
 
+--[[
 ATT = {}
 
 ATT.PrintName = "AK-12 Handguard"
@@ -308,6 +318,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),
 		MergeSlots = {2},
@@ -322,6 +333,7 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_12")
+--]]
 
 -------------------------------------------
 
