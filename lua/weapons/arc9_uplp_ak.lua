@@ -15,6 +15,8 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
 SWEP.Trivia = {
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = "AK-103",
+
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x39mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
@@ -25,9 +27,13 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_authors" ) ] = "Darsu | Moka",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "LIST ASSETS"
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, Cylowalker",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan, TastyTony",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
+    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "???",
+    [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
+
 
 SWEP.StandardPresets = {
 "[Beryl]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUCm4d16R22fa4mB2i2cwj7CJu8XDVOt8n636yhjAhTTav1tDDyoB4vd+ctpmtesNNMCtYVhR2MEK45AaqfTtCHPOlPPvkckO3iFo11eEtSBQbgHUa18j+P6++XfWNXlkhf7jS+fnOxtdgMWyLziQ3dCoL1sCA=",

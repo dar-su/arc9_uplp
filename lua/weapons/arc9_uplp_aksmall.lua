@@ -29,6 +29,8 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_smg")
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_smg")
 
 SWEP.Trivia = {
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = "PP-19-01 \"Vityaz\"",
+
     Manufacturer = "Izhmash",
     Calibre = "7.62x39mm Soviet",
     Mechanism = "Long Stroke, Gas Piston",
@@ -38,9 +40,13 @@ SWEP.Trivia = {
 
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_smg_desc")
 
+
 SWEP.Credits = {
-    Authors = "Darsu | Moka",
-    Assets = "LIST ASSETS"
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Darsu",
+    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "???",
+    [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
 -- Weapon slot --

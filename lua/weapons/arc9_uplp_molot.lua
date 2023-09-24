@@ -15,6 +15,8 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun") -- In the Customization
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun") -- In the Spawnmenu
 
 SWEP.Trivia = {
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = "\"Molot\" Vepr-12 IPSC",
+
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_12gauge"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
@@ -25,8 +27,11 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_authors" ) ] = "Darsu | Moka",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "LIST ASSETS"
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Darsu",
+    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "???",
+    [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
 SWEP.StandardPresets = {

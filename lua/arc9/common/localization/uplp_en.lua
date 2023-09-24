@@ -3,7 +3,9 @@ L = {}
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Various Universal Information
 //////////////////// Trivia
-L["uplp_country"] = "Country of Origin"
+L["uplp_realname"] = "Real-life name1"
+
+L["uplp_country"] = "Country of Origin4"
 
 L["uplp_country_austria"] = "Austria"
 L["uplp_country_belgium"] = "Belgium"
@@ -21,7 +23,7 @@ L["uplp_country_uk"] = "United Kingdom"
 L["uplp_country_usa"] = "United States"
 
 /////////// Caliber
-L["uplp_caliber"] = "Calibre"
+L["uplp_caliber"] = "Caliber3"
 
 L["uplp_caliber_7.62x39mm"] = "7.62x39mm Soviet"
 L["uplp_caliber_7.62x51mm"] = "7.62x51mm"
@@ -33,7 +35,7 @@ L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
 L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
 
 /////////// Manufacturer
-L["uplp_manufacturer"] = "Manufacturer"
+L["uplp_manufacturer"] = "Manufacturer2"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
@@ -45,12 +47,12 @@ L["uplp_manufacturer_fn"] = "FN Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
 
 /////////// Year
-L["uplp_year"] = "Year"
+L["uplp_year"] = "Year5"
 L["uplp_year_present"] = "%s > Present"
 L["uplp_year_year"] = "%s > %s"
 
 /////////// Mechanism
-L["uplp_mechanism"] = "Mechanism"
+L["uplp_mechanism"] = "Mechanism3"
 
 L["uplp_mechanism_2"] = "%s, %s"
 L["uplp_mechanism_3"] = "%s, %s, %s"
@@ -61,8 +63,13 @@ L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 L["uplp_mechanism_boltaction"] = "Bolt-action"
 
 /////////// Authors
-L["uplp_authors"] = "Authors"
-L["uplp_assets"] = "Assets"
+L["uplp_authors"] = "remove this line"
+
+L["uplp_assets"] = "Original assets1"
+L["uplp_animations"] = "Animations2"
+L["uplp_lua"] = "Weapon LUA3"
+L["uplp_sounds"] = "Sounds4"
+L["uplp_general"] = "Model & animations editing5"
 
 /////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Assault Rifles"
