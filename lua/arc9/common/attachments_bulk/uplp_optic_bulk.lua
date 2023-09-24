@@ -1402,7 +1402,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 16, -1.62),
+        Pos = Vector(0, 14, -1.33),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1434,7 +1434,8 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.25
 
-ATT.ModelOffset = Vector(0.65, 0, 0)
+ATT.ModelOffset = Vector(0, 0, -0.025)
+ATT.Scale = 0.82
 
 ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 

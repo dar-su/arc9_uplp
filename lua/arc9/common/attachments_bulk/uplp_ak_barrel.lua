@@ -1,12 +1,15 @@
 ----- BARRELS -----
 
+local iconfolder = "entities/uplp_attachements/ak/barr/"
+
 local ATT = {}
 
+--[[
 ATT.PrintName = "400mm AK-100 Barrel"
 ATT.CompactName = "400mm"
 ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -36,6 +39,7 @@ ATT.Attachments = {
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_16")
+--]]
 
 -------------------------------------------
 
@@ -45,7 +49,7 @@ ATT.PrintName = "300mm AK-100 Barrel"
 ATT.CompactName = "300mm"
 ATT.Description = "Short 300mm (12\") barrel used on the AK-102 and AK-104."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "compact.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -60,6 +64,7 @@ ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -77,6 +82,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_comp")
 
@@ -88,7 +94,7 @@ ATT.PrintName = "400mm AK Barrel"
 ATT.CompactName = "400mm AK"
 ATT.Description = "Standard 400mm (16\") barrel used on the AK-47 and AKM."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "akm.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -97,6 +103,7 @@ ATT.ActivateElements = {"uplp_ak_brl_akm"}
 /// Positives
 ATT.RecoilMult = 0.7
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -114,6 +121,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_akm")
 
@@ -125,7 +133,7 @@ ATT.PrintName = "585mm RPK Barrel"
 ATT.CompactName = "585mm RPK"
 ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-74 and RPK-74M."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rpk.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -141,6 +149,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -158,6 +167,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk")
 
@@ -169,7 +179,7 @@ ATT.PrintName = "432mm AK-109 Barrel"
 ATT.CompactName = "432mm AK-109"
 ATT.Description = "Longer 432mm (17\") barrel used on the AK-109."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "109.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -184,6 +194,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.05
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.05
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -193,6 +204,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_109")
 
@@ -204,7 +216,7 @@ ATT.PrintName = "203mm 74U Barrel"
 ATT.CompactName = "203mm 74U"
 ATT.Description = "Compact 203mm (8\") barrel used on the AKS-74U."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brsu.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -225,21 +237,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_su",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        -- Installed = "uplp_ak_dc_flat",
-        -- Integral = "uplp_ak_dc_flat",
-		RejectAttachments = {
-			["uplp_ak_dc_rail"] = true,
-			["uplp_ak_dc_azen"] = true,
-			["uplp_ak_dc_beryl"] = true,
-			["uplp_ak_dc_12"] = true,
-		},
-        Pos = Vector(10.5, 0, -1),
+		Icon_Offset = Vector(-7, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -248,13 +246,14 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_su")
 
 -------------------------------------------
 
+--[[
 ATT = {}
 
 ATT.PrintName = "400mm AK-12 Barrel"
 ATT.CompactName = "400mm AK-12"
 ATT.Description = "Standard 400mm (16\") barrel used on the AK-12."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -283,6 +282,7 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_12")
 
+--]]
 -------------------------------------------
 
 
@@ -292,12 +292,13 @@ ATT.PrintName = "230mm AK-12K Barrel"
 ATT.CompactName = "230mm AK-12K"
 ATT.Description = "Shortened 230mm (9\") barrel from the prototype AK-12K."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12k.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -318,6 +319,7 @@ ATT.Attachments = {
 		Hidden = false,
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_12k")
 
@@ -329,12 +331,13 @@ ATT.PrintName = "483mm AK-19 Barrel"
 ATT.CompactName = "483mm AK-19"
 ATT.Description = "Shortened 483mm (19\") barrel used on the AK-19, an export version of the AK-12."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "19.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -355,6 +358,7 @@ ATT.Attachments = {
 		Hidden = false,
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_19")
 
@@ -366,12 +370,13 @@ ATT.PrintName = "585mm RPK-16 Barrel"
 ATT.CompactName = "585mm RPK-16"
 ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-16."
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rpk16.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}
 
+--[[
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
@@ -392,6 +397,7 @@ ATT.Attachments = {
 		Hidden = false,
     },
 }
+--]]
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk16")
 

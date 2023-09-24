@@ -1,5 +1,7 @@
 ----- BARRELS -----
 
+local iconfolder = "entities/uplp_attachements/vepr/"
+
 local ATT = {}
 
 ATT.PrintName = "520mm Barrel"
@@ -7,7 +9,7 @@ ATT.CompactName = "520mm"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brlong.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -32,7 +34,7 @@ ATT.CompactName = "350mm"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 50
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brcomp.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -55,7 +57,7 @@ ATT.PrintName = "350mm \"Mini\" Barrel"
 ATT.CompactName = "350mm Mini"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brmini.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -78,7 +80,7 @@ ATT.PrintName = "325mm \"Micro\" Barrel"
 ATT.CompactName = "325mm Micro"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brmicor.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -105,7 +107,7 @@ ATT.PrintName = "100-Series Handguard"
 ATT.CompactName = "100-S"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/100.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -138,7 +140,7 @@ ATT.PrintName = "Wooden Handguard"
 ATT.CompactName = "Wooden"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/w.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -154,7 +156,7 @@ ATT.PrintName = "Zenith Handguard"
 ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/zen.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -177,7 +179,7 @@ ATT.PrintName = "Zenith Compact Handguard"
 ATT.CompactName = "Zenith C"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/zenc.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -200,7 +202,7 @@ ATT.PrintName = "Tactical Handguard (Sporty Red)"
 ATT.CompactName = "Tactical (SR)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/tac.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -223,7 +225,7 @@ ATT.PrintName = "Tactical Handguard (Pitch Black)"
 ATT.CompactName = "Tactical (PB)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/tacb.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -246,7 +248,7 @@ ATT.PrintName = "Tactical Handguard (Arctic White)"
 ATT.CompactName = "Tactical (AW)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/tacw.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -269,7 +271,7 @@ ATT.PrintName = "International Competitive Sport Shooting Competition Handguard 
 ATT.CompactName = "ICSSC Mk1"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/cool.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -292,7 +294,7 @@ ATT.PrintName = "International Competitive Sport Shooting Competition Handguard 
 ATT.CompactName = "ICSSC Mk2"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hg/cool2.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -317,7 +319,7 @@ ATT.PrintName = "Lightweight Sport Shooting Internals"
 ATT.CompactName = "Lightweight"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "boltl.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -331,7 +333,7 @@ ATT.PrintName = "Reinforced Internals"
 ATT.CompactName = "Reinforced"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "bolth.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -350,7 +352,7 @@ ATT.PrintName = "8-Round Extended"
 ATT.CompactName = "8R Ext"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -377,7 +379,7 @@ ATT.PrintName = "19-Round Drum"
 ATT.CompactName = "19R D"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "drum.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -418,7 +420,7 @@ ATT.PrintName = "Molot Choke"
 ATT.CompactName = "Molot C"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzdef.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -441,7 +443,7 @@ ATT.PrintName = "Shotgun Full Choke"
 ATT.CompactName = "SG FC"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzch.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -464,7 +466,7 @@ ATT.PrintName = "Shotgun Muzzle Brake"
 ATT.CompactName = "SG MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzgk.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -491,7 +493,7 @@ ATT.PrintName = "Heavy Shotgun Muzzle Brake"
 ATT.CompactName = "SG Heavy MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzheav.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -519,7 +521,7 @@ ATT.CompactName = "SG S."
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzsil.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -554,7 +556,7 @@ ATT.CompactName = "SG Heavy S."
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 101
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzheavysil.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

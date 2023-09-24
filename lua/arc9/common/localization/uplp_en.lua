@@ -63,8 +63,6 @@ L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 L["uplp_mechanism_boltaction"] = "Bolt-action"
 
 /////////// Authors
-L["uplp_authors"] = "remove this line"
-
 L["uplp_assets"] = "Original assets1"
 L["uplp_animations"] = "Animations2"
 L["uplp_lua"] = "Weapon LUA3"
@@ -77,8 +75,10 @@ L["uplp_category_weapon_melee"] = "Melees"
 L["uplp_category_weapon_mg"] = "Machine Guns"
 L["uplp_category_weapon_pistol"] = "Pistols"
 L["uplp_category_weapon_shotgun"] = "Shotguns"
-L["uplp_category_weapon_smg"] = "SMGs"
+L["uplp_category_weapon_smg"] = "Submachine Guns"
 L["uplp_category_weapon_sniper"] = "Sniper Rifles"
+
+L["uplp_category_weapon_heavy"] = "Heavy Weapons"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Assault Rifle"
@@ -112,8 +112,11 @@ L["uplp_category_receiver"] = "Receiver"
 L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_stock"] = "Stock"
+L["uplp_category_tactical"] = "Tactical"
 
 //////////////////// Folder Names
+L["uplp_folder_flashlight"] = "Flashlights"
+L["uplp_folder_laser"] = "Lasers"
 L["uplp_folder_suppressor"] = "Suppressors"
 
 //////////////////// Toggle Stats Names
@@ -349,6 +352,10 @@ L["uplp_weapon_ak12_desc"] = "The AK-12 is a modern assault rifle designed in Ru
 L["uplp_weapon_ak_smg"] = "AK SMG"
 L["uplp_weapon_ak_smg_desc"] = "Various compact submachine guns based on the AK assault rifle. With the base being that of the AK platform, the AK SMG provides familiarity to those already familiar with the various AK family of rifles with the compact nature of SMGs."
 
+L["uplp_weapon_ak_real"] = "AK-103"
+L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
+L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
+
 /////////// Attachments
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK-100 Barrel"
@@ -399,6 +406,10 @@ L["uplp_ak_dc_std.description"] = "Standard ribbed dust cover used on the AKM."
 L["uplp_ak_dc_flat.printname"] = "Smooth Dust Cover"
 L["uplp_ak_dc_flat.compactname"] = "Smooth"
 L["uplp_ak_dc_flat.description"] = "Smoothened out dust cover used on the AK-74M and AK-100 rifles."
+
+L["uplp_ak_dc_old.printname"] = "Vintage Dust Cover"
+L["uplp_ak_dc_old.compactname"] = "Vintage"
+L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK-47."
 
 L["uplp_ak_dc_rail.printname"] = "Dust Cover with Rail"
 L["uplp_ak_dc_rail.compactname"] = "Rail"
@@ -720,6 +731,8 @@ L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "The AR-15 is a lightweight, air-cooled, gas-operated, magazine-fed fully automatic rifle that has gained popularity for its modularity and versatility. It's widely used by military and law enforcement agencies, known for its accuracy and adaptability to various combat situations."
+
+L["uplp_weapon_ar15_real"] = "Colt M4A1"
 
 /////////// Attachments
 ////// Barrels
@@ -1054,6 +1067,8 @@ L["uplp_ar15_stock_veryheavy.description"] = "Very heavy stock for AR-15 rifles.
 L["uplp_weapon_deagle"] = "Deagle"
 L["uplp_weapon_deagle_desc"] = "The Deagle is a semi-automatic pistol known for its distinctive design and powerful chambering options, including .50 AE. It is recognized for its large frame, gas-operated mechanism, and reputation for being one of the most powerful handguns in the world."
 
+L["uplp_weapon_deagle_real"] = "IMI Desert Eagle XIX"
+
 /////////// Attachments
 ////// Magazines
 L["uplp_deag_mag_ext.printname"] = "13-Round Extended"
@@ -1115,6 +1130,8 @@ L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propel
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62x39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
+
+L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
 /////////// Attachments
 ////// Barrels
@@ -1178,6 +1195,8 @@ L["uplp_mutant_mag_40_old.description"] = "40-round magazine made with good, old
 //////////////////// Molot
 L["uplp_weapon_molot"] = "Molot"
 L["uplp_weapon_molot_desc"] = "The Molot is a Russian-made semi-automatic shotgun renowned for its robust and reliable design. It is chambered for 12-gauge shells and is popular among shooters and collectors for its durability and performance. This version of the Molot was factory made for use in sporting competitions, which resulted in the inclusion of an ambidextrous charging handle."
+
+L["uplp_weapon_molot_real"] = "\"Molot\" Vepr-12 IPSC"
 
 /////////// Attachments
 ////// Barrels
@@ -1261,6 +1280,8 @@ L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
 L["uplp_weapon_awp"] = "AW Sniper"
 L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
 
+L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
+
 /////////// Attachments
 ////// Irons
 L["uplp_awp_rs.printname"] = "AW Sniper Iron Sights"
@@ -1317,9 +1338,9 @@ L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"
 L["uplp_awp_stock_at.compactname"] = "Foldable M."
 L["uplp_awp_stock_at.description"] = "Modern foldable stock with more comfortable ergonomics."
 
-L["uplp_awp_stock_atx.printname"] = "eXtreme Stock"
-L["uplp_awp_stock_atx.compactname"] = "X"
-L["uplp_awp_stock_atx.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc."
+L["uplp_awp_stock_atx.printname"] = "eXtreme Stock (Sporty Red)"
+L["uplp_awp_stock_atx.compactname"] = "X (SR)"
+L["uplp_awp_stock_atx.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. sportyred
 
 L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock (Aqua Blue)"
 L["uplp_awp_stock_atx_blue.compactname"] = "X (AB)"
@@ -1361,6 +1382,8 @@ L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer t
 L["uplp_weapon_fn57"] = "MRD57"
 L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for its unique chambering in the 5.7x28mm cartridge, originally designed for use in select fire weapons. It features a high-capacity magazine, low recoil, and is prized for its armor-piercing capabilities, making it popular among military and law enforcement units worldwide."
 
+L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
+
 /////////// Attachments
 ////// Mags
 L["uplp_fn57_mag_ext.printname"] = "27-Round Extended Magazine"
@@ -1388,6 +1411,8 @@ L["uplp_fn57_skin_panda.description"] = "Replaces the slide with a desert tan co
 //////////////////// MP7
 L["uplp_weapon_mp7"] = "PDW-7"
 L["uplp_weapon_mp7_desc"] = "The PDW-7 is a compact and lightweight submachine gun known for its high rate of fire and versatility, capable of firing armor-piercing rounds. It is often used by military and law enforcement units for close-quarters combat and special operations."
+
+L["uplp_weapon_mp7_real"] = "H&K MP7"
 
 /////////// Attachments
 ////// Stocks

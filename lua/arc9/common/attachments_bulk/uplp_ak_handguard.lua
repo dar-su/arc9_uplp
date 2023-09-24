@@ -1,12 +1,14 @@
 ----- HANDGUARDS -----
 
+local iconfolder = "entities/uplp_attachements/ak/hg/"
+
 local ATT = {}
 
 ATT.PrintName = "100-Series Handguard"
 ATT.CompactName = "100-S"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "100.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -40,7 +42,7 @@ ATT.PrintName = "Vintage Handguard"
 ATT.CompactName = "Vintage"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -57,7 +59,7 @@ ATT.PrintName = "RPK Handguard"
 ATT.CompactName = "RPK"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rpk.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -75,7 +77,7 @@ ATT.PrintName = "Beryl Handguard"
 ATT.CompactName = "Beryl"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -109,7 +111,7 @@ ATT.PrintName = "Tactical Handguard"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tca.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -126,7 +128,7 @@ ATT.PrintName = "Wooden Handguard"
 ATT.CompactName = "Wooden"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "w.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -143,7 +145,7 @@ ATT.PrintName = "Dong Handguard"
 ATT.CompactName = "Dong"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "dong.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -169,7 +171,7 @@ ATT.PrintName = "Zenith Compact Handguard"
 ATT.CompactName = "Zenith C"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "zenc.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -203,7 +205,7 @@ ATT.PrintName = "Zenith Handguard"
 ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -239,7 +241,7 @@ ATT.PrintName = "Tactical Handguard"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "sutac.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -249,14 +251,15 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
-        Pos = Vector(3, 0, 1),
+        Pos = Vector(4, 0, 1),
         Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1),
 		MergeSlots = {2},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_horiz"},
-        Pos = Vector(3.7, 0, 1),
+        Pos = Vector(5, 0, 1),
         Ang = Angle(0, 0, 0),
 		Hidden = true,
     },
@@ -268,11 +271,11 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_su_tac")
 
 ATT = {}
 
-ATT.PrintName = "PM md. 63 Handguard"
-ATT.CompactName = "Md. 63"
+ATT.PrintName = "Dong Handguard"
+ATT.CompactName = "Dong"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "sudong.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -295,7 +298,7 @@ ATT.PrintName = "AK-12 Handguard"
 ATT.CompactName = "AK-12"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -328,7 +331,7 @@ ATT.PrintName = "RPK-16 Handguard"
 ATT.CompactName = "RPK-16"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ExcludeElements = {"uplp_ak_hgsu"}

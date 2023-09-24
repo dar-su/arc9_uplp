@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/57/"
 
 ////////////////////      MAGAZINES
 ///////////////////////////////////////      uplp_fn57_mag_ext
@@ -11,7 +12,7 @@ ATT.PrintName = "27-Round Extended Magazine"
 ATT.CompactName = "27R Ext."
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "extmag.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -43,7 +44,7 @@ ATT.PrintName = "Automatic Action"
 ATT.CompactName = "Automatic"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "trig.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_action"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -70,7 +71,7 @@ ATT.PrintName = "Full Tan"
 ATT.CompactName = "Full Tan"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tan.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_skin"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -89,7 +90,7 @@ ATT.PrintName = "Half Tan"
 ATT.CompactName = "Half Tan"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "half.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_skin"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -108,7 +109,7 @@ ATT.PrintName = "Panda"
 ATT.CompactName = "Panda"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "pand.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_skin"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

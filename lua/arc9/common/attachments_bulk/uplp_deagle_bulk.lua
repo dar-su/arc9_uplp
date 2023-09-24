@@ -1,5 +1,7 @@
 ----- Magazines -----
 
+local iconfolder = "entities/uplp_attachements/deagle/"
+
 local ATT = {}
 
 ATT.PrintName = "13-Round Extended"
@@ -7,7 +9,7 @@ ATT.CompactName = "13R Ext"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "extmag.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -33,7 +35,7 @@ ATT.PrintName = "7-Round Ergo Mag"
 ATT.CompactName = "7R Ergo"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tacmag.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -52,7 +54,7 @@ ATT.PrintName = "Rubberized Grip"
 ATT.CompactName = "Rubber"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tacgrip.png", "mips smooth")
 ATT.Category = "uplp_deag_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -69,7 +71,7 @@ ATT.PrintName = "Heavy Trigger and Hammer"
 ATT.CompactName = "Heavy"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "heavytrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -88,7 +90,7 @@ ATT.PrintName = "Lightweight Trigger and Hammer"
 ATT.CompactName = "Light"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "lighttrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -106,7 +108,7 @@ ATT.PrintName = "Automatic Action"
 ATT.CompactName = "Automatic"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "autotrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -125,7 +127,7 @@ ATT.PrintName = "Classic Barrel"
 ATT.CompactName = "Classic"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brcl.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -144,7 +146,7 @@ ATT.PrintName = "Long Classic Barrel"
 ATT.CompactName = "Classic L"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brlong.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -165,7 +167,7 @@ ATT.PrintName = "Tactical Barrel"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brtac.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -183,7 +185,7 @@ ATT.PrintName = "Long Tactical Barrel"
 ATT.CompactName = "Tactical L"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "brlongtac.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -204,7 +206,7 @@ ATT.PrintName = "Vertical Compensator"
 ATT.CompactName = "Vertical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzcut.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -223,7 +225,7 @@ ATT.PrintName = "Heavy Compensator"
 ATT.CompactName = "Heavy"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mzh.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -244,7 +246,7 @@ ATT.PrintName = "Horizontal Compensator"
 ATT.CompactName = "Horizontal"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mztri.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

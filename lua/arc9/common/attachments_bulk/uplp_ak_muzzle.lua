@@ -1,12 +1,14 @@
 ----- GRIPS -----
 
+local iconfolder = "entities/uplp_attachements/ak/mz/"
+
 local ATT = {}
 
 ATT.PrintName = "100-Series Muzzle Brake"
 ATT.CompactName = "100-S MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -38,7 +40,7 @@ ATT.PrintName = "AKM Muzzle Brake"
 ATT.CompactName = "AKM MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "akm.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -68,7 +70,7 @@ ATT.PrintName = "74U Muzzle Brake"
 ATT.CompactName = "74U MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "comp.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -99,7 +101,7 @@ ATT.PrintName = "RPK Muzzle Brake"
 ATT.CompactName = "RPK MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rp.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -127,7 +129,7 @@ ATT.PrintName = "Vityaz Muzzle Brake"
 ATT.CompactName = "Vityaz MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vityaz.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -150,7 +152,7 @@ ATT.PrintName = "Bizon Muzzle Brake"
 ATT.CompactName = "Bizon MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "bizon.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -173,7 +175,7 @@ ATT.PrintName = "AK-12 Muzzle Brake"
 ATT.CompactName = "AK-12 MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -197,7 +199,7 @@ ATT.PrintName = "AK-19 Muzzle Brake"
 ATT.CompactName = "AK-19 MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "19.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -221,7 +223,7 @@ ATT.PrintName = "RPK-16 Muzzle Brake"
 ATT.CompactName = "RPK-16 MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -245,7 +247,7 @@ ATT.PrintName = "PBS-1 Suppressor"
 ATT.CompactName = "PBS-1"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "sil.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

@@ -1,12 +1,15 @@
 ----- DUST COVERS -----
 
+local iconfolder = "entities/uplp_attachements/ak/dc/"
+local iconfolder12 = "entities/uplp_attachements/ak/"
+
 local ATT = {}
 
 -- ATT.PrintName = "AKM Dust Cover"
 -- ATT.CompactName = "AKM"
 -- ATT.Description = ATT.PrintName
 
--- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "762b.png", "mips smooth")
 -- ATT.Category = "uplp_ak_dc"
 -- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -23,7 +26,7 @@ ATT.PrintName = "Smooth Dust Cover"
 ATT.CompactName = "Smooth"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "flat.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -35,12 +38,28 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_flat")
 
 ATT = {}
 
+ATT.PrintName = "Vintage Dust Cover"
+ATT.CompactName = "Vintage"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
+ATT.Category = "uplp_ak_dc"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_dc_old"}
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dc_old")
+
+-------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "Dust Cover with Rail"
 ATT.CompactName = "Rail"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "r1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -58,7 +77,7 @@ ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -76,7 +95,7 @@ ATT.CompactName = "FB Beryl"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -93,7 +112,7 @@ ATT.CompactName = "'23 AK-12M1"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder12 .. "rsm1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -110,7 +129,7 @@ ATT.CompactName = "'22 AK-12"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder12 .. "rsevo.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -127,7 +146,7 @@ ATT.CompactName = "'16 AK-12"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder12 .. "rs12.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

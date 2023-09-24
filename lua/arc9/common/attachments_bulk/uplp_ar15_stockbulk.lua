@@ -104,7 +104,7 @@ ATT.PrintName = "Light Battle Stock"
 ATT.CompactName = "Light"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "MISSING.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "slight.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "9"
@@ -228,7 +228,7 @@ ATT.PrintName = "PDW Stock"
 ATT.CompactName = "PDW"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "MISSING.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "spdw.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "a"

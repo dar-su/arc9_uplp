@@ -1,12 +1,14 @@
 ----- GRIPS -----
 
+local iconfolder = "entities/uplp_attachements/ak/grip/"
+
 local ATT = {}
 
 ATT.PrintName = "Polymer Pistol Grip"
 ATT.CompactName = "Polymer"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -26,7 +28,7 @@ ATT.PrintName = "Bakelite Pistol Grip"
 ATT.CompactName = "Bakelite"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "bak.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -46,7 +48,7 @@ ATT.PrintName = "Vintage Pistol Grip"
 ATT.CompactName = "Vintage"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -66,7 +68,7 @@ ATT.PrintName = "Tactical Pistol Grip"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -85,11 +87,11 @@ ARC9.LoadAttachment(ATT, "uplp_ak_grip_tac")
 
 ATT = {}
 
-ATT.PrintName = "Tapco Pistol Grip"
-ATT.CompactName = "Tapco"
+ATT.PrintName = "PAWCO Pistol Grip"
+ATT.CompactName = "PAWCO"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "pawco.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -112,7 +114,7 @@ ATT.PrintName = "Vityaz Pistol Grip"
 ATT.CompactName = "Vityaz"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "v.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_smg"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -132,7 +134,7 @@ ATT.PrintName = "Beryl Pistol Grip"
 ATT.CompactName = "Beryl"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -152,7 +154,7 @@ ATT.PrintName = "Molot Pistol Grip"
 ATT.CompactName = "Molot"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -172,7 +174,7 @@ ATT.PrintName = "AK-12 Pistol Grip"
 ATT.CompactName = "AK-12"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -192,7 +194,7 @@ ATT.PrintName = "EVO Pistol Grip"
 ATT.CompactName = "EVO"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

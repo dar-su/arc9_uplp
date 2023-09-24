@@ -15,7 +15,7 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sniper") -- In the Customization 
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sniper") -- In the Spawnmenu
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = "AI AWM",
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_awp_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_ai" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x51mm"),
@@ -680,8 +680,6 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.4, 8),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_awp_brl_awp",
-        Integral = "uplp_awp_brl_awp",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_bipod"),

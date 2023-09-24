@@ -15,7 +15,7 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = "Colt M4A1",
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ar15_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_uso" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
@@ -40,6 +40,8 @@ SWEP.StandardPresets = {
 "[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
 "[Sporty Red PDW]XQAAAQD2AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgCZB0ilL6eKibS+tef/nGAP4l/N9U0r6by2YQEs3qKxOe8hgzJzFWaZyeCtBiSHRRYsodOP/yojO7sHIu3s7pznhu4/IWgpk9GWp/yMFlxez5+uWqMe9Nyq1H1L+JF0dcfXz1Pb1spMe8A==",
 }
+
+SWEP.DefaultBodygroups = "0011000000000000000" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_1"
@@ -860,6 +862,7 @@ SWEP.AttachmentElements = {
 	-- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } } },
+    ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 } } },
     ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 } } },
     ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } } },
 
@@ -871,6 +874,7 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
 
     -- HANDGUARDS
+    ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } } },
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
     ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
     ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
@@ -906,10 +910,14 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
 }
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
         Category = {"uplp_ar15_rs", "uplp_backup_optic"},
+        DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, 0),
@@ -922,6 +930,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0.045, -0.1, 1.326),
@@ -931,6 +940,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock", "uplp_ar15_stock_shorttube"},
+        DefaultIcon = Material(defatt2 .. "arstock.png", "mips smooth"),
         Bone = "body",
         Installed = "uplp_ar15_stock_m4",
         Pos = Vector(0.045, 0.99, -2.98),
@@ -939,6 +949,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ar15_pgrip"},
+        DefaultIcon = Material(defatt .. "grip_ar.png", "mips smooth"),
 		ActiveElements = {"uplp_ar15_pgrip"},
         Bone = "body",
         RejectAttachments = {
@@ -950,6 +961,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_charginghandle"),
         Category = {"uplp_ar15_chandle"},
+        DefaultIcon = Material(defatt2 .. "ch.png", "mips smooth"),
         Bone = "chandle",
 		ActiveElements = {"uplp_ar15_chandle"},
         RejectAttachments = {
@@ -961,27 +973,27 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_ar15_barrel"},
+        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 0.633, 5.672),
         Ang = Angle(90, 90, 180),
-        Integral = true,
         Installed = "uplp_ar15_barrel_10",
         Integral = "uplp_ar15_barrel_10",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_ar15_hg"},
+        DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, -0.2, 7.703),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, -1),
         Integral = true,
-        Installed = "uplp_ar15_hg_risshort",
-        Integral = "uplp_ar15_hg_risshort",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = {"uplp_ar15_reciever"},
+        DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
         ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp"},
         Bone = "body",
         Pos = Vector(0, 1.5, 1.5),
@@ -990,6 +1002,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_ar15_556_mag", "uplp_ar15_45_mag", "uplp_ar15_glock_mag"},
+        DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
         RejectAttachments = {
 		["uplp_ar15_mag_stanag30"] = true,
 		},
@@ -1001,6 +1014,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
         Category = {"uplp_ar15_ammo"},
+        DefaultIcon = Material(defatt .. "ammotype.png", "mips smooth"),
         ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp", "uplp_ar15_mag_ext"},
         Bone = "mag",
         Pos = Vector(0, -1.5, -1.25),

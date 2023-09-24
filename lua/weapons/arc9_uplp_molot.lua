@@ -15,7 +15,7 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun") -- In the Customization
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun") -- In the Spawnmenu
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = "\"Molot\" Vepr-12 IPSC",
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_molot_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_12gauge"),
@@ -893,14 +893,14 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_molot_mag"},
         Bone = "body",
-        Pos = Vector(0.045, 4, 5.5),
+        Pos = Vector(0.045, 6.5, 6.5),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
         Category = {"uplp_sg_ammo"},
         Bone = "body",
-        Pos = Vector(0.045, 6.5, 6.5),
+        Pos = Vector(0.045, 4, 5.5),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_sg_shell_red",
         Integral = "uplp_sg_shell_red",

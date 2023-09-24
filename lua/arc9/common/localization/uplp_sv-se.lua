@@ -3,7 +3,9 @@ L = {}
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Various Universal Information
 //////////////////// Trivia
-L["uplp_country"] = "Ursprungsland"
+L["uplp_realname"] = "Riktigt namn1"
+
+L["uplp_country"] = "Ursprungsland4"
 
 L["uplp_country_austria"] = "Österrike"
 L["uplp_country_belgium"] = "Belgien"
@@ -21,7 +23,7 @@ L["uplp_country_uk"] = "Storbritannien"
 L["uplp_country_usa"] = "Förenta Staterna"
 
 /////////// Caliber
-L["uplp_caliber"] = "Kaliber"
+L["uplp_caliber"] = "Kaliber3"
 
 L["uplp_caliber_7.62x39mm"] = "7,62x39mm Sovjet"
 L["uplp_caliber_7.62x51mm"] = "7,62x51mm"
@@ -30,9 +32,10 @@ L["uplp_caliber_5.45x39mm"] = "5,45x39mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
 L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5,7x28mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4,6x30mm"
 
 /////////// Manufacturer
-L["uplp_manufacturer"] = "Tillverkare"
+L["uplp_manufacturer"] = "Tillverkare2"
 
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
@@ -43,7 +46,7 @@ L["uplp_manufacturer_fn"] = "FN Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
 
 /////////// Year
-L["uplp_year"] = "År"
+L["uplp_year"] = "År5"
 L["uplp_year_present"] = "%s > Nutid"
 L["uplp_year_year"] = "%s > %s"
 
@@ -59,8 +62,11 @@ L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
 L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 
 /////////// Authors
-L["uplp_authors"] = "Tillverkare"
-L["uplp_assets"] = "Tillgångar"
+L["uplp_assets"] = "Originala tillgångar1"
+L["uplp_animations"] = "Animationer2"
+L["uplp_lua"] = "Vapen LUA3"
+L["uplp_sounds"] = "Ljud4"
+L["uplp_general"] = "Modell & animationredigering5"
 
 /////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Automatkarbiner"
@@ -70,6 +76,8 @@ L["uplp_category_weapon_pistol"] = "Pistoler"
 L["uplp_category_weapon_shotgun"] = "Hagelbössor"
 L["uplp_category_weapon_smg"] = "Kulsprutepistoler"
 L["uplp_category_weapon_sniper"] = "Prickskyttegevär"
+
+L["uplp_category_weapon_heavy"] = "Tunga Vapen"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Automatkarbin"
@@ -103,8 +111,11 @@ L["uplp_category_receiver"] = "Låda"
 L["uplp_category_sight_front"] = "Stolpkorn"
 L["uplp_category_sight_rear"] = "Bakre Sikte"
 L["uplp_category_stock"] = "Kolv"
+L["uplp_category_tactical"] = "Taktisk"
 
 //////////////////// Folder Names
+L["uplp_folder_flashlight"] = "Lampor"
+L["uplp_folder_laser"] = "Lasersikten"
 L["uplp_folder_suppressor"] = "Ljuddämpare"
 
 //////////////////// Toggle Stats Names
@@ -340,6 +351,10 @@ L["uplp_weapon_ak12_desc"] = "AK-12 är ett modernt automatgevär designat i Rys
 L["uplp_weapon_ak_smg"] = "AK KPist."
 L["uplp_weapon_ak_smg_desc"] = "Diverse kompakta kulsprutepistoler baserade på automatkarbinen AK. Med AK-plattformen som en bas så erbjuder AK Kpist. förtrogenhet till dem som redan har kunskap med olika AK-gevär ur dess familj med den kompakta naturen av kulsprutepistoler."
 
+L["uplp_weapon_ak_real"] = "AK-103"
+L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
+L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
+
 /////////// Attachments
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK-100 Pipa"
@@ -390,6 +405,10 @@ L["uplp_ak_dc_std.description"] = "Standard räfflat dammskydd som används på 
 L["uplp_ak_dc_flat.printname"] = "Slät Dammskydd"
 L["uplp_ak_dc_flat.compactname"] = "Slät"
 L["uplp_ak_dc_flat.description"] = "Slät dammskydd som används på AK-74M och AK-100-gevär."
+
+L["uplp_ak_dc_old.printname"] = "Gammaldags Dammskydd"
+L["uplp_ak_dc_old.compactname"] = "Gammaldags"
+L["uplp_ak_dc_old.description"] = "Gammaldags dammskydd som används på AK-47:an."
 
 L["uplp_ak_dc_rail.printname"] = "Dammskydd med Skena"
 L["uplp_ak_dc_rail.compactname"] = "Skena"
@@ -711,6 +730,8 @@ L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av k
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "AR-15 är ett lättviktigt, luftkyld, gasdrivet, magasinfött helautomatiskt gevär som har blivit populärt för sin modularitet och mångsidighet. Det används allmänt av militära och polisiära organisationer, känt för sin noggrannhet och anpassningsförmåga till olika stridssituationer."
+
+L["uplp_weapon_ar15_real"] = "Colt M4A1"
 
 /////////// Attachments
 ////// Barrels
@@ -1045,6 +1066,8 @@ L["uplp_ar15_stock_veryheavy.description"] = "Väldigt tung kolv till AR-15-gev�
 L["uplp_weapon_deagle"] = "Deagle"
 L["uplp_weapon_deagle_desc"] = "Deagle är en halvautomatisk pistol känd för sin distinkta design och kraftfulla patronalternativ, inklusive .50 AE. Den är känd för sitt stora ram, gasdrivna mekanism och sitt rykte som en av de mest kraftfulla handeldvapnen i världen."
 
+L["uplp_weapon_deagle_real"] = "IMI Desert Eagle XIX"
+
 /////////// Attachments
 ////// Magazines
 L["uplp_deag_mag_ext.printname"] = "13-Patroner Förstorad"
@@ -1106,6 +1129,8 @@ L["uplp_deag_muzzle_tri.description"] = "En kompensator som omdirigerar framdriv
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla 7,62x39mm-kalibern som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
+
+L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
 /////////// Attachments
 ////// Barrels
@@ -1169,6 +1194,8 @@ L["uplp_mutant_mag_40_old.description"] = "40-patronersmagasin gjorda av det god
 //////////////////// Molot
 L["uplp_weapon_molot"] = "Molot"
 L["uplp_weapon_molot_desc"] = "Molot är en rysktillverkad halvautomatisk hagelgevär känd för sin robusta och pålitliga design. Den är kamrad för 12-kalibriga patroner och är populär bland skyttar och samlare för sin hållbarhet och prestanda. Denna version av Molot är fabriksgjord för användning inom sportskytte vilket resulterade i inkluderingen av ett tvåhändigt manöverhandtag."
+
+L["uplp_weapon_molot_real"] = "\"Molot\" Vepr-12 IPSC"
 
 /////////// Attachments
 ////// Barrels
@@ -1253,6 +1280,8 @@ L["uplp_sg_mz_vepr.description"] = "Standard choke till hagelgeväret Molot."
 L["uplp_weapon_awp"] = "Prickskyttegevär AW"
 L["uplp_weapon_awp_desc"] = "AW-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
 
+L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
+
 /////////// Attachments
 ////// Irons
 L["uplp_awp_rs.printname"] = "Prickskyttegevär AW Järn och Korn"
@@ -1309,9 +1338,9 @@ L["uplp_awp_stock_at.printname"] = "Vikbar Moderniserad Kolv"
 L["uplp_awp_stock_at.compactname"] = "Vikbar M."
 L["uplp_awp_stock_at.description"] = "Modern, vikbar kolv med mer bekväm ergonomi."
 
-L["uplp_awp_stock_atx.printname"] = "eXtreme-Kolv"
-L["uplp_awp_stock_atx.compactname"] = "X"
-L["uplp_awp_stock_atx.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc."
+L["uplp_awp_stock_atx.printname"] = "eXtreme-Kolv (Sporty Red)"
+L["uplp_awp_stock_atx.compactname"] = "X (SR)"
+L["uplp_awp_stock_atx.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. sportyred
 
 L["uplp_awp_stock_atx_blue.printname"] = "eXtreme-Kolv (Aqua Blue)"
 L["uplp_awp_stock_atx_blue.compactname"] = "X (AB)"
@@ -1353,6 +1382,8 @@ L["uplp_awp_stock_tube.description"] = "Standard kolv med ett påsatt bufferrör
 L["uplp_weapon_fn57"] = "MRD57"
 L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt unika kaliber i 5,7x28mm, ursprungligen designad för användning i automatvapen. Den har en högkapacitetsmagasin, låg rekyl och är eftertraktad för sin förmåga att tränga igenom skydd, vilket gör den populär bland militära och polisenheter över hela världen.."
 
+L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
+
 /////////// Attachments
 ////// Mags
 L["uplp_fn57_mag_ext.printname"] = "27-Patron Förlängt Magasin"
@@ -1380,6 +1411,8 @@ L["uplp_fn57_skin_panda.description"] = "Ersätter slutstycket med en öken tanf
 //////////////////// MP7
 L["uplp_weapon_mp7"] = "PDW-7"
 L["uplp_weapon_mp7_desc"] = "PDW-7 är en kompakt och lätt submaskinpistol känd för sin höga eldhastighet och mångsidighet, kapabel att avfyra pansar genomborrande skott. Den används ofta av militära och polisiära enheter för närstrid och specialoperationer."
+
+L["uplp_weapon_mp7_real"] = "H&K MP7"
 
 /////////// Attachments
 ////// Stocks

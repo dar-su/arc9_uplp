@@ -1,5 +1,6 @@
 local ATT = {}
 
+local iconfolder = "entities/uplp_attachements/mp7/"
 
 ////////////////////      STOCKS
 ///////////////////////////////////////      uplp_mp7_stock_folded
@@ -11,7 +12,7 @@ ATT.PrintName = "Collapsed Stock"
 ATT.CompactName = "Collapsed"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -41,7 +42,7 @@ ATT.PrintName = "20-Round Magazine"
 ATT.CompactName = "20R"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mag.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -77,7 +78,7 @@ ATT.PrintName = "PDW Iron Sights"
 ATT.CompactName = "PDW IS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "down.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_optic"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

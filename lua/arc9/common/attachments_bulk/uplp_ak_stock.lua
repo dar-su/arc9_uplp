@@ -301,7 +301,7 @@ ATT.PrintName = "Molot Stock"
 ATT.CompactName = "Molot"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACE.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 

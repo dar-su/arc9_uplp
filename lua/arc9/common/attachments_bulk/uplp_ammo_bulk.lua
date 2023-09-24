@@ -2,6 +2,8 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
+local iconfoldersg = "entities/uplp_attachements/vepr/ammo/"
+
 ///Rifle Ammo
 
 ATT = {}
@@ -81,7 +83,7 @@ ATT.PrintName = "12-Gauge Buckshot"
 ATT.CompactName = "Buckshot"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfoldersg .. "r.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -97,7 +99,7 @@ ATT.PrintName = "12-Gauge Birdshot"
 ATT.CompactName = "Birdshot"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfoldersg .. "b.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -119,7 +121,7 @@ ATT.PrintName = "12-Gauge Slug"
 ATT.CompactName = "Slug"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfoldersg .. "g.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -146,7 +148,7 @@ ATT.PrintName = "12-Gauge Double Slug"
 ATT.CompactName = "Slug x2"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfoldersg .. "bl.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -171,7 +173,7 @@ ATT.PrintName = "12-Gauge Dragon's Breath"
 ATT.CompactName = "DB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfoldersg .. "o.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -235,7 +237,7 @@ ATT.PrintName = "12-Gauge Explosive Slug"
 ATT.CompactName = "Exp. Slug"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
+ATT.Icon = Material(iconfoldersg .. "y.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
