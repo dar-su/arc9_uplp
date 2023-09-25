@@ -59,6 +59,13 @@ $bodygroup "magdef" { // 7
 	blank
 }
 
+$bodygroup "gasdef" { // 8
+	blank
+	studio "bggb_minimal_10.smd" // 1
+	studio "bggb_minimal_14.smd" // 2
+	studio "bggb_minimal_16.smd" // 3
+}
+
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
