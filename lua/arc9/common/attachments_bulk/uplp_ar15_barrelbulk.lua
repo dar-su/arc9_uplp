@@ -4,7 +4,7 @@ local iconfolder = "entities/uplp_attachements/ar15/barr/"
 
 ///////////////////////////////////////      uplp_ar15_barrel_10
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = "254mm Barrel"
@@ -40,7 +40,7 @@ ATT.Attachments = {
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_10")
-
+--]]
 
 ///////////////////////////////////////      uplp_ar15_barrel_14
 
@@ -68,23 +68,23 @@ ATT.PhysBulletMuzzleVelocityMult = 1.05
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
-        Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_m16",
-        Integral = "uplp_ar15_gasblock_min",
-        Pos = Vector(-10.2, 0, 0.4),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = "uplp_muzzle",
-        Pos = Vector(-11.44, 0, 0.34),
-        Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(1, 0, 0),
-    },
-}
+-- ATT.Attachments = {
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
+        -- Category = "uplp_ar15_gasblock",
+        -- Installed = "uplp_ar15_gasblock_m16",
+        -- Integral = "uplp_ar15_gasblock_min",
+        -- Pos = Vector(-10.2, 0, 0.4),
+        -- Ang = Angle(0, 0, 0),
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        -- Category = "uplp_muzzle",
+        -- Pos = Vector(-11.44, 0, 0.34),
+        -- Ang = Angle(0, 0, 0),
+		-- Icon_Offset = Vector(1, 0, 0),
+    -- },
+-- }
 
 
 
@@ -117,23 +117,23 @@ ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
-        Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_m16",
-        Integral = "uplp_ar15_gasblock_min",
-        Pos = Vector(-13.4, 0, 0.4),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = "uplp_muzzle",
-        Pos = Vector(-14.24, 0, 0.34),
-        Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(1, 0, 0),
-    },
-}
+-- ATT.Attachments = {
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
+        -- Category = "uplp_ar15_gasblock",
+        -- Installed = "uplp_ar15_gasblock_m16",
+        -- Integral = "uplp_ar15_gasblock_min",
+        -- Pos = Vector(-13.4, 0, 0.4),
+        -- Ang = Angle(0, 0, 0),
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        -- Category = "uplp_muzzle",
+        -- Pos = Vector(-14.24, 0, 0.34),
+        -- Ang = Angle(0, 0, 0),
+		-- Icon_Offset = Vector(1, 0, 0),
+    -- },
+-- }
 
 
 
@@ -166,22 +166,22 @@ ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
-        Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_m16",
-        Integral = "uplp_ar15_gasblock_min",
-        Pos = Vector(-13.4, 0, 0.4),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = "uplp_muzzle",
-        Pos = Vector(-17.24, 0, 0.34),
-        Ang = Angle(0, 0, 0),
-    },
-}
+-- ATT.Attachments = {
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
+        -- Category = "uplp_ar15_gasblock",
+        -- Installed = "uplp_ar15_gasblock_m16",
+        -- Integral = "uplp_ar15_gasblock_min",
+        -- Pos = Vector(-13.4, 0, 0.4),
+        -- Ang = Angle(0, 0, 0),
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        -- Category = "uplp_muzzle",
+        -- Pos = Vector(-17.24, 0, 0.34),
+        -- Ang = Angle(0, 0, 0),
+    -- },
+-- }
 
 
 
@@ -214,22 +214,22 @@ ATT.PhysBulletMuzzleVelocityMult = 1.2
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.25
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
-        Category = "uplp_ar15_gasblock",
-        Installed = "uplp_ar15_gasblock_m16",
-        Integral = "uplp_ar15_gasblock_min",
-        Pos = Vector(-13.4, 0, 0.4),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = "uplp_muzzle",
-        Pos = Vector(-18.97, 0, 0.34),
-        Ang = Angle(0, 0, 0),
-    },
-}
+-- ATT.Attachments = {
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
+        -- Category = "uplp_ar15_gasblock",
+        -- Installed = "uplp_ar15_gasblock_m16",
+        -- Integral = "uplp_ar15_gasblock_min",
+        -- Pos = Vector(-13.4, 0, 0.4),
+        -- Ang = Angle(0, 0, 0),
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        -- Category = "uplp_muzzle",
+        -- Pos = Vector(-18.97, 0, 0.34),
+        -- Ang = Angle(0, 0, 0),
+    -- },
+-- }
 
 
 

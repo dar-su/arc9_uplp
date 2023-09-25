@@ -32,6 +32,8 @@ ATT.SprintToFireTimeMult = 0.9
 
 -- ATT.ModelOffset = Vector(-21, -3.55, 4.75)
 
+ATT.ModelOffset = Vector(-1.5, 0, 0)
+
 ARC9.LoadAttachment(ATT, "uplp_grip_half")
 
 
@@ -60,6 +62,8 @@ ATT.AimDownSightsTimeMult = 0.65
 ATT.SprintToFireTimeMult = 0.75
 
 /// Negatives
+
+ATT.ModelOffset = Vector(-1, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_handstop")
 

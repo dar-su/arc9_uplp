@@ -36,9 +36,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-"[416]XQAAAQDEAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lRog8bNlpT/fMoQM3Yovfk/vkufsbWcDJD/kQUskENfbRfUOzGOhrWeH1o+lp/9vJrUmcO3CIU0m6IU1kndZYueyWDuP9ErD0N2blNTQUZ8aJ/6ii5xMA",
-"[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
-"[Sporty Red PDW]XQAAAQD2AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgCZB0ilL6eKibS+tef/nGAP4l/N9U0r6by2YQEs3qKxOe8hgzJzFWaZyeCtBiSHRRYsodOP/yojO7sHIu3s7pznhu4/IWgpk9GWp/yMFlxez5+uWqMe9Nyq1H1L+JF0dcfXz1Pb1spMe8A==",
+-- "[416]XQAAAQDEAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lRog8bNlpT/fMoQM3Yovfk/vkufsbWcDJD/kQUskENfbRfUOzGOhrWeH1o+lp/9vJrUmcO3CIU0m6IU1kndZYueyWDuP9ErD0N2blNTQUZ8aJ/6ii5xMA",
+-- "[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
+-- "[Sporty Red PDW]XQAAAQD2AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgCZB0ilL6eKibS+tef/nGAP4l/N9U0r6by2YQEs3qKxOe8hgzJzFWaZyeCtBiSHRRYsodOP/yojO7sHIu3s7pznhu4/IWgpk9GWp/yMFlxez5+uWqMe9Nyq1H1L+JF0dcfXz1Pb1spMe8A==",
 }
 
 SWEP.DefaultBodygroups = "0011000000000000000" -- Might as well prepare for the future
@@ -50,7 +50,7 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
 
@@ -861,10 +861,25 @@ end
 SWEP.AttachmentElements = {
 	-- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
-    ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } } },
-    ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 } } },
-    ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 } } },
-    ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } } },
+	
+    ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } }, AttPosMods = {
+	[7] = { Pos = Vector(0.045, 1.02, 16) },
+	[8] = { Pos = Vector(0.045, 0.975, 17.15) },
+	}},
+    ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 } }, AttPosMods = {
+	[7] = { Pos = Vector(0.045, 1.02, 19) },
+	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
+	}},
+	
+    ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 } }, AttPosMods = {
+	[7] = { Pos = Vector(0.045, 1.02, 19) },
+	[8] = { Pos = Vector(0.045, 0.975, 22.91) },
+	}},
+	
+    ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } }, AttPosMods = {
+	[7] = { Pos = Vector(0.045, 1.02, 19) },
+	[8] = { Pos = Vector(0.045, 0.975, 24.65) },
+	}},
 
 	-- RECEIVERS
     ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
@@ -977,18 +992,50 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.633, 5.672),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_ar15_barrel_10",
-        Integral = "uplp_ar15_barrel_10",
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
+        Category = {"uplp_ar15_gasblock"},
+        DefaultIcon = Material(defatt2 .. "gas.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, 1.02, 14.5),
+        Ang = Angle(90, 90, 180),
+        -- Installed = "uplp_ar15_gasblock_m16",
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_muzzle"},
+        Bone = "body",
+        Pos = Vector(0.045, 0.975, 15.125),
+        Ang = Angle(90, 90, 180),
+		Icon_Offset = Vector(1, 0, 0),
+        Installed = "uplp_muzzle_cage",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_ar15_hg"},
         DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, -0.2, 7.703),
+        Pos = Vector(0.045, 0.8, 7.703),
         Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(0, 0, -1),
-        Integral = nil,
+        Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
+        Category = {"uplp_ar15_fs"},
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, -0.2, 12.25),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, 1.72, 10),
+        Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),

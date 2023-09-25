@@ -18,20 +18,20 @@ ATT.ActivateElements = {"uplp_ak_hg_100"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.35),
+        Pos = Vector(3, 0, 1.2825),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1),
-		MergeSlots = {2},
+		-- MergeSlots = {2},
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz"},
-        Pos = Vector(4, 0, 1.3),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        -- Category = {"uplp_grip_horiz"},
+        -- Pos = Vector(4, 0, 1.3),
+        -- Ang = Angle(0, 0, 0),
+		-- Hidden = true,
+    -- },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_100")
@@ -89,20 +89,20 @@ ATT.ActivateElements = {"uplp_ak_hg_beryl"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.1),
+        Pos = Vector(3, 0, 1.025),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1.25),
-		MergeSlots = {2},
+		-- MergeSlots = {2},
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz"},
-        Pos = Vector(4.25, 0, 1.05),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        -- Category = {"uplp_grip_horiz"},
+        -- Pos = Vector(4.25, 0, 1.05),
+        -- Ang = Angle(0, 0, 0),
+		-- Hidden = true,
+    -- },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_beryl")
@@ -185,20 +185,20 @@ ATT.ActivateElements = {"uplp_ak_hg_azen_c"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.1),
+        Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1.25),
-		MergeSlots = {2},
+		-- MergeSlots = {2},
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz"},
-        Pos = Vector(4.25, 0, 1.05),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        -- Category = {"uplp_grip_horiz"},
+        -- Pos = Vector(4.25, 0, 1.05),
+        -- Ang = Angle(0, 0, 0),
+		-- Hidden = true,
+    -- },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_azen_c")
@@ -220,20 +220,20 @@ ATT.ActivateElements = {"uplp_ak_hg_azen"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.1),
+        Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1.25),
-		MergeSlots = {2},
+		-- MergeSlots = {2},
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz"},
-        Pos = Vector(4.25, 0, 1.05),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        -- Category = {"uplp_grip_horiz"},
+        -- Pos = Vector(4.25, 0, 1.05),
+        -- Ang = Angle(0, 0, 0),
+		-- Hidden = true,
+    -- },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_azen")
@@ -258,20 +258,20 @@ ATT.ActivateElements = {"uplp_ak_hg_su_tac","uplp_su_hgexists"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(4, 0, 1),
+        Pos = Vector(3.5, 0, 1),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1.25),
-		MergeSlots = {2},
+		-- MergeSlots = {2},
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz"},
-        Pos = Vector(5, 0, 1),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        -- Category = {"uplp_grip_horiz"},
+        -- Pos = Vector(5, 0, 1),
+        -- Ang = Angle(0, 0, 0),
+		-- Hidden = true,
+    -- },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_su_tac")

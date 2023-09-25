@@ -229,8 +229,8 @@ L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
 L["uplp_backup_optic_rmr.compactname"] = "VRPS"
 L["uplp_backup_optic_rmr.description"] = "Ett kompekt rödpunktsikte monterat på en vinkel för att erbjuda snabb målförvärv när magnifierade riktmedel används."
 
-L["uplp_backup_optic_is.printname"] = "Vinklade Korn"
-L["uplp_backup_optic_is.compactname"] = "VK"
+L["uplp_backup_optic_is.printname"] = "Vinklade Järn och Korn"
+L["uplp_backup_optic_is.compactname"] = "VJK"
 L["uplp_backup_optic_is.description"] = "Ett stolpkorn och bakre sikte monterat på en vinkel för att erbjuda snabb målförvärv när magnifierade riktmedel används."
 
 /////////// Grips
