@@ -20,6 +20,12 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
+ATT.Ammo = "357"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
+}
+
 /// Positives
 ATT.DamageMinMult = 1.25
 ATT.DamageMaxMult = 2
@@ -54,6 +60,12 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
+
+ATT.Ammo = "357"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
+}
 
 /// Positives
 ATT.DamageMinMult = 1.25

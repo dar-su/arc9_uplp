@@ -1,9 +1,29 @@
 L = {}
 
+local col = {
+r = "<color=255,100,100>",
+g = "<color=100,255,100>",
+b = "<color=160,160,255>",
+e = "</color>"
+}
+
+local lineb = "\n"
+
+local changeammo = {
+pistol = lineb .. "Changes ammo type to <color=255,255,100>Pistol Ammo</color>.",
+["357"] = lineb .. "Changes ammo type to <color=255,255,100>Magnum Ammo</color>.",
+smg1 = lineb .. "Changes ammo type to <color=255,255,100>Carbine Ammo</color>.",
+ar2 = lineb .. "Changes ammo type to <color=255,255,100>Rifle Ammo</color>.",
+buckshot = lineb .. "Changes ammo type to <color=255,255,100>Shotgun Ammo</color>.",
+sniperpenetratedround = lineb .. "Changes ammo type to <color=255,255,100>Sniper Ammo</color>.",
+smg1_grenade = lineb .. "Changes ammo type to <color=255,255,100>Rifle Grenades</color>.",
+xbowbolt = lineb .. "Changes ammo type to <color=255,255,100>Crossbow Bolts</color>.",
+}
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Various Universal Information
 //////////////////// Trivia
-L["uplp_realname"] = "Real-life name1"
+L["uplp_realname"] = "Real-life Name1"
 
 L["uplp_country"] = "Country of Origin4"
 
@@ -63,11 +83,11 @@ L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 L["uplp_mechanism_boltaction"] = "Bolt-action"
 
 /////////// Authors
-L["uplp_assets"] = "Original assets1"
+L["uplp_assets"] = "Original Assets1"
 L["uplp_animations"] = "Animations2"
 L["uplp_lua"] = "Weapon LUA3"
 L["uplp_sounds"] = "Sounds4"
-L["uplp_general"] = "Model & animations editing5"
+L["uplp_general"] = "Model & Animations Editing5"
 
 /////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Assault Rifles"
@@ -300,11 +320,11 @@ L["uplp_sg_mz_silencer_heavy.description"] = "Heavy sound suppressor for shotgun
 /////////// Ammunition
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
-L["uplp_ar15_ammo_458.description"] = "Large and powerful .458 SOCOM cartridges that pack a huge punch."
+L["uplp_ar15_ammo_458.description"] = "Large and powerful .458 SOCOM cartridges that pack a huge punch." .. changeammo["357"]
 
 L["uplp_ar15_ammo_50.printname"] = ".50 Beowulf Ammo"
 L["uplp_ar15_ammo_50.compactname"] = ".50 Beowulf"
-L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 Beowulf cartridges that pack a huge punch."
+L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 Beowulf cartridges that pack a huge punch." .. changeammo["357"]
 
 L["uplp_sg_shell_red.printname"] = "00 Buckshot Rounds"
 L["uplp_sg_shell_red.compactname"] = "Buckshot"
@@ -532,7 +552,7 @@ L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the RPK-16."
 ////// Magazines
 /// 7.62x39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Loaded with 7.62x39mm Soviet used by the AK-47, AK-103 and AK-15."
+local loaded762 = loaded .. "Loaded with " .. col.b .. "7.62x39mm Soviet" .. col.e .. " used by the AK-47, AK-103 and AK-15."
 
 L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62x39mm (Bakelite)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
@@ -567,7 +587,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
 L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
 
 /// 5.45x39mm
-local loaded545 = loaded .. "Loaded with 5.45x39mm used by the AK-74 and AK-105."
+local loaded545 = loaded .. "Loaded with " .. col.b .. "5.45x39mm" .. col.e .. " used by the AK-74 and AK-105." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45x39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
@@ -598,7 +618,7 @@ L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 D"
 L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine from the RPK-16." .. loaded545
 
 /// 5.56x45mm NATO
-local loaded556 = loaded .. "Loaded with 5.56x45mm used by the AK-101 and AK-102."
+local loaded556 = loaded .. "Loaded with " .. col.b .. "5.56x45mm" .. col.e .. " used by the AK-101 and AK-102." .. changeammo.smg1
 
 L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
@@ -615,11 +635,11 @@ L["uplp_ak_mag_556_30_12.description"] = "30-round magazine made to resemble the
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Round AK-308 7.62x51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20R 7.62x51"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with 7.62x51mm rounds."
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62x51mm rounds" .. col.e .. "." ..  changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Round AK-9 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with 9x39mm used by the AK-9."
+L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9x39mm rounds" .. col.e .. " used by the AK-9." .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "100-Series Muzzle Brake"
@@ -803,11 +823,11 @@ L["uplp_ar15_gasblock_m16rail.printname"] = "Gas Block with built-in Front Sight
 L["uplp_ar15_gasblock_m16rail.compactname"] = "GB FS (R)"
 L["uplp_ar15_gasblock_m16rail.description"] = "Gas block with built-in M16/M4 front sight. Comes with additional rails for mounting accessories."
 
-L["uplp_ar15_gasblock_min.printname"] = "Compact Gas Block"
+L["uplp_ar15_gasblock_min.printname"] = "Standard Gas Block"
 L["uplp_ar15_gasblock_min.compactname"] = "GB"
 L["uplp_ar15_gasblock_min.description"] = "The bare minimum gas block allowing the AR-15 rifle to function."
 
-L["uplp_ar15_gasblock_min_red.printname"] = "Compact Gas Block (Sporty Red)"
+L["uplp_ar15_gasblock_min_red.printname"] = "Standard Gas Block (Sporty Red)"
 L["uplp_ar15_gasblock_min_red.compactname"] = "GB (SR)"
 L["uplp_ar15_gasblock_min_red.description"] = "The bare minimum gas block allowing the AR-15 rifle to function." .. sportyred
 
@@ -816,7 +836,7 @@ L["uplp_ar15_gasblock_rail.compactname"] = "GB R"
 L["uplp_ar15_gasblock_rail.description"] = "Gas block with built-in top rail for mounting front sights."
 
 ////// Handguards
-local requires = "\n\n"
+local requires = "\n"
 local requires14 = requires .. "Requires 356mm (14\") or longer barrel."
 local requires16 = requires .. "Requires 406mm (16\") or longer barrel."
 local requires20 = requires .. "Requires 508mm (20\") or longer barrel."
@@ -887,11 +907,11 @@ L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical han
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 ACP"
 L["uplp_ar15_mag_45_20.compactname"] = "20R .45"
-L["uplp_ar15_mag_45_20.description"] = "Converts the AR-15 to accept 20-round .45 ACP magazines."
+L["uplp_ar15_mag_45_20.description"] = "Converts the AR-15 to accept 20-round .45 ACP magazines." .. changeammo.pistol
 
 L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 ACP"
 L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
-L["uplp_ar15_mag_45_40.description"] = "Converts the AR-15 to accept 40-round .45 ACP magazines."
+L["uplp_ar15_mag_45_40.description"] = "Converts the AR-15 to accept 40-round .45 ACP magazines." .. changeammo.pistol
 
 /// 9x19mm
 L["uplp_ar15_stm9_magwell.printname"] = "STM-9 Magwell"
@@ -900,15 +920,15 @@ L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier re
 
 L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 to accept 17-round 9x19mm magazines from an Austrian handgun."
+L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 to accept 17-round 9x19mm magazines from an Austrian handgun." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm"
 L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19"
-L["uplp_ar15_mag_glock_33.description"] = "Converts the AR-15 to accept 33-round 9x19mm magazines from an Austrian handgun."
+L["uplp_ar15_mag_glock_33.description"] = "Converts the AR-15 to accept 33-round 9x19mm magazines from an Austrian handgun." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9x19mm Drum"
 L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19"
-L["uplp_ar15_mag_glock_50.description"] = "Converts the AR-15 to accept a 50-round 9x19mm drum magazine made for an Austrian handgun."
+L["uplp_ar15_mag_glock_50.description"] = "Converts the AR-15 to accept a 50-round 9x19mm drum magazine made for an Austrian handgun." .. changeammo.pistol
 
 /// 5.56x45mm
 L["uplp_ar15_mag_drum.printname"] = "100-Round 5.56x45mm C-Drum"
@@ -1267,9 +1287,9 @@ L["uplp_molot_mag_long.printname"] = "8-Round Extended"
 L["uplp_molot_mag_long.compactname"] = "8R Ext"
 L["uplp_molot_mag_long.description"] = "8-round extended magazine."
 
-L["uplp_molot_mag_drum.printname"] = "19-Round Drum"
+L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum"
 L["uplp_molot_mag_drum.compactname"] = "19R D"
-L["uplp_molot_mag_drum.description"] = "19-round drum magazine."
+L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO."
 
 ////// Muzzle
 L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
@@ -1284,8 +1304,8 @@ L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
 /////////// Attachments
 ////// Irons
-L["uplp_awp_rs.printname"] = "AW Sniper Iron Sights"
-L["uplp_awp_rs.compactname"] = "AW IS"
+L["uplp_awp_rs.printname"] = "Iron Sights"
+L["uplp_awp_rs.compactname"] = "IS"
 L["uplp_awp_rs.description"] = "Factory set of iron sights for the AW Sniper."
 
 ////// Barrels
@@ -1393,7 +1413,7 @@ L["uplp_fn57_mag_ext.description"] = "Larger 27-round magazine for the MRD57."
 ////// Trigger
 L["uplp_fn57_trigger_auto.printname"] = "Automatic Action"
 L["uplp_fn57_trigger_auto.compactname"] = "Automatic"
-L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in fully automatic, sacrificing recoil control."
+L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in " .. col.g .. "fully automatic" .. col.e .. ", sacrificing recoil control."
 
 ////// Skins
 L["uplp_fn57_skin_tan_full.printname"] = "Full Tan"

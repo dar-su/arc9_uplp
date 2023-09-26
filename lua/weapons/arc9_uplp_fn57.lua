@@ -90,6 +90,8 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
+SWEP.Ammo = "pistol" -- What ammo type this gun uses.
+
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 

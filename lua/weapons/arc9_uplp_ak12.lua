@@ -95,9 +95,10 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
+SWEP.Ammo = "smg1" -- What ammo type this gun uses.
+
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
-SWEP.Ammo = "smg1"
 
 -- Recoil
 SWEP.Recoil = 2.5
@@ -1013,6 +1014,9 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_mag_545_drum"] = { Bodygroups = { { 6, 14 } } },
 
+    -- Other
+    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 6, 18 } } },
+
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
     ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 2 } } },
@@ -1076,7 +1080,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_ak_mag_545"},
+        Category = {"uplp_ak_mag_545", "uplp_ak_mag_308"},
         DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 5, 5),

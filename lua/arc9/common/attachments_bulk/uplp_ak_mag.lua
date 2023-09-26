@@ -179,7 +179,7 @@ ATT.PrintName = "30-Round 5.45x39mm (Polymer)"
 ATT.CompactName = "30R 5.45 (P)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "545p.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "54530.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -201,6 +201,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
     return anim .. "_545"
 end
+
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
 
 /// Positives
 ATT.RPMAdd = 50
@@ -246,6 +252,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
+
 /// Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
@@ -290,6 +302,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
+
 /// Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
@@ -333,6 +351,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
     return anim .. "_545"
 end
+
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
 
 /// Positives
 ATT.RPMAdd = 50
@@ -379,6 +403,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
 
 /// Positives
 ATT.RPMAdd = 50
@@ -430,6 +460,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
 
 /// Positives
 ATT.RPMAdd = 50
@@ -484,6 +520,12 @@ end
 
 ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
 
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
+
 /// Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.7
@@ -536,6 +578,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_556"
 end
 
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
+
 /// Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.65
@@ -579,6 +627,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
     return anim .. "_556"
 end
+
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
 
 /// Positives
 ATT.RPMAdd = 50
@@ -624,6 +678,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_556"
 end
 
+ATT.Ammo = "smg1"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
+
 /// Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.65
@@ -650,7 +710,7 @@ ATT.CompactName = "20R .308"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "308.png", "mips smooth")
-ATT.Category = "uplp_ak_mag"
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_308"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_308"}
@@ -670,6 +730,12 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
     return anim .. "_308"
 end
+
+ATT.Ammo = "357"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
+}
 
 /// Positives
 ATT.DamageMaxAdd = 15
@@ -725,8 +791,13 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
-/// Positives
+ATT.Ammo = "smg1"
 
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+}
+
+/// Positives
 ATT.RecoilMult = 0.6
 ATT.RPMAdd = 150
 

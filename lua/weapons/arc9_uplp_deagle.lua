@@ -5,7 +5,7 @@ SWEP.Spawnable = true
 
 //// FUNDAMENTALS
 
-SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
+SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
 
 //// Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_deagle")
@@ -91,9 +91,10 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
+SWEP.Ammo = "357" -- What ammo type this gun uses.
+
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 7
-SWEP.Ammo = "357"
 
 -- Recoil
 SWEP.Recoil = 4.5

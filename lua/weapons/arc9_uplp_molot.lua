@@ -94,9 +94,10 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
+SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
+
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 5
-SWEP.Ammo = "buckshot"
 
 -- Recoil
 SWEP.Recoil = 2

@@ -30,6 +30,12 @@ local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
 ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
 
+ATT.Ammo = "pistol"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+}
+
 /// Positives
 ATT.AimDownSightsTimeMult = 0.75
 ATT.SprintToFireTimeMult = 0.75
@@ -75,6 +81,12 @@ local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 -- ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
 
 ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+
+ATT.Ammo = "pistol"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+}
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.85
@@ -153,6 +165,8 @@ end
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Ammo = "pistol"
+
 /// Positives
 ATT.RPMMult = 1.2
 ATT.AimDownSightsTimeMult = 0.7
@@ -160,7 +174,8 @@ ATT.SprintToFireTimeMult = 0.7
 ATT.RecoilMult = 0.85
 
 ATT.CustomPros = { 
-[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
+[	ARC9:GetPhrase("autostat.reloadtime")	] = "+10%",
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
 }
 
 /// Negatives
@@ -221,6 +236,12 @@ end
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Ammo = "pistol"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+}
+
 /// Positives
 ATT.RPMMult = 1.2
 ATT.AimDownSightsTimeMult = 0.8
@@ -234,7 +255,7 @@ ATT.DamageMaxAdd = -10
 ATT.DamageMinAdd = -5
 ATT.RangeMaxMult = 0.35
 ATT.RangeMinMult = 0.65
-ATT.ReloadTimeMult = 1.15
+-- ATT.ReloadTimeMult = 1.15
 
 ATT.Attachments = {
     {
@@ -285,6 +306,12 @@ end
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Ammo = "pistol"
+
+ATT.CustomPros = { 
+[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+}
 
 /// Positives
 ATT.RPMMult = 1.2

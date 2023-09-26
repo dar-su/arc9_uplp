@@ -16,7 +16,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_gasblock_sight"}
+ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 
@@ -43,7 +43,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16r.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_gasblock_sight"}
+ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 
@@ -61,7 +61,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
 
 ///////////////////////////////////////      uplp_ar15_gasblock_min
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = "Compact Gas Block"
@@ -69,6 +69,8 @@ ATT.CompactName = "GB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "m.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "0"
@@ -80,7 +82,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
-
+--]]
 
 ///////////////////////////////////////      uplp_ar15_gasblock_min_red
 
@@ -92,6 +94,8 @@ ATT.CompactName = "GB (SR)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mr.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_gasblock"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "1"
@@ -116,7 +120,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "r.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_gasblock_sight"}
+ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 

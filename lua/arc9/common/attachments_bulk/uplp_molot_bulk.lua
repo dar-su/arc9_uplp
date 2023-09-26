@@ -375,7 +375,7 @@ ARC9.LoadAttachment(ATT, "uplp_molot_mag_long")
 
 ATT = {}
 
-ATT.PrintName = "19-Round Drum"
+ATT.PrintName = "19-Round PAWCO Drum"
 ATT.CompactName = "19R D"
 ATT.Description = ATT.PrintName
 

@@ -1,9 +1,29 @@
 L = {}
 
+local col = {
+r = "<color=255,100,100>",
+g = "<color=100,255,100>",
+b = "<color=160,160,255>",
+e = "</color>"
+}
+
+local lineb = "\n"
+
+local changeammo = {
+pistol = lineb .. "Byter patrontyp till <color=255,255,100>Pistol Ammo</color>.",
+["357"] = lineb .. "Byter patrontyp till <color=255,255,100>Magnum Ammo</color>.",
+smg1 = lineb .. "Byter patrontyp till <color=255,255,100>Karbin Ammo</color>.",
+ar2 = lineb .. "Byter patrontyp till <color=255,255,100>Gevärs Ammo</color>.",
+buckshot = lineb .. "Byter patrontyp till <color=255,255,100>Hagelbössa Ammo</color>.",
+sniperpenetratedround = lineb .. "Byter patrontyp till <color=255,255,100>Prickskytt. Ammo</color>.",
+smg1_grenade = lineb .. "Byter patrontyp till <color=255,255,100>Gevärsgranater</color>.",
+xbowbolt = lineb .. "Byter patrontyp till <color=255,255,100>Armborst Bultar</color>.",
+}
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Various Universal Information
 //////////////////// Trivia
-L["uplp_realname"] = "Riktigt namn1"
+L["uplp_realname"] = "Verkligt Namn1"
 
 L["uplp_country"] = "Ursprungsland4"
 
@@ -62,11 +82,11 @@ L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
 L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 
 /////////// Authors
-L["uplp_assets"] = "Originala tillgångar1"
+L["uplp_assets"] = "Originala Tillgångar1"
 L["uplp_animations"] = "Animationer2"
 L["uplp_lua"] = "Vapen LUA3"
 L["uplp_sounds"] = "Ljud4"
-L["uplp_general"] = "Modell & animationredigering5"
+L["uplp_general"] = "Modell- & Animationredigering5"
 
 /////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Automatkarbiner"
@@ -299,11 +319,11 @@ L["uplp_sg_mz_silencer_heavy.description"] = "Tung ljuddämpare till hagelgevär
 /////////// Ammunition
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM-Patroner"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
-L["uplp_ar15_ammo_458.description"] = "Stora och kraftfulla .458 SOCOM-patroner som träffar väldigt hårt."
+L["uplp_ar15_ammo_458.description"] = "Stora och kraftfulla .458 SOCOM-patroner som träffar väldigt hårt." .. changeammo["357"]
 
 L["uplp_ar15_ammo_50.printname"] = ".50 Beowulf-Patroner"
 L["uplp_ar15_ammo_50.compactname"] = ".50 Beowulf"
-L["uplp_ar15_ammo_50.description"] = "Stora och kraftfulla .50 Beowulf-patroner som träffar väldigt hårt."
+L["uplp_ar15_ammo_50.description"] = "Stora och kraftfulla .50 Beowulf-patroner som träffar väldigt hårt." .. changeammo["357"]
 
 L["uplp_sg_shell_red.printname"] = "Hagelskott Patroner"
 L["uplp_sg_shell_red.compactname"] = "Hagelskott"
@@ -531,7 +551,7 @@ L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på RPK-16."
 ////// Magazines
 /// 7.62x39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Laddat med 7,62x39mm Sovjet som används av AK-47:an, AK-103:an och AK-15."
+local loaded762 = loaded .. "Laddat med " .. col.b .. "7,62x39mm Sovjet" .. col.e .. " som används av AK-47:an, AK-103:an och AK-15."
 
 L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7,62x39mm (Bakelit)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30P 7,62 (B)"
@@ -566,7 +586,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75P 7,62 T"
 L["uplp_ak_mag_762_drum.description"] = "75-patroners cylindriskt trummagasin." .. loaded762
 
 /// 5,45x39mm
-local loaded545 = loaded .. "Laddat med 5,45x39mm som används av AK-74:an och AK-105:an."
+local loaded545 = loaded .. "Laddat med " .. col.b .. "5,45x39mm" .. col.e .. " som används av AK-74:an och AK-105:an." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30-Patroner 5,45x39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30P 5,45 (P)"
@@ -597,7 +617,7 @@ L["uplp_ak_mag_545_drum.compactname"] = "75P 5,45 T"
 L["uplp_ak_mag_545_drum.description"] = "75-patroners cylindriskt trummagasin från RPK-16." .. loaded545
 
 /// 5,56x45mm NATO
-local loaded556 = loaded .. "Laddat med 5,56x45mm som används av AK-101:an och AK-102:an."
+local loaded556 = loaded .. "Laddat med " .. col.b .. "5,56x45mm" .. col.e .. " som används av AK-101:an och AK-102:an." .. changeammo.smg1
 
 L["uplp_ak_mag_556_30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30P 5,56 (P)"
@@ -614,11 +634,11 @@ L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin gjorda för att li
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Patroner AK-308 7,62x51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20S 7,62x51"
-L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddede med 7,62x51mm patroner."
+L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med " .. col.b .. "7,62x51mm patroner" .. col.e .. "." .. changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med 9x39mm patroner som används av AK-9:an."
+L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med " .. col.b .. "9x39mm patroner" .. col.e .. " som används av AK-9:an." .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "100-Serie Mynningsbroms"
@@ -802,11 +822,11 @@ L["uplp_ar15_gasblock_m16rail.printname"] = "Gasregulator med inbyggt Stolpkorn 
 L["uplp_ar15_gasblock_m16rail.compactname"] = "GR FK (S)"
 L["uplp_ar15_gasblock_m16rail.description"] = "Gasregulator med inbyggt M16/M4-stolpkorn. Kommer med flera skenor för att montera tillbehör."
 
-L["uplp_ar15_gasblock_min.printname"] = "Kompakt Gasregulator"
+L["uplp_ar15_gasblock_min.printname"] = "Standard Gasregulator"
 L["uplp_ar15_gasblock_min.compactname"] = "GR"
 L["uplp_ar15_gasblock_min.description"] = "Minimum gasregulator som tillåter AR-15-gevär att fungera."
 
-L["uplp_ar15_gasblock_min_red.printname"] = "Kompakt Gasregulator (Sporty Red)"
+L["uplp_ar15_gasblock_min_red.printname"] = "Standard Gasregulator (Sporty Red)"
 L["uplp_ar15_gasblock_min_red.compactname"] = "GR (SR)"
 L["uplp_ar15_gasblock_min_red.description"] = "Minimum gasregulator som tillåter AR-15-gevär att fungera." .. sportyred
 
@@ -815,7 +835,7 @@ L["uplp_ar15_gasblock_rail.compactname"] = "GR S"
 L["uplp_ar15_gasblock_rail.description"] = "Gasregulator med inbyggd toppmonterad skena för att montera stolpkorn."
 
 ////// Handguards
-local requires = "\n\n"
+local requires = "\n"
 local requires14 = requires .. "Kräver 356mm eller längre pipa."
 local requires16 = requires .. "Kräver 406mm eller längre pipa."
 local requires20 = requires .. "Kräver 508mm eller längre pipa."
@@ -830,8 +850,8 @@ L["uplp_ar15_hg_m16.printname"] = "A2-Handskydd"
 L["uplp_ar15_hg_m16.compactname"] = "A2"
 L["uplp_ar15_hg_m16.description"] = "AR-15-handskydd som användes på M16A2." .. requires16
 
-L["uplp_ar15_hg_m16short.printname"] = "A2 Kort Handskydd"
-L["uplp_ar15_hg_m16short.compactname"] = "A2 S"
+L["uplp_ar15_hg_m16short.printname"] = "Kort A2-Handskydd"
+L["uplp_ar15_hg_m16short.compactname"] = "K A2"
 L["uplp_ar15_hg_m16short.description"] = "Förkortat AR-15-handskydd som användes på M16A2." .. requires14
 
 L["uplp_ar15_hg_mlok.printname"] = "M-LOK-Handskydd"
@@ -858,12 +878,12 @@ L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL-Handskydd (Sport
 L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_ris.printname"] = "RIS Handskydd"
+L["uplp_ar15_hg_ris.printname"] = "RIS-Handskydd"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
 L["uplp_ar15_hg_ris.description"] = "Standard militär grad handskydd med inbyggt RIS-skenafunktionalitet." .. requires16
 
-L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handskydd"
-L["uplp_ar15_hg_risshort.compactname"] = "RIS S"
+L["uplp_ar15_hg_risshort.printname"] = "Kort RIS-Handskydd"
+L["uplp_ar15_hg_risshort.compactname"] = "K RIS"
 L["uplp_ar15_hg_risshort.description"] = "Förkortad version av ett militär grad handskydd med inbyggt RIS-skenafunktionalitet."
 
 L["uplp_ar15_hg_tac.printname"] = "Taktiskt Handskydd"
@@ -874,23 +894,23 @@ L["uplp_ar15_hg_tac_red.printname"] = "Taktiskt Handskydd (Sporty Red)"
 L["uplp_ar15_hg_tac_red.compactname"] = "Tactical (SR)"
 L["uplp_ar15_hg_tac_red.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär." .. requires16 .. sportyred
 
-L["uplp_ar15_hg_tacshort.printname"] = "Tactical Short Handskydd"
-L["uplp_ar15_hg_tacshort.compactname"] = "Tactical S"
+L["uplp_ar15_hg_tacshort.printname"] = "Kort Taktiskt Handskydd"
+L["uplp_ar15_hg_tacshort.compactname"] = "K Taktisk"
 L["uplp_ar15_hg_tacshort.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär."
 
-L["uplp_ar15_hg_tacshort_red.printname"] = "Tactical Short Handguard (Sporty Red)"
-L["uplp_ar15_hg_tacshort_red.compactname"] = "Tactical S (SR)"
+L["uplp_ar15_hg_tacshort_red.printname"] = "Kort Taktiskt Handskydd (Sporty Red)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "K Taktisk (SR)"
 L["uplp_ar15_hg_tacshort_red.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär." .. sportyred
 
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 ACP"
 L["uplp_ar15_mag_45_20.compactname"] = "20S .45"
-L["uplp_ar15_mag_45_20.description"] = "Konverterar AR-15 att acceptera 20-patroners .45 ACP magasin."
+L["uplp_ar15_mag_45_20.description"] = "Konverterar AR-15 att acceptera 20-patroners .45 ACP magasin." .. changeammo.pistol
 
 L["uplp_ar15_mag_45_40.printname"] = "40-Patroner .45 ACP"
 L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
-L["uplp_ar15_mag_45_40.description"] = "Konverterar AR-15 att acceptera 40-patroners .45 ACP magasin."
+L["uplp_ar15_mag_45_40.description"] = "Konverterar AR-15 att acceptera 40-patroners .45 ACP magasin." .. changeammo.pistol
 
 /// 9x19mm
 L["uplp_ar15_stm9_magwell.printname"] = "STM-9-Magasinbrunn"
@@ -899,15 +919,15 @@ L["uplp_ar15_stm9_magwell.description"] = "Sätter på en utsvängd magasinbrunn
 
 L["uplp_ar15_mag_glock_17.printname"] = "17-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17S 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Konverterar AR-15 att acceptera 17-patroners 9x19mm magasin från ett österrikiskt sidovapen."
+L["uplp_ar15_mag_glock_17.description"] = "Konverterar AR-15 att acceptera 17-patroners 9x19mm magasin från ett österrikiskt sidovapen." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_33.printname"] = "33-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_33.compactname"] = "33S 9x19"
-L["uplp_ar15_mag_glock_33.description"] = "Konverterar AR-15 att acceptera 33-patroners 9x19mm magasin från ett österrikiskt sidovapen."
+L["uplp_ar15_mag_glock_33.description"] = "Konverterar AR-15 att acceptera 33-patroners 9x19mm magasin från ett österrikiskt sidovapen." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9x19mm Drum"
 L["uplp_ar15_mag_glock_50.compactname"] = "50S 9x19"
-L["uplp_ar15_mag_glock_50.description"] = "Konverterar AR-15 att acceptera ett 50-patroners 9x19mm trummagasin gjort för ett österrikiskt sidovapen."
+L["uplp_ar15_mag_glock_50.description"] = "Konverterar AR-15 att acceptera ett 50-patroners 9x19mm trummagasin gjort för ett österrikiskt sidovapen." .. changeammo.pistol
 
 /// 5,56x45mm
 L["uplp_ar15_mag_drum.printname"] = "100-Patroner 5,56x45mm C-Drum"
@@ -1267,9 +1287,9 @@ L["uplp_molot_mag_long.printname"] = "8-Patroner Förstorad"
 L["uplp_molot_mag_long.compactname"] = "8P För."
 L["uplp_molot_mag_long.description"] = "8-patroner förstorade magasin."
 
-L["uplp_molot_mag_drum.printname"] = "19-Patroners Trumma"
+L["uplp_molot_mag_drum.printname"] = "19-Patroners PAWCO-Trumma"
 L["uplp_molot_mag_drum.compactname"] = "19P T"
-L["uplp_molot_mag_drum.description"] = "19-patroners trummagasin."
+L["uplp_molot_mag_drum.description"] = "19-patroners trummagasin av PAWCO."
 
 ////// Muzzle
 L["uplp_sg_mz_vepr.printname"] = "Molot-Choke"
@@ -1284,8 +1304,8 @@ L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
 /////////// Attachments
 ////// Irons
-L["uplp_awp_rs.printname"] = "Prickskyttegevär AW Järn och Korn"
-L["uplp_awp_rs.compactname"] = "AW JK"
+L["uplp_awp_rs.printname"] = "Järn och Korn"
+L["uplp_awp_rs.compactname"] = "JK"
 L["uplp_awp_rs.description"] = "Järn och korn från fabriken till prickskyttegeväret AW."
 
 ////// Barrels
