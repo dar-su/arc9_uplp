@@ -87,7 +87,7 @@ L["uplp_assets"] = "Original Assets1"
 L["uplp_animations"] = "Animations2"
 L["uplp_lua"] = "Weapon LUA3"
 L["uplp_sounds"] = "Sounds4"
-L["uplp_general"] = "Model & Animations Editing5"
+L["uplp_general"] = "Model & animations edits5"
 
 /////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Assault Rifles"
@@ -165,9 +165,9 @@ L["uplp_optic_rx1.printname"] = "Military Red Dot"
 L["uplp_optic_rx1.compactname"] = "Military"
 L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin intended for small arms."
 
-L["uplp_optic_srs.printname"] = "Robust Red Dot"
-L["uplp_optic_srs.compactname"] = "Robust"
-L["uplp_optic_srs.description"] = "Large reflex optic of American origin intended for use in harsh environments."
+L["uplp_optic_srs.printname"] = "SWX Red Dot"
+L["uplp_optic_srs.compactname"] = "SWX"
+L["uplp_optic_srs.description"] = "Large reflex optic of American origin intended for use in harsh environments. Quite bulky."
 
 L["uplp_optic_compm4.printname"] = "Spec-Ops Red Dot"
 L["uplp_optic_compm4.compactname"] = "Spec-Ops"
@@ -175,7 +175,7 @@ L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cyli
 
 L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight with Magnifier"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns."
+L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns. Are you sure you want to install it on that weapon? This doesn't look like a machine gun!"
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
@@ -205,12 +205,12 @@ L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
 L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
 
-L["uplp_optic_rmr.printname"] = "Sport Shooting Red Dot - Low Profile"
-L["uplp_optic_rmr.compactname"] = "Sport - LP"
+L["uplp_optic_rmr.printname"] = "XW Red Dot - Low Profile"
+L["uplp_optic_rmr.compactname"] = "XW - LP"
 L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
 
-L["uplp_optic_rmrhigh.printname"] = "Sport Shooting Red Dot - High Profile"
-L["uplp_optic_rmrhigh.compactname"] = "Sport - HP"
+L["uplp_optic_rmrhigh.printname"] = "XW Red Dot - High Profile"
+L["uplp_optic_rmrhigh.compactname"] = "XW - HP"
 L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms.\nMounted higher up using a spacer."
 
 L["uplp_optic_notacog.printname"] = "3x Military Scope"
@@ -233,7 +233,7 @@ L["uplp_optic_ez8x.printname"] = "8x Hunter Scope"
 L["uplp_optic_ez8x.compactname"] = "8x Hunter"
 L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification."
 
-L["uplp_optic_pm3.printname"] = "12x Military Marksman Scope"
+L["uplp_optic_pm3.printname"] = "12x Marksman Scope"
 L["uplp_optic_pm3.compactname"] = "12x MMS"
 L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification."
 
@@ -255,12 +255,12 @@ L["uplp_backup_optic_is.compactname"] = "CIS"
 L["uplp_backup_optic_is.description"] = "A front and rear iron sight mounted at an angle to provide easy target acquisition when using magnified optics."
 
 /////////// Grips
-L["uplp_grip_half.printname"] = "Heavy Handstop"
-L["uplp_grip_half.compactname"] = "H. Handstop"
-L["uplp_grip_half.description"] = "Heavy angled handstop that improves ergonomics and reduces recoil."
+L["uplp_grip_half.printname"] = "Hoki Foregrip"
+L["uplp_grip_half.compactname"] = "Hoki"
+L["uplp_grip_half.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil."
 
 L["uplp_grip_handstop.printname"] = "Lightweight Handstop"
-L["uplp_grip_handstop.compactname"] = "L. Handstop"
+L["uplp_grip_handstop.compactname"] = "Handstop"
 L["uplp_grip_handstop.description"] = "Lightweight angled handstop that improves ergonomics."
 
 L["uplp_grip_skelet.printname"] = "Skeleton Foregrip"
@@ -284,9 +284,9 @@ L["uplp_muzzle_cage.printname"] = "Flash Hider"
 L["uplp_muzzle_cage.compactname"] = "Flash Hider"
 L["uplp_muzzle_cage.description"] = "Muzzle device that hides the muzzle flash when firing."
 
-L["uplp_muzzle_fat.printname"] = "Heavy Muzzle Brake"
-L["uplp_muzzle_fat.compactname"] = "Heavy MB"
-L["uplp_muzzle_fat.description"] = "Heavy muzzle brake that adds more weight to the front of the gun, reducing overall recoil."
+L["uplp_muzzle_fat.printname"] = "Centurion Industries Heavy Muzzle Brake"
+L["uplp_muzzle_fat.compactname"] = "Centurion MB"
+L["uplp_muzzle_fat.description"] = "Heavy muzzle brake that adds more weight to the front of the gun, reducing overall recoil, made by Centurion Industries."
 
 L["uplp_muzzle_fhider.printname"] = "3-Pronged Flash Hider"
 L["uplp_muzzle_fhider.compactname"] = "3P FH"
@@ -298,23 +298,23 @@ L["uplp_muzzle_slim.description"] = "Muzzle brake that redirects propelled gases
 
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
-L["uplp_sg_mz_choke.compactname"] = "SG FC"
+L["uplp_sg_mz_choke.compactname"] = "Full Choke"
 L["uplp_sg_mz_choke.description"] = "Compact full choke muzzle for shotguns."
 
 L["uplp_sg_mz_gk.printname"] = "Shotgun Muzzle Brake"
-L["uplp_sg_mz_gk.compactname"] = "SG MB"
+L["uplp_sg_mz_gk.compactname"] = "Brake"
 L["uplp_sg_mz_gk.description"] = "Muzzle brake for shotguns that redirects propelled gases sideways for reduced horizontal recoil."
 
 L["uplp_sg_mz_heavy.printname"] = "Heavy Shotgun Muzzle Brake"
-L["uplp_sg_mz_heavy.compactname"] = "SG Heavy MB"
+L["uplp_sg_mz_heavy.compactname"] = "Heavy Brake"
 L["uplp_sg_mz_heavy.description"] = "Heavy muzzle brake for shotguns that redirects propelled gases sideways for even more reduced horizontal recoil."
 
 L["uplp_sg_mz_silencer.printname"] = "Shotgun Suppressor"
-L["uplp_sg_mz_silencer.compactname"] = "SG S."
+L["uplp_sg_mz_silencer.compactname"] = "Suppressor"
 L["uplp_sg_mz_silencer.description"] = "Sound suppressor for shotguns."
 
 L["uplp_sg_mz_silencer_heavy.printname"] = "Heavy Shotgun Suppressor"
-L["uplp_sg_mz_silencer_heavy.compactname"] = "SG Heavy S."
+L["uplp_sg_mz_silencer_heavy.compactname"] = "Heavy Sup."
 L["uplp_sg_mz_silencer_heavy.description"] = "Heavy sound suppressor for shotguns."
 
 /////////// Ammunition
@@ -322,9 +322,9 @@ L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
 L["uplp_ar15_ammo_458.description"] = "Large and powerful .458 SOCOM cartridges that pack a huge punch." .. changeammo["357"]
 
-L["uplp_ar15_ammo_50.printname"] = ".50 Beowulf Ammo"
-L["uplp_ar15_ammo_50.compactname"] = ".50 Beowulf"
-L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 Beowulf cartridges that pack a huge punch." .. changeammo["357"]
+L["uplp_ar15_ammo_50.printname"] = ".50 BeoWolf Ammo"
+L["uplp_ar15_ammo_50.compactname"] = ".50 BeoWolf"
+L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 BeOwOlf cartridges that pack a huge punch." .. changeammo["357"]
 
 L["uplp_sg_shell_red.printname"] = "00 Buckshot Rounds"
 L["uplp_sg_shell_red.compactname"] = "Buckshot"
@@ -367,7 +367,7 @@ L["uplp_weapon_ak"] = "AK"
 L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed by Mikhail Kalashnikov in 1947, is renowned for its rugged reliability and simplicity. It typically fires the 7.62x39mm cartridge and has been widely used by military forces and insurgents worldwide due to its durability and select-fire capability."
 
 L["uplp_weapon_ak12"] = "AK-12"
-L["uplp_weapon_ak12_desc"] = "The AK-12 is a modern assault rifle designed in Russia as a successor to the iconic AK-47. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
+L["uplp_weapon_ak12_desc"] = "The AK-12 is a modern assault rifle designed in Russia as a successor to the iconic AK-74. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
 
 L["uplp_weapon_ak_smg"] = "AK SMG"
 L["uplp_weapon_ak_smg_desc"] = "Various compact submachine guns based on the AK assault rifle. With the base being that of the AK platform, the AK SMG provides familiarity to those already familiar with the various AK family of rifles with the compact nature of SMGs."
@@ -384,7 +384,7 @@ L["uplp_ak_brl_16.description"] = "Standard 400mm (16\") barrel used on AK-100 r
 
 L["uplp_ak_brl_comp.printname"] = "300mm AK-100 Barrel"
 L["uplp_ak_brl_comp.compactname"] = "300mm"
-L["uplp_ak_brl_comp.description"] = "Short 300mm (12\") barrel used on the AK-102 and AK-104."
+L["uplp_ak_brl_comp.description"] = "Compact 300mm (12\") barrel used on the AK-102 and AK-104."
 
 L["uplp_ak_brl_akm.printname"] = "400mm AK Barrel"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
@@ -394,13 +394,13 @@ L["uplp_ak_brl_rpk.printname"] = "585mm RPK Barrel"
 L["uplp_ak_brl_rpk.compactname"] = "585mm RPK"
 L["uplp_ak_brl_rpk.description"] = "Heavy 585mm (23\") barrel used on the RPK-74 and RPK-74M."
 
-L["uplp_ak_brl_109.printname"] = "432mm AK-109 Barrel"
-L["uplp_ak_brl_109.compactname"] = "432mm 109"
-L["uplp_ak_brl_109.description"] = "Longer 432mm (17\") barrel used on the AK-109."
+L["uplp_ak_brl_109.printname"] = "432mm AK-107 Barrel"
+L["uplp_ak_brl_109.compactname"] = "432mm 107"
+L["uplp_ak_brl_109.description"] = "Longer 432mm (17\") barrel used on the AK-107 with Balanced Automatics Recoil System."
 
 L["uplp_ak_brl_su.printname"] = "203mm 74U Barrel"
 L["uplp_ak_brl_su.compactname"] = "203mm 74U"
-L["uplp_ak_brl_su.description"] = "Compact 203mm (8\") barrel used on the AKS-74U."
+L["uplp_ak_brl_su.description"] = "Short 203mm (8\") barrel used on the AKS-74U."
 
 L["uplp_ak_brl_12.printname"] = "400mm AK-12 Barrel"
 L["uplp_ak_brl_12.compactname"] = "400mm 12"
@@ -408,7 +408,7 @@ L["uplp_ak_brl_12.description"] = "Standard 400mm (16\") barrel used on the AK-1
 
 L["uplp_ak_brl_12k.printname"] = "230mm AK-12K Barrel"
 L["uplp_ak_brl_12k.compactname"] = "230mm 12K"
-L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the prototype AK-12K."
+L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the prototype AK-12K. Might be not real. Or is it?"
 
 L["uplp_ak_brl_19.printname"] = "400mm AK-19 Barrel"
 L["uplp_ak_brl_19.compactname"] = "400mm 19"
@@ -429,7 +429,7 @@ L["uplp_ak_dc_flat.description"] = "Smoothened out dust cover used on the AK-74M
 
 L["uplp_ak_dc_old.printname"] = "Vintage Dust Cover"
 L["uplp_ak_dc_old.compactname"] = "Vintage"
-L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK-47."
+L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK-47.\n\nInstall ".. col.b .. "this".. col.e .. " and ".. col.b .. "Vintage stock".. col.e .. " to change reciever model."
 
 L["uplp_ak_dc_rail.printname"] = "Dust Cover with Rail"
 L["uplp_ak_dc_rail.compactname"] = "Rail"
@@ -468,9 +468,9 @@ L["uplp_ak_grip_old.printname"] = "Vintage Pistol Grip"
 L["uplp_ak_grip_old.compactname"] = "Vintage"
 L["uplp_ak_grip_old.description"] = "Vintage pistol grip used on the AK-47."
 
-L["uplp_ak_grip_tac.printname"] = "Tactical Pistol Grip"
-L["uplp_ak_grip_tac.compactname"] = "Tactical"
-L["uplp_ak_grip_tac.description"] = "Comfortable and sporty pistol grip for AK rifles."
+L["uplp_ak_grip_tac.printname"] = "Lisyan Tactical Pistol Grip"
+L["uplp_ak_grip_tac.compactname"] = "Lisyan"
+L["uplp_ak_grip_tac.description"] = "Comfortable and sporty pistol grip for AK rifles made by Lisyan Tactical."
 
 L["uplp_ak_grip_tapco.printname"] = "PAWCO Pistol Grip"
 L["uplp_ak_grip_tapco.compactname"] = "PAWCO"
@@ -513,9 +513,9 @@ L["uplp_ak_hg_beryl.printname"] = "Beryl Handguard"
 L["uplp_ak_hg_beryl.compactname"] = "Beryl"
 L["uplp_ak_hg_beryl.description"] = "Tactical handguard made for an AK rifle of Polish origin."
 
-L["uplp_ak_hg_tac.printname"] = "Tactical Handguard"
-L["uplp_ak_hg_tac.compactname"] = "Tactical"
-L["uplp_ak_hg_tac.description"] = "Tactical, lightweight and sporty handguard for AK rifles."
+L["uplp_ak_hg_tac.printname"] = "Lisyan Tactical Handguard"
+L["uplp_ak_hg_tac.compactname"] = "Lisyan"
+L["uplp_ak_hg_tac.description"] = "Lightweight and sporty handguard for AK rifles made by Lisyan Tactical."
 
 L["uplp_ak_hg_wood.printname"] = "Wooden Handguard"
 L["uplp_ak_hg_wood.compactname"] = "Wooden"
@@ -527,15 +527,15 @@ L["uplp_ak_hg_dong.description"] = "Wooden handguard with built-in foregrip used
 
 L["uplp_ak_hg_azen.printname"] = "Zenith Handguard"
 L["uplp_ak_hg_azen.compactname"] = "Zenith"
-L["uplp_ak_hg_azen.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
+L["uplp_ak_hg_azen.description"] = "Handguard with RIS-rail functionality built for AK rifles."
 
 L["uplp_ak_hg_azen_c.printname"] = "Zenith Compact Handguard"
 L["uplp_ak_hg_azen_c.compactname"] = "Zenith C"
 L["uplp_ak_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
 
-L["uplp_ak_hg_su_tac.printname"] = "Tactical Handguard"
-L["uplp_ak_hg_su_tac.compactname"] = "Tactical"
-L["uplp_ak_hg_su_tac.description"] = "A replacement bottom handguard that adds RIS rail functionality."
+L["uplp_ak_hg_su_tac.printname"] = "Centurion Industries Handguard"
+L["uplp_ak_hg_su_tac.compactname"] = "Centurion"
+L["uplp_ak_hg_su_tac.description"] = "A replacement bottom handguard that adds RIS rail functionality made by Centurion Industries."
 
 L["uplp_ak_hg_su_dong.printname"] = "Dong Handguard"
 L["uplp_ak_hg_su_dong.compactname"] = "Dong"
@@ -558,9 +558,9 @@ L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62x39mm (Bakelite)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
 
-L["uplp_ak_mag_762_30_12.printname"] = "30-Round 7.62x39mm (AK-12-Style)"
+L["uplp_ak_mag_762_30_12.printname"] = "30-Round 7.62x39mm (AK-12 Style)"
 L["uplp_ak_mag_762_30_12.compactname"] = "30R 7.62 (12)"
-L["uplp_ak_mag_762_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded762
+L["uplp_ak_mag_762_30_12.description"] = "30-round magazine used on AK-15 rifle." .. loaded762
 
 L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
 L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
@@ -572,7 +572,7 @@ L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old
 
 L["uplp_ak_mag_762_30_oldest.printname"] = "30-Round 7.62x39mm (Smooth Steel)"
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (SS)"
-L["uplp_ak_mag_762_30_oldest.description"] = "30-round magazine made with smoothened out steel." .. loaded762
+L["uplp_ak_mag_762_30_oldest.description"] = "30-round magazine made with smoothened out steel. Really old one, its incredible how it is still working! Maybe you need to return it back into museum?" .. loaded762
 
 L["uplp_ak_mag_762_40.printname"] = "40-Round 7.62x39mm (Bakelite)"
 L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (B)"
@@ -587,7 +587,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
 L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
 
 /// 5.45x39mm
-local loaded545 = loaded .. "Loaded with " .. col.b .. "5.45x39mm" .. col.e .. " used by the AK-74 and AK-105." .. changeammo.smg1
+local loaded545 = loaded .. "Loaded with " .. col.b .. "5.45x39mm" .. col.e .. " used by the AK-74 and derivatives." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45x39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
@@ -599,11 +599,11 @@ L["uplp_ak_mag_545_30_bak.description"] = "30-round magazine out of AG-4S moldin
 
 L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45x39mm (Magpul)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30R 5.45 (PM)"
-L["uplp_ak_mag_545_30_pmag.description"] = "30-round PMAG manufactured by Magpul." .. loaded545
+L["uplp_ak_mag_545_30_pmag.description"] = "30-round PMAG manufactured by Magpul.  INSERT FAKE MAGPUL BRAND" .. loaded545
 
-L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45x39mm (AK-12-Style)"
+L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45x39mm (AK-12 Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (12)"
-L["uplp_ak_mag_545_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded545
+L["uplp_ak_mag_545_30_12.description"] = "30-round magazine used on AK-12 rifle." .. loaded545
 
 L["uplp_ak_mag_545_45.printname"] = "45-Round 5.45x39mm (Bakelite)"
 L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
@@ -626,20 +626,20 @@ L["uplp_ak_mag_556_30.description"] = "30-round magazine made out of polymer." .
 
 L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56x45mm (Magpul)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (PM)"
-L["uplp_ak_mag_556_30_pmag.description"] = "30-round PMAG manufactured by Magpul." .. loaded556
+L["uplp_ak_mag_556_30_pmag.description"] = "30-round PMAG manufactured by Magpul. INSERT FAKE MAGPUL BRAND" .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56x45mm (AK-12-Style)"
+L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56x45mm (AK-12 Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (12)"
-L["uplp_ak_mag_556_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine." .. loaded556
+L["uplp_ak_mag_556_30_12.description"] = "30-round magazine used on AK-19 rifle." .. loaded556
 
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Round AK-308 7.62x51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20R 7.62x51"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62x51mm rounds" .. col.e .. "." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62x51mm rounds" .. col.e .. " used on AK-308 rifle." ..  changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Round AK-9 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9x39mm rounds" .. col.e .. " used by the AK-9." .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9x39mm rounds" .. col.e .. " used by the AK-9. Only few hundreds of those were ever made!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "100-Series Muzzle Brake"
@@ -660,11 +660,11 @@ L["uplp_ak_mz_rpk.description"] = "Standard muzzle brake used on the RPK, RPK-74
 
 L["uplp_ak_mz_vityaz.printname"] = "Vityaz Muzzle Brake"
 L["uplp_ak_mz_vityaz.compactname"] = "Vityaz MB"
-L["uplp_ak_mz_vityaz.description"] = "Standard muzzle brake used on the PP-19-01 Vityaz."
+L["uplp_ak_mz_vityaz.description"] = "Standard muzzle brake used on the PP-19-01 \"Vityaz\"."
 
 L["uplp_ak_mz_bizon.printname"] = "Bizon Muzzle Brake"
 L["uplp_ak_mz_bizon.compactname"] = "Bizon MB"
-L["uplp_ak_mz_bizon.description"] = "Standard muzzle brake used on the PP-19 Bizon."
+L["uplp_ak_mz_bizon.description"] = "Standard muzzle brake used on the PP-19 \"Bizon\"."
 
 L["uplp_ak_mz_12.printname"] = "AK-12 Muzzle Brake"
 L["uplp_ak_mz_12.compactname"] = "AK-12 MB"
@@ -689,15 +689,15 @@ L["uplp_ak_stock_fold.description"] = "Folding stock used on the AK-103."
 
 L["uplp_ak_stock_skele.printname"] = "Skeleton Stock"
 L["uplp_ak_stock_skele.compactname"] = "Skeleton"
-L["uplp_ak_stock_skele.description"] = "Folding lightweight stock used on the AKS-74U."
+L["uplp_ak_stock_skele.description"] = "Folding lightweight stock used on the AKS-74 and derivatives."
 
 L["uplp_ak_stock_old.printname"] = "Vintage Stock"
 L["uplp_ak_stock_old.compactname"] = "Vintage"
-L["uplp_ak_stock_old.description"] = "Vintage stock used on the AK-47."
+L["uplp_ak_stock_old.description"] = "Vintage stock used on the first variants of AK rifles. Really old one!"
 
 L["uplp_ak_stock_rpk.printname"] = "Wooden RPK Stock"
 L["uplp_ak_stock_rpk.compactname"] = "RPK W"
-L["uplp_ak_stock_rpk.description"] = "Heavy wooden stock used on the RPK and RPK-74."
+L["uplp_ak_stock_rpk.description"] = "Heavy wooden stock used on the RPK-74."
 
 L["uplp_ak_stock_rpk74.printname"] = "Polymer RPK Stock"
 L["uplp_ak_stock_rpk74.compactname"] = "RPK P"
@@ -705,7 +705,7 @@ L["uplp_ak_stock_rpk74.description"] = "Heavy polymer stock used on the RPK-74M.
 
 L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
 L["uplp_ak_stock_wood.compactname"] = "Wooden"
-L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK-74."
+L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK-74 or AKM."
 
 L["uplp_ak_stock_beryl.printname"] = "Beryl Stock"
 L["uplp_ak_stock_beryl.compactname"] = "Beryl"
@@ -716,12 +716,12 @@ L["uplp_ak_stock_poly.compactname"] = "Polymer"
 L["uplp_ak_stock_poly.description"] = "Lightweight polymer stock for AK rifles."
 
 L["uplp_ak_stock_tube12.printname"] = "Buffer Tube (AK-12)"
-L["uplp_ak_stock_tube12.compactname"] = "Buffer (12)"
-L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used on the AK-12. Allows installation of AR-15 compatible stocks."
+L["uplp_ak_stock_tube12.compactname"] = "AK-12 Tube"
+L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used on the AK-12. Allows installation of AR-15 compatible stocks. Fun-fact: the tube diameter is slightly different from usual AR-15 pipe, making most AR-15 stocks be wobbly (but we're in game so everything is perfect)."
 
 L["uplp_ak_stock_tube.printname"] = "Buffer Tube"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
-L["uplp_ak_stock_tube.description"] = "Buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
+L["uplp_ak_stock_tube.description"] = "Aftermarket buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
 
 L["uplp_ak_stock_molot.printname"] = "Molot Stock"
 L["uplp_ak_stock_molot.compactname"] = "Molot"
@@ -785,18 +785,18 @@ L["uplp_ar15_chandle_std.printname"] = "Standard Charging Handle"
 L["uplp_ar15_chandle_std.compactname"] = "Standard"
 L["uplp_ar15_chandle_std.description"] = "Traditional rear charging handle for use on AR-15 rifles."
 
-L["uplp_ar15_chandle_tac.printname"] = "Tactical Charging Handle"
-L["uplp_ar15_chandle_tac.compactname"] = "Tactical"
-L["uplp_ar15_chandle_tac.description"] = "A sporty, tactical charging handle for use on AR-15 rifles."
+L["uplp_ar15_chandle_tac.printname"] = "Hoki Armory Charging Handle"
+L["uplp_ar15_chandle_tac.compactname"] = "Hoki"
+L["uplp_ar15_chandle_tac.description"] = "A sporty, tactical charging handle for use on AR-15 rifles made by Hoki Armory."
 
-L["uplp_ar15_chandle_tacblack.printname"] = "Tactical Charging Handle (Pitch Black)"
-L["uplp_ar15_chandle_tacblack.compactname"] = "Tactical (PB)"
-L["uplp_ar15_chandle_tacblack.description"] = "A sporty, tactical charging handle for use on AR-15 rifles.\n\nSpecial Pitch Black version."
+L["uplp_ar15_chandle_tacblack.printname"] = "Hoki Armory Charging Handle (Pitch Black)"
+L["uplp_ar15_chandle_tacblack.compactname"] = "Hoki (PB)"
+L["uplp_ar15_chandle_tacblack.description"] = "A sporty, tactical charging handle for use on AR-15 rifles made by Hoki Armory.\n\nSpecial Pitch Black version."
 
 ////// Front Sights
-L["uplp_ar15_fs_mbus.printname"] = "Flip-up MBUS Front Sight"
-L["uplp_ar15_fs_mbus.compactname"] = "MBUS"
-L["uplp_ar15_fs_mbus.description"] = "A flip-up front sight manufactured by Magpul."
+L["uplp_ar15_fs_mbus.printname"] = "Flip-up MBS Front Sight"
+L["uplp_ar15_fs_mbus.compactname"] = "MBS"
+L["uplp_ar15_fs_mbus.description"] = "A flip-up front sight manufactured by Magpul. INSERT FAKE MAGPUL BRAND"
 
 L["uplp_ar15_fs_scalar.printname"] = "Scalarworks Front Sight"
 L["uplp_ar15_fs_scalar.compactname"] = "Scalarworks"
@@ -831,8 +831,8 @@ L["uplp_ar15_gasblock_min_red.printname"] = "Standard Gas Block (Sporty Red)"
 L["uplp_ar15_gasblock_min_red.compactname"] = "GB (SR)"
 L["uplp_ar15_gasblock_min_red.description"] = "The bare minimum gas block allowing the AR-15 rifle to function." .. sportyred
 
-L["uplp_ar15_gasblock_rail.printname"] = "Gas Block with Rail"
-L["uplp_ar15_gasblock_rail.compactname"] = "GB R"
+L["uplp_ar15_gasblock_rail.printname"] = "Centurion Industries Gas Block with Rail"
+L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
 L["uplp_ar15_gasblock_rail.description"] = "Gas block with built-in top rail for mounting front sights."
 
 ////// Handguards
@@ -863,19 +863,19 @@ L["uplp_ar15_hg_mlokshort.printname"] = "M-LOK Short Handguard"
 L["uplp_ar15_hg_mlokshort.compactname"] = "M-LOK S"
 L["uplp_ar15_hg_mlokshort.description"] = "Shortened version of the tactical M-LOK handguard allowing installation of various accessories."
 
-L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuku S-15 Handguard"
+L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuko S-15 Handguard"
 L["uplp_ar15_hg_nwsu_s15.compactname"] = "S-15"
 L["uplp_ar15_hg_nwsu_s15.description"] = "Lightweight S-15 handguard manufactured by Nowosuko." .. requires14 .. onlycompact
 
-L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15 Handguard (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuko S-15 Handguard (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
 L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuko." .. requires14 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL Handguard"
+L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuko S-15 XL Handguard"
 L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
 L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko." .. requires16 .. onlycompact
 
-L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL Handguard (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuko S-15 XL Handguard (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko." .. requires16 .. onlycompact .. sportyred
 
@@ -887,21 +887,21 @@ L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handguard"
 L["uplp_ar15_hg_risshort.compactname"] = "RIS S"
 L["uplp_ar15_hg_risshort.description"] = "Shortened version of a military-grade handguard with built-in RIS rail system."
 
-L["uplp_ar15_hg_tac.printname"] = "Tactical Handguard"
-L["uplp_ar15_hg_tac.compactname"] = "Tactical"
-L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 rifles." .. requires16
+L["uplp_ar15_hg_tac.printname"] = "Hoki Armory Handguard"
+L["uplp_ar15_hg_tac.compactname"] = "Hoki"
+L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16
 
-L["uplp_ar15_hg_tac_red.printname"] = "Tactical Handguard (Sporty Red)"
-L["uplp_ar15_hg_tac_red.compactname"] = "Tactical (SR)"
-L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles." .. requires16 .. sportyred
+L["uplp_ar15_hg_tac_red.printname"] = "Hoki Armory Handguard (Sporty Red)"
+L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (SR)"
+L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16 .. sportyred
 
-L["uplp_ar15_hg_tacshort.printname"] = "Tactical Short Handguard"
-L["uplp_ar15_hg_tacshort.compactname"] = "Tactical S"
-L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handguard for AR-15 rifles."
+L["uplp_ar15_hg_tacshort.printname"] = "Hoki Armory Short Handguard"
+L["uplp_ar15_hg_tacshort.compactname"] = "Hoki S"
+L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory."
 
-L["uplp_ar15_hg_tacshort_red.printname"] = "Tactical Short Handguard (Sporty Red)"
-L["uplp_ar15_hg_tacshort_red.compactname"] = "Tactical S (SR)"
-L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles." .. sportyred
+L["uplp_ar15_hg_tacshort_red.printname"] = "Hoki Armory Short Handguard (Sporty Red)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (SR)"
+L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. sportyred
 
 ////// Magazines
 /// .45 ACP
@@ -914,57 +914,57 @@ L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
 L["uplp_ar15_mag_45_40.description"] = "Converts the AR-15 to accept 40-round .45 ACP magazines." .. changeammo.pistol
 
 /// 9x19mm
-L["uplp_ar15_stm9_magwell.printname"] = "STM-9 Magwell"
+L["uplp_ar15_stm9_magwell.printname"] = "AR-PDW Magwell"
 L["uplp_ar15_stm9_magwell.compactname"] = "Magwell"
 L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier reloads."
 
 L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 to accept 17-round 9x19mm magazines from an Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_17.description"] = "Converts rifle into high-firerate 9x19 AR-PDW that accepts magazines from well-known Austrian pistol.\n17-round capacity standard mag  fuckk please write better desc." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm"
 L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19"
-L["uplp_ar15_mag_glock_33.description"] = "Converts the AR-15 to accept 33-round 9x19mm magazines from an Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_33.description"] = "Converts rifle into high-firerate 9x19 AR-PDW that accepts magazines from well-known Austrian pistol.\n33-round capacity long mag  fuckk please write better desc." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9x19mm Drum"
 L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19"
-L["uplp_ar15_mag_glock_50.description"] = "Converts the AR-15 to accept a 50-round 9x19mm drum magazine made for an Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_50.description"] = "Converts rifle into high-firerate 9x19 AR-PDW that accepts magazines from well-known Austrian pistol.\n50-round capacity aftermarket drum  fuckk please write  better desc" .. changeammo.pistol
 
 /// 5.56x45mm
-L["uplp_ar15_mag_drum.printname"] = "100-Round 5.56x45mm C-Drum"
-L["uplp_ar15_mag_drum.compactname"] = "100R 5.56 D"
-L["uplp_ar15_mag_drum.description"] = "100-round C-Drum magazine."
+L["uplp_ar15_mag_drum.printname"] = "100-Round 5.56x45mm Dual Drum"
+L["uplp_ar15_mag_drum.compactname"] = "100R Drum"
+L["uplp_ar15_mag_drum.description"] = "100-round Dual Drum magazine."
 
 L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30R 5.56 (416)"
+L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
 L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56x45mm (Polymer)"
-L["uplp_ar15_mag_pmag10.compactname"] = "10R 5.56 (P)"
-L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer."
+L["uplp_ar15_mag_pmag10.compactname"] = "10R Poly"
+L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer. INSERT FAKE MAGPUL BRAND"
 
 L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
-L["uplp_ar15_mag_pmag20.compactname"] = "20R 5.56 (P)"
-L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer."
+L["uplp_ar15_mag_pmag20.compactname"] = "20R Poly"
+L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer. INSERT FAKE MAGPUL BRAND"
 
 L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
-L["uplp_ar15_mag_pmag30.compactname"] = "30R 5.56 (P)"
-L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer."
+L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
+L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer. INSERT FAKE MAGPUL BRAND"
 
-L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Drum"
-L["uplp_ar15_mag_pmag60.compactname"] = "60R 5.56 D"
-L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer."
+L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
+L["uplp_ar15_mag_pmag60.compactname"] = "60R Drum"
+L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer. INSERT FAKE MAGPUL BRAND"
 
 L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
-L["uplp_ar15_mag_stanag30.compactname"] = "30R 5.56 (A)"
+L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_ar15_mag_stanag30.description"] = "30-round magazine made out of aluminium."
 
 L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56x45mm (Aluminium)"
-L["uplp_ar15_mag_stanag40.compactname"] = "40R 5.56 (A)"
+L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of aluminium."
 
 L["uplp_ar15_mag_stanag60.printname"] = "60-Round 5.56x45mm Quadstacked"
-L["uplp_ar15_mag_stanag60.compactname"] = "60R 5.56 (Q)"
+L["uplp_ar15_mag_stanag60.compactname"] = "60R Quad"
 L["uplp_ar15_mag_stanag60.description"] = "60-round aluminium magazine expanded horizontally to hold more ammunition."
 
 ////// Pistol Grips
@@ -974,31 +974,31 @@ L["uplp_ar15_pgrip_416.description"] = "Standard pistol grip from a modified AR-
 
 L["uplp_ar15_pgrip_massive.printname"] = "Massive Pistol Grip"
 L["uplp_ar15_pgrip_massive.compactname"] = "Massive"
-L["uplp_ar15_pgrip_massive.description"] = "Oversized pistol grip for AR-15 rifles."
+L["uplp_ar15_pgrip_massive.description"] = "Oversized pistol grip for AR-15 rifles. Might be more comfortable for your hand."
 
-L["uplp_ar15_pgrip_modern.printname"] = "Modern Pistol Grip"
-L["uplp_ar15_pgrip_modern.compactname"] = "Modern"
-L["uplp_ar15_pgrip_modern.description"] = "Modernized pistol grip for AR-15 rifles."
+L["uplp_ar15_pgrip_modern.printname"] = "Nowosuko Pistol Grip"
+L["uplp_ar15_pgrip_modern.compactname"] = "Nowosuko"
+L["uplp_ar15_pgrip_modern.description"] = "Modernized pistol grip for AR-15 rifles made by Nowosuko."
 
 L["uplp_ar15_pgrip_psg.printname"] = "Sharpshooter Pistol Grip"
 L["uplp_ar15_pgrip_psg.compactname"] = "Sharpshooter"
 L["uplp_ar15_pgrip_psg.description"] = "Heavy pistol grip with built-in palm shelf for AR-15 rifles."
 
-L["uplp_ar15_pgrip_skel.printname"] = "Skeleton Pistol Grip"
+L["uplp_ar15_pgrip_skel.printname"] = "Centurion Industries Skeleton Pistol Grip"
 L["uplp_ar15_pgrip_skel.compactname"] = "Skeleton"
-L["uplp_ar15_pgrip_skel.description"] = "Lightweight pistol grip for AR-15 rifles."
+L["uplp_ar15_pgrip_skel.description"] = "Lightweight pistol grip for AR-15 rifles made by Centurion Industries."
 
-L["uplp_ar15_pgrip_skel_red.printname"] = "Skeleton Pistol Grip (Sporty Red)"
+L["uplp_ar15_pgrip_skel_red.printname"] = "Centurion Industries Skeleton Pistol Grip (Sporty Red)"
 L["uplp_ar15_pgrip_skel_red.compactname"] = "Skeleton (SR)"
-L["uplp_ar15_pgrip_skel_red.description"] = "Lightweight pistol grip for AR-15 rifles." .. sportyred
+L["uplp_ar15_pgrip_skel_red.description"] = "Lightweight pistol grip for AR-15 rifles made by Centurion Industries." .. sportyred
 
 L["uplp_ar15_pgrip_std.printname"] = "Standard Pistol Grip"
 L["uplp_ar15_pgrip_std.compactname"] = "Standard"
 L["uplp_ar15_pgrip_std.description"] = "Traditional pistol grip for AR-15 rifles."
 
-L["uplp_ar15_pgrip_tac.printname"] = "Tactical Pistol Grip"
-L["uplp_ar15_pgrip_tac.compactname"] = "Tactical"
-L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles."
+L["uplp_ar15_pgrip_tac.printname"] = "Hoki Armory Pistol Grip"
+L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
+L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles made by Hoki Armory."
 
 ////// Receiver
 L["uplp_ar15_reciever_m16.printname"] = "Standard Receiver with Carry Handle"
@@ -1009,18 +1009,18 @@ L["uplp_ar15_reciever_m4.printname"] = "Standard Receiver"
 L["uplp_ar15_reciever_m4.compactname"] = "Standard"
 L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
 
-L["uplp_ar15_reciever_modern.printname"] = "Tactical Receiver"
+L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Tactical Receiver"
 L["uplp_ar15_reciever_modern.compactname"] = "Tactical"
-L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed."
+L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
 L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
 L["uplp_ar15_rs_m4.description"] = "Standard issue rear sight for AR-15 rifles."
 
-L["uplp_ar15_rs_mbus.printname"] = "Flip-up MBUS Rear Sight"
-L["uplp_ar15_rs_mbus.compactname"] = "MBUS"
-L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by Magpul."
+L["uplp_ar15_rs_mbus.printname"] = "Flip-up MBS Rear Sight"
+L["uplp_ar15_rs_mbus.compactname"] = "MBS"
+L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by Magpul. INSERT FAKE MAGPUL BRAND"
 
 L["uplp_ar15_rs_scalar.printname"] = "Scalarworks Rear Sight"
 L["uplp_ar15_rs_scalar.compactname"] = "Scalarworks"
@@ -1055,17 +1055,17 @@ L["uplp_ar15_stock_light.printname"] = "Light Battle Stock"
 L["uplp_ar15_stock_light.compactname"] = "Light"
 L["uplp_ar15_stock_light.description"] = "Lightweight adjustable stock for AR-15 rifles."
 
-L["uplp_ar15_stock_m16.printname"] = "Fixed Stock"
-L["uplp_ar15_stock_m16.compactname"] = "Fixed"
+L["uplp_ar15_stock_m16.printname"] = "M16 Fixed Stock"
+L["uplp_ar15_stock_m16.compactname"] = "M16"
 L["uplp_ar15_stock_m16.description"] = "Fixed stock used on the M16."
 
 L["uplp_ar15_stock_m4.printname"] = "M4 Stock"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
 L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4."
 
-L["uplp_ar15_stock_modern.printname"] = "Competition Stock"
-L["uplp_ar15_stock_modern.compactname"] = "Competition"
-L["uplp_ar15_stock_modern.description"] = "Lightweight stock made for competition for AR-15 rifles."
+L["uplp_ar15_stock_modern.printname"] = "Centurion Industries Stock"
+L["uplp_ar15_stock_modern.compactname"] = "Centurion"
+L["uplp_ar15_stock_modern.description"] = "Lightweight stock made for competition for AR-15 rifles made by Centurion Industries."
 
 L["uplp_ar15_stock_pdw.printname"] = "PDW Stock"
 L["uplp_ar15_stock_pdw.compactname"] = "PDW"
@@ -1075,13 +1075,13 @@ L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter Stock"
 L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
 L["uplp_ar15_stock_sniper.description"] = "Adjustable heavy stock for AR-15 rifles."
 
-L["uplp_ar15_stock_tac.printname"] = "Tactical Stock"
-L["uplp_ar15_stock_tac.compactname"] = "Tactical"
-L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles."
+L["uplp_ar15_stock_tac.printname"] = "Hoki Armory Stock"
+L["uplp_ar15_stock_tac.compactname"] = "Hoki"
+L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles made by Hoki Armory."
 
 L["uplp_ar15_stock_veryheavy.printname"] = "Marksman Stock"
 L["uplp_ar15_stock_veryheavy.compactname"] = "Marksman"
-L["uplp_ar15_stock_veryheavy.description"] = "Very heavy stock for AR-15 rifles."
+L["uplp_ar15_stock_veryheavy.description"] = "Very heavy stock for AR-15 rifles. INSERT FAKE MAGPUL BRAND"
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1115,7 +1115,7 @@ L["uplp_deag_trig_light.description"] = "Replaces the trigger, springs and hamme
 
 L["uplp_deag_trig_sport.printname"] = "Automatic Action"
 L["uplp_deag_trig_sport.compactname"] = "Automatic"
-L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in fully automatic, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones."
+L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in fully automatic, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones. I guess this is not really legal, but we won't tell anyone!"
 
 ////// Barrels
 L["uplp_deag_barrel_classic.printname"] = "Classic Barrel"
@@ -1171,13 +1171,13 @@ L["uplp_mutant_hg_long.printname"] = "Tactical XL Handguard"
 L["uplp_mutant_hg_long.compactname"] = "Tactical XL"
 L["uplp_mutant_hg_long.description"] = "Long tactical handguard made for the Mutant." .. requires19
 
-L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6 Handguard"
-L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
-L["uplp_mutant_hg_nowosuku.description"] = "Lightweight SX6 handguard manufactured by Nowosuko."
+L["uplp_mutant_hg_Nowosuko.printname"] = "Nowosuko SX6 Handguard"
+L["uplp_mutant_hg_Nowosuko.compactname"] = "SX6"
+L["uplp_mutant_hg_Nowosuko.description"] = "Lightweight SX6 handguard manufactured by Nowosuko."
 
-L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
-L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
-L["uplp_mutant_hg_nowosuku_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuko." .. requires19
+L["uplp_mutant_hg_Nowosuko_xl.printname"] = "Nowosuko SX6 XL Handguard"
+L["uplp_mutant_hg_Nowosuko_xl.compactname"] = "SX6 XL"
+L["uplp_mutant_hg_Nowosuko_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuko." .. requires19
 
 L["uplp_mutant_hg_short.printname"] = "Tactical Handguard"
 L["uplp_mutant_hg_short.compactname"] = "Tactical"
@@ -1253,28 +1253,28 @@ L["uplp_molot_hg_azen_c.printname"] = "Zenith Compact Handguard"
 L["uplp_molot_hg_azen_c.compactname"] = "Zenith C"
 L["uplp_molot_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK-rifles."
 
-L["uplp_molot_hg_tac.printname"] = "Tactical Handguard (Sporty Red)"
-L["uplp_molot_hg_tac.compactname"] = "Tactical (SR)"
-L["uplp_molot_hg_tac.description"] = "Tactical, lightweight and sporty handguard for AK rifles." .. sportyred
+L["uplp_molot_hg_tac.printname"] = "Lisyan Tactical Handguard (Sporty Red)"
+L["uplp_molot_hg_tac.compactname"] = "Lisyan (SR)"
+L["uplp_molot_hg_tac.description"] = "Tactical, lightweight and sporty handguard for AK rifles made by Lisyan Tactical." .. sportyred
 
-L["uplp_molot_hg_tac_b.printname"] = "Tactical Handguard (Pitch Black)"
-L["uplp_molot_hg_tac_b.compactname"] = "Tactical (PB)"
-L["uplp_molot_hg_tac_b.description"] = "Tactical, lightweight and sporty handguard for AK rifles." .. pitchblack
+L["uplp_molot_hg_tac_b.printname"] = "Lisyan Tactical Handguard (Pitch Black)"
+L["uplp_molot_hg_tac_b.compactname"] = "Lisyan (PB)"
+L["uplp_molot_hg_tac_b.description"] = "Tactical, lightweight and sporty handguard for AK rifles made by Lisyan Tactical." .. pitchblack
 
-L["uplp_molot_hg_tac_w.printname"] = "Tactical Handguard (Arctic White)"
-L["uplp_molot_hg_tac_w.compactname"] = "Tactical (AW)"
-L["uplp_molot_hg_tac_w.description"] = "Tactical, lightweight and sporty handguard for AK rifles." .. arcticwhite
+L["uplp_molot_hg_tac_w.printname"] = "Lisyan Tactical Handguard (Arctic White)"
+L["uplp_molot_hg_tac_w.compactname"] = "Lisyan (AW)"
+L["uplp_molot_hg_tac_w.description"] = "Tactical, lightweight and sporty handguard for AK rifles made by Lisyan Tactical." .. arcticwhite
 
 L["uplp_molot_hg_cool.printname"] = "ICSSC Handguard Mk1"
 L["uplp_molot_hg_cool.compactname"] = "ICSSC Mk1"
-L["uplp_molot_hg_cool.description"] = "Competitive handguard built for the ICSSC (International Competitive Sport Shooting Competition).\nMade out of polymer with sporty red accents."
+L["uplp_molot_hg_cool.description"] = "Competitive handguard built for the ICSSC (International Competitive Sport Shooting Competition).\nMade out of polymer with sporty red accents. THIS NAME QUITE SUCKS"
 
 L["uplp_molot_hg_cool2.printname"] = "ICSSC Handguard Mk2"
 L["uplp_molot_hg_cool2.compactname"] = "ICSSC Mk2"
-L["uplp_molot_hg_cool2.description"] = "Competitive handguard built for the ICSSC (International Competitive Sport Shooting Competition).\nMade out of aluminium with sporty red accents."
+L["uplp_molot_hg_cool2.description"] = "Competitive handguard built for the ICSSC (International Competitive Sport Shooting Competition).\nMade out of aluminium with sporty red accents. THIS NAME QUITE SUCKS"
 
 ////// Internals
-L["uplp_molot_bolt_light.printname"] = "Lightweight Sport Shooting Internals"
+L["uplp_molot_bolt_light.printname"] = "Lightweight Shooting Internals"
 L["uplp_molot_bolt_light.compactname"] = "Lightweight"
 L["uplp_molot_bolt_light.description"] = "Replaces the internal springs and bolts, trigger, magazine release, charging handle, bolt and safety with much more lightweight parts."
 
@@ -1329,7 +1329,7 @@ L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the
 -- L["uplp_awp_bp.printname"] = "Built-in AW Bipod"
 L["uplp_awp_bp.printname"] = "AW Sniper Bipod"
 L["uplp_awp_bp.compactname"] = "AW B."
-L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants."
+L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants. Uses outdated mecahanism, not that stable or comfortable. There's much better variants on aftermarket nowadays!\n\nWill be replaced with different model when used on eXtreme stocks."
 
 -- L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
 -- L["uplp_awp_hbp.compactname"] = "RM B."
@@ -1392,7 +1392,7 @@ L["uplp_awp_stock_awm.description"] = "Standard stock with foldable capabilities
 
 L["uplp_awp_stock_awp.printname"] = "Police Stock"
 L["uplp_awp_stock_awp.compactname"] = "Police"
-L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide.\n\nNot compatible with < 5-Round .338 >"
+L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide."
 
 L["uplp_awp_stock_tube.printname"] = "Foldable Stock with Buffer Tube"
 L["uplp_awp_stock_tube.compactname"] = "Foldable BT"
@@ -1400,7 +1400,7 @@ L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer t
 
 //////////////////// FN57
 L["uplp_weapon_fn57"] = "MRD57"
-L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for its unique chambering in the 5.7x28mm cartridge, originally designed for use in select fire weapons. It features a high-capacity magazine, low recoil, and is prized for its armor-piercing capabilities, making it popular among military and law enforcement units worldwide."
+L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for its unique chambering in the 5.7x28mm cartridge, originally designed for use in select fire weapons. It features a high-capacity magazine, low recoil, and is prized for its armor-piercing capabilities, making it popular among military and law enforcement units worldwide. Write here something about this being new fresh pistol"
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
@@ -1408,12 +1408,12 @@ L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 ////// Mags
 L["uplp_fn57_mag_ext.printname"] = "27-Round Extended Magazine"
 L["uplp_fn57_mag_ext.compactname"] = "27R Ext."
-L["uplp_fn57_mag_ext.description"] = "Larger 27-round magazine for the MRD57."
+L["uplp_fn57_mag_ext.description"] = "Larger after-market 27-round magazine for the MRD57."
 
 ////// Trigger
 L["uplp_fn57_trigger_auto.printname"] = "Automatic Action"
 L["uplp_fn57_trigger_auto.compactname"] = "Automatic"
-L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in " .. col.g .. "fully automatic" .. col.e .. ", sacrificing recoil control."
+L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in " .. col.g .. "fully automatic" .. col.e .. ", sacrificing recoil control. I guess this is quite illegal, but we won't tell anyone!"
 
 ////// Skins
 L["uplp_fn57_skin_tan_full.printname"] = "Full Tan"
@@ -1448,4 +1448,4 @@ L["uplp_mp7_mag_20.description"] = "Shortened magazine that holds 20 rounds."
 ////// Irons
 L["uplp_mp7_sight_folded.printname"] = "PDW Iron Sights"
 L["uplp_mp7_sight_folded.compactname"] = "PDW IS"
-L["uplp_mp7_sight_folded.description"] = "Flips the iron sights down and makes them smaller for quicker target acquisition."
+L["uplp_mp7_sight_folded.description"] = "Flips the iron sights down and makes them smaller for quicker target acquisition.IDK HOW IRONS WORK RN BUT   The PDW-7 ironsights are useful even while folded  blah-blah  pistol-like sights"
