@@ -99,6 +99,7 @@ SWEP.PhysBulletDrag = 1.5
 -- Magazine Info
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
+SWEP.Ammo = "smg1"
 
 -- Recoil
 SWEP.Recoil = 1.75

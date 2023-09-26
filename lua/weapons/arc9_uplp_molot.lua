@@ -96,6 +96,7 @@ SWEP.PhysBulletDrag = 1.5
 -- Magazine Info
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 5
+SWEP.Ammo = "buckshot"
 
 -- Recoil
 SWEP.Recoil = 2

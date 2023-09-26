@@ -76,6 +76,7 @@ SWEP.MuzzleVelocity = 719
 -- Mag size --
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 30 -- Self-explanatory.
+SWEP.Ammo = "pistol"
 
 -- Recoil --
 
