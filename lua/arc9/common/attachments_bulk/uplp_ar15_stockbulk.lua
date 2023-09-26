@@ -7,7 +7,7 @@ local iconfolder = "entities/uplp_attachements/ar15/"
 
 ATT = {}
 
-ATT.PrintName = "H&K HK416 Stock"
+ATT.PrintName = "416 Stock"
 ATT.CompactName = "416"
 ATT.Description = ATT.PrintName
 
@@ -317,8 +317,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_stock_tac")
 
 ATT = {}
 
-ATT.PrintName = "Marksman Stock"
-ATT.CompactName = "Marksman"
+ATT.PrintName = "ApexCore Systems Heavy Stock"
+ATT.CompactName = "ApexCore"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "svheavy.png", "mips smooth")

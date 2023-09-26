@@ -64,8 +64,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_grip_old")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Pistol Grip"
-ATT.CompactName = "Tactical"
+ATT.PrintName = "Lisyan Tactical Pistol Grip"
+ATT.CompactName = "Lisyan"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")

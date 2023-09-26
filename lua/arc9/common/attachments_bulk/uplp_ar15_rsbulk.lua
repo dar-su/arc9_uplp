@@ -32,8 +32,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_rs_m4")
 
 ATT = {}
 
-ATT.PrintName = "MBUS Flip-up Rear Sight"
-ATT.CompactName = "MBUS"
+ATT.PrintName = "Flip-up MBS Rear Sight"
+ATT.CompactName = "MBS"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "rm.png", "mips smooth")

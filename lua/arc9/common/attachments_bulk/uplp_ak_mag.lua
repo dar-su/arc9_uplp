@@ -21,7 +21,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_bak")
 
 ATT = {}
 
-ATT.PrintName = "30-Round 7.62x39mm (AK-12-Style)"
+ATT.PrintName = "30-Round 7.62x39mm (AK-12 Style)"
 ATT.CompactName = "30R 7.62 (12)"
 ATT.Description = ATT.PrintName
 

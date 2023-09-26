@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/"
 
 ATT = {}
 
-ATT.PrintName = "Heavy Handstop"
-ATT.CompactName = "H. Handstop"
+ATT.PrintName = "Hoki Foregrip"
+ATT.CompactName = "Hoki"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "half.png", "mips smooth")
@@ -43,7 +43,7 @@ ARC9.LoadAttachment(ATT, "uplp_grip_half")
 ATT = {}
 
 ATT.PrintName = "Lightweight Handstop"
-ATT.CompactName = "L. Handstop"
+ATT.CompactName = "Handstop"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hsb.png", "mips smooth")

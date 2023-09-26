@@ -111,8 +111,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_beryl")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Handguard"
-ATT.CompactName = "Tactical"
+ATT.PrintName = "Lisyan Tactical Handguard"
+ATT.CompactName = "Lisyan"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tca.png", "mips smooth")
@@ -245,8 +245,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_azen")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Handguard"
-ATT.CompactName = "Tactical"
+ATT.PrintName = "Centurion Industries Handguard"
+ATT.CompactName = "Centurion"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sutac.png", "mips smooth")

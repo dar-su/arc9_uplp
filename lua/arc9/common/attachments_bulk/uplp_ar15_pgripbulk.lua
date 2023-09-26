@@ -51,8 +51,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_massive")
 
 ATT = {}
 
-ATT.PrintName = "Modern Pistol Grip"
-ATT.CompactName = "Modern"
+ATT.PrintName = "Nowosuko Pistol Grip"
+ATT.CompactName = "Nowosuko"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "gmod.png", "mips smooth")
@@ -73,8 +73,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_modern")
 
 ATT = {}
 
-ATT.PrintName = "Sharpshooter Pistol Grip"
-ATT.CompactName = "Sharpshooter"
+ATT.PrintName = "ApexCore Systems Pistol Grip"
+ATT.CompactName = "ApexCore"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "gpsg.png", "mips smooth")
@@ -103,8 +103,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_psg")
 
 ATT = {}
 
-ATT.PrintName = "Skeleton Pistol Grip"
-ATT.CompactName = "Skeleton"
+ATT.PrintName = "Centurion Industries Skeleton Pistol Grip"
+ATT.CompactName = "Centurion"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "gskelb.png", "mips smooth")
@@ -128,8 +128,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel")
 
 ATT = {}
 
-ATT.PrintName = "Skeleton Pistol Grip (Sporty Red)"
-ATT.CompactName = "Skeleton (SR)"
+ATT.PrintName = "Centurion Industries Skeleton Pistol Grip (Sporty Red)"
+ATT.CompactName = "Centurion (SR)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "gskelr.png", "mips smooth")

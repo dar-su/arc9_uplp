@@ -156,8 +156,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rx1")
 
 ATT = {}
 
-ATT.PrintName = "Robust Red Dot" -- SRS Red Dot
-ATT.CompactName = "Robust"
+ATT.PrintName = "SWX Red Dot" -- SRS Red Dot
+ATT.CompactName = "SWX"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -835,8 +835,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
 ATT = {}
 
-ATT.PrintName = "Sport Shooting Red Dot - Low Profile" -- RMR Sight - Low Profile
-ATT.CompactName = "Sport - LP"
+ATT.PrintName = "XW Red Dot - Low Profile" -- RMR Sight - Low Profile
+ATT.CompactName = "XW - LP"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -873,8 +873,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
 ATT = {}
 
-ATT.PrintName = "Sport Shooting Red Dot - High Profile" -- RMR Sight - High Profile
-ATT.CompactName = "Sport - HP"
+ATT.PrintName = "XW Red Dot - High Profile" -- RMR Sight - High Profile
+ATT.CompactName = "XW - HP"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -1220,7 +1220,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_ez8x")
 
 ATT = {}
 
-ATT.PrintName = "12x Military Marksman Scope"
+ATT.PrintName = "12x Marksman Scope"
 ATT.CompactName = "12x MMS"
 ATT.Description = ATT.PrintName
 

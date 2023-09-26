@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/fsrs/"
 
 ATT = {}
 
-ATT.PrintName = "Flip-up MBUS Front Sight"
-ATT.CompactName = "MBUS"
+ATT.PrintName = "Flip-up MBS Front Sight"
+ATT.CompactName = "MBS"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "fm.png", "mips smooth")
@@ -30,8 +30,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_fs_mbus")
 
 ATT = {}
 
-ATT.PrintName = "Scalarworks Front Sight"
-ATT.CompactName = "Scalarworks"
+ATT.PrintName = "Centurion Industries IronWorks Front Sight"
+ATT.CompactName = "IronWorks"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "fsw.png", "mips smooth")

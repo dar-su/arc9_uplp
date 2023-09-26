@@ -238,8 +238,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_poly")
 
 ATT = {}
 
-ATT.PrintName = "AK-12 Buffer Tube"
-ATT.CompactName = "Buffer (12)"
+ATT.PrintName = "Buffer Tube"
+ATT.CompactName = "Buffer"
 ATT.Description = ATT.PrintName
 
 ATT.Attachments = {

@@ -198,8 +198,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_azen_c")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Handguard (Sporty Red)"
-ATT.CompactName = "Tactical (SR)"
+ATT.PrintName = "Lisyan Tactical Handguard (Sporty Red)"
+ATT.CompactName = "Lisyan (SR)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/tac.png", "mips smooth")
@@ -221,8 +221,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Handguard (Pitch Black)"
-ATT.CompactName = "Tactical (PB)"
+ATT.PrintName = "Lisyan Tactical Handguard (Pitch Black)"
+ATT.CompactName = "Lisyan (PB)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/tacb.png", "mips smooth")
@@ -244,8 +244,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac_b")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Handguard (Arctic White)"
-ATT.CompactName = "Tactical (AW)"
+ATT.PrintName = "Lisyan Tactical Handguard (Arctic White)"
+ATT.CompactName = "Lisyan (AW)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/tacw.png", "mips smooth")
@@ -267,8 +267,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac_w")
 
 ATT = {}
 
-ATT.PrintName = "International Competitive Sport Shooting Competition Handguard Mk1"
-ATT.CompactName = "ICSSC Mk1"
+ATT.PrintName = "SpeedFire Dynamics Competition Handguard"
+ATT.CompactName = "SpeedFire"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/cool.png", "mips smooth")
@@ -290,8 +290,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_cool")
 
 ATT = {}
 
-ATT.PrintName = "International Competitive Sport Shooting Competition Handguard Mk2"
-ATT.CompactName = "ICSSC Mk2"
+ATT.PrintName = "ApexCore Sport PRO Handguard"
+ATT.CompactName = "ApexCore"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/cool2.png", "mips smooth")
@@ -315,7 +315,7 @@ ARC9.LoadAttachment(ATT, "uplp_molot_hg_cool2")
 
 ATT = {}
 
-ATT.PrintName = "Lightweight Sport Shooting Internals"
+ATT.PrintName = "Lightweight Internals"
 ATT.CompactName = "Lightweight"
 ATT.Description = ATT.PrintName
 

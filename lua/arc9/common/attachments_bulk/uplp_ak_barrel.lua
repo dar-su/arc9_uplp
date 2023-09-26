@@ -175,8 +175,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk")
 
 ATT = {}
 
-ATT.PrintName = "432mm AK-109 Barrel"
-ATT.CompactName = "432mm AK-109"
+ATT.PrintName = "432mm AK-107 Barrel"
+ATT.CompactName = "432mm AK-107"
 ATT.Description = "Longer 432mm (17\") barrel used on the AK-109."
 
 ATT.Icon = Material(iconfolder .. "109.png", "mips smooth")
