@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/fsrs/"
 
 ATT = {}
 
-ATT.PrintName = "Flip-up MBS Front Sight"
-ATT.CompactName = "MBS"
+ATT.PrintName = "Flip-up PAWCO Front Sight"
+ATT.CompactName = "PAWCO"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "fm.png", "mips smooth")

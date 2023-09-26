@@ -111,7 +111,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_40")
 
 ATT = {}
 
-ATT.PrintName = "STM-9 Magwell"
+ATT.PrintName = "eXtreme Flared Magwell"
 ATT.CompactName = "Magwell"
 ATT.Description = ATT.PrintName
 

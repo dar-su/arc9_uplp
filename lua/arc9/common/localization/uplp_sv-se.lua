@@ -510,7 +510,7 @@ L["uplp_ak_hg_beryl.description"] = "Taktiskt handskydd gjort för ett AK-gevär
 
 L["uplp_ak_hg_tac.printname"] = "Lisyan Tactical-Handskydd"
 L["uplp_ak_hg_tac.compactname"] = "Lisyan"
-L["uplp_ak_hg_tac.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär gjort av Lisyan Tactical."
+L["uplp_ak_hg_tac.description"] = "Lättviktigt och sportigt handskydd till AK-gevär gjort av Lisyan Tactical."
 
 L["uplp_ak_hg_wood.printname"] = "Trähandskydd"
 L["uplp_ak_hg_wood.compactname"] = "Trä"
@@ -634,7 +634,7 @@ L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med " .. col.
 
 L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med " .. col.b .. "9x39mm patroner" .. col.e .. " som används av AK-9:an.\nEndast ett par hundra av dessa gjordes!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med " .. col.b .. "9x39mm patroner" .. col.e .. " som används av AK-9:an.\nEndast ett par hundra av AK-9:an gjordes!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "100-Serie Mynningsbroms"
@@ -688,7 +688,7 @@ L["uplp_ak_stock_skele.description"] = "Vikbar, lättvikt kolv som används av A
 
 L["uplp_ak_stock_old.printname"] = "Gammaldags Kolv"
 L["uplp_ak_stock_old.compactname"] = "Gammaldags"
-L["uplp_ak_stock_old.description"] = "Gammaldags kolv som används av AK-47:an."
+L["uplp_ak_stock_old.description"] = "Gammaldags kolv som används av AK-47:an.\nEn riktigt gammal goding, denna!\nKombinera med " .. col.b .. "Gammaldags Dammskydd" .. col.e .. " för att ändra utseendet på lådan."
 
 L["uplp_ak_stock_rpk.printname"] = "RPK-Träkolv"
 L["uplp_ak_stock_rpk.compactname"] = "RPK-T"
@@ -710,9 +710,9 @@ L["uplp_ak_stock_poly.printname"] = "Polymer Kolv"
 L["uplp_ak_stock_poly.compactname"] = "Polymer"
 L["uplp_ak_stock_poly.description"] = "Lättvikt polymer kolv till AK-gevär."
 
-L["uplp_ak_stock_tube12.printname"] = "Bufferrör (AK-12)"
-L["uplp_ak_stock_tube12.compactname"] = "Buffer (12)"
-L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som används av AK-12:an. Tillåter installering av AR-15-kompatibla kolvar."
+L["uplp_ak_stock_tube12.printname"] = "Bufferrör"
+L["uplp_ak_stock_tube12.compactname"] = "Buffer"
+L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som används av AK-12:an. Tillåter installering av AR-15-kompatibla kolvar.\nRolig fakta: Rörens diameter är en liten bit annorlunda från normala AR-15 vilket gör att dem flesta AR-15-kolvarna vinglar.\n(Men detta är ett datorspel, så... yeet)"
 
 L["uplp_ak_stock_tube.printname"] = "Bufferrör"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
@@ -724,7 +724,7 @@ L["uplp_ak_stock_molot.description"] = "Taktisk kolv som används på hagelgevä
 
 L["uplp_ak_stock_underfold.printname"] = "AKMS Undervikbar Kolv"
 L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"
-L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKMS.\nInte kompatibel med 40-patroners eller högre magasin. Tillåter också inte användningen av anpassade framgrepp på vissa handskydd."
+L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKMS.\nInte kompatibel med <color=255,100,100>40-patroners eller högre magasin.\n<color=255,100,100>Tillåter också inte användningen av anpassade framgrepp</color> på vissa handskydd."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith-Kolv"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
@@ -746,6 +746,9 @@ L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av k
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "AR-15 är ett lättviktigt, luftkyld, gasdrivet, magasinfött helautomatiskt gevär som har blivit populärt för sin modularitet och mångsidighet. Det används allmänt av militära och polisiära organisationer, känt för sin noggrannhet och anpassningsförmåga till olika stridssituationer."
+
+L["uplp_weapon_ar15_smg9"] = "AR-KPist. 9mm"
+L["uplp_weapon_ar15_smg45"] = "AR-KPist. .45"
 
 L["uplp_weapon_ar15_real"] = "Colt M4A1"
 
@@ -780,33 +783,33 @@ L["uplp_ar15_chandle_std.printname"] = "Standard Manöverhandtag"
 L["uplp_ar15_chandle_std.compactname"] = "Standard"
 L["uplp_ar15_chandle_std.description"] = "Traditionellt manöverhandtag som används på AR-15-gevär."
 
-L["uplp_ar15_chandle_tac.printname"] = "Taktiskt Manöverhandtag"
-L["uplp_ar15_chandle_tac.compactname"] = "Taktiskt"
-L["uplp_ar15_chandle_tac.description"] = "Sportigt och taktiskt manöverhandtag som används på AR-15-gevär."
+L["uplp_ar15_chandle_tac.printname"] = "Hoki Armory-Manöverhandtag"
+L["uplp_ar15_chandle_tac.compactname"] = "Hoki"
+L["uplp_ar15_chandle_tac.description"] = "Sportigt och taktiskt manöverhandtag som används på AR-15-gevär gjort av Hoki Armory."
 
-L["uplp_ar15_chandle_tacblack.printname"] = "Taktiskt Manöverhandtag (Pitch Black)"
-L["uplp_ar15_chandle_tacblack.compactname"] = "Taktiskt (PB)"
-L["uplp_ar15_chandle_tacblack.description"] = "Sportigt och taktiskt manöverhandtag som används på AR-15-gevär." .. pitchblack
+L["uplp_ar15_chandle_tacblack.printname"] = "Hoki Armory-Manöverhandtag (Pitch Black)"
+L["uplp_ar15_chandle_tacblack.compactname"] = "Hoki (PB)"
+L["uplp_ar15_chandle_tacblack.description"] = "Sportigt och taktiskt manöverhandtag som används på AR-15-gevär gjort av Hoki Armory." .. pitchblack
 
 ////// Front Sights
-L["uplp_ar15_fs_mbus.printname"] = "MBUS Flip-up-Stolpkorn"
-L["uplp_ar15_fs_mbus.compactname"] = "MBUS"
-L["uplp_ar15_fs_mbus.description"] = "Stolpkorn av Flip-up-design tillverkat av Magpul."
+L["uplp_ar15_fs_mbus.printname"] = "PAWCO Flip-up-Stolpkorn"
+L["uplp_ar15_fs_mbus.compactname"] = "PAWCO"
+L["uplp_ar15_fs_mbus.description"] = "Stolpkorn av Flip-up-design tillverkat av PAWCO."
 
-L["uplp_ar15_fs_scalar.printname"] = "Scalarworks-Stolpkorn"
-L["uplp_ar15_fs_scalar.compactname"] = "Scalarworks"
-L["uplp_ar15_fs_scalar.description"] = "Justerbart stolpkorn tillverkat av Scalarworks."
+L["uplp_ar15_fs_scalar.printname"] = "Centurion Industries IronWorks-Stolpkorn"
+L["uplp_ar15_fs_scalar.compactname"] = "IronWorks"
+L["uplp_ar15_fs_scalar.description"] = "Justerbart stolpkorn tillverkat av IronWorks, dotterföretag till Centurion Industries."
 
-L["uplp_ar15_fs_type1.printname"] = "Typ 1 Stolpkorn"
-L["uplp_ar15_fs_type1.compactname"] = "Typ 1"
+L["uplp_ar15_fs_type1.printname"] = "Typ I Stolpkorn"
+L["uplp_ar15_fs_type1.compactname"] = "Typ I"
 L["uplp_ar15_fs_type1.description"] = "Alternativa flip-up-stolpkorn för användning på AR-15-gevär."
 
-L["uplp_ar15_fs_type2.printname"] = "Typ 2 Stolpkorn"
-L["uplp_ar15_fs_type2.compactname"] = "Typ 2"
+L["uplp_ar15_fs_type2.printname"] = "Typ II Stolpkorn"
+L["uplp_ar15_fs_type2.compactname"] = "Typ II"
 L["uplp_ar15_fs_type2.description"] = "Alternativa flip-up-stolpkorn för användning på AR-15-gevär."
 
-L["uplp_ar15_fs_utg.printname"] = "Typ 3 Stolpkorn"
-L["uplp_ar15_fs_utg.compactname"] = "Typ 3"
+L["uplp_ar15_fs_utg.printname"] = "Typ III Stolpkorn"
+L["uplp_ar15_fs_utg.compactname"] = "Typ III"
 L["uplp_ar15_fs_utg.description"] = "Alternativa flip-up-stolpkorn för användning på AR-15-gevär."
 
 ////// Gasblocks
@@ -826,9 +829,9 @@ L["uplp_ar15_gasblock_min_red.printname"] = "Standard Gasregulator (Sporty Red)"
 L["uplp_ar15_gasblock_min_red.compactname"] = "GR (SR)"
 L["uplp_ar15_gasblock_min_red.description"] = "Minimum gasregulator som tillåter AR-15-gevär att fungera." .. sportyred
 
-L["uplp_ar15_gasblock_rail.printname"] = "Gasregulator med Skena"
-L["uplp_ar15_gasblock_rail.compactname"] = "GR S"
-L["uplp_ar15_gasblock_rail.description"] = "Gasregulator med inbyggd toppmonterad skena för att montera stolpkorn."
+L["uplp_ar15_gasblock_rail.printname"] = "Centurion Industries-Gasregulator med Skena"
+L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
+L["uplp_ar15_gasblock_rail.description"] = "Gasregulator med inbyggd toppmonterad skena för att montera stolpkorn gjort av Centurion Industries."
 
 ////// Handguards
 local requires = "\n"
@@ -860,19 +863,19 @@ L["uplp_ar15_hg_mlokshort.description"] = "Förkortad version av det taktiska M-
 
 L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuku S-15-Handskydd"
 L["uplp_ar15_hg_nwsu_s15.compactname"] = "S-15"
-L["uplp_ar15_hg_nwsu_s15.description"] = "Lättvikt S-15-handskydd tillverkat av Nowosuko." .. requires14 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15.description"] = "Lättvikt S-15-handskydd tillverkat av Nowosuku." .. requires14 .. onlycompact
 
 L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15-Handskydd (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
-L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lättvikt S-15-handskydd tillverkat av Nowosuko." .. requires14 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lättvikt S-15-handskydd tillverkat av Nowosuku." .. requires14 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL-Handskydd"
 L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
-L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuku." .. requires16 .. onlycompact
 
 L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL-Handskydd (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
-L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuko." .. requires16 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Längre variant av det lätta S-15-handskyddet tillverkat av Nowosuku." .. requires16 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_ris.printname"] = "RIS-Handskydd"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
@@ -882,84 +885,84 @@ L["uplp_ar15_hg_risshort.printname"] = "Kort RIS-Handskydd"
 L["uplp_ar15_hg_risshort.compactname"] = "K RIS"
 L["uplp_ar15_hg_risshort.description"] = "Förkortad version av ett militär grad handskydd med inbyggt RIS-skenafunktionalitet."
 
-L["uplp_ar15_hg_tac.printname"] = "Taktiskt Handskydd"
-L["uplp_ar15_hg_tac.compactname"] = "Taktiskt"
-L["uplp_ar15_hg_tac.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär." .. requires16
+L["uplp_ar15_hg_tac.printname"] = "Hoki Armory-Handskydd"
+L["uplp_ar15_hg_tac.compactname"] = "Hoki"
+L["uplp_ar15_hg_tac.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. requires16
 
-L["uplp_ar15_hg_tac_red.printname"] = "Taktiskt Handskydd (Sporty Red)"
-L["uplp_ar15_hg_tac_red.compactname"] = "Tactical (SR)"
-L["uplp_ar15_hg_tac_red.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär." .. requires16 .. sportyred
+L["uplp_ar15_hg_tac_red.printname"] = "Hoki Armory-Handskydd (Sporty Red)"
+L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (SR)"
+L["uplp_ar15_hg_tac_red.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. requires16 .. sportyred
 
-L["uplp_ar15_hg_tacshort.printname"] = "Kort Taktiskt Handskydd"
-L["uplp_ar15_hg_tacshort.compactname"] = "K Taktisk"
-L["uplp_ar15_hg_tacshort.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär."
+L["uplp_ar15_hg_tacshort.printname"] = "Kort Hoki Armory-Handskydd"
+L["uplp_ar15_hg_tacshort.compactname"] = "K Hoki"
+L["uplp_ar15_hg_tacshort.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory."
 
-L["uplp_ar15_hg_tacshort_red.printname"] = "Kort Taktiskt Handskydd (Sporty Red)"
-L["uplp_ar15_hg_tacshort_red.compactname"] = "K Taktisk (SR)"
-L["uplp_ar15_hg_tacshort_red.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär." .. sportyred
+L["uplp_ar15_hg_tacshort_red.printname"] = "Kort Hoki Armory-Handskydd (Sporty Red)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "K Hoki (SR)"
+L["uplp_ar15_hg_tacshort_red.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. sportyred
 
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 ACP"
 L["uplp_ar15_mag_45_20.compactname"] = "20S .45"
-L["uplp_ar15_mag_45_20.description"] = "Konverterar AR-15 att acceptera 20-patroners .45 ACP magasin." .. changeammo.pistol
+L["uplp_ar15_mag_45_20.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 ACP-patroner.\nUtrustad med ett anpassat 20-patronersmagasin egentligen från en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
 
 L["uplp_ar15_mag_45_40.printname"] = "40-Patroner .45 ACP"
 L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
-L["uplp_ar15_mag_45_40.description"] = "Konverterar AR-15 att acceptera 40-patroners .45 ACP magasin." .. changeammo.pistol
+L["uplp_ar15_mag_45_40.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 ACP-patroner.\nUtrustad med ett anpassat förstorat 40-patronersmagasin egentligen gjort till en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
 
 /// 9x19mm
-L["uplp_ar15_stm9_magwell.printname"] = "STM-9-Magasinbrunn"
+L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Utsvängd Magasinbrunn"
 L["uplp_ar15_stm9_magwell.compactname"] = "Magasinbrunn"
 L["uplp_ar15_stm9_magwell.description"] = "Sätter på en utsvängd magasinbrunn för snabbare omladdningar."
 
 L["uplp_ar15_mag_glock_17.printname"] = "17-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17S 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Konverterar AR-15 att acceptera 17-patroners 9x19mm magasin från ett österrikiskt sidovapen." .. changeammo.pistol
+L["uplp_ar15_mag_glock_17.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9x19mm patroner.\nUtrustat med ett 17-patronersmagasin från ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_33.printname"] = "33-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_33.compactname"] = "33S 9x19"
-L["uplp_ar15_mag_glock_33.description"] = "Konverterar AR-15 att acceptera 33-patroners 9x19mm magasin från ett österrikiskt sidovapen." .. changeammo.pistol
+L["uplp_ar15_mag_glock_33.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9x19mm patroner.\nUtrustat med ett förstorat 33-patronersmagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9x19mm Drum"
+L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9x19mm Trummagasin"
 L["uplp_ar15_mag_glock_50.compactname"] = "50S 9x19"
-L["uplp_ar15_mag_glock_50.description"] = "Konverterar AR-15 att acceptera ett 50-patroners 9x19mm trummagasin gjort för ett österrikiskt sidovapen." .. changeammo.pistol
+L["uplp_ar15_mag_glock_50.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9x19mm.\nUtrustat med ett 50-patroners trummagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
 /// 5,56x45mm
-L["uplp_ar15_mag_drum.printname"] = "100-Patroner 5,56x45mm C-Drum"
-L["uplp_ar15_mag_drum.compactname"] = "100P 5,56 D"
-L["uplp_ar15_mag_drum.description"] = "100-patroners C-Drum-trummagasin."
+L["uplp_ar15_mag_drum.printname"] = "100-Patroner 5,56x45mm Dubbeltrumma"
+L["uplp_ar15_mag_drum.compactname"] = "100P Trumma"
+L["uplp_ar15_mag_drum.description"] = "100-patroners C-format trummagasin."
 
 L["uplp_ar15_mag_hk.printname"] = "30-Patroner 5,56x45mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30P 5,56 (416)"
+L["uplp_ar15_mag_hk.compactname"] = "30P (416)"
 L["uplp_ar15_mag_hk.description"] = "30-patronersmagasin från en anpassad AR-15 av tyskt ursprung."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Patroner 5,56x45mm (Polymer)"
-L["uplp_ar15_mag_pmag10.compactname"] = "10P 5,56 (P)"
-L["uplp_ar15_mag_pmag10.description"] = "10-patronersmagasin tillverkade av polymer."
+L["uplp_ar15_mag_pmag10.compactname"] = "10P Poly"
+L["uplp_ar15_mag_pmag10.description"] = "10-patronersmagasin tillverkade av polymer av Wildcat X."
 
 L["uplp_ar15_mag_pmag20.printname"] = "20-Patroner 5,56x45mm (Polymer)"
-L["uplp_ar15_mag_pmag20.compactname"] = "20P 5,56 (P)"
-L["uplp_ar15_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer."
+L["uplp_ar15_mag_pmag20.compactname"] = "20P Poly"
+L["uplp_ar15_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av Wildcat X."
 
 L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
-L["uplp_ar15_mag_pmag30.compactname"] = "30P 5,56 (P)"
-L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer."
+L["uplp_ar15_mag_pmag30.compactname"] = "30P Poly"
+L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av Wildcat X."
 
 L["uplp_ar15_mag_pmag60.printname"] = "60-Patroner 5,56x45mm Trumma"
-L["uplp_ar15_mag_pmag60.compactname"] = "60P 5,56 T"
-L["uplp_ar15_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer."
+L["uplp_ar15_mag_pmag60.compactname"] = "60P Trumma"
+L["uplp_ar15_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av Wildcat X."
 
 L["uplp_ar15_mag_stanag30.printname"] = "30-Patroner 5,56x45mm (Aluminium)"
-L["uplp_ar15_mag_stanag30.compactname"] = "30P 5,56 (A)"
+L["uplp_ar15_mag_stanag30.compactname"] = "30P Alum"
 L["uplp_ar15_mag_stanag30.description"] = "30-patronersmagasin tillverkade av aluminium."
 
 L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56x45mm (Aluminium)"
-L["uplp_ar15_mag_stanag40.compactname"] = "40P 5,56 (A)"
+L["uplp_ar15_mag_stanag40.compactname"] = "40P Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkade av aluminium."
 
 L["uplp_ar15_mag_stanag60.printname"] = "60-Patroner 5,56x45mm Quadstack"
-L["uplp_ar15_mag_stanag60.compactname"] = "60P 5,56 (Q)"
+L["uplp_ar15_mag_stanag60.compactname"] = "60P Quad."
 L["uplp_ar15_mag_stanag60.description"] = "60-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition."
 
 ////// Pistol Grips
@@ -971,29 +974,29 @@ L["uplp_ar15_pgrip_massive.printname"] = "Massivt Pistolgrepp"
 L["uplp_ar15_pgrip_massive.compactname"] = "Massivt"
 L["uplp_ar15_pgrip_massive.description"] = "Förstorat pistolgrepp till AR-15-gevär."
 
-L["uplp_ar15_pgrip_modern.printname"] = "Modernt Pistolgrepp"
-L["uplp_ar15_pgrip_modern.compactname"] = "Modernt"
-L["uplp_ar15_pgrip_modern.description"] = "Moderniserat pistolgrepp till AR-15-gevär."
+L["uplp_ar15_pgrip_modern.printname"] = "Nowosuku-Pistolgrepp"
+L["uplp_ar15_pgrip_modern.compactname"] = "Nowosuku"
+L["uplp_ar15_pgrip_modern.description"] = "Moderniserat pistolgrepp till AR-15-gevär gjort av Nowosuku."
 
-L["uplp_ar15_pgrip_psg.printname"] = "Sharpshooter-Pistolgrepp"
-L["uplp_ar15_pgrip_psg.compactname"] = "Sharpshooter"
-L["uplp_ar15_pgrip_psg.description"] = "Tungt pistolgrepp med inbyggt handledsstöd till AR-15-gevär."
+L["uplp_ar15_pgrip_psg.printname"] = "ApexCore Systems-Pistolgrepp"
+L["uplp_ar15_pgrip_psg.compactname"] = "ApexCore"
+L["uplp_ar15_pgrip_psg.description"] = "Tungt pistolgrepp med inbyggt handledsstöd till AR-15-baserade prickskyttegevär gjort av ApexCore Systems."
 
-L["uplp_ar15_pgrip_skel.printname"] = "Skelett Pistolgrepp"
-L["uplp_ar15_pgrip_skel.compactname"] = "Skelett"
-L["uplp_ar15_pgrip_skel.description"] = "Lättvikt pistolgrepp till AR-15-gevär."
+L["uplp_ar15_pgrip_skel.printname"] = "Centurion Industries Skelett Pistolgrepp"
+L["uplp_ar15_pgrip_skel.compactname"] = "Centurion"
+L["uplp_ar15_pgrip_skel.description"] = "Lättvikt pistolgrepp till AR-15-gevär gjort av Centurion Industries."
 
-L["uplp_ar15_pgrip_skel_red.printname"] = "Skelett Pistolgrepp (Sporty Red)"
-L["uplp_ar15_pgrip_skel_red.compactname"] = "Skelett (SR)"
-L["uplp_ar15_pgrip_skel_red.description"] = "Lättvikt pistolgrepp till AR-15-gevär." .. sportyred
+L["uplp_ar15_pgrip_skel_red.printname"] = "Centurion Industries Skelett Pistolgrepp (Sporty Red)"
+L["uplp_ar15_pgrip_skel_red.compactname"] = "Centurion (SR)"
+L["uplp_ar15_pgrip_skel_red.description"] = "Lättvikt pistolgrepp till AR-15-gevär gjort av Centurion Industries." .. sportyred
 
 L["uplp_ar15_pgrip_std.printname"] = "Standard Pistolgrepp"
 L["uplp_ar15_pgrip_std.compactname"] = "Standard"
 L["uplp_ar15_pgrip_std.description"] = "Traditionellt pistolgrepp till AR-15-gevär."
 
-L["uplp_ar15_pgrip_tac.printname"] = "Taktiskt Pistolgrepp"
-L["uplp_ar15_pgrip_tac.compactname"] = "Taktiskt"
-L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär."
+L["uplp_ar15_pgrip_tac.printname"] = "Hoki Armory-Pistolgrepp"
+L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
+L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär gjort av Hoki Armory."
 
 ////// Receiver
 L["uplp_ar15_reciever_m16.printname"] = "Standard Låda med Bärhandtag"
@@ -1004,33 +1007,33 @@ L["uplp_ar15_reciever_m4.printname"] = "Standard Låda"
 L["uplp_ar15_reciever_m4.compactname"] = "Standard"
 L["uplp_ar15_reciever_m4.description"] = "Standard militär grad låda."
 
-L["uplp_ar15_reciever_modern.printname"] = "Taktisk Låda"
-L["uplp_ar15_reciever_modern.compactname"] = "Tactical"
-L["uplp_ar15_reciever_modern.description"] = "Taktisk lättvikt låda byggd för hastighet."
+L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Taktisk Låda"
+L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
+L["uplp_ar15_reciever_modern.description"] = "Taktisk lättvikt låda byggd för hastighet gjort av Hoki Armory."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"
 L["uplp_ar15_rs_m4.compactname"] = "M4 BS"
 L["uplp_ar15_rs_m4.description"] = "Standard bakre sikte till AR-15-gevär."
 
-L["uplp_ar15_rs_mbus.printname"] = "MBUS Flip-up-Bakre Sikte"
-L["uplp_ar15_rs_mbus.compactname"] = "MBUS"
-L["uplp_ar15_rs_mbus.description"] = "Bakre sikte av flip-up-design tillverkat av Magpul."
+L["uplp_ar15_rs_mbus.printname"] = "PAWCO Flip-up-Bakre Sikte"
+L["uplp_ar15_rs_mbus.compactname"] = "PAWCO"
+L["uplp_ar15_rs_mbus.description"] = "Bakre sikte av flip-up-design tillverkat av PAWCO."
 
-L["uplp_ar15_rs_scalar.printname"] = "Scalarworks-Bakre Sikte"
-L["uplp_ar15_rs_scalar.compactname"] = "Scalarworks"
-L["uplp_ar15_rs_scalar.description"] = "Justerbart bakre sikte tillverkat av Scalarworks."
+L["uplp_ar15_rs_scalar.printname"] = "Centurion Industries IronWorks-Bakre Sikte"
+L["uplp_ar15_rs_scalar.compactname"] = "IronWorks"
+L["uplp_ar15_rs_scalar.description"] = "Justerbart bakre sikte tillverkat av IronWorks, dotterföretag till Centurion Industries."
 
-L["uplp_ar15_rs_type1.printname"] = "Typ 1 Bakre Sikte"
-L["uplp_ar15_rs_type1.compactname"] = "Typ 1"
+L["uplp_ar15_rs_type1.printname"] = "Typ I Bakre Sikte"
+L["uplp_ar15_rs_type1.compactname"] = "Typ I"
 L["uplp_ar15_rs_type1.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
 
-L["uplp_ar15_rs_type2.printname"] = "Typ 2 Bakre Sikte"
-L["uplp_ar15_rs_type2.compactname"] = "Typ 2"
+L["uplp_ar15_rs_type2.printname"] = "Typ II Bakre Sikte"
+L["uplp_ar15_rs_type2.compactname"] = "Typ II"
 L["uplp_ar15_rs_type2.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
 
-L["uplp_ar15_rs_type3.printname"] = "Typ 3 Bakre Sikte"
-L["uplp_ar15_rs_type3.compactname"] = "Typ 3"
+L["uplp_ar15_rs_type3.printname"] = "Typ III Bakre Sikte"
+L["uplp_ar15_rs_type3.compactname"] = "Typ III"
 L["uplp_ar15_rs_type3.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
 
 ////// Stocks
@@ -1050,7 +1053,7 @@ L["uplp_ar15_stock_light.printname"] = "Lätt Stridskolv"
 L["uplp_ar15_stock_light.compactname"] = "Lätt"
 L["uplp_ar15_stock_light.description"] = "Lättvikt och justerbar kolv till AR-15-gevär."
 
-L["uplp_ar15_stock_m16.printname"] = "Fast Kolv"
+L["uplp_ar15_stock_m16.printname"] = "Fast M16-Kolv"
 L["uplp_ar15_stock_m16.compactname"] = "Fast"
 L["uplp_ar15_stock_m16.description"] = "Fast kolv som används på M16."
 
@@ -1058,9 +1061,9 @@ L["uplp_ar15_stock_m4.printname"] = "M4 Kolv"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
 L["uplp_ar15_stock_m4.description"] = "Standard justerbar kolv som används på M4:an."
 
-L["uplp_ar15_stock_modern.printname"] = "Tävlingskolv"
-L["uplp_ar15_stock_modern.compactname"] = "Tävlings"
-L["uplp_ar15_stock_modern.description"] = "Lättvikt kolv gjord för sportskytte till AR-15-gevär."
+L["uplp_ar15_stock_modern.printname"] = "Centurion Industries-Kolv"
+L["uplp_ar15_stock_modern.compactname"] = "Centurion"
+L["uplp_ar15_stock_modern.description"] = "Lättvikt kolv gjord för sportskytte till AR-15-gevär gjort av Centurion Industries."
 
 L["uplp_ar15_stock_pdw.printname"] = "PDW-Kolv"
 L["uplp_ar15_stock_pdw.compactname"] = "PDW"
@@ -1070,13 +1073,13 @@ L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter-Kolv"
 L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
 L["uplp_ar15_stock_sniper.description"] = "Justerbar tung kolv till AR-15-gevär."
 
-L["uplp_ar15_stock_tac.printname"] = "Taktiskt Kolv"
-L["uplp_ar15_stock_tac.compactname"] = "Taktisk"
-L["uplp_ar15_stock_tac.description"] = "Taktisk kolv till AR-15-gevär."
+L["uplp_ar15_stock_tac.printname"] = "Hoki Armory-Kolv"
+L["uplp_ar15_stock_tac.compactname"] = "Hoki"
+L["uplp_ar15_stock_tac.description"] = "Taktisk kolv till AR-15-gevär gjort av Hoki Armory."
 
-L["uplp_ar15_stock_veryheavy.printname"] = "Marksman-Kolv"
-L["uplp_ar15_stock_veryheavy.compactname"] = "Marksman"
-L["uplp_ar15_stock_veryheavy.description"] = "Väldigt tung kolv till AR-15-gevär."
+L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Tung Kolv"
+L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
+L["uplp_ar15_stock_veryheavy.description"] = "Tung kolv till AR-15-baserade prickskyttegevär gjort av ApexCore Systems."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1110,7 +1113,7 @@ L["uplp_deag_trig_light.description"] = "Ersätter avtryckaren, fjädrarna och h
 
 L["uplp_deag_trig_sport.printname"] = "Automatisk Aktion"
 L["uplp_deag_trig_sport.compactname"] = "Automatisk"
-L["uplp_deag_trig_sport.description"] = "Konverterar Deagle att skjuta helautomatiskt men offrar rekylkontroll.\nErsätter också avtryckaren och hanen med några mer taktiska."
+L["uplp_deag_trig_sport.description"] = "Konverterar Deagle att skjuta <color=100,255,100>helautomatiskt</color> men offrar rekylkontroll.\nErsätter också avtryckaren och hanen med några mer taktiska.\n\nTekniskt sett olaglig tack vare <color=255,100,100>Federal AWB i USA</color>, men vi förblir tysta... för tillfället."
 
 ////// Barrels
 L["uplp_deag_barrel_classic.printname"] = "Klassisk Pipa"
@@ -1162,21 +1165,21 @@ L["uplp_mutant_barrel_short.description"] = "Standard 409mm pipa till Mutant."
 local requires = "\n\n"
 local requires19 = requires .. "Kräver 500mm eller längre pipa."
 
-L["uplp_mutant_hg_long.printname"] = "Taktiskt XL Handskydd"
-L["uplp_mutant_hg_long.compactname"] = "Taktiskt XL"
-L["uplp_mutant_hg_long.description"] = "Långt taktiskt handskydd gjort till Mutant." .. requires19
+L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL-Handskydd"
+L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
+L["uplp_mutant_hg_long.description"] = "Längre variant av det taktiska handskyddet gjort till Mutant av Hoki Armory." .. requires19
 
 L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6-Handskydd"
 L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
-L["uplp_mutant_hg_nowosuku.description"] = "Lättvikt SX6-handskydd tillverkat av Nowosuko."
+L["uplp_mutant_hg_nowosuku.description"] = "Lättvikt SX6-handskydd tillverkat av Nowosuku."
 
-L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
+L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL-Handskydd"
 L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
-L["uplp_mutant_hg_nowosuku_xl.description"] = "Längre variant av det lätta SX6-handskyddet tillverkat av Nowosuko." .. requires19
+L["uplp_mutant_hg_nowosuku_xl.description"] = "Längre variant av det lätta SX6-handskyddet tillverkat av Nowosuku." .. requires19
 
-L["uplp_mutant_hg_short.printname"] = "Taktiskt Handskydd"
-L["uplp_mutant_hg_short.compactname"] = "Taktiskt"
-L["uplp_mutant_hg_short.description"] = "Taktiskt handskydd gjort till Mutant."
+L["uplp_mutant_hg_short.printname"] = "Hoki Armory-Handskydd"
+L["uplp_mutant_hg_short.compactname"] = "Hoki"
+L["uplp_mutant_hg_short.description"] = "Taktiskt handskydd gjort till Mutant av Hoki Armory."
 
 ////// Magazines
 L["uplp_mutant_mag_30_bak.printname"] = "30-Patroner 7,62x39mm (Bakelit)"
@@ -1243,34 +1246,34 @@ L["uplp_molot_hg_wood.description"] = "Trähandskydd som egentligen användes p�
 
 L["uplp_molot_hg_azen.printname"] = "Zenith-Handskydd"
 L["uplp_molot_hg_azen.compactname"] = "Zenith"
-L["uplp_molot_hg_azen.description"] = "Lättviktigt handskydd med RIS-skenafunktionalitet byggd till AK-gevär."
+L["uplp_molot_hg_azen.description"] = "Handskydd med RIS-skenafunktionalitet byggd till AK-gevär."
 
 L["uplp_molot_hg_azen_c.printname"] = "Zenith Compact-Handskydd"
 L["uplp_molot_hg_azen_c.compactname"] = "Zenith C"
-L["uplp_molot_hg_azen_c.description"] = "Lättviktigt handskydd med RIS-skenafunktionalitet byggd till AK-gevär."
+L["uplp_molot_hg_azen_c.description"] = "Handskydd med RIS-skenafunktionalitet byggd till AK-gevär."
 
-L["uplp_molot_hg_tac.printname"] = "Taktiskt Handskydd (Sporty Red)"
-L["uplp_molot_hg_tac.compactname"] = "Taktiskt (SR)"
-L["uplp_molot_hg_tac.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär." .. sportyred
+L["uplp_molot_hg_tac.printname"] = "Lisyan Tactical-Handskydd (Sporty Red)"
+L["uplp_molot_hg_tac.compactname"] = "Lisyan (SR)"
+L["uplp_molot_hg_tac.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär gjort av Lisyan Tactical." .. sportyred
 
-L["uplp_molot_hg_tac_b.printname"] = "Taktiskt Handskydd (Pitch Black)"
-L["uplp_molot_hg_tac_b.compactname"] = "Taktiskt (PB)"
-L["uplp_molot_hg_tac_b.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär." .. pitchblack
+L["uplp_molot_hg_tac_b.printname"] = "Lisyan Tactical-Handskydd (Pitch Black)"
+L["uplp_molot_hg_tac_b.compactname"] = "Lisyan (PB)"
+L["uplp_molot_hg_tac_b.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär gjort av Lisyan Tactical." .. pitchblack
 
-L["uplp_molot_hg_tac_w.printname"] = "Taktiskt Handskydd (Arctic White)"
-L["uplp_molot_hg_tac_w.compactname"] = "Taktiskt (AW)"
-L["uplp_molot_hg_tac_w.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär." .. arcticwhite
+L["uplp_molot_hg_tac_w.printname"] = "Lisyan Tactical-Handskydd (Arctic White)"
+L["uplp_molot_hg_tac_w.compactname"] = "Lisyan (AW)"
+L["uplp_molot_hg_tac_w.description"] = "Taktiskt, lättviktigt och sportigt handskydd till AK-gevär gjort av Lisyan Tactical." .. arcticwhite
 
-L["uplp_molot_hg_cool.printname"] = "ICSSC-Handskydd Mk1"
-L["uplp_molot_hg_cool.compactname"] = "ICSSC Mk1"
-L["uplp_molot_hg_cool.description"] = "Handskydd tillverkat för användning i ICSSC (\"International Competitive Sport Shooting Competition\").\nGjord utav polymer med sportiga röda accenter."
+L["uplp_molot_hg_cool.printname"] = "SpeedFire Dynamics Competition-Handskydd"
+L["uplp_molot_hg_cool.compactname"] = "SpeedFire"
+L["uplp_molot_hg_cool.description"] = "Lättvikt men massivt handskydd gjort av SpeedFire Dynamics."
 
-L["uplp_molot_hg_cool2.printname"] = "ICSSC-Handskydd Mk2"
-L["uplp_molot_hg_cool2.compactname"] = "ICSSC Mk2"
-L["uplp_molot_hg_cool2.description"] = "Handskydd tillverkat för användning i ICSSC (\"International Competitive Sport Shooting Competition\").\nGjord utav aluminium med sportiga röda accenter."
+L["uplp_molot_hg_cool2.printname"] = "ApexCore Sport PRO-Handskydd"
+L["uplp_molot_hg_cool2.compactname"] = "ApexCore"
+L["uplp_molot_hg_cool2.description"] = "Lättvikt men massivt handskydd gjort av Sport PRO-avdelningen på ApexCore Arsenal."
 
 ////// Internals
-L["uplp_molot_bolt_light.printname"] = "Lätta Interndelar till Sportskytte"
+L["uplp_molot_bolt_light.printname"] = "Lätta Interndelar"
 L["uplp_molot_bolt_light.compactname"] = "Lättvikt"
 L["uplp_molot_bolt_light.description"] = "Ersätter interna fjädrar och bultar, avtryckare, magasinsläpp, manöverhandtag, slutstycke och säkring med mycket mer lätta delar."
 
@@ -1295,6 +1298,8 @@ L["uplp_sg_mz_vepr.description"] = "Standard choke till hagelgeväret Molot."
 //////////////////// AW Sniper
 L["uplp_weapon_awp"] = "Prickskyttegevär AW"
 L["uplp_weapon_awp_desc"] = "AW-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
+
+L["uplp_weapon_awp_atx"] = "eXtreme Sportgevär"
 
 L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
@@ -1325,7 +1330,7 @@ L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret
 -- L["uplp_awp_bp.printname"] = "Inbyggd AW-Benstöd"
 L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegeväret AW"
 L["uplp_awp_bp.compactname"] = "AW B."
-L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner."
+L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner.\nAnvänder en föråldrad mekanism som inte är stabil eller bekväm. Bättre modeller på eftermarknaden finns.\nErsätts med ett traditionellt benstöd när den kombineras med en eXtreme-Kolv."
 
 -- L["uplp_awp_hbp.printname"] = "Skenamonterat Benstöd"
 -- L["uplp_awp_hbp.compactname"] = "SM B."
@@ -1334,7 +1339,6 @@ L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-ge
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Patroner .338"
 L["uplp_awp_mag_awm.compactname"] = "5P .338"
--- L["uplp_awp_mag_awm.description"] = "Standard 5-patronersmagasin laddat med .338-ammunition.\n\nKräver ett < Kolv >-tillbehör."
 L["uplp_awp_mag_awm.description"] = "Standard 5-patronersmagasin laddat med .338-ammunition."
 
 L["uplp_awp_mag_awp.printname"] = "5-Patroner .308"
@@ -1396,7 +1400,7 @@ L["uplp_awp_stock_tube.description"] = "Standard kolv med ett påsatt bufferrör
 
 //////////////////// FN57
 L["uplp_weapon_fn57"] = "MRD57"
-L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt unika kaliber i 5,7x28mm, ursprungligen designad för användning i automatvapen. Den har en högkapacitetsmagasin, låg rekyl och är eftertraktad för sin förmåga att tränga igenom skydd, vilket gör den populär bland militära och polisenheter över hela världen.."
+L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt unika kaliber i 5,7x28mm, ursprungligen designad för användning i automatvapen. Den har en högkapacitetsmagasin, låg rekyl och är eftertraktad för sin förmåga att tränga igenom skydd, vilket gör den populär bland militära och polisenheter över hela världen. MRD57 släpptes nyligen och är en förbättrad version av sidovapnet P57."
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
@@ -1404,12 +1408,12 @@ L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 ////// Mags
 L["uplp_fn57_mag_ext.printname"] = "27-Patron Förlängt Magasin"
 L["uplp_fn57_mag_ext.compactname"] = "27R Förl."
-L["uplp_fn57_mag_ext.description"] = "Större 27-patronersmagasin till MRD57."
+L["uplp_fn57_mag_ext.description"] = "Större eftermarknads 27-patronersmagasin till MRD57."
 
 ////// Trigger
 L["uplp_fn57_trigger_auto.printname"] = "Automatisk Aktion"
 L["uplp_fn57_trigger_auto.compactname"] = "Automatisk"
-L["uplp_fn57_trigger_auto.description"] = "Konverterar MRD57 att skjuta helautomatiskt men offrar rekylkontroll."
+L["uplp_fn57_trigger_auto.description"] = "Konverterar MRD57 att skjuta <color=100,255,100>helautomatiskt</color> men offrar rekylkontroll.\n\nTekniskt sett olaglig tack vare <color=255,100,100>Federal AWB i USA</color>, men vi förblir tysta... för tillfället."
 
 ////// Skins
 L["uplp_fn57_skin_tan_full.printname"] = "Helt Tanfärgad"
@@ -1444,4 +1448,4 @@ L["uplp_mp7_mag_20.description"] = "Förkortat magasin som håller 20 patroner."
 ////// Irons
 L["uplp_mp7_sight_folded.printname"] = "PDW-Riktmedel"
 L["uplp_mp7_sight_folded.compactname"] = "PDW-R"
-L["uplp_mp7_sight_folded.description"] = "Fäller ner riktmedlen och gör dem smalare för snabbare målförvärv."
+L["uplp_mp7_sight_folded.description"] = "Fäller ner PDW-7:ans riktmedel vilket förvandlar dem till pistolliknande riktmedel.\nFörbättrar målförvärv med kostnad på magnifiering."

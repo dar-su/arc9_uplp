@@ -175,7 +175,7 @@ L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cyli
 
 L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight with Magnifier"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns.\nVery bulky sight that can cause field of view problems when not aiming."
+L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns.\nVery bulky sight that can cause field of view problems when not aiming.\nAre you sure about equipping it? It doesn't even look like a machine gun!"
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
@@ -635,7 +635,7 @@ L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b 
 
 L["uplp_ak_mag_939_30.printname"] = "20-Round AK-9 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9x39mm rounds" .. col.e .. " used by the AK-9.\nOnly a few hundred of these were ever made!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9x39mm rounds" .. col.e .. " used by the AK-9.\nOnly a few hundred of the AK-9 were ever made!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "100-Series Muzzle Brake"
@@ -689,7 +689,7 @@ L["uplp_ak_stock_skele.description"] = "Folding lightweight stock used on the AK
 
 L["uplp_ak_stock_old.printname"] = "Vintage Stock"
 L["uplp_ak_stock_old.compactname"] = "Vintage"
-L["uplp_ak_stock_old.description"] = "Vintage stock used on the first variants of AK rifles.\nA real vintage classic, this one!"
+L["uplp_ak_stock_old.description"] = "Vintage stock used on the first variants of AK rifles.\nA real vintage classic, this one!\nCombine with " .. col.b .. "Vintage Dust Cover" .. col.e .. " to change receiver appearance."
 
 L["uplp_ak_stock_rpk.printname"] = "Wooden RPK Stock"
 L["uplp_ak_stock_rpk.compactname"] = "RPK W"
@@ -725,7 +725,7 @@ L["uplp_ak_stock_molot.description"] = "Tactical stock used on the Molot shotgun
 
 L["uplp_ak_stock_underfold.printname"] = "AKMS Underfolding Stock"
 L["uplp_ak_stock_underfold.compactname"] = "Underfolding"
-L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKMS.\nNot compatible with 40-round or above magazines. Also disables the use of custom foregrips on certain handguards."
+L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AKMS.\nNot compatible with <color=255,100,100>40-round or above magazines</color>.\nAlso <color=255,100,100>disables the use of custom foregrips</color> on certain handguards."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith Stock"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
@@ -747,6 +747,9 @@ L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "The AR-15 is a lightweight, air-cooled, gas-operated, magazine-fed fully automatic rifle that has gained popularity for its modularity and versatility. It's widely used by military and law enforcement agencies, known for its accuracy and adaptability to various combat situations."
+
+L["uplp_weapon_ar15_smg9"] = "AR-SMG 9mm"
+L["uplp_weapon_ar15_smg45"] = "AR-SMG .45"
 
 L["uplp_weapon_ar15_real"] = "Colt M4A1"
 
@@ -790,9 +793,9 @@ L["uplp_ar15_chandle_tacblack.compactname"] = "Hoki (PB)"
 L["uplp_ar15_chandle_tacblack.description"] = "A sporty, tactical charging handle for use on AR-15 rifles made by Hoki Armory." .. pitchblack
 
 ////// Front Sights
-L["uplp_ar15_fs_mbus.printname"] = "Flip-up MBS Front Sight"
-L["uplp_ar15_fs_mbus.compactname"] = "MBS"
-L["uplp_ar15_fs_mbus.description"] = "A flip-up front sight manufactured by Wildcat X."
+L["uplp_ar15_fs_mbus.printname"] = "Flip-up PAWCO Front Sight"
+L["uplp_ar15_fs_mbus.compactname"] = "PAWCO"
+L["uplp_ar15_fs_mbus.description"] = "A flip-up front sight manufactured by PAWCO."
 
 L["uplp_ar15_fs_scalar.printname"] = "Centurion Industries IronWorks Front Sight"
 L["uplp_ar15_fs_scalar.compactname"] = "IronWorks"
@@ -859,21 +862,21 @@ L["uplp_ar15_hg_mlokshort.printname"] = "M-LOK Short Handguard"
 L["uplp_ar15_hg_mlokshort.compactname"] = "M-LOK S"
 L["uplp_ar15_hg_mlokshort.description"] = "Shortened version of the tactical M-LOK handguard allowing installation of various accessories."
 
-L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuko S-15 Handguard"
+L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuku S-15 Handguard"
 L["uplp_ar15_hg_nwsu_s15.compactname"] = "S-15"
-L["uplp_ar15_hg_nwsu_s15.description"] = "Lightweight S-15 handguard manufactured by Nowosuko." .. requires14 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15.description"] = "Lightweight S-15 handguard manufactured by Nowosuku." .. requires14 .. onlycompact
 
-L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuko S-15 Handguard (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15 Handguard (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
-L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuko." .. requires14 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuku." .. requires14 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuko S-15 XL Handguard"
+L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL Handguard"
 L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
-L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko." .. requires16 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuku." .. requires16 .. onlycompact
 
-L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuko S-15 XL Handguard (Sporty Red)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL Handguard (Sporty Red)"
 L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
-L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuko." .. requires16 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuku." .. requires16 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_ris.printname"] = "RIS Handguard"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
@@ -903,11 +906,11 @@ L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical han
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 ACP"
 L["uplp_ar15_mag_45_20.compactname"] = "20R .45"
-L["uplp_ar15_mag_45_20.description"] = "Converts the AR-15 to accept 20-round .45 ACP magazines." .. changeammo.pistol
+L["uplp_ar15_mag_45_20.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 ACP.\nEquipped with a modified 20-round magazine originally from a well-known Israeli submachine gun." .. changeammo.pistol
 
 L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 ACP"
 L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
-L["uplp_ar15_mag_45_40.description"] = "Converts the AR-15 to accept 40-round .45 ACP magazines." .. changeammo.pistol
+L["uplp_ar15_mag_45_40.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 ACP.\nEquipped with a modified 40-round extended magazine originally made for a well-known Israeli submachine gun." .. changeammo.pistol
 
 /// 9x19mm
 L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Flared Magwell"
@@ -916,15 +919,15 @@ L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier re
 
 L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 into firing from 17-round 9x19mm pistol magazines from a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_17.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with a 17-round magazine from a well-known Austrian handgun." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm Extended"
 L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19mm"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 into firing from 33-round 9x19mm extended magazines made for a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_33.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with a 33-round extended magazine made for a well-known Austrian handgun." .. changeammo.pistol
 
 L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9x19mm Drum"
 L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19mm"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the AR-15 into firing from an aftermarket 50-round 9x19mm drum magazine made for a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_50.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with an aftermarket 50-round drum magazine made for a well-known Austrian handgun." .. changeammo.pistol
 
 /// 5.56x45mm
 L["uplp_ar15_mag_drum.printname"] = "100-Round 5.56x45mm Dual Drum"
@@ -937,19 +940,19 @@ L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of 
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Poly"
-L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer made by Wildcat X."
+L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer by Wildcat X."
 
 L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20R Poly"
-L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer made by Wildcat X."
+L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer by Wildcat X."
 
 L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
-L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer made by Wildcat X."
+L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by Wildcat X."
 
 L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
 L["uplp_ar15_mag_pmag60.compactname"] = "60R Drum"
-L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer made by Wildcat X."
+L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer by Wildcat X."
 
 L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"
@@ -972,9 +975,9 @@ L["uplp_ar15_pgrip_massive.printname"] = "Massive Pistol Grip"
 L["uplp_ar15_pgrip_massive.compactname"] = "Massive"
 L["uplp_ar15_pgrip_massive.description"] = "Oversized pistol grip for heavier AR-15-based rifles."
 
-L["uplp_ar15_pgrip_modern.printname"] = "Nowosuko Pistol Grip"
-L["uplp_ar15_pgrip_modern.compactname"] = "Nowosuko"
-L["uplp_ar15_pgrip_modern.description"] = "Modernized pistol grip for AR-15 rifles made by Nowosuko."
+L["uplp_ar15_pgrip_modern.printname"] = "Nowosuku Pistol Grip"
+L["uplp_ar15_pgrip_modern.compactname"] = "Nowosuku"
+L["uplp_ar15_pgrip_modern.description"] = "Modernized pistol grip for AR-15 rifles made by Nowosuku."
 
 L["uplp_ar15_pgrip_psg.printname"] = "ApexCore Systems Pistol Grip"
 L["uplp_ar15_pgrip_psg.compactname"] = "ApexCore"
@@ -1014,24 +1017,24 @@ L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
 L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
 L["uplp_ar15_rs_m4.description"] = "Standard issue rear sight for AR-15 rifles."
 
-L["uplp_ar15_rs_mbus.printname"] = "Flip-up MBS Rear Sight"
-L["uplp_ar15_rs_mbus.compactname"] = "MBS"
-L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by Wildcat X."
+L["uplp_ar15_rs_mbus.printname"] = "Flip-up PAWCO Rear Sight"
+L["uplp_ar15_rs_mbus.compactname"] = "PAWCO"
+L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by PAWCO."
 
 L["uplp_ar15_rs_scalar.printname"] = "Centurion Industries IronWorks Rear Sight"
 L["uplp_ar15_rs_scalar.compactname"] = "IronWorks"
 L["uplp_ar15_rs_scalar.description"] = "Adjustable rear sight manufactured by IronWorks, subsidiary to Centurion Industries."
 
-L["uplp_ar15_rs_type1.printname"] = "Type 1 Rear Sight"
-L["uplp_ar15_rs_type1.compactname"] = "Type 1"
+L["uplp_ar15_rs_type1.printname"] = "Type I Rear Sight"
+L["uplp_ar15_rs_type1.compactname"] = "Type I"
 L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
 
-L["uplp_ar15_rs_type2.printname"] = "Type 2 Rear Sight"
-L["uplp_ar15_rs_type2.compactname"] = "Type 2"
+L["uplp_ar15_rs_type2.printname"] = "Type II Rear Sight"
+L["uplp_ar15_rs_type2.compactname"] = "Type II"
 L["uplp_ar15_rs_type2.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
 
-L["uplp_ar15_rs_type3.printname"] = "Type 3 Rear Sight"
-L["uplp_ar15_rs_type3.compactname"] = "Type 3"
+L["uplp_ar15_rs_type3.printname"] = "Type III Rear Sight"
+L["uplp_ar15_rs_type3.compactname"] = "Type III"
 L["uplp_ar15_rs_type3.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
 
 ////// Stocks
@@ -1167,13 +1170,13 @@ L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL Handguard"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
 L["uplp_mutant_hg_long.description"] = "Longer variant of the tactical handguard made for the Mutant by Hoki Armory." .. requires19
 
-L["uplp_mutant_hg_Nowosuko.printname"] = "Nowosuku SX6 Handguard"
-L["uplp_mutant_hg_Nowosuko.compactname"] = "SX6"
-L["uplp_mutant_hg_Nowosuko.description"] = "Lightweight SX6 handguard manufactured by Nowosuku."
+L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6 Handguard"
+L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
+L["uplp_mutant_hg_nowosuku.description"] = "Lightweight SX6 handguard manufactured by Nowosuku."
 
-L["uplp_mutant_hg_Nowosuko_xl.printname"] = "Nowosuku SX6 XL Handguard"
-L["uplp_mutant_hg_Nowosuko_xl.compactname"] = "SX6 XL"
-L["uplp_mutant_hg_Nowosuko_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. requires19
+L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
+L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
+L["uplp_mutant_hg_nowosuku_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. requires19
 
 L["uplp_mutant_hg_short.printname"] = "Hoki Armory Handguard"
 L["uplp_mutant_hg_short.compactname"] = "Hoki"
@@ -1296,6 +1299,8 @@ L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
 L["uplp_weapon_awp"] = "AW Sniper"
 L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
 
+L["uplp_weapon_awp_atx"] = "eXtreme Sport Rifle"
+
 L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
 /////////// Attachments
@@ -1334,7 +1339,6 @@ L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Round .338"
 L["uplp_awp_mag_awm.compactname"] = "5R .338"
--- L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 ammunition.\n\nRequires a < Stock > attachment."
 L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 ammunition."
 
 L["uplp_awp_mag_awp.printname"] = "5-Round .308"

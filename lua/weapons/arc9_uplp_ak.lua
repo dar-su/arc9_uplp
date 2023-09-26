@@ -761,27 +761,28 @@ SWEP.Animations = {
     
     -- Inspect
 
+    -- ["inspect"] = {
+        -- Source = {"inspect_762"},
+        -- FireASAP = true,
+        -- EventTable = {
+            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            -- {hide = 1, t = 0},
+        -- },
+        -- IKTimeLine = {
+            -- { t = 0, lhik = 1 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.65, lhik = 0 },
+            -- { t = 0.85, lhik = 0 },
+            -- { t = 1, lhik = 1 },
+        -- },
+    -- },  
+    -- ["1_inspect"] = {
     ["inspect"] = {
-        Source = {"inspect_762"},
-        FireASAP = true,
-        EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },  
-    ["1_inspect"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -799,27 +800,28 @@ SWEP.Animations = {
         },
     },  
 
+    -- ["inspect_545"] = {
+        -- Source = {"inspect_545"},
+        -- FireASAP = true,
+        -- EventTable = {
+            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            -- {hide = 1, t = 0},
+        -- },
+        -- IKTimeLine = {
+            -- { t = 0, lhik = 1 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.65, lhik = 0 },
+            -- { t = 0.85, lhik = 0 },
+            -- { t = 1, lhik = 1 },
+        -- },
+    -- },  
+    -- ["1_inspect_545"] = {
     ["inspect_545"] = {
-        Source = {"inspect_545"},
-        FireASAP = true,
-        EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },  
-    ["1_inspect_545"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -837,27 +839,28 @@ SWEP.Animations = {
         },
     },  
 
+    -- ["inspect_556"] = {
+        -- Source = {"inspect_556"},
+        -- FireASAP = true,
+        -- EventTable = {
+            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            -- {hide = 1, t = 0},
+        -- },
+        -- IKTimeLine = {
+            -- { t = 0, lhik = 1 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.65, lhik = 0 },
+            -- { t = 0.85, lhik = 0 },
+            -- { t = 1, lhik = 1 },
+        -- },
+    -- },  
+    -- ["1_inspect_556"] = {
     ["inspect_556"] = {
-        Source = {"inspect_556"},
-        FireASAP = true,
-        EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },  
-    ["1_inspect_556"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -876,27 +879,28 @@ SWEP.Animations = {
     },  
 
 
+    -- ["inspect_308"] = {
+        -- Source = {"inspect_308"},
+        -- FireASAP = true,
+        -- EventTable = {
+            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            -- {hide = 1, t = 0},
+        -- },
+        -- IKTimeLine = {
+            -- { t = 0, lhik = 1 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.65, lhik = 0 },
+            -- { t = 0.85, lhik = 0 },
+            -- { t = 1, lhik = 1 },
+        -- },
+    -- },  
+    -- ["1_inspect_308"] = {
     ["inspect_308"] = {
-        Source = {"inspect_308"},
-        FireASAP = true,
-        EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },  
-    ["1_inspect_308"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -915,27 +919,28 @@ SWEP.Animations = {
     },  
 
 
+    -- ["inspect_drum"] = {
+        -- Source = {"inspect_drum"},
+        -- FireASAP = true,
+        -- EventTable = {
+            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipout_v5.wav", t = 17 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_03.wav", t = 65 / 30, c = ca, v = 0.8 },
+            -- { s = pathsound .. "inspect_02.wav", t = 120 / 30, c = ca, v = 0.8 },
+            -- { s = pathreloadsound .. "clipin_v4.wav", t = 130 / 30, c = ca, v = 0.8 },
+            -- {hide = 1, t = 0},
+        -- },
+        -- IKTimeLine = {
+            -- { t = 0, lhik = 1 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.65, lhik = 0 },
+            -- { t = 0.85, lhik = 0 },
+            -- { t = 1, lhik = 1 },
+        -- },
+    -- },  
+    -- ["1_inspect_drum"] = {
     ["inspect_drum"] = {
-        Source = {"inspect_drum"},
-        FireASAP = true,
-        EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 65 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 120 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 130 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },  
-    ["1_inspect_drum"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
