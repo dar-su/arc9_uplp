@@ -468,6 +468,46 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag30")
 
 
+///////////////////////////////////////      uplp_ar15_mag_stanag20
+
+
+ATT = {}
+
+ATT.PrintName = "20-Round 5.56x45mm (Aluminium)"
+ATT.CompactName = "20R 5.56 (A)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "20.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag20.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+ATT.ReloadTimeMult = 0.95
+
+-- ATT.CustomPros = { 
+-- [ARC9:GetPhrase("autostat.reloadtime")] = "+5%",
+-- }
+
+/// Negatives
+ATT.ClipSizeOverride = 20
+
+ATT.Category = "uplp_ar15_556_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_20"
+end
+
+ATT.ModelOffset = Vector(0.075, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag20")
+
+
 ///////////////////////////////////////      uplp_ar15_mag_stanag30
 
 

@@ -152,9 +152,9 @@ L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
 /////////// Optics
-L["uplp_optic_553.printname"] = "Holografiskt Sikte"
-L["uplp_optic_553.compactname"] = "Holo."
-L["uplp_optic_553.description"] = "Traditionellt militär grad holografiskt sikte av amerikanskt ursprung gjort för finkalibriga vapen."
+L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
+L["uplp_optic_553.compactname"] = "500S M"
+L["uplp_optic_553.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™."
 
 L["uplp_optic_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_kobra.compactname"] = "Kobra"
@@ -239,6 +239,10 @@ L["uplp_optic_pm3.description"] = "Lång räckvidd precisionssikte med 12x magni
 L["uplp_optic_generic.printname"] = "10x Precisionssikte"
 L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x magnifiering."
+
+L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holografiskt Sikte med Förstoringsglas"
+L["uplp_optic_hhs1.compactname"] = "500S M"
+L["uplp_optic_hhs1.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™.\nKommer med ett förstoringsglas som kan flyttas till sidan när den inte används."
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
@@ -957,13 +961,17 @@ L["uplp_ar15_mag_pmag60.printname"] = "60-Patroner 5,56x45mm Trumma"
 L["uplp_ar15_mag_pmag60.compactname"] = "60P Trumma"
 L["uplp_ar15_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av Wildcat X."
 
+L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag20.compactname"] = "20P Alum"
+L["uplp_ar15_mag_stanag20.description"] = "20-patronersmagasin tillverkat av aluminium."
+
 L["uplp_ar15_mag_stanag30.printname"] = "30-Patroner 5,56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30P Alum"
-L["uplp_ar15_mag_stanag30.description"] = "30-patronersmagasin tillverkade av aluminium."
+L["uplp_ar15_mag_stanag30.description"] = "30-patronersmagasin tillverkat av aluminium."
 
 L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40P Alum"
-L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkade av aluminium."
+L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkat av aluminium."
 
 L["uplp_ar15_mag_stanag60.printname"] = "60-Patroner 5,56x45mm Quadstack"
 L["uplp_ar15_mag_stanag60.compactname"] = "60P Quad."

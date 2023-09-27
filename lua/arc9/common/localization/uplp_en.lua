@@ -153,9 +153,9 @@ L["uplp_stat_ignite"] = "On Hit: Ignite Target"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
 /////////// Optics
-L["uplp_optic_553.printname"] = "Holographic Sight"
-L["uplp_optic_553.compactname"] = "Holo."
-L["uplp_optic_553.description"] = "Traditional military-grade holographic sight of American origin intended for small arms."
+L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
+L["uplp_optic_553.compactname"] = "500S"
+L["uplp_optic_553.description"] = "Military-grade holografic sight made for small arms by SightLine™."
 
 L["uplp_optic_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_kobra.compactname"] = "Kobra"
@@ -240,6 +240,10 @@ L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnificat
 L["uplp_optic_generic.printname"] = "10x Precision Scope"
 L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
+
+L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight with Magnifier"
+L["uplp_optic_hhs1.compactname"] = "500S"
+L["uplp_optic_hhs1.description"] = "Military-grade holografic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
@@ -957,6 +961,10 @@ L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer b
 L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
 L["uplp_ar15_mag_pmag60.compactname"] = "60R Drum"
 L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer by Wildcat X."
+
+L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
+L["uplp_ar15_mag_stanag20.description"] = "20-round magazine made out of aluminium."
 
 L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"

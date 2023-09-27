@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/"
 
 ATT = {}
 
-ATT.PrintName = "Holographic Sight" -- EoTech 553
-ATT.CompactName = "Holo."
+ATT.PrintName = "SightLine™ 500 Series Holographic Sight" -- EoTech 553
+ATT.CompactName = "500S"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -1439,3 +1439,76 @@ ATT.Scale = 0.82
 
 ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
+
+///////////////////////////////////////      uplp_optic_hhs1
+
+
+ATT = {}
+
+ATT.PrintName = "SightLine™ 500 Series Holographic Sight with Magnifier"
+ATT.CompactName = "500S M"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+
+ATT.Icon = Material(iconfolder .. "hhs.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_hhs1.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7, -1.5),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ShadowPos = Vector(16,0,0),
+        Disassociate = true,
+        Blur = true,
+        ViewModelFOV = 57
+    },
+    {
+        Pos = Vector(0, 10, -1.46),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30
+    },
+}
+
+ATT.DrawFunc = function(swep, model, wm) 
+    if !wm then
+        model:SetBodygroup(1, 2-swep:GetMultiSight())
+    end
+end
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 800
+ATT.HoloSightColorable = true
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 3
+ATT.RTScopeFOV = 57/4
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.RTScopeReticleScale = 1
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ModelOffset = Vector(0.25, 0, -0.1)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_hhs1")

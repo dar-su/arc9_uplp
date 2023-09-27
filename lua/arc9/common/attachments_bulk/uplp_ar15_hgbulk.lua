@@ -563,3 +563,27 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 
 -- ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 
+
+///////////////////////////////////////      uplp_ar15_hg_a1
+
+
+ATT = {}
+
+ATT.PrintName = "A1 Handguard"
+ATT.CompactName = "A1"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "a1.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip",}
+-- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
+
+ATT.RequireElements = {"uplp_ar15_barrel"}
+
+ATT.Category = "uplp_ar15_hg"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_a1")
+

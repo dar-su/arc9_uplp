@@ -36,9 +36,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
--- "[416]XQAAAQDEAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ4JBeqK7gu7/vZdncb8K9F1WnQGVGaf2u3lRog8bNlpT/fMoQM3Yovfk/vkufsbWcDJD/kQUskENfbRfUOzGOhrWeH1o+lp/9vJrUmcO3CIU0m6IU1kndZYueyWDuP9ErD0N2blNTQUZ8aJ/6ii5xMA",
--- "[A2]XQAAAQBFAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjzM/eI8v9XLj1mYuudfHM4+aVme1mTaLUjgPf054zIR+78hucQ96TyP2PlOgPA9G0CRgpaGH2OeN8SjXHMM7viH6UFP70xSewvSvg==",
--- "[Sporty Red PDW]XQAAAQD2AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufftbfUy95DBu7HccFqFO3PAxvBXNUtVIRBJ83XJFv/2K/H1PQDlEADx2sMNs6SqgCZB0ilL6eKibS+tef/nGAP4l/N9U0r6by2YQEs3qKxOe8hgzJzFWaZyeCtBiSHRRYsodOP/yojO7sHIu3s7pznhu4/IWgpk9GWp/yMFlxez5+uWqMe9Nyq1H1L+JF0dcfXz1Pb1spMe8A==",
+"[A1]XQAAAQCVAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjy0XCKWk5OnegmF4aBPyM1DSb0lbZb/ngC92MQGMMzZwxN/PjjK8IHa4Dn6oK1PYsXS1xJIlmKY6Izu59d4N66M3VocmO3xrArsvEVAvGT8t7nvtz7yb9pkYT4q+8TStV3HW92hM6IA",
+"[416]XQAAAQCnAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx52CgpJnp+z62a8eHrkpuwV9G4RjTzkhe2fp9or59Uf0TZU9JH8eIwd3o72vBregdtUVNUmRKX7djk3GzBA/xIuKNT36UPQgXqyd3PUhrEyRW8mmWyQJwHVIVBBaSZARIcv2VQiEOI9ME+o95FdAA==",
+"[Sport]XQAAAQAaAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6rHZm3MG3M+H/IP9OM8iiSem3c+9q2W7AQ3kAWaZ7FVsDoZzxBdiOW5PRpc3r4T5JbgApXf4c1eQGclWy/1C0WdBtGhXOvnSZxPoV7FTlJJGZq44p8BenFF1u5vGdAGMYFu7EQdiCYtfGn2kRH+NUACm8xP2NRkYJb31c/q+pUXTaOq3eVOj5hvOtopY6zQ0zG++JoXiOO3puLf4LN4gA=",
 }
 
 SWEP.DefaultBodygroups = "0011000010000000" -- Might as well prepare for the future
@@ -864,6 +864,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	end
 end
 
+-- SWEP.Hook_ModifyElements = function(self, eles)
+
+    -- if eles["uplp_ar15_handguard_long"] then
+        -- if eles["uplp_ar15_gasblock"] then
+            -- ["uplp_ar15_gasblock_m16"] = {	AttPosMods = {
+				-- [8] = { Pos = Vector(0.045, 0.975, 17.15) },
+			-- }} }
+        -- end
+    -- end
+
+-- end
+
 SWEP.AttachmentElements = {
 	-- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
@@ -913,6 +925,7 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 9 } } },
     ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } } },
     ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 11 } } },
+    ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } }, AttPosMods = {[7] = { Pos = Vector(0.045, -1.7, 1.5) }}},
 	
 	-- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 1 } } },
@@ -1010,7 +1023,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 1.02, 14.215),
         Ang = Angle(90, 90, 180),
-        -- Installed = "uplp_ar15_gasblock_m16",
+        Installed = "uplp_ar15_gasblock_m16",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
