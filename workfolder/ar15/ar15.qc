@@ -25,6 +25,7 @@ $bodygroup "hg" { // 2
 	studio "mutant_hg_nowosuku_s15_red.smd"
 	studio "mutant_hg_nowosuku_s15_xl.smd"
 	studio "mutant_hg_nowosuku_s15_xl_red.smd"
+	studio "hg_a1.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"
