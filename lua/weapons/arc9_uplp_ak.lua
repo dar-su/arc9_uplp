@@ -40,20 +40,13 @@ SWEP.Credits = {
 
 
 SWEP.StandardPresets = {
--- "[Beryl]XQAAAQBAAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUCm4d16R22fa4mB2i2cwj7CJu8XDVOt8n636yhjAhTTav1tDDyoB4vd+ctpmtesNNMCtYVhR2MEK45AaqfTtCHPOlPPvkckO3iFo11eEtSBQbgHUa18j+P6++XfWNXlkhf7jS+fnOxtdgMWyLziQ3dCoL1sCA=",
--- "[Vintage AK]XQAAAQAwAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtQyXDt2tb27kPU2jzTxBTjrYRnBMXiE0lpw92Jzdx1JYBDqsiodGgI+ECL4+g/SOnw1Hg/9/T/TfSzr5r4vnKnPrhQD8ZiCBRohJS6o0DbEsXBOH0JS82yBFk8j7jt4iJ1bfheow/I5/a3kwnqZIaj4=",
--- "[Classic AK]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0U0N5nVl64+vr74h/wEGLDQ5U9Iv/UealLS+ojrv0cNfIa3d6wksEl25x+4EN9WF5I0n0cb5at0upRXD/l/t5m/R2kJHKtQ==",
--- "[Classic RPK]XQAAAQAcAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZbJnKynvrJU8QgUevVMriFsvl01r3RAR1fa2CNlfaf1QTMcnTE5qjrRN2Lo48HlkfZVx+G57QMcpjwjlTG7i/rg4jO3xrQLqotwnJJmQA=",
--- "[Romanian AK]XQAAAQAMAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQTdMim+qtDwv+P/dD3NaXBEMKkOGrs0URrcTYLjshsIy4gtvNVZPIcLUKVrHCwHWWi/CH4LagEksHsQwQnZVj6a96x97xDmsBUH4+us7DbiOHB5Ft/pRhXrwT/Hw8s7P2A=",
--- "[Modern RPK]XQAAAQDyAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KXqdg4P0IHuznBiCHxLZaYXQITZAmJpVgQl19r3xbln7A4OL+1Jp2I2jJsB/idLOiz+EKn9w3GcvtcpDyrzxY8RcWY+lFIHysPoGAiotP4ojBXgA=",
--- "[AK 9mm]XQAAAQAmAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIptDFa78UtfHBv23OZnbpcN8oUN1POCSFOZsC/AWUW94/XcPKIu0RNJCL8MkS5wcV3G7y7k2+UtJFurqNnWaDBUdsrCqo0O9Hwo8QEz6+47e/u9qySGAtDuaVL1bJKBR0xXBrK82THwM+Y+XgA",
--- "[AKSU]XQAAAQAXAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spa/HCvjLEF18pEnhlyUplx5E87kB8J+Tej94m0uBdo54kXFAtVFVOn+OzTPThVRlZtBNamLjg/aBU21nmObi91swCEaETaUhcyib8S5mBkcAA=",
-
-"[Vintage AK]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCAoqlx+D16rlwSFHCB3X4QgBaWkCSgWCXlOWxf2pdl6GTqls3nAIpmhcy1nA9Vw9eh5Sv/8APVbV9nPLnRn6a+gcnB5O7AjXFI8kVfx/jFdywntdaPxNvt7i1B6Dz2RjEt6qAA=",
-"[Polish AK]XQAAAQBEAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPmCZlzL7XO8ZTikto/sOhM5uMURa4B01wSXb9AvFIgmjRa/170yIRX1DJqBJZ9Z1amaZQhh0JxHP3eIfRAL2dhqL+6Im0NNVGruPrNrs+434dchNnWddimMkIyg9Uo/9FE/pz050EpqfqazhUM37GAA==",
-"[Classic AK]XQAAAQAnAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKO9eE5FX+iP9PuTM3N/SfEx/VpOoAdhT2NRRlF/O9Pj25PG8iEPO4wqrtYL2ac5tpCoehPFPTBCO/kKNyA4q2i5yg4RMpI8EYxuN4lrkpgXd34W",
-"[Classic AK MG]XQAAAQAhAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKOym7sUWN7uq5HCUCYYAO0/dn5tSfNnOajWMbGI2QPB1bP698Xo/OtF3XD0zUeFYJuNWLKUBryImARlUJ1ex+Xe2FKYgyH+bZOpVoYPjr4Z7Q==",
-
+"[Vintage]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCAoqlx+D16rlwSFHCB3X4QgBaWkCSgWCXlOWxf2pdl6GTqls3nAIpmhcy1nA9Vw9eh5Sv/8APVbV9nPLnRn6a+gcnB5O7AjXFI8kVfx/jFdywntdaPxNvt7i1B6Dz2RjEt6qAA=",
+"[Polish]XQAAAQBEAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPmCZlzL7XO8ZTikto/sOhM5uMURa4B01wSXb9AvFIgmjRa/170yIRX1DJqBJZ9Z1amaZQhh0JxHP3eIfRAL2dhqL+6Im0NNVGruPrNrs+434dchNnWddimMkIyg9Uo/9FE/pz050EpqfqazhUM37GAA==",
+"[Classic]XQAAAQAnAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKO9eE5FX+iP9PuTM3N/SfEx/VpOoAdhT2NRRlF/O9Pj25PG8iEPO4wqrtYL2ac5tpCoehPFPTBCO/kKNyA4q2i5yg4RMpI8EYxuN4lrkpgXd34W",
+"[Classic RPK]XQAAAQAhAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKOym7sUWN7uq5HCUCYYAO0/dn5tSfNnOajWMbGI2QPB1bP698Xo/OtF3XD0zUeFYJuNWLKUBryImARlUJ1ex+Xe2FKYgyH+bZOpVoYPjr4Z7Q==",
+"[Compact]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spMTibtSril7Sakm05iZUG2v11sSd3eOEMxJ6KFpw6yQV/yDfYyccIHSSN68VGxSO3JY3fu1AY+5li7kxzfQgXJL8RNzC75fVbt22sDn+Hg",
+"[Modern RPK]XQAAAQARAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnxYUkamNJSikwllpcdPluZRVpEDcoCycv+lki7XSdE7tRdiUDQzRy6kWM9d9P3Hn7v3Ia+6o0NXx9dY3j8orB8xlTSQLeoWRfwtKlrv4A",
+"[Sport]XQAAAQBqAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPx++rG+SXv8mjUlUNsYBBZvylRPuy/QKOqKePGum19amiUNWoKnIG5eUDcEThoNBnUjkNtZbLMJAWk5zg7PN4JBoagEzJiuYTih6vxCvHGAE0YgH3oxRa9nZr4qP0xNLDu62elI/tnViNUrPlYUEhMovrTyptDxYQPk++CWs6P9cgM9GieJlYAA==",
 }
 
 //// Muzzle Effects, Shell Effects, Camera
@@ -761,28 +754,27 @@ SWEP.Animations = {
     
     -- Inspect
 
-    -- ["inspect"] = {
-        -- Source = {"inspect_762"},
-        -- FireASAP = true,
-        -- EventTable = {
-            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            -- {hide = 1, t = 0},
-        -- },
-        -- IKTimeLine = {
-            -- { t = 0, lhik = 1 },
-            -- { t = 0.15, lhik = 0 },
-            -- { t = 0.65, lhik = 0 },
-            -- { t = 0.85, lhik = 0 },
-            -- { t = 1, lhik = 1 },
-        -- },
-    -- },  
-    -- ["1_inspect"] = {
     ["inspect"] = {
+        Source = {"inspect_762"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -800,28 +792,27 @@ SWEP.Animations = {
         },
     },  
 
-    -- ["inspect_545"] = {
-        -- Source = {"inspect_545"},
-        -- FireASAP = true,
-        -- EventTable = {
-            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            -- {hide = 1, t = 0},
-        -- },
-        -- IKTimeLine = {
-            -- { t = 0, lhik = 1 },
-            -- { t = 0.15, lhik = 0 },
-            -- { t = 0.65, lhik = 0 },
-            -- { t = 0.85, lhik = 0 },
-            -- { t = 1, lhik = 1 },
-        -- },
-    -- },  
-    -- ["1_inspect_545"] = {
     ["inspect_545"] = {
+        Source = {"inspect_545"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_545"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -839,28 +830,27 @@ SWEP.Animations = {
         },
     },  
 
-    -- ["inspect_556"] = {
-        -- Source = {"inspect_556"},
-        -- FireASAP = true,
-        -- EventTable = {
-            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            -- {hide = 1, t = 0},
-        -- },
-        -- IKTimeLine = {
-            -- { t = 0, lhik = 1 },
-            -- { t = 0.15, lhik = 0 },
-            -- { t = 0.65, lhik = 0 },
-            -- { t = 0.85, lhik = 0 },
-            -- { t = 1, lhik = 1 },
-        -- },
-    -- },  
-    -- ["1_inspect_556"] = {
     ["inspect_556"] = {
+        Source = {"inspect_556"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_556"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -879,28 +869,27 @@ SWEP.Animations = {
     },  
 
 
-    -- ["inspect_308"] = {
-        -- Source = {"inspect_308"},
-        -- FireASAP = true,
-        -- EventTable = {
-            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
-            -- {hide = 1, t = 0},
-        -- },
-        -- IKTimeLine = {
-            -- { t = 0, lhik = 1 },
-            -- { t = 0.15, lhik = 0 },
-            -- { t = 0.65, lhik = 0 },
-            -- { t = 0.85, lhik = 0 },
-            -- { t = 1, lhik = 1 },
-        -- },
-    -- },  
-    -- ["1_inspect_308"] = {
     ["inspect_308"] = {
+        Source = {"inspect_308"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_308"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -919,28 +908,27 @@ SWEP.Animations = {
     },  
 
 
-    -- ["inspect_drum"] = {
-        -- Source = {"inspect_drum"},
-        -- FireASAP = true,
-        -- EventTable = {
-            -- { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipout_v5.wav", t = 17 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_03.wav", t = 65 / 30, c = ca, v = 0.8 },
-            -- { s = pathsound .. "inspect_02.wav", t = 120 / 30, c = ca, v = 0.8 },
-            -- { s = pathreloadsound .. "clipin_v4.wav", t = 130 / 30, c = ca, v = 0.8 },
-            -- {hide = 1, t = 0},
-        -- },
-        -- IKTimeLine = {
-            -- { t = 0, lhik = 1 },
-            -- { t = 0.15, lhik = 0 },
-            -- { t = 0.65, lhik = 0 },
-            -- { t = 0.85, lhik = 0 },
-            -- { t = 1, lhik = 1 },
-        -- },
-    -- },  
-    -- ["1_inspect_drum"] = {
     ["inspect_drum"] = {
+        Source = {"inspect_drum"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipout_v5.wav", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_03.wav", t = 65 / 30, c = ca, v = 0.8 },
+            { s = pathsound .. "inspect_02.wav", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathreloadsound .. "clipin_v4.wav", t = 130 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_drum"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {

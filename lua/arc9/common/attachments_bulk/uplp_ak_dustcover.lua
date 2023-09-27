@@ -54,8 +54,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_old")
 
 ATT = {}
 
-ATT.PrintName = "Dust Cover with Rail"
-ATT.CompactName = "Rail"
+ATT.PrintName = "PAWCO Dust Cover with Rail"
+ATT.CompactName = "PAWCO"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
@@ -63,10 +63,28 @@ ATT.Icon = Material(iconfolder .. "r1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_ak_dc_rail2","use_optics"}
+ATT.ActivateElements = {"uplp_ak_dc_rail","use_optics"}
 
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_rail")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Lisyan Tactical Dust Cover with Rail"
+ATT.CompactName = "Lisyan"
+ATT.Description = ATT.PrintName
+ATT.ExcludeElements = {"uplp_ak_rearsight"}
+
+ATT.Icon = Material(iconfolder .. "r2.png", "mips smooth")
+ATT.Category = "uplp_ak_dc"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_ak_dc_rail2","use_optics"}
+
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dc_rail2")
 
 -------------------------------------------
 
@@ -90,8 +108,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_azen")
 
 ATT = {}
 
-ATT.PrintName = "FB Beryl Dust Cover & Rail"
-ATT.CompactName = "FB Beryl"
+ATT.PrintName = "Szermierz Dust Cover & Rail"
+ATT.CompactName = "Szermierz"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 

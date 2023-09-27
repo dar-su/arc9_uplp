@@ -41,7 +41,7 @@ SWEP.StandardPresets = {
 SWEP.DefaultBodygroups = "0000010000000000" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_1"
+SWEP.MuzzleParticle = "muzzleflash_4"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
@@ -559,10 +559,14 @@ SWEP.AttachmentElements = {
 
 }
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_mp7_optic"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.9, 0),
         Ang = Angle(90, 90, 180),
@@ -571,6 +575,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1.6, 6),
         Ang = Angle(90, 90, 180),
@@ -585,6 +590,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_mp7_stock"},
+        DefaultIcon = Material(defatt2 .. "mp7stock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.35, -5),
         Ang = Angle(90, 90, 180),
@@ -592,6 +598,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_mp7_mag"},
+        DefaultIcon = Material(defatt2 .. "mp7mag.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(0, 0, -0.4),
         Ang = Angle(90, 90, 180),
@@ -599,6 +606,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic"},
+        DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.95, -2),
         Ang = Angle(90, 90, 180),

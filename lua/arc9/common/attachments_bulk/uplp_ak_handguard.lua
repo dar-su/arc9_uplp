@@ -75,8 +75,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk")
 
 ATT = {}
 
-ATT.PrintName = "Beryl Handguard"
-ATT.CompactName = "Beryl"
+ATT.PrintName = "Szermierz Handguard"
+ATT.CompactName = "Szermierz"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")

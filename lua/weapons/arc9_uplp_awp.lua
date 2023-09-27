@@ -651,10 +651,14 @@ SWEP.AttachmentElements = {
     ["uplp_awp_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
 }
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
         Category = {"uplp_awp_rs", "uplp_backup_optic"},
+        DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
         Installed = "uplp_awp_rs",
         Pos = Vector(0, -0.3, 0.55),
@@ -663,6 +667,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),
         Pos = Vector(0, -0.3, 1.326),
@@ -673,6 +678,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_awp_stock"},
+        DefaultIcon = Material(defatt2 .. "snipstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1.6, -2.98),
         Ang = Angle(90, 90, 180),
@@ -681,6 +687,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_awp_barrel"},
+        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.4, 8),
         Ang = Angle(90, 90, 180),
@@ -688,6 +695,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_bipod"),
         Category = {"uplp_awp_bipod"},
+        DefaultIcon = Material(defatt .. "bipod.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 2, 15.5),
         Ang = Angle(90, 90, 180),
@@ -696,6 +704,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_awp_mag"},
+        DefaultIcon = Material(defatt .. "mag_sniper.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(0, -1, -3.4),
         Ang = Angle(90, 90, 180),

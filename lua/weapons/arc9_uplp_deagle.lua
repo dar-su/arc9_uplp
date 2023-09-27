@@ -532,19 +532,25 @@ SWEP.AttachmentElements = {
     -- ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
 }
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        -- Category = {"uplp_optic_small", "uplp_optic_mid"},
-        Category = {"uplp_optic_small"},
+        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        -- Category = {"uplp_optic_small"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -3, 6.5),
-        ExtraSightDistance = 7,
+        Pos = Vector(0, -3, 5),
+        ExtraSightDistance = 4,
         Ang = Angle(90, 90, 180),
+		
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_deag_barrel"},
+        DefaultIcon = Material(defatt2 .. "deagbr.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -2.75, 3.5),
         Ang = Angle(90, 90, 180),
@@ -560,6 +566,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_deag_mag"},
+        DefaultIcon = Material(defatt .. "mag_pistol.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 3, 0.6),
         Ang = Angle(90, 90, 180),
@@ -567,6 +574,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_internals"),
         Category = {"uplp_deag_trig"},
+        DefaultIcon = Material(defatt2 .. "trigger.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.5, 3),
         Ang = Angle(90, 90, 180),
@@ -574,30 +582,34 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_deag_grip"},
+        DefaultIcon = Material(defatt2 .. "argrip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0.7),
         Ang = Angle(90, 90, 180),
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = {"uplp_backup_optic"},
-        Bone = "body",
-        Pos = Vector(0, -3.05, 6),
-        Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_no_backup"},
-		Icon_Offset = Vector(-1, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = {"uplp_backup_optic_front"},
-        Bone = "body",
-        Pos = Vector(0, -3.05, 8),
-        Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_backup_optic_is"},
-        Installed = "uplp_backup_optic_is_front",
-        Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        -- Category = {"uplp_backup_optic"},
+        -- DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
+        -- Bone = "body",
+        -- Pos = Vector(0, -3.05, 6),
+        -- Ang = Angle(90, 90, 180),
+        -- ExtraSightDistance = 7,
+		-- ExcludeElements = {"uplp_no_backup"},
+		-- Icon_Offset = Vector(-1, 0, 0),
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        -- Category = {"uplp_backup_optic_front"},
+        -- DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
+        -- Bone = "body",
+        -- Pos = Vector(0, -3.05, 8),
+        -- Ang = Angle(90, 90, 180),
+        -- RequireElements = {"uplp_backup_optic_is"},
+        -- Installed = "uplp_backup_optic_is_front",
+        -- Integral = "uplp_backup_optic_is_front",
+		-- Hidden = true,
+    -- },
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
         -- Category = {"uplp_grip_vert"},

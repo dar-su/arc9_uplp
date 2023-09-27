@@ -854,10 +854,14 @@ SWEP.AttachmentElements = {
 	
 }
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.175, 1.5),
         Ang = Angle(90, 90, 180),
@@ -873,6 +877,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_internals"),
         Category = {"uplp_molot_bolt"},
+        DefaultIcon = Material(defatt2 .. "trigger.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 1.25, 5.25),
         Ang = Angle(90, 90, 180),
@@ -880,6 +885,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_molot_barrel"},
+        DefaultIcon = Material(defatt2 .. "akbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 1.5, 13),
 		Icon_Offset = Vector(-5, 0, 0.5),
@@ -888,6 +894,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_molot_handguard"},
+        DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 2.5, 16.5),
 		Icon_Offset = Vector(-5, 0, 0.5),
@@ -896,6 +903,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_molot_mag"},
+        DefaultIcon = Material(defatt2 .. "saigamag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 6.5, 6.5),
         Ang = Angle(90, 90, 180),
@@ -912,6 +920,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip"},
+        DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
 		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         RejectAttachments = {
@@ -923,6 +932,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ak_stock"},
+        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         RejectAttachments = {
 		["uplp_ak_stock_fold"] = true,
 		["uplp_ak_stock_underfold"] = true,
@@ -936,6 +946,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic"},
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.175, 0.5),
         Ang = Angle(90, 90, 180),

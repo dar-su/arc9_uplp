@@ -179,8 +179,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_wood")
 
 ATT = {}
 
-ATT.PrintName = "Beryl Stock"
-ATT.CompactName = "Beryl"
+ATT.PrintName = "Szermierz Stock"
+ATT.CompactName = "Szermierz"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "b.png", "mips smooth")

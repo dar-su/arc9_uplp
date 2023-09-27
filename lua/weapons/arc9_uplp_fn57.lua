@@ -540,14 +540,18 @@ SWEP.AttachmentElements = {
 	
 }
 
+local defatt = "arc9/def_att_icons/"
+local defatt2 = "entities/uplp_attachements/def/"
+
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         -- Category = {"uplp_optic_small", "uplp_optic_mid"},
         Category = {"uplp_optic_small"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "slide",
         Pos = Vector(0, -0.5, -1.6),
-        ExtraSightDistance = 7,
+        ExtraSightDistance = 2,
         Ang = Angle(90, 90, 180),
 		Scale = 1.15
     },
@@ -563,6 +567,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_fn57_mag"},
+        DefaultIcon = Material(defatt .. "mag_pistol.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 2.15, 0.4),
         Ang = Angle(90, 90, 180),
@@ -570,6 +575,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_internals"),
         Category = {"uplp_fn57_action"},
+        DefaultIcon = Material(defatt2 .. "trigger.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -1.5, 2.65),
         Ang = Angle(90, 90, 180),
@@ -577,10 +583,10 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_appearance"),
         Category = {"uplp_fn57_skin"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0.8),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
     },
     -- {
         -- PrintName = ARC9:GetPhrase("uplp_category_grip"),

@@ -426,16 +426,20 @@ L["uplp_ak_dc_old.printname"] = "Gammaldags Dammskydd"
 L["uplp_ak_dc_old.compactname"] = "Gammaldags"
 L["uplp_ak_dc_old.description"] = "Gammaldags dammskydd som används på AK-47:an.\nKombinera med " .. col.b .. "Gammaldags Kolv" .. col.e .. " för att ändra utseendet på lådan."
 
-L["uplp_ak_dc_rail.printname"] = "Dammskydd med Skena"
-L["uplp_ak_dc_rail.compactname"] = "Skena"
-L["uplp_ak_dc_rail.description"] = "Alternativt dammskydd med inbyggd skena för riktmedel."
+L["uplp_ak_dc_rail.printname"] = "PAWCO-Dammskydd med Skena"
+L["uplp_ak_dc_rail.compactname"] = "PAWCO"
+L["uplp_ak_dc_rail.description"] = "Taktiskt dammskydd med inbyggd skena för riktmedel gjort av PAWCO."
+
+L["uplp_ak_dc_rail2.printname"] = "Lisyan Tactical-Dammskydd med Skena"
+L["uplp_ak_dc_rail2.compactname"] = "Lisyan"
+L["uplp_ak_dc_rail2.description"] = "Taktiskt dammskydd med inbyggd skena för riktmedel gjort av Lisyan Tactical."
 
 L["uplp_ak_dc_azen.printname"] = "Zenith-Dammskydd"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
 L["uplp_ak_dc_azen.description"] = "Modernt dammskydd för AK-gevär. Kommer med inbyggd toppmonterad skena för riktmedel."
 
-L["uplp_ak_dc_beryl.printname"] = "Beryl Dammskydd & Skena"
-L["uplp_ak_dc_beryl.compactname"] = "Beryl"
+L["uplp_ak_dc_beryl.printname"] = "Szermierz Dammskydd & Skena"
+L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
 L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena gjorda för ett AK-gevär av polskt ursprung."
 
 L["uplp_ak_dc_12.printname"] = "2023 AK-12M1 Konfiguering"
@@ -475,8 +479,8 @@ L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistolgrepp"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
 L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på PP-19-01 \"Vityaz\"."
 
-L["uplp_ak_grip_beryl.printname"] = "Beryl Pistolgrepp"
-L["uplp_ak_grip_beryl.compactname"] = "Beryl"
+L["uplp_ak_grip_beryl.printname"] = "Szermierz Pistolgrepp"
+L["uplp_ak_grip_beryl.compactname"] = "Szermierz"
 L["uplp_ak_grip_beryl.description"] = "Alternativt pistolgrepp gjorda för ett AK-gevär av polskt ursprung."
 
 L["uplp_ak_grip_molot.printname"] = "Molot Pistolgrepp"
@@ -504,8 +508,8 @@ L["uplp_ak_hg_rpk.printname"] = "Klassiskt RPK-Handskydd"
 L["uplp_ak_hg_rpk.compactname"] = "K. RPK"
 L["uplp_ak_hg_rpk.description"] = "Trähandskydd som används på RPK och RPK-74:an."
 
-L["uplp_ak_hg_beryl.printname"] = "Beryl-Handskydd"
-L["uplp_ak_hg_beryl.compactname"] = "Beryl"
+L["uplp_ak_hg_beryl.printname"] = "Szermierz-Handskydd"
+L["uplp_ak_hg_beryl.compactname"] = "Szermierz"
 L["uplp_ak_hg_beryl.description"] = "Taktiskt handskydd gjort för ett AK-gevär av polskt ursprung."
 
 L["uplp_ak_hg_tac.printname"] = "Lisyan Tactical-Handskydd"
@@ -702,8 +706,8 @@ L["uplp_ak_stock_wood.printname"] = "Träkolv"
 L["uplp_ak_stock_wood.compactname"] = "Trä"
 L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK-74:an."
 
-L["uplp_ak_stock_beryl.printname"] = "Beryl-Kolv"
-L["uplp_ak_stock_beryl.compactname"] = "Beryl"
+L["uplp_ak_stock_beryl.printname"] = "Szermierz-Kolv"
+L["uplp_ak_stock_beryl.compactname"] = "Szermierz"
 L["uplp_ak_stock_beryl.description"] = "Taktisk kolv gjorda för ett AK-gevär av polskt ursprung."
 
 L["uplp_ak_stock_poly.printname"] = "Polymer Kolv"

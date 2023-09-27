@@ -427,16 +427,20 @@ L["uplp_ak_dc_old.printname"] = "Vintage Dust Cover"
 L["uplp_ak_dc_old.compactname"] = "Vintage"
 L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK-47.\nCombine with " .. col.b .. "Vintage Stock" .. col.e .. " to change receiver appearance."
 
-L["uplp_ak_dc_rail.printname"] = "Dust Cover with Rail"
-L["uplp_ak_dc_rail.compactname"] = "Rail"
-L["uplp_ak_dc_rail.description"] = "Alternative dust cover with built-in rail for optics."
+L["uplp_ak_dc_rail.printname"] = "PAWCO Dust Cover with Rail"
+L["uplp_ak_dc_rail.compactname"] = "PAWCO"
+L["uplp_ak_dc_rail.description"] = "Tactical dust cover with built-in rail for optics made by PAWCO."
+
+L["uplp_ak_dc_rail2.printname"] = "Lisyan Tactical Dust Cover with Rail"
+L["uplp_ak_dc_rail2.compactname"] = "Lisyan"
+L["uplp_ak_dc_rail2.description"] = "Tactical dust cover with built-in rail for optics made by Lisyan Tactical."
 
 L["uplp_ak_dc_azen.printname"] = "Zenith Dust Cover"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
 L["uplp_ak_dc_azen.description"] = "Modernized dust cover for AK rifles. Comes with built-in top rail for optics."
 
-L["uplp_ak_dc_beryl.printname"] = "Beryl Dust Cover & Rail"
-L["uplp_ak_dc_beryl.compactname"] = "Beryl"
+L["uplp_ak_dc_beryl.printname"] = "Szermierz Dust Cover & Rail"
+L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
 L["uplp_ak_dc_beryl.description"] = "Dust cover and top rail combination made for an AK rifle of Polish origin."
 
 L["uplp_ak_dc_12.printname"] = "2023 AK-12M1 Configuration"
@@ -476,8 +480,8 @@ L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistol Grip"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
 L["uplp_ak_grip_vityaz.description"] = "Larger pistol grip used on the PP-19-01 \"Vityaz\"."
 
-L["uplp_ak_grip_beryl.printname"] = "Beryl Pistol Grip"
-L["uplp_ak_grip_beryl.compactname"] = "Beryl"
+L["uplp_ak_grip_beryl.printname"] = "Szermierz Pistol Grip"
+L["uplp_ak_grip_beryl.compactname"] = "Szermierz"
 L["uplp_ak_grip_beryl.description"] = "Alternative pistol grip made for an AK rifle of Polish origin."
 
 L["uplp_ak_grip_molot.printname"] = "Molot Pistol Grip"
@@ -505,8 +509,8 @@ L["uplp_ak_hg_rpk.printname"] = "Classic RPK Handguard"
 L["uplp_ak_hg_rpk.compactname"] = "C. RPK"
 L["uplp_ak_hg_rpk.description"] = "Wooden handguard used on the RPK and RPK-74."
 
-L["uplp_ak_hg_beryl.printname"] = "Beryl Handguard"
-L["uplp_ak_hg_beryl.compactname"] = "Beryl"
+L["uplp_ak_hg_beryl.printname"] = "Szermierz Handguard"
+L["uplp_ak_hg_beryl.compactname"] = "Szermierz"
 L["uplp_ak_hg_beryl.description"] = "Tactical handguard made for an AK rifle of Polish origin."
 
 L["uplp_ak_hg_tac.printname"] = "Lisyan Tactical Handguard"
@@ -703,8 +707,8 @@ L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
 L["uplp_ak_stock_wood.compactname"] = "Wooden"
 L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK-74 and AKM."
 
-L["uplp_ak_stock_beryl.printname"] = "Beryl Stock"
-L["uplp_ak_stock_beryl.compactname"] = "Beryl"
+L["uplp_ak_stock_beryl.printname"] = "Szermierz Stock"
+L["uplp_ak_stock_beryl.compactname"] = "Szermierz"
 L["uplp_ak_stock_beryl.description"] = "Tactical stock made for an AK rifle of Polish origin."
 
 L["uplp_ak_stock_poly.printname"] = "Polymer Stock"
