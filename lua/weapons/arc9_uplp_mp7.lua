@@ -57,7 +57,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 //// View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_mp7.mdl"
-SWEP.WorldModel = "models/weapons/w_smg_mac10.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_mp7.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
