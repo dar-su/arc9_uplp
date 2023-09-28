@@ -1,8 +1,9 @@
 # PolyArms Project
-The PolyArms Project (will be named like this if i won't find any better name until release)\
+The PolyArms Project (will be named like this if i won't find any better name until release)
   
 Very WIP!!!  
-  
+![iconpaw2](https://github.com/dar-su/arc9_uplp/assets/95997959/9f9b20e1-7ca5-48f2-a189-b73eb898ad25)
+
 Includes 9 weapons at the moment:
 - AK (Default build is AK-103) - Can be made into almost any AK
 - AK-12 (AK-12M1 2023) - can be made into ak12/15/19/308/rpk16 from 2016 to 2023
@@ -13,7 +14,9 @@ Includes 9 weapons at the moment:
 - Deagle (IMI Desert Eagle) - have lots of custom parts, mw22 inspired
 - PDW-7 (HK MP7) - not so many atts, you can make it small
 - MRD57 (FN Five-seveN Mk3 MRD) - only big magazine, auto trigger and skins as customization
-  
+
+![aaaa](https://cdn.discordapp.com/attachments/1065115051062726716/1155495815037599754/image.png)
+
 There might be second pack in future (or i'll just add guns to this one slowly, i'm not sure)  
   
 Might need some more addons for sounds! like this for example https://github.com/Arnau-Morant/ArcCW-UnnamedProject  
