@@ -10,9 +10,9 @@ Includes 9 weapons at the moment:
 - Molot (Vepr "Molot" IPSC) - have kinda cool customization and cool drum
 - AR-15 (M4A1) - has some ar15 customization write all variants here later pls
 - AW Sniper (AI AWM) - has some cool stocks and calibers
-- PDW-7 (HK MP7) - not so many atts, you can make it small
 - Deagle (IMI Desert Eagle) - have lots of custom parts, mw22 inspired
-- MRD57 (FN Five-seveN Mk3 MRD) - only big magazine and skins as customization
+- PDW-7 (HK MP7) - not so many atts, you can make it small
+- MRD57 (FN Five-seveN Mk3 MRD) - only big magazine, auto trigger and skins as customization
 
 There might be second pack in future (or i'll just add guns to this one slowly, i'm not sure)
 
