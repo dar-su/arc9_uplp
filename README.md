@@ -1,7 +1,7 @@
 # PolyArms Project
 The PolyArms Project (might rename idk) is a pack with bunch of cool low poly weapons :p  
 
-![iconpaw2](https://github.com/dar-su/arc9_uplp/assets/95997959/9f9b20e1-7ca5-48f2-a189-b73eb898ad25)
+![iconpaw2](https://github.com/dar-su/arc9_uplp/assets/95997959/9f9b20e1-7ca5-48f2-a189-b73eb898ad25) <sup>i have no idea what the 🐾 are doing here, someone hacked the picture</sup>
 
 Currently includes 10 awesome guns:
 - AK (Default preset - AK-103) - you can make it into a looot of different AK type guns
