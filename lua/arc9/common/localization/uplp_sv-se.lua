@@ -53,17 +53,20 @@ L["uplp_caliber_12gauge"] = "12-Kaliber"
 L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5,7x28mm"
 L["uplp_caliber_4.6x30mm"] = "HK 4,6x30mm"
+L["uplp_caliber_9x19mm"] = "9x19mm Parabellum"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare2"
 
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
 L["uplp_manufacturer_ai"] = "Accuracy International"
+L["uplp_manufacturer_cmmg"] = "CMMG Inc."
 L["uplp_manufacturer_fn"] = "FN Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
+L["uplp_manufacturer_izhmash"] = "Izhmash"
+L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
+L["uplp_manufacturer_magnum"] = "Magnum Research"
+L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
+L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 
 /////////// Year
 L["uplp_year"] = "År5"
@@ -749,7 +752,50 @@ L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning 
 L["uplp_ak_stock_ppk.printname"] = "PPK-20-Kolv"
 L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
 -- L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nOm den är \"Förlängd\": Multiplicerar förmåner med 20% till, men multiplicerar nackdelar med 35%."
-L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt."
+-- L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt."
+L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20."
+
+/////////// AK SMG Exclusive
+////// Receivers
+L["uplp_ak_smg_rec_vityaz.printname"] = "\"Vityaz\" 30-Patronersmagasin"
+L["uplp_ak_smg_rec_vityaz.compactname"] = "\"Vityaz\""
+L["uplp_ak_smg_rec_vityaz.description"] = "Konverterar AK KPist. till \"Vityaz\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
+
+L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"Vityaz\" 30-Patroners Banan Magasin"
+L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"Vityaz\" (B)"
+L["uplp_ak_smg_rec_vityaz_tac.description"] = "Konverterar AK KPist. till \"Vityaz\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin målad för att likna en banan.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
+
+L["uplp_ak_smg_rec_bizon.printname"] = "\"Bizon\" 64-Patronersmagasin"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Bizon\""
+L["uplp_ak_smg_rec_bizon.description"] = "Konverterar AK KPist. till \"Bizon\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
+
+L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Bizon\" Klassiskt 64-Patronersmagasin"
+L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Bizon\" (K)"
+L["uplp_ak_smg_rec_bizon_old.description"] = "Konverterar AK KPist. till \"Bizon\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
+
+////// Barrels
+L["uplp_ak_smg_brl_long.printname"] = "400mm Pipa"
+L["uplp_ak_smg_brl_long.compactname"] = "400mm"
+L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"Vityaz\")."
+L["uplp_ak_smg_brl_long.description"] = "Lång 400mm pipa till AK Kpist. (\"Vityaz\")."
+
+L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Pipa"
+L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
+L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425mm pipa till AK KPist. med PPK-20-Konfigueringen."
+
+////// Receivers
+L["uplp_ak_smg_conf_ppk20.printname"] = "PPK-20-Konfiguering"
+L["uplp_ak_smg_conf_ppk20.compactname"] = "PPK-20"
+L["uplp_ak_smg_conf_ppk20.description"] = "Konverterar AK KPist. till \"PPK-20\"-konfigueringen.\nModern låda med stöd för AK-12 pistolgrepp, framgrepp och riktmedel."
+
+////// Dust Covers
+L["uplp_ak_smg_dc_rail.printname"] = "Dammskydd med Inbyggd Skena"
+L["uplp_ak_smg_dc_rail.compactname"] = "D IS"
+L["uplp_ak_smg_dc_rail.description"] = "Lägger till en toppmonterad skena på normala dammskyddet som används på AK KPist. \"Vityaz\"-konfigueringen."
+
+L["uplp_ak_smg_dc_bizon_rail.printname"] = "Dammskydd med Inbyggd Skena"
+L["uplp_ak_smg_dc_bizon_rail.compactname"] = "D IS"
+L["uplp_ak_smg_dc_bizon_rail.description"] = "Lägger till en toppmonterad skena på normala dammskyddet som används på AK KPist. \"Bizon\"-konfigueringen."
 
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
@@ -1301,6 +1347,10 @@ L["uplp_molot_mag_long.description"] = "8-patroner förstorade magasin."
 L["uplp_molot_mag_drum.printname"] = "19-Patroners PAWCO-Trumma"
 L["uplp_molot_mag_drum.compactname"] = "19P T"
 L["uplp_molot_mag_drum.description"] = "19-patroners trummagasin av PAWCO."
+
+L["uplp_molot_mag_drum_soda.printname"] = "19-Round PAWCO Drum (Limited RED SODA Edition)"
+L["uplp_molot_mag_drum_soda.compactname"] = "19R D (RS)"
+L["uplp_molot_mag_drum_soda.description"] = "19-patroners trummagasin av PAWCO i olika färger som liknar en sorts varelse."
 
 ////// Muzzle
 L["uplp_sg_mz_vepr.printname"] = "Molot-Choke"

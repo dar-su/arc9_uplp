@@ -364,6 +364,7 @@ local ATT = {}
 ATT.PrintName = "8-Round Extended"
 ATT.CompactName = "8R Ext"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 8
 
 ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
@@ -391,6 +392,7 @@ ATT = {}
 ATT.PrintName = "19-Round PAWCO Drum"
 ATT.CompactName = "19R D"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 19
 
 ATT.Icon = Material(iconfolder .. "drum.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
@@ -430,6 +432,7 @@ ATT = {}
 ATT.PrintName = "19-Round PAWCO Drum (Limited RED SODA edition)"
 ATT.CompactName = "19R D (R)"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 19
 
 ATT.Icon = Material(iconfolder .. "drumsoda.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
