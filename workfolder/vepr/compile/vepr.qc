@@ -61,6 +61,7 @@ $bodygroup "mag" { // 5
 	studio "mag std.smd" // 0
 	studio "mag long.smd" // 1
 	studio "mag drum.smd" // 2
+	studio "mag drumsoda.smd" // 3
 }
 $bodygroup "rnd" { // 6
 	studio "ammo r.smd" // 0

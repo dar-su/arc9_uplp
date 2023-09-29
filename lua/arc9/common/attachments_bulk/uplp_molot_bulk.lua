@@ -423,6 +423,45 @@ end
 
 ARC9.LoadAttachment(ATT, "uplp_molot_mag_drum")
 
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "19-Round PAWCO Drum (Limited RED SODA edition)"
+ATT.CompactName = "19R D (R)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "drumsoda.png", "mips smooth")
+ATT.Category = "uplp_molot_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.ClipSize = 19
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.35
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
+}
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_drumsoda.mdl"
+ATT.DropMagazineVelocity = Vector(0, -30, 15)
+ATT.DropMagazineQCA = 5
+
+ATT.SuppressEmptySuffix = true
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "reload" and wep:Clip1() == 0 then 
+        return anim .. "_empty_drum" -- becuse we supress empty suffix empty reloads get ignored too
+    end
+
+    return anim .. "_drum"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_molot_mag_drum_soda")
+
 -- muzzle
 
 -------------------------------------------

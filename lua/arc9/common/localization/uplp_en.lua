@@ -1302,6 +1302,10 @@ L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum"
 L["uplp_molot_mag_drum.compactname"] = "19R D"
 L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO."
 
+L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum (Limited RED SODA edition)"
+L["uplp_molot_mag_drum.compactname"] = "19R D (R)"
+L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature. \n\nSORRY i had to add this in order for polyarms get sounds :/"
+
 ////// Muzzle
 L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
 L["uplp_sg_mz_vepr.compactname"] = "Molot C"
