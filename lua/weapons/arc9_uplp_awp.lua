@@ -40,7 +40,7 @@ SWEP.StandardPresets = {
 "[eXtreme]XQAAAQDLAAAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIHQh6BFtT/SikTP/4dCNGQ8U9eLqcJolWImIlildE/OacNljh4p687F9+YoEMMWBZ+wFmJkQxYtVN2CS51OJ1Vo2MWyva6fsA",
 }
 
-SWEP.DefaultBodygroups = "101010000000000000" -- Might as well prepare for the future
+SWEP.DefaultBodygroups = "100010000000000000" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_1"
@@ -79,16 +79,31 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 110 -- Damage dealt point-blank
-SWEP.DamageMin = 60 -- Damage dealt after maximum range
+SWEP.DamageMax = 90 -- Damage dealt point-blank
+SWEP.DamageMin = 75 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
+
+-- SWEP.SweetSpot = true
+-- SWEP.SweetSpotDamage = SWEP.DamageMax * 1.25
+-- SWEP.SweetSpotRange = 50 * 39.37 -- Weapon deals this amount of damage when enemy is within the sweet spot range
+-- SWEP.SweetSpotWidth = 5 * 39.37
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1.15,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.9,
+    [HITGROUP_RIGHTLEG] = 0.9,
+}
 
 SWEP.Penetration = 50 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 15 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 50 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 400 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 25 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 100 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 850 * 39.37
@@ -106,7 +121,7 @@ SWEP.NoLastCycle = true
 SWEP.ManualActionNoLastCycle = true
 
 -- Recoil
-SWEP.Recoil = 3
+SWEP.Recoil = 1.5
 SWEP.RecoilUp = 1.9
 SWEP.RecoilSide = 1
 
@@ -118,7 +133,7 @@ SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
 SWEP.RecoilAutoControl = 1.75
 
-SWEP.RecoilMultSights = 0.95
+SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
@@ -731,3 +746,14 @@ SWEP.Attachments = {
         -- Pos = Vector(.04, -2.406, -1.428),
     -- },
 }
+
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["xstock"] then
+		name = ARC9:GetPhrase("uplp_weapon_awp_atx")
+	end
+
+    return name
+end

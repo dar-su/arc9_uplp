@@ -112,10 +112,12 @@ ATT.Icon = Material(iconfolder .. "autotrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.RPMMult = 1.6
+ATT.RPMMult = 1.5
 ATT.Firemodes = { { Mode = -1 } }
 ATT.RecoilMult = 1.25
-ATT.RecoilSideMult = 1.5
+ATT.RecoilAutoControlMult = 1.5
+ATT.RecoilSideMult = 5
+ATT.SpreadAddRecoil = 0.025
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")
 

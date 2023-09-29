@@ -1461,3 +1461,16 @@ L["uplp_mp7_mag_20.description"] = "Förkortat magasin som håller 20 patroner."
 L["uplp_mp7_sight_folded.printname"] = "PDW-Riktmedel"
 L["uplp_mp7_sight_folded.compactname"] = "PDW-R"
 L["uplp_mp7_sight_folded.description"] = "Fäller ner PDW-7:ans riktmedel vilket förvandlar dem till pistolliknande riktmedel.\nFörbättrar målförvärv med kostnad på magnifiering."
+
+//////////////////// XAR
+L["uplp_weapon_scar"] = "XAR Heavy"
+L["uplp_weapon_scar_desc"] = "XAR är ett modulärt och mångsidigt automatgevär avsett för användning av specialstyrkor och militära enheter. Det är känt för sin förmåga att snabbt anpassa sig till olika uppdragskrav genom utbytbara pipor och komponenter, vilket gör det till ett pålitligt val för en mängd olika stridsscenarier."
+
+L["uplp_weapon_scar_light"] = "XAR Light"
+L["uplp_weapon_scar_dmr"] = "XAR DMR"
+L["uplp_weapon_scar_mg"] = "XAR MG"
+L["uplp_weapon_scar_pdw"] = "XAR PDW"
+
+L["uplp_weapon_scar_real"] = "FN SCAR-H"
+
+/////////// Attachments

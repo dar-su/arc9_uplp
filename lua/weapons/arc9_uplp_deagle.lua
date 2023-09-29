@@ -107,7 +107,7 @@ SWEP.RecoilRandomSide = 0.2
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.15
+SWEP.RecoilAutoControl = 1.75
 
 SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
@@ -134,16 +134,15 @@ SWEP.VisualRecoilMultHipFire = 1
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.055
+SWEP.SpreadAddHipFire = 0.03
 
-SWEP.SpreadAddRecoil = 0.1
+SWEP.SpreadAddRecoil = 0.07
 SWEP.SpreadAddMove = 0.04
 
 SWEP.SpreadMultSights = 0.001
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilDissipationRateSights = 10
+SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 0.5
 SWEP.RecoilMax = 1

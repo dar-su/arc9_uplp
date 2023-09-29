@@ -18,7 +18,7 @@ ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 
-ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
+ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "2"
@@ -45,7 +45,7 @@ ATT.Icon = Material(iconfolder .. "16r.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 
-ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
+ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "3"
@@ -114,8 +114,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min_red")
 
 ATT = {}
 
-ATT.PrintName = "Gas Block with Rail"
-ATT.CompactName = "GB R"
+ATT.PrintName = "Centurion Industries Gas Block with Rail"
+ATT.CompactName = "Centurion"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "r.png", "mips smooth")

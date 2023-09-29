@@ -162,7 +162,7 @@ SWEP.AimDownSightsTime = 0.5 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.35 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot
+SWEP.RPM = 300 -- How fast gun shoot
 
 SWEP.Num = 8 -- How many bullets shot at once
 

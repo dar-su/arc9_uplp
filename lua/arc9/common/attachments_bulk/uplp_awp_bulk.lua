@@ -43,6 +43,20 @@ ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+/// Positives
+-- ATT.RecoilMult = 0.9
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
+}
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.RangeMinMult = 0.5
+ATT.RangeMaxMult = 0.25	
+
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
 
@@ -62,6 +76,15 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_awp_barrel_long"}
 
+/// Positives
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.RangeMinMult = 1.15
+ATT.RangeMaxMult = 1.25
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_long")
 
 
@@ -80,6 +103,15 @@ ATT.Category = "uplp_awp_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_awp_barrel_short"}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.8
+ATT.SprintToFireTimeMult = 0.85
+
+/// Negatives
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RangeMinMult = 0.8
+ATT.RangeMaxMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 
@@ -103,6 +135,17 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_awm.mdl"
 
 ATT.ActivateElements = {"uplp_awp_mag_awm"}
 -- ATT.RequireElements = {"uplp_awp_stock"}
+
+/// Positives
+ATT.DamageMinMult = 1.25
+ATT.DamageMaxMult = 0.75
+-- ATT.RangeMaxMult = 1.2
+-- ATT.RangeMinMult = 0.65
+-- ATT.PhysBulletMuzzleVelocityMult = 1.4
+
+/// Negatives
+ATT.RecoilMult = 1.45
+ATT.RecoilAutoControlMult = 0.25
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awm")
 
@@ -153,6 +196,14 @@ end
 /// Positives
 ATT.ClipSizeOverride = 8
 
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.05
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
+
 ATT.ActivateElements = {"uplp_awp_mag_awp_big"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_big")
@@ -175,6 +226,16 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_tac.mdl"
 
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}
+
+/// Positives
+ATT.DamageMinMult = 1.15
+-- ATT.RangeMaxMult = 1.2
+-- ATT.RangeMinMult = 0.65
+-- ATT.PhysBulletMuzzleVelocityMult = 1.4
+
+/// Negatives
+ATT.RecoilMult = 1.45
+ATT.RecoilAutoControlMult = 0.25
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")
 
@@ -220,6 +281,14 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock", "uplp_awp_stock"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
+
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx")
 
 
@@ -243,6 +312,14 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock", "uplp_awp_stock"}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_blue")
 
@@ -268,6 +345,14 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock", "uplp_awp_stock"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
+
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_gray")
 
 
@@ -291,6 +376,14 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock", "uplp_awp_stock"}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_green")
 
@@ -316,6 +409,14 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock", "uplp_awp_stock"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
+
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_orange")
 
 
@@ -340,6 +441,14 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock", "uplp_awp_stock"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
+
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_purple")
 
 
@@ -363,6 +472,14 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock", "uplp_awp_stock"}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_white")
 
@@ -421,6 +538,24 @@ ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_awp_stock_tube", "uplp_awp_stock"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_ar15_stock"},
+        DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
+        Pos = Vector(3.65, 0, 0.15),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+/// Negatives
+ATT.RecoilMult = 1.25
+ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_tube")
 

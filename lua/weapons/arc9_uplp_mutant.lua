@@ -1,4 +1,5 @@
-AddCSLuaFile()
+-- AddCSLuaFile()
+--[[
 SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - UPLP"
 SWEP.Spawnable = true
@@ -55,7 +56,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 //// View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_mutant.mdl"
-SWEP.WorldModel = "models/weapons/w_rif_m4a1.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_mutant.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -577,3 +578,4 @@ SWEP.Attachments = {
     --     },
     -- },
 }
+--]]

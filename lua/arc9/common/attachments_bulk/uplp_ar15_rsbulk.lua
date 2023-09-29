@@ -42,7 +42,7 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "8"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     8     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
-ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact"}
+ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.ExcludeElements = {"uplp_optic_used"}
 
@@ -92,7 +92,7 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "0"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
-ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact"}
+ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.ExcludeElements = {"uplp_optic_used"}
 

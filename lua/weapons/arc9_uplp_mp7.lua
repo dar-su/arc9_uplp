@@ -100,7 +100,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 40
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 0.65
 SWEP.RecoilUp = 0.7
 SWEP.RecoilSide = 1.65
 
@@ -110,7 +110,7 @@ SWEP.RecoilRandomSide = 1.1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.75
+SWEP.RecoilAutoControl = 1.15
 
 SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
@@ -119,10 +119,10 @@ SWEP.RecoilMultCrouch = 0.75
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
-SWEP.VisualRecoilPunch = 30 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
@@ -131,7 +131,7 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 0.65
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 4
+SWEP.VisualRecoilPunchHipFire = 2
 SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
@@ -533,7 +533,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_backup_optic"] then
+    if eles["uplp_backup_optic"] or eles["uplp_no_backup"] then
 		mdl:SetBodygroup(5, 0)
     end
 end

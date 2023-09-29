@@ -1461,3 +1461,41 @@ L["uplp_mp7_mag_20.description"] = "Shortened magazine that holds 20 rounds."
 L["uplp_mp7_sight_folded.printname"] = "PDW Iron Sights"
 L["uplp_mp7_sight_folded.compactname"] = "PDW IS"
 L["uplp_mp7_sight_folded.description"] = "Flips the PDW-7's iron sights down, turning them into pistol-like sights.\nImproves target acquisition speeds at the cost of magnification."
+
+//////////////////// XAR
+L["uplp_weapon_scar"] = "XAR Heavy"
+L["uplp_weapon_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
+
+L["uplp_weapon_scar_light"] = "XAR Light"
+L["uplp_weapon_scar_dmr"] = "XAR DMR"
+L["uplp_weapon_scar_mg"] = "XAR MG"
+L["uplp_weapon_scar_pdw"] = "XAR PDW"
+
+L["uplp_weapon_scar_real"] = "FN SCAR-H"
+
+/////////// Attachments
+////// Upper Receivers
+L["uplp_scar_upper_20.printname"] = "DMR Upper"
+L["uplp_scar_upper_20.compactname"] = "DMR"
+L["uplp_scar_upper_20.description"] = "REPLACEME"
+
+L["uplp_scar_upper_20b.printname"] = "DMR Upper (Black)"
+L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
+L["uplp_scar_upper_20b.description"] = "REPLACEME"
+
+L["uplp_scar_upper_b.printname"] = "Standard Upper (Black)"
+L["uplp_scar_upper_b.compactname"] = "Std (B)"
+L["uplp_scar_upper_b.description"] = "REPLACEME"
+
+L["uplp_scar_upper_pdw.printname"] = "PDW Upper"
+L["uplp_scar_upper_pdw.compactname"] = "PDW"
+L["uplp_scar_upper_pdw.description"] = "REPLACEME"
+
+L["uplp_scar_upper_pdwb.printname"] = "PDW Upper (Black)"
+L["uplp_scar_upper_pdwb.compactname"] = "PDW (B)"
+L["uplp_scar_upper_pdwb.description"] = "REPLACEME"
+
+////// Lower Receiver
+L["uplp_scar_lower_b.printname"] = "Standard Lower (Black)"
+L["uplp_scar_lower_b.compactname"] = "Std (B)"
+L["uplp_scar_lower_b.description"] = "REPLACEME"
