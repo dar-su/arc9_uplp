@@ -1,39 +1,30 @@
 # PolyArms Project
-The PolyArms Project (might be renamed) is a GMod weapon project focusing on bringing enjoyable and detailed weapons using the ARC9 weapon base into your hands. The unique part? The low poly appearance.
+The PolyArms Project (might rename idk) is a pack with bunch of cool low poly weapons :p  
+
 ![iconpaw2](https://github.com/dar-su/arc9_uplp/assets/95997959/9f9b20e1-7ca5-48f2-a189-b73eb898ad25)
 
-Currently includes 9 weapons:
-
-Assault Rifles:
-- AK - Based off of the AK-103, this rifle can be customized to resemble many various AK variants.
-- AK-12 - Based off of the 2023 AK-12M1, this rifle can be turned into the various eras of the modern AK-12.
-- AR-15 - Based off of the Colt M4A1, this rifle platform can be turned into various AR-15-based weapons, and be turned into a submachine gun chambered in either 9x19mm or .45 ACP.
-
-Submachine Guns:
-- AK SMG - Based off of the PP-19-01 "Vityaz", this platform can be customized into the PP-19 "Bizon" or the more modern PPK-20.
-- PDW-7 - Based off of the H&K MP7, this classic machine pistol makes up for its lacking unique attachments with its iconic status.
-
-Shotguns:
-- Molot - Based off of the Vepr "Molot" IPSC, this semi-automatic beast can utilize various 12-gauge shells and has plenty of customization to boot.
-
-Snipers:
-- AW Sniper - Based off of the AI AWP, this rifle can be converted into various AI rifles, or into a lightweight sporting rifle.
-
-Handguns: 
-- Deagle - Based off of the IMI Desert Eagle, this hand cannon packs a huge punch at the cost of inverting your wrist after every shot.
-- MRD57 - Based off of the FN Five-SeveN Mk3 MRD, this handgun lacks unique attachments but still packs a decent punch.
+Currently includes 10 awesome guns:
+- AK (Default preset - AK-103) - you can make it into a looot of different AK type guns
+- AK-12 (AK-12M1 2023) - you can make it into different generations of AK-12/15/19 / AK-308 / RPK-16 from 2016 to 2023
+- AR-15 (M4A1) - a m4 you know what it is! lots of recievers, handguards stocks, everything and also you can fed in it 9mm or 45acp magazines
+- AK SMG (PP-19-01 "Vityaz") - you can make 2022 PPK-20 / PP-19 "Bizon" / futuristic fictional bizon
+- PDW-7 (HK MP7) - not many atts but you can make this thing be compact
+- Molot ("Molot" Vepr-12 IPSC, aka Saiga 12) - funny shotgun with lots of customization and different shells to shoot
+- AW Sniper (AI AWM) - you can make AWP / AWM / AWS / AT / AT-X out of it in different colors and calibers, quite cool looking
+- Deagle (IMI Desert Eagle XIX) - i love the deagle, theres bunch of barrels and other customization (I HOPE IT WILL GET NICE FIRE SOUNDS)
+- MRD57 (FN Five-SeveN Mk3 MRD) - almost no customization but i just like the look and stats of irl gun so i included it :3
+- XAR (SCAR-H) - SCAR H / L / 20 / PDW / PDW-H / 20-L i hope it will be good since it not really any done yet (SCAR-20 | Contractor will be included!!)
 
 ![aaaa](https://cdn.discordapp.com/attachments/1065115051062726716/1155495815037599754/image.png)
 
-There might be a second pack coming in the future, or more weapons might be added to this pack.
+There might be second pack in future (or i'll just add guns to this one slowly, i'm not sure)
 
-You might require this addon for various sounds:
-https://github.com/Arnau-Morant/ArcCW-UnnamedProject
+In current state might require this addon for sounds - https://github.com/Arnau-Morant/ArcCW-UnnamedProject
 
-Assets are based off of TastyTony and KaanArsenal models with some guns and attachments made by Darsu.
-Animations are ripped from Partexedd's UnnamedProject while additional animations are made by Darsu ( partex, your animations are amazing <3 !! ).
+Assets are based off TastyTony and KaanArsenal models (some guns and attachments made by meee :3)  
+Animations are stolen from Partexedd's UnnamedProject, additional anims by mee (partex your animlations are great <3 !!)
 
-Huge thanks to Moka for helping to write the LUA for all the weapons and most attachments, and also including localizations. The pack would not be finished without him.
-Additionally, thanks to Cylo for helping a bit and also testing the addon.
+Huge thanks to Moka for helping to write lua for guns and atts and swedish loc (i don't think swedish people know about computers and garysmod but whatever). I wouldn't be able to finish (or, atleast make playable) this pack without him  
+Thanks to Cylo for little helps and testing =3
 
-Sound design is this addon's current weakest link. It will be updated going forward to release.
+Sounds are ass rn i hope rzenith will fix that :-)
