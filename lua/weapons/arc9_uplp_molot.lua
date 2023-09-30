@@ -784,7 +784,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    if eles["uplp_molot_mag_drum"] then -- many shells on drum
+    if eles["uplp_molot_mag_drum"] or eles["uplp_molot_mag_drum_soda"] then -- many shells on drum
         for k, v in pairs(aaaaaa) do
             if eles[k] then
                 mdl:SetBodygroup(6, v)
@@ -804,12 +804,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         if eles["uplp_molot_hg_tac_w"] then mdl:SetBodygroup(3, 12) end
         if eles["uplp_molot_hg_cool"] then mdl:SetBodygroup(3, 15) end
         if eles["uplp_molot_hg_cool2"] then mdl:SetBodygroup(3, 18) end
+        if eles["uplp_molot_hg_azen"] then mdl:SetBodygroup(3, 3) end
     elseif eles["uplp_molot_brl_micro"] then
         if eles["uplp_molot_hg_tac"] then mdl:SetBodygroup(3, 7) end
         if eles["uplp_molot_hg_tac_b"] then mdl:SetBodygroup(3, 10) end
         if eles["uplp_molot_hg_tac_w"] then mdl:SetBodygroup(3, 13) end
         if eles["uplp_molot_hg_cool"] then mdl:SetBodygroup(3, 16) end
         if eles["uplp_molot_hg_cool2"] then mdl:SetBodygroup(3, 19) end
+        if eles["uplp_molot_hg_azen"] then mdl:SetBodygroup(3, 3) end
     end
 end
 
@@ -839,6 +841,7 @@ SWEP.AttachmentElements = {
 	-- MAGAZINES
     ["uplp_molot_mag_long"] = { Bodygroups = { { 5, 1 } } },
     ["uplp_molot_mag_drum"] = { Bodygroups = { { 5, 2 } } },
+    ["uplp_molot_mag_drum_soda"] = { Bodygroups = { { 5, 3 } } },
 
 	-- SHELLS
     ["uplp_sg_shell_red"] = { Bodygroups = { { 6, 0 } } },

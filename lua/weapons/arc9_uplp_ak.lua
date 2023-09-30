@@ -10,10 +10,6 @@ SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 //// Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
--- SWEP.Description = "Test description with <color=255,100,100>red text</color>, <color=100,255,100>green text</color> and <color=100,100,255> blue text</color>."
-local psf = "<font=PS4_FONT16>"
-
--- SWEP.Description = "The <color=255,100,100>AK-103</color> is a firearm from <color=100,255,100>the Russian Federation</color>.\n\nRemember, you can press " .. psf .. "A</font> to perform an action."
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu

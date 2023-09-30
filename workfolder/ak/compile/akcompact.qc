@@ -109,11 +109,14 @@ $bodygroup "gripdef" { // 8
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0 0 0 rotate -90 0 0
+$attachment "1" "barrel" 0 0 -5.2 rotate -90 0 0 // def br
 $attachment "2" "bolt" 0 0 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "fakemag" 0 0 0 rotate -90 0 0
 $attachment "5" "bizonmag" 0 0 0 rotate -90 0 0
+
+$attachment "6" "barrel" 0 0 0.9 rotate -90 0 0 // long br, long ppk20
+$attachment "7" "barrel" 0 0.14 -6.4 rotate -90 0 0 // ppk20, ppkbizon
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
  
 $surfaceprop "default"

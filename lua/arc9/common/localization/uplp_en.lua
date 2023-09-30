@@ -53,18 +53,20 @@ L["uplp_caliber_12gauge"] = "12 Gauge"
 L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
 L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
+L["uplp_caliber_9x19mm"] = "9x19mm Parabellum"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
 
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_magnum"] = "Magnum Research"
 L["uplp_manufacturer_ai"] = "Accuracy International"
+L["uplp_manufacturer_cmmg"] = "CMMG Inc."
 L["uplp_manufacturer_fn"] = "FN Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
+L["uplp_manufacturer_izhmash"] = "Izhmash"
+L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
+L["uplp_manufacturer_magnum"] = "Magnum Research"
+L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
+L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 
 /////////// Year
 L["uplp_year"] = "Year5"
@@ -750,7 +752,49 @@ L["uplp_ak_stock_evo.description"] = "Upgraded tactical stock for use on the AK-
 L["uplp_ak_stock_ppk.printname"] = "PPK-20 Stock"
 L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
 -- L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nWhen \"Extended\": Multiplies benefits by an additional 20%, but multiplies downsides by 35%."
-L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nImproves recoil control when extended and improves weapon handling when folded."
+-- L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG.\nImproves recoil control when extended and improves weapon handling when folded."
+L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the PPK-20 SMG."
+
+/////////// AK SMG Exclusive
+////// Receivers
+L["uplp_ak_smg_rec_vityaz.printname"] = "\"Vityaz\" 30-Round Magazine"
+L["uplp_ak_smg_rec_vityaz.compactname"] = "\"Vityaz\""
+L["uplp_ak_smg_rec_vityaz.description"] = "Converts the AK SMG to the \"Vityaz\" configuration.\nFed with a traditional 30-round magazine.\n<color=160,160,255>Can equip other Handguards</color>."
+
+L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"Vityaz\" 30-Round Banana Magazine"
+L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"Vityaz\" (B)"
+L["uplp_ak_smg_rec_vityaz_tac.description"] = "Converts the AK SMG to the \"Vityaz\" configuration.\nFed with a traditional 30-round magazine painted to look like a banana.\n<color=160,160,255>Can equip other Handguards</color>."
+
+L["uplp_ak_smg_rec_bizon.printname"] = "\"Bizon\" 64-Round Magazine"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Bizon\""
+L["uplp_ak_smg_rec_bizon.description"] = "Converts the AK SMG to the \"Bizon\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+
+L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Bizon\" 64-Round Classic Magazine"
+L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Bizon\" (C)"
+L["uplp_ak_smg_rec_bizon_old.description"] = "Converts the AK SMG to the \"Bizon\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+
+////// Barrels
+L["uplp_ak_smg_brl_long.printname"] = "400mm Barrel"
+L["uplp_ak_smg_brl_long.compactname"] = "400mm"
+L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"Vityaz\")."
+
+L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Barrel"
+L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
+L["uplp_ak_smg_brl_ppk20_long.description"] = "Long 425mm (16.73\") barrel for the AK SMG with the PPK-20 Configuration."
+
+////// Receivers
+L["uplp_ak_smg_conf_ppk20.printname"] = "PPK-20 Configuration"
+L["uplp_ak_smg_conf_ppk20.compactname"] = "PPK-20"
+L["uplp_ak_smg_conf_ppk20.description"] = "Converts the AK SMG to the \"PPK-20\" configuration.\nModernized receiver with support for AK-12 pistol grips, foregrips and optics."
+
+////// Dust Covers
+L["uplp_ak_smg_dc_rail.printname"] = "Dust Cover with Built-in Rail"
+L["uplp_ak_smg_dc_rail.compactname"] = "DC R"
+L["uplp_ak_smg_dc_rail.description"] = "Adds a top rail onto the standard dust cover used on the AK SMG's \"Vityaz\" configuration."
+
+L["uplp_ak_smg_dc_bizon_rail.printname"] = "Dust Cover with Built-in Rail"
+L["uplp_ak_smg_dc_bizon_rail.compactname"] = "DC R"
+L["uplp_ak_smg_dc_bizon_rail.description"] = "Adds a top rail onto the standard dust cover used on the AK SMG's \"Bizon\" configuration."
 
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
@@ -1302,9 +1346,10 @@ L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum"
 L["uplp_molot_mag_drum.compactname"] = "19R D"
 L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO."
 
-L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum (Limited RED SODA edition)"
-L["uplp_molot_mag_drum.compactname"] = "19R D (R)"
-L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature. \n\nSORRY i had to add this in order for polyarms get sounds :/"
+L["uplp_molot_mag_drum_soda.printname"] = "19-Round PAWCO Drum (Limited RED SODA Edition)"
+L["uplp_molot_mag_drum_soda.compactname"] = "19R D (RS)"
+-- L["uplp_molot_mag_drum_soda.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature. \n\nSORRY i had to add this in order for polyarms get sounds :/"
+L["uplp_molot_mag_drum_soda.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature."
 
 ////// Muzzle
 L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
