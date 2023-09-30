@@ -267,8 +267,16 @@ local path556 = path
 local reloadsound = "uplp_temp/awp/reload/wpfoly_l1153a_"
 local shootsound = "uplp_temp/awp/shoot/weap_l115a3_"
 local shootsoundsupp = "uplp_temp/awp/shoot/weap_snipersilenced_"
+local shootsoundreal = ")uplp_rz/awp/"
 
-SWEP.ShootSound = {	shootsound .. "slst_01b2.ogg"	}
+SWEP.ShootSound = {
+    shootsoundreal .. "fire-01.ogg",
+    shootsoundreal .. "fire-02.ogg",
+    shootsoundreal .. "fire-03.ogg",
+    shootsoundreal .. "fire-04.ogg",
+    shootsoundreal .. "fire-05.ogg",
+    shootsoundreal .. "fire-06.ogg"
+}
 
 SWEP.DistantShootSound = {	shootsound .. "mech_01b4.ogg"	}
 
