@@ -558,9 +558,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         -- Category = {"uplp_fn57_muzzle"},
-        Category = {""},
+        Category = {"uplp_muzzle_pistol"},
         Bone = "body",
-        Pos = Vector(0, -2.45, 7.25),
+        Pos = Vector(0, -2.43, 7.2),
         Ang = Angle(90, 90, 180),
         -- ExcludeElements = {"nomuz"}
     },

@@ -99,7 +99,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1.5
+SWEP.Recoil = 0.85
 SWEP.RecoilUp = 0.7
 SWEP.RecoilSide = 1.15
 
@@ -109,7 +109,7 @@ SWEP.RecoilRandomSide = 0.9
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 0.85
+SWEP.RecoilAutoControl = 0.95
 
 SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
@@ -546,7 +546,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_ak_smg_conf_ppk20"] then
+    if eles["uplp_ak_smg_conf_ppk20"] then -- If using the PPK-20 Configuration
         mdl:SetBodygroup(4, 8) -- Remove handguard
 		
 		if eles["uplp_ak_smg_brl_ppk20_long"] then
@@ -557,12 +557,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 			mdl:SetBodygroup(8, 0) -- Remove irons when backup or optics on
 		end
     end
-
-    -- if eles["uplp_ak_smg_conf_bizon"] then
-		-- if eles["uplp_ak_smg_dc_rail"] then
-			-- mdl:SetBodygroup(3, 3) -- Remove irons when backup or optics on
-		-- end
-    -- end
+	
+    if eles["uplp_ak_smg_rec_vityaz"] or eles["uplp_ak_smg_rec_vityaz_tac"] then -- If using either Vityaz Configuration
+		if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
+			mdl:SetBodygroup(3,1) -- Add rail
+		end
+    end
+	
+    if eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"] then -- If using either Bizon Configuration
+		if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
+			mdl:SetBodygroup(3,3) -- Add rail
+		end
+    end
 
 end
 
@@ -578,8 +584,16 @@ SWEP.AttachmentElements = {
 
     -- RECIEVERS
     ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } },
-    ["uplp_ak_smg_rec_bizon"] =          { Bodygroups = { { 0, 2 } } },
-    ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } },
+    ["uplp_ak_smg_rec_bizon"] =          { Bodygroups = { { 0, 2 } } , AttPosMods = {
+	[1] = { Pos = Vector(0, 0.225, 1.5), },
+	[11] = { Pos = Vector(0, 0.225, 0.5), },
+	[12] = { Pos = Vector(0, 0.225, 5.25), },
+	}},
+    ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } , AttPosMods = {
+	[1] = { Pos = Vector(0, 0.225, 1.5), },
+	[11] = { Pos = Vector(0, 0.225, 0.5), },
+	[12] = { Pos = Vector(0, 0.225, 5.25), },
+	}},
 
     -- FIRE SELECTORS
     ["uplp_ak_smg_fs_12"] =         { Bodygroups = { { 1, 1 } } },
@@ -641,7 +655,6 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.05, 1.5),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"use_optics"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
     {
@@ -695,24 +708,24 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_ak_smg_rec_bizon"},
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = {"uplp_ak_dc_smg"},
-        DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0.045, 0.5, 6.5),
-        Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_ak_smg_rec_bizon", "uplp_ak_smg_rec_ppk20"},
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = {"uplp_ak_dc_smg_bizon"},
-        DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0.045, 0.5, 6.5),
-        Ang = Angle(90, 90, 180),
-		RequireElements = {"uplp_ak_smg_rec_bizon"},
-    },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
+        -- Category = {"uplp_ak_dc_smg"},
+        -- DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
+        -- Bone = "body",
+        -- Pos = Vector(0.045, 0.5, 6.5),
+        -- Ang = Angle(90, 90, 180),
+		-- ExcludeElements = {"uplp_ak_smg_rec_bizon", "uplp_ak_smg_rec_ppk20"},
+    -- },
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
+        -- Category = {"uplp_ak_dc_smg_bizon"},
+        -- DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
+        -- Bone = "body",
+        -- Pos = Vector(0.045, 0.5, 6.5),
+        -- Ang = Angle(90, 90, 180),
+		-- RequireElements = {"uplp_ak_smg_rec_bizon"},
+    -- },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_ak_smg_rec"},
@@ -776,7 +789,6 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.05, 0.5),
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_no_backup"},
-        RequireElements = {"use_optics"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
 		Icon_Offset = Vector(-1, 0, 0),
     },

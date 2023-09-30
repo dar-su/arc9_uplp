@@ -882,7 +882,7 @@ SWEP.Attachments = {
         Category = {"uplp_molot_bolt"},
         DefaultIcon = Material(defatt2 .. "trigger.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.25, 5.25),
+        Pos = Vector(0.045, 2.5, 1.1),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -900,7 +900,7 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 2.5, 16.5),
-		Icon_Offset = Vector(-5, 0, 0.5),
+		Icon_Offset = Vector(-6.5, 0, 1),
         Ang = Angle(90, 90, 180),
     },
     {

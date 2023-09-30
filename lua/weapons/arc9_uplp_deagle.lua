@@ -567,7 +567,7 @@ SWEP.Attachments = {
         Category = {"uplp_deag_mag"},
         DefaultIcon = Material(defatt .. "mag_pistol.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 3, 0.6),
+        Pos = Vector(0, 2, 0.6),
         Ang = Angle(90, 90, 180),
     },
     {

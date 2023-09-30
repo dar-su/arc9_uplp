@@ -278,6 +278,7 @@ L["uplp_grip_vert.compactname"] = "Vertical"
 L["uplp_grip_vert.description"] = "Rail-mounted foregrip that reduces recoil."
 
 /////////// Muzzle
+////// Set 1
 L["uplp_muzzle_3h.printname"] = "3-Hole Muzzle Brake"
 L["uplp_muzzle_3h.compactname"] = "3H MB"
 L["uplp_muzzle_3h.description"] = "Muzzle brake that redirects propelled gases upwards for reduced vertical recoil."
@@ -298,6 +299,39 @@ L["uplp_muzzle_slim.printname"] = "Slim Muzzle Brake"
 L["uplp_muzzle_slim.compactname"] = "Slim MB"
 L["uplp_muzzle_slim.description"] = "Muzzle brake that redirects propelled gases sideways for reduced horizontal recoil."
 
+////// Set 2
+L["uplp_muzzle_brake.printname"] = "Heavy Muzzle Brake"
+L["uplp_muzzle_brake.compactname"] = "H BM"
+L["uplp_muzzle_brake.description"] = "Heavy muzzle brake that redirects propelled gases sideways for heavily reduced horizontal recoil."
+
+L["uplp_muzzle_evilsup.printname"] = "Evil Suppressor"
+L["uplp_muzzle_evilsup.compactname"] = "Evil Supp."
+L["uplp_muzzle_evilsup.description"] = "Rifle suppressor with a zick-zack pattern that dampens the firing noise at the cost of range and accuracy."
+
+L["uplp_muzzle_heavypistolsup.printname"] = "Heavy Pistol Suppressor"
+L["uplp_muzzle_heavypistolsup.compactname"] = "H Supp."
+L["uplp_muzzle_heavypistolsup.description"] = "Heavy suppressor made for handguns that dampens the firing noise at the cost of range."
+
+L["uplp_muzzle_lightsup.printname"] = "Lightweight Suppressor"
+L["uplp_muzzle_lightsup.compactname"] = "L Supp."
+L["uplp_muzzle_lightsup.description"] = "Suppressor made out of lightweight materials that dampens the firing noise."
+
+L["uplp_muzzle_midsup.printname"] = "Medium Suppressor"
+L["uplp_muzzle_midsup.compactname"] = "M Supp."
+L["uplp_muzzle_midsup.description"] = "Medium weight suppressor that dampens the firing noise at the slight cost of range."
+
+L["uplp_muzzle_modernsup.printname"] = "Modern Suppressor"
+L["uplp_muzzle_modernsup.compactname"] = "Mod. Supp."
+L["uplp_muzzle_modernsup.description"] = "Modern suppressor that dampens the firing noise at the cost of range."
+
+L["uplp_muzzle_shortsup.printname"] = "Short Suppressor"
+L["uplp_muzzle_shortsup.compactname"] = "S Supp."
+L["uplp_muzzle_shortsup.description"] = "Small, compact suppressor that dampens the firing noise at the slight cost of range."
+
+L["uplp_muzzle_zenit.printname"] = "Zenith Muzzle Brake"
+L["uplp_muzzle_zenit.compactname"] = "Zenith MB"
+L["uplp_muzzle_zenit.description"] = "Modern muzzle brake made for most pistol and rifle calibres that reduces overall recoil."
+
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
 L["uplp_sg_mz_choke.compactname"] = "Full Choke"
@@ -312,12 +346,12 @@ L["uplp_sg_mz_heavy.compactname"] = "Heavy Brake"
 L["uplp_sg_mz_heavy.description"] = "Heavy muzzle brake for shotguns that redirects propelled gases sideways for even more reduced horizontal recoil."
 
 L["uplp_sg_mz_silencer.printname"] = "Shotgun Suppressor"
-L["uplp_sg_mz_silencer.compactname"] = "Suppressor"
-L["uplp_sg_mz_silencer.description"] = "Sound suppressor for shotguns."
+L["uplp_sg_mz_silencer.compactname"] = "SG Supp."
+L["uplp_sg_mz_silencer.description"] = "Shotgun suppressor that dampens the firing noise at the cost of range and mobility."
 
 L["uplp_sg_mz_silencer_heavy.printname"] = "Heavy Shotgun Suppressor"
-L["uplp_sg_mz_silencer_heavy.compactname"] = "Heavy Sup."
-L["uplp_sg_mz_silencer_heavy.description"] = "Heavy sound suppressor for shotguns."
+L["uplp_sg_mz_silencer_heavy.compactname"] = "H SG Supp."
+L["uplp_sg_mz_silencer_heavy.description"] = "Heavy shotgun suppressor that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
 
 /////////// Ammunition
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
@@ -786,15 +820,6 @@ L["uplp_ak_smg_brl_ppk20_long.description"] = "Long 425mm (16.73\") barrel for t
 L["uplp_ak_smg_conf_ppk20.printname"] = "PPK-20 Configuration"
 L["uplp_ak_smg_conf_ppk20.compactname"] = "PPK-20"
 L["uplp_ak_smg_conf_ppk20.description"] = "Converts the AK SMG to the \"PPK-20\" configuration.\nModernized receiver with support for AK-12 pistol grips, foregrips and optics."
-
-////// Dust Covers
-L["uplp_ak_smg_dc_rail.printname"] = "Dust Cover with Built-in Rail"
-L["uplp_ak_smg_dc_rail.compactname"] = "DC R"
-L["uplp_ak_smg_dc_rail.description"] = "Adds a top rail onto the standard dust cover used on the AK SMG's \"Vityaz\" configuration."
-
-L["uplp_ak_smg_dc_bizon_rail.printname"] = "Dust Cover with Built-in Rail"
-L["uplp_ak_smg_dc_bizon_rail.compactname"] = "DC R"
-L["uplp_ak_smg_dc_bizon_rail.description"] = "Adds a top rail onto the standard dust cover used on the AK SMG's \"Bizon\" configuration."
 
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"

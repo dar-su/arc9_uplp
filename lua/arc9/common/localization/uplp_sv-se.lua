@@ -278,6 +278,7 @@ L["uplp_grip_vert.compactname"] = "Vertikalt"
 L["uplp_grip_vert.description"] = "Skenamonterat framgrepp som sänker rekylen."
 
 /////////// Muzzle
+////// Set 1
 L["uplp_muzzle_3h.printname"] = "Mynningsbroms med 3 Hål"
 L["uplp_muzzle_3h.compactname"] = "3H MB"
 L["uplp_muzzle_3h.description"] = "Mynningsbroms som omdirigerar framdrivna gaser uppåt för nedsänkt vertikal rekyl."
@@ -298,6 +299,39 @@ L["uplp_muzzle_slim.printname"] = "Kompakt Mynningsbroms"
 L["uplp_muzzle_slim.compactname"] = "Kompakt MB"
 L["uplp_muzzle_slim.description"] = "Mynningsbroms som omdirigerar framdrivna gaser till sidan för nedsänkt horisontal rekyl."
 
+////// Set 2
+L["uplp_muzzle_brake.printname"] = "Tung Mynningsbroms"
+L["uplp_muzzle_brake.compactname"] = "T BM"
+L["uplp_muzzle_brake.description"] = "Tung mynningsbroms som omdirigerar framdrivna gaser till sidan för kraftigt nedsänkt horisontal rekyl."
+
+L["uplp_muzzle_evilsup.printname"] = "Evil-Ljuddämpare"
+L["uplp_muzzle_evilsup.compactname"] = "Evil-Ljud."
+L["uplp_muzzle_evilsup.description"] = "Gevärsljuddämpare med ett zick-zack-mönster som dämpar vapnets skottljud med kostnad på räckvidd och träffsäkerhet."
+
+L["uplp_muzzle_heavypistolsup.printname"] = "Tung Pistol Ljuddämpare"
+L["uplp_muzzle_heavypistolsup.compactname"] = "T Ljud."
+L["uplp_muzzle_heavypistolsup.description"] = "Tung ljuddämpare gjorda för sidovapen som dämpar vapnets skottljud med kostnad på räckvidd."
+
+L["uplp_muzzle_lightsup.printname"] = "Lättvikt Ljuddämpare"
+L["uplp_muzzle_lightsup.compactname"] = "L Ljud."
+L["uplp_muzzle_lightsup.description"] = "Ljuddämpare gjord utav lättvikt material som dämpar vapnets skottljud."
+
+L["uplp_muzzle_midsup.printname"] = "Medium Ljuddämpare"
+L["uplp_muzzle_midsup.compactname"] = "M Ljud."
+L["uplp_muzzle_midsup.description"] = "Ljuddämpare på medelvikt som dämpar vapnets skottljud med lätt kostnad på räckvidd."
+
+L["uplp_muzzle_modernsup.printname"] = "Modern Ljuddämpare"
+L["uplp_muzzle_modernsup.compactname"] = "Mod. Ljud."
+L["uplp_muzzle_modernsup.description"] = "Modern ljuddämpare som dämpar vapnets skottljud med kostnad på räckvidd."
+
+L["uplp_muzzle_shortsup.printname"] = "Kort Ljuddämpare"
+L["uplp_muzzle_shortsup.compactname"] = "K Ljud."
+L["uplp_muzzle_shortsup.description"] = "Liten och kompakt ljuddämpare som dämpar vapnets skottljud med lätt kostnad på räckvidd."
+
+L["uplp_muzzle_zenit.printname"] = "Zenith-Mynningsbroms"
+L["uplp_muzzle_zenit.compactname"] = "Zenith-MB"
+L["uplp_muzzle_zenit.description"] = "Modern mynningsbroms gjord för dem flesta pistol och gevär kaliber som sänker generell rekyl."
+
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Hagelgevär Full Choke"
 L["uplp_sg_mz_choke.compactname"] = "HG FC"
@@ -313,11 +347,11 @@ L["uplp_sg_mz_heavy.description"] = "Tung mynningsbroms till hagelgevär som omd
 
 L["uplp_sg_mz_silencer.printname"] = "Hagelgevär Ljuddämpare"
 L["uplp_sg_mz_silencer.compactname"] = "HG Ljud."
-L["uplp_sg_mz_silencer.description"] = "Ljuddämpare till hagelgevär."
+L["uplp_sg_mz_silencer.description"] = "Ljuddämpare till hagelgevär som dämpar vapnets skottljud med kostnad på räckvidd och rörlighet."
 
 L["uplp_sg_mz_silencer_heavy.printname"] = "Tung Hagelgevär Ljuddämpare"
-L["uplp_sg_mz_silencer_heavy.compactname"] = "HG Tung Ljud."
-L["uplp_sg_mz_silencer_heavy.description"] = "Tung ljuddämpare till hagelgevär."
+L["uplp_sg_mz_silencer_heavy.compactname"] = "T HG Ljud."
+L["uplp_sg_mz_silencer_heavy.description"] = "Tung ljuddämpare till hagelgevär som dämpar vapnets skottljud och förbättrar rekylkontroll med högre kostnad på räckvidd och rörlighet."
 
 /////////// Ammunition
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM-Patroner"
@@ -787,15 +821,6 @@ L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425mm pipa till AK KPist. m
 L["uplp_ak_smg_conf_ppk20.printname"] = "PPK-20-Konfiguering"
 L["uplp_ak_smg_conf_ppk20.compactname"] = "PPK-20"
 L["uplp_ak_smg_conf_ppk20.description"] = "Konverterar AK KPist. till \"PPK-20\"-konfigueringen.\nModern låda med stöd för AK-12 pistolgrepp, framgrepp och riktmedel."
-
-////// Dust Covers
-L["uplp_ak_smg_dc_rail.printname"] = "Dammskydd med Inbyggd Skena"
-L["uplp_ak_smg_dc_rail.compactname"] = "D IS"
-L["uplp_ak_smg_dc_rail.description"] = "Lägger till en toppmonterad skena på normala dammskyddet som används på AK KPist. \"Vityaz\"-konfigueringen."
-
-L["uplp_ak_smg_dc_bizon_rail.printname"] = "Dammskydd med Inbyggd Skena"
-L["uplp_ak_smg_dc_bizon_rail.compactname"] = "D IS"
-L["uplp_ak_smg_dc_bizon_rail.description"] = "Lägger till en toppmonterad skena på normala dammskyddet som används på AK KPist. \"Bizon\"-konfigueringen."
 
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"

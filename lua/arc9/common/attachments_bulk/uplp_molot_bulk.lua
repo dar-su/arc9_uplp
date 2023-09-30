@@ -572,7 +572,7 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
 ATT = {}
 
 ATT.PrintName = "Shotgun Suppressor"
-ATT.CompactName = "SG S."
+ATT.CompactName = "SG Supp."
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
@@ -607,7 +607,7 @@ ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
 ATT = {}
 
 ATT.PrintName = "Heavy Shotgun Suppressor"
-ATT.CompactName = "SG Heavy S."
+ATT.CompactName = "H SG Supp."
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 101
 
