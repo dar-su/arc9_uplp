@@ -122,7 +122,7 @@ SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
-SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
@@ -131,7 +131,7 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 0.65
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 2
+SWEP.VisualRecoilPunchHipFire = 1.25
 SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
@@ -348,7 +348,7 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire_01","fire_02","fire_03"},
+        Source = {"fire"},
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
@@ -362,6 +362,7 @@ SWEP.Animations = {
 			}, t = 0 },
         },
     },
+	
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
