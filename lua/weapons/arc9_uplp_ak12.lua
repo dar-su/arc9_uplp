@@ -35,8 +35,7 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
--- "[AK-19]XQAAAQCJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobDJpHotQzVQehcAkNiD2eWB2lpBjhogO2OSLiL3ZOWkhJnQaTKP7QvAdS5aKvdnGZsPy54jy64U8Mem9JEEiKPa3c12f42Ugk+ekZ4wK4ClVTMCzs5b7L6m4NTIbwlh3a9omfALkuDpLKVeByGJpYOxy0I4BjpgA",
--- "[RPK-16]XQAAAQB5AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KkqeaUAj/0+ounm+tZWCgTNHSQYsZcjkSNM9jeQxjGbm1JNzMy+Q+k1eBVlKM9wZwbtI5ofYbSvhQpe2fm0CNPgymDotdybPLX8bQVL+WOFSPtQYxkncvR8N8wrA8MaAFjngBOguqjtw+HZz5B2LkINVe9g==",
+
 }
 
 SWEP.DefaultBodygroups = "2267d1b021000000000000" -- Might as well prepare for the future
@@ -955,7 +954,7 @@ SWEP.AttachmentElements = {
     -- HANDGUARDS
     -- Standard
     ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } },
-    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } },
+    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {[6] = { Pos = Vector(-0.95, 0.675, 15.25), }}},
 
     --CALIBERS
     ["uplp_ak_calib_545"] = { Bodygroups = { { 5, 1 } } },
@@ -1015,7 +1014,7 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt2 .. "akbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 1.5, 17),
-		Icon_Offset = Vector(-5, 0, 0.5),
+		Icon_Offset = Vector(-7, 0, 0.75),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1026,6 +1025,22 @@ SWEP.Attachments = {
         Pos = Vector(0.045, 1.5, 14.5),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(-6.5, 0, -0.5),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, 2.6, 12),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_no_grip"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(-0.95, 0.675, 13.25),
+        Ang = Angle(90, 90, -90),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),

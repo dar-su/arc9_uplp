@@ -144,7 +144,11 @@ L["uplp_folder_suppressor"] = "Ljuddämpare"
 //////////////////// Toggle Stats Names
 L["uplp_togglestat_default"] = "Standard"
 L["uplp_togglestat_extended"] = "Förlängd"
+L["uplp_togglestat_flash"] = "Ficklampa"
 L["uplp_togglestat_folded"] = "Invikt"
+L["uplp_togglestat_laser"] = "Laser"
+L["uplp_togglestat_off"] = "Av"
+L["uplp_togglestat_on"] = "På"
 
 //////////////////// Stat
 L["uplp_stat_suppressed"] = "Ljuddämpad"
@@ -352,6 +356,39 @@ L["uplp_sg_mz_silencer.description"] = "Ljuddämpare till hagelgevär som dämpa
 L["uplp_sg_mz_silencer_heavy.printname"] = "Tung Hagelgevär Ljuddämpare"
 L["uplp_sg_mz_silencer_heavy.compactname"] = "T HG Ljud."
 L["uplp_sg_mz_silencer_heavy.description"] = "Tung ljuddämpare till hagelgevär som dämpar vapnets skottljud och förbättrar rekylkontroll med högre kostnad på räckvidd och rörlighet."
+
+/////////// Tacticals
+L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Lasersikte"
+L["uplp_tac_anpeq.compactname"] = "BeamMaster"
+L["uplp_tac_anpeq.description"] = "Skenamonterad siktemodul gjord av BeamMaster Optics som erbjuder ett lasersikte för användning i mörker."
+
+L["uplp_tac_piscomb.printname"] = "LuminaFire Armaments Hybridmodul"
+L["uplp_tac_piscomb.compactname"] = "LuminaFire H."
+L["uplp_tac_piscomb.description"] = "Kompakt skenamonterad modul som erbjuder en svagare ficklampa och lasersikte i ett."
+
+L["uplp_tac_flashlight.printname"] = "NightStrike Illumination Ficklampa"
+L["uplp_tac_flashlight.compactname"] = "NightStrike"
+L["uplp_tac_flashlight.description"] = "Skenamonterad ficklampa gjord av NightStrike Illumination."
+
+L["uplp_tac_flashlight_pistol.printname"] = "LuminaFire Armaments Ficklampa"
+L["uplp_tac_flashlight_pistol.compactname"] = "LuminaFire F."
+L["uplp_tac_flashlight_pistol.description"] = "Kompakt skenamonterad ficklampa designad för sidovapen gjord av LuminaFire Armaments."
+
+L["uplp_tac_laser_blue.printname"] = "ApexAim Lasersikte (Blå)"
+L["uplp_tac_laser_blue.compactname"] = "ApexAim (B)"
+L["uplp_tac_laser_blue.description"] = "Skenamonterad siktemodul gjord av ApexAim som erbjuder ett blått lasersikte för användning i mörker."
+
+L["uplp_tac_laser_dbal.printname"] = "Lasersikte (DBAL)"
+L["uplp_tac_laser_dbal.compactname"] = "Laser (DBAL)"
+L["uplp_tac_laser_dbal.description"] = "Skenamonterad siktemodul som erbjuder ett lasersikte för användning i mörker."
+	
+L["uplp_tac_laser_green.printname"] = "ApexAim Lasersikte (Grön)"
+L["uplp_tac_laser_green.compactname"] = "ApexAim (G)"
+L["uplp_tac_laser_green.description"] = "Skenamonterad siktemodul gjord av ApexAim som erbjuder ett grönt lasersikte för användning i mörker."
+
+L["uplp_tac_laser_pistol.printname"] = "LuminaFire Armaments Lasersikte"
+L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
+L["uplp_tac_laser_pistol.description"] = "Kompakt skenamonterad siktemodul gjord av LuminaFire Armaments designad för sidovapen som erbjuder ett lasersikte för användning i mörker."
 
 /////////// Ammunition
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM-Patroner"

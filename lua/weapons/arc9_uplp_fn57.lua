@@ -581,6 +581,13 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac_pistol"},
+        Bone = "body",
+        Pos = Vector(0, -1.25, 5.7),
+        Ang = Angle(90, 90, 0),
+    },
+    {
         PrintName = ARC9:GetPhrase("uplp_category_appearance"),
         Category = {"uplp_fn57_skin"},
         DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),

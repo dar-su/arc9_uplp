@@ -580,6 +580,16 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.6, 6),
         Ang = Angle(90, 90, 180),
+		Icon_Offset = Vector(0.5, 0, -1),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(-0.85, 0.95, 6),
+        Ang = Angle(90, 90, -90),
+		Icon_Offset = Vector(0, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

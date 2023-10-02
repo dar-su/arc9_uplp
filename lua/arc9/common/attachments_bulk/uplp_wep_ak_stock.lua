@@ -567,7 +567,7 @@ ATT.CustomCons = {
 
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
+        PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_ppk"},
 		ModelBodygroups = "i",
 		/// Positives

@@ -2,6 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
+/////////////////////      Set 1
 ///////////////////////////////////////      uplp_muzzle_3h
 
 
@@ -154,7 +155,7 @@ ATT.ModelBodygroups = "2"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
 -- ATT.SortOrder = 0
-ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
+ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
@@ -173,7 +174,155 @@ ATT.SpreadAddRecoil = -0.01
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_slim")
 
+/////////////////////      Set 1, Shotguns
+///////////////////////////////////////      uplp_sg_mz_choke
 
+ATT = {}
+
+ATT.PrintName = "Shotgun Full Choke"
+ATT.CompactName = "SG FC"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "mzch.png", "mips smooth")
+ATT.Category = "uplp_molot_muzzle"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_choke.mdl"
+ATT.MuzzleDevice = true
+
+/// Positives
+ATT.SpreadAdd = -0.025
+
+/// Negatives
+ATT.RecoilAutoControlMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_sg_mz_choke")
+
+///////////////////////////////////////      uplp_sg_mz_gk
+
+ATT = {}
+
+ATT.PrintName = "Shotgun Muzzle Brake"
+ATT.CompactName = "SG MB"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "mzgk.png", "mips smooth")
+ATT.Category = "uplp_molot_muzzle"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_gk.mdl"
+ATT.MuzzleDevice = true
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.05
+ATT.RecoilRandomSideMult = 0.6
+ATT.SpreadAddRecoil = -0.01
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
+
+///////////////////////////////////////      uplp_sg_mz_heavy
+
+ATT = {}
+
+ATT.PrintName = "Heavy Shotgun Muzzle Brake"
+ATT.CompactName = "SG Heavy MB"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "mzheav.png", "mips smooth")
+ATT.Category = "uplp_molot_muzzle"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy.mdl"
+ATT.MuzzleDevice = true
+
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.25
+ATT.RecoilRandomSideMult = 0.5
+ATT.SpreadAddRecoil = -0.02
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.2
+
+ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
+
+///////////////////////////////////////      uplp_sg_mz_silencer
+
+ATT = {}
+
+ATT.PrintName = "Shotgun Suppressor"
+ATT.CompactName = "SG Supp."
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
+
+ATT.Icon = Material(iconfolder .. "mzsil.png", "mips smooth")
+ATT.Category = "uplp_molot_muzzle"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_silencer.mdl"
+ATT.MuzzleDevice = true
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.SpreadAddRecoil = -0.01
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
+}
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
+
+///////////////////////////////////////      uplp_sg_mz_silencer_heavy
+
+ATT = {}
+
+ATT.PrintName = "Heavy Shotgun Suppressor"
+ATT.CompactName = "H SG Supp."
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 101
+
+ATT.Icon = Material(iconfolder .. "mzheavysil.png", "mips smooth")
+ATT.Category = "uplp_molot_muzzle"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy_silencer.mdl"
+ATT.MuzzleDevice = true
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+/// Positives
+ATT.RecoilMult = 0.85
+ATT.SpreadAddRecoil = -0.02
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
+}
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.25
+
+ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer_heavy")
+
+/////////////////////      Set 2
 ///////////////////////////////////////      uplp_muzzle_brake
 
 
@@ -368,7 +517,7 @@ ATT.Icon = Material(iconfolder .. "modernsup.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/muzzle_modernsup.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
 
-ATT.Category = "uplp_muzzle"
+ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
@@ -407,7 +556,7 @@ ATT.Icon = Material(iconfolder .. "shortsup.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/muzzle_shortsup.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
 
-ATT.Category = "uplp_muzzle"
+ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}

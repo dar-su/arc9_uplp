@@ -144,7 +144,11 @@ L["uplp_folder_suppressor"] = "Suppressors"
 //////////////////// Toggle Stats Names
 L["uplp_togglestat_default"] = "Default"
 L["uplp_togglestat_extended"] = "Extended"
+L["uplp_togglestat_flash"] = "Flashlight"
 L["uplp_togglestat_folded"] = "Folded"
+L["uplp_togglestat_laser"] = "Laser"
+L["uplp_togglestat_off"] = "Off"
+L["uplp_togglestat_on"] = "On"
 
 //////////////////// Stat
 L["uplp_stat_suppressed"] = "Suppressed"
@@ -352,6 +356,39 @@ L["uplp_sg_mz_silencer.description"] = "Shotgun suppressor that dampens the firi
 L["uplp_sg_mz_silencer_heavy.printname"] = "Heavy Shotgun Suppressor"
 L["uplp_sg_mz_silencer_heavy.compactname"] = "H SG Supp."
 L["uplp_sg_mz_silencer_heavy.description"] = "Heavy shotgun suppressor that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
+
+/////////// Tacticals
+L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Laser Sight"
+L["uplp_tac_anpeq.compactname"] = "BeamMaster"
+L["uplp_tac_anpeq.description"] = "Rail-mounted aiming module made by BeamMaster Optics that provides a laser sight for use in the dark."
+
+L["uplp_tac_piscomb.printname"] = "LuminaFire Armaments Hybrid Module"
+L["uplp_tac_piscomb.compactname"] = "LuminaFire H."
+L["uplp_tac_piscomb.description"] = "Compact rail-mounted module providing a weaker flashlight and laser sight in one."
+
+L["uplp_tac_flashlight.printname"] = "NightStrike Illumination Flashlight"
+L["uplp_tac_flashlight.compactname"] = "NightStrike"
+L["uplp_tac_flashlight.description"] = "Rail-mounted flashlight made by NightStrike Illumination."
+
+L["uplp_tac_flashlight_pistol.printname"] = "LuminaFire Armaments Flashlight"
+L["uplp_tac_flashlight_pistol.compactname"] = "LuminaFire F."
+L["uplp_tac_flashlight_pistol.description"] = "Compact rail-mounted flashlight designed for handguns made by LuminaFire Armaments."
+
+L["uplp_tac_laser_blue.printname"] = "ApexAim Laser Sight (Blue)"
+L["uplp_tac_laser_blue.compactname"] = "ApexAim (B)"
+L["uplp_tac_laser_blue.description"] = "Rail-mounted aiming module made by ApexAim that provides a blue laser sight for use in the dark."
+
+L["uplp_tac_laser_dbal.printname"] = "Laser Sight (DBAL)"
+L["uplp_tac_laser_dbal.compactname"] = "Laser (DBAL)"
+L["uplp_tac_laser_dbal.description"] = "Rail-mounted aiming module that provides a laser sight for use in the dark."
+
+L["uplp_tac_laser_green.printname"] = "ApexAim Laser Sight (Green)"
+L["uplp_tac_laser_green.compactname"] = "ApexAim (G)"
+L["uplp_tac_laser_green.description"] = "Rail-mounted aiming module made by ApexAim that provides a green laser sight for use in the dark."
+
+L["uplp_tac_laser_pistol.printname"] = "LuminaFire Armaments Laser Sight"
+L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
+L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module made by LuminaFire Armaments designed for handguns that provides a laser sight for use in the dark."
 
 /////////// Ammunition
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
