@@ -704,22 +704,35 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	-- end
 	
 	local rs = eles["uplp_scar_rs"]
+	local ssr = eles["uplp_scar_brl_20"] or eles["uplp_scar_brl_20_long"]
 	local opt = eles["uplp_optic_used"]
 	
-	if eles["uplp_scar_brl_pdw"] then
-		if rs and !opt then
-			mdl:SetBodygroup(6, 2)
-		else
-			mdl:SetBodygroup(6, 3)
-		end
+	if ssr then
+		mdl:SetBodygroup(6,4)
 	else
-		if rs and !opt then
-			mdl:SetBodygroup(6,0)
+		if eles["uplp_scar_brl_pdw"] then
+			if rs and !opt then
+				mdl:SetBodygroup(6, 2)
+			else
+				mdl:SetBodygroup(6, 3)
+			end
 		else
-			mdl:SetBodygroup(6,1)
+			if rs and !opt then
+				mdl:SetBodygroup(6,0)
+			else
+				mdl:SetBodygroup(6,1)
+			end
 		end
 	end
-			
+		
+	local ll = eles["uplp_scar_lower_l"] or eles["uplp_scar_lower_lb"]
+	local lb = eles["uplp_scar_lower_b"]
+	
+	if lb then
+		if ll then
+			mdl:SetBodygroup(0,3)
+		end
+	end
 end
 
 SWEP.AttachmentElements = {
@@ -824,7 +837,8 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-0.06, 1.3, 8),
         Ang = Angle(90, 90, 180),
-		ActiveElements = {"uplp_ar15_barrel"},
+		-- ActiveElements = {"uplp_ar15_barrel"},
+		ExcludeElements = {"uplp_scar_brl_pdw"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

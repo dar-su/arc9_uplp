@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/scar/"
 
 ATT = {}
 
-ATT.PrintName = "Standard Lower (Black)"
-ATT.CompactName = "Std (B)"
+ATT.PrintName = "Black Lower Receiver"
+ATT.CompactName = "Black"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
@@ -22,20 +22,37 @@ ARC9.LoadAttachment(ATT, "uplp_scar_lower_b")
 
 ///////////////////////////////////////      uplp_scar_lower_l
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Light Lower"
-ATT.CompactName = "Light"
-ATT.Description = ATT.PrintName
+-- ATT.PrintName = "Light Lower"
+-- ATT.CompactName = "Light"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 
-ATT.Category = "uplp_scar_lower"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Category = "uplp_scar_lower"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_lower_l"}
+-- ATT.ActivateElements = {"uplp_scar_lower_l"}
 
-ARC9.LoadAttachment(ATT, "uplp_scar_lower_l")
+-- ARC9.LoadAttachment(ATT, "uplp_scar_lower_l")
+
+///////////////////////////////////////      uplp_scar_lower_lb
+
+-- ATT = {}
+
+-- ATT.PrintName = "Light Lower (Black)"
+-- ATT.CompactName = "Light (B)"
+-- ATT.Description = ATT.PrintName
+
+-- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+
+-- ATT.Category = "uplp_scar_lower"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- ATT.ActivateElements = {"uplp_scar_lower_lb"}
+
+-- ARC9.LoadAttachment(ATT, "uplp_scar_lower_lb")
 
 ////////////////////      UPPER RECEIVERS
 ///////////////////////////////////////      uplp_scar_upper_hb
@@ -69,7 +86,7 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_l"}
+ATT.ActivateElements = {"uplp_scar_upper_l", "uplp_scar_lower_l"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_l")
 
@@ -87,7 +104,7 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_lb"}
+ATT.ActivateElements = {"uplp_scar_upper_lb", "uplp_scar_lower_l"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_lb")
 
@@ -141,7 +158,12 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_pdw"}
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
+ATT.ModelOffset = Vector(-15.5, -2.3, 3)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_lower_l", "uplp_scar_brl_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdw")
 
@@ -159,7 +181,12 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_pdwb"}
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
+ATT.ModelOffset = Vector(-15.5, -2.3, 3)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_lower_l", "uplp_scar_brl_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdwb")
 
