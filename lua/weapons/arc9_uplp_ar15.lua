@@ -233,7 +233,7 @@ SWEP.CustomizeSnapshotFOV = 90
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 SWEP.DropMagazineTime = 0.3
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 5, -3)
@@ -940,7 +940,7 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_ammo_458"] = { Bodygroups={ { 4, 1 } } },
     ["uplp_ar15_ammo_50"] = { Bodygroups={ { 4, 2 } } },
 	
-	-- AMMO
+	-- GAS BLOCK
     ["uplp_ar15_gasblock"] = { Bodygroups={ { 8, 0 } } },
 	
 	-- OTHER

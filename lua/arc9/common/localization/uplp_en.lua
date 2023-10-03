@@ -131,6 +131,8 @@ L["uplp_category_muzzle"] = "Muzzle"
 L["uplp_category_optic"] = "Optic"
 L["uplp_category_pistol_grip"] = "Pistol Grip"
 L["uplp_category_receiver"] = "Receiver"
+L["uplp_category_receiver_lower"] = "Lower Receiver"
+L["uplp_category_receiver_upper"] = "Upper Receiver"
 L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_stock"] = "Stock"
@@ -1578,25 +1580,59 @@ L["uplp_weapon_scar"] = "XAR Heavy"
 L["uplp_weapon_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
 
 L["uplp_weapon_scar_light"] = "XAR Light"
-L["uplp_weapon_scar_dmr"] = "XAR DMR"
+L["uplp_weapon_scar_ssr"] = "XAR SSR"
 L["uplp_weapon_scar_mg"] = "XAR MG"
 L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
 /////////// Attachments
+////// Configurations
+L["uplp_scar_config_l.printname"] = "XAR Light Configuration"
+L["uplp_scar_config_l.compactname"] = "Light"
+L["uplp_scar_config_l.description"] = "Configures the XAR into its Light configuration.\n- Allows the installation of <color=160,160,255>AR-15 mags</color>."
+
+L["uplp_scar_config_pdw.printname"] = "XAR PDW Configuration"
+L["uplp_scar_config_pdw.compactname"] = "PDW"
+L["uplp_scar_config_pdw.description"] = "Configures the XAR into its PDW configuration.\n- Allows the installation of <color=160,160,255>AR-15 mags</color>.\n- Removes the ability to equip <color=255,100,100>Barrels</color>.\n"
+
+L["uplp_scar_config_ssr.printname"] = "XAR SSR Configuration"
+L["uplp_scar_config_ssr.compactname"] = "PDW"
+L["uplp_scar_config_ssr.description"] = "Configures the XAR into its SSR configuration.\n- Allows the installation of <color=160,160,255>SSR Barrels</color>.\n- Removes the ability to equip <color=255,100,100>the XAR Iron Sights</color>.\n- Restricts the firing mode to <color=255,100,100>semi-automatic only</color>."
+
+////// Lower Receiver
+L["uplp_scar_lower_b.printname"] = "Standard Lower (Black)"
+L["uplp_scar_lower_b.compactname"] = "Std (B)"
+L["uplp_scar_lower_b.description"] = "Replaces the lower receiver with a black colored one."
+
+L["uplp_scar_lower_l.printname"] = "Light Lower"
+L["uplp_scar_lower_l.compactname"] = "Light"
+L["uplp_scar_lower_l.description"] = "Replaces the lower receiver with the one used on the XAR Light.\nAllows the use of <color=0,255,0>AR-15 mags</color>."
+
+L["uplp_scar_lower_lb.printname"] = "Light Lower (Black)"
+L["uplp_scar_lower_lb.compactname"] = "Light (B)"
+L["uplp_scar_lower_lb.description"] = "Replaces the lower receiver with a black colored one used on the XAR Light.\nAllows the use of <color=0,255,0>AR-15 mags</color>."
+
 ////// Upper Receivers
+L["uplp_scar_upper_hb.printname"] = "Standard Upper (Black)"
+L["uplp_scar_upper_hb.compactname"] = "Std (B)"
+L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black colored one."
+
+L["uplp_scar_upper_l.printname"] = "Light Upper"
+L["uplp_scar_upper_l.compactname"] = "Light"
+L["uplp_scar_upper_l.description"] = "Replaces the upper receiver with the one used on the XAR Light.\nRequires the <color=160,160,255>Light Lower</color>."
+
+L["uplp_scar_upper_lb.printname"] = "Light Upper (Black)"
+L["uplp_scar_upper_lb.compactname"] = "Light (B)"
+L["uplp_scar_upper_lb.description"] = "Replaces the upper receiver with a black colored one used on the XAR Light.\nRequires the <color=160,160,255>Light Lower</color>."
+
 L["uplp_scar_upper_20.printname"] = "DMR Upper"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "REPLACEME"
+L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\nRequires the <color=160,160,255>510mm SSR Barrel</color>."
 
 L["uplp_scar_upper_20b.printname"] = "DMR Upper (Black)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
 L["uplp_scar_upper_20b.description"] = "REPLACEME"
-
-L["uplp_scar_upper_b.printname"] = "Standard Upper (Black)"
-L["uplp_scar_upper_b.compactname"] = "Std (B)"
-L["uplp_scar_upper_b.description"] = "REPLACEME"
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Upper"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
@@ -1606,7 +1642,63 @@ L["uplp_scar_upper_pdwb.printname"] = "PDW Upper (Black)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (B)"
 L["uplp_scar_upper_pdwb.description"] = "REPLACEME"
 
-////// Lower Receiver
-L["uplp_scar_lower_b.printname"] = "Standard Lower (Black)"
-L["uplp_scar_lower_b.compactname"] = "Std (B)"
-L["uplp_scar_lower_b.description"] = "REPLACEME"
+////// Barrels
+L["uplp_scar_brl_short.printname"] = "330mm CQC Barrel"
+L["uplp_scar_brl_short.compactname"] = "330mm CQC"
+L["uplp_scar_brl_short.description"] = "Shortened 330mm (13\") barrel for the XAR."
+
+L["uplp_scar_brl_20.printname"] = "510mm SSR Barrel"
+L["uplp_scar_brl_20.compactname"] = "510mm SSR"
+L["uplp_scar_brl_20.description"] = "Long 510mm (20\") SSR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
+
+L["uplp_scar_brl_20_long.printname"] = "???mm SSR Barrel"
+L["uplp_scar_brl_20_long.compactname"] = "???mm SSR"
+L["uplp_scar_brl_20_long.description"] = "Very long ???mm (??\") SSR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
+
+////// Stocks
+L["uplp_scar_stock_lb.printname"] = "Standard Stock (Black)"
+L["uplp_scar_stock_lb.compactname"] = "Std (B)"
+L["uplp_scar_stock_lb.description"] = "Replaces the stock with a black colored one."
+
+L["uplp_scar_stock_h.printname"] = "SSR Stock"
+L["uplp_scar_stock_h.compactname"] = "SSR"
+L["uplp_scar_stock_h.description"] = "REPLACEME"
+
+L["uplp_scar_stock_hb.printname"] = "SSR Stock (Black)"
+L["uplp_scar_stock_hb.compactname"] = "SSR (B)"
+L["uplp_scar_stock_hb.description"] = "REPLACEME"
+
+L["uplp_scar_stock_tube.printname"] = "Buffer Tube"
+L["uplp_scar_stock_tube.compactname"] = "Buffer"
+L["uplp_scar_stock_tube.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
+
+L["uplp_scar_stock_pdw.printname"] = "PDW Stock"
+L["uplp_scar_stock_pdw.compactname"] = "PDW"
+L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock."
+
+////// Mags
+L["uplp_scar_mag_h.printname"] = "20-Round 7.62x51mm"
+L["uplp_scar_mag_h.compactname"] = "20R 7.62"
+L["uplp_scar_mag_h.description"] = "REPLACEME"
+
+L["uplp_scar_mag_hb.printname"] = "20-Round 7.62x51mm Black"
+L["uplp_scar_mag_hb.compactname"] = "20R 7.62 (B)"
+L["uplp_scar_mag_hb.description"] = "20-round 7.62x51mm magazine in black for the XAR."
+
+L["uplp_scar_mag_20.printname"] = "10-Round 7.62x51mm"
+L["uplp_scar_mag_20.compactname"] = "10R 7.62"
+L["uplp_scar_mag_20.description"] = "10-round 7.62x51mm magazine for the XAR."
+
+L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
+L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
+L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR."
+
+////// Pistol Grips
+L["uplp_scar_pgrip_b.printname"] = "XAR Pistol Grip (Black)"
+L["uplp_scar_pgrip_b.compactname"] = "XAR (B)"
+L["uplp_scar_pgrip_b.description"] = "Standard pistol grip used on the XAR but painted black."
+
+////// Iron Sights
+L["uplp_scar_is.printname"] = "XAR Iron Sights"
+L["uplp_scar_is.compactname"] = "XAR IS"
+L["uplp_scar_is.description"] = "Standard flip-up iron sights used on the XAR."
