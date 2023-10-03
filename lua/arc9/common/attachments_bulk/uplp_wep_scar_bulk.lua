@@ -1,6 +1,7 @@
 local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/scar/"
+local iconfolderar = "entities/uplp_attachements/ar15/"
 local iconfolderar15 = "entities/uplp_attachements/ar15/mag/"
 
 ////////////////////      LOWER RECEIVERS
@@ -12,7 +13,7 @@ ATT.PrintName = "Black Lower Receiver"
 ATT.CompactName = "Black"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "lowerb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_lower"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -21,50 +22,16 @@ ATT.ActivateElements = {"uplp_scar_lower_b"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_lower_b")
 
-///////////////////////////////////////      uplp_scar_lower_l
-
--- ATT = {}
-
--- ATT.PrintName = "Light Lower"
--- ATT.CompactName = "Light"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
-
--- ATT.Category = "uplp_scar_lower"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
--- ATT.ActivateElements = {"uplp_scar_lower_l"}
-
--- ARC9.LoadAttachment(ATT, "uplp_scar_lower_l")
-
-///////////////////////////////////////      uplp_scar_lower_lb
-
--- ATT = {}
-
--- ATT.PrintName = "Light Lower (Black)"
--- ATT.CompactName = "Light (B)"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
-
--- ATT.Category = "uplp_scar_lower"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
--- ATT.ActivateElements = {"uplp_scar_lower_lb"}
-
--- ARC9.LoadAttachment(ATT, "uplp_scar_lower_lb")
-
 ////////////////////      UPPER RECEIVERS
 ///////////////////////////////////////      uplp_scar_upper_hb
 
 ATT = {}
 
 ATT.PrintName = "Standard Upper (Black)"
-ATT.CompactName = "Std (B)"
+ATT.CompactName = "Standard (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rec/b.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -75,39 +42,39 @@ ARC9.LoadAttachment(ATT, "uplp_scar_upper_hb")
 
 ///////////////////////////////////////      uplp_scar_upper_l
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Light Upper"
-ATT.CompactName = "Light"
-ATT.Description = ATT.PrintName
-ATT.SortOrder = 2
+-- ATT.PrintName = "Light Upper"
+-- ATT.CompactName = "Light"
+-- ATT.Description = ATT.PrintName
+-- ATT.SortOrder = 2
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 
-ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Category = "uplp_scar_upper"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_l"}
+-- ATT.ActivateElements = {"uplp_scar_upper_l"}
 
-ARC9.LoadAttachment(ATT, "uplp_scar_upper_l")
+-- ARC9.LoadAttachment(ATT, "uplp_scar_upper_l")
 
 ///////////////////////////////////////      uplp_scar_upper_lb
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Light Upper (Black)"
-ATT.CompactName = "Light (B)"
-ATT.Description = ATT.PrintName
-ATT.SortOrder = 2
+-- ATT.PrintName = "Light Upper (Black)"
+-- ATT.CompactName = "Light (B)"
+-- ATT.Description = ATT.PrintName
+-- ATT.SortOrder = 2
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "rec/b.png", "mips smooth")
 
-ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Category = "uplp_scar_upper"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_lb"}
+-- ATT.ActivateElements = {"uplp_scar_upper_lb"}
 
-ARC9.LoadAttachment(ATT, "uplp_scar_upper_lb")
+-- ARC9.LoadAttachment(ATT, "uplp_scar_upper_lb")
 
 ///////////////////////////////////////      uplp_scar_upper_20
 
@@ -118,13 +85,13 @@ ATT.CompactName = "DMR"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rec/dmr.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_20"}
-ATT.RequireElements = {"uplp_scar_brl_dmr"}
+ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_upper_dmr"}
+-- ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20")
 
@@ -137,13 +104,13 @@ ATT.CompactName = "DMR (B)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rec/dmrb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_20b"}
-ATT.RequireElements = {"uplp_scar_brl_dmr"}
+ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_upper_dmr"}
+-- ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20b")
 
@@ -156,7 +123,7 @@ ATT.CompactName = "PDW"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 7
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rec/pdw.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -166,7 +133,7 @@ ATT.ModelOffset = Vector(-15.5, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum"}
+ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdw")
 
@@ -179,7 +146,7 @@ ATT.CompactName = "PDW (B)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 7
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rec/pdwb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -202,7 +169,7 @@ ATT.PrintName = "330mm CQC Barrel"
 ATT.CompactName = "330mm CQC"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "short.png", "mips smooth")
 
 ATT.Category = "uplp_scar_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -210,23 +177,6 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.ActivateElements = {"uplp_scar_brl_short"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
-
-///////////////////////////////////////      uplp_scar_brl_pdw
-
--- ATT = {}
-
--- ATT.PrintName = "170mm PDW Barrel"
--- ATT.CompactName = "170mm PDW"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
-
--- ATT.Category = "uplp_scar_barrel"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
--- ATT.ActivateElements = {"uplp_scar_brl_pdw"}
-
--- ARC9.LoadAttachment(ATT, "uplp_scar_brl_pdw")
 
 ///////////////////////////////////////      uplp_scar_brl_20
 
@@ -236,9 +186,9 @@ ATT.PrintName = "510mm DMR Barrel"
 ATT.CompactName = "510mm DMR"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 
-ATT.Category = "uplp_scar_barrel"
+ATT.Category = "uplp_scar_barrel_dmr"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_20", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
@@ -253,9 +203,9 @@ ATT.PrintName = "600mm DMR Barrel"
 ATT.CompactName = "600mm DMR"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 
-ATT.Category = "uplp_scar_barrel"
+ATT.Category = "uplp_scar_barrel_dmr"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_20_long", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
@@ -271,7 +221,7 @@ ATT.PrintName = "Standard Stock (Black)"
 ATT.CompactName = "Std (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stock/stdb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -289,7 +239,7 @@ ATT.CompactName = "DMR"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stock/20.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -307,7 +257,7 @@ ATT.CompactName = "DMR (B)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stock/20b.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -325,12 +275,31 @@ ATT.CompactName = "Buffer"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stock/tube.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_tube"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_ar15_stock"},
+        DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
+        Pos = Vector(1, 0, 0.325),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(-1.25, 0, 0),
+    },
+}
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.85
+
+/// Negatives
+ATT.RecoilMult = 1.25
+ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_tube")
 
@@ -343,7 +312,7 @@ ATT.CompactName = "PDW"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "stock/pdw.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -373,7 +342,7 @@ ATT.CompactName = "20R 7.62 (B)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 15
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mag/hb.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_h_black.mdl"
 
@@ -393,7 +362,7 @@ ATT.CompactName = "10R 7.62"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mag/20.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20.mdl"
 
@@ -429,7 +398,7 @@ ATT.CompactName = "10R 6.8"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 1
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mag/2068.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20_black.mdl"
 
@@ -619,7 +588,7 @@ ATT.CompactName = "30R 5.56 (T)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 30
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mag/556tan.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
@@ -790,7 +759,7 @@ ATT.PrintName = "XAR Pistol Grip (Black)"
 ATT.CompactName = "XAR (B)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolderar .. "gstd.png", "mips smooth")
 
 ATT.Category = "uplp_scar_pgrip"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -810,7 +779,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Model = "models/weapons/arc9/uplp/scar_rs.mdl"
 
-ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 
 ATT.Category = "uplp_scar_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

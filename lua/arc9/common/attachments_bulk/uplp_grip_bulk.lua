@@ -18,6 +18,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -53,6 +54,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -146,6 +148,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"

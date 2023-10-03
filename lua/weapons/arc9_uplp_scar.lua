@@ -123,15 +123,15 @@ SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0.075 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
-SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 2
+SWEP.VisualRecoilUpHipFire = 1
 SWEP.VisualRecoilSideHipFire = -0.1
-SWEP.VisualRecoilRollHipFire = 20
+SWEP.VisualRecoilRollHipFire = 10
 SWEP.VisualRecoilPunchHipFire = 2
 SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
@@ -704,19 +704,20 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	-- end
 	
 	local rs = eles["uplp_scar_rs"]
-	local ssr = eles["uplp_scar_brl_20"] or eles["uplp_scar_brl_20_long"]
+	local dmr = eles["uplp_scar_brl_20"] or eles["uplp_scar_brl_20_long"]
 	local opt = eles["uplp_optic_used"]
 	
-	if ssr then
+	-- Irons
+	if dmr then -- if DMR
 		mdl:SetBodygroup(6,4)
 	else
-		if eles["uplp_scar_brl_pdw"] then
+		if eles["uplp_scar_brl_pdw"] then -- if PDW
 			if rs and !opt then
 				mdl:SetBodygroup(6, 2)
 			else
 				mdl:SetBodygroup(6, 3)
 			end
-		else
+		else -- if anything else
 			if rs and !opt then
 				mdl:SetBodygroup(6,0)
 			else
@@ -725,14 +726,36 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 		end
 	end
 		
-	local ll = eles["uplp_scar_lower_l"] or eles["uplp_scar_lower_lb"]
+	local ll = eles["uplp_ar15_mag"]
+	local ub = eles["uplp_scar_upper_hb"]
 	local lb = eles["uplp_scar_lower_b"]
+	local pdw = eles["uplp_scar_upper_pdw"] 
+	local pdwb = eles["uplp_scar_upper_pdwb"]
 	
-	if lb then
-		if ll then
-			mdl:SetBodygroup(0,3)
+	if lb then -- If lower receiver is black
+		if ll then -- If AR-15 mag
+			mdl:SetBodygroup(0,3) -- Make lower light black
 		end
 	end
+
+	-- Force bodygroups to work - otherwise inconsistencies.
+	if ll then -- if AR-15 mag
+		if !pdw and !pdwb then -- if not PDW uppers
+			if ub then -- if black upper
+				mdl:SetBodygroup(1,3)
+		 	else
+				mdl:SetBodygroup(1,2)
+			end
+		else
+			if pdwb then -- if black upper
+				mdl:SetBodygroup(1,9)
+		 	else
+				mdl:SetBodygroup(1,8)
+			end
+		end
+	end
+				
+
 end
 
 SWEP.AttachmentElements = {
@@ -754,19 +777,25 @@ SWEP.AttachmentElements = {
 
 	-- BARRELS
     ["uplp_scar_brl_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.475, 17.65) },
+	[7] = { Pos = Vector(-0.06, 1.475, 17.65) },
 	}},
 
     ["uplp_scar_brl_pdw"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.475, 14.375) },
+	[7] = { Pos = Vector(-0.06, 1.475, 14.375) },
+	[9] = { Pos = Vector(-1.1, 1.4, 10.15) },
+	[11] = { Pos = Vector(-0.06, 2.3, 9.75) },
+	[13] = { Pos = Vector(-0.06, -0.45, 11) },
 	}},
 
     ["uplp_scar_brl_20"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.525, 26.35) },
+	[7] = { Pos = Vector(-0.06, 1.525, 26.35) },
+	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
+	[13] = { Pos = Vector(-0.06, -0.45, 21) },
 	}},
 
     ["uplp_scar_brl_20_long"] = { Bodygroups = { { 2, 4 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.525, 30) },
+	[7] = { Pos = Vector(-0.06, 1.525, 30) },
+	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
 	}},
 
     -- STOCKS
@@ -838,7 +867,19 @@ SWEP.Attachments = {
         Pos = Vector(-0.06, 1.3, 8),
         Ang = Angle(90, 90, 180),
 		-- ActiveElements = {"uplp_ar15_barrel"},
-		ExcludeElements = {"uplp_scar_brl_pdw"},
+		ExcludeElements = {"uplp_scar_brl_pdw", "uplp_scar_upper_dmr"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_barrel"),
+        Category = {"uplp_scar_barrel_dmr"},
+        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(-0.06, 1.3, 8),
+        Ang = Angle(90, 90, 180),
+		-- ExcludeElements = {""},
+		RequireElements = {"uplp_scar_upper_dmr"},
+		Installed = "uplp_scar_brl_20",
+		Integral = "uplp_scar_brl_20",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -856,6 +897,14 @@ SWEP.Attachments = {
         Pos = Vector(-0.06, 1, 3),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(-1.1, 1.4, 13),
+        Ang = Angle(90, 90, -90),
+		Icon_Offset = Vector(0, -0.5, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver_lower"),
@@ -907,7 +956,7 @@ SWEP.HookP_NameChange = function(self, name)
 		end
 	end
 
-	if (att["uplp_scar_upper_l"] or att["uplp_scar_upper_lb"]) and att["uplp_ar15_mag"] then
+	if att["uplp_ar15_mag"] then
 		if att["uplp_scar_mag_drum"] then
 			name = ARC9:GetPhrase("uplp_weapon_scar_mg")
 		else
