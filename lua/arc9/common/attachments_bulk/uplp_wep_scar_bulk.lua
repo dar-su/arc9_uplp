@@ -1,6 +1,7 @@
 local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/scar/"
+local iconfolderar15 = "entities/uplp_attachements/ar15/mag/"
 
 ////////////////////      LOWER RECEIVERS
 ///////////////////////////////////////      uplp_scar_lower_b
@@ -86,7 +87,7 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_l", "uplp_scar_lower_l"}
+ATT.ActivateElements = {"uplp_scar_upper_l"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_l")
 
@@ -104,7 +105,7 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_lb", "uplp_scar_lower_l"}
+ATT.ActivateElements = {"uplp_scar_upper_lb"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_lb")
 
@@ -123,6 +124,7 @@ ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_upper_20"}
+ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20")
 
@@ -141,6 +143,7 @@ ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_upper_20b"}
+ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20b")
 
@@ -163,7 +166,7 @@ ATT.ModelOffset = Vector(-15.5, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_lower_l", "uplp_scar_brl_pdw"}
+ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdw")
 
@@ -186,7 +189,7 @@ ATT.ModelOffset = Vector(-15.5, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_lower_l", "uplp_scar_brl_pdw"}
+ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdwb")
 
@@ -229,8 +232,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
 ATT = {}
 
-ATT.PrintName = "510mm SSR Barrel"
-ATT.CompactName = "510mm SSR"
+ATT.PrintName = "510mm DMR Barrel"
+ATT.CompactName = "510mm DMR"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
@@ -238,7 +241,7 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_brl_20"}
+ATT.ActivateElements = {"uplp_scar_brl_20", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20")
 
@@ -246,8 +249,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_brl_20")
 
 ATT = {}
 
-ATT.PrintName = "???mm SSR Barrel"
-ATT.CompactName = "???mm SSR"
+ATT.PrintName = "600mm DMR Barrel"
+ATT.CompactName = "600mm DMR"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
@@ -255,7 +258,7 @@ ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
 ATT.Category = "uplp_scar_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_brl_20_long"}
+ATT.ActivateElements = {"uplp_scar_brl_20_long", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
@@ -281,8 +284,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_stock_lb")
 
 ATT = {}
 
-ATT.PrintName = "SSR Stock"
-ATT.CompactName = "SSR"
+ATT.PrintName = "DMR Stock"
+ATT.CompactName = "DMR"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
@@ -299,8 +302,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_stock_h")
 
 ATT = {}
 
-ATT.PrintName = "SSR Stock (Black)"
-ATT.CompactName = "SSR (B)"
+ATT.PrintName = "DMR Stock (Black)"
+ATT.CompactName = "DMR (B)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 5
 
@@ -368,8 +371,11 @@ ATT = {}
 ATT.PrintName = "20-Round 7.62x51mm Black"
 ATT.CompactName = "20R 7.62 (B)"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 15
 
 ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_h_black.mdl"
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -385,8 +391,11 @@ ATT = {}
 ATT.PrintName = "10-Round 7.62x51mm"
 ATT.CompactName = "10R 7.62"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 5
 
 ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20.mdl"
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -418,8 +427,11 @@ ATT = {}
 ATT.PrintName = "10-Round 6.8mm"
 ATT.CompactName = "10R 6.8"
 ATT.Description = ATT.PrintName
+ATT.SortOrder = 1
 
 ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20_black.mdl"
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -443,6 +455,331 @@ end
 ATT.ActivateElements = {"uplp_scar_mag_20_68"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_20_68")
+
+///////////////////////////////////////      uplp_scar_mag_hk
+
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56x45mm (H&K)"
+ATT.CompactName = "30R 5.56 (H&K)"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 30
+
+ATT.Icon = Material(iconfolderar15 .. "hk.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.ClipSizeOverride = 30
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_l"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
+
+///////////////////////////////////////      uplp_scar_mag_pmag20
+
+ATT = {}
+
+ATT.PrintName = "20-Round 5.56x45mm (PMAG)"
+ATT.CompactName = "20R 5.56 (PMAG)"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 20
+
+ATT.Icon = Material(iconfolderar15 .. "p20.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+/// Positives
+-- ATT.ClipSizeOverride = 20
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.95
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.CustomPros = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "+5%",
+}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_20"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
+
+///////////////////////////////////////      uplp_scar_mag_pmag30
+
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56x45mm (PMAG)"
+ATT.CompactName = "30R 5.56 (PMAG)"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 30
+
+ATT.Icon = Material(iconfolderar15 .. "p30.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.ClipSizeOverride = 30
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_l"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag30")
+
+///////////////////////////////////////      uplp_scar_mag_stanag30
+
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56x45mm (Aluminium)"
+ATT.CompactName = "30R 5.56 (A)"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 30
+
+ATT.Icon = Material(iconfolderar15 .. "30.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.ClipSizeOverride = 30
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_l"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30")
+
+///////////////////////////////////////      uplp_scar_mag_stanag30_tan
+
+ATT = {}
+
+ATT.PrintName = "30-Round 5.56x45mm (Tan)"
+ATT.CompactName = "30R 5.56 (T)"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 30
+
+ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.ClipSizeOverride = 30
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_l"
+end
+
+ATT.ModelOffset = Vector(1.4, 0, -3.5)
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30_tan")
+
+///////////////////////////////////////      uplp_scar_mag_pmag60
+
+ATT = {}
+
+ATT.PrintName = "60-Round 5.56x45mm Drum"
+ATT.CompactName = "60R 5.56 D"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 60
+
+ATT.Icon = Material(iconfolderar15 .. "p60.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+ATT.ExcludeElements = {"uplp_ar15_ammo"}
+
+/// Positives
+ATT.ClipSizeOverride = 60
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.2
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-15%",
+}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_60"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag60")
+
+///////////////////////////////////////      uplp_scar_mag_stanag60
+
+ATT = {}
+
+ATT.PrintName = "60-Round 5.56x45mm Quadstacked"
+ATT.CompactName = "60R 5.56 (Q)"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 60
+
+ATT.Icon = Material(iconfolderar15 .. "60.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+ATT.ExcludeElements = {"uplp_ar15_ammo"}
+
+/// Positives
+ATT.ClipSizeOverride = 60
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.2
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-15%",
+}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_60"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag60")
+
+///////////////////////////////////////      uplp_scar_mag_drum
+
+ATT = {}
+
+ATT.PrintName = "100-Round 5.56x45mm Beta C-Mag"
+ATT.CompactName = "100R 5.56 Drum"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
+
+ATT.Icon = Material(iconfolderar15 .. "100.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+ATT.ExcludeElements = {"uplp_ar15_mag_no_drum"}
+
+/// Positives
+ATT.ClipSizeOverride = 100
+ATT.RPMAdd = 100
+ATT.RecoilMult = 0.75
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.95
+ATT.DamageMaxAdd = -5
+-- ATT.DamageMinAdd = -5
+ATT.PhysBulletMuzzleVelocityMult = 0.8165
+ATT.AimDownSightsTimeMult = 1.3
+ATT.SprintToFireTimeMult = 1.3
+
+ATT.CustomCons = { 
+[ARC9:GetPhrase("autostat.reloadtime")] = "-25%",
+}
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+    return anim .. "_100"
+end
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_drum")
 
 ////////////////////      PISTOL GRIPS
 ///////////////////////////////////////      uplp_scar_pgrip_b
@@ -479,5 +816,6 @@ ATT.Category = "uplp_scar_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_is"}
+ATT.ExcludeElements = {"uplp_scar_no_is"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_is")

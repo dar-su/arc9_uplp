@@ -191,8 +191,8 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.37, -3, 0),
-     Ang = Angle(0.35, -0.015, -2.5),
+     Pos = Vector(-2.37, -3, 0.015),
+     Ang = Angle(0.365, -0.1, -2.5),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
@@ -225,7 +225,7 @@ SWEP.CustomizePos = Vector(12.5, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(12.5, -2, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
@@ -758,15 +758,15 @@ SWEP.AttachmentElements = {
 	}},
 
     ["uplp_scar_brl_pdw"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.475, 21.5) },
+	[6] = { Pos = Vector(-0.06, 1.475, 14.375) },
 	}},
 
     ["uplp_scar_brl_20"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.475, 17.65) },
+	[6] = { Pos = Vector(-0.06, 1.525, 26.35) },
 	}},
 
     ["uplp_scar_brl_20_long"] = { Bodygroups = { { 2, 4 } }, AttPosMods = {
-	[6] = { Pos = Vector(-0.06, 1.475, 17.65) },
+	[6] = { Pos = Vector(-0.06, 1.525, 30) },
 	}},
 
     -- STOCKS
@@ -781,7 +781,7 @@ SWEP.AttachmentElements = {
     ["uplp_scar_mag_hb"] = { Bodygroups={ { 4, 1 } } },
     ["uplp_scar_mag_20"] = { Bodygroups={ { 4, 2 } } },
     ["uplp_scar_mag_20_68"] = { Bodygroups={ { 4, 3 } } },
-    ["uplp_ar15_mag"] = { Bodygroups={ { 4, 4 } } },
+    ["uplp_ar15_mag"] = { Bodygroups={ { 4, 4 }, { 0, 2 } } },
 
 	-- PISTOL GRIPS
     ["uplp_scar_pgrip_b"] = { Bodygroups={ { 5, 1 } } },
@@ -877,7 +877,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_scar_mag", "uplp_ar15_556_mag"},
+        Category = {"uplp_scar_mag"},
         DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(-0.06, -1.8, -1.8),
@@ -901,9 +901,19 @@ SWEP.Attachments = {
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
-	-- if att["uplp_ar15_reciever_stm9"] then
-		-- name = ARC9:GetPhrase("uplp_weapon_ar15_smg9")
-	-- end
+	if (att["uplp_scar_upper_20"] or att["uplp_scar_upper_20b"]) and !att["uplp_ar15_mag"] then
+		if (att["uplp_scar_brl_20"] or att["uplp_scar_brl_20_long"]) then
+			name = ARC9:GetPhrase("uplp_weapon_scar_dmr")
+		end
+	end
+
+	if (att["uplp_scar_upper_l"] or att["uplp_scar_upper_lb"]) and att["uplp_ar15_mag"] then
+		if att["uplp_scar_mag_drum"] then
+			name = ARC9:GetPhrase("uplp_weapon_scar_mg")
+		else
+			name = ARC9:GetPhrase("uplp_weapon_scar_light")
+		end
+	end
 
 	-- if att["uplp_ar15_reciever_45acp"] then
 		-- name = ARC9:GetPhrase("uplp_weapon_ar15_smg45")

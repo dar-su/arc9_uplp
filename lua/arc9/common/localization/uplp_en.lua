@@ -1580,14 +1580,14 @@ L["uplp_weapon_scar"] = "XAR Heavy"
 L["uplp_weapon_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
 
 L["uplp_weapon_scar_light"] = "XAR Light"
-L["uplp_weapon_scar_ssr"] = "XAR SSR"
+L["uplp_weapon_scar_dmr"] = "XAR DMR"
 L["uplp_weapon_scar_mg"] = "XAR MG"
 L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
 /////////// Attachments
-////// Configurations
+////// Configurations -- Unused - leave be anyway; If translation file, remove or translate, doesn't matter.
 L["uplp_scar_config_l.printname"] = "XAR Light Configuration"
 L["uplp_scar_config_l.compactname"] = "Light"
 L["uplp_scar_config_l.description"] = "Configures the XAR into its Light configuration.\n- Allows the installation of <color=160,160,255>AR-15 mags</color>."
@@ -1605,59 +1605,47 @@ L["uplp_scar_lower_b.printname"] = "Black Lower Receiver"
 L["uplp_scar_lower_b.compactname"] = "Black"
 L["uplp_scar_lower_b.description"] = "Replaces the lower receiver with a black colored one."
 
--- L["uplp_scar_lower_b.printname"] = "Standard Lower (Black)"
--- L["uplp_scar_lower_b.compactname"] = "Std (B)"
--- L["uplp_scar_lower_b.description"] = "Replaces the lower receiver with a black colored one."
-
--- L["uplp_scar_lower_l.printname"] = "Light Lower"
--- L["uplp_scar_lower_l.compactname"] = "Light"
--- L["uplp_scar_lower_l.description"] = "Replaces the lower receiver with the one used on the XAR Light.\nAllows the use of <color=0,255,0>AR-15 mags</color>."
-
--- L["uplp_scar_lower_lb.printname"] = "Light Lower (Black)"
--- L["uplp_scar_lower_lb.compactname"] = "Light (B)"
--- L["uplp_scar_lower_lb.description"] = "Replaces the lower receiver with a black colored one used on the XAR Light.\nAllows the use of <color=0,255,0>AR-15 mags</color>."
-
 ////// Upper Receivers
 L["uplp_scar_upper_hb.printname"] = "Standard Upper (Black)"
-L["uplp_scar_upper_hb.compactname"] = "Std (B)"
+L["uplp_scar_upper_hb.compactname"] = "Standard (B)"
 L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black colored one."
 
 L["uplp_scar_upper_l.printname"] = "Light Upper"
 L["uplp_scar_upper_l.compactname"] = "Light"
-L["uplp_scar_upper_l.description"] = "Replaces the upper receiver with the one used on the XAR Light.\nEnables the ability to equip <color=100,255,100>AR-15 mags</color>." .. changeammo.smg1
+L["uplp_scar_upper_l.description"] = "Replaces the upper receiver with the one used on the XAR Light.\nRequires <color=160,160,255>any 5.56x45mm magazine</color>."
 
 L["uplp_scar_upper_lb.printname"] = "Light Upper (Black)"
 L["uplp_scar_upper_lb.compactname"] = "Light (B)"
-L["uplp_scar_upper_lb.description"] = "Replaces the upper receiver with a black colored one used on the XAR Light.\nEnables the ability to equip <color=100,255,100>AR-15 mags</color>." .. changeammo.smg1
+L["uplp_scar_upper_lb.description"] = "Replaces the upper receiver with a black colored one used on the XAR Light.\nRequires <color=160,160,255>any 5.56x45mm magazine</color>."
 
-L["uplp_scar_upper_20.printname"] = "SSR Upper"
-L["uplp_scar_upper_20.compactname"] = "SSR"
-L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR SSR.\nRequires a <color=160,160,255>SSR Barrel</color>."
+L["uplp_scar_upper_20.printname"] = "DMR Upper"
+L["uplp_scar_upper_20.compactname"] = "DMR"
+L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\nRequires <color=160,160,255>any DMR Barrel</color>."
 
-L["uplp_scar_upper_20b.printname"] = "SSR Upper (Black)"
-L["uplp_scar_upper_20b.compactname"] = "SSR (B)"
-L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR SSR.\nRequires a <color=160,160,255>SSR Barrel</color>."
+L["uplp_scar_upper_20b.printname"] = "DMR Upper (Black)"
+L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
+L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\nRequires <color=160,160,255>any DMR Barrel</color>."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Upper"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "REPLACEME"
+L["uplp_scar_upper_pdw.description"] = "Very short upper receiver and handguard used on the XAR PDW.\nCan only equip <color=160,160,255>5.56x45mm magazines</color>.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>100-Round Drum</color>.\nCannot put on <color=255,100,100>angled handstops</color>."
 
 L["uplp_scar_upper_pdwb.printname"] = "PDW Upper (Black)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (B)"
-L["uplp_scar_upper_pdwb.description"] = "REPLACEME"
+L["uplp_scar_upper_pdwb.description"] = "Very short upper receiver and handguard painted black that is used on the XAR PDW.\nCan only equip <color=160,160,255>5.56x45mm magazines</color>.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>100-Round Drum</color>.\nCannot put on <color=255,100,100>angled handstops</color>."
 
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "330mm CQC Barrel"
 L["uplp_scar_brl_short.compactname"] = "330mm CQC"
 L["uplp_scar_brl_short.description"] = "Shortened 330mm (13\") barrel for the XAR."
 
-L["uplp_scar_brl_20.printname"] = "510mm SSR Barrel"
-L["uplp_scar_brl_20.compactname"] = "510mm SSR"
-L["uplp_scar_brl_20.description"] = "Long 510mm (20\") SSR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
+L["uplp_scar_brl_20.printname"] = "510mm DMR Barrel"
+L["uplp_scar_brl_20.compactname"] = "510mm DMR"
+L["uplp_scar_brl_20.description"] = "Long 510mm (20\") DMR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
 
-L["uplp_scar_brl_20_long.printname"] = "???mm SSR Barrel"
-L["uplp_scar_brl_20_long.compactname"] = "???mm SSR"
-L["uplp_scar_brl_20_long.description"] = "Very long ???mm (??\") SSR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
+L["uplp_scar_brl_20_long.printname"] = "600mm DMR Barrel"
+L["uplp_scar_brl_20_long.compactname"] = "600mm DMR"
+L["uplp_scar_brl_20_long.description"] = "Very long 600mm (23.62\") DMR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
 
 ////// Stocks
 L["uplp_scar_stock_lb.printname"] = "Standard Stock (Black)"
@@ -1696,6 +1684,38 @@ L["uplp_scar_mag_20.description"] = "10-round 7.62x51mm magazine for the XAR."
 L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
 L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
+
+L["uplp_scar_mag_drum.printname"] = "100-Round 5.56x45mm Dual Drum"
+L["uplp_scar_mag_drum.compactname"] = "100R 5.56"
+L["uplp_scar_mag_drum.description"] = "100-round C-shaped drum magazine.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
+
+L["uplp_scar_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
+L["uplp_scar_mag_hk.compactname"] = "30R (416)"
+L["uplp_scar_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin." .. changeammo.smg1
+
+L["uplp_scar_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
+L["uplp_scar_mag_pmag20.compactname"] = "20R Poly"
+L["uplp_scar_mag_pmag20.description"] = "20-round magazine made out of polymer by Wildcat X." .. changeammo.smg1
+
+L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_scar_mag_pmag30.compactname"] = "30R Poly"
+L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by Wildcat X." .. changeammo.smg1
+
+L["uplp_scar_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
+L["uplp_scar_mag_pmag60.compactname"] = "60R Drum"
+L["uplp_scar_mag_pmag60.description"] = "60-round drum magazine made out of polymer by Wildcat X." .. changeammo.smg1
+
+L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
+L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
+L["uplp_scar_mag_stanag30.description"] = "30-round magazine made out of aluminium." .. changeammo.smg1
+
+L["uplp_scar_mag_stanag30_tan.printname"] = "30-Round 5.56x45mm (Tan)"
+L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Tan"
+L["uplp_scar_mag_stanag30_tan.description"] = "30-round magazine made out of aluminium painted tan." .. changeammo.smg1
+
+L["uplp_scar_mag_stanag60.printname"] = "60-Round 5.56x45mm Quadstacked"
+L["uplp_scar_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_scar_mag_stanag60.description"] = "60-round aluminium magazine expanded horizontally to hold more ammunition." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "XAR Pistol Grip (Black)"
