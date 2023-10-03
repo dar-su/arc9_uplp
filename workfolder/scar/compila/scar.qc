@@ -7,7 +7,7 @@ $bodygroup "lower" { // 0
 	studio "lower l.smd"
 	studio "lower lb.smd"
 }
-$bodygroup "upper" { // 0
+$bodygroup "upper" { // 1
 	studio "upper h.smd"
 	studio "upper hb.smd"
 
@@ -23,7 +23,7 @@ $bodygroup "upper" { // 0
 	studio "upper pdw.smd"
 	studio "upper pdwb.smd"
 }
-$bodygroup "barrel" { // 1
+$bodygroup "barrel" { // 2
 	studio "br std.smd"
 	studio "br short.smd"
 	studio "br pdw.smd"
@@ -31,7 +31,7 @@ $bodygroup "barrel" { // 1
 	studio "br 20 def.smd"
 	studio "br 20 long.smd"
 }
-$bodygroup "stock" { // 1
+$bodygroup "stock" { // 3
 	studio "st std.smd"
 	studio "st stdb.smd"
 
@@ -43,7 +43,7 @@ $bodygroup "stock" { // 1
 	studio "st pdw.smd"
 	studio "st pdwfolded.smd"
 }  
-$bodygroup "mag" { // 2
+$bodygroup "mag" { // 4
 	studio "mag h.smd"
 	studio "mag hb.smd"
 
@@ -52,22 +52,22 @@ $bodygroup "mag" { // 2
 
 	studio "556.smd" // use with any ar15 mag
 }  
-$bodygroup "grip" { // 3
+$bodygroup "grip" { // 5
 	studio "grip std.smd"
 	studio "grip b.smd"
 	blank
 } 
 
-$bodygroup "fs" { // 3
+$bodygroup "fs" { // 6
 	studio "ironsup.smd"
 	studio "ironsdown.smd"
-	studio "ironsupmicro.smd"
+	studio "ironsupmicro.smd" // for use on pdw
 	studio "ironsdownmicro.smd"
 	blank
 } 
-$bodygroup "extrathing" { // 3
+$bodygroup "extrathing" { // 7
 	blank
-	studio "extra upper.smd"
+	studio "extra upper.smd" // only default h/l upper
 } 
 
 $cdmaterials "models\weapons\arc9\uplp"
