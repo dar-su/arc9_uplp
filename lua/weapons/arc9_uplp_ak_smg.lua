@@ -246,21 +246,81 @@ local shootsound545 = pathsound .. "shoot/545/wpn_h1_ak74u_"
 local shootsound556 = pathsound .. "shoot/556/wpn_h1_mp44_"
 local shootsound308 = pathsound .. "shoot/308/wpn_h1_g3_"
 
-SWEP.ShootSound = {shootsound762 .. "shot_01.ogg",
-shootsound762 .. "shot_02.ogg",
-shootsound762 .. "shot_03.ogg",
-shootsound762 .. "shot_04.ogg"}
+-- urbna!
+local pathUT = "uplp_urban_temp/ak/"
+local pathUTC = "uplp_urban_temp/common/"
 
-SWEP.DistantShootSound = {shootsound762 .. "tail_ext.ogg"}
 
-SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
-shootsoundsupp .. "02.ogg",
-shootsoundsupp .. "03.ogg",
-shootsoundsupp .. "04.ogg"}
+SWEP.ShootSound = {	
+    pathUT .. "9mm/fire-9-01.ogg",
+    pathUT .. "9mm/fire-9-02.ogg",
+    pathUT .. "9mm/fire-9-03.ogg",
+    pathUT .. "9mm/fire-9-04.ogg",
+    pathUT .. "9mm/fire-9-05.ogg",
+    pathUT .. "9mm/fire-9-06.ogg",
+}
 
-SWEP.DistantShootSoundSilenced = {pathsound .. "shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
+SWEP.ShootSoundSilenced = {	
+    pathUT .. "9mm/fire-sup-01.ogg",
+    pathUT .. "9mm/fire-sup-02.ogg",
+    pathUT .. "9mm/fire-sup-03.ogg",
+    pathUT .. "9mm/fire-sup-04.ogg",
+    pathUT .. "9mm/fire-sup-05.ogg",
+    pathUT .. "9mm/fire-sup-06.ogg",
+}
 
-SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
+SWEP.DistantShootSound = {	
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-01.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-02.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-03.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-04.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-05.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-06.ogg",
+}
+
+SWEP.DistantShootSoundIndoor = {	
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-01.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-02.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-03.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-04.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-05.ogg",
+    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-06.ogg",
+}
+
+SWEP.DistantShootSoundSilenced = {
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
+}
+
+SWEP.DistantShootSoundIndoorsSilenced = {
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
+}
+
+SWEP.DropMagazineSounds = {
+    pathUTC .. "smg_pistol_magdrop_1.ogg",
+    pathUTC .. "smg_pistol_magdrop_2.ogg",
+    pathUTC .. "smg_pistol_magdrop_3.ogg",
+    pathUTC .. "smg_pistol_magdrop_4.ogg",
+}
+
+
 
 //// Animations
 -- HideBones, BulletBones, etc.
@@ -293,6 +353,16 @@ SWEP.ReloadHideBoneTables = {
         "bullet4",
     }
 }
+
+local mechh = {
+    pathUT .. "mech-01.ogg",
+    pathUT .. "mech-02.ogg",
+    pathUT .. "mech-03.ogg",
+    pathUT .. "mech-04.ogg",
+    pathUT .. "mech-05.ogg",
+    pathUT .. "mech-06.ogg",
+}
+
 
 -- Animations
 SWEP.Animations = {
@@ -334,12 +404,7 @@ SWEP.Animations = {
         Source = {"fire_01","fire_02","fire_03"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = {
-			shootsound762 .. "mech_01.ogg",
-			shootsound762 .. "mech_02.ogg",
-			shootsound762 .. "mech_03.ogg",
-			shootsound762 .. "mech_04.ogg",
-			}, t = 0 },
+            { s = mechh, t = 0 },
             { s = shootsound762 .. "punch.ogg", t = 0 },
         },
     },
@@ -348,12 +413,7 @@ SWEP.Animations = {
         Source = {"fire_01_bizon","fire_02_bizon","fire_03_bizon"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = {
-			shootsound762 .. "mech_01.ogg",
-			shootsound762 .. "mech_02.ogg",
-			shootsound762 .. "mech_03.ogg",
-			shootsound762 .. "mech_04.ogg",
-			}, t = 0 },
+            { s = mechh, t = 0 },
             { s = shootsound762 .. "punch.ogg", t = 0 },
         },
     },

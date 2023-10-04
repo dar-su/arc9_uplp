@@ -252,21 +252,81 @@ local shootsound545 = pathsound .. "shoot/545/wpn_h1_ak74u_"
 local shootsound556 = pathsound .. "shoot/556/wpn_h1_mp44_"
 local shootsound308 = pathsound .. "shoot/308/wpn_h1_g3_"
 
-SWEP.ShootSound = {shootsound762 .. "shot_01.ogg",
-shootsound762 .. "shot_02.ogg",
-shootsound762 .. "shot_03.ogg",
-shootsound762 .. "shot_04.ogg"}
 
-SWEP.DistantShootSound = {shootsound762 .. "tail_ext.ogg"}
 
-SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
-shootsoundsupp .. "02.ogg",
-shootsoundsupp .. "03.ogg",
-shootsoundsupp .. "04.ogg"}
+-- urbna!
+local pathUT = "uplp_urban_temp/ak/"
+local pathUTC = "uplp_urban_temp/common/"
 
-SWEP.DistantShootSoundSilenced = {pathsound .. "shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
+SWEP.ShootSound = {	
+    pathUT .. "762/fire-01.ogg",
+    pathUT .. "762/fire-02.ogg",
+    pathUT .. "762/fire-03.ogg",
+    pathUT .. "762/fire-04.ogg",
+    pathUT .. "762/fire-05.ogg",
+    pathUT .. "762/fire-06.ogg",
+}
 
-SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
+SWEP.ShootSoundSilenced = {	
+    pathUT .. "762/fire-sup-01.ogg",
+    pathUT .. "762/fire-sup-02.ogg",
+    pathUT .. "762/fire-sup-03.ogg",
+    pathUT .. "762/fire-sup-04.ogg",
+    pathUT .. "762/fire-sup-05.ogg",
+    pathUT .. "762/fire-sup-06.ogg",
+}
+
+SWEP.DistantShootSound = {	
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-01.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-02.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-03.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-04.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-05.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-06.ogg",
+}
+
+SWEP.DistantShootSoundIndoor = {	
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-01.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-02.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-03.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-04.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-05.ogg",
+    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-06.ogg",
+}
+
+SWEP.DistantShootSoundSilenced = {
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
+}
+
+SWEP.DistantShootSoundIndoorsSilenced = {
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
+}
+
+SWEP.DropMagazineSounds = {
+    pathUTC .. "rifle_magdrop_1.ogg",
+    pathUTC .. "rifle_magdrop_2.ogg",
+    pathUTC .. "rifle_magdrop_3.ogg",
+    pathUTC .. "rifle_magdrop_4.ogg",
+    pathUTC .. "rifle_magdrop.ogg",
+}
 
 //// Animations
 -- HideBones, BulletBones, etc.
@@ -298,6 +358,15 @@ SWEP.ReloadHideBoneTables = {
         "bullet3",
         "bullet4",
     }
+}
+
+local mechh = {
+    pathUT .. "mech-01.ogg",
+    pathUT .. "mech-02.ogg",
+    pathUT .. "mech-03.ogg",
+    pathUT .. "mech-04.ogg",
+    pathUT .. "mech-05.ogg",
+    pathUT .. "mech-06.ogg",
 }
 
 -- Animations
@@ -340,61 +409,42 @@ SWEP.Animations = {
         Source = {"fire_01","fire_02","fire_03"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = {
-			shootsound762 .. "mech_01.ogg",
-			shootsound762 .. "mech_02.ogg",
-			shootsound762 .. "mech_03.ogg",
-			shootsound762 .. "mech_04.ogg",
-			}, t = 0 },
+            { s = mechh, t = 0 },
             { s = shootsound762 .. "punch.ogg", t = 0 },
         },
     },
 
-    ["fire_545"] = {
-        Source = {"fire_01","fire_02","fire_03"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound545 .. "mech_01.ogg",
-			shootsound545 .. "mech_02.ogg",
-			shootsound545 .. "mech_03.ogg",
-			shootsound545 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = shootsound545 .. "punch.ogg", t = 0 },
-        },
-    },
+    -- ["fire_545"] = {
+    --     Source = {"fire_01","fire_02","fire_03"},
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    --     EventTable = {
+    --         { s = mechh, t = 0 },
+    --         { s = shootsound545 .. "punch.ogg", t = 0 },
+    --     },
+    -- },
 
-    ["fire_556"] = {
-        Source = {"fire_01","fire_02","fire_03"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound762 .. "mech_01.ogg",
-			shootsound762 .. "mech_02.ogg",
-			shootsound762 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = shootsound556 .. "punch.ogg", t = 0 },
-        },
-    },
+    -- ["fire_556"] = {
+    --     Source = {"fire_01","fire_02","fire_03"},
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    --     EventTable = {
+    --         { s = mechh, t = 0 },
+    --         { s = shootsound556 .. "punch.ogg", t = 0 },
+    --     },
+    -- },
 
-    ["fire_308"] = {
-        Source = {"fire_01","fire_02","fire_03"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound308 .. "mech_01.ogg",
-			shootsound308 .. "mech_02.ogg",
-			shootsound308 .. "mech_03.ogg",
-			shootsound308 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = {
-			shootsound308 .. "shot_lyr_01.ogg",
-			shootsound308 .. "shot_lyr_02.ogg",
-			shootsound308 .. "shot_lyr_03.ogg",
-			shootsound308 .. "shot_lyr_04.ogg",
-			}, t = 0, v = 0.35 },
-        },
-    },
+    -- ["fire_308"] = {
+    --     Source = {"fire_01","fire_02","fire_03"},
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    --     EventTable = {
+    --         { s = mechh, t = 0 },
+    --         { s = {
+	-- 		shootsound308 .. "shot_lyr_01.ogg",
+	-- 		shootsound308 .. "shot_lyr_02.ogg",
+	-- 		shootsound308 .. "shot_lyr_03.ogg",
+	-- 		shootsound308 .. "shot_lyr_04.ogg",
+	-- 		}, t = 0, v = 0.35 },
+    --     },
+    -- },
 
     -- Reloads --
 

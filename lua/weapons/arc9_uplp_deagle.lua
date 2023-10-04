@@ -246,20 +246,39 @@ local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 local reloaddeagle = "uplp_temp/deagle/reload/"
 local shootdeagle = "uplp_temp/deagle/shoot/"
 
-SWEP.ShootSound = {shootdeagle .. "shot01.ogg",
-shootdeagle .. "shot02.ogg",
-shootdeagle .. "shot03.ogg",
-shootdeagle .. "shot04.ogg",
+
+
+-- urbna!
+local pathUT = "uplp_urban_temp/deagle/"
+local pathUTC = "uplp_urban_temp/common/"
+
+
+SWEP.ShootSound = {
+    pathUT .. "fire-01.ogg",
+    pathUT .. "fire-02.ogg",
+    pathUT .. "fire-03.ogg",
+    pathUT .. "fire-04.ogg",
+    pathUT .. "fire-05.ogg",
+    pathUT .. "fire-06.ogg",
 }
 
-SWEP.DistantShootSound = {shootdeagle .. "tail.ogg"}
+SWEP.DistantShootSound = {
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-01.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-02.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-03.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-04.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-05.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-06.ogg"
+}
 
-SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
-shootsoundsupp .. "02.ogg",
-shootsoundsupp .. "03.ogg",
-shootsoundsupp .. "04.ogg"}
-
-SWEP.DistantShootSoundSilenced = {"uplp_temp/ak/shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
+SWEP.DistantShootSoundIndoor = {
+    pathUT .. "tails/fire-dist-50ae-pistol-int-01.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-02.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-03.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-04.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-05.ogg",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-06.ogg"
+}
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 

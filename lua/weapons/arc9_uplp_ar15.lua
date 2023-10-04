@@ -254,22 +254,82 @@ local shootsound556 = "uplp_temp/ar15/shoot/556/wpn_h1_m16a4_"
 local shootsound45 = "uplp_temp/ar15/shoot/45/wpn_h1_m16a4_"
 local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
 
-SWEP.ShootSound = {shootsound556 .. "shot_01.ogg",
-shootsound556 .. "shot_02.ogg",
-shootsound556 .. "shot_03.ogg",
-shootsound556 .. "shot_04.ogg",
+
+
+-- urbna!
+local pathUT = "uplp_urban_temp/ar15/"
+local pathUTC = "uplp_urban_temp/common/"
+
+SWEP.ShootSound = {	
+    pathUT .. "fire-01.ogg",
+    pathUT .. "fire-02.ogg",
+    pathUT .. "fire-03.ogg",
+    pathUT .. "fire-04.ogg",
+    pathUT .. "fire-05.ogg",
+    pathUT .. "fire-06.ogg",
 }
 
-SWEP.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
+SWEP.ShootSoundSilenced = {	
+    pathUT .. "fire-sup-01.ogg",
+    pathUT .. "fire-sup-02.ogg",
+    pathUT .. "fire-sup-03.ogg",
+    pathUT .. "fire-sup-04.ogg",
+    pathUT .. "fire-sup-05.ogg",
+    pathUT .. "fire-sup-06.ogg",
+}
 
-SWEP.ShootSoundSilenced = {shootsoundsupp .. "01.ogg",
-shootsoundsupp .. "02.ogg",
-shootsoundsupp .. "03.ogg",
-shootsoundsupp .. "04.ogg"}
+SWEP.DistantShootSound = {	
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-04.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-05.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
+}
 
-SWEP.DistantShootSoundSilenced = {"uplp_temp/ak/shoot/suppressed/wpn_tail_hol_smooth_01.ogg"}
+SWEP.DistantShootSoundIndoor = {	
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-04.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-05.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
+}
 
-SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
+SWEP.DistantShootSoundSilenced = {
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
+}
+
+SWEP.DistantShootSoundIndoorsSilenced = {
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
+}
+
+SWEP.DropMagazineSounds = {
+    pathUTC .. "rifle_magdrop_1.ogg",
+    pathUTC .. "rifle_magdrop_2.ogg",
+    pathUTC .. "rifle_magdrop_3.ogg",
+    pathUTC .. "rifle_magdrop_4.ogg",
+    pathUTC .. "rifle_magdrop.ogg",
+}
+
 
 //// Animations
 -- HideBones, BulletBones, etc.
@@ -301,6 +361,16 @@ SWEP.BulletBones = {
         -- "bullet4",
     -- }
 -- }
+
+local mechh = {
+    pathUT .. "mech-01.ogg",
+    pathUT .. "mech-02.ogg",
+    pathUT .. "mech-03.ogg",
+    pathUT .. "mech-04.ogg",
+    pathUT .. "mech-05.ogg",
+    pathUT .. "mech-06.ogg",
+}
+
 
 -- Animations
 SWEP.Animations = {
@@ -357,61 +427,27 @@ SWEP.Animations = {
         Source = {"fire_01","fire_02","fire_03"},
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound556 .. "mech_01.ogg",
-			shootsound556 .. "mech_02.ogg",
-			shootsound556 .. "mech_03.ogg",
-			shootsound556 .. "mech_04.ogg",
-			}, t = 0 },
-        },
+        EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound556 .. "mech_01.ogg",
-			shootsound556 .. "mech_02.ogg",
-			shootsound556 .. "mech_03.ogg",
-			shootsound556 .. "mech_04.ogg",
-			}, t = 0 },
-        },
+        EventTable = { { s = pathUT .. "mech_last.ogg", t = 0 } },
     },
 
-    ["fire_45"] = {
-        Source = {"fire_01","fire_02","fire_03"},
-        ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound9 .. "mech_01.ogg",
-			shootsound9 .. "mech_02.ogg",
-			shootsound9 .. "mech_03.ogg",
-			shootsound9 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = {
-			shootsound9 .. "punch.ogg",
-			}, t = 0 },
-        },
-    },
-    ["fire_empty_45"] = {
-        Source = "fire_empty",
-        ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = {
-			shootsound9 .. "mech_01.ogg",
-			shootsound9 .. "mech_02.ogg",
-			shootsound9 .. "mech_03.ogg",
-			shootsound9 .. "mech_04.ogg",
-			}, t = 0 },
-            { s = {
-			shootsound9 .. "punch.ogg",
-			}, t = 0 },
-        },
-    },
+    -- ["fire_45"] = {  -- idk what different firings for??
+    --     Source = {"fire_01","fire_02","fire_03"},
+    --     ShellEjectAt = 0.01,
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    --     EventTable = { { s = mechh, t = 0 } },
+    -- },
+    -- ["fire_empty_45"] = {
+    --     Source = "fire_empty",
+    --     ShellEjectAt = 0.01,
+    --     IKTimeLine = { { t = 0, lhik = 1 } },
+    --     EventTable = { { s = pathUT .. "mech_last.ogg", t = 0 } },
+    -- },
 
     -- ["fire_g17"] = {
         -- Source = {"fire_01","fire_02","fire_03"},
