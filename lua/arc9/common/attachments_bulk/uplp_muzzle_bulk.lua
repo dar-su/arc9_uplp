@@ -183,7 +183,7 @@ ATT.PrintName = "Shotgun Full Choke"
 ATT.CompactName = "SG FC"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "mzch.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr/mzch.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -206,7 +206,7 @@ ATT.PrintName = "Shotgun Muzzle Brake"
 ATT.CompactName = "SG MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "mzgk.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr/mzgk.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -233,7 +233,7 @@ ATT.PrintName = "Heavy Shotgun Muzzle Brake"
 ATT.CompactName = "SG Heavy MB"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "mzheav.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr/mzheav.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -261,7 +261,7 @@ ATT.CompactName = "SG Supp."
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material(iconfolder .. "mzsil.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr/mzsil.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
@@ -296,7 +296,7 @@ ATT.CompactName = "H SG Supp."
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 101
 
-ATT.Icon = Material(iconfolder .. "mzheavysil.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "vepr/mzheavysil.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
