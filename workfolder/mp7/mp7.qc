@@ -127,13 +127,17 @@ $sequence "holster_empty" {
 
 $sequence "modeswitch" {
 	"anims\switch.smd"
-	fps 30
+	"anims\switch_iron.smd"
+ 	blend "sights" 0 1
+	fps 24
 	snap
 }
 
 $sequence "modeswitch_empty" {
 	"anims\switch_empty.smd"
-	fps 30
+	"anims\switch_empty_iron.smd"
+ 	blend "sights" 0 1
+	fps 24
 	snap
 }
 
