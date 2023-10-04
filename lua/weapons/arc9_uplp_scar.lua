@@ -242,24 +242,6 @@ SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 
 //// Sounds
 
-
-local path = "weapons/arccw/xhr50/"
-local pathDist = "weapons/arccw/hk416/"
-local pathXC = "weapons/arccw/xcrm/"
-local pathCSR = "weapons/arccw/csr338/"
-
-local path556 = path
-
-local reloadsound = "uplp_temp/ar15/reload/wpfoly_m4_"
-local shootsoundsupp = "uplp_temp/ak/shoot/suppressed/h1_wpn_supp_ar1_"
-
-local relsound = "uplp_up/scar/"
-
-local shootsound = relsound .. "fire-"
-local shootsoundm = relsound .. "mech-"
-
-
-
 -- urbna!
 local pathUT = "uplp_urban_temp/scar/"
 local pathUTC = "uplp_urban_temp/common/"
@@ -375,6 +357,13 @@ local mechh = {
     pathUT .. "mech-06.ogg",
 }
 
+local UTCrattle = {
+    -- pathUTC .. "rattle.ogg",
+    pathUTC .. "rattle1.ogg",
+    pathUTC .. "rattle2.ogg",
+    pathUTC .. "rattle3.ogg",
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -384,9 +373,10 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "chpull.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "chrelease.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chpull.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chrelease.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -400,28 +390,30 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
 		MinProgress = 0.5,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },    
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
 		MinProgress = 0.5,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
@@ -448,10 +440,10 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -465,11 +457,11 @@ SWEP.Animations = {
         Source = "reload_empty",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "boltcatch.ogg", t = 41 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 41 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -484,10 +476,10 @@ SWEP.Animations = {
         Source = "reload_20",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -501,11 +493,11 @@ SWEP.Animations = {
         Source = "reload_empty_20",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -520,10 +512,10 @@ SWEP.Animations = {
         Source = "reload_l",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -537,11 +529,11 @@ SWEP.Animations = {
         Source = "reload_empty_l",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -557,10 +549,10 @@ SWEP.Animations = {
 		MinProgress = 0.65,
 		Mult = 0.9,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -575,11 +567,11 @@ SWEP.Animations = {
 		MinProgress = 0.65,
 		Mult = 0.9,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -594,10 +586,10 @@ SWEP.Animations = {
         Source = "reload_l60",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -611,11 +603,11 @@ SWEP.Animations = {
         Source = "reload_empty_l60",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -630,11 +622,11 @@ SWEP.Animations = {
         Source = "reload_drum",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
-            { s = shootsoundm .. "03.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -648,11 +640,11 @@ SWEP.Animations = {
         Source = "reload_empty_drum",
 		MinProgress = 0.65,
         EventTable = {
-            { s = reloadsound .. "reload_lift.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
-            { s = relsound .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -669,9 +661,11 @@ SWEP.Animations = {
         FireASAP = true,
 		MinProgress = 0.925,
         EventTable = {
-            { s = "uplp_temp/ar15/inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = "uplp_temp/ar15/inspect_02.wav", t = 40 / 30, c = ca, v = 0.8 },
-            { s = "uplp_temp/ar15/inspect_03.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -686,9 +680,11 @@ SWEP.Animations = {
         FireASAP = true,
 		MinProgress = 0.925,
         EventTable = {
-            { s = "uplp_temp/ar15/inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = "uplp_temp/ar15/inspect_02.wav", t = 40 / 30, c = ca, v = 0.8 },
-            { s = "uplp_temp/ar15/inspect_03.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
