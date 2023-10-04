@@ -36,7 +36,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+"[DMR]XQAAAQApAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIjx/pIvmdenI/8JVrKJUJDJ1oXEOYm+mbFBNJutuKsEEsFIVli2ifRL9NQsvT4TuqHGKzAZxdiG+Yci/l3Dx4texC/na8LkRRl8EJLQ2y+tOPXJ2Nintg6fDf6QA=",
+"[DMR Contractor]XQAAAQBJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIjx/pIvmdenI/8JVrKJUJDJ1oXEOYm+mbFBKl6h54Jaf4IZsE6SHDLTxwdDrTP/aHB+ANGjrxs2DLwajzIOh4vGsoZ4F6PO6mu7PXzc1FiM+EiRkksMkb0IjNgrLbeYNz",
+"[PDW]XQAAAQBIAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrhNSLUBBujQiIF9ERDf4Df6CBLth9nEHELhYBtdlz6c3XHqmTVDvflLVYIBJYEgLFhqcp/I33s30yfc+RbrE/Vs+09yqOJ1L4nAzynu+Stj4uWgLRM+Of1h0Zzmn2Xb5UTia3oTHyvYRRWBHOJH61XhhiDW0vR/Mn",
 }
 
 SWEP.DefaultBodygroups = "00000010" -- Might as well prepare for the future
@@ -158,7 +160,7 @@ SWEP.RecoilModifierCapSights = 0.1
 SWEP.SpeedMult = 0.9 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.65 -- When aiming
 
-SWEP.AimDownSightsTime = 0.5 -- Time it takes to fully enter ADS
+SWEP.AimDownSightsTime = 0.55 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.4 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
@@ -221,12 +223,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(12.5, 32.5, 5)
+SWEP.CustomizePos = Vector(13.5, 45, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(12.5, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(13.5, -2, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(2.5, 15, 0)
+SWEP.CustomizeSnapshotFOV = 70
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -261,6 +263,9 @@ shootsound .. "04.ogg",
 shootsound .. "05.ogg",
 shootsound .. "06.ogg",
 }
+
+-- SWEP.ShootSound = { "mistake.ogg" }
+
 
 SWEP.DistantShootSound = {	shootsound .. "dist-01.ogg",	
 shootsound .. "dist-02.ogg",
@@ -693,16 +698,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    -- if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] then
-        -- if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
-            -- mdl:SetBodygroup(1,1)
-        -- end
-    -- end
-	
-    -- if eles["uplp_ar15_gasblock"] then
-		-- mdl:SetBodygroup(8, 0)
-	-- end
-	
+
 	local rs = eles["uplp_scar_rs"]
 	local dmr = eles["uplp_scar_brl_20"] or eles["uplp_scar_brl_20_long"]
 	local opt = eles["uplp_optic_used"]
@@ -731,6 +727,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	local lb = eles["uplp_scar_lower_b"]
 	local pdw = eles["uplp_scar_upper_pdw"] 
 	local pdwb = eles["uplp_scar_upper_pdwb"]
+	local dmr = eles["uplp_scar_upper_20"]
+	local dmrb = eles["uplp_scar_upper_20b"]
 	
 	if lb then -- If lower receiver is black
 		if ll then -- If AR-15 mag
@@ -740,18 +738,30 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
 	-- Force bodygroups to work - otherwise inconsistencies.
 	if ll then -- if AR-15 mag
-		if !pdw and !pdwb then -- if not PDW uppers
+		if pdw or pdwb then -- if not PDW upper
 			if ub then -- if black upper
-				mdl:SetBodygroup(1,3)
-		 	else
-				mdl:SetBodygroup(1,2)
-			end
-		else
-			if pdwb then -- if black upper
 				mdl:SetBodygroup(1,9)
 		 	else
 				mdl:SetBodygroup(1,8)
 			end
+		elseif dmr or dmrb then -- if DMR upper
+			if dmrb then -- if black upper
+				mdl:SetBodygroup(1,5)
+		 	else
+				mdl:SetBodygroup(1,4)
+			end
+		else
+			if pdwb then -- if black upper
+				mdl:SetBodygroup(1,3)
+		 	else
+				mdl:SetBodygroup(1,2)
+			end
+		end
+	end
+	
+	if (dmr or dmrb) then --if either DMR upper
+		if eles["uplp_scar_brl_20_long"] then -- if longer barrel
+			mdl:SetBodygroup(2,4)
 		end
 	end
 				
@@ -759,22 +769,6 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.AttachmentElements = {
-	-- LOWER RECEIVERS
-    ["uplp_scar_lower_b"] = { Bodygroups = { { 0, 1 } } },
-    ["uplp_scar_lower_l"] = { Bodygroups = { { 0, 2 } } },
-    ["uplp_scar_lower_lb"] = { Bodygroups = { { 0, 3 } } },
-
-	-- UPPER RECEIVERS
-    ["uplp_scar_upper_hb"] = { Bodygroups = { { 1, 1 } } },
-    ["uplp_scar_upper_l"] = { Bodygroups = { { 1, 2 } } },
-    ["uplp_scar_upper_lb"] = { Bodygroups = { { 1, 3 } } },
-    ["uplp_scar_upper_20"] = { Bodygroups = { { 1, 4 } } },
-    ["uplp_scar_upper_20b"] = { Bodygroups = { { 1, 5 } } },
-    -- ["uplp_scar_upper_pdw"] = { Bodygroups = { { 1, 6 } } },
-    -- ["uplp_scar_upper_pdwb"] = { Bodygroups = { { 1, 7 } } },
-    ["uplp_scar_upper_pdw"] = { Bodygroups = { { 1, 8 } } },
-    ["uplp_scar_upper_pdwb"] = { Bodygroups = { { 1, 9 } } },
-
 	-- BARRELS
     ["uplp_scar_brl_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
 	[7] = { Pos = Vector(-0.06, 1.475, 17.65) },
@@ -797,6 +791,22 @@ SWEP.AttachmentElements = {
 	[7] = { Pos = Vector(-0.06, 1.525, 30) },
 	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
 	}},
+
+	-- LOWER RECEIVERS
+    ["uplp_scar_lower_b"] = { Bodygroups = { { 0, 1 } } },
+    ["uplp_scar_lower_l"] = { Bodygroups = { { 0, 2 } } },
+    ["uplp_scar_lower_lb"] = { Bodygroups = { { 0, 3 } } },
+
+	-- UPPER RECEIVERS
+    ["uplp_scar_upper_hb"] = { Bodygroups = { { 1, 1 } } },
+    ["uplp_scar_upper_l"] = { Bodygroups = { { 1, 2 } } },
+    ["uplp_scar_upper_lb"] = { Bodygroups = { { 1, 3 } } },
+    ["uplp_scar_upper_20"] = { Bodygroups = { { 1, 4 } } },
+    ["uplp_scar_upper_20b"] = { Bodygroups = { { 1, 5 } } },
+    -- ["uplp_scar_upper_pdw"] = { Bodygroups = { { 1, 6 } } },
+    -- ["uplp_scar_upper_pdwb"] = { Bodygroups = { { 1, 7 } } },
+    ["uplp_scar_upper_pdw"] = { Bodygroups = { { 1, 8 } } },
+    ["uplp_scar_upper_pdwb"] = { Bodygroups = { { 1, 9 } } },
 
     -- STOCKS
     ["uplp_scar_stock_lb"] = { Bodygroups =      { { 3, 1 } } },
@@ -845,7 +855,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_scar_stock"},
-        DefaultIcon = Material(defatt2 .. "arstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.06, 0.99, -2.98),
         Ang = Angle(90, 90, 180),
@@ -862,7 +872,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_scar_barrel"},
-        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarbr.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.06, 1.3, 8),
         Ang = Angle(90, 90, 180),
@@ -872,27 +882,29 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_scar_barrel_dmr"},
-        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarbr.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.06, 1.3, 8),
         Ang = Angle(90, 90, 180),
 		-- ExcludeElements = {""},
 		RequireElements = {"uplp_scar_upper_dmr"},
-		Installed = "uplp_scar_brl_20",
-		Integral = "uplp_scar_brl_20",
+		-- Installed = "uplp_scar_brl_20",
+		-- Integral = "uplp_scar_brl_20",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_muzzle"},
+        Category = {"uplp_muzzle", "uplp_scar_muzzle"},
         Bone = "body",
         Pos = Vector(-0.06, 1.475, 21.5),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(1, 0, 0),
+		Installed = "uplp_scar_mz",
+		ExcludeElements = {"uplp_scar_brl_20_long"}
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver_upper"),
         Category = {"uplp_scar_upper"},
-        DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarupper.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.06, 1, 3),
         Ang = Angle(90, 90, 180),
@@ -909,7 +921,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver_lower"),
         Category = {"uplp_scar_lower"},
-        DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarlower.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.06, 3, 3),
         Ang = Angle(90, 90, 180),
@@ -927,7 +939,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_scar_mag"},
-        DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarmag.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(-0.06, -1.8, -1.8),
         Ang = Angle(90, 90, 180),

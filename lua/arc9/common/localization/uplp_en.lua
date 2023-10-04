@@ -1587,19 +1587,6 @@ L["uplp_weapon_scar_pdw"] = "XAR PDW"
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
 /////////// Attachments
-////// Configurations -- Unused - leave be anyway; If translation file, remove or translate, doesn't matter.
-L["uplp_scar_config_l.printname"] = "XAR Light Configuration"
-L["uplp_scar_config_l.compactname"] = "Light"
-L["uplp_scar_config_l.description"] = "Configures the XAR into its Light configuration.\n- Allows the installation of <color=160,160,255>AR-15 mags</color>."
-
-L["uplp_scar_config_pdw.printname"] = "XAR PDW Configuration"
-L["uplp_scar_config_pdw.compactname"] = "PDW"
-L["uplp_scar_config_pdw.description"] = "Configures the XAR into its PDW configuration.\n- Allows the installation of <color=160,160,255>AR-15 mags</color>.\n- Removes the ability to equip <color=255,100,100>Barrels</color>.\n"
-
-L["uplp_scar_config_ssr.printname"] = "XAR SSR Configuration"
-L["uplp_scar_config_ssr.compactname"] = "PDW"
-L["uplp_scar_config_ssr.description"] = "Configures the XAR into its SSR configuration.\n- Allows the installation of <color=160,160,255>SSR Barrels</color>.\n- Removes the ability to equip <color=255,100,100>the XAR Iron Sights</color>.\n- Restricts the firing mode to <color=255,100,100>semi-automatic only</color>."
-
 ////// Lower Receiver
 L["uplp_scar_lower_b.printname"] = "Black Lower Receiver"
 L["uplp_scar_lower_b.compactname"] = "Black"
@@ -1718,3 +1705,8 @@ L["uplp_scar_pgrip_b.description"] = "Standard pistol grip used on the XAR but p
 L["uplp_scar_is.printname"] = "XAR Iron Sights"
 L["uplp_scar_is.compactname"] = "XAR IS"
 L["uplp_scar_is.description"] = "Standard flip-up iron sights used on the XAR."
+
+////// Muzzles
+L["uplp_scar_mz.printname"] = "XAR Muzzle Brake"
+L["uplp_scar_mz.compactname"] = "XAR MB"
+L["uplp_scar_mz.description"] = "Standard muzzle brake on the XAR."

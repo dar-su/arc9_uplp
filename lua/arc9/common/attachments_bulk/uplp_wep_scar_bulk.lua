@@ -40,42 +40,6 @@ ATT.ActivateElements = {"uplp_scar_upper_hb"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_hb")
 
-///////////////////////////////////////      uplp_scar_upper_l
-
--- ATT = {}
-
--- ATT.PrintName = "Light Upper"
--- ATT.CompactName = "Light"
--- ATT.Description = ATT.PrintName
--- ATT.SortOrder = 2
-
--- ATT.Icon = Material(iconfolder .. "REPLACEME.png", "mips smooth")
-
--- ATT.Category = "uplp_scar_upper"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
--- ATT.ActivateElements = {"uplp_scar_upper_l"}
-
--- ARC9.LoadAttachment(ATT, "uplp_scar_upper_l")
-
-///////////////////////////////////////      uplp_scar_upper_lb
-
--- ATT = {}
-
--- ATT.PrintName = "Light Upper (Black)"
--- ATT.CompactName = "Light (B)"
--- ATT.Description = ATT.PrintName
--- ATT.SortOrder = 2
-
--- ATT.Icon = Material(iconfolder .. "rec/b.png", "mips smooth")
-
--- ATT.Category = "uplp_scar_upper"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
-
--- ATT.ActivateElements = {"uplp_scar_upper_lb"}
-
--- ARC9.LoadAttachment(ATT, "uplp_scar_upper_lb")
-
 ///////////////////////////////////////      uplp_scar_upper_20
 
 ATT = {}
@@ -90,7 +54,16 @@ ATT.Icon = Material(iconfolder .. "rec/dmr.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_upper_dmr"}
+/// Positives
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.3
+ATT.RecoilMult = 0.8
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20")
@@ -109,7 +82,16 @@ ATT.Icon = Material(iconfolder .. "rec/dmrb.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_upper_dmr"}
+/// Positives
+ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.3
+ATT.RecoilMult = 0.8
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.2
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20b")
@@ -180,20 +162,20 @@ ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
 ///////////////////////////////////////      uplp_scar_brl_20
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "510mm DMR Barrel"
-ATT.CompactName = "510mm DMR"
-ATT.Description = ATT.PrintName
+-- ATT.PrintName = "510mm DMR Barrel"
+-- ATT.CompactName = "510mm DMR"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 
-ATT.Category = "uplp_scar_barrel_dmr"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.Category = "uplp_scar_barrel_dmr"
+-- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"uplp_scar_brl_20", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
+-- ATT.ActivateElements = {"uplp_scar_brl_20", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
 
-ARC9.LoadAttachment(ATT, "uplp_scar_brl_20")
+-- ARC9.LoadAttachment(ATT, "uplp_scar_brl_20")
 
 ///////////////////////////////////////      uplp_scar_brl_20_long
 
@@ -209,6 +191,18 @@ ATT.Category = "uplp_scar_barrel_dmr"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_20_long", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
+
+ATT.Attachments = {
+    {
+		PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_muzzle", "uplp_scar_muzzle"},
+        Bone = "body",
+        Pos = Vector(-22, 0, 0.225),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_scar_mz",
+		Icon_Offset = Vector(1, 0, 0),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
@@ -788,3 +782,23 @@ ATT.ActivateElements = {"uplp_scar_is"}
 ATT.ExcludeElements = {"uplp_scar_no_is"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_is")
+
+////////////////////      MUZZLES
+///////////////////////////////////////      uplp_scar_mz
+
+ATT = {}
+
+ATT.PrintName = "XAR Muzzle Brake"
+ATT.CompactName = "XAR MB"
+ATT.Description = ATT.PrintName
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_scar_heavy.mdl"
+
+ATT.Icon = Material(iconfolder .. "mz.png", "mips smooth")
+
+ATT.Category = "uplp_scar_muzzle"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ActivateElements = {"uplp_scar_mz"}
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mz")

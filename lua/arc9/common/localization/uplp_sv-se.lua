@@ -1706,3 +1706,8 @@ L["uplp_scar_pgrip_b.description"] = "Standard pistolgrepp som används på XAR 
 L["uplp_scar_is.printname"] = "XAR Järn och Korn"
 L["uplp_scar_is.compactname"] = "XAR JK"
 L["uplp_scar_is.description"] = "Standard flip-up-sikte som används på XAR."
+
+////// Muzzles
+L["uplp_scar_mz.printname"] = "XAR Mynningsbroms"
+L["uplp_scar_mz.compactname"] = "XAR MB"
+L["uplp_scar_mz.description"] = "Standard mynningsbroms till XAR."
