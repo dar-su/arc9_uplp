@@ -162,7 +162,7 @@ L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
 ///////////////////////////// Universal Attachments
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
-L["uplp_optic_553.compactname"] = "500S M"
+L["uplp_optic_553.compactname"] = "500S"
 L["uplp_optic_553.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™."
 
 L["uplp_optic_kobra.printname"] = "Kobra Collimator"
@@ -250,8 +250,24 @@ L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x magnifiering."
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holografiskt Sikte med Förstoringsglas"
-L["uplp_optic_hhs1.compactname"] = "500S M"
+L["uplp_optic_hhs1.compactname"] = "500S F."
 L["uplp_optic_hhs1.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™.\nKommer med ett förstoringsglas som kan flyttas till sidan när den inte används."
+
+L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holografiskt Sikte med Förstoringsglas"
+L["uplp_optic_hhs2.compactname"] = "10S F."
+L["uplp_optic_hhs2.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™.\nKommer med ett förstoringsglas som kan flyttas till sidan när den inte används."
+
+L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
+L["uplp_optic_exps.compactname"] = "10S"
+L["uplp_optic_exps.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™."
+
+L["uplp_optic_devo.printname"] = "WraithSight™ Elite-Rödpunktsikte"
+L["uplp_optic_devo.compactname"] = "Wraith"
+L["uplp_optic_devo.description"] = "Rödpunktsikte av hög kvalitet gjort av Elite-avdelningen på WraithSight™."
+
+L["uplp_optic_devom.printname"] = "WraithSight™ Elite-Rödpunktsikte med WraithSight™ O-U-Förstoringsglas"
+L["uplp_optic_devom.compactname"] = "Wraith + O-U"
+L["uplp_optic_devom.description"] = "Rödpunktsikte av hög kvalitet gjort av Elite-avdelningen på WraithSight™.\nKommer med deras Over-Under™-förstoringsglas."
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"

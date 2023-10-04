@@ -103,17 +103,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1.75
-SWEP.RecoilUp = 0.7
+SWEP.Recoil = 1.25
+SWEP.RecoilUp = 0.6
 SWEP.RecoilSide = 1.65
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1.1
+SWEP.RecoilRandomUp = 1.1
+SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.75
+SWEP.RecoilAutoControl = 1.35
 
 SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
@@ -841,6 +841,7 @@ SWEP.Attachments = {
         Installed = "uplp_scar_is",
         Pos = Vector(-0.06, -0.45, -0.1),
         Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_no_backup"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),

@@ -1446,7 +1446,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 ATT = {}
 
 ATT.PrintName = "SightLine™ 500 Series Holographic Sight with Magnifier"
-ATT.CompactName = "500S M"
+ATT.CompactName = "500S M."
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -1469,7 +1469,7 @@ ATT.Sights = {
         ViewModelFOV = 57
     },
     {
-        Pos = Vector(0, 10, -1.46),
+        Pos = Vector(0, 10, -1.4675),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30
@@ -1512,3 +1512,253 @@ ATT.SprintToFireTimeMult = 1.1
 ATT.ModelOffset = Vector(0.25, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs1")
+
+
+///////////////////////////////////////      uplp_optic_hhs2
+
+
+ATT = {}
+
+ATT.PrintName = "SightLine™ 10S Holographic Sight with Magnifier"
+ATT.CompactName = "10S M."
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+
+ATT.Icon = Material(iconfolder .. "hhs2.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_hhs2.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -1.75),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ShadowPos = Vector(16,0,0),
+        Disassociate = true,
+        Blur = true,
+        ViewModelFOV = 57
+    },
+    {
+        Pos = Vector(0, 11.5, -1.675),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30
+    },
+}
+
+ATT.DrawFunc = function(swep, model, wm) 
+    if !wm then
+        model:SetBodygroup(1, 2-swep:GetMultiSight())
+    end
+end
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 800
+ATT.HoloSightColorable = true
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 3
+ATT.RTScopeFOV = 57/4
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.RTScopeReticleScale = 1
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ModelOffset = Vector(0.25, 0, -0.1)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_hhs2")
+
+
+///////////////////////////////////////      uplp_optic_exps
+
+
+ATT = {}
+
+ATT.PrintName = "SightLine™ 10S Holographic Sight" -- EoTech EXPS
+ATT.CompactName = "10S"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "exps.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_exps.mdl"
+ATT.FoldSights = true
+
+ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.05
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -1.75),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 800
+ATT.HoloSightColorable = true
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ModelOffset = Vector(0, 0, -0.1)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_exps")
+
+
+///////////////////////////////////////      uplp_optic_devo
+
+
+ATT = {}
+
+ATT.PrintName = "WraithSight Elite Red Dot" -- Leupold D-Evo Red Dot
+ATT.CompactName = "Wraith"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "devo.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_devo.mdl"
+ATT.FoldSights = true
+
+ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.05
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -1.4),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 1600
+ATT.HoloSightColorable = true
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ModelOffset = Vector(0, 0, -0.1)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_devo")
+
+
+///////////////////////////////////////      uplp_optic_devom
+
+
+ATT = {}
+
+ATT.PrintName = "WraithSight Elite Red Dot with WraithSight O-U Magnifier"
+ATT.CompactName = "Wraith + O-U"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+
+ATT.Icon = Material(iconfolder .. "devom.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_devo_magnif.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -1.4),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        Disassociate = false,
+        Blur = true,
+        ViewModelFOV = 57,
+        NoSensAdjustment = true,
+    },
+    {
+        Pos = Vector(0, 8, -0.83),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+		Blue = false,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 800
+ATT.HoloSightColorable = true
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 4
+ATT.RTScopeFOV = 30/4
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/devo.png", "mips smooth")
+ATT.RTScopeReticleScale = 1
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+ATT.ScopeScreenRatio = 0.66
+ATT.RTScopeNoBlur = true
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ModelOffset = Vector(1.5, 0, -0.1)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_devom")
+

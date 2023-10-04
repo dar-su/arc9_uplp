@@ -250,8 +250,24 @@ L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight with Magnifier"
-L["uplp_optic_hhs1.compactname"] = "500S"
+L["uplp_optic_hhs1.compactname"] = "500S M."
 L["uplp_optic_hhs1.description"] = "Military-grade holografic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
+
+L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holographic Sight with Magnifier"
+L["uplp_optic_hhs2.compactname"] = "10S M."
+L["uplp_optic_hhs2.description"] = "Military-grade holografic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
+
+L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
+L["uplp_optic_exps.compactname"] = "10S"
+L["uplp_optic_exps.description"] = "Military-grade holographic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
+
+L["uplp_optic_devo.printname"] = "WraithSight™ Elite Red Dot"
+L["uplp_optic_devo.compactname"] = "Wraith"
+L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite division at WraithSight™."
+
+L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot with WraithSight™ O-U Magnifier"
+L["uplp_optic_devom.compactname"] = "Wraith + O-U"
+L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™.\nComes with their Over-Under™ Magnifier."
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
