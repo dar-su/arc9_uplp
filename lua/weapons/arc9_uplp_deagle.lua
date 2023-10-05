@@ -423,7 +423,7 @@ SWEP.Animations = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
             { s = pathUT .. "magin.ogg", t = 50 / 60, c = ca },
-            { s = pathUTС .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
+            { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
@@ -444,7 +444,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
             { s = pathUT .. "magin.ogg", t = 60 / 60, c = ca },
             { s = pathUT .. "chamber.ogg", t = 75 / 60, c = ca },
-            { s = pathUTС .. "magpouch_replace_small.ogg", t = 85 / 60, c = ca },
+            { s = pathUTC .. "magpouch_replace_small.ogg", t = 85 / 60, c = ca },
 
             {hide = 1, t = 0},
             {hide = 3, t = 0.66},
@@ -467,7 +467,7 @@ SWEP.Animations = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
             { s = pathUT .. "magin.ogg", t = 65 / 60, c = ca },
-            { s = pathUTС .. "magpouch_replace_small.ogg", t = 90 / 60, c = ca },
+            { s = pathUTC .. "magpouch_replace_small.ogg", t = 90 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.733}
@@ -488,7 +488,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
             { s = pathUT .. "magin.ogg", t = 75 / 60, c = ca },
             { s = pathUT .. "chamber.ogg", t = 85 / 60, c = ca },
-            { s = pathUTС .. "magpouch_replace_small.ogg", t = 100 / 60, c = ca },
+            { s = pathUTC .. "magpouch_replace_small.ogg", t = 100 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 3, t = 0.733},
             {hide = 1, t = 1.07},
@@ -508,10 +508,10 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = pathUTС .. "cloth_2.ogg", t = 5 / 30, c = ca },
-            { s = pathUTС .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
-            { s = pathUTС .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
-            { s = pathUTС .. "cloth_1.ogg", t = 92 / 30, c = ca },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
+            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
+            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
+            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -524,10 +524,10 @@ SWEP.Animations = {
     ["inspect_empty"] = {
         Source = "inspect_empty",
         EventTable = {
-            { s = pathUTС .. "cloth_2.ogg", t = 5 / 30, c = ca },
-            { s = pathUTС .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
-            { s = pathUTС .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
-            { s = pathUTС .. "cloth_1.ogg", t = 92 / 30, c = ca },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
+            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
+            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
+            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -586,8 +586,6 @@ SWEP.AttachmentElements = {
     ["uplp_deag_muzzle_cut"] = { Bodygroups = { { 6, 1 } } },
     ["uplp_deag_muzzle_heavy"] = { Bodygroups = { { 6, 2 } } },
     ["uplp_deag_muzzle_tri"] = { Bodygroups = { { 6, 3 } } },
-
-    -- ["uplp_ak_brl_12"] =   { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -597,7 +595,6 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_small", "uplp_optic_mid"},
-        -- Category = {"uplp_optic_small"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -3, 5),
@@ -652,44 +649,4 @@ SWEP.Attachments = {
         Pos = Vector(0, -1.05, 7),
         Ang = Angle(90, 90, 0),
     },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        -- Category = {"uplp_backup_optic"},
-        -- DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
-        -- Bone = "body",
-        -- Pos = Vector(0, -3.05, 6),
-        -- Ang = Angle(90, 90, 180),
-        -- ExtraSightDistance = 7,
-		-- ExcludeElements = {"uplp_no_backup"},
-		-- Icon_Offset = Vector(-1, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        -- Category = {"uplp_backup_optic_front"},
-        -- DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
-        -- Bone = "body",
-        -- Pos = Vector(0, -3.05, 8),
-        -- Ang = Angle(90, 90, 180),
-        -- RequireElements = {"uplp_backup_optic_is"},
-        -- Installed = "uplp_backup_optic_is_front",
-        -- Integral = "uplp_backup_optic_is_front",
-		-- Hidden = true,
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert"},
-        -- Bone = "body",
-        -- Pos = Vector(0, -1.35, 7.5),
-        -- Ang = Angle(90, 90, 180),
-    -- },
-
-    -- {
-    --     PrintName = "Tactical",
-    --     Slot = {"lowpoly_tac"},
-    --     Bone = "Body",
-    --     Offset = {
-    --         vpos = Vector(0, 0.3, 15),
-    --         vang = Angle(90, 0, 90),
-    --     },
-    -- },
 }
