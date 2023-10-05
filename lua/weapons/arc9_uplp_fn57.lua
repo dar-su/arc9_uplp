@@ -230,17 +230,6 @@ SWEP.DropMagazineAng = Angle(80, 90, 0)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
 //// Sounds
-local path = "weapons/arccw/xhr50/"
-local path556 = path
-local reloadsound = "uplp_temp/ar15/reload/wpfoly_m4_"
-local shootsoundsupp = "uplp_temp/ak/shoot/suppressed/h1_wpn_supp_ar1_"
-
-local reloadfn57 = "uplp_temp/fn57/reload/"
-local shootfn57 = "uplp_temp/fn57/fire/rzenith_57_"
-
-
-
-
 
 local pathRZ = "uplp_rz/57/"
 -- urbna!
@@ -364,6 +353,13 @@ local mechh = {
     pathUT .. "mech-06.ogg",
 }
 
+local UTCrattle = {
+    pathUTC .. "pistol_rattle_1.ogg",
+    pathUTC .. "pistol_rattle_2.ogg",
+    pathUTC .. "pistol_rattle_3.ogg",
+    pathUTC .. "pistol_rattle_4.ogg",
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -377,10 +373,9 @@ SWEP.Animations = {
         Source = "ready",
         Mult = 1.1,
         EventTable = {
-            { s = rottle, t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "up.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "draw.ogg", t = 5 / 60, c = ca },
-            { s = reloadfn57 .. "reload3.ogg", t = 25 / 60, c = ca },
+            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidepull.ogg", t = 5 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidedrop.ogg", t = 20 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -394,7 +389,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            {s = reloadfn57 .. "draw.ogg", t = 0.05},
+            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -407,7 +402,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            {s = reloadfn57 .. "draw.ogg", t = 0.05},
+            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -421,7 +416,7 @@ SWEP.Animations = {
         Source = "holster",
 		MinProgress = 0.5,
         EventTable = {
-            {s = reloadfn57 .. "holster.ogg", t = 0},
+            {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -435,7 +430,7 @@ SWEP.Animations = {
         Source = "holster_empty",
 		MinProgress = 0.5,
         EventTable = {
-            {s = reloadfn57 .. "holster.ogg", t = 0},
+            {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -467,10 +462,10 @@ SWEP.Animations = {
         Source = "reload",
 		MinProgress = 0.55,
         EventTable = {
-            { s = reloadfn57 .. "handling.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload1.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload2.ogg", t = 25 / 60, c = ca },
-            { s = reloadfn57 .. "handling.ogg", t = 55 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 25 / 60, c = ca },
+            { s = pathUTС .. "magpouch_replace_small.ogg", t = 55 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
@@ -487,11 +482,11 @@ SWEP.Animations = {
         Source = "reload_empty",
 		MinProgress = 0.7,
         EventTable = {
-            { s = reloadfn57 .. "handling.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload1.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload2.ogg", t = 25 / 60, c = ca },
-            { s = reloadfn57 .. "reload3.ogg", t = 45 / 60, c = ca },
-            { s = reloadfn57 .. "handling.ogg", t = 60 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 25 / 60, c = ca },
+            { s = pathUT .. "slide_rel_new.ogg", t = 45 / 60, c = ca },
+            { s = pathUTС .. "magpouch_replace_small.ogg", t = 60 / 60, c = ca },
 
             {hide = 1, t = 0},
             {hide = 3, t = 0.66},
@@ -511,10 +506,10 @@ SWEP.Animations = {
         Source = "reload_ext",
 		MinProgress = 0.55,
         EventTable = {
-            { s = reloadfn57 .. "handling.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload1.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload2.ogg", t = 35 / 60, c = ca },
-            { s = reloadfn57 .. "handling.ogg", t = 55 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 35 / 60, c = ca },
+            { s = pathUTС .. "magpouch_replace_small.ogg", t = 55 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.733}
@@ -531,11 +526,11 @@ SWEP.Animations = {
         Source = "reload_empty_ext",
 		MinProgress = 0.7,
         EventTable = {
-            { s = reloadfn57 .. "handling.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload1.ogg", t = 0 / 60, c = ca },
-            { s = reloadfn57 .. "reload2.ogg", t = 35 / 60, c = ca },
-            { s = reloadfn57 .. "reload3.ogg", t = 55 / 60, c = ca },
-            { s = reloadfn57 .. "handling.ogg", t = 70 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 35 / 60, c = ca },
+            { s = pathUT .. "slide_rel_new.ogg", t = 55 / 60, c = ca },
+            { s = pathUTС .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 3, t = 0.733},
             {hide = 1, t = 1.07},
@@ -555,9 +550,10 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = reloadfn57 .. "up.ogg", t = 5 / 30, c = ca },
-            { s = reloadfn57 .. "inspect1.ogg", t = 54 / 30, c = ca },
-            { s = reloadfn57 .. "inspect2.ogg", t = 92 / 30, c = ca },
+            { s = pathUTС .. "cloth_2.ogg", t = 5 / 30, c = ca },
+            { s = pathUTС .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
+            { s = pathUTС .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
+            { s = pathUTС .. "cloth_1.ogg", t = 92 / 30, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -570,9 +566,10 @@ SWEP.Animations = {
     ["inspect_empty"] = {
         Source = "inspect_empty",
         EventTable = {
-            { s = reloadfn57 .. "down.ogg", t = 0 / 30, c = ca },
-            { s = reloadfn57 .. "inspect1.ogg", t = 54 / 30, c = ca },
-            { s = reloadfn57 .. "inspect2.ogg", t = 92 / 30, c = ca },
+            { s = pathUTС .. "cloth_2.ogg", t = 5 / 30, c = ca },
+            { s = pathUTС .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
+            { s = pathUTС .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
+            { s = pathUTС .. "cloth_1.ogg", t = 92 / 30, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

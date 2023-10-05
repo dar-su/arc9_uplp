@@ -235,16 +235,6 @@ SWEP.DropMagazineAng = Angle(0, 0, 0)
 SWEP.DropMagazineVelocity = Vector(0, 80, -80)
 
 //// Sounds
-local path556 = "weapons/arccw/xhr50/"
-
-local pathsound = "uplp_temp/ak/"
-local pathreloadsound = pathsound .. "reload/wpfoly_ak47_reload_"
-
-local pathsoundshoot = "uplp_temp/molot/"
-local shootsoundsupp = pathsoundshoot .. "shoot/suppressed/h1_wpn_supp_ar1_"
-local shootsound = pathsoundshoot .. "shoot/wpn_h1_m1014_"
-
-
 
 -- urbna!
 local pathUT = "uplp_urban_temp/vepr/"
@@ -379,6 +369,13 @@ local mechh = {
     pathUT .. "mech-06.ogg",
 }
 
+local UTCrattle = {
+    -- pathUTC .. "rattle.ogg",
+    pathUTC .. "rattle1.ogg",
+    pathUTC .. "rattle2.ogg",
+    pathUTC .. "rattle3.ogg",
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -390,9 +387,11 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "chamber_v4.wav", t = 4 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 15 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 18 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -406,7 +405,8 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 6 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -414,13 +414,14 @@ SWEP.Animations = {
 		MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 6 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -428,7 +429,7 @@ SWEP.Animations = {
 		MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
     },    
 
@@ -456,10 +457,10 @@ SWEP.Animations = {
 		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 20 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 37.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 37.5 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.25},
             {hide = 2, t = 0.86},
@@ -478,11 +479,11 @@ SWEP.Animations = {
 		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 20 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 37.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "chamber_v4.wav", t = 52.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 62.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 52.5 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 62.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.25},
             {hide = 2, t = 0.86},
@@ -504,10 +505,10 @@ SWEP.Animations = {
 		MinProgress= 0.75,
 		-- Mult = 1.15,
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 60 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.35},
@@ -526,11 +527,11 @@ SWEP.Animations = {
 		MinProgress= 0.825,
 		-- Mult = 1.15,
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "chamber_v4.wav", t = 67.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 72.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 67.5 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 72.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.35},
@@ -553,11 +554,11 @@ SWEP.Animations = {
         MagSwapTime = 1.3,
 		-- Mult = 1.15,
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 15 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 82.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 62.5 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 82.5 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -573,12 +574,13 @@ SWEP.Animations = {
         MagSwapTime = 1.3,
 		-- Mult = 1.15,
         EventTable = {
-            { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 15 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "chamber_v4.wav", t = 87.5 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "lift_v4.wav", t = 95 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 62.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 80 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 90 / 30, c = ca, v = 0.8 },
+            -- { s = UTCrattle, t = 95 / 30, c = ca, v = 0.8 },
             {hide = 0, t = 0.3},
             {hide = 2, t = 0.85},
         },
@@ -597,9 +599,11 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -615,9 +619,11 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -634,9 +640,11 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -652,9 +660,11 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -671,9 +681,11 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -690,12 +702,10 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "movement-rifle-02.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -712,12 +722,10 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 55 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "movement-rifle-02.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -734,12 +742,10 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 57.5 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "movement-rifle-02.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -755,12 +761,10 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 14 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 57.5 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "movement-rifle-02.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -777,12 +781,10 @@ SWEP.Animations = {
         -- MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
-            { s = pathsound .. "inspect_01.wav", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipout_v5.wav", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_grab.wav", t = 62.5 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_03.wav", t = 65 / 30, c = ca, v = 0.8 },
-            { s = pathsound .. "inspect_02.wav", t = 120 / 30, c = ca, v = 0.8 },
-            { s = pathreloadsound .. "clipin_v4.wav", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 14 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "movement-rifle-02.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 120 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
