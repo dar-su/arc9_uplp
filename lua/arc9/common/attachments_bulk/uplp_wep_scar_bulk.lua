@@ -399,6 +399,12 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20_black.mdl"
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
 /// Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
@@ -421,6 +427,46 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_20_68")
 
 ///////////////////////////////////////      uplp_scar_mag_hk
 
+local pathUT = "uplp_urban_temp/scar/"
+local pathUTC = "uplp_urban_temp/common/"
+
+local shoot556 = {
+    pathUT .. "fire-556-01.ogg",
+    pathUT .. "fire-556-02.ogg",
+    pathUT .. "fire-556-03.ogg",
+    pathUT .. "fire-556-04.ogg",
+    pathUT .. "fire-556-05.ogg",
+    pathUT .. "fire-556-06.ogg",
+}
+
+local shoot556sil = {
+    pathUT .. "fire-556-sup-01.ogg",
+    pathUT .. "fire-556-sup-02.ogg",
+    pathUT .. "fire-556-sup-03.ogg",
+    pathUT .. "fire-556-sup-04.ogg",
+    pathUT .. "fire-556-sup-05.ogg",
+    pathUT .. "fire-556-sup-06.ogg",
+}
+
+local shoot556dist = {
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-04.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-05.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
+}
+
+local shoot556distindoor = {
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-04.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-05.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
+}
+
+
 ATT = {}
 
 ATT.PrintName = "30-Round 5.56x45mm (H&K)"
@@ -437,6 +483,12 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 /// Positives
 ATT.ClipSizeOverride = 30
@@ -493,6 +545,12 @@ ATT.CustomPros = {
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_20"
 end
@@ -517,6 +575,12 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 /// Positives
 ATT.ClipSizeOverride = 30
@@ -555,6 +619,12 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
 /// Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
@@ -591,6 +661,12 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 /// Positives
 ATT.ClipSizeOverride = 30
@@ -650,6 +726,12 @@ ATT.CustomCons = {
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_60"
 end
@@ -694,6 +776,12 @@ ATT.CustomCons = {
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_60"
 end
@@ -737,6 +825,12 @@ ATT.CustomCons = {
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_100"

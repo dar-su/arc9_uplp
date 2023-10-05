@@ -173,6 +173,45 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 local pathshootsound = "uplp_temp/ak/shoot/"
 local shootsound545 = pathshootsound .. "545/wpn_h1_ak74u_"
 
+local pathUT = "uplp_urban_temp/ak/"
+local pathUTC = "uplp_urban_temp/common/"
+
+local shoot545 = {
+    pathUT .. "545/fire-01.ogg",
+    pathUT .. "545/fire-02.ogg",
+    pathUT .. "545/fire-03.ogg",
+    pathUT .. "545/fire-04.ogg",
+    pathUT .. "545/fire-05.ogg",
+    pathUT .. "545/fire-06.ogg",
+}
+
+local shoot545sil = {
+    pathUT .. "545/fire-sup-01.ogg",
+    pathUT .. "545/fire-sup-02.ogg",
+    pathUT .. "545/fire-sup-03.ogg",
+    pathUT .. "545/fire-sup-04.ogg",
+    pathUT .. "545/fire-sup-05.ogg",
+    pathUT .. "545/fire-sup-06.ogg",
+}
+
+local shoot556dist = {
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-04.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-05.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
+}
+
+local shoot556distindoor = {
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-04.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-05.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
+}
+
 local ATT = {}
 
 ATT.PrintName = "30-Round 5.45x39mm (Polymer)"
@@ -186,12 +225,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -236,12 +274,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_bak.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -286,12 +323,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -336,12 +372,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_12.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -386,12 +421,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -443,12 +477,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_60.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
@@ -500,12 +533,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
 
--- ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 ATT.DropMagazineTime = 0.85
@@ -547,7 +579,23 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 -------------------------------------------
 
 -----5.56-----
-local shootsound556 = pathshootsound .. "556/wpn_h1_mp44_"
+local shoot556 = {
+    pathUT .. "556/fire-01.ogg",
+    pathUT .. "556/fire-02.ogg",
+    pathUT .. "556/fire-03.ogg",
+    pathUT .. "556/fire-04.ogg",
+    pathUT .. "556/fire-05.ogg",
+    pathUT .. "556/fire-06.ogg",
+}
+
+local shoot556sil = {
+    pathUT .. "556/fire-sup-01.ogg",
+    pathUT .. "556/fire-sup-02.ogg",
+    pathUT .. "556/fire-sup-03.ogg",
+    pathUT .. "556/fire-sup-04.ogg",
+    pathUT .. "556/fire-sup-05.ogg",
+    pathUT .. "556/fire-sup-06.ogg",
+}
 
 local ATT = {}
 
@@ -562,12 +610,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556.mdl"
 
-ATT.ShootSound = {shootsound556 .. "shot_01.ogg",
-shootsound556 .. "shot_02.ogg",
-shootsound556 .. "shot_03.ogg",
-shootsound556 .. "shot_04.ogg"}
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
 
-ATT.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
@@ -612,12 +659,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
-ATT.ShootSound = {shootsound556 .. "shot_01.ogg",
-shootsound556 .. "shot_02.ogg",
-shootsound556 .. "shot_03.ogg",
-shootsound556 .. "shot_04.ogg"}
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
 
-ATT.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
@@ -662,12 +708,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_12.mdl"
 
-ATT.ShootSound = {shootsound556 .. "shot_01.ogg",
-shootsound556 .. "shot_02.ogg",
-shootsound556 .. "shot_03.ogg",
-shootsound556 .. "shot_04.ogg"}
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
 
-ATT.DistantShootSound = {shootsound556 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
@@ -701,7 +746,30 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_12")
 
 
 ----- OTHER CALIBERS -----
-local shootsound308 = pathshootsound .. "308/wpn_h1_g3_"
+local shoot308 = {
+    pathUT .. "308/fire_308_1.ogg",
+    pathUT .. "308/fire_308_2.ogg",
+    pathUT .. "308/fire_308_3.ogg",
+    pathUT .. "308/fire_308_4.ogg",
+}
+
+local shoot308dist = {
+    pathUTC .. "308tails/fire-dist-308-rif-ext-01.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-02.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-03.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-04.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-05.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-06.ogg",
+}
+
+local shoot308distindoor = {
+    pathUTC .. "308tails/fire-dist-308-rif-int-01.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-int-02.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-int-03.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-int-04.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-int-05.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-int-06.ogg",
+}
 
 ATT = {}
 
@@ -715,12 +783,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_308"}
 
-ATT.ShootSound = {shootsound308 .. "shot_01.ogg",
-shootsound308 .. "shot_02.ogg",
-shootsound308 .. "shot_03.ogg",
-shootsound308 .. "shot_04.ogg"}
+ATT.ShootSound = shoot308
+-- ATT.ShootSoundSilenced = shoot308sil
 
-ATT.DistantShootSound = {shootsound308 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot308dist
+ATT.DistantShootSoundIndoor = shoot308distindoor
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_308.mdl"
 
@@ -755,6 +822,42 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 
 -------------------------------------------
 
+local shoot9 = {
+    pathUT .. "9mm/fire-9-01.ogg",
+    pathUT .. "9mm/fire-9-02.ogg",
+    pathUT .. "9mm/fire-9-03.ogg",
+    pathUT .. "9mm/fire-9-04.ogg",
+    pathUT .. "9mm/fire-9-05.ogg",
+    pathUT .. "9mm/fire-9-06.ogg",
+}
+
+local shoot9sil = {
+    pathUT .. "9mm/fire-sup-01.ogg",
+    pathUT .. "9mm/fire-sup-02.ogg",
+    pathUT .. "9mm/fire-sup-03.ogg",
+    pathUT .. "9mm/fire-sup-04.ogg",
+    pathUT .. "9mm/fire-sup-05.ogg",
+    pathUT .. "9mm/fire-sup-06.ogg",
+}
+
+local shoot9dist = {
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
+}
+
+local shoot9distindoor = {
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+}
+
 ATT = {}
 
 ATT.PrintName = "20-Round 9x39mm"
@@ -767,12 +870,11 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_939"}
 
-ATT.ShootSound = {shootsound545 .. "shot_01.ogg",
-shootsound545 .. "shot_02.ogg",
-shootsound545 .. "shot_03.ogg",
-shootsound545 .. "shot_04.ogg"}
+ATT.ShootSound = shoot9
+ATT.ShootSoundSilenced = shoot9sil
 
-ATT.DistantShootSound = {shootsound545 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot9dist
+ATT.DistantShootSoundIndoor = shoot9distindoor
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_939.mdl"
 
