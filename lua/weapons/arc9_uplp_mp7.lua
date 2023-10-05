@@ -332,7 +332,6 @@ local mechh = {
     pathUT .. "mech-06.ogg",
 }
 
-
 local UTCrattle = {
     -- pathUTC .. "rattle.ogg",
     pathUTC .. "rattle1.ogg",
@@ -340,6 +339,16 @@ local UTCrattle = {
     pathUTC .. "rattle3.ogg",
 }
 
+local thetoggle = {{
+    s = {
+        "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_03.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
+    }, t = 0
+}}
 
 SWEP.Animations = {
     ["idle"] = {
@@ -535,40 +544,44 @@ SWEP.Animations = {
 
     ["firemode_1"] = {
         Source = "firemode_0",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0 },
+        }
     },
     ["firemode_2"] = {
         Source = "firemode_1",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
+        }
     },
     ["toggle"] = {
         Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },
     ["switchsights"] = {
         Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },    
     -- same
     ["firemode_1_empty"] = {
         Source = "firemode_0_empty",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0 },
+        }
     },
     ["firemode_2_empty"] = {
         Source = "firemode_1_empty",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
+        }
     },
     ["toggle_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },
     ["switchsights_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },
 }
 

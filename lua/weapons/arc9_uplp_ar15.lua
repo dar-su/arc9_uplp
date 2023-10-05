@@ -357,6 +357,16 @@ local mechh = {
     pathUT .. "mech-06.ogg",
 }
 
+local thetoggle = {{
+    s = {
+        "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_03.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
+    }, t = 0
+}}
 
 -- Animations
 SWEP.Animations = {
@@ -866,20 +876,7 @@ SWEP.Animations = {
         EventTable = {
             { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
         }
-    },
-    ["toggle"] = {
-        Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
-    },
-    ["switchsights"] = {
-        Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
-    },    
-    -- same
+    }, 
     ["firemode_1_empty"] = {
         Source = "firemode_0_empty",
         EventTable = {
@@ -892,17 +889,23 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
         }
     },
+
+    ["toggle"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle
+    },
     ["toggle_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
+    },
+	
+    ["switchsights"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle
     },
     ["switchsights_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },
 }
 
