@@ -248,21 +248,21 @@ local pathUTC = "uplp_urban_temp/common/"
 
 
 SWEP.ShootSound = {	
-    pathUT .. "fire-762-01.ogg",
-    pathUT .. "fire-762-02.ogg",
-    pathUT .. "fire-762-03.ogg",
-    pathUT .. "fire-762-04.ogg",
-    pathUT .. "fire-762-05.ogg",
-    pathUT .. "fire-762-06.ogg",
+    pathUT .. "fire-01.ogg",
+    pathUT .. "fire-02.ogg",
+    pathUT .. "fire-03.ogg",
+    pathUT .. "fire-04.ogg",
+    pathUT .. "fire-05.ogg",
+    pathUT .. "fire-06.ogg",
 }
 
 SWEP.ShootSoundSilenced = {	
-    pathUT .. "fire-762-sup-01.ogg",
-    pathUT .. "fire-762-sup-02.ogg",
-    pathUT .. "fire-762-sup-03.ogg",
-    pathUT .. "fire-762-sup-04.ogg",
-    pathUT .. "fire-762-sup-05.ogg",
-    pathUT .. "fire-762-sup-06.ogg",
+    pathUT .. "fire-sup-01.ogg",
+    pathUT .. "fire-sup-02.ogg",
+    pathUT .. "fire-sup-03.ogg",
+    pathUT .. "fire-sup-04.ogg",
+    pathUT .. "fire-sup-05.ogg",
+    pathUT .. "fire-sup-06.ogg",
 }
 
 SWEP.DistantShootSound = {	
