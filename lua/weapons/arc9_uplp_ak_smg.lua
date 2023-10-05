@@ -270,21 +270,21 @@ SWEP.ShootSoundSilenced = {
 }
 
 SWEP.DistantShootSound = {	
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-01.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-02.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-03.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-04.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-05.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-ext-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
 }
 
 SWEP.DistantShootSoundIndoor = {	
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/ffire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
 }
 
 SWEP.DistantShootSoundSilenced = {

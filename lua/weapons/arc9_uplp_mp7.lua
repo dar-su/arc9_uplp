@@ -271,16 +271,16 @@ SWEP.DistantShootSoundIndoor = {
 }
 
 SWEP.DistantShootSoundSilenced = {
-    pathUTC .. "sup-tail-01.ogg",
-    pathUTC .. "sup-tail-02.ogg",
-    pathUTC .. "sup-tail-03.ogg",
-    pathUTC .. "sup-tail-04.ogg",
-    pathUTC .. "sup-tail-05.ogg",
-    pathUTC .. "sup-tail-06.ogg",
-    pathUTC .. "sup-tail-07.ogg",
-    pathUTC .. "sup-tail-08.ogg",
-    pathUTC .. "sup-tail-09.ogg",
-    pathUTC .. "sup-tail-10.ogg"
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
 }
 
 SWEP.DropMagazineSounds = {
