@@ -785,9 +785,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	if ll then -- if AR-15 mag
 		if pdw or pdwb then -- if not PDW upper
 			if pdwb then -- if black upper
-				mdl:SetBodygroup(1,3)
+				mdl:SetBodygroup(1,9)
 		 	else
-				mdl:SetBodygroup(1,2)
+				mdl:SetBodygroup(1,8)
 			end
 		elseif dmr or dmrb then -- if DMR upper
 			if dmrb then -- if black upper

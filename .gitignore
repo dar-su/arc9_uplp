@@ -1,2 +1,61 @@
 *.mp4
 *.blend1
+lua_backup/weapons/New folder/arc9_uplp_scar.lua
+lua_backup/weapons/New folder/arc9_uplp_mutant.lua
+lua_backup/weapons/New folder/arc9_uplp_molot.lua
+lua_backup/weapons/New folder/arc9_uplp_deagle.lua
+lua_backup/weapons/New folder/arc9_uplp_ar15.lua
+lua_backup/weapons/New folder/arc9_uplp_aksmall.lua
+lua_backup/weapons/New folder/arc9_uplp_ak12.lua
+lua_backup/weapons/New folder/arc9_uplp_ak.lua
+lua_backup/weapons/New folder/arc9_uplp_ak - Copy.lua
+lua_backup/weapons/arc9_uplp_scar.lua
+lua_backup/weapons/arc9_uplp_mutant.lua
+lua_backup/weapons/arc9_uplp_mp7.lua
+lua_backup/weapons/arc9_uplp_molot.lua
+lua_backup/weapons/arc9_uplp_fn57.lua
+lua_backup/weapons/arc9_uplp_deagle.lua
+lua_backup/weapons/arc9_uplp_base.lua
+lua_backup/weapons/arc9_uplp_awp.lua
+lua_backup/weapons/arc9_uplp_ar15.lua
+lua_backup/weapons/arc9_uplp_ak_smg.lua
+lua_backup/weapons/arc9_uplp_ak12.lua
+lua_backup/weapons/arc9_uplp_ak.lua
+lua_backup/arc9/common/localization/uplp_sv-se.lua
+lua_backup/arc9/common/localization/uplp_en.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_scar_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_mutant_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_mp7_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_molot_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_fn57_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_deagle_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_awp_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_stockbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_rsbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_recieverbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_pgripbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_magbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_hgbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_gasblockbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_fsbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_chandlebulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ar15_barrelbulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_stock.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_smg_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_muzzle.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_mag.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_handguard.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_grip.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_dustcover.lua
+lua_backup/arc9/common/attachments_bulk/uplp_wep_ak_barrel.lua
+lua_backup/arc9/common/attachments_bulk/uplp_tactical_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_optic_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_muzzle_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_grip_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_backup_optic_bulk.lua
+lua_backup/arc9/common/attachments_bulk/uplp_ammo_bulk.lua
+lua_backup/arc9/common/attachments_bulk/New folder/uplp_aksmall_bulk.lua
+lua_backup/arc9/common/attachments-toremove/uplp_ak762_mag_pmag_banana.lua
+lua_backup/arc9/common/attachments-toremove/uplp_ak762_mag_pmag.lua
+lua_backup/arc9/common/attachments-toremove/sticker_sillydance.lua
+lua_backup/arc9/common/attachments-toremove/sticker_silly.lua
