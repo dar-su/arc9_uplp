@@ -475,8 +475,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 25 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 55 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 15 / 60, c = ca },
+            { s = UTCrattle, t = 30 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
@@ -495,9 +495,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 25 / 60, c = ca },
-            { s = pathUT .. "slide_rel_new.ogg", t = 45 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 60 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 15 / 60, c = ca },
+            { s = pathUT .. "slide_rel_new.ogg", t = 40 / 60, c = ca },
+            { s = UTCrattle, t = 60 / 60, c = ca },
 
             {hide = 1, t = 0},
             {hide = 3, t = 0.66},
@@ -519,8 +519,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 35 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 55 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 22.5 / 60, c = ca },
+            { s = UTCrattle, t = 60 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.733}
@@ -539,8 +539,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 35 / 60, c = ca },
-            { s = pathUT .. "slide_rel_new.ogg", t = 55 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 27.5 / 60, c = ca },
+            { s = pathUT .. "slide_rel_new.ogg", t = 50 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 3, t = 0.733},
@@ -640,14 +640,14 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        -- Category = {"uplp_optic_pistol"},
-        Category = {""},
+        Category = {"uplp_optic_pistol"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "slide",
-        Pos = Vector(0, -0.5, -1.525),
-        ExtraSightDistance = 2,
+        Pos = Vector(0, -0.64, -1.6),
+        -- Pos = Vector(0, -2, -1.6),
+        ExtraSightDistance = 1,
         Ang = Angle(90, 90, 180),
-		Scale = 1.4
+		Scale = 1
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

@@ -24,7 +24,9 @@ ATT.Sights = {
         Pos = Vector(-1.35, 10, -0.5),
         Ang = Angle(0, -0, 45),
         Magnification = 1.15,
-        ViewModelFOV = 30
+        ViewModelFOV = 30,
+		PeekPos = Vector(0, 2, -1),
+		PeekAng = Angle(0, 0, 0),
     }
 }
 
@@ -64,7 +66,9 @@ ATT.Sights = {
         Pos = Vector(-1.525, 10, -0.6),
         Ang = Angle(0, -0, 45),
         Magnification = 1.15,
-        ViewModelFOV = 30
+        ViewModelFOV = 30,
+		PeekPos = Vector(0, 2, -1),
+		PeekAng = Angle(0, 0, 0),
     }
 }
 

@@ -211,24 +211,32 @@ L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med 
 L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
 L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor."
 
-L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte - Låg Profil"
-L["uplp_optic_d1.compactname"] = "D-1 - LP"
+L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte [Låg Profil]"
+L["uplp_optic_d1.compactname"] = "D-1 [LP]"
 L["uplp_optic_d1.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen."
 
-L["uplp_optic_d1high.printname"] = "D-1 Rödpunktsikte - Hög Profil"
-L["uplp_optic_d1high.compactname"] = "D-1 - HP"
+L["uplp_optic_d1high.printname"] = "D-1 Rödpunktsikte [Hög Profil]"
+L["uplp_optic_d1high.compactname"] = "D-1 [HP]"
 L["uplp_optic_d1high.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen.\nMonterat högre upp med en spacer."
 
 L["uplp_optic_tacrds.printname"] = "Pistol Rödpunktsikte"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
 L["uplp_optic_tacrds.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen."
 
-L["uplp_optic_rmr.printname"] = "XW Rödpunktsikte - Låg Profil"
-L["uplp_optic_rmr.compactname"] = "XW - LP"
+L["uplp_optic_tacrds_direct.printname"] = "Pistol Rödpunktsikte [Direktmonterad]"
+L["uplp_optic_tacrds_direct.compactname"] = "Pistol"
+L["uplp_optic_tacrds_direct.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen."
+
+L["uplp_optic_rmr_direct.printname"] = "XW-Rödpunktsikte [Direktmonterad]"
+L["uplp_optic_rmr_direct.compactname"] = "XW"
+L["uplp_optic_rmr_direct.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen."
+
+L["uplp_optic_rmr.printname"] = "XW-Rödpunktsikte [Låg Profil]"
+L["uplp_optic_rmr.compactname"] = "XW [LP]"
 L["uplp_optic_rmr.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen."
 
-L["uplp_optic_rmrhigh.printname"] = "XW Rödpunktsikte - Hög Profile"
-L["uplp_optic_rmrhigh.compactname"] = "XW - HP"
+L["uplp_optic_rmrhigh.printname"] = "XW-Rödpunktsikte [Hög Profil]"
+L["uplp_optic_rmrhigh.compactname"] = "XW [HP]"
 L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen.\nMonterat högre upp med en spacer."
 
 L["uplp_optic_notacog.printname"] = "3x Militärsikte"

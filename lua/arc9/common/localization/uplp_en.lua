@@ -211,24 +211,32 @@ L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope wi
 L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
 L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n- Rangefinder module that calculates how many meters away the target is.\n- Thermal imaging capability that highlights targets."
 
-L["uplp_optic_d1.printname"] = "D-1 Red Dot - Low Profile"
-L["uplp_optic_d1.compactname"] = "D-1 - LP"
+L["uplp_optic_d1.printname"] = "D-1 Red Dot [Low Profile]"
+L["uplp_optic_d1.compactname"] = "D-1 [LP]"
 L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms."
 
-L["uplp_optic_d1high.printname"] = "D-1 Red Dot - High Profile"
-L["uplp_optic_d1high.compactname"] = "D-1 - HP"
+L["uplp_optic_d1high.printname"] = "D-1 Red Dot [High Profile]"
+L["uplp_optic_d1high.compactname"] = "D-1 [HP]"
 L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms.\nMounted higher up using a spacer."
 
 L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
 L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
 
-L["uplp_optic_rmr.printname"] = "XW Red Dot - Low Profile"
-L["uplp_optic_rmr.compactname"] = "XW - LP"
+L["uplp_optic_tacrds_direct.printname"] = "Pistol Red Dot [Direct Mount]"
+L["uplp_optic_tacrds_direct.compactname"] = "Pistol"
+L["uplp_optic_tacrds_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+
+L["uplp_optic_rmr_direct.printname"] = "XW Red Dot [Direct Mount]"
+L["uplp_optic_rmr_direct.compactname"] = "XW"
+L["uplp_optic_rmr_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+
+L["uplp_optic_rmr.printname"] = "XW Red Dot [Low Profile]"
+L["uplp_optic_rmr.compactname"] = "XW [LP]"
 L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
 
-L["uplp_optic_rmrhigh.printname"] = "XW Red Dot - High Profile"
-L["uplp_optic_rmrhigh.compactname"] = "XW - HP"
+L["uplp_optic_rmrhigh.printname"] = "XW Red Dot [High Profile]"
+L["uplp_optic_rmrhigh.compactname"] = "XW [HP]"
 L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms.\nMounted higher up using a spacer."
 
 L["uplp_optic_notacog.printname"] = "3x Military Scope"

@@ -825,10 +825,87 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_pistol"}
+ATT.Category = {"uplp_optic_small"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
+
+
+///////////////////////////////////////      uplp_optic_tacrds_direct
+
+
+ATT = {}
+
+ATT.PrintName = "Pistol Red Dot [Direct Mount]" -- Tactical Red Dot [Direct Mount]
+ATT.CompactName = "Pistol"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "tacrds.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_tacrds_direct.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -0.65),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 1200
+ATT.HoloSightColorable = true
+
+ATT.Category = {"uplp_optic_pistol"}
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_optic_tacrds_direct")
+
+///////////////////////////////////////      uplp_optic_rmr_direct
+
+
+ATT = {}
+
+ATT.PrintName = "XW Red Dot [Direct Mount]" -- RMR Sight [Direct Mount]
+ATT.CompactName = "XW"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "rmr.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_rmr_direct.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -0.575),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 1200
+ATT.HoloSightColorable = true
+
+ATT.Category = {"uplp_optic_small", "uplp_optic_pistol"}
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
 
 ///////////////////////////////////////      uplp_optic_rmr
 
@@ -863,7 +940,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_pistol"}
+ATT.Category = {"uplp_optic_small"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
