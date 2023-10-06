@@ -1019,10 +1019,10 @@ SWEP.Animations = {
 
 
     ["firemode_1"] = {
-        Source = "firemode_0",
+        Source = "firemode_0_12",
     },
     ["firemode_2"] = {
-        Source = "firemode_1",
+        Source = "firemode_1_12",
     },
 	
     ["toggle"] = {
@@ -1044,7 +1044,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
+    if eles["uplp_optic_used"] or eles["uplp_backup_optic"] or eles["uplp_optic_dovetail_used"] then
         mdl:SetBodygroup(8,0)
     end
 end
@@ -1137,6 +1137,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.1, 1.5),
         Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_optic_dovetail_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
     {
@@ -1241,5 +1242,15 @@ SWEP.Attachments = {
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
+        Category = {"uplp_optic_dovetail"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.4, 2, 1.5),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_optic_used", "uplp_ak_fs_12alt"},
+        CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 }

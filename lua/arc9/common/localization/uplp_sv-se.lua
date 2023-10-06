@@ -121,6 +121,7 @@ L["uplp_category_barrel"] = "Pipa"
 L["uplp_category_backup"] = "Reservsikte"
 L["uplp_category_bipod"] = "Benstöd"
 L["uplp_category_charginghandle"] = "Manöverhandtag"
+L["uplp_category_dovetail"] = "Laxstjärt"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
@@ -286,6 +287,14 @@ L["uplp_optic_devo.description"] = "Rödpunktsikte av hög kvalitet gjort av Eli
 L["uplp_optic_devom.printname"] = "WraithSight™ Elite-Rödpunktsikte med WraithSight™ O-U-Förstoringsglas"
 L["uplp_optic_devom.compactname"] = "Wraith + O-U"
 L["uplp_optic_devom.description"] = "Rödpunktsikte av hög kvalitet gjort av Elite-avdelningen på WraithSight™.\nKommer med deras Over-Under™-förstoringsglas."
+
+L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
+L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
+L["uplp_optic_dovetail_kobra.description"] = "Militär grad reflexsikte av ryskt ursprung med ett kors hårkors.\nMonterad på sidan med en laxstjärtskena.\nKan ej utrusta <color=255,100,100>normala riktmedel eller vissa dammskydd</color>."
+
+L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
+L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
+L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering.\nMonterad på sidan med en laxstjärtskena.\nKan ej utrusta <color=255,100,100>normala riktmedel eller vissa dammskydd</color>."
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
@@ -515,7 +524,7 @@ L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på RPK-74 och 
 
 L["uplp_ak_brl_109.printname"] = "432mm AK-107 Pipa"
 L["uplp_ak_brl_109.compactname"] = "432mm 107"
-L["uplp_ak_brl_109.description"] = "Längre 432mm pipa som används på AK-1071:an med inbyggt \"Balanced Automatics Recoil System\".\n(\"Balanserad Automatiskt Rekylsystem\")"
+L["uplp_ak_brl_109.description"] = "Längre 432mm pipa som används på AK-107:an med inbyggt \"Balanced Automatics Recoil System\".\n(\"Balanserad Automatiskt Rekylsystem\")"
 
 L["uplp_ak_brl_su.printname"] = "203mm 74U-Pipa"
 L["uplp_ak_brl_su.compactname"] = "203mm 74U"

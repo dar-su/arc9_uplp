@@ -1586,7 +1586,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.ModelOffset = Vector(0.25, 0, -0.1)
+ATT.ModelOffset = Vector(0.65, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs1")
 
@@ -1660,7 +1660,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.ModelOffset = Vector(0.25, 0, -0.1)
+ATT.ModelOffset = Vector(1.3, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs2")
 
@@ -1835,7 +1835,110 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.ModelOffset = Vector(1.5, 0, -0.1)
+ATT.ModelOffset = Vector(2.25, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_devom")
 
+
+///////////////////////////////////////      uplp_optic_dovetail_kobra
+
+
+ATT = {}
+
+ATT.PrintName = "Kobra Collimator"
+ATT.CompactName = "Kobra"
+ATT.Description = ATT.PrintName
+
+ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
+
+ATT.Icon = Material(iconfolder .. "ak/kobra.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_kobra_dovetail.mdl"
+ATT.FoldSights = true
+
+ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.05
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.5, 8.5, -4.325),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 1.1)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 600
+ATT.HoloSightColorable = true
+
+ATT.Category = "uplp_optic_dovetail"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_kobra")
+
+
+///////////////////////////////////////      uplp_optic_dovetail_pso
+
+
+ATT = {}
+
+ATT.PrintName = "PSO-1 Scope"
+ATT.CompactName = "PSO-1"
+ATT.Description = ATT.PrintName
+
+ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
+ATT.ExcludeElements = {"uplp_ak_brl_su"}
+
+ATT.Icon = Material(iconfolder .. "ak/pso.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_pso.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.01, 10, -3.295),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30,
+        RTScopeFOV = 57/3,
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.8)
+end
+
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57/2
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBoxShadow = true 
+
+ATT.ScopeScreenRatio = 0.66
+
+ATT.Category = "uplp_optic_dovetail"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.35
+ATT.SprintToFireTimeMult = 1.25
+
+ATT.ModelOffset = Vector(-0.75, 0, -0.2)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_pso")

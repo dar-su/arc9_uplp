@@ -947,6 +947,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	
     if eles["uplp_ak_dc_old"] and eles["uplp_ak_stock_old"] then
         mdl:SetBodygroup(0, 1)
+		if eles["uplp_optic_dovetail_used"] then
+			mdl:SetBodygroup(7, 3)
+		end
     end
 	
 end
@@ -1087,9 +1090,9 @@ SWEP.AttachmentElements = {
     -- ["uplp_ak_stock_ppk"] =        { Bodygroups = { { 6, 18} } },
     -- ["uplp_ak_stock_ppk_f"] =      { Bodygroups = { { 6, 19} } },
 
-    ["uplp_ak_nmount"] = { Bodygroups = { { 8, 1 } } },
-    ["uplp_ak_nmount_compact"] = { Bodygroups = { { 8, 2 } } },
-    ["uplp_ak_nmount_old"] = { Bodygroups = { { 8, 3 } } },
+    ["uplp_ak_nmount"] = { Bodygroups = { { 7, 1 } } },
+    ["uplp_ak_nmount_compact"] = { Bodygroups = { { 7, 2 } } },
+    ["uplp_ak_nmount_old"] = { Bodygroups = { { 7, 3 } } },
 
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
@@ -1109,6 +1112,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.1, 1.5),
         Ang = Angle(90, 90, 180),
         RequireElements = {"use_optics"},
+		ExcludeElements = {"uplp_optic_dovetail_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
     {
@@ -1147,6 +1151,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.5, 6.5),
         Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_ak_brl_109"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
@@ -1202,5 +1207,15 @@ SWEP.Attachments = {
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
+        Category = {"uplp_optic_dovetail"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.4, 2, 1.5),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_optic_used"},
+        CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 }

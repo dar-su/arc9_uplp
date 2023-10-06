@@ -121,6 +121,7 @@ L["uplp_category_backup"] = "Backup Sight"
 L["uplp_category_barrel"] = "Barrel"
 L["uplp_category_bipod"] = "Bipod"
 L["uplp_category_charginghandle"] = "Charging Handle"
+L["uplp_category_dovetail"] = "Dovetail"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Foregrip"
@@ -286,6 +287,17 @@ L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite
 L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot with WraithSight™ O-U Magnifier"
 L["uplp_optic_devom.compactname"] = "Wraith + O-U"
 L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™.\nComes with their Over-Under™ Magnifier."
+
+L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
+L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
+L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle.\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+
+L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
+L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
+L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification.\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+
+ -- "Optical Precision Scope" in Russian
+ -- "Оптический прецизионный прицел" - 'OPP'
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"

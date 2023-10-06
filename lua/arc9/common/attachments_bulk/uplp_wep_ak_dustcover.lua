@@ -57,7 +57,7 @@ ATT = {}
 ATT.PrintName = "PAWCO Dust Cover with Rail"
 ATT.CompactName = "PAWCO"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
 
 ATT.Icon = Material(iconfolder .. "r1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -75,7 +75,7 @@ ATT = {}
 ATT.PrintName = "Lisyan Tactical Dust Cover with Rail"
 ATT.CompactName = "Lisyan"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
 
 ATT.Icon = Material(iconfolder .. "r2.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -93,7 +93,7 @@ ATT = {}
 ATT.PrintName = "Zenith Dust Cover"
 ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
 
 ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -111,7 +111,7 @@ ATT = {}
 ATT.PrintName = "Szermierz Dust Cover & Rail"
 ATT.CompactName = "Szermierz"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
 
 ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
