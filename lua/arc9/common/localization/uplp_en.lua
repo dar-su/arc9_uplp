@@ -160,6 +160,16 @@ L["uplp_stat_ignite"] = "On Hit: Ignite Target"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
+//////////////////// Universal translations for easy use
+local sportyred = "\n\n" .. "Special Sporty Red version."
+local pitchblack = "\n\n" .. "Special Pitch Black version."
+local arcticwhite = "\n\n" .. "Special Arctic White version."
+local aquablue = "\n\n" .. "Special Aqua Blue version."
+local stealthgray = "\n\n" .. "Special Stealth Gray version."
+local forestgreen = "\n\n" .. "Special Forest Green version."
+local hunterorange = "\n\n" .. "Special Hunter Orange version."
+local partypurple = "\n\n" .. "Special Party Purple version."
+
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
 L["uplp_optic_553.compactname"] = "500S"
@@ -287,9 +297,17 @@ L["uplp_grip_handstop.printname"] = "Lightweight Handstop"
 L["uplp_grip_handstop.compactname"] = "Handstop"
 L["uplp_grip_handstop.description"] = "Lightweight angled handstop that improves ergonomics."
 
+L["uplp_grip_handstop_black.printname"] = "Lightweight Handstop (Pitch Black)"
+L["uplp_grip_handstop_black.compactname"] = "Handstop (PB)"
+L["uplp_grip_handstop_black.description"] = "Lightweight angled handstop that improves ergonomics." .. pitchblack
+
 L["uplp_grip_skelet.printname"] = "Skeleton Foregrip"
 L["uplp_grip_skelet.compactname"] = "Skeleton"
 L["uplp_grip_skelet.description"] = "Lightweight foregrip that improves ergonomics and reduces recoil."
+
+L["uplp_grip_skelet_blackprintname"] = "Skeleton Foregrip (Pitch Black)"
+L["uplp_grip_skelet_black.compactname"] = "Skeleton (PB)"
+L["uplp_grip_skelet_black.description"] = "Lightweight foregrip that improves ergonomics and reduces recoil." .. pitchblack
 
 L["uplp_grip_stub.printname"] = "Compact Foregrip"
 L["uplp_grip_stub.compactname"] = "Compact"
@@ -443,25 +461,27 @@ L["uplp_sg_shell_yellow.description"] = "Replace the pellets with a single slug 
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
-//////////////////// Universal translations for easy use
-local sportyred = "\n\n" .. "Special Sporty Red version."
-local pitchblack = "\n\n" .. "Special Pitch Black version."
-local arcticwhite = "\n\n" .. "Special Arctic White version."
-local aquablue = "\n\n" .. "Special Aqua Blue version."
-local stealthgray = "\n\n" .. "Special Stealth Gray version."
-local forestgreen = "\n\n" .. "Special Forest Green version."
-local hunterorange = "\n\n" .. "Special Hunter Orange version."
-local partypurple = "\n\n" .. "Special Party Purple version."
-
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
-L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed by Mikhail Kalashnikov in 1947, is renowned for its rugged reliability and simplicity. It typically fires the 7.62x39mm cartridge and has been widely used by military forces and insurgents worldwide due to its durability and select-fire capability."
+L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed in 1947, is renowned for its rugged reliability and simplicity. It typically fires the 7.62x39mm cartridge and has been widely used by military forces and insurgents worldwide due to its durability and select-fire capability."
 
-L["uplp_weapon_ak12"] = "AK-12"
-L["uplp_weapon_ak12_desc"] = "The AK-12 is a modern assault rifle designed in Russia as a successor to the iconic AK-74. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
+L["uplp_weapon_ak12"] = "AK M23"
+L["uplp_weapon_ak12_desc"] = "The AK M23 is a modern assault rifle designed in Russia as a successor to the iconic AK 5.45. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
 
 L["uplp_weapon_ak_smg"] = "AK SMG"
 L["uplp_weapon_ak_smg_desc"] = "Various compact submachine guns based on the AK assault rifle. With the base being that of the AK platform, the AK SMG provides familiarity to those already familiar with the various AK family of rifles with the compact nature of SMGs."
+
+L["uplp_weapon_ak_762"] = "AK 7.62"
+L["uplp_weapon_ak_545"] = "AK 5.45"
+L["uplp_weapon_ak_556"] = "AK 5.56"
+L["uplp_weapon_ak_9x39"] = "AK 9x39"
+L["uplp_weapon_ak_rpk"] = "HPK"
+
+L["uplp_weapon_ak12_22"] = "AK M22"
+L["uplp_weapon_ak12_16"] = "AK M16"
+L["uplp_weapon_ak12_308"] = "AK M308"
+
+L["uplp_weapon_ak_short"] = "%s Shortened"
 
 L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
@@ -1402,11 +1422,11 @@ L["uplp_molot_hg_tac_w.description"] = "Tactical, lightweight and sporty handgua
 
 L["uplp_molot_hg_cool.printname"] = "SpeedFire Dynamics Competition Handguard"
 L["uplp_molot_hg_cool.compactname"] = "SpeedFire"
-L["uplp_molot_hg_cool.description"] = "Lightweight but massive handguard made by SpeedFire Dynamics."
+L["uplp_molot_hg_cool.description"] = "Lightweight handguard made by SpeedFire Dynamics."
 
 L["uplp_molot_hg_cool2.printname"] = "ApexCore Sport PRO Handguard"
 L["uplp_molot_hg_cool2.compactname"] = "ApexCore"
-L["uplp_molot_hg_cool2.description"] = "Lightweight but massive handguard made by the Sport PRO division at ApexCore Arsenal."
+L["uplp_molot_hg_cool2.description"] = "Lightweight handguard made by the Sport PRO division at ApexCore Arsenal."
 
 ////// Internals
 L["uplp_molot_bolt_light.printname"] = "Lightweight Internals"
@@ -1440,7 +1460,7 @@ L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
 L["uplp_weapon_awp"] = "AW Sniper"
 L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
 
-L["uplp_weapon_awp_atx"] = "eXtreme Sport Rifle"
+L["uplp_weapon_awp_atx"] = "AX Sniper"
 
 L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
@@ -1592,9 +1612,10 @@ L["uplp_mp7_sight_folded.compactname"] = "PDW IS"
 L["uplp_mp7_sight_folded.description"] = "Flips the PDW-7's iron sights down, turning them into pistol-like sights.\nImproves target acquisition speeds at the cost of magnification."
 
 //////////////////// XAR
-L["uplp_weapon_scar"] = "XAR Heavy"
+L["uplp_weapon_scar"] = "XAR"
 L["uplp_weapon_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
 
+L["uplp_weapon_scar_heavy"] = "XAR Heavy"
 L["uplp_weapon_scar_light"] = "XAR Light"
 L["uplp_weapon_scar_dmr"] = "XAR DMR"
 L["uplp_weapon_scar_mg"] = "XAR MG"
@@ -1615,11 +1636,11 @@ L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black 
 
 L["uplp_scar_upper_20.printname"] = "DMR Receiver"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
+L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
 
 L["uplp_scar_upper_20b.printname"] = "DMR Receiver (Black)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
-L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
+L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Receiver"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"

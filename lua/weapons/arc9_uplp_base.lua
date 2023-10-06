@@ -35,11 +35,15 @@ SWEP.PhysicalVisualRecoil = false
 
 SWEP.ReloadInSights = true
 
+SWEP.ViewModelFOVBase = 70
+SWEP.ActivePos = Vector(-0.1, -0.1, 0.1)
+SWEP.ActiveAng = Angle(0, 0, 0)
+
 SWEP.HolsterPos = Vector(1, 0, -3)
 SWEP.HolsterAng = Angle(40, -10, -40)
 
-SWEP.CrouchPos = Vector(0, 0, 1)
-SWEP.CrouchAng = Angle(0, 0, -5)
+SWEP.CrouchPos = Vector(-1, 1, -2)
+SWEP.CrouchAng = Angle(0, 0, -25)
 
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
@@ -53,3 +57,5 @@ SWEP.SightMidPoint = {
 }
 
 SWEP.Bipod = false
+
+SWEP.Crosshair = true

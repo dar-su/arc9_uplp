@@ -54,9 +54,10 @@ ATT.ActivateElements = {"uplp_fn57_trigger_auto"}
 ATT.RPMMult = 1.1
 ATT.Firemodes = { { Mode = -1 } }
 
-ATT.RecoilMult = 1.25
+ATT.RecoilMult = 2
 ATT.RecoilSideMult = 2
 ATT.SpreadAddRecoil = 0.025
+ATT.DeployTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_fn57_trigger_auto")
 

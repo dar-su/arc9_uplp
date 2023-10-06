@@ -69,7 +69,8 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.ViewModelFOVBase = 75
+SWEP.ViewModelFOVBase = 70
+SWEP.ActivePos = Vector(-0.25, 0, 0.1)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -844,7 +845,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic"},
-        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.05, 0.5),
         Ang = Angle(90, 90, 180),

@@ -72,7 +72,8 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.ViewModelFOVBase = 75
+SWEP.ViewModelFOVBase = 65
+SWEP.ActivePos = Vector(-0.25, 0, 0.5)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -260,7 +261,7 @@ SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 
 local pathRZ = "uplp_rz/awp/"
 -- urbna!
-local pathUT = "uplp_urban_temp/vepr/"
+local pathUT = "uplp_urban_temp/awp/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
@@ -402,11 +403,11 @@ SWEP.Animations = {
             -- { s = reloadsound .. "firstraise_lift_v2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             -- { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
-            {s = pathUT .. "boltup.ogg",          t = 0.1},
-            {s = pathUT .. "boltback.ogg",        t = 0.25},
+            -- {s = pathUT .. "boltup.ogg",          t = 0.1},
+            -- {s = pathUT .. "boltback.ogg",        t = 0.25},
             {s = pathUT .. "boltforward.ogg",     t = 0.32},
-            {s = pathUT .. "eject.ogg",           t = 0.4},
             {s = pathUT .. "boltdown.ogg",        t = 0.55},
+            -- {s = pathUT .. "eject.ogg",           t = 0.4},
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
@@ -459,7 +460,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 16.25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 30 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
@@ -478,18 +479,18 @@ SWEP.Animations = {
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},
 
             { s = pathUT .. "magout.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 35 / 30, c = ca, v = 0.8 },
 
-            {s = pathUT .. "boltforward.ogg",     t = 60 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 62 / 30},
+            {s = pathUT .. "boltforward.ogg",     t = 58 / 30},
+            {s = pathUT .. "boltdown.ogg",        t = 61 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 70 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.625, lhik = 0 },
+            { t = 0.725, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -500,7 +501,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 35 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
@@ -519,18 +520,18 @@ SWEP.Animations = {
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},
 
             { s = pathUT .. "magout.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 47.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 41 / 30, c = ca, v = 0.8 },
             
-            {s = pathUT .. "boltforward.ogg",     t = 67.5 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 70 / 30},
+            {s = pathUT .. "boltforward.ogg",     t = 64 / 30},
+            {s = pathUT .. "boltdown.ogg",        t = 66.5 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 77 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.625, lhik = 0 },
+            { t = 0.75, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -544,9 +545,12 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 95 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 145 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 150 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -742,7 +746,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.3, 1.326),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(1, 0, 0),
-		-- Installed = "uplp_optic_generic",
+		Installed = "uplp_optic_generic",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -768,7 +772,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 2, 15.5),
         Ang = Angle(90, 90, 180),
-		Integral = false,
+		Installed = "uplp_awp_bp",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
@@ -778,8 +782,6 @@ SWEP.Attachments = {
         Pos = Vector(0, -1, -3.4),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
-        -- Installed = "uplp_awp_mag_awp",
-        Integral = false,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),

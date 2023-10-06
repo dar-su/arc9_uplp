@@ -47,7 +47,7 @@ ATT.PrintName = "Lightweight Handstop"
 ATT.CompactName = "Handstop"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "hsb.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hsr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_handstop.mdl"
 ATT.LHIK = true
@@ -70,6 +70,38 @@ ATT.ModelOffset = Vector(-1, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_grip_handstop")
 
 
+///////////////////////////////////////      uplp_grip_handstop_black
+
+
+ATT = {}
+
+ATT.PrintName = "Lightweight Handstop (Pitch Black)"
+ATT.CompactName = "Handstop (PB)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "hsb.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_handstop.mdl"
+ATT.ModelBodygroups = "1"
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+
+ATT.Category = "uplp_grip_horiz"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.65
+ATT.SprintToFireTimeMult = 0.75
+
+/// Negatives
+
+ATT.ModelOffset = Vector(-1, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_grip_handstop_black")
+
 ///////////////////////////////////////      uplp_grip_skelet
 
 
@@ -79,7 +111,7 @@ ATT.PrintName = "Skeleton Foregrip"
 ATT.CompactName = "Skeleton"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "skeb.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "skelr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_skelet.mdl"
 ATT.LHIK = true
@@ -99,6 +131,38 @@ ATT.SprintToFireTimeMult = 0.9
 /// Negatives
 
 ARC9.LoadAttachment(ATT, "uplp_grip_skelet")
+
+
+///////////////////////////////////////      uplp_grip_skelet_black
+
+
+ATT = {}
+
+ATT.PrintName = "Skeleton Foregrip (Pitch Black)"
+ATT.CompactName = "Skeleton (PB)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "skeb.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_skelet.mdl"
+ATT.ModelBodygroups = "1"
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+
+ATT.Category = "uplp_grip_vert"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.1
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.9
+
+/// Negatives
+
+ARC9.LoadAttachment(ATT, "uplp_grip_skelet_black")
 
 
 ///////////////////////////////////////      uplp_grip_stub

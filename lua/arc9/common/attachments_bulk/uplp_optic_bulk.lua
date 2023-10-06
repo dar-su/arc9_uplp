@@ -825,7 +825,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
-ATT.Category = "uplp_optic_small"
+ATT.Category = {"uplp_optic_small", "uplp_optic_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
@@ -863,7 +863,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
-ATT.Category = "uplp_optic_small"
+ATT.Category = {"uplp_optic_small", "uplp_optic_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
@@ -1502,7 +1502,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Negatives
@@ -1576,7 +1576,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Negatives
@@ -1751,7 +1751,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 ATT.RTScopeNoBlur = true
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Negatives

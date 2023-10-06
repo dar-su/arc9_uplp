@@ -55,7 +55,7 @@ ATT.SprintToFireTimeMult = 0.9
 -- ATT.ReloadTimeMult = 0.9
 
 ATT.CustomPros = { 
-[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
+[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
 }
 
 /// Negatives

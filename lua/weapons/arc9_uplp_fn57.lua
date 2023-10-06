@@ -282,16 +282,16 @@ SWEP.DistantShootSoundIndoor = {
 }
 
 SWEP.DistantShootSoundSilenced = {
-    pathUTC .. "sup-tail-01.ogg",
-    pathUTC .. "sup-tail-02.ogg",
-    pathUTC .. "sup-tail-03.ogg",
-    pathUTC .. "sup-tail-04.ogg",
-    pathUTC .. "sup-tail-05.ogg",
-    pathUTC .. "sup-tail-06.ogg",
-    pathUTC .. "sup-tail-07.ogg",
-    pathUTC .. "sup-tail-08.ogg",
-    pathUTC .. "sup-tail-09.ogg",
-    pathUTC .. "sup-tail-10.ogg"
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
 }
 
 SWEP.DropMagazineSounds = {
@@ -628,6 +628,10 @@ SWEP.AttachmentElements = {
     ["uplp_fn57_skin_tan_half"] = { Bodygroups = { { 0, 1 } } },
     ["uplp_fn57_skin_panda"] = { Bodygroups = { { 1, 1 } } },
 	
+    ["uplp_optic_tacrds"] = { AttPosMods = {
+	[1] = { Pos = Vector(0, -0.9, -1.55), Scale = 1 },
+	}},
+	
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -636,13 +640,14 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small"},
+        -- Category = {"uplp_optic_pistol"},
+        Category = {""},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "slide",
-        Pos = Vector(0, -0.5, -1.6),
+        Pos = Vector(0, -0.5, -1.525),
         ExtraSightDistance = 2,
         Ang = Angle(90, 90, 180),
-		Scale = 1.15
+		Scale = 1.4
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

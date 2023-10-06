@@ -54,6 +54,15 @@ ATT.Icon = Material(iconfolder .. "rec/dmr.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
+ATT.Firemodes = {
+    { Mode = -1, -- Full
+	PoseParam = 1 },
+    { Mode = 1, -- Semi
+	RPM = 300,
+	DamageMult = 1.2,
+	PoseParam = 2 }
+}
+
 /// Positives
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.3
@@ -62,6 +71,7 @@ ATT.RecoilMult = 0.8
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
+ATT.RPMMult = 0.75
 
 ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
@@ -90,6 +100,7 @@ ATT.RecoilMult = 0.8
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
+ATT.RPMMult = 0.75
 
 ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
@@ -115,6 +126,16 @@ ATT.ModelOffset = Vector(-15.5, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.85
+ATT.RPMMult = 1.1
+
+/// Negatives
+ATT.RangeMinMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RecoilMult = 1.1
+
 ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdw")
@@ -137,6 +158,16 @@ ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-15.5, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.9
+ATT.SprintToFireTimeMult = 0.85
+ATT.RPMMult = 1.1
+
+/// Negatives
+ATT.RangeMinMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RecoilMult = 1.1
 
 ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw"}
 
@@ -552,7 +583,7 @@ ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
-    return anim .. "_20"
+    return anim .. "_l"
 end
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
@@ -871,6 +902,8 @@ ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 
 ATT.Category = "uplp_scar_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+-- ATT.DrawFunc = function(swep, model) model:SetBodygroup(0, 1 + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
 ATT.ActivateElements = {"uplp_scar_is"}
 ATT.ExcludeElements = {"uplp_scar_no_is"}

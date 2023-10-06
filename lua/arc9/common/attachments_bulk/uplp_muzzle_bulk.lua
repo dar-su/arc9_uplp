@@ -410,6 +410,8 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
+ATT.Scale = 1.4
+
 /// Positives
 ATT.RecoilMult = 0.95
 ATT.SpreadAddRecoil = -0.01

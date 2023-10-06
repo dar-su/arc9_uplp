@@ -160,6 +160,16 @@ L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
+//////////////////// Universal translations for easy use
+local sportyred = "\n\n" .. "Speciell \"Sporty Red\"-version."
+local pitchblack = "\n\n" .. "Speciell \"Pitch Black\"-version."
+local arcticwhite = "\n\n" .. "Speciell \"Arctic White\"-version."
+local aquablue = "\n\n" .. "Speciell \"Aqua Blue\"-version."
+local stealthgray = "\n\n" .. "Speciell \"Stealth Gray\"-version."
+local forestgreen = "\n\n" .. "Speciell \"Forest Green\"-version."
+local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
+local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
+
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
 L["uplp_optic_553.compactname"] = "500S"
@@ -287,9 +297,17 @@ L["uplp_grip_handstop.printname"] = "Lättvikt Handstopp"
 L["uplp_grip_handstop.compactname"] = "Handstopp"
 L["uplp_grip_handstop.description"] = "Lättvikt vinklat handstopp som förbättrar ergonomin."
 
+L["uplp_grip_handstop_black.printname"] = "Lättvikt Handstopp (Pitch Black)"
+L["uplp_grip_handstop_black.compactname"] = "Handstopp (PB)"
+L["uplp_grip_handstop_black.description"] = "Lättvikt vinklat handstopp som förbättrar ergonomin." .. pitchblack
+
 L["uplp_grip_skelet.printname"] = "Skelett Framgrepp"
 L["uplp_grip_skelet.compactname"] = "Skelett"
 L["uplp_grip_skelet.description"] = "Lättvikt framgrepp som förbättrar ergonomin och sänker rekylen."
+
+L["uplp_grip_skelet_blackprintname"] = "Skelett Framgrepp (Pitch Black)"
+L["uplp_grip_skelet_black.compactname"] = "Skelett (PB)"
+L["uplp_grip_skelet_black.description"] = "Lättvikt framgrepp som förbättrar ergonomin och sänker rekylen." .. pitchblack
 
 L["uplp_grip_stub.printname"] = "Kompakt Framgrepp"
 L["uplp_grip_stub.compactname"] = "Kompakt"
@@ -443,25 +461,27 @@ L["uplp_sg_shell_yellow.description"] = "Ersätter alla skotten med ett enkelt g
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
-//////////////////// Universal translations for easy use
-local sportyred = "\n\n" .. "Speciell \"Sporty Red\"-version."
-local pitchblack = "\n\n" .. "Speciell \"Pitch Black\"-version."
-local arcticwhite = "\n\n" .. "Speciell \"Arctic White\"-version."
-local aquablue = "\n\n" .. "Speciell \"Aqua Blue\"-version."
-local stealthgray = "\n\n" .. "Speciell \"Stealth Gray\"-version."
-local forestgreen = "\n\n" .. "Speciell \"Forest Green\"-version."
-local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
-local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
-
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
-L["uplp_weapon_ak_desc"] = "Automatkarbinen AK, designad av Mikhail Kalashnikov år 1947, är känd för sin robusta pålitlighet och enkelhet. Den avfyrar vanligtvis kalibern 7,62x39mm och har vidtagna användningsområden av militära styrkor och rebellgrupper världen över på grund av sin hållbarhet och förmåga att skjuta både i enkelskott och automatiskt."
+L["uplp_weapon_ak_desc"] = "Automatkarbinen AK, designad år 1947, är känd för sin robusta pålitlighet och enkelhet. Den avfyrar vanligtvis kalibern 7,62x39mm och har vidtagna användningsområden av militära styrkor och rebellgrupper världen över på grund av sin hållbarhet och förmåga att skjuta både i enkelskott och automatiskt."
 
-L["uplp_weapon_ak12"] = "AK-12"
-L["uplp_weapon_ak12_desc"] = "AK-12 är ett modernt automatgevär designat i Ryssland, avsett att vara en uppdaterad version av den ikoniska AK-74. Det har förbättrad ergonomi, modularitet och ökad noggrannhet samtidigt som det behåller den berömda tillförlitligheten hos AK-serien."
+L["uplp_weapon_ak12"] = "AK M23"
+L["uplp_weapon_ak12_desc"] = "AK M23 är ett modernt automatgevär designat i Ryssland, avsett att vara en uppdaterad version av den ikoniska AK 5,45. Det har förbättrad ergonomi, modularitet och ökad noggrannhet samtidigt som det behåller den berömda tillförlitligheten hos AK-serien."
 
 L["uplp_weapon_ak_smg"] = "AK KPist."
 L["uplp_weapon_ak_smg_desc"] = "Diverse kompakta kulsprutepistoler baserade på automatkarbinen AK. Med AK-plattformen som en bas så erbjuder AK Kpist. förtrogenhet till dem som redan har kunskap med olika AK-gevär ur dess familj med den kompakta naturen av kulsprutepistoler."
+
+L["uplp_weapon_ak_762"] = "AK 7,62"
+L["uplp_weapon_ak_545"] = "AK 5,45"
+L["uplp_weapon_ak_556"] = "AK 5,56"
+L["uplp_weapon_ak_9x39"] = "AK 9x39"
+L["uplp_weapon_ak_rpk"] = "HPK"
+
+L["uplp_weapon_ak12_22"] = "AK M22"
+L["uplp_weapon_ak12_16"] = "AK M16"
+L["uplp_weapon_ak12_308"] = "AK M308"
+
+L["uplp_weapon_ak_short"] = "%s Shortened"
 
 L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
@@ -1404,11 +1424,11 @@ L["uplp_molot_hg_tac_w.description"] = "Taktiskt, lättviktigt och sportigt hand
 
 L["uplp_molot_hg_cool.printname"] = "SpeedFire Dynamics Competition-Handskydd"
 L["uplp_molot_hg_cool.compactname"] = "SpeedFire"
-L["uplp_molot_hg_cool.description"] = "Lättvikt men massivt handskydd gjort av SpeedFire Dynamics."
+L["uplp_molot_hg_cool.description"] = "Lättvikt handskydd gjort av SpeedFire Dynamics."
 
 L["uplp_molot_hg_cool2.printname"] = "ApexCore Sport PRO-Handskydd"
 L["uplp_molot_hg_cool2.compactname"] = "ApexCore"
-L["uplp_molot_hg_cool2.description"] = "Lättvikt men massivt handskydd gjort av Sport PRO-avdelningen på ApexCore Arsenal."
+L["uplp_molot_hg_cool2.description"] = "Lättvikt handskydd gjort av Sport PRO-avdelningen på ApexCore Arsenal."
 
 ////// Internals
 L["uplp_molot_bolt_light.printname"] = "Lätta Interndelar"
@@ -1441,7 +1461,7 @@ L["uplp_sg_mz_vepr.description"] = "Standard choke till hagelgeväret Molot."
 L["uplp_weapon_awp"] = "Prickskyttegevär AW"
 L["uplp_weapon_awp_desc"] = "AW-geväret är ett berömt prickskyttegevär som kännetecknas av enastående noggrannhet och pålitlighet. Det har använts av militära och polisiära enheter över hela världen och är utformat för att fungera effektivt under extremt kalla väderförhållanden, vilket visar dess robusta konstruktion och precisionsteknik."
 
-L["uplp_weapon_awp_atx"] = "eXtreme Sportgevär"
+L["uplp_weapon_awp_atx"] = "Prickskyttegevär AX"
 
 L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
@@ -1593,11 +1613,12 @@ L["uplp_mp7_sight_folded.compactname"] = "PDW-R"
 L["uplp_mp7_sight_folded.description"] = "Fäller ner PDW-7:ans riktmedel vilket förvandlar dem till pistolliknande riktmedel.\nFörbättrar målförvärv med kostnad på magnifiering."
 
 //////////////////// XAR
-L["uplp_weapon_scar"] = "XAR Heavy"
+L["uplp_weapon_scar"] = "XAR"
 L["uplp_weapon_scar_desc"] = "XAR är ett modulärt och mångsidigt automatgevär avsett för användning av specialstyrkor och militära enheter. Det är känt för sin förmåga att snabbt anpassa sig till olika uppdragskrav genom utbytbara pipor och komponenter, vilket gör det till ett pålitligt val för en mängd olika stridsscenarier."
 
+L["uplp_weapon_scar_heavy"] = "XAR Heavy"
 L["uplp_weapon_scar_light"] = "XAR Light"
-L["uplp_weapon_scar_ssr"] = "XAR SSR"
+L["uplp_weapon_scar_dmr"] = "XAR DMR"
 L["uplp_weapon_scar_mg"] = "XAR MG"
 L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
@@ -1616,11 +1637,11 @@ L["uplp_scar_upper_hb.description"] = "Ersätter den övre lådan med en svartm�
 
 L["uplp_scar_upper_20.printname"] = "DMR-Låda"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR."
+L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
 
 L["uplp_scar_upper_20b.printname"] = "DMR-Låda (Svart)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (S)"
-L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR."
+L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW-Låda"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"

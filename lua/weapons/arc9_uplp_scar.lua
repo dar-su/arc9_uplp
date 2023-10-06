@@ -50,7 +50,7 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
 
@@ -74,6 +74,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 75
+SWEP.ActivePos = Vector(0.05, 0.5, 0.0)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -439,7 +440,7 @@ SWEP.Animations = {
 		MinProgress = 0.65,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout-762.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
         },
@@ -456,7 +457,7 @@ SWEP.Animations = {
 		MinProgress = 0.65,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout-762.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 41 / 30, c = ca, v = 0.8 },
@@ -783,22 +784,22 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	-- Force bodygroups to work - otherwise inconsistencies.
 	if ll then -- if AR-15 mag
 		if pdw or pdwb then -- if not PDW upper
-			if ub then -- if black upper
-				mdl:SetBodygroup(1,9)
-		 	else
-				mdl:SetBodygroup(1,8)
-			end
-		elseif dmr or dmrb then -- if DMR upper
-			if dmrb then -- if black upper
-				mdl:SetBodygroup(1,5)
-		 	else
-				mdl:SetBodygroup(1,4)
-			end
-		else
 			if pdwb then -- if black upper
 				mdl:SetBodygroup(1,3)
 		 	else
 				mdl:SetBodygroup(1,2)
+			end
+		elseif dmr or dmrb then -- if DMR upper
+			if dmrb then -- if black upper
+				mdl:SetBodygroup(1,7)
+		 	else
+				mdl:SetBodygroup(1,6)
+			end
+		else
+			if ub then -- if black upper
+				mdl:SetBodygroup(1,1)
+		 	-- else
+				-- mdl:SetBodygroup(1,2)
 			end
 		end
 	end
@@ -870,6 +871,11 @@ SWEP.AttachmentElements = {
     ["uplp_scar_pgrip_b"] = { Bodygroups={ { 5, 1 } } },
     ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 2 } } },
 
+    ["uplp_ar15_pgrip_416"] = { Bodygroups = { { 5, 2 } }, AttPosMods = {
+	[4] = { Pos = Vector(-0.06, 3.8, 0.925) },
+	}},
+
+
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -911,7 +917,7 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt .. "grip_ar.png", "mips smooth"),
 		ActiveElements = {"uplp_ar15_pgrip"},
         Bone = "body",
-        Pos = Vector(-0.06, 3.7, 0.875),
+        Pos = Vector(-0.06, 3.8, 0.8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1007,17 +1013,25 @@ SWEP.Attachments = {
 SWEP.HookP_NameChange = function(self, name)
 	local att = self:GetElements()
 
-	if (att["uplp_scar_upper_20"] or att["uplp_scar_upper_20b"]) and !att["uplp_ar15_mag"] then
-		if (att["uplp_scar_brl_20"] or att["uplp_scar_brl_20_long"]) then
-			name = ARC9:GetPhrase("uplp_weapon_scar_dmr")
-		end
-	end
+	-- if !att["uplp_ar15_mag"] then
+		-- if (att["uplp_scar_brl_20"] or att["uplp_scar_brl_20_long"]) then
+			-- name = ARC9:GetPhrase("uplp_weapon_scar_dmr")
+		-- end
+	-- end
 
 	if att["uplp_ar15_mag"] then
 		if att["uplp_scar_mag_drum"] then
 			name = ARC9:GetPhrase("uplp_weapon_scar_mg")
+		elseif (att["uplp_scar_upper_pdw"] or att["uplp_scar_upper_pdwb"]) then
+			name = ARC9:GetPhrase("uplp_weapon_scar_pdw")
 		else
 			name = ARC9:GetPhrase("uplp_weapon_scar_light")
+		end
+	else
+		if (att["uplp_scar_brl_20"] or att["uplp_scar_brl_20_long"]) then
+			name = ARC9:GetPhrase("uplp_weapon_scar_dmr")
+		else
+			name = ARC9:GetPhrase("uplp_weapon_scar_heavy")
 		end
 	end
 

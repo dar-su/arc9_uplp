@@ -658,6 +658,53 @@ SWEP.Animations = {
         },
     },
 
+    -- 5.56
+
+    ["reload_556"] = {
+        Source = "reload_556",
+		MinProgress= 0.6,
+        EventTable = {
+            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_556"] = {
+        Source = "reload_empty_556",
+		MinProgress= 0.675,
+        EventTable = {
+            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
     -- Drum
 
     ["reload_drum"] = {
@@ -705,7 +752,7 @@ SWEP.Animations = {
         },
     },
 
-    -- 5.45 
+    -- .308
 
     ["reload_308"] = {
         Source = "reload_308",
@@ -821,6 +868,49 @@ SWEP.Animations = {
         },
     },  
     ["1_inspect_545"] = {
+        Source = {"inspect0"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+
+    ["inspect_556"] = {
+        Source = {"inspect_556"},
+        FireASAP = true,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 63 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 115 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },  
+    ["1_inspect_556"] = {
         Source = {"inspect0"},
         FireASAP = true,
         EventTable = {
@@ -989,6 +1079,17 @@ SWEP.AttachmentElements = {
     ["uplp_ak_calib_545"] = { Bodygroups = { { 5, 1 } } },
 
     -- MAGAZINES
+    -- 7.62
+    ["uplp_ak_mag_762_30_bak"] = { Bodygroups = { { 6, 1 } } },
+    ["uplp_ak_mag_762_30_12"] = { Bodygroups = { { 6, 2 } } },
+    ["uplp_ak_mag_762_30_old"] = { Bodygroups = { { 6, 3 } } },
+    ["uplp_ak_mag_762_30_oldest"] = { Bodygroups = { { 6, 4 } } },
+
+    ["uplp_ak_mag_762_40"] = { Bodygroups = { { 6, 5 } } },
+    ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 6, 6 } } },
+
+    ["uplp_ak_mag_762_drum"] = { Bodygroups = { { 6, 7 } } },
+    
     -- 5.45
     ["uplp_ak_mag_545_30"] = { Bodygroups = { { 6, 8 } } },
     ["uplp_ak_mag_545_30_bak"] = { Bodygroups = { { 6, 9 } } },
@@ -1001,8 +1102,15 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_mag_545_drum"] = { Bodygroups = { { 6, 14 } } },
 
+    -- 5.56
+    ["uplp_ak_mag_556_30"] = { Bodygroups = { { 6, 15 } } },
+    ["uplp_ak_mag_556_30_12"] = { Bodygroups = { { 6, 16 } } },
+    ["uplp_ak_mag_556_30_pmag"] = { Bodygroups = { { 6, 17 } } },
+
     -- Other
     ["uplp_ak_mag_308_20"] = { Bodygroups = { { 6, 18 } } },
+
+    ["uplp_ak_mag_939_30"] = { Bodygroups = { { 6, 19 } } },
 
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
@@ -1083,7 +1191,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_ak_mag_545", "uplp_ak_mag_308"},
+        Category = {"uplp_ak_mag", "uplp_ak_mag_308"},
         DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
@@ -1114,7 +1222,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic"},
-        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),

@@ -325,7 +325,7 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Positives
 ATT.RPMMult = 1.25
-ATT.ReloadTimeMult = 0.9
+ATT.ReloadTimeMult = 0.95
 
 /// Negatives
 ATT.RecoilMult = 1.15
@@ -351,7 +351,7 @@ ATT.RecoilAutoControlMult = 1.5
 
 /// Negatives
 ATT.RPMMult = 0.75
-ATT.ReloadTimeMult = 1.1
+ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_molot_bolt_heavy")
 
