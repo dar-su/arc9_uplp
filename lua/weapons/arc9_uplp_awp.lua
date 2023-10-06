@@ -72,7 +72,9 @@ SWEP.WorldModelOffset = {
     Scale = 1
 }
 
-SWEP.ViewModelFOVBase = 75
+SWEP.ViewModelFOVBase = 65
+SWEP.ActivePos = Vector(-0.25, 0, 0.5)
+SWEP.ActiveAng = Angle(0, 0, 0)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -260,7 +262,7 @@ SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 
 local pathRZ = "uplp_rz/awp/"
 -- urbna!
-local pathUT = "uplp_urban_temp/vepr/"
+local pathUT = "uplp_urban_temp/awp/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
