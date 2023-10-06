@@ -439,7 +439,7 @@ SWEP.Animations = {
 		MinProgress = 0.65,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout-762.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
         },
@@ -456,7 +456,7 @@ SWEP.Animations = {
 		MinProgress = 0.65,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout-762.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 41 / 30, c = ca, v = 0.8 },
