@@ -17,32 +17,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "g.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_ar15_no_fs"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
--- ATT.RequireElements = {"uplp_ar15_barrel_long"}
-
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-5.1, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-		-- Hidden = true,
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2.45),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_grenadier")
 
@@ -59,11 +37,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip",}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
-ATT.RequireElements = {"uplp_ar15_barrel"}
-
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
@@ -83,11 +59,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "16s.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip",}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
--- ATT.RequireElements = {"uplp_ar15_barrel_mid"}
-
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
@@ -106,69 +80,13 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mlok.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_long"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-12.0, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
-
-
-///////////////////////////////////////      uplp_ar15_hg_mlokshort
-
-
--- ATT = {}
-
--- ATT.PrintName = "Shortened M-LOK Handguard"
--- ATT.CompactName = "M-LOK S"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-
--- ATT.Category = "uplp_ar15_hg"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-4.9, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-    -- },
--- }
-
-
--- ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlokshort")
 
 
 ///////////////////////////////////////      uplp_ar15_hg_nwsu_s15
@@ -182,32 +100,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "s15.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_mid"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-7.5, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15")
 
@@ -223,32 +120,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "s15r.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_mid"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-7.5, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_red")
 
@@ -264,32 +140,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "s15x.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
-ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_long"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-10.7, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl")
 
@@ -305,32 +160,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "s15xr.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_long"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-10.7, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl_red")
 
@@ -346,71 +180,14 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "rislong.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_long"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-9.15, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
-
-///////////////////////////////////////      uplp_ar15_hg_risshort
-
---[[
-ATT = {}
-
-ATT.PrintName = "Shortened RIS Handguard"
-ATT.CompactName = "RIS S"
-ATT.Description = ATT.PrintName
-
-ATT.Icon = Material(iconfolder .. "risshort.png", "mips smooth")
-
-ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-4.7, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
-
-ARC9.LoadAttachment(ATT, "uplp_ar15_hg_risshort")
---]]
 
 ///////////////////////////////////////      uplp_ar15_hg_tac
 
@@ -423,32 +200,11 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
-
--- ATT.RequireElements = {"uplp_ar15_barrel_long"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-10.7, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
@@ -467,101 +223,7 @@ ATT.Icon = Material(iconfolder .. "tacs.png", "mips smooth")
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-5.1, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
-
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
-
-
-///////////////////////////////////////      uplp_ar15_hg_tacshort_red
-
-
--- ATT = {}
-
--- ATT.PrintName = "Short Tactical Handguard (Sporty Red)"
--- ATT.CompactName = "Tactical S (RS)"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-
--- ATT.Category = "uplp_ar15_hg"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-5.1, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
-
--- ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort_red")
-
-
-///////////////////////////////////////      uplp_ar15_hg_tac_red
-
-
--- ATT = {}
-
--- ATT.PrintName = "Tactical Handguard (Sporty Red)"
--- ATT.CompactName = "Tactical (SR)"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
-
--- ATT.Category = "uplp_ar15_hg"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.ActivateElements = {"uplp_ar15_handguard_long"}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
-
--- ATT.Attachments = {
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        -- Category = "uplp_ar15_fs",
-        -- DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
-        -- Pos = Vector(-10.7, 0, 0),
-        -- Ang = Angle(0, 0, 0),
-    -- },
-    -- {
-        -- PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        -- Pos = Vector(-1, 0, 2),
-        -- Ang = Angle(0, 0, 0),
-		-- Icon_Offset = Vector(0, 0, -1),
-    -- },
--- }
-
-
--- ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 
 
 ///////////////////////////////////////      uplp_ar15_hg_a1
@@ -576,11 +238,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "a1.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip",}
--- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
-ATT.RequireElements = {"uplp_ar15_barrel"}
-
-ATT.Category = "uplp_ar15_hg"
+ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 

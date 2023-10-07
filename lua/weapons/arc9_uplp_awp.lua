@@ -845,8 +845,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         -- ExcludeElements = {"xstock"},
         Bone = "body",

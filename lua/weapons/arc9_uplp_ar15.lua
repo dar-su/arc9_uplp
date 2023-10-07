@@ -357,6 +357,15 @@ local mechh = {
     pathUT .. "mech-06.ogg",
 }
 
+local mechh45 = {
+    pathUT .. "45/mech-01.ogg",
+    pathUT .. "45/mech-02.ogg",
+    pathUT .. "45/mech-03.ogg",
+    pathUT .. "45/mech-04.ogg",
+    pathUT .. "45/mech-05.ogg",
+    pathUT .. "45/mech-06.ogg",
+}
+
 local thetoggle = {{
     s = {
         "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
@@ -433,18 +442,18 @@ SWEP.Animations = {
         EventTable = { { s = pathUT .. "mech_last.ogg", t = 0 } },
     },
 
-    -- ["fire_45"] = {  -- idk what different firings for??
-    --     Source = {"fire_01","fire_02","fire_03"},
-    --     ShellEjectAt = 0.01,
-    --     IKTimeLine = { { t = 0, lhik = 1 } },
-    --     EventTable = { { s = mechh, t = 0 } },
-    -- },
-    -- ["fire_empty_45"] = {
-    --     Source = "fire_empty",
-    --     ShellEjectAt = 0.01,
-    --     IKTimeLine = { { t = 0, lhik = 1 } },
-    --     EventTable = { { s = pathUT .. "mech_last.ogg", t = 0 } },
-    -- },
+    ["fire_45"] = { 
+        Source = {"fire_01","fire_02","fire_03"},
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = mechh45, t = 0 } },
+    },
+    ["fire_empty_45"] = {
+        Source = "fire_empty",
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = pathUT .. "mech_last.ogg", t = 0 } },
+    },
 
     -- ["fire_g17"] = {
         -- Source = {"fire_01","fire_02","fire_03"},
@@ -960,32 +969,50 @@ SWEP.AttachmentElements = {
 	}},
 
 	-- RECEIVERS
-    ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
+    ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
 	
-    ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
+    ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
 
     -- HANDGUARDS
-    ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } } },
+    ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 16.5) },
+	}},
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
     ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
     ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
-    ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } } },
+    ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } }, AttPosMods = {
+	[11] = { Pos = Vector(0.045, 2.1, 10) },
+	}},
 
-    ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } } },
-    -- ["uplp_ar15_hg_tac_red"] = { Bodygroups =       { { 2, 6 } } },
+    ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 18.25) },
+	}},
     ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 6 } } },
-    -- ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =  { { 2, 8 } } },
 
-    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } } },
-    -- ["uplp_ar15_hg_mlokshort"] = { Bodygroups =     { { 2, 10 } } },
+    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 19.25) },
+	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	}},
 
-    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 } } },
-    ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 9 } } },
-    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } } },
-    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 11 } } },
-    ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } }, AttPosMods = {[7] = { Pos = Vector(0.045, -1.7, 1.5) }}},
+    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 15) },
+	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	}},
+    ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 9 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 15) },
+	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	}},
+    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 18) },
+	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	}},
+    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 11 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 18) },
+	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	}},
+    ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } } },
 	
 	-- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 1 } } },
@@ -1096,7 +1123,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = {"uplp_ar15_hg"},
+        Category = {"uplp_ar15_hg", "uplp_ar15_hg_mid", "uplp_ar15_hg_long"},
         DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 0.8, 7.703),
@@ -1166,8 +1193,7 @@ SWEP.Attachments = {
     
     -- Cosmetic shit
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
         Pos = Vector(0.63, 1.84, 5.15),
