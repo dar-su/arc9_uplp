@@ -506,58 +506,58 @@ L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ak_brl_16.printname"] = "400mm AK-100 Pipa"
+L["uplp_ak_brl_16.printname"] = "400mm AK M10 Pipa"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
-L["uplp_ak_brl_16.description"] = "Standard 400mm pipa som används på AK-100-gevär."
+L["uplp_ak_brl_16.description"] = "Standard 400mm pipa som används på AK M10-gevär."
 
-L["uplp_ak_brl_comp.printname"] = "300mm AK-100 Pipa"
+L["uplp_ak_brl_comp.printname"] = "300mm AK M10 Pipa"
 L["uplp_ak_brl_comp.compactname"] = "300mm"
-L["uplp_ak_brl_comp.description"] = "Kort 300mm pipa som används på AK-102:an och AK-104:an."
+L["uplp_ak_brl_comp.description"] = "Kort 300mm pipa som används på AK M10-gevär."
 
-L["uplp_ak_brl_akm.printname"] = "400mm AK-Pipa"
+L["uplp_ak_brl_akm.printname"] = "400mm AK 7,62 Pipa"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
-L["uplp_ak_brl_akm.description"] = "Standard 400mm pipa som används på AK-47:an och AKM."
+L["uplp_ak_brl_akm.description"] = "Standard 400mm pipa som används på AK 7,62."
 
-L["uplp_ak_brl_rpk.printname"] = "585mm RPK-Pipa"
-L["uplp_ak_brl_rpk.compactname"] = "585mm RPK"
-L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på RPK-74 och RPK-74M."
+L["uplp_ak_brl_rpk.printname"] = "585mm HPK-Pipa"
+L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
+L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på HPK."
 
-L["uplp_ak_brl_109.printname"] = "432mm AK-107 Pipa"
-L["uplp_ak_brl_109.compactname"] = "432mm 107"
-L["uplp_ak_brl_109.description"] = "Längre 432mm pipa som används på AK-107:an med inbyggt \"Balanced Automatics Recoil System\".\n(\"Balanserad Automatiskt Rekylsystem\")"
+L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Pipa"
+L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
+L["uplp_ak_brl_109.description"] = "Längre 432mm pipa som används på AK M10-7:an med dess inbyggda \"Balanced Automatics Recoil System\".\n(\"Balanserad Automatiskt Rekylsystem\")"
 
-L["uplp_ak_brl_su.printname"] = "203mm 74U-Pipa"
-L["uplp_ak_brl_su.compactname"] = "203mm 74U"
-L["uplp_ak_brl_su.description"] = "Kort 203mm pipa som används på AKS-74U."
+L["uplp_ak_brl_su.printname"] = "203mm Short-Pipa"
+L["uplp_ak_brl_su.compactname"] = "203mm Short"
+L["uplp_ak_brl_su.description"] = "Kort 203mm pipa som används på AK Short."
 
-L["uplp_ak_brl_12.printname"] = "400mm AK-12 Pipa"
-L["uplp_ak_brl_12.compactname"] = "400mm 12"
-L["uplp_ak_brl_12.description"] = "Standard 400mm pipa som används på AK-12:an."
+L["uplp_ak_brl_12.printname"] = "400mm AK M22 Pipa"
+L["uplp_ak_brl_12.compactname"] = "400mm M22"
+L["uplp_ak_brl_12.description"] = "Standard 400mm pipa som används på AK M22:an."
 
-L["uplp_ak_brl_12k.printname"] = "230mm AK-12K Pipa"
+L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Pipa"
 L["uplp_ak_brl_12k.compactname"] = "230mm 12K"
-L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK-12K prototypen. Kanske inte finns. Eller?"
+L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?"
 
-L["uplp_ak_brl_19.printname"] = "400mm AK-19 Pipa"
+L["uplp_ak_brl_19.printname"] = "400mm AK M23 5.56 Pipa"
 L["uplp_ak_brl_19.compactname"] = "400mm 19"
-L["uplp_ak_brl_19.description"] = "Förkortad 400mm pipa som används på AK-19, en 5,56x45mm exportversion av AK-12:an."
+L["uplp_ak_brl_19.description"] = "Förkortad 400mm pipa som används på AK M23 5.56, en 5,56x45mm exportversion av AK M23:an."
 
-L["uplp_ak_brl_rpk16.printname"] = "585mm RPK-16 Pipa"
-L["uplp_ak_brl_rpk16.compactname"] = "585mm RPK"
-L["uplp_ak_brl_rpk16.description"] = "Tung 585mm pipa som används på RPK-16."
+L["uplp_ak_brl_rpk16.printname"] = "585mm HPK M16 Pipa"
+L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"
+L["uplp_ak_brl_rpk16.description"] = "Tung 585mm pipa som används på HPK M16."
 
 ////// Dust Covers
-L["uplp_ak_dc_std.printname"] = "AKM Dammskydd"
-L["uplp_ak_dc_std.compactname"] = "AKM"
-L["uplp_ak_dc_std.description"] = "Standard räfflat dammskydd som används på AKM."
+L["uplp_ak_dc_std.printname"] = "AK 5,45 Dammskydd"
+L["uplp_ak_dc_std.compactname"] = "AK 5,45"
+L["uplp_ak_dc_std.description"] = "Standard räfflat dammskydd som används på AK 5,45."
 
 L["uplp_ak_dc_flat.printname"] = "Slät Dammskydd"
 L["uplp_ak_dc_flat.compactname"] = "Slät"
-L["uplp_ak_dc_flat.description"] = "Slät dammskydd som används på AK-74M och AK-100-gevär."
+L["uplp_ak_dc_flat.description"] = "Slät dammskydd som används på AK 5,45 och AK M10-gevär."
 
 L["uplp_ak_dc_old.printname"] = "Gammaldags Dammskydd"
 L["uplp_ak_dc_old.compactname"] = "Gammaldags"
-L["uplp_ak_dc_old.description"] = "Gammaldags dammskydd som används på AK-47:an.\nKombinera med " .. col.b .. "Gammaldags Kolv" .. col.e .. " för att ändra utseendet på lådan."
+L["uplp_ak_dc_old.description"] = "Gammaldags dammskydd som används på AK 7,62.\nKombinera med " .. col.b .. "Gammaldags Kolv" .. col.e .. " för att ändra utseendet på lådan."
 
 L["uplp_ak_dc_rail.printname"] = "PAWCO-Dammskydd med Skena"
 L["uplp_ak_dc_rail.compactname"] = "PAWCO"
@@ -575,30 +575,43 @@ L["uplp_ak_dc_beryl.printname"] = "Szermierz Dammskydd & Skena"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
 L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena gjorda för ett AK-gevär av polskt ursprung."
 
-L["uplp_ak_dc_12.printname"] = "2023 AK-12M1 Konfiguering"
-L["uplp_ak_dc_12.compactname"] = "'23 AK-12M1"
-L["uplp_ak_dc_12.description"] = "Modern 2023 AK-12M1 konfiguering som tillämpar följande ändringar på vapnet:\n- Ersätter bakre siktet med ett starkare dioptersikte.\n- Lägger till en tvåhändig skottomställare"
+L["uplp_ak_dc_12.printname"] = "AK M23 Konfiguering"
+L["uplp_ak_dc_12.compactname"] = "AK M23"
+L["uplp_ak_dc_12.description"] = "Modern AK M23 konfiguering som tillämpar följande ändringar på vapnet:\n- Tar bort <color=255,100,100>2-skott salvoläget</color>.\n- Ersätter bakre siktet med ett starkare dioptersikte.\n- Lägger till en tvåhändig skottomställare"
 
-L["uplp_ak_dc_12_22.printname"] = "2022 AK-12 Konfiguering"
-L["uplp_ak_dc_12_22.compactname"] = "'22 AK-12"
-L["uplp_ak_dc_12_22.description"] = "Standard 2022 AK-12 konfiguering som, till skillnad till 2016, tillämpar följande ändringar:\n- Ersätter bakre siktet med ett dioptersikte."
+L["uplp_ak_dc_12_22.printname"] = "AK M22 Konfiguering"
+L["uplp_ak_dc_12_22.compactname"] = "AK M22"
+L["uplp_ak_dc_12_22.description"] = "Standard AK M22 konfiguering som tillämpar följande ändringar på vapnet:\n- Tar bort <color=255,100,100>2-skott salvoläget</color>.\n- Ersätter bakre siktet med ett dioptersikte."
 
-L["uplp_ak_dc_12_16.printname"] = "2016 AK-12 Konfiguering"
-L["uplp_ak_dc_12_16.compactname"] = "'16 AK-12"
-L["uplp_ak_dc_12_16.description"] = "Gammal 2016 AK-12 konfiguering."
+L["uplp_ak_dc_12_16.printname"] = "AK M16 Konfiguering"
+L["uplp_ak_dc_12_16.compactname"] = "AK M16"
+L["uplp_ak_dc_12_16.description"] = "Gammal AK M16 konfiguering som tillämpar följande ändringar på vapnet:\n- Lägger till ett <color=100,255,100>2-skott salvoläge</color>."
+
+////// Dovetails
+L["uplp_ak_dovetail_visualonly.printname"] = "Laxstjärt"
+L["uplp_ak_dovetail_visualonly.compactname"] = "Laxstjärt"
+L["uplp_ak_dovetail_visualonly.description"] = "<color=160,160,255>ENDAST KOSMETISKT</color>\nVisar laxstjärten."
+
+L["uplp_ak_dovetail_rail.printname"] = "Zenith-Laxstjärtskena"
+L["uplp_ak_dovetail_rail.compactname"] = "Zenith"
+L["uplp_ak_dovetail_rail.description"] = "Sätter på en Zenith-RIS-skena som används för riktmedel på laxstjärtskenan."
+
+L["uplp_ak_dovetail_rail_c.printname"] = "Zenith Compact-Laxstjärtskena"
+L["uplp_ak_dovetail_rail_c.compactname"] = "Zenith C"
+L["uplp_ak_dovetail_rail_c.description"] = "Sätter på en Zenith-RIS-skena som används för riktmedel på laxstjärtskenan."
 
 ////// Pistol Grips
 L["uplp_ak_grip_std.printname"] = "Polymer Pistolgrepp"
 L["uplp_ak_grip_std.compactname"] = "Polymer"
-L["uplp_ak_grip_std.description"] = "Polymer pistolgrepp som används på AK-74:an."
+L["uplp_ak_grip_std.description"] = "Polymer pistolgrepp som används på AK M10:an."
 
 L["uplp_ak_grip_bak.printname"] = "Bakelit Pistolgrepp"
 L["uplp_ak_grip_bak.compactname"] = "Bakelit"
-L["uplp_ak_grip_bak.description"] = "Bakelit pistolgrepp gjort utav formmassan AG-4S, men liknar bakelit. Gjort till AK-74:an."
+L["uplp_ak_grip_bak.description"] = "Bakelit pistolgrepp gjort utav formmassan AG-4S, men liknar bakelit. Gjort till AK 5,45."
 
 L["uplp_ak_grip_old.printname"] = "Gammaldags Pistolgrepp"
 L["uplp_ak_grip_old.compactname"] = "Gammal"
-L["uplp_ak_grip_old.description"] = "Gammaldags pistolgrepp som används på AK-47:an."
+L["uplp_ak_grip_old.description"] = "Gammaldags pistolgrepp som används på AK 7,62."
 
 L["uplp_ak_grip_tac.printname"] = "Lisyan Tactical-Pistolgrepp"
 L["uplp_ak_grip_tac.compactname"] = "Lisyan"
@@ -610,7 +623,7 @@ L["uplp_ak_grip_tapco.description"] = "Gummerat pistolgrepp av PAWCO."
 
 L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistolgrepp"
 L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
-L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på PP-19-01 \"Vityaz\"."
+L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på kulsprutepistolen AK \"Vityaz\"."
 
 L["uplp_ak_grip_beryl.printname"] = "Szermierz Pistolgrepp"
 L["uplp_ak_grip_beryl.compactname"] = "Szermierz"
@@ -620,26 +633,26 @@ L["uplp_ak_grip_molot.printname"] = "Molot Pistolgrepp"
 L["uplp_ak_grip_molot.compactname"] = "Molot"
 L["uplp_ak_grip_molot.description"] = "Standard pistolgrepp som används på hagelgeväret Molot."
 
-L["uplp_ak_grip_12.printname"] = "AK-12 Pistolgrepp"
-L["uplp_ak_grip_12.compactname"] = "AK-12"
-L["uplp_ak_grip_12.description"] = "Standard pistolgrepp som används på AK-12:an."
+L["uplp_ak_grip_12.printname"] = "AK M22 Pistolgrepp"
+L["uplp_ak_grip_12.compactname"] = "AK M22"
+L["uplp_ak_grip_12.description"] = "Standard pistolgrepp som används på AK M22:an."
 
 L["uplp_ak_grip_12evo.printname"] = "EVO-Pistolgrepp"
 L["uplp_ak_grip_12evo.compactname"] = "EVO"
-L["uplp_ak_grip_12evo.description"] = "Uppgraderat pistolgrepp och varbygel för användning på AK-12:an."
+L["uplp_ak_grip_12evo.description"] = "Uppgraderat pistolgrepp och varbygel för användning på AK M23:an."
 
 ////// Handguards
-L["uplp_ak_hg_100.printname"] = "100-Serie Handskydd"
-L["uplp_ak_hg_100.compactname"] = "100-S"
-L["uplp_ak_hg_100.description"] = "Modernt plasthandskydd som används på AK-103:an. Kommer med undermontad skena för användning av framgrepp."
+L["uplp_ak_hg_100.printname"] = "M10-Handskydd"
+L["uplp_ak_hg_100.compactname"] = "M10"
+L["uplp_ak_hg_100.description"] = "Modernt plasthandskydd som används på AK M10:an. Kommer med undermontad skena för användning av framgrepp."
 
 L["uplp_ak_hg_old.printname"] = "Gammaldags Handskydd"
 L["uplp_ak_hg_old.compactname"] = "Gammaldags"
-L["uplp_ak_hg_old.description"] = "Gammaldags handskydd som används på AK-47:an."
+L["uplp_ak_hg_old.description"] = "Gammaldags handskydd som används på AK 7,62."
 
-L["uplp_ak_hg_rpk.printname"] = "Klassiskt RPK-Handskydd"
-L["uplp_ak_hg_rpk.compactname"] = "K. RPK"
-L["uplp_ak_hg_rpk.description"] = "Trähandskydd som används på RPK och RPK-74:an."
+L["uplp_ak_hg_rpk.printname"] = "HPK-Handskydd"
+L["uplp_ak_hg_rpk.compactname"] = "HPK"
+L["uplp_ak_hg_rpk.description"] = "Trähandskydd som används på HPK."
 
 L["uplp_ak_hg_beryl.printname"] = "Szermierz-Handskydd"
 L["uplp_ak_hg_beryl.compactname"] = "Szermierz"
@@ -651,7 +664,7 @@ L["uplp_ak_hg_tac.description"] = "Lättviktigt och sportigt handskydd till AK-g
 
 L["uplp_ak_hg_wood.printname"] = "Trähandskydd"
 L["uplp_ak_hg_wood.compactname"] = "Trä"
-L["uplp_ak_hg_wood.description"] = "Trähandskydd som används på AK-74:an."
+L["uplp_ak_hg_wood.description"] = "Trähandskydd som används på AK 5,45."
 
 L["uplp_ak_hg_dong.printname"] = "Dong-Handskydd"
 L["uplp_ak_hg_dong.compactname"] = "Dong"
@@ -673,26 +686,26 @@ L["uplp_ak_hg_su_dong.printname"] = "Dong-Handskydd"
 L["uplp_ak_hg_su_dong.compactname"] = "Dong"
 L["uplp_ak_hg_su_dong.description"] = "Trähandskydd från ett AK-gevär med rumänskt ursprung med inbyggt framgrepp."
 
-L["uplp_ak_hg_12.printname"] = "AK-12 Handskydd"
-L["uplp_ak_hg_12.compactname"] = "AK-12"
-L["uplp_ak_hg_12.description"] = "Standard handskydd som används på AK-12:an."
+L["uplp_ak_hg_12.printname"] = "AK M23 Handskydd"
+L["uplp_ak_hg_12.compactname"] = "AK M23"
+L["uplp_ak_hg_12.description"] = "Standard handskydd som används på AK M23:an."
 
-L["uplp_ak_hg_rpk16.printname"] = "RPK-16 Handskydd"
-L["uplp_ak_hg_rpk16.compactname"] = "RPK-16"
-L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på RPK-16."
+L["uplp_ak_hg_rpk16.printname"] = "HPK M16 Handskydd"
+L["uplp_ak_hg_rpk16.compactname"] = "HPK M16"
+L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på HPK M16."
 
 ////// Magazines
 /// 7.62x39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Laddat med " .. col.b .. "7,62x39mm Sovjet" .. col.e .. " som används av AK-47:an, AK-103:an och AK-15."
+local loaded762 = loaded .. "Laddat med " .. col.b .. "7,62x39mm Sovjet" .. col.e .. " som används av AK 7,62, AK M10 och AK M16 5.56."
 
 L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7,62x39mm (Bakelit)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30P 7,62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
 
-L["uplp_ak_mag_762_30_12.printname"] = "30-Patroner 7,62x39mm (AK-12-Style)"
-L["uplp_ak_mag_762_30_12.compactname"] = "30P 7,62 (12)"
-L["uplp_ak_mag_762_30_12.description"] = "30-patronersmagasin som används på AK-15-geväret." .. loaded762
+L["uplp_ak_mag_762_30_12.printname"] = "30-Patroner 7,62x39mm (M23-Style)"
+L["uplp_ak_mag_762_30_12.compactname"] = "30P 7,62 (M23)"
+L["uplp_ak_mag_762_30_12.description"] = "30-patronersmagasin som används på AK M16 5.56-geväret." .. loaded762
 
 L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62x39mm (Stål)"
 L["uplp_ak_mag_762_30_old.compactname"] = "30P 7,62 (S)"
@@ -704,7 +717,7 @@ L["uplp_ak_mag_762_30_old.description"] = "30-patronersmagasin gjorda av det god
 
 L["uplp_ak_mag_762_30_oldest.printname"] = "30-Patroner 7,62x39mm (Utjämnad Stål)"
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30P 7,62 (US)"
-L["uplp_ak_mag_762_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål." .. loaded762
+L["uplp_ak_mag_762_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål. Riktigt gammal grej som faktiskt fortfarande fungerar! Du kanske borde lämna in den till ett museum?" .. loaded762
 
 L["uplp_ak_mag_762_40.printname"] = "40-Patroner 7,62x39mm (Bakelit)"
 L["uplp_ak_mag_762_40.compactname"] = "40P 7,62 (B)"
@@ -719,7 +732,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75P 7,62 T"
 L["uplp_ak_mag_762_drum.description"] = "75-patroners cylindriskt trummagasin." .. loaded762
 
 /// 5,45x39mm
-local loaded545 = loaded .. "Laddat med " .. col.b .. "5,45x39mm" .. col.e .. " som används av AK-74:an och derivat." .. changeammo.smg1
+local loaded545 = loaded .. "Laddat med " .. col.b .. "5,45x39mm" .. col.e .. " som används av AK 5,45 och derivat." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30-Patroner 5,45x39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30P 5,45 (P)"
@@ -729,13 +742,13 @@ L["uplp_ak_mag_545_30_bak.printname"] = "30-Patroner 5,45x39mm (Bakelit)"
 L["uplp_ak_mag_545_30_bak.compactname"] = "30P 5,45 (B)"
 L["uplp_ak_mag_545_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45x39mm (Magpul)"
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45x39mm (Wildcat X)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30P 5,45 (PM)"
-L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners PMAG tillverkad av Magpul." .. loaded545
+L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners PMAG tillverkad av Wildcat X." .. loaded545
 
-L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45x39mm (AK-12-Style)"
-L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (12)"
-L["uplp_ak_mag_545_30_12.description"] = "30-patronersmagasin som används på AK-12-geväret." .. loaded545
+L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45x39mm (M23-Style)"
+L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
+L["uplp_ak_mag_545_30_12.description"] = "30-patronersmagasin som används på AK M23-geväret." .. loaded545
 
 L["uplp_ak_mag_545_45.printname"] = "45-Patroner 5,45x39mm (Bakelite)"
 L["uplp_ak_mag_545_45.compactname"] = "45P 5,45 (B)"
@@ -745,99 +758,99 @@ L["uplp_ak_mag_545_60.printname"] = "60-Patroner 5,45x39mm Quadstack"
 L["uplp_ak_mag_545_60.compactname"] = "60P 5,45 (Q)"
 L["uplp_ak_mag_545_60.description"] = "60-patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\n\n\nTjock jäkel"
 
-L["uplp_ak_mag_545_drum.printname"] = "75-Patroner 5,45x39mm RPK-16 Trumma"
+L["uplp_ak_mag_545_drum.printname"] = "75-Patroner 5,45x39mm HPK M16 Trumma"
 L["uplp_ak_mag_545_drum.compactname"] = "75P 5,45 T"
-L["uplp_ak_mag_545_drum.description"] = "75-patroners cylindriskt trummagasin från RPK-16." .. loaded545
+L["uplp_ak_mag_545_drum.description"] = "75-patroners cylindriskt trummagasin från HPK M16." .. loaded545
 
 /// 5,56x45mm NATO
-local loaded556 = loaded .. "Laddat med " .. col.b .. "5,56x45mm" .. col.e .. " som används av AK-101:an och AK-102:an." .. changeammo.smg1
+local loaded556 = loaded .. "Laddat med " .. col.b .. "5,56x45mm" .. col.e .. " som används av AK M10 5,56." .. changeammo.smg1
 
 L["uplp_ak_mag_556_30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30P 5,56 (P)"
 L["uplp_ak_mag_556_30.description"] = "30-patronersmagasin tillverkade av polymer." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30-Patroner 5,56x45mm (Magpul)"
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Patroner 5,56x45mm (Wildcat X)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30P 5,56 (PM)"
-L["uplp_ak_mag_556_30_pmag.description"] = "30-patroners PMAG tillverkad av Magpul." .. loaded556
+L["uplp_ak_mag_556_30_pmag.description"] = "30-patroners PMAG tillverkad av Wildcat X." .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30-Patroner 5,56x45mm (AK-12-Style)"
-L["uplp_ak_mag_556_30_12.compactname"] = "30P 5,56 (12)"
-L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin som används på AK-19-geväret." .. loaded556
+L["uplp_ak_mag_556_30_12.printname"] = "30-Patroner 5,56x45mm (M23-Style)"
+L["uplp_ak_mag_556_30_12.compactname"] = "30P 5,56 (M23)"
+L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin som används på AK M23 5.56-geväret." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Patroner AK-308 7,62x51mm"
+L["uplp_ak_mag_308_20.printname"] = "20-Patroner 7,62x51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20S 7,62x51"
 L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med " .. col.b .. "7,62x51mm patroner" .. col.e .. " som används på AK-308-geväret." .. changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med " .. col.b .. "9x39mm patroner" .. col.e .. " som används av AK-9:an.\nEndast ett par hundra av AK-9:an gjordes!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med " .. col.b .. "9x39mm patroner" .. col.e .. " som används av AK 9mm.\nEndast ett par hundra AK 9mm gjordes!" .. changeammo.smg1
 
 ////// Muzzles
-L["uplp_ak_mz_std.printname"] = "100-Serie Mynningsbroms"
-L["uplp_ak_mz_std.compactname"] = "100-S MB"
-L["uplp_ak_mz_std.description"] = "Standard mynningsbroms som används på AK-103:an."
+L["uplp_ak_mz_std.printname"] = "M10 Mynningsbroms"
+L["uplp_ak_mz_std.compactname"] = "M10 MB"
+L["uplp_ak_mz_std.description"] = "Standard mynningsbroms som används på AK M10:an."
 
-L["uplp_ak_mz_akm.printname"] = "AKM Mynningsbroms"
-L["uplp_ak_mz_akm.compactname"] = "AKM MB"
-L["uplp_ak_mz_akm.description"] = "Standard mynningsbroms som används på AKM."
+L["uplp_ak_mz_akm.printname"] = "AK 7.62 Mynningsbroms"
+L["uplp_ak_mz_akm.compactname"] = "AK 7.62 MB"
+L["uplp_ak_mz_akm.description"] = "Standard mynningsbroms som används på AK 7.62."
 
-L["uplp_ak_mz_compact.printname"] = "74U / 105 Mynningsbroms"
-L["uplp_ak_mz_compact.compactname"] = "74U/105 MB"
-L["uplp_ak_mz_compact.description"] = "Standard mynningsbroms som används på AKS-74U och AK-105:an."
+L["uplp_ak_mz_compact.printname"] = "AK Short-Mynningsbroms"
+L["uplp_ak_mz_compact.compactname"] = "Short-MB"
+L["uplp_ak_mz_compact.description"] = "Standard mynningsbroms som används på AK Short."
 
 L["uplp_ak_mz_rpk.printname"] = "Klassisk RPK Mynningsbroms"
 L["uplp_ak_mz_rpk.compactname"] = "RPK MB"
-L["uplp_ak_mz_rpk.description"] = "Standard mynningsbroms som används på RPK, RPK-74 och RPK-74M."
+L["uplp_ak_mz_rpk.description"] = "Standard mynningsbroms som används på HPK."
 
-L["uplp_ak_mz_vityaz.printname"] = "Vityaz Mynningsbroms"
-L["uplp_ak_mz_vityaz.compactname"] = "Vityaz MB"
-L["uplp_ak_mz_vityaz.description"] = "Standard mynningsbroms som används på PP-19-01 \"Vityaz\"."
+L["uplp_ak_mz_vityaz.printname"] = "\"Vityaz\" Mynningsbroms"
+L["uplp_ak_mz_vityaz.compactname"] = "\"Vityaz\" MB"
+L["uplp_ak_mz_vityaz.description"] = "Standard mynningsbroms som används på kulsprutepistolen AK \"Vityaz\"."
 
-L["uplp_ak_mz_bizon.printname"] = "Bizon Mynningsbroms"
-L["uplp_ak_mz_bizon.compactname"] = "Bizon MB"
-L["uplp_ak_mz_bizon.description"] = "Standard mynningsbroms som används på PP-19 \"Bizon\"."
+L["uplp_ak_mz_bizon.printname"] = "\"Bizon\" Mynningsbroms"
+L["uplp_ak_mz_bizon.compactname"] = "\"Bizon\" MB"
+L["uplp_ak_mz_bizon.description"] = "Standard mynningsbroms som används på kulsprutepistolen AK \"Bizon\"."
 
-L["uplp_ak_mz_12.printname"] = "AK-12 Mynningsbroms"
-L["uplp_ak_mz_12.compactname"] = "AK-12 MB"
-L["uplp_ak_mz_12.description"] = "Standard mynningsbroms som används på AK-12."
+L["uplp_ak_mz_12.printname"] = "AK M23 Mynningsbroms"
+L["uplp_ak_mz_12.compactname"] = "AK M23 MB"
+L["uplp_ak_mz_12.description"] = "Standard mynningsbroms som används på AK M23:an."
 
-L["uplp_ak_mz_19.printname"] = "AK-19 Mynningsbroms"
-L["uplp_ak_mz_19.compactname"] = "AK-19 MB"
-L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK-19, en 5,56x45mm exportversion av AK-12:an."
+L["uplp_ak_mz_19.printname"] = "AK M23 5.56 Mynningsbroms"
+L["uplp_ak_mz_19.compactname"] = "M23 5.56 MB"
+L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK M23 5.56, en 5,56x45mm exportversion av AK M23:an."
 
-L["uplp_ak_mz_rpk16.printname"] = "RPK-16 Mynningsbroms"
-L["uplp_ak_mz_rpk16.compactname"] = "RPK-16 MB"
-L["uplp_ak_mz_rpk16.description"] = "Standard mynningsbroms som används på RPK-16."
+L["uplp_ak_mz_rpk16.printname"] = "HPK M16 Mynningsbroms"
+L["uplp_ak_mz_rpk16.compactname"] = "HPK M16 MB"
+L["uplp_ak_mz_rpk16.description"] = "Standard mynningsbroms som används på HPK M16."
 
-L["uplp_ak_mz_silencer.printname"] = "PBS-1 Ljuddämpare"
-L["uplp_ak_mz_silencer.compactname"] = "PBS-1"
+L["uplp_ak_mz_silencer.printname"] = "AK Ljuddämpare"
+L["uplp_ak_mz_silencer.compactname"] = "AK Ljud."
 L["uplp_ak_mz_silencer.description"] = "Standard utfärdad ljuddämpare som använts på flera militära AK-gevär."
 
 ////// Stocks
 L["uplp_ak_stock_fold.printname"] = "Polymer Vikbar Kolv"
 L["uplp_ak_stock_fold.compactname"] = "Polymer V"
-L["uplp_ak_stock_fold.description"] = "Vikbar kolv som används av AK-103:an."
+L["uplp_ak_stock_fold.description"] = "Vikbar kolv som används av AK M10:an."
 
 L["uplp_ak_stock_skele.printname"] = "Skelettkolv"
 L["uplp_ak_stock_skele.compactname"] = "Skelett"
-L["uplp_ak_stock_skele.description"] = "Vikbar, lättvikt kolv som används av AKS-74U."
+L["uplp_ak_stock_skele.description"] = "Vikbar, lättvikt kolv som används av AK 7,62-F och derivat."
 
 L["uplp_ak_stock_old.printname"] = "Gammaldags Kolv"
 L["uplp_ak_stock_old.compactname"] = "Gammaldags"
-L["uplp_ak_stock_old.description"] = "Gammaldags kolv som används av AK-47:an.\nEn riktigt gammal goding, denna!\nKombinera med " .. col.b .. "Gammaldags Dammskydd" .. col.e .. " för att ändra utseendet på lådan."
+L["uplp_ak_stock_old.description"] = "Gammaldags kolv som användes av dem första AK 7,62-gevären.\nEn riktigt gammal goding, denna!\nKombinera med " .. col.b .. "Gammaldags Dammskydd" .. col.e .. " för att ändra utseendet på lådan."
 
-L["uplp_ak_stock_rpk.printname"] = "RPK-Träkolv"
-L["uplp_ak_stock_rpk.compactname"] = "RPK-T"
-L["uplp_ak_stock_rpk.description"] = "Tung träkolv som används av RPK och RPK-74:an."
+L["uplp_ak_stock_rpk.printname"] = "HPK-Kolv"
+L["uplp_ak_stock_rpk.compactname"] = "HPK"
+L["uplp_ak_stock_rpk.description"] = "Tung träkolv som används av HPK."
 
-L["uplp_ak_stock_rpk74.printname"] = "Polymer RPK-Kolv"
-L["uplp_ak_stock_rpk74.compactname"] = "RPK P"
-L["uplp_ak_stock_rpk74.description"] = "Tung polymer-kolv som används av RPK-74M."
+L["uplp_ak_stock_rpk74.printname"] = "HPK M74 Kolv"
+L["uplp_ak_stock_rpk74.compactname"] = "HPK M74"
+L["uplp_ak_stock_rpk74.description"] = "Tung polymer-kolv som används av HPK M74."
 
 L["uplp_ak_stock_wood.printname"] = "Träkolv"
 L["uplp_ak_stock_wood.compactname"] = "Trä"
-L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK-74:an."
+L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK 5,45 och AK 7,62."
 
 L["uplp_ak_stock_beryl.printname"] = "Szermierz-Kolv"
 L["uplp_ak_stock_beryl.compactname"] = "Szermierz"
@@ -849,7 +862,7 @@ L["uplp_ak_stock_poly.description"] = "Lättvikt polymer kolv till AK-gevär."
 
 L["uplp_ak_stock_tube12.printname"] = "Bufferrör"
 L["uplp_ak_stock_tube12.compactname"] = "Buffer"
-L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som används av AK-12:an. Tillåter installering av AR-15-kompatibla kolvar.\nRolig fakta: Rörens diameter är en liten bit annorlunda från normala AR-15 vilket gör att dem flesta AR-15-kolvarna vinglar.\n(Men detta är ett datorspel, så... yeet)"
+L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som används av AK M23:an. Tillåter installering av AR-15-kompatibla kolvar.\nRolig fakta: Rörens diameter är en liten bit annorlunda från normala AR-15 vilket gör att dem flesta AR-15-kolvarna vinglar.\n(Men detta är ett datorspel, så... yeet)"
 
 L["uplp_ak_stock_tube.printname"] = "Bufferrör"
 L["uplp_ak_stock_tube.compactname"] = "Buffer"
@@ -859,27 +872,25 @@ L["uplp_ak_stock_molot.printname"] = "Molot-Kolv"
 L["uplp_ak_stock_molot.compactname"] = "Molot"
 L["uplp_ak_stock_molot.description"] = "Taktisk kolv som används på hagelgeväret Molot."
 
-L["uplp_ak_stock_underfold.printname"] = "AKMS Undervikbar Kolv"
+L["uplp_ak_stock_underfold.printname"] = "AK 7,62-S Undervikbar Kolv"
 L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"
-L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AKMS.\nInte kompatibel med <color=255,100,100>40-patroners eller högre magasin.\n<color=255,100,100>Tillåter också inte användningen av anpassade framgrepp</color> på vissa handskydd."
+L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AK 7,62-S.\nInte kompatibel med <color=255,100,100>40-patroners eller högre magasin.\n<color=255,100,100>Tillåter också inte användningen av anpassade framgrepp</color> på vissa handskydd."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith-Kolv"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
-L["uplp_ak_stock_pt1.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Lägger till 10% till alla förmåner men lägger också till 5% till alla nackdelar."
+L["uplp_ak_stock_pt1.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Lägger till 5% till alla förmåner men lägger också till 10% till alla nackdelar."
 
 L["uplp_ak_stock_pt3.printname"] = "Zenith-2-Stock"
 L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
-L["uplp_ak_stock_pt3.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Lägger till 10% till alla förmåner men lägger också till 5% till alla nackdelar."
+L["uplp_ak_stock_pt3.description"] = "Taktisk kolv med ryskt ursprung.\nOm den är \"Förlängd\": Lägger till 5% till alla förmåner men lägger också till 10% till alla nackdelar."
 
 L["uplp_ak_stock_evo.printname"] = "EVO-Kolv"
 L["uplp_ak_stock_evo.compactname"] = "EVO"
-L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning av AK-12:an.\nOm den är \"Förlängd\": Lägger till 10% till alla förmåner men lägger också till 5% till alla nackdelar."
+L["uplp_ak_stock_evo.description"] = "Uppgraderad taktisk kolv för användning av AK M23:an.\nOm den är \"Förlängd\": Lägger till 5% till alla förmåner men lägger också till 10% till alla nackdelar."
 
-L["uplp_ak_stock_ppk.printname"] = "PPK-20-Kolv"
-L["uplp_ak_stock_ppk.compactname"] = "PPK-20"
--- L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nOm den är \"Förlängd\": Multiplicerar förmåner med 20% till, men multiplicerar nackdelar med 35%."
--- L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20.\nFörbättrar rekylkontroll när den är förlängd och ökar vapenhantering när den är invikt."
-L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen PPK-20."
+L["uplp_ak_stock_ppk.printname"] = "AK KPist. M20-Kolv"
+L["uplp_ak_stock_ppk.compactname"] = "M20"
+L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av kulsprutepistolen AK M20."
 
 /////////// AK SMG Exclusive
 ////// Receivers
@@ -907,12 +918,12 @@ L["uplp_ak_smg_brl_long.description"] = "Lång 400mm pipa till AK Kpist. (\"Vity
 
 L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Pipa"
 L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
-L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425mm pipa till AK KPist. med PPK-20-Konfigueringen."
+L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425mm pipa till AK KPist. med M20-Konfigueringen."
 
 ////// Receivers
-L["uplp_ak_smg_conf_ppk20.printname"] = "PPK-20-Konfiguering"
+L["uplp_ak_smg_conf_ppk20.printname"] = "AK SMG M20-Konfiguering"
 L["uplp_ak_smg_conf_ppk20.compactname"] = "PPK-20"
-L["uplp_ak_smg_conf_ppk20.description"] = "Konverterar AK KPist. till \"PPK-20\"-konfigueringen.\nModern låda med stöd för AK-12 pistolgrepp, framgrepp och riktmedel."
+L["uplp_ak_smg_conf_ppk20.description"] = "Konverterar AK KPist. till \"M20\"-konfigueringen.\nModern låda med stöd för AK M23 pistolgrepp, framgrepp och riktmedel."
 
 //////////////////// AR15
 L["uplp_weapon_ar15"] = "AR-15"
@@ -1361,8 +1372,8 @@ L["uplp_mutant_mag_30_bak.printname"] = "30-Patroner 7,62x39mm (Bakelit)"
 L["uplp_mutant_mag_30_bak.compactname"] = "30P 7,62 (B)"
 L["uplp_mutant_mag_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit."
 
-L["uplp_mutant_mag_30_12.printname"] = "30-Patroner 7,62x39mm (AK-12-Style)"
-L["uplp_mutant_mag_30_12.compactname"] = "30P 7,62 (12)"
+L["uplp_mutant_mag_30_12.printname"] = "30-Patroner 7,62x39mm (M23-Style)"
+L["uplp_mutant_mag_30_12.compactname"] = "30P 7,62 (M23)"
 L["uplp_mutant_mag_30_12.description"] = "30-patronersmagasin gjorda för att likna AK-12:ans magasin."
 
 L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62x39mm (Stål)"
@@ -1410,14 +1421,14 @@ L["uplp_molot_brl_micro.compactname"] = "325mm Micro"
 L["uplp_molot_brl_micro.description"] = "Förkortad 325mm micro-pipa till Molot."
 
 ////// Handguards
-L["uplp_molot_hg_100.printname"] = "100-Serie Handskydd"
+L["uplp_molot_hg_100.printname"] = "M10 Handskydd"
 L["uplp_molot_hg_100.compactname"] = "100-S"
 L["uplp_molot_hg_100.description"] = "Modern plastic handguard originally used on the AK-103. Comes with a bottom rail for use with foregrips."
-L["uplp_molot_hg_100.description"] = "Modernt plasthandskydd som egentligen används på AK-103:an. Kommer med undermonterad skena för användning av framgrepp."
+L["uplp_molot_hg_100.description"] = "Modernt plasthandskydd som egentligen används på AK M10:an. Kommer med undermonterad skena för användning av framgrepp."
 
 L["uplp_molot_hg_wood.printname"] = "Klassiskt RPK-Handskydd"
 L["uplp_molot_hg_wood.compactname"] = "K. RPK"
-L["uplp_molot_hg_wood.description"] = "Trähandskydd som egentligen användes på RPK och RPK-74:an."
+L["uplp_molot_hg_wood.description"] = "Trähandskydd som egentligen användes på HPK M74."
 
 L["uplp_molot_hg_azen.printname"] = "Zenith-Handskydd"
 L["uplp_molot_hg_azen.compactname"] = "Zenith"

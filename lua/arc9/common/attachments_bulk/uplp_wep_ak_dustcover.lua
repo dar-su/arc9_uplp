@@ -125,8 +125,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_beryl")
 
 ATT = {}
 
-ATT.PrintName = "2023 AK-12M1 Package"
-ATT.CompactName = "'23 AK-12M1"
+ATT.PrintName = "AK-12M1 2023 Package"
+ATT.CompactName = "'AK-12M1 2023"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
@@ -142,8 +142,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
 
 ATT = {}
 
-ATT.PrintName = "2022 AK-12 Package"
-ATT.CompactName = "'22 AK-12"
+ATT.PrintName = "AK-12 2022 Package"
+ATT.CompactName = "'AK-12 2022"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
@@ -159,8 +159,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_22")
 
 ATT = {}
 
-ATT.PrintName = "2016 AK-12 Package WRITE SOMETHING IN DESC ABOUT  2BURST"
-ATT.CompactName = "'16 AK-12"
+ATT.PrintName = "AK-12 2016 Package"
+ATT.CompactName = "'AK-12 2016"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
@@ -191,8 +191,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_16")
 
 ATT = {}
 
-ATT.PrintName = "dovtail mount"
-ATT.CompactName = "meow"
+ATT.PrintName = "Dovetail Mount"
+ATT.CompactName = "Dovetail"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount"}

@@ -419,12 +419,12 @@ ATT.ToggleStats = {
 		ModelBodygroups = "7",
         UPLPFoldStock = true,
 		/// Positives
-		RecoilMult = 0.7,
-		RecoilAutoControlMult = 1.3,
-		VisualRecoilMultHipFire = 0.2,
+		RecoilMult = 0.8 * 0.95,
+		RecoilAutoControlMult = 1.2 * 0.95,
+		VisualRecoilMultHipFire = 0.3 * 0.95,
 		/// Negatives
-		AimDownSightsTimeMult = 1.15,
-		SprintToFireTimeMult = 1.2,
+		AimDownSightsTimeMult = 1.1 * 1.1,
+		SprintToFireTimeMult = 1.2 * 1.1,
     },
 }
 
