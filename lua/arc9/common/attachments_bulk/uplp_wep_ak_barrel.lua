@@ -11,7 +11,7 @@ ATT.Description = "Standard 400mm (16\") barrel used on AK-100 rifles."
 
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_16"}
 
@@ -51,7 +51,7 @@ ATT.Description = "Short 300mm (12\") barrel used on the AK-102 and AK-104."
 
 ATT.Icon = Material(iconfolder .. "compact.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_comp"}
 
@@ -96,7 +96,7 @@ ATT.Description = "Standard 400mm (16\") barrel used on the AK-47 and AKM."
 
 ATT.Icon = Material(iconfolder .. "akm.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_akm"}
 
@@ -135,7 +135,7 @@ ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-74 and RPK-74M."
 
 ATT.Icon = Material(iconfolder .. "rpk.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk"}
 
@@ -181,7 +181,7 @@ ATT.Description = "Longer 432mm (17\") barrel used on the AK-109."
 
 ATT.Icon = Material(iconfolder .. "109.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_109","uplp_ak_dc_no"}
 
@@ -218,7 +218,7 @@ ATT.Description = "Compact 203mm (8\") barrel used on the AKS-74U."
 
 ATT.Icon = Material(iconfolder .. "brsu.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_su","uplp_ak_rearsight"}
 
@@ -256,7 +256,7 @@ ATT.Description = "Standard 400mm (16\") barrel used on the AK-12."
 
 ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12", "ak12_part"}
 
@@ -295,7 +295,7 @@ ATT.Description = "Shortened 230mm (9\") barrel from the prototype AK-12K."
 
 ATT.Icon = Material(iconfolder .. "12k.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
 
@@ -334,7 +334,7 @@ ATT.Description = "Shortened 483mm (19\") barrel used on the AK-19, an export ve
 
 ATT.Icon = Material(iconfolder .. "19.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
 
@@ -373,7 +373,7 @@ ATT.Description = "Heavy 585mm (23\") barrel used on the RPK-16."
 
 ATT.Icon = Material(iconfolder .. "rpk16.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}
 

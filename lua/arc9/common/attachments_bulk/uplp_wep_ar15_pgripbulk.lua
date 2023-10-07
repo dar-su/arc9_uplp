@@ -19,7 +19,7 @@ ATT.ModelBodygroups = "4"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_416")
 
@@ -41,7 +41,7 @@ ATT.ModelBodygroups = "3"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_massive")
 
@@ -63,7 +63,7 @@ ATT.ModelBodygroups = "2"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_modern")
 
@@ -85,7 +85,7 @@ ATT.ModelBodygroups = "5"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.95
@@ -115,7 +115,7 @@ ATT.ModelBodygroups = "6"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.95
@@ -140,7 +140,7 @@ ATT.ModelBodygroups = "7"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.95
@@ -165,7 +165,7 @@ ATT.ModelBodygroups = "0"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_std")
 
@@ -187,7 +187,7 @@ ATT.ModelBodygroups = "1"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_tac")
 

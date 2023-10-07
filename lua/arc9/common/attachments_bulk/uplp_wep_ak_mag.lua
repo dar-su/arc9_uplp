@@ -10,7 +10,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "762b.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
@@ -27,7 +27,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "76212.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
@@ -44,7 +44,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "762old.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
@@ -61,7 +61,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "762oldest.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
@@ -78,7 +78,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "76240.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
@@ -109,7 +109,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "76240old.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
@@ -140,7 +140,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "76275.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 
@@ -220,7 +220,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54530.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545.mdl"
@@ -269,7 +269,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "545b.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_bak.mdl"
@@ -318,7 +318,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "545p.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
@@ -367,7 +367,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54512.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_12.mdl"
@@ -416,7 +416,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54545.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45.mdl"
@@ -472,7 +472,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54560.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_60.mdl"
@@ -528,7 +528,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54595.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
@@ -605,7 +605,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "556.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556.mdl"
@@ -654,7 +654,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "556p.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
@@ -703,7 +703,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "55612.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_12.mdl"
@@ -779,7 +779,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "308.png", "mips smooth")
 ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_308"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_308"}
 
@@ -866,7 +866,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "939.png", "mips smooth")
 ATT.Category = "uplp_ak_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_calib_939"}
 

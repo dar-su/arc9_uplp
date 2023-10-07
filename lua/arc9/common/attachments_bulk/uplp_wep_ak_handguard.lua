@@ -10,7 +10,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "100.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_100"}
@@ -46,7 +46,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_old"}
@@ -63,7 +63,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "rpk.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_rpk"}
@@ -81,7 +81,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_beryl"}
@@ -117,7 +117,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tca.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_tac"}
@@ -134,7 +134,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "w.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_wood"}
@@ -151,7 +151,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "dong.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
@@ -177,7 +177,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "zenc.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_azen_c"}
@@ -213,7 +213,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 ATT.Category = "uplp_handguard_normal"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_azen"}
 
@@ -251,7 +251,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sutac.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_su_tac","uplp_su_hgexists"}
 
@@ -286,7 +286,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sudong.png", "mips smooth")
 ATT.Category = "uplp_handguard_su"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
@@ -310,7 +310,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_12", "ak12_part"}
 
@@ -345,7 +345,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ExcludeElements = {"uplp_ak_hgsu"}
 
 ATT.ActivateElements = {"uplp_ak_hg_rpk16", "ak12_part"}

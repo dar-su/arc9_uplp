@@ -43,7 +43,7 @@ ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -94,7 +94,7 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -143,7 +143,7 @@ ATT.HoloSightSize = 1600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -192,7 +192,7 @@ ATT.HoloSightSize = 1600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -241,7 +241,7 @@ ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -314,7 +314,7 @@ ATT.DrawFunc = function(swep, model, wm)
 end
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(2, 0, 0)
 
@@ -378,7 +378,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
@@ -432,7 +432,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(1, 0, 0)
 
@@ -548,7 +548,7 @@ ATT.DrawFunc = function(swep, model, wm)
 end
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.5
@@ -701,7 +701,7 @@ ATT.DrawFunc = function(swep, model, wm)
 end
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.5
@@ -744,7 +744,7 @@ ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
@@ -787,7 +787,7 @@ ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_d1high")
 
@@ -826,7 +826,7 @@ ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_small"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
@@ -865,7 +865,7 @@ ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_direct"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds_direct")
 
@@ -903,7 +903,7 @@ ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_direct"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
 
@@ -941,7 +941,7 @@ ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_small"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
@@ -979,7 +979,7 @@ ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
@@ -1029,7 +1029,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.2
@@ -1086,7 +1086,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1155,7 +1155,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.45
@@ -1226,7 +1226,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.3
@@ -1282,7 +1282,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.4
@@ -1347,7 +1347,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.6
@@ -1451,7 +1451,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_optic_testthermal")
@@ -1505,7 +1505,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.3
@@ -1580,7 +1580,7 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1654,7 +1654,7 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true 
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1706,7 +1706,7 @@ ATT.HoloSightSize = 800
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1758,7 +1758,7 @@ ATT.HoloSightSize = 1600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1829,7 +1829,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.RTScopeNoBlur = true
 
 ATT.Category = "uplp_optic_big"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1881,7 +1881,7 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.1
@@ -1937,7 +1937,7 @@ ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_dovetail"
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.35

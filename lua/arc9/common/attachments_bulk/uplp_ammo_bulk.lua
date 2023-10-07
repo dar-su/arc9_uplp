@@ -15,7 +15,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "ar15/458.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
@@ -56,7 +56,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "ar15/50.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
@@ -97,7 +97,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "r.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 
@@ -113,7 +113,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "b.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_blue.mdl"
 
@@ -135,7 +135,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "g.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
@@ -162,7 +162,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "bl.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
@@ -187,7 +187,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "o.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_orange.mdl"
 
@@ -251,7 +251,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "y.png", "mips smooth")
 ATT.Category = "uplp_sg_ammo"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 

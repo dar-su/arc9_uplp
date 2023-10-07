@@ -10,7 +10,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "fold.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "1"
@@ -37,7 +37,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "skel.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "2"
@@ -69,7 +69,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "5"
@@ -96,7 +96,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "r.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "a"
@@ -124,7 +124,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "r74.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "b"
@@ -158,7 +158,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "w.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "d"
@@ -185,7 +185,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "b.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "e"
@@ -214,7 +214,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "0"
@@ -256,7 +256,7 @@ ATT.Attachments = {
 
 ATT.Icon = Material(iconfolder .. "12t.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "f"
@@ -287,7 +287,7 @@ ATT.Attachments = {
 
 ATT.Icon = Material(iconfolder .. "t.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "c"
@@ -307,7 +307,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "vepr.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "k"
@@ -336,7 +336,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "ms.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelOffset = Vector(-8.9, -3.55, 5)
@@ -393,7 +393,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "p1.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
@@ -446,7 +446,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "p3.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
@@ -500,7 +500,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_12"
 -- ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
@@ -548,7 +548,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "ppk1.png", "mips smooth")
 ATT.Category = "uplp_ak_stock_smg"
 -- ATT.Category = "uplp_ak_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 -- ATT.ModelBodygroups = "c"

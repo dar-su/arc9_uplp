@@ -22,7 +22,7 @@ ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_a
 -- ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Attachments = {
     -- {
@@ -64,7 +64,7 @@ ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_a
 ATT.RequireElements = {"uplp_ar15_barrel"}
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 
@@ -88,7 +88,7 @@ ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_no_backup_is", "uplp_ar
 -- ATT.RequireElements = {"uplp_ar15_barrel_mid"}
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 
@@ -107,7 +107,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "mlok.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -148,7 +148,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
 -- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 -- ATT.Category = "uplp_ar15_hg"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Attachments = {
     -- {
@@ -183,7 +183,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "s15.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
@@ -224,7 +224,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "s15r.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
@@ -265,7 +265,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "s15x.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -306,7 +306,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "s15xr.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -347,7 +347,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "rislong.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -388,7 +388,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "risshort.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Attachments = {
     -- {
@@ -424,7 +424,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -465,7 +465,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "tacs.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Attachments = {
     -- {
@@ -501,7 +501,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 -- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 -- ATT.Category = "uplp_ar15_hg"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Attachments = {
     -- {
@@ -537,7 +537,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 -- ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 -- ATT.Category = "uplp_ar15_hg"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 -- ATT.ExcludeElements = {"uplp_ar15_barrel_short", "uplp_ar15_barrel_mid"}
@@ -581,7 +581,7 @@ ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_a
 ATT.RequireElements = {"uplp_ar15_barrel"}
 
 ATT.Category = "uplp_ar15_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 

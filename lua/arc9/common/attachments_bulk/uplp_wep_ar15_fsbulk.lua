@@ -20,7 +20,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     4     + (swep:Get
 ATT.ExcludeElements = {"uplp_ar15_rs_short"}
 
 ATT.Category = "uplp_ar15_fs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_mbus")
 
@@ -43,7 +43,7 @@ ATT.ModelBodygroups = "8"
 ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
 ATT.Category = "uplp_ar15_fs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_scalar")
 
@@ -66,7 +66,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:Get
 ATT.ExcludeElements = {"uplp_ar15_rs_short"}
 
 ATT.Category = "uplp_ar15_fs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type1")
 
@@ -89,7 +89,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     2     + (swep:Get
 ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
 ATT.Category = "uplp_ar15_fs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type2")
 
@@ -112,7 +112,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     6     + (swep:Get
 ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
 ATT.Category = "uplp_ar15_fs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_utg")
 

@@ -37,7 +37,7 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_backup_optic"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(-0.75, 0, -0.12)
 
@@ -75,7 +75,7 @@ ATT.Sights = {
 ATT.ModelOffset = Vector(-0.75, 0, -0.12)
 
 ATT.Category = "uplp_backup_optic"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_is")
 
@@ -98,7 +98,7 @@ ATT.Icon = Material(iconfolder .. "cfs.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/fs_cunted.mdl"
 
 ATT.Category = "uplp_backup_optic_front"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, -0.12)
 

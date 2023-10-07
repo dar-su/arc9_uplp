@@ -19,7 +19,7 @@ ATT.ModelBodygroups = "1"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_chandle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_modern")
@@ -42,7 +42,7 @@ ATT.ModelBodygroups = "0"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_chandle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_std")
@@ -65,7 +65,7 @@ ATT.ModelBodygroups = "2"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_chandle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tac")
@@ -88,7 +88,7 @@ ATT.ModelBodygroups = "3"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_chandle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tacblack")

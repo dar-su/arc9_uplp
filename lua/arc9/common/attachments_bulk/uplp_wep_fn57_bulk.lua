@@ -15,7 +15,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "extmag.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_mag_ext"}
 
@@ -47,7 +47,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "trig.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_action"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_trigger_auto"}
 
@@ -76,7 +76,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "tan.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_skin"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_skin_tan_full"}
 
@@ -95,7 +95,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "half.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_skin"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_skin_tan_half"}
 
@@ -114,7 +114,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "pand.png", "mips smooth")
 
 ATT.Category = "uplp_fn57_skin"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_skin_panda"}
 

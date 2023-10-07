@@ -10,7 +10,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "0"
@@ -42,7 +42,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "akm.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "1"
@@ -72,7 +72,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "comp.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "2"
@@ -103,7 +103,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "rp.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "3"
@@ -131,7 +131,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "vityaz.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_smg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "4"
@@ -154,7 +154,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "bizon.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_smg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "5"
@@ -177,7 +177,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "6"
@@ -201,7 +201,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "19.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "7"
@@ -225,7 +225,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/ak_muzzles.mdl"
 -- ATT.ModelBodygroups = "8"
@@ -249,7 +249,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sil.png", "mips smooth")
 ATT.Category = "uplp_ak_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Folder = ARC9:GetPhrase("uplp_folder_suppressor")
 

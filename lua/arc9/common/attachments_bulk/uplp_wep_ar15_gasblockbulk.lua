@@ -26,7 +26,7 @@ ATT.ModelBodygroups = "2"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16")
@@ -53,7 +53,7 @@ ATT.ModelBodygroups = "3"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
@@ -78,7 +78,7 @@ ATT.ModelBodygroups = "0"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
@@ -103,7 +103,7 @@ ATT.ModelBodygroups = "1"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min_red")
@@ -130,7 +130,7 @@ ATT.ModelBodygroups = "4"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {

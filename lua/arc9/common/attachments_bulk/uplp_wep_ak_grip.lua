@@ -10,7 +10,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -30,7 +30,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "bak.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -50,7 +50,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -70,7 +70,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -93,7 +93,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "pawco.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -116,7 +116,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "v.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_smg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -136,7 +136,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -156,7 +156,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "vepr.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -176,7 +176,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 
@@ -196,7 +196,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_grip"}
 

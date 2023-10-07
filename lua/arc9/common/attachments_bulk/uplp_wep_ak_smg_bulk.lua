@@ -11,7 +11,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mag/919.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_rec"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "uplp_ak_smg_fs_12",
@@ -35,7 +35,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mag/919t.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_rec"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "uplp_ak_smg_fs_12",
@@ -62,7 +62,7 @@ ATT.SortOrder = 100
 
 ATT.Icon = Material(iconfolder .. "mag/b.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_rec"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "uplp_ak_smg_rec_bizon",
@@ -100,7 +100,7 @@ ATT.SortOrder = 100
 
 ATT.Icon = Material(iconfolder .. "mag/bold.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_rec"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "uplp_ak_smg_rec_bizon",
@@ -138,7 +138,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "barr/vlong.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_smg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_long")
 
@@ -152,7 +152,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "barr/vlong.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_smg_ppk20"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "uplp_ak_smg_brl_ppk20_long",
@@ -171,7 +171,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "ppk20.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_config"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "use_optics",
@@ -198,7 +198,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "dc/vrail.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_smg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "use_optics",
@@ -216,7 +216,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "dc/vrail.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_smg_bizon"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {
 "use_optics",

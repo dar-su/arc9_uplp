@@ -22,7 +22,7 @@ ATT.ModelBodygroups = "6"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     6     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
 ATT.Category = "uplp_ar15_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_m4")
 
@@ -47,7 +47,7 @@ ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_mbus")
 
@@ -72,7 +72,7 @@ ATT.ActivateElements = {"uplp_ar15_rs_short"}
 ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_scalar")
 
@@ -97,7 +97,7 @@ ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type1")
 
@@ -122,7 +122,7 @@ ATT.ActivateElements = {"uplp_ar15_rs_short"}
 ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type2")
 
@@ -147,7 +147,7 @@ ATT.ActivateElements = {"uplp_ar15_rs_short"}
 ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type3")
 

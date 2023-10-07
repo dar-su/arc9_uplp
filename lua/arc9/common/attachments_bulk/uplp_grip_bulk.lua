@@ -21,7 +21,7 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_horiz"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.95
@@ -57,7 +57,7 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_horiz"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.65
@@ -90,7 +90,7 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_horiz"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.65
@@ -120,7 +120,7 @@ ATT.LHIK_Priority = 8
 ATT.ActivateElements = {"uplp_grip_used"}
 
 ATT.Category = "uplp_grip_vert"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.95
@@ -152,7 +152,7 @@ ATT.LHIK_Priority = 8
 ATT.ActivateElements = {"uplp_grip_used"}
 
 ATT.Category = "uplp_grip_vert"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.95
@@ -183,7 +183,7 @@ ATT.LHIK_Priority = 8
 ATT.ActivateElements = {"uplp_grip_used"}
 
 ATT.Category = "uplp_grip_vert"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.8
@@ -215,7 +215,7 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_vert"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.8

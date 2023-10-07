@@ -49,7 +49,7 @@ ATT.RangeMaxMult = 0.5
 ATT.RangeMinMult = 0.8
 
 ATT.Category = "uplp_ar15_45_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_20")
 
@@ -102,7 +102,7 @@ ATT.RangeMinMult = 0.8
 ATT.ReloadTimeMult = 1.15
 
 ATT.Category = "uplp_ar15_45_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_40")
 
@@ -119,7 +119,7 @@ ATT.Icon = Material("entities/uplp_attachements/ar15/stmmagwel.png", "mips smoot
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_stm9_magwell"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.ReloadTimeMult = 0.85
@@ -163,7 +163,7 @@ end
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Ammo = "pistol"
 
@@ -234,7 +234,7 @@ end
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Ammo = "pistol"
 
@@ -305,7 +305,7 @@ end
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_glock_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Ammo = "pistol"
 
@@ -362,7 +362,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 
@@ -398,7 +398,7 @@ ATT.CustomPros = {
 ATT.ClipSizeOverride = 10
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_10"
@@ -436,7 +436,7 @@ ATT.ReloadTimeMult = 0.95
 ATT.ClipSizeOverride = 20
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_20"
@@ -463,7 +463,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag30")
 
@@ -497,7 +497,7 @@ ATT.ReloadTimeMult = 0.95
 ATT.ClipSizeOverride = 20
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_20"
@@ -526,7 +526,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag30")
 
@@ -564,7 +564,7 @@ ATT.CustomCons = {
 ATT.ModelOffset = Vector(0.15, 0, 0)
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_40"
@@ -603,7 +603,7 @@ ATT.CustomCons = {
 }
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_60"
@@ -642,7 +642,7 @@ ATT.CustomCons = {
 }
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_60"
@@ -682,7 +682,7 @@ ATT.CustomCons = {
 }
 
 ATT.Category = "uplp_ar15_556_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_100"

@@ -11,7 +11,7 @@ ATT.SortOrder = 100
 
 ATT.Icon = Material(iconfolder .. "extmag.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ClipSizeOverride = 13
 ATT.DropMagazineTime = 0.733
@@ -37,7 +37,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacmag.png", "mips smooth")
 ATT.Category = "uplp_deag_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/deagle_mag_tac.mdl"
 
@@ -56,7 +56,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacgrip.png", "mips smooth")
 ATT.Category = "uplp_deag_grip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.AimDownSightsTimeMult = 1.05
 ATT.DeployTimeMult = 0.75
@@ -73,7 +73,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "heavytrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 0.8
 ATT.RecoilMult = 1.15
@@ -92,7 +92,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "lighttrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.35
 ATT.RecoilMult = 1.1
@@ -110,7 +110,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "autotrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.5
 ATT.Firemodes = { { Mode = -1 } }
@@ -131,7 +131,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brcl.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"nomuz", "notac"}
 
@@ -150,7 +150,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brlong.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"nomuz", "notac"}
 
@@ -171,7 +171,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brtac.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.AimDownSightsTimeMult = 0.75
 ATT.RecoilMult = 1.1
@@ -189,7 +189,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brlongtac.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"nomuz"}
 
@@ -210,7 +210,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mzcut.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.RecoilMult = 0.95
@@ -229,7 +229,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mzh.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.AimDownSightsTimeMult = 1.25
 ATT.RecoilMult = 0.8
@@ -250,7 +250,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mztri.png", "mips smooth")
 ATT.Category = "uplp_deag_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.RecoilMult = 0.5

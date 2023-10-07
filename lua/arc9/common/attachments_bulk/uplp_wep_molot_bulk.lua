@@ -11,7 +11,7 @@ ATT.SortOrder = 100
 
 ATT.Icon = Material(iconfolder .. "brlong.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.8
@@ -36,7 +36,7 @@ ATT.SortOrder = 50
 
 ATT.Icon = Material(iconfolder .. "brcomp.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.75
@@ -59,7 +59,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brmini.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.75
@@ -82,7 +82,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brmicor.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -109,7 +109,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/100.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_molot_brl_mini", "uplp_molot_brl_micro"}
 
@@ -142,7 +142,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/w.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_molot_brl_mini", "uplp_molot_brl_micro"}
 
@@ -158,7 +158,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/zen.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -181,7 +181,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/zenc.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -204,7 +204,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/tac.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -227,7 +227,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/tacb.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -250,7 +250,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/tacw.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -273,7 +273,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/cool.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -296,7 +296,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "hg/cool2.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -321,7 +321,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "boltl.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RPMMult = 1.25
@@ -343,7 +343,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "bolth.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.85
@@ -368,7 +368,7 @@ ATT.SortOrder = 8
 
 ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_long.mdl"
 ATT.DropMagazineVelocity = Vector(0, -30, 15)
@@ -396,7 +396,7 @@ ATT.SortOrder = 19
 
 ATT.Icon = Material(iconfolder .. "drum.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.ClipSize = 19
@@ -436,7 +436,7 @@ ATT.SortOrder = 19
 
 ATT.Icon = Material(iconfolder .. "drumsoda.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.ClipSize = 19
@@ -477,7 +477,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mzdef.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_vepr_default.mdl"
 -- ATT.MuzzleDevice = true

@@ -22,7 +22,7 @@ ATT.Scale = 1.33
 
 -- ATT.SortOrder = 0
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -58,7 +58,7 @@ ATT.ModelBodygroups = "0"
 ATT.Scale = 1.1
 
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -90,7 +90,7 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "3"
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -127,7 +127,7 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "4"
 
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -161,7 +161,7 @@ ATT.ModelBodygroups = "2"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -190,7 +190,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "vepr/mzch.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_choke.mdl"
 ATT.MuzzleDevice = true
@@ -213,7 +213,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "vepr/mzgk.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_gk.mdl"
 ATT.MuzzleDevice = true
@@ -240,7 +240,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "vepr/mzheav.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy.mdl"
 ATT.MuzzleDevice = true
@@ -268,7 +268,7 @@ ATT.SortOrder = 100
 
 ATT.Icon = Material(iconfolder .. "vepr/mzsil.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_silencer.mdl"
 ATT.MuzzleDevice = true
@@ -303,7 +303,7 @@ ATT.SortOrder = 101
 
 ATT.Icon = Material(iconfolder .. "vepr/mzheavysil.png", "mips smooth")
 ATT.Category = "uplp_molot_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy_silencer.mdl"
 ATT.MuzzleDevice = true
@@ -345,7 +345,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_brake.mdl"
 ATT.ModelOffset = Vector(-0.25, 0, 0)
 
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -369,7 +369,7 @@ ATT.ModelOffset = Vector(-0.125, 0, 0)
 ATT.Scale = 1.33
 
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -409,7 +409,7 @@ ATT.ModelOffset = Vector(-0.35, 0, 0)
 ATT.Scale = 1.45
 
 ATT.Category = {"uplp_muzzle_pistol"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -449,7 +449,7 @@ ATT.ModelOffset = Vector(-0.125, 0, 0)
 ATT.Scale = 1.25
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -489,7 +489,7 @@ ATT.ModelOffset = Vector(-0.2, 0, 0)
 ATT.Scale = 1.4
 
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -529,7 +529,7 @@ ATT.ModelOffset = Vector(-0.125, 0, 0)
 ATT.Scale = 1.3
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -569,7 +569,7 @@ ATT.ModelOffset = Vector(-0.125, 0, 0)
 ATT.Scale = 1.25
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
@@ -608,7 +608,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_zenit.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
 
 ATT.Category = "uplp_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 

@@ -19,7 +19,7 @@ ATT.ModelBodygroups = "7"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -50,7 +50,7 @@ ATT.ModelBodygroups = "8"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.5
@@ -81,7 +81,7 @@ ATT.ModelBodygroups = "1"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -112,7 +112,7 @@ ATT.ModelBodygroups = "9"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.85
@@ -143,7 +143,7 @@ ATT.ModelBodygroups = "2"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.5
@@ -174,7 +174,7 @@ ATT.ModelBodygroups = "0"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -205,7 +205,7 @@ ATT.ModelBodygroups = "3"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilAutoControlMult = 3
@@ -236,7 +236,7 @@ ATT.ModelBodygroups = "a"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock_shorttube"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -267,7 +267,7 @@ ATT.ModelBodygroups = "5"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.5
@@ -298,7 +298,7 @@ ATT.ModelBodygroups = "4"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -329,7 +329,7 @@ ATT.ModelBodygroups = "6"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RecoilMult = 0.65

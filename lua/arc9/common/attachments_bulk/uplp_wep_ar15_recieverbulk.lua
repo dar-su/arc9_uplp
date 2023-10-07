@@ -31,7 +31,7 @@ ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg",
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_reciever"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Attachments = {
     -- {
     --     PrintName = "Gas block",
@@ -61,7 +61,7 @@ ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
 ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short"}
 
 ATT.Category = "uplp_ar15_reciever"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Attachments = {
     -- {
     --     PrintName = "Gas block",
@@ -93,7 +93,7 @@ ATT.Icon = Material(iconfolder .. "recm4.png", "mips smooth")
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_reciever"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Attachments = {
     -- {
     --     PrintName = "Gas block",
@@ -125,7 +125,7 @@ ATT.Icon = Material(iconfolder .. "rectac.png", "mips smooth")
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_reciever"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Attachments = {
     -- {
     --     PrintName = "Gas block",
@@ -168,7 +168,7 @@ ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg",
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_reciever"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Attachments = {
     {
         PrintName = "Magwell",

@@ -13,7 +13,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_mutant_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -43,7 +43,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_mutant_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_short"}
 -- ATT.ExcludeElements = {"uplp_ar15_handguard_long"}
@@ -73,7 +73,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_mutant_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -103,7 +103,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_ar10_hgg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -133,7 +133,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_ar10_hgg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -163,7 +163,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
 ATT.Category = "uplp_mutant_hg"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
     {
@@ -192,7 +192,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_mutant_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
@@ -211,7 +211,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_mutant_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
@@ -230,7 +230,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_mutant_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
@@ -249,7 +249,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_mutant_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
@@ -268,7 +268,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_mutant_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
@@ -295,7 +295,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 ATT.Category = "uplp_mutant_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"

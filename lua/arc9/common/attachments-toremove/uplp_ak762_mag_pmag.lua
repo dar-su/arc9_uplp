@@ -12,4 +12,4 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ak762_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

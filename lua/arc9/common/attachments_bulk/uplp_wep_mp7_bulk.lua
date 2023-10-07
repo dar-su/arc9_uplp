@@ -15,7 +15,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp7_stock_folded"}
 
@@ -45,7 +45,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "mag.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp7_mag_20"}
 
@@ -81,7 +81,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "down.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_optic"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 

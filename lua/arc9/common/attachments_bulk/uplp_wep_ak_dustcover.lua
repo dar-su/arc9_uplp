@@ -11,7 +11,7 @@ local ATT = {}
 
 -- ATT.Icon = Material(iconfolder .. "762b.png", "mips smooth")
 -- ATT.Category = "uplp_ak_dc"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 -- ATT.ActivateElements = {"uplp_ak_dc_std"}
@@ -28,7 +28,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "flat.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_flat"}
 
@@ -44,7 +44,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_old"}
 
@@ -61,7 +61,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak
 
 ATT.Icon = Material(iconfolder .. "r1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_rail","use_optics"}
 
@@ -79,7 +79,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak
 
 ATT.Icon = Material(iconfolder .. "r2.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_rail2","use_optics"}
 
@@ -97,7 +97,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak
 
 ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_dc_azen","use_optics"}
@@ -115,7 +115,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak
 
 ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_beryl","use_optics"}
 
@@ -132,7 +132,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material(iconfolder12 .. "rsm1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12alt","use_optics", "uplp_ak12_rearsight_m1"}
 
@@ -149,7 +149,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material(iconfolder12 .. "rsevo.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight_evo"}
 
@@ -166,7 +166,7 @@ ATT.ExcludeElements = {"uplp_ak_rearsight"}
 
 ATT.Icon = Material(iconfolder12 .. "rs12.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight"}
 
@@ -200,7 +200,7 @@ ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount"}
 ATT.Icon = Material(iconfolder12 .. "nstd.png", "mips smooth")
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_visualonly")
 
@@ -220,7 +220,7 @@ ATT.Model = "models/weapons/arc9/uplp/dovetail_mount.mdl"
 -- ATT.FoldSights = true
 
 ATT.Category = "uplp_optic_dovetail"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail")
 
@@ -241,6 +241,6 @@ ATT.Model = "models/weapons/arc9/uplp/dovetail_mount_compact.mdl"
 
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.Category = "uplp_optic_dovetail_compact" -- bleh, useless
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail_c")

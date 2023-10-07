@@ -16,7 +16,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "lowerb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_lower"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_lower_b"}
 
@@ -34,7 +34,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "rec/b.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_upper_hb"}
 
@@ -52,7 +52,7 @@ ATT.SortOrder = 5
 ATT.Icon = Material(iconfolder .. "rec/dmr.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Firemodes = {
     { Mode = -1, -- Full
@@ -90,7 +90,7 @@ ATT.SortOrder = 5
 ATT.Icon = Material(iconfolder .. "rec/dmrb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.RangeMinMult = 1.15
@@ -119,7 +119,7 @@ ATT.SortOrder = 7
 ATT.Icon = Material(iconfolder .. "rec/pdw.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-15.5, -2.3, 3)
@@ -152,7 +152,7 @@ ATT.SortOrder = 7
 ATT.Icon = Material(iconfolder .. "rec/pdwb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_upper"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-15.5, -2.3, 3)
@@ -185,7 +185,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "short.png", "mips smooth")
 
 ATT.Category = "uplp_scar_barrel"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_short"}
 
@@ -202,7 +202,7 @@ ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 -- ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 
 -- ATT.Category = "uplp_scar_barrel_dmr"
--- ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"uplp_scar_brl_20", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
 
@@ -219,7 +219,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 
 ATT.Category = "uplp_scar_barrel_dmr"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_20_long", "uplp_scar_no_is", "uplp_scar_brl_dmr"}
 
@@ -249,7 +249,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "stock/stdb.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_lb"}
 
@@ -267,7 +267,7 @@ ATT.SortOrder = 5
 ATT.Icon = Material(iconfolder .. "stock/20.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_h"}
 
@@ -285,7 +285,7 @@ ATT.SortOrder = 5
 ATT.Icon = Material(iconfolder .. "stock/20b.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_hb"}
 
@@ -303,7 +303,7 @@ ATT.SortOrder = 5
 ATT.Icon = Material(iconfolder .. "stock/tube.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_tube"}
 
@@ -340,7 +340,7 @@ ATT.SortOrder = 5
 ATT.Icon = Material(iconfolder .. "stock/pdw.png", "mips smooth")
 
 ATT.Category = "uplp_scar_stock"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ToggleStats = {
     {
@@ -372,7 +372,7 @@ ATT.Icon = Material(iconfolder .. "mag/hb.png", "mips smooth")
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_h_black.mdl"
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_mag_hb"}
 
@@ -392,7 +392,7 @@ ATT.Icon = Material(iconfolder .. "mag/20.png", "mips smooth")
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20.mdl"
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.9
@@ -428,7 +428,7 @@ ATT.Icon = Material(iconfolder .. "mag/2068.png", "mips smooth")
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20_black.mdl"
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -513,7 +513,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -574,7 +574,7 @@ ATT.CustomPros = {
 }
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -605,7 +605,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -648,7 +648,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -691,7 +691,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -755,7 +755,7 @@ ATT.CustomCons = {
 }
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -805,7 +805,7 @@ ATT.CustomCons = {
 }
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -855,7 +855,7 @@ ATT.CustomCons = {
 }
 
 ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -881,7 +881,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolderar .. "gstd.png", "mips smooth")
 
 ATT.Category = "uplp_scar_pgrip"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_pgrip_b"}
 
@@ -901,7 +901,7 @@ ATT.Model = "models/weapons/arc9/uplp/scar_rs.mdl"
 ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 
 ATT.Category = "uplp_scar_rs"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
@@ -924,7 +924,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_scar_heavy.mdl"
 ATT.Icon = Material(iconfolder .. "mz.png", "mips smooth")
 
 ATT.Category = "uplp_scar_muzzle"
-ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_mz"}
 
