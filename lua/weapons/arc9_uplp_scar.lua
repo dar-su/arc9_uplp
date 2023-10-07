@@ -824,17 +824,20 @@ SWEP.AttachmentElements = {
 	[9] = { Pos = Vector(-1.1, 1.4, 10.15) },
 	[11] = { Pos = Vector(-0.06, 2.3, 9.75) },
 	[13] = { Pos = Vector(-0.06, -0.45, 11) },
+	[14] = { Pos = Vector(0.98, 1.5, 11.1) },
 	}},
 
     ["uplp_scar_brl_20"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
 	[7] = { Pos = Vector(-0.06, 1.525, 26.35) },
 	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
 	[13] = { Pos = Vector(-0.06, -0.45, 21) },
+	[14] = { Pos = Vector(0.98, 1.5, 21.6) },
 	}},
 
     ["uplp_scar_brl_20_long"] = { Bodygroups = { { 2, 4 } }, AttPosMods = {
 	[7] = { Pos = Vector(-0.06, 1.525, 30) },
 	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
+	[14] = { Pos = Vector(0.98, 1.5, 21.6) },
 	}},
 
 	-- LOWER RECEIVERS
@@ -1006,6 +1009,50 @@ SWEP.Attachments = {
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
+    },
+
+    
+
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "body",
+        Pos = Vector(0.98, 1.5, 14.5),
+        Ang = Angle(90, 0, -90),
+    },
+
+
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/scar_1.mdl",
+        ExcludeElements = {"uplp_ar15_mag"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3, 6.5),
+        Ang = Angle(90, 90, 180),
+    },
+
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/scar_1l.mdl",
+        RequireElements = {"uplp_ar15_mag"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, 4),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/scar_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, 0.5),
+        Ang = Angle(90, 90, 180),
     },
 }
 
