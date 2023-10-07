@@ -605,7 +605,8 @@ ATT.SortOrder = 50
 ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_zenit.mdl"
-ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.ModelOffset = Vector(-0.17, 0, 0)
+ATT.Scale = 1.4
 
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

@@ -50,6 +50,16 @@ SWEP.TracerSize = 1
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 90
+SWEP.ShellSounds = {
+    "arc9/casings/casing_12ga_1.wav",
+    "arc9/casings/casing_12ga_2.wav",
+    "arc9/casings/casing_12ga_3.wav",
+    "arc9/casings/casing_12ga_4.wav",
+    "arc9/casings/casing_12ga_1.wav",
+    "arc9/casings/casing_12ga_2.wav",
+    "arc9/casings/casing_12ga_3.wav",
+    "arc9/casings/casing_12ga_4.wav",
+}
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
@@ -1046,5 +1056,45 @@ SWEP.Attachments = {
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
+    },
+
+
+
+
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/vepr_1.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 0.35, 5.4),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/vepr_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 2, -0.5),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/vepr_3.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 0.5, -1.8),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "body",
+        Pos = Vector(0.6, 1.15, 8.5),
+        Ang = Angle(90, 0, -90),
     },
 }

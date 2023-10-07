@@ -18,6 +18,24 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_bak")
 
 -------------------------------------------
+-- for ak12
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62x39mm"
+ATT.CompactName = "30R 7.62"
+ATT.Description = ATT.PrintName
+ATT.ActivateElements = {"can762sticker"}
+
+ATT.Icon = Material(iconfolder .. "762.png", "mips smooth")
+ATT.Category = "uplp_ak_mag_308"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_std")
+
+-------------------------------------------
 
 ATT = {}
 
@@ -231,7 +249,7 @@ ATT.ShootSoundSilenced = shoot545sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.ActivateElements = {"uplp_ak_calib_545"}
+ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -280,7 +298,7 @@ ATT.ShootSoundSilenced = shoot545sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.ActivateElements = {"uplp_ak_calib_545"}
+ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -378,7 +396,7 @@ ATT.ShootSoundSilenced = shoot545sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.ActivateElements = {"uplp_ak_calib_545"}
+ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -427,7 +445,7 @@ ATT.ShootSoundSilenced = shoot545sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.ActivateElements = {"uplp_ak_calib_545"}
+ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then

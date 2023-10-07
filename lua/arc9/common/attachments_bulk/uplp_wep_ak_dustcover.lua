@@ -213,6 +213,7 @@ ATT.CompactName = "Rail"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount", "uplp_ak_dovetail_rail_used", "use_optics"}
+ATT.ExcludeElements = {"uplp_ak_brl_su"}
 
 ATT.Icon = Material(iconfolder12 .. "dvmstd.png", "mips smooth")
 

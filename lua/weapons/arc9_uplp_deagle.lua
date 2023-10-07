@@ -662,4 +662,25 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         MergeSlots = {1}
     },
+
+
+
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/deagle_1.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.55, -2.5, 2),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "body",
+        Pos = Vector(0.55, -1.9, 8.5),
+        Ang = Angle(90, 0, -90),
+    },
 }

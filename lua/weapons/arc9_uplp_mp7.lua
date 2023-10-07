@@ -690,4 +690,53 @@ SWEP.Attachments = {
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
     },
+
+
+
+
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/mp7_1.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 0.35, -2),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/mp7_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/mp7_3.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, -0.3, 1.85),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker D",
+        StickerModel = "models/weapons/arc9/uplp/stickers/mp7_4.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, -0.3, 3),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "body",
+        Pos = Vector(0.6, 1.15, 8.5),
+        Ang = Angle(90, 0, -90),
+    },
 }

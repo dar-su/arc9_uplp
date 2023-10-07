@@ -7,6 +7,7 @@ local ATT = {}
 ATT.PrintName = "Polymer Folding Stock"
 ATT.CompactName = "Polymer F"
 ATT.Description = ATT.PrintName
+ATT.ActivateElements = {"canstocksticker"}
 
 ATT.Icon = Material(iconfolder .. "fold.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"
@@ -211,6 +212,7 @@ ATT = {}
 ATT.PrintName = "Polymer Stock"
 ATT.CompactName = "Polymer"
 ATT.Description = ATT.PrintName
+ATT.ActivateElements = {"canstocksticker"}
 
 ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_stock"

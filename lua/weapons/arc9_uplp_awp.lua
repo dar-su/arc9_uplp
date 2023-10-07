@@ -300,16 +300,16 @@ SWEP.DistantShootSoundIndoor = {
 }
 
 SWEP.DistantShootSoundSilenced = {
-    pathUTC .. "sup-tail-01.ogg",
-    pathUTC .. "sup-tail-02.ogg",
-    pathUTC .. "sup-tail-03.ogg",
-    pathUTC .. "sup-tail-04.ogg",
-    pathUTC .. "sup-tail-05.ogg",
-    pathUTC .. "sup-tail-06.ogg",
-    pathUTC .. "sup-tail-07.ogg",
-    pathUTC .. "sup-tail-08.ogg",
-    pathUTC .. "sup-tail-09.ogg",
-    pathUTC .. "sup-tail-10.ogg"
+    pathUTC .. "generictails/sup-tail-01.ogg",
+    pathUTC .. "generictails/sup-tail-02.ogg",
+    pathUTC .. "generictails/sup-tail-03.ogg",
+    pathUTC .. "generictails/sup-tail-04.ogg",
+    pathUTC .. "generictails/sup-tail-05.ogg",
+    pathUTC .. "generictails/sup-tail-06.ogg",
+    pathUTC .. "generictails/sup-tail-07.ogg",
+    pathUTC .. "generictails/sup-tail-08.ogg",
+    pathUTC .. "generictails/sup-tail-09.ogg",
+    pathUTC .. "generictails/sup-tail-10.ogg"
 }
 
 SWEP.DropMagazineSounds = {
@@ -692,21 +692,19 @@ SWEP.AttachmentElements = {
     ["uplp_awp_stock_tube"] = { Bodygroups = { { 1, 2 } } },
     ["uplp_awp_stock_at"] = { Bodygroups = { { 1, 3 } } },
 	
-    ["uplp_awp_stock_atx"] = { Bodygroups = { { 1, 4 } } },
-    ["uplp_awp_stock_atx_blue"] = { Bodygroups = { { 1, 5 } } },
-    ["uplp_awp_stock_atx_gray"] = { Bodygroups = { { 1, 6 } } },
-    ["uplp_awp_stock_atx_green"] = { Bodygroups = { { 1, 7 } } },
-    ["uplp_awp_stock_atx_orange"] = { Bodygroups = { { 1, 8 } } },
-    ["uplp_awp_stock_atx_purple"] = { Bodygroups = { { 1, 9 } } },
-    ["uplp_awp_stock_atx_white"] = { Bodygroups = { { 1, 10 } } },
+    ["uplp_awp_stock_atx"] = { Bodygroups = { { 1, 4 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
+    ["uplp_awp_stock_atx_blue"] = { Bodygroups = { { 1, 5 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
+    ["uplp_awp_stock_atx_gray"] = { Bodygroups = { { 1, 6 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
+    ["uplp_awp_stock_atx_green"] = { Bodygroups = { { 1, 7 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
+    ["uplp_awp_stock_atx_orange"] = { Bodygroups = { { 1, 8 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
+    ["uplp_awp_stock_atx_purple"] = { Bodygroups = { { 1, 9 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
+    ["uplp_awp_stock_atx_white"] = { Bodygroups = { { 1, 10 } }, AttPosMods = { [12] = { Pos = Vector(0.63, 1.3, 16.1) } }},
 
 	-- BARRELS
     ["uplp_awp_barrel_awp"] = { Bodygroups = { { 2, 0 } } },
     ["uplp_awp_barrel_long"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_awp_barrel_short"] = { Bodygroups = { { 2, 2 } } },
-    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-	[7] = { Pos = Vector(0, -0.3, 26.5), },
-	}},
+    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = { [7] = { Pos = Vector(0, -0.3, 26.5) } }},
 
 	-- MAGAZINES
     ["uplp_awp_mag_awm"] = { Bodygroups={ { 4, 0 }, { 0, 0 } } },
@@ -801,6 +799,82 @@ SWEP.Attachments = {
         -- Bone = "mag",
         -- Pos = Vector(.04, -2.406, -1.428),
     -- },
+
+
+
+
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/awp_1.mdl",
+        ExcludeElements = {"xstock"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.5, 6),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/awp_2.mdl",
+        ExcludeElements = {"xstock"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 2, 2),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/awp_3.mdl",
+        ExcludeElements = {"xstock"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 2, -0.8),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker D",
+        StickerModel = "models/weapons/arc9/uplp/stickers/awp_4.mdl",
+        ExcludeElements = {"uplp_awp_stock_tube", "uplp_awp_stock_at", "xstock"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3.5, -10),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        -- ExcludeElements = {"xstock"},
+        Bone = "body",
+        Pos = Vector(0.7, 2.25, 14.3),
+        Ang = Angle(90, 0, -90),
+    },
+
+    
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/awp_atx_1.mdl",
+        RequireElements = {"xstock"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 2, -0.3),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/awp_atx_2.mdl",
+        RequireElements = {"xstock"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, -3),
+        Ang = Angle(90, 90, 180),
+    },
 }
 
 
