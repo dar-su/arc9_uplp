@@ -2,7 +2,7 @@
 
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = false
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.AdminOnly = false
 SWEP.UseHands = true
 

@@ -1,6 +1,6 @@
 AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
 //// FUNDAMENTALS
@@ -600,7 +600,6 @@ SWEP.Attachments = {
         Pos = Vector(0, -3, 5),
         ExtraSightDistance = 4,
         Ang = Angle(90, 90, 180),
-		
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -645,8 +644,22 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac_pistol"},
+        ExcludeElements = {"notac"},
         Bone = "body",
         Pos = Vector(0, -1.05, 7),
         Ang = Angle(90, 90, 0),
+    },
+
+    {
+        Hidden = true,
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        Category = {"uplp_optic_direct"},
+        Bone = "slide",
+        Pos = Vector(0, -1.1, -0.85),
+        Scale = 0.85,
+        ExtraSightDistance = 2,
+        Ang = Angle(90, 90, 180),
+        MergeSlots = {1}
     },
 }

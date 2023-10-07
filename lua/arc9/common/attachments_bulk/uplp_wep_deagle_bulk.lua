@@ -133,7 +133,7 @@ ATT.Icon = Material(iconfolder .. "brcl.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"nomuz"}
+ATT.ActivateElements = {"nomuz", "notac"}
 
 ATT.AimDownSightsTimeMult = 1.15
 ATT.RecoilSideMult = 0.65
@@ -152,7 +152,7 @@ ATT.Icon = Material(iconfolder .. "brlong.png", "mips smooth")
 ATT.Category = "uplp_deag_barrel"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
-ATT.ActivateElements = {"nomuz"}
+ATT.ActivateElements = {"nomuz", "notac"}
 
 ATT.AimDownSightsTimeMult = 1.35
 ATT.RecoilMult = 0.9

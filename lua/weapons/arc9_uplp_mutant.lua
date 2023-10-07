@@ -1,7 +1,7 @@
 -- AddCSLuaFile()
 --[[
 SWEP.Base = "arc9_uplp_base"
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
 //// FUNDAMENTALS

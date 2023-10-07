@@ -58,6 +58,7 @@ ATT.RecoilMult = 2
 ATT.RecoilSideMult = 2
 ATT.SpreadAddRecoil = 0.025
 ATT.DeployTimeMult = 1.25
+ATT.SpreadAdd = 0.01
 
 ARC9.LoadAttachment(ATT, "uplp_fn57_trigger_auto")
 

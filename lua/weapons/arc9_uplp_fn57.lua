@@ -1,6 +1,6 @@
 AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
 //// FUNDAMENTALS
@@ -640,7 +640,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_pistol"},
+        Category = {"uplp_optic_direct"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "slide",
         Pos = Vector(0, -0.64, -1.6),
@@ -655,6 +655,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -2.43, 7.2),
         Ang = Angle(90, 90, 180),
+        Scale = 0.85
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),

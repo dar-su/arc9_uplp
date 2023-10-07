@@ -57,7 +57,7 @@ ATT = {}
 ATT.PrintName = "PAWCO Dust Cover with Rail"
 ATT.CompactName = "PAWCO"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak_dovetail_rail_used"}
 
 ATT.Icon = Material(iconfolder .. "r1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -75,7 +75,7 @@ ATT = {}
 ATT.PrintName = "Lisyan Tactical Dust Cover with Rail"
 ATT.CompactName = "Lisyan"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak_dovetail_rail_used"}
 
 ATT.Icon = Material(iconfolder .. "r2.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -93,7 +93,7 @@ ATT = {}
 ATT.PrintName = "Zenith Dust Cover"
 ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak_dovetail_rail_used"}
 
 ATT.Icon = Material(iconfolder .. "zen.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -111,7 +111,7 @@ ATT = {}
 ATT.PrintName = "Szermierz Dust Cover & Rail"
 ATT.CompactName = "Szermierz"
 ATT.Description = ATT.PrintName
-ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used"}
+ATT.ExcludeElements = {"uplp_ak_rearsight", "uplp_optic_dovetail_used", "uplp_ak_dovetail_rail_used"}
 
 ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_dc"
@@ -159,7 +159,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_22")
 
 ATT = {}
 
-ATT.PrintName = "2016 AK-12 Package"
+ATT.PrintName = "2016 AK-12 Package WRITE SOMETHING IN DESC ABOUT  2BURST"
 ATT.CompactName = "'16 AK-12"
 ATT.Description = ATT.PrintName
 ATT.ExcludeElements = {"uplp_ak_rearsight"}
@@ -170,6 +170,77 @@ ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight"}
 
+ATT.Firemodes = {
+    { Mode = -1, -- Full
+	PoseParam = 1 }, 
+    { Mode = 2, -- 2bst 
+	RPM = 700, 
+	PoseParam = 1.5 }, -- firemode switch to third not exist but i dont care :3
+    { Mode = 1, -- Semi
+    RPM = 450, 
+    PoseParam = 2 }
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_16")
 
 -------------------------------------------
+
+
+
+///////////////////////////////////////      uplp_ak_dovetail_visualonly
+
+ATT = {}
+
+ATT.PrintName = "dovtail mount"
+ATT.CompactName = "meow"
+ATT.Description = ATT.PrintName
+
+ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount"}
+
+ATT.Icon = Material(iconfolder12 .. "nstd.png", "mips smooth")
+
+ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_visualonly")
+
+///////////////////////////////////////      uplp_ak_dovetail_rail
+
+ATT = {}
+
+ATT.PrintName = "Zenith Dovetail Rail"
+ATT.CompactName = "Rail"
+ATT.Description = ATT.PrintName
+
+ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount", "uplp_ak_dovetail_rail_used", "use_optics"}
+
+ATT.Icon = Material(iconfolder12 .. "dvmstd.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/dovetail_mount.mdl"
+-- ATT.FoldSights = true
+
+ATT.Category = "uplp_optic_dovetail"
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail")
+
+///////////////////////////////////////      uplp_ak_dovetail_rail_c
+
+ATT = {}
+
+ATT.PrintName = "Zenith Dovetail Rail Compact"
+ATT.CompactName = "Rail"
+ATT.Description = ATT.PrintName
+
+ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount", "uplp_ak_dovetail_rail_used", "use_optics", "uplp_no_backup"}
+
+ATT.Icon = Material(iconfolder12 .. "dvmcompact.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/dovetail_mount_compact.mdl"
+-- ATT.FoldSights = true
+
+-- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
+ATT.Category = "uplp_optic_dovetail_compact" -- bleh, useless
+ATT.MenuCategory = "ARC9 - Low Poly Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail_c")

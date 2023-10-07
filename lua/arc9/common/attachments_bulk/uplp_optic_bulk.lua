@@ -840,7 +840,7 @@ ATT.PrintName = "Pistol Red Dot [Direct Mount]" -- Tactical Red Dot [Direct Moun
 ATT.CompactName = "Pistol"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+-- ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -851,7 +851,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -0.65),
+        Pos = Vector(0, 10, -0.68),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57
@@ -864,7 +864,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
-ATT.Category = {"uplp_optic_pistol"}
+ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds_direct")
@@ -878,7 +878,7 @@ ATT.PrintName = "XW Red Dot [Direct Mount]" -- RMR Sight [Direct Mount]
 ATT.CompactName = "XW"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+-- ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -889,7 +889,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -0.575),
+        Pos = Vector(0, 10, -0.62),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57
@@ -902,7 +902,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_pistol"}
+ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
@@ -1850,10 +1850,12 @@ ATT.CompactName = "Kobra"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
+ATT.ExcludeElements = {"use_optics"}
 
 ATT.Icon = Material(iconfolder .. "ak/kobra.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_kobra_dovetail.mdl"
+ATT.ModelOffset = Vector(0, 0.2, 0)
 ATT.FoldSights = true
 
 ATT.SprintToFireTimeMult = 1.05
@@ -1869,7 +1871,7 @@ ATT.Sights = {
 }
 
 ATT.ActivePosHook = function(swep, pos)
-    return pos - Vector(0, 0, 1.1)
+    return pos - Vector(0, 0, 0.5)
 end
 
 ATT.HoloSight = true
@@ -1878,7 +1880,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
-ATT.Category = "uplp_optic_dovetail"
+ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Negatives
@@ -1898,11 +1900,12 @@ ATT.CompactName = "PSO-1"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
-ATT.ExcludeElements = {"uplp_ak_brl_su"}
+ATT.ExcludeElements = {"uplp_ak_brl_su", "use_optics"}
 
 ATT.Icon = Material(iconfolder .. "ak/pso.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_pso.mdl"
+ATT.ModelOffset = Vector(-0.75, 0.2, 0)
 ATT.FoldSights = true
 
 ATT.Sights = {
@@ -1933,12 +1936,11 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_dovetail"
+-- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.35
 ATT.SprintToFireTimeMult = 1.25
-
-ATT.ModelOffset = Vector(-0.75, 0, -0.2)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_pso")

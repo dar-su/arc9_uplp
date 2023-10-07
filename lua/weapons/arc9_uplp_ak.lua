@@ -1,6 +1,6 @@
 AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
 //// FUNDAMENTALS
@@ -945,9 +945,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(4,10)
     end
 	
-    if eles["uplp_ak_dc_old"] and eles["uplp_ak_stock_old"] then
+    if eles["uplp_ak_dc_old"] and (eles["uplp_ak_stock_old"] or eles["uplp_ak_stock_underfold"]) then
         mdl:SetBodygroup(0, 1)
-		if eles["uplp_optic_dovetail_used"] then
+		if eles["uplp_ak_nmount"] then
 			mdl:SetBodygroup(7, 3)
 		end
     end
@@ -1094,6 +1094,12 @@ SWEP.AttachmentElements = {
     ["uplp_ak_nmount_compact"] = { Bodygroups = { { 7, 2 } } },
     ["uplp_ak_nmount_old"] = { Bodygroups = { { 7, 3 } } },
 
+    ["uplp_ak_dovetail_rail_used"] = { AttPosMods = {
+        [1] = { Pos = Vector(0, -0.62, 1), }, 
+        [9] = { Pos = Vector(0, -0.62, 0.25), },
+        [10] = { Pos = Vector(0, -0.62, 6), }
+    }},
+
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
     ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 2 } } },
@@ -1213,9 +1219,9 @@ SWEP.Attachments = {
         Category = {"uplp_optic_dovetail"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.4, 2, 1.5),
+        Pos = Vector(0.66, 2.2, 1.55),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_optic_used"},
+		-- ExcludeElements = {"uplp_optic_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 }

@@ -903,7 +903,7 @@ ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 ATT.Category = "uplp_scar_rs"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
 
--- ATT.DrawFunc = function(swep, model) model:SetBodygroup(0, 1 + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
+ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
 ATT.ActivateElements = {"uplp_scar_is"}
 ATT.ExcludeElements = {"uplp_scar_no_is"}

@@ -1,6 +1,6 @@
 AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
 //// FUNDAMENTALS
@@ -1242,15 +1242,5 @@ SWEP.Attachments = {
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
-        Category = {"uplp_optic_dovetail"},
-        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0.4, 2, 1.5),
-        Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_optic_used", "uplp_ak_fs_12alt"},
-        CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 }

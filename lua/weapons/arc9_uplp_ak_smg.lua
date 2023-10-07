@@ -1,6 +1,6 @@
 AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
-SWEP.Category = "ARC9 - UPLP"
+SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
 //// FUNDAMENTALS
@@ -675,7 +675,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 	
     if eles["uplp_ak_smg_rec_vityaz"] or eles["uplp_ak_smg_rec_vityaz_tac"] then -- If using either Vityaz Configuration
-		if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
+		if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_ak_dovetail_rail_used"] then
 			mdl:SetBodygroup(3,1) -- Add rail
 		end
     end
@@ -749,8 +749,15 @@ SWEP.AttachmentElements = {
     ["uplp_ak_smg_mag_bizon_old"] = { Bodygroups = { { 6, 3 } } },
     
     -- NMounts
-    ["uplp_ak_smg_nmount"] =  { Bodygroups = { { 7, 1 } } },
-    ["uplp_ak_smg_nmount_c"] =  { Bodygroups = { { 7, 2 } } },
+    ["uplp_ak_smg_nmount"] =  { Bodygroups = { { 7, 2 } } },
+    -- ["uplp_ak_smg_nmount_c"] =  { Bodygroups = { { 7, 2 } } },
+
+    ["uplp_ak_dovetail_rail_used"] = { AttPosMods = {
+        [1] = { Pos = Vector(0, -0.62, 1), }, 
+        [11] = { Pos = Vector(0, -0.62, 0.25), },
+        [12] = { Pos = Vector(0, -0.62, 6), }
+    }},
+
 
     -- Alternative Irons
     ["uplp_ak_smg_ppk20_irons"] =  { Bodygroups = { { 8, 1 } } },
@@ -904,12 +911,12 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
-        Category = {"uplp_optic_dovetail"},
+        Category = {"uplp_optic_dovetail_compact"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.4, 2, 1.5),
+        Pos = Vector(0.66, 2.2, 1.55),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_optic_used", "uplp_ak_smg_rec_ppk20"},
+		-- ExcludeElements = {"uplp_optic_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 }

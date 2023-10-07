@@ -17,6 +17,7 @@ ATT.Icon = Material(iconfolder .. "mz3h.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "1"
+ATT.Scale = 1.33
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
 -- ATT.SortOrder = 0
@@ -54,6 +55,7 @@ ATT.Icon = Material(iconfolder .. "mzstd.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
 ATT.ModelBodygroups = "0"
+ATT.Scale = 1.1
 
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -80,6 +82,7 @@ ATT.PrintName = "Centurion Industries Heavy Muzzle Brake"
 ATT.CompactName = "Centurion MB"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 50
+ATT.Scale = 1.25
 
 ATT.Icon = Material(iconfolder .. "mzfat.png", "mips smooth")
 
@@ -116,6 +119,7 @@ ATT.PrintName = "3-Pronged Flash Hider"
 ATT.CompactName = "3P FH"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 45
+ATT.Scale = 1.25
 
 ATT.Icon = Material(iconfolder .. "mzsharp.png", "mips smooth")
 
@@ -147,6 +151,7 @@ ATT.PrintName = "Slim Muzzle Brake"
 ATT.CompactName = "Slim MB"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 50
+ATT.Scale = 1.25
 
 ATT.Icon = Material(iconfolder .. "mzcomp.png", "mips smooth")
 
@@ -332,11 +337,12 @@ ATT.PrintName = "Heavy Muzzle Brake"
 ATT.CompactName = "H MB"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 50
+ATT.Scale = 1.33
 
 ATT.Icon = Material(iconfolder .. "brake.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_brake.mdl"
-ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.ModelOffset = Vector(-0.25, 0, 0)
 
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -360,6 +366,7 @@ ATT.Icon = Material(iconfolder .. "evil.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_evilsup.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.Scale = 1.33
 
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -399,6 +406,7 @@ ATT.Icon = Material(iconfolder .. "heavypistsup.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_heavypistolsup.mdl"
 ATT.ModelOffset = Vector(-0.35, 0, 0)
+ATT.Scale = 1.45
 
 ATT.Category = {"uplp_muzzle_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -409,8 +417,6 @@ ATT.Silencer = true
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
-
-ATT.Scale = 1.4
 
 /// Positives
 ATT.RecoilMult = 0.95
@@ -440,6 +446,7 @@ ATT.Icon = Material(iconfolder .. "lightsup.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_lightsup.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.Scale = 1.25
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -478,7 +485,8 @@ ATT.SortOrder = 100
 ATT.Icon = Material(iconfolder .. "midsup.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_midsup.mdl"
-ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.ModelOffset = Vector(-0.2, 0, 0)
+ATT.Scale = 1.4
 
 ATT.Category = "uplp_muzzle"
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -518,6 +526,7 @@ ATT.Icon = Material(iconfolder .. "modernsup.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_modernsup.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.Scale = 1.3
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
@@ -557,6 +566,7 @@ ATT.Icon = Material(iconfolder .. "shortsup.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_shortsup.mdl"
 ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.Scale = 1.25
 
 ATT.Category = {"uplp_muzzle", "uplp_muzzle_pistol"}
 ATT.MenuCategory = "ARC9 - Low Poly Attachments"
