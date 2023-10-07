@@ -491,19 +491,19 @@ L["uplp_weapon_ak12_desc"] = "The AK M23 is a modern assault rifle designed in R
 L["uplp_weapon_ak_smg"] = "AK SMG"
 L["uplp_weapon_ak_smg_desc"] = "Various compact submachine guns based on the AK assault rifle. With the base being that of the AK platform, the AK SMG provides familiarity to those already familiar with the various AK family of rifles with the compact nature of SMGs."
 
-L["uplp_weapon_ak_762"] = "AK 7.62"
-L["uplp_weapon_ak_545"] = "AK 5.45"
-L["uplp_weapon_ak_556"] = "AK 5.56"
-L["uplp_weapon_ak_9x39"] = "AK 9x39"
+L["uplp_weapon_ak_762"] = "%s 7.62"
+L["uplp_weapon_ak_545"] = "%s 5.45"
+L["uplp_weapon_ak_556"] = "%s 5.56"
+L["uplp_weapon_ak_9x39"] = "%s 9x39"
 L["uplp_weapon_ak_rpk"] = "HPK"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
 L["uplp_weapon_ak12_16"] = "AK M16"
 L["uplp_weapon_ak12_308"] = "AK M308"
 
-L["uplp_weapon_ak_short"] = "%s Shortened"
+L["uplp_weapon_ak_short"] = "%s Short"
 
-L["uplp_weapon_ak_real"] = "AK M10"
+L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
 L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
 
@@ -783,7 +783,7 @@ L["uplp_ak_mag_556_30_12.description"] = "30-round magazine used on AK M23 5.56 
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Round 7.62x51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20R 7.62x51"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62x51mm rounds" .. col.e .. " used on AK .308 rifle." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62x51mm rounds" .. col.e .. " used on AK M308 rifle." ..  changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"

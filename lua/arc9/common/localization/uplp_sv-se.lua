@@ -488,17 +488,17 @@ L["uplp_weapon_ak12_desc"] = "AK M23 är ett modernt automatgevär designat i Ry
 L["uplp_weapon_ak_smg"] = "AK KPist."
 L["uplp_weapon_ak_smg_desc"] = "Diverse kompakta kulsprutepistoler baserade på automatkarbinen AK. Med AK-plattformen som en bas så erbjuder AK Kpist. förtrogenhet till dem som redan har kunskap med olika AK-gevär ur dess familj med den kompakta naturen av kulsprutepistoler."
 
-L["uplp_weapon_ak_762"] = "AK 7,62"
-L["uplp_weapon_ak_545"] = "AK 5,45"
-L["uplp_weapon_ak_556"] = "AK 5,56"
-L["uplp_weapon_ak_9x39"] = "AK 9x39"
+L["uplp_weapon_ak_762"] = "%s 7,62"
+L["uplp_weapon_ak_545"] = "%s 5,45"
+L["uplp_weapon_ak_556"] = "%s 5,56"
+L["uplp_weapon_ak_9x39"] = "%s 9mm"
 L["uplp_weapon_ak_rpk"] = "HPK"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
 L["uplp_weapon_ak12_16"] = "AK M16"
 L["uplp_weapon_ak12_308"] = "AK M308"
 
-L["uplp_weapon_ak_short"] = "%s Shortened"
+L["uplp_weapon_ak_short"] = "%s Short"
 
 L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
@@ -780,7 +780,7 @@ L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin som används på A
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Patroner 7,62x51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20S 7,62x51"
-L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med " .. col.b .. "7,62x51mm patroner" .. col.e .. " som används på AK-308-geväret." .. changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med " .. col.b .. "7,62x51mm patroner" .. col.e .. " som används på AK M308-geväret." .. changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9x39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9x39mm"
