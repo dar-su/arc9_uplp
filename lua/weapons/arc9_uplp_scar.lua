@@ -1015,8 +1015,7 @@ SWEP.Attachments = {
 
     -- Cosmetic shit
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
-        PrintName = "Charm",
+        PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
         Pos = Vector(0.98, 1.5, 14.5),

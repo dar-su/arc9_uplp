@@ -121,6 +121,7 @@ L["uplp_category_backup"] = "Backup Sight"
 L["uplp_category_barrel"] = "Barrel"
 L["uplp_category_bipod"] = "Bipod"
 L["uplp_category_charginghandle"] = "Charging Handle"
+L["uplp_category_charm"] = "Charm"
 L["uplp_category_dovetail"] = "Dovetail"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_gasblock"] = "Gas Block"
@@ -138,6 +139,20 @@ L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_stock"] = "Stock"
 L["uplp_category_tactical"] = "Tactical"
+
+//////////////////// Sticker Category Names
+-- These are intended mostly for stickers, but can be used elsewhere too.
+
+L["uplp_category_sticker_barrel"] = "Sticker (Barrel)"
+L["uplp_category_sticker_charginghandle"] = "Sticker (Charging Handle)"
+L["uplp_category_sticker_dustcover"] = "Sticker (Dust Cover)"
+L["uplp_category_sticker_handguard"] = "Sticker (Handguard)"
+L["uplp_category_sticker_magazine"] = "Sticker (Magazine)"
+L["uplp_category_sticker_pistol_grip"] = "Sticker (Pistol Grip)"
+L["uplp_category_sticker_receiver"] = "Sticker (Receiver)"
+L["uplp_category_sticker_receiver_lower"] = "Sticker (Lower Receiver)"
+L["uplp_category_sticker_receiver_upper"] = "Sticker (Upper Receiver)"
+L["uplp_category_sticker_stock"] = "Sticker (Stock)"
 
 //////////////////// Folder Names
 L["uplp_folder_flashlight"] = "Flashlights"
@@ -1084,6 +1099,10 @@ L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handgua
 L["uplp_ar15_hg_tacshort_red.printname"] = "Hoki Armory Short Handguard (Sporty Red)"
 L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (SR)"
 L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. sportyred
+
+L["uplp_ar15_hg_a1.printname"] = "A1 Handguard"
+L["uplp_ar15_hg_a1.compactname"] = "A1"
+L["uplp_ar15_hg_a1.description"] = "Classic AR-15 handguard used on the early M16 models." .. requires16
 
 ////// Magazines
 /// .45 ACP

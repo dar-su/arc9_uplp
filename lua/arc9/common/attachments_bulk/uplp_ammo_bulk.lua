@@ -17,6 +17,45 @@ ATT.Icon = Material(iconfolder .. "ar15/458.png", "mips smooth")
 ATT.Category = "uplp_ar15_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+local pathUT = "uplp_urban_temp/ar15/"
+local pathUTC = "uplp_urban_temp/common/"
+
+ATT.ShootSound = {
+    pathUT .. "458socom/fire-300-01.ogg",
+    pathUT .. "458socom/fire-300-02.ogg",
+    pathUT .. "458socom/fire-300-03.ogg",
+    pathUT .. "458socom/fire-300-04.ogg",
+    pathUT .. "458socom/fire-300-05.ogg",
+    pathUT .. "458socom/fire-300-06.ogg",
+}
+
+ATT.ShootSoundSilenced = {
+    pathUT .. "458socom/fire-sup-01.ogg",
+    pathUT .. "458socom/fire-sup-02.ogg",
+    pathUT .. "458socom/fire-sup-03.ogg",
+    pathUT .. "458socom/fire-sup-04.ogg",
+    pathUT .. "458socom/fire-sup-05.ogg",
+    pathUT .. "458socom/fire-sup-06.ogg",
+}
+
+ATT.DistantShootSound = {
+    pathUT .. "458socom/fire-dist-300-01.ogg",
+    pathUT .. "458socom/fire-dist-300-02.ogg",
+    pathUT .. "458socom/fire-dist-300-03.ogg",
+    pathUT .. "458socom/fire-dist-300-04.ogg",
+    pathUT .. "458socom/fire-dist-300-05.ogg",
+    pathUT .. "458socom/fire-dist-300-06.ogg",
+}
+
+ATT.DistantShootSoundIndoor = {
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-01.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-02.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-03.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-04.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-05.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-06.ogg",
+}
+
 ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
@@ -62,6 +101,42 @@ ATT.Icon = Material(iconfolder .. "ar15/50.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ShootSound = {
+    pathUT .. "50beo/fire-50-01.ogg",
+    pathUT .. "50beo/fire-50-02.ogg",
+    pathUT .. "50beo/fire-50-03.ogg",
+    pathUT .. "50beo/fire-50-04.ogg",
+    pathUT .. "50beo/fire-50-05.ogg",
+    pathUT .. "50beo/fire-50-06.ogg",
+}
+
+ATT.ShootSoundSilenced = {
+    pathUT .. "458socom/fire-sup-01.ogg",
+    pathUT .. "458socom/fire-sup-02.ogg",
+    pathUT .. "458socom/fire-sup-03.ogg",
+    pathUT .. "458socom/fire-sup-04.ogg",
+    pathUT .. "458socom/fire-sup-05.ogg",
+    pathUT .. "458socom/fire-sup-06.ogg",
+}
+
+ATT.DistantShootSound = {
+    pathUT .. "50beo/fire-50-dist-01.ogg",
+    pathUT .. "50beo/fire-50-dist-02.ogg",
+    pathUT .. "50beo/fire-50-dist-03.ogg",
+    pathUT .. "50beo/fire-50-dist-04.ogg",
+    pathUT .. "50beo/fire-50-dist-05.ogg",
+    pathUT .. "50beo/fire-50-dist-06.ogg",
+}
+
+ATT.DistantShootSoundIndoor = {
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-01.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-02.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-03.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-04.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-05.ogg",
+    pathUTC .. "458socom/fire-dist-300blk-rif-int-06.ogg",
+}
 
 ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}

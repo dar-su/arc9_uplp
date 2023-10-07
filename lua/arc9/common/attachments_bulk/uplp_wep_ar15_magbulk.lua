@@ -2,6 +2,50 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ar15/mag/"
 
+local pathUT = "uplp_urban_temp/ar15/"
+local pathUTC = "uplp_urban_temp/common/"
+
+local shoot9 = {
+    pathUT .. "9mm/fire_9.ogg",
+}
+
+local shoot9sil = {
+    pathUT .. "9mm/fire-sup-01.ogg",
+    pathUT .. "9mm/fire-sup-02.ogg",
+    pathUT .. "9mm/fire-sup-03.ogg",
+    pathUT .. "9mm/fire-sup-04.ogg",
+    pathUT .. "9mm/fire-sup-05.ogg",
+    pathUT .. "9mm/fire-sup-06.ogg",
+}
+
+local shoot9dist = {
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
+}
+
+local shoot9distindoor = {
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+}
+
+local shoot45 = {
+    pathUT .. "45/fire-45-01.ogg",
+    pathUT .. "45/fire-45-02.ogg",
+    pathUT .. "45/fire-45-03.ogg",
+    pathUT .. "45/fire-45-04.ogg",
+    pathUT .. "45/fire-45-05.ogg",
+    pathUT .. "45/fire-45-06.ogg",
+}
+
+
 ///////////////////////////////////////      uplp_ar15_mag_45_20
 
 
@@ -22,13 +66,19 @@ ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
-local path = "weapons/arccw/mp7/"
-local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
+ATT.ShootSound = shoot45
+ATT.ShootSoundSilenced = shoot9sil
 
--- ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
--- ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+ATT.DistantShootSound = shoot9dist
+ATT.DistantShootSoundIndoor = shoot9distindoor
 
-ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+	if anim == "reload" or anim == "reload_empty" then
+		return anim .."_g33"
+	end
+	
+    return anim .. "_45"
+end
 
 ATT.Ammo = "pistol"
 
@@ -74,13 +124,19 @@ ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
-local path = "weapons/arccw/mp7/"
-local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
+ATT.ShootSound = shoot45
+ATT.ShootSoundSilenced = shoot9sil
 
--- ATT.ShootSound = {path .. "fire-01.ogg", path .. "fire-02.ogg", path .. "fire-03.ogg", path .. "fire-04.ogg", path .. "fire-05.ogg", path .. "fire-06.ogg"} -- Maybe Not Placeholder
--- ATT.DistantShootSound = {path .. "fire-dist-01.ogg", path .. "fire-dist-02.ogg", path .. "fire-dist-03.ogg", path .. "fire-dist-04.ogg", path .. "fire-dist-05.ogg", path .. "fire-dist-06.ogg"} -- Maybe Not Placeholder
+ATT.DistantShootSound = shoot9dist
+ATT.DistantShootSoundIndoor = shoot9distindoor
 
-ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+ATT.Hook_TranslateAnimation = function(wep, anim) 
+	if anim == "reload" or anim == "reload_empty" then
+		return anim .."_g33"
+	end
+	
+    return anim .. "_45"
+end
 
 ATT.Ammo = "pistol"
 
@@ -147,15 +203,11 @@ ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecstick
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
-local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
+ATT.ShootSound = shoot9
+ATT.ShootSoundSilenced = shoot9sil
 
-ATT.ShootSound = {shootsound9 .. "shot_01.ogg",
-shootsound9 .. "shot_02.ogg",
-shootsound9 .. "shot_03.ogg",
-shootsound9 .. "shot_04.ogg",
-}
-
-ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot9dist
+ATT.DistantShootSoundIndoor = shoot9distindoor
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_g17"
@@ -218,15 +270,11 @@ ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecstick
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
-local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
+ATT.ShootSound = shoot9
+ATT.ShootSoundSilenced = shoot9sil
 
-ATT.ShootSound = {shootsound9 .. "shot_01.ogg",
-shootsound9 .. "shot_02.ogg",
-shootsound9 .. "shot_03.ogg",
-shootsound9 .. "shot_04.ogg",
-}
-
-ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot9dist
+ATT.DistantShootSoundIndoor = shoot9distindoor
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_g33"
@@ -289,15 +337,11 @@ ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecstick
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
-local shootsound9 = "uplp_temp/ar15/shoot/9/wpn_h1_mp5_"
+ATT.ShootSound = shoot9
+ATT.ShootSoundSilenced = shoot9sil
 
-ATT.ShootSound = {shootsound9 .. "shot_01.ogg",
-shootsound9 .. "shot_02.ogg",
-shootsound9 .. "shot_03.ogg",
-shootsound9 .. "shot_04.ogg",
-}
-
-ATT.DistantShootSound = {shootsound9 .. "tail_ext.ogg"}
+ATT.DistantShootSound = shoot9dist
+ATT.DistantShootSoundIndoor = shoot9distindoor
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_g50"

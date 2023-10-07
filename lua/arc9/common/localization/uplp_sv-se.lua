@@ -121,6 +121,7 @@ L["uplp_category_barrel"] = "Pipa"
 L["uplp_category_backup"] = "Reservsikte"
 L["uplp_category_bipod"] = "Benstöd"
 L["uplp_category_charginghandle"] = "Manöverhandtag"
+L["uplp_category_charm"] = "Smycke"
 L["uplp_category_dovetail"] = "Laxstjärt"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_gasblock"] = "Gasregulator"
@@ -138,6 +139,20 @@ L["uplp_category_sight_front"] = "Stolpkorn"
 L["uplp_category_sight_rear"] = "Bakre Sikte"
 L["uplp_category_stock"] = "Kolv"
 L["uplp_category_tactical"] = "Taktisk"
+
+//////////////////// Sticker Category Names
+-- These are intended mostly for stickers, but can be used elsewhere too.
+
+L["uplp_category_sticker_barrel"] = "Klistermärke (Pipa)"
+L["uplp_category_sticker_charginghandle"] = "Klistermärke (Manöverhandtag)"
+L["uplp_category_sticker_dustcover"] = "Klistermärke (Dammskydd)"
+L["uplp_category_sticker_handguard"] = "Klistermärke (Handskydd)"
+L["uplp_category_sticker_magazine"] = "Klistermärke (Magasin)"
+L["uplp_category_sticker_pistol_grip"] = "Klistermärke (Pistolgrepp)"
+L["uplp_category_sticker_receiver"] = "Klistermärke (Låda)"
+L["uplp_category_sticker_receiver_lower"] = "Klistermärke (Lägre Låda)"
+L["uplp_category_sticker_receiver_upper"] = "Klistermärke (Övre Låda)"
+L["uplp_category_sticker_stock"] = "Klistermärke (Kolv)"
 
 //////////////////// Folder Names
 L["uplp_folder_flashlight"] = "Lampor"
@@ -1082,6 +1097,10 @@ L["uplp_ar15_hg_tacshort.description"] = "Förkortat och lättvikt taktiskt hand
 L["uplp_ar15_hg_tacshort_red.printname"] = "Kort Hoki Armory-Handskydd (Sporty Red)"
 L["uplp_ar15_hg_tacshort_red.compactname"] = "K Hoki (SR)"
 L["uplp_ar15_hg_tacshort_red.description"] = "Förkortat och lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. sportyred
+
+L["uplp_ar15_hg_a1.printname"] = "A1-Handskydd"
+L["uplp_ar15_hg_a1.compactname"] = "A1"
+L["uplp_ar15_hg_a1.description"] = "Klassiskt AR-15-handskydd som användes på tidiga M16-modeller." .. requires16
 
 ////// Magazines
 /// .45 ACP
