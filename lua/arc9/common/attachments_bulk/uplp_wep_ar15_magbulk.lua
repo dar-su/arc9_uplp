@@ -143,7 +143,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
 
 ATT.Folder = "9x19mm"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
@@ -214,7 +214,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
 
 ATT.Folder = "9x19mm"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 
@@ -285,7 +285,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
 
 ATT.Folder = "9x19mm"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag"}
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
 
 ATT.ShellModel = "models/shells/shell_9mm.mdl"
 

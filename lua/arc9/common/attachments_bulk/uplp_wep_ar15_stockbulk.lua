@@ -154,6 +154,16 @@ ATT.VisualRecoilMultHipFire = 0.15
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.2
 
+ATT.Attachments = {
+    {
+        PrintName = "Sticker Stock",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_m16stock_1.mdl",
+        Category = "stickers",
+        Pos = Vector(7, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m16")
 
 

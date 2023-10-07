@@ -487,9 +487,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -505,10 +505,10 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 32 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 42 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -525,9 +525,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -543,10 +543,10 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 28 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 39 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -563,9 +563,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 19 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -581,10 +581,10 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 19 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 32 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 43 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -601,9 +601,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 22 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 31 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 37 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -619,10 +619,10 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 22 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 31 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 37 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 48 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 37 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -639,9 +639,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 27 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 27 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 42 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -657,10 +657,10 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 27 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 27 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 42 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 53 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -677,8 +677,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 26 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 45 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 26 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 45 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -694,11 +694,11 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 26 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 26 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 46 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 52 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 56 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 64 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -717,7 +717,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -735,8 +735,8 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 28 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 39 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -755,7 +755,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 19 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 32 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -773,8 +773,8 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 19 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 32 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 42 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -793,7 +793,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 42 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -811,8 +811,8 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 42 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 52 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 52 / 30 - 0.07, c = ca, v = 0.3 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -1160,6 +1160,71 @@ SWEP.Attachments = {
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
 		Hidden = true,
+    },
+
+    
+    
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "body",
+        Pos = Vector(0.63, 1.84, 5.15),
+        Ang = Angle(90, 0, -90),
+    },
+
+
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_1.mdl",
+        ExcludeElements = {"modrecsticker"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3, 4),
+        Ang = Angle(90, 90, 180),
+    },
+
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_1.mdl",
+        RequireElements = {"modrecsticker"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, 4),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, 0.5),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_2.mdl",
+        RequireElements = {"modrecsticker"},
+        ExcludeElements = {"uplp_ar15_reciever_stm9"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3, 4),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker STM",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_stmrec_2.mdl",
+        RequireElements = {"uplp_ar15_reciever_stm9"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3, 4),
+        Ang = Angle(90, 90, 180),
     },
 }
 

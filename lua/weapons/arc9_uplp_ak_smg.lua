@@ -664,6 +664,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local mdl = data.model
     if eles["uplp_ak_smg_conf_ppk20"] then -- If using the PPK-20 Configuration
         mdl:SetBodygroup(4, 8) -- Remove handguard
+        mdl:SetBodygroup(3, 4) -- Remove dust cover
 		
 		if eles["uplp_ak_smg_brl_ppk20_long"] then
 			mdl:SetBodygroup(2, 3) -- Remove irons when backup or optics on
@@ -675,7 +676,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 	
     if eles["uplp_ak_smg_rec_vityaz"] or eles["uplp_ak_smg_rec_vityaz_tac"] then -- If using either Vityaz Configuration
-		if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_ak_dovetail_rail_used"] then
+		if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_ak_dovetail_rail_used"] and !eles["uplp_ak_smg_conf_ppk20"] then
 			mdl:SetBodygroup(3,1) -- Add rail
 		end
     end
@@ -699,16 +700,18 @@ end
 SWEP.AttachmentElements = {
 
     -- RECIEVERS
-    ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } },
+    ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } , AttPosMods = { [14] = { Pos = Vector(0.7, 1.25, 12) } }},
     ["uplp_ak_smg_rec_bizon"] =          { Bodygroups = { { 0, 2 } } , AttPosMods = {
 	[1] = { Pos = Vector(0, 0.225, 1.5), },
 	[11] = { Pos = Vector(0, 0.225, 0.5), },
 	[12] = { Pos = Vector(0, 0.225, 5.25), },
+	[14] = { Pos = Vector(0.56, 0.9, 12.8), },
 	}},
     ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } , AttPosMods = {
 	[1] = { Pos = Vector(0, 0.225, 1.5), },
 	[11] = { Pos = Vector(0, 0.225, 0.5), },
 	[12] = { Pos = Vector(0, 0.225, 5.25), },
+	[14] = { Pos = Vector(0.7, 1.25, 12), },
 	}},
 
     -- FIRE SELECTORS
@@ -912,6 +915,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
         Category = {"uplp_optic_dovetail_compact"},
+        ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.66, 2.2, 1.55),
@@ -919,4 +923,59 @@ SWEP.Attachments = {
 		-- ExcludeElements = {"uplp_optic_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
+    
+
+
+    -- Cosmetic shit
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        PrintName = "Charm",
+        Category = "charm",
+        Bone = "body",
+        Pos = Vector(0.77, 1.89, 12.8),
+        Ang = Angle(90, 0, -90),
+    },
+
+
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/vityaz_1.mdl",
+        ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.3, 4.2),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/vityaz_2.mdl",
+        ExcludeElements = {"uplp_ak_nmount", "uplp_ak_smg_conf_ppk20"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.8, 0.5),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ppk20_1.mdl",
+        RequireElements = {"uplp_ak_smg_conf_ppk20"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.3, 4.2),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
+        PrintName = "Sticker B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ppk20_2.mdl",
+        RequireElements = {"uplp_ak_smg_conf_ppk20"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.8, 0.5),
+        Ang = Angle(90, 90, 180),
+    },
+
 }

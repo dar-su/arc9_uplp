@@ -116,6 +116,7 @@ ATT = {}
 ATT.PrintName = "Tactical Reciever"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
+ATT.ActivateElements = {"modrecsticker"}
 
 ATT.Icon = Material(iconfolder .. "rectac.png", "mips smooth")
 
