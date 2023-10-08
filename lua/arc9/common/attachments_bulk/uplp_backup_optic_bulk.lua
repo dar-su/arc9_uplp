@@ -31,10 +31,10 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig45.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 600
-ATT.HoloSightColorable = true
+ATT.HoloSightSize = 100
+ATT.HoloSightColorable = false 
 
 ATT.Category = "uplp_backup_optic"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
