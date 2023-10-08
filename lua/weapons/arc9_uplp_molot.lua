@@ -1089,8 +1089,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
-        Bone = "body",
-        Pos = Vector(0.6, 1.15, 8.5),
+        Bone = "bolt",
+        Pos = Vector(1.75, 0.16, -0.37),
         Ang = Angle(90, 0, -90),
     },
 }
