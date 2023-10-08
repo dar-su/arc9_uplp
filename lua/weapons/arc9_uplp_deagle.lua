@@ -58,11 +58,12 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_deagle.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
+SWEP.TPIKParentToSpine4 = true  
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(7, -4, -4),
+    TPIKPos = Vector(7, -7, -4),
     TPIKAng = Angle(-10, 65, 90),
     Scale = 1
 }
@@ -226,7 +227,7 @@ SWEP.DropMagazineModel = "models/weapons/arc9/uplp/deagle_mag_std.mdl"
 SWEP.DropMagazineTime = 0.66
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(80, 90, 0)
+SWEP.DropMagazineAng = Angle(80, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
 //// Sounds

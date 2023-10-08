@@ -57,11 +57,12 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_fn57.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
--- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_fn57.mdl"
+SWEP.TPIKParentToSpine4 = true  
+-- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(7, -4, -4),
+    TPIKPos = Vector(7, -7, -4),
     TPIKAng = Angle(-10, 65, 90),
     Scale = 1
 }
@@ -223,10 +224,10 @@ SWEP.CustomizeSnapshotFOV = 70
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/fn57_mag_std.mdl"
-SWEP.DropMagazineTime = 0.35
+SWEP.DropMagazineTime = 0.4
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(80, 90, 0)
+SWEP.DropMagazineAng = Angle(80, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
 //// Sounds
@@ -499,10 +500,10 @@ SWEP.Animations = {
             { s = pathUT .. "slide_rel_new.ogg", t = 40 / 60, c = ca },
             { s = UTCrattle, t = 60 / 60, c = ca },
 
-            {hide = 1, t = 0},
-            {hide = 3, t = 0.66},
-            {hide = 1, t = 0.8},
-            {hide = 1, t = 2},
+            -- {hide = 1, t = 0},
+            -- {hide = 3, t = 0.66},
+            -- {hide = 1, t = 0.8},
+            -- {hide = 1, t = 2},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -542,10 +543,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 27.5 / 60, c = ca },
             { s = pathUT .. "slide_rel_new.ogg", t = 50 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
-            {hide = 1, t = 0},
-            {hide = 3, t = 0.733},
-            {hide = 1, t = 1.07},
-            {hide = 1, t = 2.333},
+            -- {hide = 1, t = 0},
+            -- {hide = 3, t = 0.733},
+            -- {hide = 1, t = 1.07},
+            -- {hide = 1, t = 2.333},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

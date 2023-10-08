@@ -234,11 +234,11 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.33
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 5, -3)
+SWEP.DropMagazinePos = Vector(0, 1.75, -2.5)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 2)
+SWEP.DropMagazineVelocity = Vector(0, -15, 10)
 
 //// Sounds
 
@@ -334,19 +334,14 @@ SWEP.BulletBones = {
     -- "bullet4",
 -- }
 
--- SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "fakerounds",
-    -- },
-    -- [2] = {
-        -- "fakemag",
-        -- "bullet1",
-        -- "bullet2",
-        -- "bullet3",
-        -- "bullet4",
-    -- }
--- }
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+    },
+}
 
 local mechh = {
     pathUT .. "mech-01.ogg",
@@ -499,6 +494,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -518,6 +517,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

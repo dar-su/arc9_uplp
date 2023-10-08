@@ -65,7 +65,7 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-3.5, 3, -8),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-4.5, 2, -7),
+    TPIKPos = Vector(-9.5, 4, -5),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
@@ -73,7 +73,7 @@ SWEP.WorldModelOffset = {
 SWEP.ViewModelFOVBase = 65
 SWEP.ActivePos = Vector(-0.5, 0, -0.1)
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
@@ -225,7 +225,7 @@ SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_std.mdl"
 SWEP.DropMagazineTime = 0.3
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 5, -3)
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 
