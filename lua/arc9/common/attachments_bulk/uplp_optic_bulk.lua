@@ -812,7 +812,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -0.625),
+        Pos = Vector(0, 8, -0.625),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57
@@ -820,9 +820,9 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1200
+ATT.HoloSightSize = 700
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_small"}
@@ -859,9 +859,9 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 1200
+ATT.HoloSightSize = 700
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_direct"}
