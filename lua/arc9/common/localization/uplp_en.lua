@@ -487,6 +487,21 @@ L["uplp_sg_shell_yellow.printname"] = "Explosive Slug Rounds"
 L["uplp_sg_shell_yellow.compactname"] = "Exp. Slug"
 L["uplp_sg_shell_yellow.description"] = "Replace the pellets with a single slug that explodes on impact."
 
+/////////// Cosmetics
+////// Charms
+L["uplp_charm_paw.printname"] = "Poly Paw"
+L["uplp_charm_paw.compactname"] = "Poly Paw"
+L["uplp_charm_paw.description"] = "Paw.\n\nCharm included in Poly Arms Project."
+
+L["uplp_charm_title.printname"] = "Poly Arms Project Title"
+L["uplp_charm_title.compactname"] = "PAP Title"
+L["uplp_charm_title.description"] = "Possibly a reference to the addon title.\nImagine this but on those rapper SWAG chains.\n\nCharm included in Poly Arms Project."
+
+////// Stickers
+L["uplp_sticker_paw.printname"] = "Poly Paw"
+L["uplp_sticker_paw.compactname"] = "Poly Paw"
+L["uplp_sticker_paw.description"] = "Paw.\n\nSticker included in Poly Arms Project."
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
@@ -1348,9 +1363,9 @@ L["uplp_deag_muzzle_tri.compactname"] = "Horizontal"
 L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propelled gases sideways to reduce horizontal recoil."
 
 ////// Skins
-L["uplp_deagle_skin_black.printname"] = "Black"
+L["uplp_deagle_skin_black.printname"] = "Matt Black"
 L["uplp_deagle_skin_black.compactname"] = "Black"
-L["uplp_deagle_skin_black.description"] = "Replaces the slide and barrel with ones painted black."
+L["uplp_deagle_skin_black.description"] = "Replaces the slide and barrel with matt black ones."
 
 L["uplp_deagle_skin_gold.printname"] = "Gold"
 L["uplp_deagle_skin_gold.compactname"] = "Gold"
@@ -1358,7 +1373,7 @@ L["uplp_deagle_skin_gold.description"] = "Replaces the slide and barrel with gol
 
 L["uplp_deagle_skin_blue.printname"] = "Cylo Blue"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
-L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"

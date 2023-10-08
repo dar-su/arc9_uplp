@@ -484,6 +484,21 @@ L["uplp_sg_shell_yellow.printname"] = "Explosiva Granatskott"
 L["uplp_sg_shell_yellow.compactname"] = "Granat"
 L["uplp_sg_shell_yellow.description"] = "Ersätter alla skotten med ett enkelt granatskott som exploderar vid träff."
 
+/////////// Cosmetics
+////// Charms
+L["uplp_charm_paw.printname"] = "Poly Paw"
+L["uplp_charm_paw.compactname"] = "Poly Paw"
+L["uplp_charm_paw.description"] = "Tass.\n\nSmycke inkluderad i Poly Arms Project"
+
+L["uplp_charm_title.printname"] = "Poly Arms-Projektnamn"
+L["uplp_charm_title.compactname"] = "PAP Namn"
+L["uplp_charm_title.description"] = "Möjligtvis en hänvisning till tilläggets titel.\nTänk dig denna fast på en rappares SWAG halsband.\n\nSmycke inkluderad i Poly Arms Project."
+
+////// Stickers
+L["uplp_sticker_paw.printname"] = "Poly Paw"
+L["uplp_sticker_paw.compactname"] = "Poly Paw"
+L["uplp_sticker_paw.description"] = "Tass.\n\nKlistermärke inkluderad i Poly Arms Project."
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
@@ -1346,9 +1361,9 @@ L["uplp_deag_muzzle_tri.compactname"] = "Horisontal"
 L["uplp_deag_muzzle_tri.description"] = "En kompensator som omdirigerar framdrivna gaser till sidan för att sänka horisontal rekyl."
 
 ////// Skins
-L["uplp_deagle_skin_black.printname"] = "Svart"
-L["uplp_deagle_skin_black.compactname"] = "Svart"
-L["uplp_deagle_skin_black.description"] = "Ersätter slutstycket och pipan med några svartmålade."
+L["uplp_deagle_skin_black.printname"] = "Mattsvart"
+L["uplp_deagle_skin_black.compactname"] = "Mattsvart"
+L["uplp_deagle_skin_black.description"] = "Ersätter slutstycket och pipan med några mattsvarta."
 
 L["uplp_deagle_skin_gold.printname"] = "Guld"
 L["uplp_deagle_skin_gold.compactname"] = "Guld"
@@ -1356,7 +1371,7 @@ L["uplp_deagle_skin_gold.description"] = "Ersätter slutstycket och pipan med gu
 
 L["uplp_deagle_skin_blue.printname"] = "Cylo-Blå"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
-L["uplp_deagle_skin_blue.description"] = "Ersätter slutstycket och pipan med några blåmålade.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus."
+L["uplp_deagle_skin_blue.description"] = "Ersätter slutstycket och pipan med några målade metalliskt blå.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus."
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
