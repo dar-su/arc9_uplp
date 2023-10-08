@@ -1283,6 +1283,8 @@ L["uplp_ar15_stock_veryheavy.description"] = "Tung kolv till AR-15-baserade pric
 L["uplp_weapon_deagle"] = "Deagle"
 L["uplp_weapon_deagle_desc"] = "Deagle är en halvautomatisk pistol känd för sin distinkta design och kraftfulla patronalternativ, inklusive .50 AE. Den är känd för sitt stora ram, gasdrivna mekanism och sitt rykte som en av de mest kraftfulla handeldvapnen i världen."
 
+L["uplp_weapon_deagle_gold"] = "Guld Deagle"
+
 L["uplp_weapon_deagle_real"] = "IMI Desert Eagle XIX"
 
 /////////// Attachments
@@ -1350,7 +1352,7 @@ L["uplp_deagle_skin_black.description"] = "Ersätter slutstycket och pipan med n
 
 L["uplp_deagle_skin_gold.printname"] = "Guld"
 L["uplp_deagle_skin_gold.compactname"] = "Guld"
-L["uplp_deagle_skin_gold.description"] = "Ersätter slutstycket och pipan med guldversioner."
+L["uplp_deagle_skin_gold.description"] = "Ersätter slutstycket och pipan med guldversioner.\n\n<color=255,255,100>Upplåst vid Befälhavare (Lv55)</color>\n\n\"Vem bryr sig om praktiskhet när du har ett guldvapen som skjuter stora kulor?\""
 
 L["uplp_deagle_skin_blue.printname"] = "Cylo-Blå"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"

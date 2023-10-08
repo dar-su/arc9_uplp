@@ -1285,6 +1285,8 @@ L["uplp_ar15_stock_veryheavy.description"] = "Heavy stock for AR-15-based marksm
 L["uplp_weapon_deagle"] = "Deagle"
 L["uplp_weapon_deagle_desc"] = "The Deagle is a semi-automatic pistol known for its distinctive design and powerful chambering options, including .50 AE. It is recognized for its large frame, gas-operated mechanism, and reputation for being one of the most powerful handguns in the world."
 
+L["uplp_weapon_deagle_gold"] = "Gold Deagle"
+
 L["uplp_weapon_deagle_real"] = "IMI Desert Eagle XIX"
 
 /////////// Attachments
@@ -1352,7 +1354,7 @@ L["uplp_deagle_skin_black.description"] = "Replaces the slide and barrel with on
 
 L["uplp_deagle_skin_gold.printname"] = "Gold"
 L["uplp_deagle_skin_gold.compactname"] = "Gold"
-L["uplp_deagle_skin_gold.description"] = "Replaces the slide and barrel with golden ones."
+L["uplp_deagle_skin_gold.description"] = "Replaces the slide and barrel with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>\n\n\"Who cares about practicality when you've got a golden gun that shoots giant bullets?\""
 
 L["uplp_deagle_skin_blue.printname"] = "Cylo Blue"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"

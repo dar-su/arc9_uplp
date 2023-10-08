@@ -694,3 +694,13 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+
+	if att["uplp_deagle_skin_gold"] then
+		name = ARC9:GetPhrase("uplp_weapon_deagle_gold")
+	end
+
+    return name
+end
