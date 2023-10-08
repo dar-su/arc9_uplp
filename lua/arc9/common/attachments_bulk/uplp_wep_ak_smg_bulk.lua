@@ -154,6 +154,17 @@ ATT.Icon = Material(iconfolder .. "barr/vlong.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_smg_ppk20"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Attachments = {
+	{
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_muzzle", "uplp_ak_muzzle_smg"},
+        Bone = "body",
+        Pos = Vector(-5.12, 0, -0.425),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_ak_mz_vityaz",
+    },
+}
+
 ATT.ActivateElements = {
 "uplp_ak_smg_brl_ppk20_long",
 }
@@ -182,7 +193,20 @@ ATT.ActivateElements = {
 "uplp_ak_smg_dc_bizon",
 "uplp_ak_smg_hg_bizon",
 "uplp_ak_smg_ppk20_irons",
-"uplp_ak_grip",
+"uplp_ak_grip_used",
+}
+
+ATT.Attachments = {
+	{
+        PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
+        Category = {"uplp_ak_grip_12"},
+        DefaultIcon = Material("entities/uplp_attachements/def/akgrip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(3.95, 0, 3.525),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_ak_grip_12evo",
+		Integral = "uplp_ak_grip_12evo",
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_conf_ppk20")

@@ -1069,7 +1069,7 @@ SWEP.AttachmentElements = {
     ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
 
     -- PISTOL GRIPS
-    ["uplp_ak_grip"] =       { Bodygroups = { { 9, 1 } } },
+    ["uplp_ak_grip_used"] =       { Bodygroups = { { 9, 1 } } },
 
     -- HANDGUARDS
     -- Standard
@@ -1206,7 +1206,6 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip_12"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
-		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),

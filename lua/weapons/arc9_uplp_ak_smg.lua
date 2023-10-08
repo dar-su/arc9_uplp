@@ -34,10 +34,11 @@ SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
-
 SWEP.StandardPresets = {
 
 }
+
+SWEP.DefaultBodygroups = "000000000000000000000" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_mp5"
@@ -687,6 +688,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 		end
     end
 
+	if !eles["uplp_ak_grip_used"] then -- When not using any pistol grip replacement
+		mdl:SetBodygroup(9,0) -- Force the pistol grip on
+	else
+		mdl:SetBodygroup(9,1) -- Force the pistol grip on
+	end
+
 end
 
 -- SWEP.Hook_ModifyElements = function(self, eles)
@@ -698,20 +705,32 @@ end
 -- end
 
 SWEP.AttachmentElements = {
+    
+    -- NMounts
+    ["uplp_ak_smg_nmount"] =  { Bodygroups = { { 7, 2 } } },
+    -- ["uplp_ak_smg_nmount_c"] =  { Bodygroups = { { 7, 2 } } },
+
+    ["uplp_ak_dovetail_rail_used"] = { AttPosMods = {
+        [1] = { Pos = Vector(0, -0.62, 1), }, 
+        [10] = { Pos = Vector(0, -0.62, 0.25), },
+        [11] = { Pos = Vector(0, -0.62, 6), }
+    }},
 
     -- RECIEVERS
-    ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } , AttPosMods = { [14] = { Pos = Vector(0.7, 1.25, 12) } }},
+    ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } , AttPosMods = {
+	[11] = { Pos = Vector(0, -0.05, 11), },
+	[13] = { Pos = Vector(0.7, 1.25, 12) }, 
+	}},
     ["uplp_ak_smg_rec_bizon"] =          { Bodygroups = { { 0, 2 } } , AttPosMods = {
 	[1] = { Pos = Vector(0, 0.225, 1.5), },
-	[11] = { Pos = Vector(0, 0.225, 0.5), },
-	[12] = { Pos = Vector(0, 0.225, 5.25), },
-	[14] = { Pos = Vector(0.56, 0.9, 12.8), },
+	[10] = { Pos = Vector(0, 0.225, 0.5), },
+	[11] = { Pos = Vector(0, 0.225, 5.5), },
 	}},
     ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } , AttPosMods = {
 	[1] = { Pos = Vector(0, 0.225, 1.5), },
 	[11] = { Pos = Vector(0, 0.225, 0.5), },
 	[12] = { Pos = Vector(0, 0.225, 5.25), },
-	[14] = { Pos = Vector(0.7, 1.25, 12), },
+	[13] = { Pos = Vector(0.7, 1.25, 12), },
 	}},
 
     -- FIRE SELECTORS
@@ -727,11 +746,7 @@ SWEP.AttachmentElements = {
     -- DUST COVERS
     ["uplp_ak_smg_dc_rail"] =           { Bodygroups = { { 3, 1 } } },
     ["uplp_ak_smg_dc_bizon"] =          { Bodygroups = { { 3, 2 } } },
-    ["uplp_ak_smg_dc_bizon_rail"] =           { Bodygroups = { { 3, 3 } } , AttPosMods = {
-	[1] = { Pos = Vector(0, 0.225, 1.5), },
-	[13] = { Pos = Vector(0, 0.225, 0.5), },
-	[14] = { Pos = Vector(0, 0.225, 5.25), },
-	}},
+    ["uplp_ak_smg_dc_bizon_rail"] =           { Bodygroups = { { 3, 3 } } },
 
     -- HANDGUARDS
     ["uplp_ak_hg_100"] =   { Bodygroups = { { 4, 1 } } },
@@ -750,16 +765,6 @@ SWEP.AttachmentElements = {
     ["uplp_ak_smg_mag_tac"] = { Bodygroups = { { 6, 1 } } },
     ["uplp_ak_smg_mag_bizon"] = { Bodygroups = { { 6, 2 } } },
     ["uplp_ak_smg_mag_bizon_old"] = { Bodygroups = { { 6, 3 } } },
-    
-    -- NMounts
-    ["uplp_ak_smg_nmount"] =  { Bodygroups = { { 7, 2 } } },
-    -- ["uplp_ak_smg_nmount_c"] =  { Bodygroups = { { 7, 2 } } },
-
-    ["uplp_ak_dovetail_rail_used"] = { AttPosMods = {
-        [1] = { Pos = Vector(0, -0.62, 1), }, 
-        [11] = { Pos = Vector(0, -0.62, 0.25), },
-        [12] = { Pos = Vector(0, -0.62, 6), }
-    }},
 
 
     -- Alternative Irons
@@ -792,6 +797,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
+		ExcludeElements = {"uplp_ak_smg_brl_ppk20_long"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -808,7 +814,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_barrel_smg_ppk20"},
         DefaultIcon = Material(defatt2 .. "akbar.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 2, 18),
+        Pos = Vector(0.045, 2, 16.5),
 		Icon_Offset = Vector(-5, 0, 0.5),
         Ang = Angle(90, 90, 180),
 		RequireElements = {"uplp_ak_smg_rec_ppk20"},
@@ -848,7 +854,6 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip", "uplp_ak_grip_smg"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
-		ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         Installed = "uplp_ak_grip_vityaz",
         RejectAttachments = {
@@ -857,19 +862,6 @@ SWEP.Attachments = {
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
-        Category = {"uplp_ak_grip_12"},
-        DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
-		ActiveElements = {"uplp_ak_grip"},
-        Bone = "body",
-        Installed = "uplp_ak_grip_vityaz",
-        Pos = Vector(0.045, 5, -1),
-        Ang = Angle(90, 90, 180),
-		Installed = "uplp_ak_grip_12evo",
-		Integral = "uplp_ak_grip_12evo",
-		RequireElements = {"uplp_ak_smg_rec_ppk20"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -923,8 +915,6 @@ SWEP.Attachments = {
 		-- ExcludeElements = {"uplp_optic_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
-    
-
 
     -- Cosmetic shit
     {

@@ -12,7 +12,7 @@ ATT.Icon = Material(iconfolder .. "std.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "0"
@@ -32,7 +32,7 @@ ATT.Icon = Material(iconfolder .. "bak.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "1"
@@ -52,7 +52,7 @@ ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "2"
@@ -72,7 +72,7 @@ ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "3"
@@ -95,7 +95,7 @@ ATT.Icon = Material(iconfolder .. "pawco.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "4"
@@ -118,7 +118,7 @@ ATT.Icon = Material(iconfolder .. "v.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_smg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "5"
@@ -138,7 +138,7 @@ ATT.Icon = Material(iconfolder .. "ber.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "6"
@@ -158,7 +158,7 @@ ATT.Icon = Material(iconfolder .. "vepr.png", "mips smooth")
 ATT.Category = "uplp_ak_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "9"
@@ -178,7 +178,7 @@ ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "7"
@@ -198,7 +198,7 @@ ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip"}
+ATT.ActivateElements = {"uplp_ak_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "8"
