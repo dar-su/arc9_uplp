@@ -37,6 +37,14 @@ $bodygroup "muzzz" {
 
 $cdmaterials "models\weapons\arc9\uplp"
 
+$texturegroup skinfamilies
+{
+	{ "lowpoly_chrome"  }
+	{ "lowpoly_skin_black" }
+	{ "lowpoly_skin_gold" }
+	{ "lowpoly_skin_blue" }
+}
+
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 $attachment "2" "slide" 0 0 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0

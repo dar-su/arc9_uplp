@@ -258,3 +258,57 @@ ATT.RecoilRandomUpMult = 5
 ATT.RecoilAutoControlMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_tri")
+
+
+
+////////////////////      SKINS
+///////////////////////////////////////      uplp_deagle_skin_black
+
+ATT = {}
+
+ATT.PrintName = "Black"
+ATT.CompactName = "Black"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "black.png", "mips smooth")
+
+ATT.Category = "uplp_deagle_skin"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_deagle_skin_black"}
+
+ARC9.LoadAttachment(ATT, "uplp_deagle_skin_black")
+
+///////////////////////////////////////      uplp_deagle_skin_gold
+
+ATT = {}
+
+ATT.PrintName = "Gold"
+ATT.CompactName = "Gold"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "gold.png", "mips smooth")
+
+ATT.Category = "uplp_deagle_skin"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_deagle_skin_gold"}
+
+ARC9.LoadAttachment(ATT, "uplp_deagle_skin_gold")
+
+///////////////////////////////////////      uplp_deagle_skin_blue
+
+ATT = {}
+
+ATT.PrintName = "Blue"
+ATT.CompactName = "Blue"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "blue.png", "mips smooth")
+
+ATT.Category = "uplp_deagle_skin"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_deagle_skin_blue"}
+
+ARC9.LoadAttachment(ATT, "uplp_deagle_skin_blue")

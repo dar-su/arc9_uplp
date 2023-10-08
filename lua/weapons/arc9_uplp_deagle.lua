@@ -586,6 +586,10 @@ SWEP.AttachmentElements = {
     ["uplp_deag_muzzle_cut"] = { Bodygroups = { { 6, 1 } } },
     ["uplp_deag_muzzle_heavy"] = { Bodygroups = { { 6, 2 } } },
     ["uplp_deag_muzzle_tri"] = { Bodygroups = { { 6, 3 } } },
+
+    ["uplp_deagle_skin_black"] = { Skin = 1 },
+    ["uplp_deagle_skin_gold"] = { Skin = 2 },
+    ["uplp_deagle_skin_blue"] = { Skin = 3 },
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -661,6 +665,14 @@ SWEP.Attachments = {
         ExtraSightDistance = 2,
         Ang = Angle(90, 90, 180),
         MergeSlots = {1}
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_appearance"),
+        Category = {"uplp_deagle_skin"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0, -1),
+        Ang = Angle(90, 90, 180),
     },
 
 
