@@ -937,8 +937,7 @@ SWEP.Attachments = {
 
 
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/vityaz_1.mdl",
         ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
         Category = "stickers",
@@ -947,8 +946,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/vityaz_2.mdl",
         ExcludeElements = {"uplp_ak_nmount", "uplp_ak_smg_conf_ppk20"},
         Category = "stickers",
@@ -957,8 +955,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/ppk20_1.mdl",
         RequireElements = {"uplp_ak_smg_conf_ppk20"},
         Category = "stickers",
@@ -967,8 +964,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/ppk20_2.mdl",
         RequireElements = {"uplp_ak_smg_conf_ppk20"},
         Category = "stickers",

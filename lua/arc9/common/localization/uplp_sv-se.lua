@@ -137,22 +137,15 @@ L["uplp_category_receiver_lower"] = "Lägre Låda"
 L["uplp_category_receiver_upper"] = "Övre Låda"
 L["uplp_category_sight_front"] = "Stolpkorn"
 L["uplp_category_sight_rear"] = "Bakre Sikte"
+L["uplp_category_sticker"] = "Klistermärke"
 L["uplp_category_stock"] = "Kolv"
 L["uplp_category_tactical"] = "Taktisk"
 
 //////////////////// Sticker Category Names
--- These are intended mostly for stickers, but can be used elsewhere too.
+-- These are intended for stickers placed on certain slots, such as stocks or magazines.
 
-L["uplp_category_sticker_barrel"] = "Klistermärke (Pipa)"
-L["uplp_category_sticker_charginghandle"] = "Klistermärke (Manöverhandtag)"
-L["uplp_category_sticker_dustcover"] = "Klistermärke (Dammskydd)"
-L["uplp_category_sticker_handguard"] = "Klistermärke (Handskydd)"
-L["uplp_category_sticker_magazine"] = "Klistermärke (Magasin)"
-L["uplp_category_sticker_pistol_grip"] = "Klistermärke (Pistolgrepp)"
-L["uplp_category_sticker_receiver"] = "Klistermärke (Låda)"
-L["uplp_category_sticker_receiver_lower"] = "Klistermärke (Lägre Låda)"
-L["uplp_category_sticker_receiver_upper"] = "Klistermärke (Övre Låda)"
-L["uplp_category_sticker_stock"] = "Klistermärke (Kolv)"
+L["uplp_category_sticker_mag"] = "Klisterm. Mag."
+L["uplp_category_sticker_stock"] = "Klistermärke Kolv"
 
 //////////////////// Folder Names
 L["uplp_folder_flashlight"] = "Lampor"
@@ -1350,6 +1343,19 @@ L["uplp_deag_muzzle_tri.printname"] = "Horisontal Kompensator"
 L["uplp_deag_muzzle_tri.compactname"] = "Horisontal"
 L["uplp_deag_muzzle_tri.description"] = "En kompensator som omdirigerar framdrivna gaser till sidan för att sänka horisontal rekyl."
 
+////// Skins
+L["uplp_deagle_skin_black.printname"] = "Svart"
+L["uplp_deagle_skin_black.compactname"] = "Svart"
+L["uplp_deagle_skin_black.description"] = "Ersätter slutstycket och pipan med några svartmålade."
+
+L["uplp_deagle_skin_gold.printname"] = "Guld"
+L["uplp_deagle_skin_gold.compactname"] = "Guld"
+L["uplp_deagle_skin_gold.description"] = "Ersätter slutstycket och pipan med guldversioner."
+
+L["uplp_deagle_skin_blue.printname"] = "Cylo-Blå"
+L["uplp_deagle_skin_blue.compactname"] = "Cylo"
+L["uplp_deagle_skin_blue.description"] = "Ersätter slutstycket och pipan med några blåmålade.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla 7,62x39mm-kalibern som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
@@ -1717,11 +1723,11 @@ L["uplp_scar_stock_lb.compactname"] = "Standard (S)"
 L["uplp_scar_stock_lb.description"] = "Ersätter kolven med en svartmålad."
 
 L["uplp_scar_stock_h.printname"] = "DMR-Kolv"
-L["uplp_scar_stock_h.compactname"] = "SSR"
+L["uplp_scar_stock_h.compactname"] = "DMR"
 L["uplp_scar_stock_h.description"] = "Ersätter kolven med en tung kolv som används på XAR DMR."
 
 L["uplp_scar_stock_hb.printname"] = "DMR-Kolv (Svart)"
-L["uplp_scar_stock_hb.compactname"] = "SSR (B)"
+L["uplp_scar_stock_hb.compactname"] = "DMR (B)"
 L["uplp_scar_stock_hb.description"] = "Ersätter kolven med en svartmålad tung kolv som används på XAR DMR."
 
 L["uplp_scar_stock_tube.printname"] = "Bufferrör"

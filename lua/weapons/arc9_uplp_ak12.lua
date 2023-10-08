@@ -1259,8 +1259,7 @@ SWEP.Attachments = {
 
 
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/ak12_1.mdl",
         Category = "stickers",
         Bone = "body",
@@ -1268,8 +1267,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/ak12_2.mdl",
         ExcludeElements = {"uplp_ak_nmount"},
         Category = "stickers",
@@ -1280,8 +1278,7 @@ SWEP.Attachments = {
 
     
     { -- 7.62
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker Mag A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_mag") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/mag762_1.mdl",
         RequireElements = {"can762sticker"},
         Category = "stickers",
@@ -1290,8 +1287,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker Mag B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_mag") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/mag762_2.mdl",
         RequireElements = {"can762sticker"},
         Category = "stickers",
@@ -1301,8 +1297,7 @@ SWEP.Attachments = {
     },
 
     { -- 5.45
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker Mag A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_mag") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/mag545_1.mdl",
         RequireElements = {"can545sticker"},
         Category = "stickers",
@@ -1311,8 +1306,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker Mag B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_mag") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/mag545_2.mdl",
         RequireElements = {"can545sticker"},
         Category = "stickers",

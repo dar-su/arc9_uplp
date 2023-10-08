@@ -137,22 +137,15 @@ L["uplp_category_receiver_lower"] = "Lower Receiver"
 L["uplp_category_receiver_upper"] = "Upper Receiver"
 L["uplp_category_sight_front"] = "Front Sight"
 L["uplp_category_sight_rear"] = "Rear Sight"
+L["uplp_category_sticker"] = "Sticker"
 L["uplp_category_stock"] = "Stock"
 L["uplp_category_tactical"] = "Tactical"
 
 //////////////////// Sticker Category Names
--- These are intended mostly for stickers, but can be used elsewhere too.
+-- These are intended for stickers placed on certain slots, such as stocks or magazines.
 
-L["uplp_category_sticker_barrel"] = "Sticker (Barrel)"
-L["uplp_category_sticker_charginghandle"] = "Sticker (Charging Handle)"
-L["uplp_category_sticker_dustcover"] = "Sticker (Dust Cover)"
-L["uplp_category_sticker_handguard"] = "Sticker (Handguard)"
-L["uplp_category_sticker_magazine"] = "Sticker (Magazine)"
-L["uplp_category_sticker_pistol_grip"] = "Sticker (Pistol Grip)"
-L["uplp_category_sticker_receiver"] = "Sticker (Receiver)"
-L["uplp_category_sticker_receiver_lower"] = "Sticker (Lower Receiver)"
-L["uplp_category_sticker_receiver_upper"] = "Sticker (Upper Receiver)"
-L["uplp_category_sticker_stock"] = "Sticker (Stock)"
+L["uplp_category_sticker_mag"] = "Sticker Mag."
+L["uplp_category_sticker_stock"] = "Sticker Stock"
 
 //////////////////// Folder Names
 L["uplp_folder_flashlight"] = "Flashlights"
@@ -1352,6 +1345,19 @@ L["uplp_deag_muzzle_tri.printname"] = "Horizontal Compensator"
 L["uplp_deag_muzzle_tri.compactname"] = "Horizontal"
 L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propelled gases sideways to reduce horizontal recoil."
 
+////// Skins
+L["uplp_deagle_skin_black.printname"] = "Black"
+L["uplp_deagle_skin_black.compactname"] = "Black"
+L["uplp_deagle_skin_black.description"] = "Replaces the slide and barrel with ones painted black."
+
+L["uplp_deagle_skin_gold.printname"] = "Gold"
+L["uplp_deagle_skin_gold.compactname"] = "Gold"
+L["uplp_deagle_skin_gold.description"] = "Replaces the slide and barrel with golden ones."
+
+L["uplp_deagle_skin_blue.printname"] = "Cylo Blue"
+L["uplp_deagle_skin_blue.compactname"] = "Cylo"
+L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62x39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
@@ -1719,11 +1725,11 @@ L["uplp_scar_stock_lb.compactname"] = "Standard (B)"
 L["uplp_scar_stock_lb.description"] = "Replaces the stock with a black colored one."
 
 L["uplp_scar_stock_h.printname"] = "DMR Stock"
-L["uplp_scar_stock_h.compactname"] = "SSR"
+L["uplp_scar_stock_h.compactname"] = "DMR"
 L["uplp_scar_stock_h.description"] = "Replaces the stock with a heavy stock used on the XAR DMR."
 
 L["uplp_scar_stock_hb.printname"] = "DMR Stock (Black)"
-L["uplp_scar_stock_hb.compactname"] = "SSR (B)"
+L["uplp_scar_stock_hb.compactname"] = "DMR (B)"
 L["uplp_scar_stock_hb.description"] = "Replaces the stock with a heavy stock in black used on the XAR DMR."
 
 L["uplp_scar_stock_tube.printname"] = "Buffer Tube"

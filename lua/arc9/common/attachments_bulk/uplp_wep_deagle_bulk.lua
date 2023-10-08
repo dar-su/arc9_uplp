@@ -300,8 +300,8 @@ ARC9.LoadAttachment(ATT, "uplp_deagle_skin_gold")
 
 ATT = {}
 
-ATT.PrintName = "Blue"
-ATT.CompactName = "Blue"
+ATT.PrintName = "Cylo Blue"
+ATT.CompactName = "Cylo"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "blue.png", "mips smooth")

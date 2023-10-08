@@ -693,8 +693,7 @@ SWEP.Attachments = {
 
     -- Cosmetic shit
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/fn57_1.mdl",
         Category = "stickers",
         Bone = "body",

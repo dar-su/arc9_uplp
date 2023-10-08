@@ -805,8 +805,7 @@ SWEP.Attachments = {
 
     -- Cosmetic shit
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/awp_1.mdl",
         ExcludeElements = {"xstock"},
         Category = "stickers",
@@ -815,8 +814,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/awp_2.mdl",
         ExcludeElements = {"xstock"},
         Category = "stickers",
@@ -825,8 +823,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
         StickerModel = "models/weapons/arc9/uplp/stickers/awp_3.mdl",
         ExcludeElements = {"xstock"},
         Category = "stickers",
@@ -835,8 +832,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker D",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
         StickerModel = "models/weapons/arc9/uplp/stickers/awp_4.mdl",
         ExcludeElements = {"uplp_awp_stock_tube", "uplp_awp_stock_at", "xstock"},
         Category = "stickers",
@@ -855,8 +851,7 @@ SWEP.Attachments = {
 
     
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/awp_atx_1.mdl",
         RequireElements = {"xstock"},
         Category = "stickers",
@@ -865,8 +860,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/awp_atx_2.mdl",
         RequireElements = {"xstock"},
         Category = "stickers",

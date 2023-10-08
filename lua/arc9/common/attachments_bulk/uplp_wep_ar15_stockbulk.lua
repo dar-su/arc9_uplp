@@ -156,7 +156,7 @@ ATT.SprintToFireTimeMult = 1.2
 
 ATT.Attachments = {
     {
-        PrintName = "Sticker Stock",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_stock"),
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_m16stock_1.mdl",
         Category = "stickers",
         Pos = Vector(7, 0, 0),

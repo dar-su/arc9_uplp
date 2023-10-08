@@ -696,8 +696,7 @@ SWEP.Attachments = {
 
     -- Cosmetic shit
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_1.mdl",
         Category = "stickers",
         Bone = "body",
@@ -705,8 +704,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_2.mdl",
         Category = "stickers",
         Bone = "body",
@@ -714,8 +712,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_3.mdl",
         Category = "stickers",
         Bone = "body",
@@ -723,8 +720,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        -- PrintName = ARC9:GetPhrase("uplp_category_sticker"),
-        PrintName = "Sticker D",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_4.mdl",
         Category = "stickers",
         Bone = "body",
