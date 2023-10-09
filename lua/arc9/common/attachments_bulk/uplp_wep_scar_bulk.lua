@@ -565,7 +565,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 /// Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
@@ -601,7 +601,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 /// Positives
 -- ATT.ClipSizeOverride = 20
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 
@@ -661,7 +661,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 /// Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
@@ -706,7 +706,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 /// Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
@@ -751,7 +751,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 /// Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
@@ -791,7 +791,7 @@ ATT.DropMagazineTime = 0.5
 /// Positives
 ATT.ClipSizeOverride = 60
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
@@ -844,7 +844,7 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 /// Positives
 ATT.ClipSizeOverride = 60
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
@@ -897,7 +897,7 @@ ATT.ExcludeElements = {"uplp_ar15_mag_no_drum"}
 /// Positives
 ATT.ClipSizeOverride = 100
 ATT.RPMAdd = 100
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.5
 
 /// Negatives
 ATT.RangeMaxMult = 0.9
