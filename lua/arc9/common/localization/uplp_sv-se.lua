@@ -523,6 +523,9 @@ L["uplp_weapon_ak12_308"] = "AK M308"
 
 L["uplp_weapon_ak_short"] = "%s Short"
 
+L["uplp_weapon_ak_smg_vityaz"] = "AK KPist. \"Vityaz\""
+L["uplp_weapon_ak_smg_bizon"] = "AK KPist. \"Bizon\""
+
 L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
 L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
@@ -1707,11 +1710,13 @@ L["uplp_scar_upper_hb.description"] = "Ersätter den övre lådan med en svartm�
 
 L["uplp_scar_upper_20.printname"] = "DMR-Låda"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
+L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR."
+-- L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
 
 L["uplp_scar_upper_20b.printname"] = "DMR-Låda (Svart)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (S)"
-L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
+L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR."
+-- L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW-Låda"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
@@ -1753,22 +1758,22 @@ L["uplp_scar_stock_tube.description"] = "Ersätter kolven med ett bufferrör som
 
 L["uplp_scar_stock_pdw.printname"] = "PDW-Kolv"
 L["uplp_scar_stock_pdw.compactname"] = "PDW"
-L["uplp_scar_stock_pdw.description"] = "Ersätter kolven med en vikbar PDW-kolv."
+L["uplp_scar_stock_pdw.description"] = "Ersätter kolven med en vikbar PDW-kolv.\nOm den är \"Invikt\": Lägger till 10% till alla förmåner men lägger också till 15% till alla nackdelar."
 
 ////// Mags
-L["uplp_scar_mag_h.printname"] = "20-Patroner 7.62x51mm"
+L["uplp_scar_mag_h.printname"] = "20-Patroner 7,62x51mm"
 L["uplp_scar_mag_h.compactname"] = "20P 7.62"
-L["uplp_scar_mag_h.description"] = "REPLACEME"
+L["uplp_scar_mag_h.description"] = "20-patroners 7,62x51mm magasin till XAR."
 
-L["uplp_scar_mag_hb.printname"] = "20-Patroner 7.62x51mm Black"
+L["uplp_scar_mag_hb.printname"] = "20-Patroner 7,62x51mm Black"
 L["uplp_scar_mag_hb.compactname"] = "20P 7.62 (B)"
-L["uplp_scar_mag_hb.description"] = "20-patroners 7.62x51mm magasin i svart till XAR."
+L["uplp_scar_mag_hb.description"] = "20-patroners 7,62x51mm magasin i svart till XAR."
 
-L["uplp_scar_mag_20.printname"] = "10-Patroner 7.62x51mm"
+L["uplp_scar_mag_20.printname"] = "10-Patroner 7,62x51mm"
 L["uplp_scar_mag_20.compactname"] = "10P 7.62"
-L["uplp_scar_mag_20.description"] = "10-patroners 7.62x51mm magasin till XAR."
+L["uplp_scar_mag_20.description"] = "10-patroners 7,62x51mm magasin till XAR."
 
-L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
+L["uplp_scar_mag_20_68.printname"] = "10-Patroner 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10P 6.8"
 L["uplp_scar_mag_20_68.description"] = "10-patronersmagasin matad med 6.8mm till XAR.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
 

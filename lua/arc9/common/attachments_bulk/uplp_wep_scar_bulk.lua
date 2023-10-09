@@ -271,6 +271,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_h"}
 
+/// Positives
+ATT.RecoilMult = 0.9
+ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.15
+
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_h")
 
 ///////////////////////////////////////      uplp_scar_stock_hb
@@ -288,6 +296,14 @@ ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_hb"}
+
+/// Positives
+ATT.RecoilMult = 0.9
+ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.25
+ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_hb")
 
@@ -342,6 +358,14 @@ ATT.Icon = Material(iconfolder .. "stock/pdw.png", "mips smooth")
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.9
+
+/// Negatives
+ATT.RecoilMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
@@ -350,6 +374,12 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_scar_stock_pdw_f"},
+		/// Positives
+		AimDownSightsTimeMult = 0.85 * 0.8,
+		SprintToFireTimeMult = 0.9 * 0.8,
+		/// Negatives
+		RecoilMult = 1.1 * 1.3,
+		RecoilAutoControlMult = 0.95 * 1.3,
     },
 }
 
@@ -436,16 +466,26 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
+ATT.Firemodes = {
+    { Mode = 1, -- Semi
+    PoseParam = 2 }
+}
+
 /// Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
--- ATT.ReloadTimeMult = 0.9
+ATT.DamageMaxMult = 1.25
+ATT.DamageMinMult = 3.5
+ATT.RangeMaxMult = 1.05
+ATT.PhysBulletMuzzleVelocityMult = 1.2
 
 ATT.CustomPros = { 
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
 }
 
 /// Negatives
+ATT.RangeMinMult = 0.3
+ATT.RPMMult = 0.75
+ATT.RecoilMult = 1.45
+ATT.RecoilAutoControlMult = 0.25
 ATT.ClipSizeOverride = 10
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 

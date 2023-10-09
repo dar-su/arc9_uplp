@@ -526,6 +526,9 @@ L["uplp_weapon_ak12_308"] = "AK M308"
 
 L["uplp_weapon_ak_short"] = "%s Short"
 
+L["uplp_weapon_ak_smg_vityaz"] = "AK SMG \"Vityaz\""
+L["uplp_weapon_ak_smg_bizon"] = "AK SMG \"Bizon\""
+
 L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
 L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
@@ -1709,11 +1712,13 @@ L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black 
 
 L["uplp_scar_upper_20.printname"] = "DMR Receiver"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
+L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
+-- L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
 
 L["uplp_scar_upper_20b.printname"] = "DMR Receiver (Black)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
-L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
+L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
+-- L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Receiver"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
@@ -1755,12 +1760,12 @@ L["uplp_scar_stock_tube.description"] = "Replaces the stock with a buffer tube t
 
 L["uplp_scar_stock_pdw.printname"] = "PDW Stock"
 L["uplp_scar_stock_pdw.compactname"] = "PDW"
-L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock."
+L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock.\nWhen \"Folded\": Adds 10% to all benefits but also adds 15% to all downsides."
 
 ////// Mags
 L["uplp_scar_mag_h.printname"] = "20-Round 7.62x51mm"
 L["uplp_scar_mag_h.compactname"] = "20R 7.62"
-L["uplp_scar_mag_h.description"] = "REPLACEME"
+L["uplp_scar_mag_h.description"] = "20-round 7.62x51mm magazine for the XAR."
 
 L["uplp_scar_mag_hb.printname"] = "20-Round 7.62x51mm Black"
 L["uplp_scar_mag_hb.compactname"] = "20R 7.62 (B)"
