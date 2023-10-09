@@ -405,6 +405,10 @@ $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
 
+$bonemerge "fakeroundsbizon"
+$bonemerge "bullet1bizon"
+$bonemerge "bullet2bizon"
+
 // $collisionmodel "col.smd"
 // {
 // 	$mass 22

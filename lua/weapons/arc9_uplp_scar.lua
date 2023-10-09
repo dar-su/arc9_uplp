@@ -235,11 +235,12 @@ SWEP.CustomizeSnapshotFOV = 70
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_h.mdl"
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.42
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 5, -3)
+-- SWEP.DropMagazinePos = Vector(0, 1.75, -2.5)
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 2)
+SWEP.DropMagazineVelocity = Vector(0, -15, 10)
 
 //// Sounds
 
@@ -322,19 +323,15 @@ SWEP.BulletBones = {
     -- "bullet4",
 -- }
 
--- SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "fakerounds",
-    -- },
-    -- [2] = {
-        -- "fakemag",
-        -- "bullet1",
-        -- "bullet2",
-        -- "bullet3",
-        -- "bullet4",
-    -- }
--- }
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+    },
+}
+
 
 local mechh = {
     pathUT .. "mech-01.ogg",
@@ -443,6 +440,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -461,6 +462,10 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 41 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -479,6 +484,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -497,6 +506,10 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -515,6 +528,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -533,6 +550,10 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -552,6 +573,9 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -571,6 +595,9 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -589,6 +616,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.5},
+            {hide = 0, t = 0.6}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -607,6 +638,10 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.5},
+            {hide = 0, t = 0.6}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -626,6 +661,10 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/ak/bonk.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
+            
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.6}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -644,6 +683,10 @@ SWEP.Animations = {
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.42},
+            {hide = 0, t = 0.6}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -665,7 +708,6 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 52 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 58 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -684,7 +726,6 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 52 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 58 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

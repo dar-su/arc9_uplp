@@ -223,11 +223,11 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_std.mdl"
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.25
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 2)
+SWEP.DropMagazineVelocity = Vector(0, -60, 0)
 
 //// Sounds
 
@@ -294,9 +294,9 @@ SWEP.DropMagazineSounds = {
 //// Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
-    [1] = "bullet1",
-	[2] = "bullet2",
-	[3] = "bullet3",
+    [1] = "round1",
+	[2] = "round2",
+	[3] = "round3",
 }
 
 -- SWEP.HideBones = {
@@ -308,19 +308,15 @@ SWEP.BulletBones = {
     -- "bullet4",
 -- }
 
--- SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "fakerounds",
-    -- },
-    -- [2] = {
-        -- "fakemag",
-        -- "bullet1",
-        -- "bullet2",
-        -- "bullet3",
-        -- "bullet4",
-    -- }
--- }
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+        "round1",
+        "round2",
+        "round3",
+    },
+}
+
 
 -- Animations
 
@@ -436,6 +432,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magtap.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.25},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -454,6 +454,10 @@ SWEP.Animations = {
             { s = pathUT .. "magtap.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/ak/chamber_9.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.25},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -472,6 +476,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magtap.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.25},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -490,6 +498,10 @@ SWEP.Animations = {
             { s = pathUT .. "magtap.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/ak/chamber_9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 40 / 30, c = ca, v = 0.8 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.25},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -512,7 +524,6 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -531,7 +542,6 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 120 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

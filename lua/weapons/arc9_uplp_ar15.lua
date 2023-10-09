@@ -540,6 +540,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -559,6 +563,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -578,6 +586,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.34},
+            {hide = 0, t = 0.42}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -597,6 +609,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 43 / 30 - 0.07, c = ca, v = 0.3 },
+        
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.34},
+            {hide = 0, t = 0.42}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -616,6 +632,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -635,6 +655,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 37 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -654,6 +678,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 27 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -673,6 +701,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -691,6 +723,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 26 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 45 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.5}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -711,6 +747,10 @@ SWEP.Animations = {
             { s = pathUT .. "chamber.ogg", t = 52 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 56 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.5}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -730,6 +770,10 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -749,6 +793,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.4}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -768,6 +816,10 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 19 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -787,6 +839,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -806,6 +862,10 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.49}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -825,6 +885,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 52 / 30 - 0.07, c = ca, v = 0.3 },
+                
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.33},
+            {hide = 0, t = 0.49}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -847,7 +911,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -866,7 +930,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

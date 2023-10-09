@@ -83,6 +83,10 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_bizon_mag.mdl"
+ATT.DropMagazineTime = 1
+ATT.DropMagazineQCA = 5
+ATT.DropMagazineVelocity = Vector(0, 20, 80)
+ATT.DropMagazinePos = Vector(0, 1.5, 2)
 
 /// Positives
 ATT.ClipSizeOverride = 64

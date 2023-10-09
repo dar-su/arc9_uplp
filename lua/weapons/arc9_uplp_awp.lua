@@ -247,15 +247,15 @@ SWEP.CustomizeSnapshotPos = Vector(0, 12.5, 0)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = true
-SWEP.ShouldDropMagEmpty = true
+SWEP.ShouldDropMag = false 
+SWEP.ShouldDropMagEmpty = false 
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
-SWEP.DropMagazineTime = 0.3
+SWEP.DropMagazineTime = 0.35
 SWEP.DropMagazineTimeEmpty = 0.9
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 5, -3)
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 2)
+SWEP.DropMagazineVelocity = Vector(0, -20, -10)
 
 //// Sounds
 
@@ -323,33 +323,19 @@ SWEP.DropMagazineSounds = {
 //// Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
-    [1] = "bullet1",
-	[2] = "bullet2",
-	[3] = "bullet3",
+    [1] = "round1",
+	[2] = "round2",
+	[3] = "round3",
 }
 
--- SWEP.HideBones = {
-    -- "fakemag",
-    -- "fakerounds",
-    -- "bullet1",
-    -- "bullet2",
-    -- "bullet3",
-    -- "bullet4",
--- }
-
--- SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "fakerounds",
-    -- },
-    -- [2] = {
-        -- "fakemag",
-        -- "bullet1",
-        -- "bullet2",
-        -- "bullet3",
-        -- "bullet4",
-    -- }
--- }
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+        "round1",
+        "round2",
+        "round3",
+    },
+}
 
 local mechh = {
     pathUT .. "mech-01.ogg",
@@ -457,11 +443,16 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.6,
+        DropMagAt = 0.35,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 16.25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 30 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.35},
+            {hide = 0, t = 0.45}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -474,6 +465,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.85,
+        DropMagAt = 1,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},
@@ -485,6 +477,10 @@ SWEP.Animations = {
             {s = pathUT .. "boltdown.ogg",        t = 61 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 70 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 1},
+            {hide = 0, t = 1.2}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -498,11 +494,16 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
 		MinProgress = 0.65,
+        DropMagAt = 0.35,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 35 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.35},
+            {hide = 0, t = 0.5}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -515,6 +516,7 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
 		MinProgress = 0.85,
+        DropMagAt = 1,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},
@@ -526,6 +528,10 @@ SWEP.Animations = {
             {s = pathUT .. "boltdown.ogg",        t = 66.5 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 77 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 1},
+            {hide = 0, t = 1.25}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

@@ -235,14 +235,15 @@ SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = true
-SWEP.ShouldDropMagEmpty = true
+SWEP.ShouldDropMag = false 
+SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_std.mdl"
-SWEP.DropMagazineTime = 0.85
+SWEP.DropMagazineTime = 0.6
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(0, 0, 0)
-SWEP.DropMagazineVelocity = Vector(0, 80, -80)
+SWEP.DropMagazineAng = Angle(90, 90, 90)
+SWEP.DropMagazineVelocity = Vector(0, -5, 10)
+-- SWEP.DropMagazineVelocity = Vector(0, 0, 0)
 
 //// Sounds
 
@@ -532,7 +533,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 46.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.3},
+            {hide = 0, t = 0.58},
             {hide = 2, t = 1.35},
         },
         DropMagAt = 1.35,
@@ -556,7 +557,7 @@ SWEP.Animations = {
             { s = pathUT .. "chamber.ogg", t = 70 / 30, c = ca, v = 0.8 },
             -- { s = UTCrattle, t = 72.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.3},
+            {hide = 0, t = 0.58},
             {hide = 2, t = 1.35},
         },
         DropMagAt = 1.35,
@@ -574,7 +575,7 @@ SWEP.Animations = {
     ["reload_drum"] = {
         Source = "reload_drum",
 		MinProgress= 0.75,
-        MagSwapTime = 1.3,
+        MagSwapTime = 1.1,
 		-- Mult = 1.15,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -582,6 +583,10 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 82.5 / 30, c = ca, v = 0.8 },
+            
+            -- {hide = 0, t = 0.3},
+            -- {hide = 1, t = 0.9},
+            -- {hide = 0, t = 1.1},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -594,7 +599,7 @@ SWEP.Animations = {
     ["reload_empty_drum"] = {
         Source = "reload_drum_empty",
 		MinProgress= 0.85,
-        MagSwapTime = 1.3,
+        MagSwapTime = 1.1,
 		-- Mult = 1.15,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -604,8 +609,10 @@ SWEP.Animations = {
             { s = pathUT .. "chback.ogg", t = 87.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 92.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 102.5 / 30, c = ca, v = 0.8 },
+
             {hide = 0, t = 0.3},
-            {hide = 2, t = 0.85},
+            {hide = 1, t = 0.85},
+            {hide = 0, t = 1.1},
         },
         DropMagAt = 0.85,
         IKTimeLine = {
@@ -709,7 +716,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -828,7 +835,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/ak/scrape.ogg", t = 68 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 122.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

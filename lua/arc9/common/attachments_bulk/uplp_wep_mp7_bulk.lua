@@ -48,6 +48,7 @@ ATT.Category = "uplp_mp7_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp7_mag_20"}
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_20.mdl"
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.9

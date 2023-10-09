@@ -549,6 +549,7 @@ ATT.Icon = Material(iconfolderar15 .. "hk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -592,6 +593,8 @@ ATT.Icon = Material(iconfolderar15 .. "p20.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -641,6 +644,8 @@ ATT.Icon = Material(iconfolderar15 .. "p30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -684,6 +689,8 @@ ATT.Icon = Material(iconfolderar15 .. "30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -727,6 +734,8 @@ ATT.Icon = Material(iconfolder .. "mag/556tan.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -772,9 +781,12 @@ ATT.Icon = Material(iconfolderar15 .. "p60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
+ATT.DropMagazineTime = 0.5
 
 /// Positives
 ATT.ClipSizeOverride = 60
@@ -822,6 +834,9 @@ ATT.Icon = Material(iconfolderar15 .. "60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+ATT.DropMagazineTime = 0.5
+
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
@@ -872,6 +887,9 @@ ATT.Icon = Material(iconfolderar15 .. "100.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+ATT.DropMagazineTime = 0.42
+
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_mag_no_drum"}
