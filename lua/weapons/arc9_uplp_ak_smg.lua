@@ -623,9 +623,9 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 18 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin_308.ogg", t = 38 / 30, c = ca, v = 0.65 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 61 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 1, t = 1.5},
-            {hide = 2, t = 1.8},
+            -- {hide = 1, t = 0},
+            -- {hide = 1, t = 1.5},
+            -- {hide = 2, t = 1.8},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

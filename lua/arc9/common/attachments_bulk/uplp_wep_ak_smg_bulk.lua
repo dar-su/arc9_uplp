@@ -87,6 +87,10 @@ ATT.DropMagazineTime = 1
 ATT.DropMagazineQCA = 5
 ATT.DropMagazineVelocity = Vector(0, 20, 80)
 ATT.DropMagazinePos = Vector(0, 1.5, 2)
+ATT.BulletBones = { -- im suprised that this works in att
+    [1] = "bullet1bizon",
+	[2] = "bullet2bizon",
+}
 
 /// Positives
 ATT.ClipSizeOverride = 64
@@ -125,6 +129,14 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_bizon_mag_old.mdl"
+ATT.DropMagazineTime = 1
+ATT.DropMagazineQCA = 5
+ATT.DropMagazineVelocity = Vector(0, 20, 80)
+ATT.DropMagazinePos = Vector(0, 1.5, 2)
+ATT.BulletBones = { -- im suprised that this works in att
+    [1] = "bullet1bizon",
+	[2] = "bullet2bizon",
+}
 
 /// Positives
 ATT.ClipSizeOverride = 64
