@@ -582,7 +582,9 @@ SWEP.AttachmentElements = {
     ["uplp_deag_barrel_classic"] = { Bodygroups = { { 5, 1 } } },
     ["uplp_deag_barrel_long"] = { Bodygroups = { { 5, 2 } } },
     ["uplp_deag_barrel_tac"] = { Bodygroups = { { 5, 3 } } },
-    ["uplp_deag_barrel_longtac"] = { Bodygroups = { { 5, 4 } } },
+    ["uplp_deag_barrel_longtac"] = { Bodygroups = { { 5, 4 } }, AttPosMods = {
+	[7] = { Pos = Vector(0, -1.05, 9.5), }, 
+	}},
 
     ["uplp_deag_muzzle_cut"] = { Bodygroups = { { 6, 1 } } },
     ["uplp_deag_muzzle_heavy"] = { Bodygroups = { { 6, 2 } } },

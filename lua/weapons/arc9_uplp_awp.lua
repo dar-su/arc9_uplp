@@ -432,11 +432,6 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
-    ["fire_empty"] = {
-        Source = "fire_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = { { s = mechh, t = 0 } },
-    },
 
     -- Reloads --
 
@@ -484,7 +479,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.15, lhik = 1 },
+            { t = 0.3, lhik = 0 },
             { t = 0.625, lhik = 0 },
             { t = 0.725, lhik = 1 },
             { t = 1, lhik = 1 },
@@ -535,8 +531,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.625, lhik = 0 },
+            { t = 0.15, lhik = 1 },
+            { t = 0.3, lhik = 0 },
+            { t = 0.65, lhik = 0 },
             { t = 0.75, lhik = 1 },
             { t = 1, lhik = 1 },
         },

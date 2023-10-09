@@ -212,8 +212,8 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(16, 28, 6)
-SWEP.CustomizeAng = Angle(90, 0, -1.5)
+SWEP.CustomizePos = Vector(16, 28, 4)
+SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(16, -3, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
@@ -646,7 +646,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
+        Category = {"uplp_grip_vert", "uplp_mp7_grip"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1.6, 6),

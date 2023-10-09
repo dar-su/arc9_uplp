@@ -64,7 +64,7 @@ ATT.Folder = ".45 ACP"
 
 ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16"}
 
-ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
 ATT.ShootSound = shoot45
 ATT.ShootSoundSilenced = shoot9sil
@@ -122,7 +122,7 @@ ATT.Folder = ".45 ACP"
 
 ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16"}
 
-ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
 ATT.ShootSound = shoot45
 ATT.ShootSoundSilenced = shoot9sil
@@ -178,7 +178,13 @@ ATT.Category = "uplp_stm9_magwell"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
-ATT.ReloadTimeMult = 0.85
+
+/// Positives
+ATT.ReloadTimeMult = 0.95
+ATT.AimDownSightsTimeMult = 0.95
+
+/// Negatives
+ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stm9_magwell")
 
@@ -201,7 +207,7 @@ ATT.Folder = "9x19mm"
 
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
 
-ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
 ATT.ShootSound = shoot9
 ATT.ShootSoundSilenced = shoot9sil
@@ -268,7 +274,7 @@ ATT.Folder = "9x19mm"
 
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
 
-ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
 ATT.ShootSound = shoot9
 ATT.ShootSoundSilenced = shoot9sil
@@ -335,7 +341,7 @@ ATT.Folder = "9x19mm"
 
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
 
-ATT.ShellModel = "models/shells/shell_9mm.mdl"
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
 ATT.ShootSound = shoot9
 ATT.ShootSoundSilenced = shoot9sil

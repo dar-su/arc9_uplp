@@ -61,6 +61,8 @@ ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
 ATT.Ammo = "357"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
+
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
@@ -142,6 +144,8 @@ ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
 ATT.Ammo = "357"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),

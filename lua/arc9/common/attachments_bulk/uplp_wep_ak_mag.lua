@@ -243,6 +243,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545.mdl"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
+
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
 
@@ -291,6 +293,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_bak.mdl"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
 
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
@@ -341,6 +345,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
+
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
 
@@ -390,6 +396,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_12.mdl"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
+
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
 
@@ -438,6 +446,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45.mdl"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
 
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
@@ -495,6 +505,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_60.mdl"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
+
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
 
@@ -551,6 +563,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "5.45"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
+
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
 
@@ -559,7 +573,6 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 ATT.DropMagazineTime = 0.85
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -628,6 +641,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556.mdl"
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
 
@@ -675,7 +690,9 @@ ATT.Category = "uplp_ak_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.56"
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_pmag.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_pmag.mdl"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -725,6 +742,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.56"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_556_12.mdl"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 ATT.ShootSound = shoot556
 ATT.ShootSoundSilenced = shoot556sil
@@ -808,6 +827,8 @@ ATT.DistantShootSound = shoot308dist
 ATT.DistantShootSoundIndoor = shoot308distindoor
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_308.mdl"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -896,13 +917,7 @@ ATT.DistantShootSoundIndoor = shoot9distindoor
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_939.mdl"
 
--- ATT.RPMMult = 775/600
--- ATT.ClipSizeOverride = 20
-
--- ATT.DamageMaxMult = 0.9
--- ATT.DamageMinMult = 1.1
-
--- ATT.RecoilMult = 0.8
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_939.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then

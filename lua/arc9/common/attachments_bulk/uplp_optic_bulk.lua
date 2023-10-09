@@ -1532,8 +1532,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
 ATT = {}
 
-ATT.PrintName = "7x Old Scope"
-ATT.CompactName = "7x Old"
+ATT.PrintName = "7x Kraken Scope"
+ATT.CompactName = "7x Kraken"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"

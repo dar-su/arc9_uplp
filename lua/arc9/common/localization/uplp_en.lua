@@ -276,6 +276,10 @@ L["uplp_optic_generic.printname"] = "10x Precision Scope"
 L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
 
+L["uplp_optic_old.printname"] = "7x Kraken Scope"
+L["uplp_optic_old.compactname"] = "7x Kraken"
+L["uplp_optic_old.description"] = "Medium range scope with 7x magnification."
+
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight with Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."
 L["uplp_optic_hhs1.description"] = "Military-grade holografic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
@@ -1687,6 +1691,11 @@ L["uplp_mp7_mag_20.description"] = "Shortened magazine that holds 20 rounds."
 L["uplp_mp7_sight_folded.printname"] = "PDW Iron Sights"
 L["uplp_mp7_sight_folded.compactname"] = "PDW IS"
 L["uplp_mp7_sight_folded.description"] = "Flips the PDW-7's iron sights down, turning them into pistol-like sights.\nImproves target acquisition speeds at the cost of magnification."
+
+////// "Grip"
+L["uplp_mp7_grip_none.printname"] = "None"
+L["uplp_mp7_grip_none.compactname"] = "None"
+L["uplp_mp7_grip_none.description"] = "Utilise the PDW-7's undermounted rail as a hand support."
 
 //////////////////// XAR
 L["uplp_weapon_scar"] = "XAR"

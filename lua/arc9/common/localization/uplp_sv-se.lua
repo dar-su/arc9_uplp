@@ -276,6 +276,10 @@ L["uplp_optic_generic.printname"] = "10x Precisionssikte"
 L["uplp_optic_generic.compactname"] = "10x Precision"
 L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x magnifiering."
 
+L["uplp_optic_old.printname"] = "7x Kraken-Kikarsikte"
+L["uplp_optic_old.compactname"] = "7x Kraken"
+L["uplp_optic_old.description"] = "Medium räckvidd kikarsikte med 7x magnifiering."
+
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holografiskt Sikte med Förstoringsglas"
 L["uplp_optic_hhs1.compactname"] = "500S F."
 L["uplp_optic_hhs1.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™.\nKommer med ett förstoringsglas som kan flyttas till sidan när den inte används."
@@ -1685,6 +1689,11 @@ L["uplp_mp7_mag_20.description"] = "Förkortat magasin som håller 20 patroner."
 L["uplp_mp7_sight_folded.printname"] = "PDW-Riktmedel"
 L["uplp_mp7_sight_folded.compactname"] = "PDW-R"
 L["uplp_mp7_sight_folded.description"] = "Fäller ner PDW-7:ans riktmedel vilket förvandlar dem till pistolliknande riktmedel.\nFörbättrar målförvärv med kostnad på magnifiering."
+
+////// "Grip"
+L["uplp_mp7_grip_none.printname"] = "Ingen"
+L["uplp_mp7_grip_none.compactname"] = "Ingen"
+L["uplp_mp7_grip_none.description"] = "Använd den undermonterade skenan på PDW-7 som handstöd."
 
 //////////////////// XAR
 L["uplp_weapon_scar"] = "XAR"

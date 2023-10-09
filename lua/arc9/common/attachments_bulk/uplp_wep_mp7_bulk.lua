@@ -92,3 +92,38 @@ ATT.ExcludeElements = {"uplp_backup_optic"}
 ATT.AimDownSightsTimeMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_sight_folded")
+
+
+////////////////////      "GRIP"
+///////////////////////////////////////      uplp_mp7_grip_none
+
+
+ATT = {}
+
+ATT.PrintName = "None"
+ATT.CompactName = "None"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
+
+ATT.Icon = Material(iconfolder .. "rail.png", "mips smooth")
+
+ATT.Category = "uplp_mp7_grip"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_grip_used"}
+
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_short.mdl"
+ATT.ModelOffset = Vector(-19, -2.4, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.DeployTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.9
+
+/// Negatives
+ATT.RecoilMult = 1.2
+ATT.RecoilAutoControlMult = 0.8
+
+ARC9.LoadAttachment(ATT, "uplp_mp7_grip_none")
