@@ -98,7 +98,7 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 40
+SWEP.ClipSize = 35
 
 -- Recoil
 SWEP.Recoil = 0.65
@@ -120,8 +120,8 @@ SWEP.RecoilMultCrouch = 0.75
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.15 -- Vertical tilt
-SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
+SWEP.VisualRecoilUp = 0.04 -- Vertical tilt
+SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
