@@ -1647,7 +1647,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 
-ATT.Category = "uplp_optic_big"
+ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
@@ -1721,7 +1721,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true 
 ATT.RTScopeBlackBoxShadow = true 
 
-ATT.Category = "uplp_optic_big"
+ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
@@ -1896,7 +1896,7 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 ATT.RTScopeNoBlur = true
 
-ATT.Category = "uplp_optic_big"
+ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Negatives
