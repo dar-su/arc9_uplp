@@ -220,9 +220,9 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 32.5, 5)
+SWEP.CustomizePos = Vector(12, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(12, -2, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 90
@@ -979,3 +979,21 @@ SWEP.Attachments = {
     },
 
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+	
+	local ppk20 = att["uplp_ak_smg_rec_ppk20"]
+	local bizon = (att["uplp_ak_smg_rec_bizon"] or att["uplp_ak_smg_rec_bizonm"])
+	local vityaz = (att["uplp_ak_smg_rec_vityaz"] or att["uplp_ak_smg_rec_vityaz_tac"])
+
+	if ppk20 then
+		name = ARC9:GetPhrase("uplp_weapon_ak_smg_ppk20")
+	elseif bizon then
+		name = ARC9:GetPhrase("uplp_weapon_ak_smg_bizon")
+	elseif vityaz then
+		name = ARC9:GetPhrase("uplp_weapon_ak_smg_vityaz")
+	end
+
+    return name
+end

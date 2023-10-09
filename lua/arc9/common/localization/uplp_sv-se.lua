@@ -525,6 +525,7 @@ L["uplp_weapon_ak_short"] = "%s Short"
 
 L["uplp_weapon_ak_smg_vityaz"] = "AK KPist. \"Vityaz\""
 L["uplp_weapon_ak_smg_bizon"] = "AK KPist. \"Bizon\""
+L["uplp_weapon_ak_smg_ppk20"] = "AK KPist. \"M20\""
 
 L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"

@@ -1314,3 +1314,24 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+	local att = self:GetElements()
+	
+	local m2023 = att["uplp_ak_dc_12"]
+	local m2022 = att["uplp_ak_dc_12_22"]
+	local m2016 = att["uplp_ak_dc_12_16"]
+	local m308 = att["uplp_ak_calib_308"]
+
+	if m2022 then
+		name = ARC9:GetPhrase("uplp_weapon_ak12_22")
+	elseif m2016 then
+		name = ARC9:GetPhrase("uplp_weapon_ak12_16")
+	end
+
+	if m308 then
+		name = ARC9:GetPhrase("uplp_weapon_ak12_308")
+	end
+
+    return name
+end
