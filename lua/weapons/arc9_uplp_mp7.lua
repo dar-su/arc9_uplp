@@ -223,7 +223,7 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_std.mdl"
-SWEP.DropMagazineTime = 0.25
+SWEP.DropMagazineTime = 0.25*1.1
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
@@ -427,6 +427,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.65,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -448,6 +449,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.65,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -471,6 +473,7 @@ SWEP.Animations = {
     ["reload_20"] = {
         Source = "reload_20",
 		MinProgress = 0.65,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -492,6 +495,7 @@ SWEP.Animations = {
     ["reload_empty_20"] = {
         Source = "reload_empty_20",
 		MinProgress = 0.65,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -594,6 +598,8 @@ SWEP.Animations = {
         EventTable = thetoggle
     },
 }
+
+SWEP.DeployTime = 1
 
 //// Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)

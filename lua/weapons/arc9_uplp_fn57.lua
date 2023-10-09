@@ -224,7 +224,7 @@ SWEP.CustomizeSnapshotFOV = 70
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/fn57_mag_std.mdl"
-SWEP.DropMagazineTime = 0.4
+SWEP.DropMagazineTime = 0.4*1.1
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
@@ -473,6 +473,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.55,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
@@ -493,6 +494,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.7,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
@@ -517,6 +519,7 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
 		MinProgress = 0.55,
+        Mult = 1.15,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
@@ -537,6 +540,7 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
 		MinProgress = 0.7,
+        Mult = 1.15,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },

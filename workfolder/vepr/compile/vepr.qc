@@ -194,7 +194,7 @@ $sequence "ready" {
 	"anims\ready.smd"
 	"anims\ready_iron.smd"
  	blend "sights" 0 1
-	fps 31
+	fps 28
 	"ACT_VM_DRAW" 1
 	snap
 }
@@ -205,13 +205,13 @@ $sequence "draw" {
 	"anims\draw.smd"
 	"anims\draw_iron.smd"
  	blend "sights" 0 1
-	fps 31
+	fps 27
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster" {
 	"anims\holster.smd"
-	fps 31
+	fps 24
 	"ACT_VM_DRAW" 1
 	snap
 }
@@ -220,13 +220,13 @@ $sequence "draw_empty" {
 	"anims\draw_empty.smd"
 	"anims\draw_empty_iron.smd"
  	blend "sights" 0 1
-	fps 31
+	fps 27
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster_empty" {
 	"anims\holster_empty.smd"
-	fps 31
+	fps 24
 	"ACT_VM_DRAW" 1
 	snap
 }

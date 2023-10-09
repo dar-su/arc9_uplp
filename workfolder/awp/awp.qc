@@ -125,25 +125,25 @@ $sequence "ready" {
 
 $sequence "draw" {
 	"anims\draw.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "draw_empty" {
 	"anims\draw_empty.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster" {
 	"anims\holster.smd"
-	fps 24
+	fps 20
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster_empty" {
 	"anims\holster_empty.smd"
-	fps 30
+	fps 20
 	"ACT_VM_DRAW" 1
 	snap
 }

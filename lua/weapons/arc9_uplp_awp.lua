@@ -401,7 +401,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -415,7 +415,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
     },
     ["holster_empty"] = {
