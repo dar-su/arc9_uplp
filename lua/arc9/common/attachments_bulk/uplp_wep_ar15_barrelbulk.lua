@@ -99,6 +99,35 @@ ATT.SprintToFireTimeMult = 1.1
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16")
 
 
+///////////////////////////////////////      uplp_ar15_barrel_16_alt
+
+
+ATT = {}
+
+ATT.PrintName = "406mm Alternative Barrel"
+ATT.CompactName = "406mm Alt."
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_barrel"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RangeMaxMult = 1.3
+ATT.RangeMinMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16_alt")
+
+
 ///////////////////////////////////////      uplp_ar15_barrel_20
 
 

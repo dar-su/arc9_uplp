@@ -382,8 +382,8 @@ SWEP.Animations = {
         Source = "ready",
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 3 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "shoulder.ogg", t = 21 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
@@ -502,8 +502,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.975, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -525,8 +525,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -548,7 +548,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.5, lhik = 0 },
+            { t = 0.65, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -572,7 +572,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -594,8 +594,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -617,8 +617,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -629,7 +629,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
                 
@@ -640,8 +640,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.725, lhik = 0 },
-            { t = 0.875, lhik = 1 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -651,7 +651,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 37 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
@@ -675,7 +675,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 27 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
                 
@@ -686,8 +686,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.725, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -697,7 +697,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 27 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
@@ -710,7 +710,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.7, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -721,8 +721,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 26 / 30 - 0.47, c = ca, v = 0.8 },
-            { s = pathUT .. "grab.ogg", t = 45 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUT .. "magin.ogg", t = 30 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 37.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 55 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -731,8 +732,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -742,9 +743,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 26 / 30 - 0.47, c = ca, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 46 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 52 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 30 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 49 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 56 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "grab.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
                 
@@ -755,8 +756,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.75, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.925, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -1020,8 +1021,13 @@ SWEP.AttachmentElements = {
 	[7] = { Pos = Vector(0.045, 1.02, 16.15) },
 	[8] = { Pos = Vector(0.045, 0.975, 17.15) },
 	}},
+	
     ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 }, { 8, 3 } }, AttPosMods = {
 	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
+	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
+	}},
+	
+    ["uplp_ar15_barrel_16_alt"] = { Bodygroups = { { 3, 5 }, { 8, 1 } }, AttPosMods = {
 	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
 	}},
 	

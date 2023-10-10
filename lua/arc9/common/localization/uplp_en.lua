@@ -326,8 +326,8 @@ L["uplp_grip_half.compactname"] = "Hoki"
 L["uplp_grip_half.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil."
 
 L["uplp_grip_half_fullcclamp.printname"] = "Hoki Foregrip (Full C-Clamp)"
-L["uplp_grip_half_fullcclamp.compactname"] = "Hoki (CC)"
-L["uplp_grip_half_fullcclamp.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil.\nThis one with finger over handguard."
+L["uplp_grip_half_fullcclamp.compactname"] = "Hoki (C)"
+L["uplp_grip_half_fullcclamp.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil.\nThis one is held with a C-clamp."
 
 L["uplp_grip_handstop.printname"] = "Lightweight Handstop"
 L["uplp_grip_handstop.compactname"] = "Handstop"
@@ -352,6 +352,22 @@ L["uplp_grip_stub.description"] = "Compact foregrip that improves ergonomics and
 L["uplp_grip_vert.printname"] = "Vertical Foregrip"
 L["uplp_grip_vert.compactname"] = "Vertical"
 L["uplp_grip_vert.description"] = "Rail-mounted foregrip that reduces recoil."
+
+L["uplp_grip_classic.printname"] = "Classic Vertical Foregrip"
+L["uplp_grip_classic.compactname"] = "Classic V"
+L["uplp_grip_classic.description"] = "Rail-mounted foregrip that reduces recoil."
+
+L["uplp_grip_rk0.printname"] = "Zenith Stubby Grip"
+L["uplp_grip_rk0.compactname"] = "Zenith S"
+L["uplp_grip_rk0.description"] = "Compact tactical grip made for most RIS-rail-compatible firearms."
+
+L["uplp_grip_rk1.printname"] = "Zenith Vertical Grip"
+L["uplp_grip_rk1.compactname"] = "Zenith V"
+L["uplp_grip_rk1.description"] = "Tactical grip made for most RIS-rail-compatible firearms."
+
+L["uplp_grip_rk45.printname"] = "Zenith 45-Degree Grip"
+L["uplp_grip_rk45.compactname"] = "Zenith 45D"
+L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for most RIS-rail-compatible firearms."
 
 /////////// Muzzle
 ////// Set 1
@@ -984,6 +1000,10 @@ L["uplp_ar15_barrel_14.description"] = "356mm (14\") barrel used on AR-15 rifles
 L["uplp_ar15_barrel_16.printname"] = "406mm Barrel"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
 L["uplp_ar15_barrel_16.description"] = "406mm (16\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_16_alt.printname"] = "406mm Alternative Barrel"
+L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
+L["uplp_ar15_barrel_16_alt.description"] = "406mm (16\") barrel used on AR-15 rifles.\nDoes not move the gas block, meaning it does not accept handguards requiring 406mm (16\") barrels or longer barrels."
 
 L["uplp_ar15_barrel_20.printname"] = "508mm Barrel"
 L["uplp_ar15_barrel_20.compactname"] = "508mm"

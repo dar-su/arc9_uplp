@@ -265,3 +265,135 @@ ATT.RecoilAutoControlMult = 1.2
 -- ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_grip_vert")
+
+
+///////////////////////////////////////      uplp_grip_classic
+
+
+ATT = {}
+
+ATT.PrintName = "Classic Vertical Foregrip"
+ATT.CompactName = "Classic V"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "gripclassic.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_classic.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+
+ATT.Category = "uplp_grip_vert"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SprintToFireTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_grip_classic")
+
+
+///////////////////////////////////////      uplp_grip_rk0
+
+
+ATT = {}
+
+ATT.PrintName = "Zenith Stubby Grip"
+ATT.CompactName = "Zenith S"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rk0.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_rk0.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+-- ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+
+ATT.Category = "uplp_grip_vert"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SprintToFireTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_grip_rk0")
+
+
+///////////////////////////////////////      uplp_grip_rk1
+
+
+ATT = {}
+
+ATT.PrintName = "Zenith Vertical Foregrip"
+ATT.CompactName = "Zenith V"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rk1.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_rk1.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+-- ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+
+ATT.Category = "uplp_grip_vert"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SprintToFireTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_grip_rk1")
+
+
+///////////////////////////////////////      uplp_grip_rk45
+
+
+ATT = {}
+
+ATT.PrintName = "Zenith 45-Degree Foregrip"
+ATT.CompactName = "Zenith 45D"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rk45.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_rk45.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+-- ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+
+ATT.Category = "uplp_grip_vert"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.8
+ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SprintToFireTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_grip_rk45")

@@ -318,9 +318,13 @@ L["uplp_backup_optic_is.compactname"] = "VJK"
 L["uplp_backup_optic_is.description"] = "Ett stolpkorn och bakre sikte monterat på en vinkel för att erbjuda snabb målförvärv när magnifierade riktmedel används."
 
 /////////// Grips
-L["uplp_grip_half.printname"] = "Hoki Framgrepp"
+L["uplp_grip_half.printname"] = "Hoki-Framgrepp"
 L["uplp_grip_half.compactname"] = "Hoki"
 L["uplp_grip_half.description"] = "Tung vinklat framgrepp som förbättrar ergonomin och sänker rekylen."
+
+L["uplp_grip_half_fullcclamp.printname"] = "Hoki-Framgrepp (C-Grepp)"
+L["uplp_grip_half_fullcclamp.compactname"] = "Hoki (C)"
+L["uplp_grip_half_fullcclamp.description"] = "Tung vinklat framgrepp som förbättrar ergonomin och sänker rekylen.\nDenna hålls med ett C-grepp."
 
 L["uplp_grip_handstop.printname"] = "Lättvikt Handstopp"
 L["uplp_grip_handstop.compactname"] = "Handstopp"
@@ -978,6 +982,10 @@ L["uplp_ar15_barrel_14.description"] = "356mm pipa som används på AR-15-gevär
 L["uplp_ar15_barrel_16.printname"] = "406mm Pipa"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
 L["uplp_ar15_barrel_16.description"] = "406mm pipa som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_16_alt.printname"] = "406mm Alternativ Pipa"
+L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
+L["uplp_ar15_barrel_16_alt.description"] = "406mm pipa som används på AR-15-gevär.\nFlyttar inte gasregulatorn vilket betyder att den inte accepterar handskydd som kräver 406mm eller längre pipor."
 
 L["uplp_ar15_barrel_20.printname"] = "508mm Pipa"
 L["uplp_ar15_barrel_20.compactname"] = "508mm"

@@ -21,7 +21,7 @@ ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
-ATT.ModelBodygroups = "2"
+ATT.ModelBodygroups = "5"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
 -- ATT.SortOrder = 0
@@ -48,7 +48,7 @@ ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
-ATT.ModelBodygroups = "3"
+ATT.ModelBodygroups = "4"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
 -- ATT.SortOrder = 0
@@ -125,7 +125,7 @@ ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
-ATT.ModelBodygroups = "4"
+ATT.ModelBodygroups = "2"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
 -- ATT.SortOrder = 0

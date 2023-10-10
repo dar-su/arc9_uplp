@@ -19,6 +19,11 @@ ATT.Icon = Material(iconfolder .. "g.png", "mips smooth")
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_ar15_no_fs"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_flat.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0, -1.5)
+
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
@@ -83,6 +88,11 @@ ATT.Icon = Material(iconfolder .. "mlok.png", "mips smooth")
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_cclamp.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0.15, -0.8)
+
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
@@ -102,6 +112,11 @@ ATT.Icon = Material(iconfolder .. "s15.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_flat.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, -0.05, -1.5)
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
@@ -123,6 +138,11 @@ ATT.Icon = Material(iconfolder .. "s15r.png", "mips smooth")
 ATT.Category = "uplp_ar15_hg_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_flat.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, -0.05, -1.5)
+
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
@@ -143,6 +163,11 @@ ATT.Icon = Material(iconfolder .. "s15x.png", "mips smooth")
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_cclamp.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5, 0.15, -0.8)
+
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
@@ -162,6 +187,11 @@ ATT.Icon = Material(iconfolder .. "s15xr.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_cclamp.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5, 0.15, -0.8)
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
@@ -194,14 +224,19 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
 ATT = {}
 
-ATT.PrintName = "Tactical Handguard"
-ATT.CompactName = "Tactical"
+ATT.PrintName = "Hoki Armory Handguard"
+ATT.CompactName = "Hoki"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_cclamp.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5, 0.15, -0.8)
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
@@ -214,11 +249,16 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
 ATT = {}
 
-ATT.PrintName = "Short Tactical handguard"
-ATT.CompactName = "Tactical S"
+ATT.PrintName = "Hoki Armory Short handguard"
+ATT.CompactName = "Hoki S"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacs.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_flat.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0, -1.5)
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -239,6 +279,11 @@ ATT.Icon = Material(iconfolder .. "a1.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip",}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_flat.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0, -1.5)
 
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
