@@ -61,6 +61,8 @@ ATT.Icon = Material(iconfolder .. "brmini.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ActivateElements = {"uplp_molot_brl_short"}
+
 /// Positives
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeMult = 0.9
@@ -83,6 +85,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "brmicor.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_molot_brl_short"}
 
 /// Positives
 ATT.RecoilMult = 0.7
@@ -128,6 +132,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
 		Hidden = true,
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(2.65, 1.1, -0.8),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_molot_hg_100")
@@ -167,6 +179,14 @@ ATT.Attachments = {
         Pos = Vector(3.5, 0, 0.1),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(0, 1.135, -0.9),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_molot_hg_azen")
@@ -189,6 +209,14 @@ ATT.Attachments = {
         Category = {"uplp_grip_vert"},
         Pos = Vector(3.5, 0, 0.1),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(3, 1.135, -0.9),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -213,6 +241,14 @@ ATT.Attachments = {
         Pos = Vector(4.75, 0, 0.1),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(0.75, 1.135, -0.75),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac")
@@ -236,6 +272,14 @@ ATT.Attachments = {
         Pos = Vector(4.75, 0, 0.1),
         Ang = Angle(0, 0, 0),
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(0.75, 1.135, -0.75),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_molot_hg_tac_b")
@@ -258,6 +302,14 @@ ATT.Attachments = {
         Category = {"uplp_grip_vert"},
         Pos = Vector(4.75, 0, 0.1),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(0.75, 1.135, -0.75),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -304,6 +356,23 @@ ATT.Attachments = {
         Category = {"uplp_grip_vert"},
         Pos = Vector(4.55, 0, 0.25),
         Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(-4.75, 1.4, -0.75),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical", "uplp_molot_brl_short"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(1.5, 1.4, -0.75),
+        Ang = Angle(0, 0, 90),
+		ExcludeElements = {"uplp_no_tactical"},
+		RequireElements = {"uplp_molot_brl_short"},
     },
 }
 

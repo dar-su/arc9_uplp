@@ -36,9 +36,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-"[A1]XQAAAQCVAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC1rUGio+OiOH0HMmjlqGdOXyndjy0XCKWk5OnegmF4aBPyM1DSb0lbZb/ngC92MQGMMzZwxN/PjjK8IHa4Dn6oK1PYsXS1xJIlmKY6Izu59d4N66M3VocmO3xrArsvEVAvGT8t7nvtz7yb9pkYT4q+8TStV3HW92hM6IA",
-"[416]XQAAAQCnAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx52CgpJnp+z62a8eHrkpuwV9G4RjTzkhe2fp9or59Uf0TZU9JH8eIwd3o72vBregdtUVNUmRKX7djk3GzBA/xIuKNT36UPQgXqyd3PUhrEyRW8mmWyQJwHVIVBBaSZARIcv2VQiEOI9ME+o95FdAA==",
-"[Sport]XQAAAQAaAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6rHZm3MG3M+H/IP9OM8iiSem3c+9q2W7AQ3kAWaZ7FVsDoZzxBdiOW5PRpc3r4T5JbgApXf4c1eQGclWy/1C0WdBtGhXOvnSZxPoV7FTlJJGZq44p8BenFF1u5vGdAGMYFu7EQdiCYtfGn2kRH+NUACm8xP2NRkYJb31c/q+pUXTaOq3eVOj5hvOtopY6zQ0zG++JoXiOO3puLf4LN4gA=",
+"[416]XQAAAQDhAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ34UCCQs9Ta/xSvCyxLNexALqfMtZlGexYMeO6aD0MAhCTvhwLcFp8zKgw+wsMqND7gRoeyCXrZ5xSq+/BTgcKYAybtebsmG6MTWFpxJkoIkXFkrEv9M6rNR8utqvr1JssjAb1Zmr/Ndi+UZsyjJL7yPA==",
+"[A1]XQAAAQDrAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC2iSHCJwrlAYaf/YT16tmwSbV6q6mxsRLbYxxlBSyemA555/Ceaq0hOnyryDtInKwEDAv9pYiPhtDf25wfn3gDXWA80GyNmbQfGCpxVDaI/BpO6enUt7q1YTtwbPJuwCmqn5cEBQV2EzhDZtkQ7y2qE9WYBXbc6UNtDfK4ojZ0ihrZWi9GdTPyzr7/8OFiNGZGx+uIA==",
+"[Sport]XQAAAQCOAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6t+gfb2u7phOPKfC+2nR0SGxNhMV7j379gITOgT9sIVIYX/mxsAcZmcg6zaeJSsbQIpy/uQLAMMMqOfkkWLOH/rOvnXU9M4sxtkFlFwnU4Eb/mN20bviFPzHYOpi9KvmoRGgkKMjslXd4hkVvEUN/DbFk9Lw1s6wW/+7OilH7Al0LKzW+DTmhjgEoES2tEoqezRuHFkNypCloPk8JmQUTDGFXtgu0z5lwrPXXMbmzPq+K6fM40hFblI83nsGt8Glggwir8JwA="
 }
 
 SWEP.DefaultBodygroups = "0011000010000000" -- Might as well prepare for the future
@@ -1051,12 +1051,13 @@ SWEP.AttachmentElements = {
     -- HANDGUARDS
     ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 16.5) },
+	[11] = { Pos = Vector(-1, 0.95, 16.5) },
 	}},
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
     ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
     ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
     ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } }, AttPosMods = {
-	[11] = { Pos = Vector(0.045, 2.1, 10) },
+	[12] = { Pos = Vector(0.045, 2.1, 10) },
 	}},
 
     ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } }, AttPosMods = {
@@ -1066,24 +1067,28 @@ SWEP.AttachmentElements = {
 
     ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 19.25) },
-	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	[12] = { Pos = Vector(0.045, 1.6, 10) },
 	}},
 
     ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 15) },
-	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	[11] = { Pos = Vector(-0.875, 1.025, 14) },
+	[12] = { Pos = Vector(0.045, 1.6, 10) },
 	}},
     ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 9 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 15) },
-	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	[11] = { Pos = Vector(-0.875, 1.025, 14) },
+	[12] = { Pos = Vector(0.045, 1.6, 10) },
 	}},
     ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 18) },
-	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	[11] = { Pos = Vector(-0.875, 1.025, 17) },
+	[12] = { Pos = Vector(0.045, 1.6, 10) },
 	}},
     ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 11 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 18) },
-	[11] = { Pos = Vector(0.045, 1.6, 10) },
+	[11] = { Pos = Vector(-0.875, 1.025, 17) },
+	[12] = { Pos = Vector(0.045, 1.6, 10) },
 	}},
     ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } } },
 	
@@ -1211,6 +1216,14 @@ SWEP.Attachments = {
         Pos = Vector(0.045, -0.2, 12.25),
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(-1, 0.95, 12),
+        Ang = Angle(90, 90, -90),
+		ExcludeElements = {"uplp_no_tactical"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
