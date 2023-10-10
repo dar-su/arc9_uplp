@@ -403,16 +403,16 @@ $sequence "reload_empty_762long" {
 
 
 $sequence "reload_drum" {
-	"anims\reload_drum.smd"
-	"anims\reload_iron_drum.smd"
+	"anims\reload_drum2.smd"
+	"anims\reload_drum2_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_drum" {
-	"anims\reload_empty_drum.smd"
-	"anims\reload_empty_iron_drum.smd"
+	"anims\reload_drum2_empty.smd"
+	"anims\reload_drum2_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
