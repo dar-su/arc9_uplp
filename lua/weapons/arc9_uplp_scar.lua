@@ -38,7 +38,7 @@ SWEP.Credits = {
 SWEP.StandardPresets = {
 "[DMR]XQAAAQApAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIjx/pIvmdenI/8JVrKJUJDJ1oXEOYm+mbFBNJutuKsEEsFIVli2ifRL9NQsvT4TuqHGKzAZxdiG+Yci/l3Dx4texC/na8LkRRl8EJLQ2y+tOPXJ2Nintg6fDf6QA=",
 "[DMR Contractor]XQAAAQBJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIjx/pIvmdenI/8JVrKJUJDJ1oXEOYm+mbFBKl6h54Jaf4IZsE6SHDLTxwdDrTP/aHB+ANGjrxs2DLwajzIOh4vGsoZ4F6PO6mu7PXzc1FiM+EiRkksMkb0IjNgrLbeYNz",
-"[PDW]XQAAAQBIAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrhNSLUBBujQiIF9ERDf4Df6CBLth9nEHELhYBtdlz6c3XHqmTVDvflLVYIBJYEgLFhqcp/I33s30yfc+RbrE/Vs+09yqOJ1L4nAzynu+Stj4uWgLRM+Of1h0Zzmn2Xb5UTia3oTHyvYRRWBHOJH61XhhiDW0vR/Mn",
+"[PDW]XQAAAQBpAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrhNSLUBBujQiIF9ERDf4Df6CBLth9nEHELhYBtdlz6c3XHqmTVDvflMN1/ln32Qm7kF3q1SntD6DBsqgavaTwqWcbDjSdDsYS6k/RuITgdHoTon+tDBnS6uvVLcy8J6mfE1MmNWzw7Fi75kj5FgN5O4SSnG1nRDOSo3cvrsQTYgx/f5SE"
 }
 
 SWEP.DefaultBodygroups = "00000010" -- Might as well prepare for the future
@@ -201,25 +201,26 @@ SWEP.IronSights = {
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    local attached = self:GetElements()
+    local att = self:GetElements()
+	local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"])
 
-	-- if attached["uplp_ar15_rs_mbus"] or attached["uplp_ar15_rs_type1"] then
-		-- return {
-			-- Pos = Vector(-2.275, -3, 0.225),
-			-- Ang = Angle(0.35, 0.125, -3),
-			-- Magnification = 1.15,
-			-- ViewModelFOV = 65,
-        -- }
-	-- end
+	if lowsight then
+		return {
+			Pos = Vector(-2.37, -3, 0.15),
+			Ang = Angle(0.365, 0, -2.5),
+			Magnification = 1.15,
+			ViewModelFOV = 65,
+        }
+	end
 	
-	-- if attached["uplp_ar15_rs_type3"] then
-		-- return {
-			 -- Pos = Vector(-2.275, -3, 0.15),
-			 -- Ang = Angle(0.35, 0.65, -3),
-			 -- Magnification = 1.15,
-			 -- ViewModelFOV = 65,
-        -- }
-	-- end
+	if att["uplp_ar15_rs_type3"] then
+		return {
+			 Pos = Vector(-2.37, -3, -0.035),
+			 Ang = Angle(0.365, 0.4, -2.5),
+			 Magnification = 1.15,
+			 ViewModelFOV = 65,
+        }
+	end
 
 end
 
@@ -368,6 +369,40 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chpull.ogg", t = 6 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chrelease.ogg", t = 13.5 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["ready_20"] = {
+        Source = "ready_20",
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chpull.ogg", t = 6 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chrelease.ogg", t = 13.5 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.8, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["ready_100"] = {
+        Source = "ready_drum",
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -862,23 +897,26 @@ SWEP.AttachmentElements = {
 
     ["uplp_scar_brl_pdw"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
 	[7] = { Pos = Vector(-0.06, 1.475, 14.375) },
-	[9] = { Pos = Vector(-1.1, 1.4, 10.15) },
-	[11] = { Pos = Vector(-0.06, 2.3, 9.75) },
-	[13] = { Pos = Vector(-0.06, -0.45, 11) },
-	[14] = { Pos = Vector(0.98, 1.5, 11.1) },
+	[9] = { Pos = Vector(-0.06, -0.45, 10) },
+	[10] = { Pos = Vector(-1.1, 1.4, 10.15) },
+	[12] = { Pos = Vector(-0.06, 2.3, 9.75) },
+	[14] = { Pos = Vector(-0.06, -0.45, 11) },
+	[15] = { Pos = Vector(0.98, 1.5, 11.1) },
 	}},
 
     ["uplp_scar_brl_20"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
 	[7] = { Pos = Vector(-0.06, 1.525, 26.35) },
-	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
-	[13] = { Pos = Vector(-0.06, -0.45, 21) },
-	[14] = { Pos = Vector(0.98, 1.5, 21.6) },
+	[9] = { Pos = Vector(-0.06, -0.45, 20.5) },
+	[10] = { Pos = Vector(-1.1, 1.4, 19.5) },
+	[14] = { Pos = Vector(-0.06, -0.45, 21) },
+	[15] = { Pos = Vector(0.98, 1.5, 21.6) },
 	}},
 
     ["uplp_scar_brl_20_long"] = { Bodygroups = { { 2, 4 } }, AttPosMods = {
 	[7] = { Pos = Vector(-0.06, 1.525, 30) },
-	[9] = { Pos = Vector(-1.1, 1.4, 19.5) },
-	[14] = { Pos = Vector(0.98, 1.5, 21.6) },
+	[9] = { Pos = Vector(-0.06, -0.45, 20.5) },
+	[10] = { Pos = Vector(-1.1, 1.4, 19.5) },
+	[15] = { Pos = Vector(0.98, 1.5, 21.6) },
 	}},
 
 	-- LOWER RECEIVERS
@@ -928,7 +966,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
-        Category = {"uplp_scar_rs", "uplp_backup_optic"},
+        Category = {"uplp_scar_rs", "uplp_ar15_rs", "uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0.35, -0.35, 0),
@@ -1004,6 +1042,15 @@ SWEP.Attachments = {
         Pos = Vector(-0.06, 1, 3),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
+        Category = {"uplp_ar15_fs"},
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(-0.06, -0.45, 14),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_ar15_no_fs", "uplp_scar_is"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
