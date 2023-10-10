@@ -3,7 +3,7 @@ local ATT = {}
 local iconfolder = "entities/uplp_attachements/"
 
 ///////////////////////////////////////      uplp_grip_half
-
+-- Non cclamp hoki,
 
 ATT = {}
 
@@ -13,7 +13,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "half.png", "mips smooth")
 
-ATT.Model = "models/weapons/arc9/uplp/tac_grip_half.mdl"
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_half_nocclamp.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
@@ -21,6 +21,7 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 
 ATT.Category = "uplp_grip_horiz"
+-- ATT.Category = {"uplp_grip_horiz_cclamp"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 /// Positives
@@ -36,6 +37,41 @@ ATT.SprintToFireTimeMult = 0.9
 ATT.ModelOffset = Vector(-1.5, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_half")
+
+///////////////////////////////////////      uplp_grip_half_fullcclamp
+-- C-CLAMP GRIP ONLY (for ar15 or anything where you can put finger on top)
+
+ATT = {}
+
+ATT.PrintName = "Hoki Foregrip (Full C-Clamp)"
+ATT.CompactName = "Hoki"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "half.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_half.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_nocclamp_grips"}
+
+ATT.Category = "uplp_grip_horiz_cclamp"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.1
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.9
+
+/// Negatives
+
+-- ATT.ModelOffset = Vector(-21, -3.55, 4.75)
+
+ATT.ModelOffset = Vector(-1.5, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_grip_half_fullcclamp")
 
 
 ///////////////////////////////////////      uplp_grip_handstop
@@ -114,6 +150,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "skelr.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_skelet.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
@@ -145,6 +182,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "skeb.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_skelet.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 ATT.ModelBodygroups = "1"
 ATT.LHIK = true
 ATT.LHIK_Priority = 8
@@ -208,6 +246,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "vert.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_vert.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 ATT.LHIK = true
 ATT.LHIK_Priority = 8
 

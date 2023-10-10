@@ -325,6 +325,10 @@ L["uplp_grip_half.printname"] = "Hoki Foregrip"
 L["uplp_grip_half.compactname"] = "Hoki"
 L["uplp_grip_half.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil."
 
+L["uplp_grip_half_fullcclamp.printname"] = "Hoki Foregrip (Full C-Clamp)"
+L["uplp_grip_half_fullcclamp.compactname"] = "Hoki (CC)"
+L["uplp_grip_half_fullcclamp.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil.\nThis one with finger over handguard."
+
 L["uplp_grip_handstop.printname"] = "Lightweight Handstop"
 L["uplp_grip_handstop.compactname"] = "Handstop"
 L["uplp_grip_handstop.description"] = "Lightweight angled handstop that improves ergonomics."
