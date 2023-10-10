@@ -9,6 +9,7 @@ $bodygroup "body"
 	studio "gb_rail.smd" // 2
 	studio "gb_m16.smd" // 3
 	studio "gb_m16railed.smd" // 4
+	studio "gb_m4a1.smd" // 5
 }
 
 $sequence "idle" {

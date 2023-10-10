@@ -33,6 +33,7 @@ $bodygroup "barrel" { // 3
 	studio "brl_14.smd"
 	studio "brl_20.smd"
 	studio "brl_22.smd"
+	studio "brl_16shortgas.smd"
 } 
 
 $bodygroup "ammo" { // 4
