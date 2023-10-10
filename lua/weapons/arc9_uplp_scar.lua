@@ -44,7 +44,7 @@ SWEP.StandardPresets = {
 SWEP.DefaultBodygroups = "00000010" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_ak47"
+SWEP.MuzzleParticle = "muzzleflash_svd"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1

@@ -38,8 +38,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_stock_416")
 
 ATT = {}
 
-ATT.PrintName = "AK-12 Stock"
-ATT.CompactName = "AK-12"
+ATT.PrintName = "AK M12 Stock"
+ATT.CompactName = "AK M12"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "s12.png", "mips smooth")

@@ -619,9 +619,9 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-	if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
-		mdl:SetBodygroup(3,2)
-	end
+
+	if eles["uplp_optic_direct"] then mdl:SetBodygroup(3, 2) end
+	if eles["uplp_muzzle_pistol"] then mdl:SetBodygroup(5, 1) end
 end
 
 SWEP.AttachmentElements = {
