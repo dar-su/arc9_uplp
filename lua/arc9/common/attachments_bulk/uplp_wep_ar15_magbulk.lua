@@ -180,11 +180,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 /// Positives
 
 /// Positives
-ATT.ReloadTimeMult = 0.95
-ATT.AimDownSightsTimeMult = 0.95
+ATT.ReloadTimeMult = 0.97
 
 /// Negatives
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.15
+ATT.DeployTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stm9_magwell")
 
@@ -605,6 +606,7 @@ ATT.ClipSizeOverride = 40
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
+ATT.DeployTimeMult = 1.05
 -- ATT.ReloadTimeMult = 1.1
 
 ATT.CustomCons = { 
@@ -646,6 +648,7 @@ ATT.ClipSizeOverride = 60
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
+ATT.DeployTimeMult = 1.2
 -- ATT.ReloadTimeMult = 1.2
 
 ATT.CustomCons = { 
@@ -685,6 +688,7 @@ ATT.ClipSizeOverride = 60
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
+ATT.DeployTimeMult = 1.2
 -- ATT.ReloadTimeMult = 1.2
 
 ATT.CustomCons = { 
@@ -725,6 +729,7 @@ ATT.ClipSizeOverride = 100
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.3
+ATT.DeployTimeMult = 1.35
 -- ATT.ReloadTimeMult = 1.3
 
 ATT.CustomCons = { 

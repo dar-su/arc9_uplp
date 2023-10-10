@@ -1264,9 +1264,9 @@ L["uplp_ar15_stock_416.printname"] = "416 Stock"
 L["uplp_ar15_stock_416.compactname"] = "416"
 L["uplp_ar15_stock_416.description"] = "Standard stock from a modified AR-15 of German origin."
 
-L["uplp_ar15_stock_ak12.printname"] = "AK-12 Stock"
-L["uplp_ar15_stock_ak12.compactname"] = "AK-12"
-L["uplp_ar15_stock_ak12.description"] = "Standard stock used on the AK-12 rifle."
+L["uplp_ar15_stock_ak12.printname"] = "AK M12 Stock"
+L["uplp_ar15_stock_ak12.compactname"] = "AK M12"
+L["uplp_ar15_stock_ak12.description"] = "Standard stock used on the AK M12 rifle."
 
 L["uplp_ar15_stock_fat.printname"] = "Bravo Stock"
 L["uplp_ar15_stock_fat.compactname"] = "Bravo"

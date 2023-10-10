@@ -1196,6 +1196,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_ak_mag", "uplp_ak_mag_308"},
+        RejectAttachments = {
+		["uplp_ak_mag_939_30"] = true,
+		},
         DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 5, 5),
