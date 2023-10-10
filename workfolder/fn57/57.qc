@@ -21,6 +21,10 @@ $bodygroup "mag" {
 	studio "mag.smd"
 	studio "mag ext.smd"
 }
+$bodygroup "barrel" {
+	studio "brl std.smd"
+	studio "brl thr.smd"
+}
 
 $cdmaterials "models\weapons\arc9\uplp"
 
