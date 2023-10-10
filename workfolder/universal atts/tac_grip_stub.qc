@@ -17,7 +17,7 @@ $bbox 0 0 0 0 0 0
 $cbox 0 0 0 0 0 0
 
 $sequence "idle" {
-	"anims\lhik_skelgrip.smd"
+	"anims\lhik_grippy.smd"
 	fps 30
 	snap
 }
