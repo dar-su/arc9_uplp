@@ -1262,9 +1262,9 @@ L["uplp_ar15_stock_416.printname"] = "416-Kolv"
 L["uplp_ar15_stock_416.compactname"] = "416"
 L["uplp_ar15_stock_416.description"] = "Standard kolv från en anpassad AR-15 av tyskt ursprung."
 
-L["uplp_ar15_stock_ak12.printname"] = "AK-12 Kolv"
-L["uplp_ar15_stock_ak12.compactname"] = "AK-12"
-L["uplp_ar15_stock_ak12.description"] = "Standard kolv som används på AK-12:an."
+L["uplp_ar15_stock_ak12.printname"] = "AK M12 Kolv"
+L["uplp_ar15_stock_ak12.compactname"] = "AK M12"
+L["uplp_ar15_stock_ak12.description"] = "Standard kolv som används på AK M12-geväret."
 
 L["uplp_ar15_stock_fat.printname"] = "Bravo-Kolv"
 L["uplp_ar15_stock_fat.compactname"] = "Bravo"
