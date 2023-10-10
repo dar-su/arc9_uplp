@@ -387,7 +387,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUT .. "slidepull.ogg", t = 5 / 60, c = ca, v = 0.8 },
-            { s = pathUT .. "slidedrop.ogg", t = 20 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidedrop.ogg", t = 13 / 60, c = ca, v = 0.8 },
+            {s = pathUTC .. "cloth_4.ogg", t = 22 / 60},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

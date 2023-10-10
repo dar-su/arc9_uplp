@@ -394,6 +394,7 @@ SWEP.Animations = {
             {s = pathUT .. "boltforward.ogg",     t = 0.32},
             {s = pathUT .. "boltdown.ogg",        t = 0.55},
             -- {s = pathUT .. "eject.ogg",           t = 0.4},
+            { s = pathUTC .. "rattle2.ogg", t = 45 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },

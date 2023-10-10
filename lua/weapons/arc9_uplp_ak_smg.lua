@@ -396,6 +396,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback_9.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber_9.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 30 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

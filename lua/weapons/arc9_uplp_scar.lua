@@ -374,6 +374,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chpull.ogg", t = 6 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chrelease.ogg", t = 13.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 40 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -391,6 +392,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chpull.ogg", t = 6 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chrelease.ogg", t = 13.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 40 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -408,6 +410,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chpull.ogg", t = 6 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chrelease.ogg", t = 13.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 45 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

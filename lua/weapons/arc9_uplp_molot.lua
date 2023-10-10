@@ -409,11 +409,10 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 11.5 / 30, c = ca, v = 0.8 },
-            { s = UTCrattle, t = 20 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 36 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

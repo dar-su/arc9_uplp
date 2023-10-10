@@ -338,9 +338,11 @@ SWEP.Animations = {
         Source = "ready",
         Mult = 1.1,
         EventTable = {
+            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "slidepull.ogg", t = 12 / 60, c = ca },
-            { s = pathUT .. "chamber.ogg", t = 20 / 60, c = ca },
+            { s = pathUT .. "slidepull.ogg", t = 11 / 60, c = ca },
+            { s = pathUT .. "chamber.ogg", t = 21 / 60, c = ca },
+            { s = pathUTC .. "cloth_4.ogg", t = 29 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -354,7 +356,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
+            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -382,7 +384,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
+            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
