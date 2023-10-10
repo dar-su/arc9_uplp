@@ -162,7 +162,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 
-ATT.DropMagazineTime = 0.85
+ATT.DropMagazineTime = 22/30*0.92
+ATT.DropMagazineVelocity = Vector(0, -10, 0)
+ATT.DropMagazineQCA = 5
+ATT.ShouldDropMag = false 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_drum.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
@@ -561,6 +564,11 @@ ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
+
+ATT.DropMagazineTime = 22/30*0.92
+ATT.DropMagazineVelocity = Vector(0, -10, 0)
+ATT.DropMagazineQCA = 5
+ATT.ShouldDropMag = false 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
