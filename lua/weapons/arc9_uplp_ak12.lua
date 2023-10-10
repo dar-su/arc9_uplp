@@ -711,15 +711,18 @@ SWEP.Animations = {
     ["reload_drum"] = {
         Source = "reload_drum",
 		MinProgress= 0.625,
+        Mult = 0.92,
         EventTable = {
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout_drum.ogg", t = 10 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin_drum.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = UTCrattle, t = 40 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.3},
-            {hide = 2, t = 0.85}
+            { s = pathUT .. "magrelease.ogg", t = 10 / 30, c = ca, v = 1 },
+            { s = pathUT .. "magout_drum.ogg", t = 13 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "magpouch.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin_drum.ogg", t = 42 / 30, c = ca, v = 1 },
+            { s = pathUT .. "bonk.ogg", t = 68 / 30, c = ca, v = 1 },
+            { s = UTCrattle, t = 79 / 30, c = ca, v = 0.8 },
+            -- {hide = 1, t = 0},
+            -- {hide = 0, t = 0.3},
+            -- {hide = 2, t = 0.85}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -732,17 +735,21 @@ SWEP.Animations = {
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
 		MinProgress= 0.775,
+        Mult = 0.92,
         EventTable = {
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout_drum.ogg", t = 10 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin_drum.ogg", t = 16 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 51 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 54.5 / 30, c = ca, v = 0.8 },
-            { s = UTCrattle, t = 65 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            { s = pathUT .. "magrelease.ogg", t = 10 / 30, c = ca, v = 1 },
+            { s = pathUT .. "magout_drum.ogg", t = 13 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "magpouch.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin_drum.ogg", t = 42 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_4.ogg", t = 65 / 30, c = ca, v = 0.75 },
+            { s = pathUT .. "chback.ogg", t = 76 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 79 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 90 / 30, c = ca, v = 0.8 },
+
             {hide = 0, t = 0.3},
-            {hide = 2, t = 0.85}
+            {hide = 1, t = 22/30},
+            {hide = 0, t = 1.1},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -944,7 +951,6 @@ SWEP.Animations = {
             { s = pathUT .. "scrape.ogg", t = 70 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin_drum.ogg", t = 122.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -955,7 +961,7 @@ SWEP.Animations = {
         },
     },  
     ["1_inspect_drum"] = {
-        Source = {"inspect0"},
+        Source = {"inspect0_drum"},
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -963,7 +969,6 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
