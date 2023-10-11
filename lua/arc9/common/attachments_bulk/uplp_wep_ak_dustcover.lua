@@ -134,7 +134,7 @@ ATT.Icon = Material(iconfolder12 .. "rsm1.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12alt","use_optics", "uplp_ak12_rearsight_m1"}
+ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12alt","use_optics", "uplp_ak12_rearsight_m1"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
 
@@ -151,7 +151,7 @@ ATT.Icon = Material(iconfolder12 .. "rsevo.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight_evo"}
+ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight_evo"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_22")
 
@@ -168,7 +168,7 @@ ATT.Icon = Material(iconfolder12 .. "rs12.png", "mips smooth")
 ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_rec_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight"}
+ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight"}
 
 ATT.Firemodes = {
     { Mode = -1, -- Full
@@ -199,7 +199,7 @@ ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount"}
 
 ATT.Icon = Material(iconfolder12 .. "nstd.png", "mips smooth")
 
-ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
+ATT.Category = {"uplp_optic_dovetail_cosmetic"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_visualonly")
@@ -209,7 +209,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_visualonly")
 ATT = {}
 
 ATT.PrintName = "Zenith Dovetail Rail"
-ATT.CompactName = "Rail"
+ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount", "uplp_ak_dovetail_rail_used", "use_optics"}
@@ -218,7 +218,6 @@ ATT.ExcludeElements = {"uplp_ak_brl_su"}
 ATT.Icon = Material(iconfolder12 .. "dvmstd.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/dovetail_mount.mdl"
--- ATT.FoldSights = true
 
 ATT.Category = "uplp_optic_dovetail"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -229,19 +228,29 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail")
 
 ATT = {}
 
-ATT.PrintName = "Zenith Dovetail Rail Compact"
-ATT.CompactName = "Rail"
+ATT.PrintName = "Zenith Compact Dovetail Rail"
+ATT.CompactName = "Zenith C"
 ATT.Description = ATT.PrintName
 
-ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount", "uplp_ak_dovetail_rail_used", "use_optics", "uplp_no_backup"}
+ATT.ActivateElements = {"uplp_ak_nmount", "uplp_ak_smg_nmount", "uplp_optic_dovetail_used", "use_optics"}
 
 ATT.Icon = Material(iconfolder12 .. "dvmcompact.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/dovetail_mount_compact.mdl"
--- ATT.FoldSights = true
 
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.Category = "uplp_optic_dovetail_compact" -- bleh, useless
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
+        Pos = Vector(0.5, 0.68, -2.8),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 1),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail_c")

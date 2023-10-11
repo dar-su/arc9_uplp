@@ -592,9 +592,9 @@ L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Barrel"
 L["uplp_ak_brl_12k.compactname"] = "230mm M22-K"
 L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the prototype AK M22-K. Might be not real. Or is it?\nNot compatible with the <color=255,100,100>HPK M16 Handguard</color>."
 
-L["uplp_ak_brl_19.printname"] = "400mm AK M23 5.56 Barrel"
-L["uplp_ak_brl_19.compactname"] = "400mm 19"
-L["uplp_ak_brl_19.description"] = "Shortened 400mm (16\") barrel used on the AK M23 5.56, a 5.56x45mm export version of the AK M23."
+L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Barrel"
+L["uplp_ak_brl_19.compactname"] = "483mm 19"
+L["uplp_ak_brl_19.description"] = "Slightly longer 483mm (19\") barrel used on the AK M23 5.56, a 5.56x45mm export version of the AK M23."
 
 L["uplp_ak_brl_rpk16.printname"] = "585mm HPK M16 Barrel"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"

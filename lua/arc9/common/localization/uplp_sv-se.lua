@@ -573,9 +573,9 @@ L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Pipa"
 L["uplp_ak_brl_12k.compactname"] = "230mm 12K"
 L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?\nEj kompatibel med <color=255,100,100>HPK M16Handskydd</color>."
 
-L["uplp_ak_brl_19.printname"] = "400mm AK M23 5.56 Pipa"
-L["uplp_ak_brl_19.compactname"] = "400mm 19"
-L["uplp_ak_brl_19.description"] = "Förkortad 400mm pipa som används på AK M23 5.56, en 5,56x45mm exportversion av AK M23:an."
+L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Pipa"
+L["uplp_ak_brl_19.compactname"] = "483mm 19"
+L["uplp_ak_brl_19.description"] = "Lite längre 483mm pipa som används på AK M23 5.56, en 5,56x45mm exportversion av AK M23:an."
 
 L["uplp_ak_brl_rpk16.printname"] = "585mm HPK M16 Pipa"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"

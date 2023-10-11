@@ -300,28 +300,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
 ATT.ExcludeElements = {"uplp_ak_hg_rpk16"}
 
---[[
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = "uplp_handguard_flush",
-        Installed = "uplp_ak_hg_12",
-        Integral = "uplp_ak_hg_12",
-        Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc_12",
-        Installed = "uplp_ak_dc_12",
-        Integral = "uplp_ak_dc_12",
-        Pos = Vector(9, 0, -0.9),
-        Ang = Angle(0, 0, 0),
-		Hidden = false,
-    },
-}
---]]
+/// Positives
+ATT.AimDownSightsTimeMult = 0.75
+ATT.SprintToFireTimeMult = 0.8
+
+/// Negatives
+ATT.RecoilMult = 1.1
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.75
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_12k")
 
@@ -339,28 +326,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
 
---[[
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = "uplp_handguard_flush",
-        Installed = "uplp_ak_hg_12",
-        Integral = "uplp_ak_hg_12",
-        Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc_12",
-        Installed = "uplp_ak_dc_12",
-        Integral = "uplp_ak_dc_12",
-        Pos = Vector(9, 0, -0.9),
-        Ang = Angle(0, 0, 0),
-		Hidden = false,
-    },
-}
---]]
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.95
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_19")
 
@@ -378,28 +351,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}
 
---[[
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = "uplp_handguard_flush",
-        Installed = "uplp_ak_hg_12",
-        Integral = "uplp_ak_hg_12",
-        Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc_12",
-        Installed = "uplp_ak_dc_12",
-        Integral = "uplp_ak_dc_12",
-        Pos = Vector(9, 0, -0.9),
-        Ang = Angle(0, 0, 0),
-		Hidden = false,
-    },
-}
---]]
+/// Positives
+ATT.RecoilMult = 0.75
+ATT.RangeMaxMult = 1.1
+ATT.RangeMinMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk16")
 

@@ -683,7 +683,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if eles["uplp_ak_smg_conf_ppk20"] then -- If using the PPK-20 Configuration
         mdl:SetBodygroup(4, 8) -- Remove handguard
         mdl:SetBodygroup(3, 4) -- Remove dust cover
-		
+			
+		if eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"] then -- If using either Bizon Configuration
+				mdl:SetBodygroup(0, 3) -- Change receiver
+		end
+
 		if eles["uplp_ak_smg_brl_ppk20_long"] then
 			mdl:SetBodygroup(2, 3) -- Remove irons when backup or optics on
 		end
@@ -713,14 +717,6 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
 end
 
--- SWEP.Hook_ModifyElements = function(self, eles)
-
-	-- if eles["uplp_ak_smg_rec_ppk20"] and eles["uplp_ak_smg_brl_ppk20_long"] then
-		-- AttPosMods = {[2] = { Pos = Vector(0, 1.7, 20) } }
-	-- end
-
--- end
-
 SWEP.AttachmentElements = {
     
     -- NMounts
@@ -728,26 +724,26 @@ SWEP.AttachmentElements = {
     -- ["uplp_ak_smg_nmount_c"] =  { Bodygroups = { { 7, 2 } } },
 
     ["uplp_ak_dovetail_rail_used"] = { AttPosMods = {
-        [1] = { Pos = Vector(0, -0.62, 1), }, 
-        [10] = { Pos = Vector(0, -0.62, 0.25), },
-        [11] = { Pos = Vector(0, -0.62, 6), }
+        [10] = { Pos = Vector(0, -0.62, 0.1), },
+        [11] = { Pos = Vector(0, -0.62, 5.1), }
     }},
 
     -- RECIEVERS
     ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } , AttPosMods = {
 	[11] = { Pos = Vector(0, -0.05, 11), },
-	[13] = { Pos = Vector(0.7, 1.25, 12) }, 
+	[14] = { Pos = Vector(0.7, 1.25, 12) }, 
 	}},
     ["uplp_ak_smg_rec_bizon"] =          { Bodygroups = { { 0, 2 } } , AttPosMods = {
+	[14] = { Pos = Vector(0.775, 1.25, 7.5), },
+	}},
+    ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } , AttPosMods = {
+	[14] = { Pos = Vector(0.7, 1.25, 12), },
+	}},
+
+    ["uplp_ak_smg_bizon_optic_alt"] =       { AttPosMods = {
 	[1] = { Pos = Vector(0, 0.225, 1.5), },
 	[10] = { Pos = Vector(0, 0.225, 0.5), },
 	[11] = { Pos = Vector(0, 0.225, 5.5), },
-	}},
-    ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } , AttPosMods = {
-	[1] = { Pos = Vector(0, 0.225, 1.5), },
-	[11] = { Pos = Vector(0, 0.225, 0.5), },
-	[12] = { Pos = Vector(0, 0.225, 5.25), },
-	[13] = { Pos = Vector(0.7, 1.25, 12), },
 	}},
 
     -- FIRE SELECTORS
@@ -854,9 +850,9 @@ SWEP.Attachments = {
         Category = {"uplp_ak_smg_config"},
         DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.5, 3),
+        Pos = Vector(0.045, 1.5, 4.25),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_ak_smg_rec_bizon"},
+		ExcludeElements = nil,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
@@ -872,7 +868,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_grip", "uplp_ak_grip_smg"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         Bone = "body",
-        Installed = "uplp_ak_grip_vityaz",
+        -- Installed = "uplp_ak_grip_vityaz",
         RejectAttachments = {
 		["uplp_ak_grip_std"] = true,
 		},
@@ -929,7 +925,18 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.66, 2.2, 1.55),
         Ang = Angle(90, 90, 180),
-		-- ExcludeElements = {"uplp_optic_used"},
+        CorrectiveAng = Angle(0.4, -0.35, 0),
+		MergeSlots = {1},
+		Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
+        Category = {"uplp_optic_dovetail_cosmetic"},
+        ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
+        Bone = "body",
+        Pos = Vector(0.66, 2.2, 1.55),
+        Ang = Angle(90, 90, 180),
+		ExcludeElements = {"uplp_optic_dovetail_used"},
         CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 

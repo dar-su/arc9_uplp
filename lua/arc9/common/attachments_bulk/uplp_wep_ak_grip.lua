@@ -198,7 +198,7 @@ ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")
 ATT.Category = "uplp_ak_grip_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_ak_grip_used"}
+ATT.ActivateElements = {"uplp_ak_grip_used", "uplp_ak_rec_12alt"}
 
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "8"

@@ -95,6 +95,19 @@ ATT.BulletBones = { -- im suprised that this works in att
 /// Positives
 ATT.ClipSizeOverride = 64
 
+ATT.Attachments = {
+	{
+        PrintName = "Yeet",
+        Category = {"uplp_ak_smg_bizon_optic_alt"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_ak_smg_bizon_optic_alt",
+		Integral = "uplp_ak_smg_bizon_optic_alt",
+		Hidden = true,
+		ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_bizon")
 
 ///////////////////////////////////////      uplp_ak_smg_rec_bizon_old
@@ -141,6 +154,19 @@ ATT.BulletBones = { -- im suprised that this works in att
 /// Positives
 ATT.ClipSizeOverride = 64
 
+ATT.Attachments = {
+	{
+        PrintName = "Yeet",
+        Category = {"uplp_ak_smg_bizon_optic_alt"},
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(0, 0, 0),
+		Installed = "uplp_ak_smg_bizon_optic_alt",
+		Integral = "uplp_ak_smg_bizon_optic_alt",
+		Hidden = true,
+		ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_bizon_old")
 
 ////////////////////      BARRELS
@@ -155,6 +181,15 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "barr/vlong.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_smg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.3
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_long")
 
@@ -180,6 +215,15 @@ ATT.Attachments = {
 		Installed = "uplp_ak_mz_vityaz",
     },
 }
+
+/// Positives
+ATT.RangeMaxMult = 1.2
+ATT.RangeMinMult = 1.3
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
 
 ATT.ActivateElements = {
 "uplp_ak_smg_brl_ppk20_long",
@@ -218,48 +262,34 @@ ATT.Attachments = {
         Category = {"uplp_ak_grip_12"},
         DefaultIcon = Material("entities/uplp_attachements/def/akgrip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(3.95, 0, 3.525),
+        Pos = Vector(5.2, 0, 3.5),
         Ang = Angle(0, 0, 0),
 		Installed = "uplp_ak_grip_12evo",
 		Integral = "uplp_ak_grip_12evo",
     },
 }
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeMult = 0.95
+
+/// Negatives
+ATT.RangeMaxMult = 0.9
+ATT.RangeMinMult = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_conf_ppk20")
 
-////////////////////      DUST COVERS
-///////////////////////////////////////      uplp_ak_smg_dc_rail
+///////////////////////////////////////      uplp_ak_smg_bizon_optic_alt
 
+-- Temporary (?) fix
 ATT = {}
 
-ATT.PrintName = "Dust Cover with Built-in Rail"
-ATT.CompactName = "DC R"
+ATT.PrintName = "\"Bizon\" Scope Alteration"
+ATT.CompactName = "\"Bizon\""
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "dc/vrail.png", "mips smooth")
-ATT.Category = "uplp_ak_dc_smg"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Icon = Material(iconfolder .. "mag/b.png", "mips smooth")
+ATT.Category = "uplp_ak_smg_bizon_optic_alt"
 
-ATT.ActivateElements = {
-"use_optics",
-}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_smg_dc_rail")
-
-///////////////////////////////////////      uplp_ak_smg_dc_bizon_rail
-
-ATT = {}
-
-ATT.PrintName = "Dust Cover with Built-in Rail"
-ATT.CompactName = "DC R"
-ATT.Description = ATT.PrintName
-
-ATT.Icon = Material(iconfolder .. "dc/vrail.png", "mips smooth")
-ATT.Category = "uplp_ak_dc_smg_bizon"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.ActivateElements = {
-"use_optics",
-}
-
-ARC9.LoadAttachment(ATT, "uplp_ak_smg_dc_bizon_rail")
+ARC9.LoadAttachment(ATT, "uplp_ak_smg_bizon_optic_alt")

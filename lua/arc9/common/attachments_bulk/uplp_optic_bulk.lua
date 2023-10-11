@@ -1918,7 +1918,7 @@ ATT.CompactName = "Kobra"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
-ATT.ExcludeElements = {"use_optics"}
+-- ATT.ExcludeElements = {"use_optics"}
 
 ATT.Icon = Material(iconfolder .. "ak/kobra.png", "mips smooth")
 
@@ -1969,7 +1969,8 @@ ATT.CompactName = "PSO-1"
 ATT.Description = ATT.PrintName
 
 ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
-ATT.ExcludeElements = {"uplp_ak_brl_su", "use_optics"}
+-- ATT.ExcludeElements = {"uplp_ak_brl_su", "use_optics"}
+ATT.ExcludeElements = {"uplp_ak_brl_su"}
 
 ATT.Icon = Material(iconfolder .. "ak/pso.png", "mips smooth")
 
