@@ -1644,7 +1644,7 @@ L["uplp_awp_stock_awm.description"] = "Standardkolv med möjlighet att vikas til
 
 L["uplp_awp_stock_awp.printname"] = "Polis Kolv"
 L["uplp_awp_stock_awp.compactname"] = "Polis"
-L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt.\n\nEj kompatibel med < 5-Patroners .338 >"
+L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt."
 
 L["uplp_awp_stock_tube.printname"] = "Vikbar Kolv med Bufferrör"
 L["uplp_awp_stock_tube.compactname"] = "Vikbar B."

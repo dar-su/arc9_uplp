@@ -119,7 +119,7 @@ ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 ////////////////////      MAGAZINES
 ///////////////////////////////////////      uplp_awp_mag_awm
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = "5-Round .338"
@@ -148,27 +148,35 @@ ATT.RecoilMult = 1.45
 ATT.RecoilAutoControlMult = 0.25
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awm")
-
+--]]
 
 ///////////////////////////////////////      uplp_awp_mag_awp
 
 
--- ATT = {}
+ATT = {}
 
--- ATT.PrintName = "5-Round .308"
--- ATT.CompactName = "5R .308"
--- ATT.Description = ATT.PrintName
+ATT.PrintName = "5-Round .308"
+ATT.CompactName = "5R .308"
+ATT.Description = ATT.PrintName
 
--- ATT.Icon = Material(iconfolder .. "mp.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mp.png", "mips smooth")
 
--- ATT.Category = "uplp_awp_mag"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Category = "uplp_awp_mag"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
 
--- ATT.ActivateElements = {"uplp_awp_mag_awp"}
+ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
--- ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
+/// Positives
+ATT.DamageMaxOverride = 90
+ATT.RecoilMult = 0.85
+ATT.RecoilAutoControlMult = 1.1
+
+/// Negatives
+ATT.DamageMinOverride = 75
+
+ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
 
 ///////////////////////////////////////      uplp_awp_mag_awp_big
@@ -195,8 +203,12 @@ end
 
 /// Positives
 ATT.ClipSizeOverride = 8
+ATT.DamageMaxOverride = 90
+ATT.RecoilMult = 0.85
+ATT.RecoilAutoControlMult = 1.1
 
 /// Negatives
+ATT.DamageMinOverride = 75
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 
@@ -234,8 +246,8 @@ ATT.DamageMinMult = 1.15
 -- ATT.PhysBulletMuzzleVelocityMult = 1.4
 
 /// Negatives
-ATT.RecoilMult = 1.45
-ATT.RecoilAutoControlMult = 0.25
+ATT.RecoilMult = 1.25
+ATT.RecoilAutoControlMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")
 

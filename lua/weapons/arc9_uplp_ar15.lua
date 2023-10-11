@@ -211,15 +211,6 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 			ViewModelFOV = 65,
         }
 	end
-	
-	-- if attached["uplp_ar15_rs_type3"] then
-		-- return {
-			 -- Pos = Vector(-2.275, -3, 0.15),
-			 -- Ang = Angle(0.35, 0.65, -3),
-			 -- Magnification = 1.15,
-			 -- ViewModelFOV = 65,
-        -- }
-	-- end
 
 end
 
