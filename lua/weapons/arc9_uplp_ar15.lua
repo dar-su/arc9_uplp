@@ -203,7 +203,7 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-	if attached["uplp_ar15_rs_mbus"] or attached["uplp_ar15_rs_type1"] then
+	if attached["uplp_ar15_rs_tall"] then
 		return {
 			Pos = Vector(-2.275, -3, 0.225),
 			Ang = Angle(0.35, 0.125, -3),
@@ -212,14 +212,14 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
         }
 	end
 	
-	if attached["uplp_ar15_rs_type3"] then
-		return {
-			 Pos = Vector(-2.275, -3, 0.15),
-			 Ang = Angle(0.35, 0.65, -3),
-			 Magnification = 1.15,
-			 ViewModelFOV = 65,
-        }
-	end
+	-- if attached["uplp_ar15_rs_type3"] then
+		-- return {
+			 -- Pos = Vector(-2.275, -3, 0.15),
+			 -- Ang = Angle(0.35, 0.65, -3),
+			 -- Magnification = 1.15,
+			 -- ViewModelFOV = 65,
+        -- }
+	-- end
 
 end
 
@@ -992,7 +992,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] then
+    if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] or eles["uplp_ar15_rs_carry"] then
         if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
             mdl:SetBodygroup(1,1)
         end
@@ -1049,6 +1049,8 @@ SWEP.AttachmentElements = {
 	
     ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
+
+    ["uplp_ar15_rs_carry"] = { AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
 
     -- HANDGUARDS
     ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } }, AttPosMods = {

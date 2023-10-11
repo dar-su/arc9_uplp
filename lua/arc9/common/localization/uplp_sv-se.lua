@@ -1228,12 +1228,12 @@ L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär gjort av Hoki Armory."
 
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "Standard Låda med Bärhandtag"
-L["uplp_ar15_reciever_m16.compactname"] = "Standard BH"
-L["uplp_ar15_reciever_m16.description"] = "Standard militär grad låda med inbyggt bärhandtag."
+L["uplp_ar15_reciever_m16.printname"] = "A4-Låda med Bärhandtag"
+L["uplp_ar15_reciever_m16.compactname"] = "A4 BH"
+L["uplp_ar15_reciever_m16.description"] = "Standard militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till: \n<color=100,255,100>3-skott salvo</color> + <color=100,255,100>halvautomat</color>."
 
-L["uplp_ar15_reciever_m4.printname"] = "Standard Låda"
-L["uplp_ar15_reciever_m4.compactname"] = "Standard"
+L["uplp_ar15_reciever_m4.printname"] = "M4-Låda"
+L["uplp_ar15_reciever_m4.compactname"] = "M4"
 L["uplp_ar15_reciever_m4.description"] = "Standard militär grad låda."
 
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Taktisk Låda"
@@ -1243,27 +1243,31 @@ L["uplp_ar15_reciever_modern.description"] = "Taktisk lättvikt låda byggd för
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"
 L["uplp_ar15_rs_m4.compactname"] = "M4 BS"
-L["uplp_ar15_rs_m4.description"] = "Standard bakre sikte till AR-15-gevär."
+L["uplp_ar15_rs_m4.description"] = "Standard bakre sikte till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nOckså kompatibel med <color=100,255,100>Gasregulator med Inbyggt Stolpkorn</color>."
+
+L["uplp_ar15_rs_carry.printname"] = "AR-15-Bärhandtag"
+L["uplp_ar15_rs_carry.compactname"] = "AR-15-BH"
+L["uplp_ar15_rs_carry.description"] = "Standard bärhandtag och bakre sikte som används på AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nOckså kompatibel med <color=100,255,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 L["uplp_ar15_rs_mbus.printname"] = "PAWCO Flip-up-Bakre Sikte"
 L["uplp_ar15_rs_mbus.compactname"] = "PAWCO"
-L["uplp_ar15_rs_mbus.description"] = "Bakre sikte av flip-up-design tillverkat av PAWCO."
+L["uplp_ar15_rs_mbus.description"] = "Bakre sikte av flip-up-design tillverkat av PAWCO.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>PAWCO | Typ I | Standard (XAR)</color> ]\nEj kompatibel med <color=255,100,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 L["uplp_ar15_rs_scalar.printname"] = "Centurion Industries IronWorks-Bakre Sikte"
 L["uplp_ar15_rs_scalar.compactname"] = "IronWorks"
-L["uplp_ar15_rs_scalar.description"] = "Justerbart bakre sikte tillverkat av IronWorks, dotterföretag till Centurion Industries."
+L["uplp_ar15_rs_scalar.description"] = "Justerbart bakre sikte tillverkat av IronWorks, dotterföretag till Centurion Industries.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nOckså kompatibel med <color=100,255,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 L["uplp_ar15_rs_type1.printname"] = "Typ I Bakre Sikte"
 L["uplp_ar15_rs_type1.compactname"] = "Typ I"
-L["uplp_ar15_rs_type1.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
+L["uplp_ar15_rs_type1.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nOckså kompatibel med <color=100,255,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 L["uplp_ar15_rs_type2.printname"] = "Typ II Bakre Sikte"
 L["uplp_ar15_rs_type2.compactname"] = "Typ II"
-L["uplp_ar15_rs_type2.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
+L["uplp_ar15_rs_type2.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nOckså kompatibel med <color=100,255,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 L["uplp_ar15_rs_type3.printname"] = "Typ III Bakre Sikte"
 L["uplp_ar15_rs_type3.compactname"] = "Typ III"
-L["uplp_ar15_rs_type3.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär."
+L["uplp_ar15_rs_type3.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>PAWCO | Typ I | Standard (XAR)</color> ]\nEj kompatibel med <color=255,100,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 ////// Stocks
 L["uplp_ar15_stock_416.printname"] = "416-Kolv"

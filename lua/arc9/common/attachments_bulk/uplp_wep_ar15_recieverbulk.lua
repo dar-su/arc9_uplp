@@ -52,8 +52,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_45acp")
 
 ATT = {}
 
-ATT.PrintName = "Standard Receiver with Carry Handle"
-ATT.CompactName = "Standard CH"
+ATT.PrintName = "A4 Receiver with Carry Handle"
+ATT.CompactName = "A4 CH"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")

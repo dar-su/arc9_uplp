@@ -202,7 +202,7 @@ SWEP.IronSights = {
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local att = self:GetElements()
-	local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"])
+	local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
 
 	if lowsight then
 		return {
@@ -210,15 +210,6 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 			Ang = Angle(0.365, 0, -2.5),
 			Magnification = 1.15,
 			ViewModelFOV = 65,
-        }
-	end
-	
-	if att["uplp_ar15_rs_type3"] then
-		return {
-			 Pos = Vector(-2.37, -3, -0.035),
-			 Ang = Angle(0.365, 0.4, -2.5),
-			 Magnification = 1.15,
-			 ViewModelFOV = 65,
         }
 	end
 
@@ -823,7 +814,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-	local rs = eles["uplp_scar_rs"]
+	local rs = (eles["uplp_scar_rs"] or eles["uplp_ar15_rs_tall"])
 	local dmr = eles["uplp_scar_brl_20"] or eles["uplp_scar_brl_20_long"]
 	local opt = eles["uplp_optic_used"]
 	
@@ -974,6 +965,9 @@ SWEP.Attachments = {
         Bone = "body",
         CorrectiveAng = Angle(0.35, -0.35, 0),
         Installed = "uplp_scar_is",
+        RejectAttachments = {
+		["uplp_ar15_rs_carry"] = true,
+		},
         Pos = Vector(-0.06, -0.45, -0.1),
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_no_backup"},

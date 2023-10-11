@@ -39,7 +39,7 @@ ATT.Icon = Material(iconfolder .. "carry.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
-ATT.ExcludeElements = {"uplp_optic_used"}
+-- ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "c"
@@ -165,7 +165,7 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "4"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     4     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
-ATT.ActivateElements = {"uplp_ar15_rs_short"}
+ATT.ActivateElements = {"uplp_ar15_rs_tall"}
 
 -- ATT.ExcludeElements = {"uplp_optic_used"}
 

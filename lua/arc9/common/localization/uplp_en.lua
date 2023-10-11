@@ -1246,12 +1246,12 @@ L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles made by Hoki Armory."
 
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "Standard Receiver with Carry Handle"
-L["uplp_ar15_reciever_m16.compactname"] = "Standard CH"
-L["uplp_ar15_reciever_m16.description"] = "Standard military-grade receiver with built-in carrying handle."
+L["uplp_ar15_reciever_m16.printname"] = "A4 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16.compactname"] = "A4 CH"
+L["uplp_ar15_reciever_m16.description"] = "Standard military-grade receiver with built-in carrying handle.\nChanges firing modes to: \n<color=100,255,100>3-Round burst</color> + <color=100,255,100>semi-automatic</color>."
 
-L["uplp_ar15_reciever_m4.printname"] = "Standard Receiver"
-L["uplp_ar15_reciever_m4.compactname"] = "Standard"
+L["uplp_ar15_reciever_m4.printname"] = "M4 Receiver"
+L["uplp_ar15_reciever_m4.compactname"] = "M4"
 L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
 
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Tactical Receiver"
@@ -1261,27 +1261,31 @@ L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver bui
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
 L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
-L["uplp_ar15_rs_m4.description"] = "Standard issue rear sight for AR-15 rifles."
+L["uplp_ar15_rs_m4.description"] = "Standard issue rear sight for AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+
+L["uplp_ar15_rs_carry.printname"] = "AR-15 Carry Handle"
+L["uplp_ar15_rs_carry.compactname"] = "AR-15 CH"
+L["uplp_ar15_rs_carry.description"] = "Standard carrying handle and rear sight used for AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_ar15_rs_mbus.printname"] = "Flip-up PAWCO Rear Sight"
 L["uplp_ar15_rs_mbus.compactname"] = "PAWCO"
-L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by PAWCO."
+L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by PAWCO.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_ar15_rs_scalar.printname"] = "Centurion Industries IronWorks Rear Sight"
 L["uplp_ar15_rs_scalar.compactname"] = "IronWorks"
-L["uplp_ar15_rs_scalar.description"] = "Adjustable rear sight manufactured by IronWorks, subsidiary to Centurion Industries."
+L["uplp_ar15_rs_scalar.description"] = "Adjustable rear sight manufactured by IronWorks, subsidiary to Centurion Industries.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_ar15_rs_type1.printname"] = "Type I Rear Sight"
 L["uplp_ar15_rs_type1.compactname"] = "Type I"
-L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
+L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_ar15_rs_type2.printname"] = "Type II Rear Sight"
 L["uplp_ar15_rs_type2.compactname"] = "Type II"
-L["uplp_ar15_rs_type2.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
+L["uplp_ar15_rs_type2.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_ar15_rs_type3.printname"] = "Type III Rear Sight"
 L["uplp_ar15_rs_type3.compactname"] = "Type III"
-L["uplp_ar15_rs_type3.description"] = "Alternative flip-up rear sights for use on AR-15 rifles."
+L["uplp_ar15_rs_type3.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
 
 ////// Stocks
 L["uplp_ar15_stock_416.printname"] = "416 Stock"
