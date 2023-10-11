@@ -493,7 +493,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -516,7 +516,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
         
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -539,7 +539,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
         
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -562,7 +562,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
         
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -585,7 +585,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         
             {hide = 0, t = 0},
             {hide = 1, t = 0.34},
@@ -608,7 +608,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 43 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 43 / 30 - 0.07, c = ca, v = 0.3 },
         
             {hide = 0, t = 0},
             {hide = 1, t = 0.34},
@@ -631,7 +631,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 31 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -654,7 +654,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 37 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -677,7 +677,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -700,7 +700,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -722,8 +722,9 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 30 / 30 - 0.47, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/bonk.ogg", t = 37.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 55 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 37.4 / 30, c = ca, v = 0.75 },
+            { s = "uplp_urban_temp/ak/presscheck_1.ogg", t = 31.33 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 55 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -747,7 +748,7 @@ SWEP.Animations = {
             { s = pathUT .. "chback.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 49 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 56 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -770,7 +771,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -793,7 +794,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -816,7 +817,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 19 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -839,7 +840,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 19 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -862,7 +863,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
@@ -885,7 +886,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
-            { s = pathUT .. pathUTC .. "cloth_4.ogg", t = 52 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_4.ogg", t = 52 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},

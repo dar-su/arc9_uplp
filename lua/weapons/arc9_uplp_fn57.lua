@@ -74,8 +74,9 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 55 -- Damage dealt point-blank
-SWEP.DamageMin = 33 -- Damage dealt after maximum range
+SWEP.DamageMax = 45 / 1.25 -- Damage dealt point-blank
+SWEP.DamageMin = 25 / 1.25 -- Damage dealt after maximum range
+SWEP.HeadshotDamage = 0.8
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 40 -- Units of wood that can be penetrated
@@ -83,7 +84,7 @@ SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 50 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMax = 25 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 625 * 39.37

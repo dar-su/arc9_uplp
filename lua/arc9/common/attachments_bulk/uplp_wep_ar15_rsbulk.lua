@@ -26,6 +26,29 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_m4")
 
+///////////////////////////////////////      uplp_ar15_rs_carry
+
+
+ATT = {}
+
+ATT.PrintName = "Carry Handle Rear Sight"
+ATT.CompactName = "Carry Handle"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "carry.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_rs_short"}
+
+ATT.ExcludeElements = {"uplp_optic_used"}
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
+ATT.ModelBodygroups = "c"
+
+ATT.Category = "uplp_ar15_rs"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_rs_carry")
+
 
 ///////////////////////////////////////      uplp_ar15_rs_mbus
 
