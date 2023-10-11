@@ -89,8 +89,8 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 50 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 150 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 50 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37

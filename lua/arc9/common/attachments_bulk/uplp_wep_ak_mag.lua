@@ -277,8 +277,8 @@ ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 /// Negatives
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30")
 
@@ -328,8 +328,9 @@ ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 /// Negatives
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_bak")
 
@@ -379,8 +380,9 @@ ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 /// Negatives
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_pmag")
 
@@ -430,8 +432,9 @@ ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 /// Negatives
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_12")
 
@@ -485,8 +488,9 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 ATT.ClipSizeOverride = 45
 
 /// Negatives
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
+
 ATT.ReloadTimeMult = 1.05
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
@@ -543,8 +547,9 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 ATT.ClipSizeOverride = 60
 
 /// Negatives
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
+
 ATT.ReloadTimeMult = 1.1
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
@@ -608,8 +613,8 @@ ATT.ClipSizeOverride = 75
 
 /// Negatives
 ATT.ReloadTimeMult = 1.1
-ATT.DamageMaxAdd = -15
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 
@@ -680,8 +685,9 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 /// Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -16
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 11 / 1.25 -- Damage dealt after maximum range
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30")
 
@@ -731,8 +737,8 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 /// Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -16
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 11 / 1.25 -- Damage dealt after maximum range
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_pmag")
 
@@ -782,8 +788,8 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 /// Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -16
-ATT.DamageMinAdd = -5
+ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 11 / 1.25 -- Damage dealt after maximum range
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_12")
 
@@ -850,13 +856,18 @@ ATT.Ammo = "357"
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
+ATT.CustomCons = { 
+[	"DAMAGE IN FULL-AUTO"	] = "-30%",
+}
 
 /// Positives
-ATT.DamageMaxAdd = 15
-ATT.DamageMinAdd = 5
+ATT.DamageMax = 70 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 30 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.75
 
-ATT.RangeMaxMult = 1.35
-ATT.RangeMinMult = 1.6
+ATT.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 160 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+
 ATT.PhysBulletMuzzleVelocityMult = 1.119
 
 /// Negatives
@@ -864,6 +875,16 @@ ATT.RecoilMult = 1.2
 ATT.RPMAdd = -100
 ATT.ClipSizeOverride = 20
 ATT.ReloadTimeMult = 1.15
+
+ATT.Firemodes = {
+    { Mode = 1, -- Semi
+	RPM = 400, 
+	PoseParam = 1 },
+    { Mode = -1, -- Full
+	PoseParam = 2,
+    DamageMaxMult = 0.7,
+    DamageMinMult = 0.7 }
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 
@@ -948,8 +969,8 @@ ATT.RangeMaxMult = 0.25
 ATT.RangeMinMult = 0.45
 
 /// Negatives
-ATT.DamageMaxAdd = -10
-ATT.DamageMinAdd = -10
+ATT.DamageMax = 42 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 10 / 1.25 -- Damage dealt after maximum range
 ATT.ClipSizeOverride = 20
 ATT.PhysBulletMuzzleVelocityMult = 0.45
 
