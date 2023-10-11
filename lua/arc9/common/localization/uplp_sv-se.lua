@@ -571,7 +571,7 @@ L["uplp_ak_brl_12.description"] = "Standard 400mm pipa som används på AK M22:a
 
 L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Pipa"
 L["uplp_ak_brl_12k.compactname"] = "230mm 12K"
-L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?"
+L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?\nEj kompatibel med <color=255,100,100>HPK M16Handskydd</color>."
 
 L["uplp_ak_brl_19.printname"] = "400mm AK M23 5.56 Pipa"
 L["uplp_ak_brl_19.compactname"] = "400mm 19"
@@ -909,7 +909,7 @@ L["uplp_ak_stock_molot.description"] = "Taktisk kolv som används på hagelgevä
 
 L["uplp_ak_stock_underfold.printname"] = "AK 7,62-S Undervikbar Kolv"
 L["uplp_ak_stock_underfold.compactname"] = "Undervikbar"
-L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AK 7,62-S.\nInte kompatibel med <color=255,100,100>40-patroners eller högre magasin.\n<color=255,100,100>Tillåter också inte användningen av anpassade framgrepp</color> på vissa handskydd."
+L["uplp_ak_stock_underfold.description"] = "Klassisk kolv som kan vikas under vapnet. Används på AK 7,62-S.\nEj kompatibel med <color=255,100,100>40-patroners eller högre magasin.\n<color=255,100,100>Tillåter också inte användningen av anpassade framgrepp</color> på vissa handskydd."
 
 L["uplp_ak_stock_pt1.printname"] = "Zenith-Kolv"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"

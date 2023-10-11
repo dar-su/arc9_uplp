@@ -365,7 +365,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-ATT.ExcludeElements = {"uplp_ak_hgsu"}
+
+ATT.ExcludeElements = {"uplp_ak_brl_12k"}
 
 ATT.ActivateElements = {"uplp_ak_hg_rpk16", "ak12_part"}
 

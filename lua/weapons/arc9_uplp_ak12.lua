@@ -1082,7 +1082,11 @@ SWEP.AttachmentElements = {
     -- HANDGUARDS
     -- Standard
     ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } },
-    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {[6] = { Pos = Vector(-0.95, 0.675, 15.25), }, [13] = { Pos = Vector(0.77, 1.96, 16), }}},
+    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {
+	[6] = { Pos = Vector(-0.95, 0.675, 15.25), },
+	[12] = { Pos = Vector(0, -0.1, 15), },
+	[13] = { Pos = Vector(0.77, 1.96, 16), },
+	}},
 
     --CALIBERS
     ["uplp_ak_calib_545"] = { Bodygroups = { { 5, 1 } } },
@@ -1174,6 +1178,7 @@ SWEP.Attachments = {
         Pos = Vector(0.045, 1.5, 14.5),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(-6.5, 0, -0.5),
+		ExcludeElements = {"uplp_ak_brl_12k"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),

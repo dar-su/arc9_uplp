@@ -298,6 +298,7 @@ ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
+ATT.ExcludeElements = {"uplp_ak_hg_rpk16"}
 
 --[[
 ATT.Attachments = {
