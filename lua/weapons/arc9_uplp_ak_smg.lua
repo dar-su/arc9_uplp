@@ -731,13 +731,13 @@ SWEP.AttachmentElements = {
     -- RECIEVERS
     ["uplp_ak_smg_rec_ppk20"] =         { Bodygroups = { { 0, 1 } } , AttPosMods = {
 	[11] = { Pos = Vector(0, -0.05, 11), },
-	[14] = { Pos = Vector(0.7, 1.25, 12) }, 
+	[13] = { Pos = Vector(0.7, 1.25, 12) }, 
 	}},
     ["uplp_ak_smg_rec_bizon"] =          { Bodygroups = { { 0, 2 } } , AttPosMods = {
-	[14] = { Pos = Vector(0.775, 1.25, 7.5), },
+	[13] = { Pos = Vector(0.68, 2.5, 3), },
 	}},
     ["uplp_ak_smg_rec_bizonm"] =       { Bodygroups = { { 0, 3 } } , AttPosMods = {
-	[14] = { Pos = Vector(0.7, 1.25, 12), },
+	[13] = { Pos = Vector(0.68, 2.5, 3), },
 	}},
 
     ["uplp_ak_smg_bizon_optic_alt"] =       { AttPosMods = {
@@ -847,8 +847,9 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
-        Category = {"uplp_ak_smg_config"},
+        Category = {"uplp_optic_dovetail_cosmetic", "uplp_ak_smg_config"},
         DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
+        Icon_Offset = Vector(-3, 0, -0.5),
         Bone = "body",
         Pos = Vector(0.045, 1.5, 4.25),
         Ang = Angle(90, 90, 180),
@@ -928,16 +929,6 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.4, -0.35, 0),
 		MergeSlots = {1},
 		Hidden = true,
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
-        Category = {"uplp_optic_dovetail_cosmetic"},
-        ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
-        Bone = "body",
-        Pos = Vector(0.66, 2.2, 1.55),
-        Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_optic_dovetail_used"},
-        CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 
     -- Cosmetic shit
