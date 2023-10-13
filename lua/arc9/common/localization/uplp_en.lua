@@ -1126,11 +1126,11 @@ L["uplp_ar15_hg_risshort.description"] = "Shortened version of a military-grade 
 
 L["uplp_ar15_hg_tac.printname"] = "Hoki Armory Handguard"
 L["uplp_ar15_hg_tac.compactname"] = "Hoki"
-L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16
+L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16 .. onlycompact
 
 L["uplp_ar15_hg_tac_red.printname"] = "Hoki Armory Handguard (Sporty Red)"
 L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (SR)"
-L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16 .. sportyred
+L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_tacshort.printname"] = "Hoki Armory Short Handguard"
 L["uplp_ar15_hg_tacshort.compactname"] = "Hoki S"
@@ -1257,6 +1257,10 @@ L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Tactical Receiver"
 L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
 L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory."
+
+L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
+L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
+L["uplp_ar15_reciever_modern_black.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory." .. pitchblack
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"

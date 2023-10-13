@@ -1041,6 +1041,8 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
 
+    ["uplp_ar15_reciever_modern_black"] = { Bodygroups = { { 0, 5 } } },
+	
     ["uplp_ar15_rs_carry"] = { AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
 
     -- HANDGUARDS
@@ -1058,7 +1060,11 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 18.25) },
 	}},
+    ["uplp_ar15_hg_tac_red"] = { Bodygroups =           { { 2, 13 } }, AttPosMods = {
+	[10] = { Pos = Vector(0.045, -0.2, 18.25) },
+	}},
     ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 6 } } },
+    ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =      { { 2, 14 } } },
 
     ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } }, AttPosMods = {
 	[10] = { Pos = Vector(0.045, -0.2, 19.25) },

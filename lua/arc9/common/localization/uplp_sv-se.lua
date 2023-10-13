@@ -1108,11 +1108,11 @@ L["uplp_ar15_hg_risshort.description"] = "Förkortad version av ett militär gra
 
 L["uplp_ar15_hg_tac.printname"] = "Hoki Armory-Handskydd"
 L["uplp_ar15_hg_tac.compactname"] = "Hoki"
-L["uplp_ar15_hg_tac.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. requires16
+L["uplp_ar15_hg_tac.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. requires16 .. onlycompact
 
 L["uplp_ar15_hg_tac_red.printname"] = "Hoki Armory-Handskydd (Sporty Red)"
 L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (SR)"
-L["uplp_ar15_hg_tac_red.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. requires16 .. sportyred
+L["uplp_ar15_hg_tac_red.description"] = "Lättvikt taktiskt handskydd till AR-15-gevär gjort av Hoki Armory." .. requires16 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_tacshort.printname"] = "Kort Hoki Armory-Handskydd"
 L["uplp_ar15_hg_tacshort.compactname"] = "K Hoki"
@@ -1239,6 +1239,10 @@ L["uplp_ar15_reciever_m4.description"] = "Standard militär grad låda."
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Taktisk Låda"
 L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
 L["uplp_ar15_reciever_modern.description"] = "Taktisk lättvikt låda byggd för hastighet gjort av Hoki Armory."
+
+L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Taktisk Låda (Pitch Black)"
+L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
+L["uplp_ar15_reciever_modern_black.description"] = "Taktisk lättvikt låda byggd för hastighet gjort av Hoki Armory." .. pitchblack
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"

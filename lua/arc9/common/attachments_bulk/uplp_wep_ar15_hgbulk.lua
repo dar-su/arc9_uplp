@@ -224,8 +224,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
 ATT = {}
 
-ATT.PrintName = "Hoki Armory Handguard"
-ATT.CompactName = "Hoki"
+ATT.PrintName = "Hoki Armory Handguard (Pitch Black)"
+ATT.CompactName = "Hoki (PB)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
@@ -238,10 +238,35 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(5, 0.25, -0.8)
 
-ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_tactical"}
+ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_tactical", "uplp_ar15_gasblock_nocompact",}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
+
+
+///////////////////////////////////////      uplp_ar15_hg_tac_red
+
+
+ATT = {}
+
+ATT.PrintName = "Hoki Armory Handguard (Sporty Red)"
+ATT.CompactName = "Hoki (SR)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "tacr.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_hg_long"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_cclamp.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5, 0.25, -0.8)
+
+ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_tactical", "uplp_ar15_gasblock_nocompact",}
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 
 
 ///////////////////////////////////////      uplp_ar15_hg_tacshort
@@ -249,8 +274,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
 ATT = {}
 
-ATT.PrintName = "Hoki Armory Short handguard"
-ATT.CompactName = "Hoki S"
+ATT.PrintName = "Hoki Armory Short handguard (Pitch Black)"
+ATT.CompactName = "Hoki S (PB)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacs.png", "mips smooth")
@@ -266,6 +291,30 @@ ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
+
+
+///////////////////////////////////////      uplp_ar15_hg_tacshort_red
+
+
+ATT = {}
+
+ATT.PrintName = "Hoki Armory Short handguard (Sporty Red)"
+ATT.CompactName = "Hoki S (SR)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "tacsr.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_flat.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0.12, -1.0)
+
+ATT.ActivateElements = {"uplp_no_tactical"}
+
+ATT.Category = "uplp_ar15_hg"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort_red")
 
 
 ///////////////////////////////////////      uplp_ar15_hg_a1
