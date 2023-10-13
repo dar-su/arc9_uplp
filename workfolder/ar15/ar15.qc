@@ -6,6 +6,8 @@ $bodygroup "ar15" { // 0
 	studio "reciever_45acp.smd"
 	studio "reciever_modern.smd"
 	studio "stm9_reciever.smd"
+	
+	studio "reciever_modern_black.smd"
 }   
 $bodygroup "addition" { // 1
 	blank
@@ -26,6 +28,9 @@ $bodygroup "hg" { // 2
 	studio "mutant_hg_nowosuku_s15_xl.smd"
 	studio "mutant_hg_nowosuku_s15_xl_red.smd"
 	studio "hg_a1.smd"
+
+	studio "hg_tac_red.smd"
+	studio "hg_tacshort_red.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"
