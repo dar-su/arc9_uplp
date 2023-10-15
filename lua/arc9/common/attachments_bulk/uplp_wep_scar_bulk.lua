@@ -59,7 +59,7 @@ ATT.Firemodes = {
 	PoseParam = 1 },
     { Mode = 1, -- Semi
 	RPM = 300,
-	DamageMult = 1.2,
+	DamageMult = 1.25,
 	PoseParam = 2 }
 }
 
@@ -68,10 +68,26 @@ ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.3
 ATT.RecoilMult = 0.8
 
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemax")] = "+25%",
+[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemin")] = "+25%",
+}
+
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.RPMMult = 0.75
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-18, 0, 1.4),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0),
+    },
+}
 
 ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
@@ -92,15 +108,40 @@ ATT.Icon = Material(iconfolder .. "rec/dmrb.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Firemodes = {
+    { Mode = -1, -- Full
+	PoseParam = 1 },
+    { Mode = 1, -- Semi
+	RPM = 300,
+	DamageMult = 1.25,
+	PoseParam = 2 }
+}
+
 /// Positives
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.3
 ATT.RecoilMult = 0.8
 
+ATT.CustomPros = { 
+[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemax")] = "+25%",
+[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemin")] = "+25%",
+}
+
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.RPMMult = 0.75
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-18, 0, 1.4),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0),
+    },
+}
 
 ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}

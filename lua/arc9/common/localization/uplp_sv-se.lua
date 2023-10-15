@@ -162,6 +162,7 @@ L["uplp_togglestat_off"] = "Av"
 L["uplp_togglestat_on"] = "På"
 
 //////////////////// Stat
+L["uplp_stat_semi"] = "Halvautomateld: "
 L["uplp_stat_suppressed"] = "Ljuddämpad"
 L["uplp_stat_ignite_chance"] = "Vid Träff: Chans att Tända Fyr på Mål"
 L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
@@ -349,6 +350,27 @@ L["uplp_grip_stub.description"] = "Kompakt framgrepp som förbättrar ergonomin 
 L["uplp_grip_vert.printname"] = "Vertikalt Framgrepp"
 L["uplp_grip_vert.compactname"] = "Vertikalt"
 L["uplp_grip_vert.description"] = "Skenamonterat framgrepp som sänker rekylen."
+
+L["uplp_grip_classic.printname"] = "Klassiskt Vertikalt Framgrepp"
+L["uplp_grip_classic.compactname"] = "Klassiskt V"
+L["uplp_grip_classic.description"] = "Skenamonterat framgrepp som sänker rekylen."
+
+L["uplp_grip_rk0.printname"] = "Zenith Tjockt Grepp"
+L["uplp_grip_rk0.compactname"] = "Zenith T"
+L["uplp_grip_rk0.description"] = "Kompakt och taktiskt grepp gjort för dem flesta RIS-skena kompatibla skjutvapnen."
+
+L["uplp_grip_rk1.printname"] = "Zenith Vertikalt Grepp"
+L["uplp_grip_rk1.compactname"] = "Zenith V"
+L["uplp_grip_rk1.description"] = "Taktiskt grepp gjort för dem flesta RIS-skena kompatibla skjutvapnen."
+
+L["uplp_grip_rk45.printname"] = "Zenith 45-Gradersgrepp"
+L["uplp_grip_rk45.compactname"] = "Zenith 45-G"
+L["uplp_grip_rk45.description"] = "Vinklat framgrepp lutat 45 grader gjort för dem flesta RIS-skena kompatibla skjutvapnen."
+
+/////////// Bipod
+L["uplp_bipod.printname"] = "eXtreme Sports Inc.-Benstöd"
+L["uplp_bipod.compactname"] = "eXtreme"
+L["uplp_bipod.description"] = "RIS-monterat bendstöd tillverkat av eXtreme Sports Inc. som sänker rekylen när den är utplacerad."
 
 /////////// Muzzle
 ////// Set 1

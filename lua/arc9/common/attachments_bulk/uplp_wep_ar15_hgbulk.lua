@@ -171,6 +171,17 @@ ATT.ModelOffset = Vector(5, 0.15, -0.8)
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-10.6, 0, 0.95),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.5),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl")
 
 
@@ -196,6 +207,17 @@ ATT.ModelOffset = Vector(5, 0.15, -0.8)
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-10.6, 0, 0.95),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.5),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl_red")
 
 
@@ -215,6 +237,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-9, 0, 0.95),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.5),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
@@ -241,6 +274,17 @@ ATT.ModelOffset = Vector(5, 0.25, -0.8)
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_tactical", "uplp_ar15_gasblock_nocompact",}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-10.7, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.5),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
 
@@ -265,6 +309,17 @@ ATT.ModelOffset = Vector(5, 0.25, -0.8)
 
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_no_tactical", "uplp_ar15_gasblock_nocompact",}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-10.7, 0, 1.05),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, -1.5),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 

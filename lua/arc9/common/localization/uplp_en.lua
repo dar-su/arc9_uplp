@@ -162,6 +162,7 @@ L["uplp_togglestat_off"] = "Off"
 L["uplp_togglestat_on"] = "On"
 
 //////////////////// Stat
+L["uplp_stat_semi"] = "When Semi-Auto: "
 L["uplp_stat_suppressed"] = "Suppressed"
 L["uplp_stat_ignite_chance"] = "On Hit: Chance to Ignite Target"
 L["uplp_stat_ignite"] = "On Hit: Ignite Target"
@@ -368,6 +369,11 @@ L["uplp_grip_rk1.description"] = "Tactical grip made for most RIS-rail-compatibl
 L["uplp_grip_rk45.printname"] = "Zenith 45-Degree Grip"
 L["uplp_grip_rk45.compactname"] = "Zenith 45D"
 L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for most RIS-rail-compatible firearms."
+
+/////////// Bipod
+L["uplp_bipod.printname"] = "eXtreme Sports Inc. Bipod"
+L["uplp_bipod.compactname"] = "eXtreme"
+L["uplp_bipod.description"] = "A RIS-mounted bipod manufactured by eXtreme Sports Inc. that reduces recoil when deployed."
 
 /////////// Muzzle
 ////// Set 1

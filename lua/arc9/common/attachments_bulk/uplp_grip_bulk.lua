@@ -395,3 +395,42 @@ ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk45")
+
+
+///////////////////////////////////////      uplp_bipod
+
+
+ATT = {}
+
+ATT.PrintName = "Bipod"
+ATT.CompactName = "Bipod"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "awp/bipod.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/bipod.mdl"
+
+ATT.ActivateElements = {"uplp_bipod_used"}
+-- ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+
+ATT.Category = "uplp_bipod"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Positives
+ATT.Bipod = true
+-- ATT.RecoilMult = 0.8
+-- ATT.RecoilAutoControlMult = 1.2
+
+/// Negatives
+-- ATT.AimDownSightsTimeMult = 1.1
+-- ATT.SprintToFireTimeMult = 1.05
+
+ATT.DrawFunc = function(self, model, wm)
+	if self:GetBipod() then
+		model:SetBodygroup(0,1)
+	else 
+		model:SetBodygroup(0,0)
+	end
+end
+
+ARC9.LoadAttachment(ATT, "uplp_bipod")

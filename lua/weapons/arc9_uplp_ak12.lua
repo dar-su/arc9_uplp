@@ -1033,6 +1033,13 @@ SWEP.Animations = {
         Source = "firemode_1_12",
     },
 	
+    ["firemode_1_evo"] = {
+        Source = "firemode_0_evo",
+    },
+    ["firemode_2_evo"] = {
+        Source = "firemode_1_evo",
+    },
+	
     ["toggle"] = {
         Source = "modeswitch",
         EventTable = {
@@ -1224,7 +1231,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_grip_12"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 5, -1),
+        Pos = Vector(0.045, 5, -0.95),
         Ang = Angle(90, 90, 180),
 		Installed = "uplp_ak_grip_12evo",
 		Integral = "uplp_ak_grip_12evo",
