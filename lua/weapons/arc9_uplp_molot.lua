@@ -623,7 +623,7 @@ SWEP.Animations = {
         },
     },
 
-    ["1_inspect"] = {
+    ["inspect_look"] = {
         Source = {"look"},
         -- MinProgress = 0.1,
         FireASAP = true,
@@ -643,7 +643,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    ["1_inspect_empty"] = {
+    ["inspect_look_empty"] = {
         Source = {"look_empty"},
         -- MinProgress = 0.1,
         FireASAP = true,
@@ -664,7 +664,7 @@ SWEP.Animations = {
         },
     },
 	
-    ["1_inspect_long"] = {
+    ["inspect_look_long"] = {
         Source = {"look_long"},
         -- MinProgress = 0.1,
         FireASAP = true,
@@ -684,7 +684,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    ["1_inspect_long_empty"] = {
+    ["inspect_look_long_empty"] = {
         Source = {"look_long_empty"},
         -- MinProgress = 0.1,
         FireASAP = true,
@@ -705,7 +705,7 @@ SWEP.Animations = {
         },
     },
 	
-    ["1_inspect_drum"] = {
+    ["inspect_look_drum"] = {
         Source = {"look_drum"},
         -- MinProgress = 0.1,
         FireASAP = true,
@@ -864,6 +864,16 @@ SWEP.Animations = {
     },
 }
 
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if !IsFirstTimePredicted() then return end
+    -- theres some mod for arc9eft that makes mag checks on bind and it manipulates EFTInspectnum value so well keep eft in name to keep functionality
+    if anim == "inspect" or anim == "inspect_empty" then
+        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+        local rand = swep.EFTInspectnum
+        if rand == 1 then return anim .. "_look" end
+        if rand == 2 then swep.EFTInspectnum = 0 rand = 0 end
+    end
+end
 
 //// Attachments
 local aaaaaa = {
