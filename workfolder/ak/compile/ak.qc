@@ -25,6 +25,8 @@ $bodygroup "br" { // 2
 	studio "br 12 k.smd" // 7
 	studio "br 19.smd" // 8
 	studio "br rpk16.smd" // 9
+	
+	studio "br rpkunfold.smd" // 10 a
 }   
 
 $bodygroup "dc" { // 3
