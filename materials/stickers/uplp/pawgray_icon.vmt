@@ -1,0 +1,13 @@
+UnLitGeneric
+{
+    "$basetexture" "stickers\uplp\pawgray"
+    "$nocull"		"1"
+    "$ignorez"		"1"
+    "$alphatest"    "1"
+	"$detail"  "stickers\uplp\holo"
+    "$detailscale" "1"
+    "$detailblendfactor" "0.1"
+    "$detailblendmode" "0"
+}
+
+    

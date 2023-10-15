@@ -24,6 +24,28 @@ ATT.StickerMaterial = "stickers/uplp/paw"
 
 ARC9.LoadAttachment(ATT, "uplp_sticker_paw")
 
+///////////////////////////////////////      uplp_sticker_pawgray
+
+ATT = {}
+
+ATT.PrintName = "Poly Paw (Gray)"
+ATT.CompactName = "Poly Paw (G)"
+ATT.Description = [[pwa
+What this doing in this addon
+Probably an icon of this addon
+
+Sticker included in Poly Arms Project.]]
+ATT.Icon = Material("stickers/uplp/pawgray_icon")
+
+ATT.Free = true
+
+ATT.Category = "stickers"
+ATT.Folder = "Poly Arms"
+
+ATT.StickerMaterial = "stickers/uplp/pawgray"
+
+ARC9.LoadAttachment(ATT, "uplp_sticker_pawgray")
+
 ///////////////////////////////////////      uplp_charm_paw
 
 ATT = {}

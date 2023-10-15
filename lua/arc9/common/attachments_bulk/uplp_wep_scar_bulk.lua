@@ -1007,6 +1007,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:Get
 ATT.ActivateElements = {"uplp_scar_is"}
 ATT.ExcludeElements = {"uplp_scar_no_is"}
 
+ATT.ModelOffset = Vector(-0.42, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_scar_is")
 
 ////////////////////      MUZZLES

@@ -536,6 +536,10 @@ L["uplp_sticker_paw.printname"] = "Poly Paw"
 L["uplp_sticker_paw.compactname"] = "Poly Paw"
 L["uplp_sticker_paw.description"] = "Paw.\n\nSticker included in Poly Arms Project."
 
+L["uplp_sticker_pawgray.printname"] = "Holo Poly Paw (Gray + Holo)"
+L["uplp_sticker_pawgray.compactname"] = "Holo Paw"
+L["uplp_sticker_pawgray.description"] = "Paw but holographic and gray.\n\nSticker included in Poly Arms Project."
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
