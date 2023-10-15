@@ -564,8 +564,8 @@ L["uplp_weapon_ak12_308"] = "AK M308"
 
 L["uplp_weapon_ak_short"] = "%s Short"
 
-L["uplp_weapon_ak_smg_vityaz"] = "AK SMG \"Vityaz\""
-L["uplp_weapon_ak_smg_bizon"] = "AK SMG \"Bizon\""
+L["uplp_weapon_ak_smg_vityaz"] = "AK SMG \"OIZK-9\""
+L["uplp_weapon_ak_smg_bizon"] = "AK SMG \"Zakat\""
 L["uplp_weapon_ak_smg_ppk20"] = "AK SMG \"M20\""
 
 L["uplp_weapon_ak_real"] = "AK-103"
@@ -689,9 +689,9 @@ L["uplp_ak_grip_tapco.printname"] = "PAWCO Pistol Grip"
 L["uplp_ak_grip_tapco.compactname"] = "PAWCO"
 L["uplp_ak_grip_tapco.description"] = "Rubberized pistol grip by PAWCO."
 
-L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistol Grip"
-L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
-L["uplp_ak_grip_vityaz.description"] = "Larger pistol grip used on the AK SMG \"Vityaz\"."
+L["uplp_ak_grip_vityaz.printname"] = "\"OIZK-9\" Pistol Grip"
+L["uplp_ak_grip_vityaz.compactname"] = "\"OIZK-9\""
+L["uplp_ak_grip_vityaz.description"] = "Larger pistol grip used on the AK SMG \"OIZK-9\"."
 
 L["uplp_ak_grip_beryl.printname"] = "Szermierz Pistol Grip"
 L["uplp_ak_grip_beryl.compactname"] = "Szermierz"
@@ -871,13 +871,13 @@ L["uplp_ak_mz_rpk.printname"] = "HPK Muzzle Brake"
 L["uplp_ak_mz_rpk.compactname"] = "HPK MB"
 L["uplp_ak_mz_rpk.description"] = "Standard muzzle brake used on the HPK."
 
-L["uplp_ak_mz_vityaz.printname"] = "\"Vityaz\" Muzzle Brake"
-L["uplp_ak_mz_vityaz.compactname"] = "\"Vityaz\" MB"
-L["uplp_ak_mz_vityaz.description"] = "Standard muzzle brake used on the AK SMG \"Vityaz\"."
+L["uplp_ak_mz_vityaz.printname"] = "\"OIZK-9\" Muzzle Brake"
+L["uplp_ak_mz_vityaz.compactname"] = "\"OIZK-9\" MB"
+L["uplp_ak_mz_vityaz.description"] = "Standard muzzle brake used on the AK SMG \"OIZK-9\"."
 
-L["uplp_ak_mz_bizon.printname"] = "\"Bizon\" Muzzle Brake"
-L["uplp_ak_mz_bizon.compactname"] = "\"Bizon\" MB"
-L["uplp_ak_mz_bizon.description"] = "Standard muzzle brake used on the AK SMG \"Bizon\"."
+L["uplp_ak_mz_bizon.printname"] = "\"Zakat\" Muzzle Brake"
+L["uplp_ak_mz_bizon.compactname"] = "\"Zakat\" MB"
+L["uplp_ak_mz_bizon.description"] = "Standard muzzle brake used on the AK SMG \"Zakat\"."
 
 L["uplp_ak_mz_12.printname"] = "AK M23 Muzzle Brake"
 L["uplp_ak_mz_12.compactname"] = "M23 MB"
@@ -962,26 +962,26 @@ L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the AK S
 
 /////////// AK SMG Exclusive
 ////// Receivers
-L["uplp_ak_smg_rec_vityaz.printname"] = "\"Vityaz\" 30-Round Magazine"
-L["uplp_ak_smg_rec_vityaz.compactname"] = "\"Vityaz\""
-L["uplp_ak_smg_rec_vityaz.description"] = "Converts the AK SMG to the \"Vityaz\" configuration.\nFed with a traditional 30-round magazine.\n<color=160,160,255>Can equip other Handguards</color>."
+L["uplp_ak_smg_rec_vityaz.printname"] = "\"OIZK-9\" 30-Round Magazine"
+L["uplp_ak_smg_rec_vityaz.compactname"] = "\"OIZK-9\""
+L["uplp_ak_smg_rec_vityaz.description"] = "Converts the AK SMG to the \"OIZK-9\" configuration.\nFed with a traditional 30-round magazine.\n<color=160,160,255>Can equip other Handguards</color>."
 
-L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"Vityaz\" 30-Round Banana Magazine"
-L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"Vityaz\" (B)"
-L["uplp_ak_smg_rec_vityaz_tac.description"] = "Converts the AK SMG to the \"Vityaz\" configuration.\nFed with a traditional 30-round magazine painted to look like a banana.\n<color=160,160,255>Can equip other Handguards</color>."
+L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"OIZK-9\" 30-Round Banana Magazine"
+L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"OIZK-9\" (B)"
+L["uplp_ak_smg_rec_vityaz_tac.description"] = "Converts the AK SMG to the \"OIZK-9\" configuration.\nFed with a traditional 30-round magazine painted to look like a banana.\n<color=160,160,255>Can equip other Handguards</color>."
 
-L["uplp_ak_smg_rec_bizon.printname"] = "\"Bizon\" 64-Round Magazine"
-L["uplp_ak_smg_rec_bizon.compactname"] = "\"Bizon\""
-L["uplp_ak_smg_rec_bizon.description"] = "Converts the AK SMG to the \"Bizon\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+L["uplp_ak_smg_rec_bizon.printname"] = "\"Rassvet\" 64-Round Magazine"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Rassvet\""
+L["uplp_ak_smg_rec_bizon.description"] = "Converts the AK SMG to the modern \"Rassvet\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
 
-L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Bizon\" 64-Round Classic Magazine"
-L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Bizon\" (C)"
-L["uplp_ak_smg_rec_bizon_old.description"] = "Converts the AK SMG to the \"Bizon\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Zakat\" 64-Round Classic Magazine"
+L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Zakat\""
+L["uplp_ak_smg_rec_bizon_old.description"] = "Converts the AK SMG to the \"Zakat\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
 
 ////// Barrels
 L["uplp_ak_smg_brl_long.printname"] = "400mm Barrel"
 L["uplp_ak_smg_brl_long.compactname"] = "400mm"
-L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"Vityaz\")."
+L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"OIZK-9\")."
 
 L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Barrel"
 L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"

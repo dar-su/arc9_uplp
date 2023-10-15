@@ -1001,8 +1001,8 @@ SWEP.HookP_NameChange = function(self, name)
 		name = ARC9:GetPhrase("uplp_weapon_ak_smg_ppk20")
 	elseif bizon then
 		name = ARC9:GetPhrase("uplp_weapon_ak_smg_bizon")
-	elseif vityaz then
-		name = ARC9:GetPhrase("uplp_weapon_ak_smg_vityaz")
+	-- elseif vityaz then
+		-- name = ARC9:GetPhrase("uplp_weapon_ak_smg_vityaz")
 	end
 
     return name

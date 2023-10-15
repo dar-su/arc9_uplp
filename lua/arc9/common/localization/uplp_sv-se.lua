@@ -289,9 +289,13 @@ L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holografiskt Sikte med Först
 L["uplp_optic_hhs2.compactname"] = "10S F."
 L["uplp_optic_hhs2.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™.\nKommer med ett förstoringsglas som kan flyttas till sidan när den inte används."
 
-L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
+L["uplp_optic_exps.printname"] = "SightLine™ 10S Holografiskt Sikte"
 L["uplp_optic_exps.compactname"] = "10S"
 L["uplp_optic_exps.description"] = "Militär grad holografiskt sikte gjort för finkalibriga vapen av SightLine™."
+
+L["uplp_optic_holosun.printname"] = "PurrPoint™ ELITE Reflexsikte"
+L["uplp_optic_holosun.compactname"] = "ELITE"
+L["uplp_optic_holosun.description"] = "Civilgrad reflexsikte gjort för tävlingsskytte av PurrPoint™."
 
 L["uplp_optic_devo.printname"] = "WraithSight™ Elite-Rödpunktsikte"
 L["uplp_optic_devo.compactname"] = "Wraith"
@@ -553,8 +557,8 @@ L["uplp_weapon_ak12_308"] = "AK M308"
 
 L["uplp_weapon_ak_short"] = "%s Short"
 
-L["uplp_weapon_ak_smg_vityaz"] = "AK KPist. \"Vityaz\""
-L["uplp_weapon_ak_smg_bizon"] = "AK KPist. \"Bizon\""
+L["uplp_weapon_ak_smg_vityaz"] = "AK KPist. \"OIZK-9\""
+L["uplp_weapon_ak_smg_bizon"] = "AK KPist. \"Zakat\""
 L["uplp_weapon_ak_smg_ppk20"] = "AK KPist. \"M20\""
 
 L["uplp_weapon_ak_real"] = "AK-103"
@@ -678,9 +682,9 @@ L["uplp_ak_grip_tapco.printname"] = "PAWCO-Pistolgrepp"
 L["uplp_ak_grip_tapco.compactname"] = "PAWCO"
 L["uplp_ak_grip_tapco.description"] = "Gummerat pistolgrepp av PAWCO."
 
-L["uplp_ak_grip_vityaz.printname"] = "Vityaz Pistolgrepp"
-L["uplp_ak_grip_vityaz.compactname"] = "Vityaz"
-L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på kulsprutepistolen AK \"Vityaz\"."
+L["uplp_ak_grip_vityaz.printname"] = "\"OIZK-9\" Pistolgrepp"
+L["uplp_ak_grip_vityaz.compactname"] = "\"OIZK-9\""
+L["uplp_ak_grip_vityaz.description"] = "Större pistolgrepp som används på kulsprutepistolen AK \"OIZK-9\"."
 
 L["uplp_ak_grip_beryl.printname"] = "Szermierz Pistolgrepp"
 L["uplp_ak_grip_beryl.compactname"] = "Szermierz"
@@ -860,13 +864,13 @@ L["uplp_ak_mz_rpk.printname"] = "Klassisk RPK Mynningsbroms"
 L["uplp_ak_mz_rpk.compactname"] = "RPK MB"
 L["uplp_ak_mz_rpk.description"] = "Standard mynningsbroms som används på HPK."
 
-L["uplp_ak_mz_vityaz.printname"] = "\"Vityaz\" Mynningsbroms"
-L["uplp_ak_mz_vityaz.compactname"] = "\"Vityaz\" MB"
-L["uplp_ak_mz_vityaz.description"] = "Standard mynningsbroms som används på kulsprutepistolen AK \"Vityaz\"."
+L["uplp_ak_mz_vityaz.printname"] = "\"OIZK-9\" Mynningsbroms"
+L["uplp_ak_mz_vityaz.compactname"] = "\"OIZK-9\" MB"
+L["uplp_ak_mz_vityaz.description"] = "Standard mynningsbroms som används på kulsprutepistolen AK \"OIZK-9\"."
 
-L["uplp_ak_mz_bizon.printname"] = "\"Bizon\" Mynningsbroms"
-L["uplp_ak_mz_bizon.compactname"] = "\"Bizon\" MB"
-L["uplp_ak_mz_bizon.description"] = "Standard mynningsbroms som används på kulsprutepistolen AK \"Bizon\"."
+L["uplp_ak_mz_bizon.printname"] = "\"Zakat\" Mynningsbroms"
+L["uplp_ak_mz_bizon.compactname"] = "\"Zakat\" MB"
+L["uplp_ak_mz_bizon.description"] = "Standard mynningsbroms som används på kulsprutepistolen AK \"Zakat\"."
 
 L["uplp_ak_mz_12.printname"] = "AK M23 Mynningsbroms"
 L["uplp_ak_mz_12.compactname"] = "AK M23 MB"
@@ -951,27 +955,27 @@ L["uplp_ak_stock_ppk.description"] = "Kompakt taktisk kolv för användning av k
 
 /////////// AK SMG Exclusive
 ////// Receivers
-L["uplp_ak_smg_rec_vityaz.printname"] = "\"Vityaz\" 30-Patronersmagasin"
-L["uplp_ak_smg_rec_vityaz.compactname"] = "\"Vityaz\""
-L["uplp_ak_smg_rec_vityaz.description"] = "Konverterar AK KPist. till \"Vityaz\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
+L["uplp_ak_smg_rec_vityaz.printname"] = "\"OIZK-9\" 30-Patronersmagasin"
+L["uplp_ak_smg_rec_vityaz.compactname"] = "\"OIZK-9\""
+L["uplp_ak_smg_rec_vityaz.description"] = "Konverterar AK KPist. till \"OIZK-9\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
 
-L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"Vityaz\" 30-Patroners Banan Magasin"
-L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"Vityaz\" (B)"
-L["uplp_ak_smg_rec_vityaz_tac.description"] = "Konverterar AK KPist. till \"Vityaz\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin målad för att likna en banan.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
+L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"OIZK-9\" 30-Patroners Banan Magasin"
+L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"OIZK-9\" (B)"
+L["uplp_ak_smg_rec_vityaz_tac.description"] = "Konverterar AK KPist. till \"OIZK-9\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin målad för att likna en banan.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
 
-L["uplp_ak_smg_rec_bizon.printname"] = "\"Bizon\" 64-Patronersmagasin"
-L["uplp_ak_smg_rec_bizon.compactname"] = "\"Bizon\""
-L["uplp_ak_smg_rec_bizon.description"] = "Konverterar AK KPist. till \"Bizon\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
+L["uplp_ak_smg_rec_bizon.printname"] = "\"Rassvet\" 64-Patronersmagasin"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Rassvet\""
+L["uplp_ak_smg_rec_bizon.description"] = "Konverterar AK KPist. till den moderna \"Rassvet\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
 
-L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Bizon\" Klassiskt 64-Patronersmagasin"
-L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Bizon\" (K)"
-L["uplp_ak_smg_rec_bizon_old.description"] = "Konverterar AK KPist. till \"Bizon\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
+L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Zakat\" 64-Patronersmagasin"
+L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Zakat\""
+L["uplp_ak_smg_rec_bizon_old.description"] = "Konverterar AK KPist. till \"Zakat\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
 
 ////// Barrels
 L["uplp_ak_smg_brl_long.printname"] = "400mm Pipa"
 L["uplp_ak_smg_brl_long.compactname"] = "400mm"
-L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"Vityaz\")."
-L["uplp_ak_smg_brl_long.description"] = "Lång 400mm pipa till AK Kpist. (\"Vityaz\")."
+L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"OIZK-9\")."
+L["uplp_ak_smg_brl_long.description"] = "Lång 400mm pipa till AK Kpist. (\"OIZK-9\")."
 
 L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Pipa"
 L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
