@@ -270,7 +270,7 @@ L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification."
 
 L["uplp_optic_pm3.printname"] = "12x Marksman Scope"
 L["uplp_optic_pm3.compactname"] = "12x MMS"
-L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification."
+L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification.\nCan equip <color=100,255,100>a backup optic</color>."
 
 L["uplp_optic_generic.printname"] = "10x Precision Scope"
 L["uplp_optic_generic.compactname"] = "10x Precision"
@@ -325,7 +325,7 @@ L["uplp_grip_half.printname"] = "Hoki Foregrip"
 L["uplp_grip_half.compactname"] = "Hoki"
 L["uplp_grip_half.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil."
 
-L["uplp_grip_half_fullcclamp.printname"] = "Hoki Foregrip (Full C-Clamp)"
+L["uplp_grip_half_fullcclamp.printname"] = "Hoki Foregrip (C-Clamp)"
 L["uplp_grip_half_fullcclamp.compactname"] = "Hoki (C)"
 L["uplp_grip_half_fullcclamp.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil.\nThis one is held with a C-clamp."
 

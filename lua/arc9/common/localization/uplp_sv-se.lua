@@ -268,9 +268,9 @@ L["uplp_optic_ez8x.printname"] = "8x Jägare Sikte"
 L["uplp_optic_ez8x.compactname"] = "8x Jägare"
 L["uplp_optic_ez8x.description"] = "Lång räckvidd sikte med 8x magnifiering."
 
-L["uplp_optic_pm3.printname"] = "12x Precisionssikte"
-L["uplp_optic_pm3.compactname"] = "12x PS"
-L["uplp_optic_pm3.description"] = "Lång räckvidd precisionssikte med 12x magnifiering."
+L["uplp_optic_pm3.printname"] = "12x Marksman-Kikarsikte"
+L["uplp_optic_pm3.compactname"] = "12x MK"
+L["uplp_optic_pm3.description"] = "Lång räckvidd precisionssikte med 12x magnifiering.\nKan utrusta <color=100,255,100>ett reservsikte</color>."
 
 L["uplp_optic_generic.printname"] = "10x Precisionssikte"
 L["uplp_optic_generic.compactname"] = "10x Precision"

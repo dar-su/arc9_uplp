@@ -746,7 +746,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 250
 ATT.HoloSightColorable = false 
 
-ATT.Category = "uplp_optic_small"
+ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_d1")
@@ -828,7 +828,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 700
 ATT.HoloSightColorable = true
 
-ATT.Category = {"uplp_optic_small"}
+ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
@@ -943,7 +943,7 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 188
 ATT.HoloSightColorable = false 
 
-ATT.Category = {"uplp_optic_small"}
+ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
@@ -1323,8 +1323,8 @@ ATT.FoldSights = true
 
 ATT.Attachments = {
     {
-        PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small"},
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_optic_backup"},
         Pos = Vector(0.75, 0, -2.6),
         Ang = Angle(0, 0, 0),
     },
