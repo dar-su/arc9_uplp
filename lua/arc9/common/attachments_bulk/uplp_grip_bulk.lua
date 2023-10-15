@@ -406,7 +406,7 @@ ATT.PrintName = "Bipod"
 ATT.CompactName = "Bipod"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "awp/bipod.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "awp/hbipod.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/bipod.mdl"
 
@@ -427,7 +427,9 @@ ATT.Bipod = true
 
 ATT.DrawFunc = function(self, model, wm)
 	if self:GetBipod() then
-		model:SetBodygroup(0,1)
+		if self:GetEnterBipodTime() + 0.08 < CurTime() then
+			model:SetBodygroup(0, 1)
+		end
 	else 
 		model:SetBodygroup(0,0)
 	end

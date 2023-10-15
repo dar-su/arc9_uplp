@@ -379,6 +379,16 @@ ATT.ExcludeElements = {"uplp_ak_brl_12k"}
 
 ATT.ActivateElements = {"uplp_ak_hg_rpk16", "ak12_part"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        Pos = Vector(-1.5, 0, 1.2),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0),
+    },
+}
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk16")
 
 -------------------------------------------

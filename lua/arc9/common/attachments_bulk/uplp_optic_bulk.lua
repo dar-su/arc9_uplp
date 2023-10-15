@@ -1785,6 +1785,59 @@ ATT.ModelOffset = Vector(0, 0, -0.1)
 ARC9.LoadAttachment(ATT, "uplp_optic_exps")
 
 
+///////////////////////////////////////      uplp_optic_holosun
+
+
+ATT = {}
+
+ATT.PrintName = "PurrPoint™ ELITE Reflex Sight" -- EoTech EXPS
+ATT.CompactName = "ELITE"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "holosub.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_holosun.mdl"
+ATT.FoldSights = true
+
+ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.05
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -1.24),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross2.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 700
+ATT.HoloSightColorable = true
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.15
+
+ATT.ModelOffset = Vector(0.2, 0, -0.1)
+ATT.Scale = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_optic_holosun")
+
+
 ///////////////////////////////////////      uplp_optic_devo
 
 

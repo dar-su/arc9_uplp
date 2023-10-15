@@ -72,6 +72,8 @@ ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ModelOffset = Vector(-0.42, 0, 0)
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_mbus")
 
 
@@ -96,6 +98,8 @@ ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.ModelOffset = Vector(-0.2, 0, 0)
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_scalar")
 
@@ -121,6 +125,8 @@ ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.ModelOffset = Vector(-0.42, 0, 0)
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type1")
 
@@ -146,6 +152,8 @@ ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.ModelOffset = Vector(-0.42, 0, 0)
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type2")
 
@@ -171,6 +179,8 @@ ATT.ActivateElements = {"uplp_ar15_rs_tall"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.ModelOffset = Vector(-0.42, 0, 0)
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type3")
 

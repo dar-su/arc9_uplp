@@ -291,7 +291,11 @@ L["uplp_optic_hhs2.description"] = "Military-grade holografic sight made for sma
 
 L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
 L["uplp_optic_exps.compactname"] = "10S"
-L["uplp_optic_exps.description"] = "Military-grade holographic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
+L["uplp_optic_exps.description"] = "Military-grade holographic sight made for small arms by SightLine™."
+
+L["uplp_optic_holosun.printname"] = "PurrPoint™ ELITE Reflex Sight"
+L["uplp_optic_holosun.compactname"] = "ELITE"
+L["uplp_optic_holosun.description"] = "Civilian-grade reflex sight made for competitive shooting by PurrPoint™."
 
 L["uplp_optic_devo.printname"] = "WraithSight™ Elite Red Dot"
 L["uplp_optic_devo.compactname"] = "Wraith"
