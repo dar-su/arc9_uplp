@@ -38,7 +38,7 @@ SWEP.StandardPresets = {
 
 }
 
-SWEP.DefaultBodygroups = "2267d1b021000000000000" -- Might as well prepare for the future
+SWEP.DefaultBodygroups = "2267g1b021000000000000" -- Might as well prepare for the future
 
 //// Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_ak47"
@@ -361,6 +361,17 @@ local UTCrattle = {
     pathUTC .. "rattle2.ogg",
     pathUTC .. "rattle3.ogg",
 }
+
+local thetoggle = {{
+    s = {
+        "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_03.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
+    }, t = 0
+}}
 
 -- Animations
 SWEP.Animations = {
@@ -1042,15 +1053,11 @@ SWEP.Animations = {
 	
     ["toggle"] = {
         Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },
     ["switchsights"] = {
         Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },    
 }
 
@@ -1098,11 +1105,23 @@ SWEP.AttachmentElements = {
 
     -- HANDGUARDS
     -- Standard
-    ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } },
+    ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } , AttPosMods = {
+	[5] = { Pos = Vector(0, 2.6, 12), },
+	[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
+	[12] = { Pos = Vector(0, -0.1, 15), },
+	[13] = { Pos = Vector(0.77, 1.96, 14), },
+	}},
     ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {
+	[5] = { Pos = Vector(0, 2.6, 12), },
 	[6] = { Pos = Vector(-0.95, 0.675, 15.25), },
 	[12] = { Pos = Vector(0, -0.1, 15), },
 	[13] = { Pos = Vector(0.77, 1.96, 16), },
+	}},
+    ["uplp_ak_hg_12tac"] =      { Bodygroups = { { 4, 17 } } , AttPosMods = {
+	[5] = { Pos = Vector(0, 2.6, 12), },
+	[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
+	[12] = { Pos = Vector(0, -0.1, 15), },
+	[13] = { Pos = Vector(0.575, 1.96, 20), },
 	}},
 
     --CALIBERS
@@ -1183,7 +1202,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_barrel_12"},
         DefaultIcon = Material(defatt2 .. "akbar.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.5, 17),
+        Pos = Vector(0, 1.5, 17),
 		Icon_Offset = Vector(-7, 0, 0.75),
         Ang = Angle(90, 90, 180),
     },
@@ -1192,25 +1211,26 @@ SWEP.Attachments = {
         Category = {"uplp_handguard_flush"},
         DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.5, 14.5),
+        Pos = Vector(0, 1.5, 14.5),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(-6.5, 0, -0.5),
-		ExcludeElements = {"uplp_ak_brl_12k"},
+		-- ExcludeElements = {"uplp_ak_brl_12k"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 2.6, 12),
+        Pos = Vector(0, 2.3, 12),
         Ang = Angle(90, 90, 180),
+		Icon_Offset = Vector(0, 0, -1),
 		ExcludeElements = {"uplp_no_grip"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
         Bone = "body",
-        Pos = Vector(-0.95, 0.675, 13.25),
+        Pos = Vector(-1.11, 1.7, 12.75),
         Ang = Angle(90, 90, -90),
     },
     {
@@ -1218,7 +1238,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_dc_12"},
         DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.5, 0),
+        Pos = Vector(0, 1.5, 0),
         Ang = Angle(90, 90, 180),
 		Installed = "uplp_ak_dc_12",
 		Integral = "uplp_ak_dc_12",
@@ -1231,7 +1251,7 @@ SWEP.Attachments = {
 		},
         DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 5, 5),
+        Pos = Vector(0, 5, 5),
         Ang = Angle(90, 90, 180),
 		Installed = "uplp_ak_mag_545_30_12",
 		Integral = "uplp_ak_mag_545_30_12",
@@ -1241,7 +1261,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_grip_12"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 5, -0.95),
+        Pos = Vector(0, 5, -0.95),
         Ang = Angle(90, 90, 180),
 		Installed = "uplp_ak_grip_12evo",
 		Integral = "uplp_ak_grip_12evo",
@@ -1251,7 +1271,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_stock_12"},
         DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 2, -3),
+        Pos = Vector(0, 2, -3),
         Ang = Angle(90, 90, 180),
 		Installed = "uplp_ak_stock_evo",
     },

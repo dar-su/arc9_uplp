@@ -249,10 +249,11 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock"},
         DefaultIcon = Material("entities/uplp_attachements/def/akstock.png", "mips smooth"),
-        Pos = Vector(0.8, 0, 0.3),
+        Pos = Vector(0.8, 0.125, 0.3),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(-2, 0, 0),
 		Installed = "uplp_ar15_stock_ak12",
+		Scale = 1.15
     },
 }
 
@@ -284,6 +285,7 @@ ATT.Attachments = {
         Pos = Vector(1.0, 0.045, 0.07),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(-2, 0, 0),
+		Scale = 1.1,
     },
 }
 
@@ -495,8 +497,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_stock_pt3")
 
 ATT = {}
 
-ATT.PrintName = "Evolution Stock"
-ATT.CompactName = "Evolution"
+ATT.PrintName = "EVO Stock"
+ATT.CompactName = "EVO"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "evo.png", "mips smooth")

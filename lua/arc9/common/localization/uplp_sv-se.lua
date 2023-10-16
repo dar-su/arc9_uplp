@@ -581,7 +581,7 @@ L["uplp_ak_brl_akm.description"] = "Standard 400mm pipa som används på AK 7,62
 
 L["uplp_ak_brl_rpk.printname"] = "585mm HPK-Pipa"
 L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på HPK."
+L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på HPK.\nKommer med inbyggt <color=100,255,100>benstöd</color>."
 
 L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Pipa"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
@@ -597,7 +597,7 @@ L["uplp_ak_brl_12.description"] = "Standard 400mm pipa som används på AK M22:a
 
 L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Pipa"
 L["uplp_ak_brl_12k.compactname"] = "230mm 12K"
-L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?\nEj kompatibel med <color=255,100,100>HPK M16Handskydd</color>."
+L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?\nEj kompatibel med <color=255,100,100>HPK M16 eller Lisyan Tactical Handskydd</color>."
 
 L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Pipa"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
@@ -747,13 +747,17 @@ L["uplp_ak_hg_su_dong.printname"] = "Dong-Handskydd"
 L["uplp_ak_hg_su_dong.compactname"] = "Dong"
 L["uplp_ak_hg_su_dong.description"] = "Trähandskydd från ett AK-gevär med rumänskt ursprung med inbyggt framgrepp."
 
-L["uplp_ak_hg_12.printname"] = "AK M23 Handskydd"
-L["uplp_ak_hg_12.compactname"] = "AK M23"
-L["uplp_ak_hg_12.description"] = "Standard handskydd som används på AK M23:an."
+L["uplp_ak_hg_12.printname"] = "AK M16 Handskydd"
+L["uplp_ak_hg_12.compactname"] = "AK M16"
+L["uplp_ak_hg_12.description"] = "Standard handskydd som används på AK M16."
 
 L["uplp_ak_hg_rpk16.printname"] = "HPK M16 Handskydd"
 L["uplp_ak_hg_rpk16.compactname"] = "HPK M16"
-L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på HPK M16."
+L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på HPK M16.\nLägger till stöd till <color=100,255,100>benstöd</color>.\nEj kompatibel med <color=255,100,100>230mm AK M22-K Pipan</color>."
+
+L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Modell 23 Handskydd"
+L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
+L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjort av Lisyan Tactical.\nHar ej stöd för <color=255,100,100>framgrepp</color>.\nEj kompatibel med <color=255,100,100>230mm AK M22-K Pipan</color>."
 
 ////// Magazines
 /// 7.62x39mm

@@ -327,41 +327,21 @@ ARC9.LoadAttachment(ATT, "uplp_ak_hg_su_dong")
 
 -------------------------------------------
 
----FLUSH
+--- AK-12
 
---[[
 ATT = {}
 
-ATT.PrintName = "AK-12 Handguard"
-ATT.CompactName = "AK-12"
+ATT.PrintName = "AK M16 Handguard"
+ATT.CompactName = "AK M16"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "12.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "12old.png", "mips smooth")
 ATT.Category = "uplp_handguard_flush"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_12", "ak12_part"}
 
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert"},
-        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.05),
-        Ang = Angle(0, 0, 0),
-		MergeSlots = {2},
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz"},
-        Pos = Vector(4, 0, 1.05),
-        Ang = Angle(0, 0, 0),
-		Hidden = true,
-    },
-}
-
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_12")
---]]
 
 -------------------------------------------
 
@@ -390,5 +370,35 @@ ATT.Attachments = {
     },
 }
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk16")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Lisyan Tactical Model 23 Handguard"
+ATT.CompactName = "Lisyan"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 50
+
+ATT.Icon = Material(iconfolder .. "12c.png", "mips smooth")
+ATT.Category = "uplp_handguard_flush"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ExcludeElements = {"uplp_ak_brl_12k"}
+
+ATT.ActivateElements = {"uplp_ak_hg_12tac", "ak12_part", "uplp_no_grip"}
+
+-- ATT.Attachments = {
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        -- Category = {"uplp_bipod"},
+        -- DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        -- Pos = Vector(-1.5, 0, 1.2),
+        -- Ang = Angle(0, 0, 0),
+		-- Icon_Offset = Vector(0, 0, 0),
+    -- },
+-- }
+
+ARC9.LoadAttachment(ATT, "uplp_ak_hg_12tac")
 
 -------------------------------------------

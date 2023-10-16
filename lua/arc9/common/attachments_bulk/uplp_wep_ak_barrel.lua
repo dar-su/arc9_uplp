@@ -140,6 +140,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_rpk"}
 
 /// Positives
+ATT.Bipod = true
 ATT.RecoilMult = 0.5
 ATT.RangeMaxMult = 1.1
 ATT.RangeMinMult = 1.2
@@ -298,7 +299,7 @@ ATT.Category = "uplp_ak_barrel_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
-ATT.ExcludeElements = {"uplp_ak_hg_rpk16"}
+ATT.ExcludeElements = {"uplp_ak_hg_rpk16", "uplp_ak_hg_12tac"}
 
 /// Positives
 ATT.AimDownSightsTimeMult = 0.75

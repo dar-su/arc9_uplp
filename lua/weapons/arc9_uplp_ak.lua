@@ -366,6 +366,17 @@ local UTCrattle = {
     pathUTC .. "rattle3.ogg",
 }
 
+local thetoggle = {{
+    s = {
+        "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_off_03.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_01.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_02.ogg",
+        "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
+    }, t = 0
+}}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -931,15 +942,11 @@ SWEP.Animations = {
 	
     ["toggle"] = {
         Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },
     ["switchsights"] = {
         Source = "modeswitch",
-        EventTable = {
-            { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
-        }
+        EventTable = thetoggle
     },    
 }
 
@@ -968,6 +975,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 			mdl:SetBodygroup(7, 3)
 		end
     end
+	
+	if eles["uplp_ak_brl_rpk"] and wep:GetBipod() then
+		if wep:GetEnterBipodTime() + 0.2 < CurTime() then
+			mdl:SetBodygroup(2, 10)
+		end
+	end
 	
 end
 
@@ -1119,7 +1132,7 @@ SWEP.Attachments = {
         Bone = "body",
         -- Installed = "uplp_ak_brl_16",
         -- Integral = "uplp_ak_brl_16",
-        Pos = Vector(0.045, 1.5, 17),
+        Pos = Vector(0, 1.5, 17),
 		Icon_Offset = Vector(-5, 0, 0.5),
         Ang = Angle(90, 90, 180),
     },
@@ -1128,7 +1141,7 @@ SWEP.Attachments = {
         Category = {"uplp_handguard_normal"},
         DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.5, 14.5),
+        Pos = Vector(0, 1.5, 14.5),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(-6.5, 0, -0.5),
 		ExcludeElements = {"uplp_ak_brl_su"},
@@ -1138,7 +1151,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_dc"},
         DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 0.5, 6.5),
+        Pos = Vector(0, 0.5, 6.5),
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_ak_brl_109"},
     },
@@ -1150,7 +1163,7 @@ SWEP.Attachments = {
         RejectAttachments = {
 		["uplp_ak_mag_308_20"] = true,
 		},
-        Pos = Vector(0.045, 5, 5),
+        Pos = Vector(0, 5, 5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1162,7 +1175,7 @@ SWEP.Attachments = {
         RejectAttachments = {
 		["uplp_ak_grip_std"] = true,
 		},
-        Pos = Vector(0.045, 5, -1),
+        Pos = Vector(0, 5, -1),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1170,7 +1183,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_stock"},
         DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 2, -3),
+        Pos = Vector(0, 2, -3),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ak_stock_fold",
     },

@@ -588,7 +588,7 @@ L["uplp_ak_brl_akm.description"] = "Standard 400mm (16\") barrel used on the AK 
 
 L["uplp_ak_brl_rpk.printname"] = "585mm HPK Barrel"
 L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Heavy 585mm (23\") barrel used on the HPK."
+L["uplp_ak_brl_rpk.description"] = "Heavy 585mm (23\") barrel used on the HPK.\nComes with an integral <color=100,255,100 bipod</color>."
 
 L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Barrel"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
@@ -604,7 +604,7 @@ L["uplp_ak_brl_12.description"] = "Standard 400mm (16\") barrel used on the AK M
 
 L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Barrel"
 L["uplp_ak_brl_12k.compactname"] = "230mm M22-K"
-L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the prototype AK M22-K. Might be not real. Or is it?\nNot compatible with the <color=255,100,100>HPK M16 Handguard</color>."
+L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the prototype AK M22-K. Might be not real. Or is it?\nNot compatible with the <color=255,100,100>HPK M16 or Lisyan Tactical Handguards</color>."
 
 L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Barrel"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
@@ -754,13 +754,17 @@ L["uplp_ak_hg_su_dong.printname"] = "Dong Handguard"
 L["uplp_ak_hg_su_dong.compactname"] = "Dong"
 L["uplp_ak_hg_su_dong.description"] = "Wooden handguard from an AK rifle of Romanian origin with built-in foregrip."
 
-L["uplp_ak_hg_12.printname"] = "AK M23 Handguard"
-L["uplp_ak_hg_12.compactname"] = "AK M23"
-L["uplp_ak_hg_12.description"] = "Standard handguard used on the AK M23."
+L["uplp_ak_hg_12.printname"] = "AK M16 Handguard"
+L["uplp_ak_hg_12.compactname"] = "AK M16"
+L["uplp_ak_hg_12.description"] = "Standard handguard used on the AK M16."
 
 L["uplp_ak_hg_rpk16.printname"] = "HPK M16 Handguard"
 L["uplp_ak_hg_rpk16.compactname"] = "HPK M16"
-L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the HPK M16."
+L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the HPK M16.\nAdds support for <color=100,255,100>a bipod</color>.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
+
+L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Model 23 Handguard"
+L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
+L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan Tactical.\nDoes not support <color=255,100,100>foregrips</color>.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
 
 ////// Magazines
 /// 7.62x39mm
