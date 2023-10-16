@@ -74,7 +74,7 @@ L["uplp_year_present"] = "%s > Nutid"
 L["uplp_year_year"] = "%s > %s"
 
 /////////// Mechanism
-L["uplp_mechanism"] = "Mekanism"
+L["uplp_mechanism"] = "Mekanism3"
 
 L["uplp_mechanism_2"] = "%s, %s"
 L["uplp_mechanism_3"] = "%s, %s, %s"

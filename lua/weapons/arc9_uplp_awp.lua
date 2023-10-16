@@ -381,7 +381,7 @@ SWEP.Animations = {
             {s = pathUT .. "boltback.ogg",        t = 0.25},
             {s = pathUT .. "boltforward.ogg",     t = 0.32},
             {s = pathUT .. "eject.ogg",           t = 0.4},
-            {s = pathUT .. "boltdown.ogg",        t = 0.55},
+            {s = pathUT .. "boltdown.ogg",        t = 0.5},
         },
     },
     ["ready"] = {
@@ -680,7 +680,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 			elseif eles["uplp_awp_mag_awp_tac"] then mdl:SetBodygroup(4, 6) 
 		end
 
-		if eles["uplp_tac_used"] then
+		if (eles["uplp_tac_used"] or eles["uplp_grip_used"]) then
 			mdl:SetBodygroup(6,2)
 		end
 
