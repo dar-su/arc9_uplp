@@ -1065,8 +1065,17 @@ SWEP.Animations = {
     },    
 }
 
+SWEP.Hook_TranslateSource = function(swep, anim)
+    local eles = swep:GetElements()
+    if !(eles["uplp_ak_dc_12_22"] or eles["uplp_ak_dc_12_16"]) then
+        if anim == "firemode_0_12" then return "firemode_0_evo" end
+        if anim == "firemode_1_12" then return "firemode_1_evo" end
+    end
+end
+
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsFirstTimePredicted() then return end
+
     -- theres some mod for arc9eft that makes mag checks on bind and it manipulates EFTInspectnum value so well keep eft in name to keep functionality
     if anim == "inspect" or anim == "inspect_empty" then
         swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1

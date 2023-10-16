@@ -136,14 +136,6 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12alt","use_optics", "uplp_ak12_rearsight_m1"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
-	if anim == "firemode_1" or anim == "firemode_0" then
-		return anim .."_evo"
-	end
-	
-	return anim
-end
-
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
 
 -------------------------------------------
