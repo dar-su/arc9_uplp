@@ -267,6 +267,24 @@ ATT.Attachments = {
 		Installed = "uplp_ak_grip_12evo",
 		Integral = "uplp_ak_grip_12evo",
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_muzzle", "uplp_ak_muzzle_smg"},
+        RequireElements = {"uplp_ak_smg_mag_bizon"},
+        Bone = "body",
+        Pos = Vector(-9.05, 0, 0.06),
+        Ang = Angle(0, 0, 0),
+        Installed = "uplp_ak_mz_vityaz",
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_muzzle", "uplp_ak_muzzle_smg"},
+        ExcludeElements = {"uplp_ak_smg_mag_bizon"},
+        Bone = "body",
+        Pos = Vector(-8.35, 0, 0.06),
+        Ang = Angle(0, 0, 0),
+        Installed = "uplp_ak_mz_vityaz",
+    },
 }
 
 /// Positives

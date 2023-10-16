@@ -974,9 +974,9 @@ L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"OIZK-9\" 30-Round Banana Magazine
 L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"OIZK-9\" (B)"
 L["uplp_ak_smg_rec_vityaz_tac.description"] = "Converts the AK SMG to the \"OIZK-9\" configuration.\nFed with a traditional 30-round magazine painted to look like a banana.\n<color=160,160,255>Can equip other Handguards</color>."
 
-L["uplp_ak_smg_rec_bizon.printname"] = "\"Rassvet\" 64-Round Magazine"
-L["uplp_ak_smg_rec_bizon.compactname"] = "\"Rassvet\""
-L["uplp_ak_smg_rec_bizon.description"] = "Converts the AK SMG to the modern \"Rassvet\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+L["uplp_ak_smg_rec_bizon.printname"] = "\"Zakat-3\" 64-Round Magazine"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Zakat-3\""
+L["uplp_ak_smg_rec_bizon.description"] = "Converts the AK SMG to the \"Zakat\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
 
 L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Zakat\" 64-Round Classic Magazine"
 L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Zakat\""

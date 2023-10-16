@@ -35,7 +35,10 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+    "[Zakat]XQAAAQCnAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIpVYogTtGbWWjvTDQL2axEOWU0Th2zByfn4tyXR20+Jr+WTEApMD838UbZka6IkU0xOAe27CeQH8+ot9wRB3bBAjK6hFXghk5uvLJ7wp34QC6RY3lvTaD8SOeWT/gj1KcOHCdmXc6KPs/+RwGEVVzMJuP0eVHX+ihn1XKuFKr99NUQ5QOJ2gXzqUru",
+    "[Model 20]XQAAAQCsAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsZg6F2ghGFsVSwSZXsdpOJnoXjbdg488hyPKIsneicjZS+LPKZLsd6HFULvYVv6VcoCcAFWNpagKQ+eb/Cq1Fl/K7QDZdQtJH86q95/zGMUS1JUKSGI0jPesgDpdSHIhkCu1r0G/aHe2TZIF7/PrhIrGcKHlYvQ0zEwpte20etQrk7Pro5pOgjuObKBqaQ3VYs824/3DuRA==",
+    "[Rassvet]XQAAAQDCAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsZg6F2ghGFsVSwSZXsdpOJnoXjbdg488hyPKIsneicjZS+LPKZLsd6HFULvYVv6VcoCcAFWNqK6e+hXg362PNjSVdkcuAvdCnZcaxrR/S+jVRIbCAeKdJxVRiM351mFaGnjLnUwkzS7bXbC7cgIPMB0cVWdRZ1/KP3hUuvjvl5I3gi5cDTw9H9LIqHglbfDb3qJAWEALo3gA=",
+    "[Sport]XQAAAQAkAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrgpRXm4Oqzlbkxd9yYSQ41e8tPrZelMnl0FkaLl5sPMeevdh2EU293mS5k2MWgDloZr7bLnNh31+4x/3c5iTfvuoleckS3WAtT4oNfy02yemgBHAp/+GiERp5x3sGaqm5NRvczlAgsNn9Tt7nCxzgVuoGWMZoCrOK15ostnJDcWoplfEp9JNHU4gXxAjqmHXyI1nHUl0FBmkUx6mHwjtNDunvSwrrBtBsJ6jDbFfghKqabtA7B0qvwNd+lNr4YuzGngEI10q1/hYf5raeTLBI"
 }
 
 SWEP.DefaultBodygroups = "000000000000000000000" -- Might as well prepare for the future
@@ -693,9 +696,11 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if eles["uplp_ak_smg_conf_ppk20"] then -- If using the PPK-20 Configuration
         mdl:SetBodygroup(4, 8) -- Remove handguard
         mdl:SetBodygroup(3, 4) -- Remove dust cover
+        mdl:SetBodygroup(1, 2) -- fireselcetor
 			
 		if eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"] then -- If using either Bizon Configuration
-				mdl:SetBodygroup(0, 3) -- Change receiver
+			mdl:SetBodygroup(0, 3) -- Change receiver
+            mdl:SetBodygroup(2, 4) -- ppk20bizon barrel
 		end
 
 		if eles["uplp_ak_smg_brl_ppk20_long"] then
@@ -820,7 +825,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
-		ExcludeElements = {"uplp_ak_smg_brl_ppk20_long"},
+		ExcludeElements = {"uplp_ak_smg_brl_ppk20_long", "uplp_ak_smg_config"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
