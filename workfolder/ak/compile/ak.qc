@@ -62,6 +62,8 @@ $bodygroup "hg" { // 4
 	studio "hg 12.smd" // 9
 	studio "hg rpk16.smd" // 10
 	blank  // 11
+	studio "hg 12m1.smd" // 12 c
+	studio "hg 12custom.smd" // 13 d
 }   
 
 // $bodygroup "stock" { // 6
