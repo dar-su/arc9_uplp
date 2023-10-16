@@ -967,9 +967,9 @@ L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"OIZK-9\" 30-Patroners Banan Magas
 L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"OIZK-9\" (B)"
 L["uplp_ak_smg_rec_vityaz_tac.description"] = "Konverterar AK KPist. till \"OIZK-9\"-konfigueringen.\nMatas med ett traditionellt 30-patronersmagasin målad för att likna en banan.\n<color=160,160,255>Kan utrusta andra Handskydd</color>."
 
-L["uplp_ak_smg_rec_bizon.printname"] = "\"Rassvet\" 64-Patronersmagasin"
-L["uplp_ak_smg_rec_bizon.compactname"] = "\"Rassvet\""
-L["uplp_ak_smg_rec_bizon.description"] = "Konverterar AK KPist. till den moderna \"Rassvet\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
+L["uplp_ak_smg_rec_bizon.printname"] = "\"Zakat-3\" 64-Patronersmagasin"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Zakat-3\""
+L["uplp_ak_smg_rec_bizon.description"] = "Konverterar AK KPist. till \"Zakat-3\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
 
 L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Zakat\" 64-Patronersmagasin"
 L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Zakat\""
