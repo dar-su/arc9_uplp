@@ -716,6 +716,7 @@ SWEP.AttachmentElements = {
 	
     ["xstock"] = { AttPosMods = {
 	[8] = { Pos = Vector(-0.88, 1.125, 19.5) },
+	[9] = { Pos = Vector(0, 1.85, 8) },
 	[12] = { Pos = Vector(0.63, 1.3, 16.1) },
 	}},
 
@@ -828,10 +829,10 @@ SWEP.Attachments = {
         Pos = Vector(0, 2.5, 10.5),
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(0, 0, -1),
-		ExcludeElements = {"uplp_no_grip", "uplp_awp_bp", "xstock"},
-        RejectAttachments = {
-		["uplp_grip_half"] = true,
-		},
+		ExcludeElements = {"uplp_no_grip", "uplp_awp_bp"},
+        -- RejectAttachments = {
+		-- ["uplp_grip_half"] = true,
+		-- },
     },
 
     -- Cosmetic shit
