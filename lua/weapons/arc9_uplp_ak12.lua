@@ -30,7 +30,7 @@ SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, Cylowalker",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
-    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "???",
+    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
@@ -39,6 +39,7 @@ SWEP.StandardPresets = {
     "[Model 19 5.56]XQAAAQCsAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobDJpHotQzVQehcBMCWhNdx96TAmcmto+v4FJRi+ubTJNvrhEy6RnMoWJBb7d4oILYG5LbM1+SuL1qN76dsI2t94YBfuwlZHTADOHzcCd2TMLQxriYLao9hXQcVLDB0VSjCtepUKBmzDXTBysIzAHp1vYh8XRbJSJAwA=",
     "[Model 16 7.62]XQAAAQDCAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobBTL67we2C0+GXIhpN04c2UJwTViYY74hALgHlRhySwyefKHXNA1U3jKE5iQV+/YMoifhUtkakj0o4rjo6mGzx8BigS00IO0M/R2GNLPi/VHjN2SaGtqGfVnIboLnuxQ7E+Erna/tbDOsoVI95hCeX/+BImR4QknNE7k5K81ElNDueA=",
     "[HPK M16 5.45]XQAAAQDoAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIprz2KkqeaUAj/0+ounm+xwAY1EaSiQogmEvvjFHFtXz76yf8kI4qHwrqtyTLdXcskJZ46zjJiukztTFku60IF3jst3kH4ODxDdknYJzECoGLN6+tVgXbe5qVhg/X9NQqBF/xQAhgmX0eX4Z3j1msZYtUrcwTS6fkmFta2nDfmCTwlrSB0hYB5L398xOmvgZGq6TPz+D8=",
+    "[Model 308]XQAAAQCUAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8guBkQIobDJpHotQy47YY//DGsiwR2cey8kaz4+dqbIQpVuN6YsXYe0lJMzcKqWkKGVl5jigTjLpetCvOR+6nGjg39JWv7Hve0BxnOQ++IPZhBn25aA+6hCwbMpav0I2kkMd4VawXXbTyXS19pjDJUCQIHMgT8Mg",
 }
 
 SWEP.DefaultBodygroups = "2267g1b021000000000000" -- Might as well prepare for the future

@@ -399,6 +399,7 @@ ATT.ReloadTimeMult = 0.95
 /// Negatives
 ATT.RecoilMult = 1.15
 ATT.RecoilAutoControlMult = 0.5
+ATT.DamageMaxMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_molot_bolt_light")
 
