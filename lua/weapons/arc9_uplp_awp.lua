@@ -371,6 +371,7 @@ SWEP.Animations = {
         Source = "cycle",
         -- ShellEjectAt = 5,
 		MinProgress = 0.95,
+        Mult = 1.15,
         EventTable = {
             -- { s = reloadsound .. "reload_boltopen_v2.ogg", t = 5 / 30, c = ca, v = 0.8 },
             -- { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, c = ca, v = 0.8 },
@@ -438,8 +439,9 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
+        Mult = 1.1,
 		MinProgress = 0.6,
-        DropMagAt = 0.35,
+        DropMagAt = 0.35*1.1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -461,7 +463,8 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.85,
-        DropMagAt = 1,
+        Mult = 1.1,
+        DropMagAt = 1*1.1,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},
@@ -491,7 +494,8 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
 		MinProgress = 0.65,
-        DropMagAt = 0.35,
+        DropMagAt = 0.35*1.1,
+        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -513,7 +517,8 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
 		MinProgress = 0.85,
-        DropMagAt = 1,
+        DropMagAt = 1*1.1,
+        Mult = 1.1,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},

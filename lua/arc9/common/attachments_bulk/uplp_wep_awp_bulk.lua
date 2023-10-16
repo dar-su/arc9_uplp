@@ -172,6 +172,7 @@ ATT.ActivateElements = {"uplp_awp_mag_awp"}
 ATT.DamageMaxOverride = 90
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.1
+ATT.CycleTimeMult = 0.8
 
 /// Negatives
 ATT.DamageMinOverride = 75
@@ -206,6 +207,7 @@ ATT.ClipSizeOverride = 8
 ATT.DamageMaxOverride = 90
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.1
+ATT.CycleTimeMult = 0.8
 
 /// Negatives
 ATT.DamageMinOverride = 75
@@ -248,6 +250,7 @@ ATT.DamageMinMult = 1.15
 /// Negatives
 ATT.RecoilMult = 1.25
 ATT.RecoilAutoControlMult = 0.75
+ATT.CycleTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")
 
