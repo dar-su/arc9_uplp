@@ -564,8 +564,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.825, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -584,8 +584,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.825, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -604,8 +604,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            { t = 0.02, lhik = 0 },
+            { t = 0.95, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -624,8 +624,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            { t = 0.02, lhik = 0 },
+            { t = 0.95, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -688,7 +688,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if swep:GetElements()["xstock"] and (anim == "inspect" or anim == "inspect_empty") then
+    if swep:GetElements()["xstock"] and (anim == "inspect" or anim == "inspect_empty") and swep:GetValue("LHIK_Priority") < 6 then
         return anim .. "_xstock"
     end
 
