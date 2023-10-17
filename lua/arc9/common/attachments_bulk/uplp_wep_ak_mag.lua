@@ -501,8 +501,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
 local ATT = {}
 
-ATT.PrintName = "60-Round 5.45 Quadstacked"
-ATT.CompactName = "60R 5.45 (Q)"
+ATT.PrintName = "52-Round 5.45 Quadstacked"
+ATT.CompactName = "52R 5.45 (Q)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54560.png", "mips smooth")
@@ -544,7 +544,7 @@ ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-ATT.ClipSizeOverride = 60
+ATT.ClipSizeOverride = 52
 
 /// Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
@@ -560,8 +560,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_60")
 
 local ATT = {}
 
-ATT.PrintName = "75-Round 5.45x39mm Drum"
-ATT.CompactName = "75R 5.45 (D)"
+ATT.PrintName = "85-Round 5.45x39mm Drum"
+ATT.CompactName = "85R 5.45 (D)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54595.png", "mips smooth")
@@ -585,7 +585,6 @@ ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
-ATT.DropMagazineTime = 0.85
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     if anim == "inspect" then
@@ -609,7 +608,7 @@ ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-ATT.ClipSizeOverride = 75
+ATT.ClipSizeOverride = 85
 
 /// Negatives
 ATT.ReloadTimeMult = 1.1

@@ -826,13 +826,13 @@ L["uplp_ak_mag_545_45.printname"] = "45-Round 5.45x39mm (Bakelite)"
 L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
 L["uplp_ak_mag_545_45.description"] = "45-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "60-Round 5.45x39mm Quadstacked"
-L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "60-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\n\n\nThicc boi"
+L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45x39mm Quadstacked"
+L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizontally to hold more ammunition. Do not load more than 52 rounds please!" .. loaded545 .. "\n\n\n\nThicc boi"
 
-L["uplp_ak_mag_545_drum.printname"] = "75-Round 5.45x39mm HPK M16 Drum"
-L["uplp_ak_mag_545_drum.compactname"] = "75R 5.45 D"
-L["uplp_ak_mag_545_drum.description"] = "75-round cylindrical drum magazine from the HPK M16." .. loaded545
+L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45x39mm HPK M16 Drum"
+L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"
+L["uplp_ak_mag_545_drum.description"] = "85-round cylindrical drum magazine from the HPK M16." .. loaded545
 
 /// 5.56x45mm NATO
 local loaded556 = loaded .. "Loaded with " .. col.b .. "5.56x45mm" .. col.e .. " used by the AK M10 5.56." .. changeammo.smg1
