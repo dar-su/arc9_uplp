@@ -1122,7 +1122,7 @@ SWEP.AttachmentElements = {
 	[5] = { Pos = Vector(0, 2.6, 12), },
 	[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
 	[12] = { Pos = Vector(0, -0.1, 15), },
-	[13] = { Pos = Vector(0.77, 1.96, 14), },
+	[13] = { Pos = Vector(0.71, 1.96, 14), },
 	}},
     ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {
 	[5] = { Pos = Vector(0, 2.6, 12), },
@@ -1134,7 +1134,7 @@ SWEP.AttachmentElements = {
 	[5] = { Pos = Vector(0, 2.6, 12), },
 	[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
 	[12] = { Pos = Vector(0, -0.1, 15), },
-	[13] = { Pos = Vector(0.575, 1.96, 20), },
+	[13] = { Pos = Vector(0.55, 1.96, 20.2), },
 	}},
 
     --CALIBERS
@@ -1319,7 +1319,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
-        Pos = Vector(0.77, 1.96, 14),
+        Pos = Vector(0.77, 1.96, 13.75),
         Ang = Angle(90, 0, -90),
     },
 

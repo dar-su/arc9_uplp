@@ -191,7 +191,8 @@ SWEP.IronSights = {
      ViewModelFOV = 70,
 }
 
-SWEP.PeekPos = Vector(-1, -1, -3)
+SWEP.PeekPos = Vector(-1, 2, -3)
+SWEP.PeekAng = Angle(-0.3, 0.1, -40)
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(15, 30, 2.5)
