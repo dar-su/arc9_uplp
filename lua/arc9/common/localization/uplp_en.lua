@@ -1274,7 +1274,7 @@ L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
 
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Tactical Receiver"
 L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory."
+L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory.\n\nPlease dm @d.arsu if you know author of this model or you know what irl lower+upper this meant to resemble. I don't know how i got this model in my project!"
 
 L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
 L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
