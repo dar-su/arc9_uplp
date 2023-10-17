@@ -819,13 +819,13 @@ L["uplp_ak_mag_545_45.printname"] = "45-Patroner 5,45x39mm (Bakelite)"
 L["uplp_ak_mag_545_45.compactname"] = "45P 5,45 (B)"
 L["uplp_ak_mag_545_45.description"] = "45-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "60-Patroner 5,45x39mm Quadstack"
-L["uplp_ak_mag_545_60.compactname"] = "60P 5,45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "60-patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\n\n\nTjock jäkel"
+L["uplp_ak_mag_545_60.printname"] = "52-Patroner 5,45x39mm Quadstack"
+L["uplp_ak_mag_545_60.compactname"] = "52P 5,45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "52-patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\nTjock jäkel. Snälla Ladda inte mer än 52 patroner!"
 
-L["uplp_ak_mag_545_drum.printname"] = "75-Patroner 5,45x39mm HPK M16 Trumma"
-L["uplp_ak_mag_545_drum.compactname"] = "75P 5,45 T"
-L["uplp_ak_mag_545_drum.description"] = "75-patroners cylindriskt trummagasin från HPK M16." .. loaded545
+L["uplp_ak_mag_545_drum.printname"] = "85-Patroner 5,45x39mm HPK M16 Trumma"
+L["uplp_ak_mag_545_drum.compactname"] = "85P 5,45 T"
+L["uplp_ak_mag_545_drum.description"] = "85-patroners cylindriskt trummagasin från HPK M16." .. loaded545
 
 /// 5,56x45mm NATO
 local loaded556 = loaded .. "Laddat med " .. col.b .. "5,56x45mm" .. col.e .. " som används av AK M10 5,56." .. changeammo.smg1

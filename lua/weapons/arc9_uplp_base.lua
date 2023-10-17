@@ -59,3 +59,5 @@ SWEP.SightMidPoint = {
 SWEP.Bipod = false
 
 SWEP.Crosshair = true
+
+SWEP.MagnificationZoomSpeed = 2.5

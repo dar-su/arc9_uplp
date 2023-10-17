@@ -163,7 +163,7 @@ ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
-ATT.ModelOffset = Vector(-15.5, -2.3, 3)
+ATT.ModelOffset = Vector(-17, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
@@ -196,7 +196,7 @@ ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
-ATT.ModelOffset = Vector(-15.5, -2.3, 3)
+ATT.ModelOffset = Vector(-17, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 

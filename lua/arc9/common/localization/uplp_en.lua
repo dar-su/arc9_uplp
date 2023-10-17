@@ -828,7 +828,7 @@ L["uplp_ak_mag_545_45.description"] = "45-round magazine out of AG-4S molding co
 
 L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45x39mm Quadstacked"
 L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizontally to hold more ammunition. Do not load more than 52 rounds please!" .. loaded545 .. "\n\n\n\nThicc boi"
+L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\nThicc boi. Please don't load more than 52 rounds!"
 
 L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45x39mm HPK M16 Drum"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"

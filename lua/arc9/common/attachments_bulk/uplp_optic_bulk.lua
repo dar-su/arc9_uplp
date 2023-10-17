@@ -473,14 +473,14 @@ ATT.Sights = {
         RTScopeFOV = 57/8,
         Blur = false,
     },
-    {
-        Pos = Vector(0, 10, -1.15),
-        Ang = Angle(0, -0, 0),
-        Magnification = 1.25,
-        ViewModelFOV = 20,
-        RTScopeFOV = 57/16,
-        Blur = false,
-    },
+    -- {
+        -- Pos = Vector(0, 10, -1.15),
+        -- Ang = Angle(0, -0, 0),
+        -- Magnification = 1.25,
+        -- ViewModelFOV = 20,
+        -- RTScopeFOV = 57/16,
+        -- Blur = false,
+    -- },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -490,7 +490,11 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/8
+-- ATT.RTScopeFOV = 57/8
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 4
+ATT.RTScopeFOVMin = 57/8
+ATT.RTScopeFOVMax = 57/16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -587,14 +591,14 @@ ATT.Sights = {
         RTScopeFOV = 57/8,
         Blur = false,
     },
-    {
-        Pos = Vector(0, 10, -1.15),
-        Ang = Angle(0, -0, 0),
-        Magnification = 1.25,
-        ViewModelFOV = 20,
-        RTScopeFOV = 57/16,
-        Blur = false,
-    },
+    -- {
+        -- Pos = Vector(0, 10, -1.15),
+        -- Ang = Angle(0, -0, 0),
+        -- Magnification = 1.25,
+        -- ViewModelFOV = 20,
+        -- RTScopeFOV = 57/16,
+        -- Blur = false,
+    -- },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -603,7 +607,11 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/12
+-- ATT.RTScopeFOV = 57/12
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 4
+ATT.RTScopeFOVMin = 57/8
+ATT.RTScopeFOVMax = 57/16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1133,15 +1141,15 @@ ATT.Sights = {
         Blur = false,
         Reticle = R0
     },
-    {
-        Pos = Vector(0, 12, -1.49),
-        Ang = Angle(0, -0, 0),
-        Magnification = 1.25,
-        ViewModelFOV = 20,
-        RTScopeFOV = 57/10,
-        Blur = false,
-        Reticle = R1
-    },
+    -- {
+        -- Pos = Vector(0, 12, -1.49),
+        -- Ang = Angle(0, -0, 0),
+        -- Magnification = 1.25,
+        -- ViewModelFOV = 20,
+        -- RTScopeFOV = 57/10,
+        -- Blur = false,
+        -- Reticle = R1
+    -- },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -1151,7 +1159,11 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/6
+-- ATT.RTScopeFOV = 57/6
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 1
+ATT.RTScopeFOVMin = 57/6
+ATT.RTScopeFOVMax = 57/10
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1193,6 +1205,7 @@ ATT.FoldSights = true
 
 local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
+
 ATT.Sights = {
     {
         Pos = Vector(0, 10, -1.69),
@@ -1201,17 +1214,17 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57/6,
         Blur = false,
-        Reticle = R1
+        -- Reticle = R1
     },
-    {
-        Pos = Vector(0, 10, -1.69),
-        Ang = Angle(0, -0, 0),
-        Magnification = 1.25,
-        ViewModelFOV = 20,
-        RTScopeFOV = 40,
-        Blur = false,
-        Reticle = R0
-    },
+    -- {
+        -- Pos = Vector(0, 10, -1.69),
+        -- Ang = Angle(0, -0, 0),
+        -- Magnification = 1.25,
+        -- ViewModelFOV = 20,
+        -- RTScopeFOV = 40,
+        -- Blur = false,
+        -- Reticle = R0
+    -- },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -1226,8 +1239,11 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/6
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 1
+ATT.RTScopeFOVMin = 40
+ATT.RTScopeFOVMax = 57/6
+ATT.RTScopeReticle = R0
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
