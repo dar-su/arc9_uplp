@@ -660,6 +660,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0, -1),
         Ang = Angle(90, 90, 180),
+		CosmeticOnly = true,
     },
 
 
