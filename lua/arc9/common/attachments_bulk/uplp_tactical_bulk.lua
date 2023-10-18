@@ -49,7 +49,7 @@ ATT.CustomCons = {
 
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.Category = "uplp_tac"
+ATT.Category = {"uplp_tac", "uplp_tac_top"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)
@@ -188,7 +188,7 @@ ATT.ToggleStats = {
     }
 }
 
-ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
+ATT.Category = {"uplp_tac", "uplp_tac_top", "uplp_tac_pistol"}
 -- ATT.Category = "uplp_tac_pistol"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
@@ -301,7 +301,7 @@ ATT.CustomCons = {
 
 ATT.SprintToFireTimeMult = 1.1
 
-ATT.Category = "uplp_tac"
+ATT.Category = {"uplp_tac", "uplp_tac_top"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, 0)

@@ -108,7 +108,7 @@ ATT.PrintName = "406mm Alternative Barrel"
 ATT.CompactName = "406mm Alt."
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "16alt.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

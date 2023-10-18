@@ -1229,7 +1229,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_fs"},
         DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, -0.2, 12.25),
+        Pos = Vector(0.045, -0.2, 12.8),
         Ang = Angle(90, 90, 180),
 		ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
     },

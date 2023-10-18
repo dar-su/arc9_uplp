@@ -14,7 +14,7 @@ ATT.PrintName = "Gasblock with built-in Front Sight"
 ATT.CompactName = "GB FS"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "m4.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
 
@@ -30,6 +30,32 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16")
+
+///////////////////////////////////////      uplp_ar15_gasblock_m16_nosling
+
+
+ATT = {}
+
+ATT.PrintName = "Gasblock with built-in Front Sight without sling"
+ATT.CompactName = "GB FS 16"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock_sight"}
+
+ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocompact_rs"}
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
+ATT.ModelBodygroups = "3"
+-- ATT.ModelOffset = Vector(0, 0, 0)
+
+-- ATT.SortOrder = 0
+ATT.Category = "uplp_ar15_gasblock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16_nosling")
 
 
 ///////////////////////////////////////      uplp_ar15_gasblock_m16rail

@@ -96,6 +96,16 @@ ATT.ModelOffset = Vector(2, 0.15, -0.8)
 ATT.ActivateElements = {"uplp_ar15_handguard_long", "uplp_ar15_gasblock_nocompact", "uplp_no_tactical"}
 ATT.RequireElements = {"uplp_ar15_barrel_long"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac_top"},
+        Pos = Vector(-9, 0, -1),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
 
 
@@ -283,6 +293,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1.5),
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac_top"},
+        Pos = Vector(-8.12, 0, -1),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0.5),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
@@ -319,6 +336,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(0, 0, -1.5),
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac_top"},
+        Pos = Vector(-8.12, 0, -1),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0.5),
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
@@ -345,6 +369,16 @@ ATT.ActivateElements = {"uplp_no_tactical"}
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac_top"},
+        Pos = Vector(-2.65, 0, -1),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 
 
@@ -368,6 +402,16 @@ ATT.ActivateElements = {"uplp_no_tactical"}
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac_top"},
+        Pos = Vector(-2.65, 0, -1),
+        Ang = Angle(0, 0, 0),
+		Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort_red")
 
