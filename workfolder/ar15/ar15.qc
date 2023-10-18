@@ -5,9 +5,11 @@ $bodygroup "ar15" { // 0
 	studio "reciever_m16.smd"
 	studio "reciever_45acp.smd"
 	studio "reciever_modern.smd"
-	studio "stm9_reciever.smd"
+	studio "reciever_9.smd"
 	
 	studio "reciever_modern_black.smd"
+	studio "stm9_reciever.smd"
+	studio "stm9_reciever_black.smd"
 }   
 $bodygroup "addition" { // 1
 	blank
