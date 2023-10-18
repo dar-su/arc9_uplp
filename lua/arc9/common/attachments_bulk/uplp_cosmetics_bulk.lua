@@ -7,7 +7,7 @@ local iconfolder = "entities/uplp_attachements/"
 ATT = {}
 
 ATT.PrintName = "Poly Paw"
-ATT.CompactName = "Poly Paw"
+ATT.CompactName = "Paw"
 ATT.Description = [[pwa
 What this doing in this addon
 Probably an icon of this addon
@@ -28,8 +28,8 @@ ARC9.LoadAttachment(ATT, "uplp_sticker_paw")
 
 ATT = {}
 
-ATT.PrintName = "Poly Paw (Gray)"
-ATT.CompactName = "Poly Paw (G)"
+ATT.PrintName = "Poly Paw (Holo Gray)"
+ATT.CompactName = "Paw (G)"
 ATT.Description = [[pwa
 What this doing in this addon
 Probably an icon of this addon
@@ -51,7 +51,7 @@ ARC9.LoadAttachment(ATT, "uplp_sticker_pawgray")
 ATT = {}
 
 ATT.PrintName = "Poly Paw"
-ATT.CompactName = "Poly Paw"
+ATT.CompactName = "Paw"
 ATT.Icon = Material(iconfolder .. "pawcharm.png", "mips smooth")
 ATT.Description = [[pwa
 What this doing in this addon

@@ -534,12 +534,12 @@ L["uplp_charm_title.description"] = "Possibly a reference to the addon title.\nI
 
 ////// Stickers
 L["uplp_sticker_paw.printname"] = "Poly Paw"
-L["uplp_sticker_paw.compactname"] = "Poly Paw"
+L["uplp_sticker_paw.compactname"] = "Paw"
 L["uplp_sticker_paw.description"] = "Paw.\n\nSticker included in Poly Arms Project."
 
-L["uplp_sticker_pawgray.printname"] = "Holo Poly Paw (Gray + Holo)"
-L["uplp_sticker_pawgray.compactname"] = "Holo Paw"
-L["uplp_sticker_pawgray.description"] = "Paw but holographic and gray.\n\nSticker included in Poly Arms Project."
+L["uplp_sticker_pawgray.printname"] = "Poly Paw (Holo Gray)"
+L["uplp_sticker_pawgray.compactname"] = "Paw (Holo)"
+L["uplp_sticker_pawgray.description"] = "Shiny paw.\n\nSticker included in Poly Arms Project."
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments

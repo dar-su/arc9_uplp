@@ -246,6 +246,8 @@ SWEP.ShootSoundSilenced = {
     pathUT .. "ar57/fire-sup-06.ogg",
 }
 
+SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
+
 SWEP.DistantShootSound = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
@@ -275,6 +277,8 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-09.ogg",
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
+
+SWEP.DistantShootSoundSilencedIndoor = SWEP.DistantShootSoundSilenced
 
 SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_1.ogg",

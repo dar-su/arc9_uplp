@@ -534,6 +534,10 @@ L["uplp_sticker_paw.printname"] = "Poly Paw"
 L["uplp_sticker_paw.compactname"] = "Poly Paw"
 L["uplp_sticker_paw.description"] = "Tass.\n\nKlistermärke inkluderad i Poly Arms Project."
 
+L["uplp_sticker_pawgray.printname"] = "Poly Paw (Holo Grå)"
+L["uplp_sticker_pawgray.compactname"] = "Paw (Holo)"
+L["uplp_sticker_pawgray.description"] = "Glänsande tass.\n\nKlistermärke inkluderad i Poly Arms Project."
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
