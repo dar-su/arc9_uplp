@@ -1075,6 +1075,10 @@ L["uplp_ar15_gasblock_m16.printname"] = "Gas Block with built-in Front Sight"
 L["uplp_ar15_gasblock_m16.compactname"] = "GB FS"
 L["uplp_ar15_gasblock_m16.description"] = "Gas block with built-in M16/M4 front sight."
 
+L["uplp_ar15_gasblock_m16_nosling.printname"] = "Gas Block with built-in Front Sight (No Sling)"
+L["uplp_ar15_gasblock_m16_nosling.compactname"] = "GB FS (NS)"
+L["uplp_ar15_gasblock_m16_nosling.description"] = "Gas block with built-in M16/M4 front sight. Not including the bayonet lug or front sling."
+
 L["uplp_ar15_gasblock_m16rail.printname"] = "Gas Block with built-in Front Sight and Rail Assembly"
 L["uplp_ar15_gasblock_m16rail.compactname"] = "GB FS (R)"
 L["uplp_ar15_gasblock_m16rail.description"] = "Gas block with built-in M16/M4 front sight. Comes with additional rails for mounting accessories."

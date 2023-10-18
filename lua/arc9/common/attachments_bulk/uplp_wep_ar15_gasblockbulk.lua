@@ -36,8 +36,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16")
 
 ATT = {}
 
-ATT.PrintName = "Gasblock with built-in Front Sight without sling"
-ATT.CompactName = "GB FS 16"
+ATT.PrintName = "Gasblock with built-in Front Sight (No Sling)"
+ATT.CompactName = "GB FS (NS)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "16.png", "mips smooth")

@@ -983,7 +983,6 @@ L["uplp_ak_smg_rec_bizon_old.description"] = "Konverterar AK KPist. till \"Zakat
 ////// Barrels
 L["uplp_ak_smg_brl_long.printname"] = "400mm Pipa"
 L["uplp_ak_smg_brl_long.compactname"] = "400mm"
-L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"OIZK-9\")."
 L["uplp_ak_smg_brl_long.description"] = "Lång 400mm pipa till AK Kpist. (\"OIZK-9\")."
 
 L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Pipa"
@@ -991,8 +990,8 @@ L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
 L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425mm pipa till AK KPist. med M20-Konfigueringen."
 
 ////// Receivers
-L["uplp_ak_smg_conf_ppk20.printname"] = "AK SMG M20-Konfiguering"
-L["uplp_ak_smg_conf_ppk20.compactname"] = "PPK-20"
+L["uplp_ak_smg_conf_ppk20.printname"] = "AK KPist. M20-Konfiguering"
+L["uplp_ak_smg_conf_ppk20.compactname"] = "AK M20"
 L["uplp_ak_smg_conf_ppk20.description"] = "Konverterar AK KPist. till \"M20\"-konfigueringen.\nModern låda med stöd för AK M23 pistolgrepp, framgrepp och riktmedel."
 
 //////////////////// AR15
@@ -1072,6 +1071,10 @@ L["uplp_ar15_fs_utg.description"] = "Alternativa flip-up-stolpkorn för användn
 L["uplp_ar15_gasblock_m16.printname"] = "Gasregulator med inbyggt Stolpkorn"
 L["uplp_ar15_gasblock_m16.compactname"] = "GR FK"
 L["uplp_ar15_gasblock_m16.description"] = "Gasregulator med inbyggt M16/M4-stolpkorn."
+
+L["uplp_ar15_gasblock_m16_nosling.printname"] = "Gasregulator med inbyggt Stolpkorn (Utan Hake)"
+L["uplp_ar15_gasblock_m16_nosling.compactname"] = "GB FK (UH)"
+L["uplp_ar15_gasblock_m16_nosling.description"] = "Gasregulator med inbyggt M16/M4-stolpkorn. Inkluderar inte stöd för bajonett eller framhaken."
 
 L["uplp_ar15_gasblock_m16rail.printname"] = "Gasregulator med inbyggt Stolpkorn och Skenafunktionalitet"
 L["uplp_ar15_gasblock_m16rail.compactname"] = "GR FK (S)"

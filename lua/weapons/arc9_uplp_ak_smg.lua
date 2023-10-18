@@ -838,7 +838,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
 		Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
-		ExcludeElements = {"uplp_ak_smg_brl_ppk20_long", "uplp_ak_smg_config"},
+		ExcludeElements = {"uplp_ak_smg_brl_ppk20_long"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
