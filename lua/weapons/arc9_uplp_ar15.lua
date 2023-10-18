@@ -992,6 +992,17 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if eles["uplp_ar15_gasblock"] then
 		mdl:SetBodygroup(8, 0)
 	end
+	
+	local smgrec = eles["uplp_ar15_reciever_modern_smg"]
+	local smgrecb = eles["uplp_ar15_reciever_modern_black_smg"]
+	
+    if eles["uplp_ar15_reciever_stm9"] then
+		if smgrec then
+			mdl:SetBodygroup(0, 6)
+		elseif smgrecb then
+			mdl:SetBodygroup(0, 7)
+		end
+	end
 end
 
 -- SWEP.Hook_ModifyElements = function(self, eles)

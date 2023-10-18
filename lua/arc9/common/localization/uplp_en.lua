@@ -129,6 +129,7 @@ L["uplp_category_grip"] = "Foregrip"
 L["uplp_category_handguard"] = "Handguard"
 L["uplp_category_internals"] = "Internals"
 L["uplp_category_magazine"] = "Magazine"
+L["uplp_category_magwell"] = "Magwell"
 L["uplp_category_muzzle"] = "Muzzle"
 L["uplp_category_optic"] = "Optic"
 L["uplp_category_pistol_grip"] = "Pistol Grip"
@@ -1279,6 +1280,14 @@ L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver bui
 L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
 L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory." .. pitchblack
+
+L["uplp_ar15_reciever_modern_smg.printname"] = "Hoki Armory Tactical Receiver"
+L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki"
+L["uplp_ar15_reciever_modern_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9x19mm magazines."
+
+L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
+L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
+L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9x19mm magazines." .. pitchblack
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"

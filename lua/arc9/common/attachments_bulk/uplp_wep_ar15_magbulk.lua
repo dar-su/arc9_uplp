@@ -180,12 +180,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 /// Positives
 
 /// Positives
-ATT.ReloadTimeMult = 0.97
+ATT.ReloadTimeMult = 0.95
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.15
-ATT.DeployTimeMult = 1.15
+-- ATT.SprintToFireTimeMult = 1.15
+-- ATT.DeployTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stm9_magwell")
 
@@ -247,10 +247,18 @@ ATT.RangeMinMult = 0.65
 
 ATT.Attachments = {
     {
-        PrintName = "Magwell",
+        PrintName = ARC9:GetPhrase("uplp_category_receiver"),
+        Category = "uplp_ar15_reciever_smg",
+        DefaultIcon = Material("entities/uplp_attachements/def/rec.png", "mips smooth"),
+        Pos = Vector(0.75, 0, -0.2),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_magwell"),
         Category = "uplp_stm9_magwell",
         Pos = Vector(0, 0, 3),
         Ang = Angle(0, 0, 0),
+		RequireElements = {"uplp_ar15_rec_smg"},
     },
 }
 
@@ -314,10 +322,18 @@ ATT.RangeMinMult = 0.65
 
 ATT.Attachments = {
     {
-        PrintName = "Magwell",
+        PrintName = ARC9:GetPhrase("uplp_category_receiver"),
+        Category = "uplp_ar15_reciever_smg",
+        DefaultIcon = Material("entities/uplp_attachements/def/rec.png", "mips smooth"),
+        Pos = Vector(0.75, 0, -0.2),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_magwell"),
         Category = "uplp_stm9_magwell",
         Pos = Vector(0, 0, 3),
         Ang = Angle(0, 0, 0),
+		RequireElements = {"uplp_ar15_rec_smg"},
     },
 }
 
@@ -385,10 +401,18 @@ ATT.CustomCons = {
 
 ATT.Attachments = {
     {
-        PrintName = "Magwell",
+        PrintName = ARC9:GetPhrase("uplp_category_receiver"),
+        Category = "uplp_ar15_reciever_smg",
+        DefaultIcon = Material("entities/uplp_attachements/def/rec.png", "mips smooth"),
+        Pos = Vector(0.75, 0, -0.2),
+        Ang = Angle(0, 0, 0),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_magwell"),
         Category = "uplp_stm9_magwell",
         Pos = Vector(0, 0, 3),
         Ang = Angle(0, 0, 0),
+		RequireElements = {"uplp_ar15_rec_smg"},
     },
 }
 

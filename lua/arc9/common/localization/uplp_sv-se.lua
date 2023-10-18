@@ -129,6 +129,7 @@ L["uplp_category_grip"] = "Framgrepp"
 L["uplp_category_handguard"] = "Handskydd"
 L["uplp_category_internals"] = "Interndelar"
 L["uplp_category_magazine"] = "Magasin"
+L["uplp_category_magwell"] = "Magasinbrunn"
 L["uplp_category_muzzle"] = "Mynning"
 L["uplp_category_optic"] = "Riktmedel"
 L["uplp_category_pistol_grip"] = "Pistolgrepp"
@@ -1268,11 +1269,19 @@ L["uplp_ar15_reciever_m4.description"] = "Standard militär grad låda."
 
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Taktisk Låda"
 L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern.description"] = "Taktisk lättvikt låda byggd för hastighet gjort av Hoki Armory."
+L["uplp_ar15_reciever_modern.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory."
 
 L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Taktisk Låda (Pitch Black)"
 L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
-L["uplp_ar15_reciever_modern_black.description"] = "Taktisk lättvikt låda byggd för hastighet gjort av Hoki Armory." .. pitchblack
+L["uplp_ar15_reciever_modern_black.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory." .. pitchblack
+
+L["uplp_ar15_reciever_modern_smg.printname"] = "Hoki Armory Taktisk Låda"
+L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki"
+L["uplp_ar15_reciever_modern_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9x19mm magasin."
+
+L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Taktisk Låda (Pitch Black)"
+L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
+L["uplp_ar15_reciever_modern_black_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9x19mm magasin." .. pitchblack
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"
