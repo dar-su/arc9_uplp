@@ -976,10 +976,10 @@ SWEP.Attachments = {
     },
 
 
-    {
+    { -- vityaz
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/vityaz_1.mdl",
-        ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
+        ExcludeElements = {"uplp_ak_smg_conf_ppk20", "uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.3, 4.2),
@@ -988,13 +988,14 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/vityaz_2.mdl",
-        ExcludeElements = {"uplp_ak_nmount", "uplp_ak_smg_conf_ppk20"},
+        ExcludeElements = {"uplp_ak_nmount", "uplp_ak_smg_conf_ppk20", "uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, 0.5),
         Ang = Angle(90, 90, 180),
     },
-    {
+
+    { -- ppk20
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/ppk20_1.mdl",
         RequireElements = {"uplp_ak_smg_conf_ppk20"},
@@ -1007,6 +1008,25 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/ppk20_2.mdl",
         RequireElements = {"uplp_ak_smg_conf_ppk20"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.8, 0.5),
+        Ang = Angle(90, 90, 180),
+    },
+
+    { -- bizongla
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/bizon_1.mdl",
+        RequireElements = {"uplp_ak_smg_rec_bizon"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.3, 4.2),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/bizon_2.mdl",
+        RequireElements = {"uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, 0.5),
