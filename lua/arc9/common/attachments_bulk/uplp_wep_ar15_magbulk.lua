@@ -449,8 +449,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_hk")
 
 ATT = {}
 
-ATT.PrintName = "10-Round 5.56x45mm (PMAG)"
-ATT.CompactName = "10R 5.56 (PMAG)"
+ATT.PrintName = "10-Round 5.56x45mm (SPMAG)"
+ATT.CompactName = "10R 5.56 (SPMAG)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "p10.png", "mips smooth")
@@ -487,8 +487,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag10")
 
 ATT = {}
 
-ATT.PrintName = "20-Round 5.56x45mm (PMAG)"
-ATT.CompactName = "20R 5.56 (PMAG)"
+ATT.PrintName = "20-Round 5.56x45mm (SPMAG)"
+ATT.CompactName = "20R 5.56 (SPMAG)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "p20.png", "mips smooth")
@@ -525,8 +525,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag20")
 
 ATT = {}
 
-ATT.PrintName = "30-Round 5.56x45mm (PMAG)"
-ATT.CompactName = "30R 5.56 (PMAG)"
+ATT.PrintName = "30-Round 5.56x45mm (SPMAG)"
+ATT.CompactName = "30R 5.56 (SPMAG)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "p30.png", "mips smooth")

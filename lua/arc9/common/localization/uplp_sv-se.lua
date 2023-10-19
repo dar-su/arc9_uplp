@@ -812,9 +812,9 @@ L["uplp_ak_mag_545_30_bak.printname"] = "30-Patroner 5,45x39mm (Bakelit)"
 L["uplp_ak_mag_545_30_bak.compactname"] = "30P 5,45 (B)"
 L["uplp_ak_mag_545_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45x39mm (Wildcat X)"
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45x39mm (SynPoly)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30P 5,45 (PM)"
-L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners PMAG tillverkad av Wildcat X." .. loaded545
+L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners PMAG tillverkad av SynPoly." .. loaded545
 
 L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45x39mm (M23-Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
@@ -839,9 +839,9 @@ L["uplp_ak_mag_556_30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30P 5,56 (P)"
 L["uplp_ak_mag_556_30.description"] = "30-patronersmagasin tillverkade av polymer." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30-Patroner 5,56x45mm (Wildcat X)"
-L["uplp_ak_mag_556_30_pmag.compactname"] = "30P 5,56 (PM)"
-L["uplp_ak_mag_556_30_pmag.description"] = "30-patroners PMAG tillverkad av Wildcat X." .. loaded556
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Patroner 5,56x45mm (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.compactname"] = "30P 5,56 (SP)"
+L["uplp_ak_mag_556_30_pmag.description"] = "30-patroners SPMAG tillverkad av SynPoly." .. loaded556
 
 L["uplp_ak_mag_556_30_12.printname"] = "30-Patroner 5,56x45mm (M23-Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30P 5,56 (M23)"
@@ -1202,19 +1202,19 @@ L["uplp_ar15_mag_hk.description"] = "30-patronersmagasin från en anpassad AR-15
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Patroner 5,56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10P Poly"
-L["uplp_ar15_mag_pmag10.description"] = "10-patronersmagasin tillverkade av polymer av Wildcat X."
+L["uplp_ar15_mag_pmag10.description"] = "10-patronersmagasin tillverkade av polymer av SynPoly."
 
 L["uplp_ar15_mag_pmag20.printname"] = "20-Patroner 5,56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20P Poly"
-L["uplp_ar15_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av Wildcat X."
+L["uplp_ar15_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av SynPoly."
 
 L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30P Poly"
-L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av Wildcat X."
+L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly."
 
 L["uplp_ar15_mag_pmag60.printname"] = "60-Patroner 5,56x45mm Trumma"
 L["uplp_ar15_mag_pmag60.compactname"] = "60P Trumma"
-L["uplp_ar15_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av Wildcat X."
+L["uplp_ar15_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20P Alum"
@@ -1859,15 +1859,15 @@ L["uplp_scar_mag_hk.description"] = "30-patronersmagasin från en anpassad AR-15
 
 L["uplp_scar_mag_pmag20.printname"] = "20-Patroner 5,56x45mm (Polymer)"
 L["uplp_scar_mag_pmag20.compactname"] = "20P Poly"
-L["uplp_scar_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av Wildcat X." .. changeammo.smg1
+L["uplp_scar_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_pmag30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30P Poly"
-L["uplp_scar_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av Wildcat X." .. changeammo.smg1
+L["uplp_scar_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_pmag60.printname"] = "60-Patroner 5,56x45mm Polymer Trumma"
 L["uplp_scar_mag_pmag60.compactname"] = "60P Trumma"
-L["uplp_scar_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av Wildcat X." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Patroner 5,56x45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30P Alum"

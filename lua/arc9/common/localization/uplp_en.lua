@@ -376,9 +376,9 @@ L["uplp_grip_rk45.compactname"] = "Zenith 45D"
 L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for most RIS-rail-compatible firearms."
 
 /////////// Bipod
-L["uplp_bipod.printname"] = "eXtreme Sports Inc. Bipod"
-L["uplp_bipod.compactname"] = "eXtreme"
-L["uplp_bipod.description"] = "A RIS-mounted bipod manufactured by eXtreme Sports Inc. that reduces recoil when deployed."
+L["uplp_bipod.printname"] = "SynPoly WildCat X Bipod"
+L["uplp_bipod.compactname"] = "WildCat X"
+L["uplp_bipod.description"] = "A RIS-mounted bipod manufactured by SynPoly that reduces recoil when deployed."
 
 /////////// Muzzle
 ////// Set 1
@@ -815,9 +815,9 @@ L["uplp_ak_mag_545_30_bak.printname"] = "30-Round 5.45x39mm (Bakelite)"
 L["uplp_ak_mag_545_30_bak.compactname"] = "30R 5.45 (B)"
 L["uplp_ak_mag_545_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45x39mm (Wildcat X)"
-L["uplp_ak_mag_545_30_pmag.compactname"] = "30R 5.45 (PM)"
-L["uplp_ak_mag_545_30_pmag.description"] = "30-round PMAG manufactured by Wildcat X." .. loaded545
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45x39mm (SynPoly)"
+L["uplp_ak_mag_545_30_pmag.compactname"] = "30R 5.45 (SP)"
+L["uplp_ak_mag_545_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded545
 
 L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45x39mm (M23 Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
@@ -842,9 +842,9 @@ L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
 L["uplp_ak_mag_556_30.description"] = "30-round magazine made out of polymer." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56x45mm (Wildcat X)"
-L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (WX)"
-L["uplp_ak_mag_556_30_pmag.description"] = "30-round PMAG manufactured by Wildcat X." .. loaded556
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56x45mm (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (SP)"
+L["uplp_ak_mag_556_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded556
 
 L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56x45mm (M23 Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (M23)"
@@ -1205,19 +1205,19 @@ L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of 
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Poly"
-L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer by Wildcat X."
+L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer by SynPoly."
 
 L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20R Poly"
-L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer by Wildcat X."
+L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer by SynPoly."
 
 L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
-L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by Wildcat X."
+L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly."
 
 L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
 L["uplp_ar15_mag_pmag60.compactname"] = "60R Drum"
-L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer by Wildcat X."
+L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer by SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
@@ -1635,7 +1635,7 @@ L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the
 -- L["uplp_awp_bp.printname"] = "Built-in AW Bipod"
 L["uplp_awp_bp.printname"] = "AW Sniper Bipod"
 L["uplp_awp_bp.compactname"] = "AW B."
-L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants.\nUses an outdated mechanism that is not stable or comfortable. Superior aftermarket models exist.\nReplaced with a traditional bipod when combined with an eXtreme Stock."
+L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants.\nUses an outdated mechanism that is not stable or comfortable. Superior aftermarket models exist.\n\nReplaced with a <color=100,255,100>SynPoly WildCat X Bipod</color> when combined with an eXtreme Stock."
 
 -- L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
 -- L["uplp_awp_hbp.compactname"] = "RM B."
@@ -1862,15 +1862,15 @@ L["uplp_scar_mag_hk.description"] = "30-round magazine from a modified AR-15 of 
 
 L["uplp_scar_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
 L["uplp_scar_mag_pmag20.compactname"] = "20R Poly"
-L["uplp_scar_mag_pmag20.description"] = "20-round magazine made out of polymer by Wildcat X." .. changeammo.smg1
+L["uplp_scar_mag_pmag20.description"] = "20-round magazine made out of polymer by SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Poly"
-L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by Wildcat X." .. changeammo.smg1
+L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
 L["uplp_scar_mag_pmag60.compactname"] = "60R Drum"
-L["uplp_scar_mag_pmag60.description"] = "60-round drum magazine made out of polymer by Wildcat X." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.description"] = "60-round drum magazine made out of polymer by SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"

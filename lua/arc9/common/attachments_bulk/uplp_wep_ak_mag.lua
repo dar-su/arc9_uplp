@@ -338,8 +338,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_bak")
 
 local ATT = {}
 
-ATT.PrintName = "30-Round 5.45x39mm (Magpul)"
-ATT.CompactName = "30R 5.45 (MP)"
+ATT.PrintName = "30-Round 5.45x39mm (SynPoly)"
+ATT.CompactName = "30R 5.45 (Poly)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "545p.png", "mips smooth")
@@ -694,7 +694,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30")
 
 local ATT = {}
 
-ATT.PrintName = "30-Round 5.56x45mm (Magpul)"
+ATT.PrintName = "30-Round 5.56x45mm (SynPoly)"
 ATT.CompactName = "30R 5.56 (MP)"
 ATT.Description = ATT.PrintName
 

@@ -625,8 +625,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
 
 ATT = {}
 
-ATT.PrintName = "20-Round 5.56x45mm (PMAG)"
-ATT.CompactName = "20R 5.56 (PMAG)"
+ATT.PrintName = "20-Round 5.56x45mm (SPMAG)"
+ATT.CompactName = "20R 5.56 (SPMAG)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 20
 
@@ -676,8 +676,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
 
 ATT = {}
 
-ATT.PrintName = "30-Round 5.56x45mm (PMAG)"
-ATT.CompactName = "30R 5.56 (PMAG)"
+ATT.PrintName = "30-Round 5.56x45mm (SPMAG)"
+ATT.CompactName = "30R 5.56 (SPMAG)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 30
 
