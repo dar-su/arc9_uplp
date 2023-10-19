@@ -94,7 +94,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     10     + (swep:Ge
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
--- ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_optic_used"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

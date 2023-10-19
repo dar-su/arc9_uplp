@@ -684,12 +684,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         if wep:GetValue("FoldSights") then mdl:SetBodygroup(7, 2) end
     end
 
-    if eles["uplp_awp_bipod"] then
-        if eles["xstock"] then mdl:SetBodygroup(5, 3) end
-
+    if eles["uplp_awp_bipod"] or eles["uplp_awp_bipod_atx"] then
         if wep:GetBipod() then
             if wep:GetEnterBipodTime() + 0.2 < CurTime() then
-                mdl:SetBodygroup(5, eles["xstock"] and 4 or 2)
+                mdl:SetBodygroup(5, eles["uplp_awp_bp_atx"] and 4 or 2)
             end
         end
     end
@@ -736,16 +734,16 @@ SWEP.AttachmentElements = {
     ["uplp_awp_stock_atx_white"] = { Bodygroups = { { 1, 10 } } },
 	
     ["xstock"] = { AttPosMods = {
-	[8] = { Pos = Vector(-0.88, 1.125, 19.5) },
-	[9] = { Pos = Vector(0, 1.85, 8) },
-	[14] = { Pos = Vector(0.63, 1.3, 16.1) },
+	[9] = { Pos = Vector(-0.88, 1.125, 19.5) },
+	[10] = { Pos = Vector(0, 1.85, 8) },
+	[15] = { Pos = Vector(0.63, 1.3, 16.1) },
 	}},
 
 	-- BARRELS
     ["uplp_awp_barrel_awp"] = { Bodygroups = { { 2, 0 } } },
     ["uplp_awp_barrel_long"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_awp_barrel_short"] = { Bodygroups = { { 2, 2 } } },
-    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = { [7] = { Pos = Vector(0, -0.3, 26.5) } }},
+    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = { [8] = { Pos = Vector(0, -0.3, 26.5) } }},
 
 	-- MAGAZINES
     ["uplp_awp_mag_awm"] = { Bodygroups={ { 4, 0 }, { 0, 0 } } },
@@ -757,7 +755,8 @@ SWEP.AttachmentElements = {
     ["uplp_awp_rs"] = { Bodygroups = { { 7, 1 } }},
 	
 	-- BIPOD
-    ["uplp_awp_bipod"] = { Bipod = true, Bodygroups = { { 5, 1 } }},
+    ["uplp_awp_bipod"] = { Bodygroups = { { 5, 1 } }},
+    ["uplp_awp_bipod_atx"] = { Bodygroups = { { 5, 3 } }},
 	
 	-- OTHER
     ["uplp_grip_used"] = { Bodygroups = { { 6, 1 } }},
@@ -812,7 +811,16 @@ SWEP.Attachments = {
         Pos = Vector(0, 2, 15.5),
         Ang = Angle(90, 90, 180),
 		Installed = "uplp_awp_bp",
-		ExcludeElements = {"uplp_grip_used"},
+		ExcludeElements = {"uplp_grip_used", "xstock"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_awp_bipod_atx"},
+        DefaultIcon = Material(defatt .. "bipod.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 3, 19.5),
+        Ang = Angle(90, 90, 180),
+		RequireElements = {"xstock"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),

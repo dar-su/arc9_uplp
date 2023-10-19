@@ -781,6 +781,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local mdl = data.model
 
 	local rs = (eles["uplp_scar_rs"] or eles["uplp_ar15_rs"])
+	local rss = eles["uplp_ar15_rs_short"]
 	local dmr = eles["uplp_scar_brl_20"] or eles["uplp_scar_brl_20_long"]
 	local opt = eles["uplp_optic_used"] or eles["uplp_ar15_fs"]
 	
@@ -789,13 +790,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 		mdl:SetBodygroup(6,4)
 	else
 		if eles["uplp_scar_brl_pdw"] then -- if PDW
-			if rs and !opt then
+			if rs and !opt and !rss then
 				mdl:SetBodygroup(6, 2)
 			else
 				mdl:SetBodygroup(6, 3)
 			end
 		else -- if anything else
-			if rs and !opt then
+			if rs and !opt and !rss then
 				mdl:SetBodygroup(6,0)
 			else
 				mdl:SetBodygroup(6,1)

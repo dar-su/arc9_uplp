@@ -1631,14 +1631,13 @@ L["uplp_awp_brl_short.compactname"] = "350mm"
 L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the AW rifle."
 
 ////// Bipods
--- L["uplp_awp_bp.printname"] = "Built-in AW Bipod"
 L["uplp_awp_bp.printname"] = "AW Sniper Bipod"
 L["uplp_awp_bp.compactname"] = "AW B."
-L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants.\nUses an outdated mechanism that is not stable or comfortable. Superior aftermarket models exist.\n\nReplaced with a <color=100,255,100>SynPoly WildCat X Bipod</color> when combined with an eXtreme Stock."
+L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants.\nUses an outdated mechanism that is not stable or comfortable. Superior aftermarket models exist."
 
--- L["uplp_awp_hbp.printname"] = "Rail-mounted Bipod"
--- L["uplp_awp_hbp.compactname"] = "RM B."
--- L["uplp_awp_hbp.description"] = "RIS-compatible bipod allowing mounting on various surfaces and objects to stabilize the weapon."
+L["uplp_awp_bp_atx.printname"] = "SynPoly WildCat X Bipod"
+L["uplp_awp_bp_atx.compactname"] = "WildCat X"
+L["uplp_awp_bp_atx.description"] = "A RIS-mounted bipod manufactured by the WildCat X division at SynPoly that reduces recoil when deployed."
 
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Round .338"

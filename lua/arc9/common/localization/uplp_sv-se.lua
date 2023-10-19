@@ -1629,14 +1629,13 @@ L["uplp_awp_brl_short.compactname"] = "350mm"
 L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret."
 
 ////// Bipods
--- L["uplp_awp_bp.printname"] = "Inbyggd AW-Benstöd"
 L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegeväret AW"
 L["uplp_awp_bp.compactname"] = "AW B."
-L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner.\nAnvänder en föråldrad mekanism som inte är stabil eller bekväm. Bättre modeller på eftermarknaden finns.\nErsätts med ett traditionellt benstöd när den kombineras med en eXtreme-Kolv."
+L["uplp_awp_bp.description"] = "Standard inbyggt benstöd som används på AW-geväret och nästan alla dess versioner.\nAnvänder en föråldrad mekanism som inte är stabil eller bekväm. Bättre modeller på eftermarknaden finns."
 
--- L["uplp_awp_hbp.printname"] = "Skenamonterat Benstöd"
--- L["uplp_awp_hbp.compactname"] = "SM B."
--- L["uplp_awp_hbp.description"] = "RIS-kompatibelt benstöd som tillåter montering på diverse ytor och föremål för att stabilisera vapnet."
+L["uplp_awp_bp_atx.printname"] = "SynPoly WildCat X Benstöd"
+L["uplp_awp_bp_atx.compactname"] = "WildCat X"
+L["uplp_awp_bp_atx.description"] = "RIS-monterat bendstöd tillverkat av WildCat X-avdelningen på SynPoly som sänker rekylen när den är utplacerad."
 
 ////// Magazines
 L["uplp_awp_mag_awm.printname"] = "5-Patroner .338"

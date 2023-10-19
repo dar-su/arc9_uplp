@@ -402,8 +402,8 @@ ARC9.LoadAttachment(ATT, "uplp_grip_rk45")
 
 ATT = {}
 
-ATT.PrintName = "Bipod"
-ATT.CompactName = "Bipod"
+ATT.PrintName = "SynPoly WildCat X Bipod"
+ATT.CompactName = "WildCat X"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "awp/hbipod.png", "mips smooth")
@@ -422,8 +422,8 @@ ATT.Bipod = true
 -- ATT.RecoilAutoControlMult = 1.2
 
 /// Negatives
--- ATT.AimDownSightsTimeMult = 1.1
--- ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.15
 
 ATT.DrawFunc = function(self, model, wm)
 	if self:GetBipod() then

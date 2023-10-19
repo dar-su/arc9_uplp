@@ -592,7 +592,36 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_bp"}
 
+/// Positives
+ATT.Bipod = true
+
 ARC9.LoadAttachment(ATT, "uplp_awp_bp")
+
+
+///////////////////////////////////////      uplp_awp_bp_atx
+
+
+ATT = {}
+
+ATT.PrintName = "SynPoly WildCat X Bipod"
+ATT.CompactName = "WildCat X"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "hbipod.png", "mips smooth")
+
+ATT.Category = "uplp_awp_bipod_atx"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_awp_bp_atx"}
+
+/// Positives
+ATT.Bipod = true
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.15
+
+ARC9.LoadAttachment(ATT, "uplp_awp_bp_atx")
 
 
 ////////////////////      REAR SIGHT
