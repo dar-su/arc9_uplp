@@ -738,7 +738,7 @@ SWEP.AttachmentElements = {
     ["xstock"] = { AttPosMods = {
 	[8] = { Pos = Vector(-0.88, 1.125, 19.5) },
 	[9] = { Pos = Vector(0, 1.85, 8) },
-	[12] = { Pos = Vector(0.63, 1.3, 16.1) },
+	[14] = { Pos = Vector(0.63, 1.3, 16.1) },
 	}},
 
 	-- BARRELS
