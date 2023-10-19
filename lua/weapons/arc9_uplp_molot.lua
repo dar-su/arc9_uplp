@@ -308,8 +308,15 @@ SWEP.DistantShootSoundIndoorSilenced = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
 }
-
-SWEP.DistantShootSoundSilencedIndoor = SWEP.DistantShootSoundSilenced
+-- ?? which is correct?
+SWEP.DistantShootSoundSilencedIndoor = {
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+}
 
 SWEP.DropMagazineSounds = {
     pathUTC .. "rifle_magdrop_p.ogg",
