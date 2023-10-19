@@ -373,9 +373,9 @@ L["uplp_grip_rk45.compactname"] = "Zenith 45-G"
 L["uplp_grip_rk45.description"] = "Vinklat framgrepp lutat 45 grader gjort för dem flesta RIS-skena kompatibla skjutvapnen."
 
 /////////// Bipod
-L["uplp_bipod.printname"] = "eXtreme Sports Inc.-Benstöd"
-L["uplp_bipod.compactname"] = "eXtreme"
-L["uplp_bipod.description"] = "RIS-monterat bendstöd tillverkat av eXtreme Sports Inc. som sänker rekylen när den är utplacerad."
+L["uplp_bipod.printname"] = "SynPoly WildCat X Benstöd"
+L["uplp_bipod.compactname"] = "WildCat X"
+L["uplp_bipod.description"] = "RIS-monterat bendstöd tillverkat av WildCat X-avdelningen på SynPoly som sänker rekylen när den är utplacerad."
 
 /////////// Muzzle
 ////// Set 1
@@ -814,7 +814,7 @@ L["uplp_ak_mag_545_30_bak.description"] = "30-patronersmagasin gjorda utav formm
 
 L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45x39mm (SynPoly)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30P 5,45 (PM)"
-L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners PMAG tillverkad av SynPoly." .. loaded545
+L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners SPMAG tillverkad av SynPoly." .. loaded545
 
 L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45x39mm (M23-Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
@@ -1782,13 +1782,13 @@ L["uplp_scar_upper_hb.description"] = "Ersätter den övre lådan med en svartm�
 
 L["uplp_scar_upper_20.printname"] = "DMR-Låda"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR."
--- L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
+-- L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR."
+L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
 
 L["uplp_scar_upper_20b.printname"] = "DMR-Låda (Svart)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (S)"
-L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR."
--- L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
+-- L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR."
+L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW-Låda"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"

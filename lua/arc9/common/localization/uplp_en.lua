@@ -378,7 +378,7 @@ L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for mo
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Bipod"
 L["uplp_bipod.compactname"] = "WildCat X"
-L["uplp_bipod.description"] = "A RIS-mounted bipod manufactured by SynPoly that reduces recoil when deployed."
+L["uplp_bipod.description"] = "A RIS-mounted bipod manufactured by the WildCat X division at SynPoly that reduces recoil when deployed."
 
 /////////// Muzzle
 ////// Set 1
@@ -1592,7 +1592,6 @@ L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO."
 
 L["uplp_molot_mag_drum_soda.printname"] = "19-Round PAWCO Drum (Limited RED SODA Edition)"
 L["uplp_molot_mag_drum_soda.compactname"] = "19R D (RS)"
--- L["uplp_molot_mag_drum_soda.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature. \n\nSORRY i had to add this in order for polyarms get sounds :/"
 L["uplp_molot_mag_drum_soda.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature."
 
 ////// Muzzle
@@ -1785,13 +1784,13 @@ L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black 
 
 L["uplp_scar_upper_20.printname"] = "DMR Receiver"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
--- L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
+-- L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
+L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
 
 L["uplp_scar_upper_20b.printname"] = "DMR Receiver (Black)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
-L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
--- L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
+-- L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
+L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Receiver"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
