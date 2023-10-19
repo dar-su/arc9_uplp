@@ -230,6 +230,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_short"}
 
+/// Positives
+ATT.AimDownSightsTimeMult = 0.95
+ATT.SprintToFireTimeMult = 0.9
+
+/// Negatives
+ATT.RecoilMult = 1.05
+ATT.RangeMaxMult = 0.8
+ATT.RangeMinMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
 ///////////////////////////////////////      uplp_scar_brl_20
@@ -275,6 +285,15 @@ ATT.Attachments = {
 		Icon_Offset = Vector(1, 0, 0),
     },
 }
+
+/// Positives
+ATT.RangeMinMult = 1.1
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+ATT.RecoilMult = 0.95
+
+/// Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
@@ -1027,5 +1046,15 @@ ATT.Category = "uplp_scar_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_mz"}
+
+/// Positives
+ATT.MuzzleParticleOverride = "muzzleflash_smg"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.05
+ATT.RecoilRandomMult = 0.8
+ATT.SpreadAddRecoil = -0.01
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mz")

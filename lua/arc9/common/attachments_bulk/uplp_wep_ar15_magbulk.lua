@@ -45,6 +45,15 @@ local shoot45 = {
     pathUT .. "45/fire-45-06.ogg",
 }
 
+local dropsound9 = {
+    pathUTC .. "pistol_magdrop.ogg",
+    pathUTC .. "magdrop_smg.ogg",
+    pathUTC .. "smg_pistol_magdrop_1.ogg",
+    pathUTC .. "smg_pistol_magdrop_2.ogg",
+    pathUTC .. "smg_pistol_magdrop_3.ogg",
+    pathUTC .. "smg_pistol_magdrop_4.ogg",
+}
+
 
 ///////////////////////////////////////      uplp_ar15_mag_45_20
 
@@ -71,6 +80,8 @@ ATT.ShootSoundSilenced = shoot9sil
 
 ATT.DistantShootSound = shoot9dist
 ATT.DistantShootSoundIndoor = shoot9distindoor
+
+ATT.DropMagazineSounds = dropsound9
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	if anim == "reload" or anim == "reload_empty" then
@@ -129,6 +140,8 @@ ATT.ShootSoundSilenced = shoot9sil
 
 ATT.DistantShootSound = shoot9dist
 ATT.DistantShootSoundIndoor = shoot9distindoor
+
+ATT.DropMagazineSounds = dropsound9
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
 	if anim == "reload" or anim == "reload_empty" then
@@ -216,6 +229,8 @@ ATT.ShootSoundSilenced = shoot9sil
 ATT.DistantShootSound = shoot9dist
 ATT.DistantShootSoundIndoor = shoot9distindoor
 
+ATT.DropMagazineSounds = dropsound9
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_g17"
 end
@@ -291,6 +306,8 @@ ATT.ShootSoundSilenced = shoot9sil
 ATT.DistantShootSound = shoot9dist
 ATT.DistantShootSoundIndoor = shoot9distindoor
 
+ATT.DropMagazineSounds = dropsound9
+
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_g33"
 end
@@ -365,6 +382,8 @@ ATT.ShootSoundSilenced = shoot9sil
 
 ATT.DistantShootSound = shoot9dist
 ATT.DistantShootSoundIndoor = shoot9distindoor
+
+ATT.DropMagazineSounds = dropsound9
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_g50"
@@ -479,6 +498,15 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_10"
 end
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathUT .. "magout.ogg" then
+        data.sound = pathUT .. "pmagout.ogg"
+    elseif data.sound == pathUT .. "magin.ogg" then
+        data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag10")
 
 
@@ -517,6 +545,15 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_20"
 end
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathUT .. "magout.ogg" then
+        data.sound = pathUT .. "pmagout.ogg"
+    elseif data.sound == pathUT .. "magin.ogg" then
+        data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag20")
 
 
@@ -539,6 +576,15 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathUT .. "magout.ogg" then
+        data.sound = pathUT .. "pmagout.ogg"
+    elseif data.sound == pathUT .. "magin.ogg" then
+        data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag30")
 
@@ -684,6 +730,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_60"
+end
+
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathUT .. "magout.ogg" then
+        data.sound = pathUT .. "pmagout.ogg"
+    elseif data.sound == pathUT .. "magin.ogg" then
+        data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
 end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag60")
