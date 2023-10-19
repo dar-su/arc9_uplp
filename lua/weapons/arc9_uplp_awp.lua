@@ -942,3 +942,6 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
+
+SWEP.NoAimAssist = true
+SWEP.NoAimAssistLock = false
