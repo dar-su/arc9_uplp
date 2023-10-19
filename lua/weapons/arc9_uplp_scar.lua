@@ -785,7 +785,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 	local opt = eles["uplp_optic_used"] or eles["uplp_ar15_fs"]
 	
 	-- Irons
-	if dmr then -- if DMR
+	if dmr or eles["uplp_ar15_fs"] then -- if DMR
 		mdl:SetBodygroup(6,4)
 	else
 		if eles["uplp_scar_brl_pdw"] then -- if PDW
