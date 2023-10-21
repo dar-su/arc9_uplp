@@ -1187,14 +1187,14 @@ L["uplp_ar15_mag_glock_33.printname"] = "33-Patroner 9x19mm"
 L["uplp_ar15_mag_glock_33.compactname"] = "33S 9x19"
 L["uplp_ar15_mag_glock_33.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9x19mm patroner.\nUtrustat med ett förstorat 33-patronersmagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9x19mm Trummagasin"
+L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9x19mm Trumma"
 L["uplp_ar15_mag_glock_50.compactname"] = "50S 9x19"
 L["uplp_ar15_mag_glock_50.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9x19mm.\nUtrustat med ett 50-patroners trummagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
 /// 5,56x45mm
-L["uplp_ar15_mag_drum.printname"] = "100-Patroner 5,56x45mm Dubbeltrumma"
-L["uplp_ar15_mag_drum.compactname"] = "100P Trumma"
-L["uplp_ar15_mag_drum.description"] = "100-patroners C-format trummagasin."
+L["uplp_ar15_mag_drum.printname"] = "90-Patroner 5,56x45mm Dubbeltrumma"
+L["uplp_ar15_mag_drum.compactname"] = "90P Trumma"
+L["uplp_ar15_mag_drum.description"] = "90-patroners C-format trummagasin."
 
 L["uplp_ar15_mag_hk.printname"] = "30-Patroner 5,56x45mm (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30P (416)"
@@ -1212,9 +1212,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "60-Patroner 5,56x45mm Trumma"
-L["uplp_ar15_mag_pmag60.compactname"] = "60P Trumma"
-L["uplp_ar15_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av SynPoly."
+L["uplp_ar15_mag_pmag60.printname"] = "52-Patroner 5,56x45mm Trumma"
+L["uplp_ar15_mag_pmag60.compactname"] = "52P Trumma"
+L["uplp_ar15_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20P Alum"
@@ -1228,9 +1228,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40P Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkat av aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "60-Patroner 5,56x45mm Quadstack"
-L["uplp_ar15_mag_stanag60.compactname"] = "60P Quad."
-L["uplp_ar15_mag_stanag60.description"] = "60-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition."
+L["uplp_ar15_mag_stanag60.printname"] = "52-Patroner 5,56x45mm Quadstack"
+L["uplp_ar15_mag_stanag60.compactname"] = "52P Quad."
+L["uplp_ar15_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416-Pistolgrepp"
@@ -1588,7 +1588,7 @@ L["uplp_molot_mag_drum.printname"] = "19-Patroners PAWCO-Trumma"
 L["uplp_molot_mag_drum.compactname"] = "19P T"
 L["uplp_molot_mag_drum.description"] = "19-patroners trummagasin av PAWCO."
 
-L["uplp_molot_mag_drum_soda.printname"] = "19-Round PAWCO Drum (Limited RED SODA Edition)"
+L["uplp_molot_mag_drum_soda.printname"] = "19-Patroners PAWCO-Trumma (Limited RED SODA Edition)"
 L["uplp_molot_mag_drum_soda.compactname"] = "19R D (RS)"
 L["uplp_molot_mag_drum_soda.description"] = "19-patroners trummagasin av PAWCO i olika färger som liknar en sorts varelse."
 

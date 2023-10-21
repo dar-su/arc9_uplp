@@ -1186,7 +1186,7 @@ L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
 L["uplp_ar15_mag_glock_17.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with a 17-round magazine from a well-known Austrian handgun." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm Extended"
+L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm"
 L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19mm"
 L["uplp_ar15_mag_glock_33.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with a 33-round extended magazine made for a well-known Austrian handgun." .. changeammo.pistol
 
@@ -1217,7 +1217,7 @@ L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer b
 
 L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56x45mm Polymer Drum"
 L["uplp_ar15_mag_pmag60.compactname"] = "52R Drum"
-L["uplp_ar15_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly. Loading more than 52 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
@@ -1233,7 +1233,7 @@ L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of alumini
 
 L["uplp_ar15_mag_stanag60.printname"] = "52-Round 5.56x45mm Quadstacked"
 L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_ar15_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition. Loading more than 52 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416 Pistol Grip"
