@@ -460,7 +460,8 @@ SWEP.Animations = {
         Source = "reload_762",
 		MinProgress= 0.6,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -481,7 +482,8 @@ SWEP.Animations = {
         Source = "reload_empty_762",
 		MinProgress= 0.7,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -507,7 +509,8 @@ SWEP.Animations = {
         Source = "reload_762long",
 		MinProgress= 0.55,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -528,7 +531,8 @@ SWEP.Animations = {
         Source = "reload_empty_762long",
 		MinProgress= 0.725,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -554,7 +558,8 @@ SWEP.Animations = {
         Source = "reload_545",
 		MinProgress= 0.6,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -575,7 +580,8 @@ SWEP.Animations = {
         Source = "reload_empty_545",
 		MinProgress= 0.7,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -601,7 +607,8 @@ SWEP.Animations = {
         Source = "reload_545long",
 		MinProgress= 0.6,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -622,7 +629,8 @@ SWEP.Animations = {
         Source = "reload_empty_545long",
 		MinProgress= 0.75,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -648,7 +656,8 @@ SWEP.Animations = {
         Source = "reload_545fat",
 		MinProgress= 0.575,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 19.5 / 30, c = ca, v = 0.8 },
@@ -669,7 +678,8 @@ SWEP.Animations = {
         Source = "reload_empty_545fat",
 		MinProgress= 0.725,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 19.5 / 30, c = ca, v = 0.8 },
@@ -695,7 +705,8 @@ SWEP.Animations = {
         Source = "reload_556",
 		MinProgress= 0.6,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -716,7 +727,8 @@ SWEP.Animations = {
         Source = "reload_empty_556",
 		MinProgress= 0.675,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -796,7 +808,8 @@ SWEP.Animations = {
         Source = "reload_308",
 		MinProgress= 0.6,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin_308.ogg", t = 18 / 30, c = ca, v = 0.8 },
@@ -817,7 +830,8 @@ SWEP.Animations = {
         Source = "reload_empty_308",
 		MinProgress= 0.7,
         EventTable = {
-            { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin_308.ogg", t = 18 / 30, c = ca, v = 0.8 },

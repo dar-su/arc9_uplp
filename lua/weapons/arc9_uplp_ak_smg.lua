@@ -479,6 +479,7 @@ SWEP.Animations = {
 		MinProgress= 0.6,
         Mult = 1.075,
         EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },
             { s = pathUTC .. "movement-smg-04.ogg", t = 13 / 30, c = ca, v = 0.8 },
@@ -503,6 +504,7 @@ SWEP.Animations = {
 		MinProgress= 0.7,
         Mult = 1.075,
         EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },
             { s = pathUTC .. "movement-smg-04.ogg", t = 12 / 30, c = ca, v = 0.8 },
@@ -530,6 +532,7 @@ SWEP.Animations = {
         Source = "reload_bizon",
 		MinProgress= 0.6,
         EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },
             { s = pathUT .. "magrelease.ogg", t = 7 / 30, c = ca, v = 0.6 },
             { s = pathUTC .. "magpouch.ogg", t = 9 / 30, c = ca, v = 0.7 },
@@ -557,6 +560,7 @@ SWEP.Animations = {
         Source = "reload_empty_bizon",
 		MinProgress= 0.7,
         EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },
             { s = pathUT .. "magrelease.ogg", t = 7 / 30, c = ca, v = 0.6 },
             { s = pathUTC .. "magpouch.ogg", t = 9 / 30, c = ca, v = 0.7 },

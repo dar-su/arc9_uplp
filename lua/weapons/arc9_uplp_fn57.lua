@@ -467,10 +467,11 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.55,
-        Mult = 1.1,
+        Mult = 1.02,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 15 / 60, c = ca },
             { s = UTCrattle, t = 30 / 60, c = ca },
             {hide = 1, t = 0},
@@ -488,10 +489,11 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.7,
-        Mult = 1.1,
+        Mult = 1.02,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 15 / 60, c = ca },
             { s = pathUT .. "slide_rel_new.ogg", t = 40 / 60, c = ca },
             { s = UTCrattle, t = 60 / 60, c = ca },
@@ -513,10 +515,11 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
 		MinProgress = 0.55,
-        Mult = 1.15,
+        Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 6 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 22.5 / 60, c = ca },
             { s = UTCrattle, t = 60 / 60, c = ca },
             {hide = 1, t = 0},
@@ -534,10 +537,11 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
 		MinProgress = 0.7,
-        Mult = 1.15,
+        Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 6 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 60, c = ca },
             { s = pathUT .. "slide_rel_new.ogg", t = 50 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },

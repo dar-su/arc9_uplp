@@ -489,6 +489,7 @@ SWEP.Animations = {
 		-- Mult = 0.95,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 3 / 30, v = 0.6 },
             { s = pathUT .. "magout.ogg", t = 20 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 33.5 / 30, c = ca, v = 0.8 },
             -- { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
@@ -511,6 +512,7 @@ SWEP.Animations = {
 		Mult = 0.97,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 3 / 30, v = 0.6 },
             { s = pathUT .. "magout.ogg", t = 20 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 33.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 54 / 30, c = ca, v = 0.8 },
@@ -538,6 +540,7 @@ SWEP.Animations = {
 		Mult = 0.97,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 6 / 30, v = 0.6 },
             { s = pathUT .. "magout.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 46.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
@@ -560,6 +563,7 @@ SWEP.Animations = {
 		Mult = 0.97,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 6 / 30, v = 0.6 },
             { s = pathUT .. "magout.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 46.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 67.5 / 30, c = ca, v = 0.8 },
@@ -589,6 +593,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 30 / 30, v = 0.6 },
             { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 82.5 / 30, c = ca, v = 0.8 },
@@ -613,6 +618,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg", t = 30 / 30, v = 0.6 },
             { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 87.5 / 30, c = ca, v = 0.8 },
