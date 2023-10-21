@@ -1195,9 +1195,9 @@ L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19mm"
 L["uplp_ar15_mag_glock_50.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with an aftermarket 50-round drum magazine made for a well-known Austrian handgun." .. changeammo.pistol
 
 /// 5.56x45mm
-L["uplp_ar15_mag_drum.printname"] = "100-Round 5.56x45mm Dual Drum"
-L["uplp_ar15_mag_drum.compactname"] = "100R Drum"
-L["uplp_ar15_mag_drum.description"] = "100-round C-shaped drum magazine."
+L["uplp_ar15_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
+L["uplp_ar15_mag_drum.compactname"] = "90R Drum"
+L["uplp_ar15_mag_drum.description"] = "90-Round C-shaped drum magazine."
 
 L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
@@ -1215,9 +1215,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
-L["uplp_ar15_mag_pmag60.compactname"] = "60R Drum"
-L["uplp_ar15_mag_pmag60.description"] = "60-round drum magazine made out of polymer by SynPoly."
+L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56x45mm Polymer Drum"
+L["uplp_ar15_mag_pmag60.compactname"] = "52R Drum"
+L["uplp_ar15_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly. Loading more than 52 rounds is not recommeneded as it could cause jams."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
@@ -1231,9 +1231,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56x45mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "60-Round 5.56x45mm Quadstacked"
-L["uplp_ar15_mag_stanag60.compactname"] = "60R Quad"
-L["uplp_ar15_mag_stanag60.description"] = "60-round aluminium magazine expanded horizontally to hold more ammunition."
+L["uplp_ar15_mag_stanag60.printname"] = "52-Round 5.56x45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
+L["uplp_ar15_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition. Loading more than 52 rounds is not recommeneded as it could cause jams."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416 Pistol Grip"
@@ -1793,11 +1793,11 @@ L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard p
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Receiver"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "Very short upper receiver and handguard used on the XAR PDW.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>100-Round Drum</color>.\nCannot put on <color=255,100,100>certain foregrips</color>."
+L["uplp_scar_upper_pdw.description"] = "Very short upper receiver and handguard used on the XAR PDW.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>90-Round Drum</color>.\nCannot put on <color=255,100,100>certain foregrips</color>."
 
 L["uplp_scar_upper_pdwb.printname"] = "PDW Receiver (Black)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (B)"
-L["uplp_scar_upper_pdwb.description"] = "Very short upper receiver and handguard painted black that is used on the XAR PDW.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>100-Round Drum</color>.\nCannot put on <color=255,100,100>certain foregrips</color>."
+L["uplp_scar_upper_pdwb.description"] = "Very short upper receiver and handguard painted black that is used on the XAR PDW.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>90-Round Drum</color>.\nCannot put on <color=255,100,100>certain foregrips</color>."
 
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "330mm CQC Barrel"
@@ -1850,9 +1850,9 @@ L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
 L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
 
-L["uplp_scar_mag_drum.printname"] = "100-Round 5.56x45mm Dual Drum"
-L["uplp_scar_mag_drum.compactname"] = "100R 5.56"
-L["uplp_scar_mag_drum.description"] = "100-round C-shaped drum magazine.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
+L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
+L["uplp_scar_mag_drum.description"] = "90-Round C-shaped drum magazine. Loading more than 52 rounds is not recommeneded as it could cause jams.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
 
 L["uplp_scar_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
@@ -1866,9 +1866,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "60-Round 5.56x45mm Polymer Drum"
-L["uplp_scar_mag_pmag60.compactname"] = "60R Drum"
-L["uplp_scar_mag_pmag60.description"] = "60-round drum magazine made out of polymer by SynPoly." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "52-Round 5.56x45mm Polymer Drum"
+L["uplp_scar_mag_pmag60.compactname"] = "52R Drum"
+L["uplp_scar_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
@@ -1878,9 +1878,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30-Round 5.56x45mm (Tan)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Tan"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-round magazine made out of aluminium painted tan." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "60-Round 5.56x45mm Quadstacked"
-L["uplp_scar_mag_stanag60.compactname"] = "60R Quad"
-L["uplp_scar_mag_stanag60.description"] = "60-round aluminium magazine expanded horizontally to hold more ammunition." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "52-Round 5.56x45mm Quadstacked"
+L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
+L["uplp_scar_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "XAR Pistol Grip (Black)"

@@ -700,8 +700,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag40")
 
 ATT = {}
 
-ATT.PrintName = "60-Round 5.56x45mm Drum"
-ATT.CompactName = "60R 5.56 D"
+ATT.PrintName = "52-Round 5.56x45mm Drum"
+ATT.CompactName = "52R 5.56 D"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "p60.png", "mips smooth")
@@ -713,7 +713,7 @@ ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
-ATT.ClipSizeOverride = 60
+ATT.ClipSizeOverride = 52
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
@@ -749,8 +749,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag60")
 
 ATT = {}
 
-ATT.PrintName = "60-Round 5.56x45mm Quadstacked"
-ATT.CompactName = "60R 5.56 (Q)"
+ATT.PrintName = "52-Round 5.56x45mm Quadstacked"
+ATT.CompactName = "52R 5.56 (Q)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
@@ -762,7 +762,7 @@ ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
-ATT.ClipSizeOverride = 60
+ATT.ClipSizeOverride = 52
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.25
@@ -789,8 +789,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag60")
 
 ATT = {}
 
-ATT.PrintName = "100-Round 5.56x45mm Beta C-Mag"
-ATT.CompactName = "100R 5.56 Drum"
+ATT.PrintName = "90-Round 5.56x45mm Beta C-Mag"
+ATT.CompactName = "90R 5.56 Drum"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
@@ -803,7 +803,7 @@ ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
 /// Positives
-ATT.ClipSizeOverride = 100
+ATT.ClipSizeOverride = 90
 
 /// Negatives
 ATT.AimDownSightsTimeMult = 1.3
