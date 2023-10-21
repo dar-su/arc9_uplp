@@ -60,6 +60,8 @@ ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
 ATT.Ammo = "357"
+ATT.MuzzleParticleOverride = "muzzleflash_m24"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
@@ -144,6 +146,8 @@ ATT.ActivateElements = {"uplp_ar15_ammo"}
 ATT.ExcludeElements = {"uplp_ar15_mag_ext"}
 
 ATT.Ammo = "357"
+ATT.MuzzleParticleOverride = "muzzleflash_m24"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
@@ -239,6 +243,9 @@ ATT.RangeMinMult = 1.25
 /// Negatives
 ATT.NumOverride = 1
 
+ATT.MuzzleParticleOverride = "muzzleflash_slug"
+ATT.MuzzleParticleOverride_Priority = 1
+
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_green")
 
 -------------------------------------------
@@ -263,6 +270,9 @@ ATT.DamageMinMult = 1.25
 
 /// Negatives
 ATT.NumOverride = 2
+
+ATT.MuzzleParticleOverride = "muzzleflash_slug"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_black")
 
@@ -295,6 +305,9 @@ ATT.RangeMinMult = 0.75
 
 ATT.ImpactDecal = "FadingScorch"
 
+
+ATT.MuzzleParticleOverride = "muzzleflash_slug"
+ATT.MuzzleParticleOverride_Priority = 1
 
 /// This is code from the CoD2019 pack - consider replacing at some point
 local cov = 1 -- ??
@@ -364,6 +377,9 @@ ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.NumOverride = 1
 ATT.PhysBulletGravityMult = 3
 ATT.PhysBulletMuzzleVelocityMult = 0.75
+
+ATT.MuzzleParticleOverride = "muzzleflash_slug"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_yellow")
 

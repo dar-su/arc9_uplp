@@ -27,8 +27,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_smg"
-ATT.MuzzleParticleOverride_Priority = 10
+-- ATT.MuzzleParticleOverride = "muzzleflash_smg"
+-- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
 ATT.RecoilMult = 0.95
@@ -63,7 +63,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride = "muzzleflash_OTS"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
@@ -95,7 +95,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_m14"
+ATT.MuzzleParticleOverride = "muzzleflash_1"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -132,7 +132,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride = "muzzleflash_OTS"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
@@ -166,8 +166,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_4"
-ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 ATT.MuzzleDevice = true
 
 ATT.RecoilMult = 0.95
@@ -274,7 +274,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_silencer.mdl"
 ATT.MuzzleDevice = true
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -309,7 +309,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy_silencer.mdl"
 ATT.MuzzleDevice = true
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "weapon_muzzle_flash_assaultrifle_silenced2"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -350,7 +350,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_MINIMI"
+ATT.MuzzleParticleOverride = "muzzleflash_m24"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -636,8 +636,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_1"
-ATT.MuzzleParticleOverride_Priority = 10
+-- ATT.MuzzleParticleOverride = "muzzleflash_1"
+-- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
 ATT.RecoilMult = 0.9

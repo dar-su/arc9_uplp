@@ -191,8 +191,6 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 -------------------------------------------
 
 ----- 5.45 MAGS -----
-local pathshootsound = "uplp_temp/ak/shoot/"
-local shootsound545 = pathshootsound .. "545/wpn_h1_ak74u_"
 
 local pathUT = "uplp_urban_temp/ak/"
 local pathUTC = "uplp_urban_temp/common/"
@@ -265,6 +263,9 @@ end
 
 ATT.Ammo = "smg1"
 
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
+
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
@@ -315,6 +316,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -367,6 +370,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -419,6 +424,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -473,6 +480,8 @@ end
 ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -532,6 +541,8 @@ end
 ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -569,6 +580,8 @@ ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "5.45"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.DropMagazineTime = 22/30*0.92
 ATT.DropMagazineVelocity = Vector(0, -10, 0)
@@ -596,6 +609,8 @@ end
 ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -671,6 +686,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -723,6 +740,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -774,6 +793,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_ak74"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
@@ -851,6 +872,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "357"
+ATT.MuzzleParticleOverride = "muzzleflash_svd"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
@@ -955,6 +978,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_1"
+ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.CustomPros = { 
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),

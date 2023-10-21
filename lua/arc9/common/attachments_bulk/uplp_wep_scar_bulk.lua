@@ -638,6 +638,10 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
 
 ///////////////////////////////////////      uplp_scar_mag_pmag20
@@ -689,6 +693,10 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
 
 ///////////////////////////////////////      uplp_scar_mag_pmag30
@@ -733,6 +741,11 @@ ATT.PhysBulletMuzzleVelocityMult = 0.8165
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_l"
 end
+
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag30")
 
@@ -779,6 +792,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30")
 
 ///////////////////////////////////////      uplp_scar_mag_stanag30_tan
@@ -823,6 +841,11 @@ ATT.PhysBulletMuzzleVelocityMult = 0.8165
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_l"
 end
+
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
 
 ATT.ModelOffset = Vector(1.4, 0, -3.5)
 
@@ -879,6 +902,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_60"
 end
 
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag60")
 
 ///////////////////////////////////////      uplp_scar_mag_stanag60
@@ -932,6 +960,11 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_60"
 end
 
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag60")
 
 ///////////////////////////////////////      uplp_scar_mag_drum
@@ -984,6 +1017,11 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_100"
 end
+
+ATT.Ammo = "smg1"
+ATT.MuzzleParticleOverride = "muzzleflash_3"
+ATT.MuzzleParticleOverride_Priority = 1
+
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_drum")
 
@@ -1048,8 +1086,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_scar_mz"}
 
 /// Positives
-ATT.MuzzleParticleOverride = "muzzleflash_smg"
-ATT.MuzzleParticleOverride_Priority = 10
+-- ATT.MuzzleParticleOverride = "muzzleflash_smg"
+-- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
 ATT.RecoilMult = 0.95
