@@ -1169,13 +1169,13 @@ L["uplp_ar15_hg_a1.description"] = "Classic AR-15 handguard used on the early M1
 
 ////// Magazines
 /// .45 ACP
-L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 ACP"
+L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 Auto"
 L["uplp_ar15_mag_45_20.compactname"] = "20R .45"
-L["uplp_ar15_mag_45_20.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 ACP.\nEquipped with a modified 20-round magazine originally from a well-known Israeli submachine gun." .. changeammo.pistol
+L["uplp_ar15_mag_45_20.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 Auto.\nEquipped with a modified 20-round magazine originally from a well-known Israeli submachine gun." .. changeammo.pistol
 
-L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 ACP"
+L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 Auto"
 L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
-L["uplp_ar15_mag_45_40.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 ACP.\nEquipped with a modified 40-round extended magazine originally made for a well-known Israeli submachine gun." .. changeammo.pistol
+L["uplp_ar15_mag_45_40.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 Auto.\nEquipped with a modified 40-round extended magazine originally made for a well-known Israeli submachine gun." .. changeammo.pistol
 
 /// 9x19mm
 L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Flared Magwell"

@@ -1166,13 +1166,13 @@ L["uplp_ar15_hg_a1.description"] = "Klassiskt AR-15-handskydd som användes på 
 
 ////// Magazines
 /// .45 ACP
-L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 ACP"
+L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 Auto"
 L["uplp_ar15_mag_45_20.compactname"] = "20S .45"
-L["uplp_ar15_mag_45_20.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 ACP-patroner.\nUtrustad med ett anpassat 20-patronersmagasin egentligen från en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
+L["uplp_ar15_mag_45_20.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 Auto-patroner.\nUtrustad med ett anpassat 20-patronersmagasin egentligen från en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
 
-L["uplp_ar15_mag_45_40.printname"] = "40-Patroner .45 ACP"
+L["uplp_ar15_mag_45_40.printname"] = "40-Patroner .45 Auto"
 L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
-L["uplp_ar15_mag_45_40.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 ACP-patroner.\nUtrustad med ett anpassat förstorat 40-patronersmagasin egentligen gjort till en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
+L["uplp_ar15_mag_45_40.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 Auto-patroner.\nUtrustad med ett anpassat förstorat 40-patronersmagasin egentligen gjort till en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
 
 /// 9x19mm
 L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Utsvängd Magasinbrunn"
