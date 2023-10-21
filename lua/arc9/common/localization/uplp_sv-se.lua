@@ -1398,7 +1398,7 @@ L["uplp_deag_trig_light.description"] = "Ersätter avtryckaren, fjädrarna och h
 
 L["uplp_deag_trig_sport.printname"] = "Automatisk Aktion"
 L["uplp_deag_trig_sport.compactname"] = "Automatisk"
-L["uplp_deag_trig_sport.description"] = "Konverterar Deagle att skjuta <color=100,255,100>helautomatiskt</color> men offrar rekylkontroll.\nErsätter också avtryckaren och hanen med några mer taktiska.\n\nTekniskt sett olaglig tack vare <color=255,100,100>Federal AWB i USA</color>, men vi förblir tysta... för tillfället."
+L["uplp_deag_trig_sport.description"] = "Konverterar Deagle att skjuta <color=100,255,100>helautomatiskt</color> men offrar rekylkontroll.\nErsätter också avtryckaren och hanen med några mer taktiska.\n\nTekniskt sett olaglig tack vare <color=255,100,100>NFA i USA</color>, men vi förblir tysta... för tillfället."
 
 ////// Barrels
 L["uplp_deag_barrel_classic.printname"] = "Klassisk Pipa"
@@ -1714,7 +1714,7 @@ L["uplp_fn57_mag_ext.description"] = "Större eftermarknads 27-patronersmagasin 
 ////// Trigger
 L["uplp_fn57_trigger_auto.printname"] = "Automatisk Aktion"
 L["uplp_fn57_trigger_auto.compactname"] = "Automatisk"
-L["uplp_fn57_trigger_auto.description"] = "Konverterar MRD57 att skjuta <color=100,255,100>helautomatiskt</color> men offrar rekylkontroll.\n\nTekniskt sett olaglig tack vare <color=255,100,100>Federal AWB i USA</color>, men vi förblir tysta... för tillfället."
+L["uplp_fn57_trigger_auto.description"] = "Konverterar MRD57 att skjuta <color=100,255,100>helautomatiskt</color> men offrar rekylkontroll.\n\nTekniskt sett olaglig tack vare <color=255,100,100>NFA i USA</color>, men vi förblir tysta... för tillfället."
 
 ////// Skins
 L["uplp_fn57_skin_tan_full.printname"] = "Helt Tanfärgad"

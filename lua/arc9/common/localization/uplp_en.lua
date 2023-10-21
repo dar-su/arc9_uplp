@@ -1401,7 +1401,7 @@ L["uplp_deag_trig_light.description"] = "Replaces the trigger, springs and hamme
 
 L["uplp_deag_trig_sport.printname"] = "Automatic Action"
 L["uplp_deag_trig_sport.compactname"] = "Automatic"
-L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in <color=100,255,100>fully automatic</color>, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones.\n\nTechnically banned under the <color=255,100,100>Federal AWB</color>, but we'll be quiet... this time."
+L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in <color=100,255,100>fully automatic</color>, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones.\n\nTechnically banned by the <color=255,100,100>NFA</color>, but we'll be quiet... this time."
 
 ////// Barrels
 L["uplp_deag_barrel_classic.printname"] = "Classic Barrel"
@@ -1716,7 +1716,7 @@ L["uplp_fn57_mag_ext.description"] = "Aftermarket 27-round extended magazine for
 ////// Trigger
 L["uplp_fn57_trigger_auto.printname"] = "Automatic Action"
 L["uplp_fn57_trigger_auto.compactname"] = "Automatic"
-L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in <color=100,255,100>fully automatic</color>, sacrificing recoil control.\n\nTechnically banned under the <color=255,100,100>Federal AWB</color>, but we'll be quiet... this time."
+L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in <color=100,255,100>fully automatic</color>, sacrificing recoil control.\n\nTechnically banned by the <color=255,100,100>NFA</color>, but we'll be quiet... this time."
 
 ////// Skins
 L["uplp_fn57_skin_tan_full.printname"] = "Full Tan"
