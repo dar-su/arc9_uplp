@@ -1230,7 +1230,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_muzzle", "uplp_ak_muzzle_12"},
+        Category = {"uplp_muzzle", "uplp_ak_muzzle", "uplp_ak_muzzle_12"},
         Bone = "body",
         Pos = Vector(0, 1.72, 20.5),
         Ang = Angle(90, 90, 180),
