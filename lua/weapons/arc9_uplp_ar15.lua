@@ -1054,7 +1054,7 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
 	
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 }, { 8, 2 } }, AttPosMods = {
-	[7] = { Pos = Vector(0.045, 1.02, 16.15) },
+	-- [7] = { Pos = Vector(0.045, 1.02, 16.15) },
 	[8] = { Pos = Vector(0.045, 0.975, 17.15) },
 	}},
 	
