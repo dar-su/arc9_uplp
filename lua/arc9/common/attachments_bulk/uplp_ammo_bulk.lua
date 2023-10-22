@@ -235,10 +235,13 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 /// Positives
 ATT.SpreadMult = 0.25
 ATT.SpreadMultHipFire = 0.75
-ATT.DamageMaxMult = 5
-ATT.DamageMinMult = 5
-ATT.RangeMaxMult = 2.5
-ATT.RangeMinMult = 1.25
+
+ATT.DamageMax = 75 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.77
+ATT.RangeMin = 2 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+
 
 /// Negatives
 ATT.NumOverride = 1
@@ -263,10 +266,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
 /// Positives
-ATT.SpreadMult = 0.35
-ATT.SpreadMultHipFire = 0.75
-ATT.DamageMaxMult = 2.5
-ATT.DamageMinMult = 1.25
+ATT.SpreadMult = 0.45
+ATT.SpreadMultHipFire = 0.9
+
+ATT.DamageMax = 75/1.5 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15/1.5 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.65
+ATT.RangeMin = 2 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 /// Negatives
 ATT.NumOverride = 2
@@ -318,6 +325,7 @@ local badblood = { -- it's actually the good type
 }
 
 ATT.Hook_BulletImpact = function(wep,data)
+    if CLIENT then return end
     local ent = data.tr.Entity
     
     local test1 = !(ent:IsNPC() or ent:IsPlayer() or ent:IsNextBot()) and true or false
@@ -358,15 +366,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 
 /// Positives
-ATT.SpreadMult = 0.25
-ATT.SpreadMultHipFire = 0.75
-ATT.DamageMaxMult = 1.25
+ATT.SpreadMult = 0.7
+ATT.SpreadMultHipFire = 0.8
+ATT.DamageMaxMult = 0.5
 
-ATT.ExplosionRadiusOverride = 30
-ATT.ExplosionDamageOverride = 80
-
-ATT.ExplosionRadiusOverride = 75
-ATT.ExplosionDamageOverride = 80
+ATT.ExplosionRadiusOverride = 40
+ATT.ExplosionDamageOverride = 70
 -- ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
 ATT.ImpactDecal = "FadingScorch"
 

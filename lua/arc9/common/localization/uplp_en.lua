@@ -1582,9 +1582,9 @@ L["uplp_molot_bolt_heavy.compactname"] = "Reinforced"
 L["uplp_molot_bolt_heavy.description"] = "Replaces the internal springs and bolts, trigger, magazine release, charging handle, bolt and safety with more reinforced and stronger parts."
 
 ////// Magazines
-L["uplp_molot_mag_long.printname"] = "8-Round Extended"
-L["uplp_molot_mag_long.compactname"] = "8R Ext"
-L["uplp_molot_mag_long.description"] = "8-round extended magazine."
+L["uplp_molot_mag_long.printname"] = "9-Round Extended"
+L["uplp_molot_mag_long.compactname"] = "9R Ext"
+L["uplp_molot_mag_long.description"] = "9-round extended magazine."
 
 L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum"
 L["uplp_molot_mag_drum.compactname"] = "19R D"

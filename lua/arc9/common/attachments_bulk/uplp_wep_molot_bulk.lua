@@ -431,8 +431,8 @@ ARC9.LoadAttachment(ATT, "uplp_molot_bolt_heavy")
 
 local ATT = {}
 
-ATT.PrintName = "8-Round Extended"
-ATT.CompactName = "8R Ext"
+ATT.PrintName = "9-Round Extended"
+ATT.CompactName = "9R Ext"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 8
 
@@ -443,7 +443,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_long.mdl"
 ATT.DropMagazineVelocity = Vector(0, -30, 15)
 
-ATT.ClipSize = 8
+ATT.ClipSize = 9
 
 ATT.CustomCons = { 
 [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
