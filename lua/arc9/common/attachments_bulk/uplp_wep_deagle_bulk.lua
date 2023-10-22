@@ -76,7 +76,7 @@ ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 0.8
-ATT.RecoilMult = 1.15
+ATT.RecoilMult = 0.85
 ATT.RecoilSideMult = 1.15
 ATT.RecoilAutoControlMult = 2
 
@@ -96,6 +96,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.35
 ATT.RecoilMult = 1.1
+ATT.RecoilUpMult = 1.1
 ATT.RecoilSideMult = 1.4
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_light")

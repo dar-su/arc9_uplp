@@ -136,20 +136,20 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0
+SWEP.Spread = 0.01
 SWEP.SpreadAddHipFire = 0.03
 
 SWEP.SpreadAddRecoil = 0.07
 SWEP.SpreadAddMove = 0.04
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = 0.025
 
 SWEP.SpreadMultSights = 0.001
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.5
-SWEP.RecoilMax = 1
+SWEP.RecoilPerShot = 0.5/3
+SWEP.RecoilMax = 0.5
 
 SWEP.RecoilModifierCapSights = 0.1
 
@@ -157,8 +157,8 @@ SWEP.RecoilModifierCapSights = 0.1
 SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 
-SWEP.AimDownSightsTime = 0.4 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.225 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.25 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
 SWEP.RPM = 325 -- How fast gun shoot

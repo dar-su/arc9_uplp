@@ -14,6 +14,9 @@ SWEP.DefaultBodygroups = "00000000000000000000000" -- Might as well prepare for 
 SWEP.SpeedMultMelee = 1
 SWEP.SpeedMultSights = 0.65
 
+SWEP.SpreadAddBipod = -0.015
+SWEP.AimDownSightsTimeMultBipod = 0.5
+
 -------------------------- SWAY
 SWEP.Sway = 0 -- Disables sway entirely
 

@@ -78,8 +78,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 34 / 1.25 -- Damage dealt point-blank
-SWEP.DamageMin = 10 / 1.25 -- Damage dealt after maximum range
+SWEP.DamageMax = 34 / 1.25 * 0.6 -- Damage dealt point-blank
+SWEP.DamageMin = 10 / 1.25 * 0.75 -- Damage dealt after maximum range
 SWEP.HeadshotDamage = 0.65
 SWEP.DamageType = DMG_BULLET
 
@@ -138,7 +138,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0
+SWEP.Spread = 0.01
 SWEP.SpreadAddHipFire = 0.02
 
 SWEP.SpreadAddRecoil = 0.06
@@ -160,8 +160,8 @@ SWEP.RecoilModifierCapSights = 0.1
 SWEP.SpeedMult = 0.9 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 
-SWEP.AimDownSightsTime = 0.5 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.3 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.33 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.25 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
 SWEP.RPM = 950 -- How fast gun shoot

@@ -1646,15 +1646,15 @@ L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 
 
 L["uplp_awp_mag_awp.printname"] = "5-Round .308"
 L["uplp_awp_mag_awp.compactname"] = "5R .308"
-L["uplp_awp_mag_awp.description"] = "Standard 5-round magazine loaded with .308 ammunition."
+L["uplp_awp_mag_awp.description"] = "Standard 5-round magazine loaded with .308 ammunition.\nPerfect for medium range fights."
 
 L["uplp_awp_mag_awp_big.printname"] = "8-Round .308"
 L["uplp_awp_mag_awp_big.compactname"] = "8R .308"
-L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .308 ammunition."
+L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .308 ammunition.\nPerfect for medium range fights."
 
 L["uplp_awp_mag_awp_tac.printname"] = "5-Round 6.5mm"
 L["uplp_awp_mag_awp_tac.compactname"] = "5R 6.5mm"
-L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition."
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition.\nExtremely good for long range fights."
 
 ////// Stocks
 L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"
@@ -1848,7 +1848,7 @@ L["uplp_scar_mag_20.description"] = "10-round 7.62x51mm magazine for the XAR."
 
 L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
-L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
+L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR.\nExtremely good for long range fights.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
 
 L["uplp_scar_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"

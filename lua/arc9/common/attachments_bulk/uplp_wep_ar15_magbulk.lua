@@ -259,6 +259,8 @@ ATT.DamageMaxAdd = -10
 ATT.DamageMinAdd = -5
 ATT.RangeMaxMult = 0.35
 ATT.RangeMinMult = 0.65
+ATT.SpreadAdd = 0.004
+ATT.RecoilMaxMult = 0.75
 
 ATT.Attachments = {
     {
@@ -335,6 +337,8 @@ ATT.DamageMaxAdd = -10
 ATT.DamageMinAdd = -5
 ATT.RangeMaxMult = 0.35
 ATT.RangeMinMult = 0.65
+ATT.SpreadAdd = 0.004
+ATT.RecoilMaxMult = 0.75
 -- ATT.ReloadTimeMult = 1.15
 
 ATT.Attachments = {
@@ -412,6 +416,8 @@ ATT.DamageMaxAdd = -10
 ATT.DamageMinAdd = -5
 ATT.RangeMaxMult = 0.35
 ATT.RangeMinMult = 0.65
+ATT.SpreadAdd = 0.004
+ATT.RecoilMaxMult = 0.75
 -- ATT.ReloadTimeMult = 1.25
 
 ATT.CustomCons = { 

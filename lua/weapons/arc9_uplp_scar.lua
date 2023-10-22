@@ -80,16 +80,17 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 40 -- Damage dealt point-blank
-SWEP.DamageMin = 25 -- Damage dealt after maximum range
+SWEP.DamageMax = 44 / 1.25 -- Damage dealt point-blank
+SWEP.DamageMin = 30 / 1.25 -- Damage dealt after maximum range
+SWEP.HeadshotDamage = 0.7
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 50 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 200 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 12 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 70 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 870 * 39.37
@@ -139,12 +140,12 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0
+SWEP.Spread = 0.004
 SWEP.SpreadAddHipFire = 0.035
 
 SWEP.SpreadAddRecoil = 0.08
 SWEP.SpreadAddMove = 0.04
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 0.001
 SWEP.SpreadMultMove = 1
@@ -161,7 +162,7 @@ SWEP.RecoilModifierCapSights = 0.1
 SWEP.SpeedMult = 0.9 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.65 -- When aiming
 
-SWEP.AimDownSightsTime = 0.55 -- Time it takes to fully enter ADS
+SWEP.AimDownSightsTime = 0.44 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.4 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes

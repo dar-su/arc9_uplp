@@ -532,17 +532,18 @@ ATT.Firemodes = {
 }
 
 /// Positives
-ATT.DamageMaxMult = 1.25
-ATT.DamageMinMult = 3.5
-ATT.RangeMaxMult = 1.05
-ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 1.3 -- 6.5 awp stats but slightly worse cuz its dmr!!
+ATT.DamageMax = 85 / 1.25 * 0.8 -- Damage dealt point-blank
+ATT.DamageMin = 140 / 1.25 * 0.5 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
+ATT.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 45 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 ATT.CustomPros = { 
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
 }
 
 /// Negatives
-ATT.RangeMinMult = 0.3
 ATT.RPMMult = 0.75
 ATT.RecoilMult = 1.45
 ATT.RecoilAutoControlMult = 0.25
@@ -628,11 +629,12 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_l"
@@ -670,11 +672,12 @@ ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
 
 ATT.CustomPros = { 
 [ARC9:GetPhrase("autostat.reloadtime")] = "+5%",
@@ -732,11 +735,12 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_l"
@@ -782,11 +786,12 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_l"
@@ -832,11 +837,12 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
 
 ATT.Hook_TranslateAnimation = function(wep, anim) 
     return anim .. "_l"
@@ -877,11 +883,13 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
+
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
 
@@ -935,11 +943,13 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
+
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
 
@@ -993,11 +1003,13 @@ ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
 /// Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMaxAdd = -5
--- ATT.DamageMinAdd = -5
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
+
+ATT.RangeMinMult = 0.95
+ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.8
+
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.3
 

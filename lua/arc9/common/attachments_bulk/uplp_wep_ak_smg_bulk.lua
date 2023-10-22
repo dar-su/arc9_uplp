@@ -94,6 +94,8 @@ ATT.BulletBones = { -- im suprised that this works in att
 
 /// Positives
 ATT.ClipSizeOverride = 64
+ATT.RPMMult = 0.85
+ATT.AimDownSightsTimeMult = 1.2
 
 ATT.Attachments = {
 	{
@@ -153,6 +155,8 @@ ATT.BulletBones = { -- im suprised that this works in att
 
 /// Positives
 ATT.ClipSizeOverride = 64
+ATT.RPMMult = 0.85
+ATT.AimDownSightsTimeMult = 1.2
 
 ATT.Attachments = {
 	{

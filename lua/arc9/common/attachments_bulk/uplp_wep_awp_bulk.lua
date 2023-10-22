@@ -169,13 +169,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
 ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
 /// Positives
-ATT.DamageMaxOverride = 90
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.1
 ATT.CycleTimeMult = 0.8
+ATT.Ammo = "357"
 
 /// Negatives
-ATT.DamageMinOverride = 75
+ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 55 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.75
+
+ATT.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
@@ -204,13 +210,19 @@ end
 
 /// Positives
 ATT.ClipSizeOverride = 8
-ATT.DamageMaxOverride = 90
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.1
 ATT.CycleTimeMult = 0.8
+ATT.Ammo = "357"
 
 /// Negatives
-ATT.DamageMinOverride = 75
+ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 55 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.75
+
+ATT.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 
@@ -242,15 +254,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_tac.mdl"
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}
 
 /// Positives
-ATT.DamageMinMult = 1.15
--- ATT.RangeMaxMult = 1.2
--- ATT.RangeMinMult = 0.65
--- ATT.PhysBulletMuzzleVelocityMult = 1.4
 
 /// Negatives
 ATT.RecoilMult = 1.25
 ATT.RecoilAutoControlMult = 0.75
 ATT.CycleTimeMult = 0.9
+
+ATT.PhysBulletMuzzleVelocityMult = 1.4
+ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 140 / 1.25 -- Damage dealt after maximum range
+ATT.HeadshotDamage = 0.72
+ATT.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+ATT.RangeMax = 45 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")
 

@@ -30,6 +30,7 @@ ATT.ToggleStats = {
         FlareFocus = false,
 		/// Positives
 		SpreadAddHipFire = -0.015,
+		RecoilPerShotMult = 0.5,
 
 		///Negatives
 		AimDownSightsTimeMult = 1.3,
@@ -92,6 +93,7 @@ ATT.ToggleStats = {
         FlareFocus = false,
 		/// Positives
 		SpreadAddHipFire = -0.01,
+		RecoilPerShotMult = 0.5,
 
 		///Negatives
 		AimDownSightsTimeMult = 1.2,
@@ -228,6 +230,7 @@ ATT.ToggleStats = {
         FlareFocus = false,
 		/// Positives
 		SpreadAddHipFire = -0.0125,
+		RecoilPerShotMult = 0.5,
 
 		///Negatives
 		AimDownSightsTimeMult = 1.25,
@@ -282,6 +285,7 @@ ATT.ToggleStats = {
         FlareFocus = false,
 		/// Positives
 		SpreadAddHipFire = -0.0125,
+		RecoilPerShotMult = 0.5,
 
 		///Negatives
 		AimDownSightsTimeMult = 1.25,
@@ -336,6 +340,7 @@ ATT.ToggleStats = {
         FlareFocus = false,
 		/// Positives
 		SpreadAddHipFire = -0.0125,
+		RecoilPerShotMult = 0.5,
 
 		///Negatives
 		AimDownSightsTimeMult = 1.25,
@@ -390,6 +395,7 @@ ATT.ToggleStats = {
         FlareFocus = false,
 		/// Positives
 		SpreadAddHipFire = -0.01,
+		RecoilPerShotMult = 0.5,
 
 		///Negatives
 		AimDownSightsTimeMult = 1.1,

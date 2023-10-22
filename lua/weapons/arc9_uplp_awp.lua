@@ -81,8 +81,9 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 //// Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 68 -- Damage dealt point-blank
-SWEP.DamageMin = 94 -- Damage dealt after maximum range
+SWEP.DamageMax = 76 / 1.25 -- Damage dealt point-blank
+SWEP.DamageMin = 115 / 1.25 -- Damage dealt after maximum range
+SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
 -- SWEP.SweetSpot = true
@@ -104,8 +105,8 @@ SWEP.Penetration = 50 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 15 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 25 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 100 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 0 * 39.37 -- How far in M the bullets go before starting to decrease in damage
+SWEP.RangeMax = 20 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 850 * 39.37
@@ -160,11 +161,11 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.075
+SWEP.SpreadAddHipFire = 0.04
 
 SWEP.SpreadAddRecoil = 0.1
-SWEP.SpreadAddMove = 0.04
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMove = 0.06
+SWEP.SpreadAddMidAir = 0.03
 
 SWEP.SpreadMultSights = 0.001
 SWEP.SpreadMultMove = 1
@@ -181,7 +182,7 @@ SWEP.RecoilModifierCapSights = 0.1
 SWEP.SpeedMult = 0.9 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.65 -- When aiming
 
-SWEP.AimDownSightsTime = 0.5 -- Time it takes to fully enter ADS
+SWEP.AimDownSightsTime = 0.42 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.4 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
@@ -487,8 +488,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 35 / 30, c = ca, v = 0.8 },
 
-            {s = pathUT .. "boltforward.ogg",     t = 58 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 61 / 30},
+            {s = pathUT .. "boltforward.ogg",     t = 56 / 30},
+            {s = pathUT .. "boltdown.ogg",        t = 59 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 70 / 30, c = ca, v = 0.8 },
 

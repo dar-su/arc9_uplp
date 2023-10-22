@@ -119,7 +119,7 @@ SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
 SWEP.VisualRecoilSide = 0 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 30 -- Roll tilt
+SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 50
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -134,12 +134,12 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0
+SWEP.Spread = 0.01
 SWEP.SpreadAddHipFire = 0.02
 
 SWEP.SpreadAddRecoil = 0.04
 SWEP.SpreadAddMove = 0.04
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 0.001
 SWEP.SpreadMultMove = 1
@@ -147,8 +147,8 @@ SWEP.SpreadMultMove = 1
 SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.5
-SWEP.RecoilMax = 1
+SWEP.RecoilPerShot = 0.65/3
+SWEP.RecoilMax = 0.65
 
 SWEP.RecoilModifierCapSights = 0.45
 
@@ -156,8 +156,8 @@ SWEP.RecoilModifierCapSights = 0.45
 SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 
-SWEP.AimDownSightsTime = 0.4 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.225 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.23 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
 SWEP.RPM = 550 -- How fast gun shoot
