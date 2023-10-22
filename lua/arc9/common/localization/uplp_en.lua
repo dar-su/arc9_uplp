@@ -1758,7 +1758,7 @@ L["uplp_mp7_grip_none.printname"] = "None"
 L["uplp_mp7_grip_none.compactname"] = "None"
 L["uplp_mp7_grip_none.description"] = "Utilise the PDW-7's undermounted rail as a hand support."
 
-//////////////////// XAR
+//////////////////// SCAR
 L["uplp_weapon_scar"] = "XAR"
 L["uplp_weapon_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
 
@@ -1896,3 +1896,113 @@ L["uplp_scar_is.description"] = "Standard flip-up iron sights used on the XAR."
 L["uplp_scar_mz.printname"] = "XAR Muzzle Brake"
 L["uplp_scar_mz.compactname"] = "XAR MB"
 L["uplp_scar_mz.description"] = "Standard muzzle brake on the XAR."
+
+
+--- MOKA'S LIL' PLAY AREA - IF TRANSLATING, IGNORE
+//////////////////// M92FS
+L["uplp_weapon_m9"] = "PM92"
+L["uplp_weapon_m9_desc"] = "The \"Pistola Modello 92\", shortened PM92, is a semi-automatic 9mm handgun known for its exceptional accuracy and reliability. It has been a favored sidearm for military and law enforcement agencies around the world for decades."
+
+L["uplp_weapon_m9_real"] = "Beretta M92FS"
+
+//////////////////// Auto-5
+L["uplp_weapon_auto5"] = "Auto-5 Repeater"
+L["uplp_weapon_auto5_desc"] = "The Auto-5 Repeater is a semi-automatic shotgun known for its distinctive humpbacked receiver design, which helps reduce recoil by directing the barrel's recoil motion inline with the shooter's shoulder. It was a popular choice for hunters and sportsmen for most of the 20th century."
+
+L["uplp_weapon_auto5_real"] = "Browning Auto-5"
+
+//////////////////// Timberwolf
+L["uplp_weapon_timberwolf"] = "TWC Sniper"
+L["uplp_weapon_timberwolf_desc"] = "The TWC Sniper is a bolt-action sniper rifle known for its accuracy and long-range capabilities, originally developed in Canada. It is chambered for powerful cartridges like the .338 Lapua Magnum and is often used by military and law enforcement units for precision shooting."
+
+L["uplp_weapon_timberwolf_real"] = "C14 Timberwolf"
+
+//////////////////// Corvo V
+L["uplp_weapon_corvo"] = "Eclipse MK-V"
+L["uplp_weapon_corvo_desc"] = "The Eclipse MK-V sniper rifle is a precision long-range firearm renowned for its exceptional accuracy and versatility. It features a modular design, advanced materials, and a customizable caliber, making it a favored choice among professional marksmen and snipers for its ability to deliver precise, long-distance shots in various tactical scenarios."
+
+L["uplp_weapon_corvo_real"] = "Victrix Corvo V"
+
+//////////////////// Corvo V
+L["uplp_weapon_corvo"] = "Eclipse MK-V"
+L["uplp_weapon_corvo_desc"] = "The Eclipse MK-V sniper rifle is a precision long-range firearm renowned for its exceptional accuracy and versatility. It features a modular design, advanced materials, and a customizable caliber, making it a favored choice among professional marksmen and snipers for its ability to deliver precise, long-distance shots in various tactical scenarios."
+
+L["uplp_weapon_corvo_real"] = "Victrix Corvo V"
+
+//////////////////// FAMAS Valorisé -- Needs more work.
+L["uplp_weapon_famas"] = "Valorisé"
+L["uplp_weapon_famas_desc"] = "The Valorisé is a French assault rifle that is an upgraded version of the original Épèiste F1. It features various improvements such as a Picatinny rail for attaching accessories and an enlarged trigger guard for ease of use while wearing gloves, enhancing its versatility and adaptability for modern military and law enforcement needs."
+
+L["uplp_weapon_famas_real"] = "FAMAS Valorisé"
+
+//////////////////// G36
+L["uplp_weapon_g36"] = "Sturmgewehr Modell 95"
+L["uplp_weapon_g36_desc"] = "The Sturmgewehr Modell 95, a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
+
+L["uplp_weapon_g36_real"] = "H&K G36"
+
+//////////////////// GSh-18
+L["uplp_weapon_gsh18"] = "Polnoch 95"
+L["uplp_weapon_gsh18_desc"] = "The Polnoch 95 is a Russian semi-automatic handgun designed for military and law enforcement use. It is notable for its unique double-action-only firing mechanism and high-capacity magazine, typically holding 18 rounds of 9x19mm ammunition."
+
+L["uplp_weapon_gsh18_real"] = "GSh-18"
+
+//////////////////// IMI Galil
+L["uplp_weapon_galil"] = "Service Rifle 72"
+L["uplp_weapon_galil_desc"] = "Service Rifle 72 is an Israeli-made assault rifle known for its reliability and versatility. It was designed to be robust and effective in various combat situations and has been used by the Israel Defense Forces and many other military and law enforcement agencies around the world."
+
+L["uplp_weapon_galil_real"] = "IMI Galil"
+
+//////////////////// KAC SRR
+L["uplp_weapon_srr"] = "Revolver Rifle S"
+L["uplp_weapon_srr_desc"] = "The Revolver Rifle S is a distinctive firearm that merges the characteristics of a revolver with a rifle, featuring a built-in suppressor for reduced noise and utilizing rifle cartridges, offering versatility for specialized operations."
+
+L["uplp_weapon_srr_real"] = "KAC SRR"
+
+//////////////////// B&T KH9
+L["uplp_weapon_kh9"] = "Maschinenpistole 20"
+L["uplp_weapon_kh9_desc"] = "The MP20 is a compact submachine gun celebrated for its exceptional craftsmanship and features, favored by military, law enforcement, and civilian users alike."
+
+L["uplp_weapon_kh9_real"] = "B&T KH9"
+
+//////////////////// Colt M1911
+L["uplp_weapon_m1911"] = "Military 45"
+L["uplp_weapon_m1911_desc"] = "The Military 45, a classic semi-automatic pistol, is renowned for its enduring design and service history, originally adopted by the United States military in 1911. It has since become an iconic and widely-used handgun, cherished for its .45 Auto caliber and solid construction."
+
+L["uplp_weapon_m1911_real"] = "Colt M1911"
+
+//////////////////// SWORD MK-18 Mjölnir
+L["uplp_weapon_mjolnir"] = "Mjölnir"
+L["uplp_weapon_mjolnir_desc"] = "The Mjölnir is a cutting-edge rifle known for its MK-18 designation, featuring advanced technology and modular design for versatility in various tactical scenarios. It has gained popularity among military and law enforcement agencies for its performance and adaptability."
+
+L["uplp_weapon_mjolnir_real"] = "SWORD MK-18 Mjölnir"
+
+//////////////////// MP 3008
+L["uplp_weapon_mp3008"] = "MP 3008"
+L["uplp_weapon_mp3008_desc"] = "The MP 3008, also known as the Gerät Neumünster, was a German submachine gun developed during World War II. It was a simple and cost-effective design inspired by the British Sten gun, intended for clandestine use by German forces during the war."
+
+L["uplp_weapon_mp3008_real"] = "MP 3008"
+
+//////////////////// SG 552
+L["uplp_weapon_sg552"] = "Gewehr 500"
+L["uplp_weapon_sg552_desc"] = "The Gewehr 500 is a renowned assault rifle with a compact design, known for its reliability and adaptability. It has been adopted by various military and law enforcement units worldwide for its performance and versatility in different combat situations."
+
+L["uplp_weapon_sg552_real"] = "SIG SG 552"
+
+//////////////////// SR-3 Vikhr
+L["uplp_weapon_sr3"] = "CP-3"
+L["uplp_weapon_sr3_desc"] = "The CP-3 is a compact Russian submachine gun designed for special forces and law enforcement units. It is highly regarded for its compact size, low recoil, and its ability to fire armor-piercing ammunition, making it effective in close-quarters combat situations."
+
+L["uplp_weapon_sr3_real"] = "SR-3 Vikhr"
+
+//////////////////// Serbu Super-Shorty
+L["uplp_weapon_shorty"] = "Door Breacher"
+L["uplp_weapon_shorty_desc"] = "The Door Breacher is a compact and sawed-off shotgun renowned for its extreme shortness and portability. Originally based on a well-known pump-action shotgun, it is favored for close-quarters self-defense applications."
+
+L["uplp_weapon_shorty_real"] = "Serbu Super-Shorty"
+
+//////////////////// XCR-M
+L["uplp_weapon_xcrm"] = "RAWR-M"
+L["uplp_weapon_xcrm_desc"] = "The RAWR-M is a versatile and modular semi-automatic rifle known for its ability to quickly switch between different calibers and configurations. Designed for military and civilian use, it offers adaptability and ease of customization to suit a variety of needs."
+
+L["uplp_weapon_xcrm_real"] = "Robinson Armament XCR-M"
