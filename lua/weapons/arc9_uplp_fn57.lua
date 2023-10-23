@@ -154,7 +154,7 @@ SWEP.RecoilModifierCapSights = 0.45
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.75 -- When aiming
+SWEP.SpeedMultSights = 0.85 -- When aiming
 
 SWEP.AimDownSightsTime = 0.23 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
@@ -467,13 +467,14 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.55,
-        Mult = 1.02,
+        Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 15 / 60, c = ca },
-            { s = UTCrattle, t = 30 / 60, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 22.5 / 60, c = ca },
+            { s = UTCrattle, t = 50 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
@@ -489,12 +490,13 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.7,
-        Mult = 1.02,
+        Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 15 / 60, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 30 / 60, c = ca },
             { s = pathUT .. "slide_rel_new.ogg", t = 40 / 60, c = ca },
             { s = UTCrattle, t = 60 / 60, c = ca },
 
@@ -515,12 +517,13 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
 		MinProgress = 0.55,
-        Mult = 1.05,
+        Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 6 / 60, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 22.5 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 25 / 60, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 40 / 60, c = ca },
             { s = UTCrattle, t = 60 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
@@ -537,14 +540,16 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
 		MinProgress = 0.7,
-        Mult = 1.05,
+        Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout1.ogg", t = 2 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 6 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 60, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 42.5 / 60, c = ca },
             { s = pathUT .. "slide_rel_new.ogg", t = 50 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
+            { s = UTCrattle, t = 65 / 60, c = ca },
+            { s = pathUTC .. "magpouch_replace_small.ogg", t = 65 / 60, c = ca },
             -- {hide = 1, t = 0},
             -- {hide = 3, t = 0.733},
             -- {hide = 1, t = 1.07},
