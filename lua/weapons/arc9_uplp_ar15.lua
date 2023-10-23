@@ -492,12 +492,12 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 23 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         
@@ -516,12 +516,12 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 23 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
@@ -542,12 +542,12 @@ SWEP.Animations = {
     ["reload_10"] = {
         Source = "reload10",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
         
@@ -566,12 +566,12 @@ SWEP.Animations = {
     ["reload_empty_10"] = {
         Source = "reload_empty10",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
@@ -592,12 +592,12 @@ SWEP.Animations = {
     ["reload_20"] = {
         Source = "reload20",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
         
@@ -616,12 +616,12 @@ SWEP.Animations = {
     ["reload_empty_20"] = {
         Source = "reload_empty20",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 22 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 43 / 30 - 0.07, c = ca, v = 0.3 },
@@ -642,12 +642,12 @@ SWEP.Animations = {
     ["reload_40"] = {
         Source = "reload40",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 29.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
                 
@@ -666,14 +666,14 @@ SWEP.Animations = {
     ["reload_empty_40"] = {
         Source = "reload_empty40",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 29.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 31 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 37 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 38 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
@@ -692,12 +692,12 @@ SWEP.Animations = {
     ["reload_60"] = {
         Source = "reload60",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 35 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
                 
@@ -716,14 +716,14 @@ SWEP.Animations = {
     ["reload_empty_60"] = {
         Source = "reload_empty60",
 		MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 35 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 43 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
                 
             {hide = 0, t = 0},
@@ -742,6 +742,7 @@ SWEP.Animations = {
     ["reload_100"] = {
         Source = "reload100",
 		MinProgress = 0.65,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -766,13 +767,14 @@ SWEP.Animations = {
     ["reload_empty_100"] = {
         Source = "reload_empty100",
 		MinProgress = 0.65,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 30 / 30 - 0.47, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 33 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 49 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 48 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 56 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
                 
