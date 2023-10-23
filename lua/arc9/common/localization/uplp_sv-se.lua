@@ -1907,6 +1907,11 @@ L["uplp_weapon_auto5_desc"] = "Auto-5 Repeater är en halvautomatisk hagelgevär
 
 L["uplp_weapon_auto5_real"] = "Browning Auto-5"
 
+////// Barrels
+L["uplp_auto5_barrel_sawed.printname"] = "Avsågad Pipa och Kolv"
+L["uplp_auto5_barrel_sawed.compactname"] = "Avsågad"
+L["uplp_auto5_barrel_sawed.description"] = "Ersätter pipan och kolven på Auto-5 Repeatern med några förkortade och avsågade."
+
 //////////////////// Timberwolf
 L["uplp_weapon_timberwolf"] = "Prickskyttegevär TWC"
 L["uplp_weapon_timberwolf_desc"] = "Prickskyttegeväret TWC är en cylinderrepeter prickskyttgevär som är känt för sin träffsäkerhet och långdistanskapacitet och ursprungligen utvecklades i Kanada. Den är matad med kraftfulla patroner som .338 Lapua Magnum och används ofta av militära och rätshandhavande enheter för precisionsskytte."

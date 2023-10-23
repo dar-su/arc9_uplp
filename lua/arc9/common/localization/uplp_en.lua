@@ -1911,17 +1911,16 @@ L["uplp_weapon_auto5_desc"] = "The Auto-5 Repeater is a semi-automatic shotgun k
 
 L["uplp_weapon_auto5_real"] = "Browning Auto-5"
 
+////// Barrels
+L["uplp_auto5_barrel_sawed.printname"] = "Sawed-Off Barrel and Stock"
+L["uplp_auto5_barrel_sawed.compactname"] = "Sawed"
+L["uplp_auto5_barrel_sawed.description"] = "Replaces the barrel and stock on the Auto-5 Repeater with shortened sawed-off ones."
+
 //////////////////// Timberwolf
 L["uplp_weapon_timberwolf"] = "TWC Sniper"
 L["uplp_weapon_timberwolf_desc"] = "The TWC Sniper is a bolt-action sniper rifle known for its accuracy and long-range capabilities, originally developed in Canada. It is chambered for powerful cartridges like the .338 Lapua Magnum and is often used by military and law enforcement units for precision shooting."
 
 L["uplp_weapon_timberwolf_real"] = "C14 Timberwolf"
-
-//////////////////// Corvo V
-L["uplp_weapon_corvo"] = "Eclipse MK-V"
-L["uplp_weapon_corvo_desc"] = "The Eclipse MK-V sniper rifle is a precision long-range firearm renowned for its exceptional accuracy and versatility. It features a modular design, advanced materials, and a customizable caliber, making it a favored choice among professional marksmen and snipers for its ability to deliver precise, long-distance shots in various tactical scenarios."
-
-L["uplp_weapon_corvo_real"] = "Victrix Corvo V"
 
 //////////////////// Corvo V
 L["uplp_weapon_corvo"] = "Eclipse MK-V"

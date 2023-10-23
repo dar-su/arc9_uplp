@@ -104,7 +104,7 @@ ATT.RecoilAutoControlMult = 1.25
 ATT.SpreadAddRecoil = -0.02
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_fat")
@@ -225,7 +225,7 @@ ATT.RecoilRandomSideMult = 0.6
 ATT.SpreadAddRecoil = -0.01
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
@@ -252,7 +252,7 @@ ATT.RecoilRandomSideMult = 0.5
 ATT.SpreadAddRecoil = -0.02
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
@@ -287,7 +287,7 @@ ATT.CustomPros = {
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
@@ -322,7 +322,7 @@ ATT.CustomPros = {
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.3
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer_heavy")
@@ -360,7 +360,7 @@ ATT.RecoilRandomSideMult = 0.65
 
 /// Negatives
 ATT.RecoilAutoControlMult = 0.8
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_brake")
@@ -402,7 +402,7 @@ ATT.CustomPros = {
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.2
+ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.2
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.8
@@ -520,7 +520,6 @@ ATT.CustomPros = {
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.05
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -563,7 +562,7 @@ ATT.CustomPros = {
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.15
+ATT.AimDownSightsTimeMult = 1.05
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.85
@@ -606,7 +605,6 @@ ATT.CustomPros = {
 }
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.05
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -645,7 +643,6 @@ ATT.SpreadAddRecoil = -0.01
 ATT.RecoilRandomSideMult = 0.8
 
 /// Negatives
-ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_zenit")
