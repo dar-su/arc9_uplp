@@ -4,11 +4,11 @@ SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
-//// FUNDAMENTALS
+---- FUNDAMENTALS
 
 SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
-//// Name, Description, Class, Category and Trivia
+---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_mutant")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_mutant_desc")
 
@@ -17,10 +17,10 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
 SWEP.Trivia = {
 	[ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mp7_real"),
-	
+
 	[ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_uso" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x39mm"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
 																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
 																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
@@ -39,7 +39,7 @@ SWEP.StandardPresets = {
 
 }
 
-//// Muzzle Effects, Shell Effects, Camera
+---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_ak74"
 SWEP.MuzzleEffectQCA = 1
 
@@ -54,7 +54,7 @@ SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
-//// View & Worldmodel
+---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_mutant.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_mutant.mdl"
 
@@ -74,7 +74,7 @@ SWEP.ViewModelFOVBase = 75
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
-//// Weapon Stats and Behaviour
+---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 50 -- Damage dealt point-blank
 SWEP.DamageMin = 30 -- Damage dealt after maximum range
@@ -236,7 +236,7 @@ SWEP.DropMagazinePos = Vector(0, 5, -3)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, 0, 2)
 
-//// Sounds
+---- Sounds
 local path = "weapons/arccw/xhr50/"
 local pathDist = "weapons/arccw/hk416/"
 local pathXC = "weapons/arccw/xcrm/"
@@ -274,7 +274,7 @@ SWEP.DistantShootSoundSilenced = {"uplp_temp/ak/shoot/suppressed/wpn_tail_hol_sm
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 
-//// Animations
+---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
@@ -415,7 +415,7 @@ SWEP.Animations = {
     },
 }
 
-//// Attachments
+---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -558,7 +558,7 @@ SWEP.Attachments = {
     --         vang = Angle(90, 0, -90),
     --     },
     -- },
-    -- { 
+    -- {
     --     PrintName = "Underbarrel",
     --     Slot = {"lowpoly_foregrip"},
     --     Bone = "Body",

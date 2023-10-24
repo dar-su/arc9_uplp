@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
-///////////////////////////////////////      uplp_grip_half
+---------- uplp_grip_half
 -- Non cclamp hoki,
 
 ATT = {}
@@ -24,11 +24,11 @@ ATT.Category = "uplp_grip_horiz"
 -- ATT.Category = {"uplp_grip_horiz_cclamp"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
@@ -36,7 +36,7 @@ ATT.ModelOffset = Vector(-1.5, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_half")
 
-///////////////////////////////////////      uplp_grip_half_fullcclamp
+---------- uplp_grip_half_fullcclamp
 -- C-CLAMP GRIP ONLY (for ar15 or anything where you can put finger on top)
 
 ATT = {}
@@ -57,11 +57,11 @@ ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_nocclamp_grips"}
 ATT.Category = "uplp_grip_horiz_cclamp"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
@@ -70,7 +70,7 @@ ATT.ModelOffset = Vector(-1.5, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_grip_half_fullcclamp")
 
 
-///////////////////////////////////////      uplp_grip_handstop
+---------- uplp_grip_handstop
 
 
 ATT = {}
@@ -91,11 +91,11 @@ ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.8
 
 ATT.ModelOffset = Vector(-1, 0, 0)
@@ -103,7 +103,7 @@ ATT.ModelOffset = Vector(-1, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_grip_handstop")
 
 
-///////////////////////////////////////      uplp_grip_handstop_black
+---------- uplp_grip_handstop_black
 
 
 ATT = {}
@@ -125,18 +125,18 @@ ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.8
 
 ATT.ModelOffset = Vector(-1, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_handstop_black")
 
-///////////////////////////////////////      uplp_grip_skelet
+---------- uplp_grip_skelet
 
 
 ATT = {}
@@ -157,18 +157,18 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_grip_skelet")
 
 
-///////////////////////////////////////      uplp_grip_skelet_black
+---------- uplp_grip_skelet_black
 
 
 ATT = {}
@@ -190,18 +190,18 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_grip_skelet_black")
 
 
-///////////////////////////////////////      uplp_grip_stub
+---------- uplp_grip_stub
 
 
 ATT = {}
@@ -221,18 +221,18 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilMult = 0.95
 -- ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_grip_stub")
 
 
-///////////////////////////////////////      uplp_grip_vert
+---------- uplp_grip_vert
 
 
 ATT = {}
@@ -254,18 +254,18 @@ ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_grip_vert")
 
 
-///////////////////////////////////////      uplp_grip_classic
+---------- uplp_grip_classic
 
 
 ATT = {}
@@ -287,18 +287,18 @@ ATT.ExcludeElements = {"uplp_grip_no_pdw"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_grip_classic")
 
 
-///////////////////////////////////////      uplp_grip_rk0
+---------- uplp_grip_rk0
 
 
 ATT = {}
@@ -320,18 +320,18 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilMult = 0.95
 -- ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk0")
 
 
-///////////////////////////////////////      uplp_grip_rk1
+---------- uplp_grip_rk1
 
 
 ATT = {}
@@ -353,18 +353,18 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk1")
 
 
-///////////////////////////////////////      uplp_grip_rk45
+---------- uplp_grip_rk45
 
 
 ATT = {}
@@ -386,18 +386,18 @@ ATT.ActivateElements = {"uplp_grip_used"}
 ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk45")
 
 
-///////////////////////////////////////      uplp_bipod
+---------- uplp_bipod
 
 
 ATT = {}
@@ -416,10 +416,10 @@ ATT.ActivateElements = {"uplp_bipod_used"}
 ATT.Category = "uplp_bipod"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.Bipod = true
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.95
 ATT.SprintToFireTimeMult = 1.05
 
@@ -428,7 +428,7 @@ ATT.DrawFunc = function(self, model, wm)
 		if self:GetEnterBipodTime() + 0.08 < CurTime() then
 			model:SetBodygroup(0, 1)
 		end
-	else 
+	else
 		model:SetBodygroup(0,0)
 	end
 end

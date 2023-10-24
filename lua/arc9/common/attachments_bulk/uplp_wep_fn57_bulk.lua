@@ -2,8 +2,8 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/57/"
 
-////////////////////      MAGAZINES
-///////////////////////////////////////      uplp_fn57_mag_ext
+-------------------- MAGAZINES
+---------- uplp_fn57_mag_ext
 
 
 ATT = {}
@@ -34,8 +34,8 @@ end
 ARC9.LoadAttachment(ATT, "uplp_fn57_mag_ext")
 
 
-////////////////////      ACTIONS
-///////////////////////////////////////      uplp_fn57_trigger_auto
+-------------------- ACTIONS
+---------- uplp_fn57_trigger_auto
 
 
 ATT = {}
@@ -61,15 +61,15 @@ ATT.DeployTimeMult = 1.33
 ATT.SpreadAdd = 0.01
 ATT.DamageMax = 32 -- balanced >w<
 ATT.DamageMin = 18
-ATT.CustomPros = { 
+ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }
 
 ARC9.LoadAttachment(ATT, "uplp_fn57_trigger_auto")
 
 
-////////////////////      SKINS
-///////////////////////////////////////      uplp_fn57_skin_tan_full
+-------------------- SKINS
+---------- uplp_fn57_skin_tan_full
 
 
 ATT = {}
@@ -88,7 +88,7 @@ ATT.ActivateElements = {"uplp_fn57_skin_tan_full"}
 ARC9.LoadAttachment(ATT, "uplp_fn57_skin_tan_full")
 
 
-///////////////////////////////////////      uplp_fn57_skin_tan_half
+---------- uplp_fn57_skin_tan_half
 
 
 ATT = {}
@@ -107,7 +107,7 @@ ATT.ActivateElements = {"uplp_fn57_skin_tan_half"}
 ARC9.LoadAttachment(ATT, "uplp_fn57_skin_tan_half")
 
 
-///////////////////////////////////////      uplp_fn57_skin_panda
+---------- uplp_fn57_skin_panda
 
 
 ATT = {}

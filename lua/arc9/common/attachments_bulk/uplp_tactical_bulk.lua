@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
-///////////////////////////////////////      uplp_tac_anpeq
+---------- uplp_tac_anpeq
 
 ATT = {}
 
@@ -28,24 +28,24 @@ ATT.ToggleStats = {
         FlareSize = 1,
         FlareAttachment = 1,
         FlareFocus = false,
-		/// Positives
-		SpreadAddHipFire = -0.015,
-		RecoilPerShotMult = 0.5,
+        -- Positives
+        SpreadAddHipFire = -0.015,
+        RecoilPerShotMult = 0.5,
 
-		///Negatives
-		-- AimDownSightsTimeMult = 1.3,
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.3,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
     }
 }
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.015",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
--- ATT.CustomCons = { 
+-- ATT.CustomCons = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+30%",
 -- }
 
@@ -58,7 +58,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_anpeq")
 
-///////////////////////////////////////      uplp_tac_piscomb
+---------- uplp_tac_piscomb
 
 ATT = {}
 
@@ -79,37 +79,37 @@ ATT.ToggleStats = {
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
-		
-		Flashlight = true,
-		FlashlightColor = Color(255, 255, 255),
-		FlashlightMaterial = "effects/flashlight001",
-		FlashlightDistance = 512,
-		FlashlightFOV = 31,
-		FlashlightAttachment = 1,
+
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 512,
+        FlashlightFOV = 31,
+        FlashlightAttachment = 1,
 
         Flare = true,
         FlareColor = Color(255, 0, 0),
         FlareSize = 1,
         FlareAttachment = 1,
         FlareFocus = false,
-		/// Positives
-		SpreadAddHipFire = -0.01,
-		RecoilPerShotMult = 0.5,
+        -- Positives
+        SpreadAddHipFire = -0.01,
+        RecoilPerShotMult = 0.5,
 
-		///Negatives
-		-- AimDownSightsTimeMult = 1.2,
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
     }
 }
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
--- ATT.CustomCons = { 
+-- ATT.CustomCons = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
 -- }
 
@@ -123,7 +123,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_piscomb")
 
-///////////////////////////////////////      uplp_tac_flashlight
+---------- uplp_tac_flashlight
 
 ATT = {}
 
@@ -140,12 +140,12 @@ ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
-		Flashlight = true,
-		FlashlightColor = Color(255, 255, 255),
-		FlashlightMaterial = "effects/flashlight001",
-		FlashlightDistance = 1024,
-		FlashlightFOV = 45,
-		FlashlightAttachment = 1,
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 45,
+        FlashlightAttachment = 1,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -155,14 +155,14 @@ ATT.ToggleStats = {
 ATT.Category = "uplp_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.SprintToFireTimeMult = 1.1
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_flashlight")
 
-///////////////////////////////////////      uplp_tac_flashlight_pistol
+---------- uplp_tac_flashlight_pistol
 
 ATT = {}
 
@@ -179,12 +179,12 @@ ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
-		Flashlight = true,
-		FlashlightColor = Color(255, 255, 255),
-		FlashlightMaterial = "effects/flashlight001",
-		FlashlightDistance = 1024,
-		FlashlightFOV = 25,
-		FlashlightAttachment = 1,
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 25,
+        FlashlightAttachment = 1,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -199,7 +199,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_flashlight_pistol")
 
-///////////////////////////////////////      uplp_tac_laser_blue
+---------- uplp_tac_laser_blue
 
 ATT = {}
 
@@ -225,24 +225,24 @@ ATT.ToggleStats = {
         FlareSize = 1,
         FlareAttachment = 1,
         FlareFocus = false,
-		/// Positives
-		SpreadAddHipFire = -0.0125,
-		RecoilPerShotMult = 0.5,
+        -- Positives
+        SpreadAddHipFire = -0.0125,
+        RecoilPerShotMult = 0.5,
 
-		///Negatives
-		-- AimDownSightsTimeMult = 1.25,
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.25,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
     }
 }
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
--- ATT.CustomCons = { 
+-- ATT.CustomCons = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+25%",
 -- }
 
@@ -253,7 +253,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_laser_blue")
 
-///////////////////////////////////////      uplp_tac_laser_dbal
+---------- uplp_tac_laser_dbal
 
 ATT = {}
 
@@ -279,24 +279,24 @@ ATT.ToggleStats = {
         FlareSize = 1,
         FlareAttachment = 1,
         FlareFocus = false,
-		/// Positives
-		SpreadAddHipFire = -0.0125,
-		RecoilPerShotMult = 0.5,
+        -- Positives
+        SpreadAddHipFire = -0.0125,
+        RecoilPerShotMult = 0.5,
 
-		///Negatives
-		-- AimDownSightsTimeMult = 1.25,
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.25,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
     }
 }
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
--- ATT.CustomCons = { 
+-- ATT.CustomCons = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+25%",
 -- }
 
@@ -310,7 +310,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_laser_dbal")
 
-///////////////////////////////////////      uplp_tac_laser_green
+---------- uplp_tac_laser_green
 
 ATT = {}
 
@@ -336,24 +336,24 @@ ATT.ToggleStats = {
         FlareSize = 1,
         FlareAttachment = 1,
         FlareFocus = false,
-		/// Positives
-		SpreadAddHipFire = -0.0125,
-		RecoilPerShotMult = 0.5,
+        -- Positives
+        SpreadAddHipFire = -0.0125,
+        RecoilPerShotMult = 0.5,
 
-		///Negatives
-		-- AimDownSightsTimeMult = 1.25,
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.25,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
     }
 }
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
--- ATT.CustomCons = { 
+-- ATT.CustomCons = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+25%",
 -- }
 
@@ -366,7 +366,7 @@ ATT.ModelOffset = Vector(0, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_tac_laser_green")
 
-///////////////////////////////////////      uplp_tac_laser_pistol
+---------- uplp_tac_laser_pistol
 
 ATT = {}
 
@@ -392,24 +392,24 @@ ATT.ToggleStats = {
         FlareSize = 1,
         FlareAttachment = 1,
         FlareFocus = false,
-		/// Positives
-		SpreadAddHipFire = -0.01,
-		RecoilPerShotMult = 0.5,
+        -- Positives
+        SpreadAddHipFire = -0.01,
+        RecoilPerShotMult = 0.5,
 
-		///Negatives
-		-- AimDownSightsTimeMult = 1.1,
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.1,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
     }
 }
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
--- ATT.CustomCons = { 
+-- ATT.CustomCons = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+10%",
 -- }
 

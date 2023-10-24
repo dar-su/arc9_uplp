@@ -2,8 +2,8 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/awp/"
 
-////////////////////      BARRELS
-///////////////////////////////////////      uplp_awp_brl_awp
+-------------------- BARRELS
+---------- uplp_awp_brl_awp
 
 
 -- ATT = {}
@@ -22,7 +22,7 @@ local iconfolder = "entities/uplp_attachements/awp/"
 -- ARC9.LoadAttachment(ATT, "uplp_awp_brl_awp")
 
 
-///////////////////////////////////////      uplp_awp_brl_aws
+---------- uplp_awp_brl_aws
 
 
 ATT = {}
@@ -43,24 +43,24 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 -- ATT.RecoilMult = 0.9
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RangeMinMult = 0.5
-ATT.RangeMaxMult = 0.25	
+ATT.RangeMaxMult = 0.25
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
 
-///////////////////////////////////////      uplp_awp_brl_long
+---------- uplp_awp_brl_long
 
 
 ATT = {}
@@ -76,19 +76,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_barrel_long"}
 
-/// Positives
+-- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.RangeMaxMult = 1.25
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_long")
 
 
-///////////////////////////////////////      uplp_awp_brl_short
+---------- uplp_awp_brl_short
 
 
 ATT = {}
@@ -104,11 +104,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_barrel_short"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.85
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMinMult = 0.8
 ATT.RangeMaxMult = 0.75
@@ -116,8 +116,8 @@ ATT.RangeMaxMult = 0.75
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 
 
-////////////////////      MAGAZINES
-///////////////////////////////////////      uplp_awp_mag_awm
+-------------------- MAGAZINES
+---------- uplp_awp_mag_awm
 
 --[[
 ATT = {}
@@ -136,21 +136,21 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_awm.mdl"
 ATT.ActivateElements = {"uplp_awp_mag_awm"}
 -- ATT.RequireElements = {"uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.DamageMinMult = 1.25
 ATT.DamageMaxMult = 0.75
 -- ATT.RangeMaxMult = 1.2
 -- ATT.RangeMinMult = 0.65
 -- ATT.PhysBulletMuzzleVelocityMult = 1.4
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.45
 ATT.RecoilAutoControlMult = 0.25
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awm")
 --]]
 
-///////////////////////////////////////      uplp_awp_mag_awp
+---------- uplp_awp_mag_awp
 
 
 ATT = {}
@@ -168,13 +168,13 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
 
 ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.1
 ATT.CycleTimeMult = 0.8
 ATT.Ammo = "357"
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 55 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.75
@@ -186,7 +186,7 @@ ATT.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageM
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
 
-///////////////////////////////////////      uplp_awp_mag_awp_big
+---------- uplp_awp_mag_awp_big
 
 
 ATT = {}
@@ -203,19 +203,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_big.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	if anim == "reload" or anim == "reload_empty" then
-		return anim .. "_ext"
-	end
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_ext"
+    end
 end
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 8
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.1
 ATT.CycleTimeMult = 0.8
 ATT.Ammo = "357"
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 55 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.75
@@ -226,7 +226,7 @@ ATT.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageM
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
 }
 
@@ -235,7 +235,7 @@ ATT.ActivateElements = {"uplp_awp_mag_awp_big"}
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_big")
 
 
-///////////////////////////////////////      uplp_awp_mag_awp_tac
+---------- uplp_awp_mag_awp_tac
 
 
 ATT = {}
@@ -253,9 +253,9 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_tac.mdl"
 
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}
 
-/// Positives
+-- Positives
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.25
 ATT.RecoilAutoControlMult = 0.75
 ATT.CycleTimeMult = 0.9
@@ -271,8 +271,8 @@ ATT.RangeMax = 45 * 39.37 -- How far in M the bullets need to go to deal DamageM
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")
 
 
-////////////////////      STOCKS
-///////////////////////////////////////      uplp_awp_stock_at
+-------------------- STOCKS
+---------- uplp_awp_stock_at
 
 
 ATT = {}
@@ -291,7 +291,7 @@ ATT.ActivateElements = {"uplp_awp_stock_at", "uplp_awp_stock"}
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_at")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx
+---------- uplp_awp_stock_atx
 
 
 ATT = {}
@@ -312,18 +312,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx_blue
+---------- uplp_awp_stock_atx_blue
 
 
 ATT = {}
@@ -344,18 +344,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_blue")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx_gray
+---------- uplp_awp_stock_atx_gray
 
 
 ATT = {}
@@ -376,18 +376,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_gray")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx_green
+---------- uplp_awp_stock_atx_green
 
 
 ATT = {}
@@ -408,18 +408,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_green")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx_orange
+---------- uplp_awp_stock_atx_orange
 
 
 ATT = {}
@@ -440,18 +440,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_orange")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx_purple
+---------- uplp_awp_stock_atx_purple
 
 
 ATT = {}
@@ -472,18 +472,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_purple")
 
 
-///////////////////////////////////////      uplp_awp_stock_atx_white
+---------- uplp_awp_stock_atx_white
 
 
 ATT = {}
@@ -504,18 +504,18 @@ ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock", "uplp_awp_stock"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_white")
 
 
-///////////////////////////////////////      uplp_awp_stock_awm
+---------- uplp_awp_stock_awm
 
 
 ATT = {}
@@ -534,7 +534,7 @@ ATT.ActivateElements = {"uplp_awp_stock_awm", "uplp_awp_stock"}
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm")
 
 
-///////////////////////////////////////      uplp_awp_stock_awp
+---------- uplp_awp_stock_awp
 
 
 -- ATT = {}
@@ -554,7 +554,7 @@ ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm")
 -- ARC9.LoadAttachment(ATT, "uplp_awp_stock_awp")
 
 
-///////////////////////////////////////      uplp_awp_stock_tube
+---------- uplp_awp_stock_tube
 
 
 ATT = {}
@@ -580,19 +580,19 @@ ATT.Attachments = {
     },
 }
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.25
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_tube")
 
 
-////////////////////      BIPOD
-///////////////////////////////////////      uplp_awp_bp
+-------------------- BIPOD
+---------- uplp_awp_bp
 
 
 ATT = {}
@@ -608,13 +608,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_bp"}
 
-/// Positives
+-- Positives
 ATT.Bipod = true
 
 ARC9.LoadAttachment(ATT, "uplp_awp_bp")
 
 
-///////////////////////////////////////      uplp_awp_bp_atx
+---------- uplp_awp_bp_atx
 
 
 ATT = {}
@@ -630,18 +630,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_bp_atx"}
 
-/// Positives
+-- Positives
 ATT.Bipod = true
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_awp_bp_atx")
 
 
-////////////////////      REAR SIGHT
-///////////////////////////////////////      uplp_awp_rs
+-------------------- REAR SIGHT
+---------- uplp_awp_rs
 
 
 ATT = {}

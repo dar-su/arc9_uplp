@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/fsrs/"
 
-///////////////////////////////////////      uplp_ar15_fs_mbus
+---------- uplp_ar15_fs_mbus
 
 
 ATT = {}
@@ -25,7 +25,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_mbus")
 
 
-///////////////////////////////////////      uplp_ar15_fs_scalar
+---------- uplp_ar15_fs_scalar
 
 
 ATT = {}
@@ -48,7 +48,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_scalar")
 
 
-///////////////////////////////////////      uplp_ar15_fs_type1
+---------- uplp_ar15_fs_type1
 
 
 ATT = {}
@@ -71,7 +71,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type1")
 
 
-///////////////////////////////////////      uplp_ar15_fs_type2
+---------- uplp_ar15_fs_type2
 
 
 ATT = {}
@@ -94,7 +94,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type2")
 
 
-///////////////////////////////////////      uplp_ar15_fs_utg
+---------- uplp_ar15_fs_utg
 
 
 ATT = {}

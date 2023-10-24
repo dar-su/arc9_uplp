@@ -13,13 +13,13 @@ ATT.Icon = Material(iconfolder .. "brlong.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.8
 ATT.RangeMaxMult = 1.1
 ATT.RangeMinMult = 1.2
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
@@ -38,11 +38,11 @@ ATT.Icon = Material(iconfolder .. "brcomp.png", "mips smooth")
 ATT.Category = "uplp_molot_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -63,11 +63,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_molot_brl_short"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -88,11 +88,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_molot_brl_short"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.7
 ATT.AimDownSightsTimeMult = 0.85
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.9
@@ -123,14 +123,14 @@ ATT.Attachments = {
         Category = {"uplp_grip_vert"},
         Pos = Vector(4, 0, 0.25),
         Ang = Angle(0, 0, 0),
-		MergeSlots = {2},
+        MergeSlots = {2},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_horiz"},
         Pos = Vector(5, 0, 0.3),
         Ang = Angle(0, 0, 0),
-		Hidden = true,
+        Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -138,7 +138,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(2.65, 1.1, -0.8),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -185,7 +185,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.135, -0.9),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -216,7 +216,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(3, 1.135, -0.9),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -247,7 +247,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(0.75, 1.135, -0.75),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -278,7 +278,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(0.75, 1.135, -0.75),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -309,7 +309,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(0.75, 1.135, -0.75),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -363,7 +363,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(-4.75, 1.4, -0.75),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical", "uplp_molot_brl_short"},
+        ExcludeElements = {"uplp_no_tactical", "uplp_molot_brl_short"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -371,8 +371,8 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(1.5, 1.4, -0.75),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
-		RequireElements = {"uplp_molot_brl_short"},
+        ExcludeElements = {"uplp_no_tactical"},
+        RequireElements = {"uplp_molot_brl_short"},
     },
 }
 
@@ -392,11 +392,11 @@ ATT.Icon = Material(iconfolder .. "boltl.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RPMMult = 1.25
 ATT.ReloadTimeMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.15
 ATT.RecoilAutoControlMult = 0.5
 ATT.DamageMaxMult = 0.9
@@ -415,11 +415,11 @@ ATT.Icon = Material(iconfolder .. "bolth.png", "mips smooth")
 ATT.Category = "uplp_molot_bolt"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.85
 ATT.RecoilAutoControlMult = 1.5
 
-/// Negatives
+-- Negatives
 ATT.RPMMult = 0.75
 ATT.ReloadTimeMult = 1.05
 
@@ -429,7 +429,7 @@ ARC9.LoadAttachment(ATT, "uplp_molot_bolt_heavy")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "9-Round Extended"
 ATT.CompactName = "9R Ext"
@@ -445,7 +445,7 @@ ATT.DropMagazineVelocity = Vector(0, -30, 15)
 
 ATT.ClipSize = 9
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
 }
 
@@ -468,14 +468,14 @@ ATT.Icon = Material(iconfolder .. "drum.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.ClipSize = 19
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.35
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
 }
 
@@ -486,7 +486,7 @@ ATT.DropMagazineQCA = 5
 ATT.SuppressEmptySuffix = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    if anim == "reload" and wep:Clip1() == 0 then 
+    if anim == "reload" and wep:Clip1() == 0 then
         return anim .. "_empty_drum" -- becuse we supress empty suffix empty reloads get ignored too
     end
 
@@ -508,14 +508,14 @@ ATT.Icon = Material(iconfolder .. "drumsoda.png", "mips smooth")
 ATT.Category = "uplp_molot_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.ClipSize = 19
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.35
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
 }
 
@@ -526,7 +526,7 @@ ATT.DropMagazineQCA = 5
 ATT.SuppressEmptySuffix = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    if anim == "reload" and wep:Clip1() == 0 then 
+    if anim == "reload" and wep:Clip1() == 0 then
         return anim .. "_empty_drum" -- becuse we supress empty suffix empty reloads get ignored too
     end
 
@@ -552,10 +552,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_vepr_default.mdl"
 -- ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.SpreadAdd = -0.025
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_vepr")

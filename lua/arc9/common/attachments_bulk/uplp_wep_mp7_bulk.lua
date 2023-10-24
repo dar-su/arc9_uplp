@@ -2,8 +2,8 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/mp7/"
 
-////////////////////      STOCKS
-///////////////////////////////////////      uplp_mp7_stock_folded
+-------------------- STOCKS
+---------- uplp_mp7_stock_folded
 
 
 ATT = {}
@@ -19,11 +19,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp7_stock_folded"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.8
 ATT.SprintToFireTimeMult = 0.8
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.2
 ATT.RecoilAutoControlMult = 0.75
 ATT.VisualRecoilMult = 1.5
@@ -32,8 +32,8 @@ ATT.VisualRecoilMult = 1.5
 ARC9.LoadAttachment(ATT, "uplp_mp7_stock_folded")
 
 
-////////////////////      MAGAZINES
-///////////////////////////////////////      uplp_mp7_mag_20
+-------------------- MAGAZINES
+---------- uplp_mp7_mag_20
 
 
 ATT = {}
@@ -50,27 +50,27 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp7_mag_20"}
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_20.mdl"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 -- ATT.ReloadTimeMult = 0.9
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
 }
 
-/// Negatives
+-- Negatives
 ATT.ClipSizeOverride = 20
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_20"
 end
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_mag_20")
 
 
-////////////////////      IRON SIGHTS
-///////////////////////////////////////      uplp_mp7_sight_folded
+-------------------- IRON SIGHTS
+---------- uplp_mp7_sight_folded
 
 
 ATT = {}
@@ -88,14 +88,14 @@ ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.ExcludeElements = {"uplp_backup_optic"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_sight_folded")
 
 
-////////////////////      "GRIP"
-///////////////////////////////////////      uplp_mp7_grip_none
+-------------------- "GRIP"
+---------- uplp_mp7_grip_none
 
 
 ATT = {}
@@ -117,12 +117,12 @@ ATT.ModelOffset = Vector(-19, -2.4, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.DeployTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.2
 ATT.RecoilAutoControlMult = 0.8
 

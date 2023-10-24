@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ar15/"
 
-///////////////////////////////////////      uplp_ar15_reciever_m16
+---------- uplp_ar15_reciever_m16
 
 
 ATT = {}
@@ -21,26 +21,26 @@ ATT.PostBurstDelay = 0.2
 ATT.RPM = 900
 ATT.RunawayBurst = true
 ATT.Firemodes = {
-    { 
-        Mode = 3, -- 3bst 
-        RPM = 900, 
+    {
+        Mode = 3, -- 3bst
+        RPM = 900,
         PoseParam = 1
     },
-    { 
+    {
         Mode = 1, -- Semi
-        RPM = 450, 
+        RPM = 450,
         PoseParam = 2,
-        PostBurstDelay = 0 
+        PostBurstDelay = 0
     }
 }
--- ATT.CustomPros = { 
+-- ATT.CustomPros = {
 --     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 -- }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m16")
 
 
-///////////////////////////////////////      uplp_ar15_reciever_modern
+---------- uplp_ar15_reciever_modern
 
 
 ATT = {}
@@ -58,7 +58,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern")
 
 
-///////////////////////////////////////      uplp_ar15_reciever_modern_black
+---------- uplp_ar15_reciever_modern_black
 
 
 ATT = {}
@@ -76,7 +76,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_black")
 
 
-///////////////////////////////////////      uplp_ar15_reciever_modern_smg
+---------- uplp_ar15_reciever_modern_smg
 
 
 ATT = {}
@@ -95,7 +95,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_smg")
 
 
-///////////////////////////////////////      uplp_ar15_reciever_modern_black_smg
+---------- uplp_ar15_reciever_modern_black_smg
 
 
 ATT = {}

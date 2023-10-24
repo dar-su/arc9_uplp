@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ar15/"
 
-///////////////////////////////////////      uplp_ar15_chandle_modern
+---------- uplp_ar15_chandle_modern
 
 
 ATT = {}
@@ -25,7 +25,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_modern")
 
 
-///////////////////////////////////////      uplp_ar15_chandle_std
+---------- uplp_ar15_chandle_std
 
 
 ATT = {}
@@ -48,7 +48,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_std")
 
 
-///////////////////////////////////////      uplp_ar15_chandle_tac
+---------- uplp_ar15_chandle_tac
 
 
 ATT = {}
@@ -71,7 +71,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tac")
 
 
-///////////////////////////////////////      uplp_ar15_chandle_tacblack
+---------- uplp_ar15_chandle_tacblack
 
 
 ATT = {}

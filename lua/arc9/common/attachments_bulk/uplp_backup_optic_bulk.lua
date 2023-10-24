@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
-///////////////////////////////////////      uplp_backup_optic_rmr
+---------- uplp_backup_optic_rmr
 
 
 ATT = {}
@@ -25,8 +25,8 @@ ATT.Sights = {
         Ang = Angle(0, -0, 45),
         Magnification = 1.15,
         ViewModelFOV = 30,
-		PeekPos = Vector(0, 2, -1),
-		PeekAng = Angle(0, 0, 0),
+        PeekPos = Vector(0, 2, -1),
+        PeekAng = Angle(0, 0, 0),
     }
 }
 
@@ -34,7 +34,7 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig45.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 100
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 
 ATT.Category = "uplp_backup_optic"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -44,7 +44,7 @@ ATT.ModelOffset = Vector(-0.75, 0, -0.12)
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_rmr")
 
 
-///////////////////////////////////////      uplp_backup_optic_is
+---------- uplp_backup_optic_is
 
 
 ATT = {}
@@ -67,8 +67,8 @@ ATT.Sights = {
         Ang = Angle(0, -0, 45),
         Magnification = 1.15,
         ViewModelFOV = 30,
-		PeekPos = Vector(0, 2, -1),
-		PeekAng = Angle(0, 0, 0),
+        PeekPos = Vector(0, 2, -1),
+        PeekAng = Angle(0, 0, 0),
     }
 }
 
@@ -80,7 +80,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_is")
 
 
-///////////////////////////////////////      uplp_backup_optic_is_front
+---------- uplp_backup_optic_is_front
 
 
 ATT = {}

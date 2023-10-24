@@ -2,8 +2,8 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ak/"
 
-////////////////////      FRAMES / MAGAZINES
-///////////////////////////////////////      uplp_ak_smg_rec_vityaz
+-------------------- FRAMES / MAGAZINES
+---------- uplp_ak_smg_rec_vityaz
 
 ATT.PrintName = "\"Vityaz\" 30-Round Magazine"
 ATT.CompactName = "\"Vityaz\""
@@ -25,7 +25,7 @@ ATT.ModelOffset = Vector(-13.2, -2.3, 6.35)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_vityaz")
 
-///////////////////////////////////////      uplp_ak_smg_rec_vityaz_tac
+---------- uplp_ak_smg_rec_vityaz_tac
 
 ATT = {}
 
@@ -51,7 +51,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_919_tac.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_vityaz_tac")
 
-///////////////////////////////////////      uplp_ak_smg_rec_bizon
+---------- uplp_ak_smg_rec_bizon
 
 ATT = {}
 
@@ -92,7 +92,7 @@ ATT.BulletBones = { -- im suprised that this works in att
 	[2] = "bullet2bizon",
 }
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 64
 ATT.RPMMult = 0.85
 ATT.AimDownSightsTimeMult = 1.2
@@ -112,7 +112,7 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_bizon")
 
-///////////////////////////////////////      uplp_ak_smg_rec_bizon_old
+---------- uplp_ak_smg_rec_bizon_old
 
 ATT = {}
 
@@ -153,7 +153,7 @@ ATT.BulletBones = { -- im suprised that this works in att
 	[2] = "bullet2bizon",
 }
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 64
 ATT.RPMMult = 0.85
 ATT.AimDownSightsTimeMult = 1.2
@@ -173,8 +173,8 @@ ATT.Attachments = {
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_bizon_old")
 
-////////////////////      BARRELS
-///////////////////////////////////////      uplp_ak_smg_brl_long
+-------------------- BARRELS
+---------- uplp_ak_smg_brl_long
 
 ATT = {}
 
@@ -186,18 +186,18 @@ ATT.Icon = Material(iconfolder .. "barr/vlong.png", "mips smooth")
 ATT.Category = "uplp_ak_barrel_smg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.3
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_long")
 
-///////////////////////////////////////      uplp_ak_smg_brl_ppk20_long
+---------- uplp_ak_smg_brl_ppk20_long
 
 ATT = {}
 
@@ -220,12 +220,12 @@ ATT.Attachments = {
     },
 }
 
-/// Positives
+-- Positives
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.3
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
 
@@ -235,8 +235,8 @@ ATT.ActivateElements = {
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_ppk20_long")
 
-////////////////////      RECEIVERS
-///////////////////////////////////////      uplp_ak_smg_conf_ppk20
+-------------------- RECEIVERS
+---------- uplp_ak_smg_conf_ppk20
 
 ATT = {}
 
@@ -294,18 +294,18 @@ ATT.Attachments = {
     },
 }
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_conf_ppk20")
 
-///////////////////////////////////////      uplp_ak_smg_bizon_optic_alt
+---------- uplp_ak_smg_bizon_optic_alt
 
 -- Temporary (?) fix
 ATT = {}

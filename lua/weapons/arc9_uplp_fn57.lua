@@ -3,11 +3,11 @@ SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
-//// FUNDAMENTALS
+---- FUNDAMENTALS
 
 SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
 
-//// Name, Description, Class, Category and Trivia
+---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_fn57")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_fn57_desc")
 
@@ -16,7 +16,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol") -- In the Spawn
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_fn57_real"),
-    
+
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_fn" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.7x28mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase( "uplp_mechanism_delayed"),
@@ -36,7 +36,7 @@ SWEP.StandardPresets = {
 
 }
 
-//// Muzzle Effects, Shell Effects, Camera
+---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_1"
 SWEP.MuzzleEffectQCA = 1
 
@@ -51,13 +51,13 @@ SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
-//// View & Worldmodel
+---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_fn57.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_fn57.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.TPIKParentToSpine4 = true  
+SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
@@ -72,7 +72,7 @@ SWEP.ViewModelFOVBase = 75
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
-//// Weapon Stats and Behaviour
+---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 45 / 1.25 -- Damage dealt point-blank
 SWEP.DamageMin = 25 / 1.25 -- Damage dealt after maximum range
@@ -212,7 +212,7 @@ SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
-//// Sounds
+---- Sounds
 
 local pathRZ = "uplp_rz/57/"
 -- urbna!
@@ -295,7 +295,7 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
-//// Animations
+---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
@@ -420,7 +420,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -434,7 +434,7 @@ SWEP.Animations = {
     },    
     ["holster_empty"] = {
         Source = "holster_empty",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -445,7 +445,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },    
+    },
 
 
     ["fire"] = {
@@ -466,7 +466,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.55,
+        MinProgress = 0.55,
         Mult = 1.02,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -489,7 +489,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.7,
+        MinProgress = 0.7,
         Mult = 1.02,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -516,7 +516,7 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-		MinProgress = 0.55,
+        MinProgress = 0.55,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -539,7 +539,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-		MinProgress = 0.7,
+        MinProgress = 0.7,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -581,7 +581,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["inspect_empty"] = {
         Source = "inspect_empty",
         EventTable = {
@@ -597,7 +597,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
     ["toggle"] = {
         Source = "modeswitch",
@@ -607,7 +607,7 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
-	
+
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
@@ -618,13 +618,13 @@ SWEP.Animations = {
     },
 }
 
-//// Attachments
+---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-	if eles["uplp_optic_direct"] then mdl:SetBodygroup(3, 2) end
-	if eles["uplp_muzzle_pistol"] then mdl:SetBodygroup(5, 1) end
+    if eles["uplp_optic_direct"] then mdl:SetBodygroup(3, 2) end
+    if eles["uplp_muzzle_pistol"] then mdl:SetBodygroup(5, 1) end
 end
 
 SWEP.AttachmentElements = {
@@ -635,11 +635,11 @@ SWEP.AttachmentElements = {
     ["uplp_fn57_skin_tan_full"] = { Bodygroups = { { 0, 1 }, { 1, 1 }, { 3, 1 } } },
     ["uplp_fn57_skin_tan_half"] = { Bodygroups = { { 0, 1 } } },
     ["uplp_fn57_skin_panda"] = { Bodygroups = { { 1, 1 } } },
-	
+
     ["uplp_optic_tacrds"] = { AttPosMods = {
-	[1] = { Pos = Vector(0, -0.9, -1.55), Scale = 1 },
-	}},
-	
+    [1] = { Pos = Vector(0, -0.9, -1.55), Scale = 1 },
+    }},
+
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -655,7 +655,7 @@ SWEP.Attachments = {
         -- Pos = Vector(0, -2, -1.6),
         ExtraSightDistance = 1,
         Ang = Angle(90, 90, 180),
-		Scale = 1
+        Scale = 1
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -695,7 +695,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0, 0.8),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 
 

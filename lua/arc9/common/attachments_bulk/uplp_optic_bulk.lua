@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
-///////////////////////////////////////      uplp_optic_553
+---------- uplp_optic_553
 
 
 ATT = {}
@@ -45,7 +45,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
@@ -53,7 +53,7 @@ ATT.ModelOffset = Vector(0, 0, -0.1)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_553")
 
-///////////////////////////////////////      uplp_optic_kobra
+---------- uplp_optic_kobra
 
 
 ATT = {}
@@ -97,13 +97,13 @@ ATT.HoloSightDepthAdjustment = 0.01
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_optic_kobra")
 
-///////////////////////////////////////      uplp_optic_rx1
+---------- uplp_optic_rx1
 
 
 ATT = {}
@@ -146,13 +146,13 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rx1")
 
-///////////////////////////////////////      uplp_optic_srs
+---------- uplp_optic_srs
 
 
 ATT = {}
@@ -195,13 +195,13 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_optic_srs")
 
-///////////////////////////////////////      uplp_optic_compm4
+---------- uplp_optic_compm4
 
 
 ATT = {}
@@ -239,19 +239,19 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 180
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = 0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm4")
 
-///////////////////////////////////////      uplp_optic_dcl110
+---------- uplp_optic_dcl110
 
 ATT = {}
 
@@ -282,7 +282,7 @@ ATT.Sights = {
         Pos = Vector(-0.64, 13, -2.49),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
-        RTScopeFOV = 38/4,
+        RTScopeFOV = 38 / 4,
         Blur = false,
         ViewModelFOV = 30
     },
@@ -301,16 +301,16 @@ ATT.HoloSightAlwaysOn = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 57/4
+ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo4rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
+ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.HoloSightDepthAdjustment = 0.01
 
-ATT.DrawFunc = function(swep, model, wm) 
+ATT.DrawFunc = function(swep, model, wm)
     if !wm then
         model:SetBodygroup(1, 2-swep:GetMultiSight())
     end
@@ -321,13 +321,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(2, 0, 0)
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SpeedMultSights = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
-///////////////////////////////////////      uplp_optic_acog
+---------- uplp_optic_acog
 
 
 ATT = {}
@@ -351,7 +351,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
-        RTScopeFOV = 57/4,
+        RTScopeFOV = 57 / 4,
     },
     {
         Pos = Vector(0, 8, -2.75),
@@ -370,26 +370,26 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/4
+ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_optic_acog")
 
-///////////////////////////////////////      uplp_optic_elcan
+---------- uplp_optic_elcan
 
 
 ATT = {}
@@ -413,7 +413,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 45,
-        RTScopeFOV = 57/4,
+        RTScopeFOV = 57 / 4,
     },
 }
 
@@ -424,13 +424,13 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/4
+ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/elca.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
@@ -439,14 +439,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(1, 0, 0)
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_optic_elcan")
 
 
-///////////////////////////////////////      uplp_optic_bigass
+---------- uplp_optic_bigass
 
 
 ATT = {}
@@ -470,7 +470,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/8,
+        RTScopeFOV = 57 / 8,
         Blur = false,
     },
     -- {
@@ -478,7 +478,7 @@ ATT.Sights = {
         -- Ang = Angle(0, -0, 0),
         -- Magnification = 1.25,
         -- ViewModelFOV = 20,
-        -- RTScopeFOV = 57/16,
+        -- RTScopeFOV = 57 / 16,
         -- Blur = false,
     -- },
 }
@@ -490,17 +490,17 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
--- ATT.RTScopeFOV = 57/8
+-- ATT.RTScopeFOV = 57 / 8
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 4
-ATT.RTScopeFOVMin = 57/8
-ATT.RTScopeFOVMax = 57/16
+ATT.RTScopeFOVMin = 57 / 8
+ATT.RTScopeFOVMax = 57 / 16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
@@ -548,7 +548,7 @@ ATT.DrawFunc = function(swep, model, wm)
     ang:RotateAroundAxis(ang:Forward(), 90)
     ang:RotateAroundAxis(ang:Right(), 90)
 
-	cam.Start3D2D(pos, ang, 0.0025)
+    cam.Start3D2D(pos, ang, 0.0025)
         draw.SimpleText("0000", "arc9uplp_bigass_range", 0, 1, textbgcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
         draw.SimpleText(text, "arc9uplp_bigass_range", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     cam.End3D2D()
@@ -557,14 +557,14 @@ end
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SpeedMultSights = 0.8
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass")
 
 
-///////////////////////////////////////      uplp_optic_bigass_thermal
+---------- uplp_optic_bigass_thermal
 
 
 ATT = {}
@@ -588,7 +588,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/8,
+        RTScopeFOV = 57 / 8,
         Blur = false,
     },
     -- {
@@ -596,7 +596,7 @@ ATT.Sights = {
         -- Ang = Angle(0, -0, 0),
         -- Magnification = 1.25,
         -- ViewModelFOV = 20,
-        -- RTScopeFOV = 57/16,
+        -- RTScopeFOV = 57 / 16,
         -- Blur = false,
     -- },
 }
@@ -610,23 +610,23 @@ ATT.RTScopeSubmatIndex = 2
 -- ATT.RTScopeFOV = 57/12
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 4
-ATT.RTScopeFOVMin = 57/8
-ATT.RTScopeFOVMax = 57/16
+ATT.RTScopeFOVMin = 57 / 8
+ATT.RTScopeFOVMax = 57 / 16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 2
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
 ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 5/255,
-    ["$pp_colour_addg"] = 74/255,
-    ["$pp_colour_addb"] = 121/255,
+    ["$pp_colour_addr"] = 5 / 255,
+    ["$pp_colour_addg"] = 74 / 255,
+    ["$pp_colour_addb"] = 121 / 255,
     ["$pp_colour_brightness"] = 0.07,
     ["$pp_colour_contrast"] = 0.69,
     ["$pp_colour_colour"] = 0.12,
@@ -635,9 +635,9 @@ ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_mulb"] = 0
 }
 ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 5/255,
-    ["$pp_colour_addg"] = 74/255,
-    ["$pp_colour_addb"] = 200/255,
+    ["$pp_colour_addr"] = 5 / 255,
+    ["$pp_colour_addg"] = 74 / 255,
+    ["$pp_colour_addb"] = 200 / 255,
     ["$pp_colour_brightness"] = -0.6,
     ["$pp_colour_contrast"] = 1,
     ["$pp_colour_colour"] = 0.9,
@@ -647,7 +647,7 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
 }
 
 ATT.RTScopeCustomPPFunc = function(swep)
-    DrawMotionBlur(0.7, 0.85, 1/40)
+    DrawMotionBlur(0.7, 0.85, 1 / 40)
     -- DrawBloom(0.31, 1.4, 1.15, 0, 0, 1, 1, 1, 1)
     -- DrawSharpen(4, 0.6)
 end
@@ -672,11 +672,11 @@ if CLIENT then
     })
 end
 
-local textoffset = Vector(-2.08, 0, 2.52)
-local textbgcolor = Color(19, 48, 33, 58)
-local textcolor = Color(0, 24, 10)
-local text = ""
-local nextcall = CurTime()
+-- local textoffset = Vector(-2.08, 0, 2.52)
+-- local textbgcolor = Color(19, 48, 33, 58)
+-- local textcolor = Color(0, 24, 10)
+-- local text = ""
+-- local nextcall = CurTime()
 
 ATT.DrawFunc = function(swep, model, wm)
     if !IsValid(swep:GetOwner()) or !swep:GetOwner():IsPlayer() then return end
@@ -705,7 +705,7 @@ ATT.DrawFunc = function(swep, model, wm)
     ang:RotateAroundAxis(ang:Forward(), 90)
     ang:RotateAroundAxis(ang:Right(), 90)
 
-	cam.Start3D2D(pos, ang, 0.0025)
+    cam.Start3D2D(pos, ang, 0.0025)
         draw.SimpleText("0000", "arc9uplp_bigass_range", 0, 1, textbgcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
         draw.SimpleText(text, "arc9uplp_bigass_range", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     cam.End3D2D()
@@ -714,14 +714,14 @@ end
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SpeedMultSights = 0.8
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
 
-///////////////////////////////////////      uplp_optic_d1
+---------- uplp_optic_d1
 
 
 ATT = {}
@@ -752,7 +752,7 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 250
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -760,7 +760,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
 
-///////////////////////////////////////      uplp_optic_d1high
+---------- uplp_optic_d1high
 
 
 ATT = {}
@@ -795,7 +795,7 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 250
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -803,7 +803,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_optic_d1high")
 
 
-///////////////////////////////////////      uplp_optic_tacrds
+---------- uplp_optic_tacrds
 
 
 ATT = {}
@@ -842,7 +842,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
 
-///////////////////////////////////////      uplp_optic_tacrds_direct
+---------- uplp_optic_tacrds_direct
 
 
 ATT = {}
@@ -880,7 +880,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds_direct")
 
-///////////////////////////////////////      uplp_optic_rmr_direct
+---------- uplp_optic_rmr_direct
 
 
 ATT = {}
@@ -911,14 +911,14 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 188
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 
 ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
 
-///////////////////////////////////////      uplp_optic_rmr
+---------- uplp_optic_rmr
 
 
 ATT = {}
@@ -949,14 +949,14 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 188
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
-///////////////////////////////////////      uplp_optic_rmrhigh
+---------- uplp_optic_rmrhigh
 
 
 ATT = {}
@@ -987,14 +987,14 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 188
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
-///////////////////////////////////////      uplp_optic_notacog
+---------- uplp_optic_notacog
 
 
 ATT = {}
@@ -1018,7 +1018,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 45,
-        RTScopeFOV = 57/3,
+        RTScopeFOV = 57 / 3,
     }
 }
 
@@ -1029,26 +1029,26 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/3
+ATT.RTScopeFOV = 57 / 3
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/somescope.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_optic_notacog")
 
-///////////////////////////////////////      uplp_optic_compm1
+---------- uplp_optic_compm1
 
 ATT = {}
 
@@ -1075,7 +1075,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
-        RTScopeFOV = 57/3,
+        RTScopeFOV = 57 / 3,
     }
 }
 
@@ -1086,27 +1086,27 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/2
+ATT.RTScopeFOV = 57 / 2
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm1")
 
 
-///////////////////////////////////////      uplp_optic_sniper
+---------- uplp_optic_sniper
 
 
 ATT = {}
@@ -1133,7 +1133,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/6,
+        RTScopeFOV = 57 / 6,
         Blur = false,
         Reticle = R0
     },
@@ -1155,24 +1155,24 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
--- ATT.RTScopeFOV = 57/6
+-- ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
-ATT.RTScopeFOVMin = 57/6
-ATT.RTScopeFOVMax = 57/10
+ATT.RTScopeFOVMin = 57 / 6
+ATT.RTScopeFOVMax = 57 / 10
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SpeedMultSights = 0.85
 
@@ -1181,7 +1181,7 @@ ATT.ModelOffset = Vector(-1.25, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_optic_sniper")
 
 
-///////////////////////////////////////      uplp_optic_ez6x
+---------- uplp_optic_ez6x
 
 
 ATT = {}
@@ -1199,8 +1199,8 @@ ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
 
-local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
-local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
+R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
+R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
@@ -1208,7 +1208,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/6,
+        RTScopeFOV = 57 / 6,
         Blur = false,
         -- Reticle = R1
     },
@@ -1227,7 +1227,7 @@ ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 1)
 end
 
-ATT.DrawFunc = function(swep, model, wm) 
+ATT.DrawFunc = function(swep, model, wm)
     if !wm then
         model:SetBodygroup(1, 2-swep:GetMultiSight())
     end
@@ -1238,20 +1238,20 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
 ATT.RTScopeFOVMin = 40
-ATT.RTScopeFOVMax = 57/6
+ATT.RTScopeFOVMax = 57 / 6
 ATT.RTScopeReticle = R0
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SpeedMultSights = 0.9
 
@@ -1259,7 +1259,7 @@ ATT.ModelOffset = Vector(0.5, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_ez6x")
 
-///////////////////////////////////////      uplp_optic_ez8x
+---------- uplp_optic_ez8x
 
 
 ATT = {}
@@ -1283,7 +1283,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/6,
+        RTScopeFOV = 57 / 6,
         Blur = false,
     },
 }
@@ -1294,20 +1294,20 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/6
+ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SpeedMultSights = 0.95
 
@@ -1315,7 +1315,7 @@ ATT.ModelOffset = Vector(0.5, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_ez8x")
 
-///////////////////////////////////////      uplp_optic_pm3
+---------- uplp_optic_pm3
 
 
 ATT = {}
@@ -1348,7 +1348,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/6,
+        RTScopeFOV = 57 / 6,
         Blur = false,
     },
 }
@@ -1359,20 +1359,20 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/6
+ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SpeedMultSights = 0.85
 
@@ -1381,7 +1381,7 @@ ATT.ModelOffset = Vector(0.5, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_optic_pm3")
 
 
-///////////////////////////////////////      uplp_optic_testthermal
+---------- uplp_optic_testthermal
 --[[
 
 ATT = {}
@@ -1468,8 +1468,8 @@ ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 2
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
@@ -1482,7 +1482,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_testthermal")
 ]]--
 
 
-///////////////////////////////////////      uplp_optic_generic
+---------- uplp_optic_generic
 
 
 ATT = {}
@@ -1506,7 +1506,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/6,
+        RTScopeFOV = 57 / 6,
         Blur = false,
     },
 }
@@ -1517,20 +1517,20 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/6
+ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SpeedMultSights = 0.95
 
@@ -1539,7 +1539,7 @@ ATT.Scale = 0.82
 
 ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
-///////////////////////////////////////      uplp_optic_old
+---------- uplp_optic_old
 
 
 ATT = {}
@@ -1563,7 +1563,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
-        RTScopeFOV = 57/6,
+        RTScopeFOV = 57 / 6,
         Blur = false,
     },
 }
@@ -1574,20 +1574,20 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/7
+ATT.RTScopeFOV = 57 / 7
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/old.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SpeedMultSights = 0.95
 
@@ -1597,7 +1597,7 @@ ATT.Scale = 0.82
 ARC9.LoadAttachment(ATT, "uplp_optic_old")
 
 
-///////////////////////////////////////      uplp_optic_hhs1
+---------- uplp_optic_hhs1
 
 
 ATT = {}
@@ -1633,7 +1633,7 @@ ATT.Sights = {
     },
 }
 
-ATT.DrawFunc = function(swep, model, wm) 
+ATT.DrawFunc = function(swep, model, wm)
     if !wm then
         model:SetBodygroup(1, 2-swep:GetMultiSight())
     end
@@ -1651,18 +1651,18 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 57/4
+ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
@@ -1671,7 +1671,7 @@ ATT.ModelOffset = Vector(0.65, 0, -0.1)
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs1")
 
 
-///////////////////////////////////////      uplp_optic_hhs2
+---------- uplp_optic_hhs2
 
 
 ATT = {}
@@ -1707,7 +1707,7 @@ ATT.Sights = {
     },
 }
 
-ATT.DrawFunc = function(swep, model, wm) 
+ATT.DrawFunc = function(swep, model, wm)
     if !wm then
         model:SetBodygroup(1, 2-swep:GetMultiSight())
     end
@@ -1725,18 +1725,18 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 57/4
+ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo3rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
@@ -1745,7 +1745,7 @@ ATT.ModelOffset = Vector(1.3, 0, -0.1)
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs2")
 
 
-///////////////////////////////////////      uplp_optic_exps
+---------- uplp_optic_exps
 
 
 ATT = {}
@@ -1788,7 +1788,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
@@ -1797,7 +1797,7 @@ ATT.ModelOffset = Vector(0, 0, -0.1)
 ARC9.LoadAttachment(ATT, "uplp_optic_exps")
 
 
-///////////////////////////////////////      uplp_optic_holosun
+---------- uplp_optic_holosun
 
 
 ATT = {}
@@ -1840,7 +1840,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
@@ -1850,7 +1850,7 @@ ATT.Scale = 1.05
 ARC9.LoadAttachment(ATT, "uplp_optic_holosun")
 
 
-///////////////////////////////////////      uplp_optic_devo
+---------- uplp_optic_devo
 
 
 ATT = {}
@@ -1890,7 +1890,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SpeedMultSights = 0.95
 
@@ -1899,7 +1899,7 @@ ATT.ModelOffset = Vector(0, 0, -0.1)
 ARC9.LoadAttachment(ATT, "uplp_optic_devo")
 
 
-///////////////////////////////////////      uplp_optic_devom
+---------- uplp_optic_devom
 
 
 ATT = {}
@@ -1932,7 +1932,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
-		Blue = false,
+        Blue = false,
     },
 }
 
@@ -1948,20 +1948,20 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
-ATT.RTScopeFOV = 30/4
+ATT.RTScopeFOV = 30 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/devo.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 0.66
 ATT.RTScopeNoBlur = true
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
@@ -1970,7 +1970,7 @@ ATT.ModelOffset = Vector(2.25, 0, -0.1)
 ARC9.LoadAttachment(ATT, "uplp_optic_devom")
 
 
-///////////////////////////////////////      uplp_optic_dovetail_kobra
+---------- uplp_optic_dovetail_kobra
 
 
 ATT = {}
@@ -2011,14 +2011,14 @@ ATT.HoloSightDepthAdjustment = 0.01
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_kobra")
 
 
-///////////////////////////////////////      uplp_optic_dovetail_pso
+---------- uplp_optic_dovetail_pso
 
 
 ATT = {}
@@ -2043,7 +2043,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
-        RTScopeFOV = 57/3,
+        RTScopeFOV = 57 / 3,
     }
 }
 
@@ -2054,13 +2054,13 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57/2
+ATT.RTScopeFOV = 57 / 2
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
-ATT.RTScopeBlackBox = true 
-ATT.RTScopeBlackBoxShadow = true 
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
 
@@ -2068,7 +2068,7 @@ ATT.Category = "uplp_optic_dovetail"
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SpeedMultSights = 0.9
 

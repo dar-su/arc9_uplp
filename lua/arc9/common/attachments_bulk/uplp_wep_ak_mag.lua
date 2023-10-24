@@ -1,8 +1,10 @@
+local ATT = {}
+
 ----- 7.62 MAGS -----
 
 local iconfolder = "entities/uplp_attachements/ak/mag/"
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 7.62x39mm (Bakelite)"
 ATT.CompactName = "30R 7.62 (B)"
@@ -101,16 +103,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_40rnd"
 end
 
-ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 40
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 ATT.ReloadTimeMult = 1.05
@@ -132,16 +134,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_40rnd"
 end
 
-ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 40
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 ATT.ReloadTimeMult = 1.05
@@ -162,26 +164,26 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 
-ATT.DropMagazineTime = 22/30*0.92
+ATT.DropMagazineTime = 22 / 30 * 0.92
 ATT.DropMagazineVelocity = Vector(0, -10, 0)
 ATT.DropMagazineQCA = 5
-ATT.ShouldDropMag = false 
+ATT.ShouldDropMag = false
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_drum.mdl"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_drum"
     end
     return anim .. "_drum"
 end
 
-ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 75
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.ReloadTimeMult = 1.1
@@ -231,7 +233,7 @@ local shoot556distindoor = {
     pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
 }
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.45x39mm (Polymer)"
 ATT.CompactName = "30R 5.45 (P)"
@@ -254,7 +256,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
@@ -266,18 +268,18 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
@@ -285,7 +287,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.45x39mm (Bakelite)"
 ATT.CompactName = "30R 5.45 (B)"
@@ -308,7 +310,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
@@ -319,18 +321,18 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
@@ -339,7 +341,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_bak")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.45x39mm (SynPoly)"
 ATT.CompactName = "30R 5.45 (Poly)"
@@ -362,7 +364,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
@@ -373,18 +375,18 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
@@ -393,7 +395,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_pmag")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.45x39mm (AK-12)"
 ATT.CompactName = "30R 5.45 (12)"
@@ -416,7 +418,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
@@ -427,18 +429,18 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
@@ -447,7 +449,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_12")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "45-Round 5.45x39mm (Bakelite)"
 ATT.CompactName = "45R 5.45 (B)"
@@ -470,24 +472,24 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545_45rnd"
 end
 
-ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
 ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
@@ -496,7 +498,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 ATT.ClipSizeOverride = 45
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
@@ -508,7 +510,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "52-Round 5.45 Quadstacked"
 ATT.CompactName = "52R 5.45 (Q)"
@@ -531,24 +533,24 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
     return anim .. "_545_60rnd"
 end
 
-ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
 ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.2
@@ -557,7 +559,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 ATT.ClipSizeOverride = 52
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
 
@@ -569,7 +571,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_60")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "85-Round 5.45x39mm Drum"
 ATT.CompactName = "85R 5.45 (D)"
@@ -583,10 +585,10 @@ ATT.Folder = "5.45"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.DropMagazineTime = 22/30*0.92
+ATT.DropMagazineTime = 22 / 30 * 0.92
 ATT.DropMagazineVelocity = Vector(0, -10, 0)
 ATT.DropMagazineQCA = 5
-ATT.ShouldDropMag = false 
+ATT.ShouldDropMag = false
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_drum.mdl"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
@@ -599,24 +601,24 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_drum"
     end
     return anim .. "_drum"
 end
 
-ATT.ExcludeElements= {"uplp_ak_stock_underfold"}
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
 ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.7
 ATT.RangeMaxMult = 1.2
@@ -625,7 +627,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.26
 
 ATT.ClipSizeOverride = 85
 
-/// Negatives
+-- Negatives
 ATT.ReloadTimeMult = 1.1
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
@@ -655,7 +657,7 @@ local shoot556sil = {
     pathUT .. "556/fire-sup-06.ogg",
 }
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.56x45mm (Polymer)"
 ATT.CompactName = "30R 5.56 (P)"
@@ -678,7 +680,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_556"
     end
@@ -689,16 +691,16 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.65
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.95
 ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
@@ -709,7 +711,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.56x45mm (SynPoly)"
 ATT.CompactName = "30R 5.56 (MP)"
@@ -732,7 +734,7 @@ ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_556"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_556"
     end
@@ -743,16 +745,16 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.65
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.95
 ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
@@ -762,7 +764,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_pmag")
 
 -------------------------------------------
 
-local ATT = {}
+ATT = {}
 
 ATT.PrintName = "30-Round 5.56x45mm (AK-12)"
 ATT.CompactName = "30R 5.56 (12)"
@@ -796,16 +798,16 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RPMAdd = 50
 ATT.RecoilMult = 0.65
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.95
 ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
@@ -864,7 +866,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_308.mdl"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_308"
     end
@@ -875,14 +877,14 @@ ATT.Ammo = "357"
 ATT.MuzzleParticleOverride = "muzzleflash_svd"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [	"DAMAGE IN FULL-AUTO"	] = "-30%",
 }
 
-/// Positives
+-- Positives
 ATT.DamageMax = 70 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 30 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.75
@@ -892,7 +894,7 @@ ATT.RangeMax = 160 * 39.37 -- How far in M the bullets need to go to deal Damage
 
 ATT.PhysBulletMuzzleVelocityMult = 1.119
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.2
 ATT.RPMAdd = -100
 ATT.ClipSizeOverride = 20
@@ -900,10 +902,10 @@ ATT.ReloadTimeMult = 1.15
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-	RPM = 400, 
-	PoseParam = 1 },
+    RPM = 400,
+    PoseParam = 1 },
     { Mode = -1, -- Full
-	PoseParam = 2,
+    PoseParam = 2,
     DamageMaxMult = 0.7,
     DamageMinMult = 0.7 }
 }
@@ -970,7 +972,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_939.mdl"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_939.mdl"
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then
         return anim .. "_545"
     end
@@ -981,18 +983,18 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_1"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
 }
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.6
 ATT.RPMAdd = 150
 
 ATT.RangeMaxMult = 0.25
 ATT.RangeMinMult = 0.45
 
-/// Negatives
+-- Negatives
 ATT.DamageMax = 42 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 10 / 1.25 -- Damage dealt after maximum range
 ATT.ClipSizeOverride = 20

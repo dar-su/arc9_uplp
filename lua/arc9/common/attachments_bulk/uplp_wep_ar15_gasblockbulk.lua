@@ -5,7 +5,7 @@ local iconfolder = "entities/uplp_attachements/ar15/gas/"
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
 
-///////////////////////////////////////      uplp_ar15_gasblock_m16
+---------- uplp_ar15_gasblock_m16
 
 
 ATT = {}
@@ -31,7 +31,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16")
 
-///////////////////////////////////////      uplp_ar15_gasblock_m16_nosling
+---------- uplp_ar15_gasblock_m16_nosling
 
 
 ATT = {}
@@ -58,7 +58,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16_nosling")
 
 
-///////////////////////////////////////      uplp_ar15_gasblock_m16rail
+---------- uplp_ar15_gasblock_m16rail
 
 
 ATT = {}
@@ -85,7 +85,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
 
 
-///////////////////////////////////////      uplp_ar15_gasblock_min
+---------- uplp_ar15_gasblock_min
 
 --[[
 ATT = {}
@@ -110,7 +110,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
 --]]
 
-///////////////////////////////////////      uplp_ar15_gasblock_min_red
+---------- uplp_ar15_gasblock_min_red
 
 
 ATT = {}
@@ -135,7 +135,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min_red")
 
 
-///////////////////////////////////////      uplp_ar15_gasblock_rail
+---------- uplp_ar15_gasblock_rail
 
 
 ATT = {}

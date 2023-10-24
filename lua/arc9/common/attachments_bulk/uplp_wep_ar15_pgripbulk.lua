@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ar15/"
 
-///////////////////////////////////////      uplp_ar15_pgrip_416
+---------- uplp_ar15_pgrip_416
 
 
 ATT = {}
@@ -24,7 +24,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_416")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_massive
+---------- uplp_ar15_pgrip_massive
 
 
 ATT = {}
@@ -46,7 +46,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_massive")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_modern
+---------- uplp_ar15_pgrip_modern
 
 
 ATT = {}
@@ -68,7 +68,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_modern")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_psg
+---------- uplp_ar15_pgrip_psg
 
 
 ATT = {}
@@ -87,18 +87,18 @@ ATT.ModelBodygroups = "5"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_psg")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_skel
+---------- uplp_ar15_pgrip_skel
 
 
 ATT = {}
@@ -117,13 +117,13 @@ ATT.ModelBodygroups = "6"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_skel_red
+---------- uplp_ar15_pgrip_skel_red
 
 
 ATT = {}
@@ -142,13 +142,13 @@ ATT.ModelBodygroups = "7"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel_red")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_std
+---------- uplp_ar15_pgrip_std
 
 
 ATT = {}
@@ -170,7 +170,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_std")
 
 
-///////////////////////////////////////      uplp_ar15_pgrip_tac
+---------- uplp_ar15_pgrip_tac
 
 
 ATT = {}

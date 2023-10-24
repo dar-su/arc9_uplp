@@ -5,7 +5,7 @@ local iconfolder = "entities/uplp_attachements/ar15/hg/"
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
 
-///////////////////////////////////////      uplp_ar15_hg_grenadier
+---------- uplp_ar15_hg_grenadier
 
 
 ATT = {}
@@ -30,7 +30,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_grenadier")
 
 
-///////////////////////////////////////      uplp_ar15_hg_m16
+---------- uplp_ar15_hg_m16
 
 
 ATT = {}
@@ -52,7 +52,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m16")
 
 
-///////////////////////////////////////      uplp_ar15_hg_m16short
+---------- uplp_ar15_hg_m16short
 
 
 ATT = {}
@@ -74,7 +74,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m16short")
 
 
-///////////////////////////////////////      uplp_ar15_hg_mlok
+---------- uplp_ar15_hg_mlok
 
 
 ATT = {}
@@ -102,14 +102,14 @@ ATT.Attachments = {
         Category = {"uplp_tac_top"},
         Pos = Vector(-9, 0, -1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(0, 0, 0.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
 
 
-///////////////////////////////////////      uplp_ar15_hg_nwsu_s15
+---------- uplp_ar15_hg_nwsu_s15
 
 
 ATT = {}
@@ -134,7 +134,7 @@ ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15")
 
 
-///////////////////////////////////////      uplp_ar15_hg_nwsu_s15_red
+---------- uplp_ar15_hg_nwsu_s15_red
 
 
 ATT = {}
@@ -159,7 +159,7 @@ ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_red")
 
 
-///////////////////////////////////////      uplp_ar15_hg_nwsu_s15_xl
+---------- uplp_ar15_hg_nwsu_s15_xl
 
 
 ATT = {}
@@ -188,14 +188,14 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-10.6, 0, 0.95),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.5),
+        Icon_Offset = Vector(0, 0, -1.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl")
 
 
-///////////////////////////////////////      uplp_ar15_hg_nwsu_s15_xl_red
+---------- uplp_ar15_hg_nwsu_s15_xl_red
 
 
 ATT = {}
@@ -224,14 +224,14 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-10.6, 0, 0.95),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.5),
+        Icon_Offset = Vector(0, 0, -1.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl_red")
 
 
-///////////////////////////////////////      uplp_ar15_hg_ris
+---------- uplp_ar15_hg_ris
 
 
 ATT = {}
@@ -255,14 +255,14 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-9, 0, 0.95),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.5),
+        Icon_Offset = Vector(0, 0, -1.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
 
-///////////////////////////////////////      uplp_ar15_hg_tac
+---------- uplp_ar15_hg_tac
 
 
 ATT = {}
@@ -291,21 +291,21 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-10.7, 0, 1.05),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.5),
+        Icon_Offset = Vector(0, 0, -1.5),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac_top"},
         Pos = Vector(-8.12, 0, -1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(0, 0, 0.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
 
-///////////////////////////////////////      uplp_ar15_hg_tac_red
+---------- uplp_ar15_hg_tac_red
 
 
 ATT = {}
@@ -334,21 +334,21 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-10.7, 0, 1.05),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.5),
+        Icon_Offset = Vector(0, 0, -1.5),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac_top"},
         Pos = Vector(-8.12, 0, -1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(0, 0, 0.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 
 
-///////////////////////////////////////      uplp_ar15_hg_tacshort
+---------- uplp_ar15_hg_tacshort
 
 
 ATT = {}
@@ -375,14 +375,14 @@ ATT.Attachments = {
         Category = {"uplp_tac_top"},
         Pos = Vector(-2.65, 0, -1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(0, 0, 0.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 
 
-///////////////////////////////////////      uplp_ar15_hg_tacshort_red
+---------- uplp_ar15_hg_tacshort_red
 
 
 ATT = {}
@@ -409,14 +409,14 @@ ATT.Attachments = {
         Category = {"uplp_tac_top"},
         Pos = Vector(-2.65, 0, -1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0.5),
+        Icon_Offset = Vector(0, 0, 0.5),
     },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort_red")
 
 
-///////////////////////////////////////      uplp_ar15_hg_a1
+---------- uplp_ar15_hg_a1
 
 
 ATT = {}

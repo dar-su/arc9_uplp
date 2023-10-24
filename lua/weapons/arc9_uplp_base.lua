@@ -1,4 +1,4 @@
-//// This is mostly copied from Gunsmith Reloaded with alterations.
+---- This is mostly copied from Gunsmith Reloaded with alterations.
 
 SWEP.Base = "arc9_base"
 SWEP.Spawnable = false
@@ -14,13 +14,14 @@ SWEP.DefaultBodygroups = "00000000000000000000000" -- Might as well prepare for 
 SWEP.SpeedMultMelee = 1
 SWEP.SpeedMultSights = 0.65
 
+SWEP.SpreadMultSights = 1
+SWEP.SpreadMultMove = 1
+
 SWEP.SpreadAddBipod = -0.015
 SWEP.AimDownSightsTimeMultBipod = 0.5
 
 -------------------------- SWAY
-SWEP.Sway = 0 -- Disables sway entirely
-
-SWEP.SwayMultSights = 0.15 -- But if enabled, multiply by this when aiming
+SWEP.Sway = 0
 
 -------------------------- EXTRAS / ADDED LATER FOR ALL WEAPONS
 
@@ -32,7 +33,7 @@ SWEP.AimDownSightsTimeMultShooting = 1.5
 
 SWEP.ShotgunReloadIncludesChamber = false
 
-SWEP.UseVisualRecoil = true 
+SWEP.UseVisualRecoil = true
 
 SWEP.PhysicalVisualRecoil = false
 

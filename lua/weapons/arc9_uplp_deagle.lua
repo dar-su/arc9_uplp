@@ -3,11 +3,11 @@ SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
-//// FUNDAMENTALS
+---- FUNDAMENTALS
 
 SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
 
-//// Name, Description, Class, Category and Trivia
+---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_deagle")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_deagle_desc")
 
@@ -19,9 +19,9 @@ SWEP.Trivia = {
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_magnum" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_50ae"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
-																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ) .. ", " .. ARC9:GetPhrase( "uplp_country_israel" ),
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1983" ),
 }
@@ -37,7 +37,7 @@ SWEP.StandardPresets = {
 
 }
 
-//// Muzzle Effects, Shell Effects, Camera
+---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_1"
 SWEP.MuzzleEffectQCA = 1
 
@@ -52,13 +52,13 @@ SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
-//// View & Worldmodel
+---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_deagle.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.TPIKParentToSpine4 = true  
+SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
@@ -73,7 +73,7 @@ SWEP.ViewModelFOVBase = 75
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
-//// Weapon Stats and Behaviour
+---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 65 / 1.25 -- Damage dealt point-blank
 SWEP.DamageMin = 20 / 1.25 -- Damage dealt after maximum range
@@ -213,7 +213,7 @@ SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
-//// Sounds
+---- Sounds
 
 -- urbna!
 local pathUT = "uplp_urban_temp/deagle/"
@@ -254,7 +254,7 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
-//// Animations
+---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
@@ -351,7 +351,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 60, c = ca },
         },
@@ -362,7 +362,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },   
+    },
 
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -379,7 +379,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 60, c = ca },
         },
@@ -390,7 +390,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },    
+    },
 
 
     ["fire"] = {
@@ -404,7 +404,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.55,
+        MinProgress = 0.55,
         EventTable = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -425,7 +425,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.7,
+        MinProgress = 0.7,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
@@ -450,7 +450,7 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-		MinProgress = 0.55,
+        MinProgress = 0.55,
         EventTable = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -471,7 +471,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-		MinProgress = 0.7,
+        MinProgress = 0.7,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
@@ -510,7 +510,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["inspect_empty"] = {
         Source = "inspect_empty",
         EventTable = {
@@ -526,7 +526,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
     ["toggle"] = {
         Source = "modeswitch",
@@ -536,7 +536,7 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
-	
+
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
@@ -544,10 +544,10 @@ SWEP.Animations = {
     ["switchsights_empty"] = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
-    },  
+    },
 }
 
-//// Attachments
+---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -572,8 +572,8 @@ SWEP.AttachmentElements = {
     ["uplp_deag_barrel_long"] = { Bodygroups = { { 5, 2 } } },
     ["uplp_deag_barrel_tac"] = { Bodygroups = { { 5, 3 } } },
     ["uplp_deag_barrel_longtac"] = { Bodygroups = { { 5, 4 } }, AttPosMods = {
-	[7] = { Pos = Vector(0, -1.05, 9.5), }, 
-	}},
+    [7] = { Pos = Vector(0, -1.05, 9.5), },
+    }},
 
     ["uplp_deag_muzzle_cut"] = { Bodygroups = { { 6, 1 } } },
     ["uplp_deag_muzzle_heavy"] = { Bodygroups = { { 6, 2 } } },
@@ -665,7 +665,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0, -1),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 
 
@@ -689,11 +689,11 @@ SWEP.Attachments = {
 }
 
 SWEP.HookP_NameChange = function(self, name)
-	local att = self:GetElements()
+    local att = self:GetElements()
 
-	if att["uplp_deagle_skin_gold"] then
-		name = ARC9:GetPhrase("uplp_weapon_deagle_gold")
-	end
+    if att["uplp_deagle_skin_gold"] then
+        name = ARC9:GetPhrase("uplp_weapon_deagle_gold")
+    end
 
     return name
 end

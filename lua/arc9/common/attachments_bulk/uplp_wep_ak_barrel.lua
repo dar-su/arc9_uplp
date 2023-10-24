@@ -15,7 +15,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_16"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.7
 
 ATT.Attachments = {
@@ -25,7 +25,7 @@ ATT.Attachments = {
         -- Installed = "uplp_ak_hg_100",
         -- Integral = "uplp_ak_hg_100",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -55,11 +55,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_comp"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -70,7 +70,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_normal",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -100,7 +100,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_akm"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.7
 
 --[[
@@ -109,7 +109,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_normal",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -139,14 +139,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk"}
 
-/// Positives
+-- Positives
 ATT.Bipod = true
 ATT.RecoilMult = 0.5
 ATT.RangeMaxMult = 1.1
 ATT.RangeMinMult = 1.2
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
@@ -156,7 +156,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_normal",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -186,13 +186,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_109","uplp_ak_dc_no"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.45
 ATT.RangeMaxMult = 1.05
 ATT.RangeMinMult = 1.1
 ATT.PhysBulletMuzzleVelocityMult = 1.05
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 
 --[[
@@ -201,7 +201,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = "uplp_handguard_normal",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
 }
@@ -223,12 +223,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_su","uplp_ak_rearsight"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.65
 ATT.AimDownSightsTimeMult = 0.75
 ATT.SprintToFireTimeMult = 0.8
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.75
 ATT.PhysBulletMuzzleVelocityMult = 0.9
@@ -240,7 +240,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/akhg.png", "mips smooth"),
         Pos = Vector(2, 0, 0),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(-7, 0, -0.5),
+        Icon_Offset = Vector(-7, 0, -0.5),
     },
 }
 
@@ -268,7 +268,7 @@ ATT.Attachments = {
         Installed = "uplp_ak_hg_12",
         Integral = "uplp_ak_hg_12",
         Pos = Vector(2, 0, 0),
-		Icon_Offset = Vector(-6.5, 0, -0.5),
+        Icon_Offset = Vector(-6.5, 0, -0.5),
         Ang = Angle(0, 0, 0),
     },
     {
@@ -278,7 +278,7 @@ ATT.Attachments = {
         Integral = "uplp_ak_dc_12",
         Pos = Vector(9, 0, -0.9),
         Ang = Angle(0, 0, 0),
-		Hidden = false,
+        Hidden = false,
     },
 }
 
@@ -301,11 +301,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
 ATT.ExcludeElements = {"uplp_ak_hg_rpk16", "uplp_ak_hg_12tac"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.75
 ATT.SprintToFireTimeMult = 0.8
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.1
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.75
@@ -327,11 +327,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -352,13 +352,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.75
 ATT.RangeMaxMult = 1.1
 ATT.RangeMinMult = 1.2
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 

@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
-///////////////////////////////////////      uplp_sticker_paw
+---------- uplp_sticker_paw
 
 ATT = {}
 
@@ -24,7 +24,7 @@ ATT.StickerMaterial = "stickers/uplp/paw"
 
 ARC9.LoadAttachment(ATT, "uplp_sticker_paw")
 
-///////////////////////////////////////      uplp_sticker_pawgray
+---------- uplp_sticker_pawgray
 
 ATT = {}
 
@@ -46,7 +46,7 @@ ATT.StickerMaterial = "stickers/uplp/pawgray"
 
 ARC9.LoadAttachment(ATT, "uplp_sticker_pawgray")
 
-///////////////////////////////////////      uplp_charm_paw
+---------- uplp_charm_paw
 
 ATT = {}
 
@@ -72,7 +72,7 @@ ATT.Category = "charm"
 
 ARC9.LoadAttachment(ATT, "uplp_charm_paw")
 
-///////////////////////////////////////      uplp_charm_title
+---------- uplp_charm_title
 
 ATT = {}
 

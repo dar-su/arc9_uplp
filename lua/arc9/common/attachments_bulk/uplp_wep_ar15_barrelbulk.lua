@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ar15/barr/"
 
-///////////////////////////////////////      uplp_ar15_barrel_10
+---------- uplp_ar15_barrel_10
 
 --[[
 ATT = {}
@@ -42,7 +42,7 @@ ATT.Attachments = {
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_10")
 --]]
 
-///////////////////////////////////////      uplp_ar15_barrel_14
+---------- uplp_ar15_barrel_14
 
 
 ATT = {}
@@ -58,19 +58,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_mid"}
 
-/// Positives
+-- Positives
 ATT.RangeMaxMult = 1.05
 ATT.RangeMinMult = 1.1
 ATT.PhysBulletMuzzleVelocityMult = 1.05
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_14")
 
 
-///////////////////////////////////////      uplp_ar15_barrel_16
+---------- uplp_ar15_barrel_16
 
 
 ATT = {}
@@ -86,20 +86,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.RangeMaxMult = 1.3
 ATT.RangeMinMult = 1.2
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16")
 
 
-///////////////////////////////////////      uplp_ar15_barrel_16_alt
+---------- uplp_ar15_barrel_16_alt
 
 
 ATT = {}
@@ -115,20 +115,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.RangeMaxMult = 1.3
 ATT.RangeMinMult = 1.2
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16_alt")
 
 
-///////////////////////////////////////      uplp_ar15_barrel_20
+---------- uplp_ar15_barrel_20
 
 
 ATT = {}
@@ -144,20 +144,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.RangeMaxMult = 1.4
 ATT.RangeMinMult = 1.25
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_20")
 
 
-///////////////////////////////////////      uplp_ar15_barrel_22
+---------- uplp_ar15_barrel_22
 
 
 ATT = {}
@@ -173,13 +173,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.85
 ATT.RangeMaxMult = 1.5
 ATT.RangeMinMult = 1.35
 ATT.PhysBulletMuzzleVelocityMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.25
 

@@ -22,7 +22,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.2825),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1),
+        Icon_Offset = Vector(0, 0, -1),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -30,7 +30,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(0.9, 0.95, 0.25),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -93,7 +93,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.025),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.25),
+        Icon_Offset = Vector(0, 0, -1.25),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -101,7 +101,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(2, 1.05, 0.125),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -126,8 +126,8 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.25),
-		Hidden = true,
+        Icon_Offset = Vector(0, 0, -1.25),
+        Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -135,7 +135,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(-1, 1.175, 0.275),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -177,7 +177,7 @@ ATT.ModelOffset = Vector(-23.2, -2.2, 2.8)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.75
 ATT.RecoilAutoControlMult = 1.25
 
@@ -208,7 +208,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.25),
+        Icon_Offset = Vector(0, 0, -1.25),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -216,7 +216,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(1.25, 1.175, 0.125),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -243,7 +243,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.25),
+        Icon_Offset = Vector(0, 0, -1.25),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -251,7 +251,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(-2.25, 1.175, 0.125),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_bipod"),
@@ -259,7 +259,7 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-2.8, 0, 1.2),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }
 
@@ -289,7 +289,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3.5, 0, 1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, -1.25),
+        Icon_Offset = Vector(0, 0, -1.25),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -297,8 +297,8 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(3, 1.165, 0.1),
         Ang = Angle(0, 0, 90),
-		ExcludeElements = {"uplp_no_tactical"},
-		Icon_Offset = Vector(-1.5, 0, 0),
+        ExcludeElements = {"uplp_no_tactical"},
+        Icon_Offset = Vector(-1.5, 0, 0),
     },
 }
 
@@ -366,7 +366,7 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-1.5, 0, 1.2),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk16")
@@ -388,11 +388,11 @@ ATT.ExcludeElements = {"uplp_ak_brl_12k"}
 
 ATT.ActivateElements = {"uplp_ak_hg_12tac", "ak12_part", "uplp_no_grip"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.1
 

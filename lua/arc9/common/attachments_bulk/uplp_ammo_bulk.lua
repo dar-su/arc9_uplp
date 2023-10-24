@@ -4,7 +4,7 @@ local iconfolder = "entities/uplp_attachements/"
 
 local iconfoldersg = "entities/uplp_attachements/vepr/ammo/"
 
-///Rifle Ammo
+-- Rifle Ammo
 
 ATT = {}
 
@@ -65,15 +65,15 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
 
-/// Positives
+-- Positives
 ATT.DamageMinMult = 1.25
 ATT.DamageMaxMult = 2
 
-/// Negatives
+-- Negatives
 ATT.RPMMult = 0.75
 ATT.RecoilMult = 1.8
 ATT.RecoilAutoControlMult = 0.25
@@ -85,7 +85,7 @@ ATT.ClipSizeMult = 0.33
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 450, 
+    RPM = 450,
     PoseParam = 1 }
 }
 
@@ -151,15 +151,15 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
 
-/// Positives
+-- Positives
 ATT.DamageMinMult = 1.25
 ATT.DamageMaxMult = 2
 
-/// Negatives
+-- Negatives
 ATT.RPMMult = 0.6
 ATT.RecoilMult = 1.45
 ATT.RecoilAutoControlMult = 0.9
@@ -171,7 +171,7 @@ ATT.ClipSizeMult = 0.33
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 450, 
+    RPM = 450,
     PoseParam = 1 }
 }
 
@@ -180,7 +180,7 @@ ATT.Firemodes = {
 ARC9.LoadAttachment(ATT, "uplp_ar15_ammo_50")
 
 -------------------------------------------
-/// Shotgun Ammo
+--- Shotgun Ammo
 
 ATT = {}
 
@@ -210,10 +210,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_blue.mdl"
 
-/// Positives
+-- Positives
 ATT.NumMult = 1.5
 
-/// Negatives
+-- Negatives
 ATT.DamageMaxMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_blue")
@@ -232,7 +232,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
-/// Positives
+-- Positives
 ATT.SpreadMult = 0.25
 ATT.SpreadMultHipFire = 0.75
 
@@ -243,7 +243,7 @@ ATT.RangeMin = 2 * 39.37 -- How far in M the bullets go before starting to decre
 ATT.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 
-/// Negatives
+-- Negatives
 ATT.NumOverride = 1
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
@@ -265,17 +265,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
-/// Positives
+-- Positives
 ATT.SpreadMult = 0.45
 ATT.SpreadMultHipFire = 0.9
 
-ATT.DamageMax = 75/1.5 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15/1.5 / 1.25 -- Damage dealt after maximum range
+ATT.DamageMax = 75 / 1.5 / 1.25 -- Damage dealt point-blank
+ATT.DamageMin = 15 / 1.5 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.65
 ATT.RangeMin = 2 * 39.37 -- How far in M the bullets go before starting to decrease in damage
 ATT.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
-/// Negatives
+-- Negatives
 ATT.NumOverride = 2
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
@@ -297,14 +297,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_orange.mdl"
 
-/// Positives
+-- Positives
 -- ATT.NumMult = 3
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_ignite_chance")] = "25%",
 }
 
-/// Negatives
+-- Negatives
 ATT.NumMult = 0.5
 ATT.DamageMaxMult = 0.5
 ATT.RangeMaxMult = 0.5
@@ -316,7 +316,7 @@ ATT.ImpactDecal = "FadingScorch"
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
 
-/// This is code from the CoD2019 pack - consider replacing at some point
+-- This is code from the CoD2019 pack - consider replacing at some point
 local cov = 1 -- ??
 
 local badblood = { -- it's actually the good type
@@ -327,18 +327,18 @@ local badblood = { -- it's actually the good type
 ATT.Hook_BulletImpact = function(wep,data)
     if CLIENT then return end
     local ent = data.tr.Entity
-    
+
     local test1 = !(ent:IsNPC() or ent:IsPlayer() or ent:IsNextBot()) and true or false
     local test2 = (!ent:GetBloodColor() or badblood[ent:GetBloodColor()]) and true or false
 
     if IsValid(ent) and !test1 then
-		if math.Rand(0, 1) <= 0.25 then
-			if vFireInstalled then
-				CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, data.dmg:GetDamage() * 0.02)
-			else
-				ent:Ignite(1.5, 0)
-			end
-		end
+        if math.Rand(0, 1) <= 0.25 then
+            if vFireInstalled then
+                CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, data.dmg:GetDamage() * 0.02)
+            else
+                ent:Ignite(1.5, 0)
+            end
+        end
     end
 
     if IsValid(ent) and (test1 or test2) then
@@ -365,7 +365,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 
-/// Positives
+-- Positives
 ATT.SpreadMult = 0.7
 ATT.SpreadMultHipFire = 0.8
 ATT.DamageMaxMult = 0.5
@@ -378,7 +378,7 @@ ATT.ImpactDecal = "FadingScorch"
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
-/// Negatives
+-- Negatives
 ATT.NumOverride = 1
 ATT.PhysBulletGravityMult = 3
 ATT.PhysBulletMuzzleVelocityMult = 0.75

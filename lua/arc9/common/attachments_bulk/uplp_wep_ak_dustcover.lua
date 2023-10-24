@@ -172,12 +172,12 @@ ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12","use_optics", "uplp_ak12
 
 ATT.Firemodes = {
     { Mode = -1, -- Full
-	PoseParam = 1 }, 
-    { Mode = 2, -- 2bst 
-	RPM = 700, 
-	PoseParam = 1.5 }, -- firemode switch to third not exist but i dont care :3
+    PoseParam = 1 },
+    { Mode = 2, -- 2bst
+    RPM = 700,
+    PoseParam = 1.5 }, -- firemode switch to third not exist but i dont care :3
     { Mode = 1, -- Semi
-    RPM = 450, 
+    RPM = 450,
     PoseParam = 2 }
 }
 
@@ -187,7 +187,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_16")
 
 
 
-///////////////////////////////////////      uplp_ak_dovetail_visualonly
+---------- uplp_ak_dovetail_visualonly
 
 ATT = {}
 
@@ -204,7 +204,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_visualonly")
 
-///////////////////////////////////////      uplp_ak_dovetail_rail
+---------- uplp_ak_dovetail_rail
 
 ATT = {}
 
@@ -224,7 +224,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail")
 
-///////////////////////////////////////      uplp_ak_dovetail_rail_c
+---------- uplp_ak_dovetail_rail_c
 
 ATT = {}
 
@@ -249,7 +249,7 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(0.5, 0.68, -2.8),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 1),
+        Icon_Offset = Vector(0, 0, 1),
     },
 }
 

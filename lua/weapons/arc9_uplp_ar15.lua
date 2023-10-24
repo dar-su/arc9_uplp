@@ -3,11 +3,11 @@ SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
 
-//// FUNDAMENTALS
+---- FUNDAMENTALS
 
 SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
-//// Name, Description, Class, Category and Trivia
+---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ar15")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ar15_desc")
 
@@ -19,7 +19,7 @@ SWEP.Trivia = {
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_uso" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
 																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
 																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
@@ -43,7 +43,7 @@ SWEP.StandardPresets = {
 
 SWEP.DefaultBodygroups = "0011000010000000" -- Might as well prepare for the future
 
-//// Muzzle Effects, Shell Effects, Camera
+---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_3"
 SWEP.MuzzleEffectQCA = 1
 
@@ -58,7 +58,7 @@ SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
-//// View & Worldmodel
+---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_ar15.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_ar15.mdl"
 
@@ -78,7 +78,7 @@ SWEP.ViewModelFOVBase = 70
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
-//// Weapon Stats and Behaviour
+---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 30 / 1.25 -- Damage dealt point-blank
 SWEP.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
@@ -233,13 +233,13 @@ SWEP.DropMagazinePos = Vector(0, 1.75, -2.5)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -15, 10)
 
-//// Sounds
+---- Sounds
 
 -- urbna!
 local pathUT = "uplp_urban_temp/ar15/"
 local pathUTC = "uplp_urban_temp/common/"
 
-SWEP.ShootSound = {	
+SWEP.ShootSound = {
     pathUT .. "fire-01.ogg",
     pathUT .. "fire-02.ogg",
     pathUT .. "fire-03.ogg",
@@ -259,7 +259,7 @@ SWEP.ShootSoundSilenced = {
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
-SWEP.DistantShootSound = {	
+SWEP.DistantShootSound = {
     pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.ogg",
     pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.ogg",
     pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.ogg",
@@ -268,7 +268,7 @@ SWEP.DistantShootSound = {
     pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
 }
 
-SWEP.DistantShootSoundIndoor = {	
+SWEP.DistantShootSoundIndoor = {
     pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
     pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
     pathUTC .. "556tails/fire-dist-556x45-rif-int-03.ogg",
@@ -321,7 +321,7 @@ SWEP.DropMagazineSounds = {
 }
 
 
-//// Animations
+---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
@@ -441,7 +441,7 @@ SWEP.Animations = {
         EventTable = { { s = pathUT .. "mech_last.ogg", t = 0 } },
     },
 
-    ["fire_45"] = { 
+    ["fire_45"] = {
         Source = {"fire_01","fire_02","fire_03"},
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
@@ -500,7 +500,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -525,7 +525,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -550,7 +550,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 17 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.4}
@@ -575,7 +575,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.4}
@@ -588,7 +588,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-        
+
     ["reload_20"] = {
         Source = "reload20",
 		MinProgress = 0.65,
@@ -600,7 +600,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 19 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.34},
             {hide = 0, t = 0.42}
@@ -625,7 +625,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 43 / 30 - 0.07, c = ca, v = 0.3 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.34},
             {hide = 0, t = 0.42}
@@ -638,7 +638,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-         
+
     ["reload_40"] = {
         Source = "reload40",
 		MinProgress = 0.65,
@@ -650,7 +650,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 25.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 37 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -675,7 +675,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 31 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 38 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 48 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -688,7 +688,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     ["reload_60"] = {
         Source = "reload60",
 		MinProgress = 0.65,
@@ -700,7 +700,7 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.47, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -725,7 +725,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 43 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -750,7 +750,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/ak/bonk.ogg", t = 37.4 / 30, c = ca, v = 0.75 },
             { s = "uplp_urban_temp/ak/presscheck_1.ogg", t = 31.33 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 55 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33*1.1},
             {hide = 0, t = 0.5}
@@ -775,7 +775,7 @@ SWEP.Animations = {
             { s = pathUT .. "chamber.ogg", t = 48 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 56 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33*1.1},
             {hide = 0, t = 0.5}
@@ -788,7 +788,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     ["reload_g17"] = {
         Source = "reloadg17",
 		MinProgress = 0.65,
@@ -800,7 +800,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 29 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.4}
@@ -825,7 +825,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 28 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 39 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.4}
@@ -838,7 +838,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     ["reload_g33"] = {
         Source = "reloadg33",
 		MinProgress = 0.65,
@@ -850,7 +850,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 19 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -875,7 +875,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 32 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.45}
@@ -888,7 +888,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-        
+
     ["reload_g50"] = {
         Source = "reloadg50",
 		MinProgress = 0.65,
@@ -900,7 +900,7 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.49}
@@ -925,7 +925,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "boltdrop.ogg", t = 42 / 30 - 0.13, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 52 / 30 - 0.07, c = ca, v = 0.3 },
-                
+
             {hide = 0, t = 0},
             {hide = 1, t = 0.33},
             {hide = 0, t = 0.49}
@@ -938,7 +938,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     -- Inspecc --
 
     ["inspect"] = {
@@ -960,7 +960,7 @@ SWEP.Animations = {
             { t = 0.825, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },    
+    },
     ["inspect_empty"] = {
         Source = "inspect_empty",
         FireASAP = true,
@@ -981,7 +981,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    -- Firemodee -- 
+    -- Firemodee --
 
     ["firemode_1"] = {
         Source = "firemode_0",
@@ -994,7 +994,7 @@ SWEP.Animations = {
         EventTable = {
             { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
         }
-    }, 
+    },
     ["firemode_1_empty"] = {
         Source = "firemode_0_empty",
         EventTable = {
@@ -1027,7 +1027,7 @@ SWEP.Animations = {
     },
 }
 
-//// Attachments
+---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -1036,14 +1036,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             mdl:SetBodygroup(1,1)
         end
     end
-	
+
     if eles["uplp_ar15_gasblock"] then
 		mdl:SetBodygroup(8, 0)
 	end
-	
+
 	local smgrec = eles["uplp_ar15_reciever_modern_smg"]
 	local smgrecb = eles["uplp_ar15_reciever_modern_black_smg"]
-	
+
     if eles["uplp_ar15_reciever_stm9"] then
 		if smgrec then
 			mdl:SetBodygroup(0, 6)
@@ -1068,26 +1068,26 @@ end
 SWEP.AttachmentElements = {
 	-- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
-	
+
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 }, { 8, 2 } }, AttPosMods = {
 	-- [7] = { Pos = Vector(0.045, 1.02, 16.15) },
 	[8] = { Pos = Vector(0.045, 0.975, 17.15) },
 	}},
-	
+
     ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 }, { 8, 3 } }, AttPosMods = {
 	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
 	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
 	}},
-	
+
     ["uplp_ar15_barrel_16_alt"] = { Bodygroups = { { 3, 5 }, { 8, 1 } }, AttPosMods = {
 	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
 	}},
-	
+
     ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 }, { 8, 3 } }, AttPosMods = {
 	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
 	[8] = { Pos = Vector(0.045, 0.975, 22.91) },
 	}},
-	
+
     ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 }, { 8, 3 } }, AttPosMods = {
 	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
 	[8] = { Pos = Vector(0.045, 0.975, 24.65) },
@@ -1096,7 +1096,7 @@ SWEP.AttachmentElements = {
 	-- RECEIVERS
     ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
-	
+
     ["uplp_ar15_reciever_45acp"] = { Bodygroups = { { 0, 2 }, { 4, 4 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
 
@@ -1151,13 +1151,13 @@ SWEP.AttachmentElements = {
 	[12] = { Pos = Vector(0.045, 1.6, 10) },
 	}},
     ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } } },
-	
+
 	-- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 1 } } },
-	
+
 	-- CHARGING HANDLES
     ["uplp_ar15_chandle"] = { Bodygroups={ { 6, 1 } } },
-	
+
 	-- MAGAZINES
     ["uplp_ar15_mag"] = { Bodygroups={ { 7, 1 } } },
 
@@ -1335,8 +1335,8 @@ SWEP.Attachments = {
 		Hidden = true,
     },
 
-    
-    
+
+
     -- Cosmetic shit
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),

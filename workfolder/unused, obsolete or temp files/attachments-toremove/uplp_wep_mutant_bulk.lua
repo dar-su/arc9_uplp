@@ -1,7 +1,7 @@
 local ATT = {}
 
 
-///////////////////////////////////////      uplp_mutant_barrel_long
+---------- uplp_mutant_barrel_long
 
 
 ATT = {}
@@ -31,7 +31,7 @@ ATT.ActivateElements = {"uplp_ar15_barrel_long"}
 ARC9.LoadAttachment(ATT, "uplp_mutant_barrel_long")
 
 
-///////////////////////////////////////      uplp_mutant_barrel_short
+---------- uplp_mutant_barrel_short
 
 
 ATT = {}
@@ -61,7 +61,7 @@ ATT.Attachments = {
 ARC9.LoadAttachment(ATT, "uplp_mutant_barrel_short")
 
 
-///////////////////////////////////////      uplp_mutant_hg_long
+---------- uplp_mutant_hg_long
 
 
 ATT = {}
@@ -91,7 +91,7 @@ ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_long")
 
 
-///////////////////////////////////////      uplp_mutant_hg_nowosuku
+---------- uplp_mutant_hg_nowosuku
 
 
 ATT = {}
@@ -121,7 +121,7 @@ ATT.ActivateElements = {"uplp_ar15_handguard_short"}
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_nowosuku")
 
 
-///////////////////////////////////////      uplp_mutant_hg_nowosuku_xl
+---------- uplp_mutant_hg_nowosuku_xl
 
 
 ATT = {}
@@ -151,7 +151,7 @@ ATT.ExcludeElements = {"uplp_ar15_barrel_short"}
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_nowosuku_xl")
 
 
-///////////////////////////////////////      uplp_mutant_hg_short
+---------- uplp_mutant_hg_short
 
 
 ATT = {}
@@ -181,7 +181,7 @@ ATT.ActivateElements = {"uplp_ar15_handguard_short"}
 ARC9.LoadAttachment(ATT, "uplp_mutant_hg_short")
 
 
-///////////////////////////////////////      uplp_mutant_mag_30_bak
+---------- uplp_mutant_mag_30_bak
 
 
 ATT = {}
@@ -200,7 +200,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
 ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_bak")
 
 
-///////////////////////////////////////      uplp_mutant_mag_30_12
+---------- uplp_mutant_mag_30_12
 
 
 ATT = {}
@@ -219,7 +219,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
 ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_12")
 
 
-///////////////////////////////////////      uplp_mutant_mag_30_old
+---------- uplp_mutant_mag_30_old
 
 
 ATT = {}
@@ -238,7 +238,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
 ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_old")
 
 
-///////////////////////////////////////      uplp_mutant_mag_30_oldest
+---------- uplp_mutant_mag_30_oldest
 
 
 ATT = {}
@@ -257,7 +257,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
 ARC9.LoadAttachment(ATT, "uplp_mutant_mag_30_oldest")
 
 
-///////////////////////////////////////      uplp_mutant_mag_40
+---------- uplp_mutant_mag_40
 
 
 ATT = {}
@@ -273,10 +273,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40.mdl"
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 40
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 ATT.ReloadTimeMult = 1.05
@@ -284,7 +284,7 @@ ATT.ReloadTimeMult = 1.05
 ARC9.LoadAttachment(ATT, "uplp_mutant_mag_40")
 
 
-///////////////////////////////////////      uplp_mutant_mag_40_old
+---------- uplp_mutant_mag_40_old
 
 
 ATT = {}
@@ -300,10 +300,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_40_old.mdl"
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 40
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
 ATT.ReloadTimeMult = 1.05

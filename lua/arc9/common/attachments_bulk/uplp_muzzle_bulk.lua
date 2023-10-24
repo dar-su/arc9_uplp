@@ -2,8 +2,8 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
-/////////////////////      Set 1
-///////////////////////////////////////      uplp_muzzle_3h
+---------- Set 1
+---------- uplp_muzzle_3h
 
 
 ATT = {}
@@ -26,7 +26,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 -- ATT.MuzzleParticleOverride = "muzzleflash_smg"
 -- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
@@ -36,12 +36,12 @@ ATT.RecoilAutoControlMult = 1.05
 ATT.RecoilRandomMult = 0.8
 ATT.SpreadAddRecoil = -0.01
 
-/// Negatives
+-- Negatives
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_3h")
 
 
-///////////////////////////////////////      uplp_muzzle_cage
+---------- uplp_muzzle_cage
 
 
 ATT = {}
@@ -62,18 +62,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 ATT.MuzzleParticleOverride = "muzzleflash_OTS"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
 
-/// Negatives
+-- Negatives
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_cage")
 
 
-///////////////////////////////////////      uplp_muzzle_fat
+---------- uplp_muzzle_fat
 
 
 ATT = {}
@@ -94,7 +94,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 ATT.MuzzleParticleOverride = "muzzleflash_1"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
@@ -103,14 +103,14 @@ ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.25
 ATT.SpreadAddRecoil = -0.02
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_fat")
 
 
-///////////////////////////////////////      uplp_muzzle_fhider
+---------- uplp_muzzle_fhider
 
 
 ATT = {}
@@ -131,18 +131,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 ATT.MuzzleParticleOverride = "muzzleflash_OTS"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
 
-/// Negatives
+-- Negatives
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_fhider")
 
 
-///////////////////////////////////////      uplp_muzzle_slim
+---------- uplp_muzzle_slim
 
 
 ATT = {}
@@ -165,7 +165,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 ATT.MuzzleDevice = true
@@ -175,12 +175,12 @@ ATT.RecoilAutoControlMult = 1.05
 ATT.RecoilRandomSideMult = 0.8
 ATT.SpreadAddRecoil = -0.01
 
-/// Negatives
+-- Negatives
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_slim")
 
-/////////////////////      Set 1, Shotguns
-///////////////////////////////////////      uplp_sg_mz_choke
+---------- Set 1, Shotguns
+---------- uplp_sg_mz_choke
 
 ATT = {}
 
@@ -195,15 +195,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_choke.mdl"
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.SpreadAdd = -0.025
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_choke")
 
-///////////////////////////////////////      uplp_sg_mz_gk
+---------- uplp_sg_mz_gk
 
 ATT = {}
 
@@ -218,19 +218,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_gk.mdl"
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
 ATT.RecoilRandomSideMult = 0.6
 ATT.SpreadAddRecoil = -0.01
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
 
-///////////////////////////////////////      uplp_sg_mz_heavy
+---------- uplp_sg_mz_heavy
 
 ATT = {}
 
@@ -245,19 +245,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy.mdl"
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.25
 ATT.RecoilRandomSideMult = 0.5
 ATT.SpreadAddRecoil = -0.02
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.2
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
 
-///////////////////////////////////////      uplp_sg_mz_silencer
+---------- uplp_sg_mz_silencer
 
 ATT = {}
 
@@ -278,21 +278,21 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.SpreadAddRecoil = -0.01
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
 
-///////////////////////////////////////      uplp_sg_mz_silencer_heavy
+---------- uplp_sg_mz_silencer_heavy
 
 ATT = {}
 
@@ -313,22 +313,22 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.85
 ATT.SpreadAddRecoil = -0.02
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer_heavy")
 
-/////////////////////      Set 2
-///////////////////////////////////////      uplp_muzzle_brake
+---------- Set 2
+---------- uplp_muzzle_brake
 
 
 ATT = {}
@@ -349,7 +349,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 ATT.MuzzleParticleOverride = "muzzleflash_m24"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
@@ -358,7 +358,7 @@ ATT.RecoilMult = 0.8
 ATT.SpreadAddRecoil = -0.02
 ATT.RecoilRandomSideMult = 0.65
 
-/// Negatives
+-- Negatives
 ATT.RecoilAutoControlMult = 0.8
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.1
@@ -366,7 +366,7 @@ ATT.SprintToFireTimeMult = 1.1
 ARC9.LoadAttachment(ATT, "uplp_muzzle_brake")
 
 
-///////////////////////////////////////      uplp_muzzle_evilsup
+---------- uplp_muzzle_evilsup
 
 
 ATT = {}
@@ -392,16 +392,16 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.85
 ATT.SpreadAddRecoil = -0.01
 ATT.RecoilAutoControlMult = 1.15
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.2
 ATT.RangeMaxMult = 0.8
@@ -411,7 +411,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.85
 ARC9.LoadAttachment(ATT, "uplp_muzzle_evilsup")
 
 
-///////////////////////////////////////      uplp_muzzle_heavypistolsup
+---------- uplp_muzzle_heavypistolsup
 
 
 ATT = {}
@@ -437,21 +437,21 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.6
 ATT.SpreadAddRecoil = -0.01
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_heavypistolsup")
 
 
-///////////////////////////////////////      uplp_muzzle_lightsup
+---------- uplp_muzzle_lightsup
 
 
 ATT = {}
@@ -477,15 +477,15 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
-ATT.CustomPros = { 
+-- Positives
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_lightsup")
 
 
-///////////////////////////////////////      uplp_muzzle_midsup
+---------- uplp_muzzle_midsup
 
 
 ATT = {}
@@ -511,15 +511,15 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.SpreadAddRecoil = -0.01
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -527,7 +527,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.95
 ARC9.LoadAttachment(ATT, "uplp_muzzle_midsup")
 
 
-///////////////////////////////////////      uplp_muzzle_modernsup
+---------- uplp_muzzle_modernsup
 
 
 ATT = {}
@@ -553,15 +553,15 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.SpreadAddRecoil = -0.0125
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.8
@@ -570,7 +570,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.85
 ARC9.LoadAttachment(ATT, "uplp_muzzle_modernsup")
 
 
-///////////////////////////////////////      uplp_muzzle_shortsup
+---------- uplp_muzzle_shortsup
 
 
 ATT = {}
@@ -596,15 +596,15 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.95
 ATT.SpreadAddRecoil = -0.01
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-/// Negatives
+-- Negatives
 ATT.RangeMaxMult = 0.9
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
@@ -612,7 +612,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.95
 ARC9.LoadAttachment(ATT, "uplp_muzzle_shortsup")
 
 
-///////////////////////////////////////      uplp_muzzle_zenit
+---------- uplp_muzzle_zenit
 
 
 ATT = {}
@@ -633,7 +633,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_muzzle_used"}
 
-/// Positives
+-- Positives
 -- ATT.MuzzleParticleOverride = "muzzleflash_1"
 -- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
@@ -642,7 +642,7 @@ ATT.RecoilMult = 0.9
 ATT.SpreadAddRecoil = -0.01
 ATT.RecoilRandomSideMult = 0.8
 
-/// Negatives
+-- Negatives
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_zenit")

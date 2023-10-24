@@ -4,8 +4,8 @@ local iconfolder = "entities/uplp_attachements/scar/"
 local iconfolderar = "entities/uplp_attachements/ar15/"
 local iconfolderar15 = "entities/uplp_attachements/ar15/mag/"
 
-////////////////////      LOWER RECEIVERS
-///////////////////////////////////////      uplp_scar_lower_b
+-------------------- LOWER RECEIVERS
+---------- uplp_scar_lower_b
 
 ATT = {}
 
@@ -22,8 +22,8 @@ ATT.ActivateElements = {"uplp_scar_lower_b"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_lower_b")
 
-////////////////////      UPPER RECEIVERS
-///////////////////////////////////////      uplp_scar_upper_hb
+-------------------- UPPER RECEIVERS
+---------- uplp_scar_upper_hb
 
 ATT = {}
 
@@ -40,7 +40,7 @@ ATT.ActivateElements = {"uplp_scar_upper_hb"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_hb")
 
-///////////////////////////////////////      uplp_scar_upper_20
+---------- uplp_scar_upper_20
 
 ATT = {}
 
@@ -56,24 +56,24 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Firemodes = {
     { Mode = -1, -- Full
-	PoseParam = 1 },
+    PoseParam = 1 },
     { Mode = 1, -- Semi
-	RPM = 300,
-	DamageMult = 1.25,
-	PoseParam = 2 }
+    RPM = 300,
+    DamageMult = 1.25,
+    PoseParam = 2 }
 }
 
-/// Positives
+-- Positives
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.3
 ATT.RecoilMult = 0.8
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemax")] = "+25%",
 [ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemin")] = "+25%",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.RPMMult = 0.75
@@ -85,7 +85,7 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-18, 0, 1.4),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }
 
@@ -94,7 +94,7 @@ ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_brl_
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20")
 
-///////////////////////////////////////      uplp_scar_upper_20b
+---------- uplp_scar_upper_20b
 
 ATT = {}
 
@@ -110,24 +110,24 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Firemodes = {
     { Mode = -1, -- Full
-	PoseParam = 1 },
+    PoseParam = 1 },
     { Mode = 1, -- Semi
-	RPM = 300,
-	DamageMult = 1.25,
-	PoseParam = 2 }
+    RPM = 300,
+    DamageMult = 1.25,
+    PoseParam = 2 }
 }
 
-/// Positives
+-- Positives
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.3
 ATT.RecoilMult = 0.8
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemax")] = "+25%",
 [ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemin")] = "+25%",
 }
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.RPMMult = 0.75
@@ -139,7 +139,7 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(-18, 0, 1.4),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(0, 0, 0),
     },
 }
 
@@ -148,7 +148,7 @@ ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_brl
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20b")
 
-///////////////////////////////////////      uplp_scar_upper_pdw
+---------- uplp_scar_upper_pdw
 
 ATT = {}
 
@@ -167,12 +167,12 @@ ATT.ModelOffset = Vector(-17, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.85
 ATT.RPMMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RecoilMult = 1.1
@@ -181,7 +181,7 @@ ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_m
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdw")
 
-///////////////////////////////////////      uplp_scar_upper_pdwb
+---------- uplp_scar_upper_pdwb
 
 ATT = {}
 
@@ -200,12 +200,12 @@ ATT.ModelOffset = Vector(-17, -2.3, 3)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.85
 ATT.RPMMult = 1.1
 
-/// Negatives
+-- Negatives
 ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RecoilMult = 1.1
@@ -214,8 +214,8 @@ ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdwb")
 
-////////////////////      BARRELS
-///////////////////////////////////////      uplp_scar_brl_short
+-------------------- BARRELS
+---------- uplp_scar_brl_short
 
 ATT = {}
 
@@ -230,11 +230,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_brl_short"}
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.05
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
@@ -242,7 +242,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
-///////////////////////////////////////      uplp_scar_brl_20
+---------- uplp_scar_brl_20
 
 -- ATT = {}
 
@@ -259,7 +259,7 @@ ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
 -- ARC9.LoadAttachment(ATT, "uplp_scar_brl_20")
 
-///////////////////////////////////////      uplp_scar_brl_20_long
+---------- uplp_scar_brl_20_long
 
 ATT = {}
 
@@ -276,29 +276,29 @@ ATT.ActivateElements = {"uplp_scar_brl_20_long", "uplp_scar_no_is", "uplp_scar_b
 
 ATT.Attachments = {
     {
-		PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_muzzle", "uplp_scar_muzzle"},
         Bone = "body",
         Pos = Vector(-22, 0, 0.225),
         Ang = Angle(0, 0, 0),
-		Installed = "uplp_scar_mz",
-		Icon_Offset = Vector(1, 0, 0),
+        Installed = "uplp_scar_mz",
+        Icon_Offset = Vector(1, 0, 0),
     },
 }
 
-/// Positives
+-- Positives
 ATT.RangeMinMult = 1.1
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.RecoilMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
-////////////////////      STOCKS
-///////////////////////////////////////      uplp_scar_stock_lb
+-------------------- STOCKS
+---------- uplp_scar_stock_lb
 
 ATT = {}
 
@@ -315,7 +315,7 @@ ATT.ActivateElements = {"uplp_scar_stock_lb"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_lb")
 
-///////////////////////////////////////      uplp_scar_stock_h
+---------- uplp_scar_stock_h
 
 ATT = {}
 
@@ -331,17 +331,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_h"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_h")
 
-///////////////////////////////////////      uplp_scar_stock_hb
+---------- uplp_scar_stock_hb
 
 ATT = {}
 
@@ -357,17 +357,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_hb"}
 
-/// Positives
+-- Positives
 ATT.RecoilMult = 0.9
 ATT.RecoilAutoControlMult = 1.2
 
-/// Negatives
+-- Negatives
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_hb")
 
-///////////////////////////////////////      uplp_scar_stock_tube
+---------- uplp_scar_stock_tube
 
 ATT = {}
 
@@ -390,21 +390,21 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
         Pos = Vector(1, 0, 0.325),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(-1.25, 0, 0),
+        Icon_Offset = Vector(-1.25, 0, 0),
     },
 }
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.85
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.25
 ATT.RecoilAutoControlMult = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_tube")
 
-///////////////////////////////////////      uplp_scar_stock_pdw
+---------- uplp_scar_stock_pdw
 
 ATT = {}
 
@@ -418,11 +418,11 @@ ATT.Icon = Material(iconfolder .. "stock/pdw.png", "mips smooth")
 ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
 
-/// Negatives
+-- Negatives
 ATT.RecoilMult = 1.1
 ATT.RecoilAutoControlMult = 0.95
 
@@ -434,12 +434,12 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_scar_stock_pdw_f"},
-		/// Positives
-		AimDownSightsTimeMult = 0.85 * 0.8,
-		SprintToFireTimeMult = 0.9 * 0.8,
-		/// Negatives
-		RecoilMult = 1.1 * 1.3,
-		RecoilAutoControlMult = 0.95 * 1.3,
+        -- Positives
+        AimDownSightsTimeMult = 0.85 * 0.8,
+        SprintToFireTimeMult = 0.9 * 0.8,
+        -- Negatives
+        RecoilMult = 1.1 * 1.3,
+        RecoilAutoControlMult = 0.95 * 1.3,
     },
 }
 
@@ -447,8 +447,8 @@ ATT.ToggleStats = {
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_pdw")
 
-////////////////////      MAGAZINES
-///////////////////////////////////////      uplp_scar_mag_hb
+-------------------- MAGAZINES
+---------- uplp_scar_mag_hb
 
 ATT = {}
 
@@ -468,7 +468,7 @@ ATT.ActivateElements = {"uplp_scar_mag_hb"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hb")
 
-///////////////////////////////////////      uplp_scar_mag_20
+---------- uplp_scar_mag_20
 
 ATT = {}
 
@@ -484,19 +484,19 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20.mdl"
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-/// Positives
+-- Positives
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.9
 -- ATT.ReloadTimeMult = 0.9
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
 }
 
-/// Negatives
+-- Negatives
 ATT.ClipSizeOverride = 10
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_20"
 end
 
@@ -504,7 +504,7 @@ ATT.ActivateElements = {"uplp_scar_mag_20"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_20")
 
-///////////////////////////////////////      uplp_scar_mag_20_68
+---------- uplp_scar_mag_20_68
 
 ATT = {}
 
@@ -531,7 +531,7 @@ ATT.Firemodes = {
     PoseParam = 2 }
 }
 
-/// Positives
+-- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.3 -- 6.5 awp stats but slightly worse cuz its dmr!!
 ATT.DamageMax = 85 / 1.25 * 0.8 -- Damage dealt point-blank
 ATT.DamageMin = 140 / 1.25 * 0.5 -- Damage dealt after maximum range
@@ -539,17 +539,17 @@ ATT.HeadshotDamage = 0.8
 ATT.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
 ATT.RangeMax = 45 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
 }
 
-/// Negatives
+-- Negatives
 ATT.RPMMult = 0.75
 ATT.RecoilMult = 1.45
 ATT.RecoilAutoControlMult = 0.25
 ATT.ClipSizeOverride = 10
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_20"
 end
 
@@ -557,7 +557,7 @@ ATT.ActivateElements = {"uplp_scar_mag_20_68"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_20_68")
 
-///////////////////////////////////////      uplp_scar_mag_hk
+---------- uplp_scar_mag_hk
 
 local pathUT = "uplp_urban_temp/scar/"
 local pathUTC = "uplp_urban_temp/common/"
@@ -623,12 +623,12 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -636,7 +636,7 @@ ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.8
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
@@ -646,7 +646,7 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
 
-///////////////////////////////////////      uplp_scar_mag_pmag20
+---------- uplp_scar_mag_pmag20
 
 ATT = {}
 
@@ -664,14 +664,14 @@ ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
-/// Positives
+-- Positives
 -- ATT.ClipSizeOverride = 20
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.95
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -679,7 +679,7 @@ ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.8
 
-ATT.CustomPros = { 
+ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+5%",
 }
 
@@ -692,7 +692,7 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
@@ -702,7 +702,7 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
 
-///////////////////////////////////////      uplp_scar_mag_pmag30
+---------- uplp_scar_mag_pmag30
 
 ATT = {}
 
@@ -729,12 +729,12 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -742,7 +742,7 @@ ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.8
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
@@ -753,7 +753,7 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag30")
 
-///////////////////////////////////////      uplp_scar_mag_stanag30
+---------- uplp_scar_mag_stanag30
 
 ATT = {}
 
@@ -780,12 +780,12 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -793,7 +793,7 @@ ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.8
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
@@ -804,7 +804,7 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30")
 
-///////////////////////////////////////      uplp_scar_mag_stanag30_tan
+---------- uplp_scar_mag_stanag30_tan
 
 ATT = {}
 
@@ -831,12 +831,12 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 30
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -844,7 +844,7 @@ ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
 ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
 ATT.HeadshotDamage = 0.8
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_l"
 end
 
@@ -857,7 +857,7 @@ ATT.ModelOffset = Vector(1.4, 0, -3.5)
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30_tan")
 
-///////////////////////////////////////      uplp_scar_mag_pmag60
+---------- uplp_scar_mag_pmag60
 
 ATT = {}
 
@@ -877,12 +877,12 @@ ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.DropMagazineTime = 0.5
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 52
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -893,7 +893,7 @@ ATT.HeadshotDamage = 0.8
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-15%",
 }
 
@@ -906,7 +906,7 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_60"
 end
 
@@ -917,7 +917,7 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag60")
 
-///////////////////////////////////////      uplp_scar_mag_stanag60
+---------- uplp_scar_mag_stanag60
 
 ATT = {}
 
@@ -937,12 +937,12 @@ ATT.DropMagazineTime = 0.5
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 52
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -953,7 +953,7 @@ ATT.HeadshotDamage = 0.8
 ATT.AimDownSightsTimeMult = 1.25
 ATT.SprintToFireTimeMult = 1.2
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-15%",
 }
 
@@ -966,7 +966,7 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_60"
 end
 
@@ -977,7 +977,7 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag60")
 
-///////////////////////////////////////      uplp_scar_mag_drum
+---------- uplp_scar_mag_drum
 
 ATT = {}
 
@@ -997,12 +997,12 @@ ATT.DropMagazineTime = 0.42
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_mag_no_drum"}
 
-/// Positives
+-- Positives
 ATT.ClipSizeOverride = 90
 ATT.RPMAdd = 100
 ATT.RecoilMult = 0.5
 
-/// Negatives
+-- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.8165
 
 ATT.RangeMinMult = 0.95
@@ -1013,7 +1013,7 @@ ATT.HeadshotDamage = 0.8
 ATT.AimDownSightsTimeMult = 1.3
 ATT.SprintToFireTimeMult = 1.3
 
-ATT.CustomCons = { 
+ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-25%",
 }
 
@@ -1026,7 +1026,7 @@ ATT.ShootSoundSilenced = shoot556sil
 ATT.DistantShootSound = shoot556dist
 ATT.DistantShootSoundIndoor = shoot556distindoor
 
-ATT.Hook_TranslateAnimation = function(wep, anim) 
+ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_100"
 end
 
@@ -1037,8 +1037,8 @@ ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_drum")
 
-////////////////////      PISTOL GRIPS
-///////////////////////////////////////      uplp_scar_pgrip_b
+-------------------- PISTOL GRIPS
+---------- uplp_scar_pgrip_b
 
 ATT = {}
 
@@ -1055,8 +1055,8 @@ ATT.ActivateElements = {"uplp_scar_pgrip_b"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_pgrip_b")
 
-////////////////////      IRON SIGHTS
-///////////////////////////////////////      uplp_scar_is
+-------------------- IRON SIGHTS
+---------- uplp_scar_is
 
 ATT = {}
 
@@ -1079,8 +1079,8 @@ ATT.ExcludeElements = {"uplp_scar_no_is"}
 ATT.ModelOffset = Vector(-0.42, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_scar_is")
 
-////////////////////      MUZZLES
-///////////////////////////////////////      uplp_scar_mz
+-------------------- MUZZLES
+---------- uplp_scar_mz
 
 ATT = {}
 
@@ -1097,7 +1097,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_mz"}
 
-/// Positives
+-- Positives
 -- ATT.MuzzleParticleOverride = "muzzleflash_smg"
 -- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true

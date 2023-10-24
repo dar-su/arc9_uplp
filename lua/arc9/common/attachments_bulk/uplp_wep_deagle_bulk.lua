@@ -262,8 +262,8 @@ ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_tri")
 
 
 
-////////////////////      SKINS
-///////////////////////////////////////      uplp_deagle_skin_black
+-------------------- SKINS
+---------- uplp_deagle_skin_black
 
 ATT = {}
 
@@ -280,7 +280,7 @@ ATT.ActivateElements = {"uplp_deagle_skin_black"}
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_black")
 
-///////////////////////////////////////      uplp_deagle_skin_gold
+---------- uplp_deagle_skin_gold
 
 ATT = {}
 
@@ -297,7 +297,7 @@ ATT.ActivateElements = {"uplp_deagle_skin_gold"}
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_gold")
 
-///////////////////////////////////////      uplp_deagle_skin_blue
+---------- uplp_deagle_skin_blue
 
 ATT = {}
 

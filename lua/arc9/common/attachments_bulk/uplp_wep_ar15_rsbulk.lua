@@ -2,7 +2,7 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/fsrs/"
 
-///////////////////////////////////////      uplp_ar15_rs_m4
+---------- uplp_ar15_rs_m4
 
 
 ATT = {}
@@ -26,7 +26,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_m4")
 
-///////////////////////////////////////      uplp_ar15_rs_carry
+---------- uplp_ar15_rs_carry
 
 
 ATT = {}
@@ -50,7 +50,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_carry")
 
 
-///////////////////////////////////////      uplp_ar15_rs_mbus
+---------- uplp_ar15_rs_mbus
 
 
 ATT = {}
@@ -77,7 +77,7 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_mbus")
 
 
-///////////////////////////////////////      uplp_ar15_rs_scalar
+---------- uplp_ar15_rs_scalar
 
 
 ATT = {}
@@ -104,7 +104,7 @@ ATT.ModelOffset = Vector(-0.2, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_scalar")
 
 
-///////////////////////////////////////      uplp_ar15_rs_type1
+---------- uplp_ar15_rs_type1
 
 
 ATT = {}
@@ -131,7 +131,7 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type1")
 
 
-///////////////////////////////////////      uplp_ar15_rs_type2
+---------- uplp_ar15_rs_type2
 
 
 ATT = {}
@@ -158,7 +158,7 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type2")
 
 
-///////////////////////////////////////      uplp_ar15_rs_type3
+---------- uplp_ar15_rs_type3
 
 
 ATT = {}

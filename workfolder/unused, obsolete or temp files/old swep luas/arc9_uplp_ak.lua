@@ -2,11 +2,11 @@ AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
 SWEP.Spawnable = true
 
-//// FUNDAMENTALS
+---- FUNDAMENTALS
 
 SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
-//// Name, Description, Class, Category and Trivia
+---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
 
@@ -16,7 +16,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_izhmash" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x32mm"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ), 
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
 																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
 																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
@@ -39,7 +39,7 @@ SWEP.StandardPresets = { -- If it has any presets, then put them here within quo
 "[AKS-74U]XQAAAQAXAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spa/HCvjLEF18pEnhlyUplx5E87kB8J+Tej94m0uBdo54kXFAtVFVOn+OzTPThVRlZtBNamLjg/aBU21nmObi91swCEaETaUhcyib8S5mBkcAA=",
 }
 
-//// Muzzle Effects, Shell Effects, Camera
+---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_ak47"
 SWEP.MuzzleEffectQCA = 1
 
@@ -54,7 +54,7 @@ SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
-//// View & Worldmodel
+---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_ak.mdl"
 SWEP.WorldModel = "models/weapons/w_rif_ak47.mdl"
 
@@ -74,7 +74,7 @@ SWEP.ViewModelFOVBase = 75
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
-//// Weapon Stats and Behaviour
+---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 50 -- Damage dealt point-blank
 SWEP.DamageMin = 30 -- Damage dealt after maximum range
@@ -164,9 +164,9 @@ SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = -1, -- Full
-	PoseParam = 1 }, 
+	PoseParam = 1 },
     { Mode = 1, -- Semi
-	RPM = 450, 
+	RPM = 450,
 	PoseParam = 2 }
 }
 
@@ -220,7 +220,7 @@ SWEP.CustomizePos = Vector(14, 32.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
 
-//// Sounds
+---- Sounds
 local path556 = "weapons/arccw/xhr50/"
 
 local pathsound = "uplp_temp/ak/"
@@ -247,7 +247,7 @@ SWEP.DistantShootSoundSilenced = {pathsound .. "shoot/suppressed/wpn_tail_hol_sm
 
 SWEP.DropMagazineSounds = {path556 .. "magdrop.ogg"}
 
-//// Animations
+---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
@@ -321,7 +321,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathreloadsound .. "lift_v4.wav", t = 0 / 30, c = ca, v = 0.8 },
         },
-    },    
+    },
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
@@ -471,7 +471,7 @@ SWEP.Animations = {
         },
     },
 
-    -- 5.45 
+    -- 5.45
 
     ["reload_545"] = {
         Source = "reload_545",
@@ -756,7 +756,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["1_inspect"] = {
         Source = {"inspect0"},
         FireASAP = true,
@@ -773,7 +773,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
     ["inspect_545"] = {
         Source = {"inspect_545"},
@@ -794,7 +794,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["1_inspect_545"] = {
         Source = {"inspect0"},
         FireASAP = true,
@@ -811,7 +811,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
     ["inspect_556"] = {
         Source = {"inspect_556"},
@@ -832,7 +832,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["1_inspect_556"] = {
         Source = {"inspect0"},
         FireASAP = true,
@@ -849,7 +849,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
 
     ["inspect_308"] = {
@@ -871,7 +871,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["1_inspect_308"] = {
         Source = {"inspect0"},
         FireASAP = true,
@@ -888,7 +888,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
 
     ["inspect_drum"] = {
@@ -910,7 +910,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
     ["1_inspect_drum"] = {
         Source = {"inspect0"},
         FireASAP = true,
@@ -927,7 +927,7 @@ SWEP.Animations = {
             { t = 0.85, lhik = 0 },
             { t = 1, lhik = 1 },
         },
-    },  
+    },
 
 
     ["firemode_1"] = {
@@ -936,7 +936,7 @@ SWEP.Animations = {
     ["firemode_2"] = {
         Source = "firemode_1",
     },
-	
+
     ["toggle"] = {
         Source = "modeswitch",
         EventTable = {
@@ -948,11 +948,11 @@ SWEP.Animations = {
         EventTable = {
             { s = {"eft_shared/weapon_light_switcher1.wav", "eft_shared/weapon_light_switcher2.wav", "eft_shared/weapon_light_switcher3.wav"}, t = 0 },
         }
-    },    
+    },
 }
 
 
-//// Attachments
+---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -1042,7 +1042,7 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 6, 6 } } },
 
     ["uplp_ak_mag_762_drum"] = { Bodygroups = { { 6, 7 } } },
-    
+
     -- 5.45
     ["uplp_ak_mag_545_30"] = { Bodygroups = { { 6, 8 } } },
     ["uplp_ak_mag_545_30_bak"] = { Bodygroups = { { 6, 9 } } },
@@ -1082,7 +1082,7 @@ SWEP.AttachmentElements = {
 
     -- ["uplp_ak_stock_pt1"] =        { Bodygroups = { { 6, 6 } } },
     -- ["uplp_ak_stock_pt1_ext"] =    { Bodygroups = { { 6, 7 } } },
-    
+
     -- ["uplp_ak_stock_pt3"] =        { Bodygroups = { { 6, 8 } } },
     -- ["uplp_ak_stock_pt3_ext"] =    { Bodygroups = { { 6, 9 } } },
 
