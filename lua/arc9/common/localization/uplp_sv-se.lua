@@ -183,13 +183,21 @@ local forestgreen = "\n\n" .. "Speciell \"Forest Green\"-version."
 local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
 local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
 
-local desc_pistoloptic = "\nEtt direktmonterat sikte med <color=255,255,100>lätta hanteringsstraff</color>."
-local desc_smalloptic = "\nEtt litet skenamonterat sikte med <color=100,255,100>lätta hanteringsstraff</color>.\nDess kompakta hårkors kan vara svår att se, vilket<color=255,200,100>ökar sväjningen märkvärdigt</color>."
-local desc_cqcoptic = "\nEtt lätt sikte med <color=255,255,100>mindre sväjning och hanteringsstraff</color>."
-local desc_magoptic = "\nEtt <color=100,255,100>justerbart förstoringsglas</color> sikte med <color=255,200,100>märkbara straff på sväjning och hantering</color>."
-local desc_midoptic = "\nEtt maginifierat sikte som <color=255,200,100>ökar sväjningen</color> och <color=255,200,100>sänker hanteringen</color> märkvärdigt."
-local desc_bigoptic = "\nEtt stort sikte som <color=255,100,100>ökar sväjningen</color> och <color=255,100,100>sänker hanteringen</color> med en större del."
-local desc_biggeroptic = "\nEtt väldigt stort sikte med <color=255,100,100>märkvärdiga sväjning och hanteringsstraff</color>."
+-- local desc_pistoloptic = "\nEtt direktmonterat sikte med <color=255,255,100>lätta hanteringsstraff</color>."
+-- local desc_smalloptic = "\nEtt litet skenamonterat sikte med <color=100,255,100>lätta hanteringsstraff</color>.\nDess kompakta hårkors kan vara svår att se, vilket <color=255,200,100>ökar sväjningen märkvärdigt</color>."
+-- local desc_cqcoptic = "\nEtt lätt sikte med <color=255,255,100>mindre sväjning och hanteringsstraff</color>."
+-- local desc_magoptic = "\nEtt <color=100,255,100>justerbart förstoringsglas</color> sikte med <color=255,200,100>märkbara straff på sväjning och hantering</color>."
+-- local desc_midoptic = "\nEtt maginifierat sikte som <color=255,200,100>ökar sväjningen</color> och <color=255,200,100>sänker hanteringen</color> märkvärdigt."
+-- local desc_bigoptic = "\nEtt stort sikte som <color=255,100,100>ökar sväjningen</color> och <color=255,100,100>sänker hanteringen</color> med en större del."
+-- local desc_biggeroptic = "\nEtt väldigt stort sikte med <color=255,100,100>märkvärdiga sväjning och hanteringsstraff</color>."
+
+local desc_pistoloptic = "\nA direct mounted optic with minor handling penalties."
+local desc_smalloptic = "\nA small rail-mounted optic with minimal handling penalties.\nIts compact reticle can be hard to focus on, increasing sway noticeably."
+local desc_cqcoptic = "\nA lightweight optic with minor sway and handling penalities."
+local desc_magoptic = "\nAn adjustable magnifier optic with noticeable sway and handling penalities."
+local desc_midoptic = "\nA magnified optic that increases sway and slows handling considerably."
+local desc_bigoptic = "\nA bulky optic that increases sway and slows handling by a lot."
+local desc_biggeroptic = "\nA very bulky optic with significant sway and handling penalities."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
@@ -233,12 +241,12 @@ L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
 L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte"
-L["uplp_optic_d1.compactname"] = "D-1 [LP]"
+L["uplp_optic_d1.compactname"] = "D-1"
 L["uplp_optic_d1.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen." .. desc_smalloptic
 
 L["uplp_optic_d1high.printname"] = "D-1 Rödpunktsikte med Raiser"
-L["uplp_optic_d1high.compactname"] = "D-1 [HP]"
-L["uplp_optic_d1high.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen.\nMonterat högre upp med en spacer." .. desc_smalloptic
+L["uplp_optic_d1high.compactname"] = "D-1 R"
+L["uplp_optic_d1high.description"] = "Kompakt rödpunktsikte gjorda för mindre skjutvapen." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Pistol Rödpunktsikte"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
@@ -253,12 +261,12 @@ L["uplp_optic_rmr_direct.compactname"] = "XW"
 L["uplp_optic_rmr_direct.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen." .. desc_pistoloptic
 
 L["uplp_optic_rmr.printname"] = "XW-Rödpunktsikte"
-L["uplp_optic_rmr.compactname"] = "XW [LP]"
+L["uplp_optic_rmr.compactname"] = "XW"
 L["uplp_optic_rmr.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen." .. desc_smalloptic
 
 L["uplp_optic_rmrhigh.printname"] = "XW-Rödpunktsikte med Raiser"
-L["uplp_optic_rmrhigh.compactname"] = "XW [HP]"
-L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen.\nMonterat högre upp med en spacer." .. desc_smalloptic
+L["uplp_optic_rmrhigh.compactname"] = "XW R"
+L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen." .. desc_smalloptic
 
 L["uplp_optic_notacog.printname"] = "3x Militärsikte"
 L["uplp_optic_notacog.compactname"] = "3x Militär"
