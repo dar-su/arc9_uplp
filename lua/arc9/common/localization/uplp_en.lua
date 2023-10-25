@@ -54,6 +54,8 @@ L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
 L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
 L["uplp_caliber_9x19mm"] = "9x19mm Parabellum"
+L["uplp_caliber_.338"] = ".338 Lapua"
+L["uplp_caliber_.308"] = ".308 Winchester"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -181,130 +183,138 @@ local forestgreen = "\n\n" .. "Special Forest Green version."
 local hunterorange = "\n\n" .. "Special Hunter Orange version."
 local partypurple = "\n\n" .. "Special Party Purple version."
 
+local desc_pistoloptic = "\nA direct mounted optic with <color=255,255,100>minor handling penalties</color>."
+local desc_smalloptic = "\nA small rail-mounted optic with <color=100,255,100>minimal handling penalties</color>.\nIts compact reticle can be hard to focus on, <color=255,200,100>increasing sway noticeably</color>."
+local desc_cqcoptic = "\nA lightweight optic with <color=255,255,100>minor sway and handling penalities</color>."
+local desc_magoptic = "\nAn <color=100,255,100>adjustable magnifier</color> optic with <color=255,200,100>noticeable sway and handling penalities</color>."
+local desc_midoptic = "\nA magnified optic that <color=255,200,100>increases sway</color> and <color=255,200,100>slows handling</color> considerably."
+local desc_bigoptic = "\nA bulky optic that <color=255,100,100>increases sway</color> and <color=255,100,100>slows handling</color> by a lot."
+local desc_biggeroptic = "\nA very bulky optic with <color=255,100,100>significant sway and handling penalities</color>."
+
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
 L["uplp_optic_553.compactname"] = "500S"
-L["uplp_optic_553.description"] = "Military-grade holografic sight made for small arms by SightLine™."
+L["uplp_optic_553.description"] = "Military-grade holografic sight made for small arms by SightLine™." .. desc_cqcoptic
 
 L["uplp_optic_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_kobra.compactname"] = "Kobra"
-L["uplp_optic_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle."
+L["uplp_optic_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_cqcoptic
 
 L["uplp_optic_rx1.printname"] = "Military Red Dot"
 L["uplp_optic_rx1.compactname"] = "Military"
-L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin intended for small arms."
+L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin intended for small arms." .. desc_cqcoptic
 
 L["uplp_optic_srs.printname"] = "SWX Red Dot"
 L["uplp_optic_srs.compactname"] = "SWX"
-L["uplp_optic_srs.description"] = "Large reflex optic of American origin intended for use in harsh environments. Quite bulky."
+L["uplp_optic_srs.description"] = "Large reflex optic of American origin intended for use in harsh environments." .. desc_cqcoptic
 
 L["uplp_optic_compm4.printname"] = "Spec-Ops Red Dot"
 L["uplp_optic_compm4.compactname"] = "Spec-Ops"
-L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cylindrical design."
+L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cylindrical design." .. desc_cqcoptic
 
-L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight with Magnifier"
+L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight w. Magnifier"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns.\nVery bulky sight that can cause field of view problems when not aiming.\nAre you sure about equipping it? It doesn't even look like a machine gun!"
+L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns.\nAre you sure about equipping it? It doesn't even look like a machine gun!" .. desc_magoptic
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
-L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification."
+L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
 
 L["uplp_optic_elcan.printname"] = "4x Combat Scope"
 L["uplp_optic_elcan.compactname"] = "4x Combat"
-L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification."
+L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-12x Variable Zoom Scope with Rangefinder"
+L["uplp_optic_bigass.printname"] = "8-12x Variable Zoom Scope w. Rangefinder"
 L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
-L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n- Rangefinder module that calculates how many meters away the target is."
+L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
 
-L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope with Rangefinder"
+L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope w. Rangefinder"
 L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
-L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n- Rangefinder module that calculates how many meters away the target is.\n- Thermal imaging capability that highlights targets."
+L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
 
-L["uplp_optic_d1.printname"] = "D-1 Red Dot [Low Profile]"
+L["uplp_optic_d1.printname"] = "D-1 Red Dot"
 L["uplp_optic_d1.compactname"] = "D-1 [LP]"
-L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms."
+L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
 
-L["uplp_optic_d1high.printname"] = "D-1 Red Dot [High Profile]"
+L["uplp_optic_d1high.printname"] = "D-1 Red Dot w. Riser"
 L["uplp_optic_d1high.compactname"] = "D-1 [HP]"
-L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms.\nMounted higher up using a spacer."
+L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms.\nMounted higher up using a spacer." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
-L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
 
-L["uplp_optic_tacrds_direct.printname"] = "Pistol Red Dot [Direct Mount]"
+L["uplp_optic_tacrds_direct.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds_direct.compactname"] = "Pistol"
-L["uplp_optic_tacrds_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+L["uplp_optic_tacrds_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
 
-L["uplp_optic_rmr_direct.printname"] = "XW Red Dot [Direct Mount]"
+L["uplp_optic_rmr_direct.printname"] = "XW Red Dot"
 L["uplp_optic_rmr_direct.compactname"] = "XW"
-L["uplp_optic_rmr_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+L["uplp_optic_rmr_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
 
-L["uplp_optic_rmr.printname"] = "XW Red Dot [Low Profile]"
+L["uplp_optic_rmr.printname"] = "XW Red Dot"
 L["uplp_optic_rmr.compactname"] = "XW [LP]"
-L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms."
+L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
 
-L["uplp_optic_rmrhigh.printname"] = "XW Red Dot [High Profile]"
+L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
 L["uplp_optic_rmrhigh.compactname"] = "XW [HP]"
-L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms.\nMounted higher up using a spacer."
+L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms.\nMounted higher up using a spacer." .. desc_smalloptic
 
 L["uplp_optic_notacog.printname"] = "3x Military Scope"
 L["uplp_optic_notacog.compactname"] = "3x Military"
-L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3x magnification."
+L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3x magnification." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Competition Scope"
 L["uplp_optic_compm1.compactname"] = "Comp."
-L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting."
+L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. desc_cqcoptic
 
 L["uplp_optic_sniper.printname"] = "6-8x Variable Zoom Scope"
 L["uplp_optic_sniper.compactname"] = "6-8x VZS"
-L["uplp_optic_sniper.description"] = "Long range scope with 6-8x variable magnification."
+L["uplp_optic_sniper.description"] = "Long range scope with 6-8x variable magnification." .. desc_bigoptic
 
 L["uplp_optic_ez6x.printname"] = "1-6x Hunter Scope"
 L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
-L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification."
+L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification." .. desc_bigoptic
 
 L["uplp_optic_ez8x.printname"] = "8x Hunter Scope"
 L["uplp_optic_ez8x.compactname"] = "8x Hunter"
-L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification."
+L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification." .. desc_bigoptic
 
 L["uplp_optic_pm3.printname"] = "12x Marksman Scope"
 L["uplp_optic_pm3.compactname"] = "12x MMS"
-L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification.\nCan equip <color=100,255,100>a backup optic</color>."
+L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification.\nCan equip <color=100,255,100>a backup optic</color>." .. desc_bigoptic
 
 L["uplp_optic_generic.printname"] = "10x Precision Scope"
 L["uplp_optic_generic.compactname"] = "10x Precision"
-L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification."
+L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification." .. desc_bigoptic
 
 L["uplp_optic_old.printname"] = "7x Kraken Scope"
 L["uplp_optic_old.compactname"] = "7x Kraken"
-L["uplp_optic_old.description"] = "Medium range scope with 7x magnification."
+L["uplp_optic_old.description"] = "Medium range scope with 7x magnification.\nHas <color=255,200,100>slightly reduced sway and handling penalties</color> compared to other scopes."
 
-L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight with Magnifier"
+L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."
-L["uplp_optic_hhs1.description"] = "Military-grade holografic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
+L["uplp_optic_hhs1.description"] = "Military-grade holographic sight made for small arms by SightLine™." .. desc_magoptic
 
-L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holographic Sight with Magnifier"
+L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holographic Sight w. Magnifier"
 L["uplp_optic_hhs2.compactname"] = "10S M."
-L["uplp_optic_hhs2.description"] = "Military-grade holografic sight made for small arms by SightLine™.\nComes with a magnifier that can be moved to the side if not in use."
+L["uplp_optic_hhs2.description"] = "Military-grade holographic sight made for small arms by SightLine™." .. desc_magoptic
 
 L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
 L["uplp_optic_exps.compactname"] = "10S"
-L["uplp_optic_exps.description"] = "Military-grade holographic sight made for small arms by SightLine™."
+L["uplp_optic_exps.description"] = "Military-grade holographic sight made for small arms by SightLine™." .. desc_cqcoptic
 
 L["uplp_optic_holosun.printname"] = "PurrPoint™ ELITE Reflex Sight"
 L["uplp_optic_holosun.compactname"] = "ELITE"
-L["uplp_optic_holosun.description"] = "Civilian-grade reflex sight made for competitive shooting by PurrPoint™."
+L["uplp_optic_holosun.description"] = "Civilian-grade reflex sight made for competitive shooting by PurrPoint™." .. desc_cqcoptic
 
 L["uplp_optic_devo.printname"] = "WraithSight™ Elite Red Dot"
 L["uplp_optic_devo.compactname"] = "Wraith"
-L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite division at WraithSight™."
+L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite division at WraithSight™." .. desc_cqcoptic
 
-L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot with WraithSight™ O-U Magnifier"
+L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot w. O-U Magnifier"
 L["uplp_optic_devom.compactname"] = "Wraith + O-U"
-L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™.\nComes with their Over-Under™ Magnifier."
+L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™. Has a unique Over-Under™ Magnifier." .. desc_magoptic
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
@@ -1646,15 +1656,15 @@ L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 
 
 L["uplp_awp_mag_awp.printname"] = "5-Round .308"
 L["uplp_awp_mag_awp.compactname"] = "5R .308"
-L["uplp_awp_mag_awp.description"] = "Standard 5-round magazine loaded with .308 ammunition.\nPerfect for medium range fights."
+L["uplp_awp_mag_awp.description"] = "Standard 5-round magazine loaded with .308 Winchester rounds.\nA less powerful cartridge that can be fired and cycled quickly."
 
 L["uplp_awp_mag_awp_big.printname"] = "8-Round .308"
 L["uplp_awp_mag_awp_big.compactname"] = "8R .308"
-L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .308 ammunition.\nPerfect for medium range fights."
+L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .308 Winchester rounds.\nA less powerful cartridge that can be fired and cycled quickly."
 
 L["uplp_awp_mag_awp_tac.printname"] = "5-Round 6.5mm"
 L["uplp_awp_mag_awp_tac.compactname"] = "5R 6.5mm"
-L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition.\nExtremely good for long range fights."
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition.\nA cartridge with excellent short to medium range performance."
 
 ////// Stocks
 L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"

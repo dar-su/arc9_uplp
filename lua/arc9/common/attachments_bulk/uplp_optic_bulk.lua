@@ -2,6 +2,54 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
+-- pistol optics on pistols
+local stats_pistol = {
+    SpeedAddSights = -0.1,
+    AimDownSightsTimeAdd = 0.02,
+}
+
+-- pistol optics on full rails
+local stats_small = {
+    SpeedAddSights = -0.05,
+    SwayAddSights = 0.25,
+}
+
+-- mid range but not magnified
+local stats_cqc = {
+    SwayAddSights = 0.1,
+    SpeedAddSights = -0.12,
+    AimDownSightsTimeAdd = 0.02,
+}
+
+-- magnifiers
+local stats_mag = {
+    SwayAddSights = 0.5,
+    SpeedAddSights = -0.16,
+    AimDownSightsTimeAdd = 0.03,
+}
+
+-- mid range magnified
+local stats_mid = {
+    SwayAddSights = 0.5,
+    SpeedAddSights = -0.2,
+    AimDownSightsTimeAdd = 0.03,
+}
+
+-- sniper scopes
+local stats_big = {
+    SwayAddSights = 0.75,
+    SpeedAddSights = -0.3,
+    AimDownSightsTimeAdd = 0.05,
+}
+
+-- for very big sniper scopes
+local stats_bigger = {
+    SwayAddSights = 1,
+    SpeedAddSights = -0.4,
+    AimDownSightsTimeAdd = 0.08,
+}
+
+
 ---------- uplp_optic_553
 
 
@@ -19,9 +67,6 @@ ATT.Icon = Material(iconfolder .. "553.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_553.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -45,11 +90,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
-
 ATT.ModelOffset = Vector(0, 0, -0.1)
+
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_553")
 
@@ -70,9 +113,6 @@ ATT.Icon = Material(iconfolder .. "kobra.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_kobra.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -97,9 +137,7 @@ ATT.HoloSightDepthAdjustment = 0.01
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_kobra")
 
@@ -120,9 +158,6 @@ ATT.Icon = Material(iconfolder .. "rx.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_rx01.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -146,9 +181,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rx1")
 
@@ -169,9 +202,6 @@ ATT.Icon = Material(iconfolder .. "srs.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_srs.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -195,9 +225,7 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_srs")
 
@@ -218,9 +246,6 @@ ATT.Icon = Material(iconfolder .. "m2.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_compm2.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -245,9 +270,7 @@ ATT.HoloSightDepthAdjustment = 0.01
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm4")
 
@@ -321,9 +344,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(2, 0, 0)
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_mag)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
@@ -367,7 +388,6 @@ ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 0.5)
 end
 
-
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 4
@@ -383,9 +403,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
+table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_acog")
 
@@ -439,9 +457,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(1, 0, 0)
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
+table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_elcan")
 
@@ -557,9 +573,7 @@ end
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SpeedMultSights = 0.8
+table.Merge(ATT, stats_big)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass")
 
@@ -714,9 +728,7 @@ end
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SpeedMultSights = 0.8
+table.Merge(ATT, stats_bigger)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
@@ -726,11 +738,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
 ATT = {}
 
-ATT.PrintName = "D-1 Red Dot - Low Profile" -- Aimpoint T1 Red Dot - Low Profile
+ATT.PrintName = "D-1 Red Dot" -- Aimpoint T1 Red Dot - Low Profile
 ATT.CompactName = "D-1 - LP"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+ATT.Folder = "Compact"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -757,6 +769,8 @@ ATT.HoloSightColorable = false
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+table.Merge(ATT, stats_small)
+
 ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
 
@@ -765,11 +779,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 
 ATT = {}
 
-ATT.PrintName = "D-1 Red Dot - High Profile" -- Aimpoint T1 Red Dot - High Profile
+ATT.PrintName = "D-1 Red Dot w. Riser" -- Aimpoint T1 Red Dot - High Profile
 ATT.CompactName = "D-1 - HP"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+ATT.Folder = "Compact"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -799,6 +813,9 @@ ATT.HoloSightColorable = false
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.InvAtt = "uplp_optic_d1"
+
+table.Merge(ATT, stats_small)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_d1high")
 
@@ -812,7 +829,7 @@ ATT.PrintName = "Pistol Red Dot" -- Tactical Red Dot
 ATT.CompactName = "Pistol"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+ATT.Folder = "Compact"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -839,6 +856,8 @@ ATT.HoloSightColorable = true
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+table.Merge(ATT, stats_small)
+
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
 
@@ -847,7 +866,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_tacrds")
 
 ATT = {}
 
-ATT.PrintName = "Pistol Red Dot [Direct Mount]" -- Tactical Red Dot [Direct Mount]
+ATT.PrintName = "Pistol Red Dot" -- Tactical Red Dot [Direct Mount]
 ATT.CompactName = "Pistol"
 ATT.Description = ATT.PrintName
 
@@ -877,6 +896,9 @@ ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.InvAtt = "uplp_optic_tacrds"
+
+table.Merge(ATT, stats_pistol)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_tacrds_direct")
 
@@ -885,7 +907,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_tacrds_direct")
 
 ATT = {}
 
-ATT.PrintName = "XW Red Dot [Direct Mount]" -- RMR Sight [Direct Mount]
+ATT.PrintName = "XW Red Dot" -- RMR Sight [Direct Mount]
 ATT.CompactName = "XW"
 ATT.Description = ATT.PrintName
 
@@ -915,6 +937,9 @@ ATT.HoloSightColorable = false
 
 ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.InvAtt = "uplp_optic_rmr"
+
+table.Merge(ATT, stats_pistol)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
 
@@ -923,11 +948,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
 
 ATT = {}
 
-ATT.PrintName = "XW Red Dot - Low Profile" -- RMR Sight - Low Profile
+ATT.PrintName = "XW Red Dot" -- RMR Sight - Low Profile
 ATT.CompactName = "XW - LP"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+ATT.Folder = "Compact"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -954,6 +979,8 @@ ATT.HoloSightColorable = false
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+table.Merge(ATT, stats_small)
+
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
 ---------- uplp_optic_rmrhigh
@@ -961,11 +988,11 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
 ATT = {}
 
-ATT.PrintName = "XW Red Dot - High Profile" -- RMR Sight - High Profile
+ATT.PrintName = "XW Red Dot w. Riser" -- RMR Sight - High Profile
 ATT.CompactName = "XW - HP"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "1-2x"
+ATT.Folder = "Compact"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -991,6 +1018,9 @@ ATT.HoloSightColorable = false
 
 ATT.Category = "uplp_optic_small"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.InvAtt = "uplp_optic_rmr"
+
+table.Merge(ATT, stats_small)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
@@ -1026,7 +1056,6 @@ ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 0.5)
 end
 
-
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 3
@@ -1042,9 +1071,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
+table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_notacog")
 
@@ -1075,7 +1102,7 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
-        RTScopeFOV = 57 / 3,
+        RTScopeFOV = 57 / 2,
     }
 }
 
@@ -1099,9 +1126,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm1")
 
@@ -1172,9 +1197,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SpeedMultSights = 0.85
+table.Merge(ATT, stats_big)
 
 ATT.ModelOffset = Vector(-1.25, 0, 0)
 
@@ -1251,9 +1274,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SpeedMultSights = 0.9
+table.Merge(ATT, stats_big)
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
@@ -1307,9 +1328,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SpeedMultSights = 0.95
+table.Merge(ATT, stats_big)
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
@@ -1372,9 +1391,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SpeedMultSights = 0.85
+table.Merge(ATT, stats_big)
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
@@ -1530,12 +1547,10 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SpeedMultSights = 0.95
-
 ATT.ModelOffset = Vector(0, 0, -0.025)
 ATT.Scale = 0.82
+
+table.Merge(ATT, stats_big)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
@@ -1587,12 +1602,14 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SpeedMultSights = 0.95
-
 ATT.ModelOffset = Vector(0, 0, -0.06)
 ATT.Scale = 0.82
+
+-- table.Merge(ATT, stats_big)
+-- As the lowest magnification sniper scope with no variable zoom, Kraken gets better stats
+ATT.SwayAddSights = 0.65
+ATT.SpeedAddSights = -0.25
+ATT.AimDownSightsTimeAdd = 0.04
 
 ARC9.LoadAttachment(ATT, "uplp_optic_old")
 
@@ -1662,11 +1679,9 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
-
 ATT.ModelOffset = Vector(0.65, 0, -0.1)
+
+table.Merge(ATT, stats_mag)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs1")
 
@@ -1736,11 +1751,9 @@ ATT.RTScopeBlackBoxShadow = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
-
 ATT.ModelOffset = Vector(1.3, 0, -0.1)
+
+table.Merge(ATT, stats_mag)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_hhs2")
 
@@ -1762,9 +1775,6 @@ ATT.Icon = Material(iconfolder .. "exps.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_exps.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -1788,11 +1798,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
-
 ATT.ModelOffset = Vector(0, 0, -0.1)
+
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_exps")
 
@@ -1814,9 +1822,6 @@ ATT.Icon = Material(iconfolder .. "holosub.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_holosun.mdl"
 ATT.FoldSights = true
-
-ATT.SpeedMultSights = 0.95
-ATT.AimDownSightsTimeMult = 1.05
 
 ATT.Sights = {
     {
@@ -1840,18 +1845,15 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
-
 ATT.ModelOffset = Vector(0.2, 0, -0.1)
 ATT.Scale = 1.05
+
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_holosun")
 
 
 ---------- uplp_optic_devo
-
 
 ATT = {}
 
@@ -1890,11 +1892,9 @@ ATT.HoloSightColorable = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SpeedMultSights = 0.95
-
 ATT.ModelOffset = Vector(0, 0, -0.1)
+
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_devo")
 
@@ -1904,7 +1904,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_devo")
 
 ATT = {}
 
-ATT.PrintName = "WraithSight Elite Red Dot with WraithSight O-U Magnifier"
+ATT.PrintName = "WraithSight Elite Red Dot w. WraithSight O-U Magnifier"
 ATT.CompactName = "Wraith + O-U"
 ATT.Description = ATT.PrintName
 
@@ -1961,11 +1961,9 @@ ATT.RTScopeNoBlur = true
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
-
 ATT.ModelOffset = Vector(2.25, 0, -0.1)
+
+table.Merge(ATT, stats_mag)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_devom")
 
@@ -2011,9 +2009,7 @@ ATT.HoloSightDepthAdjustment = 0.01
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SpeedMultSights = 0.9
+table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_kobra")
 
@@ -2068,8 +2064,6 @@ ATT.Category = "uplp_optic_dovetail"
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SpeedMultSights = 0.9
+table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_pso")
