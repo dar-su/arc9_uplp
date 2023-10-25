@@ -51,11 +51,16 @@ ATT.CustomPros = {
 }
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.05
-ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.RangeMinMult = 0.5
-ATT.RangeMaxMult = 0.25
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.02
+
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.RangeMinMult = 0.75
+ATT.RangeMaxMult = 0.75
+
+ATT.SweetSpotRangeMult = 0.75
+ATT.SweetSpotWidthMult = 0.75
+ATT.SweetSpotPeakMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
@@ -77,13 +82,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_awp_barrel_long"}
 
 -- Positives
-ATT.PhysBulletMuzzleVelocityMult = 1.2
-ATT.RangeMinMult = 1.15
+ATT.PhysBulletMuzzleVelocityMult = 1.25
+ATT.RangeMinMult = 1.25
 ATT.RangeMaxMult = 1.25
 
+ATT.SweetSpotRangeMult = 1.25
+ATT.SweetSpotWidthMult = 1.25
+ATT.SweetSpotPeakMult = 1.25
+
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_long")
 
@@ -105,13 +114,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_awp_barrel_short"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.8
-ATT.SprintToFireTimeMult = 0.85
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.04
 
 -- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RangeMinMult = 0.8
 ATT.RangeMaxMult = 0.75
+
+ATT.SweetSpotRangeMult = 0.75
+ATT.SweetSpotWidthMult = 0.75
+ATT.SweetSpotPeakMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 
@@ -169,19 +182,22 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
 ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
 -- Positives
-ATT.RecoilMult = 0.85
-ATT.RecoilAutoControlMult = 1.1
-ATT.CycleTimeMult = 0.8
-ATT.Ammo = "357"
+ATT.RPMMult = 1.3
+ATT.RecoilMult = 0.75
+ATT.CycleTimeMult = 0.75
+ATT.SpeedMultShootingMult = 1.5
+ATT.Ammo = "ar2"
 
 -- Negatives
-ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 55 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.75
-
-ATT.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageMin
-
+ATT.DamageMax = 40
+ATT.DamageMin = 45
+ATT.RangeMin = 0 / ARC9.HUToM
+ATT.RangeMax = 200 / ARC9.HUToM
+ATT.SweetSpot = true
+ATT.SweetSpotDamage = 70
+ATT.SweetSpotRange = 100 / ARC9.HUToM
+ATT.SweetSpotWidth = 100 / ARC9.HUToM
+ATT.SweetSpotPeak = 100 / ARC9.HUToM
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
@@ -209,25 +225,25 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 -- Positives
-ATT.ClipSizeOverride = 8
-ATT.RecoilMult = 0.85
-ATT.RecoilAutoControlMult = 1.1
-ATT.CycleTimeMult = 0.8
-ATT.Ammo = "357"
+ATT.RPMMult = 1.3
+ATT.RecoilMult = 0.75
+ATT.CycleTimeMult = 0.75
+ATT.SpeedMultShootingMult = 1.5
+ATT.Ammo = "ar2"
 
 -- Negatives
-ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 55 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.75
-
-ATT.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageMin
-
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.05
+ATT.DamageMax = 40
+ATT.DamageMin = 45
+ATT.RangeMin = 0 / ARC9.HUToM
+ATT.RangeMax = 200 / ARC9.HUToM
+ATT.SweetSpot = true
+ATT.SweetSpotDamage = 70
+ATT.SweetSpotRange = 100 / ARC9.HUToM
+ATT.SweetSpotWidth = 100 / ARC9.HUToM
+ATT.SweetSpotPeak = 100 / ARC9.HUToM
 
 ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+    [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
 }
 
 ATT.ActivateElements = {"uplp_awp_mag_awp_big"}
@@ -253,19 +269,24 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_tac.mdl"
 
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}
 
--- Positives
-
--- Negatives
-ATT.RecoilMult = 1.25
-ATT.RecoilAutoControlMult = 0.75
+ATT.RPMMult = 1.1
+ATT.RecoilMult = 0.9
 ATT.CycleTimeMult = 0.9
+ATT.SpeedMultShootingMult = 1.25
+ATT.Ammo = "357"
+
+ATT.DamageMax = 65
+ATT.DamageMin = 45
+ATT.RangeMin = 0 / ARC9.HUToM
+ATT.RangeMax = 200 / ARC9.HUToM
+
+ATT.SweetSpot = true
+ATT.SweetSpotDamage = 90
+ATT.SweetSpotRange = 80 / ARC9.HUToM
+ATT.SweetSpotWidth = 80 / ARC9.HUToM
+ATT.SweetSpotPeak = 80 / ARC9.HUToM
 
 ATT.PhysBulletMuzzleVelocityMult = 1.4
-ATT.DamageMax = 85 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 140 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.72
-ATT.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 45 * 39.37 -- How far in M the bullets need to go to deal DamageMin
 
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")

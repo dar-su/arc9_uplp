@@ -329,11 +329,11 @@ L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin wi
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
-L["uplp_backup_optic_rmr.compactname"] = "CRD"
+L["uplp_backup_optic_rmr.compactname"] = "Canted RDS"
 L["uplp_backup_optic_rmr.description"] = "Compact red dot sight mounted at an angle to provide easy target acquisition when using magnified optics."
 
 L["uplp_backup_optic_is.printname"] = "Canted Iron Sights"
-L["uplp_backup_optic_is.compactname"] = "CIS"
+L["uplp_backup_optic_is.compactname"] = "Canted Irons"
 L["uplp_backup_optic_is.description"] = "A front and rear iron sight mounted at an angle to provide easy target acquisition when using magnified optics."
 
 /////////// Grips
@@ -1615,13 +1615,13 @@ L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle
 
 L["uplp_weapon_awp_atx"] = "AX Sniper"
 
-L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
+L["uplp_weapon_awp_real"] = "Arctic Warfare"
 
 /////////// Attachments
 ////// Irons
-L["uplp_awp_rs.printname"] = "Iron Sights"
-L["uplp_awp_rs.compactname"] = "IS"
-L["uplp_awp_rs.description"] = "Factory set of iron sights for the AW Sniper."
+L["uplp_awp_rs.printname"] = "AW Iron Sights"
+L["uplp_awp_rs.compactname"] = "Iron Sights"
+L["uplp_awp_rs.description"] = "Factory set of iron sights for the AW Sniper.\nComes in handy when you forget to zero your scope or lost it on the battlefield."
 
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "610mm Police Barrel"

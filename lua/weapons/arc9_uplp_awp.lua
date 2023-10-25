@@ -9,6 +9,8 @@ SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_awp")
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_awp_real")
+
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_awp_desc")
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sniper") -- In the Customization Menu
@@ -20,7 +22,7 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_awp_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_ai" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x51mm"),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_.338"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase("uplp_mechanism_boltaction" ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_uk" ),
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1990" ),
@@ -81,19 +83,19 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 50 -- Damage dealt point-blank
-SWEP.DamageMin = 40 -- Damage dealt after maximum range
+SWEP.DamageMax = 55 -- Damage dealt point-blank
+SWEP.DamageMin = 80 -- Damage dealt after maximum range
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
 SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 75
-SWEP.SweetSpotRange = 150 / ARC9.HUToM
-SWEP.SweetSpotWidth = 150 / ARC9.HUToM
-SWEP.SweetSpotPeak = 100 / ARC9.HUToM
+SWEP.SweetSpotDamage = 100
+SWEP.SweetSpotRange = 225 / ARC9.HUToM
+SWEP.SweetSpotWidth = 250 / ARC9.HUToM
+SWEP.SweetSpotPeak = 150 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1.15,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -106,8 +108,8 @@ SWEP.Penetration = 50 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 15 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 30 / ARC9.HUToM
-SWEP.RangeMax = 300 / ARC9.HUToM
+SWEP.RangeMin = 0 / ARC9.HUToM
+SWEP.RangeMax = 450 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
@@ -115,7 +117,7 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
-SWEP.Ammo = "ar2" -- What ammo type this gun uses.
+SWEP.Ammo = "sniperpenetratedround" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 5
@@ -125,23 +127,23 @@ SWEP.NoLastCycle = true
 SWEP.ManualActionNoLastCycle = true
 
 -- Recoil
-SWEP.Recoil = 2
-SWEP.RecoilUp = 1.9
-SWEP.RecoilSide = 1
+SWEP.Recoil = 1
+SWEP.RecoilUp = 1.5
+SWEP.RecoilSide = 1.5
 
 SWEP.RecoilRandomUp = 1.2
 SWEP.RecoilRandomSide = 1
 
-SWEP.RecoilRise = 0
-SWEP.MaxRecoilBlowback = 0
-SWEP.RecoilPunch = 0
+SWEP.RecoilRise = 1
+SWEP.MaxRecoilBlowback = 1
+SWEP.RecoilPunch = 1
 SWEP.RecoilAutoControl = 1.15
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
@@ -162,27 +164,27 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddHipFire = 0.05
 
 SWEP.SpreadAddRecoil = 0
-SWEP.SpreadAddMove = 0.03
+SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 
-SWEP.RecoilDissipationRate = 2
+SWEP.RecoilDissipationRate = 1
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 1
 SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 0.9
-SWEP.SpeedMultSights = 0.35
+SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.5
 
-SWEP.AimDownSightsTime = 0.42
+SWEP.AimDownSightsTime = 0.39
 SWEP.SprintToFireTime = 0.4
 
 -- Shooting and Firemodes
-SWEP.RPM = 250 -- How fast gun shoot
+SWEP.RPM = 150 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
