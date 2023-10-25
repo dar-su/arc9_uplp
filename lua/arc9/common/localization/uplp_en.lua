@@ -1623,7 +1623,7 @@ L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle
 
 L["uplp_weapon_awp_atx"] = "AX Sniper"
 
-L["uplp_weapon_awp_real"] = "Arctic Warfare"
+L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
 /////////// Attachments
 ////// Irons

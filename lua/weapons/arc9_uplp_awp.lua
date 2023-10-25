@@ -9,7 +9,6 @@ SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_awp")
-SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_awp_real")
 
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_awp_desc")
 
