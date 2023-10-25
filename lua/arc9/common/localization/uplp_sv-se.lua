@@ -183,7 +183,7 @@ local forestgreen = "\n\n" .. "Speciell \"Forest Green\"-version."
 local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
 local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
 
-local desc_pistoloptic = "\Ett direktmonterat sikte med <color=255,255,100>lätta hanteringsstraff</color>."
+local desc_pistoloptic = "\nEtt direktmonterat sikte med <color=255,255,100>lätta hanteringsstraff</color>."
 local desc_smalloptic = "\nEtt litet skenamonterat sikte med <color=100,255,100>lätta hanteringsstraff</color>.\nDess kompakta hårkors kan vara svår att se, vilket<color=255,200,100>ökar sväjningen märkvärdigt</color>."
 local desc_cqcoptic = "\nEtt lätt sikte med <color=255,255,100>mindre sväjning och hanteringsstraff</color>."
 local desc_magoptic = "\nEtt <color=100,255,100>justerbart förstoringsglas</color> sikte med <color=255,200,100>märkbara straff på sväjning och hantering</color>."
