@@ -169,6 +169,7 @@ L["uplp_stat_semi"] = "When Semi-Auto: "
 L["uplp_stat_suppressed"] = "Suppressed"
 L["uplp_stat_ignite_chance"] = "On Hit: Chance to Ignite Target"
 L["uplp_stat_ignite"] = "On Hit: Ignite Target"
+L["uplp_stat_scopedsway"] = "Scope Sway" // Since the stat is on the sight and not the attachment, need a custom con
 
 
 //////////////////////////////////////////////////////////////////////
@@ -977,7 +978,7 @@ L["uplp_ak_stock_pt3.description"] = "Tactical stock with Russian origin.\nWhen 
 
 L["uplp_ak_stock_evo.printname"] = "EVO Stock"
 L["uplp_ak_stock_evo.compactname"] = "EVO"
-L["uplp_ak_stock_evo.description"] = "Upgraded tactical stock for use on the AK M23.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
+L["uplp_ak_stock_evo.description"] = "Adjustable tactical stock for use on the AK M23.\nCan be <color=255,255,100>extended</color> to reduce both recoil and handling by 10%."
 
 L["uplp_ak_stock_ppk.printname"] = "AK SMG M20 Stock"
 L["uplp_ak_stock_ppk.compactname"] = "M20"

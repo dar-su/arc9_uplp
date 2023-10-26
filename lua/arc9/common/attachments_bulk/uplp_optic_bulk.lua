@@ -9,44 +9,62 @@ local stats_pistol = {
 }
 
 -- pistol optics on full rails
+local sway_small = 0.25
 local stats_small = {
+    -- SwayAddSights = 0.25,
     SpeedAddSights = -0.05,
-    SwayAddSights = 0.25,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_small },
 }
 
 -- mid range but not magnified
+local sway_cqc = 0.2
 local stats_cqc = {
-    SwayAddSights = 0.2,
+    -- SwayAddSights = 0.2,
     SpeedAddSights = -0.12,
     AimDownSightsTimeAdd = 0.02,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_cqc },
 }
 
 -- magnifiers
+local sway_mag = 1.5
 local stats_mag = {
-    SwayAddSights = 0.75,
+    -- SwayAddSights = 0.75,
     SpeedAddSights = -0.16,
     AimDownSightsTimeAdd = 0.03,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_cqc .. " / " .. sway_mag },
 }
 
 -- mid range magnified
+local sway_mid = 2
 local stats_mid = {
-    SwayAddSights = 1,
+    -- SwayAddSights = 1,
     SpeedAddSights = -0.2,
     AimDownSightsTimeAdd = 0.03,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mid },
 }
 
 -- sniper scopes
+local sway_big = 3
 local stats_big = {
-    SwayAddSights = 2,
+    -- SwayAddSights = 2,
     SpeedAddSights = -0.3,
     AimDownSightsTimeAdd = 0.05,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_big },
 }
 
 -- for very big sniper scopes
+local sway_bigger = 4
 local stats_bigger = {
-    SwayAddSights = 2.5,
+    -- SwayAddSights = 2.5,
     SpeedAddSights = -0.4,
     AimDownSightsTimeAdd = 0.08,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_bigger },
 }
 
 
@@ -73,7 +91,9 @@ ATT.Sights = {
         Pos = Vector(0, 7, -1.5),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -119,7 +139,9 @@ ATT.Sights = {
         Pos = Vector(0, 6, -1.8),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -164,7 +186,9 @@ ATT.Sights = {
         Pos = Vector(0, 5.5, -1.7),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -208,7 +232,9 @@ ATT.Sights = {
         Pos = Vector(0, 6, -1.525),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -252,7 +278,9 @@ ATT.Sights = {
         Pos = Vector(0, 13, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 30
+        ViewModelFOV = 30,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -299,7 +327,9 @@ ATT.Sights = {
         ShadowPos = Vector(16,0,0),
         Disassociate = true,
         Blur = true,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     },
     {
         Pos = Vector(-0.64, 13, -2.49),
@@ -307,7 +337,9 @@ ATT.Sights = {
         Magnification = 1.25,
         RTScopeFOV = 38 / 4,
         Blur = false,
-        ViewModelFOV = 30
+        ViewModelFOV = 30,
+
+        SwayAddSights = sway_mag,
     },
 }
 
@@ -373,6 +405,8 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 4,
+
+        SwayAddSights = sway_mid,
     },
     {
         Pos = Vector(0, 8, -2.75),
@@ -432,6 +466,8 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 45,
         RTScopeFOV = 57 / 4,
+
+        SwayAddSights = sway_mid,
     },
 }
 
@@ -488,6 +524,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 8,
         Blur = false,
+
+        SwayAddSights = sway_big,
     },
     -- {
         -- Pos = Vector(0, 10, -1.15),
@@ -604,6 +642,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 8,
         Blur = false,
+
+        SwayAddSights = sway_bigger,
     },
     -- {
         -- Pos = Vector(0, 10, -1.15),
@@ -756,7 +796,9 @@ ATT.Sights = {
         Pos = Vector(0, 8, -0.73),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 40
+        ViewModelFOV = 40,
+
+        SwayAddSights = sway_small,
     }
 }
 
@@ -797,7 +839,9 @@ ATT.Sights = {
         Pos = Vector(0, 8, -1.525),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 40
+        ViewModelFOV = 40,
+
+        SwayAddSights = sway_small,
     }
 }
 
@@ -843,7 +887,9 @@ ATT.Sights = {
         Pos = Vector(0, 8, -0.625),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_small,
     }
 }
 
@@ -966,7 +1012,9 @@ ATT.Sights = {
         Pos = Vector(0, 7, -0.55),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_small,
     }
 }
 
@@ -1006,7 +1054,9 @@ ATT.Sights = {
         Pos = Vector(0, 7, -1.28),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_small,
     }
 }
 
@@ -1049,6 +1099,8 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 45,
         RTScopeFOV = 57 / 3,
+
+        SwayAddSights = sway_mid,
     }
 }
 
@@ -1103,6 +1155,8 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 2,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -1160,7 +1214,9 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         Blur = false,
-        Reticle = R0
+        Reticle = R0,
+
+        SwayAddSights = sway_big,
     },
     -- {
         -- Pos = Vector(0, 12, -1.49),
@@ -1233,6 +1289,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         Blur = false,
+
+        SwayAddSights = sway_big,
         -- Reticle = R1
     },
     -- {
@@ -1306,6 +1364,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         Blur = false,
+
+        SwayAddSights = sway_big,
     },
 }
 
@@ -1369,6 +1429,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         Blur = false,
+
+        SwayAddSights = sway_big,
     },
 }
 
@@ -1525,6 +1587,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         Blur = false,
+
+        SwayAddSights = sway_big,
     },
 }
 
@@ -1580,6 +1644,8 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         Blur = false,
+
+        SwayAddSights = sway_big - 0.15,
     },
 }
 
@@ -1607,9 +1673,11 @@ ATT.Scale = 0.82
 
 -- table.Merge(ATT, stats_big)
 -- As the lowest magnification sniper scope with no variable zoom, Kraken gets better stats
-ATT.SwayAddSights = 0.65
 ATT.SpeedAddSights = -0.25
 ATT.AimDownSightsTimeAdd = 0.04
+
+ATT.CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_big - 0.15 }
+
 
 ARC9.LoadAttachment(ATT, "uplp_optic_old")
 
@@ -1712,13 +1780,17 @@ ATT.Sights = {
         ShadowPos = Vector(16,0,0),
         Disassociate = true,
         Blur = true,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     },
     {
         Pos = Vector(0, 11.5, -1.675),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 30
+        ViewModelFOV = 30,
+
+        SwayAddSights = sway_mag,
     },
 }
 
@@ -1781,7 +1853,9 @@ ATT.Sights = {
         Pos = Vector(0, 8, -1.75),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -1828,7 +1902,9 @@ ATT.Sights = {
         Pos = Vector(0, 8, -1.24),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -1875,7 +1951,9 @@ ATT.Sights = {
         Pos = Vector(0, 8, -1.4),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -1926,6 +2004,8 @@ ATT.Sights = {
         Blur = true,
         ViewModelFOV = 57,
         NoSensAdjustment = true,
+
+        SwayAddSights = sway_cqc,
     },
     {
         Pos = Vector(0, 8, -0.83),
@@ -1933,6 +2013,8 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 57,
         Blue = false,
+
+        SwayAddSights = sway_mag,
     },
 }
 
@@ -1991,7 +2073,9 @@ ATT.Sights = {
         Pos = Vector(-0.5, 8.5, -4.325),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
     }
 }
 
@@ -2009,7 +2093,7 @@ ATT.HoloSightDepthAdjustment = 0.01
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-table.Merge(ATT, stats_mid)
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_kobra")
 
@@ -2040,6 +2124,8 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 3,
+
+        SwayAddSights = sway_mid,
     }
 }
 
