@@ -185,14 +185,14 @@ local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
 local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
 
 local desc_pistoloptic = "\nHar <color=100,255,100>lätta hanteringsstraff</color>."
-local desc_smalloptic = "\nHar<color=100,255,100>inga hanteringsstraff</color>, men den <color=255,200,100>sänker rörelsehastigheten i siktet</color>."
-local desc_cqcoptic = "\nHar<color=100,255,100>lätta hanteringsstraff</color>."
-local desc_magoptic = "\nHar<color=255,200,100>lätta hanteringsstraff</color>. <color=100,255,100>Justerbart förstoringsglas</color> som erbjuder zoom med kostnad på <color=255,255,100>lätt sväjning i siktet</color>."
-local desc_midoptic = "\nHar<color=255,200,100>medelstor sväjning och hanteringsstraff</color>."
-local desc_midbigoptic = "\nHar<color=255,150,100>relativt hög sväjning och hanteringsstraff</color>."
+local desc_smalloptic = "\nHar <color=100,255,100>inga hanteringsstraff</color>, men den <color=255,200,100>sänker rörelsehastigheten i siktet</color>."
+local desc_cqcoptic = "\nHar <color=100,255,100>lätta hanteringsstraff</color>."
+local desc_magoptic = "\nHar <color=255,200,100>lätta hanteringsstraff</color>. <color=100,255,100>Justerbart förstoringsglas</color> som erbjuder zoom med kostnad på <color=255,255,100>lätt sväjning i siktet</color>."
+local desc_midoptic = "\nHar <color=255,200,100>medelstor sväjning och hanteringsstraff</color>."
+local desc_midbigoptic = "\nHar <color=255,150,100>relativt hög sväjning och hanteringsstraff</color>."
 
-local desc_bigoptic = "\nHar<color=255,100,100>hög sväjning och hanteringsstraff</color>."
-local desc_biggeroptic = "\nHar<color=255,100,100>väldigt hög sväjning och hanteringsstraff</color>."
+local desc_bigoptic = "\nHar <color=255,100,100>hög sväjning och hanteringsstraff</color>."
+local desc_biggeroptic = "\nHar <color=255,100,100>väldigt hög sväjning och hanteringsstraff</color>."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
