@@ -29,7 +29,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
@@ -137,7 +137,7 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 1
 SWEP.MaxRecoilBlowback = 1
 SWEP.RecoilPunch = 1
-SWEP.RecoilAutoControl = 1.15
+SWEP.RecoilAutoControl = 0
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75

@@ -1671,33 +1671,37 @@ L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"
 L["uplp_awp_stock_at.compactname"] = "Foldable M."
 L["uplp_awp_stock_at.description"] = "Modern foldable stock with more comfortable ergonomics."
 
-L["uplp_awp_stock_atx.printname"] = "eXtreme Stock (Sporty Red)"
-L["uplp_awp_stock_atx.compactname"] = "X (SR)"
-L["uplp_awp_stock_atx.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. sportyred
+L["uplp_awp_stock_atx.printname"] = "eXtreme Stock"
+L["uplp_awp_stock_atx.compactname"] = "eXtreme"
+L["uplp_awp_stock_atx.description"] = "Lightweight competition stock manufactured by eXtreme Sports.\nSignificant increase to handling and mobility at the cost of worse recoil and sway.\nHas a variety of color options."
 
-L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock (Aqua Blue)"
-L["uplp_awp_stock_atx_blue.compactname"] = "X (AB)"
-L["uplp_awp_stock_atx_blue.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. aquablue
+L["uplp_awp_stock_atx_red.printname"] = "eXtreme Stock Finish (Sporty Red)"
+L["uplp_awp_stock_atx_red.compactname"] = "Sporty Red"
+L["uplp_awp_stock_atx_red.description"] = "Colorful finish for the eXtreme Stock." .. sportyred
 
-L["uplp_awp_stock_atx_gray.printname"] = "eXtreme Stock (Stealth Gray)"
-L["uplp_awp_stock_atx_gray.compactname"] = "X (SG)"
-L["uplp_awp_stock_atx_gray.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. stealthgray
+L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock Finish (Aqua Blue)"
+L["uplp_awp_stock_atx_blue.compactname"] = "Aqua Blue"
+L["uplp_awp_stock_atx_blue.description"] = "Colorful finish for the eXtreme Stock." .. aquablue
 
-L["uplp_awp_stock_atx_green.printname"] = "eXtreme Stock (Forest Green)"
-L["uplp_awp_stock_atx_green.compactname"] = "X (FG)"
-L["uplp_awp_stock_atx_green.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. forestgreen
+L["uplp_awp_stock_atx_gray.printname"] = "eXtreme Stock Finish (Stealth Gray)"
+L["uplp_awp_stock_atx_gray.compactname"] = "Stealth Gray"
+L["uplp_awp_stock_atx_gray.description"] = "Colorful finish for the eXtreme Stock." .. stealthgray
 
-L["uplp_awp_stock_atx_orange.printname"] = "eXtreme Stock (Hunter Orange)"
-L["uplp_awp_stock_atx_orange.compactname"] = "X (HO)"
-L["uplp_awp_stock_atx_orange.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. hunterorange
+L["uplp_awp_stock_atx_green.printname"] = "eXtreme Stock Finish (Forest Green)"
+L["uplp_awp_stock_atx_green.compactname"] = "Forest Green"
+L["uplp_awp_stock_atx_green.description"] = "Colorful finish for the eXtreme Stock." .. forestgreen
 
-L["uplp_awp_stock_atx_purple.printname"] = "eXtreme Stock (Party Purple)"
-L["uplp_awp_stock_atx_purple.compactname"] = "X (PP)"
-L["uplp_awp_stock_atx_purple.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. partypurple
+L["uplp_awp_stock_atx_orange.printname"] = "eXtreme Stock Finish (Hunter Orange)"
+L["uplp_awp_stock_atx_orange.compactname"] = "Hunter Orange"
+L["uplp_awp_stock_atx_orange.description"] = "Colorful finish for the eXtreme Stock." .. hunterorange
 
-L["uplp_awp_stock_atx_white.printname"] = "eXtreme Stock (Arctic White)"
-L["uplp_awp_stock_atx_white.compactname"] = "X (AW)"
-L["uplp_awp_stock_atx_white.description"] = "Lightweight competition stock manufactured by eXtreme Sports Inc." .. arcticwhite
+L["uplp_awp_stock_atx_purple.printname"] = "eXtreme Stock Finish (Party Purple)"
+L["uplp_awp_stock_atx_purple.compactname"] = "Party Purple"
+L["uplp_awp_stock_atx_purple.description"] = "Colorful finish for the eXtreme Stock." .. partypurple
+
+L["uplp_awp_stock_atx_white.printname"] = "eXtreme Stock Finish (Arctic White)"
+L["uplp_awp_stock_atx_white.compactname"] = "Arctic White"
+L["uplp_awp_stock_atx_white.description"] = "Colorful finish for the eXtreme Stock." .. arcticwhite
 
 L["uplp_awp_stock_awm.printname"] = "Foldable Stock"
 L["uplp_awp_stock_awm.compactname"] = "Foldable"
