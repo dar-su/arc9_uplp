@@ -184,21 +184,15 @@ local forestgreen = "\n\n" .. "Special Forest Green version."
 local hunterorange = "\n\n" .. "Special Hunter Orange version."
 local partypurple = "\n\n" .. "Special Party Purple version."
 
--- local desc_pistoloptic = "\nA direct mounted optic with <color=255,255,100>minor handling penalties</color>."
--- local desc_smalloptic = "\nA small rail-mounted optic with <color=100,255,100>minimal handling penalties</color>.\nIts compact reticle can be hard to focus on, <color=255,200,100>increasing sway noticeably</color>."
--- local desc_cqcoptic = "\nA lightweight optic with <color=255,255,100>minor sway and handling penalities</color>."
--- local desc_magoptic = "\nAn <color=100,255,100>adjustable magnifier</color> optic with <color=255,200,100>noticeable sway and handling penalities</color>."
--- local desc_midoptic = "\nA magnified optic that <color=255,200,100>increases sway</color> and <color=255,200,100>slows handling</color> considerably."
--- local desc_bigoptic = "\nA bulky optic that <color=255,100,100>increases sway</color> and <color=255,100,100>slows handling</color> by a lot."
--- local desc_biggeroptic = "\nA very bulky optic with <color=255,100,100>significant sway and handling penalities</color>."
+local desc_pistoloptic = "\nHas <color=100,255,100>minor handling penalties</color>."
+local desc_smalloptic = "\nHas <color=100,255,100>no handling penalties</color>, but <color=255,200,100>reduces move speed while aiming</color>."
+local desc_cqcoptic = "\nHas <color=100,255,100>minor handling penalities</color>."
+local desc_magoptic = "\nHas <color=255,200,100>small handling penalities</color>. <color=100,255,100>Adjustable magnifier</color> provides zoom at the cost of <color=255,100,100>aim sway</color>."
+local desc_midoptic = "\nHas <color=255,200,100>medium sway and handling penalties</color>."
+local desc_midbigoptic = "\nHas <color=255,150,100>somewhat high sway and handling penalties</color>."
 
-local desc_pistoloptic = "\nA direct mounted optic with minor handling penalties."
-local desc_smalloptic = "\nA small rail-mounted optic with minimal handling penalties.\nIts compact reticle can be hard to focus on, increasing sway noticeably."
-local desc_cqcoptic = "\nA lightweight optic with minor sway and handling penalities."
-local desc_magoptic = "\nAn adjustable magnifier optic with noticeable sway and handling penalities."
-local desc_midoptic = "\nA magnified optic that increases sway and slows handling considerably."
-local desc_bigoptic = "\nA bulky optic that increases sway and slows handling by a lot."
-local desc_biggeroptic = "\nA very bulky optic with significant sway and handling penalities."
+local desc_bigoptic = "\nHas <color=255,100,100>high sway and handling penalities</color>."
+local desc_biggeroptic = "\nHas <color=255,100,100>very high sway and handling penalities</color>."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
@@ -283,7 +277,7 @@ L["uplp_optic_sniper.description"] = "Long range scope with 6-8x variable magnif
 
 L["uplp_optic_ez6x.printname"] = "1-6x Hunter Scope"
 L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
-L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification." .. desc_bigoptic
+L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification." .. desc_midbigoptic
 
 L["uplp_optic_ez8x.printname"] = "8x Hunter Scope"
 L["uplp_optic_ez8x.compactname"] = "8x Hunter"
@@ -299,7 +293,7 @@ L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnif
 
 L["uplp_optic_old.printname"] = "7x Kraken Scope"
 L["uplp_optic_old.compactname"] = "7x Kraken"
-L["uplp_optic_old.description"] = "Medium range scope with 7x magnification.\nHas <color=255,200,100>slightly reduced sway and handling penalties</color> compared to other scopes."
+L["uplp_optic_old.description"] = "Medium range scope with 7x magnification." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."

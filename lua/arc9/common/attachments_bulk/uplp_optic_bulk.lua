@@ -9,32 +9,33 @@ local stats_pistol = {
 }
 
 -- pistol optics on full rails
-local sway_small = 0.25
+local sway_small = nil --0.25
 local stats_small = {
     -- SwayAddSights = 0.25,
-    SpeedAddSights = -0.05,
+    SpeedAddSights = -0.15,
+    --AimDownSightsTimeAdd = 0.01,
 
-    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_small },
+    --CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_small },
 }
 
 -- mid range but not magnified
-local sway_cqc = 0.2
+local sway_cqc = nil --0.2
 local stats_cqc = {
     -- SwayAddSights = 0.2,
-    SpeedAddSights = -0.12,
+    SpeedAddSights = -0.1,
     AimDownSightsTimeAdd = 0.02,
 
-    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_cqc },
+    --CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_cqc },
 }
 
 -- magnifiers
 local sway_mag = 1.5
 local stats_mag = {
     -- SwayAddSights = 0.75,
-    SpeedAddSights = -0.16,
+    SpeedAddSights = -0.15,
     AimDownSightsTimeAdd = 0.03,
 
-    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_cqc .. " / " .. sway_mag },
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mag },
 }
 
 -- mid range magnified
@@ -42,9 +43,19 @@ local sway_mid = 2
 local stats_mid = {
     -- SwayAddSights = 1,
     SpeedAddSights = -0.2,
-    AimDownSightsTimeAdd = 0.03,
+    AimDownSightsTimeAdd = 0.05,
 
     CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mid },
+}
+
+-- hunter/kraken
+local sway_midbig = 2.5
+local stats_midbig = {
+    -- SwayAddSights = 1,
+    SpeedAddSights = -0.27,
+    AimDownSightsTimeAdd = 0.06,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_midbig },
 }
 
 -- sniper scopes
@@ -52,7 +63,7 @@ local sway_big = 3
 local stats_big = {
     -- SwayAddSights = 2,
     SpeedAddSights = -0.3,
-    AimDownSightsTimeAdd = 0.05,
+    AimDownSightsTimeAdd = 0.08,
 
     CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_big },
 }
@@ -62,7 +73,7 @@ local sway_bigger = 4
 local stats_bigger = {
     -- SwayAddSights = 2.5,
     SpeedAddSights = -0.4,
-    AimDownSightsTimeAdd = 0.08,
+    AimDownSightsTimeAdd = 0.1,
 
     CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_bigger },
 }
@@ -1144,10 +1155,6 @@ ATT.Icon = Material(iconfolder .. "m1.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_compm1.mdl"
 ATT.FoldSights = true
 
--- ATT.SpeedMultSights = 0.9
--- ATT.AimDownSightsTimeMult = 1.1
--- ATT.RecoilMultSights = 0.4
-
 ATT.Sights = {
     {
         Pos = Vector(0, 6, -1.635),
@@ -1156,7 +1163,7 @@ ATT.Sights = {
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 2,
 
-        SwayAddSights = sway_cqc,
+        SwayAddSights = sway_mag,
     }
 }
 
@@ -1181,6 +1188,7 @@ ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
+ATT.CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mag }
 
 ARC9.LoadAttachment(ATT, "uplp_optic_compm1")
 
@@ -1204,7 +1212,7 @@ ATT.Model = "models/weapons/arc9/uplp/optic_sniper.mdl"
 ATT.FoldSights = true
 
 local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
-local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
+-- local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
@@ -1290,7 +1298,7 @@ ATT.Sights = {
         RTScopeFOV = 57 / 6,
         Blur = false,
 
-        SwayAddSights = sway_big,
+        SwayAddSights = sway_midbig,
         -- Reticle = R1
     },
     -- {
@@ -1332,7 +1340,7 @@ ATT.ScopeScreenRatio = 0.66
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-table.Merge(ATT, stats_big)
+table.Merge(ATT, stats_midbig)
 
 ATT.ModelOffset = Vector(0.5, 0, 0)
 
@@ -1645,7 +1653,7 @@ ATT.Sights = {
         RTScopeFOV = 57 / 6,
         Blur = false,
 
-        SwayAddSights = sway_big - 0.15,
+        SwayAddSights = sway_midbig,
     },
 }
 
@@ -1671,13 +1679,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(0, 0, -0.06)
 ATT.Scale = 0.82
 
--- table.Merge(ATT, stats_big)
--- As the lowest magnification sniper scope with no variable zoom, Kraken gets better stats
-ATT.SpeedAddSights = -0.25
-ATT.AimDownSightsTimeAdd = 0.04
-
-ATT.CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_big - 0.15 }
-
+table.Merge(ATT, stats_midbig)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_old")
 
