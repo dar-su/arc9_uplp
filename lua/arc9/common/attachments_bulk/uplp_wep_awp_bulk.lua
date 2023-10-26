@@ -314,17 +314,17 @@ ATT.HolsterTimeMult = 0.75
 ATT.SpeedAddSights = 0.05
 ATT.SprintToFireTimeAdd = -0.03
 ATT.RecoilAdd = 0.15
+ATT.SpeedAdd = 0.02
+
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_at")
 
 
 ---------- uplp_awp_stock_atx
 
-
 ATT = {}
-
-ATT.PrintName = "eXtreme Stock"
-ATT.CompactName = "eXtreme"
+ATT.PrintName = "eXtreme Stock (Sporty Red)"
+ATT.CompactName = "eXtreme (SR)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xr.png", "mips smooth")
@@ -337,8 +337,22 @@ ATT.ModelOffset = Vector(-8, -2.3, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.ActivateElements = {"xstock", "uplp_awp_stock"} -- "uplp_awp_stock_atx"
+ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock", "uplp_awp_stock"}
 
+local exstock = {
+    SpeedAdd = 0.04,
+    SpeedAddSights = 0.15,
+    AimDownSightsTimeAdd = -0.03,
+    SprintToFireTimeAdd = -0.07,
+
+    RPMMult = 0.9,
+    SwayAddSights = 0.25,
+    RecoilRandomSideMult = 1.5,
+    RecoilAdd = 0.65,
+}
+table.Merge(ATT, exstock)
+
+--[[]
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_appearance"),
@@ -352,23 +366,13 @@ ATT.Attachments = {
         Integral = "uplp_awp_stock_atx_red",
     },
 }
-
-ATT.SpeedAdd = 0.05
-ATT.SpeedAddSights = 0.15
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.07
-
-ATT.RPMMult = 0.9
-ATT.SwayAddSights = 0.25
--- ATT.RecoilAutoControlMult = 0.5
-ATT.RecoilRandomSideMult = 1.5
-ATT.RecoilAdd = 0.65
+]]
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx")
 
 ---------- uplp_awp_stock_atx_red
 
-
+--[[]
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Sporty Red)"
@@ -384,116 +388,149 @@ ATT.Free = true
 ATT.ActivateElements = {"uplp_awp_stock_atx"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_red")
+]]
 
 ---------- uplp_awp_stock_atx_blue
-
-
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Aqua Blue)"
-ATT.CompactName = "X (AB)"
+ATT.CompactName = "eXtreme (AB)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xb.png", "mips smooth")
 
-ATT.Category = "uplp_awp_ax_skin"
+ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_blue"}
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock", "uplp_awp_stock"}
+
+table.Merge(ATT, exstock)
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_blue")
 
 
 ---------- uplp_awp_stock_atx_gray
-
-
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Stealth Gray)"
-ATT.CompactName = "X (SG)"
+ATT.CompactName = "eXtreme (SG)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xg.png", "mips smooth")
 
-ATT.Category = "uplp_awp_ax_skin"
+ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_gray"}
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock", "uplp_awp_stock"}
+
+table.Merge(ATT, exstock)
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_gray")
 
 
 ---------- uplp_awp_stock_atx_green
-
-
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Forest Green)"
-ATT.CompactName = "X (FG)"
+ATT.CompactName = "eXtreme (FG)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xgr.png", "mips smooth")
 
-ATT.Category = "uplp_awp_ax_skin"
+ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_green"}
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock", "uplp_awp_stock"}
+
+table.Merge(ATT, exstock)
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_green")
 
 
 ---------- uplp_awp_stock_atx_orange
-
-
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Hunter Orange)"
-ATT.CompactName = "X (OG)"
+ATT.CompactName = "eXtreme (OG)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xo.png", "mips smooth")
 
-ATT.Category = "uplp_awp_ax_skin"
+ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_orange"}
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock", "uplp_awp_stock"}
+
+table.Merge(ATT, exstock)
+
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_orange")
 
 
 ---------- uplp_awp_stock_atx_purple
-
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Party Purple)"
-ATT.CompactName = "X (PP)"
+ATT.CompactName = "eXtreme (PP)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xp.png", "mips smooth")
 
-ATT.Category = "uplp_awp_ax_skin"
+ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_purple"}
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock", "uplp_awp_stock"}
+
+table.Merge(ATT, exstock)
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_purple")
 
 
 ---------- uplp_awp_stock_atx_white
-
-
 ATT = {}
 
 ATT.PrintName = "eXtreme Stock (Arctic White)"
-ATT.CompactName = "X (AW)"
+ATT.CompactName = "eXtreme (AW)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock/xw.png", "mips smooth")
 
-ATT.Category = "uplp_awp_ax_skin"
+ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_awp_stock_atx_white"}
+ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
+ATT.ModelOffset = Vector(-8, -2.3, 3.5)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock", "uplp_awp_stock"}
+
+table.Merge(ATT, exstock)
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_atx_white")
 
@@ -516,6 +553,7 @@ ATT.DeployTimeMult = 0.75
 ATT.HolsterTimeMult = 0.75
 ATT.SprintToFireTimeAdd = -0.05
 ATT.RecoilAdd = 0.1
+ATT.SpeedAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm")
 
@@ -569,12 +607,14 @@ ATT.Attachments = {
 ATT.DeployTimeMult = 0.75
 ATT.HolsterTimeMult = 0.75
 
+-- Buffer Tube stats
+ATT.RecoilAdd = 1
+ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.1
 ATT.SprintToFireTimeAdd = -0.1
-
--- Stocks should reduce this
-ATT.RecoilAdd = 2
-ATT.SwayAddSights = 3
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_tube")
 

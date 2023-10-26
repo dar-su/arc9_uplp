@@ -1674,37 +1674,38 @@ L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"
 L["uplp_awp_stock_at.compactname"] = "Foldable M."
 L["uplp_awp_stock_at.description"] = "Modern foldable stock with more comfortable ergonomics."
 
-L["uplp_awp_stock_atx.printname"] = "eXtreme Stock"
-L["uplp_awp_stock_atx.compactname"] = "eXtreme"
-L["uplp_awp_stock_atx.description"] = "Lightweight competition stock manufactured by eXtreme Sports.\nSignificant increase to handling and mobility at the cost of worse recoil and sway.\nHas a variety of color options."
+local uplp_awp_stock_atx = "Lightweight competition stock manufactured by eXtreme Sports.\nSignificant faster handling and higher mobility at the cost of worse recoil and sway."
+L["uplp_awp_stock_atx.printname"] = "eXtreme Stock (Sporty Red)"
+L["uplp_awp_stock_atx.compactname"] = "eXtreme (SR)"
+L["uplp_awp_stock_atx.description"] = uplp_awp_stock_atx .. sportyred
 
-L["uplp_awp_stock_atx_red.printname"] = "eXtreme Stock Finish (Sporty Red)"
-L["uplp_awp_stock_atx_red.compactname"] = "Sporty Red"
-L["uplp_awp_stock_atx_red.description"] = "Colorful finish for the eXtreme Stock." .. sportyred
+// L["uplp_awp_stock_atx_red.printname"] = "eXtreme Stock (Sporty Red)"
+// L["uplp_awp_stock_atx_red.compactname"] = "Sporty Red"
+// L["uplp_awp_stock_atx_red.description"] = "Colorful finish for the eXtreme Stock." .. sportyred
 
-L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock Finish (Aqua Blue)"
-L["uplp_awp_stock_atx_blue.compactname"] = "Aqua Blue"
-L["uplp_awp_stock_atx_blue.description"] = "Colorful finish for the eXtreme Stock." .. aquablue
+L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock (Aqua Blue)"
+L["uplp_awp_stock_atx_blue.compactname"] = "eXtreme (AB)"
+L["uplp_awp_stock_atx_blue.description"] = uplp_awp_stock_atx .. aquablue
 
-L["uplp_awp_stock_atx_gray.printname"] = "eXtreme Stock Finish (Stealth Gray)"
-L["uplp_awp_stock_atx_gray.compactname"] = "Stealth Gray"
-L["uplp_awp_stock_atx_gray.description"] = "Colorful finish for the eXtreme Stock." .. stealthgray
+L["uplp_awp_stock_atx_gray.printname"] = "eXtreme Stock (Stealth Gray)"
+L["uplp_awp_stock_atx_gray.compactname"] = "eXtreme (SG)"
+L["uplp_awp_stock_atx_gray.description"] = uplp_awp_stock_atx .. stealthgray
 
-L["uplp_awp_stock_atx_green.printname"] = "eXtreme Stock Finish (Forest Green)"
-L["uplp_awp_stock_atx_green.compactname"] = "Forest Green"
-L["uplp_awp_stock_atx_green.description"] = "Colorful finish for the eXtreme Stock." .. forestgreen
+L["uplp_awp_stock_atx_green.printname"] = "eXtreme Stock (Forest Green)"
+L["uplp_awp_stock_atx_green.compactname"] = "eXtreme (FG)"
+L["uplp_awp_stock_atx_green.description"] = uplp_awp_stock_atx .. forestgreen
 
-L["uplp_awp_stock_atx_orange.printname"] = "eXtreme Stock Finish (Hunter Orange)"
-L["uplp_awp_stock_atx_orange.compactname"] = "Hunter Orange"
-L["uplp_awp_stock_atx_orange.description"] = "Colorful finish for the eXtreme Stock." .. hunterorange
+L["uplp_awp_stock_atx_orange.printname"] = "eXtreme Stock (Hunter Orange)"
+L["uplp_awp_stock_atx_orange.compactname"] = "eXtreme (HR)"
+L["uplp_awp_stock_atx_orange.description"] = uplp_awp_stock_atx .. hunterorange
 
-L["uplp_awp_stock_atx_purple.printname"] = "eXtreme Stock Finish (Party Purple)"
-L["uplp_awp_stock_atx_purple.compactname"] = "Party Purple"
-L["uplp_awp_stock_atx_purple.description"] = "Colorful finish for the eXtreme Stock." .. partypurple
+L["uplp_awp_stock_atx_purple.printname"] = "eXtreme Stock (Party Purple)"
+L["uplp_awp_stock_atx_purple.compactname"] = "eXtreme (PP)"
+L["uplp_awp_stock_atx_purple.description"] = uplp_awp_stock_atx .. partypurple
 
-L["uplp_awp_stock_atx_white.printname"] = "eXtreme Stock Finish (Arctic White)"
-L["uplp_awp_stock_atx_white.compactname"] = "Arctic White"
-L["uplp_awp_stock_atx_white.description"] = "Colorful finish for the eXtreme Stock." .. arcticwhite
+L["uplp_awp_stock_atx_white.printname"] = "eXtreme Stock (Arctic White)"
+L["uplp_awp_stock_atx_white.compactname"] = "eXtreme (AW)"
+L["uplp_awp_stock_atx_white.description"] = uplp_awp_stock_atx .. arcticwhite
 
 L["uplp_awp_stock_awm.printname"] = "Foldable Stock"
 L["uplp_awp_stock_awm.compactname"] = "Foldable"
