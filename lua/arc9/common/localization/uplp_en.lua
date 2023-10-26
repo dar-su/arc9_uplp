@@ -187,7 +187,7 @@ local partypurple = "\n\n" .. "Special Party Purple version."
 local desc_pistoloptic = "\nHas <color=100,255,100>minor handling penalties</color>."
 local desc_smalloptic = "\nHas <color=100,255,100>no handling penalties</color>, but <color=255,200,100>reduces move speed while aiming</color>."
 local desc_cqcoptic = "\nHas <color=100,255,100>minor handling penalities</color>."
-local desc_magoptic = "\nHas <color=255,200,100>small handling penalities</color>. <color=100,255,100>Adjustable magnifier</color> provides zoom at the cost of <color=255,100,100>aim sway</color>."
+local desc_magoptic = "\nHas <color=255,200,100>small handling penalities</color>. <color=100,255,100>Adjustable magnifier</color> provides zoom at the cost of <color=255,255,100>slight aim sway</color>."
 local desc_midoptic = "\nHas <color=255,200,100>medium sway and handling penalties</color>."
 local desc_midbigoptic = "\nHas <color=255,150,100>somewhat high sway and handling penalties</color>."
 
@@ -197,7 +197,7 @@ local desc_biggeroptic = "\nHas <color=255,100,100>very high sway and handling p
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
 L["uplp_optic_553.compactname"] = "500S"
-L["uplp_optic_553.description"] = "Military-grade holografic sight made for small arms by SightLine™." .. desc_cqcoptic
+L["uplp_optic_553.description"] = "Military-grade holographic sight made by SightLine™. Large but comfortable to aim with." .. desc_cqcoptic
 
 L["uplp_optic_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_kobra.compactname"] = "Kobra"
@@ -205,7 +205,7 @@ L["uplp_optic_kobra.description"] = "Military-grade reflex sight of Russian orig
 
 L["uplp_optic_rx1.printname"] = "Military Red Dot"
 L["uplp_optic_rx1.compactname"] = "Military"
-L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin intended for small arms." .. desc_cqcoptic
+L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin." .. desc_cqcoptic
 
 L["uplp_optic_srs.printname"] = "SWX Red Dot"
 L["uplp_optic_srs.compactname"] = "SWX"
@@ -221,7 +221,7 @@ L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
-L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
+L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification. Comes with built in <color=100,255,100>backup iron sights</color>." .. desc_midoptic
 
 L["uplp_optic_elcan.printname"] = "4x Combat Scope"
 L["uplp_optic_elcan.compactname"] = "4x Combat"
@@ -269,7 +269,7 @@ L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin w
 
 L["uplp_optic_compm1.printname"] = "Competition Scope"
 L["uplp_optic_compm1.compactname"] = "Comp."
-L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. desc_cqcoptic
+L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. "\nHas <color=100,255,100>minor handling penalities</color> but <color=255,255,100>slight aim sway</color> from the magnification."
 
 L["uplp_optic_sniper.printname"] = "6-8x Variable Zoom Scope"
 L["uplp_optic_sniper.compactname"] = "6-8x VZS"
@@ -297,15 +297,15 @@ L["uplp_optic_old.description"] = "Medium range scope with 7x magnification." ..
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."
-L["uplp_optic_hhs1.description"] = "Military-grade holographic sight made for small arms by SightLine™." .. desc_magoptic
+L["uplp_optic_hhs1.description"] = "Military-grade holographic sight and magnifier combination made by SightLine™." .. desc_magoptic
 
 L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holographic Sight w. Magnifier"
 L["uplp_optic_hhs2.compactname"] = "10S M."
-L["uplp_optic_hhs2.description"] = "Military-grade holographic sight made for small arms by SightLine™." .. desc_magoptic
+L["uplp_optic_hhs2.description"] = "Military-grade holographic sight and magnifier combination made by SightLine™." .. desc_magoptic
 
 L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
 L["uplp_optic_exps.compactname"] = "10S"
-L["uplp_optic_exps.description"] = "Military-grade holographic sight made for small arms by SightLine™." .. desc_cqcoptic
+L["uplp_optic_exps.description"] = "Military-grade holographic sight by SightLine™." .. desc_cqcoptic
 
 L["uplp_optic_holosun.printname"] = "PurrPoint™ ELITE Reflex Sight"
 L["uplp_optic_holosun.compactname"] = "ELITE"
