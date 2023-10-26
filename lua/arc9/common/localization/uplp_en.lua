@@ -183,13 +183,21 @@ local forestgreen = "\n\n" .. "Special Forest Green version."
 local hunterorange = "\n\n" .. "Special Hunter Orange version."
 local partypurple = "\n\n" .. "Special Party Purple version."
 
-local desc_pistoloptic = "\nA direct mounted optic with <color=255,255,100>minor handling penalties</color>."
-local desc_smalloptic = "\nA small rail-mounted optic with <color=100,255,100>minimal handling penalties</color>.\nIts compact reticle can be hard to focus on, <color=255,200,100>increasing sway noticeably</color>."
-local desc_cqcoptic = "\nA lightweight optic with <color=255,255,100>minor sway and handling penalities</color>."
-local desc_magoptic = "\nAn <color=100,255,100>adjustable magnifier</color> optic with <color=255,200,100>noticeable sway and handling penalities</color>."
-local desc_midoptic = "\nA magnified optic that <color=255,200,100>increases sway</color> and <color=255,200,100>slows handling</color> considerably."
-local desc_bigoptic = "\nA bulky optic that <color=255,100,100>increases sway</color> and <color=255,100,100>slows handling</color> by a lot."
-local desc_biggeroptic = "\nA very bulky optic with <color=255,100,100>significant sway and handling penalities</color>."
+-- local desc_pistoloptic = "\nA direct mounted optic with <color=255,255,100>minor handling penalties</color>."
+-- local desc_smalloptic = "\nA small rail-mounted optic with <color=100,255,100>minimal handling penalties</color>.\nIts compact reticle can be hard to focus on, <color=255,200,100>increasing sway noticeably</color>."
+-- local desc_cqcoptic = "\nA lightweight optic with <color=255,255,100>minor sway and handling penalities</color>."
+-- local desc_magoptic = "\nAn <color=100,255,100>adjustable magnifier</color> optic with <color=255,200,100>noticeable sway and handling penalities</color>."
+-- local desc_midoptic = "\nA magnified optic that <color=255,200,100>increases sway</color> and <color=255,200,100>slows handling</color> considerably."
+-- local desc_bigoptic = "\nA bulky optic that <color=255,100,100>increases sway</color> and <color=255,100,100>slows handling</color> by a lot."
+-- local desc_biggeroptic = "\nA very bulky optic with <color=255,100,100>significant sway and handling penalities</color>."
+
+local desc_pistoloptic = "\nA direct mounted optic with minor handling penalties."
+local desc_smalloptic = "\nA small rail-mounted optic with minimal handling penalties.\nIts compact reticle can be hard to focus on, increasing sway noticeably."
+local desc_cqcoptic = "\nA lightweight optic with minor sway and handling penalities."
+local desc_magoptic = "\nAn adjustable magnifier optic with noticeable sway and handling penalities."
+local desc_midoptic = "\nA magnified optic that increases sway and slows handling considerably."
+local desc_bigoptic = "\nA bulky optic that increases sway and slows handling by a lot."
+local desc_biggeroptic = "\nA very bulky optic with significant sway and handling penalities."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
@@ -233,12 +241,12 @@ L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
 L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Red Dot"
-L["uplp_optic_d1.compactname"] = "D-1 [LP]"
+L["uplp_optic_d1.compactname"] = "D-1"
 L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
 
 L["uplp_optic_d1high.printname"] = "D-1 Red Dot w. Riser"
-L["uplp_optic_d1high.compactname"] = "D-1 [HP]"
-L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms.\nMounted higher up using a spacer." .. desc_smalloptic
+L["uplp_optic_d1high.compactname"] = "D-1 R"
+L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
@@ -253,12 +261,12 @@ L["uplp_optic_rmr_direct.compactname"] = "XW"
 L["uplp_optic_rmr_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
 
 L["uplp_optic_rmr.printname"] = "XW Red Dot"
-L["uplp_optic_rmr.compactname"] = "XW [LP]"
+L["uplp_optic_rmr.compactname"] = "XW"
 L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
 
 L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
-L["uplp_optic_rmrhigh.compactname"] = "XW [HP]"
-L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms.\nMounted higher up using a spacer." .. desc_smalloptic
+L["uplp_optic_rmrhigh.compactname"] = "XW R."
+L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
 
 L["uplp_optic_notacog.printname"] = "3x Military Scope"
 L["uplp_optic_notacog.compactname"] = "3x Military"
@@ -1615,7 +1623,7 @@ L["uplp_weapon_awp_desc"] = "The AW rifle is a renowned bolt-action sniper rifle
 
 L["uplp_weapon_awp_atx"] = "AX Sniper"
 
-L["uplp_weapon_awp_real"] = "Arctic Warfare"
+L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
 
 /////////// Attachments
 ////// Irons

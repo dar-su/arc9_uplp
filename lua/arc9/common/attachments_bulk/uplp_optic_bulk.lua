@@ -739,7 +739,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 ATT = {}
 
 ATT.PrintName = "D-1 Red Dot" -- Aimpoint T1 Red Dot - Low Profile
-ATT.CompactName = "D-1 - LP"
+ATT.CompactName = "D-1"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
@@ -780,7 +780,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_d1")
 ATT = {}
 
 ATT.PrintName = "D-1 Red Dot w. Riser" -- Aimpoint T1 Red Dot - High Profile
-ATT.CompactName = "D-1 - HP"
+ATT.CompactName = "D-1 R"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
@@ -949,7 +949,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmr_direct")
 ATT = {}
 
 ATT.PrintName = "XW Red Dot" -- RMR Sight - Low Profile
-ATT.CompactName = "XW - LP"
+ATT.CompactName = "XW"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
@@ -989,7 +989,7 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 ATT = {}
 
 ATT.PrintName = "XW Red Dot w. Riser" -- RMR Sight - High Profile
-ATT.CompactName = "XW - HP"
+ATT.CompactName = "XW R"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
