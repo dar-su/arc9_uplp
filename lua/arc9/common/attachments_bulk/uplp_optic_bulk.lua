@@ -16,35 +16,35 @@ local stats_small = {
 
 -- mid range but not magnified
 local stats_cqc = {
-    SwayAddSights = 0.1,
+    SwayAddSights = 0.2,
     SpeedAddSights = -0.12,
     AimDownSightsTimeAdd = 0.02,
 }
 
 -- magnifiers
 local stats_mag = {
-    SwayAddSights = 0.5,
+    SwayAddSights = 0.75,
     SpeedAddSights = -0.16,
     AimDownSightsTimeAdd = 0.03,
 }
 
 -- mid range magnified
 local stats_mid = {
-    SwayAddSights = 0.5,
+    SwayAddSights = 1,
     SpeedAddSights = -0.2,
     AimDownSightsTimeAdd = 0.03,
 }
 
 -- sniper scopes
 local stats_big = {
-    SwayAddSights = 0.75,
+    SwayAddSights = 2,
     SpeedAddSights = -0.3,
     AimDownSightsTimeAdd = 0.05,
 }
 
 -- for very big sniper scopes
 local stats_bigger = {
-    SwayAddSights = 1,
+    SwayAddSights = 2.5,
     SpeedAddSights = -0.4,
     AimDownSightsTimeAdd = 0.08,
 }
