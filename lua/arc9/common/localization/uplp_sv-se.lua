@@ -1675,33 +1675,34 @@ L["uplp_awp_stock_at.printname"] = "Vikbar Moderniserad Kolv"
 L["uplp_awp_stock_at.compactname"] = "Vikbar M."
 L["uplp_awp_stock_at.description"] = "Modern, vikbar kolv med mer bekväm ergonomi."
 
+local uplp_awp_stock_atx = "Lätt tävlingsinriktad kolv tillverkat av eXtreme Sports.\nMycket snabbare hantering och högre rörlighet med kostnad på värre rekyl och sväjning."
 L["uplp_awp_stock_atx.printname"] = "eXtreme-Kolv (Sporty Red)"
-L["uplp_awp_stock_atx.compactname"] = "X (SR)"
-L["uplp_awp_stock_atx.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. sportyred
+L["uplp_awp_stock_atx.compactname"] = "eXtreme (SR)"
+L["uplp_awp_stock_atx.description"] = uplp_awp_stock_atx .. sportyred
 
 L["uplp_awp_stock_atx_blue.printname"] = "eXtreme-Kolv (Aqua Blue)"
-L["uplp_awp_stock_atx_blue.compactname"] = "X (AB)"
-L["uplp_awp_stock_atx_blue.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. aquablue
+L["uplp_awp_stock_atx_blue.compactname"] = "eXtreme (AB)"
+L["uplp_awp_stock_atx_blue.description"] = uplp_awp_stock_atx .. aquablue
 
 L["uplp_awp_stock_atx_gray.printname"] = "eXtreme-Kolv (Stealth Gray)"
-L["uplp_awp_stock_atx_gray.compactname"] = "X (SG)"
-L["uplp_awp_stock_atx_gray.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. stealthgray
+L["uplp_awp_stock_atx_gray.compactname"] = "eXtreme (SG)"
+L["uplp_awp_stock_atx_gray.description"] = uplp_awp_stock_atx .. stealthgray
 
 L["uplp_awp_stock_atx_green.printname"] = "eXtreme-Kolv (Forest Green)"
-L["uplp_awp_stock_atx_green.compactname"] = "X (FG)"
-L["uplp_awp_stock_atx_green.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. forestgreen
+L["uplp_awp_stock_atx_green.compactname"] = "eXtreme (FG)"
+L["uplp_awp_stock_atx_green.description"] = uplp_awp_stock_atx .. forestgreen
 
 L["uplp_awp_stock_atx_orange.printname"] = "eXtreme-Kolv (Hunter Orange)"
-L["uplp_awp_stock_atx_orange.compactname"] = "X (HO)"
-L["uplp_awp_stock_atx_orange.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. hunterorange
+L["uplp_awp_stock_atx_orange.compactname"] = "eXtreme (HO)"
+L["uplp_awp_stock_atx_orange.description"] = uplp_awp_stock_atx .. hunterorange
 
 L["uplp_awp_stock_atx_purple.printname"] = "eXtreme-Kolv (Party Purple)"
-L["uplp_awp_stock_atx_purple.compactname"] = "X (PP)"
-L["uplp_awp_stock_atx_purple.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. partypurple
+L["uplp_awp_stock_atx_purple.compactname"] = "eXtreme (PP)"
+L["uplp_awp_stock_atx_purple.description"] = uplp_awp_stock_atx .. partypurple
 
 L["uplp_awp_stock_atx_white.printname"] = "eXtreme-Kolv (Arctic White)"
-L["uplp_awp_stock_atx_white.compactname"] = "X (AW)"
-L["uplp_awp_stock_atx_white.description"] = "Lättvikt tävlingsinriktad kolv tillverkad av eXtreme Sports Inc." .. arcticwhite
+L["uplp_awp_stock_atx_white.compactname"] = "eXtreme (AW)"
+L["uplp_awp_stock_atx_white.description"] = uplp_awp_stock_atx .. arcticwhite
 
 L["uplp_awp_stock_awm.printname"] = "Vikbar Kolv"
 L["uplp_awp_stock_awm.compactname"] = "Vikbar"

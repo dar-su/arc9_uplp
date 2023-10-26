@@ -1679,10 +1679,6 @@ L["uplp_awp_stock_atx.printname"] = "eXtreme Stock (Sporty Red)"
 L["uplp_awp_stock_atx.compactname"] = "eXtreme (SR)"
 L["uplp_awp_stock_atx.description"] = uplp_awp_stock_atx .. sportyred
 
-// L["uplp_awp_stock_atx_red.printname"] = "eXtreme Stock (Sporty Red)"
-// L["uplp_awp_stock_atx_red.compactname"] = "Sporty Red"
-// L["uplp_awp_stock_atx_red.description"] = "Colorful finish for the eXtreme Stock." .. sportyred
-
 L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock (Aqua Blue)"
 L["uplp_awp_stock_atx_blue.compactname"] = "eXtreme (AB)"
 L["uplp_awp_stock_atx_blue.description"] = uplp_awp_stock_atx .. aquablue
