@@ -139,7 +139,10 @@ SWEP.RecoilPunch = 1
 SWEP.RecoilAutoControl = 0
 
 SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultCrouch = 1
+
+SWEP.RecoilMultBipod = 0.4
+
 
 -- Visual Recoil
 SWEP.VisualRecoil = 1

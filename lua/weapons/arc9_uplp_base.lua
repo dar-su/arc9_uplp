@@ -17,13 +17,17 @@ SWEP.SpeedMultSights = 0.65
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.SpreadAddBipod = -0.015
+-------------------------- Bipod
+
+SWEP.Bipod = false
+SWEP.RecoilMultBipod = 0.25
+SWEP.SwayAddBipod = -9999 -- SwayMultBipod doesn't work for some reason
+SWEP.SpreadAddBipod = nil
 SWEP.AimDownSightsTimeMultBipod = 0.5
 
 -------------------------- SWAY
 SWEP.Sway = 0
 SWEP.SwayMultSights = 1
-
 -------------------------- EXTRAS / ADDED LATER FOR ALL WEAPONS
 
 SWEP.RicochetChance = 0.05 -- Low ricochet chance
@@ -61,8 +65,6 @@ SWEP.SightMidPoint = {
     Pos = Vector(-1, 20, -5),
     Ang = Angle(0, 0, -45),
 }
-
-SWEP.Bipod = false
 
 SWEP.Crosshair = true
 

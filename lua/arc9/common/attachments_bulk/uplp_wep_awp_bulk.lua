@@ -574,7 +574,7 @@ ATT.SprintToFireTimeAdd = -0.1
 
 -- Stocks should reduce this
 ATT.RecoilAdd = 2
-ATT.SwaySightsAdd = 3
+ATT.SwayAddSights = 3
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_tube")
 
@@ -598,8 +598,9 @@ ATT.ActivateElements = {"uplp_awp_bp"}
 
 -- Positives
 ATT.Bipod = true
-ATT.SwayMultBipod = 0
-ATT.RecoilMultBipod = 0.25
+
+-- Negatives
+ATT.SprintToFireTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_awp_bp")
 

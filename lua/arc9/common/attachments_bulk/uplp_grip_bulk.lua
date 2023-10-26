@@ -420,8 +420,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Bipod = true
 
 -- Negatives
-ATT.RecoilAutoControlMult = 0.95
-ATT.SprintToFireTimeMult = 1.05
+ATT.SprintToFireTimeAdd = 0.04
 
 ATT.DrawFunc = function(self, model, wm)
 	if self:GetBipod() then
