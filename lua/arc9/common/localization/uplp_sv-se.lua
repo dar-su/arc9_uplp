@@ -169,6 +169,7 @@ L["uplp_stat_semi"] = "Halvautomateld: "
 L["uplp_stat_suppressed"] = "Ljuddämpad"
 L["uplp_stat_ignite_chance"] = "Vid Träff: Chans att Tända Fyr på Mål"
 L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
+L["uplp_stat_scopedsway"] = "Sväjning i Siktet"
 
 
 //////////////////////////////////////////////////////////////////////
@@ -183,21 +184,15 @@ local forestgreen = "\n\n" .. "Speciell \"Forest Green\"-version."
 local hunterorange = "\n\n" .. "Speciell \"Hunter Orange\"-version."
 local partypurple = "\n\n" .. "Speciell \"Party Purple\"-version."
 
--- local desc_pistoloptic = "\nEtt direktmonterat sikte med <color=255,255,100>lätta hanteringsstraff</color>."
--- local desc_smalloptic = "\nEtt litet skenamonterat sikte med <color=100,255,100>lätta hanteringsstraff</color>.\nDess kompakta hårkors kan vara svår att se, vilket <color=255,200,100>ökar sväjningen märkvärdigt</color>."
--- local desc_cqcoptic = "\nEtt lätt sikte med <color=255,255,100>mindre sväjning och hanteringsstraff</color>."
--- local desc_magoptic = "\nEtt <color=100,255,100>justerbart förstoringsglas</color> sikte med <color=255,200,100>märkbara straff på sväjning och hantering</color>."
--- local desc_midoptic = "\nEtt maginifierat sikte som <color=255,200,100>ökar sväjningen</color> och <color=255,200,100>sänker hanteringen</color> märkvärdigt."
--- local desc_bigoptic = "\nEtt stort sikte som <color=255,100,100>ökar sväjningen</color> och <color=255,100,100>sänker hanteringen</color> med en större del."
--- local desc_biggeroptic = "\nEtt väldigt stort sikte med <color=255,100,100>märkvärdiga sväjning och hanteringsstraff</color>."
+local desc_pistoloptic = "\nHar <color=100,255,100>lätta hanteringsstraff</color>."
+local desc_smalloptic = "\nHar <color=100,255,100>inga hanteringsstraff</color>, men den <color=255,200,100>sänker rörelsehastigheten i siktet</color>."
+local desc_cqcoptic = "\nHar <color=100,255,100>lätta hanteringsstraff</color>."
+local desc_magoptic = "\nHar <color=255,200,100>lätta hanteringsstraff</color>. <color=100,255,100>Justerbart förstoringsglas</color> som erbjuder zoom med kostnad på <color=255,255,100>lätt sväjning i siktet</color>."
+local desc_midoptic = "\nHar <color=255,200,100>medelstor sväjning och hanteringsstraff</color>."
+local desc_midbigoptic = "\nHar <color=255,150,100>relativt hög sväjning och hanteringsstraff</color>."
 
-local desc_pistoloptic = "\nA direct mounted optic with minor handling penalties."
-local desc_smalloptic = "\nA small rail-mounted optic with minimal handling penalties.\nIts compact reticle can be hard to focus on, increasing sway noticeably."
-local desc_cqcoptic = "\nA lightweight optic with minor sway and handling penalities."
-local desc_magoptic = "\nAn adjustable magnifier optic with noticeable sway and handling penalities."
-local desc_midoptic = "\nA magnified optic that increases sway and slows handling considerably."
-local desc_bigoptic = "\nA bulky optic that increases sway and slows handling by a lot."
-local desc_biggeroptic = "\nA very bulky optic with significant sway and handling penalities."
+local desc_bigoptic = "\nHar <color=255,100,100>hög sväjning och hanteringsstraff</color>."
+local desc_biggeroptic = "\nHar <color=255,100,100>väldigt hög sväjning och hanteringsstraff</color>."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
@@ -274,7 +269,7 @@ L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt urspru
 
 L["uplp_optic_compm1.printname"] = "Tävlingssikte"
 L["uplp_optic_compm1.compactname"] = "Tävling"
-L["uplp_optic_compm1.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte." .. desc_cqcoptic
+L["uplp_optic_compm1.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte." .. "\nHar <color=100,255,100>lätt hanteringsstraff</color> men <color=255,255,100>lite sväjning i siktet</color> tack vare magnifieringen."
 
 L["uplp_optic_sniper.printname"] = "6-8x Variabel Zoom Kikarsikte"
 L["uplp_optic_sniper.compactname"] = "6-8x VZK"
@@ -282,7 +277,7 @@ L["uplp_optic_sniper.description"] = "Lång räckvidd sikte med 6-8x variabel ma
 
 L["uplp_optic_ez6x.printname"] = "1-6x Jägare Sikte"
 L["uplp_optic_ez6x.compactname"] = "1-6x Jägare"
-L["uplp_optic_ez6x.description"] = "Variabel zoom sikte med 1-6x magnifiering." .. desc_bigoptic
+L["uplp_optic_ez6x.description"] = "Variabel zoom sikte med 1-6x magnifiering." .. desc_midbigoptic
 
 L["uplp_optic_ez8x.printname"] = "8x Jägare Sikte"
 L["uplp_optic_ez8x.compactname"] = "8x Jägare"
@@ -298,7 +293,7 @@ L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x m
 
 L["uplp_optic_old.printname"] = "7x Kraken-Kikarsikte"
 L["uplp_optic_old.compactname"] = "7x Kraken"
-L["uplp_optic_old.description"] = "Medium räckvidd kikarsikte med 7x magnifiering.\nHar <color=255,200,100>lätt nedsänkt sväjning och hanteringsstraff</color> till skillnad med andra riktmedel."
+L["uplp_optic_old.description"] = "Medium räckvidd kikarsikte med 7x magnifiering." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holografiskt Sikte med Förstoringsglas"
 L["uplp_optic_hhs1.compactname"] = "500S F."
@@ -331,6 +326,9 @@ L["uplp_optic_dovetail_kobra.description"] = "Militär grad reflexsikte av ryskt
 L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
 L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering.\nMonterad på sidan med en laxstjärtskena.\nKan ej utrusta <color=255,100,100>normala riktmedel eller vissa dammskydd</color>."
+
+ -- "Optical Precision Scope" in Russian
+ -- "Оптический прецизионный прицел" - 'OPP'
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
