@@ -147,10 +147,8 @@ SWEP.SpreadMultMove = 1
 SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.65/3
-SWEP.RecoilMax = 0.65
-
-SWEP.RecoilModifierCapSights = 0.45
+SWEP.RecoilPerShot = 1
+SWEP.RecoilModifierCap = 3
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier

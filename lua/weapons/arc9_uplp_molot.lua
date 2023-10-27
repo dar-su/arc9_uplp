@@ -161,7 +161,6 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMax = 1
 
 SWEP.RecoilModifierCapSights = 1
 

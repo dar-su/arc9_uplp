@@ -175,15 +175,17 @@ SWEP.SpreadAddMidAir = 0.03
 SWEP.RecoilDissipationRate = 1
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.9
+SWEP.Speed = 0.8
 SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.5
 
 SWEP.AimDownSightsTime = 0.39
 SWEP.SprintToFireTime = 0.4
+
+SWEP.SwayMultSights = 0.75
 
 -- Shooting and Firemodes
 SWEP.RPM = 150 -- How fast gun shoot
