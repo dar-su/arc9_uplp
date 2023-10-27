@@ -580,6 +580,7 @@ SWEP.AttachmentElements = {
     ["uplp_deagle_skin_black"] = { Skin = 1 },
     ["uplp_deagle_skin_gold"] = { Skin = 2 },
     ["uplp_deagle_skin_blue"] = { Skin = 3 },
+    ["uplp_deagle_skin_admin"] = { Skin = 4, Bodygroups = { { 7, 1 } } },
 }
 
 local defatt = "arc9/def_att_icons/"
