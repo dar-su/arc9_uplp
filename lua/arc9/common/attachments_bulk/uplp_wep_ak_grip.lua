@@ -231,3 +231,5 @@ ATT.ActivateElements = {"uplp_ak_grip_used"}
 ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "a"
 ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
+
+ARC9.LoadAttachment(ATT, "uplp_ak_grip_agr")
