@@ -49,8 +49,8 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
+SWEP.ShellScale = 1.5
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2

@@ -612,6 +612,8 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
@@ -660,6 +662,8 @@ ATT.Icon = Material(iconfolderar15 .. "p20.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -717,6 +721,8 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -768,6 +774,8 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -818,6 +826,8 @@ ATT.Icon = Material(iconfolder .. "mag/556tan.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -871,6 +881,8 @@ ATT.Icon = Material(iconfolderar15 .. "p60.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
@@ -933,6 +945,8 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 ATT.DropMagazineTime = 0.5
 
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
@@ -992,6 +1006,8 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 ATT.DropMagazineTime = 0.42
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
