@@ -215,3 +215,19 @@ ATT.SprintToFireTimeMult = 1.1
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_12evo")
 
 -------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Apexcore blah blah Sniper Pistol Grip"
+ATT.CompactName = "Sniper"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "agr.png", "mips smooth")
+ATT.Category = "uplp_ak_grip"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_ak_grip_used"}
+
+ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
+ATT.ModelBodygroups = "a"
+ATT.ModelOffset = Vector(-11.015, -3.55, 7.85)
