@@ -22,3 +22,6 @@ All sounds by **rzen1th** <sub>(stolen with permission from Urban Decay and Rene
 
 Huge thanks to **Moka** for helping to write lua for guns and atts and swedish loc <sub>(i don't think swedish people know about computers and garysmod but whatever)</sub>. I wouldn't be able to finish (or, atleast make playable) this pack without him  
 Thanks to **Cylo** for little helps and testing =3  
+  
+Open this picture fullscreen
+![testrender](https://github.com/dar-su/arc9_uplp/assets/95997959/6046d67c-3792-44bb-ba10-e45cb0bb53af)
