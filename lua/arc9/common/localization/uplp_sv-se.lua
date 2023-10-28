@@ -715,6 +715,10 @@ L["uplp_ak_grip_molot.printname"] = "Molot Pistolgrepp"
 L["uplp_ak_grip_molot.compactname"] = "Molot"
 L["uplp_ak_grip_molot.description"] = "Standard pistolgrepp som används på hagelgeväret Molot."
 
+L["uplp_ak_grip_agr.printname"] = "ApexCore Systems-Pistolgrepp"
+L["uplp_ak_grip_agr.compactname"] = "ApexCore"
+L["uplp_ak_grip_agr.description"] = "Tungt pistolgrepp med inbyggt handledsstöd till AK-baserade gevär gjort av ApexCore Systems."
+
 L["uplp_ak_grip_12.printname"] = "AK M22 Pistolgrepp"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Standard pistolgrepp som används på AK M22:an."
@@ -1447,6 +1451,14 @@ L["uplp_deag_muzzle_tri.compactname"] = "Horisontal"
 L["uplp_deag_muzzle_tri.description"] = "En kompensator som omdirigerar framdrivna gaser till sidan för att sänka horisontal rekyl."
 
 ////// Skins
+L["uplp_deagle_skin_admin.printname"] = "Admin"
+L["uplp_deagle_skin_admin.compactname"] = "Admin"
+L["uplp_deagle_skin_admin.description"] = "Ersätter slutstycket och pipan med några målade rött med gulddetaljer.\n\n<color=255,255,100>Endast för administratörer - ökar drastiskt statistiken.</color>"
+
+L["uplp_deagle_skin_admin.pro"] = "Swag"
+L["uplp_deagle_skin_admin.pro_stat"] = "+oändligt%"
+L["uplp_deagle_skin_admin.con"] = "Endast Admins"
+
 L["uplp_deagle_skin_black.printname"] = "Mattsvart"
 L["uplp_deagle_skin_black.compactname"] = "Mattsvart"
 L["uplp_deagle_skin_black.description"] = "Ersätter slutstycket och pipan med några mattsvarta."

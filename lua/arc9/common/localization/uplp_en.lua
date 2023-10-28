@@ -715,6 +715,10 @@ L["uplp_ak_grip_molot.printname"] = "Molot Pistol Grip"
 L["uplp_ak_grip_molot.compactname"] = "Molot"
 L["uplp_ak_grip_molot.description"] = "Standard pistol grip used on the Molot shotgun."
 
+L["uplp_ak_grip_agr.printname"] = "ApexCore Systems Pistol Grip"
+L["uplp_ak_grip_agr.compactname"] = "ApexCore"
+L["uplp_ak_grip_agr.description"] = "Heavy pistol grip with built-in palm shelf for AK-based rifles made by ApexCore Systems."
+
 L["uplp_ak_grip_12.printname"] = "AK M22 Pistol Grip"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Standard pistol grip used on the AK M22."
@@ -1447,6 +1451,14 @@ L["uplp_deag_muzzle_tri.compactname"] = "Horizontal"
 L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propelled gases sideways to reduce horizontal recoil."
 
 ////// Skins
+L["uplp_deagle_skin_admin.printname"] = "Admin"
+L["uplp_deagle_skin_admin.compactname"] = "Admin"
+L["uplp_deagle_skin_admin.description"] = "Replaces the slide and barrel with red ones with golden details.\n\n<color=255,255,100>Admin only - drastically improves stats.</color>"
+
+L["uplp_deagle_skin_admin.pro"] = "Swag"
+L["uplp_deagle_skin_admin.pro_stat"] = "+infinity%"
+L["uplp_deagle_skin_admin.con"] = "Admin Only"
+
 L["uplp_deagle_skin_black.printname"] = "Matt Black"
 L["uplp_deagle_skin_black.compactname"] = "Black"
 L["uplp_deagle_skin_black.description"] = "Replaces the slide and barrel with matt black ones."

@@ -329,8 +329,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.AdminOnly = true
 ATT.ActivateElements = {"uplp_deagle_skin_admin"}
 
-ATT.CustomPros = { ["Swag"] = "+infinity%"}
-ATT.CustomCons = { ["Admin only"] = "Yeah"}
+ATT.CustomPros = { [ ARC9:GetPhrase("uplp_deagle_skin_admin.pro") ] = ARC9:GetPhrase("uplp_deagle_skin_admin.pro_stat")}
+ATT.CustomCons = { [ ARC9:GetPhrase("uplp_deagle_skin_admin.con") ] = " "}
 ATT.DamageMaxMult = 99
 ATT.DamageMinMult = 99
 ATT.RPMMult = 11
