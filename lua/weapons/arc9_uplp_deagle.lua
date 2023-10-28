@@ -44,8 +44,8 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50ae.mdl"
+SWEP.ShellScale = 1.65
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2
@@ -69,6 +69,12 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 75
+
+SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
+SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
+
+SWEP.ActivePos = Vector(-0.1, -0.2, -0.1)
+SWEP.ActiveAng = Angle(0, 0, -3)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -148,10 +154,8 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.5/3
-SWEP.RecoilMax = 0.5
-
-SWEP.RecoilModifierCapSights = 0.1
+SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
@@ -582,6 +586,7 @@ SWEP.AttachmentElements = {
     ["uplp_deagle_skin_black"] = { Skin = 1 },
     ["uplp_deagle_skin_gold"] = { Skin = 2 },
     ["uplp_deagle_skin_blue"] = { Skin = 3 },
+    ["uplp_deagle_skin_admin"] = { Skin = 4, Bodygroups = { { 7, 1 } } },
 }
 
 local defatt = "arc9/def_att_icons/"

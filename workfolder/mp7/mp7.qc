@@ -280,6 +280,7 @@ $bonemerge "ValveBiped.Bip01_R_Finger02"
 $bonemerge "round1"
 $bonemerge "round2"
 $bonemerge "round3"
+$bonemerge "laseradj"
 
 // $collisionmodel "col.smd"
 // {

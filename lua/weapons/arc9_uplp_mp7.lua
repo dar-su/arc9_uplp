@@ -47,8 +47,8 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_46.mdl"
+SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2
@@ -72,6 +72,9 @@ SWEP.WorldModelOffset = {
 
 SWEP.ViewModelFOVBase = 65
 SWEP.ActivePos = Vector(-0.5, 0, -0.1)
+
+SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
+SWEP.BobSettingsSpeed = {0.91, 1, 1.0,    1, 0.92, 0.8}
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -161,9 +164,8 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 0.33
-SWEP.RecoilMax = 1
 
-SWEP.RecoilModifierCapSights = 0.1
+SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
@@ -685,8 +687,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
         -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(-0.85, 0.95, 6),
+        Bone = "laseradj",
+        Pos = Vector(0.25, 0, 0),
         Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, -0.5, 0),
     },

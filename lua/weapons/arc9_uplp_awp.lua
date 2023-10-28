@@ -51,8 +51,8 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
+SWEP.ShellScale = 1.75
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2
@@ -124,6 +124,9 @@ SWEP.ClipSize = 5
 SWEP.ManualAction = true
 SWEP.NoLastCycle = true
 SWEP.ManualActionNoLastCycle = true
+SWEP.ManualActionEjectAnyway = false
+SWEP.NoShellEject = true
+SWEP.EjectDelay = 0.475
 
 -- Recoil
 SWEP.Recoil = 1
@@ -175,18 +178,20 @@ SWEP.SpreadAddMidAir = 0.03
 SWEP.RecoilDissipationRate = 1
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 1
-SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.9
+SWEP.Speed = 0.8
 SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.5
 
 SWEP.AimDownSightsTime = 0.39
 SWEP.SprintToFireTime = 0.4
 
+SWEP.SwayMultSights = 0.75
+
 -- Shooting and Firemodes
-SWEP.RPM = 150 -- How fast gun shoot
+SWEP.RPM = 400 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -445,6 +450,7 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire"},
+        NoIdle = true,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
@@ -480,6 +486,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         Mult = 1.1,
         DropMagAt = 1 * 1.1,
+        EjectAt = 0.37,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},
@@ -536,6 +543,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         DropMagAt = 1 * 1.1,
         Mult = 1.1,
+        EjectAt = 0.37,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
             {s = pathUT .. "boltback.ogg",        t = 5 / 30},

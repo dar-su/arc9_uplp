@@ -43,8 +43,8 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_57.mdl"
+SWEP.ShellScale = 1.65
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2
@@ -68,6 +68,9 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 75
+
+SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
+SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -147,10 +150,8 @@ SWEP.SpreadMultMove = 1
 SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.65/3
-SWEP.RecoilMax = 0.65
-
-SWEP.RecoilModifierCapSights = 0.45
+SWEP.RecoilPerShot = 1
+SWEP.RecoilModifierCap = 3
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier

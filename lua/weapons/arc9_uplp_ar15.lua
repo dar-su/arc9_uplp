@@ -20,15 +20,15 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_manufacturer_uso" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
-																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-																		ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1964" ),
 }
 
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
@@ -51,7 +51,7 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellScale = 1.5
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2
@@ -80,20 +80,19 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-SWEP.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-SWEP.HeadshotDamage = 0.8
+SWEP.DamageMax = 25 -- Damage dealt point-blank
+SWEP.DamageMin = 14 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
-SWEP.Penetration = 30 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 8 -- How much kick things will have when hit
+SWEP.Penetration = 15 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 2 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 50 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMax = 60 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 715 * 39.37 / 1.15
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -104,9 +103,9 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1.75
-SWEP.RecoilUp = 0.7
-SWEP.RecoilSide = 1.65
+SWEP.Recoil = 1 + 1
+SWEP.RecoilUp = 1
+SWEP.RecoilSide = 1.4
 
 SWEP.RecoilRandomUp = 1
 SWEP.RecoilRandomSide = 1.1
@@ -114,9 +113,9 @@ SWEP.RecoilRandomSide = 1.1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.75
+SWEP.RecoilAutoControl = 1.5
 
-SWEP.RecoilMultSights = 0.95
+SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
@@ -140,30 +139,31 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.006
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.008
+SWEP.SpreadAddHipFire = 0.025 - 0.01
 
-SWEP.SpreadAddRecoil = 0.08
-SWEP.SpreadAddMove = 0.04
+SWEP.SpreadAddRecoil = 0.012
+SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.05
 
-SWEP.SpreadMultSights = 0.001
+SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilDissipationRateSights = 10
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.25
+SWEP.RecoilDissipationRate = 8
+SWEP.RecoilResetTime = 0.03
+SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
-
-SWEP.RecoilModifierCapSights = 0.1
+SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.9 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.65 -- When aiming
+SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
+SWEP.SpeedMultShooting = 0.9
 
-SWEP.AimDownSightsTime = 0.34 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.35 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.32 - 0.1 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.35 - 0.1 -- Time it takes to fully enter sprint
+
+SWEP.SwayAddSights = 1
 
 -- Shooting and Firemodes
 SWEP.RPM = 800 -- How fast gun shoot
@@ -172,10 +172,10 @@ SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = -1, -- Full
-	PoseParam = 1 },
+    PoseParam = 1 },
     { Mode = 1, -- Semi
-	RPM = 555,
-	PoseParam = 2 }
+    RPM = 555,
+    PoseParam = 2 }
 }
 
 SWEP.ShootPitch = 90
@@ -204,14 +204,14 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-	if attached["uplp_ar15_rs_tall"] then
-		return {
-			Pos = Vector(-2.275, -3, 0.225),
-			Ang = Angle(0.35, 0.125, -3),
-			Magnification = 1.15,
-			ViewModelFOV = 65,
+    if attached["uplp_ar15_rs_tall"] then
+        return {
+            Pos = Vector(-2.275, -3, 0.225),
+            Ang = Angle(0.35, 0.125, -3),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
         }
-	end
+    end
 
 end
 
@@ -227,7 +227,7 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
-SWEP.DropMagazineTime = 0.33*1.1
+SWEP.DropMagazineTime = 0.33 * 1.1
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 1.75, -2.5)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
@@ -248,7 +248,7 @@ SWEP.ShootSound = {
     pathUT .. "fire-06.ogg",
 }
 
-SWEP.ShootSoundSilenced = {	
+SWEP.ShootSoundSilenced = {
     pathUT .. "fire-sup-01.ogg",
     pathUT .. "fire-sup-02.ogg",
     pathUT .. "fire-sup-03.ogg",
@@ -325,8 +325,8 @@ SWEP.DropMagazineSounds = {
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
-	[2] = "bullet2",
-	[3] = "bullet3",
+    [2] = "bullet2",
+    [3] = "bullet3",
 }
 
 -- SWEP.HideBones = {
@@ -407,12 +407,12 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
-    },    
+    },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
@@ -421,7 +421,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -460,14 +460,14 @@ SWEP.Animations = {
         -- IKTimeLine = { { t = 0, lhik = 1 } },
         -- EventTable = {
             -- { s = {
-			-- shootsound9 .. "mech_01.ogg",
-			-- shootsound9 .. "mech_02.ogg",
-			-- shootsound9 .. "mech_03.ogg",
-			-- shootsound9 .. "mech_04.ogg",
-			-- }, t = 0 },
+            -- shootsound9 .. "mech_01.ogg",
+            -- shootsound9 .. "mech_02.ogg",
+            -- shootsound9 .. "mech_03.ogg",
+            -- shootsound9 .. "mech_04.ogg",
+            -- }, t = 0 },
             -- { s = {
-			-- shootsound9 .. "punch.ogg",
-			-- }, t = 0 },
+            -- shootsound9 .. "punch.ogg",
+            -- }, t = 0 },
         -- },
     -- },
     -- ["fire_empty_g17"] = {
@@ -476,14 +476,14 @@ SWEP.Animations = {
         -- IKTimeLine = { { t = 0, lhik = 1 } },
         -- EventTable = {
             -- { s = {
-			-- shootsound9 .. "mech_01.ogg",
-			-- shootsound9 .. "mech_02.ogg",
-			-- shootsound9 .. "mech_03.ogg",
-			-- shootsound9 .. "mech_04.ogg",
-			-- }, t = 0 },
+            -- shootsound9 .. "mech_01.ogg",
+            -- shootsound9 .. "mech_02.ogg",
+            -- shootsound9 .. "mech_03.ogg",
+            -- shootsound9 .. "mech_04.ogg",
+            -- }, t = 0 },
             -- { s = {
-			-- shootsound9 .. "punch.ogg",
-			-- }, t = 0 },
+            -- shootsound9 .. "punch.ogg",
+            -- }, t = 0 },
         -- },
     -- },
 
@@ -491,7 +491,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -515,7 +515,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -538,10 +538,10 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     ["reload_10"] = {
         Source = "reload10",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -565,7 +565,7 @@ SWEP.Animations = {
     },
     ["reload_empty_10"] = {
         Source = "reload_empty10",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -591,7 +591,7 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload20",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -615,7 +615,7 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "reload_empty20",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -641,7 +641,7 @@ SWEP.Animations = {
 
     ["reload_40"] = {
         Source = "reload40",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -665,7 +665,7 @@ SWEP.Animations = {
     },
     ["reload_empty_40"] = {
         Source = "reload_empty40",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -691,7 +691,7 @@ SWEP.Animations = {
 
     ["reload_60"] = {
         Source = "reload60",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -715,7 +715,7 @@ SWEP.Animations = {
     },
     ["reload_empty_60"] = {
         Source = "reload_empty60",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -738,10 +738,10 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     ["reload_100"] = {
         Source = "reload100",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -752,7 +752,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 55 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 0.33*1.1},
+            {hide = 1, t = 0.33 * 1.1},
             {hide = 0, t = 0.5}
         },
         IKTimeLine = {
@@ -765,7 +765,7 @@ SWEP.Animations = {
     },
     ["reload_empty_100"] = {
         Source = "reload_empty100",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -777,7 +777,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 64 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 0.33*1.1},
+            {hide = 1, t = 0.33 * 1.1},
             {hide = 0, t = 0.5}
         },
         IKTimeLine = {
@@ -791,7 +791,7 @@ SWEP.Animations = {
 
     ["reload_g17"] = {
         Source = "reloadg17",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -815,7 +815,7 @@ SWEP.Animations = {
     },
     ["reload_empty_g17"] = {
         Source = "reload_emptyg17",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -841,7 +841,7 @@ SWEP.Animations = {
 
     ["reload_g33"] = {
         Source = "reloadg33",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.13,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -865,7 +865,7 @@ SWEP.Animations = {
     },
     ["reload_empty_g33"] = {
         Source = "reload_emptyg33",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.13,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -891,7 +891,7 @@ SWEP.Animations = {
 
     ["reload_g50"] = {
         Source = "reloadg50",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -915,7 +915,7 @@ SWEP.Animations = {
     },
     ["reload_empty_g50"] = {
         Source = "reload_emptyg50",
-		MinProgress = 0.65,
+        MinProgress = 0.65,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -944,8 +944,8 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         FireASAP = true,
-		MinProgress = 0.925,
-		Mult = 1.2,
+        MinProgress = 0.925,
+        Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -964,8 +964,8 @@ SWEP.Animations = {
     ["inspect_empty"] = {
         Source = "inspect_empty",
         FireASAP = true,
-		MinProgress = 0.925,
-		Mult = 1.2,
+        MinProgress = 0.925,
+        Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -1016,7 +1016,7 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
-	
+
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
@@ -1038,19 +1038,19 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 
     if eles["uplp_ar15_gasblock"] then
-		mdl:SetBodygroup(8, 0)
-	end
+        mdl:SetBodygroup(8, 0)
+    end
 
-	local smgrec = eles["uplp_ar15_reciever_modern_smg"]
-	local smgrecb = eles["uplp_ar15_reciever_modern_black_smg"]
+    local smgrec = eles["uplp_ar15_reciever_modern_smg"]
+    local smgrecb = eles["uplp_ar15_reciever_modern_black_smg"]
 
     if eles["uplp_ar15_reciever_stm9"] then
-		if smgrec then
-			mdl:SetBodygroup(0, 6)
-		elseif smgrecb then
-			mdl:SetBodygroup(0, 7)
-		end
-	end
+        if smgrec then
+            mdl:SetBodygroup(0, 6)
+        elseif smgrecb then
+            mdl:SetBodygroup(0, 7)
+        end
+    end
 end
 
 -- SWEP.Hook_ModifyElements = function(self, eles)
@@ -1058,42 +1058,42 @@ end
     -- if eles["uplp_ar15_handguard_long"] then
         -- if eles["uplp_ar15_gasblock"] then
             -- ["uplp_ar15_gasblock_m16"] = {	AttPosMods = {
-				-- [8] = { Pos = Vector(0.045, 0.975, 17.15) },
-			-- }} }
+                -- [8] = { Pos = Vector(0.045, 0.975, 17.15) },
+            -- }} }
         -- end
     -- end
 
 -- end
 
 SWEP.AttachmentElements = {
-	-- BARRELS
+    -- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
 
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 }, { 8, 2 } }, AttPosMods = {
-	-- [7] = { Pos = Vector(0.045, 1.02, 16.15) },
-	[8] = { Pos = Vector(0.045, 0.975, 17.15) },
-	}},
+    -- [7] = { Pos = Vector(0.045, 1.02, 16.15) },
+    [8] = { Pos = Vector(0.045, 0.975, 17.15) },
+    }},
 
     ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 }, { 8, 3 } }, AttPosMods = {
-	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
-	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
-	}},
+    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    [8] = { Pos = Vector(0.045, 0.975, 19.965) },
+    }},
 
     ["uplp_ar15_barrel_16_alt"] = { Bodygroups = { { 3, 5 }, { 8, 1 } }, AttPosMods = {
-	[8] = { Pos = Vector(0.045, 0.975, 19.965) },
-	}},
+    [8] = { Pos = Vector(0.045, 0.975, 19.965) },
+    }},
 
     ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 }, { 8, 3 } }, AttPosMods = {
-	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
-	[8] = { Pos = Vector(0.045, 0.975, 22.91) },
-	}},
+    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    [8] = { Pos = Vector(0.045, 0.975, 22.91) },
+    }},
 
     ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 }, { 8, 3 } }, AttPosMods = {
-	[7] = { Pos = Vector(0.045, 1.02, 18.45) },
-	[8] = { Pos = Vector(0.045, 0.975, 24.65) },
-	}},
+    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    [8] = { Pos = Vector(0.045, 0.975, 24.65) },
+    }},
 
-	-- RECEIVERS
+    -- RECEIVERS
     ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
 
@@ -1101,74 +1101,74 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
 
     ["uplp_ar15_reciever_modern_black"] = { Bodygroups = { { 0, 5 } } },
-	
+
     ["uplp_ar15_rs_carry"] = { AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
 
     -- HANDGUARDS
     ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 16.5) },
-	[11] = { Pos = Vector(-1, 0.95, 16.5) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 16.5) },
+    [11] = { Pos = Vector(-1, 0.95, 16.5) },
+    }},
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
     ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
     ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
     ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } }, AttPosMods = {
-	[12] = { Pos = Vector(0.045, 2.1, 10) },
-	}},
+    [12] = { Pos = Vector(0.045, 2.1, 10) },
+    }},
 
     ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 18.25) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 18.25) },
+    }},
     ["uplp_ar15_hg_tac_red"] = { Bodygroups =           { { 2, 13 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 18.25) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 18.25) },
+    }},
     ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 6 } } },
     ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =      { { 2, 14 } } },
 
     ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 19.25) },
-	[12] = { Pos = Vector(0.045, 1.6, 10) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 19.25) },
+    [12] = { Pos = Vector(0.045, 1.6, 10) },
+    }},
 
     ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 15) },
-	[11] = { Pos = Vector(-0.875, 1.025, 14) },
-	[12] = { Pos = Vector(0.045, 1.6, 10) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 15) },
+    [11] = { Pos = Vector(-0.875, 1.025, 14) },
+    [12] = { Pos = Vector(0.045, 1.6, 10) },
+    }},
     ["uplp_ar15_hg_nwsu_s15_red"] = { Bodygroups =  { { 2, 9 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 15) },
-	[11] = { Pos = Vector(-0.875, 1.025, 14) },
-	[12] = { Pos = Vector(0.045, 1.6, 10) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 15) },
+    [11] = { Pos = Vector(-0.875, 1.025, 14) },
+    [12] = { Pos = Vector(0.045, 1.6, 10) },
+    }},
     ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 18) },
-	[11] = { Pos = Vector(-0.875, 1.025, 17) },
-	[12] = { Pos = Vector(0.045, 1.6, 10) },
-	}},
-    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups={ { 2, 11 } }, AttPosMods = {
-	[10] = { Pos = Vector(0.045, -0.2, 18) },
-	[11] = { Pos = Vector(-0.875, 1.025, 17) },
-	[12] = { Pos = Vector(0.045, 1.6, 10) },
-	}},
+    [10] = { Pos = Vector(0.045, -0.2, 18) },
+    [11] = { Pos = Vector(-0.875, 1.025, 17) },
+    [12] = { Pos = Vector(0.045, 1.6, 10) },
+    }},
+    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups = { { 2, 11 } }, AttPosMods = {
+    [10] = { Pos = Vector(0.045, -0.2, 18) },
+    [11] = { Pos = Vector(-0.875, 1.025, 17) },
+    [12] = { Pos = Vector(0.045, 1.6, 10) },
+    }},
     ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } } },
 
-	-- PISTOL GRIPS
-    ["uplp_ar15_pgrip"] = { Bodygroups={ { 5, 1 } } },
+    -- PISTOL GRIPS
+    ["uplp_ar15_pgrip"] = { Bodygroups = { { 5, 1 } } },
 
-	-- CHARGING HANDLES
-    ["uplp_ar15_chandle"] = { Bodygroups={ { 6, 1 } } },
+    -- CHARGING HANDLES
+    ["uplp_ar15_chandle"] = { Bodygroups = { { 6, 1 } } },
 
-	-- MAGAZINES
-    ["uplp_ar15_mag"] = { Bodygroups={ { 7, 1 } } },
+    -- MAGAZINES
+    ["uplp_ar15_mag"] = { Bodygroups = { { 7, 1 } } },
 
-	-- AMMO
-    ["uplp_ar15_ammo_458"] = { Bodygroups={ { 4, 1 } } },
-    ["uplp_ar15_ammo_50"] = { Bodygroups={ { 4, 2 } } },
-	
-	-- GAS BLOCK
-    ["uplp_ar15_gasblock"] = { Bodygroups={ { 8, 0 } } },
-	
-	-- OTHER
+    -- AMMO
+    ["uplp_ar15_ammo_458"] = { Bodygroups = { { 4, 1 } } },
+    ["uplp_ar15_ammo_50"] = { Bodygroups = { { 4, 2 } } },
+
+    -- GAS BLOCK
+    ["uplp_ar15_gasblock"] = { Bodygroups = { { 8, 0 } } },
+
+    -- OTHER
     ["uplp_ar15_stm9_magwell"] = { Bodygroups = { { 1, 2 } }},
 }
 
@@ -1186,8 +1186,8 @@ SWEP.Attachments = {
         Installed = "uplp_ar15_rs_m4",
         Pos = Vector(0.045, -0.2, 0.326),
         Ang = Angle(90, 90, 180),
-		-- ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_optic_used"},
-		ExcludeElements = {"uplp_ar15_reciever_m16"},
+        -- ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_optic_used"},
+        -- ExcludeElements = {"uplp_ar15_reciever_m16"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -1197,7 +1197,7 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
-		Icon_Offset = Vector(1, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -1212,11 +1212,11 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ar15_pgrip"},
         DefaultIcon = Material(defatt .. "grip_ar.png", "mips smooth"),
-		ActiveElements = {"uplp_ar15_pgrip"},
+        ActiveElements = {"uplp_ar15_pgrip"},
         Bone = "body",
         RejectAttachments = {
-		["uplp_ar15_pgrip_std"] = true,
-		},
+        ["uplp_ar15_pgrip_std"] = true,
+        },
         Pos = Vector(0.045, 3.2, -0.56),
         Ang = Angle(90, 90, 180),
     },
@@ -1225,10 +1225,10 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_chandle"},
         DefaultIcon = Material(defatt2 .. "ch.png", "mips smooth"),
         Bone = "chandle",
-		ActiveElements = {"uplp_ar15_chandle"},
+        ActiveElements = {"uplp_ar15_chandle"},
         RejectAttachments = {
-		["uplp_ar15_chandle_std"] = true,
-		},
+        ["uplp_ar15_chandle_std"] = true,
+        },
         Pos = Vector(-0.01, 0.094, -0.05),
         Ang = Angle(90, 90, 180),
     },
@@ -1239,7 +1239,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.633, 5.672),
         Ang = Angle(90, 90, 180),
-		ActiveElements = {"uplp_ar15_barrel"},
+        ActiveElements = {"uplp_ar15_barrel"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_gasblock"),
@@ -1256,7 +1256,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 0.975, 15.125),
         Ang = Angle(90, 90, 180),
-		Icon_Offset = Vector(1, 0, 0),
+        Icon_Offset = Vector(1, 0, 0),
         Installed = "uplp_muzzle_cage",
     },
     {
@@ -1275,7 +1275,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, -0.2, 12.8),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
+        ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -1283,7 +1283,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-1, 0.95, 12),
         Ang = Angle(90, 90, -90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -1292,7 +1292,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, 1.72, 10),
         Ang = Angle(90, 90, 180),
-		ExcludeElements = {"uplp_no_grip"},
+        ExcludeElements = {"uplp_no_grip"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
@@ -1308,8 +1308,8 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_556_mag", "uplp_ar15_45_mag", "uplp_ar15_glock_mag"},
         DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
         RejectAttachments = {
-		["uplp_ar15_mag_stanag30"] = true,
-		},
+        ["uplp_ar15_mag_stanag30"] = true,
+        },
         Bone = "mag",
         Pos = Vector(0.04, -2.406, -2.428),
         Ang = Angle(90, 90, 180),
@@ -1332,7 +1332,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_backup_optic_is"},
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
+        Hidden = true,
     },
 
 
@@ -1397,15 +1397,15 @@ SWEP.Attachments = {
 
 
 SWEP.HookP_NameChange = function(self, name)
-	local att = self:GetElements()
+    local att = self:GetElements()
 
-	if att["uplp_ar15_reciever_stm9"] then
-		name = ARC9:GetPhrase("uplp_weapon_ar15_smg9")
-	end
+    if att["uplp_ar15_reciever_stm9"] then
+        name = ARC9:GetPhrase("uplp_weapon_ar15_smg9")
+    end
 
-	if att["uplp_ar15_reciever_45acp"] then
-		name = ARC9:GetPhrase("uplp_weapon_ar15_smg45")
-	end
+    if att["uplp_ar15_reciever_45acp"] then
+        name = ARC9:GetPhrase("uplp_weapon_ar15_smg45")
+    end
 
     return name
 end

@@ -66,6 +66,9 @@ SWEP.SightMidPoint = {
     Ang = Angle(0, 0, -45),
 }
 
+SWEP.BobSettingsMove =  {1.25, 1, 1.5,    1.25, -3.5, 0.95}
+SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 1.02, 0.9}
+
 SWEP.Crosshair = true
 
 SWEP.MagnificationZoomSpeed = 2.5

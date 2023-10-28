@@ -35,6 +35,11 @@ $bodygroup "muzzz" {
 	studio "trimuz.smd"
 }
 
+$bodygroup "custom" {
+	blank
+	studio "dragon.smd"
+}
+
 $cdmaterials "models\weapons\arc9\uplp"
 
 $texturegroup skinfamilies
@@ -43,6 +48,7 @@ $texturegroup skinfamilies
 	{ "lowpoly_skin_black" }
 	{ "lowpoly_skin_gold" }
 	{ "lowpoly_skin_blue" }
+	{ "lowpoly_skin_red" }
 }
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0

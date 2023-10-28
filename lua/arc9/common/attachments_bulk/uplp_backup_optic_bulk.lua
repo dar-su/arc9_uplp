@@ -41,8 +41,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(-0.75, 0, -0.12)
 
-ATT.SprintToFireTimeAdd = 0.05
-ATT.SpeedAddSights = -0.05
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedAddSights = -0.04
 
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_rmr")
 
@@ -80,7 +80,7 @@ ATT.ModelOffset = Vector(-0.75, 0, -0.12)
 ATT.Category = "uplp_backup_optic"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.SprintToFireTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.015
 ATT.SpeedAddSights = -0.02
 
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_is")

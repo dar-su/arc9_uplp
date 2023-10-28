@@ -51,7 +51,7 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellScale = 1.5
 SWEP.ShellPitch = 90
 
 SWEP.CaseEffectQCA = 2
@@ -164,9 +164,8 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilDissipationRateSights = 10
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 0.25
-SWEP.RecoilMax = 1
 
-SWEP.RecoilModifierCapSights = 0.15
+SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier

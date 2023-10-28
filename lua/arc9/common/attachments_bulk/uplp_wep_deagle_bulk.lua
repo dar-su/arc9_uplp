@@ -313,3 +313,32 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_deagle_skin_blue"}
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_blue")
+
+---------- uplp_deagle_skin_admin
+
+ATT = {}
+
+ATT.PrintName = "Admin"
+ATT.CompactName = "Admin"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "drag.png", "mips smooth")
+
+ATT.Category = "uplp_deagle_skin"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.AdminOnly = true
+ATT.ActivateElements = {"uplp_deagle_skin_admin"}
+
+ATT.CustomPros = { ["Swag"] = "+infinity%"}
+ATT.CustomCons = { ["Admin only"] = "Yeah"}
+ATT.DamageMaxMult = 99
+ATT.DamageMinMult = 99
+ATT.RPMMult = 11
+ATT.Firemodes = { { Mode = -1 } }
+ATT.ClipSizeOverride = 9999
+ATT.SpreadAdd = -999
+ATT.VisualRecoilMult = 0.2
+ATT.RecoilMult = 0.1
+ATT.RecoilPerShotMult = 0
+
+ARC9.LoadAttachment(ATT, "uplp_deagle_skin_admin")
