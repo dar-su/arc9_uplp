@@ -70,6 +70,12 @@ SWEP.WorldModelOffset = {
 
 SWEP.ViewModelFOVBase = 75
 
+SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
+SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
+
+SWEP.ActivePos = Vector(-0.1, -0.2, -0.1)
+SWEP.ActiveAng = Angle(0, 0, -3)
+
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 

@@ -73,6 +73,9 @@ SWEP.WorldModelOffset = {
 SWEP.ViewModelFOVBase = 65
 SWEP.ActivePos = Vector(-0.5, 0, -0.1)
 
+SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
+SWEP.BobSettingsSpeed = {0.91, 1, 1.0,    1, 0.92, 0.8}
+
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
@@ -684,8 +687,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
         -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(-0.85, 0.95, 6),
+        Bone = "laseradj",
+        Pos = Vector(0.25, 0, 0),
         Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, -0.5, 0),
     },
