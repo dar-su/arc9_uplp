@@ -40,7 +40,6 @@ $bodygroup "barrel" { // 3
 	studio "brl_14.smd"
 	studio "brl_20.smd"
 	studio "brl_22.smd"
-	studio "brl_16shortgas.smd"
 } 
 
 $bodygroup "ammo" { // 4
@@ -71,9 +70,15 @@ $bodygroup "magdef" { // 7
 $bodygroup "gasdef" { // 8
 	blank
 	studio "bggb_minimal_10.smd" // 1
-	studio "bggb_minimal_14.smd" // 2
 	studio "bggb_minimal_16.smd" // 3
+	studio "bggb_minimal_m16sh.smd" // 2
 }
+
+$bodygroup "gastube" { // 3
+	studio "brl_tube_short.smd"
+	studio "brl_tube_long.smd"
+	studio "brl_tube_m16sh.smd"
+} 
 
 $cdmaterials "models\weapons\arc9\uplp"
 
