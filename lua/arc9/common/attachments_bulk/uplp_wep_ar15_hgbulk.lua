@@ -353,8 +353,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 
 ATT = {}
 
-ATT.PrintName = "Hoki Armory Short handguard (Pitch Black)"
-ATT.CompactName = "Hoki S (PB)"
+ATT.PrintName = "Hoki Armory Short handguard"
+ATT.CompactName = "Hoki S"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacs.png", "mips smooth")
@@ -364,7 +364,8 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(2, 0.12, -1.0)
 
-ATT.ActivateElements = {"uplp_no_tactical"}
+ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact", "uplp_no_tactical"}
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -388,7 +389,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 ATT = {}
 
 ATT.PrintName = "Hoki Armory Short handguard (Sporty Red)"
-ATT.CompactName = "Hoki S (SR)"
+ATT.CompactName = "Hoki S"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacsr.png", "mips smooth")
@@ -398,7 +399,8 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(2, 0.12, -1.0)
 
-ATT.ActivateElements = {"uplp_no_tactical"}
+ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact", "uplp_no_tactical"}
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

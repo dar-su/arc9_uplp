@@ -116,7 +116,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16")
 
 ---------- uplp_ar15_barrel_16_alt
 
-
+--[[
 ATT = {}
 
 ATT.PrintName = "406mm Alternative Barrel"
@@ -149,6 +149,7 @@ ATT.SpeedMultSights = 0.9
 ATT.RPMAdd = -50
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16_alt")
+]]--
 
 
 ---------- uplp_ar15_barrel_20

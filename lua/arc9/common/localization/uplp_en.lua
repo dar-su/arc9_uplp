@@ -1174,11 +1174,11 @@ L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-1
 
 L["uplp_ar15_hg_tacshort.printname"] = "Hoki Armory Short Handguard"
 L["uplp_ar15_hg_tacshort.compactname"] = "Hoki S"
-L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory."
+L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires14 .. onlycompact
 
 L["uplp_ar15_hg_tacshort_red.printname"] = "Hoki Armory Short Handguard (Sporty Red)"
 L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (SR)"
-L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. sportyred
+L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires14 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_a1.printname"] = "A1 Handguard"
 L["uplp_ar15_hg_a1.compactname"] = "A1"

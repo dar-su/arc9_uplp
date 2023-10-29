@@ -41,7 +41,7 @@ SWEP.StandardPresets = {
 "[Sport]XQAAAQCOAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6t+gfb2u7phOPKfC+2nR0SGxNhMV7j379gITOgT9sIVIYX/mxsAcZmcg6zaeJSsbQIpy/uQLAMMMqOfkkWLOH/rOvnXU9M4sxtkFlFwnU4Eb/mN20bviFPzHYOpi9KvmoRGgkKMjslXd4hkVvEUN/DbFk9Lw1s6wW/+7OilH7Al0LKzW+DTmhjgEoES2tEoqezRuHFkNypCloPk8JmQUTDGFXtgu0z5lwrPXXMbmzPq+K6fM40hFblI83nsGt8Glggwir8JwA="
 }
 
-SWEP.DefaultBodygroups = "0011000010000000" -- Might as well prepare for the future
+SWEP.DefaultBodygroups = "0011000000000000" -- Might as well prepare for the future
 
 ---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_3"
@@ -1037,9 +1037,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
     end
 
-    if eles["uplp_ar15_gasblock"] then
-        mdl:SetBodygroup(8, 0)
-    end
+    -- if eles["uplp_ar15_gasblock"] then
+        -- mdl:SetBodygroup(8, 0)
+    -- end
 
     local smgrec = eles["uplp_ar15_reciever_modern_smg"]
     local smgrecb = eles["uplp_ar15_reciever_modern_black_smg"]
@@ -1069,27 +1069,23 @@ SWEP.AttachmentElements = {
     -- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
 
-    ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 }, { 8, 2 } }, AttPosMods = {
+    ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } }, AttPosMods = {
     -- [7] = { Pos = Vector(0.045, 1.02, 16.15) },
     [8] = { Pos = Vector(0.045, 0.975, 17.15) },
     }},
 
-    ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 }, { 8, 3 } }, AttPosMods = {
-    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    ["uplp_ar15_barrel_16"] = { Bodygroups = { { 3, 0 } }, AttPosMods = {
+    -- [7] = { Pos = Vector(0.045, 1.02, 18.45) },
     [8] = { Pos = Vector(0.045, 0.975, 19.965) },
     }},
 
-    ["uplp_ar15_barrel_16_alt"] = { Bodygroups = { { 3, 5 }, { 8, 1 } }, AttPosMods = {
-    [8] = { Pos = Vector(0.045, 0.975, 19.965) },
-    }},
-
-    ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 }, { 8, 3 } }, AttPosMods = {
-    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    ["uplp_ar15_barrel_20"] = { Bodygroups = { { 3, 3 } }, AttPosMods = {
+    -- [7] = { Pos = Vector(0.045, 1.02, 18.45) },
     [8] = { Pos = Vector(0.045, 0.975, 22.91) },
     }},
 
-    ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 }, { 8, 3 } }, AttPosMods = {
-    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    ["uplp_ar15_barrel_22"] = { Bodygroups = { { 3, 4 } }, AttPosMods = {
+    -- [7] = { Pos = Vector(0.045, 1.02, 18.45) },
     [8] = { Pos = Vector(0.045, 0.975, 24.65) },
     }},
 
@@ -1105,32 +1101,38 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_rs_carry"] = { AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
 
     -- HANDGUARDS
-    ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 } }, AttPosMods = {
+    ["uplp_ar15_hg_ris"] = { Bodygroups =      { { 2, 0 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
     [10] = { Pos = Vector(0.045, -0.2, 16.5) },
     [11] = { Pos = Vector(-1, 0.95, 16.5) },
     }},
     ["uplp_ar15_hg_risshort"] = { Bodygroups =      { { 2, 1 } } },
-    ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 } } },
-    ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 } } },
-    ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 } }, AttPosMods = {
+    ["uplp_ar15_hg_m16"] = { Bodygroups =           { { 2, 2 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.825) },
+    }},
+    ["uplp_ar15_hg_m16short"] = { Bodygroups =      { { 2, 3 }, { 9, 2 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 15.6) },
+    }},
+    ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [12] = { Pos = Vector(0.045, 2.1, 10) },
     }},
-
-    ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 } }, AttPosMods = {
+    ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [10] = { Pos = Vector(0.045, -0.2, 18.25) },
     }},
-    ["uplp_ar15_hg_tac_red"] = { Bodygroups =           { { 2, 13 } }, AttPosMods = {
+    ["uplp_ar15_hg_tac_red"] = { Bodygroups =           { { 2, 13 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [10] = { Pos = Vector(0.045, -0.2, 18.25) },
     }},
     ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 6 } } },
     ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =      { { 2, 14 } } },
-
-    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 } }, AttPosMods = {
+    ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 }, { 9, 1 } }, AttPosMods = {
     [10] = { Pos = Vector(0.045, -0.2, 19.25) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
     }},
-
-    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 } }, AttPosMods = {
+    ["uplp_ar15_hg_nwsu_s15"] = { Bodygroups =      { { 2, 8 }, { 9, 2 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 15.6) },
     [10] = { Pos = Vector(0.045, -0.2, 15) },
     [11] = { Pos = Vector(-0.875, 1.025, 14) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
@@ -1140,17 +1142,21 @@ SWEP.AttachmentElements = {
     [11] = { Pos = Vector(-0.875, 1.025, 14) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
     }},
-    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 } }, AttPosMods = {
+    ["uplp_ar15_hg_nwsu_s15_xl"] = { Bodygroups =   { { 2, 10 }, { 9, 1} }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 17.75) },
     [10] = { Pos = Vector(0.045, -0.2, 18) },
     [11] = { Pos = Vector(-0.875, 1.025, 17) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
     }},
-    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups = { { 2, 11 } }, AttPosMods = {
+    ["uplp_ar15_hg_nwsu_s15_xl_red"] = { Bodygroups = { { 2, 11 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 17.75) },
     [10] = { Pos = Vector(0.045, -0.2, 18) },
     [11] = { Pos = Vector(-0.875, 1.025, 17) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
     }},
-    ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 } } },
+    ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.825) },
+    }},
 
     -- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups = { { 5, 1 } } },
@@ -1246,9 +1252,10 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_gasblock"},
         DefaultIcon = Material(defatt2 .. "gas.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 1.02, 14.215),
+        Pos = Vector(0.045, 1.02, 13.95),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ar15_gasblock_m16",
+		Integral = "uplp_ar15_gasblock_min",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

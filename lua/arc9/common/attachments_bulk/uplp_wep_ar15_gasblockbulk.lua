@@ -22,7 +22,7 @@ ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocom
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "5"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.6, 0, 0)
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
@@ -48,7 +48,7 @@ ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocom
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "3"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.6, 0, 0)
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
@@ -75,7 +75,7 @@ ATT.ExcludeElements = {"uplp_ar15_gasblock_nocompact", "uplp_ar15_gasblock_nocom
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
 ATT.ModelBodygroups = "4"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.6, 0, 0)
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
@@ -87,7 +87,6 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
 
 ---------- uplp_ar15_gasblock_min
 
---[[
 ATT = {}
 
 ATT.PrintName = "Compact Gas Block"
@@ -108,7 +107,6 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
---]]
 
 ---------- uplp_ar15_gasblock_min_red
 
