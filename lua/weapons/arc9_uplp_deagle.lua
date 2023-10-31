@@ -27,7 +27,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Darsu",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
@@ -81,18 +81,27 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 65 / 1.25 -- Damage dealt point-blank
-SWEP.DamageMin = 20 / 1.25 -- Damage dealt after maximum range
-SWEP.HeadshotDamage = 0.8
-SWEP.ChestDamage = 1
+SWEP.DamageMax = 64
+SWEP.DamageMin = 22
 SWEP.DamageType = DMG_BULLET
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.9,
+    [HITGROUP_RIGHTLEG] = 0.9,
+}
+
 
 SWEP.Penetration = 45 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 12 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 50 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 3 / ARC9.HUToM
+SWEP.RangeMax = 45 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 410 * 39.37
@@ -142,20 +151,21 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.01
-SWEP.SpreadAddHipFire = 0.03
+SWEP.Spread = 0.007
+SWEP.SpreadAddHipFire = 0.02
 
-SWEP.SpreadAddRecoil = 0.07
-SWEP.SpreadAddMove = 0.04
-SWEP.SpreadAddMidAir = 0.025
+SWEP.SpreadAddRecoil = 0.025
+SWEP.SpreadAddMove = 0.01
+SWEP.SpreadAddMidAir = 0.05
 
-SWEP.SpreadMultSights = 0.001
+SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 2.5
-SWEP.RecoilResetTime = 0
+SWEP.RecoilDissipationRate = 4
+SWEP.RecoilResetTime = 0.01
 SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilModifierCap = 1
+SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier

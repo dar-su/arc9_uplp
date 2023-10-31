@@ -99,8 +99,8 @@ SWEP.Penetration = 15 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 25 / ARC9.HUToM
-SWEP.RangeMax = 60 / ARC9.HUToM
+SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -114,7 +114,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 0.75 + 1
+SWEP.Recoil = 0.65 + 1
 SWEP.RecoilUp = 0.6
 SWEP.RecoilSide = 0.75
 
@@ -153,7 +153,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 SWEP.Spread = 0.009
 SWEP.SpreadAddHipFire = 0.025 - 0.01
 
-SWEP.SpreadAddRecoil = 0.009
+SWEP.SpreadAddRecoil = 0.011
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.1
 
@@ -169,8 +169,9 @@ SWEP.RecoilModifierCap = 1
 SWEP.SwayAddSights = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.9 + 0.05 -- Walk speed multiplier
+SWEP.SpeedMult = 0.95 + 0.05 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 / 0.85 -- When aiming
+SWEP.SpeedMultShooting = 0.85
 
 SWEP.AimDownSightsTime = 0.35 - 0.1 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.3 - 0.1 -- Time it takes to fully enter sprint
@@ -267,7 +268,7 @@ SWEP.ShootSound = {
     pathUT .. "9mm/fire-9-06.ogg",
 }
 
-SWEP.ShootSoundSilenced = {	
+SWEP.ShootSoundSilenced = {
     pathUT .. "9mm/fire-sup-01.ogg",
     pathUT .. "9mm/fire-sup-02.ogg",
     pathUT .. "9mm/fire-sup-03.ogg",
@@ -485,7 +486,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload_9mm",
-        MinProgress= 0.6,
+        MinProgress = 0.6,
         Mult = 1.075,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -510,7 +511,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty_9mm",
-        MinProgress= 0.7,
+        MinProgress = 0.7,
         Mult = 1.075,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -539,7 +540,7 @@ SWEP.Animations = {
 
     ["reload_bizon"] = {
         Source = "reload_bizon",
-        MinProgress= 0.6,
+        MinProgress = 0.6,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },
@@ -567,7 +568,7 @@ SWEP.Animations = {
     },
     ["reload_empty_bizon"] = {
         Source = "reload_empty_bizon",
-        MinProgress= 0.7,
+        MinProgress = 0.7,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },

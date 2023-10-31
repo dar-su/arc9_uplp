@@ -20,14 +20,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp7_stock_folded"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.8
-ATT.SprintToFireTimeMult = 0.8
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedMultSights = 1.05
 
 -- Negatives
-ATT.RecoilMult = 1.2
-ATT.RecoilAutoControlMult = 0.75
-ATT.VisualRecoilMult = 1.5
--- ATT.VisualRecoilMultHipFire = 2
+ATT.RecoilAdd = 0.1
+ATT.RecoilAutoControlMult = 1 / 1.25
+ATT.VisualRecoilMult = 1.25
+ATT.SwayMultSights = 1.25
+
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_stock_folded")
 
@@ -51,8 +53,10 @@ ATT.ActivateElements = {"uplp_mp7_mag_20"}
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_20.mdl"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = -0.01
+ATT.SpeedAdd = 0.01
+ATT.SwayMultSights = 0.6
 -- ATT.ReloadTimeMult = 0.9
 
 ATT.CustomPros = {
@@ -88,8 +92,8 @@ ATT.ActivateElements = {"uplp_optic_used"}
 
 ATT.ExcludeElements = {"uplp_backup_optic"}
 
--- Positives
-ATT.AimDownSightsTimeMult = 0.75
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_sight_folded")
 
@@ -118,9 +122,9 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.85
+ATT.SprintToFireTimeAdd = -0.01
+ATT.AimDownSightsTimeAdd = -0.02
 ATT.DeployTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.9
 
 -- Negatives
 ATT.RecoilMult = 1.2

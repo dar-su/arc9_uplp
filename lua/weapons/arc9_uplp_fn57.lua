@@ -25,7 +25,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
@@ -77,17 +77,26 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 45 / 1.25 -- Damage dealt point-blank
-SWEP.DamageMin = 25 / 1.25 -- Damage dealt after maximum range
-SWEP.HeadshotDamage = 0.8
+SWEP.DamageMax = 28
+SWEP.DamageMin = 16
 SWEP.DamageType = DMG_BULLET
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.9,
+    [HITGROUP_RIGHTLEG] = 0.9,
+}
 
 SWEP.Penetration = 40 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 25 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 10 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 625 * 39.37
@@ -101,8 +110,8 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1.5
-SWEP.RecoilUp = 1
+SWEP.Recoil = 1
+SWEP.RecoilUp = 1.3
 SWEP.RecoilSide = 0.9
 
 SWEP.RecoilRandomUp = 0.4
@@ -113,7 +122,7 @@ SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
 SWEP.RecoilAutoControl = 1.15
 
-SWEP.RecoilMultSights = 0.95
+SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
@@ -137,28 +146,28 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.01
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.006
+SWEP.SpreadAddHipFire = 0.015
 
-SWEP.SpreadAddRecoil = 0.04
-SWEP.SpreadAddMove = 0.04
+SWEP.SpreadAddRecoil = 0.014
+SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
-SWEP.SpreadMultSights = 0.001
+SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 2.5
-SWEP.RecoilDissipationRateSights = 10
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 1
-SWEP.RecoilModifierCap = 3
+SWEP.RecoilDissipationRate = 3
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.85 -- When aiming
 
-SWEP.AimDownSightsTime = 0.23 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.2
+SWEP.SprintToFireTime = 0.18
 
 -- Shooting and Firemodes
 SWEP.RPM = 550 -- How fast gun shoot
@@ -207,7 +216,7 @@ SWEP.CustomizeSnapshotFOV = 70
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/fn57_mag_std.mdl"
-SWEP.DropMagazineTime = 0.4*1.1
+SWEP.DropMagazineTime = 0.4 * 1.1
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
@@ -432,7 +441,7 @@ SWEP.Animations = {
             { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
-    },    
+    },
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
