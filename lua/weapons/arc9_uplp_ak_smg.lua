@@ -81,8 +81,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 30 -- Damage dealt point-blank
-SWEP.DamageMin = 15 -- Damage dealt after maximum range
+SWEP.DamageMax = 28
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -99,8 +99,8 @@ SWEP.Penetration = 15 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 25 / ARC9.HUToM
+SWEP.RangeMax = 60 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -114,19 +114,19 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 0.85
-SWEP.RecoilUp = 0.7
-SWEP.RecoilSide = 1.15
+SWEP.Recoil = 0.75 + 1
+SWEP.RecoilUp = 0.6
+SWEP.RecoilSide = 0.75
 
-SWEP.RecoilRandomUp = 0.9
-SWEP.RecoilRandomSide = 0.9
+SWEP.RecoilRandomUp = 0.75
+SWEP.RecoilRandomSide = 0.75
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
 SWEP.RecoilAutoControl = 0.95
 
-SWEP.RecoilMultSights = 0.95
+SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
@@ -150,29 +150,30 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.01
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.009
+SWEP.SpreadAddHipFire = 0.025 - 0.01
 
-SWEP.SpreadAddRecoil = 0.06
-SWEP.SpreadAddMove = 0.04
+SWEP.SpreadAddRecoil = 0.009
+SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.1
 
-SWEP.SpreadMultSights = 0.001
+SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilDissipationRateSights = 10
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.25
-
+SWEP.RecoilDissipationRate = 8
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 10
+SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
--- Weapon handling
-SWEP.SpeedMult = 1 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.75 -- When aiming
+SWEP.SwayAddSights = 1
 
-SWEP.AimDownSightsTime = 0.35 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.3 -- Time it takes to fully enter sprint
+-- Weapon handling
+SWEP.SpeedMult = 0.9 + 0.05 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.75 / 0.85 -- When aiming
+
+SWEP.AimDownSightsTime = 0.35 - 0.1 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.3 - 0.1 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
 SWEP.RPM = 780 -- How fast gun shoot

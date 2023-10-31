@@ -89,7 +89,7 @@ ATT.DropMagazineVelocity = Vector(0, 20, 80)
 ATT.DropMagazinePos = Vector(0, 1.5, 2)
 ATT.BulletBones = { -- im suprised that this works in att
     [1] = "bullet1bizon",
-	[2] = "bullet2bizon",
+    [2] = "bullet2bizon",
 }
 
 -- Positives
@@ -98,15 +98,15 @@ ATT.RPMMult = 0.85
 ATT.AimDownSightsTimeMult = 1.2
 
 ATT.Attachments = {
-	{
+    {
         PrintName = "Yeet",
         Category = {"uplp_ak_smg_bizon_optic_alt"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-		Installed = "uplp_ak_smg_bizon_optic_alt",
-		Integral = "uplp_ak_smg_bizon_optic_alt",
-		Hidden = true,
-		ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
+        Installed = "uplp_ak_smg_bizon_optic_alt",
+        Integral = "uplp_ak_smg_bizon_optic_alt",
+        Hidden = true,
+        ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
     },
 }
 
@@ -150,7 +150,7 @@ ATT.DropMagazineVelocity = Vector(0, 20, 80)
 ATT.DropMagazinePos = Vector(0, 1.5, 2)
 ATT.BulletBones = { -- im suprised that this works in att
     [1] = "bullet1bizon",
-	[2] = "bullet2bizon",
+    [2] = "bullet2bizon",
 }
 
 -- Positives
@@ -159,15 +159,15 @@ ATT.RPMMult = 0.85
 ATT.AimDownSightsTimeMult = 1.2
 
 ATT.Attachments = {
-	{
+    {
         PrintName = "Yeet",
         Category = {"uplp_ak_smg_bizon_optic_alt"},
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-		Installed = "uplp_ak_smg_bizon_optic_alt",
-		Integral = "uplp_ak_smg_bizon_optic_alt",
-		Hidden = true,
-		ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
+        Installed = "uplp_ak_smg_bizon_optic_alt",
+        Integral = "uplp_ak_smg_bizon_optic_alt",
+        Hidden = true,
+        ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
     },
 }
 
@@ -210,13 +210,13 @@ ATT.Category = "uplp_ak_barrel_smg_ppk20"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Attachments = {
-	{
+    {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_muzzle", "uplp_ak_muzzle_smg"},
         Bone = "body",
         Pos = Vector(-5.12, 0, -0.425),
         Ang = Angle(0, 0, 0),
-		Installed = "uplp_ak_mz_vityaz",
+        Installed = "uplp_ak_mz_vityaz",
     },
 }
 
@@ -261,15 +261,15 @@ ATT.ActivateElements = {
 }
 
 ATT.Attachments = {
-	{
+    {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ak_grip_12"},
         DefaultIcon = Material("entities/uplp_attachements/def/akgrip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(5.2, 0, 3.5),
         Ang = Angle(0, 0, 0),
-		Installed = "uplp_ak_grip_12evo",
-		Integral = "uplp_ak_grip_12evo",
+        Installed = "uplp_ak_grip_12evo",
+        Integral = "uplp_ak_grip_12evo",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -279,7 +279,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(-9.05, 0, 0.06),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(1.5, 0, 0),
+        Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
     },
     {
@@ -289,7 +289,7 @@ ATT.Attachments = {
         Bone = "body",
         Pos = Vector(-8.35, 0, 0.06),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(1.5, 0, 0),
+        Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
     },
 }
