@@ -140,13 +140,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_vityaz.mdl"
 -- ATT.MuzzleDevice = true
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
--- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilAutoControlMult = 1.05
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadAddRecoil = -0.01
-
--- Negatives
+-- TODO stats
 
 ATT.ActivateElements = {"uplp_ak_mz_vityaz"}
 
@@ -173,13 +167,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_bizon.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mz_bizon"}
 
--- Positives
-ATT.RecoilMult = 0.95
-ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomSideMult = 0.6
-ATT.SpreadAddRecoil = -0.01
-
--- Negatives
+-- TODO stats
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_bizon")
 
@@ -205,13 +193,7 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_12"}
 
--- Positives
-ATT.RecoilMult = 0.95
-ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomSideMult = 0.6
-ATT.SpreadAddRecoil = -0.01
-
--- Negatives
+-- TODO stats
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_12")
 
@@ -237,13 +219,7 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_19"}
 
--- Positives
-ATT.RecoilMult = 0.8
-ATT.RecoilAutoControlMult = 1.05
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadAddRecoil = -0.01
-
--- Negatives
+-- TODO stats
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_19")
 
@@ -269,9 +245,7 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_rpk16"}
 
--- Positives
-ATT.RecoilMult = 0.85
-ATT.SpreadAddRecoil = -0.01
+-- TODO stats
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_rpk16")
 

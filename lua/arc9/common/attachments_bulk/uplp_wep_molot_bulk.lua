@@ -553,7 +553,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_vepr_default.mdl"
 -- ATT.MuzzleDevice = true
 
 -- Positives
-ATT.SpreadAdd = -0.025
+ATT.SpreadAdd = -0.005
 
 -- Negatives
 ATT.RecoilAutoControlMult = 1.05

@@ -1102,9 +1102,8 @@ ATT.ActivateElements = {"uplp_scar_mz"}
 -- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-ATT.RecoilMult = 0.95
-ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomMult = 0.8
-ATT.SpreadAddRecoil = -0.01
+ATT.RecoilRandomUpMult = 0.85
+ATT.RecoilRandomSideMult = 0.85
+ATT.SpreadAddRecoil = 0.0008
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mz")
