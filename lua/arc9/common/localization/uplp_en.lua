@@ -1922,3 +1922,33 @@ L["uplp_scar_is.description"] = "Standard flip-up iron sights used on the XAR."
 L["uplp_scar_mz.printname"] = "XAR Muzzle Brake"
 L["uplp_scar_mz.compactname"] = "XAR MB"
 L["uplp_scar_mz.description"] = "Standard muzzle brake on the XAR."
+
+//////////////////// SPAS-12
+L["uplp_weapon_spas"] = "SPAW-12"
+L["uplp_weapon_spas_desc"] = "The SPAW-12, Special Purpose Assault Weapon model 12, is a versatile Italian-designed shotgun known for its ability to switch between pump-action and semi-automatic firing modes. It gained popularity for its use in various military and law enforcement roles due to its reliability and adaptability."
+
+L["uplp_weapon_spas_real"] = "Franchi SPAS-12"
+
+/////////// Attachments
+////// Barrels
+L["uplp_spas_brl_short.printname"] = "460mm LAW Barrel"
+L["uplp_spas_brl_short.compactname"] = "460mm"
+L["uplp_spas_brl_short.description"] = "Shortened 460mm (18.11\") barrel used by the law enforcement version of the SPAW-12."
+
+////// Magazines
+L["uplp_spas_mag6.printname"] = "6-Round Magazine Tube"
+L["uplp_spas_mag6.compactname"] = "6R Tube"
+L["uplp_spas_mag6.description"] = "Shortened magazine tube holding 6 rounds."
+
+////// Stocks
+L["uplp_spas_stock_fixed.printname"] = "Fixed Stock"
+L["uplp_spas_stock_fixed.compactname"] = "Fixed"
+L["uplp_spas_stock_fixed.description"] = "Sturdy fixed stock for the SPAW-12."
+
+L["uplp_spas_stock_folding.printname"] = "Folding Stock"
+L["uplp_spas_stock_folding.compactname"] = "Folding"
+L["uplp_spas_stock_folding.description"] = "Collapsible folding stock for the SPAW-12."
+
+L["uplp_spas_stock_folding_hook.printname"] = "Folding Stock with Hook"
+L["uplp_spas_stock_folding_hook.compactname"] = "Folding (H)"
+L["uplp_spas_stock_folding_hook.description"] = "Collapsible folding stock for the SPAW-12. Comes with the original hook intended for use with one handed shooting."

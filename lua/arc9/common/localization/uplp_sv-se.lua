@@ -1923,3 +1923,33 @@ L["uplp_scar_is.description"] = "Standard flip-up-sikte som används på XAR."
 L["uplp_scar_mz.printname"] = "XAR Mynningsbroms"
 L["uplp_scar_mz.compactname"] = "XAR MB"
 L["uplp_scar_mz.description"] = "Standard mynningsbroms till XAR."
+
+//////////////////// SPAS-12
+L["uplp_weapon_spas"] = "SPAW-12"
+L["uplp_weapon_spas_desc"] = "SPAW-12, Special Purpose Assault Weapon modell 12, är en mångsidig italienskdesignad hagelgevär som är känd för sin förmåga att växla mellan pumpaktion och halvautomatiska skjutlägen. Den blev populär inom olika militära och polisiära användningsområden på grund av sin pålitlighet och anpassningsbarhet."
+
+L["uplp_weapon_spas_real"] = "Franchi SPAS-12"
+
+/////////// Attachments
+////// Barrels
+L["uplp_spas_brl_short.printname"] = "460mm LAW-Pipa"
+L["uplp_spas_brl_short.compactname"] = "460mm"
+L["uplp_spas_brl_short.description"] = "Förkortad 460mm pipa som används av polisiära versionen av SPAW-12."
+
+////// Magazines
+L["uplp_spas_mag6.printname"] = "6-Patronersmagasinrör"
+L["uplp_spas_mag6.compactname"] = "6R Rör"
+L["uplp_spas_mag6.description"] = "Förkortat magasinrör som håller 6 patroner."
+
+////// Stocks
+L["uplp_spas_stock_fixed.printname"] = "Fast Kolv"
+L["uplp_spas_stock_fixed.compactname"] = "Fast"
+L["uplp_spas_stock_fixed.description"] = "Stadig fast kolv till SPAW-12."
+
+L["uplp_spas_stock_folding.printname"] = "Vikbar Kolv"
+L["uplp_spas_stock_folding.compactname"] = "Vikbar"
+L["uplp_spas_stock_folding.description"] = "Vikbar kolv till SPAW-12."
+
+L["uplp_spas_stock_folding_hook.printname"] = "Vikbar Kolv med Krok"
+L["uplp_spas_stock_folding_hook.compactname"] = "Vikbar (K)"
+L["uplp_spas_stock_folding_hook.description"] = "Vikbar kolv till SPAW-12. Kommer med originala kroken som användes för skytte med en hand."
