@@ -89,7 +89,7 @@ ATT.RecoilAdd = -0.55
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1 - 0.04
 ATT.SprintToFireTimeAdd = 0.1 - 0.06
-ATT.SpeedMultSights = 0.85 + 0.15
+-- ATT.SpeedMultSights = 0.85 + 0.15
 ATT.SpeedAdd = -0.05 + 0.04
 ATT.SpreadAddHipFire = nil --0.01 - 0.01
 
@@ -181,7 +181,7 @@ ATT.SortOrder = 2
 ATT.Category = "uplp_ar15_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- less recoil control, more reduction compared to M4 stock
+-- faster sprint ready compared to M4 stock
 
 -- Positives
 ATT.RecoilAutoControlMult = 1.3
@@ -191,7 +191,7 @@ ATT.VisualRecoilMultHipFire = 0.35
 ATT.RecoilAdd = -0.75
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1
-ATT.SprintToFireTimeAdd = 0.1 - 0.02
+ATT.SprintToFireTimeAdd = 0.1 - 0.04
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
@@ -293,7 +293,7 @@ ATT.RecoilAdd = -0.75
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1 - 0.02
-ATT.SpeedMultSights = 0.85 + 0.05
+ATT.SpeedMultSights = 0.85 + 0.08
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
@@ -323,7 +323,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.RecoilAutoControlMult = 1.75
 ATT.VisualRecoilMultHipFire = 0.25
-ATT.SwayMultSights = 0.8
+ATT.SwayMultSights = 0.85
 
 -- Buffer Tube stats
 ATT.RecoilAdd = -1
@@ -368,7 +368,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.RecoilAutoControlMult = 1.75
 ATT.VisualRecoilMultHipFire = 0.25
-ATT.SwayMultSights = 0.85
+ATT.SwayMultSights = 0.7
 
 -- Negatives
 
@@ -405,7 +405,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.RecoilAutoControlMult = 2
 ATT.VisualRecoilMultHipFire = 0.25
-ATT.SwayMultSights = 0.8
+ATT.SwayMultSights = 0.85
 
 -- Negatives
 ATT.SpeedMultShooting = 0.85

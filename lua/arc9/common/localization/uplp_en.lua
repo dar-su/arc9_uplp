@@ -1340,49 +1340,55 @@ L["uplp_ar15_rs_type3.compactname"] = "Type III"
 L["uplp_ar15_rs_type3.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
 
 ////// Stocks
+local desc_stock_s = " Has <color=255,255,100>minor reduction to handling and recoil</color>."
+local desc_stock_m = " Has <color=255,200,100>medium reduction to handling and recoil</color>."
+local desc_stock_l = " Has <color=255,150,100>significant reduction to handling and recoil</color>."
+local desc_stock_standard = "\nAn archetypal stock with <color=100,255,100>balanced performance</color> for its weight class."
+
+
 L["uplp_ar15_stock_416.printname"] = "416 Stock"
 L["uplp_ar15_stock_416.compactname"] = "416"
-L["uplp_ar15_stock_416.description"] = "Standard stock from a modified AR-15 of German origin."
+L["uplp_ar15_stock_416.description"] = "Standard stock from a modified AR-15 of German origin." .. desc_stock_m .. "\n<color=100,255,100>Faster to raise</color> compared to other medium stocks."
 
 L["uplp_ar15_stock_ak12.printname"] = "AK M12 Stock"
 L["uplp_ar15_stock_ak12.compactname"] = "AK M12"
-L["uplp_ar15_stock_ak12.description"] = "Standard stock used on the AK M12 rifle."
+L["uplp_ar15_stock_ak12.description"] = "Standard stock used on the AK M12 rifle." .. desc_stock_m .. "\n<color=100,255,100>Reduces more recoil</color> compared to other medium stocks."
 
 L["uplp_ar15_stock_fat.printname"] = "Bravo Stock"
 L["uplp_ar15_stock_fat.compactname"] = "Bravo"
-L["uplp_ar15_stock_fat.description"] = "Custom adjustable stock for AR-15 rifles."
+L["uplp_ar15_stock_fat.description"] = "Custom adjustable stock for AR-15 rifles." .. desc_stock_m .. "\n<color=100,255,100>Faster to aim with</color> compared to other medium stocks."
 
 L["uplp_ar15_stock_light.printname"] = "Light Battle Stock"
 L["uplp_ar15_stock_light.compactname"] = "Light"
-L["uplp_ar15_stock_light.description"] = "Lightweight adjustable stock for AR-15 rifles."
+L["uplp_ar15_stock_light.description"] = "Lightweight adjustable stock for AR-15 rifles." .. desc_stock_s .. desc_stock_standard
 
 L["uplp_ar15_stock_m16.printname"] = "M16 Fixed Stock"
 L["uplp_ar15_stock_m16.compactname"] = "M16"
-L["uplp_ar15_stock_m16.description"] = "Fixed stock used on the M16."
+L["uplp_ar15_stock_m16.description"] = "Fixed stock used on the M16." .. desc_stock_l .. desc_stock_standard
 
 L["uplp_ar15_stock_m4.printname"] = "M4 Stock"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
-L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4."
+L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Centurion Industries Stock"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"
-L["uplp_ar15_stock_modern.description"] = "Lightweight stock made for competition for AR-15 rifles made by Centurion Industries."
+L["uplp_ar15_stock_modern.description"] = "Lightweight competition stock for AR-15 rifles made by Centurion Industries." .. desc_stock_s .. "\n<color=100,255,100>Reduces more recoil</color> compared to other light stocks."
 
 L["uplp_ar15_stock_pdw.printname"] = "PDW Stock"
 L["uplp_ar15_stock_pdw.compactname"] = "PDW"
-L["uplp_ar15_stock_pdw.description"] = "Slim, compact and adjustable PDW stock for AR-15 rifles."
+L["uplp_ar15_stock_pdw.description"] = "Slim, compact and adjustable PDW stock for AR-15 rifles." .. desc_stock_s .. "\n<color=100,255,100>Has lower handling penalties</color> compared to other light stocks."
 
 L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter Stock"
 L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
-L["uplp_ar15_stock_sniper.description"] = "Adjustable heavy stock for AR-15 rifles."
+L["uplp_ar15_stock_sniper.description"] = "Adjustable heavy stock for AR-15 rifles." .. desc_stock_l .. "\n<color=100,255,100>Reduces more scoped sway</color> compared to other heavy stocks."
 
 L["uplp_ar15_stock_tac.printname"] = "Hoki Armory Stock"
 L["uplp_ar15_stock_tac.compactname"] = "Hoki"
-L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles made by Hoki Armory."
+L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles made by Hoki Armory." .. desc_stock_m .. "\n<color=100,255,100>Faster move speed while aiming</color> compared to other light stocks."
 
 L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Heavy Stock"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
-L["uplp_ar15_stock_veryheavy.description"] = "Heavy stock for AR-15-based marksman rifles made by ApexCore Systems."
+L["uplp_ar15_stock_veryheavy.description"] = "Heavy stock for AR-15 marksman rifles made by ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
