@@ -1286,9 +1286,9 @@ L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär gjort av Hoki Armory."
 
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "A4-Låda med Bärhandtag"
-L["uplp_ar15_reciever_m16.compactname"] = "A4 BH"
-L["uplp_ar15_reciever_m16.description"] = "Standard militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till: \n<color=100,255,100>3-skott salvo</color> + <color=100,255,100>halvautomat</color>."
+L["uplp_ar15_reciever_m16.printname"] = "A2-Låda med Bärhandtag"
+L["uplp_ar15_reciever_m16.compactname"] = "A2 BH"
+L["uplp_ar15_reciever_m16.description"] = "Militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till \n<color=100,255,100>3-skott salvo</color>/<color=100,255,100>halvautomat</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4-Låda"
 L["uplp_ar15_reciever_m4.compactname"] = "M4"
@@ -1340,49 +1340,55 @@ L["uplp_ar15_rs_type3.compactname"] = "Typ III"
 L["uplp_ar15_rs_type3.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>PAWCO | Typ I | Standard (XAR)</color> ]\nEj kompatibel med <color=255,100,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 ////// Stocks
+local desc_stock_s = " Har <color=255,255,100>mindre sänkning på hantering och rekyl</color>."
+local desc_stock_m = " Har <color=255,200,100>medelstor sänkning på hantering och rekyl</color>."
+local desc_stock_l = " Har <color=255,150,100>högre sänkning på hantering och rekyl</color>."
+local desc_stock_standard = "\nEn arketypisk kolv med <color=100,255,100>balanserad prestanda</color> för dess viktklass."
+
+
 L["uplp_ar15_stock_416.printname"] = "416-Kolv"
 L["uplp_ar15_stock_416.compactname"] = "416"
-L["uplp_ar15_stock_416.description"] = "Standard kolv från en anpassad AR-15 av tyskt ursprung."
+L["uplp_ar15_stock_416.description"] = "Standard kolv från en anpassad AR-15 av tyskt ursprung." .. desc_stock_m .. "\n<color=100,255,100>Snabbare att ta fram</color> till skillnad med andra medelstora kolvar."
 
 L["uplp_ar15_stock_ak12.printname"] = "AK M12 Kolv"
 L["uplp_ar15_stock_ak12.compactname"] = "AK M12"
-L["uplp_ar15_stock_ak12.description"] = "Standard kolv som används på AK M12-geväret."
+L["uplp_ar15_stock_ak12.description"] = "Standard kolv som används på AK M12-geväret." .. desc_stock_m .. "\n<color=100,255,100>Sänker mer rekyl</color> till skillnad med andra medelstora kolvar."
 
 L["uplp_ar15_stock_fat.printname"] = "Bravo-Kolv"
 L["uplp_ar15_stock_fat.compactname"] = "Bravo"
-L["uplp_ar15_stock_fat.description"] = "Anpassad och justerbar kolv till AR-15-gevär."
+L["uplp_ar15_stock_fat.description"] = "Anpassad och justerbar kolv till AR-15-gevär." .. desc_stock_m .. "\n<color=100,255,100>Snabbare att sikta med</color> till skillnad med andra medelstora kolvar."
 
 L["uplp_ar15_stock_light.printname"] = "Lätt Stridskolv"
 L["uplp_ar15_stock_light.compactname"] = "Lätt"
-L["uplp_ar15_stock_light.description"] = "Lättvikt och justerbar kolv till AR-15-gevär."
+L["uplp_ar15_stock_light.description"] = "Lättvikt och justerbar kolv till AR-15-gevär." .. desc_stock_s .. desc_stock_standard
 
 L["uplp_ar15_stock_m16.printname"] = "Fast M16-Kolv"
 L["uplp_ar15_stock_m16.compactname"] = "Fast"
-L["uplp_ar15_stock_m16.description"] = "Fast kolv som används på M16."
+L["uplp_ar15_stock_m16.description"] = "Fast kolv som används på M16." .. desc_stock_l .. desc_stock_standard
 
 L["uplp_ar15_stock_m4.printname"] = "M4 Kolv"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
-L["uplp_ar15_stock_m4.description"] = "Standard justerbar kolv som används på M4:an."
+L["uplp_ar15_stock_m4.description"] = "Standard justerbar kolv som används på M4:an." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Centurion Industries-Kolv"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"
-L["uplp_ar15_stock_modern.description"] = "Lättvikt kolv gjord för sportskytte till AR-15-gevär gjort av Centurion Industries."
+L["uplp_ar15_stock_modern.description"] = "Lättvikt kolv gjord för sportskytte till AR-15-gevär gjort av Centurion Industries." .. desc_stock_s .. "\n<color=100,255,100>Sänker mer rekyl</color> till skillnad med andra lätta kolvar."
 
 L["uplp_ar15_stock_pdw.printname"] = "PDW-Kolv"
 L["uplp_ar15_stock_pdw.compactname"] = "PDW"
-L["uplp_ar15_stock_pdw.description"] = "Smal, kompakt och justerbar PDW-kolv till AR-15-gevär."
+L["uplp_ar15_stock_pdw.description"] = "Smal, kompakt och justerbar PDW-kolv till AR-15-gevär." .. desc_stock_s .. "\n<color=100,255,100>Har lägre hanteringsstraff</color> till skillnad med andra lätta kolvar."
 
 L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter-Kolv"
 L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
-L["uplp_ar15_stock_sniper.description"] = "Justerbar tung kolv till AR-15-gevär."
+L["uplp_ar15_stock_sniper.description"] = "Justerbar tung kolv till AR-15-gevär." .. desc_stock_l .. "\n<color=100,255,100>Sänker mer sväjning i siktet</color> till skillnad med andra tunga kolvar."
 
 L["uplp_ar15_stock_tac.printname"] = "Hoki Armory-Kolv"
 L["uplp_ar15_stock_tac.compactname"] = "Hoki"
-L["uplp_ar15_stock_tac.description"] = "Taktisk kolv till AR-15-gevär gjort av Hoki Armory."
+L["uplp_ar15_stock_tac.description"] = "Taktisk kolv till AR-15-gevär gjort av Hoki Armory." .. desc_stock_m .. "\n<color=100,255,100>Snabbare rörelsehastighet i siktet</color> till skillnad med andra lätta kolvar."
 
 L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Tung Kolv"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
-L["uplp_ar15_stock_veryheavy.description"] = "Tung kolv till AR-15-baserade prickskyttegevär gjort av ApexCore Systems."
+L["uplp_ar15_stock_veryheavy.description"] = "Tung kolv till AR-15-baserade prickskyttegevär gjort av ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Sänker mer rekyl</color> till skillnad med andra tunga kolvar."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1646,15 +1652,15 @@ L["uplp_awp_brl_awp.description"] = "Förkortad 610mm pipa för Polisversionen a
 
 L["uplp_awp_brl_aws.printname"] = "409mm Internt Ljuddämpad Pipa"
 L["uplp_awp_brl_aws.compactname"] = "409mm Ljud."
-L["uplp_awp_brl_aws.description"] = "Förkortad och internt ljuddämpad 409mm pipa till AW-geväret."
+L["uplp_awp_brl_aws.description"] = "Internt ljuddämpad 409mm pipa till AW-geväret.\n<color=100,255,100>Ljuddämpar vapnet</color> men <color=255,100,100>sänker skadan på nära distans</color>."
 
 L["uplp_awp_brl_long.printname"] = "686mm Magnum-Pipa"
 L["uplp_awp_brl_long.compactname"] = "686mm"
-L["uplp_awp_brl_long.description"] = "Lite förlängd 686mm Magnum-pipa till AW-geväret."
+L["uplp_awp_brl_long.description"] = "Längre 686mm Magnum-pipa till AW-geväret.\n<color=100,255,100>Ökar skadan på långa distanser</color> men <color=255,100,100>sänker hantering och rörlighet</color>."
 
 L["uplp_awp_brl_short.printname"] = "350mm Kompakt Pipa"
 L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret."
+L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret.\n<color=100,255,100>Förbättrar hantering</color> men <color=255,100,100>sänker skadan på långa distanser.</color>"
 
 ////// Bipods
 L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegeväret AW"
