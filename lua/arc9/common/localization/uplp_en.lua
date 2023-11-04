@@ -503,6 +503,8 @@ L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module made by LuminaFire Armaments designed for handguns that provides a laser sight for use in the dark."
 
 /////////// Ammunition
+local shotgun_lp = "\n\nLow pressure shells like this typically can't be used in self-loading shotguns, but don't let that get in the way of your fun."
+
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
 L["uplp_ar15_ammo_458.description"] = "Large and powerful .458 SOCOM cartridges that pack a huge punch." .. changeammo["357"]
@@ -513,27 +515,27 @@ L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 BeOwOlf cartridges 
 
 L["uplp_sg_shell_red.printname"] = "00 Buckshot Rounds"
 L["uplp_sg_shell_red.compactname"] = "Buckshot"
-L["uplp_sg_shell_red.description"] = "Standard 12-gauge shotgun ammunition."
+L["uplp_sg_shell_red.description"] = "Standard shotshells loading medium-sized pellets."
 
 L["uplp_sg_shell_blue.printname"] = "Birdshot Rounds"
 L["uplp_sg_shell_blue.compactname"] = "Birdshot"
-L["uplp_sg_shell_blue.description"] = "Lower damage but more pellets."
+L["uplp_sg_shell_blue.description"] = "Shotshells used to hunt birds. Fires smaller pellets at a greater quantity and spread, so it's more likely to hit a target."
 
 L["uplp_sg_shell_green.printname"] = "Slug Rounds"
 L["uplp_sg_shell_green.compactname"] = "Slug"
-L["uplp_sg_shell_green.description"] = "Replace all the pellets with a singular hardened slug."
+L["uplp_sg_shell_green.description"] = "Shotshells used to hunt prey at medium distances. Fires a single accurate pellet."
 
 L["uplp_sg_shell_black.printname"] = "Double Slug Rounds"
 L["uplp_sg_shell_black.compactname"] = "Slug x2"
-L["uplp_sg_shell_black.description"] = "Replace all the pellets with two hardened slugs."
+L["uplp_sg_shell_black.description"] = "Shotshells loading two large pellets. More stopping power than a single slug, but is less accurate."
 
 L["uplp_sg_shell_orange.printname"] = "Dragon's Breath Rounds"
 L["uplp_sg_shell_orange.compactname"] = "DB"
-L["uplp_sg_shell_orange.description"] = "Shells filled with chemicals that have a chance at igniting targets it hits."
+L["uplp_sg_shell_orange.description"] = "Shotshells filled with magnesium. Not very lethal on hit, but is likely to ignite targets." .. shotgun_lp
 
 L["uplp_sg_shell_yellow.printname"] = "Explosive Slug Rounds"
 L["uplp_sg_shell_yellow.compactname"] = "Exp. Slug"
-L["uplp_sg_shell_yellow.description"] = "Replace the pellets with a single slug that explodes on impact."
+L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. Blasts a small area with shrapnel." .. shotgun_lp
 
 /////////// Cosmetics
 ////// Charms

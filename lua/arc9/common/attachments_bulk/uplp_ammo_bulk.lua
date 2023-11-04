@@ -220,7 +220,7 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_blue.mdl"
 ATT.NumMult = 1.5
 
 -- Negatives
-ATT.DamageMaxMult = 0.75
+ATT.SpreadMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_blue")
 
@@ -239,18 +239,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.25
-ATT.SpreadMultHipFire = 0.75
+ATT.SpreadMult = 0.15
 
-ATT.DamageMax = 75 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.77
-ATT.RangeMin = 2 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
-
+ATT.HeadshotDamage = 2
+ATT.RangeMinMult = 2
+ATT.RangeMaxMult = 1.75
+ATT.DispersionSpreadAddRecoil = -0.025
 
 -- Negatives
 ATT.NumOverride = 1
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.75
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -272,17 +271,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.45
-ATT.SpreadMultHipFire = 0.9
+ATT.SpreadMult = 0.5
 
-ATT.DamageMax = 75 / 1.5 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.5 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.65
-ATT.RangeMin = 2 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 30 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+ATT.HeadshotDamage = 1.5
+ATT.RangeMaxMult = 1.5
+ATT.DispersionSpreadAddRecoil = -0.015
 
 -- Negatives
 ATT.NumOverride = 2
+ATT.DamageMaxMult = 0.667
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -304,17 +301,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_orange.mdl"
 
 -- Positives
--- ATT.NumMult = 3
+ATT.RecoilMult = 0.85
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_ignite_chance")] = "25%",
 }
 
 -- Negatives
-ATT.NumMult = 0.5
-ATT.DamageMaxMult = 0.5
-ATT.RangeMaxMult = 0.5
-ATT.RangeMinMult = 0.75
+ATT.RPMMult = 0.75
+ATT.DamageMaxMult = 0.667
+ATT.RangeMaxMult = 0.75
+ATT.PhysBulletMuzzleVelocityMult = 0.5
 
 ATT.ImpactDecal = "FadingScorch"
 
@@ -372,22 +369,23 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.7
-ATT.SpreadMultHipFire = 0.8
-ATT.DamageMaxMult = 0.5
+ATT.SpreadMult = 0.5
 
-ATT.ExplosionRadiusOverride = 40
-ATT.ExplosionDamageOverride = 70
--- ATT.ExplosionEffect = "csgo_muzzle_he" -- placeholder
+ATT.ExplosionRadiusOverride = 96
+ATT.ExplosionDamageOverride = 60
+ATT.ExplosionEffect = "HelicopterMegaBomb" -- placeholder
 ATT.ImpactDecal = "FadingScorch"
 
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 -- Negatives
+ATT.DamageMaxMult = 0.4
+ATT.DamageMinMult = 0.5
+ATT.RPMMult = 0.75
 ATT.NumOverride = 1
-ATT.PhysBulletGravityMult = 3
-ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.PhysBulletGravityMult = 2
+ATT.PhysBulletMuzzleVelocityMult = 0.6667
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1

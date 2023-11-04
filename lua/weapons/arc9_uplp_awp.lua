@@ -84,7 +84,6 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 -- Damage
 SWEP.DamageMax = 52 -- Damage dealt point-blank
 SWEP.DamageMin = 80 -- Damage dealt after maximum range
-SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
 -- Lethal in one shot slightly under 100 meters

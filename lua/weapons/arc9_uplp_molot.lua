@@ -88,23 +88,32 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 120
-SWEP.DamageMin = 20
+SWEP.DamageMin = 48
 SWEP.DistributeDamage = true
+SWEP.HeadshotDamage = 1
+SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
 
-SWEP.HeadshotDamage = 0.5
-SWEP.DamageType = DMG_BULLET
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 1,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 1,
+    [HITGROUP_RIGHTLEG] = 1,
+}
 
-SWEP.Penetration = 5 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 2 -- How much kick things will have when hit
+SWEP.Penetration = 2 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 3 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-SWEP.RangeMax = 40 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+SWEP.RangeMin = 3 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 475 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 420 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
-SWEP.PhysBulletDrag = 1.5
+SWEP.PhysBulletDrag = 2
 
 -- Magazine Info
 SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
@@ -116,6 +125,9 @@ SWEP.ClipSize = 6
 SWEP.Recoil = 1 + 1
 SWEP.RecoilUp = 1.75
 SWEP.RecoilSide = 1.4
+
+-- Additional recoil when firing rapidly
+SWEP.RecoilMultRecoil = 2
 
 SWEP.RecoilRandomUp = 1.1
 SWEP.RecoilRandomSide = 1.25
@@ -151,18 +163,18 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.02
+SWEP.Spread = 0.04
 
 SWEP.DispersionSpread = 0
 SWEP.DispersionSpreadAddHipFire = 0.02
 
-SWEP.DispersionSpreadAddRecoil = 0.025
-SWEP.DispersionSpreadAddMove = 0.025
+SWEP.DispersionSpreadAddRecoil = 0.05
+SWEP.DispersionSpreadAddMove = 0.03
 SWEP.DispersionSpreadAddMidAir = 0.05
 
-SWEP.RecoilDissipationRate = 3
-SWEP.RecoilResetTime = 0.03
-SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilDissipationRate = 2
+SWEP.RecoilResetTime = 0
+SWEP.RecoilPerShot = 1 / 2
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
