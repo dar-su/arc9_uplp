@@ -70,14 +70,17 @@ ATT.CustomPros = {
 }
 
 -- Positives
-ATT.DamageMinMult = 1.25
-ATT.DamageMaxMult = 2
+ATT.DamageMinAdd = 6
+ATT.DamageMaxAdd = 12
 
 -- Negatives
 ATT.RPMMult = 0.75
 ATT.RecoilMult = 1.8
-ATT.RecoilAutoControlMult = 0.25
-ATT.SpreadAddRecoil = 0.1
+ATT.RecoilAutoControlMult = 0.5
+ATT.SpreadAdd = 0.0015
+ATT.SpreadAddRecoil = 0.004
+ATT.RecoilDissipationRateMult = 0.5
+ATT.RecoilPerShotMult = 2.5
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.75
@@ -156,16 +159,19 @@ ATT.CustomPros = {
 }
 
 -- Positives
-ATT.DamageMinMult = 1.25
-ATT.DamageMaxMult = 2
+ATT.DamageMinAdd = 4
+ATT.DamageMaxAdd = 14
 
 -- Negatives
 ATT.RPMMult = 0.6
-ATT.RecoilMult = 1.45
-ATT.RecoilAutoControlMult = 0.9
-ATT.SpreadAddRecoil = 0.04
-ATT.RangeMaxMult = 0.75
-ATT.RangeMinMult = 0.5
+ATT.RecoilMult = 1.55
+ATT.RecoilAutoControlMult = 0.5
+ATT.SpreadAdd = 0.003
+ATT.SpreadAddRecoil = 0.006
+ATT.RecoilDissipationRateMult = 0.5
+ATT.RecoilPerShotMult = 3
+ATT.RangeMaxMult = 0.6
+ATT.RangeMinMult = 0.25
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.ClipSizeMult = 0.33
 

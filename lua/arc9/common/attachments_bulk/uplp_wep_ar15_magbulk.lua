@@ -54,6 +54,29 @@ local dropsound9 = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+local stat9 = {
+    SpreadAdd = 0.0015,
+    RPMMult = 1.15,
+    RecoilAdd = -0.4,
+    DamageMinAdd = -4,
+    RangeMaxMult = 0.75,
+    RangeMinMult = 0.25,
+    PhysBulletMuzzleVelocity = 370 / ARC9.HUToM,
+}
+
+local stat45 = {
+    SpreadAdd = 0.004,
+    SpreadAddRecoil = 0.002,
+    -- RPMMult = 0.85,
+    RecoilAdd = -0.15,
+    DamageMaxAdd = 3,
+    DamageMinAdd = -6,
+    RangeMaxMult = 0.5,
+    RangeMinMult = 0.125,
+    PhysBulletMuzzleVelocity = 320 / ARC9.HUToM,
+}
+
+
 
 ---------- uplp_ar15_mag_45_20
 
@@ -97,17 +120,11 @@ ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
 }
 
--- Positives
-ATT.AimDownSightsTimeMult = 0.75
-ATT.SprintToFireTimeMult = 0.75
-ATT.RecoilMult = 0.75
+table.Merge(ATT, stat45)
 
--- Negatives
 ATT.ClipSizeOverride = 20
-ATT.PhysBulletMuzzleVelocityMult = 0.65
-ATT.DamageMaxAdd = -5
-ATT.RangeMaxMult = 0.5
-ATT.RangeMinMult = 0.8
+
+ATT.SpreadAddHipFire = -0.005
 
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -154,20 +171,18 @@ end
 ATT.Ammo = "pistol"
 
 ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+    [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
 }
 
--- Positives
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.85
-ATT.ClipSizeOverride = 40
-ATT.RecoilMult = 0.7
+table.Merge(ATT, stat45)
 
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.65
-ATT.DamageMaxAdd = -5
-ATT.RangeMaxMult = 0.5
-ATT.RangeMinMult = 0.8
+ATT.ClipSizeOverride = 40
+
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.02
+
+ATT.SpreadAddHipFire = -0.002
+
 ATT.ReloadTimeMult = 1.15
 
 ATT.Category = "uplp_ar15_45_mag"
@@ -241,26 +256,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Ammo = "pistol"
 
--- Positives
-ATT.RPMMult = 1.2
-ATT.AimDownSightsTimeMult = 0.7
-ATT.SprintToFireTimeMult = 0.7
-ATT.RecoilMult = 0.85
+table.Merge(ATT, stat9)
+
+ATT.ClipSizeOverride = 17
+
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = -0.02
+
+ATT.SpreadAddHipFire = -0.006
 
 ATT.CustomPros = {
-[	ARC9:GetPhrase("autostat.reloadtime")	] = "+10%",
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+    [	ARC9:GetPhrase("autostat.reloadtime")	] = "+10%",
+    [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
 }
-
--- Negatives
-ATT.ClipSizeOverride = 17
-ATT.PhysBulletMuzzleVelocityMult = 0.45
-ATT.DamageMaxAdd = -10
-ATT.DamageMinAdd = -5
-ATT.RangeMaxMult = 0.35
-ATT.RangeMinMult = 0.65
-ATT.SpreadAdd = 0.004
-ATT.RecoilMaxMult = 0.75
 
 ATT.Attachments = {
     {
@@ -321,25 +329,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Ammo = "pistol"
 
 ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+    [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
 }
 
--- Positives
-ATT.RPMMult = 1.2
-ATT.AimDownSightsTimeMult = 0.8
-ATT.SprintToFireTimeMult = 0.8
-ATT.RecoilMult = 0.8
+table.Merge(ATT, stat9)
+
 ATT.ClipSizeOverride = 33
 
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.45
-ATT.DamageMaxAdd = -10
-ATT.DamageMinAdd = -5
-ATT.RangeMaxMult = 0.35
-ATT.RangeMinMult = 0.65
-ATT.SpreadAdd = 0.004
-ATT.RecoilMaxMult = 0.75
--- ATT.ReloadTimeMult = 1.15
+ATT.AimDownSightsTimeAdd = -0.01
+ATT.SprintToFireTimeAdd = -0.01
+
+ATT.SpreadAddHipFire = -0.003
 
 ATT.Attachments = {
     {
@@ -400,25 +400,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Ammo = "pistol"
 
 ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
+    [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.pistol"),
 }
 
--- Positives
-ATT.RPMMult = 1.2
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.95
-ATT.RecoilMult = 0.8
+table.Merge(ATT, stat9)
 
--- Negatives
 ATT.ClipSizeOverride = 50
-ATT.PhysBulletMuzzleVelocityMult = 0.45
-ATT.DamageMaxAdd = -10
-ATT.DamageMinAdd = -5
-ATT.RangeMaxMult = 0.35
-ATT.RangeMinMult = 0.65
-ATT.SpreadAdd = 0.004
-ATT.RecoilMaxMult = 0.75
--- ATT.ReloadTimeMult = 1.25
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SwayMultSights = 1.25
+
+ATT.SpreadAddHipFire = 0.005
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",

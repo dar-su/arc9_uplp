@@ -92,7 +92,7 @@ SWEP.RangeMin = 20 / ARC9.HUToM
 SWEP.RangeMax = 60 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 * 39.37 / 1.15
+SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 

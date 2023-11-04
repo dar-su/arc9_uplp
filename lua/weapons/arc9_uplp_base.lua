@@ -32,7 +32,7 @@ SWEP.SwayMultSights = 1
 
 SWEP.RicochetChance = 0.05 -- Low ricochet chance
 
-SWEP.FreeAimRadius = 5 -- In degrees, how much this gun can free aim in hip fire.
+SWEP.FreeAimRadius = 2 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.FreeAimRadiusSights = 0
 
 SWEP.AimDownSightsTimeMultShooting = 1.5
