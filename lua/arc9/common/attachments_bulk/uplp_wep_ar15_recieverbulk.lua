@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/ar15/"
 
 ATT = {}
 
-ATT.PrintName = "A4 Receiver with Carry Handle"
-ATT.CompactName = "A4 CH"
+ATT.PrintName = "A2 Receiver with Carry Handle"
+ATT.CompactName = "A2 CH"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
@@ -18,19 +18,18 @@ ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short"}
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.PostBurstDelay = 0.2
-ATT.RPM = 900
+ATT.RPM = 1000 -- 20" barrel reduces RPM by 100
 ATT.RunawayBurst = true
 ATT.Firemodes = {
     {
         Mode = 3, -- 3bst
-        RPM = 900,
+        RPM = 1000,
         PoseParam = 1
     },
     {
         Mode = 1, -- Semi
-        RPM = 450,
-        PoseParam = 2,
-        PostBurstDelay = 0
+        RPM = 600,
+        PoseParam = 2
     }
 }
 -- ATT.CustomPros = {

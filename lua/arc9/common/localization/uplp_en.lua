@@ -1286,9 +1286,9 @@ L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles made by Hoki Armory."
 
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "A4 Receiver with Carry Handle"
-L["uplp_ar15_reciever_m16.compactname"] = "A4 CH"
-L["uplp_ar15_reciever_m16.description"] = "Standard military-grade receiver with built-in carrying handle.\nChanges firing modes to: \n<color=100,255,100>3-Round burst</color> + <color=100,255,100>semi-automatic</color>."
+L["uplp_ar15_reciever_m16.printname"] = "A2 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16.compactname"] = "A2 CH"
+L["uplp_ar15_reciever_m16.description"] = "Military-grade receiver with built-in carrying handle.\nChanges firing mode to <color=100,255,100>3-round burst</color>/<color=100,255,100>semi-automatic</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4 Receiver"
 L["uplp_ar15_reciever_m4.compactname"] = "M4"
