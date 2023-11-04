@@ -43,24 +43,17 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
--- Positives
--- ATT.RecoilMult = 0.9
-
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.02
-ATT.SprintToFireTimeAdd = 0.02
-
-ATT.PhysBulletMuzzleVelocityMult = 0.75
-ATT.RangeMinMult = 0.75
-ATT.RangeMaxMult = 0.75
-
-ATT.SweetSpotRangeMult = 0.75
-ATT.SweetSpotWidthMult = 0.75
-ATT.SweetSpotPeakMult = 0.75
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.01
+ATT.PhysBulletMuzzleVelocityMult = 0.85
+ATT.DamageMaxMult = 0.92
+ATT.DamageMinMult = 0.92
+ATT.SpeedAddSights = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
@@ -82,17 +75,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_awp_barrel_long"}
 
 -- Positives
-ATT.PhysBulletMuzzleVelocityMult = 1.25
-ATT.RangeMinMult = 1.25
-ATT.RangeMaxMult = 1.25
-
-ATT.SweetSpotRangeMult = 1.25
-ATT.SweetSpotWidthMult = 1.25
-ATT.SweetSpotPeakMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.DamageMinMult = 1.12
+ATT.RecoilMult = 0.85
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAddSights = -0.1
+ATT.SpeedAdd = -0.015
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_long")
 
@@ -114,17 +105,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_awp_barrel_short"}
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.04
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedAddSights = 0.08
+ATT.SpeedAdd = 0.01
 
 -- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.9
-ATT.RangeMinMult = 0.8
-ATT.RangeMaxMult = 0.75
-
-ATT.SweetSpotRangeMult = 0.75
-ATT.SweetSpotWidthMult = 0.75
-ATT.SweetSpotPeakMult = 0.75
+ATT.RecoilMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.DamageMinMult = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 
@@ -185,21 +174,22 @@ ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
 -- Positives
 ATT.RPMMult = 1.3
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.8
 ATT.CycleTimeMult = 0.75
 ATT.SpeedMultShootingMult = 1.5
 ATT.Ammo = "ar2"
 
 -- Negatives
-ATT.DamageMax = 40
-ATT.DamageMin = 45
-ATT.RangeMin = 0 / ARC9.HUToM
-ATT.RangeMax = 200 / ARC9.HUToM
+ATT.DamageMax = 48
+ATT.DamageMin = 48
+-- ATT.RangeMin = 0 / ARC9.HUToM
+ATT.RangeMax = 120 / ARC9.HUToM
 ATT.SweetSpot = true
 ATT.SweetSpotDamage = 70
-ATT.SweetSpotRange = 100 / ARC9.HUToM
-ATT.SweetSpotWidth = 100 / ARC9.HUToM
-ATT.SweetSpotPeak = 100 / ARC9.HUToM
+ATT.SweetSpotRange = 60 / ARC9.HUToM
+ATT.SweetSpotWidth = 120 / ARC9.HUToM
+ATT.SweetSpotPeak = 0 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
@@ -230,21 +220,23 @@ end
 
 -- Positives
 ATT.RPMMult = 1.3
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.8
 ATT.CycleTimeMult = 0.75
 ATT.SpeedMultShootingMult = 1.5
 ATT.Ammo = "ar2"
 
 -- Negatives
-ATT.DamageMax = 40
-ATT.DamageMin = 45
-ATT.RangeMin = 0 / ARC9.HUToM
-ATT.RangeMax = 200 / ARC9.HUToM
+ATT.DamageMax = 48
+ATT.DamageMin = 48
+-- ATT.RangeMin = 0 / ARC9.HUToM
+ATT.RangeMax = 120 / ARC9.HUToM
 ATT.SweetSpot = true
 ATT.SweetSpotDamage = 70
-ATT.SweetSpotRange = 100 / ARC9.HUToM
-ATT.SweetSpotWidth = 100 / ARC9.HUToM
-ATT.SweetSpotPeak = 100 / ARC9.HUToM
+ATT.SweetSpotRange = 60 / ARC9.HUToM
+ATT.SweetSpotWidth = 120 / ARC9.HUToM
+ATT.SweetSpotPeak = 0 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
+
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
@@ -276,23 +268,24 @@ ATT.EjectDelay = 0.42
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}
 
 ATT.RPMMult = 1.1
-ATT.RecoilMult = 0.9
+ATT.RecoilMult = 0.7
 ATT.CycleTimeMult = 0.9
 ATT.SpeedMultShootingMult = 1.25
 ATT.Ammo = "357"
 
-ATT.DamageMax = 65
+ATT.DamageMax = 52
 ATT.DamageMin = 45
-ATT.RangeMin = 0 / ARC9.HUToM
-ATT.RangeMax = 200 / ARC9.HUToM
+-- ATT.RangeMin = 0 / ARC9.HUToM
+ATT.RangeMax = 100 / ARC9.HUToM
 
 ATT.SweetSpot = true
 ATT.SweetSpotDamage = 90
-ATT.SweetSpotRange = 80 / ARC9.HUToM
+ATT.SweetSpotRange = 50 / ARC9.HUToM
 ATT.SweetSpotWidth = 80 / ARC9.HUToM
-ATT.SweetSpotPeak = 80 / ARC9.HUToM
+ATT.SweetSpotPeak = 20 / ARC9.HUToM
 
-ATT.PhysBulletMuzzleVelocityMult = 1.4
+ATT.PhysBulletMuzzleVelocity = 910 / ARC9.HUToM
+
 
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp_tac")
@@ -346,15 +339,15 @@ ATT.LHIK_Priority = 5
 ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock", "uplp_awp_stock"}
 
 local exstock = {
-    SpeedAdd = 0.04,
-    SpeedAddSights = 0.15,
-    AimDownSightsTimeAdd = -0.03,
-    SprintToFireTimeAdd = -0.07,
+    SpeedAdd = 0.03,
+    SpeedAddSights = 0.12,
+    AimDownSightsTimeAdd = -0.015,
+    SprintToFireTimeAdd = -0.04,
 
-    RPMMult = 0.9,
-    SwayAddSights = 0.25,
+    SpeedAddShooting = -0.2,
+    SwayMultSights = 1.25,
     RecoilRandomSideMult = 1.5,
-    RecoilAdd = 0.65,
+    RecoilAdd = 0.5,
 }
 table.Merge(ATT, exstock)
 

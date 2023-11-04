@@ -82,16 +82,17 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 55 -- Damage dealt point-blank
+SWEP.DamageMax = 52 -- Damage dealt point-blank
 SWEP.DamageMin = 80 -- Damage dealt after maximum range
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
+-- Lethal in one shot slightly under 100 meters
 SWEP.SweetSpot = true
 SWEP.SweetSpotDamage = 100
-SWEP.SweetSpotRange = 225 / ARC9.HUToM
-SWEP.SweetSpotWidth = 250 / ARC9.HUToM
-SWEP.SweetSpotPeak = 150 / ARC9.HUToM
+SWEP.SweetSpotRange = 125 / ARC9.HUToM
+SWEP.SweetSpotWidth = 100 / ARC9.HUToM
+SWEP.SweetSpotPeak = 50 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2.5,
@@ -108,10 +109,10 @@ SWEP.ImpactForce = 15 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 0 / ARC9.HUToM
-SWEP.RangeMax = 450 / ARC9.HUToM
+SWEP.RangeMax = 200 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 936 / 1.1 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -191,7 +192,7 @@ SWEP.SprintToFireTime = 0.4
 SWEP.SwayMultSights = 0.75
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot
+SWEP.RPM = 450 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
