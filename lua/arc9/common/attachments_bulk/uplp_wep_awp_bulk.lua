@@ -48,12 +48,12 @@ ATT.CustomPros = {
 }
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.01
-ATT.SprintToFireTimeAdd = 0.01
+-- ATT.AimDownSightsTimeAdd = 0.01
+-- ATT.SprintToFireTimeAdd = 0.01
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 ATT.DamageMaxMult = 0.92
-ATT.DamageMinMult = 0.92
-ATT.SpeedAddSights = -0.05
+-- ATT.DamageMinMult = 0.92
+-- ATT.SpeedAddSights = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 

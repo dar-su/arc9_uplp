@@ -1651,15 +1651,15 @@ L["uplp_awp_brl_awp.description"] = "Shortened 610mm (24\") barrel for the Polic
 
 L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
 L["uplp_awp_brl_aws.compactname"] = "409mm S."
-L["uplp_awp_brl_aws.description"] = "Integrally suppressed 409mm (16\") barrel for the AW rifle.\n<color=100,255,100>Suppresses the weapon</color> at the cost of a <color=255,200,100>minor handling penalty</color> and <color=255,100,100>reduced damage and muzzle velocity</color>."
+L["uplp_awp_brl_aws.description"] = "Integrally suppressed 409mm (16\") barrel for the AW rifle.\n<color=100,255,100>Suppresses the weapon</color>, but <color=255,100,100>reduces close range damage</color>."
 
 L["uplp_awp_brl_long.printname"] = "686mm Magnum Barrel"
 L["uplp_awp_brl_long.compactname"] = "686mm"
-L["uplp_awp_brl_long.description"] = "Longer and heavier 686mm (27\") Magnum barrel for the AW rifle.\n<color=100,255,100>Increases long range damage and muzzle velocity</color>, with a <color=255,150,100>medium handling penalty</color>."
+L["uplp_awp_brl_long.description"] = "Longer 686mm (27\") Magnum barrel for the AW rifle.\n<color=100,255,100>Increases long range damage</color>, but <color=255,100,100>slows handling and mobility</color>."
 
 L["uplp_awp_brl_short.printname"] = "350mm Compact Barrel"
 L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the AW rifle.\n<color=100,255,100>Improves handling</color> but <color=255,100,100>reduces long range damage and muzzle velocity.</color>"
+L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the AW rifle.\n<color=100,255,100>Improves handling</color>, but <color=255,100,100>reduces long range damage.</color>"
 
 ////// Bipods
 L["uplp_awp_bp.printname"] = "AW Sniper Bipod"
