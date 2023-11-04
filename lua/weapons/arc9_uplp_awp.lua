@@ -790,6 +790,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.3, 0.55),
         Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_awp_brl_aws"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),

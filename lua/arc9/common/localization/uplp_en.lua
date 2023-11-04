@@ -1651,7 +1651,7 @@ L["uplp_awp_brl_awp.description"] = "Shortened 610mm (24\") barrel for the Polic
 
 L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
 L["uplp_awp_brl_aws.compactname"] = "409mm S."
-L["uplp_awp_brl_aws.description"] = "Integrally suppressed 409mm (16\") barrel for the AW rifle.\n<color=100,255,100>Suppresses the weapon</color>, but <color=255,100,100>reduces close range damage</color>."
+L["uplp_awp_brl_aws.description"] = "Integrally suppressed 409mm (16\") barrel for the AW rifle.\n<color=100,255,100>Suppresses the weapon</color>, but <color=255,100,100>reduces close range damage</color>.\nAccepts " .. col.b .. "AR-15 iron sights" .. col.e .. " instead of the default iron sights."
 
 L["uplp_awp_brl_long.printname"] = "686mm Magnum Barrel"
 L["uplp_awp_brl_long.compactname"] = "686mm"
