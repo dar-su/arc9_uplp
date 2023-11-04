@@ -224,6 +224,27 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
+SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    local attached = self:GetElements()
+
+    if attached["uplp_ar15_rs_tall"] then
+        return {
+            Pos = Vector(-2.32, -4, 0.23),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
+        }
+    elseif attached["uplp_ar15_rs_short"] then
+        return {
+            Pos = Vector(-2.32, -4, 0.38),
+            Ang = Angle(0, 0, 0),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
+        }
+    end
+
+end
+
 -- SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     -- local attached = self:GetElements()
 
@@ -777,6 +798,7 @@ SWEP.AttachmentElements = {
     -- OTHER
     ["uplp_grip_used"] = { Bodygroups = { { 6, 1 } }},
     ["uplp_tac_used"] = { Bodygroups = { { 6, 1 } }},
+    ["uplp_awp_push_optic"] = {AttPosMods = { [2] = { Pos = Vector(0, -0.3, 3), Icon_Offset = Vector(0.074, 0, 0) } }}
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -790,18 +812,21 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.3, 0.55),
         Ang = Angle(90, 90, 180),
-        ExcludeElements = {"uplp_awp_brl_aws"},
+        ExcludeElements = {"uplp_no_backup"},
+        MergeSlots = {11},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_small", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),
         Pos = Vector(0, -0.3, 1.326),
         Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1, 0, 0),
+        Icon_Offset = Vector(1.748, 0, 0),
         Installed = "uplp_optic_generic",
+        MergeSlots = {14}, -- large optics are merged (they're not compatible with AR-15 rear iron)
+        ExcludeElements = {"uplp_ar15_rs_carry"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -879,6 +904,49 @@ SWEP.Attachments = {
         -- RejectAttachments = {
         -- ["uplp_grip_half"] = true,
         -- },
+    },
+    {   -- AR-15 rear sights
+        PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
+        Category = {"uplp_ar15_rs"},
+        DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, -0.4, 1),
+        Ang = Angle(90, 90, 180),
+        Hidden = true,
+        InstalledElements = {"uplp_awp_push_optic"},
+        ExcludeElements = {"uplp_no_backup"},
+    },
+    {   -- AR-15 front sight when suppressed barrel is mounted
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
+        Category = {"uplp_ar15_fs"},
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, -0.4, 26),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_awp_brl_aws"},
+    },
+    {   -- AR-15 front sight WITHOUT suppressed barrel. Mounted on same rail as rear sight, so not compatible with optics (and ar-15 carry handle)
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
+        Category = {"uplp_ar15_fs"},
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, -0.4, 5.4),
+        Icon_Offset = Vector(0, 0, -0.1),
+        Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_awp_brl_aws", "uplp_optic_used", "uplp_ar15_rs_carry"},
+    },
+    {   --
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        Category = {"uplp_optic_big"},
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        Bone = "body",
+        CorrectiveAng = Angle(0, 0, 0),
+        Pos = Vector(0, -0.3, 1.326),
+        Ang = Angle(90, 90, 180),
+        Icon_Offset = Vector(1.748, 0, 0),
+        ExcludeElements = {"uplp_ar15_rs_tall", "uplp_ar15_rs_short"},
+        InstalledElements = {"uplp_ar15_no_rs"},
+        Hidden = true,
     },
 
     -- Cosmetic shit

@@ -55,45 +55,6 @@ ATT.DamageMaxMult = 0.92
 -- ATT.DamageMinMult = 0.92
 -- ATT.SpeedAddSights = -0.05
 
-ATT.IronSightsOverride = {
-    Pos = Vector(-2.32, -4, 0.38),
-    Ang = Angle(0, 0, 0),
-    Magnification = 1.15,
-    ViewModelFOV = 65,
-}
-
-ATT.IronSightsHook = function(self)
-    local attached = self:GetElements()
-
-    if attached["uplp_ar15_rs_tall"] then
-        return {
-            Pos = Vector(-2.32, -4, 0.23),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    end
-
-end
-
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
-        Category = {"uplp_ar15_fs"},
-        DefaultIcon = Material("arc9/def_att_icons/fs.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(-18, 0, -0.8),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
-        Category = {"uplp_ar15_rs", "uplp_backup_optic"},
-        DefaultIcon = Material("arc9/def_att_icons/fs.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(7, 0, -0.8),
-        Ang = Angle(0, 0, 0),
-    },
-}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
@@ -725,6 +686,7 @@ ATT.Category = "uplp_awp_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_rs"}
+ATT.ExcludeElements = {"uplp_awp_brl_aws"}
 
 ARC9.LoadAttachment(ATT, "uplp_awp_rs")
 

@@ -15,7 +15,7 @@ ATT.Icon = Material(iconfolder .. "r4.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
-ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_optic_used", "uplp_ar15_no_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "6"
@@ -39,7 +39,7 @@ ATT.Icon = Material(iconfolder .. "carry.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
--- ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "c"
@@ -67,7 +67,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     8     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 
--- ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -94,7 +94,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     10     + (swep:Ge
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
-ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_optic_used", "uplp_ar15_no_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -121,7 +121,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     0     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 
--- ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -148,7 +148,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     2     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_short"}
 
--- ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -175,7 +175,7 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     4     + (swep:Get
 
 ATT.ActivateElements = {"uplp_ar15_rs_tall", "uplp_ar15_gasblock_nocompact_rs"}
 
--- ATT.ExcludeElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
