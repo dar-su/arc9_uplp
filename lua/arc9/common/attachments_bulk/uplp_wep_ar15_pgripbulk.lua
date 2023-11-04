@@ -17,6 +17,9 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "4"
 -- ATT.ModelOffset = Vector(0, 0, 0)
 
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = -0.02
+
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -43,6 +46,11 @@ ATT.ModelBodygroups = "3"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 0.95
+ATT.SwayMultSights = 0.9
+
+ATT.SpeedMultSights = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_massive")
 
 
@@ -64,6 +72,14 @@ ATT.ModelBodygroups = "2"
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- Positives
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
+
+-- Negatives
+ATT.AimDownSightsTimeAdd = -0.01
+ATT.SprintToFireTimeAdd = -0.02
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_modern")
 
@@ -92,8 +108,8 @@ ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_psg")
 
@@ -118,7 +134,11 @@ ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.95
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
+
+-- Negatives
+ATT.AimDownSightsTimeAdd = -0.03
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel")
 
@@ -143,7 +163,11 @@ ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.95
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
+
+-- Negatives
+ATT.AimDownSightsTimeAdd = -0.03
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_skel_red")
 
@@ -184,6 +208,9 @@ ATT.Icon = Material(iconfolder .. "gtac.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "1"
 -- ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = 0.02
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
