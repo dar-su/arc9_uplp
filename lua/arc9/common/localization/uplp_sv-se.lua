@@ -503,6 +503,8 @@ L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Kompakt skenamonterad siktemodul gjord av LuminaFire Armaments designad för sidovapen som erbjuder ett lasersikte för användning i mörker."
 
 /////////// Ammunition
+local shotgun_lp = "\n\nPatroner med lågt tryck som den har kan normalt sett inte laddas i halvautomatiska hagelbössor, men låt inte det hindra dig från att ha roligt."
+
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM-Patroner"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
 L["uplp_ar15_ammo_458.description"] = "Stora och kraftfulla .458 SOCOM-patroner som träffar väldigt hårt." .. changeammo["357"]
@@ -513,27 +515,27 @@ L["uplp_ar15_ammo_50.description"] = "Stora och kraftfulla .50 BeOwOlf-patroner 
 
 L["uplp_sg_shell_red.printname"] = "Hagelskott Patroner"
 L["uplp_sg_shell_red.compactname"] = "Hagelskott"
-L["uplp_sg_shell_red.description"] = "Standard 12-kaliber hagelgevär ammunition."
+L["uplp_sg_shell_red.description"] = "Standard hagelpatroner laddade med medelstora skott."
 
 L["uplp_sg_shell_blue.printname"] = "Fågelskott Patroner"
 L["uplp_sg_shell_blue.compactname"] = "Fågelskott"
-L["uplp_sg_shell_blue.description"] = "Lägre skada men fler skott."
+L["uplp_sg_shell_blue.description"] = "Hagelpatroner användna för att jaga fåglar. Skjuter större antal mindre skott med större spridning så det ökar chansen att träffa mål."
 
 L["uplp_sg_shell_green.printname"] = "Brennekepatroner"
 L["uplp_sg_shell_green.compactname"] = "Brenneke"
-L["uplp_sg_shell_green.description"] = "Ersätter alla skotten med en enkel hård kula."
+L["uplp_sg_shell_green.description"] = "Hagelpatroner som används för att jaga byten vid medeldistanser. Skjut en enda träffsäker kula."
 
 L["uplp_sg_shell_black.printname"] = "Dubbla Brennekepatroner"
 L["uplp_sg_shell_black.compactname"] = "Brenneke x2"
-L["uplp_sg_shell_black.description"] = "Ersätter alla skotten med två hårda kulor."
+L["uplp_sg_shell_black.description"] = "Hagelpatroner laddade med två stora kulor. Mer stoppkraft än en enda kula, men mindre träffsäker."
 
 L["uplp_sg_shell_orange.printname"] = "\"Dragon's Breath\"-Patroner"
 L["uplp_sg_shell_orange.compactname"] = "DB"
-L["uplp_sg_shell_orange.description"] = "Patroner fyllda med kemikalier som har en chans att tända fyr på måltavlor den träffar."
+L["uplp_sg_shell_orange.description"] = "Hagelpatroner fyllda med magnesium. Inte lika dödlig på träff men har chansen att tända fyr på mål." .. shotgun_lp
 
 L["uplp_sg_shell_yellow.printname"] = "Explosiva Granatskott"
 L["uplp_sg_shell_yellow.compactname"] = "Granat"
-L["uplp_sg_shell_yellow.description"] = "Ersätter alla skotten med ett enkelt granatskott som exploderar vid träff."
+L["uplp_sg_shell_yellow.description"] = "Hagelpatroner laddade med en mindre explosiv granat. Spränger ett mindre område med granatsplitter." .. shotgun_lp
 
 /////////// Cosmetics
 ////// Charms
@@ -602,7 +604,7 @@ L["uplp_ak_brl_akm.description"] = "Standard 400mm pipa som används på AK 7,62
 
 L["uplp_ak_brl_rpk.printname"] = "585mm HPK-Pipa"
 L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på HPK.\nKommer med inbyggt <color=100,255,100>benstöd</color>."
+L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på HPK.\nKommer med <color=100,255,100>inbyggt benstöd</color>."
 
 L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Pipa"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
