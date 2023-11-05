@@ -160,8 +160,8 @@ SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
-SWEP.AimDownSightsTime = 0.32 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.35 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 
@@ -267,7 +267,6 @@ SWEP.DistantShootSound = {
     pathUTC .. "556tails/fire-dist-556x45-rif-ext-05.ogg",
     pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
 }
-
 SWEP.DistantShootSoundIndoor = {
     pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
     pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
@@ -289,20 +288,6 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-09.ogg",
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
-
-SWEP.DistantShootSoundIndoorsSilenced = {
-    pathUTC .. "generictails/sup-tail-01.ogg",
-    pathUTC .. "generictails/sup-tail-02.ogg",
-    pathUTC .. "generictails/sup-tail-03.ogg",
-    pathUTC .. "generictails/sup-tail-04.ogg",
-    pathUTC .. "generictails/sup-tail-05.ogg",
-    pathUTC .. "generictails/sup-tail-06.ogg",
-    pathUTC .. "generictails/sup-tail-07.ogg",
-    pathUTC .. "generictails/sup-tail-08.ogg",
-    pathUTC .. "generictails/sup-tail-09.ogg",
-    pathUTC .. "generictails/sup-tail-10.ogg"
-}
-
 SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",

@@ -287,7 +287,6 @@ SWEP.DistantShootSound = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
 }
-
 SWEP.DistantShootSoundIndoor = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
@@ -309,20 +308,6 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-09.ogg",
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
-
-SWEP.DistantShootSoundIndoorsSilenced = {
-    pathUTC .. "generictails/sup-tail-01.ogg",
-    pathUTC .. "generictails/sup-tail-02.ogg",
-    pathUTC .. "generictails/sup-tail-03.ogg",
-    pathUTC .. "generictails/sup-tail-04.ogg",
-    pathUTC .. "generictails/sup-tail-05.ogg",
-    pathUTC .. "generictails/sup-tail-06.ogg",
-    pathUTC .. "generictails/sup-tail-07.ogg",
-    pathUTC .. "generictails/sup-tail-08.ogg",
-    pathUTC .. "generictails/sup-tail-09.ogg",
-    pathUTC .. "generictails/sup-tail-10.ogg"
-}
-
 SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",

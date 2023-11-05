@@ -304,6 +304,7 @@ SWEP.DistantShootSoundIndoor = {
     pathUTC .. "12gatails/fire-dist-12ga-pasg-int-05.ogg",
     pathUTC .. "12gatails/fire-dist-12ga-pasg-int-06.ogg",
 }
+
 SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-01.ogg",
     pathUTC .. "generictails/sup-tail-02.ogg",
@@ -316,15 +317,6 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-09.ogg",
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
-SWEP.DistantShootSoundIndoorSilenced = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
-}
--- ?? which is correct?
 SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
