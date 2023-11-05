@@ -604,7 +604,7 @@ L["uplp_ak_brl_akm.description"] = "Standard 400mm (16\") barrel used on the AK 
 
 L["uplp_ak_brl_rpk.printname"] = "585mm HPK Barrel"
 L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Heavy 585mm (23\") barrel used on the HPK.\nComes with an integral <color=100,255,100 bipod</color>."
+L["uplp_ak_brl_rpk.description"] = "Heavy 585mm (23\") barrel used on the HPK.\nComes with an <color=100,255,100>integral bipod</color>."
 
 L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Barrel"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"

@@ -92,11 +92,11 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 12 / ARC9.HUToM
+SWEP.RangeMin = 15 / ARC9.HUToM
 SWEP.RangeMax = 120 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -143,7 +143,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.0035
+SWEP.Spread = 0.0045
 SWEP.SpreadAddHipFire = 0.03 - 0.01
 
 SWEP.SpreadAddRecoil = 0.015
@@ -155,7 +155,7 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 8
+SWEP.RecoilPerShot = 1 / 9
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
@@ -164,8 +164,8 @@ SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.6 / 0.85 -- When aiming
 SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.36 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.37 - 0.1 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.37 - 0.1 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 
@@ -301,20 +301,6 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-09.ogg",
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
-
-SWEP.DistantShootSoundIndoorsSilenced = {
-    pathUTC .. "generictails/sup-tail-01.ogg",
-    pathUTC .. "generictails/sup-tail-02.ogg",
-    pathUTC .. "generictails/sup-tail-03.ogg",
-    pathUTC .. "generictails/sup-tail-04.ogg",
-    pathUTC .. "generictails/sup-tail-05.ogg",
-    pathUTC .. "generictails/sup-tail-06.ogg",
-    pathUTC .. "generictails/sup-tail-07.ogg",
-    pathUTC .. "generictails/sup-tail-08.ogg",
-    pathUTC .. "generictails/sup-tail-09.ogg",
-    pathUTC .. "generictails/sup-tail-10.ogg"
-}
-
 SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",

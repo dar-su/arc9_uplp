@@ -56,33 +56,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_comp"}
 
 -- Positives
-ATT.RecoilMult = 0.75
-ATT.AimDownSightsTimeMult = 0.9
+ATT.SpreadAddHipFire = -0.0035 - 0.0035
+ATT.SpreadAddRecoil = -0.0035
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedMultSights = 1.08
+ATT.RPMAdd = 25
 
 -- Negatives
-ATT.RangeMaxMult = 0.8
-ATT.RangeMinMult = 0.9
-ATT.PhysBulletMuzzleVelocityMult = 0.95
-
---[[
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = "uplp_handguard_normal",
-        Pos = Vector(2, 0, 0),
-        Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        -- Installed = "uplp_ak_dc_std",
-        -- Integral = "uplp_ak_dc_std",
-        Pos = Vector(10.5, 0, -1),
-        Ang = Angle(0, 0, 0),
-    },
-}
---]]
+ATT.RecoilMult = 1.15
+ATT.SpreadAdd = 0.0035
+ATT.RangeMaxAdd = -30 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RecoilPerShot = 1 / 7
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_comp")
 
@@ -100,28 +86,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_brl_akm"}
 
--- Positives
-ATT.RecoilMult = 0.7
-
---[[
-ATT.Attachments = {
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
-        Category = "uplp_handguard_normal",
-        Pos = Vector(2, 0, 0),
-        Icon_Offset = Vector(-6.5, 0, -0.5),
-        Ang = Angle(0, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_dustcover"),
-        Category = "uplp_ak_dc",
-        -- Installed = "uplp_ak_dc_std",
-        -- Integral = "uplp_ak_dc_std",
-        Pos = Vector(10.5, 0, -1),
-        Ang = Angle(0, 0, 0),
-    },
-}
---]]
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.01
+ATT.RecoilPerShot = 1 / 10
+ATT.RecoilMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_akm")
 
@@ -141,14 +109,21 @@ ATT.ActivateElements = {"uplp_ak_brl_rpk"}
 
 -- Positives
 ATT.Bipod = true
-ATT.RecoilMult = 0.5
-ATT.RangeMaxMult = 1.1
-ATT.RangeMinMult = 1.2
-ATT.PhysBulletMuzzleVelocityMult = 1.15
+ATT.SpreadAdd = -0.002
+ATT.RangeMaxAdd = 30 / ARC9.HUToM
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.RecoilPerShot = 1 / 12
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.03
+ATT.RPMAdd = -50
+ATT.SpreadAddHipFire = 0.005
+ATT.SpreadAddRecoil = 0.002
+ATT.RecoilMult = 0.75
+
+ATT.SpeedMultSights = 0.85
 
 --[[
 ATT.Attachments = {
@@ -187,13 +162,22 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_109","uplp_ak_dc_no"}
 
 -- Positives
-ATT.RecoilMult = 0.45
-ATT.RangeMaxMult = 1.05
-ATT.RangeMinMult = 1.1
-ATT.PhysBulletMuzzleVelocityMult = 1.05
+ATT.SpreadAdd = -0.001
+ATT.RPMAdd = 50
+ATT.RecoilMult = 0.75
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RangeMinAdd = 2 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilPerShot = 1 / 10
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.05
+ATT.SpreadAddHipFire = 0.003
+ATT.SpreadAddRecoil = 0.002
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.SpeedMultSights = 0.85
+ATT.SpeedMultShooting = 0.9
+
 
 --[[
 ATT.Attachments = {
@@ -224,14 +208,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_su","uplp_ak_rearsight"}
 
 -- Positives
-ATT.RecoilMult = 0.65
-ATT.AimDownSightsTimeMult = 0.75
-ATT.SprintToFireTimeMult = 0.8
+ATT.SpreadAddHipFire = -0.005 - 0.01
+ATT.SpreadAddRecoil = -0.005
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SpeedMultSights = 1.12
+ATT.RPMAdd = 50
 
 -- Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.75
-ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RecoilMult = 1.25
+ATT.SpreadAdd = 0.005
+ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.RangeMinAdd = -4 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.RecoilPerShot = 1 / 6
 
 ATT.Attachments = {
     {
@@ -302,14 +292,20 @@ ATT.ActivateElements = {"uplp_ak_brl_12k", "ak12_part"}
 ATT.ExcludeElements = {"uplp_ak_hg_rpk16", "uplp_ak_hg_12tac"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.75
-ATT.SprintToFireTimeMult = 0.8
+ATT.SpreadAddHipFire = -0.0055 - 0.01
+ATT.SpreadAddRecoil = -0.0055
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.06
+ATT.SpeedMultSights = 1.15
+ATT.RPMAdd = 50
 
 -- Negatives
-ATT.RecoilMult = 1.1
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.75
-ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RecoilMult = 1.3
+ATT.SpreadAdd = 0.0055
+ATT.RangeMaxAdd = -50 / ARC9.HUToM
+ATT.RangeMinAdd = -5 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.RecoilPerShot = 1 / 6
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_12k")
 
@@ -328,13 +324,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.95
+ATT.SpreadAdd = -0.001
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilPerShot = 1 / 10
+ATT.RecoilMult = 0.95
 
 -- Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.8
-ATT.PhysBulletMuzzleVelocityMult = 0.95
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.01
+ATT.SpreadAddHipFire = 0.002
+ATT.SpreadAddRecoil = 0.001
+ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_19")
 
@@ -353,14 +354,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}
 
 -- Positives
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.1
-ATT.RangeMinMult = 1.2
-ATT.PhysBulletMuzzleVelocityMult = 1.15
+ATT.SpreadAdd = -0.002
+ATT.RangeMaxAdd = 30 / ARC9.HUToM
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.RecoilPerShot = 1 / 12
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.03
+ATT.RPMAdd = -50
+ATT.SpreadAddHipFire = 0.005
+ATT.SpreadAddRecoil = 0.002
+ATT.RecoilMult = 0.75
+ATT.SpeedMultSights = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk16")
 
