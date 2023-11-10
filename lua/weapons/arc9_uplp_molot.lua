@@ -198,7 +198,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.ShootPitch = 90
-SWEP.ShootVol = 120
+SWEP.ShootVolume = 120
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -251,7 +251,7 @@ SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = false 
+SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_std.mdl"
 SWEP.DropMagazineTime = 0.6

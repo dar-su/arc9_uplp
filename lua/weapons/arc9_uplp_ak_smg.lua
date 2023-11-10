@@ -190,7 +190,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.ShootPitch = 90
-SWEP.ShootVol = 120
+SWEP.ShootVolume = 120
 
 -- HoldType Info
 SWEP.HoldType = "ar2"

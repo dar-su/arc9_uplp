@@ -177,7 +177,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.ShootPitch = 90
-SWEP.ShootVol = 120
+SWEP.ShootVolume = 120
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -249,7 +249,7 @@ SWEP.ShootSound = {
     pathUT .. "fire-06.ogg",
 }
 
-SWEP.ShootSoundSilenced = {	
+SWEP.ShootSoundSilenced = {
     pathUT .. "fire-sup-01.ogg",
     pathUT .. "fire-sup-02.ogg",
     pathUT .. "fire-sup-03.ogg",
@@ -436,7 +436,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
-    },    
+    },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
