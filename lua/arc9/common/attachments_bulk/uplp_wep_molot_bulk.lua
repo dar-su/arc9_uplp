@@ -556,6 +556,6 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_vepr_default.mdl"
 ATT.SpreadAdd = -0.005
 
 -- Negatives
-ATT.RecoilAutoControlMult = 1.05
+ATT.RecoilMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_vepr")
