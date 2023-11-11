@@ -1688,7 +1688,7 @@ L["uplp_awp_mag_awp_big.description"] = "Förstorat 8-patronersmagasin laddat me
 
 L["uplp_awp_mag_awp_tac.printname"] = "5-Patroner 6.5mm"
 L["uplp_awp_mag_awp_tac.compactname"] = "5P 6.5mm"
-L["uplp_awp_mag_awp_tac.description"] = "Standard 5-patronersmagasin laddat med 6.5mm ammunition.\nEn patron med utmärkt kort till medeldistans räckvidd prestanda."
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-patronersmagasin laddat med 6.5mm ammunition.\nEn patron som ger full potentiell prestanda på räckvidd mellan 50 till 100 meter."
 
 ////// Stocks
 L["uplp_awp_stock_at.printname"] = "Vikbar Moderniserad Kolv"
