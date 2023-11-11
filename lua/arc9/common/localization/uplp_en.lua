@@ -1687,7 +1687,7 @@ L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .
 
 L["uplp_awp_mag_awp_tac.printname"] = "5-Round 6.5mm"
 L["uplp_awp_mag_awp_tac.compactname"] = "5R 6.5mm"
-L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition.\nA cartridge with excellent short to medium range performance."
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition.\nA cartridge that reveals full performance potential on ranges from 50 to 100 meters."
 
 ////// Stocks
 L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"

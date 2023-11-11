@@ -274,15 +274,16 @@ ATT.CycleTimeMult = 0.9
 ATT.SpeedMultShootingMult = 1.25
 ATT.Ammo = "357"
 
+-- lethal from 44 to 109 meters
 ATT.DamageMax = 52
-ATT.DamageMin = 45
+ATT.DamageMin = 70
 -- ATT.RangeMin = 0 / ARC9.HUToM
-ATT.RangeMax = 100 / ARC9.HUToM
+ATT.RangeMax = 150 / ARC9.HUToM
 
 ATT.SweetSpot = true
-ATT.SweetSpotDamage = 90
-ATT.SweetSpotRange = 50 / ARC9.HUToM
-ATT.SweetSpotWidth = 80 / ARC9.HUToM
+ATT.SweetSpotDamage = 97
+ATT.SweetSpotRange = 75 / ARC9.HUToM
+ATT.SweetSpotWidth = 120 / ARC9.HUToM
 ATT.SweetSpotPeak = 20 / ARC9.HUToM
 
 ATT.PhysBulletMuzzleVelocity = 910 / ARC9.HUToM

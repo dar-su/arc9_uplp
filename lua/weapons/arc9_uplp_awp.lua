@@ -82,16 +82,16 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 52 -- Damage dealt point-blank
-SWEP.DamageMin = 80 -- Damage dealt after maximum range
+SWEP.DamageMax = 60 -- Damage dealt point-blank
+SWEP.DamageMin = 60 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
--- Lethal in one shot slightly under 100 meters
+-- Lethal in one shot on 13 meters, falls under 100 dmg on >68 m
 SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 100
-SWEP.SweetSpotRange = 125 / ARC9.HUToM
-SWEP.SweetSpotWidth = 100 / ARC9.HUToM
-SWEP.SweetSpotPeak = 50 / ARC9.HUToM
+SWEP.SweetSpotDamage = 105
+SWEP.SweetSpotRange = 40 / ARC9.HUToM
+SWEP.SweetSpotWidth = 90 / ARC9.HUToM
+SWEP.SweetSpotPeak = 15 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2.5,
