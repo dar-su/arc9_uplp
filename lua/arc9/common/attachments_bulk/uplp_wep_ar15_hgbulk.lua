@@ -364,8 +364,9 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(2, 0.12, -1.0)
 
-ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact", "uplp_no_tactical"}
-ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+-- ATT.ActivateElements = { "uplp_no_tactical", "uplp_ar15_gasblock_nocompact",}
+ATT.ActivateElements = {"uplp_no_tactical"}
+-- ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -399,8 +400,9 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(2, 0.12, -1.0)
 
-ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact", "uplp_no_tactical"}
-ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+-- ATT.ActivateElements = { "uplp_no_tactical", "uplp_ar15_gasblock_nocompact",}
+ATT.ActivateElements = {"uplp_no_tactical"}
+-- ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 ATT.Category = "uplp_ar15_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

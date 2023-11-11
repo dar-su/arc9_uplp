@@ -85,28 +85,28 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
 
 
----------- uplp_ar15_gasblock_min
+-- ---------- uplp_ar15_gasblock_min
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "Compact Gas Block"
-ATT.CompactName = "GB"
-ATT.Description = ATT.PrintName
+-- ATT.PrintName = "Compact Gas Block"
+-- ATT.CompactName = "GB"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "m.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "m.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock"}
+-- ATT.ActivateElements = {"uplp_ar15_gasblock", "uplp_ar15_gasblock"}
 
-ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
-ATT.ModelBodygroups = "0"
--- ATT.ModelOffset = Vector(0, 0, 0)
+-- ATT.Model = "models/weapons/arc9/uplp/ar15_gasblocks.mdl"
+-- ATT.ModelBodygroups = "0"
+-- -- ATT.ModelOffset = Vector(0, 0, 0)
 
--- ATT.SortOrder = 0
-ATT.Category = "uplp_ar15_gasblock"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+-- -- ATT.SortOrder = 0
+-- ATT.Category = "uplp_ar15_gasblock"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
-ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
+-- ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min")
 
 ---------- uplp_ar15_gasblock_min_red
 

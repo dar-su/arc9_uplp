@@ -1036,6 +1036,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             mdl:SetBodygroup(0, 7)
         end
     end
+
+    if !eles["uplp_ar15_gasblock"] then
+        mdl:SetBodygroup(8, 1)
+        if eles["uplp_ar15_handguard_long"] then mdl:SetBodygroup(8, 2) end
+        if eles["uplp_ar15_hg_m16short"] then mdl:SetBodygroup(8, 3) end
+    else
+        mdl:SetBodygroup(8, 0)
+    end
 end
 
 -- SWEP.Hook_ModifyElements = function(self, eles)
@@ -1110,8 +1118,15 @@ SWEP.AttachmentElements = {
     [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [10] = { Pos = Vector(0.045, -0.2, 18.25) },
     }},
-    ["uplp_ar15_hg_tacshort"] = { Bodygroups =      { { 2, 6 } } },
-    ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =      { { 2, 14 } } },
+
+    ["uplp_ar15_hg_tacshort"] = { Bodygroups =           { { 2, 6 }, { 9, 0 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 14.285) },
+    }},   
+
+    ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =           { { 2, 14 }, { 9, 0 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 14.285) },
+    }},
+
     ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 }, { 9, 1 } }, AttPosMods = {
     [10] = { Pos = Vector(0.045, -0.2, 19.25) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
@@ -1240,7 +1255,7 @@ SWEP.Attachments = {
         Pos = Vector(0.045, 1.02, 13.95),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_ar15_gasblock_m16",
-		Integral = "uplp_ar15_gasblock_min",
+		-- Integral = "uplp_ar15_gasblock_min",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
