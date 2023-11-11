@@ -1024,6 +1024,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-0.06, -0.45, 14),
         Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_ar15_no_fs", "uplp_scar_is"},
     },
     {

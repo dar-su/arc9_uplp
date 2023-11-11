@@ -932,6 +932,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.4, 5.4),
         Icon_Offset = Vector(0, 0, -0.1),
         Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_awp_brl_aws", "uplp_optic_used", "uplp_ar15_rs_carry"},
     },
     {   --

@@ -1118,15 +1118,12 @@ SWEP.AttachmentElements = {
     [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [10] = { Pos = Vector(0.045, -0.2, 18.25) },
     }},
-
     ["uplp_ar15_hg_tacshort"] = { Bodygroups =           { { 2, 6 }, { 9, 0 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 14.285) },
-    }},   
-
+    }},
     ["uplp_ar15_hg_tacshort_red"] = { Bodygroups =           { { 2, 14 }, { 9, 0 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 14.285) },
     }},
-
     ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 }, { 9, 1 } }, AttPosMods = {
     [10] = { Pos = Vector(0.045, -0.2, 19.25) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
@@ -1282,6 +1279,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.045, -0.2, 12.8),
         Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
     },
     {
