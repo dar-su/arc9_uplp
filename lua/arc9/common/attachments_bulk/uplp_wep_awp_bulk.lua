@@ -225,6 +225,7 @@ ATT.RecoilMult = 0.8
 ATT.CycleTimeMult = 0.75
 ATT.SpeedMultShootingMult = 1.5
 ATT.Ammo = "ar2"
+ATT.ClipSize = 8
 
 -- Negatives
 ATT.DamageMax = 48
