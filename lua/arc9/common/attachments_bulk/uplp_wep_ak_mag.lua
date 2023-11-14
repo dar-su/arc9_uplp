@@ -451,8 +451,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_12")
 
 ATT = {}
 
-ATT.PrintName = "45-Round 5.45x39mm (Bakelite)"
-ATT.CompactName = "45R 5.45 (B)"
+ATT.PrintName = "40-Round 5.45x39mm (Bakelite)"
+ATT.CompactName = "40R 5.45 (B)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54545.png", "mips smooth")
@@ -496,7 +496,7 @@ ATT.RangeMaxMult = 1.2
 ATT.RangeMinMult = 1.15
 ATT.PhysBulletMuzzleVelocityMult = 1.26
 
-ATT.ClipSizeOverride = 45
+ATT.ClipSizeOverride = 40
 
 -- Negatives
 ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
