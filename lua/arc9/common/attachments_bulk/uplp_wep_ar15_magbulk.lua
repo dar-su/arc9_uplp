@@ -108,7 +108,7 @@ ATT.DropMagazineSounds = dropsound9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
-        return anim .. "_g33"
+        return anim .. "_acp20"
     end
 
     return anim .. "_45"
@@ -162,7 +162,7 @@ ATT.DropMagazineSounds = dropsound9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
-        return anim .. "_g33"
+        return anim .. "_acp40"
     end
 
     return anim .. "_45"
