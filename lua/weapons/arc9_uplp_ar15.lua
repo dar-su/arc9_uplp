@@ -455,11 +455,12 @@ SWEP.Animations = {
             -- }, t = 0 },
         -- },
     -- },
-    -- ["fire_empty_g17"] = {
-        -- Source = "fire_empty",
-        -- ShellEjectAt = 0.01,
-        -- IKTimeLine = { { t = 0, lhik = 1 } },
-        -- EventTable = {
+    ["fire_empty_g17"] = {
+        Source = "fire_empty",
+        ShellEjectAt = 0.01,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = pathUT .. "mech_last.ogg", t = 0 }
             -- { s = {
             -- shootsound9 .. "mech_01.ogg",
             -- shootsound9 .. "mech_02.ogg",
@@ -469,8 +470,8 @@ SWEP.Animations = {
             -- { s = {
             -- shootsound9 .. "punch.ogg",
             -- }, t = 0 },
-        -- },
-    -- },
+        },
+    },
 
     -- Reloads --
 
