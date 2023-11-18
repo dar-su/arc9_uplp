@@ -27,6 +27,13 @@ ATT.ModelOffset = Vector(2, 0, -1.5)
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 0.8
+ATT.RecoilRandomSideMult = 1.3
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAdd = -0.03
+ATT.SwayMultSights = 0.8
+ATT.AimDownSightsTimeAdd = -0.03
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_grenadier")
 
 
@@ -47,7 +54,10 @@ ATT.RequireElements = {"uplp_ar15_barrel_long"}
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-
+ATT.RecoilMult = 0.9
+ATT.RecoilRandomSideMult = 1.15
+ATT.SprintToFireTimeAdd = 0.03
+ATT.AimDownSightsTimeAdd = -0.02
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m16")
 
@@ -69,7 +79,9 @@ ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 ATT.Category = "uplp_ar15_hg_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-
+ATT.RecoilMult = 1.1
+ATT.SprintToFireTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = -0.02
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m16short")
 
@@ -106,6 +118,9 @@ ATT.Attachments = {
     },
 }
 
+ATT.RecoilMult = 1.15
+ATT.SprintToFireTimeAdd = -0.1
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_mlok")
 
 
@@ -131,6 +146,9 @@ ATT.ModelOffset = Vector(2, -0.05, -1.0)
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
+ATT.RecoilMult = 1.1
+ATT.SprintToFireTimeAdd = -0.06
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15")
 
 
@@ -155,6 +173,9 @@ ATT.ModelOffset = Vector(2, -0.05, -1.0)
 
 ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_ar15_gasblock_nocompact"}
 ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+ATT.RecoilMult = 1.1
+ATT.SprintToFireTimeAdd = -0.06
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_red")
 
@@ -192,6 +213,10 @@ ATT.Attachments = {
     },
 }
 
+ATT.RecoilMult = 1.2
+ATT.RecoilRandomSideMult = 0.8
+ATT.SprintToFireTimeAdd = -0.05
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl")
 
 
@@ -228,6 +253,10 @@ ATT.Attachments = {
     },
 }
 
+ATT.RecoilMult = 1.2
+ATT.RecoilRandomSideMult = 0.8
+ATT.SprintToFireTimeAdd = -0.05
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_nwsu_s15_xl_red")
 
 
@@ -258,6 +287,9 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1.5),
     },
 }
+
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_ris")
 
@@ -302,6 +334,10 @@ ATT.Attachments = {
     },
 }
 
+ATT.RecoilMult = 1.1
+ATT.RecoilRandomSideMult = 0.85
+ATT.SprintToFireTimeAdd = -0.05
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac")
 
 
@@ -345,6 +381,10 @@ ATT.Attachments = {
     },
 }
 
+ATT.RecoilMult = 1.1
+ATT.RecoilRandomSideMult = 0.85
+ATT.SprintToFireTimeAdd = -0.05
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tac_red")
 
 
@@ -380,6 +420,9 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
 }
+
+ATT.SprintToFireTimeAdd = -0.05
+ATT.AimDownSightsTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort")
 
@@ -417,6 +460,9 @@ ATT.Attachments = {
     },
 }
 
+ATT.SprintToFireTimeAdd = -0.05
+ATT.AimDownSightsTimeAdd = 0.03
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_tacshort_red")
 
 
@@ -442,7 +488,10 @@ ATT.ModelOffset = Vector(2, 0, -1.5)
 ATT.Category = "uplp_ar15_hg_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-
+ATT.RecoilMult = 0.9
+ATT.RecoilRandomSideMult = 1.1
+ATT.SprintToFireTimeAdd = 0.03
+ATT.AimDownSightsTimeAdd = -0.01
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_a1")
 
