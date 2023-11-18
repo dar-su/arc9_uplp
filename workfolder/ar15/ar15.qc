@@ -182,8 +182,6 @@ $sequence "fire_empty" {
 
 $sequence "ready" {
 	"anims\ready_alt.smd"
-	"anims\ready_iron_alt.smd"
- 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap

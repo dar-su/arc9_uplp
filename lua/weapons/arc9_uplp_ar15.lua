@@ -1268,7 +1268,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_hg", "uplp_ar15_hg_mid", "uplp_ar15_hg_long"},
         DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.045, 0.8, 7.703),
+        Pos = Vector(0.2, 1, 7.703),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, 0),
     },
