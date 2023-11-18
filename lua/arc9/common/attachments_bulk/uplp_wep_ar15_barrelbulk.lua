@@ -70,8 +70,8 @@ ATT.RecoilMult = 0.925
 -- Negatives
 ATT.SpreadAddHipFire = 0.0015 + 0.0015
 ATT.SpreadAddRecoil = 0.0015
-ATT.AimDownSightsTimeAdd = 0.01
-ATT.SprintToFireTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = 0.01*2
+ATT.SprintToFireTimeAdd = 0.02*2
 ATT.SpeedMultSights = 0.95
 ATT.RPMAdd = -25
 
@@ -106,8 +106,8 @@ ATT.RecoilMult = 0.85
 -- Negatives
 ATT.SpreadAddHipFire = 0.003 + 0.003
 ATT.SpreadAddRecoil = 0.003 * 0.75
-ATT.AimDownSightsTimeAdd = 0.02
-ATT.SprintToFireTimeAdd = 0.03
+ATT.AimDownSightsTimeAdd = 0.02*2
+ATT.SprintToFireTimeAdd = 0.03*2
 ATT.SpeedMultSights = 0.9
 ATT.RPMAdd = -50
 
@@ -180,8 +180,8 @@ ATT.RecoilMult = 0.8
 -- Negatives
 ATT.SpreadAddHipFire = 0.004 + 0.005
 ATT.SpreadAddRecoil = 0.004 * 0.5
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.04
+ATT.AimDownSightsTimeAdd = 0.03*2
+ATT.SprintToFireTimeAdd = 0.04*2
 ATT.SpeedMultSights = 0.85
 ATT.RPMAdd = -100
 
@@ -216,8 +216,8 @@ ATT.RecoilMult = 0.7
 -- Negatives
 ATT.SpreadAddHipFire = 0.006 + 0.01
 ATT.SpreadAddRecoil = 0.006 * 0.25
-ATT.AimDownSightsTimeAdd = 0.04
-ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.04*2
+ATT.SprintToFireTimeAdd = 0.05*2
 ATT.SpeedMultSights = 0.8
 ATT.RPMAdd = -150
 
