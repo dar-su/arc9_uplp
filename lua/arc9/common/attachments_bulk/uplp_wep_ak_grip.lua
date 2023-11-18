@@ -222,13 +222,8 @@ ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
 ATT.ModelBodygroups = "8"
 ATT.ModelOffset = Vector(-11, -3.55, 7.85)
 
--- Positives
-ATT.RecoilAutoControlMult = 1.15
-ATT.AimDownSightsTimeMult = 0.9
-
--- Negatives
-ATT.RecoilMult = 1.05
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeAdd = -0.01
+ATT.SprintToFireTimeAdd = 0.01
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_12evo")
 
