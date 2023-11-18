@@ -51,7 +51,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_trigger_auto"}
 
-ATT.RPMMult = 1.12
+ATT.RPMMult = 1.35
 ATT.Firemodes = { { Mode = -1 } }
 
 ATT.RecoilMult = 2

@@ -170,7 +170,7 @@ SWEP.AimDownSightsTime = 0.2
 SWEP.SprintToFireTime = 0.18
 
 -- Shooting and Firemodes
-SWEP.RPM = 550 -- How fast gun shoot
+SWEP.RPM = 400 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
