@@ -65,6 +65,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_rail","use_optics"}
 
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SwayMultSights = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_rail")
 
@@ -100,6 +102,11 @@ ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
+ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = -0.01
+ATT.SpeedAddSights = 0.05
+ATT.SwayMultSights = 1.1
+
 ATT.ActivateElements = {"uplp_ak_dc_azen","use_optics"}
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_azen")
@@ -118,6 +125,11 @@ ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_beryl","use_optics"}
+
+ATT.SprintToFireTimeAdd = 0.1
+ATT.RecoilMult = 0.95
+ATT.SpeedAddSights = -0.05
+ATT.AimDownSightsTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_beryl")
 
@@ -222,6 +234,9 @@ ATT.Model = "models/weapons/arc9/uplp/dovetail_mount.mdl"
 ATT.Category = "uplp_optic_dovetail"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SwayMultSights = 0.9
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_rail")
 
 ---------- uplp_ak_dovetail_rail_c
@@ -241,6 +256,9 @@ ATT.Model = "models/weapons/arc9/uplp/dovetail_mount_compact.mdl"
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.Category = "uplp_optic_dovetail_compact" -- bleh, useless
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SwayMultSights = 0.9
 
 ATT.Attachments = {
     {
