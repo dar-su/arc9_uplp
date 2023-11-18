@@ -566,6 +566,7 @@ SWEP.Animations = {
     ["reload_l"] = {
         Source = "reload_l",
         MinProgress = 0.65,
+        Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -588,6 +589,7 @@ SWEP.Animations = {
     ["reload_empty_l"] = {
         Source = "reload_empty_l",
         MinProgress = 0.65,
+        Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -612,6 +614,7 @@ SWEP.Animations = {
     ["reload_60"] = {
         Source = "reload_l60",
         MinProgress = 0.65,
+        Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -634,6 +637,7 @@ SWEP.Animations = {
     ["reload_empty_60"] = {
         Source = "reload_empty_l60",
         MinProgress = 0.65,
+        Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -658,6 +662,7 @@ SWEP.Animations = {
     ["reload_100"] = {
         Source = "reload_drum",
         MinProgress = 0.65,
+        Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -681,6 +686,7 @@ SWEP.Animations = {
     ["reload_empty_100"] = {
         Source = "reload_empty_drum",
         MinProgress = 0.65,
+        Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },

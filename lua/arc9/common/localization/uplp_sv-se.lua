@@ -842,9 +842,9 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45x39mm (M23-Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-patronersmagasin som används på AK M23-geväret." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "45-Patroner 5,45x39mm (Bakelite)"
-L["uplp_ak_mag_545_45.compactname"] = "45P 5,45 (B)"
-L["uplp_ak_mag_545_45.description"] = "45-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "40-Patroner 5,45x39mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "40P 5,45 (B)"
+L["uplp_ak_mag_545_45.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
 L["uplp_ak_mag_545_60.printname"] = "52-Patroner 5,45x39mm Quadstack"
 L["uplp_ak_mag_545_60.compactname"] = "52P 5,45 (Q)"
@@ -1688,7 +1688,7 @@ L["uplp_awp_mag_awp_big.description"] = "Förstorat 8-patronersmagasin laddat me
 
 L["uplp_awp_mag_awp_tac.printname"] = "5-Patroner 6.5mm"
 L["uplp_awp_mag_awp_tac.compactname"] = "5P 6.5mm"
-L["uplp_awp_mag_awp_tac.description"] = "Standard 5-patronersmagasin laddat med 6.5mm ammunition.\nEn patron med utmärkt kort till medeldistans räckvidd prestanda."
+L["uplp_awp_mag_awp_tac.description"] = "Standard 5-patronersmagasin laddat med 6.5mm ammunition.\nEn patron som ger full potentiell prestanda på räckvidd mellan 50 till 100 meter."
 
 ////// Stocks
 L["uplp_awp_stock_at.printname"] = "Vikbar Moderniserad Kolv"

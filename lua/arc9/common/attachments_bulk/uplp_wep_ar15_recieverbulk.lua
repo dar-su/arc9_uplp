@@ -54,6 +54,12 @@ ATT.Icon = Material(iconfolder .. "rectac.png", "mips smooth")
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern")
 
 
@@ -71,6 +77,12 @@ ATT.Icon = Material(iconfolder .. "rectacb.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_black")
 
@@ -91,6 +103,12 @@ ATT.Icon = Material(iconfolder .. "recstm.png", "mips smooth")
 ATT.Category = "uplp_ar15_reciever_smg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_smg")
 
 
@@ -109,5 +127,11 @@ ATT.Icon = Material(iconfolder .. "recstmb.png", "mips smooth")
 
 ATT.Category = "uplp_ar15_reciever_smg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 1.1
+ATT.RecoilAutoControlMult = 0.95
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_black_smg")

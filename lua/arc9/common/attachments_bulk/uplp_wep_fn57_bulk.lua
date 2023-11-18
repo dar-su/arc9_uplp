@@ -51,7 +51,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_trigger_auto"}
 
-ATT.RPMMult = 1.12
+ATT.RPMMult = 1.35
 ATT.Firemodes = { { Mode = -1 } }
 
 ATT.RecoilMult = 2
@@ -59,8 +59,8 @@ ATT.RecoilSideMult = 2
 ATT.SpreadAddRecoil = 0.025
 ATT.DeployTimeMult = 1.33
 ATT.SpreadAdd = 0.01
-ATT.DamageMax = 32 -- balanced >w<
-ATT.DamageMin = 18
+-- ATT.DamageMax = 24 -- balanced >w<
+-- ATT.DamageMin = 13
 ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }

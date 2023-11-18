@@ -193,7 +193,12 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_12"}
 
--- TODO stats
+-- Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.05
+ATT.RecoilRandomSideMult = 0.6
+ATT.SpreadAddRecoil = -0.01
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_12")
 
@@ -219,7 +224,11 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_19"}
 
--- TODO stats
+-- Positives
+ATT.RecoilMult = 0.9
+ATT.RecoilRandomSideMult = 0.85
+ATT.SpreadAddRecoil = -0.015
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_19")
 
@@ -245,7 +254,9 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_rpk16"}
 
--- TODO stats
+-- Positives
+ATT.RecoilMult = 0.85
+ATT.SpreadAddRecoil = -0.01
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_rpk16")
 

@@ -117,6 +117,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_molot_brl_mini", "uplp_molot_brl_micro"}
 
+ATT.AimDownSightsTimeAdd = 0.02
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -172,6 +174,12 @@ ATT.Icon = Material(iconfolder .. "hg/zen.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.SprintToFireTimeAdd = 0.1
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.RecoilMult = 0.96
+ATT.SpeedAddSights = -0.05
+ATT.SwayMultSights = 1.25
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -202,6 +210,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "hg/zenc.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.SprintToFireTimeAdd = -0.01
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.RecoilMult = 1.03
 
 ATT.Attachments = {
     {
@@ -234,6 +246,11 @@ ATT.Icon = Material(iconfolder .. "hg/tac.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.02
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -264,6 +281,11 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "hg/tacb.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.02
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
 
 ATT.Attachments = {
     {
@@ -296,6 +318,11 @@ ATT.Icon = Material(iconfolder .. "hg/tacw.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.02
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -327,6 +354,12 @@ ATT.Icon = Material(iconfolder .. "hg/cool.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.05
+ATT.RecoilMult = 1.15
+ATT.RecoilAutoControlMult = 0.9
+ATT.SwayMultSights = 1.35
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -349,6 +382,12 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "hg/cool2.png", "mips smooth")
 ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.02
+ATT.RecoilMult = 1.05
+ATT.RecoilAutoControlMult = 0.95
+ATT.SwayMultSights = 1.25
 
 ATT.Attachments = {
     {

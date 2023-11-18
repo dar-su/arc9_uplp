@@ -842,9 +842,9 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45x39mm (M23 Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-round magazine used on AK M23 rifle." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "45-Round 5.45x39mm (Bakelite)"
-L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
-L["uplp_ak_mag_545_45.description"] = "45-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "40-Round 5.45x39mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (B)"
+L["uplp_ak_mag_545_45.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
 L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45x39mm Quadstacked"
 L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"

@@ -108,8 +108,8 @@ ATT.RecoilMult = 0.95
 ATT.RecoilAutoControlMult = 1.05
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.01
-ATT.SprintToFireTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_psg")
 
