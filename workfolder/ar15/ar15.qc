@@ -426,7 +426,7 @@ $sequence "reload_emptyg50" {
 
 $sequence "reloadacp20" {
 	"anims\reloadacp20.smd"
-	"anims\reload_irong17.smd"
+	"anims\reload_ironacp20.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -435,7 +435,7 @@ $sequence "reloadacp20" {
 
 $sequence "reload_emptyacp20" {
 	"anims\reload_emptyacp20.smd"
-	"anims\reload_empty_irong17.smd"
+	"anims\reload_empty_ironacp20.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -443,7 +443,7 @@ $sequence "reload_emptyacp20" {
 }
 $sequence "reloadacp40" {
 	"anims\reloadacp40.smd"
-	"anims\reload_irong33.smd"
+	"anims\reload_ironacp40.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -452,7 +452,7 @@ $sequence "reloadacp40" {
 
 $sequence "reload_emptyacp40" {
 	"anims\reload_emptyacp40.smd"
-	"anims\reload_empty_irong33.smd"
+	"anims\reload_empty_ironacp40.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
