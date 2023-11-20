@@ -62,6 +62,7 @@ ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedMultSights = 1.08
 ATT.RPMAdd = 25
+ATT.BarrelLengthAdd = -5
 
 -- Negatives
 ATT.RecoilMult = 1.15
@@ -122,6 +123,7 @@ ATT.RPMAdd = -50
 ATT.SpreadAddHipFire = 0.005
 ATT.SpreadAddRecoil = 0.002
 ATT.RecoilMult = 0.75
+ATT.BarrelLengthAdd = 7
 
 ATT.SpeedMultSights = 0.85
 
@@ -177,6 +179,7 @@ ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.02
 ATT.SpeedMultSights = 0.85
 ATT.SpeedMultShooting = 0.9
+ATT.BarrelLengthAdd = 2
 
 
 --[[
@@ -214,6 +217,7 @@ ATT.AimDownSightsTimeAdd = -0.04
 ATT.SprintToFireTimeAdd = -0.05
 ATT.SpeedMultSights = 1.12
 ATT.RPMAdd = 50
+ATT.BarrelLengthAdd = -10
 
 -- Negatives
 ATT.RecoilMult = 1.25
@@ -298,6 +302,7 @@ ATT.AimDownSightsTimeAdd = -0.04
 ATT.SprintToFireTimeAdd = -0.06
 ATT.SpeedMultSights = 1.15
 ATT.RPMAdd = 50
+ATT.BarrelLengthAdd = -3
 
 -- Negatives
 ATT.RecoilMult = 1.3
@@ -336,6 +341,7 @@ ATT.SprintToFireTimeAdd = 0.01
 ATT.SpreadAddHipFire = 0.002
 ATT.SpreadAddRecoil = 0.001
 ATT.SpeedMultSights = 0.9
+ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_19")
 
@@ -368,6 +374,7 @@ ATT.SpreadAddHipFire = 0.005
 ATT.SpreadAddRecoil = 0.002
 ATT.RecoilMult = 0.75
 ATT.SpeedMultSights = 0.85
+ATT.BarrelLengthAdd = 5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk16")
 

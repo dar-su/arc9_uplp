@@ -38,7 +38,8 @@ SWEP.Credits = {
 SWEP.StandardPresets = {
 "[416]XQAAAQDhAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ34UCCQs9Ta/xSvCyxLNexALqfMtZlGexYMeO6aD0MAhCTvhwLcFp8zKgw+wsMqND7gRoeyCXrZ5xSq+/BTgcKYAybtebsmG6MTWFpxJkoIkXFkrEv9M6rNR8utqvr1JssjAb1Zmr/Ndi+UZsyjJL7yPA==",
 "[A1]XQAAAQDrAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC2iSHCJwrlAYaf/YT16tmwSbV6q6mxsRLbYxxlBSyemA555/Ceaq0hOnyryDtInKwEDAv9pYiPhtDf25wfn3gDXWA80GyNmbQfGCpxVDaI/BpO6enUt7q1YTtwbPJuwCmqn5cEBQV2EzhDZtkQ7y2qE9WYBXbc6UNtDfK4ojZ0ihrZWi9GdTPyzr7/8OFiNGZGx+uIA==",
-"[Sport]XQAAAQCOAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6t+gfb2u7phOPKfC+2nR0SGxNhMV7j379gITOgT9sIVIYX/mxsAcZmcg6zaeJSsbQIpy/uQLAMMMqOfkkWLOH/rOvnXU9M4sxtkFlFwnU4Eb/mN20bviFPzHYOpi9KvmoRGgkKMjslXd4hkVvEUN/DbFk9Lw1s6wW/+7OilH7Al0LKzW+DTmhjgEoES2tEoqezRuHFkNypCloPk8JmQUTDGFXtgu0z5lwrPXXMbmzPq+K6fM40hFblI83nsGt8Glggwir8JwA="
+"[Sport]XQAAAQCOAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6t+gfb2u7phOPKfC+2nR0SGxNhMV7j379gITOgT9sIVIYX/mxsAcZmcg6zaeJSsbQIpy/uQLAMMMqOfkkWLOH/rOvnXU9M4sxtkFlFwnU4Eb/mN20bviFPzHYOpi9KvmoRGgkKMjslXd4hkVvEUN/DbFk9Lw1s6wW/+7OilH7Al0LKzW+DTmhjgEoES2tEoqezRuHFkNypCloPk8JmQUTDGFXtgu0z5lwrPXXMbmzPq+K6fM40hFblI83nsGt8Glggwir8JwA=",
+"[Hoki]XQAAAQB3AgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT/ifQCK5SlTJbmAAaseaElv0CNCKUvsQ07KKZJjS8KiExsKyKudoesLVmckFB3KspRgzmKGU44iCbs9m1oiSHeDBaslK9ojOdpmkzpAq9e8m8IsFPz4kt9TkvyYPksMdUr8fa2NA4E5o1KTYpsxMDvNLJjB7mdu067NhJayvfLq6VczghryaK2VyQWGebVX+9a4toEZYMOlKZWO5l7zxxZi1hcUCmIGwxZSmQ7Dg8f+uuhYyE1LtqiOPnvGD7PUxz6Hyn//qSyhK/DwKvxeqOFAA=="
 }
 
 SWEP.DefaultBodygroups = "0011000000000000" -- Might as well prepare for the future
@@ -164,6 +165,7 @@ SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
+SWEP.BarrelLength = 35
 
 -- Shooting and Firemodes
 SWEP.RPM = 800 -- How fast gun shoot
@@ -1454,9 +1456,9 @@ SWEP.Attachments = {
 
 
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- def A sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_1.mdl",
-        ExcludeElements = {"modrecsticker"},
+        ExcludeElements = {"modrecsticker", "ar9sticker"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 3, 4),
@@ -1464,7 +1466,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- modrec A sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_1.mdl",
         RequireElements = {"modrecsticker"},
         Category = "stickers",
@@ -1473,7 +1475,17 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- arsmg9 A sticker
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_9rec_1.mdl",
+        RequireElements = {"ar9sticker"},
+        ExcludeElements = {"modrecsticker"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3, 4),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B", -- def B sticker (works for every variant)
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_2.mdl",
         Category = "stickers",
         Bone = "body",
@@ -1481,7 +1493,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C", -- modrec C sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_2.mdl",
         RequireElements = {"modrecsticker"},
         ExcludeElements = {"uplp_ar15_reciever_stm9"},
@@ -1491,9 +1503,9 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C", -- arsmg9 + modrec C sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_stmrec_2.mdl",
-        RequireElements = {"uplp_ar15_reciever_stm9"},
+        RequireElements = {"uplp_ar15_reciever_stm9", "modrecsticker"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 3, 4),

@@ -30,7 +30,6 @@ ATT.MuzzleDevice = true
 
 ATT.RecoilUpMult = 0.85
 ATT.RecoilSideMult = 1.2
-ATT.BarrelLengthAdd = 2
 
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_3h")
@@ -62,8 +61,6 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
 
-ATT.BarrelLengthAdd = 2
-
 ARC9.LoadAttachment(ATT, "uplp_muzzle_cage")
 
 
@@ -94,7 +91,7 @@ ATT.MuzzleDevice = true
 ATT.RecoilRandomUpMult = 0.9
 ATT.RecoilRandomSideMult = 0.9
 
-ATT.BarrelLengthAdd = 3
+ATT.BarrelLengthAdd = 1
 ATT.SpeedMultSights = 0.95
 
 
@@ -129,7 +126,6 @@ ATT.NoFlash = true
 
 ATT.SpreadMult = 1.12
 ATT.RecoilMult = 0.95
-ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_fhider")
 
@@ -164,7 +160,6 @@ ATT.MuzzleDevice = true
 
 ATT.RecoilUpMult = 1.2
 ATT.RecoilSideMult = 0.85
-ATT.BarrelLengthAdd = 2
 
 -- TODO Stats
 
@@ -192,7 +187,7 @@ ATT.SpreadAdd = -0.01
 -- Negatives
 ATT.RecoilMult = 1.15
 ATT.RecoilRandomSideMult = 1.25
-ATT.BarrelLengthAdd = 2
+ATT.BarrelLengthAdd = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_choke")
 
@@ -214,7 +209,7 @@ ATT.MuzzleDevice = true
 ATT.RecoilSideMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.03
-ATT.BarrelLengthAdd = 3
+ATT.BarrelLengthAdd = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
 
@@ -236,7 +231,7 @@ ATT.MuzzleDevice = true
 ATT.RecoilSideMult = 0.75
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.04
-ATT.BarrelLengthAdd = 5
+ATT.BarrelLengthAdd = 2.5
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
 
@@ -261,7 +256,7 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-ATT.BarrelLengthAdd = 6
+ATT.BarrelLengthAdd = 3
 ATT.ShootVolumeMult = 0.85
 
 ATT.RecoilMult = 1.15
@@ -296,7 +291,7 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-ATT.BarrelLengthAdd = 8
+ATT.BarrelLengthAdd = 3
 ATT.ShootVolumeMult = 0.75
 
 ATT.RecoilMult = 0.9
@@ -339,7 +334,6 @@ ATT.MuzzleDevice = true
 ATT.RecoilUpMult = 1.25
 ATT.RecoilSideMult = 0.7
 
-ATT.BarrelLengthAdd = 3
 ATT.AimDownSightsTimeAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_brake")
@@ -377,7 +371,7 @@ ATT.CustomPros = {
 
 ATT.ShootVolumeMult = 0.75
 
-ATT.BarrelLengthAdd = 6
+ATT.BarrelLengthAdd = 3
 ATT.SpreadMult = 1.1
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
@@ -417,7 +411,7 @@ ATT.CustomPros = {
 
 ATT.ShootVolumeMult = 0.7
 
-ATT.BarrelLengthAdd = 8
+ATT.BarrelLengthAdd = 4
 ATT.RangeMaxMult = 0.85
 ATT.RecoilMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.04
@@ -458,7 +452,7 @@ ATT.CustomPros = {
 }
 
 ATT.ShootVolumeMult = 0.8
-ATT.BarrelLengthAdd = 6
+ATT.BarrelLengthAdd = 3
 ATT.RecoilRandomSideMult = 1.2
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.01
@@ -498,7 +492,7 @@ ATT.CustomPros = {
 
 ATT.ShootVolumeMult = 0.75
 
-ATT.BarrelLengthAdd = 6
+ATT.BarrelLengthAdd = 3
 ATT.RangeMaxMult = 0.9
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
@@ -538,7 +532,7 @@ ATT.CustomPros = {
 
 ATT.ShootVolumeMult = 0.75
 
-ATT.BarrelLengthAdd = 6
+ATT.BarrelLengthAdd = 2.5
 ATT.RangeMinMult = 0.5
 ATT.SpreadMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.02
@@ -575,7 +569,7 @@ ATT.MuzzleDevice = true
 
 ATT.ShootVolumeMult = 0.8
 
-ATT.BarrelLengthAdd = 4
+ATT.BarrelLengthAdd = 2
 ATT.RangeMaxMult = 0.75
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.01

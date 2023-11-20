@@ -94,7 +94,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 
 ATT.Folder = ".45 ACP"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16", "uplp_ar15_rs"}
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_rs", "canshortstock"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
@@ -148,7 +148,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 
 ATT.Folder = ".45 ACP"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16", "uplp_ar15_rs"}
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_rs", "canshortstock"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
@@ -234,7 +234,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag17.mdl"
 
 ATT.Folder = "9x19mm"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "canshortstock", "ar9sticker"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
@@ -306,7 +306,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag33.mdl"
 
 ATT.Folder = "9x19mm"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "canshortstock", "ar9sticker"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
@@ -377,7 +377,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_glockmag50.mdl"
 
 ATT.Folder = "9x19mm"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "modrecsticker"}
+ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "canshortstock", "ar9sticker"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 

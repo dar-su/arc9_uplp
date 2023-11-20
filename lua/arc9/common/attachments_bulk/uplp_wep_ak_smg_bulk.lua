@@ -108,6 +108,13 @@ ATT.Attachments = {
         Hidden = true,
         ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Pos = Vector(-6, 0.95, -3.66),
+        Ang = Angle(0, 0, 90),
+        ExcludeElements = {"uplp_no_tactical", "uplp_ak_smg_conf_ppk20"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_bizon")
@@ -169,6 +176,13 @@ ATT.Attachments = {
         Hidden = true,
         ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Pos = Vector(-6, 0.95, -3.66),
+        Ang = Angle(0, 0, 90),
+        ExcludeElements = {"uplp_no_tactical", "uplp_ak_smg_conf_ppk20"},
+    },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_bizon_old")
@@ -194,6 +208,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.1
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
+ATT.BarrelLengthAdd = 5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_long")
 
@@ -228,6 +243,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.1
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
+ATT.BarrelLengthAdd = 5
 
 ATT.ActivateElements = {
 "uplp_ak_smg_brl_ppk20_long",
@@ -291,6 +307,13 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Pos = Vector(-7, 1, 0.1),
+        Ang = Angle(0, 0, 90),
+        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 

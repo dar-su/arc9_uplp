@@ -47,7 +47,7 @@ ATT = {}
 ATT.PrintName = "Hoki Armory Tactical Receiver (Sporty Red)"
 ATT.CompactName = "Hoki (SR)"
 ATT.Description = ATT.PrintName
-ATT.ActivateElements = {"modrecsticker"}
+ATT.ActivateElements = {"modrecsticker", "canshortstock"}
 
 ATT.Icon = Material(iconfolder .. "rectac.png", "mips smooth")
 
@@ -71,7 +71,7 @@ ATT = {}
 ATT.PrintName = "Hoki Armory Tactical Receiver (Pitch Black)"
 ATT.CompactName = "Hoki (PB)"
 ATT.Description = ATT.PrintName
-ATT.ActivateElements = {"modrecsticker"}
+ATT.ActivateElements = {"modrecsticker", "canshortstock"}
 
 ATT.Icon = Material(iconfolder .. "rectacb.png", "mips smooth")
 
@@ -95,8 +95,7 @@ ATT = {}
 ATT.PrintName = "Hoki Armory Tactical Receiver (Sporty Red)"
 ATT.CompactName = "Hoki (SR)"
 ATT.Description = ATT.PrintName
--- ATT.ActivateElements = {"modrecsticker"}
-ATT.ActivateElements = {"uplp_ar15_rec_smg"}
+ATT.ActivateElements = {"uplp_ar15_rec_smg", "modrecsticker"}
 
 ATT.Icon = Material(iconfolder .. "recstm.png", "mips smooth")
 
@@ -120,8 +119,7 @@ ATT = {}
 ATT.PrintName = "Hoki Armory Tactical Receiver (Pitch Black)"
 ATT.CompactName = "Hoki (PB)"
 ATT.Description = ATT.PrintName
--- ATT.ActivateElements = {"modrecsticker"}
-ATT.ActivateElements = {"uplp_ar15_rec_smg"}
+ATT.ActivateElements = {"uplp_ar15_rec_smg", "modrecsticker"}
 
 ATT.Icon = Material(iconfolder .. "recstmb.png", "mips smooth")
 

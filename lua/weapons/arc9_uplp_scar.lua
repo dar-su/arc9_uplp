@@ -160,6 +160,8 @@ SWEP.RecoilModifierCap = 1
 SWEP.SpeedMult = 0.8
 SWEP.SpeedMultSights = 0.65
 
+SWEP.BarrelLength = 40
+
 SWEP.AimDownSightsTime = 0.37
 SWEP.SprintToFireTime = 0.4
 

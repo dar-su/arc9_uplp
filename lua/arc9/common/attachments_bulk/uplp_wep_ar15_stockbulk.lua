@@ -68,6 +68,8 @@ ATT.PrintName = "PDW Stock"
 ATT.CompactName = "PDW"
 ATT.Description = ATT.PrintName
 
+ATT.RequireElements = {"canshortstock"}
+
 ATT.Icon = Material(iconfolder .. "spdw.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"

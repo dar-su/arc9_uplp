@@ -54,6 +54,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.85
 ATT.DamageMaxMult = 0.92
 -- ATT.DamageMinMult = 0.92
 -- ATT.SpeedAddSights = -0.05
+ATT.BarrelLengthAdd = -2
 
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
@@ -85,6 +86,7 @@ ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAddSights = -0.1
 ATT.SpeedAdd = -0.015
+ATT.BarrelLengthAdd = 4
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_long")
 
@@ -115,6 +117,7 @@ ATT.SpeedAdd = 0.01
 ATT.RecoilMult = 1.4
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.DamageMinMult = 0.85
+ATT.BarrelLengthAdd = -7
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 
