@@ -678,6 +678,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 ATT.ClipSizeOverride = 40
 
 -- Negatives
+ATT.SpreadAddHipFire = 0.005
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
@@ -723,6 +724,7 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.ClipSizeOverride = 52
 
 -- Negatives
+ATT.SpreadAddHipFire = 0.012
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.07
 ATT.DeployTimeMult = 1.25
@@ -775,6 +777,7 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.ClipSizeOverride = 52
 
 -- Negatives
+ATT.SpreadAddHipFire = 0.012
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.07
 ATT.DeployTimeMult = 1.25
@@ -819,6 +822,7 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.ClipSizeOverride = 90
 
 -- Negatives
+ATT.SpreadAddHipFire = 0.03
 ATT.AimDownSightsTimeAdd = 0.07
 ATT.SprintToFireTimeAdd = 0.09
 ATT.DeployTimeMult = 1.5

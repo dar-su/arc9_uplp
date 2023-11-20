@@ -21,6 +21,7 @@ SWEP.SpreadMultMove = 1
 
 SWEP.Bipod = false
 SWEP.RecoilMultBipod = 0.25
+SWEP.RecoilPerShotMultBipod = 0.75
 SWEP.SwayAddBipod = -9999 -- SwayMultBipod doesn't work for some reason
 SWEP.SpreadAddBipod = nil
 SWEP.AimDownSightsTimeMultBipod = 0.5

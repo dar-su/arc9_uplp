@@ -92,8 +92,8 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 15 / ARC9.HUToM
-SWEP.RangeMax = 120 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMax = 90 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -108,8 +108,8 @@ SWEP.ClipSize = 30
 
 -- Recoil
 SWEP.Recoil = 1 + 1
-SWEP.RecoilUp = 1.2
-SWEP.RecoilSide = 1.25
+SWEP.RecoilUp = 1.35
+SWEP.RecoilSide = 1.2
 
 SWEP.RecoilRandomUp = 1
 SWEP.RecoilRandomSide = 1

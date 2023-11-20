@@ -1,5 +1,54 @@
 local ATT = {}
 
+local stats545 = {
+
+    Ammo = "smg1",
+    MuzzleParticleOverride = "muzzleflash_ak74",
+    MuzzleParticleOverride_Priority = 1,
+    CustomPros = {
+        [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+    },
+
+    -- Positives
+    RPMAdd = 50,
+    RecoilPerShotMult = 0.9,
+    RecoilUpAdd = -0.3,
+    RangeMinAdd = 5 / ARC9.HUToM,
+    RangeMaxAdd = 30 / ARC9.HUToM,
+    PhysBulletMuzzleVelocityMult = 1.25,
+
+    -- Negatives
+    Spread = 0.005,
+    DamageMaxAdd = -6, -- from 34
+    DamageMinAdd = -5, -- from 18
+}
+
+
+local stats556 = {
+
+    Ammo = "smg1",
+    MuzzleParticleOverride = "muzzleflash_ak74",
+    MuzzleParticleOverride_Priority = 1,
+    CustomPros = {
+        [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+    },
+
+    -- Positives
+    RPMAdd = 50, -- The AK-101 (5.56mm) curiously still has a cyclic rate of 600RPM
+    RecoilPerShotMult = 0.85,
+    RecoilUpAdd = -0.35,
+    RecoilSideAdd = -0.1,
+    RangeMinAdd = 15 / ARC9.HUToM,
+    RangeMaxAdd = 40 / ARC9.HUToM,
+    PhysBulletMuzzleVelocityMult = 1.3,
+
+    -- Negatives
+    DamageMaxAdd = -8, -- from 34
+    DamageMinAdd = -4, -- from 18
+}
+
+
+
 ----- 7.62 MAGS -----
 
 local iconfolder = "entities/uplp_attachements/ak/mag/"
@@ -113,8 +162,12 @@ ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 ATT.ClipSizeOverride = 40
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.05
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
 ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40")
@@ -144,8 +197,12 @@ ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 ATT.ClipSizeOverride = 40
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.05
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
 ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40_old")
@@ -181,12 +238,16 @@ ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
 -- Positives
 ATT.ClipSizeOverride = 75
-ATT.RecoilMult = 0.95
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.15
-ATT.ReloadTimeMult = 1.1
+ATT.SpreadAddHipFire = 0.03
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.09
+ATT.DeployTimeMult = 1.5
+ATT.SwayAddSights = 0.3
+ATT.SwayMultSights = 1.4
+ATT.SpeedAdd = -0.05
+ATT.SpeedMultSights = 0.65
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 
@@ -263,25 +324,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
-ATT.Ammo = "smg1"
-
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
+table.Merge(ATT, stats545)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30")
 
@@ -317,25 +360,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
-
+table.Merge(ATT, stats545)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_bak")
 
@@ -371,25 +396,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
-
+table.Merge(ATT, stats545)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_pmag")
 
@@ -425,25 +432,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_545"
 end
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
-
+table.Merge(ATT, stats545)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_12")
 
@@ -481,30 +470,17 @@ end
 
 ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
+table.Merge(ATT, stats545)
 
 ATT.ClipSizeOverride = 40
 
--- Negatives
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
-
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
 ATT.ReloadTimeMult = 1.05
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
@@ -542,30 +518,20 @@ end
 
 ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
+table.Merge(ATT, stats545)
 
 -- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.75
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
 ATT.ClipSizeOverride = 52
 
 -- Negatives
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
-
-ATT.ReloadTimeMult = 1.1
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.1
+ATT.SpreadAddHipFire = 0.012
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.15
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_60")
 
@@ -610,29 +576,20 @@ end
 
 ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
+table.Merge(ATT, stats545)
 
 -- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.7
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
 ATT.ClipSizeOverride = 85
 
 -- Negatives
-ATT.ReloadTimeMult = 1.1
-ATT.DamageMax = 33 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 17 / 1.25 -- Damage dealt after maximum range
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.15
+ATT.SpreadAddHipFire = 0.03
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.09
+ATT.DeployTimeMult = 1.5
+ATT.SwayAddSights = 0.3
+ATT.SwayMultSights = 1.4
+ATT.SpeedAdd = -0.05
+ATT.SpeedMultSights = 0.65
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 
@@ -687,25 +644,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_556"
 end
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.65
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 11 / 1.25 -- Damage dealt after maximum range
-
+table.Merge(ATT, stats556)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30")
 
@@ -745,20 +684,7 @@ ATT.Ammo = "smg1"
 ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.65
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 11 / 1.25 -- Damage dealt after maximum range
+table.Merge(ATT, stats556)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_pmag")
 
@@ -794,24 +720,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_556"
 end
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_ak74"
-ATT.MuzzleParticleOverride_Priority = 1
-
-ATT.CustomPros = {
-[	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
-}
-
--- Positives
-ATT.RPMAdd = 50
-ATT.RecoilMult = 0.65
-ATT.PhysBulletMuzzleVelocityMult = 1.26
-
--- Negatives
-ATT.RangeMaxMult = 0.9
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 32 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 11 / 1.25 -- Damage dealt after maximum range
+table.Merge(ATT, stats556)
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_12")
 
@@ -880,34 +789,37 @@ ATT.MuzzleParticleOverride_Priority = 1
 ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
-ATT.CustomCons = {
-[	"DAMAGE IN FULL-AUTO"	] = "-30%",
-}
 
 -- Positives
-ATT.DamageMax = 70 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 30 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.75
+ATT.SpreadAdd = -0.002
+ATT.DamageMaxAdd = 11
+ATT.DamageMinAdd = 4
 
-ATT.RangeMin = 10 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 160 * 39.37 -- How far in M the bullets need to go to deal DamageMin
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 60 / ARC9.HUToM
 
 ATT.PhysBulletMuzzleVelocityMult = 1.119
 
 -- Negatives
-ATT.RecoilMult = 1.2
+ATT.RecoilUpAdd = 0.2
+ATT.RecoilSideAdd = 0.3
+ATT.ChestDamageMult = 0.9
+ATT.HeadshotDamageMult = 0.75
+
 ATT.RPMAdd = -100
 ATT.ClipSizeOverride = 20
+
+ATT.RecoilDissipationRateMult = 0.667
+ATT.RecoilPerShotMult = 2
+ATT.RecoilAddRecoil = 1
+
 ATT.ReloadTimeMult = 1.15
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 400,
     PoseParam = 1 },
     { Mode = -1, -- Full
-    PoseParam = 2,
-    DamageMaxMult = 0.7,
-    DamageMinMult = 0.7 }
+    PoseParam = 2, },
 }
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
@@ -988,15 +900,15 @@ ATT.CustomPros = {
 }
 
 -- Positives
-ATT.RecoilMult = 0.6
+ATT.DamageMaxAdd = 4
 ATT.RPMAdd = 150
-
-ATT.RangeMaxMult = 0.25
-ATT.RangeMinMult = 0.45
+ATT.RecoilPerShotMult = 1.2
+ATT.RecoilMult = 0.667
 
 -- Negatives
-ATT.DamageMax = 42 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 10 / 1.25 -- Damage dealt after maximum range
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.DamageMinAdd = -6
 ATT.ClipSizeOverride = 20
 ATT.PhysBulletMuzzleVelocityMult = 0.45
 
