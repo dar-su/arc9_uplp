@@ -94,7 +94,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp20.mdl"
 
 ATT.Folder = ".45 ACP"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16"}
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16", "uplp_ar15_rs"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
@@ -148,7 +148,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_45acp40.mdl"
 
 ATT.Folder = ".45 ACP"
 
-ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16"}
+ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_reciever_m16", "uplp_ar15_rs"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
@@ -479,9 +479,10 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
--- ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedMultSights = 1.25
+ATT.SwayMultSights = 0.75
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
@@ -526,8 +527,10 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 1.1
 ATT.ReloadTimeMult = 0.95
 
 -- ATT.CustomPros = {
@@ -605,8 +608,10 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag20.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.95
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 1.1
 ATT.ReloadTimeMult = 0.95
 
 -- ATT.CustomPros = {
@@ -673,9 +678,12 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 ATT.ClipSizeOverride = 40
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.1
-ATT.DeployTimeMult = 1.05
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
+
 -- ATT.ReloadTimeMult = 1.1
 
 ATT.CustomCons = {
@@ -715,10 +723,13 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.ClipSizeOverride = 52
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.2
-ATT.DeployTimeMult = 1.2
--- ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.15
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
@@ -764,10 +775,13 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.ClipSizeOverride = 52
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.2
-ATT.DeployTimeMult = 1.2
--- ATT.ReloadTimeMult = 1.2
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.15
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
@@ -805,10 +819,13 @@ ATT.ExcludeElements = {"uplp_ar15_ammo"}
 ATT.ClipSizeOverride = 90
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.3
-ATT.SprintToFireTimeMult = 1.3
-ATT.DeployTimeMult = 1.35
--- ATT.ReloadTimeMult = 1.3
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.09
+ATT.DeployTimeMult = 1.5
+ATT.SwayAddSights = 0.3
+ATT.SwayMultSights = 1.4
+ATT.SpeedAdd = -0.05
+ATT.SpeedMultSights = 0.65
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-30%",

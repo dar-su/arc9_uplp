@@ -13,7 +13,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short"}
+ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short", "uplp_ar15_rs"}
 
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -23,13 +23,13 @@ ATT.RunawayBurst = true
 ATT.Firemodes = {
     {
         Mode = 3, -- 3bst
-        RPM = 1000,
         PoseParam = 1
     },
     {
         Mode = 1, -- Semi
-        RPM = 600,
-        PoseParam = 2
+        RPMMult = 700 / 1000,
+        PoseParam = 2,
+        PostBurstDelay = 0,
     }
 }
 -- ATT.CustomPros = {
