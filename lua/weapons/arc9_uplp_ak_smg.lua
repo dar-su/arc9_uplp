@@ -167,6 +167,7 @@ SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 SWEP.SwayAddSights = 1
+SWEP.BarrelLength = 30
 
 -- Weapon handling
 SWEP.SpeedMult = 0.95 + 0.05 -- Walk speed multiplier

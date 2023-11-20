@@ -22,6 +22,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.15
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
+ATT.BarrelLengthAdd = 3
 
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_long")
 
@@ -41,6 +42,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeMult = 0.9
+ATT.BarrelLengthAdd = -1.5
 
 -- Negatives
 ATT.RangeMaxMult = 0.8
@@ -66,6 +68,7 @@ ATT.ActivateElements = {"uplp_molot_brl_short"}
 -- Positives
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeMult = 0.9
+ATT.BarrelLengthAdd = -1.5
 
 -- Negatives
 ATT.RangeMaxMult = 0.8
@@ -91,6 +94,7 @@ ATT.ActivateElements = {"uplp_molot_brl_short"}
 -- Positives
 ATT.RecoilMult = 0.7
 ATT.AimDownSightsTimeMult = 0.85
+ATT.BarrelLengthAdd = -3
 
 -- Negatives
 ATT.RangeMaxMult = 0.8

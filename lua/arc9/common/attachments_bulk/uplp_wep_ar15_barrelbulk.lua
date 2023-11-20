@@ -74,6 +74,7 @@ ATT.AimDownSightsTimeAdd = 0.01*2
 ATT.SprintToFireTimeAdd = 0.02*2
 ATT.SpeedMultSights = 0.95
 ATT.RPMAdd = -25
+ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_14")
 
@@ -110,6 +111,7 @@ ATT.AimDownSightsTimeAdd = 0.02*2
 ATT.SprintToFireTimeAdd = 0.03*2
 ATT.SpeedMultSights = 0.9
 ATT.RPMAdd = -50
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16")
 
@@ -184,6 +186,7 @@ ATT.AimDownSightsTimeAdd = 0.03*2
 ATT.SprintToFireTimeAdd = 0.04*2
 ATT.SpeedMultSights = 0.85
 ATT.RPMAdd = -100
+ATT.BarrelLengthAdd = 4
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_20")
 
@@ -220,6 +223,7 @@ ATT.AimDownSightsTimeAdd = 0.04*2
 ATT.SprintToFireTimeAdd = 0.05*2
 ATT.SpeedMultSights = 0.8
 ATT.RPMAdd = -150
+ATT.BarrelLengthAdd = 7
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_22")

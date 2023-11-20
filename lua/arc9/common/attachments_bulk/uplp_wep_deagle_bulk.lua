@@ -159,6 +159,7 @@ ATT.AimDownSightsTimeMult = 1.35
 ATT.RecoilMult = 0.9
 ATT.RecoilSideMult = 0.65
 ATT.RecoilAutoControlMult = 1.25
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_deag_barrel_long")
 
@@ -198,6 +199,7 @@ ATT.AimDownSightsTimeMult = 1.2
 ATT.RecoilMult = 0.75
 ATT.RecoilSideMult = 1.35
 ATT.RecoilAutoControlMult = 0.8
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_deag_barrel_longtac")
 

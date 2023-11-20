@@ -208,6 +208,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.1
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
+ATT.BarrelLengthAdd = 5
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_long")
 
@@ -242,6 +243,7 @@ ATT.PhysBulletMuzzleVelocityMult = 1.1
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
+ATT.BarrelLengthAdd = 5
 
 ATT.ActivateElements = {
 "uplp_ak_smg_brl_ppk20_long",

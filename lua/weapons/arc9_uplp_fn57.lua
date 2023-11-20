@@ -166,6 +166,8 @@ SWEP.RecoilMax = 1
 SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.85 -- When aiming
 
+SWEP.BarrelLength = 24
+
 SWEP.AimDownSightsTime = 0.2
 SWEP.SprintToFireTime = 0.18
 

@@ -297,6 +297,7 @@ ATT.CustomPros = {
 
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.15
+ATT.BarrelLengthAdd = 3
 
 ATT.ActivateElements = {"uplp_ak_mz_silencer"}
 

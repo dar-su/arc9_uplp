@@ -77,6 +77,7 @@ ATT.CustomPros = {
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.RPMMult = 0.75
+ATT.BarrelLengthAdd = 5
 
 ATT.Attachments = {
     {
@@ -131,6 +132,7 @@ ATT.CustomPros = {
 ATT.AimDownSightsTimeMult = 1.2
 ATT.SprintToFireTimeMult = 1.15
 ATT.RPMMult = 0.75
+ATT.BarrelLengthAdd = 5
 
 ATT.Attachments = {
     {
@@ -171,6 +173,7 @@ ATT.LHIK_Priority = 5
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.85
 ATT.RPMMult = 1.1
+ATT.BarrelLengthAdd = -5
 
 -- Negatives
 ATT.RangeMinMult = 0.8
@@ -204,6 +207,7 @@ ATT.LHIK_Priority = 5
 ATT.AimDownSightsTimeMult = 0.9
 ATT.SprintToFireTimeMult = 0.85
 ATT.RPMMult = 1.1
+ATT.BarrelLengthAdd = -5
 
 -- Negatives
 ATT.RangeMinMult = 0.8
@@ -233,6 +237,7 @@ ATT.ActivateElements = {"uplp_scar_brl_short"}
 -- Positives
 ATT.AimDownSightsTimeMult = 0.95
 ATT.SprintToFireTimeMult = 0.9
+ATT.BarrelLengthAdd = -3
 
 -- Negatives
 ATT.RecoilMult = 1.05
@@ -294,6 +299,7 @@ ATT.RecoilMult = 0.95
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
+ATT.BarrelLengthAdd = 3
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
@@ -421,6 +427,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
+ATT.BarrelLengthAdd = -1
 
 -- Negatives
 ATT.RecoilMult = 1.1
@@ -437,6 +444,7 @@ ATT.ToggleStats = {
         -- Positives
         AimDownSightsTimeMult = 0.85 * 0.8,
         SprintToFireTimeMult = 0.9 * 0.8,
+        BarrelLengthAdd = -3,
         -- Negatives
         RecoilMult = 1.1 * 1.3,
         RecoilAutoControlMult = 0.95 * 1.3,
@@ -1121,5 +1129,6 @@ ATT.MuzzleDevice = true
 ATT.RecoilRandomUpMult = 0.85
 ATT.RecoilRandomSideMult = 0.85
 ATT.SpreadAddRecoil = 0.0008
+ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mz")
