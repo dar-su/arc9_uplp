@@ -1454,9 +1454,9 @@ SWEP.Attachments = {
 
 
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- def A sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_1.mdl",
-        ExcludeElements = {"modrecsticker"},
+        ExcludeElements = {"modrecsticker", "ar9sticker"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 3, 4),
@@ -1464,7 +1464,7 @@ SWEP.Attachments = {
     },
 
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- modrec A sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_1.mdl",
         RequireElements = {"modrecsticker"},
         Category = "stickers",
@@ -1473,7 +1473,17 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- arsmg9 A sticker
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_9rec_1.mdl",
+        RequireElements = {"ar9sticker"},
+        ExcludeElements = {"modrecsticker"},
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 3, 4),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B", -- def B sticker (works for every variant)
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_2.mdl",
         Category = "stickers",
         Bone = "body",
@@ -1481,7 +1491,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C", -- modrec C sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_2.mdl",
         RequireElements = {"modrecsticker"},
         ExcludeElements = {"uplp_ar15_reciever_stm9"},
@@ -1491,9 +1501,9 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C", -- arsmg9 + modrec C sticker
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_stmrec_2.mdl",
-        RequireElements = {"uplp_ar15_reciever_stm9"},
+        RequireElements = {"uplp_ar15_reciever_stm9", "modrecsticker"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 3, 4),
