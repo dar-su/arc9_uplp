@@ -36,10 +36,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-"[AT]XQAAAQA9AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIHQiBmeNT/SikTP/4dCNGQ8U9eLqcJ3fVZ+sTAXVj2GD4aLPxMhNi+ExDIW6gyIpJEhtUAtUks/eC2KeqrKtHd48z8H8wu/zlFsqqhPXKShd0zbBjfPh8Ktq9hwdxAUZIElEA",
-"[Magnum]XQAAAQA6AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUIBLNtTHuZG588H0Nhnam7582lSgHCE477HLh6N8sIaG/2uXYej6B3l14ZAQRsAGm1RaDvhpe5meNsAp2I31YT4XDb+/I05UW1j4nTlyK1S/s45bEdVEy0IiE6g0keAA==",
-"[eXtreme AX]XQAAAQByAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrebPYqM3T9MwNj11Oo3xmz9qqfgy6aREqxcEyc+WYgGJuvz9tFJxmFb/Q+FgEXF3RyCvQrnA0H3MTUOG2CB5swucRj29jg6RdkkzvdSINKBETqIXFFsE6k4GDMjSM1FkB8cTQuGJXxk+/ELEjh3YjDvm32UAEnHOb1f1OlruivT2+OqXTgJ12Sy9OCg=="
-
+"[Magnum]XQAAAQCEAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtQyXDt2tb27kPU2kNz0gWcjtK0gdHSnC7tL180Qw3JTrGuk1U3tPf7yZ0z/p+08TQBkjP0edVkq/dGyKDn7ifFy1U8sCKRRWSmgKaoKxof4YZSLgYmJkndFIrv7CfRFcg6iWPX9+qEHzs8Bz5V1i8xdJL0qNl3PtmQk7F7AewHVYKkg=",
+"[eXtreme AX]XQAAAQCMAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrebPYqM3T9MwNj11Oo3xmz9qqfgy6aREqxcEyc+WYgGJuwByQuj6O2P1VS9pCOhi2yg0Lws63xdIDpVSEUpvAk4s3LP3k8RxIJo+hrdyDeVcXbPXoo/tNNvFU3VZq7NM+OZjf3sIhw9ouaJLe7+h631YwFabuG0Po56z4znX5Pqw7s60KEpOU4r6z3g==",
+"[Light]XQAAAQC6AQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUC4bUVzQUINF9FgEBiF4H/vhKmMXzxBGHZWxVdNIMPa4nmrzc/Rtcm07waZKpwfteRShJNZofuWV1ztpkD/ujopQZ3L8c4Kxe5AO0hDbjMADpOVBsNv416i2WzPeh1HnBKlCefiFsLlcxj0Yx9P3gg6DHJH2OVItWGU6K9fUdsAPiQNNp25bCll2sZeOVUemc66ZpxcAE9AA=="
 }
 
 SWEP.DefaultBodygroups = "00000000" -- Might as well prepare for the future
@@ -823,7 +822,6 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.3, 1.326),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.748, 0, 0),
-        Installed = "uplp_optic_generic",
         MergeSlots = {14}, -- large optics are merged (they're not compatible with AR-15 rear iron)
         ExcludeElements = {"uplp_ar15_rs_carry"},
     },
@@ -947,6 +945,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ar15_rs_tall", "uplp_ar15_rs_short"},
         InstalledElements = {"uplp_ar15_no_rs"},
         Hidden = true,
+        Installed = "uplp_optic_generic",
     },
 
     -- Cosmetic shit
