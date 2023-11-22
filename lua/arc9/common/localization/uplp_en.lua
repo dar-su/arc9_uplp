@@ -542,7 +542,7 @@ L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive wa
 ////// Charms
 L["uplp_charm_paw.printname"] = "Poly Paw"
 L["uplp_charm_paw.compactname"] = "Poly Paw"
-L["uplp_charm_paw.description"] = "Paw.\n\nCharm included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_charm_paw.description"] = "Probably an icon of this addon :3\n\nCharm included in <color=255,163,2>Poly Arms Project</color>."
 
 L["uplp_charm_title.printname"] = "Poly Arms Project Title"
 L["uplp_charm_title.compactname"] = "PAP Title"
@@ -551,11 +551,11 @@ L["uplp_charm_title.description"] = "Possibly a reference to the addon title.\nI
 ////// Stickers
 L["uplp_sticker_paw.printname"] = "Poly Paw"
 L["uplp_sticker_paw.compactname"] = "Paw"
-L["uplp_sticker_paw.description"] = "Paw.\n\nSticker included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_sticker_paw.description"] = "Probably an icon of this addon :3\n\nSticker included in <color=255,163,2>Poly Arms Project</color>."
 
 L["uplp_sticker_pawgray.printname"] = "Poly Paw (Holo Gray)"
 L["uplp_sticker_pawgray.compactname"] = "Paw (Holo)"
-L["uplp_sticker_pawgray.description"] = "Shiny paw.\n\nSticker included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_sticker_pawgray.description"] = "ooo shiny\n\nSticker included in <color=255,163,2>Poly Arms Project</color>."
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
