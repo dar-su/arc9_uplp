@@ -126,6 +126,7 @@ L["uplp_category_charginghandle"] = "Manöverhandtag"
 L["uplp_category_charm"] = "Smycke"
 L["uplp_category_dovetail"] = "Laxstjärt"
 L["uplp_category_dustcover"] = "Dammskydd"
+L["uplp_category_extra"] = "Extras"
 L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
 L["uplp_category_handguard"] = "Handskydd"
@@ -1828,11 +1829,11 @@ L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda o
 
 L["uplp_scar_upper_pdw.printname"] = "PDW-Låda"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "Väldigt kort övre låda och handskydd som används på XAR PDW.\nKan ej utrusta <color=255,100,100>några pipor</color>.\nKan ej utrusta <color=255,100,100>100-Patroners Trumman</color>.\nKan ej utrusta <color=255,100,100>vissa framgrepp</color>."
+L["uplp_scar_upper_pdw.description"] = "Väldigt kort övre låda och handskydd som används på XAR PDW.\nKan ej utrusta <color=255,100,100>några pipor</color>.\nKan ej utrusta <color=255,100,100>90-Patroners Trumman</color>.\nKan ej utrusta <color=255,100,100>vissa framgrepp</color>."
 
 L["uplp_scar_upper_pdwb.printname"] = "PDW-Låda (Svart)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (S)"
-L["uplp_scar_upper_pdwb.description"] = "Väldigt kort svartmålad övre låda och handskydd som används på XAR PDW.\nKan ej utrusta <color=255,100,100>några pipor</color>.\nKan ej utrusta <color=255,100,100>100-Patroners Trumman</color>.\nKan ej utrusta <color=255,100,100>vissa framgrepp</color>."
+L["uplp_scar_upper_pdwb.description"] = "Väldigt kort svartmålad övre låda och handskydd som används på XAR PDW.\nKan ej utrusta <color=255,100,100>några pipor</color>.\nKan ej utrusta <color=255,100,100>90-Patroners Trumman</color>.\nKan ej utrusta <color=255,100,100>vissa framgrepp</color>."
 
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "330mm CQC-Pipa"
@@ -1883,11 +1884,11 @@ L["uplp_scar_mag_20.description"] = "10-patroners 7,62x51mm magasin till XAR."
 
 L["uplp_scar_mag_20_68.printname"] = "10-Patroner 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10P 6.8"
-L["uplp_scar_mag_20_68.description"] = "10-patronersmagasin matad med 6.8mm till XAR.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
+L["uplp_scar_mag_20_68.description"] = "10-patronersmagasin matad med 6.8mm till XAR.\nExtremt bra för strider på längre distanser.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
 
-L["uplp_scar_mag_drum.printname"] = "100-Patroner 5,56x45mm Dubbeltrumma"
-L["uplp_scar_mag_drum.compactname"] = "100P 5.56"
-L["uplp_scar_mag_drum.description"] = "100-patroners C-format trummagasin.\nKan ej utrustas med <color=255,100,100>antingen PDW-Låda</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.printname"] = "90-Patroner 5,56x45mm Dubbeltrumma"
+L["uplp_scar_mag_drum.compactname"] = "90P 5.56"
+L["uplp_scar_mag_drum.description"] = "90-Patroners C-format trummagasin. Laddning av mer än 90 patroner rekommenderas ej då det kan orsaka stopp.\nKan ej utrustas med <color=255,100,100>antingen PDW-Låda</color>." .. changeammo.smg1
 
 L["uplp_scar_mag_hk.printname"] = "30-Patroner 5,56x45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30P (416)"
@@ -1901,9 +1902,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Patroner 5,56x45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "60-Patroner 5,56x45mm Polymer Trumma"
-L["uplp_scar_mag_pmag60.compactname"] = "60P Trumma"
-L["uplp_scar_mag_pmag60.description"] = "60-patroners trummagasin gjord utav polymer av SynPoly." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "52-Patroner 5,56x45mm Polymer Trumma"
+L["uplp_scar_mag_pmag60.compactname"] = "52P Trumma"
+L["uplp_scar_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Patroner 5,56x45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30P Alum"
@@ -1913,9 +1914,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30-Patroner 5,56x45mm (Tanfärg)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30P Tanfärg"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-patronersmagasin tillverkat av aluminium med tanfärg." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "60-Patroner 5,56x45mm Quadstack"
-L["uplp_scar_mag_stanag60.compactname"] = "60P Quad"
-L["uplp_scar_mag_stanag60.description"] = "60-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "52-Patroner 5,56x45mm Quadstack"
+L["uplp_scar_mag_stanag60.compactname"] = "52P Quad"
+L["uplp_scar_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "XAR Pistolgrepp (Svart)"
@@ -1931,6 +1932,11 @@ L["uplp_scar_is.description"] = "Standard flip-up-sikte som används på XAR."
 L["uplp_scar_mz.printname"] = "XAR Mynningsbroms"
 L["uplp_scar_mz.compactname"] = "XAR MB"
 L["uplp_scar_mz.description"] = "Standard mynningsbroms till XAR."
+
+////// Extras
+L["uplp_scar_rail_ext.printname"] = "XAR Förlängd Skena"
+L["uplp_scar_rail_ext.compactname"] = "F. Skena"
+L["uplp_scar_rail_ext.description"] = "En aftermarket förlängd skena till XAR."
 
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"

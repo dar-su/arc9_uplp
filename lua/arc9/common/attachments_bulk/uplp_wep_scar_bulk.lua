@@ -214,7 +214,7 @@ ATT.RangeMinMult = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RecoilMult = 1.1
 
-ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw"}
+ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdwb")
 
@@ -1132,3 +1132,21 @@ ATT.SpreadAddRecoil = 0.0008
 ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mz")
+
+-------------------- EXTRAS
+---------- uplp_scar_rail_ext
+
+ATT = {}
+
+ATT.PrintName = "XAR Extended Rail"
+ATT.CompactName = "Ext. Rail"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "extra.png", "mips smooth")
+
+ATT.Category = "uplp_scar_extra"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_scar_rail_ext"}
+
+ARC9.LoadAttachment(ATT, "uplp_scar_rail_ext")

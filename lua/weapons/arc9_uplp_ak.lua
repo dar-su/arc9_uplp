@@ -1196,12 +1196,13 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
-        Category = {"uplp_ak_grip"},
+        Category = {"uplp_ak_grip", "uplp_ak_grip_12", "uplp_ak_grip_smg"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         RejectAttachments = {
         ["uplp_ak_grip_std"] = true,
+        ["uplp_ak_grip_12evo"] = true,
         },
         Pos = Vector(0, 5, -1),
         Ang = Angle(90, 90, 180),

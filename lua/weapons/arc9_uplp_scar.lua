@@ -879,23 +879,23 @@ SWEP.AttachmentElements = {
     [9] = { Pos = Vector(-0.06, -0.45, 10) },
     [10] = { Pos = Vector(-1.1, 1.4, 10.15) },
     [12] = { Pos = Vector(-0.06, 2.3, 9.75) },
-    [14] = { Pos = Vector(-0.06, -0.45, 11) },
-    [15] = { Pos = Vector(0.98, 1.5, 11.1) },
+    [15] = { Pos = Vector(-0.06, -0.45, 11) },
+    [16] = { Pos = Vector(0.98, 1.5, 11.1) },
     }},
 
     ["uplp_scar_brl_20"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
     [7] = { Pos = Vector(-0.06, 1.525, 26.35) },
     [9] = { Pos = Vector(-0.06, -0.45, 20.5) },
     [10] = { Pos = Vector(-1.1, 1.4, 19.5) },
-    [14] = { Pos = Vector(-0.06, -0.45, 21) },
-    [15] = { Pos = Vector(0.98, 1.5, 21.6) },
+    [15] = { Pos = Vector(-0.06, -0.45, 21) },
+    [16] = { Pos = Vector(0.98, 1.5, 21.6) },
     }},
 
     ["uplp_scar_brl_20_long"] = { Bodygroups = { { 2, 4 } }, AttPosMods = {
     [7] = { Pos = Vector(-0.06, 1.525, 30) },
     [9] = { Pos = Vector(-0.06, -0.45, 20.5) },
     [10] = { Pos = Vector(-1.1, 1.4, 19.5) },
-    [15] = { Pos = Vector(0.98, 1.5, 21.6) },
+    [16] = { Pos = Vector(0.98, 1.5, 21.6) },
     }},
 
     -- LOWER RECEIVERS
@@ -936,6 +936,8 @@ SWEP.AttachmentElements = {
     [4] = { Pos = Vector(-0.06, 3.8, 0.925) },
     }},
 
+    -- EXTRAS
+    ["uplp_scar_rail_ext"] = { Bodygroups={ { 7, 1 } } },
 
 }
 
@@ -1069,6 +1071,16 @@ SWEP.Attachments = {
         Pos = Vector(-0.06, -1.8, -1.8),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_extra"),
+        Category = {"uplp_scar_extra"},
+        -- DefaultIcon = Material(defatt2 .. "scarmag.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, -1.45, 16),
+        Ang = Angle(90, 90, 180),
+        Icon_Offset = Vector(1.5, 0, -3),
+		ExcludeElements = {"uplp_scar_brl_pdw", "uplp_scar_upper_dmr", "uplp_scar_brl_short"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),

@@ -126,6 +126,7 @@ L["uplp_category_charginghandle"] = "Charging Handle"
 L["uplp_category_charm"] = "Charm"
 L["uplp_category_dovetail"] = "Dovetail"
 L["uplp_category_dustcover"] = "Dust Cover"
+L["uplp_category_extra"] = "Extras"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Foregrip"
 L["uplp_category_handguard"] = "Handguard"
@@ -1216,7 +1217,7 @@ L["uplp_ar15_mag_glock_50.description"] = "Converts the rifle into the AR-SMG, a
 /// 5.56x45mm
 L["uplp_ar15_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
 L["uplp_ar15_mag_drum.compactname"] = "90R Drum"
-L["uplp_ar15_mag_drum.description"] = "90-Round C-shaped drum magazine."
+L["uplp_ar15_mag_drum.description"] = "90-Round C-shaped drum magazine.\nLoading more than 90 rounds is not recommeneded as it could cause jams."
 
 L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
@@ -1886,7 +1887,7 @@ L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for
 
 L["uplp_scar_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
-L["uplp_scar_mag_drum.description"] = "90-Round C-shaped drum magazine. Loading more than 52 rounds is not recommeneded as it could cause jams.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.description"] = "90-Round C-shaped drum magazine. Loading more than 90 rounds is not recommeneded as it could cause jams.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
 
 L["uplp_scar_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
@@ -1930,6 +1931,11 @@ L["uplp_scar_is.description"] = "Standard flip-up iron sights used on the XAR."
 L["uplp_scar_mz.printname"] = "XAR Muzzle Brake"
 L["uplp_scar_mz.compactname"] = "XAR MB"
 L["uplp_scar_mz.description"] = "Standard muzzle brake on the XAR."
+
+////// Extras
+L["uplp_scar_rail_ext.printname"] = "XAR Extended Rail"
+L["uplp_scar_rail_ext.compactname"] = "Ext. Rail"
+L["uplp_scar_rail_ext.description"] = "An aftermarket extended rail for the XAR."
 
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"
