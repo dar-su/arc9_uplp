@@ -542,7 +542,7 @@ L["uplp_sg_shell_yellow.description"] = "Hagelpatroner laddade med en mindre exp
 ////// Charms
 L["uplp_charm_paw.printname"] = "Poly Paw"
 L["uplp_charm_paw.compactname"] = "Poly Paw"
-L["uplp_charm_paw.description"] = "Tass.\n\nSmycke inkluderad i <color=255,163,2>Poly Arms Project</color>"
+L["uplp_charm_paw.description"] = "Förmodligen tilläggets ikon :3\n\nSmycke inkluderad i <color=255,163,2>Poly Arms Project</color>"
 
 L["uplp_charm_title.printname"] = "Poly Arms-Projektnamn"
 L["uplp_charm_title.compactname"] = "PAP Namn"
@@ -551,11 +551,11 @@ L["uplp_charm_title.description"] = "Möjligtvis en hänvisning till tilläggets
 ////// Stickers
 L["uplp_sticker_paw.printname"] = "Poly Paw"
 L["uplp_sticker_paw.compactname"] = "Poly Paw"
-L["uplp_sticker_paw.description"] = "Tass.\n\nKlistermärke inkluderad i <color=255,163,2>Poly Arms Project</color>."
+L["uplp_sticker_paw.description"] = "Förmodligen tilläggets ikon :3\n\nKlistermärke inkluderad i <color=255,163,2>Poly Arms Project</color>."
 
 L["uplp_sticker_pawgray.printname"] = "Poly Paw (Holo Grå)"
 L["uplp_sticker_pawgray.compactname"] = "Paw (Holo)"
-L["uplp_sticker_pawgray.description"] = "Glänsande tass.\n\nKlistermärke inkluderad i <color=255,163,2>Poly Arms Project</color>."
+L["uplp_sticker_pawgray.description"] = "ooo den glänser.\n\nKlistermärke inkluderad i <color=255,163,2>Poly Arms Project</color>."
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
