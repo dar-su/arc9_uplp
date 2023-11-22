@@ -30,7 +30,7 @@ ATT.MuzzleDevice = true
 
 ATT.RecoilUpMult = 0.85
 ATT.RecoilSideMult = 1.2
-
+ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_3h")
 

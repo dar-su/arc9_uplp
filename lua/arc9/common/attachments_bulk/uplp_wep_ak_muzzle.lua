@@ -20,13 +20,9 @@ ATT.MuzzleDevice = true
 
 ATT.ModelOffset = Vector(-0.125, 0, 0)
 
--- Positives
-ATT.RecoilMult = 0.95
-ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomSideMult = 0.6
-ATT.SpreadAddRecoil = -0.01
-
--- Negatives
+ATT.RecoilSideMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 2
 
 ATT.ActivateElements = {"uplp_ak_mz_std"}
 
@@ -50,13 +46,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_akm.mdl"
 -- ATT.MuzzleDevice = true
 
--- Positives
-ATT.RecoilMult = 0.85
-ATT.RecoilAutoControlMult = 1.05
-ATT.VisualRecoilMult = 0.85
-ATT.SpreadAddRecoil = -0.01
-
--- Negatives
+ATT.RecoilUpMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 1
 
 ATT.ActivateElements = {"uplp_ak_mz_akm"}
 
@@ -82,12 +74,10 @@ ATT.MuzzleDevice = true
 
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
--- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilRandomSideMult = 0.85
-ATT.SpreadAddRecoil = -0.015
-
--- Negatives
+ATT.RPMAdd = 25
+ATT.RecoilRandomSideMult = 1.15
+ATT.RecoilRandomUpMult = 1.1
+ATT.BarrelLengthAdd = 1
 
 ATT.ActivateElements = {"uplp_ak_mz_compact"}
 
@@ -113,9 +103,9 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_rpk.mdl"
 
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
--- Positives
-ATT.RecoilMult = 0.85
-ATT.SpreadAddRecoil = -0.01
+ATT.RecoilMult = 0.94
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 1
 
 ATT.ActivateElements = {"uplp_ak_mz_rpk"}
 
@@ -140,7 +130,9 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_vityaz.mdl"
 -- ATT.MuzzleDevice = true
 ATT.ModelOffset = Vector(-0.215, 0, 0)
 
--- TODO stats
+ATT.RecoilUpMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 1
 
 ATT.ActivateElements = {"uplp_ak_mz_vityaz"}
 
@@ -167,7 +159,9 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_ak_bizon.mdl"
 
 ATT.ActivateElements = {"uplp_ak_mz_bizon"}
 
--- TODO stats
+ATT.RecoilSideMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_bizon")
 
@@ -193,11 +187,10 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_12"}
 
--- Positives
-ATT.RecoilMult = 0.95
-ATT.RecoilAutoControlMult = 1.05
-ATT.RecoilRandomSideMult = 0.6
-ATT.SpreadAddRecoil = -0.01
+ATT.RecoilMult = 0.9
+ATT.SpeedMultSights = 0.95
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 3
 
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_12")
@@ -224,11 +217,10 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_19"}
 
--- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilRandomSideMult = 0.85
-ATT.SpreadAddRecoil = -0.015
-
+ATT.RecoilRandomUpMult = 0.9
+ATT.RecoilRandomSideMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_19")
 
@@ -254,9 +246,9 @@ ATT.ModelOffset = Vector(-0.215, 0, 0)
 
 ATT.ActivateElements = {"uplp_ak_mz_rpk16"}
 
--- Positives
-ATT.RecoilMult = 0.85
-ATT.SpreadAddRecoil = -0.01
+ATT.RecoilPerShotMult = 1.1
+ATT.RecoilRandomSideMult = 0.85
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_rpk16")
 
@@ -292,12 +284,16 @@ ATT.RecoilMult = 0.95
 ATT.SpreadAddRecoil = -0.01
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
+    [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
--- Negatives
-ATT.AimDownSightsTimeMult = 1.15
+ATT.ShootVolumeMult = 0.75
+
+ATT.RecoilMult = 0.9
 ATT.BarrelLengthAdd = 3
+ATT.RangeMaxMult = 0.85
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.03
 
 ATT.ActivateElements = {"uplp_ak_mz_silencer"}
 
