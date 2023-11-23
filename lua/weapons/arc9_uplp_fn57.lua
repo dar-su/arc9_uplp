@@ -189,7 +189,7 @@ SWEP.HoldTypeSprint = "pistol"
 SWEP.HoldTypeHolstered = nil
 SWEP.HoldTypeSights = "revolver"
 SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeNPC = nil
+SWEP.HoldTypeNPC = "pistol"
 
 -- NPC Info
 SWEP.NPCWeaponType = "weapon_357"
