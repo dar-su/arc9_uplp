@@ -45,6 +45,7 @@ SWEP.UseVisualRecoil = true
 SWEP.PhysicalVisualRecoil = false
 
 SWEP.ReloadInSights = true
+SWEP.LaserAlwaysOnTargetInPeek = true
 
 SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(-0.1, -0.1, 0.1)
