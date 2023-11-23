@@ -739,7 +739,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
     end
 
-    if eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"] then -- If using either Bizon Configuration
+    if (eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"]) and !eles["uplp_ak_smg_conf_ppk20"] then -- If using either Bizon Configuration
         if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
             mdl:SetBodygroup(3,3) -- Add rail
         end
