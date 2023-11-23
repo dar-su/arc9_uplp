@@ -516,7 +516,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(-2, 0, 0),
         Installed = "uplp_ar15_stock_ak12",
-        Scale = 1.15
+        Scale = 1.3
     },
 }
 
@@ -640,14 +640,17 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelOffset = Vector(-8.915, -3.55, 4.89)
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-20%",
-[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+25%",
-[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.visualrecoil") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-60%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+20%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-0.6",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.visualrecoil") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-50%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "-50%",
 }
 
 ATT.CustomCons = {
-[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+5%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+0.07",
 [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+15%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.speed")] = "×95%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.speed") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "+0.05" .. ARC9:GetPhrase("unit.second"),
 }
 
 -- TODO stats
@@ -657,6 +660,15 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_ppk"},
         ModelBodygroups = "i",
+		
+		RecoilAutoControlMult = 1.2,
+		VisualRecoilMultHipFire = 0.5,
+		RecoilAdd = -0.6,
+		SwayAddSights = -1,
+		AimDownSightsTimeAdd = 0.1 - 0.03,
+		SprintToFireTimeAdd = 0.1 - 0.05,
+		SpeedMultSights = 0.85 + 0.1,
+		SpeedAdd = -0.05 + 0.03,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
