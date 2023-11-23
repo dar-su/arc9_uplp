@@ -212,6 +212,7 @@ ATT.Icon = Material(iconfolder .. "s12.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "8"
+ATT.Scale = 0.9
 
 ATT.SortOrder = 2
 ATT.Category = "uplp_ar15_stock"
@@ -278,7 +279,7 @@ ATT.Icon = Material(iconfolder .. "stac.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "4"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0, 0, 0.05)
 
 ATT.SortOrder = 2
 ATT.Category = "uplp_ar15_stock"
