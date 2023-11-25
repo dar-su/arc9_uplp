@@ -874,7 +874,8 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
         RejectAttachments = {
-        ["uplp_ak_hg_azen"] = true,
+            ["uplp_ak_hg_azen"] = true,
+            ["uplp_ak_hg_rpk"] = true,
         },
         Pos = Vector(0.045, 1.5, 13.5),
         Ang = Angle(90, 90, 180),
