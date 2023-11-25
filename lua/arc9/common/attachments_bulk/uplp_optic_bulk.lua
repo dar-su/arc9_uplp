@@ -1299,17 +1299,19 @@ ATT.Sights = {
         Blur = false,
 
         SwayAddSights = sway_midbig,
-        -- Reticle = R1
+        Reticle = R1
     },
-    -- {
-        -- Pos = Vector(0, 10, -1.69),
-        -- Ang = Angle(0, -0, 0),
-        -- Magnification = 1.25,
-        -- ViewModelFOV = 20,
-        -- RTScopeFOV = 40,
-        -- Blur = false,
-        -- Reticle = R0
-    -- },
+    {
+        Pos = Vector(0, 10, -1.69),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 20,
+        RTScopeFOV = 40,
+        Blur = false,
+        Reticle = R0,
+
+        SwayAddSights = sway_midbig,
+    },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -1324,10 +1326,11 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeAdjustable = true
-ATT.RTScopeAdjustmentLevels = 1
-ATT.RTScopeFOVMin = 40
-ATT.RTScopeFOVMax = 57 / 6
+-- ATT.RTScopeAdjustable = true
+-- ATT.RTScopeAdjustmentLevels = 1
+-- ATT.RTScopeFOVMin = 40
+-- ATT.RTScopeFOVMax = 57 / 6
+ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = R0
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
