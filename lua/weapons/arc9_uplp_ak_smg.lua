@@ -734,7 +734,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 
     if eles["uplp_ak_smg_rec_vityaz"] or eles["uplp_ak_smg_rec_vityaz_tac"] then -- If using either Vityaz Configuration
-        if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_ak_dovetail_rail_used"] and !eles["uplp_ak_smg_conf_ppk20"] then
+        if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_optic_dovetail_used"] and !eles["uplp_ak_smg_conf_ppk20"] then
             mdl:SetBodygroup(3,1) -- Add rail
         end
     end
