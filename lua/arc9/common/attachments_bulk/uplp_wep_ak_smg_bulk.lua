@@ -344,6 +344,7 @@ ATT = {}
 ATT.PrintName = "\"Bizon\" Scope Alteration"
 ATT.CompactName = "\"Bizon\""
 ATT.Description = ATT.PrintName
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Icon = Material(iconfolder .. "mag/b.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_bizon_optic_alt"
