@@ -251,7 +251,7 @@ SWEP.DropMagazineTime = 1.1825
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, -0.7, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 0)
+SWEP.DropMagazineVelocity = Vector(0, 0, 20)
 
 ---- Sounds
 
@@ -473,7 +473,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_9mm",
         MinProgress = 0.6,
-        Mult = 1.075,
+        Mult = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -484,8 +484,8 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/magtap.ogg", t = 29 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 41 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 1.1}
+            {hide = 0, t = 0.3},
+            {hide = 2, t = 1.1825/0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -513,7 +513,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 52 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 1.1}
+            {hide = 2, t = 1.1825/1.075}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
