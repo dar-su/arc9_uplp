@@ -238,7 +238,7 @@ L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magni
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
-L["uplp_optic_halo_thermal.description"] = "moka make desc plz   Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
+L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6x magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Red Dot"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -1379,7 +1379,7 @@ L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4.
 
 L["uplp_ar15_stock_mpul.printname"] = "SynPoly Stock"
 L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
-L["uplp_ar15_stock_mpul.description"] = "blah blah." .. desc_stock_m .. desc_stock_standard
+L["uplp_ar15_stock_mpul.description"] = "Adjustable stock made by SynPoly for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Centurion Industries Stock"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"

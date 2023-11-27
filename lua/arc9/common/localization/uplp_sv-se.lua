@@ -232,9 +232,13 @@ L["uplp_optic_bigass.printname"] = "8-12x Variabel Zoom Kikarsikte med Avstånds
 L["uplp_optic_bigass.compactname"] = "8-12x VZK-A"
 L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är." .. desc_bigoptic
 
-L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med Avståndsmätare"
-L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
-L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
+-- L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med Avståndsmätare"
+-- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
+-- L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
+
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
+L["uplp_optic_halo_thermal.description"] = "Speciellt värmesikte med 6x magnifiering tillverkat av PurrPoint™ som erbjuder värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -1372,6 +1376,10 @@ L["uplp_ar15_stock_m16.description"] = "Fast kolv som används på M16." .. desc
 L["uplp_ar15_stock_m4.printname"] = "M4 Kolv"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
 L["uplp_ar15_stock_m4.description"] = "Standard justerbar kolv som används på M4:an." .. desc_stock_m .. desc_stock_standard
+
+L["uplp_ar15_stock_mpul.printname"] = "SynPoly-Kolv"
+L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
+L["uplp_ar15_stock_mpul.description"] = "Adjustable stock made by SynPoly for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Centurion Industries-Kolv"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"

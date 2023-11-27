@@ -232,9 +232,13 @@ L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-12x y Telémetro"
 L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
 L["uplp_optic_bigass.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo." .. desc_bigoptic
 
-L["uplp_optic_bigass_thermal.printname"] = "Termoscopio 8-12x Zoom Variable con Telémetro"
-L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
-L["uplp_optic_bigass_thermal.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo.\n - Capacidad de imagen térmica que resalta los objetivos." .. desc_biggeroptic
+-- L["uplp_optic_bigass_thermal.printname"] = "Termoscopio 8-12x Zoom Variable con Telémetro"
+-- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
+-- L["uplp_optic_bigass_thermal.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo.\n - Capacidad de imagen térmica que resalta los objetivos." .. desc_biggeroptic
+
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
+L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6x magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "Punto Rojo D-1"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -1372,6 +1376,10 @@ L["uplp_ar15_stock_m16.description"] = "Culata fija utilizada en el M16." .. des
 L["uplp_ar15_stock_m4.printname"] = "Culata M4"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
 L["uplp_ar15_stock_m4.description"] = "Culata ajustable estándar utilizada en la M4." .. desc_stock_m .. desc_stock_standard
+
+L["uplp_ar15_stock_mpul.printname"] = "Culata SynPoly"
+L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
+L["uplp_ar15_stock_mpul.description"] = "Adjustable stock made by SynPoly for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Culata Centurion Industries"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"
