@@ -1377,6 +1377,10 @@ L["uplp_ar15_stock_m4.printname"] = "M4 Stock"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
 L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4." .. desc_stock_m .. desc_stock_standard
 
+L["uplp_ar15_stock_mpul.printname"] = "SynPoly Stock"
+L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
+L["uplp_ar15_stock_mpul.description"] = "blah blah." .. desc_stock_m .. desc_stock_standard
+
 L["uplp_ar15_stock_modern.printname"] = "Centurion Industries Stock"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"
 L["uplp_ar15_stock_modern.description"] = "Lightweight competition stock for AR-15 rifles made by Centurion Industries." .. desc_stock_s .. "\n<color=100,255,100>Reduces more recoil</color> compared to other light stocks."
