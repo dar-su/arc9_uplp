@@ -85,6 +85,16 @@ SWEP.DamageMin = 28
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2.2,
+    [HITGROUP_CHEST] = 1.15,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
+
 SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8
 
@@ -1057,6 +1067,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        RejectAttachments = {
+            ["uplp_grip_half"] = true,
+        },
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.06, 2.3, 11),

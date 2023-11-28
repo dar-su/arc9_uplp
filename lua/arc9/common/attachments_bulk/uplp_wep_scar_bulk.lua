@@ -656,12 +656,12 @@ ATT.SpeedMultSights = 1.1
 
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMaxAdd = 8 -- from 40
+ATT.DamageMaxAdd = -1 -- from 40
 ATT.DamageMinAdd = 10 -- from 28
 
 
 ATT.SweetSpot = true
-ATT.SweetSpotDamage = 55
+ATT.SweetSpotDamage = 65
 ATT.SweetSpotRange = 62.5 / ARC9.HUToM
 ATT.SweetSpotWidth = 50 / ARC9.HUToM
 ATT.SweetSpotPeak = 25 / ARC9.HUToM
@@ -672,8 +672,8 @@ ATT.CustomPros = {
 
 -- Negatives
 ATT.RPMMult = 0.75
-ATT.RecoilUpAdd = 0.3
-ATT.RecoilSideAdd = 0.5
+ATT.RecoilUpAdd = 0.6
+ATT.RecoilSideAdd = 1.5
 ATT.ClipSizeOverride = 10
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -861,6 +861,10 @@ ATT.SpeedMultSights = 0.8
 
 table.Merge(ATT, stats556)
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_60"
+end
+
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "+15%",
 }
@@ -907,6 +911,11 @@ ATT.SpeedMultSights = 0.8
 
 table.Merge(ATT, stats556)
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_60"
+end
+
+
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "+15%",
 }
@@ -951,6 +960,11 @@ ATT.SpeedAdd = -0.05
 ATT.SpeedMultSights = 0.65
 
 table.Merge(ATT, stats556)
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_100"
+end
+
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "+25%",
