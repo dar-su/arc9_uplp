@@ -238,7 +238,7 @@ L["uplp_optic_bigass.description"] = "Visor de largo alcance con aumentos variab
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
-L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6x magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
+L["uplp_optic_halo_thermal.description"] = "Óptica térmica especial con magnificación 6x fabricada por PurrPoint™ que ofrece capacidades de imagen térmica que resaltan los objetivos." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "Punto Rojo D-1"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -1379,7 +1379,7 @@ L["uplp_ar15_stock_m4.description"] = "Culata ajustable estándar utilizada en l
 
 L["uplp_ar15_stock_mpul.printname"] = "Culata SynPoly"
 L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
-L["uplp_ar15_stock_mpul.description"] = "Adjustable stock made by SynPoly for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
+L["uplp_ar15_stock_mpul.description"] = "Culata ajustable fabricada por SynPoly para rifles AR-15." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Culata Centurion Industries"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"
