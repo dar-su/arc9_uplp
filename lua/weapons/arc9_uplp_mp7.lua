@@ -198,7 +198,7 @@ SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = nil
 SWEP.HoldTypeSights = "smg"
 SWEP.HoldTypeCustomize = "slam"
-SWEP.HoldTypeNPC = nil
+SWEP.HoldTypeNPC = "smg"
 
 -- NPC Info
 SWEP.NPCWeaponType = "weapon_smg"
@@ -302,12 +302,12 @@ SWEP.DistantShootSoundSilenced = {
 }
 
 SWEP.DistantShootSoundSilencedIndoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-01.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-02.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-03.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-04.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-05.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
 }
 
 SWEP.DropMagazineSounds = {

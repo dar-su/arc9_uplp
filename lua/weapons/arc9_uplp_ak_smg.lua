@@ -251,7 +251,7 @@ SWEP.DropMagazineTime = 1.1825
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, -0.7, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 0, 0)
+SWEP.DropMagazineVelocity = Vector(0, 0, 20)
 
 ---- Sounds
 
@@ -310,12 +310,12 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
 SWEP.DistantShootSoundSilencedIndoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-01.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-02.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-03.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-04.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-05.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
 }
 
 SWEP.DropMagazineSounds = {
@@ -473,7 +473,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload_9mm",
         MinProgress = 0.6,
-        Mult = 1.075,
+        Mult = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -484,8 +484,8 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/magtap.ogg", t = 29 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 41 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 1.1}
+            {hide = 0, t = 0.3},
+            {hide = 2, t = 1.1825/0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -513,7 +513,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 52 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 1.1}
+            {hide = 2, t = 1.1825/1.075}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -734,12 +734,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 
     if eles["uplp_ak_smg_rec_vityaz"] or eles["uplp_ak_smg_rec_vityaz_tac"] then -- If using either Vityaz Configuration
-        if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_ak_dovetail_rail_used"] and !eles["uplp_ak_smg_conf_ppk20"] then
+        if (eles["uplp_optic_used"] or eles["uplp_backup_optic"]) and !eles["uplp_optic_dovetail_used"] and !eles["uplp_ak_smg_conf_ppk20"] then
             mdl:SetBodygroup(3,1) -- Add rail
         end
     end
 
-    if eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"] then -- If using either Bizon Configuration
+    if (eles["uplp_ak_smg_rec_bizon"] or eles["uplp_ak_smg_rec_bizon_old"]) and !eles["uplp_ak_smg_conf_ppk20"] then -- If using either Bizon Configuration
         if eles["uplp_optic_used"] or eles["uplp_backup_optic"] then
             mdl:SetBodygroup(3,3) -- Add rail
         end
@@ -846,7 +846,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, 0),
         Installed = "uplp_ak_mz_vityaz",
-        ExcludeElements = {"uplp_ak_smg_brl_ppk20_long"},
+        ExcludeElements = {"uplp_ak_smg_conf_ppk20"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -874,7 +874,8 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
         RejectAttachments = {
-        ["uplp_ak_hg_azen"] = true,
+            ["uplp_ak_hg_azen"] = true,
+            ["uplp_ak_hg_rpk"] = true,
         },
         Pos = Vector(0.045, 1.5, 13.5),
         Ang = Angle(90, 90, 180),

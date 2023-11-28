@@ -232,9 +232,13 @@ L["uplp_optic_bigass.printname"] = "8-12x Variable Zoom Scope w. Rangefinder"
 L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
 L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
 
-L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope w. Rangefinder"
-L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
-L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
+-- L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope w. Rangefinder"
+-- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
+-- L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
+
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
+L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6x magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Red Dot"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -785,7 +789,7 @@ L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the HPK M16.\nAdds
 
 L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Model 23 Handguard"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
-L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan Tactical.\nDoes not support <color=255,100,100>foregrips</color>.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
+L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan Tactical.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
 
 ////// Magazines
 /// 7.62x39mm
@@ -1372,6 +1376,10 @@ L["uplp_ar15_stock_m16.description"] = "Fixed stock used on the M16." .. desc_st
 L["uplp_ar15_stock_m4.printname"] = "M4 Stock"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
 L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4." .. desc_stock_m .. desc_stock_standard
+
+L["uplp_ar15_stock_mpul.printname"] = "SynPoly Stock"
+L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
+L["uplp_ar15_stock_mpul.description"] = "Adjustable stock made by SynPoly for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
 L["uplp_ar15_stock_modern.printname"] = "Centurion Industries Stock"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"

@@ -81,6 +81,17 @@ ATT.ModelOffset = Vector(0.6, 0, 0)
 ATT.Category = "uplp_ar15_gasblock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        RequireElements = {"uplp_no_tactical"},
+        Pos = Vector(-0.3, 0, 1),
+        Ang = Angle(0, 180, 0),
+        Icon_Offset = Vector(0, 0, 0.5),
+    },
+}
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
 

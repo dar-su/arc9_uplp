@@ -291,12 +291,12 @@ SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-10.ogg"
 }
 SWEP.DistantShootSoundSilencedIndoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-01.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-02.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-03.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-04.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-05.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
 }
 
 SWEP.DropMagazineSounds = {
@@ -485,7 +485,7 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.3, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.25, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
 
@@ -511,7 +511,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.3, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 32 / 30 + 0.03, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 32 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},

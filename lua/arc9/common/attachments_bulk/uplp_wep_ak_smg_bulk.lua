@@ -315,6 +315,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 90),
         ExcludeElements = {"uplp_no_tactical"},
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
+        Pos = Vector(-6, 0, 0.8),
+        Ang = Angle(0, 0, 0),
+        ExcludeElements = {"uplp_ak_smg_rec_bizon"},
+    },
 }
 
 -- Positives
@@ -336,6 +344,7 @@ ATT = {}
 ATT.PrintName = "\"Bizon\" Scope Alteration"
 ATT.CompactName = "\"Bizon\""
 ATT.Description = ATT.PrintName
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Icon = Material(iconfolder .. "mag/b.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_bizon_optic_alt"

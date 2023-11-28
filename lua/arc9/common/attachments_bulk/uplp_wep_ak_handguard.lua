@@ -422,7 +422,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_ak_brl_12k"}
 
-ATT.ActivateElements = {"uplp_ak_hg_12tac", "ak12_part", "uplp_no_grip"}
+ATT.ActivateElements = {"uplp_ak_hg_12tac", "ak12_part"}
 
 ATT.SprintToFireTimeAdd = 0.1
 ATT.AimDownSightsTimeAdd = -0.02

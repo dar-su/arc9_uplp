@@ -628,7 +628,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass")
 
 
 ---------- uplp_optic_bigass_thermal
-
+--[[
+-- ATT.Ignore = true -- bleh, copy of same scope, get ignored! -- nvm ignore not works in bulks
 
 ATT = {}
 
@@ -782,6 +783,157 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 table.Merge(ATT, stats_bigger)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
+]]--
+
+---------- uplp_optic_halo_thermal
+
+ATT = {}
+
+ATT.PrintName = "PurrPoint™ IR-PRO 6x"
+ATT.CompactName = "6x IR-PRO"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "3-7x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "halo.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_halo.mdl"
+ATT.ModelOffset = Vector(0.25, 0, 0)
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -1.15),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 20,
+        RTScopeFOV = 57 / 6,
+        Blur = false,
+
+        SwayAddSights = sway_bigger,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.66)
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57/6
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/halo.png", "mips smooth")
+ATT.RTScopeReticleScale = 0.92
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 0
+ATT.RTScopeBlackBox = true  
+ATT.RTScopeBlackBoxShadow = false 
+
+ATT.ScopeScreenRatio = 0.66
+
+
+ATT.RTScopeFLIR = true
+ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
+ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 5/255,
+    ["$pp_colour_addg"] = 74/255,
+    ["$pp_colour_addb"] = 121/255,
+    ["$pp_colour_brightness"] = 0.07,
+    ["$pp_colour_contrast"] = 0.69,
+    ["$pp_colour_colour"] = 0.12,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0
+}
+ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 15/255,
+    ["$pp_colour_addg"] = 74/255,
+    ["$pp_colour_addb"] = 200/255,
+    ["$pp_colour_brightness"] = -0.4,
+    ["$pp_colour_contrast"] = 1,
+    ["$pp_colour_colour"] = -0.9,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0
+}
+
+ATT.RTScopeCustomPPFunc = function(swep)
+    DrawMotionBlur(0.7, 0.85, 1/40)
+    DrawBloom(0.31, 1.4, 1.15, 0, 0, 1, 1, 1, 1)
+    -- DrawSharpen(4, 0.6)
+end
+
+ATT.RTScopeFLIRHotOnlyFunc = function(swep)
+    DrawSharpen(4, 0.6)
+    DrawSobel(0.03)
+end
+
+ATT.RTScopePostInvertFunc = function(swep)
+    DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
+    DrawSharpen(4, 0.6)
+end
+
+
+
+if CLIENT then
+    
+    surface.CreateFont( "arc9uplp_halo_range", {
+        font = "Venryn Sans",
+        size = 50,
+        weight = 500,
+        antialias = true,
+        extended = true,
+    } )
+    
+    local crosss = Material("vgui/uplp_reticles/halo_cross.png", "mips")
+    local nextcall = CurTime()
+    local textcol = Color(255, 255, 255)
+    local redcol = Color(255, 0, 0)
+
+    local thatsenemy = false 
+    
+    ATT.RTScopeDrawFunc = function(swep, rtsize)
+        local w, h = rtsize, rtsize
+    
+        if CurTime() > nextcall then
+            nextcall = CurTime() + 0.2
+    
+            local trace = util.TraceLine({
+                start = swep:GetShootPos(),
+                endpos = swep:GetShootPos() + (swep:GetShootDir():Forward() * 64000),
+                mask = MASK_SHOT,
+                filter = swep:GetOwner()
+            })
+    
+            if trace.HitSky then
+                text = "????"
+            else
+                text = string.format("%04d", math.ceil(trace.Fraction * 64000 * ARC9.HUToM))
+            end
+
+            thatsenemy = swep:GetEntityHot(trace.Entity)
+        end
+    
+        surface.SetTextColor(textcol)
+        surface.SetFont("arc9uplp_halo_range")
+        surface.SetTextPos((w - surface.GetTextSize(text)) / 2, 168)
+        surface.DrawText(text)
+
+        if thatsenemy then
+            surface.SetMaterial(crosss)
+            surface.SetDrawColor(redcol)
+            surface.DrawTexturedRect(w / 2 - 128, h / 2 - 128, 256, 256)
+        end
+    end
+end
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+table.Merge(ATT, stats_bigger)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_halo_thermal")
 
 
 ---------- uplp_optic_d1
@@ -1299,17 +1451,19 @@ ATT.Sights = {
         Blur = false,
 
         SwayAddSights = sway_midbig,
-        -- Reticle = R1
+        Reticle = R1
     },
-    -- {
-        -- Pos = Vector(0, 10, -1.69),
-        -- Ang = Angle(0, -0, 0),
-        -- Magnification = 1.25,
-        -- ViewModelFOV = 20,
-        -- RTScopeFOV = 40,
-        -- Blur = false,
-        -- Reticle = R0
-    -- },
+    {
+        Pos = Vector(0, 10, -1.69),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 20,
+        RTScopeFOV = 40,
+        Blur = false,
+        Reticle = R0,
+
+        SwayAddSights = sway_midbig,
+    },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -1324,10 +1478,11 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeAdjustable = true
-ATT.RTScopeAdjustmentLevels = 1
-ATT.RTScopeFOVMin = 40
-ATT.RTScopeFOVMax = 57 / 6
+-- ATT.RTScopeAdjustable = true
+-- ATT.RTScopeAdjustmentLevels = 1
+-- ATT.RTScopeFOVMin = 40
+-- ATT.RTScopeFOVMax = 57 / 6
+ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = R0
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
