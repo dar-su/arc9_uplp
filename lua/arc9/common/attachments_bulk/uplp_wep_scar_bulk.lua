@@ -54,30 +54,28 @@ ATT.Icon = Material(iconfolder .. "rec/dmr.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Firemodes = {
-    { Mode = -1, -- Full
-    PoseParam = 1 },
-    { Mode = 1, -- Semi
-    RPM = 300,
-    DamageMult = 1.25,
-    PoseParam = 2 }
-}
-
 -- Positives
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.3
-ATT.RecoilMult = 0.8
+ATT.SpreadAdd = -0.0025
+ATT.SpreadAddRecoil = -0.001
+ATT.RecoilPerShot = 1 / 9
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilMult = 0.75
 
-ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemax")] = "+25%",
-[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemin")] = "+25%",
-}
+ATT.SweetSpotRangeAdd = 15 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 7.5 / ARC9.HUToM
+ATT.SweetSpotPeakAdd = 7.5 / ARC9.HUToM
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.05
 ATT.RPMMult = 0.75
-ATT.BarrelLengthAdd = 5
+ATT.SpeedMult = 0.97
+ATT.SpeedMultSights = 0.9
+ATT.BarrelLengthAdd = 7
+ATT.SpreadAddHipFire = 0.02
+ATT.RecoilDissipationRateMult = 0.5
 
 ATT.Attachments = {
     {
@@ -109,30 +107,28 @@ ATT.Icon = Material(iconfolder .. "rec/dmrb.png", "mips smooth")
 ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Firemodes = {
-    { Mode = -1, -- Full
-    PoseParam = 1 },
-    { Mode = 1, -- Semi
-    RPM = 300,
-    DamageMult = 1.25,
-    PoseParam = 2 }
-}
-
 -- Positives
-ATT.RangeMinMult = 1.15
-ATT.PhysBulletMuzzleVelocityMult = 1.3
-ATT.RecoilMult = 0.8
+ATT.SpreadAdd = -0.0025
+ATT.SpreadAddRecoil = -0.001
+ATT.RecoilPerShot = 1 / 9
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilMult = 0.75
 
-ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemax")] = "+25%",
-[ARC9:GetPhrase("uplp_stat_semi") .. ARC9:GetPhrase("autostat.damagemin")] = "+25%",
-}
+ATT.SweetSpotRangeAdd = 15 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 7.5 / ARC9.HUToM
+ATT.SweetSpotPeakAdd = 7.5 / ARC9.HUToM
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.05
 ATT.RPMMult = 0.75
-ATT.BarrelLengthAdd = 5
+ATT.SpeedMult = 0.97
+ATT.SpeedMultSights = 0.9
+ATT.BarrelLengthAdd = 7
+ATT.SpreadAddHipFire = 0.02
+ATT.RecoilDissipationRateMult = 0.5
 
 ATT.Attachments = {
     {
@@ -170,15 +166,21 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.85
-ATT.RPMMult = 1.1
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.04
 ATT.BarrelLengthAdd = -5
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedMult = 1.01
+ATT.SpeedMultSights = 1.15
+ATT.RPMAdd = 50
 
 -- Negatives
-ATT.RangeMinMult = 0.8
-ATT.PhysBulletMuzzleVelocityMult = 0.9
-ATT.RecoilMult = 1.1
+ATT.SpreadAdd = 0.003
+ATT.RecoilPerShot = 1 / 5
+ATT.RangeMinAdd = -10 / ARC9.HUToM
+ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.RecoilMult = 1.2
 
 ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
 
@@ -204,15 +206,21 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.85
-ATT.RPMMult = 1.1
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.04
 ATT.BarrelLengthAdd = -5
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedMult = 1.01
+ATT.SpeedMultSights = 1.15
+ATT.RPMAdd = 50
 
 -- Negatives
-ATT.RangeMinMult = 0.8
-ATT.PhysBulletMuzzleVelocityMult = 0.9
-ATT.RecoilMult = 1.1
+ATT.SpreadAdd = 0.003
+ATT.RecoilPerShot = 1 / 5
+ATT.RangeMinAdd = -10 / ARC9.HUToM
+ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.RecoilMult = 1.2
 
 ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
 
@@ -235,15 +243,24 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_scar_brl_short"}
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = -0.02
 ATT.BarrelLengthAdd = -3
+ATT.SpreadAddHipFire = -0.008
 
 -- Negatives
-ATT.RecoilMult = 1.05
-ATT.RangeMaxMult = 0.8
-ATT.RangeMinMult = 0.9
-ATT.PhysBulletMuzzleVelocityMult = 0.95
+ATT.SpreadAdd = 0.0015
+ATT.RecoilPerShot = 1 / 6
+ATT.RangeMinAdd = -5 / ARC9.HUToM
+ATT.RangeMaxAdd = -20 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.RecoilMult = 1.1
+
+ATT.SweetSpotRangeAdd = -12.5 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 0 / ARC9.HUToM
+ATT.SweetSpotPeakAdd = -15 / ARC9.HUToM
+
+
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
@@ -292,14 +309,23 @@ ATT.Attachments = {
 }
 
 -- Positives
-ATT.RangeMinMult = 1.1
-ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.RecoilMult = 0.95
+ATT.SpreadAdd = -0.0015
+ATT.RangeMinAdd = 10 / ARC9.HUToM
+ATT.RangeMaxAdd = 40 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+
+ATT.SweetSpotRangeAdd = 20 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 15 / ARC9.HUToM
+ATT.SweetSpotPeakAdd = 15 / ARC9.HUToM
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
-ATT.BarrelLengthAdd = 3
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.03
+ATT.RPMMult = 0.75
+ATT.SpeedMultSights = 0.9
+ATT.BarrelLengthAdd = 5
+ATT.SpreadAddHipFire = 0.01
+ATT.RecoilDissipationRateMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
@@ -338,12 +364,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_scar_stock_h"}
 
 -- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilAutoControlMult = 1.2
+ATT.RecoilMult = 0.85
+ATT.SwayMultSights = 0.7
+ATT.VisualRecoilMultHipFire = 0.85
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultSights = 0.9
+ATT.SpreadAddHipFire = 0.015
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_h")
 
@@ -364,12 +393,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_scar_stock_hb"}
 
 -- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilAutoControlMult = 1.2
+ATT.RecoilMult = 0.85
+ATT.SwayMultSights = 0.7
+ATT.VisualRecoilMultHipFire = 0.85
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.15
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultSights = 0.9
+ATT.SpreadAddHipFire = 0.015
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_hb")
 
@@ -400,13 +432,13 @@ ATT.Attachments = {
     },
 }
 
--- Positives
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.85
-
--- Negatives
-ATT.RecoilMult = 1.25
-ATT.RecoilAutoControlMult = 0.5
+ATT.RecoilAdd = 1
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_tube")
 
@@ -425,13 +457,20 @@ ATT.Category = "uplp_scar_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.85
-ATT.SprintToFireTimeMult = 0.9
-ATT.BarrelLengthAdd = -1
+ATT.BarrelLengthAdd = -2
 
 -- Negatives
-ATT.RecoilMult = 1.1
-ATT.RecoilAutoControlMult = 0.95
+ATT.RecoilAutoControlMult = 0.9
+
+ATT.SprintToFireTimeAdd = -0.02
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "-0.03s",
+}
+
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights") ] = "+25%",
+}
 
 ATT.ToggleStats = {
     {
@@ -441,13 +480,8 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_scar_stock_pdw_f"},
-        -- Positives
-        AimDownSightsTimeMult = 0.85 * 0.8,
-        SprintToFireTimeMult = 0.9 * 0.8,
-        BarrelLengthAdd = -3,
-        -- Negatives
-        RecoilMult = 1.1 * 1.3,
-        RecoilAutoControlMult = 0.95 * 1.3,
+        AimDownSightsTimeAdd = -0.03,
+        SwayMultSights = 1.25,
     },
 }
 
@@ -493,9 +527,10 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.SprintToFireTimeMult = 0.9
--- ATT.ReloadTimeMult = 0.9
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 1.1
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
@@ -511,59 +546,6 @@ end
 ATT.ActivateElements = {"uplp_scar_mag_20"}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_20")
-
----------- uplp_scar_mag_20_68
-
-ATT = {}
-
-ATT.PrintName = "10-Round 6.8mm"
-ATT.CompactName = "10R 6.8"
-ATT.Description = ATT.PrintName
-ATT.SortOrder = 1
-
-ATT.Icon = Material(iconfolder .. "mag/2068.png", "mips smooth")
-
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20_black.mdl"
-
-ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
-
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
-
-ATT.Firemodes = {
-    { Mode = 1, -- Semi
-    PoseParam = 2 }
-}
-
--- Positives
-ATT.PhysBulletMuzzleVelocityMult = 1.3 -- 6.5 awp stats but slightly worse cuz its dmr!!
-ATT.DamageMax = 85 / 1.25 * 0.8 -- Damage dealt point-blank
-ATT.DamageMin = 140 / 1.25 * 0.5 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-ATT.RangeMin = 5 * 39.37 -- How far in M the bullets go before starting to decrease in damage
-ATT.RangeMax = 45 * 39.37 -- How far in M the bullets need to go to deal DamageMin
-
-ATT.CustomPros = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
-}
-
--- Negatives
-ATT.RPMMult = 0.75
-ATT.RecoilMult = 1.45
-ATT.RecoilAutoControlMult = 0.25
-ATT.ClipSizeOverride = 10
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_20"
-end
-
-ATT.ActivateElements = {"uplp_scar_mag_20_68"}
-
-ARC9.LoadAttachment(ATT, "uplp_scar_mag_20_68")
 
 ---------- uplp_scar_mag_hk
 
@@ -606,6 +588,103 @@ local shoot556distindoor = {
     pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
 }
 
+local stats556 = {
+
+    Ammo = "smg1",
+    MuzzleParticleOverride = "muzzleflash_3",
+    MuzzleParticleOverride_Priority = 1,
+    CustomPros = {
+        [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.smg1"),
+    },
+
+    Hook_TranslateAnimation = function(wep, anim)
+        return anim .. "_l"
+    end,
+
+    ShootSound = shoot556,
+    ShootSoundSilenced = shoot556sil,
+    DistantShootSound = shoot556dist,
+    DistantShootSoundIndoor = shoot556distindoor,
+
+    -- Positives
+    RPMAdd = 100,
+    RecoilPerShotMult = 0.9,
+    RecoilUpAdd = -0.35,
+    RecoilSideAdd = -0.15,
+
+    -- Negatives
+    DamageMaxAdd = -15, -- from 40
+    DamageMinAdd = -14, -- from 28
+    PhysBulletMuzzleVelocityMult = 0.8165,
+    RangeMaxAdd = -10 / ARC9.HUToM,
+    RangeMinAdd = -5 / ARC9.HUToM,
+
+}
+
+---------- uplp_scar_mag_20_68
+
+ATT = {}
+
+ATT.PrintName = "10-Round 6.8mm"
+ATT.CompactName = "10R 6.8"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 1
+
+ATT.Icon = Material(iconfolder .. "mag/2068.png", "mips smooth")
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/scar_mag_20_black.mdl"
+
+ATT.Category = "uplp_scar_mag"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ShootSound = shoot556
+ATT.ShootSoundSilenced = shoot556sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
+ATT.Firemodes = {
+    { Mode = 1, -- Semi
+    PoseParam = 2 }
+}
+
+-- Mag
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 1.1
+
+-- Positives
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+ATT.DamageMaxAdd = 8 -- from 40
+ATT.DamageMinAdd = 10 -- from 28
+
+
+ATT.SweetSpot = true
+ATT.SweetSpotDamage = 55
+ATT.SweetSpotRange = 62.5 / ARC9.HUToM
+ATT.SweetSpotWidth = 50 / ARC9.HUToM
+ATT.SweetSpotPeak = 25 / ARC9.HUToM
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
+
+-- Negatives
+ATT.RPMMult = 0.75
+ATT.RecoilUpAdd = 0.3
+ATT.RecoilSideAdd = 0.5
+ATT.ClipSizeOverride = 10
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_20"
+end
+
+ATT.ActivateElements = {"uplp_scar_mag_20_68"}
+
+ARC9.LoadAttachment(ATT, "uplp_scar_mag_20_68")
+
+---------- uplp_scar_mag_hk
 
 ATT = {}
 
@@ -627,32 +706,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
-
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
-
--- Positives
-ATT.ClipSizeOverride = 30
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_l"
-end
-
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
+table.Merge(ATT, stats556)
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
 
@@ -673,44 +727,16 @@ ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
-
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- Positives
--- ATT.ClipSizeOverride = 20
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-ATT.AimDownSightsTimeMult = 0.95
-ATT.SprintToFireTimeMult = 0.95
+ATT.ClipSizeOverride = 20
 
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
+table.Merge(ATT, stats556)
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "+5%",
+    [ARC9:GetPhrase("autostat.reloadtime")] = "-5%",
 }
-
-ATT.Category = "uplp_scar_mag"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
-
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_l"
-end
-
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
 
@@ -731,39 +757,12 @@ ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
-
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
-
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
-
--- Positives
-ATT.ClipSizeOverride = 30
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_l"
-end
-
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
-
+table.Merge(ATT, stats556)
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag30")
 
@@ -784,39 +783,12 @@ ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
-
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
-
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
-
--- Positives
-ATT.ClipSizeOverride = 30
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_l"
-end
-
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
-
+table.Merge(ATT, stats556)
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30")
 
@@ -843,33 +815,7 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
-
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
-
--- Positives
-ATT.ClipSizeOverride = 30
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_l"
-end
-
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
-
+table.Merge(ATT, stats556)
 
 ATT.ModelOffset = Vector(1.4, 0, -3.5)
 
@@ -895,45 +841,29 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
-ATT.DropMagazineTime = 0.5*1.1*0.8
-
--- Positives
-ATT.ClipSizeOverride = 52
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.2
-
-ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-15%",
-}
+ATT.DropMagazineTime = 0.5 * 1.1 * 0.8
 
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
+-- Positives
+ATT.ClipSizeOverride = 52
 
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
+-- Negatives
+ATT.SpreadAddHipFire = 0.012
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.15
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_60"
-end
+table.Merge(ATT, stats556)
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
-
+ATT.CustomCons = {
+    [ARC9:GetPhrase("autostat.reloadtime")] = "+15%",
+}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag60")
 
@@ -951,7 +881,7 @@ ATT.Icon = Material(iconfolderar15 .. "60.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
-ATT.DropMagazineTime = 0.5*1.1*0.8
+ATT.DropMagazineTime = 0.5 * 1.1 * 0.8
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 
@@ -959,43 +889,27 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_ammo"}
 
--- Positives
-ATT.ClipSizeOverride = 52
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.2
-
-ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-15%",
-}
-
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
+-- Positives
+ATT.ClipSizeOverride = 52
 
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
+-- Negatives
+ATT.SpreadAddHipFire = 0.012
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.15
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_60"
-end
+table.Merge(ATT, stats556)
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
-
+ATT.CustomCons = {
+    [ARC9:GetPhrase("autostat.reloadtime")] = "+15%",
+}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag60")
 
@@ -1013,51 +927,34 @@ ATT.Icon = Material(iconfolderar15 .. "100.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_drum.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
-ATT.DropMagazineTime = 0.42*1.1*0.8
+ATT.DropMagazineTime = 0.42 * 1.1 * 0.8
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
-
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_mag_no_drum"}
 
--- Positives
-ATT.ClipSizeOverride = 90
-ATT.RPMAdd = 100
-ATT.RecoilMult = 0.5
-
--- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8165
-
-ATT.RangeMinMult = 0.95
-ATT.DamageMax = 30 / 1.25 -- Damage dealt point-blank
-ATT.DamageMin = 15 / 1.25 -- Damage dealt after maximum range
-ATT.HeadshotDamage = 0.8
-
-ATT.AimDownSightsTimeMult = 1.3
-ATT.SprintToFireTimeMult = 1.3
-
-ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-25%",
-}
-
 ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ShootSound = shoot556
-ATT.ShootSoundSilenced = shoot556sil
+-- Positives
+ATT.ClipSizeOverride = 90
 
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
+-- Negatives
+ATT.SpreadAddHipFire = 0.03
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.09
+ATT.DeployTimeMult = 1.5
+ATT.SwayAddSights = 0.3
+ATT.SwayMultSights = 1.4
+ATT.SpeedAdd = -0.05
+ATT.SpeedMultSights = 0.65
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_100"
-end
+table.Merge(ATT, stats556)
 
-ATT.Ammo = "smg1"
-ATT.MuzzleParticleOverride = "muzzleflash_3"
-ATT.MuzzleParticleOverride_Priority = 1
-
+ATT.CustomCons = {
+    [ARC9:GetPhrase("autostat.reloadtime")] = "+25%",
+}
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_drum")
 

@@ -292,7 +292,6 @@ ATT.ToggleStats = {
         ActivateElements = {"uplp_ak_stock_pt1_ext"},
         ModelBodygroups = "7",
         UPLPFoldStock = true,
-
     },
 }
 

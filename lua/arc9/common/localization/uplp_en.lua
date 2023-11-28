@@ -1818,21 +1818,19 @@ L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black 
 
 L["uplp_scar_upper_20.printname"] = "DMR Receiver"
 L["uplp_scar_upper_20.compactname"] = "DMR"
--- L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
-L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
+L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
 
 L["uplp_scar_upper_20b.printname"] = "DMR Receiver (Black)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
--- L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
-L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR.\n<color=100,255,100>Increased damage</color> when in semi-automatic."
+L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW Receiver"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "Very short upper receiver and handguard used on the XAR PDW.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>90-Round Drum</color>.\nCannot put on <color=255,100,100>certain foregrips</color>."
+L["uplp_scar_upper_pdw.description"] = "Very short upper receiver and handguard used on the XAR PDW."
 
 L["uplp_scar_upper_pdwb.printname"] = "PDW Receiver (Black)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (B)"
-L["uplp_scar_upper_pdwb.description"] = "Very short upper receiver and handguard painted black that is used on the XAR PDW.\nCannot put on <color=255,100,100>any barrels</color>.\nCannot put on the <color=255,100,100>90-Round Drum</color>.\nCannot put on <color=255,100,100>certain foregrips</color>."
+L["uplp_scar_upper_pdwb.description"] = "Very short upper receiver and handguard painted black that is used on the XAR PDW."
 
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "330mm CQC Barrel"
@@ -1841,11 +1839,11 @@ L["uplp_scar_brl_short.description"] = "Shortened 330mm (13\") barrel for the XA
 
 L["uplp_scar_brl_20.printname"] = "510mm DMR Barrel"
 L["uplp_scar_brl_20.compactname"] = "510mm DMR"
-L["uplp_scar_brl_20.description"] = "Standard 510mm (20\") DMR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
+L["uplp_scar_brl_20.description"] = "Standard 510mm (20\") DMR barrel for the XAR."
 
 L["uplp_scar_brl_20_long.printname"] = "600mm DMR Barrel"
 L["uplp_scar_brl_20_long.compactname"] = "600mm DMR"
-L["uplp_scar_brl_20_long.description"] = "Long 600mm (23.62\") DMR barrel for the XAR.\nRemoves the ability to equip the <color=255,100,100>XAR Iron Sights</color>."
+L["uplp_scar_brl_20_long.description"] = "Long 600mm (23.62\") DMR barrel for the XAR."
 
 ////// Stocks
 L["uplp_scar_stock_lb.printname"] = "Standard Stock (Black)"
@@ -1866,7 +1864,7 @@ L["uplp_scar_stock_tube.description"] = "Replaces the stock with a buffer tube t
 
 L["uplp_scar_stock_pdw.printname"] = "PDW Stock"
 L["uplp_scar_stock_pdw.compactname"] = "PDW"
-L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock.\nWhen \"Folded\": Adds 10% to all benefits but also adds 15% to all downsides."
+L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock."
 
 ////// Mags
 L["uplp_scar_mag_h.printname"] = "20-Round 7.62x51mm"

@@ -688,7 +688,7 @@ ATT.SpeedMultSights = 0.9
 -- ATT.ReloadTimeMult = 1.1
 
 ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
 }
 
 ATT.ModelOffset = Vector(0.15, 0, 0)
@@ -734,7 +734,7 @@ ATT.SpeedAdd = -0.025
 ATT.SpeedMultSights = 0.8
 
 ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
+[ARC9:GetPhrase("autostat.reloadtime")] = "+20%",
 }
 
 ATT.Category = "uplp_ar15_556_mag"
@@ -787,7 +787,7 @@ ATT.SpeedAdd = -0.025
 ATT.SpeedMultSights = 0.8
 
 ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
+[ARC9:GetPhrase("autostat.reloadtime")] = "+20%",
 }
 
 ATT.Category = "uplp_ar15_556_mag"
@@ -832,7 +832,7 @@ ATT.SpeedAdd = -0.05
 ATT.SpeedMultSights = 0.65
 
 ATT.CustomCons = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-30%",
+    [ARC9:GetPhrase("autostat.reloadtime")] = "+30%",
 }
 
 ATT.Category = "uplp_ar15_556_mag"

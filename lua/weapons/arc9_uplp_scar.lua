@@ -89,7 +89,7 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMin = 25 / ARC9.HUToM
 SWEP.RangeMax = 100 / ARC9.HUToM
 
 -- Physical Bullets
@@ -105,8 +105,8 @@ SWEP.ClipSize = 20
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.25
-SWEP.RecoilSide = 1.25
+SWEP.RecoilUp = 1.35
+SWEP.RecoilSide = 1.35
 
 SWEP.RecoilRandomUp = 1.1
 SWEP.RecoilRandomSide = 1.1
@@ -143,7 +143,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 SWEP.Spread = 0.005
 SWEP.SpreadAddHipFire = 0.03
 
-SWEP.SpreadAddRecoil = 0.011
+SWEP.SpreadAddRecoil = 0.01
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.05
 
@@ -152,18 +152,18 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 6
+SWEP.RecoilPerShot = 1 / 7
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.8
+SWEP.SpeedMult = 0.82
 SWEP.SpeedMultSights = 0.65
 
 SWEP.BarrelLength = 40
 
-SWEP.AimDownSightsTime = 0.37
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.36
+SWEP.SprintToFireTime = 0.38
 
 -- Shooting and Firemodes
 SWEP.RPM = 550 -- How fast gun shoot
