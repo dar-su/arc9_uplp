@@ -789,7 +789,7 @@ L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på HPK M16.
 
 L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Modell 23 Handskydd"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
-L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjort av Lisyan Tactical.\nHar ej stöd för <color=255,100,100>framgrepp</color>.\nEj kompatibel med <color=255,100,100>230mm AK M22-K Pipan</color>."
+L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjort av Lisyan Tactical.\nEj kompatibel med <color=255,100,100>230mm AK M22-K Pipan</color>."
 
 ////// Magazines
 /// 7.62x39mm
