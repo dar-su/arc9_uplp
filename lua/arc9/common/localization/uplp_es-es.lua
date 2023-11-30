@@ -1336,7 +1336,7 @@ L["uplp_ar15_rs_scalar.description"] = "Mira trasera ajustable fabricada por Iro
 
 L["uplp_ar15_rs_type1.printname"] = "Mira Trasera Tipo I"
 L["uplp_ar15_rs_type1.compactname"] = "Tipo I"
-L["uplp_ar15_rs_type1.description"] = "Miras traseras abatibles alternativas para rifles AR-15.\nSólo compatible con las siguientes miras delanteras:\n[ <color=100,255,100>IronWorks | Tipo II | Tipo III</color> ]\nTambién compatible con el <color=100,255,100>Gas Block con Mira Frontal Incorporada</color>."
+L["uplp_ar15_rs_type1.description"] = "Miras traseras abatibles alternativas para rifles AR-15.\nSólo compatible con las siguientes miras delanteras:\n[ <color=100,255,100>IronWorks | Tipo II | Tipo III</color> ]\nNo compatible con el <color=255,100,100>Gas Block con Mira Frontal Incorporada</color>."
 
 L["uplp_ar15_rs_type2.printname"] = "Mira Trasera Tipo II"
 L["uplp_ar15_rs_type2.compactname"] = "Tipo II"

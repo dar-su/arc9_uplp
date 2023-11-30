@@ -1336,7 +1336,7 @@ L["uplp_ar15_rs_scalar.description"] = "Justerbart bakre sikte tillverkat av Iro
 
 L["uplp_ar15_rs_type1.printname"] = "Typ I Bakre Sikte"
 L["uplp_ar15_rs_type1.compactname"] = "Typ I"
-L["uplp_ar15_rs_type1.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nOckså kompatibel med <color=100,255,100>Gasregulator med Inbyggt Stolpkorn</color>."
+L["uplp_ar15_rs_type1.description"] = "Alternativa bakre sikten av flip-up-design för användning till AR-15-gevär.\nEndast kompatibel med följande stolpkorn:\n[ <color=100,255,100>IronWorks | Typ II | Typ III</color> ]\nEj kompatibel med <color=255,100,100>Gasregulator med Inbyggt Stolpkorn</color>."
 
 L["uplp_ar15_rs_type2.printname"] = "Typ II Bakre Sikte"
 L["uplp_ar15_rs_type2.compactname"] = "Typ II"
