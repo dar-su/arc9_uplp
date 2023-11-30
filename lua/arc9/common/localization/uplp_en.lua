@@ -1336,7 +1336,7 @@ L["uplp_ar15_rs_scalar.description"] = "Adjustable rear sight manufactured by Ir
 
 L["uplp_ar15_rs_type1.printname"] = "Type I Rear Sight"
 L["uplp_ar15_rs_type1.compactname"] = "Type I"
-L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_ar15_rs_type2.printname"] = "Type II Rear Sight"
 L["uplp_ar15_rs_type2.compactname"] = "Type II"
