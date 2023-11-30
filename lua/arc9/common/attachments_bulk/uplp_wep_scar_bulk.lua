@@ -659,7 +659,6 @@ ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.DamageMaxAdd = -1 -- from 40
 ATT.DamageMinAdd = 10 -- from 28
 
-
 ATT.SweetSpot = true
 ATT.SweetSpotDamage = 65
 ATT.SweetSpotRange = 62.5 / ARC9.HUToM
@@ -707,6 +706,8 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats556)
+
+ATT.ClipSizeOverride = 30
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
 
@@ -764,6 +765,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats556)
 
+ATT.ClipSizeOverride = 30
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag30")
 
 ---------- uplp_scar_mag_stanag30
@@ -789,6 +792,8 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats556)
+
+ATT.ClipSizeOverride = 30
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30")
 
@@ -816,6 +821,8 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats556)
+
+ATT.ClipSizeOverride = 30
 
 ATT.ModelOffset = Vector(1.4, 0, -3.5)
 

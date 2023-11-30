@@ -789,7 +789,7 @@ L["uplp_ak_hg_rpk16.description"] = "Guardamanos más largo utilizado en el HPK 
 
 L["uplp_ak_hg_12tac.printname"] = "Guardamanos Lisyan Tactical Modelo 23"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
-L["uplp_ak_hg_12tac.description"] = "Guardamanos táctico muy largo fabricado por Lisyan Tactical.\nNo admite <color=255,100,100>empuñaduras</color>.\nNo compatible con el <color=255,100,100>Cañón AK M22-K de 230mm</color>."
+L["uplp_ak_hg_12tac.description"] = "Guardamanos táctico muy largo fabricado por Lisyan Tactical.\nNo compatible con el <color=255,100,100>Cañón AK M22-K de 230mm</color>."
 
 ////// Magazines
 /// 7.62x39mm
