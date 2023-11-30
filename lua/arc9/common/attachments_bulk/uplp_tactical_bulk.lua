@@ -41,7 +41,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.015",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.015",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -105,7 +105,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -238,7 +238,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -292,7 +292,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -349,7 +349,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -405,7 +405,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary._divider") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
