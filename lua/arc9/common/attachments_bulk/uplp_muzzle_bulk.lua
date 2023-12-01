@@ -245,7 +245,7 @@ ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
 ATT.Icon = Material(iconfolder .. "vepr/mzsil.png", "mips smooth")
-ATT.Category = "uplp_molot_muzzle"
+ATT.Category = {"uplp_molot_muzzle", "uplp_shotgun_supp"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_silencer.mdl"

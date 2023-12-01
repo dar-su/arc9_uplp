@@ -69,6 +69,7 @@ L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
 L["uplp_manufacturer_magnum"] = "Magnum Research"
 L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
+L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
 
 /////////// Year
 L["uplp_year"] = "År5"
@@ -85,6 +86,7 @@ L["uplp_mechanism_delayed"] = "Fördröjt slutstycke"
 L["uplp_mechanism_gasoperated"] = "Gaslås"
 L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
 L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
+L["uplp_mechanism_pumpaction"] = "Pumprepeter"
 
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"
@@ -1946,6 +1948,13 @@ L["uplp_scar_rail_ext.printname"] = "XAR Förlängd Skena"
 L["uplp_scar_rail_ext.compactname"] = "F. Skena"
 L["uplp_scar_rail_ext.description"] = "En aftermarket förlängd skena till XAR."
 
+-- Expansion 1
+//////////////////// Mossberg 590
+L["uplp_weapon_mossberg"] = "HDS 500"
+L["uplp_weapon_mossberg_desc"] = "Om du söker efter något för att försvara ditt hem så är Thunder 500-serien av hagelgevär från Centurion Industries för dig. HDS 500 är en hanelös pumprepeter hagelbössa matad med 12-kaliber med tungt anpassningsbara element. Den är väldigt populär i civila, polisiära och militära användningsområden."
+
+L["uplp_weapon_mossberg_real"] = "Mossberg 590"
+
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"
 L["uplp_weapon_spas_desc"] = "SPAW-12, Special Purpose Assault Weapon modell 12, är en mångsidig italienskdesignad hagelgevär som är känd för sin förmåga att växla mellan pumpaktion och halvautomatiska skjutlägen. Den blev populär inom olika militära och polisiära användningsområden på grund av sin pålitlighet och anpassningsbarhet."
@@ -1970,8 +1979,74 @@ L["uplp_spas_stock_fixed.description"] = "Stadig fast kolv till SPAW-12."
 
 L["uplp_spas_stock_folding.printname"] = "Vikbar Kolv"
 L["uplp_spas_stock_folding.compactname"] = "Vikbar"
-L["uplp_spas_stock_folding.description"] = "Vikbar kolv till SPAW-12."
+L["uplp_spas_stock_folding.description"] = "Vikbar kolv till SPAW-12.\nOm den är  \"Invikt\": Kan ej utrusta <color=255,100,100>riktmedel</color>."
 
 L["uplp_spas_stock_folding_hook.printname"] = "Vikbar Kolv med Krok"
 L["uplp_spas_stock_folding_hook.compactname"] = "Vikbar (K)"
-L["uplp_spas_stock_folding_hook.description"] = "Vikbar kolv till SPAW-12. Kommer med originala kroken som användes för skytte med en hand."
+L["uplp_spas_stock_folding_hook.description"] = "Vikbar kolv till SPAW-12.\nOm den är  \"Invikt\": Kan ej utrusta <color=255,100,100>riktmedel</color>.\nKommer med originala kroken som användes för skytte med en hand."
+
+//////////////////// M92FS
+L["uplp_weapon_m9"] = "PM92"
+L["uplp_weapon_m9_desc"] = "\"Pistola Modello 92\", förkortat PM92, är en halvautomatisk 9mm-pistol känd för sin exceptionella precision och pålitlighet. Den har varit en favorit sidovapen för militära och polisiära myndigheter över hela världen i årtionden."
+
+L["uplp_weapon_m9_real"] = "Beretta M92FS"
+
+//////////////////// Colt M1911
+L["uplp_weapon_m1911"] = "CM .45"
+L["uplp_weapon_m1911_desc"] = "CM .45, en klassisk halvautomatisk pistol, är känd för sin tidlösa design och sin långa tjänstehistoria, som först togs i bruk av den amerikanska militären 1911. Den har sedan dess blivit en ikonisk och allmänt använd pistol, uppskattad för sin kaliber .45 Auto och gedigna konstruktion."
+
+L["uplp_weapon_m1911_real"] = "Colt M1911"
+
+//////////////////// DVL-10
+L["uplp_weapon_dvl10"] = "RR-40"
+L["uplp_weapon_dvl10_desc"] = "\"Rapid Repeater 40\", förkortat RR-40, är en lätt och tungt anpassningsbar cylinderrepeter av ryskt ursprung. Den är känd för dess höga anpassningsbarhet för militära användning med en av dess många unika modeller."
+
+L["uplp_weapon_dvl10_m1"] = "RR-40 Saboteur"
+L["uplp_weapon_dvl10_m2"] = "RR-40 Urbana"
+L["uplp_weapon_dvl10_m3"] = "RR-40 Wolfhound"
+
+L["uplp_weapon_dvl10_real"] = "DVL-10"
+
+//////////////////// SR-25
+L["uplp_weapon_sr25"] = "DMR-10"
+L["uplp_weapon_sr25_desc"] = "Baserad på den välkända AR-15-plattformen, DMR-10 är en kraftfull, endast halvautomatiskt marksman-gevär. Även då den förlorade en tävling under 50-talet till BR-14 så fann DMR-10 fortfarande dess väg till militära händer av flertal styrkor."
+
+L["uplp_weapon_sr25_real"] = "KAC SR-25"
+
+
+-- Expansion 2
+//////////////////// ORSIS 12.7
+L["uplp_weapon_orsis"] = "UM-50"
+L["uplp_weapon_orsis_desc"] = "\"Udar Molnii 50\" (\"Lightning Strike 50\", eller \"Blixtnedslag 50\") är den senaste och mest kraftfulla precisionsgeväret från Ryssland under moderna tider. UM-50 är matad med den kraftfulla 12.7x108mm patronen vilket är väldigt effektiv mot fordon med lätt till medel pansar och speciellt mot mjuka måltavlor."
+
+L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
+
+//////////////////// AS VAL
+L["uplp_weapon_asval"] = "FAKENAME"
+-- REPLACE REAL NAMES WITH FAKE NAMES LATER, ALTERNATIVE REWRITE
+-- L["uplp_weapon_asval_desc"] = "An integrally suppressed Russian firearm, the AS-VAL is a customizable weapon that can be converted into various 9x39mm-fed firearms, including the VSS semi-automatic sniper, SR-3 special concealed automatic rifle, the cost-reduced redesigned 9A-91 rifle and VSK-94 sniper rifle."
+
+L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
+
+//////////////////// ASh-12
+L["uplp_weapon_ash12"] = "FAKENAME"
+L["uplp_weapon_ash12_desc"] = "REPLACEDESC"
+
+L["uplp_weapon_ash12_real"] = "ASh-12"
+
+//////////////////// Steyr AUG
+L["uplp_weapon_aug"] = "AW-UG"
+L["uplp_weapon_aug_desc"] = "\"Automatische Waffen-Universal-Gewehr\" (Automatvapen Univeralgevär) är huvudvapnet för den österrikiska militären och har varit basen för flertal andra bullpup-baserade eldvapen världen runt. AW har också varit basen till flertal variationer av vapnet vilket förvandlar den till antingen en kulspruta för understöd eller kulsprutepistol."
+
+L["uplp_weapon_aug_smg"] = "AW MP"
+L["uplp_weapon_aug_smg_full"] = "Automatische Waffen Machinenpistole (\"Automatvapen Kulsprutepistol\")"
+L["uplp_weapon_aug_mg"] = "AW-MG"
+L["uplp_weapon_aug_mg_full"] = "Automatiche Waffen-Maschinengewehr (\"Automatvapen Kulspruta\")"
+
+L["uplp_weapon_aug_real"] = "Steyr AUG"
+
+//////////////////// RSh-12
+L["uplp_weapon_rsh12"] = "RZ 12.7"
+L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Handledsförstöraren 12\") är en väldigt kraftfull rysk revolver som skjuter den stora 12.7x55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."
+
+L["uplp_weapon_rsh12_real"] = "RSh-12"

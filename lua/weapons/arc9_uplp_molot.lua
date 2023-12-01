@@ -14,8 +14,6 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_molot_desc")
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun") -- In the Spawnmenu
 
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_heavy")
-
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_molot_real"),
 
@@ -164,6 +162,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 SWEP.UseDispersion = true
 
 SWEP.Spread = 0.04
+SWEP.SpreadAddMidAir = 0.05
 
 SWEP.DispersionSpread = 0
 SWEP.DispersionSpreadAddHipFire = 0.02
