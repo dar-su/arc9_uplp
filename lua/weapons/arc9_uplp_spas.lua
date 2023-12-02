@@ -220,6 +220,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.NoFiremodeWhenEmpty = true
+SWEP.FiremodeSound = "" -- we will have own in sound tables
 
 SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
@@ -514,7 +515,7 @@ SWEP.Animations = {
         Source = {"fire"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = mechh, t = 0, v = 0.75 },
+            { s = mechh, t = 0, v = 0.25 },
         },
     },
 
@@ -530,7 +531,7 @@ SWEP.Animations = {
         Source = "fire_empty",
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = mechh, t = 0, v = 0.75 },
+            { s = mechh, t = 0, v = 0.25 },
         },
     },
 
@@ -560,8 +561,8 @@ SWEP.Animations = {
 		-- MinProgress= 0.65,
 		RestoreAmmo = 2,
         EventTable = {
-            -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 2 / 30, v = 1 },
             { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
             { s = ShellInsert, t = 40 / 30, v = 0.6 },
         },
@@ -571,10 +572,11 @@ SWEP.Animations = {
 		-- MinProgress= 0.65,
 		RestoreAmmo = 2,
         EventTable = {
-            -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
-            { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
-            { s = ShellInsert, t = 40 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
+            { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 22 / 30, v = 1 },
+            { s = pathUT .. "forearm_forward.ogg", t = 37 / 30, v = 0.6 },
+            { s = ShellInsert, t = 57 / 30, v = 0.6 },
         },
     },
 
@@ -582,9 +584,10 @@ SWEP.Animations = {
         Source = "reload_start_empty_only",
 		-- MinProgress= 0.75,
         EventTable = {
-            -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 2 / 30, v = 1 },
             { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 28 / 30, v = 0.6 },
         },
     },
 
@@ -592,9 +595,11 @@ SWEP.Animations = {
         Source = "reload_start_empty_only_pumpy",
 		-- MinProgress= 0.75,
         EventTable = {
-            -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
-            { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
+            { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 22 / 30, v = 1 },
+            { s = pathUT .. "forearm_forward.ogg", t = 37 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 44 / 30, v = 0.6 },
         },
     },
 
@@ -625,8 +630,10 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathUT2 .. "ar15/selector-01.ogg", t = 55 / 30, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, c = ca, v = 1 },
             { s = pathUT .. "presscheck2.ogg", t = 90 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "ar15/selector-06.ogg", t = 94 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 107.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -651,19 +658,19 @@ SWEP.Animations = {
 	
     ["firemode_1"] = {
         Source = "modeswitch",
-        EventTable = thetoggle
+        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
     },
     ["firemode_1_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = thetoggle
+        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
     },
     ["firemode_2"] = {
         Source = "modeswitch",
-        EventTable = thetoggle
+        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0, v = 1 } },
     },
     ["firemode_2_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = thetoggle
+        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0, v = 1 } },
     },
     ["toggle"] = {
         Source = "modeswitch",
