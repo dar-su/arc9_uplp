@@ -2312,7 +2312,7 @@ table.Merge(ATT, stats_mid)
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_pso")
 
 
----------- uplp_optic_okps
+---------- uplp_optic_okp
 
 ATT = {}
 
@@ -2357,7 +2357,7 @@ ATT.ModelOffset = Vector(0, 0, -0.1)
 
 table.Merge(ATT, stats_cqc)
 
-ARC9.LoadAttachment(ATT, "uplp_optic_okps")
+ARC9.LoadAttachment(ATT, "uplp_optic_okp")
 
 
 ---------- uplp_optic_dovetail_okp
