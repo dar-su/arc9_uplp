@@ -137,6 +137,23 @@ ARC9.LoadAttachment(ATT, "uplp_ak_dc_beryl")
 
 ATT = {}
 
+ATT.PrintName = "No dust cover"
+ATT.CompactName = "no dc :3"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "internals.png", "mips smooth")
+ATT.Category = "uplp_ak_dc"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_ak_dc_internals"}
+
+ARC9.LoadAttachment(ATT, "uplp_ak_dc_internals")
+
+
+-------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "AK-12M1 2023 Package"
 ATT.CompactName = "'AK-12M1 2023"
 ATT.Description = ATT.PrintName

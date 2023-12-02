@@ -995,7 +995,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(4,10)
     end
 
-    if eles["uplp_ak_dc_old"] and (eles["uplp_ak_stock_old"] or eles["uplp_ak_stock_underfold"]) then
+    if (eles["uplp_ak_dc_old"] or eles["uplp_ak_dc_internals"]) and (eles["uplp_ak_stock_old"] or eles["uplp_ak_stock_underfold"]) then
         mdl:SetBodygroup(0, 1)
         if eles["uplp_ak_nmount"] then
             mdl:SetBodygroup(7, 3)
@@ -1049,6 +1049,7 @@ SWEP.AttachmentElements = {
     }},
     ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
     ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
+    ["uplp_ak_dc_internals"] =            { Bodygroups = { { 3, 9 } } },
 
     -- PISTOL GRIPS
     ["uplp_ak_grip_used"] =       { Bodygroups = { { 9, 1 } } },
@@ -1273,7 +1274,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
         StickerModel = "models/weapons/arc9/uplp/stickers/ak_2.mdl",
-        ExcludeElements = {"uplp_ak_nmount"},
+        ExcludeElements = {"uplp_ak_nmount", "uplp_ak_dc_internals"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, 2),
@@ -1283,7 +1284,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
         StickerModel = "models/weapons/arc9/uplp/stickers/ak_3.mdl",
-        ExcludeElements = {"uplp_ak_nmount"},
+        ExcludeElements = {"uplp_ak_nmount", "uplp_ak_dc_internals"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, -1),

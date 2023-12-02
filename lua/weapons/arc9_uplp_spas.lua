@@ -563,7 +563,8 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "breechload.ogg", t = 2 / 30, v = 1 },
-            { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
+            { s = pathUT2 .. "ar15/selector-06.ogg", t = 14 / 30, v = 0.5 },
+            { s = pathUT .. "breechclose.ogg", t = 18 / 30, v = 0.6 },
             { s = ShellInsert, t = 40 / 30, v = 0.6 },
         },
     },
@@ -586,7 +587,8 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "breechload.ogg", t = 2 / 30, v = 1 },
-            { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
+            { s = pathUT2 .. "ar15/selector-06.ogg", t = 14 / 30, v = 0.5 },
+            { s = pathUT .. "breechclose.ogg", t = 18 / 30, v = 0.6 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 28 / 30, v = 0.6 },
         },
     },

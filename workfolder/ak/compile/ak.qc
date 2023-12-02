@@ -39,6 +39,7 @@ $bodygroup "dc" { // 3
 	studio "dc beryl.smd" // 6
 	studio "dc 12.smd" // 7
 	blank  // 8
+	studio "internals.smd" // 9
 }   
 
 // $bodygroup "grip" { // 4
