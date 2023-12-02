@@ -354,7 +354,8 @@ SWEP.DistantShootSoundIndoorSilenced = {
 //// Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
-    [1] = "bullet2",
+    [1] = "bullet1",
+    [2] = "bullet2",
 }
 
 SWEP.HideBones = {
@@ -439,14 +440,21 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local empty = swep:Clip1() == 0
     local insemi = swep:GetValue("uplp_semi")
 
-    if anim == "reload_start" then
-        if empty and swep:GetOwner():GetAmmoCount(swep.Ammo) <= 1 then 
-            swep.dontcontinuereload = true
-            if insemi then return "reload_start_empty_only_pumpy" end
-            return "reload_start_empty_only"
-        end
-        if empty and insemi then
-            return "reload_start_empty_pumpy"
+    if anim == "reload_start" or anim == "reload_start_empty" then
+        if empty then
+            timer.Simple(0.12, function() 
+                if IsValid(swep) then swep:SetLoadedRounds(1) end -- magswap doesnt want to replinish our ammo!
+            end)
+
+            if swep:GetOwner():GetAmmoCount(swep.Ammo) <= 1 then 
+                swep.dontcontinuereload = true
+                if insemi then return "reload_start_empty_only_pumpy" end
+                return "reload_start_empty_only"
+            end
+
+            if insemi then
+                return "reload_start_empty_pumpy"
+            end
         end
 
     elseif anim == "reload_finish" or anim == "reload_insert" then
@@ -583,6 +591,7 @@ SWEP.Animations = {
 
     ["reload_start_empty_only"] = {
         Source = "reload_start_empty_only",
+		RestoreAmmo = 1,
 		-- MinProgress= 0.75,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -595,6 +604,7 @@ SWEP.Animations = {
 
     ["reload_start_empty_only_pumpy"] = {
         Source = "reload_start_empty_only_pumpy",
+		RestoreAmmo = 1,
 		-- MinProgress= 0.75,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
