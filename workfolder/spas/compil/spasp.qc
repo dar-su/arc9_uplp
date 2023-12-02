@@ -17,6 +17,7 @@ $bodygroup "stock" { // 4
 	studio "stock fixed.smd" // 0
 	studio "stock no.smd" // 
 	studio "stock folded.smd" // 
+	studio "stock tube.smd" // 
 }
 $bodygroup "stockhook" { // 5
 	blank
@@ -64,6 +65,7 @@ $bonemerge "bullet1"
 $bonemerge "bullet2"
 $bonemerge "bolt"
 $bonemerge "bulletdoor"
+$bonemerge "tac"
 
 $poseparameter "sights" 0 1 loop 0
 
@@ -90,6 +92,16 @@ $sequence "idle_empty"{
 $sequence "fire" {
 	"anims\fire.smd"
 	"anims\fire_iron.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.08
+}
+
+$sequence "fire_pumpy" {
+	"anims\fire_pumpy.smd"
+	"anims\fire_pumpy_iron.smd"
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
@@ -188,9 +200,25 @@ $sequence "reload_start_empty" {
 	fps 30
 	snap
 }
+
+$sequence "reload_start_empty_pumpy" {
+	"anims\sgreload_start_empty_pumpy.smd"
+	"anims\sgreload_start_empty_pumpy_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+
 $sequence "reload_start_empty_only" {
 	"anims\sgreload_start_empty_only.smd"
 	"anims\sgreload_start_empty_only_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+$sequence "reload_start_empty_only_pumpy" {
+	"anims\sgreload_start_empty_pumpy_only.smd"
+	"anims\sgreload_start_empty_pumpy_only_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	snap

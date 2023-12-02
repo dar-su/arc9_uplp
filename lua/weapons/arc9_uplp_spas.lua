@@ -67,15 +67,15 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 //// View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_molot.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_vepr.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-4.5, 2.5, -7),
-    Ang = Angle(-20, 15, 190),
-    TPIKPos = Vector(-6.5, 2, -7),
+    Pos = Vector(-5.5, 4, -5),
+    Ang = Angle(-5, 0, 180),
+    TPIKPos = Vector(-6, 2, -5),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
@@ -90,6 +90,8 @@ SWEP.ActiveAng = Angle(0, 0, -0)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+
+SWEP.LaserAlwaysOnTargetInPeek = false 
 
 ---- Weapon Stats and Behaviour
 -- Damage
@@ -193,41 +195,31 @@ SWEP.SprintToFireTime = 0.42 - 0.1 -- Time it takes to fully enter sprint
 SWEP.BarrelLength = 42
 
 -- Shooting and Firemodes
-SWEP.RPM = 200 -- How fast gun shoot
+SWEP.RPM = 1200 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 8 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = 1, -- Pump
-	PrintName = "PUMP",
-	ManualAction = true,
-	ManualActionNoLastCycle = true,
-	NoShellEjectManualAction = true,
-	Hook_TranslateAnimation = function(swep, anim)
-		if !IsValid(swep:GetOwner()) then return end
+        PrintName = "PUMP",
+        ManualAction = true,
+        ManualActionNoLastCycle = true,
+        NoShellEjectManualAction = true,
+        uplp_semi = true,
+        SuppressEmptySuffix = true,
+        DispersionSpreadAddHipFire = -0.01,
+        SpreadMult = 0.75,
 
-		if anim == "fire" then
-			return "fire_pump"
-		end
-
-		if anim == "fire_empty" then
-			return "fire_pump_empty"
-		end
-
-		if anim == "inspect_empty" then
-			return "inspect"
-		end
-
-		return anim
-	end,
-	DispersionSpreadAddHipFire = -0.01,
-	SpreadMult = 0.75,
+        DamageMaxMult = 1.25, -- blehh :p
     },
-    { Mode = 1, -- Semi
-	ManualAction = false,
-	RecoilMult = 1.5,
+        { Mode = 1, -- Semi
+        ManualAction = false,
+        RecoilMult = 1.5,
+        RPM = 200,
     },
 }
+
+SWEP.NoFiremodeWhenEmpty = true
 
 SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
@@ -257,10 +249,11 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if attached["uplp_spas_stock_folding_f"] then
         return {
-			 Pos = Vector(-0.5, 0, -2),
-			 Ang = Angle(0, 0, 0),
+			 Pos = Vector(-1.5, -2, -1.5),
+			 Ang = Angle(0, 0, -10),
 			 Magnification = 1.05,
-			 ViewModelFOV = 55,
+             Blur = false,
+			--  ViewModelFOV = 55,
         }
     end
 	
@@ -275,7 +268,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(18, 32.5, 4)
+SWEP.CustomizePos = Vector(22, 28, 3.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(18, -2.5, -4)
 
@@ -292,6 +285,7 @@ SWEP.ShouldDropMagEmpty = false
 -- SWEP.DropMagazineAng = Angle(90, 90, 90)
 -- SWEP.DropMagazineVelocity = Vector(0, -5, 10)
 
+SWEP.ReloadInSights = false 
 SWEP.ShotgunReload = true
 SWEP.ShotgunReloadIncludesChamber = true
 
@@ -441,16 +435,26 @@ local thetoggle = {{
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
 
+    local empty = swep:Clip1() == 0
+    local insemi = swep:GetValue("uplp_semi")
+
     if anim == "reload_start" then
-        if swep:Clip1() == 0 and swep:GetOwner():GetAmmoCount(swep.Ammo) <= 1 then 
+        if empty and swep:GetOwner():GetAmmoCount(swep.Ammo) <= 1 then 
             swep.dontcontinuereload = true
+            if insemi then return "reload_start_empty_only_pumpy" end
             return "reload_start_empty_only"
         end
+        if empty and insemi then
+            return "reload_start_empty_pumpy"
+        end
+
     elseif anim == "reload_finish" or anim == "reload_insert" then
         if swep.dontcontinuereload then
             swep.dontcontinuereload = nil
             return "idle"
         end
+    elseif insemi and anim == "fire" then
+        return "fire_pump" 
     end
 
     return anim
@@ -515,7 +519,7 @@ SWEP.Animations = {
     },
 
     ["fire_pump"] = {
-        Source = {"fire"},
+        Source = {"fire_pumpy"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             -- { s = mechh, t = 0, v = 0.75 },
@@ -527,14 +531,6 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0, v = 0.75 },
-        },
-    },
-
-    ["fire_pump_empty"] = {
-        Source = {"fire"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            -- { s = mechh, t = 0, v = 0.75 },
         },
     },
 
@@ -553,7 +549,7 @@ SWEP.Animations = {
     ["reload_start"] = {
         Source = "reload_start",
         RestoreAmmo = 1,
-		MinProgress= 0.75,
+		-- MinProgress= 0.75,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = ShellInsert, t = 13.5 / 30, v = 0.6 },
@@ -561,7 +557,18 @@ SWEP.Animations = {
     },
     ["reload_start_empty"] = {
         Source = "reload_start_empty",
-		MinProgress= 0.65,
+		-- MinProgress= 0.65,
+		RestoreAmmo = 2,
+        EventTable = {
+            -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
+            { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
+            { s = ShellInsert, t = 40 / 30, v = 0.6 },
+        },
+    },
+    ["reload_start_empty_pumpy"] = {
+        Source = "reload_start_empty_pumpy",
+		-- MinProgress= 0.65,
 		RestoreAmmo = 2,
         EventTable = {
             -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -571,9 +578,19 @@ SWEP.Animations = {
         },
     },
 
-        Source = "reload_start_empty_only",
     ["reload_start_empty_only"] = {
-		MinProgress= 0.75,
+        Source = "reload_start_empty_only",
+		-- MinProgress= 0.75,
+        EventTable = {
+            -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
+            { s = pathUT .. "breechclose.ogg", t = 15 / 30, v = 0.6 },
+        },
+    },
+
+    ["reload_start_empty_only_pumpy"] = {
+        Source = "reload_start_empty_only_pumpy",
+		-- MinProgress= 0.75,
         EventTable = {
             -- { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "breechload.ogg", t = 5 / 30, v = 0.6 },
@@ -632,6 +649,22 @@ SWEP.Animations = {
         },
     },
 	
+    ["firemode_1"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle
+    },
+    ["firemode_1_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = thetoggle
+    },
+    ["firemode_2"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle
+    },
+    ["firemode_2_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = thetoggle
+    },
     ["toggle"] = {
         Source = "modeswitch",
         EventTable = thetoggle
@@ -653,9 +686,9 @@ SWEP.Animations = {
 
 //// Attachments
 
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local eles = data.elements
-    local mdl = data.model
+-- SWEP.Hook_ModifyBodygroups = function(wep, data)
+--     local eles = data.elements
+--     local mdl = data.model
 
     -- if eles["uplp_spas_mag_drum"] or eles["uplp_spas_mag_drum_soda"] then -- many shells on drum
         -- for k, v in pairs(aaaaaa) do
@@ -665,18 +698,18 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         -- end
     -- end
 
-end
+-- end
 
 SWEP.AttachmentElements = {
-    ["uplp_spas_brl_short"] = { Bodygroups = { { 1, 1 } } , AttPosMods = {
-    [3] = { Pos = Vector(-0.1, 0, 18.9), Icon_Offset = Vector(4.75, 0, 0), },
+    ["uplp_spas_short"] = { 
+        Bodygroups = { { 1, 1 }, { 2, 1 } }, 
+        AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(4.75, 0, 0) },
     }},
-	
-    ["uplp_spas_mag6"] = { Bodygroups = { { 2, 1 } } },
 	
     ["uplp_spas_stock_fixed"] = { Bodygroups = { { 3, 1 } } },
     ["uplp_spas_stock_folding_e"] = { Bodygroups = { { 3, 0 } } },
     ["uplp_spas_stock_folding_f"] = { Bodygroups = { { 3, 3 } } },
+    ["uplp_spas_stock_tube"] = { Bodygroups = { { 3, 4 } } },
 	
     ["uplp_spas_hook"] = { Bodygroups = { { 4, 1 } } },
     ["uplp_spas_hookf"] = { Bodygroups = { { 4, 2 } } },
@@ -708,26 +741,22 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_spas_barrel"},
-        DefaultIcon = Material(defatt2 .. "akbar.png", "mips smooth"),
+        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(-0.1, -0.5, 19.5),
+        Pos = Vector(0, 0.5, 19.5),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_shotgun_supp"},
+        Category = {"uplp_molot_muzzle"},
         Bone = "body",
-        Pos = Vector(-0.1, 0, 23.7),
+        Scale = 1.25,
+        Pos = Vector(-0.1, 0.015, 25.1),
         Ang = Angle(90, 90, 180),
-        ExcludeElements = {"nomuz"}
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_spas_mag"},
-        -- DefaultIcon = Material(defatt .. "mag_pistol.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(-0.1, 1.5, 19.5),
-        Ang = Angle(90, 90, 180),
+        ExcludeElements = {"nomuz"},
+        RejectAttachments = {
+        ["uplp_sg_mz_vepr"] = true,
+        }
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
@@ -750,12 +779,45 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
-        Bone = "pump",
-        Pos = Vector(-1.35, -3.7, 8.5),
+        Bone = "tac",
+        Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, -90),
     },
 
     -- Cosmetic shit
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/spas_1.mdl",
+        Category = "stickers",
+        Bone = "pump",
+        Pos = Vector(0.5, -3.3, 8),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/spas_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.5, 0.5, 3),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/spas_3.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.5, 0.5, -1.5),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
+        StickerModel = "models/weapons/arc9/uplp/stickers/spas_4.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, -0.5, -3),
+        Ang = Angle(90, 90, 180),
+    },
+
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",

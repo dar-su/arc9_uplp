@@ -1,51 +1,26 @@
 local ATT = {}
 
------- REPLACE ICONS WHEN THEY ARE CREATED - THEY USE AK ONES AS TEMP
-
-local iconfolder = "entities/uplp_attachements/ak/"
+local iconfolder = "entities/uplp_attachements/spas/"
 
 -------------------- BARRELS
----------- uplp_spas_brl_short
+---------- uplp_spas_short
 
 local ATT = {}
 
-ATT.PrintName = "460mm LAW Barrel"
-ATT.CompactName = "460mm"
+ATT.PrintName = "460mm LAW Barrel + 6-Round Magazine"
+ATT.CompactName = "Short Variant"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "barr/vlong.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "short.png", "mips smooth")
 ATT.Category = "uplp_spas_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 
 -- Negatives
-
-ARC9.LoadAttachment(ATT, "uplp_spas_brl_short")
-
--------------------- MAGAZINES
----------- uplp_spas_mag6
-
-ATT = {}
-
-ATT.PrintName = "6-Round Magazine"
-ATT.CompactName = "6R"
-ATT.Description = ATT.PrintName
-
-ATT.Icon = Material(iconfolder .. "mag/b.png", "mips smooth")
-
-ATT.Category = "uplp_spas_mag"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.ActivateElements = {"uplp_spas_mag6"}
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_20.mdl"
-
--- Positives
-
--- Negatives
 ATT.ClipSizeOverride = 6
 
-ARC9.LoadAttachment(ATT, "uplp_spas_mag6")
+ARC9.LoadAttachment(ATT, "uplp_spas_short")
 
 -------------------- STOCKS
 ---------- uplp_spas_stock_fixed
@@ -56,12 +31,14 @@ ATT.PrintName = "Fixed Stock"
 ATT.CompactName = "Fixed"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock/std.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "fix.png", "mips smooth")
 
 ATT.Category = "uplp_spas_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_spas_stock_fixed"}
+
+ATT.CustomizePos = Vector(17, 31.5, 4)
 
 -- Positives
 
@@ -77,7 +54,7 @@ ATT.PrintName = "Folding Stock"
 ATT.CompactName = "Folding"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock/ms.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "fold.png", "mips smooth")
 
 ATT.Category = "uplp_spas_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -86,6 +63,7 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
 		ActivateElements = {"uplp_spas_stock_folding_e"},
+        CustomizePos = Vector(17, 31.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -107,7 +85,7 @@ ATT.PrintName = "Folding Stock with Hook"
 ATT.CompactName = "Folding (H)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock/ms.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "hook.png", "mips smooth")
 
 ATT.Category = "uplp_spas_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -116,6 +94,7 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
 		ActivateElements = {"uplp_spas_stock_folding_e", "uplp_spas_hook"},
+        CustomizePos = Vector(17, 31.5, 4),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -128,3 +107,37 @@ ATT.ToggleStats = {
 -- Negatives
 
 ARC9.LoadAttachment(ATT, "uplp_spas_stock_folding_hook")
+
+---------- uplp_spas_stock_tube
+
+ATT = {}
+
+ATT.PrintName = "buffr Stock"
+ATT.CompactName = "buffa"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "tub.png", "mips smooth")
+
+ATT.Category = "uplp_spas_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_spas_stock_tube"}
+
+ATT.CustomizePos = Vector(17, 31.5, 4)
+
+-- Positives
+
+-- Negatives
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_ar15_stock"},
+        DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
+        Pos = Vector(2.5, 0, -0.3),
+        Scale = 1.04,
+        Ang = Angle(-7, 0, 0),
+    },
+}
+
+ARC9.LoadAttachment(ATT, "uplp_spas_stock_tube")
