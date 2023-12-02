@@ -197,6 +197,8 @@ local desc_midbigoptic = "\nHar <color=255,150,100>relativt hög sväjning och h
 local desc_bigoptic = "\nHar <color=255,100,100>hög sväjning och hanteringsstraff</color>."
 local desc_biggeroptic = "\nHar <color=255,100,100>väldigt hög sväjning och hanteringsstraff</color>."
 
+local desc_dovetail = "\nMonterad på sidan med en laxstjärtskena.\nKan ej utrusta <color=255,100,100>normala riktmedel eller vissa dammskydd</color>."
+
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holografiskt Sikte"
 L["uplp_optic_553.compactname"] = "500S"
@@ -328,14 +330,25 @@ L["uplp_optic_devom.description"] = "Rödpunktsikte av hög kvalitet gjort av El
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
-L["uplp_optic_dovetail_kobra.description"] = "Militär grad reflexsikte av ryskt ursprung med ett kors hårkors.\nMonterad på sidan med en laxstjärtskena.\nKan ej utrusta <color=255,100,100>normala riktmedel eller vissa dammskydd</color>."
+L["uplp_optic_dovetail_kobra.description"] = "Militär grad reflexsikte av ryskt ursprung med ett kors hårkors." .. desc_dovetail
 
 L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering.\nMonterad på sidan med en laxstjärtskena.\nKan ej utrusta <color=255,100,100>normala riktmedel eller vissa dammskydd</color>."
+L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering." .. desc_dovetail
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
+
+L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflexsikte"
+L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
+L["uplp_optic_dovetail_okp.description"] = "Slät och lätt reflexsikte av ryskt ursprung." .. desc_dovetail
+
+L["uplp_optic_okp.printname"] = "OPWK-B Reflexsikte"
+L["uplp_optic_okp.compactname"] = "OPWK"
+L["uplp_optic_okp.description"] = "Slät och lätt reflexsikte av ryskt ursprung." .. desc_cqcoptic
+
+-- "Optical Sight, High Quality" in Russian
+-- "Оптический прицел высого качества" - 'OPWK'
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"

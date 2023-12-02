@@ -197,6 +197,8 @@ local desc_midbigoptic = "\nHas <color=255,150,100>somewhat high sway and handli
 local desc_bigoptic = "\nHas <color=255,100,100>high sway and handling penalities</color>."
 local desc_biggeroptic = "\nHas <color=255,100,100>very high sway and handling penalities</color>."
 
+local desc_dovetail = "\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
 L["uplp_optic_553.compactname"] = "500S"
@@ -328,14 +330,25 @@ L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elit
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
-L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle.\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail
 
 L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification.\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
+
+L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflex Sight"
+L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
+L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail
+
+L["uplp_optic_okp.printname"] = "OPWK-B Reflex Sight"
+L["uplp_optic_okp.compactname"] = "OPWK"
+L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_cqcoptic
+
+-- "Optical Sight, High Quality" in Russian
+-- "Оптический прицел высого качества" - 'OPWK'
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"

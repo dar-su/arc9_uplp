@@ -2310,3 +2310,100 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_pso")
+
+
+---------- uplp_optic_okps
+
+ATT = {}
+
+ATT.PrintName = "OPWK-B Reflex Sight" -- OKP-7 Reflex Sight
+ATT.CompactName = "OPWK-B"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "okp.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_okp.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0.12, 8, -1.175),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 444
+ATT.HoloSightColorable = true
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0, 0, -0.1)
+
+table.Merge(ATT, stats_cqc)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_okps")
+
+
+---------- uplp_optic_dovetail_okp
+
+
+ATT = {}
+
+ATT.PrintName = "OPWK-A Reflex Sight"
+ATT.CompactName = "OPWK-A"
+ATT.Description = ATT.PrintName
+
+ATT.ActivateElements = {"uplp_optic_dovetail_used", "uplp_ak_nmount", "uplp_ak_smg_nmount"}
+-- ATT.ExcludeElements = {"use_optics"}
+
+ATT.Icon = Material(iconfolder .. "ak/okp.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_okp_dovetail.mdl"
+ATT.ModelOffset = Vector(0, 0.2, 0)
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(-0.375, 8, -3.05),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.5)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 511
+ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = 0.01
+
+ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+table.Merge(ATT, stats_cqc)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_okp")
+

@@ -197,6 +197,8 @@ local desc_midbigoptic = "\nTiene <color=255,150,100>penalizaciones por balanceo
 local desc_bigoptic = "\nTiene <color=255,100,100>elevadas penalizaciones de balanceo y manejo</color>."
 local desc_biggeroptic = "\nTiene <color=255,100,100>penalizaciones de balanceo y manejo muy elevadas</color>."
 
+local desc_dovetail = "\nMontaje lateral mediante carril de cola de milano.\nNo puede equiparse <color=255,100,100>visores normales o determinados guardapolvos</color>."
+
 /////////// Optics
 L["uplp_optic_553.printname"] = "Mira Holográfica SightLine™ Serie 500"
 L["uplp_optic_553.compactname"] = "500S"
@@ -336,6 +338,17 @@ L["uplp_optic_dovetail_pso.description"] = "Visor de origen ruso con 4 aumentos.
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
+
+L["uplp_optic_dovetail_okp.printname"] = "Mira Réflex OPWK-A"
+L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
+L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin.\nMontaje lateral mediante carril de cola de milano.\nNo puede equiparse <color=255,100,100>visores normales o determinados guardapolvos</color>." -- TRANSLATE
+
+L["uplp_optic_okp.printname"] = "Mira Réflex OPWK-B"
+L["uplp_optic_okp.compactname"] = "OPWK"
+L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_cqcoptic -- TRANSLATE
+
+-- "Optical Sight, High Quality" in Russian
+-- "Оптический прицел высого качества" - 'OPWK'
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Punto Rojo Inclinado"
