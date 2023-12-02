@@ -1963,14 +1963,9 @@ L["uplp_weapon_spas_real"] = "Franchi SPAS-12"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_spas_brl_short.printname"] = "460mm LAW-Pipa"
-L["uplp_spas_brl_short.compactname"] = "460mm"
-L["uplp_spas_brl_short.description"] = "Förkortad 460mm pipa som används av polisiära versionen av SPAW-12."
-
-////// Magazines
-L["uplp_spas_mag6.printname"] = "6-Patronersmagasinrör"
-L["uplp_spas_mag6.compactname"] = "6R Rör"
-L["uplp_spas_mag6.description"] = "Förkortat magasinrör som håller 6 patroner."
+L["uplp_spas_short.printname"] = "LAW-Konfiguering"
+L["uplp_spas_short.compactname"] = "LAW"
+L["uplp_spas_short.description"] = "Förkortad konfiguering av SPAW-12:an gjord för polisiära verksamheter.\nKommer med en <color=160,160,255>460mm pipa</color> och ett <color=255,100,100>förkortat magasinrör</color>."
 
 ////// Stocks
 L["uplp_spas_stock_fixed.printname"] = "Fast Kolv"
@@ -1984,6 +1979,10 @@ L["uplp_spas_stock_folding.description"] = "Vikbar kolv till SPAW-12.\nOm den ä
 L["uplp_spas_stock_folding_hook.printname"] = "Vikbar Kolv med Krok"
 L["uplp_spas_stock_folding_hook.compactname"] = "Vikbar (K)"
 L["uplp_spas_stock_folding_hook.description"] = "Vikbar kolv till SPAW-12.\nOm den är  \"Invikt\": Kan ej utrusta <color=255,100,100>riktmedel</color>.\nKommer med originala kroken som användes för skytte med en hand."
+
+L["uplp_spas_stock_tube.printname"] = "Bufferrör"
+L["uplp_spas_stock_tube.compactname"] = "Bufferrör"
+L["uplp_spas_stock_tube.description"] = "Aftermarket pistolgrepp med inbyggt bufferrör för användning med AR-15-kolvar."
 
 //////////////////// M92FS
 L["uplp_weapon_m9"] = "PM92"

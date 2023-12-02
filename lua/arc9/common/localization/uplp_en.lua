@@ -1960,9 +1960,9 @@ L["uplp_weapon_spas_real"] = "Franchi SPAS-12"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_spas_short.printname"] = "460mm LAW Barrel + 6-Round Magazine Tube"
-L["uplp_spas_short.compactname"] = "Short Variant"
-L["uplp_spas_short.description"] = "Shortened law enforcement version of SPAW with 460mm (18.11\") barrel and shortened magazine tube holding 6 rounds."
+L["uplp_spas_short.printname"] = "LAW Configuration"
+L["uplp_spas_short.compactname"] = "LAW"
+L["uplp_spas_short.description"] = "Shortened configuration of the SPAW-12 intended for law enforcement.\nComes with a <color=160,160,255>460mm (18.11\") barrel</color> and <color=255,100,100>shortened magazine tube</color>."
 
 ////// Stocks
 L["uplp_spas_stock_fixed.printname"] = "Fixed Stock"
@@ -1977,9 +1977,9 @@ L["uplp_spas_stock_folding_hook.printname"] = "Folding Stock with Hook"
 L["uplp_spas_stock_folding_hook.compactname"] = "Folding (H)"
 L["uplp_spas_stock_folding_hook.description"] = "Collapsible folding stock for the SPAW-12.\nComes with the original hook intended for use with one handed shooting.\nWhen \"Folded\": Cannot equip <color=255,100,100>optics</color>."
 
-L["uplp_spas_stock_tube.printname"] = "Grip with Buffer Tube"
+L["uplp_spas_stock_tube.printname"] = "Buffer Tube"
 L["uplp_spas_stock_tube.compactname"] = "Buffer Tube"
-L["uplp_spas_stock_tube.description"] = "Aftermarket custom grip with an attached buffer tube for using AR-15 stocks."
+L["uplp_spas_stock_tube.description"] = "Aftermarket pistol grip with built-in buffer tube for attaching AR-15 stocks."
 
 //////////////////// M92FS
 L["uplp_weapon_m9"] = "PM92"

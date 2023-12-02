@@ -1949,8 +1949,8 @@ L["uplp_scar_rail_ext.description"] = "Un raíl extendido para el XAR."
 
 -- Expansion 1
 //////////////////// Mossberg 590
-L["uplp_weapon_mossberg"] = "Thunder 500"
-L["uplp_weapon_mossberg_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
+L["uplp_weapon_mossberg"] = "Thunder 500" -- TRANSLATE (?)
+L["uplp_weapon_mossberg_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications." -- TRANSLATE
 
 L["uplp_weapon_mossberg_real"] = "Mossberg 590"
 
@@ -1962,14 +1962,9 @@ L["uplp_weapon_spas_real"] = "Franchi SPAS-12"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_spas_brl_short.printname"] = "Cañón 460mm LAW"
-L["uplp_spas_brl_short.compactname"] = "460mm"
-L["uplp_spas_brl_short.description"] = "Cañón acortado de 460mm (18.11\") utilizado por la versión policial del SPAW-12."
-
-////// Magazines
-L["uplp_spas_mag6.printname"] = "Tubo cargador de 6 Rondas"
-L["uplp_spas_mag6.compactname"] = "6R Tubo"
-L["uplp_spas_mag6.description"] = "Tubo cargador acortado con capacidad para 6 cartuchos."
+L["uplp_spas_short.printname"] = "Configuración LAW"
+L["uplp_spas_short.compactname"] = "LAW"
+L["uplp_spas_short.description"] = "Shortened configuration of the SPAW-12 intended for law enforcement.\nComes with a <color=160,160,255>460mm (18.11\") barrel</color> and <color=255,100,100>shortened magazine tube</color>." -- TRANSLATE
 
 ////// Stocks
 L["uplp_spas_stock_fixed.printname"] = "Culata Fija"
@@ -1978,27 +1973,31 @@ L["uplp_spas_stock_fixed.description"] = "Robusta culata fija para el SPAW-12."
 
 L["uplp_spas_stock_folding.printname"] = "Culata Plegable"
 L["uplp_spas_stock_folding.compactname"] = "Plegable"
-L["uplp_spas_stock_folding.description"] = "Culata plegable para el SPAW-12.\nCuando \"Plegado\": No puede equiparse <color=255,100,100>visores</color>."
+L["uplp_spas_stock_folding.description"] = "Culata plegable para el SPAW-12.\nCuando \"Plegado\": No puede equiparse <color=255,100,100>visores</color>." -- TRANSLATE (FIX?)
 
 L["uplp_spas_stock_folding_hook.printname"] = "Culata Plegable con Gancho"
 L["uplp_spas_stock_folding_hook.compactname"] = "Plegable (G)"
-L["uplp_spas_stock_folding_hook.description"] = "Culata plegable para el SPAW-12.\nCuando \"Plegado\": No puede equiparse <color=255,100,100>visores</color>.\nViene con el gancho original previsto para su uso con una sola mano de tiro."
+L["uplp_spas_stock_folding_hook.description"] = "Culata plegable para el SPAW-12.\nCuando \"Plegado\": No puede equiparse <color=255,100,100>visores</color>.\nViene con el gancho original previsto para su uso con una sola mano de tiro." -- TRANSLATE (FIX?)
+
+L["uplp_spas_stock_tube.printname"] = "Tubo Amortiguador"
+L["uplp_spas_stock_tube.compactname"] = "Amortiguador"
+L["uplp_spas_stock_tube.description"] = "Aftermarket pistol grip with built-in buffer tube for attaching AR-15 stocks." -- TRANSLATE
 
 //////////////////// M92FS
 L["uplp_weapon_m9"] = "PM92"
-L["uplp_weapon_m9_desc"] = "The \"Pistola Modello 92\", shortened PM92, is a semi-automatic 9mm handgun known for its exceptional accuracy and reliability. It has been a favored sidearm for military and law enforcement agencies around the world for decades."
+L["uplp_weapon_m9_desc"] = "The \"Pistola Modello 92\", shortened PM92, is a semi-automatic 9mm handgun known for its exceptional accuracy and reliability. It has been a favored sidearm for military and law enforcement agencies around the world for decades." -- TRANSLATE
 
 L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"
-L["uplp_weapon_m1911_desc"] = "The CM .45, a classic semi-automatic pistol, is renowned for its enduring design and service history, originally adopted by the United States military in 1911. It has since become an iconic and widely-used handgun, cherished for its .45 Auto caliber and solid construction."
+L["uplp_weapon_m1911_desc"] = "The CM .45, a classic semi-automatic pistol, is renowned for its enduring design and service history, originally adopted by the United States military in 1911. It has since become an iconic and widely-used handgun, cherished for its .45 Auto caliber and solid construction." -- TRANSLATE
 
 L["uplp_weapon_m1911_real"] = "Colt M1911"
 
 //////////////////// DVL-10
 L["uplp_weapon_dvl10"] = "RR-40"
-L["uplp_weapon_dvl10_desc"] = "The lightweight \"Rapid Repeater 40\", or RR-40 for short, is a heavily customizable bolt-action rifle of Russian origin. It is renowned for being heavily customizable for military use with one of its many unique models."
+L["uplp_weapon_dvl10_desc"] = "The lightweight \"Rapid Repeater 40\", or RR-40 for short, is a heavily customizable bolt-action rifle of Russian origin. It is renowned for being heavily customizable for military use with one of its many unique models." -- TRANSLATE
 
 L["uplp_weapon_dvl10_m1"] = "RR-40 Saboteur"
 L["uplp_weapon_dvl10_m2"] = "RR-40 Urbana"
@@ -2008,7 +2007,7 @@ L["uplp_weapon_dvl10_real"] = "DVL-10"
 
 //////////////////// SR-25
 L["uplp_weapon_sr25"] = "DMR-10"
-L["uplp_weapon_sr25_desc"] = "Based on the renowned AR-15 platform, the DMR-10 is a powerful semi-automatic only marksman rifle. While initially losing the competition in the 1950s to the BR14, the DMR-10 still found its way into milirary hands by various forces."
+L["uplp_weapon_sr25_desc"] = "Based on the renowned AR-15 platform, the DMR-10 is a powerful semi-automatic only marksman rifle. While initially losing the competition in the 1950s to the BR14, the DMR-10 still found its way into milirary hands by various forces." -- TRANSLATE
 
 L["uplp_weapon_sr25_real"] = "KAC SR-25"
 
@@ -2016,26 +2015,26 @@ L["uplp_weapon_sr25_real"] = "KAC SR-25"
 -- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "UM-50"
-L["uplp_weapon_orsis_desc"] = "The \"Udar Molnii 50\" (Lightning Strike 50) is the latest and most powerful precision rifle out of Russia in modern times. The UM-50 is chambered for the powerful 12.7x108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
+L["uplp_weapon_orsis_desc"] = "The \"Udar Molnii 50\" (Lightning Strike 50) is the latest and most powerful precision rifle out of Russia in modern times. The UM-50 is chambered for the powerful 12.7x108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets." -- TRANSLATE
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
 //////////////////// AS VAL
 L["uplp_weapon_asval"] = "FAKENAME"
 -- REPLACE REAL NAMES WITH FAKE NAMES LATER, ALTERNATIVE REWRITE
-L["uplp_weapon_asval_desc"] = "An integrally suppressed Russian firearm, the AS-VAL is a customizable weapon that can be converted into various 9x39mm-fed firearms, including the VSS semi-automatic sniper, SR-3 special concealed automatic rifle, the cost-reduced redesigned 9A-91 rifle and VSK-94 sniper rifle."
+L["uplp_weapon_asval_desc"] = "An integrally suppressed Russian firearm, the AS-VAL is a customizable weapon that can be converted into various 9x39mm-fed firearms, including the VSS semi-automatic sniper, SR-3 special concealed automatic rifle, the cost-reduced redesigned 9A-91 rifle and VSK-94 sniper rifle." -- IGNORE
 
 L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
 
 //////////////////// ASh-12
-L["uplp_weapon_ash12"] = "FAKENAME"
-L["uplp_weapon_ash12_desc"] = "REPLACEDESC"
+L["uplp_weapon_ash12"] = "FAKENAME" -- IGNORE
+L["uplp_weapon_ash12_desc"] = "REPLACEDESC" -- IGNORE
 
 L["uplp_weapon_ash12_real"] = "ASh-12"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW Bullpup"
-L["uplp_weapon_aug_desc"] = "The \"Automatische Waffen\" Bullpup (Automatic Rifle Bullpup) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun."
+L["uplp_weapon_aug_desc"] = "The \"Automatische Waffen\" Bullpup (Automatic Rifle Bullpup) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun." -- TRANSLATE
 
 L["uplp_weapon_aug_smg"] = "AW MP"
 L["uplp_weapon_aug_smg_full"] = "Automatische Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
@@ -2046,6 +2045,6 @@ L["uplp_weapon_aug_real"] = "Steyr AUG"
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "The \"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Wrist Destroyer 12\") is a very powerful Russian revolver firing the very large 12.7x55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"."
+L["uplp_weapon_rsh12_desc"] = "The \"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Wrist Destroyer 12\") is a very powerful Russian revolver firing the very large 12.7x55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"." -- TRANSLATE
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
