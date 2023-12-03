@@ -2331,7 +2331,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0.12, 8, -1.175),
+        Pos = Vector(0.12, 8, -1.225),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
@@ -2347,8 +2347,8 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 444
-ATT.HoloSightColorable = true
+ATT.HoloSightSize = 466
+ATT.HoloSightColorable = false 
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2380,7 +2380,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.375, 8, -3.05),
+        Pos = Vector(-0.375, 8, -3.14),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
@@ -2396,8 +2396,8 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 511
-ATT.HoloSightColorable = true
+ATT.HoloSightSize = 466
+ATT.HoloSightColorable = false 
 ATT.HoloSightDepthAdjustment = 0.01
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
