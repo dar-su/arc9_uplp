@@ -335,6 +335,7 @@ SWEP.BulletBones = {
     [3] = "bullet3",
     [4] = "bullet4",
 }
+SWEP.BulletBonesSub1 = true 
 
 SWEP.HideBones = {
     "fakemag",

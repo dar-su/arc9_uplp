@@ -242,7 +242,7 @@ SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag.mdl"
 SWEP.DropMagazineTime = 0.75 * 1.05
-SWEP.DropMagazineQCA = 4
+SWEP.DropMagazineQCA = 5
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 95, 90)
 SWEP.DropMagazineVelocity = Vector(0, 80, -80)
@@ -327,6 +327,7 @@ SWEP.BulletBones = {
     [3] = "bullet3",
     [4] = "bullet4",
 }
+SWEP.BulletBonesSub1 = true 
 
 SWEP.HideBones = {
     "fakemag",
@@ -339,16 +340,16 @@ SWEP.HideBones = {
 
 SWEP.ReloadHideBoneTables = {
     [1] = {
-        "mag",
+        "fakemag",
         "fakerounds",
     },
     [2] = {
-        "fakemag",
+        "mag",
         "bullet1",
         "bullet2",
         "bullet3",
         "bullet4",
-    }
+    },
 }
 
 local mechh = {
@@ -791,7 +792,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 90 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0.3},
-            {hide = 1, t = 22/30},
+            {hide = 2, t = 22/30},
             {hide = 0, t = 1.1},
         },
         IKTimeLine = {
