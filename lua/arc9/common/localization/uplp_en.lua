@@ -675,6 +675,10 @@ L["uplp_ak_dc_azen.printname"] = "Zenith Dust Cover"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
 L["uplp_ak_dc_azen.description"] = "Modernized dust cover for AK rifles. Comes with built-in top rail for optics."
 
+L["uplp_ak_dc_internals.printname"] = "No Dust Cover"
+L["uplp_ak_dc_internals.compactname"] = "No Dust Cover"
+L["uplp_ak_dc_internals.description"] = "awwe u suwe u wanna take dis cuvw off? dust might get inny-winnies! but gunny will be wighter and yew will be abow to see whats inside OwO\nit's wike peek-a-boo with de techy stuffs!"
+
 L["uplp_ak_dc_beryl.printname"] = "Szermierz Dust Cover & Rail"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
 L["uplp_ak_dc_beryl.description"] = "Dust cover and top rail combination made for an AK rifle of Polish origin."

@@ -510,6 +510,13 @@ $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
 
+
+$bonemerge "bullet1"
+$bonemerge "bullet2"
+$bonemerge "bullet3"
+$bonemerge "bullet4"
+$bonemerge "fakerounds"
+
 // $collisionmodel "col.smd"
 // {
 // 	$mass 22
