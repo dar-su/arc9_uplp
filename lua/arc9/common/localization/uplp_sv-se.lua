@@ -2067,6 +2067,61 @@ L["uplp_weapon_aug_mg_full"] = "Automatiche Waffen-Maschinengewehr (\"Automatvap
 
 L["uplp_weapon_aug_real"] = "Steyr AUG"
 
+/////////// Attachments
+////// Irons
+L["uplp_aug_rs.printname"] = "Järn och Korn"
+L["uplp_aug_rs.compactname"] = "JK"
+L["uplp_aug_rs.description"] = "Kompakt järn och korn gjort för användning av AW-MP."
+
+////// Top Rail
+L["uplp_aug_top_scope.printname"] = "AW-UG-Riktmedel"
+L["uplp_aug_top_scope.compactname"] = "Riktmedel"
+L["uplp_aug_top_scope.description"] = "Traditionellt teleskopiskt riktmedel med 1,5x magnifiering som används på normala AW-UG-modeller."
+
+L["uplp_aug_top_rail.printname"] = "Toppmonterad Skena"
+L["uplp_aug_top_rail.compactname"] = "Skena"
+L["uplp_aug_top_rail.description"] = "Ersätter riktmedlet med traditionell RIS-skenafunktionalitet för att montera traditionella riktmedel."
+
+////// Bottom Rail
+L["uplp_aug_bot_grip.printname"] = "Vikbart Framgrepp"
+L["uplp_aug_bot_grip.compactname"] = "Framgrepp"
+L["uplp_aug_bot_grip.description"] = "Vikbart framgrepp utrustat på dem flesta AW-UG-modellerna som sänker rekylen."
+
+L["uplp_aug_bot_rail.printname"] = "Undermonterad Skena"
+L["uplp_aug_bot_rail.compactname"] = "Skena"
+L["uplp_aug_bot_rail.description"] = "Ersätter det vikbara framgreppet med traditionell RIS-skenafunktionalitet för montering av framgrepp från eftermarknaden."
+
+////// Barrels
+L["uplp_aug_brl_mg.printname"] = "900mm HBAR-Pipa"
+L["uplp_aug_brl_mg.compactname"] = "900mm"
+L["uplp_aug_brl_mg.description"] = "Lång och tung 900mm pipa gjord för AW-MG, kulspruta versionen av AW-UG.\nKommer med <color=100,255,100>inbyggt benstöd</color>."
+
+L["uplp_aug_brl_smg.printname"] = "508mm Para-Pipa"
+L["uplp_aug_brl_smg.compactname"] = "508mm"
+L["uplp_aug_brl_smg.description"] = "Förkortad 508mm pipa som används på 9x19mm AW-MP, kulsprutepistol versionen av AW-UG."
+
+////// Magazines
+L["uplp_aug_mag_556_40.printname"] = "40-Patroner 5.56x45mm"
+L["uplp_aug_mag_556_40.compactname"] = "40P 5.56"
+L["uplp_aug_mag_556_40.description"] = "Förlängt 40-patronersmagasin till AW-UG."
+
+L["uplp_aug_mag_556_52.printname"] = "52-Patroner 5.56x45mm Trumma"
+L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
+L["uplp_aug_mag_556_52.description"] = "52-patroners trummagasin till AW-UG."
+
+L["uplp_aug_mag_919_25.printname"] = "25-Patroner 9x19mm"
+L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
+L["uplp_aug_mag_919_25.description"] = "25-patronersmagasin till AW-MP."
+
+L["uplp_aug_mag_919_40.printname"] = "40-Patroner 9x19mm"
+L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
+L["uplp_aug_mag_919_40.description"] = "Förlängt 40-Patronersmagasin till AW-MP."
+
+L["uplp_aug_mag_300_10.printname"] = "10-Patroner .300 SP"
+L["uplp_aug_mag_300_10.compactname"] = "10R .300"
+L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-UG.\nLaddad med <color=255,255,100>specialiserad .300 SP-patroner</color>."
+-- ".300 Sound Proof"
+
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
 L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Handledsförstöraren 12\") är en väldigt kraftfull rysk revolver som skjuter den stora 12.7x55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."

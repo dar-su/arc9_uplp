@@ -1987,6 +1987,9 @@ L["uplp_spas_short.printname"] = "LAW Configuration"
 L["uplp_spas_short.compactname"] = "LAW"
 L["uplp_spas_short.description"] = "Shortened configuration of the SPAW-12 intended for law enforcement.\nComes with a <color=160,160,255>460mm (18.11\") barrel</color> and <color=255,100,100>shortened magazine tube</color>."
 
+-- IGNORE; TESTING PURPOSES
+-- L["uplp_spas_short.description"] = "Destiny 2 Font Test = <font=D2_20></font>Bow, <font=D2_20></font>Auto Rifle, <font=D2_20></font>Pulse Rifle, <font=D2_20></font>Scout Rifle, <font=D2_20>	</font>Hand Cannon, <font=D2_20>	</font>Submachine Gun, <font=D2_20>	</font>Sidearm</font>"
+
 ////// Stocks
 L["uplp_spas_stock_fixed.printname"] = "Fixed Stock"
 L["uplp_spas_stock_fixed.compactname"] = "Fixed"
@@ -2063,6 +2066,61 @@ L["uplp_weapon_aug_mg"] = "AW-MG"
 L["uplp_weapon_aug_mg_full"] = "Automatiche Waffen-Maschinengewehr (\"Automatic Weapon Machine Gun\")"
 
 L["uplp_weapon_aug_real"] = "Steyr AUG"
+
+/////////// Attachments
+////// Irons
+L["uplp_aug_rs.printname"] = "Iron Sights"
+L["uplp_aug_rs.compactname"] = "Irons"
+L["uplp_aug_rs.description"] = "Compact iron sights intended for use with the AW-MP."
+
+////// Top Rail
+L["uplp_aug_top_scope.printname"] = "AW-UG Scope"
+L["uplp_aug_top_scope.compactname"] = "Scope"
+L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models."
+
+L["uplp_aug_top_rail.printname"] = "Top Rail"
+L["uplp_aug_top_rail.compactname"] = "Rail"
+L["uplp_aug_top_rail.description"] = "Replaces the scope with a traditional RIS-style rail for mounting traditional optics."
+
+////// Bottom Rail
+L["uplp_aug_bot_grip.printname"] = "Folding Foregrip"
+L["uplp_aug_bot_grip.compactname"] = "Foregrip"
+L["uplp_aug_bot_grip.description"] = "Folding foregrip equipped on most AW-UG models that reduces recoil."
+
+L["uplp_aug_bot_rail.printname"] = "Bottom Rail"
+L["uplp_aug_bot_rail.compactname"] = "Rail"
+L["uplp_aug_bot_rail.description"] = "Replaces the folding foregrip with a traditional RIS-style rail for mounting aftermarket foregrips."
+
+////// Barrels
+L["uplp_aug_brl_mg.printname"] = "900mm HBAR Barrel"
+L["uplp_aug_brl_mg.compactname"] = "900mm"
+L["uplp_aug_brl_mg.description"] = "Long and heavy 900mm (35.4\") barrel intended for the AW-MG, the machine gun variant of the AW-UG.\nComes with an <color=100,255,100>integral bipod</color>."
+
+L["uplp_aug_brl_smg.printname"] = "508mm Para Barrel"
+L["uplp_aug_brl_smg.compactname"] = "508mm"
+L["uplp_aug_brl_smg.description"] = "Shortened 508mm (20\") barrel used on the 9x19mm AW-MP, the submachine gun variant of the AW-UG."
+
+////// Magazines
+L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56x45mm"
+L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
+L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
+
+L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56x45mm Drum"
+L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
+L["uplp_aug_mag_556_52.description"] = "52-round drum magazine for the AW-UG."
+
+L["uplp_aug_mag_919_25.printname"] = "25-Round 9x19mm"
+L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
+L["uplp_aug_mag_919_25.description"] = "25-round magazine for the AW-MP."
+
+L["uplp_aug_mag_919_40.printname"] = "40-Round 9x19mm"
+L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
+L["uplp_aug_mag_919_40.description"] = "40-round extended magazine for the AW-MP."
+
+L["uplp_aug_mag_300_10.printname"] = "10-Round .300 SP"
+L["uplp_aug_mag_300_10.compactname"] = "10R .300"
+L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 SP cartridge</color>."
+-- ".300 Sound Proof"
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
