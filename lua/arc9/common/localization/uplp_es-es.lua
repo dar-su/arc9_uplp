@@ -86,7 +86,7 @@ L["uplp_mechanism_delayed"] = "Retroceso retardado"
 L["uplp_mechanism_gasoperated"] = "Accionado por gas"
 L["uplp_mechanism_rotatingbolt"] = "Cerrojo giratorio"
 L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
-L["uplp_mechanism_pumpaction"] = "Acción de bombeo"
+L["uplp_mechanism_pumpaction"] = "Acción de Bombeo"
 
 /////////// Authors
 L["uplp_assets"] = "Archivos originales1"
@@ -174,8 +174,6 @@ L["uplp_stat_ignite_chance"] = "Al impacto: Probabilidad de prender fuego al obj
 L["uplp_stat_ignite"] = "Al impacto: Prende fuego al objetivo"
 L["uplp_stat_scopedsway"] = "Balanceo de mira" // Since the stat is on the sight and not the attachment, need a custom con
 
-//////////////////// Firemodes
-L["uplp_firemode_pump"] = "PUMP"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
@@ -306,10 +304,6 @@ L["uplp_optic_old.printname"] = "Visor Kraken 7x"
 L["uplp_optic_old.compactname"] = "7x Kraken"
 L["uplp_optic_old.description"] = "Visor de medio alcance con 7 aumentos." .. desc_midbigoptic
 
-L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
-L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
-L["uplp_optic_pso_rail.description"] = "Visor de origen ruso con 4 aumentos." .. desc_midbigoptic
-
 L["uplp_optic_hhs1.printname"] = "Mira Holográfica SightLine™ Serie 500 c. Magnificador."
 L["uplp_optic_hhs1.compactname"] = "500S M."
 L["uplp_optic_hhs1.description"] = "Combinación de mira holográfica y magnificador de calidad militar fabricada por SightLine™." .. desc_magoptic
@@ -347,18 +341,18 @@ L["uplp_optic_dovetail_pso.description"] = "Visor de origen ruso con 4 aumentos.
 
 L["uplp_optic_dovetail_okp.printname"] = "Mira Réflex OPWK-A"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
-L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail -- TRANSLATE
+L["uplp_optic_dovetail_okp.description"] = "Mira colimadora delgada y ligera de origen ruso." .. desc_dovetail -- TRANSLATE
 
 L["uplp_optic_okp.printname"] = "Mira Réflex OPWK-B"
 L["uplp_optic_okp.compactname"] = "OPWK"
-L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_cqcoptic -- TRANSLATE
+L["uplp_optic_okp.description"] = "Mira colimadora delgada y ligera de origen ruso." .. desc_cqcoptic -- TRANSLATE
 
 -- "Optical Sight, High Quality" in Russian
 -- "Оптический прицел высого качества" - 'OPWK'
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Punto Rojo Inclinado"
-L["uplp_backup_optic_rmr.compactname"] = "Canted RDS"
+L["uplp_backup_optic_rmr.compactname"] = "PRI Inclinado"
 L["uplp_backup_optic_rmr.description"] = "Mira de punto rojo compacta montada en ángulo para facilitar la adquisición del objetivo cuando se utiliza óptica magnificada."
 
 L["uplp_backup_optic_is.printname"] = "Miras de Hierro Inclinadas"
@@ -618,43 +612,43 @@ L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "Cañón AK M10 de 400mm"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
-L["uplp_ak_brl_16.description"] = "Cañón 400mm (16\") estándar utilizado en los fusiles AK M10."
+L["uplp_ak_brl_16.description"] = "Cañón 400mm (40cm") estándar utilizado en los fusiles AK M10."
 
 L["uplp_ak_brl_comp.printname"] = "Cañón AK M10 de 300mm"
 L["uplp_ak_brl_comp.compactname"] = "300mm"
-L["uplp_ak_brl_comp.description"] = "Cañón 300mm (12\") compacto utilizado en los fusiles AK M10."
+L["uplp_ak_brl_comp.description"] = "Cañón 300mm (30cm") compacto utilizado en los fusiles AK M10."
 
 L["uplp_ak_brl_akm.printname"] = "Cañón AK 7.62 de 400mm"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
-L["uplp_ak_brl_akm.description"] = "Cañón 400mm (16\") estándar usado en el AK 7.62."
+L["uplp_ak_brl_akm.description"] = "Cañón 400mm (40cm") estándar usado en el AK 7.62."
 
 L["uplp_ak_brl_rpk.printname"] = "Cañón HPK de 585mm"
 L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Cañón 585mm (23\") pesado utilizado en el HPK.\nViene con un <color=100,255,100>bípode integrado</color>."
+L["uplp_ak_brl_rpk.description"] = "Cañón 585mm (58cm") pesado utilizado en el HPK.\nViene con un <color=100,255,100>bípode integrado</color>."
 
 L["uplp_ak_brl_109.printname"] = "Cañón AK M10-7 de 432mm"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
-L["uplp_ak_brl_109.description"] = "Cañón 432mm (17\") más largo utilizado en el AK M10-7 con su sistema de retroceso automático equilibrado incorporado."
+L["uplp_ak_brl_109.description"] = "Cañón 432mm (43cm") más largo utilizado en el AK M10-7 con su sistema de retroceso automático equilibrado incorporado."
 
 L["uplp_ak_brl_su.printname"] = "Cañón Corto de 203mm"
 L["uplp_ak_brl_su.compactname"] = "203mm Corto"
-L["uplp_ak_brl_su.description"] = "Cañón 203mm (8\") corto usado en el AK Short."
+L["uplp_ak_brl_su.description"] = "Cañón 203mm (20cm") corto usado en el AK Short."
 
 L["uplp_ak_brl_12.printname"] = "Cañón AK M22 de 400mm"
 L["uplp_ak_brl_12.compactname"] = "400mm M22"
-L["uplp_ak_brl_12.description"] = "Cañón 400mm (16\") estándar usado en el AK M22."
+L["uplp_ak_brl_12.description"] = "Cañón 400mm (40cm") estándar usado en el AK M22."
 
 L["uplp_ak_brl_12k.printname"] = "Cañón AK M22-K de 230mm"
 L["uplp_ak_brl_12k.compactname"] = "230mm M22-K"
-L["uplp_ak_brl_12k.description"] = "Cañón 230mm (9\") acortado del prototipo AK M22-K. Podría no ser real. ¿O lo es?\nNo compatible con el <color=255,100,100>Guardamanos tácticos HPK M16 o Lisyan</color>."
+L["uplp_ak_brl_12k.description"] = "Cañón 230mm (2cm") acortado del prototipo AK M22-K. Podría no ser real. ¿O lo es?\nNo compatible con el <color=255,100,100>Guardamanos tácticos HPK M16 o Lisyan</color>."
 
 L["uplp_ak_brl_19.printname"] = "Cañón AK M23 5.56 de 483mm"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
-L["uplp_ak_brl_19.description"] = "Cañón 483mm (19\") un poco más largo utilizado en el AK M23 5.56, una versión de exportación de 5.56x45mm del AK M23."
+L["uplp_ak_brl_19.description"] = "Cañón 483mm (48cm") un poco más largo utilizado en el AK M23 5.56, una versión de exportación de 5.56x45mm del AK M23."
 
 L["uplp_ak_brl_rpk16.printname"] = "Cañón HPK M16 de 585mm"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk16.description"] = "Cañón 585mm (23\") pesado utilizado en el HPK M16."
+L["uplp_ak_brl_rpk16.description"] = "Cañón 585mm (58cm") pesado utilizado en el HPK M16."
 
 ////// Dust Covers
 L["uplp_ak_dc_std.printname"] = "Guardapolvo AK 5.45"
@@ -681,9 +675,9 @@ L["uplp_ak_dc_azen.printname"] = "Guardapolvo Zenith"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
 L["uplp_ak_dc_azen.description"] = "Guardapolvo modernizado para fusiles AK. Viene con riel superior incorporado para la óptica."
 
-L["uplp_ak_dc_internals.printname"] = "Remove Dust Cover" -- TRANSLATE
-L["uplp_ak_dc_internals.compactname"] = "Remove" -- TRANSLATE
-L["uplp_ak_dc_internals.description"] = "Removes the dust cover, exposing the internal workings of the AK rifle.\nPurely <color=160,160,255>cosmetic</color>." -- TRANSLATE
+L["uplp_ak_dc_internals.printname"] = "Remover la Cubierta Antipolvo" -- TRANSLATE
+L["uplp_ak_dc_internals.compactname"] = "Remover" -- TRANSLATE
+L["uplp_ak_dc_internals.description"] = "Quita el guardapolvo y deja al descubierto el funcionamiento interno del fusil AK.\nPuramente <color=160,160,255>cosmetico</color>." -- TRANSLATE
 
 L["uplp_ak_dc_beryl.printname"] = "Guardapolvo y Raíl Szermierz"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
@@ -1035,11 +1029,11 @@ L["uplp_ak_smg_rec_bizon_old.description"] = "Convierte el AK SMG a la configura
 ////// Barrels
 L["uplp_ak_smg_brl_long.printname"] = "Cañón de 400mm"
 L["uplp_ak_smg_brl_long.compactname"] = "400mm"
-L["uplp_ak_smg_brl_long.description"] = "Cañón largo de 400mm (15.75\") para el AK SMG (\"OIZK-9\")."
+L["uplp_ak_smg_brl_long.description"] = "Cañón largo de 400mm (40cm") para el AK SMG (\"OIZK-9\")."
 
 L["uplp_ak_smg_brl_ppk20_long.printname"] = "Cañón de 425mm"
 L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
-L["uplp_ak_smg_brl_ppk20_long.description"] = "Cañón largo de 425mm (16.73\") para el AK SMG con la Configuración M20."
+L["uplp_ak_smg_brl_ppk20_long.description"] = "Cañón largo de 425mm (42cm") para el AK SMG con la Configuración M20."
 
 ////// Receivers
 L["uplp_ak_smg_conf_ppk20.printname"] = "Configuración AK SMG M20"
@@ -1059,27 +1053,27 @@ L["uplp_weapon_ar15_real"] = "Colt M4A1"
 ////// Barrels
 L["uplp_ar15_barrel_10.printname"] = "Cañón de 254mm"
 L["uplp_ar15_barrel_10.compactname"] = "254mm"
-L["uplp_ar15_barrel_10.description"] = "Cañón de 254mm (10\") usado en rifles AR-15."
+L["uplp_ar15_barrel_10.description"] = "Cañón de 254mm (25cm") usado en rifles AR-15."
 
 L["uplp_ar15_barrel_14.printname"] = "Cañón de 356mm"
 L["uplp_ar15_barrel_14.compactname"] = "356mm"
-L["uplp_ar15_barrel_14.description"] = "Cañón de 356mm (14\") usado en rifles AR-15.."
+L["uplp_ar15_barrel_14.description"] = "Cañón de 356mm (35cm") usado en rifles AR-15.."
 
 L["uplp_ar15_barrel_16.printname"] = "Cañón de 406mm"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
-L["uplp_ar15_barrel_16.description"] = "Cañón de 406mm (16\") usado en rifles AR-15."
+L["uplp_ar15_barrel_16.description"] = "Cañón de 406mm (40cm") usado en rifles AR-15."
 
 L["uplp_ar15_barrel_16_alt.printname"] = "Cañón alternativo de 406mm"
 L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
-L["uplp_ar15_barrel_16_alt.description"] = "Cañón de 406mm (16\") usado en rifles AR-15.\nNo mueve el gas block, lo que significa que no acepta handguards que requieren Cañónes 406mm (16\") o cañones más largos."
+L["uplp_ar15_barrel_16_alt.description"] = "Cañón de 406mm (40cm") usado en rifles AR-15.\nNo mueve el gas block, lo que significa que no acepta handguards que requieren Cañónes 406mm (16\") o cañones más largos."
 
 L["uplp_ar15_barrel_20.printname"] = "Cañón de 508mm"
 L["uplp_ar15_barrel_20.compactname"] = "508mm"
-L["uplp_ar15_barrel_20.description"] = "Cañón de 508mm (20\") usado en rifles AR-15."
+L["uplp_ar15_barrel_20.description"] = "Cañón de 508mm (50cm") usado en rifles AR-15."
 
 L["uplp_ar15_barrel_22.printname"] = "Cañón de 559mm"
 L["uplp_ar15_barrel_22.compactname"] = "559mm"
-L["uplp_ar15_barrel_22.description"] = "Cañón de 559mm (22\") usado en rifles AR-15."
+L["uplp_ar15_barrel_22.description"] = "Cañón de 559mm (55cm") usado en rifles AR-15."
 
 ////// Charging Handles
 L["uplp_ar15_chandle_modern.printname"] = "Manija de Carga Delgada"
@@ -1523,15 +1517,15 @@ L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 ////// Barrels
 L["uplp_mutant_barrel_long.printname"] = "Cañón de 500mm"
 L["uplp_mutant_barrel_long.compactname"] = "500mm"
-L["uplp_mutant_barrel_long.description"] = "Cañón de 500mm (19.7\") extendido para el Mutant."
+L["uplp_mutant_barrel_long.description"] = "Cañón de 500mm (50cm") extendido para el Mutant."
 
 L["uplp_mutant_barrel_short.printname"] = "Cañón de 409mm"
 L["uplp_mutant_barrel_short.compactname"] = "409mm"
-L["uplp_mutant_barrel_short.description"] = "Cañón Estándar de 409mm (16.1\") para el Mutant."
+L["uplp_mutant_barrel_short.description"] = "Cañón Estándar de 409mm (40cm") para el Mutant."
 
 ////// Handguards
 local requires = "\n\n"
-local requires19 = requires .. "Requiere 500mm (19.7\") o un cañón más largo."
+local requires19 = requires .. "Requiere 500mm (50cm") o un cañón más largo."
 
 L["uplp_mutant_hg_long.printname"] = "Guardamanos Hoki Armory XL"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
@@ -1588,19 +1582,19 @@ L["uplp_weapon_molot_real"] = "\"Molot\" Vepr-12 IPSC"
 ////// Barrels
 L["uplp_molot_brl_long.printname"] = "Cañón de 520mm"
 L["uplp_molot_brl_long.compactname"] = "520mm"
-L["uplp_molot_brl_long.description"] = "Cañón de 520mm (20.47\") extendido para el Molot."
+L["uplp_molot_brl_long.description"] = "Cañón de 520mm (51cm") extendido para el Molot."
 
 L["uplp_molot_brl_compact.printname"] = "Cañón de 350mm"
 L["uplp_molot_brl_compact.compactname"] = "350mm"
-L["uplp_molot_brl_compact.description"] = "Cañón acortado de 350mm (13.78\") para el Molot."
+L["uplp_molot_brl_compact.description"] = "Cañón acortado de 350mm (35cm") para el Molot."
 
 L["uplp_molot_brl_mini.printname"] = "\"Mini\" Cañón de 350mm"
 L["uplp_molot_brl_mini.compactname"] = "350mm Mini"
-L["uplp_molot_brl_mini.description"] = "Mini cañón acortado de 350mm (13.78\") para el Molot."
+L["uplp_molot_brl_mini.description"] = "Mini cañón acortado de 350mm (35cm") para el Molot."
 
 L["uplp_molot_brl_micro.printname"] = "\"Micro\" Cañón de 325mm"
 L["uplp_molot_brl_micro.compactname"] = "325mm Micro"
-L["uplp_molot_brl_micro.description"] = "Micro cañón de 325mm (12.8\") para el Molot."
+L["uplp_molot_brl_micro.description"] = "Micro cañón de 325mm (32cm") para el Molot."
 
 ////// Handguards
 L["uplp_molot_hg_100.printname"] = "Guardamanos Serie 100"
@@ -1683,19 +1677,19 @@ L["uplp_awp_rs.description"] = "Set de fábrica de miras de hierro para el AW Sn
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "Cañón Policial de 610mm"
 L["uplp_awp_brl_awp.compactname"] = "610mm"
-L["uplp_awp_brl_awp.description"] = "Cañón acortado de 610mm (24\") para la variante policial del rifle AW."
+L["uplp_awp_brl_awp.description"] = "Cañón acortado de 610mm (60cm") para la variante policial del rifle AW."
 
 L["uplp_awp_brl_aws.printname"] = "Cañón de 409mm con Supresión Integral"
 L["uplp_awp_brl_aws.compactname"] = "409mm S."
-L["uplp_awp_brl_aws.description"] = "Cañón con supresión integral de 409mm (16\") para el rifle AW.\n<color=100,255,100>Suprime el arma</color>, pero <color=255,100,100>reduce el daño a corta distancia.</color>."
+L["uplp_awp_brl_aws.description"] = "Cañón con supresión integral de 409mm (40cm") para el rifle AW.\n<color=100,255,100>Suprime el arma</color>, pero <color=255,100,100>reduce el daño a corta distancia.</color>."
 
 L["uplp_awp_brl_long.printname"] = "Cañón Magnum de 686mm"
 L["uplp_awp_brl_long.compactname"] = "686mm"
-L["uplp_awp_brl_long.description"] = "Cañón magnum más largo de 686mm (27\") para el rifle AW.\n<color=100,255,100>Aumenta el daño a larga distancia</color>, pero <color=255,100,100>ralentiza el manejo y la movilidad.</color>."
+L["uplp_awp_brl_long.description"] = "Cañón magnum más largo de 686mm (68cm") para el rifle AW.\n<color=100,255,100>Aumenta el daño a larga distancia</color>, pero <color=255,100,100>ralentiza el manejo y la movilidad.</color>."
 
 L["uplp_awp_brl_short.printname"] = "Cañón Compacto de 350mm"
 L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Cañón muy corto de 350mm (13.78\") para el rifle AW.\n<color=100,255,100>Mejora el manejo</color>, pero <color=255,100,100>reduce el daño a larga distancia.</color>"
+L["uplp_awp_brl_short.description"] = "Cañón muy corto de 350mm (35cm") para el rifle AW.\n<color=100,255,100>Mejora el manejo</color>, pero <color=255,100,100>reduce el daño a larga distancia.</color>"
 
 ////// Bipods
 L["uplp_awp_bp.printname"] = "Bípode de Francotirador AW"
@@ -1870,15 +1864,15 @@ L["uplp_scar_upper_pdwb.description"] = "Receptor superior muy corto y guardaman
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "Cañón CQC de 330mm"
 L["uplp_scar_brl_short.compactname"] = "330mm CQC"
-L["uplp_scar_brl_short.description"] = "Cañón acortado 330mm (13\") para el XAR."
+L["uplp_scar_brl_short.description"] = "Cañón acortado 330mm (33cm") para el XAR."
 
 L["uplp_scar_brl_20.printname"] = "Cañón DMR de 510mm"
 L["uplp_scar_brl_20.compactname"] = "510mm DMR"
-L["uplp_scar_brl_20.description"] = "Cañón DMR estándar 510mm (20\") para el XAR.\nElimina la posibilidad de equipar las <color=255,100,100>Miras de Hierro XAR</color>."
+L["uplp_scar_brl_20.description"] = "Cañón DMR estándar 510mm (50cm") para el XAR.\nElimina la posibilidad de equipar las <color=255,100,100>Miras de Hierro XAR</color>."
 
 L["uplp_scar_brl_20_long.printname"] = "Cañón DMR de 600mm"
 L["uplp_scar_brl_20_long.compactname"] = "600mm DMR"
-L["uplp_scar_brl_20_long.description"] = "Cañón DMR largo de 600mm (23.62\") para el XAR.\nElimina la posibilidad de equipar las <color=255,100,100>Miras de Hierro XAR</color>."
+L["uplp_scar_brl_20_long.description"] = "Cañón DMR largo de 600mm (59cm") para el XAR.\nElimina la posibilidad de equipar las <color=255,100,100>Miras de Hierro XAR</color>."
 
 ////// Stocks
 L["uplp_scar_stock_lb.printname"] = "Culata Estándar (Negro)"
