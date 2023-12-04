@@ -936,6 +936,60 @@ table.Merge(ATT, stats_bigger)
 ARC9.LoadAttachment(ATT, "uplp_optic_halo_thermal")
 
 
+---------- uplp_optic_pso_rail
+
+
+ATT = {}
+
+ATT.PrintName = "4x OPP2-B" -- "ACOG 4x32 Scope"
+ATT.CompactName = "OPP2-B"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "3-7x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "psor.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_pso_rail.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 9, -1.235),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30,
+        RTScopeFOV = 57 / 4,
+
+        SwayAddSights = sway_mid,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.5)
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57 / 2
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/pso.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeColorable = false 
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
+
+ATT.ScopeScreenRatio = 0.66
+
+ATT.Category = "uplp_optic_big"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Scale = 0.975
+
+table.Merge(ATT, stats_midbig)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_pso_rail")
+
 ---------- uplp_optic_d1
 
 

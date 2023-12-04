@@ -304,6 +304,10 @@ L["uplp_optic_old.printname"] = "7x Kraken Scope"
 L["uplp_optic_old.compactname"] = "7x Kraken"
 L["uplp_optic_old.description"] = "Medium range scope with 7x magnification." .. desc_midbigoptic
 
+L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
+L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
+L["uplp_optic_pso_rail.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_midbigoptic
+
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."
 L["uplp_optic_hhs1.description"] = "Military-grade holographic sight and magnifier combination made by SightLine™." .. desc_magoptic
