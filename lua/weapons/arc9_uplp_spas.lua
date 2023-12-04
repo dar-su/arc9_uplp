@@ -201,7 +201,7 @@ SWEP.Num = 8 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = 1, -- Pump
-        PrintName = "PUMP",
+        PrintName = ARC9:GetPhrase("uplp_firemode_pump"),
         ManualAction = true,
         ManualActionNoLastCycle = true,
         NoShellEjectManualAction = true,

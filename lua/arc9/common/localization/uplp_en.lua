@@ -174,6 +174,8 @@ L["uplp_stat_ignite_chance"] = "On Hit: Chance to Ignite Target"
 L["uplp_stat_ignite"] = "On Hit: Ignite Target"
 L["uplp_stat_scopedsway"] = "Scope Sway" // Since the stat is on the sight and not the attachment, need a custom con
 
+//////////////////// Firemodes
+L["uplp_firemode_pump"] = "PUMP"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments

@@ -174,6 +174,8 @@ L["uplp_stat_ignite_chance"] = "Vid Träff: Chans att Tända Fyr på Mål"
 L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
 L["uplp_stat_scopedsway"] = "Sväjning i Siktet"
 
+//////////////////// Firemodes
+L["uplp_firemode_pump"] = "PUMP"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
@@ -303,6 +305,10 @@ L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x m
 L["uplp_optic_old.printname"] = "7x Kraken-Kikarsikte"
 L["uplp_optic_old.compactname"] = "7x Kraken"
 L["uplp_optic_old.description"] = "Medium räckvidd kikarsikte med 7x magnifiering." .. desc_midbigoptic
+
+L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
+L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
+L["uplp_optic_pso_rail.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holografiskt Sikte med Förstoringsglas"
 L["uplp_optic_hhs1.compactname"] = "500S F."

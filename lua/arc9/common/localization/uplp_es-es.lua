@@ -86,7 +86,7 @@ L["uplp_mechanism_delayed"] = "Retroceso retardado"
 L["uplp_mechanism_gasoperated"] = "Accionado por gas"
 L["uplp_mechanism_rotatingbolt"] = "Cerrojo giratorio"
 L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
-L["uplp_mechanism_pumpaction"] = "Pump-Action"
+L["uplp_mechanism_pumpaction"] = "Acción de bombeo"
 
 /////////// Authors
 L["uplp_assets"] = "Archivos originales1"
@@ -174,6 +174,8 @@ L["uplp_stat_ignite_chance"] = "Al impacto: Probabilidad de prender fuego al obj
 L["uplp_stat_ignite"] = "Al impacto: Prende fuego al objetivo"
 L["uplp_stat_scopedsway"] = "Balanceo de mira" // Since the stat is on the sight and not the attachment, need a custom con
 
+//////////////////// Firemodes
+L["uplp_firemode_pump"] = "PUMP"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
@@ -303,6 +305,10 @@ L["uplp_optic_generic.description"] = "Visor de largo alcance con 10 aumentos." 
 L["uplp_optic_old.printname"] = "Visor Kraken 7x"
 L["uplp_optic_old.compactname"] = "7x Kraken"
 L["uplp_optic_old.description"] = "Visor de medio alcance con 7 aumentos." .. desc_midbigoptic
+
+L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
+L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
+L["uplp_optic_pso_rail.description"] = "Visor de origen ruso con 4 aumentos." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "Mira Holográfica SightLine™ Serie 500 c. Magnificador."
 L["uplp_optic_hhs1.compactname"] = "500S M."
