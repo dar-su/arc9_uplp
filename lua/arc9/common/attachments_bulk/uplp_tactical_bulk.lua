@@ -49,7 +49,7 @@ ATT.CustomPros = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+30%",
 -- }
 
-ATT.SprintToFireTimeMult = 1.1
+ATT.SprintToFireTimeAdd = 0.1
 
 ATT.Category = {"uplp_tac", "uplp_tac_top"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -246,6 +246,8 @@ ATT.CustomPros = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+25%",
 -- }
 
+ATT.AimDownSightsTimeAdd = 0.05
+
 ATT.Category = "uplp_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
@@ -300,8 +302,8 @@ ATT.CustomPros = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+25%",
 -- }
 
-ATT.AimDownSightsTimeMult = 1.05
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.1
 
 ATT.Category = {"uplp_tac", "uplp_tac_top"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -357,7 +359,7 @@ ATT.CustomPros = {
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+25%",
 -- }
 
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeAdd = 0.05
 
 ATT.Category = "uplp_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

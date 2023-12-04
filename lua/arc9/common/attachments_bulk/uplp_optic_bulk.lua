@@ -2294,9 +2294,9 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 2
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/pso.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
-ATT.RTScopeColorable = true
+ATT.RTScopeColorable = false 
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
