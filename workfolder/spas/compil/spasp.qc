@@ -26,7 +26,7 @@ $bodygroup "stockhook" { // 5
 }
 
 $bodygroup "rail" { // 6
-	blank
+	studio "rs.smd" // 0
 	studio "rail.smd" // 0
 }
 
