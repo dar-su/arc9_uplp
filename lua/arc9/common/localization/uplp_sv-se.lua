@@ -675,6 +675,10 @@ L["uplp_ak_dc_azen.printname"] = "Zenith-Dammskydd"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
 L["uplp_ak_dc_azen.description"] = "Modernt dammskydd för AK-gevär. Kommer med inbyggd toppmonterad skena för riktmedel."
 
+L["uplp_ak_dc_internals.printname"] = "Ta bort Dammskydd"
+L["uplp_ak_dc_internals.compactname"] = "Ta bort"
+L["uplp_ak_dc_internals.description"] = "Tar bort dammskyddet vilket visar AK-gevärets interndelar.\nEnbart <color=160,160,255>kosmetiskt</color>."
+
 L["uplp_ak_dc_beryl.printname"] = "Szermierz Dammskydd & Skena"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
 L["uplp_ak_dc_beryl.description"] = "Kombination av dammskydd och toppmonterad skena gjorda för ett AK-gevär av polskt ursprung."

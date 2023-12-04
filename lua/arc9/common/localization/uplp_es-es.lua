@@ -330,18 +330,18 @@ L["uplp_optic_devom.description"] = "Mira de punto rojo de alta calidad fabricad
 
 L["uplp_optic_dovetail_kobra.printname"] = "Colimador Kobra"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
-L["uplp_optic_dovetail_kobra.description"] = "Mira réflex militar de origen ruso con retícula en cruz.\nMontaje lateral mediante carril de cola de milano.\nNo puede equiparse <color=255,100,100>visores normales o determinados guardapolvos</color>."
+L["uplp_optic_dovetail_kobra.description"] = "Mira réflex militar de origen ruso con retícula en cruz." .. desc_dovetail
 
 L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Visor de origen ruso con 4 aumentos.\nMontaje lateral mediante carril de cola de milano.\nNo puede equiparse <color=255,100,100>visores normales o determinados guardapolvos</color>."
+L["uplp_optic_dovetail_pso.description"] = "Visor de origen ruso con 4 aumentos." .. desc_dovetail
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
 
 L["uplp_optic_dovetail_okp.printname"] = "Mira Réflex OPWK-A"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
-L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin.\nMontaje lateral mediante carril de cola de milano.\nNo puede equiparse <color=255,100,100>visores normales o determinados guardapolvos</color>." -- TRANSLATE
+L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail -- TRANSLATE
 
 L["uplp_optic_okp.printname"] = "Mira Réflex OPWK-B"
 L["uplp_optic_okp.compactname"] = "OPWK"
@@ -674,6 +674,10 @@ L["uplp_ak_dc_rail2.description"] = "Guardapolvo táctico con raíl incorporado 
 L["uplp_ak_dc_azen.printname"] = "Guardapolvo Zenith"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
 L["uplp_ak_dc_azen.description"] = "Guardapolvo modernizado para fusiles AK. Viene con riel superior incorporado para la óptica."
+
+L["uplp_ak_dc_internals.printname"] = "Remove Dust Cover" -- TRANSLATE
+L["uplp_ak_dc_internals.compactname"] = "Remove" -- TRANSLATE
+L["uplp_ak_dc_internals.description"] = "Removes the dust cover, exposing the internal workings of the AK rifle.\nPurely <color=160,160,255>cosmetic</color>." -- TRANSLATE
 
 L["uplp_ak_dc_beryl.printname"] = "Guardapolvo y Raíl Szermierz"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
