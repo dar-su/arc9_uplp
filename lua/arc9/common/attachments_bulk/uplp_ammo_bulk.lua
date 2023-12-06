@@ -239,7 +239,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.15
+ATT.SpreadMult = 0.1
 
 ATT.HeadshotDamage = 2
 ATT.RangeMinMult = 2
@@ -250,6 +250,7 @@ ATT.DispersionSpreadAddRecoil = -0.025
 ATT.NumOverride = 1
 ATT.DamageMaxMult = 0.5
 ATT.DamageMinMult = 0.75
+ATT.RecoilDissipationRateMult = 0.75
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -271,15 +272,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.5
+ATT.SpreadMult = 0.3
 
 ATT.HeadshotDamage = 1.5
 ATT.RangeMaxMult = 1.5
-ATT.DispersionSpreadAddRecoil = -0.015
+ATT.DispersionSpreadAddRecoil = -0.01
 
 -- Negatives
 ATT.NumOverride = 2
 ATT.DamageMaxMult = 0.667
+ATT.RecoilDissipationRateMult = 0.9
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
