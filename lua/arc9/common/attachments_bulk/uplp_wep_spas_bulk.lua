@@ -19,8 +19,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.02
+ATT.RPMAdd = 20
+ATT.ReloadTimeMult = 0.92
 
 -- Negatives
+ATT.SpreadAdd = 0.005
 ATT.ClipSizeOverride = 6
 ATT.RangeMaxAdd = -10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.9

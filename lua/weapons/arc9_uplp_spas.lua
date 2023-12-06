@@ -135,7 +135,7 @@ SWEP.RecoilUp = 2
 SWEP.RecoilSide = 1.25
 
 -- Additional recoil when firing rapidly
-SWEP.RecoilMultRecoil = 2
+SWEP.RecoilMultRecoil = 1.75
 
 SWEP.RecoilRandomUp = 1.15
 SWEP.RecoilRandomSide = 1
@@ -181,9 +181,9 @@ SWEP.DispersionSpreadAddRecoil = 0.06
 SWEP.DispersionSpreadAddMove = 0.03
 SWEP.DispersionSpreadAddMidAir = 0.05
 
-SWEP.RecoilDissipationRate = 2.5
+SWEP.RecoilDissipationRate = 2
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.5
+SWEP.RecoilPerShot = 0.4
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
