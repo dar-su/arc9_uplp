@@ -95,11 +95,18 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 120
-SWEP.DamageMin = 48
+SWEP.DamageMax = 80
+SWEP.DamageMin = 5
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
+
+-- for faster falloff after ~5 meters
+SWEP.SweetSpot = true
+SWEP.SweetSpotDamage = 160
+SWEP.SweetSpotRange = 2 / ARC9.HUToM
+SWEP.SweetSpotWidth = 2 / ARC9.HUToM
+SWEP.SweetSpotPeak = 2 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1,
@@ -115,8 +122,8 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 2 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
@@ -171,7 +178,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.035
+SWEP.Spread = 0.055
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.DispersionSpread = 0
@@ -213,11 +220,13 @@ SWEP.Firemodes = {
         DispersionSpreadAddHipFire = -0.01,
         SpreadMult = 0.8,
         DamageMaxMult = 1.25, -- blehh :p
+        SweetSpotDamageMult = 1.25, -- blehh :p
 
         RPM = 1200,
     },
     { Mode = 1, -- Semi
         ManualAction = false,
+        SweetSpotDamageMult = 0.8,
     },
 }
 

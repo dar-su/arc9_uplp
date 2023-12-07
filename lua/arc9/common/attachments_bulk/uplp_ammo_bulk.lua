@@ -242,15 +242,18 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 ATT.SpreadMult = 0.1
 
 ATT.HeadshotDamage = 2
-ATT.RangeMinMult = 2
-ATT.RangeMaxMult = 1.75
+ATT.RangeMinMult = 4
+ATT.RangeMaxMult = 2
 ATT.DispersionSpreadAddRecoil = -0.025
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxMult = 0.5
-ATT.DamageMinMult = 0.75
+ATT.DamageMaxMult = 0.75
+ATT.DamageMaxOverride = 100
+ATT.DamageMinOverride = 25
 ATT.RecoilDissipationRateMult = 0.75
+
+ATT.SweetSpotOverride = false 
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -280,8 +283,12 @@ ATT.DispersionSpreadAddRecoil = -0.01
 
 -- Negatives
 ATT.NumOverride = 2
-ATT.DamageMaxMult = 0.667
+-- ATT.DamageMaxMult = 0.667
+ATT.DamageMaxOverride = 100
+ATT.DamageMinOverride = 16
 ATT.RecoilDissipationRateMult = 0.9
+
+ATT.SweetSpotOverride = false 
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
