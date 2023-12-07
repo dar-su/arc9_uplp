@@ -2093,11 +2093,11 @@ L["uplp_aug_bot_rail.description"] = "Sustituye la empuñadura plegable por un c
 ////// Barrels
 L["uplp_aug_brl_mg.printname"] = "Cañón HBAR de 900mm"
 L["uplp_aug_brl_mg.compactname"] = "900mm"
-L["uplp_aug_brl_mg.description"] = "Cañón largo y pesado de 900mm (89cm") destinado a la AW-MG, la variante ametralladora de la AW-UG.\nViene con un <color=100,255,100>bípode integrado</color>."
+L["uplp_aug_brl_mg.description"] = "Cañón largo y pesado de 900mm (89cm) destinado a la AW-MG, la variante ametralladora de la AW-UG.\nViene con un <color=100,255,100>bípode integrado</color>."
 
 L["uplp_aug_brl_smg.printname"] = "Cañón Para de 508mm"
 L["uplp_aug_brl_smg.compactname"] = "508mm"
-L["uplp_aug_brl_smg.description"] = "Cañón acortado de 508mm (50cm") utilizado en la AW-MP de 9x19mm, la variante de subfusil de la AW-UG."
+L["uplp_aug_brl_smg.description"] = "Cañón acortado de 508mm (50cm) utilizado en la AW-MP de 9x19mm, la variante de subfusil de la AW-UG."
 
 ////// Magazines
 L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56x45mm"
