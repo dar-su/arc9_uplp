@@ -2068,57 +2068,57 @@ L["uplp_weapon_aug_real"] = "Steyr AUG"
 
 /////////// Attachments -- TRANSLATE ALL HERE
 ////// Irons
-L["uplp_aug_rs.printname"] = "Iron Sights"
-L["uplp_aug_rs.compactname"] = "Irons"
-L["uplp_aug_rs.description"] = "Compact iron sights intended for use with the AW-MP."
+L["uplp_aug_rs.printname"] = "Miras de Hierro"
+L["uplp_aug_rs.compactname"] = "Hierros"
+L["uplp_aug_rs.description"] = "Miras de hierro compactas diseñadas para su uso con la AW-MP."
 
 ////// Top Rail
-L["uplp_aug_top_scope.printname"] = "AW-UG Scope"
-L["uplp_aug_top_scope.compactname"] = "Scope"
-L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models."
+L["uplp_aug_top_scope.printname"] = "Visor AW-UG"
+L["uplp_aug_top_scope.compactname"] = "Visor"
+L["uplp_aug_top_scope.description"] = "Mira telescópica tradicional de 1.5 aumentos utilizada en los modelos AW-UG estándar."
 
-L["uplp_aug_top_rail.printname"] = "Top Rail"
-L["uplp_aug_top_rail.compactname"] = "Rail"
-L["uplp_aug_top_rail.description"] = "Replaces the scope with a traditional RIS-style rail for mounting traditional optics."
+L["uplp_aug_top_rail.printname"] = "Raíl Superior"
+L["uplp_aug_top_rail.compactname"] = "Raíl"
+L["uplp_aug_top_rail.description"] = "Sustituye el visor por un raíl tradicional estilo RIS para montar ópticas tradicionales."
 
 ////// Bottom Rail
-L["uplp_aug_bot_grip.printname"] = "Folding Foregrip"
-L["uplp_aug_bot_grip.compactname"] = "Foregrip"
-L["uplp_aug_bot_grip.description"] = "Folding foregrip equipped on most AW-UG models that reduces recoil."
+L["uplp_aug_bot_grip.printname"] = "Empuñadura Plegable"
+L["uplp_aug_bot_grip.compactname"] = "Empuñadura"
+L["uplp_aug_bot_grip.description"] = "Empuñadura plegable equipada en la mayoría de los modelos AW-UG que reduce el retroceso."
 
-L["uplp_aug_bot_rail.printname"] = "Bottom Rail"
-L["uplp_aug_bot_rail.compactname"] = "Rail"
-L["uplp_aug_bot_rail.description"] = "Replaces the folding foregrip with a traditional RIS-style rail for mounting aftermarket foregrips."
+L["uplp_aug_bot_rail.printname"] = "Raíl Inferior"
+L["uplp_aug_bot_rail.compactname"] = "Raíl"
+L["uplp_aug_bot_rail.description"] = "Sustituye la empuñadura plegable por un carril tradicional estilo RIS para montar empuñaduras posventa."
 
 ////// Barrels
-L["uplp_aug_brl_mg.printname"] = "900mm HBAR Barrel"
+L["uplp_aug_brl_mg.printname"] = "Cañón HBAR de 900mm"
 L["uplp_aug_brl_mg.compactname"] = "900mm"
-L["uplp_aug_brl_mg.description"] = "Long and heavy 900mm (35.4\") barrel intended for the AW-MG, the machine gun variant of the AW-UG.\nComes with an <color=100,255,100>integral bipod</color>."
+L["uplp_aug_brl_mg.description"] = "Cañón largo y pesado de 900mm (89cm) destinado a la AW-MG, la variante ametralladora de la AW-UG.\nViene con un <color=100,255,100>bípode integrado</color>."
 
-L["uplp_aug_brl_smg.printname"] = "508mm Para Barrel"
+L["uplp_aug_brl_smg.printname"] = "Cañón Para de 508mm"
 L["uplp_aug_brl_smg.compactname"] = "508mm"
-L["uplp_aug_brl_smg.description"] = "Shortened 508mm (20\") barrel used on the 9x19mm AW-MP, the submachine gun variant of the AW-UG."
+L["uplp_aug_brl_smg.description"] = "Cañón acortado de 508mm (50cm) utilizado en la AW-MP de 9x19mm, la variante de subfusil de la AW-UG."
 
 ////// Magazines
-L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56x45mm"
+L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56x45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
-L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
+L["uplp_aug_mag_556_40.description"] = "Cargador extendido de 40 balas para la AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56x45mm Drum"
+L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56x45mm de 52 Rondas"
 L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
-L["uplp_aug_mag_556_52.description"] = "52-round drum magazine for the AW-UG."
+L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la AW-UG."
 
-L["uplp_aug_mag_919_25.printname"] = "25-Round 9x19mm"
+L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9x19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "25-round magazine for the AW-MP."
+L["uplp_aug_mag_919_25.description"] = "Cargador de 25 balas para la AW-MP."
 
-L["uplp_aug_mag_919_40.printname"] = "40-Round 9x19mm"
+L["uplp_aug_mag_919_40.printname"] = "40 Rondas 9x19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "40-round extended magazine for the AW-MP."
+L["uplp_aug_mag_919_40.description"] = "Cargador extendido de 40 cartuchos para la AW-MP."
 
-L["uplp_aug_mag_300_10.printname"] = "10-Round .300 SP"
+L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 SP cartridge</color>."
+L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 SP especializado</color>."
 -- ".300 Sound Proof"
 
 //////////////////// RSh-12
