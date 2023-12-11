@@ -70,6 +70,7 @@ L["uplp_manufacturer_magnum"] = "Magnum Research"
 L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
 L["uplp_manufacturer_uso"] = "U.S. Ordnance"
 L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
+L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "Añor5"
@@ -614,6 +615,8 @@ L["uplp_weapon_ak_real"] = "AK-103"
 L["uplp_weapon_ak12_real"] = "AK-12M1 2023"
 L["uplp_weapon_ak_smg_real"] = "PP-19-01 \"Vityaz\""
 
+L["uplp_weapon_ak_manufacturer"] = "Izhmash"
+
 /////////// Attachments
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "Cañón AK M10 de 400mm"
@@ -1055,6 +1058,8 @@ L["uplp_weapon_ar15_smg45"] = "AR-SMG .45"
 
 L["uplp_weapon_ar15_real"] = "Colt M4A1"
 
+L["uplp_weapon_ar15_manufacturer"] = "U.S. Ordnance"
+
 /////////// Attachments
 ////// Barrels
 L["uplp_ar15_barrel_10.printname"] = "Cañón de 254mm"
@@ -1434,6 +1439,8 @@ L["uplp_weapon_deagle_gold"] = "Deagle Dorada"
 
 L["uplp_weapon_deagle_real"] = "IMI Desert Eagle XIX"
 
+L["uplp_weapon_deagle_manufacturer"] = "Magnum Research"
+
 /////////// Attachments
 ////// Magazines
 L["uplp_deag_mag_ext.printname"] = "13 Rondas Extendido"
@@ -1519,6 +1526,8 @@ L["uplp_weapon_mutant_desc"] = "El Mutant es un rifle híbrido único que combin
 
 L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
+L["uplp_weapon_mutant_manufacturer"] = "CMMG Inc."
+
 /////////// Attachments
 ////// Barrels
 L["uplp_mutant_barrel_long.printname"] = "Cañón de 500mm"
@@ -1583,6 +1592,8 @@ L["uplp_weapon_molot"] = "Molot"
 L["uplp_weapon_molot_desc"] = "La Molot es una escopeta semiautomática de fabricación rusa famosa por su diseño robusto y fiable. Tiene recámara para cartuchos del calibre 12 y es popular entre los tiradores y coleccionistas por su durabilidad y rendimiento. Esta versión de la Molot se fabricó para su uso en competiciones deportivas, lo que dio lugar a la inclusión de una manija de carga ambidiestra."
 
 L["uplp_weapon_molot_real"] = "\"Molot\" Vepr-12 IPSC"
+
+L["uplp_weapon_molot_manufacturer"] = "Molot Oruzhie Ltd."
 
 /////////// Attachments
 ////// Barrels
@@ -1673,6 +1684,8 @@ L["uplp_weapon_awp_desc"] = "El rifle AW es un reputado rifle de francotirador d
 L["uplp_weapon_awp_atx"] = "AX Sniper"
 
 L["uplp_weapon_awp_real"] = "Accuracy International Arctic Warfare"
+
+L["uplp_weapon_awp_manufacturer"] = "Accuracy International"
 
 /////////// Attachments
 ////// Irons
@@ -1775,6 +1788,8 @@ L["uplp_weapon_fn57_desc"] = "La MRD57 es una pistola semiautomática conocida p
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
+L["uplp_weapon_fn57_manufacturer"] = "FN Herstal"
+
 /////////// Attachments
 ////// Mags
 L["uplp_fn57_mag_ext.printname"] = "Cargador Extendido de 27 Rondas"
@@ -1804,6 +1819,8 @@ L["uplp_weapon_mp7"] = "PDW-7"
 L["uplp_weapon_mp7_desc"] = "El PDW-7 es un subfusil compacto y ligero conocido por su alta cadencia de fuego y versatilidad, capaz de disparar proyectiles perforantes. Suele ser utilizado por unidades militares y policiales en combates cuerpo a cuerpo y operaciones especiales."
 
 L["uplp_weapon_mp7_real"] = "H&K MP7"
+
+L["uplp_weapon_mp7_manufacturer"] = "Heckler & Koch"
 
 /////////// Attachments
 ////// Stocks
@@ -1837,6 +1854,8 @@ L["uplp_weapon_scar_mg"] = "XAR MG"
 L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
+
+L["uplp_weapon_scar_manufacturer"] = "FN Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
@@ -1977,11 +1996,15 @@ L["uplp_weapon_mossberg_desc"] = "Si busca algo para la defensa en el hogar, ent
 
 L["uplp_weapon_mossberg_real"] = "Mossberg 590"
 
+L["uplp_weapon_mossberg_manufacturer"] = "O.F. Mossberg & Sons, Inc."
+
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"
 L["uplp_weapon_spas_desc"] = "La SPAW-12, Special Purpose Assault Weapon modelo 12, es una versátil escopeta de diseño italiano conocida por su capacidad para alternar entre los modos de disparo de bombeo y semiautomático. Ganó popularidad por su uso en diversas funciones militares y policiales debido a su fiabilidad y adaptabilidad."
 
 L["uplp_weapon_spas_real"] = "Franchi SPAS-12"
+
+L["uplp_weapon_spas_manufacturer"] = "Luigi Franchi S.p.A."
 
 /////////// Attachments
 ////// Barrels
@@ -2012,11 +2035,15 @@ L["uplp_weapon_m9_desc"] = "La \"Pistola Modello 92\", abreviada PM92, es una pi
 
 L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
+L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
+
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"
 L["uplp_weapon_m1911_desc"] = "La CM .45, una pistola semiautomática clásica, es famosa por su diseño duradero y su historia de servicio, adoptada originalmente por el ejército de los Estados Unidos en 1911. Desde entonces se ha convertido en una pistola icónica y ampliamente utilizada, apreciada por su calibre .45 Auto y su sólida construcción."
 
 L["uplp_weapon_m1911_real"] = "Colt M1911"
+
+L["uplp_weapon_m1911_manufacturer"] = "Colt's Manufacturing Company"
 
 //////////////////// DVL-10
 L["uplp_weapon_dvl10"] = "RR-40"
@@ -2028,12 +2055,15 @@ L["uplp_weapon_dvl10_m3"] = "RR-40 Wolfhound"
 
 L["uplp_weapon_dvl10_real"] = "DVL-10"
 
+L["uplp_weapon_dvl10_manufacturer"] = "Integrated Systems Design Bureau (KBIS)"
+
 //////////////////// SR-25
 L["uplp_weapon_sr25"] = "DMR-10"
 L["uplp_weapon_sr25_desc"] = "Basado en la conocida plataforma del AR-15, el DMR-10 es un potente rifle semiautomático de tirador único. Aunque en un principio perdió la competencia en los años 50 frente al BR14, el DMR-10 llegó a manos de varios ejércitos."
 
 L["uplp_weapon_sr25_real"] = "KAC SR-25"
 
+L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 
 -- Expansion 2
 //////////////////// ORSIS 12.7
@@ -2042,18 +2072,36 @@ L["uplp_weapon_orsis_desc"] = "El \"Udar Molnii 50\" (Lightning Strike 50) es el
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
+L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
+
 //////////////////// AS VAL
-L["uplp_weapon_asval"] = "FAKENAME"
--- REPLACE REAL NAMES WITH FAKE NAMES LATER, ALTERNATIVE REWRITE
-L["uplp_weapon_asval_desc"] = "El AS-VAL, un arma de fuego rusa con supresión integral, es un arma personalizable que puede convertirse en varias armas de fuego alimentadas con 9x39mm, incluyendo el francotirador semiautomático VSS, el rifle automático especial oculto SR-3, el rifle rediseñado 9A-91 de coste reducido y el rifle de francotirador VSK-94."
+ -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)
+L["uplp_weapon_asval"] = "SK-ON"
+L["uplp_weapon_asval_desc"] = "El SK-ON, un arma de fuego rusa con supresión integral, es un arma personalizable que puede convertirse en varias armas de fuego alimentadas con 9x39mm, incluyendo el francotirador semiautomático SSV, el rifle automático especial oculto VCNM-3, el rifle rediseñado PNE-40 de coste reducido y el rifle de francotirador TVND-90."
+
+ -- "Stealth Sniper Rifle", "Стелс-снайперская винтовка" (ССВ)
+L["uplp_weapon_asval_vss"] = "SSV"
+
+ -- "Special Purpose Rifle Model 3", "Винтовка специального назначения Модель 3" (ВСНМ-3)
+L["uplp_weapon_asval_sr3"] = "VCNM-3"
+
+ -- "Stealth Pistol, Economy 40", "Пистолет-невидимка, экономичный 40" (ПНЭ-40)
+L["uplp_weapon_asval_9a91"] = "PNE-40"
+
+ -- "Low-Pressure Precision Rifle 90", "Точная винтовка низкого давления 90" (ТВНД-90)
+L["uplp_weapon_asval_vsk94"] = "TVND-90"
 
 L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
 
+L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
+
 //////////////////// ASh-12
-L["uplp_weapon_ash12"] = "FAKENAME"
-L["uplp_weapon_ash12_desc"] = "REPLACEDESC"
+L["uplp_weapon_ash12"] = "RZ 12.7"
+L["uplp_weapon_ash12_desc"] = "The Russian RZ 12.7 is a powerful bullpup assault rifle chambered for the hefty 12.7x55mm caliber, designed for close-quarters combat and anti-material purposes, with a distinct recoil-mitigating system and a unique combination of stopping power and accuracy. Its design incorporates features for enhanced control and stability despite its substantial caliber, making it suitable for specialized military applications." -- TRANSLATE
 
 L["uplp_weapon_ash12_real"] = "ASh-12"
+
+L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW Bullpup"
@@ -2065,6 +2113,8 @@ L["uplp_weapon_aug_mg"] = "AW-UG"
 L["uplp_weapon_aug_mg_full"] = "Automatiche Waffen-Maschinengewehr (\"Automatic Weapon Support Rifle\")"
 
 L["uplp_weapon_aug_real"] = "Steyr AUG"
+
+L["uplp_weapon_aug_manufacturer"] = "Steyr-Daimler-Puch"
 
 /////////// Attachments -- TRANSLATE ALL HERE
 ////// Irons
@@ -2126,3 +2176,5 @@ L["uplp_weapon_rsh12"] = "RZ 12.7"
 L["uplp_weapon_rsh12_desc"] = "El \"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Wrist Destroyer 12\") es un revólver ruso muy potente que dispara el gran cartucho de 12,7x55 mm. Incluso cuando dispara desde la cámara inferior del cilindro, a diferencia de la mayoría de los revólveres, se dice que el retroceso tiene la tendencia a arruinar las muñecas de sus usuarios, de ahí que reciba el apodo de \"Wrist Destroyer\"."
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
+
+L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
