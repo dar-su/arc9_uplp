@@ -69,7 +69,7 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-3.5, 3, -8),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-4.5, 2, -7),
+    TPIKPos = Vector(-8.5, 3, -7),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
@@ -237,12 +237,12 @@ SWEP.CustomizeSnapshotFOV = 90
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
-SWEP.DropMagazineTime = 0.33 * 1.1
-SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 1.75, -2.5)
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_30.mdl"
+SWEP.DropMagazineTime = 0.7
+SWEP.DropMagazineQCA = 5
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, -15, 10)
+SWEP.DropMagazineVelocity = Vector(0, -40, -20)
 
 ---- Sounds
 
@@ -336,10 +336,15 @@ SWEP.HideBones = {
 
 SWEP.ReloadHideBoneTables = {
     [1] = {
-        "mag",
+        "fakemag",
         "bullet1",
         "bullet2",
         "bullet3",
+        "bullet4",
+    },
+    [2] = {
+        "mag",
+        "fakerounds",
     },
 }
 
@@ -459,9 +464,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 40 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -485,9 +490,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 47 / 30, c = ca, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 50 / 30, c = ca, v = 0.3 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -510,9 +515,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 40 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -537,9 +542,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 55 / 30, c = ca, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 57.5 / 30, c = ca, v = 0.3 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -562,9 +567,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 45 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 47.5 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -588,9 +593,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 60 / 30, c = ca, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 62.5 / 30, c = ca, v = 0.3 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -613,9 +618,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 52.5 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.65},
+            {hide = 1, t = 0.9},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -639,9 +645,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 65 / 30, c = ca, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 67.5 / 30, c = ca, v = 0.3 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.65},
+            {hide = 1, t = 0.9},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -664,9 +671,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 35 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.6},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -691,9 +698,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 50 / 30, c = ca, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 52.5 / 30, c = ca, v = 0.3 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.6},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -716,9 +723,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 40 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -743,9 +750,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 50 / 30, c = ca, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 52.5 / 30, c = ca, v = 0.3 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.33},
-            {hide = 0, t = 0.45}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.4},
+            {hide = 1, t = 0.7},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

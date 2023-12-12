@@ -184,6 +184,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_60.mdl"
+ATT.DropMagazineTime = 0.65
+ATT.DropMagazineQCA = 4
+ATT.DropMagazineVelocity = Vector(0, -10, -5)
 
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -209,6 +212,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "925.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_919_25.mdl"
+ATT.DropMagazineTime = 0.6
 
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
