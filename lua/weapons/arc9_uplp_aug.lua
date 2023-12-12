@@ -58,7 +58,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_ar15.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_aug.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -194,8 +194,8 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.275, -3, 0.35),
-     Ang = Angle(0.35, 0.125, -3),
+     Pos = Vector(-2.275, -3, 0.55),
+     Ang = Angle(0, 0, 0.0),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
@@ -1066,32 +1066,6 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    -- Firemodee --
-
-    ["firemode_1"] = {
-        Source = "firemode_0",
-        EventTable = {
-            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0 },
-        }
-    },
-    ["firemode_2"] = {
-        Source = "firemode_1",
-        EventTable = {
-            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
-        }
-    },
-    ["firemode_1_empty"] = {
-        Source = "firemode_0_empty",
-        EventTable = {
-            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0 },
-        }
-    },
-    ["firemode_2_empty"] = {
-        Source = "firemode_1_empty",
-        EventTable = {
-            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0 },
-        }
-    },
 
     ["toggle"] = {
         Source = "modeswitch",
@@ -1203,24 +1177,13 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big", "uplp_aug_scope"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, 0),
         Pos = Vector(0, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_aug_scope"},
-        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
-        Bone = "body",
-        CorrectiveAng = Angle(0, 0, 0),
-        Pos = Vector(0, 0, 0),
-        Ang = Angle(90, 90, 180),
-		Hidden = true,
-        MergeSlots = {1},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),

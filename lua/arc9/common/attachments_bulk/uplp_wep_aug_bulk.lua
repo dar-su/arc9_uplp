@@ -39,6 +39,39 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_top_scope"}
 
+
+ATT.Model = "models/weapons/arc9/uplp/optic_aug_lense.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0.025, 9, 0.31),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30,
+        RTScopeFOV = 57 / 4,
+
+        SwayAddSights = sway_mid,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.5)
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
+
+ATT.ScopeScreenRatio = 0.66
+ATT.ModelOffset = Vector(-1.35, 0, 0.9)
+
 ARC9.LoadAttachment(ATT, "uplp_aug_top_scope")
 
 -------------------- BOTTOM RAIL
