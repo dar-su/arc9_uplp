@@ -36,7 +36,10 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+"[AW-MP]XQAAAQBbAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtSFsYEW0WSIx+PPszdZGe5ChDb/3rSMP7rALKEXS+bGV6EAkERyIWZIqsqaucQA3aki+EyQTuAugoHFuqAwkxahfa40mGd/AfXKhn5CvEKsg0Bzb3hFjCBFuvOcibdRFj0z6rGhnAtnhfNFT5ILjaGXgjfEjjlyw",
+"[AW-MG]XQAAAQBcAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRVe4CV1MrOK5gdK1yIrmz7N6nnOkGGrNvTca3sIk8kpgoNeLXsF0CylxO9tYnT4W3seOx4brwN1xk5cL+z7/fW0WiZqAHpMlY0TWof9uag3IefSSZU1w1RxqgZz17aBzOCG7DYwsBsBa6VhNu4yk9NXBKZWjHumAA==",
+"[Global Offended]XQAAAQBIAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrgpRXm4Oqy9pXAmemONU52T5c+oNpwChO0lAqEo5rPIspYVtNjeCI2tiZED8ljkX2SyIqy+fLXl1hVWC7oyNcbKzIKe/87THq3TAWCteB4td2TJLu6US/tjMtXUIHnu6zRIeyHWbZnfh9T+2O0K1+AA==",
+"[Custom 300 SP]XQAAAQDGAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrgpRXm4Oqz2H2DSMOfL3jVf0elLaCOUHZQYuS2e2rgJdc3Z7VdMVX+KuKytdCS4u78ZgV4aTU7Vh7eQJZ5GKD/+2X3vxeZpk/WR9km3j60Xy3qjoK7cVdgZKDvQUodrFrLmrSXMezdLe7YTwN3ODtTAX2oZsXEdUThfua8zPihq+XZYSn7yB4ow2hsEo/YEawuePVqHxwPEhgXeyFARrWn/GQLaibW8QUzhJ0pm3yiWSQyKg=",
 }
 
 SWEP.DefaultBodygroups = "00000000000000" -- Might as well prepare for the future
@@ -224,7 +227,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(12.5, 32.5, 5)
+SWEP.CustomizePos = Vector(11.5, 27.5, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(12.5, -2, -3)
 
@@ -844,6 +847,10 @@ local stockcol = {
         mdl:SetBodygroup(3, 1)
     end
 	
+	if eles["uplp_aug_bot_alt"] then -- grrr element shits itself and regular grip el overriding it
+        mdl:SetBodygroup(6, 5)
+    end
+
 	if !eles["uplp_muzzle_used"] then
 		if eles["uplp_aug_brl_smg"] then
 			mdl:SetBodygroup(5, 1)
@@ -903,7 +910,8 @@ SWEP.AttachmentElements = {
     -- GRIPS
     ["uplp_grip_used"] = { Bodygroups = { { 6, 4 } } },
     ["uplp_aug_bot_alt"] = { Bodygroups = { { 6, 5 } }, AttPosMods = {
-        [8] = { Pos = Vector(-1, 2.5, 8), Ang = Angle(90, 90, -90) },
+        [6] = { Pos = Vector(0, 3.6, 7) },
+        [8] = { Pos = Vector(-1.15, 2.7, 8), Ang = Angle(90, 90, -90) },
         } },
 	
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } }, AttPosMods = {
@@ -981,10 +989,13 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_cclamp"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+		RejectAttachments = {
+		["uplp_grip_half"] = true,
+		},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 3.6, 7),
+        Pos = Vector(0, 3.6, 6),
         Ang = Angle(90, 90, 180),
 		-- Installed = "uplp_aug_bot_grip",
 		-- Integral = "uplp_aug_bot_grip",
@@ -996,7 +1007,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 3.6, 9),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_grip_vert"},
+        RequireElements = {"uplp_grip_used"},
 		-- Installed = "uplp_aug_bot_grip",
 		-- Integral = "uplp_aug_bot_grip",
     },
@@ -1055,7 +1066,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/aug_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 3, -11),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1063,7 +1074,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/aug_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, 0.5),
+        Pos = Vector(0, 3.5, -6.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1071,7 +1082,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/aug_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, 0.5),
+        Pos = Vector(0, 2, -3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1079,7 +1090,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/aug_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, 0.5),
+        Pos = Vector(0, 2, -1),
         Ang = Angle(90, 90, 180),
     },
 }
@@ -1087,6 +1098,10 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
+
+    if att["uplp_aug_brl_mg"] then
+        name = ARC9:GetPhrase("uplp_weapon_aug_mg")
+    end
 
     if att["uplp_aug_smg"] then
         name = ARC9:GetPhrase("uplp_weapon_aug_smg")

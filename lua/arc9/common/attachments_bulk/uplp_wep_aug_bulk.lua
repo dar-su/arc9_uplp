@@ -41,14 +41,6 @@ ATT.Sights = {
         }
         
     },
-    {
-        Pos = Vector(-0.01, 8, -0.35),
-        Ang = Angle(0, -0.5, 0),
-        Magnification = 1.25,
-        ViewModelFOV = 57,
-        ShadowPos = Vector(0,0,3),
-        Disassociate = true,
-    },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -60,7 +52,7 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/aug.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
-ATT.RTScopeColorable = true
+ATT.RTScopeColorable = false 
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
