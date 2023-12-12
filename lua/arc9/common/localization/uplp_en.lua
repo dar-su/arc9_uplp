@@ -2151,6 +2151,10 @@ L["uplp_aug_brl_smg.compactname"] = "508mm"
 L["uplp_aug_brl_smg.description"] = "Shortened 508mm (20\") barrel used on the 9x19mm AW-MP, the submachine gun variant of the AW-UG."
 
 ////// Magazines
+L["uplp_aug_mag_556_30p.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
+L["uplp_aug_mag_556_30p.description"] = "30-round magazine made out of polymer for the AW-UG."
+
 L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56x45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
@@ -2173,21 +2177,17 @@ L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-U
 -- ".300 Sound Proof"
 
 ////// Stocks
-L["uplp_aug_stock_green.printname"] = "Green Stock"
-L["uplp_aug_stock_green.compactname"] = "Green"
-L["uplp_aug_stock_green.description"] = "Standard AW-UG stock in green."
-
 L["uplp_aug_stock_white.printname"] = "White Stock"
 L["uplp_aug_stock_white.compactname"] = "White"
-L["uplp_aug_stock_white.description"] = "Standard AW-UG stock in white."
+L["uplp_aug_stock_white.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with white ones."
 
 L["uplp_aug_stock_tan.printname"] = "Tan Stock"
 L["uplp_aug_stock_tan.compactname"] = "Tan"
-L["uplp_aug_stock_tan.description"] = "Standard AW-UG stock in desert tan."
+L["uplp_aug_stock_tan.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with desert tan ones."
 
 L["uplp_aug_stock_black.printname"] = "Black Stock"
 L["uplp_aug_stock_black.compactname"] = "Black"
-L["uplp_aug_stock_black.description"] = "Standard AW-UG stock in black."
+L["uplp_aug_stock_black.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with black ones."
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"

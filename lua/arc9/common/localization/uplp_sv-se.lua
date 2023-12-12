@@ -2151,6 +2151,10 @@ L["uplp_aug_brl_smg.compactname"] = "508mm"
 L["uplp_aug_brl_smg.description"] = "Förkortad 508mm pipa som används på 9x19mm AW-MP, kulsprutepistol versionen av AW-UG."
 
 ////// Magazines
+L["uplp_aug_mag_556_30p.printname"] = "30-Patroner 5.56x45mm (Polymer)"
+L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
+L["uplp_aug_mag_556_30p.description"] = "30-patronersmagasin gjort utav polymer till AW-UG."
+
 L["uplp_aug_mag_556_40.printname"] = "40-Patroner 5.56x45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40P 5.56"
 L["uplp_aug_mag_556_40.description"] = "Förlängt 40-patronersmagasin till AW-UG."
@@ -2173,21 +2177,17 @@ L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-U
 -- ".300 Sound Proof"
 
 ////// Stocks
-L["uplp_aug_stock_green.printname"] = "Grön Kolv"
-L["uplp_aug_stock_green.compactname"] = "Grön"
-L["uplp_aug_stock_green.description"] = "Standard grön AW-UG-kolv."
-
 L["uplp_aug_stock_white.printname"] = "Vit Kolv"
 L["uplp_aug_stock_white.compactname"] = "Vit"
-L["uplp_aug_stock_white.description"] = "Standard vit AW-UG-kolv."
+L["uplp_aug_stock_white.description"] = "Ändrar utseendet på kolven, manöverhandtaget och det vikbara framgreppet på AW-UG med några som är vita."
 
 L["uplp_aug_stock_tan.printname"] = "Tanfärgad Kolv"
 L["uplp_aug_stock_tan.compactname"] = "Tan"
-L["uplp_aug_stock_tan.description"] = "Standard tanfärgad AW-UG-kolv."
+L["uplp_aug_stock_tan.description"] = "Ändrar utseendet på kolven, manöverhandtaget och det vikbara framgreppet på AW-UG med några som är tanfärgade."
 
 L["uplp_aug_stock_black.printname"] = "Svart Kolv"
 L["uplp_aug_stock_black.compactname"] = "Svart"
-L["uplp_aug_stock_black.description"] = "Standard svart AW-UG-kolv."
+L["uplp_aug_stock_black.description"] = "Ändrar utseendet på kolven, manöverhandtaget och det vikbara framgreppet på AW-UG med några som är svarta."
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
