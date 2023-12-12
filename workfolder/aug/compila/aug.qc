@@ -12,6 +12,7 @@ $bodygroup "lower" { // 1
 $bodygroup "upper" { // 2
 	studio "upper flat.smd"
 	studio "upper scope.smd"
+	studio "upper flat alt.smd"
 }   
 $bodygroup "irons" { // 3
 	studio "irons.smd"
