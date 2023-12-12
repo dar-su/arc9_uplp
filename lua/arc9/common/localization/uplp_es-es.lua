@@ -2133,9 +2133,9 @@ L["uplp_aug_top_rail.compactname"] = "Raíl"
 L["uplp_aug_top_rail.description"] = "Sustituye el visor por un raíl tradicional estilo RIS para montar ópticas tradicionales."
 
 ////// Bottom Rail
-L["uplp_aug_bot_grip.printname"] = "Empuñadura Plegable"
-L["uplp_aug_bot_grip.compactname"] = "Empuñadura"
-L["uplp_aug_bot_grip.description"] = "Empuñadura plegable equipada en la mayoría de los modelos AW-UG que reduce el retroceso."
+L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount" -- TRANSLATE 
+L["uplp_aug_bot_alt.compactname"] = "Tri-Rail" -- TRANSLATE 
+L["uplp_aug_bot_alt.description"] = "Alternative bottom rail that allows mounting of aftermarket foregrips and laser sights." -- TRANSLATE 
 
 L["uplp_aug_bot_rail.printname"] = "Raíl Inferior"
 L["uplp_aug_bot_rail.compactname"] = "Raíl"

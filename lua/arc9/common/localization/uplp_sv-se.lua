@@ -2133,9 +2133,9 @@ L["uplp_aug_top_rail.compactname"] = "Skena"
 L["uplp_aug_top_rail.description"] = "Ersätter riktmedlet med traditionell RIS-skenafunktionalitet för att montera traditionella riktmedel."
 
 ////// Bottom Rail
-L["uplp_aug_bot_grip.printname"] = "Vikbart Framgrepp"
-L["uplp_aug_bot_grip.compactname"] = "Framgrepp"
-L["uplp_aug_bot_grip.description"] = "Vikbart framgrepp utrustat på dem flesta AW-UG-modellerna som sänker rekylen."
+L["uplp_aug_bot_alt.printname"] = "Tri-Rail-Skena"
+L["uplp_aug_bot_alt.compactname"] = "Tri-Rail"
+L["uplp_aug_bot_alt.description"] = "Alternativ undermonterad skena som tillåter installering av framgrepp och lasersikten från eftermarknaden."
 
 L["uplp_aug_bot_rail.printname"] = "Undermonterad Skena"
 L["uplp_aug_bot_rail.compactname"] = "Skena"

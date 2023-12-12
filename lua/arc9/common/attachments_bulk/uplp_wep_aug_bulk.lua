@@ -26,7 +26,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0.025, 9, 0.31),
+        Pos = Vector(-0.01, 9, 0.2825),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -41,6 +41,14 @@ ATT.Sights = {
         }
         
     },
+    {
+        Pos = Vector(-0.01, 8, -0.35),
+        Ang = Angle(0, -0.5, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+        ShadowPos = Vector(0,0,3),
+        Disassociate = true,
+    },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -50,7 +58,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 4
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/aug.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
@@ -68,7 +76,7 @@ ARC9.LoadAttachment(ATT, "uplp_aug_top_scope")
 ATT = {}
 
 ATT.PrintName = "Tri-rail Underbarrel Mount"
-ATT.CompactName = "tri"
+ATT.CompactName = "Tri-Rail"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "altrail.png", "mips smooth")
@@ -93,6 +101,8 @@ ATT.Icon = Material(iconfolder .. "hbar.png", "mips smooth")
 
 ATT.Category = "uplp_aug_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Bipod = true
 
 ATT.ActivateElements = {"uplp_aug_brl_mg"}
 
@@ -131,6 +141,17 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_30_pmag.mdl"
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+local pathUT = "uplp_urban_temp/ar15/"
+
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathUT .. "magout.ogg" then
+        data.sound = pathUT .. "pmagout.ogg"
+    elseif data.sound == pathUT .. "magin.ogg" then
+        data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
 ATT.ActivateElements = {"uplp_aug_mag_556_30p"}
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_30p")
@@ -151,6 +172,10 @@ ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_mag_556_40"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_40"
+end
 
 ATT.ClipSizeOverride = 40
 
@@ -173,6 +198,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_mag_556_52"}
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_52"
+end
+
 ATT.ClipSizeOverride = 52
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_52")
@@ -193,6 +222,10 @@ ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_mag_919_25", "uplp_aug_smg"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_9_25"
+end
 
 ATT.ClipSizeOverride = 25
 
@@ -215,6 +248,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_mag_919_40", "uplp_aug_smg"}
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_9_40"
+end
+
 ATT.ClipSizeOverride = 40
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_919_40")
@@ -236,6 +273,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_mag_300_10"}
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+	if anim == "fire_empty" then return "fire_empty_alt" end
+    return anim .. "_10"
+end
+
 ATT.ClipSizeOverride = 10
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_300_10")
@@ -246,7 +288,7 @@ ARC9.LoadAttachment(ATT, "uplp_aug_mag_300_10")
 ATT = {}
 
 ATT.PrintName = "White Stock"
-ATT.CompactName = "Green"
+ATT.CompactName = "White"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "whit.png", "mips smooth")

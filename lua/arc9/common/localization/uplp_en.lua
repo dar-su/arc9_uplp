@@ -2133,9 +2133,9 @@ L["uplp_aug_top_rail.compactname"] = "Rail"
 L["uplp_aug_top_rail.description"] = "Replaces the scope with a traditional RIS-style rail for mounting traditional optics."
 
 ////// Bottom Rail
-L["uplp_aug_bot_grip.printname"] = "Folding Foregrip"
-L["uplp_aug_bot_grip.compactname"] = "Foregrip"
-L["uplp_aug_bot_grip.description"] = "Folding foregrip equipped on most AW-UG models that reduces recoil."
+L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount"
+L["uplp_aug_bot_alt.compactname"] = "Tri-Rail"
+L["uplp_aug_bot_alt.description"] = "Alternative bottom rail that allows mounting of aftermarket foregrips and laser sights."
 
 L["uplp_aug_bot_rail.printname"] = "Bottom Rail"
 L["uplp_aug_bot_rail.compactname"] = "Rail"
