@@ -2104,8 +2104,9 @@ L["uplp_weapon_ash12_real"] = "ASh-12"
 L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
-L["uplp_weapon_aug"] = "AW Bullpup"
-L["uplp_weapon_aug_desc"] = "El \"Automatische Waffen\" El Bullpup (Rifle Automatico Bullpup) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en el Bullpup en todo el mundo. El AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil."
+L["uplp_weapon_aug"] = "AW-UG"
+L["uplp_weapon_aug_desc"] = "The \"Automatische Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun." -- RETRANSLATE
+-- L["uplp_weapon_aug_desc"] = "El \"Automatische Waffen\" El Bullpup (Rifle Automatico Bullpup) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en el Bullpup en todo el mundo. El AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil." -- OLD
 
 L["uplp_weapon_aug_smg"] = "AW MP"
 L["uplp_weapon_aug_smg_full"] = "Automatische Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
@@ -2116,7 +2117,7 @@ L["uplp_weapon_aug_real"] = "Steyr AUG"
 
 L["uplp_weapon_aug_manufacturer"] = "Steyr-Daimler-Puch"
 
-/////////// Attachments -- TRANSLATE ALL HERE
+/////////// Attachments
 ////// Irons
 L["uplp_aug_rs.printname"] = "Miras de Hierro"
 L["uplp_aug_rs.compactname"] = "Hierros"
@@ -2170,6 +2171,23 @@ L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
 L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 SP especializado</color>."
 -- ".300 Sound Proof"
+
+////// Stocks -- TRANSLATE
+L["uplp_aug_stock_green.printname"] = "Green Stock"
+L["uplp_aug_stock_green.compactname"] = "Green"
+L["uplp_aug_stock_green.description"] = "Standard AW-UG stock in green."
+
+L["uplp_aug_stock_white.printname"] = "White Stock"
+L["uplp_aug_stock_white.compactname"] = "White"
+L["uplp_aug_stock_white.description"] = "Standard AW-UG stock in white."
+
+L["uplp_aug_stock_tan.printname"] = "Tan Stock"
+L["uplp_aug_stock_tan.compactname"] = "Tan"
+L["uplp_aug_stock_tan.description"] = "Standard AW-UG stock in desert tan."
+
+L["uplp_aug_stock_black.printname"] = "Black Stock"
+L["uplp_aug_stock_black.compactname"] = "Black"
+L["uplp_aug_stock_black.description"] = "Standard AW-UG stock in black."
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"

@@ -2172,6 +2172,23 @@ L["uplp_aug_mag_300_10.compactname"] = "10R .300"
 L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-UG.\nLaddad med <color=255,255,100>specialiserad .300 SP-patroner</color>."
 -- ".300 Sound Proof"
 
+////// Stocks
+L["uplp_aug_stock_green.printname"] = "Grön Kolv"
+L["uplp_aug_stock_green.compactname"] = "Grön"
+L["uplp_aug_stock_green.description"] = "Standard grön AW-UG-kolv."
+
+L["uplp_aug_stock_white.printname"] = "Vit Kolv"
+L["uplp_aug_stock_white.compactname"] = "Vit"
+L["uplp_aug_stock_white.description"] = "Standard vit AW-UG-kolv."
+
+L["uplp_aug_stock_tan.printname"] = "Tanfärgad Kolv"
+L["uplp_aug_stock_tan.compactname"] = "Tan"
+L["uplp_aug_stock_tan.description"] = "Standard tanfärgad AW-UG-kolv."
+
+L["uplp_aug_stock_black.printname"] = "Svart Kolv"
+L["uplp_aug_stock_black.compactname"] = "Svart"
+L["uplp_aug_stock_black.description"] = "Standard svart AW-UG-kolv."
+
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
 L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Handledsförstöraren 12\") är en väldigt kraftfull rysk revolver som skjuter den stora 12.7x55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."

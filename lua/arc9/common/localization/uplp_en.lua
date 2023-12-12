@@ -2172,6 +2172,23 @@ L["uplp_aug_mag_300_10.compactname"] = "10R .300"
 L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 SP cartridge</color>."
 -- ".300 Sound Proof"
 
+////// Stocks
+L["uplp_aug_stock_green.printname"] = "Green Stock"
+L["uplp_aug_stock_green.compactname"] = "Green"
+L["uplp_aug_stock_green.description"] = "Standard AW-UG stock in green."
+
+L["uplp_aug_stock_white.printname"] = "White Stock"
+L["uplp_aug_stock_white.compactname"] = "White"
+L["uplp_aug_stock_white.description"] = "Standard AW-UG stock in white."
+
+L["uplp_aug_stock_tan.printname"] = "Tan Stock"
+L["uplp_aug_stock_tan.compactname"] = "Tan"
+L["uplp_aug_stock_tan.description"] = "Standard AW-UG stock in desert tan."
+
+L["uplp_aug_stock_black.printname"] = "Black Stock"
+L["uplp_aug_stock_black.compactname"] = "Black"
+L["uplp_aug_stock_black.description"] = "Standard AW-UG stock in black."
+
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
 L["uplp_weapon_rsh12_desc"] = "The \"Разрушитель запястий 12.7\" (Razrushitel' zapyastiy 12.7, \"Wrist Destroyer 12.7\") is a very powerful Russian revolver firing the very large 12.7x55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"."
