@@ -2105,13 +2105,13 @@ L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW-UG"
-L["uplp_weapon_aug_desc"] = "The \"Automatische Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun." -- RETRANSLATE
+L["uplp_weapon_aug_desc"] = "The \"Automatisches Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun." -- RETRANSLATE
 -- L["uplp_weapon_aug_desc"] = "El \"Automatische Waffen\" El Bullpup (Rifle Automatico Bullpup) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en el Bullpup en todo el mundo. El AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil." -- OLD
 
 L["uplp_weapon_aug_smg"] = "AW MP"
-L["uplp_weapon_aug_smg_full"] = "Automatische Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
+L["uplp_weapon_aug_smg_full"] = "Automatisches Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
 L["uplp_weapon_aug_mg"] = "AW-UG"
-L["uplp_weapon_aug_mg_full"] = "Automatiche Waffen-Maschinengewehr (\"Automatic Weapon Support Rifle\")"
+L["uplp_weapon_aug_mg_full"] = "Automatiches Waffen-Maschinengewehr (\"Automatic Weapon Support Rifle\")"
 
 L["uplp_weapon_aug_real"] = "Steyr AUG"
 

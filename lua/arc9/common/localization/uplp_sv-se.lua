@@ -2106,12 +2106,12 @@ L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW-UG"
-L["uplp_weapon_aug_desc"] = "\"Automatische Waffen-Universal-Gewehr\" (Automatvapen Univeralgevär) är huvudvapnet för den österrikiska militären och har varit basen för flertal andra bullpup-baserade eldvapen världen runt. AW har också varit basen till flertal variationer av vapnet vilket förvandlar den till antingen en kulspruta för understöd eller kulsprutepistol."
+L["uplp_weapon_aug_desc"] = "\"Automatisches Waffen-Universal-Gewehr\" (Automatvapen Univeralgevär) är huvudvapnet för den österrikiska militären och har varit basen för flertal andra bullpup-baserade eldvapen världen runt. AW har också varit basen till flertal variationer av vapnet vilket förvandlar den till antingen en kulspruta för understöd eller kulsprutepistol."
 
 L["uplp_weapon_aug_smg"] = "AW MP"
-L["uplp_weapon_aug_smg_full"] = "Automatische Waffen Machinenpistole (\"Automatvapen Kulsprutepistol\")"
+L["uplp_weapon_aug_smg_full"] = "Automatisches Waffen Machinenpistole (\"Automatvapen Kulsprutepistol\")"
 L["uplp_weapon_aug_mg"] = "AW-MG"
-L["uplp_weapon_aug_mg_full"] = "Automatiche Waffen-Maschinengewehr (\"Automatvapen Kulspruta\")"
+L["uplp_weapon_aug_mg_full"] = "Automatiches Waffen-Maschinengewehr (\"Automatvapen Kulspruta\")"
 
 L["uplp_weapon_aug_real"] = "Steyr AUG"
 
