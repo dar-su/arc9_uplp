@@ -39,7 +39,7 @@ SWEP.StandardPresets = {
 
 }
 
-SWEP.DefaultBodygroups = "00010000000000" -- Might as well prepare for the future
+SWEP.DefaultBodygroups = "00000000000000" -- Might as well prepare for the future
 
 ---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_3"
@@ -1106,6 +1106,10 @@ local stockcol = {
             end
         end
     end
+
+    if eles["uplp_optic_used"] or eles["uplp_ar15_rs"] then
+        mdl:SetBodygroup(3, 1)
+    end
 	
 	if !eles["uplp_muzzle_used"] then
 		if eles["uplp_aug_brl_smg"] then
@@ -1140,7 +1144,7 @@ SWEP.AttachmentElements = {
     ["uplp_aug_top_scope"] = { Bodygroups = { { 2, 1 } } },
 
     -- IRONS
-    ["uplp_aug_rs"] = { Bodygroups = { { 3, 0 } } },
+    -- ["uplp_optic_used"] = { Bodygroups = { { 3, 0 } } },
 
     -- BARRELS
     ["uplp_aug_brl_smg"] = { Bodygroups = { { 4, 1 } } },
@@ -1152,6 +1156,9 @@ SWEP.AttachmentElements = {
 	
     -- GRIPS
     ["uplp_grip_used"] = { Bodygroups = { { 6, 4 } } },
+    ["uplp_aug_bot_alt"] = { Bodygroups = { { 6, 5 } }, AttPosMods = {
+        [8] = { Pos = Vector(-1, 2.5, 8), Ang = Angle(90, 90, -90) },
+        } },
 	
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } }, AttPosMods = {
     [7] = { Pos = Vector(0, 1.02, 16.15) },
@@ -1180,19 +1187,19 @@ SWEP.Attachments = {
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big", "uplp_aug_scope"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, 0),
-        Pos = Vector(0, -0.1, 1.326),
+        CorrectiveAng = Angle(0, 0, 0),
+        Pos = Vector(0, 0.55, -1.5),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
-        Category = {"uplp_aug_rs", "uplp_ar15_rs", "uplp_backup_optic"},
+        Category = {"uplp_ar15_rs", "uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
-        ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
+        ExcludeElements = {"uplp_aug_top_scope"},
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, 0),
-        Pos = Vector(0, -0.2, 0.326),
+        CorrectiveAng = Angle(0, 0, 0),
+        Pos = Vector(0, 0.55, -3),
         Ang = Angle(90, 90, 180),
 		RejectAttachments = {
 		["uplp_ar15_rs_carry"] = true,
@@ -1203,7 +1210,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_fs"},
         DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.2, 12.8),
+        Pos = Vector(0, 0.55, 6),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
@@ -1213,7 +1220,7 @@ SWEP.Attachments = {
         Category = {"uplp_aug_barrel"},
         DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0.633, 5.672),
+        Pos = Vector(0, 2, 7),
         Ang = Angle(90, 90, 180),
         ActiveElements = {"uplp_ar15_barrel"},
     },
@@ -1221,8 +1228,9 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_muzzle"},
         Bone = "body",
-        Pos = Vector(0, 0.975, 15.125),
+        Pos = Vector(0, 1.95, 12.4),
         Ang = Angle(90, 90, 180),
+        Scale = 0.9,
         Icon_Offset = Vector(1, 0, 0),
     },
     {
@@ -1230,8 +1238,19 @@ SWEP.Attachments = {
         Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_cclamp"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 1.72, 10),
+        Pos = Vector(0, 3.6, 7),
         Ang = Angle(90, 90, 180),
+		-- Installed = "uplp_aug_bot_grip",
+		-- Integral = "uplp_aug_bot_grip",
+    },
+    {
+        PrintName = "Grip Style",
+        Category = {"uplp_aug_grip"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 3.6, 9),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_grip_vert"},
 		-- Installed = "uplp_aug_bot_grip",
 		-- Integral = "uplp_aug_bot_grip",
     },
@@ -1239,37 +1258,18 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
         Bone = "body",
-        Pos = Vector(-1, 0.95, 12),
-        Ang = Angle(90, 90, -90),
+        Pos = Vector(-1.05, 1.85, 1.5),
+        Ang = Angle(90, 45, -90),
         ExcludeElements = {"uplp_no_tactical"},
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_stock"),
-        Category = {"uplp_aug_stock"},
-        DefaultIcon = Material(defatt2 .. "arstock.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0, 0.99, -2.98),
-        Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_aug_mag"},
         DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
-        RejectAttachments = {
-        ["uplp_ar15_mag_stanag30"] = true,
-        },
         Bone = "mag",
-        Pos = Vector(0.04, -2.406, -2.428),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(1.5, 0, -3),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_ammo"),
-        Category = {"uplp_ar15_ammo"},
-        DefaultIcon = Material(defatt .. "ammotype.png", "mips smooth"),
-        ExcludeElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_reciever_45acp", "uplp_ar15_mag_ext"},
-        Bone = "mag",
-        Pos = Vector(0, -1.5, -1.25),
+        Icon_Offset = Vector(0.5, 0, -1),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
@@ -1287,6 +1287,16 @@ SWEP.Attachments = {
 
     -- Cosmetic shit
     {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_aug_stock"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, -0.5, -7),
+        Ang = Angle(90, 90, 180),
+        CosmeticOnly = true,
+    },
+
+    {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
@@ -1294,76 +1304,46 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
 
-	--[[
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- def A sticker
-        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_1.mdl",
-        ExcludeElements = {"modrecsticker", "ar9sticker"},
-        Category = "stickers",
-        Bone = "body",
-        Pos = Vector(0, 3, 4),
-        Ang = Angle(90, 90, 180),
-    },
-
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- modrec A sticker
-        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_1.mdl",
-        RequireElements = {"modrecsticker"},
-        Category = "stickers",
-        Bone = "body",
-        Pos = Vector(0, 1, 4),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A", -- arsmg9 A sticker
-        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_9rec_1.mdl",
-        RequireElements = {"ar9sticker"},
-        ExcludeElements = {"modrecsticker"},
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/aug_1.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 3, 4),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B", -- def B sticker (works for every variant)
-        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_2.mdl",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/aug_2.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1, 0.5),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C", -- modrec C sticker
-        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_modrec_2.mdl",
-        RequireElements = {"modrecsticker"},
-        ExcludeElements = {"uplp_ar15_reciever_stm9"},
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/aug_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 1, 0.5),
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C", -- arsmg9 + modrec C sticker
-        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_stmrec_2.mdl",
-        RequireElements = {"uplp_ar15_reciever_stm9", "modrecsticker"},
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
+        StickerModel = "models/weapons/arc9/uplp/stickers/aug_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 1, 0.5),
         Ang = Angle(90, 90, 180),
     },
-	]]--
 }
 
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
 
-    if att["uplp_ar15_reciever_stm9"] then
-        name = ARC9:GetPhrase("uplp_weapon_ar15_smg9")
-    end
-
-    if att["uplp_ar15_reciever_45acp"] then
-        name = ARC9:GetPhrase("uplp_weapon_ar15_smg45")
+    if att["uplp_aug_smg"] then
+        name = ARC9:GetPhrase("uplp_weapon_aug_smg")
     end
 
     return name

@@ -5,24 +5,6 @@ local iconfolderar = "entities/uplp_attachements/ar15/"
 local iconfolderak = "entities/uplp_attachements/ak/"
 local iconfolderax = "entities/uplp_attachements/awp/"
 
--------------------- IRONS
----------- uplp_aug_rs
-
-ATT = {}
-
-ATT.PrintName = "Iron Sights"
-ATT.CompactName = "Irons"
-ATT.Description = ATT.PrintName
-
-ATT.Icon = Material(iconfolderar .. "fsrs/ridk.png", "mips smooth")
-
-ATT.Category = "uplp_aug_rs"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.ActivateElements = {"uplp_aug_rs"}
-
-ARC9.LoadAttachment(ATT, "uplp_aug_rs")
-
 -------------------- TOP RAIL
 ---------- uplp_aug_top_scope
 
@@ -37,8 +19,7 @@ ATT.Icon = Material(iconfolder .. "scope.png", "mips smooth")
 ATT.Category = "uplp_aug_scope"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_aug_top_scope"}
-
+ATT.ActivateElements = {"uplp_aug_top_scope", "uplp_optic_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/optic_aug_lense.mdl"
 ATT.FoldSights = true
@@ -51,7 +32,14 @@ ATT.Sights = {
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 4,
 
-        SwayAddSights = sway_mid,
+        SwayAddSights = {
+            -- SwayAddSights = 1,
+            SpeedAddSights = -0.2,
+            AimDownSightsTimeAdd = 0.05,
+        
+            CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = 2 },
+        }
+        
     },
 }
 
@@ -70,27 +58,27 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
-ATT.ModelOffset = Vector(-1.35, 0, 0.9)
+ATT.ModelOffset = Vector(1.45, 0, 1.55)
 
 ARC9.LoadAttachment(ATT, "uplp_aug_top_scope")
 
 -------------------- BOTTOM RAIL
----------- uplp_aug_bot_grip
+---------- uplp_aug_bot_alt
 
 ATT = {}
 
-ATT.PrintName = "Folding Foregrip"
-ATT.CompactName = "Folding"
+ATT.PrintName = "Tri-rail Underbarrel Mount"
+ATT.CompactName = "tri"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "altrail.png", "mips smooth")
 
 ATT.Category = "uplp_aug_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_aug_bot_grip"}
+ATT.ActivateElements = {"uplp_aug_bot_alt"}
 
-ARC9.LoadAttachment(ATT, "uplp_aug_bot_grip")
+ARC9.LoadAttachment(ATT, "uplp_aug_bot_alt")
 
 -------------------- BARRELS
 ---------- uplp_aug_brl_mg
@@ -176,7 +164,7 @@ ATT.PrintName = "52-Round 5.56x45mm Drum"
 ATT.CompactName = "52R 5.56"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderak .. "mag/556.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_60.mdl"
 
@@ -197,14 +185,14 @@ ATT.PrintName = "25-Round 9x19mm"
 ATT.CompactName = "25R 9x19"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderak .. "mag/556.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "925.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_919_25.mdl"
 
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_aug_mag_919_25"}
+ATT.ActivateElements = {"uplp_aug_mag_919_25", "uplp_aug_smg"}
 
 ATT.ClipSizeOverride = 25
 
@@ -218,14 +206,14 @@ ATT.PrintName = "40-Round 9x19mm"
 ATT.CompactName = "25R 9x19"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderak .. "mag/556.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "940.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_919_40.mdl"
 
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_aug_mag_919_40"}
+ATT.ActivateElements = {"uplp_aug_mag_919_40", "uplp_aug_smg"}
 
 ATT.ClipSizeOverride = 40
 
@@ -239,7 +227,7 @@ ATT.PrintName = "10-Round .300 SP"
 ATT.CompactName = "10R .300"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderak .. "mag/556.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "10.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_300blk_10.mdl"
 
@@ -253,23 +241,6 @@ ATT.ClipSizeOverride = 10
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_300_10")
 
 -------------------- STOCKS
----------- uplp_aug_stock_green
-
-ATT = {}
-
-ATT.PrintName = "Green Stock"
-ATT.CompactName = "Green"
-ATT.Description = ATT.PrintName
-
-ATT.Icon = Material(iconfolderax .. "stock/xg.png", "mips smooth")
-
-ATT.Category = "uplp_aug_stock"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.ActivateElements = {"uplp_aug_stock_green"}
-
-ARC9.LoadAttachment(ATT, "uplp_aug_stock_green")
-
 ---------- uplp_aug_stock_white
 
 ATT = {}
@@ -278,7 +249,7 @@ ATT.PrintName = "White Stock"
 ATT.CompactName = "Green"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderax .. "stock/xw.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "whit.png", "mips smooth")
 
 ATT.Category = "uplp_aug_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -295,7 +266,7 @@ ATT.PrintName = "Tan Stock"
 ATT.CompactName = "Tan"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderax .. "stock/awm.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "tan.png", "mips smooth")
 
 ATT.Category = "uplp_aug_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -312,7 +283,7 @@ ATT.PrintName = "Black Stock"
 ATT.CompactName = "Black"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolderax .. "stock/at.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "blk.png", "mips smooth")
 
 ATT.Category = "uplp_aug_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
