@@ -168,7 +168,7 @@ SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
 SWEP.BarrelLength = 35
 
 -- Shooting and Firemodes
-SWEP.RPM = 800 -- How fast gun shoot
+SWEP.RPM = 750 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -231,7 +231,7 @@ SWEP.CustomizePos = Vector(11.5, 27.5, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(12.5, -2, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine

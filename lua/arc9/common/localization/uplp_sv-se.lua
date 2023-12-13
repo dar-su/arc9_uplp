@@ -2126,20 +2126,12 @@ L["uplp_aug_rs.description"] = "Kompakt järn och korn gjort för användning av
 ////// Top Rail
 L["uplp_aug_top_scope.printname"] = "AW-UG-Riktmedel"
 L["uplp_aug_top_scope.compactname"] = "Riktmedel"
-L["uplp_aug_top_scope.description"] = "Traditionellt teleskopiskt riktmedel med 1,5x magnifiering som används på normala AW-UG-modeller."
-
-L["uplp_aug_top_rail.printname"] = "Toppmonterad Skena"
-L["uplp_aug_top_rail.compactname"] = "Skena"
-L["uplp_aug_top_rail.description"] = "Ersätter riktmedlet med traditionell RIS-skenafunktionalitet för att montera traditionella riktmedel."
+L["uplp_aug_top_scope.description"] = "Traditionellt teleskopiskt riktmedel med 1,5x magnifiering som används på normala AW-UG-modeller." .. desc_midoptic
 
 ////// Bottom Rail
 L["uplp_aug_bot_alt.printname"] = "Tri-Rail-Skena"
 L["uplp_aug_bot_alt.compactname"] = "Tri-Rail"
 L["uplp_aug_bot_alt.description"] = "Alternativ undermonterad skena som tillåter installering av framgrepp och lasersikten från eftermarknaden."
-
-L["uplp_aug_bot_rail.printname"] = "Undermonterad Skena"
-L["uplp_aug_bot_rail.compactname"] = "Skena"
-L["uplp_aug_bot_rail.description"] = "Ersätter det vikbara framgreppet med traditionell RIS-skenafunktionalitet för montering av framgrepp från eftermarknaden."
 
 ////// Barrels
 L["uplp_aug_brl_mg.printname"] = "900mm HBAR-Pipa"
@@ -2165,15 +2157,15 @@ L["uplp_aug_mag_556_52.description"] = "52-patroners trummagasin till AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-Patroner 9x19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "25-patronersmagasin till AW-MP."
+L["uplp_aug_mag_919_25.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9x19mm-patroner.\nUtrustad med ett <color=175,175,255>25-patronersmagasin</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_919_40.printname"] = "40-Patroner 9x19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "Förlängt 40-Patronersmagasin till AW-MP."
+L["uplp_aug_mag_919_40.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9x19mm-patroner.\nUtrustad med ett  <color=175,175,255>förstorat 40-patronersmagasin</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_300_10.printname"] = "10-Patroner .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-UG.\nLaddad med <color=255,255,100>specialiserad .300 SP-patroner</color>."
+L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-UG.\nLaddad med <color=255,255,100>specialiserad .300 SP-patroner</color>.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
 -- ".300 Sound Proof"
 
 ////// Stocks

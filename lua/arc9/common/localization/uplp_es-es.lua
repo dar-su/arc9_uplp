@@ -2126,20 +2126,12 @@ L["uplp_aug_rs.description"] = "Miras de hierro compactas diseñadas para su uso
 ////// Top Rail
 L["uplp_aug_top_scope.printname"] = "Visor AW-UG"
 L["uplp_aug_top_scope.compactname"] = "Visor"
-L["uplp_aug_top_scope.description"] = "Mira telescópica tradicional de 1.5 aumentos utilizada en los modelos AW-UG estándar."
-
-L["uplp_aug_top_rail.printname"] = "Raíl Superior"
-L["uplp_aug_top_rail.compactname"] = "Raíl"
-L["uplp_aug_top_rail.description"] = "Sustituye el visor por un raíl tradicional estilo RIS para montar ópticas tradicionales."
+L["uplp_aug_top_scope.description"] = "Mira telescópica tradicional de 1.5 aumentos utilizada en los modelos AW-UG estándar." .. desc_midoptic
 
 ////// Bottom Rail
 L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount" -- TRANSLATE 
 L["uplp_aug_bot_alt.compactname"] = "Tri-Rail" -- TRANSLATE 
 L["uplp_aug_bot_alt.description"] = "Alternative bottom rail that allows mounting of aftermarket foregrips and laser sights." -- TRANSLATE 
-
-L["uplp_aug_bot_rail.printname"] = "Raíl Inferior"
-L["uplp_aug_bot_rail.compactname"] = "Raíl"
-L["uplp_aug_bot_rail.description"] = "Sustituye la empuñadura plegable por un carril tradicional estilo RIS para montar empuñaduras posventa."
 
 ////// Barrels
 L["uplp_aug_brl_mg.printname"] = "Cañón HBAR de 900mm"
@@ -2165,15 +2157,15 @@ L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la A
 
 L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9x19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "Cargador de 25 balas para la AW-MP."
+L["uplp_aug_mag_919_25.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>25-round magazine</color>." .. changeammo.pistol -- TRANSLATE
 
 L["uplp_aug_mag_919_40.printname"] = "40 Rondas 9x19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "Cargador extendido de 40 cartuchos para la AW-MP."
+L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol -- TRANSLATE
 
 L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 SP especializado</color>."
+L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 SP especializado</color>.\nRestringe el arma a <color=255,100,100>sólo semi-automático</color>."
 -- ".300 Sound Proof"
 
 ////// Stocks -- TRANSLATE

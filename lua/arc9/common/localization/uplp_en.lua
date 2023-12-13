@@ -2126,20 +2126,12 @@ L["uplp_aug_rs.description"] = "Compact iron sights intended for use with the AW
 ////// Top Rail
 L["uplp_aug_top_scope.printname"] = "AW-UG Scope"
 L["uplp_aug_top_scope.compactname"] = "Scope"
-L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models."
-
-L["uplp_aug_top_rail.printname"] = "Top Rail"
-L["uplp_aug_top_rail.compactname"] = "Rail"
-L["uplp_aug_top_rail.description"] = "Replaces the scope with a traditional RIS-style rail for mounting traditional optics."
+L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models." .. desc_midoptic
 
 ////// Bottom Rail
 L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount"
 L["uplp_aug_bot_alt.compactname"] = "Tri-Rail"
 L["uplp_aug_bot_alt.description"] = "Alternative bottom rail that allows mounting of aftermarket foregrips and laser sights."
-
-L["uplp_aug_bot_rail.printname"] = "Bottom Rail"
-L["uplp_aug_bot_rail.compactname"] = "Rail"
-L["uplp_aug_bot_rail.description"] = "Replaces the folding foregrip with a traditional RIS-style rail for mounting aftermarket foregrips."
 
 ////// Barrels
 L["uplp_aug_brl_mg.printname"] = "900mm HBAR Barrel"
@@ -2165,15 +2157,15 @@ L["uplp_aug_mag_556_52.description"] = "52-round drum magazine for the AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-Round 9x19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "25-round magazine for the AW-MP."
+L["uplp_aug_mag_919_25.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>25-round magazine</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_919_40.printname"] = "40-Round 9x19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "40-round extended magazine for the AW-MP."
+L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_300_10.printname"] = "10-Round .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 SP cartridge</color>."
+L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 SP cartridge</color>.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
 -- ".300 Sound Proof"
 
 ////// Stocks
