@@ -67,7 +67,7 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_ar15.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
+    Pos = Vector(-5.5, 3, -6),
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-8.5, 3, -7),
     TPIKAng = Angle(0, 0, 180),
@@ -165,7 +165,7 @@ SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
 
 -- SWEP.SwayAddSights = 1
-SWEP.BarrelLength = 35
+SWEP.BarrelLength = 38
 
 -- Shooting and Firemodes
 SWEP.RPM = 750 -- How fast gun shoot
@@ -184,7 +184,7 @@ SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
 
 -- HoldType Info
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "smg"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = nil
 SWEP.HoldTypeSights = "smg"
@@ -1068,7 +1068,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
-        Pos = Vector(0.63, 1.84, 5.15),
+        Pos = Vector(0.9, 2.3, 1.5),
         Ang = Angle(90, 0, -90),
     },
 
