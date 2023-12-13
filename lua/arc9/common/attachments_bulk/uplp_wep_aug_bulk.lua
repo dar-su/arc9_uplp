@@ -428,7 +428,6 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_aug_mag_300_10"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-	if anim == "fire_empty" then return "fire_empty_alt" end
     return anim .. "_10"
 end
 
@@ -442,7 +441,7 @@ ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.02
 ATT.SwayMultSights = 0.9
 ATT.SpeedMultSights = 1.1
-
+ATT.Ammo = "ar2"
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.DamageMaxAdd = -1 -- from 40
