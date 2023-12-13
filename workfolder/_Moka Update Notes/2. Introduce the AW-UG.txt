@@ -1,0 +1,14 @@
+[h1]New content[/h1]
+[list]
+	[*] Added the [b]AW-UG[/b], a customizable bullpup rifle that can be converted into either a support machine gun or a compact submachine gun.
+[/list]
+
+[h1]Changed content[/h1]
+[list]
+	[*] Updated existing localizations
+	[list]
+		[*] [b]English[/b]
+		[*] [b]Swedish (Svenska)[/b]
+		[*] [b]Spanish (Español)[/b]
+	[/list]
+[/list]

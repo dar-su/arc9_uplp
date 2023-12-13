@@ -1951,7 +1951,7 @@ L["uplp_scar_mag_pmag20.description"] = "Cargador de 20 cartuchos fabricado en p
 
 L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polímero)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Polí"
-L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly." .. changeammo.smg1 -- TRANSLATE
+L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1 -- TRANSLATE
 
 L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56x45mm de 52 Rondas"
 L["uplp_scar_mag_pmag60.compactname"] = "52R Tambor"
@@ -2105,8 +2105,7 @@ L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW-UG"
-L["uplp_weapon_aug_desc"] = "The \"Automatisches Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun." -- RETRANSLATE
--- L["uplp_weapon_aug_desc"] = "El \"Automatische Waffen\" El Bullpup (Rifle Automatico Bullpup) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en el Bullpup en todo el mundo. El AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil." -- OLD
+L["uplp_weapon_aug_desc"] = "El \"Automatische Waffen-Universal-Gewehr\" (Arma Automática Rifle Universal) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en bullpups en todo el mundo. La AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil."
 
 L["uplp_weapon_aug_smg"] = "AW MP"
 L["uplp_weapon_aug_smg_full"] = "Automatisches Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
@@ -2129,9 +2128,9 @@ L["uplp_aug_top_scope.compactname"] = "Visor"
 L["uplp_aug_top_scope.description"] = "Mira telescópica tradicional de 1.5 aumentos utilizada en los modelos AW-UG estándar." .. desc_midoptic
 
 ////// Bottom Rail
-L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount" -- TRANSLATE 
-L["uplp_aug_bot_alt.compactname"] = "Tri-Rail" -- TRANSLATE 
-L["uplp_aug_bot_alt.description"] = "Alternative bottom rail that allows mounting of aftermarket foregrips and laser sights." -- TRANSLATE 
+L["uplp_aug_bot_alt.printname"] = "Soporte Tri-Rail" 
+L["uplp_aug_bot_alt.compactname"] = "Tri-Rail" 
+L["uplp_aug_bot_alt.description"] = "Carril inferior alternativo que permite el montaje de empuñaduras de recambio y miras láser." 
 
 ////// Barrels
 L["uplp_aug_brl_mg.printname"] = "Cañón HBAR de 900mm"
@@ -2145,7 +2144,7 @@ L["uplp_aug_brl_smg.description"] = "Cañón acortado de 508mm (50cm) utilizado 
 ////// Magazines
 L["uplp_aug_mag_556_30p.printname"] = "30 Rondas 5.45x45mm (Polímero)"
 L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
-L["uplp_aug_mag_556_30p.description"] = "30-round magazine made out of polymer for the AW-UG." -- TRANSLATE
+L["uplp_aug_mag_556_30p.description"] = "Cargador de 30 balas de polímero para la AW-UG."
 
 L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56x45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
@@ -2169,17 +2168,17 @@ L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW
 -- ".300 Sound Proof"
 
 ////// Stocks -- TRANSLATE
-L["uplp_aug_stock_white.printname"] = "White Stock"
-L["uplp_aug_stock_white.compactname"] = "White"
-L["uplp_aug_stock_white.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with white ones."
+L["uplp_aug_stock_white.printname"] = "Culata Blanca"
+L["uplp_aug_stock_white.compactname"] = "Blanco"
+L["uplp_aug_stock_white.description"] = "Cambia el aspecto de la culata AW-UG, la empuñadura de carga y la empuñadura plegable por otras de color blanco."
 
-L["uplp_aug_stock_tan.printname"] = "Tan Stock"
-L["uplp_aug_stock_tan.compactname"] = "Tan"
-L["uplp_aug_stock_tan.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with desert tan ones."
+L["uplp_aug_stock_tan.printname"] = "Culata Bronceada"
+L["uplp_aug_stock_tan.compactname"] = "Bronceado"
+L["uplp_aug_stock_tan.description"] = "Cambia el aspecto de la culata AW-UG, la empuñadura de carga y la empuñadura plegable por otras de color tostado desierto."
 
-L["uplp_aug_stock_black.printname"] = "Black Stock"
-L["uplp_aug_stock_black.compactname"] = "Black"
-L["uplp_aug_stock_black.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with black ones."
+L["uplp_aug_stock_black.printname"] = "Culata Negra"
+L["uplp_aug_stock_black.compactname"] = "Negro"
+L["uplp_aug_stock_black.description"] = "Cambia el aspecto de la culata AW-UG, la empuñadura de carga y la empuñadura plegable por otras de color negro."
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
