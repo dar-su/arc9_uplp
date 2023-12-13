@@ -151,7 +151,10 @@ ATT.BarrelLengthAdd = -10
 -- Negatives
 ATT.RecoilMult = 1.25
 ATT.SpreadAdd = 0.005
-ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.RangeMaxMult = 0.85
+ATT.SweetSpotDamageMult = 0.76
+ATT.SweetSpotPeakMult = 0.25
+ATT.SweetSpotWidthMult = 0.5
 ATT.RangeMinAdd = -4 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RecoilPerShot = 1 / 6
@@ -446,12 +449,13 @@ ATT.Ammo = "ar2"
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.DamageMaxAdd = -1 -- from 40
 ATT.DamageMinAdd = 10 -- from 28
+ATT.RangeMaxAdd = 10 / ARC9.HUToM -- f
 
 ATT.SweetSpot = true
-ATT.SweetSpotDamage = 65
-ATT.SweetSpotRange = 62.5 / ARC9.HUToM
-ATT.SweetSpotWidth = 50 / ARC9.HUToM
-ATT.SweetSpotPeak = 25 / ARC9.HUToM
+ATT.SweetSpotDamage = 50
+ATT.SweetSpotRange = 50 / ARC9.HUToM
+ATT.SweetSpotWidth = 30 / ARC9.HUToM
+ATT.SweetSpotPeak = 10 / ARC9.HUToM
 
 ATT.CustomPros = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",

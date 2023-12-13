@@ -174,10 +174,10 @@ SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = -1, -- Full
-    PoseParam = 1 },
+     },
     { Mode = 1, -- Semi
     RPM = 555,
-    PoseParam = 2 }
+     }
 }
 
 SWEP.ShootPitch = 90
