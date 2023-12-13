@@ -1951,7 +1951,7 @@ L["uplp_scar_mag_pmag20.description"] = "Cargador de 20 cartuchos fabricado en p
 
 L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polímero)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Polí"
-L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1 -- TRANSLATE
+L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56x45mm de 52 Rondas"
 L["uplp_scar_mag_pmag60.compactname"] = "52R Tambor"
@@ -2167,7 +2167,7 @@ L["uplp_aug_mag_300_10.compactname"] = "10R .300"
 L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 SP especializado</color>.\nRestringe el arma a <color=255,100,100>sólo semi-automático</color>."
 -- ".300 Sound Proof"
 
-////// Stocks -- TRANSLATE
+////// Stocks
 L["uplp_aug_stock_white.printname"] = "Culata Blanca"
 L["uplp_aug_stock_white.compactname"] = "Blanco"
 L["uplp_aug_stock_white.description"] = "Cambia el aspecto de la culata AW-UG, la empuñadura de carga y la empuñadura plegable por otras de color blanco."
