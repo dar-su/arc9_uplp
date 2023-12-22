@@ -261,7 +261,7 @@ end
 ATT.ClipSizeOverride = 52
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.03
+-- ATT.SpreadAddHipFire = 0.03
 ATT.AimDownSightsTimeAdd = 0.07
 ATT.SprintToFireTimeAdd = 0.09
 ATT.DeployTimeMult = 1.5
@@ -318,11 +318,12 @@ local dropsound9 = {
 }
 
 local stat9 = {
-    SpreadAdd = 0.0015,
+    SpreadAdd = 0.005,
     RPMAdd = -20,
     RecoilAdd = -0.5,
+    DamageMaxAdd = -2,
     DamageMinAdd = -4,
-    RangeMaxMult = 0.7,
+    RangeMaxMult = 0.4,
     RangeMinMult = 0.7,
     PhysBulletMuzzleVelocity = 370 / ARC9.HUToM,
 
@@ -336,7 +337,7 @@ local stat9 = {
 
     Ammo = "pistol",
 
-    HeadshotDamageMult = 0.75,
+    HeadshotDamageMult = 0.65,
 }
 
 ATT = {}
@@ -364,7 +365,7 @@ table.Merge(ATT, stat9)
 ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.03
 
-ATT.SpreadAddHipFire = -0.003
+ATT.SpreadAddHipFire = 0.01
 
 ATT.CustomPros = {
     [	ARC9:GetPhrase("autostat.reloadtime")	] = "-5%",
@@ -401,6 +402,8 @@ ATT.Ammo = "pistol"
 table.Merge(ATT, stat9)
 
 ATT.ClipSizeOverride = 40
+
+ATT.SpreadAddHipFire = 0.01
 
 ATT.CustomPros = {
     [ARC9:GetPhrase("customize.stats.ammo")] = ARC9:GetPhrase("ammo.pistol"),
