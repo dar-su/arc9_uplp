@@ -927,13 +927,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
     end
 
-    if eles["uplp_molot_brl_mini"] then
+    if eles["uplp_molot_brl_mini"] then -- fucking elements do not want to install themselves, forcing through setbg!
         if eles["uplp_molot_hg_tac"] then mdl:SetBodygroup(3, 6) end
         if eles["uplp_molot_hg_tac_b"] then mdl:SetBodygroup(3, 9) end
         if eles["uplp_molot_hg_tac_w"] then mdl:SetBodygroup(3, 12) end
         if eles["uplp_molot_hg_cool"] then mdl:SetBodygroup(3, 15) end
         if eles["uplp_molot_hg_cool2"] then mdl:SetBodygroup(3, 18) end
         if eles["uplp_molot_hg_azen"] then mdl:SetBodygroup(3, 3) end
+        if eles["uplp_molot_hg_azen_c"] then mdl:SetBodygroup(3, 4) end
     elseif eles["uplp_molot_brl_micro"] then
         if eles["uplp_molot_hg_tac"] then mdl:SetBodygroup(3, 7) end
         if eles["uplp_molot_hg_tac_b"] then mdl:SetBodygroup(3, 10) end
@@ -941,6 +942,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         if eles["uplp_molot_hg_cool"] then mdl:SetBodygroup(3, 16) end
         if eles["uplp_molot_hg_cool2"] then mdl:SetBodygroup(3, 19) end
         if eles["uplp_molot_hg_azen"] then mdl:SetBodygroup(3, 3) end
+        if eles["uplp_molot_hg_azen_c"] then mdl:SetBodygroup(3, 4) end
     end
 end
 
