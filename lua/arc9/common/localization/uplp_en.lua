@@ -89,6 +89,9 @@ L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 L["uplp_mechanism_boltaction"] = "Bolt-action"
 L["uplp_mechanism_pumpaction"] = "Pump-Action"
 
+L["uplp_mechanism_singleaction"] = "Single-Action"
+L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
 /////////// Authors
 L["uplp_assets"] = "Original Assets1"
 L["uplp_animations"] = "Animations2"

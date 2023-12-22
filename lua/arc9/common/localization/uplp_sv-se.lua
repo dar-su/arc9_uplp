@@ -89,6 +89,9 @@ L["uplp_mechanism_rotatingbolt"] = "Roterande slutstycke"
 L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 L["uplp_mechanism_pumpaction"] = "Pumprepeter"
 
+L["uplp_mechanism_singleaction"] = "Single-Action"
+L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"
 L["uplp_animations"] = "Animationer2"
@@ -2126,7 +2129,7 @@ L["uplp_aug_rs.description"] = "Kompakt järn och korn gjort för användning av
 ////// Top Rail
 L["uplp_aug_top_scope.printname"] = "AW-UG-Riktmedel"
 L["uplp_aug_top_scope.compactname"] = "Riktmedel"
-L["uplp_aug_top_scope.description"] = "Traditionellt teleskopiskt riktmedel med 1,5x magnifiering som används på normala AW-UG-modeller." .. desc_midoptic
+L["uplp_aug_top_scope.description"] = "Traditionellt teleskopiskt riktmedel med 1,5x magnifiering som används på normala AW-UG-modeller.\nHar <color=255,200,100>lätta hanteringsstraff</color> och <color=255,255,100>lätt sväjning i siktet</color>.""
 
 ////// Bottom Rail
 L["uplp_aug_bot_alt.printname"] = "Tri-Rail-Skena"

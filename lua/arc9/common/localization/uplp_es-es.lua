@@ -89,6 +89,9 @@ L["uplp_mechanism_rotatingbolt"] = "Cerrojo giratorio"
 L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
 L["uplp_mechanism_pumpaction"] = "Acción de Bombeo"
 
+L["uplp_mechanism_singleaction"] = "Acción Simple"
+L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
+
 /////////// Authors
 L["uplp_assets"] = "Archivos originales1"
 L["uplp_animations"] = "Animaciones2"
@@ -2097,7 +2100,7 @@ L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 //////////////////// ASh-12
 L["uplp_weapon_ash12"] = "RZ 12.7"
-L["uplp_weapon_ash12_desc"] = "The Russian RZ 12.7 is a powerful bullpup assault rifle chambered for the hefty 12.7x55mm caliber, designed for close-quarters combat and anti-material purposes, with a distinct recoil-mitigating system and a unique combination of stopping power and accuracy. Its design incorporates features for enhanced control and stability despite its substantial caliber, making it suitable for specialized military applications." -- TRANSLATE
+L["uplp_weapon_ash12_desc"] = "El RZ 12.7 ruso es un potente fusil de asalto bullpup con recámara del grueso calibre 12.7x55 mm, diseñado para el combate cuerpo a cuerpo y la lucha antimaterial, con un sistema distinto de mitigación del retroceso y una combinación única de potencia de parada y precisión. Su diseño incorpora características para mejorar el control y la estabilidad a pesar de su importante calibre, lo que la hace adecuada para aplicaciones militares especializadas."
 
 L["uplp_weapon_ash12_real"] = "ASh-12"
 
@@ -2105,7 +2108,7 @@ L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW-UG"
-L["uplp_weapon_aug_desc"] = "El \"Automatische Waffen-Universal-Gewehr\" (Arma Automática Rifle Universal) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en bullpups en todo el mundo. La AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil."
+L["uplp_weapon_aug_desc"] = "El \"Automatisches Waffen-Universal-Gewehr\" (Arma Automática Rifle Universal) es la principal arma de servicio del ejército austriaco y ha sido la base de muchas otras armas de fuego basadas en bullpups en todo el mundo. La AW también ha sido la base de muchas variaciones diferentes del arma, convirtiéndola en una ametralladora de apoyo o en un subfusil."
 
 L["uplp_weapon_aug_smg"] = "AW MP"
 L["uplp_weapon_aug_smg_full"] = "Automatisches Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
@@ -2125,7 +2128,7 @@ L["uplp_aug_rs.description"] = "Miras de hierro compactas diseñadas para su uso
 ////// Top Rail
 L["uplp_aug_top_scope.printname"] = "Visor AW-UG"
 L["uplp_aug_top_scope.compactname"] = "Visor"
-L["uplp_aug_top_scope.description"] = "Mira telescópica tradicional de 1.5 aumentos utilizada en los modelos AW-UG estándar." .. desc_midoptic
+L["uplp_aug_top_scope.description"] = "Mira telescópica tradicional de 1.5 aumentos utilizada en los modelos AW-UG estándar.\nTiene <color=255,200,100>pequeñas penalizaciones de manejo</color> y <color=255,255,100>ligero balanceo de la puntería</color>."
 
 ////// Bottom Rail
 L["uplp_aug_bot_alt.printname"] = "Soporte Tri-Rail" 
