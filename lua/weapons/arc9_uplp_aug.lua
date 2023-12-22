@@ -90,7 +90,7 @@ SWEP.ImpactForce = 2 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 60 / ARC9.HUToM
+SWEP.RangeMax = 100 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -106,10 +106,10 @@ SWEP.ClipSize = 30
 -- Recoil
 SWEP.Recoil = 1
 SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.9
+SWEP.RecoilSide = 1.4
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1.1
+SWEP.RecoilRandomUp = 1.1
+SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -140,8 +140,8 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.008
-SWEP.SpreadAddHipFire = 0.025 - 0.01
+SWEP.Spread = 0.005
+SWEP.SpreadAddHipFire = 0.025
 
 SWEP.SpreadAddRecoil = 0.012
 SWEP.SpreadAddMove = 0.01
@@ -152,23 +152,23 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.03
-SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilPerShot = 1 / 8
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
+SWEP.Speed = 0.85 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.75 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
-SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.33 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.37 -- Time it takes to fully enter sprint
 
 -- SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 38
 
 -- Shooting and Firemodes
-SWEP.RPM = 750 -- How fast gun shoot
+SWEP.RPM = 710 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -436,7 +436,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
-	
+
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
@@ -837,8 +837,8 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-	
-	local stock = "uplp_aug_stock_"
+
+    local stock = "uplp_aug_stock_"
 
 local stockcol = {
     [stock .. "black"] = 1,
@@ -857,23 +857,23 @@ local stockcol = {
     if eles["uplp_optic_used"] or eles["uplp_ar15_rs"] or eles["uplp_backup_optic"] then
         mdl:SetBodygroup(3, 1)
     end
-	
-	if eles["uplp_aug_bot_alt"] then -- grrr element shits itself and regular grip el overriding it
+
+    if eles["uplp_aug_bot_alt"] then -- grrr element shits itself and regular grip el overriding it
         mdl:SetBodygroup(6, 5)
     end
 
-	if !eles["uplp_muzzle_used"] then
-		if eles["uplp_aug_brl_smg"] then
-			mdl:SetBodygroup(5, 1)
-		elseif eles["uplp_aug_brl_mg"] then
-			mdl:SetBodygroup(5, 2)
-		end
-	end
-	
-	if !eles["uplp_aug_top_scope"] and eles["uplp_aug_brl_smg"] then
-		mdl:SetBodygroup(2, 2)
-	end
-	
+    if !eles["uplp_muzzle_used"] then
+        if eles["uplp_aug_brl_smg"] then
+            mdl:SetBodygroup(5, 1)
+        elseif eles["uplp_aug_brl_mg"] then
+            mdl:SetBodygroup(5, 2)
+        end
+    end
+
+    if !eles["uplp_aug_top_scope"] and eles["uplp_aug_brl_smg"] then
+        mdl:SetBodygroup(2, 2)
+    end
+
     if eles["uplp_aug_brl_mg"] and wep:GetBipod() then
         if wep:GetEnterBipodTime() + 0.2 < CurTime() then
             mdl:SetBodygroup(4, 3)
@@ -917,14 +917,14 @@ SWEP.AttachmentElements = {
 
     -- MUZZLES
     ["uplp_muzzle_used"] = { Bodygroups = { { 5, 3 } } },
-	
+
     -- GRIPS
     ["uplp_grip_used"] = { Bodygroups = { { 6, 4 } } },
     ["uplp_aug_bot_alt"] = { Bodygroups = { { 6, 5 } }, AttPosMods = {
         [6] = { Pos = Vector(0, 3.6, 7) },
         [8] = { Pos = Vector(-1.15, 2.7, 8), Ang = Angle(90, 90, -90) },
         } },
-	
+
     ["uplp_ar15_barrel_14"] = { Bodygroups = { { 3, 2 } }, AttPosMods = {
     [7] = { Pos = Vector(0, 1.02, 16.15) },
     [8] = { Pos = Vector(0, 0.975, 17.15) },
@@ -956,6 +956,7 @@ SWEP.Attachments = {
         Pos = Vector(0, 0.55, -1.5),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
+        ExcludeElements = {"uplp_ar15_rs_carry"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
@@ -966,9 +967,9 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0, 0, 0),
         Pos = Vector(0, 0.55, -2.7),
         Ang = Angle(90, 90, 180),
-		RejectAttachments = {
-		["uplp_ar15_rs_carry"] = true,
-		},
+        RejectAttachments = {
+            ["uplp_ar15_rs_carry"] = false, -- Coward.
+        },
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
@@ -1001,15 +1002,15 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-		RejectAttachments = {
-		["uplp_grip_half"] = true,
-		},
+        RejectAttachments = {
+        ["uplp_grip_half"] = true,
+        },
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 3.6, 6),
         Ang = Angle(90, 90, 180),
-		-- Installed = "uplp_aug_bot_grip",
-		-- Integral = "uplp_aug_bot_grip",
+        -- Installed = "uplp_aug_bot_grip",
+        -- Integral = "uplp_aug_bot_grip",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_extra"),
@@ -1019,8 +1020,8 @@ SWEP.Attachments = {
         Pos = Vector(0, 3.6, 9),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_grip_used"},
-		-- Installed = "uplp_aug_bot_grip",
-		-- Integral = "uplp_aug_bot_grip",
+        -- Installed = "uplp_aug_bot_grip",
+        -- Integral = "uplp_aug_bot_grip",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),

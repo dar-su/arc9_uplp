@@ -2126,7 +2126,7 @@ L["uplp_aug_rs.description"] = "Compact iron sights intended for use with the AW
 ////// Top Rail
 L["uplp_aug_top_scope.printname"] = "AW-UG Scope"
 L["uplp_aug_top_scope.compactname"] = "Scope"
-L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models." .. desc_midoptic
+L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models.\nHas <color=255,200,100>small handling penalities</color> and <color=255,255,100>slight aim sway</color>."
 
 ////// Bottom Rail
 L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount"
