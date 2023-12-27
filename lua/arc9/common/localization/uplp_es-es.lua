@@ -2159,11 +2159,11 @@ L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la A
 
 L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9x19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>25-round magazine</color>." .. changeammo.pistol -- TRANSLATE
+L["uplp_aug_mag_919_25.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9x19mm.\nEquipado con un <color=175,175,255>Cargador de 25 rondas</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_919_40.printname"] = "40 Rondas 9x19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol -- TRANSLATE
+L["uplp_aug_mag_919_40.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9x19mm.\nEquipado con un <color=175,175,255>Cargador extendido de 40 rondas</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
