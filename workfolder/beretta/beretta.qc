@@ -11,6 +11,7 @@ $bodygroup "body" {
 $bodygroup "irons" {
 	studio "irons def.smd"
 	studio "irons 93r.smd"
+	studio "irons sword.smd"
 	studio "irons rail.smd"
 	studio "irons rail 93r.smd"
 	blank
