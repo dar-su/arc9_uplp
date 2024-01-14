@@ -35,6 +35,11 @@ ATT.Firemodes = {
         Mode = 3, -- 3bst
         PoseParam = 1
     },  
+    {
+        Mode = 1, -- semi
+        PoseParam = 1,
+		PostBurstDelay = 0.1
+    },  
 }
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_raffica")
@@ -122,17 +127,25 @@ ATT.RunawayBurst = true
 
 ATT.DropMagazineVelocity = Vector(0, 40, 0)
 
+ATT.CustomizePos = Vector(16, 30, 4)
+
 ATT.Firemodes = {
     {
         Mode = 3, -- 3bst
         PoseParam = 1
     },  
+    -- {
+        -- Mode = -1, -- auto
+        -- PoseParam = 1,
+		-- PostBurstDelay = 0.1,
+		-- RPMMult = 0.75,
+    -- },  
 }
 
 ATT.Sights = {
     {
         Pos = Vector(0.02, 12, -1.95),
-        Ang = Angle(0, 0.6, 0),
+        Ang = Angle(0, 0.3, 0),
         Magnification = 1.15,
         ViewModelFOV = 75,
     }

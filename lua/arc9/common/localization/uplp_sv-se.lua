@@ -2037,9 +2037,40 @@ L["uplp_spas_stock_tube.description"] = "Aftermarket pistolgrepp med inbyggt buf
 L["uplp_weapon_m9"] = "PM92"
 L["uplp_weapon_m9_desc"] = "\"Pistola Modello 92\", förkortat PM92, är en halvautomatisk 9mm-pistol känd för sin exceptionella precision och pålitlighet. Den har varit en favorit sidovapen för militära och polisiära myndigheter över hela världen i årtionden."
 
+L["uplp_weapon_m9_raffica"] = "PM92-A"
+L["uplp_weapon_m9_a3"] = "PM92-M"
+L["uplp_weapon_m9_sc"] = "PM92 Sword Cutlass"
+L["uplp_weapon_m9_robocop"] = "Robotic Arms Hyper-V"
+
 L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
 L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
+
+////// Receivers
+L["uplp_m9_receiver_raffica.printname"] = "PM92-A-Låda"
+L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
+L["uplp_m9_receiver_raffica.description"] = "Tungt anpassad \"Automatico\"-låda.\nKommer med inbyggd kompensator och framgrepp som <color=100,255,100>ränker rekylen</color>.\nVäxlar skjutlägen till <color=100,255,100>3-skottsalvo</color> och <color=100,255,100>halvautomat</color>."
+
+L["uplp_m9_receiver_a3.printname"] = "PM92-M-Låda"
+L["uplp_m9_receiver_a3.compactname"] = "Moderno"
+L["uplp_m9_receiver_a3.description"] = "Modern \"Moderno\"-låda som tillåter installation av lasersikten."
+
+L["uplp_m9_receiver_a3t.printname"] = "PM92-M-Låda (Tanfärg)"
+L["uplp_m9_receiver_a3t.compactname"] = "Moderno (T)"
+L["uplp_m9_receiver_a3t.description"] = "Modern \"Moderno\"-låda som tillåter installation av lasersikten.\n<color=255,255,100>Tanfärgad version</color>."
+
+L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass-Låda"
+L["uplp_m9_receiver_sc.compactname"] = "Sword"
+L["uplp_m9_receiver_sc.description"] = "Anpassad PM92 inspirerad på Rebecca \"Revy\" Lees personliga sidovapen.\nKommer med en förlängt 150mm pipa."
+
+L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V-Låda"
+L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
+L["uplp_m9_receiver_robocop.description"] = "Tungt anpassad PM92 egentligen gjord för användning i ett experimentalt robotiskt personalprogram.\nKommer med en förlängd 250mm pipa, <color=100,255,100>20-patroner</color> förlängt magasin, värmesköld och resta riktmedel.\nVäxlar skjutläget till <color=100,255,100>3-skottsalvo</color>.\nKan ej utrusta <color=255,100,100>några andra tillbehör</color>."
+
+////// Magazines
+L["uplp_m9_mag_20.printname"] = "20-Patroner Förlängd"
+L["uplp_m9_mag_20.compactname"] = "20P"
+L["uplp_m9_mag_20.description"] = "Eftermarknads 20-patroners förstorade magasin till PM92."
 
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"

@@ -2036,9 +2036,40 @@ L["uplp_spas_stock_tube.description"] = "Empuñadura de pistola del mercado de a
 L["uplp_weapon_m9"] = "PM92"
 L["uplp_weapon_m9_desc"] = "La \"Pistola Modello 92\", abreviada PM92, es una pistola semiautomática de 9 mm conocida por su excepcional precisión y fiabilidad. Ha sido una de las armas favoritas de las fuerzas armadas y policiales de todo el mundo durante décadas."
 
+L["uplp_weapon_m9_raffica"] = "PM92-A"
+L["uplp_weapon_m9_a3"] = "PM92-M"
+L["uplp_weapon_m9_sc"] = "PM92 Sword Cutlass"
+L["uplp_weapon_m9_robocop"] = "Robotic Arms Hyper-V"
+
 L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
 L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
+
+////// Receivers
+L["uplp_m9_receiver_raffica.printname"] = "PM92-A Receiver"
+L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
+L["uplp_m9_receiver_raffica.description"] = "Heavily modified \"Automatico\" receiver.\nComes with a built-in compensator and vertical grip that <color=100,255,100>reduces recoil</color>.\nSwitches the firing modes to <color=100,255,100>3-round burst</color> & <color=100,255,100>semi-automatic</color>."
+
+L["uplp_m9_receiver_a3.printname"] = "PM92-M Receiver"
+L["uplp_m9_receiver_a3.compactname"] = "Moderno"
+L["uplp_m9_receiver_a3.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights."
+
+L["uplp_m9_receiver_a3t.printname"] = "PM92-M Receiver (Tan)"
+L["uplp_m9_receiver_a3t.compactname"] = "Moderno (T)"
+L["uplp_m9_receiver_a3t.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights.\n<color=255,255,100>Tan coloured version</color>."
+
+L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass Receiver"
+L["uplp_m9_receiver_sc.compactname"] = "Sword"
+L["uplp_m9_receiver_sc.description"] = "Modified PM92 inspired by Rebecca \"Revy\" Lee's personal sidearm.\nComes with an extended 150mm (5.9\") barrel."
+
+L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V Receiver"
+L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
+L["uplp_m9_receiver_robocop.description"] = "Heavily modified PM92 originally made for use in an experimental robotic personnel program.\nComes with an extended 250mm (9.84\") barrel, <color=100,255,100>20-round</color> extended magazine, heat shield and raised iron sights.\nSwitches the firing mode to <color=100,255,100>3-round burst</color>.\nCannot equip <color=255,100,100>any other attachments</color>."
+
+////// Magazines
+L["uplp_m9_mag_20.printname"] = "20-Round Extended"
+L["uplp_m9_mag_20.compactname"] = "20R"
+L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM92."
 
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"
