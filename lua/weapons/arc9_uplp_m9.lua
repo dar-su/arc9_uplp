@@ -217,11 +217,11 @@ SWEP.CustomizeSnapshotFOV = 70
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineModel = "models/weapons/arc9/uplp/fn57_mag_std.mdl"
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/beretta_mag_std.mdl"
 SWEP.DropMagazineTime = 0.4
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
-SWEP.DropMagazineAng = Angle(80, 90, 90)
+SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
 ---- Sounds
