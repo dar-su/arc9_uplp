@@ -26,7 +26,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan, TastyTony",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
@@ -653,21 +653,28 @@ SWEP.Animations = {
         Mult = 1.1,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-            -- { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-            -- { s = path1911 .. "draw.ogg", t = 10 / 60, c = ca, v = 0.8 },
             {s = pathUTC .. "pistol_rattle_1.ogg", t = 10 / 60},
             {s = pathUTC .. "pistol_rattle_2.ogg", t = 20 / 60},
             {s = pathUTC .. "pistol_rattle_3.ogg", t = 30 / 60},
             {s = pathUTC .. "pistol_rattle_4.ogg", t = 40 / 60},
             {s = pathUTC .. "cloth_4.ogg", t = 35 / 60},
-            -- {s = pathUTC .. "cloth_4.ogg", t = 27 / 60},
         },
     },
 
     ["rc_draw"] = {
-        Source = "rc_draw",
+        -- Source = "rc_draw",
+        -- EventTable = {
+        --     { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+        -- },
+        Source = "rc_ready",
+        Mult = 1.1,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            {s = pathUTC .. "pistol_rattle_1.ogg", t = 10 / 60},
+            {s = pathUTC .. "pistol_rattle_2.ogg", t = 20 / 60},
+            {s = pathUTC .. "pistol_rattle_3.ogg", t = 30 / 60},
+            {s = pathUTC .. "pistol_rattle_4.ogg", t = 40 / 60},
+            {s = pathUTC .. "cloth_4.ogg", t = 35 / 60},
         },
     },
     ["rc_draw_empty"] = {
@@ -832,7 +839,7 @@ SWEP.AttachmentElements = {
 local fuckthis = 0
 SWEP.Hook_Think = function(swep)
     if fuckthis < CurTime() then
-        fuckthis = CurTime() + 1
+        fuckthis = CurTime() + 0.5
         if swep:GetElements()["uplp_m9_receiver_raffica"] then
             local vm, wm = swep:GetVM(), swep:GetWM()
             if IsValid(vm) then vm:SetPoseParameter("raffica", 1) end -- different animations for raffica
@@ -863,7 +870,7 @@ SWEP.Attachments = {
         ExcludeElements = {"nooptic"},
         Bone = "slide",
         Pos = Vector(0, -0.8, -1.8),
-        ExtraSightDistance = 1,
+        ExtraSightDistance = 3,
         Ang = Angle(90, 90, 180),
 		Scale = 1.2
     },

@@ -42,6 +42,16 @@ ATT.Firemodes = {
     },  
 }
 
+ATT.Sights = {
+    {
+        Pos = Vector(-1.92, -2, 0.73),
+        Ang = Angle(0, -0.25, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 75,
+        IsIronSight = true
+    }
+}
+
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_raffica")
 
 ---------- uplp_m9_receiver_a3
@@ -124,6 +134,7 @@ ATT.PostBurstDelay = 0.2
 ATT.RPM = 1000
 ATT.CantPeek = true
 ATT.RunawayBurst = true
+ATT.ShootWhileSprint = true
 
 ATT.ReloadHideBonesFirstPerson = true
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/beretta_mag_robo.mdl"
@@ -150,6 +161,7 @@ ATT.Sights = {
         Ang = Angle(0, 0.3, 0),
         Magnification = 1.15,
         ViewModelFOV = 75,
+        IsIronSight = true
     }
 }
 
