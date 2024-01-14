@@ -112,7 +112,7 @@ end
 ATT.EnterSightsSound = "uplp_urban_temp/common/cloth_3.ogg"
 ATT.ExitSightsSound = "uplp_urban_temp/common/cloth_4.ogg"
 
-ATT.ActivePos = Vector(-0.1, -0.1, 0.4)
+ATT.ActivePos = Vector(-0.1, -0.1, 0.1)
 ATT.ActiveAng = Angle(0, 0, 0)
 
 ATT.PostBurstDelay = 0.2
@@ -120,6 +120,8 @@ ATT.RPM = 1000
 ATT.CantPeek = true
 ATT.RunawayBurst = true
 
+ATT.ReloadHideBonesFirstPerson = true
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/beretta_mag_robo.mdl"
 ATT.DropMagazineVelocity = Vector(0, 40, 0)
 
 ATT.Firemodes = {
@@ -159,6 +161,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_mag_20"}
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/beretta_mag_ext.mdl"
 ATT.DropMagazineTime = 0.5
 ATT.DropMagazineVelocity = Vector(0, -20, 0)
 -- Negatives
