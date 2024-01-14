@@ -423,10 +423,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1  },
-            { t = 0.15, lhik = 0, rhik = 1  },
-            { t = 0.65, lhik = 0, rhik = 1  },
-            { t = 0.92, lhik = 1, rhik = 1  },
-            { t = 1, lhik = 1, rhik = 1 },
+            { t = 0.05, lhik = 1, rhik = 1  },
+            { t = 0.25, lhik = 0, rhik = 0  },
         },
     },    
     ["holster_empty"] = {
@@ -437,10 +435,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 1  },
-            { t = 0.15, lhik = 0, rhik = 1  },
-            { t = 0.65, lhik = 0, rhik = 1  },
-            { t = 0.92, lhik = 1, rhik = 1  },
-            { t = 1, lhik = 1, rhik = 1 },
+            { t = 0.05, lhik = 1, rhik = 1  },
+            { t = 0.25, lhik = 0, rhik = 0  },
         },
     },    
 
@@ -516,7 +512,7 @@ SWEP.Animations = {
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
+            { s = pathUT .. "magout.ogg", t = 17.5 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 45 / 60, c = ca },
             { s = UTCrattle, t = 60 / 60, c = ca },
@@ -538,7 +534,7 @@ SWEP.Animations = {
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
+            { s = pathUT .. "magout.ogg", t = 17.5 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 45 / 60, c = ca },
             { s = pathUT .. "sliderel.ogg", t = 67.5 / 60, c = ca },
