@@ -721,7 +721,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 30 / 60, c = ca },
             {hide = 0, t = 0},
             {hide = 1, t = 0.4/1.12},
-            {hide = 0, t = 1},
+            {hide = 0, t = 0.53},
         },
     },
     ["rc_reload_empty"] = {
@@ -737,7 +737,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 60 / 60, c = ca },
             {hide = 0, t = 0},
             {hide = 1, t = 0.4/1.12},
-            {hide = 0, t = 1},
+            {hide = 0, t = 0.53},
         },
     },
 

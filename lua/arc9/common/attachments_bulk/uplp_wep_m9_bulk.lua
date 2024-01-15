@@ -142,6 +142,9 @@ ATT.DropMagazineVelocity = Vector(0, 40, 0)
 
 ATT.CustomizePos = Vector(16, 30, 4)
 
+ATT.RestPos = Vector(4, 1, -13)
+ATT.RestAng = Angle(-2, 60, -6)
+
 ATT.Firemodes = {
     {
         Mode = 3, -- 3bst
