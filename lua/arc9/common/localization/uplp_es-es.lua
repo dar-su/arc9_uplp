@@ -346,9 +346,6 @@ L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
 L["uplp_optic_dovetail_pso.description"] = "Visor de origen ruso con 4 aumentos." .. desc_dovetail
 
- -- "Optical Precision Scope" in Russian
- -- "Оптический прецизионный прицел" - 'OPP'
-
 L["uplp_optic_dovetail_okp.printname"] = "Mira Réflex OPWK-A"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
 L["uplp_optic_dovetail_okp.description"] = "Mira colimadora delgada y ligera de origen ruso." .. desc_dovetail
@@ -357,8 +354,9 @@ L["uplp_optic_okp.printname"] = "Mira Réflex OPWK-B"
 L["uplp_optic_okp.compactname"] = "OPWK"
 L["uplp_optic_okp.description"] = "Mira colimadora delgada y ligera de origen ruso." .. desc_cqcoptic
 
--- "Optical Sight, High Quality" in Russian
--- "Оптический прицел высого качества" - 'OPWK'
+-- L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
+-- L["uplp_optic_dedal.compactname"] = "12x CWI"
+-- L["uplp_optic_dedal.description"] = "Magnified scope with 12x magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Punto Rojo Inclinado"
@@ -1873,21 +1871,19 @@ L["uplp_scar_upper_hb.description"] = "Sustituye el receptor superior por uno de
 
 L["uplp_scar_upper_20.printname"] = "Receptor DMR" 
 L["uplp_scar_upper_20.compactname"] = "DMR"
--- L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
-L["uplp_scar_upper_20.description"] = "Receptor superior y guardamanos muy largos utilizados en el XAR DMR.\n<color=100,255,100>Aumento del daño</color> cuando está en semiautomático."
+L["uplp_scar_upper_20.description"] = "Receptor superior y guardamanos muy largos utilizados en el XAR DMR."
 
 L["uplp_scar_upper_20b.printname"] = "Receptor DMR (Negro)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (N)"
--- L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
-L["uplp_scar_upper_20b.description"] = "Receptor superior muy largo y guardamanos pintado de negro que se utiliza en el XAR DMR.\n<color=100,255,100>Aumento del daño</color> cuando está en semiautomático."
+L["uplp_scar_upper_20b.description"] = "Receptor superior muy largo y guardamanos pintado de negro que se utiliza en el XAR DMR."
 
 L["uplp_scar_upper_pdw.printname"] = "Receptor PDW"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "Receptor superior y guardamanos muy cortos utilizados en el XAR PDW.\nNo se puede poner <color=255,100,100>cualquier cañón</color>.\nNo se puede poner el <color=255,100,100>Tambor de 90 Rondas</color>.\nNo se puede poner <color=255,100,100>ciertas empuñaduras</color>."
+L["uplp_scar_upper_pdw.description"] = "Receptor superior y guardamanos muy cortos utilizados en el XAR PDW."
 
 L["uplp_scar_upper_pdwb.printname"] = "Receptor PDW (Negro)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (N)"
-L["uplp_scar_upper_pdwb.description"] = "Receptor superior muy corto y guardamanos pintado de negro que se utiliza en el XAR PDW.\nNo se puede poner <color=255,100,100>cualquier cañón</color>.\nNo se puede poner el <color=255,100,100>Tambor de 90 Rondas</color>.\nNo se puede poner <color=255,100,100>ciertas empuñaduras</color>."
+L["uplp_scar_upper_pdwb.description"] = "Receptor superior muy corto y guardamanos pintado de negro que se utiliza en el XAR PDW."
 
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "Cañón CQC de 330mm"
@@ -1896,11 +1892,11 @@ L["uplp_scar_brl_short.description"] = "Cañón acortado 330mm (33cm) para el XA
 
 L["uplp_scar_brl_20.printname"] = "Cañón DMR de 510mm"
 L["uplp_scar_brl_20.compactname"] = "510mm DMR"
-L["uplp_scar_brl_20.description"] = "Cañón DMR estándar 510mm (50cm) para el XAR.\nElimina la posibilidad de equipar las <color=255,100,100>Miras de Hierro XAR</color>."
+L["uplp_scar_brl_20.description"] = "Cañón DMR estándar 510mm (50cm) para el XAR."
 
 L["uplp_scar_brl_20_long.printname"] = "Cañón DMR de 600mm"
 L["uplp_scar_brl_20_long.compactname"] = "600mm DMR"
-L["uplp_scar_brl_20_long.description"] = "Cañón DMR largo de 600mm (59cm) para el XAR.\nElimina la posibilidad de equipar las <color=255,100,100>Miras de Hierro XAR</color>."
+L["uplp_scar_brl_20_long.description"] = "Cañón DMR largo de 600mm (59cm) para el XAR."
 
 ////// Stocks
 L["uplp_scar_stock_lb.printname"] = "Culata Estándar (Negro)"
@@ -1921,7 +1917,7 @@ L["uplp_scar_stock_tube.description"] = "Sustituye la culata por un tubo amortig
 
 L["uplp_scar_stock_pdw.printname"] = "Culata PDW"
 L["uplp_scar_stock_pdw.compactname"] = "PDW"
-L["uplp_scar_stock_pdw.description"] = "Sustituye la culata por una PDW plegable.\nCuando \"Plegado\": Añade un 10% a todas las ventajas, pero también un 15% a todos los defectos."
+L["uplp_scar_stock_pdw.description"] = "Sustituye la culata por una PDW plegable."
 
 ////// Mags
 L["uplp_scar_mag_h.printname"] = "20 Rondas 7.62x51mm"
@@ -2045,31 +2041,32 @@ L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
 L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
 
+/////////// Attachments
 ////// Receivers
-L["uplp_m9_receiver_raffica.printname"] = "PM92-A Receiver"
-L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
-L["uplp_m9_receiver_raffica.description"] = "Heavily modified \"Automatico\" receiver.\nComes with a built-in compensator and vertical grip that <color=100,255,100>reduces recoil</color>.\nSwitches the firing modes to <color=100,255,100>3-round burst</color> & <color=100,255,100>semi-automatic</color>."
+-- L["uplp_m9_receiver_raffica.printname"] = "PM92-A Receiver"
+-- L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
+-- L["uplp_m9_receiver_raffica.description"] = "Heavily modified \"Automatico\" receiver.\nComes with a built-in compensator and vertical grip that <color=100,255,100>reduces recoil</color>.\nSwitches the firing modes to <color=100,255,100>3-round burst</color> & <color=100,255,100>semi-automatic</color>."
 
-L["uplp_m9_receiver_a3.printname"] = "PM92-M Receiver"
-L["uplp_m9_receiver_a3.compactname"] = "Moderno"
-L["uplp_m9_receiver_a3.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights."
+-- L["uplp_m9_receiver_a3.printname"] = "PM92-M Receiver"
+-- L["uplp_m9_receiver_a3.compactname"] = "Moderno"
+-- L["uplp_m9_receiver_a3.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights."
 
-L["uplp_m9_receiver_a3t.printname"] = "PM92-M Receiver (Tan)"
-L["uplp_m9_receiver_a3t.compactname"] = "Moderno (T)"
-L["uplp_m9_receiver_a3t.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights.\n<color=255,255,100>Tan coloured version</color>."
+-- L["uplp_m9_receiver_a3t.printname"] = "PM92-M Receiver (Tan)"
+-- L["uplp_m9_receiver_a3t.compactname"] = "Moderno (T)"
+-- L["uplp_m9_receiver_a3t.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights.\n<color=255,255,100>Tan coloured version</color>."
 
-L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass Receiver"
-L["uplp_m9_receiver_sc.compactname"] = "Sword"
-L["uplp_m9_receiver_sc.description"] = "Modified PM92 inspired by Rebecca \"Revy\" Lee's personal sidearm.\nComes with an extended 150mm (5.9\") barrel."
+-- L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass Receiver"
+-- L["uplp_m9_receiver_sc.compactname"] = "Sword"
+-- L["uplp_m9_receiver_sc.description"] = "Modified PM92 inspired by Rebecca \"Revy\" Lee's personal sidearm.\nComes with an extended 150mm (5.9\") barrel."
 
-L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V Receiver"
-L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
-L["uplp_m9_receiver_robocop.description"] = "Heavily modified PM92 originally made for use in an experimental robotic personnel program.\nComes with an extended 250mm (9.84\") barrel, <color=100,255,100>20-round</color> extended magazine, heat shield and raised iron sights.\nSwitches the firing mode to <color=100,255,100>3-round burst</color>.\nCannot equip <color=255,100,100>any other attachments</color>."
+-- L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V Receiver"
+-- L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
+-- L["uplp_m9_receiver_robocop.description"] = "Heavily modified PM92 originally made for use in an experimental robotic personnel program.\nComes with an extended 250mm (9.84\") barrel, <color=100,255,100>20-round</color> extended magazine, heat shield and raised iron sights.\nSwitches the firing mode to <color=100,255,100>3-round burst</color>.\nCannot equip <color=255,100,100>any other attachments</color>."
 
 ////// Magazines
-L["uplp_m9_mag_20.printname"] = "20-Round Extended"
-L["uplp_m9_mag_20.compactname"] = "20R"
-L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM92."
+-- L["uplp_m9_mag_20.printname"] = "20-Round Extended"
+-- L["uplp_m9_mag_20.compactname"] = "20R"
+-- L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM92."
 
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"
@@ -2101,12 +2098,53 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 
 -- Expansion 2
 //////////////////// ORSIS 12.7
-L["uplp_weapon_orsis"] = "UM-50"
-L["uplp_weapon_orsis_desc"] = "El \"Udar Molnii 50\" (Lightning Strike 50) es el rifle de precisión más reciente y potente de Rusia en los tiempos modernos. El UM-50 tiene recámara para el potente cartucho de 12.7x108 mm, lo que lo hace muy eficaz contra vehículos blindados ligeros y medios y, especialmente, contra objetivos blandos."
+L["uplp_weapon_orsis"] = "Gryphon X108"
+L["uplp_weapon_orsis_desc"] = "El \"Gryphon X108\" es el rifle de precisión más reciente y potente de Rusia en los tiempos modernos. El X108 tiene recámara para el potente cartucho de 12.7x108 mm, lo que lo hace muy eficaz contra vehículos blindados ligeros y medios y, especialmente, contra objetivos blandos." -- Double check.
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
 L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
+
+/////////// Attachments
+////// Barrels
+-- L["uplp_orsis_barrel_heavy.printname"] = "Heavy Accuracy Barrel"
+-- L["uplp_orsis_barrel_heavy.compactname"] = "Heavy"
+-- L["uplp_orsis_barrel_heavy.description"] = "Reinforced heavy barrel for the Gryphon X108."
+
+-- L["uplp_orsis_barrel_short.printname"] = "Compact Agility Configuration"
+-- L["uplp_orsis_barrel_short.compactname"] = "CAC"
+-- L["uplp_orsis_barrel_short.description"] = "Shortened configuration of the Gryphon X108 intended for more intermediate range engagements.\nComes with a shortened barrel and top rail for mounting lasers, but <color=255,100,100>removes the bottom rail</color>."
+
+////// Magazines
+-- L["uplp_orsis_mag_3.printname"] = "3-Round Magazine"
+-- L["uplp_orsis_mag_3.compactname"] = "3R"
+-- L["uplp_orsis_mag_3.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108."
+
+-- L["uplp_orsis_mag_7.printname"] = "7-Round Magazine"
+-- L["uplp_orsis_mag_7.compactname"] = "7R"
+-- L["uplp_orsis_mag_7.description"] = "Extended <color=100,255,100>7-round</color> magazine for the Gryphon X108."
+
+////// Stocks
+-- L["uplp_orsis_stock_sniper.printname"] = "Precision Stock"
+-- L["uplp_orsis_stock_sniper.compactname"] = "Precision"
+-- L["uplp_orsis_stock_sniper.description"] = "Configures the stock on the Gryphon X108 to be used for precision shooting."
+
+-- L["uplp_orsis_stock_atx.printname"] = "eXtreme Stock"
+-- L["uplp_orsis_stock_atx.compactname"] = "eXtreme"
+-- L["uplp_orsis_stock_atx.description"] = "Replaces the stock and pistol grip with lightweight ones made by eXtreme Sports."
+
+-- L["uplp_orsis_stock_heavy.printname"] = "Heavy Accuracy Stock"
+-- L["uplp_orsis_stock_heavy.compactname"] = "Heavy"
+-- L["uplp_orsis_stock_heavy.description"] = "Reinforces the stock on the Gryphon X108 for use in rougher environments."
+
+////// Muzzles
+-- L["uplp_orsis_muzzle_small.printname"] = "Shortened X108 Brake"
+-- L["uplp_orsis_muzzle_small.compactname"] = "S X108"
+-- L["uplp_orsis_muzzle_small.description"] = "Shortened standard muzzle brake for the Gryphon X108."
+
+-- L["uplp_orsis_muzzle_big.printname"] = "Tank Buster Muzzle Brake"
+-- L["uplp_orsis_muzzle_big.compactname"] = "Tank"
+-- L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maximum recoil control.\nIntended for use on the Gryphon X108."
 
 //////////////////// AS VAL
  -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)

@@ -213,16 +213,16 @@ SWEP.IronSights = {
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local att = self:GetElements()
-    local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
+    -- local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
 
-    if lowsight then
-        return {
-            Pos = Vector(-2.37, -3, 0.15),
-            Ang = Angle(0.365, 0, -2.5),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    end
+    -- if lowsight then
+        -- return {
+            -- Pos = Vector(-2.37, -3, 0.15),
+            -- Ang = Angle(0.365, 0, -2.5),
+            -- Magnification = 1.15,
+            -- ViewModelFOV = 65,
+        -- }
+    -- end
 
 end
 

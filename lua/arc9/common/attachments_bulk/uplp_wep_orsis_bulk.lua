@@ -9,8 +9,8 @@ local iconfolder = "entities/uplp_attachements/orsis/"
 
 ATT = {}
 
-ATT.PrintName = "heavy"
-ATT.CompactName = "heavy"
+ATT.PrintName = "Heavy Accuracy Barrel"
+ATT.CompactName = "Heavy"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "heavy.png", "mips smooth")
@@ -40,8 +40,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_barrel_heavy")
 
 ATT = {}
 
-ATT.PrintName = "compact"
-ATT.CompactName = "compact"
+ATT.PrintName = "Compact Agility Configuration"
+ATT.CompactName = "CAC"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "short.png", "mips smooth")
@@ -74,8 +74,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_barrel_short")
 
 ATT = {}
 
-ATT.PrintName = "3"
-ATT.CompactName = "3"
+ATT.PrintName = "3-Round Magazine"
+ATT.CompactName = "3R"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "3.png", "mips smooth")
@@ -102,8 +102,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_mag_3")
 
 ATT = {}
 
-ATT.PrintName = "7"
-ATT.CompactName = "7"
+ATT.PrintName = "7-Round Magazine"
+ATT.CompactName = "7R"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "7.png", "mips smooth")
@@ -131,8 +131,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_mag_7")
 
 ATT = {}
 
-ATT.PrintName = "sniper"
-ATT.CompactName = "sniper"
+ATT.PrintName = "Precision Stock"
+ATT.CompactName = "Precision"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sniper.png", "mips smooth")
@@ -182,8 +182,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_stock_atx")
 
 ATT = {}
 
-ATT.PrintName = "heavy"
-ATT.CompactName = "heavy"
+ATT.PrintName = "Heavy Accuracy Stock"
+ATT.CompactName = "Heavy"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "heavys.png", "mips smooth")
@@ -210,8 +210,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_stock_heavy")
 ---------- uplp_orsis_muzzle_small
 ATT = {}
 
-ATT.PrintName = "small"
-ATT.CompactName = "small"
+ATT.PrintName = "Shortened X108 Brake"
+ATT.CompactName = "S X108"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "small.png", "mips smooth")
@@ -223,8 +223,8 @@ ARC9.LoadAttachment(ATT, "uplp_orsis_muzzle_small")
 ---------- uplp_orsis_muzzle_big
 ATT = {}
 
-ATT.PrintName = "big"
-ATT.CompactName = "big"
+ATT.PrintName = "Tank Buster Muzzle Brake"
+ATT.CompactName = "Tank"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "big.png", "mips smooth")

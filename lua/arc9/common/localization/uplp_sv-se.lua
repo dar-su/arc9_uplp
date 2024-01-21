@@ -346,9 +346,6 @@ L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
 L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering." .. desc_dovetail
 
- -- "Optical Precision Scope" in Russian
- -- "Оптический прецизионный прицел" - 'OPP'
-
 L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflexsikte"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
 L["uplp_optic_dovetail_okp.description"] = "Slät och lätt reflexsikte av ryskt ursprung." .. desc_dovetail
@@ -357,8 +354,9 @@ L["uplp_optic_okp.printname"] = "OPWK-B Reflexsikte"
 L["uplp_optic_okp.compactname"] = "OPWK"
 L["uplp_optic_okp.description"] = "Slät och lätt reflexsikte av ryskt ursprung." .. desc_cqcoptic
 
--- "Optical Sight, High Quality" in Russian
--- "Оптический прицел высого качества" - 'OPWK'
+L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
+L["uplp_optic_dedal.compactname"] = "12x CWI"
+L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12x magnifiering från Cerberus Weapons Institude gjord för militär användning." .. desc_bigoptic
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
@@ -1874,21 +1872,19 @@ L["uplp_scar_upper_hb.description"] = "Ersätter den övre lådan med en svartm�
 
 L["uplp_scar_upper_20.printname"] = "DMR-Låda"
 L["uplp_scar_upper_20.compactname"] = "DMR"
--- L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR."
-L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
+L["uplp_scar_upper_20.description"] = "Väldigt lång övre låda och handskydd som används på XAR DMR."
 
 L["uplp_scar_upper_20b.printname"] = "DMR-Låda (Svart)"
 L["uplp_scar_upper_20b.compactname"] = "DMR (S)"
--- L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR."
-L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR.\n<color=100,255,100>Ökad skada</color> i halvautomat."
+L["uplp_scar_upper_20b.description"] = "Väldigt lång svartmålad övre låda och handskydd som används på XAR DMR."
 
 L["uplp_scar_upper_pdw.printname"] = "PDW-Låda"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "Väldigt kort övre låda och handskydd som används på XAR PDW.\nKan ej utrusta <color=255,100,100>några pipor</color>.\nKan ej utrusta <color=255,100,100>90-Patroners Trumman</color>.\nKan ej utrusta <color=255,100,100>vissa framgrepp</color>."
+L["uplp_scar_upper_pdw.description"] = "Väldigt kort övre låda och handskydd som används på XAR PDW."
 
 L["uplp_scar_upper_pdwb.printname"] = "PDW-Låda (Svart)"
 L["uplp_scar_upper_pdwb.compactname"] = "PDW (S)"
-L["uplp_scar_upper_pdwb.description"] = "Väldigt kort svartmålad övre låda och handskydd som används på XAR PDW.\nKan ej utrusta <color=255,100,100>några pipor</color>.\nKan ej utrusta <color=255,100,100>90-Patroners Trumman</color>.\nKan ej utrusta <color=255,100,100>vissa framgrepp</color>."
+L["uplp_scar_upper_pdwb.description"] = "Väldigt kort svartmålad övre låda och handskydd som används på XAR PDW."
 
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "330mm CQC-Pipa"
@@ -1897,11 +1893,11 @@ L["uplp_scar_brl_short.description"] = "Förkortad 330mm pipa till XAR."
 
 L["uplp_scar_brl_20.printname"] = "510mm DMR-Pipa"
 L["uplp_scar_brl_20.compactname"] = "510mm DMR"
-L["uplp_scar_brl_20.description"] = "Standard 510mm DMR-pipa till XAR.\nTar bort förmågan att utrusta <color=255,100,100>XAR Järn och Korn</color>."
+L["uplp_scar_brl_20.description"] = "Standard 510mm DMR-pipa till XAR."
 
 L["uplp_scar_brl_20_long.printname"] = "600mm DMR-Pipa"
 L["uplp_scar_brl_20_long.compactname"] = "600mm DMR"
-L["uplp_scar_brl_20_long.description"] = "Lång 600mm DMR-pipa till XAR.\nTar bort förmågan att utrusta <color=255,100,100>XAR Järn och Korn</color>."
+L["uplp_scar_brl_20_long.description"] = "Lång 600mm DMR-pipa till XAR."
 
 ////// Stocks
 L["uplp_scar_stock_lb.printname"] = "Standard Kolv (Svart)"
@@ -1922,7 +1918,7 @@ L["uplp_scar_stock_tube.description"] = "Ersätter kolven med ett bufferrör som
 
 L["uplp_scar_stock_pdw.printname"] = "PDW-Kolv"
 L["uplp_scar_stock_pdw.compactname"] = "PDW"
-L["uplp_scar_stock_pdw.description"] = "Ersätter kolven med en vikbar PDW-kolv.\nOm den är \"Invikt\": Lägger till 10% till alla förmåner men lägger också till 15% till alla nackdelar."
+L["uplp_scar_stock_pdw.description"] = "Ersätter kolven med en vikbar PDW-kolv."
 
 ////// Mags
 L["uplp_scar_mag_h.printname"] = "20-Patroner 7,62x51mm"
@@ -2046,6 +2042,7 @@ L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
 L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
 
+/////////// Attachments
 ////// Receivers
 L["uplp_m9_receiver_raffica.printname"] = "PM92-A-Låda"
 L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
@@ -2102,12 +2099,53 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 
 -- Expansion 2
 //////////////////// ORSIS 12.7
-L["uplp_weapon_orsis"] = "UM-50"
-L["uplp_weapon_orsis_desc"] = "\"Udar Molnii 50\" (\"Lightning Strike 50\", eller \"Blixtnedslag 50\") är den senaste och mest kraftfulla precisionsgeväret från Ryssland under moderna tider. UM-50 är matad med den kraftfulla 12.7x108mm patronen vilket är väldigt effektiv mot fordon med lätt till medel pansar och speciellt mot mjuka måltavlor."
+L["uplp_weapon_orsis"] = "Gryphon X108"
+L["uplp_weapon_orsis_desc"] = "Gryphon X108 är den senaste och mest kraftfulla precisionsgeväret från Ryssland under moderna tider. X108 är matad med den kraftfulla 12.7x108mm patronen vilket är väldigt effektiv mot fordon med lätt till medel pansar och speciellt mot mjuka måltavlor."
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
 L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
+
+/////////// Attachments
+////// Barrels
+L["uplp_orsis_barrel_heavy.printname"] = "Tung Träffsäkerhetspipa"
+L["uplp_orsis_barrel_heavy.compactname"] = "Tung"
+L["uplp_orsis_barrel_heavy.description"] = "Förstärkt, tung pipa till Gryphon X108."
+
+L["uplp_orsis_barrel_short.printname"] = "Kompakt Rörlighetskonfiguering"
+L["uplp_orsis_barrel_short.compactname"] = "KRK"
+L["uplp_orsis_barrel_short.description"] = "Förkortad konfiguering av Gryphon X108 gjord för mer intermediära räckvidds angrepp.\nKommer med en förkortad pipa och toppskena för att montera lasrar, men <color=255,100,100>tar bort undermonterade skenan</color>."
+
+////// Magazines
+L["uplp_orsis_mag_3.printname"] = "3-Patronersmagasin"
+L["uplp_orsis_mag_3.compactname"] = "3P"
+L["uplp_orsis_mag_3.description"] = "Förkortad <color=255,100,100>3-patronersmagasin</color> till Gryphon X108."
+
+L["uplp_orsis_mag_7.printname"] = "7-Patronersmagasin"
+L["uplp_orsis_mag_7.compactname"] = "7P"
+L["uplp_orsis_mag_7.description"] = "Förlängt <color=100,255,100>7-patronersmagasin</color> till Gryphon X108."
+
+////// Stocks
+L["uplp_orsis_stock_sniper.printname"] = "Precisionskolv"
+L["uplp_orsis_stock_sniper.compactname"] = "Precision"
+L["uplp_orsis_stock_sniper.description"] = "Konfiguerar kolven på Gryphon X108 för att användas i mer träffsäkert skytte."
+
+L["uplp_orsis_stock_atx.printname"] = "eXtreme-Kolv"
+L["uplp_orsis_stock_atx.compactname"] = "eXtreme"
+L["uplp_orsis_stock_atx.description"] = "Ersätter kolven och pistolgreppet med några mer lätta gjorda av eXtreme Sports."
+
+L["uplp_orsis_stock_heavy.printname"] = "Tung Träffsäkerhetskolv"
+L["uplp_orsis_stock_heavy.compactname"] = "Tung"
+L["uplp_orsis_stock_heavy.description"] = "Förstärker kolven på Gryphon X108 för användning i grövre omgivningar."
+
+////// Muzzles
+L["uplp_orsis_muzzle_small.printname"] = "Förkortad X108-Broms"
+L["uplp_orsis_muzzle_small.compactname"] = "F X108"
+L["uplp_orsis_muzzle_small.description"] = "Förkortad, standard mynningsbroms till Gryphon X108."
+
+L["uplp_orsis_muzzle_big.printname"] = "Pansarkrossare Mynningsbroms"
+L["uplp_orsis_muzzle_big.compactname"] = "Pansar"
+L["uplp_orsis_muzzle_big.description"] = "Massiv mynningsbroms gjord för maximal rekylkontroll.\nAvsedd för Gryphon X108."
 
 //////////////////// AS VAL
  -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)

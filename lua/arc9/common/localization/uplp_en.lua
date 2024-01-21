@@ -360,6 +360,10 @@ L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russ
 -- "Optical Sight, High Quality" in Russian
 -- "Оптический прицел высого качества" - 'OPWK'
 
+L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
+L["uplp_optic_dedal.compactname"] = "12x CWI"
+L["uplp_optic_dedal.description"] = "Magnified scope with 12x magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
 L["uplp_backup_optic_rmr.compactname"] = "Canted RDS"
@@ -2013,9 +2017,6 @@ L["uplp_spas_short.printname"] = "LAW Configuration"
 L["uplp_spas_short.compactname"] = "LAW"
 L["uplp_spas_short.description"] = "Shortened configuration of the SPAW-12 intended for law enforcement.\nComes with a <color=160,160,255>460mm (18.11\") barrel</color> and <color=255,100,100>shortened magazine tube</color>."
 
--- IGNORE; TESTING PURPOSES
--- L["uplp_spas_short.description"] = "Destiny 2 Font Test = <font=D2_20></font>Bow, <font=D2_20></font>Auto Rifle, <font=D2_20></font>Pulse Rifle, <font=D2_20></font>Scout Rifle, <font=D2_20>	</font>Hand Cannon, <font=D2_20>	</font>Submachine Gun, <font=D2_20>	</font>Sidearm</font>"
-
 ////// Stocks
 L["uplp_spas_stock_fixed.printname"] = "Fixed Stock"
 L["uplp_spas_stock_fixed.compactname"] = "Fixed"
@@ -2046,6 +2047,7 @@ L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
 L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
 
+/////////// Attachments
 ////// Receivers
 L["uplp_m9_receiver_raffica.printname"] = "PM92-A Receiver"
 L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
@@ -2102,12 +2104,53 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 
 -- Expansion 2
 //////////////////// ORSIS 12.7
-L["uplp_weapon_orsis"] = "UM-50"
-L["uplp_weapon_orsis_desc"] = "The \"Udar Molnii 50\" (Lightning Strike 50) is the latest and most powerful precision rifle out of Russia in modern times. The UM-50 is chambered for the powerful 12.7x108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
+L["uplp_weapon_orsis"] = "Gryphon X108"
+L["uplp_weapon_orsis_desc"] = "The Gryphon X108 is the latest and most powerful precision rifle out of Russia in modern times. X108 is chambered for the powerful 12.7x108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
 L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
+
+/////////// Attachments
+////// Barrels
+L["uplp_orsis_barrel_heavy.printname"] = "Heavy Accuracy Barrel"
+L["uplp_orsis_barrel_heavy.compactname"] = "Heavy"
+L["uplp_orsis_barrel_heavy.description"] = "Reinforced heavy barrel for the Gryphon X108."
+
+L["uplp_orsis_barrel_short.printname"] = "Compact Agility Configuration"
+L["uplp_orsis_barrel_short.compactname"] = "CAC"
+L["uplp_orsis_barrel_short.description"] = "Shortened configuration of the Gryphon X108 intended for more intermediate range engagements.\nComes with a shortened barrel and top rail for mounting lasers, but <color=255,100,100>removes the bottom rail</color>."
+
+////// Magazines
+L["uplp_orsis_mag_3.printname"] = "3-Round Magazine"
+L["uplp_orsis_mag_3.compactname"] = "3R"
+L["uplp_orsis_mag_3.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108."
+
+L["uplp_orsis_mag_7.printname"] = "7-Round Magazine"
+L["uplp_orsis_mag_7.compactname"] = "7R"
+L["uplp_orsis_mag_7.description"] = "Extended <color=100,255,100>7-round</color> magazine for the Gryphon X108."
+
+////// Stocks
+L["uplp_orsis_stock_sniper.printname"] = "Precision Stock"
+L["uplp_orsis_stock_sniper.compactname"] = "Precision"
+L["uplp_orsis_stock_sniper.description"] = "Configures the stock on the Gryphon X108 to be used for precision shooting."
+
+L["uplp_orsis_stock_atx.printname"] = "eXtreme Stock"
+L["uplp_orsis_stock_atx.compactname"] = "eXtreme"
+L["uplp_orsis_stock_atx.description"] = "Replaces the stock and pistol grip with lightweight ones made by eXtreme Sports."
+
+L["uplp_orsis_stock_heavy.printname"] = "Heavy Accuracy Stock"
+L["uplp_orsis_stock_heavy.compactname"] = "Heavy"
+L["uplp_orsis_stock_heavy.description"] = "Reinforces the stock on the Gryphon X108 for use in rougher environments."
+
+////// Muzzles
+L["uplp_orsis_muzzle_small.printname"] = "Shortened X108 Brake"
+L["uplp_orsis_muzzle_small.compactname"] = "S X108"
+L["uplp_orsis_muzzle_small.description"] = "Shortened standard muzzle brake for the Gryphon X108."
+
+L["uplp_orsis_muzzle_big.printname"] = "Tank Buster Muzzle Brake"
+L["uplp_orsis_muzzle_big.compactname"] = "Tank"
+L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maximum recoil control.\nIntended for use on the Gryphon X108."
 
 //////////////////// AS VAL
  -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)

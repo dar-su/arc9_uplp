@@ -78,8 +78,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 999 -- Damage dealt point-blank
-SWEP.DamageMin = 999 -- Damage dealt after maximum range
+SWEP.DamageMax = 120 -- Damage dealt point-blank
+SWEP.DamageMin = 80 -- Damage dealt after maximum range
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -103,8 +103,8 @@ SWEP.Penetration = 100 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 30 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 75 / ARC9.HUToM
+SWEP.RangeMin = 25 / ARC9.HUToM
+SWEP.RangeMax = 150 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 850 * 39.37
@@ -112,7 +112,7 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
-SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
+SWEP.Ammo = "sniperpenetratedround" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 5

@@ -206,14 +206,14 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-    if attached["uplp_ar15_rs_tall"] then
-        return {
-            Pos = Vector(-2.275, -3, 0.225),
-            Ang = Angle(0.35, 0.125, -3),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    end
+    -- if attached["uplp_ar15_rs_tall"] then
+        -- return {
+            -- Pos = Vector(-2.275, -3, 0.225),
+            -- Ang = Angle(0.35, 0.125, -3),
+            -- Magnification = 1.15,
+            -- ViewModelFOV = 65,
+        -- }
+    -- end
 
 end
 
@@ -746,8 +746,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.75, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.625, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -771,8 +771,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.8, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.725, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },

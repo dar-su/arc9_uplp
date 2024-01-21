@@ -21,6 +21,16 @@ ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "6"
 ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     6     + (swep:GetValue("FoldSights") and 1 or 0)) end -- folding sights
 
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.165),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
+
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
@@ -43,6 +53,16 @@ ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "c"
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.165),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -72,6 +92,16 @@ ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.3),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
+
 ATT.ModelOffset = Vector(-0.42, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_mbus")
@@ -100,6 +130,15 @@ ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(-0.2, 0, 0)
 
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.165),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_scalar")
 
@@ -127,6 +166,15 @@ ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(-0.42, 0, 0)
 
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.3),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type1")
 
@@ -154,6 +202,15 @@ ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(-0.42, 0, 0)
 
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.165),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type2")
 
@@ -181,6 +238,15 @@ ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(-0.42, 0, 0)
 
+ATT.Sights = {
+    {
+        Pos = Vector(0, 5, -1.3),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.15,
+		ViewModelFOV = 65,
+		IsIronSight = true,
+    }
+}
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type3")
 

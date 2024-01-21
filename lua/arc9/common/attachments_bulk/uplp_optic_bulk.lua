@@ -1840,8 +1840,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
 ATT = {}
 
-ATT.PrintName = "12x idk :3 Scope"
-ATT.CompactName = "12x idk :3"
+ATT.PrintName = "12x CWI Annihilator"
+ATT.CompactName = "12x CWI"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
