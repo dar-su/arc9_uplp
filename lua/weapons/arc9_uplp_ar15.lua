@@ -1511,6 +1511,20 @@ SWEP.Attachments = {
         Pos = Vector(0, 3, 4),
         Ang = Angle(90, 90, 180),
     },
+
+
+    -- here to not make presets bad
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, 3.55, 8.2),
+        Ang = Angle(90, 90, 0),
+        -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        MergeSlots = {12}, 
+        Hidden = true,
+    },
 }
 
 

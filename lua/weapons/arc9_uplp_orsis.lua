@@ -50,6 +50,16 @@ SWEP.TracerSize = 1
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50bmg.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
+-- SWEP.ShellSounds = {
+--     "arc9/casings/casing_12ga_1.wav", -- add heavy shell sound!
+--     "arc9/casings/casing_12ga_2.wav",
+--     "arc9/casings/casing_12ga_3.wav",
+--     "arc9/casings/casing_12ga_4.wav",
+--     "arc9/casings/casing_12ga_1.wav",
+--     "arc9/casings/casing_12ga_2.wav",
+--     "arc9/casings/casing_12ga_3.wav",
+--     "arc9/casings/casing_12ga_4.wav",
+-- }
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
