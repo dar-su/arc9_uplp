@@ -1835,6 +1835,63 @@ table.Merge(ATT, stats_big)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
+---------- uplp_optic_dedal
+
+
+ATT = {}
+
+ATT.PrintName = "12x idk :3 Scope"
+ATT.CompactName = "12x idk :3"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "8x+"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "dedal.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_dedal.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 14, -1.885),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 20,
+        RTScopeFOV = 57 / 12,
+        Blur = false,
+
+        SwayAddSights = sway_big,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, -1, 1)
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57 / 12
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/dedal.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
+
+ATT.ScopeScreenRatio = 0.66
+
+ATT.Category = "uplp_optic_big"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0, 0, -0.025)
+ATT.Scale = 0.85
+
+table.Merge(ATT, stats_big)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_dedal")
+
 ---------- uplp_optic_old
 
 

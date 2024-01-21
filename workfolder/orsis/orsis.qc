@@ -37,12 +37,12 @@ $bodygroup "muzzle" {
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0.00 0 0 rotate -90 -0 0
-$attachment "2" "body" 0.00 -0.60 2.50 rotate -10 140 180
+$attachment "1" "barrel" 0.00 0 0 rotate -90 -0 90
+$attachment "2" "body" 0.00 -0.60 -3.50 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 
-$attachment "5" "barrel" 0.00 -0.0 -7.00 rotate -90 -0 0
+$attachment "5" "barrel" 0.00 -0.0 -7.00 rotate -90 -0 90
  
 $surfaceprop "default"
  
