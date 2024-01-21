@@ -112,7 +112,7 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
-SWEP.Ammo = "sniperpenetratedround" -- What ammo type this gun uses.
+SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 5
