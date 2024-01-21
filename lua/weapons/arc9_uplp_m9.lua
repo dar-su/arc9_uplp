@@ -33,7 +33,7 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+-- "[Automatico]XQAAAQCYAAAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrgNb6B3R4bFwQ7nSkIvgviT/8NKnMVxpEEP1d50kmmxsjmIfMQTGuafp5PTFICe4BHRjDVggtnGDC0S0YPEu4S9etBtEnkSk5nFxpbQA="
 }
 
 ---- Muzzle Effects, Shell Effects, Camera

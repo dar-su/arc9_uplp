@@ -37,7 +37,6 @@ SWEP.Credits = {
 SWEP.StandardPresets = {
 }
 
-SWEP.CantPeek = true 
 
 SWEP.DefaultBodygroups = "0000000000" -- Might as well prepare for the future
 
@@ -823,7 +822,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         Scale = 1.15,
 		Icon_Offset = Vector(1, 0, 0),
-		-- Installed = "uplp_optic_dedal",
+		Installed = "uplp_optic_dedal",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
@@ -968,16 +967,6 @@ SWEP.Attachments = {
     },
 }
 
-
--- SWEP.HookP_NameChange = function(self, name)
-	-- local att = self:GetElements()
-
-	-- if att["xstock"] then
-		-- name = ARC9:GetPhrase("uplp_weapon_orsis_atx")
-	-- end
-
-    -- return name
--- end
-
 SWEP.NoAimAssist = true
 SWEP.NoAimAssistLock = false
+SWEP.CantPeek = true 
