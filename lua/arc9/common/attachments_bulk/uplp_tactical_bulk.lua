@@ -432,10 +432,10 @@ ARC9.LoadAttachment(ATT, "uplp_tac_laser_pistol")
 ATT = {}
 
 
-ATT.PrintName = [[M203 40mm underbarrel grenade launcher]]
-ATT.CompactName = [[M203]]
-ATT.Icon = Material(iconfolder .. "laserb.png", "mips smooth")
-ATT.Description = [[A single-shot 40mm underbarrel grenade launcher, designed for installation on M16 and M4 assault rifles.]]
+ATT.PrintName = "Model 40 Grenade Launcher" 
+ATT.CompactName = "M40 GL"
+ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
+ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
 ATT.Pros = {}
 ATT.Cons = {}
 ATT.SortOrder = -99

@@ -1359,6 +1359,10 @@ L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Recei
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9x19mm magazines." .. pitchblack
 
+L["uplp_ar15_reciever_m16a3.printname"] = "A3 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A3 CH"
+L["uplp_ar15_reciever_m16a3.description"] = "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
+
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
 L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
