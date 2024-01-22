@@ -359,9 +359,6 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -373,9 +370,6 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -387,9 +381,6 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -401,9 +392,6 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -433,9 +421,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.2, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -479,9 +466,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.2, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -503,8 +489,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.75, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -522,8 +507,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.75, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -538,8 +522,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.75, lhik = 0 },
             { t = 1, lhik = 1 },
         },
     },
@@ -702,6 +685,19 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.55, -1.9, 8.5),
         Ang = Angle(90, 0, -90),
+    },
+
+    -- here to not make presets bad
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0.4, 6.87),
+        Ang = Angle(90, 90, 0),
+        -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        MergeSlots = {7}, 
+        Hidden = true,
     },
 }
 

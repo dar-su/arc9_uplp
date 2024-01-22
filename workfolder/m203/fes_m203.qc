@@ -26,6 +26,7 @@ $sequence "reload" {
 	fadein 0.1
 	fadeout 0.1
 	fps 24
+	snap
 }
 $sequence "fire" {
 	"anims/fire_ubgl.smd"

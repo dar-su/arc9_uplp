@@ -1147,6 +1147,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     else
         mdl:SetBodygroup(8, 0)
     end
+
+    if eles["uplp_ar15_hg_grenadier"] and eles["uplp_ubgl_m203_rail"] then
+        mdl:SetBodygroup(2, 15)
+    end
 end
 
 -- SWEP.Hook_ModifyElements = function(self, eles)
@@ -1212,6 +1216,7 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 }, { 9, 1 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [12] = { Pos = Vector(0.045, 2.1, 10) },
+    [24] = { Pos = Vector(0.045, 3.3, 8.1) },
     }},
     ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 }, { 9, 1 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 18.95) },

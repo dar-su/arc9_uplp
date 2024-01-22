@@ -442,44 +442,8 @@ ATT.SortOrder = -99
 
 -- ATT.ExcludeElements = {
 --     "eft_hg_ar15_m4_lower",
---     "eft_hg_ar15_ddrisii1225_lower",
---     "eft_hg_ar15_ddrisii95_lower",
---     "eft_hg_ar15_ddrisii95_lower_b",
---     "eft_hg_ar15_ddfsp",
---     "eft_hg_ar15_kacris_lower",
---     "eft_hg_ar15_kacurx31_lower",
---     "eft_hg_ar15_kacurx38_lower",
---     "eft_hg_ar15_viper_lower",
---     "eft_hg_ar15_viper_lower_fde",
---     "eft_hg_ar15_mk16",
---     "eft_hg_ar15_mk1695",
---     "eft_hg_ar15_ionlite",
---     "eft_hg_ar15_moesl",
---     "eft_hg_ar15_moeslmid",
---     "eft_hg_ar15_saiqd10",
---     "eft_hg_ar15_saiqd",
---     "eft_hg_ar15_stm15",
---     "eft_hg_ar15_stm12",
---     "eft_hg_ar15_stm9",
---     "eft_hg_ar15_vypr",
---     "eft_hg_ar15_wing",
---     "eft_hg_ar15_lvoac_b",
---     "eft_hg_ar15_lvoac_f",
---     "eft_hg_ar15_lvoac_g",
---     "eft_hg_ar15_lvoas_b",
---     "eft_hg_ar15_lvoas_f",
---     "eft_hg_ar15_lvoas_g",
---     "eft_hg_ar15_mk10",
---     "eft_hg_ar15_ax15",
---     "eft_hg_ar15_adar",
---     "eft_hg_ar15_precision",
---     "eft_mag_ar15_pmag_60",
 -- }
 
--- ATT.EFTErgoAdd = -41
--- ATT.CustomCons = { Ergonomics = "-41" }
--- ATT.RecoilMult = 0.9
--- ATT.VisualRecoilMult = 0.9
 
 ATT.ReloadInSightsUBGL = false 
 
@@ -495,17 +459,28 @@ ATT.ModelBodygroups = "1" -- 0 for m16 gren hg
 ATT.LHIK = true
 ATT.LHIK_Priority = 100
 
-ATT.MuzzleDeviceUBGL = true
-ATT.DropMagazineAmountUBGL = 0
+ATT.MuzzleEffectQCAUBGL = 1
+-- ATT.MuzzleDeviceUBGL = true
+ATT.DropMagazineAmountUBGL = 1 
+ATT.DropMagazineModelUBGL = "models/weapons/arc9/uplp_ubgl_m203_casing.mdl"
+ATT.DropMagazineTimeUBGL = 0.75
+ATT.DropMagazinePosUBGL = Vector(0, -9, 5)
+ATT.DropMagazineVelocityUBGL = Vector(0, -30, 0)
+ATT.DropMagazineAngUBGL = Angle(90, 100, 80)
 
 local path = "uplp_urban_temp/m203/"
+local pathUTC = "uplp_urban_temp/common/"
+
+ATT.DropMagazineSoundsUBGL = {
+    path .. "40mm_casing_1.ogg",
+}
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
-        -- EventTable = {
-            -- { s = path .. "m203_trigger.ogg", t = 0 },
-        -- }
+        EventTable = {
+            { s = "uplp_urban_temp/scar/mech-03.ogg", t = 0 },
+        }
     },
     ["fire_empty_ubgl"] = {
         Source = "fire",
@@ -513,20 +488,32 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl"] = {
         Source = "reload",
         EventTable = {
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0/30, v = 0.8 },
             { s = path .. "breaker_open.ogg", t = 13/30 },
             { s = path .. "gl_remove.ogg", t = 14/30 },
+            { s = pathUTC .. "magpouch.ogg", t = 25/30, v = 0.6 },
             { s = path .. "gl_insert.ogg", t = 30/30 },
             { s = path .. "breaker_close.ogg", t = 55/30 },
+            { s = pathUTC .. "cloth_1.ogg", t = 70 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 70/30, v = 0.8 },
         }
     },
     ["enter_ubgl"] = {
-        Source = "to_armed"
+        Source = "to_armed",
+        EventTable = {
+            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 2/30, v = 0.8 },
+        }
     },
     ["idle_ubgl"] = {
         Source = "idle_armed"
     },
     ["exit_ubgl"] = {
-        Source = "to_idle"
+        Source = "to_idle",
+        EventTable = {
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 2/30, v = 0.3 },
+        }
     },
     ["enter_sights_ubgl"] = {
         Source = "idle_armed"
@@ -542,6 +529,7 @@ ATT.IKGunMotionAngleMult = 0.5
 
 ATT.IKCameraMotionQCA = 3
 ATT.IKCameraMotionOffsetAngle = Angle(0, 0, 90)
+
 
 ATT.CamCoolViewUBGL = false
 
@@ -568,8 +556,8 @@ ATT.SpreadUBGL = 0.02
 ATT.FirstShootSoundUBGL = false
 ATT.ShootSoundUBGL = path.."gl_fire.ogg"
 ATT.DistantShootSoundUBGL = path.."gl_fire_dist.ogg"
--- ATT.ShootSoundIndoorUBGL = path.."m203_fire_indoor_close.ogg"
--- ATT.DistantShootSoundIndoorUBGL = path.."m203_fire_indoor_distant.ogg"
+ATT.ShootSoundIndoorUBGL = path.."gl_fire.ogg"
+ATT.DistantShootSoundIndoorUBGL = path.."gl_fire_dist.ogg"
 ATT.HasSightsUBGL = true
 
 ATT.TriggerDelayUBGL = false
@@ -577,7 +565,7 @@ ATT.TriggerDelayUBGL = false
 -- ATT.EnterUBGLSound = path.."m203_hand_out_tube.ogg"
 -- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
 
-ATT.ShootEntUBGL = "arc9_eft_40mm_m381_bang" -- bla bla
+ATT.ShootEntUBGL = "arc9_uplp_40mm_he"
 ATT.ShootEntForceUBGL = 20000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
@@ -603,20 +591,13 @@ ATT.Sights = {
 
 -- ATT.UBGLExclusiveSightsUBGL = true
 
--- ATT.DrawFunc = function(swep, model) 
---     local eles = swep:GetElements()
+ATT.DrawFunc = function(swep, model) 
+    local eles = swep:GetElements()
 
---     local bg = eles["eft_ammo_40x46_m381"] and 1 
---     or eles["eft_ammo_40x46_m386"] and 2
---     or eles["eft_ammo_40x46_m406"] and 3
---     or eles["eft_ammo_40x46_m433"] and 4
---     or eles["eft_ammo_40x46_m441"] and 5
---     or eles["eft_ammo_40x46_m576"] and 6
---     or eles["eft_ammo_40x46_m716"] and 7
---     or 0
-
---     model:SetBodygroup(1, bg) 
--- end
+    if eles["uplp_ar15_hg_grenadier"] then
+        model:SetBodygroup(0, 0)
+    end
+end
 
 -- ATT.Attachments = {
 --     {

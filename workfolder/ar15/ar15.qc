@@ -33,6 +33,8 @@ $bodygroup "hg" { // 2
 
 	studio "hg_tac_red.smd"
 	studio "hg_tacshort_red.smd"
+	
+	studio "hg_grenadier_alt.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"
