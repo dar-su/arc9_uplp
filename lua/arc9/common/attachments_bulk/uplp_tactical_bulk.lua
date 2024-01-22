@@ -498,16 +498,14 @@ ATT.LHIK_Priority = 100
 ATT.MuzzleDeviceUBGL = true
 ATT.DropMagazineAmountUBGL = 0
 
-local path = "weapons/darsu_eft/m203/"
-local randspin = {"arc9_eft_shared/weapon_generic_rifle_spin1.ogg","arc9_eft_shared/weapon_generic_rifle_spin2.ogg","arc9_eft_shared/weapon_generic_rifle_spin3.ogg","arc9_eft_shared/weapon_generic_rifle_spin4.ogg","arc9_eft_shared/weapon_generic_rifle_spin5.ogg","arc9_eft_shared/weapon_generic_rifle_spin6.ogg","arc9_eft_shared/weapon_generic_rifle_spin7.ogg","arc9_eft_shared/weapon_generic_rifle_spin8.ogg","arc9_eft_shared/weapon_generic_rifle_spin9.ogg","arc9_eft_shared/weapon_generic_rifle_spin10.ogg"}
-
+local path = "uplp_urban_temp/m203/"
 
 ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
-        EventTable = {
-            { s = path .. "m203_trigger.ogg", t = 0 },
-        }
+        -- EventTable = {
+            -- { s = path .. "m203_trigger.ogg", t = 0 },
+        -- }
     },
     ["fire_empty_ubgl"] = {
         Source = "fire",
@@ -515,18 +513,10 @@ ATT.IKAnimationProxy = {
     ["reload_ubgl"] = {
         Source = "reload",
         EventTable = {
-            -- { s = randspin, t = 0.05 },
-            { s = path .. "m203_hand_on_tube.ogg", t = 10/24 },
-            { s = path .. "fn40gl_tube_button.ogg", t = 12/24 },
-            { s = path .. "m203_tube_open_empty.ogg", t = 16/24 },
-            { s = path .. "m203_grenade_out_slide.ogg", t = 18/24 },
-            { s = path .. "m203_hand_out_tube.ogg", t = 24/24 },
-
-            { s = path .. "m203_grenade_in.ogg", t = 47/24 },
-            { s = path .. "m203_hand_on_tube.ogg", t = 68/24 },
-            { s = path .. "m203_tube_close_full.ogg", t = 71/24 },
-            { s = path .. "m203_hand_out_tube.ogg", t = 76/24 },
-            -- { s = randspin, t = 1.7 },
+            { s = path .. "breaker_open.ogg", t = 13/30 },
+            { s = path .. "gl_remove.ogg", t = 14/30 },
+            { s = path .. "gl_insert.ogg", t = 30/30 },
+            { s = path .. "breaker_close.ogg", t = 55/30 },
         }
     },
     ["enter_ubgl"] = {
@@ -569,45 +559,47 @@ ATT.UBGL = true
 ATT.UBGLAmmo = "smg1_grenade"
 ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
-ATT.UBGLFiremodeName = "M203 make name plz"
+ATT.UBGLFiremodeName = ARC9:GetPhrase("uplp_ubgl_m203_rail.compactname")
 ATT.UBGLChamberSize = 0
 ATT.ShootVolumeUBGL = 111
 
 ATT.SpreadUBGL = 0.02
 
 ATT.FirstShootSoundUBGL = false
-ATT.ShootSoundUBGL = path.."m203_fire_outdoor_close.ogg"
-ATT.DistantShootSoundUBGL = path.."m203_fire_outdoor_distant.ogg"
-ATT.ShootSoundIndoorUBGL = path.."m203_fire_indoor_close.ogg"
-ATT.DistantShootSoundIndoorUBGL = path.."m203_fire_indoor_distant.ogg"
+ATT.ShootSoundUBGL = path.."gl_fire.ogg"
+ATT.DistantShootSoundUBGL = path.."gl_fire_dist.ogg"
+-- ATT.ShootSoundIndoorUBGL = path.."m203_fire_indoor_close.ogg"
+-- ATT.DistantShootSoundIndoorUBGL = path.."m203_fire_indoor_distant.ogg"
 ATT.HasSightsUBGL = true
 
 ATT.TriggerDelayUBGL = false
 
-ATT.EnterUBGLSound = path.."m203_hand_out_tube.ogg"
-ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
+-- ATT.EnterUBGLSound = path.."m203_hand_out_tube.ogg"
+-- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
 
 ATT.ShootEntUBGL = "arc9_eft_40mm_m381_bang" -- bla bla
 ATT.ShootEntForceUBGL = 20000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
-ATT.ModelOffset = Vector(-0.55, 0, 1.5)
+ATT.ModelOffset = Vector(-0.55, 0.05, 1.5)
 ATT.ModelAngleOffset = Angle(0, 180, 0)
 
 -- ATT.AimDownSightsTimeUBGL =
 -- please fixx  having gl fucks up regular ironsights on gun
--- ATT.Sights = {
-    -- {
-    --     Pos = Vector(2.3, 12, -3.3),
-    --     Ang = Angle(0.29, -2.5+0.35, -2),
-    --     Magnification = 1.1,
-    --     ViewModelFOV = 50,
-    --     UBGLOnly = true,
-    --     CrosshairInSights = false,
-    --     IsIronSight = true
-    -- },
--- }
+ATT.Sights = {
+    {
+        Pos = Vector(2, 15, -4),
+        Ang = Angle(0, 0, -10),
+        Magnification = 1.1,
+        ViewModelFOV = 50,
+		CantPeek = true,
+        CrosshairInSights = true,
+        Blur = false,
+        UBGLOnly = true,
+        Disassociate = true,
+    },
+}
 
 -- ATT.UBGLExclusiveSightsUBGL = true
 

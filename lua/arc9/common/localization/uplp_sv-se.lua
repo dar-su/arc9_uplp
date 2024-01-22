@@ -565,6 +565,11 @@ L["uplp_sg_shell_yellow.printname"] = "Explosiva Granatskott"
 L["uplp_sg_shell_yellow.compactname"] = "Granat"
 L["uplp_sg_shell_yellow.description"] = "Hagelpatroner laddade med en mindre explosiv granat. Spränger ett mindre område med granatsplitter." .. shotgun_lp
 
+/////////// Underbarrel Weapons
+L["uplp_ubgl_m203_rail.printname"] = "Modell 40 Granattillsats"
+L["uplp_ubgl_m203_rail.compactname"] = "M40 GT"
+L["uplp_ubgl_m203_rail.description"] = "Undermonterad granattillsats som skjuter högexplosiva 40MM granater."
+
 /////////// Cosmetics
 ////// Charms
 L["uplp_charm_paw.printname"] = "Poly Paw"
