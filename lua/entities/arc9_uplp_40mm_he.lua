@@ -5,7 +5,7 @@ AddCSLuaFile()
 ENT.Base = "arc9_uplp_riflegrenade"
 ENT.PrintName = "40mm HE"
 
-ENT.GrenadeDamage = false
+ENT.GrenadeDamage = 200
 ENT.GrenadeRadius = 300
 ENT.DragCoefficient = 0.25
 

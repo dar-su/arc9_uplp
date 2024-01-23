@@ -573,15 +573,17 @@ ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 ATT.ModelOffset = Vector(-0.55, 0.05, 1.5)
 ATT.ModelAngleOffset = Angle(0, 180, 0)
 
--- ATT.AimDownSightsTimeUBGL =
--- please fixx  having gl fucks up regular ironsights on gun
+ATT.CantPeekUBGL = true
+ATT.NoAimAssistUBGL = true
+
+ATT.UBGLExclusiveSightsUBGL = true
+
 ATT.Sights = {
     {
         Pos = Vector(2, 15, -4),
         Ang = Angle(0, 0, -10),
         Magnification = 1.1,
         ViewModelFOV = 50,
-		CantPeek = true,
         CrosshairInSights = true,
         Blur = false,
         UBGLOnly = true,
