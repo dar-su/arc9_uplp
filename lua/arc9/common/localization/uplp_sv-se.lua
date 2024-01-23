@@ -1331,7 +1331,7 @@ L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär g
 ////// Receiver
 L["uplp_ar15_reciever_m16.printname"] = "A2-Låda med Bärhandtag"
 L["uplp_ar15_reciever_m16.compactname"] = "A2 BH"
-L["uplp_ar15_reciever_m16.description"] = "Militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till \n<color=100,255,100>3-skott salvo</color>/<color=100,255,100>halvautomat</color>."
+L["uplp_ar15_reciever_m16.description"] = "Militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till <color=100,255,100>3-skott salvo</color>/<color=100,255,100>halvautomat</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4-Låda"
 L["uplp_ar15_reciever_m4.compactname"] = "M4"

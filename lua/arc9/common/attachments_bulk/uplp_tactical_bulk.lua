@@ -438,12 +438,13 @@ ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
 ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = -99
+ATT.SortOrder = 99
 
 -- ATT.ExcludeElements = {
 --     "eft_hg_ar15_m4_lower",
 -- }
 
+ATT.ActivateElements = {"uplp_m203_used"}
 
 ATT.ReloadInSightsUBGL = false 
 
@@ -560,7 +561,7 @@ ATT.ShootSoundIndoorUBGL = path.."gl_fire.ogg"
 ATT.DistantShootSoundIndoorUBGL = path.."gl_fire_dist.ogg"
 ATT.HasSightsUBGL = true
 
-ATT.TriggerDelayUBGL = false
+-- ATT.TriggerDelayUBGL = false
 
 -- ATT.EnterUBGLSound = path.."m203_hand_out_tube.ogg"
 -- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
