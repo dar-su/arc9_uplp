@@ -1353,6 +1353,10 @@ L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Taktisk Låda 
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9x19mm magasin." .. pitchblack
 
+L["uplp_ar15_reciever_m16a3.printname"] = "A3-Låda med Bärhandtag"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A3-BH"
+L["uplp_ar15_reciever_m16a3.description"] = "Militär grad låda med inbyggt bärhandtag.\nEnbart <color=160,160,255>kosmetiskt</color>."
+
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"
 L["uplp_ar15_rs_m4.compactname"] = "M4 BS"

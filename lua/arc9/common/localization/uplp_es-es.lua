@@ -1353,6 +1353,10 @@ L["uplp_ar15_reciever_modern_black_smg.printname"] = "Receptor Táctico Hoki Arm
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (NI)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9x19mm." .. pitchblack
 
+L["uplp_ar15_reciever_m16a3.printname"] = "Receptor A3 con Asa de Transporte"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A3 AT"
+L["uplp_ar15_reciever_m16a3.description"] = "Receptor de grado militar con asa de transporte incorporada.\nPuramente <color=160,160,255>cosmetico</color>."
+
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "Mira Trasera M4"
 L["uplp_ar15_rs_m4.compactname"] = "M4 MT"
