@@ -198,8 +198,8 @@ ATT.RecoilRandomSideAddRecoil = 2
 ATT.SpreadAddRecoil = 0.01
 ATT.RecoilPerShotOverride = 1 / 8
 ATT.SpreadAddHipFire = 0.01
-ATT.AimDownSightsTimeAdd = 0.06
-ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.06
 ATT.SpeedMultSights = 0.75
 ATT.RangeMaxAdd = 8 / ARC9.HUToM
 
@@ -226,6 +226,11 @@ ATT.DropMagazineTime = 0.5
 ATT.DropMagazineVelocity = Vector(0, -20, 0)
 -- Negatives
 ATT.ClipSizeOverride = 20
+
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultSights = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ext"
