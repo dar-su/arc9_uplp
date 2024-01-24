@@ -23,7 +23,7 @@ SWEP.Trivia = {
                                                                         ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
                                                                         ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1964" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "2004" ),
 }
 
 
