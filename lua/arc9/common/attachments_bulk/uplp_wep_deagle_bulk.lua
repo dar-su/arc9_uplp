@@ -333,14 +333,41 @@ ATT.ActivateElements = {"uplp_deagle_skin_admin"}
 
 ATT.CustomPros = { [ ARC9:GetPhrase("uplp_deagle_skin_admin.pro") ] = ARC9:GetPhrase("uplp_deagle_skin_admin.pro_stat")}
 ATT.CustomCons = { [ ARC9:GetPhrase("uplp_deagle_skin_admin.con") ] = " "}
-ATT.DamageMaxMult = 99
-ATT.DamageMinMult = 99
-ATT.RPMMult = 11
-ATT.Firemodes = { { Mode = -1 } }
-ATT.ClipSizeOverride = 9999
-ATT.SpreadAdd = -999
+ATT.DamageMaxOverride = 1000
+ATT.DamageMinOverride = 1000
+ATT.Firemodes = {
+    {
+        PrintName = "BEAM",
+        Mode = -1,
+        SpreadAdd = -999,
+        RPMOverride = 3000,
+    },
+    {
+        PrintName = "BUCK",
+        Mode = 5,
+        SpreadOverride = 0.08,
+        NumOverride = 10,
+        PostBurstDelay = 0.25,
+        RunawayBurst = true,
+        RPMOverride = 3000,
+    },
+    {
+        PrintName = "BLAST",
+        Mode = 1,
+        SpreadAdd = -999,
+        RPMOverride = 400,
+
+        ExplosionRadiusOverride = 256,
+        ExplosionDamageOverride = 999,
+        ExplosionEffect = "Explosion",
+        ImpactDecal = "FadingScorch",
+    },
+}
 ATT.VisualRecoilMult = 0.2
-ATT.RecoilMult = 0.1
+ATT.RecoilMult = 0.05
 ATT.RecoilPerShotMult = 0
+
+ATT.InfiniteAmmo = true
+ATT.BottomlessClip = true
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_admin")
