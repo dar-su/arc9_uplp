@@ -23,7 +23,7 @@ ATT.ActiveAng = Angle(0, 0, -6)
 
 ATT.Model = "models/weapons/arc9/uplp/raffica_lrhik.mdl"
 ATT.LHIK = true
-ATT.RHIK = true 
+ATT.RHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(-11.65, -1.918, 2.62)
 
@@ -33,14 +33,25 @@ ATT.RunawayBurst = true
 ATT.Firemodes = {
     {
         Mode = 3, -- 3bst
-        PoseParam = 1
-    },  
+        PoseParam = 1,
+
+        RecoilRandomSideAddRecoil = 1,
+        SpreadAddRecoil = 0.01,
+    },
     {
         Mode = 1, -- semi
         PoseParam = 1,
-		PostBurstDelay = 0.1
-    },  
+        RPMMult = 550 / 1000,
+        PostBurstDelay = 0
+    },
 }
+
+ATT.RecoilUpMult = 0.7
+ATT.RecoilPerShotOverride = 1 / 6
+ATT.SpreadAddHipFire = 0.008
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.04
+ATT.SpeedMultSights = 0.9
 
 ATT.Sights = {
     {
@@ -69,6 +80,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_a3", "uplp_can_tac"}
 
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.RecoilMult = 0.9
+
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_a3")
 
 ---------- uplp_m9_receiver_a3t
@@ -86,6 +100,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_a3t", "uplp_can_tac"}
 
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.RecoilMult = 0.9
+
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_a3t")
 
 ---------- uplp_m9_receiver_sc
@@ -102,6 +119,12 @@ ATT.Category = "uplp_m9_receiver"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_sc"}
+
+ATT.RangeMaxAdd = 6 / ARC9.HUToM
+ATT.RecoilUpMult = 0.9
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_sc")
 
@@ -130,8 +153,8 @@ ATT.ExitSightsSound = "uplp_urban_temp/common/cloth_4.ogg"
 ATT.ActivePos = Vector(-0.1, -0.1, 0.1)
 ATT.ActiveAng = Angle(0, 0, 0)
 
-ATT.PostBurstDelay = 0.2
-ATT.RPM = 1000
+ATT.PostBurstDelay = 0.17
+ATT.RPM = 900
 ATT.CantPeek = true
 ATT.RunawayBurst = true
 ATT.ShootWhileSprint = true
@@ -149,13 +172,13 @@ ATT.Firemodes = {
     {
         Mode = 3, -- 3bst
         PoseParam = 1
-    },  
+    },
     -- {
         -- Mode = -1, -- auto
         -- PoseParam = 1,
-		-- PostBurstDelay = 0.1,
-		-- RPMMult = 0.75,
-    -- },  
+        -- PostBurstDelay = 0.1,
+        -- RPMMult = 0.75,
+    -- },
 }
 
 ATT.Sights = {
@@ -170,6 +193,15 @@ ATT.Sights = {
 
 ATT.ClipSizeOverride = 20
 
+ATT.RecoilMult = 0.8
+ATT.RecoilRandomSideAddRecoil = 2
+ATT.SpreadAddRecoil = 0.01
+ATT.RecoilPerShotOverride = 1 / 8
+ATT.SpreadAddHipFire = 0.01
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedMultSights = 0.75
+ATT.RangeMaxAdd = 8 / ARC9.HUToM
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_robocop")
 

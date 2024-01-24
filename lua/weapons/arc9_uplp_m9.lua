@@ -112,8 +112,8 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 15
 
 -- Recoil
-SWEP.Recoil = 1.2
-SWEP.RecoilUp = 1
+SWEP.Recoil = 1
+SWEP.RecoilUp = 1.2
 SWEP.RecoilSide = 0.9
 
 SWEP.RecoilRandomUp = 0.25
@@ -159,7 +159,7 @@ SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 4
-SWEP.RecoilResetTime = 0.02
+SWEP.RecoilResetTime = 0.01
 SWEP.RecoilPerShot = 1 / 4
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
