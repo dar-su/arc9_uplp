@@ -56,6 +56,7 @@ L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
 L["uplp_caliber_9x19mm"] = "9x19mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
+L["uplp_caliber_127x108mm"] = "12.7x108mm Soviet"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
