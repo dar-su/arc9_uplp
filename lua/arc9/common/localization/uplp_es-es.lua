@@ -45,18 +45,18 @@ L["uplp_country_usa"] = "Estados Unidos"
 /////////// Caliber
 L["uplp_caliber"] = "Calibre3"
 
-L["uplp_caliber_7.62x39mm"] = "7.62x39mm Soviético"
-L["uplp_caliber_7.62x51mm"] = "7.62x51mm"
-L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
-L["uplp_caliber_5.45x39mm"] = "5.45x39mm"
+L["uplp_caliber_7.62x39mm"] = "7.62×39mm Soviético"
+L["uplp_caliber_7.62x51mm"] = "7.62×51mm"
+L["uplp_caliber_5.56x45mm"] = "5.56×45mm "
+L["uplp_caliber_5.45x39mm"] = "5.45×39mm"
 L["uplp_caliber_12gauge"] = "Calibre 12"
 L["uplp_caliber_50ae"] = ".50 AE"
-L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
-L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
-L["uplp_caliber_9x19mm"] = "9x19mm Parabellum"
+L["uplp_caliber_5.7x28mm"] = "FN 5.7×28mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4.6×30mm"
+L["uplp_caliber_9x19mm"] = "9×19mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
-L["uplp_caliber_127x108mm"] = "12.7x108mm Soviético"
+L["uplp_caliber_127x108mm"] = "12.7×108mm Soviético"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Fabricante2"
@@ -605,7 +605,7 @@ L["uplp_weapon_ak_smg_desc"] = "Varios subfusiles compactos basados en el fusil 
 L["uplp_weapon_ak_762"] = "%s 7.62"
 L["uplp_weapon_ak_545"] = "%s 5.45"
 L["uplp_weapon_ak_556"] = "%s 5.56"
-L["uplp_weapon_ak_9x39"] = "%s 9x39"
+L["uplp_weapon_ak_9x39"] = "%s 9×39"
 L["uplp_weapon_ak_rpk"] = "HPK"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
@@ -660,7 +660,7 @@ L["uplp_ak_brl_12k.description"] = "Cañón 230mm (2cm) acortado del prototipo A
 
 L["uplp_ak_brl_19.printname"] = "Cañón AK M23 5.56 de 483mm"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
-L["uplp_ak_brl_19.description"] = "Cañón 483mm (48cm) un poco más largo utilizado en el AK M23 5.56, una versión de exportación de 5.56x45mm del AK M23."
+L["uplp_ak_brl_19.description"] = "Cañón 483mm (48cm) un poco más largo utilizado en el AK M23 5.56, una versión de exportación de 5.56×45mm  del AK M23."
 
 L["uplp_ak_brl_rpk16.printname"] = "Cañón HPK M16 de 585mm"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"
@@ -894,29 +894,29 @@ L["uplp_ak_mag_545_drum.printname"] = "Tambor HPK M16 de 5,45x39 mm de 85 Rondas
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 T"
 L["uplp_ak_mag_545_drum.description"] = "Cargador de tambor cilíndrico de 85 balas del HPK M16." .. loaded545
 
-/// 5.56x45mm NATO
-local loaded556 = loaded .. "Cargado con " .. col.b .. "5.56x45mm" .. col.e .. " utilizado por el AK M10 5.56." .. changeammo.smg1
+/// 5.56×45mm  NATO
+local loaded556 = loaded .. "Cargado con " .. col.b .. "5.56×45mm " .. col.e .. " utilizado por el AK M10 5.56." .. changeammo.smg1
 
-L["uplp_ak_mag_556_30.printname"] = "30 Rondas 5.56x45mm (Polímero)"
+L["uplp_ak_mag_556_30.printname"] = "30 Rondas 5.56×45mm  (Polímero)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
 L["uplp_ak_mag_556_30.description"] = "Cargador de 30 balas fabricado en polímero." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30 Rondas 5.56x45mm (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.printname"] = "30 Rondas 5.56×45mm  (SynPoly)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (SP)"
 L["uplp_ak_mag_556_30_pmag.description"] = "SPMAG de 30 balas fabricado por SynPoly." .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30 Rondas 5.56x45mm (Estilo M23)"
+L["uplp_ak_mag_556_30_12.printname"] = "30 Rondas 5.56×45mm  (Estilo M23)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (M23)"
 L["uplp_ak_mag_556_30_12.description"] = "Cargador de 30 balas utilizado en el fusil AK M23 5.56." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20 Rondas 7.62x51mm"
-L["uplp_ak_mag_308_20.compactname"] = "20R 7.62x51"
-L["uplp_ak_mag_308_20.description"] = "Cargador de 20 balas cargado con " .. col.b .. "balas 7.62x51mm" .. col.e .. " utilizado en el fusil AK M308." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.printname"] = "20 Rondas 7.62×51mm"
+L["uplp_ak_mag_308_20.compactname"] = "20R 7.62×51"
+L["uplp_ak_mag_308_20.description"] = "Cargador de 20 balas cargado con " .. col.b .. "balas 7.62×51mm" .. col.e .. " utilizado en el fusil AK M308." ..  changeammo["357"]
 
-L["uplp_ak_mag_939_30.printname"] = "20 Rondas 9x39mm"
-L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "Cargador de 20 balas cargado con " .. col.b .. "balas 9x39mm" .. col.e .. " utilizado por el AK 9mm.\nSólo se fabricaron unos cientos del AK 9 mm!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.printname"] = "20 Rondas 9×39mm"
+L["uplp_ak_mag_939_30.compactname"] = "20R 9×39mm"
+L["uplp_ak_mag_939_30.description"] = "Cargador de 20 balas cargado con " .. col.b .. "balas 9×39mm" .. col.e .. " utilizado por el AK 9mm.\nSólo se fabricaron unos cientos del AK 9 mm!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "Freno de Boca M10"
@@ -949,7 +949,7 @@ L["uplp_ak_mz_12.description"] = "Freno de boca estándar utilizado en el AK M23
 
 L["uplp_ak_mz_19.printname"] = "Freno de Boca AK M23 5.56"
 L["uplp_ak_mz_19.compactname"] = "FB M23 5.56"
-L["uplp_ak_mz_19.description"] = "Freno de boca estándar utilizado en el AK M23 5.56, una versión de exportación 5.56x45mm del AK M23."
+L["uplp_ak_mz_19.description"] = "Freno de boca estándar utilizado en el AK M23 5.56, una versión de exportación 5.56×45mm  del AK M23."
 
 L["uplp_ak_mz_rpk16.printname"] = "Freno de Boca HPK M16"
 L["uplp_ak_mz_rpk16.compactname"] = "FB HPK M16"
@@ -1238,61 +1238,61 @@ L["uplp_ar15_mag_45_40.printname"] = "40 Rondas .45 Auto"
 L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
 L["uplp_ar15_mag_45_40.description"] = "Convierte el rifle en el AR-SMG, un subfusil de velocidad cíclica rápida con recámara en .45 Auto.\nEquipado con un cargador modificado de 40 balas procedente de un conocido subfusil israelí." .. changeammo.pistol
 
-/// 9x19mm
+/// 9×19mm
 L["uplp_ar15_stm9_magwell.printname"] = "Embudo Acampanado eXtreme"
 L["uplp_ar15_stm9_magwell.compactname"] = "Embudo"
 L["uplp_ar15_stm9_magwell.description"] = "Añade un compartimento de cargador ensanchado para recargas más rápidas."
 
-L["uplp_ar15_mag_glock_17.printname"] = "17 Rondas 9x19mm"
+L["uplp_ar15_mag_glock_17.printname"] = "17 Rondas 9×19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
 L["uplp_ar15_mag_glock_17.description"] = "Convierte el fusil en el AR-SMG, un subfusil de velocidad cíclica rápida con recámara de 9x19 mm.\nEquipada con un cargador de 17 balas de una conocida pistola austriaca." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_33.printname"] = "33 Rondas 9x19mm"
-L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19mm"
+L["uplp_ar15_mag_glock_33.printname"] = "33 Rondas 9×19mm"
+L["uplp_ar15_mag_glock_33.compactname"] = "33R 9×19mm"
 L["uplp_ar15_mag_glock_33.description"] = "Convierte el fusil en el AR-SMG, un subfusil de velocidad cíclica rápida con recámara de 9x19 mm.\nEquipada con un cargador extendido de 33 balas fabricado para una conocida pistola austriaca." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_50.printname"] = "Tambor de 50 Rondas 9x19mm"
-L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19mm"
+L["uplp_ar15_mag_glock_50.printname"] = "Tambor de 50 Rondas 9×19mm"
+L["uplp_ar15_mag_glock_50.compactname"] = "50R 9×19mm"
 L["uplp_ar15_mag_glock_50.description"] = "Convierte el fusil en el AR-SMG, un subfusil de velocidad cíclica rápida con recámara de 9x19 mm.\nEquipada con un cargador de tambor de 50 balas fabricado para una conocida pistola austriaca." .. changeammo.pistol
 
-/// 5.56x45mm
-L["uplp_ar15_mag_drum.printname"] = "Tambor Dual de 90 Rondas 5.56x45mm"
+/// 5.56×45mm
+L["uplp_ar15_mag_drum.printname"] = "Tambor Dual de 90 Rondas 5.56×45mm  "
 L["uplp_ar15_mag_drum.compactname"] = "90R Tambor"
 L["uplp_ar15_mag_drum.description"] = "Cargador de tambor en forma de C de 90 balas."
 
-L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56x45mm (416)"
+L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm   (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
 L["uplp_ar15_mag_hk.description"] = "Cargador de 30 balas de un AR-15 modificado de origen alemán."
 
-L["uplp_ar15_mag_pmag10.printname"] = "10 Rondas 5.56x45mm (Polímero)"
+L["uplp_ar15_mag_pmag10.printname"] = "10 Rondas 5.56×45mm   (Polímero)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Polí"
 L["uplp_ar15_mag_pmag10.description"] = "Cargador de 10 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag20.printname"] = "20 Rondas 5.56x45mm (Polímero)"
+L["uplp_ar15_mag_pmag20.printname"] = "20 Rondas 5.56×45mm   (Polímero)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20R Polí"
 L["uplp_ar15_mag_pmag20.description"] = "Cargador de 20 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag30.printname"] = "30 Rondas 5.56x45mm (Polímero)"
+L["uplp_ar15_mag_pmag30.printname"] = "30 Rondas 5.56×45mm   (Polímero)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_ar15_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 52 Rondas 5.56x45mm"
+L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 52 Rondas 5.56×45mm  "
 L["uplp_ar15_mag_pmag60.compactname"] = "52R Tambor"
 L["uplp_ar15_mag_pmag60.description"] = "Cargador de tambor de 52 cartuchos fabricado en polímero por SynPoly.\nNo se recomienda cargar más de 52 balas, ya que podrían producirse atascos."
 
-L["uplp_ar15_mag_stanag20.printname"] = "20 Rondas 5.56x45mm (Aluminio)"
+L["uplp_ar15_mag_stanag20.printname"] = "20 Rondas 5.56×45mm   (Aluminio)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
 L["uplp_ar15_mag_stanag20.description"] = "Cargador de 20 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag30.printname"] = "30 Rondas 5.56x45mm (Aluminio)"
+L["uplp_ar15_mag_stanag30.printname"] = "30 Rondas 5.56×45mm   (Aluminio)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_ar15_mag_stanag30.description"] = "Cargador de 30 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag40.printname"] = "40 Rondas 5.56x45mm (Aluminio)"
+L["uplp_ar15_mag_stanag40.printname"] = "40 Rondas 5.56×45mm   (Aluminio)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "Cargador de 40 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52 Rondas 5.56x45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.printname"] = "52 Rondas 5.56×45mm   Quadstacked"
 L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
 L["uplp_ar15_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para albergar más munición.\nNo se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos."
 
@@ -1348,11 +1348,11 @@ L["uplp_ar15_reciever_modern_black.description"] = "Receptor táctico y ligero f
 
 L["uplp_ar15_reciever_modern_smg.printname"] = "Receptor Táctico Hoki Armory"
 L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9x19mm."
+L["uplp_ar15_reciever_modern_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9×19mm."
 
 L["uplp_ar15_reciever_modern_black_smg.printname"] = "Receptor Táctico Hoki Armory (Negro Intenso)"
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (NI)"
-L["uplp_ar15_reciever_modern_black_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9x19mm." .. pitchblack
+L["uplp_ar15_reciever_modern_black_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9×19mm." .. pitchblack
 
 L["uplp_ar15_reciever_m16a3.printname"] = "Receptor A3 con Asa de Transporte"
 L["uplp_ar15_reciever_m16a3.compactname"] = "A3 AT"
@@ -1795,7 +1795,7 @@ L["uplp_awp_stock_tube.description"] = "Culata estándar con un tubo amortiguado
 
 //////////////////// FN57
 L["uplp_weapon_fn57"] = "MRD57"
-L["uplp_weapon_fn57_desc"] = "La MRD57 es una pistola semiautomática conocida por su exclusiva recámara de cartucho de 5.7x28 mm, diseñada originalmente para su uso en armas de fuego selectivo. Dispone de un cargador de gran capacidad, tiene un bajo retroceso y es muy apreciada por su capacidad de perforación de blindajes, lo que la hace popular entre las unidades militares y policiales de todo el mundo. La MRD57, en particular, es una versión mejorada de la anterior pistola P57, lanzada recientemente."
+L["uplp_weapon_fn57_desc"] = "La MRD57 es una pistola semiautomática conocida por su exclusiva recámara de cartucho de 5.7×28 mm, diseñada originalmente para su uso en armas de fuego selectivo. Dispone de un cargador de gran capacidad, tiene un bajo retroceso y es muy apreciada por su capacidad de perforación de blindajes, lo que la hace popular entre las unidades militares y policiales de todo el mundo. La MRD57, en particular, es una versión mejorada de la anterior pistola P57, lanzada recientemente."
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
@@ -1930,51 +1930,51 @@ L["uplp_scar_stock_pdw.compactname"] = "PDW"
 L["uplp_scar_stock_pdw.description"] = "Sustituye la culata por una PDW plegable."
 
 ////// Mags
-L["uplp_scar_mag_h.printname"] = "20 Rondas 7.62x51mm"
+L["uplp_scar_mag_h.printname"] = "20 Rondas 7.62×51mm"
 L["uplp_scar_mag_h.compactname"] = "20R 7.62"
-L["uplp_scar_mag_h.description"] = "Cargador de 20 balas de 7.62x51mm para el XAR."
+L["uplp_scar_mag_h.description"] = "Cargador de 20 balas de 7.62×51mm para el XAR."
 
-L["uplp_scar_mag_hb.printname"] = "20 Rondas 7.62x51mm Negro"
+L["uplp_scar_mag_hb.printname"] = "20 Rondas 7.62×51mm Negro"
 L["uplp_scar_mag_hb.compactname"] = "20R 7.62 (N)"
-L["uplp_scar_mag_hb.description"] = "Cargador de 20 balas de 7.62x51mm en negro para el XAR."
+L["uplp_scar_mag_hb.description"] = "Cargador de 20 balas de 7.62×51mm en negro para el XAR."
 
-L["uplp_scar_mag_20.printname"] = "10 Rondas 7.62x51mm"
+L["uplp_scar_mag_20.printname"] = "10 Rondas 7.62×51mm"
 L["uplp_scar_mag_20.compactname"] = "10R 7.62"
-L["uplp_scar_mag_20.description"] = "Cargador de 10 balas de 7.62x51mm para el XAR."
+L["uplp_scar_mag_20.description"] = "Cargador de 10 balas de 7.62×51mm para el XAR."
 
 L["uplp_scar_mag_20_68.printname"] = "10 Rondas 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
 L["uplp_scar_mag_20_68.description"] = "Cargador de 10 balas con recámara de 6.8 mm para el XAR.\nExtremadamente bueno para peleas a larga distancia.\nRestringe el arma a <color=255,100,100>sólo semi-automático</color>."
 
-L["uplp_scar_mag_drum.printname"] = "Tambor doble 5.56x45mm de 90 Rondas"
+L["uplp_scar_mag_drum.printname"] = "Tambor doble 5.56×45mm   de 90 Rondas"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
 L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 52 balas, ya que podrían producirse atascos.\nCNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
 
-L["uplp_scar_mag_hk.printname"] = "30 Rondas 5.56x45mm (416)"
+L["uplp_scar_mag_hk.printname"] = "30 Rondas 5.56×45mm   (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
 L["uplp_scar_mag_hk.description"] = "Cargador de 30 balas de un AR-15 modificado de origen alemán." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag20.printname"] = "20 Rondas 5.56x45mm (Polímero)"
+L["uplp_scar_mag_pmag20.printname"] = "20 Rondas 5.56×45mm   (Polímero)"
 L["uplp_scar_mag_pmag20.compactname"] = "20R Polí"
 L["uplp_scar_mag_pmag20.description"] = "Cargador de 20 cartuchos fabricado en polímero por SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polímero)"
+L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm   (Polímero)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56x45mm de 52 Rondas"
+L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm   de 52 Rondas"
 L["uplp_scar_mag_pmag60.compactname"] = "52R Tambor"
 L["uplp_scar_mag_pmag60.description"] = "Cargador de tambor de 52 balas fabricado en polímero por SynPoly. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30.printname"] = "30 Rondas 5.56x45mm (Aluminio)"
+L["uplp_scar_mag_stanag30.printname"] = "30 Rondas 5.56×45mm   (Aluminio)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_scar_mag_stanag30.description"] = "Cargador de 30 cartuchos fabricado en aluminio." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30_tan.printname"] = "30 Rondas 5.56x45mm (Bronceado)"
+L["uplp_scar_mag_stanag30_tan.printname"] = "30 Rondas 5.56×45mm   (Bronceado)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Bronceado"
 L["uplp_scar_mag_stanag30_tan.description"] = "Cargador de 30 balas de aluminio pintado de color tostado." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52 Rondas 5.56x45mm Quadstacked"
+L["uplp_scar_mag_stanag60.printname"] = "52 Rondas 5.56×45mm   Quadstacked"
 L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
 L["uplp_scar_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para contener más munición. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
 
@@ -2109,7 +2109,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 -- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
-L["uplp_weapon_orsis_desc"] = "El \"Gryphon X108\" es el rifle de precisión más reciente y potente de Rusia en los tiempos modernos. El X108 tiene recámara para el potente cartucho de 12.7x108 mm, lo que lo hace muy eficaz contra vehículos blindados ligeros y medios y, especialmente, contra objetivos blandos." -- Double check.
+L["uplp_weapon_orsis_desc"] = "El \"Gryphon X108\" es el rifle de precisión más reciente y potente de Rusia en los tiempos modernos. El X108 tiene recámara para el potente cartucho de 12.7×108 mm, lo que lo hace muy eficaz contra vehículos blindados ligeros y medios y, especialmente, contra objetivos blandos." -- Double check.
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
@@ -2159,7 +2159,7 @@ L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
 //////////////////// AS VAL
  -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)
 L["uplp_weapon_asval"] = "SK-ON"
-L["uplp_weapon_asval_desc"] = "El SK-ON, un arma de fuego rusa con supresión integral, es un arma personalizable que puede convertirse en varias armas de fuego alimentadas con 9x39mm, incluyendo el francotirador semiautomático SSV, el rifle automático especial oculto VCNM-3, el rifle rediseñado PNE-40 de coste reducido y el rifle de francotirador TVND-90."
+L["uplp_weapon_asval_desc"] = "El SK-ON, un arma de fuego rusa con supresión integral, es un arma personalizable que puede convertirse en varias armas de fuego alimentadas con 9×39mm, incluyendo el francotirador semiautomático SSV, el rifle automático especial oculto VCNM-3, el rifle rediseñado PNE-40 de coste reducido y el rifle de francotirador TVND-90."
 
  -- "Stealth Sniper Rifle", "Стелс-снайперская винтовка" (ССВ)
 L["uplp_weapon_asval_vss"] = "SSV"
@@ -2179,7 +2179,7 @@ L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 //////////////////// ASh-12
 L["uplp_weapon_ash12"] = "RZ 12.7"
-L["uplp_weapon_ash12_desc"] = "El RZ 12.7 ruso es un potente fusil de asalto bullpup con recámara del grueso calibre 12.7x55 mm, diseñado para el combate cuerpo a cuerpo y la lucha antimaterial, con un sistema distinto de mitigación del retroceso y una combinación única de potencia de parada y precisión. Su diseño incorpora características para mejorar el control y la estabilidad a pesar de su importante calibre, lo que la hace adecuada para aplicaciones militares especializadas."
+L["uplp_weapon_ash12_desc"] = "El RZ 12.7 ruso es un potente fusil de asalto bullpup con recámara del grueso calibre 12.7×55 mm, diseñado para el combate cuerpo a cuerpo y la lucha antimaterial, con un sistema distinto de mitigación del retroceso y una combinación única de potencia de parada y precisión. Su diseño incorpora características para mejorar el control y la estabilidad a pesar de su importante calibre, lo que la hace adecuada para aplicaciones militares especializadas."
 
 L["uplp_weapon_ash12_real"] = "ASh-12"
 
@@ -2221,28 +2221,28 @@ L["uplp_aug_brl_mg.description"] = "Cañón largo y pesado de 900mm (89cm) desti
 
 L["uplp_aug_brl_smg.printname"] = "Cañón Para de 508mm"
 L["uplp_aug_brl_smg.compactname"] = "508mm"
-L["uplp_aug_brl_smg.description"] = "Cañón acortado de 508mm (50cm) utilizado en la AW-MP de 9x19mm, la variante de subfusil de la AW-UG."
+L["uplp_aug_brl_smg.description"] = "Cañón acortado de 508mm (50cm) utilizado en la AW-MP de 9×19mm, la variante de subfusil de la AW-UG."
 
 ////// Magazines
 L["uplp_aug_mag_556_30p.printname"] = "30 Rondas 5.45x45mm (Polímero)"
 L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
 L["uplp_aug_mag_556_30p.description"] = "Cargador de 30 balas de polímero para la AW-UG."
 
-L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56x45mm"
+L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56×45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "Cargador extendido de 40 balas para la AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56x45mm de 52 Rondas"
+L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm   de 52 Rondas"
 L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
 L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la AW-UG."
 
-L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9x19mm"
-L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9x19mm.\nEquipado con un <color=175,175,255>Cargador de 25 rondas</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9×19mm"
+L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"
+L["uplp_aug_mag_919_25.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9×19mm.\nEquipado con un <color=175,175,255>Cargador de 25 rondas</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_919_40.printname"] = "40 Rondas 9x19mm"
-L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9x19mm.\nEquipado con un <color=175,175,255>Cargador extendido de 40 rondas</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_40.printname"] = "40 Rondas 9×19mm"
+L["uplp_aug_mag_919_40.compactname"] = "40R 9×19mm"
+L["uplp_aug_mag_919_40.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9×19mm.\nEquipado con un <color=175,175,255>Cargador extendido de 40 rondas</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"

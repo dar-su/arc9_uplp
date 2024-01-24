@@ -45,18 +45,18 @@ L["uplp_country_usa"] = "United States"
 /////////// Caliber
 L["uplp_caliber"] = "Caliber3"
 
-L["uplp_caliber_7.62x39mm"] = "7.62x39mm Soviet"
-L["uplp_caliber_7.62x51mm"] = "7.62x51mm"
-L["uplp_caliber_5.56x45mm"] = "5.56x45mm"
-L["uplp_caliber_5.45x39mm"] = "5.45x39mm"
+L["uplp_caliber_7.62x39mm"] = "7.62×39mm Soviet"
+L["uplp_caliber_7.62x51mm"] = "7.62×51mm"
+L["uplp_caliber_5.56x45mm"] = "5.56×45mm"
+L["uplp_caliber_5.45x39mm"] = "5.45×39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
 L["uplp_caliber_50ae"] = ".50 AE"
-L["uplp_caliber_5.7x28mm"] = "FN 5.7x28mm"
-L["uplp_caliber_4.6x30mm"] = "HK 4.6x30mm"
-L["uplp_caliber_9x19mm"] = "9x19mm Parabellum"
+L["uplp_caliber_5.7x28mm"] = "FN 5.7×28mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4.6×30mm"
+L["uplp_caliber_9x19mm	"] = "9×19mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
-L["uplp_caliber_127x108mm"] = "12.7x108mm Soviet"
+L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -600,7 +600,7 @@ L["uplp_sticker_pawgray.description"] = "ooo shiny\n\nSticker included in <color
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
-L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed in 1947, is renowned for its rugged reliability and simplicity. It typically fires the 7.62x39mm cartridge and has been widely used by military forces and insurgents worldwide due to its durability and select-fire capability."
+L["uplp_weapon_ak_desc"] = "The AK assault rifle, designed in 1947, is renowned for its rugged reliability and simplicity. It typically fires the 7.62×39mm cartridge and has been widely used by military forces and insurgents worldwide due to its durability and select-fire capability."
 
 L["uplp_weapon_ak12"] = "AK M23"
 L["uplp_weapon_ak12_desc"] = "The AK M23 is a modern assault rifle designed in Russia as a successor to the iconic AK 5.45. It features improved ergonomics, modular design, and enhanced performance, making it a versatile and reliable firearm used by various military and law enforcement agencies."
@@ -611,7 +611,7 @@ L["uplp_weapon_ak_smg_desc"] = "Various compact submachine guns based on the AK 
 L["uplp_weapon_ak_762"] = "%s 7.62"
 L["uplp_weapon_ak_545"] = "%s 5.45"
 L["uplp_weapon_ak_556"] = "%s 5.56"
-L["uplp_weapon_ak_9x39"] = "%s 9x39"
+L["uplp_weapon_ak_9x39"] = "%s 9×39"
 L["uplp_weapon_ak_rpk"] = "HPK"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
@@ -666,7 +666,7 @@ L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the protot
 
 L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Barrel"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
-L["uplp_ak_brl_19.description"] = "Slightly longer 483mm (19\") barrel used on the AK M23 5.56, a 5.56x45mm export version of the AK M23."
+L["uplp_ak_brl_19.description"] = "Slightly longer 483mm (19\") barrel used on the AK M23 5.56, a 5.56×45mm export version of the AK M23."
 
 L["uplp_ak_brl_rpk16.printname"] = "585mm HPK M16 Barrel"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"
@@ -833,96 +833,96 @@ L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan Tactical.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
 
 ////// Magazines
-/// 7.62x39mm
+/// 7.62×39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Loaded with " .. col.b .. "7.62x39mm Soviet" .. col.e .. " used by the AK 7.62, AK M10 and AK M16 5.56."
+local loaded762 = loaded .. "Loaded with " .. col.b .. "7.62×39mm Soviet" .. col.e .. " used by the AK 7.62, AK M10 and AK M16 5.56."
 
-L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62x39mm (Bakelite)"
+L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
 
-L["uplp_ak_mag_762_30_12.printname"] = "30-Round 7.62x39mm (M23 Style)"
+L["uplp_ak_mag_762_30_12.printname"] = "30-Round 7.62×39mm (M23 Style)"
 L["uplp_ak_mag_762_30_12.compactname"] = "30R 7.62 (M23)"
 L["uplp_ak_mag_762_30_12.description"] = "30-round magazine used on AK M16 5.56 rifle." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
+L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
 L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
 L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
+L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
 L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
 L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
 
-L["uplp_ak_mag_762_30_oldest.printname"] = "30-Round 7.62x39mm (Smooth Steel)"
+L["uplp_ak_mag_762_30_oldest.printname"] = "30-Round 7.62×39mm (Smooth Steel)"
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (SS)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-round magazine made with smoothened out steel. Really old piece that surprisingly still works! Maybe you should hand it in to a museum?" .. loaded762
 
-L["uplp_ak_mag_762_40.printname"] = "40-Round 7.62x39mm (Bakelite)"
+L["uplp_ak_mag_762_40.printname"] = "40-Round 7.62×39mm (Bakelite)"
 L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (B)"
 L["uplp_ak_mag_762_40.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
 
-L["uplp_ak_mag_762_40_old.printname"] = "40-Round 7.62x39mm (Steel)"
+L["uplp_ak_mag_762_40_old.printname"] = "40-Round 7.62×39mm (Steel)"
 L["uplp_ak_mag_762_40_old.compactname"] = "40R 7.62 (S)"
 L["uplp_ak_mag_762_40_old.description"] = "40-round magazine made with good, old-fashioned steel." .. loaded762
 
-L["uplp_ak_mag_762_drum.printname"] = "75-Round 7.62x39mm Drum"
+L["uplp_ak_mag_762_drum.printname"] = "75-Round 7.62×39mm Drum"
 L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
 L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
 
-/// 5.45x39mm
-local loaded545 = loaded .. "Loaded with " .. col.b .. "5.45x39mm" .. col.e .. " used by the AK 5.45 and derivatives." .. changeammo.smg1
+/// 5.45×39mm
+local loaded545 = loaded .. "Loaded with " .. col.b .. "5.45×39mm" .. col.e .. " used by the AK 5.45 and derivatives." .. changeammo.smg1
 
-L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45x39mm (Polymer)"
+L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45×39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
 L["uplp_ak_mag_545_30.description"] = "30-round magazine made out of polymer." .. loaded545
 
-L["uplp_ak_mag_545_30_bak.printname"] = "30-Round 5.45x39mm (Bakelite)"
+L["uplp_ak_mag_545_30_bak.printname"] = "30-Round 5.45×39mm (Bakelite)"
 L["uplp_ak_mag_545_30_bak.compactname"] = "30R 5.45 (B)"
 L["uplp_ak_mag_545_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45x39mm (SynPoly)"
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45×39mm (SynPoly)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30R 5.45 (SP)"
 L["uplp_ak_mag_545_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded545
 
-L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45x39mm (M23 Style)"
+L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45×39mm (M23 Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-round magazine used on AK M23 rifle." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-Round 5.45x39mm (Bakelite)"
+L["uplp_ak_mag_545_45.printname"] = "40-Round 5.45×39mm (Bakelite)"
 L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (B)"
 L["uplp_ak_mag_545_45.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45x39mm Quadstacked"
+L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45×39mm Quadstacked"
 L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
 L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\nThicc boi. Please don't load more than 52 rounds!"
 
-L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45x39mm HPK M16 Drum"
+L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45×39mm HPK M16 Drum"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"
 L["uplp_ak_mag_545_drum.description"] = "85-round cylindrical drum magazine from the HPK M16." .. loaded545
 
-/// 5.56x45mm NATO
-local loaded556 = loaded .. "Loaded with " .. col.b .. "5.56x45mm" .. col.e .. " used by the AK M10 5.56." .. changeammo.smg1
+/// 5.56×45mm NATO
+local loaded556 = loaded .. "Loaded with " .. col.b .. "5.56×45mm" .. col.e .. " used by the AK M10 5.56." .. changeammo.smg1
 
-L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
 L["uplp_ak_mag_556_30.description"] = "30-round magazine made out of polymer." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56x45mm (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56×45mm (SynPoly)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (SP)"
 L["uplp_ak_mag_556_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56x45mm (M23 Style)"
+L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56×45mm (M23 Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (M23)"
 L["uplp_ak_mag_556_30_12.description"] = "30-round magazine used on AK M23 5.56 rifle." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Round 7.62x51mm"
-L["uplp_ak_mag_308_20.compactname"] = "20R 7.62x51"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62x51mm rounds" .. col.e .. " used on AK M308 rifle." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.printname"] = "20-Round 7.62×51mm"
+L["uplp_ak_mag_308_20.compactname"] = "20R 7.62×51"
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62×51mm rounds" .. col.e .. " used on AK M308 rifle." ..  changeammo["357"]
 
-L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
-L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9x39mm rounds" .. col.e .. " used by the AK 9mm.\nOnly a few hundred of the AK 9mm were ever made!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.printname"] = "20-Round 9×39mm"
+L["uplp_ak_mag_939_30.compactname"] = "20R 9×39mm"
+L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9×39mm rounds" .. col.e .. " used by the AK 9mm.\nOnly a few hundred of the AK 9mm were ever made!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "M10 Muzzle Brake"
@@ -955,7 +955,7 @@ L["uplp_ak_mz_12.description"] = "Standard muzzle brake used on the AK M23."
 
 L["uplp_ak_mz_19.printname"] = "AK M23 5.56 Muzzle Brake"
 L["uplp_ak_mz_19.compactname"] = "M23 5.56 MB"
-L["uplp_ak_mz_19.description"] = "Standard muzzle brake used on the AK M23 5.56, a 5.56x45mm export version of the AK M23."
+L["uplp_ak_mz_19.description"] = "Standard muzzle brake used on the AK M23 5.56, a 5.56×45mm export version of the AK M23."
 
 L["uplp_ak_mz_rpk16.printname"] = "HPK M16 Muzzle Brake"
 L["uplp_ak_mz_rpk16.compactname"] = "HPK M16 MB"
@@ -1244,61 +1244,61 @@ L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 Auto"
 L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
 L["uplp_ar15_mag_45_40.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 Auto.\nEquipped with a modified 40-round extended magazine originally made for a well-known Israeli submachine gun." .. changeammo.pistol
 
-/// 9x19mm
+/// 9×19mm
 L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Flared Magwell"
 L["uplp_ar15_stm9_magwell.compactname"] = "Magwell"
 L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier reloads."
 
-L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9x19mm"
+L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9×19mm"
 L["uplp_ar15_mag_glock_17.compactname"] = "17R 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with a 17-round magazine from a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_17.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9×19mm.\nEquipped with a 17-round magazine from a well-known Austrian handgun." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9x19mm"
-L["uplp_ar15_mag_glock_33.compactname"] = "33R 9x19mm"
-L["uplp_ar15_mag_glock_33.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with a 33-round extended magazine made for a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9×19mm"
+L["uplp_ar15_mag_glock_33.compactname"] = "33R 9×19mm"
+L["uplp_ar15_mag_glock_33.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9×19mm.\nEquipped with a 33-round extended magazine made for a well-known Austrian handgun." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9x19mm Drum"
-L["uplp_ar15_mag_glock_50.compactname"] = "50R 9x19mm"
-L["uplp_ar15_mag_glock_50.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9x19mm.\nEquipped with an aftermarket 50-round drum magazine made for a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9×19mm Drum"
+L["uplp_ar15_mag_glock_50.compactname"] = "50R 9×19mm"
+L["uplp_ar15_mag_glock_50.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9×19mm.\nEquipped with an aftermarket 50-round drum magazine made for a well-known Austrian handgun." .. changeammo.pistol
 
-/// 5.56x45mm
-L["uplp_ar15_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
+/// 5.56×45mm
+L["uplp_ar15_mag_drum.printname"] = "90-Round 5.56×45mm Dual Drum"
 L["uplp_ar15_mag_drum.compactname"] = "90R Drum"
 L["uplp_ar15_mag_drum.description"] = "90-Round C-shaped drum magazine.\nLoading more than 90 rounds is not recommeneded as it could cause jams."
 
-L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
+L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56×45mm (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
 L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin."
 
-L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56x45mm (Polymer)"
+L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56×45mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Poly"
 L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer by SynPoly."
 
-L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
+L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56×45mm (Polymer)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20R Poly"
 L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer by SynPoly."
 
-L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56x45mm Polymer Drum"
+L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
 L["uplp_ar15_mag_pmag60.compactname"] = "52R Drum"
 L["uplp_ar15_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
 
-L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56×45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
 L["uplp_ar15_mag_stanag20.description"] = "20-round magazine made out of aluminium."
 
-L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56×45mm (Aluminium)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_ar15_mag_stanag30.description"] = "30-round magazine made out of aluminium."
 
-L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56x45mm (Aluminium)"
+L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56×45mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-Round 5.56x45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.printname"] = "52-Round 5.56×45mm Quadstacked"
 L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
 L["uplp_ar15_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
 
@@ -1354,11 +1354,11 @@ L["uplp_ar15_reciever_modern_black.description"] = "Tactical, lightweight receiv
 
 L["uplp_ar15_reciever_modern_smg.printname"] = "Hoki Armory Tactical Receiver"
 L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9x19mm magazines."
+L["uplp_ar15_reciever_modern_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9×19mm magazines."
 
 L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
-L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9x19mm magazines." .. pitchblack
+L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9×19mm magazines." .. pitchblack
 
 L["uplp_ar15_reciever_m16a3.printname"] = "A3 Receiver with Carry Handle"
 L["uplp_ar15_reciever_m16a3.compactname"] = "A3 CH"
@@ -1539,7 +1539,7 @@ L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with one
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
-L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62x39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
+L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62×39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
 
 L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
@@ -1576,31 +1576,31 @@ L["uplp_mutant_hg_short.compactname"] = "Hoki"
 L["uplp_mutant_hg_short.description"] = "Tactical handguard made for the Mutant by Hoki Armory."
 
 ////// Magazines
-L["uplp_mutant_mag_30_bak.printname"] = "30-Round 7.62x39mm (Bakelite)"
+L["uplp_mutant_mag_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
 L["uplp_mutant_mag_30_bak.compactname"] = "30R 7.62 (B)"
 L["uplp_mutant_mag_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite."
 
-L["uplp_mutant_mag_30_12.printname"] = "30-Round 7.62x39mm (AK-12-Style)"
+L["uplp_mutant_mag_30_12.printname"] = "30-Round 7.62×39mm (AK-12-Style)"
 L["uplp_mutant_mag_30_12.compactname"] = "30R 7.62 (M23)"
 L["uplp_mutant_mag_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine."
 
-L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
+L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
 L["uplp_mutant_mag_30_old.compactname"] = "30R 7.62 (S)"
 L["uplp_mutant_mag_30_old.description"] = "30-round magazine made with good, old-fashioned steel."
 
-L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62x39mm (Steel)"
+L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
 L["uplp_mutant_mag_30_old.compactname"] = "30R 7.62 (S)"
 L["uplp_mutant_mag_30_old.description"] = "30-round magazine made with good, old-fashioned steel."
 
-L["uplp_mutant_mag_30_oldest.printname"] = "30-Round 7.62x39mm (Smooth Steel)"
+L["uplp_mutant_mag_30_oldest.printname"] = "30-Round 7.62×39mm (Smooth Steel)"
 L["uplp_mutant_mag_30_oldest.compactname"] = "30R 7.62 (SS)"
 L["uplp_mutant_mag_30_oldest.description"] = "30-round magazine made with smoothened out steel."
 
-L["uplp_mutant_mag_40.printname"] = "40-Round 7.62x39mm (Bakelite)"
+L["uplp_mutant_mag_40.printname"] = "40-Round 7.62×39mm (Bakelite)"
 L["uplp_mutant_mag_40.compactname"] = "40R 7.62 (B)"
 L["uplp_mutant_mag_40.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite."
 
-L["uplp_mutant_mag_40_old.printname"] = "40-Round 7.62x39mm (Steel)"
+L["uplp_mutant_mag_40_old.printname"] = "40-Round 7.62×39mm (Steel)"
 L["uplp_mutant_mag_40_old.compactname"] = "40R 7.62 (S)"
 L["uplp_mutant_mag_40_old.description"] = "40-round magazine made with good, old-fashioned steel."
 
@@ -1801,7 +1801,7 @@ L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer t
 
 //////////////////// FN57
 L["uplp_weapon_fn57"] = "MRD57"
-L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for its unique chambering in the 5.7x28mm cartridge, originally designed for use in select fire weapons. It features a high-capacity magazine, low recoil, and is prized for its armor-piercing capabilities, making it popular among military and law enforcement units worldwide. The MRD57 in particular is a recently released, improved version of the previous P57 handgun."
+L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for its unique chambering in the 5.7×28mm cartridge, originally designed for use in select fire weapons. It features a high-capacity magazine, low recoil, and is prized for its armor-piercing capabilities, making it popular among military and law enforcement units worldwide. The MRD57 in particular is a recently released, improved version of the previous P57 handgun."
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
@@ -1936,51 +1936,51 @@ L["uplp_scar_stock_pdw.compactname"] = "PDW"
 L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock."
 
 ////// Mags
-L["uplp_scar_mag_h.printname"] = "20-Round 7.62x51mm"
+L["uplp_scar_mag_h.printname"] = "20-Round 7.62×51mm"
 L["uplp_scar_mag_h.compactname"] = "20R 7.62"
-L["uplp_scar_mag_h.description"] = "20-round 7.62x51mm magazine for the XAR."
+L["uplp_scar_mag_h.description"] = "20-round 7.62×51mm magazine for the XAR."
 
-L["uplp_scar_mag_hb.printname"] = "20-Round 7.62x51mm Black"
+L["uplp_scar_mag_hb.printname"] = "20-Round 7.62×51mm Black"
 L["uplp_scar_mag_hb.compactname"] = "20R 7.62 (B)"
-L["uplp_scar_mag_hb.description"] = "20-round 7.62x51mm magazine in black for the XAR."
+L["uplp_scar_mag_hb.description"] = "20-round 7.62×51mm magazine in black for the XAR."
 
-L["uplp_scar_mag_20.printname"] = "10-Round 7.62x51mm"
+L["uplp_scar_mag_20.printname"] = "10-Round 7.62×51mm"
 L["uplp_scar_mag_20.compactname"] = "10R 7.62"
-L["uplp_scar_mag_20.description"] = "10-round 7.62x51mm magazine for the XAR."
+L["uplp_scar_mag_20.description"] = "10-round 7.62×51mm magazine for the XAR."
 
 L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
 L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR.\nExtremely good for long range fights.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
 
-L["uplp_scar_mag_drum.printname"] = "90-Round 5.56x45mm Dual Drum"
+L["uplp_scar_mag_drum.printname"] = "90-Round 5.56×45mm Dual Drum"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
 L["uplp_scar_mag_drum.description"] = "90-Round C-shaped drum magazine. Loading more than 90 rounds is not recommeneded as it could cause jams.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
 
-L["uplp_scar_mag_hk.printname"] = "30-Round 5.56x45mm (416)"
+L["uplp_scar_mag_hk.printname"] = "30-Round 5.56×45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
 L["uplp_scar_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag20.printname"] = "20-Round 5.56x45mm (Polymer)"
+L["uplp_scar_mag_pmag20.printname"] = "20-Round 5.56×45mm (Polymer)"
 L["uplp_scar_mag_pmag20.compactname"] = "20R Poly"
 L["uplp_scar_mag_pmag20.description"] = "20-round magazine made out of polymer by SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "52-Round 5.56x45mm Polymer Drum"
+L["uplp_scar_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
 L["uplp_scar_mag_pmag60.compactname"] = "52R Drum"
 L["uplp_scar_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56x45mm (Aluminium)"
+L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56×45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_scar_mag_stanag30.description"] = "30-round magazine made out of aluminium." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30_tan.printname"] = "30-Round 5.56x45mm (Tan)"
+L["uplp_scar_mag_stanag30_tan.printname"] = "30-Round 5.56×45mm (Tan)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Tan"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-round magazine made out of aluminium painted tan." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52-Round 5.56x45mm Quadstacked"
+L["uplp_scar_mag_stanag60.printname"] = "52-Round 5.56×45mm Quadstacked"
 L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
 L["uplp_scar_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
 
@@ -2115,7 +2115,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 -- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
-L["uplp_weapon_orsis_desc"] = "The Gryphon X108 is the latest and most powerful precision rifle out of Russia in modern times. X108 is chambered for the powerful 12.7x108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
+L["uplp_weapon_orsis_desc"] = "The Gryphon X108 is the latest and most powerful precision rifle out of Russia in modern times. X108 is chambered for the powerful 12.7×108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
@@ -2165,7 +2165,7 @@ L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maxi
 //////////////////// AS VAL
  -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)
 L["uplp_weapon_asval"] = "SK-ON"
-L["uplp_weapon_asval_desc"] = "An integrally suppressed Russian firearm, the SK-ON is a customizable weapon that can be converted into various 9x39mm-fed firearms, including the SSV semi-automatic sniper, VCNM-3 special concealed automatic rifle, the cost-reduced redesigned PNE-40 rifle and VSK-94 sniper rifle."
+L["uplp_weapon_asval_desc"] = "An integrally suppressed Russian firearm, the SK-ON is a customizable weapon that can be converted into various 9×39mm-fed firearms, including the SSV semi-automatic sniper, VCNM-3 special concealed automatic rifle, the cost-reduced redesigned PNE-40 rifle and VSK-94 sniper rifle."
 
  -- "Stealth Sniper Rifle", "Стелс-снайперская винтовка" (ССВ)
 L["uplp_weapon_asval_vss"] = "SSV"
@@ -2185,7 +2185,7 @@ L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 //////////////////// ASh-12
 L["uplp_weapon_ash12"] = "RZ 12.7"
-L["uplp_weapon_ash12_desc"] = "The Russian RZ 12.7 is a powerful bullpup assault rifle chambered for the hefty 12.7x55mm caliber, designed for close-quarters combat and anti-material purposes, with a distinct recoil-mitigating system and a unique combination of stopping power and accuracy. Its design incorporates features for enhanced control and stability despite its substantial caliber, making it suitable for specialized military applications."
+L["uplp_weapon_ash12_desc"] = "The Russian RZ 12.7 is a powerful bullpup assault rifle chambered for the hefty 12.7×55mm caliber, designed for close-quarters combat and anti-material purposes, with a distinct recoil-mitigating system and a unique combination of stopping power and accuracy. Its design incorporates features for enhanced control and stability despite its substantial caliber, making it suitable for specialized military applications."
 
 L["uplp_weapon_ash12_real"] = "ASh-12"
 
@@ -2227,28 +2227,28 @@ L["uplp_aug_brl_mg.description"] = "Long and heavy 900mm (35.4\") barrel intende
 
 L["uplp_aug_brl_smg.printname"] = "508mm Para Barrel"
 L["uplp_aug_brl_smg.compactname"] = "508mm"
-L["uplp_aug_brl_smg.description"] = "Shortened 508mm (20\") barrel used on the 9x19mm AW-MP, the submachine gun variant of the AW-UG."
+L["uplp_aug_brl_smg.description"] = "Shortened 508mm (20\") barrel used on the 9×19mm AW-MP, the submachine gun variant of the AW-UG."
 
 ////// Magazines
-L["uplp_aug_mag_556_30p.printname"] = "30-Round 5.56x45mm (Polymer)"
+L["uplp_aug_mag_556_30p.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
 L["uplp_aug_mag_556_30p.description"] = "30-round magazine made out of polymer for the AW-UG."
 
-L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56x45mm"
+L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56×45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56x45mm Drum"
+L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56×45mm Drum"
 L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
 L["uplp_aug_mag_556_52.description"] = "52-round drum magazine for the AW-UG."
 
-L["uplp_aug_mag_919_25.printname"] = "25-Round 9x19mm"
-L["uplp_aug_mag_919_25.compactname"] = "25R 9x19mm"
-L["uplp_aug_mag_919_25.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>25-round magazine</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_25.printname"] = "25-Round 9×19mm"
+L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"
+L["uplp_aug_mag_919_25.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9×19mm.\nEquipped with a <color=175,175,255>25-round magazine</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_919_40.printname"] = "40-Round 9x19mm"
-L["uplp_aug_mag_919_40.compactname"] = "40R 9x19mm"
-L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9x19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_40.printname"] = "40-Round 9×19mm"
+L["uplp_aug_mag_919_40.compactname"] = "40R 9×19mm"
+L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9×19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_300_10.printname"] = "10-Round .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
@@ -2270,7 +2270,7 @@ L["uplp_aug_stock_black.description"] = "Changes the appearance of the AW-UG sto
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "The \"Разрушитель запястий 12.7\" (Razrushitel' zapyastiy 12.7, \"Wrist Destroyer 12.7\") is a very powerful Russian revolver firing the very large 12.7x55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"."
+L["uplp_weapon_rsh12_desc"] = "The \"Разрушитель запястий 12.7\" (Razrushitel' zapyastiy 12.7, \"Wrist Destroyer 12.7\") is a very powerful Russian revolver firing the very large 12.7×55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"."
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
