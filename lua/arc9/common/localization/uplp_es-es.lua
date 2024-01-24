@@ -2113,7 +2113,7 @@ L["uplp_weapon_orsis_desc"] = "El \"Gryphon X108\" es el rifle de precisión má
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
-L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
+L["uplp_weapon_orsis_manufacturer"] = "Oruzheynie Sistemy (ORSIS)"
 
 /////////// Attachments
 ////// Barrels

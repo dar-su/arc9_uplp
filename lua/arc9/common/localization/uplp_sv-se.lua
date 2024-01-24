@@ -2114,7 +2114,7 @@ L["uplp_weapon_orsis_desc"] = "Gryphon X108 är den senaste och mest kraftfulla 
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
-L["uplp_weapon_orsis_manufacturer"] = "ORSIS"
+L["uplp_weapon_orsis_manufacturer"] = "Oruzheynie Sistemy (ORSIS)"
 
 /////////// Attachments
 ////// Barrels
