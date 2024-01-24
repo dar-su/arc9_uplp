@@ -213,16 +213,16 @@ SWEP.IronSights = {
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local att = self:GetElements()
-    -- local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
+    local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
 
-    -- if lowsight then
-        -- return {
-            -- Pos = Vector(-2.37, -3, 0.15),
-            -- Ang = Angle(0.365, 0, -2.5),
-            -- Magnification = 1.15,
-            -- ViewModelFOV = 65,
-        -- }
-    -- end
+    if lowsight then
+        return {
+            Pos = Vector(-2.37, -3, 0.15),
+            Ang = Angle(0.365, 0, -2.5),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
+        }
+    end
 
 end
 
@@ -1145,6 +1145,19 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1, 0.5),
         Ang = Angle(90, 90, 180),
+    },
+
+    -- here to not make presets bad
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(-0.05, 4.05, 11),
+        Ang = Angle(90, 90, 0),
+        -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        MergeSlots = {12}, 
+        Hidden = true,
     },
 }
 

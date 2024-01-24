@@ -133,3 +133,20 @@ ATT.SprintToFireTimeAdd = -0.02
 ATT.SwayMultSights = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_black_smg")
+
+---------- uplp_ar15_reciever_m16a3
+
+ATT = {}
+
+ATT.PrintName = "A3 Receiver with Carry Handle"
+ATT.CompactName = "A3 CH"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short", "uplp_ar15_rs"}
+
+ATT.Category = "uplp_ar15_reciever"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m16a3")

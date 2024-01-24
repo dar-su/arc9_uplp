@@ -571,6 +571,11 @@ L["uplp_sg_shell_yellow.printname"] = "Explosive Slug Rounds"
 L["uplp_sg_shell_yellow.compactname"] = "Exp. Slug"
 L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. Blasts a small area with shrapnel." .. shotgun_lp
 
+/////////// Underbarrel Weapons
+L["uplp_ubgl_m203_rail.printname"] = "Model 40 Grenade Launcher"
+L["uplp_ubgl_m203_rail.compactname"] = "M40 GL"
+L["uplp_ubgl_m203_rail.description"] = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
+
 /////////// Cosmetics
 ////// Charms
 L["uplp_charm_paw.printname"] = "Poly Paw"
@@ -1340,7 +1345,7 @@ L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
 
 L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Tactical Receiver"
 L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory.\n\nPlease dm @d.arsu if you know author of this model or you know what irl lower+upper this meant to resemble. I don't know how i got this model in my project!"
+L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory."
 
 L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
 L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
@@ -1353,6 +1358,10 @@ L["uplp_ar15_reciever_modern_smg.description"] = "Tactical, lightweight receiver
 L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9x19mm magazines." .. pitchblack
+
+L["uplp_ar15_reciever_m16a3.printname"] = "A3 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A3 CH"
+L["uplp_ar15_reciever_m16a3.description"] = "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"

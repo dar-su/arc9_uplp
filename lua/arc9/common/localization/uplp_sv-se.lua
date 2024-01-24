@@ -565,6 +565,11 @@ L["uplp_sg_shell_yellow.printname"] = "Explosiva Granatskott"
 L["uplp_sg_shell_yellow.compactname"] = "Granat"
 L["uplp_sg_shell_yellow.description"] = "Hagelpatroner laddade med en mindre explosiv granat. Spränger ett mindre område med granatsplitter." .. shotgun_lp
 
+/////////// Underbarrel Weapons
+L["uplp_ubgl_m203_rail.printname"] = "Modell 40 Granattillsats"
+L["uplp_ubgl_m203_rail.compactname"] = "M40 GT"
+L["uplp_ubgl_m203_rail.description"] = "Undermonterad granattillsats som skjuter högexplosiva 40MM granater."
+
 /////////// Cosmetics
 ////// Charms
 L["uplp_charm_paw.printname"] = "Poly Paw"
@@ -1326,7 +1331,7 @@ L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär g
 ////// Receiver
 L["uplp_ar15_reciever_m16.printname"] = "A2-Låda med Bärhandtag"
 L["uplp_ar15_reciever_m16.compactname"] = "A2 BH"
-L["uplp_ar15_reciever_m16.description"] = "Militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till \n<color=100,255,100>3-skott salvo</color>/<color=100,255,100>halvautomat</color>."
+L["uplp_ar15_reciever_m16.description"] = "Militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till <color=100,255,100>3-skott salvo</color>/<color=100,255,100>halvautomat</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4-Låda"
 L["uplp_ar15_reciever_m4.compactname"] = "M4"
@@ -1347,6 +1352,10 @@ L["uplp_ar15_reciever_modern_smg.description"] = "Taktisk och lättvikt låda by
 L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Taktisk Låda (Pitch Black)"
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9x19mm magasin." .. pitchblack
+
+L["uplp_ar15_reciever_m16a3.printname"] = "A3-Låda med Bärhandtag"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A3-BH"
+L["uplp_ar15_reciever_m16a3.description"] = "Militär grad låda med inbyggt bärhandtag.\nEnbart <color=160,160,255>kosmetiskt</color>."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"

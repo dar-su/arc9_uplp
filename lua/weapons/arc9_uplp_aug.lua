@@ -206,23 +206,23 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-    -- if attached["uplp_ar15_rs_tall"] then
-        -- return {
-            -- Pos = Vector(-2.275, -3, -0.15),
-            -- Ang = Angle(0, 0.05, 0),
-            -- Magnification = 1.15,
-            -- ViewModelFOV = 65,
-        -- }
-    -- end
+    if attached["uplp_ar15_rs_tall"] then
+        return {
+            Pos = Vector(-2.275, -3, -0.15),
+            Ang = Angle(0, 0.05, 0),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
+        }
+    end
 
-    -- if attached["uplp_ar15_rs_short"] then
-        -- return {
-            -- Pos = Vector(-2.275, -3, -0.01),
-            -- Ang = Angle(0, 0.05, 0),
-            -- Magnification = 1.15,
-            -- ViewModelFOV = 65,
-        -- }
-    -- end
+    if attached["uplp_ar15_rs_short"] then
+        return {
+            Pos = Vector(-2.275, -3, -0.01),
+            Ang = Angle(0, 0.05, 0),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
+        }
+    end
 
 end
 
@@ -858,6 +858,10 @@ local stockcol = {
         mdl:SetBodygroup(3, 1)
     end
 
+    if eles["uplp_ubgl_m203_rail"] then
+        mdl:SetBodygroup(6, 4)
+    end
+
     if eles["uplp_aug_bot_alt"] then -- grrr element shits itself and regular grip el overriding it
         mdl:SetBodygroup(6, 5)
     end
@@ -920,6 +924,7 @@ SWEP.AttachmentElements = {
 
     -- GRIPS
     ["uplp_grip_used"] = { Bodygroups = { { 6, 4 } } },
+    ["uplp_ubgl_m203_rail"] = { Bodygroups = { { 6, 4 } } },
     ["uplp_aug_bot_alt"] = { Bodygroups = { { 6, 5 } }, AttPosMods = {
         [6] = { Pos = Vector(0, 3.6, 7) },
         [8] = { Pos = Vector(-1.15, 2.7, 8), Ang = Angle(90, 90, -90) },
@@ -1104,6 +1109,20 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 2, -1),
         Ang = Angle(90, 90, 180),
+    },
+
+
+    -- here to not make presets bad
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 5.25, 6),
+        Ang = Angle(90, 90, 0),
+        -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        MergeSlots = {6}, 
+        Hidden = true,
     },
 }
 

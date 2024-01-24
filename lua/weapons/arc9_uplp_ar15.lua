@@ -206,14 +206,14 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-    -- if attached["uplp_ar15_rs_tall"] then
-        -- return {
-            -- Pos = Vector(-2.275, -3, 0.225),
-            -- Ang = Angle(0.35, 0.125, -3),
-            -- Magnification = 1.15,
-            -- ViewModelFOV = 65,
-        -- }
-    -- end
+    if attached["uplp_ar15_rs_tall"] then
+        return {
+            Pos = Vector(-2.275, -3, 0.225),
+            Ang = Angle(0.35, 0.125, -3),
+            Magnification = 1.15,
+            ViewModelFOV = 65,
+        }
+    end
 
 end
 
@@ -497,7 +497,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.6, lhik = 0 },
-            { t = 0.975, lhik = 1 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -521,8 +521,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -546,8 +546,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -597,7 +597,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -646,8 +646,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.575, lhik = 0 },
+            { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -671,7 +671,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
+            { t = 0.65, lhik = 0 },
             { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -685,7 +685,7 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.3, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
 
@@ -696,8 +696,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -709,9 +709,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 32.5 / 30 - 0.45, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 35 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 43 / 30 - 0.05, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 41 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 53 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
@@ -721,8 +721,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.675, lhik = 0 },
+            { t = 0.875, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -747,7 +747,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.625, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.825, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -771,8 +771,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.725, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -796,8 +796,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -821,8 +821,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -846,8 +846,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -871,8 +871,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -896,8 +896,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -922,7 +922,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.7, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -946,8 +946,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -971,8 +971,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -996,8 +996,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -1021,8 +1021,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.6, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.825, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -1045,7 +1045,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -1065,7 +1066,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -1147,6 +1149,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     else
         mdl:SetBodygroup(8, 0)
     end
+
+    if eles["uplp_ar15_hg_grenadier"] and eles["uplp_ubgl_m203_rail"] then
+        mdl:SetBodygroup(2, 15)
+    end
 end
 
 -- SWEP.Hook_ModifyElements = function(self, eles)
@@ -1212,6 +1218,7 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_grenadier"] = { Bodygroups =     { { 2, 4 }, { 9, 1 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 18.95) },
     [12] = { Pos = Vector(0.045, 2.1, 10) },
+    [24] = { Pos = Vector(0.045, 3.3, 8.1) },
     }},
     ["uplp_ar15_hg_tac"] = { Bodygroups =           { { 2, 5 }, { 9, 1 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 18.95) },
@@ -1510,6 +1517,20 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 3, 4),
         Ang = Angle(90, 90, 180),
+    },
+
+
+    -- here to not make presets bad
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, 3.55, 8.2),
+        Ang = Angle(90, 90, 0),
+        -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        MergeSlots = {12}, 
+        Hidden = true,
     },
 }
 

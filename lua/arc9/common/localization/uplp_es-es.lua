@@ -565,6 +565,11 @@ L["uplp_sg_shell_yellow.printname"] = "Cartuchos Slug Explosivos"
 L["uplp_sg_shell_yellow.compactname"] = "Slug Exp."
 L["uplp_sg_shell_yellow.description"] = "Proyectiles que cargan una pequeña cabeza explosiva. Explota un área pequeña con metralla." .. shotgun_lp
 
+/////////// Underbarrel Weapons
+-- L["uplp_ubgl_m203_rail.printname"] = "Model 40 Grenade Launcher"
+-- L["uplp_ubgl_m203_rail.compactname"] = "M40 GL"
+-- L["uplp_ubgl_m203_rail.description"] = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
+
 /////////// Cosmetics
 ////// Charms
 L["uplp_charm_paw.printname"] = "Poly Paw"
@@ -1347,6 +1352,10 @@ L["uplp_ar15_reciever_modern_smg.description"] = "Receptor táctico y ligero fab
 L["uplp_ar15_reciever_modern_black_smg.printname"] = "Receptor Táctico Hoki Armory (Negro Intenso)"
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (NI)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9x19mm." .. pitchblack
+
+L["uplp_ar15_reciever_m16a3.printname"] = "Receptor A3 con Asa de Transporte"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A3 AT"
+L["uplp_ar15_reciever_m16a3.description"] = "Receptor de grado militar con asa de transporte incorporada.\nPuramente <color=160,160,255>cosmetico</color>."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "Mira Trasera M4"

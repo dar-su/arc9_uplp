@@ -89,6 +89,13 @@ $sequence "fire" {
 	fadeout 0.08
 }
 $sequence "ready" {
+	"anims\ready2.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "ready_old" {
 	"anims\ready.smd"
 	"anims\ready_iron.smd"
  	blend "sights" 0 1

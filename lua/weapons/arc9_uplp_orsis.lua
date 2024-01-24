@@ -50,6 +50,16 @@ SWEP.TracerSize = 1
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50bmg.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
+-- SWEP.ShellSounds = {
+--     "arc9/casings/casing_12ga_1.wav", -- add heavy shell sound!
+--     "arc9/casings/casing_12ga_2.wav",
+--     "arc9/casings/casing_12ga_3.wav",
+--     "arc9/casings/casing_12ga_4.wav",
+--     "arc9/casings/casing_12ga_1.wav",
+--     "arc9/casings/casing_12ga_2.wav",
+--     "arc9/casings/casing_12ga_3.wav",
+--     "arc9/casings/casing_12ga_4.wav",
+-- }
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
@@ -363,10 +373,12 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
-            {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2, v = 1},
-            {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12, v = 1},
-            { s = pathUTC .. "rattle2.ogg", t = 24 / 30, c = ca, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            
+            {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2 + 0.7, v = 1},
+            {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12 + 0.7, v = 1},
+            { s = pathUTC .. "rattle2.ogg", t = 24 / 30 + 0.7, c = ca, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
