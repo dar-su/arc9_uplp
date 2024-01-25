@@ -837,6 +837,10 @@ L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan
 local loaded = "\n"
 local loaded762 = loaded .. "Loaded with " .. col.b .. "7.62×39mm Soviet" .. col.e .. " used by the AK 7.62, AK M10 and AK M16 5.56."
 
+L["uplp_ak_mag_762_30_std.printname"] = "30-Round 7.62×39mm"
+L["uplp_ak_mag_762_30_std.compactname"] = "30R 7.62"
+L["uplp_ak_mag_762_30_std.description"] = "30-round standard magazine." .. loaded762
+
 L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762

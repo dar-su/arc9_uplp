@@ -831,6 +831,10 @@ L["uplp_ak_hg_12tac.description"] = "Guardamanos táctico muy largo fabricado po
 local loaded = "\n"
 local loaded762 = loaded .. "Cargado con " .. col.b .. "7.62x39mm Soviético" .. col.e .. " utilizado por el AK 7.62, el AK M10 y el AK M16 5.56."
 
+L["uplp_ak_mag_762_30_std.printname"] = "30-Rondas 7.62×39mm"
+L["uplp_ak_mag_762_30_std.compactname"] = "30R 7.62"
+L["uplp_ak_mag_762_30_std.description"] = "30-round standard magazine." .. loaded762
+
 L["uplp_ak_mag_762_30_bak.printname"] = "30 Rondas 7.62x39mm (Baquelita)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "Cargador de 30 balas de compuesto de moldeo AG-4S, pero se asemeja a la baquelita." .. loaded762

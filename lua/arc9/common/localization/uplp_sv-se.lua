@@ -831,6 +831,10 @@ L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjor
 local loaded = "\n"
 local loaded762 = loaded .. "Laddat med " .. col.b .. "7,62×39mm Sovjet" .. col.e .. " som används av AK 7,62, AK M10 och AK M16 5.56."
 
+L["uplp_ak_mag_762_30_std.printname"] = "30-Patroner 7.62×39mm"
+L["uplp_ak_mag_762_30_std.compactname"] = "30P 7,62"
+L["uplp_ak_mag_762_30_std.description"] = "30-round standard magazine." .. loaded762
+
 L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7,62×39mm (Bakelit)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30P 7,62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
