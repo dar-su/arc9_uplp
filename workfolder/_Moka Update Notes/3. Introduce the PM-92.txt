@@ -1,14 +1,22 @@
 [h1]New content[/h1]
 [list]
 	[*] Added the [b]PM-92[/b], a modular semi-automatic handgun.
+	[*] Added the [b]Gryphon X108[/b], a hard-hitting 12.7x108mm Russian anti-material rifle.
+	[*] Added the [b]12x CWI Annihilator[/b] scope for all weapons. It is equipped by default on the new [u]Gryphon X108[/u].
+	[*] Added the [b]Model 40 Grenade Launcher[/b] attachment to the [u]AR-15[/u], [u]XAR[/u] and [u]AW-UG[/u].
 [/list]
 
 [h1]Changed content[/h1]
 [list]
+	[*] All weapons: Changed the weapon slot to better match what category they actually belong to. For example, shotguns and snipers go into the 4th weapon slot, while handguns go into the 2nd.
+	[*] AR-15: Added a unique cosmetic if the weapon has the Grenadier Handguard and the new Model 40 Grenade Launcher equipped at the same time.
+	[*] AW Sniper: Changed ammo type from "sniperpenetratedround" to "XBowBolt"
+	[*] Reduced the filesize of the addon by ~20mb by removing unnecessary files.
 	[*] Updated existing localizations
 	[list]
 		[*] [b]English[/b]
 		[*] [b]Swedish (Svenska)[/b]
 		[*] [b]Spanish (Español)[/b]
 	[/list]
+	[*] Plenty of minor fixes and adjustments.
 [/list]

@@ -488,6 +488,9 @@ ATT.IKAnimationProxy = {
     },
     ["reload_ubgl"] = {
         Source = "reload",
+		MinProgress = 0.95,
+		FireASAP = true,
+		RefillProgress = 0.75,
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0/30, v = 0.8 },
             { s = path .. "breaker_open.ogg", t = 13/30 },
@@ -501,6 +504,8 @@ ATT.IKAnimationProxy = {
     },
     ["enter_ubgl"] = {
         Source = "to_armed",
+		MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 2/30, v = 0.8 },
@@ -511,6 +516,8 @@ ATT.IKAnimationProxy = {
     },
     ["exit_ubgl"] = {
         Source = "to_idle",
+		MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 2/30, v = 0.3 },
@@ -574,8 +581,8 @@ ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 ATT.ModelOffset = Vector(-0.55, 0.05, 1.5)
 ATT.ModelAngleOffset = Angle(0, 180, 0)
 
-ATT.CantPeekUBGL = true
-ATT.NoAimAssistUBGL = true
+ATT.CanPeekUBGL = false
+ATT.AimAssistUBGL = false
 
 ATT.UBGLExclusiveSightsUBGL = true
 
