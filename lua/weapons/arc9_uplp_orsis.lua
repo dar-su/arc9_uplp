@@ -88,16 +88,16 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 120 -- Damage dealt point-blank
-SWEP.DamageMin = 80 -- Damage dealt after maximum range
+SWEP.DamageMax = 75 -- Damage dealt point-blank
+SWEP.DamageMin = 100 -- Damage dealt after maximum range
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
--- SWEP.SweetSpot = false
--- SWEP.SweetSpotDamage = 100
--- SWEP.SweetSpotRange = 225 / ARC9.HUToM
--- SWEP.SweetSpotWidth = 250 / ARC9.HUToM
--- SWEP.SweetSpotPeak = 150 / ARC9.HUToM
+SWEP.SweetSpot = true
+SWEP.SweetSpotDamage = 120
+SWEP.SweetSpotRange = 125 / ARC9.HUToM
+SWEP.SweetSpotWidth = 150 / ARC9.HUToM
+SWEP.SweetSpotPeak = 75 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
@@ -109,12 +109,12 @@ SWEP.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.7,
 }
 
-SWEP.Penetration = 100 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 30 -- How much kick things will have when hit
+SWEP.Penetration = 80 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 20 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 25 / ARC9.HUToM
-SWEP.RangeMax = 150 / ARC9.HUToM
+SWEP.RangeMin = 0 / ARC9.HUToM
+SWEP.RangeMax = 250 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 850 * 39.37
@@ -127,9 +127,9 @@ SWEP.Ammo = "XBowBolt" -- What ammo type this gun uses.
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 5
 
-SWEP.ManualAction = true 
-SWEP.NoLastCycle = true 
-SWEP.ManualActionNoLastCycle = true 
+SWEP.ManualAction = true
+SWEP.NoLastCycle = true
+SWEP.ManualActionNoLastCycle = true
 SWEP.ManualActionEjectAnyway = false
 SWEP.NoShellEject = true
 SWEP.EjectDelay = 0.43
@@ -177,11 +177,11 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0
 SWEP.Spread = 0
 SWEP.SpreadAddHipFire = 0.05
 
-SWEP.SpreadAddRecoil = 0.125
+SWEP.SpreadAddRecoil = 0.05
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 
-SWEP.RecoilDissipationRate = 1
+SWEP.RecoilDissipationRate = 0.75
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 1
 SWEP.RecoilModifierCap = 1
@@ -189,10 +189,10 @@ SWEP.RecoilModifierCap = 1
 -- Weapon handling
 SWEP.Speed = 0.75
 SWEP.SpeedMultSights = 0.5
-SWEP.SpeedMultShooting = 0.4
+SWEP.SpeedMultShooting = 0.25
 
-SWEP.AimDownSightsTime = 0.425
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.45
+SWEP.SprintToFireTime = 0.42
 
 SWEP.SwayMultSights = 0.75
 
@@ -205,7 +205,7 @@ SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = 1, -- Semi
-	}
+    }
 }
 
 SWEP.ShootPitch = 100
@@ -233,18 +233,18 @@ SWEP.IronSights = {
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
-    
+
     if attached["uplp_ar15_rs_tall"] then
         return {
-			Pos = Vector(-3.87, -5, 0.45),
-			Ang = Angle(0, 0.05, 0),
+            Pos = Vector(-3.87, -5, 0.45),
+            Ang = Angle(0, 0.05, 0),
             Magnification = 1.15,
             ViewModelFOV = 65,
         }
     elseif attached["uplp_ar15_rs_short"] then
         return {
-			Pos = Vector(-3.87, -5, 0.6),
-			Ang = Angle(0, 0.05, 0),
+            Pos = Vector(-3.87, -5, 0.6),
+            Ang = Angle(0, 0.05, 0),
             Magnification = 1.15,
             ViewModelFOV = 65,
         }
@@ -260,8 +260,8 @@ SWEP.CustomizeSnapshotPos = Vector(0, 20, 2)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = false 
-SWEP.ShouldDropMagEmpty = false 
+SWEP.ShouldDropMag = false
+SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/orsis_mag_5.mdl"
 SWEP.DropMagazineTime = 0.35
 SWEP.DropMagazineTimeEmpty = 0.9
@@ -316,8 +316,8 @@ SWEP.DropMagazineSounds = {
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
-	[2] = "bullet2",
-	[3] = "bullet3",
+    [2] = "bullet2",
+    [3] = "bullet3",
 }
 
 SWEP.ReloadHideBoneTables = {
@@ -375,7 +375,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUT2 .. "grab.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            
+
             {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2 + 0.7, v = 1},
             {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12 + 0.7, v = 1},
             { s = pathUTC .. "rattle2.ogg", t = 24 / 30 + 0.7, c = ca, v = 0.8 },
@@ -392,13 +392,13 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
-    },    
+    },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
@@ -407,7 +407,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-		MinProgress = 0.5,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -419,7 +419,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
         NoIdle = true,
-		MinProgress = 0.95, 
+        MinProgress = 0.95,
         -- Mult = 1.15,
         EventTable = {
             {s = mechh, t = 0},
@@ -429,7 +429,7 @@ SWEP.Animations = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         Mult = 1.25,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
@@ -444,7 +444,7 @@ SWEP.Animations = {
         Source = {"fire"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
-		MinProgress = 0.95,
+        MinProgress = 0.95,
         -- Mult = 1.15,
         EventTable = {
             {s = mechh, t = 0},
@@ -456,7 +456,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         -- Mult = 1.1,
-		MinProgress = 0.85,
+        MinProgress = 0.85,
         DropMagAt = 36/30,
         MagSwapTime = 1.1,
         EventTable = {
@@ -489,7 +489,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-		MinProgress = 0.85,
+        MinProgress = 0.85,
         EjectAt = 103/30,
         -- Mult = 1.1,
         DropMagAt = 36/30,
@@ -509,7 +509,7 @@ SWEP.Animations = {
 
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 85 / 30, c = ca, v = 0.8 },
-            
+
             {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06, v = 0.5},
             {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4},
             {s = pathUT .. "eject.ogg",           t = 3.43, v = 0.5},
@@ -533,7 +533,7 @@ SWEP.Animations = {
     ["reload_3"] = {
         Source = "reload_3",
         -- Mult = 1.1,
-		MinProgress = 0.85,
+        MinProgress = 0.85,
         DropMagAt = 36/30,
         MagSwapTime = 1.0,
         EventTable = {
@@ -566,7 +566,7 @@ SWEP.Animations = {
     },
     ["reload_empty_3"] = {
         Source = "reload_empty_3",
-		MinProgress = 0.85,
+        MinProgress = 0.85,
         EjectAt = 103/30 - 0.2,
         -- Mult = 1.1,
         DropMagAt = 36/30,
@@ -586,7 +586,7 @@ SWEP.Animations = {
 
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 75 / 30, c = ca, v = 0.8 },
-            
+
             {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 - 0.2, v = 0.5},
             {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 - 0.2},
             {s = pathUT .. "eject.ogg",           t = 3.43 - 0.2, v = 0.5},
@@ -610,7 +610,7 @@ SWEP.Animations = {
     ["reload_7"] = {
         Source = "reload_7",
         -- Mult = 1.1,
-		MinProgress = 0.85,
+        MinProgress = 0.85,
         DropMagAt = 39/30,
         MagSwapTime = 1.1,
         EventTable = {
@@ -643,7 +643,7 @@ SWEP.Animations = {
     },
     ["reload_empty_7"] = {
         Source = "reload_empty_7",
-		MinProgress = 0.85,
+        MinProgress = 0.85,
         EjectAt = 103/30,
         -- Mult = 1.1,
         DropMagAt = 39/30,
@@ -663,7 +663,7 @@ SWEP.Animations = {
 
             { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 93 / 30, c = ca, v = 0.8 },
-            
+
             {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 + 0.267, v = 0.5},
             {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 + 0.267},
             {s = pathUT .. "eject.ogg",           t = 3.43 + 0.267, v = 0.5},
@@ -689,7 +689,7 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         FireASAP = true,
-		MinProgress = 0.925,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -698,11 +698,11 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-	
+
     ["inspect_empty"] = {
         Source = "inspect_empty",
         FireASAP = true,
-		MinProgress = 0.925,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -714,7 +714,7 @@ SWEP.Animations = {
     ["inspect_3"] = {
         Source = "inspect_3",
         FireASAP = true,
-		MinProgress = 0.925,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -723,11 +723,11 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-	
+
     ["inspect_empty_3"] = {
         Source = "inspect_empty_3",
         FireASAP = true,
-		MinProgress = 0.925,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -739,7 +739,7 @@ SWEP.Animations = {
     ["inspect_7"] = {
         Source = "inspect_7",
         FireASAP = true,
-		MinProgress = 0.925,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -748,11 +748,11 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-	
+
     ["inspect_empty_7"] = {
         Source = "inspect_empty_7",
         FireASAP = true,
-		MinProgress = 0.925,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -770,7 +770,7 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
-	
+
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
@@ -788,8 +788,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local shortbrl = eles["uplp_orsis_barrel_short"]
 
-    if eles["uplp_orsis_muzzle"] then 
-        mdl:SetBodygroup(5, 6) 
+    if eles["uplp_orsis_muzzle"] then
+        mdl:SetBodygroup(5, 6)
 
         if eles["uplp_orsis_muzzle_small"] then mdl:SetBodygroup(5, shortbrl and 5 or 2) end
         if eles["uplp_orsis_muzzle_big"] then mdl:SetBodygroup(5, shortbrl and 4 or 1) end
@@ -801,7 +801,7 @@ end
 SWEP.AttachmentElements = {
     ["uplp_orsis_barrel_heavy"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_orsis_barrel_short"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
-        [10] = { 
+        [10] = {
             Pos = Vector(-0.125, -2.35, 18.75),
             Ang = Angle(90, 0, -90) },
         [16] = { Pos = Vector(0.85, -0.98, 21) },
@@ -833,8 +833,8 @@ SWEP.Attachments = {
         Pos = Vector(-0.1, -2.56, -3),
         Ang = Angle(90, 90, 180),
         Scale = 1.15,
-		Icon_Offset = Vector(1, 0, 0),
-		Installed = "uplp_optic_dedal",
+        Icon_Offset = Vector(1, 0, 0),
+        Installed = "uplp_optic_dedal",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
@@ -844,9 +844,9 @@ SWEP.Attachments = {
         Pos = Vector(-0.1, -2.6, -4.7),
         Ang = Angle(90, 90, 180),
         RejectAttachments = {
-		["uplp_ar15_rs_carry"] = true,
-		["uplp_ar15_rs_m4"] = true,
-		},
+        ["uplp_ar15_rs_carry"] = true,
+        ["uplp_ar15_rs_m4"] = true,
+        },
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -888,8 +888,8 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
         Pos = Vector(0, 0.5, 19),
         Ang = Angle(90, 90, 180),
-		Icon_Offset = Vector(0, 0, 0),
-		ExcludeElements = {"uplp_orsis_barrel_short"},
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"uplp_orsis_barrel_short"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
@@ -909,7 +909,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_backup_optic_is"},
         Installed = "uplp_backup_optic_is_front",
         Integral = "uplp_backup_optic_is_front",
-		Hidden = true,
+        Hidden = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -917,7 +917,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-1.4, -1, 18.75),
         Ang = Angle(90, 90, -90),
-		ExcludeElements = {"uplp_no_tactical"},
+        ExcludeElements = {"uplp_no_tactical"},
     },
 
     -- Cosmetic shit
@@ -981,4 +981,4 @@ SWEP.Attachments = {
 
 SWEP.NoAimAssist = true
 SWEP.NoAimAssistLock = false
-SWEP.CantPeek = true 
+SWEP.CantPeek = true
