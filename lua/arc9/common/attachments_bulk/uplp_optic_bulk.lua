@@ -605,15 +605,17 @@ ATT.DrawFunc = function(swep, model, wm)
             text = string.format("%04d", math.ceil(trace.Fraction * 64000 * ARC9.HUToM))
         end
     end
+    
+    local scale = model.Scale and model.Scale.x or 1
 
     local pos = model:GetPos()
-    pos = model:LocalToWorld(textoffset)
+    pos = model:LocalToWorld(textoffset * scale)
 
     local ang = model:GetAngles()
     ang:RotateAroundAxis(ang:Forward(), 90)
     ang:RotateAroundAxis(ang:Right(), 90)
 
-    cam.Start3D2D(pos, ang, 0.0025)
+    cam.Start3D2D(pos, ang, 0.0025 * scale)
         draw.SimpleText("0000", "arc9uplp_bigass_range", 0, 1, textbgcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
         draw.SimpleText(text, "arc9uplp_bigass_range", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     cam.End3D2D()
