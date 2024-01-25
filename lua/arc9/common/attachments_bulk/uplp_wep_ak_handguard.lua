@@ -280,6 +280,17 @@ ATT.Attachments = {
         Pos = Vector(-2.8, 0, 1.2),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"uplp_m203_rail"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Pos = Vector(4, 0, 2.75),
+        Ang = Angle(0, 0, 180),
+        -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        MergeSlots = {1}, 
+        Hidden = true,
     },
 }
 

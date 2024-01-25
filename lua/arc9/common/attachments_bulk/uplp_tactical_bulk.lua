@@ -438,7 +438,7 @@ ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
 ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
 ATT.Pros = {}
 ATT.Cons = {}
-ATT.SortOrder = 99
+ATT.SortOrder = -99
 
 -- ATT.ExcludeElements = {
 --     "eft_hg_ar15_m4_lower",
@@ -581,8 +581,8 @@ ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 ATT.ModelOffset = Vector(-0.55, 0.05, 1.5)
 ATT.ModelAngleOffset = Angle(0, 180, 0)
 
-ATT.CanPeekUBGL = false
-ATT.AimAssistUBGL = false
+ATT.CantPeekUBGL = true
+ATT.NoAimAssistUBGL = true
 
 ATT.UBGLExclusiveSightsUBGL = true
 
