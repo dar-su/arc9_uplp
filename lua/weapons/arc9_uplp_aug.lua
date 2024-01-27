@@ -831,6 +831,23 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
+    ["firemode_1"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle,
+    },
+    ["firemode_1_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = thetoggle,
+    },
+
+    ["firemode_2"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle,
+    },
+    ["firemode_2_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = thetoggle,
+    },
 }
 
 ---- Attachments
