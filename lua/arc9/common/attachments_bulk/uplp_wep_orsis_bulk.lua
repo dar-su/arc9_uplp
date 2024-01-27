@@ -20,17 +20,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_orsis_barrel_heavy"}
 
+-- stats from awp
 -- Positives
--- ATT.PhysBulletMuzzleVelocityMult = 1.1
--- ATT.DamageMinMult = 1.12
--- ATT.RecoilMult = 0.85
+ATT.DamageMinMult = 1.05
+ATT.RecoilMult = 0.85
 
 -- Negatives
--- ATT.AimDownSightsTimeAdd = 0.03
--- ATT.SprintToFireTimeAdd = 0.05
--- ATT.SpeedAddSights = -0.1
--- ATT.SpeedAdd = -0.015
--- ATT.BarrelLengthAdd = 4
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAddSights = -0.1
+ATT.SpeedAdd = -0.015
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_barrel_heavy")
 
@@ -51,17 +50,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_orsis_barrel_short", "uplp_orsis_hg_alt"}
 
+-- stats from awp
 -- Positives
--- ATT.AimDownSightsTimeAdd = -0.03
--- ATT.SprintToFireTimeAdd = -0.03
--- ATT.SpeedAddSights = 0.08
--- ATT.SpeedAdd = 0.01
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SpeedAddSights = 0.08
+ATT.SpeedAdd = 0.01
 
 -- Negatives
--- ATT.RecoilMult = 1.4
--- ATT.PhysBulletMuzzleVelocityMult = 0.75
--- ATT.DamageMinMult = 0.85
--- ATT.BarrelLengthAdd = -7
+ATT.RecoilMult = 1.4
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.DamageMaxMult = 0.91
+ATT.DamageMinMult = 0.85
+ATT.BarrelLengthAdd = -10
 
 ATT.MuzzleEffectQCA = 5
 
@@ -94,6 +95,9 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ClipSize = 3
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SpeedAddSights = 0.04
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_mag_3")
 
@@ -122,6 +126,9 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.ClipSize = 7
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.04
+ATT.SpeedAddSights = -0.04
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_mag_7")
 
@@ -142,12 +149,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_orsis_stock_sniper"}
 
--- ATT.DeployTimeMult = 0.75
--- ATT.HolsterTimeMult = 0.75
--- ATT.SpeedAddSights = 0.05
--- ATT.SprintToFireTimeAdd = -0.03
--- ATT.RecoilAdd = 0.15
--- ATT.SpeedAdd = 0.02
+ATT.DeployTimeMult = 1.2
+ATT.HolsterTimeMult = 1.2
+ATT.SpeedAddSights = 0.2
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = -0.05
+ATT.RecoilAdd = 0.15
+ATT.SpeedAdd = 0.02
 
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_stock_sniper")
@@ -167,14 +175,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_orsis_stock_atx"}
 
--- ATT.SpeedAdd = 0.03
--- ATT.SpeedAddSights = 0.12
--- ATT.AimDownSightsTimeAdd = -0.015
--- ATT.SprintToFireTimeAdd = -0.04
--- ATT.SpeedAddShooting = -0.2
--- ATT.SwayMultSights = 1.25
--- ATT.RecoilRandomSideMult = 1.5
--- ATT.RecoilAdd = 0.5
+ATT.SpeedAdd = 0.03
+ATT.SpeedAddSights = 0.12
+ATT.AimDownSightsTimeAdd = -0.015
+ATT.SprintToFireTimeAdd = -0.04
+ATT.SpeedAddShooting = -0.2
+ATT.SwayMultSights = 1.25
+ATT.RecoilRandomSideMult = 1.5
+ATT.RecoilAdd = 0.5
+ATT.CycleTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_stock_atx")
 
@@ -193,11 +202,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_orsis_stock_heavy" }
 
--- ATT.DeployTimeMult = 0.75
--- ATT.HolsterTimeMult = 0.75
--- ATT.SprintToFireTimeAdd = -0.05
--- ATT.RecoilAdd = 0.1
--- ATT.SpeedAdd = 0.02
+ATT.DeployTimeMult = 1.1
+ATT.HolsterTimeMult = 1.1
+ATT.SprintToFireTimeAdd = 0.05
+ATT.RecoilAdd = -0.3
+ATT.SpeedAdd = -0.03
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.CycleTimeMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_stock_heavy")
 
@@ -218,6 +229,10 @@ ATT.Icon = Material(iconfolder .. "small.png", "mips smooth")
 ATT.Category = "uplp_orsis_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 1.25
+ATT.AimDownSightsTimeAdd = -0.035
+ATT.BarrelLengthAdd = -2
+
 ARC9.LoadAttachment(ATT, "uplp_orsis_muzzle_small")
 
 ---------- uplp_orsis_muzzle_big
@@ -230,5 +245,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "big.png", "mips smooth")
 ATT.Category = "uplp_orsis_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 0.75
+ATT.AimDownSightsTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_muzzle_big")

@@ -27,6 +27,19 @@ ATT.RHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(-11.65, -1.918, 2.62)
 
+ATT.DamageMax = 25 -- balanced >w<
+ATT.DamageMin = 15
+
+ATT.BodyDamageMults = {
+    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.8,
+    [HITGROUP_RIGHTARM] = 0.8,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
+}
+
 ATT.PostBurstDelay = 0.2
 ATT.RPM = 1000
 ATT.RunawayBurst = true
@@ -158,6 +171,19 @@ ATT.RPM = 900
 ATT.CantPeek = true
 ATT.RunawayBurst = true
 ATT.ShootWhileSprint = true
+
+ATT.DamageMax = 25 -- balanced >w<
+ATT.DamageMin = 15
+
+ATT.BodyDamageMults = {
+    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.8,
+    [HITGROUP_RIGHTARM] = 0.8,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
+}
 
 ATT.ReloadHideBonesFirstPerson = true
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/beretta_mag_robo.mdl"

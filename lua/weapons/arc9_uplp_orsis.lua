@@ -45,7 +45,7 @@ SWEP.MuzzleParticle = "muzzleflash_m82"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
-SWEP.TracerSize = 1
+SWEP.TracerSize = 5
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50bmg.mdl"
 SWEP.ShellScale = 1.2
@@ -88,25 +88,25 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 75 -- Damage dealt point-blank
+SWEP.DamageMax = 155 -- Damage dealt point-blank
 SWEP.DamageMin = 100 -- Damage dealt after maximum range
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
 SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 120
+SWEP.SweetSpotDamage = 180
 SWEP.SweetSpotRange = 125 / ARC9.HUToM
 SWEP.SweetSpotWidth = 150 / ARC9.HUToM
 SWEP.SweetSpotPeak = 75 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 0.9,
-    [HITGROUP_LEFTARM] = 0.8,
-    [HITGROUP_RIGHTARM] = 0.8,
-    [HITGROUP_LEFTLEG] = 0.7,
-    [HITGROUP_RIGHTLEG] = 0.7,
+    [HITGROUP_STOMACH] = 0.75,
+    [HITGROUP_LEFTARM] = 0.71,
+    [HITGROUP_RIGHTARM] = 0.71,
+    [HITGROUP_LEFTLEG] = 0.6,
+    [HITGROUP_RIGHTLEG] = 0.6,
 }
 
 SWEP.Penetration = 80 -- Units of wood that can be penetrated
@@ -175,7 +175,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddHipFire = 0.065
 
 SWEP.SpreadAddRecoil = 0.05
 SWEP.SpreadAddMove = 0.02
@@ -190,8 +190,9 @@ SWEP.RecoilModifierCap = 1
 SWEP.Speed = 0.75
 SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.25
+SWEP.BarrelLength = 60
 
-SWEP.AimDownSightsTime = 0.45
+SWEP.AimDownSightsTime = 0.5
 SWEP.SprintToFireTime = 0.42
 
 SWEP.SwayMultSights = 0.75

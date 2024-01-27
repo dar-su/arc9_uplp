@@ -41,7 +41,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.015",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.015",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -105,7 +105,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -238,7 +238,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -294,7 +294,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -351,7 +351,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -407,7 +407,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -436,24 +436,21 @@ ATT.PrintName = "Model 40 Grenade Launcher"
 ATT.CompactName = "M40 GL"
 ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
 ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
-ATT.Pros = {}
-ATT.Cons = {}
 ATT.SortOrder = -99
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Abillity to shoot grenades"] = "Yeah",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Damage"] = "150 DMG",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Radius"] = "7.6 m",
+}
 
--- ATT.ExcludeElements = {
---     "eft_hg_ar15_m4_lower",
--- }
+ATT.AimDownSightsTimeAdd = 0.15
+ATT.SprintToFireTimeAdd = 0.2
+ATT.SpeedMult = 0.9
+ATT.SpeedMultUBGL = 0.75
 
 ATT.ActivateElements = {"uplp_m203_used"}
 
 ATT.ReloadInSightsUBGL = false 
-
--- ATT.VisualRecoilUBGL = 1
--- ATT.VisualRecoilDampingConstUBGL = 150
--- ATT.VisualRecoilSpringMagnitudeUBGL = 0.1
--- -- ATT.VisualRecoilUpUBGL = 120 -- Vertical tilt -- anyway overidded in gun code
--- ATT.VisualRecoilSideUBGL = 0 -- Horizontal tilt
--- ATT.VisualRecoilRollUBGL = 11 -- Roll tilt
 
 ATT.Model = "models/weapons/arc9/uplp_ubgl_m203.mdl"
 ATT.ModelBodygroups = "1" -- 0 for m16 gren hg
@@ -557,7 +554,7 @@ ATT.UBGLClipSize = 1
 ATT.UBGLFiremode = 1
 ATT.UBGLFiremodeName = ARC9:GetPhrase("uplp_ubgl_m203_rail.compactname")
 ATT.UBGLChamberSize = 0
-ATT.ShootVolumeUBGL = 111
+-- ATT.ShootVolumeUBGL = 111
 
 ATT.SpreadUBGL = 0.02
 
@@ -568,7 +565,7 @@ ATT.ShootSoundIndoorUBGL = path.."gl_fire.ogg"
 ATT.DistantShootSoundIndoorUBGL = path.."gl_fire_dist.ogg"
 ATT.HasSightsUBGL = true
 
--- ATT.TriggerDelayUBGL = false
+ATT.TriggerDelayUBGL = false
 
 -- ATT.EnterUBGLSound = path.."m203_hand_out_tube.ogg"
 -- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
