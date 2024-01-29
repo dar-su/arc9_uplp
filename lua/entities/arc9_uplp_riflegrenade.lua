@@ -14,7 +14,9 @@ ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
 
 -- Intentionally not ENT.Damage since ArcCW base overwrites it with weapon damage (for some reason)
 ENT.GrenadeDamage = false
+ENT.GrenadeDamageDirect = 105
 ENT.GrenadeRadius = 0
+ENT.FuseTimeMin = 0.25
 ENT.FuseTime = 10
 ENT.DragCoefficient = 1
 ENT.DetonateOnImpact = true
@@ -154,24 +156,31 @@ function ENT:Detonate()
 end
 
 function ENT:PhysicsCollide(colData, collider)
-    self.GrenadeDir = colData.OurOldVelocity:GetNormalized()
-    self.GrenadePos = colData.HitPos
+    timer.Simple(0, function()
+        self.GrenadeDir = colData.OurOldVelocity:GetNormalized()
+        self.GrenadePos = colData.HitPos
 
-    self:DoImpact(colData.HitEntity)
+        self:DoImpact(colData.HitEntity)
 
-    if self.DetonateOnImpact then
-        self:Detonate()
-    else
-        local effectdata = EffectData()
-        effectdata:SetOrigin(self:GetPos())
-        effectdata:SetMagnitude(2)
-        effectdata:SetScale(1)
-        effectdata:SetRadius(2)
-        effectdata:SetNormal(self.GrenadeDir)
-        util.Effect("Sparks", effectdata)
-        self:EmitSound("weapons/rpg/shotdown.wav", 100, 150)
-        self:Remove()
-    end
+        if self.DetonateOnImpact then
+            if CurTime() > self.SpawnTime + self.FuseTimeMin then
+                self:Detonate()
+            else
+                self:FireBullets({Attacker = self:GetOwner(), Damage = self.GrenadeDamageDirect, Force = 16, HullSize = 16, Tracer = false, Dir = self:GetAngles():Forward(), Src = self:GetPos(), IgnoreEntity = self, AmmoType = 9})
+                self:Remove()
+            end
+        else
+            local effectdata = EffectData()
+            effectdata:SetOrigin(self:GetPos())
+            effectdata:SetMagnitude(2)
+            effectdata:SetScale(1)
+            effectdata:SetRadius(2)
+            effectdata:SetNormal(self.GrenadeDir)
+            util.Effect("Sparks", effectdata)
+            self:EmitSound("weapons/rpg/shotdown.wav", 100, 150)
+            self:Remove()
+        end
+    end)
 end
 
 
