@@ -2277,3 +2277,14 @@ L["uplp_weapon_knife_desc"] = "En anpassad bowie-kniv gjord för användning i t
 L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
+
+////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
+L["uplp_knife_skin_black.description"] = "Mörk mattsvart version av Badlands-Bowie-kniven."
+
+L["uplp_knife_skin_chrome.printname"] = "Krom"
+L["uplp_knife_skin_chrome.compactname"] = "Krom"
+L["uplp_knife_skin_chrome.description"] = "Kromversion av Badlands-Bowie-kniven. Kommer med ett handtag färgat rött."
+
+L["uplp_knife_skin_gold.description"] = "Guldversion av Badlands-Bowie-kniven. Kommer med ett tanfärgat handtag."
+
+L["uplp_knife_skin_blue.description"] = "Metallisk blå version av Badlands-Bowie-kniven. Kommer med ett handtag färgat mörkblå.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus.""

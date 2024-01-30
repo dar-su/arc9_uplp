@@ -2283,19 +2283,19 @@ L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
-////// Skins
+////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
 L["uplp_knife_skin_black.printname"] = ARC9:GetPhrase("uplp_deagle_skin_black.printname")
 L["uplp_knife_skin_black.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_black.compactname")
-L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Knife."
+L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Bowie."
 
 L["uplp_knife_skin_chrome.printname"] = "Chrome"
 L["uplp_knife_skin_chrome.compactname"] = "Chrome"
-L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Knife. Comes with a red coloured handle."
+L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
 
 L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname")
 L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname")
-L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Knife. Comes with desert tan handle."
+L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle."
 
 L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname")
 L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname")
-L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Knife. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
