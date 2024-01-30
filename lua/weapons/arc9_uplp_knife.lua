@@ -39,7 +39,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_knife.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_beretta.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_knife.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -56,6 +56,9 @@ SWEP.WorldModelOffset = {
 SWEP.ViewModelFOVBase = 75
 
 SWEP.ActiveAng = Angle(0, 0, 0)
+
+SWEP.CrouchPos = Vector(0, 3, 1)
+SWEP.CrouchAng = Angle(0, 0, -0)
 
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
@@ -324,6 +327,7 @@ SWEP.AttachmentElements = {
     ["uplp_knife_skin_blue"] = { Bodygroups = { { 0, 4 } }, Skin = 3 },
 }
 
+SWEP.StickersNoNocull = true
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
 
@@ -357,9 +361,9 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
-        Bone = "body",
-        Pos = Vector(0.15, 2.46, 1.25),
-        Ang = Angle(0, 180, 18),
+        Bone = "charmbone",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(-5, 180, 0),
 		RejectAttachments = {
 		["charm_gs_clock"] = true,
 		["charm_gs_killcounter"] = true,

@@ -2,7 +2,7 @@ $modelname "weapons/arc9/uplp/stickers/knife_2.mdl"
 
 $bodygroup "studio"
 {
-	studio "s1.smd"
+	studio "s2.smd"
 }
 
 $surfaceprop "default"
