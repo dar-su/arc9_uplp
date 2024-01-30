@@ -2,9 +2,22 @@ $modelname "weapons\arc9\c_uplp_knife.mdl"
  
 $bodygroup "knif" { // 0
 	studio "knif.smd"
+	studio "knif_blk.smd"
+	studio "knif_chrom.smd"
+	studio "knif_gold.smd"
+	studio "knif_blue.smd"
 	blank
 }  
 $cdmaterials "models\weapons\arc9\uplp"
+
+$texturegroup skinfamilies
+{
+	{ "lowpoly_metal"  }
+	{ "lowpoly_chrome"  }
+	{ "lowpoly_skin_gold" }
+	{ "lowpoly_skin_blue" }
+	{ "lowpoly_skin_red" }
+}
 
 // $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 // $attachment "2" "bolt" 0 0 1.5 rotate -10 140 180
