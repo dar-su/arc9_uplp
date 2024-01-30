@@ -1,12 +1,5 @@
 L = {}
 
-local col = {
-r = "<color=255,100,100>",
-g = "<color=100,255,100>",
-b = "<color=160,160,255>",
-e = "</color>"
-}
-
 local lineb = "\n"
 
 local changeammo = {
@@ -677,7 +670,7 @@ L["uplp_ak_dc_flat.description"] = "Guardapolvo alisado utilizado en los fusiles
 
 L["uplp_ak_dc_old.printname"] = "Guardapolvo Vintage"
 L["uplp_ak_dc_old.compactname"] = "Vintage"
-L["uplp_ak_dc_old.description"] = "Guardapolvo vintage utilizado en el AK 7.62.\nCombinar con " .. col.b .. "Culata Vintage" .. col.e .. " para cambiar la apariencia del receptor."
+L["uplp_ak_dc_old.description"] = "Guardapolvo vintage utilizado en el AK 7.62.\nCombinar con <color=160,160,255>Culata Vintage</color> para cambiar la apariencia del receptor."
 
 L["uplp_ak_dc_rail.printname"] = "Cubierta antipolvo PAWCO con raíl"
 L["uplp_ak_dc_rail.compactname"] = "PAWCO"
@@ -829,7 +822,7 @@ L["uplp_ak_hg_12tac.description"] = "Guardamanos táctico muy largo fabricado po
 ////// Magazines
 /// 7.62x39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Cargado con " .. col.b .. "7.62x39mm Soviético" .. col.e .. " utilizado por el AK 7.62, el AK M10 y el AK M16 5.56."
+local loaded762 = loaded .. "Cargado con <color=160,160,255>7.62x39mm Soviético</color> utilizado por el AK 7.62, el AK M10 y el AK M16 5.56."
 
 L["uplp_ak_mag_762_30_std.printname"] = "30-Rondas 7.62×39mm"
 L["uplp_ak_mag_762_30_std.compactname"] = "30R 7.62"
@@ -868,7 +861,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 T"
 L["uplp_ak_mag_762_drum.description"] = "Cargador de tambor cilíndrico de 75 balas." .. loaded762
 
 /// 5.45x39mm
-local loaded545 = loaded .. "Cargado con " .. col.b .. "5.45x39mm" .. col.e .. " utilizado por el AK 5.45 y derivados." .. changeammo.smg1
+local loaded545 = loaded .. "Cargado con <color=160,160,255>5.45x39mm</color> utilizado por el AK 5.45 y derivados." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30 Rondas 5.45x39mm (Polímero)"
 L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
@@ -899,7 +892,7 @@ L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 T"
 L["uplp_ak_mag_545_drum.description"] = "Cargador de tambor cilíndrico de 85 balas del HPK M16." .. loaded545
 
 /// 5.56×45mm  NATO
-local loaded556 = loaded .. "Cargado con " .. col.b .. "5.56×45mm " .. col.e .. " utilizado por el AK M10 5.56." .. changeammo.smg1
+local loaded556 = loaded .. "Cargado con <color=160,160,255>5.56×45mm </color> utilizado por el AK M10 5.56." .. changeammo.smg1
 
 L["uplp_ak_mag_556_30.printname"] = "30 Rondas 5.56×45mm  (Polímero)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
@@ -916,11 +909,11 @@ L["uplp_ak_mag_556_30_12.description"] = "Cargador de 30 balas utilizado en el f
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20 Rondas 7.62×51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20R 7.62×51"
-L["uplp_ak_mag_308_20.description"] = "Cargador de 20 balas cargado con " .. col.b .. "balas 7.62×51mm" .. col.e .. " utilizado en el fusil AK M308." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "Cargador de 20 balas cargado con <color=160,160,255>balas 7.62×51mm</color> utilizado en el fusil AK M308." ..  changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20 Rondas 9×39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9×39mm"
-L["uplp_ak_mag_939_30.description"] = "Cargador de 20 balas cargado con " .. col.b .. "balas 9×39mm" .. col.e .. " utilizado por el AK 9mm.\nSólo se fabricaron unos cientos del AK 9 mm!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "Cargador de 20 balas cargado con <color=160,160,255>balas 9×39mm</color> utilizado por el AK 9mm.\nSólo se fabricaron unos cientos del AK 9 mm!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "Freno de Boca M10"
@@ -974,7 +967,7 @@ L["uplp_ak_stock_skele.description"] = "Culata ligera plegable utilizada en el A
 
 L["uplp_ak_stock_old.printname"] = "Culata Vintage"
 L["uplp_ak_stock_old.compactname"] = "Vintage"
-L["uplp_ak_stock_old.description"] = "Culata de época utilizada en las primeras variantes de fusiles AK 7.62.\nUn auténtico clásico de época!\nCombinar con " .. col.b .. "Guardapolvo Vintage" .. col.e .. " para cambiar la apariencia del receptor."
+L["uplp_ak_stock_old.description"] = "Culata de época utilizada en las primeras variantes de fusiles AK 7.62.\nUn auténtico clásico de época!\nCombinar con <color=160,160,255>Guardapolvo Vintage</color> para cambiar la apariencia del receptor."
 
 L["uplp_ak_stock_rpk.printname"] = "Culata HPK"
 L["uplp_ak_stock_rpk.compactname"] = "HPK"
@@ -2273,3 +2266,11 @@ L["uplp_weapon_rsh12_desc"] = "El \"Разрушитель запястий 12\"
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
+
+//////////////////// Mick Strider's Bowie Knife
+-- L["uplp_weapon_knife"] = "Badlands Bowie"
+-- L["uplp_weapon_knife_desc"] = "A custom-made bowie knife meant for use in harsher environments. Its blade is razor sharp and its handle is comfortable, making it really easy to ki- I mean open packages you receive... yes, that's what I meant."
+
+L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
+
+L["uplp_weapon_knife_manufacturer"] = "Mick Strider"

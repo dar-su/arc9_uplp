@@ -1,12 +1,5 @@
 L = {}
 
-local col = {
-r = "<color=255,100,100>",
-g = "<color=100,255,100>",
-b = "<color=160,160,255>",
-e = "</color>"
-}
-
 local lineb = "\n"
 
 local changeammo = {
@@ -677,7 +670,7 @@ L["uplp_ak_dc_flat.description"] = "Slät dammskydd som används på AK 5,45 och
 
 L["uplp_ak_dc_old.printname"] = "Gammaldags Dammskydd"
 L["uplp_ak_dc_old.compactname"] = "Gammaldags"
-L["uplp_ak_dc_old.description"] = "Gammaldags dammskydd som används på AK 7,62.\nKombinera med " .. col.b .. "Gammaldags Kolv" .. col.e .. " för att ändra utseendet på lådan."
+L["uplp_ak_dc_old.description"] = "Gammaldags dammskydd som används på AK 7,62.\nKombinera med <color=160,160,255>Gammaldags Kolv</color> för att ändra utseendet på lådan."
 
 L["uplp_ak_dc_rail.printname"] = "PAWCO-Dammskydd med Skena"
 L["uplp_ak_dc_rail.compactname"] = "PAWCO"
@@ -829,7 +822,7 @@ L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjor
 ////// Magazines
 /// 7.62x39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Laddat med " .. col.b .. "7,62×39mm Sovjet" .. col.e .. " som används av AK 7,62, AK M10 och AK M16 5.56."
+local loaded762 = loaded .. "Laddat med <color=160,160,255>7,62×39mm Sovjet</color> som används av AK 7,62, AK M10 och AK M16 5.56."
 
 L["uplp_ak_mag_762_30_std.printname"] = "30-Patroner 7,62×39mm"
 L["uplp_ak_mag_762_30_std.compactname"] = "30P 7,62"
@@ -868,7 +861,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75P 7,62 T"
 L["uplp_ak_mag_762_drum.description"] = "75-patroners cylindriskt trummagasin." .. loaded762
 
 /// 5,45x39mm
-local loaded545 = loaded .. "Laddat med " .. col.b .. "5,45x39mm" .. col.e .. " som används av AK 5,45 och derivat." .. changeammo.smg1
+local loaded545 = loaded .. "Laddat med <color=160,160,255>5,45x39mm</color> som används av AK 5,45 och derivat." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30-Patroner 5,45x39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30P 5,45 (P)"
@@ -899,7 +892,7 @@ L["uplp_ak_mag_545_drum.compactname"] = "85P 5,45 T"
 L["uplp_ak_mag_545_drum.description"] = "85-patroners cylindriskt trummagasin från HPK M16." .. loaded545
 
 /// 5,56×45mm NATO
-local loaded556 = loaded .. "Laddat med " .. col.b .. "5,56×45mm" .. col.e .. " som används av AK M10 5,56." .. changeammo.smg1
+local loaded556 = loaded .. "Laddat med <color=160,160,255>5,56×45mm</color> som används av AK M10 5,56." .. changeammo.smg1
 
 L["uplp_ak_mag_556_30.printname"] = "30-Patroner 5,56×45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30P 5,56 (P)"
@@ -916,11 +909,11 @@ L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin som används på A
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Patroner 7,62×51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20S 7,62×51"
-L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med " .. col.b .. "7,62×51mm patroner" .. col.e .. " som används på AK M308-geväret." .. changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med <color=160,160,255>7,62×51mm patroner</color> som används på AK M308-geväret." .. changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9×39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20S 9×39mm"
-L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med " .. col.b .. "9×39mm patroner" .. col.e .. " som används av AK 9mm.\nEndast ett par hundra AK 9mm gjordes!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med <color=160,160,255>9×39mm patroner</color> som används av AK 9mm.\nEndast ett par hundra AK 9mm gjordes!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "M10 Mynningsbroms"
@@ -974,7 +967,7 @@ L["uplp_ak_stock_skele.description"] = "Vikbar, lättvikt kolv som används av A
 
 L["uplp_ak_stock_old.printname"] = "Gammaldags Kolv"
 L["uplp_ak_stock_old.compactname"] = "Gammaldags"
-L["uplp_ak_stock_old.description"] = "Gammaldags kolv som användes av dem första AK 7,62-gevären.\nEn riktigt gammal goding, denna!\nKombinera med " .. col.b .. "Gammaldags Dammskydd" .. col.e .. " för att ändra utseendet på lådan."
+L["uplp_ak_stock_old.description"] = "Gammaldags kolv som användes av dem första AK 7,62-gevären.\nEn riktigt gammal goding, denna!\nKombinera med <color=160,160,255>Gammaldags Dammskydd</color> för att ändra utseendet på lådan."
 
 L["uplp_ak_stock_rpk.printname"] = "HPK-Kolv"
 L["uplp_ak_stock_rpk.compactname"] = "HPK"
@@ -2274,3 +2267,11 @@ L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (R
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
+
+//////////////////// Mick Strider's Bowie Knife
+L["uplp_weapon_knife"] = "Badlands-Bowie"
+L["uplp_weapon_knife_desc"] = "En anpassad bowie-kniv gjord för användning i tuffa miljöer. Dess blad är vasst och handtaget är bekvämt, vilket gör det enkelt att dö- jag menar öppna paket du mottar... ja, det är exakt det jag menade."
+
+L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
+
+L["uplp_weapon_knife_manufacturer"] = "Mick Strider"

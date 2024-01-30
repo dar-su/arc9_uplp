@@ -1,12 +1,5 @@
 L = {}
 
-local col = {
-r = "<color=255,100,100>",
-g = "<color=100,255,100>",
-b = "<color=160,160,255>",
-e = "</color>"
-}
-
 local lineb = "\n"
 
 local changeammo = {
@@ -683,7 +676,7 @@ L["uplp_ak_dc_flat.description"] = "Smoothened out dust cover used on the AK 5.4
 
 L["uplp_ak_dc_old.printname"] = "Vintage Dust Cover"
 L["uplp_ak_dc_old.compactname"] = "Vintage"
-L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK 7.62.\nCombine with " .. col.b .. "Vintage Stock" .. col.e .. " to change receiver appearance."
+L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK 7.62.\nCombine with <color=160,160,255>Vintage Stock</color> to change receiver appearance."
 
 L["uplp_ak_dc_rail.printname"] = "PAWCO Dust Cover with Rail"
 L["uplp_ak_dc_rail.compactname"] = "PAWCO"
@@ -835,7 +828,7 @@ L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan
 ////// Magazines
 /// 7.62×39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Loaded with " .. col.b .. "7.62×39mm Soviet" .. col.e .. " used by the AK 7.62, AK M10 and AK M16 5.56."
+local loaded762 = loaded .. "Loaded with <color=160,160,255>7.62×39mm Soviet</color> used by the AK 7.62, AK M10 and AK M16 5.56."
 
 L["uplp_ak_mag_762_30_std.printname"] = "30-Round 7.62×39mm"
 L["uplp_ak_mag_762_30_std.compactname"] = "30R 7.62"
@@ -874,7 +867,7 @@ L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
 L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
 
 /// 5.45×39mm
-local loaded545 = loaded .. "Loaded with " .. col.b .. "5.45×39mm" .. col.e .. " used by the AK 5.45 and derivatives." .. changeammo.smg1
+local loaded545 = loaded .. "Loaded with <color=160,160,255>5.45×39mm</color> used by the AK 5.45 and derivatives." .. changeammo.smg1
 
 L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45×39mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
@@ -905,7 +898,7 @@ L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"
 L["uplp_ak_mag_545_drum.description"] = "85-round cylindrical drum magazine from the HPK M16." .. loaded545
 
 /// 5.56×45mm NATO
-local loaded556 = loaded .. "Loaded with " .. col.b .. "5.56×45mm" .. col.e .. " used by the AK M10 5.56." .. changeammo.smg1
+local loaded556 = loaded .. "Loaded with <color=160,160,255>5.56×45mm</color> used by the AK M10 5.56." .. changeammo.smg1
 
 L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
@@ -922,11 +915,11 @@ L["uplp_ak_mag_556_30_12.description"] = "30-round magazine used on AK M23 5.56 
 /// Other
 L["uplp_ak_mag_308_20.printname"] = "20-Round 7.62×51mm"
 L["uplp_ak_mag_308_20.compactname"] = "20R 7.62×51"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with " .. col.b .. "7.62×51mm rounds" .. col.e .. " used on AK M308 rifle." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with <color=160,160,255>7.62×51mm rounds</color> used on AK M308 rifle." ..  changeammo["357"]
 
 L["uplp_ak_mag_939_30.printname"] = "20-Round 9×39mm"
 L["uplp_ak_mag_939_30.compactname"] = "20R 9×39mm"
-L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with " .. col.b .. "9×39mm rounds" .. col.e .. " used by the AK 9mm.\nOnly a few hundred of the AK 9mm were ever made!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with <color=160,160,255>9×39mm rounds</color> used by the AK 9mm.\nOnly a few hundred of the AK 9mm were ever made!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "M10 Muzzle Brake"
@@ -980,7 +973,7 @@ L["uplp_ak_stock_skele.description"] = "Folding lightweight stock used on the AK
 
 L["uplp_ak_stock_old.printname"] = "Vintage Stock"
 L["uplp_ak_stock_old.compactname"] = "Vintage"
-L["uplp_ak_stock_old.description"] = "Vintage stock used on the first variants of AK 7.62 rifles.\nA real vintage classic, this one!\nCombine with " .. col.b .. "Vintage Dust Cover" .. col.e .. " to change receiver appearance."
+L["uplp_ak_stock_old.description"] = "Vintage stock used on the first variants of AK 7.62 rifles.\nA real vintage classic, this one!\nCombine with <color=160,160,255>Vintage Dust Cover</color> to change receiver appearance."
 
 L["uplp_ak_stock_rpk.printname"] = "HPK Stock"
 L["uplp_ak_stock_rpk.compactname"] = "HPK"
@@ -2279,3 +2272,11 @@ L["uplp_weapon_rsh12_desc"] = "The \"Разрушитель запястий 12.
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
+
+//////////////////// Mick Strider's Bowie Knife
+L["uplp_weapon_knife"] = "Badlands Bowie"
+L["uplp_weapon_knife_desc"] = "A custom-made bowie knife meant for use in harsher environments. Its blade is razor sharp and its handle is comfortable, making it really easy to ki- I mean open packages you receive... yes, that's what I meant."
+
+L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
+
+L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
