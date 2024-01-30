@@ -71,6 +71,7 @@ SWEP.SprintAng = Angle(0, 0, 0)
 ---- Weapon Stats and Behaviour
 SWEP.Bash = true
 SWEP.PrimaryBash = true
+SWEP.SecondaryBash = true
 SWEP.HasSights = false
 SWEP.NoAimAssist = true
 
@@ -152,6 +153,7 @@ SWEP.HoldTypeNPC = nil
 SWEP.CustomizePos = Vector(-9, 20, -14)
 SWEP.CustomizeAng = Angle(0, 60, 0)
 SWEP.CustomizeRotateAnchor = Vector(14, -1.93, -3)
+
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 70
@@ -316,7 +318,10 @@ SWEP.AttachmentElements = {
     -- ["uplp_m9_receiver_raffica"] = { Bodygroups = { { 0, 1 }, { 1, 1 } }, AttPosMods = {
     -- [2] = { Pos = Vector(0, -0.9, -1.65), },
     -- }},
-    -- ["uplp_m9_receiver_a3"] = { Bodygroups = { { 0, 2 } } },
+    ["uplp_knife_skin_black"] = { Bodygroups = { { 0, 1 } } },
+    ["uplp_knife_skin_chrome"] = { Bodygroups = { { 0, 2 } }, Skin = 1 },
+    ["uplp_knife_skin_gold"] = { Bodygroups = { { 0, 3 } }, Skin = 2 },
+    ["uplp_knife_skin_blue"] = { Bodygroups = { { 0, 4 } }, Skin = 3 },
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -325,11 +330,28 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     -- Cosmetic shit
     {
+        PrintName = ARC9:GetPhrase("uplp_category_appearance"),
+        Category = {"uplp_knife_skin"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0, -1),
+        Ang = Angle(90, 90, 180),
+        CosmeticOnly = true,
+    },
+    {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
-        StickerModel = "models/weapons/arc9/uplp/stickers/beretta_1.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/knife_1.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.5, -0.5, 0.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/knife_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.5, -3, 0.5),
         Ang = Angle(90, 0, -90),
     },
     {
