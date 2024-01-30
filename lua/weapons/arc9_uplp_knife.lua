@@ -65,6 +65,9 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE 
 
+SWEP.SprintPos = Vector(0, 0, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
+
 ---- Weapon Stats and Behaviour
 SWEP.Bash = true
 SWEP.PrimaryBash = true
@@ -235,6 +238,18 @@ SWEP.Animations = {
         },
     },
 
+    ["idle_sprint"] = {
+        Source = "sprint",
+		Mult = 0.9,
+    },
+    ["exit_sprint"] = {
+        Source = "sprint_out",
+    },
+    ["enter_sprint"] = {
+        Source = "sprint_in",
+		IKTimeLine = { { t = 0,  lhik = 1, rhik = 1} },
+    },
+	
     ["bash"] = {
         Source = {"swing1", "swing2", "swing3"},
 		Mult = 0.75,
