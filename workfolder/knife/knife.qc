@@ -73,6 +73,28 @@ $sequence "inspect" {
 	fps 24
 }
 
+$sequence "sprint" {
+	"anims\sprint.smd"
+	fps 28
+	fadein 0.35
+	fadeout 0.35
+	frame 0 31
+	loop
+}
+
+$sequence "sprint_in" {
+	"anims\sprint_in.smd"
+	fps 28
+	fadein 0.3
+	fadeout 0.3
+}
+$sequence "sprint_out" {
+	"anims\sprint_out.smd"
+	fps 28
+	fadein 0.3
+	fadeout 0.3
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"
