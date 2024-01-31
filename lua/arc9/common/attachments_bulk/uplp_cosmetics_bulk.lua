@@ -60,7 +60,7 @@ Probably an icon of this addon
 Charm included in Poly Arms Project.]]
 ATT.MenuCategory = "ARC9 - Charms"
 
-ATT.Model = "models/items/arc9/att_charmbase.mdl"
+ATT.Model = "models/weapons/arc9/uplp/charm_ring.mdl"
 
 ATT.CharmModel = "models/weapons/arc9/uplp/charm_paw.mdl"
 ATT.CharmBone = "ring3"
@@ -85,7 +85,7 @@ Imagine this but on those rapper SWAG chains
 Charm included in Poly Arms Project.]]
 ATT.MenuCategory = "ARC9 - Charms"
 
-ATT.Model = "models/items/arc9/att_charmbase.mdl"
+ATT.Model = "models/weapons/arc9/uplp/charm_ring_big.mdl"
 
 ATT.CharmModel = "models/weapons/arc9/uplp/charm_title.mdl"
 ATT.CharmBone = "ring3"
