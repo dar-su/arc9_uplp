@@ -43,6 +43,7 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_knife.mdl"
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.TPIKParentToSpine4 = true
+SWEP.TPIKNoSprintAnim = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-8.5, 13, 5),
@@ -183,6 +184,15 @@ SWEP.MeleeHitSound = {
     pathUT .. "slash-06.ogg",
 }
 
+SWEP.MeleeHitWallSound = {
+    pathUT .. "hit-01.ogg",
+    pathUT .. "hit-02.ogg",
+    pathUT .. "hit-03.ogg",
+    pathUT .. "hit-04.ogg",
+    pathUT .. "hit-05.ogg",
+    pathUT .. "hit-06.ogg",
+}
+
 
 local randcloth = {
     pathUTC .. "cloth_1.ogg",
@@ -292,6 +302,8 @@ SWEP.AttachmentElements = {
     ["uplp_knife_skin_chrome"] = { Bodygroups = { { 0, 2 } }, Skin = 1 },
     ["uplp_knife_skin_gold"] = { Bodygroups = { { 0, 3 } }, Skin = 2 },
     ["uplp_knife_skin_blue"] = { Bodygroups = { { 0, 4 } }, Skin = 3 },
+    ["uplp_knife_skin_red"] = { Bodygroups = { { 0, 6 } }, Skin = 1 },
+    ["uplp_knife_skin_orange"] = { Bodygroups = { { 0, 5 } }, Skin = 1 },
 }
 
 SWEP.StickersNoNocull = true

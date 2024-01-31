@@ -6,8 +6,11 @@ $bodygroup "knif" { // 0
 	studio "knif_chrom.smd"
 	studio "knif_gold.smd"
 	studio "knif_blue.smd"
+	studio "knif_orange.smd"
+	studio "knif_red.smd"
 	blank
-}  
+}
+
 $cdmaterials "models\weapons\arc9\uplp"
 
 $texturegroup skinfamilies

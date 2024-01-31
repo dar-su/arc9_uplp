@@ -60,3 +60,33 @@ ATT.Category = "uplp_knife_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_knife_skin_gold")
+
+---------- uplp_knife_skin_red
+
+ATT = {}
+
+ATT.PrintName = "Red Soda"
+ATT.CompactName = "Red Soda"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "red.png", "mips smooth")
+
+ATT.Category = "uplp_knife_skin"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_knife_skin_red")
+
+---------- uplp_knife_skin_orange
+
+ATT = {}
+
+ATT.PrintName = "Fox or something "
+ATT.CompactName = "ghh"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "orange.png", "mips smooth")
+
+ATT.Category = "uplp_knife_skin"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_knife_skin_orange")
