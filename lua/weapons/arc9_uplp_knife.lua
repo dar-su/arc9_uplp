@@ -84,6 +84,7 @@ SWEP.NoAimAssist = true
 SWEP.CanLean = false 
 SWEP.Crosshair = false  
 SWEP.NotForNPCs = true   
+SWEP.SprintToFireTime = 0.5
 
 -- Damage
 SWEP.BashDamage = 50
@@ -144,10 +145,6 @@ SWEP.HoldTypeSights = nil
 SWEP.HoldTypeCustomize = nil
 SWEP.HoldTypeNPC = nil
 
--- NPC Info
--- SWEP.NPCWeaponType = "weapon_pistol"
--- SWEP.NPCWeight = 60
-
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(-7, 15, -13.5)
@@ -164,35 +161,40 @@ SWEP.ShouldDropMagEmpty = false
 
 ---- Sounds
 
--- local pathRZ = "uplp_rz/57/"
--- urbna!
-local pathUT = "uplp_urban_temp/beretta/"
+local pathUT = "uplp_rz/knife/"
 local pathUTC = "uplp_urban_temp/common/"
-local path1911 = "uplp_urban_temp/1911/"
+local path1911 = "uplp_urban_temp/1911/" -- temp for draw sounds
 
-SWEP.ShootSound = {
-    path1911 .. "fire-9-01.ogg",
+SWEP.MeleeSwingSound = {
+    pathUT .. "swing-01.ogg",
+    pathUT .. "swing-02.ogg",
+    pathUT .. "swing-03.ogg",
+    pathUT .. "swing-04.ogg",
+    pathUT .. "swing-05.ogg",
+    pathUT .. "swing-06.ogg",
 }
 
-local UTCrattle = {
-    pathUTC .. "pistol_rattle_1.ogg",
-    pathUTC .. "pistol_rattle_2.ogg",
-    pathUTC .. "pistol_rattle_3.ogg",
-    pathUTC .. "pistol_rattle_4.ogg",
+SWEP.MeleeHitSound = {
+    pathUT .. "slash-01.ogg",
+    pathUT .. "slash-02.ogg",
+    pathUT .. "slash-03.ogg",
+    pathUT .. "slash-04.ogg",
+    pathUT .. "slash-05.ogg",
+    pathUT .. "slash-06.ogg",
 }
 
-SWEP.SprintToFireTime = 0.5
+
+local randcloth = {
+    pathUTC .. "cloth_1.ogg",
+    pathUTC .. "cloth_2.ogg",
+    pathUTC .. "cloth_4.ogg",
+    pathUTC .. "cloth_5.ogg",
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        EventTable = {
-            {hide = 1, t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1, rhik = 1 },
-            { t = 1, lhik = 1, rhik = 1 },
-        },
     },
 
     ["idle_sprint"] = {
@@ -211,7 +213,9 @@ SWEP.Animations = {
     ["bash"] = {
         Source = {"swing1", "swing2", "swing3"},
 		Mult = 0.85,
-        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        EventTable = {
+            { s = randcloth, t = 0.3 },
+        },
     },
 
 
@@ -227,6 +231,15 @@ SWEP.Animations = {
     --         { s = pathUTC .. "cloth_1.ogg", t = 45 / 30, c = ca },
     --     },
     -- },
+
+    ["ready"] = {
+        Source = "draw",
+        MinProgress = 0.4,
+        FireASAP = true,
+        EventTable = {
+            { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+        },
+    },
 
     ["draw"] = {
         Source = "draw",
