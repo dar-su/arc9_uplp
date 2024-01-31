@@ -95,12 +95,12 @@ L["uplp_general"] = "Model & animations edits5"
 
 /////////// Weapon Categories
 L["uplp_category_weapon_ar"] = "Assault Rifles"
-L["uplp_category_weapon_melee"] = "Melees"
 L["uplp_category_weapon_mg"] = "Machine Guns"
 L["uplp_category_weapon_pistol"] = "Pistols"
 L["uplp_category_weapon_shotgun"] = "Shotguns"
 L["uplp_category_weapon_smg"] = "Submachine Guns"
 L["uplp_category_weapon_sniper"] = "Sniper Rifles"
+L["uplp_category_weapon_other"] = "Оther" -- Russian O to have melees on bottom of spawnmenu
 
 L["uplp_category_weapon_heavy"] = "Heavy Weapons"
 
@@ -2294,7 +2294,7 @@ L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie.
 
 L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname")
 L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname")
-L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle."
+L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle.\n\n<color=255,255,100>Skin only for darsubscribers - become one on boosty.to/darsu</color><color=255,55,55> (do not equip if you aren't darsubscriber)</color>"
 
 L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname")
 L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname")

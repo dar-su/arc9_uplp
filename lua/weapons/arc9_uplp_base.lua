@@ -51,8 +51,8 @@ SWEP.ViewModelFOVBase = 70
 SWEP.ActivePos = Vector(-0.1, -0.1, 0.1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.HolsterPos = Vector(1, 0, -3)
-SWEP.HolsterAng = Angle(40, -10, -40)
+SWEP.HolsterPos = Vector(0, 0, -1)
+SWEP.HolsterAng = Angle(0, -10, 0)
 
 SWEP.CrouchPos = Vector(-1, 1, -2)
 SWEP.CrouchAng = Angle(0, 0, -25)
