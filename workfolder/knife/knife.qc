@@ -48,22 +48,22 @@ $sequence "swing1" {
 	"anims\swing1.smd"
 	fps 27
 	"ACT_VM_PRIMARYATTACK" 1
-	fadein 0.02
-	fadeout 0.08
+	fadein 0.1
+	fadeout 0.16
 }
 $sequence "swing2" {
 	"anims\swing2.smd"
 	fps 27
 	"ACT_VM_PRIMARYATTACK" 1
-	fadein 0.02
-	fadeout 0.08
+	fadein 0.1
+	fadeout 0.16
 }
 $sequence "swing3" {
 	"anims\swing3.smd"
 	fps 27
 	"ACT_VM_PRIMARYATTACK" 1
-	fadein 0.02
-	fadeout 0.08
+	fadein 0.1
+	fadeout 0.16
 }
 
 $sequence "ready" {
@@ -148,3 +148,4 @@ $bonemerge "ValveBiped.Bip01_R_Finger12"
 $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
+$bonemerge "charmbone"

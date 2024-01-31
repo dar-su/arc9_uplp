@@ -12,22 +12,21 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_knife")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_knife_desc")
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_melee") -- In the Customization Menu
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_melee") -- In the Spawnmenu
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_other") -- In the Spawnmenu
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_knife_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_knife_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_year"), "???", "???" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = "~ 2000",
 }
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan, TastyTony",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
+    [ string.sub(ARC9:GetPhrase( "uplp_animations" ), 1, -2) .. " & " .. ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
-    [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
+    -- [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",  
 }
 
 SWEP.StandardPresets = {
@@ -39,7 +38,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_knife.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_beretta.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_knife.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -57,6 +56,12 @@ SWEP.ViewModelFOVBase = 75
 
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.CrouchPos = Vector(0, 3, 1)
+SWEP.CrouchAng = Angle(0, 0, -0)
+
+SWEP.HolsterPos = Vector(0, -0, -1)
+SWEP.HolsterAng = Angle(0, -5, 0)
+
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
@@ -67,12 +72,18 @@ SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.RestPos = Vector(0, 0, 0)
+SWEP.RestAng = Angle(0, 0, 0)
 
 ---- Weapon Stats and Behaviour
 SWEP.Bash = true
 SWEP.PrimaryBash = true
+SWEP.SecondaryBash = true
 SWEP.HasSights = false
 SWEP.NoAimAssist = true
+SWEP.CanLean = false 
+SWEP.Crosshair = false  
+SWEP.NotForNPCs = true   
 
 -- Damage
 SWEP.BashDamage = 50
@@ -137,24 +148,15 @@ SWEP.HoldTypeNPC = nil
 -- SWEP.NPCWeaponType = "weapon_pistol"
 -- SWEP.NPCWeight = 60
 
--- Iron Sight and Sight Info
--- SWEP.IronSights = {
-     -- Pos = Vector(-1.92, -2, 0.79),
-     -- Ang = Angle(0, 0.25, 0),
-     -- Magnification = 1.1,
-     -- ViewModelFOV = 70,
--- }
-
--- SWEP.PeekPos = Vector(-1, 1, -3)
--- SWEP.PeekAng = Angle(-0.25, 0.5, -40)
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(-9, 20, -14)
+SWEP.CustomizePos = Vector(-7, 15, -13.5)
 SWEP.CustomizeAng = Angle(0, 60, 0)
 SWEP.CustomizeRotateAnchor = Vector(14, -1.93, -3)
 
+
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeSnapshotFOV = 55
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
@@ -170,41 +172,6 @@ local path1911 = "uplp_urban_temp/1911/"
 
 SWEP.ShootSound = {
     path1911 .. "fire-9-01.ogg",
-    -- path1911 .. "fire-9-02.ogg",
-    -- path1911 .. "fire-9-03.ogg",
-    -- path1911 .. "fire-9-04.ogg",
-    -- path1911 .. "fire-9-05.ogg",
-    -- path1911 .. "fire-9-06.ogg",
-}
-
----- Animations
--- HideBones, BulletBones, etc.
-SWEP.BulletBones = {
-    -- [1] = "bullet1",
-    -- [2] = "bullet2",
-    -- [3] = "bullet3",
-}
-
--- SWEP.HideBones = {
---     "magb",
--- }
-
-SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "bullet1",
-        -- "bullet2",
-        -- "bullet3",
-    -- },
-}
-
-local mechh = {
-    path1911 .. "mech-01.ogg",
-    path1911 .. "mech-02.ogg",
-    path1911 .. "mech-03.ogg",
-    path1911 .. "mech-04.ogg",
-    path1911 .. "mech-05.ogg",
-    path1911 .. "mech-06.ogg",
 }
 
 local UTCrattle = {
@@ -214,17 +181,7 @@ local UTCrattle = {
     pathUTC .. "pistol_rattle_4.ogg",
 }
 
-local thetoggle = {{
-    s = {
-        "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
-        "arc9/toggles/flashlight_laser_toggle_off_02.ogg",
-        "arc9/toggles/flashlight_laser_toggle_off_03.ogg",
-        "arc9/toggles/flashlight_laser_toggle_on_01.ogg",
-        "arc9/toggles/flashlight_laser_toggle_on_02.ogg",
-        "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
-    }, t = 0
-}}
-
+SWEP.SprintToFireTime = 0.5
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -240,34 +197,41 @@ SWEP.Animations = {
 
     ["idle_sprint"] = {
         Source = "sprint",
-		Mult = 0.9,
+		Mult = 1.0,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
+		Mult = 3.0,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-		IKTimeLine = { { t = 0,  lhik = 1, rhik = 1} },
+		Mult = 3.0,
     },
 	
     ["bash"] = {
         Source = {"swing1", "swing2", "swing3"},
-		Mult = 0.75,
+		Mult = 0.85,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },
 
 
-    ["ready"] = {
-        Source = "ready",
-        Mult = 1,
-        EventTable = {
-            { s = pathUT .. "slidepull.ogg", t = 5 / 60, c = ca, v = 0.8 },
-            { s = pathUT .. "sliderel.ogg", t = 15 / 60, c = ca, v = 0.8 },
-        },
-    },
+    -- ["ready"] = {
+    --     Source = "ready",
+    --     Mult = 0.95,
+    --     EventTable = {
+    --         { s = pathUTC .. "magpouch.ogg", t = 0, c = ca, v = 0.5 },
+    --         { s = pathUTC .. "grab.ogg", t = 7 / 30, c = ca, v = 0.1 },
+    --         { s = pathUTC .. "cloth_5.ogg", t = 17.5 / 30, c = ca },
+    --         -- { s = pathUTC .. "cloth_4.ogg", t = 50 / 30, c = ca },
+    --         { s = pathUTC .. "grab.ogg", t = 50 / 30, c = ca, v = 0.1 },
+    --         { s = pathUTC .. "cloth_1.ogg", t = 45 / 30, c = ca },
+    --     },
+    -- },
 
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.4,
+        FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -275,7 +239,8 @@ SWEP.Animations = {
 
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgress = 0.7,
+		Mult = 0.9,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -287,57 +252,72 @@ SWEP.Animations = {
         Source = "inspect",
         EventTable = {
             { s = pathUTC .. "cloth_5.ogg", t = 5 / 30, c = ca },
-            { s = pathUTC .. "grab.ogg", t = 7 / 30, c = ca },
+            { s = pathUTC .. "grab.ogg", t = 7 / 30, c = ca, v = 0.1 },
             { s = pathUTC .. "cloth_5.ogg", t = 17.5 / 30, c = ca },
             { s = pathUTC .. "cloth_4.ogg", t = 50 / 30, c = ca },
-            { s = pathUTC .. "grab.ogg", t = 92 / 30, c = ca },
+            { s = pathUTC .. "grab.ogg", t = 92 / 30, c = ca, v = 0.1 },
             { s = pathUTC .. "cloth_1.ogg", t = 95 / 30, c = ca },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1, rhik = 1  },
-            { t = 0.2, lhik = 0, rhik = 0  },
-            { t = 0.98, lhik = 0, rhik = 0 },
-            { t = 1, lhik = 1, rhik = 1 },
         },
     },
 
 }
 
 ---- Attachments
-SWEP.Hook_ModifyBodygroups = function(wep, data)
-    local eles = data.elements
-    local mdl = data.model
+-- SWEP.Hook_ModifyBodygroups = function(wep, data)
+--     local eles = data.elements
+--     local mdl = data.model
 
     -- if eles["uplp_m9_mag_20"] then mdl:SetBodygroup(2, 2) end
 	
-end
+-- end
 
 SWEP.AttachmentElements = {
     -- ["uplp_m9_receiver_raffica"] = { Bodygroups = { { 0, 1 }, { 1, 1 } }, AttPosMods = {
     -- [2] = { Pos = Vector(0, -0.9, -1.65), },
     -- }},
-    -- ["uplp_m9_receiver_a3"] = { Bodygroups = { { 0, 2 } } },
+    ["uplp_knife_skin_black"] = { Bodygroups = { { 0, 1 } } },
+    ["uplp_knife_skin_chrome"] = { Bodygroups = { { 0, 2 } }, Skin = 1 },
+    ["uplp_knife_skin_gold"] = { Bodygroups = { { 0, 3 } }, Skin = 2 },
+    ["uplp_knife_skin_blue"] = { Bodygroups = { { 0, 4 } }, Skin = 3 },
 }
 
+SWEP.StickersNoNocull = true
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
 
 SWEP.Attachments = {
     -- Cosmetic shit
     {
+        PrintName = ARC9:GetPhrase("uplp_category_appearance"),
+        Category = {"uplp_knife_skin"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0, -1),
+        Ang = Angle(90, 90, 180),
+        CosmeticOnly = true,
+    },
+    {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
-        StickerModel = "models/weapons/arc9/uplp/stickers/beretta_1.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/knife_1.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.5, -0.5, 0.5),
         Ang = Angle(90, 0, -90),
     },
     {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/knife_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.5, -3, 0.5),
+        Ang = Angle(90, 0, -90),
+    },
+    {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
-        Bone = "body",
-        Pos = Vector(0.15, 2.46, 1.25),
-        Ang = Angle(0, 180, 18),
+        Bone = "charmbone",
+        Pos = Vector(0, 0, 0),
+        Ang = Angle(-5, 180, 0),
 		RejectAttachments = {
 		["charm_gs_clock"] = true,
 		["charm_gs_killcounter"] = true,
@@ -346,24 +326,12 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.HookP_NameChange = function(self, name)
-    local att = self:GetElements()
+-- SWEP.HookP_NameChange = function(self, name)
+--     local att = self:GetElements()
 
-    if att["uplp_m9_receiver_raffica"] then
-        name = ARC9:GetPhrase("uplp_weapon_m9_raffica")
-    end
+--     if att["uplp_m9_receiver_raffica"] then
+--         name = ARC9:GetPhrase("uplp_weapon_m9_raffica")
+--     end
 
-    if att["uplp_m9_receiver_a3"] or att["uplp_m9_receiver_a3t"] then
-        name = ARC9:GetPhrase("uplp_weapon_m9_a3")
-    end
-
-    if att["uplp_m9_receiver_sc"] then
-        name = ARC9:GetPhrase("uplp_weapon_m9_sc")
-    end
-
-    if att["uplp_m9_receiver_robocop"] then
-        name = ARC9:GetPhrase("uplp_weapon_m9_robocop")
-    end
-
-    return name
-end
+--     return name
+-- end

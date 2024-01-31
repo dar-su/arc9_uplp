@@ -122,6 +122,7 @@ L["uplp_category_appearance"] = "Utseende"
 L["uplp_category_barrel"] = "Pipa"
 L["uplp_category_backup"] = "Reservsikte"
 L["uplp_category_bipod"] = "Benstöd"
+L["uplp_category_blade"] = "Blad"
 L["uplp_category_charginghandle"] = "Manöverhandtag"
 L["uplp_category_charm"] = "Smycke"
 L["uplp_category_dovetail"] = "Laxstjärt"
@@ -130,6 +131,7 @@ L["uplp_category_extra"] = "Extras"
 L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
 L["uplp_category_handguard"] = "Handskydd"
+L["uplp_category_handle"] = "Handtag"
 L["uplp_category_internals"] = "Interndelar"
 L["uplp_category_magazine"] = "Magasin"
 L["uplp_category_magwell"] = "Magasinbrunn"
@@ -2275,3 +2277,14 @@ L["uplp_weapon_knife_desc"] = "En anpassad bowie-kniv gjord för användning i t
 L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
+
+////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
+L["uplp_knife_skin_black.description"] = "Mörk mattsvart version av Badlands-Bowie-kniven."
+
+L["uplp_knife_skin_chrome.printname"] = "Krom"
+L["uplp_knife_skin_chrome.compactname"] = "Krom"
+L["uplp_knife_skin_chrome.description"] = "Kromversion av Badlands-Bowie-kniven. Kommer med ett handtag färgat rött."
+
+L["uplp_knife_skin_gold.description"] = "Guldversion av Badlands-Bowie-kniven. Kommer med ett tanfärgat handtag."
+
+L["uplp_knife_skin_blue.description"] = "Metallisk blå version av Badlands-Bowie-kniven. Kommer med ett handtag färgat mörkblå.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus.""

@@ -122,6 +122,7 @@ L["uplp_category_appearance"] = "Внешний вид"
 L["uplp_category_backup"] = "Доп. прицел"
 L["uplp_category_barrel"] = "Ствол"
 L["uplp_category_bipod"] = "Сошки"
+-- L["uplp_category_blade"] = "Blade"
 L["uplp_category_charginghandle"] = "Взвод"
 L["uplp_category_charm"] = "Брелок"
 L["uplp_category_dovetail"] = "Ласт. хвост"
@@ -130,6 +131,7 @@ L["uplp_category_extra"] = "Доп."
 L["uplp_category_gasblock"] = "Газ. блок"
 L["uplp_category_grip"] = "Рукоять"
 L["uplp_category_handguard"] = "Цевьё"
+-- L["uplp_category_handle"] = "Handle"
 L["uplp_category_internals"] = "Компоненты"
 L["uplp_category_magazine"] = "Магазин"
 L["uplp_category_magwell"] = "Магвел"
@@ -2280,3 +2282,14 @@ L["uplp_weapon_rsh12_manufacturer"] = "Конструкторское бюро �
 L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
+
+////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
+-- L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Bowie."
+
+-- L["uplp_knife_skin_chrome.printname"] = "Chrome"
+-- L["uplp_knife_skin_chrome.compactname"] = "Chrome"
+-- L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
+
+-- L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle."
+
+-- L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
