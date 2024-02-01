@@ -150,7 +150,8 @@ SWEP.HoldTypeNPC = nil
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(-7, 15, -13.5)
 SWEP.CustomizeAng = Angle(0, 60, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -7, -3)
+-- SWEP.CustomizeRotateAnchor = Vector(15, -7, -3)
+SWEP.CustomizeRotateAnchor = Vector(20, -3.2, -59)
 
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
