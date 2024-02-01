@@ -66,7 +66,7 @@ ARC9.LoadAttachment(ATT, "uplp_knife_skin_gold")
 ATT = {}
 
 ATT.PrintName = "Red Soda"
-ATT.CompactName = "Red Soda"
+ATT.CompactName = "Red"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "red.png", "mips smooth")
@@ -80,8 +80,8 @@ ARC9.LoadAttachment(ATT, "uplp_knife_skin_red")
 
 ATT = {}
 
-ATT.PrintName = "Fox or something "
-ATT.CompactName = "ghh"
+ATT.PrintName = "Fox Orange"
+ATT.CompactName = "Orange"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "orange.png", "mips smooth")

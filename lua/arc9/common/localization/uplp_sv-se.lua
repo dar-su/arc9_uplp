@@ -2272,19 +2272,27 @@ L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
 
 //////////////////// Mick Strider's Bowie Knife
 L["uplp_weapon_knife"] = "Badlands-Bowie"
-L["uplp_weapon_knife_desc"] = "En anpassad bowie-kniv gjord för användning i tuffa miljöer. Dess blad är vasst och handtaget är bekvämt, vilket gör det enkelt att dö- jag menar öppna paket du mottar... ja, det är exakt det jag menade."
+L["uplp_weapon_knife_desc"] = "En anpassad bowiekniv gjord för användning i tuffa miljöer. Dess blad är vasst och handtaget är bekvämt, vilket gör det enkelt att dö- jag menar öppna paket du mottar... ja, det är exakt det jag menade."
 
-L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
+L["uplp_weapon_knife_real"] = "Mick Striders Bowiekniv"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
 ////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
-L["uplp_knife_skin_black.description"] = "Mörk mattsvart version av Badlands-Bowie-kniven."
+L["uplp_knife_skin_black.description"] = "Mörk mattsvart version av Badlands-Bowiekniven."
 
 L["uplp_knife_skin_chrome.printname"] = "Krom"
 L["uplp_knife_skin_chrome.compactname"] = "Krom"
-L["uplp_knife_skin_chrome.description"] = "Kromversion av Badlands-Bowie-kniven. Kommer med ett handtag färgat rött."
+L["uplp_knife_skin_chrome.description"] = "Kromversion av Badlands-Bowiekniven. Kommer med ett handtag färgat rött."
 
-L["uplp_knife_skin_gold.description"] = "Guldversion av Badlands-Bowie-kniven. Kommer med ett tanfärgat handtag."
+L["uplp_knife_skin_gold.description"] = "Guldversion av Badlands-Bowiekniven. Kommer med ett tanfärgat handtag.\n\n<color=255,255,100>Utseende endast till darprenumeranter - bli en idag via boosty.to/darsu</color><color=255,55,55> (utrusta ej om du inte är darprenumerant)</color>"
 
-L["uplp_knife_skin_blue.description"] = "Metallisk blå version av Badlands-Bowie-kniven. Kommer med ett handtag färgat mörkblå.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus.""
+L["uplp_knife_skin_blue.description"] = "Metallisk blå version av Badlands-Bowiekniven. Kommer med ett handtag färgat mörkblå.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus."
+
+L["uplp_knife_skin_red.printname"] = "\"Red Soda\""
+L["uplp_knife_skin_red.compactname"] = "Röd"
+L["uplp_knife_skin_red.description"] = "Metallisk röd version av Badlands-Bowiekniven. Kommer med ett anpassat blad med en utskuren tass, och ett handtag med vita tassar inbäddade på den."
+
+L["uplp_knife_skin_orange.printname"] = "Rävig Orange"
+L["uplp_knife_skin_orange.compactname"] = "Orange"
+L["uplp_knife_skin_orange.description"] = "Metallisk orange version av Badlands-Bowiekniven. Kommer med ett anpassat blad med en utskuren tass, och ett brunt handtag med vita tassar inbäddade på den."

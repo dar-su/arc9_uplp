@@ -2284,6 +2284,14 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 -- L["uplp_knife_skin_chrome.compactname"] = "Chrome"
 -- L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
 
--- L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle."
+-- L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle.\n\n<color=255,255,100>Skin only for darsubscribers - become one on boosty.to/darsu</color><color=255,55,55> (do not equip if you aren't darsubscriber)</color>"
 
 -- L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nEsta variante del azul recibe el sobrenombre de \"Azul Cylo\", debe su nombre a una especie exótica de murciélago."
+
+-- L["uplp_knife_skin_red.printname"] = "Red Soda"
+-- L["uplp_knife_skin_red.compactname"] = "Red"
+-- L["uplp_knife_skin_red.description"] = "Metallic red variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw, and a handle with white paws embedded on it."
+
+-- L["uplp_knife_skin_orange.printname"] = "Foxy Orange"
+-- L["uplp_knife_skin_orange.compactname"] = "Orange"
+-- L["uplp_knife_skin_orange.description"] = "Metallic orange variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw and a brown handle with white paws embedded on it."

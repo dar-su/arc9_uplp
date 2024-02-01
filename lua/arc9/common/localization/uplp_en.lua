@@ -2299,3 +2299,11 @@ L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. C
 L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname")
 L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname")
 L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+
+L["uplp_knife_skin_red.printname"] = "Red Soda"
+L["uplp_knife_skin_red.compactname"] = "Red"
+L["uplp_knife_skin_red.description"] = "Metallic red variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw, and a handle with white paws embedded on it."
+
+L["uplp_knife_skin_orange.printname"] = "Foxy Orange"
+L["uplp_knife_skin_orange.compactname"] = "Orange"
+L["uplp_knife_skin_orange.description"] = "Metallic orange variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw and a brown handle with white paws embedded on it."
