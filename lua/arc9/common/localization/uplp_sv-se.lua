@@ -2296,3 +2296,55 @@ L["uplp_knife_skin_red.description"] = "Metallisk röd version av Badlands-Bowie
 L["uplp_knife_skin_orange.printname"] = "Rävig Orange"
 L["uplp_knife_skin_orange.compactname"] = "Orange"
 L["uplp_knife_skin_orange.description"] = "Metallisk orange version av Badlands-Bowiekniven. Kommer med ett anpassat blad med en utskuren tass, och ett brunt handtag med vita tassar inbäddade på den."
+
+//////////////////// MP5
+L["uplp_weapon_mp5"] = "PV-9"
+L["uplp_weapon_mp5_desc"] = "\"Persönliche Verteidigungswaffe 9 mm\" (Personligt Försvarsvapen 9 mm), förkortat PV-9, är en kompakt och pålitlig kulsprutepistol som är omtyckt av militära och polisiära enheter över hela världen. Dess smidiga drift och anpassningsförmåga gör den till ett toppval för närstridsituationer."
+
+L["uplp_weapon_mp5k"] = "PV-9K"
+L["uplp_weapon_mp5sd"] = "PV-9G"
+
+L["uplp_weapon_mp5_real"] = "H&K MP5"
+
+L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
+
+/////////// Attachments
+////// Handguard
+L["uplp_mp5_hg_navy.printname"] = "Marin Handskydd"
+L["uplp_mp5_hg_navy.compactname"] = "Marin"
+L["uplp_mp5_hg_navy.description"] = "Alternativ främre handskydd med inbyggd ficklampa."
+
+L["uplp_mp5_hg_sd.printname"] = "SD-Handskydd"
+L["uplp_mp5_hg_sd.compactname"] = "SD"
+L["uplp_mp5_hg_sd.description"] = "Alternativ främre handskydd med inbyggd ljuddämpare."
+
+////// Grips
+L["uplp_mp5_grip_kurz.printname"] = "Kurz-Framgrepp"
+L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
+L["uplp_mp5_grip_kurz.description"] = "Främre handskydd med inbyggt framgrepp för att kontrollera rekylen."
+
+////// Stocks
+L["uplp_mp5_stock_buffer.printname"] = "Bufferrör"
+L["uplp_mp5_stock_buffer.compactname"] = "Bufferrör"
+L["uplp_mp5_stock_buffer.description"] = "Ersätter kolven med ett bufferrör som stödjer AR-15-kolvar."
+
+L["uplp_mp5_stock_pdw.printname"] = "Vikbar PDW-Kolv"
+L["uplp_mp5_stock_pdw.compactname"] = "V. PDW"
+L["uplp_mp5_stock_pdw.description"] = "Vikbar åt sidan PDW-kolv till PV-9:an."
+
+L["uplp_mp5_stock_col.printname"] = "Vikbar Stock"
+L["uplp_mp5_stock_col.compactname"] = "Vikbar"
+L["uplp_mp5_stock_col.description"] = "Vikbar kolv till PV-9:an. Använd bar i stridande inomhus."
+
+////// Magazines
+L["uplp_mp5_mag_20.printname"] = "20-Patroners 9x19mm"
+L["uplp_mp5_mag_20.compactname"] = "20R 9x19mm"
+L["uplp_mp5_mag_20.description"] = "Förkortat magasin som håller 20 skott av 9x19mm ammunition."
+
+L["uplp_mp5_mag_50.printname"] = "50-Patroners 9x19mm Trumma"
+L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
+L["uplp_mp5_mag_50.description"] = "Stort 50-patronerstrummagasin som håller 9x19mm ammunition."
+
+L["uplp_mp5_mag_10mm.printname"] = "30-Patroners 10mm"
+L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
+L["uplp_mp5_mag_10mm.description"] = "Konverterar PV-9:an till PV-10:an vilket förbättrar stoppkraften med kostnad på rekylkontroll."

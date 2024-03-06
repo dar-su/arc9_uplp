@@ -2301,3 +2301,55 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 -- L["uplp_knife_skin_orange.printname"] = "Foxy Orange"
 -- L["uplp_knife_skin_orange.compactname"] = "Orange"
 -- L["uplp_knife_skin_orange.description"] = "Metallic orange variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw and a brown handle with white paws embedded on it."
+
+//////////////////// MP5
+-- L["uplp_weapon_mp5"] = "PV-9"
+-- L["uplp_weapon_mp5_desc"] = "The \"Persönliche Verteidigungswaffe 9 mm\" (Personal Defence Weapon 9mm), or PV-9 for short, is a compact and reliable submachine gun favored by military and law enforcement units globally. Its smooth operation and adaptability make it a top choice for close-quarters combat situations."
+
+-- L["uplp_weapon_mp5k"] = "PV-9K"
+-- L["uplp_weapon_mp5sd"] = "PV-9G"
+
+-- L["uplp_weapon_mp5_real"] = "H&K MP5"
+
+-- L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
+
+/////////// Attachments
+////// Handguard
+-- L["uplp_mp5_hg_navy.printname"] = "Navy Handguard"
+-- L["uplp_mp5_hg_navy.compactname"] = "Navy"
+-- L["uplp_mp5_hg_navy.description"] = "Alternative front handguard with a built-in flashlight."
+
+-- L["uplp_mp5_hg_sd.printname"] = "SD Handguard"
+-- L["uplp_mp5_hg_sd.compactname"] = "SD"
+-- L["uplp_mp5_hg_sd.description"] = "Alternative front handguard with a built-in suppressor."
+
+////// Grips
+-- L["uplp_mp5_grip_kurz.printname"] = "Kurz Foregrip"
+-- L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
+-- L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil."
+
+////// Stocks
+-- L["uplp_mp5_stock_buffer.printname"] = "Buffer Tube"
+-- L["uplp_mp5_stock_buffer.compactname"] = "Buffer Tube"
+-- L["uplp_mp5_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+
+-- L["uplp_mp5_stock_pdw.printname"] = "Folding PDW Stock"
+-- L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
+-- L["uplp_mp5_stock_pdw.description"] = "Side-folding PDW stock for the PV-9."
+
+-- L["uplp_mp5_stock_col.printname"] = "Collapsible Stock"
+-- L["uplp_mp5_stock_col.compactname"] = "Collapsible"
+-- L["uplp_mp5_stock_col.description"] = "Collapsible stock for the PV-9. Useful for fighting indoors."
+
+////// Magazines
+-- L["uplp_mp5_mag_20.printname"] = "20-Round 9x19mm"
+-- L["uplp_mp5_mag_20.compactname"] = "20R 9x19mm"
+-- L["uplp_mp5_mag_20.description"] = "Shortened magazine holding 20 rounds of 9x19mm ammunition."
+
+-- L["uplp_mp5_mag_50.printname"] = "50-Round 9x19mm Drum"
+-- L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
+-- L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9x19mm ammunition."
+
+-- L["uplp_mp5_mag_10mm.printname"] = "30-Round 10mm"
+-- L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
+-- L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
