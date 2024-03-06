@@ -2302,21 +2302,26 @@ L["uplp_weapon_mp5"] = "PV-9"
 L["uplp_weapon_mp5_desc"] = "\"Persönliche Verteidigungswaffe 9 mm\" (Personligt Försvarsvapen 9 mm), förkortat PV-9, är en kompakt och pålitlig kulsprutepistol som är omtyckt av militära och polisiära enheter över hela världen. Dess smidiga drift och anpassningsförmåga gör den till ett toppval för närstridsituationer."
 
 L["uplp_weapon_mp5k"] = "PV-9K"
-L["uplp_weapon_mp5sd"] = "PV-9G"
+L["uplp_weapon_mp5sd"] = "PV-9S"
 
 L["uplp_weapon_mp5_real"] = "H&K MP5"
 
 L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
 
 /////////// Attachments
+////// Barrel
+L["uplp_mp5_bar_sd.printname"] = "146mm SD-Pipa"
+L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
+L["uplp_mp5_bar_sd.description"] = "Anpassad 146mm pipa med inbyggd ljuddämpare vilket konverterar PV-9:an till PV-9S."
+
+L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz-Pipa"
+L["uplp_mp5_bar_kurz.compactname"] = "114mm"
+L["uplp_mp5_bar_kurz.description"] = "Förkortat 114mm Kurz-pipa som konverterar PV-9:an till PV-9K."
+
 ////// Handguard
 L["uplp_mp5_hg_navy.printname"] = "Marin Handskydd"
 L["uplp_mp5_hg_navy.compactname"] = "Marin"
 L["uplp_mp5_hg_navy.description"] = "Alternativ främre handskydd med inbyggd ficklampa."
-
-L["uplp_mp5_hg_sd.printname"] = "SD-Handskydd"
-L["uplp_mp5_hg_sd.compactname"] = "SD"
-L["uplp_mp5_hg_sd.description"] = "Alternativ främre handskydd med inbyggd ljuddämpare."
 
 ////// Grips
 L["uplp_mp5_grip_kurz.printname"] = "Kurz-Framgrepp"
@@ -2336,10 +2341,14 @@ L["uplp_mp5_stock_col.printname"] = "Vikbar Stock"
 L["uplp_mp5_stock_col.compactname"] = "Vikbar"
 L["uplp_mp5_stock_col.description"] = "Vikbar kolv till PV-9:an. Använd bar i stridande inomhus."
 
+L["uplp_mp5_stock_fixed.printname"] = "Fast PV-9-Kolv"
+L["uplp_mp5_stock_fixed.compactname"] = "Fast"
+L["uplp_mp5_stock_fixed.description"] = "Stadig fast kolv till PV-9:an."
+
 ////// Magazines
-L["uplp_mp5_mag_20.printname"] = "20-Patroners 9x19mm"
-L["uplp_mp5_mag_20.compactname"] = "20R 9x19mm"
-L["uplp_mp5_mag_20.description"] = "Förkortat magasin som håller 20 skott av 9x19mm ammunition."
+L["uplp_mp5_mag_15.printname"] = "15-Patroners 9x19mm"
+L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
+L["uplp_mp5_mag_15.description"] = "Förkortat magasin som håller 15 skott av 9x19mm ammunition."
 
 L["uplp_mp5_mag_50.printname"] = "50-Patroners 9x19mm Trumma"
 L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"

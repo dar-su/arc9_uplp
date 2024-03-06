@@ -2307,21 +2307,26 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 -- L["uplp_weapon_mp5_desc"] = "The \"Persönliche Verteidigungswaffe 9 mm\" (Personal Defence Weapon 9mm), or PV-9 for short, is a compact and reliable submachine gun favored by military and law enforcement units globally. Its smooth operation and adaptability make it a top choice for close-quarters combat situations."
 
 -- L["uplp_weapon_mp5k"] = "PV-9K"
--- L["uplp_weapon_mp5sd"] = "PV-9G"
+-- L["uplp_weapon_mp5sd"] = "PV-9S"
 
 -- L["uplp_weapon_mp5_real"] = "H&K MP5"
 
 -- L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
 
 /////////// Attachments
+////// Barrel
+-- L["uplp_mp5_bar_sd.printname"] = "146mm SD Barrel"
+-- L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
+-- L["uplp_mp5_bar_sd.description"] = "Modified 146mm (5.7\") barrel with built-in suppressor, converting the PV-9 to the PV-9S."
+
+-- L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz Barrel"
+-- L["uplp_mp5_bar_kurz.compactname"] = "114mm"
+-- L["uplp_mp5_bar_kurz.description"] = "Shortened 114mm (4.5\") Kurz barrel, converting the PV-9 to the PV-9K."
+
 ////// Handguard
 -- L["uplp_mp5_hg_navy.printname"] = "Navy Handguard"
 -- L["uplp_mp5_hg_navy.compactname"] = "Navy"
 -- L["uplp_mp5_hg_navy.description"] = "Alternative front handguard with a built-in flashlight."
-
--- L["uplp_mp5_hg_sd.printname"] = "SD Handguard"
--- L["uplp_mp5_hg_sd.compactname"] = "SD"
--- L["uplp_mp5_hg_sd.description"] = "Alternative front handguard with a built-in suppressor."
 
 ////// Grips
 -- L["uplp_mp5_grip_kurz.printname"] = "Kurz Foregrip"
@@ -2341,10 +2346,14 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 -- L["uplp_mp5_stock_col.compactname"] = "Collapsible"
 -- L["uplp_mp5_stock_col.description"] = "Collapsible stock for the PV-9. Useful for fighting indoors."
 
+-- L["uplp_mp5_stock_fixed.printname"] = "Fixed PV-9 Stock"
+-- L["uplp_mp5_stock_fixed.compactname"] = "Fixed"
+-- L["uplp_mp5_stock_fixed.description"] = "Fixed, solid stock for the PV-9."
+
 ////// Magazines
--- L["uplp_mp5_mag_20.printname"] = "20-Round 9x19mm"
--- L["uplp_mp5_mag_20.compactname"] = "20R 9x19mm"
--- L["uplp_mp5_mag_20.description"] = "Shortened magazine holding 20 rounds of 9x19mm ammunition."
+-- L["uplp_mp5_mag_15.printname"] = "15-Round 9x19mm"
+-- L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
+-- L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9x19mm ammunition."
 
 -- L["uplp_mp5_mag_50.printname"] = "50-Round 9x19mm Drum"
 -- L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
