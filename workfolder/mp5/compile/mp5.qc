@@ -46,7 +46,7 @@ $bodygroup "frontthing" {
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
-$attachment "2" "bolt" 0 0 0 rotate -10 140 180
+$attachment "2" "bolt" 0 0 -4 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
@@ -145,7 +145,7 @@ $sequence "reload" {
 	"anims\reload.smd"
 	"anims\reload_iron.smd"
 	blend "sights" 0 1
-	fps 30
+	fps 33
 	"ACT_VM_RELOAD" 1
 	snap
 }
@@ -166,7 +166,7 @@ $sequence "reload_15" {
 	"anims\reload_15.smd"
 	"anims\reload_15_iron.smd"
 	blend "sights" 0 1
-	fps 30
+	fps 34
 	"ACT_VM_RELOAD" 1
 	snap
 }
@@ -187,7 +187,7 @@ $sequence "reload_50" {
 	"anims\reload_50.smd"
 	"anims\reload_50_iron.smd"
 	blend "sights" 0 1
-	fps 30
+	fps 33
 	"ACT_VM_RELOAD" 1
 	snap
 }

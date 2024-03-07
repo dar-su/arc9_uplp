@@ -41,7 +41,7 @@ SWEP.StandardPresets = {
 SWEP.DefaultBodygroups = "0000000" -- Might as well prepare for the future
 
 ---- Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_4"
+SWEP.MuzzleParticle = "muzzleflash_mp5"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
@@ -111,7 +111,7 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 35
+SWEP.ClipSize = 30
 
 -- Recoil
 SWEP.Recoil = 0.8
@@ -223,9 +223,9 @@ SWEP.CustomizeSnapshotPos = Vector(-1, 10, 2)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = true
-SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_std.mdl" -- REPLACE
+SWEP.ShouldDropMag = false 
+SWEP.ShouldDropMagEmpty = false 
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30.mdl"
 SWEP.DropMagazineTime = 0.63    
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
@@ -416,17 +416,18 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.65,
-        Mult = 0.9,
+        DropMagAt = 0.6,
+        Mult = 1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 0.25, c = ca, v = 0.8 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5, v = 0.6 },
+            { s = pathUT .. "magout.ogg", t = 0.25*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9, v = 0.6 },
             -- { s = pathUT .. "magin.ogg", t = 1.03, c = ca, v = 0.8 },
-            { s = pathUT .. "magtap.ogg", t = 1.05, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 1.2, c = ca, v = 0.8 },
+            { s = pathUT .. "magtap.ogg", t = 1.05*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.2*0.9, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 0.63},
+            {hide = 1, t = 0.6},
             {hide = 0, t = 0.75}
         },
         IKTimeLine = {
@@ -440,6 +441,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.65,
+        DropMagAt = 1.05,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -456,8 +458,8 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 2.0, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 1.05},
+            {hide = 0, t = 1.2}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -471,17 +473,19 @@ SWEP.Animations = {
     ["reload_15"] = {
         Source = "reload_15",
         MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1,
+        DropMagAt = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 7 / 30, v = 0.6 },
-            { s = pathUT .. "magtap.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 0.25*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9-0.07, v = 0.6 },
+            -- { s = pathUT .. "magin.ogg", t = 1.03, c = ca, v = 0.8 },
+            { s = pathUT .. "magtap.ogg", t = 1.05*0.9-0.07, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.2*0.9-0.07, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 0.5},
+            {hide = 0, t = 0.65}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -494,28 +498,121 @@ SWEP.Animations = {
     ["reload_empty_15"] = {
         Source = "reload_empty_15",
         MinProgress = 0.65,
-        Mult = 1.1,
+        Mult = 1.0,
+        DropMagAt = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 7 / 30, v = 0.6 },
-            { s = pathUT .. "magtap.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/chamber_9.ogg", t = 28 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 30 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "rack1.ogg", t = 0.22, c = ca, v = 0.8 },
+            { s = pathUT .. "chlock.ogg", t = 0.345, c = ca, v = 0.8 },
+
+            { s = pathUT .. "magout.ogg", t = 0.73, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 1.0, v = 0.6 },
+            { s = pathUT .. "magtap.ogg", t = 1.44-0.05, c = ca, v = 0.8 },
+            -- { s = pathUT .. "magin.ogg", t = 1.4, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_1.ogg", t = 1.65-0.05, c = ca, v = 0.5 },
+            { s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82-0.1, c = ca, v = 1 },
+            { s = pathUT .. "chamber.ogg", t = 1.85-0.1, c = ca, v = 0.75 },
+            { s = pathUTC .. "cloth_4.ogg", t = 2.0-0.1, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 1.0},
+            {hide = 0, t = 1.15}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
 
+    ["reload_50"] = {
+        Source = "reload_50",
+        MinProgress = 0.65,
+        Mult = 1,
+        DropMagAt = 0.6,
+        EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 0.25*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9, v = 0.6 },
+            { s = pathUT .. "magin.ogg", t = 0.75, c = ca, v = 0.8 },
+            -- { s = pathUT .. "magtap.ogg", t = 1.05*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.25, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_50"] = {
+        Source = "reload_empty_50",
+        MinProgress = 0.65,
+        Mult = 1.0,
+        DropMagAt = 1.1,
+        EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "rack1.ogg", t = 0.22, c = ca, v = 0.8 },
+            { s = pathUT .. "chlock.ogg", t = 0.345, c = ca, v = 0.8 },
+
+            { s = pathUT .. "magout.ogg", t = 0.8, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 1.1, v = 0.6 },
+            -- { s = pathUT .. "magtap.ogg", t = 1.44, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 1.5, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_1.ogg", t = 2, c = ca, v = 0.5 },
+            { s = "uplp_urban_temp/ak/scrape.ogg", t = 2.33, c = ca, v = 1 },
+            { s = pathUT .. "chamber.ogg", t = 2.36, c = ca, v = 0.75 },
+            { s = pathUTC .. "cloth_4.ogg", t = 2.47, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 1.1},
+            {hide = 0, t = 1.25}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    
+    ["reload_empty_catch"] = {
+        Source = "reload_empty_catch",
+        MinProgress = 0.65,
+        Mult = 1,
+        DropMagAt = 0.6,
+        EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 0.25*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9, v = 0.6 },
+            -- { s = pathUT .. "magin.ogg", t = 1.03, c = ca, v = 0.8 },
+            { s = pathUT .. "magtap.ogg", t = 1.05*0.9, c = ca, v = 0.8 },
+
+            { s = pathUT .. "chlock.ogg", t = 1.25, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 1.35, c = ca, v = 0.8 },
+
+            { s = pathUTC .. "cloth_4.ogg", t = 1.4, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.6},
+            {hide = 0, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
     -- Inspecc --
 
     ["inspect"] = {
@@ -581,12 +678,27 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 	local grip = "uplp_grip_used"
-	local las = "uplp_tac_used"
+	local tacc = "uplp_tac_used"
 	local hg = "uplp_mp5_hg_"
 	
-    if eles[grip] or eles[las] then
-        mdl:SetBodygroup(2, 2)
+    if eles["uplp_muzzle_used"] or eles["uplp_mp5_bar_kurz"] or eles["uplp_mp5_bar_sd"] then
+        mdl:SetBodygroup(6, 1)
     end
+
+    if (eles[grip] or eles[tacc]) then
+        if !eles["uplp_mp5_hg_navy"] and !eles["uplp_mp5_bar_kurz"] and !eles["uplp_mp5_bar_sd"] then
+            mdl:SetBodygroup(2, 2)
+        elseif eles["uplp_mp5_bar_kurz"] then
+            mdl:SetBodygroup(2, 7)
+        elseif eles[grip] and eles["uplp_mp5_bar_sd"] then
+            mdl:SetBodygroup(2, 4)
+        end
+
+        if eles[tacc] and eles["uplp_mp5_bar_sd"] then
+            mdl:SetBodygroup(6, 2)
+        end
+    end
+
 end
 
 SWEP.AttachmentElements = {
@@ -600,6 +712,7 @@ SWEP.AttachmentElements = {
     ["uplp_mp5_hg_navy"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } } },
     ["uplp_mp5_bar_kurz"] = { Bodygroups = { { 2, 5 }, { 1, 1 } } },
+    ["uplp_mp5_hg_kurz_grip"] = { Bodygroups = { { 2, 6 }} },
 
     -- STOCKS
     ["uplp_mp5_stock_buffer"] = { Bodygroups = { { 3, 5 } } },
@@ -611,7 +724,7 @@ SWEP.AttachmentElements = {
     -- MAGAZINES
     ["uplp_mp5_mag_15"] = { Bodygroups={ { 4, 2 } } },
     ["uplp_mp5_mag_50"] = { Bodygroups={ { 4, 3 } } },
-    ["uplp_mp5_mag_10mm"] = { Bodygroups={ { 4, 1 }, { 1, 1 } } },
+    ["uplp_mp5_mag_10mm"] = { Bodygroups={ { 4, 1 }, { 0, 1 } } },
 
     -- GRIPS
     -- ["uplp_grip_used"] = { Bodygroups={ { 3, 1 } } },
@@ -648,14 +761,16 @@ SWEP.Attachments = {
         Pos = Vector(0, 0.5, 10),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0.5, 0, -1),
+        ExcludeElements = {"uplp_mp5_hg_navy"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
-        Category = {"uplp_tac"},
+        Category = {"uplp_tac", "uplp_mp5_handguard_tac"},
         Bone = "laseradj",
-        Pos = Vector(0, 0, -1),
+        Pos = Vector(0, 0, -2),
         Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"uplp_mp5_bar_kurz"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -706,14 +821,24 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.3, 1.85),
         Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_mp5_bar_kurz", "uplp_mp5_bar_sd", "uplp_grip_used", "uplp_tac_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
+        StickerModel = "models/weapons/arc9/uplp/stickers/mp5_5.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, -0.3, 1.85),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_stock"),
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_4.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, -0.3, 3),
         Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_mp5_stock_fixed"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
@@ -723,3 +848,35 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
 }
+
+SWEP.HookP_NameChange = function(self, name)
+    local att = self:GetElements()
+
+    if att["uplp_mp5_bar_kurz"] then
+        name = ARC9:GetPhrase("uplp_weapon_mp5k")
+    elseif att["uplp_mp5_bar_sd"] then
+        name = ARC9:GetPhrase("uplp_weapon_mp5sd")
+    end
+
+    if att["uplp_mp5_mag_10mm"] then
+        name = string.Replace(name, "9", "10")
+    end
+
+    return name
+end
+
+local fuckthis = 0
+SWEP.Hook_Think = function(swep)
+    if fuckthis < CurTime() then
+        fuckthis = CurTime() + 0.5
+        if swep:GetElements()["uplp_weapon_mp5k"] then
+            local vm, wm = swep:GetVM(), swep:GetWM()
+            if IsValid(vm) then vm:SetPoseParameter("owo", 1) end -- different animations for mpk5
+            if IsValid(wm) then wm:SetPoseParameter("owo", 1) end -- tpik
+        else
+            local vm, wm = swep:GetVM(), swep:GetWM()
+            if IsValid(vm) then vm:SetPoseParameter("owo", 0) end
+            if IsValid(wm) then wm:SetPoseParameter("owo", 0) end
+        end
+    end
+end
