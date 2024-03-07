@@ -339,6 +339,7 @@ ATT.Sights = {
         Disassociate = true,
         Blur = true,
         ViewModelFOV = 57,
+		CantPeek = true,
 
         SwayAddSights = sway_cqc,
     },
@@ -1978,13 +1979,18 @@ ATT.Sights = {
         ShadowPos = Vector(16,0,0),
         Disassociate = true,
         Blur = true,
-        ViewModelFOV = 57
+        ViewModelFOV = 57,
+		CantPeek = true,
+
+        SwayAddSights = sway_cqc,
     },
     {
         Pos = Vector(0, 10, -1.4675),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
-        ViewModelFOV = 30
+        ViewModelFOV = 30,
+
+        SwayAddSights = sway_mag,
     },
 }
 
@@ -2051,6 +2057,7 @@ ATT.Sights = {
         Disassociate = true,
         Blur = true,
         ViewModelFOV = 57,
+		CantPeek = true,
 
         SwayAddSights = sway_cqc,
     },

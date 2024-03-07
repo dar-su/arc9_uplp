@@ -336,6 +336,7 @@ local stat9 = {
     DropMagazineSounds = dropsound9,
 
     Ammo = "pistol",
+	ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl",
 
     HeadshotDamageMult = 0.65,
 }
@@ -359,6 +360,8 @@ ATT.ActivateElements = {"uplp_aug_mag_919_25", "uplp_aug_smg"}
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_9_25"
 end
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 
 table.Merge(ATT, stat9)
 
@@ -396,8 +399,6 @@ ATT.ActivateElements = {"uplp_aug_mag_919_40", "uplp_aug_smg"}
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_9_40"
 end
-
-ATT.Ammo = "pistol"
 
 table.Merge(ATT, stat9)
 

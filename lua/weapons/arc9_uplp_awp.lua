@@ -478,8 +478,11 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.1,
-        MinProgress = 0.6,
         DropMagAt = 0.35 * 1.1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -502,7 +505,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
+		PeekProgress = 0.925,
+		RefillProgress = 0.85,
+		FireASAP = true,
         Mult = 1.1,
         DropMagAt = 1 * 1.1,
         EjectAt = 0.37,
@@ -535,7 +541,10 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.6,
+		FireASAP = true,
         DropMagAt = 0.35 * 1.1,
         Mult = 1.1,
         EventTable = {
@@ -559,7 +568,10 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.85,
+        MinProgress = 0.95,
+		PeekProgress = 0.925,
+		RefillProgress = 0.85,
+		FireASAP = true,
         DropMagAt = 1 * 1.1,
         Mult = 1.1,
         EjectAt = 0.37,
