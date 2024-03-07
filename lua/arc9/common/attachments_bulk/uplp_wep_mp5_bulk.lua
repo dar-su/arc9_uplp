@@ -72,6 +72,8 @@ ATT.Icon = Material(iconfolder .. "f.png", "mips smooth")
 ATT.Category = "uplp_mp5_handguard_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ExcludeElements = {"uplp_mp5_bar_sd"}
+
 ATT.Model = "models/weapons/arc9/uplp/tac_flashlight_pistol.mdl" -- secret small flashlight inside model
 ATT.ModelOffset = Vector(3.4, 1.17, -1.2)
 ATT.Scale = 0.1
