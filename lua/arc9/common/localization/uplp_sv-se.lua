@@ -2317,7 +2317,7 @@ L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
 L["uplp_mp5_bar_sd.description"] = "Anpassad 146mm pipa med inbyggd ljuddämpare vilket konverterar PV-9:an till PV-9S."
 
 L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz-Pipa"
-L["uplp_mp5_bar_kurz.compactname"] = "114mm"
+L["uplp_mp5_bar_kurz.compactname"] = "114mm Kurz"
 L["uplp_mp5_bar_kurz.description"] = "Förkortat 114mm Kurz-pipa som konverterar PV-9:an till PV-9K."
 
 ////// Handguard
@@ -2328,7 +2328,7 @@ L["uplp_mp5_hg_navy.description"] = "Alternativ främre handskydd med inbyggd fi
 ////// Grips
 L["uplp_mp5_grip_kurz.printname"] = "Kurz-Framgrepp"
 L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
-L["uplp_mp5_grip_kurz.description"] = "Främre handskydd med inbyggt framgrepp för att kontrollera rekylen."
+L["uplp_mp5_grip_kurz.description"] = "Främre handskydd med inbyggt framgrepp för att kontrollera rekylen.\Kräver <color=175,175,255>114mm Kurz-Pipan</color>."
 
 ////// Stocks
 L["uplp_mp5_stock_buffer.printname"] = "Bufferrör"

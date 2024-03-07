@@ -2322,7 +2322,7 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 -- L["uplp_mp5_bar_sd.description"] = "Modified 146mm (5.7\") barrel with built-in suppressor, converting the PV-9 to the PV-9S."
 
 -- L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz Barrel"
--- L["uplp_mp5_bar_kurz.compactname"] = "114mm"
+-- L["uplp_mp5_bar_kurz.compactname"] = "114mm Kurz"
 -- L["uplp_mp5_bar_kurz.description"] = "Shortened 114mm (4.5\") Kurz barrel, converting the PV-9 to the PV-9K."
 
 ////// Handguard
@@ -2333,7 +2333,7 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 ////// Grips
 -- L["uplp_mp5_grip_kurz.printname"] = "Kurz Foregrip"
 -- L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
--- L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil."
+-- L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil.\nRequires <color=175,175,255>114mm Kurz Barrel</color>."
 
 ////// Stocks
 -- L["uplp_mp5_stock_buffer.printname"] = "Buffer Tube"

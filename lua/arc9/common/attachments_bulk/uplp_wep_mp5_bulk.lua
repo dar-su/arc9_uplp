@@ -99,12 +99,12 @@ ATT.ToggleStats = {
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_hg_navy")
 
----------- uplp_mp5_hg_kurz_grip
+---------- uplp_mp5_grip_kurz
 
 ATT = {}
 
-ATT.PrintName = "owo"
-ATT.CompactName = "owo"
+ATT.PrintName = "Kurz Foregrip"
+ATT.CompactName = "Kurz"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = -99
 
@@ -124,7 +124,7 @@ ATT.LHIK_Priority = 5
 
 -- Negatives
 
-ARC9.LoadAttachment(ATT, "uplp_mp5_hg_kurz_grip")
+ARC9.LoadAttachment(ATT, "uplp_mp5_grip_kurz")
 
 -------------------- STOCKS
 ---------- uplp_mp5_stock_buffer

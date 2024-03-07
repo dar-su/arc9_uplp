@@ -387,6 +387,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+		MinProgress = 0.8,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -415,7 +417,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.875,
+		RefillProgress = 0.7,
+		FireASAP = true,
         DropMagAt = 0.6,
         Mult = 1,
         EventTable = {
@@ -433,14 +438,17 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.625, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.825,
+		RefillProgress = 0.75,
+		FireASAP = true,
         DropMagAt = 1.05,
         Mult = 1.0,
         EventTable = {
@@ -463,8 +471,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.75, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -472,7 +480,11 @@ SWEP.Animations = {
 
     ["reload_15"] = {
         Source = "reload_15",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.875,
+		RefillProgress = 0.75,
+		FireASAP = true,
+        DropMagAt = 0.6,
         Mult = 1,
         DropMagAt = 0.5,
         EventTable = {
@@ -490,14 +502,17 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.625, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["reload_empty_15"] = {
         Source = "reload_empty_15",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.825,
+		RefillProgress = 0.75,
+		FireASAP = true,
         Mult = 1.0,
         DropMagAt = 1.0,
         EventTable = {
@@ -520,8 +535,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.75, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -529,7 +544,10 @@ SWEP.Animations = {
 
     ["reload_50"] = {
         Source = "reload_50",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.85,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
@@ -547,14 +565,17 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.875,
+		RefillProgress = 0.85,
+		FireASAP = true,
         Mult = 1.0,
         DropMagAt = 1.1,
         EventTable = {
@@ -577,8 +598,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.75, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -586,7 +607,10 @@ SWEP.Animations = {
     
     ["reload_empty_catch"] = {
         Source = "reload_empty_catch",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.8,
+		RefillProgress = 0.725,
+		FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
@@ -607,9 +631,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.7, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -703,7 +727,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(3, 4)
     end
 
-    if eles["uplp_mp5_hg_kurz_grip"] then
+    if eles["uplp_mp5_grip_kurz"] then
         mdl:SetBodygroup(2, 6)
     end
 end
@@ -725,7 +749,7 @@ SWEP.AttachmentElements = {
         [5] = { Pos = Vector(0, -0.2, 10.25) },
         [3] = { Pos = Vector(0, 0.75, 8) },
     } },
-    ["uplp_mp5_hg_kurz_grip"] = { Bodygroups = { { 2, 6 }} },
+    ["uplp_mp5_grip_kurz"] = { Bodygroups = { { 2, 6 }} },
 
     -- STOCKS
     ["uplp_mp5_stock_buffer"] = { Bodygroups = { { 3, 5 } } },
