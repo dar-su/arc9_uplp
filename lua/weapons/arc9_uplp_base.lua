@@ -79,3 +79,5 @@ SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 1.02, 0.9}
 SWEP.Crosshair = true
 
 SWEP.MagnificationZoomSpeed = 2.5
+
+SWEP.FiremodeSound = false
