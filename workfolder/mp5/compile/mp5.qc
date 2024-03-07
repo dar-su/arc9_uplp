@@ -37,7 +37,8 @@ $bodygroup "rail" {
 	studio "rail.smd"
 }
 
-$bodygroup "railtac" {
+$bodygroup "frontthing" {
+	studio "muzle def.smd"
 	blank
 	studio "rail tac sd.smd"
 }
