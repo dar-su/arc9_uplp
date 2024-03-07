@@ -82,6 +82,8 @@ L["uplp_mechanism_gasoperated"] = "Gas-operated"
 L["uplp_mechanism_rotatingbolt"] = "Rotating bolt"
 L["uplp_mechanism_boltaction"] = "Bolt-action"
 L["uplp_mechanism_pumpaction"] = "Pump-Action"
+L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
+L["uplp_mechanism_closedbolt"] = "Closed bolt"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"

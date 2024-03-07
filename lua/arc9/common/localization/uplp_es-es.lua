@@ -82,6 +82,8 @@ L["uplp_mechanism_gasoperated"] = "Accionado por gas"
 L["uplp_mechanism_rotatingbolt"] = "Cerrojo giratorio"
 L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
 L["uplp_mechanism_pumpaction"] = "Acción de Bombeo"
+-- L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
+-- L["uplp_mechanism_closedbolt"] = "Closed bolt"
 
 L["uplp_mechanism_singleaction"] = "Acción Simple"
 L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
