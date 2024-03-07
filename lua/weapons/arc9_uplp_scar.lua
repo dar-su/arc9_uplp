@@ -436,6 +436,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -451,6 +453,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
+        MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -485,7 +489,10 @@ SWEP.Animations = {
     -- Reloads --
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.8,
+		RefillProgress = 0.625,
+		FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -507,7 +514,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.675,
+		FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -531,7 +541,10 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload_20",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.8,
+		RefillProgress = 0.625,
+		FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -553,14 +566,17 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "reload_empty_20",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.675,
+		FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 10 / 30, v = 0.4 },
             { s = pathUT .. "struggle.ogg", t = 22.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltcatch.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltcatch.ogg", t = 36 / 30 + 0.05, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.42},
@@ -577,7 +593,10 @@ SWEP.Animations = {
 
     ["reload_l"] = {
         Source = "reload_l",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.8,
+		RefillProgress = 0.625,
+		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -600,7 +619,10 @@ SWEP.Animations = {
     },
     ["reload_empty_l"] = {
         Source = "reload_empty_l",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.65,
+		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -625,7 +647,10 @@ SWEP.Animations = {
 
     ["reload_60"] = {
         Source = "reload_l60",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.8,
+		RefillProgress = 0.625,
+		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -648,7 +673,10 @@ SWEP.Animations = {
     },
     ["reload_empty_60"] = {
         Source = "reload_empty_l60",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.65,
+		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -673,7 +701,10 @@ SWEP.Animations = {
 
     ["reload_100"] = {
         Source = "reload_drum",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.875,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -697,7 +728,10 @@ SWEP.Animations = {
     },
     ["reload_empty_100"] = {
         Source = "reload_empty_drum",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.675,
+		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },

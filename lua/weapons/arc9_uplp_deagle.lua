@@ -211,6 +211,9 @@ SWEP.IronSights = {
 SWEP.PeekPos = Vector(-1, 2, -3)
 SWEP.PeekAng = Angle(-0.3, 0.1, -40)
 
+SWEP.PeekPosReloading = Vector(0.5, 0, -1)
+SWEP.PeekAngReloading = Angle(0, 0.4, -5)
+
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(15, 30, 2.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
@@ -354,6 +357,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+		MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -376,6 +381,8 @@ SWEP.Animations = {
 
     ["draw_empty"] = {
         Source = "draw_empty",
+		MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -408,7 +415,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.55,
+        MinProgress = 0.95,
+		PeekProgress = 0.85,
+		RefillProgress = 0.6,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -428,7 +438,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.7,
+        MinProgress = 0.95,
+		PeekProgress = 0.85,
+		RefillProgress = 0.7,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
@@ -453,7 +466,10 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.55,
+        MinProgress = 0.95,
+		PeekProgress = 0.85,
+		RefillProgress = 0.6,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -473,7 +489,10 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.7,
+        MinProgress = 0.95,
+		PeekProgress = 0.85,
+		RefillProgress = 0.7,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },

@@ -443,6 +443,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.9,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -458,6 +460,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
+        MinProgress = 0.9,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -493,7 +497,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress= 0.75,
+        MinProgress = 0.975,
+		PeekProgress = 0.875,
+		RefillProgress = 0.725,
+		FireASAP = true,
         -- Mult = 0.95,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -516,7 +523,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress= 0.75,
+        MinProgress = 0.975,
+		PeekProgress = 0.9,
+		RefillProgress = 0.775,
+		FireASAP = true,
         Mult = 0.97,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -544,7 +554,10 @@ SWEP.Animations = {
 
     ["reload_long"] = {
         Source = "reload_long",
-        MinProgress= 0.75,
+        MinProgress = 0.975,
+		PeekProgress = 0.875,
+		RefillProgress = 0.725,
+		FireASAP = true,
         Mult = 0.97,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -567,7 +580,10 @@ SWEP.Animations = {
     },
     ["reload_empty_long"] = {
         Source = "reload_long_empty",
-        MinProgress= 0.825,
+        MinProgress = 0.975,
+		PeekProgress = 0.9,
+		RefillProgress = 0.8,
+		FireASAP = true,
         Mult = 0.97,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -595,7 +611,10 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
-        MinProgress= 0.75,
+        MinProgress = 0.975,
+		PeekProgress = 0.875,
+		RefillProgress = 0.725,
+		FireASAP = true,
         MagSwapTime = 1.1,
         -- Mult = 1.15,
         EventTable = {
@@ -620,7 +639,10 @@ SWEP.Animations = {
     },
     ["reload_empty_drum"] = {
         Source = "reload_drum_empty",
-        MinProgress= 0.85,
+        MinProgress = 0.975,
+		PeekProgress = 0.925,
+		RefillProgress = 0.85,
+		FireASAP = true,
         MagSwapTime = 1.1,
         -- Mult = 1.15,
         EventTable = {
@@ -649,8 +671,6 @@ SWEP.Animations = {
 
     ["inspect_look"] = {
         Source = {"look"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -669,8 +689,6 @@ SWEP.Animations = {
     },
     ["inspect_look_empty"] = {
         Source = {"look_empty"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -690,8 +708,6 @@ SWEP.Animations = {
 
     ["inspect_look_long"] = {
         Source = {"look_long"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -710,8 +726,6 @@ SWEP.Animations = {
     },
     ["inspect_look_long_empty"] = {
         Source = {"look_long_empty"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -731,8 +745,6 @@ SWEP.Animations = {
 
     ["inspect_look_drum"] = {
         Source = {"look_drum"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -752,8 +764,6 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = {"check"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -776,8 +786,6 @@ SWEP.Animations = {
 
     ["inspect_empty"] = {
         Source = {"check_empty"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -800,8 +808,6 @@ SWEP.Animations = {
 
     ["inspect_long"] = {
         Source = {"check_long"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -823,8 +829,6 @@ SWEP.Animations = {
     },
     ["inspect_long_empty"] = {
         Source = {"check_long_empty"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -847,8 +851,6 @@ SWEP.Animations = {
 
     ["inspect_drum"] = {
         Source = {"check_drum"},
-        -- MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },

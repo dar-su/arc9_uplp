@@ -403,6 +403,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -418,6 +420,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
+        MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -454,7 +458,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.775,
+		RefillProgress = 0.65,
+		FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -477,7 +484,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.65,
+		FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -502,7 +512,10 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload_20",
-        MinProgress = 0.65,
+        MinProgress = 0.9,
+		PeekProgress = 0.775,
+		RefillProgress = 0.65,
+		FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -525,7 +538,10 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "reload_empty_20",
-        MinProgress = 0.65,
+        MinProgress = 0.95,
+		PeekProgress = 0.775,
+		RefillProgress = 0.65,
+		FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },

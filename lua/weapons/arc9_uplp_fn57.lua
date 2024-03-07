@@ -203,8 +203,11 @@ SWEP.IronSights = {
      ViewModelFOV = 70,
 }
 
-SWEP.PeekPos = Vector(-0.5, 2, -3)
+SWEP.PeekPos = Vector(-0.5, 0, -3)
 SWEP.PeekAng = Angle(-0.25, 0.5, -40)
+
+SWEP.PeekPosReloading = Vector(0.5, 0, -1)
+SWEP.PeekAngReloading = Angle(0, 0.4, -5)
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(15, 30, 2.5)
@@ -406,6 +409,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -419,6 +424,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -478,7 +485,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.55,
+        MinProgress = 0.95,
+		PeekProgress = 0.75,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.02,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -501,7 +511,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.7,
+        MinProgress = 0.95,
+		PeekProgress = 0.85,
+		RefillProgress = 0.675,
+		FireASAP = true,
         Mult = 1.02,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -528,7 +541,10 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.55,
+        MinProgress = 0.95,
+		PeekProgress = 0.725,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -551,7 +567,10 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.7,
+        MinProgress = 0.95,
+		PeekProgress = 0.8,
+		RefillProgress = 0.675,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },

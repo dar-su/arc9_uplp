@@ -386,6 +386,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUT2 .. "grab.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -402,6 +404,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
+        MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
