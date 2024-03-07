@@ -236,6 +236,7 @@ SWEP.DropMagazineVelocity = Vector(0, -60, 0)
 
 -- urbna!
 local pathUT = "uplp_urban_temp/mp5/"
+local pathUTREAL = "uplp_rz/mp5/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
@@ -461,8 +462,8 @@ SWEP.Animations = {
             { s = pathUT .. "magtap.ogg", t = 1.44, c = ca, v = 0.8 },
             -- { s = pathUT .. "magin.ogg", t = 1.4, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 1.65, c = ca, v = 0.5 },
-            { s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82, c = ca, v = 1 },
-            { s = pathUT .. "chamber.ogg", t = 1.85, c = ca, v = 0.75 },
+            --{ s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82, c = ca, v = 1 },
+            { s = pathUTREAL .. "slap.ogg", t = 1.85, c = ca, v = 0.75 },
             { s = pathUTC .. "cloth_4.ogg", t = 2.0, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -525,8 +526,8 @@ SWEP.Animations = {
             { s = pathUT .. "magtap.ogg", t = 1.44-0.05, c = ca, v = 0.8 },
             -- { s = pathUT .. "magin.ogg", t = 1.4, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 1.65-0.05, c = ca, v = 0.5 },
-            { s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82-0.1, c = ca, v = 1 },
-            { s = pathUT .. "chamber.ogg", t = 1.85-0.1, c = ca, v = 0.75 },
+            --{ s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82-0.1, c = ca, v = 1 },
+            { s = pathUTREAL .. "slap.ogg", t = 1.85-0.1, c = ca, v = 0.75 },
             { s = pathUTC .. "cloth_4.ogg", t = 2.0-0.1, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -588,8 +589,8 @@ SWEP.Animations = {
             -- { s = pathUT .. "magtap.ogg", t = 1.44, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 1.33, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 2, c = ca, v = 0.5 },
-            { s = "uplp_urban_temp/ak/scrape.ogg", t = 2.33, c = ca, v = 1 },
-            { s = pathUT .. "chamber.ogg", t = 2.36, c = ca, v = 0.75 },
+            --{ s = "uplp_urban_temp/ak/scrape.ogg", t = 2.33, c = ca, v = 1 },
+            { s = pathUTREAL .. "slap.ogg", t = 2.36, c = ca, v = 0.75 },
             { s = pathUTC .. "cloth_4.ogg", t = 2.47, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
