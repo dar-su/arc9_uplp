@@ -15,8 +15,12 @@ ATT.Icon = Material(iconfolder .. "sd.png", "mips smooth")
 
 ATT.Category = "uplp_mp5_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
+ATT.RPMMult = 0.875
 ATT.ActivateElements = {"uplp_mp5_bar_sd"}
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
 
 -- Positives
 
@@ -39,6 +43,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp5_bar_kurz", "uplp_mp5_bar_kurz", "uplp_mp5_bar_kurz"}
 
+ATT.MuzzleParticleOverride = "muzzleflash_4"
+
+ATT.RPMMult = 1.125
 ATT.Model = "models/weapons/arc9/uplp/mp5_lhik_kurz.mdl"
 ATT.ModelOffset = Vector(-16.5, -2.2, 3.5)
 ATT.LHIK = true
@@ -64,6 +71,25 @@ ATT.Icon = Material(iconfolder .. "f.png", "mips smooth")
 -- ATT.Category = "uplp_mp5_handguard"
 ATT.Category = "uplp_mp5_handguard_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/tac_flashlight_pistol.mdl" -- secret small flashlight inside model
+ATT.ModelOffset = Vector(3.4, 1.17, -1.2)
+ATT.Scale = 0.1
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 45,
+        FlashlightAttachment = 1,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
 
 -- Positives
 
@@ -114,6 +140,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp5_stock_buffer"}
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_ar15_stock"},
+        DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
+        Pos = Vector(0.55, 0, -0.55),
+        Ang = Angle(0, 0, 0),
+        Scale = 1.2
+    },
+}
+
 -- Positives
 
 -- Negatives
@@ -159,6 +196,18 @@ ATT.ActivateElements = {"uplp_mp5_stock_col"}
 -- Positives
 
 -- Negatives
+
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
+        ActivateElements = {"uplp_mp5_stock_col"},
+        -- CustomizePos = Vector(17, 31.5, 4),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
+        ActivateElements = {"uplp_mp5_stock_col_f"},
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_col")
 

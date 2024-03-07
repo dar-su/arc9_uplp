@@ -565,7 +565,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 0.8, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 1.1, v = 0.6 },
             -- { s = pathUT .. "magtap.ogg", t = 1.44, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 1.5, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 1.33, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 2, c = ca, v = 0.5 },
             { s = "uplp_urban_temp/ak/scrape.ogg", t = 2.33, c = ca, v = 1 },
             { s = pathUT .. "chamber.ogg", t = 2.36, c = ca, v = 0.75 },
@@ -699,6 +699,9 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
     end
 
+    if eles["uplp_mp5_stock_col_f"] then
+        mdl:SetBodygroup(3, 4)
+    end
 end
 
 SWEP.AttachmentElements = {
@@ -710,8 +713,14 @@ SWEP.AttachmentElements = {
 
     -- HANDGUARDS & BARRELS
     ["uplp_mp5_hg_navy"] = { Bodygroups = { { 2, 1 } } },
-    ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } } },
-    ["uplp_mp5_bar_kurz"] = { Bodygroups = { { 2, 5 }, { 1, 1 } } },
+    ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
+        [3] = { Pos = Vector(0, 1.05, 9) },
+        [4] = { Pos = Vector(-0.15, 0, 2) },
+    } },
+    ["uplp_mp5_bar_kurz"] = { Bodygroups = { { 2, 5 }, { 1, 1 } }, AttPosMods = {
+        [5] = { Pos = Vector(0, -0.2, 10.25) },
+        [3] = { Pos = Vector(0, 0.75, 8) },
+    } },
     ["uplp_mp5_hg_kurz_grip"] = { Bodygroups = { { 2, 6 }} },
 
     -- STOCKS
@@ -746,9 +755,9 @@ SWEP.Attachments = {
         CorrectiveAng = Angle(0.6, -1.25, 0),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_handguard"),
+        PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_mp5_handguard"},
-        DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarbr.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 6.5),
         Ang = Angle(90, 90, 180),
@@ -778,19 +787,21 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.2, 13.85),
         Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_mp5_bar_sd"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_mp5_stock"},
-        DefaultIcon = Material(defatt2 .. "mp5stock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "mp7stock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.35, -5),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_mp5_stock_col",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_mp5_mag"},
-        DefaultIcon = Material(defatt2 .. "mp5mag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "vityazmag.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(0, 0, -0.4),
         Ang = Angle(90, 90, 180),
