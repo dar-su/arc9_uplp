@@ -248,15 +248,16 @@ SWEP.DropMagazineVelocity = Vector(0, -60, 0)
 
 -- urbna!
 local pathUT = "uplp_urban_temp/mp7/"
+local pathUTREAL = "uplp_rz/mp7/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.ogg",
-    pathUT .. "fire-02.ogg",
-    pathUT .. "fire-03.ogg",
-    pathUT .. "fire-04.ogg",
-    pathUT .. "fire-05.ogg",
-    pathUT .. "fire-06.ogg",
+    pathUTREAL .. "fire-01.ogg",
+    pathUTREAL .. "fire-02.ogg",
+    pathUTREAL .. "fire-03.ogg",
+    pathUTREAL .. "fire-04.ogg",
+    pathUTREAL .. "fire-05.ogg",
+    pathUTREAL .. "fire-06.ogg",
 }
 
 SWEP.ShootSoundSilenced = {
