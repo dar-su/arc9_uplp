@@ -27,6 +27,7 @@ ATT.Sights = {
         ViewModelFOV = 30,
         PeekPos = Vector(0, 2, -1),
         PeekAng = Angle(0, 0, 0),
+		CantPeek = true,
     }
 }
 
@@ -72,6 +73,7 @@ ATT.Sights = {
         ViewModelFOV = 30,
         PeekPos = Vector(0, 2, -1),
         PeekAng = Angle(0, 0, 0),
+		CantPeek = true,
     }
 }
 

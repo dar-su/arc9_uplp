@@ -60,8 +60,13 @@ SWEP.CrouchAng = Angle(0, 0, -25)
 SWEP.RestPos = Vector(3, 0, 0)
 SWEP.RestAng = Angle(35, -10, -20)
 
+SWEP.PeekMaxFOV = 40
+
 SWEP.PeekPos = Vector(-1.5, 4, -3)
 SWEP.PeekAng = Angle(0, 0.4, -40)
+
+SWEP.PeekPosReloading = Vector(0.5, 4, -1)
+SWEP.PeekAngReloading = Angle(0, 0.4, -5)
 
 SWEP.SightMidPoint = {
     Pos = Vector(-1, 20, -5),

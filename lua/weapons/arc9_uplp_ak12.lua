@@ -418,6 +418,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+		MinProgress = 0.6,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -444,7 +446,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload_762",
-        MinProgress= 0.6,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -467,7 +472,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty_762",
-        MinProgress= 0.7,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -495,14 +503,17 @@ SWEP.Animations = {
 
     ["reload_40rnd"] = {
         Source = "reload_762long",
-        MinProgress= 0.55,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 40 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -518,14 +529,17 @@ SWEP.Animations = {
     },
     ["reload_empty_40rnd"] = {
         Source = "reload_empty_762long",
-        MinProgress= 0.725,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 42 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 45.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 55 / 30, c = ca, v = 0.8 },
@@ -546,7 +560,10 @@ SWEP.Animations = {
 
     ["reload_545"] = {
         Source = "reload_545",
-        MinProgress= 0.6,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -569,7 +586,10 @@ SWEP.Animations = {
     },
     ["reload_empty_545"] = {
         Source = "reload_empty_545",
-        MinProgress= 0.7,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -597,14 +617,17 @@ SWEP.Animations = {
 
     ["reload_545_45rnd"] = {
         Source = "reload_545long",
-        MinProgress= 0.6,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 40 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -620,14 +643,17 @@ SWEP.Animations = {
     },
     ["reload_empty_545_45rnd"] = {
         Source = "reload_empty_545long",
-        MinProgress= 0.75,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 20 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 42 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 45.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 55 / 30, c = ca, v = 0.8 },
@@ -648,14 +674,17 @@ SWEP.Animations = {
 
     ["reload_545_60rnd"] = {
         Source = "reload_545fat",
-        MinProgress= 0.575,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 19.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 42.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -671,14 +700,17 @@ SWEP.Animations = {
     },
     ["reload_empty_545_60rnd"] = {
         Source = "reload_empty_545fat",
-        MinProgress= 0.725,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 19.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 43.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 47 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 56.5 / 30, c = ca, v = 0.8 },
@@ -699,7 +731,10 @@ SWEP.Animations = {
 
     ["reload_556"] = {
         Source = "reload_556",
-        MinProgress= 0.6,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -722,7 +757,10 @@ SWEP.Animations = {
     },
     ["reload_empty_556"] = {
         Source = "reload_empty_556",
-        MinProgress= 0.675,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -750,7 +788,10 @@ SWEP.Animations = {
 
     ["reload_drum"] = {
         Source = "reload_drum",
-        MinProgress= 0.625,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 0.92,
         EventTable = {
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -767,14 +808,17 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.77, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.975, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
-        MinProgress= 0.775,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 0.92,
         EventTable = {
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -784,18 +828,18 @@ SWEP.Animations = {
             { s = pathUT .. "magin_drum.ogg", t = 42 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 65 / 30, c = ca, v = 0.75 },
             { s = pathUT .. "chback.ogg", t = 76 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 79 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 78 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 90 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0.3},
-            {hide = 2, t = 22/30},
+            {hide = 2, t = 22 / 30},
             {hide = 0, t = 1.1},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.6, lhik = 0 },
-            { t = 0.77, lhik = 1 },
+            { t = 0.725, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -804,7 +848,10 @@ SWEP.Animations = {
 
     ["reload_308"] = {
         Source = "reload_308",
-        MinProgress= 0.6,
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -827,7 +874,10 @@ SWEP.Animations = {
     },
     ["reload_empty_308"] = {
         Source = "reload_empty_308",
-        MinProgress= 0.7,
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
