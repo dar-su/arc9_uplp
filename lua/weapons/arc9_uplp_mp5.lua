@@ -28,8 +28,8 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "KaansArsenal",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Darsu, Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
@@ -372,9 +372,9 @@ SWEP.Animations = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
 
-            { s = pathUT .. "chback.ogg", t = 0.26, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 0.41, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 0.61, c = ca },
+            { s = pathUT .. "chback.ogg", t = 0.17, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 0.35, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0.43, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -701,6 +701,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if eles["uplp_mp5_stock_col_f"] then
         mdl:SetBodygroup(3, 4)
+    end
+
+    if eles["uplp_mp5_hg_kurz_grip"] then
+        mdl:SetBodygroup(2, 6)
     end
 end
 
