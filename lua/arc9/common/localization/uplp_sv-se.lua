@@ -2328,7 +2328,7 @@ L["uplp_mp5_hg_navy.description"] = "Alternativ främre handskydd med inbyggd fi
 ////// Grips
 L["uplp_mp5_grip_kurz.printname"] = "Kurz-Framgrepp"
 L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
-L["uplp_mp5_grip_kurz.description"] = "Främre handskydd med inbyggt framgrepp för att kontrollera rekylen.\Kräver <color=175,175,255>114mm Kurz-Pipan</color>."
+L["uplp_mp5_grip_kurz.description"] = "Främre handskydd med inbyggt framgrepp för att kontrollera rekylen.\nKräver <color=175,175,255>114mm Kurz-Pipan</color>."
 
 ////// Stocks
 L["uplp_mp5_stock_buffer.printname"] = "Bufferrör"
