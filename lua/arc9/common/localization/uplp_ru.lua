@@ -2278,8 +2278,8 @@ L["uplp_weapon_rsh12_real"] = "РШ-12"
 L["uplp_weapon_rsh12_manufacturer"] = "Конструкторское бюро приборостроения"
 
 //////////////////// Mick Strider's Bowie Knife
--- L["uplp_weapon_knife"] = "Badlands Bowie"
--- L["uplp_weapon_knife_desc"] = "A custom-made bowie knife meant for use in harsher environments. Its blade is razor sharp and its handle is comfortable, making it really easy to ki- I mean open packages you receive... yes, that's what I meant."
+L["uplp_weapon_knife"] = "Нож Боуи"
+L["uplp_weapon_knife_desc"] = "Изготовленный на заказ нож Боуи, предназначенный для использования в более суровых условиях. Его лезвие острое как бритва, а ручка удобна, поэтому с ним очень легко уби- я имею в виду открывать посылки... да, это то, что я имел в виду."
 
 L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 
@@ -2305,8 +2305,8 @@ L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 -- L["uplp_knife_skin_orange.description"] = "Metallic orange variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw and a brown handle with white paws embedded on it."
 
 //////////////////// MP5
--- L["uplp_weapon_mp5"] = "PV-9"
--- L["uplp_weapon_mp5_desc"] = "The \"Persönliche Verteidigungswaffe 9 mm\" (Personal Defence Weapon 9mm), or PV-9 for short, is a compact and reliable submachine gun favored by military and law enforcement units globally. Its smooth operation and adaptability make it a top choice for close-quarters combat situations."
+L["uplp_weapon_mp5"] = "PV-9"
+L["uplp_weapon_mp5_desc"] = "«Persönliche Verteidigungswaffe 9x19» (Оружие индивидуальной защиты 9x19), или сокращенно PV-9, представляет собой компактный и надежный пистолет-пулемет, пользующийся успехом у военных и правоохранительных органов во всем мире. Его плавная работа и адаптируемость делают его лучшим выбором для боевых действий в ближнем бою."
 
 -- L["uplp_weapon_mp5k"] = "PV-9K"
 -- L["uplp_weapon_mp5sd"] = "PV-9S"

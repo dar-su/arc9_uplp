@@ -745,7 +745,7 @@ SWEP.AttachmentElements = {
     ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
         [3] = { Pos = Vector(0, 1.05, 9) },
         [4] = { Pos = Vector(-0.15, 0, 2) },
-        [14] = { Pos = Vector(0, 2.8, 8.7) },
+        [14] = { Pos = Vector(0, 2.8, 9.1) },
     } },
     ["uplp_mp5_bar_kurz"] = { Bodygroups = { { 2, 5 }, { 1, 1 } }, AttPosMods = {
         [5] = { Pos = Vector(0, -0.2, 10.25) },
@@ -895,12 +895,13 @@ SWEP.Attachments = {
         Category = {"uplp_m203_rail"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 2.25, 8.7),
+        Pos = Vector(0, 2.25, 8.9),
         Ang = Angle(90, 90, 0),
         Icon_Offset = Vector(0.5, 0, -1),
         Hidden = false,
         MergeSlots = {3},
         Hidden = true,
+        ExcludeElements = {"uplp_mp5_bar_kurz"},
     },
 }
 
