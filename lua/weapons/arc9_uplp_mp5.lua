@@ -702,7 +702,6 @@ SWEP.DeployTime = 1
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-	local grip = "uplp_grip_used"
 	local tacc = "uplp_tac_used"
 	local hg = "uplp_mp5_hg_"
 	
@@ -710,12 +709,13 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(6, 1)
     end
 
-    if (eles[grip] or eles[tacc]) then
+    local gripper = eles["uplp_grip_used"] or eles["uplp_m203_used"]
+    if (gripper or eles[tacc]) then
         if !eles["uplp_mp5_hg_navy"] and !eles["uplp_mp5_bar_kurz"] and !eles["uplp_mp5_bar_sd"] then
             mdl:SetBodygroup(2, 2)
         elseif eles["uplp_mp5_bar_kurz"] then
             mdl:SetBodygroup(2, 7)
-        elseif eles[grip] and eles["uplp_mp5_bar_sd"] then
+        elseif gripper and eles["uplp_mp5_bar_sd"] then
             mdl:SetBodygroup(2, 4)
         end
 
@@ -745,10 +745,12 @@ SWEP.AttachmentElements = {
     ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
         [3] = { Pos = Vector(0, 1.05, 9) },
         [4] = { Pos = Vector(-0.15, 0, 2) },
+        [14] = { Pos = Vector(0, 2.8, 8.7) },
     } },
     ["uplp_mp5_bar_kurz"] = { Bodygroups = { { 2, 5 }, { 1, 1 } }, AttPosMods = {
         [5] = { Pos = Vector(0, -0.2, 10.25) },
         [3] = { Pos = Vector(0, 0.75, 8) },
+        [14] = { Pos = Vector(0, 2.5, 8.7) },
     } },
     ["uplp_mp5_grip_kurz"] = { Bodygroups = { { 2, 6 }} },
 
@@ -886,6 +888,19 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.9, -0.075, 4.925),
         Ang = Angle(90, 0, -90),
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 2.25, 8.7),
+        Ang = Angle(90, 90, 0),
+        Icon_Offset = Vector(0.5, 0, -1),
+        Hidden = false,
+        MergeSlots = {3},
+        Hidden = true,
     },
 }
 
