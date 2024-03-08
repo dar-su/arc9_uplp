@@ -82,8 +82,8 @@ L["uplp_mechanism_gasoperated"] = "Accionado por gas"
 L["uplp_mechanism_rotatingbolt"] = "Cerrojo giratorio"
 L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
 L["uplp_mechanism_pumpaction"] = "Acción de Bombeo"
--- L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
--- L["uplp_mechanism_closedbolt"] = "Closed bolt"
+L["uplp_mechanism_rollerdelay"] = "Retroceso Retardado por Rodillo"
+L["uplp_mechanism_closedbolt"] = "Cerrojo Cerrado"
 
 L["uplp_mechanism_singleaction"] = "Acción Simple"
 L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
@@ -103,6 +103,7 @@ L["uplp_category_weapon_pistol"] = "Pistolas"
 L["uplp_category_weapon_shotgun"] = "Escopetas"
 L["uplp_category_weapon_smg"] = "Subfusiles"
 L["uplp_category_weapon_sniper"] = "Rifles de Francotirador"
+L["uplp_category_weapon_other"] = "Оtro"
 
 L["uplp_category_weapon_heavy"] = "Armas Pesadas"
 
@@ -124,7 +125,7 @@ L["uplp_category_appearance"] = "Apariencia"
 L["uplp_category_backup"] = "Mira de Respaldo"
 L["uplp_category_barrel"] = "Barril"
 L["uplp_category_bipod"] = "Bípode"
--- L["uplp_category_blade"] = "Blade"
+L["uplp_category_blade"] = "Cuchilla"
 L["uplp_category_charginghandle"] = "Manija de carga"
 L["uplp_category_charm"] = "Amuleto"
 L["uplp_category_dovetail"] = "Raíl de Cola de Milano"
@@ -133,7 +134,7 @@ L["uplp_category_extra"] = "Extras"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Empuñadura"
 L["uplp_category_handguard"] = "Guardamanos"
--- L["uplp_category_handle"] = "Handle"
+L["uplp_category_handle"] = "Mango"
 L["uplp_category_internals"] = "Interiores"
 L["uplp_category_magazine"] = "Cargador"
 L["uplp_category_magwell"] = "Embudo"
@@ -352,9 +353,9 @@ L["uplp_optic_okp.printname"] = "Mira Réflex OPWK-B"
 L["uplp_optic_okp.compactname"] = "OPWK"
 L["uplp_optic_okp.description"] = "Mira colimadora delgada y ligera de origen ruso." .. desc_cqcoptic
 
--- L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
--- L["uplp_optic_dedal.compactname"] = "12x CWI"
--- L["uplp_optic_dedal.description"] = "Magnified scope with 12x magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic
+L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
+L["uplp_optic_dedal.compactname"] = "12x CWI"
+L["uplp_optic_dedal.description"] = "Visor con 12 aumentos del Instituto de Armamento Cerberus destinado a uso militar." .. desc_bigoptic
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Punto Rojo Inclinado"
@@ -564,9 +565,9 @@ L["uplp_sg_shell_yellow.compactname"] = "Slug Exp."
 L["uplp_sg_shell_yellow.description"] = "Proyectiles que cargan una pequeña cabeza explosiva. Explota un área pequeña con metralla." .. shotgun_lp
 
 /////////// Underbarrel Weapons
--- L["uplp_ubgl_m203_rail.printname"] = "Model 40 Grenade Launcher"
--- L["uplp_ubgl_m203_rail.compactname"] = "M40 GL"
--- L["uplp_ubgl_m203_rail.description"] = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
+L["uplp_ubgl_m203_rail.printname"] = "Lanzagranadas Modelo 40"
+L["uplp_ubgl_m203_rail.compactname"] = "M40 GL"
+L["uplp_ubgl_m203_rail.description"] = "Lanzagranadas submontado que dispara granadas 40MM altamente explosivas."
 
 /////////// Cosmetics
 ////// Charms
@@ -898,15 +899,15 @@ L["uplp_ak_mag_545_drum.description"] = "Cargador de tambor cilíndrico de 85 ba
 /// 5.56×45mm  NATO
 local loaded556 = loaded .. "Cargado con <color=160,160,255>5.56×45mm </color> utilizado por el AK M10 5.56." .. changeammo.smg1
 
-L["uplp_ak_mag_556_30.printname"] = "30 Rondas 5.56×45mm  (Polímero)"
+L["uplp_ak_mag_556_30.printname"] = "30 Rondas 5.56×45mm (Polímero)"
 L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
 L["uplp_ak_mag_556_30.description"] = "Cargador de 30 balas fabricado en polímero." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30 Rondas 5.56×45mm  (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.printname"] = "30 Rondas 5.56×45mm (SynPoly)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (SP)"
 L["uplp_ak_mag_556_30_pmag.description"] = "SPMAG de 30 balas fabricado por SynPoly." .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30 Rondas 5.56×45mm  (Estilo M23)"
+L["uplp_ak_mag_556_30_12.printname"] = "30 Rondas 5.56×45mm (Estilo M23)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (M23)"
 L["uplp_ak_mag_556_30_12.description"] = "Cargador de 30 balas utilizado en el fusil AK M23 5.56." .. loaded556
 
@@ -1084,7 +1085,7 @@ L["uplp_ar15_barrel_16.description"] = "Cañón de 406mm (40cm) usado en rifles 
 
 L["uplp_ar15_barrel_16_alt.printname"] = "Cañón alternativo de 406mm"
 L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
-L["uplp_ar15_barrel_16_alt.description"] = "Cañón de 406mm (40cm) usado en rifles AR-15.\nNo mueve el gas block, lo que significa que no acepta handguards que requieren Cañónes 406mm (16\") o cañones más largos."
+L["uplp_ar15_barrel_16_alt.description"] = "Cañón de 406mm (40cm) usado en rifles AR-15.\nNo mueve el gas block, lo que significa que no acepta handguards que requieren Cañónes 406mm (40cm) o cañones más largos."
 
 L["uplp_ar15_barrel_20.printname"] = "Cañón de 508mm"
 L["uplp_ar15_barrel_20.compactname"] = "508mm"
@@ -1159,10 +1160,10 @@ L["uplp_ar15_gasblock_rail.description"] = "Gas block con riel superior incorpor
 
 ////// Handguards
 local requires = "\n"
-local requires14 = requires .. "Requiere 356mm (14\") o un cañón más largo."
-local requires16 = requires .. "Requiere 406mm (16\") o un cañón más largo."
-local requires20 = requires .. "Requiere 508mm (20\") o un cañón más largo."
-local requires22 = requires .. "Requiere 559mm (22\") o un cañón más largo."
+local requires14 = requires .. "Requiere 356mm (35cm) o un cañón más largo."
+local requires16 = requires .. "Requiere 406mm (40cm) o un cañón más largo."
+local requires20 = requires .. "Requiere 508mm (50cm) o un cañón más largo."
+local requires22 = requires .. "Requiere 559mm (55cm) o un cañón más largo."
 local onlycompact = "\n" .. "Sólo se puede utilizar el gas block compacto."
 
 L["uplp_ar15_hg_grenadier.printname"] = "Guardamanos Grenadier"
@@ -1217,12 +1218,12 @@ L["uplp_ar15_hg_tac_red.printname"] = "Guardamanos Hoki Armory (Rojo Deportivo)"
 L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (RD)"
 L["uplp_ar15_hg_tac_red.description"] = "Guardamanos táctico ligero para rifles AR-15 fabricado por Hoki Armory." .. requires16 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_tacshort.printname"] = "Hoki Armory Short Handguard"
+L["uplp_ar15_hg_tacshort.printname"] = "Guardamanos Corto Hoki Armory"
 L["uplp_ar15_hg_tacshort.compactname"] = "Hoki S"
 L["uplp_ar15_hg_tacshort.description"] = "Guardamanos táctico ligero acortado para rifles AR-15 fabricado por Hoki Armory." .. requires14 .. onlycompact
 
-L["uplp_ar15_hg_tacshort_red.printname"] = "Hoki Armory Short Handguard (Sporty Red)"
-L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (SR)"
+L["uplp_ar15_hg_tacshort_red.printname"] = "Guardamanos Corto Hoki Armory (Rojo Deportivo)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (RD)"
 L["uplp_ar15_hg_tacshort_red.description"] = "Guardamanos táctico ligero acortado para rifles AR-15 fabricado por Hoki Armory." .. requires14 .. onlycompact .. sportyred
 
 L["uplp_ar15_hg_a1.printname"] = "Guardamanos A1"
@@ -1257,23 +1258,23 @@ L["uplp_ar15_mag_glock_50.compactname"] = "50R 9×19mm"
 L["uplp_ar15_mag_glock_50.description"] = "Convierte el fusil en el AR-SMG, un subfusil de velocidad cíclica rápida con recámara de 9x19 mm.\nEquipada con un cargador de tambor de 50 balas fabricado para una conocida pistola austriaca." .. changeammo.pistol
 
 /// 5.56×45mm
-L["uplp_ar15_mag_drum.printname"] = "Tambor Dual de 90 Rondas 5.56×45mm  "
+L["uplp_ar15_mag_drum.printname"] = "Tambor Dual de 90 Rondas 5.56×45mm"
 L["uplp_ar15_mag_drum.compactname"] = "90R Tambor"
 L["uplp_ar15_mag_drum.description"] = "Cargador de tambor en forma de C de 90 balas."
 
-L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm   (416)"
+L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
 L["uplp_ar15_mag_hk.description"] = "Cargador de 30 balas de un AR-15 modificado de origen alemán."
 
-L["uplp_ar15_mag_pmag10.printname"] = "10 Rondas 5.56×45mm   (Polímero)"
+L["uplp_ar15_mag_pmag10.printname"] = "10 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Polí"
 L["uplp_ar15_mag_pmag10.description"] = "Cargador de 10 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag20.printname"] = "20 Rondas 5.56×45mm   (Polímero)"
+L["uplp_ar15_mag_pmag20.printname"] = "20 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20R Polí"
 L["uplp_ar15_mag_pmag20.description"] = "Cargador de 20 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag30.printname"] = "30 Rondas 5.56×45mm   (Polímero)"
+L["uplp_ar15_mag_pmag30.printname"] = "30 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_ar15_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly."
 
@@ -1281,19 +1282,19 @@ L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 52 Rondas 5.56×45
 L["uplp_ar15_mag_pmag60.compactname"] = "52R Tambor"
 L["uplp_ar15_mag_pmag60.description"] = "Cargador de tambor de 52 cartuchos fabricado en polímero por SynPoly.\nNo se recomienda cargar más de 52 balas, ya que podrían producirse atascos."
 
-L["uplp_ar15_mag_stanag20.printname"] = "20 Rondas 5.56×45mm   (Aluminio)"
+L["uplp_ar15_mag_stanag20.printname"] = "20 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
 L["uplp_ar15_mag_stanag20.description"] = "Cargador de 20 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag30.printname"] = "30 Rondas 5.56×45mm   (Aluminio)"
+L["uplp_ar15_mag_stanag30.printname"] = "30 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_ar15_mag_stanag30.description"] = "Cargador de 30 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag40.printname"] = "40 Rondas 5.56×45mm   (Aluminio)"
+L["uplp_ar15_mag_stanag40.printname"] = "40 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "Cargador de 40 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52 Rondas 5.56×45mm   Quadstacked"
+L["uplp_ar15_mag_stanag60.printname"] = "52 Rondas 5.56×45mm Quadstacked"
 L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
 L["uplp_ar15_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para albergar más munición.\nNo se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos."
 
@@ -1947,35 +1948,35 @@ L["uplp_scar_mag_20_68.printname"] = "10 Rondas 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
 L["uplp_scar_mag_20_68.description"] = "Cargador de 10 balas con recámara de 6.8 mm para el XAR.\nExtremadamente bueno para peleas a larga distancia.\nRestringe el arma a <color=255,100,100>sólo semi-automático</color>."
 
-L["uplp_scar_mag_drum.printname"] = "Tambor doble 5.56×45mm   de 90 Rondas"
+L["uplp_scar_mag_drum.printname"] = "Tambor doble 5.56×45mm de 90 Rondas"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
-L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 52 balas, ya que podrían producirse atascos.\nCNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 52 balas, ya que podrían producirse atascos.\nNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
 
-L["uplp_scar_mag_hk.printname"] = "30 Rondas 5.56×45mm   (416)"
+L["uplp_scar_mag_hk.printname"] = "30 Rondas 5.56×45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
 L["uplp_scar_mag_hk.description"] = "Cargador de 30 balas de un AR-15 modificado de origen alemán." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag20.printname"] = "20 Rondas 5.56×45mm   (Polímero)"
+L["uplp_scar_mag_pmag20.printname"] = "20 Rondas 5.56×45mm (Polímero)"
 L["uplp_scar_mag_pmag20.compactname"] = "20R Polí"
 L["uplp_scar_mag_pmag20.description"] = "Cargador de 20 cartuchos fabricado en polímero por SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm   (Polímero)"
+L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polímero)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm   de 52 Rondas"
+L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm de 52 Rondas"
 L["uplp_scar_mag_pmag60.compactname"] = "52R Tambor"
 L["uplp_scar_mag_pmag60.description"] = "Cargador de tambor de 52 balas fabricado en polímero por SynPoly. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30.printname"] = "30 Rondas 5.56×45mm   (Aluminio)"
+L["uplp_scar_mag_stanag30.printname"] = "30 Rondas 5.56×45mm (Aluminio)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
 L["uplp_scar_mag_stanag30.description"] = "Cargador de 30 cartuchos fabricado en aluminio." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30_tan.printname"] = "30 Rondas 5.56×45mm   (Bronceado)"
+L["uplp_scar_mag_stanag30_tan.printname"] = "30 Rondas 5.56×45mm (Bronceado)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Bronceado"
 L["uplp_scar_mag_stanag30_tan.description"] = "Cargador de 30 balas de aluminio pintado de color tostado." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52 Rondas 5.56×45mm   Quadstacked"
+L["uplp_scar_mag_stanag60.printname"] = "52 Rondas 5.56×45mm Quadstacked"
 L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
 L["uplp_scar_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para contener más munición. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
 
@@ -2054,30 +2055,30 @@ L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
 
 /////////// Attachments
 ////// Receivers
--- L["uplp_m9_receiver_raffica.printname"] = "PM92-A Receiver"
--- L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
--- L["uplp_m9_receiver_raffica.description"] = "Heavily modified \"Automatico\" receiver.\nComes with a built-in compensator and vertical grip that <color=100,255,100>reduces recoil</color>.\nSwitches the firing modes to <color=100,255,100>3-round burst</color> & <color=100,255,100>semi-automatic</color>."
+L["uplp_m9_receiver_raffica.printname"] = "Receptor PM92-A"
+L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
+L["uplp_m9_receiver_raffica.description"] = "Receptor \"Automatico\" muy modificado.\nViene con un compensador incorporado y empuñadura vertical que <color=100,255,100>reduce el retroceso</color>.\nCambia los modos de disparo a <color=100,255,100>Ráfaga de 3 disparos</color> & <color=100,255,100>semi-automatico</color>."
 
--- L["uplp_m9_receiver_a3.printname"] = "PM92-M Receiver"
--- L["uplp_m9_receiver_a3.compactname"] = "Moderno"
--- L["uplp_m9_receiver_a3.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights."
+L["uplp_m9_receiver_a3.printname"] = "Receptor PM92-M"
+L["uplp_m9_receiver_a3.compactname"] = "Moderno"
+L["uplp_m9_receiver_a3.description"] = "Receptor \"Moderno\" modernizado que permite la instalación de miras láser."
 
--- L["uplp_m9_receiver_a3t.printname"] = "PM92-M Receiver (Tan)"
--- L["uplp_m9_receiver_a3t.compactname"] = "Moderno (T)"
--- L["uplp_m9_receiver_a3t.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights.\n<color=255,255,100>Tan coloured version</color>."
+L["uplp_m9_receiver_a3t.printname"] = "Receptor PM92-M (Bronceado)"
+L["uplp_m9_receiver_a3t.compactname"] = "Moderno (B)"
+L["uplp_m9_receiver_a3t.description"] = "Receptor \"Moderno\" modernizado que permite la instalación de miras láser.\n<color=255,255,100>Versión en color bronceado</color>."
 
--- L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass Receiver"
--- L["uplp_m9_receiver_sc.compactname"] = "Sword"
--- L["uplp_m9_receiver_sc.description"] = "Modified PM92 inspired by Rebecca \"Revy\" Lee's personal sidearm.\nComes with an extended 150mm (5.9\") barrel."
+L["uplp_m9_receiver_sc.printname"] = "Receptor PM92 Sword Cutlass"
+L["uplp_m9_receiver_sc.compactname"] = "Sword"
+L["uplp_m9_receiver_sc.description"] = "PM92 modificada inspirada en el arma personal de Rebecca \"Revy\" Lee.\nViene con un cañon extendido de 150mm (14cm)."
 
--- L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V Receiver"
--- L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
--- L["uplp_m9_receiver_robocop.description"] = "Heavily modified PM92 originally made for use in an experimental robotic personnel program.\nComes with an extended 250mm (9.84\") barrel, <color=100,255,100>20-round</color> extended magazine, heat shield and raised iron sights.\nSwitches the firing mode to <color=100,255,100>3-round burst</color>.\nCannot equip <color=255,100,100>any other attachments</color>."
+L["uplp_m9_receiver_robocop.printname"] = "Receptor Robotic Arms Hyper-V"
+L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
+L["uplp_m9_receiver_robocop.description"] = "PM92 muy modificada fabricada originalmente para su uso en un programa experimental de personal robótico.\nViene con un cañon extendido de 250mm (24cm) tambien un, <color=100,255,100>Cargador extendido</color> de 20 rondas, escudo térmico y miras de hierro elevadas.\nCambia el modo de disparo a <color=100,255,100>Ráfaga de 3 disparos</color>.\nNo se puede equipar <color=255,100,100>cualquier otro accesorio</color>."
 
 ////// Magazines
--- L["uplp_m9_mag_20.printname"] = "20-Round Extended"
--- L["uplp_m9_mag_20.compactname"] = "20R"
--- L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM92."
+L["uplp_m9_mag_20.printname"] = "20 Rondas Extendidas"
+L["uplp_m9_mag_20.compactname"] = "20R"
+L["uplp_m9_mag_20.description"] = "Cargadores adicionales de 20 balas para la PM92."
 
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"
@@ -2110,7 +2111,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 -- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
-L["uplp_weapon_orsis_desc"] = "El \"Gryphon X108\" es el rifle de precisión más reciente y potente de Rusia en los tiempos modernos. El X108 tiene recámara para el potente cartucho de 12.7×108 mm, lo que lo hace muy eficaz contra vehículos blindados ligeros y medios y, especialmente, contra objetivos blandos." -- Double check.
+L["uplp_weapon_orsis_desc"] = "El Gryphon X108 es el último y más potente rifle de precisión de Rusia de los tiempos modernos. El X108 tiene recámara para el potente cartucho de 12,7×108mm, lo que lo hace muy eficaz contra vehículos blindados ligeros y medios y, especialmente, contra objetivos blandos."
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
@@ -2118,44 +2119,44 @@ L["uplp_weapon_orsis_manufacturer"] = "Oruzheynie Sistemy (ORSIS)"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_orsis_barrel_heavy.printname"] = "Heavy Accuracy Barrel"
--- L["uplp_orsis_barrel_heavy.compactname"] = "Heavy"
--- L["uplp_orsis_barrel_heavy.description"] = "Reinforced heavy barrel for the Gryphon X108."
+L["uplp_orsis_barrel_heavy.printname"] = "Cañón Pesado de Precisión"
+L["uplp_orsis_barrel_heavy.compactname"] = "Pesado"
+L["uplp_orsis_barrel_heavy.description"] = "Cañón pesado reforzado para el Gryphon X108."
 
--- L["uplp_orsis_barrel_short.printname"] = "Compact Agility Configuration"
--- L["uplp_orsis_barrel_short.compactname"] = "CAC"
--- L["uplp_orsis_barrel_short.description"] = "Shortened configuration of the Gryphon X108 intended for more intermediate range engagements.\nComes with a shortened barrel and top rail for mounting lasers, but <color=255,100,100>removes the bottom rail</color>."
+L["uplp_orsis_barrel_short.printname"] = "Configuración Compacta Agility"
+L["uplp_orsis_barrel_short.compactname"] = "CAC"
+L["uplp_orsis_barrel_short.description"] = "Configuración acortada del Gryphon X108 destinada a enfrentamientos de alcance más intermedio.\nViene con un cañón acortado y riel superior para montar láseres, pero <color=255,100,100>quita el riel inferior</color>."
 
 ////// Magazines
--- L["uplp_orsis_mag_3.printname"] = "3-Round Magazine"
--- L["uplp_orsis_mag_3.compactname"] = "3R"
--- L["uplp_orsis_mag_3.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108."
+L["uplp_orsis_mag_3.printname"] = "Cargador 3 Rondas"
+L["uplp_orsis_mag_3.compactname"] = "3R"
+L["uplp_orsis_mag_3.description"] = "Cargador <color=255,100,100>acortado de 3 balas</color> para el Gryphon X108"
 
--- L["uplp_orsis_mag_7.printname"] = "7-Round Magazine"
--- L["uplp_orsis_mag_7.compactname"] = "7R"
--- L["uplp_orsis_mag_7.description"] = "Extended <color=100,255,100>7-round</color> magazine for the Gryphon X108."
+L["uplp_orsis_mag_7.printname"] = "Cargador 7 Rondas"
+L["uplp_orsis_mag_7.compactname"] = "7R"
+L["uplp_orsis_mag_7.description"] = "Cargador <color=100,255,100>extendido de 7 balas</color> para el Gryphon X108"
 
 ////// Stocks
--- L["uplp_orsis_stock_sniper.printname"] = "Precision Stock"
--- L["uplp_orsis_stock_sniper.compactname"] = "Precision"
--- L["uplp_orsis_stock_sniper.description"] = "Configures the stock on the Gryphon X108 to be used for precision shooting."
+L["uplp_orsis_stock_sniper.printname"] = "Culata de Precisión"
+L["uplp_orsis_stock_sniper.compactname"] = "Precisión"
+L["uplp_orsis_stock_sniper.description"] = "Configura la culata del Gryphon X108 para utilizarla en tiro de precisión."
 
--- L["uplp_orsis_stock_atx.printname"] = "eXtreme Stock"
--- L["uplp_orsis_stock_atx.compactname"] = "eXtreme"
--- L["uplp_orsis_stock_atx.description"] = "Replaces the stock and pistol grip with lightweight ones made by eXtreme Sports."
+L["uplp_orsis_stock_atx.printname"] = "Culata eXtreme"
+L["uplp_orsis_stock_atx.compactname"] = "eXtreme"
+L["uplp_orsis_stock_atx.description"] = "Sustituye la culata y la empuñadura de pistola por unas ligeras fabricadas por eXtreme Sports."
 
--- L["uplp_orsis_stock_heavy.printname"] = "Heavy Accuracy Stock"
--- L["uplp_orsis_stock_heavy.compactname"] = "Heavy"
--- L["uplp_orsis_stock_heavy.description"] = "Reinforces the stock on the Gryphon X108 for use in rougher environments."
+L["uplp_orsis_stock_heavy.printname"] = "Culata Pesada de Precisión"
+L["uplp_orsis_stock_heavy.compactname"] = "Pesada"
+L["uplp_orsis_stock_heavy.description"] = "Refuerza la culata del Gryphon X108 para su uso en entornos más duros."
 
 ////// Muzzles
--- L["uplp_orsis_muzzle_small.printname"] = "Shortened X108 Brake"
--- L["uplp_orsis_muzzle_small.compactname"] = "S X108"
--- L["uplp_orsis_muzzle_small.description"] = "Shortened standard muzzle brake for the Gryphon X108."
+L["uplp_orsis_muzzle_small.printname"] = "Freno de Boca Acortado X108"
+L["uplp_orsis_muzzle_small.compactname"] = "S X108"
+L["uplp_orsis_muzzle_small.description"] = "Freno de boca estándar acortado para el Gryphon X108."
 
--- L["uplp_orsis_muzzle_big.printname"] = "Tank Buster Muzzle Brake"
--- L["uplp_orsis_muzzle_big.compactname"] = "Tank"
--- L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maximum recoil control.\nIntended for use on the Gryphon X108."
+L["uplp_orsis_muzzle_big.printname"] = "Freno de Boca Tank Buster"
+L["uplp_orsis_muzzle_big.compactname"] = "Tank"
+L["uplp_orsis_muzzle_big.description"] = "Freno de boca masivo pensado para un máximo control del retroceso.\nDiseñado para su uso en el Gryphon X108."
 
 //////////////////// AS VAL
  -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)
@@ -2233,7 +2234,7 @@ L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56×45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "Cargador extendido de 40 balas para la AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm   de 52 Rondas"
+L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm de 52 Rondas"
 L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
 L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la AW-UG."
 
@@ -2272,89 +2273,89 @@ L["uplp_weapon_rsh12_real"] = "RSh-12"
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
 
 //////////////////// Mick Strider's Bowie Knife
--- L["uplp_weapon_knife"] = "Badlands Bowie"
--- L["uplp_weapon_knife_desc"] = "A custom-made bowie knife meant for use in harsher environments. Its blade is razor sharp and its handle is comfortable, making it really easy to ki- I mean open packages you receive... yes, that's what I meant."
+L["uplp_weapon_knife"] = "Badlands Bowie"
+L["uplp_weapon_knife_desc"] = "Un cuchillo bowie hecho a medida para su uso en los entornos más duros. Su hoja está afilada como una cuchilla y su mango es cómodo, lo que facilita mucho mat- quiero decir abrir los paquetes que recibes... sí, a eso me refería."
 
-L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
+L["uplp_weapon_knife_real"] = "Cuchillo Bowie de Mick Strider"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
 ////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
--- L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Bowie."
+L["uplp_knife_skin_black.description"] = "Variante en negro mate oscurecido de la Bowie Badlands."
 
--- L["uplp_knife_skin_chrome.printname"] = "Chrome"
--- L["uplp_knife_skin_chrome.compactname"] = "Chrome"
--- L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
+L["uplp_knife_skin_chrome.printname"] = "Cromo"
+L["uplp_knife_skin_chrome.compactname"] = "Cromo"
+L["uplp_knife_skin_chrome.description"] = "Variante cromada del Bowie Badlands. Viene con un mango de color rojo."
 
--- L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle.\n\n<color=255,255,100>Skin only for darsubscribers - become one on boosty.to/darsu</color><color=255,55,55> (do not equip if you aren't darsubscriber)</color>"
+L["uplp_knife_skin_gold.description"] = "Variante dorada del Bowie Badlands. Viene con mango de color tostado desierto.\n\n<color=255,255,100>Skin sólo para darsubscriptores - hazte uno en boosty.to/darsu</color><color=255,55,55> (no equipar si no eres darsuscriptor)</color>"
 
--- L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nEsta variante del azul recibe el sobrenombre de \"Azul Cylo\", debe su nombre a una especie exótica de murciélago."
+L["uplp_knife_skin_blue.description"] = "Variante azul metalizado del Bowie Badlands. Viene con un mango azul oscuro.\nEsta variante del azul recibe el sobrenombre de \"Azul Cylo\", debe su nombre a una especie exótica de murciélago."
 
--- L["uplp_knife_skin_red.printname"] = "Red Soda"
--- L["uplp_knife_skin_red.compactname"] = "Red"
--- L["uplp_knife_skin_red.description"] = "Metallic red variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw, and a handle with white paws embedded on it."
+L["uplp_knife_skin_red.printname"] = "Rojo Soda"
+L["uplp_knife_skin_red.compactname"] = "Rojo"
+L["uplp_knife_skin_red.description"] = "Variante en rojo metálico del Bowie Badlands. Viene con una hoja modificada con una pata recortada, y un mango con patas blancas incrustadas."
 
--- L["uplp_knife_skin_orange.printname"] = "Foxy Orange"
--- L["uplp_knife_skin_orange.compactname"] = "Orange"
--- L["uplp_knife_skin_orange.description"] = "Metallic orange variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw and a brown handle with white paws embedded on it."
+L["uplp_knife_skin_orange.printname"] = "Naranja Foxy"
+L["uplp_knife_skin_orange.compactname"] = "Naranja"
+L["uplp_knife_skin_orange.description"] = "Variante naranja metalizado del Bowie Badlands. Viene con una hoja modificada con una pata recortada y un mango marrón con patas blancas incrustadas."
 
 //////////////////// MP5
--- L["uplp_weapon_mp5"] = "PV-9"
--- L["uplp_weapon_mp5_desc"] = "The \"Persönliche Verteidigungswaffe 9 mm\" (Personal Defence Weapon 9mm), or PV-9 for short, is a compact and reliable submachine gun favored by military and law enforcement units globally. Its smooth operation and adaptability make it a top choice for close-quarters combat situations."
+L["uplp_weapon_mp5"] = "PV-9"
+L["uplp_weapon_mp5_desc"] = "El \"Persönliche Verteidigungswaffe 9 mm\" (Personal Defence Weapon 9mm), o PV-9 para abreviar, es un subfusil compacto y fiable preferido por las unidades militares y policiales de todo el mundo. Su funcionamiento suave y su adaptabilidad lo convierten en la mejor opción para situaciones de combates en espacios cerrados."
 
--- L["uplp_weapon_mp5k"] = "PV-9K"
--- L["uplp_weapon_mp5sd"] = "PV-9S"
+L["uplp_weapon_mp5k"] = "PV-9K"
+L["uplp_weapon_mp5sd"] = "PV-9S"
 
--- L["uplp_weapon_mp5_real"] = "H&K MP5"
+L["uplp_weapon_mp5_real"] = "H&K MP5"
 
--- L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
+L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
 
 /////////// Attachments
 ////// Barrel
--- L["uplp_mp5_bar_sd.printname"] = "146mm SD Barrel"
--- L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
--- L["uplp_mp5_bar_sd.description"] = "Modified 146mm (5.7\") barrel with built-in suppressor, converting the PV-9 to the PV-9S."
+L["uplp_mp5_bar_sd.printname"] = "Cañón SD de 146mm"
+L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
+L["uplp_mp5_bar_sd.description"] = "Cañón modificado de 146 mm (14cm) con supresor incorporado, que convierte el PV-9 en el PV-9S."
 
--- L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz Barrel"
--- L["uplp_mp5_bar_kurz.compactname"] = "114mm Kurz"
--- L["uplp_mp5_bar_kurz.description"] = "Shortened 114mm (4.5\") Kurz barrel, converting the PV-9 to the PV-9K."
+L["uplp_mp5_bar_kurz.printname"] = "Cañón Kurz de 114mm"
+L["uplp_mp5_bar_kurz.compactname"] = "114mm Kurz"
+L["uplp_mp5_bar_kurz.description"] = "Cañón Kurz acortado de 114mm (11cm), convirtiendo el PV-9 en el PV-9K."
 
 ////// Handguard
--- L["uplp_mp5_hg_navy.printname"] = "Navy Handguard"
--- L["uplp_mp5_hg_navy.compactname"] = "Navy"
--- L["uplp_mp5_hg_navy.description"] = "Alternative front handguard with a built-in flashlight."
+L["uplp_mp5_hg_navy.printname"] = "Guardamanos Navy"
+L["uplp_mp5_hg_navy.compactname"] = "Navy"
+L["uplp_mp5_hg_navy.description"] = "Guardamanos delantero alternativo con linterna incorporada."
 
 ////// Grips
--- L["uplp_mp5_grip_kurz.printname"] = "Kurz Foregrip"
--- L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
--- L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil.\nRequires <color=175,175,255>114mm Kurz Barrel</color>."
+L["uplp_mp5_grip_kurz.printname"] = "Empuñadura Kurz"
+L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
+L["uplp_mp5_grip_kurz.description"] = "Guardamanos delantero con empuñadura integrada para controlar el retroceso.\nRequiere <color=175,175,255>Cañón Kurz de 114mm</color>."
 
 ////// Stocks
--- L["uplp_mp5_stock_buffer.printname"] = "Buffer Tube"
--- L["uplp_mp5_stock_buffer.compactname"] = "Buffer Tube"
--- L["uplp_mp5_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+L["uplp_mp5_stock_buffer.printname"] = "Tubo Tampón"
+L["uplp_mp5_stock_buffer.compactname"] = "Tubo Tampón"
+L["uplp_mp5_stock_buffer.description"] = "Sustituye la culata por un tubo amortiguador que acepta culatas AR-15."
 
--- L["uplp_mp5_stock_pdw.printname"] = "Folding PDW Stock"
--- L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
--- L["uplp_mp5_stock_pdw.description"] = "Side-folding PDW stock for the PV-9."
+L["uplp_mp5_stock_pdw.printname"] = "Culata PDW Plegable"
+L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
+L["uplp_mp5_stock_pdw.description"] = "Culata PDW de plegado lateral para el PV-9."
 
--- L["uplp_mp5_stock_col.printname"] = "Collapsible Stock"
--- L["uplp_mp5_stock_col.compactname"] = "Collapsible"
--- L["uplp_mp5_stock_col.description"] = "Collapsible stock for the PV-9. Useful for fighting indoors."
+L["uplp_mp5_stock_col.printname"] = "Culata Colapsable"
+L["uplp_mp5_stock_col.compactname"] = "Colapsable"
+L["uplp_mp5_stock_col.description"] = "Culata plegable para el PV-9. Útil para combatir en interiores."
 
--- L["uplp_mp5_stock_fixed.printname"] = "Fixed PV-9 Stock"
--- L["uplp_mp5_stock_fixed.compactname"] = "Fixed"
--- L["uplp_mp5_stock_fixed.description"] = "Fixed, solid stock for the PV-9."
+L["uplp_mp5_stock_fixed.printname"] = "Stock Fijo PV-9"
+L["uplp_mp5_stock_fixed.compactname"] = "Fijo"
+L["uplp_mp5_stock_fixed.description"] = "Culata fija y sólida para el PV-9."
 
 ////// Magazines
--- L["uplp_mp5_mag_15.printname"] = "15-Round 9x19mm"
--- L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
--- L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9x19mm ammunition."
+L["uplp_mp5_mag_15.printname"] = "15 Rondas 9x19mm"
+L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
+L["uplp_mp5_mag_15.description"] = "Cargador acortado con capacidad para 15 balas de munición 9x19mm."
 
--- L["uplp_mp5_mag_50.printname"] = "50-Round 9x19mm Drum"
--- L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
--- L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9x19mm ammunition."
+L["uplp_mp5_mag_50.printname"] = "Tambor de 50 Rondas 9x19mm"
+L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
+L["uplp_mp5_mag_50.description"] = "Gran cargador de tambor de 50 balas con capacidad para munición 9x19mm."
 
--- L["uplp_mp5_mag_10mm.printname"] = "30-Round 10mm"
--- L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
--- L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
+L["uplp_mp5_mag_10mm.printname"] = "30 Rondas 10mm"
+L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
+L["uplp_mp5_mag_10mm.description"] = "Convierte el PV-9 en el PV-10, mejorando la potencia de fuego a costa del control del retroceso."
