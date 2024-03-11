@@ -1,6 +1,8 @@
 [h1]New content[/h1]
 [list]
 	[*] Added the [b]Badlands Bowie[/b], a fancy, rather sharp knife to cut things with.
+	[*] Added the [b]PV-9[/b], an iconic German 9x19mm submachine gun.
+	[*] Added the [b]SK 9×39[/b], a customizable Russian firearm intended for stealthy engagements.
 [/list]
 
 [h1]Changed content[/h1]
