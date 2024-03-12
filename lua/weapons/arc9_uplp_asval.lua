@@ -55,7 +55,18 @@ SWEP.Hook_Think = function(swep)
             
             local hot = swep:GetHeatAmount()
             if hot > 15 and swep:GetProcessedValue("Overheat", true) then
-                local pcf = CreateParticleSystem(LocalPlayer():GetViewModel(), "muzzle_heatwave_long", PATTACH_POINT_FOLLOW, 6)
+	            local att = 6
+                local vm = LocalPlayer():GetViewModel()
+                local wm = false
+                if (LocalPlayer():ShouldDrawLocalPlayer() or swep.Owner != LocalPlayer()) then
+                    wm = true
+                    att = 1
+                end
+                local parent = swep
+                if !wm then parent = vm
+                else parent = (swep.WModel or {})[1] or swep end
+
+                local pcf = CreateParticleSystem(parent, "muzzle_heatwave_long", PATTACH_POINT_FOLLOW, att)
 
                 if IsValid(pcf) then
                     pcf:StartEmission()
@@ -353,26 +364,27 @@ SWEP.BulletBones = {
     [1] = "bullet1",
     [2] = "bullet2",
     [3] = "bullet3",
-    [4] = "bullet4",
 }
 SWEP.BulletBonesSub1 = true 
 
 SWEP.HideBones = {
     "fakemag",
+    "bullet1",
+    "bullet2",
+    "bullet3",
     "fakerounds",
 }
 
 SWEP.ReloadHideBoneTables = {
     [1] = {
-        "fakemag",
+        "mag",
         "fakerounds",
     },
     [2] = {
-        "mag",
+        "fakemag",
         "bullet1",
         "bullet2",
         "bullet3",
-        "bullet4",
     },
 }
 
@@ -622,7 +634,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0.88}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -650,7 +662,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0.88}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -674,7 +686,7 @@ SWEP.Animations = {
             { s = pathUT .. "chamber_9.ogg", t = 115 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 122 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 127.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -695,7 +707,7 @@ SWEP.Animations = {
             { s = pathUT .. "chamber_9.ogg", t = 115 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 122 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 127.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -716,7 +728,7 @@ SWEP.Animations = {
             { s = pathUT .. "chamber_9.ogg", t = 23 / 30 + 0.25, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 29 / 30 + 0.25, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 30 / 30 + 0.25, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         EjectAt = 1,
         IKTimeLine = {

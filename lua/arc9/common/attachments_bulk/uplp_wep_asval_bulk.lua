@@ -181,4 +181,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty"  then return anim .. "_30" end
 end
 
+ATT.DropMagazineTime = 0.88 * 1.05
+ATT.DropMagazineVelocity = Vector(0, 80, -80)
+
 ARC9.LoadAttachment(ATT, "uplp_asval_mag_30")
