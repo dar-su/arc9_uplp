@@ -376,6 +376,15 @@ ATT.SpreadMult = 1.1
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
 
+ATT.Overheat = true
+ATT.HeatCapacityMult = 1.1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.03
+ATT.RPMMultHot = 0.85
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_evilsup")
 
 
@@ -417,6 +426,15 @@ ATT.RecoilMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.04
 ATT.SprintToFireTimeAdd = 0.03
 
+ATT.Overheat = true
+ATT.HeatCapacityMult = 1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.05
+ATT.RPMMultHot = 0.85
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_heavypistolsup")
 
 
@@ -457,6 +475,15 @@ ATT.RecoilRandomSideMult = 1.2
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.01
 
+ATT.Overheat = true
+ATT.HeatCapacityMult = 0.8 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.05
+ATT.RPMMultHot = 0.85
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_lightsup")
 
 
@@ -496,6 +523,15 @@ ATT.BarrelLengthAdd = 3
 ATT.RangeMaxMult = 0.9
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
+
+ATT.Overheat = true
+ATT.HeatCapacityMult = 0.8 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.04
+ATT.RPMMultHot = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_midsup")
 
@@ -538,6 +574,15 @@ ATT.SpreadMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
 
+ATT.Overheat = true
+ATT.HeatCapacityMult = 1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.025
+ATT.RPMMultHot = 0.85
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_modernsup")
 
 
@@ -577,6 +622,15 @@ ATT.SprintToFireTimeAdd = 0.01
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
+
+ATT.Overheat = true
+ATT.HeatCapacityMult = 0.9 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.05
+ATT.RPMMultHot = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_shortsup")
 

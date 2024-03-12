@@ -35,16 +35,15 @@ SWEP.Credits = {
 }
 
 
-SWEP.StandardPresets = {}
+SWEP.StandardPresets = {
+    "[Sniper]XQAAAQAqAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdevdtRTkxB47QNF0AhTW5C7wiHaBogAwafS7BG/goCJr0mtmY77pRz6q/e26JBUBusOR4K+D7KSV3mgw0DBCqRBYcDdqpv/zyjYnvCUYulAkwOQ/XQh3IJaMsours28QS9r4FsuMiSEA",
+    "[SK-2]XQAAAQDeAAAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrgpRXm4Oqz2H2DSMOfL3jVf0elLaCOUHcXIHowH+HBkyPZnNnycCzSNwrRDkRkdfl4IZfN1ih/11ZLum/hSdYJl9VI1xt76wYeNtq5lSB0a6fbLkxSXqzeir1nbzOWaMGPai/AA==",
+    "[MK Lighting]XQAAAQAJAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8ungv5P87KsxssS2d1degKx+In34R1pFUJ6YiYnkgNygz10bJCZHwZbwmU+IsnGvo2VwDcx3h/X9TalvViiymz97wOdVAA==",
+    "[MK Thunder]XQAAAQCLAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdZ1fP0HAsr6RlAUA8ungv5P87KsxssS3GU2bbsRB3ObSsOUmU7aOKKNFqui6KZEZB85weAnUA4X1TdfJ0n9l9eXzgkRIpWjRBBrCmZqxrhwjxWl3+uDa0YIWMbYvaotNeEfRgp9qluhVWQLQNzr2HuIXnNCNu/IRClgONm94aqOZNkMwOj08kYt3p0Ox6J+GmdPYRw==",
+}
 
 ---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_suppressed"
-
-SWEP.AfterShotParticle = false
-SWEP.AfterShotParticleHook = function(swep, old) 
-    if swep:GetHeatAmount() > 2 then return "barrel_smoke" end
-    return old
-end
 
 SWEP.MuzzleEffectQCA = 1
 
@@ -190,9 +189,10 @@ SWEP.HeatDissipation = 5
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 SWEP.MalfunctionWait = -1
-SWEP.HeatPerShotMultFirstShot = 0.1
+SWEP.HeatPerShotMultFirstShot = 0.1 -- not works?
 
 SWEP.SpreadAddHot = 0.05
+SWEP.RPMMultHot = 0.8
 
 
 -- Weapon handling
@@ -220,7 +220,7 @@ SWEP.Firemodes = {
 
 SWEP.Silencer = true
 SWEP.ShootPitch = 90
-SWEP.ShootVolume = 120
+SWEP.ShootVolume = 23
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -403,6 +403,12 @@ local thetoggle = {{
     }, t = 0
 }}
 
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if anim == "draw" or anim == "ready" or anim == "inspect" then
+        if swep:GetElements()["uplp_no_grip"] then return anim .. "_sr3" end
+    end
+end
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -430,6 +436,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/awp/boltdown.ogg", t = 4 / 30, c = ca, v = 0.8 },
+
             { s = pathUT .. "chback.ogg", t = 4.5 / 30 + 0.5, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 9 / 30 + 0.5, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 60 + 0.5, c = ca },
@@ -459,6 +467,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/awp/boltdown.ogg", t = 4 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -769,6 +778,7 @@ SWEP.AttachmentElements = {
     ["uplp_optic_used"] =         { Bodygroups = { { 1, 1 } } },
     ["uplp_tac_used"] =         { Bodygroups = { { 6, 1 } } },
     ["uplp_grip_used"] =         { Bodygroups = { { 5, 1 } } },
+    ["uplp_bipod_used"] =         { Bodygroups = { { 5, 1 } } },
 	
     ["uplp_ak_dovetail_rail_used"] =         { AttPosMods = {
     [1] = { Pos = Vector(0, 0, 0.25) },
@@ -870,6 +880,19 @@ SWEP.Attachments = {
 		-- [""] = true,
 		},
         -- CorrectiveAng = Angle(0.4, -0.35, 0),
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material(defatt .. "bipod.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.05, 2.85, 13.2),
+        Ang = Angle(90, 90, 180),
+        Hidden = false,
+        MergeSlots = {4},
+        Hidden = true,
+        ExcludeElements = {"uplp_no_grip"},
     },
 
     -- Cosmetic shit

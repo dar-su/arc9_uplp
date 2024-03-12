@@ -30,13 +30,6 @@ ATT.Overheat = false -- no silencer
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
 
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    if anim == "draw" or anim == "ready" or anim == "inspect" then
-        return anim .. "_sr3"
-    end
-end
-
-
 ARC9.LoadAttachment(ATT, "uplp_asval_hg_sr3")
 
 ---------- uplp_asval_hg_sr3s
@@ -57,12 +50,6 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
-
-ATT.Hook_TranslateAnimation = function(wep, anim)
-    if anim == "draw" or anim == "ready" or anim == "inspect" then
-        return anim .. "_sr3"
-    end
-end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_hg_sr3s")
 
@@ -151,7 +138,7 @@ ATT.RPMAdd = -350
 ATT.ClipSizeOverride = 10
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_10"
+    if anim == "reload" or anim == "reload_empty"  then return anim .. "_10" end
 end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_mag_10")
@@ -191,7 +178,7 @@ ATT.ActivateElements = {""}
 ATT.ClipSizeOverride = 30
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_30"
+    if anim == "reload" or anim == "reload_empty"  then return anim .. "_30" end
 end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_mag_30")
