@@ -2202,7 +2202,7 @@ L["uplp_asval_hg_sr3s.description"] = "Moderniserat handskydd från MK Lightning
 ////// Handguards
 L["uplp_asval_mag_10.printname"] = "10-Patroners STS"
 L["uplp_asval_mag_10.compactname"] = "10P STS"
-L["uplp_asval_mag_10.description"] = "Förkortat 10-patronersmagasin med \"Specialtillverkade Subsoniska\" skott gjorde för SK Shadow."
+L["uplp_asval_mag_10.description"] = "Förkortat 10-patronersmagasin med \"Specialtillverkade Subsoniska\" skott gjorde för SK Shadow.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
 
 L["uplp_asval_mag_ap.printname"] = "20-Patroners PB"
 L["uplp_asval_mag_ap.compactname"] = "20P PB"

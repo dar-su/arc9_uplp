@@ -38,7 +38,8 @@ SWEP.Credits = {
 SWEP.StandardPresets = {}
 
 ---- Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_ak47"
+SWEP.MuzzleParticle = "muzzleflash_suppressed"
+-- SWEP.AfterShotParticle = "AC_muzzle_smoke_barrel"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
@@ -97,10 +98,10 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 30
+SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1 + 1
+SWEP.Recoil = 1
 SWEP.RecoilUp = 1.35
 SWEP.RecoilSide = 1.2
 
@@ -116,10 +117,10 @@ SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.1 -- Vertical tilt
+SWEP.VisualRecoilUp = 0.05 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
@@ -128,8 +129,8 @@ SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .1
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 2
-SWEP.VisualRecoilSideHipFire = -0.2
+SWEP.VisualRecoilUpHipFire = 0.25
+SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
 SWEP.VisualRecoilPunchHipFire = 0.5
 SWEP.VisualRecoilDampingConstHipFire = 45
@@ -160,11 +161,10 @@ SWEP.SpeedMultShooting = 0.8
 SWEP.AimDownSightsTime = 0.37 - 0.1 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.37 - 0.1 -- Time it takes to fully enter sprint
 
-SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 40
 
 -- Shooting and Firemodes
-SWEP.RPM = 600 -- How fast gun shoot
+SWEP.RPM = 800 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -176,6 +176,7 @@ SWEP.Firemodes = {
     PoseParam = 2 }
 }
 
+SWEP.Silencer = true
 SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
 
@@ -193,16 +194,30 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.3, -3, 0.975),
-     Ang = Angle(0.375, 0, -2.5),
+     Pos = Vector(-2.25, -2, 1.1),
+     Ang = Angle(0, 0.25, 0),
      Magnification = 1.15,
      ViewModelFOV = 55,
 }
 
+SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    local attached = self:GetElements()
+
+     if (attached["uplp_asval_hg_sr3"] or attached["uplp_asval_hg_sr3s"]) then
+        return {
+			 Pos = Vector(-2.25, -2, 0.9),
+			 Ang = Angle(0, 0, 0),
+			 Magnification = 1.15,
+			 ViewModelFOV = 55,
+        }
+    end
+
+end
+
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 32.5, 5)
+SWEP.CustomizePos = Vector(13.5, 32.5, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(13.5, -2, -2)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
 SWEP.CustomizeSnapshotFOV = 90
@@ -223,41 +238,41 @@ local pathUT = "uplp_urban_temp/ak/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "762/fire-01.ogg",
-    pathUT .. "762/fire-02.ogg",
-    pathUT .. "762/fire-03.ogg",
-    pathUT .. "762/fire-04.ogg",
-    pathUT .. "762/fire-05.ogg",
-    pathUT .. "762/fire-06.ogg",
+    pathUT .. "9mm/fire-9-01.ogg",
+    pathUT .. "9mm/fire-9-02.ogg",
+    pathUT .. "9mm/fire-9-03.ogg",
+    pathUT .. "9mm/fire-9-04.ogg",
+    pathUT .. "9mm/fire-9-05.ogg",
+    pathUT .. "9mm/fire-9-06.ogg",
 }
 
 SWEP.ShootSoundSilenced = {
-    pathUT .. "762/fire-sup-01.ogg",
-    pathUT .. "762/fire-sup-02.ogg",
-    pathUT .. "762/fire-sup-03.ogg",
-    pathUT .. "762/fire-sup-04.ogg",
-    pathUT .. "762/fire-sup-05.ogg",
-    pathUT .. "762/fire-sup-06.ogg",
+    pathUT .. "9mm/fire-sup-01.ogg",
+    pathUT .. "9mm/fire-sup-02.ogg",
+    pathUT .. "9mm/fire-sup-03.ogg",
+    pathUT .. "9mm/fire-sup-04.ogg",
+    pathUT .. "9mm/fire-sup-05.ogg",
+    pathUT .. "9mm/fire-sup-06.ogg",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-01.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-02.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-03.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-04.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-05.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-ext-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
 }
 
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-01.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-02.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-03.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-04.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-05.ogg",
-    pathUTC .. "762x39tails/fire-dist-762x39-rif-int-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
 }
 
 SWEP.DistantShootSoundSilenced = {
@@ -400,7 +415,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.865,
+		PeekProgress = 0.775,
 		RefillProgress = 0.6,
 		FireASAP = true,
         Mult = 1.05,
@@ -409,7 +424,7 @@ SWEP.Animations = {
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -419,7 +434,7 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.85, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -435,10 +450,120 @@ SWEP.Animations = {
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 41 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["reload_10"] = {
+        Source = "reload_10",
+        MinProgress = 0.9,
+		PeekProgress = 0.775,
+		RefillProgress = 0.6,
+		FireASAP = true,
+        Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_10"] = {
+        Source = "reload_empty_10",
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
+        Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 41 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.925, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["reload_30"] = {
+        Source = "reload_30",
+        MinProgress = 0.9,
+		PeekProgress = 0.775,
+		RefillProgress = 0.6,
+		FireASAP = true,
+        Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 12 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_30"] = {
+        Source = "reload_empty_30",
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
+        Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 12 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 53 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
             {hide = 2, t = 0.75}
@@ -459,13 +584,12 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magrelease.ogg", t = 10 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "grab-polymer.ogg", t = 63 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 115 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 67.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 72.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "presscheck_1.ogg", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 115 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 122 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 127.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
         IKTimeLine = {
@@ -478,10 +602,12 @@ SWEP.Animations = {
     },
 	
     ["firemode_1"] = {
-        Source = "firemode_0",
+        -- Source = "firemode_0",
+        Source = "modeswitch",
     },
     ["firemode_2"] = {
-        Source = "firemode_1",
+        -- Source = "firemode_1",
+        Source = "modeswitch",
     },
 
     ["toggle"] = {
@@ -494,55 +620,63 @@ SWEP.Animations = {
     },
 }
 
-SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if !IsFirstTimePredicted() then return end
-    -- theres some mod for arc9eft that makes mag checks on bind and it manipulates EFTInspectnum value so well keep eft in name to keep functionality
-    if anim == "inspect" or anim == "inspect_empty" then
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
-        local rand = swep.EFTInspectnum
-        if rand == 1 then return anim .. "_look" end
-        if rand == 2 then swep.EFTInspectnum = 0 rand = 0 end
-    end
-end
-
 ---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_ak_brl_su"] and !eles["uplp_su_hgexists"] then
-        mdl:SetBodygroup(4,10)
+	
+    if (eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
+		if !(eles["uplp_asval_stock_buffer"] or eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"]) then
+			mdl:SetBodygroup( 3,1 )
+		end
+		if eles["uplp_tac_used"] then
+			mdl:SetBodygroup( 6,2 )
+		end
     end
 
-    if (eles["uplp_ak_dc_old"] or eles["uplp_ak_dc_internals"]) and (eles["uplp_ak_stock_old"] or eles["uplp_ak_stock_underfold"]) then
-        mdl:SetBodygroup(0, 1)
-        if eles["uplp_ak_nmount"] then
-            mdl:SetBodygroup(7, 3)
-        end
-    end
+	if (eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"]) and !(eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
+		mdl:SetBodygroup( 2,1 )
+	end
 
-    if eles["uplp_ak_brl_rpk"] and wep:GetBipod() then
-        if wep:GetEnterBipodTime() + 0.2 < CurTime() then
-            mdl:SetBodygroup(2, 10)
-        end
-    end
+	if eles["uplp_ak_dovetail_rail_used"] then
+		mdl:SetBodygroup( 1, 0 )
+	end
 
 end
 
 SWEP.AttachmentElements = {
 
+    ["uplp_optic_used"] =         { Bodygroups = { { 1, 1 } } },
+    ["uplp_tac_used"] =         { Bodygroups = { { 6, 1 } } },
+    ["uplp_grip_used"] =         { Bodygroups = { { 5, 1 } } },
+	
+    ["uplp_ak_dovetail_rail_used"] =         { AttPosMods = {
+    [1] = { Pos = Vector(0, 0, 0.25) },
+    }},
+	
     -- Stocks
     ["uplp_asval_stock_buffer"] =         { Bodygroups = { { 3, 4 } } },
     ["uplp_asval_stock_vss"] =         { Bodygroups = { { 3, 2 } } },
     ["uplp_asval_stock_vssm"] =         { Bodygroups = { { 3, 3 } } },
 
     -- Handguards
-    ["uplp_asval_hg_sr3"] =         { Bodygroups = { { 2,2 } } },
-    ["uplp_asval_hg_sr3s"] =         { Bodygroups = { { 2,3 } } },
+    ["uplp_asval_hg_sr3"] =         { Bodygroups = { { 2,2 } }, AttPosMods = {
+    [3] = { Pos = Vector(-0.75, 0.9, 9.75), Ang = Angle(90, 90, -125), Icon_Offset = Vector(0, -1, 1) },
+    }},
+    ["uplp_asval_hg_sr3s"] =         { Bodygroups = { { 2,3 } }, AttPosMods = {
+    [3] = { Pos = Vector(-0.75, 0.9, 9.75), Ang = Angle(90, 90, -125), Icon_Offset = Vector(0, -1, 1) },
+    }},
 	
     -- Magazines
     ["uplp_asval_mag_10"] =         { Bodygroups = { { 4,1 } } },
     ["uplp_asval_mag_30"] =         { Bodygroups = { { 4,2 } } },
 
+}
+
+SWEP.AttachmentTableOverrides = {
+    ["uplp_ak_dovetail_rail"] = {
+    Model = "models/weapons/arc9/uplp/dovetail_mount_compact.mdl",
+    },
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -554,7 +688,7 @@ SWEP.Attachments = {
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.1, 1.5),
+        Pos = Vector(0, 0.725, 1),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_optic_dovetail_used"},
         -- CorrectiveAng = Angle(0.4, -0.35, 0),
@@ -564,10 +698,28 @@ SWEP.Attachments = {
         Category = {"uplp_asval_handguard"},
         DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 1.85, 10),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(10, 0, -1.85),
         ExcludeElements = {"uplp_ak_brl_su"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(0.81, 2.33, 18),
+        Ang = Angle(90, 90, 45),
+        Icon_Offset = Vector(0, 0, 0),
+        ExcludeElements = {"uplp_no_tactical"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 2.8, 11.5),
+        Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_no_grip"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
@@ -582,16 +734,20 @@ SWEP.Attachments = {
         Category = {"uplp_asval_stock"},
         DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 2, -3),
+        Pos = Vector(0, 2.5, -3),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
-        Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_cosmetic"},
+        Category = {"uplp_optic_dovetail"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0.66, 2.2, 1.55),
+        Pos = Vector(0.6, 2.8, 1),
         Ang = Angle(90, 90, 180),
+		RejectAttachments = {
+		["uplp_ak_dovetail_rail"] = false,
+		-- [""] = true,
+		},
         -- CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 
@@ -629,9 +785,19 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
+	local sr3 = (att["uplp_asval_hg_sr3"] or att["uplp_asval_hg_sr3s"])
+	local vss = (att["uplp_asval_stock_vss"] or att["uplp_asval_stock_vssm"])
 
-    if att["uplp_ak_brl_rpk"] then
-        name = ARC9:GetPhrase("uplp_weapon_ak_rpk")
+    if vss and att["uplp_asval_mag_10"] and !sr3 then
+        name = ARC9:GetPhrase("uplp_weapon_asval_vss")
+    end
+
+    if att["uplp_asval_hg_sr3"] then
+        name = ARC9:GetPhrase("uplp_weapon_asval_sr3")
+    end
+
+    if att["uplp_asval_hg_sr3s"] then
+        name = ARC9:GetPhrase("uplp_weapon_asval_sr3s")
     end
 
     return name

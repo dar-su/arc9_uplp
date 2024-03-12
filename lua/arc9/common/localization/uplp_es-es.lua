@@ -2202,7 +2202,7 @@ L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 ////// Handguards
 -- L["uplp_asval_mag_10.printname"] = "10-Round SPS"
 -- L["uplp_asval_mag_10.compactname"] = "10R SPS"
--- L["uplp_asval_mag_10.description"] = "Shortened 10-round magazine with \"Special Purpose Subsonic\" rounds intended for the SK Shadow."
+-- L["uplp_asval_mag_10.description"] = "Shortened 10-round magazine with \"Special Purpose Subsonic\" rounds intended for the SK Shadow.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
 
 -- L["uplp_asval_mag_ap.printname"] = "20-Round AP"
 -- L["uplp_asval_mag_ap.compactname"] = "20R AP"
