@@ -46,10 +46,11 @@ L["uplp_caliber_12gauge"] = "12 Gauge"
 L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5.7×28mm"
 L["uplp_caliber_4.6x30mm"] = "HK 4.6×30mm"
-L["uplp_caliber_9x19mm	"] = "9×19mm Parabellum"
+L["uplp_caliber_9x19mm"] = "9×19mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
+L["uplp_caliber_9x39mm"] = "9×39mm"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"

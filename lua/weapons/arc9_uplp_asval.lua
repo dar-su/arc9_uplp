@@ -8,7 +8,7 @@ SWEP.Spawnable = true
 SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
-SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_asval")
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_asval_vss")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_asval_desc")
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
@@ -18,17 +18,17 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_asval_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_asval_manufacturer" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x39mm"),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_9x39mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
                                                                         ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
                                                                         ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1959" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1987" ),
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, Cylowalker, 8Z",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan, TastyTony",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Kaan",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
@@ -39,8 +39,38 @@ SWEP.StandardPresets = {}
 
 ---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_suppressed"
--- SWEP.AfterShotParticle = "AC_muzzle_smoke_barrel"
+
+SWEP.AfterShotParticle = false
+SWEP.AfterShotParticleHook = function(swep, old) 
+    if swep:GetHeatAmount() > 2 then return "barrel_smoke" end
+    return old
+end
+
 SWEP.MuzzleEffectQCA = 1
+
+local fuckthis = 0 -- OVERHEAT GAS EFFECT
+SWEP.Hook_Think = function(swep)
+    if CLIENT then 
+        if fuckthis < CurTime() then
+            fuckthis = CurTime() + 0.3
+            
+            local hot = swep:GetHeatAmount()
+            if hot > 15 and swep:GetProcessedValue("Overheat", true) then
+                local pcf = CreateParticleSystem(LocalPlayer():GetViewModel(), "muzzle_heatwave_long", PATTACH_POINT_FOLLOW, 6)
+
+                if IsValid(pcf) then
+                    pcf:StartEmission()
+
+                    swep.ActiveAfterShotPCF = pcf
+                    if (muz or parent) != vm then
+                        pcf:SetShouldDraw(false)
+                        table.insert(swep.PCFs, pcf)
+                    end
+                end
+            end
+        end
+    end
+end
 
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
@@ -90,7 +120,7 @@ SWEP.RangeMin = 20 / ARC9.HUToM
 SWEP.RangeMax = 90 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 300 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -152,6 +182,18 @@ SWEP.RecoilResetTime = 0.02
 SWEP.RecoilPerShot = 1 / 9
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+
+-- HOT HOT HOT
+SWEP.Overheat = true
+SWEP.HeatCapacity = 60
+SWEP.HeatDissipation = 5
+SWEP.HeatPerShot = 1
+SWEP.HeatLockout = false
+SWEP.MalfunctionWait = -1
+SWEP.HeatPerShotMultFirstShot = 0.1
+
+SWEP.SpreadAddHot = 0.05
+
 
 -- Weapon handling
 SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
@@ -383,6 +425,23 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["ready_sr3"] = {
+        Source = "ready_sr3",
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 4.5 / 30 + 0.5, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 9 / 30 + 0.5, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 35 / 60 + 0.5, c = ca },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.001, lhik = 0 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
 
     ["draw"] = {
         Source = "draw",
@@ -393,6 +452,22 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
         },
     },
+    ["draw_sr3"] = {
+        Source = "draw_sr3",
+		MinProgress = 0.6,
+		FireASAP = true,
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.001, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
@@ -600,14 +675,59 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["inspect_sr3"] = {
+        Source = {"inspect_sr3"},
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 67.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 72.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "presscheck_1.ogg", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 115 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 122 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 127.5 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["fix"] = {
+        Source = {"fix"},
+        EventTable = {
+            { s = mechh, t = 0 },
+            { s = pathUTC .. "cloth_2.ogg", t = 2 / 30 + 0.25, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 5 / 30 + 0.25, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 17 / 30 + 0.25, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 23 / 30 + 0.25, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30 + 0.25, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 30 / 30 + 0.25, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        EjectAt = 1,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            -- { t = 0.15, lhik = 0 },
+            -- { t = 0.65, lhik = 0 },
+            -- { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
 	
     ["firemode_1"] = {
         -- Source = "firemode_0",
         Source = "modeswitch",
+        EventTable = thetoggle
     },
     ["firemode_2"] = {
         -- Source = "firemode_1",
         Source = "modeswitch",
+        EventTable = thetoggle
     },
 
     ["toggle"] = {
@@ -688,7 +808,7 @@ SWEP.Attachments = {
         Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0.725, 1),
+        Pos = Vector(0.05, 0.725, 1),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_optic_dovetail_used"},
         -- CorrectiveAng = Angle(0.4, -0.35, 0),
@@ -714,10 +834,11 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        -- Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 2.8, 11.5),
+        Pos = Vector(0.05, 2.8, 10.4),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_no_grip"},
     },
@@ -765,6 +886,15 @@ SWEP.Attachments = {
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, 5.75),
+        ExcludeElements = {"uplp_no_grip"},
+    },
+    { -- sr3
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/val_1sr.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.8, 5.75),
+        RequireElements = {"uplp_no_grip"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
@@ -772,6 +902,7 @@ SWEP.Attachments = {
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, 2),
+        ExcludeElements = {"vssm_dc"},
     },
 
     {
@@ -780,17 +911,36 @@ SWEP.Attachments = {
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, 1.8, -1),
+        ExcludeElements = {"vssm_dc"},
+    },
+
+    { -- vssm dustcover stickerr
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/val_2m.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.8, 2),
+        RequireElements = {"vssm_dc"},
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/val_3m.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1.8, -1),
+        RequireElements = {"vssm_dc"},
     },
 }
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
-	local sr3 = (att["uplp_asval_hg_sr3"] or att["uplp_asval_hg_sr3s"])
-	local vss = (att["uplp_asval_stock_vss"] or att["uplp_asval_stock_vssm"])
+	-- local sr3 = (att["uplp_asval_hg_sr3"] or att["uplp_asval_hg_sr3s"])
+	-- local vss = (att["uplp_asval_stock_vss"] or att["uplp_asval_stock_vssm"])
 
-    if vss and att["uplp_asval_mag_10"] and !sr3 then
-        name = ARC9:GetPhrase("uplp_weapon_asval_vss")
-    end
+    -- if vss and att["uplp_asval_mag_10"] and !sr3 then
+    --     name = ARC9:GetPhrase("uplp_weapon_asval_vss")
+    -- end
 
     if att["uplp_asval_hg_sr3"] then
         name = ARC9:GetPhrase("uplp_weapon_asval_sr3")
@@ -801,4 +951,12 @@ SWEP.HookP_NameChange = function(self, name)
     end
 
     return name
+end
+
+SWEP.Hook_ModifyElements = function(self, eles)
+    if !eles["uplp_optic_dovetail_used"] and eles["uplp_optic_used"] then
+        eles["vssm_dc"] = true -- for stciker
+    end
+
+    return eles 
 end

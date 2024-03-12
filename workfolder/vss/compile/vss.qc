@@ -39,11 +39,11 @@ $bodygroup "mounttac" {
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
-$attachment "2" "bolt" 0 0 -4 rotate -10 140 180
+$attachment "2" "bolt" 0 0 3 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
-$attachment "6" "barrel" 0 0 -6 rotate -90 0 0
+$attachment "6" "barrel" 0 0 -9 rotate -90 0 0
  
 $surfaceprop "default"
  
@@ -209,6 +209,16 @@ $sequence "inspect" {
 	fps 30
 }
 
+$sequence "inspect_sr3" {
+	"anims\inspect_sr3.smd"
+	fps 30
+}
+
+$sequence "fix" {
+	"anims\fix.smd"
+	fps 30
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"
@@ -254,6 +264,7 @@ $bonemerge "bullet1"
 $bonemerge "bullet2"
 $bonemerge "bullet3"
 $bonemerge "laseradj"
+$bonemerge "fakerounds"
 
 // $collisionmodel "col.smd"
 // {

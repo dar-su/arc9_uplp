@@ -24,8 +24,18 @@ ATT.CustomizePos = Vector(10, 30, 4.5)
 
 ATT.Silencer = false
 ATT.MuzzleParticle = "muzzleflash_ak47"
+ATT.MuzzleEffectQCA = 6
+
+ATT.Overheat = false -- no silencer
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "draw" or anim == "ready" or anim == "inspect" then
+        return anim .. "_sr3"
+    end
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_asval_hg_sr3")
 
@@ -47,6 +57,12 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "draw" or anim == "ready" or anim == "inspect" then
+        return anim .. "_sr3"
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_hg_sr3s")
 
@@ -70,10 +86,10 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock"},
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
-        Pos = Vector(1, 0, -0.1),
+        Pos = Vector(0.15, 0, -0.1),
         Ang = Angle(0, 0, 0),
 		Icon_Offset = Vector(-1, 0, 0),
-        Scale = 1.2
+        Scale = 1.0
     },
 }
 
@@ -140,23 +156,23 @@ end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_mag_10")
 
----------- uplp_asval_mag_ap
+-- ---------- uplp_asval_mag_ap
 
-ATT = {}
+-- ATT = {}
 
-ATT.PrintName = "20-Round AP"
-ATT.Description = ATT.PrintName
+-- ATT.PrintName = "20-Round AP"
+-- ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "20.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "20.png", "mips smooth")
 
-ATT.Category = "uplp_asval_mag"
-ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+-- ATT.Category = "uplp_asval_mag"
+-- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {""}
+-- ATT.ActivateElements = {""}
 
-ATT.ClipSizeOverride = 20
+-- ATT.ClipSizeOverride = 20
 
-ARC9.LoadAttachment(ATT, "uplp_asval_mag_ap")
+-- ARC9.LoadAttachment(ATT, "uplp_asval_mag_ap")
 
 ---------- uplp_asval_mag_30
 
