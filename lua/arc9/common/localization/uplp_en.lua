@@ -51,6 +51,7 @@ L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
 L["uplp_caliber_9x39mm"] = "9×39mm"
+L["uplp_caliber_45acp"] = ".45 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -85,11 +86,14 @@ L["uplp_mechanism_boltaction"] = "Bolt-action"
 L["uplp_mechanism_pumpaction"] = "Pump-Action"
 L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
 L["uplp_mechanism_closedbolt"] = "Closed bolt"
-L["uplp_mechanism_shortrecoil"] = "Short-recoil"
-L["uplp_mechanism_longrecoil"] = "Long-recoil"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
+-- Requested by fesiug
+L["uplp_mechanism_shortrecoil"] = "Short-recoil"
+L["uplp_mechanism_longrecoil"] = "Long-recoil"
+L["uplp_mechanism_browning"] = "Browning action"
 
 /////////// Authors
 L["uplp_assets"] = "Original Assets1"

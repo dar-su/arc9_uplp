@@ -38,18 +38,20 @@ L["uplp_country_usa"] = "Förenta Staterna"
 /////////// Caliber
 L["uplp_caliber"] = "Kaliber3"
 
-L["uplp_caliber_7.62x39mm"] = "7,62×39mm Sovjet"
-L["uplp_caliber_7.62x51mm"] = "7,62×51mm"
-L["uplp_caliber_5.56x45mm"] = "5,56×45mm"
-L["uplp_caliber_5.45x39mm"] = "5,45×39mm"
+L["uplp_caliber_7.62x39mm"] = "7,62×39 mm Sovjet"
+L["uplp_caliber_7.62x51mm"] = "7,62×51 mm"
+L["uplp_caliber_5.56x45mm"] = "5,56×45 mm"
+L["uplp_caliber_5.45x39mm"] = "5,45×39 mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
 L["uplp_caliber_50ae"] = ".50 AE"
-L["uplp_caliber_5.7x28mm"] = "FN 5,7×28mm"
-L["uplp_caliber_4.6x30mm"] = "HK 4,6×30mm"
-L["uplp_caliber_9x19mm"] = "9×19mm Parabellum"
+L["uplp_caliber_5.7x28mm"] = "FN 5,7×28 mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4,6×30 mm"
+L["uplp_caliber_9x19mm"] = "9×19 mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
-L["uplp_caliber_127x108mm"] = "12,7×108mm Sovjet"
+L["uplp_caliber_127x108mm"] = "12,7×108 mm Sovjet"
+L["uplp_caliber_9x39mm"] = "9×39 mm"
+L["uplp_caliber_45acp"] = ".45 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare2"
@@ -84,11 +86,14 @@ L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 L["uplp_mechanism_pumpaction"] = "Pumprepeter"
 L["uplp_mechanism_rollerdelay"] = "Halvreglat slutstycke"
 L["uplp_mechanism_closedbolt"] = "Stängt slutstycke"
-L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
-L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
+-- Requested by fesiug
+L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
+L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
+L["uplp_mechanism_browning"] = "Browning-slutstycke"
 
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"

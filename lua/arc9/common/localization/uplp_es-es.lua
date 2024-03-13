@@ -50,6 +50,8 @@ L["uplp_caliber_9x19mm"] = "9×19mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108mm Soviético"
+L["uplp_caliber_9x39mm"] = "9×39mm"
+L["uplp_caliber_45acp"] = ".45 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Fabricante2"
@@ -84,11 +86,14 @@ L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
 L["uplp_mechanism_pumpaction"] = "Acción de Bombeo"
 L["uplp_mechanism_rollerdelay"] = "Retroceso Retardado por Rodillo"
 L["uplp_mechanism_closedbolt"] = "Cerrojo Cerrado"
-L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
-L["uplp_mechanism_longrecoil"] = "Retroceso largo"
 
 L["uplp_mechanism_singleaction"] = "Acción Simple"
 L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
+
+-- Requested by fesiug
+L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
+L["uplp_mechanism_longrecoil"] = "Retroceso largo"
+L["uplp_mechanism_browning"] = "Acción de Browning"
 
 /////////// Authors
 L["uplp_assets"] = "Archivos originales1"
