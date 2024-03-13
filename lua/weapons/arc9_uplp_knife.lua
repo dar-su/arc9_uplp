@@ -76,10 +76,13 @@ SWEP.SprintAng = Angle(0, 0, 0)
 SWEP.RestPos = Vector(0, 0, 0)
 SWEP.RestAng = Angle(0, 0, 0)
 
+SWEP.VManipOffsetPos = Vector(0, 0, 0)
+SWEP.VManipOffsetAng = Angle(0, -5, 4)
+
 ---- Weapon Stats and Behaviour
 SWEP.Bash = true
 SWEP.PrimaryBash = true
-SWEP.SecondaryBash = true
+SWEP.SecondaryBash = false
 SWEP.HasSights = false
 SWEP.NoAimAssist = true
 SWEP.CanLean = false 
