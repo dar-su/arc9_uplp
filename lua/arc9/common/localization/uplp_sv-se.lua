@@ -84,6 +84,8 @@ L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 L["uplp_mechanism_pumpaction"] = "Pumprepeter"
 L["uplp_mechanism_rollerdelay"] = "Halvreglat slutstycke"
 L["uplp_mechanism_closedbolt"] = "Stängt slutstycke"
+L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
+L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"

@@ -84,6 +84,8 @@ L["uplp_mechanism_boltaction"] = "Скользящий затвор"
 L["uplp_mechanism_pumpaction"] = "Помповое ружьё"
 -- L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
 -- L["uplp_mechanism_closedbolt"] = "Closed bolt"
+-- L["uplp_mechanism_shortrecoil"] = "Short-recoil"
+-- L["uplp_mechanism_longrecoil"] = "Long-recoil"
 
 L["uplp_mechanism_singleaction"] = "Одинарное действие"
 L["uplp_mechanism_doublesingleaction"] = "Двойное действие / Одинарное"

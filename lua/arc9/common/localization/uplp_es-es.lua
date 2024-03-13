@@ -84,6 +84,8 @@ L["uplp_mechanism_boltaction"] = "Acción de cerrojo"
 L["uplp_mechanism_pumpaction"] = "Acción de Bombeo"
 L["uplp_mechanism_rollerdelay"] = "Retroceso Retardado por Rodillo"
 L["uplp_mechanism_closedbolt"] = "Cerrojo Cerrado"
+L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
+L["uplp_mechanism_longrecoil"] = "Retroceso largo"
 
 L["uplp_mechanism_singleaction"] = "Acción Simple"
 L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
