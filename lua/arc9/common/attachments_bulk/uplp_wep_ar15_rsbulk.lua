@@ -128,7 +128,7 @@ ATT.ExcludeElements = {"uplp_optic_used", "uplp_ar15_no_rs"}
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-ATT.ModelOffset = Vector(-0.2, 0, 0)
+ATT.ModelOffset = Vector(0.4, 0, 0)
 
 -- ATT.Sights = {
     -- {
