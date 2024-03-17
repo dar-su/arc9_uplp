@@ -60,7 +60,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug-10.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug-11.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_aug.mdl"
 
 SWEP.MirrorVMWM = true
@@ -249,16 +249,17 @@ SWEP.DropMagazineVelocity = Vector(0, -40, -20)
 
 -- urbna!
 local pathUT = "uplp_urban_temp/ar15/"
+local pathUAK = "uplp_urban_temp/ak/545/"
 local pathUTREAL = "uplp_rz/aug/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.ogg",
-    pathUT .. "fire-02.ogg",
-    pathUT .. "fire-03.ogg",
-    pathUT .. "fire-04.ogg",
-    pathUT .. "fire-05.ogg",
-    pathUT .. "fire-06.ogg",
+    pathUAK .. "fire-01.ogg",
+    pathUAK .. "fire-02.ogg",
+    pathUAK .. "fire-03.ogg",
+    pathUAK .. "fire-04.ogg",
+    pathUAK .. "fire-05.ogg",
+    pathUAK .. "fire-06.ogg",
 }
 
 SWEP.ShootSoundSilenced = {

@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_aug-10.mdl"
+$modelname "weapons\arc9\c_uplp_aug-11.mdl"
  
 $bodygroup "base" { // 0
 	studio "upper.smd"
