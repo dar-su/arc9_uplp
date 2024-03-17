@@ -15,16 +15,19 @@ ATT.Icon = Material(iconfolder .. "sd.png", "mips smooth")
 
 ATT.Category = "uplp_mp5_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-ATT.RPMMult = 0.875
 ATT.ActivateElements = {"uplp_mp5_bar_sd"}
-
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 
 -- Positives
+ATT.SpreadAddRecoil = -0.003
+ATT.RecoilSideMult = 0.8
+ATT.RecoilUpMult = 0.9
 
 -- Negatives
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.RPMMult = 0.875
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_sd")
 
@@ -52,8 +55,17 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 -- Positives
+ATT.RPMMult = 900 / 800
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedAdd = 0.015
+ATT.SpeedMultSights = 1.05
 
 -- Negatives
+ATT.SpreadAdd = 0.005
+ATT.RangeMaxMult = 0.6
+ATT.RecoilAdd = 0.1
+ATT.RecoilPerShotOverride = 1 / 9
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_kurz")
 
@@ -121,8 +133,11 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
+ATT.RecoilMult = 0.75
 
 -- Negatives
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.RecoilAutoControlMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_grip_kurz")
 
@@ -175,8 +190,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp5_stock_pdw"}
 
 -- Positives
+ATT.RecoilAutoControlMult = 1.3
+ATT.VisualRecoilMultHipFire = 0.5
 
--- Negatives
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.7
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1 - 0.02
+ATT.SprintToFireTimeAdd = 0.1 - 0.03
+ATT.SpeedMultSights = 0.85 + 0.1
+ATT.SpeedAdd = -0.05 + 0.03
+ATT.SpreadAddHipFire = nil
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_pdw")
 
@@ -196,8 +220,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp5_stock_col"}
 
 -- Positives
+ATT.RecoilAutoControlMult = 1.2
+ATT.VisualRecoilMultHipFire = 0.5
 
--- Negatives
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.6
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1 - 0.03
+ATT.SprintToFireTimeAdd = 0.1 - 0.05
+ATT.SpeedMultSights = 0.85 + 0.1
+ATT.SpeedAdd = -0.05 + 0.03
+ATT.SpreadAddHipFire = nil
 
 ATT.ToggleStats = {
     {
@@ -208,6 +241,9 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_mp5_stock_col_f"},
+        AimDownSightsTimeAdd = -0.04,
+        SprintToFireTimeAdd = -0.03,
+        RecoilAdd = 0.2,
     },
 }
 
@@ -229,8 +265,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp5_stock_fixed"}
 
 -- Positives
+ATT.RecoilAutoControlMult = 1.5
+ATT.VisualRecoilMultHipFire = 0.35
 
--- Negatives
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.9
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1
+ATT.SpeedMultSights = 0.85
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_fixed")
 
@@ -259,9 +304,14 @@ end
 
 ATT.ClipSizeOverride = 50
 
--- Positives
-
--- Negatives
+ATT.SpreadAddHipFire = 0.012
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.15
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_mag_50")
 
@@ -288,9 +338,11 @@ end
 
 ATT.ClipSizeOverride = 15
 
--- Positives
-
--- Negatives
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 1.1
+ATT.ReloadTimeMult = 0.925
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_mag_15")
 
@@ -312,13 +364,21 @@ ATT.ActivateElements = {"uplp_mp5_mag_10mm"}
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30_10mm.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    if anim == "reload_empty" then 
-        return anim .. "_catch" 
+    if anim == "reload_empty" then
+        return anim .. "_catch"
     end
 end
 
 -- Positives
+ATT.DamageMaxAdd = 3
+ATT.DamageMinAdd = 2
+ATT.RangeMinAdd = 5 / ARC9.HUToM
 
 -- Negatives
+ATT.RPMMult = 750 / 800
+ATT.RecoilUpAdd = 0.2
+ATT.RecoilRandomUpAdd = 0.25
+ATT.RecoilRandomSideAdd = 0.25
+ATT.RecoilPerShotMult = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_mag_10mm")

@@ -81,12 +81,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 22
+SWEP.DamageMax = 25
 SWEP.DamageMin = 15
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 0.9,
     [HITGROUP_LEFTARM] = 0.8,
@@ -114,12 +114,12 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 0.8
+SWEP.Recoil = 0.6 + 1
 SWEP.RecoilUp = 0.65
-SWEP.RecoilSide = 0.75
+SWEP.RecoilSide = 0.35
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 0.5
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -150,10 +150,10 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
+SWEP.Spread = 0.003
 SWEP.SpreadAddHipFire = 0.02
 
-SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddRecoil = 0.01
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.1
 
@@ -162,7 +162,7 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 10
 SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilPerShot = 1 / 12
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
@@ -173,8 +173,8 @@ SWEP.SpeedMultShooting = 0.85
 
 SWEP.BarrelLength = 28
 
-SWEP.AimDownSightsTime = 0.32
-SWEP.SprintToFireTime = 0.3
+SWEP.AimDownSightsTime = 0.36 - 0.1
+SWEP.SprintToFireTime = 0.33 - 0.1
 
 -- Shooting and Firemodes
 SWEP.RPM = 800 -- How fast gun shoot
