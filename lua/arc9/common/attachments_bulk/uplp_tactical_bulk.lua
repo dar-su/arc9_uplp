@@ -487,6 +487,7 @@ ATT.IKAnimationProxy = {
         Source = "reload",
 		MinProgress = 0.95,
 		FireASAP = true,
+		Mult = 0.8,
 		RefillProgress = 0.75,
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0/30, v = 0.8 },
