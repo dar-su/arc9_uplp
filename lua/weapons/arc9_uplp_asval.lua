@@ -116,9 +116,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
--- make sure ak12 matches this
-SWEP.DamageMax = 34
-SWEP.DamageMin = 18
+SWEP.DamageMax = 36
+SWEP.DamageMin = 16
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -126,11 +125,11 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 90 / ARC9.HUToM
+SWEP.RangeMin = 25 / ARC9.HUToM
+SWEP.RangeMax = 75 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 300 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 280 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -142,7 +141,7 @@ SWEP.ClipSize = 20
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.35
+SWEP.RecoilUp = 1.1
 SWEP.RecoilSide = 1.2
 
 SWEP.RecoilRandomUp = 1
@@ -177,34 +176,39 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.0045
+SWEP.Spread = 0.0025
 SWEP.SpreadAddHipFire = 0.03 - 0.01
 
-SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddRecoil = 0.014
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
+SWEP.RecoilDissipationRate = 7
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilPerShot = 1 / 6
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- HOT HOT HOT
 SWEP.Overheat = true
 SWEP.HeatCapacity = 60
-SWEP.HeatDissipation = 5
+SWEP.HeatDissipation = 4
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
-SWEP.MalfunctionWait = -1
-SWEP.HeatPerShotMultFirstShot = 0.1 -- not works?
+SWEP.MalfunctionWait = 0
 
-SWEP.SpreadAddHot = 0.05
-SWEP.RPMMultHot = 0.8
+SWEP.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.015)
+end
 
+SWEP.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 0.65)
+end
 
 -- Weapon handling
 SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
@@ -217,7 +221,7 @@ SWEP.SprintToFireTime = 0.37 - 0.1 -- Time it takes to fully enter sprint
 SWEP.BarrelLength = 40
 
 -- Shooting and Firemodes
-SWEP.RPM = 800 -- How fast gun shoot
+SWEP.RPM = 900 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
