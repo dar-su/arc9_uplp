@@ -408,7 +408,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cycle",
         -- ShellEjectAt = 5,
-        MinProgress = 0.95,
+        MinProgress = 0.65,
         Mult = 1.15,
         EventTable = {
             -- { s = reloadsound .. "reload_boltopen_v2.ogg", t = 5 / 30, c = ca, v = 0.8 },

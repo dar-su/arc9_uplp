@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_asval.mdl"
+$modelname "weapons\arc9\c_uplp_asval-15.mdl"
  
 $bodygroup "body" {
 	studio "reciever.smd"

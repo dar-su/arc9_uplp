@@ -60,7 +60,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug-5.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_aug.mdl"
 
 SWEP.MirrorVMWM = true
@@ -468,8 +468,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "magout.ogg", t = 10 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magin.ogg", t = 23 / 30, c = ca, v = 1 },
+            { s = pathUTREAL .. "magout.ogg", t = 6 / 30, c = ca, v = 1 },
+            { s = pathUTREAL .. "magin.ogg", t = 21 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 40 / 30, c = ca, v = 0.8 },
 
@@ -495,13 +495,13 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "magout.ogg", t = 10 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magin.ogg", t = 23 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_press.ogg", t = 37 / 30, c = ca, v = 0.7 },
-            { s = pathUTREAL .. "boltforward.ogg", t = 38 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_4.ogg", t = 47 / 30, c = ca, v = 0.3 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 50 / 30, c = ca, v = 0.3 },
+            { s = pathUT .. "chback.ogg", t = 2 / 30, c = ca, v = 1 },
+            { s = pathUTREAL .. "magout.ogg", t = 20 / 30, c = ca, v = 1 },
+            { s = pathUTREAL .. "magin.ogg", t = 36 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_1.ogg", t = 45 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "boltdrop.ogg", t = 53 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_4.ogg", t = 62 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 70 / 30, c = ca, v = 0.8 },
 
             {hide = 2, t = 0},
             {hide = 0, t = 0.4},
@@ -509,7 +509,7 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.05, lhik = 0 },
             { t = 0.75, lhik = 0 },
             { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },

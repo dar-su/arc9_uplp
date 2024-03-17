@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_spas.mdl"
+$modelname "weapons\arc9\c_uplp_spas-8.mdl"
  
 $bodygroup "rec" { // 0
 	studio "body.smd" // 0
@@ -181,61 +181,54 @@ $sequence "cycle" {
 	"anims\cycle_iron.smd"
 	blend "sights" 0 1
 	fps 30
-	snap
+	fadein 0.2
+	fadeout 0.1
 }
 
 
 $sequence "reload_start" {
 	"anims\sgreload_start.smd"
-	"anims\sgreload_start_ads.smd"
-	blend "sights" 0 1
 	fps 30
 	snap
 }
 
 $sequence "reload_start_empty" {
-	"anims\sgreload_start_empty.smd"
-	"anims\sgreload_start_empty_ads.smd"
-	blend "sights" 0 1
+	"anims\sgreload_start.smd"
 	fps 30
 	snap
 }
 
 $sequence "reload_start_empty_pumpy" {
-	"anims\sgreload_start_empty_pumpy.smd"
-	"anims\sgreload_start_empty_pumpy_ads.smd"
-	blend "sights" 0 1
+	"anims\sgreload_start.smd"
 	fps 30
 	snap
 }
 
 $sequence "reload_start_empty_only" {
-	"anims\sgreload_start_empty_only.smd"
-	"anims\sgreload_start_empty_only_ads.smd"
-	blend "sights" 0 1
+	"anims\sgreload_start.smd"
 	fps 30
 	snap
 }
 $sequence "reload_start_empty_only_pumpy" {
-	"anims\sgreload_start_empty_pumpy_only.smd"
-	"anims\sgreload_start_empty_pumpy_only_ads.smd"
-	blend "sights" 0 1
+	"anims\sgreload_start.smd"
 	fps 30
 	snap
 }
 
 $sequence "reload_insert" {
 	"anims\sgreload_insert.smd"
-	"anims\sgreload_insert.smd"
-	blend "sights" 0 1
 	fps 30
 	snap
 }
 
 $sequence "reload_end" {
 	"anims\sgreload_end.smd"
-	"anims\sgreload_end_ads.smd"
-	blend "sights" 0 1
+	fps 30
+	snap
+}
+
+$sequence "reload_end_pump" {
+	"anims\sgreload_end_pump.smd"
 	fps 30
 	snap
 }

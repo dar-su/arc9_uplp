@@ -109,6 +109,8 @@ ATT.ToggleStats = {
         SprintToFireTimeAdd = 0.1 - 0.02,
         SpeedMultSights = 0.85,
         SpeedAdd = -0.05,
+
+        
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -116,7 +118,8 @@ ATT.ToggleStats = {
 
         SwayAddSights = -0.5,
         SprintToFireTimeAdd = 0.05,
-    },
+        VisualRecoilMultSights = 6,
+},
 }
 
 -- Positives
@@ -178,6 +181,7 @@ ATT.ToggleStats = {
 
         SwayAddSights = -0.5,
         SprintToFireTimeAdd = 0.05,
+        VisualRecoilMultSights = 6,
     },
 }
 

@@ -94,7 +94,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_asval.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_asval-15.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_asval.mdl"
 
 SWEP.MirrorVMWM = true
@@ -547,8 +547,8 @@ SWEP.Animations = {
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback_9.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_9.ogg", t = 41 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 49 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -602,8 +602,8 @@ SWEP.Animations = {
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback_9.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_9.ogg", t = 41 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 40 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 47 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -657,8 +657,8 @@ SWEP.Animations = {
             { s = pathUT .. "magrelease.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback_9.ogg", t = 46 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_9.ogg", t = 53 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 67 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},

@@ -53,7 +53,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_deagle.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_deagle-9.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_deagle.mdl"
 
 SWEP.MirrorVMWM = true
@@ -601,6 +601,7 @@ SWEP.AttachmentElements = {
     ["uplp_deagle_skin_gold"] = { Skin = 2 },
     ["uplp_deagle_skin_blue"] = { Skin = 3 },
     ["uplp_deagle_skin_admin"] = { Skin = 4, Bodygroups = { { 7, 1 } } },
+    ["uplp_deagle_skin_frame"] = { Bodygroups = { { 0, 1 } } },
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -661,7 +662,7 @@ SWEP.Attachments = {
         Category = {"uplp_tac_pistol"},
         ExcludeElements = {"notac"},
         Bone = "body",
-        Pos = Vector(0, -1.05, 7),
+        Pos = Vector(0, -1.05, 5.7),
         Ang = Angle(90, 90, 0),
     },
 
@@ -717,6 +718,15 @@ SWEP.Attachments = {
         -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
         MergeSlots = {7}, 
         Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_receiver_lower"),
+        Category = {"uplp_deagle_skin_frame"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(90, 90, 180),
+        CosmeticOnly = true,
     },
 }
 

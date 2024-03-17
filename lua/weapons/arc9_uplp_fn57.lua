@@ -717,8 +717,9 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac_pistol"},
         Bone = "body",
-        Pos = Vector(0, -1.25, 5.7),
+        Pos = Vector(0, -1.25, 6.1),
         Ang = Angle(90, 90, 0),
+		Scale = 1.25,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_appearance"),

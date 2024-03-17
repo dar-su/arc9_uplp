@@ -434,7 +434,7 @@ SWEP.Animations = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
-        MinProgress = 0.95,
+        MinProgress = 0.6,
         Mult = 1.25,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
