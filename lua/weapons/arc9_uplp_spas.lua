@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-14.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-24.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -453,10 +453,15 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     local clip = swep:Clip1()
     local empty = clip == 0
-    local insemi = swep:GetValue("uplp_semi")
+    local insemi = swep:GetValue("uplp_semi") -- This is a lie. This is pump-action mode.
 
-    if swep:GetEmptyReload() and anim == "reload_finish" then
-        return "reload_finish_empty"
+    --if swep:GetEmptyReload() and anim == "reload_finish" then
+        --return "reload_finish_empty"
+    --end
+
+    -- Pump-action mode suppresses the empty suffix
+    if insemi and swep:GetEmptyReload() and anim == "reload_start" then
+        return "reload_start_empty"
     end
 
     if insemi and anim == "fire" then
@@ -565,6 +570,21 @@ SWEP.Animations = {
         },
     },
 
+    ["reload_start_empty"] = {
+        Source = "reload_start_empty_pumpy",
+        RestoreAmmo = 1,
+		MinProgress = 0.25,
+		RefillProgress = 0.0,
+        Mult = 0.85,
+        EjectAt = 31 / 30,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = ShellInsert, t = 14 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 26 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 33 / 30, v = 0.6 },
+        },
+    },
+
     ["reload_insert"] = {
         Source = "reload_insert",
         MinProgress = 0.334,
@@ -583,18 +603,18 @@ SWEP.Animations = {
         },
     },
 
-    ["reload_finish_empty"] = {
-        Source = "reload_end_pump",
-        MinProgress = 0.5,
-        FireASAP = true,
-        EjectAt = 4 / 30,
-        EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
-        },
-    },
+    --["reload_finish_empty"] = {
+    --    Source = "reload_end_pump",
+    --    MinProgress = 0.5,
+    --    FireASAP = true,
+    --    EjectAt = 4 / 30,
+    --    EventTable = {
+    --        { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+    --        { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
+    --        { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
+    --        { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
+    --    },
+    --},
 
     ["inspect"] = {
         Source = {"look"},
