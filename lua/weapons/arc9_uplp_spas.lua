@@ -461,6 +461,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     -- Pump-action mode suppresses the empty suffix
     if insemi and swep:GetEmptyReload() and anim == "reload_start" then
+        swep:SetEmptyReload(false)
         return "reload_start_empty"
     end
 
@@ -563,7 +564,6 @@ SWEP.Animations = {
 
     ["reload_start"] = {
         Source = "reload_start",
-        RestoreAmmo = 0,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             --{ s = ShellInsert, t = 13.5 / 30, v = 0.6 },
