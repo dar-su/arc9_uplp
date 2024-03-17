@@ -71,7 +71,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 65
-SWEP.ActivePos = Vector(-0.5, 0, -0.1)
+SWEP.ActivePos = Vector(0.3, 1.5, -0.1)
 
 SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
 SWEP.BobSettingsSpeed = {0.91, 1, 1.0,    1, 0.92, 0.8}
