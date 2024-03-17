@@ -386,6 +386,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -405,7 +407,7 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.75,
+        MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -460,7 +462,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.9,
+        MinProgress = 0.8,
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
@@ -486,7 +488,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
@@ -514,7 +516,7 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload_20",
-        MinProgress = 0.9,
+        MinProgress = 0.8,
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
@@ -540,7 +542,7 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "reload_empty_20",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,

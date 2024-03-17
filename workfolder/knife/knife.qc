@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_knife-1.mdl"
+$modelname "weapons\arc9\c_uplp_knife-4.mdl"
  
 $bodygroup "knif" { // 0
 	studio "knif.smd"

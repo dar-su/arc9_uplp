@@ -481,6 +481,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 5 / 30, c = ca, v = 0.8 },

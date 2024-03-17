@@ -379,7 +379,9 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Mult = 1.1,
+        Mult = 0.9,
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUT .. "slidepull.ogg", t = 5 / 60, c = ca, v = 0.8 },
@@ -470,7 +472,7 @@ SWEP.Animations = {
     -- Reloads --
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.825,
 		RefillProgress = 0.675,
 		FireASAP = true,
@@ -495,7 +497,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.725,
 		FireASAP = true,
@@ -522,7 +524,7 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.825,
 		RefillProgress = 0.675,
 		FireASAP = true,
@@ -547,7 +549,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.725,
 		FireASAP = true,
