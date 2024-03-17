@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_spas-11.mdl"
+$modelname "weapons\arc9\c_uplp_spas-14.mdl"
  
 $bodygroup "rec" { // 0
 	studio "body.smd" // 0

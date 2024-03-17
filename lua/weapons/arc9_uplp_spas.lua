@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-11.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-14.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -559,7 +559,6 @@ SWEP.Animations = {
     ["reload_start"] = {
         Source = "reload_start",
         RestoreAmmo = 0,
-        -- MinProgress= 0.75,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             --{ s = ShellInsert, t = 13.5 / 30, v = 0.6 },
@@ -568,15 +567,16 @@ SWEP.Animations = {
 
     ["reload_insert"] = {
         Source = "reload_insert",
-        MinProgress = 0.5,
+        MinProgress = 0.334,
         EventTable = {
-            { s = ShellInsert, t = 4 / 30, v = 0.6 },
+            { s = ShellInsert, t = 3 / 30, v = 0.6 },
         },
     },
 
     ["reload_finish"] = {
         Source = "reload_end",
-        MinProgress = 0.75,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
@@ -585,7 +585,8 @@ SWEP.Animations = {
 
     ["reload_finish_empty"] = {
         Source = "reload_end_pump",
-        MinProgress = 0.75,
+        MinProgress = 0.5,
+        FireASAP = true,
         EjectAt = 4 / 30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
