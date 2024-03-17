@@ -87,3 +87,5 @@ SWEP.AfterShotParticleHook = function(swep, old)
     if swep:GetHeatAmount() > 2 then return "barrel_smoke" end
     return old
 end
+
+SWEP.ShellVelocity = 0.75

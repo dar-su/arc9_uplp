@@ -60,7 +60,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug-5.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_aug-10.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_aug.mdl"
 
 SWEP.MirrorVMWM = true
@@ -493,13 +493,15 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1,
         EventTable = {
-            { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 2 / 30, c = ca, v = 1 },
+			{ s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "ch_forward_empty.ogg", t = 4 / 30, c = ca, v = 1 },
+            { s = pathUT .. "chback.ogg", t = 5 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "magpouch.ogg", t = 14 / 30, v = 0.4 },
             { s = pathUTREAL .. "magout.ogg", t = 20 / 30, c = ca, v = 1 },
             { s = pathUTREAL .. "magin.ogg", t = 36 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_1.ogg", t = 45 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 53 / 30, c = ca, v = 1 },
+            { s = pathUT .. "ch_forward_empty.ogg", t = 54.5 / 30, c = ca, v = 0.6 },
+            { s = pathUT .. "boltdrop.ogg", t = 55 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 62 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 70 / 30, c = ca, v = 0.8 },
 

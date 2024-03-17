@@ -37,7 +37,7 @@ SWEP.CamQCA = 1
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_knife.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_knife-1.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_knife.mdl"
 
 SWEP.MirrorVMWM = true
@@ -249,25 +249,29 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "draw",
         MinProgress = 0.4,
+		Mult = 0.667,
         FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/awp/" .. "magtap.ogg", t = 27 / 60, c = ca, v = 0.8 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.4,
+		Mult = 0.667,
         FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ar15/" .. "grab.ogg", t = 12 / 60, c = ca, v = 0.8 },
         },
     },
 
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.7,
-		Mult = 0.9,
+        MinProgress = 1,
+		Mult = 0.66,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },

@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-8.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-11.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -75,7 +75,7 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-5.5, 4, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-10, 2, -5),
+    TPIKPos = Vector(-14, 2, 2),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
@@ -451,41 +451,6 @@ local thetoggle = {{
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
 
-    local empty = swep:Clip1() == 0
-    local insemi = swep:GetValue("uplp_semi")
-
-    --if false and anim == "reload_start" or anim == "reload_start_empty" then
-    --    if empty then
-    --        timer.Simple(0.12, function()
-    --            if IsValid(swep) then swep:SetLoadedRounds(1) end -- magswap doesnt want to replinish our ammo!
-    --        end)
---
-    --        if swep:GetOwner():GetAmmoCount(swep.Ammo) <= 1 then
-    --            swep.dontcontinuereload = true
-    --            if insemi then return "reload_start_empty_only_pumpy" end
-    --            return "reload_start_empty_only"
-    --        end
---
-    --        if insemi then
-    --            return "reload_start_empty_pumpy"
-    --        end
-    --    end
---
-    --elseif false and anim == "reload_finish" or anim == "reload_insert" then
-    --    if swep.dontcontinuereload then
-    --        swep.dontcontinuereload = nil
-    --        return "idle"
-    --    end
-    --elseif insemi and anim == "fire" then
-    --    return "fire_pump"
-    --end
-
-    --return anim
-end
-
-SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if !IsValid(swep:GetOwner()) then return end
-
     local clip = swep:Clip1()
     local empty = clip == 0
     local insemi = swep:GetValue("uplp_semi")
@@ -581,7 +546,7 @@ SWEP.Animations = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1.15,
-        EjectAt = 4 / 30,
+        EjectAt = 5 / 30,
         MinProgress = 0.4,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 4 / 30, v = 0.6 },
@@ -621,6 +586,7 @@ SWEP.Animations = {
     ["reload_finish_empty"] = {
         Source = "reload_end_pump",
         MinProgress = 0.75,
+        EjectAt = 4 / 30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
