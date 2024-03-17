@@ -46,10 +46,12 @@ L["uplp_caliber_12gauge"] = "12 Gauge"
 L["uplp_caliber_50ae"] = ".50 AE"
 L["uplp_caliber_5.7x28mm"] = "FN 5.7×28mm"
 L["uplp_caliber_4.6x30mm"] = "HK 4.6×30mm"
-L["uplp_caliber_9x19mm	"] = "9×19mm Parabellum"
+L["uplp_caliber_9x19mm"] = "9×19mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
+L["uplp_caliber_9x39mm"] = "9×39mm"
+L["uplp_caliber_45acp"] = ".45 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -87,6 +89,11 @@ L["uplp_mechanism_closedbolt"] = "Closed bolt"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
+-- Requested by fesiug
+L["uplp_mechanism_shortrecoil"] = "Short-recoil"
+L["uplp_mechanism_longrecoil"] = "Long-recoil"
+L["uplp_mechanism_browning"] = "Browning action"
 
 /////////// Authors
 L["uplp_assets"] = "Original Assets1"
@@ -2164,25 +2171,58 @@ L["uplp_orsis_muzzle_big.compactname"] = "Tank"
 L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maximum recoil control.\nIntended for use on the Gryphon X108."
 
 //////////////////// AS VAL
- -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)
-L["uplp_weapon_asval"] = "SK-ON"
-L["uplp_weapon_asval_desc"] = "An integrally suppressed Russian firearm, the SK-ON is a customizable weapon that can be converted into various 9×39mm-fed firearms, including the SSV semi-automatic sniper, VCNM-3 special concealed automatic rifle, the cost-reduced redesigned PNE-40 rifle and VSK-94 sniper rifle."
+ -- "Stealth Carbine 9x39", "Стелс-карабин" (СК 9×39)
+L["uplp_weapon_asval"] = "SK 9x39"
+L["uplp_weapon_asval_desc"] = "The SK 9x39 (\"Stealth Carbine 9×39\") is a customizable, integrally suppressed Russian firearm that can be converted into various 9×39mm-fed firearms, including the SK Shadow semi-automatic sniper and MK Lightning special concealed automatic rifle."
 
- -- "Stealth Sniper Rifle", "Стелс-снайперская винтовка" (ССВ)
-L["uplp_weapon_asval_vss"] = "SSV"
+ -- "Stealth Carbine Shadow", "Стелс-карабин 'Тень'" (СК "Тень")
+L["uplp_weapon_asval_vss"] = "SK Shadow"
 
- -- "Special Purpose Rifle Model 3", "Винтовка специального назначения Модель 3" (ВСНМ-3)
-L["uplp_weapon_asval_sr3"] = "VCNM-3"
+ -- "Small-Caliber Carbine, Lightning", "Малогабаритный карабин, Молния" (МК "Молния")
+L["uplp_weapon_asval_sr3"] = "MK Lightning"
 
- -- "Stealth Pistol, Economy 40", "Пистолет-невидимка, экономичный 40" (ПНЭ-40)
-L["uplp_weapon_asval_9a91"] = "PNE-40"
-
- -- "Low-Pressure Precision Rifle 90", "Точная винтовка низкого давления 90" (ТВНД-90)
-L["uplp_weapon_asval_vsk94"] = "TVND-90"
+ -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
+L["uplp_weapon_asval_sr3s"] = "MK Thunder"
 
 L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
 
 L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
+
+/////////// Attachments
+////// Stocks
+L["uplp_asval_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_asval_stock_buffer.compactname"] = "Buffer Tube"
+L["uplp_asval_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+
+L["uplp_asval_stock_vss.printname"] = "SK Shadow Wooden Stock"
+L["uplp_asval_stock_vss.compactname"] = "SK"
+L["uplp_asval_stock_vss.description"] = "Heavy wooden stock from the SK Shadow."
+
+L["uplp_asval_stock_vssm.printname"] = "SK-2 Shadow Tactical Stock"
+L["uplp_asval_stock_vssm.compactname"] = "SK-2"
+L["uplp_asval_stock_vssm.description"] = "Tactical and modern stock and pistol grip from the SK-2 Shadow."
+
+////// Handguards
+L["uplp_asval_hg_sr3.printname"] = "MK Lightning Frontend"
+L["uplp_asval_hg_sr3.compactname"] = "MKL"
+L["uplp_asval_hg_sr3.description"] = "Modernized handguard from the MK Lightning rifle. Comes with a <color=100,255,100>built-in foregrip</color>."
+
+L["uplp_asval_hg_sr3s.printname"] = "MK Thunder Frontend"
+L["uplp_asval_hg_sr3s.compactname"] = "MKT"
+L["uplp_asval_hg_sr3s.description"] = "Modernized handguard from the MK Thunder rifle. Comes with a <color=100,255,100>built-in foregrip</color> and <color=100,255,100>suppressor</color>."
+
+////// Handguards
+L["uplp_asval_mag_10.printname"] = "10-Round SPS"
+L["uplp_asval_mag_10.compactname"] = "10R SPS"
+L["uplp_asval_mag_10.description"] = "Shortened 10-round magazine with \"Special Purpose Subsonic\" rounds intended for the SK Shadow.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
+
+L["uplp_asval_mag_ap.printname"] = "20-Round AP"
+L["uplp_asval_mag_ap.compactname"] = "20R AP"
+L["uplp_asval_mag_ap.description"] = "Standard 20-round magazine fed with armor piercing ammunition intended for any SK 9×39."
+
+L["uplp_asval_mag_30.printname"] = "30-Round ECP"
+L["uplp_asval_mag_30.compactname"] = "30R ECP"
+L["uplp_asval_mag_30.description"] = "Extended 30-round magazine with \"Experimental Cheap Precision\" rounds intended for the MK Lightning."
 
 //////////////////// ASh-12
 L["uplp_weapon_ash12"] = "RZ 12.7"

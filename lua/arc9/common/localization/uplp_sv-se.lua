@@ -38,18 +38,20 @@ L["uplp_country_usa"] = "Förenta Staterna"
 /////////// Caliber
 L["uplp_caliber"] = "Kaliber3"
 
-L["uplp_caliber_7.62x39mm"] = "7,62×39mm Sovjet"
-L["uplp_caliber_7.62x51mm"] = "7,62×51mm"
-L["uplp_caliber_5.56x45mm"] = "5,56×45mm"
-L["uplp_caliber_5.45x39mm"] = "5,45×39mm"
+L["uplp_caliber_7.62x39mm"] = "7,62×39 mm Sovjet"
+L["uplp_caliber_7.62x51mm"] = "7,62×51 mm"
+L["uplp_caliber_5.56x45mm"] = "5,56×45 mm"
+L["uplp_caliber_5.45x39mm"] = "5,45×39 mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
 L["uplp_caliber_50ae"] = ".50 AE"
-L["uplp_caliber_5.7x28mm"] = "FN 5,7×28mm"
-L["uplp_caliber_4.6x30mm"] = "HK 4,6×30mm"
-L["uplp_caliber_9x19mm"] = "9×19mm Parabellum"
+L["uplp_caliber_5.7x28mm"] = "FN 5,7×28 mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4,6×30 mm"
+L["uplp_caliber_9x19mm"] = "9×19 mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
-L["uplp_caliber_127x108mm"] = "12,7×108mm Sovjet"
+L["uplp_caliber_127x108mm"] = "12,7×108 mm Sovjet"
+L["uplp_caliber_9x39mm"] = "9×39 mm"
+L["uplp_caliber_45acp"] = ".45 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare2"
@@ -87,6 +89,11 @@ L["uplp_mechanism_closedbolt"] = "Stängt slutstycke"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
+-- Requested by fesiug
+L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
+L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
+L["uplp_mechanism_browning"] = "Browning-slutstycke"
 
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"
@@ -2159,25 +2166,58 @@ L["uplp_orsis_muzzle_big.compactname"] = "Pansar"
 L["uplp_orsis_muzzle_big.description"] = "Massiv mynningsbroms gjord för maximal rekylkontroll.\nAvsedd för Gryphon X108."
 
 //////////////////// AS VAL
- -- "Stealth Carbine - General Purpose", "Стелс-карабин - Общее назначение" (СК-ОН)
-L["uplp_weapon_asval"] = "SK-ON"
-L["uplp_weapon_asval_desc"] = "Ett ryskt eldvapen med intern ljuddämpare, SK-ON är ett anpassningsbart vapen som kan konverteras till diverse 9×39mm-matade eldvapen, inklusive halvautomatiska prickskyttegeväret SSV, speciella döljbara automatgeväret VCNM-3, kostnadsreducerade och omdesignade PNE-40-geväret och prickskyttegeväret VSK-94."
+-- "Stealth Carbine 9x39", "Стелс-карабин" (СК 9×39)
+L["uplp_weapon_asval"] = "SK 9x39"
+L["uplp_weapon_asval_desc"] = "SK 9x39 (\"Stealth Carbine 9×39\") är ett anpassningsbart, internt ljuddämpat, Ryskt eldvapen som kan konverteras till flertal 9×39mm-matade skjutvapen, inklusive halvautomatiska prickskyttegeväret \"SK Shadow\" och speciella gömda automatkarbinen \"MK Lightning\"."
 
- -- "Stealth Sniper Rifle", "Стелс-снайперская винтовка" (ССВ)
-L["uplp_weapon_asval_vss"] = "SSV"
+ -- "Stealth Carbine Shadow", "Стелс-карабин 'Тень'" (СК "Тень")
+L["uplp_weapon_asval_vss"] = "SK Shadow"
 
- -- "Special Purpose Rifle Model 3", "Винтовка специального назначения Модель 3" (ВСНМ-3)
-L["uplp_weapon_asval_sr3"] = "VCNM-3"
+ -- "Small-Caliber Carbine, Lightning", "Малогабаритный карабин, Молния" (МК "Молния")
+L["uplp_weapon_asval_sr3"] = "MK Lightning"
 
- -- "Stealth Pistol, Economy 40", "Пистолет-невидимка, экономичный 40" (ПНЭ-40)
-L["uplp_weapon_asval_9a91"] = "PNE-40"
-
- -- "Low-Pressure Precision Rifle 90", "Точная винтовка низкого давления 90" (ТВНД-90)
-L["uplp_weapon_asval_vsk94"] = "TVND-90"
+ -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
+L["uplp_weapon_asval_sr3s"] = "MK Thunder"
 
 L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
 
 L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
+
+/////////// Attachments
+////// Stocks
+L["uplp_asval_stock_buffer.printname"] = "Bufferrör"
+L["uplp_asval_stock_buffer.compactname"] = "Bufferrör"
+L["uplp_asval_stock_buffer.description"] = "Ersätter kolven med ett bufferrör som accepterar AR-15-kolvar."
+
+L["uplp_asval_stock_vss.printname"] = "SK Shadow Träkolv"
+L["uplp_asval_stock_vss.compactname"] = "SK"
+L["uplp_asval_stock_vss.description"] = "Tung träkolv från SK Shadow."
+
+L["uplp_asval_stock_vssm.printname"] = "SK-2 Shadow Taktisk Kolv"
+L["uplp_asval_stock_vssm.compactname"] = "SK-2"
+L["uplp_asval_stock_vssm.description"] = "Taktisk och modern kolv och pistolgrepp från SK-2 Shadow."
+
+////// Handguards
+L["uplp_asval_hg_sr3.printname"] = "MK Lightning Frontend"
+L["uplp_asval_hg_sr3.compactname"] = "MKL"
+L["uplp_asval_hg_sr3.description"] = "Moderniserat handskydd från MK Lightning-geväret. Kommer med ett <color=100,255,100>inbyggt framgrepp</color>."
+
+L["uplp_asval_hg_sr3s.printname"] = "MK Thunder Frontend"
+L["uplp_asval_hg_sr3s.compactname"] = "MKT"
+L["uplp_asval_hg_sr3s.description"] = "Moderniserat handskydd från MK Lightning-geväret. Kommer med <color=100,255,100>inbyggd framgrepp</color> och <color=100,255,100>ljuddämpare</color>."
+
+////// Handguards
+L["uplp_asval_mag_10.printname"] = "10-Patroners STS"
+L["uplp_asval_mag_10.compactname"] = "10P STS"
+L["uplp_asval_mag_10.description"] = "Förkortat 10-patronersmagasin med \"Specialtillverkade Subsoniska\" skott gjorde för SK Shadow.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
+
+L["uplp_asval_mag_ap.printname"] = "20-Patroners PB"
+L["uplp_asval_mag_ap.compactname"] = "20P PB"
+L["uplp_asval_mag_ap.description"] = "Standard 20-patronersmagasin matade med pansarbrytande ammunition gjorda till alla SK 9×39."
+
+L["uplp_asval_mag_30.printname"] = "30-Patroners EBP"
+L["uplp_asval_mag_30.compactname"] = "30P EBP"
+L["uplp_asval_mag_30.description"] = "Förstorade 30-patronersmagasin med \"Experimental Billig Precision\" skott gjorda till MK Lightning."
 
 //////////////////// ASh-12
 L["uplp_weapon_ash12"] = "RZ 12.7"

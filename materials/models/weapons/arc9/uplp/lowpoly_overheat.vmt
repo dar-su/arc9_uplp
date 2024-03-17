@@ -1,0 +1,19 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/uplp/pallete"
+	"$nocull" "0"
+	"$halflambert" "1"
+    "$color2" "[1.1 1.1 1.1]"
+	
+	"$detail" "arc9/fullheat"
+    "$detailscale" "1"
+    "$detailblendfactor" "0"
+    "$detailblendmode" "5"
+	
+	"Proxies"
+     {
+    	"ARC9_Heat" {
+			blend $detailblendfactor
+    	}
+     }
+}

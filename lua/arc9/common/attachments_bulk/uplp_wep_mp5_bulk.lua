@@ -29,6 +29,15 @@ ATT.RecoilUpMult = 0.9
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.RPMMult = 0.875
 
+ATT.Overheat = true
+ATT.HeatCapacityMult = 1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.03
+ATT.RPMMultHot = 0.85
+
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_sd")
 
 ---------- uplp_mp5_bar_kurz

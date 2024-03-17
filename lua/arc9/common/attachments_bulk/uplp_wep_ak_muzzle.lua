@@ -297,4 +297,14 @@ ATT.SprintToFireTimeAdd = 0.03
 
 ATT.ActivateElements = {"uplp_ak_mz_silencer"}
 
+ATT.Overheat = true
+
+ATT.HeatCapacityMult = 1.1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.03
+ATT.RPMMultHot = 0.85
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mz_silencer")

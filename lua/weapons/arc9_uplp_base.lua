@@ -81,3 +81,9 @@ SWEP.Crosshair = true
 SWEP.MagnificationZoomSpeed = 2.5
 
 SWEP.FiremodeSound = false
+
+SWEP.AfterShotParticle = false
+SWEP.AfterShotParticleHook = function(swep, old) 
+    if swep:GetHeatAmount() > 2 then return "barrel_smoke" end
+    return old
+end
