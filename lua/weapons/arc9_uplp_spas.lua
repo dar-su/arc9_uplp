@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-24.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-30.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -87,6 +87,15 @@ SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
 SWEP.ActivePos = Vector(0.7, -2, -1.9)
 SWEP.ActiveAng = Angle(0, 0, -0)
+
+local PeekPos = Vector(-0.5, 4, -3)
+local PeekAng = Angle(0, 0.4, -22)
+
+SWEP.PeekPos = PeekPos
+SWEP.PeekAng = PeekAng
+
+SWEP.PeekPosReloading = PeekPos
+SWEP.PeekAngReloading = PeekAng
 
 SWEP.SprintPos = Vector(2, -2, -1)
 SWEP.SprintAng = Angle(9, -9, -0)
@@ -225,7 +234,7 @@ SWEP.Firemodes = {
         DamageMaxMult = 1.25, -- blehh :p
         SweetSpotDamageMult = 1.25, -- blehh :p
 
-        RPM = 280,
+        RPM = 60/0.2,
     },
     { Mode = 1, -- Semi
         ManualAction = false,
@@ -553,7 +562,7 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
-        Mult = 1.15,
+        Mult = 1,
         EjectAt = 5 / 30,
         MinProgress = 0.4,
         EventTable = {

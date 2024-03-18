@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_spas-24.mdl"
+$modelname "weapons\arc9\c_uplp_spas-30.mdl"
  
 $bodygroup "rec" { // 0
 	studio "body.smd" // 0
@@ -202,19 +202,6 @@ $sequence "reload_start_empty" {
 
 $sequence "reload_start_empty_pumpy" {
 	"anims\sgreload_start_empty_pumpy.smd"
-	fps 30
-	fadein 0.2
-	fadeout 0
-}
-
-$sequence "reload_start_empty_only" {
-	"anims\sgreload_start.smd"
-	fps 30
-	fadein 0.2
-	fadeout 0
-}
-$sequence "reload_start_empty_only_pumpy" {
-	"anims\sgreload_start.smd"
 	fps 30
 	fadein 0.2
 	fadeout 0
