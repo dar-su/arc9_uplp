@@ -57,7 +57,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_scar.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_scar-2.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_scar.mdl"
 
 SWEP.MirrorVMWM = true
@@ -743,12 +743,19 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
+			
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 8 / 30, v = 0.4 },
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
+
+            { s = pathUTC .. "cloth_3.ogg", t = (1.7) + (0 / 30), c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = (1.7) + (2 / 30), c = ca, v = 0.8 },
+            { s = pathUT .. "chpull.ogg", t = (1.7) + (6 / 30), c = ca, v = 0.8 },
+            { s = pathUT .. "chrelease.ogg", t = (1.7) + (13.5 / 30), c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = (1.7) + (45 / 60), c = ca },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.42},
