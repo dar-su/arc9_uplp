@@ -131,16 +131,16 @@ SWEP.RecoilMultSights = 0.95
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoil = 0.75
 SWEP.VisualRecoilMultSights = 1
-SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilCenter = Vector(2, -11, -11)
+SWEP.VisualRecoilUp = 2.15 -- Vertical tilt
 SWEP.VisualRecoilSide = 0 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 30 -- Roll tilt
 SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 50
-SWEP.VisualRecoilSpringMagnitude = 0.44
-SWEP.VisualRecoilPositionBumpUp = .25
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringMagnitude = 2.44
+SWEP.VisualRecoilPositionBumpUp = 2.25
 
 SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilUpHipFire = 2
@@ -177,7 +177,7 @@ SWEP.AimDownSightsTime = 0.25 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
-SWEP.RPM = 325 -- How fast gun shoot
+SWEP.RPM = 280 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
