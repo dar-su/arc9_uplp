@@ -61,6 +61,7 @@ ATT.LHIK_Priority = 5
 -- Positives
 ATT.RecoilSideMult = 0.75
 ATT.RecoilUpMult = 0.65
+ATT.HeatCapacityMult = 1.1
 
 -- Negatives
 ATT.SpreadAddRecoil = 0.003
@@ -193,12 +194,14 @@ ATT.SpeedMultSights = 1.1
 
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMaxAdd = 10 -- from 40
-ATT.DamageMinAdd = 20 -- from 28
+ATT.DamageMaxAdd = 3 -- from 40
+ATT.DamageMinAdd = 9 -- from 28
+ATT.RangeMaxMult = 2
+ATT.RangeMinAdd = 5 / ARC9.HUToM
 
-ATT.CustomPros = {
-    [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
-}
+-- ATT.CustomPros = {
+--     [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+-- }
 
 -- Negatives
 ATT.RPMAdd = -350
@@ -235,6 +238,8 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
 ATT.SwayMultSights = 1.1
 ATT.SpeedMultSights = 0.9
+ATT.RangeMinAdd = -10 / ARC9.HUToM
+ATT.RangeMaxAdd = -15 / ARC9.HUToM
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty"  then return anim .. "_30" end
