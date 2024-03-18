@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_aug-11.mdl"
+$modelname "weapons\arc9\c_uplp_aug-15.mdl"
  
 $bodygroup "base" { // 0
 	studio "upper.smd"
@@ -216,7 +216,7 @@ $sequence "reload" {
 
 $sequence "reload_empty" {
 	"anims\fes_reload_empty.smd"
-	"anims\reload_empty_iron.smd"
+	"anims\fes_reload_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -251,7 +251,7 @@ $sequence "reload40" {
 }
 
 $sequence "reload_empty40" {
-	"anims\reload_empty40.smd"
+	"anims\fes_reload_empty_40.smd"
 	"anims\reload_empty40_iron.smd"
 	blend "sights" 0 1
 	fps 30

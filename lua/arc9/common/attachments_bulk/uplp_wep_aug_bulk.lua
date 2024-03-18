@@ -203,8 +203,8 @@ ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_30p")
 
 ATT = {}
 
-ATT.PrintName = "40-Round 5.56x45mm"
-ATT.CompactName = "40R 5.56"
+ATT.PrintName = "45-Round 5.56x45mm"
+ATT.CompactName = "45R 5.56"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "40.png", "mips smooth")
@@ -220,7 +220,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_40"
 end
 
-ATT.ClipSizeOverride = 40
+ATT.ClipSizeOverride = 45
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.005
@@ -229,7 +229,7 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
 ATT.SwayMultSights = 1.1
 ATT.SpeedMultSights = 0.9
-ATT.ReloadTimeMult = 1.05
+--ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_40")
 
@@ -338,6 +338,7 @@ local stat9 = {
     Ammo = "pistol",
 	ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl",
 
+	AUGProgressiveTriggerOverride = 4/5,
     HeadshotDamageMult = 0.65,
 }
 
