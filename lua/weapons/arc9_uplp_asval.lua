@@ -194,12 +194,12 @@ SWEP.RecoilModifierCap = 1
 
 -- HOT HOT HOT
 SWEP.Overheat = true
-SWEP.HeatCapacity = 50
-SWEP.HeatDissipation = 3
+SWEP.HeatCapacity = 80
+SWEP.HeatDissipation = 3.5
 SWEP.HeatDelayTime = 1
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
-SWEP.MalfunctionWait = 0
+SWEP.MalfunctionWait = -1 -- -1 for instant unjam anim
 
 SWEP.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -787,7 +787,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         end
     end
 
-    if (eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"]) and !(eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
+    if (eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"] or eles["uplp_asval_stock_buffer"]) and !(eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
         mdl:SetBodygroup( 2,1 )
     end
 
