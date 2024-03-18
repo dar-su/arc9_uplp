@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_mp5.mdl"
+$modelname "weapons\arc9\c_uplp_mp5-1.mdl"
  
 $bodygroup "body" {
 	studio "body def.smd"

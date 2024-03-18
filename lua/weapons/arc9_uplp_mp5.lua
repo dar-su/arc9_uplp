@@ -56,7 +56,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_mp5.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_mp5-1.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_mp5.mdl"
 
 SWEP.MirrorVMWM = true
@@ -525,17 +525,17 @@ SWEP.Animations = {
         DropMagAt = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "rack1.ogg", t = 0.22, c = ca, v = 0.8 },
-            { s = pathUT .. "chlock.ogg", t = 0.345, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 0.25*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9-0.07, v = 0.6 },
+            -- { s = pathUT .. "magin.ogg", t = 1.03, c = ca, v = 0.8 },
+            { s = pathUT .. "magtap.ogg", t = 1.05*0.9-0.07, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.2*0.9-0.07, c = ca, v = 0.8 },
 
-            { s = pathUT .. "magout.ogg", t = 0.73, c = ca, v = 0.8 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 1.0, v = 0.6 },
-            { s = pathUT .. "magtap.ogg", t = 1.44-0.05, c = ca, v = 0.8 },
-            -- { s = pathUT .. "magin.ogg", t = 1.4, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_1.ogg", t = 1.65-0.05, c = ca, v = 0.5 },
-            --{ s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82-0.1, c = ca, v = 1 },
-            { s = pathUTREAL .. "slap.ogg", t = 1.85-0.1, c = ca, v = 0.75 },
-            { s = pathUTC .. "cloth_4.ogg", t = 2.0-0.1, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 1.1 + 0, c = ca, v = 0.8 },
+
+            { s = pathUT .. "chback.ogg", t = 1.1 + 0.12, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 1.1 + 0.45, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.1 + 0.53, c = ca },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1.0},
