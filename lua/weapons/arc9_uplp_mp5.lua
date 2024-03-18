@@ -189,6 +189,7 @@ SWEP.Firemodes = {
     RunawayBurst = true,
     RecoilAutoControlMult = 2,
     PostBurstDelay = 0.12,
+	RPMMult = 1.18,
     PoseParam = 1.5 },
     { Mode = 1, -- Semi
     RPM = 555,
