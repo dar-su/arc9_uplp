@@ -477,7 +477,7 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.6,
+        MinProgress = 0.4,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -486,7 +486,7 @@ SWEP.Animations = {
     },
     ["draw_sr3"] = {
         Source = "draw_sr3",
-        MinProgress = 0.6,
+        MinProgress = 0.75,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },

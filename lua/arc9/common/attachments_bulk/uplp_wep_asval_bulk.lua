@@ -26,6 +26,15 @@ ATT.Silencer = false
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.MuzzleEffectQCA = 6
 
+-- Positives
+ATT.RecoilSideMult = 0.75
+ATT.RecoilUpMult = 0.65
+
+-- Negatives
+ATT.SpreadAddRecoil = 0.006
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.RPMAdd = -150
+
 ATT.Overheat = false -- no silencer
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
@@ -48,6 +57,15 @@ ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
 ATT.ModelOffset = Vector(-9.5, -2.5, 1)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
+
+-- Positives
+ATT.RecoilSideMult = 0.75
+ATT.RecoilUpMult = 0.65
+
+-- Negatives
+ATT.SpreadAddRecoil = 0.003
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.RPMAdd = -150
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
 
@@ -80,6 +98,14 @@ ATT.Attachments = {
     },
 }
 
+ATT.RecoilAdd = 1
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
+
 ARC9.LoadAttachment(ATT, "uplp_asval_stock_buffer")
 
 ---------- uplp_asval_stock_vss
@@ -96,6 +122,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {""}
 
+-- Positives
+ATT.RecoilMult = 0.85
+ATT.SwayMultSights = 0.7
+ATT.VisualRecoilMultHipFire = 0.85
+
+-- Negatives
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultSights = 0.9
+ATT.SpreadAddHipFire = 0.015
+
 ARC9.LoadAttachment(ATT, "uplp_asval_stock_vss")
 
 ---------- uplp_asval_stock_vssm
@@ -111,6 +148,18 @@ ATT.Category = "uplp_asval_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {""}
+
+-- Positives
+ATT.RecoilMult = 0.95
+ATT.RecoilAutoControlMult = 1.5
+ATT.SwayMultSights = 0.7
+ATT.VisualRecoilMultHipFire = 0.85
+
+-- Negatives
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultSights = 0.95
+ATT.SpreadAddHipFire = 0.025
 
 ARC9.LoadAttachment(ATT, "uplp_asval_stock_vssm")
 
@@ -134,32 +183,33 @@ ATT.Firemodes = {
     PoseParam = 2 }
 }
 
-ATT.RPMAdd = -350
 ATT.ClipSizeOverride = 10
+
+-- Mag
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 1.1
+
+-- Positives
+ATT.PhysBulletMuzzleVelocityMult = 1.15
+ATT.DamageMaxAdd = 10 -- from 40
+ATT.DamageMinAdd = 20 -- from 28
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
+
+-- Negatives
+ATT.RPMAdd = -350
+ATT.RecoilUpAdd = 0.6
+ATT.RecoilSideAdd = 1.5
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty"  then return anim .. "_10" end
 end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_mag_10")
-
--- ---------- uplp_asval_mag_ap
-
--- ATT = {}
-
--- ATT.PrintName = "20-Round AP"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "20.png", "mips smooth")
-
--- ATT.Category = "uplp_asval_mag"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.ActivateElements = {""}
-
--- ATT.ClipSizeOverride = 20
-
--- ARC9.LoadAttachment(ATT, "uplp_asval_mag_ap")
 
 ---------- uplp_asval_mag_30
 
@@ -175,7 +225,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {""}
 
+-- Positives
 ATT.ClipSizeOverride = 30
+
+-- Negatives
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty"  then return anim .. "_30" end
