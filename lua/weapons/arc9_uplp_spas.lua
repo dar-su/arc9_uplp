@@ -261,22 +261,14 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if attached["uplp_spas_stock_folding_f"] then
         return {
-             Pos = Vector(-1.5, -2, -1.5),
+             Pos = Vector(0, -2, -2),
              Ang = Angle(0, 0, -10),
              Magnification = 1.05,
              Blur = false,
-            --  ViewModelFOV = 55,
+			 CrosshairInSights = true,
         }
     end
 
-     -- if attached["uplp_ak_brl_109"] then
-        -- return {
-             -- Pos = Vector(-2.3, -3, 0.875),
-             -- Ang = Angle(0.34, 0, -2.5),
-             -- Magnification = 1.15,
-             -- ViewModelFOV = 60,
-        -- }
-    -- end
 end
 
 -- Customization Menu Info
@@ -300,6 +292,10 @@ SWEP.ShouldDropMagEmpty = false
 SWEP.ReloadInSights = false
 SWEP.ShotgunReload = true
 SWEP.ShotgunReloadIncludesChamber = true
+
+-- Peek
+SWEP.PeekPos = Vector(-0.75, 7.5, -4)
+SWEP.PeekAng = Angle(0, 0.4, -40)
 
 ---- Sounds
 

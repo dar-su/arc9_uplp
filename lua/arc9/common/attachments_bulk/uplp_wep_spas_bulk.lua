@@ -116,6 +116,7 @@ ATT.ToggleStats = {
 
         SwayAddSights = -0.5,
         SprintToFireTimeAdd = 0.05,
+		CantPeek = true,
     },
 }
 
@@ -178,6 +179,7 @@ ATT.ToggleStats = {
 
         SwayAddSights = -0.5,
         SprintToFireTimeAdd = 0.05,
+		CantPeek = true,
     },
 }
 
