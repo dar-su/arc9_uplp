@@ -616,6 +616,7 @@ end
 --     },
 -- }
 
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ubgl_m203_rail")
 
 
