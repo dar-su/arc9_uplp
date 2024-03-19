@@ -378,6 +378,31 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
 end
 
+
+local pathUT = "uplp_urban_temp/mp5/"
+
+local shoot40 = {
+    pathUT .. "fire-40-01.ogg",
+    pathUT .. "fire-40-02.ogg",
+    pathUT .. "fire-40-03.ogg",
+    pathUT .. "fire-40-04.ogg",
+    pathUT .. "fire-40-05.ogg",
+    pathUT .. "fire-40-06.ogg",
+}
+
+local shoot40sil = {
+    pathUT .. "fire-40-sup-01.ogg",
+    pathUT .. "fire-40-sup-02.ogg",
+    pathUT .. "fire-40-sup-03.ogg",
+    pathUT .. "fire-40-sup-04.ogg",
+    pathUT .. "fire-40-sup-05.ogg",
+    pathUT .. "fire-40-sup-06.ogg",
+}
+
+
+ATT.ShootSound = shoot40
+ATT.ShootSoundSilenced = shoot40sil
+
 -- Positives
 ATT.DamageMaxAdd = 3
 ATT.DamageMinAdd = 2

@@ -55,7 +55,7 @@ SWEP.Hook_Think = function(swep)
             
             local hot = swep:GetHeatAmount()
             if hot > 15 and swep:GetProcessedValue("Overheat", true) then
-	            local att = 6
+                local att = 6
                 local vm = LocalPlayer():GetViewModel()
                 local wm = false
                 if (LocalPlayer():ShouldDrawLocalPlayer() or swep.Owner != LocalPlayer()) then
@@ -116,9 +116,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
--- make sure ak12 matches this
-SWEP.DamageMax = 34
-SWEP.DamageMin = 18
+SWEP.DamageMax = 36
+SWEP.DamageMin = 16
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -126,11 +125,11 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 90 / ARC9.HUToM
+SWEP.RangeMin = 25 / ARC9.HUToM
+SWEP.RangeMax = 75 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 300 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 280 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -142,7 +141,7 @@ SWEP.ClipSize = 20
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.35
+SWEP.RecoilUp = 1.1
 SWEP.RecoilSide = 1.2
 
 SWEP.RecoilRandomUp = 1
@@ -177,34 +176,47 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.0045
+SWEP.Spread = 0.0025
 SWEP.SpreadAddHipFire = 0.03 - 0.01
 
-SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddRecoil = 0.014
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
+SWEP.RecoilDissipationRate = 7
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilPerShot = 1 / 6
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- HOT HOT HOT
 SWEP.Overheat = true
-SWEP.HeatCapacity = 60
-SWEP.HeatDissipation = 5
+SWEP.HeatCapacity = 80
+SWEP.HeatDissipation = 3.5
+SWEP.HeatDelayTime = 1
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
-SWEP.MalfunctionWait = -1
-SWEP.HeatPerShotMultFirstShot = 0.1 -- not works?
+SWEP.MalfunctionWait = -1 -- -1 for instant unjam anim
 
-SWEP.SpreadAddHot = 0.05
-SWEP.RPMMultHot = 0.8
+SWEP.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
 
+SWEP.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+SWEP.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.7)
+    end
+end
 
 -- Weapon handling
 SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
@@ -217,7 +229,7 @@ SWEP.SprintToFireTime = 0.37 - 0.1 -- Time it takes to fully enter sprint
 SWEP.BarrelLength = 40
 
 -- Shooting and Firemodes
-SWEP.RPM = 800 -- How fast gun shoot
+SWEP.RPM = 850 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -225,7 +237,7 @@ SWEP.Firemodes = {
     { Mode = -1, -- Full
     PoseParam = 1 },
     { Mode = 1, -- Semi
-    RPM = 450,
+    RPM = 500,
     PoseParam = 2 }
 }
 
@@ -258,10 +270,10 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if (attached["uplp_asval_hg_sr3"] or attached["uplp_asval_hg_sr3s"]) then
         return {
-			 Pos = Vector(-2.25, -2, 0.9),
-			 Ang = Angle(0, 0, 0),
-			 Magnification = 1.15,
-			 ViewModelFOV = 55,
+             Pos = Vector(-2.25, -2, 0.9),
+             Ang = Angle(0, 0, 0),
+             Magnification = 1.15,
+             ViewModelFOV = 55,
         }
     end
 
@@ -515,9 +527,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -541,9 +553,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.9,
-		PeekProgress = 0.825,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -570,9 +582,9 @@ SWEP.Animations = {
     ["reload_10"] = {
         Source = "reload_10",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -596,9 +608,9 @@ SWEP.Animations = {
     ["reload_empty_10"] = {
         Source = "reload_empty_10",
         MinProgress = 0.9,
-		PeekProgress = 0.825,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -625,9 +637,9 @@ SWEP.Animations = {
     ["reload_30"] = {
         Source = "reload_30",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -651,9 +663,9 @@ SWEP.Animations = {
     ["reload_empty_30"] = {
         Source = "reload_empty_30",
         MinProgress = 0.9,
-		PeekProgress = 0.825,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -744,7 +756,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-	
+
     ["firemode_1"] = {
         -- Source = "firemode_0",
         Source = "modeswitch",
@@ -770,23 +782,23 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-	
+
     if (eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
-		if !(eles["uplp_asval_stock_buffer"] or eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"]) then
-			mdl:SetBodygroup( 3,1 )
-		end
-		if eles["uplp_tac_used"] then
-			mdl:SetBodygroup( 6,2 )
-		end
+        if !(eles["uplp_asval_stock_buffer"] or eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"]) then
+            mdl:SetBodygroup( 3,1 )
+        end
+        if eles["uplp_tac_used"] then
+            mdl:SetBodygroup( 6,2 )
+        end
     end
 
-	if (eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"]) and !(eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
-		mdl:SetBodygroup( 2,1 )
-	end
+    if (eles["uplp_asval_stock_vss"] or eles["uplp_asval_stock_vssm"] or eles["uplp_asval_stock_buffer"]) and !(eles["uplp_asval_hg_sr3"] or eles["uplp_asval_hg_sr3s"]) then
+        mdl:SetBodygroup( 2,1 )
+    end
 
-	if eles["uplp_ak_dovetail_rail_used"] then
-		mdl:SetBodygroup( 1, 0 )
-	end
+    if eles["uplp_ak_dovetail_rail_used"] then
+        mdl:SetBodygroup( 1, 0 )
+    end
 
 end
 
@@ -796,11 +808,11 @@ SWEP.AttachmentElements = {
     ["uplp_tac_used"] =         { Bodygroups = { { 6, 1 } } },
     ["uplp_grip_used"] =         { Bodygroups = { { 5, 1 } } },
     ["uplp_bipod_used"] =         { Bodygroups = { { 5, 1 } } },
-	
+
     ["uplp_ak_dovetail_rail_used"] =         { AttPosMods = {
     [1] = { Pos = Vector(0, 0, 0.25) },
     }},
-	
+
     -- Stocks
     ["uplp_asval_stock_buffer"] =         { Bodygroups = { { 3, 4 } } },
     ["uplp_asval_stock_vss"] =         { Bodygroups = { { 3, 2 } } },
@@ -813,7 +825,7 @@ SWEP.AttachmentElements = {
     ["uplp_asval_hg_sr3s"] =         { Bodygroups = { { 2,3 } }, AttPosMods = {
     [3] = { Pos = Vector(-0.75, 0.9, 9.75), Ang = Angle(90, 90, -125), Icon_Offset = Vector(0, -1, 1) },
     }},
-	
+
     -- Magazines
     ["uplp_asval_mag_10"] =         { Bodygroups = { { 4,1 } } },
     ["uplp_asval_mag_30"] =         { Bodygroups = { { 4,2 } } },
@@ -892,10 +904,10 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.6, 2.8, 1),
         Ang = Angle(90, 90, 180),
-		RejectAttachments = {
-		["uplp_ak_dovetail_rail"] = false,
-		-- [""] = true,
-		},
+        RejectAttachments = {
+        ["uplp_ak_dovetail_rail"] = false,
+        -- [""] = true,
+        },
         -- CorrectiveAng = Angle(0.4, -0.35, 0),
     },
 
@@ -975,8 +987,8 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
-	-- local sr3 = (att["uplp_asval_hg_sr3"] or att["uplp_asval_hg_sr3s"])
-	-- local vss = (att["uplp_asval_stock_vss"] or att["uplp_asval_stock_vssm"])
+    -- local sr3 = (att["uplp_asval_hg_sr3"] or att["uplp_asval_hg_sr3s"])
+    -- local vss = (att["uplp_asval_stock_vss"] or att["uplp_asval_stock_vssm"])
 
     -- if vss and att["uplp_asval_mag_10"] and !sr3 then
     --     name = ARC9:GetPhrase("uplp_weapon_asval_vss")

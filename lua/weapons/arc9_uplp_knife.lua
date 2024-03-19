@@ -129,6 +129,8 @@ SWEP.SpreadMultMove = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
+SWEP.ShootWhileSprint = true 
+SWEP.BashWhileSprint = true 
 
 -- Shooting and Firemodes
 
@@ -227,6 +229,10 @@ SWEP.Animations = {
     ["bash"] = {
         Source = {"swing1", "swing2", "swing3"},
 		Mult = 0.85,
+        
+        MinProgress = 0.4,
+        FireASAP = true,
+
         EventTable = {
             { s = randcloth, t = 0.3 },
         },
