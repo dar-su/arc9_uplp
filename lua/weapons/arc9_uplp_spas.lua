@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-41.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-44.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -171,7 +171,7 @@ SWEP.RecoilMultCrouch = 0.75
 SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 0.25
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -2.15 -- Vertical tilt
+SWEP.VisualRecoilUp = -1.15 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 90 -- Roll tilt
 SWEP.VisualRecoilPunch = 5.5 -- How far back visual recoil moves the gun
@@ -185,7 +185,7 @@ SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 90
 SWEP.VisualRecoilPunchHipFire = 5.5
 SWEP.VisualRecoilDampingConstHipFire = 180
-SWEP.VisualRecoilPositionBumpUpHipFire = -1
+SWEP.VisualRecoilPositionBumpUpHipFire = -2
 
 -- Accuracy and Spread
 SWEP.UseDispersion = true
@@ -461,9 +461,16 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     --end
 
     -- Pump-action mode suppresses the empty suffix
-    if insemi and swep:GetEmptyReload() and anim == "reload_start" then
+    --if insemi and swep:GetEmptyReload() and anim == "reload_start" then
+    --    swep:SetEmptyReload(false)
+    --    return "reload_start_empty_pumpy"
+    --end
+
+    if anim == "reload_start_empty" or (anim == "reload_start" and swep:GetEmptyReload()) then
         swep:SetEmptyReload(false)
-        return "reload_start_empty_pumpy"
+        if insemi then
+            return "reload_start_empty_pumpy"
+        end
     end
 
     if insemi and anim == "fire" then
@@ -597,12 +604,12 @@ SWEP.Animations = {
         EjectAt = 31 / 30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = ShellInsert, t = 14 / 30, v = 0.6 },
+            { s = ShellInsert, t = 10 / 30, v = 0.6 },
             { s = pathUT .. "forearm_back.ogg", t = 26 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 33 / 30, v = 0.6 },
 			
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "grab-polymer.ogg", t = 49 / 30, c = ca, v = 0.4 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 37 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "grab-polymer.ogg", t = 54 / 30, c = ca, v = 0.6 },
         },
     },
 
