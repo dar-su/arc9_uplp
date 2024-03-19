@@ -194,7 +194,7 @@ SWEP.RecoilModifierCap = 1
 
 -- HOT HOT HOT
 SWEP.Overheat = true
-SWEP.HeatCapacity = 80
+SWEP.HeatCapacity = 80 * 1.5
 SWEP.HeatDissipation = 3.5
 SWEP.HeatDelayTime = 1
 SWEP.HeatPerShot = 1
@@ -243,7 +243,7 @@ SWEP.Firemodes = {
 
 SWEP.Silencer = true
 SWEP.ShootPitch = 90
-SWEP.ShootVolume = 23
+SWEP.ShootVolume = 45
 
 -- HoldType Info
 SWEP.HoldType = "ar2"

@@ -178,7 +178,7 @@ SWEP.SprintToFireTime = 0.33 - 0.1
 
 -- Shooting and Firemodes
 SWEP.RPM = 800 -- How fast gun shoot
-SWEP.HeatCapacity = 100 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
+SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
 
