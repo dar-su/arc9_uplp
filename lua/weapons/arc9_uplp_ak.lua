@@ -995,9 +995,15 @@ SWEP.Animations = {
 
     ["firemode_1"] = {
         Source = "firemode_0",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.2 },
+        }
     },
     ["firemode_2"] = {
         Source = "firemode_1",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.2 },
+        }
     },
 
     ["toggle"] = {

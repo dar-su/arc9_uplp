@@ -215,7 +215,7 @@ SWEP.Animations = {
 
     ["idle_sprint"] = {
         Source = "sprint",
-		Mult = 1.0,
+		Mult = 0.90,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",

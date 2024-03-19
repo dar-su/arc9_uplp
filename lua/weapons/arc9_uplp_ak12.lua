@@ -1110,16 +1110,28 @@ SWEP.Animations = {
 
     ["firemode_1"] = {
         Source = "firemode_0_12",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.18 },
+        }
     },
     ["firemode_2"] = {
         Source = "firemode_1_12",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.18 },
+        }
     },
 
     ["firemode_1_evo"] = {
         Source = "firemode_0_evo",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.15 },
+        }
     },
     ["firemode_2_evo"] = {
         Source = "firemode_1_evo",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.15 },
+        }
     },
 
     ["toggle"] = {
