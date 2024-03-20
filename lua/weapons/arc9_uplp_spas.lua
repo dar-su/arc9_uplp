@@ -75,7 +75,7 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-5.5, 4, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-14, 2, 2),
+    TPIKPos = Vector(-4, 5, -10),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
@@ -249,10 +249,10 @@ SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
 
 -- HoldType Info
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "shotgun"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = nil
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldTypeSights = "shotgun"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeNPC = nil
 
