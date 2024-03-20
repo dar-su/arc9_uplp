@@ -456,16 +456,11 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local empty = clip == 0
     local insemi = swep:GetValue("uplp_semi") -- This is a lie. This is pump-action mode.
 
-    --if swep:GetEmptyReload() and anim == "reload_finish" then
-        --return "reload_finish_empty"
+    --if (true or swep:GetEmptyReload()) and anim == "reload_finish" then
+    --    return "reload_finish_empty"
     --end
 
     -- Pump-action mode suppresses the empty suffix
-    --if insemi and swep:GetEmptyReload() and anim == "reload_start" then
-    --    swep:SetEmptyReload(false)
-    --    return "reload_start_empty_pumpy"
-    --end
-
     if anim == "reload_start_empty" or (anim == "reload_start" and swep:GetEmptyReload()) then
         swep:SetEmptyReload(false)
         timer.Simple( 0, function()
@@ -636,18 +631,18 @@ SWEP.Animations = {
         },
     },
 
-    --["reload_finish_empty"] = {
-    --    Source = "reload_end_pump",
-    --    MinProgress = 0.5,
-    --    FireASAP = true,
-    --    EjectAt = 4 / 30,
-    --    EventTable = {
-    --        { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-    --        { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
-    --        { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
-    --        { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
-    --    },
-    --},
+    ["reload_finish_empty"] = {
+        Source = "reload_end_pump",
+        MinProgress = 0.5,
+        FireASAP = true,
+        EjectAt = 4 / 30,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
+        },
+    },
 
     ["inspect"] = {
         Source = {"look"},
