@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-44.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-45.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -576,10 +576,12 @@ SWEP.Animations = {
     -- Reloads --
 
     ["reload_start"] = {
-        Source = "reload_start",
+        Source = "reload_start_insert",
+        RestoreAmmo = 1,
+        MinProgress = 0.5,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            --{ s = ShellInsert, t = 13.5 / 30, v = 0.6 },
+            { s = ShellInsert, t = 12 / 30, v = 0.6 },
         },
     },
 

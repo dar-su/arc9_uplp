@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_spas-44.mdl"
+$modelname "weapons\arc9\c_uplp_spas-45.mdl"
  
 $bodygroup "rec" { // 0
 	studio "body.smd" // 0
@@ -188,6 +188,14 @@ $sequence "cycle" {
 
 $sequence "reload_start" {
 	"anims\sgreload_start.smd"
+	fps 30
+	fadein 0.2
+	fadeout 0
+}
+
+
+$sequence "reload_start_insert" {
+	"anims\sgreload_start_insert.smd"
 	fps 30
 	fadein 0.2
 	fadeout 0
