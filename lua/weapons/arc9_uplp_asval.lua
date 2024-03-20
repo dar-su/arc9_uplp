@@ -952,7 +952,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 2),
+        Pos = Vector(0, 1.8, 3.5),
         ExcludeElements = {"vssm_dc"},
     },
 
@@ -970,7 +970,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2m.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 2),
+        Pos = Vector(0, 1.8, 3.5),
         RequireElements = {"vssm_dc"},
     },
 
