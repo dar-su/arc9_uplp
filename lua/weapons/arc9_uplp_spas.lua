@@ -468,6 +468,10 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 
     if anim == "reload_start_empty" or (anim == "reload_start" and swep:GetEmptyReload()) then
         swep:SetEmptyReload(false)
+        timer.Simple( 0, function()
+            swep:SetLoadedRounds(1)
+            swep:SetLastLoadedRounds(1)
+        end)
         if insemi then
             return "reload_start_empty_pumpy"
         end
@@ -477,7 +481,6 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         return "fire_pump"
     end
 end
-
 
 -- Animations
 SWEP.Animations = {
@@ -583,7 +586,7 @@ SWEP.Animations = {
     ["reload_start_empty"] = {
         Source = "reload_start_empty",
         RestoreAmmo = 1,
-		MinProgress = 0.2,
+        MinProgress = 0.5,
         Mult = 0.85,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -599,7 +602,7 @@ SWEP.Animations = {
     ["reload_start_empty_pumpy"] = {
         Source = "reload_start_empty_pumpy",
         RestoreAmmo = 1,
-		MinProgress = 0.2,
+        MinProgress = 0.5,
         Mult = 0.85,
         EjectAt = 31 / 30,
         EventTable = {
