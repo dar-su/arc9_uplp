@@ -26,7 +26,7 @@ $cbox 0 0 0 0 0 0
 
 $sequence "idle"{
 	"anims\idle.smd" 
-	fps 24
+	fps 25
 	loop
 	fadein 0.2
 	fadeout 0.2
@@ -35,30 +35,31 @@ $sequence "idle"{
 
 $sequence "draw" {
 	"anims\draw.smd"
-	fps 24
+	fps 25
 }
 $sequence "holster" {
 	"anims\holster.smd"
-	fps 24
+	fps 25
 }
 
 $sequence "quicknade" {
 	"anims\quicknade.smd"
-	fps 24
+	fps 25
+	
 }
 
 $sequence "pullpin" {
 	"anims\pullpin.smd"
-	fps 24
+	fps 25
 }
 
 $sequence "throw" {
 	"anims\throw.smd"
-	fps 24
+	fps 25
 }
 $sequence "throw_idle"{
 	"anims\throw_idle.smd" 
-	fps 24
+	fps 25
 	loop
 	fadein 0.2
 	fadeout 0.2
