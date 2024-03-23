@@ -12,7 +12,7 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_knife")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_knife_desc")
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_melee") -- In the Customization Menu
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_other") -- In the Spawnmenu
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnmenu
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_knife_real"),
@@ -88,6 +88,7 @@ SWEP.NoAimAssist = true
 SWEP.CanLean = false 
 SWEP.Crosshair = false  
 SWEP.NotForNPCs = true   
+SWEP.CantSafety = true   
 SWEP.SprintToFireTime = 0.5
 
 -- Damage
