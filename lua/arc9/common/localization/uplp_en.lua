@@ -110,6 +110,7 @@ L["uplp_category_weapon_shotgun"] = "Shotguns"
 L["uplp_category_weapon_smg"] = "Submachine Guns"
 L["uplp_category_weapon_sniper"] = "Sniper Rifles"
 L["uplp_category_weapon_other"] = "Оther" -- Russian O to have melees on bottom of spawnmenu
+L["uplp_category_weapon_utils"] = "Utilities"
 
 L["uplp_category_weapon_heavy"] = "Heavy Weapons"
 

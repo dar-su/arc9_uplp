@@ -1,10 +1,11 @@
 SWEP.Base = "arc9_uplp_grenade_base"
 SWEP.Category = "ARC9 - Poly Arms"
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol") -- In the Spawnmenu
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnmenu
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "frag"
+SWEP.PrintName = "FRAG Grenade"
+SWEP.ShortPrintName = "FRAG"
 -- SWEP.Class = ARC9:GetPhrase("eft_class_weapon_grenade") or "Hand grenade"
 SWEP.Description = [[fr]]
 
@@ -89,9 +90,9 @@ SWEP.Animations = {
             { s = path .. "pinpull.ogg", t = 0.45 },
             { s = path .. "spooneject.ogg", t = 0.65, v = 0.5 },
             {hide = 0, t = 0},
-            {hide = 2, t = 1},
+            {hide = 2, t = 1.15},
         },
-        EjectAt = 1,
+        EjectAt = 1.15,
     },
     ["throw"] = {
         Source = "throw",

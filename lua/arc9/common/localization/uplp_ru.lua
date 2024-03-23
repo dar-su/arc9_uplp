@@ -110,6 +110,7 @@ L["uplp_category_weapon_pistol"] = " Пистолеты"
 L["uplp_category_weapon_shotgun"] = " Дробовики"
 L["uplp_category_weapon_smg"] = " Пистолеты-пулеметы"
 L["uplp_category_weapon_sniper"] = " Снайперские винтовки"
+L["uplp_category_weapon_utils"] = "Утилитарное"
 
 L["uplp_category_weapon_heavy"] = "Heavy Weapons"
 

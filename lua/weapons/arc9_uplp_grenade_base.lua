@@ -1,6 +1,6 @@
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - Poly Arms"
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol") -- In the Spawnmenu
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnmenu
 SWEP.Spawnable = false 
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
@@ -31,18 +31,18 @@ SWEP.UseHands = true
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_fraggrenade.mdl"
 SWEP.ViewModelFOVBase = 70
+
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-
-SWEP.TPIKforcelefthand = true
-SWEP.TPIKParentToSpine4 = true  
+SWEP.TPIKParentToSpine4 = true
+SWEP.TPIKNoSprintAnim = true
+-- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-6.5, 3, -11),
-    Ang = Angle(20, -10, 195),
-
-    TPIKPos = Vector(10, -1, 0),
-    TPIKAng = Angle(0, 90, 90),
-    Scale = 1,
+    Pos = Vector(-8.5, 13, 5),
+    Ang = Angle(0, 35, 70),
+    TPIKPos = Vector(1, 5, 2),
+    TPIKAng = Angle(-10, 65, 90),
+    Scale = 1
 }
 
 function SWEP:DrawWorldModel() -- custom func to never draw custommodel when on ground and use regular wm
@@ -125,9 +125,10 @@ SWEP.VManipOffsetPos = Vector(0, 0, 0)
 SWEP.VManipOffsetAng = Angle(0, -5, 4)
 
 SWEP.CustomizeAng = Angle(87, -25, -94.3)
-SWEP.CustomizePos = Vector(-7.3, 21, 11)
+SWEP.CustomizePos = Vector(-7.0, 21, 16)
 SWEP.CustomizeSnapshotFOV = 65
 SWEP.CustomizeRotateAnchor = Vector(19, -4.28, -5.23)
+SWEP.CustomizeNoRotate = true
 
 -------------------------- HoldTypes
 
