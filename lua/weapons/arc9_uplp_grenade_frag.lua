@@ -74,7 +74,7 @@ SWEP.Animations = {
     ["pullpin"] = {
         Source = "pullpin",
         Mult = 0.9,
-        MinProgress = 0.666,
+        MinProgress = 0.6,
         FireASAP = true,
         EventTable = {
             { s = path .. "pinpull.ogg", t = 0.3 },
@@ -100,7 +100,7 @@ SWEP.Animations = {
     },
     ["throw"] = {
         Source = "throw",
-        Mult = 0.75,
+        Mult = 0.9,
 		-- Mult = 1.2,
         EventTable = {
             {s = "arc9/melee_lift.wav", t = 0}, -- temporary

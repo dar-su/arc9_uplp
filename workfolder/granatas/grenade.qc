@@ -57,12 +57,14 @@ $sequence "pullpin" {
 $sequence "throw" {
 	"anims\throw.smd"
 	fps 25
-	snap
+	fadein 0.1
+	fadeout 0.2
 }
 $sequence "throw_under" {
 	"anims\throw_under.smd"
 	fps 25
-	snap
+	fadein 0.1
+	fadeout 0.2
 }
 $sequence "throw_idle"{
 	"anims\throw_idle.smd" 
