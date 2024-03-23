@@ -74,6 +74,7 @@ SWEP.Ammo = "grenade"
 
 SWEP.CaseEffectQCA = 2
 SWEP.ShellSmoke  = false
+SWEP.ShellVelocity = 0.5
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/skoba_m26.mdl" -- h
 SWEP.ShellScale = 1
 SWEP.ShellPitch = 100
@@ -88,8 +89,8 @@ SWEP.ThrowAnimSpeed = 1
 
 SWEP.FuseTimer = -1 -- Length of time that the grenade will take to explode in your hands. -1 = Won't explode.
 
-SWEP.ThrowForceMin = 900 -- Minimum force that the grenade will be thrown with.
-SWEP.ThrowForceMax = 1200 -- Maximum force that the grenade will be thrown with.
+SWEP.ThrowForceMin = 700 -- Minimum force that the grenade will be thrown with.
+SWEP.ThrowForceMax = 900 -- Maximum force that the grenade will be thrown with.
 SWEP.TossForce = 500 -- Force that the grenade will be thrown with when right clicked.
 
 SWEP.ThrowChargeTime = 0 -- How long it takes to charge the grenade to its maximum throw force.

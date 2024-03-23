@@ -10,31 +10,39 @@ SWEP.Description = [[fr]]
 
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_m26.mdl" -- guh
+SWEP.DefaultBodygroups = "00000000000000000"
 
-SWEP.ShootEnt = "arc9_uplp_40mm_he"
+SWEP.ShootEnt = "arc9_uplp_m26_thrown"
 SWEP.Ammo = "grenade"
 SWEP.FuseTimer = 3.5
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/skoba_m26.mdl" -- guh
 
--- SWEP.ReloadHideBoneTables = {
---     [1] = {
---         "weapon",
---         "weapon_skoba",
---         "weapon_ring",
---         "weapon_pin",
---         "weapon_pin_r",
---         "weapon_pin_l",
---     },    
---     [2] = {
---         "weapon_ring",
---         "weapon_pin",
---         "weapon_pin_r",
---         "weapon_pin_l",
---     },
--- }
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "body",
+        "handle",
+        "pin1",
+        "pin2",
+    },    
+    [2] = {
+        "handle",
+        "pin1",
+        "pin2",
+    },
+}
 
-local path = "weapons/darsu_eft/grenades/"
+local path = "uplp_urban_temp/grenades/"
+local pathUTC = "uplp_urban_temp/common/"
+local path1911 = "uplp_urban_temp/1911/" -- temp for draw sounds
+
+
+local randcloth = {
+    pathUTC .. "cloth_1.ogg",
+    pathUTC .. "cloth_2.ogg",
+    pathUTC .. "cloth_4.ogg",
+    pathUTC .. "cloth_5.ogg",
+}
 
 SWEP.Animations = {
     ["idle"] = {
@@ -49,15 +57,14 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         EventTable = {
-            { s = path .. "rgd_draw.ogg", t = 0 },
-            { s = path .. "rgd_safety.ogg", t = 24/24 },
+            { s = path1911 .. "draw.ogg", t = 0, c = ca, v = 0.2 },
             { hide = 0, t = 0 },
         },
     },
     ["holster"] = {
         Source = "holster",
         EventTable = {
-            { s = path .. "rgd_holster.ogg", t = 0 },
+            {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
     },
     ["pullpin"] = {
@@ -65,43 +72,44 @@ SWEP.Animations = {
         MinProgress = 0.666,
         FireASAP = true,
         EventTable = {
-            { s = path .. "rgd_pin.ogg", t = 12/24 },
+            { s = path .. "pinpull.ogg", t = 0.3 },
+            { s = path .. "spooneject.ogg", t = 0.5, v = 0.5 },
             {hide = 0, t = 0},
-            {hide = 2, t = 1},
+            {hide = 2, t = 0.85},
         },
+        EjectAt = 0.85,
     },
     ["quicknade"] = {
         Source = "quicknade",
-        MinProgress = 0.666,
+		Mult = 0.85,
+        MinProgress = 0.6,
         FireASAP = true,
         EventTable = {
-            { s = path .. "rgd_pin.ogg", t = 12/24 },
+            { s = path1911 .. "draw.ogg", t = 0, c = ca, v = 0.4 },
+            { s = path .. "pinpull.ogg", t = 0.45 },
+            { s = path .. "spooneject.ogg", t = 0.65, v = 0.5 },
             {hide = 0, t = 0},
             {hide = 2, t = 1},
         },
+        EjectAt = 1,
     },
     ["throw"] = {
         Source = "throw",
 		-- Mult = 1.2,
         EventTable = {
-            { s = path .. "rgd_throw.ogg", t = 0 },
-            { s = { path .. "gren_fuze1.ogg", path .. "gren_fuze2.ogg", path .. "gren_fuze3.ogg" }, t = 0.05 },
-            -- { s = path .. "rgd_lever.ogg", t = 15/24 },
-            {hide = 1, t = 0},
+            {s = "arc9/melee_lift.wav", t = 0}, -- temporary
+            {hide = 2, t = 0},
+            {hide = 1, t = 0.25},
         },
-        EjectAt = 0.05,
         MinProgress = 0.22
-        -- MinProgress = 0.4
     },
     ["toss"] = {
         Source = "throw",
         EventTable = {
-            { s = path .. "rgd_throw.ogg", t = 0 },
-            { s = { path .. "gren_fuze1.ogg", path .. "gren_fuze2.ogg", path .. "gren_fuze3.ogg" }, t = 0.05 },
-            -- { s = path .. "rgd_lever.ogg", t = 15/24 },
-            {hide = 1, t = 0},
+            {s = "arc9/melee_lift.wav", t = 0}, -- temporary
+            {hide = 2, t = 0},
+            {hide = 1, t = 0.25},
         },
-        EjectAt = 0.05,
         MinProgress = 0.32
     },
 
