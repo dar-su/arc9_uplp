@@ -57,6 +57,12 @@ $sequence "pullpin" {
 $sequence "throw" {
 	"anims\throw.smd"
 	fps 25
+	snap
+}
+$sequence "throw_under" {
+	"anims\throw_under.smd"
+	fps 25
+	snap
 }
 $sequence "throw_idle"{
 	"anims\throw_idle.smd" 

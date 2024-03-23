@@ -57,6 +57,8 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.2,
+        FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0, c = ca, v = 0.2 },
             { hide = 0, t = 0 },
@@ -64,12 +66,14 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        MinProgress = 0.4,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
     },
     ["pullpin"] = {
         Source = "pullpin",
+        Mult = 0.9,
         MinProgress = 0.666,
         FireASAP = true,
         EventTable = {
@@ -96,6 +100,7 @@ SWEP.Animations = {
     },
     ["throw"] = {
         Source = "throw",
+        Mult = 0.75,
 		-- Mult = 1.2,
         EventTable = {
             {s = "arc9/melee_lift.wav", t = 0}, -- temporary
@@ -105,7 +110,8 @@ SWEP.Animations = {
         MinProgress = 0.22
     },
     ["toss"] = {
-        Source = "throw",
+        Source = "throw_under",
+        Mult = 0.75,
         EventTable = {
             {s = "arc9/melee_lift.wav", t = 0}, -- temporary
             {hide = 2, t = 0},

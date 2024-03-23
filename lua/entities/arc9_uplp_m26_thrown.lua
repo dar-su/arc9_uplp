@@ -8,8 +8,10 @@ ENT.Spawnable 			= false
 ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
 
 ENT.Model = "models/weapons/arc9/w_uplp_m26_thrown.mdl"
-ENT.SphereSize = 2
 ENT.PhysMat = "grenade"
+
+ENT.PhysBoxSize = nil
+ENT.SphereSize = nil
 
 ENT.LifeTime = 4
 
