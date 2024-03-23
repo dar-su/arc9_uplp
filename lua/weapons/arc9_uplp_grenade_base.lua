@@ -30,7 +30,7 @@ SWEP.UseHands = true
 
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/w_eq_fraggrenade.mdl"
-SWEP.ViewModelFOVBase = 75
+SWEP.ViewModelFOVBase = 70
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 
@@ -72,9 +72,9 @@ SWEP.Sway = 0 -- How much the gun sways.
 SWEP.ShootEnt = "arc9_eft_grenade_rgd5"
 SWEP.Ammo = "grenade"
 
-SWEP.CaseEffectQCA = 1
+SWEP.CaseEffectQCA = 2
 SWEP.ShellSmoke  = false
-SWEP.ShellModel = "models/weapons/arc9/darsu_eft/shells/rgd5_skoba.mdl" -- h
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/skoba_m26.mdl" -- h
 SWEP.ShellScale = 1
 SWEP.ShellPitch = 100
 SWEP.ShellSounds = {"", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", ""} -- fuck you gmod
@@ -103,17 +103,25 @@ SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being a
 
 SWEP.HasSights = false
 
-SWEP.ActivePos = Vector(-0.1, -0.1, 0.1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
-SWEP.SprintAng = Angle(0, -40, -5)
-SWEP.SprintPos = Vector(-11.7, -2, -2)
+SWEP.CrouchPos = Vector(0, 3, 1)
+SWEP.CrouchAng = Angle(0, 0, -0)
 
-SWEP.NearWallAng = Angle(0, 55, 0)
-SWEP.NearWallPos = Vector(0, 0, -15)
+SWEP.HolsterPos = Vector(0, -0, -1)
+SWEP.HolsterAng = Angle(0, -5, 0)
 
-SWEP.CrouchPos = Vector(-0.7, -3.8, .35)
-SWEP.CrouchAng = Angle(0, 0, -1)
+SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
+SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
+
+
+SWEP.SprintPos = Vector(0, 0, 0)
+SWEP.SprintAng = Angle(0, 0, 0)
+SWEP.RestPos = Vector(0, 0, 0)
+SWEP.RestAng = Angle(0, 0, 0)
+
+SWEP.VManipOffsetPos = Vector(0, 0, 0)
+SWEP.VManipOffsetAng = Angle(0, -5, 4)
 
 SWEP.CustomizeAng = Angle(87, -25, -94.3)
 SWEP.CustomizePos = Vector(-7.3, 21, 11)
@@ -141,6 +149,7 @@ SWEP.QuickSwapTo = true
 SWEP.NoHolsterOnPrimed = true
 SWEP.CanLean = false
 SWEP.CantSafety = true 
+SWEP.IsQuickGrenade = true
 
 function SWEP:DoDeployAnimation()
     local owner = self:GetOwner()

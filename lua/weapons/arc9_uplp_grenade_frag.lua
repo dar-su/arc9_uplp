@@ -9,13 +9,13 @@ SWEP.PrintName = "frag"
 SWEP.Description = [[fr]]
 
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
-SWEP.WorldModel = "models/weapons/arc9/uplp/aug_mag_556_60.mdl" -- guh
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_m26.mdl" -- guh
 
 SWEP.ShootEnt = "arc9_uplp_40mm_he"
 SWEP.Ammo = "grenade"
 SWEP.FuseTimer = 3.5
 
-SWEP.ShellModel = "models/weapons/arc9/uplp_ubgl_m203_casing.mdl" -- guh
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/skoba_m26.mdl" -- guh
 
 -- SWEP.ReloadHideBoneTables = {
 --     [1] = {
@@ -104,4 +104,19 @@ SWEP.Animations = {
         EjectAt = 0.05,
         MinProgress = 0.32
     },
+
+    
+    ["idle_sprint"] = {
+        Source = "sprint",
+		Mult = 0.90,
+    },
+    ["exit_sprint"] = {
+        Source = "sprint_out",
+		Mult = 3.0,
+    },
+    ["enter_sprint"] = {
+        Source = "sprint_in",
+		Mult = 3.0,
+    },
+	
 }

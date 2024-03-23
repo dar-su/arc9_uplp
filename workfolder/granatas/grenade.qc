@@ -10,6 +10,7 @@ $cdmaterials "models\weapons\arc9\uplp"
 // $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 // $attachment "2" "bolt" 0 0 1.5 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
+$attachment "4" "body" 0.00 0.00 0.00 rotate -45 -55 0
 // $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
  
@@ -63,6 +64,28 @@ $sequence "throw_idle"{
 	loop
 	fadein 0.2
 	fadeout 0.2
+}
+
+$sequence "sprint" {
+	"anims\sprint.smd"
+	fps 28
+	fadein 0.35
+	fadeout 0.35
+	frame 0 31
+	loop
+}
+
+$sequence "sprint_in" {
+	"anims\sprint_in.smd"
+	fps 28
+	fadein 0.3
+	fadeout 0.3
+}
+$sequence "sprint_out" {
+	"anims\sprint_out.smd"
+	fps 28
+	fadein 0.3
+	fadeout 0.3
 }
 
 
