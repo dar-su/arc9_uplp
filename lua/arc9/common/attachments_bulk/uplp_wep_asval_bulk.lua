@@ -31,6 +31,7 @@ ATT.RecoilSideMult = 0.75
 ATT.RecoilUpMult = 0.65
 
 -- Negatives
+ATT.SpreadAdd = 0.003
 ATT.SpreadAddRecoil = 0.006
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.RPMAdd = -150
@@ -66,7 +67,7 @@ ATT.HeatCapacityMult = 1.1
 -- Negatives
 ATT.SpreadAddRecoil = 0.003
 ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMAdd = -150
+ATT.RPMAdd = -100
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
 

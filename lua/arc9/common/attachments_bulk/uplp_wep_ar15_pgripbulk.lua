@@ -63,7 +63,7 @@ ATT.PrintName = "Nowosuko Pistol Grip"
 ATT.CompactName = "Nowosuko"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "gmod.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gtac.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "2"
@@ -203,7 +203,7 @@ ATT.PrintName = "Tactical Pistol Grip"
 ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "gtac.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "gmod.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "1"

@@ -178,7 +178,7 @@ SWEP.SprintToFireTime = 0.33 - 0.1
 
 -- Shooting and Firemodes
 SWEP.RPM = 800 -- How fast gun shoot
-SWEP.HeatCapacity = 100 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
+SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -852,7 +852,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35, -2),
+        Pos = Vector(0, 0.35, -0.3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -860,7 +860,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 2, 1.7),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -868,7 +868,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3, 1.85),
+        Pos = Vector(0, 0.35, 7),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_mp5_bar_kurz", "uplp_mp5_bar_sd", "uplp_grip_used", "uplp_tac_used"},
     },
@@ -877,7 +877,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_5.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3, 1.85),
+        Pos = Vector(0, -2, -2.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -885,7 +885,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3, 3),
+        Pos = Vector(0, 1, -8),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_mp5_stock_fixed"},
     },

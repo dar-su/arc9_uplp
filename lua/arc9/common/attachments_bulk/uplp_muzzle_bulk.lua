@@ -382,8 +382,26 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.03
-ATT.RPMMultHot = 0.85
+-- ATT.SpreadAddHot = 0.03
+-- ATT.RPMMultHot = 0.85
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_evilsup")
 
@@ -432,8 +450,26 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.05
-ATT.RPMMultHot = 0.85
+-- ATT.SpreadAddHot = 0.05
+-- ATT.RPMMultHot = 0.85
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_heavypistolsup")
 
@@ -481,8 +517,26 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.05
-ATT.RPMMultHot = 0.85
+-- ATT.SpreadAddHot = 0.05
+-- ATT.RPMMultHot = 0.85
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_lightsup")
 
@@ -530,8 +584,26 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.04
-ATT.RPMMultHot = 0.85
+-- ATT.SpreadAddHot = 0.04
+-- ATT.RPMMultHot = 0.85
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_midsup")
 
@@ -580,8 +652,25 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.025
-ATT.RPMMultHot = 0.85
+-- ATT.SpreadAddHot = 0.025
+-- ATT.RPMMultHot = 0.85
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_modernsup")
 
@@ -629,8 +718,25 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.05
-ATT.RPMMultHot = 0.85
+-- ATT.SpreadAddHot = 0.05
+-- ATT.RPMMultHot = 0.85
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_shortsup")
 

@@ -7,6 +7,10 @@
 
 [h1]Changed content[/h1]
 [list]
+	[*] AK M22: Fixed an error with the firing mode select animations.
+	[*] SPAW-12: The hook on the "Folding Stock with Hook" attachment is now tilted to the right rather than straight up.
+	[*] MP7: Added new firing and reloading sounds.
+	[*] All Suppressors now have a new overheat mechanic - fire too much and the gun will jam for a short moment.
 	[*] Added a custom and unique ring when using PolyArms Charms.
 	[*] Various minor fixes and adjustments.
 [/list]

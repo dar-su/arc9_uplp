@@ -194,7 +194,7 @@ SWEP.RecoilModifierCap = 1
 
 -- HOT HOT HOT
 SWEP.Overheat = true
-SWEP.HeatCapacity = 80
+SWEP.HeatCapacity = 80 * 1.5
 SWEP.HeatDissipation = 3.5
 SWEP.HeatDelayTime = 1
 SWEP.HeatPerShot = 1
@@ -243,7 +243,7 @@ SWEP.Firemodes = {
 
 SWEP.Silencer = true
 SWEP.ShootPitch = 90
-SWEP.ShootVolume = 23
+SWEP.ShootVolume = 45
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -760,12 +760,16 @@ SWEP.Animations = {
     ["firemode_1"] = {
         -- Source = "firemode_0",
         Source = "modeswitch",
-        EventTable = thetoggle
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.3 },
+        }
     },
     ["firemode_2"] = {
         -- Source = "firemode_1",
         Source = "modeswitch",
-        EventTable = thetoggle
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.3 },
+        }
     },
 
     ["toggle"] = {
@@ -953,7 +957,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 2),
+        Pos = Vector(0, 1.8, 3.5),
         ExcludeElements = {"vssm_dc"},
     },
 
@@ -971,7 +975,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2m.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 2),
+        Pos = Vector(0, 1.8, 3.5),
         RequireElements = {"vssm_dc"},
     },
 

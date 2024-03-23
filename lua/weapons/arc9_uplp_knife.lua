@@ -155,8 +155,8 @@ SWEP.HoldTypeNPC = nil
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(-7, 15, -13.5)
 SWEP.CustomizeAng = Angle(0, 60, 0)
--- SWEP.CustomizeRotateAnchor = Vector(15, -7, -3)
-SWEP.CustomizeRotateAnchor = Vector(20, -3.2, -59)
+SWEP.CustomizeRotateAnchor = Vector(19, -7, -3)
+SWEP.CustomizeNoRotate = true
 
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
@@ -215,7 +215,7 @@ SWEP.Animations = {
 
     ["idle_sprint"] = {
         Source = "sprint",
-		Mult = 1.0,
+		Mult = 0.90,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
@@ -326,7 +326,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/knife_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, -0.5, 0.5),
+        Pos = Vector(0.5, -5, -0.5),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -334,7 +334,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/knife_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, -3, 0.5),
+        Pos = Vector(0.5, -9.4, -0.5),
         Ang = Angle(90, 0, -90),
     },
     {

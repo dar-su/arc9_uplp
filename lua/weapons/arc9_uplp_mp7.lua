@@ -178,7 +178,7 @@ SWEP.SprintToFireTime = 0.3
 
 -- Shooting and Firemodes
 SWEP.RPM = 950 -- How fast gun shoot
-SWEP.HeatCapacity = 100 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
+SWEP.HeatCapacity = 90 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -626,20 +626,28 @@ SWEP.Animations = {
     },
     ["firemode_1"] = {
         Source = "modeswitch",
-        EventTable = thetoggle,
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.35 },
+        }
     },
     ["firemode_1_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = thetoggle,
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.35 },
+        }
     },
 
     ["firemode_2"] = {
         Source = "modeswitch",
-        EventTable = thetoggle,
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.35 },
+        }
     },
     ["firemode_2_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = thetoggle,
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.35 },
+        }
     },
 }
 

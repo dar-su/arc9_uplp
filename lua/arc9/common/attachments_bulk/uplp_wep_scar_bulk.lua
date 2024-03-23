@@ -739,6 +739,7 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "-5%",
 }
 
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
 
 ---------- uplp_scar_mag_pmag30

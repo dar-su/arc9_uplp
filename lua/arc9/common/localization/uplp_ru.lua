@@ -2173,7 +2173,7 @@ L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maxi
 //////////////////// AS VAL
 -- "Stealth Carbine 9x39", "Стелс-карабин" (СК 9×39)
 L["uplp_weapon_asval"] = "СК 9x39"
--- L["uplp_weapon_asval_desc"] = "The SK 9x39 (\"Stealth Carbine 9×39\") is a customizable, integrally suppressed Russian firearm that can be converted into various 9×39mm-fed firearms, including the SK Shadow semi-automatic sniper and MK Lightning special concealed automatic rifle."
+L["uplp_weapon_asval_desc"] = "СК 9х39 («Стелс карабин 9×39») — это кастомизируемое российское огнестрельное оружие со встроенной глушителем, которое можно переоборудовать в другие вариции, включая полуавтоматическую снайперскую винтовку СК Тень и специальную автоматическую винтовку скрытого действия МК Молния."
 
  -- "Stealth Carbine Shadow", "Стелс-карабин 'Тень'" (СК "Тень")
 L["uplp_weapon_asval_vss"] = "СК \"Тень\""
