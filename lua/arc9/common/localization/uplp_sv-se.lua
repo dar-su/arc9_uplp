@@ -2404,22 +2404,24 @@ L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Konverterar PV-9:an till PV-10:an vilket förbättrar stoppkraften med kostnad på rekylkontroll."
 
 //////////////////// Frag
+local quickthrow = "\nKan \"Snabbkastas\" med en knapp kopplad till \"<color=175,175,255>+grenade1</color>\"-kommandot."
+
 L["uplp_weapon_grenade_frag"] = "Splittergranat"
 L["uplp_weapon_grenade_frag_short"] = "Splittergranat"
-L["uplp_weapon_grenade_frag_desc"] = "Explosiv splittergranat."
+L["uplp_weapon_grenade_frag_desc"] = "Explosiv splittergranat." .. quickthrow
 
 L["uplp_weapon_grenade_flash"] = "Distraktionsgranat"
 L["uplp_weapon_grenade_flash_short"] = "Distraktionsgranat"
-L["uplp_weapon_grenade_flash_desc"] = "Chockgranat som bländer fiender som tittar på den när den detoneras. Orsakar temporärlig förlust av hörsel om man är i dess sprängradie."
+L["uplp_weapon_grenade_flash_desc"] = "Chockgranat som bländer fiender som tittar på den när den detoneras. Orsakar temporärlig förlust av hörsel om man är i dess sprängradie." .. quickthrow
 
 L["uplp_weapon_grenade_smoke"] = "Rökgranat"
 L["uplp_weapon_grenade_smoke_short"] = "Rökgranat"
-L["uplp_weapon_grenade_smoke_desc"] = "Skapar en större mängd rök vid detonering vilket ger taktiskt skydd från seende ögon. <color=255,100,100>Värmesikten kan se genom röken</color>."
+L["uplp_weapon_grenade_smoke_desc"] = "Skapar en större mängd rök vid detonering vilket ger taktiskt skydd från seende ögon. <color=255,100,100>Värmesikten kan se genom röken</color>." .. quickthrow
 
 L["uplp_weapon_grenade_impact"] = "Kontaktgranat"
 L["uplp_weapon_grenade_impact_short"] = "Kontaktgranat"
-L["uplp_weapon_grenade_impact_desc"] = "Splittergranat som detonerar vid kontakt."
+L["uplp_weapon_grenade_impact_desc"] = "Splittergranat som detonerar vid kontakt." .. quickthrow
 
 L["uplp_weapon_grenade_inc"] = "Brandgranat"
 L["uplp_weapon_grenade_inc_short"] = "Brandgranat"
-L["uplp_weapon_grenade_inc_desc"] = "REPLACEME"
+L["uplp_weapon_grenade_inc_desc"] = "Vid kontakt så börjar granaten omedelbart brinna vid en väldigt hög temperatur vilket gör att alla som går nära den tänds i fyr." .. quickthrow

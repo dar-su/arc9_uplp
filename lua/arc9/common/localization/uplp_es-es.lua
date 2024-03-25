@@ -2402,22 +2402,24 @@ L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Convierte el PV-9 en el PV-10, mejorando la potencia de fuego a costa del control del retroceso."
 
 //////////////////// Frag
--- L["uplp_weapon_grenade_frag"] = "Frag Grenade"
--- L["uplp_weapon_grenade_frag_short"] = "Frag"
--- L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade."
+local quickthrow = "\nCan be thrown using \"Quickthrow\" with a \"<color=175,175,255>+grenade1</color>\" bind."
+
+-- L["uplp_weapon_grenade_frag"] = "FRAG Grenade"
+-- L["uplp_weapon_grenade_frag_short"] = "FRAG"
+-- L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade." .. quickthrow
 
 -- L["uplp_weapon_grenade_flash"] = "Flash Grenade"
 -- L["uplp_weapon_grenade_flash_short"] = "Flash"
--- L["uplp_weapon_grenade_flash_desc"] = "Concussion grenade that blinds enemies caught looking at it upon detonation. Causes temporary hearing loss if caught in its explosive radius."
+-- L["uplp_weapon_grenade_flash_desc"] = "Concussion grenade that blinds enemies caught looking at it upon detonation. Causes temporary hearing loss if caught in its explosive radius." .. quickthrow
 
 -- L["uplp_weapon_grenade_smoke"] = "Smoke Grenade"
 -- L["uplp_weapon_grenade_smoke_short"] = "Smoke"
--- L["uplp_weapon_grenade_smoke_desc"] = "Creates a large amount of smoke upon detonation, giving tactical cover from peeking eyes. <color=255,100,100>Thermal optics can see through the smoke</color>."
+-- L["uplp_weapon_grenade_smoke_desc"] = "Creates a large amount of smoke upon detonation, giving tactical cover from peeking eyes. <color=255,100,100>Thermal optics can see through the smoke</color>." .. quickthrow
 
 -- L["uplp_weapon_grenade_impact"] = "Impact Grenade"
 -- L["uplp_weapon_grenade_impact_short"] = "Impact"
--- L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on impact."
+-- L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on impact." .. quickthrow
 
 -- L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
 -- L["uplp_weapon_grenade_inc_short"] = "Incendiary"
--- L["uplp_weapon_grenade_inc_desc"] = "REPLACEME"
+-- L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
