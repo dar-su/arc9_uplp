@@ -2413,9 +2413,9 @@ L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
 
 //////////////////// Frag
-L["uplp_weapon_grenade_frag"] = "Frag Grenade"
-L["uplp_weapon_grenade_frag_short"] = "Frag"
-L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade."
+L["uplp_weapon_grenade_frag"] = "FRAG Grenade"
+L["uplp_weapon_grenade_frag_short"] = "FRAG"
+L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade. explain here what F.R.A.G. mean. or dont  . FRAG with caps looks more interesting. also put in description (maybe with some colors) that this swep supports quicknade on +grenade1 bind"
 
 L["uplp_weapon_grenade_flash"] = "Flash Grenade"
 L["uplp_weapon_grenade_flash_short"] = "Flash"

@@ -8,6 +8,7 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_grenade_frag") or "Frag Grenade"
 SWEP.ShortPrintName = ARC9:GetPhrase("uplp_weapon_grenade_frag_short") or "Frag"
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_throwable") or "Throwable"
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_grenade_frag_desc") or "High-explosive fragmentation grenade."
+SWEP.CustomSelectIcon =  Material("entities/arc9_uplp_grenade_frag_wide.png", "mips smooth")
 
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_m26.mdl" -- guh
@@ -107,7 +108,8 @@ SWEP.Animations = {
             {hide = 2, t = 0},
             {hide = 1, t = 0.25},
         },
-        MinProgress = 0.22
+        MinProgress = 0.25,
+        FireASAP = 0.75,
     },
     ["toss"] = {
         Source = "throw_under",
