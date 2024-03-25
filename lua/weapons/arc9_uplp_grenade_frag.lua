@@ -4,10 +4,10 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnm
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 
-SWEP.PrintName = "FRAG Grenade"
-SWEP.ShortPrintName = "FRAG"
--- SWEP.Class = ARC9:GetPhrase("eft_class_weapon_grenade") or "Hand grenade"
-SWEP.Description = [[fr]]
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_grenade_frag") or "Frag Grenade"
+SWEP.ShortPrintName = ARC9:GetPhrase("uplp_weapon_grenade_frag_short") or "Frag"
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_throwable") or "Throwable"
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_grenade_frag_desc") or "High-explosive fragmentation grenade."
 
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_m26.mdl" -- guh

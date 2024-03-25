@@ -94,6 +94,7 @@ L["uplp_mechanism_doublesingleaction"] = "Двойное действие / Од
 -- L["uplp_mechanism_shortrecoil"] = "Short-recoil"
 -- L["uplp_mechanism_longrecoil"] = "Long-recoil"
 -- L["uplp_mechanism_browning"] = "Browning action"
+-- L["uplp_mechanism_shortstroke"] = "Short-stroke piston"
 
 /////////// Authors
 L["uplp_assets"] = "Оригинальные ассеты1"
@@ -2405,3 +2406,24 @@ L["uplp_weapon_mp5_desc"] = "«Persönliche Verteidigungswaffe 9x19» (Оруж�
 -- L["uplp_mp5_mag_10mm.printname"] = "30-Round 10mm"
 -- L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 -- L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
+
+//////////////////// Frag
+-- L["uplp_weapon_grenade_frag"] = "Frag Grenade"
+-- L["uplp_weapon_grenade_frag_short"] = "Frag"
+-- L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade."
+
+-- L["uplp_weapon_grenade_flash"] = "Flash Grenade"
+-- L["uplp_weapon_grenade_flash_short"] = "Flash"
+-- L["uplp_weapon_grenade_flash_desc"] = "Concussion grenade that blinds enemies caught looking at it upon detonation. Causes temporary hearing loss if caught in its explosive radius."
+
+-- L["uplp_weapon_grenade_smoke"] = "Smoke Grenade"
+-- L["uplp_weapon_grenade_smoke_short"] = "Smoke"
+-- L["uplp_weapon_grenade_smoke_desc"] = "Creates a large amount of smoke upon detonation, giving tactical cover from peeking eyes. <color=255,100,100>Thermal optics can see through the smoke</color>."
+
+-- L["uplp_weapon_grenade_impact"] = "Impact Grenade"
+-- L["uplp_weapon_grenade_impact_short"] = "Impact"
+-- L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on impact."
+
+-- L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
+-- L["uplp_weapon_grenade_inc_short"] = "Incendiary"
+-- L["uplp_weapon_grenade_inc_desc"] = "REPLACEME"

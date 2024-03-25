@@ -87,6 +87,7 @@ L["uplp_mechanism_pumpaction"] = "Pumprepeter"
 L["uplp_mechanism_rollerdelay"] = "Halvreglat slutstycke"
 L["uplp_mechanism_closedbolt"] = "Stängt slutstycke"
 
+
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
 
@@ -94,6 +95,7 @@ L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
 L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
 L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
 L["uplp_mechanism_browning"] = "Browning-slutstycke"
+L["uplp_mechanism_shortstroke"] = "Kort slutstycke"
 
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"
@@ -110,6 +112,7 @@ L["uplp_category_weapon_pistol"] = "Pistoler"
 L["uplp_category_weapon_shotgun"] = "Hagelbössor"
 L["uplp_category_weapon_smg"] = "Kulsprutepistoler"
 L["uplp_category_weapon_sniper"] = "Prickskyttegevär"
+L["uplp_category_weapon_utils"] = "Verktyg"
 
 L["uplp_category_weapon_heavy"] = "Tunga Vapen"
 
@@ -2399,3 +2402,24 @@ L["uplp_mp5_mag_50.description"] = "Stort 50-patronerstrummagasin som håller 9x
 L["uplp_mp5_mag_10mm.printname"] = "30-Patroners 10mm"
 L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Konverterar PV-9:an till PV-10:an vilket förbättrar stoppkraften med kostnad på rekylkontroll."
+
+//////////////////// Frag
+L["uplp_weapon_grenade_frag"] = "Splittergranat"
+L["uplp_weapon_grenade_frag_short"] = "Splittergranat"
+L["uplp_weapon_grenade_frag_desc"] = "Explosiv splittergranat."
+
+L["uplp_weapon_grenade_flash"] = "Distraktionsgranat"
+L["uplp_weapon_grenade_flash_short"] = "Distraktionsgranat"
+L["uplp_weapon_grenade_flash_desc"] = "Chockgranat som bländer fiender som tittar på den när den detoneras. Orsakar temporärlig förlust av hörsel om man är i dess sprängradie."
+
+L["uplp_weapon_grenade_smoke"] = "Rökgranat"
+L["uplp_weapon_grenade_smoke_short"] = "Rökgranat"
+L["uplp_weapon_grenade_smoke_desc"] = "Skapar en större mängd rök vid detonering vilket ger taktiskt skydd från seende ögon. <color=255,100,100>Värmesikten kan se genom röken</color>."
+
+L["uplp_weapon_grenade_impact"] = "Kontaktgranat"
+L["uplp_weapon_grenade_impact_short"] = "Kontaktgranat"
+L["uplp_weapon_grenade_impact_desc"] = "Splittergranat som detonerar vid kontakt."
+
+L["uplp_weapon_grenade_inc"] = "Brandgranat"
+L["uplp_weapon_grenade_inc_short"] = "Brandgranat"
+L["uplp_weapon_grenade_inc_desc"] = "REPLACEME"

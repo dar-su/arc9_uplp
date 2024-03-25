@@ -94,6 +94,7 @@ L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
 L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
 L["uplp_mechanism_longrecoil"] = "Retroceso largo"
 L["uplp_mechanism_browning"] = "Acción de Browning"
+L["uplp_mechanism_shortstroke"] = "Pistón de carrera corta."
 
 /////////// Authors
 L["uplp_assets"] = "Archivos originales1"
@@ -110,7 +111,7 @@ L["uplp_category_weapon_pistol"] = "Pistolas"
 L["uplp_category_weapon_shotgun"] = "Escopetas"
 L["uplp_category_weapon_smg"] = "Subfusiles"
 L["uplp_category_weapon_sniper"] = "Rifles de Francotirador"
-L["uplp_category_weapon_other"] = "Оtro"
+-- L["uplp_category_weapon_utils"] = "Utilities"
 
 L["uplp_category_weapon_heavy"] = "Armas Pesadas"
 
@@ -2399,3 +2400,24 @@ L["uplp_mp5_mag_50.description"] = "Gran cargador de tambor de 50 balas con capa
 L["uplp_mp5_mag_10mm.printname"] = "30 Rondas 10mm"
 L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Convierte el PV-9 en el PV-10, mejorando la potencia de fuego a costa del control del retroceso."
+
+//////////////////// Frag
+-- L["uplp_weapon_grenade_frag"] = "Frag Grenade"
+-- L["uplp_weapon_grenade_frag_short"] = "Frag"
+-- L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade."
+
+-- L["uplp_weapon_grenade_flash"] = "Flash Grenade"
+-- L["uplp_weapon_grenade_flash_short"] = "Flash"
+-- L["uplp_weapon_grenade_flash_desc"] = "Concussion grenade that blinds enemies caught looking at it upon detonation. Causes temporary hearing loss if caught in its explosive radius."
+
+-- L["uplp_weapon_grenade_smoke"] = "Smoke Grenade"
+-- L["uplp_weapon_grenade_smoke_short"] = "Smoke"
+-- L["uplp_weapon_grenade_smoke_desc"] = "Creates a large amount of smoke upon detonation, giving tactical cover from peeking eyes. <color=255,100,100>Thermal optics can see through the smoke</color>."
+
+-- L["uplp_weapon_grenade_impact"] = "Impact Grenade"
+-- L["uplp_weapon_grenade_impact_short"] = "Impact"
+-- L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on impact."
+
+-- L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
+-- L["uplp_weapon_grenade_inc_short"] = "Incendiary"
+-- L["uplp_weapon_grenade_inc_desc"] = "REPLACEME"
