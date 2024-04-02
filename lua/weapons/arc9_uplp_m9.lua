@@ -57,13 +57,13 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_beretta.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.TPIKParentToSpine4 = true
+-- SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-8, 3, -4.5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(7, -7, -4),
-    TPIKAng = Angle(-10, 65, 90),
+    TPIKPos = Vector(-16, 3, -2),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
