@@ -371,3 +371,7 @@ SWEP.Attachments = {
 
 --     return name
 -- end
+
+function SWEP:SecondaryAttack()
+    self:MeleeAttack()
+end
