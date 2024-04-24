@@ -1192,7 +1192,7 @@ SWEP.Animations = {
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] or eles["uplp_ar15_rs_carry"] then
+    if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] or eles["uplp_ar15_rs_carry"] or eles["uplp_ar15_reciever_a2"] then
         if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
             mdl:SetBodygroup(1,1)
         end
@@ -1262,6 +1262,16 @@ SWEP.AttachmentElements = {
     [8] = { Pos = Vector(0.045, 0.975, 24.65) },
     }},
 
+    ["uplp_ar15_barrel_145"] = { Bodygroups = { { 3, 5 } }, AttPosMods = {
+    -- [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    [8] = { Pos = Vector(0.045, 0.975, 18.35) },
+    }},
+
+    ["uplp_ar15_barrel_15xm"] = { Bodygroups = { { 3, 6 } }, AttPosMods = {
+    -- [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    [8] = { Pos = Vector(0.045, 0.975, 19.45) },
+    }},
+
     -- RECEIVERS
     ["uplp_ar15_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
     ["uplp_ar15_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
@@ -1270,6 +1280,8 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_reciever_stm9"] = { Bodygroups = { { 0, 4 }, { 4, 3 } } },
 
     ["uplp_ar15_reciever_modern_black"] = { Bodygroups = { { 0, 5 } } },
+	
+    ["uplp_ar15_reciever_a2"] = { Bodygroups = { { 0, 8 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
 
     ["uplp_ar15_rs_carry"] = { AttPosMods = {[2] = { Pos = Vector(0.045, -1.85, 2.6) }}},
 
@@ -1335,6 +1347,15 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_a1"] = { Bodygroups =     { { 2, 12 }, { 9, 1 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 18.825) },
     }},
+    ["uplp_ar15_hg_riscover"] = { Bodygroups =      { { 2, 17 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.45) },
+    [10] = { Pos = Vector(0.045, -0.2, 16.5) },
+    [11] = { Pos = Vector(-1, 0.95, 16.5) },
+    [12] = { Pos = Vector(0.045, 1.72, 11.5), },
+    }},
+    ["uplp_ar15_hg_xm"] = { Bodygroups =      { { 2, 16 }, { 9, 2 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 15.6) },
+    }},
 
     -- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups = { { 5, 1 } } },
@@ -1364,7 +1385,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
         Category = {"uplp_ar15_rs", "uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
-        ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp"},
+        ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp", "uplp_ar15_reciever_a2"},
         Bone = "body",
         CorrectiveAng = Angle(0.4, -0.4, 0),
         Installed = "uplp_ar15_rs_m4",
@@ -1401,7 +1422,7 @@ SWEP.Attachments = {
         RejectAttachments = {
         ["uplp_ar15_pgrip_std"] = true,
         },
-        Pos = Vector(0.045, 3.2, -0.56),
+        Pos = Vector(0.045, 3.2, -0.515),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1461,7 +1482,7 @@ SWEP.Attachments = {
         Pos = Vector(0.045, -0.2, 12.8),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_ar15_rs"},
-        ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs"},
+        ExcludeElements = {"uplp_ar15_gasblock_sight", "uplp_ar15_no_fs", "uplp_ar15_hg_riscover"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -1600,6 +1621,7 @@ SWEP.Attachments = {
         Pos = Vector(0.045, 3.55, 8.2),
         Ang = Angle(90, 90, 0),
         -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
+        ExcludeElements = {"uplp_ar15_hg_riscover"},
         MergeSlots = {12}, 
         Hidden = true,
     },

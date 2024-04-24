@@ -336,6 +336,39 @@ ATT.SpreadAddHipFire = 0.01
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_mpul")
 
+---------- uplp_ar15_stock_m4ss
+ATT = {}
+
+ATT.PrintName = "Commando Stock"
+ATT.CompactName = "Commando"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "sm4ss.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
+ATT.ModelBodygroups = "c"
+-- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+
+ATT.SortOrder = 2 - 0.1
+ATT.Category = "uplp_ar15_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- Positives
+ATT.RecoilAutoControlMult = 1.4
+ATT.VisualRecoilMultHipFire = 0.35
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.8
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 - 0.02
+ATT.SpeedMultSights = 0.85
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4ss")
+
 ------------------------------------------------------
 -------------------- HEAVY STOCKS --------------------
 ------------------------------------------------------

@@ -488,6 +488,11 @@ L["uplp_muzzle_zenit.printname"] = "Zenith Muzzle Brake"
 L["uplp_muzzle_zenit.compactname"] = "Zenith MB"
 L["uplp_muzzle_zenit.description"] = "Modern muzzle brake made for most pistol and rifle calibres that reduces overall recoil."
 
+////// Set 3
+L["uplp_muzzle_xm.printname"] = "Commando Flash Hider"
+L["uplp_muzzle_xm.compactname"] = "Comm. FH"
+L["uplp_muzzle_xm.description"] = "Old-school flash hider made for very short AR-15 rifles."
+
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
 L["uplp_sg_mz_choke.compactname"] = "Full Choke"
@@ -1092,6 +1097,14 @@ L["uplp_ar15_barrel_14.printname"] = "356mm Barrel"
 L["uplp_ar15_barrel_14.compactname"] = "356mm"
 L["uplp_ar15_barrel_14.description"] = "356mm (14\") barrel used on AR-15 rifles."
 
+L["uplp_ar15_barrel_145.printname"] = "368mm Barrel"
+L["uplp_ar15_barrel_145.compactname"] = "368mm"
+L["uplp_ar15_barrel_145.description"] = "368mm (14.5\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_15xm.printname"] = "381mm Barrel"
+L["uplp_ar15_barrel_15xm.compactname"] = "381mm"
+L["uplp_ar15_barrel_15xm.description"] = "381mm (15\") barrel used on AR-15 rifles."
+
 L["uplp_ar15_barrel_16.printname"] = "406mm Barrel"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
 L["uplp_ar15_barrel_16.description"] = "406mm (16\") barrel used on AR-15 rifles."
@@ -1172,11 +1185,10 @@ L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
 L["uplp_ar15_gasblock_rail.description"] = "Gas block with built-in top rail for mounting front sights made by Centurion Industries."
 
 ////// Handguards
-local requires = "\n"
-local requires14 = requires .. "Requires 356mm (14\") or longer barrel."
-local requires16 = requires .. "Requires 406mm (16\") or longer barrel."
-local requires20 = requires .. "Requires 508mm (20\") or longer barrel."
-local requires22 = requires .. "Requires 559mm (22\") or longer barrel."
+local requires14 = "\n" .. "Requires 356mm (14\") or longer barrel."
+local requires16 = "\n" .. "Requires 406mm (16\") or longer barrel."
+local requires20 = "\n" .. "Requires 508mm (20\") or longer barrel."
+local requires22 = "\n" .. "Requires 559mm (22\") or longer barrel."
 local onlycompact = "\n" .. "Can only use Compact Gas Block."
 
 L["uplp_ar15_hg_grenadier.printname"] = "Grenadier Handguard"
@@ -1242,6 +1254,14 @@ L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical han
 L["uplp_ar15_hg_a1.printname"] = "A1 Handguard"
 L["uplp_ar15_hg_a1.compactname"] = "A1"
 L["uplp_ar15_hg_a1.description"] = "Classic AR-15 handguard used on the early M16 models." .. requires16
+
+L["uplp_ar15_hg_riscover.printname"] = "RIS Handguard (Covers)"
+L["uplp_ar15_hg_riscover.compactname"] = "RIS (C)"
+L["uplp_ar15_hg_riscover.description"] = "Standard military-grade handguard with built-in RIS rail system.\nComes with built-in rail covers which restrict larger foregrips and front sights." .. requires16
+
+L["uplp_ar15_hg_xm.printname"] = "Commando Handguard"
+L["uplp_ar15_hg_xm.compactname"] = "Commando"
+L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
 
 ////// Magazines
 /// .45 ACP
@@ -1344,9 +1364,13 @@ L["uplp_ar15_pgrip_tac.printname"] = "Hoki Armory Pistol Grip"
 L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles made by Hoki Armory."
 
+L["uplp_ar15_pgrip_a1.printname"] = "Classic A1 Pistol Grip"
+L["uplp_ar15_pgrip_a1.compactname"] = "Classic"
+L["uplp_ar15_pgrip_a1.description"] = "Classic pistol grip used on early AR-15 rifles."
+
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "A2 Receiver with Carry Handle"
-L["uplp_ar15_reciever_m16.compactname"] = "A2 CH"
+L["uplp_ar15_reciever_m16.printname"] = "A1 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16.compactname"] = "A1 CH"
 L["uplp_ar15_reciever_m16.description"] = "Military-grade receiver with built-in carrying handle.\nChanges firing mode to <color=100,255,100>3-round burst</color>/<color=100,255,100>semi-automatic</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4 Receiver"
@@ -1369,9 +1393,13 @@ L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Recei
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9×19mm magazines." .. pitchblack
 
-L["uplp_ar15_reciever_m16a3.printname"] = "A3 Receiver with Carry Handle"
-L["uplp_ar15_reciever_m16a3.compactname"] = "A3 CH"
+L["uplp_ar15_reciever_m16a3.printname"] = "A1 Receiver with Carry Handle (No Burst)"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A1 (NB)"
 L["uplp_ar15_reciever_m16a3.description"] = "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
+
+L["uplp_ar15_reciever_a2.printname"] = "A2 Receiver with Carry Handle"
+L["uplp_ar15_reciever_a2.compactname"] = "A2 CH"
+L["uplp_ar15_reciever_a2.description"] = ARC9:GetPhrase("uplp_ar15_reciever_m16a3.description") or "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
@@ -1456,6 +1484,10 @@ L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles made by 
 L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Heavy Stock"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
 L["uplp_ar15_stock_veryheavy.description"] = "Heavy stock for AR-15 marksman rifles made by ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
+
+L["uplp_ar15_stock_m4ss.printname"] = "Commando Stock"
+L["uplp_ar15_stock_m4ss.compactname"] = "Commando"
+L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1565,8 +1597,7 @@ L["uplp_mutant_barrel_short.compactname"] = "409mm"
 L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the Mutant."
 
 ////// Handguards
-local requires = "\n\n"
-local requires19 = requires .. "Requires 500mm (19.7\") or longer barrel."
+local requires19 = "\n\n" .. "Requires 500mm (19.7\") or longer barrel."
 
 L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL Handguard"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
@@ -2327,20 +2358,20 @@ L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
 ////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
-L["uplp_knife_skin_black.printname"] = ARC9:GetPhrase("uplp_deagle_skin_black.printname")
-L["uplp_knife_skin_black.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_black.compactname")
+L["uplp_knife_skin_black.printname"] = ARC9:GetPhrase("uplp_deagle_skin_black.printname") or "Matt Black"
+L["uplp_knife_skin_black.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_black.compactname") or "Black"
 L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Bowie."
 
 L["uplp_knife_skin_chrome.printname"] = "Chrome"
 L["uplp_knife_skin_chrome.compactname"] = "Chrome"
 L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
 
-L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname")
-L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname")
+L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
 L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle.\n\n<color=255,255,100>Skin only for darsubscribers - become one on boosty.to/darsu</color><color=255,55,55> (do not equip if you aren't darsubscriber)</color>"
 
-L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname")
-L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname")
+L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo Blue"
+L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname") or "Cylo"
 L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
 L["uplp_knife_skin_red.printname"] = "Red Soda"

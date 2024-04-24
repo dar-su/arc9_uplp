@@ -769,3 +769,33 @@ ATT.RecoilRandomUpMult = 1.08
 ATT.RecoilRandomSideMult = 1.08
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_zenit")
+
+
+---------- uplp_muzzle_xm
+
+
+ATT = {}
+
+ATT.PrintName = "Commando Flash Hider"
+ATT.CompactName = "Comm. FH"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 45
+
+ATT.Icon = Material(iconfolder .. "mzxm.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
+ATT.ModelBodygroups = "5"
+ATT.Scale = 1.1
+
+ATT.Category = "uplp_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
+ATT.MuzzleParticleOverride = "muzzleflash_OTS"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "uplp_muzzle_xm")
+

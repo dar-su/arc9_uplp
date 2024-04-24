@@ -192,7 +192,7 @@ L["uplp_firemode_pump"] = "BOMBEO"
 ///////////////////////////// Universal Attachments
 //////////////////// Universal translations for easy use
 local sportyred = "\n\n" .. "Versión especial Rojo Deportivo."
-local pitchblack = "\n\n" .. "Versión especial Negro intenso.."
+local pitchblack = "\n\n" .. "Versión especial Negro intenso."
 local arcticwhite = "\n\n" .. "Versión especial Blanco Ártico."
 local aquablue = "\n\n" .. "Versión especial Azul Aqua."
 local stealthgray = "\n\n" .. "Versión especial Gris Sigiloso."
@@ -482,6 +482,11 @@ L["uplp_muzzle_shortsup.description"] = "Supresor pequeño y compacto que amorti
 L["uplp_muzzle_zenit.printname"] = "Freno de Boca Zenith"
 L["uplp_muzzle_zenit.compactname"] = "FB Zenith"
 L["uplp_muzzle_zenit.description"] = "Moderno freno de boca fabricado para la mayoría de calibres de pistola y rifle que reduce el retroceso general."
+
+////// Set 3
+-- L["uplp_muzzle_xm.printname"] = "Commando Flash Hider"
+-- L["uplp_muzzle_xm.compactname"] = "Comm. FH"
+-- L["uplp_muzzle_xm.description"] = "Old-school flash hider made for very short AR-15 rifles."
 
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Escopeta Full Choke"
@@ -1081,15 +1086,23 @@ L["uplp_weapon_ar15_manufacturer"] = "U.S. Ordnance"
 ////// Barrels
 L["uplp_ar15_barrel_10.printname"] = "Cañón de 254mm"
 L["uplp_ar15_barrel_10.compactname"] = "254mm"
-L["uplp_ar15_barrel_10.description"] = "Cañón de 254mm (25cm) usado en rifles AR-15."
+L["uplp_ar15_barrel_10.description"] = "Cañón de 254mm (25.4cm) usado en rifles AR-15."
 
 L["uplp_ar15_barrel_14.printname"] = "Cañón de 356mm"
 L["uplp_ar15_barrel_14.compactname"] = "356mm"
-L["uplp_ar15_barrel_14.description"] = "Cañón de 356mm (35cm) usado en rifles AR-15.."
+L["uplp_ar15_barrel_14.description"] = "Cañón de 356mm (35.6cm) usado en rifles AR-15."
+
+L["uplp_ar15_barrel_145.printname"] = "Cañón de 368mm"
+L["uplp_ar15_barrel_145.compactname"] = "368mm"
+L["uplp_ar15_barrel_145.description"] = "Cañón de 368mm (36.8cm) usado en rifles AR-15."
+
+L["uplp_ar15_barrel_15xm.printname"] = "Cañón de 381mm"
+L["uplp_ar15_barrel_15xm.compactname"] = "381mm"
+L["uplp_ar15_barrel_15xm.description"] = "Cañón de 381mm (38cm) usado en rifles AR-15."
 
 L["uplp_ar15_barrel_16.printname"] = "Cañón de 406mm"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
-L["uplp_ar15_barrel_16.description"] = "Cañón de 406mm (40cm) usado en rifles AR-15."
+L["uplp_ar15_barrel_16.description"] = "Cañón de 406mm (40.6cm) usado en rifles AR-15."
 
 L["uplp_ar15_barrel_16_alt.printname"] = "Cañón alternativo de 406mm"
 L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
@@ -1167,11 +1180,10 @@ L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
 L["uplp_ar15_gasblock_rail.description"] = "Gas block con riel superior incorporado para montar miras frontales fabricado por Centurion Industries."
 
 ////// Handguards
-local requires = "\n"
-local requires14 = requires .. "Requiere 356mm (35cm) o un cañón más largo."
-local requires16 = requires .. "Requiere 406mm (40cm) o un cañón más largo."
-local requires20 = requires .. "Requiere 508mm (50cm) o un cañón más largo."
-local requires22 = requires .. "Requiere 559mm (55cm) o un cañón más largo."
+local requires14 = "\n" .. "Requiere 356mm (35cm) o un cañón más largo."
+local requires16 = "\n" .. "Requiere 406mm (40cm) o un cañón más largo."
+local requires20 = "\n" .. "Requiere 508mm (50cm) o un cañón más largo."
+local requires22 = "\n" .. "Requiere 559mm (55cm) o un cañón más largo."
 local onlycompact = "\n" .. "Sólo se puede utilizar el gas block compacto."
 
 L["uplp_ar15_hg_grenadier.printname"] = "Guardamanos Grenadier"
@@ -1237,6 +1249,14 @@ L["uplp_ar15_hg_tacshort_red.description"] = "Guardamanos táctico ligero acorta
 L["uplp_ar15_hg_a1.printname"] = "Guardamanos A1"
 L["uplp_ar15_hg_a1.compactname"] = "A1"
 L["uplp_ar15_hg_a1.description"] = "Guardamanos clásico AR-15 utilizado en los primeros modelos M16." .. requires16
+
+-- L["uplp_ar15_hg_riscover.printname"] = "RIS Handguard (Covers)"
+-- L["uplp_ar15_hg_riscover.compactname"] = "RIS (C)"
+-- L["uplp_ar15_hg_riscover.description"] = "Standard military-grade handguard with built-in RIS rail system.\nComes with built-in rail covers which restrict larger foregrips and front sights." .. requires16
+
+-- L["uplp_ar15_hg_xm.printname"] = "Commando Handguard"
+-- L["uplp_ar15_hg_xm.compactname"] = "Commando"
+-- L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
 
 ////// Magazines
 /// .45 ACP
@@ -1339,9 +1359,13 @@ L["uplp_ar15_pgrip_tac.printname"] = "Empuñadura de Pistola Hoki Armory"
 L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Empuñadura de pistola táctica para rifles AR-15 fabricada por Hoki Armory."
 
+-- L["uplp_ar15_pgrip_a1.printname"] = "Classic A1 Pistol Grip"
+-- L["uplp_ar15_pgrip_a1.compactname"] = "Classic"
+-- L["uplp_ar15_pgrip_a1.description"] = "Classic pistol grip used on early AR-15 rifles."
+
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "Receptor A2 con Asa de Transporte"
-L["uplp_ar15_reciever_m16.compactname"] = "A2 AT"
+L["uplp_ar15_reciever_m16.printname"] = "Receptor A1 con Asa de Transporte"
+L["uplp_ar15_reciever_m16.compactname"] = "A1 AT"
 L["uplp_ar15_reciever_m16.description"] = "Receptor de grado militar con asa de transporte incorporada.\nCambia el modo de disparo a <color=100,255,100>Ráfaga de 3 disparos</color>/<color=100,255,100>semi-automático</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "Receptor M4"
@@ -1364,9 +1388,12 @@ L["uplp_ar15_reciever_modern_black_smg.printname"] = "Receptor Táctico Hoki Arm
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (NI)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Receptor táctico y ligero fabricado por Hoki Armory específicamente para rifles AR-15 alimentados con cargadores de 9×19mm." .. pitchblack
 
-L["uplp_ar15_reciever_m16a3.printname"] = "Receptor A3 con Asa de Transporte"
-L["uplp_ar15_reciever_m16a3.compactname"] = "A3 AT"
+L["uplp_ar15_reciever_m16a3.printname"] = "Receptor A1 con Asa de Transporte (No Burst)"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A1 AT (NB)"
 L["uplp_ar15_reciever_m16a3.description"] = "Receptor de grado militar con asa de transporte incorporada.\nPuramente <color=160,160,255>cosmetico</color>."
+
+L["uplp_ar15_reciever_a2.printname"] = "Receptor A2 con Asa de Transporte"
+L["uplp_ar15_reciever_a2.compactname"] = "A2 AT"
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "Mira Trasera M4"
@@ -1451,6 +1478,10 @@ L["uplp_ar15_stock_tac.description"] = "Culata táctica para rifles AR-15 fabric
 L["uplp_ar15_stock_veryheavy.printname"] = "Culata Pesada ApexCore Systems"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
 L["uplp_ar15_stock_veryheavy.description"] = "Culata pesada para rifles de tirador AR-15 fabricada por ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Reduce más el retroceso</color> en comparación con otras culatas pesadas."
+
+-- L["uplp_ar15_stock_m4ss.printname"] = "Commando Stock"
+-- L["uplp_ar15_stock_m4ss.compactname"] = "Commando"
+-- L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1560,8 +1591,7 @@ L["uplp_mutant_barrel_short.compactname"] = "409mm"
 L["uplp_mutant_barrel_short.description"] = "Cañón Estándar de 409mm (40cm) para el Mutant."
 
 ////// Handguards
-local requires = "\n\n"
-local requires19 = requires .. "Requiere 500mm (50cm) o un cañón más largo."
+local requires19 = "\n\n" .. "Requiere 500mm (50cm) o un cañón más largo."
 
 L["uplp_mutant_hg_long.printname"] = "Guardamanos Hoki Armory XL"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"

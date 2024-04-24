@@ -18,7 +18,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz"
 -- ATT.Category = {"uplp_grip_horiz_cclamp"}
@@ -52,7 +52,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_nocclamp_grips"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_nocclamp_grips", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz_cclamp"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -86,7 +86,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -120,7 +120,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

@@ -228,3 +228,80 @@ ATT.BarrelLengthAdd = 7
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_22")
 
+
+
+---------- uplp_ar15_barrel_145
+
+
+ATT = {}
+
+ATT.PrintName = "368mm Barrel"
+ATT.CompactName = "368mm"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "145.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_barrel"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.SortOrder = 14.5
+
+ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+-- Positives
+-- ATT.SpreadAdd = -0.006
+-- ATT.RangeMaxAdd = 120 / ARC9.HUToM
+-- ATT.RangeMinAdd = 40 / ARC9.HUToM
+-- ATT.PhysBulletMuzzleVelocityMult = 1.5
+-- ATT.RecoilPerShot = 1 / 18
+-- ATT.RecoilMult = 0.7
+
+-- Negatives
+-- ATT.SpreadAddHipFire = 0.006 + 0.01
+-- ATT.SpreadAddRecoil = 0.006 * 0.25
+-- ATT.AimDownSightsTimeAdd = 0.04*2
+-- ATT.SprintToFireTimeAdd = 0.05*2
+-- ATT.SpeedMultSights = 0.8
+-- ATT.RPMAdd = -150
+-- ATT.BarrelLengthAdd = 7
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_145")
+
+
+
+---------- uplp_ar15_barrel_15xm
+
+
+ATT = {}
+
+ATT.PrintName = "381mm Barrel"
+ATT.CompactName = "381mm"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "15xm.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_barrel"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.SortOrder = 15
+
+ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+-- Positives
+-- ATT.SpreadAdd = -0.006
+-- ATT.RangeMaxAdd = 120 / ARC9.HUToM
+-- ATT.RangeMinAdd = 40 / ARC9.HUToM
+-- ATT.PhysBulletMuzzleVelocityMult = 1.5
+-- ATT.RecoilPerShot = 1 / 18
+-- ATT.RecoilMult = 0.7
+
+-- Negatives
+-- ATT.SpreadAddHipFire = 0.006 + 0.01
+-- ATT.SpreadAddRecoil = 0.006 * 0.25
+-- ATT.AimDownSightsTimeAdd = 0.04*2
+-- ATT.SprintToFireTimeAdd = 0.05*2
+-- ATT.SpeedMultSights = 0.8
+-- ATT.RPMAdd = -150
+-- ATT.BarrelLengthAdd = 7
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_15xm")
