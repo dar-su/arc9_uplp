@@ -2463,3 +2463,93 @@ L["uplp_weapon_fal_desc"] = "Fusil de combat militaire (\"Militär Stridsgevär\
 L["uplp_weapon_fal_real"] = "FN FAL"
 
 L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"
+
+/////////// Attachments
+////// Receiver
+L["uplp_fal_rec_para.printname"] = "Fallskärmsjägare Låda"
+L["uplp_fal_rec_para.compactname"] = "Fallsk."
+L["uplp_fal_rec_para.description"] = "Modern låda till FCM-geväret. Kommer med en låda med RIS-funktionalitet för att montera moderna riktmedel."
+
+////// Handguards
+L["uplp_fal_hg_wood.printname"] = "Trähandskydd"
+L["uplp_fal_hg_wood.compactname"] = "Trä"
+L["uplp_fal_hg_wood.description"] = "Klassiskt handskydd från dem första versionerna av FCM."
+
+L["uplp_fal_hg_mlok.printname"] = "M-LOK-Handskydd"
+L["uplp_fal_hg_mlok.compactname"] = "M-LOK"
+L["uplp_fal_hg_mlok.description"] = "Modernt handskydd till FCM. Tillåter installering av diverse framgrepp."
+
+L["uplp_fal_hg_para.printname"] = "Fallskärmsjägare Långt Handskydd"
+L["uplp_fal_hg_para.compactname"] = "Fallsk. L."
+L["uplp_fal_hg_para.description"] = "Lätt handskydd gjord till en Fallskärmsjägare version av FCM-geväret.\nTillåter installering av diverse framgrepp."
+
+L["uplp_fal_hg_paras.printname"] = "Fallskärmsjägare Kort Handskydd"
+L["uplp_fal_hg_paras.compactname"] = "Fallsk. K."
+L["uplp_fal_hg_paras.description"] = "Lätt handskydd med en förkortad pipa gjord till en Fallskärmsjägare version av FCM-geväret.\nTillåter installering av diverse framgrepp."
+
+L["uplp_fal_hg_aus.printname"] = "Australisk Handskydd och Benstöd"
+L["uplp_fal_hg_aus.compactname"] = "Aus."
+L["uplp_fal_hg_aus.description"] = "Tungt trähandskydd från en australisk version av FCM-geväret. Kommer med ett <color=100,255,100>inbyggt benskydd</color>."
+
+////// Muzzles
+L["uplp_fal_muz_long.printname"] = "Tjänst Flamdämpare"
+L["uplp_fal_muz_long.compactname"] = "Tjänst"
+L["uplp_fal_muz_long.description"] = "Militär grad flamdämpare till FCM."
+
+L["uplp_fal_muz_sniper.printname"] = "Prickskytte Mynningsbroms"
+L["uplp_fal_muz_sniper.compactname"] = "Pricksk."
+L["uplp_fal_muz_sniper.description"] = "Mynningsbroms som tvingar gaserna att fly horisontalt för att sänka sida-till-sida rekylen."
+
+////// Pistol Grip
+L["uplp_fal_pg_wood.printname"] = "Trä Pistolgrepp"
+L["uplp_fal_pg_wood.compactname"] = "Trä"
+L["uplp_fal_pg_wood.description"] = "Heavy, wooden pistol grip for the FCM."
+L["uplp_fal_pg_wood.description"] = "Tungt pistolgrepp av trä till FCM."
+
+L["uplp_fal_pg_sniper.printname"] = "Precision Pistolgrepp"
+L["uplp_fal_pg_sniper.compactname"] = "Precision"
+L["uplp_fal_pg_sniper.description"] = "Tungt pistolgrepp designad för prickskyttar gjort till FCM."
+
+L["uplp_fal_pg_tac.printname"] = "Taktiskt Pistolgrepp"
+L["uplp_fal_pg_tac.compactname"] = "Taktisk"
+L["uplp_fal_pg_tac.description"] = "Lätt och taktiskt pistolgrepp till FCM."
+
+////// Stocks
+L["uplp_fal_stock_wood.printname"] = "Träkolv"
+L["uplp_fal_stock_wood.compactname"] = "Trä"
+L["uplp_fal_stock_wood.description"] = "Klassiskt träkolv till FCM. Ersätter också bärhandtaget med en av trä."
+
+L["uplp_fal_stock_para.printname"] = "Fallskärmsjägare Kolv"
+L["uplp_fal_stock_para.compactname"] = "Fallsk."
+L["uplp_fal_stock_para.description"] = "Vikbar fallskärmsjägare kolv till FCM."
+
+L["uplp_fal_stock_sniper.printname"] = "Prickskytte Kolv"
+L["uplp_fal_stock_sniper.compactname"] = "Prickskytt"
+L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
+L["uplp_fal_stock_sniper.description"] = ""
+
+L["uplp_fal_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_fal_stock_buffer.compactname"] = "Buffer"
+L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks."
+
+////// Magazines
+L["uplp_fal_mag_10.printname"] = "10-Patroner 7,62mm"
+L["uplp_fal_mag_10.compactname"] = "10P 7,62"
+L["uplp_fal_mag_10.description"] = "Förkortat 10-patronersmagasin till FCM."
+
+L["uplp_fal_mag_30.printname"] = "30-Patroner 7,62mm"
+L["uplp_fal_mag_30.compactname"] = "30P 7,62"
+L["uplp_fal_mag_30.description"] = "Förlängt 30-patronersmagasin till FCM."
+
+L["uplp_fal_mag_30u.printname"] = "30-Patroner 7,62mm (Rakt)"
+L["uplp_fal_mag_30u.compactname"] = "30P 7,62 (R)"
+L["uplp_fal_mag_30u.description"] = "Förlängt rakt 30-patronersmagasin till FCM."
+
+L["uplp_fal_mag_50.printname"] = "50-Patroner 7,62mm"
+L["uplp_fal_mag_50.compactname"] = "50P 7,62"
+L["uplp_fal_mag_50.description"] = "50-patroners trummagasin till FCM."
+
+////// Scopes
+L["uplp_fal_scope_suit.printname"] = "BRP-Sikte"
+L["uplp_fal_scope_suit.compactname"] = "BRP"
+L["uplp_fal_scope_suit.description"] = "\"British Ranged Precision\"-siktet erbjuder utmärkt målförvärv." 
