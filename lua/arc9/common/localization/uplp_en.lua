@@ -58,7 +58,7 @@ L["uplp_manufacturer"] = "Manufacturer2"
 
 L["uplp_manufacturer_ai"] = "Accuracy International"
 L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "FN Herstal"
+L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
@@ -1845,7 +1845,7 @@ L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for it
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
-L["uplp_weapon_fn57_manufacturer"] = "FN Herstal"
+L["uplp_weapon_fn57_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Mags
@@ -1912,7 +1912,7 @@ L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
-L["uplp_weapon_scar_manufacturer"] = "FN Herstal"
+L["uplp_weapon_scar_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
@@ -2465,3 +2465,11 @@ L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on 
 L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
 L["uplp_weapon_grenade_inc_short"] = "Incendiary"
 L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
+
+//////////////////// FAL
+L["uplp_weapon_fal"] = "FCM"
+L["uplp_weapon_fal_desc"] = "The Fusil de combat militaire (\"Military Combat Rifle\"), or FCM for short, is a battle rifle celebrated for its robust design and widespread adoption across numerous militaries. Renowned for its reliability and versatility, the FCM served as a stalwart companion on countless battlefields throughout the 20th century."
+
+L["uplp_weapon_fal_real"] = "FN FAL"
+
+L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"

@@ -58,7 +58,7 @@ L["uplp_manufacturer"] = "Производитель2"
 
 L["uplp_manufacturer_ai"] = "Accuracy International"
 L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "FN Herstal"
+L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
 L["uplp_manufacturer_izhmash"] = "ИжМаш"
 L["uplp_manufacturer_kalashnikov"] = "Концерн «Калашников»"
@@ -1845,7 +1845,7 @@ L["uplp_weapon_fn57_desc"] = "MRD57 - полуавтоматический пи�
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
-L["uplp_weapon_fn57_manufacturer"] = "FN Herstal"
+L["uplp_weapon_fn57_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Mags
@@ -1912,7 +1912,7 @@ L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
-L["uplp_weapon_scar_manufacturer"] = "FN Herstal"
+L["uplp_weapon_scar_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
@@ -2459,3 +2459,11 @@ local quickthrow = "\nCan be thrown using \"Quickthrow\" with a \"<color=175,175
 -- L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
 -- L["uplp_weapon_grenade_inc_short"] = "Incendiary"
 -- L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
+
+//////////////////// FAL
+L["uplp_weapon_fal"] = "FCM"
+L["uplp_weapon_fal_desc"] = "«Fusil de combat militaire» («Военная боевая винтовка»), или FCM в сокращении, славится своим надежным дизайном и широким распространением в различных вооруженных силах. Признанная своей надежностью и универсальностью, FCM служила надежным спутником на бесчисленных полевых сражениях в течение 20-го века."
+
+L["uplp_weapon_fal_real"] = "FN FAL"
+
+L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"

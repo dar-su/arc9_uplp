@@ -58,7 +58,7 @@ L["uplp_manufacturer"] = "Tillverkare2"
 
 L["uplp_manufacturer_ai"] = "Accuracy International"
 L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "FN Herstal"
+L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
 L["uplp_manufacturer_hk"] = "Heckler & Koch"
 L["uplp_manufacturer_izhmash"] = "Izhmash"
 L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
@@ -1841,7 +1841,7 @@ L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
-L["uplp_weapon_fn57_manufacturer"] = "FN Herstal"
+L["uplp_weapon_fn57_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Mags
@@ -1908,7 +1908,7 @@ L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
-L["uplp_weapon_scar_manufacturer"] = "FN Herstal"
+L["uplp_weapon_scar_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
@@ -2455,3 +2455,11 @@ L["uplp_weapon_grenade_impact_desc"] = "Splittergranat som detonerar vid kontakt
 L["uplp_weapon_grenade_inc"] = "Brandgranat"
 L["uplp_weapon_grenade_inc_short"] = "Brandgranat"
 L["uplp_weapon_grenade_inc_desc"] = "Vid kontakt så börjar granaten omedelbart brinna vid en väldigt hög temperatur vilket gör att alla som går nära den tänds i fyr." .. quickthrow
+
+//////////////////// FAL
+L["uplp_weapon_fal"] = "FCM"
+L["uplp_weapon_fal_desc"] = "Fusil de combat militaire (\"Militär Stridsgevär\"), förkortat FCM, är ett stridsgevär som firas för sin robusta design och breda antagande av många militärer. Känd för sin tillförlitlighet och mångsidighet, tjänade FCM som en trofast följeslagare på otaliga slagfält under 1900-talet."
+
+L["uplp_weapon_fal_real"] = "FN FAL"
+
+L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"
