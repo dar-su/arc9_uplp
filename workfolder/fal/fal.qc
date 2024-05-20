@@ -27,6 +27,7 @@ $bodygroup "grip" { // 4
 	studio "grip wood.smd"
 	studio "grip def.smd"
 	studio "grip sniper.smd"
+	studio "grip tac.smd"
 }
 $bodygroup "handle" { // 6
 	studio "handle wood.smd"
