@@ -2471,25 +2471,25 @@ L["uplp_fal_rec_para.compactname"] = "Fallsk."
 L["uplp_fal_rec_para.description"] = "Modern låda till FCM-geväret. Kommer med en låda med RIS-funktionalitet för att montera moderna riktmedel."
 
 ////// Handguards
-L["uplp_fal_hg_wood.printname"] = "Trähandskydd"
-L["uplp_fal_hg_wood.compactname"] = "Trä"
-L["uplp_fal_hg_wood.description"] = "Klassiskt handskydd från dem första versionerna av FCM."
+L["uplp_fal_hg_poly.printname"] = "Polymer Handskydd"
+L["uplp_fal_hg_poly.compactname"] = "Poly."
+L["uplp_fal_hg_poly.description"] = "Modernt handskydd av polymer till FCM-geväret."
 
-L["uplp_fal_hg_mlok.printname"] = "M-LOK-Handskydd"
-L["uplp_fal_hg_mlok.compactname"] = "M-LOK"
-L["uplp_fal_hg_mlok.description"] = "Modernt handskydd till FCM. Tillåter installering av diverse framgrepp."
+L["uplp_fal_hg_aus.printname"] = "Australisk Handskydd, Benstöd och Förstärkt Pipa"
+L["uplp_fal_hg_aus.compactname"] = "Aus."
+L["uplp_fal_hg_aus.description"] = "Tungt trähandskydd och förstärkt pipa från en australisk version av FCM-geväret. Kommer med ett <color=100,255,100>inbyggt benskydd</color>."
+
+L["uplp_fal_hg_sniper.printname"] = "Prickskytte Handskydd och Pipa"
+L["uplp_fal_hg_sniper.compactname"] = "Pricksk."
+L["uplp_fal_hg_sniper.description"] = "Handskydd gjord för prickskytte med FCM.\nKommer utrustat med en <color=100,255,100>förlängd pipa</color>."
 
 L["uplp_fal_hg_para.printname"] = "Fallskärmsjägare Långt Handskydd"
 L["uplp_fal_hg_para.compactname"] = "Fallsk. L."
-L["uplp_fal_hg_para.description"] = "Lätt handskydd gjord till en Fallskärmsjägare version av FCM-geväret.\nTillåter installering av diverse framgrepp."
+L["uplp_fal_hg_para.description"] = "Lätt handskydd gjord till en Fallskärmsjägare version av FCM-geväret.\nKommer utrustat med en <color=100,255,100>förlängd pipa</color>.\nTillåter installering av <color=100,255,100>framgrepp</color>."
 
 L["uplp_fal_hg_paras.printname"] = "Fallskärmsjägare Kort Handskydd"
 L["uplp_fal_hg_paras.compactname"] = "Fallsk. K."
-L["uplp_fal_hg_paras.description"] = "Lätt handskydd med en förkortad pipa gjord till en Fallskärmsjägare version av FCM-geväret.\nTillåter installering av diverse framgrepp."
-
-L["uplp_fal_hg_aus.printname"] = "Australisk Handskydd och Benstöd"
-L["uplp_fal_hg_aus.compactname"] = "Aus."
-L["uplp_fal_hg_aus.description"] = "Tungt trähandskydd från en australisk version av FCM-geväret. Kommer med ett <color=100,255,100>inbyggt benskydd</color>."
+L["uplp_fal_hg_paras.description"] = "Lätt handskydd med en förkortad pipa gjord till en Fallskärmsjägare version av FCM-geväret.\nKommer utrustat med en <color=255,100,100>förkortad pipa</color>.\nTillåter installering av <color=100,255,100>framgrepp</color>."
 
 ////// Muzzles
 L["uplp_fal_muz_long.printname"] = "Tjänst Flamdämpare"
@@ -2501,10 +2501,9 @@ L["uplp_fal_muz_sniper.compactname"] = "Pricksk."
 L["uplp_fal_muz_sniper.description"] = "Mynningsbroms som tvingar gaserna att fly horisontalt för att sänka sida-till-sida rekylen."
 
 ////// Pistol Grip
-L["uplp_fal_pg_wood.printname"] = "Trä Pistolgrepp"
-L["uplp_fal_pg_wood.compactname"] = "Trä"
-L["uplp_fal_pg_wood.description"] = "Heavy, wooden pistol grip for the FCM."
-L["uplp_fal_pg_wood.description"] = "Tungt pistolgrepp av trä till FCM."
+L["uplp_fal_pg_poly.printname"] = "Polymer Pistolgrepp"
+L["uplp_fal_pg_poly.compactname"] = "Poly."
+L["uplp_fal_pg_poly.description"] = "Lätt pistolgrepp av polymer till FCM."
 
 L["uplp_fal_pg_sniper.printname"] = "Precision Pistolgrepp"
 L["uplp_fal_pg_sniper.compactname"] = "Precision"
@@ -2515,22 +2514,21 @@ L["uplp_fal_pg_tac.compactname"] = "Taktisk"
 L["uplp_fal_pg_tac.description"] = "Lätt och taktiskt pistolgrepp till FCM."
 
 ////// Stocks
-L["uplp_fal_stock_wood.printname"] = "Träkolv"
-L["uplp_fal_stock_wood.compactname"] = "Trä"
-L["uplp_fal_stock_wood.description"] = "Klassiskt träkolv till FCM. Ersätter också bärhandtaget med en av trä."
+L["uplp_fal_stock_poly.printname"] = "Polymer Kolv och Bärhandtag"
+L["uplp_fal_stock_poly.compactname"] = "Poly."
+L["uplp_fal_stock_poly.description"] = "Modern och lätt kolv och bärhandtag av polymer till FCM."
 
 L["uplp_fal_stock_para.printname"] = "Fallskärmsjägare Kolv"
 L["uplp_fal_stock_para.compactname"] = "Fallsk."
-L["uplp_fal_stock_para.description"] = "Vikbar fallskärmsjägare kolv till FCM."
+L["uplp_fal_stock_para.description"] = "Vikbar fallskärmsjägare kolv till FCM.\nKräver <color=175,175,255>Fallskärmsjägare Låda</color>."
 
 L["uplp_fal_stock_sniper.printname"] = "Prickskytte Kolv"
 L["uplp_fal_stock_sniper.compactname"] = "Prickskytt"
-L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
-L["uplp_fal_stock_sniper.description"] = ""
+L["uplp_fal_stock_sniper.description"] = "Stark kolv gjord för att hålla FCM-geväret stabilt under skytte.\nKräver <color=175,175,255>Fallskärmsjägare Låda</color>."
 
-L["uplp_fal_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_fal_stock_buffer.printname"] = "Bufferrör"
 L["uplp_fal_stock_buffer.compactname"] = "Buffer"
-L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks."
+L["uplp_fal_stock_buffer.description"] = "Ersätt kolven med ett traditionellt bufferrör som tillåter AR-15-kolvar.\nKräver <color=175,175,255>Fallskärmsjägare Låda</color>."
 
 ////// Magazines
 L["uplp_fal_mag_10.printname"] = "10-Patroner 7,62mm"

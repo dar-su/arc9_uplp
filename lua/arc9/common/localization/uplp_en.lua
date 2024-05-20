@@ -2481,25 +2481,25 @@ L["uplp_fal_rec_para.compactname"] = "Para."
 L["uplp_fal_rec_para.description"] = "Modernized receiver for the FCM. Comes with an RIS top cover for mounting modern optics."
 
 ////// Handguards
-L["uplp_fal_hg_wood.printname"] = "Wooden Handguard"
-L["uplp_fal_hg_wood.compactname"] = "Wood"
-L["uplp_fal_hg_wood.description"] = "Classic handguard from the very first versions of the FCM."
+L["uplp_fal_hg_poly.printname"] = "Polymer Handguard"
+L["uplp_fal_hg_poly.compactname"] = "Poly."
+L["uplp_fal_hg_poly.description"] = "Modernized polymer handguard for the FCM."
 
-L["uplp_fal_hg_mlok.printname"] = "M-LOK Handguard"
-L["uplp_fal_hg_mlok.compactname"] = "M-LOK"
-L["uplp_fal_hg_mlok.description"] = "Modern handguard for the FCM. Allows installation of various foregrips."
+L["uplp_fal_hg_aus.printname"] = "Australian Handguard, Bipod and Reinforced Barrel"
+L["uplp_fal_hg_aus.compactname"] = "Aus."
+L["uplp_fal_hg_aus.description"] = "Heavy, wooden handguard and reinforced barrel from the Australian version of the FCM. Comes with a <color=100,255,100>built-in bipod</color>."
+
+L["uplp_fal_hg_sniper.printname"] = "Sharpshooter Handguard and Barrel"
+L["uplp_fal_hg_sniper.compactname"] = "Sharps."
+L["uplp_fal_hg_sniper.description"] = "Handguard meant for sharpshooting on the FCM.\nComes equipped with an <color=100,255,100>extended barrel</color>."
 
 L["uplp_fal_hg_para.printname"] = "Paratrooper Long Handguard"
 L["uplp_fal_hg_para.compactname"] = "Para. L."
-L["uplp_fal_hg_para.description"] = "Lightweight handguard made for a Paratrooper variant of the FCM.\nAllows installation of various foregrips."
+L["uplp_fal_hg_para.description"] = "Lightweight handguard made for a Paratrooper variant of the FCM.\nComes equipped with an <color=100,255,100>extended barrel</color>.\nAllows installation of <color=100,255,100>foregrips</color>."
 
 L["uplp_fal_hg_paras.printname"] = "Paratrooper Short Handguard"
 L["uplp_fal_hg_paras.compactname"] = "Para. S."
-L["uplp_fal_hg_paras.description"] = "Lightweight handguard with a shortened barrel made for a Paratrooper variant of the FCM.\nAllows installation of various foregrips."
-
-L["uplp_fal_hg_aus.printname"] = "Australian Handguard and Bipod"
-L["uplp_fal_hg_aus.compactname"] = "Aus."
-L["uplp_fal_hg_aus.description"] = "Heavy, wooden handguard from the Australian version of the FCM. Comes with a <color=100,255,100>built-in bipod</color>."
+L["uplp_fal_hg_paras.description"] = "Lightweight handguard with a shortened barrel made for a Paratrooper variant of the FCM.\nComes equipped with a <color=255,100,100>shortened barrel</color>.\nAllows installation of <color=100,255,100>foregrips</color>."
 
 ////// Muzzles
 L["uplp_fal_muz_long.printname"] = "Service Flash Hider"
@@ -2511,9 +2511,9 @@ L["uplp_fal_muz_sniper.compactname"] = "Sniper"
 L["uplp_fal_muz_sniper.description"] = "Muzzle brake that forces gases to escape horizontally to reduce side-to-side recoil."
 
 ////// Pistol Grip
-L["uplp_fal_pg_wood.printname"] = "Wooden Pistol Grip"
-L["uplp_fal_pg_wood.compactname"] = "Wood"
-L["uplp_fal_pg_wood.description"] = "Heavy, wooden pistol grip for the FCM."
+L["uplp_fal_pg_poly.printname"] = "Polymer Pistol Grip"
+L["uplp_fal_pg_poly.compactname"] = "Poly."
+L["uplp_fal_pg_poly.description"] = "Lightweight polymer pistol grip for the FCM."
 
 L["uplp_fal_pg_sniper.printname"] = "Precision Pistol Grip"
 L["uplp_fal_pg_sniper.compactname"] = "Precision"
@@ -2524,21 +2524,21 @@ L["uplp_fal_pg_tac.compactname"] = "Tactical"
 L["uplp_fal_pg_tac.description"] = "Lightweight, tactical pistol grip for the FCM."
 
 ////// Stocks
-L["uplp_fal_stock_wood.printname"] = "Wooden Stock"
-L["uplp_fal_stock_wood.compactname"] = "Wood"
-L["uplp_fal_stock_wood.description"] = "Classic wooden stock for the FCM. Also replaces the carrying handle with a wooden one."
+L["uplp_fal_stock_poly.printname"] = "Polymer Stock and Carrying Handle"
+L["uplp_fal_stock_poly.compactname"] = "Poly."
+L["uplp_fal_stock_poly.description"] = "Modernized, lightweight polymer stock and carrying handle for the FCM."
 
 L["uplp_fal_stock_para.printname"] = "Paratrooper Stock"
 L["uplp_fal_stock_para.compactname"] = "Para."
-L["uplp_fal_stock_para.description"] = "Foldable paratrooper stock made for the FCM."
+L["uplp_fal_stock_para.description"] = "Foldable paratrooper stock made for the FCM.\nRequires <color=175,175,255>Paratrooper Receiver</color>."
 
 L["uplp_fal_stock_sniper.printname"] = "Marksman Stock"
 L["uplp_fal_stock_sniper.compactname"] = "Marksman"
-L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
+L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing.\nRequires <color=175,175,255>Paratrooper Receiver</color>."
 
 L["uplp_fal_stock_buffer.printname"] = "Buffer Tube"
 L["uplp_fal_stock_buffer.compactname"] = "Buffer"
-L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks."
+L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks.\nRequires <color=175,175,255>Paratrooper Receiver</color>."
 
 ////// Magazines
 L["uplp_fal_mag_10.printname"] = "10-Round 7.62mm"
