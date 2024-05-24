@@ -66,6 +66,10 @@ $bodygroup "muzzle" { // 5
 	
 	blank
 }
+$bodygroup "tacmount" { // 5
+	blank
+	studio "tacmount.smd"
+}
 
 $cdmaterials "models\weapons\arc9\uplp"
 
