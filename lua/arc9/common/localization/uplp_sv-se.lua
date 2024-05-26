@@ -2520,30 +2520,30 @@ L["uplp_fal_stock_poly.description"] = "Modern och lätt kolv och bärhandtag av
 
 L["uplp_fal_stock_para.printname"] = "Fallskärmsjägare Kolv"
 L["uplp_fal_stock_para.compactname"] = "Fallsk."
-L["uplp_fal_stock_para.description"] = "Vikbar fallskärmsjägare kolv till FCM.\nKräver <color=175,175,255>Fallskärmsjägare Låda</color>."
+L["uplp_fal_stock_para.description"] = "Vikbar fallskärmsjägare kolv till FCM."
 
 L["uplp_fal_stock_sniper.printname"] = "Prickskytte Kolv"
 L["uplp_fal_stock_sniper.compactname"] = "Prickskytt"
-L["uplp_fal_stock_sniper.description"] = "Stark kolv gjord för att hålla FCM-geväret stabilt under skytte.\nKräver <color=175,175,255>Fallskärmsjägare Låda</color>."
+L["uplp_fal_stock_sniper.description"] = "Stark kolv gjord för att hålla FCM-geväret stabilt under skytte."
 
 L["uplp_fal_stock_buffer.printname"] = "Bufferrör"
 L["uplp_fal_stock_buffer.compactname"] = "Buffer"
-L["uplp_fal_stock_buffer.description"] = "Ersätt kolven med ett traditionellt bufferrör som tillåter AR-15-kolvar.\nKräver <color=175,175,255>Fallskärmsjägare Låda</color>."
+L["uplp_fal_stock_buffer.description"] = "Ersätt kolven med ett traditionellt bufferrör som tillåter AR-15-kolvar."
 
 ////// Magazines
-L["uplp_fal_mag_10.printname"] = "10-Patroner 7,62mm"
+L["uplp_fal_mag_10.printname"] = "10-Patroner 7,62 mm"
 L["uplp_fal_mag_10.compactname"] = "10P 7,62"
 L["uplp_fal_mag_10.description"] = "Förkortat 10-patronersmagasin till FCM."
 
-L["uplp_fal_mag_30.printname"] = "30-Patroner 7,62mm"
+L["uplp_fal_mag_30.printname"] = "30-Patroner 7,62 mm"
 L["uplp_fal_mag_30.compactname"] = "30P 7,62"
 L["uplp_fal_mag_30.description"] = "Förlängt 30-patronersmagasin till FCM."
 
-L["uplp_fal_mag_30u.printname"] = "30-Patroner 7,62mm (Rakt)"
+L["uplp_fal_mag_30u.printname"] = "30-Patroner 7,62 mm (Rakt)"
 L["uplp_fal_mag_30u.compactname"] = "30P 7,62 (R)"
 L["uplp_fal_mag_30u.description"] = "Förlängt rakt 30-patronersmagasin till FCM."
 
-L["uplp_fal_mag_50.printname"] = "50-Patroner 7,62mm"
+L["uplp_fal_mag_50.printname"] = "50-Patroner 7,62 mm"
 L["uplp_fal_mag_50.compactname"] = "50P 7,62"
 L["uplp_fal_mag_50.description"] = "50-patroners trummagasin till FCM."
 
@@ -2551,3 +2551,40 @@ L["uplp_fal_mag_50.description"] = "50-patroners trummagasin till FCM."
 L["uplp_fal_scope_suit.printname"] = "BRP-Sikte"
 L["uplp_fal_scope_suit.compactname"] = "BRP"
 L["uplp_fal_scope_suit.description"] = "\"British Ranged Precision\"-siktet erbjuder utmärkt målförvärv." 
+
+//////////////////// Mac-10
+L["uplp_weapon_mac10"] = "CMP-10"
+L["uplp_weapon_mac10_desc"] = "CMP-10 (\"Civilian Machine Pistol\" är en kompakt, gaslåsdriven kulsprutepistol designad under 60-talet, känd för dess höga hastighet och simpla, kraftiga konstruering. Matas oftast i .45 ACP eller 9 mm, den blev ökänd för dess användning i militära, paramilitära och kriminella aktiviteter, och blev ett ikoniskt vapen i populär media."
+
+L["uplp_weapon_mac10_real"] = "MAC-10 / MAC-11"
+
+L["uplp_weapon_mac10_manufacturer"] = "Military Armament Corporation"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mac10_bar_long.printname"] = "Lång pipa och Skydd"
+L["uplp_mac10_bar_long.compactname"] = "Lång"
+L["uplp_mac10_bar_long.description"] = "Längre pipa till CMP-10. Utrustas också med ett skydd."
+
+////// Muzzles
+L["uplp_mac10_muz_supp.printname"] = "CMP-Ljuddämpare"
+L["uplp_mac10_muz_supp.compactname"] = "CMP"
+L["uplp_mac10_muz_supp.description"] = "Stor ljuddämpare gjord för att användas på CMP-10."
+
+////// Stocks
+L["uplp_mac10_stock_poly.printname"] = "Vikbar Trådkolv"
+L["uplp_mac10_stock_poly.compactname"] = "Vikbar"
+L["uplp_mac10_stock_poly.description"] = "Vikbar trådkolv till CMP-10."
+
+L["uplp_mac10_stock_buffer.printname"] = "Bufferrör"
+L["uplp_mac10_stock_buffer.compactname"] = "Buffer"
+L["uplp_mac10_stock_buffer.description"] = "Ersätt trådkolven med ett traditionellt bufferrör som tillåter AR-15-kolvar."
+
+////// Magazines
+L["uplp_mac10_mag_30.printname"] = "30-Patroner 9 × 19mm"
+L["uplp_mac10_mag_30.compactname"] = "30P 9 × 19mm"
+L["uplp_mac10_mag_30.description"] = "Förlängt 30-patronersmagasin till CMP-10."
+
+L["uplp_mac10_mag_50.printname"] = "50-Patroner 9×19mm"
+L["uplp_mac10_mag_50.compactname"] = "50P 9 × 19 mm"
+L["uplp_mac10_mag_50.description"] = "50-patroners trummagasin till CMP-10."

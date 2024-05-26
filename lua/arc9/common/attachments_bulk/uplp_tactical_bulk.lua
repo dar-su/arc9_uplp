@@ -437,11 +437,11 @@ ATT.CompactName = "M40 GL"
 ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
 ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
 ATT.SortOrder = -99
-ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Abillity to shoot grenades"] = "Yeah",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Damage"] = "150 DMG",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Radius"] = "7.6 m",
-}
+-- ATT.CustomPros = {
+    -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Abillity to shoot grenades"] = "Yeah",
+    -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Damage"] = "150 DMG",
+    -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Radius"] = "7.6 m",
+-- }
 
 ATT.AimDownSightsTimeAdd = 0.15
 ATT.SprintToFireTimeAdd = 0.2

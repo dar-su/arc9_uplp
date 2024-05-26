@@ -78,6 +78,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"use_optics"}
 
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, 1.34, 32.5) }, -- Muzzle
+    }
+}
+
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_sniper")
 
 ---------- uplp_fal_hg_para
@@ -97,6 +103,47 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"use_optics"}
 
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, 1.34, 32.5) }, -- Muzzle
+    }
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
+        Pos = Vector(3, 0, 1.4),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(0.9, 1.1, 0.15),
+        Ang = Angle(0, 0, 90),
+        ExcludeElements = {"uplp_no_tactical"},
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
+        Pos = Vector(3, 0, 1.4),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        Pos = Vector(5.5, 0, 3.2),
+        Ang = Angle(0, 180, 0),
+        MergeSlots = {1}, 
+        Hidden = true,
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_para")
 
 ---------- uplp_fal_hg_paras
@@ -115,6 +162,31 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Negatives
 
 -- ATT.ActivateElements = {"use_optics"}
+
+ATT.Element = {
+    AttPosMods = {
+        [3] = { Pos = Vector(0, 1.34, 20.75) }, -- Muzzle
+    }
+}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
+        Pos = Vector(4, 0, 1.4),
+        Ang = Angle(0, 0, 0),
+        Icon_Offset = Vector(0, 0, -1),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
+        Category = {"uplp_tac"},
+        Bone = "body",
+        Pos = Vector(3, 1.1, 0.15),
+        Ang = Angle(0, 0, 90),
+        ExcludeElements = {"uplp_no_tactical"},
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_paras")
 
@@ -211,7 +283,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Negatives
 
-ATT.RequireElements = {"uplp_fal_rec_para"}
+-- ATT.RequireElements = {"uplp_fal_rec_para"}
 -- ATT.ActivateElements = {"use_optics"}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_stock_para")
@@ -231,7 +303,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Negatives
 
-ATT.RequireElements = {"uplp_fal_rec_para"}
+-- ATT.RequireElements = {"uplp_fal_rec_para"}
 -- ATT.ActivateElements = {"use_optics"}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_stock_sniper")
@@ -251,8 +323,19 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Negatives
 
-ATT.RequireElements = {"uplp_fal_rec_para"}
+-- ATT.RequireElements = {"uplp_fal_rec_para"}
 -- ATT.ActivateElements = {"use_optics"}
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_ar15_stock"},
+        DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
+        Pos = Vector(1.5, -0.105, 0.4),
+        Ang = Angle(0, 0, 0),
+        Scale = 1.2
+    },
+}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_stock_buffer")
 

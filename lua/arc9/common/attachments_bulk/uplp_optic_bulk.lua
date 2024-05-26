@@ -829,7 +829,7 @@ ATT.RTScopeFOV = 57/6
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/halo.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.92
 ATT.RTScopeColorable = false
-ATT.RTScopeShadowIntensity = 0
+ATT.RTScopeShadowIntensity = 7
 ATT.RTScopeBlackBox = true  
 ATT.RTScopeBlackBoxShadow = false 
 

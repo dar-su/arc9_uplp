@@ -2431,13 +2431,13 @@ L["uplp_mp5_stock_fixed.compactname"] = "Fixed"
 L["uplp_mp5_stock_fixed.description"] = "Fixed, solid stock for the PV-9."
 
 ////// Magazines
-L["uplp_mp5_mag_15.printname"] = "15-Round 9x19mm"
-L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
-L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9x19mm ammunition."
+L["uplp_mp5_mag_15.printname"] = "15-Round 9×19mm"
+L["uplp_mp5_mag_15.compactname"] = "15R 9×19mm"
+L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9×19mm ammunition."
 
-L["uplp_mp5_mag_50.printname"] = "50-Round 9x19mm Drum"
-L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
-L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9x19mm ammunition."
+L["uplp_mp5_mag_50.printname"] = "50-Round 9×19mm Drum"
+L["uplp_mp5_mag_50.compactname"] = "50R 9×19mm"
+L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9×19mm ammunition."
 
 L["uplp_mp5_mag_10mm.printname"] = "30-Round 10mm"
 L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
@@ -2530,15 +2530,15 @@ L["uplp_fal_stock_poly.description"] = "Modernized, lightweight polymer stock an
 
 L["uplp_fal_stock_para.printname"] = "Paratrooper Stock"
 L["uplp_fal_stock_para.compactname"] = "Para."
-L["uplp_fal_stock_para.description"] = "Foldable paratrooper stock made for the FCM.\nRequires <color=175,175,255>Paratrooper Receiver</color>."
+L["uplp_fal_stock_para.description"] = "Foldable paratrooper stock made for the FCM."
 
 L["uplp_fal_stock_sniper.printname"] = "Marksman Stock"
 L["uplp_fal_stock_sniper.compactname"] = "Marksman"
-L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing.\nRequires <color=175,175,255>Paratrooper Receiver</color>."
+L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
 
 L["uplp_fal_stock_buffer.printname"] = "Buffer Tube"
 L["uplp_fal_stock_buffer.compactname"] = "Buffer"
-L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks.\nRequires <color=175,175,255>Paratrooper Receiver</color>."
+L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks."
 
 ////// Magazines
 L["uplp_fal_mag_10.printname"] = "10-Round 7.62mm"
@@ -2561,3 +2561,40 @@ L["uplp_fal_mag_50.description"] = "50-round drum magazine for the FCM."
 L["uplp_fal_scope_suit.printname"] = "BRP Scope"
 L["uplp_fal_scope_suit.compactname"] = "BRP"
 L["uplp_fal_scope_suit.description"] = "The \"British Ranged Precision\" scope provides excellent target acquisition."
+
+//////////////////// Mac-10
+L["uplp_weapon_mac10"] = "CMP-10"
+L["uplp_weapon_mac10_desc"] = "The CMP-10 (\"Civilian Machine Pistol\") is a compact, blowback-operated submachine gun designed in the late 1960s, known for its high rate of fire and simple, robust construction. Often chambered in .45 ACP or 9mm, it gained notoriety for its use in military, paramilitary, and criminal activities, becoming an iconic weapon in popular culture."
+
+L["uplp_weapon_mac10_real"] = "MAC-10 / MAC-11"
+
+L["uplp_weapon_mac10_manufacturer"] = "Military Armament Corporation"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mac10_bar_long.printname"] = "Long barrel and Shroud"
+L["uplp_mac10_bar_long.compactname"] = "Long"
+L["uplp_mac10_bar_long.description"] = "Longer barrel for the CMP-10. Also equipped with a protective shroud."
+
+////// Muzzles
+L["uplp_mac10_muz_supp.printname"] = "CMP Suppressor"
+L["uplp_mac10_muz_supp.compactname"] = "CMP"
+L["uplp_mac10_muz_supp.description"] = "Large suppressor intended for use on the CMP-10."
+
+////// Stocks
+L["uplp_mac10_stock_poly.printname"] = "Foldable Wire Stock"
+L["uplp_mac10_stock_poly.compactname"] = "Foldable"
+L["uplp_mac10_stock_poly.description"] = "Foldable wire stock for the CMP-10."
+
+L["uplp_mac10_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_mac10_stock_buffer.compactname"] = "Buffer"
+L["uplp_mac10_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+
+////// Magazines
+L["uplp_mac10_mag_30.printname"] = "30-Round 9×19mm"
+L["uplp_mac10_mag_30.compactname"] = "30R 9×19mm"
+L["uplp_mac10_mag_30.description"] = "Extended 30-round magazine for the CMP-10."
+
+L["uplp_mac10_mag_50.printname"] = "50-Round 9×19mm"
+L["uplp_mac10_mag_50.compactname"] = "50R 9×19mm"
+L["uplp_mac10_mag_50.description"] = "50-round drum magazine for the CMP-10."
