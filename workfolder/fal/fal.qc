@@ -17,6 +17,7 @@ $bodygroup "hg" { // 2
 	studio "hg sa.smd"
 	studio "hg rail long.smd"
 	studio "hg rail short.smd"
+	studio "hg_aussie_unfold.smd"
 }   
 $bodygroup "irons" { // 3
 	studio "rs.smd"

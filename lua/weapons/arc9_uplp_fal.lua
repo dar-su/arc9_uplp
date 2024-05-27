@@ -18,17 +18,19 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_fal_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_fal_manufacturer" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x39mm"),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x51mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
                                                                         ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
-    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1959" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ), -- true?
+    -- [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
+    -- [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1959" ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = "what",
+    [ ARC9:GetPhrase( "uplp_year" ) ] = "what",
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, Cylowalker, 8Z",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan, TastyTony",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
@@ -36,23 +38,23 @@ SWEP.Credits = {
 
 
 SWEP.StandardPresets = {
-"[7.62 Vintage]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCAoqlx+D16rlwSFHCB3X4QgBaWkCSgWCXlOWxf2pdl6GTqls3nAIpmhcy1nA9Vw9eh5Sv/8APVbV9nPLnRn6a+gcnB5O7AjXFI8kVfx/jFdywntdaPxNvt7i1B6Dz2RjEt6qAA=",
-"[5.56 Szermierz]XQAAAQBEAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPmCZlzL7XO8ZTikto/sOhM5uMURa4B01wSXb9AvFIgmjRa/170yIRX1DJqBJZ9Z1amaZQhh0JxHP3eIfRAL2dhqL+6Im0NNVGruPrNrs+434dchNnWddimMkIyg9Uo/9FE/pz050EpqfqazhUM37GAA==",
-"[7.62 Classic]XQAAAQAnAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKO9eE5FX+iP9PuTM3N/SfEx/VpOoAdhT2NRRlF/O9Pj25PG8iEPO4wqrtYL2ac5tpCoehPFPTBCO/kKNyA4q2i5yg4RMpI8EYxuN4lrkpgXd34W",
-"[HPK 7.62]XQAAAQAhAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKOym7sUWN7uq5HCUCYYAO0/dn5tSfNnOajWMbGI2QPB1bP698Xo/OtF3XD0zUeFYJuNWLKUBryImARlUJ1ex+Xe2FKYgyH+bZOpVoYPjr4Z7Q==",
-"[5.45 Short]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spMTibtSril7Sakm05iZUG2v11sSd3eOEMxJ6KFpw6yQV/yDfYyccIHSSN68VGxSO3JY3fu1AY+5li7kxzfQgXJL8RNzC75fVbt22sDn+Hg",
-"[HPK 5.45]XQAAAQARAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnxYUkamNJSikwllpcdPluZRVpEDcoCycv+lki7XSdE7tRdiUDQzRy6kWM9d9P3Hn7v3Ia+6o0NXx9dY3j8orB8xlTSQLeoWRfwtKlrv4A",
-"[7.62 Sport]XQAAAQBqAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPx++rG+SXv8mjUlUNsYBBZvylRPuy/QKOqKePGum19amiUNWoKnIG5eUDcEThoNBnUjkNtZbLMJAWk5zg7PN4JBoagEzJiuYTih6vxCvHGAE0YgH3oxRa9nZr4qP0xNLDu62elI/tnViNUrPlYUEhMovrTyptDxYQPk++CWs6P9cgM9GieJlYAA==",
+-- "[7.62 Vintage]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCAoqlx+D16rlwSFHCB3X4QgBaWkCSgWCXlOWxf2pdl6GTqls3nAIpmhcy1nA9Vw9eh5Sv/8APVbV9nPLnRn6a+gcnB5O7AjXFI8kVfx/jFdywntdaPxNvt7i1B6Dz2RjEt6qAA=",
+-- "[5.56 Szermierz]XQAAAQBEAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPmCZlzL7XO8ZTikto/sOhM5uMURa4B01wSXb9AvFIgmjRa/170yIRX1DJqBJZ9Z1amaZQhh0JxHP3eIfRAL2dhqL+6Im0NNVGruPrNrs+434dchNnWddimMkIyg9Uo/9FE/pz050EpqfqazhUM37GAA==",
+-- "[7.62 Classic]XQAAAQAnAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKO9eE5FX+iP9PuTM3N/SfEx/VpOoAdhT2NRRlF/O9Pj25PG8iEPO4wqrtYL2ac5tpCoehPFPTBCO/kKNyA4q2i5yg4RMpI8EYxuN4lrkpgXd34W",
+-- "[HPK 7.62]XQAAAQAhAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKOym7sUWN7uq5HCUCYYAO0/dn5tSfNnOajWMbGI2QPB1bP698Xo/OtF3XD0zUeFYJuNWLKUBryImARlUJ1ex+Xe2FKYgyH+bZOpVoYPjr4Z7Q==",
+-- "[5.45 Short]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spMTibtSril7Sakm05iZUG2v11sSd3eOEMxJ6KFpw6yQV/yDfYyccIHSSN68VGxSO3JY3fu1AY+5li7kxzfQgXJL8RNzC75fVbt22sDn+Hg",
+-- "[HPK 5.45]XQAAAQARAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnxYUkamNJSikwllpcdPluZRVpEDcoCycv+lki7XSdE7tRdiUDQzRy6kWM9d9P3Hn7v3Ia+6o0NXx9dY3j8orB8xlTSQLeoWRfwtKlrv4A",
+-- "[7.62 Sport]XQAAAQBqAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPx++rG+SXv8mjUlUNsYBBZvylRPuy/QKOqKePGum19amiUNWoKnIG5eUDcEThoNBnUjkNtZbLMJAWk5zg7PN4JBoagEzJiuYTih6vxCvHGAE0YgH3oxRa9nZr4qP0xNLDu62elI/tnViNUrPlYUEhMovrTyptDxYQPk++CWs6P9cgM9GieJlYAA==",
 }
 
 ---- Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_ak47"
+SWEP.MuzzleParticle = "muzzleflash_m14"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
 SWEP.ShellScale = 1.5
 SWEP.ShellPitch = 90
 
@@ -76,7 +78,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 70
-SWEP.ActivePos = Vector(-0.25, 0, 0.1)
+SWEP.ActivePos = Vector(-0.1, 1.0, -0.05)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -203,7 +205,7 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.285, -1, 0.365),
+     Pos = Vector(-2.285, 0, 0.365),
      Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 55,
@@ -234,7 +236,7 @@ SWEP.CustomizeSnapshotFOV = 65
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762.mdl"
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/fal_mag_20.mdl"
 SWEP.DropMagazineTime = 0.75 * 1.05
 SWEP.DropMagazineQCA = 5
 SWEP.DropMagazinePos = Vector(0, 0, 0)
@@ -630,18 +632,41 @@ SWEP.Animations = {
         Source = "modeswitch",
         EventTable = thetoggle
     },
+
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+        IKTimeLine = {
+            { t = 0, lhik = 0.5 },
+            { t = 0.5, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+        IKTimeLine = {
+            { t = 0, lhik = 0.5 },
+            { t = 0.5, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
 }
 
-SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if !IsFirstTimePredicted() then return end
-    -- theres some mod for arc9eft that makes mag checks on bind and it manipulates EFTInspectnum value so well keep eft in name to keep functionality
-    if anim == "inspect" or anim == "inspect_empty" then
-        swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
-        local rand = swep.EFTInspectnum
-        if rand == 1 then return anim .. "_look" end
-        if rand == 2 then swep.EFTInspectnum = 0 rand = 0 end
-    end
-end
+-- SWEP.Hook_TranslateAnimation = function(swep, anim)
+--     if !IsFirstTimePredicted() then return end
+--     -- theres some mod for arc9eft that makes mag checks on bind and it manipulates EFTInspectnum value so well keep eft in name to keep functionality
+--     if anim == "inspect" or anim == "inspect_empty" then
+--         swep.EFTInspectnum = (swep.EFTInspectnum or 0) + 1
+--         local rand = swep.EFTInspectnum
+--         if rand == 1 then return anim .. "_look" end
+--         if rand == 2 then swep.EFTInspectnum = 0 rand = 0 end
+--     end
+-- end
 
 ---- Attachments
 SWEP.DefaultBodygroups = "0000000006" -- Might as well prepare for the future
@@ -650,22 +675,37 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 	
-    if eles["uplp_ak_brl_su"] and !eles["uplp_su_hgexists"] then
-        mdl:SetBodygroup(4,10)
+    local short, long = eles["uplp_fal_hg_paras"], eles["uplp_fal_hg_sniper"]
+
+    if eles["uplp_fal_muzzle_long"] then
+        mdl:SetBodygroup(9, long and 1 or (short and 2 or 0))
+    elseif eles["uplp_fal_muzzle_break"] then
+        mdl:SetBodygroup(9, long and 4 or (short and 5 or 3))
     end
 
-    if eles["uplp_ak_brl_rpk"] and wep:GetBipod() then
-        if wep:GetEnterBipodTime() + 0.2 < CurTime() then
-            mdl:SetBodygroup(2, 10)
-        end
+    if eles["uplp_fal_hg_aus"] and wep:GetBipod() then
+        -- if wep:GetEnterBipodTime() + 0.1 < CurTime() then
+            mdl:SetBodygroup(2, 6)
+        -- end
+    end
+end
+
+SWEP.Hook_ModifyElements = function(wep, eles)
+    if eles["uplp_fal_rec_para"] or eles["uplp_optic_used"] then
+        eles["fal_dc"] = true -- for stciker
     end
 
+    if wep:GetBipod() then
+        eles["extralhik"] = true
+    end
+
+    return eles 
 end
 
 SWEP.AttachmentElements = {
 
     -- Receiver; Barrel / Handguard
-    ["uplp_optic_used"] =  { Bodygroups = { { 3, 2 } } },
+    ["uplp_optic_used"] =  { Bodygroups = { { 3, 2 }, { 6, 1 } } },
 	
     -- Receiver; Receiver / Top Rail
     ["uplp_fal_rec_para"] =  { Bodygroups = { { 0, 1 }, { 6, 1 } } },
@@ -717,7 +757,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -0.25, 1.5),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"use_optics"},
+        -- RequireElements = {"use_optics"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -782,6 +822,17 @@ SWEP.Attachments = {
         Integral = "uplp_backup_optic_is_front",
         Hidden = true,
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_fal_hg_extra"},
+        Bone = "body",
+        Pos = Vector(0, 0.5, 17),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"extralhik"},
+        Installed = "uplp_fal_hg_aus_extralhik",
+        Integral = "uplp_fal_hg_aus_extralhik",
+        Hidden = true,
+    },
 
 
 
@@ -802,6 +853,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1, 0),
         Ang = Angle(90, 90, 180),
+        ExcludeElements = {"fal_dc"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
@@ -810,9 +862,29 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1, -2),
         Ang = Angle(90, 90, 180),
+        ExcludeElements = {"fal_dc"},
     },
+
+    { -- fal dustcover stickerr
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/fal_1r.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, 0),
+        RequireElements = {"fal_dc"},
+    },
+
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/fal_2r.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0, 1, -2),
+        RequireElements = {"fal_dc"},
+    },
+
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_mag"),
         StickerModel = "models/weapons/arc9/uplp/stickers/fal_mag.mdl",
         Category = "stickers",
         Bone = "body",
@@ -821,12 +893,61 @@ SWEP.Attachments = {
     },
 }
 
-SWEP.HookP_NameChange = function(self, name)
-    local att = self:GetElements()
+-- SWEP.HookP_NameChange = function(self, name)
+--     local att = self:GetElements()
 
-    -- Default Name (If RPK name or not)
-    if att["uplp_ak_brl_rpk"] then
-        return ARC9:GetPhrase("uplp_weapon_ak_rpk")
-    end
+--     -- Default Name (If RPK name or not)
+--     if att["uplp_ak_brl_rpk"] then
+--         return ARC9:GetPhrase("uplp_weapon_ak_rpk")
+--     end
 
+-- end
+
+
+-- edits to make bipod network gun atts, bipod forces new attachment for new lhik
+
+function SWEP:EnterBipod()
+    if self:GetBipod() then return end
+
+    self:SetBipod(true)
+    local soundtab1 = {
+        name = "enterbipod",
+        sound = self:RandomChoice(self:GetProcessedValue("EnterBipodSound", true))
+    }
+    self:PlayTranslatedSound(soundtab1)
+    self:PlayAnimation(self.SightIsAlsoBipodAnims and "enter_sights" or "enter_bipod", 1, true)
+    self:SetEnterBipodTime(CurTime())
+
+    local owner = self:GetOwner()
+
+    self:SetBipodAng(owner:EyeAngles())
+    self:SetBipodPos(owner:EyePos() + (owner:EyeAngles():Forward() * 4) - Vector(0, 0, 2))
+
+    self:ExitSights()
+
+
+    -- our change
+    self:SendWeapon()
+end
+
+function SWEP:ExitBipod(force)
+    if !self:GetBipod() then return end
+
+    self:SetBipod(false)
+    local soundtab1 = {
+        name = "exitbipod",
+        sound = self:RandomChoice(self:GetProcessedValue("ExitBipodSound", true))
+    }
+    self:PlayTranslatedSound(soundtab1)
+    self:SetEnterBipodTime(CurTime())
+
+    self:PlayAnimation(self.SightIsAlsoBipodAnims and "exit_sights" or "exit_bipod", 1, true)
+
+    self:CancelReload()
+
+    self:ExitSights()
+
+    
+    -- our change
+    self:SendWeapon()
 end

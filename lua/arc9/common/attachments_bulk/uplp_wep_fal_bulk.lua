@@ -59,7 +59,37 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"use_optics"}
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_grenadier.mdl"
+ATT.LHIK = true
+-- ATT.LHIKHook = function(wep, val) if wep:GetBipod() then return false end end
+-- ATT.LHIKHook = function(wep, val) return false end
+ATT.LHIK_Priority = 0
+-- ATT.LHIK_PriorityHook = function(wep, val) if wep:GetBipod() then return -10 end end
+ATT.ModelOffset = Vector(-2, -0.5, -3.5)
+
+ATT.Bipod = true
+
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_aus")
+
+---------- uplp_fal_hg_aus_extralhik
+ATT = {}
+
+ATT.PrintName = "YOU SHOULD NOT SEE THIS ATT Australian Handguard, Bipod and Reinforced Barrel"
+ATT.Description = ATT.PrintName
+ATT.AttNotForNPCs = true
+ATT.Icon = Material(iconfolder .. "hgaussie.png", "mips smooth")
+
+ATT.Category = "uplp_fal_hg_extra"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Model = "models/weapons/arc9/uplp/mp5_lhik_kurz.mdl"
+ATT.LHIK = true
+-- ATT.LHIKHook = function(wep, val) print(val, wep) return false  end
+ATT.LHIK_Priority = 1
+-- ATT.LHIK_PriorityHook = function(wep, val) print(val, wep) return 11  end
+ATT.ModelOffset = Vector(-25.5, -2.2, 2.5)
+
+ARC9.LoadAttachment(ATT, "uplp_fal_hg_aus_extralhik")
 
 ---------- uplp_fal_hg_sniper
 ATT = {}
@@ -331,9 +361,9 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock"},
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
-        Pos = Vector(1.5, -0.105, 0.4),
+        Pos = Vector(1.95, -0.105, 0.4),
         Ang = Angle(0, 0, 0),
-        Scale = 1.2
+        Scale = 1.05
     },
 }
 
@@ -378,6 +408,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.ClipSizeAdd = 10
 
+--drop mag mdl = models/weapons/arc9/uplp/fal_mag_30.mdl
+
 -- Negatives
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -402,6 +434,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.ClipSizeAdd = 10
 
+--drop mag mdl = models/weapons/arc9/uplp/fal_mag_30u.mdl
+
 -- Negatives
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -411,3 +445,8 @@ end
 -- ATT.ActivateElements = {"use_optics"}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_mag_30u")
+
+
+-- add uplp_fal_muzzle_long
+-- add uplp_fal_muzzle_break
+-- add suit SCOPE
