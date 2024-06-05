@@ -864,19 +864,11 @@ SWEP.AttachmentElements = {
 
 }
 
-local fuckthis = 0
-SWEP.Hook_Think = function(swep)
-    if fuckthis < CurTime() then
-        fuckthis = CurTime() + 0.5
-        if swep:GetElements()["uplp_m9_receiver_raffica"] then
-            local vm, wm = swep:GetVM(), swep:GetWM()
-            if IsValid(vm) then vm:SetPoseParameter("raffica", 1) end -- different animations for raffica
-            if IsValid(wm) then wm:SetPoseParameter("raffica", 1) end -- tpik
-        else
-            local vm, wm = swep:GetVM(), swep:GetWM()
-            if IsValid(vm) then vm:SetPoseParameter("raffica", 0) end
-            if IsValid(wm) then wm:SetPoseParameter("raffica", 0) end
-        end
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    if swep:GetElements()["uplp_m9_receiver_raffica"] then
+        ent:SetPoseParameter("raffica", 1) -- different animations for raffica
+    else
+        ent:SetPoseParameter("raffica", 0)
     end
 end
 
