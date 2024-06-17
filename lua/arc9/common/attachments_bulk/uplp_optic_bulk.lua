@@ -163,7 +163,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 511
+ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = 0.01
 
@@ -302,7 +302,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 180
+ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = 0.01
 
@@ -1025,7 +1025,7 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 250
+ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
@@ -1072,7 +1072,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 250
+ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
 
 ATT.Category = "uplp_optic_small"
@@ -1116,7 +1116,7 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 700
+ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
@@ -1157,7 +1157,7 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 700
+ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 
 ATT.Category = {"uplp_optic_direct"}
@@ -2192,7 +2192,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 700
+ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_mid"
