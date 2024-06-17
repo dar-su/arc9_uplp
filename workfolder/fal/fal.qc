@@ -65,6 +65,8 @@ $bodygroup "muzzle" { // 5
 	studio "mz snip snip.smd"
 	studio "mz snip shrt.smd"
 	
+	studio "mz snip.smd"
+	
 	blank
 }
 $bodygroup "tacmount" { // 5

@@ -102,6 +102,11 @@ ATT.Icon = Material(iconfolder .. "hgsnip.png", "mips smooth")
 ATT.Category = "uplp_fal_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_a1.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(-5, -0.1, -1.6)
+
 -- Positives
 
 -- Negatives
@@ -133,6 +138,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"use_optics"}
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+
 ATT.Element = {
     AttPosMods = {
         [3] = { Pos = Vector(0, 1.34, 32.5) }, -- Muzzle
@@ -144,23 +154,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.4),
-        Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, -1),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
-        Category = {"uplp_tac"},
-        Bone = "body",
-        Pos = Vector(0.9, 1.1, 0.15),
-        Ang = Angle(0, 0, 90),
-        ExcludeElements = {"uplp_no_tactical"},
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
-        DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(3, 0, 1.4),
+        Pos = Vector(5, 0, 1.4),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
@@ -187,6 +181,11 @@ ATT.Icon = Material(iconfolder .. "hgshort.png", "mips smooth")
 ATT.Category = "uplp_fal_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+
 -- Positives
 
 -- Negatives
@@ -204,17 +203,9 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
-        Pos = Vector(4, 0, 1.4),
+        Pos = Vector(5, 0, 1.4),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, -1),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_tactical"),
-        Category = {"uplp_tac"},
-        Bone = "body",
-        Pos = Vector(3, 1.1, 0.15),
-        Ang = Angle(0, 0, 90),
-        ExcludeElements = {"uplp_no_tactical"},
     },
 }
 
@@ -447,6 +438,118 @@ end
 ARC9.LoadAttachment(ATT, "uplp_fal_mag_30u")
 
 
--- add uplp_fal_muzzle_long
--- add uplp_fal_muzzle_break
--- add suit SCOPE
+---------- uplp_fal_scope_suit
+
+ATT = {}
+
+ATT.PrintName = "uplp_fal_scope_suit"
+ATT.CompactName = "uplp_fal_scope_suit"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "suit.png", "mips smooth")
+
+ATT.Category = "uplp_fal_scope"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- ATT.ActivateElements = {"uplp_aug_top_scope", "uplp_optic_used"}
+
+ATT.Model = "models/weapons/arc9/uplp/optic_fal_suit.mdl"
+ATT.FoldSights = true
+
+-- magnifier stats
+local sway_mid = 1.5
+local stats_mid = {
+    SpeedAddSights = -0.15,
+    AimDownSightsTimeAdd = 0.03,
+
+    CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mid },
+}
+
+ATT.Sights = {
+    {
+        Pos = Vector(0.018, 12, -0.92),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30,
+        RTScopeFOV = 57 / 5,
+
+        SwayAddSights = sway_mid,
+    },
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(-0.5, -0.5, 0.5)
+end
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 2
+ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/suit.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
+
+ATT.ScopeScreenRatio = 0.66
+ATT.ModelOffset = Vector(-1.5, 0, 0.8)
+-- ATT.ModelOffset = Vector(1.45, 0, 1.55)
+
+table.Merge(ATT, stats_mid)
+
+ARC9.LoadAttachment(ATT, "uplp_fal_scope_suit")
+
+
+---------- uplp_fal_muz_long
+
+ATT = {}
+
+ATT.PrintName = "uplp_fal_muz_long"
+ATT.CompactName = "uplp_fal_muz_long"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "mz.png", "mips smooth")
+
+ATT.Category = "uplp_fal_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- ATT.ActivateElements = {"uplp_scar_mz"}
+
+-- Positives
+-- ATT.MuzzleParticleOverride = "muzzleflash_smg"
+-- ATT.MuzzleParticleOverride_Priority = 10
+-- ATT.MuzzleDevice = true
+
+-- ATT.RecoilRandomUpMult = 0.85
+-- ATT.RecoilRandomSideMult = 0.85
+-- ATT.SpreadAddRecoil = 0.0008
+ATT.BarrelLengthAdd = 2
+
+ARC9.LoadAttachment(ATT, "uplp_fal_muz_long")
+
+---------- uplp_fal_muz_sniper
+
+ATT = {}
+
+ATT.PrintName = "uplp_fal_muz_sniper"
+ATT.CompactName = "uplp_fal_muz_sniper"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "mzsnip.png", "mips smooth")
+
+ATT.Category = "uplp_fal_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- ATT.ActivateElements = {"uplp_scar_mz"}
+
+-- Positives
+-- ATT.MuzzleParticleOverride = "muzzleflash_smg"
+-- ATT.MuzzleParticleOverride_Priority = 10
+-- ATT.MuzzleDevice = true
+
+-- ATT.RecoilRandomUpMult = 0.85
+-- ATT.RecoilRandomSideMult = 0.85
+-- ATT.SpreadAddRecoil = 0.0008
+ATT.BarrelLengthAdd = 1
+
+ARC9.LoadAttachment(ATT, "uplp_fal_muz_sniper")
