@@ -897,6 +897,18 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
         }
     },
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["enter_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
 }
 
 ---- Attachments
@@ -945,7 +957,7 @@ local stockcol = {
     end
 
     if eles["uplp_aug_brl_mg"] and wep:GetBipod() then
-        if wep:GetEnterBipodTime() + 0.2 < CurTime() then
+        if wep:GetEnterBipodTime() + 0.1 < CurTime() then
             mdl:SetBodygroup(4, 3)
         end
     end

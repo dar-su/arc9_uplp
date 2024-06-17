@@ -342,7 +342,7 @@ L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite
 
 L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot w. O-U Magnifier"
 L["uplp_optic_devom.compactname"] = "Wraith + O-U"
-L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™. Has a unique Over-Under™ Magnifier." .. desc_magoptic
+L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™. Has a unique Over-Under™ Magnifier." .. desc_magoptic .. "\n\nWarning: does not work as intended with ARC9 Cheap Scopes on."
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"

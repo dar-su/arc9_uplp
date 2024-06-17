@@ -641,7 +641,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    ["exit_bipod_empty"] = {
+    ["enter_bipod_empty"] = {
         Source = "modeswitch_empty",
     },
     ["exit_bipod"] = {

@@ -718,6 +718,19 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
+
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["enter_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
 }
 
 ---- Attachments

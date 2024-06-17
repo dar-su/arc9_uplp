@@ -1142,6 +1142,13 @@ SWEP.Animations = {
         Source = "modeswitch",
         EventTable = thetoggle
     },
+    
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
 }
 
 SWEP.Hook_TranslateSource = function(swep, anim)
