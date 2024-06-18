@@ -52,6 +52,7 @@ L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
 L["uplp_caliber_9x39mm"] = "9×39mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
+L["uplp_caliber_308auto"] = ".308 Auto"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -86,6 +87,7 @@ L["uplp_mechanism_boltaction"] = "Bolt-action"
 L["uplp_mechanism_pumpaction"] = "Pump-Action"
 L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
 L["uplp_mechanism_closedbolt"] = "Closed bolt"
+L["uplp_mechanism_openbolt"] = "Open bolt idk"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
@@ -2466,6 +2468,8 @@ L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
 L["uplp_weapon_grenade_inc_short"] = "Incendiary"
 L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
 
+
+
 //////////////////// FAL
 L["uplp_weapon_fal"] = "FCM"
 L["uplp_weapon_fal_desc"] = "The Fusil de combat militaire (\"Military Combat Rifle\"), or FCM for short, is a battle rifle celebrated for its robust design and widespread adoption across numerous militaries. Renowned for its reliability and versatility, the FCM served as a stalwart companion on countless battlefields throughout the 20th century."
@@ -2562,39 +2566,74 @@ L["uplp_fal_scope_suit.printname"] = "BRP Scope"
 L["uplp_fal_scope_suit.compactname"] = "BRP"
 L["uplp_fal_scope_suit.description"] = "The \"British Ranged Precision\" scope provides excellent target acquisition."
 
+
+
+
+
 //////////////////// Mac-10
-L["uplp_weapon_mac10"] = "CMP-10"
-L["uplp_weapon_mac10_desc"] = "The CMP-10 (\"Civilian Machine Pistol\") is a compact, blowback-operated submachine gun designed in the late 1960s, known for its high rate of fire and simple, robust construction. Often chambered in .45 ACP or 9mm, it gained notoriety for its use in military, paramilitary, and criminal activities, becoming an iconic weapon in popular culture."
+L["uplp_weapon_mac"] = "CMP .380"
+L["uplp_weapon_mac10"] = "CMP .45"
+L["uplp_weapon_mac_desc"] = "The CMP .380 (\"Civilian Machine Pistol\")       Moka please change this desc for small mac 11                       is a compact, blowback-operated submachine gun designed in the late 1960s, known for its high rate of fire and simple, robust construction. Often chambered in .45 ACP or 9mm, it gained notoriety for its use in military, paramilitary, and criminal activities, becoming an iconic weapon in popular culture."
 
-L["uplp_weapon_mac10_real"] = "MAC-10 / MAC-11"
+L["uplp_weapon_mac_real"] = "MAC-11 / MAC-10"
 
-L["uplp_weapon_mac10_manufacturer"] = "Military Armament Corporation"
+L["uplp_weapon_mac_manufacturer"] = "Military Armament Corporation"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mac10_bar_long.printname"] = "Long barrel and Shroud"
-L["uplp_mac10_bar_long.compactname"] = "Long"
-L["uplp_mac10_bar_long.description"] = "Longer barrel for the CMP-10. Also equipped with a protective shroud."
+L["uplp_mac_bar_long.printname"] = "HEATT SHIELD  Long barrel and Shroud"
+L["uplp_mac_bar_long.compactname"] = "HEATT SHIELD"
+L["uplp_mac_bar_long.description"] = "Longer barrel for the CMP .380/.45. Also equipped with a protective shroud."
 
 ////// Muzzles
-L["uplp_mac10_muz_supp.printname"] = "CMP Suppressor"
-L["uplp_mac10_muz_supp.compactname"] = "CMP"
-L["uplp_mac10_muz_supp.description"] = "Large suppressor intended for use on the CMP-10."
+L["uplp_mac_muz_supp.printname"] = "CMP Suppressor"
+L["uplp_mac_muz_supp.compactname"] = "CMP"
+L["uplp_mac_muz_supp.description"] = "Large suppressor intended for use on the CMP .380/.45."
+
+L["uplp_mac_muz_supptac.printname"] = "tac Suppressor"
+L["uplp_mac_muz_supptac.compactname"] = "tac"
+L["uplp_mac_muz_supptac.description"] = "not Large suppressor intended for use on the CMP .380/.45."
 
 ////// Stocks
-L["uplp_mac10_stock_poly.printname"] = "Foldable Wire Stock"
-L["uplp_mac10_stock_poly.compactname"] = "Foldable"
-L["uplp_mac10_stock_poly.description"] = "Foldable wire stock for the CMP-10."
+L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
+L["uplp_mac_stock_wire.compactname"] = "Foldable"
+L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380/.45"
 
-L["uplp_mac10_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_mac10_stock_buffer.compactname"] = "Buffer"
-L["uplp_mac10_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+L["uplp_mac_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_mac_stock_buffer.compactname"] = "Buffer"
+L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+
+L["uplp_mac_stock_tac.printname"] = "tactical"
+L["uplp_mac_stock_tac.compactname"] = "tactical"
+L["uplp_mac_stock_tac.description"] = "Replace the wire stock with a tactical realism"
 
 ////// Magazines
-L["uplp_mac10_mag_30.printname"] = "30-Round 9×19mm"
-L["uplp_mac10_mag_30.compactname"] = "30R 9×19mm"
-L["uplp_mac10_mag_30.description"] = "Extended 30-round magazine for the CMP-10."
+L["uplp_mac_mag10_30.printname"] = "30-Round .45 ACP Magazine"
+L["uplp_mac_mag10_30.compactname"] = "30R .45"
+L["uplp_mac_mag10_30.description"] = "reguklar 30-round magazine for the CMP .45 converts gun into mac10 blah blah"
 
-L["uplp_mac10_mag_50.printname"] = "50-Round 9×19mm"
-L["uplp_mac10_mag_50.compactname"] = "50R 9×19mm"
-L["uplp_mac10_mag_50.description"] = "50-round drum magazine for the CMP-10."
+L["uplp_mac_mag10_50.printname"] = "50-Round .45 ACP Drum"
+L["uplp_mac_mag10_50.compactname"] = "50R .45"
+L["uplp_mac_mag10_50.description"] = "Drukm 50-round magazine for the CMP .45 converts gun into mac10 blah blah"
+
+L["uplp_mac_mag_50.printname"] = "50-Round .380 ACP Magazine"
+L["uplp_mac_mag_50.compactname"] = "50R .380"
+L["uplp_mac_mag_50.description"] = "Extended 50-round magazine for the CMP .380"
+
+// grip
+L["uplp_mac_strap.printname"] = "strap"
+L["uplp_mac_strap.compactname"] = "strap"
+L["uplp_mac_strap.description"] = "hold it bro"
+
+// recievers
+L["uplp_mac_rec_long.printname"] = "long reciever"
+L["uplp_mac_rec_long.compactname"] = "long"
+L["uplp_mac_rec_long.description"] = "its longer bro    say it some mac11 variant by cobray"
+
+L["uplp_mac_rec_rail.printname"] = "rails and side charging"
+L["uplp_mac_rec_rail.compactname"] = "railed"
+L["uplp_mac_rec_rail.description"] = "guh you can put scope and laser now"
+
+L["uplp_mac_rec_tac.printname"] = "super tactical"
+L["uplp_mac_rec_tac.compactname"] = "super tactical"
+L["uplp_mac_rec_tac.description"] = "guh you can put scope and laser now"

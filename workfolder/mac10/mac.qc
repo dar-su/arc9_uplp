@@ -54,10 +54,13 @@ $bodygroup "mag" {
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
-$attachment "2" "bolt" 0 0 0 rotate -10 140 180
+$attachment "2" "bolt" 0 0.5 1.60 rotate -10 160 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
-// $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
+
+$attachment "5" "barrel" 0 0 7.5 rotate -90 0 0
+$attachment "6" "barrel" 0 0 9.2 rotate -90 0 0
+$attachment "7" "barrel" 0 0 3.2 rotate -90 0 0
  
 $surfaceprop "default"
  
@@ -97,7 +100,7 @@ $sequence "idle_empty"{
 $sequence "fire" {
 	"anims\fire.smd"
 	"anims\fire_iron.smd"
-	fps 26
+	fps 55
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
 	fadein 0.02
@@ -106,7 +109,7 @@ $sequence "fire" {
 $sequence "fire_empty" {
 	"anims\fire_empty.smd"
 	"anims\fire_empty_iron.smd"
-	fps 30
+	fps 55
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
 	fadein 0.02
@@ -116,7 +119,7 @@ $sequence "fire_empty" {
 $sequence "fire_strap" {
 	"anims\fire_strap.smd"
 	"anims\fire_strap_iron.smd"
-	fps 26
+	fps 55
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
 	fadein 0.02
@@ -125,41 +128,41 @@ $sequence "fire_strap" {
 $sequence "fire_empty_strap" {
 	"anims\fire_empty_strap.smd"
 	"anims\fire_empty_strap_iron.smd"
-	fps 30
+	fps 55
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
 	fadein 0.02
 	fadeout 0.08
 }
 
-$sequence "ready" {
+$sequence "ready_10" {
 	"anims\ready.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 
-$sequence "ready_11" {
+$sequence "ready" {
 	"anims\ready_11.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 
-$sequence "ready_side" {
+$sequence "ready_10_side" {
 	"anims\ready_side.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 
-$sequence "ready_side11" {
+$sequence "ready_11_side" {
 	"anims\ready_side11.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
-$sequence "ready_tac" {
+$sequence "ready_11_tac" {
 	"anims\ready_tac.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
@@ -212,7 +215,7 @@ $sequence "modeswitch_empty" {
 }
 
 
-$sequence "reload" {
+$sequence "reload_10" {
 	"anims\reload.smd"
 	"anims\reload_iron.smd"
 	blend "sights" 0 1
@@ -221,7 +224,7 @@ $sequence "reload" {
 	snap
 }
 
-$sequence "reload_empty" {
+$sequence "reload_empty_10_10" {
 	"anims\reload_empty.smd"
 	"anims\reload_empty_iron.smd"
 	blend "sights" 0 1
@@ -230,7 +233,7 @@ $sequence "reload_empty" {
 	snap
 }
 
-$sequence "reload_empty_side" {
+$sequence "reload_empty_10_10_side" {
 	"anims\reload_empty_side.smd"
 	"anims\reload_empty_side_iron.smd"
 	blend "sights" 0 1
@@ -238,7 +241,7 @@ $sequence "reload_empty_side" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
-$sequence "reload_empty_side11" {
+$sequence "reload_empty_11_side" {
 	"anims\reload_empty_side11.smd"
 	"anims\reload_empty_side11_iron.smd"
 	blend "sights" 0 1
@@ -246,7 +249,7 @@ $sequence "reload_empty_side11" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
-$sequence "reload_empty_tac" {
+$sequence "reload_empty_11_tac" {
 	"anims\reload_empty_tac.smd"
 	"anims\reload_empty_tac_iron.smd"
 	blend "sights" 0 1
@@ -255,7 +258,7 @@ $sequence "reload_empty_tac" {
 	snap
 }
 
-$sequence "reload_11" {
+$sequence "reload" {
 	"anims\reload_11.smd"
 	"anims\reload_11_iron.smd"
 	blend "sights" 0 1
@@ -264,7 +267,7 @@ $sequence "reload_11" {
 	snap
 }
 
-$sequence "reload_empty_11" {
+$sequence "reload_empty" {
 	"anims\reload_empty_11.smd"
 	"anims\reload_empty_11_iron.smd"
 	blend "sights" 0 1
@@ -273,7 +276,7 @@ $sequence "reload_empty_11" {
 	snap
 }
 
-$sequence "reload_drum" {
+$sequence "reload_drum_10" {
 	"anims\reload_drum.smd"
 	"anims\reload_drum_iron.smd"
 	blend "sights" 0 1
@@ -281,7 +284,7 @@ $sequence "reload_drum" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
-$sequence "reload_empty_drum" {
+$sequence "reload_empty_drum_10" {
 	"anims\reload_empty_drum.smd"
 	"anims\reload_empty_drum_iron.smd"
 	blend "sights" 0 1
@@ -289,7 +292,7 @@ $sequence "reload_empty_drum" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
-$sequence "reload_empty_drum_side" {
+$sequence "reload_empty_drum_10_side" {
 	"anims\reload_empty_drum_side.smd"
 	"anims\reload_empty_drum_side_iron.smd"
 	blend "sights" 0 1
@@ -306,7 +309,7 @@ $sequence "reload_long" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
-$sequence "reload_empty_long_11" {
+$sequence "reload_empty_long" {
 	"anims\reload_empty_long_11.smd"
 	"anims\reload_empty_long_11_iron.smd"
 	blend "sights" 0 1
@@ -315,7 +318,7 @@ $sequence "reload_empty_long_11" {
 	snap
 }
 
-$sequence "reload_empty_long_side11" {
+$sequence "reload_empty_long_11_side" {
 	"anims\reload_empty_long_side11.smd"
 	"anims\reload_empty_long_side11_iron.smd"
 	blend "sights" 0 1
@@ -324,7 +327,7 @@ $sequence "reload_empty_long_side11" {
 	snap
 }
 
-$sequence "reload_empty_long_tac" {
+$sequence "reload_empty_long_11_tac" {
 	"anims\reload_empty_long_tac.smd"
 	"anims\reload_empty_long_tac_iron.smd"
 	blend "sights" 0 1

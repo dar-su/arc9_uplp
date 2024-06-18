@@ -830,6 +830,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.34, 28.5),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_fal_muz_long",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -838,7 +839,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.78, 1.3, 23.7),
         Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, 0, 0),
-        ExcludeElements = {"uplp_no_tactical", ""},
+        ExcludeElements = {"uplp_no_tactical"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),

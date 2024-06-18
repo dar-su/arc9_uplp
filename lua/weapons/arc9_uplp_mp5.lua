@@ -925,18 +925,10 @@ SWEP.HookP_NameChange = function(self, name)
     return name
 end
 
-local fuckthis = 0
-SWEP.Hook_Think = function(swep)
-    if fuckthis < CurTime() then
-        fuckthis = CurTime() + 0.5
-        if swep:GetElements()["uplp_weapon_mp5k"] then
-            local vm, wm = swep:GetVM(), swep:GetWM()
-            if IsValid(vm) then vm:SetPoseParameter("owo", 1) end -- different animations for mpk5
-            if IsValid(wm) then wm:SetPoseParameter("owo", 1) end -- tpik
-        else
-            local vm, wm = swep:GetVM(), swep:GetWM()
-            if IsValid(vm) then vm:SetPoseParameter("owo", 0) end
-            if IsValid(wm) then wm:SetPoseParameter("owo", 0) end
-        end
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    if swep:GetElements()["uplp_weapon_mp5k"] then
+        ent:SetPoseParameter("owo", 1) -- different animations for mpk5
+    else
+        ent:SetPoseParameter("owo", 0)
     end
 end

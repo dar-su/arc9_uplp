@@ -2012,7 +2012,7 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeFOV = 5 -- idk 
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
@@ -2089,7 +2089,7 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeFOV =  5 -- idk 
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo3rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = true
@@ -2307,7 +2307,7 @@ ATT.HoloSightColorable = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
-ATT.RTScopeFOV = 30 / 4
+ATT.RTScopeFOV = 5 -- idk 
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/devo.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
