@@ -36,11 +36,12 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.TPIKParentToSpine4 = true
 SWEP.TPIKNoSprintAnim = true
+SWEP.TPIKforcelefthand = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-8.5, 13, 5),
     Ang = Angle(0, 35, 70),
-    TPIKPos = Vector(1, 5, 2),
+    TPIKPos = Vector(1, -1, 2),
     TPIKAng = Angle(-10, 65, 90),
     Scale = 1
 }
