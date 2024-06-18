@@ -2570,59 +2570,67 @@ L["uplp_weapon_mac_manufacturer"] = "Military Armament Corporation"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mac_bar_long.printname"] = "Extended Barrel & Heat Shield"
-L["uplp_mac_bar_long.compactname"] = "Ext."
-L["uplp_mac_bar_long.description"] = "Longer barrel for the CMP .380. Also equipped with a protective heat shield."
+-- L["uplp_mac_bar_long.printname"] = "Extended Barrel & Heat Shield"
+-- L["uplp_mac_bar_long.compactname"] = "Ext."
+-- L["uplp_mac_bar_long.description"] = "Longer barrel for the CMP .380. Also equipped with a protective heat shield."
 
 ////// Muzzles
-L["uplp_mac_muz_supp.printname"] = "CMP Suppressor"
-L["uplp_mac_muz_supp.compactname"] = "CMP"
-L["uplp_mac_muz_supp.description"] = "Large suppressor intended for use on the CMP .380."
+-- L["uplp_mac_muz_supp.printname"] = "CMP Suppressor"
+-- L["uplp_mac_muz_supp.compactname"] = "CMP"
+-- L["uplp_mac_muz_supp.description"] = "Large suppressor intended for use on the CMP .380."
 
-L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Suppressor"
-L["uplp_mac_muz_supptac.compactname"] = "CI. S."
-L["uplp_mac_muz_supptac.description"] = "Compact but effective suppressor made by Centurion Industries. Intended for the CMP .380."
+-- L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Suppressor"
+-- L["uplp_mac_muz_supptac.compactname"] = "CI. S."
+-- L["uplp_mac_muz_supptac.description"] = "Compact but effective suppressor made by Centurion Industries. Intended for the CMP .380."
+
+-- L["uplp_mac_muz_supp_light.printname"] = "CMP Suppressor with Flashlight"
+-- L["uplp_mac_muz_supp_light.compactname"] = "CMP (F)"
+-- L["uplp_mac_muz_supp_light.description"] = "Large suppressor intended for use on the CMP .380.\nComes with a flashlight attached using cable ties."
 
 ////// Stocks
-L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
-L["uplp_mac_stock_wire.compactname"] = "Foldable"
-L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
+-- L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
+-- L["uplp_mac_stock_wire.compactname"] = "Foldable"
+-- L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
 
-L["uplp_mac_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_mac_stock_buffer.compactname"] = "Buffer"
-L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+-- L["uplp_mac_stock_buffer.printname"] = "Buffer Tube"
+-- L["uplp_mac_stock_buffer.compactname"] = "Buffer"
+-- L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
 
-L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks Stock"
-L["uplp_mac_stock_tac.compactname"] = "IronWorks"
-L["uplp_mac_stock_tac.description"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
+-- L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks Stock"
+-- L["uplp_mac_stock_tac.compactname"] = "IronWorks"
+-- L["uplp_mac_stock_tac.description"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
 
 ////// Magazines
-L["uplp_mac_mag10_30.printname"] = "30-Round .45 ACP Magazine"
-L["uplp_mac_mag10_30.compactname"] = "30R .45"
-L["uplp_mac_mag10_30.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
+-- L["uplp_mac_mag10_30.printname"] = "30-Round .45 ACP Magazine"
+-- L["uplp_mac_mag10_30.compactname"] = "30R .45"
+-- L["uplp_mac_mag10_30.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
 
-L["uplp_mac_mag10_50.printname"] = "50-Round .45 ACP Drum"
-L["uplp_mac_mag10_50.compactname"] = "50R .45"
-L["uplp_mac_mag10_50.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
+-- L["uplp_mac_mag10_50.printname"] = "50-Round .45 ACP Drum"
+-- L["uplp_mac_mag10_50.compactname"] = "50R .45"
+-- L["uplp_mac_mag10_50.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
 
-L["uplp_mac_mag_50.printname"] = "50-Round .380 ACP Magazine"
-L["uplp_mac_mag_50.compactname"] = "50R .380"
-L["uplp_mac_mag_50.description"] = "Extended 50-round magazine for the CMP .380."
+-- L["uplp_mac_mag_50.printname"] = "50-Round .380 ACP Magazine"
+-- L["uplp_mac_mag_50.compactname"] = "50R .380"
+-- L["uplp_mac_mag_50.description"] = "Extended 50-round magazine for the CMP .380."
 
 // Grips
-L["uplp_mac_strap.printname"] = "CMP .380 Front Strap"
-L["uplp_mac_strap.compactname"] = "FS"
-L["uplp_mac_strap.description"] = "Attach a swinging front strap to the weapon, acting as a front grip."
+-- L["uplp_mac_strap.printname"] = "CMP .380 Front Strap"
+-- L["uplp_mac_strap.compactname"] = "Strap"
+-- L["uplp_mac_strap.description"] = "Attach a swinging front strap to the weapon, acting as a front grip."
+
+-- L["uplp_mac_strap_cosmetic.printname"] = "CMP .380 Front Strap (Cosmetic Only)"
+-- L["uplp_mac_strap_cosmetic.compactname"] = "Strap (C)"
+-- L["uplp_mac_strap_cosmetic.description"] = "<color=175,175,255>Cosmetic only.</color>\nAttach a swinging front strap to the weapon."
 
 // Receivers
-L["uplp_mac_rec_long.printname"] = "CMP 9 Receiver"
-L["uplp_mac_rec_long.compactname"] = "CMP 9"
-L["uplp_mac_rec_long.description"] = "Modified receiver with a longer rear end intended for a 9x19mm version of the CMP.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+-- L["uplp_mac_rec_long.printname"] = "Ironclad Arms Receiver"
+-- L["uplp_mac_rec_long.compactname"] = "Ironclad"
+-- L["uplp_mac_rec_long.description"] = "Modified receiver with a longer rear end.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
 
-L["uplp_mac_rec_rail.printname"] = "RIS Receiver"
-L["uplp_mac_rec_rail.compactname"] = "RIS"
-L["uplp_mac_rec_rail.description"] = "Installs a custom top and side RIS-rail, allowing installation of custom optics and laser sights."
+-- L["uplp_mac_rec_rail.printname"] = "RIS Receiver"
+-- L["uplp_mac_rec_rail.compactname"] = "RIS"
+-- L["uplp_mac_rec_rail.description"] = "Installs a custom top and side RIS-rail, allowing installation of custom optics and laser sights."
 
-L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Receiver"
-L["uplp_mac_rec_tac.compactname"] = "eXtreme"
-L["uplp_mac_rec_tac.description"] = "Heavily modified receiver for the CMP .380 by SynPoly's eXtreme division.\nAllows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+-- L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Receiver"
+-- L["uplp_mac_rec_tac.compactname"] = "eXtreme"
+-- L["uplp_mac_rec_tac.description"] = "Based on the Ironclad Arms receiver, SynPoly's eXtreme division modified it further by giving it a modified upper receiver. Also installs RIS-rails, which allows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"

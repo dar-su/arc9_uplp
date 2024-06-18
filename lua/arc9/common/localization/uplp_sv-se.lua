@@ -2556,7 +2556,7 @@ L["uplp_fal_scope_suit.description"] = "\"British Ranged Precision\"-siktet erbj
 
 //////////////////// Mac-10
 L["uplp_weapon_mac"] = "CMP .380"
-L["uplp_weapon_mac_desc"] = "The CMP .380 (\"Civilian Machine Pistol\") is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
+L["uplp_weapon_mac_desc"] = "CMP .380 (\"Civilian Machine Pistol\") är en kompakt kulsprutepistol känd för sin höga eldhastighet och lilla storlek, vilket gör den lätt att dölja. Den matas med .380 ACP, har en enkel blowback-mekanism och en kantig design som har fått ett rykte om sig för tillförlitlighet och enkel användning i närstrid."
 
 L["uplp_weapon_mac_real"] = "MAC-11 | MAC-10"
 
@@ -2566,59 +2566,67 @@ L["uplp_weapon_mac_manufacturer"] = "Military Armament Corporation"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mac_bar_long.printname"] = "Extended Barrel & Heat Shield"
-L["uplp_mac_bar_long.compactname"] = "Ext."
-L["uplp_mac_bar_long.description"] = "Longer barrel for the CMP .380. Also equipped with a protective heat shield."
+L["uplp_mac_bar_long.printname"] = "Förlängd Pipa & Värmesköld"
+L["uplp_mac_bar_long.compactname"] = "Förl."
+L["uplp_mac_bar_long.description"] = "Längre pipa till CMP .380. Också utrustad med en skyddande värmesköld."
 
 ////// Muzzles
-L["uplp_mac_muz_supp.printname"] = "CMP Suppressor"
+L["uplp_mac_muz_supp.printname"] = "CMP-Ljuddämpare"
 L["uplp_mac_muz_supp.compactname"] = "CMP"
-L["uplp_mac_muz_supp.description"] = "Large suppressor intended for use on the CMP .380."
+L["uplp_mac_muz_supp.description"] = "Stor ljuddämpare gjord till CMP .380."
 
-L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Suppressor"
+L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Ljuddämpare"
 L["uplp_mac_muz_supptac.compactname"] = "CI. S."
-L["uplp_mac_muz_supptac.description"] = "Compact but effective suppressor made by Centurion Industries. Intended for the CMP .380."
+L["uplp_mac_muz_supptac.description"] = "Kompakt men effektiv ljuddämpare gjord av Centurion Industries. Gjord för CMP .380."
+
+L["uplp_mac_muz_supp_light.printname"] = "CMP-Ljuddämpare med Ficklampa"
+L["uplp_mac_muz_supp_light.compactname"] = "CMP (F)"
+L["uplp_mac_muz_supp_light.description"] = "Stor ljuddämpare gjord till CMP .380.\nUtrustad med en ficklampa tillsatt med buntband."
 
 ////// Stocks
-L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
-L["uplp_mac_stock_wire.compactname"] = "Foldable"
-L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
+L["uplp_mac_stock_wire.printname"] = "Vikbar Trådkolv"
+L["uplp_mac_stock_wire.compactname"] = "Vikbar"
+L["uplp_mac_stock_wire.description"] = "Vikbar trådkolv till CMP .380."
 
-L["uplp_mac_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_mac_stock_buffer.printname"] = "Bufferrör"
 L["uplp_mac_stock_buffer.compactname"] = "Buffer"
-L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+L["uplp_mac_stock_buffer.description"] = "Ersätt trådkolven med ett traditionellt bufferrör som accepterar AR-15-kolvar."
 
-L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks Stock"
+L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks-Kolv"
 L["uplp_mac_stock_tac.compactname"] = "IronWorks"
-L["uplp_mac_stock_tac.description"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
+L["uplp_mac_stock_tac.description"] = "Ersätt trådkolven med en förstärkt kolv från IronWorks, dotterföretag till Centurion Industries."
 
 ////// Magazines
-L["uplp_mac_mag10_30.printname"] = "30-Round .45 ACP Magazine"
-L["uplp_mac_mag10_30.compactname"] = "30R .45"
-L["uplp_mac_mag10_30.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
+L["uplp_mac_mag10_30.printname"] = "30-Patroners .45 ACP-Magasin"
+L["uplp_mac_mag10_30.compactname"] = "30P .45"
+L["uplp_mac_mag10_30.description"] = "Konverterar CMP .380 till den större CMP .45 vilket förbättrar dess prestanda med kostnad på ökad storlek och vikt.\nMatad med ett standard 30-patronersmagasin matad med .45 ACP."
 
-L["uplp_mac_mag10_50.printname"] = "50-Round .45 ACP Drum"
-L["uplp_mac_mag10_50.compactname"] = "50R .45"
-L["uplp_mac_mag10_50.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
+L["uplp_mac_mag10_50.printname"] = "50-Patroners .45 ACP-Trumma"
+L["uplp_mac_mag10_50.compactname"] = "50P .45"
+L["uplp_mac_mag10_50.description"] = "Konverterar CMP .380 till den större CMP .45 vilket förbättrar dess prestanda med kostnad på ökad storlek och vikt.\nMatad med ett större <color=100,255,100>50-patroners</color> trummagasin matad med .45 ACP."
 
-L["uplp_mac_mag_50.printname"] = "50-Round .380 ACP Magazine"
-L["uplp_mac_mag_50.compactname"] = "50R .380"
-L["uplp_mac_mag_50.description"] = "Extended 50-round magazine for the CMP .380."
+L["uplp_mac_mag_50.printname"] = "50-Patroners .380 ACP-Magasin"
+L["uplp_mac_mag_50.compactname"] = "50P .380"
+L["uplp_mac_mag_50.description"] = "Förlängt 50-patronersmagasin till CMP .380."
 
 // Grips
-L["uplp_mac_strap.printname"] = "CMP .380 Front Strap"
-L["uplp_mac_strap.compactname"] = "FS"
-L["uplp_mac_strap.description"] = "Attach a swinging front strap to the weapon, acting as a front grip."
+L["uplp_mac_strap.printname"] = "CMP .380 Främre Rem"
+L["uplp_mac_strap.compactname"] = "Rem"
+L["uplp_mac_strap.description"] = "Sätt på en svingande främre rem till vapnet som verkar som ett framgrepp."
+
+L["uplp_mac_strap_cosmetic.printname"] = "CMP .380 Främre Rem (Kosmetiskt)"
+L["uplp_mac_strap_cosmetic.compactname"] = "Rem (K)"
+L["uplp_mac_strap_cosmetic.description"] = "<color=175,175,255>Endast kosmetisk.</color>\nSätt på en svingande främre rem till vapnet."
 
 // Receivers
-L["uplp_mac_rec_long.printname"] = "CMP 9 Receiver"
-L["uplp_mac_rec_long.compactname"] = "CMP 9"
-L["uplp_mac_rec_long.description"] = "Modified receiver with a longer rear end intended for a 9x19mm version of the CMP.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+L["uplp_mac_rec_long.printname"] = "Ironclad Arms Låda"
+L["uplp_mac_rec_long.compactname"] = "Ironclad"
+L["uplp_mac_rec_long.description"] = "Modifierad låda med en längre bakre ände.\n<color=255,100,100>Ej kompatibel med CMP .45-magasin.</color>"
 
-L["uplp_mac_rec_rail.printname"] = "RIS Receiver"
+L["uplp_mac_rec_rail.printname"] = "RIS-Låda"
 L["uplp_mac_rec_rail.compactname"] = "RIS"
-L["uplp_mac_rec_rail.description"] = "Installs a custom top and side RIS-rail, allowing installation of custom optics and laser sights."
+L["uplp_mac_rec_rail.description"] = "Installerar en topp- och sidomonterad RIS-skena vilket tillåter installering av riktmedel och lasersikten."
 
-L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Receiver"
+L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Låda"
 L["uplp_mac_rec_tac.compactname"] = "eXtreme"
-L["uplp_mac_rec_tac.description"] = "Heavily modified receiver for the CMP .380 by SynPoly's eXtreme division.\nAllows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+L["uplp_mac_rec_tac.description"] = "Baserad på Ironclad Arms lådan, SynPolys eXtreme-avdelning modifierade den ännu mer genom att ge den en anpassad övre låda. Sätter också på RIS-skenor vilket tillåter installation av anpassade stolpkorn, riktmedel, framgrepp och lasersikten.\n<color=255,100,100>Ej kompatibel med CMP .45-magasin.</color>"
