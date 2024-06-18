@@ -19,9 +19,7 @@ SWEP.Trivia = {
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_mac_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_308auto"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_openbolt" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase( "uplp_mechanism_openbolt" ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1972" ),
 }
@@ -259,6 +257,13 @@ SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -60, 0)
+
+-- Peek
+SWEP.PeekPos = Vector(-0.75, 1, -4)
+SWEP.PeekAng = Angle(0, 0.4, -40)
+
+SWEP.PeekPosReloading = Vector(0.5, 1, -2)
+SWEP.PeekAngReloading = Angle(0, 0.4, -5)
 
 ---- Sounds
 
