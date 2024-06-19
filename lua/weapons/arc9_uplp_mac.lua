@@ -831,6 +831,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if mac10 or tac then
         if eles["uplp_mac_bar_long"] then mdl:SetBodygroup(2, 5)
         elseif eles["uplp_mac_muz_supp"] then mdl:SetBodygroup(2, 1)
+        elseif eles["uplp_mac_muz_supp_surv"] then mdl:SetBodygroup(2, 7)
         elseif eles["uplp_mac_muz_supptac"] then mdl:SetBodygroup(2, 3) end
     elseif folded and eles["uplp_mac_stock_wire"] then
         mdl:SetBodygroup(3, 2)
@@ -862,6 +863,7 @@ SWEP.AttachmentElements = {
 
     ["uplp_mac_bar_long"] = { Bodygroups = { { 2, 6 } } },
     ["uplp_mac_muz_supp"] = { Bodygroups = { { 2, 2 } } },
+    ["uplp_mac_muz_supp_surv"] = { Bodygroups = { { 2, 8 } } },
     ["uplp_mac_muz_supptac"] = { Bodygroups = { { 2, 4 } } },
 
     ["uplp_mac_stock_wire"] = { Bodygroups = { { 3, 1 } } },

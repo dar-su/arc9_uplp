@@ -24,6 +24,9 @@ $bodygroup "muzzle" {
 	studio "silencer tac 11.smd"
 	studio "heatshield.smd"
 	studio "heatshield 11.smd"
+
+	studio "silencer survivor.smd"
+	studio "silencer survivor 11.smd"
 }  
 $bodygroup "stock" {
 	blank

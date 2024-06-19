@@ -296,7 +296,7 @@ ATT = {}
 ATT.PrintName = "uplp_mac_strap"
 ATT.CompactName = "uplp_mac_strap"
 ATT.Description = ATT.PrintName
-ATT.SortOrder = -1
+ATT.SortOrder = -2
 
 ATT.Icon = Material(iconfolder .. "strip.png", "mips smooth")
 
@@ -322,6 +322,27 @@ ATT.LHIK_Priority = 1
 -- ATT.RecoilAutoControlMult = 0.8
 
 ARC9.LoadAttachment(ATT, "uplp_mac_strap")
+
+---------- uplp_mac_strap_cosmetic
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_mac_strap_cosmetic"
+ATT.CompactName = "uplp_mac_strap_cosmetic"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = -1
+
+ATT.ActivateElements = {"uplp_mac_strap"}
+
+ATT.Icon = Material(iconfolder .. "strip.png", "mips smooth")
+
+ATT.Category = "uplp_mac_grip"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ExcludeElements = {"uplp_mac_rec_tac"}
+
+ARC9.LoadAttachment(ATT, "uplp_mac_strap_cosmetic")
 
 ---------- uplp_mac_bar_long
 
@@ -405,6 +426,72 @@ ATT.SpreadAddHot = 0.03
 ATT.RPMMultHot = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_mac_muz_supp")
+
+---------- uplp_mac_muz_supp_surv
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_mac_muz_supp_surv"
+ATT.CompactName = "uplp_mac_muz_supp_surv"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "silsurv.png", "mips smooth")
+
+ATT.Category = "uplp_mac_muz"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- ATT.ActivateElements = {"uplp_grip_used"}
+
+ATT.Model = "models/weapons/arc9/uplp/mac11_lhik_survivor.mdl"
+ATT.ModelOffset = Vector(-19.9, -3.1, 2.6) -- check offset pls
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+
+
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 45,
+        FlashlightAttachment = 1,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
+
+
+-- -- Positives
+-- ATT.SprintToFireTimeAdd = -0.01
+-- ATT.AimDownSightsTimeAdd = -0.02
+-- ATT.DeployTimeMult = 0.85
+
+-- -- Negatives
+-- ATT.RecoilMult = 1.2
+-- ATT.RecoilAutoControlMult = 0.8
+
+ATT.CustomizePos = Vector(16.5, 27, 4.5)
+ATT.MuzzleEffectQCA = 6
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
+
+ATT.Overheat = true
+ATT.HeatCapacityMult = 1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.03
+ATT.RPMMultHot = 0.85
+
+ARC9.LoadAttachment(ATT, "uplp_mac_muz_supp_surv")
 
 ---------- uplp_mac_muz_supptac
 
