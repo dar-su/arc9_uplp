@@ -2593,7 +2593,7 @@ L["uplp_mac_muz_supptac.description"] = "Compact but effective suppressor made b
 
 L["uplp_mac_muz_supp_surv.printname"] = "CMP Suppressor with Flashlight"
 L["uplp_mac_muz_supp_surv.compactname"] = "CMP (F)"
-L["uplp_mac_muz_supp_surv.description"] = "Large suppressor intended for use on the CMP .380.\nComes with a flashlight attached using cable ties. make some reference to certain videogame here"
+L["uplp_mac_muz_supp_surv.description"] = "Large suppressor intended for use on the CMP .380.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
 
 ////// Stocks
 L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"

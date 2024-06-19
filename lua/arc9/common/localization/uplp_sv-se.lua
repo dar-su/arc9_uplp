@@ -2579,9 +2579,9 @@ L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Ljuddämpare"
 L["uplp_mac_muz_supptac.compactname"] = "CI. S."
 L["uplp_mac_muz_supptac.description"] = "Kompakt men effektiv ljuddämpare gjord av Centurion Industries. Gjord för CMP .380."
 
-L["uplp_mac_muz_supp_light.printname"] = "CMP-Ljuddämpare med Ficklampa"
-L["uplp_mac_muz_supp_light.compactname"] = "CMP (F)"
-L["uplp_mac_muz_supp_light.description"] = "Stor ljuddämpare gjord till CMP .380.\nUtrustad med en ficklampa tillsatt med buntband."
+L["uplp_mac_muz_supp_surv.printname"] = "CMP-Ljuddämpare med Ficklampa"
+L["uplp_mac_muz_supp_surv.compactname"] = "CMP (F)"
+L["uplp_mac_muz_supp_surv.description"] = "Stor ljuddämpare gjord till CMP .380.\nUtrustad med en ficklampa tillsatt med buntband.\nPerfekt för överlevare som behöver se i mörkret på väg till det säkra rummet."
 
 ////// Stocks
 L["uplp_mac_stock_wire.printname"] = "Vikbar Trådkolv"
