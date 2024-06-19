@@ -444,7 +444,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.ActivateElements = {"uplp_grip_used"}
 
 ATT.Model = "models/weapons/arc9/uplp/mac11_lhik_survivor.mdl"
-ATT.ModelOffset = Vector(-19.9, -3.1, 2.6) -- check offset pls
+ATT.ModelOffset = Vector(-20.6, -3.1, 2.6) -- check offset pls
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 

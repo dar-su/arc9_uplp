@@ -407,7 +407,7 @@ SWEP.Hook_TranslateSource = function(swep, anim)
 
 
     if anim == "fire" or anim == "fire_empty" then
-        if eles["uplp_mac_strap"] then return anim .. "_strap" end
+        if eles["uplp_mac_strap"] and !eles["uplp_mac_strap_cosmetic"] then return anim .. "_strap" end
     end
 
     if anim == "ready" or anim == "reload_empty" or anim == "reload_empty_drum" or anim == "reload_empty_long" or anim == "reload_empty_10" then
@@ -817,7 +817,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    local mac10, grip, tac, long, folded = eles["uplp_mac_mac10"], eles["uplp_grip_used"], eles["uplp_mac_rec_tac"], eles["uplp_mac_rec_long"], eles["uplp_foldedstock"] and eles["uplp_mac_rec_rail"]
+    local mac10, grip, tac, long, folded = eles["uplp_mac_mac10"], eles["uplp_grip_used"], eles["uplp_mac_rec_tac"], eles["uplp_mac_rec_long"], eles["uplp_foldedstock"]
 
     if mac10 then
         if eles["uplp_mac_rec_rail"] then mdl:SetBodygroup(0, 5) end
@@ -922,6 +922,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, -0.5, 0),
         RequireElements = {"use_optics"},
+        ExcludeElements = {"uplp_mac_muz_supp_surv"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
