@@ -80,12 +80,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 5
-SWEP.DamageMin = 1
+SWEP.DamageMax = 20
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 0.9,
     [HITGROUP_LEFTARM] = 0.8,
@@ -98,8 +98,8 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 3 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -113,9 +113,9 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 32
 
 -- Recoil
-SWEP.Recoil = 0.8
-SWEP.RecoilUp = 0.65
-SWEP.RecoilSide = 0.75
+SWEP.Recoil = 1
+SWEP.RecoilUp = 1
+SWEP.RecoilSide = 0.8
 
 SWEP.RecoilRandomUp = 1
 SWEP.RecoilRandomSide = 1
@@ -149,31 +149,31 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.008
+SWEP.SpreadAddHipFire = 0.01
 
-SWEP.SpreadAddRecoil = 0.02
-SWEP.SpreadAddMove = 0.01
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddRecoil = 0.022
+SWEP.SpreadAddMove = 0.005
+SWEP.SpreadAddMidAir = 0.04
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 10
-SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilDissipationRate = 18
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 11
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.75 -- When aiming
-SWEP.SpeedMultShooting = 0.85
+SWEP.SpeedMultSights = 0.8 -- When aiming
+SWEP.SpeedMultShooting = 0.9
 
 SWEP.BarrelLength = 28
 
-SWEP.AimDownSightsTime = 0.32
-SWEP.SprintToFireTime = 0.3
+SWEP.AimDownSightsTime = 0.26
+SWEP.SprintToFireTime = 0.28
 
 -- Shooting and Firemodes
 SWEP.RPM = 1200 -- How fast gun shoot
@@ -252,7 +252,7 @@ SWEP.CustomizeSnapshotFOV = 90
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mac11_mag.mdl"
-SWEP.DropMagazineTime = 0.25*1.1
+SWEP.DropMagazineTime = 0.25 * 1.1
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
@@ -404,13 +404,13 @@ end
 
 SWEP.Hook_TranslateSource = function(swep, anim)
     local eles = swep:GetElements()
-    
+
 
     if anim == "fire" or anim == "fire_empty" then
         if eles["uplp_mac_strap"] then return anim .. "_strap" end
     end
-    
-    if anim == "ready" or anim == "reload_empty" or anim == "reload_empty_drum" or anim == "reload_empty_long" or anim == "reload_empty_10" then 
+
+    if anim == "ready" or anim == "reload_empty" or anim == "reload_empty_drum" or anim == "reload_empty_long" or anim == "reload_empty_10" then
         local postfix = ""
 
         if eles["uplp_mac_rec_rail"] and eles["uplp_mac_mac10"] then postfix = "_10_side"
@@ -452,7 +452,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -470,7 +470,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -511,9 +511,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -538,9 +538,9 @@ SWEP.Animations = {
     ["reload_10"] = {
         Source = "reload_10",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -564,9 +564,9 @@ SWEP.Animations = {
     ["reload_drum"] = {
         Source = "reload_drum_10",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -590,9 +590,9 @@ SWEP.Animations = {
     ["reload_long"] = {
         Source = "reload_long",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -616,9 +616,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -644,9 +644,9 @@ SWEP.Animations = {
     ["reload_empty_10"] = {
         Source = "reload_empty_10",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -672,9 +672,9 @@ SWEP.Animations = {
     ["reload_empty_drum"] = {
         Source = "reload_empty_drum",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -700,9 +700,9 @@ SWEP.Animations = {
     ["reload_empty_long"] = {
         Source = "reload_empty_long",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -832,8 +832,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         if eles["uplp_mac_bar_long"] then mdl:SetBodygroup(2, 5)
         elseif eles["uplp_mac_muz_supp"] then mdl:SetBodygroup(2, 1)
         elseif eles["uplp_mac_muz_supptac"] then mdl:SetBodygroup(2, 3) end
-    elseif folded and eles["uplp_mac_stock_wire"] then 
-        mdl:SetBodygroup(3, 2) 
+    elseif folded and eles["uplp_mac_stock_wire"] then
+        mdl:SetBodygroup(3, 2)
     end
 
     if long or tac then
@@ -971,7 +971,7 @@ SWEP.Attachments = {
 
 
     -- Cosmetic shit
-    
+
     -- sticker A
 
     { -- mac 11
@@ -1070,7 +1070,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.35, -2),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_mac_mac10"},        
+        RequireElements = {"uplp_mac_mac10"},
         ExcludeElements = {"uplp_mac_stock_buffer", "uplp_mac_stock_tac"},
     },
     { -- mac 10 with buffer tube
@@ -1080,7 +1080,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.35, -2),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_mac_mac10", "uplp_mac_stock_buffer"},        
+        RequireElements = {"uplp_mac_mac10", "uplp_mac_stock_buffer"},
         ExcludeElements = {"uplp_mac_stock_tac"},
     },
     { -- mac 10 with tactical stock
@@ -1090,7 +1090,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.35, -2),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_mac_mac10", "uplp_mac_stock_tac"},        
+        RequireElements = {"uplp_mac_mac10", "uplp_mac_stock_tac"},
         ExcludeElements = {"uplp_mac_stock_buffer"},
     },
 
