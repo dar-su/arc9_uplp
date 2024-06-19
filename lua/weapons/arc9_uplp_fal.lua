@@ -100,11 +100,11 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8
 
 -- Range
-SWEP.RangeMin = 25 / ARC9.HUToM
-SWEP.RangeMax = 100 / ARC9.HUToM
+SWEP.RangeMin = 30 / ARC9.HUToM
+SWEP.RangeMax = 120 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 870 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 840 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -115,12 +115,12 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1.25
-SWEP.RecoilUp = 1.35
-SWEP.RecoilSide = 1.2
+SWEP.Recoil = 1
+SWEP.RecoilUp = 1.55
+SWEP.RecoilSide = 1.25
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 1.1
+SWEP.RecoilRandomSide = 1.1
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -151,29 +151,29 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.0045
-SWEP.SpreadAddHipFire = 0.03 - 0.01
+SWEP.Spread = 0.003
+SWEP.SpreadAddHipFire = 0.035
 
-SWEP.SpreadAddRecoil = 0.015
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddRecoil = 0.013
+SWEP.SpreadAddMove = 0.012
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
+SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilPerShot = 1 / 8
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.6 / 0.85 -- When aiming
+SWEP.Speed = 0.8
+SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.37 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.37 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.38
+SWEP.SprintToFireTime = 0.42
 
 SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 40
@@ -189,7 +189,7 @@ SWEP.Firemodes = {
     PoseParam = 1 },
     { Mode = 1, -- Semi
     RPM = 350,
-	RecoilMult = 0.66,
+    RecoilMult = 0.66,
     PoseParam = 2 }
 }
 
@@ -330,7 +330,7 @@ SWEP.BulletBones = {
     [3] = "bullet3",
     [4] = "bullet4",
 }
-SWEP.BulletBonesSub1 = true 
+SWEP.BulletBonesSub1 = true
 
 SWEP.HideBones = {
     "mag",
@@ -403,8 +403,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.6,
-		FireASAP = true,
+        MinProgress = 0.6,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -420,8 +420,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-		MinProgress = 0.6,
-		FireASAP = true,
+        MinProgress = 0.6,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -456,9 +456,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.865,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.865,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -483,9 +483,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.9,
-		PeekProgress = 0.825,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -513,9 +513,9 @@ SWEP.Animations = {
     ["reload_10"] = {
         Source = "reload10",
         MinProgress = 0.9,
-		PeekProgress = 0.865,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.865,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -540,9 +540,9 @@ SWEP.Animations = {
     ["reload_empty_10"] = {
         Source = "reload_empty10",
         MinProgress = 0.9,
-		PeekProgress = 0.825,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -571,9 +571,9 @@ SWEP.Animations = {
     ["reload_30"] = {
         Source = "reload30",
         MinProgress = 0.9,
-		PeekProgress = 0.865,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.865,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -598,9 +598,9 @@ SWEP.Animations = {
     ["reload_empty_30"] = {
         Source = "reload_empty30",
         MinProgress = 0.9,
-		PeekProgress = 0.825,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
@@ -630,9 +630,9 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = {"inspect"},
         EventTable = {
-			{ s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
-			{ s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
-			{ s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = pathUTScar .. "chpull.ogg", t = 88 / 30, c = ca, v = 1 },
             { s = pathUTScar .. "chrelease.ogg", t = 112 / 30, c = ca, v = 1 },
@@ -650,9 +650,9 @@ SWEP.Animations = {
     ["inspect_empty"] = {
         Source = {"inspect_empty"},
         EventTable = {
-			{ s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
-			{ s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
-			{ s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_3.ogg", t = 100 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 110 / 30, c = ca, v = 0.8 },
@@ -737,7 +737,7 @@ SWEP.DefaultBodygroups = "00000000070" -- Might as well prepare for the future
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-	
+
     local short, long, rail = eles["uplp_fal_hg_paras"], eles["uplp_fal_hg_sniper"] or eles["uplp_fal_hg_para"], eles["uplp_fal_hg_para"] or eles["uplp_fal_hg_paras"]
 
     if eles["uplp_fal_muz_long"] then
@@ -764,7 +764,7 @@ SWEP.Hook_ModifyElements = function(wep, eles)
         eles["extralhik"] = true
     end
 
-    return eles 
+    return eles
 end
 
 SWEP.AttachmentElements = {
@@ -772,35 +772,35 @@ SWEP.AttachmentElements = {
     -- Receiver; Barrel / Handguard
     ["uplp_optic_used"] =  { Bodygroups = { { 3, 2 }, { 6, 1 } } },
     ["uplp_tac_used"] =  { Bodygroups = { { 10, 0 } } },
-	
+
     -- Receiver; Receiver / Top Rail
     ["uplp_fal_rec_para"] =  { Bodygroups = { { 0, 1 }, { 6, 1 } } },
-	
+
     -- Receiver; Barrel / Handguard
     ["uplp_fal_hg_poly"] =  { Bodygroups = { { 1, 0 }, { 2, 1 } } },
     ["uplp_fal_hg_aus"] =  { Bodygroups = { { 1, 1 }, { 2, 2 } } },
     ["uplp_fal_hg_sniper"] =  { Bodygroups = { { 1, 2 }, { 2, 3 } } },
-    ["uplp_fal_hg_para"] =  { Bodygroups = { { 1, 2 }, { 2, 4 }, { 10, 0 } }, 
+    ["uplp_fal_hg_para"] =  { Bodygroups = { { 1, 2 }, { 2, 4 }, { 10, 0 } },
     AttPosMods = {[4] = { Pos = Vector(-1.17, 0.65, 17.5), }} },
-    ["uplp_fal_hg_paras"] =  { Bodygroups = { { 1, 3 }, { 2, 5 }, { 10, 0 } }, 
+    ["uplp_fal_hg_paras"] =  { Bodygroups = { { 1, 3 }, { 2, 5 }, { 10, 0 } },
     AttPosMods = {[4] = { Pos = Vector(-1.17, 0.65, 14.1), }} },
-	
+
     -- Pistol Grip
     ["uplp_fal_pg_poly"] =  { Bodygroups = { { 4, 1 } } },
     ["uplp_fal_pg_sniper"] =  { Bodygroups = { { 4, 2 } } },
     ["uplp_fal_pg_tac"] =  { Bodygroups = { { 4, 3 } } },
-	
+
     -- Stocks; Stock / Carrying Handle
     ["uplp_fal_stock_poly"] =  { Bodygroups = { { 7, 1 }, { 5, 1 } } },
     ["uplp_fal_stock_para"] =  { Bodygroups = { { 7, 2 }, { 5, 2 } } },
     ["uplp_fal_stock_sniper"] =  { Bodygroups = { { 7, 3 }, { 5, 2 } } },
     ["uplp_fal_stock_buffer"] =  { Bodygroups = { { 7, 4 }, { 5, 2 } } },
-	
+
     -- Pistol Grip
     ["uplp_fal_mag_10"] =  { Bodygroups = { { 8, 1 } } },
     ["uplp_fal_mag_30u"] =  { Bodygroups = { { 8, 2 } } },
     ["uplp_fal_mag_30"] =  { Bodygroups = { { 8, 3 } } },
-	
+
     -- BARRELS
     -- ["uplp_ak_brl_comp"] =  { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.76, 17.7), }}},
     -- ["uplp_ak_brl_su"] =    { Bodygroups = { { 2, 5 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.75, 14.3), }, [12] = { Pos = Vector(0.73, 2.1, 12.7), }}},
@@ -1025,7 +1025,7 @@ function SWEP:ExitBipod(force)
 
     self:ExitSights()
 
-    
+
     -- our change
     self:SendWeapon()
 end

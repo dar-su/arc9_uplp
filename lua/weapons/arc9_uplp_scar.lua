@@ -168,6 +168,7 @@ SWEP.RecoilModifierCap = 1
 -- Weapon handling
 SWEP.SpeedMult = 0.82
 SWEP.SpeedMultSights = 0.65
+SWEP.SpeedMultShooting = 0.8
 
 SWEP.BarrelLength = 40
 
