@@ -171,6 +171,7 @@ SWEP.SpeedMult = 0.97 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 SWEP.SpeedMultShooting = 0.85
 
+SWEP.SwayAddSights = 1 -- Either using Kurz handguard or any stock removes this
 SWEP.BarrelLength = 28
 
 SWEP.AimDownSightsTime = 0.36 - 0.1

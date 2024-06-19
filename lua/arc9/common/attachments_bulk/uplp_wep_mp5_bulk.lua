@@ -69,6 +69,7 @@ ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.015
 ATT.SpeedMultSights = 1.05
+ATT.SwayAddSights = -1
 
 -- Negatives
 ATT.SpreadAdd = 0.005
