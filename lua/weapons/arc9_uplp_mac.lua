@@ -99,7 +99,7 @@ SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 3 / ARC9.HUToM
-SWEP.RangeMax = 30 / ARC9.HUToM
+SWEP.RangeMax = 35 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 300 * 39.37
@@ -113,12 +113,12 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 32
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1.3
 SWEP.RecoilUp = 1
-SWEP.RecoilSide = 0.8
+SWEP.RecoilSide = 1.5
 
 SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomSide = 1.2
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -170,14 +170,19 @@ SWEP.SpeedMult = 0.97 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.8 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
+SWEP.SwayAddSights = 0 -- No sway by default (pistol form factor). Muzzle/Receiver options add up to 1 sway, which any stock will cancel.
 SWEP.BarrelLength = 28
 
-SWEP.AimDownSightsTime = 0.26
-SWEP.SprintToFireTime = 0.28
+SWEP.AimDownSightsTime = 0.22
+SWEP.SprintToFireTime = 0.22
 
 -- Shooting and Firemodes
 SWEP.RPM = 1200 -- How fast gun shoot
-SWEP.HeatCapacity = 90 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
+SWEP.HeatCapacity = 70 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
+SWEP.HeatLockout = false
+SWEP.MalfunctionWait = 0
+SWEP.HeatDissipation = 5.5
+SWEP.HeatPerShot = 1
 
 SWEP.Num = 1 -- How many bullets shot at once
 
