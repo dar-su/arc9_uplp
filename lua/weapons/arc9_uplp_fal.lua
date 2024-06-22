@@ -117,7 +117,7 @@ SWEP.ClipSize = 20
 -- Recoil
 SWEP.Recoil = 1
 SWEP.RecoilUp = 1.55
-SWEP.RecoilSide = 1.25
+SWEP.RecoilSide = 1.2
 
 SWEP.RecoilRandomUp = 1.1
 SWEP.RecoilRandomSide = 1.1
@@ -142,7 +142,7 @@ SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .1
 
-SWEP.VisualRecoilMultHipFire = 1
+SWEP.VisualRecoilMultHipFire = 0.5
 SWEP.VisualRecoilUpHipFire = 0.75
 SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 20
@@ -172,8 +172,8 @@ SWEP.Speed = 0.8
 SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.38
-SWEP.SprintToFireTime = 0.42
+SWEP.AimDownSightsTime = 0.4
+SWEP.SprintToFireTime = 0.43
 
 SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 40
