@@ -583,16 +583,9 @@ ATT.Icon = Material(iconfolder .. "mz.png", "mips smooth")
 ATT.Category = "uplp_fal_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.ActivateElements = {"uplp_scar_mz"}
+ATT.SpreadAddRecoil = -0.0025
+ATT.SpreadAddHipFire = 0.005
 
--- Positives
--- ATT.MuzzleParticleOverride = "muzzleflash_smg"
--- ATT.MuzzleParticleOverride_Priority = 10
--- ATT.MuzzleDevice = true
-
--- ATT.RecoilRandomUpMult = 0.85
--- ATT.RecoilRandomSideMult = 0.85
--- ATT.SpreadAddRecoil = 0.0008
 ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_fal_muz_long")
@@ -612,14 +605,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.ActivateElements = {"uplp_scar_mz"}
 
--- Positives
--- ATT.MuzzleParticleOverride = "muzzleflash_smg"
--- ATT.MuzzleParticleOverride_Priority = 10
--- ATT.MuzzleDevice = true
-
--- ATT.RecoilRandomUpMult = 0.85
--- ATT.RecoilRandomSideMult = 0.85
--- ATT.SpreadAddRecoil = 0.0008
+ATT.RecoilSideMult = 0.85
+ATT.RecoilUpMult = 1.2
 ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_fal_muz_sniper")
