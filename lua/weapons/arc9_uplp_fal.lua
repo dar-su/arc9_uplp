@@ -275,12 +275,12 @@ SWEP.ShootSoundSilenced = {
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUTScar .. "308tails/fire-dist-308-rif-ext-01.ogg",
-    pathUTScar .. "308tails/fire-dist-308-rif-ext-02.ogg",
-    pathUTScar .. "308tails/fire-dist-308-rif-ext-03.ogg",
-    pathUTScar .. "308tails/fire-dist-308-rif-ext-04.ogg",
-    pathUTScar .. "308tails/fire-dist-308-rif-ext-05.ogg",
-    pathUTScar .. "308tails/fire-dist-308-rif-ext-06.ogg"
+    pathUTC .. "308tails/fire-dist-308-rif-ext-01.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-02.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-03.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-04.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-05.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-06.ogg"
 }
 
 SWEP.DistantShootSoundIndoor = {
