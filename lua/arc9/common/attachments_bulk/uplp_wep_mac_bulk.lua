@@ -159,12 +159,12 @@ local shoot45 = {
     pathUT .. "fire-45-06.ogg",
 }
 local shoot40sil = {
-    pathUT .. "fire-40-sup-01.ogg",
-    pathUT .. "fire-40-sup-02.ogg",
-    pathUT .. "fire-40-sup-03.ogg",
-    pathUT .. "fire-40-sup-04.ogg",
-    pathUT .. "fire-40-sup-05.ogg",
-    pathUT .. "fire-40-sup-06.ogg",
+    pathUT2 .. "fire-40-sup-01.ogg",
+    pathUT2 .. "fire-40-sup-02.ogg",
+    pathUT2 .. "fire-40-sup-03.ogg",
+    pathUT2 .. "fire-40-sup-04.ogg",
+    pathUT2 .. "fire-40-sup-05.ogg",
+    pathUT2 .. "fire-40-sup-06.ogg",
 }
 local shoot45dist = {
     pathUT .. "fire-45-dist-01.ogg",
