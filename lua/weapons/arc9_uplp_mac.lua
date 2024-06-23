@@ -852,7 +852,7 @@ SWEP.AttachmentElements = {
     ["uplp_mac_rec_tac"] = { Bodygroups = { { 0, 3 } }, AttPosMods = {
         [1] = { Pos = Vector(0, -0.7, 0)},
         [2] = { Pos = Vector(0, 2.0, 4.5)},
-        [3] = { Pos = Vector(0.0, -0.4, 0.2)},
+        [3] = { Pos = Vector(0.1, 0.2, 1.2)},
         [4] = { Pos = Vector(0, 0.5, 7)},
         [5] = { Pos = Vector(0, 0.35, -4.6)},
     }},
