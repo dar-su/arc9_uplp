@@ -1018,8 +1018,8 @@ L["uplp_ak_stock_tube12.printname"] = "Buffer Tube"
 L["uplp_ak_stock_tube12.compactname"] = "Buffer"
 L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used on the AK M23. Allows installation of AR-15 compatible stocks.\nFun fact: The diameter of the tube is slightly different from the standard AR-15 which makes most AR-15 stocks wobbly.\n(But this is a video game so... yeet)"
 
-L["uplp_ak_stock_tube.printname"] = "Buffer Tube"
-L["uplp_ak_stock_tube.compactname"] = "Buffer"
+L["uplp_ak_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_ak_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_ak_stock_tube.description"] = "Aftermarket buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
 
 L["uplp_ak_stock_molot.printname"] = "Molot Stock"
@@ -1969,8 +1969,8 @@ L["uplp_scar_stock_hb.printname"] = "DMR Stock (Black)"
 L["uplp_scar_stock_hb.compactname"] = "DMR (B)"
 L["uplp_scar_stock_hb.description"] = "Replaces the stock with a heavy stock in black used on the XAR DMR."
 
-L["uplp_scar_stock_tube.printname"] = "Buffer Tube"
-L["uplp_scar_stock_tube.compactname"] = "Buffer"
+L["uplp_scar_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_scar_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_scar_stock_tube.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
 
 L["uplp_scar_stock_pdw.printname"] = "PDW Stock"
@@ -2047,14 +2047,6 @@ L["uplp_scar_rail_ext.compactname"] = "Ext. Rail"
 L["uplp_scar_rail_ext.description"] = "An aftermarket extended rail for the XAR."
 
 -- Expansion 1
-//////////////////// Mossberg 590
-L["uplp_weapon_mossberg"] = "Thunder 500"
-L["uplp_weapon_mossberg_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
-
-L["uplp_weapon_mossberg_real"] = "Mossberg 590"
-
-L["uplp_weapon_mossberg_manufacturer"] = "O.F. Mossberg & Sons, Inc."
-
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"
 L["uplp_weapon_spas_desc"] = "The SPAW-12, Special Purpose Assault Weapon model 12, is a versatile Italian-designed shotgun known for its ability to switch between pump-action and semi-automatic firing modes. It gained popularity for its use in various military and law enforcement roles due to its reliability and adaptability."
@@ -2082,8 +2074,8 @@ L["uplp_spas_stock_folding_hook.printname"] = "Folding Stock with Hook"
 L["uplp_spas_stock_folding_hook.compactname"] = "Folding (H)"
 L["uplp_spas_stock_folding_hook.description"] = "Collapsible folding stock for the SPAW-12.\nComes with the original hook intended for use with one handed shooting.\nWhen \"Folded\": Cannot equip <color=255,100,100>optics</color>."
 
-L["uplp_spas_stock_tube.printname"] = "Buffer Tube"
-L["uplp_spas_stock_tube.compactname"] = "Buffer Tube"
+L["uplp_spas_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_spas_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_spas_stock_tube.description"] = "Aftermarket pistol grip with built-in buffer tube for attaching AR-15 stocks."
 
 //////////////////// M92FS
@@ -2224,8 +2216,8 @@ L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 /////////// Attachments
 ////// Stocks
-L["uplp_asval_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_asval_stock_buffer.compactname"] = "Buffer Tube"
+L["uplp_asval_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_asval_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_asval_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
 
 L["uplp_asval_stock_vss.printname"] = "SK Shadow Wooden Stock"
@@ -2416,9 +2408,9 @@ L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
 L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil.\nRequires <color=175,175,255>114mm Kurz Barrel</color>."
 
 ////// Stocks
-L["uplp_mp5_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_mp5_stock_buffer.compactname"] = "Buffer Tube"
-L["uplp_mp5_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+L["uplp_mp5_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_mp5_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_mp5_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
 
 L["uplp_mp5_stock_pdw.printname"] = "Folding PDW Stock"
 L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
@@ -2540,9 +2532,9 @@ L["uplp_fal_stock_sniper.printname"] = "Marksman Stock"
 L["uplp_fal_stock_sniper.compactname"] = "Marksman"
 L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
 
-L["uplp_fal_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_fal_stock_buffer.compactname"] = "Buffer"
-L["uplp_fal_stock_buffer.description"] = "Replace the stock with a traditional buffer tube that accepts AR-15 stocks."
+L["uplp_fal_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_fal_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_fal_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
 
 ////// Magazines
 L["uplp_fal_mag_10.printname"] = "10-Round 7.62mm"
@@ -2600,8 +2592,8 @@ L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
 L["uplp_mac_stock_wire.compactname"] = "Foldable"
 L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
 
-L["uplp_mac_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_mac_stock_buffer.compactname"] = "Buffer"
+L["uplp_mac_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_mac_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
 
 L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks Stock"
@@ -2642,3 +2634,175 @@ L["uplp_mac_rec_rail.description"] = "Installs a custom top and side RIS-rail, a
 L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Receiver"
 L["uplp_mac_rec_tac.compactname"] = "eXtreme"
 L["uplp_mac_rec_tac.description"] = "Based on the Ironclad Arms receiver, SynPoly's eXtreme division modified it further by giving it a modified upper receiver. Also installs RIS-rails, which allows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+
+//////////////////// Mossberg 590
+L["uplp_weapon_m980"] = "Thunder 500"
+L["uplp_weapon_m980_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
+
+L["uplp_weapon_m980_real"] = "Mossberg 590"
+
+L["uplp_weapon_m980_manufacturer"] = "O.F. Mossberg & Sons, Inc."
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_m980_bar_long.printname"] = "20\" Home Defence Barrel"
+L["uplp_m980_bar_long.compactname"] = "20\""
+L["uplp_m980_bar_long.description"] = "Extended 20\" barrel combined with a <color=100,255,100>8 round</color> magazine tube."
+
+////// Pump handles
+L["uplp_m980_handle_big.printname"] = "Big Handle"
+L["uplp_m980_handle_big.compactname"] = "Big"
+L["uplp_m980_handle_big.description"] = "Large pump handle."
+
+L["uplp_m980_handle_flash.printname"] = "Thunder Nightlife Handle"
+L["uplp_m980_handle_flash.compactname"] = "Nightlife"
+L["uplp_m980_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
+
+////// Magazines
+L["uplp_m980_mag_5.printname"] = "5-R Detachable Magazine"
+L["uplp_m980_mag_5.compactname"] = "5R D."
+L["uplp_m980_mag_5.description"] = "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+
+L["uplp_m980_mag_9.printname"] = "8-R Detachable Magazine"
+L["uplp_m980_mag_9.compactname"] = "8R D."
+L["uplp_m980_mag_9.description"] = "Installs a detachable extended magazine onto the weapon, making full top-ups quicker."
+
+////// Stocks
+L["uplp_m980_stock_tactical.printname"] = "Tactical Stock"
+L["uplp_m980_stock_tactical.compactname"] = "Tactical"
+L["uplp_m980_stock_tactical.description"] = "Reinforced tactical stock for the Thunder 500."
+
+L["uplp_m980_stock_sawedoff.printname"] = "Sawed-Off Stock"
+L["uplp_m980_stock_sawedoff.compactname"] = "Sawed-Off"
+L["uplp_m980_stock_sawedoff.description"] = "Sawing off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
+
+L["uplp_m980_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_m980_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_m980_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+
+////// Irons
+L["uplp_m980_iron_strong.printname"] = "Reinforced Iron Sights"
+L["uplp_m980_iron_strong.compactname"] = "Reinforced"
+L["uplp_m980_iron_strong.description"] = "Modified, reinforced iron sights."
+
+L["uplp_m980_iron_railr.printname"] = "Top Rail with Ring Sight"
+L["uplp_m980_iron_railr.compactname"] = "Rail (R)"
+L["uplp_m980_iron_railr.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+
+L["uplp_m980_iron_rail.printname"] = "Top Rail"
+L["uplp_m980_iron_rail.compactname"] = "Rail"
+L["uplp_m980_iron_rail.description"] = "Top-mounted rail for optics."
+
+////// Extras & Skins
+L["uplp_m980_extra_heatshield.printname"] = "Heat Shield"
+L["uplp_m980_extra_heatshield.compactname"] = "Heat"
+L["uplp_m980_extra_heatshield.description"] = "Attaches a cosmetic heat shield over the barrel."
+
+L["uplp_m980_extra_holster.printname"] = "Shell Holster"
+L["uplp_m980_extra_holster.compactname"] = "Holster"
+L["uplp_m980_extra_holster.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
+
+//////////////////// Remington 870
+L["uplp_weapon_r870"] = "PAWCO Peacekeeper"
+L["uplp_weapon_r870_desc"] = "The PAWCO Peacekeeper is a reliable and versatile pump-action shotgun renowned for its durability and ease of use. Favored by law enforcement, hunters, and sport shooters alike, this firearm excels in various scenarios due to its robust construction and customizable features."
+
+L["uplp_weapon_r870_real"] = "Remington 870"
+
+L["uplp_weapon_r870_shorty"] = "PAWCO Breacher"
+
+L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_r870_bar_hunter.printname"] = "26\" Hunter Barrel"
+L["uplp_r870_bar_hunter.compactname"] = "26\" Hunter"
+L["uplp_r870_bar_hunter.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a 5-round tube."
+
+L["uplp_r870_bar_sport.printname"] = "20\" Sport Barrel"
+L["uplp_r870_bar_sport.compactname"] = "20\" Sport"
+L["uplp_r870_bar_sport.description"] = "Custom 20\" (508mm) barrel intended for sport shooting.\nComes with a <color=100,255,100>9-round</color> tube."
+
+L["uplp_r870_bar_ext.printname"] = "20\" Smooth Barrel"
+L["uplp_r870_bar_ext.compactname"] = "20\" Smooth"
+L["uplp_r870_bar_ext.description"] = "Smooth 20\" (508mm) barrel for the Peacekeeper.\nComes with a <color=100,255,100>9-round</color> tube."
+
+L["uplp_r870_bar_police.printname"] = "18.5\" Police Barrel"
+L["uplp_r870_bar_police.compactname"] = "18.5\" Police"
+L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Peacekeeper intended for police use.\nComes with a <color=255,100,100>5-round</color> tube."
+
+L["uplp_r870_bar_standard5.printname"] = "18.75\" Standard Barrel (5-Round)"
+L["uplp_r870_bar_standard5.compactname"] = "18.75\" 5R"
+L["uplp_r870_bar_standard5.description"] = "Default 18.75\" (476mm) barrel for the Peacekeeper.\nComes with a <color=255,100,100>5-round</color> tube."
+
+L["uplp_r870_bar_usmc.printname"] = "18.5\" USMC Barrel"
+L["uplp_r870_bar_usmc.compactname"] = "18.5\" USMC"
+L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Peacekeeper intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube."
+
+L["uplp_r870_bar_sawn.printname"] = "12.5\" Short Barrel"
+L["uplp_r870_bar_sawn.compactname"] = "12.5\" Short"
+L["uplp_r870_bar_sawn.description"] = "Shortened 12.5\" (318mm) barrel for the Peacekeeper.\nComes with a <color=255,100,100>4-round</color> tube."
+
+L["uplp_r870_bar_short.printname"] = "6.5\" Breacher"
+L["uplp_r870_bar_short.compactname"] = "6.5\" Breacher"
+L["uplp_r870_bar_short.description"] = "Super short 6.5\" (165mm) barrel from the PAWCO Breacher.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
+
+////// Pump handles
+L["uplp_r870_handle_wood.printname"] = "Wooden Pump Handle"
+L["uplp_r870_handle_wood.compactname"] = "Wooden"
+L["uplp_r870_handle_wood.description"] = "Classic wooden pump handle for the PAWCO Peacekeeper."
+
+L["uplp_r870_handle_rail.printname"] = "Tactical Pump Handle"
+L["uplp_r870_handle_rail.compactname"] = "Tactical"
+L["uplp_r870_handle_rail.description"] = "Tactical pump handle with built-in rails for foregrips and laser sights."
+
+L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Pump Handle"
+L["uplp_r870_handle_flash.compactname"] = "ApexCore"
+L["uplp_r870_handle_flash.description"] = "Custom pump handle with built-in flashlight made by ApexCore Arsenal."
+
+L["uplp_r870_handle_big.printname"] = "Big Pump Handle"
+L["uplp_r870_handle_big.compactname"] = "Big"
+L["uplp_r870_handle_big.description"] = "Big pump handle."
+
+L["uplp_r870_handle_sport.printname"] = "Sport Shooting Pump Handle"
+L["uplp_r870_handle_sport.compactname"] = "S. S."
+L["uplp_r870_handle_sport.description"] = "Special pump handle made for sport shooting."
+
+////// Magazines
+L["uplp_r870_mag_5.printname"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") or "5-R Detachable Magazine"
+L["uplp_r870_mag_5.compactname"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") or "5R D."
+L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+
+////// Stocks
+L["uplp_r870_stock_tactical.printname"] = ARC9:GetPhrase("uplp_m980_stock_tactical.printname") or "Tactical Stock"
+L["uplp_r870_stock_tactical.compactname"] = ARC9:GetPhrase("uplp_m980_stock_tactical.compactname") or "Tactical"
+L["uplp_r870_stock_tactical.description"] = "Reinforced tactical stock for the Peacekeeper."
+
+L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with No Stock"
+L["uplp_r870_stock_pistolgrip.compactname"] = "P. Grip"
+L["uplp_r870_stock_pistolgrip.description"] = "A vertical pistol grip without any rear stock."
+
+L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with Foldable Stock"
+L["uplp_r870_stock_pistolgrip.compactname"] = "P. Grip (F)"
+L["uplp_r870_stock_pistolgrip.description"] = "A vertical pistol grip with a foldable stock."
+
+L["uplp_r870_stock_sawedoff.printname"] = ARC9:GetPhrase("uplp_m980_stock_sawedoff.printname") or "Sawed-Off Stock"
+L["uplp_r870_stock_sawedoff.compactname"] = ARC9:GetPhrase("uplp_m980_stock_sawedoff.compactname") or "Sawed-Off"
+L["uplp_r870_stock_sawedoff.description"] = "Sawing off the stock off of the Peacekeeper improves maneuverability at the cost of recoil control."
+
+L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_r870_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_r870_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+
+////// Rail
+L["uplp_r870_iron_none.printname"] = "No Top Rail"
+L["uplp_r870_iron_none.compactname"] = "N/A"
+L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
+
+////// Extras & Skins
+L["uplp_r870_extra_holster.printname"] = ARC9:GetPhrase("uplp_m980_extra_holster.printname") or "Shell Holster"
+L["uplp_r870_extra_holster.compactname"] = ARC9:GetPhrase("uplp_m980_extra_holster.compactname") or "Holster"
+L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m980_extra_holster.description") or "Attaches a cosmetic shell holster to the left side of the weapon."
+
+L["uplp_r870_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_r870_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
+L["uplp_r870_skin_gold.description"] = "Replaces the receiver with a golden one.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
