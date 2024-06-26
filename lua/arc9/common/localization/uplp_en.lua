@@ -2703,12 +2703,12 @@ L["uplp_m980_extra_holster.compactname"] = "Holster"
 L["uplp_m980_extra_holster.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
 
 //////////////////// Remington 870
-L["uplp_weapon_r870"] = "PAWCO Peacekeeper"
-L["uplp_weapon_r870_desc"] = "The PAWCO Peacekeeper is a reliable and versatile pump-action shotgun renowned for its durability and ease of use. Favored by law enforcement, hunters, and sport shooters alike, this firearm excels in various scenarios due to its robust construction and customizable features."
+L["uplp_weapon_r870"] = "Wingmaster 12G"
+L["uplp_weapon_r870_desc"] = "The Wingmaster 12G is a reliable and versatile pump-action shotgun renowned for its durability and ease of use. Favored by law enforcement, hunters, and sport shooters alike, this firearm excels in various scenarios due to its robust construction and customizable features."
 
 L["uplp_weapon_r870_real"] = "Remington 870"
 
-L["uplp_weapon_r870_shorty"] = "PAWCO Breacher"
+L["uplp_weapon_r870_shorty"] = "Entryway 12G"
 
 L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
 
@@ -2724,32 +2724,32 @@ L["uplp_r870_bar_sport.description"] = "Custom 20\" (508mm) barrel intended for 
 
 L["uplp_r870_bar_ext.printname"] = "20\" Smooth Barrel"
 L["uplp_r870_bar_ext.compactname"] = "20\" Smooth"
-L["uplp_r870_bar_ext.description"] = "Smooth 20\" (508mm) barrel for the Peacekeeper.\nComes with a <color=100,255,100>9-round</color> tube."
+L["uplp_r870_bar_ext.description"] = "Smooth 20\" (508mm) barrel for the Wingmaster 12G.\nComes with a <color=100,255,100>9-round</color> tube."
 
 L["uplp_r870_bar_police.printname"] = "18.5\" Police Barrel"
 L["uplp_r870_bar_police.compactname"] = "18.5\" Police"
-L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Peacekeeper intended for police use.\nComes with a <color=255,100,100>5-round</color> tube."
+L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Wingmaster 12G intended for police use.\nComes with a <color=255,100,100>5-round</color> tube."
 
 L["uplp_r870_bar_standard5.printname"] = "18.75\" Standard Barrel (5-Round)"
 L["uplp_r870_bar_standard5.compactname"] = "18.75\" 5R"
-L["uplp_r870_bar_standard5.description"] = "Default 18.75\" (476mm) barrel for the Peacekeeper.\nComes with a <color=255,100,100>5-round</color> tube."
+L["uplp_r870_bar_standard5.description"] = "Default 18.75\" (476mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>5-round</color> tube."
 
 L["uplp_r870_bar_usmc.printname"] = "18.5\" USMC Barrel"
 L["uplp_r870_bar_usmc.compactname"] = "18.5\" USMC"
-L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Peacekeeper intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube."
+L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Wingmaster 12G intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube."
 
 L["uplp_r870_bar_sawn.printname"] = "12.5\" Short Barrel"
 L["uplp_r870_bar_sawn.compactname"] = "12.5\" Short"
-L["uplp_r870_bar_sawn.description"] = "Shortened 12.5\" (318mm) barrel for the Peacekeeper.\nComes with a <color=255,100,100>4-round</color> tube."
+L["uplp_r870_bar_sawn.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
 
-L["uplp_r870_bar_short.printname"] = "6.5\" Breacher"
-L["uplp_r870_bar_short.compactname"] = "6.5\" Breacher"
-L["uplp_r870_bar_short.description"] = "Super short 6.5\" (165mm) barrel from the PAWCO Breacher.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
+L["uplp_r870_bar_short.printname"] = "6.5\" Entryway"
+L["uplp_r870_bar_short.compactname"] = "6.5\" Entry."
+L["uplp_r870_bar_short.description"] = "Super short 6.5\" (165mm) barrel from the Entryway 12G.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
 
 ////// Pump handles
 L["uplp_r870_handle_wood.printname"] = "Wooden Pump Handle"
 L["uplp_r870_handle_wood.compactname"] = "Wooden"
-L["uplp_r870_handle_wood.description"] = "Classic wooden pump handle for the PAWCO Peacekeeper."
+L["uplp_r870_handle_wood.description"] = "Classic wooden pump handle for the Wingmaster 12G."
 
 L["uplp_r870_handle_rail.printname"] = "Tactical Pump Handle"
 L["uplp_r870_handle_rail.compactname"] = "Tactical"
@@ -2775,7 +2775,7 @@ L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") o
 ////// Stocks
 L["uplp_r870_stock_tactical.printname"] = ARC9:GetPhrase("uplp_m980_stock_tactical.printname") or "Tactical Stock"
 L["uplp_r870_stock_tactical.compactname"] = ARC9:GetPhrase("uplp_m980_stock_tactical.compactname") or "Tactical"
-L["uplp_r870_stock_tactical.description"] = "Reinforced tactical stock for the Peacekeeper."
+L["uplp_r870_stock_tactical.description"] = "Reinforced tactical stock for the Wingmaster 12G."
 
 L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with No Stock"
 L["uplp_r870_stock_pistolgrip.compactname"] = "P. Grip"
@@ -2787,7 +2787,7 @@ L["uplp_r870_stock_pistolgrip.description"] = "A vertical pistol grip with a fol
 
 L["uplp_r870_stock_sawedoff.printname"] = ARC9:GetPhrase("uplp_m980_stock_sawedoff.printname") or "Sawed-Off Stock"
 L["uplp_r870_stock_sawedoff.compactname"] = ARC9:GetPhrase("uplp_m980_stock_sawedoff.compactname") or "Sawed-Off"
-L["uplp_r870_stock_sawedoff.description"] = "Sawing off the stock off of the Peacekeeper improves maneuverability at the cost of recoil control."
+L["uplp_r870_stock_sawedoff.description"] = "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
 
 L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_r870_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
