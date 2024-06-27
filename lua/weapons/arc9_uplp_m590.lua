@@ -28,7 +28,7 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Darsu",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
@@ -67,7 +67,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_590.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl" -- Needs W-model
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_590.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -781,6 +781,8 @@ SWEP.Attachments = {
         Pos = Vector(-0.1, 0, 5),
         Ang = Angle(90, 90, 180),
 		CosmeticOnly = true,
+
+        ExcludeElements = {"uplp_r870"}, -- inheriting this, very bad, need to keep order same
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
@@ -794,7 +796,7 @@ SWEP.Attachments = {
     -- Cosmetic shit
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_1.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/590_1.mdl",
         Category = "stickers",
         Bone = "pump",
         Pos = Vector(0.5, -3.3, 8),
@@ -802,7 +804,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_2.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/590_2.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.5, 0.5, 3),
@@ -810,18 +812,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_3.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/590_3.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.5, 0.5, -1.5),
-        Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_4.mdl",
-        Category = "stickers",
-        Bone = "body",
-        Pos = Vector(0, -0.5, -3),
         Ang = Angle(90, 90, 180),
     },
     {
