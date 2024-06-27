@@ -324,6 +324,14 @@ $sequence "look" {
 	fps 30
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
+
+$sequence "look_serbu" {
+	"anims\inspect_serbu.smd"
+	snap
+	fps 30
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
 $bonemerge "ValveBiped.Bip01_L_UpperArm"
