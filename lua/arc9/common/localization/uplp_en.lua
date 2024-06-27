@@ -2636,71 +2636,87 @@ L["uplp_mac_rec_tac.compactname"] = "eXtreme"
 L["uplp_mac_rec_tac.description"] = "Based on the Ironclad Arms receiver, SynPoly's eXtreme division modified it further by giving it a modified upper receiver. Also installs RIS-rails, which allows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
 
 //////////////////// Mossberg 590
-L["uplp_weapon_m980"] = "Thunder 500"
-L["uplp_weapon_m980_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
+L["uplp_weapon_m590"] = "Thunder 500"
+L["uplp_weapon_m590_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
 
-L["uplp_weapon_m980_real"] = "Mossberg 590"
+L["uplp_weapon_m590_real"] = "Mossberg 590"
 
-L["uplp_weapon_m980_manufacturer"] = "O.F. Mossberg & Sons, Inc."
+L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 /////////// Attachments
 ////// Barrels & Tubes
-L["uplp_m980_bar_long.printname"] = "20\" Home Defence Barrel"
-L["uplp_m980_bar_long.compactname"] = "20\""
-L["uplp_m980_bar_long.description"] = "Extended 20\" barrel combined with a <color=100,255,100>8 round</color> magazine tube."
+L["uplp_m590_bar_mid.printname"] = "19\" Barrel"
+L["uplp_m590_bar_mid.compactname"] = "19\""
+L["uplp_m590_bar_mid.description"] = "Slightly extended 19\" barrel combined with a <color=100,255,100>5 round</color> magazine tube."
+
+L["uplp_m590_bar_long.printname"] = "20\" Barrel"
+L["uplp_m590_bar_long.compactname"] = "20\""
+L["uplp_m590_bar_long.description"] = "Extended 20\" barrel combined with a <color=100,255,100>6 round</color> magazine tube."
 
 ////// Pump handles
-L["uplp_m980_handle_big.printname"] = "Big Handle"
-L["uplp_m980_handle_big.compactname"] = "Big"
-L["uplp_m980_handle_big.description"] = "Large pump handle."
+L["uplp_m590_handle_strap.printname"] = "Default Handle with Strap"
+L["uplp_m590_handle_strap.compactname"] = "Strap"
+L["uplp_m590_handle_strap.description"] = "Standard issue pump handle with a cosmetic strap around it."
 
-L["uplp_m980_handle_flash.printname"] = "Thunder Nightlife Handle"
-L["uplp_m980_handle_flash.compactname"] = "Nightlife"
-L["uplp_m980_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
+L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Handle"
+L["uplp_m590_handle_flash.compactname"] = "Nightlife"
+L["uplp_m590_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
 
-////// Magazines
-L["uplp_m980_mag_5.printname"] = "5-R Detachable Magazine"
-L["uplp_m980_mag_5.compactname"] = "5R D."
-L["uplp_m980_mag_5.description"] = "Installs a detachable magazine onto the weapon, making full top-ups quicker."
-
-L["uplp_m980_mag_9.printname"] = "8-R Detachable Magazine"
-L["uplp_m980_mag_9.compactname"] = "8R D."
-L["uplp_m980_mag_9.description"] = "Installs a detachable extended magazine onto the weapon, making full top-ups quicker."
+L["uplp_m590_handle_magpul.printname"] = "PAWCO Handle"
+L["uplp_m590_handle_magpul.compactname"] = "PAWCO"
+L["uplp_m590_handle_magpul.description"] = "Tactical pump handle from PAWCO."
 
 ////// Stocks
-L["uplp_m980_stock_tactical.printname"] = "Tactical Stock"
-L["uplp_m980_stock_tactical.compactname"] = "Tactical"
-L["uplp_m980_stock_tactical.description"] = "Reinforced tactical stock for the Thunder 500."
+L["uplp_m590_stock_short.printname"] = "Cut-Off Stock"
+L["uplp_m590_stock_short.compactname"] = "Cut-Off"
+L["uplp_m590_stock_short.description"] = "Cutting off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
 
-L["uplp_m980_stock_sawedoff.printname"] = "Sawed-Off Stock"
-L["uplp_m980_stock_sawedoff.compactname"] = "Sawed-Off"
-L["uplp_m980_stock_sawedoff.description"] = "Sawing off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
+L["uplp_m590_stock_magpul.printname"] = "PAWCO Stock"
+L["uplp_m590_stock_magpul.compactname"] = "PAWCO"
+L["uplp_m590_stock_magpul.description"] = "Reinforced tactical stock by PAWCO for the Thunder 500."
 
-L["uplp_m980_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
-L["uplp_m980_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
-L["uplp_m980_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+L["uplp_m590_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_m590_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_m590_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
 
 ////// Irons
-L["uplp_m980_iron_strong.printname"] = "Reinforced Iron Sights"
-L["uplp_m980_iron_strong.compactname"] = "Reinforced"
-L["uplp_m980_iron_strong.description"] = "Modified, reinforced iron sights."
+L["uplp_m590_rs_none.printname"] = "No Rear and Front Sight"
+L["uplp_m590_rs_none.compactname"] = "None"
+L["uplp_m590_rs_none.description"] = "Removes the rear and front sights, giving a clean appearance."
 
-L["uplp_m980_iron_railr.printname"] = "Top Rail with Ring Sight"
-L["uplp_m980_iron_railr.compactname"] = "Rail (R)"
-L["uplp_m980_iron_railr.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+L["uplp_m590_rs_simple.printname"] = "Front Sight Post"
+L["uplp_m590_rs_simple.compactname"] = "FSP"
+L["uplp_m590_rs_simple.description"] = "Removes the rear sights, leaving a small front sight post for rough aiming."
 
-L["uplp_m980_iron_rail.printname"] = "Top Rail"
-L["uplp_m980_iron_rail.compactname"] = "Rail"
-L["uplp_m980_iron_rail.description"] = "Top-mounted rail for optics."
+L["uplp_m590_rs_railsight.printname"] = "Top Rail with Ring Sight"
+L["uplp_m590_rs_railsight.compactname"] = "Rail (R)"
+L["uplp_m590_rs_railsight.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+
+L["uplp_m590_rs_winged.printname"] = "Winged Rear Sight"
+L["uplp_m590_rs_winged.compactname"] = "Winged"
+L["uplp_m590_rs_winged.description"] = "Modified iron sights."
+
+L["uplp_m590_rs_rail.printname"] = "Top Rail"
+L["uplp_m590_rs_rail.compactname"] = "Rail"
+L["uplp_m590_rs_rail.description"] = "Top-mounted rail for optics."
+
+////// Magazines
+L["uplp_m590_mag_10.printname"] = "10-R Detachable Magazine"
+L["uplp_m590_mag_10.compactname"] = "10R D."
+L["uplp_m590_mag_10.description"] = "Installs a detachable extended magazine onto the weapon, making full top-ups quicker."
+
+L["uplp_m590_mag_5.printname"] = "5-R Detachable Magazine"
+L["uplp_m590_mag_5.compactname"] = "5R D."
+L["uplp_m590_mag_5.description"] = "Installs a detachable magazine onto the weapon, making full top-ups quicker."
 
 ////// Extras & Skins
-L["uplp_m980_extra_heatshield.printname"] = "Heat Shield"
-L["uplp_m980_extra_heatshield.compactname"] = "Heat"
-L["uplp_m980_extra_heatshield.description"] = "Attaches a cosmetic heat shield over the barrel."
+L["uplp_m590_heatshield.printname"] = "Heat Shield"
+L["uplp_m590_heatshield.compactname"] = "Heat"
+L["uplp_m590_heatshield.description"] = "Attaches a cosmetic heat shield over the barrel."
 
-L["uplp_m980_extra_holster.printname"] = "Shell Holster"
-L["uplp_m980_extra_holster.compactname"] = "Holster"
-L["uplp_m980_extra_holster.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
+L["uplp_m590_shellholder.printname"] = "Shell Holster"
+L["uplp_m590_shellholder.compactname"] = "Holster"
+L["uplp_m590_shellholder.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
 
 //////////////////// Remington 870
 L["uplp_weapon_r870"] = "Wingmaster 12G"
@@ -2768,13 +2784,13 @@ L["uplp_r870_handle_sport.compactname"] = "S. S."
 L["uplp_r870_handle_sport.description"] = "Special pump handle made for sport shooting."
 
 ////// Magazines
-L["uplp_r870_mag_5.printname"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") or "5-R Detachable Magazine"
-L["uplp_r870_mag_5.compactname"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") or "5R D."
-L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m980_mag_5.printname") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+L["uplp_r870_mag_5.printname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5-R Detachable Magazine"
+L["uplp_r870_mag_5.compactname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5R D."
+L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
 
 ////// Stocks
-L["uplp_r870_stock_tactical.printname"] = ARC9:GetPhrase("uplp_m980_stock_tactical.printname") or "Tactical Stock"
-L["uplp_r870_stock_tactical.compactname"] = ARC9:GetPhrase("uplp_m980_stock_tactical.compactname") or "Tactical"
+L["uplp_r870_stock_tactical.printname"] = ARC9:GetPhrase("uplp_m590_stock_tactical.printname") or "Tactical Stock"
+L["uplp_r870_stock_tactical.compactname"] = ARC9:GetPhrase("uplp_m590_stock_tactical.compactname") or "Tactical"
 L["uplp_r870_stock_tactical.description"] = "Reinforced tactical stock for the Wingmaster 12G."
 
 L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with No Stock"
@@ -2785,8 +2801,8 @@ L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with Foldable Stock"
 L["uplp_r870_stock_pistolgrip.compactname"] = "P. Grip (F)"
 L["uplp_r870_stock_pistolgrip.description"] = "A vertical pistol grip with a foldable stock."
 
-L["uplp_r870_stock_sawedoff.printname"] = ARC9:GetPhrase("uplp_m980_stock_sawedoff.printname") or "Sawed-Off Stock"
-L["uplp_r870_stock_sawedoff.compactname"] = ARC9:GetPhrase("uplp_m980_stock_sawedoff.compactname") or "Sawed-Off"
+L["uplp_r870_stock_sawedoff.printname"] = ARC9:GetPhrase("uplp_m590_stock_sawedoff.printname") or "Sawed-Off Stock"
+L["uplp_r870_stock_sawedoff.compactname"] = ARC9:GetPhrase("uplp_m590_stock_sawedoff.compactname") or "Sawed-Off"
 L["uplp_r870_stock_sawedoff.description"] = "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
 
 L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
@@ -2799,9 +2815,9 @@ L["uplp_r870_iron_none.compactname"] = "N/A"
 L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
 
 ////// Extras & Skins
-L["uplp_r870_extra_holster.printname"] = ARC9:GetPhrase("uplp_m980_extra_holster.printname") or "Shell Holster"
-L["uplp_r870_extra_holster.compactname"] = ARC9:GetPhrase("uplp_m980_extra_holster.compactname") or "Holster"
-L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m980_extra_holster.description") or "Attaches a cosmetic shell holster to the left side of the weapon."
+L["uplp_r870_extra_holster.printname"] = ARC9:GetPhrase("uplp_m590_extra_holster.printname") or "Shell Holster"
+L["uplp_r870_extra_holster.compactname"] = ARC9:GetPhrase("uplp_m590_extra_holster.compactname") or "Holster"
+L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m590_extra_holster.description") or "Attaches a cosmetic shell holster to the left side of the weapon."
 
 L["uplp_r870_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
 L["uplp_r870_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
