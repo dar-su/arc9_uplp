@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/590870/"
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_serbu"
-ATT.CompactName = "uplp_r870_bar_serbu"
+ATT.PrintName = "6.5\" Entryway"
+ATT.CompactName = "6.5\" Entry."
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 3 serbu.png", "mips smooth")
@@ -46,8 +46,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_serbu_extralhik")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_lessmag"
-ATT.CompactName = "uplp_r870_bar_lessmag"
+ATT.PrintName = "18.75\" Standard Barrel (5-Round)"
+ATT.CompactName = "18.75\" 5R"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 5 lessmag.png", "mips smooth")
@@ -66,8 +66,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_lessmag")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_long"
-ATT.CompactName = "uplp_r870_bar_long"
+ATT.PrintName = "26\" Hunter Barrel"
+ATT.CompactName = "26\" Hunter"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 5 long.png", "mips smooth")
@@ -86,8 +86,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_long")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_police"
-ATT.CompactName = "uplp_r870_bar_police"
+ATT.PrintName = "18.5\" Police Barrel"
+ATT.CompactName = "18.5\" Police"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 5 police.png", "mips smooth")
@@ -106,8 +106,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_police")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_sawed"
-ATT.CompactName = "uplp_r870_bar_sawed"
+ATT.PrintName = "12.5\" Short Barrel"
+ATT.CompactName = "12.5\" Short"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 5 sawed.png", "mips smooth")
@@ -145,8 +145,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_sawed")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_usmc"
-ATT.CompactName = "uplp_r870_bar_usmc"
+ATT.PrintName = "18.5\" USMC Barrel"
+ATT.CompactName = "18.5\" USMC"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 8 usmc.png", "mips smooth")
@@ -165,8 +165,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_usmc")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_9"
-ATT.CompactName = "uplp_r870_bar_9"
+ATT.PrintName = "20\" Smooth Barrel"
+ATT.CompactName = "20\" Smooth"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 9.png", "mips smooth")
@@ -185,8 +185,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_9")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_bar_swag"
-ATT.CompactName = "uplp_r870_bar_swag"
+ATT.PrintName = "20\" Sport Barrel"
+ATT.CompactName = "20\" Sport"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 9 swag.png", "mips smooth")
@@ -207,8 +207,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_swag")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_handle_old"
-ATT.CompactName = "uplp_r870_handle_old"
+ATT.PrintName = "Old-School Pump Handle"
+ATT.CompactName = "O.S."
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "pumpold.png", "mips smooth")
@@ -225,8 +225,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_handle_old")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_handle_poly"
-ATT.CompactName = "uplp_r870_handle_poly"
+ATT.PrintName = "Polymer Pump Handle"
+ATT.CompactName = "Polymer"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "pump.png", "mips smooth")
@@ -243,8 +243,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_handle_poly")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_handle_rail"
-ATT.CompactName = "uplp_r870_handle_rail"
+ATT.PrintName = "Tactical Pump Handle"
+ATT.CompactName = "Tactical"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "pumprail.png", "mips smooth")
@@ -273,8 +273,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_handle_rail")
 
 ATT = {}
 
-ATT.PrintName = "Thunder Nightlife Handle"
-ATT.CompactName = "Nightlife"
+ATT.PrintName = "ApexCore Arsenal Pump Handle"
+ATT.CompactName = "ApexCore"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "flash.png", "mips smooth")
@@ -311,7 +311,7 @@ ARC9.LoadAttachment(ATT, "uplp_r870_handle_flash")
 
 ATT = {}
 
-ATT.PrintName = "SynPoly Handle"
+ATT.PrintName = "SynPoly Pump Handle"
 ATT.CompactName = "SynPoly"
 ATT.Description = ATT.PrintName
 
@@ -348,8 +348,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_handle_magpul")
 
 ATT = {}
 
-ATT.PrintName = "Cut-Off Stock"
-ATT.CompactName = "Cut-Off"
+ATT.PrintName = "Cut-Off Polymer Stock"
+ATT.CompactName = "C.O. (P)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stockshort.png", "mips smooth")
@@ -366,8 +366,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_stock_short")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_stock_short_wood"
-ATT.CompactName = "uplp_r870_stock_short_wood"
+ATT.PrintName = "Cut-Off Wooden Stock"
+ATT.CompactName = "C.O. (W)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stockshortwood.png", "mips smooth")
@@ -384,8 +384,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_stock_short_wood")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_stock_poly"
-ATT.CompactName = "uplp_r870_stock_poly"
+ATT.PrintName = "Polymer Stock"
+ATT.CompactName = "Polymer"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stockpoly.png", "mips smooth")
@@ -456,8 +456,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_stock_buffer")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_stock_grip"
-ATT.CompactName = "uplp_r870_stock_grip"
+ATT.PrintName = "Pistol Grip with No Stock"
+ATT.CompactName = "P. Grip"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "grip.png", "mips smooth")
@@ -476,8 +476,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_stock_grip")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_stock_fold"
-ATT.CompactName = "uplp_r870_stock_fold"
+ATT.PrintName = "Pistol Grip with Foldable Stock"
+ATT.CompactName = "P. Grip (F)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "fold.png", "mips smooth")
@@ -539,8 +539,8 @@ ARC9.LoadAttachment(ATT, "uplp_r870_mag_6")
 
 ATT = {}
 
-ATT.PrintName = "uplp_r870_gold"
-ATT.CompactName = "uplp_r870_gold"
+ATT.PrintName = "Gold"
+ATT.CompactName = "Gold"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "gold.png", "mips smooth")

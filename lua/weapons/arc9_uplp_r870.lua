@@ -18,6 +18,27 @@ SWEP.DefaultElements = {"uplp_r870"}
 
 SWEP.ClipSize = 6
 
+-- Iron Sight and Sight Info
+SWEP.IronSights = {
+     Pos = Vector(-2.64, -5.5, 0.725),
+     Ang = Angle(0, 0, 0),
+     Magnification = 1.15,
+     ViewModelFOV = 55,
+}
+
+SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    local attached = self:GetElements()
+
+     if attached["uplp_m590_rs_railsight"] then
+        return {
+			 Pos = Vector(-2.64, -5.5, 0.125),
+			 Ang = Angle(0, 0.775, 0),
+			 Magnification = 1.15,
+			 ViewModelFOV = 55,
+        }
+    end
+
+end
 
 local aaaaaa = {
     ["uplp_sg_shell_red"] = 6,

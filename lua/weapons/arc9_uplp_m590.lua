@@ -235,8 +235,8 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.515, -6, -0.1),
-     Ang = Angle(0.825, 2, -2.5),
+     Pos = Vector(-2.64, -5.5, 0.9),
+     Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 55,
 }
@@ -244,15 +244,32 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     -- if attached["uplp_spas_stock_folding_f"] then
-        -- return {
-             -- Pos = Vector(0, -2, -2),
-             -- Ang = Angle(0, 0, -10),
-             -- Magnification = 1.05,
-             -- Blur = false,
-			 -- CrosshairInSights = true,
-        -- }
-    -- end
+     if attached["uplp_m590_rs_railsight"] then
+        return {
+			 Pos = Vector(-2.64, -5.5, 0.36),
+			 Ang = Angle(0, 0, 0),
+			 Magnification = 1.15,
+			 ViewModelFOV = 55,
+        }
+    end
+
+     if attached["uplp_m590_rs_winged"] then
+        return {
+			 Pos = Vector(-2.64, -5.5, 0.49),
+			 Ang = Angle(0, 0, 0),
+			 Magnification = 1.15,
+			 ViewModelFOV = 55,
+        }
+    end
+
+     if attached["uplp_m590_rs_ghost"] then
+        return {
+			 Pos = Vector(-2.64, -5.5, 0.32),
+			 Ang = Angle(0, 0.6, 0),
+			 Magnification = 1.15,
+			 ViewModelFOV = 55,
+        }
+    end
 
 end
 
@@ -280,7 +297,7 @@ SWEP.ShotgunReload = true
 SWEP.ShotgunReloadIncludesChamber = true
 
 -- Peek
-SWEP.PeekPos = Vector(-0.75, 7.5, -4)
+SWEP.PeekPos = Vector(-0.75, 3.5, -4)
 SWEP.PeekAng = Angle(0, 0.4, -40)
 
 ---- Sounds
@@ -446,6 +463,13 @@ SWEP.Animations = {
             { s = pathUT .. "rack_2.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 39 / 60, c = ca },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.4, lhik = 1 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["draw"] = {
@@ -507,6 +531,13 @@ SWEP.Animations = {
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty"] = {
         Source = "reload_mag5_empty",
@@ -527,8 +558,8 @@ SWEP.Animations = {
 
             { s = pathUTC .. "movement-shotgun-03.ogg", t = 57 / 30, c = ca, v = 1 },
             { s = pathUT .. "rack_1.ogg", t = 66 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 70 / 30, v = 0.6 },
-            { s = pathUT .. "rack_2.ogg", t = 73 / 30, v = 0.6 },
+            { s = pathUT .. "eject.ogg", t = 68 / 30, v = 0.6 },
+            { s = pathUT .. "rack_2.ogg", t = 70 / 30, v = 0.6 },
 
             { s = pathUTC .. "cloth_2.ogg", t = 78 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
@@ -536,6 +567,13 @@ SWEP.Animations = {
             {hide = 0, t = 0},
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.775, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     ["reload_6"] = {
@@ -559,6 +597,13 @@ SWEP.Animations = {
             {hide = 0, t = 0},
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     ["reload_empty_6"] = {
@@ -590,6 +635,13 @@ SWEP.Animations = {
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.775, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_10"] = {
         Source = "reload_mag10",
@@ -613,6 +665,13 @@ SWEP.Animations = {
             {hide = 1, t = 32/30},
             {hide = 0, t = 39/30}
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
     ["reload_empty_10"] = {
         Source = "reload_mag10_empty",
@@ -632,9 +691,9 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 58 / 30, c = ca, v = 0.8 },
 
             { s = pathUTC .. "movement-shotgun-03.ogg", t = 57 / 30, c = ca, v = 1 },
-            { s = pathUT .. "rack_1.ogg", t = 80 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 83 / 30, v = 0.6 },
-            { s = pathUT .. "rack_2.ogg", t = 88 / 30, v = 0.6 },
+            { s = pathUT .. "rack_1.ogg", t = 78 / 30, v = 0.6 },
+            { s = pathUT .. "eject.ogg", t = 81.5 / 30, v = 0.6 },
+            { s = pathUT .. "rack_2.ogg", t = 84 / 30, v = 0.6 },
 
             { s = pathUTC .. "cloth_2.ogg", t = 90 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 92 / 30, c = ca, v = 0.8 },
@@ -642,6 +701,13 @@ SWEP.Animations = {
             {hide = 0, t = 0},
             {hide = 1, t = 32/30},
             {hide = 0, t = 39/30}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.775, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 	
@@ -652,6 +718,11 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = ShellInsert, t = 13.5 / 30, v = 0.6 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.01, lhik = 1 },
+            { t = 0.33, lhik = 0 },
         },
     },
     ["reload_start_empty"] = {
@@ -666,19 +737,35 @@ SWEP.Animations = {
             { s = pathUT .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
             { s = ShellInsert, t = 57 / 30, v = 0.6 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 1 },
+            { t = 0.325, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.625, lhik = 1 },
+            { t = 0.7, lhik = 0 },
+        },
     },
 
     ["reload_start_empty_only"] = {
         Source = "reload_start_empty_only",
         RestoreAmmo = 1,
         EjectAt = 0.15,
-        -- MinProgress= 0.75,
+        -- MinProgress= 0.35,
         EventTable = {
             { s = pathUT .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
             { s = pathUT .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 44 / 30, v = 0.6 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 1 },
+            { t = 0.325, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.625, lhik = 1 },
+            { t = 0.7, lhik = 0 },
         },
     },
 
@@ -697,6 +784,11 @@ SWEP.Animations = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.66, lhik = 1 },
+        },
     },
 
     ["inspect"] = {
@@ -714,6 +806,13 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.35, lhik = 0 },
+            { t = 0.5, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
     },
 
     ["inspect_serbu"] = {
@@ -730,6 +829,13 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.35, lhik = 0 },
+            { t = 0.5, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
 
@@ -861,7 +967,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-0.1, -1, -0.5),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_m590_rs_ghost",
+        -- Installed = "uplp_m590_rs_ghost",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -931,7 +1037,7 @@ SWEP.Attachments = {
         Category = {"uplp_m590_shellholder"},
         DefaultIcon = Material(defatt .. "ammotype_sg.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(-0.1, -1, 1),
+        Pos = Vector(-0.1, 2.5, 1),
         Ang = Angle(90, 90, 180),
 		CosmeticOnly = true,
     },

@@ -2646,24 +2646,24 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 /////////// Attachments
 ////// Barrels & Tubes
-L["uplp_m590_bar_short.printname"] = "short19\" Barrel"
-L["uplp_m590_bar_short.compactname"] = "short19\""
-L["uplp_m590_bar_short.description"] = "shortSlightly extended 19\" barrel combined with a <color=100,255,100>5 round</color> magazine tube."
+L["uplp_m590_bar_short.printname"] = "17\" CQB Barrel"
+L["uplp_m590_bar_short.compactname"] = "17\" CQB"
+L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" barrel combined with a <color=100,255,100>4 round</color> magazine tube."
 
-L["uplp_m590_bar_long.printname"] = "20\" Barrel"
-L["uplp_m590_bar_long.compactname"] = "20\""
+L["uplp_m590_bar_long.printname"] = "20\" USMC Barrel"
+L["uplp_m590_bar_long.compactname"] = "20\" USMC"
 L["uplp_m590_bar_long.description"] = "Extended 20\" barrel combined with a <color=100,255,100>6 round</color> magazine tube."
 
 ////// Pump handles
-L["uplp_m590_handle_strap.printname"] = "Default Handle with Strap"
+L["uplp_m590_handle_strap.printname"] = "Default Pump Handle with Strap"
 L["uplp_m590_handle_strap.compactname"] = "Strap"
 L["uplp_m590_handle_strap.description"] = "Standard issue pump handle with a cosmetic strap around it."
 
-L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Handle"
+L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Pump Handle"
 L["uplp_m590_handle_flash.compactname"] = "Nightlife"
 L["uplp_m590_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
 
-L["uplp_m590_handle_magpul.printname"] = "SynPoly Handle"
+L["uplp_m590_handle_magpul.printname"] = "SynPoly Pump Handle"
 L["uplp_m590_handle_magpul.compactname"] = "SynPoly"
 L["uplp_m590_handle_magpul.description"] = "Tactical pump handle from SynPoly."
 
@@ -2672,8 +2672,8 @@ L["uplp_m590_stock_short.printname"] = "Cut-Off Stock"
 L["uplp_m590_stock_short.compactname"] = "Cut-Off"
 L["uplp_m590_stock_short.description"] = "Cutting off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
 
-L["uplp_m590_stock_magpul.printname"] = "SynPoly Stock"
-L["uplp_m590_stock_magpul.compactname"] = "SynPoly"
+L["uplp_m590_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly Stock"
+L["uplp_m590_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.compactname") or "SynPoly"
 L["uplp_m590_stock_magpul.description"] = "Reinforced tactical stock by SynPoly for the Thunder 500."
 
 L["uplp_m590_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
@@ -2697,9 +2697,9 @@ L["uplp_m590_rs_winged.printname"] = "Winged Rear Sight"
 L["uplp_m590_rs_winged.compactname"] = "Winged"
 L["uplp_m590_rs_winged.description"] = "Modified iron sights."
 
-L["uplp_m590_rs_rail.printname"] = "Top Rail"
-L["uplp_m590_rs_rail.compactname"] = "Rail"
-L["uplp_m590_rs_rail.description"] = "Top-mounted rail for optics."
+L["uplp_m590_rs_ghost.printname"] = "Thunder Rear Sight"
+L["uplp_m590_rs_ghost.compactname"] = "Thunder"
+L["uplp_m590_rs_ghost.description"] = "Factory iron sights."
 
 ////// Magazines
 L["uplp_m590_mag_10.printname"] = "10-R Detachable Magazine"
@@ -2732,42 +2732,46 @@ L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
 
 /////////// Attachments
 ////// Barrels & Tubes
-L["uplp_r870_bar_hunter.printname"] = "26\" Hunter Barrel"
-L["uplp_r870_bar_hunter.compactname"] = "26\" Hunter"
-L["uplp_r870_bar_hunter.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a 5-round tube."
+L["uplp_r870_bar_serbu.printname"] = "6.5\" Entryway"
+L["uplp_r870_bar_serbu.compactname"] = "6.5\" Entry."
+L["uplp_r870_bar_serbu.description"] = "Super short 6.5\" (165mm) barrel from the Entryway 12G.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
 
-L["uplp_r870_bar_sport.printname"] = "20\" Sport Barrel"
-L["uplp_r870_bar_sport.compactname"] = "20\" Sport"
-L["uplp_r870_bar_sport.description"] = "Custom 20\" (508mm) barrel intended for sport shooting.\nComes with a <color=100,255,100>9-round</color> tube."
+L["uplp_r870_bar_lessmag.printname"] = "18.75\" Standard Barrel (5-Round)"
+L["uplp_r870_bar_lessmag.compactname"] = "18.75\" 5R"
+L["uplp_r870_bar_lessmag.description"] = "Default 18.75\" (476mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>5-round</color> tube."
 
-L["uplp_r870_bar_ext.printname"] = "20\" Smooth Barrel"
-L["uplp_r870_bar_ext.compactname"] = "20\" Smooth"
-L["uplp_r870_bar_ext.description"] = "Smooth 20\" (508mm) barrel for the Wingmaster 12G.\nComes with a <color=100,255,100>9-round</color> tube."
+L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
+L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
+L["uplp_r870_bar_long.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a 5-round tube."
 
 L["uplp_r870_bar_police.printname"] = "18.5\" Police Barrel"
 L["uplp_r870_bar_police.compactname"] = "18.5\" Police"
-L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Wingmaster 12G intended for police use.\nComes with a <color=255,100,100>5-round</color> tube."
+L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Wingmaster 12G intended for police use.\nComes with a <color=255,100,100>5-round</color> tube and built-in iron sights."
 
-L["uplp_r870_bar_standard5.printname"] = "18.75\" Standard Barrel (5-Round)"
-L["uplp_r870_bar_standard5.compactname"] = "18.75\" 5R"
-L["uplp_r870_bar_standard5.description"] = "Default 18.75\" (476mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>5-round</color> tube."
+L["uplp_r870_bar_sawed.printname"] = "12.5\" Short Barrel"
+L["uplp_r870_bar_sawed.compactname"] = "12.5\" Short"
+L["uplp_r870_bar_sawed.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
 
 L["uplp_r870_bar_usmc.printname"] = "18.5\" USMC Barrel"
 L["uplp_r870_bar_usmc.compactname"] = "18.5\" USMC"
-L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Wingmaster 12G intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube."
+L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Wingmaster 12G intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube and built-in iron sights."
 
-L["uplp_r870_bar_sawn.printname"] = "12.5\" Short Barrel"
-L["uplp_r870_bar_sawn.compactname"] = "12.5\" Short"
-L["uplp_r870_bar_sawn.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
+L["uplp_r870_bar_9.printname"] = "20\" Smooth Barrel"
+L["uplp_r870_bar_9.compactname"] = "20\" Smooth"
+L["uplp_r870_bar_9.description"] = "Smooth 20\" (508mm) barrel for the Wingmaster 12G.\nComes with a <color=100,255,100>9-round</color> tube."
 
-L["uplp_r870_bar_short.printname"] = "6.5\" Entryway"
-L["uplp_r870_bar_short.compactname"] = "6.5\" Entry."
-L["uplp_r870_bar_short.description"] = "Super short 6.5\" (165mm) barrel from the Entryway 12G.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
+L["uplp_r870_bar_swag.printname"] = "20\" Sport Barrel"
+L["uplp_r870_bar_swag.compactname"] = "20\" Sport"
+L["uplp_r870_bar_swag.description"] = "Custom 20\" (508mm) barrel intended for sport shooting.\nComes with a <color=100,255,100>9-round</color> tube."
 
 ////// Pump handles
-L["uplp_r870_handle_wood.printname"] = "Wooden Pump Handle"
-L["uplp_r870_handle_wood.compactname"] = "Wooden"
-L["uplp_r870_handle_wood.description"] = "Classic wooden pump handle for the Wingmaster 12G."
+L["uplp_r870_handle_old.printname"] = "Old-School Pump Handle"
+L["uplp_r870_handle_old.compactname"] = "O. S."
+L["uplp_r870_handle_old.description"] = "Classic pump handle from the original Wingmaster."
+
+L["uplp_r870_handle_poly.printname"] = "Polymer Pump Handle"
+L["uplp_r870_handle_poly.compactname"] = "Polymer"
+L["uplp_r870_handle_poly.description"] = "Modernized polymer pump handle for the Wingmaster 12G."
 
 L["uplp_r870_handle_rail.printname"] = "Tactical Pump Handle"
 L["uplp_r870_handle_rail.compactname"] = "Tactical"
@@ -2777,13 +2781,9 @@ L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Pump Handle"
 L["uplp_r870_handle_flash.compactname"] = "ApexCore"
 L["uplp_r870_handle_flash.description"] = "Custom pump handle with built-in flashlight made by ApexCore Arsenal."
 
-L["uplp_r870_handle_big.printname"] = "Big Pump Handle"
-L["uplp_r870_handle_big.compactname"] = "Big"
-L["uplp_r870_handle_big.description"] = "Big pump handle."
-
-L["uplp_r870_handle_sport.printname"] = "Sport Shooting Pump Handle"
-L["uplp_r870_handle_sport.compactname"] = "S. S."
-L["uplp_r870_handle_sport.description"] = "Special pump handle made for sport shooting."
+L["uplp_r870_handle_magpul.printname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.printname")
+L["uplp_r870_handle_magpul.compactname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.compactname")
+L["uplp_r870_handle_magpul.description"] = ARC9:GetPhrase("uplp_m590_handle_magpul.description")
 
 ////// Magazines
 L["uplp_r870_mag_5.printname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5-R Detachable Magazine"
@@ -2791,25 +2791,33 @@ L["uplp_r870_mag_5.compactname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") o
 L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
 
 ////// Stocks
-L["uplp_r870_stock_tactical.printname"] = ARC9:GetPhrase("uplp_m590_stock_tactical.printname") or "Tactical Stock"
-L["uplp_r870_stock_tactical.compactname"] = ARC9:GetPhrase("uplp_m590_stock_tactical.compactname") or "Tactical"
-L["uplp_r870_stock_tactical.description"] = "Reinforced tactical stock for the Wingmaster 12G."
+L["uplp_r870_stock_short.printname"] = "Cut-Off Polymer Stock"
+L["uplp_r870_stock_short.compactname"] = "C.O. (P)"
+L["uplp_r870_stock_short.description"] = "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
 
-L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with No Stock"
-L["uplp_r870_stock_pistolgrip.compactname"] = "P. Grip"
-L["uplp_r870_stock_pistolgrip.description"] = "A vertical pistol grip without any rear stock."
+L["uplp_r870_stock_short_wood.printname"] = "Cut-Off Wooden Stock"
+L["uplp_r870_stock_short_wood.compactname"] = "C.O. (W)"
+L["uplp_r870_stock_short_wood.description"] = ARC9:GetPhrase("uplp_r870_stock_short.description")
 
-L["uplp_r870_stock_pistolgrip.printname"] = "Pistol Grip with Foldable Stock"
-L["uplp_r870_stock_pistolgrip.compactname"] = "P. Grip (F)"
-L["uplp_r870_stock_pistolgrip.description"] = "A vertical pistol grip with a foldable stock."
+L["uplp_r870_stock_poly.printname"] = "Polymer Stock"
+L["uplp_r870_stock_poly.compactname"] = "Polymer"
+L["uplp_r870_stock_poly.description"] = "Modernized polymer stock for the Wingmaster 12G."
 
-L["uplp_r870_stock_sawedoff.printname"] = ARC9:GetPhrase("uplp_m590_stock_sawedoff.printname") or "Sawed-Off Stock"
-L["uplp_r870_stock_sawedoff.compactname"] = ARC9:GetPhrase("uplp_m590_stock_sawedoff.compactname") or "Sawed-Off"
-L["uplp_r870_stock_sawedoff.description"] = "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
+L["uplp_r870_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly Stock"
+L["uplp_r870_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly"
+L["uplp_r870_stock_magpul.description"] = "Reinforced tactical stock for the Wingmaster 12G."
 
 L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_r870_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_r870_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+
+L["uplp_r870_stock_grip.printname"] = "Pistol Grip with No Stock"
+L["uplp_r870_stock_grip.compactname"] = "P. Grip"
+L["uplp_r870_stock_grip.description"] = "A vertical pistol grip without any rear stock."
+
+L["uplp_r870_stock_fold.printname"] = "Pistol Grip with Foldable Stock"
+L["uplp_r870_stock_fold.compactname"] = "P. Grip (F)"
+L["uplp_r870_stock_fold.description"] = "A vertical pistol grip with a foldable stock."
 
 ////// Rail
 L["uplp_r870_iron_none.printname"] = "No Top Rail"
@@ -2821,6 +2829,6 @@ L["uplp_r870_extra_holster.printname"] = ARC9:GetPhrase("uplp_m590_extra_holster
 L["uplp_r870_extra_holster.compactname"] = ARC9:GetPhrase("uplp_m590_extra_holster.compactname") or "Holster"
 L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m590_extra_holster.description") or "Attaches a cosmetic shell holster to the left side of the weapon."
 
-L["uplp_r870_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
-L["uplp_r870_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
-L["uplp_r870_skin_gold.description"] = "Replaces the receiver with a golden one.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
+L["uplp_r870_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_r870_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
+L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
