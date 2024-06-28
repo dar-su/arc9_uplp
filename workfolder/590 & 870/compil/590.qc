@@ -268,6 +268,7 @@ $sequence "reload_insert" {
 	blend "sights" 0 1
 	fps 30
 	snap
+	// frame 1 19
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
@@ -282,19 +283,53 @@ $sequence "reload_end" {
 
 
 
-$sequence "reload_mag" {
-	"anims\reload_magfed.smd"
-	// "anims\reload_mag_ads.smd"
-	// blend "sights" 0 1
+$sequence "reload_mag5" {
+	"anims\reload_magfed5.smd"
+	"anims\reload_magfed5_ads.smd"
+	blend "sights" 0 1
 	fps 30
 	snap
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
-$sequence "reload_mag_empty" {
-	"anims\reload_empty_magfed.smd"
-	// "anims\reload_mag_empty_ads.smd"
-	// blend "sights" 0 1
+$sequence "reload_mag5_empty" {
+	"anims\reload_empty_magfed5.smd"
+	"anims\reload_empty_magfed5_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+$sequence "reload_mag6" {
+	"anims\reload_magfed6.smd"
+	"anims\reload_magfed6_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+
+$sequence "reload_mag6_empty" {
+	"anims\reload_empty_magfed6.smd"
+	"anims\reload_empty_magfed6_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+$sequence "reload_mag10" {
+	"anims\reload_magfed10.smd"
+	"anims\reload_magfed10_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+
+$sequence "reload_mag10_empty" {
+	"anims\reload_empty_magfed10.smd"
+	"anims\reload_empty_magfed10_ads.smd"
+	blend "sights" 0 1
 	fps 30
 	snap
 	ikrule "rhand" touch "rhandikbleh" usesource
