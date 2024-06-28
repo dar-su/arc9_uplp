@@ -99,7 +99,7 @@ $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 $attachment "2" "bolt" 0 0 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 // $attachment "4" "fakemag" 0 0 0 rotate -90 0 0
-// $attachment "5" "mag" 0 0 0 rotate -90 0 0
+$attachment "4" "mag" 0 0 0 rotate -90 0 0
  
 $surfaceprop "default"
  
@@ -134,19 +134,19 @@ $sequence "idle"{
 	fps 30
  	blend "sights" 0 1
 	// loop
-	// fadein 0
-	// fadeout 0.2
+	fadein 0
+	fadeout 0.2
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
 $sequence "owo_pose" {
 	"anims\idle2.smd"
 	"anims\idle_rhik_grip.smd"
-	"anims\idle_iron.smd"
-	"anims\idle_rhik_grip_iron.smd"
+	// "anims\idle_iron.smd"
+	// "anims\idle_rhik_grip_iron.smd"
 	blend "owo" 0 1
- 	blend "sights" 0 1
-	blendwidth 2
+ 	// blend "sights" 0 1
+	// blendwidth 2
 	delta
 	autoplay
 	loop

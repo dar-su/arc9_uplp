@@ -586,6 +586,7 @@ SWEP.Animations = {
     ["reload_start_empty_pumpy"] = {
         Source = "reload_start_empty_pumpy",
         -- MinProgress= 0.65,
+        EjectAt = 0.15,
         RestoreAmmo = 2,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
@@ -612,6 +613,7 @@ SWEP.Animations = {
     ["reload_start_empty_only_pumpy"] = {
         Source = "reload_start_empty_only_pumpy",
         RestoreAmmo = 1,
+        EjectAt = 0.15,
         -- MinProgress= 0.75,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },

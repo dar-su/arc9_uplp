@@ -2640,14 +2640,15 @@ L["uplp_weapon_m590"] = "Thunder 500"
 L["uplp_weapon_m590_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
 
 L["uplp_weapon_m590_real"] = "Mossberg 590"
+L["uplp_weapon_m590m"] = "Thunder 500M"
 
 L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 /////////// Attachments
 ////// Barrels & Tubes
-L["uplp_m590_bar_mid.printname"] = "19\" Barrel"
-L["uplp_m590_bar_mid.compactname"] = "19\""
-L["uplp_m590_bar_mid.description"] = "Slightly extended 19\" barrel combined with a <color=100,255,100>5 round</color> magazine tube."
+L["uplp_m590_bar_short.printname"] = "short19\" Barrel"
+L["uplp_m590_bar_short.compactname"] = "short19\""
+L["uplp_m590_bar_short.description"] = "shortSlightly extended 19\" barrel combined with a <color=100,255,100>5 round</color> magazine tube."
 
 L["uplp_m590_bar_long.printname"] = "20\" Barrel"
 L["uplp_m590_bar_long.compactname"] = "20\""
@@ -2662,18 +2663,18 @@ L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Handle"
 L["uplp_m590_handle_flash.compactname"] = "Nightlife"
 L["uplp_m590_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
 
-L["uplp_m590_handle_magpul.printname"] = "PAWCO Handle"
-L["uplp_m590_handle_magpul.compactname"] = "PAWCO"
-L["uplp_m590_handle_magpul.description"] = "Tactical pump handle from PAWCO."
+L["uplp_m590_handle_magpul.printname"] = "SynPoly Handle"
+L["uplp_m590_handle_magpul.compactname"] = "SynPoly"
+L["uplp_m590_handle_magpul.description"] = "Tactical pump handle from SynPoly."
 
 ////// Stocks
 L["uplp_m590_stock_short.printname"] = "Cut-Off Stock"
 L["uplp_m590_stock_short.compactname"] = "Cut-Off"
 L["uplp_m590_stock_short.description"] = "Cutting off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
 
-L["uplp_m590_stock_magpul.printname"] = "PAWCO Stock"
-L["uplp_m590_stock_magpul.compactname"] = "PAWCO"
-L["uplp_m590_stock_magpul.description"] = "Reinforced tactical stock by PAWCO for the Thunder 500."
+L["uplp_m590_stock_magpul.printname"] = "SynPoly Stock"
+L["uplp_m590_stock_magpul.compactname"] = "SynPoly"
+L["uplp_m590_stock_magpul.description"] = "Reinforced tactical stock by SynPoly for the Thunder 500."
 
 L["uplp_m590_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_m590_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
@@ -2725,6 +2726,7 @@ L["uplp_weapon_r870_desc"] = "The Wingmaster 12G is a reliable and versatile pum
 L["uplp_weapon_r870_real"] = "Remington 870"
 
 L["uplp_weapon_r870_shorty"] = "Entryway 12G"
+L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
 
 L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
 
