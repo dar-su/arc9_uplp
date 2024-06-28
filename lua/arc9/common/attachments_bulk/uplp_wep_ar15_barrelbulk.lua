@@ -248,21 +248,21 @@ ATT.SortOrder = 14.5
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
--- ATT.SpreadAdd = -0.006
--- ATT.RangeMaxAdd = 120 / ARC9.HUToM
--- ATT.RangeMinAdd = 40 / ARC9.HUToM
--- ATT.PhysBulletMuzzleVelocityMult = 1.5
--- ATT.RecoilPerShot = 1 / 18
--- ATT.RecoilMult = 0.7
+ATT.SpreadAdd = -0.0015
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RangeMinAdd = 8 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.08
+ATT.RecoilPerShot = 1 / 9
+ATT.RecoilMult = 0.925
 
 -- Negatives
--- ATT.SpreadAddHipFire = 0.006 + 0.01
--- ATT.SpreadAddRecoil = 0.006 * 0.25
--- ATT.AimDownSightsTimeAdd = 0.04*2
--- ATT.SprintToFireTimeAdd = 0.05*2
--- ATT.SpeedMultSights = 0.8
--- ATT.RPMAdd = -150
--- ATT.BarrelLengthAdd = 7
+ATT.SpreadAddHipFire = 0.0015 + 0.0015
+ATT.SpreadAddRecoil = 0.0015
+ATT.AimDownSightsTimeAdd = 0.01*2
+ATT.SprintToFireTimeAdd = 0.02*2
+ATT.SpeedMultSights = 0.95
+ATT.RPMAdd = -25
+ATT.BarrelLengthAdd = 1
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_145")
@@ -287,21 +287,20 @@ ATT.SortOrder = 15
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
--- ATT.SpreadAdd = -0.006
--- ATT.RangeMaxAdd = 120 / ARC9.HUToM
--- ATT.RangeMinAdd = 40 / ARC9.HUToM
--- ATT.PhysBulletMuzzleVelocityMult = 1.5
--- ATT.RecoilPerShot = 1 / 18
--- ATT.RecoilMult = 0.7
+ATT.SpreadAdd = -0.002
+ATT.RangeMaxAdd = 35 / ARC9.HUToM
+ATT.RangeMinAdd = 10 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilPerShot = 1 / 10
+ATT.RecoilMult = 0.9
 
 -- Negatives
--- ATT.SpreadAddHipFire = 0.006 + 0.01
--- ATT.SpreadAddRecoil = 0.006 * 0.25
--- ATT.AimDownSightsTimeAdd = 0.04*2
--- ATT.SprintToFireTimeAdd = 0.05*2
--- ATT.SpeedMultSights = 0.8
--- ATT.RPMAdd = -150
--- ATT.BarrelLengthAdd = 7
-
+ATT.SpreadAddHipFire = 0.003 + 0.002
+ATT.SpreadAddRecoil = 0.003 * 0.75
+ATT.AimDownSightsTimeAdd = 0.02*1.25
+ATT.SprintToFireTimeAdd = 0.03*1.25
+ATT.SpeedMultSights = 0.925
+ATT.RPMAdd = -30
+ATT.BarrelLengthAdd = 2
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_15xm")
