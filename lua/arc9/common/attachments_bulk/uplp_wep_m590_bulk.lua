@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/590870/"
 
 ATT = {}
 
-ATT.PrintName = "1\" Barrel"
-ATT.CompactName = "1\""
+ATT.PrintName = "17\" Barrel"
+ATT.CompactName = "17\""
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "590 4.png", "mips smooth")

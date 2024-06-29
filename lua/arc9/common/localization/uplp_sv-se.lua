@@ -2624,3 +2624,163 @@ L["uplp_weapon_m590_desc"] = "Om du söker efter något för att försvara ditt 
 L["uplp_weapon_m590_real"] = "Mossberg 590"
 
 L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_m590_bar_short.printname"] = "432 mm CQB-Pipa"
+L["uplp_m590_bar_short.compactname"] = "432 mm CQB"
+L["uplp_m590_bar_short.description"] = "Lätt förkortad 432 mm pipa kombinerad med ett <color=100,255,100>4-patroners</color> magasinrör."
+
+L["uplp_m590_bar_long.printname"] = "508 mm USMC-Pipa"
+L["uplp_m590_bar_long.compactname"] = "508 mm USMC"
+L["uplp_m590_bar_long.description"] = "Extended 20\" (508mm) barrel combined with a <color=100,255,100>6 round</color> magazine tube."
+L["uplp_m590_bar_long.description"] = "Förlängd 508 mm pipa kombinerad med ett <color=100,255,100>6-patroners</color> magasinrör."
+
+////// Pump handles
+L["uplp_m590_handle_strap.printname"] = "Standard Handgrepp med Rem"
+L["uplp_m590_handle_strap.compactname"] = "Rem"
+L["uplp_m590_handle_strap.description"] = "Standard handgrepp med en kosmetisk rem runt den."
+
+L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Handgrepp"
+L["uplp_m590_handle_flash.compactname"] = "Nightlife"
+L["uplp_m590_handle_flash.description"] = "Anpassat handgrepp med inbyggd ficklampa."
+
+L["uplp_m590_handle_magpul.printname"] = "SynPoly-Handgrepp"
+L["uplp_m590_handle_magpul.compactname"] = "SynPoly"
+L["uplp_m590_handle_magpul.description"] = "Taktiskt handgrepp från SynPoly."
+
+////// Stocks
+L["uplp_m590_stock_short.printname"] = "Avsågad Kolv"
+L["uplp_m590_stock_short.compactname"] = "Avsågad"
+L["uplp_m590_stock_short.description"] = "Att såga av kolven på Thunder 500 förbättrar manövrering med kostnad på rekylkontroll."
+
+L["uplp_m590_stock_magpul.description"] = "Förstärkt taktisk kolv av SynPoly till Thunder 500."
+
+L["uplp_m590_stock_buffer.description"] = "Anpassat pistolgrepp och bufferrör som accepterar AR-15-kolvar."
+
+////// Irons
+L["uplp_m590_rs_railsight.printname"] = "Toppskena med Ringsikte"
+L["uplp_m590_rs_railsight.compactname"] = "Skena (R)"
+L["uplp_m590_rs_railsight.description"] = "Toppmonterad skena för riktmedel med inbyggt stolpkorn och bakre sikte."
+
+L["uplp_m590_rs_winged.printname"] = "Bevingat Bakre Sikte"
+L["uplp_m590_rs_winged.compactname"] = "Bevingad"
+L["uplp_m590_rs_winged.description"] = "Anpassade järn & korn."
+
+L["uplp_m590_rs_ghost.printname"] = "\"Thunder\" Bakre Sikte"
+L["uplp_m590_rs_ghost.compactname"] = "\"Thunder\""
+L["uplp_m590_rs_ghost.description"] = "Järn & korn från fabriken."
+
+////// Magazines
+L["uplp_m590_mag_10.printname"] = "Avtagbart 10-Patronersmagasin"
+L["uplp_m590_mag_10.compactname"] = "A. 10P"
+L["uplp_m590_mag_10.description"] = "Installerar ett avtagbart förstorat magasin på vapnet vilket gör påfyllning snabbare."
+
+L["uplp_m590_mag_5.printname"] = "Avtagbart 5-Patronersmagasin"
+L["uplp_m590_mag_5.compactname"] = "A. 5P"
+L["uplp_m590_mag_5.description"] = "Installerar ett avtagbart magasin på vapnet vilket gör påfyllning snabbare."
+
+////// Extras & Skins
+L["uplp_m590_heatshield.printname"] = "Värmesköld"
+L["uplp_m590_heatshield.compactname"] = "Värme."
+L["uplp_m590_heatshield.description"] = "Sätter på en kosmetisk värmesköld ovanpå pipan."
+
+L["uplp_m590_shellholder.printname"] = "Patronhållare"
+L["uplp_m590_shellholder.compactname"] = "Hållare"
+L["uplp_m590_shellholder.description"] = "Sätter på en kosmetisk patronhållare på vapnets vänstra sida."
+
+//////////////////// Remington 870
+L["uplp_weapon_r870"] = "Wingmaster 12G"
+L["uplp_weapon_r870_desc"] = "Wingmaster 12G är en pålitlig och mångsidig pumprepeter hagelbössa känd för dess varaktighet och lätt användning. Gynnad av polisenheter, jägare och sportskyttar, detta eldvapnet utmärker sig i diverse situationer tack vare dess kraftiga konstruktion och anpassningsbara funktioner."
+
+L["uplp_weapon_r870_real"] = "Remington 870"
+
+L["uplp_weapon_r870_shorty"] = "Entryway 12G"
+L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
+
+L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_r870_bar_serbu.printname"] = "165 mm \"Entryway\""
+L["uplp_r870_bar_serbu.compactname"] = "165 mm \"Entry.\""
+L["uplp_r870_bar_serbu.description"] = "Superkort 165 mm pipa från Entryyway 12G.\nKommer med ett <color=255,100,100>2-patroners</color> rör och vikbart handtag."
+
+L["uplp_r870_bar_lessmag.printname"] = "18.75\" Standard Barrel (5-Round)"
+L["uplp_r870_bar_lessmag.compactname"] = "18.75\" 5R"
+L["uplp_r870_bar_lessmag.description"] = "Standard 476 mm pipa till Wingmaster 12G.\nKommer med ett <color=255,100,100>5-patroners</color> rör."
+
+L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
+L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
+L["uplp_r870_bar_long.description"] = "660 mm pipa från fabriken gjord för jakt.\nKommer med ett 5-patroners rör."
+
+L["uplp_r870_bar_police.printname"] = "469 mm Polispipa"
+L["uplp_r870_bar_police.compactname"] = "469 mm Polis"
+L["uplp_r870_bar_police.description"] = "Anpassad 469 mm pipa till Wingmaster 12G gjord för polisär användning.\nKommer med ett <color=255,100,100>5-patroners</color> rör och inbyggda järn & korn."
+
+L["uplp_r870_bar_sawed.printname"] = "318 mm Kort Pipa"
+L["uplp_r870_bar_sawed.compactname"] = "318 mm Kort"
+L["uplp_r870_bar_sawed.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
+L["uplp_r870_bar_sawed.description"] = "Förkortad 318 mm pipa till Wingmaster 12G.\nKommer med ett <color=255,100,100>4-patroners</color> rör."
+
+L["uplp_r870_bar_usmc.printname"] = "469 mm USMC-Pipa"
+L["uplp_r870_bar_usmc.compactname"] = "469 mm USMC"
+L["uplp_r870_bar_usmc.description"] = "Slät 469 mm pipa till Wingmaster 12G gjord för militär användning.\nKommer med ett <color=100,255,100>8-patroners</color> rör."
+
+L["uplp_r870_bar_9.printname"] = "508 mm Slät Pipa"
+L["uplp_r870_bar_9.compactname"] = "508 mm Slät"
+L["uplp_r870_bar_9.description"] = "Slät 508 mm pipa till Wingmaster 12G.\nKommer med ett <color=100,255,100>9-patroners</color> rör."
+
+L["uplp_r870_bar_swag.printname"] = "508 mm Sportpipa"
+L["uplp_r870_bar_swag.compactname"] = "508 mm Sport"
+L["uplp_r870_bar_swag.description"] = "Anpassad 508 mm pipa gjord för sportskytte.\nKommer med ett <color=100,255,100>9-patroners</color> rör."
+
+////// Pump handles
+L["uplp_r870_handle_old.printname"] = "Gammaldags Handtag"
+L["uplp_r870_handle_old.compactname"] = "GD."
+L["uplp_r870_handle_old.description"] = "Klassiskt handtag från originala Wingmaster:n."
+
+L["uplp_r870_handle_poly.printname"] = "Polymer Handtag"
+L["uplp_r870_handle_poly.compactname"] = "Polymer"
+L["uplp_r870_handle_poly.description"] = "Modernt polymer handtag till Wingmaster 12G."
+
+L["uplp_r870_handle_rail.printname"] = "Taktiskt Handtag"
+L["uplp_r870_handle_rail.compactname"] = "Taktiskt"
+L["uplp_r870_handle_rail.description"] = "Taktiskt handtag med inbyggda skenor för framgrepp och lasersikten."
+
+L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Handtag"
+L["uplp_r870_handle_flash.compactname"] = "ApexCore"
+L["uplp_r870_handle_flash.description"] = "Anpassat handtag med inbyggd ficklampa gjord av ApexCore Arsenal."
+
+////// Stocks
+L["uplp_r870_stock_short.printname"] = "Avsågad Polymer Kolv"
+L["uplp_r870_stock_short.compactname"] = "Avsågad (P)"
+L["uplp_r870_stock_short.description"] = "Att såga av kolven på Wingmaster 12G förbättrar manövrering med kostnad på rekylkontroll"
+
+L["uplp_r870_stock_short_wood.printname"] = "Avsågad Träkolv"
+L["uplp_r870_stock_short_wood.compactname"] = "Avsågad (T)"
+
+L["uplp_r870_stock_poly.printname"] = "Polymer Kolv"
+L["uplp_r870_stock_poly.compactname"] = "Polymer"
+L["uplp_r870_stock_poly.description"] = "Modern polymer kolv till Wingmaster 12G."
+
+L["uplp_r870_stock_magpul.description"] = "Förstärkt taktisk kolv till Wingmaster 12G."
+
+L["uplp_r870_stock_buffer.description"] = "Anpassat pistolgrepp och bufferrör som accepterar AR-15-kolvar."
+
+L["uplp_r870_stock_grip.printname"] = "Pistolgrepp utan Kolv"
+L["uplp_r870_stock_grip.compactname"] = "Pistolg."
+L["uplp_r870_stock_grip.description"] = "Vertikalt pistolgrepp utan kolv."
+
+L["uplp_r870_stock_fold.printname"] = "Pistolgrepp med Vikbar Kolv"
+L["uplp_r870_stock_fold.compactname"] = "Pistolg. (V)"
+L["uplp_r870_stock_fold.description"] = "Vertikalt pistolgrepp med vikbar kolv."
+
+////// Rail
+L["uplp_r870_iron_none.printname"] = "No Top Rail"
+L["uplp_r870_iron_none.compactname"] = "N/A"
+L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
+
+////// Extras & Skins
+L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
+L["uplp_r870_gold.description"] = "Ersätter interna delarna med några av guld.\n\n<color=255,255,100>Upplåst vid Befälhavare (Lv55)</color>"

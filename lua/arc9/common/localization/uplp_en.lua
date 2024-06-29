@@ -2648,11 +2648,11 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 ////// Barrels & Tubes
 L["uplp_m590_bar_short.printname"] = "17\" CQB Barrel"
 L["uplp_m590_bar_short.compactname"] = "17\" CQB"
-L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" barrel combined with a <color=100,255,100>4 round</color> magazine tube."
+L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" (432mm) barrel combined with a <color=100,255,100>4 round</color> magazine tube."
 
 L["uplp_m590_bar_long.printname"] = "20\" USMC Barrel"
 L["uplp_m590_bar_long.compactname"] = "20\" USMC"
-L["uplp_m590_bar_long.description"] = "Extended 20\" barrel combined with a <color=100,255,100>6 round</color> magazine tube."
+L["uplp_m590_bar_long.description"] = "Extended 20\" (508mm) barrel combined with a <color=100,255,100>6 round</color> magazine tube."
 
 ////// Pump handles
 L["uplp_m590_handle_strap.printname"] = "Default Pump Handle with Strap"
@@ -2681,14 +2681,6 @@ L["uplp_m590_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.c
 L["uplp_m590_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
 
 ////// Irons
-L["uplp_m590_rs_none.printname"] = "No Rear and Front Sight"
-L["uplp_m590_rs_none.compactname"] = "None"
-L["uplp_m590_rs_none.description"] = "Removes the rear and front sights, giving a clean appearance."
-
-L["uplp_m590_rs_simple.printname"] = "Front Sight Post"
-L["uplp_m590_rs_simple.compactname"] = "FSP"
-L["uplp_m590_rs_simple.description"] = "Removes the rear sights, leaving a small front sight post for rough aiming."
-
 L["uplp_m590_rs_railsight.printname"] = "Top Rail with Ring Sight"
 L["uplp_m590_rs_railsight.compactname"] = "Rail (R)"
 L["uplp_m590_rs_railsight.description"] = "Top-mounted rail for optics with built-in front and rear sight."
