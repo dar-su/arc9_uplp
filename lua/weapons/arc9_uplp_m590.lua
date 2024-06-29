@@ -400,9 +400,12 @@ local UTCrattle = {
 }
 
 local ShellInsert = {
-    pathUT .. "shell-insert-01.ogg",
-    pathUT .. "shell-insert-02.ogg",
-    pathUT .. "shell-insert-03.ogg",
+    pathUTREAL .. "shellin-01.ogg",
+    pathUTREAL .. "shellin-02.ogg",
+    pathUTREAL .. "shellin-03.ogg",
+    pathUTREAL .. "shellin-04.ogg",
+    pathUTREAL .. "shellin-05.ogg",
+    pathUTREAL .. "shellin-06.ogg",
 }
 
 local thetoggle = {{
