@@ -104,7 +104,7 @@ SWEP.Animations = {
         Mult = 0.9,
 		-- Mult = 1.2,
         EventTable = {
-            {s = "arc9/melee_lift.wav", t = 0}, -- temporary
+            {s = "arc9/melee_lift.ogg", t = 0}, -- temporary
             {hide = 2, t = 0},
             {hide = 1, t = 0.25},
         },
@@ -115,7 +115,7 @@ SWEP.Animations = {
         Source = "throw_under",
         Mult = 0.75,
         EventTable = {
-            {s = "arc9/melee_lift.wav", t = 0}, -- temporary
+            {s = "arc9/melee_lift.ogg", t = 0}, -- temporary
             {hide = 2, t = 0},
             {hide = 1, t = 0.25},
         },

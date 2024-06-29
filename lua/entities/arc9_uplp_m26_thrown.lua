@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 ENT.Type 				= "anim"
 ENT.Base 				= "arc9_nade_base"
-ENT.PrintName 			= "M26  "
+ENT.PrintName 			= "M26"
 
 ENT.Spawnable 			= false
 ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE

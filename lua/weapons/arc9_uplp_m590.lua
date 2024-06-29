@@ -51,14 +51,14 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 90
 SWEP.ShellSounds = {
-    "arc9/casings/casing_12ga_1.wav",
-    "arc9/casings/casing_12ga_2.wav",
-    "arc9/casings/casing_12ga_3.wav",
-    "arc9/casings/casing_12ga_4.wav",
-    "arc9/casings/casing_12ga_1.wav",
-    "arc9/casings/casing_12ga_2.wav",
-    "arc9/casings/casing_12ga_3.wav",
-    "arc9/casings/casing_12ga_4.wav",
+    "arc9/casings/casing_12ga_1.ogg",
+    "arc9/casings/casing_12ga_2.ogg",
+    "arc9/casings/casing_12ga_3.ogg",
+    "arc9/casings/casing_12ga_4.ogg",
+    "arc9/casings/casing_12ga_1.ogg",
+    "arc9/casings/casing_12ga_2.ogg",
+    "arc9/casings/casing_12ga_3.ogg",
+    "arc9/casings/casing_12ga_4.ogg",
 }
 
 SWEP.CaseEffectQCA = 2
