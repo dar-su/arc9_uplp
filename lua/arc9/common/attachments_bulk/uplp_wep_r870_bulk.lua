@@ -356,6 +356,7 @@ ATT.Icon = Material(iconfolder .. "stockshort.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.CustomizePos = Vector(22, 32.5, 3.25)
 -- Positives
 
 -- Negatives
@@ -374,6 +375,7 @@ ATT.Icon = Material(iconfolder .. "stockshortwood.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.CustomizePos = Vector(22, 32.5, 3.25)
 -- Positives
 
 -- Negatives
@@ -465,6 +467,7 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
+ATT.CustomizePos = Vector(22, 32.5, 3.25)
 -- Positives
 
 -- Negatives
@@ -486,24 +489,54 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
--- Positives
+-- HERE STATS COPIED FROM SPAS STOCK
+-- but since spas is stockless by default they wont work correctly :p
 
--- Negatives
--- ATT.SprintToFireTimeAdd = 0.03
+-- ATT.CustomPros = {
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+40%",
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-0.8",
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.visualrecoil") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-65%",
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "-1",
+--     [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "-0.5",
+-- }
+
+-- ATT.CustomCons = {
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+0.1s",
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+0.08s",
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.speed")] = "-5%",
+--     [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.speed") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "×85%",
+--     [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+0.05s",
+-- }
 
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
-        -- AimDownSightsTimeAdd = 0.03,
-        -- RecoilAdd = -0.25,
-        -- RecoilAutoControlMult = 1.2,
+
+        -- Positives
+        -- RecoilAutoControlMult = 1.4,
+        -- VisualRecoilMultHipFire = 0.35,
+
+        -- Buffer Tube stats
+        -- RecoilAdd = -0.8,
         -- SwayAddSights = -1,
+        -- AimDownSightsTimeAdd = 0.1,
+        -- SprintToFireTimeAdd = 0.1 - 0.02,
+        -- SpeedMultSights = 0.85,
+        -- SpeedAdd = -0.05,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
-        ActivateElements = {"uplp_foldedstock"},
+        ActivateElements = {"uplp_foldedstock", "uplp_grippose", "uplp_gripposemoar"},
+
+        -- SwayAddSights = -0.5,
+        -- SprintToFireTimeAdd = 0.05,
+		CantPeek = true,
+        CustomizePos = Vector(22, 32.5, 3.25),
     },
 }
+
+
+
 
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_fold")
 

@@ -29,7 +29,15 @@ SWEP.IronSights = {
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if attached["uplp_m590_rs_railsight"] then
+    if attached["uplp_foldedstock"] then
+        return {
+             Pos = Vector(0, -2, -2),
+             Ang = Angle(0, 0, -10),
+             Magnification = 1.05,
+             Blur = false,
+			 CrosshairInSights = true,
+        }
+    elseif attached["uplp_m590_rs_railsight"] then
         return {
 			 Pos = Vector(-2.64, -5.5, 0.125),
 			 Ang = Angle(0, 0.775, 0),
@@ -37,7 +45,6 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 			 ViewModelFOV = 55,
         }
     end
-
 end
 
 local aaaaaa = {
@@ -248,4 +255,14 @@ SWEP.HookP_NameChange = function(self, name)
     end
 
     return name
+end
+
+SWEP.HookP_TranslateSound = function(self, data) -- different pump sound for this shotgun, do same for any new sounds
+    if data.sound == "uplp_rz/mossberg/rack_1.ogg" then
+        data.sound = "uplp_urban_temp/870/rack_1.ogg"
+    elseif data.sound == "uplp_rz/mossberg/rack_2.ogg" then
+        data.sound = "uplp_urban_temp/870/rack_2.ogg"
+    end
+
+    return data
 end

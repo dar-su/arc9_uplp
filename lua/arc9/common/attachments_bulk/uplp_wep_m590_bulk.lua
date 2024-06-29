@@ -146,6 +146,7 @@ ATT.Icon = Material(iconfolder .. "stockshort.png", "mips smooth")
 ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.CustomizePos = Vector(22, 32.5, 3.25)
 -- Positives
 
 -- Negatives
