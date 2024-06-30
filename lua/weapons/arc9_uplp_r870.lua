@@ -26,24 +26,53 @@ SWEP.IronSights = {
      ViewModelFOV = 55,
 }
 
+local is_folded = {
+    Pos = Vector(0, -2, -2),
+    Ang = Angle(0, 0, -10),
+    Magnification = 1.05,
+    Blur = false,
+    CrosshairInSights = true,
+}
+local is_serbu = {
+    Pos = Vector(-2.64, -2.5, -0.05),
+    Ang = Angle(0, 1.5, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+local is_sawed = {
+    Pos = Vector(-2.64, -5.5, 0.02),
+    Ang = Angle(0, 1.15, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+local is_police = {
+    Pos = Vector(-2.64, -6.5, 0.35),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+local is_railsight = {
+    Pos = Vector(-2.64, -5.5, 0.125),
+    Ang = Angle(0, 0.775, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
     if attached["uplp_foldedstock"] then
-        return {
-             Pos = Vector(0, -2, -2),
-             Ang = Angle(0, 0, -10),
-             Magnification = 1.05,
-             Blur = false,
-			 CrosshairInSights = true,
-        }
+        return is_folded
+    elseif attached["uplp_r870_bar_serbu"] then
+        return is_serbu
+    elseif attached["uplp_r870_bar_sawed"] then
+        return is_sawed
+    elseif attached["uplp_r870_bar_police"] then
+        return is_police
+    elseif attached["uplp_r870_bar_usmc"] then
+        return is_police
     elseif attached["uplp_m590_rs_railsight"] then
-        return {
-			 Pos = Vector(-2.64, -5.5, 0.125),
-			 Ang = Angle(0, 0.775, 0),
-			 Magnification = 1.15,
-			 ViewModelFOV = 55,
-        }
+        return is_railsight
     end
 end
 
@@ -88,11 +117,11 @@ SWEP.AttachmentElements = {
 	-- BARRELS
     ["uplp_r870_bar_serbu"] = {
         Bodygroups = { { 1, 6 }, { 2, 6 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 19.5), Icon_Offset = Vector(-3.25, 0, 0) },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 12.5), Icon_Offset = Vector(1.25, 0, 0) },
     }},
-    ["uplp_r870_bar_lessmag"] = {
-        Bodygroups = { { 1, 2 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
+    ["uplp_r870_bar_long"] = {
+        Bodygroups = { { 1, 3 } },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 33.2), Icon_Offset = Vector(1.25, 0, 0) },
     }},
 
 	-- PUMPS
@@ -125,29 +154,27 @@ SWEP.AttachmentElements = {
 	["uplp_r870_mag_6"] = { Bodygroups = { { 6, 1 } } },
 
 
-    ["uplp_r870_bar_long"] = {
-        Bodygroups = { { 1, 3 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
-    }},
+    ["uplp_r870_bar_lessmag"] = {
+        Bodygroups = { { 1, 2 } },},
     ["uplp_r870_bar_police"] = {
         Bodygroups = { { 1, 4 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 24.0), Icon_Offset = Vector(1.25, 0, 0) },
     }},
     ["uplp_r870_bar_sawed"] = {
         Bodygroups = { { 1, 5 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 18.0), Icon_Offset = Vector(1.25, 0, 0) },
     }},
     ["uplp_r870_bar_usmc"] = {
         Bodygroups = { { 1, 8 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 28.1), Icon_Offset = Vector(1.25, 0, 0) },
     }},
     ["uplp_r870_bar_9"] = {
         Bodygroups = { { 1, 1 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 28.1), Icon_Offset = Vector(1.25, 0, 0) },
     }},
     ["uplp_r870_bar_swag"] = {
         Bodygroups = { { 1, 7 } },
-        AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
+        AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 27.9), Icon_Offset = Vector(1.25, 0, 0) },
     }},
 }
 
@@ -156,7 +183,9 @@ SWEP.AttachmentElements = {
 -- be careful there - order of sub tables must match atts on 590, blame lua table inheriting or garry for swep.base  idk
 
 SWEP.Attachments = {
-    _, -- optic
+    { -- optic
+        Pos = Vector(-0.1, -1.0, 0.9),
+    },
     { -- barrel
         Category = {"uplp_r870_barrel"},
     },
@@ -164,7 +193,9 @@ SWEP.Attachments = {
         Category = {"uplp_r870_rs"},
         Installed = nil,
     },
-    _, -- muzzle
+    { -- muzzle
+        Pos = Vector(-0.1, -0.1, 25.0),
+    },
     { -- pump
         Category = {"uplp_r870_handle"},
         ExcludeElements = {"uplp_r870_bar_serbu"},

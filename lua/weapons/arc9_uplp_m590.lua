@@ -521,7 +521,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
 
-            { s = pathUTM82 .. "umagrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             -- { s = pathUTM82 .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.6 },
@@ -552,7 +552,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
 
-            { s = pathUTM82 .. "umagrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             -- { s = pathUTM82 .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.6 },
@@ -588,7 +588,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
 
-            { s = pathUTM82 .. "umagrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
             -- { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTM82 .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.6 },
@@ -619,7 +619,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
 
-            { s = pathUTM82 .. "umagrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, c = ca, v = 0.8 },
             -- { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTM82 .. "magout.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.6 },
@@ -655,7 +655,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
 
-            { s = pathUTM82 .. "umagrel.ogg", t = 6 / 30, c = ca, v = 0.8 },
+            { s = pathUTM82 .. "magrel.ogg", t = 6 / 30, c = ca, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 11 / 30, c = ca, v = 0.8 },
             -- { s = pathUTM82 .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 32 / 30, v = 0.6 },
@@ -686,7 +686,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
 
-            { s = pathUTM82 .. "umagrel.ogg", t = 6 / 30, c = ca, v = 0.8 },
+            { s = pathUTM82 .. "magrel.ogg", t = 6 / 30, c = ca, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 11 / 30, c = ca, v = 0.8 },
             -- { s = pathUTM82 .. "magout.ogg", t = 16 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 32 / 30, v = 0.6 },
@@ -836,9 +836,10 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.1, lhik = 0 },
             { t = 0.35, lhik = 0 },
-            { t = 0.5, lhik = 1 },
+            { t = 0.85, lhik = 0 },
+            { t = 0.98, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -971,7 +972,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-0.1, -1, -0.5),
         Ang = Angle(90, 90, 180),
-        -- Installed = "uplp_m590_rs_ghost",
+        Installed = "uplp_m590_rs_ghost",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

@@ -251,7 +251,7 @@ ATT.Icon = Material(iconfolder .. "pumprail.png", "mips smooth")
 ATT.Category = "uplp_r870_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_r870_tacs"}
+ATT.ActivateElements = {"uplp_m590_tacs"}
 -- Positives
 
 -- Negatives
@@ -319,7 +319,7 @@ ATT.Icon = Material(iconfolder .. "pumpmpul.png", "mips smooth")
 ATT.Category = "uplp_r870_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"uplp_r870_tacs"}
+ATT.ActivateElements = {"uplp_m590_tacs"}
 -- Positives
 
 -- Negatives
