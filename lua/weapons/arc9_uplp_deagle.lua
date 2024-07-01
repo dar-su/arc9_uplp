@@ -417,7 +417,7 @@ SWEP.Animations = {
         Source = "fire",
         -- Time = 1,
         ShellEjectAt = 0.01,
-        EventTable = { { s = mech, t = 0 } },
+        EventTable = { { s = mech, t = 0, v = 0.6 } },
     },
 
     -- Reloads --
