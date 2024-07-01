@@ -2782,5 +2782,4 @@ L["uplp_r870_iron_none.compactname"] = "N/A"
 L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
 
 ////// Extras & Skins
-L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
 L["uplp_r870_gold.description"] = "Ersätter interna delarna med några av guld.\n\n<color=255,255,100>Upplåst vid Befälhavare (Lv55)</color>"
