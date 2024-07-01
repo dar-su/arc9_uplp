@@ -273,6 +273,15 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+local mech = {
+    pathUT .. "mech-01.ogg",
+    pathUT .. "mech-02.ogg",
+    pathUT .. "mech-03.ogg",
+    pathUT .. "mech-04.ogg",
+    pathUT .. "mech-05.ogg",
+    pathUT .. "mech-06.ogg",
+}
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
