@@ -157,4 +157,12 @@ $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
 
 
+$sequence "look" {
+	"anims\inspect870.smd"
+	snap
+	fps 30
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+
+
 $includemodel "weapons/arc9/c_uplp_590.mdl"
