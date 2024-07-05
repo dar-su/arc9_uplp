@@ -137,15 +137,16 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 5
 
 -- Recoil
-SWEP.Recoil = 1 + 1
-SWEP.RecoilUp = 2
-SWEP.RecoilSide = 1.25
+SWEP.Recoil = 1.5
+SWEP.RecoilUp = 2.5
+SWEP.RecoilSide = 1.5
 
 -- Additional recoil when firing rapidly
-SWEP.RecoilMultRecoil = 1.75
+SWEP.RecoilMultRecoil = 1
+SWEP.RecoilAddRecoil = 0.5
 
-SWEP.RecoilRandomUp = 1.15
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 1.25
+SWEP.RecoilRandomSide = 1.2
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -178,28 +179,28 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.055
+SWEP.Spread = 0.048
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.03
+SWEP.DispersionSpreadAddHipFire = 0.025
 
-SWEP.DispersionSpreadAddRecoil = 0.06
+SWEP.DispersionSpreadAddRecoil = 0.05
 SWEP.DispersionSpreadAddMove = 0.03
 SWEP.DispersionSpreadAddMidAir = 0.05
 
-SWEP.RecoilDissipationRate = 2
+SWEP.RecoilDissipationRate = 1
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.4
+SWEP.RecoilPerShot = 0.75
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.82 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.67 / 0.85 -- When aiming
+SWEP.SpeedMult = 0.82
+SWEP.SpeedMultSights = 0.67
 
-SWEP.AimDownSightsTime = 0.44 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.42 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.44
+SWEP.SprintToFireTime = 0.42
 
 SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 42
