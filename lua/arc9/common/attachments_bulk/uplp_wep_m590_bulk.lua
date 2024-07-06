@@ -16,9 +16,17 @@ ATT.Category = "uplp_m590_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
+ATT.DispersionSpreadAddHipFire = -0.012
+ATT.DispersionSpreadAddMove = -0.006
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedAdd = 0.02
+ATT.SpeedAddSights = 0.05
 
 -- Negatives
+ATT.SpreadAdd = 0.008
 ATT.ClipSize = 4
+ATT.RecoilUpMult = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_m590_bar_short")
 
@@ -36,8 +44,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 ATT.ClipSize = 6
+ATT.SpreadAdd = -0.008
+ATT.RecoilUpMult = 0.75
 
 -- Negatives
+ATT.DispersionSpreadAddHipFire = 0.012
+ATT.DispersionSpreadAddMove = 0.006
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAdd = -0.02
+ATT.SpeedAddSights = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_m590_bar_long")
 
@@ -111,9 +127,11 @@ ATT.Category = "uplp_m590_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m590_tacs"}
--- Positives
 
--- Negatives
+ATT.CycleTimeMult = 0.9
+ATT.SpeedMultShooting = 0.75
+ATT.RecoilRandomUpAdd = 0.3
+ATT.RecoilRandomSideAdd = 0.3
 
 ATT.Attachments = {
     {
@@ -147,9 +165,14 @@ ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.CustomizePos = Vector(22, 32.5, 3.25)
--- Positives
 
--- Negatives
+ATT.RecoilAdd = 0.6
+ATT.SwayAddSights = 0.5
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.06
+ATT.SpreadAddHipFire = -0.005
+ATT.SpeedAddSights = 0.08
+ATT.SpeedAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_m590_stock_short")
 
@@ -165,9 +188,8 @@ ATT.Icon = Material(iconfolder .. "stockmpul.png", "mips smooth")
 ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Positives
-
--- Negatives
+ATT.RecoilRandomSideAdd = -0.25
+ATT.SprintToFireTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_m590_stock_magpul")
 
@@ -184,13 +206,14 @@ ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose"}
 
--- Positives
-
--- Negatives
-
--- AR15 stocks reduce too much recoil so this is to counterbalance them
-ATT.RecoilAdd = 0.3
-ATT.SpreadAddHipFire = 0.01
+-- buffer tube stats
+ATT.RecoilAdd = 1
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
 
 ATT.Attachments = {
     {

@@ -16,6 +16,18 @@ SWEP.DefaultBodygroups = "0000000000000000000"
 
 SWEP.DefaultElements = {"uplp_r870"}
 
+-- Slightly lower spread and recoil, 1 more round, slightly worse handling
+SWEP.Spread = 0.042
+
+SWEP.RecoilUp = 2
+SWEP.RecoilRandomSide = 1
+
+SWEP.SpeedMult = 0.8
+SWEP.SpeedMultSights = 0.62
+
+SWEP.AimDownSightsTime = 0.47
+SWEP.SprintToFireTime = 0.44
+
 SWEP.ClipSize = 6
 
 -- Iron Sight and Sight Info

@@ -17,8 +17,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 3
 
 -- Positives
+ATT.CycleTimeMult = 0.9
+ATT.DispersionSpreadAddHipFire = -0.01
+ATT.DispersionSpreadAddMove = -0.01
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SpeedAdd = 0.05
+ATT.SpeedAddSights = 0.1
 
 -- Negatives
+ATT.SpreadAdd = 0.03
+ATT.RecoilSideAdd = 0.5
 ATT.ClipSize = 3
 
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_serbu")
@@ -145,19 +154,27 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_sawed")
 
 ATT = {}
 
-ATT.PrintName = "18.5\" USMC Barrel"
-ATT.CompactName = "18.5\" USMC"
+ATT.PrintName = "20\" USMC Barrel"
+ATT.CompactName = "20\" USMC"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 8 usmc.png", "mips smooth")
 ATT.Category = "uplp_r870_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-ATT.SortOrder = 8
+ATT.SortOrder = 9
 
 -- Positives
-ATT.ClipSize = 8
+ATT.ClipSize = 9
+ATT.SpreadAdd = -0.008
+ATT.RecoilUpMult = 0.75
+ATT.RecoilSideMult = 0.85
 
 -- Negatives
+ATT.DispersionSpreadAddHipFire = 0.012
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAdd = -0.03
+ATT.SpeedAddSights = -0.075
 
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_usmc")
 
@@ -176,8 +193,15 @@ ATT.SortOrder = 9
 
 -- Positives
 ATT.ClipSize = 9
+ATT.SpreadAdd = -0.008
+ATT.RecoilUpMult = 0.75
 
 -- Negatives
+ATT.DispersionSpreadAddHipFire = 0.012
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAdd = -0.02
+ATT.SpeedAddSights = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_9")
 
@@ -196,8 +220,16 @@ ATT.SortOrder = 9
 
 -- Positives
 ATT.ClipSize = 9
+ATT.SpreadAdd = -0.01
+ATT.RecoilUpMult = 0.667
 
 -- Negatives
+ATT.CycleTimeMult = 1.1
+ATT.DispersionSpreadAddHipFire = 0.018
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.06
+ATT.SpeedAdd = -0.02
+ATT.SpeedAddSights = -0.1
 
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_swag")
 
@@ -215,9 +247,8 @@ ATT.Icon = Material(iconfolder .. "pumpold.png", "mips smooth")
 ATT.Category = "uplp_r870_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Positives
-
--- Negatives
+ATT.SpeedAddSights = -0.05
+ATT.RecoilUpAdd = -0.3
 
 ARC9.LoadAttachment(ATT, "uplp_r870_handle_old")
 
@@ -233,9 +264,8 @@ ATT.Icon = Material(iconfolder .. "pump.png", "mips smooth")
 ATT.Category = "uplp_r870_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Positives
-
--- Negatives
+ATT.SpeedAddSights = 0.05
+ATT.RecoilUpAdd = 0.3
 
 ARC9.LoadAttachment(ATT, "uplp_r870_handle_poly")
 
@@ -252,9 +282,9 @@ ATT.Category = "uplp_r870_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m590_tacs"}
--- Positives
 
--- Negatives
+ATT.RecoilUpAdd = 0.2
+ATT.RecoilRandomSideAdd = -0.15
 
 ATT.Attachments = {
     {
@@ -320,9 +350,11 @@ ATT.Category = "uplp_r870_handle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m590_tacs"}
--- Positives
 
--- Negatives
+ATT.CycleTimeMult = 0.9
+ATT.SpeedMultShooting = 0.75
+ATT.RecoilRandomUpAdd = 0.3
+ATT.RecoilRandomSideAdd = 0.3
 
 ATT.Attachments = {
     {
@@ -357,9 +389,14 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.CustomizePos = Vector(22, 32.5, 3.25)
--- Positives
 
--- Negatives
+ATT.RecoilAdd = 0.6
+ATT.SwayAddSights = 0.5
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.06
+ATT.SpreadAddHipFire = -0.005
+ATT.SpeedAddSights = 0.08
+ATT.SpeedAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_short")
 
@@ -376,9 +413,14 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.CustomizePos = Vector(22, 32.5, 3.25)
--- Positives
 
--- Negatives
+ATT.RecoilAdd = 0.45
+ATT.SwayAddSights = 0.75
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.06
+ATT.SpreadAddHipFire = -0.005
+ATT.SpeedAddSights = 0.08
+ATT.SpeedAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_short_wood")
 
@@ -394,9 +436,8 @@ ATT.Icon = Material(iconfolder .. "stockpoly.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Positives
-
--- Negatives
+ATT.RecoilRandomSideAdd = 0.3
+ATT.SpeedAddSights = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_poly")
 
@@ -412,9 +453,8 @@ ATT.Icon = Material(iconfolder .. "stockmpul.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Positives
-
--- Negatives
+ATT.RecoilRandomSideAdd = 0.3
+ATT.SprintToFireTimeAdd = -0.03
 
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_magpul")
 
@@ -431,13 +471,13 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose"}
 
--- Positives
-
--- Negatives
-
--- AR15 stocks reduce too much recoil so this is to counterbalance them
-ATT.RecoilAdd = 0.3
-ATT.SpreadAddHipFire = 0.01
+ATT.RecoilAdd = 1
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
 
 ATT.Attachments = {
     {
@@ -468,9 +508,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
 ATT.CustomizePos = Vector(22, 32.5, 3.25)
--- Positives
 
--- Negatives
+ATT.RecoilAdd = 0.75
+ATT.SwayAddSights = 0.5
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpreadAddHipFire = -0.01
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_grip")
 
@@ -512,26 +557,24 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
 
-        -- Positives
-        -- RecoilAutoControlMult = 1.4,
-        -- VisualRecoilMultHipFire = 0.35,
-
-        -- Buffer Tube stats
-        -- RecoilAdd = -0.8,
-        -- SwayAddSights = -1,
-        -- AimDownSightsTimeAdd = 0.1,
-        -- SprintToFireTimeAdd = 0.1 - 0.02,
-        -- SpeedMultSights = 0.85,
-        -- SpeedAdd = -0.05,
+        RecoilAdd = 0.75,
+        AimDownSightsTimeAdd = -0.05,
+        SprintToFireTimeAdd = -0.05,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_foldedstock", "uplp_grippose", "uplp_gripposemoar"},
 
-        -- SwayAddSights = -0.5,
-        -- SprintToFireTimeAdd = 0.05,
 		CantPeek = true,
         CustomizePos = Vector(22, 32.5, 3.25),
+
+        RecoilAdd = 0.75,
+        SwayAddSights = 0.5,
+        AimDownSightsTimeAdd = -0.1,
+        SprintToFireTimeAdd = -0.1,
+        SpreadAddHipFire = -0.01,
+        SpeedAddSights = 0.1,
+        SpeedAdd = 0.05,
     },
 }
 
