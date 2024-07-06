@@ -52,7 +52,7 @@ L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108мм СССР"
 L["uplp_caliber_9x39mm"] = "9×39mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
-L["uplp_caliber_308auto"] = ".308 Auto"
+L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Производитель2"
