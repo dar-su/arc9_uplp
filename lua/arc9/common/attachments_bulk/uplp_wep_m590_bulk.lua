@@ -16,15 +16,16 @@ ATT.Category = "uplp_m590_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.DispersionSpreadAddHipFire = -0.012
-ATT.DispersionSpreadAddMove = -0.006
+
+ATT.DispersionSpreadAddHipFire = -0.008
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.02
 ATT.SpeedAddSights = 0.05
 
 -- Negatives
-ATT.SpreadAdd = 0.008
+ATT.RangeMaxMult = 0.6667
+ATT.SpreadAdd = 0.01
 ATT.ClipSize = 4
 ATT.RecoilUpMult = 1.5
 
@@ -43,6 +44,7 @@ ATT.Category = "uplp_m590_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
+ATT.RangeMaxMult = 1.5
 ATT.ClipSize = 6
 ATT.SpreadAdd = -0.008
 ATT.RecoilUpMult = 0.75

@@ -95,18 +95,35 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 80 * 1.25
-SWEP.DamageMin = 5
+SWEP.DamageMax = 120
+SWEP.DamageMin = 8
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
 
+SWEP.CurvedDamageScaling = true
+function SWEP:Hook_GetDamageAtRange(data)
+    local d = self:GetDamageDeltaAtRange(data.range)
+
+    local dmgv = Lerp(d ^ 0.25, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
+    local num = self:GetProcessedValue("Num")
+
+    if self:GetProcessedValue("DistributeDamage", true) then
+        dmgv = dmgv / num
+    elseif self:GetProcessedValue("NormalizeNumDamage", true) then
+        dmgv = dmgv / (num / self.Num)
+    end
+
+    data.dmg = dmgv
+    return data
+end
+
 -- for faster falloff after ~5 meters
-SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 160 * 1.25
-SWEP.SweetSpotRange = 2 / ARC9.HUToM
-SWEP.SweetSpotWidth = 2 / ARC9.HUToM
-SWEP.SweetSpotPeak = 2 / ARC9.HUToM
+SWEP.SweetSpot = false
+-- SWEP.SweetSpotDamage = 160 * 1.25
+-- SWEP.SweetSpotRange = 2 / ARC9.HUToM
+-- SWEP.SweetSpotWidth = 2 / ARC9.HUToM
+-- SWEP.SweetSpotPeak = 2 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1,
@@ -122,7 +139,7 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 2 / ARC9.HUToM
+SWEP.RangeMin = 3 / ARC9.HUToM
 SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets

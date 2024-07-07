@@ -26,7 +26,9 @@ ATT.SpeedAdd = 0.05
 ATT.SpeedAddSights = 0.1
 
 -- Negatives
+ATT.RangeMaxMult = 0.5
 ATT.SpreadAdd = 0.03
+ATT.RecoilUpAdd = 0.3
 ATT.RecoilSideAdd = 0.5
 ATT.ClipSize = 3
 
@@ -65,6 +67,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 5
 
 -- Positives
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SpeedAddSights = 0.05
 
 -- Negatives
 ATT.ClipSize = 5
@@ -85,6 +90,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 5
 
 -- Positives
+ATT.RangeMaxMult = 2
+ATT.SpreadAdd = -0.015
+ATT.RecoilUpMult = 0.667
+
+-- Negatives
+ATT.CycleTimeMult = 1.1
+ATT.DispersionSpreadAddHipFire = 0.03
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedAddSights = -0.1
 
 -- Negatives
 ATT.ClipSize = 5
@@ -105,6 +120,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 5
 
 -- Positives
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.RecoilAdd = -0.3
 
 -- Negatives
 ATT.ClipSize = 5
@@ -125,8 +143,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 5
 
 -- Positives
+ATT.DispersionSpreadAddHipFire = -0.006
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedAdd = 0.02
+ATT.SpeedAddSights = 0.05
 
 -- Negatives
+ATT.RangeMaxMult = 0.6667
+ATT.SpreadAdd = 0.015
+ATT.RecoilUpAdd = 0.15
+ATT.RecoilSideAdd = 0.3
+
 ATT.ClipSize = 5
 
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_sawed")
@@ -161,20 +189,21 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "870 8 usmc.png", "mips smooth")
 ATT.Category = "uplp_r870_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-ATT.SortOrder = 9
+ATT.SortOrder = 8
 
 -- Positives
-ATT.ClipSize = 9
+ATT.RangeMaxMult = 1.25
+ATT.ClipSize = 8
 ATT.SpreadAdd = -0.008
 ATT.RecoilUpMult = 0.75
 ATT.RecoilSideMult = 0.85
 
 -- Negatives
-ATT.DispersionSpreadAddHipFire = 0.012
-ATT.AimDownSightsTimeAdd = 0.07
-ATT.SprintToFireTimeAdd = 0.05
+ATT.DispersionSpreadAddHipFire = 0.008
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.03
 ATT.SpeedAdd = -0.03
-ATT.SpeedAddSights = -0.075
+ATT.SpeedAddSights = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_usmc")
 
@@ -192,6 +221,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 9
 
 -- Positives
+ATT.RangeMaxMult = 1.25
 ATT.ClipSize = 9
 ATT.SpreadAdd = -0.008
 ATT.RecoilUpMult = 0.75
@@ -219,6 +249,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 9
 
 -- Positives
+ATT.RangeMaxMult = 1.33
 ATT.ClipSize = 9
 ATT.SpreadAdd = -0.01
 ATT.RecoilUpMult = 0.667
