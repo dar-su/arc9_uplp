@@ -469,7 +469,10 @@ ATT.SpeedMultSights = 0.9
 
 -- Negatives
 
+ATT.SuppressEmptySuffix = true 
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "reload" and wep:Clip1() == 0 then anim = "reload_empty" end
     return anim .. "_30"
 end
 
@@ -500,8 +503,11 @@ ATT.SwayMultSights = 1.15
 ATT.SpeedMultSights = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "reload" and wep:Clip1() == 0 then anim = "reload_empty" end
     return anim .. "_30"
 end
+
+ATT.SuppressEmptySuffix = true 
 
 -- ATT.ActivateElements = {"use_optics"}
 

@@ -389,7 +389,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathUTScar .. "chback.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTREAL .. "chback.ogg", t = 1 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "chforward.ogg", t = 11 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 60, c = ca },
         },

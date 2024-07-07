@@ -196,7 +196,7 @@ SWEP.AttachmentElements = {
 
 SWEP.Attachments = {
     { -- optic
-        Pos = Vector(-0.1, -1.0, 0.9),
+        Pos = Vector(-0.1, -1.0, 2.1),
     },
     { -- barrel
         Category = {"uplp_r870_barrel"},
