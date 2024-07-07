@@ -312,6 +312,9 @@ ATT.BulletBones = {
 }
 
 -- Negatives
+ATT.SpeedAdd = -0.06
+ATT.SpeedMultShooting = 0.65
+ATT.SpeedMultSights = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_m590_mag_10")
 
@@ -338,6 +341,9 @@ ATT.BulletBones = {
 }
 
 -- Negatives
+ATT.SpeedAdd = -0.03
+ATT.SpeedMultShooting = 0.75
+ATT.SpeedMultSights = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_m590_mag_5")
 
