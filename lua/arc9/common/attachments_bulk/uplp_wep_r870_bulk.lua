@@ -632,6 +632,10 @@ ATT.ClipSizeOverride = 6
 ATT.ShotgunReload = false
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/870_mag_6.mdl"
 
+ATT.SpeedAdd = -0.03
+ATT.SpeedMultShooting = 0.75
+ATT.SpeedMultSights = 0.85
+
 ATT.BulletBones = {
     [1] = "bullet1mag",
     [2] = "bullet2mag",
