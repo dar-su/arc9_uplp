@@ -453,11 +453,21 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
                 swep.dontcontinuereload = true
                 return "reload_start_empty_only"
             end
+
+            if eles["uplp_r870_bar_serbu"] then 
+                swep.itwasemptystartbro = true 
+                return "reload_start" 
+            end
         end
     elseif anim == "reload_finish" or anim == "reload_insert" then
         if swep.dontcontinuereload then
             swep.dontcontinuereload = nil
             return "idle"
+        end
+
+        if eles["uplp_r870_bar_serbu"] and anim == "reload_finish" and swep.itwasemptystartbro then
+            swep.itwasemptystartbro = nil 
+            return "reload_finish_emptyalt" 
         end
     end
 
@@ -813,6 +823,28 @@ SWEP.Animations = {
         },
     },
 
+    ["reload_finish_emptyalt"] = {
+        Source = "reload_end_empty_alt",
+        MinProgress = 0.75,
+        EjectAt = 11/30,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
+
+            { s = pathUTREAL .. "rack_1.ogg", t = 8 / 30, v = 0.6 },
+            { s = pathUT .. "eject.ogg", t = 11 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 16 / 30, v = 0.6 },
+
+            { s = pathUTC .. "cloth_2.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 25 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.5, lhik = 1 },
+        },
+    },
+
     ["inspect"] = {
         Source = "look",
         MinProgress = 0.95,
@@ -846,7 +878,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 61 / 30, c = ca, v = 1 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 63 / 30, c = ca, v = 1 },
             { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
@@ -1070,7 +1102,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
-        Pos = Vector(0.525, 1.25, 0),
+        Pos = Vector(0.525, 0.7, -2.4),
         Ang = Angle(90, 0, -90),
     },
 

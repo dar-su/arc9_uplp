@@ -226,7 +226,9 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/skin.png", "mips smooth"),
     },
     _, -- shellholder
-    _, -- charm
+    { -- charm
+        Pos = Vector(0.64, 0.4, -1.9),
+    },
 
     -- Cosmetic shit
     { -- s1

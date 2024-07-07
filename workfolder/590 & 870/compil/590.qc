@@ -281,6 +281,15 @@ $sequence "reload_end" {
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
+$sequence "reload_end_empty_alt" {
+	"anims\sgreload_end_empty.smd"
+	"anims\sgreload_end_empty_ads.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+	ikrule "rhand" touch "rhandikbleh" usesource
+}
+
 
 
 $sequence "reload_mag5" {

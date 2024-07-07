@@ -32,6 +32,8 @@ ATT.RecoilUpAdd = 0.3
 ATT.RecoilSideAdd = 0.5
 ATT.ClipSize = 3
 
+ATT.ShotgunReloadIncludesChamber = false 
+
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_serbu")
 
 ---------- uplp_r870_bar_serbu_extralhik
@@ -515,7 +517,7 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock"},
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
-        Pos = Vector(2.3, -0.0, -0.05),
+        Pos = Vector(2.6, -0.0, -0.15),
         Ang = Angle(0, 0, 0),
         Scale = 1.0
     },
