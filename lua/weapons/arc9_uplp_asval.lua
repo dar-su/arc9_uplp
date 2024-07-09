@@ -688,7 +688,7 @@ SWEP.Animations = {
     -- Inspect
 
     ["inspect"] = {
-        Source = {"inspect"},
+        Source = "inspect",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -709,7 +709,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_sr3"] = {
-        Source = {"inspect_sr3"},
+        Source = "inspect_sr3",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -731,7 +731,7 @@ SWEP.Animations = {
     },
 
     ["fix"] = {
-        Source = {"fix"},
+        Source = "fix",
         EventTable = {
             { s = mechh, t = 0 },
             { s = pathUTC .. "cloth_2.ogg", t = 2 / 30 + 0.25, c = ca, v = 0.8 },
