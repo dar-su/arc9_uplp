@@ -252,7 +252,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_silencer.mdl"
 ATT.MuzzleDevice = true
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed_shotgun"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -287,7 +287,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy_silencer.mdl"
 ATT.MuzzleDevice = true
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed_shotgun"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
