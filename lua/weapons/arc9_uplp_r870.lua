@@ -9,6 +9,16 @@ SWEP.Category = "ARC9 - Poly Arms"
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_r870")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_r870_desc")
 
+SWEP.Trivia = {
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_r870_real"),
+
+    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_r870_manufacturer" ),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_12gauge"),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase( "uplp_mechanism_pumpaction" ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1951" ),
+}
+
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_870.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_870.mdl"
 

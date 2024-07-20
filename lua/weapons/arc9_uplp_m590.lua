@@ -14,8 +14,6 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_m590_desc")
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun") -- In the Spawnmenu
 
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun")
-
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_m590_real"),
 
