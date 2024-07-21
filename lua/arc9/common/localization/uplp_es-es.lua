@@ -2769,3 +2769,11 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 ////// Extras & Skins
 -- L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
+
+//////////////////// ArmaLite AR-18
+-- L["uplp_weapon_ar18"] = "AR-18"
+-- L["uplp_weapon_ar18_desc"] = "The MIR-63 (\"Military Infantry Rifle 63\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
+
+-- L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
+
+-- L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"

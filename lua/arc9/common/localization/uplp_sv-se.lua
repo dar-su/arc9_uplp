@@ -2783,3 +2783,11 @@ L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appea
 
 ////// Extras & Skins
 L["uplp_r870_gold.description"] = "Ersätter interna delarna med några av guld.\n\n<color=255,255,100>Upplåst vid Befälhavare (Lv55)</color>"
+
+//////////////////// ArmaLite AR-18
+L["uplp_weapon_ar18"] = "MIR-63"
+L["uplp_weapon_ar18_desc"] = "MIR-63 (\"Military Infantry Rifle 63\") är ett gasdrivet handeldvapen med selektiv skjutläge utvecklat på 1960-talet, designat för att vara ett enklare och mer kostnadseffektivt alternativ till AR-15, med ett kortslagigt pistonsystem och en konstruktion av stansad plåt. Trots att det inte blev allmänt antaget har dess design påverkat många moderna eldhandvapen."
+
+L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
+
+L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"

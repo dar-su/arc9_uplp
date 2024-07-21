@@ -2824,3 +2824,46 @@ L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m590_extra_holst
 L["uplp_r870_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
 L["uplp_r870_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
 L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
+
+//////////////////// ArmaLite AR-18
+L["uplp_weapon_ar18"] = "MIR-63"
+L["uplp_weapon_ar18_desc"] = "The MIR-63 (\"Military Infantry Rifle 63\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
+
+L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
+
+L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
+
+/////////// Attachments
+////// Barrels
+L["uplp_ar18_bar_short.printname"] = "10.1\" MIR-63S Barrel and Handguard"
+L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
+L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MIR-63S."
+
+////// Muzzle
+L["uplp_ar18_muz.printname"] = "MIR-63 Muzzle Brake"
+L["uplp_ar18_muz.compactname"] = "MIR-63"
+L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MIR-63."
+
+////// Mags
+L["uplp_ar18_mag_50.printname"] = "50-Round 5.56x45mm"
+L["uplp_ar18_mag_50.compactname"] = "50R 5.56"
+L["uplp_ar18_mag_50.description"] = "Extended 50-round magazine for the MIR-63."
+
+L["uplp_ar18_mag_20.printname"] = "20-Round 5.56x45mm"
+L["uplp_ar18_mag_20.compactname"] = "20R 5.56"
+L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the MIR-63."
+
+////// Stocks
+L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
+L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
+L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
+
+////// Grips
+L["uplp_ar18_grip.printname"] = "MIR-63 Front Grip"
+L["uplp_ar18_grip.compactname"] = "MIR-63 FG"
+L["uplp_ar18_grip.description"] = "The MIR-63's pistol grip placed beneath the barrel makes for a fascinating, yet effective front grip."
+
+////// Optics
+L["uplp_ar18_scope.printname"] = "MIR-63 Optic"
+L["uplp_ar18_scope.compactname"] = "MIR-63"
+L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the MIR-63."
