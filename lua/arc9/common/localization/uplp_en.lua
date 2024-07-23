@@ -2826,8 +2826,8 @@ L["uplp_r870_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactn
 L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
 
 //////////////////// ArmaLite AR-18
-L["uplp_weapon_ar18"] = "MIR-63"
-L["uplp_weapon_ar18_desc"] = "The MIR-63 (\"Military Infantry Rifle 63\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
+L["uplp_weapon_ar18"] = "FSIR-63"
+L["uplp_weapon_ar18_desc"] = "The FSIR-63 (\"Future Soldier Infantry Rifle 63\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
 
 L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
 
@@ -2835,23 +2835,23 @@ L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ar18_bar_short.printname"] = "10.1\" MIR-63S Barrel and Handguard"
+L["uplp_ar18_bar_short.printname"] = "10.1\" FSIR-63S Barrel and Handguard"
 L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
-L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MIR-63S."
+L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the FSIR-63S."
 
 ////// Muzzle
-L["uplp_ar18_muz.printname"] = "MIR-63 Muzzle Brake"
-L["uplp_ar18_muz.compactname"] = "MIR-63"
-L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MIR-63."
+L["uplp_ar18_muz.printname"] = "FSIR-63 Muzzle Brake"
+L["uplp_ar18_muz.compactname"] = "FSIR-63"
+L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the FSIR-63."
 
 ////// Mags
 L["uplp_ar18_mag_50.printname"] = "50-Round 5.56x45mm"
 L["uplp_ar18_mag_50.compactname"] = "50R 5.56"
-L["uplp_ar18_mag_50.description"] = "Extended 50-round magazine for the MIR-63."
+L["uplp_ar18_mag_50.description"] = "Extended 50-round magazine for the FSIR-63."
 
 L["uplp_ar18_mag_20.printname"] = "20-Round 5.56x45mm"
 L["uplp_ar18_mag_20.compactname"] = "20R 5.56"
-L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the MIR-63."
+L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the FSIR-63."
 
 ////// Stocks
 L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
@@ -2859,11 +2859,56 @@ L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
 L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
 
 ////// Grips
-L["uplp_ar18_grip.printname"] = "MIR-63 Front Grip"
-L["uplp_ar18_grip.compactname"] = "MIR-63 FG"
-L["uplp_ar18_grip.description"] = "The MIR-63's pistol grip placed beneath the barrel makes for a fascinating, yet effective front grip."
+L["uplp_ar18_grip.printname"] = "FSIR-63 Front Grip"
+L["uplp_ar18_grip.compactname"] = "FSIR-63 FG"
+L["uplp_ar18_grip.description"] = "The FSIR-63's pistol grip placed beneath the barrel makes for a fascinating, yet effective front grip."
 
 ////// Optics
-L["uplp_ar18_scope.printname"] = "MIR-63 Optic"
-L["uplp_ar18_scope.compactname"] = "MIR-63"
-L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the MIR-63."
+L["uplp_ar18_scope.printname"] = "FSIR-63 Optic"
+L["uplp_ar18_scope.compactname"] = "FSIR-63"
+L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the FSIR-63."
+
+//////////////////// MP9N
+L["uplp_weapon_mp9"] = "PDW 919"
+L["uplp_weapon_mp9_desc"] = "The PDW 919 is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
+
+L["uplp_weapon_mp9_real"] = "B&T MP9"
+
+L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mp9_bar_short.printname"] = "Extended Barrel and Shroud"
+L["uplp_mp9_bar_short.compactname"] = "Ext."
+L["uplp_mp9_bar_short.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
+
+////// Muzzle
+L["uplp_mp9_supp_short.printname"] = "PDW 919 Short Suppressor"
+L["uplp_mp9_supp_short.compactname"] = "Supp. S"
+L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the PDW 919."
+
+L["uplp_mp9_supp_long.printname"] = "PDW 919 Long Suppressor"
+L["uplp_mp9_supp_long.compactname"] = "Supp. L"
+L["uplp_mp9_supp_long.description"] = "Short suppressor intended for use on the PDW 919."
+
+////// Mags
+L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
+L["uplp_mp9_mag_20.compactname"] = "20R 9x19"
+L["uplp_mp9_mag_20.description"] = "Shortened 20-round magazine for the PDW 919."
+
+////// Stocks
+L["uplp_mp9_stock_foldable.printname"] = "Foldable Stock"
+L["uplp_mp9_stock_foldable.compactname"] = "Foldable"
+L["uplp_mp9_stock_foldable.description"] = "Factory-installed foldable stock for the PDW 919."
+
+L["uplp_mp9_stock_tac.printname"] = "Tactical Foldable Stock"
+L["uplp_mp9_stock_tac.compactname"] = "Tac. Fold."
+L["uplp_mp9_stock_tac.description"] = "Custom-made foldable stock for the PDW 919."
+
+L["uplp_mp9_stock_sling.printname"] = "Rear Sling"
+L["uplp_mp9_stock_sling.compactname"] = "Sling"
+L["uplp_mp9_stock_sling.description"] = "Attaches a cosmetic rear sling onto the PDW 919."
+
+L["uplp_mp9_stock_fixed.printname"] = "Fixed Stock"
+L["uplp_mp9_stock_fixed.compactname"] = "Fixed"
+L["uplp_mp9_stock_fixed.description"] = "Custom-made fixed stock for the PDW 919."
