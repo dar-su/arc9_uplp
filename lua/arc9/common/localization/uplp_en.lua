@@ -2460,8 +2460,6 @@ L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
 L["uplp_weapon_grenade_inc_short"] = "Incendiary"
 L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
 
-
-
 //////////////////// FAL
 L["uplp_weapon_fal"] = "FCM"
 L["uplp_weapon_fal_desc"] = "The Fusil de combat militaire (\"Military Combat Rifle\"), or FCM for short, is a battle rifle celebrated for its robust design and widespread adoption across numerous militaries. Renowned for its reliability and versatility, the FCM served as a stalwart companion on countless battlefields throughout the 20th century."
@@ -2837,13 +2835,7 @@ L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 ////// Barrels
 L["uplp_ar18_bar_short.printname"] = "10.1\" MAR-63S Barrel and Handguard"
 L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
-L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S."
-
--- short barrel with grip integrated is single att, not seperate slot
--- L["uplp_ar18_grip.printname"] = "MAR-63 Front Grip"
--- L["uplp_ar18_grip.compactname"] = "MAR-63 FG"
--- L["uplp_ar18_grip.description"] = "The MAR-63's pistol grip placed beneath the barrel makes for a fascinating, yet effective front grip."
-
+L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
 
 ////// Muzzle
 L["uplp_ar18_muz.printname"] = "MAR-63 Muzzle Brake"
@@ -2864,9 +2856,9 @@ L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
 L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
 L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
 
-L["uplp_ar18_stock_fixed_wood.printname"] = "Fixed Wooden Stock"
+L["uplp_ar18_stock_fixed_wood.printname"] = "Fixed Wooden Stock & Handguard"
 L["uplp_ar18_stock_fixed_wood.compactname"] = "Wooden"
-L["uplp_ar18_stock_fixed_wood.description"] = "blah blah fixed stock. also makes handguard go wooden too :-)"
+L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
 
 ////// Optics
 L["uplp_ar18_scope.printname"] = "MAR Optic Sight"
@@ -2877,9 +2869,9 @@ L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exc
 L["uplp_weapon_mp9"] = "F9 Cheetah"
 L["uplp_weapon_mp9_desc"] = "The F9 \"Cheetah\" is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
 
-L["uplp_weapon_mp9_real"] = "B&T MP9 / Steyr TMP"
+L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
 
-L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet / Steyr"
+L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
 /////////// Attachments
 ////// Barrels
@@ -2922,6 +2914,7 @@ L["uplp_mp9_stock_fixed.printname"] = "Fixed Stock"
 L["uplp_mp9_stock_fixed.compactname"] = "Fixed"
 L["uplp_mp9_stock_fixed.description"] = "Classic fixed stock for the F9 \"Cheetah\"."
 
-L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Paintjob"
-L["uplp_mp9_skin_white.compactname"] = "White"
-L["uplp_mp9_skin_white.description"] = "Paints F9 \"Cheetah\" body into white color and internals into red. add some joke here idk"
+////// Skins
+L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
+L["uplp_mp9_skin_white.compactname"] = "W&R"
+L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."

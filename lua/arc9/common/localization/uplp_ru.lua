@@ -2785,8 +2785,8 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
 
 //////////////////// ArmaLite AR-18
--- L["uplp_weapon_ar18"] = "FSIR-63"
--- L["uplp_weapon_ar18_desc"] = "The FSIR-63 (\"Future Soldier Infantry Rifle 63\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
+-- L["uplp_weapon_ar18"] = "MAR-63"
+-- L["uplp_weapon_ar18_desc"] = "The MAR-63 (\"Military Assault Rifle 1963\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
 
 -- L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
 
@@ -2794,46 +2794,45 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_ar18_bar_short.printname"] = "10.1\" FSIR-63S Barrel and Handguard"
+-- L["uplp_ar18_bar_short.printname"] = "10.1\" MAR-63S Barrel and Handguard"
 -- L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
--- L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the FSIR-63S."
+-- L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
 
 ////// Muzzle
--- L["uplp_ar18_muz.printname"] = "FSIR-63 Muzzle Brake"
--- L["uplp_ar18_muz.compactname"] = "FSIR-63"
--- L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the FSIR-63."
+-- L["uplp_ar18_muz.printname"] = "MAR-63 Muzzle Brake"
+-- L["uplp_ar18_muz.compactname"] = "MAR-63"
+-- L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MAR-63."
 
 ////// Mags
--- L["uplp_ar18_mag_50.printname"] = "50-Round 5.56x45mm"
--- L["uplp_ar18_mag_50.compactname"] = "50R 5.56"
--- L["uplp_ar18_mag_50.description"] = "Extended 50-round magazine for the FSIR-63."
+-- L["uplp_ar18_mag_40.printname"] = "40-Round 5.56x45mm"
+-- L["uplp_ar18_mag_40.compactname"] = "40R 5.56"
+-- L["uplp_ar18_mag_40.description"] = "Extended 40-round magazine for the MAR-63."
 
 -- L["uplp_ar18_mag_20.printname"] = "20-Round 5.56x45mm"
 -- L["uplp_ar18_mag_20.compactname"] = "20R 5.56"
--- L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the FSIR-63."
+-- L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the MAR-63."
 
 ////// Stocks
 -- L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
 -- L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
 -- L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
 
-////// Grips
--- L["uplp_ar18_grip.printname"] = "FSIR-63 Front Grip"
--- L["uplp_ar18_grip.compactname"] = "FSIR-63 FG"
--- L["uplp_ar18_grip.description"] = "The FSIR-63's pistol grip placed beneath the barrel makes for a fascinating, yet effective front grip."
+-- L["uplp_ar18_stock_fixed_wood.printname"] = "Fixed Wooden Stock & Handguard"
+-- L["uplp_ar18_stock_fixed_wood.compactname"] = "Wooden"
+-- L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
 
 ////// Optics
--- L["uplp_ar18_scope.printname"] = "FSIR-63 Optic"
--- L["uplp_ar18_scope.compactname"] = "FSIR-63"
--- L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the FSIR-63."
+-- L["uplp_ar18_scope.printname"] = "MAR Optic Sight"
+-- L["uplp_ar18_scope.compactname"] = "MAR-O 4x"
+-- L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
--- L["uplp_weapon_mp9"] = "PDW 919"
--- L["uplp_weapon_mp9_desc"] = "The PDW 919 is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
+-- L["uplp_weapon_mp9"] = "F9 Cheetah"
+-- L["uplp_weapon_mp9_desc"] = "The F9 \"Cheetah\" is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
 
--- L["uplp_weapon_mp9_real"] = "B&T MP9"
+-- L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
 
--- L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet"
+-- L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
 /////////// Attachments
 ////// Barrels
@@ -2842,32 +2841,41 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_mp9_bar_short.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
 
 ////// Muzzle
--- L["uplp_mp9_supp_short.printname"] = "PDW 919 Short Suppressor"
+-- L["uplp_mp9_supp_short.printname"] = "F9 \"Cheetah\" Short Suppressor"
 -- L["uplp_mp9_supp_short.compactname"] = "Supp. S"
--- L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the PDW 919."
+-- L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
 
--- L["uplp_mp9_supp_long.printname"] = "PDW 919 Long Suppressor"
+-- L["uplp_mp9_supp_long.printname"] = "F9 \"Cheetah\" Long Suppressor"
 -- L["uplp_mp9_supp_long.compactname"] = "Supp. L"
--- L["uplp_mp9_supp_long.description"] = "Short suppressor intended for use on the PDW 919."
+-- L["uplp_mp9_supp_long.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
 
 ////// Mags
 -- L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
 -- L["uplp_mp9_mag_20.compactname"] = "20R 9x19"
--- L["uplp_mp9_mag_20.description"] = "Shortened 20-round magazine for the PDW 919."
+-- L["uplp_mp9_mag_20.description"] = "Shortened 20-round magazine for the F9 \"Cheetah\"."
+
+-- L["uplp_mp9_mag_42.printname"] = "42-Round 9x19mm"
+-- L["uplp_mp9_mag_42.compactname"] = "42R 9x19"
+-- L["uplp_mp9_mag_42.description"] = "Custom-made extended 42-round magazine for the F9 \"Cheetah\"."
 
 ////// Stocks
 -- L["uplp_mp9_stock_foldable.printname"] = "Foldable Stock"
 -- L["uplp_mp9_stock_foldable.compactname"] = "Foldable"
--- L["uplp_mp9_stock_foldable.description"] = "Factory-installed foldable stock for the PDW 919."
+-- L["uplp_mp9_stock_foldable.description"] = "Factory-installed foldable stock for the F9 \"Cheetah\"."
 
--- L["uplp_mp9_stock_tac.printname"] = "Tactical Foldable Stock"
--- L["uplp_mp9_stock_tac.compactname"] = "Tac. Fold."
--- L["uplp_mp9_stock_tac.description"] = "Custom-made foldable stock for the PDW 919."
+-- L["uplp_mp9_stock_tac.printname"] = "Tactical Stock"
+-- L["uplp_mp9_stock_tac.compactname"] = "Tac."
+-- L["uplp_mp9_stock_tac.description"] = "Custom-made stock for the F9 \"Cheetah\"."
 
 -- L["uplp_mp9_stock_sling.printname"] = "Rear Sling"
 -- L["uplp_mp9_stock_sling.compactname"] = "Sling"
--- L["uplp_mp9_stock_sling.description"] = "Attaches a cosmetic rear sling onto the PDW 919."
+-- L["uplp_mp9_stock_sling.description"] = "Attaches a cosmetic rear sling onto the F9 \"Cheetah\"."
 
 -- L["uplp_mp9_stock_fixed.printname"] = "Fixed Stock"
 -- L["uplp_mp9_stock_fixed.compactname"] = "Fixed"
--- L["uplp_mp9_stock_fixed.description"] = "Custom-made fixed stock for the PDW 919."
+-- L["uplp_mp9_stock_fixed.description"] = "Classic fixed stock for the F9 \"Cheetah\"."
+
+////// Skins
+-- L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
+-- L["uplp_mp9_skin_white.compactname"] = "W&R"
+-- L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."

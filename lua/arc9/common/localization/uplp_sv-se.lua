@@ -2777,16 +2777,16 @@ L["uplp_r870_stock_fold.compactname"] = "Pistolg. (V)"
 L["uplp_r870_stock_fold.description"] = "Vertikalt pistolgrepp med vikbar kolv."
 
 ////// Rail
-L["uplp_r870_iron_none.printname"] = "No Top Rail"
-L["uplp_r870_iron_none.compactname"] = "N/A"
-L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
+L["uplp_r870_iron_none.printname"] = "Ingen Toppmonterad Skena"
+L["uplp_r870_iron_none.compactname"] = "Ingen"
+L["uplp_r870_iron_none.description"] = "Tar bort den toppmonterade skenan för ett mer slät utseende."
 
 ////// Extras & Skins
 L["uplp_r870_gold.description"] = "Ersätter interna delarna med några av guld.\n\n<color=255,255,100>Upplåst vid Befälhavare (Lv55)</color>"
 
 //////////////////// ArmaLite AR-18
-L["uplp_weapon_ar18"] = "FSIR-63"
-L["uplp_weapon_ar18_desc"] = "FSIR-63 (\"Future Soldier Infantry Rifle 63\") är ett gasdrivet handeldvapen med selektiv skjutläge utvecklat på 1960-talet, designat för att vara ett enklare och mer kostnadseffektivt alternativ till AR-15, med ett kortslagigt pistonsystem och en konstruktion av stansad plåt. Trots att det inte blev allmänt antaget har dess design påverkat många moderna eldhandvapen."
+L["uplp_weapon_ar18"] = "MAR-63"
+L["uplp_weapon_ar18_desc"] = "MAR-63 (\"Military Assault Rifle 1963\") är ett gasdrivet handeldvapen med selektiv skjutläge utvecklat på 1960-talet, designat för att vara ett enklare och mer kostnadseffektivt alternativ till AR-15, med ett kortslagigt pistonsystem och en konstruktion av stansad plåt. Trots att det inte blev allmänt antaget har dess design påverkat många moderna eldhandvapen."
 
 L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
 
@@ -2794,80 +2794,89 @@ L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ar18_bar_short.printname"] = "10.1\" FSIR-63S Barrel and Handguard"
-L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
-L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the FSIR-63S."
+L["uplp_ar18_bar_short.printname"] = "257 mm MAR-63S-Pipa och Handskydd"
+L["uplp_ar18_bar_short.compactname"] = "257 mm MAR-63S"
+L["uplp_ar18_bar_short.description"] = "Förkortad 257 mm pipa och handskydd från MAR-63S. Kommer med ett inbyggt framgrepp."
 
 ////// Muzzle
-L["uplp_ar18_muz.printname"] = "FSIR-63 Muzzle Brake"
-L["uplp_ar18_muz.compactname"] = "FSIR-63"
-L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the FSIR-63."
+L["uplp_ar18_muz.printname"] = "MAR-63-Mynningsbroms"
+L["uplp_ar18_muz.compactname"] = "MAR-63"
+L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MAR-63."
 
 ////// Mags
-L["uplp_ar18_mag_50.printname"] = "50-Round 5.56x45mm"
-L["uplp_ar18_mag_50.compactname"] = "50R 5.56"
-L["uplp_ar18_mag_50.description"] = "Extended 50-round magazine for the FSIR-63."
+L["uplp_ar18_mag_40.printname"] = "40-Patroners 5,56 x 45 mm"
+L["uplp_ar18_mag_40.compactname"] = "40P 5,56"
+L["uplp_ar18_mag_40.description"] = "Förlängt 40-patronersmagasin till MAR-63."
 
-L["uplp_ar18_mag_20.printname"] = "20-Round 5.56x45mm"
-L["uplp_ar18_mag_20.compactname"] = "20R 5.56"
-L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the FSIR-63."
+L["uplp_ar18_mag_20.printname"] = "20-Patroners 5,56 x 45 mm"
+L["uplp_ar18_mag_20.compactname"] = "20P 5,56"
+L["uplp_ar18_mag_20.description"] = "Förkortat 20-patronersmagasin till MAR-63."
 
 ////// Stocks
-L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
-L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
-L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
+L["uplp_ar18_stock_fixed.printname"] = "Fast Kolv"
+L["uplp_ar18_stock_fixed.compactname"] = "Fast"
+L["uplp_ar18_stock_fixed.description"] = "Fabriksinstallerad fast kolv."
 
-////// Grips
-L["uplp_ar18_grip.printname"] = "FSIR-63 Front Grip"
-L["uplp_ar18_grip.compactname"] = "FSIR-63 FG"
-L["uplp_ar18_grip.description"] = "The FSIR-63's pistol grip placed beneath the barrel makes for a fascinating, yet effective front grip."
+L["uplp_ar18_stock_fixed_wood.printname"] = "Fast Träkolv och Handskydd"
+L["uplp_ar18_stock_fixed_wood.compactname"] = "Träkolv"
+L["uplp_ar18_stock_fixed_wood.description"] = "Trävariant av fabrikskolven och främre handskydd."
 
 ////// Optics
-L["uplp_ar18_scope.printname"] = "FSIR-63 Optic"
-L["uplp_ar18_scope.compactname"] = "FSIR-63"
-L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the FSIR-63."
+L["uplp_ar18_scope.printname"] = "MAR-Riktmedel"
+L["uplp_ar18_scope.compactname"] = "MAR-O 4x"
+L["uplp_ar18_scope.description"] = "Fabrikstillverkat riktmedel med 3x magnifiering exklusivt gjord till MAR-63."
 
 //////////////////// MP9N
-L["uplp_weapon_mp9"] = "PDW 919"
-L["uplp_weapon_mp9_desc"] = "PDW 919 är en lätt, kompakt kulsprutepistol designad för närstrid, med hög eldhastighet och minimal rekyl. Dess ergonomiska design och mångsidighet gör den idealisk för militär, brottsbekämpning och personlig försvar."
+L["uplp_weapon_mp9"] = "F9 Cheetah"
+L["uplp_weapon_mp9_desc"] = "F9 \"Cheetah\" är en lätt, kompakt kulsprutepistol designad för närstrid, med hög eldhastighet och minimal rekyl. Dess ergonomiska design och mångsidighet gör den idealisk för militär, brottsbekämpning och personlig försvar."
 
-L["uplp_weapon_mp9_real"] = "B&T MP9"
+L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
 
-L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet"
+L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mp9_bar_short.printname"] = "Extended Barrel and Shroud"
-L["uplp_mp9_bar_short.compactname"] = "Ext."
-L["uplp_mp9_bar_short.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
+L["uplp_mp9_bar_short.printname"] = "Förlängd Pipa och Skydd"
+L["uplp_mp9_bar_short.compactname"] = "Förl."
+L["uplp_mp9_bar_short.description"] = "Förlängd pipa med inbyggt skyddande värmesköld som, dessutom, har inbyggda RIS-skenor."
 
 ////// Muzzle
-L["uplp_mp9_supp_short.printname"] = "PDW 919 Short Suppressor"
-L["uplp_mp9_supp_short.compactname"] = "Supp. S"
-L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the PDW 919."
+L["uplp_mp9_supp_short.printname"] = "F9 \"Cheetah\" Kort Ljuddämpare"
+L["uplp_mp9_supp_short.compactname"] = "Ljud. K."
+L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+L["uplp_mp9_supp_short.description"] = "Kort ljuddämpare gjord till F9 \"Cheetah\"."
 
-L["uplp_mp9_supp_long.printname"] = "PDW 919 Long Suppressor"
-L["uplp_mp9_supp_long.compactname"] = "Supp. L"
-L["uplp_mp9_supp_long.description"] = "Short suppressor intended for use on the PDW 919."
+L["uplp_mp9_supp_long.printname"] = "F9 \"Cheetah\" Lång Ljuddämpare"
+L["uplp_mp9_supp_long.compactname"] = "Ljud. L."
+L["uplp_mp9_supp_long.description"] = "Lång ljuddämpare gjord till F9 \"Cheetah\"."
 
 ////// Mags
-L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
-L["uplp_mp9_mag_20.compactname"] = "20R 9x19"
-L["uplp_mp9_mag_20.description"] = "Shortened 20-round magazine for the PDW 919."
+L["uplp_mp9_mag_20.printname"] = "20-Patroners 9 x 19 mm"
+L["uplp_mp9_mag_20.compactname"] = "20P 9 x 19"
+L["uplp_mp9_mag_20.description"] = "Förkortat 20-patronermagasin till F9 \"Cheetah\"."
+
+L["uplp_mp9_mag_42.printname"] = "42-Patroners 9 x 19 mm"
+L["uplp_mp9_mag_42.compactname"] = "42P 9 x 19"
+L["uplp_mp9_mag_42.description"] = "Anpassat förlängt 42-patronersmagasin till F9 \"Cheetah\"."
 
 ////// Stocks
-L["uplp_mp9_stock_foldable.printname"] = "Foldable Stock"
-L["uplp_mp9_stock_foldable.compactname"] = "Foldable"
-L["uplp_mp9_stock_foldable.description"] = "Factory-installed foldable stock for the PDW 919."
+L["uplp_mp9_stock_foldable.printname"] = "Vikbar Kolv"
+L["uplp_mp9_stock_foldable.compactname"] = "Vikbar"
+L["uplp_mp9_stock_foldable.description"] = "Fabriksinstallerad, vikbar kolv till F9 \"Cheetah\"."
 
-L["uplp_mp9_stock_tac.printname"] = "Tactical Foldable Stock"
-L["uplp_mp9_stock_tac.compactname"] = "Tac. Fold."
-L["uplp_mp9_stock_tac.description"] = "Custom-made foldable stock for the PDW 919."
+L["uplp_mp9_stock_tac.printname"] = "Taktisk Kolv"
+L["uplp_mp9_stock_tac.compactname"] = "Tac."
+L["uplp_mp9_stock_tac.description"] = "Custom-made stock for the F9 \"Cheetah\"."
 
-L["uplp_mp9_stock_sling.printname"] = "Rear Sling"
-L["uplp_mp9_stock_sling.compactname"] = "Sling"
-L["uplp_mp9_stock_sling.description"] = "Attaches a cosmetic rear sling onto the PDW 919."
+L["uplp_mp9_stock_sling.printname"] = "Bakre Slinga"
+L["uplp_mp9_stock_sling.compactname"] = "Slinga"
+L["uplp_mp9_stock_sling.description"] = "Sätter på en kosmetisk bakre slinga på F9 \"Cheetah\"."
 
-L["uplp_mp9_stock_fixed.printname"] = "Fixed Stock"
-L["uplp_mp9_stock_fixed.compactname"] = "Fixed"
-L["uplp_mp9_stock_fixed.description"] = "Custom-made fixed stock for the PDW 919."
+L["uplp_mp9_stock_fixed.printname"] = "Fast Kolv"
+L["uplp_mp9_stock_fixed.compactname"] = "Fast"
+L["uplp_mp9_stock_fixed.description"] = "Klassisk fast kolv till F9 \"Cheetah\"."
+
+////// Skins
+L["uplp_mp9_skin_white.printname"] = "Taktiskt Vitt och Rött Utseende"
+L["uplp_mp9_skin_white.compactname"] = "V&R"
+L["uplp_mp9_skin_white.description"] = "Taktisk vit version av F9 \"Cheetah\" med röda detaljer.\n\nPerfekt för dem som skyddar Glass City."
