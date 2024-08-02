@@ -1573,7 +1573,7 @@ SWEP.Attachments = {
         ExcludeElements = {"modrecsticker", "ar9sticker"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 3 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1583,7 +1583,7 @@ SWEP.Attachments = {
         RequireElements = {"modrecsticker"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, 4),
+        Pos = Vector(0, 1 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1593,7 +1593,7 @@ SWEP.Attachments = {
         ExcludeElements = {"modrecsticker"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 3 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1601,7 +1601,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ar15_defrec_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, 0.5),
+        Pos = Vector(0, 1 + 1.5, 0.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1611,7 +1611,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ar15_reciever_stm9"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 3 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1620,7 +1620,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ar15_reciever_stm9", "modrecsticker"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 4),
+        Pos = Vector(0, 3 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
 

@@ -850,7 +850,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35, -0.3),
+        Pos = Vector(0, 0.35 + 1.5, -0.3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -858,7 +858,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, 1.7),
+        Pos = Vector(0, 2 + 1.5, 1.7),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -866,7 +866,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35, 7),
+        Pos = Vector(0, 0.35 + 1.5, 7),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_mp5_bar_kurz", "uplp_mp5_bar_sd", "uplp_grip_used", "uplp_tac_used"},
     },
@@ -875,7 +875,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_5.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2, -2.5),
+        Pos = Vector(0, -2, -2.5 - 1.5),
         Ang = Angle(90, 90, 180),
     },
     {

@@ -944,7 +944,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -1, -0.5),
+        Pos = Vector(0, -1 + 1.0, -0.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -952,7 +952,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -1, -2.5),
+        Pos = Vector(0, -1 + 1.0, -2.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -960,7 +960,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_6.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.1),
+        Pos = Vector(0, 2 + 1.5, -0.1),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -968,7 +968,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -2.8),
+        Pos = Vector(0, 2 + 1.5, -2.8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -976,7 +976,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2, -6),
+        Pos = Vector(0, -2, -8),
         Ang = Angle(90, 90, 180),
     },
     -- {

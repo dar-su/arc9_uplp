@@ -1001,7 +1001,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ak_smg_conf_ppk20", "uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.3, 4.2),
+        Pos = Vector(0, 1.3 + 1.5, 4.2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1010,7 +1010,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ak_nmount", "uplp_ak_smg_conf_ppk20", "uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 0.5),
+        Pos = Vector(0, 1.8 + 1.5, 0.5),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1020,7 +1020,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ak_smg_conf_ppk20"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.3, 4.2),
+        Pos = Vector(0, 1.3 + 1.5, 4.2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1029,7 +1029,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ak_smg_conf_ppk20"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 0.5),
+        Pos = Vector(0, 1.8 + 1.5, 0.5),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1039,7 +1039,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.3, 4.2),
+        Pos = Vector(0, 1.3 + 1.5, 4.2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1048,7 +1048,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ak_smg_rec_bizon"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 0.5),
+        Pos = Vector(0, 1.8 + 1.5, 0.5),
         Ang = Angle(90, 90, 180),
     },
 

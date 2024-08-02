@@ -738,7 +738,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/fn57_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2.0, -0.75),
+        Pos = Vector(0, -2.0 + 1, -0.75),
         Ang = Angle(90, 0, -90),
     },
     {

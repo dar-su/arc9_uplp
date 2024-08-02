@@ -818,7 +818,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_1.mdl",
         Category = "stickers",
         Bone = "pump",
-        Pos = Vector(0.5, -3.3, 8),
+        Pos = Vector(0.5, -3.3 + 1.5, 8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -826,7 +826,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 0.5, 3),
+        Pos = Vector(0.5, 0.5 + 1.5, 3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -834,7 +834,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 0.5, -1.5),
+        Pos = Vector(0.5, 0.5 + 1.5, -1.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -842,7 +842,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.5, -3),
+        Pos = Vector(0, -0.5 - 1.5, -3),
         Ang = Angle(90, 90, 180),
     },
 

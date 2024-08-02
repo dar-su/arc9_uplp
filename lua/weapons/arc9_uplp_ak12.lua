@@ -1415,7 +1415,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ak12_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 4),
+        Pos = Vector(0, 1.8 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1424,7 +1424,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ak_nmount"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 1.3),
+        Pos = Vector(0, 1.8 + 1.5, 1.3),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1435,7 +1435,7 @@ SWEP.Attachments = {
         RequireElements = {"can762sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0 + 1.5, 0),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1444,7 +1444,7 @@ SWEP.Attachments = {
         RequireElements = {"can762sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 3, 2),
+        Pos = Vector(0, 3 + 1.5, 2),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1454,7 +1454,7 @@ SWEP.Attachments = {
         RequireElements = {"can545sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0 + 1.5, 0),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1463,7 +1463,7 @@ SWEP.Attachments = {
         RequireElements = {"can545sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 3, 1),
+        Pos = Vector(0, 3 + 1.5, 1),
         Ang = Angle(90, 90, 180),
     },
 }

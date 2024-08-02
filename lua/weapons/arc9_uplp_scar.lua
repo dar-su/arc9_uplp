@@ -1172,7 +1172,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ar15_mag"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3, 6.5),
+        Pos = Vector(0, 3 + 1.5, 6.5),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1182,7 +1182,7 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ar15_mag"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2.7, 5.8),
+        Pos = Vector(0, 2.7 + 1.5, 5.8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1190,7 +1190,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/scar_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, 0.5),
+        Pos = Vector(0, 1 + 1.5, 0.5),
         Ang = Angle(90, 90, 180),
     },
 

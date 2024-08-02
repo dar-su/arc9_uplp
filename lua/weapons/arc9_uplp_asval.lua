@@ -943,7 +943,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 5.75),
+        Pos = Vector(0, 1.8 + 1.5, 5.75),
         ExcludeElements = {"uplp_no_grip"},
     },
     { -- sr3
@@ -951,7 +951,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_1sr.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 5.75),
+        Pos = Vector(0, 1.8 + 1.5, 5.75),
         RequireElements = {"uplp_no_grip"},
     },
     {
@@ -959,7 +959,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 3.5),
+        Pos = Vector(0, 1.8 + 1.5, 3.5),
         ExcludeElements = {"vssm_dc"},
     },
 
@@ -968,7 +968,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, -1),
+        Pos = Vector(0, 1.8 + 1.5, -1),
         ExcludeElements = {"vssm_dc"},
     },
 
@@ -977,7 +977,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2m.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 3.5),
+        Pos = Vector(0, 1.8 + 1.5, 3.5),
         RequireElements = {"vssm_dc"},
     },
 
@@ -986,7 +986,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_3m.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, -1),
+        Pos = Vector(0, 1.8 + 1.5, -1),
         RequireElements = {"vssm_dc"},
     },
 }

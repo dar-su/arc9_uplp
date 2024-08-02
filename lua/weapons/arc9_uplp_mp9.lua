@@ -839,7 +839,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp9_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35, -2),
+        Pos = Vector(1, 2.5, 4),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -847,7 +847,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp9_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(1, 2.5, -1.25),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -855,7 +855,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp9_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3, 1.85),
+        Pos = Vector(0, 0, -4),
         Ang = Angle(90, 90, 180),
 
         InstalledElements = {"uplp_thirdsticker"},
@@ -864,7 +864,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
-        Pos = Vector(0.6, 1.15, 8.5),
+        Pos = Vector(0.8, 1.25, -2.8),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -872,7 +872,8 @@ SWEP.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/skin.png", "mips smooth"),
         Category = "uplp_mp9_skin",
         Bone = "body",
-        Pos = Vector(0.6, 1.15, 3.5),
+        Pos = Vector(1, 2.5, 1.5),
         Ang = Angle(90, 0, -90),
+        CosmeticOnly = true
     },
 }

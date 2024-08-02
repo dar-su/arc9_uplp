@@ -983,7 +983,7 @@ SWEP.Attachments = {
         ExcludeElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.5, 6),
+        Pos = Vector(0, 1.5 + 1.5, 6),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -992,7 +992,7 @@ SWEP.Attachments = {
         ExcludeElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, 2),
+        Pos = Vector(0, 2 + 1.5, 2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1001,7 +1001,7 @@ SWEP.Attachments = {
         ExcludeElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.8),
+        Pos = Vector(0, 2 + 1.5, -0.8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1010,7 +1010,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_awp_stock_tube", "uplp_awp_stock_at", "xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3.5, -10),
+        Pos = Vector(0, 3.5 + 1.5, -10),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1029,7 +1029,7 @@ SWEP.Attachments = {
         RequireElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.3),
+        Pos = Vector(0, 2 + 1.5, -0.3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1038,7 +1038,7 @@ SWEP.Attachments = {
         RequireElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, -3),
+        Pos = Vector(0, 1 + 1.5, -3),
         Ang = Angle(90, 90, 180),
     },
 }
