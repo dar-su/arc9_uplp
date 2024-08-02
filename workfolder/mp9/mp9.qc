@@ -55,6 +55,8 @@ $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 $attachment "2" "bolt" 0 0 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
+$attachment "5" "barrel" 0 0 6 rotate -90 0 0
+$attachment "6" "barrel" 0 0 10 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
  
 $surfaceprop "default"
@@ -95,6 +97,15 @@ $sequence "idle_empty"{
 $sequence "fire" {
 	"anims\fire.smd"
 	"anims\fire_iron.smd"
+	fps 26
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.08
+}
+$sequence "fire2" {
+	"anims\fire2.smd"
+	"anims\fire2_iron.smd"
 	fps 26
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1

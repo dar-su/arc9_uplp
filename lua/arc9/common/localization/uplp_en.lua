@@ -2875,18 +2875,18 @@ L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mp9_bar_short.printname"] = "Extended Barrel and Shroud"
-L["uplp_mp9_bar_short.compactname"] = "Ext."
-L["uplp_mp9_bar_short.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
+L["uplp_mp9_muzzle_tacbarrel.printname"] = "Extended Barrel and Shroud"
+L["uplp_mp9_muzzle_tacbarrel.compactname"] = "Ext."
+L["uplp_mp9_muzzle_tacbarrel.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
 
 ////// Muzzle
-L["uplp_mp9_supp_short.printname"] = "F9 \"Cheetah\" Short Suppressor"
-L["uplp_mp9_supp_short.compactname"] = "Supp. S"
-L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+L["uplp_mp9_muzzle_sup.printname"] = "F9 \"Cheetah\" Short Suppressor"
+L["uplp_mp9_muzzle_sup.compactname"] = "Supp. S"
+L["uplp_mp9_muzzle_sup.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
 
-L["uplp_mp9_supp_long.printname"] = "F9 \"Cheetah\" Long Suppressor"
-L["uplp_mp9_supp_long.compactname"] = "Supp. L"
-L["uplp_mp9_supp_long.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+L["uplp_mp9_muzzle_supold.printname"] = "F9 \"Cheetah\" Long Suppressor"
+L["uplp_mp9_muzzle_supold.compactname"] = "Supp. L"
+L["uplp_mp9_muzzle_supold.description"] = "Short suppressor intended for use on the F9 \"Cheetah\". this one for old prototype steyr tmp, maybe write something about OLD. maybe even make some fictional name for it and use it."
 
 ////// Mags
 L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
@@ -2897,22 +2897,31 @@ L["uplp_mp9_mag_42.printname"] = "42-Round 9x19mm"
 L["uplp_mp9_mag_42.compactname"] = "42R 9x19"
 L["uplp_mp9_mag_42.description"] = "Custom-made extended 42-round magazine for the F9 \"Cheetah\"."
 
+////// Grips
+L["uplp_mp9_grip_raw.printname"] = "None"
+L["uplp_mp9_grip_raw.compactname"] = "None"
+L["uplp_mp9_grip_raw.description"] = "No rail bro and no rails on top . this gun is now old ass steyr tmp"
+
+L["uplp_mp9_grip_rail.printname"] = "Rail"
+L["uplp_mp9_grip_rail.compactname"] = "Rail"
+L["uplp_mp9_grip_rail.description"] = "Utilise undermounted rail as a hand support."
+
 ////// Stocks
-L["uplp_mp9_stock_foldable.printname"] = "Foldable Stock"
-L["uplp_mp9_stock_foldable.compactname"] = "Foldable"
-L["uplp_mp9_stock_foldable.description"] = "Factory-installed foldable stock for the F9 \"Cheetah\"."
+L["uplp_mp9_stock_def.printname"] = "Foldable Stock"
+L["uplp_mp9_stock_def.compactname"] = "Foldable"
+L["uplp_mp9_stock_def.description"] = "Factory-installed foldable stock for the F9 \"Cheetah\"."
 
 L["uplp_mp9_stock_tac.printname"] = "Tactical Stock"
 L["uplp_mp9_stock_tac.compactname"] = "Tac."
 L["uplp_mp9_stock_tac.description"] = "Custom-made stock for the F9 \"Cheetah\"."
 
-L["uplp_mp9_stock_sling.printname"] = "Rear Sling"
-L["uplp_mp9_stock_sling.compactname"] = "Sling"
-L["uplp_mp9_stock_sling.description"] = "Attaches a cosmetic rear sling onto the F9 \"Cheetah\"."
+L["uplp_mp9_stock_strap.printname"] = "Rear Sling"
+L["uplp_mp9_stock_strap.compactname"] = "Sling"
+L["uplp_mp9_stock_strap.description"] = "Attaches a cosmetic rear sling onto the F9 \"Cheetah\"."
 
-L["uplp_mp9_stock_fixed.printname"] = "Fixed Stock"
-L["uplp_mp9_stock_fixed.compactname"] = "Fixed"
-L["uplp_mp9_stock_fixed.description"] = "Classic fixed stock for the F9 \"Cheetah\"."
+L["uplp_mp9_stock_full.printname"] = "Fixed Stock"
+L["uplp_mp9_stock_full.compactname"] = "Fixed"
+L["uplp_mp9_stock_full.description"] = "Classic fixed stock for the F9 \"Cheetah\"."
 
 ////// Skins
 L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"

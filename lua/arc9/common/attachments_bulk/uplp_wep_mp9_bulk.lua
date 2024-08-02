@@ -136,6 +136,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp9_mag_20"}
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp9_mag_20.mdl"
+ATT.DropMagazineTime = 0.57
 
 -- Positives
 ATT.AimDownSightsTimeAdd = -0.02
@@ -172,6 +173,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp9_mag_42"}
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp9_mag_50.mdl"
+ATT.DropMagazineTime = 0.7
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.008
@@ -205,7 +207,7 @@ ATT = {}
 ATT.PrintName = "uplp_mp9_grip_rail"
 ATT.CompactName = "uplp_mp9_grip_rail"
 ATT.Description = ATT.PrintName
-ATT.SortOrder = 100
+ATT.SortOrder = -2
 
 ATT.Icon = Material(iconfolder .. "rail.png", "mips smooth")
 
@@ -238,7 +240,7 @@ ATT = {}
 ATT.PrintName = "uplp_mp9_grip_raw"
 ATT.CompactName = "uplp_mp9_grip_raw"
 ATT.Description = ATT.PrintName
-ATT.SortOrder = 99
+ATT.SortOrder = -1
 
 ATT.Icon = Material(iconfolder .. "nogrip.png", "mips smooth")
 
@@ -278,7 +280,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sup.png", "mips smooth")
 
-ATT.Category = "uplp_mac_muz"
+ATT.Category = "uplp_mp9_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- -- Positives
@@ -289,7 +291,7 @@ ATT.RangeMinAdd = 2 / ARC9.HUToM
 ATT.SpreadAddHipFire = 0.004
 ATT.AimDownSightsTimeAdd = 0.03
 
-ATT.MuzzleEffectQCA = 7
+ATT.MuzzleEffectQCA = 5
 
 ATT.Silencer = true
 ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
@@ -315,7 +317,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "supold.png", "mips smooth")
 
-ATT.Category = "uplp_mac_muz"
+ATT.Category = "uplp_mp9_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
@@ -357,7 +359,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 
-ATT.Category = "uplp_mac_muz"
+ATT.Category = "uplp_mp9_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.Model = "models/weapons/arc9/uplp/mac11_lhik_heatshield.mdl"
@@ -388,7 +390,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_muzzle"},
-        Pos = Vector(1.2, -0.0, -0.05),
+        Pos = Vector(-4.5, -0.0, 0.05),
         Ang = Angle(0, 0, 0),
         -- Scale = 1.0
     },
