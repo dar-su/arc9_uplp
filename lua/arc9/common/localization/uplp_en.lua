@@ -2833,9 +2833,13 @@ L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ar18_bar_short.printname"] = "10.1\" MAR-63S Barrel and Handguard"
-L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
-L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
+L["uplp_ar18_bar_carbine.printname"] = "10.1\" carbine MAR-63S Barrel and Handguard huh"
+L["uplp_ar18_bar_carbine.compactname"] = "10.1\" 63S huh pls loc"
+L["uplp_ar18_bar_carbine.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. DOES NOT Comes with a built-in front grip."
+
+L["uplp_ar18_bar_pistol.printname"] = "10.1\" MAR-63S Barrel and Handguard"
+L["uplp_ar18_bar_pistol.compactname"] = "10.1\" 63S"
+L["uplp_ar18_bar_pistol.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
 
 ////// Muzzle
 L["uplp_ar18_muz.printname"] = "MAR-63 Muzzle Brake"
@@ -2860,10 +2864,14 @@ L["uplp_ar18_stock_fixed_wood.printname"] = "Fixed Wooden Stock & Handguard"
 L["uplp_ar18_stock_fixed_wood.compactname"] = "Wooden"
 L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
 
+L["uplp_ar18_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_ar18_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_ar18_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+
 ////// Optics
-L["uplp_ar18_scope.printname"] = "MAR Optic Sight"
-L["uplp_ar18_scope.compactname"] = "MAR-O 4x"
-L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
+L["uplp_ar18_scope_real.printname"] = "MAR Optic Sight"
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 4x"
+L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
 L["uplp_weapon_mp9"] = "F9 Cheetah"

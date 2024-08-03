@@ -17,10 +17,10 @@ $bodygroup "irons" { // 3
 	blank
 }
 $bodygroup "stock" { // 6
+	blank
 	studio "stock.smd"
 	studio "stock wood.smd"
 	studio "stock tube.smd"
-	blank
 }  
 
 $bodygroup "mag" { // 7
@@ -29,9 +29,9 @@ $bodygroup "mag" { // 7
 	studio "mag40.smd"
 }
 $bodygroup "muzzle" { // 5
+	blank
 	studio "mz.smd"
 	studio "mz short.smd"
-	blank
 }
 $bodygroup "tacmount" { // 5
 	blank
@@ -42,11 +42,12 @@ $bodygroup "tacmount" { // 5
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0 0.25 15 rotate -90 0 0
+$attachment "1" "barrel" 0.00 0.00 3.50 rotate -90 -0 0
 $attachment "2" "bolt" 0 0 1.5 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
- 
+$attachment "5" "barrel" 0.00 0.00 -3.50 rotate -90 -0 0
+
 $surfaceprop "default"
  
 $contents "solid"

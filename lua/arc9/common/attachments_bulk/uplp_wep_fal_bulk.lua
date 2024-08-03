@@ -439,6 +439,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_10"
 end
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/fal_mag_10.mdl"
+
 -- ATT.ActivateElements = {"use_optics"}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_mag_10")
@@ -465,7 +467,7 @@ ATT.DeployTimeMult = 1.15
 ATT.SwayMultSights = 1.15
 ATT.SpeedMultSights = 0.9
 
---drop mag mdl = models/weapons/arc9/uplp/fal_mag_30.mdl
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/fal_mag_30.mdl"
 
 -- Negatives
 
@@ -508,6 +510,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.SuppressEmptySuffix = true 
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/fal_mag_30u.mdl"
 
 -- ATT.ActivateElements = {"use_optics"}
 
