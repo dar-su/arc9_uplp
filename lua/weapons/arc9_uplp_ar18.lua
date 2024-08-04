@@ -20,10 +20,10 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_ar18_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_shortstroke" ),
                                                                         ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1964??" ), -- idk?? chec
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_year"), "1969", "1985" ),
 }
 
 
