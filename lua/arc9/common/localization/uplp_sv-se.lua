@@ -2794,9 +2794,13 @@ L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ar18_bar_short.printname"] = "257 mm MAR-63S-Pipa och Handskydd"
-L["uplp_ar18_bar_short.compactname"] = "257 mm MAR-63S"
-L["uplp_ar18_bar_short.description"] = "Förkortad 257 mm pipa och handskydd från MAR-63S. Kommer med ett inbyggt framgrepp."
+L["uplp_ar18_bar_carbine.printname"] = "257 mm MAR-63S Carbine-Pipa och Handskydd"
+L["uplp_ar18_bar_carbine.compactname"] = "257 mm 63S C."
+L["uplp_ar18_bar_carbine.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S."
+
+L["uplp_ar18_bar_pistol.printname"] = "257 mm MAR-63S-Pipa och Handskydd"
+L["uplp_ar18_bar_pistol.compactname"] = "257 mm 63S"
+L["uplp_ar18_bar_pistol.description"] = "Förkortad 257 mm pipa och handskydd från MAR-63S. Kommer med ett inbyggt framgrepp."
 
 ////// Muzzle
 L["uplp_ar18_muz.printname"] = "MAR-63-Mynningsbroms"
@@ -2822,15 +2826,17 @@ L["uplp_ar18_stock_fixed_wood.compactname"] = "Träkolv"
 L["uplp_ar18_stock_fixed_wood.description"] = "Trävariant av fabrikskolven och främre handskydd."
 
 ////// Optics
-L["uplp_ar18_scope.printname"] = "MAR-Riktmedel"
-L["uplp_ar18_scope.compactname"] = "MAR-O 4x"
-L["uplp_ar18_scope.description"] = "Fabrikstillverkat riktmedel med 3x magnifiering exklusivt gjord till MAR-63."
+L["uplp_ar18_scope_real.printname"] = "MAR-Riktmedel"
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 4x"
+L["uplp_ar18_scope_real.description"] = "Fabrikstillverkat riktmedel med 3x magnifiering exklusivt gjord till MAR-63."
 
 //////////////////// MP9N
-L["uplp_weapon_mp9"] = "F9 Cheetah"
+L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
 L["uplp_weapon_mp9_desc"] = "F9 \"Cheetah\" är en lätt, kompakt kulsprutepistol designad för närstrid, med hög eldhastighet och minimal rekyl. Dess ergonomiska design och mångsidighet gör den idealisk för militär, brottsbekämpning och personlig försvar."
 
 L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
+
+L["uplp_weapon_mp9_tmp"] = "MP \"Gepard\""
 
 L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
@@ -2841,14 +2847,13 @@ L["uplp_mp9_bar_short.compactname"] = "Förl."
 L["uplp_mp9_bar_short.description"] = "Förlängd pipa med inbyggt skyddande värmesköld som, dessutom, har inbyggda RIS-skenor."
 
 ////// Muzzle
-L["uplp_mp9_supp_short.printname"] = "F9 \"Cheetah\" Kort Ljuddämpare"
-L["uplp_mp9_supp_short.compactname"] = "Ljud. K."
-L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
-L["uplp_mp9_supp_short.description"] = "Kort ljuddämpare gjord till F9 \"Cheetah\"."
+L["uplp_mp9_muzzle_sup.printname"] = "F9 \"Cheetah\"-Ljuddämpare"
+L["uplp_mp9_muzzle_sup.compactname"] = "Ljud. K."
+L["uplp_mp9_muzzle_sup.description"] = "Kort ljuddämpare gjord till F9 \"Cheetah\"."
 
-L["uplp_mp9_supp_long.printname"] = "F9 \"Cheetah\" Lång Ljuddämpare"
-L["uplp_mp9_supp_long.compactname"] = "Ljud. L."
-L["uplp_mp9_supp_long.description"] = "Lång ljuddämpare gjord till F9 \"Cheetah\"."
+L["uplp_mp9_muzzle_supold.printname"] = "MP \"Gepard\" Prototyp Ljuddämpare"
+L["uplp_mp9_muzzle_supold.compactname"] = "\"Gepard\""
+L["uplp_mp9_muzzle_supold.description"] = "Gammal prototyp ljuddämpare gjord för prototypen MP \"Gepard\", företrädaren till F9 \"Cheetah\"."
 
 ////// Mags
 L["uplp_mp9_mag_20.printname"] = "20-Patroners 9 x 19 mm"
@@ -2858,6 +2863,15 @@ L["uplp_mp9_mag_20.description"] = "Förkortat 20-patronermagasin till F9 \"Chee
 L["uplp_mp9_mag_42.printname"] = "42-Patroners 9 x 19 mm"
 L["uplp_mp9_mag_42.compactname"] = "42P 9 x 19"
 L["uplp_mp9_mag_42.description"] = "Anpassat förlängt 42-patronersmagasin till F9 \"Cheetah\"."
+
+////// Grips
+L["uplp_mp9_grip_raw.printname"] = "Plocka Bort Topp- & Undermonterade Skenor"
+L["uplp_mp9_grip_raw.compactname"] = "N/A"
+L["uplp_mp9_grip_raw.description"] = "Tar bort topp- och undermonterade skenorna vilket gör att den liknar prototypen MP \"Gepard\"."
+
+L["uplp_mp9_grip_rail.printname"] = "Undermonterad Skena som Stöd"
+L["uplp_mp9_grip_rail.compactname"] = "Skena"
+L["uplp_mp9_grip_rail.description"] = "Använd den påsatta undermonterade skenan som ett handstöd."
 
 ////// Stocks
 L["uplp_mp9_stock_foldable.printname"] = "Vikbar Kolv"

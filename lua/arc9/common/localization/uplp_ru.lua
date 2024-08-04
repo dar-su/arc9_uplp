@@ -2794,9 +2794,13 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_ar18_bar_short.printname"] = "10.1\" MAR-63S Barrel and Handguard"
--- L["uplp_ar18_bar_short.compactname"] = "10.1\" 63S"
--- L["uplp_ar18_bar_short.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
+-- L["uplp_ar18_bar_carbine.printname"] = "10.1\" MAR-63S Carbine Barrel and Handguard"
+-- L["uplp_ar18_bar_carbine.compactname"] = "10.1\" 63S C."
+-- L["uplp_ar18_bar_carbine.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S."
+
+-- L["uplp_ar18_bar_pistol.printname"] = "10.1\" MAR-63S Barrel and Handguard"
+-- L["uplp_ar18_bar_pistol.compactname"] = "10.1\" 63S"
+-- L["uplp_ar18_bar_pistol.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
 
 ////// Muzzle
 -- L["uplp_ar18_muz.printname"] = "MAR-63 Muzzle Brake"
@@ -2822,15 +2826,17 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
 
 ////// Optics
--- L["uplp_ar18_scope.printname"] = "MAR Optic Sight"
--- L["uplp_ar18_scope.compactname"] = "MAR-O 4x"
--- L["uplp_ar18_scope.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
+-- L["uplp_ar18_scope_real.printname"] = "MAR Optic Sight"
+-- L["uplp_ar18_scope_real.compactname"] = "MAR-O 4x"
+-- L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
--- L["uplp_weapon_mp9"] = "F9 Cheetah"
+-- L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
 -- L["uplp_weapon_mp9_desc"] = "The F9 \"Cheetah\" is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
 
 -- L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
+
+-- L["uplp_weapon_mp9_tmp"] = "MP \"Gepard\""
 
 -- L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
@@ -2841,13 +2847,13 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_mp9_bar_short.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
 
 ////// Muzzle
--- L["uplp_mp9_supp_short.printname"] = "F9 \"Cheetah\" Short Suppressor"
--- L["uplp_mp9_supp_short.compactname"] = "Supp. S"
--- L["uplp_mp9_supp_short.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+-- L["uplp_mp9_muzzle_sup.printname"] = "F9 \"Cheetah\" Short Suppressor"
+-- L["uplp_mp9_muzzle_sup.compactname"] = "Supp. S"
+-- L["uplp_mp9_muzzle_sup.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
 
--- L["uplp_mp9_supp_long.printname"] = "F9 \"Cheetah\" Long Suppressor"
--- L["uplp_mp9_supp_long.compactname"] = "Supp. L"
--- L["uplp_mp9_supp_long.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+-- L["uplp_mp9_muzzle_supold.printname"] = "MP \"Gepard\" Prototype Suppressor"
+-- L["uplp_mp9_muzzle_supold.compactname"] = "\"Gepard\""
+-- L["uplp_mp9_muzzle_supold.description"] = "Old prototype suppressor made for the prototype MP \"Gepard\", the predecessor to the F9 \"Cheetah\"."
 
 ////// Mags
 -- L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
@@ -2857,6 +2863,15 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_mp9_mag_42.printname"] = "42-Round 9x19mm"
 -- L["uplp_mp9_mag_42.compactname"] = "42R 9x19"
 -- L["uplp_mp9_mag_42.description"] = "Custom-made extended 42-round magazine for the F9 \"Cheetah\"."
+
+////// Grips
+-- L["uplp_mp9_grip_raw.printname"] = "Remove Top & Bottom Rails"
+-- L["uplp_mp9_grip_raw.compactname"] = "N/A"
+-- L["uplp_mp9_grip_raw.description"] = "Removes the top and bottom rails, making it resemble the prototype MP \"Gepard\"."
+
+-- L["uplp_mp9_grip_rail.printname"] = "Bottom Rail as Support"
+-- L["uplp_mp9_grip_rail.compactname"] = "Rail"
+-- L["uplp_mp9_grip_rail.description"] = "Utilize the attached bottom rail as a hand support."
 
 ////// Stocks
 -- L["uplp_mp9_stock_foldable.printname"] = "Foldable Stock"
