@@ -425,6 +425,10 @@ L["uplp_grip_rk45.printname"] = "Empuñadura Zenith 45 Grados"
 L["uplp_grip_rk45.compactname"] = "Zenith 45G"
 L["uplp_grip_rk45.description"] = "Empuñadura inclinada 45 grados para la mayoría de las armas de fuego compatibles con raíles RIS."
 
+-- L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
+-- L["uplp_grip_cqr.compactname"] = "Ares"
+-- L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
+
 /////////// Bipod
 L["uplp_bipod.printname"] = "Bípode SynPoly WildCat X"
 L["uplp_bipod.compactname"] = "WildCat X"
@@ -997,6 +1001,10 @@ L["uplp_ak_stock_rpk74.printname"] = "Culata HPK M74"
 L["uplp_ak_stock_rpk74.compactname"] = "HKP M74"
 L["uplp_ak_stock_rpk74.description"] = "Culata de polímero pesado utilizada en la HPK M74."
 
+-- L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+-- L["uplp_ak_stock_cqr.compactname"] = "Ares"
+-- L["uplp_ak_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division.\nThis one was custom-made to fit AK-style rifles."
+
 L["uplp_ak_stock_wood.printname"] = "Culata de madera"
 L["uplp_ak_stock_wood.compactname"] = "Madera"
 L["uplp_ak_stock_wood.description"] = "Culata de madera utilizada en el AK 5.45 y el AK 7.62."
@@ -1482,6 +1490,10 @@ L["uplp_ar15_stock_veryheavy.description"] = "Culata pesada para rifles de tirad
 -- L["uplp_ar15_stock_m4ss.printname"] = "Commando Stock"
 -- L["uplp_ar15_stock_m4ss.compactname"] = "Commando"
 -- L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
+
+-- L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+-- L["uplp_ar15_stock_cqr.compactname"] = "Ares"
+-- L["uplp_ar15_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division." ..desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"

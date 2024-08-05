@@ -426,6 +426,10 @@ L["uplp_grip_rk45.printname"] = "Zenith 45-Gradersgrepp"
 L["uplp_grip_rk45.compactname"] = "Zenith 45-G"
 L["uplp_grip_rk45.description"] = "Vinklat framgrepp lutat 45 grader gjort för dem flesta RIS-skena kompatibla skjutvapnen."
 
+L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\"-Framgrepp"
+L["uplp_grip_cqr.compactname"] = "Ares"
+L["uplp_grip_cqr.description"] = "Anpassat, tungt framgrepp gjort av PAWCOs \"Ares\"-avdelning."
+
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Benstöd"
 L["uplp_bipod.compactname"] = "WildCat X"
@@ -998,6 +1002,10 @@ L["uplp_ak_stock_rpk74.printname"] = "HPK M74 Kolv"
 L["uplp_ak_stock_rpk74.compactname"] = "HPK M74"
 L["uplp_ak_stock_rpk74.description"] = "Tung polymer-kolv som används av HPK M74."
 
+L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Ares\"-Kolv"
+L["uplp_ak_stock_cqr.compactname"] = "Ares"
+L["uplp_ak_stock_cqr.description"] = "Anpassad och tung kolv och pistolgrepp gjorda av PAWCOs \"Ares\"-avdelning.\nDenna var gjord specifikt för att passa AK-gevär."
+
 L["uplp_ak_stock_wood.printname"] = "Träkolv"
 L["uplp_ak_stock_wood.compactname"] = "Trä"
 L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK 5,45 och AK 7,62."
@@ -1483,6 +1491,10 @@ L["uplp_ar15_stock_veryheavy.description"] = "Tung kolv till AR-15-baserade pric
 L["uplp_ar15_stock_m4ss.printname"] = "Kommando Kolv"
 L["uplp_ar15_stock_m4ss.compactname"] = "Kommando"
 L["uplp_ar15_stock_m4ss.description"] = "Lättvikt kolv till AR-15-gevär." .. desc_stock_m .. desc_stock_standard
+
+L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\"-Kolv"
+L["uplp_ar15_stock_cqr.compactname"] = "Ares"
+L["uplp_ar15_stock_cqr.description"] = "Anpassad och tung kolv och pistolgrepp gjorda av PAWCOs \"Ares\"-avdelning." ..desc_stock_l .. "\n<color=100,255,100>Sänker mer rekyl</color> till skillnad med andra tunga kolvar."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"

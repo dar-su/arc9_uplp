@@ -430,9 +430,9 @@ L["uplp_grip_rk45.printname"] = "Zenith 45-Degree Grip"
 L["uplp_grip_rk45.compactname"] = "Zenith 45D"
 L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for most RIS-rail-compatible firearms."
 
-L["uplp_grip_cqr.printname"] = "PAWCO \"Spacetrooper\" Foregrip"
-L["uplp_grip_cqr.compactname"] = "Spacetrooper"
-L["uplp_grip_cqr.description"] = "dumb   foregrip that improves ergonomics and reduces recoil."
+L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
+L["uplp_grip_cqr.compactname"] = "Ares"
+L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
 
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Bipod"
@@ -1006,9 +1006,9 @@ L["uplp_ak_stock_rpk74.printname"] = "HPK M74 Stock"
 L["uplp_ak_stock_rpk74.compactname"] = "HKP M74"
 L["uplp_ak_stock_rpk74.description"] = "Heavy polymer stock used on the HPK M74."
 
-L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Spacetrooper\" AK Stock"
-L["uplp_ak_stock_cqr.compactname"] = "Spacetrooper"
-L["uplp_ak_stock_cqr.description"] = "Heavy stupid  stock for AK rifles."
+L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+L["uplp_ak_stock_cqr.compactname"] = "Ares"
+L["uplp_ak_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division.\nThis one was custom-made to fit AK-style rifles."
 
 L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
 L["uplp_ak_stock_wood.compactname"] = "Wooden"
@@ -1499,9 +1499,9 @@ L["uplp_ar15_stock_m4ss.printname"] = "Commando Stock"
 L["uplp_ar15_stock_m4ss.compactname"] = "Commando"
 L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
 
-L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Spacetrooper\" Stock"
-L["uplp_ar15_stock_cqr.compactname"] = "Spacetrooper"
-L["uplp_ar15_stock_cqr.description"] = "Heavy stupid stock for AR-15 rifles." ..desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
+L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+L["uplp_ar15_stock_cqr.compactname"] = "Ares"
+L["uplp_ar15_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division." ..desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
