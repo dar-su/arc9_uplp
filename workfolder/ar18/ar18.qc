@@ -230,7 +230,7 @@ $sequence "reload_empty40" {
 }
 
 $sequence "inspect" {
-	"anims\inspect.smd"
+	"anims\inspect2.smd"
 	snap
 	fps 30
 }
