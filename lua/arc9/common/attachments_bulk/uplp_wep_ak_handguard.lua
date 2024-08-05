@@ -259,7 +259,7 @@ ATT.ActivateElements = {"uplp_ak_hg_azen"}
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(3, 0, 1.05),
         Ang = Angle(0, 0, 0),

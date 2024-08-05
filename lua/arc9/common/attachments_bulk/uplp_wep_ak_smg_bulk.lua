@@ -286,6 +286,7 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Installed = "uplp_ak_grip_12evo",
         Integral = "uplp_ak_grip_12evo",
+        ExcludeElements = {"uplp_no_pgrip"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),

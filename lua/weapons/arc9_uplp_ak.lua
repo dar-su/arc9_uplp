@@ -1247,6 +1247,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_grip", "uplp_ak_grip_12", "uplp_ak_grip_smg"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         ActiveElements = {"uplp_ak_grip"},
+        ExcludeElements = {"uplp_no_pgrip"},
         Bone = "body",
         RejectAttachments = {
         ["uplp_ak_grip_std"] = true,

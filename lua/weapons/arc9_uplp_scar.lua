@@ -1113,7 +1113,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long"},
         RejectAttachments = {
             ["uplp_grip_half"] = true,
         },

@@ -175,7 +175,7 @@ ATT.Element = {
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(5, 0, 1.4),
         Ang = Angle(0, 0, 0),
@@ -230,7 +230,7 @@ ATT.Element = {
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(5, 0, 1.4),
         Ang = Angle(0, 0, 0),

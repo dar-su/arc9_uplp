@@ -322,7 +322,7 @@ ATT.RecoilRandomSideAdd = -0.15
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 0.7),
         Ang = Angle(0, 0, 0),
@@ -392,7 +392,7 @@ ATT.RecoilRandomSideAdd = 0.3
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long"},
         DefaultIcon = Material("entities/uplp_attachements/def/grip.png", "mips smooth"),
         Pos = Vector(-1, 0, 0.7),
         Ang = Angle(0, 0, 0),

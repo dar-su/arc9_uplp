@@ -497,6 +497,43 @@ ATT.SpreadAddHipFire = 0.01 + 0.015
 
 ARC9.LoadAttachment(ATT, "uplp_ak_stock_rpk74")
 
+-------------------------------------------
+ATT = {}
+ATT.PrintName = "PAWCO \"Spacetrooper\""
+ATT.CompactName = "Spacetrooper"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "cqr.png", "mips smooth")
+ATT.Category = "uplp_ak_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.SortOrder = 3 + 0.1
+
+ATT.ActivateElements = {"uplp_no_pgrip", "uplp_ak_grip_used", "uplp_ak_grip"}
+ATT.ExcludeElements = {"uplp_ak_dc_beryl"}
+
+ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
+ATT.ModelBodygroups = "r"
+ATT.ModelOffset = Vector(-9.02, -3.55, 4.89)
+
+-- less recoil than m16 stock
+
+-- Positives
+ATT.RecoilAutoControlMult = 1.85
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.85
+ATT.RecoilPerShotMult = 0.85
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1.2
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1 + 0.03
+ATT.SprintToFireTimeAdd = 0.1 + 0.04
+ATT.SpeedMultSights = 0.85 - 0.08
+ATT.SpeedAdd = -0.05 - 0.03
+ATT.SpreadAddHipFire = 0.01 + 0.015
+
+ARC9.LoadAttachment(ATT, "uplp_ak_stock_cqr")
+
 ------------------------------------------------------
 -------------------- BUFFER TUBES --------------------
 ------------------------------------------------------
