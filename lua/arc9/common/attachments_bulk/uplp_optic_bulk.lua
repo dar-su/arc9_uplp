@@ -2527,3 +2527,144 @@ table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dovetail_okp")
 
+
+---------- uplp_optic_thermholo
+
+ATT = {}
+
+ATT.PrintName = "Aegis"
+ATT.CompactName = "Aegis"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "holotherm.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_holotherm.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 6, -1.6),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        Disassociate = false,
+        Blur = true,
+        ViewModelFOV = 57,
+        NoSensAdjustment = true,
+
+        SwayAddSights = sway_cqc,
+        InvertColors = true,
+    },
+    -- {
+    --     Pos = Vector(0, 6, -1.57),
+    --     Ang = Angle(0, -0, 0),
+    --     Magnification = 1.25,
+    --     ViewModelFOV = 57,
+    --     Blue = false,
+
+    --     SwayAddSights = sway_mag,
+    -- },
+}
+
+
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 4
+ATT.RTScopeFOV = 17
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/yellowx2.png", "mips smooth")
+ATT.RTScopeReticleScale = 1
+ATT.RTScopeColorable = false
+ATT.RTScopeShadowIntensity = 3
+ATT.RTScopeBlackBox = false 
+ATT.RTScopeBlackBoxShadow = false 
+-- ATT.ScopeScreenRatio = 0.66
+ATT.RTScopeNoBlur = true
+
+ATT.RTCollimator = true
+ATT.ScopeScreenRatio = 0.28
+
+
+
+ATT.RTScopeFLIR = true
+ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
+ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 0.5,
+    ["$pp_colour_addg"] = 0.5,
+    ["$pp_colour_addb"] = 0.5,
+    ["$pp_colour_brightness"] = 0,
+    ["$pp_colour_contrast"] = 0.9,
+    -- ["$pp_colour_addr"] = 25/255*3,
+    -- ["$pp_colour_addg"] = 11/255*3,
+    -- ["$pp_colour_addb"] = 0,
+    -- ["$pp_colour_brightness"] = 0,
+    -- ["$pp_colour_contrast"] = 0.9,
+    ["$pp_colour_colour"] = 1,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0,
+    ["$pp_colour_inv"] = 1
+}
+ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 11/255*7,
+    ["$pp_colour_addb"] = 25/255*7,
+    ["$pp_colour_brightness"] = -.25,
+    ["$pp_colour_contrast"] = 0.7,
+    ["$pp_colour_colour"] = 0.5,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0,
+    ["$pp_colour_inv"] = 0
+}
+
+local meow = {
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 11/255*1,
+    ["$pp_colour_addb"] = 25/255*1,
+	[ "$pp_colour_brightness" ] = 0.1,
+	[ "$pp_colour_contrast" ] = 1.5,
+	[ "$pp_colour_colour" ] = 1.15,
+	[ "$pp_colour_mulr" ] = 0,
+	[ "$pp_colour_mulg" ] = 0,
+	[ "$pp_colour_mulb" ] = 0,
+    ["$pp_colour_inv"] = 0
+}
+ATT.RTScopeCustomPPFunc = function(swep)
+    -- DrawMotionBlur(0.7, 0.85, 1/40)
+    -- DrawBloom(0.7, 1.4, 11.15, 1, 0, 1, 1, 1, 1)
+    -- DrawSharpen(4, 0.6)
+	DrawColorModify( meow )
+end
+
+local arc9_cheapscopes = GetConVar("arc9_cheapscopes")
+
+ATT.RTScopeFLIRHotOnlyFunc = function(swep)
+    -- DrawSharpen(4, 0.6)
+    -- DrawSobel(0.5)
+
+    if arc9_cheapscopes:GetBool() then
+        DrawSobel(0.1)	    
+        DrawColorModify( meow ) -- for some reason required for cheap scope
+    else
+        DrawSobel(0.005)
+    end
+    -- DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
+end
+
+ATT.RTScopePostInvertFunc = function(swep)
+	-- DrawColorModify( meow )
+end
+
+
+ATT.Category = "uplp_optic_mid"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0.15, 0, -0.1)
+
+table.Merge(ATT, stats_cqc)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_thermholo")
+
+
