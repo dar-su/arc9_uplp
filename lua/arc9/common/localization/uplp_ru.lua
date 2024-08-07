@@ -85,18 +85,18 @@ L["uplp_mechanism_gasoperated"] = "Отвод пороховых газов"
 L["uplp_mechanism_rotatingbolt"] = "Поворотный затвор"
 L["uplp_mechanism_boltaction"] = "Скользящий затвор"
 L["uplp_mechanism_pumpaction"] = "Помповое ружьё"
--- L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
--- L["uplp_mechanism_closedbolt"] = "Closed bolt"
--- L["uplp_mechanism_openbolt"] = "Open bolt"
+L["uplp_mechanism_rollerdelay"] = "Инерционный затвор"
+L["uplp_mechanism_closedbolt"] = "Зактрый затвор"
+L["uplp_mechanism_openbolt"] = "Открытый затвор"
 
 L["uplp_mechanism_singleaction"] = "Одинарное действие"
 L["uplp_mechanism_doublesingleaction"] = "Двойное действие / Одинарное"
 
 -- Requested by fesiug
--- L["uplp_mechanism_shortrecoil"] = "Short-recoil"
--- L["uplp_mechanism_longrecoil"] = "Long-recoil"
--- L["uplp_mechanism_browning"] = "Browning action"
--- L["uplp_mechanism_shortstroke"] = "Short-stroke piston"
+L["uplp_mechanism_shortrecoil"] = "Короткий ход ствола"
+L["uplp_mechanism_longrecoil"] = "Длинный ход ствола"
+L["uplp_mechanism_browning"] = "Действие Браунинга"
+L["uplp_mechanism_shortstroke"] = "Отвод пороховых газов"
 
 /////////// Authors
 L["uplp_assets"] = "Оригинальные ассеты1"
@@ -135,7 +135,7 @@ L["uplp_category_appearance"] = "Внешний вид"
 L["uplp_category_backup"] = "Доп. прицел"
 L["uplp_category_barrel"] = "Ствол"
 L["uplp_category_bipod"] = "Сошки"
--- L["uplp_category_blade"] = "Blade"
+L["uplp_category_blade"] = "Лезвик"
 L["uplp_category_charginghandle"] = "Взвод"
 L["uplp_category_charm"] = "Брелок"
 L["uplp_category_dovetail"] = "Ласт. хвост"
@@ -144,7 +144,7 @@ L["uplp_category_extra"] = "Доп."
 L["uplp_category_gasblock"] = "Газ. блок"
 L["uplp_category_grip"] = "Рукоять"
 L["uplp_category_handguard"] = "Цевьё"
--- L["uplp_category_handle"] = "Handle"
+L["uplp_category_handle"] = "Ручка"
 L["uplp_category_internals"] = "Компоненты"
 L["uplp_category_magazine"] = "Магазин"
 L["uplp_category_magwell"] = "Магвел"
@@ -2440,27 +2440,27 @@ L["uplp_weapon_mp5_desc"] = "«Persönliche Verteidigungswaffe 9x19» (Оруж�
 -- L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
 
 //////////////////// Frag
-local quickthrow = "\nCan be thrown using \"Quickthrow\" with a \"<color=175,175,255>+grenade1</color>\" bind."
+local quickthrow = "\nМожно использовать быстрый бросок с \"<color=175,175,255>+grenade1</color>\" биндом."
 
--- L["uplp_weapon_grenade_frag"] = "FRAG Grenade"
--- L["uplp_weapon_grenade_frag_short"] = "FRAG"
--- L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade." .. quickthrow
+L["uplp_weapon_grenade_frag"] = "FRAG Граната"
+L["uplp_weapon_grenade_frag_short"] = "FRAG"
+L["uplp_weapon_grenade_frag_desc"] = "Осколочно-фугасная граната." .. quickthrow
 
--- L["uplp_weapon_grenade_flash"] = "Flash Grenade"
--- L["uplp_weapon_grenade_flash_short"] = "Flash"
--- L["uplp_weapon_grenade_flash_desc"] = "Concussion grenade that blinds enemies caught looking at it upon detonation. Causes temporary hearing loss if caught in its explosive radius." .. quickthrow
+L["uplp_weapon_grenade_flash"] = "Светошумовая граната"
+L["uplp_weapon_grenade_flash_short"] = "Светошумовая"
+L["uplp_weapon_grenade_flash_desc"] = "Светошумовая граната для ослепления врагов. Вызывает временную потерю слуха у человека попавшего в радиус взрыва." .. quickthrow
 
--- L["uplp_weapon_grenade_smoke"] = "Smoke Grenade"
--- L["uplp_weapon_grenade_smoke_short"] = "Smoke"
--- L["uplp_weapon_grenade_smoke_desc"] = "Creates a large amount of smoke upon detonation, giving tactical cover from peeking eyes. <color=255,100,100>Thermal optics can see through the smoke</color>." .. quickthrow
+L["uplp_weapon_grenade_smoke"] = "Дымовая граната"
+L["uplp_weapon_grenade_smoke_short"] = "Дымовая"
+L["uplp_weapon_grenade_smoke_desc"] = "При взрыве создает большое количество дыма, обеспечивая тактическое укрытие от посторонних глаз. <color=255,100,100>Тепловизионная оптика может видеть сквозь дым</color>." .. quickthrow
 
--- L["uplp_weapon_grenade_impact"] = "Impact Grenade"
--- L["uplp_weapon_grenade_impact_short"] = "Impact"
--- L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on impact." .. quickthrow
+L["uplp_weapon_grenade_impact"] = "Ударная граната"
+L["uplp_weapon_grenade_impact_short"] = "Ударная"
+L["uplp_weapon_grenade_impact_desc"] = "Осколочная граната, детонирующая при ударе." .. quickthrow
 
--- L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
--- L["uplp_weapon_grenade_inc_short"] = "Incendiary"
--- L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
+L["uplp_weapon_grenade_inc"] = "Зажигательная граната"
+L["uplp_weapon_grenade_inc_short"] = "Зажигательная"
+L["uplp_weapon_grenade_inc_desc"] = "При контакте граната мгновенно начинает гореть, поджигая любого человека." .. quickthrow
 
 //////////////////// FAL
 L["uplp_weapon_fal"] = "FCM"
@@ -2556,7 +2556,7 @@ L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"
 
 //////////////////// Mac-10
 L["uplp_weapon_mac"] = "CMP .380"
-L["uplp_weapon_mac_desc"] = "The CMP .380 (\"Civilian Machine Pistol\") is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
+L["uplp_weapon_mac_desc"] = "CMP .380 (\"Civilian Machine Pistol\") это компактный пистолет-пулемет, известный своей высокой скорострельностью и малыми размерами, что делает его легко скрываемым. Он выпускается под патрон .380 ACP, отличается упрощенным механизмом отката и коробчатым дизайном, который заслужил репутацию надежного и простого в использовании в ближнем бою."
 
 L["uplp_weapon_mac_real"] = "MAC-11 | MAC-10"
 
@@ -2703,15 +2703,15 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_m590_shellholder.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
 
 //////////////////// Remington 870
--- L["uplp_weapon_r870"] = "Wingmaster 12G"
--- L["uplp_weapon_r870_desc"] = "The Wingmaster 12G is a reliable and versatile pump-action shotgun renowned for its durability and ease of use. Favored by law enforcement, hunters, and sport shooters alike, this firearm excels in various scenarios due to its robust construction and customizable features."
+L["uplp_weapon_r870"] = "Wingmaster 12G"
+L["uplp_weapon_r870_desc"] = "Wingmaster 12G — надежное и универсальное помповое ружье, известное своей прочностью и простотой использования. Это огнестрельное оружие, любимое сотрудниками правоохранительных органов, охотниками и спортивными стрелками, отлично подходит для различных сценариев благодаря своей прочной конструкции."
 
--- L["uplp_weapon_r870_real"] = "Remington 870"
+L["uplp_weapon_r870_real"] = "Remington 870"
 
--- L["uplp_weapon_r870_shorty"] = "Entryway 12G"
--- L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
+L["uplp_weapon_r870_shorty"] = "Entryway 12G"
+L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
 
--- L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
+L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
 
 /////////// Attachments
 ////// Barrels & Tubes
@@ -2797,12 +2797,12 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
 
 //////////////////// ArmaLite AR-18
--- L["uplp_weapon_ar18"] = "MAR-63"
--- L["uplp_weapon_ar18_desc"] = "The MAR-63 (\"Military Assault Rifle 1963\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
+L["uplp_weapon_ar18"] = "MAR-63"
+L["uplp_weapon_ar18_desc"] = "MAR-63 (\"Military Assault Rifle 1963\") — винтовка разработанная в конце 1960-х годов как более простая и экономная альтернатива AR-15 с короткоходовой поршневой системой и штампованной конструкцией из листового металла. Несмотря на первоначальное отсутствие широкого распространения, ее конструкция повлияла на многочисленные современные образцы огнестрельного оружия."
 
--- L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
+L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
 
--- L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
+L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 
 /////////// Attachments
 ////// Barrels
@@ -2843,14 +2843,14 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
--- L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
--- L["uplp_weapon_mp9_desc"] = "The F9 \"Cheetah\" is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
+L["uplp_weapon_mp9"] = "F9 \"Гепард\""
+L["uplp_weapon_mp9_desc"] = "F9 \"Гепард\" это легкий и компактный пистолет-пулемет, предназначенный для ближнего боя, отличающийся высокой скорострельностью и минимальной отдачей. Его эргономичный дизайн и универсальность делают его идеальным для военных, правоохранительных органов и личной обороны."
 
--- L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
+L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
 
--- L["uplp_weapon_mp9_tmp"] = "MP \"Gepard\""
+L["uplp_weapon_mp9_tmp"] = "MP \"Gepard\""
 
--- L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
+L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
 /////////// Attachments
 ////// Barrels
