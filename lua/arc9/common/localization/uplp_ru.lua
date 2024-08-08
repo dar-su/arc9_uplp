@@ -369,6 +369,10 @@ L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russ
 -- "Optical Sight, High Quality" in Russian
 -- "Оптический прицел высого качества" - 'OPWK'
 
+-- L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
+-- L["uplp_optic_thermholo.compactname"] = "Aegis"
+-- L["uplp_optic_thermholo.description"] = "Compact, low-weight thermal holographic sight made by Aegis Precision." .. desc_cqcoptic
+
 L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
 L["uplp_optic_dedal.compactname"] = "12x CWI"
 L["uplp_optic_dedal.description"] = "Magnified scope with 12x magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic

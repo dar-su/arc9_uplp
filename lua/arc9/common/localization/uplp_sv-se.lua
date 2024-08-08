@@ -364,6 +364,10 @@ L["uplp_optic_okp.printname"] = "OPWK-B Reflexsikte"
 L["uplp_optic_okp.compactname"] = "OPWK"
 L["uplp_optic_okp.description"] = "Slät och lätt reflexsikte av ryskt ursprung." .. desc_cqcoptic
 
+L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
+L["uplp_optic_thermholo.compactname"] = "Aegis"
+L["uplp_optic_thermholo.description"] = "Kompakt, holografiskt värmesikte med låg vikt gjort av Aegis Precision." .. desc_cqcoptic
+
 L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
 L["uplp_optic_dedal.compactname"] = "12x CWI"
 L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12x magnifiering från Cerberus Weapons Institude gjord för militär användning." .. desc_bigoptic
