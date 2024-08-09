@@ -932,4 +932,6 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     else
         ent:SetPoseParameter("owo", 0)
     end
+
+    ent:SetPoseParameter("magspring", 1-math.Clamp(swep:GetLoadedRounds()/30, 0, 1))
 end

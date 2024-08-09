@@ -1,0 +1,40 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/uplp/palletetr"
+	"$bumpmap" "models/weapons/arc9/uplp/nrm"
+	"$translucent" 1
+
+	"$phongwarptexture"			"models/weapons/arc9/uplp/phongwarp" // string -- phong gradient texture: 256x16 texture where x:0 = unlit, x:256 = fully lit (default is a perfect 0-256 black to white gradient)
+
+	$lightwarptexture 		"models/weapons/arc9/uplp/phongwarp"
+	// "$model" 1
+	"$nowritez" 1
+    "$color2" "[0.1 0.1 0.1]"
+	
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongalbedotint" "1"
+	"$phongexponent" "1000"
+	"$phongfresnelranges" "[5.22 5.856 20]"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.1 0.1 0.1]"
+	"$envmapfresnel" "0.1"
+	"$normalmapalphaenvmapmask" "0"
+	"$basemapalphaenvmapmask" "1"
+
+	"$rimlight"			"1"
+	"$rimlightexponent"			"3"
+	"$rimlightboost"			"0.16"
+	// "$rimmask"		1
+
+    "Proxies"
+    {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.1"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" "0.1"                       //change this if too bright in game
+        }
+    }
+}

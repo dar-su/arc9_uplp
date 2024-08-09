@@ -368,10 +368,12 @@ ATT.Icon = Material(iconfolder .. "10mm.png", "mips smooth")
 
 ATT.Category = "uplp_mp5_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
 ATT.ActivateElements = {"uplp_mp5_mag_10mm"}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30_10mm.mdl"
+
+-- ATT.Model = "models/weapons/arc9/uplp/mp5_mag_30_10mm_refract.mdl"
+-- ATT.BoneMerge = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload_empty" then
@@ -379,6 +381,73 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
 end
 
+ATT.BulletBones = {
+    [1] = "bullet1",
+    [2] = "bullet2",
+    [3] = "bullet3",
+    [4] = "bullet4",
+    [5] = "bullet5",
+    [6] = "bullet6",
+    [7] = "bullet7",
+    [8] = "bullet8",
+    [9] = "bullet9",
+    [10] = "bullet10",
+    [11] = "bullet11",
+    [12] = "bullet12",
+    [13] = "bullet13",
+    [14] = "bullet14",
+    [15] = "bullet15",
+    [16] = "bullet16",
+    [17] = "bullet17",
+    [18] = "bullet18",
+    [19] = "bullet19",
+    [20] = "bullet20",
+    [21] = "bullet21",
+    [22] = "bullet22",
+    [23] = "bullet23",
+    [24] = "bullet24",
+    [25] = "bullet25",
+    [26] = "bullet26",
+    [27] = "bullet27",
+    [28] = "bullet28",
+    [29] = "bullet29",
+    [30] = "bullet30",
+}
+ATT.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+        "bullet4",
+        "bullet5",
+        "bullet6",
+        "bullet7",
+        "bullet8",
+        "bullet9",
+        "bullet10",
+        "bullet11",
+        "bullet12",
+        "bullet13",
+        "bullet14",
+        "bullet15",
+        "bullet16",
+        "bullet17",
+        "bullet18",
+        "bullet19",
+        "bullet20",
+        "bullet21",
+        "bullet22",
+        "bullet23",
+        "bullet24",
+        "bullet25",
+        "bullet26",
+        "bullet27",
+        "bullet28",
+        "bullet29",
+        "bullet30",
+    },
+}
 
 local pathUT = "uplp_urban_temp/mp5/"
 
