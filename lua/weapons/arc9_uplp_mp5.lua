@@ -616,6 +616,7 @@ SWEP.Animations = {
         MinProgress = 0.95,
 		PeekProgress = 0.8,
 		RefillProgress = 0.725,
+        MagSwapTime = 0.8,
 		FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
@@ -933,5 +934,7 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
         ent:SetPoseParameter("owo", 0)
     end
 
-    ent:SetPoseParameter("magspring", 1-math.Clamp(swep:GetLoadedRounds()/30, 0, 1))
+    local loadedronds = swep:GetLoadedRounds()
+    if loadedronds <= 15 then loadedronds = loadedronds - 0.75 end
+    ent:SetPoseParameter("magspring", 1-math.Clamp(loadedronds/30, 0, 1))
 end
