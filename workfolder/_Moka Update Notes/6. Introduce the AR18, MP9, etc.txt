@@ -1,0 +1,24 @@
+[h1]New content[/h1]
+[list]
+	[*] Added the [b]F9 "Cheetah"[/b], a compact, fast-firing SMG.
+	[*] Added the [b]MAR-63[/b], an alternative rifle to the AR-15.
+	[*] Added the [b]Flash Grenade[/b], a throwable blinding grenade that can be thrown using quickthrow.
+	[*] Added three new attachments:
+	[list]
+		[*] [b]PAWCO "Ares" Foregrip[/b], available for all weapons.
+		[*] [b]PAWCO "Ares" Stock[/b], available for the AK, AK SMG, AR-15 and Molot.
+		[*] [b]Aegis Precision Mini-Thermal[/b], a compact thermal optic available for all weapons.
+	[/list]
+[/list]
+
+[h1]Changed content[/h1]
+[list]
+	[*] All weapons: The inspect animations can now be cancelled by aiming, shooting or performing any regular action.
+	[*] FCM: Now uses an updated muzzle effect.
+	[*] Wingmaster 12G: Fixed that it was missing trivia.
+	[*] PV-9: The [b]30-Round 10mm[/b] magazine now has a transparent appearance.
+	[*] Frag Grenade: Now has an inspect animation.
+	[*] Shotgun suppressors now use a suppressed shotgun muzzle effect.
+	[*] Updated localizations.
+	[*] Various other fixes.
+[/list]
