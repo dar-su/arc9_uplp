@@ -603,8 +603,6 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = {"inspect_9mm"},
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -628,8 +626,6 @@ SWEP.Animations = {
     },
     ["inspect_look"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -649,8 +645,6 @@ SWEP.Animations = {
 
     ["inspect_bizon"] = {
         Source = {"inspect_bizon"},
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_5.ogg", t = 0 / 30, c = ca, v = 0.5 },
             { s = pathUT .. "magrelease.ogg", t = 10 / 30, c = ca, v = 0.7 },
@@ -672,8 +666,6 @@ SWEP.Animations = {
     },
     ["inspect_look_bizon"] = {
         Source = {"inspect0"},
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },

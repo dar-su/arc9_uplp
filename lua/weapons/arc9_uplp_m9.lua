@@ -576,8 +576,6 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = "inspect",
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
@@ -593,8 +591,6 @@ SWEP.Animations = {
     },
     ["inspect_empty"] = {
         Source = "inspect_empty",
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
@@ -781,8 +777,6 @@ SWEP.Animations = {
 
     ["rc_inspect"] = {
         Source = "rc_inspect",
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
@@ -792,8 +786,6 @@ SWEP.Animations = {
     },
     ["rc_inspect_empty"] = {
         Source = "rc_inspect_empty",
-        MinProgress = 0.1,
-        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },

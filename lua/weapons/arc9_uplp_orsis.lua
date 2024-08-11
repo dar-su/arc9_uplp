@@ -693,8 +693,8 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = "inspect",
-        MinProgress = 0.1,
         FireASAP = true,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -706,8 +706,8 @@ SWEP.Animations = {
 
     ["inspect_empty"] = {
         Source = "inspect_empty",
-        MinProgress = 0.1,
         FireASAP = true,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -718,8 +718,8 @@ SWEP.Animations = {
     },
     ["inspect_3"] = {
         Source = "inspect_3",
-        MinProgress = 0.1,
         FireASAP = true,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -731,8 +731,8 @@ SWEP.Animations = {
 
     ["inspect_empty_3"] = {
         Source = "inspect_empty_3",
-        MinProgress = 0.1,
         FireASAP = true,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -743,8 +743,8 @@ SWEP.Animations = {
     },
     ["inspect_7"] = {
         Source = "inspect_7",
-        MinProgress = 0.1,
         FireASAP = true,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -756,8 +756,8 @@ SWEP.Animations = {
 
     ["inspect_empty_7"] = {
         Source = "inspect_empty_7",
-        MinProgress = 0.1,
         FireASAP = true,
+        MinProgress = 0.925,
         EventTable = inspectst,
         IKTimeLine = {
             { t = 0, lhik = 1 },
