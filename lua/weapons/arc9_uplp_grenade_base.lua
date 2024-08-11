@@ -11,10 +11,10 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_fn57")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_fn57_desc")
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
-    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Darsu",
+    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th, CS:S",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 SWEP.Slot = 4

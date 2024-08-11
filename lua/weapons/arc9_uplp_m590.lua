@@ -845,7 +845,7 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = "look",
-        MinProgress = 0.95,
+        MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -869,7 +869,7 @@ SWEP.Animations = {
 
     ["inspect_serbu"] = {
         Source = "look_serbu",
-        MinProgress = 0.95,
+        MinProgress = 0.1,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
