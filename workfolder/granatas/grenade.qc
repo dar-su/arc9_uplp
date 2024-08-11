@@ -96,6 +96,10 @@ $sequence "sprint_out" {
 	fadeout 0.3
 }
 
+$sequence "inspect" {
+	"anims\inspect.smd"
+	fps 25
+}
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"

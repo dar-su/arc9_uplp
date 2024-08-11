@@ -135,5 +135,15 @@ SWEP.Animations = {
         Source = "sprint_in",
 		Mult = 3.0,
     },
+
+    ["inspect"] = {
+        Source = "inspect",
+        MinProgress = 0.01,
+        FireASAP = true,
+        EventTable = {
+            {s = randcloth, t = 0},
+            {s = randcloth, t = 2.1},
+        },
+    },
 	
 }
