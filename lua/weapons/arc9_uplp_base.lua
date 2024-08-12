@@ -83,6 +83,7 @@ SWEP.MagnificationZoomSpeed = 2.5
 SWEP.FiremodeSound = false
 
 SWEP.FireInterruptInspect = true
+SWEP.SightsInterruptInspect = true
 
 SWEP.AfterShotParticle = false
 SWEP.AfterShotParticleHook = function(swep, old) 
