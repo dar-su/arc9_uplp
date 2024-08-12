@@ -88,7 +88,7 @@ ATT.ClipSizeMult = 0.33
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 450,
+    -- RPM = 450,
     PoseParam = 1 }
 }
 
@@ -177,7 +177,7 @@ ATT.ClipSizeMult = 0.33
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 450,
+    -- RPM = 450,
     PoseParam = 1 }
 }
 
