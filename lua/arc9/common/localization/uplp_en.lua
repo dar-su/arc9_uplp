@@ -2953,3 +2953,17 @@ L["uplp_mp9_stock_full.description"] = "Classic fixed stock for the F9 \"Cheetah
 L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
 L["uplp_mp9_skin_white.compactname"] = "W&R"
 L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."
+
+//////////////////// PKP
+L["uplp_weapon_pkp"] = "Pulemyot 7.62mm"
+L["uplp_weapon_pkp_desc"] = "The Russian Pulemyot 7.62mm is a high-caliber, general-purpose machine gun firing the very powerful 7.62x54mmR cartridge. Its insane damage output makes it a fearsome monster in combat."
+
+L["uplp_weapon_pkp_real"] = "PKP Pecheneg"
+
+L["uplp_weapon_pkp_manufacturer"] = "TsNIITochMash"
+
+/////////// Attachments
+////// Receiver
+L["uplp_pkp_rec_bullpup.printname"] = "Bullpup Conversion Kit"
+L["uplp_pkp_rec_bullpup.compactname"] = "Bullpup"
+L["uplp_pkp_rec_bullpup.description"] = "Converts the Pulemyot 7.62mm into a bullpup, improving maneuverability at the cost of handling."
