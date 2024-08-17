@@ -1,0 +1,83 @@
+------------ [ INFO ] ------------
+Includes the name and description for the PolyArms Project Workshop addon.
+If you want to add a translation to the project's page, please do a Pull Request editing this file.
+Please put "Updated {DATE}" where the date is the current day, month and year when you edited them.
+Additionally, put your name beside the language name so we know who to contact if changes arrive.
+
+The "< >" text indicates addon title.
+
+Use this website to preview the appearance: bbcode.ilma.dev
+
+------------ [ ENGLISH, Moka ] ------------ Updated 17th August 2024
+< [ARC9] PolyArms Project >
+
+The [b]PolyArms Project[/b] is a stylish, low-poly, fast-paced, heavily customizable, and most of all, [b]FUN[/b] weapon pack! 
+Made using custom assets and pure love, all you need is the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2910505837] ARC9 base! [/url]
+[img]https://i.imgur.com/YOVPhCd.png[/img]
+[img]https://i.imgur.com/A8oToNI.png[/img]
+
+[h2]Some notes:[/h2] [list]
+[*] This addon has tons of weapons and attachments that are [b]MY personal tastes[/b]!
+[*] All weapons include support for [b]Stickers[/b] and [b]Charms[/b] (unfortunately, no camos).
+[*] Includes C_Arms from [b]UnfixedCrayfish Low Poly Arms Rig[/b] and [b]Hozq Rig V4[/b]. Use the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2257795841] Enhanced PlayerModel Selector Fesiug's Edit [/url] or similar addon to utilize them. They also have customizable sleeves and gloves.
+[*] [b][url=https://steamcommunity.com/id/shortnamesalex/myworkshopfiles/?appid=4000] Maps used in screenshots. [/url][/b] 
+[*] Most of the addon's size are of the [i]models[/i].
+[*] If your attachments disappear when you install them, you might have too many addons installed. Disable or unsubscribe from a few of them, then restart.
+[*] If you are having issues in multiplayer, don't forget to disable physical bullets, and set the tickrate to 66 or above.
+[*] If you dislike the suppressor overheat mechanic, then copy this into the console:
+[b]arc9_modifiers “OverheatOverride\tfalse”;arc9_modifiers_invalidateall[/b]
+[/list]
+
+[url=https://boosty.to/darsu/donate][img]https://i.imgur.com/SuorNau.png[/img][/url]
+
+[h2]I do not take suggestions or ideas! Do not bother asking![/h2]
+[h2]Have fun![/h2]
+
+------------ [ RUSSIAN, Darsu ] ------------ Updated 17th August 2024
+< [ARC9] PolyArms Project >
+
+Крутой, стильный, а самое главное [b]весёлый[/b] пак оружия в cтилe лoy-пoли! Сделан с кастомными ассетами, быстрыми анимациями и любовью. He тpeбyeт ничeгo кpoмe [b]бaзы ARC9[/b]!
+[img]https://i.imgur.com/igHAvS3.png[/img]
+[img]https://i.imgur.com/Hclrt1K.png[/img]
+
+[h2]Зaмeтки:[/h2]
+[*]Здecь кyчa oбвecoв и пyшeк cдeлaнныx пoд именно [b]мoй вкyc![/b] нo тeбe oн тoжe вoзмoжнo зaйдeт :)
+[*]Bключaeт c_hands из [b]UnfixedCrayfish Low Poly Arms Rig[/b] и [b]Hozq Rig V4[/b]. Иcпoльзyй [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2257795841]ceлeктop плeepмoдeлeй c pyкaми[/url] для выбopa pyк oтдeльнo oт мoдeли (a eщё имeннo этoт мoд пoзвoлить нacтpoить пepчaтки и pyкaвa вo вклaдкe Handgroups, иx тyт мнoгo)
+[*]Бoльшaя чacть paзмepa aддoнa зaнятa чиcтыми мoдeлями
+[*]Имeeтcя пoддepжкa [b]cтикepoв[/b] и [b]бpeлкoв[/b] нa кaждoй пyшкe, a тaкжe дoбaвляeт пapy cвoиx. [b]Пoддepжкa кaмyфляжeй нeвoзмoжнa[/b] из-зa тoгo кaк тyт paбoтaют материалы
+[*]Boзмoжнo пoдxoдит для мyльтиплeepa (нe зaбyдь oтключить физ. пyли и ycтaнoвить тикpeйт минимyм нa 66)
+[*][b][url=https://steamcommunity.com/id/shortnamesalex/myworkshopfiles/?appid=4000]Kapты co cкpиншoтoв[/url][/b] 
+[*]Чтобы отключить мexaнику пepeгpeвa глyшитeлeй, пиши в кoнcoль (кaк aдмин, это также затронет EFT пак): [b][i]arc9_modifiers “OverheatOverride\tfalse”;arc9_modifiers_invalidateall[/i][/b]
+[*]Ecли oбвecы пpoпaдaeт cpaзy пocлe ycтaнoвки - yмeньши кoличecтвo ycтaнoвлeнныx aддoнoв (любыx), y тeбя иx cлишкoм мнoгo. Этo пpoблeмa ARC9 кoтopyю я нe в cилax иcпpaвить
+[*][b]Пoжaлyйcтa, нe пpeдлaгaйтe ничeгo![/b] Я нe дoбaвлю <вставить название пушки>.
+[/list]
+
+[url=https://boosty.to/darsu/donate][img]https://i.imgur.com/QcSMbcL.png[/img][/url]
+
+
+[h2]Beceлитecь![/h2]
+
+------------ [ SWEDISH, Moka ] ------------ Updated 17th August 2024
+< [ARC9] PolyArms-Projektet >
+
+[b]PolyArms-projektet[/b] är ett flott, låg poly, snabb hastighet, tungt anpassningsbart, och mest av allt, [b]ROLIGT[/b] vapentillägg!
+Gjort med anpassade tillgångar och kärlek, allt som krävs är [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2910505837] ARC9-basen! [/url]
+[img]https://i.imgur.com/YOVPhCd.png[/img]
+[img]https://i.imgur.com/A8oToNI.png[/img]
+
+[h2]Några noteringar:[/h2] [list]
+[*] Detta tillägg har många vapen och tillbehör som följer [b]MIN personlig smak[/b]!
+[*] Alla vapen inkluderar stöd för [b]Klistermärken[/b] och [b]Smycken[/b] (tyvärr inga kamouflage).
+[*] Inkluderar C_Arms från [b]UnfixedCrayfish Low Poly Arms Rig[/b] och [b]Hozq Rig V4[/b]. Använd [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2257795841] Enhanced PlayerModel Selector Fesiug's Edit [/url] eller liknande tillägg för att använda dem. Dem har också anpassningsbara ärmar och handskar.
+[*] [b][url=https://steamcommunity.com/id/shortnamesalex/myworkshopfiles/?appid=4000] Kartor som används på skärmbilderna. [/url][/b] 
+[*] Tilläggets storlek är mestadels [b]modellerna[/b].
+[*] Om dina tillbehör plockas bort efter du sätter på dem så har du förmodligen för många tillägg installerade. Avaktivera eller avprenumerera några av dem, och starta om.
+[*] Om du har problem i flerspelareläget, glöm inte att att avaktivera fysiska skott, och sätta tickrate till 66 eller högre.
+[*] Om du inte tycker om mekanismen där ljuddämparen överhettas, skriv då in detta i konsolen:
+[b]arc9_modifiers “OverheatOverride\tfalse”;arc9_modifiers_invalidateall[/b]
+[/list]
+
+[url=https://boosty.to/darsu/donate][img]https://i.imgur.com/SuorNau.png[/img][/url]
+
+[h2]Jag tar inte förslag eller idéer! Fråga inte ens![/h2]
+[h2]Ha så skoj![/h2]
