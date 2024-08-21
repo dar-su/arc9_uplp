@@ -38,7 +38,7 @@ SWEP.StandardPresets = {
 }
 
 ---- Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_1"
+SWEP.MuzzleParticle = "muzzleflash_pistol_deagle"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
