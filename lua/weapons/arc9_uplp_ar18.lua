@@ -80,9 +80,10 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
+-- edited ar15 stats    8z please do proper ones
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 14 -- Damage dealt after maximum range
+SWEP.DamageMax = 23 -- Damage dealt point-blank
+SWEP.DamageMin = 18 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 15 -- Units of wood that can be penetrated
@@ -104,9 +105,9 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1 + 1
+SWEP.Recoil = 1 + 1.25
 SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.4
+SWEP.RecoilSide = 1.6
 
 SWEP.RecoilRandomUp = 1
 SWEP.RecoilRandomSide = 1.1
@@ -120,7 +121,7 @@ SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoil = 0.6
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0.075 -- Vertical tilt
@@ -140,35 +141,35 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.008
+SWEP.Spread = 0.005
 SWEP.SpreadAddHipFire = 0.025 - 0.01
 
-SWEP.SpreadAddRecoil = 0.012
+SWEP.SpreadAddRecoil = 0.006
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 8
+SWEP.RecoilDissipationRate = 10
 SWEP.RecoilResetTime = 0.03
 SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
+SWEP.Speed = 0.85 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
-SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.33 - 0.05 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.34 - 0.05 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 35
 
 -- Shooting and Firemodes
-SWEP.RPM = 720 -- How fast gun shoot
+SWEP.RPM = 700 -- How fast gun shoot
 SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once

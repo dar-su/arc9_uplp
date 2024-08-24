@@ -83,13 +83,14 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
+-- a bit edited mp5 stats,,,,,,, 8z please do proper ones
 -- Damage
-SWEP.DamageMax = 22
-SWEP.DamageMin = 15
+SWEP.DamageMax = 20
+SWEP.DamageMin = 14
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 0.9,
     [HITGROUP_LEFTARM] = 0.8,
@@ -98,8 +99,8 @@ SWEP.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.75,
 }
 
-SWEP.Penetration = 30 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 5 -- How much kick things will have when hit
+SWEP.Penetration = 20 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 10 / ARC9.HUToM
@@ -117,12 +118,12 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1.25
+SWEP.Recoil = 0.8 + 1
 SWEP.RecoilUp = 0.65
-SWEP.RecoilSide = 0.75
+SWEP.RecoilSide = 0.35
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 0.5
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -153,11 +154,11 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.006
+SWEP.SpreadAddHipFire = 0.01
 
 SWEP.SpreadAddRecoil = 0.02
-SWEP.SpreadAddMove = 0.01
+SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.1
 
 SWEP.SpreadMultSights = 1
@@ -165,7 +166,7 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 10
 SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilPerShot = 1 / 12
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
@@ -174,10 +175,11 @@ SWEP.SpeedMult = 0.97 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 SWEP.SpeedMultShooting = 0.85
 
+SWEP.SwayAddSights = 1 -- Either using Kurz handguard or any stock removes this
 SWEP.BarrelLength = 28
 
-SWEP.AimDownSightsTime = 0.32
-SWEP.SprintToFireTime = 0.3
+SWEP.AimDownSightsTime = 0.2
+SWEP.SprintToFireTime = 0.25
 
 -- Shooting and Firemodes
 SWEP.RPM = 900 -- How fast gun shoot
@@ -255,33 +257,35 @@ local pathUT = "uplp_urban_temp/mp7/"
 local pathUTREAL = "uplp_rz/mp7/"
 local pathUTC = "uplp_urban_temp/common/"
 
+local pathUT5 = "uplp_urban_temp/mp5/"
+
 SWEP.ShootSound = {
-    pathUTREAL .. "fire-01.ogg",
-    pathUTREAL .. "fire-02.ogg",
-    pathUTREAL .. "fire-03.ogg",
-    pathUTREAL .. "fire-04.ogg",
-    pathUTREAL .. "fire-05.ogg",
-    pathUTREAL .. "fire-06.ogg",
+    pathUT5 .. "fire-01.ogg",
+    pathUT5 .. "fire-02.ogg",
+    pathUT5 .. "fire-03.ogg",
+    pathUT5 .. "fire-04.ogg",
+    pathUT5 .. "fire-05.ogg",
+    pathUT5 .. "fire-06.ogg",
 }
 
 SWEP.ShootSoundSilenced = {
-    pathUT .. "fire-sup-01.ogg",
-    pathUT .. "fire-sup-02.ogg",
-    pathUT .. "fire-sup-03.ogg",
-    pathUT .. "fire-sup-04.ogg",
-    pathUT .. "fire-sup-05.ogg",
-    pathUT .. "fire-sup-06.ogg",
+    pathUT5 .. "fire-sup-01.ogg",
+    pathUT5 .. "fire-sup-02.ogg",
+    pathUT5 .. "fire-sup-03.ogg",
+    pathUT5 .. "fire-sup-04.ogg",
+    pathUT5 .. "fire-sup-05.ogg",
+    pathUT5 .. "fire-sup-06.ogg",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUT .. "fire-dist-01.ogg",
-    pathUT .. "fire-dist-02.ogg",
-    pathUT .. "fire-dist-03.ogg",
-    pathUT .. "fire-dist-04.ogg",
-    pathUT .. "fire-dist-05.ogg",
-    pathUT .. "fire-dist-06.ogg",
+    pathUT5 .. "fire-dist-01.ogg",
+    pathUT5 .. "fire-dist-02.ogg",
+    pathUT5 .. "fire-dist-03.ogg",
+    pathUT5 .. "fire-dist-04.ogg",
+    pathUT5 .. "fire-dist-05.ogg",
+    pathUT5 .. "fire-dist-06.ogg",
 }
 
 SWEP.DistantShootSoundIndoor = {
