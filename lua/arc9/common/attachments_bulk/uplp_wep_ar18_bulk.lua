@@ -26,8 +26,8 @@ ATT.SprintToFireTimeAdd = -0.04
 ATT.SpreadAdd = 0.005
 ATT.RecoilPerShot = 1 / 6
 ATT.RecoilAdd = 0.3
-ATT.RangeMinAdd = -20 / ARC9.HUToM
-ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.RangeMinAdd = -30 / ARC9.HUToM
+ATT.RangeMaxAdd = -70 / ARC9.HUToM
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar18_bar_carbine")
@@ -64,8 +64,8 @@ ATT.SprintToFireTimeAdd = -0.04
 ATT.SpreadAdd = 0.005
 ATT.RecoilPerShot = 1 / 6
 ATT.RecoilAdd = 0.3
-ATT.RangeMinAdd = -20 / ARC9.HUToM
-ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.RangeMinAdd = -30 / ARC9.HUToM
+ATT.RangeMaxAdd = -70 / ARC9.HUToM
 
 
 -- idk how they ll mix but this is some grip stats here
@@ -92,12 +92,20 @@ ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 ATT.Category = "uplp_ar18_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- Positives
-ATT.AimDownSightsTimeAdd = -0.01
-ATT.SprintToFireTimeAdd = -0.02
+-- AR15 tac stock equivalent
 
--- Negatives
-ATT.RecoilSideAdd = 0.075
+-- Positives
+ATT.RecoilAutoControlMult = 1.4
+ATT.VisualRecoilMultHipFire = 0.35
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.75
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 - 0.02
+ATT.SpeedMultSights = 0.85 + 0.08
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01
 
 -- ATT.ActivateElements = {"use_optics"}
 
@@ -114,12 +122,24 @@ ATT.Icon = Material(iconfolder .. "wood.png", "mips smooth")
 ATT.Category = "uplp_ar18_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+-- apexcore stock equivalent
+
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.01
-ATT.SprintToFireTimeAdd = -0.02
+ATT.RecoilAutoControlMult = 2
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.85
 
 -- Negatives
-ATT.RecoilSideAdd = 0.075
+ATT.SpeedMultShooting = 0.85
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1.25
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1 + 0.04
+ATT.SprintToFireTimeAdd = 0.1 + 0.03
+ATT.SpeedMultSights = 0.85 - 0.08
+ATT.SpeedAdd = -0.05 - 0.02
+ATT.SpreadAddHipFire = 0.01 + 0.01
 
 -- ATT.ActivateElements = {"use_optics"}
 
@@ -162,18 +182,6 @@ ATT.Icon = Material(iconfolder .. "tube.png", "mips smooth")
 
 ATT.Category = "uplp_ar18_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- M16 stock
-ATT.RecoilAutoControlMult = 1 / 1.75
-ATT.VisualRecoilMultHipFire = 2
-ATT.SwayMultSights = 1 / 0.85
-ATT.RecoilAdd = 1
-ATT.SwayAddSights = 1
-ATT.AimDownSightsTimeAdd = -0.1
-ATT.SprintToFireTimeAdd = -0.12
-ATT.SpeedMultSights = 1 / 0.8
-ATT.SpeedAdd = 0.07
-ATT.SpreadAddHipFire = -0.015
 
 ATT.Attachments = {
     {

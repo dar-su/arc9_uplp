@@ -83,10 +83,9 @@ SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_SMG1
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
--- a bit edited mp5 stats,,,,,,, 8z please do proper ones
 -- Damage
-SWEP.DamageMax = 20
-SWEP.DamageMin = 14
+SWEP.DamageMax = 24
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -99,12 +98,12 @@ SWEP.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.75,
 }
 
-SWEP.Penetration = 20 -- Units of wood that can be penetrated
+SWEP.Penetration = 12 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 8 / ARC9.HUToM
+SWEP.RangeMax = 25 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -118,9 +117,9 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 0.8 + 1
+SWEP.Recoil = 0.75 + 1
 SWEP.RecoilUp = 0.65
-SWEP.RecoilSide = 0.35
+SWEP.RecoilSide = 0.55
 
 SWEP.RecoilRandomUp = 0.5
 SWEP.RecoilRandomSide = 0.5
@@ -154,10 +153,10 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.006
-SWEP.SpreadAddHipFire = 0.01
+SWEP.Spread = 0.005
+SWEP.SpreadAddHipFire = 0.012
 
-SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.1
 
@@ -166,17 +165,17 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 10
 SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 12
+SWEP.RecoilPerShot = 1 / 8
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.97 -- Walk speed multiplier
+SWEP.SpeedMult = 0.99 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
-SWEP.SpeedMultShooting = 0.85
+SWEP.SpeedMultShooting = 0.9
 
 SWEP.SwayAddSights = 1 -- Either using Kurz handguard or any stock removes this
-SWEP.BarrelLength = 28
+SWEP.BarrelLength = 20
 
 SWEP.AimDownSightsTime = 0.2
 SWEP.SprintToFireTime = 0.25
@@ -413,7 +412,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -430,7 +429,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -468,10 +467,10 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
@@ -495,17 +494,17 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
             { s = pathUTREAL .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 10 / 30, v = 0.6 },
             { s = pathUTREAL .. "magin.ogg", t = 28 / 30, c = ca, v = 0.8 },
-            
+
             { s = pathUT .. "chback.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "chamber.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 58 / 30, c = ca, v = 0.6 },
@@ -526,10 +525,10 @@ SWEP.Animations = {
     ["reload_20"] = {
         Source = "reload_short",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 0.7,
-		FireASAP = true,
+        FireASAP = true,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -554,10 +553,10 @@ SWEP.Animations = {
     ["reload_empty_20"] = {
         Source = "reload_short_empty",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 0.7,
-		FireASAP = true,
+        FireASAP = true,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -584,10 +583,10 @@ SWEP.Animations = {
     ["reload_40"] = {
         Source = "reload_ext",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 0.8,
-		FireASAP = true,
+        FireASAP = true,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -612,10 +611,10 @@ SWEP.Animations = {
     ["reload_empty_40"] = {
         Source = "reload_ext_empty",
         MinProgress = 0.95,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 0.8,
-		FireASAP = true,
+        FireASAP = true,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -740,7 +739,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     if eles["uplp_foldedstock"] then mdl:SetBodygroup(2, 2) end -- folded stock forcing
     if !eles["uplp_optic_used"] and eles["uplp_mp9_grip_raw"] then mdl:SetBodygroup(7, 2) end -- no rail on steyr
 
-    if white then 
+    if white then
         mdl:SetBodygroup(3, mount and 3 or 1) -- stock mount color
         if grip then mdl:SetBodygroup(4, 1) end
     end
@@ -770,9 +769,9 @@ SWEP.AttachmentElements = {
     ["uplp_mp9_mag_20"] = { Bodygroups={ { 5, 2 } } },
     ["uplp_mp9_mag_42"] = { Bodygroups={ { 5, 1 } } },
 
-    -- OTHER    
+    -- OTHER
     ["uplp_mp9_skin_white"] = { Bodygroups={ { 0, 1 }, { 3, 1 } } },
-    
+
     ["uplp_optic_used"] = { Bodygroups={ { 7, 1 } } },
     ["uplp_tac_used"] = { Bodygroups={ { 6, 1 } } },
 

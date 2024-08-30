@@ -95,7 +95,7 @@ SWEP.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.75,
 }
 
-SWEP.Penetration = 30 -- Units of wood that can be penetrated
+SWEP.Penetration = 12 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
@@ -228,10 +228,10 @@ SWEP.CustomizeSnapshotPos = Vector(-1, 10, 2)
 SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = false 
-SWEP.ShouldDropMagEmpty = false 
+SWEP.ShouldDropMag = false
+SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30.mdl"
-SWEP.DropMagazineTime = 0.63    
+SWEP.DropMagazineTime = 0.63
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
@@ -393,8 +393,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.8,
-		FireASAP = true,
+        MinProgress = 0.8,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -424,9 +424,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.95,
-		PeekProgress = 0.875,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.875,
+        RefillProgress = 0.7,
+        FireASAP = true,
         DropMagAt = 0.6,
         Mult = 1,
         EventTable = {
@@ -452,9 +452,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.95,
-		PeekProgress = 0.825,
-		RefillProgress = 0.75,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.75,
+        FireASAP = true,
         DropMagAt = 1.05,
         Mult = 1.0,
         EventTable = {
@@ -487,9 +487,9 @@ SWEP.Animations = {
     ["reload_15"] = {
         Source = "reload_15",
         MinProgress = 0.95,
-		PeekProgress = 0.875,
-		RefillProgress = 0.75,
-		FireASAP = true,
+        PeekProgress = 0.875,
+        RefillProgress = 0.75,
+        FireASAP = true,
         DropMagAt = 0.6,
         Mult = 1,
         DropMagAt = 0.5,
@@ -516,9 +516,9 @@ SWEP.Animations = {
     ["reload_empty_15"] = {
         Source = "reload_empty_15",
         MinProgress = 0.95,
-		PeekProgress = 0.825,
-		RefillProgress = 0.75,
-		FireASAP = true,
+        PeekProgress = 0.825,
+        RefillProgress = 0.75,
+        FireASAP = true,
         Mult = 1.0,
         DropMagAt = 1.0,
         EventTable = {
@@ -551,9 +551,9 @@ SWEP.Animations = {
     ["reload_50"] = {
         Source = "reload_50",
         MinProgress = 0.95,
-		PeekProgress = 0.85,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
@@ -579,9 +579,9 @@ SWEP.Animations = {
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
         MinProgress = 0.95,
-		PeekProgress = 0.875,
-		RefillProgress = 0.85,
-		FireASAP = true,
+        PeekProgress = 0.875,
+        RefillProgress = 0.85,
+        FireASAP = true,
         Mult = 1.0,
         DropMagAt = 1.1,
         EventTable = {
@@ -610,14 +610,14 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    
+
     ["reload_empty_catch"] = {
         Source = "reload_empty_catch",
         MinProgress = 0.95,
-		PeekProgress = 0.8,
-		RefillProgress = 0.725,
+        PeekProgress = 0.8,
+        RefillProgress = 0.725,
         MagSwapTime = 0.8,
-		FireASAP = true,
+        FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
@@ -708,9 +708,9 @@ SWEP.DeployTime = 1
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-	local tacc = "uplp_tac_used"
-	local hg = "uplp_mp5_hg_"
-	
+    local tacc = "uplp_tac_used"
+    local hg = "uplp_mp5_hg_"
+
     if eles["uplp_muzzle_used"] or eles["uplp_mp5_bar_kurz"] or eles["uplp_mp5_bar_sd"] then
         mdl:SetBodygroup(6, 1)
     end
