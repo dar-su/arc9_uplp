@@ -1251,6 +1251,12 @@ end
 
 -- end
 
+SWEP.AttachmentTableOverrides = {
+    ["uplp_grip_cqr"] = {
+		ModelOffset = Vector(0, -3.25, 0),
+    },
+}
+
 SWEP.AttachmentElements = {
     -- BARRELS
     ["uplp_ar15_barrel_10"] = { Bodygroups = { { 3, 1 } } },
@@ -1508,7 +1514,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_cclamp"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_cclamp", "uplp_grip_horiz_long"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.045, 1.72, 10),
@@ -1636,17 +1642,6 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 0),
         -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
         ExcludeElements = {"uplp_ar15_hg_riscover"},
-        MergeSlots = {12}, 
-        Hidden = true,
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_horiz_long"},
-        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0.045, 1.72, 8.05),
-        Ang = Angle(90, 90, 180),
-        ExcludeElements = {"uplp_no_grip"},
         MergeSlots = {12}, 
         Hidden = true,
     },
