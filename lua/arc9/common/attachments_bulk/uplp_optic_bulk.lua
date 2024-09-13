@@ -348,6 +348,7 @@ ATT.Sights = {
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         RTScopeFOV = 38 / 4,
+        RTScopeMagnification = 4,
         Blur = false,
         ViewModelFOV = 30,
 
@@ -368,6 +369,7 @@ ATT.HoloSightAlwaysOn = true
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
+ATT.RTScopeMagnification = 4
 ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo4rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
@@ -376,6 +378,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.HoloSightDepthAdjustment = 0.01
+ATT.ScopeScreenRatio = 453/1080
 
 ATT.DrawFunc = function(swep, model, wm)
     if !wm then
@@ -417,6 +420,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 4,
+        RTScopeMagnification = 4,
 
         SwayAddSights = sway_mid,
     },
@@ -437,6 +441,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -444,7 +449,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 527/1080
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -478,6 +483,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 45,
         RTScopeFOV = 57 / 4,
+        RTScopeMagnification = 4,
 
         SwayAddSights = sway_mid,
     },
@@ -498,7 +504,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 538/1080
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -535,6 +541,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 8,
+        RTScopeMagnification = 8,
         Blur = false,
 
         SwayAddSights = sway_big,
@@ -561,6 +568,8 @@ ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 4
 ATT.RTScopeFOVMin = 57 / 8
 ATT.RTScopeFOVMax = 57 / 16
+ATT.RTScopeMagnificationMin = 8
+ATT.RTScopeMagnificationMax = 16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -568,7 +577,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 941/1080
 
 
 
@@ -813,6 +822,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 6,
         Blur = false,
 
         SwayAddSights = sway_bigger,
@@ -826,6 +836,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57/6
+ATT.RTScopeMagnification = 6
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/halo.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.92
 ATT.RTScopeColorable = false
@@ -833,7 +844,7 @@ ATT.RTScopeShadowIntensity = 7
 ATT.RTScopeBlackBox = true  
 ATT.RTScopeBlackBoxShadow = false 
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 691/1080
 
 
 ATT.RTScopeFLIR = true
@@ -964,6 +975,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 4,
+        RTScopeMagnification = 4,
 
         SwayAddSights = sway_mid,
     },
@@ -983,7 +995,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 679/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1319,6 +1331,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 45,
         RTScopeFOV = 57 / 3,
+        RTScopeMagnification = 3,
 
         SwayAddSights = sway_mid,
     }
@@ -1338,7 +1351,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 660/1080
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1371,6 +1384,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 3,
+        RTScopeMagnification = 1.5,
 
         SwayAddSights = sway_mag,
     }
@@ -1384,6 +1398,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 3
+ATT.RTScopeMagnification = 1.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1391,7 +1406,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 556/1080
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1430,6 +1445,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 6,
         Blur = false,
         Reticle = R0,
 
@@ -1457,7 +1473,9 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeAdjustable = true
 ATT.RTScopeAdjustmentLevels = 1
 ATT.RTScopeFOVMin = 57 / 6
-ATT.RTScopeFOVMax = 57 / 10
+ATT.RTScopeFOVMax = 57 / 8
+ATT.RTScopeMagnificationMin = 6
+ATT.RTScopeMagnificationMax = 10
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1465,7 +1483,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 815/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1505,6 +1523,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 6,
         Blur = false,
 
         SwayAddSights = sway_midbig,
@@ -1516,6 +1535,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 40,
+        RTScopeMagnification = 1,
         Blur = false,
         Reticle = R0,
 
@@ -1547,7 +1567,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 618/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1583,6 +1603,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 8,
         Blur = false,
 
         SwayAddSights = sway_big,
@@ -1596,6 +1617,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 6
+ATT.RTScopeMagnification = 8
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1603,7 +1625,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 664/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1648,6 +1670,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 12,
         Blur = false,
 
         SwayAddSights = sway_big,
@@ -1661,6 +1684,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 6
+ATT.RTScopeMagnification = 12
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1668,7 +1692,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 763/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1806,6 +1830,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 10,
         Blur = false,
 
         SwayAddSights = sway_big,
@@ -1819,6 +1844,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 6
+ATT.RTScopeMagnification = 10
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1826,7 +1852,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 637/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1863,6 +1889,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 12,
+        RTScopeMagnification = 12,
         Blur = false,
 
         SwayAddSights = sway_big,
@@ -1876,6 +1903,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 12
+ATT.RTScopeMagnification = 12
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/dedal.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -1883,7 +1911,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 711/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1920,6 +1948,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
+        RTScopeMagnification = 7,
         Blur = false,
 
         SwayAddSights = sway_midbig,
@@ -1933,6 +1962,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 7
+ATT.RTScopeMagnification = 7
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/old.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = true
@@ -2281,6 +2311,7 @@ ATT.Sights = {
         Blur = true,
         ViewModelFOV = 57,
         NoSensAdjustment = true,
+        RTScopeMagnification = 4,
 
         SwayAddSights = sway_cqc,
     },
@@ -2292,6 +2323,7 @@ ATT.Sights = {
         Blue = false,
 
         SwayAddSights = sway_mag,
+        RTScopeMagnification = 4,
     },
 }
 
@@ -2308,13 +2340,14 @@ ATT.HoloSightColorable = true
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 5 -- idk 
+ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/devo.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 316/1080
 ATT.RTScopeNoBlur = true
 
 ATT.Category = "uplp_optic_mid"
@@ -2401,6 +2434,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 30,
         RTScopeFOV = 57 / 4,
+        RTScopeMagnification = 4,
 
         SwayAddSights = sway_mid,
     }
@@ -2414,6 +2448,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 2
+ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/pso.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = false 
@@ -2421,7 +2456,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 580/1080
 
 ATT.Category = "uplp_optic_dovetail"
 -- ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
@@ -2554,6 +2589,7 @@ ATT.Sights = {
         Blur = true,
         ViewModelFOV = 57,
         NoSensAdjustment = true,
+        RTScopeMagnification = 1,
 
         SwayAddSights = sway_cqc,
         InvertColors = true,
@@ -2573,6 +2609,7 @@ ATT.Sights = {
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 17
+ATT.RTScopeMagnification = 1
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/yellowx2.png", "mips smooth")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
@@ -2583,7 +2620,7 @@ ATT.RTScopeBlackBoxShadow = false
 ATT.RTScopeNoBlur = true
 
 ATT.RTCollimator = true
-ATT.ScopeScreenRatio = 0.28
+ATT.ScopeScreenRatio = 470/1080
 
 
 
