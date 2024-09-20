@@ -521,8 +521,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_elcan")
 
 ATT = {}
 
-ATT.PrintName = "8-12x Variable Zoom Scope with Rangefinder" -- B.ASS Variable Zoom Scope with Rangefinder
-ATT.CompactName = "8-12x VZS-R"
+ATT.PrintName = "8-16x Variable Zoom Scope with Rangefinder" -- B.ASS Variable Zoom Scope with Rangefinder
+ATT.CompactName = "8-16x VZS-R"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
@@ -565,9 +565,9 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 -- ATT.RTScopeFOV = 57 / 8
 ATT.RTScopeAdjustable = true
-ATT.RTScopeAdjustmentLevels = 4
-ATT.RTScopeFOVMin = 57 / 8
-ATT.RTScopeFOVMax = 57 / 16
+ATT.RTScopeAdjustmentLevels = 3
+-- ATT.RTScopeFOVMin = 57 / 8
+-- ATT.RTScopeFOVMax = 57 / 16
 ATT.RTScopeMagnificationMin = 8
 ATT.RTScopeMagnificationMax = 16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
@@ -2620,7 +2620,7 @@ ATT.RTScopeBlackBoxShadow = false
 ATT.RTScopeNoBlur = true
 
 ATT.RTCollimator = true
-ATT.ScopeScreenRatio = 470/1080
+ATT.ScopeScreenRatio = 400/1080
 
 
 

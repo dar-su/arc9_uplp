@@ -246,12 +246,12 @@ L["uplp_optic_elcan.printname"] = "4x Combat Scope"
 L["uplp_optic_elcan.compactname"] = "4x Combat"
 L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-12x Variable Zoom Scope w. Rangefinder"
-L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
+L["uplp_optic_bigass.printname"] = "8-16x Variable Zoom Scope w. Rangefinder"
+L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
 L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
 
--- L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope w. Rangefinder"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
+-- L["uplp_optic_bigass_thermal.printname"] = "8-16x Variable Zoom Thermal Scope w. Rangefinder"
+-- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZTS-R"
 -- L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"

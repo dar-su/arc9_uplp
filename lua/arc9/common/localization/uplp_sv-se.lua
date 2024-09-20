@@ -248,12 +248,12 @@ L["uplp_optic_elcan.printname"] = "4x Stridssikte"
 L["uplp_optic_elcan.compactname"] = "4x Strid"
 L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-12x Variabel Zoom Kikarsikte med Avståndsmätare"
-L["uplp_optic_bigass.compactname"] = "8-12x VZK-A"
+L["uplp_optic_bigass.printname"] = "8-16x Variabel Zoom Kikarsikte med Avståndsmätare"
+L["uplp_optic_bigass.compactname"] = "8-16x VZK-A"
 L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är." .. desc_bigoptic
 
--- L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med Avståndsmätare"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
+-- L["uplp_optic_bigass_thermal.printname"] = "8-16x Variabel Zoom Värmesikte med Avståndsmätare"
+-- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZV-A"
 -- L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"

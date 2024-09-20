@@ -247,12 +247,12 @@ L["uplp_optic_elcan.printname"] = "Visor de Combate 4x"
 L["uplp_optic_elcan.compactname"] = "4x Combate"
 L["uplp_optic_elcan.description"] = "Óptica de combate de calidad militar de origen americano con 4 aumentos." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-12x y Telémetro"
-L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
+L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-16x y Telémetro"
+L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
 L["uplp_optic_bigass.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo." .. desc_bigoptic
 
--- L["uplp_optic_bigass_thermal.printname"] = "Termoscopio 8-12x Zoom Variable con Telémetro"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
+-- L["uplp_optic_bigass_thermal.printname"] = "Termoscopio 8-16x Zoom Variable con Telémetro"
+-- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZTS-R"
 -- L["uplp_optic_bigass_thermal.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo.\n - Capacidad de imagen térmica que resalta los objetivos." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
