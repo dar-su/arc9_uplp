@@ -7,6 +7,11 @@ SWEP.Spawnable = true
 
 SWEP.Slot = 3 -- Which slot the weapon is in; starts at 0
 
+SWEP.CustomCrosshair = true
+SWEP.CustomCrosshairSingle = true
+SWEP.CustomCrosshairMaterial = Material("arc9/circlehollow.png", "mips smooth")
+SWEP.CustomCrosshairSize = 30
+
 ---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_m590")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_m590_desc")
