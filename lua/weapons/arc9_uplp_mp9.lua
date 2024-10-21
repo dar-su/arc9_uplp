@@ -258,17 +258,18 @@ SWEP.DropMagazineVelocity = Vector(-40, 120, -30)
 -- urbna!
 local pathUT = "uplp_urban_temp/mp7/"
 local pathUTREAL = "uplp_rz/mp7/"
+local pathREALLYREAL = "uplp_rz/mp9/"
 local pathUTC = "uplp_urban_temp/common/"
 
 local pathUT5 = "uplp_urban_temp/mp5/"
 
 SWEP.ShootSound = {
-    pathUT5 .. "fire-01.ogg",
-    pathUT5 .. "fire-02.ogg",
-    pathUT5 .. "fire-03.ogg",
-    pathUT5 .. "fire-04.ogg",
-    pathUT5 .. "fire-05.ogg",
-    pathUT5 .. "fire-06.ogg",
+    pathREALLYREAL .. "fire-01.ogg",
+    pathREALLYREAL .. "fire-02.ogg",
+    pathREALLYREAL .. "fire-03.ogg",
+    pathREALLYREAL .. "fire-04.ogg",
+    pathREALLYREAL .. "fire-05.ogg",
+    pathREALLYREAL .. "fire-06.ogg",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -283,12 +284,12 @@ SWEP.ShootSoundSilenced = {
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUT5 .. "fire-dist-01.ogg",
-    pathUT5 .. "fire-dist-02.ogg",
-    pathUT5 .. "fire-dist-03.ogg",
-    pathUT5 .. "fire-dist-04.ogg",
-    pathUT5 .. "fire-dist-05.ogg",
-    pathUT5 .. "fire-dist-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
 }
 
 SWEP.DistantShootSoundIndoor = {
@@ -359,12 +360,12 @@ SWEP.ReloadHideBoneTables = {
 -- Animations
 
 local mechh = {
-    pathUT .. "mech-01.ogg",
-    pathUT .. "mech-02.ogg",
-    pathUT .. "mech-03.ogg",
-    pathUT .. "mech-04.ogg",
-    pathUT .. "mech-05.ogg",
-    pathUT .. "mech-06.ogg",
+    pathREALLYREAL .. "mech-01.ogg",
+    pathREALLYREAL .. "mech-02.ogg",
+    pathREALLYREAL .. "mech-03.ogg",
+    pathREALLYREAL .. "mech-04.ogg",
+    pathREALLYREAL .. "mech-05.ogg",
+    pathREALLYREAL .. "mech-06.ogg",
 }
 
 local UTCrattle = {
@@ -400,8 +401,8 @@ SWEP.Animations = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
 
-            { s = pathUT .. "chback.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "chamber.ogg", t = 8.5 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chback.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 8.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 60, c = ca },
         },
         IKTimeLine = {
@@ -478,9 +479,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 10 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 28 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magin.ogg", t = 28 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -505,12 +506,12 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 10 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 28 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magin.ogg", t = 28 / 30, c = ca, v = 0.8 },
 
-            { s = pathUT .. "chback.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "chamber.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chback.ogg", t = 44 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 58 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -537,9 +538,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magout.ogg", t = 4 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magout.ogg", t = 4 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 9 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -565,10 +566,10 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magout.ogg", t = 4 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magout.ogg", t = 4 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 9 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "chamber.ogg", t = 34 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 34 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 44 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -595,9 +596,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 22 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 39 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magin.ogg", t = 39 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 52 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -623,12 +624,12 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca, v = 1 },
-            { s = pathUTREAL .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magout.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 22 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 39 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "magin.ogg", t = 39 / 30, c = ca, v = 0.8 },
 
-            { s = pathUT .. "chback.ogg", t = 62 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "chamber.ogg", t = 68 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chback.ogg", t = 62 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 68 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 75 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -656,7 +657,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 67 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "rack1.ogg", t = 88 / 30, c = ca, v = 0.5 },
-            { s = pathUT .. "chlock.ogg", t = 112 / 30, c = ca, v = 1 },
+            { s = pathREALLYREAL .. "chlock.ogg", t = 112 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_3.ogg", t = 123 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 130 / 30, c = ca, v = 0.6 },
         },
