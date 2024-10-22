@@ -401,8 +401,8 @@ SWEP.Animations = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
 
-            { s = pathREALLYREAL .. "chback.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathREALLYREAL .. "chforward.ogg", t = 8.5 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chback.ogg", t = 3 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 60, c = ca },
         },
         IKTimeLine = {
@@ -510,8 +510,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 10 / 30, v = 0.6 },
             { s = pathREALLYREAL .. "magin.ogg", t = 28 / 30, c = ca, v = 0.8 },
 
-            { s = pathREALLYREAL .. "chback.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = pathREALLYREAL .. "chforward.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chback.ogg", t = 45.5 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 51 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 58 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -569,7 +569,7 @@ SWEP.Animations = {
             { s = pathREALLYREAL .. "magout.ogg", t = 4 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 9 / 30, v = 0.6 },
             { s = pathREALLYREAL .. "magin.ogg", t = 21 / 30, c = ca, v = 0.8 },
-            { s = pathREALLYREAL .. "chforward.ogg", t = 34 / 30, c = ca, v = 0.8 },
+            { s = pathREALLYREAL .. "chforward.ogg", t = 39 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 44 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -656,8 +656,8 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 67 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "rack1.ogg", t = 88 / 30, c = ca, v = 0.5 },
-            { s = pathREALLYREAL .. "chlock.ogg", t = 112 / 30, c = ca, v = 1 },
+            { s = pathREALLYREAL .. "chback.ogg", t = 88 / 30, c = ca, v = 0.5 },
+            { s = pathUT5 .. "chlock.ogg", t = 114 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_3.ogg", t = 123 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 130 / 30, c = ca, v = 0.6 },
         },
