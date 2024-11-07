@@ -288,6 +288,10 @@ L["uplp_optic_rmrhigh.printname"] = "XW-Rödpunktsikte med Raiser"
 L["uplp_optic_rmrhigh.compactname"] = "XW R"
 L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen." .. desc_smalloptic
 
+L["uplp_optic_genericrds.printname"] = "HawkEye Precision Rödpunktsikte"
+L["uplp_optic_genericrds.compactname"] = "HawkEye"
+L["uplp_optic_genericrds.description"] = "Klassiskt rödpunktsikte som har klonats och kopierats enda sedan den introducerats." .. desc_smalloptic
+
 L["uplp_optic_notacog.printname"] = "3x Militärsikte"
 L["uplp_optic_notacog.compactname"] = "3x Militär"
 L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt ursprung med 3x magnifiering." .. desc_midoptic

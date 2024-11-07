@@ -286,6 +286,10 @@ L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
 L["uplp_optic_rmrhigh.compactname"] = "XW R."
 L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
 
+L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot"
+L["uplp_optic_genericrds.compactname"] = "HawkEye"
+L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_smalloptic
+
 L["uplp_optic_notacog.printname"] = "3x Military Scope"
 L["uplp_optic_notacog.compactname"] = "3x Military"
 L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3x magnification." .. desc_midoptic

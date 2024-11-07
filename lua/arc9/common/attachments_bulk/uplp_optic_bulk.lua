@@ -1315,7 +1315,7 @@ ATT.PrintName = "generic ass reddot"
 ATT.CompactName = "generic"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1326,7 +1326,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.28),
+        Pos = Vector(0, 7, -1.6),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
@@ -1338,7 +1338,7 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/rds.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 188
+ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
