@@ -1306,6 +1306,48 @@ table.Merge(ATT, stats_small)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
+---------- uplp_optic_genericrds
+
+
+ATT = {}
+
+ATT.PrintName = "generic ass reddot"
+ATT.CompactName = "generic"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "Compact"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "rds.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_genericrds.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7, -1.28),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_small,
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/rds.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$additive", 1)
+ATT.HoloSightSize = 188
+ATT.HoloSightColorable = true
+
+ATT.Category = "uplp_optic_small"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+table.Merge(ATT, stats_small)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_genericrds")
+
 ---------- uplp_optic_notacog
 
 
