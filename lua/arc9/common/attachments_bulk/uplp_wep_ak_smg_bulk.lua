@@ -210,6 +210,9 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.SprintToFireTimeMult = 1.1
 ATT.BarrelLengthAdd = 5
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_long")
 
 ---------- uplp_ak_smg_brl_ppk20_long
@@ -248,6 +251,9 @@ ATT.BarrelLengthAdd = 5
 ATT.ActivateElements = {
 "uplp_ak_smg_brl_ppk20_long",
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_brl_ppk20_long")
 

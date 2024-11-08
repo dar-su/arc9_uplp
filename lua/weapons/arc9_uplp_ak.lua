@@ -235,12 +235,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 32.5, 5)
+SWEP.CustomizePos = Vector(17, 40, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(17, -2.5, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -393,6 +393,24 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 35 / 60, c = ca },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["ready_308"] = {
+        Source = "ready",
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_308.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_308.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 60, c = ca },
         },
         IKTimeLine = {
@@ -832,6 +850,63 @@ SWEP.Animations = {
         },
     },
 
+    -- .308
+
+    ["reload_308"] = {
+        Source = "reload_308",
+        MinProgress = 0.9,
+		PeekProgress = 0.865,
+		RefillProgress = 0.6,
+		FireASAP = true,
+        Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin_308.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_308"] = {
+        Source = "reload_empty_308",
+        MinProgress = 0.9,
+		PeekProgress = 0.825,
+		RefillProgress = 0.7,
+		FireASAP = true,
+        Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
+            { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin_308.ogg", t = 18 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_308.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_308.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.29},
+            {hide = 2, t = 0.75}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
     -- Inspect
 
     ["inspect"] = {
@@ -996,6 +1071,47 @@ SWEP.Animations = {
         },
     },
 
+    ["inspect_308"] = {
+        Source = {"inspect_308"},
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magrelease.ogg", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "grab.ogg", t = 63 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "magin_308.ogg", t = 115 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["inspect_look_308"] = {
+        Source = {"inspect0"},
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
 
     ["firemode_1"] = {
         Source = "firemode_0",
@@ -1007,6 +1123,32 @@ SWEP.Animations = {
         Source = "firemode_1",
         EventTable = {
             { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.2 },
+        }
+    },
+
+    ["firemode_1_12"] = {
+        Source = "firemode_0_12",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.18 },
+        }
+    },
+    ["firemode_2_12"] = {
+        Source = "firemode_1_12",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.18 },
+        }
+    },
+
+    ["firemode_1_evo"] = {
+        Source = "firemode_0_evo",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-06.ogg", t = 0.15 },
+        }
+    },
+    ["firemode_2_evo"] = {
+        Source = "firemode_1_evo",
+        EventTable = {
+            { s = "uplp_urban_temp/ar15/selector-01.ogg", t = 0.15 },
         }
     },
 
@@ -1039,6 +1181,18 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 end
 
 ---- Attachments
+
+SWEP.Hook_TranslateSource = function(swep, anim)
+    local eles = swep:GetElements()
+	
+	if eles["uplp_ak_dc_12_22"] or eles["uplp_ak_dc_12_16"] then
+		if anim == "firemode_0" or anim == "firemode_1" then return anim .. "_12" end
+	elseif eles["uplp_ak_dc_12"] then
+        if anim == "firemode_0" or anim == "firemode_1" then return anim .. "_evo" end
+    end
+	
+end
+
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -1065,13 +1219,9 @@ SWEP.AttachmentElements = {
 
     -- RECIEVERS
     ["uplp_ak_rec_old"] =         { Bodygroups = { { 0, 1 } } },
-    ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
-    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
 
     -- FIRE SELECTORS
     ["uplp_ak_fs_old"] =         { Bodygroups = { { 1, 1 } } },
-    ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
-    ["uplp_ak_fs_m1"] =          { Bodygroups = { { 1, 3 } } },
 
     -- BARRELS
     ["uplp_ak_brl_comp"] =  { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.76, 17.7), }}},
@@ -1080,11 +1230,6 @@ SWEP.AttachmentElements = {
     ["uplp_ak_brl_109"] =   { Bodygroups = { { 2, 4 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.64, 23.6), }}},
 
     ["uplp_ak_brl_su"] =    { Bodygroups = { { 2, 5 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.75, 14.3), }, [12] = { Pos = Vector(0.73, 2.1, 12.7), }}},
-
-    ["uplp_ak_brl_12"] =    { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
-    ["uplp_ak_brl_12k"] =   { Bodygroups = { { 2, 7 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 15.2), }}},
-    ["uplp_ak_brl_19"] =    { Bodygroups = { { 2, 8 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
-    ["uplp_ak_brl_rpk16"] = { Bodygroups = { { 2, 9 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
 
     -- DUST COVERS
     ["uplp_ak_dc_std"] =           { Bodygroups = { { 3, 0 } } },
@@ -1098,7 +1243,6 @@ SWEP.AttachmentElements = {
     [9] = { Pos = Vector(0, -0.35, 0.25), },
     [10] = { Pos = Vector(0, -0.35, 6.5), }
     }},
-    ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
     ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
     ["uplp_ak_dc_internals"] =            { Bodygroups = { { 3, 9 } } },
 
@@ -1119,9 +1263,6 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_hg_su_tac"] =  { Bodygroups = { { 4, 11 } } },
     ["uplp_ak_hg_su_dong"] = { Bodygroups = { { 4, 12 } } },
-
-    ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } },
-    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } },
 
     --CALIBERS
     ["uplp_ak_calib_545"] = { Bodygroups = { { 5, 1 } } },
@@ -1159,8 +1300,6 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_556_30_pmag"] = { Bodygroups = { { 6, 17 } } },
 
     -- Other
-    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 6, 18 } } },
-
     ["uplp_ak_mag_939_30"] = { Bodygroups = { { 6, 19 } } },
 
     --Rail Mounts
@@ -1176,7 +1315,53 @@ SWEP.AttachmentElements = {
 
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
+
+	-- AK-12-specific
+    -- RECIEVERS
+    ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
+    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
+
+    -- FIRE SELECTORS
+    ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
+    ["uplp_ak_fs_12alt"] =          { Bodygroups = { { 1, 3 } } },
+
+    -- BARRELS
+    ["uplp_ak_brl_12"] =    { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
+    ["uplp_ak_brl_12k"] =   { Bodygroups = { { 2, 7 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 15.2), }}},
+    ["uplp_ak_brl_19"] =    { Bodygroups = { { 2, 8 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
+    ["uplp_ak_brl_rpk16"] = { Bodygroups = { { 2, 9 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
+
+    -- DUST COVERS
+    ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
+	
+    -- HANDGUARDS
+    ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } , AttPosMods = {
+		[5] = { Pos = Vector(0, 2.6, 12), },
+		[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
+		[12] = { Pos = Vector(0, -0.1, 15), },
+		[13] = { Pos = Vector(0.71, 1.96, 14), },
+    }},
+    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {
+		[5] = { Pos = Vector(0, 2.6, 12), },
+		[6] = { Pos = Vector(-0.95, 0.675, 15.25), },
+		[12] = { Pos = Vector(0, -0.1, 15), },
+		[13] = { Pos = Vector(0.77, 1.96, 16), },
+    }},
+    ["uplp_ak_hg_12tac"] =      { Bodygroups = { { 4, 17 } } , AttPosMods = {
+		[5] = { Pos = Vector(0, 2.6, 12), },
+		[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
+		[12] = { Pos = Vector(0, -0.1, 15), },
+		[13] = { Pos = Vector(0.55, 1.96, 20.2), },
+    }},
+
+    -- MAGAZINES
+    -- Other
+    ["uplp_ak_mag_308_20"] = { Bodygroups = { { 6, 18 } } },
+
+    -- Alternative Irons
     ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 2 } } },
+    ["uplp_ak12_rearsight_evo"] =  { Bodygroups = { { 8, 3 } } },
+    ["uplp_ak12_rearsight_m1"] =  { Bodygroups = { { 8, 4 } } },
 
 }
 

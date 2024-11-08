@@ -71,6 +71,9 @@ ATT.RangeMaxAdd = -30 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RecoilPerShot = 1 / 7
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_comp")
 
 -------------------------------------------
@@ -91,6 +94,9 @@ ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.01
 ATT.RecoilPerShot = 1 / 10
 ATT.RecoilMult = 0.95
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_akm")
 
@@ -147,6 +153,9 @@ ATT.Attachments = {
 }
 --]]
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, 5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_rpk")
 
 -------------------------------------------
@@ -194,6 +203,9 @@ ATT.Attachments = {
 }
 --]]
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_109")
 
 -------------------------------------------
@@ -237,6 +249,9 @@ ATT.Attachments = {
         Icon_Offset = Vector(-7, 0, -0.5),
     },
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ak_brl_su")
 
