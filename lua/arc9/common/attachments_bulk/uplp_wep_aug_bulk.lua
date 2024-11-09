@@ -60,7 +60,7 @@ ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 0.66
-ATT.ModelOffset = Vector(1.45, 0, 1.55)
+ATT.ModelOffset = Vector(1.45, 0, 1.55 + 0.1)
 
 table.Merge(ATT, stats_mid)
 

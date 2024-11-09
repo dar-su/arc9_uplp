@@ -1322,11 +1322,12 @@ ATT.ActivateElements = {"uplp_optic_used"}
 ATT.Icon = Material(iconfolder .. "rds.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_genericrds.mdl"
+ATT.Scale = 0.85
 ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.6),
+        Pos = Vector(0, 7, -1.4),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
@@ -1338,7 +1339,7 @@ ATT.Sights = {
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/rds.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 400
+ATT.HoloSightSize = 500
 ATT.HoloSightColorable = true
 
 ATT.Category = "uplp_optic_small"
