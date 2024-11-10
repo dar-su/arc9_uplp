@@ -132,6 +132,9 @@ ATT.Element = {
     }
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_sniper")
 
 ---------- uplp_fal_hg_para
@@ -191,6 +194,9 @@ ATT.Attachments = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_para")
 
 ---------- uplp_fal_hg_paras
@@ -237,6 +243,9 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, -1),
     },
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_paras")
 
@@ -412,6 +421,9 @@ ATT.Attachments = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_fal_stock_buffer")
 
 -------------------- Magazines
@@ -571,7 +583,8 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 550/1080
+
 ATT.ModelOffset = Vector(-1.5, 0, 0.8)
 -- ATT.ModelOffset = Vector(1.45, 0, 1.55)
 
@@ -597,6 +610,9 @@ ATT.SpreadAddRecoil = -0.0025
 ATT.SpreadAddHipFire = 0.005
 
 ATT.BarrelLengthAdd = 2
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_fal_muz_long")
 

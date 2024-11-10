@@ -127,7 +127,7 @@ SWEP.RecoilMultCrouch = 0.75
 SWEP.VisualRecoil = 0.6
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.075 -- Vertical tilt
+SWEP.VisualRecoilUp = 0.025 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
@@ -752,7 +752,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.05, 22.0),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_fal_muz_long",
+        -- Installed = "uplp_fal_muz_long",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),

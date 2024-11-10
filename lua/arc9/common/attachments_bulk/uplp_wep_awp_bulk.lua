@@ -56,6 +56,8 @@ ATT.DamageMaxMult = 0.92
 -- ATT.SpeedAddSights = -0.05
 ATT.BarrelLengthAdd = -2
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_aws")
 
@@ -88,6 +90,9 @@ ATT.SpeedAddSights = -0.1
 ATT.SpeedAdd = -0.015
 ATT.BarrelLengthAdd = 4
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_long")
 
 
@@ -118,6 +123,9 @@ ATT.RecoilMult = 1.4
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.DamageMinMult = 0.85
 ATT.BarrelLengthAdd = -7
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_awp_brl_short")
 
@@ -620,6 +628,9 @@ ATT.SprintToFireTimeAdd = -0.1
 ATT.SpreadAddHipFire = -0.01
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_tube")
 

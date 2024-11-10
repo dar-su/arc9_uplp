@@ -161,6 +161,9 @@ ATT.RecoilSideMult = 0.65
 ATT.RecoilAutoControlMult = 1.25
 ATT.BarrelLengthAdd = 2
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_deag_barrel_long")
 
 -------------------------------------------
@@ -201,6 +204,9 @@ ATT.RecoilSideMult = 1.35
 ATT.RecoilAutoControlMult = 0.8
 ATT.BarrelLengthAdd = 2
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_deag_barrel_longtac")
 
 -------------------------------------------
@@ -219,6 +225,9 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.RecoilMult = 0.95
 ATT.RecoilUpMult = 0.5
 ATT.RecoilAutoControlMult = 1.1
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.75, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.75, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_cut")
 
@@ -241,6 +250,9 @@ ATT.RecoilSideMult = 3
 ATT.RecoilRandomSideMult = 3
 ATT.RecoilAutoControlMult = 2
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.75, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.75, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_heavy")
 
 -------------------------------------------
@@ -259,6 +271,9 @@ ATT.AimDownSightsTimeMult = 1.15
 ATT.RecoilMult = 0.5
 ATT.RecoilRandomUpMult = 5
 ATT.RecoilAutoControlMult = 1.25
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.75, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(0.75, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_deag_muzzle_tri")
 

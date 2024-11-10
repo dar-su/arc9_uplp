@@ -51,7 +51,7 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeFOV = 57 / 3
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/aug.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = false
@@ -59,7 +59,8 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 500/1080
+
 ATT.ModelOffset = Vector(1.45, 0, 1.55 + 0.1)
 
 table.Merge(ATT, stats_mid)
@@ -102,8 +103,6 @@ ATT.Bipod = true
 
 ATT.ActivateElements = {"uplp_aug_brl_mg"}
 
-ATT.CustomizePos = Vector(13, 30, 4)
-
 -- Positives
 ATT.SpreadAdd = -0.002
 ATT.RecoilSideAdd = -0.2
@@ -125,6 +124,8 @@ ATT.SprintToFireTimeAdd = 0.09
 ATT.SpeedMultSights = 0.8
 ATT.BarrelLengthAdd = 7
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_aug_brl_mg")
 
@@ -142,8 +143,6 @@ ATT.Category = "uplp_aug_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_brl_smg"}
-
-ATT.CustomizePos = Vector(9, 28, 4)
 
 -- Positives
 ATT.RPMAdd = 40
@@ -165,6 +164,9 @@ ATT.SweetSpotPeakAdd = -5 / ARC9.HUToM
 ATT.RangeMinAdd = -4 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RecoilPerShot = 1 / 5
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_aug_brl_smg")
 

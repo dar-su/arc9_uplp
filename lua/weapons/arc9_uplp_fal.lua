@@ -138,7 +138,7 @@ SWEP.RecoilMultCrouch = 0.75
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.1 -- Vertical tilt
+SWEP.VisualRecoilUp = 0.05 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
@@ -235,9 +235,9 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(17, 50, 5)
+SWEP.CustomizePos = Vector(14, 50, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(17, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(14, -2, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 55, 0)
 SWEP.CustomizeSnapshotFOV = 60

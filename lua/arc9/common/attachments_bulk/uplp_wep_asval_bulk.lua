@@ -20,8 +20,6 @@ ATT.ModelOffset = Vector(-9.5, -2.5, 1)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
-ATT.CustomizePos = Vector(10, 30, 4.5)
-
 ATT.Silencer = false
 ATT.MuzzleParticle = "muzzleflash_ak47"
 ATT.MuzzleEffectQCA = 6
@@ -39,6 +37,9 @@ ATT.RPMAdd = -150
 ATT.Overheat = false -- no silencer
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_hg_sr3")
 
@@ -70,6 +71,9 @@ ATT.AimDownSightsTimeAdd = 0.03
 ATT.RPMAdd = -100
 
 ATT.ActivateElements = {"uplp_asval_hg", "uplp_no_grip"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_hg_sr3s")
 
@@ -107,6 +111,9 @@ ATT.SprintToFireTimeAdd = -0.1
 ATT.SpreadAddHipFire = -0.01
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_asval_stock_buffer")
 
