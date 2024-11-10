@@ -39,6 +39,8 @@ ATT.ToggleStats = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_stock_wire")
 
@@ -73,6 +75,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_stock_buffer")
 
@@ -101,6 +105,8 @@ ATT.RecoilAutoControlMult = 1.35
 ATT.SprintToFireTimeAdd = 0.05
 ATT.AimDownSightsTimeAdd = 0.03
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_stock_tac")
 
@@ -196,6 +202,7 @@ local stats45acp = {
     SpeedAdd = -0.03,
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0, 8, 2) end
 
 ---------- uplp_mac_mag10_30
 
@@ -227,6 +234,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 table.Merge(ATT, stats45acp)
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0, 4, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_mag10_30")
 
@@ -264,6 +273,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 table.Merge(ATT, stats45acp)
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0, 4, 2) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_mag10_50")
 
@@ -358,8 +369,10 @@ ATT.SwayAddSights = 0.7
 ATT.SpeedMultSights = 0.92
 ATT.SpeedAdd = -0.01
 
-ATT.CustomizePos = Vector(16, 27, 4.5)
 ATT.MuzzleEffectQCA = 5
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_bar_long")
 
@@ -399,7 +412,6 @@ ATT.SwayAddSights = 0.7
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.015
 
-ATT.CustomizePos = Vector(16.5, 27, 4.5)
 ATT.MuzzleEffectQCA = 6
 
 ATT.Silencer = true
@@ -409,6 +421,9 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.Overheat = true
 ATT.SpreadAddHot = 0.015
 ATT.RPMMultHot = 0.85
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 4.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_muz_supp")
 
@@ -465,7 +480,6 @@ ATT.SwayAddSights = 0.7
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.015
 
-ATT.CustomizePos = Vector(16.5, 27, 4.5)
 ATT.MuzzleEffectQCA = 6
 
 ATT.Silencer = true
@@ -475,6 +489,9 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.Overheat = true
 ATT.SpreadAddHot = 0.015
 ATT.RPMMultHot = 0.85
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 4.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_muz_supp_surv")
 
@@ -514,6 +531,9 @@ ATT.RPMMultHot = 0.9
 ATT.HeatCapacityMult = 0.75
 ATT.HeatDissipationMult = 1.25
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mac_muz_supptac")
 
 
@@ -539,6 +559,9 @@ ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.04
 ATT.RecoilPerShotMult = 0.85
 ATT.RPMMult = 0.9
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 1.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_rec_long")
 
@@ -617,5 +640,8 @@ ATT.Attachments = {
         ExcludeElements = {"uplp_ar15_no_fs"},
     },
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 1.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_rec_tac")

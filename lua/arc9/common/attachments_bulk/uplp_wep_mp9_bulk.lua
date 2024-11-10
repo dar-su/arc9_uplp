@@ -38,6 +38,8 @@ ATT.ToggleStats = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_stock_def")
 
@@ -66,7 +68,8 @@ ATT.RecoilAutoControlMult = 1.1
 ATT.SprintToFireTimeAdd = 0.1
 ATT.AimDownSightsTimeAdd = 0.1
 
-
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3.5, 2.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_stock_full")
 
@@ -95,7 +98,8 @@ ATT.RecoilAutoControlMult = 1.35
 ATT.SprintToFireTimeAdd = 0.05
 ATT.AimDownSightsTimeAdd = 0.03
 
-
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_stock_tac")
 
@@ -303,6 +307,9 @@ ATT.RPMMultHot = 0.9
 ATT.HeatCapacityMult = 0.75
 ATT.HeatDissipationMult = 1.25
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mp9_muzzle_sup")
 
 
@@ -335,7 +342,6 @@ ATT.SwayAddSights = 0.7
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.015
 
-ATT.CustomizePos = Vector(16.5, 27, 4.5)
 ATT.MuzzleEffectQCA = 6
 
 ATT.Silencer = true
@@ -345,6 +351,9 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.Overheat = true
 ATT.SpreadAddHot = 0.015
 ATT.RPMMultHot = 0.85
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_muzzle_supold")
 
@@ -383,7 +392,6 @@ ATT.SwayAddSights = 0.7
 ATT.SpeedMultSights = 0.92
 ATT.SpeedAdd = -0.01
 
-ATT.CustomizePos = Vector(16, 27, 4.5)
 ATT.MuzzleEffectQCA = 5
 
 ATT.Attachments = {
@@ -396,6 +404,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_muzzle_tacbarrel")
 

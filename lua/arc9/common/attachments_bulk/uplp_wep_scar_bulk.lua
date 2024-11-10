@@ -91,6 +91,9 @@ ATT.Attachments = {
 ATT.ActivateElements = {"uplp_scar_upper_20", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20")
 
 ---------- uplp_scar_upper_20b
@@ -144,6 +147,9 @@ ATT.Attachments = {
 ATT.ActivateElements = {"uplp_scar_upper_20b", "uplp_scar_no_is", "uplp_scar_brl_20", "uplp_scar_upper_dmr"}
 -- ATT.RequireElements = {"uplp_scar_brl_dmr"}
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_20b")
 
 ---------- uplp_scar_upper_pdw
@@ -183,6 +189,9 @@ ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RecoilMult = 1.2
 
 ATT.ActivateElements = {"uplp_scar_upper_pdw", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdw")
 
@@ -224,6 +233,9 @@ ATT.RecoilMult = 1.2
 
 ATT.ActivateElements = {"uplp_scar_upper_pdwb", "uplp_scar_brl_pdw", "uplp_ar15_mag_no_drum", "uplp_grip_no_pdw"}
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_pdwb")
 
 -------------------- BARRELS
@@ -260,7 +272,8 @@ ATT.SweetSpotRangeAdd = -12.5 / ARC9.HUToM
 ATT.SweetSpotWidthAdd = 0 / ARC9.HUToM
 ATT.SweetSpotPeakAdd = -15 / ARC9.HUToM
 
-
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_short")
 
@@ -326,6 +339,9 @@ ATT.SpeedMultSights = 0.9
 ATT.BarrelLengthAdd = 5
 ATT.SpreadAddHipFire = 0.01
 ATT.RecoilDissipationRateMult = 0.75
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_scar_brl_20_long")
 
@@ -440,6 +456,9 @@ ATT.SpreadAddHipFire = -0.01
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_tube")
 
 ---------- uplp_scar_stock_pdw
@@ -486,6 +505,9 @@ ATT.ToggleStats = {
 }
 
 -- ATT.ActivateElements = {"uplp_scar_stock_pdw"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, -1.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_pdw")
 

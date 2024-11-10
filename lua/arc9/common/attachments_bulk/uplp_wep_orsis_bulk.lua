@@ -66,6 +66,9 @@ ATT.BarrelLengthAdd = -10
 
 ATT.MuzzleEffectQCA = 5
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_orsis_barrel_short")
 
 
@@ -233,6 +236,9 @@ ATT.RecoilMult = 1.25
 ATT.AimDownSightsTimeAdd = -0.035
 ATT.BarrelLengthAdd = -2
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.25, -0.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.25, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_orsis_muzzle_small")
 
 ---------- uplp_orsis_muzzle_big
@@ -248,5 +254,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RecoilMult = 0.75
 ATT.AimDownSightsTimeAdd = 0.05
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-0.25, -0.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-0.25, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_muzzle_big")

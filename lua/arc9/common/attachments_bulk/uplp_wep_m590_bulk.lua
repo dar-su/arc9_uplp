@@ -29,6 +29,9 @@ ATT.SpreadAdd = 0.01
 ATT.ClipSize = 4
 ATT.RecoilUpMult = 1.5
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.75, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.75, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_m590_bar_short")
 
 ---------- uplp_m590_bar_long
@@ -56,6 +59,9 @@ ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAdd = -0.02
 ATT.SpeedAddSights = -0.05
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_m590_bar_long")
 
@@ -166,8 +172,6 @@ ATT.Icon = Material(iconfolder .. "stockshort.png", "mips smooth")
 ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.CustomizePos = Vector(22, 32.5, 3.25)
-
 ATT.RecoilAdd = 0.6
 ATT.SwayAddSights = 0.5
 ATT.AimDownSightsTimeAdd = -0.08
@@ -175,6 +179,9 @@ ATT.SprintToFireTimeAdd = -0.06
 ATT.SpreadAddHipFire = -0.005
 ATT.SpeedAddSights = 0.08
 ATT.SpeedAdd = 0.02
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_m590_stock_short")
 
@@ -228,6 +235,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_m590_stock_buffer")
 
@@ -315,6 +324,8 @@ ATT.BulletBones = {
 ATT.SpeedAdd = -0.06
 ATT.SpeedMultShooting = 0.65
 ATT.SpeedMultSights = 0.75
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0, 2, 1.5) end
 
 ARC9.LoadAttachment(ATT, "uplp_m590_mag_10")
 

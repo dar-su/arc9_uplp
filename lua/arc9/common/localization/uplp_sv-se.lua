@@ -2649,7 +2649,7 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 ////// Barrels & Tubes
 L["uplp_m590_bar_short.printname"] = "432 mm CQB-Pipa"
 L["uplp_m590_bar_short.compactname"] = "432 mm CQB"
-L["uplp_m590_bar_short.description"] = "Lätt förkortad 432 mm pipa kombinerad med ett <color=100,255,100>4-patroners</color> magasinrör."
+L["uplp_m590_bar_short.description"] = "Lätt förkortad 432 mm pipa kombinerad med ett <color=255,100,100>4-patroners</color> magasinrör."
 
 L["uplp_m590_bar_long.printname"] = "508 mm USMC-Pipa"
 L["uplp_m590_bar_long.compactname"] = "508 mm USMC"
@@ -2732,7 +2732,7 @@ L["uplp_r870_bar_lessmag.description"] = "Standard 476 mm pipa till Wingmaster 1
 
 L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
 L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
-L["uplp_r870_bar_long.description"] = "660 mm pipa från fabriken gjord för jakt.\nKommer med ett 5-patroners rör."
+L["uplp_r870_bar_long.description"] = "660 mm pipa från fabriken gjord för jakt.\nKommer med ett <color=255,100,100>5-patroners</color> rör."
 
 L["uplp_r870_bar_police.printname"] = "469 mm Polispipa"
 L["uplp_r870_bar_police.compactname"] = "469 mm Polis"

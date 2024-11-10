@@ -24,6 +24,9 @@ ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
 ATT.BarrelLengthAdd = 3
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_long")
 
 -------------------------------------------
@@ -48,6 +51,9 @@ ATT.BarrelLengthAdd = -1.5
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_compact")
 
@@ -75,6 +81,9 @@ ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.95
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_mini")
 
 -------------------------------------------
@@ -100,6 +109,9 @@ ATT.BarrelLengthAdd = -3
 ATT.RangeMaxMult = 0.8
 ATT.RangeMinMult = 0.9
 ATT.PhysBulletMuzzleVelocityMult = 0.9
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_molot_brl_micro")
 

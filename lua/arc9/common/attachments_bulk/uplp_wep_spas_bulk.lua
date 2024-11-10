@@ -28,6 +28,9 @@ ATT.ClipSizeOverride = 6
 ATT.RangeMaxAdd = -10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_spas_short")
 
 -------------------- STOCKS
@@ -46,8 +49,6 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_spas_stock_fixed"}
 
-ATT.CustomizePos = Vector(17, 31.5, 4)
-
 -- Positives
 ATT.RecoilAutoControlMult = 1.75
 ATT.VisualRecoilMultHipFire = 0.25
@@ -60,6 +61,9 @@ ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1 + 0.02
 ATT.SpeedMultSights = 0.85 - 0.05
 ATT.SpeedAdd = -0.05 - 0.02
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_spas_stock_fixed")
 
@@ -96,7 +100,6 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_spas_stock_folding_e"},
-        CustomizePos = Vector(17, 31.5, 4),
 
         -- Positives
         RecoilAutoControlMult = 1.4,
@@ -109,6 +112,10 @@ ATT.ToggleStats = {
         SprintToFireTimeAdd = 0.1 - 0.02,
         SpeedMultSights = 0.85,
         SpeedAdd = -0.05,
+		
+		CustomizePosHook = function(wep, vec) return vec + Vector(-6, 4, 0) end,
+		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-6, 0, 0) end,
+
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -159,7 +166,6 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_spas_stock_folding_e", "uplp_spas_hook"},
-        CustomizePos = Vector(17, 31.5, 4),
 
         -- Positives
         RecoilAutoControlMult = 1.4,
@@ -172,6 +178,9 @@ ATT.ToggleStats = {
         SprintToFireTimeAdd = 0.1 - 0.02,
         SpeedMultSights = 0.85,
         SpeedAdd = -0.05,
+		
+		CustomizePosHook = function(wep, vec) return vec + Vector(-6, 4, 0) end,
+		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-6, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -204,8 +213,6 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_spas_stock_tube"}
 
-ATT.CustomizePos = Vector(17, 31.5, 4)
-
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -216,5 +223,8 @@ ATT.Attachments = {
         Ang = Angle(-7, 0, 0),
     },
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_spas_stock_tube")

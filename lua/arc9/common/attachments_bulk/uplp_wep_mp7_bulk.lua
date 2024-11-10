@@ -30,6 +30,8 @@ ATT.RecoilAutoControlMult = 1 / 1.25
 ATT.VisualRecoilMult = 1.25
 ATT.SwayMultSights = 1.25
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_stock_folded")
 

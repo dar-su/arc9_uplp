@@ -2666,7 +2666,7 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 ////// Barrels & Tubes
 L["uplp_m590_bar_short.printname"] = "17\" CQB Barrel"
 L["uplp_m590_bar_short.compactname"] = "17\" CQB"
-L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" (432mm) barrel combined with a <color=100,255,100>4 round</color> magazine tube."
+L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" (432mm) barrel combined with a <color=255,100,100>4 round</color> magazine tube."
 
 L["uplp_m590_bar_long.printname"] = "20\" USMC Barrel"
 L["uplp_m590_bar_long.compactname"] = "20\" USMC"
@@ -2752,7 +2752,7 @@ L["uplp_r870_bar_lessmag.description"] = "Default 18.75\" (476mm) barrel for the
 
 L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
 L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
-L["uplp_r870_bar_long.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a 5-round tube."
+L["uplp_r870_bar_long.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a <color=255,100,100>5-round</color> tube."
 
 L["uplp_r870_bar_police.printname"] = "18.5\" Police Barrel"
 L["uplp_r870_bar_police.compactname"] = "18.5\" Police"

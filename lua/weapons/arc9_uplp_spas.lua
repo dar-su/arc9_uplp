@@ -276,7 +276,7 @@ SWEP.CustomizePos = Vector(22, 45, 3.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(22, -3, -4)
 
-SWEP.CustomizeSnapshotPos = Vector(1.5, 15, 0)
+SWEP.CustomizeSnapshotPos = Vector(1.5, 40, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
@@ -731,7 +731,7 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["uplp_spas_short"] = {
         Bodygroups = { { 1, 1 }, { 2, 1 } },
-        AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(4.75, 0, 0) },
+        AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(0.5, 0, 0) },
     }},
 
     ["uplp_spas_stock_fixed"] = { Bodygroups = { { 3, 1 } } },

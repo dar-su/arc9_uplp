@@ -38,6 +38,9 @@ ATT.MalfunctionWait = 0
 ATT.SpreadAddHot = 0.03
 ATT.RPMMultHot = 0.85
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_sd")
 
 ---------- uplp_mp5_bar_kurz
@@ -76,6 +79,9 @@ ATT.SpreadAdd = 0.005
 ATT.RangeMaxMult = 0.6
 ATT.RecoilAdd = 0.1
 ATT.RecoilPerShotOverride = 1 / 9
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_kurz")
 
@@ -182,6 +188,9 @@ ATT.Attachments = {
 
 -- Negatives
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_buffer")
 
 ---------- uplp_mp5_stock_pdw
@@ -211,6 +220,9 @@ ATT.SprintToFireTimeAdd = 0.1 - 0.03
 ATT.SpeedMultSights = 0.85 + 0.1
 ATT.SpeedAdd = -0.05 + 0.03
 ATT.SpreadAddHipFire = nil
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_pdw")
 
@@ -246,7 +258,8 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_mp5_stock_col"},
-        -- CustomizePos = Vector(17, 31.5, 4),
+		CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end,
+		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -286,6 +299,9 @@ ATT.SprintToFireTimeAdd = 0.1
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_fixed")
 
