@@ -211,12 +211,12 @@ SWEP.PeekPosReloading = Vector(0.5, 0, -1)
 SWEP.PeekAngReloading = Angle(0, 0.4, -5)
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 30, 2.5)
+SWEP.CustomizePos = Vector(14, 30, 2.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
+SWEP.CustomizeRotateAnchor = Vector(14, -1.93, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true

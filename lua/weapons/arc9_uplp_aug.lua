@@ -127,7 +127,7 @@ SWEP.RecoilMultCrouch = 0.75
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.075 -- Vertical tilt
+SWEP.VisualRecoilUp = -0.05 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
@@ -136,7 +136,7 @@ SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 1
+SWEP.VisualRecoilUpHipFire = 0.5
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
 SWEP.VisualRecoilPunchHipFire = 2
@@ -232,12 +232,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(11.5, 27.5, 4)
+SWEP.CustomizePos = Vector(11.5, 40, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(12.5, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(11.5, -2.5, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 10, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 25, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true

@@ -29,6 +29,8 @@ ATT.RecoilAdd = 0.3
 ATT.RangeMinAdd = -30 / ARC9.HUToM
 ATT.RangeMaxAdd = -70 / ARC9.HUToM
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar18_bar_carbine")
 
@@ -78,6 +80,9 @@ ATT.RecoilAutoControlMult = 1.2
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar18_bar_pistol")
 
 -------------------- Stocks
@@ -108,6 +113,9 @@ ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
 -- ATT.ActivateElements = {"use_optics"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar18_stock_fixed")
 
@@ -142,6 +150,9 @@ ATT.SpeedAdd = -0.05 - 0.02
 ATT.SpreadAddHipFire = 0.01 + 0.01
 
 -- ATT.ActivateElements = {"use_optics"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar18_stock_fixed_wood")
 
@@ -193,6 +204,9 @@ ATT.Attachments = {
         Scale = 1.05
     },
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar18_stock_buffer")
 
@@ -318,7 +332,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 
-ATT.ScopeScreenRatio = 0.66
+ATT.ScopeScreenRatio = 450/1080
 
 table.Merge(ATT, stats_mid)
 

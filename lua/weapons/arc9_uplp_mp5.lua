@@ -224,12 +224,12 @@ SWEP.IronSights = {
 }
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(12.5, 28, 4)
+SWEP.CustomizePos = Vector(14, 40, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(12.5, -3, -3)
+SWEP.CustomizeRotateAnchor = Vector(14, -2.5, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(-1, 10, 2)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false

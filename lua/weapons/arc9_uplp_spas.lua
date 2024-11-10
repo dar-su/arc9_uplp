@@ -272,12 +272,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(22, 30, 3.25)
+SWEP.CustomizePos = Vector(22, 45, 3.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(22, -3, -4)
 
 SWEP.CustomizeSnapshotPos = Vector(1.5, 15, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false

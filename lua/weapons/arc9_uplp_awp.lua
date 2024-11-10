@@ -266,12 +266,12 @@ end
 -- end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(20, 32.5, 5)
+SWEP.CustomizePos = Vector(18.5, 45, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(20, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(18.5, -2, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 12.5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
