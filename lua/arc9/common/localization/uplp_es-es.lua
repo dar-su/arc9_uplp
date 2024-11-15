@@ -289,7 +289,7 @@ L["uplp_optic_rmrhigh.description"] = "Punto rojo compacto destinado a pistolas 
 
 L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot" -- NEW
 L["uplp_optic_genericrds.compactname"] = "HawkEye" -- NEW
-L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_smalloptic -- NEW
+L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic -- NEW
 
 L["uplp_optic_notacog.printname"] = "Visor Militar 3x"
 L["uplp_optic_notacog.compactname"] = "3x Militar"

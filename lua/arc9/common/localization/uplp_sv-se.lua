@@ -290,7 +290,7 @@ L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handel
 
 L["uplp_optic_genericrds.printname"] = "HawkEye Precision Rödpunktsikte"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
-L["uplp_optic_genericrds.description"] = "Klassiskt rödpunktsikte som har klonats och kopierats enda sedan den introducerats." .. desc_smalloptic
+L["uplp_optic_genericrds.description"] = "Klassiskt rödpunktsikte som har klonats och kopierats enda sedan den introducerats." .. desc_cqcoptic
 
 L["uplp_optic_notacog.printname"] = "3x Militärsikte"
 L["uplp_optic_notacog.compactname"] = "3x Militär"

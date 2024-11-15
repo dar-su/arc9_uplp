@@ -1311,8 +1311,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_rmrhigh")
 
 ATT = {}
 
-ATT.PrintName = "generic ass reddot"
-ATT.CompactName = "generic"
+ATT.PrintName = "HawkEye Precision Red Dot"
+ATT.CompactName = "HawkEye"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -1342,10 +1342,10 @@ ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 500
 ATT.HoloSightColorable = true
 
-ATT.Category = "uplp_optic_small"
+ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-table.Merge(ATT, stats_small)
+table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_genericrds")
 
