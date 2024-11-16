@@ -1,0 +1,16 @@
+[h1]New content[/h1]
+[list]
+	[*] Added one new attachment:
+	[list]
+		[*] [b]HawkEye Precision Red Dot[/b], available for all weapons (excluding pistols).
+	[/list]
+[/list]
+
+[h1]Changed content[/h1]
+[list]
+	[*] All weapons are now moved properly around the customization menu depending on what attachments are equipped. This mostly applies to barrels and stocks, but can also be altered when equipping certain magazines.
+	[*] Fixed the magnification on the AW-UG, FCM (BRP) and MAR-63 (MAR Optical) sights.
+	[*] F9 "Cheetah": Added new sounds.
+	[*] Updated localizations.
+	[*] Various other fixes.
+[/list]

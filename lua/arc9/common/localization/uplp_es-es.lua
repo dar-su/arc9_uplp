@@ -2832,8 +2832,8 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
 
 ////// Optics
--- L["uplp_ar18_scope_real.printname"] = "MAR Optic Sight"
--- L["uplp_ar18_scope_real.compactname"] = "MAR-O 4x"
+-- L["uplp_ar18_scope_real.printname"] = "MAR Optical Sight"
+-- L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"
 -- L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N

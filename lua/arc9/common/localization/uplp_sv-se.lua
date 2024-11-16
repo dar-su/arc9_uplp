@@ -2847,7 +2847,7 @@ L["uplp_ar18_stock_fixed_wood.description"] = "Trävariant av fabrikskolven och 
 
 ////// Optics
 L["uplp_ar18_scope_real.printname"] = "MAR-Riktmedel"
-L["uplp_ar18_scope_real.compactname"] = "MAR-O 4x"
+L["uplp_ar18_scope_real.compactname"] = "MAR-R 3x"
 L["uplp_ar18_scope_real.description"] = "Fabrikstillverkat riktmedel med 3x magnifiering exklusivt gjord till MAR-63."
 
 //////////////////// MP9N

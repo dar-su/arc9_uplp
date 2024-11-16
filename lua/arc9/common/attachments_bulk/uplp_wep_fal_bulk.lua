@@ -563,7 +563,6 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
-        RTScopeFOV = 57 / 5,
 
         SwayAddSights = sway_mid,
     },
@@ -575,7 +574,7 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57 / 4
+ATT.RTScopeMagnification = 3
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/suit.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.1
 ATT.RTScopeColorable = false

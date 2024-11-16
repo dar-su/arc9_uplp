@@ -2889,8 +2889,8 @@ L["uplp_ar18_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.c
 L["uplp_ar18_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
 
 ////// Optics
-L["uplp_ar18_scope_real.printname"] = "MAR Optic Sight"
-L["uplp_ar18_scope_real.compactname"] = "MAR-O 4x"
+L["uplp_ar18_scope_real.printname"] = "MAR Optical Sight"
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"
 L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
