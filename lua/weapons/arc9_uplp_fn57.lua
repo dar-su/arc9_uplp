@@ -304,6 +304,9 @@ SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
 }
 
+SWEP.DistantShootVolume = 0.01 -- already tail in fire sound
+SWEP.DistantShootVolumeActual = 0.01
+
 SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_1.ogg",
     pathUTC .. "smg_pistol_magdrop_2.ogg",
