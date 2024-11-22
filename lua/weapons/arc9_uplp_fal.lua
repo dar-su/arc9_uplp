@@ -115,7 +115,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1 * 0.75
 SWEP.RecoilUp = 1.55
 SWEP.RecoilSide = 1.2
 
@@ -125,10 +125,10 @@ SWEP.RecoilRandomSide = 1.1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1.25 * 1.5
 
-SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
