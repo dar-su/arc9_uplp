@@ -488,7 +488,7 @@ ATT.CustomPros = {
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights") ] = "+25%",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.sway") ) ] = "+25%",
 }
 
 ATT.ToggleStats = {
