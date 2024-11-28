@@ -8,11 +8,11 @@
 
 [h1]Changed content[/h1]
 [list]
-	[*] Recoil significantly reduced: -25% recoil, -25% recoil if in sights, +50% recoil control on all guns! This should feel a bit better.
 	[*] Lowered volume of indoor sounds. not blasting your headphones anymore.
-	[*] F9 "Cheetah": Added new sounds.
 	[*] All weapons are now moved properly around the customization menu depending on what attachments are equipped. This mostly applies to barrels and stocks, but can also be altered when equipping certain magazines.
+	[*] All weapons now have a universal -25% recoil (doubled in sights) and +50% recoil control making automatic firearms feel nicer to shoot.
 	[*] Fixed the magnification on the AW-UG, FCM (BRP) and MAR-63 (MAR Optical) sights.
+	[*] F9 "Cheetah": Added new sounds.
 	[*] Updated localizations.
 	[*] Various other fixes.
 [/list]
