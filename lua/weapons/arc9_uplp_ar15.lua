@@ -123,7 +123,7 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.075 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
@@ -1337,6 +1337,7 @@ SWEP.AttachmentElements = {
     [7] = { Pos = Vector(0.045, 1.02, 14.285) },
     }},
     ["uplp_ar15_hg_mlok"] = { Bodygroups =          { { 2, 7 }, { 9, 1 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 18.65) },
     [10] = { Pos = Vector(0.045, -0.2, 19.25) },
     [12] = { Pos = Vector(0.045, 1.6, 10) },
     }},
@@ -1661,3 +1662,20 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
+
+-- Moka's shit
+SWEP.Recoil = 1.66
+SWEP.RecoilAutoControl = 0.275
+
+SWEP.RecoilMultSights = 0.85
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.016
+
+SWEP.SpreadAddRecoil = 0.04
+SWEP.SpreadAddMove = 0.02
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2
