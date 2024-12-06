@@ -1664,10 +1664,11 @@ SWEP.HookP_NameChange = function(self, name)
 end
 
 -- Moka's shit
-SWEP.Recoil = 1.66
-SWEP.RecoilAutoControl = 0.275
+-- SWEP.Recoil = 1.5
+SWEP.RecoilAutoControl = 1
+SWEP.RecoilAutoControlMultShooting = 0.1
 
-SWEP.RecoilMultSights = 0.85
+SWEP.RecoilMultSights = 0.875
 
 SWEP.Spread = 0
 SWEP.SpreadAddHipFire = 0.016

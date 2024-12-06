@@ -133,9 +133,9 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.1 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -209,7 +209,7 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.3, -3, 0.975),
+     Pos = Vector(-2.3, -1, 0.975),
      Ang = Angle(0.375, 0, -2.5),
      Magnification = 1.15,
      ViewModelFOV = 55,
@@ -220,7 +220,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if attached["uplp_ak_smg_rec_ppk20"] then
         return {
-             Pos = Vector(-2.29, -3, 0.865),
+             Pos = Vector(-2.29, -1.5, 0.865),
              Ang = Angle(0.375, 0.1, -2.5),
              Magnification = 1.15,
              ViewModelFOV = 60,
@@ -229,7 +229,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if attached["uplp_ak_smg_rec_bizon"] then
         return {
-             Pos = Vector(-2.29, -3, 1.125),
+             Pos = Vector(-2.29, -1, 1.125),
              Ang = Angle(0.375, 0.1, -2.5),
              Magnification = 1.15,
              ViewModelFOV = 60,
@@ -1072,3 +1072,21 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
+
+-- Moka's shit
+-- SWEP.Recoil = 1.5
+SWEP.RecoilAutoControl = 1.2
+SWEP.RecoilAutoControlMultShooting = 0.01
+
+SWEP.RecoilMultSights = 0.85
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.01
+
+SWEP.SpreadAddRecoil = 0.03
+SWEP.SpreadAddMove = 0.02
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

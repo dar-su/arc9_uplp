@@ -117,6 +117,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -165,6 +166,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 ATT.HoloSightDepthAdjustment = 0.01
 
 ATT.Category = "uplp_optic_mid"
@@ -212,6 +214,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo4.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 355
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -258,6 +261,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo5.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -304,7 +308,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = 0.01
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -365,6 +369,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo4.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 ATT.HoloSightAlwaysOn = true
 
 ATT.RTScope = true
@@ -1130,6 +1135,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1171,6 +1177,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1341,6 +1348,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/rds.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 500
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2082,6 +2090,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.003
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
@@ -2159,6 +2168,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.003
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
@@ -2218,6 +2228,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2267,6 +2278,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2316,6 +2328,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2367,6 +2380,7 @@ ATT.Sights = {
 
         SwayAddSights = sway_mag,
         RTScopeMagnification = 4,
+		CantPeek = true,
     },
 }
 
@@ -2379,6 +2393,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.003
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
@@ -2441,6 +2456,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 511
 ATT.HoloSightColorable = true
+ATT.HoloSightDepthAdjustment = -0.01
 ATT.HoloSightDepthAdjustment = 0.01
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
@@ -2546,7 +2562,8 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 466
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
+ATT.HoloSightDepthAdjustment = -0.01
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2595,7 +2612,8 @@ ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
 ATT.HoloSightSize = 466
-ATT.HoloSightColorable = false 
+ATT.HoloSightColorable = false
+ATT.HoloSightDepthAdjustment = -0.01
 ATT.HoloSightDepthAdjustment = 0.01
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
@@ -2663,7 +2681,7 @@ ATT.RTScopeBlackBoxShadow = false
 ATT.RTScopeNoBlur = true
 
 ATT.RTCollimator = true
-ATT.ScopeScreenRatio = 400/1080
+ATT.ScopeScreenRatio = 350/1080
 
 
 
