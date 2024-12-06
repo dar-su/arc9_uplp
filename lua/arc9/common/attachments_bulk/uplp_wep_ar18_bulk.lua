@@ -210,7 +210,8 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
         Pos = Vector(-1.15, -0.105, 0.4),
         Ang = Angle(0, 0, 0),
-        Scale = 1.05
+        Scale = 1.05,
+		Icon_Offset = Vector(-3, 0, 0.4),
     },
 }
 

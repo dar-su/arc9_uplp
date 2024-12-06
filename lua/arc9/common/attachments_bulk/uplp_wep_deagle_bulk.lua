@@ -115,8 +115,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.5
 ATT.Firemodes = { { Mode = -1 } }
-ATT.RecoilMult = 1.25
+ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.5
+ATT.RecoilAutoControlMultShooting = 0.2
 ATT.RecoilSideMult = 5
 ATT.SpreadAddRecoil = 0.025
 

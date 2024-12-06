@@ -134,9 +134,9 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.05 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -1024,3 +1024,23 @@ function SWEP:ExitBipod(force)
     -- our change
     self:SendWeapon()
 end
+
+-- Moka's shit
+SWEP.Recoil = 0.55
+SWEP.RecoilAutoControl = 2.5
+SWEP.RecoilAutoControlMultShooting = 0.05
+
+SWEP.RecoilMultRecoil = 1.3
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.035
+
+SWEP.SpreadAddRecoil = 0.03
+SWEP.SpreadAddMove = 0.02
+
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

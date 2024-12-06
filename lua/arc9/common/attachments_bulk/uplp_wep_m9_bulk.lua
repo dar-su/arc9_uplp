@@ -66,6 +66,9 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.04
 ATT.SpeedMultSights = 0.9
 
+ATT.RecoilAutoControlMult = 1.25
+ATT.RecoilAutoControlMultShooting = 0.2
+
 ATT.Sights = {
     {
         Pos = Vector(-1.92, -2, 0.73),

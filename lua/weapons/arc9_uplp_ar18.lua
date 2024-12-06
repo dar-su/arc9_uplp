@@ -817,11 +817,11 @@ SWEP.Attachments = {
 }
 
 -- Moka's shit
-SWEP.Recoil = 1
-SWEP.RecoilAutoControl = 1.25
+SWEP.Recoil = 1.4
+SWEP.RecoilAutoControl = 1.75
 SWEP.RecoilAutoControlMultShooting = 0.2
 
-SWEP.RecoilMultRecoil = 3
+SWEP.RecoilMultRecoil = 1.5
 SWEP.RecoilMultSights = 0.875
 
 SWEP.Spread = 0
