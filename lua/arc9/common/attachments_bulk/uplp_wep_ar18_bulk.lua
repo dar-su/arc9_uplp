@@ -24,8 +24,8 @@ ATT.SprintToFireTimeAdd = -0.04
 
 -- Negatives
 ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 6
-ATT.RecoilAdd = 0.3
+ATT.RecoilPerShot = 1 / 4
+ATT.RecoilAdd = 0.15
 ATT.RangeMinAdd = -30 / ARC9.HUToM
 ATT.RangeMaxAdd = -70 / ARC9.HUToM
 
@@ -64,8 +64,8 @@ ATT.SprintToFireTimeAdd = -0.04
 
 -- Negatives
 ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 6
-ATT.RecoilAdd = 0.3
+ATT.RecoilPerShot = 1 / 4
+ATT.RecoilAdd = 0.15
 ATT.RangeMinAdd = -30 / ARC9.HUToM
 ATT.RangeMaxAdd = -70 / ARC9.HUToM
 
@@ -96,8 +96,6 @@ ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 
 ATT.Category = "uplp_ar18_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- AR15 tac stock equivalent
 
 -- Positives
 ATT.RecoilAutoControlMult = 1.4
@@ -130,26 +128,37 @@ ATT.Icon = Material(iconfolder .. "wood.png", "mips smooth")
 ATT.Category = "uplp_ar18_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- apexcore stock equivalent
-
 -- Positives
-ATT.RecoilAutoControlMult = 2
-ATT.VisualRecoilMultHipFire = 0.25
-ATT.SwayMultSights = 0.85
+-- ATT.RecoilAutoControlMult = 2
+-- ATT.VisualRecoilMultHipFire = 0.25
+-- ATT.SwayMultSights = 0.85
 
 -- Negatives
-ATT.SpeedMultShooting = 0.85
+-- ATT.SpeedMultShooting = 0.85
 
 -- Buffer Tube stats
-ATT.RecoilAdd = -1.25
-ATT.SwayAddSights = -1
-ATT.AimDownSightsTimeAdd = 0.1 + 0.04
-ATT.SprintToFireTimeAdd = 0.1 + 0.03
-ATT.SpeedMultSights = 0.85 - 0.08
-ATT.SpeedAdd = -0.05 - 0.02
-ATT.SpreadAddHipFire = 0.01 + 0.01
+-- ATT.RecoilAdd = -1.25
+-- ATT.SwayAddSights = -1
+-- ATT.AimDownSightsTimeAdd = 0.1 + 0.04
+-- ATT.SprintToFireTimeAdd = 0.1 + 0.03
+-- ATT.SpeedMultSights = 0.85 - 0.08
+-- ATT.SpeedAdd = -0.05 - 0.02
+-- ATT.SpreadAddHipFire = 0.01 + 0.01
 
 -- ATT.ActivateElements = {"use_optics"}
+
+-- Positives
+ATT.RecoilAutoControlMult = 1.4
+ATT.VisualRecoilMultHipFire = 0.35
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.75
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 - 0.02
+ATT.SpeedMultSights = 0.85 + 0.08
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end

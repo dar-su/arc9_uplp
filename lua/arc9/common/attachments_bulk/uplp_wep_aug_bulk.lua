@@ -321,7 +321,7 @@ local dropsound9 = {
 local stat9 = {
     SpreadAdd = 0.005,
     RPMAdd = -20,
-    RecoilAdd = -0.5,
+    -- RecoilAdd = -0.5,
     DamageMaxAdd = -2,
     DamageMinAdd = -4,
     RangeMaxMult = 0.4,
@@ -340,6 +340,10 @@ local stat9 = {
 	ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl",
 
     HeadshotDamageMult = 0.65,
+	
+    RecoilMult = 0.7,
+    RecoilAutoControlMult = 1.6,
+	SpreadAddRecoil = -0.01,
 }
 
 ATT = {}

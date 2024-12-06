@@ -26,7 +26,6 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1977" ),
 }
 
-
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
@@ -123,19 +122,19 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.01 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
-SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 0.5
+SWEP.VisualRecoilUpHipFire = 0.2
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 2
+SWEP.VisualRecoilPunchHipFire = 0.66
 SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
@@ -198,7 +197,7 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.275, -3, 0.55),
+     Pos = Vector(-2.275, -3, 0.58),
      Ang = Angle(0, 0, 0.0),
      Magnification = 1.15,
      ViewModelFOV = 65,
@@ -1218,3 +1217,25 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
+
+-- Moka's shit
+SWEP.Recoil = 0.33
+SWEP.RecoilAutoControl = 2.5
+SWEP.RecoilAutoControlMultShooting = 0.3
+
+SWEP.RecoilRandomSide = 1.4
+
+SWEP.RecoilMultRecoil = 2
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.02
+
+SWEP.SpreadAddRecoil = 0.04
+SWEP.SpreadAddMove = 0.02
+
+SWEP.RecoilPerShot = 0.125
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

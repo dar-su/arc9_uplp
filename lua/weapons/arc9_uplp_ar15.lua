@@ -1665,8 +1665,8 @@ end
 
 -- Moka's shit
 -- SWEP.Recoil = 1.5
-SWEP.RecoilAutoControl = 1
-SWEP.RecoilAutoControlMultShooting = 0.1
+SWEP.RecoilAutoControl = 1.5
+SWEP.RecoilAutoControlMultShooting = 0.05
 
 SWEP.RecoilMultSights = 0.875
 

@@ -123,18 +123,18 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.6
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.025 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
-SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 4 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 2
+SWEP.VisualRecoilUpHipFire = 1
 SWEP.VisualRecoilSideHipFire = -0.1
-SWEP.VisualRecoilRollHipFire = 20
+SWEP.VisualRecoilRollHipFire = 10
 SWEP.VisualRecoilPunchHipFire = 2
 SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
@@ -815,3 +815,23 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
 }
+
+-- Moka's shit
+SWEP.Recoil = 1
+SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControlMultShooting = 0.2
+
+SWEP.RecoilMultRecoil = 3
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.01
+
+SWEP.SpreadAddRecoil = 0.04
+SWEP.SpreadAddMove = 0.025
+
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2
