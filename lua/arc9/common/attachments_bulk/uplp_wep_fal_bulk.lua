@@ -569,7 +569,7 @@ ATT.Sights = {
 }
 
 ATT.ActivePosHook = function(swep, pos)
-    return pos - Vector(-0.5, -0.5, 0.5)
+    return pos - Vector(-0.5, -2, 1.75)
 end
 
 ATT.RTScope = true

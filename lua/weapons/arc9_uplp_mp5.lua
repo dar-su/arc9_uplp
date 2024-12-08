@@ -133,9 +133,9 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.04 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -938,3 +938,23 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     if loadedronds <= 15 then loadedronds = loadedronds - 0.75 end
     ent:SetPoseParameter("magspring", 1-math.Clamp(loadedronds/30, 0, 1))
 end
+
+-- Moka's shit
+SWEP.Recoil = 1.25
+SWEP.RecoilAutoControl = 2.25
+SWEP.RecoilAutoControlMultShooting = 0.05
+
+SWEP.RecoilMultRecoil = 1.3
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.02
+
+SWEP.SpreadAddRecoil = 0.026
+SWEP.SpreadAddMove = 0.0175
+
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

@@ -73,7 +73,7 @@ SWEP.WorldModelOffset = {
 SWEP.ViewModelFOVBase = 65
 SWEP.ActivePos = Vector(-0.4, -0.1, 0.5)
 
-SWEP.PeekPos = Vector(-1.5, 4, -5.5)
+SWEP.PeekPos = Vector(-1.25, 2.5, -5)
 SWEP.PeekAng = Angle(0, 0.4, -60)
 
 SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
@@ -136,9 +136,9 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.04 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -496,7 +496,7 @@ SWEP.Animations = {
         Source = "reload_empty",
         MinProgress = 0.95,
         PeekProgress = 0.775,
-        RefillProgress = 0.65,
+        RefillProgress = 0.725,
         MagSwapTime = 0.75,
         FireASAP = true,
         EventTable = {
@@ -791,7 +791,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.5, 1),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
-        ExtraSightDistance = 2.5,
+        ExtraSightDistance = 0,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -904,3 +904,23 @@ SWEP.Attachments = {
         CosmeticOnly = true
     },
 }
+
+-- Moka's shit
+SWEP.Recoil = 0.95
+SWEP.RecoilAutoControl = 2.25
+SWEP.RecoilAutoControlMultShooting = 0.05
+
+SWEP.RecoilMultRecoil = 1
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.02
+
+SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddMove = 0.0125
+
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.5

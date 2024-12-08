@@ -184,9 +184,8 @@ ATT.Attachments = {
     },
 }
 
--- Positives
-
--- Negatives
+-- AR15 stocks reduce too much recoil so this is to counterbalance them
+ATT.RecoilAdd = 0.25
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end

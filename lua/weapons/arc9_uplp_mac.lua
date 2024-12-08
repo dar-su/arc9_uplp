@@ -132,7 +132,7 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.04 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
@@ -895,7 +895,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -0.825, 0),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
-        ExtraSightDistance = 3,
+        ExtraSightDistance = 0,
         RequireElements = {"use_optics"},
         RejectAttachments = {
             ["uplp_optic_hhs1"] = true,
@@ -1111,3 +1111,23 @@ SWEP.HookP_NameChange = function(self, name)
     if att["uplp_mac_mac10"] then name = ARC9:GetPhrase("uplp_weapon_mac10") end
     return name
 end
+
+-- Moka's shit
+SWEP.Recoil = 0.6
+SWEP.RecoilAutoControl = 2
+SWEP.RecoilAutoControlMultShooting = 0.05
+
+SWEP.RecoilMultRecoil = 1.75
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.018
+
+SWEP.SpreadAddRecoil = 0.026
+SWEP.SpreadAddMove = 0.0175
+
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

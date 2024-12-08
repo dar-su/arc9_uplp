@@ -25,6 +25,16 @@ ATT.ActivateElements = {"uplp_mac_stock_wire"}
 -- Negatives
 ATT.SprintToFireTimeAdd = 0.03
 
+ATT.CustomPros = {
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+20%",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-0.25",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.sway") )] = "-1",
+}
+
+ATT.CustomCons = {
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+0.03s",
+}
+
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
@@ -32,15 +42,14 @@ ATT.ToggleStats = {
         RecoilAdd = -0.25,
         RecoilAutoControlMult = 1.2,
         SwayAddSights = -1,
+		CustomizePosHook = function(wep, vec) return vec + Vector(-4, 4, 0) end,
+		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_foldedstock"},
     },
 }
-
-ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 4, 0) end
-ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mac_stock_wire")
 
@@ -61,8 +70,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mac_stock_buffer"}
 
 -- AR15 stocks reduce too much recoil so this is to counterbalance them
-ATT.RecoilAdd = 0.3
+ATT.RecoilAdd = 0.85
 ATT.SpreadAddHipFire = 0.01
+ATT.RecoilAutoControlAddShooting = 1
 
 ATT.Attachments = {
     {
