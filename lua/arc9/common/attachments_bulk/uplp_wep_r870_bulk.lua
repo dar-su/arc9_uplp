@@ -44,7 +44,6 @@ ARC9.LoadAttachment(ATT, "uplp_r870_bar_serbu")
 ATT = {}
 
 ATT.PrintName = "uplp_r870_bar_serbu YOU SHOULD NOT SEE THIS"
-ATT.CompactName = "uplp_r870_bar_serbuYOU SHOULD NOT SEE THIS"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "870 3 serbu.png", "mips smooth")

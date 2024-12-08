@@ -132,7 +132,7 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.075 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 5 -- How far back visual recoil moves the gun
@@ -1236,3 +1236,21 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
+
+-- Moka's shit
+SWEP.Recoil = 0.65
+SWEP.RecoilAutoControl = 1.75
+SWEP.RecoilAutoControlMultShooting = 0.1
+
+SWEP.RecoilMultSights = 0.85
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.025
+
+SWEP.SpreadAddRecoil = 0.03
+SWEP.SpreadAddMove = 0.02
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

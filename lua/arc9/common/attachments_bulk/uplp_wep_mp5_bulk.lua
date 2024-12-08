@@ -310,8 +310,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp5_stock_fixed")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp5_mag_50"
-ATT.CompactName = "uplp_mp5_mag_50"
+ATT.PrintName = "50-Round 9x19mm Drum"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "50.png", "mips smooth")
@@ -344,8 +343,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp5_mag_50")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp5_mag_15"
-ATT.CompactName = "uplp_mp5_mag_15"
+ATT.PrintName = "15-Round 9x19mm Magazine"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "15.png", "mips smooth")
@@ -375,8 +373,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp5_mag_15")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp5_mag_10mm"
-ATT.CompactName = "uplp_mp5_mag_10mm"
+ATT.PrintName = "30-Round 10mm Magazine"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "10mm.png", "mips smooth")

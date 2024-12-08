@@ -86,6 +86,16 @@ ATT.RangeMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.ClipSizeMult = 0.33
 
+ATT.ChamberSizeHook = function(wep, vec) -- This is dumb, but it works.
+	local a = wep:GetElements()
+	if a["uplp_ar15_mag_pmag10"] or a["uplp_ar15_mag_stanag40"] then
+		vec = vec
+	else 
+		vec = vec -1
+	end
+	return vec
+end
+
 ATT.Firemodes = {
     { Mode = 1, -- Semi
     -- RPM = 450,
@@ -174,6 +184,16 @@ ATT.RangeMaxMult = 0.6
 ATT.RangeMinMult = 0.25
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.ClipSizeMult = 0.33
+
+ATT.ChamberSizeHook = function(wep, vec) -- This is dumb, but it works.
+	local a = wep:GetElements()
+	if a["uplp_ar15_mag_pmag10"] or a["uplp_ar15_mag_stanag40"] then
+		vec = vec
+	else 
+		vec = vec -1
+	end
+	return vec
+end
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi

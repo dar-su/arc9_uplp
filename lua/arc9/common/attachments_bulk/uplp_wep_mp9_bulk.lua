@@ -8,8 +8,7 @@ local iconfolder = "entities/uplp_attachements/mp9/"
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_stock_def"
-ATT.CompactName = "uplp_mp9_stock_def"
+ATT.PrintName = "Foldable Stock"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
@@ -58,8 +57,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_stock_def")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_stock_full"
-ATT.CompactName = "uplp_mp9_stock_full"
+ATT.PrintName = "Fixed Stock"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stockfull.png", "mips smooth")
@@ -88,8 +86,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_stock_full")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_stock_tac"
-ATT.CompactName = "uplp_mp9_stock_tac"
+ATT.PrintName = "Tactical Stock"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stocktac.png", "mips smooth")
@@ -118,8 +115,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_stock_tac")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_stock_strap"
-ATT.CompactName = "uplp_mp9_stock_strap"
+ATT.PrintName = "Rear Sling"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "strap.png", "mips smooth")
@@ -140,7 +136,6 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_stock_strap")
 ATT = {}
 
 ATT.PrintName = "20-Round Magazine"
-ATT.CompactName = "20R"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "magshort.png", "mips smooth")
@@ -177,7 +172,6 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_mag_20")
 ATT = {}
 
 ATT.PrintName = "42-Round Magazine"
-ATT.CompactName = "42R"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "maglong.png", "mips smooth")
@@ -218,8 +212,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_mag_42")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_grip_rail"
-ATT.CompactName = "uplp_mp9_grip_rail"
+ATT.PrintName = "Bottom Rail as Support"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = -2
 
@@ -251,8 +244,8 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_grip_rail")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_grip_raw"
-ATT.CompactName = "uplp_mp9_grip_raw"
+ATT.PrintName = "Remove Top & Bottom Rails"
+ATT.CompactName = "N/A"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = -1
 
@@ -288,8 +281,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_grip_raw")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_muzzle_sup"
-ATT.CompactName = "uplp_mp9_muzzle_sup"
+ATT.PrintName = "F9 \"Cheetah\" Suppressor"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sup.png", "mips smooth")
@@ -328,8 +320,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_muzzle_sup")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_muzzle_supold"
-ATT.CompactName = "uplp_mp9_muzzle_supold"
+ATT.PrintName = "MP \"Gepard\" Prototype Suppressor"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "supold.png", "mips smooth")
@@ -372,8 +363,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_muzzle_supold")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_muzzle_tacbarrel"
-ATT.CompactName = "uplp_mp9_muzzle_tacbarrel"
+ATT.PrintName = "Extended Barrel and Shroud"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
@@ -425,8 +415,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp9_muzzle_tacbarrel")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp9_skin_white"
-ATT.CompactName = "uplp_mp9_skin_white"
+ATT.PrintName = "Tactical White & Red Skin"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "white.png", "mips smooth")

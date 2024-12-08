@@ -534,8 +534,7 @@ ARC9.LoadAttachment(ATT, "uplp_fal_mag_30u")
 
 ATT = {}
 
-ATT.PrintName = "uplp_fal_scope_suit"
-ATT.CompactName = "uplp_fal_scope_suit"
+ATT.PrintName = "BRP Scope"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "suit.png", "mips smooth")
@@ -596,8 +595,7 @@ ARC9.LoadAttachment(ATT, "uplp_fal_scope_suit")
 
 ATT = {}
 
-ATT.PrintName = "uplp_fal_muz_long"
-ATT.CompactName = "uplp_fal_muz_long"
+ATT.PrintName = "Service Flash Hider"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mz.png", "mips smooth")
@@ -619,8 +617,7 @@ ARC9.LoadAttachment(ATT, "uplp_fal_muz_long")
 
 ATT = {}
 
-ATT.PrintName = "uplp_fal_muz_sniper"
-ATT.CompactName = "uplp_fal_muz_sniper"
+ATT.PrintName = "Sniper Muzzle Brake"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "mzsnip.png", "mips smooth")

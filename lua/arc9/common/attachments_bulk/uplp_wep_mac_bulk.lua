@@ -9,8 +9,7 @@ local defatt = "arc9/def_att_icons/"
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_stock_wire"
-ATT.CompactName = "uplp_mac_stock_wire"
+ATT.PrintName = "Foldable Wire Stock"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
@@ -58,8 +57,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_stock_wire")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_stock_buffer"
-ATT.CompactName = "uplp_mac_stock_buffer"
+ATT.PrintName = "Buffer Tube"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "buffer.png", "mips smooth")
@@ -95,8 +93,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_stock_buffer")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_stock_tac"
-ATT.CompactName = "uplp_mac_stock_tac"
+ATT.PrintName = "Centurion Industries IronWorks Stock"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "stocktac.png", "mips smooth")
@@ -126,14 +123,14 @@ ARC9.LoadAttachment(ATT, "uplp_mac_stock_tac")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_mag_50"
-ATT.CompactName = "uplp_mac_mag_50"
+ATT.PrintName = "50-Round .380 ACP Magazine"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "longmag.png", "mips smooth")
 
 ATT.Category = "uplp_mac_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.SortOrder = -5
 
 ATT.ActivateElements = {"uplp_mac_mag_50"}
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mac11_mag_long.mdl"
@@ -219,8 +216,7 @@ ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0, 8, 2) end
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_mag10_30"
-ATT.CompactName = "uplp_mac_mag10_30"
+ATT.PrintName = "30-Round .45 ACP Magazine"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "45.png", "mips smooth")
@@ -254,8 +250,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_mag10_30")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_mag10_50"
-ATT.CompactName = "uplp_mac_mag10_50"
+ATT.PrintName = "50-Round .45 ACP Drum"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "45drum.png", "mips smooth")
@@ -296,8 +291,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_mag10_50")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_strap"
-ATT.CompactName = "uplp_mac_strap"
+ATT.PrintName = "CMP .380 Front Strap"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = -2
 
@@ -326,8 +320,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_strap")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_strap_cosmetic"
-ATT.CompactName = "uplp_mac_strap_cosmetic"
+ATT.PrintName = "CMP .380 Front Strap (Cosmetic Only)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = -1
 
@@ -347,8 +340,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_strap_cosmetic")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_bar_long"
-ATT.CompactName = "uplp_mac_bar_long"
+ATT.PrintName = "Extended Barrel & Heat Shield"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "heat.png", "mips smooth")
@@ -391,8 +383,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_bar_long")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_muz_supp"
-ATT.CompactName = "uplp_mac_muz_supp"
+ATT.PrintName = "CMP Suppressor"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "sil.png", "mips smooth")
@@ -442,8 +433,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_muz_supp")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_muz_supp_surv"
-ATT.CompactName = "uplp_mac_muz_supp_surv"
+ATT.PrintName = "CMP Suppressor with Flashlight"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "silsurv.png", "mips smooth")
@@ -510,8 +500,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_muz_supp_surv")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_muz_supptac"
-ATT.CompactName = "uplp_mac_muz_supptac"
+ATT.PrintName = "Centurion Industries Suppressor"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "siltac.png", "mips smooth")
@@ -552,8 +541,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_muz_supptac")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_rec_long"
-ATT.CompactName = "uplp_mac_rec_long"
+ATT.PrintName = "Ironclad Arms Receiver"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
@@ -579,8 +567,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_rec_long")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_rec_rail"
-ATT.CompactName = "uplp_mac_rec_rail"
+ATT.PrintName = "RIS Receiver"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "rail.png", "mips smooth")
@@ -599,8 +586,7 @@ ARC9.LoadAttachment(ATT, "uplp_mac_rec_rail")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mac_rec_tac"
-ATT.CompactName = "uplp_mac_rec_tac"
+ATT.PrintName = "SynPoly eXtreme Receiver"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "tacupper.png", "mips smooth")
