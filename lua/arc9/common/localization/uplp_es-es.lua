@@ -1,16 +1,14 @@
 L = {}
 
-local lineb = "\n"
-
 local changeammo = {
-pistol = lineb .. "Cambia el tipo de munición a <color=255,255,100>Munición de pistola</color>.",
-["357"] = lineb .. "Cambia el tipo de munición a <color=255,255,100>Munición Magnum</color>.",
-smg1 = lineb .. "Cambia el tipo de munición a <color=255,255,100>Munición de carabina</color>.",
-ar2 = lineb .. "Cambia el tipo de munición a <color=255,255,100>Munición de rifle</color>.",
-buckshot = lineb .. "Cambia el tipo de munición a <color=255,255,100>Munición de escopeta</color>.",
-sniperpenetratedround = lineb .. "Cambia el tipo de munición a <color=255,255,100>Munición de francotirador</color>.",
-smg1_grenade = lineb .. "Cambia el tipo de munición a <color=255,255,100>Granadas de rifle</color>.",
-xbowbolt = lineb .. "Cambia el tipo de munición a <color=255,255,100>Flechas de ballesta</color>.",
+pistol = "\nCambia el tipo de munición a <color=255,255,100>Munición de pistola</color>.",
+["357"] = "\nCambia el tipo de munición a <color=255,255,100>Munición Magnum</color>.",
+smg1 = "\nCambia el tipo de munición a <color=255,255,100>Munición de carabina</color>.",
+ar2 = "\nCambia el tipo de munición a <color=255,255,100>Munición de rifle</color>.",
+buckshot = "\nCambia el tipo de munición a <color=255,255,100>Munición de escopeta</color>.",
+sniperpenetratedround = "\nCambia el tipo de munición a <color=255,255,100>Munición de francotirador</color>.",
+smg1_grenade = "\nCambia el tipo de munición a <color=255,255,100>Granadas de rifle</color>.",
+xbowbolt = "\nCambia el tipo de munición a <color=255,255,100>Flechas de ballesta</color>.",
 }
 
 //////////////////////////////////////////////////////////////////////

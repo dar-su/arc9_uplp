@@ -1,16 +1,14 @@
 L = {}
 
-local lineb = "\n"
-
 local changeammo = {
-pistol = lineb .. "Changes ammo type to <color=255,255,100>Pistol Ammo</color>.",
-["357"] = lineb .. "Changes ammo type to <color=255,255,100>Magnum Ammo</color>.",
-smg1 = lineb .. "Changes ammo type to <color=255,255,100>Carbine Ammo</color>.",
-ar2 = lineb .. "Changes ammo type to <color=255,255,100>Rifle Ammo</color>.",
-buckshot = lineb .. "Changes ammo type to <color=255,255,100>Shotgun Ammo</color>.",
-sniperpenetratedround = lineb .. "Changes ammo type to <color=255,255,100>Sniper Ammo</color>.",
-smg1_grenade = lineb .. "Changes ammo type to <color=255,255,100>Rifle Grenades</color>.",
-xbowbolt = lineb .. "Changes ammo type to <color=255,255,100>Crossbow Bolts</color>.",
+pistol = "\nChanges ammo type to <color=255,255,100>Pistol Ammo</color>.",
+["357"] = "\nChanges ammo type to <color=255,255,100>Magnum Ammo</color>.",
+smg1 = "\nChanges ammo type to <color=255,255,100>Carbine Ammo</color>.",
+ar2 = "\nChanges ammo type to <color=255,255,100>Rifle Ammo</color>.",
+buckshot = "\nChanges ammo type to <color=255,255,100>Shotgun Ammo</color>.",
+sniperpenetratedround = "\nChanges ammo type to <color=255,255,100>Sniper Ammo</color>.",
+smg1_grenade = "\nChanges ammo type to <color=255,255,100>Rifle Grenades</color>.",
+xbowbolt = "\nChanges ammo type to <color=255,255,100>Crossbow Bolts</color>.",
 }
 
 //////////////////////////////////////////////////////////////////////

@@ -1,16 +1,14 @@
 L = {}
 
-local lineb = "\n"
-
 local changeammo = {
-pistol = lineb .. "Byter patrontyp till <color=255,255,100>Pistol Ammo</color>.",
-["357"] = lineb .. "Byter patrontyp till <color=255,255,100>Magnum Ammo</color>.",
-smg1 = lineb .. "Byter patrontyp till <color=255,255,100>Karbin Ammo</color>.",
-ar2 = lineb .. "Byter patrontyp till <color=255,255,100>Gevärs Ammo</color>.",
-buckshot = lineb .. "Byter patrontyp till <color=255,255,100>Hagelbössa Ammo</color>.",
-sniperpenetratedround = lineb .. "Byter patrontyp till <color=255,255,100>Prickskytt. Ammo</color>.",
-smg1_grenade = lineb .. "Byter patrontyp till <color=255,255,100>Gevärsgranater</color>.",
-xbowbolt = lineb .. "Byter patrontyp till <color=255,255,100>Armborst Bultar</color>.",
+pistol = "\nByter patrontyp till <color=255,255,100>Pistol Ammo</color>.",
+["357"] = "\nByter patrontyp till <color=255,255,100>Magnum Ammo</color>.",
+smg1 = "\nByter patrontyp till <color=255,255,100>Karbin Ammo</color>.",
+ar2 = "\nByter patrontyp till <color=255,255,100>Gevärs Ammo</color>.",
+buckshot = "\nByter patrontyp till <color=255,255,100>Hagelbössa Ammo</color>.",
+sniperpenetratedround = "\nByter patrontyp till <color=255,255,100>Prickskytt. Ammo</color>.",
+smg1_grenade = "\nByter patrontyp till <color=255,255,100>Gevärsgranater</color>.",
+xbowbolt = "\nByter patrontyp till <color=255,255,100>Armborst Bultar</color>.",
 }
 
 //////////////////////////////////////////////////////////////////////
