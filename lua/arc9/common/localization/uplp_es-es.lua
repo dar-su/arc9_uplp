@@ -88,6 +88,7 @@ L["uplp_mechanism_closedbolt"] = "Cerrojo Cerrado"
 L["uplp_mechanism_openbolt"] = "Cerrojo Abierto"
 
 L["uplp_mechanism_singleaction"] = "Acción Simple"
+L["uplp_mechanism_doubleaction"] = "Doble Acción"
 L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
 
 -- Requested by fesiug

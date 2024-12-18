@@ -36,6 +36,8 @@ L["uplp_speedonerd_weapon_629_real"] = "S&W Model 629 Stealth Hunter"
 
 L["uplp_speedonerd_weapon_629_manufacturer"] = "Smith & Wesson"
 
+L["uplp_speedonerd_caliber_44mag"] = ".44 Magnum"
+
 /////////// Attachments
 ////// Barrels
 L["uplp_629_barrel_long.printname"] = "Long Barrel"
@@ -58,6 +60,10 @@ L["uplp_speedonerd_weapon_panzerfaust3_desc"] = "A semi-reusable rocket-propelle
 L["uplp_speedonerd_weapon_panzerfaust3_real"] = "Panzerfaust 3"
 
 L["uplp_speedonerd_weapon_panzerfaust3_manufacturer"] = "Dynamit Nobel AG"
+
+L["uplp_speedonerd_caliber_60mm"] = "60mm Rocket"
+
+L["uplp_speedonerd_mechanism_rocket"] = "Rocket Propulsion"
 
 /////////// Attachments
 ////// Ammo

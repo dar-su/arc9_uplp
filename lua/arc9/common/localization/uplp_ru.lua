@@ -88,6 +88,7 @@ L["uplp_mechanism_closedbolt"] = "Зактрый затвор"
 L["uplp_mechanism_openbolt"] = "Открытый затвор"
 
 L["uplp_mechanism_singleaction"] = "Одинарное действие"
+L["uplp_mechanism_doubleaction"] = "Двойное действие"
 L["uplp_mechanism_doublesingleaction"] = "Двойное действие / Одинарное"
 
 -- Requested by fesiug

@@ -88,6 +88,7 @@ L["uplp_mechanism_closedbolt"] = "Closed bolt"
 L["uplp_mechanism_openbolt"] = "Open bolt"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
+L["uplp_mechanism_doubleaction"] = "Double-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
 
 -- Requested by fesiug
