@@ -7,7 +7,7 @@ local iconfolder = "entities/uplp_attachements/ar18/"
 ---------- uplp_ar18_bar_carbine
 ATT = {}
 
-ATT.PrintName = "uplp_ar18_bar_carbine"
+ATT.PrintName = "10.1\" MAR-63S Carbine Barrel and Handguard"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "car.png", "mips smooth")
@@ -37,7 +37,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar18_bar_carbine")
 ---------- uplp_ar18_bar_pistol
 ATT = {}
 
-ATT.PrintName = "uplp_ar18_bar_pistol"
+ATT.PrintName = "10.1\" MAR-63S Barrel and Handguard"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "pistol.png", "mips smooth")
@@ -102,7 +102,7 @@ ATT.RecoilAutoControlMult = 1.4
 ATT.VisualRecoilMultHipFire = 0.35
 
 -- Buffer Tube stats
-ATT.RecoilAdd = -0.75
+ATT.RecoilAdd = -1
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1 - 0.02
@@ -152,7 +152,7 @@ ATT.RecoilAutoControlMult = 1.4
 ATT.VisualRecoilMultHipFire = 0.35
 
 -- Buffer Tube stats
-ATT.RecoilAdd = -0.75
+ATT.RecoilAdd = -1
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1 - 0.02
