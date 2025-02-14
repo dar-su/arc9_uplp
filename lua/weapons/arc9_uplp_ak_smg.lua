@@ -924,13 +924,12 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         Bone = "body",
         -- Installed = "uplp_ak_grip_vityaz",
-        ExcludeElements = {"uplp_no_pgrip"},
+        ExcludeElements = {"uplp_no_pgrip", "uplp_ak_smg_rec_ppk20"},
         RejectAttachments = {
         ["uplp_ak_grip_std"] = true,
         },
         Pos = Vector(0.045, 5, -1),
         Ang = Angle(90, 90, 180),
-        ExcludeElements = {"uplp_ak_smg_rec_ppk20"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
