@@ -71,6 +71,67 @@ L["uplp_ammo_bunkerbuster.printname"] = "Bunkerfaust Warhead"
 L["uplp_ammo_bunkerbuster.compactname"] = "Bunker"
 L["uplp_ammo_bunkerbuster.description"] = "Smaller warhead designed for anti-personnel use.\nIncreases <color=100,255,100>splash damage</color> at the cost of <color=255,100,100>reduced explosion radius</color>."
 
+//////////////////// M249
+L["uplp_speedonerd_weapon_m249"] = "SAW-46"
+L["uplp_speedonerd_weapon_m249_desc"] = "A popular \"squad automatic weapon\" designed with modularity in mind, allowing it to fit a variety of squad roles.\nWhile it's primarily meant to use ammunition belts, the SAW-46 can also accept AR-15 magazines in a separate magwell."
+
+L["uplp_speedonerd_weapon_m249_real"] = "M249 SAW"
+
+L["uplp_speedonerd_weapon_m249_manufacturer"] = "FN America"
+
+/////////// Attachments
+////// Slots
+L["uplp_category_m249_heatshield"] = "Heat Shield"
+
+////// Mags
+L["uplp_m249_mag_200.printname"] = "180-Round 5.56×45mm Box"
+L["uplp_m249_mag_200.compactname"] = "180R 5.56"
+L["uplp_m249_mag_200.description"] = "Large and bulky <color=100,255,100>200-round</color> box."
+
+L["uplp_m249_mag_30.printname"] = "30-Round 5.56×45mm Magazine"
+L["uplp_m249_mag_30.compactname"] = "30R 5.56"
+L["uplp_m249_mag_30.description"] = "Removes the belt and installs a <color=255,100,100>30-round</color> STANAG magazine, utilizing the SAW-46's magwell."
+
+L["uplp_m249_mag_60.printname"] = "60-Round 5.56×45mm Magazine"
+L["uplp_m249_mag_60.compactname"] = "60R 5.56"
+L["uplp_m249_mag_60.description"] = "Removes the belt and installs a <color=255,100,100>60-round</color> STANAG magazine, utilizing the SAW-46's magwell."
+
+////// Barrels
+L["uplp_m249_brl_saw.printname"] = "380mm SAW Barrel"
+L["uplp_m249_brl_saw.compactname"] = "SAW"
+L["uplp_m249_brl_saw.description"] = "380mm (15\") SAW barrel for the SAW-46.\nComes with a bottom and side rail to install grips and lasers."
+
+L["uplp_m249_brl_para.printname"] = "254mm Paratrooper Barrel"
+L["uplp_m249_brl_para.compactname"] = "Para"
+L["uplp_m249_brl_para.description"] = "254mm (10\") Paratrooper barrel for the SAW-46.\nRemoves the carrying handle."
+
+L["uplp_m249_brl_commando.printname"] = "279mm Commando Barrel"
+L["uplp_m249_brl_commando.compactname"] = "Com."
+L["uplp_m249_brl_commando.description"] = "279mm (11\") Commando barrel for the SAW-46.\nComes with a built-in foregrip, side rails for lasers, and cut-off rear iron sights. Additionally, the carrying handle is removed."
+
+////// Barrels
+L["uplp_m249_stock_std.printname"] = "Solid SAW-46 Stock"
+L["uplp_m249_stock_std.compactname"] = "Solid"
+L["uplp_m249_stock_std.description"] = "A solid, standard issue stock that comes with every SAW-46."
+
+L["uplp_m249_stock_buffer.printname"] = "Buffer Tube"
+L["uplp_m249_stock_buffer.compactname"] = "Buffer"
+L["uplp_m249_stock_buffer.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
+
+////// Heat Shield
+L["uplp_m249_hs_std.printname"] = "Standard Heat Shield"
+L["uplp_m249_hs_std.compactname"] = "Standard"
+L["uplp_m249_hs_std.description"] = "Standard heat shield from the factory."
+
+L["uplp_m249_hs_mod.printname"] = "Navy Mod Heat Shield"
+L["uplp_m249_hs_mod.compactname"] = "Navy"
+L["uplp_m249_hs_mod.description"] = "Modern heat shield with built-in RIS rails."
+
+////// Bipod
+L["uplp_m249_bipod.printname"] = "SAW-46 Bipod"
+L["uplp_m249_bipod.compactname"] = "Bipod"
+L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
+
 ///////////////////////////// Vintage Collection by Don Hektor --Has respectfully declined having these. Included in _en file for possible re-introduction later.
 //////////////////// Universal
 /////////// Attachments

@@ -70,3 +70,64 @@ L["uplp_speedonerd_mechanism_rocket"] = "Raketdriven"
 L["uplp_ammo_bunkerbuster.printname"] = "\"Bunkerfaust\"-Granat"
 L["uplp_ammo_bunkerbuster.compactname"] = "Bunker"
 L["uplp_ammo_bunkerbuster.description"] = "Mindre granat designad för antipersonnell användning.\nÖkar <color=100,255,100>plaskskadan</color> med kostnad på <color=255,100,100>sänkt explosiv radie</color>."
+
+//////////////////// M249
+L["uplp_speedonerd_weapon_m249"] = "SAW-46"
+L["uplp_speedonerd_weapon_m249_desc"] = "Ett populärt \"squad automatic weapon\" som designads främst för moduläritet, vilket tillåter den att fungera i flertal olika infanteriroller.\nDess primära användning är med band, men SAW-46:an kan också använda AR-15-magasin i en separat magasinbrunn."
+
+L["uplp_speedonerd_weapon_m249_real"] = "M249 SAW"
+
+L["uplp_speedonerd_weapon_m249_manufacturer"] = "FN America"
+
+/////////// Attachments
+////// Slots
+L["uplp_category_m249_heatshield"] = "Värmesköld"
+
+////// Mags
+L["uplp_m249_mag_200.printname"] = "180-Patroners 5,56 × 45 mm Låda"
+L["uplp_m249_mag_200.compactname"] = "180P 5,56"
+L["uplp_m249_mag_200.description"] = "Stor och tung <color=100,255,100>200-patronerslåda</color>."
+
+L["uplp_m249_mag_30.printname"] = "30-Patronersmagasin, 5,56 × 45 mm"
+L["uplp_m249_mag_30.compactname"] = "30P 5,56"
+L["uplp_m249_mag_30.description"] = "Tar bort bandet och sätter dit ett <color=255,100,100>30-patroners</color> STANAG-magasin som utnyttjar magasinbrunnen på SAW-46:an."
+
+L["uplp_m249_mag_60.printname"] = "60-Patronersmagasin, 5,56 × 45 mm"
+L["uplp_m249_mag_60.compactname"] = "60P 5,56"
+L["uplp_m249_mag_60.description"] = "Tar bort bandet och sätter dit ett <color=255,100,100>60-patroners</color> STANAG-magasin som utnyttjar magasinbrunnen på SAW-46:an."
+
+////// Barrels
+L["uplp_m249_brl_saw.printname"] = "380mm SAW-Pipa"
+L["uplp_m249_brl_saw.compactname"] = "SAW"
+L["uplp_m249_brl_saw.description"] = "380mm SAW-pipa till SAW-46:an.\nKommer med under- och sidomonterade skenor för att utrusta grepp och lasrar."
+
+L["uplp_m249_brl_para.printname"] = "254mm Fallskärmsjägare Pipa"
+L["uplp_m249_brl_para.compactname"] = "Fall."
+L["uplp_m249_brl_para.description"] = "254mm Fallskärmsjägare pipa till SAW-46:an.\nTar bort bärhandtaget."
+
+L["uplp_m249_brl_commando.printname"] = "279mm Kommando Pipa"
+L["uplp_m249_brl_commando.compactname"] = "Kom."
+L["uplp_m249_brl_commando.description"] = "279mm Kommando pipa till SAW-46:an.\nKommer med ett inbyggt framgrepp, sidoskenor till lasrar, och avsågat bakre sikte. Bärhandtaget har också tagits bort."
+
+////// Barrels
+L["uplp_m249_stock_std.printname"] = "Fast SAW-46-Kolv"
+L["uplp_m249_stock_std.compactname"] = "Fast"
+L["uplp_m249_stock_std.description"] = "En fast, standard kolv som kommer med varje SAW-46."
+
+L["uplp_m249_stock_buffer.printname"] = "Bufferrör"
+L["uplp_m249_stock_buffer.compactname"] = "Buffer"
+L["uplp_m249_stock_buffer.description"] = "Ersätter kolven med ett bufferrör som stödjer AR-15-kolvar."
+
+////// Heat Shield
+L["uplp_m249_hs_std.printname"] = "Standard Värmesköld"
+L["uplp_m249_hs_std.compactname"] = "Standard"
+L["uplp_m249_hs_std.description"] = "Standard värmesköld från fabriken."
+
+L["uplp_m249_hs_mod.printname"] = "\"Navy Mod\"-Värmesköld"
+L["uplp_m249_hs_mod.compactname"] = "Navy"
+L["uplp_m249_hs_mod.description"] = "Modernt värmesköld med inbyggda RIS-skenor."
+
+////// Bipod
+L["uplp_m249_bipod.printname"] = "SAW-46 Benstöd"
+L["uplp_m249_bipod.compactname"] = "Benstöd"
+L["uplp_m249_bipod.description"] = "Standard benstöd till SAW-46:an."
