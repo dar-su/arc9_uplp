@@ -715,7 +715,7 @@ ATT.CompactName = "PPK-20"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "ppk1.png", "mips smooth")
-ATT.Category = "uplp_ak_stock_smg"
+ATT.Category = {"uplp_ak_stock_smg", "uplp_ak_stock_12"}
 -- ATT.Category = "uplp_ak_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 2

@@ -114,7 +114,7 @@ function ENT:Detonate()
         self:EmitSound("weapons/underwater_explode3.wav", 100)
     else
         ParticleEffect("grenade_flash", self:GetPos(), Angle(0, 0, 0), nil)
-        self:EmitSound("weapons/flashbang/flashbang_explode1.wav", 100)
+        self:EmitSound(")^weapons/flashbang/flashbang_explode1.wav", 100)
     end
 	
     util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 256, 1)
