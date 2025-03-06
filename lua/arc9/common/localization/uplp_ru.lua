@@ -2231,7 +2231,7 @@ L["uplp_weapon_asval_sr3"] = "МК \"Молния\""
  -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
 L["uplp_weapon_asval_sr3s"] = "МК \"Гром\""
 
-L["uplp_weapon_asval_real"] = "АС \"Вал\" / ВСС \"Винторез\""
+L["uplp_weapon_asval_real"] = "АС \"Вал\" | ВСС \"Винторез\""
 
 L["uplp_weapon_asval_manufacturer"] = "Императорский Тульский оружейный завод"
 

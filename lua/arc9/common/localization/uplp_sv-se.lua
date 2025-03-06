@@ -2229,7 +2229,7 @@ L["uplp_weapon_asval_sr3"] = "MK Lightning"
  -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
 L["uplp_weapon_asval_sr3s"] = "MK Thunder"
 
-L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
+L["uplp_weapon_asval_real"] = "AS Val | VSS Vintorez"
 
 L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 

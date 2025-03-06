@@ -2229,7 +2229,7 @@ L["uplp_weapon_asval_sr3"] = "MK Lightning"
  -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
 L["uplp_weapon_asval_sr3s"] = "MK Thunder"
 
-L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
+L["uplp_weapon_asval_real"] = "AS Val | VSS Vintorez"
 
 L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
@@ -2957,16 +2957,42 @@ L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
 L["uplp_mp9_skin_white.compactname"] = "W&R"
 L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."
 
-//////////////////// PKP
-L["uplp_weapon_pkp"] = "Pulemyot 7.62mm"
-L["uplp_weapon_pkp_desc"] = "The Russian Pulemyot 7.62mm is a high-caliber, general-purpose machine gun firing the very powerful 7.62x54mmR cartridge. Its insane damage output makes it a fearsome monster in combat."
+//////////////////// PKM
+L["uplp_weapon_pkm"] = "PS 7.62"
+L["uplp_weapon_pkm_desc"] = "The Russian Pulemyot Sokolov 7.62mm is a high-caliber, general-purpose machine gun firing the very powerful 7.62x54mmR cartridge. Its insane damage output makes it a fearsome monster in combat."
 
-L["uplp_weapon_pkp_real"] = "PKP Pecheneg"
+L["uplp_weapon_pkm_pkp"] = "PS-M 7.62" -- "Modern"
+L["uplp_weapon_pkm_bp"] = "PS-BP 7.62" -- "Bullpup"
 
-L["uplp_weapon_pkp_manufacturer"] = "TsNIITochMash"
+L["uplp_weapon_pkm_real"] = "PKM | PKP Pecheneg"
+
+L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
 
 /////////// Attachments
+////// Barrels
+L["uplp_pkm_brl_aek999.printname"] = "\"Komar\" Barrel"
+L["uplp_pkm_brl_aek999.compactname"] = "Komar"
+L["uplp_pkm_brl_aek999.description"] = "Medium weight barrel for the PS 7.62 with <color=100,255,100>integral suppressor</color>."
+
+L["uplp_pkm_brl_pkp.printname"] = "\"PS-M\" Barrel"
+L["uplp_pkm_brl_pkp.compactname"] = "PS-M"
+L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PS-M 7.62."
+
+////// Furniture
+L["uplp_pkm_furn_poly.printname"] = "Polymer Furniture"
+L["uplp_pkm_furn_poly.compactname"] = "Polymer"
+L["uplp_pkm_furn_poly.description"] = "Replaces the wooden furniture with polymer ones.\nPurely <color=150,150,255>cosmetic</color>."
+
+L["uplp_pkm_furn_zenit.printname"] = "Zenith Furniture"
+L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
+L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
+
 ////// Receiver
-L["uplp_pkp_rec_bullpup.printname"] = "Bullpup Conversion Kit"
-L["uplp_pkp_rec_bullpup.compactname"] = "Bullpup"
-L["uplp_pkp_rec_bullpup.description"] = "Converts the Pulemyot 7.62mm into a bullpup, improving maneuverability at the cost of handling."
+L["uplp_pkm_rec_bullpup.printname"] = "Bullpup Conversion Kit"
+L["uplp_pkm_rec_bullpup.compactname"] = "Bullpup"
+L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling."
+
+////// Misc.
+L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
+L["uplp_pkm_bipod.compactname"] = "Bipod"
+L["uplp_pkm_bipod.description"] = "Equips the standard-issue bipod.\nNot compatible with <color=255,100,100>foregrips</color>."
