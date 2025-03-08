@@ -34,11 +34,11 @@ $bodygroup "hg" { // 6
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0.00 0.00 3.50 rotate -90 -0 0
-$attachment "2" "body" 0 0 -1.5 rotate -10 140 180
+$attachment "1" "barrel" 0.00 0.00 0 rotate -90 -0 0
+$attachment "2" "body" 0.00 -0.40 -2.80 rotate -0 -10 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
-$attachment "5" "barrel" 0.00 0.00 -3.50 rotate -90 -0 0
+$attachment "5" "barrel" 0.00 0.00 -7.2 rotate -90 -0 0
 
 $surfaceprop "default"
  
@@ -54,20 +54,59 @@ $poseparameter "sights" 0 1 loop 0
 
 $sequence "idle"{
 	"anims\idle.smd" 
+	"anims\idle_ads.smd"
 	fps 30
+ 	blend "sights" 0 1
+	loop
+	fadein 0
+	fadeout 0.2
+}
+
+$sequence "idle2"{
+	"anims\idle2.smd" 
+	fps 30
+	loop
+}
+
+$sequence "zerolinks_pose" {
+	"anims\idle_zerolink.smd"
+	// blendwidth 2
+	delta
+	loop
+	fps 30
+	snap
+	subtract "idle2" 0
+}
+
+$sequence "idle_zl"{
+	"anims\idle.smd" 
+	"anims\idle_ads.smd"
+	fps 30
+ 	blend "sights" 0 1
+	addlayer "zerolinks_pose" 
 	loop
 	fadein 0
 	fadeout 0.2
 }
 
 $sequence "fire" {
-	"anims\fire.smd"
-	"anims\fire_ads.smd"
+	"anims\fire2.smd"
+	"anims\fire2_ads.smd"
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
-	fadein 0.02
-	fadeout 0.08
+	fadein 0
+	fadeout 0.15
+}
+$sequence "fire_zl" {
+	"anims\fire2.smd"
+	"anims\fire2_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	addlayer "zerolinks_pose" 
+	fadein 0
+	fadeout 0.15
 }
 
 $sequence "ready" {
@@ -86,14 +125,36 @@ $sequence "holster" {
 	fps 30
 	"ACT_VM_DRAW" 1
 }
+$sequence "draw_zl" {
+	"anims\draw2.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+	"ACT_VM_DRAW" 1
+}
+$sequence "holster_zl" {
+	"anims\holster.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+	"ACT_VM_DRAW" 1
+}
 
 $sequence "modeswitch" {
 	"anims\switch.smd"
 	fps 30
 }
+$sequence "modeswitch_zl" {
+	"anims\switch.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+}
 
 $sequence "reload" {
 	"anims\relaod.smd"
+	fps 30
+	"ACT_VM_RELOAD" 1
+}
+$sequence "reload_zl" {
+	"anims\relaod_zerolink.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
 }
@@ -108,12 +169,29 @@ $sequence "inspect" {
 	"anims\inspect.smd"
 	fps 30
 }
+$sequence "inspect_zl" {
+	"anims\inspect.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+}
 
 
 
 
 $sequence "idle_bp"{
 	"anims\idle_bp.smd" 
+	"anims\idle_bp_ads.smd" 
+ 	blend "sights" 0 1
+	fps 30
+	loop
+	fadein 0
+	fadeout 0.2
+}
+$sequence "idle_zl_bp"{
+	"anims\idle_bp.smd" 
+	"anims\idle_bp_ads.smd" 
+ 	blend "sights" 0 1
+	addlayer "zerolinks_pose" 
 	fps 30
 	loop
 	fadein 0
@@ -121,11 +199,21 @@ $sequence "idle_bp"{
 }
 
 $sequence "fire_bp" {
-	"anims\fire_bp.smd"
-	"anims\fire_bp_ads.smd"
+	"anims\fire2_bp.smd"
+	"anims\fire_bp2_ads.smd"
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.08
+}
+$sequence "fire_zl_bp" {
+	"anims\fire2_bp.smd"
+	"anims\fire_bp2_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	addlayer "zerolinks_pose" 
 	fadein 0.02
 	fadeout 0.08
 }
@@ -146,14 +234,36 @@ $sequence "holster_bp" {
 	fps 30
 	"ACT_VM_DRAW" 1
 }
+$sequence "draw_zl_bp" {
+	"anims\draw2_bp.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+	"ACT_VM_DRAW" 1
+}
+$sequence "holster_zl_bp" {
+	"anims\holster_bp.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+	"ACT_VM_DRAW" 1
+}
 
 $sequence "modeswitch_bp" {
 	"anims\switch_bp.smd"
 	fps 30
 }
+$sequence "modeswitch_zl_bp" {
+	"anims\switch_bp.smd"
+	addlayer "zerolinks_pose" 
+	fps 30
+}
 
 $sequence "reload_bp" {
 	"anims\relaod_bp.smd"
+	fps 30
+	"ACT_VM_RELOAD" 1
+}
+$sequence "reload_zl_bp" {
+	"anims\relaod_bp_zerolink.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
 }
@@ -166,6 +276,11 @@ $sequence "reload_empty_bp" {
 
 $sequence "inspect_bp" {
 	"anims\inspect_bp.smd"
+	fps 30
+}
+$sequence "inspect_zl_bp" {
+	"anims\inspect_bp.smd"
+	addlayer "zerolinks_pose" 
 	fps 30
 }
 

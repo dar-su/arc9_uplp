@@ -8,10 +8,10 @@ $bodygroup "body"
 }
 
 $sequence "idle" {
-	"dropbelt_col.smd"
+	"dropmag_col.smd"
 }
 
-$collisionmodel "dropbelt_col.smd"
+$collisionmodel "dropmag_col.smd"
 {
 	$mass 20
 }

@@ -158,6 +158,7 @@ L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_sticker"] = "Sticker"
 L["uplp_category_stock"] = "Stock"
 L["uplp_category_tactical"] = "Tactical"
+L["uplp_category_furniture"] = "Furniture"
 
 //////////////////// Sticker Category Names
 -- These are intended for stickers placed on certain slots, such as stocks or magazines.

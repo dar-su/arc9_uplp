@@ -11,7 +11,7 @@ ATT.PrintName = "\"Komar\" Barrel"
 ATT.CompactName = "Komar"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "aek.png", "mips smooth")
 
 ATT.ActivateElements = {"uplp_no_tactical"}
 
@@ -44,7 +44,7 @@ ATT.PrintName = "\"PS-M\" Barrel"
 ATT.CompactName = "PS-M"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "pkp.png", "mips smooth")
 
 ATT.Category = "uplp_pkm_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -64,7 +64,7 @@ ATT.PrintName = "Polymer Furniture"
 ATT.CompactName = "Polymer"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "black.png", "mips smooth")
 
 ATT.Category = "uplp_pkm_furniture"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -79,7 +79,9 @@ ATT.PrintName = "Zenith Furniture"
 ATT.CompactName = "Zenith"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "zenit.png", "mips smooth")
+
+-- make this one have some stats plz
 
 ATT.Category = "uplp_pkm_furniture"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -95,9 +97,30 @@ ATT.PrintName = "PS-BP 7.62 Conversion Kit"
 ATT.CompactName = "PS-BP"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "bullpup.png", "mips smooth")
 
 ATT.Category = "uplp_pkm_receiver"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Hook_TranslateSource = function(wep, anim)
+    return anim .. "_bp"
+end
+
 ARC9.LoadAttachment(ATT, "uplp_pkm_rec_bullpup")
+
+---------- uplp_pkm_bipod_bipod
+
+ATT = {}
+
+ATT.PrintName = "Bipod"
+ATT.CompactName = "Bipod"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "bipod.png", "mips smooth")
+
+ATT.Bipod = true
+
+ATT.Category = "uplp_pkm_bipod"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_pkm_bipod_bipod")
