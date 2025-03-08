@@ -96,6 +96,7 @@ L["uplp_mechanism_shortrecoil"] = "Short-recoil"
 L["uplp_mechanism_longrecoil"] = "Long-recoil"
 L["uplp_mechanism_browning"] = "Browning action"
 L["uplp_mechanism_shortstroke"] = "Short-stroke piston"
+L["uplp_mechanism_longstroke"] = "Long-stroke piston"
 
 /////////// Authors
 L["uplp_assets"] = "Original Assets1"
@@ -2970,9 +2971,9 @@ L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_pkm_brl_aek999.printname"] = "\"Komar\" Barrel"
-L["uplp_pkm_brl_aek999.compactname"] = "Komar"
-L["uplp_pkm_brl_aek999.description"] = "Medium weight barrel for the PS 7.62 with <color=100,255,100>integral suppressor</color>."
+L["uplp_pkm_brl_aek.printname"] = "\"Komar\" Barrel"
+L["uplp_pkm_brl_aek.compactname"] = "Komar"
+L["uplp_pkm_brl_aek.description"] = "Medium weight barrel for the PS 7.62 with a <color=100,255,100>large, pre-installed suppressor</color>."
 
 L["uplp_pkm_brl_pkp.printname"] = "\"PS-M\" Barrel"
 L["uplp_pkm_brl_pkp.compactname"] = "PS-M"
@@ -2988,11 +2989,15 @@ L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
 L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
 
 ////// Receiver
-L["uplp_pkm_rec_bullpup.printname"] = "Bullpup Conversion Kit"
-L["uplp_pkm_rec_bullpup.compactname"] = "Bullpup"
-L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling."
+L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
+L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
+L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=255,100,100>Zenith 45-Degree Grip</color>."
 
 ////// Misc.
-L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
-L["uplp_pkm_bipod.compactname"] = "Bipod"
-L["uplp_pkm_bipod.description"] = "Equips the standard-issue bipod.\nNot compatible with <color=255,100,100>foregrips</color>."
+-- L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
+-- L["uplp_pkm_bipod.compactname"] = "Bipod"
+-- L["uplp_pkm_bipod.description"] = "Equips the standard-issue bipod.\nNot compatible with <color=255,100,100>foregrips</color>."
+
+L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
+L["uplp_pkm_taccover.compactname"] = "Top C."
+L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the RIS rail.\nPurely <color=150,150,255>cosmetic</color>."
