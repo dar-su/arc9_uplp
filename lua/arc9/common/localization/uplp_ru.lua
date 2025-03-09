@@ -80,12 +80,15 @@ L["uplp_mechanism_singleaction"] = "Одинарное действие"
 L["uplp_mechanism_doubleaction"] = "Двойное действие"
 L["uplp_mechanism_doublesingleaction"] = "Двойное действие / Одинарное"
 
+L["uplp_mechanism_gasoperated_shortstroke"] = "Газоотвод с коротким ходом поршня"
+L["uplp_mechanism_gasoperated_longstroke"] = "Газоотвод с длинным ходом поршня"
+
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Короткий ход ствола"
 L["uplp_mechanism_longrecoil"] = "Длинный ход ствола"
 L["uplp_mechanism_browning"] = "Действие Браунинга"
-L["uplp_mechanism_shortstroke"] = "Отвод пороховых газов" -- Hmm?
-L["uplp_mechanism_longstroke"] = "Отвод пороховых газов" -- Hmm?
+L["uplp_mechanism_shortstroke"] = "Отвод пороховых газов"
+L["uplp_mechanism_longstroke"] = "Отвод пороховых газов"
 
 /////////// Authors
 L["uplp_assets"] = "Оригинальные ассеты1"

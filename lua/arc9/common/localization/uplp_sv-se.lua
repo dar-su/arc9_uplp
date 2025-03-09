@@ -80,6 +80,9 @@ L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doubleaction"] = "Double-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
 
+L["uplp_mechanism_gasoperated_shortstroke"] = "Kort gaslås"
+L["uplp_mechanism_gasoperated_longstroke"] = "Långt gaslås"
+
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
 L["uplp_mechanism_longrecoil"] = "Lång piprekyl"

@@ -19,9 +19,8 @@ SWEP.Trivia = {
 
 	[ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
 	[ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x54mmr"),
-	[ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_3" ),
-																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-																		ARC9:GetPhrase( "uplp_mechanism_longstroke" ),
+	[ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
+																		ARC9:GetPhrase( "uplp_mechanism_gasoperated_shortstroke" ),
 																		ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
 	[ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
 	[ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
@@ -926,19 +925,4 @@ end
 SWEP.DropMagazineSoundsHook = function(swep, old)
     if swep:GetReloading() then return swep.DropMagazineSoundsReal end
     return old
-end
-
-if GetConVar("gmod_language"):GetString() == "ru" then 
--- Exclusively done to have two "Mechanism" strings instead of 3 in RU only.
-	SWEP.Trivia = {
-		[ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_pkm_real"),
-
-		[ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
-		[ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x54mmr"),
-		[ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
-																			ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-																			ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
-		[ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
-		[ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
-	}
 end

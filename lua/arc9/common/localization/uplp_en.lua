@@ -80,6 +80,9 @@ L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doubleaction"] = "Double-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
 
+L["uplp_mechanism_gasoperated_shortstroke"] = "Short-stroke gas system"
+L["uplp_mechanism_gasoperated_longstroke"] = "Long-stroke gas system"
+
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Short-recoil"
 L["uplp_mechanism_longrecoil"] = "Long-recoil"

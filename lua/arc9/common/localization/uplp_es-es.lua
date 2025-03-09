@@ -80,6 +80,9 @@ L["uplp_mechanism_singleaction"] = "Acción Simple"
 L["uplp_mechanism_doubleaction"] = "Doble Acción"
 L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
 
+-- L["uplp_mechanism_gasoperated_shortstroke"] = "Gas-operated with short-stroke piston"
+-- L["uplp_mechanism_gasoperated_longstroke"] = "Gas-operated with long-stroke piston"
+
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
 L["uplp_mechanism_longrecoil"] = "Retroceso largo"
