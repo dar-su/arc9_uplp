@@ -86,7 +86,7 @@ L["uplp_category_m249_heatshield"] = "Värmesköld"
 ////// Mags
 L["uplp_m249_mag_200.printname"] = "180-Patroners 5,56 × 45 mm Låda"
 L["uplp_m249_mag_200.compactname"] = "180P 5,56"
-L["uplp_m249_mag_200.description"] = "Stor och tung <color=100,255,100>200-patronerslåda</color>."
+L["uplp_m249_mag_200.description"] = "Stor och tung <color=100,255,100>180-patronerslåda</color>."
 
 L["uplp_m249_mag_30.printname"] = "30-Patronersmagasin, 5,56 × 45 mm"
 L["uplp_m249_mag_30.compactname"] = "30P 5,56"

@@ -86,7 +86,7 @@ L["uplp_category_m249_heatshield"] = "Heat Shield"
 ////// Mags
 L["uplp_m249_mag_200.printname"] = "180-Round 5.56×45mm Box"
 L["uplp_m249_mag_200.compactname"] = "180R 5.56"
-L["uplp_m249_mag_200.description"] = "Large and bulky <color=100,255,100>200-round</color> box."
+L["uplp_m249_mag_200.description"] = "Large and bulky <color=100,255,100>180-round</color> box."
 
 L["uplp_m249_mag_30.printname"] = "30-Round 5.56×45mm Magazine"
 L["uplp_m249_mag_30.compactname"] = "30R 5.56"
@@ -135,10 +135,43 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 ///////////////////////////// Vintage Collection by Don Hektor --Has respectfully declined having these. Included in _en file for possible re-introduction later.
 //////////////////// Universal
 /////////// Attachments
+////// Ammo
+-- L["uplp_vintage_ammo_ap.printname"] = "Armor Piercing Ammo"
+-- L["uplp_vintage_ammo_ap.compactname"] = "AP"
+-- L["uplp_vintage_ammo_ap.description"] = "Modified ammunition with higher chance to pierce body armor."
+
+-- L["uplp_vintage_ammo_hp.printname"] = "Hollow Point Ammo"
+-- L["uplp_vintage_ammo_hp.compactname"] = "HP"
+-- L["uplp_vintage_ammo_hp.description"] = "Modified ammunition with increased damage, but reduced range and penetration."
+
+-- L["uplp_vintage_ammo_match.printname"] = "Match Ammo"
+-- L["uplp_vintage_ammo_match.compactname"] = "Match"
+-- L["uplp_vintage_ammo_match.description"] = "Modified ammunition that improve muzzle velocity and spread, but reduces damage."
+
+-- L["uplp_vintage_ammo_subsonic.printname"] = "Subsonic Ammo"
+-- L["uplp_vintage_ammo_subsonic.compactname"] = "Subsonic"
+-- L["uplp_vintage_ammo_subsonic.description"] = "Modified ammunition intended for suppressed firearms."
+
+-- L["uplp_vintage_ammo_i.printname"] = "Incendiary Ammo"
+-- L["uplp_vintage_ammo_i.compactname"] = "Inc."
+-- L["uplp_vintage_ammo_i.description"] = "Modified ammunition that has a chance to light targets on fire."
+
+-- L["uplp_vintage_ammo_duplex.printname"] = "Duplex Ammo"
+-- L["uplp_vintage_ammo_duplex.compactname"] = "Duplex"
+-- L["uplp_vintage_ammo_duplex.description"] = "Modified ammunition with two split projectiles."
+
+-- L["uplp_vintage_ammo_he.printname"] = "Explosive Ammo"
+-- L["uplp_vintage_ammo_he.compactname"] = "H.E."
+-- L["uplp_vintage_ammo_he.description"] = "Modified ammunition that explode on impact."
+
 ////// Optics
 -- L["uplp_vintage_optic_1x_projector.printname"] = "Projector Reflector Sight"
 -- L["uplp_vintage_optic_1x_projector.compactname"] = "Projector"
 -- L["uplp_vintage_optic_1x_projector.description"] = "Modified optical sight meant for machine guns mounted on fighting aircraft." .. desc_cqcoptic
+
+-- L["uplp_vintage_optic_1x_aircraft.printname"] = "Mark III Reflector Sight"
+-- L["uplp_vintage_optic_1x_aircraft.compactname"] = "Mark III"
+-- L["uplp_vintage_optic_1x_aircraft.description"] = "British optical sight used on naval guns and as pilot sights in aircraft." .. desc_cqcoptic
 
 -- L["uplp_vintage_optic_sharps_small.printname"] = "2.2x Vermin Telescopic Sight"
 -- L["uplp_vintage_optic_sharps_small.compactname"] = "Vermin"
@@ -146,11 +179,12 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 
 -- L["uplp_vintage_optic_glasvisier.printname"] = "2.75x Glaser Grabenteleskop Scope"
 -- L["uplp_vintage_optic_glasvisier.compactname"] = "Glaser"
--- L["uplp_vintage_optic_glasvisier.description"] = ARC9:GetPhrase("uplp_vintage_optic_sharps_small.description") or ("Magnified scope with low magnification." .. desc_cqcoptic)
 
 -- L["uplp_vintage_optic_hiLux.printname"] = "Reflector Sight"
 -- L["uplp_vintage_optic_hiLux.compactname"] = "Reflector"
--- L["uplp_vintage_optic_hiLux.description"] = ARC9:GetPhrase("uplp_vintage_optic_1x_projector.description") or ("Modified optical sight meant for machine guns mounted on fighting aircraft." .. desc_cqcoptic)
+
+-- L["uplp_vintage_optic_hunting.printname"] = "3x Jäger Telescopic Sight"
+-- L["uplp_vintage_optic_hunting.compactname"] = "Jäger"
 
 -- L["uplp_vintage_optic_musket.printname"] = "3.4x Musket Telescopic Sight"
 -- L["uplp_vintage_optic_musket.compactname"] = "Musket"
@@ -160,15 +194,55 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 -- L["uplp_vintage_optic_sharps.compactname"] = "Buffalo"
 -- L["uplp_vintage_optic_sharps.description"] = "Magnified scope with high magnification." .. desc_midoptic
 
+-- L["uplp_vintage_optic_mg08.printname"] = "4x Visier-08 Scope"
+-- L["uplp_vintage_optic_mg08.compactname"] = "Visier-08"
+
+-- L["uplp_vintage_optic_box.printname"] = "6x Longthorn Telescopic Sight"
+-- L["uplp_vintage_optic_box.compactname"] = "Longhorn"
+
+-- L["uplp_vintage_optic_long.printname"] = "9x Reacher Long Scope"
+-- L["uplp_vintage_optic_long.compactname"] = "Reacher"
+-- L["uplp_vintage_optic_long.description"] = "Magnified scope with high magnification and built-in backup sights." .. desc_bigoptic
+
 ////// Muzzles
--- L["uplp_vintage_muzzle_12g_thompsen.printname"] = "Kraut Control Muzzle Break"
+-- Shotguns
+-- L["uplp_vintage_muzzle_12g_thompsen.printname"] = "Kraut Control Muzzle Brake"
 -- L["uplp_vintage_muzzle_12g_thompsen.compactname"] = "Kraut MB"
--- L["uplp_vintage_muzzle_12g_thompsen.description"] = "Small muzzle brake that sends gases upwards for reduced vertical recoil."
+-- L["uplp_vintage_muzzle_12g_thompsen.description"] = "Small muzzle brake retro-fitted for use on vintage shotguns."
+
+-- L["uplp_vintage_muzzle_12g_monitor.printname"] = "Administrator Compensator"
+-- L["uplp_vintage_muzzle_12g_monitor.compactname"] = "Admin C"
+-- L["uplp_vintage_muzzle_12g_monitor.description"] = "Large muzzle device retro-fitted for use on vintage shotguns."
+
+-- L["uplp_vintage_muzzle_12g_ptrd.printname"] = "Vzryvy Compensator"
+-- L["uplp_vintage_muzzle_12g_ptrd.compactname"] = "Vzryvy C"
+-- L["uplp_vintage_muzzle_12g_ptrd.description"] = "Downsized Soviet compensator retro-fitted for use on vintage shotguns."
+
+-- L["uplp_vintage_muzzle_12g_lathi.printname"] = "Isku Compensator"
+-- L["uplp_vintage_muzzle_12g_lathi.compactname"] = "Isku C"
+-- L["uplp_vintage_muzzle_12g_lathi.description"] = "Finnish anti-tank muzzle brake retro-fitted for use on vintage shotguns."
+
+-- L["uplp_vintage_muzzle_12g_bayo.printname"] = "Poker Bayonet"
+-- L["uplp_vintage_muzzle_12g_bayo.compactname"] = "Bayonet"
+-- L["uplp_vintage_muzzle_12g_bayo.description"] = "Very long spike bayonet intended for use on vintage shotguns."
 
 -- L["uplp_vintage_muzzle_12g_coffin.printname"] = "Coffin Suppressor"
 -- L["uplp_vintage_muzzle_12g_coffin.compactname"] = "Coffin"
 -- L["uplp_vintage_muzzle_12g_coffin.description"] = "Large, bulky suppressor intended for use on retro-fitted vintage shotguns."
 
+-- L["uplp_vintage_muzzle_12g_supp_cyl.printname"] = "Coffin Suppressor"
+-- L["uplp_vintage_muzzle_12g_supp_cyl.compactname"] = "Coffin"
+-- L["uplp_vintage_muzzle_12g_supp_cyl.description"] = "Large cylindrical suppressor intended for use on retro-fitted vintage shotguns."
+
+-- L["uplp_vintage_muzzle_12g_choke.printname"] = "Full Choke"
+-- L["uplp_vintage_muzzle_12g_choke.compactname"] = "Choke"
+-- L["uplp_vintage_muzzle_12g_choke.description"] = "Significantly tightens the spread at the cost of much harder weapon kick."
+
+-- L["uplp_vintage_muzzle_12g_choke_half.printname"] = "Half Choke"
+-- L["uplp_vintage_muzzle_12g_choke_half.compactname"] = "H. Choke"
+-- L["uplp_vintage_muzzle_12g_choke_half.description"] = "Tightens the spread at the cost of harder weapon kick."
+
+-- The Rest
 -- L["uplp_vintage_muzzle_supp_std.printname"] = "Baffler Suppressor"
 -- L["uplp_vintage_muzzle_supp_std.compactname"] = "Baffler"
 -- L["uplp_vintage_muzzle_supp_std.description"] = "The Baffler uses rubber baffels (as the name implies) for maximum noise reduction."
@@ -177,9 +251,45 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 -- L["uplp_vintage_muzzle_supp_bell.compactname"] = "Bell"
 -- L["uplp_vintage_muzzle_supp_bell.description"] = "The Bell uses metal-mesh washers for noise reduction, allowing it to handle heat much easier."
 
+-- L["uplp_vintage_muzzle_supp_heavy.printname"] = "Maze Suppressor"
+-- L["uplp_vintage_muzzle_supp_heavy.compactname"] = "Maze"
+-- L["uplp_vintage_muzzle_supp_heavy.description"] = "The Maze uses additional metal fins, which allows it to handle heat without issue."
+
+-- L["uplp_vintage_muzzle_supp_srt.printname"] = "Stubby Suppressor"
+-- L["uplp_vintage_muzzle_supp_srt.compactname"] = "Stubby"
+-- L["uplp_vintage_muzzle_supp_srt.description"] = "The Stubby sacrifices volume and heat tolerance for reduced size."
+
+-- L["uplp_vintage_muzzle_supp_offset.printname"] = "Shifter Suppressor"
+-- L["uplp_vintage_muzzle_supp_offset.compactname"] = "Shifter"
+-- L["uplp_vintage_muzzle_supp_offset.description"] = "The Shifter is a heavy suppressor with most of its weight at the bottom to allow the usage of iron sights. It uses metal-mesh washes for noise reduction, allowing it to handle heat much easier."
+
 -- L["uplp_vintage_muzzle_thompsen.printname"] = "Poke Compensator"
 -- L["uplp_vintage_muzzle_thompsen.compactname"] = "Poke"
 -- L["uplp_vintage_muzzle_thompsen.description"] = "Small compensator intended for use on retro-fitted vintage small arms."
+
+-- L["uplp_vintage_muzzle_monitor.printname"] = "Watchmen Compensator"
+-- L["uplp_vintage_muzzle_monitor.compactname"] = "Watchmen"
+-- L["uplp_vintage_muzzle_monitor.description"] = "Bulky compensator intended for use on retro-fitted vintage small arms."
+
+-- L["uplp_vintage_muzzle_cone.printname"] = "Sturm Flash Hider"
+-- L["uplp_vintage_muzzle_cone.compactname"] = "Sturm FH"
+-- L["uplp_vintage_muzzle_cone.description"] = "A cone-shaped flash hider that hides the muzzle flash intended for use on retro-fitted vintage small arms."
+
+-- L["uplp_vintage_muzzle_ptrd.printname"] = "Ogon Muzzle Brake"
+-- L["uplp_vintage_muzzle_ptrd.compactname"] = "Ogon MB"
+-- L["uplp_vintage_muzzle_ptrd.description"] = "Downsized Soviet muzzle brake intended for use on retro-fitted vintage small arms."
+
+-- L["uplp_vintage_muzzle_dual.printname"] = "DUAL Muzzle Device"
+-- L["uplp_vintage_muzzle_dual.compactname"] = "DUAL MD"
+-- L["uplp_vintage_muzzle_dual.description"] = "The DUAL device combines a flash hider and compensator into one sweet package. Intended for use on retro-fitted vintage small arms."
+
+-- L["uplp_vintage_muzzle_booster.printname"] = "Rückführer Muzzle Booster"
+-- L["uplp_vintage_muzzle_booster.compactname"] = "Rückführer"
+-- L["uplp_vintage_muzzle_booster.description"] = "The Rückführer is a muzzle booster that vents excess gases back into the action, which increases the firing rate. Intended for use on retro-fitted vintage small arms."
+
+-- L["uplp_vintage_muzzle_lathi.printname"] = "Saldo Muzzle Brake"
+-- L["uplp_vintage_muzzle_lathi.compactname"] = "Saldo MB"
+-- L["uplp_vintage_muzzle_lathi.description"] = "Downsized Finnish muzzle brake intended for use on retro-fitted vintage small arms."
 
 //////////////////// Frommer Stop
 -- L["uplp_vintage_weapon_frommer"] = "KPHT .32"
@@ -371,3 +481,28 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 -- L["uplp_vintage_bar_stock_heavy.printname"] = "Clubfoot Heavy Stock"
 -- L["uplp_vintage_bar_stock_heavy.compactname"] = "Heavy"
 -- L["uplp_vintage_bar_stock_heavy.description"] = "Thickened and heavy-weight stock for the Watchmen Auto."
+
+
+
+/////////// If not _en file, ignore
+-- L["uplp_vintage_optic_1x_projector_offset.printname"] = ARC9:GetPhrase("uplp_vintage_optic_sharps_small.printname") or "Projector Reflector Sight"
+-- L["uplp_vintage_optic_1x_projector_offset.compactname"] = ARC9:GetPhrase("uplp_vintage_optic_sharps_small.compactname") or "Projector"
+-- L["uplp_vintage_optic_1x_projector_offset.description"] = ARC9:GetPhrase("uplp_vintage_optic_sharps_small.description") or ("Modified optical sight meant for machine guns mounted on fighting aircraft." .. desc_cqcoptic)
+
+-- L["uplp_vintage_optic_1x_aircraft_offset.printname"] = ARC9:GetPhrase("uplp_vintage_optic_1x_aircraft.printname") or "Mark III Reflector Sight"
+-- L["uplp_vintage_optic_1x_aircraft_offset.compactname"] = ARC9:GetPhrase("uplp_vintage_optic_1x_aircraft.compactname") or "Mark III"
+-- L["uplp_vintage_optic_1x_aircraft_offset.description"] = ARC9:GetPhrase("uplp_vintage_optic_1x_aircraft.description") or ("British optical sight used on naval guns and as pilot sights in aircraft." .. desc_cqcoptic)
+
+-- L["uplp_vintage_optic_hunting.description"] = ARC9:GetPhrase("uplp_vintage_optic_sharps_small.description") or ("Magnified scope with low magnification." .. desc_cqcoptic)
+
+-- L["uplp_vintage_optic_glasvisier.description"] = ARC9:GetPhrase("uplp_vintage_optic_sharps_small.description") or ("Magnified scope with low magnification." .. desc_cqcoptic)
+
+-- L["uplp_vintage_optic_mg08.description"] = ARC9:GetPhrase("uplp_vintage_optic_musket.description") or ("Magnified scope with medium magnification." .. desc_midoptic)
+
+-- L["uplp_vintage_optic_box.description"] = ARC9:GetPhrase("uplp_vintage_optic_musket.description") or ("Magnified scope with medium magnification." .. desc_midoptic)
+
+-- L["uplp_vintage_optic_hiLux.description"] = ARC9:GetPhrase("uplp_vintage_optic_1x_projector.description") or ("Modified optical sight meant for machine guns mounted on fighting aircraft." .. desc_cqcoptic)
+
+-- L["uplp_vintage_muzzle_bayo.printname"] = ARC9:GetPhrase("uplp_vintage_muzzle_12g_bayo.printname") or "Poker Bayonet"
+-- L["uplp_vintage_muzzle_bayo.compactname"] = ARC9:GetPhrase("uplp_vintage_muzzle_12g_bayo.compactname") or "Bayonet"
+-- L["uplp_vintage_muzzle_bayo.description"] = ARC9:GetPhrase("uplp_vintage_muzzle_12g_bayo.description") or "Very long spike bayonet intended for use on vintage shotguns."

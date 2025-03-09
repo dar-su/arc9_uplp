@@ -97,7 +97,7 @@ SWEP.PhysBulletDrag = 1.5
 -- Magazine Info
 SWEP.Ammo = "smg1" -- What ammo type this gun uses.
 
-SWEP.ChamberSize = 0
+SWEP.ChamberSize = 1
 SWEP.ClipSize = 100
 
 -- Recoil
