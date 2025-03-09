@@ -38,6 +38,7 @@ L["uplp_caliber"] = "Caliber3"
 
 L["uplp_caliber_7.62x39mm"] = "7.62×39mm Soviet"
 L["uplp_caliber_7.62x51mm"] = "7.62×51mm"
+L["uplp_caliber_7.62x54mmr"] = "7.62×54mmR"
 L["uplp_caliber_5.56x45mm"] = "5.56×45mm"
 L["uplp_caliber_5.45x39mm"] = "5.45×39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
@@ -54,18 +55,6 @@ L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
-
-L["uplp_manufacturer_ai"] = "Accuracy International"
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
-L["uplp_manufacturer_hk"] = "Heckler & Koch"
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
-L["uplp_manufacturer_magnum"] = "Magnum Research"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
-L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "Year5"
@@ -106,15 +95,13 @@ L["uplp_sounds"] = "Sounds4"
 L["uplp_general"] = "Model & Animation Edits5"
 
 /////////// Weapon Categories
-L["uplp_category_weapon_ar"] = "Assault Rifles"
-L["uplp_category_weapon_mg"] = "Machine Guns"
-L["uplp_category_weapon_pistol"] = "Pistols"
-L["uplp_category_weapon_shotgun"] = "Shotguns"
-L["uplp_category_weapon_smg"] = "Submachine Guns"
-L["uplp_category_weapon_sniper"] = "Sniper Rifles"
-L["uplp_category_weapon_utils"] = "Utilities"
-
-L["uplp_category_weapon_heavy"] = "Heavy Weapons"
+L["uplp_category_weapon_ar"] = "1Assault Rifles"
+L["uplp_category_weapon_mg"] = "3Machine Guns"
+L["uplp_category_weapon_pistol"] = "6Pistols"
+L["uplp_category_weapon_shotgun"] = "4Shotguns"
+L["uplp_category_weapon_smg"] = "2Submachine Guns"
+L["uplp_category_weapon_sniper"] = "5Sniper Rifles"
+L["uplp_category_weapon_utils"] = "7Utilities"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Assault Rifle"
@@ -140,6 +127,7 @@ L["uplp_category_charm"] = "Charm"
 L["uplp_category_dovetail"] = "Dovetail"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_extra"] = "Extras"
+L["uplp_category_furniture"] = "Furniture"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Foregrip"
 L["uplp_category_handguard"] = "Handguard"
@@ -158,7 +146,6 @@ L["uplp_category_sight_rear"] = "Rear Sight"
 L["uplp_category_sticker"] = "Sticker"
 L["uplp_category_stock"] = "Stock"
 L["uplp_category_tactical"] = "Tactical"
-L["uplp_category_furniture"] = "Furniture"
 
 //////////////////// Sticker Category Names
 -- These are intended for stickers placed on certain slots, such as stocks or magazines.
@@ -250,10 +237,6 @@ L["uplp_optic_elcan.description"] = "Military-grade combat optic of American ori
 L["uplp_optic_bigass.printname"] = "8-16x Variable Zoom Scope w. Rangefinder"
 L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
 L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
-
--- L["uplp_optic_bigass_thermal.printname"] = "8-16x Variable Zoom Thermal Scope w. Rangefinder"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZTS-R"
--- L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
@@ -2961,9 +2944,9 @@ L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheet
 
 //////////////////// PKM
 L["uplp_weapon_pkm"] = "PS 7.62"
-L["uplp_weapon_pkm_desc"] = "The Soviet Pulemyot Sokolov 7.62mm is a high-caliber, general-purpose machine gun firing the very powerful 7.62x54mmR cartridge. Its insane damage output makes it a fearsome monster in combat."
+L["uplp_weapon_pkm_desc"] = "Sokolov's machine gun (Russian: Пулемет Соколова | Polemyot Sokolova) is a reliable, belt-fed weapon known for its durability and accuracy. It has been used in various conflicts, providing support fire with impressive range and power."
 
-L["uplp_weapon_pkm_pkp"] = "PS-M 7.62" -- "Modern"
+L["uplp_weapon_pkm_pkp"] = "PSM 7.62" -- "Modern"
 L["uplp_weapon_pkm_bp"] = "PS-BP 7.62" -- "Bullpup"
 
 L["uplp_weapon_pkm_real"] = "PKM | PKP Pecheneg"
@@ -2972,13 +2955,13 @@ L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_pkm_brl_aek.printname"] = "\"Komar\" Barrel"
-L["uplp_pkm_brl_aek.compactname"] = "Komar"
+L["uplp_pkm_brl_aek.printname"] = "\"Medoyed\" Barrel"
+L["uplp_pkm_brl_aek.compactname"] = "Medoyed"
 L["uplp_pkm_brl_aek.description"] = "Medium weight barrel for the PS 7.62 with a <color=100,255,100>large, pre-installed suppressor</color>."
 
-L["uplp_pkm_brl_pkp.printname"] = "\"PS-M\" Barrel"
-L["uplp_pkm_brl_pkp.compactname"] = "PS-M"
-L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PS-M 7.62."
+L["uplp_pkm_brl_pkp.printname"] = "\"PSM\" Barrel"
+L["uplp_pkm_brl_pkp.compactname"] = "PSM"
+L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PSM 7.62."
 
 ////// Furniture
 L["uplp_pkm_furn_poly.printname"] = "Polymer Furniture"
@@ -2992,7 +2975,7 @@ L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tacti
 ////// Receiver
 L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
 L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
-L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and a <color=100,255,100>small red dot sight</color> (replaceable)."
+L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and <color=100,255,100>XW Red Dot</color>*.\n\n*Can be swapped out for other optics."
 
 ////// Misc.
 L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
@@ -3000,5 +2983,9 @@ L["uplp_pkm_bipod.compactname"] = "Bipod"
 L["uplp_pkm_bipod.description"] = "Standard-issue bipod."
 
 L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
-L["uplp_pkm_taccover.compactname"] = "Top C."
+L["uplp_pkm_taccover.compactname"] = "Tac. TC"
 L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the RIS rail.\nPurely <color=150,150,255>cosmetic</color>."
+
+L["uplp_pkm_handguard.printname"] = "Tactical Hand Guard"
+L["uplp_pkm_handguard.compactname"] = "Tac. HG"
+L["uplp_pkm_handguard.description"] = "Displays the tactical handguard with bottom and side rails.\nPurely <color=150,150,255>cosmetic</color>."

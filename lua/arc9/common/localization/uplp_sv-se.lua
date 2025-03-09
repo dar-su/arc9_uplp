@@ -38,6 +38,7 @@ L["uplp_caliber"] = "Kaliber3"
 
 L["uplp_caliber_7.62x39mm"] = "7,62 × 39 mm Sovjet"
 L["uplp_caliber_7.62x51mm"] = "7,62 × 51 mm"
+L["uplp_caliber_7.62x54mmr"] = "7,62 × 54 mm R"
 L["uplp_caliber_5.56x45mm"] = "5,56 × 45 mm"
 L["uplp_caliber_5.45x39mm"] = "5,45 × 39 mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
@@ -54,18 +55,6 @@ L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare2"
-
-L["uplp_manufacturer_ai"] = "Accuracy International"
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
-L["uplp_manufacturer_hk"] = "Heckler & Koch"
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
-L["uplp_manufacturer_magnum"] = "Magnum Research"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
-L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "År5"
@@ -87,7 +76,6 @@ L["uplp_mechanism_rollerdelay"] = "Halvreglat slutstycke"
 L["uplp_mechanism_closedbolt"] = "Stängt slutstycke"
 L["uplp_mechanism_openbolt"] = "Öppet slutstycke"
 
-
 L["uplp_mechanism_singleaction"] = "Single-Action"
 L["uplp_mechanism_doubleaction"] = "Double-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
@@ -97,6 +85,7 @@ L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
 L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
 L["uplp_mechanism_browning"] = "Browning-slutstycke"
 L["uplp_mechanism_shortstroke"] = "Kort slutstycke"
+L["uplp_mechanism_longstroke"] = "Långt slutstycke"
 
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"
@@ -106,16 +95,13 @@ L["uplp_sounds"] = "Ljud4"
 L["uplp_general"] = "Modell- & Animationredigering5"
 
 /////////// Weapon Categories
-L["uplp_category_weapon_ar"] = "Automatkarbiner"
-L["uplp_category_weapon_melee"] = "Närstridsvapen"
-L["uplp_category_weapon_mg"] = "Kulsprutor"
-L["uplp_category_weapon_pistol"] = "Pistoler"
-L["uplp_category_weapon_shotgun"] = "Hagelbössor"
-L["uplp_category_weapon_smg"] = "Kulsprutepistoler"
-L["uplp_category_weapon_sniper"] = "Prickskyttegevär"
-L["uplp_category_weapon_utils"] = "Verktyg"
-
-L["uplp_category_weapon_heavy"] = "Tunga Vapen"
+L["uplp_category_weapon_ar"] = "1Automatkarbiner"
+L["uplp_category_weapon_mg"] = "3Kulsprutor"
+L["uplp_category_weapon_pistol"] = "6Pistoler"
+L["uplp_category_weapon_shotgun"] = "4Hagelbössor"
+L["uplp_category_weapon_smg"] = "2Kulsprutepistoler"
+L["uplp_category_weapon_sniper"] = "5Prickskyttegevär"
+L["uplp_category_weapon_utils"] = "7Verktyg"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Automatkarbin"
@@ -141,6 +127,7 @@ L["uplp_category_charm"] = "Smycke"
 L["uplp_category_dovetail"] = "Laxstjärt"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_extra"] = "Extras"
+L["uplp_category_furniture"] = "Delar"
 L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
 L["uplp_category_handguard"] = "Handskydd"
@@ -250,10 +237,6 @@ L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ur
 L["uplp_optic_bigass.printname"] = "8-16x Variabel Zoom Kikarsikte med Avståndsmätare"
 L["uplp_optic_bigass.compactname"] = "8-16x VZK-A"
 L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är." .. desc_bigoptic
-
--- L["uplp_optic_bigass_thermal.printname"] = "8-16x Variabel Zoom Värmesikte med Avståndsmätare"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZV-A"
--- L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
@@ -2913,3 +2896,51 @@ L["uplp_mp9_stock_fixed.description"] = "Klassisk fast kolv till F9 \"Cheetah\".
 L["uplp_mp9_skin_white.printname"] = "Taktiskt Vitt och Rött Utseende"
 L["uplp_mp9_skin_white.compactname"] = "V&R"
 L["uplp_mp9_skin_white.description"] = "Taktisk vit version av F9 \"Cheetah\" med röda detaljer.\n\nPerfekt för dem som skyddar Glass City."
+
+//////////////////// PKM
+L["uplp_weapon_pkm"] = "PS 7,62"
+L["uplp_weapon_pkm_desc"] = "Sokolovs kulspruta (Ryska: Пулемет Соколова | Polemyot Sokolova) är ett pålitligt, bältesmatat vapen känt för dess pålitlighet och träffsäkerhet. Den har använts i olika konflikter och ger täckande eld med imponerande räckvidd och kraft."
+
+L["uplp_weapon_pkm_pkp"] = "PSM 7,62" -- "Modern"
+L["uplp_weapon_pkm_bp"] = "PS-BP 7,62" -- "Bullpup"
+
+L["uplp_weapon_pkm_real"] = "PKM | PKP Pecheneg"
+
+L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
+
+/////////// Attachments
+////// Barrels
+L["uplp_pkm_brl_aek.printname"] = "\"Medoyed\"-Pipa"
+L["uplp_pkm_brl_aek.compactname"] = "Medoyed"
+L["uplp_pkm_brl_aek.description"] = "Medelvikt pipa till PS 7,62 med en <color=100,255,100>stor, förinstallerad ljuddämpare</color>."
+
+L["uplp_pkm_brl_pkp.printname"] = "\"PSM\"-Pipa"
+L["uplp_pkm_brl_pkp.compactname"] = "PSM"
+L["uplp_pkm_brl_pkp.description"] = "Tung pipa från den mer moderna PSM 7,62."
+
+////// Furniture
+L["uplp_pkm_furn_poly.printname"] = "Polymer Bitar"
+L["uplp_pkm_furn_poly.compactname"] = "Polymer"
+L["uplp_pkm_furn_poly.description"] = "Ersätter träbitarna med några av polymer.\nEndast <color=150,150,255>kosmetiskt</color>."
+
+L["uplp_pkm_furn_zenit.printname"] = "Zenith-Bitar"
+L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
+L["uplp_pkm_furn_zenit.description"] = "Ersätter träbitarna med några taktiska Zenith-delar.\nEndast <color=150,150,255>kosmetiskt</color>."
+
+////// Receiver
+L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7,62 Konverteringskit"
+L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
+L["uplp_pkm_rec_bullpup.description"] = "Konverterar PS 7,62 till en bullpup, vilket förbättrar manövrering med kostnad på hantering.\nKommer förinstallerat med <color=100,255,100>Zenith 45-Gradersgreppet</color> och <color=100,255,100>XW-Rödpunktsiktet</color>*.\n\n*Kan bytas ut med andra riktmedel."
+
+////// Misc.
+L["uplp_pkm_bipod.printname"] = "PS 7,62 Benstöd"
+L["uplp_pkm_bipod.compactname"] = "Benstöd"
+L["uplp_pkm_bipod.description"] = "Standard benstöd."
+
+L["uplp_pkm_taccover.printname"] = "Taktisk Övre Låda"
+L["uplp_pkm_taccover.compactname"] = "Tak. ÖL"
+L["uplp_pkm_taccover.description"] = "Visar den taktiska övre lådan med en RIS-skena.\nEndast <color=150,150,255>kosmetiskt</color>."
+
+L["uplp_pkm_handguard.printname"] = "Taktiskt Handskydd"
+L["uplp_pkm_handguard.compactname"] = "Tak. HS"
+L["uplp_pkm_handguard.description"] = "Visar taktiska handskyddet med under- och sidomonterade skenor.\nEndast <color=150,150,255>kosmetiskt</color>."

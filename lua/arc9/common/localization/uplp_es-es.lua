@@ -38,7 +38,8 @@ L["uplp_caliber"] = "Calibre3"
 
 L["uplp_caliber_7.62x39mm"] = "7.62×39mm Soviético"
 L["uplp_caliber_7.62x51mm"] = "7.62×51mm"
-L["uplp_caliber_5.56x45mm"] = "5.56×45mm "
+L["uplp_caliber_7.62x54mmr"] = "7.62×54mmR"
+L["uplp_caliber_5.56x45mm"] = "5.56×45mm"
 L["uplp_caliber_5.45x39mm"] = "5.45×39mm"
 L["uplp_caliber_12gauge"] = "Calibre 12"
 L["uplp_caliber_50ae"] = ".50 AE"
@@ -54,18 +55,6 @@ L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Fabricante2"
-
-L["uplp_manufacturer_ai"] = "Accuracy International"
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
-L["uplp_manufacturer_hk"] = "Heckler & Koch"
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
-L["uplp_manufacturer_magnum"] = "Magnum Research"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
-L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "Añor5"
@@ -96,6 +85,7 @@ L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
 L["uplp_mechanism_longrecoil"] = "Retroceso largo"
 L["uplp_mechanism_browning"] = "Acción de Browning"
 L["uplp_mechanism_shortstroke"] = "Pistón de carrera corta."
+L["uplp_mechanism_longstroke"] = "Pistón de carrera larga."
 
 /////////// Authors
 L["uplp_assets"] = "Archivos originales1"
@@ -105,16 +95,13 @@ L["uplp_sounds"] = "Sonidos4"
 L["uplp_general"] = "Edición de modelos y animaciones5"
 
 /////////// Weapon Categories
-L["uplp_category_weapon_ar"] = "Rifles de Asalto"
-L["uplp_category_weapon_melee"] = "Melees"
-L["uplp_category_weapon_mg"] = "Ametralladoras"
-L["uplp_category_weapon_pistol"] = "Pistolas"
-L["uplp_category_weapon_shotgun"] = "Escopetas"
-L["uplp_category_weapon_smg"] = "Subfusiles"
-L["uplp_category_weapon_sniper"] = "Rifles de Francotirador"
--- L["uplp_category_weapon_utils"] = "Utilities"
-
-L["uplp_category_weapon_heavy"] = "Armas Pesadas"
+L["uplp_category_weapon_ar"] = "1Rifles de Asalto"
+L["uplp_category_weapon_mg"] = "3Ametralladoras"
+L["uplp_category_weapon_pistol"] = "6Pistolas"
+L["uplp_category_weapon_shotgun"] = "4Escopetas"
+L["uplp_category_weapon_smg"] = "2Subfusiles"
+L["uplp_category_weapon_sniper"] = "5Rifles de Francotirador"
+-- L["uplp_category_weapon_utils"] = "7Utilities"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Rifle de Asalto"
@@ -140,6 +127,7 @@ L["uplp_category_charm"] = "Amuleto"
 L["uplp_category_dovetail"] = "Raíl de Cola de Milano"
 L["uplp_category_dustcover"] = "Cubierta Antipolvo"
 L["uplp_category_extra"] = "Extras"
+-- L["uplp_category_furniture"] = "Furniture"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Empuñadura"
 L["uplp_category_handguard"] = "Guardamanos"
@@ -250,10 +238,6 @@ L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-16x y Telémetro"
 L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
 L["uplp_optic_bigass.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo." .. desc_bigoptic
 
--- L["uplp_optic_bigass_thermal.printname"] = "Termoscopio 8-16x Zoom Variable con Telémetro"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZTS-R"
--- L["uplp_optic_bigass_thermal.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo.\n - Capacidad de imagen térmica que resalta los objetivos." .. desc_biggeroptic
-
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
 L["uplp_optic_halo_thermal.description"] = "Óptica térmica especial con magnificación 6x fabricada por PurrPoint™ que ofrece capacidades de imagen térmica que resaltan los objetivos." .. desc_biggeroptic
@@ -286,9 +270,9 @@ L["uplp_optic_rmrhigh.printname"] = "Punto Rojo XW c. Elevador"
 L["uplp_optic_rmrhigh.compactname"] = "XW R."
 L["uplp_optic_rmrhigh.description"] = "Punto rojo compacto destinado a pistolas y armas de fuego de pequeño calibre." .. desc_smalloptic
 
-L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot" -- NEW
-L["uplp_optic_genericrds.compactname"] = "HawkEye" -- NEW
-L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic -- NEW
+L["uplp_optic_genericrds.printname"] = "Punto Rojo HawkEye Precision"
+L["uplp_optic_genericrds.compactname"] = "HawkEye"
+-- L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic -- NEW
 
 L["uplp_optic_notacog.printname"] = "Visor Militar 3x"
 L["uplp_optic_notacog.compactname"] = "3x Militar"
@@ -2899,3 +2883,51 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
 -- L["uplp_mp9_skin_white.compactname"] = "W&R"
 -- L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."
+
+//////////////////// PKM
+-- L["uplp_weapon_pkm"] = "PS 7.62"
+-- L["uplp_weapon_pkm_desc"] = "La ametralladora de Sokolov (En ruso: Пулемет Соколова | Polemyot Sokolova) es un arma confiable alimentada por cinta, conocida por su durabilidad y precisión. Ha sido utilizada en varios conflictos, proporcionando fuego de apoyo con un impresionante alcance y potencia."
+
+-- L["uplp_weapon_pkm_pkp"] = "PSM 7.62" -- "Modern"
+-- L["uplp_weapon_pkm_bp"] = "PS-BP 7.62" -- "Bullpup"
+
+-- L["uplp_weapon_pkm_real"] = "PKM | PKP Pecheneg"
+
+-- L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
+
+/////////// Attachments
+////// Barrels
+-- L["uplp_pkm_brl_aek.printname"] = "\"Medoyed\" Barrel"
+-- L["uplp_pkm_brl_aek.compactname"] = "Medoyed"
+-- L["uplp_pkm_brl_aek.description"] = "Medium weight barrel for the PS 7.62 with a <color=100,255,100>large, pre-installed suppressor</color>."
+
+-- L["uplp_pkm_brl_pkp.printname"] = "\"PSM\" Barrel"
+-- L["uplp_pkm_brl_pkp.compactname"] = "PSM"
+-- L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PSM 7.62."
+
+////// Furniture
+-- L["uplp_pkm_furn_poly.printname"] = "Polymer Furniture"
+-- L["uplp_pkm_furn_poly.compactname"] = "Polymer"
+-- L["uplp_pkm_furn_poly.description"] = "Replaces the wooden furniture with polymer ones.\nPurely <color=150,150,255>cosmetic</color>."
+
+-- L["uplp_pkm_furn_zenit.printname"] = "Zenith Furniture"
+-- L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
+-- L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
+
+////// Receiver
+-- L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
+-- L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
+-- L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and <color=100,255,100>XW Red Dot</color>*.\n\n*Can be swapped out for other optics."
+
+////// Misc.
+-- L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
+-- L["uplp_pkm_bipod.compactname"] = "Bipod"
+-- L["uplp_pkm_bipod.description"] = "Standard-issue bipod."
+
+-- L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
+-- L["uplp_pkm_taccover.compactname"] = "Tac. TC"
+-- L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the RIS rail.\nPurely <color=150,150,255>cosmetic</color>."
+
+-- L["uplp_pkm_handguard.printname"] = "Tactical Hand Guard"
+-- L["uplp_pkm_handguard.compactname"] = "Tac. HG"
+-- L["uplp_pkm_handguard.description"] = "Displays the tactical handguard with bottom and side rails.\nPurely <color=150,150,255>cosmetic</color>."

@@ -15,18 +15,17 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_mg") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_mg") -- In the Spawnmenu
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_pkm_real"),
+	[ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_pkm_real"),
 
-    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_3" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_longstroke" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
-    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
+	[ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
+	[ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x54mmr"),
+	[ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_3" ),
+																		ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+																		ARC9:GetPhrase( "uplp_mechanism_longstroke" ),
+																		ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
+	[ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
+	[ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
 }
-
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
@@ -544,6 +543,8 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = {"inspect"},
+        MinProgress = 0.85,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -925,4 +926,19 @@ end
 SWEP.DropMagazineSoundsHook = function(swep, old)
     if swep:GetReloading() then return swep.DropMagazineSoundsReal end
     return old
+end
+
+if GetConVar("gmod_language"):GetString() == "ru" then 
+-- Exclusively done to have two "Mechanism" strings instead of 3 in RU only.
+	SWEP.Trivia = {
+		[ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_pkm_real"),
+
+		[ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
+		[ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x54mmr"),
+		[ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
+																			ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+																			ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
+		[ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
+		[ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
+	}
 end

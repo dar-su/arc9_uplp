@@ -36,36 +36,25 @@ L["uplp_country_usa"] = "США"
 /////////// Caliber
 L["uplp_caliber"] = "Калибр3"
 
-L["uplp_caliber_7.62x39mm"] = "7.62×39мм СССР"
-L["uplp_caliber_7.62x51mm"] = "7.62×51мм"
-L["uplp_caliber_5.56x45mm"] = "5.56×45мм"
-L["uplp_caliber_5.45x39mm"] = "5.45×39мм"
+L["uplp_caliber_7.62x39mm"] = "7,62×39 мм СССР"
+L["uplp_caliber_7.62x51mm"] = "7,62×51 мм"
+L["uplp_caliber_7.62x54mmr"] = "7,62×54 мм R"
+L["uplp_caliber_5.56x45mm"] = "5,56×45 мм"
+L["uplp_caliber_5.45x39mm"] = "5,45×39 мм"
 L["uplp_caliber_12gauge"] = "12 Калибр"
 L["uplp_caliber_50ae"] = ".50 AE"
-L["uplp_caliber_5.7x28mm"] = "FN 5.7×28мм"
-L["uplp_caliber_4.6x30mm"] = "HK 4.6×30мм"
-L["uplp_caliber_9x19mm"] = "9×19мм Parabellum"
+L["uplp_caliber_5.7x28mm"] = "FN 5,7×28 мм"
+L["uplp_caliber_4.6x30mm"] = "HK 4,6×30 мм"
+L["uplp_caliber_9x19mm"] = "9×19-мм Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
-L["uplp_caliber_127x108mm"] = "12.7×108мм СССР"
-L["uplp_caliber_9x39mm"] = "9×39mm"
+L["uplp_caliber_127x108mm"] = "12,7×108 мм СССР"
+L["uplp_caliber_9x39mm"] = "9×39 мм"
 L["uplp_caliber_45acp"] = ".45 ACP"
 L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Производитель2"
-
-L["uplp_manufacturer_ai"] = "Accuracy International"
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "Fabrique Nationale de Herstal"
-L["uplp_manufacturer_hk"] = "Heckler & Koch"
-L["uplp_manufacturer_izhmash"] = "ИжМаш"
-L["uplp_manufacturer_kalashnikov"] = "Концерн «Калашников»"
-L["uplp_manufacturer_magnum"] = "Magnum Research"
-L["uplp_manufacturer_molot"] = "Молот-Оружие"
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
-L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "Год5"
@@ -95,7 +84,8 @@ L["uplp_mechanism_doublesingleaction"] = "Двойное действие / Од
 L["uplp_mechanism_shortrecoil"] = "Короткий ход ствола"
 L["uplp_mechanism_longrecoil"] = "Длинный ход ствола"
 L["uplp_mechanism_browning"] = "Действие Браунинга"
-L["uplp_mechanism_shortstroke"] = "Отвод пороховых газов"
+L["uplp_mechanism_shortstroke"] = "Отвод пороховых газов" -- Hmm?
+L["uplp_mechanism_longstroke"] = "Отвод пороховых газов" -- Hmm?
 
 /////////// Authors
 L["uplp_assets"] = "Оригинальные ассеты1"
@@ -105,16 +95,13 @@ L["uplp_sounds"] = "Звуки4"
 L["uplp_general"] = "Работа с анимациями и моделями5"
 
 /////////// Weapon Categories
-L["uplp_category_weapon_ar"] = "  Штурмовые винтовки"
-L["uplp_category_weapon_melee"] = "Ближний бой"
-L["uplp_category_weapon_mg"] = "  Пулемёты"
-L["uplp_category_weapon_pistol"] = " Пистолеты"
-L["uplp_category_weapon_shotgun"] = " Дробовики"
-L["uplp_category_weapon_smg"] = " Пистолеты-пулеметы"
-L["uplp_category_weapon_sniper"] = " Снайперские винтовки"
-L["uplp_category_weapon_utils"] = "Утилитарное"
-
-L["uplp_category_weapon_heavy"] = "Heavy Weapons"
+L["uplp_category_weapon_ar"] = "1Штурмовые винтовки"
+L["uplp_category_weapon_mg"] = "3Пулемёты"
+L["uplp_category_weapon_pistol"] = "6Пистолеты"
+L["uplp_category_weapon_shotgun"] = "4Дробовики"
+L["uplp_category_weapon_smg"] = "2Пистолеты-пулеметы"
+L["uplp_category_weapon_sniper"] = "5Снайперские винтовки"
+L["uplp_category_weapon_utils"] = "7Утилитарное"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Штурмновая винтовка"
@@ -140,6 +127,7 @@ L["uplp_category_charm"] = "Брелок"
 L["uplp_category_dovetail"] = "Ласт. хвост"
 L["uplp_category_dustcover"] = "Ствол. коробка"
 L["uplp_category_extra"] = "Доп."
+-- L["uplp_category_furniture"] = "Furniture"
 L["uplp_category_gasblock"] = "Газ. блок"
 L["uplp_category_grip"] = "Рукоять"
 L["uplp_category_handguard"] = "Цевьё"
@@ -249,10 +237,6 @@ L["uplp_optic_elcan.description"] = "Military-grade combat optic of American ori
 L["uplp_optic_bigass.printname"] = "8-16x Variable Zoom Scope w. Rangefinder"
 L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
 L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
-
--- L["uplp_optic_bigass_thermal.printname"] = "8-16x Variable Zoom Thermal Scope w. Rangefinder"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-16x VZTS-R"
--- L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
@@ -2913,3 +2897,51 @@ L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 -- L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
 -- L["uplp_mp9_skin_white.compactname"] = "W&R"
 -- L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."
+
+//////////////////// PKM
+L["uplp_weapon_pkm"] = "7,62-мм ПС"
+L["uplp_weapon_pkm_desc"] = "Пулемет Соколова — это надежное оружие с ленточной подачей, известное своей долговечностью и точностью. Оно использовалось в различных конфликтах, обеспечивая огневую поддержку с впечатляющим диапазоном и мощностью."
+
+L["uplp_weapon_pkm_pkp"] = "7,62-мм ПСМ" -- "Modern"
+L["uplp_weapon_pkm_bp"] = "7,62-мм ПС-Б" -- "Bullpup"
+
+L["uplp_weapon_pkm_real"] = "ПКМ | ПКП «Печенег»"
+
+L["uplp_weapon_pkm_manufacturer"] = "ЦНИИточмаш"
+
+/////////// Attachments
+////// Barrels
+-- L["uplp_pkm_brl_aek.printname"] = "\"Медоед\" Barrel"
+-- L["uplp_pkm_brl_aek.compactname"] = "Медоед"
+-- L["uplp_pkm_brl_aek.description"] = "Medium weight barrel for the PS 7.62 with a <color=100,255,100>large, pre-installed suppressor</color>."
+
+-- L["uplp_pkm_brl_pkp.printname"] = "\"PSM\" Barrel"
+-- L["uplp_pkm_brl_pkp.compactname"] = "PSM"
+-- L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PSM 7.62."
+
+////// Furniture
+-- L["uplp_pkm_furn_poly.printname"] = "Polymer Furniture"
+-- L["uplp_pkm_furn_poly.compactname"] = "Polymer"
+-- L["uplp_pkm_furn_poly.description"] = "Replaces the wooden furniture with polymer ones.\nPurely <color=150,150,255>cosmetic</color>."
+
+-- L["uplp_pkm_furn_zenit.printname"] = "Zenith Furniture"
+-- L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
+-- L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
+
+////// Receiver
+-- L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
+-- L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
+-- L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and <color=100,255,100>XW Red Dot</color>*.\n\n*Can be swapped out for other optics."
+
+////// Misc.
+-- L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
+-- L["uplp_pkm_bipod.compactname"] = "Bipod"
+-- L["uplp_pkm_bipod.description"] = "Standard-issue bipod."
+
+-- L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
+-- L["uplp_pkm_taccover.compactname"] = "Tac. TC"
+-- L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the RIS rail.\nPurely <color=150,150,255>cosmetic</color>."
+
+-- L["uplp_pkm_handguard.printname"] = "Tactical Hand Guard"
+-- L["uplp_pkm_handguard.compactname"] = "Tac. HG"
+-- L["uplp_pkm_handguard.description"] = "Displays the tactical handguard with bottom and side rails.\nPurely <color=150,150,255>cosmetic</color>."
