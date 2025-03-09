@@ -2961,7 +2961,7 @@ L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheet
 
 //////////////////// PKM
 L["uplp_weapon_pkm"] = "PS 7.62"
-L["uplp_weapon_pkm_desc"] = "The Russian Pulemyot Sokolov 7.62mm is a high-caliber, general-purpose machine gun firing the very powerful 7.62x54mmR cartridge. Its insane damage output makes it a fearsome monster in combat."
+L["uplp_weapon_pkm_desc"] = "The Soviet Pulemyot Sokolov 7.62mm is a high-caliber, general-purpose machine gun firing the very powerful 7.62x54mmR cartridge. Its insane damage output makes it a fearsome monster in combat."
 
 L["uplp_weapon_pkm_pkp"] = "PS-M 7.62" -- "Modern"
 L["uplp_weapon_pkm_bp"] = "PS-BP 7.62" -- "Bullpup"
@@ -2992,12 +2992,12 @@ L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tacti
 ////// Receiver
 L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
 L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
-L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=255,100,100>Zenith 45-Degree Grip</color>."
+L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and a <color=100,255,100>small red dot sight</color>."
 
 ////// Misc.
--- L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
--- L["uplp_pkm_bipod.compactname"] = "Bipod"
--- L["uplp_pkm_bipod.description"] = "Equips the standard-issue bipod.\nNot compatible with <color=255,100,100>foregrips</color>."
+L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
+L["uplp_pkm_bipod.compactname"] = "Bipod"
+L["uplp_pkm_bipod.description"] = "Standard-issue bipod."
 
 L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
 L["uplp_pkm_taccover.compactname"] = "Top C."

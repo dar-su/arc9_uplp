@@ -142,16 +142,16 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 SWEP.Spread = 0
 SWEP.SpreadAddHipFire = 0.01
 
-SWEP.SpreadAddRecoil = 0.04
+SWEP.SpreadAddRecoil = 0.045
 SWEP.SpreadAddMove = 0.025
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
+SWEP.RecoilDissipationRate = 3
 SWEP.RecoilResetTime = 0.05
-SWEP.RecoilPerShot = 0.2
+SWEP.RecoilPerShot = 0.4
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 0.2
@@ -224,6 +224,15 @@ local IronSights2 = {
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    if self:GetElements()["uplp_pkm_taccover"] then
+        return {
+			Pos = Vector(-2.97, -3.5, 0.96),
+			 Ang = Angle(-0.083013 + 0.1, -0.019307 + 0.95, 3.46919),
+			 Magnification = 1.15,
+			 ViewModelFOV = 65,
+		}
+    end
+	
     if self:GetElements()["uplp_pkm_rec_bullpup"] then
         return IronSights2
     end
@@ -259,7 +268,7 @@ end
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(17.5, 45, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(17.5, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(17.5, -3, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
 SWEP.CustomizeSnapshotFOV = 60
@@ -600,7 +609,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    local aekb = eles["uplp_pkm_brl_aek"]
+    local aekb, bp = eles["uplp_pkm_brl_aek"], eles["uplp_pkm_rec_bullpup"]
 
 	local grip, tac = eles["uplp_grip_used"], eles["uplp_tac_used"]
 
@@ -608,7 +617,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(5, 0)
     end
 	
-    if wep:GetBipod() and !grip then
+    if bp then
+		mdl:SetBodygroup(3, 2)
+		if tac then
+			mdl:SetBodygroup(5, 3)
+		end
+    end
+	
+    if wep:GetBipod() and (!grip and !bp) then
         if wep:GetEnterBipodTime() + 0.2 < CurTime() then
             mdl:SetBodygroup(2, 2)
         end
@@ -628,8 +644,7 @@ SWEP.AttachmentElements = {
     ["uplp_pkm_brl_pkp"] =  { 
 	Bodygroups = { { 1, 1 } },
 	AttPosMods = {
-		-- [2] = { Pos = Vector(0, 1.05, 15.0) },
-		-- [3] = { Pos = Vector(-1.1, 0.7, 12.8) },
+		-- [4] = { Pos = Vector(0, 1.3, 10) },
 		}
 	},
 
@@ -637,20 +652,19 @@ SWEP.AttachmentElements = {
     ["uplp_pkm_rec_bullpup"] =  { 
 	Bodygroups = { { 2, 0 }, { 4, 3 }, { 5, 3 }, { 3, 2 } },
 	AttPosMods = {
-		-- [2] = { Pos = Vector(0, 1.05, 15.0) },
-		-- [3] = { Pos = Vector(-1.1, 0.7, 12.8) },
+		[3] = { Pos = Vector(-1.175, -0.4, 12) },
 		}
 	},
 
     -- Other
-    ["uplp_pkm_bipod_bipod"] =  { Bodygroups = { { 2, 1 } } },
+    ["uplp_pkm_bipod"] =  { Bodygroups = { { 2, 1 } } },
     ["uplp_pkm_furn_poly"] =  { Bodygroups = { { 4, 1 } } },
     ["uplp_pkm_furn_zenit"] =  { Bodygroups = { { 4, 2 } } },
 
     ["uplp_optic_used"] =  { Bodygroups = { { 3, 1 } } },
 	
     ["uplp_tac_used"] =  { Bodygroups = { { 5, 2 } } },
-    -- ["uplp_grip_used"] =  { Bodygroups = { { 5, 2 }, { 2, 0 } }, Bipod = false },
+    ["uplp_grip_used"] =  { Bodygroups = { { 5, 2 } } },
 }
 
 SWEP.StickersNoNocull = true
@@ -661,11 +675,12 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_pkm_topcover"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "topcover",
         Pos = Vector(0, -1, -8.75),
         Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_pkm_rec_bullpup"},
         -- RequireElements = {"use_optics"},
         -- CorrectiveAng = -Angle(-0.083013 + 0.020862, -0.019307 - 0.001625, 3.46919 + 1.66288), -- bullpup only seperate plz
     },
@@ -698,7 +713,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_no_tactical"},
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        PrintName = ARC9:GetPhrase("uplp_category_grip") .. " | " .. ARC9:GetPhrase("uplp_category_bipod"),
         Category = {"uplp_grip_vert"},
         -- DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
         Bone = "body",
@@ -720,7 +735,7 @@ SWEP.Attachments = {
         Category = {"uplp_pkm_receiver", "uplp_pkm_furniture"},
         -- DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 1.5, -5.25),
+        Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),
         -- Installed = "uplp_ar18_stock_fixed",
     },
@@ -731,8 +746,10 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 1.5, 13),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_pkm_bipod_bipod",
+        Installed = "uplp_pkm_bipod",
         ExcludeElements = {"uplp_pkm_rec_bullpup"},
+		MergeSlots = {4},
+		Hidden = true,
     },
 
 
@@ -780,6 +797,22 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
 }
+
+
+SWEP.HookP_NameChange = function(self, name)
+    local att = self:GetElements()
+
+    local pkpb, bp = att["uplp_pkm_brl_pkp"], att["uplp_pkm_rec_bullpup"]
+    local pkps = att["uplp_pkm_furn_poly"]
+
+    if bp then
+        name = ARC9:GetPhrase("uplp_weapon_pkm_bp")
+	elseif pkpb and pkps then
+		name = ARC9:GetPhrase("uplp_weapon_pkm_pkp")
+    end
+
+    return name
+end
 
 
 -- eft pkm code lolol

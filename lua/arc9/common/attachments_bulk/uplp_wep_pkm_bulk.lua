@@ -86,6 +86,9 @@ ATT.Icon = Material(iconfolder .. "zenit.png", "mips smooth")
 ATT.Category = "uplp_pkm_furniture"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_pkm_furn_zenit")
 
 -------------------- RECEIVER
@@ -106,9 +109,41 @@ ATT.Hook_TranslateSource = function(wep, anim)
     return anim .. "_bp"
 end
 
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        Category = {"uplp_optic_small"},
+        DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
+        Pos = Vector(-7, 0, -3.3),
+		Ang = Angle(0, 0, 0),
+		ExtraSightDistance = 4,
+		Installed = "uplp_optic_rmr",
+        Integral = "uplp_optic_rmr",
+		CorrectiveAng = -Angle(-0.083013 + 0.020862, -0.019307 - 0.001625, 3.46919 + 1.66288), -- Why isn't this working? Also, what the fuck is this value?
+    },
+}
+
 ARC9.LoadAttachment(ATT, "uplp_pkm_rec_bullpup")
 
----------- uplp_pkm_bipod_bipod
+-------------------- OTHER
+---------- uplp_pkm_taccover
+
+ATT = {}
+
+ATT.PrintName = "Tactical Top Cover"
+ATT.CompactName = "Top C."
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "cover.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Category = "uplp_pkm_topcover"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_pkm_taccover")
+
+---------- uplp_pkm_bipod
 
 ATT = {}
 
@@ -123,4 +158,4 @@ ATT.Bipod = true
 ATT.Category = "uplp_pkm_bipod"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ARC9.LoadAttachment(ATT, "uplp_pkm_bipod_bipod")
+ARC9.LoadAttachment(ATT, "uplp_pkm_bipod")
