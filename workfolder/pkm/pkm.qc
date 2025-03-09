@@ -382,3 +382,6 @@ $bonemerge "bullet9"
 $bonemerge "bullet10"
 $bonemerge "bullet11"
 $bonemerge "bullet12"
+$bonemerge "charm"
+$bonemerge "tac"
+

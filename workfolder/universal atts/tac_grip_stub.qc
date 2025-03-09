@@ -1,5 +1,5 @@
 $modelname "weapons\arc9\uplp\tac_grip_stub.mdl"
- 
+$origin 0 0 0 -90
 $bodygroup "owo" { // 0
 	studio "tac_grip_stub.smd" // 0
 }   

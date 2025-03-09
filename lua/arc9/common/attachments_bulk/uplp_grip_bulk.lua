@@ -213,6 +213,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "stub.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_stub.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 ATT.LHIK = true
 ATT.LHIK_Priority = 8
 

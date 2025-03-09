@@ -36,7 +36,10 @@ SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
-SWEP.StandardPresets = {}
+SWEP.StandardPresets = {
+    -- "[PS-BP]XQAAAQD0AAAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCCiwDcwPNZAQLcf3tqCb0H7YHrexjN1FneB049D96aNOaAeUkpoR/NIkF1obUTZ3GiBJN9PnK1TsWolT0gF/QJR7IIKyHUyXaWsLinVj2GX1p5/ke0CiA=="
+    -- do bp preset pls  this one is outdated
+}
 
 SWEP.DefaultBodygroups = "00000000000000" -- Might as well prepare for the future
 
@@ -168,8 +171,9 @@ SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 35
 
 -- SWEP.Bipod = true
-SWEP.CantPeek = true
+-- SWEP.CantPeek = true
 SWEP.ReloadInSights = false
+SWEP.LaserCorrectBySightAng = true
 
 -- Shooting and Firemodes
 SWEP.RPM = 600 -- How fast gun shoot
@@ -209,61 +213,26 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
-
--- -3.535, 2.5, 1.2
-
-local meow = Vector(-2.97+3.495, -3.5-2.5, 1.002-1.2)
-
 local IronSights2 = {
-    -- Pos = Vector(-3.535, 2.5, 1.2),
-    Pos = Vector(-3.5, -3.5, 0.6) + meow,
-    -- Ang = Angle(0, 0.0, 0),
+    Pos = Vector(-3.5, -3.5, 0.6),
     Ang = Angle(-0.020862 + 0.1, 0.001625 + 0.9, -1.66288),
     Magnification = 1.1,
     ViewModelFOV = 54,
 }
+local IronSights3 = {
+    Pos = Vector(-2.97, -3.5, 0.96),
+     Ang = Angle(-0.083013 + 0.1, -0.019307 + 0.95, 3.46919),
+     Magnification = 1.15,
+     ViewModelFOV = 65,
+}
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     if self:GetElements()["uplp_pkm_taccover"] then
-        return {
-			Pos = Vector(-2.97, -3.5, 0.96),
-			 Ang = Angle(-0.083013 + 0.1, -0.019307 + 0.95, 3.46919),
-			 Magnification = 1.15,
-			 ViewModelFOV = 65,
-		}
-    end
-	
-    if self:GetElements()["uplp_pkm_rec_bullpup"] then
+        return IronSights3
+    elseif self:GetElements()["uplp_pkm_rec_bullpup"] then
         return IronSights2
     end
 end
-
-function SWEP:GetExtraSightPositions()
-    local s = self:GetSight()
-    local se = s.ExtraPos or Vector(0, 0, 0)
-    se.y = se.y + (s.ExtraSightDistance or 0)
-    -- return Vector(0, 0, 0), Angle(0, 0, 0)
-    -- local meow = self.IronSights.Pos - IronSights2.Pos
-    -- local woof = self.IronSights.Ang - IronSights2.Ang
-    if self:GetElements()["uplp_pkm_rec_bullpup"] then
-        se = se - meow
-    end
-    return se, (s.ExtraAng or Angle(0, 0, 0))
-end
-
--- SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
---     local attached = self:GetElements()
-
---     if attached["uplp_ar15_rs_tall"] then
---         return {
---             Pos = Vector(-2.275, -3, 0.225),
---             Ang = Angle(0.35, 0.125, -3),
---             Magnification = 1.15,
---             ViewModelFOV = 65,
---         }
---     end
-
--- end
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(17.5, 45, 4)
@@ -273,13 +242,16 @@ SWEP.CustomizeRotateAnchor = Vector(17.5, -3, -3)
 SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
+SWEP.PeekPos = Vector(-1.5, 4, -5)
+SWEP.PeekAng = Angle(0, 0.4, -52)
+
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/shells/mag_pkm_dropped.mdl"
 SWEP.DropMagazineTime = 1.5
 SWEP.DropMagazineQCA = 4
-SWEP.DropMagazinePos = Vector(0, 1.75, -2.5)
+SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -15, 10)
 
@@ -447,6 +419,10 @@ SWEP.Animations = {
         Source = "idle",
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
+    ["idle_bp"] = {
+        Source = "idle_bp",
+        IKTimeLine = { { t = 0, lhik = 1 } },
+    },
     ["ready"] = {
         Source = "ready",
         MinProgress = 0.65,
@@ -489,6 +465,10 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } }, -- add belt rattle plz, belt1/2 too long
     },
+    ["dryfire"] = {
+        Source = {"modeswitch"},
+    },
+
     -- ["fire_empty"] = {
         -- Source = "fire_empty",
         -- ShellEjectAt = 0.01,
@@ -520,7 +500,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 142 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 38/30},
+            {hide = 1, t = 1.25},
             {hide = 0, t = 51/30}
         },
         IKTimeLine = {
@@ -552,7 +532,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 157 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 38/30},
+            {hide = 1, t = 1.25},
             {hide = 0, t = 51/30}
         },
         IKTimeLine = {
@@ -609,12 +589,16 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    local aekb, bp = eles["uplp_pkm_brl_aek"], eles["uplp_pkm_rec_bullpup"]
+    local aekb, pkp, bp = eles["uplp_pkm_brl_aek"], eles["uplp_pkm_brl_pkp"], eles["uplp_pkm_rec_bullpup"]
 
-	local grip, tac = eles["uplp_grip_used"], eles["uplp_tac_used"]
+	local grip, tac = eles["uplp_grip_used"] or eles["uplp_pkm_handguard"], eles["uplp_tac_used"]
 
     if aekb and grip then
         mdl:SetBodygroup(5, 0)
+    elseif pkp and (grip or tac) then
+        mdl:SetBodygroup(5, 2)
+    elseif bp and aekb then
+        mdl:SetBodygroup(5, 4)
     end
 	
     if bp then
@@ -637,7 +621,8 @@ SWEP.AttachmentElements = {
     ["uplp_pkm_brl_aek"] =  { 
 	Bodygroups = { { 1, 2 } },
 	AttPosMods = {
-		[4] = { Pos = Vector(0, 1.3, 8) },
+		[3] = { Pos = Vector(0, 1.3, 8) },
+		[7] = { Pos = Vector(0, -3.0, 7.2) },
 		}
 	},
 
@@ -652,7 +637,7 @@ SWEP.AttachmentElements = {
     ["uplp_pkm_rec_bullpup"] =  { 
 	Bodygroups = { { 2, 0 }, { 4, 3 }, { 5, 3 }, { 3, 2 } },
 	AttPosMods = {
-		[3] = { Pos = Vector(-1.175, -0.4, 12) },
+		[2] = { Pos = Vector(0, 0, 1) },
 		}
 	},
 
@@ -663,8 +648,23 @@ SWEP.AttachmentElements = {
 
     ["uplp_optic_used"] =  { Bodygroups = { { 3, 1 } } },
 	
-    ["uplp_tac_used"] =  { Bodygroups = { { 5, 2 } } },
-    ["uplp_grip_used"] =  { Bodygroups = { { 5, 2 } } },
+    ["uplp_tac_used"] =  { Bodygroups = { { 5, 1 } } },
+    ["uplp_grip_used"] =  { Bodygroups = { { 5, 1 } } },
+    ["uplp_pkm_handguard"] =  { Bodygroups = { { 5, 1 } } },
+}
+
+SWEP.Hook_ModifyElements = function(self, eles)
+    if eles["uplp_grip_used"] and !eles["uplp_grip_rk45"] then -- only 45d with bipod
+        eles["uplp_no_bipod"] = true
+    end
+
+    return eles 
+end
+
+SWEP.AttachmentTableOverrides = {
+    ["uplp_grip_rk45"] = {
+		ModelAngleOffset = Angle(90+10, 90, -90), -- zero it back
+    },
 }
 
 SWEP.StickersNoNocull = true
@@ -675,7 +675,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_pkm_topcover"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_pkm_topcover"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "topcover",
         Pos = Vector(0, -1, -8.75),
@@ -684,42 +684,48 @@ SWEP.Attachments = {
         -- RequireElements = {"use_optics"},
         -- CorrectiveAng = -Angle(-0.083013 + 0.020862, -0.019307 - 0.001625, 3.46919 + 1.66288), -- bullpup only seperate plz
     },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = "uplp_muzzle",
-        Bone = "body",
-        Pos = Vector(0, -0.5, 21.75),
-        Ang = Angle(90, 90, 180),
-        -- Installed = "uplp_fal_muz_long",
-        ExcludeElements = {"uplp_pkm_brl_aek"},
-		RejectAttachments = {
-			["uplp_muzzle_3h"] = true,
-			["uplp_muzzle_cage"] = true,
-			["uplp_muzzle_fat"] = true,
-			["uplp_muzzle_fhider"] = true,
-			["uplp_muzzle_slim"] = true,
-			["uplp_muzzle_brake"] = true,
-			["uplp_muzzle_zenit"] = true,
-			["uplp_muzzle_xm"] = true,
-		},
-    },
+    -- {
+    --     PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+    --     Category = "uplp_muzzle",
+    --     Bone = "body",
+    --     Pos = Vector(0, -0.5, 21.75),
+    --     Ang = Angle(90, 90, 180),
+    --     -- Installed = "uplp_fal_muz_long",
+    --     ExcludeElements = {"uplp_pkm_brl_aek"},
+	-- 	RejectAttachments = {
+	-- 		["uplp_muzzle_3h"] = true,
+	-- 		["uplp_muzzle_cage"] = true,
+	-- 		["uplp_muzzle_fat"] = true,
+	-- 		["uplp_muzzle_fhider"] = true,
+	-- 		["uplp_muzzle_slim"] = true,
+	-- 		["uplp_muzzle_brake"] = true,
+	-- 		["uplp_muzzle_zenit"] = true,
+	-- 		["uplp_muzzle_xm"] = true,
+	-- 	},
+    -- },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = "uplp_tac",
-        Bone = "body",
-        Pos = Vector(-1.175, -0.4, 10.75),
-        Ang = Angle(90, 90, -90),
+        -- Bone = "body",
+        -- Pos = Vector(-1.175, -0.4, 10.75),
+        Bone = "tac",
+        Pos = Vector(0, 0, 0),
+        -- Ang = Angle(90+0.08165, 90+0.0243, -90),
+        -- Ang = Angle(90-0.08165, 0, 0),
+        Ang = Angle(90, 0, 0),
+        -- Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, 0, 0),
         ExcludeElements = {"uplp_no_tactical"},
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_grip") .. " | " .. ARC9:GetPhrase("uplp_category_bipod"),
-        Category = {"uplp_grip_vert"},
+        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        Category = {"uplp_grip_vert", "uplp_pkm_hg"},
         -- DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1, 6),
-        Ang = Angle(90, 90, 180),
-        ExcludeElements = {"uplp_pkm_rec_bullpup"},
+        -- Ang = Angle(90, 90, 180),
+        Ang = Angle(90-10, 90, 180),
+        ExcludeElements = {"uplp_pkm_rec_bullpup", "uplp_no_grip"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
@@ -736,6 +742,7 @@ SWEP.Attachments = {
         -- DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0),
+        Icon_Offset = Vector(-7, 0, 0),
         Ang = Angle(90, 90, 180),
         -- Installed = "uplp_ar18_stock_fixed",
     },
@@ -747,9 +754,9 @@ SWEP.Attachments = {
         Pos = Vector(0, 1.5, 13),
         Ang = Angle(90, 90, 180),
         Installed = "uplp_pkm_bipod",
-        ExcludeElements = {"uplp_pkm_rec_bullpup"},
-		MergeSlots = {4},
-		Hidden = true,
+        ExcludeElements = {"uplp_pkm_rec_bullpup", "uplp_no_bipod"},
+		-- MergeSlots = {3},
+		-- Hidden = true,
     },
 
 
@@ -758,8 +765,10 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
-        Bone = "body",
-        Pos = Vector(0.775, 0, -5.5),
+        -- Bone = "topcover",
+        -- Pos = Vector(0.9, -0.5, -3.6),
+        Bone = "charm",
+        Pos = Vector(0.018, 0, 0),
         Ang = Angle(90, 0, -90),
     },
 
@@ -818,20 +827,19 @@ end
 -- eft pkm code lolol
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if anim == "reload" or anim == "reload_empty" then
-        if anim == "reload" and swep:GetUPLPShootedRounds() == 0 then swep:SetUPLPShootedRounds(-1) end
-        local timrr = swep:GetAnimationEntry(anim).MagSwapTime
+    if SERVER and (anim == "reload" or anim == "reload_empty") then
+        local timrr = swep:GetAnimationEntry(anim).MagSwapTime or 1.3333
 
-        timer.Simple(timrr, function()
+        swep:SetTimer(timrr, function()
             if IsValid(swep) and IsValid(swep:GetOwner()) and swep:GetReloading() then
                 swep:SetUPLPShootedRounds(anim == "reload_empty" and 1 or 0)
             end
-        end)
+        end, "zerolink")
 
         return animla
     end
 
-    if anim == "ready" then
+    if SERVER and anim == "ready" then
         swep:SetUPLPShootedRounds(1)
     end
 end
@@ -890,7 +898,7 @@ SWEP.Hook_HideBones = function(swep, bons)
     return swep.UPLPshellsfunnytable
 end
 
-SWEP.DropMagazineTime = 38/30
+SWEP.DropMagazineTime = 1.25
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/shells/belt_pkm_dropped.mdl"
 
 SWEP.DynamicConditions = {

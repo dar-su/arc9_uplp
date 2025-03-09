@@ -109,17 +109,20 @@ ATT.Hook_TranslateSource = function(wep, anim)
     return anim .. "_bp"
 end
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "idle" then return "idle_bp" end -- hackk for scopes, i'm amazed it worked
+end
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small"},
+        Category = {"uplp_optic_micro", "uplp_optic_small"},
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(-7, 0, -3.3),
 		Ang = Angle(0, 0, 0),
 		ExtraSightDistance = 4,
 		Installed = "uplp_optic_rmr",
         Integral = "uplp_optic_rmr",
-		CorrectiveAng = -Angle(-0.083013 + 0.020862, -0.019307 - 0.001625, 3.46919 + 1.66288), -- Why isn't this working? Also, what the fuck is this value?
     },
 }
 
@@ -159,3 +162,26 @@ ATT.Category = "uplp_pkm_bipod"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_bipod")
+
+
+---------- uplp_pkm_handguard
+
+ATT = {}
+
+ATT.PrintName = "Handguard"
+ATT.CompactName = "Handguard"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = -2
+ATT.Icon = Material(iconfolder .. "hg.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_grenadier.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(1, -0.2, -1.4)
+
+ATT.Category = "uplp_pkm_hg"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ExcludeElements = {"uplp_pkm_brl_aek"}
+
+ARC9.LoadAttachment(ATT, "uplp_pkm_handguard")

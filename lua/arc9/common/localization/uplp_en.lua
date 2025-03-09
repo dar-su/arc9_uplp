@@ -2992,7 +2992,7 @@ L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tacti
 ////// Receiver
 L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
 L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
-L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and a <color=100,255,100>small red dot sight</color>."
+L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and a <color=100,255,100>small red dot sight</color> (replaceable)."
 
 ////// Misc.
 L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
