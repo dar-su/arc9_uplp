@@ -735,7 +735,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_ar18_scope"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_ar18_scope"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.044, -0.25, 1.0),

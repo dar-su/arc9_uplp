@@ -843,7 +843,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),

@@ -471,7 +471,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(5,10)
     end
     -- if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] then
-    --     if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
+    --     if eles["uplp_optic_micro"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
     --         mdl:SetBodygroup(1,1)
     --     end
     -- end
@@ -560,7 +560,7 @@ SWEP.AttachmentElements = {
 SWEP.Attachments = {
     {
         PrintName = "Optic",
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
         Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),

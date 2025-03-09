@@ -22,7 +22,7 @@ SWEP.StandardPresets = {}
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         Bone = "body",
         Pos = Vector(0, -0.1, 0.5),
         Ang = Angle(90, 90, 180),

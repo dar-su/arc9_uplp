@@ -120,7 +120,7 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
@@ -216,7 +216,7 @@ ATT.HoloSightSize = 355
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
@@ -263,7 +263,7 @@ ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
@@ -310,7 +310,7 @@ ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
@@ -1045,7 +1045,7 @@ ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
+ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_small)
@@ -1093,7 +1093,7 @@ ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_small"
+ATT.Category = "uplp_optic_micro"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.InvAtt = "uplp_optic_d1"
 
@@ -1138,7 +1138,7 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
+ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_small)
@@ -1266,7 +1266,7 @@ ATT.HoloSightSize = 188
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_backup"}
+ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_small)
@@ -1309,7 +1309,7 @@ ATT.HoloSightSize = 188
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_small"
+ATT.Category = "uplp_optic_micro"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.InvAtt = "uplp_optic_rmr"
 
@@ -1354,7 +1354,7 @@ ATT.HoloSightSize = 500
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
@@ -1408,7 +1408,7 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 660/1080
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_mid)
@@ -1463,7 +1463,7 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 556/1080
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
@@ -2234,7 +2234,7 @@ ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
@@ -2284,7 +2284,7 @@ ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0.2, 0, -0.1)
@@ -2334,7 +2334,7 @@ ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
@@ -2568,7 +2568,7 @@ ATT.HoloSightSize = 466
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, -0.1)
@@ -2758,7 +2758,7 @@ ATT.RTScopePostInvertFunc = function(swep)
 end
 
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0.15, 0, -0.1)

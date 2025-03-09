@@ -830,7 +830,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    if eles["uplp_optic_small"] then
+    if eles["uplp_optic_micro"] then
         if eles["uplp_m9_receiver_raffica"] then
             mdl:SetBodygroup(1, 4)
         else
@@ -885,7 +885,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small"},
+        Category = {"uplp_optic_micro"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         ExcludeElements = {"nooptic"},
         Bone = "slide",
