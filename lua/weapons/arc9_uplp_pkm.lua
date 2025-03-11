@@ -15,15 +15,15 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_mg") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_mg") -- In the Spawnmenu
 
 SWEP.Trivia = {
-	[ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_pkm_real"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_pkm_real"),
 
-	[ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
-	[ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x54mmr"),
-	[ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
-																		ARC9:GetPhrase( "uplp_mechanism_gasoperated_shortstroke" ),
-																		ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
-	[ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
-	[ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
+    [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_pkm_manufacturer" ),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x54mmr"),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_gasoperated_shortstroke" ),
+                                                                        ARC9:GetPhrase( "uplp_mechanism_openbolt" ) ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1961" ),
 }
 
 SWEP.Credits = {
@@ -78,16 +78,16 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 15 -- Damage dealt after maximum range
+SWEP.DamageMax = 36 -- Damage dealt point-blank
+SWEP.DamageMin = 22 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 18 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 45 / ARC9.HUToM
-SWEP.RangeMax = 150 / ARC9.HUToM
+SWEP.RangeMin = 30 / ARC9.HUToM
+SWEP.RangeMax = 120 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -101,7 +101,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 100
 
 -- Recoil
-SWEP.Recoil = 1.2
+SWEP.Recoil = 1.3
 SWEP.RecoilUp = 1.1
 SWEP.RecoilSide = 1.3
 
@@ -111,11 +111,12 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.75
-SWEP.RecoilAutoControlMultShooting = 0.2
+SWEP.RecoilAutoControl = 2
+SWEP.RecoilAutoControlMultShooting = 1
 
-SWEP.RecoilMultRecoil = 0.65
-SWEP.RecoilMultSights = 0.875
+SWEP.RecoilMultRecoil = 0.7
+SWEP.RecoilRandomSideAddRecoil = 1
+SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.85
 
 
@@ -140,35 +141,40 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.01
+SWEP.Spread = 0.007
+SWEP.SpreadAddHipFire = 0.015
 
-SWEP.SpreadAddRecoil = 0.045
-SWEP.SpreadAddMove = 0.025
+SWEP.SpreadAddRecoil = 0
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.05
 
+SWEP.SpreadMultRecoil = 1
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 3
+SWEP.RecoilDissipationRate = 2
 SWEP.RecoilResetTime = 0.05
-SWEP.RecoilPerShot = 0.4
+SWEP.RecoilPerShot = 0.06
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 0.2
+SWEP.RecoilModifierCapSights = 1
 
 -- Weapon handling
-SWEP.Speed = 0.85 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
-SWEP.SpeedMultShooting = 0.9
+SWEP.Speed = 0.8 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.5 / 0.85 -- When aiming
+SWEP.SpeedMultShooting = 0.5
 
-SWEP.AimDownSightsTime = 0.35 - 0.05 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.38 - 0.05 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.45 - 0.05 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.48 - 0.05 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 0
+SWEP.SwayMultSights = 2
 SWEP.BarrelLength = 35
 
 -- SWEP.Bipod = true
+SWEP.SpreadAddBipod = -0.003
+SWEP.RecoilMultBipod = 0.5
+SWEP.RecoilPerShotMultBipod = 1
 -- SWEP.CantPeek = true
 SWEP.ReloadInSights = false
 SWEP.LaserCorrectBySightAng = true
@@ -178,7 +184,7 @@ SWEP.RPM = 600 -- How fast gun shoot
 SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
-SWEP.TriggerDelayTime = 0.06 -- Time until weapon fires.
+SWEP.TriggerDelayTime = 0.1 -- Time until weapon fires.
 SWEP.TriggerDelayRepeat = false -- Whether to do it for every shot on automatics.
 SWEP.TriggerDelayCancellable = false
 
@@ -481,7 +487,7 @@ SWEP.Animations = {
         MinProgress = 0.86,
         PeekProgress = 0.875,
         RefillProgress = 0.725,
-		MagSwapTime = 40/30,
+        MagSwapTime = 40/30,
         FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
@@ -510,7 +516,7 @@ SWEP.Animations = {
         MinProgress = 0.825,
         PeekProgress = 0.8,
         RefillProgress = 0.75,
-		MagSwapTime = 40/30,
+        MagSwapTime = 40/30,
         FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
@@ -591,7 +597,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     local aekb, pkp, bp = eles["uplp_pkm_brl_aek"], eles["uplp_pkm_brl_pkp"], eles["uplp_pkm_rec_bullpup"]
 
-	local grip, tac = eles["uplp_grip_used"] or eles["uplp_pkm_handguard"], eles["uplp_tac_used"]
+    local grip, tac = eles["uplp_grip_used"] or eles["uplp_pkm_handguard"], eles["uplp_tac_used"]
 
     if aekb and grip then
         mdl:SetBodygroup(5, 0)
@@ -600,14 +606,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     elseif bp and aekb then
         mdl:SetBodygroup(5, 4)
     end
-	
+
     if bp then
-		mdl:SetBodygroup(3, 2)
-		if tac then
-			mdl:SetBodygroup(5, 3)
-		end
+        mdl:SetBodygroup(3, 2)
+        if tac then
+            mdl:SetBodygroup(5, 3)
+        end
     end
-	
+
     if wep:GetBipod() and (!grip and !bp) then
         if wep:GetEnterBipodTime() + 0.2 < CurTime() then
             mdl:SetBodygroup(2, 2)
@@ -619,27 +625,27 @@ end
 SWEP.AttachmentElements = {
     -- Barrel
     ["uplp_pkm_brl_aek"] =  { 
-	Bodygroups = { { 1, 2 } },
-	AttPosMods = {
-		[3] = { Pos = Vector(0, 1.3, 8) },
-		[7] = { Pos = Vector(0, -3.0, 7.2) },
-		}
-	},
+    Bodygroups = { { 1, 2 } },
+    AttPosMods = {
+        [3] = { Pos = Vector(0, 1.3, 8) },
+        [7] = { Pos = Vector(0, -3.0, 7.2) },
+        }
+    },
 
     ["uplp_pkm_brl_pkp"] =  { 
-	Bodygroups = { { 1, 1 } },
-	AttPosMods = {
-		-- [4] = { Pos = Vector(0, 1.3, 10) },
-		}
-	},
+    Bodygroups = { { 1, 1 } },
+    AttPosMods = {
+        -- [4] = { Pos = Vector(0, 1.3, 10) },
+        }
+    },
 
     -- Receiver & Furniture
     ["uplp_pkm_rec_bullpup"] =  { 
-	Bodygroups = { { 2, 0 }, { 4, 3 }, { 5, 3 }, { 3, 2 } },
-	AttPosMods = {
-		[2] = { Pos = Vector(0, 0, 1) },
-		}
-	},
+    Bodygroups = { { 2, 0 }, { 4, 3 }, { 5, 3 }, { 3, 2 } },
+    AttPosMods = {
+        [2] = { Pos = Vector(0, 0, 1) },
+        }
+    },
 
     -- Other
     ["uplp_pkm_bipod"] =  { Bodygroups = { { 2, 1 } } },
@@ -647,7 +653,7 @@ SWEP.AttachmentElements = {
     ["uplp_pkm_furn_zenit"] =  { Bodygroups = { { 4, 2 } } },
 
     ["uplp_optic_used"] =  { Bodygroups = { { 3, 1 } } },
-	
+
     ["uplp_tac_used"] =  { Bodygroups = { { 5, 1 } } },
     ["uplp_grip_used"] =  { Bodygroups = { { 5, 1 } } },
     ["uplp_pkm_handguard"] =  { Bodygroups = { { 5, 1 } } },
@@ -663,7 +669,7 @@ end
 
 SWEP.AttachmentTableOverrides = {
     ["uplp_grip_rk45"] = {
-		ModelAngleOffset = Angle(90+10, 90, -90), -- zero it back
+        ModelAngleOffset = Angle(90+10, 90, -90), -- zero it back
     },
 }
 
@@ -692,16 +698,16 @@ SWEP.Attachments = {
     --     Ang = Angle(90, 90, 180),
     --     -- Installed = "uplp_fal_muz_long",
     --     ExcludeElements = {"uplp_pkm_brl_aek"},
-	-- 	RejectAttachments = {
-	-- 		["uplp_muzzle_3h"] = true,
-	-- 		["uplp_muzzle_cage"] = true,
-	-- 		["uplp_muzzle_fat"] = true,
-	-- 		["uplp_muzzle_fhider"] = true,
-	-- 		["uplp_muzzle_slim"] = true,
-	-- 		["uplp_muzzle_brake"] = true,
-	-- 		["uplp_muzzle_zenit"] = true,
-	-- 		["uplp_muzzle_xm"] = true,
-	-- 	},
+    -- 	RejectAttachments = {
+    -- 		["uplp_muzzle_3h"] = true,
+    -- 		["uplp_muzzle_cage"] = true,
+    -- 		["uplp_muzzle_fat"] = true,
+    -- 		["uplp_muzzle_fhider"] = true,
+    -- 		["uplp_muzzle_slim"] = true,
+    -- 		["uplp_muzzle_brake"] = true,
+    -- 		["uplp_muzzle_zenit"] = true,
+    -- 		["uplp_muzzle_xm"] = true,
+    -- 	},
     -- },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -755,8 +761,8 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         Installed = "uplp_pkm_bipod",
         ExcludeElements = {"uplp_pkm_rec_bullpup", "uplp_no_bipod"},
-		-- MergeSlots = {3},
-		-- Hidden = true,
+        -- MergeSlots = {3},
+        -- Hidden = true,
     },
 
 
@@ -816,8 +822,8 @@ SWEP.HookP_NameChange = function(self, name)
 
     if bp then
         name = ARC9:GetPhrase("uplp_weapon_pkm_bp")
-	elseif pkpb and pkps then
-		name = ARC9:GetPhrase("uplp_weapon_pkm_pkp")
+    elseif pkpb and pkps then
+        name = ARC9:GetPhrase("uplp_weapon_pkm_pkp")
     end
 
     return name
