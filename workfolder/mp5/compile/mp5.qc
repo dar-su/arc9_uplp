@@ -28,7 +28,7 @@ $bodygroup "stock" {
 }  
 $bodygroup "mag" {
 	studio "mag 30.smd"
-	studio "mag 10mm.smd"
+	studio "mag 10mm epic.smd"
 	studio "mag 15.smd"
 	studio "mag 50.smd"
 }
@@ -43,7 +43,9 @@ $bodygroup "frontthing" {
 	studio "rail tac sd.smd"
 }
 
+$mostlyopaque
 $cdmaterials "models\weapons\arc9\uplp"
+
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
 $attachment "2" "bolt" 0 0 -4 rotate -10 140 180
@@ -64,6 +66,7 @@ $cbox 0 0 0 0 0 0
 $poseparameter "sights" 0 1 loop 0
 $poseparameter "firemode" 1 2 loop 0
 $poseparameter "owo" 0 1 loop 0
+$poseparameter "magspring" 0 1 loop 0
 
 $sequence "idle"{
 	"anims\idle.smd" 
@@ -82,6 +85,22 @@ $sequence "firemode_pose" {
 	"anims\idle_firemode_iron.smd"
 	blend "firemode" 1 2
  	blend "sights" 0 1
+	blendwidth 2
+	delta
+	autoplay
+	loop
+	fps 30
+	snap
+	subtract "idle" 0
+}
+
+$sequence "magspring_pose" {
+	"anims\idle2.smd"
+	"anims\idle_spring.smd"
+	// "anims\idle_iron.smd"
+	// "anims\idle_spring_iron.smd"
+	blend "magspring" 0 1
+ 	// blend "sights" 0 1
 	blendwidth 2
 	delta
 	autoplay

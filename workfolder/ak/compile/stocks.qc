@@ -32,6 +32,8 @@ $bodygroup "stock" {
 	studio "stock pt3 extended VEPR.smd" // 24 o
 	studio "stock rpk74m VEPR.smd" // 25 p
 	studio "stock skelet VEPR.smd" // 26 q
+
+	studio "stock cqr.smd" // 27 
 }
 
 $sequence "idle" {

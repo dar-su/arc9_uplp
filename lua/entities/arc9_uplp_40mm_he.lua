@@ -8,6 +8,6 @@ ENT.PrintName = "40mm HE"
 ENT.GrenadeDamage = 150
 ENT.GrenadeRadius = 300
 ENT.DragCoefficient = 0.25
-ENT.FuseTimeMin = 0.15 -- Wont explode until it fly for x seconds
+ENT.FuseTimeMin = 0.075 -- Wont explode until it fly for x seconds
 
 ENT.Model = "models/weapons/arc9/uplp_ubgl_m203_projectile.mdl"

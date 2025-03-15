@@ -266,12 +266,12 @@ end
 -- end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(20, 32.5, 5)
+SWEP.CustomizePos = Vector(18.5, 45, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(20, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(18.5, -2, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 12.5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
@@ -724,6 +724,19 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
+
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["enter_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
 }
 
 ---- Attachments
@@ -836,7 +849,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),
@@ -976,7 +989,7 @@ SWEP.Attachments = {
         ExcludeElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.5, 6),
+        Pos = Vector(0, 1.5 + 1.5, 6),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -985,7 +998,7 @@ SWEP.Attachments = {
         ExcludeElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, 2),
+        Pos = Vector(0, 2 + 1.5, 2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -994,7 +1007,7 @@ SWEP.Attachments = {
         ExcludeElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.8),
+        Pos = Vector(0, 2 + 1.5, -0.8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1003,7 +1016,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_awp_stock_tube", "uplp_awp_stock_at", "xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3.5, -10),
+        Pos = Vector(0, 3.5 + 1.5, -10),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1022,7 +1035,7 @@ SWEP.Attachments = {
         RequireElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.3),
+        Pos = Vector(0, 2 + 1.5, -0.3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1031,7 +1044,7 @@ SWEP.Attachments = {
         RequireElements = {"xstock"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1, -3),
+        Pos = Vector(0, 1 + 1.5, -3),
         Ang = Angle(90, 90, 180),
     },
 }

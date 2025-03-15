@@ -57,13 +57,13 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_beretta.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.TPIKParentToSpine4 = true
+-- SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-8, 3, -4.5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(7, -7, -4),
-    TPIKAng = Angle(-10, 65, 90),
+    TPIKPos = Vector(-16, 3, -2),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -112,7 +112,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 15
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1 * 0.75
 SWEP.RecoilUp = 1.2
 SWEP.RecoilSide = 0.9
 
@@ -122,10 +122,10 @@ SWEP.RecoilRandomSide = 0.75
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.15
+SWEP.RecoilAutoControl = 1.15 * 1.5
 
-SWEP.RecoilMultSights = 0.95
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
@@ -216,7 +216,7 @@ SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(14, -1.93, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -832,7 +832,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    if eles["uplp_optic_small"] then
+    if eles["uplp_optic_micro"] then
         if eles["uplp_m9_receiver_raffica"] then
             mdl:SetBodygroup(1, 4)
         else
@@ -866,19 +866,11 @@ SWEP.AttachmentElements = {
 
 }
 
-local fuckthis = 0
-SWEP.Hook_Think = function(swep)
-    if fuckthis < CurTime() then
-        fuckthis = CurTime() + 0.5
-        if swep:GetElements()["uplp_m9_receiver_raffica"] then
-            local vm, wm = swep:GetVM(), swep:GetWM()
-            if IsValid(vm) then vm:SetPoseParameter("raffica", 1) end -- different animations for raffica
-            if IsValid(wm) then wm:SetPoseParameter("raffica", 1) end -- tpik
-        else
-            local vm, wm = swep:GetVM(), swep:GetWM()
-            if IsValid(vm) then vm:SetPoseParameter("raffica", 0) end
-            if IsValid(wm) then wm:SetPoseParameter("raffica", 0) end
-        end
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    if swep:GetElements()["uplp_m9_receiver_raffica"] then
+        ent:SetPoseParameter("raffica", 1) -- different animations for raffica
+    else
+        ent:SetPoseParameter("raffica", 0)
     end
 end
 
@@ -895,7 +887,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small"},
+        Category = {"uplp_optic_micro"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         ExcludeElements = {"nooptic"},
         Bone = "slide",
@@ -936,7 +928,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/beretta_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, -0.5, 0.5),
+        Pos = Vector(0.5, -0.5, 0.5 + 1.5),
         Ang = Angle(90, 0, -90),
     },
     {
@@ -944,7 +936,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/beretta_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 1, 0.25),
+        Pos = Vector(0.5, 1, 0.25 + 1.5),
         Ang = Angle(90, 0, -90),
     },
     {

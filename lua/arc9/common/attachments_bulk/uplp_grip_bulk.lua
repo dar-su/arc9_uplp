@@ -18,7 +18,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz"
 -- ATT.Category = {"uplp_grip_horiz_cclamp"}
@@ -52,7 +52,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_nocclamp_grips"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_nocclamp_grips", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz_cclamp"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -86,7 +86,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -120,7 +120,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
 ATT.ActivateElements = {"uplp_grip_used"}
-ATT.ExcludeElements = {"uplp_grip_no_pdw"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -213,6 +213,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "stub.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/tac_grip_stub.mdl"
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 ATT.LHIK = true
 ATT.LHIK_Priority = 8
 
@@ -433,3 +434,40 @@ ATT.DrawFunc = function(self, model, wm)
 end
 
 ARC9.LoadAttachment(ATT, "uplp_bipod")
+
+
+---------- uplp_grip_cqr
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_grip_cqr"
+ATT.CompactName = "uplp_grip_cqr"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "cqrgrip.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_cqr.mdl"
+-- ATT.ModelBodygroups = "1"
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
+
+-- ATT.Category = "uplp_grip_horiz"
+ATT.Category = "uplp_grip_horiz_long"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- Positives
+ATT.RecoilMult = 0.725
+ATT.RecoilAutoControlMult = 1.25
+
+-- Negatives
+ATT.AimDownSightsTimeMult = 1.1
+ATT.SprintToFireTimeMult = 1.1
+
+ATT.ModelOffset = Vector(0, -1.5, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+
+ARC9.LoadAttachment(ATT, "uplp_grip_cqr")

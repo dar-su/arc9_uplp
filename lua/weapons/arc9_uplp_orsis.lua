@@ -51,14 +51,14 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50bmg.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
 -- SWEP.ShellSounds = {
---     "arc9/casings/casing_12ga_1.wav", -- add heavy shell sound!
---     "arc9/casings/casing_12ga_2.wav",
---     "arc9/casings/casing_12ga_3.wav",
---     "arc9/casings/casing_12ga_4.wav",
---     "arc9/casings/casing_12ga_1.wav",
---     "arc9/casings/casing_12ga_2.wav",
---     "arc9/casings/casing_12ga_3.wav",
---     "arc9/casings/casing_12ga_4.wav",
+--     "arc9/casings/casing_12ga_1.ogg", -- add heavy shell sound!
+--     "arc9/casings/casing_12ga_2.ogg",
+--     "arc9/casings/casing_12ga_3.ogg",
+--     "arc9/casings/casing_12ga_4.ogg",
+--     "arc9/casings/casing_12ga_1.ogg",
+--     "arc9/casings/casing_12ga_2.ogg",
+--     "arc9/casings/casing_12ga_3.ogg",
+--     "arc9/casings/casing_12ga_4.ogg",
 -- }
 
 SWEP.CaseEffectQCA = 2
@@ -253,12 +253,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(21.7, 36, 5)
+SWEP.CustomizePos = Vector(21.7, 52.5, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(23, -4, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 20, 2)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(-2, 65, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
@@ -792,6 +792,19 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
+    
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["enter_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
 }
 
 ---- Attachments
@@ -839,7 +852,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),
@@ -939,7 +952,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -1, -0.5),
+        Pos = Vector(0, -1 + 1.0, -0.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -947,7 +960,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -1, -2.5),
+        Pos = Vector(0, -1 + 1.0, -2.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -955,7 +968,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_6.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.1),
+        Pos = Vector(0, 2 + 1.5, -0.1),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -963,7 +976,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -2.8),
+        Pos = Vector(0, 2 + 1.5, -2.8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -971,7 +984,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/orsis_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2, -6),
+        Pos = Vector(0, -2, -8),
         Ang = Angle(90, 90, 180),
     },
     -- {

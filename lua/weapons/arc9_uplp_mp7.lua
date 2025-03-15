@@ -114,7 +114,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 35
 
 -- Recoil
-SWEP.Recoil = 0.8
+SWEP.Recoil = 0.8 * 0.75
 SWEP.RecoilUp = 0.65
 SWEP.RecoilSide = 0.75
 
@@ -124,18 +124,18 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1.25 * 1.5
 
-SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.04 -- Vertical tilt
+SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
 SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -228,12 +228,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(16, 28, 4)
+SWEP.CustomizePos = Vector(12, 40, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(16, -3, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -393,7 +393,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
 
             { s = pathUT .. "chback.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "chamber.ogg", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathUTREAL .. "chamber.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 60, c = ca },
         },
         IKTimeLine = {
@@ -689,7 +689,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_mp7_optic"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_mp7_optic"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.9, 0),
@@ -768,7 +768,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35, -2),
+        Pos = Vector(0, 0.35 + 1.5, -2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -776,7 +776,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0 + 1.5, 0),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -784,7 +784,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3, 1.85),
+        Pos = Vector(0, -0.3 + 0.75, 1.85),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -792,7 +792,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3, 3),
+        Pos = Vector(0, -0.3 + 0.75, 3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -803,3 +803,23 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
 }
+
+-- Moka's shit
+SWEP.Recoil = 0.4
+SWEP.RecoilAutoControl = 1.75
+SWEP.RecoilAutoControlMultShooting = 0.1
+
+SWEP.RecoilMultRecoil = 1.6
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.025
+
+SWEP.SpreadAddRecoil = 0.025
+SWEP.SpreadAddMove = 0.015
+
+SWEP.RecoilPerShot = 0.2
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

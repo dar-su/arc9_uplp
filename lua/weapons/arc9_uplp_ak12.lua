@@ -107,7 +107,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1 + 1
+SWEP.Recoil = 2 * 0.75
 SWEP.RecoilUp = 1.35
 SWEP.RecoilSide = 1.2
 
@@ -117,16 +117,16 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1.25 * 1.5
 
-SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.1 -- Vertical tilt
+SWEP.VisualRecoilUp = -0.1 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
@@ -231,12 +231,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 32.5, 5)
+SWEP.CustomizePos = Vector(16, 40, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(16, -2.5, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -1146,6 +1146,13 @@ SWEP.Animations = {
         Source = "modeswitch",
         EventTable = thetoggle
     },
+    
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
 }
 
 SWEP.Hook_TranslateSource = function(swep, anim)
@@ -1277,7 +1284,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.1, 1.5),
@@ -1412,7 +1419,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ak12_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 4),
+        Pos = Vector(0, 1.8 + 1.5, 4),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1421,7 +1428,7 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_ak_nmount"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 1.3),
+        Pos = Vector(0, 1.8 + 1.5, 1.3),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1432,7 +1439,7 @@ SWEP.Attachments = {
         RequireElements = {"can762sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0 + 1.5, 0),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1441,7 +1448,7 @@ SWEP.Attachments = {
         RequireElements = {"can762sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 3, 2),
+        Pos = Vector(0, 3 + 1.5, 2),
         Ang = Angle(90, 90, 180),
     },
 
@@ -1451,7 +1458,7 @@ SWEP.Attachments = {
         RequireElements = {"can545sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 0, 0),
+        Pos = Vector(0, 0 + 1.5, 0),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1460,7 +1467,7 @@ SWEP.Attachments = {
         RequireElements = {"can545sticker"},
         Category = "stickers",
         Bone = "mag",
-        Pos = Vector(0, 3, 1),
+        Pos = Vector(0, 3 + 1.5, 1),
         Ang = Angle(90, 90, 180),
     },
 }
@@ -1485,3 +1492,21 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
+
+-- Moka's shit
+-- SWEP.Recoil = 1.5
+SWEP.RecoilAutoControl = 2.25
+SWEP.RecoilAutoControlMultShooting = 0.15
+
+SWEP.RecoilMultSights = 0.85
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.014
+
+SWEP.SpreadAddRecoil = 0.04
+SWEP.SpreadAddMove = 0.02
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.2

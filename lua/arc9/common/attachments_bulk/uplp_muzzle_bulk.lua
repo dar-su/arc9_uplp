@@ -211,6 +211,9 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.03
 ATT.BarrelLengthAdd = 1.5
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 0.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_gk")
 
 ---------- uplp_sg_mz_heavy
@@ -233,6 +236,9 @@ ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.04
 ATT.BarrelLengthAdd = 2.5
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_heavy")
 
 ---------- uplp_sg_mz_silencer
@@ -252,7 +258,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_silencer.mdl"
 ATT.MuzzleDevice = true
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed_shotgun"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -267,6 +273,9 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer")
 
@@ -287,7 +296,7 @@ ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy_silencer.mdl"
 ATT.MuzzleDevice = true
 
 ATT.Silencer = true
-ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed_shotgun"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
@@ -302,6 +311,9 @@ ATT.SprintToFireTimeAdd = 0.04
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_silencer_heavy")
 
@@ -402,6 +414,8 @@ ATT.RPMHook = function(wep, stat)
     end
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_evilsup")
 
@@ -470,6 +484,8 @@ ATT.RPMHook = function(wep, stat)
     end
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_heavypistolsup")
 
@@ -537,6 +553,8 @@ ATT.RPMHook = function(wep, stat)
     end
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_lightsup")
 
@@ -604,6 +622,8 @@ ATT.RPMHook = function(wep, stat)
     end
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_midsup")
 
@@ -672,6 +692,9 @@ ATT.RPMHook = function(wep, stat)
     end
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_modernsup")
 
 
@@ -738,6 +761,9 @@ ATT.RPMHook = function(wep, stat)
     end
 end
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_shortsup")
 
 
@@ -769,3 +795,33 @@ ATT.RecoilRandomUpMult = 1.08
 ATT.RecoilRandomSideMult = 1.08
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_zenit")
+
+
+---------- uplp_muzzle_xm
+
+
+ATT = {}
+
+ATT.PrintName = "Commando Flash Hider"
+ATT.CompactName = "Comm. FH"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 45
+
+ATT.Icon = Material(iconfolder .. "mzxm.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_muzzles.mdl"
+ATT.ModelBodygroups = "5"
+ATT.Scale = 1.1
+
+ATT.Category = "uplp_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
+ATT.MuzzleParticleOverride = "muzzleflash_OTS"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "uplp_muzzle_xm")
+

@@ -49,14 +49,14 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 90
 SWEP.ShellSounds = {
-    "arc9/casings/casing_12ga_1.wav",
-    "arc9/casings/casing_12ga_2.wav",
-    "arc9/casings/casing_12ga_3.wav",
-    "arc9/casings/casing_12ga_4.wav",
-    "arc9/casings/casing_12ga_1.wav",
-    "arc9/casings/casing_12ga_2.wav",
-    "arc9/casings/casing_12ga_3.wav",
-    "arc9/casings/casing_12ga_4.wav",
+    "arc9/casings/casing_12ga_1.ogg",
+    "arc9/casings/casing_12ga_2.ogg",
+    "arc9/casings/casing_12ga_3.ogg",
+    "arc9/casings/casing_12ga_4.ogg",
+    "arc9/casings/casing_12ga_1.ogg",
+    "arc9/casings/casing_12ga_2.ogg",
+    "arc9/casings/casing_12ga_3.ogg",
+    "arc9/casings/casing_12ga_4.ogg",
 }
 
 SWEP.CaseEffectQCA = 2
@@ -120,7 +120,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 6
 
 -- Recoil
-SWEP.Recoil = 1 + 1
+SWEP.Recoil = 2 * 0.75
 SWEP.RecoilUp = 1.75
 SWEP.RecoilSide = 1.4
 
@@ -133,10 +133,10 @@ SWEP.RecoilRandomSide = 1.25
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1.25 * 1.25
 
-SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
@@ -243,12 +243,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 32.5, 5)
+SWEP.CustomizePos = Vector(17, 40, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(17, -2.5, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
@@ -1002,7 +1002,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.175, 1.5),
@@ -1064,6 +1064,7 @@ SWEP.Attachments = {
         Category = {"uplp_ak_grip"},
         DefaultIcon = Material(defatt2 .. "akgrip.png", "mips smooth"),
         ActiveElements = {"uplp_ak_grip"},
+        ExcludeElements = {"uplp_no_pgrip"},
         Bone = "body",
         RejectAttachments = {
         ["uplp_ak_grip_molot"] = true,
@@ -1117,7 +1118,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/vepr_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35, 5.4),
+        Pos = Vector(0, 0.6, 5.4 + 1.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1125,7 +1126,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/vepr_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2, -0.5),
+        Pos = Vector(0, 2 + 1.5, -0.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1133,7 +1134,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/vepr_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.5, -1.8),
+        Pos = Vector(0, 0.5 + 0.5, -1.8 - 1.5),
         Ang = Angle(90, 90, 180),
     },
     {

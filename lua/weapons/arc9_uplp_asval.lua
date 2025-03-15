@@ -140,7 +140,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1 * 0.75
 SWEP.RecoilUp = 1.1
 SWEP.RecoilSide = 1.2
 
@@ -150,18 +150,18 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1.25 * 1.5
 
-SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.05 -- Vertical tilt
-SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 10 -- Roll tilt
+SWEP.VisualRecoilUp = 0.01 -- Vertical tilt
+SWEP.VisualRecoilSide = -0.005 -- Horizontal tilt
+SWEP.VisualRecoilRoll = 5 -- Roll tilt
 SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -280,12 +280,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(13.5, 32.5, 4)
+SWEP.CustomizePos = Vector(13, 40, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(13.5, -2, -2)
+SWEP.CustomizeRotateAnchor = Vector(13, -2, -2)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 90
+SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -693,7 +693,7 @@ SWEP.Animations = {
     -- Inspect
 
     ["inspect"] = {
-        Source = {"inspect"},
+        Source = "inspect",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -708,13 +708,13 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
+            { t = 0.45, lhik = 0 },
+            { t = 0.65, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["inspect_sr3"] = {
-        Source = {"inspect_sr3"},
+        Source = "inspect_sr3",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -729,14 +729,14 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 0 },
+            { t = 0.45, lhik = 0 },
+            { t = 0.65, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
 
     ["fix"] = {
-        Source = {"fix"},
+        Source = "fix",
         EventTable = {
             { s = mechh, t = 0 },
             { s = pathUTC .. "cloth_2.ogg", t = 2 / 30 + 0.25, c = ca, v = 0.8 },
@@ -779,6 +779,13 @@ SWEP.Animations = {
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
+    },
+    
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
     },
 }
 
@@ -848,7 +855,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.05, 0.725, 1),
@@ -941,7 +948,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 5.75),
+        Pos = Vector(0, 1.8 + 1.5, 5.75),
         ExcludeElements = {"uplp_no_grip"},
     },
     { -- sr3
@@ -949,7 +956,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_1sr.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 5.75),
+        Pos = Vector(0, 1.8 + 1.5, 5.75),
         RequireElements = {"uplp_no_grip"},
     },
     {
@@ -957,7 +964,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 3.5),
+        Pos = Vector(0, 1.8 + 1.5, 3.5),
         ExcludeElements = {"vssm_dc"},
     },
 
@@ -966,7 +973,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, -1),
+        Pos = Vector(0, 1.8 + 1.5, -1),
         ExcludeElements = {"vssm_dc"},
     },
 
@@ -975,7 +982,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_2m.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, 3.5),
+        Pos = Vector(0, 1.8 + 1.5, 3.5),
         RequireElements = {"vssm_dc"},
     },
 
@@ -984,7 +991,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/val_3m.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1.8, -1),
+        Pos = Vector(0, 1.8 + 1.5, -1),
         RequireElements = {"vssm_dc"},
     },
 }
@@ -1016,3 +1023,19 @@ SWEP.Hook_ModifyElements = function(self, eles)
 
     return eles 
 end
+
+-- Moka's shit
+SWEP.Recoil = 0.5
+SWEP.RecoilAutoControl = 1.5
+SWEP.RecoilAutoControlMultShooting = 0.05
+
+SWEP.RecoilMultSights = 0.875
+
+SWEP.Spread = 0
+SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddRecoil = 0.028
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.05
+
+SWEP.RecoilModifierCapSights = 0.1

@@ -41,7 +41,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.015",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.015",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -105,7 +105,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -238,7 +238,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -294,7 +294,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -351,7 +351,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.0125",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0125",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -407,7 +407,7 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.spread") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-0.01",
+[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.01",
 -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
 }
 
@@ -437,11 +437,11 @@ ATT.CompactName = "M40 GL"
 ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
 ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
 ATT.SortOrder = -99
-ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Abillity to shoot grenades"] = "Yeah",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Damage"] = "150 DMG",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Radius"] = "7.6 m",
-}
+-- ATT.CustomPros = {
+    -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Abillity to shoot grenades"] = "Yeah",
+    -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Damage"] = "150 DMG",
+    -- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. "Grenade Radius"] = "7.6 m",
+-- }
 
 ATT.AimDownSightsTimeAdd = 0.15
 ATT.SprintToFireTimeAdd = 0.2

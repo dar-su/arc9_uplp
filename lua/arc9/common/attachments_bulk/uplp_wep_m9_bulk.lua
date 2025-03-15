@@ -66,6 +66,9 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.04
 ATT.SpeedMultSights = 0.9
 
+ATT.RecoilAutoControlMult = 1.25
+ATT.RecoilAutoControlMultShooting = 0.2
+
 ATT.Sights = {
     {
         Pos = Vector(-1.92, -2, 0.73),
@@ -139,6 +142,9 @@ ATT.RecoilUpMult = 0.9
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SpeedMultSights = 0.9
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_sc")
 
 ---------- uplp_m9_receiver_robocop
@@ -189,8 +195,6 @@ ATT.ReloadHideBonesFirstPerson = true
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/beretta_mag_robo.mdl"
 ATT.DropMagazineVelocity = Vector(0, 40, 0)
 
-ATT.CustomizePos = Vector(16, 30, 4)
-
 ATT.RestPos = Vector(4, 1, -13)
 ATT.RestAng = Angle(-2, 60, -6)
 
@@ -228,6 +232,9 @@ ATT.AimDownSightsTimeAdd = 0.07
 ATT.SprintToFireTimeAdd = 0.06
 ATT.SpeedMultSights = 0.75
 ATT.RangeMaxAdd = 8 / ARC9.HUToM
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 5, 1.5) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, -0.5, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_robocop")
 

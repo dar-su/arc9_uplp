@@ -1,16 +1,14 @@
 L = {}
 
-local lineb = "\n"
-
 local changeammo = {
-pistol = lineb .. "Byter patrontyp till <color=255,255,100>Pistol Ammo</color>.",
-["357"] = lineb .. "Byter patrontyp till <color=255,255,100>Magnum Ammo</color>.",
-smg1 = lineb .. "Byter patrontyp till <color=255,255,100>Karbin Ammo</color>.",
-ar2 = lineb .. "Byter patrontyp till <color=255,255,100>Gevärs Ammo</color>.",
-buckshot = lineb .. "Byter patrontyp till <color=255,255,100>Hagelbössa Ammo</color>.",
-sniperpenetratedround = lineb .. "Byter patrontyp till <color=255,255,100>Prickskytt. Ammo</color>.",
-smg1_grenade = lineb .. "Byter patrontyp till <color=255,255,100>Gevärsgranater</color>.",
-xbowbolt = lineb .. "Byter patrontyp till <color=255,255,100>Armborst Bultar</color>.",
+pistol = "\nByter patrontyp till <color=255,255,100>Pistol Ammo</color>.",
+["357"] = "\nByter patrontyp till <color=255,255,100>Magnum Ammo</color>.",
+smg1 = "\nByter patrontyp till <color=255,255,100>Karbin Ammo</color>.",
+ar2 = "\nByter patrontyp till <color=255,255,100>Gevärs Ammo</color>.",
+buckshot = "\nByter patrontyp till <color=255,255,100>Hagelbössa Ammo</color>.",
+sniperpenetratedround = "\nByter patrontyp till <color=255,255,100>Prickskytt. Ammo</color>.",
+smg1_grenade = "\nByter patrontyp till <color=255,255,100>Gevärsgranater</color>.",
+xbowbolt = "\nByter patrontyp till <color=255,255,100>Armborst Bultar</color>.",
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -38,35 +36,25 @@ L["uplp_country_usa"] = "Förenta Staterna"
 /////////// Caliber
 L["uplp_caliber"] = "Kaliber3"
 
-L["uplp_caliber_7.62x39mm"] = "7,62×39 mm Sovjet"
-L["uplp_caliber_7.62x51mm"] = "7,62×51 mm"
-L["uplp_caliber_5.56x45mm"] = "5,56×45 mm"
-L["uplp_caliber_5.45x39mm"] = "5,45×39 mm"
+L["uplp_caliber_7.62x39mm"] = "7,62 × 39 mm Sovjet"
+L["uplp_caliber_7.62x51mm"] = "7,62 × 51 mm"
+L["uplp_caliber_7.62x54mmr"] = "7,62 × 54 mm R"
+L["uplp_caliber_5.56x45mm"] = "5,56 × 45 mm"
+L["uplp_caliber_5.45x39mm"] = "5,45 × 39 mm"
 L["uplp_caliber_12gauge"] = "12-Kaliber"
 L["uplp_caliber_50ae"] = ".50 AE"
-L["uplp_caliber_5.7x28mm"] = "FN 5,7×28 mm"
-L["uplp_caliber_4.6x30mm"] = "HK 4,6×30 mm"
-L["uplp_caliber_9x19mm"] = "9×19 mm Parabellum"
+L["uplp_caliber_5.7x28mm"] = "FN 5,7 × 28 mm"
+L["uplp_caliber_4.6x30mm"] = "HK 4,6 × 30 mm"
+L["uplp_caliber_9x19mm"] = "9 × 19 mm Parabellum"
 L["uplp_caliber_.338"] = ".338 Lapua"
 L["uplp_caliber_.308"] = ".308 Winchester"
-L["uplp_caliber_127x108mm"] = "12,7×108 mm Sovjet"
-L["uplp_caliber_9x39mm"] = "9×39 mm"
+L["uplp_caliber_127x108mm"] = "12,7 × 108 mm Sovjet"
+L["uplp_caliber_9x39mm"] = "9 × 39 mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
+L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Tillverkare2"
-
-L["uplp_manufacturer_ai"] = "Accuracy International"
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "FN Herstal"
-L["uplp_manufacturer_hk"] = "Heckler & Koch"
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
-L["uplp_manufacturer_magnum"] = "Magnum Research"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
-L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "År5"
@@ -86,32 +74,37 @@ L["uplp_mechanism_boltaction"] = "Cylinderrepeter"
 L["uplp_mechanism_pumpaction"] = "Pumprepeter"
 L["uplp_mechanism_rollerdelay"] = "Halvreglat slutstycke"
 L["uplp_mechanism_closedbolt"] = "Stängt slutstycke"
+L["uplp_mechanism_openbolt"] = "Öppet slutstycke"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
+L["uplp_mechanism_doubleaction"] = "Double-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
+L["uplp_mechanism_gasoperated_shortstroke"] = "Kort gaslås"
+L["uplp_mechanism_gasoperated_longstroke"] = "Långt gaslås"
 
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
 L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
 L["uplp_mechanism_browning"] = "Browning-slutstycke"
+L["uplp_mechanism_shortstroke"] = "Kort slutstycke"
+L["uplp_mechanism_longstroke"] = "Långt slutstycke"
 
 /////////// Authors
 L["uplp_assets"] = "Originala Tillgångar1"
 L["uplp_animations"] = "Animationer2"
-L["uplp_lua"] = "Vapen LUA3"
+L["uplp_lua"] = "Vapen-LUA3"
 L["uplp_sounds"] = "Ljud4"
-L["uplp_general"] = "Modell- & animationredigering5"
+L["uplp_general"] = "Modell- & Animationredigering5"
 
 /////////// Weapon Categories
-L["uplp_category_weapon_ar"] = "Automatkarbiner"
-L["uplp_category_weapon_melee"] = "Närstridsvapen"
-L["uplp_category_weapon_mg"] = "Kulsprutor"
-L["uplp_category_weapon_pistol"] = "Pistoler"
-L["uplp_category_weapon_shotgun"] = "Hagelbössor"
-L["uplp_category_weapon_smg"] = "Kulsprutepistoler"
-L["uplp_category_weapon_sniper"] = "Prickskyttegevär"
-
-L["uplp_category_weapon_heavy"] = "Tunga Vapen"
+L["uplp_category_weapon_ar"] = "1Automatkarbiner"
+L["uplp_category_weapon_mg"] = "3Kulsprutor"
+L["uplp_category_weapon_pistol"] = "6Pistoler"
+L["uplp_category_weapon_shotgun"] = "4Hagelbössor"
+L["uplp_category_weapon_smg"] = "2Kulsprutepistoler"
+L["uplp_category_weapon_sniper"] = "5Prickskyttegevär"
+L["uplp_category_weapon_utils"] = "7Verktyg"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Automatkarbin"
@@ -137,6 +130,7 @@ L["uplp_category_charm"] = "Smycke"
 L["uplp_category_dovetail"] = "Laxstjärt"
 L["uplp_category_dustcover"] = "Dammskydd"
 L["uplp_category_extra"] = "Extras"
+L["uplp_category_furniture"] = "Delar"
 L["uplp_category_gasblock"] = "Gasregulator"
 L["uplp_category_grip"] = "Framgrepp"
 L["uplp_category_handguard"] = "Handskydd"
@@ -243,13 +237,9 @@ L["uplp_optic_elcan.printname"] = "4x Stridssikte"
 L["uplp_optic_elcan.compactname"] = "4x Strid"
 L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-12x Variabel Zoom Kikarsikte med Avståndsmätare"
-L["uplp_optic_bigass.compactname"] = "8-12x VZK-A"
+L["uplp_optic_bigass.printname"] = "8-16x Variabel Zoom Kikarsikte med Avståndsmätare"
+L["uplp_optic_bigass.compactname"] = "8-16x VZK-A"
 L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är." .. desc_bigoptic
-
--- L["uplp_optic_bigass_thermal.printname"] = "8-12x Variabel Zoom Värmesikte med Avståndsmätare"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZV-A"
--- L["uplp_optic_bigass_thermal.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är.\n- Värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
@@ -282,6 +272,10 @@ L["uplp_optic_rmr.description"] = "Kompakt rödpunktsikte gjorda för handeldvap
 L["uplp_optic_rmrhigh.printname"] = "XW-Rödpunktsikte med Raiser"
 L["uplp_optic_rmrhigh.compactname"] = "XW R"
 L["uplp_optic_rmrhigh.description"] = "Kompakt rödpunktsikte gjorda för handeldvapen och mindre kaliber skjutvapen." .. desc_smalloptic
+
+L["uplp_optic_genericrds.printname"] = "HawkEye Precision Rödpunktsikte"
+L["uplp_optic_genericrds.compactname"] = "HawkEye"
+L["uplp_optic_genericrds.description"] = "Klassiskt rödpunktsikte som har klonats och kopierats enda sedan den introducerats." .. desc_cqcoptic
 
 L["uplp_optic_notacog.printname"] = "3x Militärsikte"
 L["uplp_optic_notacog.compactname"] = "3x Militär"
@@ -359,6 +353,10 @@ L["uplp_optic_okp.printname"] = "OPWK-B Reflexsikte"
 L["uplp_optic_okp.compactname"] = "OPWK"
 L["uplp_optic_okp.description"] = "Slät och lätt reflexsikte av ryskt ursprung." .. desc_cqcoptic
 
+L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
+L["uplp_optic_thermholo.compactname"] = "Aegis"
+L["uplp_optic_thermholo.description"] = "Kompakt, holografiskt värmesikte med låg vikt gjort av Aegis Precision." .. desc_cqcoptic
+
 L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
 L["uplp_optic_dedal.compactname"] = "12x CWI"
 L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12x magnifiering från Cerberus Weapons Institude gjord för militär användning." .. desc_bigoptic
@@ -421,6 +419,10 @@ L["uplp_grip_rk45.printname"] = "Zenith 45-Gradersgrepp"
 L["uplp_grip_rk45.compactname"] = "Zenith 45-G"
 L["uplp_grip_rk45.description"] = "Vinklat framgrepp lutat 45 grader gjort för dem flesta RIS-skena kompatibla skjutvapnen."
 
+L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\"-Framgrepp"
+L["uplp_grip_cqr.compactname"] = "Ares"
+L["uplp_grip_cqr.description"] = "Anpassat, tungt framgrepp gjort av PAWCOs \"Ares\"-avdelning."
+
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Benstöd"
 L["uplp_bipod.compactname"] = "WildCat X"
@@ -480,6 +482,11 @@ L["uplp_muzzle_shortsup.description"] = "Liten och kompakt ljuddämpare som däm
 L["uplp_muzzle_zenit.printname"] = "Zenith-Mynningsbroms"
 L["uplp_muzzle_zenit.compactname"] = "Zenith-MB"
 L["uplp_muzzle_zenit.description"] = "Modern mynningsbroms gjord för dem flesta pistol och gevär kaliber som sänker generell rekyl."
+
+////// Set 3
+L["uplp_muzzle_xm.printname"] = "Kommando Flamdämpare"
+L["uplp_muzzle_xm.compactname"] = "Komm. FD"
+L["uplp_muzzle_xm.description"] = "Gammaldags flamdämpare gjord för ganska korta AR-15-gevär."
 
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Hagelgevär Full Choke"
@@ -598,7 +605,7 @@ L["uplp_sticker_pawgray.description"] = "ooo den glänser.\n\nKlistermärke inkl
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
-L["uplp_weapon_ak_desc"] = "Automatkarbinen AK, designad år 1947, är känd för sin robusta pålitlighet och enkelhet. Den avfyrar vanligtvis kalibern 7,62×39mm och har vidtagna användningsområden av militära styrkor och rebellgrupper världen över på grund av sin hållbarhet och förmåga att skjuta både i enkelskott och automatiskt."
+L["uplp_weapon_ak_desc"] = "Automatkarbinen AK, designad år 1947, är känd för sin robusta pålitlighet och enkelhet. Den avfyrar vanligtvis kalibern 7,62 × 39 mm och har vidtagna användningsområden av militära styrkor och rebellgrupper världen över på grund av sin hållbarhet och förmåga att skjuta både i enkelskott och automatiskt."
 
 L["uplp_weapon_ak12"] = "AK M23"
 L["uplp_weapon_ak12_desc"] = "AK M23 är ett modernt automatgevär designat i Ryssland, avsett att vara en uppdaterad version av den ikoniska AK 5,45. Det har förbättrad ergonomi, modularitet och ökad noggrannhet samtidigt som det behåller den berömda tillförlitligheten hos AK-serien."
@@ -609,7 +616,7 @@ L["uplp_weapon_ak_smg_desc"] = "Diverse kompakta kulsprutepistoler baserade på 
 L["uplp_weapon_ak_762"] = "%s 7,62"
 L["uplp_weapon_ak_545"] = "%s 5,45"
 L["uplp_weapon_ak_556"] = "%s 5,56"
-L["uplp_weapon_ak_9x39"] = "%s 9×39"
+L["uplp_weapon_ak_9x39"] = "%s 9 × 39"
 L["uplp_weapon_ak_rpk"] = "HPK"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
@@ -632,43 +639,43 @@ L["uplp_weapon_ak_manufacturer"] = "Izhmash"
 ////// Barrels
 L["uplp_ak_brl_16.printname"] = "400mm AK M10 Pipa"
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
-L["uplp_ak_brl_16.description"] = "Standard 400mm pipa som används på AK M10-gevär."
+L["uplp_ak_brl_16.description"] = "Standard 400 mm pipa som används på AK M10-gevär."
 
 L["uplp_ak_brl_comp.printname"] = "300mm AK M10 Pipa"
 L["uplp_ak_brl_comp.compactname"] = "300mm"
-L["uplp_ak_brl_comp.description"] = "Kort 300mm pipa som används på AK M10-gevär."
+L["uplp_ak_brl_comp.description"] = "Kort 300 mm pipa som används på AK M10-gevär."
 
 L["uplp_ak_brl_akm.printname"] = "400mm AK 7,62 Pipa"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
-L["uplp_ak_brl_akm.description"] = "Standard 400mm pipa som används på AK 7,62."
+L["uplp_ak_brl_akm.description"] = "Standard 400 mm pipa som används på AK 7,62."
 
 L["uplp_ak_brl_rpk.printname"] = "585mm HPK-Pipa"
 L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Tung 585mm pipa som används på HPK.\nKommer med <color=100,255,100>inbyggt benstöd</color>."
+L["uplp_ak_brl_rpk.description"] = "Tung 585 mm pipa som används på HPK.\nKommer med <color=100,255,100>inbyggt benstöd</color>."
 
 L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Pipa"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
-L["uplp_ak_brl_109.description"] = "Längre 432mm pipa som används på AK M10-7:an med dess inbyggda \"Balanced Automatics Recoil System\".\n(\"Balanserad Automatiskt Rekylsystem\")"
+L["uplp_ak_brl_109.description"] = "Längre 432 mm pipa som används på AK M10-7:an med dess inbyggda \"Balanced Automatics Recoil System\".\n(\"Balanserad Automatiskt Rekylsystem\")"
 
 L["uplp_ak_brl_su.printname"] = "203mm Short-Pipa"
 L["uplp_ak_brl_su.compactname"] = "203mm Short"
-L["uplp_ak_brl_su.description"] = "Kort 203mm pipa som används på AK Short."
+L["uplp_ak_brl_su.description"] = "Kort 203 mm pipa som används på AK Short."
 
 L["uplp_ak_brl_12.printname"] = "400mm AK M22 Pipa"
 L["uplp_ak_brl_12.compactname"] = "400mm M22"
-L["uplp_ak_brl_12.description"] = "Standard 400mm pipa som används på AK M22:an."
+L["uplp_ak_brl_12.description"] = "Standard 400 mm pipa som används på AK M22:an."
 
 L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Pipa"
 L["uplp_ak_brl_12k.compactname"] = "230mm 12K"
-L["uplp_ak_brl_12k.description"] = "Förkortad 230mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?\nEj kompatibel med <color=255,100,100>HPK M16 eller Lisyan Tactical Handskydd</color>."
+L["uplp_ak_brl_12k.description"] = "Förkortad 230 mm pipa som används på AK M22-K prototypen. Kanske inte finns. Eller?\nEj kompatibel med <color=255,100,100>HPK M16 eller Lisyan Tactical Handskydd</color>."
 
-L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Pipa"
+L["uplp_ak_brl_19.printname"] = "483mm AK M23 5,56 Pipa"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
-L["uplp_ak_brl_19.description"] = "Lite längre 483mm pipa som används på AK M23 5.56, en 5,56×45mm exportversion av AK M23:an."
+L["uplp_ak_brl_19.description"] = "Lite längre 483 mm pipa som används på AK M23 5,56, en 5,56 × 45mm exportversion av AK M23:an."
 
 L["uplp_ak_brl_rpk16.printname"] = "585mm HPK M16 Pipa"
 L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk16.description"] = "Tung 585mm pipa som används på HPK M16."
+L["uplp_ak_brl_rpk16.description"] = "Tung 585 mm pipa som används på HPK M16."
 
 ////// Dust Covers
 L["uplp_ak_dc_std.printname"] = "AK 5,45 Dammskydd"
@@ -831,100 +838,100 @@ L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjort av Lisyan Tactical.\nEj kompatibel med <color=255,100,100>230mm AK M22-K Pipan</color>."
 
 ////// Magazines
-/// 7.62x39mm
+/// 7.62x39 mm
 local loaded = "\n"
-local loaded762 = loaded .. "Laddat med <color=160,160,255>7,62×39mm Sovjet</color> som används av AK 7,62, AK M10 och AK M16 5.56."
+local loaded762 = loaded .. "Laddat med <color=160,160,255>7,62 × 39 mm Sovjet</color> som används av AK 7,62, AK M10 och AK M16 5,56."
 
-L["uplp_ak_mag_762_30_std.printname"] = "30-Patroner 7,62×39mm"
+L["uplp_ak_mag_762_30_std.printname"] = "30-Patroner 7,62 × 39 mm"
 L["uplp_ak_mag_762_30_std.compactname"] = "30P 7,62"
 L["uplp_ak_mag_762_30_std.description"] = "Standard 30-patronersmagasin." .. loaded762
 
-L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7,62×39mm (Bakelit)"
+L["uplp_ak_mag_762_30_bak.printname"] = "30-Patroner 7,62 × 39 mm (Bakelit)"
 L["uplp_ak_mag_762_30_bak.compactname"] = "30P 7,62 (B)"
 L["uplp_ak_mag_762_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
 
-L["uplp_ak_mag_762_30_12.printname"] = "30-Patroner 7,62×39mm (M23-Style)"
+L["uplp_ak_mag_762_30_12.printname"] = "30-Patroner 7,62 × 39 mm (M23-Style)"
 L["uplp_ak_mag_762_30_12.compactname"] = "30P 7,62 (M23)"
-L["uplp_ak_mag_762_30_12.description"] = "30-patronersmagasin som används på AK M16 5.56-geväret." .. loaded762
+L["uplp_ak_mag_762_30_12.description"] = "30-patronersmagasin som används på AK M16 5,56-geväret." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62×39mm (Stål)"
+L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62 × 39 mm (Stål)"
 L["uplp_ak_mag_762_30_old.compactname"] = "30P 7,62 (S)"
 L["uplp_ak_mag_762_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62×39mm (Stål)"
+L["uplp_ak_mag_762_30_old.printname"] = "30-Patroner 7,62 × 39 mm (Stål)"
 L["uplp_ak_mag_762_30_old.compactname"] = "30P 7,62 (S)"
 L["uplp_ak_mag_762_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet." .. loaded762
 
-L["uplp_ak_mag_762_30_oldest.printname"] = "30-Patroner 7,62×39mm (Utjämnad Stål)"
+L["uplp_ak_mag_762_30_oldest.printname"] = "30-Patroner 7,62 × 39 mm (Utjämnad Stål)"
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30P 7,62 (US)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål. Riktigt gammal grej som faktiskt fortfarande fungerar! Du kanske borde lämna in den till ett museum?" .. loaded762
 
-L["uplp_ak_mag_762_40.printname"] = "40-Patroner 7,62×39mm (Bakelit)"
+L["uplp_ak_mag_762_40.printname"] = "40-Patroner 7,62 × 39 mm (Bakelit)"
 L["uplp_ak_mag_762_40.compactname"] = "40P 7,62 (B)"
 L["uplp_ak_mag_762_40.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded762
 
-L["uplp_ak_mag_762_40_old.printname"] = "40-Patroner 7,62×39mm (Stål)"
+L["uplp_ak_mag_762_40_old.printname"] = "40-Patroner 7,62 × 39 mm (Stål)"
 L["uplp_ak_mag_762_40_old.compactname"] = "40P 7,62 (S)"
 L["uplp_ak_mag_762_40_old.description"] = "40-patronersmagasin gjorda av det goda gamla stålet." .. loaded762
 
-L["uplp_ak_mag_762_drum.printname"] = "75-Patroner 7,62×39mm Trumma"
+L["uplp_ak_mag_762_drum.printname"] = "75-Patroner 7,62 × 39 mm Trumma"
 L["uplp_ak_mag_762_drum.compactname"] = "75P 7,62 T"
 L["uplp_ak_mag_762_drum.description"] = "75-patroners cylindriskt trummagasin." .. loaded762
 
-/// 5,45x39mm
-local loaded545 = loaded .. "Laddat med <color=160,160,255>5,45x39mm</color> som används av AK 5,45 och derivat." .. changeammo.smg1
+/// 5,45x39 mm
+local loaded545 = loaded .. "Laddat med <color=160,160,255>5,45 × 39 mm</color> som används av AK 5,45 och derivat." .. changeammo.smg1
 
-L["uplp_ak_mag_545_30.printname"] = "30-Patroner 5,45x39mm (Polymer)"
+L["uplp_ak_mag_545_30.printname"] = "30-Patroner 5,45 × 39 mm (Polymer)"
 L["uplp_ak_mag_545_30.compactname"] = "30P 5,45 (P)"
 L["uplp_ak_mag_545_30.description"] = "30-patronersmagasin tillverkade av polymer." .. loaded545
 
-L["uplp_ak_mag_545_30_bak.printname"] = "30-Patroner 5,45x39mm (Bakelit)"
+L["uplp_ak_mag_545_30_bak.printname"] = "30-Patroner 5,45 × 39 mm (Bakelit)"
 L["uplp_ak_mag_545_30_bak.compactname"] = "30P 5,45 (B)"
 L["uplp_ak_mag_545_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45x39mm (SynPoly)"
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-Patroner 5,45 × 39 mm (SynPoly)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30P 5,45 (PM)"
 L["uplp_ak_mag_545_30_pmag.description"] = "30-patroners SPMAG tillverkad av SynPoly." .. loaded545
 
-L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45x39mm (M23-Style)"
+L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45 × 39 mm (M23-Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-patronersmagasin som används på AK M23-geväret." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-Patroner 5,45x39mm (Bakelite)"
+L["uplp_ak_mag_545_45.printname"] = "40-Patroner 5,45 × 39 mm (Bakelite)"
 L["uplp_ak_mag_545_45.compactname"] = "40P 5,45 (B)"
 L["uplp_ak_mag_545_45.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-Patroner 5,45x39mm Quadstack"
+L["uplp_ak_mag_545_60.printname"] = "52-Patroner 5,45 × 39 mm Quadstack"
 L["uplp_ak_mag_545_60.compactname"] = "52P 5,45 (Q)"
 L["uplp_ak_mag_545_60.description"] = "52-patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\nTjock jäkel. Snälla Ladda inte mer än 52 patroner!"
 
-L["uplp_ak_mag_545_drum.printname"] = "85-Patroner 5,45x39mm HPK M16 Trumma"
+L["uplp_ak_mag_545_drum.printname"] = "85-Patroner 5,45 × 39 mm HPK M16 Trumma"
 L["uplp_ak_mag_545_drum.compactname"] = "85P 5,45 T"
 L["uplp_ak_mag_545_drum.description"] = "85-patroners cylindriskt trummagasin från HPK M16." .. loaded545
 
-/// 5,56×45mm NATO
-local loaded556 = loaded .. "Laddat med <color=160,160,255>5,56×45mm</color> som används av AK M10 5,56." .. changeammo.smg1
+/// 5,56 × 45mm NATO
+local loaded556 = loaded .. "Laddat med <color=160,160,255>5,56 × 45mm</color> som används av AK M10 5,56." .. changeammo.smg1
 
-L["uplp_ak_mag_556_30.printname"] = "30-Patroner 5,56×45mm (Polymer)"
+L["uplp_ak_mag_556_30.printname"] = "30-Patroner 5,56 × 45mm (Polymer)"
 L["uplp_ak_mag_556_30.compactname"] = "30P 5,56 (P)"
 L["uplp_ak_mag_556_30.description"] = "30-patronersmagasin tillverkade av polymer." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30-Patroner 5,56×45mm (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-Patroner 5,56 × 45mm (SynPoly)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30P 5,56 (SP)"
 L["uplp_ak_mag_556_30_pmag.description"] = "30-patroners SPMAG tillverkad av SynPoly." .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30-Patroner 5,56×45mm (M23-Style)"
+L["uplp_ak_mag_556_30_12.printname"] = "30-Patroner 5,56 × 45mm (M23-Style)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30P 5,56 (M23)"
-L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin som används på AK M23 5.56-geväret." .. loaded556
+L["uplp_ak_mag_556_30_12.description"] = "30-patronersmagasin som används på AK M23 5,56-geväret." .. loaded556
 
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Patroner 7,62×51mm"
-L["uplp_ak_mag_308_20.compactname"] = "20S 7,62×51"
-L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med <color=160,160,255>7,62×51mm patroner</color> som används på AK M308-geväret." .. changeammo["357"]
+L["uplp_ak_mag_308_20.printname"] = "20-Patroner 7,62 × 51mm"
+L["uplp_ak_mag_308_20.compactname"] = "20S 7,62 × 51"
+L["uplp_ak_mag_308_20.description"] = "20-patronersmagasin laddade med <color=160,160,255>7,62 × 51mm patroner</color> som används på AK M308-geväret." .. changeammo["357"]
 
-L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9×39mm"
-L["uplp_ak_mag_939_30.compactname"] = "20S 9×39mm"
-L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med <color=160,160,255>9×39mm patroner</color> som används av AK 9mm.\nEndast ett par hundra AK 9mm gjordes!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.printname"] = "20-Patroner 9 × 39 mm"
+L["uplp_ak_mag_939_30.compactname"] = "20S 9 × 39 mm"
+L["uplp_ak_mag_939_30.description"] = "20-patronersmagasin laddade med <color=160,160,255>9 × 39 mm patroner</color> som används av AK 9mm.\nEndast ett par hundra AK 9mm gjordes!" .. changeammo.smg1
 
 ////// Muzzles
 L["uplp_ak_mz_std.printname"] = "M10 Mynningsbroms"
@@ -955,9 +962,9 @@ L["uplp_ak_mz_12.printname"] = "AK M23 Mynningsbroms"
 L["uplp_ak_mz_12.compactname"] = "AK M23 MB"
 L["uplp_ak_mz_12.description"] = "Standard mynningsbroms som används på AK M23:an."
 
-L["uplp_ak_mz_19.printname"] = "AK M23 5.56 Mynningsbroms"
-L["uplp_ak_mz_19.compactname"] = "M23 5.56 MB"
-L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK M23 5.56, en 5,56×45mm exportversion av AK M23:an."
+L["uplp_ak_mz_19.printname"] = "AK M23 5,56 Mynningsbroms"
+L["uplp_ak_mz_19.compactname"] = "M23 5,56 MB"
+L["uplp_ak_mz_19.description"] = "Standard mynningsbroms som används på AK M23 5,56, en 5,56 × 45mm exportversion av AK M23:an."
 
 L["uplp_ak_mz_rpk16.printname"] = "HPK M16 Mynningsbroms"
 L["uplp_ak_mz_rpk16.compactname"] = "HPK M16 MB"
@@ -988,6 +995,10 @@ L["uplp_ak_stock_rpk74.printname"] = "HPK M74 Kolv"
 L["uplp_ak_stock_rpk74.compactname"] = "HPK M74"
 L["uplp_ak_stock_rpk74.description"] = "Tung polymer-kolv som används av HPK M74."
 
+L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Ares\"-Kolv"
+L["uplp_ak_stock_cqr.compactname"] = "Ares"
+L["uplp_ak_stock_cqr.description"] = "Anpassad och tung kolv och pistolgrepp gjorda av PAWCOs \"Ares\"-avdelning.\nDenna var gjord specifikt för att passa AK-gevär."
+
 L["uplp_ak_stock_wood.printname"] = "Träkolv"
 L["uplp_ak_stock_wood.compactname"] = "Trä"
 L["uplp_ak_stock_wood.description"] = "Träkolv som används av AK 5,45 och AK 7,62."
@@ -1004,8 +1015,6 @@ L["uplp_ak_stock_tube12.printname"] = "Bufferrör"
 L["uplp_ak_stock_tube12.compactname"] = "Buffer"
 L["uplp_ak_stock_tube12.description"] = "Sidovikbar bufferrör montering som används av AK M23:an. Tillåter installering av AR-15-kompatibla kolvar.\nRolig fakta: Rörens diameter är en liten bit annorlunda från normala AR-15 vilket gör att dem flesta AR-15-kolvarna vinglar.\n(Men detta är ett datorspel, så... yeet)"
 
-L["uplp_ak_stock_tube.printname"] = "Bufferrör"
-L["uplp_ak_stock_tube.compactname"] = "Buffer"
 L["uplp_ak_stock_tube.description"] = "Bufferrör montering kompatibel med AK-gevär. Tillåter installering av AR-15-kompatibla kolvar."
 
 L["uplp_ak_stock_molot.printname"] = "Molot-Kolv"
@@ -1051,13 +1060,13 @@ L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Zakat\""
 L["uplp_ak_smg_rec_bizon_old.description"] = "Konverterar AK KPist. till \"Zakat\"-konfigueringen.\nMatas med ett cylindriskt 64-patronersmagasin monterad under pipan.\n<color=255,100,100>Kan ej utrusta andra Handskydd</color>."
 
 ////// Barrels
-L["uplp_ak_smg_brl_long.printname"] = "400mm Pipa"
+L["uplp_ak_smg_brl_long.printname"] = "400 mm Pipa"
 L["uplp_ak_smg_brl_long.compactname"] = "400mm"
-L["uplp_ak_smg_brl_long.description"] = "Lång 400mm pipa till AK Kpist. (\"OIZK-9\")."
+L["uplp_ak_smg_brl_long.description"] = "Lång 400 mm pipa till AK Kpist. (\"OIZK-9\")."
 
-L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Pipa"
+L["uplp_ak_smg_brl_ppk20_long.printname"] = "425 mm Pipa"
 L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
-L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425mm pipa till AK KPist. med M20-Konfigueringen."
+L["uplp_ak_smg_brl_ppk20_long.description"] = "Lång 425 mm pipa till AK KPist. med M20-Konfigueringen."
 
 ////// Receivers
 L["uplp_ak_smg_conf_ppk20.printname"] = "AK KPist. M20-Konfiguering"
@@ -1077,29 +1086,37 @@ L["uplp_weapon_ar15_manufacturer"] = "U.S. Ordnance"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ar15_barrel_10.printname"] = "254mm Pipa"
+L["uplp_ar15_barrel_10.printname"] = "254 mm Pipa"
 L["uplp_ar15_barrel_10.compactname"] = "254mm"
-L["uplp_ar15_barrel_10.description"] = "254mm pipa som används på AR-15-gevär."
+L["uplp_ar15_barrel_10.description"] = "254 mm pipa som används på AR-15-gevär."
 
-L["uplp_ar15_barrel_14.printname"] = "356mm Pipa"
+L["uplp_ar15_barrel_14.printname"] = "356 mm Pipa"
 L["uplp_ar15_barrel_14.compactname"] = "356mm"
-L["uplp_ar15_barrel_14.description"] = "356mm pipa som används på AR-15-gevär."
+L["uplp_ar15_barrel_14.description"] = "356 mm pipa som används på AR-15-gevär."
 
-L["uplp_ar15_barrel_16.printname"] = "406mm Pipa"
+L["uplp_ar15_barrel_145.printname"] = "368 mm Pipa"
+L["uplp_ar15_barrel_145.compactname"] = "368mm"
+L["uplp_ar15_barrel_145.description"] = "368 mm pipa som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_15xm.printname"] = "381 mm Pipa"
+L["uplp_ar15_barrel_15xm.compactname"] = "381mm"
+L["uplp_ar15_barrel_15xm.description"] = "381 mm pipa som används på AR-15-gevär."
+
+L["uplp_ar15_barrel_16.printname"] = "406 mm Pipa"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
-L["uplp_ar15_barrel_16.description"] = "406mm pipa som används på AR-15-gevär."
+L["uplp_ar15_barrel_16.description"] = "406 mm pipa som används på AR-15-gevär."
 
 L["uplp_ar15_barrel_16_alt.printname"] = "406mm Alternativ Pipa"
 L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
-L["uplp_ar15_barrel_16_alt.description"] = "406mm pipa som används på AR-15-gevär.\nFlyttar inte gasregulatorn vilket betyder att den inte accepterar handskydd som kräver 406mm eller längre pipor."
+L["uplp_ar15_barrel_16_alt.description"] = "406 mm pipa som används på AR-15-gevär.\nFlyttar inte gasregulatorn vilket betyder att den inte accepterar handskydd som kräver 406mm eller längre pipor."
 
-L["uplp_ar15_barrel_20.printname"] = "508mm Pipa"
+L["uplp_ar15_barrel_20.printname"] = "508 mm Pipa"
 L["uplp_ar15_barrel_20.compactname"] = "508mm"
-L["uplp_ar15_barrel_20.description"] = "508mm pipa som används på AR-15-gevär."
+L["uplp_ar15_barrel_20.description"] = "508 mm pipa som används på AR-15-gevär."
 
-L["uplp_ar15_barrel_22.printname"] = "559mm Pipa"
+L["uplp_ar15_barrel_22.printname"] = "559 mm Pipa"
 L["uplp_ar15_barrel_22.compactname"] = "559mm"
-L["uplp_ar15_barrel_22.description"] = "559mm pipa som används på AR-15-gevär."
+L["uplp_ar15_barrel_22.description"] = "559 mm pipa som används på AR-15-gevär."
 
 ////// Charging Handles
 L["uplp_ar15_chandle_modern.printname"] = "Kompakt Manöverhandtag"
@@ -1165,11 +1182,10 @@ L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
 L["uplp_ar15_gasblock_rail.description"] = "Gasregulator med inbyggd toppmonterad skena för att montera stolpkorn gjort av Centurion Industries."
 
 ////// Handguards
-local requires = "\n"
-local requires14 = requires .. "Kräver 356mm eller längre pipa."
-local requires16 = requires .. "Kräver 406mm eller längre pipa."
-local requires20 = requires .. "Kräver 508mm eller längre pipa."
-local requires22 = requires .. "Kräver 559mm eller längre pipa."
+local requires14 = "\n" .. "Kräver 356 mm eller längre pipa."
+local requires16 = "\n" .. "Kräver 406 mm eller längre pipa."
+local requires20 = "\n" .. "Kräver 508 mm eller längre pipa."
+local requires22 = "\n" .. "Kräver 559 mm eller längre pipa."
 local onlycompact = "\n" .. "Kan endast använda Kompakt Gasregulator."
 
 L["uplp_ar15_hg_grenadier.printname"] = "Grenadjär Handskydd"
@@ -1236,6 +1252,14 @@ L["uplp_ar15_hg_a1.printname"] = "A1-Handskydd"
 L["uplp_ar15_hg_a1.compactname"] = "A1"
 L["uplp_ar15_hg_a1.description"] = "Klassiskt AR-15-handskydd som användes på tidiga M16-modeller." .. requires16
 
+L["uplp_ar15_hg_riscover.printname"] = "RIS-Handskydd (Skyddad)"
+L["uplp_ar15_hg_riscover.compactname"] = "RIS (S)"
+L["uplp_ar15_hg_riscover.description"] = "Standard militär grad handskydd med inbyggt RIS-skenafunktionalitet.\nKommer med inbyggda skenaskydd som begränsar större framgrepp och stolpkorn." .. requires16
+
+L["uplp_ar15_hg_xm.printname"] = "Kommando Handskydd"
+L["uplp_ar15_hg_xm.compactname"] = "Kommando"
+L["uplp_ar15_hg_xm.description"] = "Förkortat AR-15-handskydd som används på XM117." .. requires14
+
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 Auto"
@@ -1246,61 +1270,61 @@ L["uplp_ar15_mag_45_40.printname"] = "40-Patroner .45 Auto"
 L["uplp_ar15_mag_45_40.compactname"] = "40P .45"
 L["uplp_ar15_mag_45_40.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med .45 Auto-patroner.\nUtrustad med ett anpassat förstorat 40-patronersmagasin egentligen gjort till en välkänd kulsprutepistol av israeliskt ursprung." .. changeammo.pistol
 
-/// 9x19mm
+/// 9 x 19 mm
 L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Utsvängd Magasinbrunn"
 L["uplp_ar15_stm9_magwell.compactname"] = "Magasinbrunn"
 L["uplp_ar15_stm9_magwell.description"] = "Sätter på en utsvängd magasinbrunn för snabbare omladdningar."
 
-L["uplp_ar15_mag_glock_17.printname"] = "17-Patroner 9×19mm"
-L["uplp_ar15_mag_glock_17.compactname"] = "17S 9x19"
-L["uplp_ar15_mag_glock_17.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9×19mm patroner.\nUtrustat med ett 17-patronersmagasin från ett välkänt österrikiskt sidovapen." .. changeammo.pistol
+L["uplp_ar15_mag_glock_17.printname"] = "17-Patroner 9 × 19 mm"
+L["uplp_ar15_mag_glock_17.compactname"] = "17S 9 x 19 mm"
+L["uplp_ar15_mag_glock_17.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9 × 19 mm patroner.\nUtrustat med ett 17-patronersmagasin från ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_33.printname"] = "33-Patroner 9×19mm"
-L["uplp_ar15_mag_glock_33.compactname"] = "33S 9x19"
-L["uplp_ar15_mag_glock_33.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9×19mm patroner.\nUtrustat med ett förstorat 33-patronersmagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
+L["uplp_ar15_mag_glock_33.printname"] = "33-Patroner 9 × 19 mm"
+L["uplp_ar15_mag_glock_33.compactname"] = "33S 9 x 19 mm"
+L["uplp_ar15_mag_glock_33.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9 × 19 mm patroner.\nUtrustat med ett förstorat 33-patronersmagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9×19mm Trumma"
-L["uplp_ar15_mag_glock_50.compactname"] = "50S 9x19"
-L["uplp_ar15_mag_glock_50.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9×19mm.\nUtrustat med ett 50-patroners trummagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
+L["uplp_ar15_mag_glock_50.printname"] = "50-Patroner 9 × 19 mm Trumma"
+L["uplp_ar15_mag_glock_50.compactname"] = "50S 9 x 19 mm"
+L["uplp_ar15_mag_glock_50.description"] = "Konverterar geväret till AR-KPist., en hög eldhastighet kulsprutepistol matad med 9 × 19 mm.\nUtrustat med ett 50-patroners trummagasin gjort till ett välkänt österrikiskt sidovapen." .. changeammo.pistol
 
-/// 5,56×45mm
-L["uplp_ar15_mag_drum.printname"] = "90-Patroner 5,56×45mm Dubbeltrumma"
+/// 5,56 × 45mm
+L["uplp_ar15_mag_drum.printname"] = "90-Patroner 5,56 × 45mm Dubbeltrumma"
 L["uplp_ar15_mag_drum.compactname"] = "90P Trumma"
 L["uplp_ar15_mag_drum.description"] = "90-patroners C-format trummagasin."
 
-L["uplp_ar15_mag_hk.printname"] = "30-Patroner 5,56×45mm (416)"
+L["uplp_ar15_mag_hk.printname"] = "30-Patroner 5,56 × 45mm (416)"
 L["uplp_ar15_mag_hk.compactname"] = "30P (416)"
 L["uplp_ar15_mag_hk.description"] = "30-patronersmagasin från en anpassad AR-15 av tyskt ursprung."
 
-L["uplp_ar15_mag_pmag10.printname"] = "10-Patroner 5,56×45mm (Polymer)"
+L["uplp_ar15_mag_pmag10.printname"] = "10-Patroner 5,56 × 45mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10P Poly"
 L["uplp_ar15_mag_pmag10.description"] = "10-patronersmagasin tillverkade av polymer av SynPoly."
 
-L["uplp_ar15_mag_pmag20.printname"] = "20-Patroner 5,56×45mm (Polymer)"
+L["uplp_ar15_mag_pmag20.printname"] = "20-Patroner 5,56 × 45mm (Polymer)"
 L["uplp_ar15_mag_pmag20.compactname"] = "20P Poly"
 L["uplp_ar15_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av SynPoly."
 
-L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56×45mm (Polymer)"
+L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56 × 45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-Patroner 5,56×45mm Trumma"
+L["uplp_ar15_mag_pmag60.printname"] = "52-Patroner 5,56 × 45mm Trumma"
 L["uplp_ar15_mag_pmag60.compactname"] = "52P Trumma"
 L["uplp_ar15_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
 
-L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56×45mm (Aluminium)"
+L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56 × 45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20P Alum"
 L["uplp_ar15_mag_stanag20.description"] = "20-patronersmagasin tillverkat av aluminium."
 
-L["uplp_ar15_mag_stanag30.printname"] = "30-Patroner 5,56×45mm (Aluminium)"
+L["uplp_ar15_mag_stanag30.printname"] = "30-Patroner 5,56 × 45mm (Aluminium)"
 L["uplp_ar15_mag_stanag30.compactname"] = "30P Alum"
 L["uplp_ar15_mag_stanag30.description"] = "30-patronersmagasin tillverkat av aluminium."
 
-L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56×45mm (Aluminium)"
+L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56 × 45mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40P Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkat av aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-Patroner 5,56×45mm Quadstack"
+L["uplp_ar15_mag_stanag60.printname"] = "52-Patroner 5,56 × 45mm Quadstack"
 L["uplp_ar15_mag_stanag60.compactname"] = "52P Quad."
 L["uplp_ar15_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
 
@@ -1337,9 +1361,13 @@ L["uplp_ar15_pgrip_tac.printname"] = "Hoki Armory-Pistolgrepp"
 L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Taktiskt pistolgrepp till AR-15-gevär gjort av Hoki Armory."
 
+L["uplp_ar15_pgrip_a1.printname"] = "Klassiskt A1 Pistolgrepp"
+L["uplp_ar15_pgrip_a1.compactname"] = "Klassisk"
+L["uplp_ar15_pgrip_a1.description"] = "Klassiskt pistolgrepp som användes på äldre AR-15-gevär."
+
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "A2-Låda med Bärhandtag"
-L["uplp_ar15_reciever_m16.compactname"] = "A2 BH"
+L["uplp_ar15_reciever_m16.printname"] = "A1-Låda med Bärhandtag"
+L["uplp_ar15_reciever_m16.compactname"] = "A1 BH"
 L["uplp_ar15_reciever_m16.description"] = "Militär grad låda med inbyggt bärhandtag.\nVäxlar skjutlägen till <color=100,255,100>3-skott salvo</color>/<color=100,255,100>halvautomat</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4-Låda"
@@ -1356,15 +1384,18 @@ L["uplp_ar15_reciever_modern_black.description"] = "Taktisk och lättvikt låda 
 
 L["uplp_ar15_reciever_modern_smg.printname"] = "Hoki Armory Taktisk Låda"
 L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9×19mm magasin."
+L["uplp_ar15_reciever_modern_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9 × 19 mm magasin."
 
 L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Taktisk Låda (Pitch Black)"
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
-L["uplp_ar15_reciever_modern_black_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9×19mm magasin." .. pitchblack
+L["uplp_ar15_reciever_modern_black_smg.description"] = "Taktisk och lättvikt låda byggd för hastighet gjort av Hoki Armory specifikt för AR-15-gevär som matas med 9 × 19 mm magasin." .. pitchblack
 
-L["uplp_ar15_reciever_m16a3.printname"] = "A3-Låda med Bärhandtag"
-L["uplp_ar15_reciever_m16a3.compactname"] = "A3-BH"
+L["uplp_ar15_reciever_m16a3.printname"] = "A1-Låda med Bärhandtag (Utan Salvoeld)"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A1 (US)"
 L["uplp_ar15_reciever_m16a3.description"] = "Militär grad låda med inbyggt bärhandtag.\nEnbart <color=160,160,255>kosmetiskt</color>."
+
+L["uplp_ar15_reciever_a2.printname"] = "A2-Låda med Bärhandtag"
+L["uplp_ar15_reciever_a2.compactname"] = "A2-BH"
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"
@@ -1449,6 +1480,14 @@ L["uplp_ar15_stock_tac.description"] = "Taktisk kolv till AR-15-gevär gjort av 
 L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Tung Kolv"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
 L["uplp_ar15_stock_veryheavy.description"] = "Tung kolv till AR-15-baserade prickskyttegevär gjort av ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Sänker mer rekyl</color> till skillnad med andra tunga kolvar."
+
+L["uplp_ar15_stock_m4ss.printname"] = "Kommando Kolv"
+L["uplp_ar15_stock_m4ss.compactname"] = "Kommando"
+L["uplp_ar15_stock_m4ss.description"] = "Lättvikt kolv till AR-15-gevär." .. desc_stock_m .. desc_stock_standard
+
+L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\"-Kolv"
+L["uplp_ar15_stock_cqr.compactname"] = "Ares"
+L["uplp_ar15_stock_cqr.description"] = "Anpassad och tung kolv och pistolgrepp gjorda av PAWCOs \"Ares\"-avdelning." ..desc_stock_l .. "\n<color=100,255,100>Sänker mer rekyl</color> till skillnad med andra tunga kolvar."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1541,7 +1580,7 @@ L["uplp_deagle_skin_blue.description"] = "Ersätter slutstycket och pipan med n�
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
-L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla 7,62×39mm-kalibern som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
+L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla kralibern 7,62 × 39 mm som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
 
 L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
@@ -1549,17 +1588,16 @@ L["uplp_weapon_mutant_manufacturer"] = "CMMG Inc."
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mutant_barrel_long.printname"] = "500mm Pipa"
+L["uplp_mutant_barrel_long.printname"] = "500 mm Pipa"
 L["uplp_mutant_barrel_long.compactname"] = "500mm"
-L["uplp_mutant_barrel_long.description"] = "Förlängd 500mm pipa till Mutant."
+L["uplp_mutant_barrel_long.description"] = "Förlängd 500 mm pipa till Mutant."
 
-L["uplp_mutant_barrel_short.printname"] = "409mm Pipa"
+L["uplp_mutant_barrel_short.printname"] = "409 mm Pipa"
 L["uplp_mutant_barrel_short.compactname"] = "409mm"
-L["uplp_mutant_barrel_short.description"] = "Standard 409mm pipa till Mutant."
+L["uplp_mutant_barrel_short.description"] = "Standard 409 mm pipa till Mutant."
 
 ////// Handguards
-local requires = "\n\n"
-local requires19 = requires .. "Kräver 500mm eller längre pipa."
+local requires19 = "\n\n" .. "Kräver 500mm eller längre pipa."
 
 L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL-Handskydd"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
@@ -1578,31 +1616,31 @@ L["uplp_mutant_hg_short.compactname"] = "Hoki"
 L["uplp_mutant_hg_short.description"] = "Taktiskt handskydd gjort till Mutant av Hoki Armory."
 
 ////// Magazines
-L["uplp_mutant_mag_30_bak.printname"] = "30-Patroner 7,62×39mm (Bakelit)"
+L["uplp_mutant_mag_30_bak.printname"] = "30-Patroner 7,62 × 39 mm (Bakelit)"
 L["uplp_mutant_mag_30_bak.compactname"] = "30P 7,62 (B)"
 L["uplp_mutant_mag_30_bak.description"] = "30-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit."
 
-L["uplp_mutant_mag_30_12.printname"] = "30-Patroner 7,62×39mm (M23-Style)"
+L["uplp_mutant_mag_30_12.printname"] = "30-Patroner 7,62 × 39 mm (M23-Style)"
 L["uplp_mutant_mag_30_12.compactname"] = "30P 7,62 (M23)"
 L["uplp_mutant_mag_30_12.description"] = "30-patronersmagasin gjorda för att likna AK-12:ans magasin."
 
-L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62×39mm (Stål)"
+L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62 × 39 mm (Stål)"
 L["uplp_mutant_mag_30_old.compactname"] = "30P 7,62 (S)"
 L["uplp_mutant_mag_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet."
 
-L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62×39mm (Stål)"
+L["uplp_mutant_mag_30_old.printname"] = "30-Patroner 7,62 × 39 mm (Stål)"
 L["uplp_mutant_mag_30_old.compactname"] = "30P 7,62 (S)"
 L["uplp_mutant_mag_30_old.description"] = "30-patronersmagasin gjorda av det goda gamla stålet."
 
-L["uplp_mutant_mag_30_oldest.printname"] = "30-Patroner 7,62×39mm (Utjämnad Stål)"
+L["uplp_mutant_mag_30_oldest.printname"] = "30-Patroner 7,62 × 39 mm (Utjämnad Stål)"
 L["uplp_mutant_mag_30_oldest.compactname"] = "30P 7,62 (US)"
 L["uplp_mutant_mag_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål."
 
-L["uplp_mutant_mag_40.printname"] = "40-Patroner 7,62×39mm (Bakelit)"
+L["uplp_mutant_mag_40.printname"] = "40-Patroner 7,62 × 39 mm (Bakelit)"
 L["uplp_mutant_mag_40.compactname"] = "40P 7,62 (B)"
 L["uplp_mutant_mag_40.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit."
 
-L["uplp_mutant_mag_40_old.printname"] = "40-Patroner 7,62×39mm (Stål)"
+L["uplp_mutant_mag_40_old.printname"] = "40-Patroner 7,62 × 39 mm (Stål)"
 L["uplp_mutant_mag_40_old.compactname"] = "40P 7,62 (S)"
 L["uplp_mutant_mag_40_old.description"] = "40-patronersmagasin gjorda av det goda gamla stålet."
 
@@ -1616,13 +1654,13 @@ L["uplp_weapon_molot_manufacturer"] = "Molot Oruzhie Ltd."
 
 /////////// Attachments
 ////// Barrels
-L["uplp_molot_brl_long.printname"] = "520mm Pipa"
+L["uplp_molot_brl_long.printname"] = "520 mm Pipa"
 L["uplp_molot_brl_long.compactname"] = "520mm"
-L["uplp_molot_brl_long.description"] = "Förlängd 520mm pipa till Molot."
+L["uplp_molot_brl_long.description"] = "Förlängd 520 mm pipa till Molot."
 
-L["uplp_molot_brl_compact.printname"] = "350mm Pipa"
+L["uplp_molot_brl_compact.printname"] = "350 mm Pipa"
 L["uplp_molot_brl_compact.compactname"] = "350mm"
-L["uplp_molot_brl_compact.description"] = "Förkortad 350mm pipa till Molot."
+L["uplp_molot_brl_compact.description"] = "Förkortad 350 mm pipa till Molot."
 
 L["uplp_molot_brl_mini.printname"] = "350mm \"Mini\" Pipa"
 L["uplp_molot_brl_mini.compactname"] = "350mm Mini"
@@ -1716,11 +1754,11 @@ L["uplp_awp_rs.description"] = "Järn och korn från fabriken till prickskyttege
 ////// Barrels
 L["uplp_awp_brl_awp.printname"] = "610mm Polis Pipa"
 L["uplp_awp_brl_awp.compactname"] = "610mm"
-L["uplp_awp_brl_awp.description"] = "Förkortad 610mm pipa för Polisversionen av AW-geväret."
+L["uplp_awp_brl_awp.description"] = "Förkortad 610 mm pipa för Polisversionen av AW-geväret."
 
 L["uplp_awp_brl_aws.printname"] = "409mm Internt Ljuddämpad Pipa"
 L["uplp_awp_brl_aws.compactname"] = "409mm Ljud."
-L["uplp_awp_brl_aws.description"] = "Internt ljuddämpad 409mm pipa till AW-geväret.\n<color=100,255,100>Ljuddämpar vapnet</color> men <color=255,100,100>sänker skadan på nära distans</color>."
+L["uplp_awp_brl_aws.description"] = "Internt ljuddämpad 409 mm pipa till AW-geväret.\n<color=100,255,100>Ljuddämpar vapnet</color> men <color=255,100,100>sänker skadan på nära distans</color>."
 
 L["uplp_awp_brl_long.printname"] = "686mm Magnum-Pipa"
 L["uplp_awp_brl_long.compactname"] = "686mm"
@@ -1728,7 +1766,7 @@ L["uplp_awp_brl_long.description"] = "Längre 686mm Magnum-pipa till AW-geväret
 
 L["uplp_awp_brl_short.printname"] = "350mm Kompakt Pipa"
 L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Väldigt kort 350mm pipa till AW-geväret.\n<color=100,255,100>Förbättrar hantering</color> men <color=255,100,100>sänker skadan på långa distanser.</color>"
+L["uplp_awp_brl_short.description"] = "Väldigt kort 350 mm pipa till AW-geväret.\n<color=100,255,100>Förbättrar hantering</color> men <color=255,100,100>sänker skadan på långa distanser.</color>"
 
 ////// Bipods
 L["uplp_awp_bp.printname"] = "Benstöd till Prickskyttegeväret AW"
@@ -1804,11 +1842,11 @@ L["uplp_awp_stock_tube.description"] = "Standard kolv med ett påsatt bufferrör
 
 //////////////////// FN57
 L["uplp_weapon_fn57"] = "MRD57"
-L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt unika kaliber i 5,7×28mm, ursprungligen designad för användning i automatvapen. Den har en högkapacitetsmagasin, låg rekyl och är eftertraktad för sin förmåga att tränga igenom skydd, vilket gör den populär bland militära och polisenheter över hela världen. MRD57 släpptes nyligen och är en förbättrad version av sidovapnet P57."
+L["uplp_weapon_fn57_desc"] = "MRD57 är en halvautomatisk pistol känd för sitt unika kaliber i 5,7 × 28mm, ursprungligen designad för användning i automatvapen. Den har en högkapacitetsmagasin, låg rekyl och är eftertraktad för sin förmåga att tränga igenom skydd, vilket gör den populär bland militära och polisenheter över hela världen. MRD57 släpptes nyligen och är en förbättrad version av sidovapnet P57."
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
-L["uplp_weapon_fn57_manufacturer"] = "FN Herstal"
+L["uplp_weapon_fn57_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Mags
@@ -1875,7 +1913,7 @@ L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
-L["uplp_weapon_scar_manufacturer"] = "FN Herstal"
+L["uplp_weapon_scar_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
@@ -1907,7 +1945,7 @@ L["uplp_scar_upper_pdwb.description"] = "Väldigt kort svartmålad övre låda o
 ////// Barrels
 L["uplp_scar_brl_short.printname"] = "330mm CQC-Pipa"
 L["uplp_scar_brl_short.compactname"] = "330mm CQC"
-L["uplp_scar_brl_short.description"] = "Förkortad 330mm pipa till XAR."
+L["uplp_scar_brl_short.description"] = "Förkortad 330 mm pipa till XAR."
 
 L["uplp_scar_brl_20.printname"] = "510mm DMR-Pipa"
 L["uplp_scar_brl_20.compactname"] = "510mm DMR"
@@ -1930,8 +1968,6 @@ L["uplp_scar_stock_hb.printname"] = "DMR-Kolv (Svart)"
 L["uplp_scar_stock_hb.compactname"] = "DMR (B)"
 L["uplp_scar_stock_hb.description"] = "Ersätter kolven med en svartmålad tung kolv som används på XAR DMR."
 
-L["uplp_scar_stock_tube.printname"] = "Bufferrör"
-L["uplp_scar_stock_tube.compactname"] = "Buffer"
 L["uplp_scar_stock_tube.description"] = "Ersätter kolven med ett bufferrör som stödjer AR-15-kolvar."
 
 L["uplp_scar_stock_pdw.printname"] = "PDW-Kolv"
@@ -1939,51 +1975,51 @@ L["uplp_scar_stock_pdw.compactname"] = "PDW"
 L["uplp_scar_stock_pdw.description"] = "Ersätter kolven med en vikbar PDW-kolv."
 
 ////// Mags
-L["uplp_scar_mag_h.printname"] = "20-Patroner 7,62×51mm"
+L["uplp_scar_mag_h.printname"] = "20-Patroner 7,62 × 51mm"
 L["uplp_scar_mag_h.compactname"] = "20P 7.62"
-L["uplp_scar_mag_h.description"] = "20-patroners 7,62×51mm magasin till XAR."
+L["uplp_scar_mag_h.description"] = "20-patroners 7,62 × 51mm magasin till XAR."
 
-L["uplp_scar_mag_hb.printname"] = "20-Patroner 7,62×51mm Black"
+L["uplp_scar_mag_hb.printname"] = "20-Patroner 7,62 × 51mm Black"
 L["uplp_scar_mag_hb.compactname"] = "20P 7.62 (B)"
-L["uplp_scar_mag_hb.description"] = "20-patroners 7,62×51mm magasin i svart till XAR."
+L["uplp_scar_mag_hb.description"] = "20-patroners 7,62 × 51mm magasin i svart till XAR."
 
-L["uplp_scar_mag_20.printname"] = "10-Patroner 7,62×51mm"
+L["uplp_scar_mag_20.printname"] = "10-Patroner 7,62 × 51mm"
 L["uplp_scar_mag_20.compactname"] = "10P 7.62"
-L["uplp_scar_mag_20.description"] = "10-patroners 7,62×51mm magasin till XAR."
+L["uplp_scar_mag_20.description"] = "10-patroners 7,62 × 51mm magasin till XAR."
 
 L["uplp_scar_mag_20_68.printname"] = "10-Patroner 6.8mm"
 L["uplp_scar_mag_20_68.compactname"] = "10P 6.8"
 L["uplp_scar_mag_20_68.description"] = "10-patronersmagasin matad med 6.8mm till XAR.\nExtremt bra för strider på längre distanser.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
 
-L["uplp_scar_mag_drum.printname"] = "90-Patroner 5,56×45mm Dubbeltrumma"
-L["uplp_scar_mag_drum.compactname"] = "90P 5.56"
+L["uplp_scar_mag_drum.printname"] = "90-Patroner 5,56 × 45mm Dubbeltrumma"
+L["uplp_scar_mag_drum.compactname"] = "90P 5,56"
 L["uplp_scar_mag_drum.description"] = "90-Patroners C-format trummagasin. Laddning av mer än 90 patroner rekommenderas ej då det kan orsaka stopp.\nKan ej utrustas med <color=255,100,100>antingen PDW-Låda</color>." .. changeammo.smg1
 
-L["uplp_scar_mag_hk.printname"] = "30-Patroner 5,56×45mm (416)"
+L["uplp_scar_mag_hk.printname"] = "30-Patroner 5,56 × 45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30P (416)"
 L["uplp_scar_mag_hk.description"] = "30-patronersmagasin från en anpassad AR-15 av tyskt ursprung." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag20.printname"] = "20-Patroner 5,56×45mm (Polymer)"
+L["uplp_scar_mag_pmag20.printname"] = "20-Patroner 5,56 × 45mm (Polymer)"
 L["uplp_scar_mag_pmag20.compactname"] = "20P Poly"
 L["uplp_scar_mag_pmag20.description"] = "20-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag30.printname"] = "30-Patroner 5,56×45mm (Polymer)"
+L["uplp_scar_mag_pmag30.printname"] = "30-Patroner 5,56 × 45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "52-Patroner 5,56×45mm Polymer Trumma"
+L["uplp_scar_mag_pmag60.printname"] = "52-Patroner 5,56 × 45mm Polymer Trumma"
 L["uplp_scar_mag_pmag60.compactname"] = "52P Trumma"
 L["uplp_scar_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30.printname"] = "30-Patroner 5,56×45mm (Aluminium)"
+L["uplp_scar_mag_stanag30.printname"] = "30-Patroner 5,56 × 45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30P Alum"
 L["uplp_scar_mag_stanag30.description"] = "30-patronersmagasin tillverkat av aluminium." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30_tan.printname"] = "30-Patroner 5,56×45mm (Tanfärg)"
+L["uplp_scar_mag_stanag30_tan.printname"] = "30-Patroner 5,56 × 45mm (Tanfärg)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30P Tanfärg"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-patronersmagasin tillverkat av aluminium med tanfärg." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52-Patroner 5,56×45mm Quadstack"
+L["uplp_scar_mag_stanag60.printname"] = "52-Patroner 5,56 × 45mm Quadstack"
 L["uplp_scar_mag_stanag60.compactname"] = "52P Quad"
 L["uplp_scar_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
 
@@ -2028,7 +2064,7 @@ L["uplp_weapon_spas_manufacturer"] = "Luigi Franchi S.p.A."
 ////// Barrels
 L["uplp_spas_short.printname"] = "LAW-Konfiguering"
 L["uplp_spas_short.compactname"] = "LAW"
-L["uplp_spas_short.description"] = "Förkortad konfiguering av SPAW-12:an gjord för polisiära verksamheter.\nKommer med en <color=160,160,255>460mm pipa</color> och ett <color=255,100,100>förkortat magasinrör</color>."
+L["uplp_spas_short.description"] = "Förkortad konfiguering av SPAW-12:an gjord för polisiära verksamheter.\nKommer med en <color=160,160,255>460 mm Pipa</color> och ett <color=255,100,100>förkortat magasinrör</color>."
 
 ////// Stocks
 L["uplp_spas_stock_fixed.printname"] = "Fast Kolv"
@@ -2076,11 +2112,11 @@ L["uplp_m9_receiver_a3t.description"] = "Modern \"Moderno\"-låda som tillåter 
 
 L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass-Låda"
 L["uplp_m9_receiver_sc.compactname"] = "Sword"
-L["uplp_m9_receiver_sc.description"] = "Anpassad PM92 inspirerad på Rebecca \"Revy\" Lees personliga sidovapen.\nKommer med en förlängt 150mm pipa."
+L["uplp_m9_receiver_sc.description"] = "Anpassad PM92 inspirerad på Rebecca \"Revy\" Lees personliga sidovapen.\nKommer med en förlängt 150 mm Pipa."
 
 L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V-Låda"
 L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
-L["uplp_m9_receiver_robocop.description"] = "Tungt anpassad PM92 egentligen gjord för användning i ett experimentalt robotiskt personalprogram.\nKommer med en förlängd 250mm pipa, <color=100,255,100>20-patroner</color> förlängt magasin, värmesköld och resta riktmedel.\nVäxlar skjutläget till <color=100,255,100>3-skottsalvo</color>.\nKan ej utrusta <color=255,100,100>några andra tillbehör</color>."
+L["uplp_m9_receiver_robocop.description"] = "Tungt anpassad PM92 egentligen gjord för användning i ett experimentalt robotiskt personalprogram.\nKommer med en förlängd 250 mm Pipa, <color=100,255,100>20-patroner</color> förlängt magasin, värmesköld och resta riktmedel.\nVäxlar skjutläget till <color=100,255,100>3-skottsalvo</color>.\nKan ej utrusta <color=255,100,100>några andra tillbehör</color>."
 
 ////// Magazines
 L["uplp_m9_mag_20.printname"] = "20-Patroner Förlängd"
@@ -2118,7 +2154,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 -- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
-L["uplp_weapon_orsis_desc"] = "Gryphon X108 är den senaste och mest kraftfulla precisionsgeväret från Ryssland under moderna tider. X108 är matad med den kraftfulla 12,7×108mm patronen vilket är väldigt effektiv mot fordon med lätt till medel pansar och speciellt mot mjuka måltavlor."
+L["uplp_weapon_orsis_desc"] = "Gryphon X108 är den senaste och mest kraftfulla precisionsgeväret från Ryssland under moderna tider. X108 är matad med den kraftfulla 12,7 × 108mm patronen vilket är väldigt effektiv mot fordon med lätt till medel pansar och speciellt mot mjuka måltavlor."
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
@@ -2166,9 +2202,9 @@ L["uplp_orsis_muzzle_big.compactname"] = "Pansar"
 L["uplp_orsis_muzzle_big.description"] = "Massiv mynningsbroms gjord för maximal rekylkontroll.\nAvsedd för Gryphon X108."
 
 //////////////////// AS VAL
--- "Stealth Carbine 9x39", "Стелс-карабин" (СК 9×39)
+-- "Stealth Carbine 9x39", "Стелс-карабин" (СК 9 × 39)
 L["uplp_weapon_asval"] = "SK 9x39"
-L["uplp_weapon_asval_desc"] = "SK 9x39 (\"Stealth Carbine 9×39\") är ett anpassningsbart, internt ljuddämpat, Ryskt eldvapen som kan konverteras till flertal 9×39mm-matade skjutvapen, inklusive halvautomatiska prickskyttegeväret \"SK Shadow\" och speciella gömda automatkarbinen \"MK Lightning\"."
+L["uplp_weapon_asval_desc"] = "SK 9x39 (\"Stealth Carbine 9x39\") är ett anpassningsbart, internt ljuddämpat, Ryskt eldvapen som kan konverteras till flertal 9 × 39 mm-matade skjutvapen, inklusive halvautomatiska prickskyttegeväret \"SK Shadow\" och speciella gömda automatkarbinen \"MK Lightning\"."
 
  -- "Stealth Carbine Shadow", "Стелс-карабин 'Тень'" (СК "Тень")
 L["uplp_weapon_asval_vss"] = "SK Shadow"
@@ -2179,14 +2215,12 @@ L["uplp_weapon_asval_sr3"] = "MK Lightning"
  -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
 L["uplp_weapon_asval_sr3s"] = "MK Thunder"
 
-L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
+L["uplp_weapon_asval_real"] = "AS Val | VSS Vintorez"
 
 L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 /////////// Attachments
 ////// Stocks
-L["uplp_asval_stock_buffer.printname"] = "Bufferrör"
-L["uplp_asval_stock_buffer.compactname"] = "Bufferrör"
 L["uplp_asval_stock_buffer.description"] = "Ersätter kolven med ett bufferrör som accepterar AR-15-kolvar."
 
 L["uplp_asval_stock_vss.printname"] = "SK Shadow Träkolv"
@@ -2213,7 +2247,7 @@ L["uplp_asval_mag_10.description"] = "Förkortat 10-patronersmagasin med \"Speci
 
 L["uplp_asval_mag_ap.printname"] = "20-Patroners PB"
 L["uplp_asval_mag_ap.compactname"] = "20P PB"
-L["uplp_asval_mag_ap.description"] = "Standard 20-patronersmagasin matade med pansarbrytande ammunition gjorda till alla SK 9×39."
+L["uplp_asval_mag_ap.description"] = "Standard 20-patronersmagasin matade med pansarbrytande ammunition gjorda till alla SK 9 × 39."
 
 L["uplp_asval_mag_30.printname"] = "30-Patroners EBP"
 L["uplp_asval_mag_30.compactname"] = "30P EBP"
@@ -2259,32 +2293,32 @@ L["uplp_aug_bot_alt.description"] = "Alternativ undermonterad skena som tillåte
 ////// Barrels
 L["uplp_aug_brl_mg.printname"] = "900mm HBAR-Pipa"
 L["uplp_aug_brl_mg.compactname"] = "900mm"
-L["uplp_aug_brl_mg.description"] = "Lång och tung 900mm pipa gjord för AW-MG, kulspruta versionen av AW-UG.\nKommer med <color=100,255,100>inbyggt benstöd</color>."
+L["uplp_aug_brl_mg.description"] = "Lång och tung 900 mm pipa gjord för AW-MG, kulspruta versionen av AW-UG.\nKommer med <color=100,255,100>inbyggt benstöd</color>."
 
 L["uplp_aug_brl_smg.printname"] = "508mm Para-Pipa"
 L["uplp_aug_brl_smg.compactname"] = "508mm"
-L["uplp_aug_brl_smg.description"] = "Förkortad 508mm pipa som används på 9×19mm AW-MP, kulsprutepistol versionen av AW-UG."
+L["uplp_aug_brl_smg.description"] = "Förkortad 508 mm pipa som används på 9 × 19 mm AW-MP, kulsprutepistol versionen av AW-UG."
 
 ////// Magazines
-L["uplp_aug_mag_556_30p.printname"] = "30-Patroner 5.56×45mm (Polymer)"
-L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
+L["uplp_aug_mag_556_30p.printname"] = "30-Patroner 5,56 × 45mm (Polymer)"
+L["uplp_aug_mag_556_30p.compactname"] = "30R 5,56 (P)"
 L["uplp_aug_mag_556_30p.description"] = "30-patronersmagasin gjort utav polymer till AW-UG."
 
-L["uplp_aug_mag_556_40.printname"] = "40-Patroner 5.56×45mm"
-L["uplp_aug_mag_556_40.compactname"] = "40P 5.56"
+L["uplp_aug_mag_556_40.printname"] = "40-Patroner 5,56 × 45mm"
+L["uplp_aug_mag_556_40.compactname"] = "40P 5,56"
 L["uplp_aug_mag_556_40.description"] = "Förlängt 40-patronersmagasin till AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Patroner 5.56×45mm Trumma"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
+L["uplp_aug_mag_556_52.printname"] = "52-Patroner 5,56 × 45mm Trumma"
+L["uplp_aug_mag_556_52.compactname"] = "52R 5,56"
 L["uplp_aug_mag_556_52.description"] = "52-patroners trummagasin till AW-UG."
 
-L["uplp_aug_mag_919_25.printname"] = "25-Patroner 9×19mm"
-L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"
-L["uplp_aug_mag_919_25.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9×19mm-patroner.\nUtrustad med ett <color=175,175,255>25-patronersmagasin</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_25.printname"] = "25-Patroner 9 × 19 mm"
+L["uplp_aug_mag_919_25.compactname"] = "25R 9 × 19 mm"
+L["uplp_aug_mag_919_25.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9 × 19 mm-patroner.\nUtrustad med ett <color=175,175,255>25-patronersmagasin</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_919_40.printname"] = "40-Patroner 9×19mm"
-L["uplp_aug_mag_919_40.compactname"] = "40R 9×19mm"
-L["uplp_aug_mag_919_40.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9×19mm-patroner.\nUtrustad med ett  <color=175,175,255>förstorat 40-patronersmagasin</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_40.printname"] = "40-Patroner 9 × 19 mm"
+L["uplp_aug_mag_919_40.compactname"] = "40R 9 × 19 mm"
+L["uplp_aug_mag_919_40.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9 × 19 mm-patroner.\nUtrustad med ett  <color=175,175,255>förstorat 40-patronersmagasin</color>." .. changeammo.pistol
 
 L["uplp_aug_mag_300_10.printname"] = "10-Patroner .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
@@ -2306,7 +2340,7 @@ L["uplp_aug_stock_black.description"] = "Ändrar utseendet på kolven, manöverh
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Handledsförstöraren 12\") är en väldigt kraftfull rysk revolver som skjuter den stora 12,7×55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."
+L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Handledsförstöraren 12\") är en väldigt kraftfull rysk revolver som skjuter den stora 12,7 × 55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
@@ -2354,7 +2388,7 @@ L["uplp_weapon_mp5_manufacturer"] = "Heckler & Koch GmbH"
 ////// Barrel
 L["uplp_mp5_bar_sd.printname"] = "146mm SD-Pipa"
 L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
-L["uplp_mp5_bar_sd.description"] = "Anpassad 146mm pipa med inbyggd ljuddämpare vilket konverterar PV-9:an till PV-9S."
+L["uplp_mp5_bar_sd.description"] = "Anpassad 146 mm pipa med inbyggd ljuddämpare vilket konverterar PV-9:an till PV-9S."
 
 L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz-Pipa"
 L["uplp_mp5_bar_kurz.compactname"] = "114mm Kurz"
@@ -2371,10 +2405,6 @@ L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
 L["uplp_mp5_grip_kurz.description"] = "Främre handskydd med inbyggt framgrepp för att kontrollera rekylen.\nKräver <color=175,175,255>114mm Kurz-Pipan</color>."
 
 ////// Stocks
-L["uplp_mp5_stock_buffer.printname"] = "Bufferrör"
-L["uplp_mp5_stock_buffer.compactname"] = "Bufferrör"
-L["uplp_mp5_stock_buffer.description"] = "Ersätter kolven med ett bufferrör som stödjer AR-15-kolvar."
-
 L["uplp_mp5_stock_pdw.printname"] = "Vikbar PDW-Kolv"
 L["uplp_mp5_stock_pdw.compactname"] = "V. PDW"
 L["uplp_mp5_stock_pdw.description"] = "Vikbar åt sidan PDW-kolv till PV-9:an."
@@ -2388,14 +2418,532 @@ L["uplp_mp5_stock_fixed.compactname"] = "Fast"
 L["uplp_mp5_stock_fixed.description"] = "Stadig fast kolv till PV-9:an."
 
 ////// Magazines
-L["uplp_mp5_mag_15.printname"] = "15-Patroners 9x19mm"
-L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
-L["uplp_mp5_mag_15.description"] = "Förkortat magasin som håller 15 skott av 9x19mm ammunition."
+L["uplp_mp5_mag_15.printname"] = "15-Patroners 9 x 19 mm"
+L["uplp_mp5_mag_15.compactname"] = "15R 9 x 19 mm"
+L["uplp_mp5_mag_15.description"] = "Förkortat magasin som håller 15 skott av 9 x 19 mm ammunition."
 
-L["uplp_mp5_mag_50.printname"] = "50-Patroners 9x19mm Trumma"
-L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
-L["uplp_mp5_mag_50.description"] = "Stort 50-patronerstrummagasin som håller 9x19mm ammunition."
+L["uplp_mp5_mag_50.printname"] = "50-Patroners 9 x 19 mm Trumma"
+L["uplp_mp5_mag_50.compactname"] = "50R 9 x 19 mm"
+L["uplp_mp5_mag_50.description"] = "Stort 50-patronerstrummagasin som håller 9 x 19 mm ammunition."
 
 L["uplp_mp5_mag_10mm.printname"] = "30-Patroners 10mm"
 L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Konverterar PV-9:an till PV-10:an vilket förbättrar stoppkraften med kostnad på rekylkontroll."
+
+//////////////////// Frag
+local quickthrow = "\nKan \"Snabbkastas\" med en knapp kopplad till \"<color=175,175,255>+grenade1</color>\"-kommandot."
+
+L["uplp_weapon_grenade_frag"] = "Splittergranat"
+L["uplp_weapon_grenade_frag_short"] = "Splittergranat"
+L["uplp_weapon_grenade_frag_desc"] = "Explosiv splittergranat." .. quickthrow
+
+L["uplp_weapon_grenade_flash"] = "Distraktionsgranat"
+L["uplp_weapon_grenade_flash_short"] = "Distraktionsgranat"
+L["uplp_weapon_grenade_flash_desc"] = "Chockgranat som bländer fiender som tittar på den när den detoneras. Orsakar temporärlig förlust av hörsel om man är i dess sprängradie." .. quickthrow
+
+L["uplp_weapon_grenade_smoke"] = "Rökgranat"
+L["uplp_weapon_grenade_smoke_short"] = "Rökgranat"
+L["uplp_weapon_grenade_smoke_desc"] = "Skapar en större mängd rök vid detonering vilket ger taktiskt skydd från seende ögon. <color=255,100,100>Värmesikten kan se genom röken</color>." .. quickthrow
+
+L["uplp_weapon_grenade_impact"] = "Kontaktgranat"
+L["uplp_weapon_grenade_impact_short"] = "Kontaktgranat"
+L["uplp_weapon_grenade_impact_desc"] = "Splittergranat som detonerar vid kontakt." .. quickthrow
+
+L["uplp_weapon_grenade_inc"] = "Brandgranat"
+L["uplp_weapon_grenade_inc_short"] = "Brandgranat"
+L["uplp_weapon_grenade_inc_desc"] = "Vid kontakt så börjar granaten omedelbart brinna vid en väldigt hög temperatur vilket gör att alla som går nära den tänds i fyr." .. quickthrow
+
+//////////////////// FAL
+L["uplp_weapon_fal"] = "FCM"
+L["uplp_weapon_fal_desc"] = "Fusil de combat militaire (\"Militär Stridsgevär\"), förkortat FCM, är ett stridsgevär som firas för sin robusta design och breda antagande av många militärer. Känd för sin tillförlitlighet och mångsidighet, tjänade FCM som en trofast följeslagare på otaliga slagfält under 1900-talet."
+
+L["uplp_weapon_fal_real"] = "FN FAL"
+
+L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"
+
+/////////// Attachments
+////// Receiver
+L["uplp_fal_rec_para.printname"] = "Fallskärmsjägare Låda"
+L["uplp_fal_rec_para.compactname"] = "Fallsk."
+L["uplp_fal_rec_para.description"] = "Modern låda till FCM-geväret. Kommer med en låda med RIS-funktionalitet för att montera moderna riktmedel."
+
+////// Handguards
+L["uplp_fal_hg_poly.printname"] = "Polymer Handskydd"
+L["uplp_fal_hg_poly.compactname"] = "Poly."
+L["uplp_fal_hg_poly.description"] = "Modernt handskydd av polymer till FCM-geväret."
+
+L["uplp_fal_hg_aus.printname"] = "Australisk Handskydd, Benstöd och Förstärkt Pipa"
+L["uplp_fal_hg_aus.compactname"] = "Aus."
+L["uplp_fal_hg_aus.description"] = "Tungt trähandskydd och förstärkt pipa från en australisk version av FCM-geväret. Kommer med ett <color=100,255,100>inbyggt benskydd</color>."
+
+L["uplp_fal_hg_sniper.printname"] = "Prickskytte Handskydd och Pipa"
+L["uplp_fal_hg_sniper.compactname"] = "Pricksk."
+L["uplp_fal_hg_sniper.description"] = "Handskydd gjord för prickskytte med FCM.\nKommer utrustat med en <color=100,255,100>förlängd pipa</color>."
+
+L["uplp_fal_hg_para.printname"] = "Fallskärmsjägare Långt Handskydd"
+L["uplp_fal_hg_para.compactname"] = "Fallsk. L."
+L["uplp_fal_hg_para.description"] = "Lätt handskydd gjord till en Fallskärmsjägare version av FCM-geväret.\nKommer utrustat med en <color=100,255,100>förlängd pipa</color>.\nTillåter installering av <color=100,255,100>framgrepp</color>."
+
+L["uplp_fal_hg_paras.printname"] = "Fallskärmsjägare Kort Handskydd"
+L["uplp_fal_hg_paras.compactname"] = "Fallsk. K."
+L["uplp_fal_hg_paras.description"] = "Lätt handskydd med en förkortad pipa gjord till en Fallskärmsjägare version av FCM-geväret.\nKommer utrustat med en <color=255,100,100>förkortad pipa</color>.\nTillåter installering av <color=100,255,100>framgrepp</color>."
+
+////// Muzzles
+L["uplp_fal_muz_long.printname"] = "Tjänst Flamdämpare"
+L["uplp_fal_muz_long.compactname"] = "Tjänst"
+L["uplp_fal_muz_long.description"] = "Militär grad flamdämpare till FCM."
+
+L["uplp_fal_muz_sniper.printname"] = "Prickskytte Mynningsbroms"
+L["uplp_fal_muz_sniper.compactname"] = "Pricksk."
+L["uplp_fal_muz_sniper.description"] = "Mynningsbroms som tvingar gaserna att fly horisontalt för att sänka sida-till-sida rekylen."
+
+////// Pistol Grip
+L["uplp_fal_pg_poly.printname"] = "Polymer Pistolgrepp"
+L["uplp_fal_pg_poly.compactname"] = "Poly."
+L["uplp_fal_pg_poly.description"] = "Lätt pistolgrepp av polymer till FCM."
+
+L["uplp_fal_pg_sniper.printname"] = "Precision Pistolgrepp"
+L["uplp_fal_pg_sniper.compactname"] = "Precision"
+L["uplp_fal_pg_sniper.description"] = "Tungt pistolgrepp designad för prickskyttar gjort till FCM."
+
+L["uplp_fal_pg_tac.printname"] = "Taktiskt Pistolgrepp"
+L["uplp_fal_pg_tac.compactname"] = "Taktisk"
+L["uplp_fal_pg_tac.description"] = "Lätt och taktiskt pistolgrepp till FCM."
+
+////// Stocks
+L["uplp_fal_stock_poly.printname"] = "Polymer Kolv och Bärhandtag"
+L["uplp_fal_stock_poly.compactname"] = "Poly."
+L["uplp_fal_stock_poly.description"] = "Modern och lätt kolv och bärhandtag av polymer till FCM."
+
+L["uplp_fal_stock_para.printname"] = "Fallskärmsjägare Kolv"
+L["uplp_fal_stock_para.compactname"] = "Fallsk."
+L["uplp_fal_stock_para.description"] = "Vikbar fallskärmsjägare kolv till FCM."
+
+L["uplp_fal_stock_sniper.printname"] = "Prickskytte Kolv"
+L["uplp_fal_stock_sniper.compactname"] = "Prickskytt"
+L["uplp_fal_stock_sniper.description"] = "Stark kolv gjord för att hålla FCM-geväret stabilt under skytte."
+
+////// Magazines
+L["uplp_fal_mag_10.printname"] = "10-Patroner 7,62 mm"
+L["uplp_fal_mag_10.compactname"] = "10P 7,62"
+L["uplp_fal_mag_10.description"] = "Förkortat 10-patronersmagasin till FCM."
+
+L["uplp_fal_mag_30.printname"] = "30-Patroner 7,62 mm"
+L["uplp_fal_mag_30.compactname"] = "30P 7,62"
+L["uplp_fal_mag_30.description"] = "Förlängt 30-patronersmagasin till FCM."
+
+L["uplp_fal_mag_30u.printname"] = "30-Patroner 7,62 mm (Rakt)"
+L["uplp_fal_mag_30u.compactname"] = "30P 7,62 (R)"
+L["uplp_fal_mag_30u.description"] = "Förlängt rakt 30-patronersmagasin till FCM."
+
+L["uplp_fal_mag_50.printname"] = "50-Patroner 7,62 mm"
+L["uplp_fal_mag_50.compactname"] = "50P 7,62"
+L["uplp_fal_mag_50.description"] = "50-patroners trummagasin till FCM."
+
+////// Scopes
+L["uplp_fal_scope_suit.printname"] = "BRP-Sikte"
+L["uplp_fal_scope_suit.compactname"] = "BRP"
+L["uplp_fal_scope_suit.description"] = "\"British Ranged Precision\"-siktet erbjuder utmärkt målförvärv." 
+
+//////////////////// Mac-10
+L["uplp_weapon_mac"] = "CMP .380"
+L["uplp_weapon_mac_desc"] = "CMP .380 (\"Civilian Machine Pistol\") är en kompakt kulsprutepistol känd för sin höga eldhastighet och lilla storlek, vilket gör den lätt att dölja. Den matas med .380 ACP, har en enkel blowback-mekanism och en kantig design som har fått ett rykte om sig för tillförlitlighet och enkel användning i närstrid."
+
+L["uplp_weapon_mac_real"] = "MAC-11 | MAC-10"
+
+L["uplp_weapon_mac10"] = "CMP .45"
+
+L["uplp_weapon_mac_manufacturer"] = "Military Armament Corporation"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mac_bar_long.printname"] = "Förlängd Pipa & Värmesköld"
+L["uplp_mac_bar_long.compactname"] = "Förl."
+L["uplp_mac_bar_long.description"] = "Längre pipa till CMP .380. Också utrustad med en skyddande värmesköld."
+
+////// Muzzles
+L["uplp_mac_muz_supp.printname"] = "CMP-Ljuddämpare"
+L["uplp_mac_muz_supp.compactname"] = "CMP"
+L["uplp_mac_muz_supp.description"] = "Stor ljuddämpare gjord till CMP .380."
+
+L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Ljuddämpare"
+L["uplp_mac_muz_supptac.compactname"] = "CI. S."
+L["uplp_mac_muz_supptac.description"] = "Kompakt men effektiv ljuddämpare gjord av Centurion Industries. Gjord för CMP .380."
+
+L["uplp_mac_muz_supp_surv.printname"] = "CMP-Ljuddämpare med Ficklampa"
+L["uplp_mac_muz_supp_surv.compactname"] = "CMP (F)"
+L["uplp_mac_muz_supp_surv.description"] = "Stor ljuddämpare gjord till CMP .380.\nUtrustad med en ficklampa tillsatt med buntband.\nPerfekt för överlevare som behöver se i mörkret på väg till det säkra rummet."
+
+////// Stocks
+L["uplp_mac_stock_wire.printname"] = "Vikbar Trådkolv"
+L["uplp_mac_stock_wire.compactname"] = "Vikbar"
+L["uplp_mac_stock_wire.description"] = "Vikbar trådkolv till CMP .380."
+
+L["uplp_mac_stock_buffer.printname"] = "Bufferrör"
+L["uplp_mac_stock_buffer.compactname"] = "Buffer"
+L["uplp_mac_stock_buffer.description"] = "Ersätt trådkolven med ett traditionellt bufferrör som accepterar AR-15-kolvar."
+
+L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks-Kolv"
+L["uplp_mac_stock_tac.compactname"] = "IronWorks"
+L["uplp_mac_stock_tac.description"] = "Ersätt trådkolven med en förstärkt kolv från IronWorks, dotterföretag till Centurion Industries."
+
+////// Magazines
+L["uplp_mac_mag10_30.printname"] = "30-Patroners .45 ACP-Magasin"
+L["uplp_mac_mag10_30.compactname"] = "30P .45"
+L["uplp_mac_mag10_30.description"] = "Konverterar CMP .380 till den större CMP .45 vilket förbättrar dess prestanda med kostnad på ökad storlek och vikt.\nMatad med ett standard 30-patronersmagasin matad med .45 ACP."
+
+L["uplp_mac_mag10_50.printname"] = "50-Patroners .45 ACP-Trumma"
+L["uplp_mac_mag10_50.compactname"] = "50P .45"
+L["uplp_mac_mag10_50.description"] = "Konverterar CMP .380 till den större CMP .45 vilket förbättrar dess prestanda med kostnad på ökad storlek och vikt.\nMatad med ett större <color=100,255,100>50-patroners</color> trummagasin matad med .45 ACP."
+
+L["uplp_mac_mag_50.printname"] = "50-Patroners .380 ACP-Magasin"
+L["uplp_mac_mag_50.compactname"] = "50P .380"
+L["uplp_mac_mag_50.description"] = "Förlängt 50-patronersmagasin till CMP .380."
+
+// Grips
+L["uplp_mac_strap.printname"] = "CMP .380 Främre Rem"
+L["uplp_mac_strap.compactname"] = "Rem"
+L["uplp_mac_strap.description"] = "Sätt på en svingande främre rem till vapnet som verkar som ett framgrepp."
+
+L["uplp_mac_strap_cosmetic.printname"] = "CMP .380 Främre Rem (Kosmetiskt)"
+L["uplp_mac_strap_cosmetic.compactname"] = "Rem (K)"
+L["uplp_mac_strap_cosmetic.description"] = "<color=175,175,255>Endast kosmetisk.</color>\nSätt på en svingande främre rem till vapnet."
+
+// Receivers
+L["uplp_mac_rec_long.printname"] = "Ironclad Arms Låda"
+L["uplp_mac_rec_long.compactname"] = "Ironclad"
+L["uplp_mac_rec_long.description"] = "Modifierad låda med en längre bakre ände.\n<color=255,100,100>Ej kompatibel med CMP .45-magasin.</color>"
+
+L["uplp_mac_rec_rail.printname"] = "RIS-Låda"
+L["uplp_mac_rec_rail.compactname"] = "RIS"
+L["uplp_mac_rec_rail.description"] = "Installerar en topp- och sidomonterad RIS-skena vilket tillåter installering av riktmedel och lasersikten."
+
+L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Låda"
+L["uplp_mac_rec_tac.compactname"] = "eXtreme"
+L["uplp_mac_rec_tac.description"] = "Baserad på Ironclad Arms lådan, SynPolys eXtreme-avdelning modifierade den ännu mer genom att ge den en anpassad övre låda. Sätter också på RIS-skenor vilket tillåter installation av anpassade stolpkorn, riktmedel, framgrepp och lasersikten.\n<color=255,100,100>Ej kompatibel med CMP .45-magasin.</color>"
+
+//////////////////// Mossberg 590
+L["uplp_weapon_m590"] = "Thunder 500"
+L["uplp_weapon_m590_desc"] = "Om du söker efter något för att försvara ditt hem så är Thunder 500-serien av hagelgevär från Centurion Industries för dig. HDS 500 är en hanelös pumprepeter hagelbössa matad med 12-kaliber med tungt anpassningsbara element. Den är väldigt populär i civila, polisiära och militära användningsområden."
+
+L["uplp_weapon_m590_real"] = "Mossberg 590"
+
+L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_m590_bar_short.printname"] = "432 mm CQB-Pipa"
+L["uplp_m590_bar_short.compactname"] = "432 mm CQB"
+L["uplp_m590_bar_short.description"] = "Lätt förkortad 432 mm pipa kombinerad med ett <color=255,100,100>4-patroners</color> magasinrör."
+
+L["uplp_m590_bar_long.printname"] = "508 mm USMC-Pipa"
+L["uplp_m590_bar_long.compactname"] = "508 mm USMC"
+L["uplp_m590_bar_long.description"] = "Extended 20\" (508mm) barrel combined with a <color=100,255,100>6 round</color> magazine tube."
+L["uplp_m590_bar_long.description"] = "Förlängd 508 mm pipa kombinerad med ett <color=100,255,100>6-patroners</color> magasinrör."
+
+////// Pump handles
+L["uplp_m590_handle_strap.printname"] = "Standard Handgrepp med Rem"
+L["uplp_m590_handle_strap.compactname"] = "Rem"
+L["uplp_m590_handle_strap.description"] = "Standard handgrepp med en kosmetisk rem runt den."
+
+L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Handgrepp"
+L["uplp_m590_handle_flash.compactname"] = "Nightlife"
+L["uplp_m590_handle_flash.description"] = "Anpassat handgrepp med inbyggd ficklampa."
+
+L["uplp_m590_handle_magpul.printname"] = "SynPoly-Handgrepp"
+L["uplp_m590_handle_magpul.compactname"] = "SynPoly"
+L["uplp_m590_handle_magpul.description"] = "Taktiskt handgrepp från SynPoly."
+
+////// Stocks
+L["uplp_m590_stock_short.printname"] = "Avsågad Kolv"
+L["uplp_m590_stock_short.compactname"] = "Avsågad"
+L["uplp_m590_stock_short.description"] = "Att såga av kolven på Thunder 500 förbättrar manövrering med kostnad på rekylkontroll."
+
+L["uplp_m590_stock_magpul.description"] = "Förstärkt taktisk kolv av SynPoly till Thunder 500."
+
+L["uplp_m590_stock_buffer.description"] = "Anpassat pistolgrepp och bufferrör som accepterar AR-15-kolvar."
+
+////// Irons
+L["uplp_m590_rs_railsight.printname"] = "Toppskena med Ringsikte"
+L["uplp_m590_rs_railsight.compactname"] = "Skena (R)"
+L["uplp_m590_rs_railsight.description"] = "Toppmonterad skena för riktmedel med inbyggt stolpkorn och bakre sikte."
+
+L["uplp_m590_rs_winged.printname"] = "Bevingat Bakre Sikte"
+L["uplp_m590_rs_winged.compactname"] = "Bevingad"
+L["uplp_m590_rs_winged.description"] = "Anpassade järn & korn."
+
+L["uplp_m590_rs_ghost.printname"] = "\"Thunder\" Bakre Sikte"
+L["uplp_m590_rs_ghost.compactname"] = "\"Thunder\""
+L["uplp_m590_rs_ghost.description"] = "Järn & korn från fabriken."
+
+////// Magazines
+L["uplp_m590_mag_10.printname"] = "Avtagbart 10-Patronersmagasin"
+L["uplp_m590_mag_10.compactname"] = "A. 10P"
+L["uplp_m590_mag_10.description"] = "Installerar ett avtagbart förstorat magasin på vapnet vilket gör påfyllning snabbare."
+
+L["uplp_m590_mag_5.printname"] = "Avtagbart 5-Patronersmagasin"
+L["uplp_m590_mag_5.compactname"] = "A. 5P"
+L["uplp_m590_mag_5.description"] = "Installerar ett avtagbart magasin på vapnet vilket gör påfyllning snabbare."
+
+////// Extras & Skins
+L["uplp_m590_heatshield.printname"] = "Värmesköld"
+L["uplp_m590_heatshield.compactname"] = "Värme."
+L["uplp_m590_heatshield.description"] = "Sätter på en kosmetisk värmesköld ovanpå pipan."
+
+L["uplp_m590_shellholder.printname"] = "Patronhållare"
+L["uplp_m590_shellholder.compactname"] = "Hållare"
+L["uplp_m590_shellholder.description"] = "Sätter på en kosmetisk patronhållare på vapnets vänstra sida."
+
+//////////////////// Remington 870
+L["uplp_weapon_r870"] = "Wingmaster 12G"
+L["uplp_weapon_r870_desc"] = "Wingmaster 12G är en pålitlig och mångsidig pumprepeter hagelbössa känd för dess varaktighet och lätt användning. Gynnad av polisenheter, jägare och sportskyttar, detta eldvapnet utmärker sig i diverse situationer tack vare dess kraftiga konstruktion och anpassningsbara funktioner."
+
+L["uplp_weapon_r870_real"] = "Remington 870"
+
+L["uplp_weapon_r870_shorty"] = "Entryway 12G"
+L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
+
+L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_r870_bar_serbu.printname"] = "165 mm \"Entryway\""
+L["uplp_r870_bar_serbu.compactname"] = "165 mm \"Entry.\""
+L["uplp_r870_bar_serbu.description"] = "Superkort 165 mm pipa från Entryyway 12G.\nKommer med ett <color=255,100,100>2-patroners</color> rör och vikbart handtag."
+
+L["uplp_r870_bar_lessmag.printname"] = "18.75\" Standard Barrel (5-Round)"
+L["uplp_r870_bar_lessmag.compactname"] = "18.75\" 5R"
+L["uplp_r870_bar_lessmag.description"] = "Standard 476 mm pipa till Wingmaster 12G.\nKommer med ett <color=255,100,100>5-patroners</color> rör."
+
+L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
+L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
+L["uplp_r870_bar_long.description"] = "660 mm pipa från fabriken gjord för jakt.\nKommer med ett <color=255,100,100>5-patroners</color> rör."
+
+L["uplp_r870_bar_police.printname"] = "469 mm Polispipa"
+L["uplp_r870_bar_police.compactname"] = "469 mm Polis"
+L["uplp_r870_bar_police.description"] = "Anpassad 469 mm pipa till Wingmaster 12G gjord för polisär användning.\nKommer med ett <color=255,100,100>5-patroners</color> rör och inbyggda järn & korn."
+
+L["uplp_r870_bar_sawed.printname"] = "318 mm Kort Pipa"
+L["uplp_r870_bar_sawed.compactname"] = "318 mm Kort"
+L["uplp_r870_bar_sawed.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
+L["uplp_r870_bar_sawed.description"] = "Förkortad 318 mm pipa till Wingmaster 12G.\nKommer med ett <color=255,100,100>4-patroners</color> rör."
+
+L["uplp_r870_bar_usmc.printname"] = "469 mm USMC-Pipa"
+L["uplp_r870_bar_usmc.compactname"] = "469 mm USMC"
+L["uplp_r870_bar_usmc.description"] = "Slät 469 mm pipa till Wingmaster 12G gjord för militär användning.\nKommer med ett <color=100,255,100>8-patroners</color> rör."
+
+L["uplp_r870_bar_9.printname"] = "508 mm Slät Pipa"
+L["uplp_r870_bar_9.compactname"] = "508 mm Slät"
+L["uplp_r870_bar_9.description"] = "Slät 508 mm pipa till Wingmaster 12G.\nKommer med ett <color=100,255,100>9-patroners</color> rör."
+
+L["uplp_r870_bar_swag.printname"] = "508 mm Sportpipa"
+L["uplp_r870_bar_swag.compactname"] = "508 mm Sport"
+L["uplp_r870_bar_swag.description"] = "Anpassad 508 mm pipa gjord för sportskytte.\nKommer med ett <color=100,255,100>9-patroners</color> rör."
+
+////// Pump handles
+L["uplp_r870_handle_old.printname"] = "Gammaldags Handtag"
+L["uplp_r870_handle_old.compactname"] = "GD."
+L["uplp_r870_handle_old.description"] = "Klassiskt handtag från originala Wingmaster:n."
+
+L["uplp_r870_handle_poly.printname"] = "Polymer Handtag"
+L["uplp_r870_handle_poly.compactname"] = "Polymer"
+L["uplp_r870_handle_poly.description"] = "Modernt polymer handtag till Wingmaster 12G."
+
+L["uplp_r870_handle_rail.printname"] = "Taktiskt Handtag"
+L["uplp_r870_handle_rail.compactname"] = "Taktiskt"
+L["uplp_r870_handle_rail.description"] = "Taktiskt handtag med inbyggda skenor för framgrepp och lasersikten."
+
+L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Handtag"
+L["uplp_r870_handle_flash.compactname"] = "ApexCore"
+L["uplp_r870_handle_flash.description"] = "Anpassat handtag med inbyggd ficklampa gjord av ApexCore Arsenal."
+
+////// Stocks
+L["uplp_r870_stock_short.printname"] = "Avsågad Polymer Kolv"
+L["uplp_r870_stock_short.compactname"] = "Avsågad (P)"
+L["uplp_r870_stock_short.description"] = "Att såga av kolven på Wingmaster 12G förbättrar manövrering med kostnad på rekylkontroll"
+
+L["uplp_r870_stock_short_wood.printname"] = "Avsågad Träkolv"
+L["uplp_r870_stock_short_wood.compactname"] = "Avsågad (T)"
+
+L["uplp_r870_stock_poly.printname"] = "Polymer Kolv"
+L["uplp_r870_stock_poly.compactname"] = "Polymer"
+L["uplp_r870_stock_poly.description"] = "Modern polymer kolv till Wingmaster 12G."
+
+L["uplp_r870_stock_magpul.description"] = "Förstärkt taktisk kolv till Wingmaster 12G."
+
+L["uplp_r870_stock_buffer.description"] = "Anpassat pistolgrepp och bufferrör som accepterar AR-15-kolvar."
+
+L["uplp_r870_stock_grip.printname"] = "Pistolgrepp utan Kolv"
+L["uplp_r870_stock_grip.compactname"] = "Pistolg."
+L["uplp_r870_stock_grip.description"] = "Vertikalt pistolgrepp utan kolv."
+
+L["uplp_r870_stock_fold.printname"] = "Pistolgrepp med Vikbar Kolv"
+L["uplp_r870_stock_fold.compactname"] = "Pistolg. (V)"
+L["uplp_r870_stock_fold.description"] = "Vertikalt pistolgrepp med vikbar kolv."
+
+////// Rail
+L["uplp_r870_iron_none.printname"] = "Ingen Toppmonterad Skena"
+L["uplp_r870_iron_none.compactname"] = "Ingen"
+L["uplp_r870_iron_none.description"] = "Tar bort den toppmonterade skenan för ett mer slät utseende."
+
+////// Extras & Skins
+L["uplp_r870_gold.description"] = "Ersätter interna delarna med några av guld.\n\n<color=255,255,100>Upplåst vid Befälhavare (Lv55)</color>"
+
+//////////////////// ArmaLite AR-18
+L["uplp_weapon_ar18"] = "MAR-63"
+L["uplp_weapon_ar18_desc"] = "MAR-63 (\"Military Assault Rifle 1963\") är ett gasdrivet handeldvapen med selektiv skjutläge utvecklat på 1960-talet, designat för att vara ett enklare och mer kostnadseffektivt alternativ till AR-15, med ett kortslagigt pistonsystem och en konstruktion av stansad plåt. Trots att det inte blev allmänt antaget har dess design påverkat många moderna eldhandvapen."
+
+L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
+
+L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
+
+/////////// Attachments
+////// Barrels
+L["uplp_ar18_bar_carbine.printname"] = "257 mm MAR-63S Carbine-Pipa och Handskydd"
+L["uplp_ar18_bar_carbine.compactname"] = "257 mm 63S C."
+L["uplp_ar18_bar_carbine.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S."
+
+L["uplp_ar18_bar_pistol.printname"] = "257 mm MAR-63S-Pipa och Handskydd"
+L["uplp_ar18_bar_pistol.compactname"] = "257 mm 63S"
+L["uplp_ar18_bar_pistol.description"] = "Förkortad 257 mm pipa och handskydd från MAR-63S. Kommer med ett inbyggt framgrepp."
+
+////// Muzzle
+L["uplp_ar18_muz.printname"] = "MAR-63-Mynningsbroms"
+L["uplp_ar18_muz.compactname"] = "MAR-63"
+L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MAR-63."
+
+////// Mags
+L["uplp_ar18_mag_40.printname"] = "40-Patroners 5,56 x 45 mm"
+L["uplp_ar18_mag_40.compactname"] = "40P 5,56"
+L["uplp_ar18_mag_40.description"] = "Förlängt 40-patronersmagasin till MAR-63."
+
+L["uplp_ar18_mag_20.printname"] = "20-Patroners 5,56 x 45 mm"
+L["uplp_ar18_mag_20.compactname"] = "20P 5,56"
+L["uplp_ar18_mag_20.description"] = "Förkortat 20-patronersmagasin till MAR-63."
+
+////// Stocks
+L["uplp_ar18_stock_fixed.printname"] = "Fast Kolv"
+L["uplp_ar18_stock_fixed.compactname"] = "Fast"
+L["uplp_ar18_stock_fixed.description"] = "Fabriksinstallerad fast kolv."
+
+L["uplp_ar18_stock_fixed_wood.printname"] = "Fast Träkolv och Handskydd"
+L["uplp_ar18_stock_fixed_wood.compactname"] = "Träkolv"
+L["uplp_ar18_stock_fixed_wood.description"] = "Trävariant av fabrikskolven och främre handskydd."
+
+////// Optics
+L["uplp_ar18_scope_real.printname"] = "MAR-Riktmedel"
+L["uplp_ar18_scope_real.compactname"] = "MAR-R 3x"
+L["uplp_ar18_scope_real.description"] = "Fabrikstillverkat riktmedel med 3x magnifiering exklusivt gjord till MAR-63."
+
+//////////////////// MP9N
+L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
+L["uplp_weapon_mp9_desc"] = "F9 \"Cheetah\" är en lätt, kompakt kulsprutepistol designad för närstrid, med hög eldhastighet och minimal rekyl. Dess ergonomiska design och mångsidighet gör den idealisk för militär, brottsbekämpning och personlig försvar."
+
+L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
+
+L["uplp_weapon_mp9_tmp"] = "MP \"Gepard\""
+
+L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mp9_bar_short.printname"] = "Förlängd Pipa och Skydd"
+L["uplp_mp9_bar_short.compactname"] = "Förl."
+L["uplp_mp9_bar_short.description"] = "Förlängd pipa med inbyggt skyddande värmesköld som, dessutom, har inbyggda RIS-skenor."
+
+////// Muzzle
+L["uplp_mp9_muzzle_sup.printname"] = "F9 \"Cheetah\"-Ljuddämpare"
+L["uplp_mp9_muzzle_sup.compactname"] = "Ljud. K."
+L["uplp_mp9_muzzle_sup.description"] = "Kort ljuddämpare gjord till F9 \"Cheetah\"."
+
+L["uplp_mp9_muzzle_supold.printname"] = "MP \"Gepard\" Prototyp Ljuddämpare"
+L["uplp_mp9_muzzle_supold.compactname"] = "\"Gepard\""
+L["uplp_mp9_muzzle_supold.description"] = "Gammal prototyp ljuddämpare gjord för prototypen MP \"Gepard\", företrädaren till F9 \"Cheetah\"."
+
+////// Mags
+L["uplp_mp9_mag_20.printname"] = "20-Patroners 9 x 19 mm"
+L["uplp_mp9_mag_20.compactname"] = "20P 9 x 19"
+L["uplp_mp9_mag_20.description"] = "Förkortat 20-patronermagasin till F9 \"Cheetah\"."
+
+L["uplp_mp9_mag_42.printname"] = "42-Patroners 9 x 19 mm"
+L["uplp_mp9_mag_42.compactname"] = "42P 9 x 19"
+L["uplp_mp9_mag_42.description"] = "Anpassat förlängt 42-patronersmagasin till F9 \"Cheetah\"."
+
+////// Grips
+L["uplp_mp9_grip_raw.printname"] = "Plocka Bort Topp- & Undermonterade Skenor"
+L["uplp_mp9_grip_raw.compactname"] = "N/A"
+L["uplp_mp9_grip_raw.description"] = "Tar bort topp- och undermonterade skenorna vilket gör att den liknar prototypen MP \"Gepard\"."
+
+L["uplp_mp9_grip_rail.printname"] = "Undermonterad Skena som Stöd"
+L["uplp_mp9_grip_rail.compactname"] = "Skena"
+L["uplp_mp9_grip_rail.description"] = "Använd den påsatta undermonterade skenan som ett handstöd."
+
+////// Stocks
+L["uplp_mp9_stock_foldable.printname"] = "Vikbar Kolv"
+L["uplp_mp9_stock_foldable.compactname"] = "Vikbar"
+L["uplp_mp9_stock_foldable.description"] = "Fabriksinstallerad, vikbar kolv till F9 \"Cheetah\"."
+
+L["uplp_mp9_stock_tac.printname"] = "Taktisk Kolv"
+L["uplp_mp9_stock_tac.compactname"] = "Tac."
+L["uplp_mp9_stock_tac.description"] = "Custom-made stock for the F9 \"Cheetah\"."
+
+L["uplp_mp9_stock_sling.printname"] = "Bakre Slinga"
+L["uplp_mp9_stock_sling.compactname"] = "Slinga"
+L["uplp_mp9_stock_sling.description"] = "Sätter på en kosmetisk bakre slinga på F9 \"Cheetah\"."
+
+L["uplp_mp9_stock_fixed.printname"] = "Fast Kolv"
+L["uplp_mp9_stock_fixed.compactname"] = "Fast"
+L["uplp_mp9_stock_fixed.description"] = "Klassisk fast kolv till F9 \"Cheetah\"."
+
+////// Skins
+L["uplp_mp9_skin_white.printname"] = "Taktiskt Vitt och Rött Utseende"
+L["uplp_mp9_skin_white.compactname"] = "V&R"
+L["uplp_mp9_skin_white.description"] = "Taktisk vit version av F9 \"Cheetah\" med röda detaljer.\n\nPerfekt för dem som skyddar Glass City."
+
+//////////////////// PKM
+L["uplp_weapon_pkm"] = "PS 7,62"
+L["uplp_weapon_pkm_desc"] = "Sokolovs kulspruta (Ryska: Пулемет Соколова | Polemyot Sokolova) är ett pålitligt, bältesmatat vapen känt för dess pålitlighet och träffsäkerhet. Den har använts i olika konflikter och ger täckande eld med imponerande räckvidd och kraft."
+
+L["uplp_weapon_pkm_pkp"] = "PSM 7,62" -- "Modern"
+L["uplp_weapon_pkm_bp"] = "PS-BP 7,62" -- "Bullpup"
+
+L["uplp_weapon_pkm_real"] = "PKM | PKP Pecheneg"
+
+L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
+
+/////////// Attachments
+////// Barrels
+L["uplp_pkm_brl_aek.printname"] = "\"Medoyed\"-Pipa"
+L["uplp_pkm_brl_aek.compactname"] = "Medoyed"
+L["uplp_pkm_brl_aek.description"] = "Medelvikt pipa till PS 7,62 med en <color=100,255,100>stor, förinstallerad ljuddämpare</color>."
+
+L["uplp_pkm_brl_pkp.printname"] = "\"PSM\"-Pipa"
+L["uplp_pkm_brl_pkp.compactname"] = "PSM"
+L["uplp_pkm_brl_pkp.description"] = "Tung pipa från den mer moderna PSM 7,62."
+
+////// Furniture
+L["uplp_pkm_furn_poly.printname"] = "Polymer Bitar"
+L["uplp_pkm_furn_poly.compactname"] = "Polymer"
+L["uplp_pkm_furn_poly.description"] = "Ersätter träbitarna med några av polymer.\nEndast <color=150,150,255>kosmetiskt</color>."
+
+L["uplp_pkm_furn_zenit.printname"] = "Zenith-Bitar"
+L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
+L["uplp_pkm_furn_zenit.description"] = "Ersätter träbitarna med några taktiska Zenith-delar.\nEndast <color=150,150,255>kosmetiskt</color>."
+
+////// Receiver
+L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7,62 Konverteringskit"
+L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
+L["uplp_pkm_rec_bullpup.description"] = "Konverterar PS 7,62 till en bullpup, vilket förbättrar manövrering med kostnad på hantering.\nKommer förinstallerat med <color=100,255,100>Zenith 45-Gradersgreppet</color> och <color=100,255,100>XW-Rödpunktsiktet</color>*.\n\n*Kan bytas ut med andra riktmedel."
+
+////// Misc.
+L["uplp_pkm_bipod.printname"] = "PS 7,62 Benstöd"
+L["uplp_pkm_bipod.compactname"] = "Benstöd"
+L["uplp_pkm_bipod.description"] = "Standard benstöd."
+
+L["uplp_pkm_taccover.printname"] = "Taktisk Övre Låda"
+L["uplp_pkm_taccover.compactname"] = "Tak. ÖL"
+L["uplp_pkm_taccover.description"] = "Visar den taktiska övre lådan med en RIS-skena.\nEndast <color=150,150,255>kosmetiskt</color>."
+
+L["uplp_pkm_handguard.printname"] = "Taktiskt Handskydd"
+L["uplp_pkm_handguard.compactname"] = "Tak. HS"
+L["uplp_pkm_handguard.description"] = "Visar taktiska handskyddet med under- och sidomonterade skenor.\nEndast <color=150,150,255>kosmetiskt</color>."

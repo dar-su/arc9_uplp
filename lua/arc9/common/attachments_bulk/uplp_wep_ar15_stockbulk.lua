@@ -60,6 +60,9 @@ ATT.SpeedMultSights = 0.85 + 0.1
 ATT.SpeedAdd = -0.05 + 0.03
 ATT.SpreadAddHipFire = nil --0.01 - 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_light")
 
 ---------- uplp_ar15_stock_pdw
@@ -96,6 +99,9 @@ ATT.SprintToFireTimeAdd = 0.1 - 0.06
 ATT.SpeedAdd = -0.05 + 0.04
 ATT.SpreadAddHipFire = nil --0.01 - 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_pdw")
 
 ---------- uplp_ar15_stock_modern
@@ -129,6 +135,9 @@ ATT.SprintToFireTimeAdd = 0.1 - 0.04
 ATT.SpeedMultSights = 0.85 + 0.05
 ATT.SpeedAdd = -0.05 + 0.02
 ATT.SpreadAddHipFire = 0.01 - 0.005
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2.5, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_modern")
 
@@ -166,6 +175,9 @@ ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4")
 
 ---------- uplp_ar15_stock_416
@@ -199,6 +211,8 @@ ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_416")
 
@@ -234,6 +248,9 @@ ATT.SpeedMultSights = 0.85 - 0.05
 ATT.SpeedAdd = -0.05 - 0.01
 ATT.SpreadAddHipFire = 0.01 + 0.004
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_ak12")
 
 ---------- uplp_ar15_stock_fat
@@ -266,6 +283,9 @@ ATT.SprintToFireTimeAdd = 0.1 - 0.02
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_fat")
 
@@ -301,6 +321,9 @@ ATT.SpeedMultSights = 0.85 + 0.08
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_tac")
 
 ---------- uplp_ar15_stock_mpul
@@ -334,7 +357,46 @@ ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_mpul")
+
+---------- uplp_ar15_stock_m4ss
+ATT = {}
+
+ATT.PrintName = "Commando Stock"
+ATT.CompactName = "Commando"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "sm4ss.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
+ATT.ModelBodygroups = "c"
+-- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+
+ATT.SortOrder = 2 - 0.1
+ATT.Category = "uplp_ar15_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- Positives
+ATT.RecoilAutoControlMult = 1.4
+ATT.VisualRecoilMultHipFire = 0.35
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.8
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 - 0.02
+ATT.SpeedMultSights = 0.85
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4ss")
 
 ------------------------------------------------------
 -------------------- HEAVY STOCKS --------------------
@@ -381,6 +443,9 @@ ATT.Attachments = {
     },
 }
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m16")
 
 ---------- uplp_ar15_stock_sniper
@@ -417,6 +482,9 @@ ATT.SprintToFireTimeAdd = 0.1 + 0.03
 ATT.SpeedMultSights = 0.85 - 0.1
 ATT.SpeedAdd = -0.05 - 0.02
 ATT.SpreadAddHipFire = 0.01 + 0.015
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_sniper")
 
@@ -456,5 +524,51 @@ ATT.SpeedMultSights = 0.85 - 0.08
 ATT.SpeedAdd = -0.05 - 0.02
 ATT.SpreadAddHipFire = 0.01 + 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_veryheavy")
+
+---------- uplp_ar15_stock_cqr
+ATT = {}
+
+ATT.PrintName = "PAWCO \"Spacetrooper\""
+ATT.CompactName = "Spacetrooper"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "scqr.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
+ATT.ModelBodygroups = "d"
+-- ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.SortOrder = 3
+ATT.Category = "uplp_ar15_stock_grip_combined"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_no_pgrip", "uplp_ar15_pgrip"}
+
+-- reduces more recoil than m16
+
+-- Positives
+ATT.RecoilAutoControlMult = 2
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.85
+
+-- Negatives
+ATT.SpeedMultShooting = 0.85
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1.15
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1 + 0.03
+ATT.SprintToFireTimeAdd = 0.1 + 0.02
+ATT.SpeedMultSights = 0.85 - 0.08
+ATT.SpeedAdd = -0.05 - 0.02
+ATT.SpreadAddHipFire = 0.01 + 0.01
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_stock_cqr")
 

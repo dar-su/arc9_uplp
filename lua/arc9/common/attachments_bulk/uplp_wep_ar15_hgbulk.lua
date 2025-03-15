@@ -505,3 +505,66 @@ ATT.AimDownSightsTimeAdd = -0.01
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_a1")
 
+
+---------- uplp_ar15_hg_riscover
+
+
+ATT = {}
+
+ATT.PrintName = "RIS Handguard with Covers"
+ATT.CompactName = "RIS (C)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rislongcovers.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_hg_long"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_ar15_handguard_long"}
+ATT.RequireElements = {"uplp_ar15_barrel_long"}
+
+-- ATT.Attachments = {
+    -- {
+        -- PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        -- Category = {"uplp_bipod"},
+        -- DefaultIcon = Material("arc9/def_att_icons/bipod.png", "mips smooth"),
+        -- Pos = Vector(-9, 0, 0.95),
+        -- Ang = Angle(0, 0, 0),
+        -- Icon_Offset = Vector(0, 0, -1.5),
+    -- },
+-- }
+
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = -0.05
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_riscover")
+
+
+---------- uplp_ar15_hg_xm
+
+
+ATT = {}
+
+ATT.PrintName = "Commando Handguard"
+ATT.CompactName = "Commando"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "xm.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip", "uplp_no_tactical"}
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0.2, -0.8)
+
+ATT.Category = "uplp_ar15_hg_mid"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 1.1
+ATT.SprintToFireTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = -0.02
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_xm")
+

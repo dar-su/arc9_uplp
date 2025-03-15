@@ -69,6 +69,10 @@ ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
 
+ATT.CustomCons = {
+[	ARC9:GetPhrase("autostat.clipsize")	] = "33%",
+}
+
 -- Positives
 ATT.DamageMinAdd = 6
 ATT.DamageMaxAdd = 12
@@ -84,11 +88,12 @@ ATT.RecoilPerShotMult = 2.5
 ATT.RangeMaxMult = 0.75
 ATT.RangeMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.75
-ATT.ClipSizeMult = 0.33
+
+ATT.ClipSizeHook = function(wep, val) return math.Round(val/3) end
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 450,
+    -- RPM = 450,
     PoseParam = 1 }
 }
 
@@ -158,6 +163,10 @@ ATT.CustomPros = {
 [	ARC9:GetPhrase("customize.stats.ammo")	] = ARC9:GetPhrase("ammo.357"),
 }
 
+ATT.CustomCons = {
+[	ARC9:GetPhrase("autostat.clipsize")	] = "33%",
+}
+
 -- Positives
 ATT.DamageMinAdd = 4
 ATT.DamageMaxAdd = 14
@@ -173,11 +182,12 @@ ATT.RecoilPerShotMult = 3
 ATT.RangeMaxMult = 0.6
 ATT.RangeMinMult = 0.25
 ATT.PhysBulletMuzzleVelocityMult = 0.75
-ATT.ClipSizeMult = 0.33
+
+ATT.ClipSizeHook = function(wep, val) return math.Round(val/3) end
 
 ATT.Firemodes = {
     { Mode = 1, -- Semi
-    RPM = 450,
+    -- RPM = 450,
     PoseParam = 1 }
 }
 

@@ -76,7 +76,92 @@ ATT.SpeedMultSights = 0.95
 ATT.RPMAdd = -25
 ATT.BarrelLengthAdd = 1
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_14")
+
+
+---------- uplp_ar15_barrel_145
+
+
+ATT = {}
+
+ATT.PrintName = "368mm Barrel"
+ATT.CompactName = "368mm"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "145.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_barrel"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.SortOrder = 14.5
+
+ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+-- Positives
+ATT.SpreadAdd = -0.0015
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RangeMinAdd = 8 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.08
+ATT.RecoilPerShot = 1 / 9
+ATT.RecoilMult = 0.925
+
+-- Negatives
+ATT.SpreadAddHipFire = 0.0015 + 0.0015
+ATT.SpreadAddRecoil = 0.0015
+ATT.AimDownSightsTimeAdd = 0.01*2
+ATT.SprintToFireTimeAdd = 0.02*2
+ATT.SpeedMultSights = 0.95
+ATT.RPMAdd = -25
+ATT.BarrelLengthAdd = 1
+
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, 1.5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_145")
+
+
+
+---------- uplp_ar15_barrel_15xm
+
+
+ATT = {}
+
+ATT.PrintName = "381mm Barrel"
+ATT.CompactName = "381mm"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "15xm.png", "mips smooth")
+
+ATT.Category = "uplp_ar15_barrel"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.SortOrder = 15
+
+ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+-- Positives
+ATT.SpreadAdd = -0.002
+ATT.RangeMaxAdd = 35 / ARC9.HUToM
+ATT.RangeMinAdd = 10 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilPerShot = 1 / 10
+ATT.RecoilMult = 0.9
+
+-- Negatives
+ATT.SpreadAddHipFire = 0.003 + 0.002
+ATT.SpreadAddRecoil = 0.003 * 0.75
+ATT.AimDownSightsTimeAdd = 0.02*1.25
+ATT.SprintToFireTimeAdd = 0.03*1.25
+ATT.SpeedMultSights = 0.925
+ATT.RPMAdd = -30
+ATT.BarrelLengthAdd = 2
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.75, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.75, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_15xm")
 
 
 ---------- uplp_ar15_barrel_16
@@ -112,6 +197,9 @@ ATT.SprintToFireTimeAdd = 0.03*2
 ATT.SpeedMultSights = 0.9
 ATT.RPMAdd = -50
 ATT.BarrelLengthAdd = 2
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_16")
 
@@ -188,6 +276,9 @@ ATT.SpeedMultSights = 0.85
 ATT.RPMAdd = -100
 ATT.BarrelLengthAdd = 4
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.75, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.75, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_20")
 
 
@@ -225,6 +316,7 @@ ATT.SpeedMultSights = 0.8
 ATT.RPMAdd = -150
 ATT.BarrelLengthAdd = 7
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4.5, 5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_barrel_22")
-

@@ -1,16 +1,14 @@
 L = {}
 
-local lineb = "\n"
-
 local changeammo = {
-pistol = lineb .. "Changes ammo type to <color=255,255,100>Pistol Ammo</color>.",
-["357"] = lineb .. "Changes ammo type to <color=255,255,100>Magnum Ammo</color>.",
-smg1 = lineb .. "Changes ammo type to <color=255,255,100>Carbine Ammo</color>.",
-ar2 = lineb .. "Changes ammo type to <color=255,255,100>Rifle Ammo</color>.",
-buckshot = lineb .. "Changes ammo type to <color=255,255,100>Shotgun Ammo</color>.",
-sniperpenetratedround = lineb .. "Changes ammo type to <color=255,255,100>Sniper Ammo</color>.",
-smg1_grenade = lineb .. "Changes ammo type to <color=255,255,100>Rifle Grenades</color>.",
-xbowbolt = lineb .. "Changes ammo type to <color=255,255,100>Crossbow Bolts</color>.",
+pistol = "\nChanges ammo type to <color=255,255,100>Pistol Ammo</color>.",
+["357"] = "\nChanges ammo type to <color=255,255,100>Magnum Ammo</color>.",
+smg1 = "\nChanges ammo type to <color=255,255,100>Carbine Ammo</color>.",
+ar2 = "\nChanges ammo type to <color=255,255,100>Rifle Ammo</color>.",
+buckshot = "\nChanges ammo type to <color=255,255,100>Shotgun Ammo</color>.",
+sniperpenetratedround = "\nChanges ammo type to <color=255,255,100>Sniper Ammo</color>.",
+smg1_grenade = "\nChanges ammo type to <color=255,255,100>Rifle Grenades</color>.",
+xbowbolt = "\nChanges ammo type to <color=255,255,100>Crossbow Bolts</color>.",
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -40,6 +38,7 @@ L["uplp_caliber"] = "Caliber3"
 
 L["uplp_caliber_7.62x39mm"] = "7.62×39mm Soviet"
 L["uplp_caliber_7.62x51mm"] = "7.62×51mm"
+L["uplp_caliber_7.62x54mmr"] = "7.62×54mmR"
 L["uplp_caliber_5.56x45mm"] = "5.56×45mm"
 L["uplp_caliber_5.45x39mm"] = "5.45×39mm"
 L["uplp_caliber_12gauge"] = "12 Gauge"
@@ -52,21 +51,10 @@ L["uplp_caliber_.308"] = ".308 Winchester"
 L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
 L["uplp_caliber_9x39mm"] = "9×39mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
+L["uplp_caliber_308auto"] = ".380 ACP"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
-
-L["uplp_manufacturer_ai"] = "Accuracy International"
-L["uplp_manufacturer_cmmg"] = "CMMG Inc."
-L["uplp_manufacturer_fn"] = "FN Herstal"
-L["uplp_manufacturer_hk"] = "Heckler & Koch"
-L["uplp_manufacturer_izhmash"] = "Izhmash"
-L["uplp_manufacturer_kalashnikov"] = "Kalashnikov Concern"
-L["uplp_manufacturer_magnum"] = "Magnum Research"
-L["uplp_manufacturer_molot"] = "Molot Oruzhie Ltd."
-L["uplp_manufacturer_uso"] = "U.S. Ordnance"
-L["uplp_manufacturer_franchi"] = "Luigi Franchi S.p.A."
-L["uplp_manufacturer_steyr"] = "Steyr-Daimler-Puch"
 
 /////////// Year
 L["uplp_year"] = "Year5"
@@ -86,33 +74,37 @@ L["uplp_mechanism_boltaction"] = "Bolt-action"
 L["uplp_mechanism_pumpaction"] = "Pump-Action"
 L["uplp_mechanism_rollerdelay"] = "Roller-delayed blowback"
 L["uplp_mechanism_closedbolt"] = "Closed bolt"
+L["uplp_mechanism_openbolt"] = "Open bolt"
 
 L["uplp_mechanism_singleaction"] = "Single-Action"
+L["uplp_mechanism_doubleaction"] = "Double-Action"
 L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
+
+L["uplp_mechanism_gasoperated_shortstroke"] = "Short-stroke gas system"
+L["uplp_mechanism_gasoperated_longstroke"] = "Long-stroke gas system"
 
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Short-recoil"
 L["uplp_mechanism_longrecoil"] = "Long-recoil"
 L["uplp_mechanism_browning"] = "Browning action"
+L["uplp_mechanism_shortstroke"] = "Short-stroke piston"
+L["uplp_mechanism_longstroke"] = "Long-stroke piston"
 
 /////////// Authors
 L["uplp_assets"] = "Original Assets1"
 L["uplp_animations"] = "Animations2"
 L["uplp_lua"] = "Weapon LUA3"
 L["uplp_sounds"] = "Sounds4"
-L["uplp_general"] = "Model & animations edits5"
+L["uplp_general"] = "Model & Animation Edits5"
 
 /////////// Weapon Categories
-L["uplp_category_weapon_ar"] = "Assault Rifles"
-L["uplp_category_weapon_mg"] = "Machine Guns"
-L["uplp_category_weapon_pistol"] = "Pistols"
-L["uplp_category_weapon_shotgun"] = "Shotguns"
-L["uplp_category_weapon_smg"] = "Submachine Guns"
-L["uplp_category_weapon_sniper"] = "Sniper Rifles"
-L["uplp_category_weapon_other"] = "Оther" -- Russian O to have melees on bottom of spawnmenu
-L["uplp_category_weapon_utils"] = "Utilities"
-
-L["uplp_category_weapon_heavy"] = "Heavy Weapons"
+L["uplp_category_weapon_ar"] = "1Assault Rifles"
+L["uplp_category_weapon_mg"] = "3Machine Guns"
+L["uplp_category_weapon_pistol"] = "6Pistols"
+L["uplp_category_weapon_shotgun"] = "4Shotguns"
+L["uplp_category_weapon_smg"] = "2Submachine Guns"
+L["uplp_category_weapon_sniper"] = "5Sniper Rifles"
+L["uplp_category_weapon_utils"] = "7Utilities"
 
 /////////// Weapon Classes
 L["uplp_class_weapon_ar"] = "Assault Rifle"
@@ -138,6 +130,7 @@ L["uplp_category_charm"] = "Charm"
 L["uplp_category_dovetail"] = "Dovetail"
 L["uplp_category_dustcover"] = "Dust Cover"
 L["uplp_category_extra"] = "Extras"
+L["uplp_category_furniture"] = "Furniture"
 L["uplp_category_gasblock"] = "Gas Block"
 L["uplp_category_grip"] = "Foregrip"
 L["uplp_category_handguard"] = "Handguard"
@@ -244,13 +237,9 @@ L["uplp_optic_elcan.printname"] = "4x Combat Scope"
 L["uplp_optic_elcan.compactname"] = "4x Combat"
 L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-12x Variable Zoom Scope w. Rangefinder"
-L["uplp_optic_bigass.compactname"] = "8-12x VZS-R"
+L["uplp_optic_bigass.printname"] = "8-16x Variable Zoom Scope w. Rangefinder"
+L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
 L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
-
--- L["uplp_optic_bigass_thermal.printname"] = "8-12x Variable Zoom Thermal Scope w. Rangefinder"
--- L["uplp_optic_bigass_thermal.compactname"] = "8-12x VZTS-R"
--- L["uplp_optic_bigass_thermal.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is.\n - Thermal imaging capability that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
@@ -283,6 +272,10 @@ L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and sma
 L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
 L["uplp_optic_rmrhigh.compactname"] = "XW R."
 L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot"
+L["uplp_optic_genericrds.compactname"] = "HawkEye"
+L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic
 
 L["uplp_optic_notacog.printname"] = "3x Military Scope"
 L["uplp_optic_notacog.compactname"] = "3x Military"
@@ -342,7 +335,7 @@ L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite
 
 L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot w. O-U Magnifier"
 L["uplp_optic_devom.compactname"] = "Wraith + O-U"
-L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™. Has a unique Over-Under™ Magnifier." .. desc_magoptic
+L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™. Has a unique Over-Under™ Magnifier." .. desc_magoptic .. "\n\nWarning: does not work as intended with ARC9 Cheap Scopes on."
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
@@ -365,6 +358,10 @@ L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russ
 
 -- "Optical Sight, High Quality" in Russian
 -- "Оптический прицел высого качества" - 'OPWK'
+
+L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
+L["uplp_optic_thermholo.compactname"] = "Aegis"
+L["uplp_optic_thermholo.description"] = "Compact, low-weight thermal holographic sight made by Aegis Precision." .. desc_cqcoptic
 
 L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
 L["uplp_optic_dedal.compactname"] = "12x CWI"
@@ -428,6 +425,10 @@ L["uplp_grip_rk45.printname"] = "Zenith 45-Degree Grip"
 L["uplp_grip_rk45.compactname"] = "Zenith 45D"
 L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for most RIS-rail-compatible firearms."
 
+L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
+L["uplp_grip_cqr.compactname"] = "Ares"
+L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
+
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Bipod"
 L["uplp_bipod.compactname"] = "WildCat X"
@@ -487,6 +488,11 @@ L["uplp_muzzle_shortsup.description"] = "Small, compact suppressor that dampens 
 L["uplp_muzzle_zenit.printname"] = "Zenith Muzzle Brake"
 L["uplp_muzzle_zenit.compactname"] = "Zenith MB"
 L["uplp_muzzle_zenit.description"] = "Modern muzzle brake made for most pistol and rifle calibres that reduces overall recoil."
+
+////// Set 3
+L["uplp_muzzle_xm.printname"] = "Commando Flash Hider"
+L["uplp_muzzle_xm.compactname"] = "Comm. FH"
+L["uplp_muzzle_xm.description"] = "Old-school flash hider made for very short AR-15 rifles."
 
 ////// Muzzle (Shotguns)
 L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
@@ -995,6 +1001,10 @@ L["uplp_ak_stock_rpk74.printname"] = "HPK M74 Stock"
 L["uplp_ak_stock_rpk74.compactname"] = "HKP M74"
 L["uplp_ak_stock_rpk74.description"] = "Heavy polymer stock used on the HPK M74."
 
+L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+L["uplp_ak_stock_cqr.compactname"] = "Ares"
+L["uplp_ak_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division.\nThis one was custom-made to fit AK-style rifles."
+
 L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
 L["uplp_ak_stock_wood.compactname"] = "Wooden"
 L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK 5.45 and AK 7.62."
@@ -1011,8 +1021,8 @@ L["uplp_ak_stock_tube12.printname"] = "Buffer Tube"
 L["uplp_ak_stock_tube12.compactname"] = "Buffer"
 L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used on the AK M23. Allows installation of AR-15 compatible stocks.\nFun fact: The diameter of the tube is slightly different from the standard AR-15 which makes most AR-15 stocks wobbly.\n(But this is a video game so... yeet)"
 
-L["uplp_ak_stock_tube.printname"] = "Buffer Tube"
-L["uplp_ak_stock_tube.compactname"] = "Buffer"
+L["uplp_ak_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_ak_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_ak_stock_tube.description"] = "Aftermarket buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
 
 L["uplp_ak_stock_molot.printname"] = "Molot Stock"
@@ -1091,6 +1101,14 @@ L["uplp_ar15_barrel_10.description"] = "254mm (10\") barrel used on AR-15 rifles
 L["uplp_ar15_barrel_14.printname"] = "356mm Barrel"
 L["uplp_ar15_barrel_14.compactname"] = "356mm"
 L["uplp_ar15_barrel_14.description"] = "356mm (14\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_145.printname"] = "368mm Barrel"
+L["uplp_ar15_barrel_145.compactname"] = "368mm"
+L["uplp_ar15_barrel_145.description"] = "368mm (14.5\") barrel used on AR-15 rifles."
+
+L["uplp_ar15_barrel_15xm.printname"] = "381mm Barrel"
+L["uplp_ar15_barrel_15xm.compactname"] = "381mm"
+L["uplp_ar15_barrel_15xm.description"] = "381mm (15\") barrel used on AR-15 rifles."
 
 L["uplp_ar15_barrel_16.printname"] = "406mm Barrel"
 L["uplp_ar15_barrel_16.compactname"] = "406mm"
@@ -1172,11 +1190,10 @@ L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
 L["uplp_ar15_gasblock_rail.description"] = "Gas block with built-in top rail for mounting front sights made by Centurion Industries."
 
 ////// Handguards
-local requires = "\n"
-local requires14 = requires .. "Requires 356mm (14\") or longer barrel."
-local requires16 = requires .. "Requires 406mm (16\") or longer barrel."
-local requires20 = requires .. "Requires 508mm (20\") or longer barrel."
-local requires22 = requires .. "Requires 559mm (22\") or longer barrel."
+local requires14 = "\n" .. "Requires 356mm (14\") or longer barrel."
+local requires16 = "\n" .. "Requires 406mm (16\") or longer barrel."
+local requires20 = "\n" .. "Requires 508mm (20\") or longer barrel."
+local requires22 = "\n" .. "Requires 559mm (22\") or longer barrel."
 local onlycompact = "\n" .. "Can only use Compact Gas Block."
 
 L["uplp_ar15_hg_grenadier.printname"] = "Grenadier Handguard"
@@ -1242,6 +1259,14 @@ L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical han
 L["uplp_ar15_hg_a1.printname"] = "A1 Handguard"
 L["uplp_ar15_hg_a1.compactname"] = "A1"
 L["uplp_ar15_hg_a1.description"] = "Classic AR-15 handguard used on the early M16 models." .. requires16
+
+L["uplp_ar15_hg_riscover.printname"] = "RIS Handguard (Covers)"
+L["uplp_ar15_hg_riscover.compactname"] = "RIS (C)"
+L["uplp_ar15_hg_riscover.description"] = "Standard military-grade handguard with built-in RIS rail system.\nComes with built-in rail covers which restrict larger foregrips and front sights." .. requires16
+
+L["uplp_ar15_hg_xm.printname"] = "Commando Handguard"
+L["uplp_ar15_hg_xm.compactname"] = "Commando"
+L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
 
 ////// Magazines
 /// .45 ACP
@@ -1344,9 +1369,13 @@ L["uplp_ar15_pgrip_tac.printname"] = "Hoki Armory Pistol Grip"
 L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
 L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles made by Hoki Armory."
 
+L["uplp_ar15_pgrip_a1.printname"] = "Classic A1 Pistol Grip"
+L["uplp_ar15_pgrip_a1.compactname"] = "Classic"
+L["uplp_ar15_pgrip_a1.description"] = "Classic pistol grip used on early AR-15 rifles."
+
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "A2 Receiver with Carry Handle"
-L["uplp_ar15_reciever_m16.compactname"] = "A2 CH"
+L["uplp_ar15_reciever_m16.printname"] = "A1 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16.compactname"] = "A1 CH"
 L["uplp_ar15_reciever_m16.description"] = "Military-grade receiver with built-in carrying handle.\nChanges firing mode to <color=100,255,100>3-round burst</color>/<color=100,255,100>semi-automatic</color>."
 
 L["uplp_ar15_reciever_m4.printname"] = "M4 Receiver"
@@ -1369,9 +1398,13 @@ L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Recei
 L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9×19mm magazines." .. pitchblack
 
-L["uplp_ar15_reciever_m16a3.printname"] = "A3 Receiver with Carry Handle"
-L["uplp_ar15_reciever_m16a3.compactname"] = "A3 CH"
+L["uplp_ar15_reciever_m16a3.printname"] = "A1 Receiver with Carry Handle (No Burst)"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A1 (NB)"
 L["uplp_ar15_reciever_m16a3.description"] = "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
+
+L["uplp_ar15_reciever_a2.printname"] = "A2 Receiver with Carry Handle"
+L["uplp_ar15_reciever_a2.compactname"] = "A2 CH"
+L["uplp_ar15_reciever_a2.description"] = ARC9:GetPhrase("uplp_ar15_reciever_m16a3.description") or "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
@@ -1456,6 +1489,14 @@ L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles made by 
 L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Heavy Stock"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
 L["uplp_ar15_stock_veryheavy.description"] = "Heavy stock for AR-15 marksman rifles made by ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
+
+L["uplp_ar15_stock_m4ss.printname"] = "Commando Stock"
+L["uplp_ar15_stock_m4ss.compactname"] = "Commando"
+L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
+
+L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+L["uplp_ar15_stock_cqr.compactname"] = "Ares"
+L["uplp_ar15_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division." ..desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1569,8 +1610,7 @@ L["uplp_mutant_barrel_short.compactname"] = "409mm"
 L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the Mutant."
 
 ////// Handguards
-local requires = "\n\n"
-local requires19 = requires .. "Requires 500mm (19.7\") or longer barrel."
+local requires19 = "\n\n" .. "Requires 500mm (19.7\") or longer barrel."
 
 L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL Handguard"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
@@ -1818,7 +1858,7 @@ L["uplp_weapon_fn57_desc"] = "The MRD57 is a semi-automatic handgun known for it
 
 L["uplp_weapon_fn57_real"] = "FN Five-SeveN Mk3 MRD"
 
-L["uplp_weapon_fn57_manufacturer"] = "FN Herstal"
+L["uplp_weapon_fn57_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Mags
@@ -1885,7 +1925,7 @@ L["uplp_weapon_scar_pdw"] = "XAR PDW"
 
 L["uplp_weapon_scar_real"] = "FN SCAR-H"
 
-L["uplp_weapon_scar_manufacturer"] = "FN Herstal"
+L["uplp_weapon_scar_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
@@ -1940,8 +1980,8 @@ L["uplp_scar_stock_hb.printname"] = "DMR Stock (Black)"
 L["uplp_scar_stock_hb.compactname"] = "DMR (B)"
 L["uplp_scar_stock_hb.description"] = "Replaces the stock with a heavy stock in black used on the XAR DMR."
 
-L["uplp_scar_stock_tube.printname"] = "Buffer Tube"
-L["uplp_scar_stock_tube.compactname"] = "Buffer"
+L["uplp_scar_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_scar_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_scar_stock_tube.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
 
 L["uplp_scar_stock_pdw.printname"] = "PDW Stock"
@@ -2018,14 +2058,6 @@ L["uplp_scar_rail_ext.compactname"] = "Ext. Rail"
 L["uplp_scar_rail_ext.description"] = "An aftermarket extended rail for the XAR."
 
 -- Expansion 1
-//////////////////// Mossberg 590
-L["uplp_weapon_mossberg"] = "Thunder 500"
-L["uplp_weapon_mossberg_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
-
-L["uplp_weapon_mossberg_real"] = "Mossberg 590"
-
-L["uplp_weapon_mossberg_manufacturer"] = "O.F. Mossberg & Sons, Inc."
-
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"
 L["uplp_weapon_spas_desc"] = "The SPAW-12, Special Purpose Assault Weapon model 12, is a versatile Italian-designed shotgun known for its ability to switch between pump-action and semi-automatic firing modes. It gained popularity for its use in various military and law enforcement roles due to its reliability and adaptability."
@@ -2053,8 +2085,8 @@ L["uplp_spas_stock_folding_hook.printname"] = "Folding Stock with Hook"
 L["uplp_spas_stock_folding_hook.compactname"] = "Folding (H)"
 L["uplp_spas_stock_folding_hook.description"] = "Collapsible folding stock for the SPAW-12.\nComes with the original hook intended for use with one handed shooting.\nWhen \"Folded\": Cannot equip <color=255,100,100>optics</color>."
 
-L["uplp_spas_stock_tube.printname"] = "Buffer Tube"
-L["uplp_spas_stock_tube.compactname"] = "Buffer Tube"
+L["uplp_spas_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_spas_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_spas_stock_tube.description"] = "Aftermarket pistol grip with built-in buffer tube for attaching AR-15 stocks."
 
 //////////////////// M92FS
@@ -2189,14 +2221,14 @@ L["uplp_weapon_asval_sr3"] = "MK Lightning"
  -- "Small-Caliber Carbine, Thunder", "Малогабаритный карабин, Гром" (МК "Гром")
 L["uplp_weapon_asval_sr3s"] = "MK Thunder"
 
-L["uplp_weapon_asval_real"] = "AS Val \"Shaft\" / VSS Vintorez \"Thread Cutter\""
+L["uplp_weapon_asval_real"] = "AS Val | VSS Vintorez"
 
 L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 /////////// Attachments
 ////// Stocks
-L["uplp_asval_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_asval_stock_buffer.compactname"] = "Buffer Tube"
+L["uplp_asval_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_asval_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_asval_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
 
 L["uplp_asval_stock_vss.printname"] = "SK Shadow Wooden Stock"
@@ -2331,20 +2363,20 @@ L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
 ////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
-L["uplp_knife_skin_black.printname"] = ARC9:GetPhrase("uplp_deagle_skin_black.printname")
-L["uplp_knife_skin_black.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_black.compactname")
+L["uplp_knife_skin_black.printname"] = ARC9:GetPhrase("uplp_deagle_skin_black.printname") or "Matt Black"
+L["uplp_knife_skin_black.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_black.compactname") or "Black"
 L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Bowie."
 
 L["uplp_knife_skin_chrome.printname"] = "Chrome"
 L["uplp_knife_skin_chrome.compactname"] = "Chrome"
 L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
 
-L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname")
-L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname")
+L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
 L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle.\n\n<color=255,255,100>Skin only for darsubscribers - become one on boosty.to/darsu</color><color=255,55,55> (do not equip if you aren't darsubscriber)</color>"
 
-L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname")
-L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname")
+L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo Blue"
+L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname") or "Cylo"
 L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
 L["uplp_knife_skin_red.printname"] = "Red Soda"
@@ -2387,9 +2419,9 @@ L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
 L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil.\nRequires <color=175,175,255>114mm Kurz Barrel</color>."
 
 ////// Stocks
-L["uplp_mp5_stock_buffer.printname"] = "Buffer Tube"
-L["uplp_mp5_stock_buffer.compactname"] = "Buffer Tube"
-L["uplp_mp5_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+L["uplp_mp5_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_mp5_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_mp5_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
 
 L["uplp_mp5_stock_pdw.printname"] = "Folding PDW Stock"
 L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
@@ -2404,14 +2436,563 @@ L["uplp_mp5_stock_fixed.compactname"] = "Fixed"
 L["uplp_mp5_stock_fixed.description"] = "Fixed, solid stock for the PV-9."
 
 ////// Magazines
-L["uplp_mp5_mag_15.printname"] = "15-Round 9x19mm"
-L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
-L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9x19mm ammunition."
+L["uplp_mp5_mag_15.printname"] = "15-Round 9×19mm"
+L["uplp_mp5_mag_15.compactname"] = "15R 9×19mm"
+L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9×19mm ammunition."
 
-L["uplp_mp5_mag_50.printname"] = "50-Round 9x19mm Drum"
-L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
-L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9x19mm ammunition."
+L["uplp_mp5_mag_50.printname"] = "50-Round 9×19mm Drum"
+L["uplp_mp5_mag_50.compactname"] = "50R 9×19mm"
+L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9×19mm ammunition."
 
 L["uplp_mp5_mag_10mm.printname"] = "30-Round 10mm"
 L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
 L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
+
+//////////////////// Frag
+local quickthrow = "\nCan be thrown using \"Quickthrow\" with a \"<color=175,175,255>+grenade1</color>\" bind."
+
+L["uplp_weapon_grenade_frag"] = "FRAG Grenade"
+L["uplp_weapon_grenade_frag_short"] = "FRAG"
+L["uplp_weapon_grenade_frag_desc"] = "High-explosive fragmentation grenade." .. quickthrow
+
+L["uplp_weapon_grenade_flash"] = "Flash Grenade"
+L["uplp_weapon_grenade_flash_short"] = "Flash"
+L["uplp_weapon_grenade_flash_desc"] = "Concussion grenade that blinds enemies caught looking at it upon detonation. Causes temporary hearing loss if caught in its explosive radius." .. quickthrow
+
+L["uplp_weapon_grenade_smoke"] = "Smoke Grenade"
+L["uplp_weapon_grenade_smoke_short"] = "Smoke"
+L["uplp_weapon_grenade_smoke_desc"] = "Creates a large amount of smoke upon detonation, giving tactical cover from peeking eyes. <color=255,100,100>Thermal optics can see through the smoke</color>." .. quickthrow
+
+L["uplp_weapon_grenade_impact"] = "Impact Grenade"
+L["uplp_weapon_grenade_impact_short"] = "Impact"
+L["uplp_weapon_grenade_impact_desc"] = "Fragmentation grenade that detonates on impact." .. quickthrow
+
+L["uplp_weapon_grenade_inc"] = "Incendiary Grenade"
+L["uplp_weapon_grenade_inc_short"] = "Incendiary"
+L["uplp_weapon_grenade_inc_desc"] = "On contact, the grenade instantly starts to burn at a very high temperature, causing anybody who walks nearby to be lit on fire." .. quickthrow
+
+//////////////////// FAL
+L["uplp_weapon_fal"] = "FCM"
+L["uplp_weapon_fal_desc"] = "The Fusil de combat militaire (\"Military Combat Rifle\"), or FCM for short, is a battle rifle celebrated for its robust design and widespread adoption across numerous militaries. Renowned for its reliability and versatility, the FCM served as a stalwart companion on countless battlefields throughout the 20th century."
+
+L["uplp_weapon_fal_real"] = "FN FAL"
+
+L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"
+
+/////////// Attachments
+////// Receiver
+L["uplp_fal_rec_para.printname"] = "Paratrooper Receiver"
+L["uplp_fal_rec_para.compactname"] = "Para."
+L["uplp_fal_rec_para.description"] = "Modernized receiver for the FCM. Comes with an RIS top cover for mounting modern optics."
+
+////// Handguards
+L["uplp_fal_hg_poly.printname"] = "Polymer Handguard"
+L["uplp_fal_hg_poly.compactname"] = "Poly."
+L["uplp_fal_hg_poly.description"] = "Modernized polymer handguard for the FCM."
+
+L["uplp_fal_hg_aus.printname"] = "Australian Handguard, Bipod and Reinforced Barrel"
+L["uplp_fal_hg_aus.compactname"] = "Aus."
+L["uplp_fal_hg_aus.description"] = "Heavy, wooden handguard and reinforced barrel from the Australian version of the FCM. Comes with a <color=100,255,100>built-in bipod</color>."
+
+L["uplp_fal_hg_sniper.printname"] = "Sharpshooter Handguard and Barrel"
+L["uplp_fal_hg_sniper.compactname"] = "Sharps."
+L["uplp_fal_hg_sniper.description"] = "Handguard meant for sharpshooting on the FCM.\nComes equipped with an <color=100,255,100>extended barrel</color>."
+
+L["uplp_fal_hg_para.printname"] = "Paratrooper Long Handguard"
+L["uplp_fal_hg_para.compactname"] = "Para. L."
+L["uplp_fal_hg_para.description"] = "Lightweight handguard made for a Paratrooper variant of the FCM.\nComes equipped with an <color=100,255,100>extended barrel</color>.\nAllows installation of <color=100,255,100>foregrips</color>."
+
+L["uplp_fal_hg_paras.printname"] = "Paratrooper Short Handguard"
+L["uplp_fal_hg_paras.compactname"] = "Para. S."
+L["uplp_fal_hg_paras.description"] = "Lightweight handguard with a shortened barrel made for a Paratrooper variant of the FCM.\nComes equipped with a <color=255,100,100>shortened barrel</color>.\nAllows installation of <color=100,255,100>foregrips</color>."
+
+////// Muzzles
+L["uplp_fal_muz_long.printname"] = "Service Flash Hider"
+L["uplp_fal_muz_long.compactname"] = "Service"
+L["uplp_fal_muz_long.description"] = "Military-grade flash hider for the FCM."
+
+L["uplp_fal_muz_sniper.printname"] = "Sniper Muzzle Brake"
+L["uplp_fal_muz_sniper.compactname"] = "Sniper"
+L["uplp_fal_muz_sniper.description"] = "Muzzle brake that forces gases to escape horizontally to reduce side-to-side recoil."
+
+////// Pistol Grip
+L["uplp_fal_pg_poly.printname"] = "Polymer Pistol Grip"
+L["uplp_fal_pg_poly.compactname"] = "Poly."
+L["uplp_fal_pg_poly.description"] = "Lightweight polymer pistol grip for the FCM."
+
+L["uplp_fal_pg_sniper.printname"] = "Precision Pistol Grip"
+L["uplp_fal_pg_sniper.compactname"] = "Precision"
+L["uplp_fal_pg_sniper.description"] = "Heavy pistol grip designed for marksman shooting made for the FCM."
+
+L["uplp_fal_pg_tac.printname"] = "Tactical Pistol Grip"
+L["uplp_fal_pg_tac.compactname"] = "Tactical"
+L["uplp_fal_pg_tac.description"] = "Lightweight, tactical pistol grip for the FCM."
+
+////// Stocks
+L["uplp_fal_stock_poly.printname"] = "Polymer Stock and Carrying Handle"
+L["uplp_fal_stock_poly.compactname"] = "Poly."
+L["uplp_fal_stock_poly.description"] = "Modernized, lightweight polymer stock and carrying handle for the FCM."
+
+L["uplp_fal_stock_para.printname"] = "Paratrooper Stock"
+L["uplp_fal_stock_para.compactname"] = "Para."
+L["uplp_fal_stock_para.description"] = "Foldable paratrooper stock made for the FCM."
+
+L["uplp_fal_stock_sniper.printname"] = "Marksman Stock"
+L["uplp_fal_stock_sniper.compactname"] = "Marksman"
+L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
+
+L["uplp_fal_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_fal_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_fal_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+
+////// Magazines
+L["uplp_fal_mag_10.printname"] = "10-Round 7.62mm"
+L["uplp_fal_mag_10.compactname"] = "10R 7.62"
+L["uplp_fal_mag_10.description"] = "Shortened 10-round magazine for the FCM."
+
+L["uplp_fal_mag_30.printname"] = "30-Round 7.62mm"
+L["uplp_fal_mag_30.compactname"] = "30R 7.62"
+L["uplp_fal_mag_30.description"] = "Extended 30-round magazine for the FCM."
+
+L["uplp_fal_mag_30u.printname"] = "30-Round 7.62mm (Straight)"
+L["uplp_fal_mag_30u.compactname"] = "30R 7.62 (S)"
+L["uplp_fal_mag_30u.description"] = "Extended 30-round straight magazine for the FCM."
+
+L["uplp_fal_mag_50.printname"] = "50-Round 7.62mm"
+L["uplp_fal_mag_50.compactname"] = "50R 7.62"
+L["uplp_fal_mag_50.description"] = "50-round drum magazine for the FCM."
+
+////// Scopes
+L["uplp_fal_scope_suit.printname"] = "BRP Scope"
+L["uplp_fal_scope_suit.compactname"] = "BRP"
+L["uplp_fal_scope_suit.description"] = "The \"British Ranged Precision\" scope provides excellent target acquisition."
+
+//////////////////// Mac-10
+L["uplp_weapon_mac"] = "CMP .380"
+L["uplp_weapon_mac_desc"] = "The CMP .380 (\"Civilian Machine Pistol\") is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
+
+L["uplp_weapon_mac_real"] = "MAC-11 | MAC-10"
+
+L["uplp_weapon_mac10"] = "CMP .45"
+
+L["uplp_weapon_mac_manufacturer"] = "Military Armament Corporation"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mac_bar_long.printname"] = "Extended Barrel & Heat Shield"
+L["uplp_mac_bar_long.compactname"] = "Ext."
+L["uplp_mac_bar_long.description"] = "Longer barrel for the CMP .380. Also equipped with a protective heat shield."
+
+////// Muzzles
+L["uplp_mac_muz_supp.printname"] = "CMP Suppressor"
+L["uplp_mac_muz_supp.compactname"] = "CMP"
+L["uplp_mac_muz_supp.description"] = "Large suppressor intended for use on the CMP .380."
+
+L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Suppressor"
+L["uplp_mac_muz_supptac.compactname"] = "CI. S."
+L["uplp_mac_muz_supptac.description"] = "Compact but effective suppressor made by Centurion Industries. Intended for the CMP .380."
+
+L["uplp_mac_muz_supp_surv.printname"] = "CMP Suppressor with Flashlight"
+L["uplp_mac_muz_supp_surv.compactname"] = "CMP (F)"
+L["uplp_mac_muz_supp_surv.description"] = "Large suppressor intended for use on the CMP .380.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
+
+////// Stocks
+L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
+L["uplp_mac_stock_wire.compactname"] = "Foldable"
+L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
+
+L["uplp_mac_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_mac_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+
+L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks Stock"
+L["uplp_mac_stock_tac.compactname"] = "IronWorks"
+L["uplp_mac_stock_tac.description"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
+
+////// Magazines
+L["uplp_mac_mag10_30.printname"] = "30-Round .45 ACP Magazine"
+L["uplp_mac_mag10_30.compactname"] = "30R .45"
+L["uplp_mac_mag10_30.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
+
+L["uplp_mac_mag10_50.printname"] = "50-Round .45 ACP Drum"
+L["uplp_mac_mag10_50.compactname"] = "50R .45"
+L["uplp_mac_mag10_50.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
+
+L["uplp_mac_mag_50.printname"] = "50-Round .380 ACP Magazine"
+L["uplp_mac_mag_50.compactname"] = "50R .380"
+L["uplp_mac_mag_50.description"] = "Extended 50-round magazine for the CMP .380."
+
+// Grips
+L["uplp_mac_strap.printname"] = "CMP .380 Front Strap"
+L["uplp_mac_strap.compactname"] = "Strap"
+L["uplp_mac_strap.description"] = "Attach a swinging front strap to the weapon, acting as a front grip."
+
+L["uplp_mac_strap_cosmetic.printname"] = "CMP .380 Front Strap (Cosmetic Only)"
+L["uplp_mac_strap_cosmetic.compactname"] = "Strap (C)"
+L["uplp_mac_strap_cosmetic.description"] = "<color=175,175,255>Cosmetic only.</color>\nAttach a swinging front strap to the weapon."
+
+// Receivers
+L["uplp_mac_rec_long.printname"] = "Ironclad Arms Receiver"
+L["uplp_mac_rec_long.compactname"] = "Ironclad"
+L["uplp_mac_rec_long.description"] = "Modified receiver with a longer rear end.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+
+L["uplp_mac_rec_rail.printname"] = "RIS Receiver"
+L["uplp_mac_rec_rail.compactname"] = "RIS"
+L["uplp_mac_rec_rail.description"] = "Installs a custom top and side RIS-rail, allowing installation of custom optics and laser sights."
+
+L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Receiver"
+L["uplp_mac_rec_tac.compactname"] = "eXtreme"
+L["uplp_mac_rec_tac.description"] = "Based on the Ironclad Arms receiver, SynPoly's eXtreme division modified it further by giving it a modified upper receiver. Also installs RIS-rails, which allows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+
+//////////////////// Mossberg 590
+L["uplp_weapon_m590"] = "Thunder 500"
+L["uplp_weapon_m590_desc"] = "If you seek something for home defence, then Centurion Industries' Thunder 500 series of shotguns is for you. The Thunder 500 is a hammerless pump-action 12-gauge shotgun with heavily customizable elements. It is very popular for civilian, law enforcement and military applications."
+
+L["uplp_weapon_m590_real"] = "Mossberg 590"
+L["uplp_weapon_m590m"] = "Thunder 500M"
+
+L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_m590_bar_short.printname"] = "17\" CQB Barrel"
+L["uplp_m590_bar_short.compactname"] = "17\" CQB"
+L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" (432mm) barrel combined with a <color=255,100,100>4 round</color> magazine tube."
+
+L["uplp_m590_bar_long.printname"] = "20\" USMC Barrel"
+L["uplp_m590_bar_long.compactname"] = "20\" USMC"
+L["uplp_m590_bar_long.description"] = "Extended 20\" (508mm) barrel combined with a <color=100,255,100>6 round</color> magazine tube."
+
+////// Pump handles
+L["uplp_m590_handle_strap.printname"] = "Default Pump Handle with Strap"
+L["uplp_m590_handle_strap.compactname"] = "Strap"
+L["uplp_m590_handle_strap.description"] = "Standard issue pump handle with a cosmetic strap around it."
+
+L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Pump Handle"
+L["uplp_m590_handle_flash.compactname"] = "Nightlife"
+L["uplp_m590_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
+
+L["uplp_m590_handle_magpul.printname"] = "SynPoly Pump Handle"
+L["uplp_m590_handle_magpul.compactname"] = "SynPoly"
+L["uplp_m590_handle_magpul.description"] = "Tactical pump handle from SynPoly."
+
+////// Stocks
+L["uplp_m590_stock_short.printname"] = "Cut-Off Stock"
+L["uplp_m590_stock_short.compactname"] = "Cut-Off"
+L["uplp_m590_stock_short.description"] = "Cutting off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
+
+L["uplp_m590_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly Stock"
+L["uplp_m590_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.compactname") or "SynPoly"
+L["uplp_m590_stock_magpul.description"] = "Reinforced tactical stock by SynPoly for the Thunder 500."
+
+L["uplp_m590_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_m590_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_m590_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+
+////// Irons
+L["uplp_m590_rs_railsight.printname"] = "Top Rail with Ring Sight"
+L["uplp_m590_rs_railsight.compactname"] = "Rail (R)"
+L["uplp_m590_rs_railsight.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+
+L["uplp_m590_rs_winged.printname"] = "Winged Rear Sight"
+L["uplp_m590_rs_winged.compactname"] = "Winged"
+L["uplp_m590_rs_winged.description"] = "Modified iron sights."
+
+L["uplp_m590_rs_ghost.printname"] = "Thunder Rear Sight"
+L["uplp_m590_rs_ghost.compactname"] = "Thunder"
+L["uplp_m590_rs_ghost.description"] = "Factory iron sights."
+
+////// Magazines
+L["uplp_m590_mag_10.printname"] = "10-R Detachable Magazine"
+L["uplp_m590_mag_10.compactname"] = "10R D."
+L["uplp_m590_mag_10.description"] = "Installs a detachable extended magazine onto the weapon, making full top-ups quicker."
+
+L["uplp_m590_mag_5.printname"] = "5-R Detachable Magazine"
+L["uplp_m590_mag_5.compactname"] = "5R D."
+L["uplp_m590_mag_5.description"] = "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+
+////// Extras & Skins
+L["uplp_m590_heatshield.printname"] = "Heat Shield"
+L["uplp_m590_heatshield.compactname"] = "Heat"
+L["uplp_m590_heatshield.description"] = "Attaches a cosmetic heat shield over the barrel."
+
+L["uplp_m590_shellholder.printname"] = "Shell Holster"
+L["uplp_m590_shellholder.compactname"] = "Holster"
+L["uplp_m590_shellholder.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
+
+//////////////////// Remington 870
+L["uplp_weapon_r870"] = "Wingmaster 12G"
+L["uplp_weapon_r870_desc"] = "The Wingmaster 12G is a reliable and versatile pump-action shotgun renowned for its durability and ease of use. Favored by law enforcement, hunters, and sport shooters alike, this firearm excels in various scenarios due to its robust construction and customizable features."
+
+L["uplp_weapon_r870_real"] = "Remington 870"
+
+L["uplp_weapon_r870_shorty"] = "Entryway 12G"
+L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
+
+L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
+
+/////////// Attachments
+////// Barrels & Tubes
+L["uplp_r870_bar_serbu.printname"] = "6.5\" Entryway"
+L["uplp_r870_bar_serbu.compactname"] = "6.5\" Entry."
+L["uplp_r870_bar_serbu.description"] = "Super short 6.5\" (165mm) barrel from the Entryway 12G.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
+
+L["uplp_r870_bar_lessmag.printname"] = "18.75\" Standard Barrel (5-Round)"
+L["uplp_r870_bar_lessmag.compactname"] = "18.75\" 5R"
+L["uplp_r870_bar_lessmag.description"] = "Default 18.75\" (476mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>5-round</color> tube."
+
+L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
+L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
+L["uplp_r870_bar_long.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a <color=255,100,100>5-round</color> tube."
+
+L["uplp_r870_bar_police.printname"] = "18.5\" Police Barrel"
+L["uplp_r870_bar_police.compactname"] = "18.5\" Police"
+L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Wingmaster 12G intended for police use.\nComes with a <color=255,100,100>5-round</color> tube and built-in iron sights."
+
+L["uplp_r870_bar_sawed.printname"] = "12.5\" Short Barrel"
+L["uplp_r870_bar_sawed.compactname"] = "12.5\" Short"
+L["uplp_r870_bar_sawed.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
+
+L["uplp_r870_bar_usmc.printname"] = "18.5\" USMC Barrel"
+L["uplp_r870_bar_usmc.compactname"] = "18.5\" USMC"
+L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Wingmaster 12G intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube and built-in iron sights."
+
+L["uplp_r870_bar_9.printname"] = "20\" Smooth Barrel"
+L["uplp_r870_bar_9.compactname"] = "20\" Smooth"
+L["uplp_r870_bar_9.description"] = "Smooth 20\" (508mm) barrel for the Wingmaster 12G.\nComes with a <color=100,255,100>9-round</color> tube."
+
+L["uplp_r870_bar_swag.printname"] = "20\" Sport Barrel"
+L["uplp_r870_bar_swag.compactname"] = "20\" Sport"
+L["uplp_r870_bar_swag.description"] = "Custom 20\" (508mm) barrel intended for sport shooting.\nComes with a <color=100,255,100>9-round</color> tube."
+
+////// Pump handles
+L["uplp_r870_handle_old.printname"] = "Old-School Pump Handle"
+L["uplp_r870_handle_old.compactname"] = "O. S."
+L["uplp_r870_handle_old.description"] = "Classic pump handle from the original Wingmaster."
+
+L["uplp_r870_handle_poly.printname"] = "Polymer Pump Handle"
+L["uplp_r870_handle_poly.compactname"] = "Polymer"
+L["uplp_r870_handle_poly.description"] = "Modernized polymer pump handle for the Wingmaster 12G."
+
+L["uplp_r870_handle_rail.printname"] = "Tactical Pump Handle"
+L["uplp_r870_handle_rail.compactname"] = "Tactical"
+L["uplp_r870_handle_rail.description"] = "Tactical pump handle with built-in rails for foregrips and laser sights."
+
+L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Pump Handle"
+L["uplp_r870_handle_flash.compactname"] = "ApexCore"
+L["uplp_r870_handle_flash.description"] = "Custom pump handle with built-in flashlight made by ApexCore Arsenal."
+
+L["uplp_r870_handle_magpul.printname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.printname")
+L["uplp_r870_handle_magpul.compactname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.compactname")
+L["uplp_r870_handle_magpul.description"] = ARC9:GetPhrase("uplp_m590_handle_magpul.description")
+
+////// Magazines
+L["uplp_r870_mag_5.printname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5-R Detachable Magazine"
+L["uplp_r870_mag_5.compactname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5R D."
+L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+
+////// Stocks
+L["uplp_r870_stock_short.printname"] = "Cut-Off Polymer Stock"
+L["uplp_r870_stock_short.compactname"] = "C.O. (P)"
+L["uplp_r870_stock_short.description"] = "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
+
+L["uplp_r870_stock_short_wood.printname"] = "Cut-Off Wooden Stock"
+L["uplp_r870_stock_short_wood.compactname"] = "C.O. (W)"
+L["uplp_r870_stock_short_wood.description"] = ARC9:GetPhrase("uplp_r870_stock_short.description")
+
+L["uplp_r870_stock_poly.printname"] = "Polymer Stock"
+L["uplp_r870_stock_poly.compactname"] = "Polymer"
+L["uplp_r870_stock_poly.description"] = "Modernized polymer stock for the Wingmaster 12G."
+
+L["uplp_r870_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly Stock"
+L["uplp_r870_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly"
+L["uplp_r870_stock_magpul.description"] = "Reinforced tactical stock for the Wingmaster 12G."
+
+L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_r870_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_r870_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+
+L["uplp_r870_stock_grip.printname"] = "Pistol Grip with No Stock"
+L["uplp_r870_stock_grip.compactname"] = "P. Grip"
+L["uplp_r870_stock_grip.description"] = "A vertical pistol grip without any rear stock."
+
+L["uplp_r870_stock_fold.printname"] = "Pistol Grip with Foldable Stock"
+L["uplp_r870_stock_fold.compactname"] = "P. Grip (F)"
+L["uplp_r870_stock_fold.description"] = "A vertical pistol grip with a foldable stock."
+
+////// Rail
+L["uplp_r870_iron_none.printname"] = "No Top Rail"
+L["uplp_r870_iron_none.compactname"] = "N/A"
+L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
+
+////// Extras & Skins
+L["uplp_r870_extra_holster.printname"] = ARC9:GetPhrase("uplp_m590_extra_holster.printname") or "Shell Holster"
+L["uplp_r870_extra_holster.compactname"] = ARC9:GetPhrase("uplp_m590_extra_holster.compactname") or "Holster"
+L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m590_extra_holster.description") or "Attaches a cosmetic shell holster to the left side of the weapon."
+
+L["uplp_r870_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_r870_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
+L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
+
+//////////////////// ArmaLite AR-18
+L["uplp_weapon_ar18"] = "MAR-63"
+L["uplp_weapon_ar18_desc"] = "The MAR-63 (\"Military Assault Rifle 1963\") is a gas-operated, selective-fire rifle developed in the late 1960s, designed to be a simpler and more cost-effective alternative to the AR-15, featuring a short-stroke piston system and a stamped sheet metal construction. Despite its initial lack of widespread adoption, its design has influenced numerous modern firearms."
+
+L["uplp_weapon_ar18_real"] = "ArmaLite AR-18"
+
+L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
+
+/////////// Attachments
+////// Barrels
+L["uplp_ar18_bar_carbine.printname"] = "10.1\" MAR-63S Carbine Barrel and Handguard"
+L["uplp_ar18_bar_carbine.compactname"] = "10.1\" 63S C."
+L["uplp_ar18_bar_carbine.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S."
+
+L["uplp_ar18_bar_pistol.printname"] = "10.1\" MAR-63S Barrel and Handguard"
+L["uplp_ar18_bar_pistol.compactname"] = "10.1\" 63S"
+L["uplp_ar18_bar_pistol.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
+
+////// Muzzle
+L["uplp_ar18_muz.printname"] = "MAR-63 Muzzle Brake"
+L["uplp_ar18_muz.compactname"] = "MAR-63"
+L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MAR-63."
+
+////// Mags
+L["uplp_ar18_mag_40.printname"] = "40-Round 5.56x45mm"
+L["uplp_ar18_mag_40.compactname"] = "40R 5.56"
+L["uplp_ar18_mag_40.description"] = "Extended 40-round magazine for the MAR-63."
+
+L["uplp_ar18_mag_20.printname"] = "20-Round 5.56x45mm"
+L["uplp_ar18_mag_20.compactname"] = "20R 5.56"
+L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the MAR-63."
+
+////// Stocks
+L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
+L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
+L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
+
+L["uplp_ar18_stock_fixed_wood.printname"] = "Fixed Wooden Stock & Handguard"
+L["uplp_ar18_stock_fixed_wood.compactname"] = "Wooden"
+L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
+
+L["uplp_ar18_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_ar18_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_ar18_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+
+////// Optics
+L["uplp_ar18_scope_real.printname"] = "MAR Optical Sight"
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"
+L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
+
+//////////////////// MP9N
+L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
+L["uplp_weapon_mp9_desc"] = "The F9 \"Cheetah\" is a lightweight, compact submachine gun designed for close-quarters combat, featuring a high rate of fire and minimal recoil. Its ergonomic design and versatility make it ideal for military, law enforcement, and personal defense applications."
+
+L["uplp_weapon_mp9_real"] = "B&T MP9 | Steyr TMP"
+
+L["uplp_weapon_mp9_tmp"] = "MP \"Gepard\""
+
+L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
+
+/////////// Attachments
+////// Barrels
+L["uplp_mp9_muzzle_tacbarrel.printname"] = "Extended Barrel and Shroud"
+L["uplp_mp9_muzzle_tacbarrel.compactname"] = "Ext."
+L["uplp_mp9_muzzle_tacbarrel.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
+
+////// Muzzle
+L["uplp_mp9_muzzle_sup.printname"] = "F9 \"Cheetah\" Suppressor"
+L["uplp_mp9_muzzle_sup.compactname"] = "F9 Supp."
+L["uplp_mp9_muzzle_sup.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+
+L["uplp_mp9_muzzle_supold.printname"] = "MP \"Gepard\" Prototype Suppressor"
+L["uplp_mp9_muzzle_supold.compactname"] = "\"Gepard\""
+L["uplp_mp9_muzzle_supold.description"] = "Old prototype suppressor made for the prototype MP \"Gepard\", the predecessor to the F9 \"Cheetah\"."
+
+////// Mags
+L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
+L["uplp_mp9_mag_20.compactname"] = "20R 9x19"
+L["uplp_mp9_mag_20.description"] = "Shortened 20-round magazine for the F9 \"Cheetah\"."
+
+L["uplp_mp9_mag_42.printname"] = "42-Round 9x19mm"
+L["uplp_mp9_mag_42.compactname"] = "42R 9x19"
+L["uplp_mp9_mag_42.description"] = "Custom-made extended 42-round magazine for the F9 \"Cheetah\"."
+
+////// Grips
+L["uplp_mp9_grip_raw.printname"] = "Remove Top & Bottom Rails"
+L["uplp_mp9_grip_raw.compactname"] = "N/A"
+L["uplp_mp9_grip_raw.description"] = "Removes the top and bottom rails, making it resemble the prototype MP \"Gepard\"."
+
+L["uplp_mp9_grip_rail.printname"] = "Bottom Rail as Support"
+L["uplp_mp9_grip_rail.compactname"] = "Rail"
+L["uplp_mp9_grip_rail.description"] = "Utilize the attached bottom rail as a hand support."
+
+////// Stocks
+L["uplp_mp9_stock_def.printname"] = "Foldable Stock"
+L["uplp_mp9_stock_def.compactname"] = "Foldable"
+L["uplp_mp9_stock_def.description"] = "Factory-installed foldable stock for the F9 \"Cheetah\"."
+
+L["uplp_mp9_stock_tac.printname"] = "Tactical Stock"
+L["uplp_mp9_stock_tac.compactname"] = "Tac."
+L["uplp_mp9_stock_tac.description"] = "Custom-made stock for the F9 \"Cheetah\"."
+
+L["uplp_mp9_stock_strap.printname"] = "Rear Sling"
+L["uplp_mp9_stock_strap.compactname"] = "Sling"
+L["uplp_mp9_stock_strap.description"] = "Attaches a cosmetic rear sling onto the F9 \"Cheetah\"."
+
+L["uplp_mp9_stock_full.printname"] = "Fixed Stock"
+L["uplp_mp9_stock_full.compactname"] = "Fixed"
+L["uplp_mp9_stock_full.description"] = "Classic fixed stock for the F9 \"Cheetah\"."
+
+////// Skins
+L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
+L["uplp_mp9_skin_white.compactname"] = "W&R"
+L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."
+
+//////////////////// PKM
+L["uplp_weapon_pkm"] = "PS 7.62"
+L["uplp_weapon_pkm_desc"] = "Sokolov's machine gun (Russian: Пулемет Соколова | Polemyot Sokolova) is a reliable, belt-fed weapon known for its durability and accuracy. It has been used in various conflicts, providing support fire with impressive range and power."
+
+L["uplp_weapon_pkm_pkp"] = "PSM 7.62" -- "Modern"
+L["uplp_weapon_pkm_bp"] = "PS-BP 7.62" -- "Bullpup"
+
+L["uplp_weapon_pkm_real"] = "PKM | PKP Pecheneg"
+
+L["uplp_weapon_pkm_manufacturer"] = "TsNIITochMash"
+
+/////////// Attachments
+////// Barrels
+L["uplp_pkm_brl_aek.printname"] = "\"Medoyed\" Barrel"
+L["uplp_pkm_brl_aek.compactname"] = "Medoyed"
+L["uplp_pkm_brl_aek.description"] = "Medium weight barrel for the PS 7.62 with a <color=100,255,100>large, pre-installed suppressor</color>."
+
+L["uplp_pkm_brl_pkp.printname"] = "\"PSM\" Barrel"
+L["uplp_pkm_brl_pkp.compactname"] = "PSM"
+L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PSM 7.62."
+
+////// Furniture
+L["uplp_pkm_furn_poly.printname"] = "Polymer Furniture"
+L["uplp_pkm_furn_poly.compactname"] = "Polymer"
+L["uplp_pkm_furn_poly.description"] = "Replaces the wooden furniture with polymer ones.\nPurely <color=150,150,255>cosmetic</color>."
+
+L["uplp_pkm_furn_zenit.printname"] = "Zenith Furniture"
+L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
+L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
+
+////// Receiver
+L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
+L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
+L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and <color=100,255,100>XW Red Dot</color>*.\n\n*Can be swapped out for other optics."
+
+////// Misc.
+L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
+L["uplp_pkm_bipod.compactname"] = "Bipod"
+L["uplp_pkm_bipod.description"] = "Standard-issue bipod."
+
+L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
+L["uplp_pkm_taccover.compactname"] = "Tac. TC"
+L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the RIS rail.\nPurely <color=150,150,255>cosmetic</color>."
+
+L["uplp_pkm_handguard.printname"] = "Tactical Hand Guard"
+L["uplp_pkm_handguard.compactname"] = "Tac. HG"
+L["uplp_pkm_handguard.description"] = "Displays the tactical handguard with bottom and side rails.\nPurely <color=150,150,255>cosmetic</color>."

@@ -57,13 +57,13 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_fn57.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.TPIKParentToSpine4 = true
+-- SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(7, -7, -4),
-    TPIKAng = Angle(-10, 65, 90),
+    TPIKPos = Vector(-16, 3, -2),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -110,7 +110,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1 * 0.75
 SWEP.RecoilUp = 1.3
 SWEP.RecoilSide = 0.9
 
@@ -120,10 +120,10 @@ SWEP.RecoilRandomSide = 0.75
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.15
+SWEP.RecoilAutoControl = 1.15 * 1.5
 
-SWEP.RecoilMultSights = 1
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
@@ -211,12 +211,12 @@ SWEP.PeekPosReloading = Vector(0.5, 0, -1)
 SWEP.PeekAngReloading = Angle(0, 0.4, -5)
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 30, 2.5)
+SWEP.CustomizePos = Vector(14, 30, 2.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
+SWEP.CustomizeRotateAnchor = Vector(14, -1.93, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = true
@@ -303,6 +303,9 @@ SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "generictails/fire-dist-int-pistol-light-05.ogg",
     pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
 }
+
+SWEP.DistantShootVolume = 0.01 -- already tail in fire sound
+SWEP.DistantShootVolumeActual = 0.01
 
 SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_1.ogg",
@@ -741,7 +744,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/fn57_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2.0, -0.75),
+        Pos = Vector(0, -2.0 + 1, -0.75),
         Ang = Angle(90, 0, -90),
     },
     {

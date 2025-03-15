@@ -38,7 +38,7 @@ SWEP.StandardPresets = {
 }
 
 ---- Muzzle Effects, Shell Effects, Camera
-SWEP.MuzzleParticle = "muzzleflash_1"
+SWEP.MuzzleParticle = "muzzleflash_pistol_deagle"
 SWEP.MuzzleEffectQCA = 1
 
 SWEP.TracerNum = 1
@@ -58,13 +58,13 @@ SWEP.WorldModel = "models/weapons/arc9/w_uplp_deagle.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
-SWEP.TPIKParentToSpine4 = true
+-- SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(7, -7, -4),
-    TPIKAng = Angle(-10, 65, 90),
+    TPIKPos = Vector(-16, 3, -1),
+    TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
 
@@ -115,7 +115,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 7
 
 -- Recoil
-SWEP.Recoil = 4.5
+SWEP.Recoil = 4.5 * 0.75
 SWEP.RecoilUp = 1
 SWEP.RecoilSide = 0.3
 
@@ -125,10 +125,10 @@ SWEP.RecoilRandomSide = 0.2
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.75
+SWEP.RecoilAutoControl = 1.75 * 1.5
 
-SWEP.RecoilMultSights = 0.95
-SWEP.RecoilMultCrouch = 0.75
+SWEP.RecoilMultSights = 0.75
+SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.75
@@ -219,8 +219,8 @@ SWEP.CustomizePos = Vector(15, 30, 2.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
-SWEP.CustomizeSnapshotFOV = 70
+SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
+SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
@@ -271,6 +271,15 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_2.ogg",
     pathUTC .. "smg_pistol_magdrop_3.ogg",
     pathUTC .. "smg_pistol_magdrop_4.ogg",
+}
+
+local mech = {
+    pathUT .. "mech-01.ogg",
+    pathUT .. "mech-02.ogg",
+    pathUT .. "mech-03.ogg",
+    pathUT .. "mech-04.ogg",
+    pathUT .. "mech-05.ogg",
+    pathUT .. "mech-06.ogg",
 }
 
 ---- Animations
@@ -410,7 +419,13 @@ SWEP.Animations = {
         Source = "fire",
         -- Time = 1,
         ShellEjectAt = 0.01,
-        EventTable = { { s = mech, t = 0 } },
+        EventTable = { { s = mech, t = 0, v = 0.6 } },
+    },
+    ["fire_empty"] = {
+        Source = "fire_empty",
+        -- Time = 1,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mech, t = 0, v = 0.99 } },
     },
 
     -- Reloads --
@@ -572,7 +587,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
     -- if eles["uplp_ar15_reciever_m16"] or eles["uplp_ar15_reciever_45acp"] then
-        -- if eles["uplp_optic_small"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
+        -- if eles["uplp_optic_micro"] or eles["uplp_optic_mid"] or eles["uplp_optic_big"] then
             -- mdl:SetBodygroup(1,1)
         -- end
     -- end
@@ -612,7 +627,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -3, 5),
@@ -698,7 +713,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/deagle_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.55, -2.5, 2),
+        Pos = Vector(0.55, -2.5 + 1.5, 2),
         Ang = Angle(90, 0, -90),
     },
     {

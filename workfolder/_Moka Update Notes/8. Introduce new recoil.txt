@@ -1,0 +1,11 @@
+[h1]Changed content[/h1]
+[list]
+	[*] Tweaked the recoil behaviour on all automatic weapons
+	[*] Tweaked recoil stats on attachments for the MAR-63, AW-UG, Deagle, MRD57, PM92, CMP .380 and PV9 to match updated recoil
+	[*] Fixed that the MAR-63 [b]Fixed Wooden Stock & Handguard[/b] attachment had superiour stats to its wooden counterpart
+	[*] Fixed that the CMP .380 [b]Folding Wire Stock[/b] and F9 "Cheetah" [b]Foldable Stock[/b] had missing CustomPros and CustomCons
+	[*] Fixed that the reticles on all optics rendered in front of certain weapon elements
+	[*] Fixed the ScopeScreenRatio on the Aegis Precision Mini-Thermal when using Cheap Scopes
+	[*] Fixed that, on the AR-15 with the .458 SOCOM and .50 BeoWolf Ammo equipped, the Magazine Size was incorrectly affected.
+	[*] Fixed the sorting order for some attachments 
+[/list]

@@ -9,6 +9,8 @@ $bodygroup "body"
 	studio "mz_compact.smd" // 2
 	studio "mz_fat.smd" // 3
 	studio "mz_sharp.smd" // 4
+
+	studio "mz_xm.smd" // 5
 }
 
 $sequence "idle" {

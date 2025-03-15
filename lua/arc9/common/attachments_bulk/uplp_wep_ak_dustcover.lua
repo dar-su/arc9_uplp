@@ -280,7 +280,7 @@ ATT.SwayMultSights = 0.9
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_small", "uplp_optic_mid"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(0.5, 0.68, -2.8),
         Ang = Angle(0, 0, 0),

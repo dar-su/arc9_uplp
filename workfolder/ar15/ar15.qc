@@ -10,6 +10,8 @@ $bodygroup "ar15" { // 0
 	studio "reciever_modern_black.smd"
 	studio "stm9_reciever.smd"
 	studio "stm9_reciever_black.smd"
+
+	studio "reciever_m16a2.smd"
 }   
 $bodygroup "addition" { // 1
 	blank
@@ -35,6 +37,9 @@ $bodygroup "hg" { // 2
 	studio "hg_tacshort_red.smd"
 	
 	studio "hg_grenadier_alt.smd"
+
+	studio "hg_xm.smd"
+	studio "hg_rislong_covers.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"
@@ -42,6 +47,9 @@ $bodygroup "barrel" { // 3
 	studio "brl_14.smd"
 	studio "brl_20.smd"
 	studio "brl_22.smd"
+
+	studio "brl_145.smd"
+	studio "brl_15xm.smd"
 } 
 
 $bodygroup "ammo" { // 4

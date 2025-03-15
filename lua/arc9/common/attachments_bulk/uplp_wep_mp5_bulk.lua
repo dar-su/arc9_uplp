@@ -38,6 +38,9 @@ ATT.MalfunctionWait = 0
 ATT.SpreadAddHot = 0.03
 ATT.RPMMultHot = 0.85
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_sd")
 
 ---------- uplp_mp5_bar_kurz
@@ -69,12 +72,16 @@ ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.015
 ATT.SpeedMultSights = 1.05
+ATT.SwayAddSights = -1
 
 -- Negatives
 ATT.SpreadAdd = 0.005
 ATT.RangeMaxMult = 0.6
 ATT.RecoilAdd = 0.1
 ATT.RecoilPerShotOverride = 1 / 9
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_bar_kurz")
 
@@ -177,9 +184,11 @@ ATT.Attachments = {
     },
 }
 
--- Positives
+-- AR15 stocks reduce too much recoil so this is to counterbalance them
+ATT.RecoilAdd = 0.25
 
--- Negatives
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_buffer")
 
@@ -210,6 +219,9 @@ ATT.SprintToFireTimeAdd = 0.1 - 0.03
 ATT.SpeedMultSights = 0.85 + 0.1
 ATT.SpeedAdd = -0.05 + 0.03
 ATT.SpreadAddHipFire = nil
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_pdw")
 
@@ -245,7 +257,8 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_mp5_stock_col"},
-        -- CustomizePos = Vector(17, 31.5, 4),
+		CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end,
+		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -286,6 +299,9 @@ ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
 ATT.SpreadAddHipFire = 0.01
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_fixed")
 
 
@@ -294,8 +310,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp5_stock_fixed")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp5_mag_50"
-ATT.CompactName = "uplp_mp5_mag_50"
+ATT.PrintName = "50-Round 9x19mm Drum"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "50.png", "mips smooth")
@@ -328,8 +343,7 @@ ARC9.LoadAttachment(ATT, "uplp_mp5_mag_50")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp5_mag_15"
-ATT.CompactName = "uplp_mp5_mag_15"
+ATT.PrintName = "15-Round 9x19mm Magazine"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "15.png", "mips smooth")
@@ -359,18 +373,19 @@ ARC9.LoadAttachment(ATT, "uplp_mp5_mag_15")
 
 ATT = {}
 
-ATT.PrintName = "uplp_mp5_mag_10mm"
-ATT.CompactName = "uplp_mp5_mag_10mm"
+ATT.PrintName = "30-Round 10mm Magazine"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "10mm.png", "mips smooth")
 
 ATT.Category = "uplp_mp5_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
 ATT.ActivateElements = {"uplp_mp5_mag_10mm"}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30_10mm.mdl"
+
+-- ATT.Model = "models/weapons/arc9/uplp/mp5_mag_30_10mm_refract.mdl"
+-- ATT.BoneMerge = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload_empty" then
@@ -378,6 +393,73 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
 end
 
+ATT.BulletBones = {
+    [1] = "bullet1",
+    [2] = "bullet2",
+    [3] = "bullet3",
+    [4] = "bullet4",
+    [5] = "bullet5",
+    [6] = "bullet6",
+    [7] = "bullet7",
+    [8] = "bullet8",
+    [9] = "bullet9",
+    [10] = "bullet10",
+    [11] = "bullet11",
+    [12] = "bullet12",
+    [13] = "bullet13",
+    [14] = "bullet14",
+    [15] = "bullet15",
+    [16] = "bullet16",
+    [17] = "bullet17",
+    [18] = "bullet18",
+    [19] = "bullet19",
+    [20] = "bullet20",
+    [21] = "bullet21",
+    [22] = "bullet22",
+    [23] = "bullet23",
+    [24] = "bullet24",
+    [25] = "bullet25",
+    [26] = "bullet26",
+    [27] = "bullet27",
+    [28] = "bullet28",
+    [29] = "bullet29",
+    [30] = "bullet30",
+}
+ATT.ReloadHideBoneTables = {
+    [1] = {
+        "mag",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+        "bullet4",
+        "bullet5",
+        "bullet6",
+        "bullet7",
+        "bullet8",
+        "bullet9",
+        "bullet10",
+        "bullet11",
+        "bullet12",
+        "bullet13",
+        "bullet14",
+        "bullet15",
+        "bullet16",
+        "bullet17",
+        "bullet18",
+        "bullet19",
+        "bullet20",
+        "bullet21",
+        "bullet22",
+        "bullet23",
+        "bullet24",
+        "bullet25",
+        "bullet26",
+        "bullet27",
+        "bullet28",
+        "bullet29",
+        "bullet30",
+    },
+}
 
 local pathUT = "uplp_urban_temp/mp5/"
 

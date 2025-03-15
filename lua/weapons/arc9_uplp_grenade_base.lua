@@ -11,10 +11,10 @@ SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_fn57")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_fn57_desc")
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
-    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Darsu",
+    [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th, CS:S",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 SWEP.Slot = 4
@@ -36,11 +36,12 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.TPIKParentToSpine4 = true
 SWEP.TPIKNoSprintAnim = true
+SWEP.TPIKforcelefthand = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
     Pos = Vector(-8.5, 13, 5),
     Ang = Angle(0, 35, 70),
-    TPIKPos = Vector(1, 5, 2),
+    TPIKPos = Vector(1, -1, 2),
     TPIKAng = Angle(-10, 65, 90),
     Scale = 1
 }

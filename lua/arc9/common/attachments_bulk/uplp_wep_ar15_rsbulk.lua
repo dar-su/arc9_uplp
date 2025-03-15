@@ -53,7 +53,7 @@ ATT.ExcludeElements = {"uplp_ar15_no_rs"}
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_rs.mdl"
 ATT.ModelBodygroups = "c"
-
+ATT.ModelAngleOffset = Angle(-90, -90, 90)
 -- ATT.Sights = {
     -- {
         -- Pos = Vector(0, 5, -1.165),

@@ -7,8 +7,8 @@ local iconfolder = "entities/uplp_attachements/ar15/"
 
 ATT = {}
 
-ATT.PrintName = "A2 Receiver with Carry Handle"
-ATT.CompactName = "A2 CH"
+ATT.PrintName = "A1 Receiver with Carry Handle"
+ATT.CompactName = "A1 CH"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
@@ -138,8 +138,8 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_modern_black_smg")
 
 ATT = {}
 
-ATT.PrintName = "A3 Receiver with Carry Handle"
-ATT.CompactName = "A3 CH"
+ATT.PrintName = "A1 Receiver with Carry Handle (No Burst)"
+ATT.CompactName = "A1 NB"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "recm16.png", "mips smooth")
@@ -150,3 +150,22 @@ ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m16a3")
+
+---------- uplp_ar15_reciever_a2
+
+
+ATT = {}
+
+ATT.PrintName = "A2 Receiver with Carry Handle"
+ATT.CompactName = "A2 CH"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "reca2.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_reciever_a2", "uplp_ar15_rs_short", "uplp_ar15_rs"}
+
+ATT.Category = "uplp_ar15_reciever"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_a2")
+
