@@ -82,16 +82,10 @@ SWEP.MagnificationZoomSpeed = 2.5
 
 SWEP.FiremodeSound = false
 
-SWEP.FireInterruptInspect = true
-SWEP.SightsInterruptInspect = true
-
 SWEP.AfterShotParticle = false
 SWEP.AfterShotParticleHook = function(swep, old) 
     if swep:GetHeatAmount() > 2 then return "barrel_smoke" end
     return old
 end
 
--- i can't belive all guns sounded wrong all this time because of this fucking vars missing
-SWEP.ShootPitchVariation = 0
-SWEP.DistantShootVolume = 0.05
-SWEP.DistantShootVolumeActual = 0.05
+SWEP.ShellVelocity = 0.75

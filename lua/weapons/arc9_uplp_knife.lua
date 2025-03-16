@@ -37,7 +37,7 @@ SWEP.CamQCA = 1
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_knife.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_knife-4.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_knife.mdl"
 
 SWEP.MirrorVMWM = true
@@ -239,42 +239,32 @@ SWEP.Animations = {
         },
     },
 
-
-    -- ["ready"] = {
-    --     Source = "ready",
-    --     Mult = 0.95,
-    --     EventTable = {
-    --         { s = pathUTC .. "magpouch.ogg", t = 0, c = ca, v = 0.5 },
-    --         { s = pathUTC .. "grab.ogg", t = 7 / 30, c = ca, v = 0.1 },
-    --         { s = pathUTC .. "cloth_5.ogg", t = 17.5 / 30, c = ca },
-    --         -- { s = pathUTC .. "cloth_4.ogg", t = 50 / 30, c = ca },
-    --         { s = pathUTC .. "grab.ogg", t = 50 / 30, c = ca, v = 0.1 },
-    --         { s = pathUTC .. "cloth_1.ogg", t = 45 / 30, c = ca },
-    --     },
-    -- },
-
     ["ready"] = {
         Source = "draw",
         MinProgress = 0.4,
+		Mult = 0.667,
         FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/awp/" .. "magtap.ogg", t = 27 / 60, c = ca, v = 0.8 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.4,
+		Mult = 0.667,
         FireASAP = true,
         EventTable = {
             { s = path1911 .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/awp/" .. "magtap.ogg", t = 27 / 60, c = ca, v = 0.8 },
         },
     },
 
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.7,
-		Mult = 0.9,
+		Mult = 0.7,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },

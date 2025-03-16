@@ -56,7 +56,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_mp5.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_mp5-1.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_mp5.mdl"
 
 SWEP.MirrorVMWM = true
@@ -71,7 +71,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 65
-SWEP.ActivePos = Vector(-0.5, 0, -0.1)
+SWEP.ActivePos = Vector(0.3, 1.5, -0.1)
 
 SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
 SWEP.BobSettingsSpeed = {0.91, 1, 1.0,    1, 0.92, 0.8}
@@ -95,7 +95,7 @@ SWEP.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.75,
 }
 
-SWEP.Penetration = 12 -- Units of wood that can be penetrated
+SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
@@ -114,7 +114,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1.6 * 0.75
+SWEP.Recoil = 0.6 + 1
 SWEP.RecoilUp = 0.65
 SWEP.RecoilSide = 0.35
 
@@ -124,18 +124,18 @@ SWEP.RecoilRandomSide = 0.5
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25 * 1.5
+SWEP.RecoilAutoControl = 1.25
 
-SWEP.RecoilMultSights = 0.75
-SWEP.RecoilMultCrouch = 0.85
+SWEP.RecoilMultSights = 1
+SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0 -- Vertical tilt
+SWEP.VisualRecoilUp = 0.04 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
+SWEP.VisualRecoilRoll = 10 -- Roll tilt
 SWEP.VisualRecoilPunch = 0.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
@@ -171,7 +171,6 @@ SWEP.SpeedMult = 0.97 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 SWEP.SpeedMultShooting = 0.85
 
-SWEP.SwayAddSights = 1 -- Either using Kurz handguard or any stock removes this
 SWEP.BarrelLength = 28
 
 SWEP.AimDownSightsTime = 0.36 - 0.1
@@ -190,6 +189,7 @@ SWEP.Firemodes = {
     RunawayBurst = true,
     RecoilAutoControlMult = 2,
     PostBurstDelay = 0.12,
+	RPMMult = 1.18,
     PoseParam = 1.5 },
     { Mode = 1, -- Semi
     RPM = 555,
@@ -220,18 +220,18 @@ SWEP.IronSights = {
 }
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(14, 40, 5)
+SWEP.CustomizePos = Vector(12.5, 28, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(14, -2.5, -3)
+SWEP.CustomizeRotateAnchor = Vector(12.5, -3, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
-SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(-1, 10, 2)
+SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = false
-SWEP.ShouldDropMagEmpty = false
+SWEP.ShouldDropMag = false 
+SWEP.ShouldDropMagEmpty = false 
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30.mdl"
-SWEP.DropMagazineTime = 0.63
+SWEP.DropMagazineTime = 0.63    
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
@@ -374,6 +374,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -393,8 +395,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.8,
-        FireASAP = true,
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -423,10 +425,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
-        PeekProgress = 0.875,
-        RefillProgress = 0.7,
-        FireASAP = true,
+        MinProgress = 0.85,
+		PeekProgress = 0.875,
+		RefillProgress = 0.7,
+		FireASAP = true,
         DropMagAt = 0.6,
         Mult = 1,
         EventTable = {
@@ -451,10 +453,10 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
-        PeekProgress = 0.825,
-        RefillProgress = 0.75,
-        FireASAP = true,
+        MinProgress = 0.85,
+		PeekProgress = 0.825,
+		RefillProgress = 0.75,
+		FireASAP = true,
         DropMagAt = 1.05,
         Mult = 1.0,
         EventTable = {
@@ -487,9 +489,9 @@ SWEP.Animations = {
     ["reload_15"] = {
         Source = "reload_15",
         MinProgress = 0.95,
-        PeekProgress = 0.875,
-        RefillProgress = 0.75,
-        FireASAP = true,
+		PeekProgress = 0.875,
+		RefillProgress = 0.75,
+		FireASAP = true,
         DropMagAt = 0.6,
         Mult = 1,
         DropMagAt = 0.5,
@@ -516,24 +518,24 @@ SWEP.Animations = {
     ["reload_empty_15"] = {
         Source = "reload_empty_15",
         MinProgress = 0.95,
-        PeekProgress = 0.825,
-        RefillProgress = 0.75,
-        FireASAP = true,
+		PeekProgress = 0.825,
+		RefillProgress = 0.75,
+		FireASAP = true,
         Mult = 1.0,
         DropMagAt = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "rack1.ogg", t = 0.22, c = ca, v = 0.8 },
-            { s = pathUT .. "chlock.ogg", t = 0.345, c = ca, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 0.25*0.9, c = ca, v = 0.8 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9-0.07, v = 0.6 },
+            -- { s = pathUT .. "magin.ogg", t = 1.03, c = ca, v = 0.8 },
+            { s = pathUT .. "magtap.ogg", t = 1.05*0.9-0.07, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.2*0.9-0.07, c = ca, v = 0.8 },
 
-            { s = pathUT .. "magout.ogg", t = 0.73, c = ca, v = 0.8 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 1.0, v = 0.6 },
-            { s = pathUT .. "magtap.ogg", t = 1.44-0.05, c = ca, v = 0.8 },
-            -- { s = pathUT .. "magin.ogg", t = 1.4, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_1.ogg", t = 1.65-0.05, c = ca, v = 0.5 },
-            --{ s = "uplp_urban_temp/ak/scrape.ogg", t = 1.82-0.1, c = ca, v = 1 },
-            { s = pathUTREAL .. "slap.ogg", t = 1.85-0.1, c = ca, v = 0.75 },
-            { s = pathUTC .. "cloth_4.ogg", t = 2.0-0.1, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 1.1 + 0, c = ca, v = 0.8 },
+
+            { s = pathUT .. "chback.ogg", t = 1.1 + 0.12, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber.ogg", t = 1.1 + 0.45, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 1.1 + 0.53, c = ca },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1.0},
@@ -542,7 +544,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.1, lhik = 0 },
-            { t = 0.75, lhik = 0 },
+            { t = 0.5, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -551,9 +553,9 @@ SWEP.Animations = {
     ["reload_50"] = {
         Source = "reload_50",
         MinProgress = 0.95,
-        PeekProgress = 0.85,
-        RefillProgress = 0.7,
-        FireASAP = true,
+		PeekProgress = 0.85,
+		RefillProgress = 0.7,
+		FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
@@ -579,9 +581,9 @@ SWEP.Animations = {
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
         MinProgress = 0.95,
-        PeekProgress = 0.875,
-        RefillProgress = 0.85,
-        FireASAP = true,
+		PeekProgress = 0.875,
+		RefillProgress = 0.85,
+		FireASAP = true,
         Mult = 1.0,
         DropMagAt = 1.1,
         EventTable = {
@@ -610,14 +612,13 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-
+    
     ["reload_empty_catch"] = {
         Source = "reload_empty_catch",
         MinProgress = 0.95,
-        PeekProgress = 0.8,
-        RefillProgress = 0.725,
-        MagSwapTime = 0.8,
-        FireASAP = true,
+		PeekProgress = 0.8,
+		RefillProgress = 0.725,
+		FireASAP = true,
         Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
@@ -708,9 +709,9 @@ SWEP.DeployTime = 1
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    local tacc = "uplp_tac_used"
-    local hg = "uplp_mp5_hg_"
-
+	local tacc = "uplp_tac_used"
+	local hg = "uplp_mp5_hg_"
+	
     if eles["uplp_muzzle_used"] or eles["uplp_mp5_bar_kurz"] or eles["uplp_mp5_bar_sd"] then
         mdl:SetBodygroup(6, 1)
     end
@@ -783,7 +784,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_mp5_optic"},
+        Category = {"uplp_optic_small", "uplp_optic_mid", "uplp_mp5_optic"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -2.2, 2.5),
@@ -851,7 +852,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35 + 1.5, -0.3),
+        Pos = Vector(0, 0.35, -0.3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -859,7 +860,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 2 + 1.5, 1.7),
+        Pos = Vector(0, 2, 1.7),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -867,7 +868,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35 + 1.5, 7),
+        Pos = Vector(0, 0.35, 7),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_mp5_bar_kurz", "uplp_mp5_bar_sd", "uplp_grip_used", "uplp_tac_used"},
     },
@@ -876,7 +877,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp5_5.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2, -2.5 - 1.5),
+        Pos = Vector(0, -2, -2.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -927,34 +928,18 @@ SWEP.HookP_NameChange = function(self, name)
     return name
 end
 
-SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
-    if swep:GetElements()["uplp_weapon_mp5k"] then
-        ent:SetPoseParameter("owo", 1) -- different animations for mpk5
-    else
-        ent:SetPoseParameter("owo", 0)
+local fuckthis = 0
+SWEP.Hook_Think = function(swep)
+    if fuckthis < CurTime() then
+        fuckthis = CurTime() + 0.5
+        if swep:GetElements()["uplp_weapon_mp5k"] then
+            local vm, wm = swep:GetVM(), swep:GetWM()
+            if IsValid(vm) then vm:SetPoseParameter("owo", 1) end -- different animations for mpk5
+            if IsValid(wm) then wm:SetPoseParameter("owo", 1) end -- tpik
+        else
+            local vm, wm = swep:GetVM(), swep:GetWM()
+            if IsValid(vm) then vm:SetPoseParameter("owo", 0) end
+            if IsValid(wm) then wm:SetPoseParameter("owo", 0) end
+        end
     end
-
-    local loadedronds = swep:GetLoadedRounds()
-    if loadedronds <= 15 then loadedronds = loadedronds - 0.75 end
-    ent:SetPoseParameter("magspring", 1-math.Clamp(loadedronds/30, 0, 1))
 end
-
--- Moka's shit
-SWEP.Recoil = 1.25
-SWEP.RecoilAutoControl = 2.25
-SWEP.RecoilAutoControlMultShooting = 0.05
-
-SWEP.RecoilMultRecoil = 1.3
-SWEP.RecoilMultSights = 0.875
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.02
-
-SWEP.SpreadAddRecoil = 0.026
-SWEP.SpreadAddMove = 0.0175
-
-SWEP.RecoilPerShot = 0.2
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.2

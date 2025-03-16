@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_spas.mdl"
+$modelname "weapons\arc9\c_uplp_spas-45.mdl"
  
 $bodygroup "rec" { // 0
 	studio "body.smd" // 0
@@ -132,16 +132,23 @@ $sequence "ready" {
 
 $sequence "draw" {
 	"anims\draw.smd"
-	// "anims\draw_iron.smd"
- 	// blend "sights" 0 1
 	fps 30
-	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster" {
 	"anims\holster.smd"
 	fps 30
-	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "draw_quick" {
+	"anims\draw_quick.smd"
+	fps 30
+	snap
+}
+$sequence "holster_quick" {
+	"anims\holster_quick.smd"
+	fps 30
 	snap
 }
 
@@ -181,61 +188,54 @@ $sequence "cycle" {
 	"anims\cycle_iron.smd"
 	blend "sights" 0 1
 	fps 30
-	snap
+	fadein 0.2
+	fadeout 0.1
 }
 
 
 $sequence "reload_start" {
 	"anims\sgreload_start.smd"
-	"anims\sgreload_start_ads.smd"
-	blend "sights" 0 1
 	fps 30
-	snap
+	fadein 0.2
+	fadeout 0
+}
+
+
+$sequence "reload_start_insert" {
+	"anims\sgreload_start_insert.smd"
+	fps 30
+	fadein 0.2
+	fadeout 0
 }
 
 $sequence "reload_start_empty" {
 	"anims\sgreload_start_empty.smd"
-	"anims\sgreload_start_empty_ads.smd"
-	blend "sights" 0 1
 	fps 30
-	snap
+	fadein 0.2
+	fadeout 0
 }
 
 $sequence "reload_start_empty_pumpy" {
 	"anims\sgreload_start_empty_pumpy.smd"
-	"anims\sgreload_start_empty_pumpy_ads.smd"
-	blend "sights" 0 1
 	fps 30
-	snap
-}
-
-$sequence "reload_start_empty_only" {
-	"anims\sgreload_start_empty_only.smd"
-	"anims\sgreload_start_empty_only_ads.smd"
-	blend "sights" 0 1
-	fps 30
-	snap
-}
-$sequence "reload_start_empty_only_pumpy" {
-	"anims\sgreload_start_empty_pumpy_only.smd"
-	"anims\sgreload_start_empty_pumpy_only_ads.smd"
-	blend "sights" 0 1
-	fps 30
-	snap
+	fadein 0.2
+	fadeout 0
 }
 
 $sequence "reload_insert" {
 	"anims\sgreload_insert.smd"
-	"anims\sgreload_insert.smd"
-	blend "sights" 0 1
 	fps 30
 	snap
 }
 
 $sequence "reload_end" {
 	"anims\sgreload_end.smd"
-	"anims\sgreload_end_ads.smd"
-	blend "sights" 0 1
+	fps 30
+	snap
+}
+
+$sequence "reload_end_pump" {
+	"anims\sgreload_end_pump.smd"
 	fps 30
 	snap
 }

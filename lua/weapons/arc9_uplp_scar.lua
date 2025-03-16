@@ -57,7 +57,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_scar.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_scar-2.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_scar.mdl"
 
 SWEP.MirrorVMWM = true
@@ -383,6 +383,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -401,6 +403,8 @@ SWEP.Animations = {
 
     ["ready_20"] = {
         Source = "ready_20",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -419,6 +423,9 @@ SWEP.Animations = {
 
     ["ready_100"] = {
         Source = "ready_drum",
+		Mult = 0.75,
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -447,6 +454,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
+		Mult = 0.8,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -464,6 +472,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
+		Mult = 0.8,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -490,7 +499,7 @@ SWEP.Animations = {
     -- Reloads --
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.8,
 		RefillProgress = 0.625,
 		FireASAP = true,
@@ -515,7 +524,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.775,
 		RefillProgress = 0.675,
 		FireASAP = true,
@@ -542,7 +551,7 @@ SWEP.Animations = {
 
     ["reload_20"] = {
         Source = "reload_20",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.8,
 		RefillProgress = 0.625,
 		FireASAP = true,
@@ -567,7 +576,7 @@ SWEP.Animations = {
     },
     ["reload_empty_20"] = {
         Source = "reload_empty_20",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.775,
 		RefillProgress = 0.675,
 		FireASAP = true,
@@ -594,7 +603,7 @@ SWEP.Animations = {
 
     ["reload_l"] = {
         Source = "reload_l",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.8,
 		RefillProgress = 0.625,
 		FireASAP = true,
@@ -620,7 +629,7 @@ SWEP.Animations = {
     },
     ["reload_empty_l"] = {
         Source = "reload_empty_l",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
@@ -648,7 +657,7 @@ SWEP.Animations = {
 
     ["reload_60"] = {
         Source = "reload_l60",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.8,
 		RefillProgress = 0.625,
 		FireASAP = true,
@@ -674,7 +683,7 @@ SWEP.Animations = {
     },
     ["reload_empty_60"] = {
         Source = "reload_empty_l60",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
@@ -702,7 +711,7 @@ SWEP.Animations = {
 
     ["reload_100"] = {
         Source = "reload_drum",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.875,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -729,18 +738,25 @@ SWEP.Animations = {
     },
     ["reload_empty_100"] = {
         Source = "reload_empty_drum",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.825,
 		RefillProgress = 0.675,
 		FireASAP = true,
         Mult = 1.1*0.8, -- ar15 anims in 30fps but scar in 24
         EventTable = {
+			
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 8 / 30, v = 0.4 },
             { s = pathUT .. "struggle.ogg", t = 27.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 32.5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltcatch.ogg", t = 46 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ak/bonk.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
+
+            { s = pathUTC .. "cloth_3.ogg", t = (1.7) + (0 / 30), c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = (1.7) + (2 / 30), c = ca, v = 0.8 },
+            { s = pathUT .. "chpull.ogg", t = (1.7) + (6 / 30), c = ca, v = 0.8 },
+            { s = pathUT .. "chrelease.ogg", t = (1.7) + (13.5 / 30), c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = (1.7) + (45 / 60), c = ca },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.42},
@@ -1200,7 +1216,7 @@ SWEP.Attachments = {
         Category = {"uplp_m203_rail"},
         -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(-0.05, 4.05, 11),
+        Pos = Vector(-0.05, 4.05, 10.5),
         Ang = Angle(90, 90, 0),
         -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
         MergeSlots = {12}, 

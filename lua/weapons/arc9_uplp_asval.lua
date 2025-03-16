@@ -94,7 +94,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_asval.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_asval-15.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_asval.mdl"
 
 SWEP.MirrorVMWM = true
@@ -440,6 +440,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -457,6 +459,8 @@ SWEP.Animations = {
     },
     ["ready_sr3"] = {
         Source = "ready_sr3",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -477,8 +481,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.4,
-        FireASAP = true,
+		MinProgress = 0.3,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -486,8 +490,8 @@ SWEP.Animations = {
     },
     ["draw_sr3"] = {
         Source = "draw_sr3",
-        MinProgress = 0.75,
-        FireASAP = true,
+		MinProgress = 0.3,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -503,7 +507,7 @@ SWEP.Animations = {
 
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgress = 0.3,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -559,8 +563,8 @@ SWEP.Animations = {
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback_9.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_9.ogg", t = 41 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -614,8 +618,8 @@ SWEP.Animations = {
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback_9.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_9.ogg", t = 41 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_9.ogg", t = 43 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},
@@ -669,8 +673,9 @@ SWEP.Animations = {
             { s = pathUT .. "magrelease.ogg", t = 12 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback_9.ogg", t = 46 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber_9.ogg", t = 53 / 30, c = ca, v = 0.8 },
+            { s = "uplp_urban_temp/ar15/" .. "ch_forward_empty.ogg", t = 55 / 30, c = ca, v = 0.7 },
+            { s = pathUT .. "chback_9.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_9.ogg", t = 68 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 60 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},

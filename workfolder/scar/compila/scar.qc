@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_scar.mdl"
+$modelname "weapons\arc9\c_uplp_scar-2.mdl"
  
 $bodygroup "lower" { // 0
 	studio "lower h.smd"

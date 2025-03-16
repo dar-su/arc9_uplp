@@ -1,4 +1,4 @@
-$modelname "weapons\arc9\c_uplp_knife.mdl"
+$modelname "weapons\arc9\c_uplp_knife-4.mdl"
  
 $bodygroup "knif" { // 0
 	studio "knif.smd"
@@ -76,7 +76,7 @@ $sequence "ready" {
 }
 
 $sequence "draw" {
-	"anims\draw.smd"
+	"anims\fes_draw.smd"
 	fps 24
 	"ACT_VM_DRAW" 1
 }

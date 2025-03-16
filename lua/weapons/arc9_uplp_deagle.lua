@@ -53,7 +53,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_deagle.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_deagle-9.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_deagle.mdl"
 
 SWEP.MirrorVMWM = true
@@ -73,8 +73,8 @@ SWEP.ViewModelFOVBase = 75
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
-SWEP.ActivePos = Vector(-0.1, -0.2, -0.1)
-SWEP.ActiveAng = Angle(0, 0, -3)
+SWEP.ActivePos = Vector(0.2, -0.2, -0.2)
+SWEP.ActiveAng = Angle(0, 0, -2)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -131,16 +131,16 @@ SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoil = 0.75
 SWEP.VisualRecoilMultSights = 1
-SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilCenter = Vector(2, -11, -11)
+SWEP.VisualRecoilUp = 2.15 -- Vertical tilt
 SWEP.VisualRecoilSide = 0 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 30 -- Roll tilt
 SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 50
-SWEP.VisualRecoilSpringMagnitude = 0.44
-SWEP.VisualRecoilPositionBumpUp = .25
+SWEP.VisualRecoilDampingConst = 200
+SWEP.VisualRecoilSpringMagnitude = 2.44
+SWEP.VisualRecoilPositionBumpUp = 2.25
 
 SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilUpHipFire = 2
@@ -177,7 +177,7 @@ SWEP.AimDownSightsTime = 0.25 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
-SWEP.RPM = 325 -- How fast gun shoot
+SWEP.RPM = 280 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -347,12 +347,14 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Mult = 1.1,
+        Mult = 0.9,
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "slidepull.ogg", t = 11 / 60, c = ca },
-            { s = pathUT .. "chamber.ogg", t = 21 / 60, c = ca },
+            { s = pathUT .. "chamber.ogg", t = 18 / 60, c = ca },
             { s = pathUTC .. "cloth_4.ogg", t = 29 / 60, c = ca },
         },
         IKTimeLine = {
@@ -430,7 +432,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -453,7 +455,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -481,7 +483,7 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -504,7 +506,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -616,6 +618,7 @@ SWEP.AttachmentElements = {
     ["uplp_deagle_skin_gold"] = { Skin = 2 },
     ["uplp_deagle_skin_blue"] = { Skin = 3 },
     ["uplp_deagle_skin_admin"] = { Skin = 4, Bodygroups = { { 7, 1 } } },
+    ["uplp_deagle_skin_frame"] = { Bodygroups = { { 0, 1 } } },
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -676,7 +679,7 @@ SWEP.Attachments = {
         Category = {"uplp_tac_pistol"},
         ExcludeElements = {"notac"},
         Bone = "body",
-        Pos = Vector(0, -1.05, 7),
+        Pos = Vector(0, -1.05, 5.7),
         Ang = Angle(90, 90, 0),
     },
 
@@ -732,6 +735,15 @@ SWEP.Attachments = {
         -- ExcludeElements = {"uplp_no_grip", "uplp_no_ubgl"},
         MergeSlots = {7}, 
         Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_receiver_lower"),
+        Category = {"uplp_deagle_skin_frame"},
+        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0, 1),
+        Ang = Angle(90, 90, 180),
+        CosmeticOnly = true,
     },
 }
 

@@ -1587,6 +1587,10 @@ L["uplp_deagle_skin_blue.printname"] = "Cylo Blue"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
 L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
+L["uplp_deagle_skin_frame.printname"] = "Chrome Frame"
+L["uplp_deagle_skin_frame.compactname"] = "Chrome Frame"
+L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62×39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
@@ -2267,7 +2271,7 @@ L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
 
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW-UG"
-L["uplp_weapon_aug_desc"] = "The \"Automatisches Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun."
+L["uplp_weapon_aug_desc"] = "The \"Automatisches Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun. It features a progressive trigger that allows for semi-automatic fire by pulling the trigger half-way."
 
 L["uplp_weapon_aug_smg"] = "AW-MP"
 L["uplp_weapon_aug_smg_full"] = "Automatisches Waffen Machinenpistole (\"Automatic Weapon Machine Pistol\")"
@@ -2308,9 +2312,9 @@ L["uplp_aug_mag_556_30p.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
 L["uplp_aug_mag_556_30p.description"] = "30-round magazine made out of polymer for the AW-UG."
 
-L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56×45mm"
-L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
-L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
+L["uplp_aug_mag_556_40.printname"] = "45-Round 5.56×45mm"
+L["uplp_aug_mag_556_40.compactname"] = "45R 5.56"
+L["uplp_aug_mag_556_40.description"] = "45-round extended magazine for the AW-UG."
 
 L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56×45mm Drum"
 L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"

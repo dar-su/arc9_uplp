@@ -4,11 +4,10 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnm
 SWEP.Spawnable = true
 SWEP.AdminOnly = false
 
-SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_grenade_frag") or "Frag Grenade"
-SWEP.ShortPrintName = ARC9:GetPhrase("uplp_weapon_grenade_frag_short") or "Frag"
-SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_throwable") or "Throwable"
-SWEP.Description = ARC9:GetPhrase("uplp_weapon_grenade_frag_desc") or "High-explosive fragmentation grenade."
-SWEP.CustomSelectIcon =  Material("entities/arc9_uplp_grenade_frag_wide.png", "mips smooth")
+SWEP.PrintName = "FRAG Grenade"
+SWEP.ShortPrintName = "FRAG"
+-- SWEP.Class = ARC9:GetPhrase("eft_class_weapon_grenade") or "Hand grenade"
+SWEP.Description = [[fr]]
 
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_m26.mdl" -- guh
@@ -75,7 +74,7 @@ SWEP.Animations = {
     ["pullpin"] = {
         Source = "pullpin",
         Mult = 0.9,
-        MinProgress = 0.6,
+        MinProgress = 0.666,
         FireASAP = true,
         EventTable = {
             { s = path .. "pinpull.ogg", t = 0.3 },
@@ -101,21 +100,20 @@ SWEP.Animations = {
     },
     ["throw"] = {
         Source = "throw",
-        Mult = 0.9,
+        Mult = 0.75,
 		-- Mult = 1.2,
         EventTable = {
-            {s = "arc9/melee_lift.ogg", t = 0}, -- temporary
+            {s = "arc9/melee_lift.wav", t = 0}, -- temporary
             {hide = 2, t = 0},
             {hide = 1, t = 0.25},
         },
-        MinProgress = 0.25,
-        FireASAP = 0.75,
+        MinProgress = 0.22
     },
     ["toss"] = {
         Source = "throw_under",
         Mult = 0.75,
         EventTable = {
-            {s = "arc9/melee_lift.ogg", t = 0}, -- temporary
+            {s = "arc9/melee_lift.wav", t = 0}, -- temporary
             {hide = 2, t = 0},
             {hide = 1, t = 0.25},
         },
@@ -134,16 +132,6 @@ SWEP.Animations = {
     ["enter_sprint"] = {
         Source = "sprint_in",
 		Mult = 3.0,
-    },
-
-    ["inspect"] = {
-        Source = "inspect",
-        MinProgress = 0.01,
-        FireASAP = true,
-        EventTable = {
-            {s = randcloth, t = 0},
-            {s = randcloth, t = 2.1},
-        },
     },
 	
 }

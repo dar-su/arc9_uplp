@@ -51,14 +51,14 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 90
 SWEP.ShellSounds = {
-    "arc9/casings/casing_12ga_1.ogg",
-    "arc9/casings/casing_12ga_2.ogg",
-    "arc9/casings/casing_12ga_3.ogg",
-    "arc9/casings/casing_12ga_4.ogg",
-    "arc9/casings/casing_12ga_1.ogg",
-    "arc9/casings/casing_12ga_2.ogg",
-    "arc9/casings/casing_12ga_3.ogg",
-    "arc9/casings/casing_12ga_4.ogg",
+    "arc9/casings/casing_12ga_1.wav",
+    "arc9/casings/casing_12ga_2.wav",
+    "arc9/casings/casing_12ga_3.wav",
+    "arc9/casings/casing_12ga_4.wav",
+    "arc9/casings/casing_12ga_1.wav",
+    "arc9/casings/casing_12ga_2.wav",
+    "arc9/casings/casing_12ga_3.wav",
+    "arc9/casings/casing_12ga_4.wav",
 }
 
 SWEP.CaseEffectQCA = 2
@@ -66,7 +66,7 @@ SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_spas-45.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_spas.mdl"
 
 SWEP.MirrorVMWM = true
@@ -75,7 +75,7 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-5.5, 4, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-6, 2, -5),
+    TPIKPos = Vector(-4, 5, -10),
     TPIKAng = Angle(0, 0, 180),
     Scale = 1
 }
@@ -85,8 +85,20 @@ SWEP.ViewModelFOVBase = 66
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
-SWEP.ActivePos = Vector(-0.1, -1, -0.6)
+SWEP.ActivePos = Vector(0.7, -2, -1.9)
 SWEP.ActiveAng = Angle(0, 0, -0)
+
+local PeekPos = Vector(-0.5, 4, -3)
+local PeekAng = Angle(0, 0.4, -22)
+
+SWEP.PeekPos = PeekPos
+SWEP.PeekAng = PeekAng
+
+SWEP.PeekPosReloading = PeekPos
+SWEP.PeekAngReloading = PeekAng
+
+SWEP.SprintPos = Vector(2, -2, -1)
+SWEP.SprintAng = Angle(9, -9, -0)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -138,42 +150,42 @@ SWEP.ClipSize = 8
 
 -- Recoil
 SWEP.Recoil = 1 + 1
-SWEP.RecoilUp = 2
-SWEP.RecoilSide = 1.25
+SWEP.RecoilUp = 4
+SWEP.RecoilSide = 2.25
 
 -- Additional recoil when firing rapidly
 SWEP.RecoilMultRecoil = 1.75
 
-SWEP.RecoilRandomUp = 1.15
+SWEP.RecoilRandomUp = 0.75
 SWEP.RecoilRandomSide = 1
 
-SWEP.RecoilRise = 0
-SWEP.MaxRecoilBlowback = 0
-SWEP.RecoilPunch = 0
+SWEP.RecoilRise = 1
+SWEP.MaxRecoilBlowback = 3
+SWEP.RecoilPunch = 1
 SWEP.RecoilAutoControl = 1.25
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
-SWEP.VisualRecoilMultSights = 1
+SWEP.VisualRecoil = 1
+SWEP.VisualRecoilMultSights = 0.25
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilUp = -1.15 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
-SWEP.VisualRecoilRoll = 30 -- Roll tilt
-SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 80
-SWEP.VisualRecoilSpringMagnitude = 0.44
-SWEP.VisualRecoilPositionBumpUp = .1
+SWEP.VisualRecoilRoll = 90 -- Roll tilt
+SWEP.VisualRecoilPunch = 5.5 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilDampingConst = 40
+SWEP.VisualRecoilSpringMagnitude = 1.44
+SWEP.VisualRecoilPositionBumpUp = 2
 
 SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 5
 SWEP.VisualRecoilSideHipFire = -0.2
-SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 0.5
-SWEP.VisualRecoilDampingConstHipFire = 45
-SWEP.VisualRecoilPositionBumpUpHipFire = .5
+SWEP.VisualRecoilRollHipFire = 90
+SWEP.VisualRecoilPunchHipFire = 5.5
+SWEP.VisualRecoilDampingConstHipFire = 180
+SWEP.VisualRecoilPositionBumpUpHipFire = -2
 
 -- Accuracy and Spread
 SWEP.UseDispersion = true
@@ -222,7 +234,7 @@ SWEP.Firemodes = {
         DamageMaxMult = 1.25, -- blehh :p
         SweetSpotDamageMult = 1.25, -- blehh :p
 
-        RPM = 1200,
+        RPM = 60/0.2,
     },
     { Mode = 1, -- Semi
         ManualAction = false,
@@ -237,10 +249,10 @@ SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
 
 -- HoldType Info
-SWEP.HoldType = "ar2"
+SWEP.HoldType = "shotgun"
 SWEP.HoldTypeSprint = "passive"
 SWEP.HoldTypeHolstered = nil
-SWEP.HoldTypeSights = "smg"
+SWEP.HoldTypeSights = "shotgun"
 SWEP.HoldTypeCustomize = "slam"
 SWEP.HoldTypeNPC = nil
 
@@ -261,23 +273,23 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if attached["uplp_spas_stock_folding_f"] then
         return {
-             Pos = Vector(0, -2, -2),
-             Ang = Angle(0, 0, -10),
+             Pos = Vector(-1.0, -4, -2.5),
+             Ang = Angle(0, 0, 0),
              Magnification = 1.05,
              Blur = false,
-			 CrosshairInSights = true,
+             ViewModelFOV = 55,
         }
     end
 
 end
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(22, 45, 3.25)
+SWEP.CustomizePos = Vector(22, 30, 3.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(22, -3, -4)
 
-SWEP.CustomizeSnapshotPos = Vector(1.5, 40, 0)
-SWEP.CustomizeSnapshotFOV = 60
+SWEP.CustomizeSnapshotPos = Vector(1.5, 15, 0)
+SWEP.CustomizeSnapshotFOV = 90
 
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
@@ -291,11 +303,7 @@ SWEP.ShouldDropMagEmpty = false
 
 SWEP.ReloadInSights = false
 SWEP.ShotgunReload = true
-SWEP.ShotgunReloadIncludesChamber = true
-
--- Peek
-SWEP.PeekPos = Vector(-0.75, 7.5, -4)
-SWEP.PeekAng = Angle(0, 0.4, -40)
+SWEP.ShotgunReloadIncludesChamber = false
 
 ---- Sounds
 
@@ -444,36 +452,29 @@ local thetoggle = {{
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
 
-    local empty = swep:Clip1() == 0
-    local insemi = swep:GetValue("uplp_semi")
+    local clip = swep:Clip1()
+    local empty = clip == 0
+    local insemi = swep:GetValue("uplp_semi") -- This is a lie. This is pump-action mode.
 
-    if anim == "reload_start" or anim == "reload_start_empty" then
-        if empty then
-            timer.Simple(0.12, function()
-                if IsValid(swep) then swep:SetLoadedRounds(1) end -- magswap doesnt want to replinish our ammo!
-            end)
+    --if (true or swep:GetEmptyReload()) and anim == "reload_finish" then
+    --    return "reload_finish_empty"
+    --end
 
-            if swep:GetOwner():GetAmmoCount(swep.Ammo) <= 1 then
-                swep.dontcontinuereload = true
-                if insemi then return "reload_start_empty_only_pumpy" end
-                return "reload_start_empty_only"
-            end
-
-            if insemi then
-                return "reload_start_empty_pumpy"
-            end
+    -- Pump-action mode suppresses the empty suffix
+    if anim == "reload_start_empty" or (anim == "reload_start" and swep:GetEmptyReload()) then
+        swep:SetEmptyReload(false)
+        timer.Simple( 0, function()
+            swep:SetLoadedRounds(1)
+            swep:SetLastLoadedRounds(1)
+        end)
+        if insemi then
+            return "reload_start_empty_pumpy"
         end
-
-    elseif anim == "reload_finish" or anim == "reload_insert" then
-        if swep.dontcontinuereload then
-            swep.dontcontinuereload = nil
-            return "idle"
-        end
-    elseif insemi and anim == "fire" then
-        return "fire_pump"
     end
 
-    return anim
+    if insemi and anim == "fire" then
+        return "fire_pump"
+    end
 end
 
 -- Animations
@@ -486,6 +487,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -496,6 +499,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -503,7 +508,25 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        MinProgress = 0.4,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["draw_quick"] = {
+        Source = "draw_quick",
         MinProgress = 0.5,
+        FireASAP = true,
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+        },
+    },
+    ["holster_quick"] = {
+        Source = "holster_quick",
+        Mult = 0.5,
+        MinProgress = 0.3,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -529,6 +552,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
         IKTimeLine = { { t = 0, lhik = 1 } },
+        Mult = 1,
         EventTable = {
             { s = mechh, t = 0, v = 0.25 },
         },
@@ -537,6 +561,7 @@ SWEP.Animations = {
     ["fire_pump"] = {
         Source = {"fire_pumpy"},
         IKTimeLine = { { t = 0, lhik = 1 } },
+        Mult = 1,
         EventTable = {
             -- { s = mechh, t = 0, v = 0.75 },
         },
@@ -545,6 +570,7 @@ SWEP.Animations = {
     ["fire_empty"] = {
         Source = "fire_empty",
         IKTimeLine = { { t = 0, lhik = 1 } },
+        Mult = 1,
         EventTable = {
             { s = mechh, t = 0, v = 0.25 },
         },
@@ -553,91 +579,88 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EjectAt = 3.5 / 30,
+        Mult = 1,
+        EjectAt = 5 / 30,
+        MinProgress = 0.4,
         EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 5 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 4 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 8 / 30, v = 0.6 },
         },
     },
 
     -- Reloads --
 
     ["reload_start"] = {
-        Source = "reload_start",
+        Source = "reload_start_insert",
         RestoreAmmo = 1,
-        -- MinProgress= 0.75,
+        MinProgress = 0.5,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = ShellInsert, t = 13.5 / 30, v = 0.6 },
+            { s = ShellInsert, t = 12 / 30, v = 0.6 },
         },
     },
+
     ["reload_start_empty"] = {
         Source = "reload_start_empty",
-        -- MinProgress= 0.65,
-        RestoreAmmo = 2,
+        RestoreAmmo = 1,
+        MinProgress = 0.5,
+        Mult = 0.85,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 2 / 30, v = 1 },
-            { s = pathUT2 .. "ar15/selector-06.ogg", t = 14 / 30, v = 0.5 },
-            { s = pathUT .. "breechclose.ogg", t = 18 / 30, v = 0.6 },
-            { s = ShellInsert, t = 40 / 30, v = 0.6 },
+            { s = pathUT .. "breechload.ogg", t = 0 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
+            { s = "uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
+			
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "grab-polymer.ogg", t = 49 / 30, c = ca, v = 0.4 },
         },
     },
+
     ["reload_start_empty_pumpy"] = {
         Source = "reload_start_empty_pumpy",
-        -- MinProgress= 0.65,
-        EjectAt = 0.15,
-        RestoreAmmo = 2,
-        EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
-            { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 22 / 30, v = 1 },
-            { s = pathUT .. "forearm_forward.ogg", t = 37 / 30, v = 0.6 },
-            { s = ShellInsert, t = 57 / 30, v = 0.6 },
-        },
-    },
-
-    ["reload_start_empty_only"] = {
-        Source = "reload_start_empty_only",
         RestoreAmmo = 1,
-        -- MinProgress= 0.75,
+        MinProgress = 0.5,
+        Mult = 0.85,
+        EjectAt = 31 / 30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 2 / 30, v = 1 },
-            { s = pathUT2 .. "ar15/selector-06.ogg", t = 14 / 30, v = 0.5 },
-            { s = pathUT .. "breechclose.ogg", t = 18 / 30, v = 0.6 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 28 / 30, v = 0.6 },
-        },
-    },
-
-    ["reload_start_empty_only_pumpy"] = {
-        Source = "reload_start_empty_only_pumpy",
-        RestoreAmmo = 1,
-        EjectAt = 0.15,
-        -- MinProgress= 0.75,
-        EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 1 / 30, v = 0.6 },
-            { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 22 / 30, v = 1 },
-            { s = pathUT .. "forearm_forward.ogg", t = 37 / 30, v = 0.6 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 44 / 30, v = 0.6 },
+            { s = ShellInsert, t = 10 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 26 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 33 / 30, v = 0.6 },
+			
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 37 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "grab-polymer.ogg", t = 54 / 30, c = ca, v = 0.6 },
         },
     },
 
     ["reload_insert"] = {
         Source = "reload_insert",
-        MinProgress = 0.5,
+        MinProgress = 0.334,
         EventTable = {
-            { s = ShellInsert, t = 7.5 / 30, v = 0.6 },
+            { s = ShellInsert, t = 1 / 30, v = 0.6 },
         },
     },
 
     ["reload_finish"] = {
         Source = "reload_end",
-        MinProgress = 0.75,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
+        },
+    },
+
+    ["reload_finish_empty"] = {
+        Source = "reload_end_pump",
+        MinProgress = 0.5,
+        FireASAP = true,
+        EjectAt = 4 / 30,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
         },
     },
 
@@ -731,7 +754,7 @@ SWEP.Animations = {
 SWEP.AttachmentElements = {
     ["uplp_spas_short"] = {
         Bodygroups = { { 1, 1 }, { 2, 1 } },
-        AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(0.5, 0, 0) },
+        AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(4.75, 0, 0) },
     }},
 
     ["uplp_spas_stock_fixed"] = { Bodygroups = { { 3, 1 } } },
@@ -759,7 +782,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_micro", "uplp_optic_mid"},
+        Category = {"uplp_optic_small", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.1, -0.9, 0.75),
@@ -818,7 +841,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_1.mdl",
         Category = "stickers",
         Bone = "pump",
-        Pos = Vector(0.5, -3.3 + 1.5, 8),
+        Pos = Vector(0.5, -3.3, 8),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -826,7 +849,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 0.5 + 1.5, 3),
+        Pos = Vector(0.5, 0.5, 3),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -834,7 +857,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 0.5 + 1.5, -1.5),
+        Pos = Vector(0.5, 0.5, -1.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -842,7 +865,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/spas_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.5 - 1.5, -3),
+        Pos = Vector(0, -0.5, -3),
         Ang = Angle(90, 90, 180),
     },
 

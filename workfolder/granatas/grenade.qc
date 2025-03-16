@@ -57,14 +57,12 @@ $sequence "pullpin" {
 $sequence "throw" {
 	"anims\throw.smd"
 	fps 25
-	fadein 0.1
-	fadeout 0.2
+	snap
 }
 $sequence "throw_under" {
 	"anims\throw_under.smd"
 	fps 25
-	fadein 0.1
-	fadeout 0.2
+	snap
 }
 $sequence "throw_idle"{
 	"anims\throw_idle.smd" 
@@ -96,10 +94,6 @@ $sequence "sprint_out" {
 	fadeout 0.3
 }
 
-$sequence "inspect" {
-	"anims\inspect.smd"
-	fps 25
-}
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
