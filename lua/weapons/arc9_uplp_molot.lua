@@ -46,8 +46,9 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
-SWEP.ShellScale = 1.3
+SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 90
+SWEP.ShellVelocity = 0.75
 SWEP.ShellSounds = {
     "arc9/casings/casing_12ga_1.ogg",
     "arc9/casings/casing_12ga_2.ogg",
@@ -58,6 +59,7 @@ SWEP.ShellSounds = {
     "arc9/casings/casing_12ga_3.ogg",
     "arc9/casings/casing_12ga_4.ogg",
 }
+SWEP.EjectDelay = 0.08
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3

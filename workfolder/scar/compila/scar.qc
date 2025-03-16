@@ -73,7 +73,7 @@ $bodygroup "extrathing" { // 7
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
-$attachment "2" "bolt" 0 0 0 rotate -10 140 180
+$attachment "2" "bolt" 0 -0.43 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0

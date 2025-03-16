@@ -49,8 +49,9 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
-SWEP.ShellScale = 1.5
+SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 0
+SWEP.ShellVelocity = 0.75
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3

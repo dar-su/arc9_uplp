@@ -179,7 +179,7 @@ ATT.Category = "uplp_awp_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
-ATT.ShellScale = 1.5
+ATT.ShellScale = 1.0
 ATT.EjectDelay = 0.35
 
 ATT.ActivateElements = {"uplp_awp_mag_awp"}
@@ -221,7 +221,7 @@ ATT.Category = "uplp_awp_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_big.mdl"
-ATT.ShellScale = 1.5
+ATT.ShellScale = 1.0
 ATT.EjectDelay = 0.35
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -275,7 +275,7 @@ ATT.Category = "uplp_awp_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_tac.mdl"
-ATT.ShellScale = 1.5
+ATT.ShellScale = 1.0
 ATT.EjectDelay = 0.42
 
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}

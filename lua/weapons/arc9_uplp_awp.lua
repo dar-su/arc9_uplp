@@ -48,8 +48,9 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_308.mdl"
-SWEP.ShellScale = 1.75
+SWEP.ShellScale = 1.1
 SWEP.ShellPitch = 90
+SWEP.ShellVelocity = 0.75
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
@@ -122,7 +123,7 @@ SWEP.NoLastCycle = true
 SWEP.ManualActionNoLastCycle = true
 SWEP.ManualActionEjectAnyway = false
 SWEP.NoShellEject = true
-SWEP.EjectDelay = 0.475
+SWEP.EjectDelay = 0.4
 
 -- Recoil
 SWEP.Recoil = 1
@@ -416,7 +417,7 @@ SWEP.Animations = {
 
             -- {s = ratel,                             t = 0.07},
             {s = pathUT .. "boltup.ogg",          t = 0.1},
-            {s = pathUT .. "boltback.ogg",        t = 0.15},
+            {s = pathUT .. "boltback.ogg",        t = 0.2},
             {s = pathUT .. "boltforward.ogg",     t = 0.32},
             {s = pathUT .. "eject.ogg",           t = 0.4},
             {s = pathUT .. "boltdown.ogg",        t = 0.5},

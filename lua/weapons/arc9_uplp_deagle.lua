@@ -45,8 +45,9 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50ae.mdl"
-SWEP.ShellScale = 1.65
+SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
+SWEP.ShellVelocity = 0.75
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3

@@ -48,8 +48,9 @@ SWEP.TracerNum = 1
 SWEP.TracerSize = 5
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50bmg.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 90
+SWEP.ShellVelocity = 0.75
 -- SWEP.ShellSounds = {
 --     "arc9/casings/casing_12ga_1.ogg", -- add heavy shell sound!
 --     "arc9/casings/casing_12ga_2.ogg",
@@ -436,7 +437,8 @@ SWEP.Animations = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
-        MinProgress = 0.87,
+        MinProgress = 0.72,
+		FireASAP = true,
         Mult = 1.25,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},

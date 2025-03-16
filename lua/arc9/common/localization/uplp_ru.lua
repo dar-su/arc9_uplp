@@ -1581,9 +1581,9 @@ L["uplp_deagle_skin_blue.printname"] = "Синий Cylo"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
 L["uplp_deagle_skin_blue.description"] = "Заменяет затвор и ствол на окрашенные в металлический синий цвет.\nЭтот оттенок синего называется \"Cylo Blue\", названный в честь экзотического вида летучей мыши."
 
--- L["uplp_deagle_skin_frame.printname"] = "Chrome Frame"
--- L["uplp_deagle_skin_frame.compactname"] = "Chrome"
--- L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
+L["uplp_deagle_skin_frame.printname"] = "Хромированная рама"
+L["uplp_deagle_skin_frame.compactname"] = "Хром"
+L["uplp_deagle_skin_frame.description"] = "Заменяет матовую раму на хромированную."
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Мутант"
