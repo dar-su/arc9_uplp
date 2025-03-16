@@ -522,7 +522,7 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0, v = 0.25 },
@@ -533,6 +533,7 @@ SWEP.Animations = {
         Source = {"cycle_1", "cycle_2", "cycle_3"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EjectAt = 3.5 / 30,
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.6 },
