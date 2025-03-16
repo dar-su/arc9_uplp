@@ -1588,7 +1588,7 @@ L["uplp_deagle_skin_blue.compactname"] = "Cylo"
 L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
 L["uplp_deagle_skin_frame.printname"] = "Chrome Frame"
-L["uplp_deagle_skin_frame.compactname"] = "Chrome Frame"
+L["uplp_deagle_skin_frame.compactname"] = "Chrome"
 L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
 
 //////////////////// Mutant

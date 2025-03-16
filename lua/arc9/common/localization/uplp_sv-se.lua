@@ -1578,6 +1578,10 @@ L["uplp_deagle_skin_blue.printname"] = "Cylo-Blå"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
 L["uplp_deagle_skin_blue.description"] = "Ersätter slutstycket och pipan med några målade metalliskt blå.\nDenna variant av blå har smeknamnet \"Cylo-Blå\" då den är nämnd efter en exotisk art av fladdermus."
 
+L["uplp_deagle_skin_frame.printname"] = "Kromad Ram"
+L["uplp_deagle_skin_frame.compactname"] = "Krom"
+L["uplp_deagle_skin_frame.description"] = "Ersätter matt ramen med en av krom."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "Mutant är ett unikt hybridgevär som kombinerar precisionen och ergonomin hos AR-15-plattformen med den kraftfulla kralibern 7,62 × 39 mm som traditionellt används i AK-gevär. Det erbjuder skyttar ett mångsidigt och pålitligt vapen som kan avfyra slagkraftiga skott samtidigt som det behåller bekanta AR-stilskontroller och anpassningsalternativ. Från början var detta ett halvautomatiskt gevär gjord för civila marknaden, men denna version är för militär användning och tillåter därför automateld."
