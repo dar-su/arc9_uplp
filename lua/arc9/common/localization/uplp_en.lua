@@ -1587,6 +1587,10 @@ L["uplp_deagle_skin_blue.printname"] = "Cylo Blue"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
 L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
+L["uplp_deagle_skin_frame.printname"] = "Chrome Frame"
+L["uplp_deagle_skin_frame.compactname"] = "Chrome Frame"
+L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "The Mutant is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62×39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."

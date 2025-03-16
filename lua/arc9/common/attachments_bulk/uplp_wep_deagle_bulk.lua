@@ -387,3 +387,20 @@ ATT.InfiniteAmmo = true
 ATT.BottomlessClip = true
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_admin")
+
+---------- uplp_deagle_skin_frame
+
+ATT = {}
+
+ATT.PrintName = "Chrome Frame"
+ATT.CompactName = "Chrome Frame"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "frame.png", "mips smooth")
+
+ATT.Category = "uplp_deagle_skin_frame"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_deagle_skin_frame"}
+
+ARC9.LoadAttachment(ATT, "uplp_deagle_skin_frame")

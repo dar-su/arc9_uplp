@@ -2,6 +2,7 @@ $modelname "weapons\arc9\c_uplp_deagle.mdl"
  
 $bodygroup "degle" {
 	studio "Desert Eagle XIX.smd"
+	studio "Desert Eagle XIX_AllChrome.smd"
 }   
 $bodygroup "bullets" {
 	studio "bullets.smd"
@@ -44,11 +45,11 @@ $cdmaterials "models\weapons\arc9\uplp"
 
 $texturegroup skinfamilies
 {
-	{ "lowpoly_chrome"  }
-	{ "lowpoly_skin_black" }
-	{ "lowpoly_skin_gold" }
-	{ "lowpoly_skin_blue" }
-	{ "lowpoly_skin_red" }
+	{ "lowpoly_chrome" "lowpoly_chrome_always" }
+	{ "lowpoly_skin_black" "lowpoly_chrome_always" }
+	{ "lowpoly_skin_gold" "lowpoly_skin_gold" }
+	{ "lowpoly_skin_blue" "lowpoly_skin_blue" }
+	{ "lowpoly_skin_red" "lowpoly_skin_red" }
 }
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
