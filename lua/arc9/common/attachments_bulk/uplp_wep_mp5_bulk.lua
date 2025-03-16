@@ -384,8 +384,9 @@ ATT.ActivateElements = {"uplp_mp5_mag_10mm"}
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp5_mag_30_10mm.mdl"
 
--- ATT.Model = "models/weapons/arc9/uplp/mp5_mag_30_10mm_refract.mdl"
--- ATT.BoneMerge = true
+ATT.Model = "models/weapons/arc9/uplp/mp5_mag_30_10mm_refract.mdl"
+ATT.TranslucentPass = true
+ATT.BoneMerge = true
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload_empty" then
