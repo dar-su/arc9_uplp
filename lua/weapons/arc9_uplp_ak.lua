@@ -383,7 +383,9 @@ SWEP.Animations = {
         Source = "idle",
     },
     ["ready"] = {
-        Source = "ready",
+        Source = "ready",		
+        MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -429,7 +431,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgress = 0.4,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },

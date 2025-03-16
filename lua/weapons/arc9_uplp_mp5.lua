@@ -374,6 +374,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+        MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -393,8 +395,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.8,
-        FireASAP = true,
+        MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -423,7 +425,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
         PeekProgress = 0.875,
         RefillProgress = 0.7,
         FireASAP = true,
@@ -451,7 +453,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
         PeekProgress = 0.825,
         RefillProgress = 0.75,
         FireASAP = true,
@@ -486,7 +488,7 @@ SWEP.Animations = {
 
     ["reload_15"] = {
         Source = "reload_15",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
         PeekProgress = 0.875,
         RefillProgress = 0.75,
         FireASAP = true,
@@ -515,7 +517,7 @@ SWEP.Animations = {
     },
     ["reload_empty_15"] = {
         Source = "reload_empty_15",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
         PeekProgress = 0.825,
         RefillProgress = 0.75,
         FireASAP = true,
@@ -550,7 +552,7 @@ SWEP.Animations = {
 
     ["reload_50"] = {
         Source = "reload_50",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
         PeekProgress = 0.85,
         RefillProgress = 0.7,
         FireASAP = true,
@@ -578,7 +580,7 @@ SWEP.Animations = {
     },
     ["reload_empty_50"] = {
         Source = "reload_empty_50",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
         PeekProgress = 0.875,
         RefillProgress = 0.85,
         FireASAP = true,
@@ -613,7 +615,7 @@ SWEP.Animations = {
 
     ["reload_empty_catch"] = {
         Source = "reload_empty_catch",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
         PeekProgress = 0.8,
         RefillProgress = 0.725,
         MagSwapTime = 0.8,

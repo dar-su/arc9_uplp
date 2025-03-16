@@ -406,6 +406,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -424,6 +426,8 @@ SWEP.Animations = {
 
     ["ready_bizon"] = {
         Source = "ready_bizon",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -441,6 +445,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -448,7 +454,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgress = 0.35,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -475,7 +481,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload_9mm",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
 		PeekProgress = 0.865,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -503,7 +509,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty_9mm",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.865,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -535,7 +541,7 @@ SWEP.Animations = {
 
     ["reload_bizon"] = {
         Source = "reload_bizon",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
 		PeekProgress = 0.865,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -566,7 +572,7 @@ SWEP.Animations = {
     },
     ["reload_empty_bizon"] = {
         Source = "reload_empty_bizon",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.865,
 		RefillProgress = 0.75,
 		FireASAP = true,

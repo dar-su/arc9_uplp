@@ -395,7 +395,9 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Mult = 1.1,
+        Mult = 1.0,
+		MinProgress = 0.5,
+		FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUT .. "slidepull.ogg", t = 5 / 60, c = ca, v = 0.8 },
@@ -443,7 +445,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgress = 0.3,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -457,7 +459,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.5,
+        MinProgress = 0.3,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -489,7 +491,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
 		PeekProgress = 0.75,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -515,7 +517,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.675,
 		FireASAP = true,
@@ -545,7 +547,7 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.8,
 		PeekProgress = 0.725,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -571,7 +573,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.85,
 		PeekProgress = 0.8,
 		RefillProgress = 0.675,
 		FireASAP = true,

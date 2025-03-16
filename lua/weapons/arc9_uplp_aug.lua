@@ -386,6 +386,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/chback.ogg", t = 3 / 30, c = ca, v = 1 },
@@ -403,7 +405,7 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.75,
+        MinProgress = 0.6,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -411,6 +413,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+		Mult = 0.8,
         MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -419,7 +422,7 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-        MinProgress = 0.75,
+        MinProgress = 0.6,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -428,6 +431,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
+		Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -459,7 +463,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -486,7 +490,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.87,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -517,7 +521,7 @@ SWEP.Animations = {
 
     ["reload_10"] = {
         Source = "reload10",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -544,7 +548,7 @@ SWEP.Animations = {
     },
     ["reload_empty_10"] = {
         Source = "reload_empty10",
-        MinProgress = 0.95,
+        MinProgress = 0.87,
 		PeekProgress = 0.875,
 		RefillProgress = 0.775,
 		FireASAP = true,
@@ -575,7 +579,7 @@ SWEP.Animations = {
 
     ["reload_40"] = {
         Source = "reload40",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -602,7 +606,7 @@ SWEP.Animations = {
     },
     ["reload_empty_40"] = {
         Source = "reload_empty40",
-        MinProgress = 0.95,
+        MinProgress = 0.87,
 		PeekProgress = 0.85,
 		RefillProgress = 0.675,
 		FireASAP = true,
@@ -633,7 +637,7 @@ SWEP.Animations = {
 
     ["reload_52"] = {
         Source = "reload60",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.65,
 		FireASAP = true,
@@ -661,7 +665,7 @@ SWEP.Animations = {
     },
     ["reload_empty_52"] = {
         Source = "reload_empty60",
-        MinProgress = 0.9,
+        MinProgress = 0.87,
 		PeekProgress = 0.85,
 		RefillProgress = 0.7,
 		FireASAP = true,
@@ -693,7 +697,7 @@ SWEP.Animations = {
 
     ["reload_9_25"] = {
         Source = "reload9_25",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -720,7 +724,7 @@ SWEP.Animations = {
     },
     ["reload_empty_9_25"] = {
         Source = "reload_empty9_25",
-        MinProgress = 0.95,
+        MinProgress = 0.87,
 		PeekProgress = 0.85,
 		RefillProgress = 0.75,
 		FireASAP = true,
@@ -751,7 +755,7 @@ SWEP.Animations = {
 
     ["reload_9_40"] = {
         Source = "reload9_40",
-        MinProgress = 0.9,
+        MinProgress = 0.85,
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -778,7 +782,7 @@ SWEP.Animations = {
     },
     ["reload_empty_9_40"] = {
         Source = "reload_empty9_40",
-        MinProgress = 0.95,
+        MinProgress = 0.87,
 		PeekProgress = 0.85,
 		RefillProgress = 0.75,
 		FireASAP = true,

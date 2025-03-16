@@ -373,6 +373,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.7,
+		FireASAP = true,
         EventTable = {
             { s = pathUT2 .. "grab.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -434,7 +436,7 @@ SWEP.Animations = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
-        MinProgress = 0.95,
+        MinProgress = 0.87,
         Mult = 1.25,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
@@ -462,6 +464,7 @@ SWEP.Animations = {
         Source = "reload",
         -- Mult = 1.1,
         MinProgress = 0.85,
+		FireASAP = true,
         DropMagAt = 36/30,
         MagSwapTime = 1.1,
         EventTable = {
@@ -495,6 +498,7 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.85,
+		FireASAP = true,
         EjectAt = 103/30,
         -- Mult = 1.1,
         DropMagAt = 36/30,
@@ -539,6 +543,7 @@ SWEP.Animations = {
         Source = "reload_3",
         -- Mult = 1.1,
         MinProgress = 0.85,
+		FireASAP = true,
         DropMagAt = 36/30,
         MagSwapTime = 1.0,
         EventTable = {
@@ -572,6 +577,7 @@ SWEP.Animations = {
     ["reload_empty_3"] = {
         Source = "reload_empty_3",
         MinProgress = 0.85,
+		FireASAP = true,
         EjectAt = 103/30 - 0.2,
         -- Mult = 1.1,
         DropMagAt = 36/30,
@@ -616,6 +622,7 @@ SWEP.Animations = {
         Source = "reload_7",
         -- Mult = 1.1,
         MinProgress = 0.85,
+		FireASAP = true,
         DropMagAt = 39/30,
         MagSwapTime = 1.1,
         EventTable = {
@@ -649,6 +656,7 @@ SWEP.Animations = {
     ["reload_empty_7"] = {
         Source = "reload_empty_7",
         MinProgress = 0.85,
+		FireASAP = true,
         EjectAt = 103/30,
         -- Mult = 1.1,
         DropMagAt = 39/30,

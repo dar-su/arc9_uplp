@@ -408,15 +408,15 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = "cycle",
         -- ShellEjectAt = 5,
-        MinProgress = 0.95,
-        Mult = 1.15,
+        MinProgress = 0.75,
+        Mult = 1.1,
         EventTable = {
             -- { s = reloadsound .. "reload_boltopen_v2.ogg", t = 5 / 30, c = ca, v = 0.8 },
             -- { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, c = ca, v = 0.8 },
 
             -- {s = ratel,                             t = 0.07},
             {s = pathUT .. "boltup.ogg",          t = 0.1},
-            {s = pathUT .. "boltback.ogg",        t = 0.25},
+            {s = pathUT .. "boltback.ogg",        t = 0.15},
             {s = pathUT .. "boltforward.ogg",     t = 0.32},
             {s = pathUT .. "eject.ogg",           t = 0.4},
             {s = pathUT .. "boltdown.ogg",        t = 0.5},
@@ -424,6 +424,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+		MinProgress = 0.8,
+		FireASAP = true,
         EventTable = {
             -- { s = reloadsound .. "firstraise_lift_v2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             -- { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, c = ca, v = 0.8 },
@@ -441,6 +443,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
+		Mult = 0.8,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
@@ -449,6 +452,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
+		Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -457,6 +461,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
+		Mult = 0.8,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
@@ -465,6 +470,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
+		Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -482,7 +488,7 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
 		PeekProgress = 0.775,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -509,7 +515,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
 		PeekProgress = 0.925,
 		RefillProgress = 0.85,
 		FireASAP = true,
@@ -545,7 +551,7 @@ SWEP.Animations = {
 
     ["reload_ext"] = {
         Source = "reload_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
 		PeekProgress = 0.775,
 		RefillProgress = 0.6,
 		FireASAP = true,
@@ -572,7 +578,7 @@ SWEP.Animations = {
     },
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
-        MinProgress = 0.95,
+        MinProgress = 0.9,
 		PeekProgress = 0.925,
 		RefillProgress = 0.85,
 		FireASAP = true,

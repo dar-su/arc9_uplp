@@ -95,3 +95,5 @@ end
 SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
+
+SWEP.ShellVelocity = 0.75
