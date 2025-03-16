@@ -183,14 +183,14 @@ L["uplp_firemode_pump"] = "ПОМПА"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
 //////////////////// Universal translations for easy use
-local sportyred = "\n\n" .. "Специальная Sporty Red версия."
-local pitchblack = "\n\n" .. "Специальная Pitch Black версия."
-local arcticwhite = "\n\n" .. "Специальная Arctic White версия."
-local aquablue = "\n\n" .. "Специальная Aqua Blue версия."
-local stealthgray = "\n\n" .. "Специальная Stealth Gray версия."
-local forestgreen = "\n\n" .. "Специальная Forest Green версия."
-local hunterorange = "\n\n" .. "Специальная Hunter Orange версия."
-local partypurple = "\n\n" .. "Специальная Party Purple версия."
+local sportyred = "\n\n" .. "Специальная Ярко-красная версия."
+local pitchblack = "\n\n" .. "Специальная Черная версия."
+local arcticwhite = "\n\n" .. "Специальная Арктически белая версия."
+local aquablue = "\n\n" .. "Специальная Морская-синяя версия."
+local stealthgray = "\n\n" .. "Специальная Тёмно-серая версия."
+local forestgreen = "\n\n" .. "Специальная Лесная зелёная версия."
+local hunterorange = "\n\n" .. "Специальная Охотничая оранжевая версия."
+local partypurple = "\n\n" .. "Специальная Празднично фиолетовая версия."
 
 local desc_pistoloptic = "\nИмеет <color=100,255,100>незначительный штраф скорости</color>."
 local desc_smalloptic = "\nНе имеет <color=100,255,100>штрафа по скорости</color>, но <color=255,200,100>уменьшает скорость ходьбы в прицеле</color>."
@@ -558,12 +558,12 @@ L["uplp_ar15_ammo_50.printname"] = "Патроны .50 BeoWolf"
 L["uplp_ar15_ammo_50.compactname"] = ".50 BeoWolf"
 L["uplp_ar15_ammo_50.description"] = "Крупные и мощные патроны .50 BeOwOlf, обладающие огромной пробивной силой." .. changeammo["357"]
 
-L["uplp_sg_shell_red.printname"] = "Дробь 00"
-L["uplp_sg_shell_red.compactname"] = "Дробь"
-L["uplp_sg_shell_red.description"] = "Стандартные патроны с дробью среднего размера."
+L["uplp_sg_shell_red.printname"] = "Картечь 00"
+L["uplp_sg_shell_red.compactname"] = "Картечь"
+L["uplp_sg_shell_red.description"] = "Стандартные патроны с картечью среднего размера."
 
-L["uplp_sg_shell_blue.printname"] = "Патроны Birdshot"
-L["uplp_sg_shell_blue.compactname"] = "Birdshot"
+L["uplp_sg_shell_blue.printname"] = "Мелкая дробь"
+L["uplp_sg_shell_blue.compactname"] = "Дробь"
 L["uplp_sg_shell_blue.description"] = "Патроны для охоты на птиц. Выстреливает мелкую дробь в большом количестве и с широким разбросом, повышая шансы попадания."
 
 L["uplp_sg_shell_green.printname"] = "Патроны с пулей"
@@ -574,7 +574,7 @@ L["uplp_sg_shell_black.printname"] = "Патроны с двумя пулями"
 L["uplp_sg_shell_black.compactname"] = "Пуля x2"
 L["uplp_sg_shell_black.description"] = "Патроны с двумя крупными снарядами. Больше останавливающей силы, чем у одной пули, но ниже точность."
 
-L["uplp_sg_shell_orange.printname"] = "Патроны Дыхания Дракона"
+L["uplp_sg_shell_orange.printname"] = "Патроны \"Дыхание Дракона\""
 L["uplp_sg_shell_orange.compactname"] = "DB"
 L["uplp_sg_shell_orange.description"] = "Патроны с наполнением из магния. Не смертельны при попадании, но могут поджечь цели." .. shotgun_lp
 
