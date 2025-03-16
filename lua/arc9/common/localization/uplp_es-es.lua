@@ -1578,6 +1578,10 @@ L["uplp_deagle_skin_blue.printname"] = "Azul Cylo"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
 L["uplp_deagle_skin_blue.description"] = "Sustituye la corredera y el cañón por unos pintados de azul metálico.\nEsta variante del azul recibe el sobrenombre de \"Azul Cylo\", debe su nombre a una especie exótica de murciélago."
 
+-- L["uplp_deagle_skin_frame.printname"] = "Chrome Frame"
+-- L["uplp_deagle_skin_frame.compactname"] = "Chrome"
+-- L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
+
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Mutant"
 L["uplp_weapon_mutant_desc"] = "El Mutant es un rifle híbrido único que combina la precisión y la ergonomía de la plataforma AR-15 con el potente cartucho de 7,62x39 mm utilizado tradicionalmente en los rifles AK. Ofrece a los tiradores un arma de fuego versátil y fiable, capaz de disparar ráfagas contundentes sin renunciar a los controles y opciones de personalización del estilo AR. Originalmente un rifle semiautomático hecho para el mercado civil, esta variante fue hecha para uso militar, y por lo tanto permite el fuego totalmente automático."

@@ -485,7 +485,7 @@ ATT.IKAnimationProxy = {
     },
     ["reload_ubgl"] = {
         Source = "reload",
-		MinProgress = 0.95,
+		MinProgress = 0.87,
 		FireASAP = true,
 		Mult = 0.8,
 		RefillProgress = 0.75,

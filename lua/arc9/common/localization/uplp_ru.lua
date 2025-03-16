@@ -130,7 +130,7 @@ L["uplp_category_charm"] = "Брелок"
 L["uplp_category_dovetail"] = "Ласт. хвост"
 L["uplp_category_dustcover"] = "Ствол. коробка"
 L["uplp_category_extra"] = "Доп."
--- L["uplp_category_furniture"] = "Furniture"
+L["uplp_category_furniture"] = "Фурнитура"
 L["uplp_category_gasblock"] = "Газ. блок"
 L["uplp_category_grip"] = "Рукоять"
 L["uplp_category_handguard"] = "Цевьё"
@@ -183,14 +183,14 @@ L["uplp_firemode_pump"] = "ПОМПА"
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
 //////////////////// Universal translations for easy use
-local sportyred = "\n\n" .. "Специальная Sporty Red версия."
-local pitchblack = "\n\n" .. "Специальная Pitch Black версия."
-local arcticwhite = "\n\n" .. "Специальная Arctic White версия."
-local aquablue = "\n\n" .. "Специальная Aqua Blue версия."
-local stealthgray = "\n\n" .. "Специальная Stealth Gray версия."
-local forestgreen = "\n\n" .. "Специальная Forest Green версия."
-local hunterorange = "\n\n" .. "Специальная Hunter Orange версия."
-local partypurple = "\n\n" .. "Специальная Party Purple версия."
+local sportyred = "\n\n" .. "Специальная Ярко-красная версия."
+local pitchblack = "\n\n" .. "Специальная Черная версия."
+local arcticwhite = "\n\n" .. "Специальная Арктически белая версия."
+local aquablue = "\n\n" .. "Специальная Морская-синяя версия."
+local stealthgray = "\n\n" .. "Специальная Тёмно-серая версия."
+local forestgreen = "\n\n" .. "Специальная Лесная зелёная версия."
+local hunterorange = "\n\n" .. "Специальная Охотничая оранжевая версия."
+local partypurple = "\n\n" .. "Специальная Празднично фиолетовая версия."
 
 local desc_pistoloptic = "\nИмеет <color=100,255,100>незначительный штраф скорости</color>."
 local desc_smalloptic = "\nНе имеет <color=100,255,100>штрафа по скорости</color>, но <color=255,200,100>уменьшает скорость ходьбы в прицеле</color>."
@@ -205,407 +205,406 @@ local desc_biggeroptic = "\nИмеет <color=255,100,100>очень больш�
 local desc_dovetail = "\nУстановлено на ласточкин хвост.\nНельзя установить <color=255,100,100>обычные прицелы или некоторые крышки ствольной коробки</color>."
 
 /////////// Optics
-L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
+L["uplp_optic_553.printname"] = "Голографический прицел SightLine™ 500 Series"
 L["uplp_optic_553.compactname"] = "500S"
-L["uplp_optic_553.description"] = "Military-grade holographic sight made by SightLine™. Large but comfortable to aim with." .. desc_cqcoptic
+L["uplp_optic_553.description"] = "Военный голографический прицел производства SightLine™. Большой, но удобный в прицеливании." .. desc_cqcoptic
 
-L["uplp_optic_kobra.printname"] = "Kobra Collimator"
-L["uplp_optic_kobra.compactname"] = "Kobra"
-L["uplp_optic_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_cqcoptic
+L["uplp_optic_kobra.printname"] = "Коллиматорный прицел Кобра"
+L["uplp_optic_kobra.compactname"] = "Кобра"
+L["uplp_optic_kobra.description"] = "Военный коллиматорный прицел российского производства с крестообразной сеткой." .. desc_cqcoptic
 
-L["uplp_optic_rx1.printname"] = "Military Red Dot"
-L["uplp_optic_rx1.compactname"] = "Military"
-L["uplp_optic_rx1.description"] = "Easy to use military-grade red dot of American origin." .. desc_cqcoptic
+L["uplp_optic_rx1.printname"] = "Военная красная точка"
+L["uplp_optic_rx1.compactname"] = "Воен."
+L["uplp_optic_rx1.description"] = "Простая в использовании военная красная точка американского производства." .. desc_cqcoptic
 
-L["uplp_optic_srs.printname"] = "SWX Red Dot"
+L["uplp_optic_srs.printname"] = "Красная точка SWX"
 L["uplp_optic_srs.compactname"] = "SWX"
-L["uplp_optic_srs.description"] = "Large reflex optic of American origin intended for use in harsh environments." .. desc_cqcoptic
+L["uplp_optic_srs.description"] = "Крупный коллиматорный прицел американского производства, предназначенный для суровых условий." .. desc_cqcoptic
 
-L["uplp_optic_compm4.printname"] = "Spec-Ops Red Dot"
+L["uplp_optic_compm4.printname"] = "Красная точка Spec-Ops"
 L["uplp_optic_compm4.compactname"] = "Spec-Ops"
-L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cylindrical design." .. desc_cqcoptic
+L["uplp_optic_compm4.description"] = "Коллиматорный прицел шведского производства с цилиндрическим дизайном." .. desc_cqcoptic
 
-L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight w. Magnifier"
-L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns.\nAre you sure about equipping it? It doesn't even look like a machine gun!" .. desc_magoptic
+L["uplp_optic_dcl110.printname"] = "Рефлекторный прицел для пулемёта с магнифером"
+L["uplp_optic_dcl110.compactname"] = "ПК-РС"
+L["uplp_optic_dcl110.description"] = "Крупный и громоздкий коллиматорный прицел с встроенным магнифером, предназначенным для пулемётов. Вы уверены, что хотите его установить? Он даже не похож на пулемётный!" .. desc_magoptic
 
-L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
+L["uplp_optic_acog.printname"] = "Прицел NCOG-4 4x"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
-L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification. Comes with built in <color=100,255,100>backup iron sights</color>." .. desc_midoptic
+L["uplp_optic_acog.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением. Оснащён встроенными <color=100,255,100>резервными механическими прицельными приспособлениями</color>." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "4x Combat Scope"
-L["uplp_optic_elcan.compactname"] = "4x Combat"
-L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "Боевой прицел 4x"
+L["uplp_optic_elcan.compactname"] = "4x Боев."
+L["uplp_optic_elcan.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-16x Variable Zoom Scope w. Rangefinder"
+L["uplp_optic_bigass.printname"] = "Прицел переменной кратности 8-16x с дальномером"
 L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
-L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
+L["uplp_optic_bigass.description"] = "Дальнобойный прицел с переменной кратностью 8-10x. Оснащён: - Модулем дальномера, определяющим расстояние до цели в метрах." .. desc_bigoptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
 L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
-L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6x magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
+L["uplp_optic_halo_thermal.description"] = "Специальный тепловизионный прицел с 6-кратным увеличением производства PurrPoint™, обеспечивающий тепловизионное изображение с подсветкой целей." .. desc_biggeroptic
 
-L["uplp_optic_d1.printname"] = "D-1 Red Dot"
+L["uplp_optic_d1.printname"] = "Красная точка D-1"
 L["uplp_optic_d1.compactname"] = "D-1"
-L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
+L["uplp_optic_d1.description"] = "Компактная красная точка для небольших огнестрельных оружий." .. desc_smalloptic
 
-L["uplp_optic_d1high.printname"] = "D-1 Red Dot w. Riser"
+L["uplp_optic_d1high.printname"] = "Красная точка D-1 на кронштейне"
 L["uplp_optic_d1high.compactname"] = "D-1 R"
-L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
+L["uplp_optic_d1high.description"] = "Компактная красная точка для небольших огнестрельных оружий." .. desc_smalloptic
 
-L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
-L["uplp_optic_tacrds.compactname"] = "Pistol"
-L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
+L["uplp_optic_tacrds.printname"] = "Пистолетная красная точка"
+L["uplp_optic_tacrds.compactname"] = "Пист."
+L["uplp_optic_tacrds.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
-L["uplp_optic_tacrds_direct.printname"] = "Pistol Red Dot"
-L["uplp_optic_tacrds_direct.compactname"] = "Pistol"
-L["uplp_optic_tacrds_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
+L["uplp_optic_tacrds_direct.printname"] = "Пистолетная красная точка"
+L["uplp_optic_tacrds_direct.compactname"] = "Пист."
+L["uplp_optic_tacrds_direct.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_pistoloptic
 
-L["uplp_optic_rmr_direct.printname"] = "XW Red Dot"
+L["uplp_optic_rmr_direct.printname"] = "Красная точка XW"
 L["uplp_optic_rmr_direct.compactname"] = "XW"
-L["uplp_optic_rmr_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
+L["uplp_optic_rmr_direct.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_pistoloptic
 
-L["uplp_optic_rmr.printname"] = "XW Red Dot"
+L["uplp_optic_rmr.printname"] = "Красная точка XW"
 L["uplp_optic_rmr.compactname"] = "XW"
-L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
+L["uplp_optic_rmr.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
-L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
+L["uplp_optic_rmrhigh.printname"] = "Красная точка XW на кронштейне"
 L["uplp_optic_rmrhigh.compactname"] = "XW R."
-L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
+L["uplp_optic_rmrhigh.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
-L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot" -- NEW
-L["uplp_optic_genericrds.compactname"] = "HawkEye" -- NEW
-L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic -- NEW
+L["uplp_optic_genericrds.printname"] = "Красная точка HawkEye"
+L["uplp_optic_genericrds.compactname"] = "HawkEye"
+L["uplp_optic_genericrds.description"] = "Классический прицел с красной точкой, который клонировали и копировали с момента его появления." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "3x Military Scope"
-L["uplp_optic_notacog.compactname"] = "3x Military"
-L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3x magnification." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "Военный прицел 3x"
+L["uplp_optic_notacog.compactname"] = "3x Воен."
+L["uplp_optic_notacog.description"] = "Прочный военный прицел израильского производства с 3-кратным увеличением." .. desc_midoptic
 
-L["uplp_optic_compm1.printname"] = "Competition Scope"
-L["uplp_optic_compm1.compactname"] = "Comp."
-L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. "\nИмеет <color=100,255,100>незначительный штраф по скорости</color>, но <color=255,255,100>немного уменьшает стабильность</color> из-за увеличения."
+L["uplp_optic_compm1.printname"] = "Соревновательный прицел"
+L["uplp_optic_compm1.compactname"] = "Соревн."L["uplp_optic_compm1.description"] = "Прицел с увеличением шведского производства, предназначенный для соревнований и спортивной стрельбы." .. "Имеет <color=100,255,100>незначительный штраф по скорости</color>, но <color=255,255,100>немного уменьшает стабильность</color> из-за увеличения."
 
-L["uplp_optic_sniper.printname"] = "6-8x Variable Zoom Scope"
+L["uplp_optic_sniper.printname"] = "Прицел переменной кратности 6-8x"
 L["uplp_optic_sniper.compactname"] = "6-8x VZS"
-L["uplp_optic_sniper.description"] = "Long range scope with 6-8x variable magnification." .. desc_bigoptic
+L["uplp_optic_sniper.description"] = "Дальнобойный прицел с переменной кратностью 6-8x." .. desc_bigoptic
 
-L["uplp_optic_ez6x.printname"] = "1-6x Hunter Scope"
-L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
-L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification." .. desc_midbigoptic
+L["uplp_optic_ez6x.printname"] = "Охотничий прицел 1-6x"
+L["uplp_optic_ez6x.compactname"] = "1-6x Охотн."
+L["uplp_optic_ez6x.description"] = "Прицел с переменным увеличением 1-6x." .. desc_midbigoptic
 
-L["uplp_optic_ez8x.printname"] = "8x Hunter Scope"
-L["uplp_optic_ez8x.compactname"] = "8x Hunter"
-L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification." .. desc_bigoptic
+L["uplp_optic_ez8x.printname"] = "Охотничий прицел 8x"
+L["uplp_optic_ez8x.compactname"] = "8x Охотн."
+L["uplp_optic_ez8x.description"] = "Дальнобойный прицел с 8-кратным увеличением." .. desc_bigoptic
 
-L["uplp_optic_pm3.printname"] = "12x Marksman Scope"
+L["uplp_optic_pm3.printname"] = "Марксманский прицел 12x"
 L["uplp_optic_pm3.compactname"] = "12x MMS"
-L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification.\nCan equip <color=100,255,100>a backup optic</color>." .. desc_bigoptic
+L["uplp_optic_pm3.description"] = "Дальнобойный снайперский прицел с 12-кратным увеличением. Может оснащаться <color=100,255,100>резервным прицелом</color>." .. desc_bigoptic
 
-L["uplp_optic_generic.printname"] = "10x Precision Scope"
-L["uplp_optic_generic.compactname"] = "10x Precision"
-L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification." .. desc_bigoptic
+L["uplp_optic_generic.printname"] = "Точный прицел 10x"
+L["uplp_optic_generic.compactname"] = "10x Precis."
+L["uplp_optic_generic.description"] = "Дальнобойный снайперский прицел с 10-кратным увеличением." .. desc_bigoptic
 
-L["uplp_optic_old.printname"] = "7x Kraken Scope"
+L["uplp_optic_old.printname"] = "Прицел Kraken 7x"
 L["uplp_optic_old.compactname"] = "7x Kraken"
-L["uplp_optic_old.description"] = "Medium range scope with 7x magnification." .. desc_midbigoptic
+L["uplp_optic_old.description"] = "Прицел средней дальности с 7-кратным увеличением." .. desc_midbigoptic
 
-L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
-L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
-L["uplp_optic_pso_rail.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_midbigoptic
+L["uplp_optic_pso_rail.printname"] = "OПП2-Б 4x"
+L["uplp_optic_pso_rail.compactname"] = "OПП2-Б"
+L["uplp_optic_pso_rail.description"] = "Прицел с увеличением российского производства с 4-кратным увеличением." .. desc_midbigoptic
 
-L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
+L["uplp_optic_hhs1.printname"] = "Голографический прицел SightLine™ 500 Series с магнифером"
 L["uplp_optic_hhs1.compactname"] = "500S M."
-L["uplp_optic_hhs1.description"] = "Military-grade holographic sight and magnifier combination made by SightLine™." .. desc_magoptic
+L["uplp_optic_hhs1.description"] = "Военный голографический прицел и магнифер производства SightLine™." .. desc_magoptic
 
-L["uplp_optic_hhs2.printname"] = "SightLine™ 10S Holographic Sight w. Magnifier"
+L["uplp_optic_hhs2.printname"] = "Голографический прицел SightLine™ 10S с магнифером"
 L["uplp_optic_hhs2.compactname"] = "10S M."
-L["uplp_optic_hhs2.description"] = "Military-grade holographic sight and magnifier combination made by SightLine™." .. desc_magoptic
+L["uplp_optic_hhs2.description"] = "Военный голографический прицел и магнифер производства SightLine™." .. desc_magoptic
 
-L["uplp_optic_exps.printname"] = "SightLine™ 10S Holographic Sight"
+L["uplp_optic_exps.printname"] = "Голографический прицел SightLine™ 10S"
 L["uplp_optic_exps.compactname"] = "10S"
-L["uplp_optic_exps.description"] = "Military-grade holographic sight by SightLine™." .. desc_cqcoptic
+L["uplp_optic_exps.description"] = "Военный голографический прицел производства SightLine™." .. desc_cqcoptic
 
-L["uplp_optic_holosun.printname"] = "PurrPoint™ ELITE Reflex Sight"
+L["uplp_optic_holosun.printname"] = "Коллиматорный прицел PurrPoint™ ELITE"
 L["uplp_optic_holosun.compactname"] = "ELITE"
-L["uplp_optic_holosun.description"] = "Civilian-grade reflex sight made for competitive shooting by PurrPoint™." .. desc_cqcoptic
+L["uplp_optic_holosun.description"] = "Гражданский коллиматорный прицел для соревновательной стрельбы производства PurrPoint™." .. desc_cqcoptic
 
-L["uplp_optic_devo.printname"] = "WraithSight™ Elite Red Dot"
+L["uplp_optic_devo.printname"] = "Красная точка WraithSight™ Elite"
 L["uplp_optic_devo.compactname"] = "Wraith"
-L["uplp_optic_devo.description"] = "High quality red dot sight made by the Elite division at WraithSight™." .. desc_cqcoptic
+L["uplp_optic_devo.description"] = "Высококачественная красная точка производства элитного подразделения WraithSight™." .. desc_cqcoptic
 
-L["uplp_optic_devom.printname"] = "WraithSight™ Elite Red Dot w. O-U Magnifier"
+L["uplp_optic_devom.printname"] = "Красная точка WraithSight™ Elite с магнифером O-U"
 L["uplp_optic_devom.compactname"] = "Wraith + O-U"
-L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elite division at WraithSight™. Has a unique Over-Under™ Magnifier." .. desc_magoptic
+L["uplp_optic_devom.description"] = "Высококачественная красная точка производства элитного подразделения WraithSight™. Оснащена уникальным магнифером Over-Under™." .. desc_magoptic
 
-L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
-L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
-L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail
+L["uplp_optic_dovetail_kobra.printname"] = "Коллиматорный прицел Кобра"
+L["uplp_optic_dovetail_kobra.compactname"] = "Кобра"
+L["uplp_optic_dovetail_kobra.description"] = "Военный коллиматорный прицел российского производства с крестообразной сеткой." .. desc_dovetail
 
-L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
-L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail
+L["uplp_optic_dovetail_pso.printname"] = "ОПП2 4x"
+L["uplp_optic_dovetail_pso.compactname"] = "ОПП2"
+L["uplp_optic_dovetail_pso.description"] = "Прицел с увеличением российского производства с 4-кратным увеличением." .. desc_dovetail
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
 
-L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflex Sight"
-L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
-L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail
+L["uplp_optic_dovetail_okp.printname"] = "Коллиматорный прицел ОПВК-А"
+L["uplp_optic_dovetail_okp.compactname"] = "ОПВК"
+L["uplp_optic_dovetail_okp.description"] = "Тонкий и лёгкий коллиматорный прицел российского производства." .. desc_dovetail
 
-L["uplp_optic_okp.printname"] = "OPWK-B Reflex Sight"
-L["uplp_optic_okp.compactname"] = "OPWK"
-L["uplp_optic_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_cqcoptic
+L["uplp_optic_okp.printname"] = "Коллиматорный прицел ОПВК-Б"
+L["uplp_optic_okp.compactname"] = "ОПВК"
+L["uplp_optic_okp.description"] = "Тонкий и лёгкий коллиматорный прицел российского производства." .. desc_cqcoptic
 
 -- "Optical Sight, High Quality" in Russian
 -- "Оптический прицел высого качества" - 'OPWK'
 
--- L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
--- L["uplp_optic_thermholo.compactname"] = "Aegis"
--- L["uplp_optic_thermholo.description"] = "Compact, low-weight thermal holographic sight made by Aegis Precision." .. desc_cqcoptic
+L["uplp_optic_thermholo.printname"] = "Мини-тепловизор Aegis Precision"
+L["uplp_optic_thermholo.compactname"] = "Aegis"
+L["uplp_optic_thermholo.description"] = "Компактный лёгкий тепловизионный голографический прицел производства Aegis Precision." .. desc_cqcoptic
 
-L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
+L["uplp_optic_dedal.printname"] = "Снайперский прицел CWI Annihilator 12x"
 L["uplp_optic_dedal.compactname"] = "12x CWI"
-L["uplp_optic_dedal.description"] = "Magnified scope with 12x magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic
+L["uplp_optic_dedal.description"] = "Прицел с 12-кратным увеличением от Cerberus Weapons Institute, предназначен для военного использования." .. desc_bigoptic
 
 /////////// Backup Optics
-L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
-L["uplp_backup_optic_rmr.compactname"] = "Canted RDS"
-L["uplp_backup_optic_rmr.description"] = "Compact red dot sight mounted at an angle to provide easy target acquisition when using magnified optics."
+L["uplp_backup_optic_rmr.printname"] = "Угловая красная точка"
+L["uplp_backup_optic_rmr.compactname"] = "Угл. RDS"
+L["uplp_backup_optic_rmr.description"] = "Компактная красная точка, установленная под углом для удобного прицеливания при использовании оптики с увеличением."
 
-L["uplp_backup_optic_is.printname"] = "Canted Iron Sights"
-L["uplp_backup_optic_is.compactname"] = "Canted Irons"
-L["uplp_backup_optic_is.description"] = "A front and rear iron sight mounted at an angle to provide easy target acquisition when using magnified optics."
+L["uplp_backup_optic_is.printname"] = "Угловые прицельные приспособления"
+L["uplp_backup_optic_is.compactname"] = "Угл. присп."
+L["uplp_backup_optic_is.description"] = "Передние и задние механические прицельные приспособления, установленные под углом для удобного прицеливания при использовании оптики с увеличением."
 
 /////////// Grips
-L["uplp_grip_half.printname"] = "Hoki Foregrip"
+L["uplp_grip_half.printname"] = "Угловой передний хват Hoki"
 L["uplp_grip_half.compactname"] = "Hoki"
-L["uplp_grip_half.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil."
+L["uplp_grip_half.description"] = "Тяжёлый угловой передний хват, улучшающий эргономику и уменьшающий отдачу." 
 
-L["uplp_grip_half_fullcclamp.printname"] = "Hoki Foregrip (C-Clamp)"
+L["uplp_grip_half_fullcclamp.printname"] = "Угловой передний хват Hoki (C-Clamp)"
 L["uplp_grip_half_fullcclamp.compactname"] = "Hoki (C)"
-L["uplp_grip_half_fullcclamp.description"] = "Heavy angled foregrip that improves ergonomics and reduces recoil.\nThis one is held with a C-clamp."
+L["uplp_grip_half_fullcclamp.description"] = "Тяжёлый угловой передний хват, улучшающий эргономику и уменьшающий отдачу.\nУдерживается в стиле C-Clamp."
 
-L["uplp_grip_handstop.printname"] = "Lightweight Handstop"
-L["uplp_grip_handstop.compactname"] = "Handstop"
-L["uplp_grip_handstop.description"] = "Lightweight angled handstop that improves ergonomics."
+L["uplp_grip_handstop.printname"] = "Лёгкий упор для руки"
+L["uplp_grip_handstop.compactname"] = "Упор"
+L["uplp_grip_handstop.description"] = "Лёгкий угловой упор для руки, улучшающий эргономику."
 
-L["uplp_grip_handstop_black.printname"] = "Lightweight Handstop (Pitch Black)"
-L["uplp_grip_handstop_black.compactname"] = "Handstop (PB)"
-L["uplp_grip_handstop_black.description"] = "Lightweight angled handstop that improves ergonomics." .. pitchblack
+L["uplp_grip_handstop_black.printname"] = "Лёгкий упор для руки (Черный)"
+L["uplp_grip_handstop_black.compactname"] = "Упор (Ч)"
+L["uplp_grip_handstop_black.description"] = "Лёгкий угловой упор для руки, улучшающий эргономику." .. pitchblack
 
-L["uplp_grip_skelet.printname"] = "Skeleton Foregrip"
-L["uplp_grip_skelet.compactname"] = "Skeleton"
-L["uplp_grip_skelet.description"] = "Lightweight foregrip that improves ergonomics and reduces recoil."
+L["uplp_grip_skelet.printname"] = "Скелетная рукоятка"
+L["uplp_grip_skelet.compactname"] = "Скелет"
+L["uplp_grip_skelet.description"] = "Лёгкая рукоятка, улучшающая эргономику и уменьшающая отдачу."
 
-L["uplp_grip_skelet_blackprintname"] = "Skeleton Foregrip (Pitch Black)"
-L["uplp_grip_skelet_black.compactname"] = "Skeleton (PB)"
-L["uplp_grip_skelet_black.description"] = "Lightweight foregrip that improves ergonomics and reduces recoil." .. pitchblack
+L["uplp_grip_skelet_black.printname"] = "Скелетная рукоятка (Черная)"
+L["uplp_grip_skelet_black.compactname"] = "Скелет (Ч)"
+L["uplp_grip_skelet_black.description"] = "Лёгкая рукоятка, улучшающая эргономику и уменьшающая отдачу." .. pitchblack
 
-L["uplp_grip_stub.printname"] = "Compact Foregrip"
-L["uplp_grip_stub.compactname"] = "Compact"
-L["uplp_grip_stub.description"] = "Compact foregrip that improves ergonomics and reduces recoil."
+L["uplp_grip_stub.printname"] = "Компактная рукоятка"
+L["uplp_grip_stub.compactname"] = "Компакт"
+L["uplp_grip_stub.description"] = "Компактная рукоятка, улучшающая эргономику и уменьшающая отдачу."
 
-L["uplp_grip_vert.printname"] = "Vertical Foregrip"
-L["uplp_grip_vert.compactname"] = "Vertical"
-L["uplp_grip_vert.description"] = "Rail-mounted foregrip that reduces recoil."
+L["uplp_grip_vert.printname"] = "Вертикальная рукоятка"
+L["uplp_grip_vert.compactname"] = "Верт."
+L["uplp_grip_vert.description"] = "Рельсовая рукоятка, уменьшающая отдачу."
 
-L["uplp_grip_classic.printname"] = "Classic Vertical Foregrip"
-L["uplp_grip_classic.compactname"] = "Classic V"
-L["uplp_grip_classic.description"] = "Rail-mounted foregrip that reduces recoil."
+L["uplp_grip_classic.printname"] = "Классическая вертикальная рукоятка"
+L["uplp_grip_classic.compactname"] = "Классика"
+L["uplp_grip_classic.description"] = "Рельсовая рукоятка, уменьшающая отдачу."
 
-L["uplp_grip_rk0.printname"] = "Zenith Stubby Grip"
+L["uplp_grip_rk0.printname"] = "Короткая рукоятка Zenith"
 L["uplp_grip_rk0.compactname"] = "Zenith S"
-L["uplp_grip_rk0.description"] = "Compact tactical grip made for most RIS-rail-compatible firearms."
+L["uplp_grip_rk0.description"] = "Компактная тактическая рукоятка для оружия с RIS-рейкой."
 
-L["uplp_grip_rk1.printname"] = "Zenith Vertical Grip"
+L["uplp_grip_rk1.printname"] = "Вертикальная рукоятка Zenith"
 L["uplp_grip_rk1.compactname"] = "Zenith V"
-L["uplp_grip_rk1.description"] = "Tactical grip made for most RIS-rail-compatible firearms."
+L["uplp_grip_rk1.description"] = "Тактическая рукоятка для оружия с RIS-рейкой."
 
-L["uplp_grip_rk45.printname"] = "Zenith 45-Degree Grip"
+L["uplp_grip_rk45.printname"] = "Рукоятка Zenith под 45°"
 L["uplp_grip_rk45.compactname"] = "Zenith 45D"
-L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for most RIS-rail-compatible firearms."
+L["uplp_grip_rk45.description"] = "Угловая рукоятка под 45° для оружия с RIS-рейкой."
 
-L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
+L["uplp_grip_cqr.printname"] = "Передний хват PAWCO «Ares»"
 L["uplp_grip_cqr.compactname"] = "Ares"
-L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
+L["uplp_grip_cqr.description"] = "Специальная тяжёлая рукоятка от подразделения PAWCO «Ares»."
 
 /////////// Bipod
-L["uplp_bipod.printname"] = "SynPoly WildCat X Bipod"
+L["uplp_bipod.printname"] = "Сошки SynPoly WildCat X"
 L["uplp_bipod.compactname"] = "WildCat X"
-L["uplp_bipod.description"] = "A RIS-mounted bipod manufactured by the WildCat X division at SynPoly that reduces recoil when deployed."
+L["uplp_bipod.description"] = "Сошки от SynPoly WildCat X, уменьшающая отдачу при размещении."
 
 /////////// Muzzle
 ////// Set 1
-L["uplp_muzzle_3h.printname"] = "3-Hole Muzzle Brake"
-L["uplp_muzzle_3h.compactname"] = "3H MB"
-L["uplp_muzzle_3h.description"] = "Muzzle brake that redirects propelled gases upwards for reduced vertical recoil."
+L["uplp_muzzle_3h.printname"] = "Дульный тормоз с 3 отверстиями"
+L["uplp_muzzle_3h.compactname"] = "3о ДТ"
+L["uplp_muzzle_3h.description"] = "Дульный тормоз, перенаправляющий газы вверх для уменьшения вертикальной отдачи."
 
-L["uplp_muzzle_cage.printname"] = "Flash Hider"
-L["uplp_muzzle_cage.compactname"] = "Flash Hider"
-L["uplp_muzzle_cage.description"] = "Muzzle device that hides the muzzle flash when firing."
+L["uplp_muzzle_cage.printname"] = "Пламегаситель"
+L["uplp_muzzle_cage.compactname"] = "Пламегас."
+L["uplp_muzzle_cage.description"] = "Устройство, скрывающее пламя при выстреле."
 
-L["uplp_muzzle_fat.printname"] = "Centurion Industries Heavy Muzzle Brake"
-L["uplp_muzzle_fat.compactname"] = "Centurion MB"
-L["uplp_muzzle_fat.description"] = "Heavy muzzle brake that adds more weight to the front of the gun, reducing overall recoil, made by Centurion Industries."
+L["uplp_muzzle_fat.printname"] = "Тяжёлый дульный тормоз Centurion Industries"
+L["uplp_muzzle_fat.compactname"] = "ДТ Centurion"
+L["uplp_muzzle_fat.description"] = "Тяжёлый дульный тормоз, добавляющий вес на дульный срез, снижая отдачу. Производства Centurion Industries."
 
-L["uplp_muzzle_fhider.printname"] = "3-Pronged Flash Hider"
-L["uplp_muzzle_fhider.compactname"] = "3P FH"
-L["uplp_muzzle_fhider.description"] = "Muzzle device that hides the muzzle flash when firing."
+L["uplp_muzzle_fhider.printname"] = "Трёхлопастной пламегаситель"
+L["uplp_muzzle_fhider.compactname"] = "3Л ПГ"
+L["uplp_muzzle_fhider.description"] = "Устройство, скрывающее пламя при выстреле."
 
-L["uplp_muzzle_slim.printname"] = "Slim Muzzle Brake"
-L["uplp_muzzle_slim.compactname"] = "Slim MB"
-L["uplp_muzzle_slim.description"] = "Muzzle brake that redirects propelled gases sideways for reduced horizontal recoil."
+L["uplp_muzzle_slim.printname"] = "Узкий дульный тормоз"
+L["uplp_muzzle_slim.compactname"] = "Узкий ДТ"
+L["uplp_muzzle_slim.description"] = "Дульный тормоз, перенаправляющий газы в стороны для уменьшения горизонтальной отдачи."
 
 ////// Set 2
-L["uplp_muzzle_brake.printname"] = "Heavy Muzzle Brake"
-L["uplp_muzzle_brake.compactname"] = "H BM"
-L["uplp_muzzle_brake.description"] = "Heavy muzzle brake that redirects propelled gases sideways for heavily reduced horizontal recoil."
+L["uplp_muzzle_brake.printname"] = "Тяжёлый дульный тормоз"
+L["uplp_muzzle_brake.compactname"] = "Тяж. ДТ"
+L["uplp_muzzle_brake.description"] = "Мощный дульный тормоз, перенаправляющий газы в стороны для значительного снижения горизонтальной отдачи."
 
-L["uplp_muzzle_evilsup.printname"] = "Evil Suppressor"
-L["uplp_muzzle_evilsup.compactname"] = "Evil Supp."
-L["uplp_muzzle_evilsup.description"] = "Rifle suppressor with a zick-zack pattern that dampens the firing noise at the cost of range and accuracy."
+L["uplp_muzzle_evilsup.printname"] = "Злой глушитель"
+L["uplp_muzzle_evilsup.compactname"] = "Злой Глуш."
+L["uplp_muzzle_evilsup.description"] = "Винтовочный глушитель с зигзагообразной насечкой, глушащий звук выстрела ценой уменьшения дальности и точности."
 
-L["uplp_muzzle_heavypistolsup.printname"] = "Heavy Pistol Suppressor"
-L["uplp_muzzle_heavypistolsup.compactname"] = "H Supp."
-L["uplp_muzzle_heavypistolsup.description"] = "Heavy suppressor made for handguns that dampens the firing noise at the cost of range."
+L["uplp_muzzle_heavypistolsup.printname"] = "Тяжёлый пистолетный глушитель"
+L["uplp_muzzle_heavypistolsup.compactname"] = "ТП глуш."
+L["uplp_muzzle_heavypistolsup.description"] = "Тяжёлый глушитель для пистолетов, глушащий звук выстрела ценой уменьшения дальности."
 
-L["uplp_muzzle_lightsup.printname"] = "Lightweight Suppressor"
-L["uplp_muzzle_lightsup.compactname"] = "L Supp."
-L["uplp_muzzle_lightsup.description"] = "Suppressor made out of lightweight materials that dampens the firing noise."
+L["uplp_muzzle_lightsup.printname"] = "Лёгкий глушитель"
+L["uplp_muzzle_lightsup.compactname"] = "Лёгк. глуш."
+L["uplp_muzzle_lightsup.description"] = "Лёгкий глушитель из облегчённых материалов, глушащий звук выстрела."
 
-L["uplp_muzzle_midsup.printname"] = "Medium Suppressor"
-L["uplp_muzzle_midsup.compactname"] = "M Supp."
-L["uplp_muzzle_midsup.description"] = "Medium weight suppressor that dampens the firing noise at the slight cost of range."
+L["uplp_muzzle_midsup.printname"] = "Средний глушитель"
+L["uplp_muzzle_midsup.compactname"] = "Ср. глуш."
+L["uplp_muzzle_midsup.description"] = "Средний глушитель, глушащий звук выстрела с небольшой потерей дальности."
 
-L["uplp_muzzle_modernsup.printname"] = "Modern Suppressor"
-L["uplp_muzzle_modernsup.compactname"] = "Mod. Supp."
-L["uplp_muzzle_modernsup.description"] = "Modern suppressor that dampens the firing noise at the cost of range."
+L["uplp_muzzle_modernsup.printname"] = "Современный глушитель"
+L["uplp_muzzle_modernsup.compactname"] = "Совр. глуш."
+L["uplp_muzzle_modernsup.description"] = "Современный глушитель, глушащий звук выстрела ценой уменьшения дальности."
 
-L["uplp_muzzle_shortsup.printname"] = "Short Suppressor"
-L["uplp_muzzle_shortsup.compactname"] = "S Supp."
-L["uplp_muzzle_shortsup.description"] = "Small, compact suppressor that dampens the firing noise at the slight cost of range."
+L["uplp_muzzle_shortsup.printname"] = "Короткий глушитель"
+L["uplp_muzzle_shortsup.compactname"] = "К глуш."
+L["uplp_muzzle_shortsup.description"] = "Компактный глушитель, глушащий звук выстрела с небольшой потерей дальности."
 
-L["uplp_muzzle_zenit.printname"] = "Zenith Muzzle Brake"
-L["uplp_muzzle_zenit.compactname"] = "Zenith MB"
-L["uplp_muzzle_zenit.description"] = "Modern muzzle brake made for most pistol and rifle calibres that reduces overall recoil."
+L["uplp_muzzle_zenit.printname"] = "Дульный тормоз Zenith"
+L["uplp_muzzle_zenit.compactname"] = "ДТ Zenith"
+L["uplp_muzzle_zenit.description"] = "Современный дульный тормоз для пистолетных и винтовочных калибров, снижающий общую отдачу."
 
 ////// Set 3
-L["uplp_muzzle_xm.printname"] = "Commando Flash Hider"
-L["uplp_muzzle_xm.compactname"] = "Comm. FH"
-L["uplp_muzzle_xm.description"] = "Old-school flash hider made for very short AR-15 rifles."
+L["uplp_muzzle_xm.printname"] = "Пламегаситель Коммандос"
+L["uplp_muzzle_xm.compactname"] = "Комм. ПГ"
+L["uplp_muzzle_xm.description"] = "Ретро-пламегаситель для укороченных винтовок AR-15."
 
 ////// Muzzle (Shotguns)
-L["uplp_sg_mz_choke.printname"] = "Shotgun Full Choke"
-L["uplp_sg_mz_choke.compactname"] = "Full Choke"
-L["uplp_sg_mz_choke.description"] = "Compact full choke muzzle for shotguns."
+L["uplp_sg_mz_choke.printname"] = "Полный чок для дробовика"
+L["uplp_sg_mz_choke.compactname"] = "Полный Чок"
+L["uplp_sg_mz_choke.description"] = "Компактный полный чок для дробовиков."
 
-L["uplp_sg_mz_gk.printname"] = "Shotgun Muzzle Brake"
-L["uplp_sg_mz_gk.compactname"] = "Brake"
-L["uplp_sg_mz_gk.description"] = "Muzzle brake for shotguns that redirects propelled gases sideways for reduced horizontal recoil."
+L["uplp_sg_mz_gk.printname"] = "Дульный тормоз для дробовика"
+L["uplp_sg_mz_gk.compactname"] = "Тормоз"
+L["uplp_sg_mz_gk.description"] = "Дульный тормоз для дробовиков, перенаправляющий газы в стороны для снижения горизонтальной отдачи."
 
-L["uplp_sg_mz_heavy.printname"] = "Heavy Shotgun Muzzle Brake"
-L["uplp_sg_mz_heavy.compactname"] = "Heavy Brake"
-L["uplp_sg_mz_heavy.description"] = "Heavy muzzle brake for shotguns that redirects propelled gases sideways for even more reduced horizontal recoil."
+L["uplp_sg_mz_heavy.printname"] = "Тяжёлый дульный тормоз для дробовика"
+L["uplp_sg_mz_heavy.compactname"] = "Тяж. ДТ"
+L["uplp_sg_mz_heavy.description"] = "Усиленный дульный тормоз для дробовиков с максимальным снижением горизонтальной отдачи."
 
-L["uplp_sg_mz_silencer.printname"] = "Shotgun Suppressor"
-L["uplp_sg_mz_silencer.compactname"] = "SG Supp."
-L["uplp_sg_mz_silencer.description"] = "Shotgun suppressor that dampens the firing noise at the cost of range and mobility."
+L["uplp_sg_mz_silencer.printname"] = "Глушитель для дробовика"
+L["uplp_sg_mz_silencer.compactname"] = "Глуш."
+L["uplp_sg_mz_silencer.description"] = "Глушитель для дробовиков, глушащий звук выстрела ценой уменьшения дальности и манёвренности."
 
-L["uplp_sg_mz_silencer_heavy.printname"] = "Heavy Shotgun Suppressor"
-L["uplp_sg_mz_silencer_heavy.compactname"] = "H SG Supp."
-L["uplp_sg_mz_silencer_heavy.description"] = "Heavy shotgun suppressor that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
+L["uplp_sg_mz_silencer_heavy.printname"] = "Тяжёлый глушитель для дробовика"
+L["uplp_sg_mz_silencer_heavy.compactname"] = "Тяж. глуш."
+L["uplp_sg_mz_silencer_heavy.description"] = "Усиленный глушитель для дробовиков, глушащий звук выстрела и улучшающий контроль отдачи ценой значительного снижения дальности и манёвренности."
 
 /////////// Tacticals
-L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Laser Sight"
+L["uplp_tac_anpeq.printname"] = "Лазерный целеуказатель BeamMaster Optics"
 L["uplp_tac_anpeq.compactname"] = "BeamMaster"
-L["uplp_tac_anpeq.description"] = "Rail-mounted aiming module made by BeamMaster Optics that provides a laser sight for use in the dark."
+L["uplp_tac_anpeq.description"] = "Навесной модуль целеуказания производства BeamMaster Optics, обеспечивающий лазерный целеуказатель для использования в темноте."
 
-L["uplp_tac_piscomb.printname"] = "LuminaFire Armaments Hybrid Module"
-L["uplp_tac_piscomb.compactname"] = "LuminaFire H."
-L["uplp_tac_piscomb.description"] = "Compact rail-mounted module providing a weaker flashlight and laser sight in one."
+L["uplp_tac_piscomb.printname"] = "Гибридный модуль LuminaFire Armaments"
+L["uplp_tac_piscomb.compactname"] = "LuminaF H."
+L["uplp_tac_piscomb.description"] = "Компактный навесной модуль, совмещающий слабый фонарь и лазерный целеуказатель."
 
-L["uplp_tac_flashlight.printname"] = "NightStrike Illumination Flashlight"
+L["uplp_tac_flashlight.printname"] = "Фонарь NightStrike Illumination"
 L["uplp_tac_flashlight.compactname"] = "NightStrike"
-L["uplp_tac_flashlight.description"] = "Rail-mounted flashlight made by NightStrike Illumination."
+L["uplp_tac_flashlight.description"] = "Навесной фонарь производства NightStrike Illumination."
 
-L["uplp_tac_flashlight_pistol.printname"] = "LuminaFire Armaments Flashlight"
-L["uplp_tac_flashlight_pistol.compactname"] = "LuminaFire F."
-L["uplp_tac_flashlight_pistol.description"] = "Compact rail-mounted flashlight designed for handguns made by LuminaFire Armaments."
+L["uplp_tac_flashlight_pistol.printname"] = "Фонарь LuminaFire Armaments"
+L["uplp_tac_flashlight_pistol.compactname"] = "LuminaF F."
+L["uplp_tac_flashlight_pistol.description"] = "Компактный навесной фонарь для пистолетов производства LuminaFire Armaments."
 
-L["uplp_tac_laser_blue.printname"] = "ApexAim Laser Sight (Blue)"
-L["uplp_tac_laser_blue.compactname"] = "ApexAim (B)"
-L["uplp_tac_laser_blue.description"] = "Rail-mounted aiming module made by ApexAim that provides a blue laser sight for use in the dark."
+L["uplp_tac_laser_blue.printname"] = "Лазерный целеуказатель ApexAim (Синий)"
+L["uplp_tac_laser_blue.compactname"] = "ApexAim (Г)"
+L["uplp_tac_laser_blue.description"] = "Навесной модуль целеуказания производства ApexAim с синим лазером для использования в темноте."
 
-L["uplp_tac_laser_dbal.printname"] = "Laser Sight (DBAL)"
-L["uplp_tac_laser_dbal.compactname"] = "Laser (DBAL)"
-L["uplp_tac_laser_dbal.description"] = "Rail-mounted aiming module that provides a laser sight for use in the dark."
+L["uplp_tac_laser_dbal.printname"] = "Лазерный целеуказатель (DBAL)"
+L["uplp_tac_laser_dbal.compactname"] = "Лазер (DBAL)"
+L["uplp_tac_laser_dbal.description"] = "Навесной модуль целеуказания с лазером для использования в темноте."
 
-L["uplp_tac_laser_green.printname"] = "ApexAim Laser Sight (Green)"
-L["uplp_tac_laser_green.compactname"] = "ApexAim (G)"
-L["uplp_tac_laser_green.description"] = "Rail-mounted aiming module made by ApexAim that provides a green laser sight for use in the dark."
+L["uplp_tac_laser_green.printname"] = "Лазерный целеуказатель ApexAim (Зелёный)"
+L["uplp_tac_laser_green.compactname"] = "ApexAim (З)"
+L["uplp_tac_laser_green.description"] = "Навесной модуль целеуказания производства ApexAim с зелёным лазером для использования в темноте."
 
-L["uplp_tac_laser_pistol.printname"] = "LuminaFire Armaments Laser Sight"
-L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
-L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module made by LuminaFire Armaments designed for handguns that provides a laser sight for use in the dark."
+L["uplp_tac_laser_pistol.printname"] = "Лазерный целеуказатель LuminaFire Armaments"
+L["uplp_tac_laser_pistol.compactname"] = "LuminaF L."
+L["uplp_tac_laser_pistol.description"] = "Компактный навесной лазерный целеуказатель для пистолетов производства LuminaFire Armaments."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nLow pressure shells like this typically can't be used in self-loading shotguns, but don't let that get in the way of your fun."
+local shotgun_lp = "\n\nНизконапорные патроны обычно нельзя использовать в самозарядных дробовиках, но это не должно мешать вашему веселью."
 
-L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
+L["uplp_ar15_ammo_458.printname"] = "Патроны .458 SOCOM"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
-L["uplp_ar15_ammo_458.description"] = "Large and powerful .458 SOCOM cartridges that pack a huge punch." .. changeammo["357"]
+L["uplp_ar15_ammo_458.description"] = "Крупные и мощные патроны .458 SOCOM, обладающие огромной пробивной силой." .. changeammo["357"]
 
-L["uplp_ar15_ammo_50.printname"] = ".50 BeoWolf Ammo"
+L["uplp_ar15_ammo_50.printname"] = "Патроны .50 BeoWolf"
 L["uplp_ar15_ammo_50.compactname"] = ".50 BeoWolf"
-L["uplp_ar15_ammo_50.description"] = "Large and powerful .50 BeOwOlf cartridges that pack a huge punch." .. changeammo["357"]
+L["uplp_ar15_ammo_50.description"] = "Крупные и мощные патроны .50 BeOwOlf, обладающие огромной пробивной силой." .. changeammo["357"]
 
-L["uplp_sg_shell_red.printname"] = "00 Buckshot Rounds"
-L["uplp_sg_shell_red.compactname"] = "Buckshot"
-L["uplp_sg_shell_red.description"] = "Standard shotshells loading medium-sized pellets."
+L["uplp_sg_shell_red.printname"] = "Картечь 00"
+L["uplp_sg_shell_red.compactname"] = "Картечь"
+L["uplp_sg_shell_red.description"] = "Стандартные патроны с картечью среднего размера."
 
-L["uplp_sg_shell_blue.printname"] = "Birdshot Rounds"
-L["uplp_sg_shell_blue.compactname"] = "Birdshot"
-L["uplp_sg_shell_blue.description"] = "Shotshells used to hunt birds. Fires smaller pellets at a greater quantity and spread, so it's more likely to hit a target."
+L["uplp_sg_shell_blue.printname"] = "Мелкая дробь"
+L["uplp_sg_shell_blue.compactname"] = "Дробь"
+L["uplp_sg_shell_blue.description"] = "Патроны для охоты на птиц. Выстреливает мелкую дробь в большом количестве и с широким разбросом, повышая шансы попадания."
 
-L["uplp_sg_shell_green.printname"] = "Slug Rounds"
-L["uplp_sg_shell_green.compactname"] = "Slug"
-L["uplp_sg_shell_green.description"] = "Shotshells used to hunt prey at medium distances. Fires a single accurate pellet."
+L["uplp_sg_shell_green.printname"] = "Патроны с пулей"
+L["uplp_sg_shell_green.compactname"] = "Пуля"
+L["uplp_sg_shell_green.description"] = "Патроны для охоты на средних дистанциях. Выстреливает единичный точный снаряд."
 
-L["uplp_sg_shell_black.printname"] = "Double Slug Rounds"
-L["uplp_sg_shell_black.compactname"] = "Slug x2"
-L["uplp_sg_shell_black.description"] = "Shotshells loading two large pellets. More stopping power than a single slug, but is less accurate."
+L["uplp_sg_shell_black.printname"] = "Патроны с двумя пулями"
+L["uplp_sg_shell_black.compactname"] = "Пуля x2"
+L["uplp_sg_shell_black.description"] = "Патроны с двумя крупными снарядами. Больше останавливающей силы, чем у одной пули, но ниже точность."
 
-L["uplp_sg_shell_orange.printname"] = "Dragon's Breath Rounds"
+L["uplp_sg_shell_orange.printname"] = "Патроны \"Дыхание Дракона\""
 L["uplp_sg_shell_orange.compactname"] = "DB"
-L["uplp_sg_shell_orange.description"] = "Shotshells filled with magnesium. Not very lethal on hit, but is likely to ignite targets." .. shotgun_lp
+L["uplp_sg_shell_orange.description"] = "Патроны с наполнением из магния. Не смертельны при попадании, но могут поджечь цели." .. shotgun_lp
 
-L["uplp_sg_shell_yellow.printname"] = "Explosive Slug Rounds"
-L["uplp_sg_shell_yellow.compactname"] = "Exp. Slug"
-L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. Blasts a small area with shrapnel." .. shotgun_lp
+L["uplp_sg_shell_yellow.printname"] = "Патроны со взрывной пулей"
+L["uplp_sg_shell_yellow.compactname"] = "Взр. Пуля"
+L["uplp_sg_shell_yellow.description"] = "Патроны с малым взрывным зарядом. Создает взрыв с осколками в небольшом радиусе." .. shotgun_lp
 
 /////////// Underbarrel Weapons
-L["uplp_ubgl_m203_rail.printname"] = "Model 40 Grenade Launcher"
+L["uplp_ubgl_m203_rail.printname"] = "Гранатомёт Model 40"
 L["uplp_ubgl_m203_rail.compactname"] = "M40 GL"
-L["uplp_ubgl_m203_rail.description"] = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
+L["uplp_ubgl_m203_rail.description"] = "Подствольный гранатомёт, стреляющий 40 мм высоковзрывными гранатами."
 
 /////////// Cosmetics
 ////// Charms
-L["uplp_charm_paw.printname"] = "Poly Paw"
-L["uplp_charm_paw.compactname"] = "Poly Paw"
-L["uplp_charm_paw.description"] = "Probably an icon of this addon :3\n\nCharm included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_charm_paw.printname"] = "ПолиЛапка"
+L["uplp_charm_paw.compactname"] = "ПолиЛапка"
+L["uplp_charm_paw.description"] = "Возможно, иконка этого аддона :3\n\nБрелок включен в <color=255,163,2>Poly Arms Project</color>."
 
-L["uplp_charm_title.printname"] = "Poly Arms Project Title"
-L["uplp_charm_title.compactname"] = "PAP Title"
-L["uplp_charm_title.description"] = "Possibly a reference to the addon title.\nImagine this but on those rapper SWAG chains.\n\nCharm included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_charm_title.printname"] = "Заголовок Poly Arms Project"
+L["uplp_charm_title.compactname"] = "PAP Заголовок"
+L["uplp_charm_title.description"] = "Возможно, отсылка к названию аддона.\nПредставьте это на цепочке в стиле рэперского SWAG.\n\nБрелок включен в <color=255,163,2>Poly Arms Project</color>."
 
 ////// Stickers
-L["uplp_sticker_paw.printname"] = "Poly Paw"
-L["uplp_sticker_paw.compactname"] = "Paw"
-L["uplp_sticker_paw.description"] = "Probably an icon of this addon :3\n\nSticker included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_sticker_paw.printname"] = "ПолиЛапка"
+L["uplp_sticker_paw.compactname"] = "Лапка"
+L["uplp_sticker_paw.description"] = "Возможно, иконка этого аддона :3\n\nСтикер включен в <color=255,163,2>Poly Arms Project</color>."
 
-L["uplp_sticker_pawgray.printname"] = "Poly Paw (Holo Gray)"
-L["uplp_sticker_pawgray.compactname"] = "Paw (Holo)"
-L["uplp_sticker_pawgray.description"] = "ooo shiny\n\nSticker included in <color=255,163,2>Poly Arms Project</color>."
+L["uplp_sticker_pawgray.printname"] = "ПолиЛапка (Голографическая)"
+L["uplp_sticker_pawgray.compactname"] = "Лапка (Голо)"
+L["uplp_sticker_pawgray.description"] = "оо блестит\n\nСтикер включен в <color=255,163,2>Poly Arms Project</color>."
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
@@ -643,439 +642,435 @@ L["uplp_weapon_ak_manufacturer"] = "ИжМаш"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ak_brl_16.printname"] = "400mm AK M10 Barrel"
+L["uplp_ak_brl_16.printname"] = "Ствол 400mm AK M10 "
 L["uplp_ak_brl_16.compactname"] = "400mm 100"
-L["uplp_ak_brl_16.description"] = "Standard 400mm (16\") barrel used on AK M10 rifles."
+L["uplp_ak_brl_16.description"] = "Стандартный 400-мм (16\") ствол, используемый на винтовках AK M10."
 
-L["uplp_ak_brl_comp.printname"] = "300mm AK M10 Barrel"
+L["uplp_ak_brl_comp.printname"] = "Ствол 300mm AK M10"
 L["uplp_ak_brl_comp.compactname"] = "300mm"
-L["uplp_ak_brl_comp.description"] = "Compact 300mm (12\") barrel used on AK M10 rifles."
+L["uplp_ak_brl_comp.description"] = "Компактный 300-мм (12\") ствол, используемый на винтовках AK M10."
 
-L["uplp_ak_brl_akm.printname"] = "400mm AK 7.62 Barrel"
+L["uplp_ak_brl_akm.printname"] = "Ствол 400mm AK 7.62"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
-L["uplp_ak_brl_akm.description"] = "Standard 400mm (16\") barrel used on the AK 7.62."
+L["uplp_ak_brl_akm.description"] = "Стандартный 400-мм (16\") ствол, используемый на AK 7.62."
 
-L["uplp_ak_brl_rpk.printname"] = "585mm HPK Barrel"
-L["uplp_ak_brl_rpk.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk.description"] = "Heavy 585mm (23\") barrel used on the HPK.\nComes with an <color=100,255,100>integral bipod</color>."
 
-L["uplp_ak_brl_109.printname"] = "432mm AK M10-7 Barrel"
+L["uplp_ak_brl_rpk.printname"] = "Ствол 585mm ХПК"
+L["uplp_ak_brl_rpk.compactname"] = "585mm ХПК"
+L["uplp_ak_brl_rpk.description"] = "Тяжёлый 585-мм (23\") ствол, используемый на ХПК.\nКомплектуется <color=100,255,100>встроенными сошками</color>."
+
+L["uplp_ak_brl_109.printname"] = "Ствол 432mm AK M10-7 Ствол"
 L["uplp_ak_brl_109.compactname"] = "432mm M10-7"
-L["uplp_ak_brl_109.description"] = "Longer 432mm (17\") barrel used on the AK M10-7 with its built-in Balanced Automatics Recoil System."
+L["uplp_ak_brl_109.description"] = "Удлинённый 432-мм (17\") ствол, используемый на AK M10-7 с встроенной системой сбалансированной автоматики."
 
-L["uplp_ak_brl_su.printname"] = "203mm Short Barrel"
+L["uplp_ak_brl_su.printname"] = "Короткий ствол 203mm"
 L["uplp_ak_brl_su.compactname"] = "203mm Short"
-L["uplp_ak_brl_su.description"] = "Short 203mm (8\") barrel used on the AK Short."
+L["uplp_ak_brl_su.description"] = "Короткий 203-мм (8\") ствол, используемый на AK Short."
 
-L["uplp_ak_brl_12.printname"] = "400mm AK M22 Barrel"
+L["uplp_ak_brl_12.printname"] = "Ствол 400mm AK M22"
 L["uplp_ak_brl_12.compactname"] = "400mm M22"
-L["uplp_ak_brl_12.description"] = "Standard 400mm (16\") barrel used on the AK M22."
+L["uplp_ak_brl_12.description"] = "Стандартный 400-мм (16\") ствол, используемый на AK M22."
 
-L["uplp_ak_brl_12k.printname"] = "230mm AK M22-K Barrel"
+L["uplp_ak_brl_12k.printname"] = "Ствол 230mm AK M22-K"
 L["uplp_ak_brl_12k.compactname"] = "230mm M22-K"
-L["uplp_ak_brl_12k.description"] = "Shortened 230mm (9\") barrel from the prototype AK M22-K. Might be not real. Or is it?\nNot compatible with the <color=255,100,100>HPK M16 or Lisyan Tactical Handguards</color>."
+L["uplp_ak_brl_12k.description"] = "Укороченный 230-мм (9\") ствол прототипа AK M22-K. Возможно, не является реальным. Или всё-таки реальный?\nНе совместим с <color=255,100,100>ХПК M16 или цевьями Lisyan</color>."
 
-L["uplp_ak_brl_19.printname"] = "483mm AK M23 5.56 Barrel"
+L["uplp_ak_brl_19.printname"] = "Ствол 483mm AK M23 5.56"
 L["uplp_ak_brl_19.compactname"] = "483mm 19"
-L["uplp_ak_brl_19.description"] = "Slightly longer 483mm (19\") barrel used on the AK M23 5.56, a 5.56×45mm export version of the AK M23."
+L["uplp_ak_brl_19.description"] = "Немного удлинённый 483-мм (19\") ствол, используемый на AK M23 5.56 — экспортной версии AK M23 под патрон 5.56×45mm."
 
-L["uplp_ak_brl_rpk16.printname"] = "585mm HPK M16 Barrel"
-L["uplp_ak_brl_rpk16.compactname"] = "585mm HPK"
-L["uplp_ak_brl_rpk16.description"] = "Heavy 585mm (23\") barrel used on the HPK M16."
+L["uplp_ak_brl_rpk16.printname"] = "Ствол 585mm ХПК M16"
+L["uplp_ak_brl_rpk16.compactname"] = "585mm ХПК"
+L["uplp_ak_brl_rpk16.description"] = "Тяжёлый 585-мм (23\") ствол, используемый на ХПК M16."
 
 ////// Dust Covers
-L["uplp_ak_dc_std.printname"] = "AK 5.45 Dust Cover"
+L["uplp_ak_dc_std.printname"] = "Крышка ствольной коробки AK 5.45"
 L["uplp_ak_dc_std.compactname"] = "AK 5.45"
-L["uplp_ak_dc_std.description"] = "Standard ribbed dust cover used on the AK 5.45."
+L["uplp_ak_dc_std.description"] = "Стандартная рифлёная крышка ствольной коробки, используемая на AK 5.45."
 
-L["uplp_ak_dc_flat.printname"] = "Smooth Dust Cover"
-L["uplp_ak_dc_flat.compactname"] = "Smooth"
-L["uplp_ak_dc_flat.description"] = "Smoothened out dust cover used on the AK 5.45 and AK M10 rifles."
+L["uplp_ak_dc_flat.printname"] = "Гладкая крышка ствольной коробки"
+L["uplp_ak_dc_flat.compactname"] = "Гладкая"
+L["uplp_ak_dc_flat.description"] = "Сглаженная крышка ствольной коробки, используемая на AK 5.45 и AK M10."
 
-L["uplp_ak_dc_old.printname"] = "Vintage Dust Cover"
-L["uplp_ak_dc_old.compactname"] = "Vintage"
-L["uplp_ak_dc_old.description"] = "Vintage dust cover used on the AK 7.62.\nCombine with <color=160,160,255>Vintage Stock</color> to change receiver appearance."
+L["uplp_ak_dc_old.printname"] = "Винтажная крышка ствольной коробки"
+L["uplp_ak_dc_old.compactname"] = "Винтажная"
+L["uplp_ak_dc_old.description"] = "Винтажная крышка ствольной коробки, используемая на AK 7.62.\nСовместите с <color=160,160,255>Винтажным Прикладом</color> для изменения внешнего вида ствольной коробки."
 
-L["uplp_ak_dc_rail.printname"] = "PAWCO Dust Cover with Rail"
+L["uplp_ak_dc_rail.printname"] = "Крышка ствольной коробки PAWCO с Рейкой"
 L["uplp_ak_dc_rail.compactname"] = "PAWCO"
-L["uplp_ak_dc_rail.description"] = "Tactical dust cover with built-in rail for optics made by PAWCO."
+L["uplp_ak_dc_rail.description"] = "Тактическая крышка ствольной коробки с встроенной рейкой для оптики от PAWCO."
 
-L["uplp_ak_dc_rail2.printname"] = "Lisyan Tactical Dust Cover with Rail"
+L["uplp_ak_dc_rail2.printname"] = "Тактическая крышка ствольной коробки Lisyan с Рейкой"
 L["uplp_ak_dc_rail2.compactname"] = "Lisyan"
-L["uplp_ak_dc_rail2.description"] = "Tactical dust cover with built-in rail for optics made by Lisyan Tactical."
+L["uplp_ak_dc_rail2.description"] = "Тактическая крышка ствольной коробки с встроенной рейкой для оптики от Lisyan Tactical."
 
-L["uplp_ak_dc_azen.printname"] = "Zenith Dust Cover"
+L["uplp_ak_dc_azen.printname"] = "Крышка ствольной коробки Zenith"
 L["uplp_ak_dc_azen.compactname"] = "Zenith"
-L["uplp_ak_dc_azen.description"] = "Modernized dust cover for AK rifles. Comes with built-in top rail for optics."
+L["uplp_ak_dc_azen.description"] = "Модернизированная крышка ствольной коробки для АК. Оснащена встроенной верхней рейкой для оптики."
 
-L["uplp_ak_dc_internals.printname"] = "Remove Dust Cover"
-L["uplp_ak_dc_internals.compactname"] = "Remove"
-L["uplp_ak_dc_internals.description"] = "Removes the dust cover, exposing the internal workings of the AK rifle.\nЧисто <color=160,160,255>косметический обвес</color>."
+L["uplp_ak_dc_internals.printname"] = "Убрать крышку ствольной коробки"
+L["uplp_ak_dc_internals.compactname"] = "Убрать"
+L["uplp_ak_dc_internals.description"] = "Удаляет крышку ствольной коробки, обнажая внутренние механизмы АК.\nЧисто <color=160,160,255>косметический обвес</color>."
 
-L["uplp_ak_dc_beryl.printname"] = "Szermierz Dust Cover & Rail"
+L["uplp_ak_dc_beryl.printname"] = "Крышка ствольной коробки и Рейка Szermierz"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
-L["uplp_ak_dc_beryl.description"] = "Dust cover and top rail combination made for an AK rifle of Polish origin."
+L["uplp_ak_dc_beryl.description"] = "Комбинация крышка ствольной коробки и верхней рейки для АК польского производства."
 
-L["uplp_ak_dc_12.printname"] = "AK M23 Configuration"
-L["uplp_ak_dc_12.compactname"] = " AK M23"
-L["uplp_ak_dc_12.description"] = "Modern AK M23 configuration that performs the following changes to the weapon:\n- Removes the <color=255,100,100>2-round burst firing mode</color>.\n- Replaces the rear sight with a more robust peephole sight.\n- Adds an ambidextrous fire selector."
+L["uplp_ak_dc_12.printname"] = "Конфигурация AK M23"
+L["uplp_ak_dc_12.compactname"] = "AK M23"
+L["uplp_ak_dc_12.description"] = "Современная конфигурация AK M23, вносящая следующие изменения:\n- Удаляет режим <color=255,100,100>стрельбы очередями по 2 патрона</color>.\n- Заменяет целик на более прочный диоптрический.\n- Добавляет амбидекстральный переключатель огня."
 
-L["uplp_ak_dc_12_22.printname"] = "AK M22 Configuration"
-L["uplp_ak_dc_12_22.compactname"] = "'AK M22"
-L["uplp_ak_dc_12_22.description"] = "Standard AK M22 configuration that performs the following changes to the weapon:\n- Removes the <color=255,100,100>2-round burst firing mode</color>.\n- Replaces the rear sight with a peephole sight."
+L["uplp_ak_dc_12_22.printname"] = "Конфигурация AK M22"
+L["uplp_ak_dc_12_22.compactname"] = "AK M22"
+L["uplp_ak_dc_12_22.description"] = "Стандартная конфигурация AK M22, вносящая следующие изменения:\n- Удаляет режим <color=255,100,100>стрельбы очередями по 2 патрона</color>.\n- Заменяет целик на диоптрический."
 
-L["uplp_ak_dc_12_16.printname"] = "AK M16 Configuration"
+L["uplp_ak_dc_12_16.printname"] = "Конфигурация AK M16"
 L["uplp_ak_dc_12_16.compactname"] = "AK M16"
-L["uplp_ak_dc_12_16.description"] = "Old AK M16 configuration that performs the following changes to the weapon:\n- Adds a <color=100,255,100>2-round burst firing mode</color>."
+L["uplp_ak_dc_12_16.description"] = "Старая конфигурация AK M16, добавляющая режим <color=100,255,100>стрельбы очередями по 2 патрона</color>."
 
 ////// Dovetails
-L["uplp_ak_dovetail_visualonly.printname"] = "Dovetail"
-L["uplp_ak_dovetail_visualonly.compactname"] = "Dovetail"
-L["uplp_ak_dovetail_visualonly.description"] = "<color=160,160,255>КОСМЕТИЧЕСКИЙ ОБВЕС</color>\nDisplays the dovetail."
+L["uplp_ak_dovetail_visualonly.printname"] = "Ласточкин хвост"
+L["uplp_ak_dovetail_visualonly.compactname"] = "Ласт. хвост"
+L["uplp_ak_dovetail_visualonly.description"] = "<color=160,160,255>КОСМЕТИЧЕСКИЙ ОБВЕС</color>\nОтображает ласточкин хвост."
 
-L["uplp_ak_dovetail_rail.printname"] = "Zenith Dovetail Rail"
+L["uplp_ak_dovetail_rail.printname"] = "Рейка Zenith"
 L["uplp_ak_dovetail_rail.compactname"] = "Zenith"
-L["uplp_ak_dovetail_rail.description"] = "Attaches a Zenith RIS-rail used for scopes on the dovetail mount."
+L["uplp_ak_dovetail_rail.description"] = "Устанавливает рейку Zenith RIS для оптики на ласточкин хвост."
 
-L["uplp_ak_dovetail_rail_c.printname"] = "Zenith Compact Dovetail Rail"
+L["uplp_ak_dovetail_rail_c.printname"] = "Компактная Рейка Zenith"
 L["uplp_ak_dovetail_rail_c.compactname"] = "Zenith C"
-L["uplp_ak_dovetail_rail_c.description"] = "Attaches a Zenith RIS-rail used for scopes on the dovetail mount."
+L["uplp_ak_dovetail_rail_c.description"] = "Компактная рейка Zenith RIS для оптики на ласточкин хвост."
 
 ////// Pistol Grips
-L["uplp_ak_grip_std.printname"] = "Polymer Pistol Grip"
-L["uplp_ak_grip_std.compactname"] = "Polymer"
-L["uplp_ak_grip_std.description"] = "Polymer pistol grip used on the AK M10."
+L["uplp_ak_grip_std.printname"] = "Полимерная Рукоятка"
+L["uplp_ak_grip_std.compactname"] = "Полимер"
+L["uplp_ak_grip_std.description"] = "Полимерная рукоятка, используемая на AK M10."
 
-L["uplp_ak_grip_bak.printname"] = "Bakelite Pistol Grip"
-L["uplp_ak_grip_bak.compactname"] = "Bakelite"
-L["uplp_ak_grip_bak.description"] = "Pistol grip made out of AG-4S molding compound, but resembles bakelite. Made for the AK 5.45."
+L["uplp_ak_grip_bak.printname"] = "Рукоятка из Бакелита"
+L["uplp_ak_grip_bak.compactname"] = "Бакелит"
+L["uplp_ak_grip_bak.description"] = "Рукоятка из композита AG-4S, внешне напоминающая бакелит. Создана для AK 5.45."
 
-L["uplp_ak_grip_old.printname"] = "Vintage Pistol Grip"
-L["uplp_ak_grip_old.compactname"] = "Vintage"
-L["uplp_ak_grip_old.description"] = "Vintage pistol grip used on the AK 7.62."
+L["uplp_ak_grip_old.printname"] = "Винтажная Рукоятка"
+L["uplp_ak_grip_old.compactname"] = "Винтажная"
+L["uplp_ak_grip_old.description"] = "Винтажная рукоятка, используемая на AK 7.62."
 
-L["uplp_ak_grip_tac.printname"] = "Lisyan Tactical Pistol Grip"
+L["uplp_ak_grip_tac.printname"] = "Тактическая Рукоятка Lisyan"
 L["uplp_ak_grip_tac.compactname"] = "Lisyan"
-L["uplp_ak_grip_tac.description"] = "Comfortable and sporty pistol grip for AK rifles made by Lisyan Tactical."
+L["uplp_ak_grip_tac.description"] = "Удобная спортивная рукоятка для АК от Lisyan Tactical."
 
-L["uplp_ak_grip_tapco.printname"] = "PAWCO Pistol Grip"
+L["uplp_ak_grip_tapco.printname"] = "Рукоятка PAWCO"
 L["uplp_ak_grip_tapco.compactname"] = "PAWCO"
-L["uplp_ak_grip_tapco.description"] = "Rubberized pistol grip by PAWCO."
+L["uplp_ak_grip_tapco.description"] = "Резиновая рукоятка от PAWCO."
 
-L["uplp_ak_grip_vityaz.printname"] = "\"OIZK-9\" Pistol Grip"
-L["uplp_ak_grip_vityaz.compactname"] = "\"OIZK-9\""
-L["uplp_ak_grip_vityaz.description"] = "Larger pistol grip used on the AK SMG \"OIZK-9\"."
+L["uplp_ak_grip_vityaz.printname"] = "Рукоятка \"ОИЗК-9\""
+L["uplp_ak_grip_vityaz.compactname"] = "\"ОИЗК-9\""
+L["uplp_ak_grip_vityaz.description"] = "Увеличенная рукоятка, используемая на пистолете-пулемёте AK \"ОИЗК-9\"."
 
-L["uplp_ak_grip_beryl.printname"] = "Szermierz Pistol Grip"
+L["uplp_ak_grip_beryl.printname"] = "Рукоятка Szermierz"
 L["uplp_ak_grip_beryl.compactname"] = "Szermierz"
-L["uplp_ak_grip_beryl.description"] = "Alternative pistol grip made for an AK rifle of Polish origin."
+L["uplp_ak_grip_beryl.description"] = "Альтернативная рукоятка для АК польского производства."
 
-L["uplp_ak_grip_molot.printname"] = "Molot Pistol Grip"
-L["uplp_ak_grip_molot.compactname"] = "Molot"
-L["uplp_ak_grip_molot.description"] = "Standard pistol grip used on the Molot shotgun."
+L["uplp_ak_grip_molot.printname"] = "Рукоятка Молот"
+L["uplp_ak_grip_molot.compactname"] = "Молот"
+L["uplp_ak_grip_molot.description"] = "Стандартная рукоятка, используемая на дробовике Молот."
 
-L["uplp_ak_grip_agr.printname"] = "ApexCore Systems Pistol Grip"
+L["uplp_ak_grip_agr.printname"] = "Рукоятка ApexCore Systems"
 L["uplp_ak_grip_agr.compactname"] = "ApexCore"
-L["uplp_ak_grip_agr.description"] = "Heavy pistol grip with built-in palm shelf for AK-based rifles made by ApexCore Systems."
+L["uplp_ak_grip_agr.description"] = "Утяжелённая рукоятка с подставкой под ладонь для АК от ApexCore Systems."
 
-L["uplp_ak_grip_12.printname"] = "AK M22 Pistol Grip"
+L["uplp_ak_grip_12.printname"] = "Рукоятка AK M22"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
-L["uplp_ak_grip_12.description"] = "Standard pistol grip used on the AK M22."
+L["uplp_ak_grip_12.description"] = "Стандартная рукоятка, используемая на AK M22."
 
-L["uplp_ak_grip_12evo.printname"] = "EVO Pistol Grip"
+L["uplp_ak_grip_12evo.printname"] = "Рукоятка EVO"
 L["uplp_ak_grip_12evo.compactname"] = "EVO"
-L["uplp_ak_grip_12evo.description"] = "Upgraded pistol grip and trigger guard for use on the AK M23."
+L["uplp_ak_grip_12evo.description"] = "Улучшенная рукоятка и спусковая скоба для AK M23."
+
 
 ////// Handguards
-L["uplp_ak_hg_100.printname"] = "M10 Handguard"
+L["uplp_ak_hg_100.printname"] = "Цевьё M10"
 L["uplp_ak_hg_100.compactname"] = "M10"
-L["uplp_ak_hg_100.description"] = "Modern plastic handguard used on the AK M10. Comes with a bottom rail for use with foregrips."
+L["uplp_ak_hg_100.description"] = "Современное пластиковое цевьё AK M10 с нижней рейкой для передних рукояток."
 
-L["uplp_ak_hg_old.printname"] = "Vintage Handguard"
-L["uplp_ak_hg_old.compactname"] = "Vintage"
-L["uplp_ak_hg_old.description"] = "Vintage handguard used on the AK 7.62."
+L["uplp_ak_hg_old.printname"] = "Винтажное Цевьё"
+L["uplp_ak_hg_old.compactname"] = "Винтажное"
+L["uplp_ak_hg_old.description"] = "Винтажное цевьё, используемое на AK 7.62."
 
-L["uplp_ak_hg_rpk.printname"] = "HPK Handguard"
-L["uplp_ak_hg_rpk.compactname"] = "HPK"
-L["uplp_ak_hg_rpk.description"] = "Wooden handguard used on the HPK."
+L["uplp_ak_hg_rpk.printname"] = "Цевьё ХПК"
+L["uplp_ak_hg_rpk.compactname"] = "ХПК"
+L["uplp_ak_hg_rpk.description"] = "Деревянное цевьё, используемое на ХПК."
 
-L["uplp_ak_hg_beryl.printname"] = "Szermierz Handguard"
+L["uplp_ak_hg_beryl.printname"] = "Цевьё Szermierz"
 L["uplp_ak_hg_beryl.compactname"] = "Szermierz"
-L["uplp_ak_hg_beryl.description"] = "Tactical handguard made for an AK rifle of Polish origin."
+L["uplp_ak_hg_beryl.description"] = "Тактическое цевьё для АК польского производства."
 
-L["uplp_ak_hg_tac.printname"] = "Lisyan Tactical Handguard"
+L["uplp_ak_hg_tac.printname"] = "Тактическое Цевьё Lisyan"
 L["uplp_ak_hg_tac.compactname"] = "Lisyan"
-L["uplp_ak_hg_tac.description"] = "Lightweight and sporty handguard for AK rifles made by Lisyan Tactical."
+L["uplp_ak_hg_tac.description"] = "Лёгкое спортивное цевьё для АК от Lisyan Tactical."
 
-L["uplp_ak_hg_wood.printname"] = "Wooden Handguard"
-L["uplp_ak_hg_wood.compactname"] = "Wooden"
-L["uplp_ak_hg_wood.description"] = "Wooden handguard used on the AK 5.45."
+L["uplp_ak_hg_wood.printname"] = "Деревянное Цевьё"
+L["uplp_ak_hg_wood.compactname"] = "Деревянное"
+L["uplp_ak_hg_wood.description"] = "Деревянное цевьё, используемое на AK 5.45."
 
-L["uplp_ak_hg_dong.printname"] = "Dong Handguard"
-L["uplp_ak_hg_dong.compactname"] = "Dong"
-L["uplp_ak_hg_dong.description"] = "Wooden handguard with built-in foregrip used on an AK rifle of Romanian origin."
+L["uplp_ak_hg_dong.printname"] = "Румынское Цевьё"
+L["uplp_ak_hg_dong.compactname"] = "Румын."
+L["uplp_ak_hg_dong.description"] = "Деревянное цевьё румынского АК с встроенной передней рукояткой."
 
-L["uplp_ak_hg_azen.printname"] = "Zenith Handguard"
+L["uplp_ak_hg_azen.printname"] = "Цевьё Zenith"
 L["uplp_ak_hg_azen.compactname"] = "Zenith"
-L["uplp_ak_hg_azen.description"] = "Handguard with RIS-rail functionality built for AK rifles."
+L["uplp_ak_hg_azen.description"] = "Цевьё с функционалом RIS-реек для АК."
 
-L["uplp_ak_hg_azen_c.printname"] = "Zenith Compact Handguard"
+L["uplp_ak_hg_azen_c.printname"] = "Компактное Цевьё Zenith"
 L["uplp_ak_hg_azen_c.compactname"] = "Zenith C"
-L["uplp_ak_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK rifles."
+L["uplp_ak_hg_azen_c.description"] = "Лёгкое цевьё с функционалом RIS-реек для АК."
 
-L["uplp_ak_hg_su_tac.printname"] = "Centurion Industries Handguard"
+L["uplp_ak_hg_su_tac.printname"] = "Цевьё Centurion Industries"
 L["uplp_ak_hg_su_tac.compactname"] = "Centurion"
-L["uplp_ak_hg_su_tac.description"] = "A replacement bottom handguard that adds RIS rail functionality made by Centurion Industries."
+L["uplp_ak_hg_su_tac.description"] = "Замена нижней части цевья с поддержкой RIS-реек от Centurion Industries."
 
-L["uplp_ak_hg_su_dong.printname"] = "Dong Handguard"
-L["uplp_ak_hg_su_dong.compactname"] = "Dong"
-L["uplp_ak_hg_su_dong.description"] = "Wooden handguard from an AK rifle of Romanian origin with built-in foregrip."
+L["uplp_ak_hg_su_dong.printname"] = "Румынское Цевьё"
+L["uplp_ak_hg_su_dong.compactname"] = "Румын."
+L["uplp_ak_hg_su_dong.description"] = "Деревянное цевьё румынского АК с встроенной передней рукояткой."
 
-L["uplp_ak_hg_12.printname"] = "AK M16 Handguard"
+L["uplp_ak_hg_12.printname"] = "Цевьё AK M16"
 L["uplp_ak_hg_12.compactname"] = "AK M16"
-L["uplp_ak_hg_12.description"] = "Standard handguard used on the AK M16."
+L["uplp_ak_hg_12.description"] = "Стандартное цевьё, используемое на AK M16."
 
-L["uplp_ak_hg_rpk16.printname"] = "HPK M16 Handguard"
-L["uplp_ak_hg_rpk16.compactname"] = "HPK M16"
-L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the HPK M16.\nAdds support for <color=100,255,100>a bipod</color>.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
+L["uplp_ak_hg_rpk16.printname"] = "Цевьё ХПК M16"
+L["uplp_ak_hg_rpk16.compactname"] = "ХПК M16"
+L["uplp_ak_hg_rpk16.description"] = "Удлинённое цевьё ХПК M16.\nДобавляет поддержку <color=100,255,100>сошки</color>.\nНе совместимо со <color=255,100,100>стволом 230mm AK M22-K</color>."
 
-L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Model 23 Handguard"
+L["uplp_ak_hg_12tac.printname"] = "Тактическое Цевьё Lisyan Model 23"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
-L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan Tactical.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
+L["uplp_ak_hg_12tac.description"] = "Очень длинное тактическое цевьё от Lisyan Tactical.\nНе совместимо с <color=255,100,100>230mm AK M22-K Стволом</color>."
 
 ////// Magazines
 /// 7.62×39mm
 local loaded = "\n"
-local loaded762 = loaded .. "Loaded with <color=160,160,255>7.62×39mm Soviet</color> used by the AK 7.62, AK M10 and AK M16 5.56."
+local loaded762 = loaded .. "Заряжен патронами <color=160,160,255>7.62×39мм</color> используемыми АК 7.62, АК M10 и АК M16 5.56."
 
-L["uplp_ak_mag_762_30_std.printname"] = "30-Round 7.62×39mm"
+L["uplp_ak_mag_762_30_std.printname"] = "30-зарядный 7.62×39мм"
 L["uplp_ak_mag_762_30_std.compactname"] = "30R 7.62"
-L["uplp_ak_mag_762_30_std.description"] = "30-round standard magazine." .. loaded762
+L["uplp_ak_mag_762_30_std.description"] = "Стандартный 30-зарядный магазин." .. loaded762
 
-L["uplp_ak_mag_762_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
-L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (B)"
-L["uplp_ak_mag_762_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
+L["uplp_ak_mag_762_30_bak.printname"] = "30-зарядный 7.62×39мм (Бакелит)"
+L["uplp_ak_mag_762_30_bak.compactname"] = "30R 7.62 (Б)"
+L["uplp_ak_mag_762_30_bak.description"] = "30-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded762
 
-L["uplp_ak_mag_762_30_12.printname"] = "30-Round 7.62×39mm (M23 Style)"
+L["uplp_ak_mag_762_30_12.printname"] = "30-зарядный 7.62×39мм (M23)"
 L["uplp_ak_mag_762_30_12.compactname"] = "30R 7.62 (M23)"
-L["uplp_ak_mag_762_30_12.description"] = "30-round magazine used on AK M16 5.56 rifle." .. loaded762
+L["uplp_ak_mag_762_30_12.description"] = "30-зарядный магазин, используемый на АК M16 5.56." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
-L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
-L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
+L["uplp_ak_mag_762_30_old.printname"] = "30-зарядный 7.62×39мм (Сталь)"
+L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (С)"
+L["uplp_ak_mag_762_30_old.description"] = "30-зарядный магазин из прочной стали." .. loaded762
 
-L["uplp_ak_mag_762_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
-L["uplp_ak_mag_762_30_old.compactname"] = "30R 7.62 (S)"
-L["uplp_ak_mag_762_30_old.description"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
+L["uplp_ak_mag_762_30_oldest.printname"] = "30-зарядный 7.62×39мм (Гладкая сталь)"
+L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (ГС)"
+L["uplp_ak_mag_762_30_oldest.description"] = "30-зарядный магазин из гладкой стали. Очень старый экземпляр, который на удивление всё ещё работает! Может, вернёте его в музей?" .. loaded762
 
-L["uplp_ak_mag_762_30_oldest.printname"] = "30-Round 7.62×39mm (Smooth Steel)"
-L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (SS)"
-L["uplp_ak_mag_762_30_oldest.description"] = "30-round magazine made with smoothened out steel. Really old piece that surprisingly still works! Maybe you should hand it in to a museum?" .. loaded762
+L["uplp_ak_mag_762_40.printname"] = "40-зарядный 7.62×39мм (Бакелит)"
+L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (Б)"
+L["uplp_ak_mag_762_40.description"] = "40-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded762
 
-L["uplp_ak_mag_762_40.printname"] = "40-Round 7.62×39mm (Bakelite)"
-L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (B)"
-L["uplp_ak_mag_762_40.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
+L["uplp_ak_mag_762_40_old.printname"] = "40-зарядный 7.62×39мм (Сталь)"
+L["uplp_ak_mag_762_40_old.compactname"] = "40R 7.62 (С)"
+L["uplp_ak_mag_762_40_old.description"] = "40-зарядный магазин из прочной стали." .. loaded762
 
-L["uplp_ak_mag_762_40_old.printname"] = "40-Round 7.62×39mm (Steel)"
-L["uplp_ak_mag_762_40_old.compactname"] = "40R 7.62 (S)"
-L["uplp_ak_mag_762_40_old.description"] = "40-round magazine made with good, old-fashioned steel." .. loaded762
-
-L["uplp_ak_mag_762_drum.printname"] = "75-Round 7.62×39mm Drum"
-L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 D"
-L["uplp_ak_mag_762_drum.description"] = "75-round cylindrical drum magazine." .. loaded762
+L["uplp_ak_mag_762_drum.printname"] = "75-зарядный барабан 7.62×39мм"
+L["uplp_ak_mag_762_drum.compactname"] = "75R 7.62 Б"
+L["uplp_ak_mag_762_drum.description"] = "75-зарядный цилиндрический барабанный магазин." .. loaded762
 
 /// 5.45×39mm
 local loaded545 = loaded .. "Заряжен патронами <color=160,160,255>5.45×39мм</color> используемого АК 5.45 и его варициями." .. changeammo.smg1
 
-L["uplp_ak_mag_545_30.printname"] = "30-Round 5.45×39mm (Polymer)"
-L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (P)"
-L["uplp_ak_mag_545_30.description"] = "30-round magazine made out of polymer." .. loaded545
+L["uplp_ak_mag_545_30.printname"] = "30-зарядный 5.45×39мм (Полимер)"
+L["uplp_ak_mag_545_30.compactname"] = "30R 5.45 (П)"
+L["uplp_ak_mag_545_30.description"] = "30-зарядный полимерный магазин." .. loaded545
 
-L["uplp_ak_mag_545_30_bak.printname"] = "30-Round 5.45×39mm (Bakelite)"
-L["uplp_ak_mag_545_30_bak.compactname"] = "30R 5.45 (B)"
-L["uplp_ak_mag_545_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
+L["uplp_ak_mag_545_30_bak.printname"] = "30-зарядный 5.45×39мм (Бакелит)"
+L["uplp_ak_mag_545_30_bak.compactname"] = "30R 5.45 (Б)"
+L["uplp_ak_mag_545_30_bak.description"] = "30-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.printname"] = "30-Round 5.45×39mm (SynPoly)"
+L["uplp_ak_mag_545_30_pmag.printname"] = "30-зарядный 5.45×39мм (SynPoly)"
 L["uplp_ak_mag_545_30_pmag.compactname"] = "30R 5.45 (SP)"
-L["uplp_ak_mag_545_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded545
+L["uplp_ak_mag_545_30_pmag.description"] = "30-зарядный SPMAG производства SynPoly." .. loaded545
 
-L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45×39mm (M23 Style)"
+L["uplp_ak_mag_545_30_12.printname"] = "30-зарядный 5.45×39мм (M23)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
-L["uplp_ak_mag_545_30_12.description"] = "30-round magazine used on AK M23 rifle." .. loaded545
+L["uplp_ak_mag_545_30_12.description"] = "30-зарядный магазин, используемый на АК M23." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-Round 5.45×39mm (Bakelite)"
-L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (B)"
-L["uplp_ak_mag_545_45.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "40-зарядный 5.45×39мм (Бакелит)"
+L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (Б)"
+L["uplp_ak_mag_545_45.description"] = "40-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45×39mm Quadstacked"
+L["uplp_ak_mag_545_60.printname"] = "52-зарядный четырёхрядный 5.45×39мм"
 L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\nThicc boi. Please don't load more than 52 rounds!"
+L["uplp_ak_mag_545_60.description"] = "52-зарядный полимерный магазин увеличенной ширины для размещения боеприпасов." .. loaded545 .. "\n\nПожалуйста, не заряжайте более 52 патронов!"
 
-L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45×39mm HPK M16 Drum"
-L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"
-L["uplp_ak_mag_545_drum.description"] = "85-round cylindrical drum magazine from the HPK M16." .. loaded545
+L["uplp_ak_mag_545_drum.printname"] = "85-зарядный барабан 5.45×39мм ХПК M16"
+L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 Б"
+L["uplp_ak_mag_545_drum.description"] = "85-зарядный цилиндрический барабан от ХПК M16." .. loaded545
 
 /// 5.56×45mm NATO
 local loaded556 = loaded .. "Заряжен патронами <color=160,160,255>5.56×45мм</color> используемый AK M10 5.56." .. changeammo.smg1
 
-L["uplp_ak_mag_556_30.printname"] = "30-Round 5.56×45mm (Polymer)"
-L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (P)"
-L["uplp_ak_mag_556_30.description"] = "30-round magazine made out of polymer." .. loaded556
+L["uplp_ak_mag_556_30.printname"] = "30-зарядный 5.56×45мм (Полимер)"
+L["uplp_ak_mag_556_30.compactname"] = "30R 5.56 (П)"
+L["uplp_ak_mag_556_30.description"] = "30-зарядный полимерный магазин." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.printname"] = "30-Round 5.56×45mm (SynPoly)"
+L["uplp_ak_mag_556_30_pmag.printname"] = "30-зарядный 5.56×45мм (SynPoly)"
 L["uplp_ak_mag_556_30_pmag.compactname"] = "30R 5.56 (SP)"
-L["uplp_ak_mag_556_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded556
+L["uplp_ak_mag_556_30_pmag.description"] = "30-зарядный SPMAG производства SynPoly." .. loaded556
 
-L["uplp_ak_mag_556_30_12.printname"] = "30-Round 5.56×45mm (M23 Style)"
+L["uplp_ak_mag_556_30_12.printname"] = "30-зарядный 5.56×45мм (M23)"
 L["uplp_ak_mag_556_30_12.compactname"] = "30R 5.56 (M23)"
-L["uplp_ak_mag_556_30_12.description"] = "30-round magazine used on AK M23 5.56 rifle." .. loaded556
-
+L["uplp_ak_mag_556_30_12.description"] = "30-зарядный магазин, используемый на АК M23 5.56." .. loaded556
 /// Other
-L["uplp_ak_mag_308_20.printname"] = "20-Round 7.62×51mm"
+L["uplp_ak_mag_308_20.printname"] = "20-зарядный 7.62×51мм"
 L["uplp_ak_mag_308_20.compactname"] = "20R 7.62×51"
-L["uplp_ak_mag_308_20.description"] = "20-round magazine loaded with <color=160,160,255>7.62×51mm rounds</color> used on AK M308 rifle." ..  changeammo["357"]
+L["uplp_ak_mag_308_20.description"] = "20-зарядный магазин с патронами <color=160,160,255>7.62×51мм</color> для АК M308." ..  changeammo["357"]
 
-L["uplp_ak_mag_939_30.printname"] = "20-Round 9x39mm"
-L["uplp_ak_mag_939_30.compactname"] = "20R 9x39mm"
-L["uplp_ak_mag_939_30.description"] = "20-round magazine loaded with <color=160,160,255>9x39mm rounds</color> used by the AK 9mm.\nOnly a few hundred of the AK 9mm were ever made!" .. changeammo.smg1
+L["uplp_ak_mag_939_30.printname"] = "20-зарядный 9x39мм"
+L["uplp_ak_mag_939_30.compactname"] = "20R 9x39мм"
+L["uplp_ak_mag_939_30.description"] = "20-зарядный магазин с патронами <color=160,160,255>9x39мм</color> для АК 9мм.\nБыло выпущено всего несколько сотен АК 9мм!" .. changeammo.smg1
 
 ////// Muzzles
-L["uplp_ak_mz_std.printname"] = "M10 Muzzle Brake"
-L["uplp_ak_mz_std.compactname"] = "M10 MB"
-L["uplp_ak_mz_std.description"] = "Standard muzzle brake used on the AK M10."
+L["uplp_ak_mz_std.printname"] = "Дульный тормоз M10"
+L["uplp_ak_mz_std.compactname"] = "M10 ДТ"
+L["uplp_ak_mz_std.description"] = "Стандартный дульный тормоз, используемый на АК M10."
 
-L["uplp_ak_mz_akm.printname"] = "AK 7.62 Muzzle Brake"
-L["uplp_ak_mz_akm.compactname"] = "AK 7.62 MB"
-L["uplp_ak_mz_akm.description"] = "Standard muzzle brake used on the AK 7.62."
+L["uplp_ak_mz_akm.printname"] = "Дульный тормоз АК 7.62"
+L["uplp_ak_mz_akm.compactname"] = "AK 7.62 ДТ"
+L["uplp_ak_mz_akm.description"] = "Стандартный дульный тормоз, используемый на АК 7.62."
 
-L["uplp_ak_mz_compact.printname"] = "AK Short Muzzle Brake"
-L["uplp_ak_mz_compact.compactname"] = "Short MB"
-L["uplp_ak_mz_compact.description"] = "Standard muzzle brake used on the AK Short."
+L["uplp_ak_mz_compact.printname"] = "Короткий дульный тормоз АК"
+L["uplp_ak_mz_compact.compactname"] = "Кор. ДТ"
+L["uplp_ak_mz_compact.description"] = "Стандартный дульный тормоз, используемый на АК Short."
 
-L["uplp_ak_mz_rpk.printname"] = "HPK Muzzle Brake"
-L["uplp_ak_mz_rpk.compactname"] = "HPK MB"
-L["uplp_ak_mz_rpk.description"] = "Standard muzzle brake used on the HPK."
+L["uplp_ak_mz_rpk.printname"] = "Дульный тормоз ХПК"
+L["uplp_ak_mz_rpk.compactname"] = "ХПК ДТ"
+L["uplp_ak_mz_rpk.description"] = "Стандартный дульный тормоз, используемый на ХПК."
 
-L["uplp_ak_mz_vityaz.printname"] = "\"OIZK-9\" Muzzle Brake"
-L["uplp_ak_mz_vityaz.compactname"] = "\"OIZK-9\" MB"
-L["uplp_ak_mz_vityaz.description"] = "Standard muzzle brake used on the AK SMG \"OIZK-9\"."
+L["uplp_ak_mz_vityaz.printname"] = "Дульный тормоз \"ОИЗК-9\""
+L["uplp_ak_mz_vityaz.compactname"] = "\"ОИЗК-9\" ДТ"
+L["uplp_ak_mz_vityaz.description"] = "Стандартный дульный тормоз, используемый на АК ПП \"ОИЗК-9\"."
 
-L["uplp_ak_mz_bizon.printname"] = "\"Zakat\" Muzzle Brake"
-L["uplp_ak_mz_bizon.compactname"] = "\"Zakat\" MB"
-L["uplp_ak_mz_bizon.description"] = "Standard muzzle brake used on the AK SMG \"Zakat\"."
+L["uplp_ak_mz_bizon.printname"] = "Дульный тормоз \"Закат\""
+L["uplp_ak_mz_bizon.compactname"] = "\"Закат\" ДТ"
+L["uplp_ak_mz_bizon.description"] = "Стандартный дульный тормоз, используемый на АК ПП \"Закат\"."
 
-L["uplp_ak_mz_12.printname"] = "AK M23 Muzzle Brake"
-L["uplp_ak_mz_12.compactname"] = "M23 MB"
-L["uplp_ak_mz_12.description"] = "Standard muzzle brake used on the AK M23."
+L["uplp_ak_mz_12.printname"] = "Дульный тормоз АК M23"
+L["uplp_ak_mz_12.compactname"] = "M23 ДТ"
+L["uplp_ak_mz_12.description"] = "Стандартный дульный тормоз, используемый на АК M23."
 
-L["uplp_ak_mz_19.printname"] = "AK M23 5.56 Muzzle Brake"
-L["uplp_ak_mz_19.compactname"] = "M23 5.56 MB"
-L["uplp_ak_mz_19.description"] = "Standard muzzle brake used on the AK M23 5.56, a 5.56×45mm export version of the AK M23."
+L["uplp_ak_mz_19.printname"] = "Дульный тормоз АК M23 5.56"
+L["uplp_ak_mz_19.compactname"] = "M23 5.56 ДТ"
+L["uplp_ak_mz_19.description"] = "Стандартный дульный тормоз, используемый на АК M23 5.56 — экспортной версии АК M23 под патрон 5.56×45mm."
 
-L["uplp_ak_mz_rpk16.printname"] = "HPK M16 Muzzle Brake"
-L["uplp_ak_mz_rpk16.compactname"] = "HPK M16 MB"
-L["uplp_ak_mz_rpk16.description"] = "Standard muzzle brake used on the HPK M16."
+L["uplp_ak_mz_rpk16.printname"] = "Дульный тормоз ХПК M16"
+L["uplp_ak_mz_rpk16.compactname"] = "ХПК M16 ДТ"
+L["uplp_ak_mz_rpk16.description"] = "Стандартный дульный тормоз, используемый на ХПК M16."
 
-L["uplp_ak_mz_silencer.printname"] = "AK Suppressor"
-L["uplp_ak_mz_silencer.compactname"] = "AK Supp."
-L["uplp_ak_mz_silencer.description"] = "Standard issue suppressor used on multiple military AK rifles."
+L["uplp_ak_mz_silencer.printname"] = "Глушитель АК"
+L["uplp_ak_mz_silencer.compactname"] = "АК Глуш."
+L["uplp_ak_mz_silencer.description"] = "Стандартный глушитель, используемый на военных моделях АК."
 
 ////// Stocks
-L["uplp_ak_stock_fold.printname"] = "Polymer Folding Stock"
-L["uplp_ak_stock_fold.compactname"] = "Polymer F"
-L["uplp_ak_stock_fold.description"] = "Folding stock used on the AK M10."
+L["uplp_ak_stock_fold.printname"] = "Складной полимерный приклад"
+L["uplp_ak_stock_fold.compactname"] = "Полимер С"
+L["uplp_ak_stock_fold.description"] = "Складной приклад, используемый на АК M10."
 
-L["uplp_ak_stock_skele.printname"] = "Skeleton Stock"
-L["uplp_ak_stock_skele.compactname"] = "Skeleton"
-L["uplp_ak_stock_skele.description"] = "Folding lightweight stock used on the AK 7.62-F and derivatives."
+L["uplp_ak_stock_skele.printname"] = "Скелетный приклад"
+L["uplp_ak_stock_skele.compactname"] = "Скелет"
+L["uplp_ak_stock_skele.description"] = "Лёгкий складной приклад, используемый на АК 7.62-F и его вариантах."
 
-L["uplp_ak_stock_old.printname"] = "Vintage Stock"
-L["uplp_ak_stock_old.compactname"] = "Vintage"
-L["uplp_ak_stock_old.description"] = "Vintage stock used on the first variants of AK 7.62 rifles.\nA real vintage classic, this one!\nCombine with <color=160,160,255>Vintage Dust Cover</color> to change receiver appearance."
+L["uplp_ak_stock_old.printname"] = "Винтажный приклад"
+L["uplp_ak_stock_old.compactname"] = "Винтаж"
+L["uplp_ak_stock_old.description"] = "Винтажный приклад, использовавшийся на ранних моделях АК 7.62.\nНастоящая классика!\nСовместите с <color=160,160,255>Винтажной крышкой</color> для изменения внешнего вида ствольной коробки."
 
-L["uplp_ak_stock_rpk.printname"] = "HPK Stock"
-L["uplp_ak_stock_rpk.compactname"] = "HPK"
-L["uplp_ak_stock_rpk.description"] = "Heavy wooden stock used on the HPK."
+L["uplp_ak_stock_rpk.printname"] = "Приклад ХПК"
+L["uplp_ak_stock_rpk.compactname"] = "ХПК"
+L["uplp_ak_stock_rpk.description"] = "Тяжёлый деревянный приклад, используемый на ХПК."
 
-L["uplp_ak_stock_rpk74.printname"] = "HPK M74 Stock"
-L["uplp_ak_stock_rpk74.compactname"] = "HKP M74"
-L["uplp_ak_stock_rpk74.description"] = "Heavy polymer stock used on the HPK M74."
+L["uplp_ak_stock_rpk74.printname"] = "Приклад ХПК M74"
+L["uplp_ak_stock_rpk74.compactname"] = "ХПК M74"
+L["uplp_ak_stock_rpk74.description"] = "Тяжёлый полимерный приклад, используемый на ХПК M74."
 
-L["uplp_ak_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+L["uplp_ak_stock_cqr.printname"] = "Приклад PAWCO \"Ares\""
 L["uplp_ak_stock_cqr.compactname"] = "Ares"
-L["uplp_ak_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division.\nThis one was custom-made to fit AK-style rifles."
+L["uplp_ak_stock_cqr.description"] = "Утяжелённый приклад и рукоятка ручной работы от подразделения PAWCO \"Ares\".\nСпециально адаптирован для АК."
 
-L["uplp_ak_stock_wood.printname"] = "Wooden Stock"
-L["uplp_ak_stock_wood.compactname"] = "Wooden"
-L["uplp_ak_stock_wood.description"] = "Wooden stock used on the AK 5.45 and AK 7.62."
+L["uplp_ak_stock_wood.printname"] = "Деревянный приклад"
+L["uplp_ak_stock_wood.compactname"] = "Дерево"
+L["uplp_ak_stock_wood.description"] = "Деревянный приклад, используемый на АК 5.45 и АК 7.62."
 
-L["uplp_ak_stock_beryl.printname"] = "Szermierz Stock"
+L["uplp_ak_stock_beryl.printname"] = "Приклад Szermierz"
 L["uplp_ak_stock_beryl.compactname"] = "Szermierz"
-L["uplp_ak_stock_beryl.description"] = "Tactical stock made for an AK rifle of Polish origin."
+L["uplp_ak_stock_beryl.description"] = "Тактический приклад польского производства для АК."
 
-L["uplp_ak_stock_poly.printname"] = "Polymer Stock"
-L["uplp_ak_stock_poly.compactname"] = "Polymer"
-L["uplp_ak_stock_poly.description"] = "Lightweight polymer stock for AK rifles."
+L["uplp_ak_stock_poly.printname"] = "Полимерный приклад"
+L["uplp_ak_stock_poly.compactname"] = "Полимер"
+L["uplp_ak_stock_poly.description"] = "Лёгкий полимерный приклад для АК."
 
-L["uplp_ak_stock_tube12.printname"] = "Buffer Tube"
-L["uplp_ak_stock_tube12.compactname"] = "Buffer"
-L["uplp_ak_stock_tube12.description"] = "Sidefolding buffer tube assembly used on the AK M23. Allows installation of AR-15 compatible stocks.\nFun fact: The diameter of the tube is slightly different from the standard AR-15 which makes most AR-15 stocks wobbly.\n(But this is a video game so... yeet)"
+L["uplp_ak_stock_tube12.printname"] = "Буферная труба АК M23"
+L["uplp_ak_stock_tube12.compactname"] = "Буфер M23"
+L["uplp_ak_stock_tube12.description"] = "Буферная труба АК M23, совместимая с прикладами AR-15.\nФакт: Диаметр трубы слегка отличается от стандартного AR-15, из-за чего большинство прикладов AR-15 болтаются.\n(Но это видеоигра, так что...)"
 
-L["uplp_ak_stock_tube.description"] = "Aftermarket buffer tube assembly compatible with AK rifles. Allows installation of AR-15 compatible stocks."
+L["uplp_ak_stock_tube.description"] = "Буферная труба для АК, совместимая с прикладами AR-15."
 
-L["uplp_ak_stock_molot.printname"] = "Molot Stock"
-L["uplp_ak_stock_molot.compactname"] = "Molot"
-L["uplp_ak_stock_molot.description"] = "Tactical stock used on the Molot shotgun."
+L["uplp_ak_stock_molot.printname"] = "Приклад Молот"
+L["uplp_ak_stock_molot.compactname"] = "Молот"
+L["uplp_ak_stock_molot.description"] = "Тактический приклад, используемый на дробовике Молот."
 
-L["uplp_ak_stock_underfold.printname"] = "AK 7.62-S Underfolding Stock"
-L["uplp_ak_stock_underfold.compactname"] = "Underfolding"
-L["uplp_ak_stock_underfold.description"] = "Classic stock that can fold under the weapon. Used on the AK 7.62-S.\nNot compatible with <color=255,100,100>40-round or above magazines</color>.\nAlso <color=255,100,100>disables the use of custom foregrips</color> on certain handguards."
+L["uplp_ak_stock_underfold.printname"] = "Складной приклад АК 7.62-S"
+L["uplp_ak_stock_underfold.compactname"] = "Склад."
+L["uplp_ak_stock_underfold.description"] = "Классический складной приклад АК 7.62-S.\nНе совместим с <color=255,100,100>магазинами на 40 патронов и более</color>.\nТакже <color=255,100,100>отключает использование передних рукояток</color> на некоторых цевьях."
 
-L["uplp_ak_stock_pt1.printname"] = "Zenith Stock"
+L["uplp_ak_stock_pt1.printname"] = "Приклад Zenith"
 L["uplp_ak_stock_pt1.compactname"] = "Zenith"
-L["uplp_ak_stock_pt1.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
+L["uplp_ak_stock_pt1.description"] = "Тактический приклад российского производства.\nВ режиме \"Extended\": Увеличивает все бонусы на 5%, но усиливает негативные эффекты на 10%."
 
-L["uplp_ak_stock_pt3.printname"] = "Zenith-2 Stock"
+L["uplp_ak_stock_pt3.printname"] = "Приклад Zenith-2"
 L["uplp_ak_stock_pt3.compactname"] = "Zenith-2"
-L["uplp_ak_stock_pt3.description"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
+L["uplp_ak_stock_pt3.description"] = "Тактический приклад российского производства.\nВ режиме \"Extended\": Увеличивает все бонусы на 5%, но усиливает негативные эффекты на 10%."
 
-L["uplp_ak_stock_evo.printname"] = "EVO Stock"
+L["uplp_ak_stock_evo.printname"] = "Приклад EVO"
 L["uplp_ak_stock_evo.compactname"] = "EVO"
-L["uplp_ak_stock_evo.description"] = "Adjustable tactical stock for use on the AK M23.\nCan be <color=255,255,100>extended</color> to reduce both recoil and handling by 10%."
+L["uplp_ak_stock_evo.description"] = "Регулируемый тактический приклад для АК M23.\nМожет быть <color=255,255,100>выдвинут</color> для снижения отдачи и ухудшения обращения на 10%."
 
-L["uplp_ak_stock_ppk.printname"] = "AK SMG M20 Stock"
+L["uplp_ak_stock_ppk.printname"] = "Приклад АК ПП M20"
 L["uplp_ak_stock_ppk.compactname"] = "M20"
-L["uplp_ak_stock_ppk.description"] = "Compact tactical stock for use on the AK SMG M20."
+L["uplp_ak_stock_ppk.description"] = "Компактный тактический приклад для АК ПП M20."
 
 /////////// AK SMG Exclusive
 ////// Receivers
-L["uplp_ak_smg_rec_vityaz.printname"] = "\"OIZK-9\" 30-Round Magazine"
-L["uplp_ak_smg_rec_vityaz.compactname"] = "\"OIZK-9\""
-L["uplp_ak_smg_rec_vityaz.description"] = "Converts the AK SMG to the \"OIZK-9\" configuration.\nFed with a traditional 30-round magazine.\n<color=160,160,255>Can equip other Handguards</color>."
+L["uplp_ak_smg_rec_vityaz.printname"] = "Ресивер \"ОИЗК-9\" с 30-зарядным магазином"
+L["uplp_ak_smg_rec_vityaz.compactname"] = "\"ОИЗК-9\""
+L["uplp_ak_smg_rec_vityaz.description"] = "Переводит АК ПП в конфигурацию \"ОИЗК-9\".\nИспользует стандартный 30-зарядный магазин.\n<color=160,160,255>Совместим с другими цевьями</color>."
 
-L["uplp_ak_smg_rec_vityaz_tac.printname"] = "\"OIZK-9\" 30-Round Banana Magazine"
-L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"OIZK-9\" (B)"
-L["uplp_ak_smg_rec_vityaz_tac.description"] = "Converts the AK SMG to the \"OIZK-9\" configuration.\nFed with a traditional 30-round magazine painted to look like a banana.\n<color=160,160,255>Can equip other Handguards</color>."
+L["uplp_ak_smg_rec_vityaz_tac.printname"] = "Ресивер \"ОИЗК-9\" с 30-зарядным \"бананом\""
+L["uplp_ak_smg_rec_vityaz_tac.compactname"] = "\"ОИЗК-9\" (Б)"
+L["uplp_ak_smg_rec_vityaz_tac.description"] = "Переводит АК ПП в конфигурацию \"ОИЗК-9\".\nИспользует 30-зарядный магазин в стиле \"банана\".\n<color=160,160,255>Совместим с другими цевьями</color>."
 
-L["uplp_ak_smg_rec_bizon.printname"] = "\"Zakat-3\" 64-Round Magazine"
-L["uplp_ak_smg_rec_bizon.compactname"] = "\"Zakat-3\""
-L["uplp_ak_smg_rec_bizon.description"] = "Converts the AK SMG to the \"Zakat\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+L["uplp_ak_smg_rec_bizon.printname"] = "Ресивер \"Закат-3\" с 64-зарядным магазином"
+L["uplp_ak_smg_rec_bizon.compactname"] = "\"Закат-3\""
+L["uplp_ak_smg_rec_bizon.description"] = "Переводит АК ПП в конфигурацию \"Закат\".\nИспользует 64-зарядный цилиндрический магазин под стволом.\n<color=255,100,100>Не совместим с другими цевьями</color>."
 
-L["uplp_ak_smg_rec_bizon_old.printname"] = "\"Zakat\" 64-Round Classic Magazine"
-L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Zakat\""
-L["uplp_ak_smg_rec_bizon_old.description"] = "Converts the AK SMG to the \"Zakat\" configuration.\nFed with a cylindrical 64-round magazine mounted under the barrel.\n<color=255,100,100>Cannot equip other Handguards</color>."
+L["uplp_ak_smg_rec_bizon_old.printname"] = "Ресивер \"Закат\" с 64-зарядным магазином"
+L["uplp_ak_smg_rec_bizon_old.compactname"] = "\"Закат\""
+L["uplp_ak_smg_rec_bizon_old.description"] = "Переводит АК ПП в конфигурацию \"Закат\".\nИспользует 64-зарядный цилиндрический магазин под стволом.\n<color=255,100,100>Не совместим с другими цевьями</color>."
 
 ////// Barrels
-L["uplp_ak_smg_brl_long.printname"] = "400mm Barrel"
+L["uplp_ak_smg_brl_long.printname"] = "Ствол 400mm"
 L["uplp_ak_smg_brl_long.compactname"] = "400mm"
-L["uplp_ak_smg_brl_long.description"] = "Long 400mm (15.75\") barrel for the AK SMG (\"OIZK-9\")."
+L["uplp_ak_smg_brl_long.description"] = "Длинный 400mm (15.75\") ствол для АК ПП (\"ОИЗК-9\")."
 
-L["uplp_ak_smg_brl_ppk20_long.printname"] = "425mm Barrel"
+L["uplp_ak_smg_brl_ppk20_long.printname"] = "Ствол 425mm"
 L["uplp_ak_smg_brl_ppk20_long.compactname"] = "425mm"
-L["uplp_ak_smg_brl_ppk20_long.description"] = "Long 425mm (16.73\") barrel for the AK SMG with the M20 Configuration."
-
+L["uplp_ak_smg_brl_ppk20_long.description"] = "Длинный 425mm (16.73\") ствол для АК ПП с конфигурацией M20."
 ////// Receivers
-L["uplp_ak_smg_conf_ppk20.printname"] = "AK SMG M20 Configuration"
+L["uplp_ak_smg_conf_ppk20.printname"] = "Конфигурация AK SMG M20"
 L["uplp_ak_smg_conf_ppk20.compactname"] = "AK M20"
 L["uplp_ak_smg_conf_ppk20.description"] = "Конвертирует АК ПП в конфигурацию \"М20\".\nМодернизированный ствол с поддержкой пистолетных рукояток, вертикальных рукояток и оптики от АК М23."
 
@@ -1092,100 +1087,101 @@ L["uplp_weapon_ar15_manufacturer"] = "U.S. Ordnance"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ar15_barrel_10.printname"] = "254mm Barrel"
-L["uplp_ar15_barrel_10.compactname"] = "254mm"
-L["uplp_ar15_barrel_10.description"] = "254mm (10\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_10.printname"] = "Ствол 254 мм"
+L["uplp_ar15_barrel_10.compactname"] = "254 мм"
+L["uplp_ar15_barrel_10.description"] = "Ствол длиной 254 мм (10\") для винтовок AR-15."
 
-L["uplp_ar15_barrel_14.printname"] = "356mm Barrel"
-L["uplp_ar15_barrel_14.compactname"] = "356mm"
-L["uplp_ar15_barrel_14.description"] = "356mm (14\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_14.printname"] = "Ствол 356 мм"
+L["uplp_ar15_barrel_14.compactname"] = "356 мм"
+L["uplp_ar15_barrel_14.description"] = "Ствол длиной 356 мм (14\") для винтовок AR-15."
 
-L["uplp_ar15_barrel_145.printname"] = "368mm Barrel"
-L["uplp_ar15_barrel_145.compactname"] = "368mm"
-L["uplp_ar15_barrel_145.description"] = "368mm (14.5\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_145.printname"] = "Ствол 368 мм"
+L["uplp_ar15_barrel_145.compactname"] = "368 мм"
+L["uplp_ar15_barrel_145.description"] = "Ствол длиной 368 мм (14.5\") для винтовок AR-15."
 
-L["uplp_ar15_barrel_15xm.printname"] = "381mm Barrel"
-L["uplp_ar15_barrel_15xm.compactname"] = "381mm"
-L["uplp_ar15_barrel_15xm.description"] = "381mm (15\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_15xm.printname"] = "Ствол 381 мм"
+L["uplp_ar15_barrel_15xm.compactname"] = "381 мм"
+L["uplp_ar15_barrel_15xm.description"] = "Ствол длиной 381 мм (15\") для винтовок AR-15."
 
-L["uplp_ar15_barrel_16.printname"] = "406mm Barrel"
-L["uplp_ar15_barrel_16.compactname"] = "406mm"
-L["uplp_ar15_barrel_16.description"] = "406mm (16\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_16.printname"] = "Ствол 406 мм"
+L["uplp_ar15_barrel_16.compactname"] = "406 мм"
+L["uplp_ar15_barrel_16.description"] = "Ствол длиной 406 мм (16\") для винтовок AR-15."
 
-L["uplp_ar15_barrel_16_alt.printname"] = "406mm Alternative Barrel"
-L["uplp_ar15_barrel_16_alt.compactname"] = "406mm Alt."
-L["uplp_ar15_barrel_16_alt.description"] = "406mm (16\") barrel used on AR-15 rifles.\nDoes not move the gas block, meaning it does not accept handguards requiring 406mm (16\") barrels or longer barrels."
+L["uplp_ar15_barrel_16_alt.printname"] = "Альтернативный ствол 406 мм"
+L["uplp_ar15_barrel_16_alt.compactname"] = "406 мм Alt."
+L["uplp_ar15_barrel_16_alt.description"] = "Ствол длиной 406 мм (16\") для винтовок AR-15.\nНе перемещает газовый блок, поэтому несовместим с цевьями, требующими стволы 406 мм (16\") или длиннее."
 
-L["uplp_ar15_barrel_20.printname"] = "508mm Barrel"
-L["uplp_ar15_barrel_20.compactname"] = "508mm"
-L["uplp_ar15_barrel_20.description"] = "508mm (20\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_20.printname"] = "Ствол 508 мм"
+L["uplp_ar15_barrel_20.compactname"] = "508 мм"
+L["uplp_ar15_barrel_20.description"] = "Ствол длиной 508 мм (20\") для винтовок AR-15."
 
-L["uplp_ar15_barrel_22.printname"] = "559mm Barrel"
-L["uplp_ar15_barrel_22.compactname"] = "559mm"
-L["uplp_ar15_barrel_22.description"] = "559mm (22\") barrel used on AR-15 rifles."
+L["uplp_ar15_barrel_22.printname"] = "Ствол 559 мм"
+L["uplp_ar15_barrel_22.compactname"] = "559 мм"
+L["uplp_ar15_barrel_22.description"] = "Ствол длиной 559 мм (22\") для винтовок AR-15."
 
 ////// Charging Handles
-L["uplp_ar15_chandle_modern.printname"] = "Slim Charging Handle"
-L["uplp_ar15_chandle_modern.compactname"] = "Slim"
-L["uplp_ar15_chandle_modern.description"] = "A slim rear charging handle for use on AR-15 rifles."
+L["uplp_ar15_chandle_modern.printname"] = "Узкая рукоятка затвора"
+L["uplp_ar15_chandle_modern.compactname"] = "Узкая"
+L["uplp_ar15_chandle_modern.description"] = "Узкая задняя рукоятка затвора для винтовок AR-15."
 
-L["uplp_ar15_chandle_std.printname"] = "Standard Charging Handle"
-L["uplp_ar15_chandle_std.compactname"] = "Standard"
-L["uplp_ar15_chandle_std.description"] = "Traditional rear charging handle for use on AR-15 rifles."
+L["uplp_ar15_chandle_std.printname"] = "Стандартная рукоятка затвора"
+L["uplp_ar15_chandle_std.compactname"] = "Стандарт"
+L["uplp_ar15_chandle_std.description"] = "Традиционная задняя рукоятка затвора для винтовок AR-15."
 
-L["uplp_ar15_chandle_tac.printname"] = "Hoki Armory Charging Handle"
+L["uplp_ar15_chandle_tac.printname"] = "Рукоятка затвора Hoki Armory"
 L["uplp_ar15_chandle_tac.compactname"] = "Hoki"
-L["uplp_ar15_chandle_tac.description"] = "A sporty, tactical charging handle for use on AR-15 rifles made by Hoki Armory."
+L["uplp_ar15_chandle_tac.description"] = "Спортивная тактическая рукоятка затвора для винтовок AR-15 от Hoki Armory."
 
-L["uplp_ar15_chandle_tacblack.printname"] = "Hoki Armory Charging Handle (Pitch Black)"
-L["uplp_ar15_chandle_tacblack.compactname"] = "Hoki (PB)"
-L["uplp_ar15_chandle_tacblack.description"] = "A sporty, tactical charging handle for use on AR-15 rifles made by Hoki Armory." .. pitchblack
+L["uplp_ar15_chandle_tacblack.printname"] = "Рукоятка затвора Hoki Armory (Черная)"
+L["uplp_ar15_chandle_tacblack.compactname"] = "Hoki (Ч)"
+L["uplp_ar15_chandle_tacblack.description"] = "Спортивная тактическая рукоятка затвора для винтовок AR-15 от Hoki Armory." .. pitchblack
 
 ////// Front Sights
-L["uplp_ar15_fs_mbus.printname"] = "Flip-up PAWCO Front Sight"
+L["uplp_ar15_fs_mbus.printname"] = "Откидная мушка PAWCO"
 L["uplp_ar15_fs_mbus.compactname"] = "PAWCO"
-L["uplp_ar15_fs_mbus.description"] = "A flip-up front sight manufactured by PAWCO."
+L["uplp_ar15_fs_mbus.description"] = "Откидная мушка производства PAWCO."
 
-L["uplp_ar15_fs_scalar.printname"] = "Centurion Industries IronWorks Front Sight"
+L["uplp_ar15_fs_scalar.printname"] = "Мушка IronWorks от Centurion Industries"
 L["uplp_ar15_fs_scalar.compactname"] = "IronWorks"
-L["uplp_ar15_fs_scalar.description"] = "Adjustable front sights manufactured by IronWorks, subsidiary to Centurion Industries."
+L["uplp_ar15_fs_scalar.description"] = "Регулируемая мушка производства IronWorks, дочернего предприятия Centurion Industries."
 
-L["uplp_ar15_fs_type1.printname"] = "Type I Front Sight"
-L["uplp_ar15_fs_type1.compactname"] = "Type I"
-L["uplp_ar15_fs_type1.description"] = "Alternative flip-up front sights for use on AR-15 rifles."
+L["uplp_ar15_fs_type1.printname"] = "Мушка Тип I"
+L["uplp_ar15_fs_type1.compactname"] = "Тип I"
+L["uplp_ar15_fs_type1.description"] = "Альтернативная мушка для винтовок AR-15."
 
-L["uplp_ar15_fs_type2.printname"] = "Type II Front Sight"
-L["uplp_ar15_fs_type2.compactname"] = "Type II"
-L["uplp_ar15_fs_type2.description"] = "Alternative flip-up front sights for use on AR-15 rifles."
+L["uplp_ar15_fs_type2.printname"] = "Мушка Тип II"
+L["uplp_ar15_fs_type2.compactname"] = "Тип II"
+L["uplp_ar15_fs_type2.description"] = "Альтернативная мушка для винтовок AR-15."
 
-L["uplp_ar15_fs_utg.printname"] = "Type III Front Sight"
-L["uplp_ar15_fs_utg.compactname"] = "Type III"
-L["uplp_ar15_fs_utg.description"] = "Alternative flip-up front sights for use on AR-15 rifles."
+L["uplp_ar15_fs_utg.printname"] = "Мушка Тип III"
+L["uplp_ar15_fs_utg.compactname"] = "Тип III"
+L["uplp_ar15_fs_utg.description"] = "Альтернативная мушка для винтовок AR-15."
+
 
 ////// Gasblocks
-L["uplp_ar15_gasblock_m16.printname"] = "Gas Block with built-in Front Sight"
+L["uplp_ar15_gasblock_m16.printname"] = "Газовый блок с мушкой"
 L["uplp_ar15_gasblock_m16.compactname"] = "GB FS"
-L["uplp_ar15_gasblock_m16.description"] = "Gas block with built-in M16/M4 front sight."
+L["uplp_ar15_gasblock_m16.description"] = "Газовый блок с встроенным мушкой M16/M4."
 
-L["uplp_ar15_gasblock_m16_nosling.printname"] = "Gas Block with built-in Front Sight (No Sling)"
+L["uplp_ar15_gasblock_m16_nosling.printname"] = "Газовый блок с мушкой (без петли)"
 L["uplp_ar15_gasblock_m16_nosling.compactname"] = "GB FS (NS)"
-L["uplp_ar15_gasblock_m16_nosling.description"] = "Gas block with built-in M16/M4 front sight. Not including the bayonet lug or front sling."
+L["uplp_ar15_gasblock_m16_nosling.description"] = "Газовый блок с встроенным мушкой M16/M4. Не имеет штыкового упора и передней петли для ремня."
 
-L["uplp_ar15_gasblock_m16rail.printname"] = "Gas Block with built-in Front Sight and Rail Assembly"
+L["uplp_ar15_gasblock_m16rail.printname"] = "Газовый блок с мушкой и рейкой"
 L["uplp_ar15_gasblock_m16rail.compactname"] = "GB FS (R)"
-L["uplp_ar15_gasblock_m16rail.description"] = "Gas block with built-in M16/M4 front sight. Comes with additional rails for mounting accessories."
+L["uplp_ar15_gasblock_m16rail.description"] = "Газовый блок с встроенным мушкой M16/M4. Оснащён дополнительными рейками для установки аксессуаров."
 
-L["uplp_ar15_gasblock_min.printname"] = "Standard Gas Block"
+L["uplp_ar15_gasblock_min.printname"] = "Минимальный газовый блок"
 L["uplp_ar15_gasblock_min.compactname"] = "GB"
-L["uplp_ar15_gasblock_min.description"] = "The bare minimum gas block allowing the AR-15 rifle to function."
+L["uplp_ar15_gasblock_min.description"] = "Минимально необходимый газовый блок для функционирования винтовки AR-15."
 
-L["uplp_ar15_gasblock_min_red.printname"] = "Standard Gas Block (Sporty Red)"
-L["uplp_ar15_gasblock_min_red.compactname"] = "GB (SR)"
-L["uplp_ar15_gasblock_min_red.description"] = "The bare minimum gas block allowing the AR-15 rifle to function." .. sportyred
+L["uplp_ar15_gasblock_min_red.printname"] = "Минимальный газовый блок (Красный)"
+L["uplp_ar15_gasblock_min_red.compactname"] = "GB (Кр)"
+L["uplp_ar15_gasblock_min_red.description"] = "Минимально необходимый газовый блок для функционирования винтовки AR-15." .. sportyred
 
-L["uplp_ar15_gasblock_rail.printname"] = "Centurion Industries Gas Block with Rail"
+L["uplp_ar15_gasblock_rail.printname"] = "Газовый блок с рейкой от Centurion Industries"
 L["uplp_ar15_gasblock_rail.compactname"] = "Centurion"
-L["uplp_ar15_gasblock_rail.description"] = "Gas block with built-in top rail for mounting front sights made by Centurion Industries."
+L["uplp_ar15_gasblock_rail.description"] = "Газовый блок с встроенной верхней рейкой для установки мушки производства Centurion Industries."
 
 ////// Handguards
 local requires14 = "\n" .. "Необходим ствол длинною 356мм (14\") или больше."
@@ -1194,243 +1190,244 @@ local requires20 = "\n" .. "Необходим ствол длинною 508мм
 local requires22 = "\n" .. "Необходим ствол длинною 559мм (22\") или больше."
 local onlycompact = "\n" .. "Можно использовать только с Compact Gas Block."
 
-L["uplp_ar15_hg_grenadier.printname"] = "Grenadier Handguard"
+L["uplp_ar15_hg_grenadier.printname"] = "Гранатомётное цевьё Grenadier"
 L["uplp_ar15_hg_grenadier.compactname"] = "Grenadier"
-L["uplp_ar15_hg_grenadier.description"] = "AR-15 handguard used on the M16 equipped with the M203 grenade launcher." .. requires16
+L["uplp_ar15_hg_grenadier.description"] = "Цевьё AR-15, используемое на M16 с гранатомётом M203." .. requires16
 
-L["uplp_ar15_hg_m16.printname"] = "A2 Handguard"
+L["uplp_ar15_hg_m16.printname"] = "Цевьё A2"
 L["uplp_ar15_hg_m16.compactname"] = "A2"
-L["uplp_ar15_hg_m16.description"] = "AR-15 handguard used on the M16A2." .. requires16
+L["uplp_ar15_hg_m16.description"] = "Цевьё AR-15, используемое на M16A2." .. requires16
 
-L["uplp_ar15_hg_m16short.printname"] = "A2 Short Handguard"
+L["uplp_ar15_hg_m16short.printname"] = "Короткое цевьё A2"
 L["uplp_ar15_hg_m16short.compactname"] = "A2 S"
-L["uplp_ar15_hg_m16short.description"] = "Shortened AR-15 handguard used on the M16A2." .. requires14
+L["uplp_ar15_hg_m16short.description"] = "Укороченное цевьё AR-15, используемое на M16A2." .. requires14
 
-L["uplp_ar15_hg_mlok.printname"] = "M-LOK Handguard"
+L["uplp_ar15_hg_mlok.printname"] = "Цевьё M-LOK"
 L["uplp_ar15_hg_mlok.compactname"] = "M-LOK"
-L["uplp_ar15_hg_mlok.description"] = "Tactical M-LOK handguard allowing installation of various accessories." .. requires16 .. onlycompact
+L["uplp_ar15_hg_mlok.description"] = "Тактическое цевьё с креплением M-LOK для установки аксессуаров." .. requires16 .. onlycompact
 
-L["uplp_ar15_hg_mlokshort.printname"] = "M-LOK Short Handguard"
+L["uplp_ar15_hg_mlokshort.printname"] = "Короткое цевьё M-LOK"
 L["uplp_ar15_hg_mlokshort.compactname"] = "M-LOK S"
-L["uplp_ar15_hg_mlokshort.description"] = "Shortened version of the tactical M-LOK handguard allowing installation of various accessories."
+L["uplp_ar15_hg_mlokshort.description"] = "Укороченная версия тактического цевья с креплением M-LOK."
 
-L["uplp_ar15_hg_nwsu_s15.printname"] = "Nowosuku S-15 Handguard"
+L["uplp_ar15_hg_nwsu_s15.printname"] = "Цевьё Nowosuku S-15"
 L["uplp_ar15_hg_nwsu_s15.compactname"] = "S-15"
-L["uplp_ar15_hg_nwsu_s15.description"] = "Lightweight S-15 handguard manufactured by Nowosuku." .. requires14 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15.description"] = "Лёгкое цевьё S-15 производства Nowosuku." .. requires14 .. onlycompact
 
-L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Nowosuku S-15 Handguard (Sporty Red)"
-L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (SR)"
-L["uplp_ar15_hg_nwsu_s15_red.description"] = "Lightweight S-15 handguard manufactured by Nowosuku." .. requires14 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_red.printname"] = "Цевьё Nowosuku S-15 (Красное)"
+L["uplp_ar15_hg_nwsu_s15_red.compactname"] = "S-15 (Кр)"
+L["uplp_ar15_hg_nwsu_s15_red.description"] = "Лёгкое цевьё S-15 производства Nowosuku." .. requires14 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Nowosuku S-15 XL Handguard"
+L["uplp_ar15_hg_nwsu_s15_xl.printname"] = "Цевьё Nowosuku S-15 XL"
 L["uplp_ar15_hg_nwsu_s15_xl.compactname"] = "S-15 XL"
-L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuku." .. requires16 .. onlycompact
+L["uplp_ar15_hg_nwsu_s15_xl.description"] = "Удлинённая версия лёгкого цевья S-15 производства Nowosuku." .. requires16 .. onlycompact
 
-L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Nowosuku S-15 XL Handguard (Sporty Red)"
-L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (SR)"
-L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuku." .. requires16 .. onlycompact .. sportyred
+L["uplp_ar15_hg_nwsu_s15_xl_red.printname"] = "Цевьё Nowosuku S-15 XL (Красное)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.compactname"] = "S-15 XL (Кр)"
+L["uplp_ar15_hg_nwsu_s15_xl_red.description"] = "Удлинённая версия лёгкого цевья S-15 производства Nowosuku." .. requires16 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_ris.printname"] = "RIS Handguard"
+L["uplp_ar15_hg_ris.printname"] = "Цевьё RIS"
 L["uplp_ar15_hg_ris.compactname"] = "RIS"
-L["uplp_ar15_hg_ris.description"] = "Standard military-grade handguard with built-in RIS rail system." .. requires16
+L["uplp_ar15_hg_ris.description"] = "Военное цевьё с интегрированной системой креплений RIS." .. requires16
 
-L["uplp_ar15_hg_risshort.printname"] = "RIS Short Handguard"
+L["uplp_ar15_hg_risshort.printname"] = "Короткое цевьё RIS"
 L["uplp_ar15_hg_risshort.compactname"] = "RIS S"
-L["uplp_ar15_hg_risshort.description"] = "Shortened version of a military-grade handguard with built-in RIS rail system."
+L["uplp_ar15_hg_risshort.description"] = "Укороченная версия военного цевья с системой креплений RIS."
 
-L["uplp_ar15_hg_tac.printname"] = "Hoki Armory Handguard"
+L["uplp_ar15_hg_tac.printname"] = "Цевьё Hoki Armory"
 L["uplp_ar15_hg_tac.compactname"] = "Hoki"
-L["uplp_ar15_hg_tac.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16 .. onlycompact
+L["uplp_ar15_hg_tac.description"] = "Лёгкое тактическое цевьё для AR-15 от Hoki Armory." .. requires16 .. onlycompact
 
-L["uplp_ar15_hg_tac_red.printname"] = "Hoki Armory Handguard (Sporty Red)"
-L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (SR)"
-L["uplp_ar15_hg_tac_red.description"] = "Lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires16 .. onlycompact .. sportyred
+L["uplp_ar15_hg_tac_red.printname"] = "Цевьё Hoki Armory (Красное)"
+L["uplp_ar15_hg_tac_red.compactname"] = "Hoki (Кр)"
+L["uplp_ar15_hg_tac_red.description"] = "Лёгкое тактическое цевьё для AR-15 от Hoki Armory." .. requires16 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_tacshort.printname"] = "Hoki Armory Short Handguard"
+L["uplp_ar15_hg_tacshort.printname"] = "Короткое цевьё Hoki Armory"
 L["uplp_ar15_hg_tacshort.compactname"] = "Hoki S"
-L["uplp_ar15_hg_tacshort.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires14 .. onlycompact
+L["uplp_ar15_hg_tacshort.description"] = "Укороченное лёгкое тактическое цевьё для AR-15 от Hoki Armory." .. requires14 .. onlycompact
 
-L["uplp_ar15_hg_tacshort_red.printname"] = "Hoki Armory Short Handguard (Sporty Red)"
-L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (SR)"
-L["uplp_ar15_hg_tacshort_red.description"] = "Shortened lightweight tactical handguard for AR-15 rifles made by Hoki Armory." .. requires14 .. onlycompact .. sportyred
+L["uplp_ar15_hg_tacshort_red.printname"] = "Короткое цевьё Hoki Armory (Красное)"
+L["uplp_ar15_hg_tacshort_red.compactname"] = "Hoki S (Кр)"
+L["uplp_ar15_hg_tacshort_red.description"] = "Укороченное лёгкое тактическое цевьё для AR-15 от Hoki Armory." .. requires14 .. onlycompact .. sportyred
 
-L["uplp_ar15_hg_a1.printname"] = "A1 Handguard"
+L["uplp_ar15_hg_a1.printname"] = "Цевьё A1"
 L["uplp_ar15_hg_a1.compactname"] = "A1"
-L["uplp_ar15_hg_a1.description"] = "Classic AR-15 handguard used on the early M16 models." .. requires16
+L["uplp_ar15_hg_a1.description"] = "Классическое цевьё AR-15, используемое на ранних моделях M16." .. requires16
 
-L["uplp_ar15_hg_riscover.printname"] = "RIS Handguard (Covers)"
-L["uplp_ar15_hg_riscover.compactname"] = "RIS (C)"
-L["uplp_ar15_hg_riscover.description"] = "Standard military-grade handguard with built-in RIS rail system.\nComes with built-in rail covers which restrict larger foregrips and front sights." .. requires16
+L["uplp_ar15_hg_riscover.printname"] = "Цевьё RIS (Крышки)"
+L["uplp_ar15_hg_riscover.compactname"] = "RIS (Кр)"
+L["uplp_ar15_hg_riscover.description"] = "Военное цевьё с системой креплений RIS.\nКомплектуется крышками, ограничивающими установку крупных передних рукояток и прицелов." .. requires16
 
-L["uplp_ar15_hg_xm.printname"] = "Commando Handguard"
+L["uplp_ar15_hg_xm.printname"] = "Цевьё Commando"
 L["uplp_ar15_hg_xm.compactname"] = "Commando"
-L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
+L["uplp_ar15_hg_xm.description"] = "Укороченное цевьё AR-15, используемое на XM177." .. requires14
+
 
 ////// Magazines
 /// .45 ACP
-L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 Auto"
-L["uplp_ar15_mag_45_20.compactname"] = "20R .45"
-L["uplp_ar15_mag_45_20.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 Auto.\nEquipped with a modified 20-round magazine originally from a well-known Israeli submachine gun." .. changeammo.pistol
+L["uplp_ar15_mag_45_20.printname"] = "20-зарядный .45 Auto"
+L["uplp_ar15_mag_45_20.compactname"] = "20 .45"
+L["uplp_ar15_mag_45_20.description"] = "Превращает винтовку в AR-SMG — скорострельный пистолет-пулемёт под патрон .45 Auto.\nСнабжён модифицированным 20-зарядным магазином от известного израильского пистолета-пулемёта." .. changeammo.pistol
 
-L["uplp_ar15_mag_45_40.printname"] = "40-Round .45 Auto"
-L["uplp_ar15_mag_45_40.compactname"] = "40R .45"
-L["uplp_ar15_mag_45_40.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in .45 Auto.\nEquipped with a modified 40-round extended magazine originally made for a well-known Israeli submachine gun." .. changeammo.pistol
+L["uplp_ar15_mag_45_40.printname"] = "40-зарядный .45 Auto"
+L["uplp_ar15_mag_45_40.compactname"] = "40 .45"
+L["uplp_ar15_mag_45_40.description"] = "Превращает винтовку в AR-SMG — скорострельный пистолет-пулемёт под патрон .45 Auto.\nСнабжён модифицированным 40-зарядным магазином от известного израильского пистолета-пулемёта." .. changeammo.pistol
 
 /// 9×19mm
-L["uplp_ar15_stm9_magwell.printname"] = "eXtreme Flared Magwell"
-L["uplp_ar15_stm9_magwell.compactname"] = "Magwell"
-L["uplp_ar15_stm9_magwell.description"] = "Adds a flared magwell for speedier reloads."
+L["uplp_ar15_stm9_magwell.printname"] = "Расширенный магвел eXtreme"
+L["uplp_ar15_stm9_magwell.compactname"] = "Магвел"
+L["uplp_ar15_stm9_magwell.description"] = "Устанавливает расширенный магвел для ускорения перезарядки."
 
-L["uplp_ar15_mag_glock_17.printname"] = "17-Round 9×19mm"
-L["uplp_ar15_mag_glock_17.compactname"] = "17R 9×19"
-L["uplp_ar15_mag_glock_17.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9×19mm.\nEquipped with a 17-round magazine from a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_17.printname"] = "17-зарядный 9×19 мм"
+L["uplp_ar15_mag_glock_17.compactname"] = "17 9×19"
+L["uplp_ar15_mag_glock_17.description"] = "Превращает винтовку в AR-SMG — скорострельный пистолет-пулемёт под патрон 9×19 мм.\nСнабжён 17-зарядным магазином от известного австрийского пистолета." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_33.printname"] = "33-Round 9×19mm"
-L["uplp_ar15_mag_glock_33.compactname"] = "33R 9×19mm"
-L["uplp_ar15_mag_glock_33.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9×19mm.\nEquipped with a 33-round extended magazine made for a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_33.printname"] = "33-зарядный 9×19 мм"
+L["uplp_ar15_mag_glock_33.compactname"] = "33 9×19"
+L["uplp_ar15_mag_glock_33.description"] = "Превращает винтовку в AR-SMG — скорострельный пистолет-пулемёт под патрон 9×19 мм.\nСнабжён 33-зарядным магазином от известного австрийского пистолета." .. changeammo.pistol
 
-L["uplp_ar15_mag_glock_50.printname"] = "50-Round 9×19mm Drum"
-L["uplp_ar15_mag_glock_50.compactname"] = "50R 9×19mm"
-L["uplp_ar15_mag_glock_50.description"] = "Converts the rifle into the AR-SMG, a fast cyclic rate submachine gun chambered in 9×19mm.\nEquipped with an aftermarket 50-round drum magazine made for a well-known Austrian handgun." .. changeammo.pistol
+L["uplp_ar15_mag_glock_50.printname"] = "50-зарядный барабан 9×19 мм"
+L["uplp_ar15_mag_glock_50.compactname"] = "50 Барабан"
+L["uplp_ar15_mag_glock_50.description"] = "Превращает винтовку в AR-SMG — скорострельный пистолет-пулемёт под патрон 9×19 мм.\nСнабжён 50-зарядным барабанным магазином для австрийских пистолетов." .. changeammo.pistol
 
 /// 5.56×45mm
-L["uplp_ar15_mag_drum.printname"] = "90-Round 5.56×45mm Dual Drum"
-L["uplp_ar15_mag_drum.compactname"] = "90R Drum"
-L["uplp_ar15_mag_drum.description"] = "90-Round C-shaped drum magazine.\nLoading more than 90 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_drum.printname"] = "90-зарядный двойной барабан 5.56×45 мм"
+L["uplp_ar15_mag_drum.compactname"] = "90 Барабан"
+L["uplp_ar15_mag_drum.description"] = "90-зарядный С-образный барабанный магазин.\nЗагрузка более 90 патронов не рекомендуется — возможны задержки."
 
-L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56×45mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
-L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin."
+L["uplp_ar15_mag_hk.printname"] = "30-зарядный 5.56×45 мм (416)"
+L["uplp_ar15_mag_hk.compactname"] = "30 (416)"
+L["uplp_ar15_mag_hk.description"] = "30-зарядный магазин от модифицированной AR-15 немецкого производства."
 
-L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56×45mm (Polymer)"
-L["uplp_ar15_mag_pmag10.compactname"] = "10R Poly"
-L["uplp_ar15_mag_pmag10.description"] = "10-round magazine made out of polymer by SynPoly."
+L["uplp_ar15_mag_pmag10.printname"] = "10-зарядный полимерный 5.56×45 мм"
+L["uplp_ar15_mag_pmag10.compactname"] = "10 Поли"
+L["uplp_ar15_mag_pmag10.description"] = "10-зарядный полимерный магазин производства SynPoly."
 
-L["uplp_ar15_mag_pmag20.printname"] = "20-Round 5.56×45mm (Polymer)"
-L["uplp_ar15_mag_pmag20.compactname"] = "20R Poly"
-L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer by SynPoly."
+L["uplp_ar15_mag_pmag20.printname"] = "20-зарядный полимерный 5.56×45 мм"
+L["uplp_ar15_mag_pmag20.compactname"] = "20 Поли"
+L["uplp_ar15_mag_pmag20.description"] = "20-зарядный полимерный магазин производства SynPoly."
 
-L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polymer)"
-L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
-L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly."
+L["uplp_ar15_mag_pmag30.printname"] = "30-зарядный полимерный 5.56×45 мм"
+L["uplp_ar15_mag_pmag30.compactname"] = "30 Поли"
+L["uplp_ar15_mag_pmag30.description"] = "30-зарядный полимерный магазин производства SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
-L["uplp_ar15_mag_pmag60.compactname"] = "52R Drum"
-L["uplp_ar15_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_pmag60.printname"] = "52-зарядный полимерный барабан 5.56×45 мм"
+L["uplp_ar15_mag_pmag60.compactname"] = "52 Барабан"
+L["uplp_ar15_mag_pmag60.description"] = "52-зарядный барабанный магазин из полимера производства SynPoly.\nЗагрузка более 52 патронов не рекомендуется — возможны задержки."
 
-L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56×45mm (Aluminium)"
-L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
-L["uplp_ar15_mag_stanag20.description"] = "20-round magazine made out of aluminium."
+L["uplp_ar15_mag_stanag20.printname"] = "20-зарядный алюминиевый 5.56×45 мм"
+L["uplp_ar15_mag_stanag20.compactname"] = "20 Алюм"
+L["uplp_ar15_mag_stanag20.description"] = "20-зарядный алюминиевый магазин."
 
-L["uplp_ar15_mag_stanag30.printname"] = "30-Round 5.56×45mm (Aluminium)"
-L["uplp_ar15_mag_stanag30.compactname"] = "30R Alum"
-L["uplp_ar15_mag_stanag30.description"] = "30-round magazine made out of aluminium."
+L["uplp_ar15_mag_stanag30.printname"] = "30-зарядный алюминиевый 5.56×45 мм"
+L["uplp_ar15_mag_stanag30.compactname"] = "30 Алюм"
+L["uplp_ar15_mag_stanag30.description"] = "30-зарядный алюминиевый магазин."
 
-L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56×45mm (Aluminium)"
-L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
-L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of aluminium."
+L["uplp_ar15_mag_stanag40.printname"] = "40-зарядный алюминиевый 5.56×45 мм"
+L["uplp_ar15_mag_stanag40.compactname"] = "40 Алюм"
+L["uplp_ar15_mag_stanag40.description"] = "40-зарядный алюминиевый магазин."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-Round 5.56×45mm Quadstacked"
-L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_ar15_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_stanag60.printname"] = "52-зарядный четырёхрядный 5.56×45 мм"
+L["uplp_ar15_mag_stanag60.compactname"] = "52 Четыр."
+L["uplp_ar15_mag_stanag60.description"] = "52-зарядный алюминиевый магазин с горизонтальным расположением патронов.\nЗагрузка более 52 патронов не рекомендуется — возможны задержки."
 
 ////// Pistol Grips
-L["uplp_ar15_pgrip_416.printname"] = "416 Pistol Grip"
+L["uplp_ar15_pgrip_416.printname"] = "Пистолетная рукоять 416"
 L["uplp_ar15_pgrip_416.compactname"] = "416"
-L["uplp_ar15_pgrip_416.description"] = "Standard pistol grip from a modified AR-15 of German origin."
+L["uplp_ar15_pgrip_416.description"] = "Стандартная пистолетная рукоять от модифицированной AR-15 немецкого производства."
 
-L["uplp_ar15_pgrip_massive.printname"] = "Massive Pistol Grip"
-L["uplp_ar15_pgrip_massive.compactname"] = "Massive"
-L["uplp_ar15_pgrip_massive.description"] = "Oversized pistol grip for heavier AR-15-based rifles."
+L["uplp_ar15_pgrip_massive.printname"] = "Усиленная пистолетная рукоять"
+L["uplp_ar15_pgrip_massive.compactname"] = "Усил."
+L["uplp_ar15_pgrip_massive.description"] = "Укрупнённая пистолетная рукоять для тяжёлых винтовок на базе AR-15."
 
-L["uplp_ar15_pgrip_modern.printname"] = "Nowosuku Pistol Grip"
+L["uplp_ar15_pgrip_modern.printname"] = "Пистолетная рукоять Nowosuku"
 L["uplp_ar15_pgrip_modern.compactname"] = "Nowosuku"
-L["uplp_ar15_pgrip_modern.description"] = "Modernized pistol grip for AR-15 rifles made by Nowosuku."
+L["uplp_ar15_pgrip_modern.description"] = "Современная пистолетная рукоять для AR-15 производства Nowosuku."
 
-L["uplp_ar15_pgrip_psg.printname"] = "ApexCore Systems Pistol Grip"
+L["uplp_ar15_pgrip_psg.printname"] = "Пистолетная рукоять ApexCore Systems"
 L["uplp_ar15_pgrip_psg.compactname"] = "ApexCore"
-L["uplp_ar15_pgrip_psg.description"] = "Heavy pistol grip with built-in palm shelf for AR-15-based marksman rifles made by ApexCore Systems."
+L["uplp_ar15_pgrip_psg.description"] = "Утяжелённая пистолетная рукоять с упором для ладони для снайперских AR-15 производства ApexCore Systems."
 
-L["uplp_ar15_pgrip_skel.printname"] = "Centurion Industries Skeleton Pistol Grip"
+L["uplp_ar15_pgrip_skel.printname"] = "Скелетная рукоять Centurion Industries"
 L["uplp_ar15_pgrip_skel.compactname"] = "Centurion"
-L["uplp_ar15_pgrip_skel.description"] = "Lightweight pistol grip for AR-15 rifles made by Centurion Industries."
+L["uplp_ar15_pgrip_skel.description"] = "Лёгкая скелетная пистолетная рукоять для AR-15 производства Centurion Industries."
 
-L["uplp_ar15_pgrip_skel_red.printname"] = "Centurion Industries Skeleton Pistol Grip (Sporty Red)"
-L["uplp_ar15_pgrip_skel_red.compactname"] = "Centurion (SR)"
-L["uplp_ar15_pgrip_skel_red.description"] = "Lightweight pistol grip for AR-15 rifles made by Centurion Industries." .. sportyred
+L["uplp_ar15_pgrip_skel_red.printname"] = "Скелетная рукоять Centurion (Красная)"
+L["uplp_ar15_pgrip_skel_red.compactname"] = "Centurion (К)"
+L["uplp_ar15_pgrip_skel_red.description"] = "Лёгкая скелетная пистолетная рукоять для AR-15 производства Centurion Industries." .. sportyred
 
-L["uplp_ar15_pgrip_std.printname"] = "Standard Pistol Grip"
-L["uplp_ar15_pgrip_std.compactname"] = "Standard"
-L["uplp_ar15_pgrip_std.description"] = "Traditional pistol grip for AR-15 rifles."
+L["uplp_ar15_pgrip_std.printname"] = "Стандартная пистолетная рукоять"
+L["uplp_ar15_pgrip_std.compactname"] = "Стандарт"
+L["uplp_ar15_pgrip_std.description"] = "Традиционная пистолетная рукоять для AR-15."
 
-L["uplp_ar15_pgrip_tac.printname"] = "Hoki Armory Pistol Grip"
+L["uplp_ar15_pgrip_tac.printname"] = "Пистолетная рукоять Hoki Armory"
 L["uplp_ar15_pgrip_tac.compactname"] = "Hoki"
-L["uplp_ar15_pgrip_tac.description"] = "Tactical pistol grip for AR-15 rifles made by Hoki Armory."
+L["uplp_ar15_pgrip_tac.description"] = "Тактическая пистолетная рукоять для AR-15 производства Hoki Armory."
 
-L["uplp_ar15_pgrip_a1.printname"] = "Classic A1 Pistol Grip"
-L["uplp_ar15_pgrip_a1.compactname"] = "Classic"
-L["uplp_ar15_pgrip_a1.description"] = "Classic pistol grip used on early AR-15 rifles."
+L["uplp_ar15_pgrip_a1.printname"] = "Классическая рукоять A1"
+L["uplp_ar15_pgrip_a1.compactname"] = "Классика"
+L["uplp_ar15_pgrip_a1.description"] = "Классическая пистолетная рукоять ранних AR-15."
 
 ////// Receiver
-L["uplp_ar15_reciever_m16.printname"] = "A1 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16.printname"] = "Ресивер A1 с рукояткой переноски"
 L["uplp_ar15_reciever_m16.compactname"] = "A1 CH"
-L["uplp_ar15_reciever_m16.description"] = "Military-grade receiver with built-in carrying handle.\nChanges firing mode to <color=100,255,100>3-round burst</color>/<color=100,255,100>semi-automatic</color>."
+L["uplp_ar15_reciever_m16.description"] = "Военный ресивер с интегрированной рукояткой переноски.\nИзменяет режим огня на <color=100,255,100>3-х патронную очередь</color>/<color=100,255,100>полуавтомат</color>."
 
-L["uplp_ar15_reciever_m4.printname"] = "M4 Receiver"
+L["uplp_ar15_reciever_m4.printname"] = "Ресивер M4"
 L["uplp_ar15_reciever_m4.compactname"] = "M4"
-L["uplp_ar15_reciever_m4.description"] = "Standard military-grade receiver."
+L["uplp_ar15_reciever_m4.description"] = "Стандартный военный ресивер."
 
-L["uplp_ar15_reciever_modern.printname"] = "Hoki Armory Tactical Receiver"
+L["uplp_ar15_reciever_modern.printname"] = "Тактический ресивер Hoki Armory"
 L["uplp_ar15_reciever_modern.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory."
+L["uplp_ar15_reciever_modern.description"] = "Лёгкий тактический ресивер для скорострельных AR-15 производства Hoki Armory."
 
-L["uplp_ar15_reciever_modern_black.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
-L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (PB)"
-L["uplp_ar15_reciever_modern_black.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory." .. pitchblack
+L["uplp_ar15_reciever_modern_black.printname"] = "Тактический ресивер Hoki Armory (Чёрный)"
+L["uplp_ar15_reciever_modern_black.compactname"] = "Hoki (Чёрн)"
+L["uplp_ar15_reciever_modern_black.description"] = "Лёгкий тактический ресивер для скорострельных AR-15 производства Hoki Armory." .. pitchblack
 
-L["uplp_ar15_reciever_modern_smg.printname"] = "Hoki Armory Tactical Receiver"
-L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki"
-L["uplp_ar15_reciever_modern_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9×19mm magazines."
+L["uplp_ar15_reciever_modern_smg.printname"] = "Тактический ресивер Hoki Armory (9×19 мм)"
+L["uplp_ar15_reciever_modern_smg.compactname"] = "Hoki (9×19)"
+L["uplp_ar15_reciever_modern_smg.description"] = "Лёгкий тактический ресивер для AR-15 под патрон 9×19 мм производства Hoki Armory."
 
-L["uplp_ar15_reciever_modern_black_smg.printname"] = "Hoki Armory Tactical Receiver (Pitch Black)"
-L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (PB)"
-L["uplp_ar15_reciever_modern_black_smg.description"] = "Tactical, lightweight receiver built for speed made by Hoki Armory made specifically for AR-15 rifles fed with 9×19mm magazines." .. pitchblack
+L["uplp_ar15_reciever_modern_black_smg.printname"] = "Тактический ресивер Hoki Armory (Чёрный, 9×19 мм)"
+L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (Чёрн, 9×19)"
+L["uplp_ar15_reciever_modern_black_smg.description"] = "Лёгкий тактический ресивер для AR-15 под патрон 9×19 мм производства Hoki Armory." .. pitchblack
 
-L["uplp_ar15_reciever_m16a3.printname"] = "A1 Receiver with Carry Handle"
+L["uplp_ar15_reciever_m16a3.printname"] = "Ресивер A1 с рукояткой переноски"
 L["uplp_ar15_reciever_m16a3.compactname"] = "A1 CH"
-L["uplp_ar15_reciever_m16a3.description"] = "Military-grade receiver with built-in carrying handle.\nЧисто <color=160,160,255>косметический обвес</color>."
+L["uplp_ar15_reciever_m16a3.description"] = "Военный ресивер с интегрированной рукояткой переноски.\nЧисто <color=160,160,255>косметический обвес</color>."
 
-L["uplp_ar15_reciever_a2.printname"] = "A2 Receiver with Carry Handle"
+L["uplp_ar15_reciever_a2.printname"] = "Ресивер A2 с рукояткой переноски"
 L["uplp_ar15_reciever_a2.compactname"] = "A2 CH"
 
 ////// Rear Sights
-L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
+L["uplp_ar15_rs_m4.printname"] = "Целик M4"
 L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
-L["uplp_ar15_rs_m4.description"] = "Standard issue rear sight for AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_m4.description"] = "Стандартный целик для AR-15.\nСовместим только с мушками:\n[ <color=100,255,100>IronWorks | Тип II | Тип III</color> ]\nТакже совместим с <color=100,255,100>Газовым блоком с встроенной мушкой</color>."
 
-L["uplp_ar15_rs_carry.printname"] = "AR-15 Carry Handle"
+L["uplp_ar15_rs_carry.printname"] = "Рукоятка переноски AR-15"
 L["uplp_ar15_rs_carry.compactname"] = "AR-15 CH"
-L["uplp_ar15_rs_carry.description"] = "Standard carrying handle and rear sight used for AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_carry.description"] = "Стандартная рукоятка переноски с целиком для AR-15.\nСовместим только с мушками:\n[ <color=100,255,100>IronWorks | Тип II | Тип III</color> ]\nТакже совместим с <color=100,255,100>Газовым блоком с встроенной мушкой</color>."
 
-L["uplp_ar15_rs_mbus.printname"] = "Flip-up PAWCO Rear Sight"
+L["uplp_ar15_rs_mbus.printname"] = "Откидной целик PAWCO"
 L["uplp_ar15_rs_mbus.compactname"] = "PAWCO"
-L["uplp_ar15_rs_mbus.description"] = "A flip-up rear sight manufactured by PAWCO.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_mbus.description"] = "Откидной целик производства PAWCO.\nСовместим только с мушками:\n[ <color=100,255,100>PAWCO | Тип I | Стандарт (XAR)</color> ]\nНе совместим с <color=255,100,100>Газовым блоком с встроенной мушкой</color>."
 
-L["uplp_ar15_rs_scalar.printname"] = "Centurion Industries IronWorks Rear Sight"
+L["uplp_ar15_rs_scalar.printname"] = "Целик IronWorks от Centurion Industries"
 L["uplp_ar15_rs_scalar.compactname"] = "IronWorks"
-L["uplp_ar15_rs_scalar.description"] = "Adjustable rear sight manufactured by IronWorks, subsidiary to Centurion Industries.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_scalar.description"] = "Регулируемый целик производства IronWorks (дочернее предприятие Centurion Industries).\nСовместим только с мушками:\n[ <color=100,255,100>IronWorks | Тип II | Тип III</color> ]\nТакже совместим с <color=100,255,100>Газовым блоком с встроенной мушкой</color>."
 
-L["uplp_ar15_rs_type1.printname"] = "Type I Rear Sight"
-L["uplp_ar15_rs_type1.compactname"] = "Type I"
-L["uplp_ar15_rs_type1.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_type1.printname"] = "Целик Тип I"
+L["uplp_ar15_rs_type1.compactname"] = "Тип I"
+L["uplp_ar15_rs_type1.description"] = "Альтернативный откидной целик для AR-15.\nСовместим только с мушками:\n[ <color=100,255,100>IronWorks | Тип II | Тип III</color> ]\nНе совместим с <color=255,100,100>Газовым блоком с встроенной мушкой</color>."
 
-L["uplp_ar15_rs_type2.printname"] = "Type II Rear Sight"
-L["uplp_ar15_rs_type2.compactname"] = "Type II"
-L["uplp_ar15_rs_type2.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_type2.printname"] = "Целик Тип II"
+L["uplp_ar15_rs_type2.compactname"] = "Тип II"
+L["uplp_ar15_rs_type2.description"] = "Альтернативный откидной целик для AR-15.\nСовместим только с мушками:\n[ <color=100,255,100>IronWorks | Тип II | Тип III</color> ]\nТакже совместим с <color=100,255,100>Газовым блоком с встроенной мушкой</color>."
 
-L["uplp_ar15_rs_type3.printname"] = "Type III Rear Sight"
-L["uplp_ar15_rs_type3.compactname"] = "Type III"
-L["uplp_ar15_rs_type3.description"] = "Alternative flip-up rear sights for use on AR-15 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
+L["uplp_ar15_rs_type3.printname"] = "Целик Тип III"
+L["uplp_ar15_rs_type3.compactname"] = "Тип III"
+L["uplp_ar15_rs_type3.description"] = "Альтернативный откидной целик для AR-15.\nСовместим только с мушками:\n[ <color=100,255,100>PAWCO | Тип I | Стандарт (XAR)</color> ]\nНе совместим с <color=255,100,100>Газовым блоком с встроенной мушкой</color>."
 
 ////// Stocks
 local desc_stock_s = " Имеет <color=255,255,100>незначительное уменьшение скорости и отдачи</color>."
@@ -1439,61 +1436,61 @@ local desc_stock_l = " Имеет <color=255,150,100>большое уменьш
 local desc_stock_standard = "\nАрхетипичный приклад с <color=100,255,100>сбалансированной производительностью</color> для своего класса."
 
 
-L["uplp_ar15_stock_416.printname"] = "416 Stock"
+L["uplp_ar15_stock_416.printname"] = "Приклад 416"
 L["uplp_ar15_stock_416.compactname"] = "416"
-L["uplp_ar15_stock_416.description"] = "Standard stock from a modified AR-15 of German origin." .. desc_stock_m .. "\n<color=100,255,100>Доставание оружия быстрее</color> по сравнению с другими средними прикладами."
+L["uplp_ar15_stock_416.description"] = "Стандартный приклад от модифицированной AR-15 немецкого производства." .. desc_stock_m .. "\n<color=100,255,100>Более быстрое извлечение оружия</color> по сравнению с другими средними прикладами."
 
-L["uplp_ar15_stock_ak12.printname"] = "AK M12 Stock"
+L["uplp_ar15_stock_ak12.printname"] = "Приклад AK M12"
 L["uplp_ar15_stock_ak12.compactname"] = "AK M12"
-L["uplp_ar15_stock_ak12.description"] = "Standard stock used on the AK M12 rifle." .. desc_stock_m .. "\n<color=100,255,100>Уменьшает отдачу сильнее,</color> чем другие средние приклады."
+L["uplp_ar15_stock_ak12.description"] = "Стандартный приклад от автомата AK M12." .. desc_stock_m .. "\n<color=100,255,100>Сильнее снижает отдачу</color>, чем другие средние приклады."
 
-L["uplp_ar15_stock_fat.printname"] = "Bravo Stock"
+L["uplp_ar15_stock_fat.printname"] = "Приклад Bravo"
 L["uplp_ar15_stock_fat.compactname"] = "Bravo"
-L["uplp_ar15_stock_fat.description"] = "Custom adjustable stock for AR-15 rifles." .. desc_stock_m .. "\n<color=100,255,100>Прицеливание быстрее</color> по сравнению с другими средними прикладами."
+L["uplp_ar15_stock_fat.description"] = "Кастомный регулируемый приклад для AR-15." .. desc_stock_m .. "\n<color=100,255,100>Быстрее прицеливание</color> по сравнению с другими средними прикладами."
 
-L["uplp_ar15_stock_light.printname"] = "Light Battle Stock"
-L["uplp_ar15_stock_light.compactname"] = "Light"
-L["uplp_ar15_stock_light.description"] = "Lightweight adjustable stock for AR-15 rifles." .. desc_stock_s .. desc_stock_standard
+L["uplp_ar15_stock_light.printname"] = "Лёгкий боевой приклад"
+L["uplp_ar15_stock_light.compactname"] = "Лёгкий"
+L["uplp_ar15_stock_light.description"] = "Лёгкий регулируемый приклад для AR-15." .. desc_stock_s .. desc_stock_standard
 
-L["uplp_ar15_stock_m16.printname"] = "M16 Fixed Stock"
+L["uplp_ar15_stock_m16.printname"] = "Фиксированный приклад M16"
 L["uplp_ar15_stock_m16.compactname"] = "M16"
-L["uplp_ar15_stock_m16.description"] = "Fixed stock used on the M16." .. desc_stock_l .. desc_stock_standard
+L["uplp_ar15_stock_m16.description"] = "Фиксированный приклад от винтовки M16." .. desc_stock_l .. desc_stock_standard
 
-L["uplp_ar15_stock_m4.printname"] = "M4 Stock"
+L["uplp_ar15_stock_m4.printname"] = "Приклад M4"
 L["uplp_ar15_stock_m4.compactname"] = "M4"
-L["uplp_ar15_stock_m4.description"] = "Standard adjustable stock used on the M4." .. desc_stock_m .. desc_stock_standard
+L["uplp_ar15_stock_m4.description"] = "Стандартный регулируемый приклад от винтовки M4." .. desc_stock_m .. desc_stock_standard
 
-L["uplp_ar15_stock_mpul.printname"] = "SynPoly Stock"
+L["uplp_ar15_stock_mpul.printname"] = "Приклад SynPoly"
 L["uplp_ar15_stock_mpul.compactname"] = "SynPoly"
-L["uplp_ar15_stock_mpul.description"] = "Adjustable stock made by SynPoly for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
+L["uplp_ar15_stock_mpul.description"] = "Регулируемый приклад для AR-15 производства SynPoly." .. desc_stock_m .. desc_stock_standard
 
-L["uplp_ar15_stock_modern.printname"] = "Centurion Industries Stock"
+L["uplp_ar15_stock_modern.printname"] = "Приклад Centurion Industries"
 L["uplp_ar15_stock_modern.compactname"] = "Centurion"
-L["uplp_ar15_stock_modern.description"] = "Lightweight competition stock for AR-15 rifles made by Centurion Industries." .. desc_stock_s .. "\n<color=100,255,100>Гасит больше отдачи</color> по сравнению с другими лёгкими прикладами."
+L["uplp_ar15_stock_modern.description"] = "Лёгкий соревновательный приклад для AR-15 производства Centurion Industries." .. desc_stock_s .. "\n<color=100,255,100>Лучше гасит отдачу</color>, чем другие лёгкие приклады."
 
-L["uplp_ar15_stock_pdw.printname"] = "PDW Stock"
+L["uplp_ar15_stock_pdw.printname"] = "Короткий приклад PDW"
 L["uplp_ar15_stock_pdw.compactname"] = "PDW"
-L["uplp_ar15_stock_pdw.description"] = "Slim, compact and adjustable PDW stock for AR-15 rifles." .. desc_stock_s .. "\n<color=100,255,100>Имеет меньше штрафов по скорости</color> по сравнению с другими лёгкими прикладами."
+L["uplp_ar15_stock_pdw.description"] = "Компактный регулируемый приклад PDW для AR-15." .. desc_stock_s .. "\n<color=100,255,100>Меньше штрафы к скорости</color> по сравнению с другими лёгкими прикладами."
 
-L["uplp_ar15_stock_sniper.printname"] = "Sharpshooter Stock"
-L["uplp_ar15_stock_sniper.compactname"] = "Sharpshooter"
-L["uplp_ar15_stock_sniper.description"] = "Adjustable heavy stock for AR-15 rifles." .. desc_stock_l .. "\n<color=100,255,100>Гасит тряску больше</color> чем другие тяжелые приклады."
+L["uplp_ar15_stock_sniper.printname"] = "Приклад снайпера"
+L["uplp_ar15_stock_sniper.compactname"] = "Снайпер"
+L["uplp_ar15_stock_sniper.description"] = "Утяжелённый регулируемый приклад для AR-15." .. desc_stock_l .. "\n<color=100,255,100>Лучше гасит тряску</color>, чем другие тяжёлые приклады."
 
-L["uplp_ar15_stock_tac.printname"] = "Hoki Armory Stock"
+L["uplp_ar15_stock_tac.printname"] = "Приклад Hoki Armory"
 L["uplp_ar15_stock_tac.compactname"] = "Hoki"
-L["uplp_ar15_stock_tac.description"] = "Tactical stock for AR-15 rifles made by Hoki Armory." .. desc_stock_m .. "\n<color=100,255,100>Быстрее скорость ходьбы в прицеле</color> по сравнению с другими лёгкими прикладами."
+L["uplp_ar15_stock_tac.description"] = "Тактический приклад для AR-15 производства Hoki Armory." .. desc_stock_m .. "\n<color=100,255,100>Быстрее движение в прицеле</color> по сравнению с другими средними прикладами."
 
-L["uplp_ar15_stock_veryheavy.printname"] = "ApexCore Systems Heavy Stock"
+L["uplp_ar15_stock_veryheavy.printname"] = "Тяжёлый приклад ApexCore Systems"
 L["uplp_ar15_stock_veryheavy.compactname"] = "ApexCore"
-L["uplp_ar15_stock_veryheavy.description"] = "Heavy stock for AR-15 marksman rifles made by ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Гасит больше отдачи</color> чем другие тяжелые приклады."
+L["uplp_ar15_stock_veryheavy.description"] = "Усиленный приклад для снайперских AR-15 производства ApexCore Systems." .. desc_stock_l .. "\n<color=100,255,100>Лучше гасит отдачу</color>, чем другие тяжёлые приклады."
 
-L["uplp_ar15_stock_m4ss.printname"] = "Commando Stock"
-L["uplp_ar15_stock_m4ss.compactname"] = "Commando"
-L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." .. desc_stock_m .. desc_stock_standard
+L["uplp_ar15_stock_m4ss.printname"] = "Коммандо-приклад"
+L["uplp_ar15_stock_m4ss.compactname"] = "Коммандо"
+L["uplp_ar15_stock_m4ss.description"] = "Лёгкий приклад для AR-15." .. desc_stock_m .. desc_stock_standard
 
-L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
+L["uplp_ar15_stock_cqr.printname"] = "Приклад PAWCO \"Ares\""
 L["uplp_ar15_stock_cqr.compactname"] = "Ares"
-L["uplp_ar15_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division." ..desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
+L["uplp_ar15_stock_cqr.description"] = "Кастомный утяжелённый приклад и пистолетная рукоять от PAWCO \"Ares\"." .. desc_stock_l .. "\n<color=100,255,100>Сильнее снижает отдачу</color> по сравнению с другими тяжёлыми прикладами."
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"
@@ -1507,82 +1504,86 @@ L["uplp_weapon_deagle_manufacturer"] = "Magnum Research"
 
 /////////// Attachments
 ////// Magazines
-L["uplp_deag_mag_ext.printname"] = "13-Round Extended"
-L["uplp_deag_mag_ext.compactname"] = "13R Ext"
-L["uplp_deag_mag_ext.description"] = "Standard magazine with an enlarged base plate holding 13 rounds."
+L["uplp_deag_mag_ext.printname"] = "Удлинённый 13-зарядный магазин"
+L["uplp_deag_mag_ext.compactname"] = "13R Удл"
+L["uplp_deag_mag_ext.description"] = "Стандартный магазин с увеличенной накладкой, вмещающий 13 патронов."
 
-L["uplp_deag_mag_tac.printname"] = "7-Round Ergo Mag"
-L["uplp_deag_mag_tac.compactname"] = "7R Ergo"
-L["uplp_deag_mag_tac.description"] = "Standard magazine with an ergonomic base plate for faster reloads."
+L["uplp_deag_mag_tac.printname"] = "7-зарядный эргономичный магазин"
+L["uplp_deag_mag_tac.compactname"] = "7R Эрго"
+L["uplp_deag_mag_tac.description"] = "Стандартный магазин с эргономичной накладкой для ускорения перезарядки."
 
 ////// Pistol Grip
-L["uplp_deag_grip_tac.printname"] = "Rubberized Grip"
-L["uplp_deag_grip_tac.compactname"] = "Rubberized"
-L["uplp_deag_grip_tac.description"] = "Replaces the pistol grip with a more ergonomic one."
+L["uplp_deag_grip_tac.printname"] = "Резиновая рукоятка"
+L["uplp_deag_grip_tac.compactname"] = "Резиновая"
+L["uplp_deag_grip_tac.description"] = "Заменяет стандартную рукоятку на более эргономичную."
 
 ////// Actions
-L["uplp_deag_trig_heavy.printname"] = "Heavy Trigger and Hammer"
-L["uplp_deag_trig_heavy.compactname"] = "Heavy"
-L["uplp_deag_trig_heavy.description"] = "Replaces the trigger, springs and hammer with heavier ones."
+L["uplp_deag_trig_heavy.printname"] = "Тяжёлый спусковой механизм"
+L["uplp_deag_trig_heavy.compactname"] = "Тяжёлый"
+L["uplp_deag_trig_heavy.description"] = "Заменяет спусковой механизм, пружины и боёк на более тяжёлые."
 
-L["uplp_deag_trig_light.printname"] = "Lightweight Trigger and Hammer"
-L["uplp_deag_trig_light.compactname"] = "Lightweight"
-L["uplp_deag_trig_light.description"] = "Replaces the trigger, springs and hammer with more light ones."
+L["uplp_deag_trig_light.printname"] = "Лёгкий спусковой механизм"
+L["uplp_deag_trig_light.compactname"] = "Лёгкий"
+L["uplp_deag_trig_light.description"] = "Заменяет спусковой механизм, пружины и боёк на более лёгкие."
 
-L["uplp_deag_trig_sport.printname"] = "Automatic Action"
-L["uplp_deag_trig_sport.compactname"] = "Automatic"
-L["uplp_deag_trig_sport.description"] = "Converts the Deagle to fire in <color=100,255,100>fully automatic</color>, sacrificing recoil control.\nAlso replaces the trigger and hammer with tactical ones.\n\nTechnically banned by the <color=255,100,100>NFA</color>, but we'll be quiet... this time."
+L["uplp_deag_trig_sport.printname"] = "Автоматический режим"
+L["uplp_deag_trig_sport.compactname"] = "Автомат"
+L["uplp_deag_trig_sport.description"] = "Переводит Desert Eagle в режим <color=100,255,100>полного автомата</color>, жертвуя контролем отдачи.\nТакже заменяет спусковой механизм на тактические.\nТехнически запрещено <color=255,100,100>законом</color>, но мы будем молчать... на этот раз."
 
 ////// Barrels
-L["uplp_deag_barrel_classic.printname"] = "Classic Barrel"
-L["uplp_deag_barrel_classic.compactname"] = "Classic"
-L["uplp_deag_barrel_classic.description"] = "Classic factory barrel and front end."
+L["uplp_deag_barrel_classic.printname"] = "Классический ствол"
+L["uplp_deag_barrel_classic.compactname"] = "Классика"
+L["uplp_deag_barrel_classic.description"] = "Классический заводской ствол и передняя часть."
 
-L["uplp_deag_barrel_long.printname"] = "Long Classic Barrel"
-L["uplp_deag_barrel_long.compactname"] = "Classic L"
-L["uplp_deag_barrel_long.description"] = "Extended barrel with classic front end."
+L["uplp_deag_barrel_long.printname"] = "Длинный классический ствол"
+L["uplp_deag_barrel_long.compactname"] = "Классика Д"
+L["uplp_deag_barrel_long.description"] = "Удлинённый ствол с классической передней частью."
 
-L["uplp_deag_barrel_tac.printname"] = "Tactical Barrel"
-L["uplp_deag_barrel_tac.compactname"] = "Tactical"
-L["uplp_deag_barrel_tac.description"] = "Lighter tactical barrel with cut out vent holes."
+L["uplp_deag_barrel_tac.printname"] = "Тактический ствол"
+L["uplp_deag_barrel_tac.compactname"] = "Такт."
+L["uplp_deag_barrel_tac.description"] = "Лёгкий тактический ствол с прорезями для вентиляции."
 
-L["uplp_deag_barrel_longtac.printname"] = "Long Tactical Barrel"
-L["uplp_deag_barrel_longtac.compactname"] = "Tactical L"
-L["uplp_deag_barrel_longtac.description"] = "Extended tactical barrel with cut out vent holes."
+L["uplp_deag_barrel_longtac.printname"] = "Длинный тактический ствол"
+L["uplp_deag_barrel_longtac.compactname"] = "Такт. Д"
+L["uplp_deag_barrel_longtac.description"] = "Удлинённый тактический ствол с прорезями для вентиляции."
 
 ////// Muzzles
-L["uplp_deag_muzzle_cut.printname"] = "Vertical Compensator"
-L["uplp_deag_muzzle_cut.compactname"] = "Vertical"
-L["uplp_deag_muzzle_cut.description"] = "A compensator that redirects the propelled gases upwards to reduce vertical recoil."
+L["uplp_deag_muzzle_cut.printname"] = "Вертикальный компенсатор"
+L["uplp_deag_muzzle_cut.compactname"] = "Верт."
+L["uplp_deag_muzzle_cut.description"] = "Компенсатор, перенаправляющий газы вверх для уменьшения вертикальной отдачи."
 
-L["uplp_deag_muzzle_heavy.printname"] = "Heavy Compensator"
-L["uplp_deag_muzzle_heavy.compactname"] = "Heavy"
-L["uplp_deag_muzzle_heavy.description"] = "A heavy compensator that redirects the propelled gases sideways to reduce overall recoil."
+L["uplp_deag_muzzle_heavy.printname"] = "Тяжёлый компенсатор"
+L["uplp_deag_muzzle_heavy.compactname"] = "Тяжёлый"
+L["uplp_deag_muzzle_heavy.description"] = "Тяжёлый компенсатор, перенаправляющий газы в стороны для уменьшения общей отдачи."
 
-L["uplp_deag_muzzle_tri.printname"] = "Horizontal Compensator"
-L["uplp_deag_muzzle_tri.compactname"] = "Horizontal"
-L["uplp_deag_muzzle_tri.description"] = "A compensator that redirects the propelled gases sideways to reduce horizontal recoil."
+L["uplp_deag_muzzle_tri.printname"] = "Горизонтальный компенсатор"
+L["uplp_deag_muzzle_tri.compactname"] = "Гориз."
+L["uplp_deag_muzzle_tri.description"] = "Компенсатор, перенаправляющий газы в стороны для уменьшения горизонтальной отдачи."
 
 ////// Skins
-L["uplp_deagle_skin_admin.printname"] = "Admin"
-L["uplp_deagle_skin_admin.compactname"] = "Admin"
-L["uplp_deagle_skin_admin.description"] = "Replaces the slide and barrel with red ones with golden details.\n\n<color=255,255,100>Admin only - drastically improves stats.</color>"
+L["uplp_deagle_skin_admin.printname"] = "Админский скин"
+L["uplp_deagle_skin_admin.compactname"] = "Админ"
+L["uplp_deagle_skin_admin.description"] = "Заменяет затвор и ствол на красные с золотыми деталями.\n<color=255,255,100>Только для администраторов - значительно улучшает характеристики.</color>"
 
 L["uplp_deagle_skin_admin.pro"] = "Крутость"
 L["uplp_deagle_skin_admin.pro_stat"] = "+бесконечность%"
 L["uplp_deagle_skin_admin.con"] = "Только для админов"
 
-L["uplp_deagle_skin_black.printname"] = "Matt Black"
-L["uplp_deagle_skin_black.compactname"] = "Black"
-L["uplp_deagle_skin_black.description"] = "Replaces the slide and barrel with matt black ones."
+L["uplp_deagle_skin_black.printname"] = "Матовый чёрный"
+L["uplp_deagle_skin_black.compactname"] = "Чёрный"
+L["uplp_deagle_skin_black.description"] = "Заменяет затвор и ствол на матово-чёрные."
 
-L["uplp_deagle_skin_gold.printname"] = "Gold"
-L["uplp_deagle_skin_gold.compactname"] = "Gold"
-L["uplp_deagle_skin_gold.description"] = "Replaces the slide and barrel with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>\n\n\"Who cares about practicality when you've got a golden gun that shoots giant bullets?\""
+L["uplp_deagle_skin_gold.printname"] = "Золотой"
+L["uplp_deagle_skin_gold.compactname"] = "Золото"
+L["uplp_deagle_skin_gold.description"] = "Заменяет затвор и ствол на золотые.\n\n<color=255,255,100>Разблокируется на уровне Командир (Lv55)</color>\n\"Кому нужна практичность, когда у тебя золотой пистолет, стреляющий огромными пулями?\""
 
-L["uplp_deagle_skin_blue.printname"] = "Cylo Blue"
+L["uplp_deagle_skin_blue.printname"] = "Синий Cylo"
 L["uplp_deagle_skin_blue.compactname"] = "Cylo"
-L["uplp_deagle_skin_blue.description"] = "Replaces the slide and barrel with ones painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+L["uplp_deagle_skin_blue.description"] = "Заменяет затвор и ствол на окрашенные в металлический синий цвет.\nЭтот оттенок синего называется \"Cylo Blue\", названный в честь экзотического вида летучей мыши."
+
+-- L["uplp_deagle_skin_frame.printname"] = "Chrome Frame"
+-- L["uplp_deagle_skin_frame.compactname"] = "Chrome"
+-- L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
 
 //////////////////// Mutant
 L["uplp_weapon_mutant"] = "Мутант"
@@ -1650,7 +1651,7 @@ L["uplp_mutant_mag_40_old.printname"] = "40-Round 7.62×39mm (Steel)"
 L["uplp_mutant_mag_40_old.compactname"] = "40R 7.62 (S)"
 L["uplp_mutant_mag_40_old.description"] = "40-round magazine made with good, old-fashioned steel."
 
-//////////////////// Molot
+//////////////////// Молот
 L["uplp_weapon_molot"] = "Молот"
 L["uplp_weapon_molot_desc"] = "Молот - российский полуавтоматический дробовик, знаменитый своей надежностью и простотой использования. Он использует патроны 12 калибра и популярен среди стрелков и коллекционеров благодаря своей прочности и производительности. Эта версия Молота была заводской версией для использования в спортивных соревнованиях и имеет двухстороннюю рукоятку заряжания."
 
@@ -1660,85 +1661,85 @@ L["uplp_weapon_molot_manufacturer"] = "Молот-Оружие"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_molot_brl_long.printname"] = "520mm Barrel"
-L["uplp_molot_brl_long.compactname"] = "520mm"
-L["uplp_molot_brl_long.description"] = "Extended 520mm (20.47\") barrel for the Molot."
+L["uplp_molot_brl_long.printname"] = "Ствол 520 мм"
+L["uplp_molot_brl_long.compactname"] = "520мм"
+L["uplp_molot_brl_long.description"] = "Удлинённый ствол 520 мм (20.47\") для Молот."
 
-L["uplp_molot_brl_compact.printname"] = "350mm Barrel"
-L["uplp_molot_brl_compact.compactname"] = "350mm"
-L["uplp_molot_brl_compact.description"] = "Shortened 350mm (13.78\") barrel for the Molot."
+L["uplp_molot_brl_compact.printname"] = "Ствол 350 мм"
+L["uplp_molot_brl_compact.compactname"] = "350мм"
+L["uplp_molot_brl_compact.description"] = "Укороченный ствол 350 мм (13.78\") для Молот."
 
-L["uplp_molot_brl_mini.printname"] = "350mm \"Mini\" Barrel"
-L["uplp_molot_brl_mini.compactname"] = "350mm Mini"
-L["uplp_molot_brl_mini.description"] = "Shortened 350mm (13.78\") mini barrel for the Molot."
+L["uplp_molot_brl_mini.printname"] = "Ствол 350 мм \"Мини\""
+L["uplp_molot_brl_mini.compactname"] = "350мм Мини"
+L["uplp_molot_brl_mini.description"] = "Укороченный мини-ствол 350 мм (13.78\") для Молот."
 
-L["uplp_molot_brl_micro.printname"] = "325mm \"Micro\" Barrel"
-L["uplp_molot_brl_micro.compactname"] = "325mm Micro"
-L["uplp_molot_brl_micro.description"] = "Shortened 325mm (12.8\") micro barrel for the Molot."
+L["uplp_molot_brl_micro.printname"] = "Ствол 325 мм \"Микро\""
+L["uplp_molot_brl_micro.compactname"] = "325мм Микро"
+L["uplp_molot_brl_micro.description"] = "Укороченный микро-ствол 325 мм (12.8\") для Молот."
 
 ////// Handguards
-L["uplp_molot_hg_100.printname"] = "100-Series Handguard"
+L["uplp_molot_hg_100.printname"] = "Цевьё 100-й серии"
 L["uplp_molot_hg_100.compactname"] = "100-S"
-L["uplp_molot_hg_100.description"] = "Modern plastic handguard originally used on the AK M10. Comes with a bottom rail for use with foregrips."
+L["uplp_molot_hg_100.description"] = "Современное пластиковое цевьё, изначально использовавшееся на AK M10. Оснащена нижней рейкой для установки передних рукояток."
 
-L["uplp_molot_hg_wood.printname"] = "Classic RPK Handguard"
-L["uplp_molot_hg_wood.compactname"] = "C. RPK"
-L["uplp_molot_hg_wood.description"] = "Wooden handguard originally used on the RPK and HPK M74."
+L["uplp_molot_hg_wood.printname"] = "Классическое цевьё РПК"
+L["uplp_molot_hg_wood.compactname"] = "C. РПК"
+L["uplp_molot_hg_wood.description"] = "Деревянное цевьё, изначально использовавшееся на РПК и ХПК M74."
 
-L["uplp_molot_hg_azen.printname"] = "Zenith Handguard"
+L["uplp_molot_hg_azen.printname"] = "Цевьё Zenith"
 L["uplp_molot_hg_azen.compactname"] = "Zenith"
-L["uplp_molot_hg_azen.description"] = "Lightweight handguard with RIS-rail functionality built for AK-rifles."
+L["uplp_molot_hg_azen.description"] = "Лёгкое цевьё с RIS-рейкой, разработанное для автоматов АК."
 
-L["uplp_molot_hg_azen_c.printname"] = "Zenith Compact Handguard"
+L["uplp_molot_hg_azen_c.printname"] = "Компактная цевьё Zenith"
 L["uplp_molot_hg_azen_c.compactname"] = "Zenith C"
-L["uplp_molot_hg_azen_c.description"] = "Lightweight handguard with RIS-rail functionality built for AK-rifles."
+L["uplp_molot_hg_azen_c.description"] = "Лёгкое цевьё с RIS-рейкой, разработанное для автоматов АК."
 
-L["uplp_molot_hg_tac.printname"] = "Lisyan Tactical Handguard (Sporty Red)"
-L["uplp_molot_hg_tac.compactname"] = "Lisyan (SR)"
-L["uplp_molot_hg_tac.description"] = "Tactical, lightweight and sporty handguard for AK rifles made by Lisyan Tactical." .. sportyred
+L["uplp_molot_hg_tac.printname"] = "Тактическое цевьё Lisyan (Ярко-красная)"
+L["uplp_molot_hg_tac.compactname"] = "Lisyan (ЯК)"
+L["uplp_molot_hg_tac.description"] = "Тактическое, лёгкое и спортивное цевьё для автоматов АК от Lisyan Tactical." .. sportyred
 
-L["uplp_molot_hg_tac_b.printname"] = "Lisyan Tactical Handguard (Pitch Black)"
-L["uplp_molot_hg_tac_b.compactname"] = "Lisyan (PB)"
-L["uplp_molot_hg_tac_b.description"] = "Tactical, lightweight and sporty handguard for AK rifles made by Lisyan Tactical." .. pitchblack
+L["uplp_molot_hg_tac_b.printname"] = "Тактическое цевьё Lisyan (Черная)"
+L["uplp_molot_hg_tac_b.compactname"] = "Lisyan (Ч)"
+L["uplp_molot_hg_tac_b.description"] = "Тактическое, лёгкое и спортивное цевьё для автоматов АК от Lisyan Tactical." .. pitchblack
 
-L["uplp_molot_hg_tac_w.printname"] = "Lisyan Tactical Handguard (Arctic White)"
-L["uplp_molot_hg_tac_w.compactname"] = "Lisyan (AW)"
-L["uplp_molot_hg_tac_w.description"] = "Tactical, lightweight and sporty handguard for AK rifles made by Lisyan Tactical." .. arcticwhite
+L["uplp_molot_hg_tac_w.printname"] = "Тактическое цевьё Lisyan (Арктическая белая)"
+L["uplp_molot_hg_tac_w.compactname"] = "Lisyan (АБ)"
+L["uplp_molot_hg_tac_w.description"] = "Тактическое, лёгкое и спортивное цевьё для автоматов АК от Lisyan Tactical." .. arcticwhite
 
-L["uplp_molot_hg_cool.printname"] = "SpeedFire Dynamics Competition Handguard"
+L["uplp_molot_hg_cool.printname"] = "Цевьё SpeedFire Dynamics Competition"
 L["uplp_molot_hg_cool.compactname"] = "SpeedFire"
-L["uplp_molot_hg_cool.description"] = "Lightweight handguard made by SpeedFire Dynamics."
+L["uplp_molot_hg_cool.description"] = "Лёгкое цевьё, изготовленное SpeedFire Dynamics."
 
-L["uplp_molot_hg_cool2.printname"] = "ApexCore Sport PRO Handguard"
+L["uplp_molot_hg_cool2.printname"] = "Рукоять ApexCore Sport PRO"
 L["uplp_molot_hg_cool2.compactname"] = "ApexCore"
-L["uplp_molot_hg_cool2.description"] = "Lightweight handguard made by the Sport PRO division at ApexCore Arsenal."
+L["uplp_molot_hg_cool2.description"] = "Лёгкое цевьё, изготовленное спортивным подразделением ApexCore Arsenal."
 
 ////// Internals
-L["uplp_molot_bolt_light.printname"] = "Lightweight Internals"
-L["uplp_molot_bolt_light.compactname"] = "Lightweight"
-L["uplp_molot_bolt_light.description"] = "Replaces the internal springs and bolts, trigger, magazine release, charging handle, bolt and safety with much more lightweight parts."
+L["uplp_molot_bolt_light.printname"] = "Лёгкие внутренние компоненты"
+L["uplp_molot_bolt_light.compactname"] = "Лёгк."
+L["uplp_molot_bolt_light.description"] = "Замена внутренних пружин, болтов, спускового крючка, кнопки магазина, рукоятки взведения и предохранителя на более лёгкие детали."
 
-L["uplp_molot_bolt_heavy.printname"] = "Reinforced Internals"
-L["uplp_molot_bolt_heavy.compactname"] = "Reinforced"
-L["uplp_molot_bolt_heavy.description"] = "Replaces the internal springs and bolts, trigger, magazine release, charging handle, bolt and safety with more reinforced and stronger parts."
+L["uplp_molot_bolt_heavy.printname"] = "Усиленные внутренние компоненты"
+L["uplp_molot_bolt_heavy.compactname"] = "Усил."
+L["uplp_molot_bolt_heavy.description"] = "Замена внутренних пружин, болтов, спускового крючка, кнопки магазина, рукоятки взведения и предохранителя на более прочные детали."
 
 ////// Magazines
-L["uplp_molot_mag_long.printname"] = "9-Round Extended"
-L["uplp_molot_mag_long.compactname"] = "9R Ext"
-L["uplp_molot_mag_long.description"] = "9-round extended magazine."
+L["uplp_molot_mag_long.printname"] = "Удлинённый магазин на 9 патронов"
+L["uplp_molot_mag_long.compactname"] = "9R Удл"
+L["uplp_molot_mag_long.description"] = "Удлинённый магазин ёмкостью 9 патронов."
 
-L["uplp_molot_mag_drum.printname"] = "19-Round PAWCO Drum"
-L["uplp_molot_mag_drum.compactname"] = "19R D"
-L["uplp_molot_mag_drum.description"] = "19-round drum magazine made by PAWCO."
+L["uplp_molot_mag_drum.printname"] = "Барабанный магазин PAWCO на 19 патронов"
+L["uplp_molot_mag_drum.compactname"] = "19R Б"
+L["uplp_molot_mag_drum.description"] = "Барабанный магазин ёмкостью 19 патронов, изготовленный PAWCO."
 
-L["uplp_molot_mag_drum_soda.printname"] = "19-Round PAWCO Drum (Limited RED SODA Edition)"
-L["uplp_molot_mag_drum_soda.compactname"] = "19R D (RS)"
-L["uplp_molot_mag_drum_soda.description"] = "19-round drum magazine made by PAWCO colored in colors of some creature."
+L["uplp_molot_mag_drum_soda.printname"] = "Барабанный магазин PAWCO на 19 патронов (Ограниченная серия RED SODA)"
+L["uplp_molot_mag_drum_soda.compactname"] = "19R Б (RS)"
+L["uplp_molot_mag_drum_soda.description"] = "Барабанный магазин ёмкостью 19 патронов, изготовленный PAWCO, окрашенный в цвета какого-то существа."
 
 ////// Muzzle
-L["uplp_sg_mz_vepr.printname"] = "Molot Choke"
-L["uplp_sg_mz_vepr.compactname"] = "Molot C"
-L["uplp_sg_mz_vepr.description"] = "Standard choke for the Molot shotgun."
+L["uplp_sg_mz_vepr.printname"] = "Чок Молот"
+L["uplp_sg_mz_vepr.compactname"] = "Чок Молот"
+L["uplp_sg_mz_vepr.description"] = "Стандартный чок для дробовика Молот."
 
 //////////////////// AW Sniper
 L["uplp_weapon_awp"] = "AW \"Снайпер\""
@@ -1752,98 +1753,100 @@ L["uplp_weapon_awp_manufacturer"] = "Accuracy International"
 
 /////////// Attachments
 ////// Irons
-L["uplp_awp_rs.printname"] = "AW Iron Sights"
-L["uplp_awp_rs.compactname"] = "Iron Sights"
-L["uplp_awp_rs.description"] = "Factory set of iron sights for the AW Sniper.\nComes in handy when you forget to zero your scope or lost it on the battlefield."
+L["uplp_awp_rs.printname"] = "Механические прицелы AW"
+L["uplp_awp_rs.compactname"] = "Мех. прицелы"
+L["uplp_awp_rs.description"] = "Стандартный набор механических прицелов для снайперской винтовки AW.\nПригодится, если забудете откалибровать оптику или потеряете её на поле боя."
 
 ////// Barrels
-L["uplp_awp_brl_awp.printname"] = "610mm Police Barrel"
-L["uplp_awp_brl_awp.compactname"] = "610mm"
-L["uplp_awp_brl_awp.description"] = "Shortened 610mm (24\") barrel for the Police variant of the AW rifle."
+L["uplp_awp_brl_awp.printname"] = "610мм Полицейский ствол"
+L["uplp_awp_brl_awp.compactname"] = "610мм"
+L["uplp_awp_brl_awp.description"] = "Укороченный 610мм (24\") ствол для полицейской версии винтовки AW."
 
-L["uplp_awp_brl_aws.printname"] = "409mm Integrally Suppressed Barrel"
-L["uplp_awp_brl_aws.compactname"] = "409mm S."
-L["uplp_awp_brl_aws.description"] = "Integrally suppressed 409mm (16\") barrel for the AW rifle.\n<color=100,255,100>Заглушает выстрелы</color>, но <color=255,100,100>уменьшает урон вблизи</color>."
+L["uplp_awp_brl_aws.printname"] = "409мм Интегрально-приглушенный ствол"
+L["uplp_awp_brl_aws.compactname"] = "409мм П."
+L["uplp_awp_brl_aws.description"] = "Интегрально-приглушенный 409мм (16\") ствол для винтовки AW.\n<color=100,255,100>Заглушает выстрелы</color>, но <color=255,100,100>уменьшает урон вблизи</color>."
 
-L["uplp_awp_brl_long.printname"] = "686mm Magnum Barrel"
-L["uplp_awp_brl_long.compactname"] = "686mm"
-L["uplp_awp_brl_long.description"] = "Longer 686mm (27\") Magnum barrel for the AW rifle.\n<color=100,255,100>Увеличивает урон на расстоянии</color>, но <color=255,100,100>делает винтовку менее удобной и мобильной</color>."
+L["uplp_awp_brl_long.printname"] = "686мм Магнум ствол"
+L["uplp_awp_brl_long.compactname"] = "686мм"
+L["uplp_awp_brl_long.description"] = "Удлинённый 686мм (27\") Магнум ствол для винтовки AW.\n<color=100,255,100>Увеличивает урон на расстоянии</color>, но <color=255,100,100>делает винтовку менее удобной и мобильной</color>."
 
-L["uplp_awp_brl_short.printname"] = "350mm Compact Barrel"
-L["uplp_awp_brl_short.compactname"] = "350mm"
-L["uplp_awp_brl_short.description"] = "Very short 350mm (13.78\") barrel for the AW rifle.\n<color=100,255,100>Улучшает скорость</color>, но <color=255,100,100>уменьшает урон на расстоянии.</color>"
+L["uplp_awp_brl_short.printname"] = "350мм Компактный ствол"
+L["uplp_awp_brl_short.compactname"] = "350мм"
+L["uplp_awp_brl_short.description"] = "Очень короткий 350мм (13.78\") ствол для винтовки AW.\n<color=100,255,100>Улучшает скорость</color>, но <color=255,100,100>уменьшает урон на расстоянии.</color>"
 
 ////// Bipods
-L["uplp_awp_bp.printname"] = "AW Sniper Bipod"
-L["uplp_awp_bp.compactname"] = "AW B."
-L["uplp_awp_bp.description"] = "Standard built-in bipod used on the AW rifle and almost all of its variants.\nUses an outdated mechanism that is not stable or comfortable. Superior aftermarket models exist."
+L["uplp_awp_bp.printname"] = "Сошки для AW"
+L["uplp_awp_bp.compactname"] = "AW Сошки"
+L["uplp_awp_bp.description"] = "Стандартный встроенный сошки, используемые на винтовке AW и почти всех её вариантах.\nИспользует устаревший механизм, который нестабилен и некомфортен. Существуют альтернативы получше на рынке."
 
-L["uplp_awp_bp_atx.printname"] = "SynPoly WildCat X Bipod"
+L["uplp_awp_bp_atx.printname"] = "Сошки SynPoly WildCat X"
 L["uplp_awp_bp_atx.compactname"] = "WildCat X"
-L["uplp_awp_bp_atx.description"] = "A RIS-mounted bipod manufactured by the WildCat X division at SynPoly that reduces recoil when deployed."
+L["uplp_awp_bp_atx.description"] = "Сошки, монтируемые на RIS, изготовленные подразделением WildCat X компании SynPoly, которые снижает отдачу при развёртывании."
 
 ////// Magazines
-L["uplp_awp_mag_awm.printname"] = "5-Round .338"
+L["uplp_awp_mag_awm.printname"] = "5-зарядный .338"
 L["uplp_awp_mag_awm.compactname"] = "5R .338"
-L["uplp_awp_mag_awm.description"] = "Standard 5-round magazine loaded with .338 ammunition."
+L["uplp_awp_mag_awm.description"] = "Стандартный 5-зарядный магазин с патронами .338."
 
-L["uplp_awp_mag_awp.printname"] = "5-Round .308"
+L["uplp_awp_mag_awp.printname"] = "5-зарядный .308"
 L["uplp_awp_mag_awp.compactname"] = "5R .308"
-L["uplp_awp_mag_awp.description"] = "Standard 5-round magazine loaded with .308 Winchester rounds.\nA less powerful cartridge that can be fired and cycled quickly."
+L["uplp_awp_mag_awp.description"] = "Стандартный 5-зарядный магазин с патронами .308 Winchester.\nМенее мощный патрон, который можно стрелять и перезаряжать быстрее."
 
-L["uplp_awp_mag_awp_big.printname"] = "8-Round .308"
+L["uplp_awp_mag_awp_big.printname"] = "8-зарядный .308"
 L["uplp_awp_mag_awp_big.compactname"] = "8R .308"
-L["uplp_awp_mag_awp_big.description"] = "Extended 8-round magazine loaded with .308 Winchester rounds.\nA less powerful cartridge that can be fired and cycled quickly."
+L["uplp_awp_mag_awp_big.description"] = "Удлинённый 8-зарядный магазин с патронами .308 Winchester.\nМенее мощный патрон, который можно стрелять и перезаряжать быстрее."
 
-L["uplp_awp_mag_awp_tac.printname"] = "5-Round 6.5mm"
-L["uplp_awp_mag_awp_tac.compactname"] = "5R 6.5mm"
-L["uplp_awp_mag_awp_tac.description"] = "Standard 5-round magazine loaded with 6.5mm ammunition.\nA cartridge that reveals full performance potential on ranges from 50 to 100 meters."
+L["uplp_awp_mag_awp_tac.printname"] = "5-зарядный 6.5мм"
+L["uplp_awp_mag_awp_tac.compactname"] = "5R 6.5мм"
+L["uplp_awp_mag_awp_tac.description"] = "Стандартный 5-зарядный магазин с патронами 6.5мм.\nМенее мощный Патрон, который раскрывает весь свой потенциал на дистанциях от 50 до 100 метров."
 
 ////// Stocks
-L["uplp_awp_stock_at.printname"] = "Foldable Modernized Stock"
-L["uplp_awp_stock_at.compactname"] = "Foldable M."
-L["uplp_awp_stock_at.description"] = "Modern foldable stock with more comfortable ergonomics."
+L["uplp_awp_stock_at.printname"] = "Складная модернизированная ложа"
+L["uplp_awp_stock_at.compactname"] = "Склад. М."
+L["uplp_awp_stock_at.description"] = "Современная складная ложа с более комфортной эргономикой."
 
-local uplp_awp_stock_atx = "Lightweight competition stock manufactured by eXtreme Sports.\nЗначительное улучшении удобства и мобильности ценой в увеличенную отдачу и тряску."
-L["uplp_awp_stock_atx.printname"] = "eXtreme Stock (Sporty Red)"
-L["uplp_awp_stock_atx.compactname"] = "eXtreme (SR)"
+local uplp_awp_stock_atx = "Лёгкая соревновательная ложа, изготовленная eXtreme Sports.\nЗначительно улучшает удобство и мобильность ценой увеличенной отдачи и тряски."
+
+
+L["uplp_awp_stock_atx.printname"] = "Ложа eXtreme (Ярко-красный)"
+L["uplp_awp_stock_atx.compactname"] = "eXtreme (ЯК)"
 L["uplp_awp_stock_atx.description"] = uplp_awp_stock_atx .. sportyred
 
-L["uplp_awp_stock_atx_blue.printname"] = "eXtreme Stock (Aqua Blue)"
-L["uplp_awp_stock_atx_blue.compactname"] = "eXtreme (AB)"
+L["uplp_awp_stock_atx_blue.printname"] = "Ложа eXtreme (Морской-синий)"
+L["uplp_awp_stock_atx_blue.compactname"] = "eXtreme (МС)"
 L["uplp_awp_stock_atx_blue.description"] = uplp_awp_stock_atx .. aquablue
 
-L["uplp_awp_stock_atx_gray.printname"] = "eXtreme Stock (Stealth Gray)"
-L["uplp_awp_stock_atx_gray.compactname"] = "eXtreme (SG)"
+L["uplp_awp_stock_atx_gray.printname"] = "Ложа eXtreme (Тёмно-серый)"
+L["uplp_awp_stock_atx_gray.compactname"] = "eXtreme (ТС)"
 L["uplp_awp_stock_atx_gray.description"] = uplp_awp_stock_atx .. stealthgray
 
-L["uplp_awp_stock_atx_green.printname"] = "eXtreme Stock (Forest Green)"
-L["uplp_awp_stock_atx_green.compactname"] = "eXtreme (FG)"
+L["uplp_awp_stock_atx_green.printname"] = "Ложа eXtreme (Лесной зелёный)"
+L["uplp_awp_stock_atx_green.compactname"] = "eXtreme (ЛЗ)"
 L["uplp_awp_stock_atx_green.description"] = uplp_awp_stock_atx .. forestgreen
 
-L["uplp_awp_stock_atx_orange.printname"] = "eXtreme Stock (Hunter Orange)"
-L["uplp_awp_stock_atx_orange.compactname"] = "eXtreme (HR)"
+L["uplp_awp_stock_atx_orange.printname"] = "Ложа eXtreme (Охотничий оранжевый)"
+L["uplp_awp_stock_atx_orange.compactname"] = "eXtreme (ОО)"
 L["uplp_awp_stock_atx_orange.description"] = uplp_awp_stock_atx .. hunterorange
 
-L["uplp_awp_stock_atx_purple.printname"] = "eXtreme Stock (Party Purple)"
-L["uplp_awp_stock_atx_purple.compactname"] = "eXtreme (PP)"
+L["uplp_awp_stock_atx_purple.printname"] = "Ложа eXtreme (Праздничный фиолетовый)"
+L["uplp_awp_stock_atx_purple.compactname"] = "eXtreme (П)"
 L["uplp_awp_stock_atx_purple.description"] = uplp_awp_stock_atx .. partypurple
 
-L["uplp_awp_stock_atx_white.printname"] = "eXtreme Stock (Arctic White)"
-L["uplp_awp_stock_atx_white.compactname"] = "eXtreme (AW)"
+L["uplp_awp_stock_atx_white.printname"] = "Ложа eXtreme (Арктический белый)"
+L["uplp_awp_stock_atx_white.compactname"] = "eXtreme (АБ)"
 L["uplp_awp_stock_atx_white.description"] = uplp_awp_stock_atx .. arcticwhite
 
-L["uplp_awp_stock_awm.printname"] = "Foldable Stock"
-L["uplp_awp_stock_awm.compactname"] = "Foldable"
-L["uplp_awp_stock_awm.description"] = "Standard stock with foldable capabilities for storage."
+L["uplp_awp_stock_awm.printname"] = "Складная ложа"
+L["uplp_awp_stock_awm.compactname"] = "Склад."
+L["uplp_awp_stock_awm.description"] = "Стандартная ложа со складывающимся прикладом для хранения."
 
-L["uplp_awp_stock_awp.printname"] = "Police Stock"
-L["uplp_awp_stock_awp.compactname"] = "Police"
-L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide."
+L["uplp_awp_stock_awp.printname"] = "Полицейская ложа"
+L["uplp_awp_stock_awp.compactname"] = "Полиция"
+L["uplp_awp_stock_awp.description"] = "Стандартный цельный ложа, используемый различными правоохранительными органами по всему миру."
 
-L["uplp_awp_stock_tube.printname"] = "Foldable Stock with Buffer Tube"
-L["uplp_awp_stock_tube.compactname"] = "Foldable BT"
-L["uplp_awp_stock_tube.description"] = "Standard stock with an attached buffer tube for using AR-15 stocks."
+L["uplp_awp_stock_tube.printname"] = "Складная ложа с буферной трубой"
+L["uplp_awp_stock_tube.compactname"] = "Склад. БТ"
+L["uplp_awp_stock_tube.description"] = "Стандартная ложа с прикреплённой буферной трубой для использования прикладов AR-15."
 
 //////////////////// FN57
 L["uplp_weapon_fn57"] = "MRD57"
@@ -1855,27 +1858,27 @@ L["uplp_weapon_fn57_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Mags
-L["uplp_fn57_mag_ext.printname"] = "27-Round Extended Magazine"
-L["uplp_fn57_mag_ext.compactname"] = "27R Ext."
-L["uplp_fn57_mag_ext.description"] = "Aftermarket 27-round extended magazine for the MRD57."
+L["uplp_fn57_mag_ext.printname"] = "Расширенный магазин на 27 патронов"
+L["uplp_fn57_mag_ext.compactname"] = "27R Расш."
+L["uplp_fn57_mag_ext.description"] = "Расширенный магазин на 27 патронов для MRD57."
 
 ////// Trigger
-L["uplp_fn57_trigger_auto.printname"] = "Automatic Action"
-L["uplp_fn57_trigger_auto.compactname"] = "Automatic"
-L["uplp_fn57_trigger_auto.description"] = "Converts the MRD57 to fire in <color=100,255,100>fully automatic</color>, sacrificing recoil control.\n\nTechnically banned by the <color=255,100,100>NFA</color>, but we'll be quiet... this time."
+L["uplp_fn57_trigger_auto.printname"] = "Автоматический режим"
+L["uplp_fn57_trigger_auto.compactname"] = "Автомат"
+L["uplp_fn57_trigger_auto.description"] = "Переводит MRD57 в режим <color=100,255,100>полного автомата</color>, жертвуя контролем отдачи.\nТехнически запрещено <color=255,100,100>законом</color>, но мы сохраним это в секрете... на этот раз."
 
 ////// Skins
-L["uplp_fn57_skin_tan_full.printname"] = "Full Tan"
-L["uplp_fn57_skin_tan_full.compactname"] = "Full Tan"
-L["uplp_fn57_skin_tan_full.description"] = "Replaces the slide and lower pistol frame with desert tan coloured ones."
+L["uplp_fn57_skin_tan_full.printname"] = "Полностью пустынный"
+L["uplp_fn57_skin_tan_full.compactname"] = "Пустынный"
+L["uplp_fn57_skin_tan_full.description"] = "Заменяет затвор и нижнюю раму пистолета на детали цвета пустынного тана."
 
-L["uplp_fn57_skin_tan_half.printname"] = "Half Tan"
-L["uplp_fn57_skin_tan_half.compactname"] = "Half Tan"
-L["uplp_fn57_skin_tan_half.description"] = "Replaces the lower pistol frame with a desert tan coloured one."
+L["uplp_fn57_skin_tan_half.printname"] = "Частично желтый"
+L["uplp_fn57_skin_tan_half.compactname"] = "Ч. пустын."
+L["uplp_fn57_skin_tan_half.description"] = "Заменяет нижнюю раму пистолета на деталь цвета пустынного тана."
 
-L["uplp_fn57_skin_panda.printname"] = "Panda"
-L["uplp_fn57_skin_panda.compactname"] = "Panda"
-L["uplp_fn57_skin_panda.description"] = "Replaces the slide with a desert tan coloured one."
+L["uplp_fn57_skin_panda.printname"] = "Панда"
+L["uplp_fn57_skin_panda.compactname"] = "Панда"
+L["uplp_fn57_skin_panda.description"] = "Заменяет затвор на деталь цвета пустынного тана."
 
 //////////////////// MP7
 L["uplp_weapon_mp7"] = "PDW-7"
@@ -1887,24 +1890,24 @@ L["uplp_weapon_mp7_manufacturer"] = "Heckler & Koch"
 
 /////////// Attachments
 ////// Stocks
-L["uplp_mp7_stock_folded.printname"] = "Collapsed Stock"
-L["uplp_mp7_stock_folded.compactname"] = "Collapsed"
-L["uplp_mp7_stock_folded.description"] = "Collapses the stock."
+L["uplp_mp7_stock_folded.printname"] = "Сложенный приклад"
+L["uplp_mp7_stock_folded.compactname"] = "Сложенный"
+L["uplp_mp7_stock_folded.description"] = "Складывает приклад."
 
 ////// Mags
-L["uplp_mp7_mag_20.printname"] = "20-Round Magazine"
+L["uplp_mp7_mag_20.printname"] = "Магазин на 20 патронов"
 L["uplp_mp7_mag_20.compactname"] = "20R"
-L["uplp_mp7_mag_20.description"] = "Shortened magazine that holds 20 rounds."
+L["uplp_mp7_mag_20.description"] = "Укороченный магазин, вмещающий 20 патронов."
 
 ////// Irons
-L["uplp_mp7_sight_folded.printname"] = "PDW Iron Sights"
-L["uplp_mp7_sight_folded.compactname"] = "PDW IS"
-L["uplp_mp7_sight_folded.description"] = "Flips the PDW-7's iron sights down, turning them into pistol-like sights.\nImproves target acquisition speeds at the cost of magnification."
+L["uplp_mp7_sight_folded.printname"] = "Механические прицелы PDW"
+L["uplp_mp7_sight_folded.compactname"] = "PDW МП"
+L["uplp_mp7_sight_folded.description"] = "Опускает механические прицелы PDW-7, превращая их в похожие на пистолетные прицелы.\nУлучшает скорость прицеливания за счёт уменьшения увеличения."
 
 ////// "Grip"
-L["uplp_mp7_grip_none.printname"] = "None"
-L["uplp_mp7_grip_none.compactname"] = "None"
-L["uplp_mp7_grip_none.description"] = "Utilise the PDW-7's undermounted rail as a hand support."
+L["uplp_mp7_grip_none.printname"] = "Нет"
+L["uplp_mp7_grip_none.compactname"] = "Нет"
+L["uplp_mp7_grip_none.description"] = "Используйте нижнюю рейку PDW-7 как цевьё."
 
 //////////////////// SCAR
 L["uplp_weapon_scar"] = "XAR"
@@ -1922,131 +1925,131 @@ L["uplp_weapon_scar_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Lower Receiver
-L["uplp_scar_lower_b.printname"] = "Black Lower Receiver"
-L["uplp_scar_lower_b.compactname"] = "Black"
-L["uplp_scar_lower_b.description"] = "Replaces the lower receiver with a black colored one."
+L["uplp_scar_lower_b.printname"] = "Чёрный нижний ресивер"
+L["uplp_scar_lower_b.compactname"] = "Чёрный"
+L["uplp_scar_lower_b.description"] = "Заменяет нижний ресивер на чёрный."
 
 ////// Upper Receivers
-L["uplp_scar_upper_hb.printname"] = "Standard Receiver (Black)"
-L["uplp_scar_upper_hb.compactname"] = "Standard (B)"
-L["uplp_scar_upper_hb.description"] = "Replaces the upper receiver with a black colored one."
+L["uplp_scar_upper_hb.printname"] = "Стандартный верхний ресивер (Черный)"
+L["uplp_scar_upper_hb.compactname"] = "Стандарт (Ч)"
+L["uplp_scar_upper_hb.description"] = "Заменяет верхний ресивер на чёрный."
 
-L["uplp_scar_upper_20.printname"] = "DMR Receiver"
+L["uplp_scar_upper_20.printname"] = "Верхний ресивер DMR"
 L["uplp_scar_upper_20.compactname"] = "DMR"
-L["uplp_scar_upper_20.description"] = "Very long upper receiver and handguard used on the XAR DMR."
+L["uplp_scar_upper_20.description"] = "Очень длинный верхний ресивер и цевьё, используемые на XAR DMR."
 
-L["uplp_scar_upper_20b.printname"] = "DMR Receiver (Black)"
-L["uplp_scar_upper_20b.compactname"] = "DMR (B)"
-L["uplp_scar_upper_20b.description"] = "Very long upper receiver and handguard painted black that is used on the XAR DMR."
+L["uplp_scar_upper_20b.printname"] = "Верхний ресивер DMR (Чёрный)"
+L["uplp_scar_upper_20b.compactname"] = "DMR (Ч)"
+L["uplp_scar_upper_20b.description"] = "Очень длинный верхний ресивер и цевьё, окрашенные в чёрный цвет, используемые на XAR DMR."
 
-L["uplp_scar_upper_pdw.printname"] = "PDW Receiver"
+L["uplp_scar_upper_pdw.printname"] = "Верхний ресивер PDW"
 L["uplp_scar_upper_pdw.compactname"] = "PDW"
-L["uplp_scar_upper_pdw.description"] = "Very short upper receiver and handguard used on the XAR PDW."
+L["uplp_scar_upper_pdw.description"] = "Очень короткий верхний ресивер и цевьё, используемые на XAR PDW."
 
-L["uplp_scar_upper_pdwb.printname"] = "PDW Receiver (Black)"
-L["uplp_scar_upper_pdwb.compactname"] = "PDW (B)"
-L["uplp_scar_upper_pdwb.description"] = "Very short upper receiver and handguard painted black that is used on the XAR PDW."
+L["uplp_scar_upper_pdwb.printname"] = "Верхний ресивер PDW (Чёрный)"
+L["uplp_scar_upper_pdwb.compactname"] = "PDW (Ч)"
+L["uplp_scar_upper_pdwb.description"] = "Очень короткий верхний ресивер и цевьё, окрашенные в чёрный цвет, используемые на XAR PDW."
 
 ////// Barrels
-L["uplp_scar_brl_short.printname"] = "330mm CQC Barrel"
-L["uplp_scar_brl_short.compactname"] = "330mm CQC"
-L["uplp_scar_brl_short.description"] = "Shortened 330mm (13\") barrel for the XAR."
+L["uplp_scar_brl_short.printname"] = "330мм Ствол CQC"
+L["uplp_scar_brl_short.compactname"] = "330мм CQC"
+L["uplp_scar_brl_short.description"] = "Укороченный 330мм (13\") ствол для XAR."
 
-L["uplp_scar_brl_20.printname"] = "510mm DMR Barrel"
-L["uplp_scar_brl_20.compactname"] = "510mm DMR"
-L["uplp_scar_brl_20.description"] = "Standard 510mm (20\") DMR barrel for the XAR."
+L["uplp_scar_brl_20.printname"] = "510мм Ствол DMR"
+L["uplp_scar_brl_20.compactname"] = "510мм DMR"
+L["uplp_scar_brl_20.description"] = "Стандартный 510мм (20\") ствол DMR для XAR."
 
-L["uplp_scar_brl_20_long.printname"] = "600mm DMR Barrel"
-L["uplp_scar_brl_20_long.compactname"] = "600mm DMR"
-L["uplp_scar_brl_20_long.description"] = "Long 600mm (23.62\") DMR barrel for the XAR."
+L["uplp_scar_brl_20_long.printname"] = "600мм Ствол DMR"
+L["uplp_scar_brl_20_long.compactname"] = "600мм DMR"
+L["uplp_scar_brl_20_long.description"] = "Длинный 600мм (23.62\") ствол DMR для XAR."
 
 ////// Stocks
-L["uplp_scar_stock_lb.printname"] = "Standard Stock (Black)"
-L["uplp_scar_stock_lb.compactname"] = "Standard (B)"
-L["uplp_scar_stock_lb.description"] = "Replaces the stock with a black colored one."
+L["uplp_scar_stock_lb.printname"] = "Стандартный приклад (Чёрный)"
+L["uplp_scar_stock_lb.compactname"] = "Стандартный (Ч)"
+L["uplp_scar_stock_lb.description"] = "Заменяет приклад на чёрный."
 
-L["uplp_scar_stock_h.printname"] = "DMR Stock"
+L["uplp_scar_stock_h.printname"] = "Приклад DMR"
 L["uplp_scar_stock_h.compactname"] = "DMR"
-L["uplp_scar_stock_h.description"] = "Replaces the stock with a heavy stock used on the XAR DMR."
+L["uplp_scar_stock_h.description"] = "Заменяет приклад на тяжёлый приклад, используемый на XAR DMR."
 
-L["uplp_scar_stock_hb.printname"] = "DMR Stock (Black)"
-L["uplp_scar_stock_hb.compactname"] = "DMR (B)"
-L["uplp_scar_stock_hb.description"] = "Replaces the stock with a heavy stock in black used on the XAR DMR."
+L["uplp_scar_stock_hb.printname"] = "Приклад DMR (Чёрный)"
+L["uplp_scar_stock_hb.compactname"] = "DMR (Ч)"
+L["uplp_scar_stock_hb.description"] = "Заменяет приклад на тяжёлый чёрный приклад, используемый на XAR DMR."
 
-L["uplp_scar_stock_tube.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
+L["uplp_scar_stock_tube.description"] = "Заменяет приклад на буферную трубу, поддерживающую приклады AR-15."
 
-L["uplp_scar_stock_pdw.printname"] = "PDW Stock"
+L["uplp_scar_stock_pdw.printname"] = "Приклад PDW"
 L["uplp_scar_stock_pdw.compactname"] = "PDW"
-L["uplp_scar_stock_pdw.description"] = "Replaces the stock with a collapsible PDW stock."
+L["uplp_scar_stock_pdw.description"] = "Заменяет приклад на складной приклад PDW."
 
 ////// Mags
-L["uplp_scar_mag_h.printname"] = "20-Round 7.62×51mm"
+L["uplp_scar_mag_h.printname"] = "Магазин на 20 патронов 7.62×51мм"
 L["uplp_scar_mag_h.compactname"] = "20R 7.62"
-L["uplp_scar_mag_h.description"] = "20-round 7.62×51mm magazine for the XAR."
+L["uplp_scar_mag_h.description"] = "20-зарядный магазин 7.62×51мм для XAR."
 
-L["uplp_scar_mag_hb.printname"] = "20-Round 7.62×51mm Black"
-L["uplp_scar_mag_hb.compactname"] = "20R 7.62 (B)"
-L["uplp_scar_mag_hb.description"] = "20-round 7.62×51mm magazine in black for the XAR."
+L["uplp_scar_mag_hb.printname"] = "Магазин на 20 патронов 7.62×51мм (Чёрный)"
+L["uplp_scar_mag_hb.compactname"] = "20R 7.62 (Ч)"
+L["uplp_scar_mag_hb.description"] = "20-зарядный магазин 7.62×51мм чёрного цвета для XAR."
 
-L["uplp_scar_mag_20.printname"] = "10-Round 7.62×51mm"
+L["uplp_scar_mag_20.printname"] = "Магазин на 10 патронов 7.62×51мм"
 L["uplp_scar_mag_20.compactname"] = "10R 7.62"
-L["uplp_scar_mag_20.description"] = "10-round 7.62×51mm magazine for the XAR."
+L["uplp_scar_mag_20.description"] = "10-зарядный магазин 7.62×51мм для XAR."
 
-L["uplp_scar_mag_20_68.printname"] = "10-Round 6.8mm"
+L["uplp_scar_mag_20_68.printname"] = "Магазин на 10 патронов 6.8мм"
 L["uplp_scar_mag_20_68.compactname"] = "10R 6.8"
-L["uplp_scar_mag_20_68.description"] = "10-round magazine chambered in 6.8mm for the XAR.\nExtremely good for long range fights.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
+L["uplp_scar_mag_20_68.description"] = "10-зарядный магазин калибра 6.8мм для XAR.\nЧрезвычайно хорош для дальних боёв.\nОграничивает оружие <color=255,100,100>только полуавтоматическим режимом</color>."
 
-L["uplp_scar_mag_drum.printname"] = "90-Round 5.56×45mm Dual Drum"
+L["uplp_scar_mag_drum.printname"] = "Двухрядный барабанный магазин на 90 патронов 5.56×45мм"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
-L["uplp_scar_mag_drum.description"] = "90-Round C-shaped drum magazine. Loading more than 90 rounds is not recommeneded as it could cause jams.\nCannot put on <color=255,100,100>either PDW Upper Receiver</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.description"] = "C-образный двухрядный барабанный магазин на 90 патронов. Загрузка более чем 90 патронов не рекомендуется, так как это может вызвать заклинивание.\nНе может быть установлен на <color=255,100,100>верхние части PDW</color>." .. changeammo.smg1
 
-L["uplp_scar_mag_hk.printname"] = "30-Round 5.56×45mm (416)"
+L["uplp_scar_mag_hk.printname"] = "Магазин на 30 патронов 5.56×45мм (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
-L["uplp_scar_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin." .. changeammo.smg1
+L["uplp_scar_mag_hk.description"] = "30-зарядный магазин от модифицированного AR-15 немецкого производства." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag20.printname"] = "20-Round 5.56×45mm (Polymer)"
-L["uplp_scar_mag_pmag20.compactname"] = "20R Poly"
-L["uplp_scar_mag_pmag20.description"] = "20-round magazine made out of polymer by SynPoly." .. changeammo.smg1
+L["uplp_scar_mag_pmag20.printname"] = "Магазин на 20 патронов 5.56×45мм (Полимер)"
+L["uplp_scar_mag_pmag20.compactname"] = "20R Поли"
+L["uplp_scar_mag_pmag20.description"] = "20-зарядный магазин из полимера, изготовленный SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polymer)"
-L["uplp_scar_mag_pmag30.compactname"] = "30R Poly"
-L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly." .. changeammo.smg1
+L["uplp_scar_mag_pmag30.printname"] = "Магазин на 30 патронов 5.56×45мм (Полимер)"
+L["uplp_scar_mag_pmag30.compactname"] = "30R Поли"
+L["uplp_scar_mag_pmag30.description"] = "30-зарядный магазин из полимера, изготовленный SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
-L["uplp_scar_mag_pmag60.compactname"] = "52R Drum"
-L["uplp_scar_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "Полимерный барабанный магазин на 52 патрона 5.56×45мм"
+L["uplp_scar_mag_pmag60.compactname"] = "52R Барабан"
+L["uplp_scar_mag_pmag60.description"] = "52-зарядный барабанный магазин из полимера, изготовленный SynPoly. Загрузка более чем 52 патронов не рекомендуется, так как это может вызвать заклинивание." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56×45mm (Aluminium)"
-L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
-L["uplp_scar_mag_stanag30.description"] = "30-round magazine made out of aluminium." .. changeammo.smg1
+L["uplp_scar_mag_stanag30.printname"] = "Магазин на 30 патронов 5.56×45мм (Алюминий)"
+L["uplp_scar_mag_stanag30.compactname"] = "30R Алюм"
+L["uplp_scar_mag_stanag30.description"] = "30-зарядный магазин из алюминия." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag30_tan.printname"] = "30-Round 5.56×45mm (Tan)"
-L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Tan"
-L["uplp_scar_mag_stanag30_tan.description"] = "30-round magazine made out of aluminium painted tan." .. changeammo.smg1
+L["uplp_scar_mag_stanag30_tan.printname"] = "Магазин на 30 патронов 5.56×45мм (Пустынный)"
+L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Пуст."
+L["uplp_scar_mag_stanag30_tan.description"] = "30-зарядный магазин из алюминия, окрашенный в пустынный." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52-Round 5.56×45mm Quadstacked"
-L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_scar_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "Четырёхрядный магазин на 52 патрона 5.56×45мм"
+L["uplp_scar_mag_stanag60.compactname"] = "52R Четыр."
+L["uplp_scar_mag_stanag60.description"] = "52-зарядный алюминиевый магазин, расширенный горизонтально для большего количества патронов. Загрузка более чем 52 патронов не рекомендуется, так как это может вызвать заклинивание." .. changeammo.smg1
 
 ////// Pistol Grips
-L["uplp_scar_pgrip_b.printname"] = "XAR Pistol Grip (Black)"
-L["uplp_scar_pgrip_b.compactname"] = "XAR (B)"
-L["uplp_scar_pgrip_b.description"] = "Standard pistol grip used on the XAR but painted black."
+L["uplp_scar_pgrip_b.printname"] = "Рукоятка XAR (Чёрная)"
+L["uplp_scar_pgrip_b.compactname"] = "XAR (Ч)"
+L["uplp_scar_pgrip_b.description"] = "Стандартная рукоятка XAR, окрашенная в чёрный цвет."
 
 ////// Iron Sights
-L["uplp_scar_is.printname"] = "XAR Iron Sights"
-L["uplp_scar_is.compactname"] = "XAR IS"
-L["uplp_scar_is.description"] = "Standard flip-up iron sights used on the XAR."
+L["uplp_scar_is.printname"] = "Механические прицелы XAR"
+L["uplp_scar_is.compactname"] = "XAR МП"
+L["uplp_scar_is.description"] = "Стандартные откидные механические прицелы XAR."
 
 ////// Muzzles
-L["uplp_scar_mz.printname"] = "XAR Muzzle Brake"
-L["uplp_scar_mz.compactname"] = "XAR MB"
-L["uplp_scar_mz.description"] = "Standard muzzle brake on the XAR."
+L["uplp_scar_mz.printname"] = "Дульный тормоз XAR"
+L["uplp_scar_mz.compactname"] = "XAR ДТ"
+L["uplp_scar_mz.description"] = "Стандартный дульный тормоз XAR."
 
 ////// Extras
-L["uplp_scar_rail_ext.printname"] = "XAR Extended Rail"
-L["uplp_scar_rail_ext.compactname"] = "Ext. Rail"
-L["uplp_scar_rail_ext.description"] = "An aftermarket extended rail for the XAR."
+L["uplp_scar_rail_ext.printname"] = "Расширенная планка XAR"
+L["uplp_scar_rail_ext.compactname"] = "Планка"
+L["uplp_scar_rail_ext.description"] = "Послепродажная расширенная планка для XAR."
 
 -- Expansion 1
 //////////////////// Mossberg 590
@@ -2067,24 +2070,24 @@ L["uplp_weapon_spas_manufacturer"] = "Luigi Franchi S.p.A."
 
 /////////// Attachments
 ////// Barrels
-L["uplp_spas_short.printname"] = "LAW Configuration"
+L["uplp_spas_short.printname"] = "Конфигурация LAW"
 L["uplp_spas_short.compactname"] = "LAW"
-L["uplp_spas_short.description"] = "Shortened configuration of the SPAW-12 intended for law enforcement.\nComes with a <color=160,160,255>460mm (18.11\") barrel</color> and <color=255,100,100>shortened magazine tube</color>."
+L["uplp_spas_short.description"] = "Укороченная конфигурация SPAW-12 для правоохранительных органов.\nВключает <color=160,160,255>460 мм (18.11\") ствол</color> и <color=255,100,100>укороченную трубу магазина</color>."
 
 ////// Stocks
-L["uplp_spas_stock_fixed.printname"] = "Fixed Stock"
-L["uplp_spas_stock_fixed.compactname"] = "Fixed"
-L["uplp_spas_stock_fixed.description"] = "Sturdy fixed stock for the SPAW-12."
+L["uplp_spas_stock_fixed.printname"] = "Фиксированный приклад"
+L["uplp_spas_stock_fixed.compactname"] = "Фиксированный"
+L["uplp_spas_stock_fixed.description"] = "Прочный фиксированный приклад для SPAW-12."
 
-L["uplp_spas_stock_folding.printname"] = "Folding Stock"
-L["uplp_spas_stock_folding.compactname"] = "Folding"
-L["uplp_spas_stock_folding.description"] = "Collapsible folding stock for the SPAW-12.\nWhen \"Folded\": Cannot equip <color=255,100,100>optics</color>."
+L["uplp_spas_stock_folding.printname"] = "Складной приклад"
+L["uplp_spas_stock_folding.compactname"] = "Складной"
+L["uplp_spas_stock_folding.description"] = "Складной приклад для SPAW-12.\n\nВ сложенном состоянии: нельзя установить <color=255,100,100>оптику</color>."
+L["uplp_spas_stock_folding_hook.printname"] = "Складной приклад с крюком"
 
-L["uplp_spas_stock_folding_hook.printname"] = "Folding Stock with Hook"
-L["uplp_spas_stock_folding_hook.compactname"] = "Folding (H)"
-L["uplp_spas_stock_folding_hook.description"] = "Collapsible folding stock for the SPAW-12.\nComes with the original hook intended for use with one handed shooting.\nWhen \"Folded\": Cannot equip <color=255,100,100>optics</color>."
+L["uplp_spas_stock_folding_hook.compactname"] = "Складной (К)"
+L["uplp_spas_stock_folding_hook.description"] = "Складной приклад для SPAW-12.\nВключает оригинальный крюк для стрельбы одной рукой.\n\nВ сложенном состоянии: нельзя установить <color=255,100,100>оптику</color>."
 
-L["uplp_spas_stock_tube.description"] = "Aftermarket pistol grip with built-in buffer tube for attaching AR-15 stocks."
+L["uplp_spas_stock_tube.description"] = "Пистолетная рукоятка с буферной трубой для установки прикладов AR-15."
 
 //////////////////// M92FS
 L["uplp_weapon_m9"] = "PM92"
@@ -2101,30 +2104,30 @@ L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
 
 /////////// Attachments
 ////// Receivers
-L["uplp_m9_receiver_raffica.printname"] = "PM92-A Receiver"
+L["uplp_m9_receiver_raffica.printname"] = "Ресивер PM92-A"
 L["uplp_m9_receiver_raffica.compactname"] = "Automatico"
-L["uplp_m9_receiver_raffica.description"] = "Heavily modified \"Automatico\" receiver.\nComes with a built-in compensator and vertical grip that <color=100,255,100>reduces recoil</color>.\nSwitches the firing modes to <color=100,255,100>3-round burst</color> & <color=100,255,100>semi-automatic</color>."
+L["uplp_m9_receiver_raffica.description"] = "Сильно модифицированный ресивер \"Automatico\".\nВключает встроенный компенсатор и вертикальную рукоятку, <color=100,255,100>уменьшающие отдачу</color>.\nРежимы огня: <color=100,255,100>3-х зарядная очередь</color> и <color=100,255,100>полуавтомат</color>."
 
-L["uplp_m9_receiver_a3.printname"] = "PM92-M Receiver"
+L["uplp_m9_receiver_a3.printname"] = "Ресивер PM92-M"
 L["uplp_m9_receiver_a3.compactname"] = "Moderno"
-L["uplp_m9_receiver_a3.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights."
+L["uplp_m9_receiver_a3.description"] = "Современный ресивер \"Moderno\", позволяющий устанавливать лазерные целеуказатели."
 
-L["uplp_m9_receiver_a3t.printname"] = "PM92-M Receiver (Tan)"
-L["uplp_m9_receiver_a3t.compactname"] = "Moderno (T)"
-L["uplp_m9_receiver_a3t.description"] = "Modernized \"Moderno\" receiver allowing the installation of laser sights.\n<color=255,255,100>Tan coloured version</color>."
+L["uplp_m9_receiver_a3t.printname"] = "Ресивер PM92-M (Пустынный)"
+L["uplp_m9_receiver_a3t.compactname"] = "Moderno (П)"
+L["uplp_m9_receiver_a3t.description"] = "Современный ресивер \"Moderno\", позволяющий устанавливать лазерные целеуказатели.\n<color=255,255,100>Пустынная версия</color>."
 
-L["uplp_m9_receiver_sc.printname"] = "PM92 Sword Cutlass Receiver"
+L["uplp_m9_receiver_sc.printname"] = "Ресивер PM92 Sword Cutlass"
 L["uplp_m9_receiver_sc.compactname"] = "Sword"
-L["uplp_m9_receiver_sc.description"] = "Modified PM92 inspired by Rebecca \"Revy\" Lee's personal sidearm.\nComes with an extended 150mm (5.9\") barrel."
+L["uplp_m9_receiver_sc.description"] = "Модифицированный PM92, вдохновлённый личным оружием Ребекки \"Реви\" Ли.\nВключает удлинённый 150 мм (5.9\") ствол."
 
-L["uplp_m9_receiver_robocop.printname"] = "Robotic Arms Hyper-V Receiver"
+L["uplp_m9_receiver_robocop.printname"] = "Ресивер Robotic Arms Hyper-V"
 L["uplp_m9_receiver_robocop.compactname"] = "Hyper-V"
-L["uplp_m9_receiver_robocop.description"] = "Heavily modified PM92 originally made for use in an experimental robotic personnel program.\nComes with an extended 250mm (9.84\") barrel, <color=100,255,100>20-round</color> extended magazine, heat shield and raised iron sights.\nSwitches the firing mode to <color=100,255,100>3-round burst</color>.\nCannot equip <color=255,100,100>any other attachments</color>."
+L["uplp_m9_receiver_robocop.description"] = "Сильно модифицированный PM92, созданный для экспериментальной роботизированной программы.\nВключает 250 мм (9.84\") ствол, <color=100,255,100>20-зарядный</color> магазин, теплозащиту и прицельные приспособления.\nРежим огня: <color=100,255,100>3-х зарядная очередь</color>.\nНельзя установить <color=255,100,100>другие обвесы</color>."
 
 ////// Magazines
-L["uplp_m9_mag_20.printname"] = "20-Round Extended"
+L["uplp_m9_mag_20.printname"] = "20-зарядный расширенный"
 L["uplp_m9_mag_20.compactname"] = "20R"
-L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM92."
+L["uplp_m9_mag_20.description"] = "20-зарядный магазин для PM92."
 
 //////////////////// Colt M1911
 L["uplp_weapon_m1911"] = "CM .45"
@@ -2165,44 +2168,44 @@ L["uplp_weapon_orsis_manufacturer"] = "Оружейные Системы (ОРС
 
 /////////// Attachments
 ////// Barrels
-L["uplp_orsis_barrel_heavy.printname"] = "Heavy Accuracy Barrel"
-L["uplp_orsis_barrel_heavy.compactname"] = "Heavy"
-L["uplp_orsis_barrel_heavy.description"] = "Reinforced heavy barrel for the Gryphon X108."
+L["uplp_orsis_barrel_heavy.printname"] = "Тяжёлый точный ствол"
+L["uplp_orsis_barrel_heavy.compactname"] = "Тяжёлый"
+L["uplp_orsis_barrel_heavy.description"] = "Усиленный ствол для X108 \"Грифон\"."
 
-L["uplp_orsis_barrel_short.printname"] = "Compact Agility Configuration"
-L["uplp_orsis_barrel_short.compactname"] = "CAC"
-L["uplp_orsis_barrel_short.description"] = "Shortened configuration of the Gryphon X108 intended for more intermediate range engagements.\nComes with a shortened barrel and top rail for mounting lasers, but <color=255,100,100>removes the bottom rail</color>."
+L["uplp_orsis_barrel_short.printname"] = "Компактная конфигурация"
+L["uplp_orsis_barrel_short.compactname"] = "Компакт"
+L["uplp_orsis_barrel_short.description"] = "Укороченная конфигурация X108 \"Грифон\" для средних дистанций.\nВключает укороченный ствол и верхнюю рейку, но <color=255,100,100>удаляет нижнюю рейку</color>."
 
 ////// Magazines
-L["uplp_orsis_mag_3.printname"] = "3-Round Magazine"
+L["uplp_orsis_mag_3.printname"] = "3-зарядный магазин"
 L["uplp_orsis_mag_3.compactname"] = "3R"
-L["uplp_orsis_mag_3.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108."
+L["uplp_orsis_mag_3.description"] = "Укороченный <color=255,100,100>3-зарядный</color> магазин для X108 \"Грифон\"."
 
-L["uplp_orsis_mag_7.printname"] = "7-Round Magazine"
+L["uplp_orsis_mag_7.printname"] = "7-зарядный магазин"
 L["uplp_orsis_mag_7.compactname"] = "7R"
-L["uplp_orsis_mag_7.description"] = "Extended <color=100,255,100>7-round</color> magazine for the Gryphon X108."
+L["uplp_orsis_mag_7.description"] = "Расширенный <color=100,255,100>7-зарядный</color> магазин для X108 \"Грифон\"."
 
 ////// Stocks
-L["uplp_orsis_stock_sniper.printname"] = "Precision Stock"
-L["uplp_orsis_stock_sniper.compactname"] = "Precision"
-L["uplp_orsis_stock_sniper.description"] = "Configures the stock on the Gryphon X108 to be used for precision shooting."
+L["uplp_orsis_stock_sniper.printname"] = "Приклад для точности"
+L["uplp_orsis_stock_sniper.compactname"] = "Точность"
+L["uplp_orsis_stock_sniper.description"] = "Конфигурация приклада для стрельбы на дальние дистанции."
 
-L["uplp_orsis_stock_atx.printname"] = "eXtreme Stock"
+L["uplp_orsis_stock_atx.printname"] = "Ложа eXtreme"
 L["uplp_orsis_stock_atx.compactname"] = "eXtreme"
-L["uplp_orsis_stock_atx.description"] = "Replaces the stock and pistol grip with lightweight ones made by eXtreme Sports."
+L["uplp_orsis_stock_atx.description"] = "Лёгкие приклад и рукоятка от eXtreme Sports."
 
-L["uplp_orsis_stock_heavy.printname"] = "Heavy Accuracy Stock"
-L["uplp_orsis_stock_heavy.compactname"] = "Heavy"
-L["uplp_orsis_stock_heavy.description"] = "Reinforces the stock on the Gryphon X108 for use in rougher environments."
+L["uplp_orsis_stock_heavy.printname"] = "Тяжёлый приклад для точности"
+L["uplp_orsis_stock_heavy.compactname"] = "Тяжёлый"
+L["uplp_orsis_stock_heavy.description"] = "Усиленный приклад для использования в сложных условиях."
 
 ////// Muzzles
-L["uplp_orsis_muzzle_small.printname"] = "Shortened X108 Brake"
-L["uplp_orsis_muzzle_small.compactname"] = "S X108"
-L["uplp_orsis_muzzle_small.description"] = "Shortened standard muzzle brake for the Gryphon X108."
+L["uplp_orsis_muzzle_small.printname"] = "Укороченный дульный тормоз X108"
+L["uplp_orsis_muzzle_small.compactname"] = "К ДТ X108"
+L["uplp_orsis_muzzle_small.description"] = "Укороченный стандартный дульный тормоз для X108 \"Грифон\"."
 
-L["uplp_orsis_muzzle_big.printname"] = "Tank Buster Muzzle Brake"
-L["uplp_orsis_muzzle_big.compactname"] = "Tank"
-L["uplp_orsis_muzzle_big.description"] = "Massive muzzle brake intended for maximum recoil control.\nIntended for use on the Gryphon X108."
+L["uplp_orsis_muzzle_big.printname"] = "Танковый тормоз-компенсатор"
+L["uplp_orsis_muzzle_big.compactname"] = "Танк"
+L["uplp_orsis_muzzle_big.description"] = "Массивный дульный тормоз для максимального контроля отдачи.\nПредназначен для X108 \"Грифон\"."
 
 //////////////////// AS VAL
 -- "Stealth Carbine 9x39", "Стелс-карабин" (СК 9×39)
@@ -2224,37 +2227,37 @@ L["uplp_weapon_asval_manufacturer"] = "Императорский Тульски
 
 /////////// Attachments
 ////// Stocks
-L["uplp_asval_stock_buffer.description"] = "Replaces the stock with a buffer tube that accepts AR-15 stocks."
+L["uplp_asval_stock_buffer.description"] = "Заменяет приклад на буферную трубу, поддерживающую AR-15 приклады."
 
-L["uplp_asval_stock_vss.printname"] = "SK Shadow Wooden Stock"
-L["uplp_asval_stock_vss.compactname"] = "SK"
-L["uplp_asval_stock_vss.description"] = "Heavy wooden stock from the SK Shadow."
+L["uplp_asval_stock_vss.printname"] = "Деревянный приклад СК \"Тень\""
+L["uplp_asval_stock_vss.compactname"] = "СК"
+L["uplp_asval_stock_vss.description"] = "Тяжёлый деревянный приклад от СК \"Тень\"."
 
-L["uplp_asval_stock_vssm.printname"] = "SK-2 Shadow Tactical Stock"
-L["uplp_asval_stock_vssm.compactname"] = "SK-2"
-L["uplp_asval_stock_vssm.description"] = "Tactical and modern stock and pistol grip from the SK-2 Shadow."
-
-////// Handguards
-L["uplp_asval_hg_sr3.printname"] = "MK Lightning Frontend"
-L["uplp_asval_hg_sr3.compactname"] = "MKL"
-L["uplp_asval_hg_sr3.description"] = "Modernized handguard from the MK Lightning rifle. Comes with a <color=100,255,100>built-in foregrip</color>."
-
-L["uplp_asval_hg_sr3s.printname"] = "MK Thunder Frontend"
-L["uplp_asval_hg_sr3s.compactname"] = "MKT"
-L["uplp_asval_hg_sr3s.description"] = "Modernized handguard from the MK Thunder rifle. Comes with a <color=100,255,100>built-in foregrip</color> and <color=100,255,100>suppressor</color>."
+L["uplp_asval_stock_vssm.printname"] = "Тактический приклад СК-2 \"Тень\""
+L["uplp_asval_stock_vssm.compactname"] = "СК-2"
+L["uplp_asval_stock_vssm.description"] = "Тактический приклад и рукоятка от СК-2 \"Тень\"."
 
 ////// Handguards
-L["uplp_asval_mag_10.printname"] = "10-Round SPS"
+L["uplp_asval_hg_sr3.printname"] = "Передняя часть МК \"Молния\""
+L["uplp_asval_hg_sr3.compactname"] = "МКМ"
+L["uplp_asval_hg_sr3.description"] = "Современная передняя часть от МК \"Молния\". Включает <color=100,255,100>встроенную переднюю рукоятку</color>."
+
+L["uplp_asval_hg_sr3s.printname"] = "Передняя часть МК \"Гром\""
+L["uplp_asval_hg_sr3s.compactname"] = "МКГ"
+L["uplp_asval_hg_sr3s.description"] = "Современная передняя часть от МК \"Гром\". Включает <color=100,255,100>встроенную переднюю рукоятку</color> и <color=100,255,100>глушитель</color>."
+
+////// Handguards
+L["uplp_asval_mag_10.printname"] = "10-зарядный SPS"
 L["uplp_asval_mag_10.compactname"] = "10R SPS"
-L["uplp_asval_mag_10.description"] = "Shortened 10-round magazine with \"Special Purpose Subsonic\" rounds intended for the SK Shadow.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
+L["uplp_asval_mag_10.description"] = "Укороченный 10-зарядный магазин с патронами \"Специального Подавления\" для СК \"Тень\".\nОграничивает оружие <color=255,100,100>полуавтоматическим режимом</color>."
 
-L["uplp_asval_mag_ap.printname"] = "20-Round AP"
-L["uplp_asval_mag_ap.compactname"] = "20R AP"
-L["uplp_asval_mag_ap.description"] = "Standard 20-round magazine fed with armor piercing ammunition intended for any SK 9×39."
+L["uplp_asval_mag_ap.printname"] = "20-зарядный БП"
+L["uplp_asval_mag_ap.compactname"] = "20R БП"
+L["uplp_asval_mag_ap.description"] = "Стандартный 20-зарядный магазин с бронебойными патронами для СК 9×39."
 
-L["uplp_asval_mag_30.printname"] = "30-Round ECP"
-L["uplp_asval_mag_30.compactname"] = "30R ECP"
-L["uplp_asval_mag_30.description"] = "Extended 30-round magazine with \"Experimental Cheap Precision\" rounds intended for the MK Lightning."
+L["uplp_asval_mag_30.printname"] = "30-зарядный ЭЭТ"
+L["uplp_asval_mag_30.compactname"] = "30R ЭЭТ"
+L["uplp_asval_mag_30.description"] = "Расширенный 30-зарядный магазин с патронами \"Экспериментальной Экономной Точности\" для МК \"Молния\"."
 
 //////////////////// ASh-12
 L["uplp_weapon_ash12"] = "РЗ 12.7"
@@ -2279,67 +2282,67 @@ L["uplp_weapon_aug_manufacturer"] = "Steyr-Daimler-Puch"
 
 /////////// Attachments
 ////// Irons
-L["uplp_aug_rs.printname"] = "Iron Sights"
-L["uplp_aug_rs.compactname"] = "Irons"
-L["uplp_aug_rs.description"] = "Compact iron sights intended for use with the AW-MP."
+L["uplp_aug_rs.printname"] = "Механические прицелы"
+L["uplp_aug_rs.compactname"] = "Механика"
+L["uplp_aug_rs.description"] = "Компактные механические прицелы, предназначенные для использования с AW-MP."
 
 ////// Top Rail
-L["uplp_aug_top_scope.printname"] = "AW-UG Scope"
-L["uplp_aug_top_scope.compactname"] = "Scope"
-L["uplp_aug_top_scope.description"] = "Traditional 1.5x magnification telescopic scope used on standard AW-UG models.\nHas <color=255,200,100>small handling penalities</color> and <color=255,255,100>slight aim sway</color>."
+L["uplp_aug_top_scope.printname"] = "Прицел AW-UG"
+L["uplp_aug_top_scope.compactname"] = "Прицел"
+L["uplp_aug_top_scope.description"] = "Традиционный оптический прицел с 1.5-кратным увеличением, используемый на стандартных моделях AW-UG.\nИмеет <color=255,200,100>небольшие штрафы к обращению</color> и <color=255,255,100>лёгкое дрожание при прицеливании</color>."
 
 ////// Bottom Rail
-L["uplp_aug_bot_alt.printname"] = "Tri-Rail Mount"
+L["uplp_aug_bot_alt.printname"] = "Крепление Tri-Rail"
 L["uplp_aug_bot_alt.compactname"] = "Tri-Rail"
-L["uplp_aug_bot_alt.description"] = "Alternative bottom rail that allows mounting of aftermarket foregrips and laser sights."
+L["uplp_aug_bot_alt.description"] = "Альтернативная нижняя рейка, позволяющая устанавливать передние рукоятки и лазерные целеуказатели."
 
 ////// Barrels
-L["uplp_aug_brl_mg.printname"] = "900mm HBAR Barrel"
-L["uplp_aug_brl_mg.compactname"] = "900mm"
-L["uplp_aug_brl_mg.description"] = "Long and heavy 900mm (35.4\") barrel intended for the AW-MG, the machine gun variant of the AW-UG.\nComes with an <color=100,255,100>integral bipod</color>."
+L["uplp_aug_brl_mg.printname"] = "900мм Ствол HBAR"
+L["uplp_aug_brl_mg.compactname"] = "900мм"
+L["uplp_aug_brl_mg.description"] = "Длинный и тяжёлый 900мм (35.4\") ствол для пулемётного варианта AW-MG.\nИмеет <color=100,255,100>встроенные сошки</color>."
 
-L["uplp_aug_brl_smg.printname"] = "508mm Para Barrel"
-L["uplp_aug_brl_smg.compactname"] = "508mm"
-L["uplp_aug_brl_smg.description"] = "Shortened 508mm (20\") barrel used on the 9×19mm AW-MP, the submachine gun variant of the AW-UG."
+L["uplp_aug_brl_smg.printname"] = "508мм Ствол Para"
+L["uplp_aug_brl_smg.compactname"] = "508мм"
+L["uplp_aug_brl_smg.description"] = "Укороченный 508мм (20\") ствол для пистолета-пулемёта AW-MP под патрон 9×19мм."
 
 ////// Magazines
-L["uplp_aug_mag_556_30p.printname"] = "30-Round 5.56×45mm (Polymer)"
-L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (P)"
-L["uplp_aug_mag_556_30p.description"] = "30-round magazine made out of polymer for the AW-UG."
+L["uplp_aug_mag_556_30p.printname"] = "30-зарядный 5.56×45мм (Полимер)"
+L["uplp_aug_mag_556_30p.compactname"] = "30R 5.56 (П)"
+L["uplp_aug_mag_556_30p.description"] = "30-зарядный полимерный магазин для AW-UG."
 
-L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56×45mm"
+L["uplp_aug_mag_556_40.printname"] = "40-зарядный 5.56×45мм"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
-L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
+L["uplp_aug_mag_556_40.description"] = "40-зарядный расширенный магазин для AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56×45mm Drum"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
-L["uplp_aug_mag_556_52.description"] = "52-round drum magazine for the AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "52-зарядный барабан 5.56×45мм"
+L["uplp_aug_mag_556_52.compactname"] = "52Р 5.56"
+L["uplp_aug_mag_556_52.description"] = "52-зарядный барабанный магазин для AW-UG."
 
-L["uplp_aug_mag_919_25.printname"] = "25-Round 9×19mm"
-L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"
-L["uplp_aug_mag_919_25.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9×19mm.\nEquipped with a <color=175,175,255>25-round magazine</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_25.printname"] = "25-зарядный 9×19мм"
+L["uplp_aug_mag_919_25.compactname"] = "25Р 9×19мм"
+L["uplp_aug_mag_919_25.description"] = "Преобразует AW-UG в AW-MP, вариант пистолета-пулемёта под патрон 9×19мм.\nИспользует <color=175,175,255>25-зарядный магазин</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_919_40.printname"] = "40-Round 9×19mm"
-L["uplp_aug_mag_919_40.compactname"] = "40R 9×19mm"
-L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9×19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol
+L["uplp_aug_mag_919_40.printname"] = "40-зарядный 9×19мм"
+L["uplp_aug_mag_919_40.compactname"] = "40R 9×19мм"
+L["uplp_aug_mag_919_40.description"] = "Преобразует AW-UG в AW-MP, вариант пистолета-пулемёта под патрон 9×19мм.\nИспользует <color=175,175,255>40-зарядный расширенный магазин</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_300_10.printname"] = "10-Round .300 SP"
+L["uplp_aug_mag_300_10.printname"] = "10-зарядный .300 SP"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nЗаряжает <color=255,255,100>специальный патрон .300 SP</color>.\nТолько <color=255,100,100>полу-автоматический режим стрельбы</color>."
+L["uplp_aug_mag_300_10.description"] = "Укороченный 10-зарядный магазин для AW-UG.\nИспользует <color=255,255,100>специальный патрон .300 SP</color>.\nТолько <color=255,100,100>полуавтоматический режим</color>."
 -- ".300 Sound Proof"
 
 ////// Stocks
-L["uplp_aug_stock_white.printname"] = "White Stock"
-L["uplp_aug_stock_white.compactname"] = "White"
-L["uplp_aug_stock_white.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with white ones."
+L["uplp_aug_stock_white.printname"] = "Белая ложа"
+L["uplp_aug_stock_white.compactname"] = "Белый"
+L["uplp_aug_stock_white.description"] = "Изменяет цвет ложи, рукоятки взведения и складной рукоятки на белый."
 
-L["uplp_aug_stock_tan.printname"] = "Tan Stock"
-L["uplp_aug_stock_tan.compactname"] = "Tan"
-L["uplp_aug_stock_tan.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with desert tan ones."
+L["uplp_aug_stock_tan.printname"] = "Пустынная ложа"
+L["uplp_aug_stock_tan.compactname"] = "Пустын."
+L["uplp_aug_stock_tan.description"] = "Изменяет цвет ложи, рукоятки взведения и складной рукоятки на пустынный тан."
 
-L["uplp_aug_stock_black.printname"] = "Black Stock"
-L["uplp_aug_stock_black.compactname"] = "Black"
-L["uplp_aug_stock_black.description"] = "Changes the appearance of the AW-UG stock, charging handle and the folding grip with black ones."
+L["uplp_aug_stock_black.printname"] = "Чёрная ложа"
+L["uplp_aug_stock_black.compactname"] = "Чёрный"
+L["uplp_aug_stock_black.description"] = "Изменяет цвет ложи, рукоятки взведения и складной рукоятки на чёрный."
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
@@ -2358,23 +2361,23 @@ L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
 ////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
--- L["uplp_knife_skin_black.description"] = "Darkened matt black variant of the Badlands Bowie."
+L["uplp_knife_skin_black.description"] = "Чёрный матовый вариант ножа Боуи."
 
--- L["uplp_knife_skin_chrome.printname"] = "Chrome"
--- L["uplp_knife_skin_chrome.compactname"] = "Chrome"
--- L["uplp_knife_skin_chrome.description"] = "Chrome variant of the Badlands Bowie. Comes with a red coloured handle."
+L["uplp_knife_skin_chrome.printname"] = "Хром"
+L["uplp_knife_skin_chrome.compactname"] = "Хром"
+L["uplp_knife_skin_chrome.description"] = "Хромированный вариант ножа Боуи с красной рукояткой."
 
--- L["uplp_knife_skin_gold.description"] = "Golden variant of the Badlands Bowie. Comes with desert tan handle.\n\n<color=255,255,100>Skin only for darsubscribers - become one on boosty.to/darsu</color><color=255,55,55> (do not equip if you aren't darsubscriber)</color>"
+L["uplp_knife_skin_gold.description"] = "Золотой вариант ножа Боуи с пустынной рукояткой.\n<color=255,255,100>Скин только для дарсубскрайберов - станьте им на boosty.to/darsu</color><color=255,55,55> (не используйте, если не являетесь подписчиком!!)</color>"
 
--- L["uplp_knife_skin_blue.description"] = "Metallic blue variant of the Badlands Bowie. Comes with a dark blue handle.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+L["uplp_knife_skin_blue.description"] = "Синий вариант ножа Боуи с тёмно-синей рукояткой.\nЭтот оттенок синего называется \"Cylo Blue\" в честь экзотического вида летучих мышей."
 
--- L["uplp_knife_skin_red.printname"] = "Red Soda"
--- L["uplp_knife_skin_red.compactname"] = "Red"
--- L["uplp_knife_skin_red.description"] = "Metallic red variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw, and a handle with white paws embedded on it."
+L["uplp_knife_skin_red.printname"] = "Red Soda"
+L["uplp_knife_skin_red.compactname"] = "Красная"
+L["uplp_knife_skin_red.description"] = "Красный вариант ножа Боуи с модифицированным лезвием (вырезной лапой) и рукояткой с белыми лапками."
 
--- L["uplp_knife_skin_orange.printname"] = "Foxy Orange"
--- L["uplp_knife_skin_orange.compactname"] = "Orange"
--- L["uplp_knife_skin_orange.description"] = "Metallic orange variant of the Badlands Bowie. Comes with a modified blade with a cut-out paw and a brown handle with white paws embedded on it."
+L["uplp_knife_skin_orange.printname"] = "Лисий Рыжий"
+L["uplp_knife_skin_orange.compactname"] = "Рыжий"
+L["uplp_knife_skin_orange.description"] = "Оранжевый вариант ножа Боуи с модифицированным лезвием (вырезной лапой) и коричневой рукояткой с белыми лапками."
 
 //////////////////// MP5
 L["uplp_weapon_mp5"] = "PV-9"
@@ -2389,49 +2392,49 @@ L["uplp_weapon_mp5_desc"] = "«Persönliche Verteidigungswaffe 9x19» (Оруж�
 
 /////////// Attachments
 ////// Barrel
--- L["uplp_mp5_bar_sd.printname"] = "146mm SD Barrel"
--- L["uplp_mp5_bar_sd.compactname"] = "146mm SD"
--- L["uplp_mp5_bar_sd.description"] = "Modified 146mm (5.7\") barrel with built-in suppressor, converting the PV-9 to the PV-9S."
+L["uplp_mp5_bar_sd.printname"] = "146мм SD Ствол"
+L["uplp_mp5_bar_sd.compactname"] = "146мм SD"
+L["uplp_mp5_bar_sd.description"] = "Модифицированный 146мм (5.7\") ствол с встроенным глушителем, преобразующий PV-9 в PV-9S."
 
--- L["uplp_mp5_bar_kurz.printname"] = "114mm Kurz Barrel"
--- L["uplp_mp5_bar_kurz.compactname"] = "114mm Kurz"
--- L["uplp_mp5_bar_kurz.description"] = "Shortened 114mm (4.5\") Kurz barrel, converting the PV-9 to the PV-9K."
+L["uplp_mp5_bar_kurz.printname"] = "114мм Ствол Kurz"
+L["uplp_mp5_bar_kurz.compactname"] = "114мм Kurz"
+L["uplp_mp5_bar_kurz.description"] = "Укороченный 114мм (4.5\") ствол Kurz, преобразующий PV-9 в PV-9K."
 
 ////// Handguard
--- L["uplp_mp5_hg_navy.printname"] = "Navy Handguard"
--- L["uplp_mp5_hg_navy.compactname"] = "Navy"
--- L["uplp_mp5_hg_navy.description"] = "Alternative front handguard with a built-in flashlight."
+L["uplp_mp5_hg_navy.printname"] = "Цевьё Navy"
+L["uplp_mp5_hg_navy.compactname"] = "Navy"
+L["uplp_mp5_hg_navy.description"] = "Альтернативное цевьё с встроенным фонарём."
 
 ////// Grips
--- L["uplp_mp5_grip_kurz.printname"] = "Kurz Foregrip"
--- L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
--- L["uplp_mp5_grip_kurz.description"] = "Front handguard with built-in foregrip for controlling recoil.\nRequires <color=175,175,255>114mm Kurz Barrel</color>."
+L["uplp_mp5_grip_kurz.printname"] = "Рукоятка Kurz"
+L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
+L["uplp_mp5_grip_kurz.description"] = "Передняя рукоять с встроенной рукояткой для контроля отдачи.\nТребует <color=175,175,255>114мм ствол Kurz</color>."
 
 ////// Stocks
--- L["uplp_mp5_stock_pdw.printname"] = "Folding PDW Stock"
--- L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
--- L["uplp_mp5_stock_pdw.description"] = "Side-folding PDW stock for the PV-9."
+L["uplp_mp5_stock_pdw.printname"] = "Складной приклад PDW"
+L["uplp_mp5_stock_pdw.compactname"] = "С. PDW"
+L["uplp_mp5_stock_pdw.description"] = "Боковой складной приклад для PV-9."
 
--- L["uplp_mp5_stock_col.printname"] = "Collapsible Stock"
--- L["uplp_mp5_stock_col.compactname"] = "Collapsible"
--- L["uplp_mp5_stock_col.description"] = "Collapsible stock for the PV-9. Useful for fighting indoors."
+L["uplp_mp5_stock_col.printname"] = "Складной приклад"
+L["uplp_mp5_stock_col.compactname"] = "Склад."
+L["uplp_mp5_stock_col.description"] = "Складной приклад для PV-9. Удобен в помещениях."
 
--- L["uplp_mp5_stock_fixed.printname"] = "Fixed PV-9 Stock"
--- L["uplp_mp5_stock_fixed.compactname"] = "Fixed"
--- L["uplp_mp5_stock_fixed.description"] = "Fixed, solid stock for the PV-9."
+L["uplp_mp5_stock_fixed.printname"] = "Фиксированный приклад PV-9"
+L["uplp_mp5_stock_fixed.compactname"] = "Фикс."
+L["uplp_mp5_stock_fixed.description"] = "Фиксированный цельный приклад для PV-9."
 
 ////// Magazines
--- L["uplp_mp5_mag_15.printname"] = "15-Round 9x19mm"
--- L["uplp_mp5_mag_15.compactname"] = "15R 9x19mm"
--- L["uplp_mp5_mag_15.description"] = "Shortened magazine holding 15 rounds of 9x19mm ammunition."
+L["uplp_mp5_mag_15.printname"] = "15-зарядный 9×19мм"
+L["uplp_mp5_mag_15.compactname"] = "15R 9×19мм"
+L["uplp_mp5_mag_15.description"] = "Укороченный магазин на 15 патронов 9×19мм."
 
--- L["uplp_mp5_mag_50.printname"] = "50-Round 9x19mm Drum"
--- L["uplp_mp5_mag_50.compactname"] = "50R 9x19mm"
--- L["uplp_mp5_mag_50.description"] = "Large 50-round drum magazine that holds 9x19mm ammunition."
+L["uplp_mp5_mag_50.printname"] = "50-зарядный барабан 9×19мм"
+L["uplp_mp5_mag_50.compactname"] = "50R 9×19мм"
+L["uplp_mp5_mag_50.description"] = "Крупный 50-зарядный барабанный магазин под патрон 9×19мм."
 
--- L["uplp_mp5_mag_10mm.printname"] = "30-Round 10mm"
--- L["uplp_mp5_mag_10mm.compactname"] = "30R 10mm"
--- L["uplp_mp5_mag_10mm.description"] = "Converts the PV-9 into the PV-10, improving fire power at the cost of recoil control."
+L["uplp_mp5_mag_10mm.printname"] = "30-зарядный 10мм"
+L["uplp_mp5_mag_10mm.compactname"] = "30R 10мм"
+L["uplp_mp5_mag_10mm.description"] = "Преобразует PV-9 в PV-10, увеличивая огневую мощь за счёт контроля отдачи."
 
 //////////////////// Frag
 local quickthrow = "\nМожно использовать быстрый бросок с \"<color=175,175,255>+grenade1</color>\" биндом."
@@ -2466,87 +2469,87 @@ L["uplp_weapon_fal_manufacturer"] = "Fabrique Nationale de Herstal"
 
 /////////// Attachments
 ////// Receiver
--- L["uplp_fal_rec_para.printname"] = "Paratrooper Receiver"
--- L["uplp_fal_rec_para.compactname"] = "Para."
--- L["uplp_fal_rec_para.description"] = "Modernized receiver for the FCM. Comes with an RIS top cover for mounting modern optics."
+L["uplp_fal_rec_para.printname"] = "Десантный ресивер"  
+L["uplp_fal_rec_para.compactname"] = "Дес."  
+L["uplp_fal_rec_para.description"] = "Современный ресивер для FCM. Оснащён верхней крышкой RIS для установки оптики."  
 
 ////// Handguards
--- L["uplp_fal_hg_poly.printname"] = "Polymer Handguard"
--- L["uplp_fal_hg_poly.compactname"] = "Poly."
--- L["uplp_fal_hg_poly.description"] = "Modernized polymer handguard for the FCM."
+L["uplp_fal_hg_poly.printname"] = "Полимерное цевьё"  
+L["uplp_fal_hg_poly.compactname"] = "Поли"  
+L["uplp_fal_hg_poly.description"] = "Современное полимерное цевьё для FCM."  
 
--- L["uplp_fal_hg_aus.printname"] = "Australian Handguard, Bipod and Reinforced Barrel"
--- L["uplp_fal_hg_aus.compactname"] = "Aus."
--- L["uplp_fal_hg_aus.description"] = "Heavy, wooden handguard and reinforced barrel from the Australian version of the FCM. Comes with a <color=100,255,100>built-in bipod</color>."
+L["uplp_fal_hg_aus.printname"] = "Австралийское цевьё, сошка и усиленный ствол"  
+L["uplp_fal_hg_aus.compactname"] = "Австр."  
+L["uplp_fal_hg_aus.description"] = "Тяжёлое деревянное цевьё и усиленный ствол австралийской версии FCM. Имеет <color=100,255,100>встроенные сошки</color>."  
 
--- L["uplp_fal_hg_sniper.printname"] = "Sharpshooter Handguard and Barrel"
--- L["uplp_fal_hg_sniper.compactname"] = "Sharps."
--- L["uplp_fal_hg_sniper.description"] = "Handguard meant for sharpshooting on the FCM.\nComes equipped with an <color=100,255,100>extended barrel</color>."
+L["uplp_fal_hg_sniper.printname"] = "Снайперское цевьё и ствол"  
+L["uplp_fal_hg_sniper.compactname"] = "Снайпер"  
+L["uplp_fal_hg_sniper.description"] = "Цевьё для точечной стрельбы из FCM. Оснащено <color=100,255,100>удлинённым стволом</color>."  
 
--- L["uplp_fal_hg_para.printname"] = "Paratrooper Long Handguard"
--- L["uplp_fal_hg_para.compactname"] = "Para. L."
--- L["uplp_fal_hg_para.description"] = "Lightweight handguard made for a Paratrooper variant of the FCM.\nComes equipped with an <color=100,255,100>extended barrel</color>.\nAllows installation of <color=100,255,100>foregrips</color>."
+L["uplp_fal_hg_para.printname"] = "Длинное десантное цевьё"  
+L["uplp_fal_hg_para.compactname"] = "Десант Д."  
+L["uplp_fal_hg_para.description"] = "Лёгкое цевьё десантной модификации FCM. Оснащено <color=100,255,100>удлинённым стволом</color>. Позволяет установку <color=100,255,100>передних рукояток</color>."  
 
--- L["uplp_fal_hg_paras.printname"] = "Paratrooper Short Handguard"
--- L["uplp_fal_hg_paras.compactname"] = "Para. S."
--- L["uplp_fal_hg_paras.description"] = "Lightweight handguard with a shortened barrel made for a Paratrooper variant of the FCM.\nComes equipped with a <color=255,100,100>shortened barrel</color>.\nAllows installation of <color=100,255,100>foregrips</color>."
+L["uplp_fal_hg_paras.printname"] = "Короткое десантное цевьё"  
+L["uplp_fal_hg_paras.compactname"] = "Десант К."  
+L["uplp_fal_hg_paras.description"] = "Лёгкое цевьё с укороченным стволом для десантной модификации FCM. Оснащено <color=255,100,100>укороченным стволом</color>. Позволяет установку <color=100,255,100>передних рукояток</color>."  
 
 ////// Muzzles
--- L["uplp_fal_muz_long.printname"] = "Service Flash Hider"
--- L["uplp_fal_muz_long.compactname"] = "Service"
--- L["uplp_fal_muz_long.description"] = "Military-grade flash hider for the FCM."
+L["uplp_fal_muz_long.printname"] = "Армейский пламегаситель"  
+L["uplp_fal_muz_long.compactname"] = "Арм."  
+L["uplp_fal_muz_long.description"] = "Военный пламегаситель для FCM."  
 
--- L["uplp_fal_muz_sniper.printname"] = "Sniper Muzzle Brake"
--- L["uplp_fal_muz_sniper.compactname"] = "Sniper"
--- L["uplp_fal_muz_sniper.description"] = "Muzzle brake that forces gases to escape horizontally to reduce side-to-side recoil."
+L["uplp_fal_muz_sniper.printname"] = "Тормоз-компенсатор снайпера"  
+L["uplp_fal_muz_sniper.compactname"] = "Снайп."  
+L["uplp_fal_muz_sniper.description"] = "Компенсатор, перенаправляющий газы горизонтально для снижения горизонтальной отдачи."  
 
 ////// Pistol Grip
--- L["uplp_fal_pg_poly.printname"] = "Polymer Pistol Grip"
--- L["uplp_fal_pg_poly.compactname"] = "Poly."
--- L["uplp_fal_pg_poly.description"] = "Lightweight polymer pistol grip for the FCM."
+L["uplp_fal_pg_poly.printname"] = "Полимерная рукоятка"  
+L["uplp_fal_pg_poly.compactname"] = "Поли"  
+L["uplp_fal_pg_poly.description"] = "Лёгкая полимерная рукоятка для FCM."  
 
--- L["uplp_fal_pg_sniper.printname"] = "Precision Pistol Grip"
--- L["uplp_fal_pg_sniper.compactname"] = "Precision"
--- L["uplp_fal_pg_sniper.description"] = "Heavy pistol grip designed for marksman shooting made for the FCM."
+L["uplp_fal_pg_sniper.printname"] = "Точная рукоятка"  
+L["uplp_fal_pg_sniper.compactname"] = "Точная"  
+L["uplp_fal_pg_sniper.description"] = "Усиленная рукоятка для стрельбы снайперскими прицелами из FCM."  
 
--- L["uplp_fal_pg_tac.printname"] = "Tactical Pistol Grip"
--- L["uplp_fal_pg_tac.compactname"] = "Tactical"
--- L["uplp_fal_pg_tac.description"] = "Lightweight, tactical pistol grip for the FCM."
+L["uplp_fal_pg_tac.printname"] = "Тактическая рукоятка"  
+L["uplp_fal_pg_tac.compactname"] = "Такт."  
+L["uplp_fal_pg_tac.description"] = "Лёгкая тактическая рукоятка для FCM."  
 
 ////// Stocks
--- L["uplp_fal_stock_poly.printname"] = "Polymer Stock and Carrying Handle"
--- L["uplp_fal_stock_poly.compactname"] = "Poly."
--- L["uplp_fal_stock_poly.description"] = "Modernized, lightweight polymer stock and carrying handle for the FCM."
+L["uplp_fal_stock_poly.printname"] = "Полимерный приклад и рукоятка переноски"  
+L["uplp_fal_stock_poly.compactname"] = "Поли"  
+L["uplp_fal_stock_poly.description"] = "Современный лёгкий полимерный приклад и рукоятка переноски для FCM."  
 
--- L["uplp_fal_stock_para.printname"] = "Paratrooper Stock"
--- L["uplp_fal_stock_para.compactname"] = "Para."
--- L["uplp_fal_stock_para.description"] = "Foldable paratrooper stock made for the FCM."
+L["uplp_fal_stock_para.printname"] = "Десантный приклад"  
+L["uplp_fal_stock_para.compactname"] = "Десант"  
+L["uplp_fal_stock_para.description"] = "Складной приклад десантной модификации FCM."  
 
--- L["uplp_fal_stock_sniper.printname"] = "Marksman Stock"
--- L["uplp_fal_stock_sniper.compactname"] = "Marksman"
--- L["uplp_fal_stock_sniper.description"] = "Durable stock made to keep the FCM stable when firing."
+L["uplp_fal_stock_sniper.printname"] = "Приклад снайпера"  
+L["uplp_fal_stock_sniper.compactname"] = "Снайпер"  
+L["uplp_fal_stock_sniper.description"] = "Прочный приклад для стабилизации стрельбы из FCM."  
 
 ////// Magazines
--- L["uplp_fal_mag_10.printname"] = "10-Round 7.62mm"
--- L["uplp_fal_mag_10.compactname"] = "10R 7.62"
--- L["uplp_fal_mag_10.description"] = "Shortened 10-round magazine for the FCM."
+L["uplp_fal_mag_10.printname"] = "10-зарядный 7.62 мм"  
+L["uplp_fal_mag_10.compactname"] = "10R 7.62"  
+L["uplp_fal_mag_10.description"] = "Укороченный 10-зарядный магазин для FCM."  
 
--- L["uplp_fal_mag_30.printname"] = "30-Round 7.62mm"
--- L["uplp_fal_mag_30.compactname"] = "30R 7.62"
--- L["uplp_fal_mag_30.description"] = "Extended 30-round magazine for the FCM."
+L["uplp_fal_mag_30.printname"] = "30-зарядный 7.62 мм"  
+L["uplp_fal_mag_30.compactname"] = "30R 7.62"  
+L["uplp_fal_mag_30.description"] = "Удлинённый 30-зарядный магазин для FCM."  
 
--- L["uplp_fal_mag_30u.printname"] = "30-Round 7.62mm (Straight)"
--- L["uplp_fal_mag_30u.compactname"] = "30R 7.62 (S)"
--- L["uplp_fal_mag_30u.description"] = "Extended 30-round straight magazine for the FCM."
+L["uplp_fal_mag_30u.printname"] = "30-зарядный 7.62 мм (прямой)"  
+L["uplp_fal_mag_30u.compactname"] = "30R 7.62 (П)"  
+L["uplp_fal_mag_30u.description"] = "Удлинённый прямой 30-зарядный магазин для FCM."  
 
--- L["uplp_fal_mag_50.printname"] = "50-Round 7.62mm"
--- L["uplp_fal_mag_50.compactname"] = "50R 7.62"
--- L["uplp_fal_mag_50.description"] = "50-round drum magazine for the FCM."
+L["uplp_fal_mag_50.printname"] = "50-зарядный барабан 7.62 мм"  
+L["uplp_fal_mag_50.compactname"] = "50R 7.62"  
+L["uplp_fal_mag_50.description"] = "50-зарядный барабанный магазин для FCM."  
 
 ////// Scopes
--- L["uplp_fal_scope_suit.printname"] = "BRP Scope"
--- L["uplp_fal_scope_suit.compactname"] = "BRP"
--- L["uplp_fal_scope_suit.description"] = "The \"British Ranged Precision\" scope provides excellent target acquisition."
+L["uplp_fal_scope_suit.printname"] = "Прицел BRP"  
+L["uplp_fal_scope_suit.compactname"] = "BRP"  
+L["uplp_fal_scope_suit.description"] = "Прицел «British Ranged Precision» обеспечивает отличное обнаружение целей."  
 
 //////////////////// Mac-10
 L["uplp_weapon_mac"] = "CMP .380"
@@ -2560,70 +2563,70 @@ L["uplp_weapon_mac_manufacturer"] = "Military Armament Corporation"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_mac_bar_long.printname"] = "Extended Barrel & Heat Shield"
--- L["uplp_mac_bar_long.compactname"] = "Ext."
--- L["uplp_mac_bar_long.description"] = "Longer barrel for the CMP .380. Also equipped with a protective heat shield."
+L["uplp_mac_bar_long.printname"] = "Удлинённый ствол и тепловой щиток"  
+L["uplp_mac_bar_long.compactname"] = "Удл."  
+L["uplp_mac_bar_long.description"] = "Удлинённый ствол для CMP .380. Также оснащён защитным тепловым щитком."  
 
 ////// Muzzles
--- L["uplp_mac_muz_supp.printname"] = "CMP Suppressor"
--- L["uplp_mac_muz_supp.compactname"] = "CMP"
--- L["uplp_mac_muz_supp.description"] = "Large suppressor intended for use on the CMP .380."
+L["uplp_mac_muz_supp.printname"] = "Глушитель CMP"  
+L["uplp_mac_muz_supp.compactname"] = "CMP"  
+L["uplp_mac_muz_supp.description"] = "Крупный глушитель, предназначенный для использования на CMP .380."  
 
--- L["uplp_mac_muz_supptac.printname"] = "Centurion Industries Suppressor"
--- L["uplp_mac_muz_supptac.compactname"] = "CI. S."
--- L["uplp_mac_muz_supptac.description"] = "Compact but effective suppressor made by Centurion Industries. Intended for the CMP .380."
+L["uplp_mac_muz_supptac.printname"] = "Глушитель Centurion Industries"  
+L["uplp_mac_muz_supptac.compactname"] = "CI. С."  
+L["uplp_mac_muz_supptac.description"] = "Компактный, но эффективный глушитель от Centurion Industries. Предназначен для CMP .380."  
 
--- L["uplp_mac_muz_supp_surv.printname"] = "CMP Suppressor with Flashlight"
--- L["uplp_mac_muz_supp_surv.compactname"] = "CMP (F)"
--- L["uplp_mac_muz_supp_surv.description"] = "Large suppressor intended for use on the CMP .380.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
+L["uplp_mac_muz_supp_surv.printname"] = "Глушитель CMP с фонарём"  
+L["uplp_mac_muz_supp_surv.compactname"] = "CMP (Ф)"  
+L["uplp_mac_muz_supp_surv.description"] = "Крупный глушитель для CMP .380.\nОснащён фонарём, закреплённым с помощью стяжек.\nИдеально подходит для выживальщиков, которым нужен свет в темноте по пути в безопасную зону."  
 
 ////// Stocks
--- L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
--- L["uplp_mac_stock_wire.compactname"] = "Foldable"
--- L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
+L["uplp_mac_stock_wire.printname"] = "Складной проволочный приклад"  
+L["uplp_mac_stock_wire.compactname"] = "Складн."  
+L["uplp_mac_stock_wire.description"] = "Складной проволочный приклад для CMP .380."  
 
--- L["uplp_mac_stock_buffer.printname"] = "Buffer Tube"
--- L["uplp_mac_stock_buffer.compactname"] = "Buffer"
--- L["uplp_mac_stock_buffer.description"] = "Replace the wire stock with a traditional buffer tube that accepts AR-15 stocks."
+L["uplp_mac_stock_buffer.printname"] = "Буферная труба"  
+L["uplp_mac_stock_buffer.compactname"] = "Буфер"  
+L["uplp_mac_stock_buffer.description"] = "Замена проволочного приклада на традиционную буферную трубу, совместимую с AR-15."  
 
--- L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks Stock"
--- L["uplp_mac_stock_tac.compactname"] = "IronWorks"
--- L["uplp_mac_stock_tac.description"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
+L["uplp_mac_stock_tac.printname"] = "Приклад IronWorks от Centurion Industries"  
+L["uplp_mac_stock_tac.compactname"] = "IronWorks"  
+L["uplp_mac_stock_tac.description"] = "Замена проволочного приклада на усиленный вариант от IronWorks, дочернего подразделения Centurion Industries."  
 
 ////// Magazines
--- L["uplp_mac_mag10_30.printname"] = "30-Round .45 ACP Magazine"
--- L["uplp_mac_mag10_30.compactname"] = "30R .45"
--- L["uplp_mac_mag10_30.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
+L["uplp_mac_mag10_30.printname"] = "30-зарядный магазин .45 ACP"  
+L["uplp_mac_mag10_30.compactname"] = "30R .45"  
+L["uplp_mac_mag10_30.description"] = "Переводит CMP .380 в крупнокалиберный CMP .45, улучшая характеристики за счёт увеличения габаритов и веса.\nИспользует стандартный 30-зарядный магазин под патрон .45 ACP."  
 
--- L["uplp_mac_mag10_50.printname"] = "50-Round .45 ACP Drum"
--- L["uplp_mac_mag10_50.compactname"] = "50R .45"
--- L["uplp_mac_mag10_50.description"] = "Converts the CMP .380 into the larger CMP .45, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
+L["uplp_mac_mag10_50.printname"] = "50-зарядный барабан .45 ACP"  
+L["uplp_mac_mag10_50.compactname"] = "50R .45"  
+L["uplp_mac_mag10_50.description"] = "Переводит CMP .380 в крупнокалиберный CMP .45, улучшая характеристики за счёт увеличения габаритов и веса.\nИспользует <color=100,255,100>50-зарядный барабанный магазин</color> под патрон .45 ACP."  
 
--- L["uplp_mac_mag_50.printname"] = "50-Round .380 ACP Magazine"
--- L["uplp_mac_mag_50.compactname"] = "50R .380"
--- L["uplp_mac_mag_50.description"] = "Extended 50-round magazine for the CMP .380."
+L["uplp_mac_mag_50.printname"] = "50-зарядный магазин .380 ACP"  
+L["uplp_mac_mag_50.compactname"] = "50R .380"  
+L["uplp_mac_mag_50.description"] = "Удлинённый 50-зарядный магазин для CMP .380."  
 
 // Grips
--- L["uplp_mac_strap.printname"] = "CMP .380 Front Strap"
--- L["uplp_mac_strap.compactname"] = "Strap"
--- L["uplp_mac_strap.description"] = "Attach a swinging front strap to the weapon, acting as a front grip."
+L["uplp_mac_strap.printname"] = "Передняя лямка CMP .380"  
+L["uplp_mac_strap.compactname"] = "Лямка"  
+L["uplp_mac_strap.description"] = "Устанавливает подвижную переднюю лямку, выполняющую роль передней рукояти."  
 
--- L["uplp_mac_strap_cosmetic.printname"] = "CMP .380 Front Strap (Cosmetic Only)"
--- L["uplp_mac_strap_cosmetic.compactname"] = "Strap (C)"
--- L["uplp_mac_strap_cosmetic.description"] = "<color=175,175,255>Cosmetic only.</color>\nAttach a swinging front strap to the weapon."
+L["uplp_mac_strap_cosmetic.printname"] = "Передняя лямка CMP .380 (только косметическая)"  
+L["uplp_mac_strap_cosmetic.compactname"] = "Лямка (К)"  
+L["uplp_mac_strap_cosmetic.description"] = "<color=175,175,255>Только косметика.</color>\nУстанавливает подвижную переднюю лямку."  
 
 // Receivers
--- L["uplp_mac_rec_long.printname"] = "Ironclad Arms Receiver"
--- L["uplp_mac_rec_long.compactname"] = "Ironclad"
--- L["uplp_mac_rec_long.description"] = "Modified receiver with a longer rear end.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+L["uplp_mac_rec_long.printname"] = "Ресивер Ironclad Arms"  
+L["uplp_mac_rec_long.compactname"] = "Ironclad"  
+L["uplp_mac_rec_long.description"] = "Модифицированный ресивер с удлинённой задней частью.\n<color=255,100,100>Не совместим с магазинами CMP .45.</color>"  
 
--- L["uplp_mac_rec_rail.printname"] = "RIS Receiver"
--- L["uplp_mac_rec_rail.compactname"] = "RIS"
--- L["uplp_mac_rec_rail.description"] = "Installs a custom top and side RIS-rail, allowing installation of custom optics and laser sights."
+L["uplp_mac_rec_rail.printname"] = "Ресивер RIS"  
+L["uplp_mac_rec_rail.compactname"] = "RIS"  
+L["uplp_mac_rec_rail.description"] = "Устанавливает кастомные верхние и боковые RIS-рейки для монтажа оптики и лазерных целеуказателей."  
 
--- L["uplp_mac_rec_tac.printname"] = "SynPoly eXtreme Receiver"
--- L["uplp_mac_rec_tac.compactname"] = "eXtreme"
--- L["uplp_mac_rec_tac.description"] = "Based on the Ironclad Arms receiver, SynPoly's eXtreme division modified it further by giving it a modified upper receiver. Also installs RIS-rails, which allows installation of custom iron sights, optics, foregrips and laser sights.\n<color=255,100,100>Not compatible with CMP .45 magazines.</color>"
+L["uplp_mac_rec_tac.printname"] = "Ресивер SynPoly eXtreme"  
+L["uplp_mac_rec_tac.compactname"] = "eXtreme"  
+L["uplp_mac_rec_tac.description"] = "На основе ресивера Ironclad Arms, модифицированного подразделением SynPoly eXtreme. Оснащён RIS-рейками для установки прицелов, передних рукояток и лазеров.\n<color=255,100,100>Не совместим с магазинами CMP .45.</color>"  
 
 //////////////////// Mossberg 590
 L["uplp_weapon_m590"] = "Thunder 500"
@@ -2635,66 +2638,66 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 /////////// Attachments
 ////// Barrels & Tubes
--- L["uplp_m590_bar_short.printname"] = "17\" CQB Barrel"
--- L["uplp_m590_bar_short.compactname"] = "17\" CQB"
--- L["uplp_m590_bar_short.description"] = "Slightly shortened 17\" (432mm) barrel combined with a <color=255,100,100>4 round</color> magazine tube."
+L["uplp_m590_bar_short.printname"] = "17\" CQB Ствол"  
+L["uplp_m590_bar_short.compactname"] = "17\" CQB"  
+L["uplp_m590_bar_short.description"] = "Немного укороченный 17\" (432 мм) ствол в сочетании с <color=255,100,100>4-зарядной</color> трубкой магазина."  
 
--- L["uplp_m590_bar_long.printname"] = "20\" USMC Barrel"
--- L["uplp_m590_bar_long.compactname"] = "20\" USMC"
--- L["uplp_m590_bar_long.description"] = "Extended 20\" (508mm) barrel combined with a <color=100,255,100>6 round</color> magazine tube."
+L["uplp_m590_bar_long.printname"] = "20\" USMC Ствол"  
+L["uplp_m590_bar_long.compactname"] = "20\" USMC"  
+L["uplp_m590_bar_long.description"] = "Удлинённый 20\" (508 мм) ствол в сочетании с <color=100,255,100>6-зарядной</color> трубкой магазина."  
 
-////// Pump handles
--- L["uplp_m590_handle_strap.printname"] = "Default Pump Handle with Strap"
--- L["uplp_m590_handle_strap.compactname"] = "Strap"
--- L["uplp_m590_handle_strap.description"] = "Standard issue pump handle with a cosmetic strap around it."
+////// Pump handles  
+L["uplp_m590_handle_strap.printname"] = "Стандартная рукоятка с ремнём"  
+L["uplp_m590_handle_strap.compactname"] = "Ремень"  
+L["uplp_m590_handle_strap.description"] = "Стандартная рукоятка с косметическим ремнём."  
 
--- L["uplp_m590_handle_flash.printname"] = "Thunder Nightlife Pump Handle"
--- L["uplp_m590_handle_flash.compactname"] = "Nightlife"
--- L["uplp_m590_handle_flash.description"] = "Custom pump handle with a built-in flashlight."
+L["uplp_m590_handle_flash.printname"] = "Рукоятка Thunder Nightlife"  
+L["uplp_m590_handle_flash.compactname"] = "Nightlife"  
+L["uplp_m590_handle_flash.description"] = "Кастомная рукоятка с встроенным фонарём."  
 
--- L["uplp_m590_handle_magpul.printname"] = "SynPoly Pump Handle"
--- L["uplp_m590_handle_magpul.compactname"] = "SynPoly"
--- L["uplp_m590_handle_magpul.description"] = "Tactical pump handle from SynPoly."
+L["uplp_m590_handle_magpul.printname"] = "Рукоятка SynPoly"  
+L["uplp_m590_handle_magpul.compactname"] = "SynPoly"  
+L["uplp_m590_handle_magpul.description"] = "Тактическая рукоятка от SynPoly."  
 
-////// Stocks
--- L["uplp_m590_stock_short.printname"] = "Cut-Off Stock"
--- L["uplp_m590_stock_short.compactname"] = "Cut-Off"
--- L["uplp_m590_stock_short.description"] = "Cutting off the stock off of the Thunder 500 improves maneuverability at the cost of recoil control."
+////// Stocks  
+L["uplp_m590_stock_short.printname"] = "Укороченный приклад"  
+L["uplp_m590_stock_short.compactname"] = "Укороч."  
+L["uplp_m590_stock_short.description"] = "Укороченный приклад Thunder 500 повышает манёвренность, но снижает контроль отдачи."  
 
--- L["uplp_m590_stock_magpul.description"] = "Reinforced tactical stock by SynPoly for the Thunder 500."
+L["uplp_m590_stock_magpul.description"] = "Усиленный тактический приклад от SynPoly для Thunder 500."  
 
--- L["uplp_m590_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+L["uplp_m590_stock_buffer.description"] = "Кастомная пистолетная рукоятка и буферная трубка, совместимая с AR-15."  
 
-////// Irons
--- L["uplp_m590_rs_railsight.printname"] = "Top Rail with Ring Sight"
--- L["uplp_m590_rs_railsight.compactname"] = "Rail (R)"
--- L["uplp_m590_rs_railsight.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+////// Irons  
+L["uplp_m590_rs_railsight.printname"] = "Верхняя рейка с кольцевым прицелом"  
+L["uplp_m590_rs_railsight.compactname"] = "Рейка (К)"  
+L["uplp_m590_rs_railsight.description"] = "Верхняя рейка для оптики с встроенными прицельными приспособлениями."  
 
--- L["uplp_m590_rs_winged.printname"] = "Winged Rear Sight"
--- L["uplp_m590_rs_winged.compactname"] = "Winged"
--- L["uplp_m590_rs_winged.description"] = "Modified iron sights."
+L["uplp_m590_rs_winged.printname"] = "Прицел с крыльями"  
+L["uplp_m590_rs_winged.compactname"] = "Крылья"  
+L["uplp_m590_rs_winged.description"] = "Модифицированные прицельные приспособления."  
 
--- L["uplp_m590_rs_ghost.printname"] = "Thunder Rear Sight"
--- L["uplp_m590_rs_ghost.compactname"] = "Thunder"
--- L["uplp_m590_rs_ghost.description"] = "Factory iron sights."
+L["uplp_m590_rs_ghost.printname"] = "Прицел Thunder"  
+L["uplp_m590_rs_ghost.compactname"] = "Thunder"  
+L["uplp_m590_rs_ghost.description"] = "Фабричные прицельные приспособления."  
 
-////// Magazines
--- L["uplp_m590_mag_10.printname"] = "10-R Detachable Magazine"
--- L["uplp_m590_mag_10.compactname"] = "10R D."
--- L["uplp_m590_mag_10.description"] = "Installs a detachable extended magazine onto the weapon, making full top-ups quicker."
+////// Magazines  
+L["uplp_m590_mag_10.printname"] = "10-зарядный съемный магазин"  
+L["uplp_m590_mag_10.compactname"] = "10R С."  
+L["uplp_m590_mag_10.description"] = "Устанавливает съемный удлинённый магазин для быстрой перезарядки."  
 
--- L["uplp_m590_mag_5.printname"] = "5-R Detachable Magazine"
--- L["uplp_m590_mag_5.compactname"] = "5R D."
--- L["uplp_m590_mag_5.description"] = "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+L["uplp_m590_mag_5.printname"] = "5-зарядный съемный магазин"  
+L["uplp_m590_mag_5.compactname"] = "5R С."  
+L["uplp_m590_mag_5.description"] = "Устанавливает съемный магазин для быстрой перезарядки."  
 
-////// Extras & Skins
--- L["uplp_m590_heatshield.printname"] = "Heat Shield"
--- L["uplp_m590_heatshield.compactname"] = "Heat"
--- L["uplp_m590_heatshield.description"] = "Attaches a cosmetic heat shield over the barrel."
+////// Extras & Skins  
+L["uplp_m590_heatshield.printname"] = "Тепловой щиток"  
+L["uplp_m590_heatshield.compactname"] = "Щит"  
+L["uplp_m590_heatshield.description"] = "Косметический тепловой щиток над стволом."  
 
--- L["uplp_m590_shellholder.printname"] = "Shell Holster"
--- L["uplp_m590_shellholder.compactname"] = "Holster"
--- L["uplp_m590_shellholder.description"] = "Attaches a cosmetic shell holster to the left side of the weapon."
+L["uplp_m590_shellholder.printname"] = "Держатель патронов"  
+L["uplp_m590_shellholder.compactname"] = "Держатель"  
+L["uplp_m590_shellholder.description"] = "Косметический держатель патронов с левой стороны."  
 
 //////////////////// Remington 870
 L["uplp_weapon_r870"] = "Wingmaster 12G"
@@ -2708,87 +2711,88 @@ L["uplp_weapon_r870dm"] = "Wingmaster 12GM"
 L["uplp_weapon_r870_manufacturer"] = "Remington Arms"
 
 /////////// Attachments
-////// Barrels & Tubes
--- L["uplp_r870_bar_serbu.printname"] = "6.5\" Entryway"
--- L["uplp_r870_bar_serbu.compactname"] = "6.5\" Entry."
--- L["uplp_r870_bar_serbu.description"] = "Super short 6.5\" (165mm) barrel from the Entryway 12G.\nComes with a <color=255,100,100>2-round</color> tube and a foldable pump handle."
+////// Barrels & Tubes  
+L["uplp_r870_bar_serbu.printname"] = "6.5\" Entryway"  
+L["uplp_r870_bar_serbu.compactname"] = "6.5\" Entry."  
+L["uplp_r870_bar_serbu.description"] = "Сверхкороткий 6.5\" (165 мм) ствол от Entryway 12G.\nВключает <color=255,100,100>2-зарядную</color> трубку и складную рукоятку."  
 
--- L["uplp_r870_bar_lessmag.printname"] = "18.75\" Standard Barrel (5-Round)"
--- L["uplp_r870_bar_lessmag.compactname"] = "18.75\" 5R"
--- L["uplp_r870_bar_lessmag.description"] = "Default 18.75\" (476mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>5-round</color> tube."
+L["uplp_r870_bar_lessmag.printname"] = "18.75\" Стандартный ствол (5 патронов)"  
+L["uplp_r870_bar_lessmag.compactname"] = "18.75\" 5R"  
+L["uplp_r870_bar_lessmag.description"] = "Стандартный 18.75\" (476 мм) ствол для Wingmaster 12G.\nВключает <color=255,100,100>5-зарядную</color> трубку."  
 
--- L["uplp_r870_bar_long.printname"] = "26\" Hunter Barrel"
--- L["uplp_r870_bar_long.compactname"] = "26\" Hunter"
--- L["uplp_r870_bar_long.description"] = "Factory 26\" (660mm) barrel intended for hunting.\nComes with a <color=255,100,100>5-round</color> tube."
+L["uplp_r870_bar_long.printname"] = "26\" Охотничий ствол"  
+L["uplp_r870_bar_long.compactname"] = "26\" Охотн."  
+L["uplp_r870_bar_long.description"] = "Фабричный 26\" (660 мм) ствол для охоты.\nВключает <color=255,100,100>5-зарядную</color> трубку."  
 
--- L["uplp_r870_bar_police.printname"] = "18.5\" Police Barrel"
--- L["uplp_r870_bar_police.compactname"] = "18.5\" Police"
--- L["uplp_r870_bar_police.description"] = "Modified 18.5\" (469mm) barrel for the Wingmaster 12G intended for police use.\nComes with a <color=255,100,100>5-round</color> tube and built-in iron sights."
+L["uplp_r870_bar_police.printname"] = "18.5\" Полицейский ствол"  
+L["uplp_r870_bar_police.compactname"] = "18.5\" Полиц."  
+L["uplp_r870_bar_police.description"] = "Модифицированный 18.5\" (469 мм) ствол для полиции.\nВключает <color=255,100,100>5-зарядную</color> трубку и встроенные прицелы."  
 
--- L["uplp_r870_bar_sawed.printname"] = "12.5\" Short Barrel"
--- L["uplp_r870_bar_sawed.compactname"] = "12.5\" Short"
--- L["uplp_r870_bar_sawed.description"] = "Shortened 12.5\" (318mm) barrel for the Wingmaster 12G.\nComes with a <color=255,100,100>4-round</color> tube."
+L["uplp_r870_bar_sawed.printname"] = "12.5\" Короткий ствол"  
+L["uplp_r870_bar_sawed.compactname"] = "12.5\" Кор."  
+L["uplp_r870_bar_sawed.description"] = "Укороченный 12.5\" (318 мм) ствол.\nВключает <color=255,100,100>4-зарядную</color> трубку."  
 
--- L["uplp_r870_bar_usmc.printname"] = "18.5\" USMC Barrel"
--- L["uplp_r870_bar_usmc.compactname"] = "18.5\" USMC"
--- L["uplp_r870_bar_usmc.description"] = "Smooth 18.5\" (469mm) barrel for the Wingmaster 12G intended for use within the military.\nComes with an <color=100,255,100>8-round</color> tube and built-in iron sights."
+L["uplp_r870_bar_usmc.printname"] = "18.5\" USMC Ствол"  
+L["uplp_r870_bar_usmc.compactname"] = "18.5\" USMC"  
+L["uplp_r870_bar_usmc.description"] = "Гладкий 18.5\" (469 мм) ствол для военного использования.\nВключает <color=100,255,100>8-зарядную</color> трубку и встроенные прицелы."  
 
--- L["uplp_r870_bar_9.printname"] = "20\" Smooth Barrel"
--- L["uplp_r870_bar_9.compactname"] = "20\" Smooth"
--- L["uplp_r870_bar_9.description"] = "Smooth 20\" (508mm) barrel for the Wingmaster 12G.\nComes with a <color=100,255,100>9-round</color> tube."
+L["uplp_r870_bar_9.printname"] = "20\" Гладкий ствол"  
+L["uplp_r870_bar_9.compactname"] = "20\" Гладкий"  
+L["uplp_r870_bar_9.description"] = "Гладкий 20\" (508 мм) ствол.\nВключает <color=100,255,100>9-зарядную</color> трубку."  
 
--- L["uplp_r870_bar_swag.printname"] = "20\" Sport Barrel"
--- L["uplp_r870_bar_swag.compactname"] = "20\" Sport"
--- L["uplp_r870_bar_swag.description"] = "Custom 20\" (508mm) barrel intended for sport shooting.\nComes with a <color=100,255,100>9-round</color> tube."
+L["uplp_r870_bar_swag.printname"] = "20\" Спортивный ствол"  
+L["uplp_r870_bar_swag.compactname"] = "20\" Спорт"  
+L["uplp_r870_bar_swag.description"] = "Кастомный 20\" (508 мм) ствол для спортивной стрельбы.\nВключает <color=100,255,100>9-зарядную</color> трубку."  
 
-////// Pump handles
--- L["uplp_r870_handle_old.printname"] = "Old-School Pump Handle"
--- L["uplp_r870_handle_old.compactname"] = "O. S."
--- L["uplp_r870_handle_old.description"] = "Classic pump handle from the original Wingmaster."
+////// Pump handles  
+L["uplp_r870_handle_old.printname"] = "Классическая рукоятка"  
+L["uplp_r870_handle_old.compactname"] = "Классика"  
+L["uplp_r870_handle_old.description"] = "Классическая рукоятка оригинального Wingmaster."  
 
--- L["uplp_r870_handle_poly.printname"] = "Polymer Pump Handle"
--- L["uplp_r870_handle_poly.compactname"] = "Polymer"
--- L["uplp_r870_handle_poly.description"] = "Modernized polymer pump handle for the Wingmaster 12G."
+L["uplp_r870_handle_poly.printname"] = "Полимерная рукоятка"  
+L["uplp_r870_handle_poly.compactname"] = "Полимер"  
+L["uplp_r870_handle_poly.description"] = "Современная полимерная рукоятка для Wingmaster 12G."  
 
--- L["uplp_r870_handle_rail.printname"] = "Tactical Pump Handle"
--- L["uplp_r870_handle_rail.compactname"] = "Tactical"
--- L["uplp_r870_handle_rail.description"] = "Tactical pump handle with built-in rails for foregrips and laser sights."
+L["uplp_r870_handle_rail.printname"] = "Тактическая рукоятка"  
+L["uplp_r870_handle_rail.compactname"] = "Такт."  
+L["uplp_r870_handle_rail.description"] = "Тактическая рукоятка с рейками для передних рукояток и лазеров."  
 
--- L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Pump Handle"
--- L["uplp_r870_handle_flash.compactname"] = "ApexCore"
--- L["uplp_r870_handle_flash.description"] = "Custom pump handle with built-in flashlight made by ApexCore Arsenal."
+L["uplp_r870_handle_flash.printname"] = "Рукоятка ApexCore Arsenal"  
+L["uplp_r870_handle_flash.compactname"] = "ApexCore"  
+L["uplp_r870_handle_flash.description"] = "Кастомная рукоятка с фонарём от ApexCore Arsenal."  
 
-////// Stocks
--- L["uplp_r870_stock_short.printname"] = "Cut-Off Polymer Stock"
--- L["uplp_r870_stock_short.compactname"] = "C.O. (P)"
--- L["uplp_r870_stock_short.description"] = "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
+////// Stocks  
+L["uplp_r870_stock_short.printname"] = "Укороченный полимерный приклад"  
+L["uplp_r870_stock_short.compactname"] = "Укор. (П)"  
+L["uplp_r870_stock_short.description"] = "Укороченный приклад Wingmaster 12G повышает манёвренность, но снижает контроль отдачи."  
 
--- L["uplp_r870_stock_short_wood.printname"] = "Cut-Off Wooden Stock"
--- L["uplp_r870_stock_short_wood.compactname"] = "C.O. (W)"
+L["uplp_r870_stock_short_wood.printname"] = "Укороченный деревянный приклад"  
+L["uplp_r870_stock_short_wood.compactname"] = "Укор. (Д)"  
 
--- L["uplp_r870_stock_poly.printname"] = "Polymer Stock"
--- L["uplp_r870_stock_poly.compactname"] = "Polymer"
--- L["uplp_r870_stock_poly.description"] = "Modernized polymer stock for the Wingmaster 12G."
+L["uplp_r870_stock_poly.printname"] = "Полимерный приклад"  
+L["uplp_r870_stock_poly.compactname"] = "Полимер"  
+L["uplp_r870_stock_poly.description"] = "Современный полимерный приклад для Wingmaster 12G."  
 
--- L["uplp_r870_stock_magpul.description"] = "Reinforced tactical stock for the Wingmaster 12G."
+L["uplp_r870_stock_magpul.description"] = "Усиленный тактический приклад для Wingmaster 12G."  
 
--- L["uplp_r870_stock_buffer.description"] = "Custom pistol grip and buffer tube accepting AR-15-style stocks."
+L["uplp_r870_stock_buffer.description"] = "Кастомная пистолетная рукоятка и буферная трубка под AR-15."  
 
--- L["uplp_r870_stock_grip.printname"] = "Pistol Grip with No Stock"
--- L["uplp_r870_stock_grip.compactname"] = "P. Grip"
--- L["uplp_r870_stock_grip.description"] = "A vertical pistol grip without any rear stock."
+L["uplp_r870_stock_grip.printname"] = "Пистолетная рукоятка без приклада"  
+L["uplp_r870_stock_grip.compactname"] = "Рукоять"  
+L["uplp_r870_stock_grip.description"] = "Вертикальная пистолетная рукоятка без приклада."  
 
--- L["uplp_r870_stock_fold.printname"] = "Pistol Grip with Foldable Stock"
--- L["uplp_r870_stock_fold.compactname"] = "P. Grip (F)"
--- L["uplp_r870_stock_fold.description"] = "A vertical pistol grip with a foldable stock."
+L["uplp_r870_stock_fold.printname"] = "Пистолетная рукоять со складным прикладом"  
+L["uplp_r870_stock_fold.compactname"] = "Складной"  
+L["uplp_r870_stock_fold.description"] = "Вертикальная пистолетная рукоятка со складным прикладом."  
 
-////// Rail
--- L["uplp_r870_iron_none.printname"] = "No Top Rail"
--- L["uplp_r870_iron_none.compactname"] = "N/A"
--- L["uplp_r870_iron_none.description"] = "Removes the top rail for a sleeker appearance."
+////// Rail  
+L["uplp_r870_iron_none.printname"] = "Без верхней рейки"  
+L["uplp_r870_iron_none.compactname"] = "Нет"  
+L["uplp_r870_iron_none.description"] = "Удаляет верхнюю рейку для более строгого вида."  
 
-////// Extras & Skins
--- L["uplp_r870_gold.description"] = "Replaces the internals with golden ones.\n\n<color=255,255,100>Unlocked at Commander (Lv55)</color>"
+////// Extras & Skins  
+L["uplp_r870_gold.description"] = "Заменяет внутренние части на золотые.\n<color=255,255,100>Доступно на уровне Командир (55 ур.)</color>"  
+
 
 //////////////////// ArmaLite AR-18
 L["uplp_weapon_ar18"] = "MAR-63"
@@ -2800,41 +2804,41 @@ L["uplp_weapon_ar18_manufacturer"] = "ArmaLite"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_ar18_bar_carbine.printname"] = "10.1\" MAR-63S Carbine Barrel and Handguard"
--- L["uplp_ar18_bar_carbine.compactname"] = "10.1\" 63S C."
--- L["uplp_ar18_bar_carbine.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S."
+L["uplp_ar18_bar_carbine.printname"] = "10.1\" Короткий ствол и цевьё MAR-63S"  
+L["uplp_ar18_bar_carbine.compactname"] = "10.1\" 63S К."  
+L["uplp_ar18_bar_carbine.description"] = "Укороченный 10.1\" (257 мм) ствол и цевьё от MAR-63S."  
 
--- L["uplp_ar18_bar_pistol.printname"] = "10.1\" MAR-63S Barrel and Handguard"
--- L["uplp_ar18_bar_pistol.compactname"] = "10.1\" 63S"
--- L["uplp_ar18_bar_pistol.description"] = "Shortened 10.1\" (257mm) barrel and handguard from the MAR-63S. Comes with a built-in front grip."
+L["uplp_ar18_bar_pistol.printname"] = "10.1\" Ствол и цевьё MAR-63S"  
+L["uplp_ar18_bar_pistol.compactname"] = "10.1\" 63S"  
+L["uplp_ar18_bar_pistol.description"] = "Укороченный 10.1\" (257 мм) ствол и цевьё от MAR-63S. Включает встроенную переднюю рукоятку."  
 
 ////// Muzzle
--- L["uplp_ar18_muz.printname"] = "MAR-63 Muzzle Brake"
--- L["uplp_ar18_muz.compactname"] = "MAR-63"
--- L["uplp_ar18_muz.description"] = "Custom muzzle brake intended for the MAR-63."
+L["uplp_ar18_muz.printname"] = "Тормоз-компенсатор MAR-63"  
+L["uplp_ar18_muz.compactname"] = "MAR-63"  
+L["uplp_ar18_muz.description"] = "Кастомный тормоз-компенсатор для MAR-63."  
 
 ////// Mags
--- L["uplp_ar18_mag_40.printname"] = "40-Round 5.56x45mm"
--- L["uplp_ar18_mag_40.compactname"] = "40R 5.56"
--- L["uplp_ar18_mag_40.description"] = "Extended 40-round magazine for the MAR-63."
+L["uplp_ar18_mag_40.printname"] = "40-зарядный 5.56×45 мм"  
+L["uplp_ar18_mag_40.compactname"] = "40R 5.56"  
+L["uplp_ar18_mag_40.description"] = "Удлинённый 40-зарядный магазин для MAR-63."  
 
--- L["uplp_ar18_mag_20.printname"] = "20-Round 5.56x45mm"
--- L["uplp_ar18_mag_20.compactname"] = "20R 5.56"
--- L["uplp_ar18_mag_20.description"] = "Shortened 20-round magazine for the MAR-63."
+L["uplp_ar18_mag_20.printname"] = "20-зарядный 5.56×45 мм"  
+L["uplp_ar18_mag_20.compactname"] = "20R 5.56"  
+L["uplp_ar18_mag_20.description"] = "Укороченный 20-зарядный магазин для MAR-63."  
 
 ////// Stocks
--- L["uplp_ar18_stock_fixed.printname"] = "Fixed Stock"
--- L["uplp_ar18_stock_fixed.compactname"] = "Fixed"
--- L["uplp_ar18_stock_fixed.description"] = "Factory-installed, fixed stock."
+L["uplp_ar18_stock_fixed.printname"] = "Фиксированный приклад"  
+L["uplp_ar18_stock_fixed.compactname"] = "Фикс."  
+L["uplp_ar18_stock_fixed.description"] = "Фабричный фиксированный приклад."  
 
--- L["uplp_ar18_stock_fixed_wood.printname"] = "Fixed Wooden Stock & Handguard"
--- L["uplp_ar18_stock_fixed_wood.compactname"] = "Wooden"
--- L["uplp_ar18_stock_fixed_wood.description"] = "Wooden variant of the factory stock and front handguard."
+L["uplp_ar18_stock_fixed_wood.printname"] = "Деревянный приклад и цевьё"  
+L["uplp_ar18_stock_fixed_wood.compactname"] = "Дерево"  
+L["uplp_ar18_stock_fixed_wood.description"] = "Деревянная версия фабричного приклада и цевья."  
 
 ////// Optics
--- L["uplp_ar18_scope_real.printname"] = "MAR Optical Sight"
--- L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"
--- L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
+L["uplp_ar18_scope_real.printname"] = "Оптический прицел MAR"  
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"  
+L["uplp_ar18_scope_real.description"] = "Фабричный оптический прицел с 3x увеличением для MAR-63."  
 
 //////////////////// MP9N
 L["uplp_weapon_mp9"] = "F9 \"Гепард\""
@@ -2848,65 +2852,65 @@ L["uplp_weapon_mp9_manufacturer"] = "Brügger & Thomet | Steyr"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_mp9_bar_short.printname"] = "Extended Barrel and Shroud"
--- L["uplp_mp9_bar_short.compactname"] = "Ext."
--- L["uplp_mp9_bar_short.description"] = "Extended barrel with built-in protective shroud that, additionally, has built-in RIS rails."
+L["uplp_mp9_bar_short.printname"] = "Удлинённый ствол и кожух"  
+L["uplp_mp9_bar_short.compactname"] = "Удл."  
+L["uplp_mp9_bar_short.description"] = "Удлинённый ствол с защитным кожухом, оснащённым RIS-рейками."  
 
-////// Muzzle
--- L["uplp_mp9_muzzle_sup.printname"] = "F9 \"Cheetah\" Short Suppressor"
--- L["uplp_mp9_muzzle_sup.compactname"] = "Supp. S"
--- L["uplp_mp9_muzzle_sup.description"] = "Short suppressor intended for use on the F9 \"Cheetah\"."
+////// Muzzle  
+L["uplp_mp9_muzzle_sup.printname"] = "Короткий глушитель F9 \"Cheetah\""  
+L["uplp_mp9_muzzle_sup.compactname"] = "К. Глуш."  
+L["uplp_mp9_muzzle_sup.description"] = "Короткий глушитель для F9 \"Cheetah\"."  
 
--- L["uplp_mp9_muzzle_supold.printname"] = "MP \"Gepard\" Prototype Suppressor"
--- L["uplp_mp9_muzzle_supold.compactname"] = "\"Gepard\""
--- L["uplp_mp9_muzzle_supold.description"] = "Old prototype suppressor made for the prototype MP \"Gepard\", the predecessor to the F9 \"Cheetah\"."
+L["uplp_mp9_muzzle_supold.printname"] = "Прототип глушителя MP \"Gepard\""  
+L["uplp_mp9_muzzle_supold.compactname"] = "\"Gepard\""  
+L["uplp_mp9_muzzle_supold.description"] = "Прототип глушителя для MP \"Gepard\" — предшественника F9 \"Cheetah\"."  
 
 ////// Mags
--- L["uplp_mp9_mag_20.printname"] = "20-Round 9x19mm"
--- L["uplp_mp9_mag_20.compactname"] = "20R 9x19"
--- L["uplp_mp9_mag_20.description"] = "Shortened 20-round magazine for the F9 \"Cheetah\"."
+L["uplp_mp9_mag_20.printname"] = "20-зарядный 9×19 мм"  
+L["uplp_mp9_mag_20.compactname"] = "20R 9×19"  
+L["uplp_mp9_mag_20.description"] = "Укороченный 20-зарядный магазин для F9 \"Cheetah\"."  
 
--- L["uplp_mp9_mag_42.printname"] = "42-Round 9x19mm"
--- L["uplp_mp9_mag_42.compactname"] = "42R 9x19"
--- L["uplp_mp9_mag_42.description"] = "Custom-made extended 42-round magazine for the F9 \"Cheetah\"."
+L["uplp_mp9_mag_42.printname"] = "42-зарядный 9×19 мм"  
+L["uplp_mp9_mag_42.compactname"] = "42R 9×19"  
+L["uplp_mp9_mag_42.description"] = "Кастомный удлинённый 42-зарядный магазин для F9 \"Cheetah\"."  
 
-////// Grips
--- L["uplp_mp9_grip_raw.printname"] = "Remove Top & Bottom Rails"
--- L["uplp_mp9_grip_raw.compactname"] = "N/A"
--- L["uplp_mp9_grip_raw.description"] = "Removes the top and bottom rails, making it resemble the prototype MP \"Gepard\"."
+////// Grips  
+L["uplp_mp9_grip_raw.printname"] = "Удалить верхнюю и нижнюю рейки"  
+L["uplp_mp9_grip_raw.compactname"] = "Прототип"  
+L["uplp_mp9_grip_raw.description"] = "Удаляет верхнюю и нижнюю рейки, придавая вид прототипа MP \"Gepard\"."  
 
--- L["uplp_mp9_grip_rail.printname"] = "Bottom Rail as Support"
--- L["uplp_mp9_grip_rail.compactname"] = "Rail"
--- L["uplp_mp9_grip_rail.description"] = "Utilize the attached bottom rail as a hand support."
+L["uplp_mp9_grip_rail.printname"] = "Нижняя рейка как опора"  
+L["uplp_mp9_grip_rail.compactname"] = "Рейка"  
+L["uplp_mp9_grip_rail.description"] = "Использование нижней рейки в качестве цевья."  
 
-////// Stocks
--- L["uplp_mp9_stock_foldable.printname"] = "Foldable Stock"
--- L["uplp_mp9_stock_foldable.compactname"] = "Foldable"
--- L["uplp_mp9_stock_foldable.description"] = "Factory-installed foldable stock for the F9 \"Cheetah\"."
+////// Stocks  
+L["uplp_mp9_stock_foldable.printname"] = "Складной приклад"  
+L["uplp_mp9_stock_foldable.compactname"] = "Складн."  
+L["uplp_mp9_stock_foldable.description"] = "Фабричный складной приклад для F9 \"Cheetah\"."  
 
--- L["uplp_mp9_stock_tac.printname"] = "Tactical Stock"
--- L["uplp_mp9_stock_tac.compactname"] = "Tac."
--- L["uplp_mp9_stock_tac.description"] = "Custom-made stock for the F9 \"Cheetah\"."
+L["uplp_mp9_stock_tac.printname"] = "Тактический приклад"  
+L["uplp_mp9_stock_tac.compactname"] = "Такт."  
+L["uplp_mp9_stock_tac.description"] = "Кастомный приклад для F9 \"Cheetah\"."  
 
--- L["uplp_mp9_stock_sling.printname"] = "Rear Sling"
--- L["uplp_mp9_stock_sling.compactname"] = "Sling"
--- L["uplp_mp9_stock_sling.description"] = "Attaches a cosmetic rear sling onto the F9 \"Cheetah\"."
+L["uplp_mp9_stock_sling.printname"] = "Задний ремень"  
+L["uplp_mp9_stock_sling.compactname"] = "Ремень"  
+L["uplp_mp9_stock_sling.description"] = "Косметический задний ремень для F9 \"Cheetah\"."  
 
--- L["uplp_mp9_stock_fixed.printname"] = "Fixed Stock"
--- L["uplp_mp9_stock_fixed.compactname"] = "Fixed"
--- L["uplp_mp9_stock_fixed.description"] = "Classic fixed stock for the F9 \"Cheetah\"."
+L["uplp_mp9_stock_fixed.printname"] = "Фиксированный приклад"  
+L["uplp_mp9_stock_fixed.compactname"] = "Фикс."  
+L["uplp_mp9_stock_fixed.description"] = "Классический фиксированный приклад для F9 \"Cheetah\"."  
 
-////// Skins
--- L["uplp_mp9_skin_white.printname"] = "Tactical White & Red Skin"
--- L["uplp_mp9_skin_white.compactname"] = "W&R"
--- L["uplp_mp9_skin_white.description"] = "Tactical white variant of the F9 \"Cheetah\" with red details.\n\nPerfect for those protecting Glass City."
+////// Skins  
+L["uplp_mp9_skin_white.printname"] = "Тактическая бело-красная окраска"  
+L["uplp_mp9_skin_white.compactname"] = "Б&К"  
+L["uplp_mp9_skin_white.description"] = "Белая тактическая версия F9 \"Cheetah\" с красными элементами.\nИдеально подходит для защиты Стеклянного Города."  
 
 //////////////////// PKM
-L["uplp_weapon_pkm"] = "7,62-мм ПС"
+L["uplp_weapon_pkm"] = "ПС 7.62"
 L["uplp_weapon_pkm_desc"] = "Пулемет Соколова — это надежное оружие с ленточной подачей, известное своей долговечностью и точностью. Оно использовалось в различных конфликтах, обеспечивая огневую поддержку с впечатляющим диапазоном и мощностью."
 
-L["uplp_weapon_pkm_pkp"] = "7,62-мм ПСМ" -- "Modern"
-L["uplp_weapon_pkm_bp"] = "7,62-мм ПС-Б" -- "Bullpup"
+L["uplp_weapon_pkm_pkp"] = "ПСМ 7.62" -- "Modern"
+L["uplp_weapon_pkm_bp"] = "ПС-БП 7.62" -- "Bullpup"
 
 L["uplp_weapon_pkm_real"] = "ПКМ | ПКП «Печенег»"
 
@@ -2914,37 +2918,37 @@ L["uplp_weapon_pkm_manufacturer"] = "ЦНИИточмаш"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_pkm_brl_aek.printname"] = "\"Медоед\" Barrel"
--- L["uplp_pkm_brl_aek.compactname"] = "Медоед"
--- L["uplp_pkm_brl_aek.description"] = "Medium weight barrel for the PS 7.62 with a <color=100,255,100>large, pre-installed suppressor</color>."
+L["uplp_pkm_brl_aek.printname"] = "Ствол \"Медоед\""  
+L["uplp_pkm_brl_aek.compactname"] = "Медоед"  
+L["uplp_pkm_brl_aek.description"] = "Средний ствол для ПС 7.62 с <color=100,255,100>крупным встроенным глушителем</color>."  
 
--- L["uplp_pkm_brl_pkp.printname"] = "\"PSM\" Barrel"
--- L["uplp_pkm_brl_pkp.compactname"] = "PSM"
--- L["uplp_pkm_brl_pkp.description"] = "Heavy barrel from the more modernized PSM 7.62."
+L["uplp_pkm_brl_pkp.printname"] = "Ствол \"ПСМ\""  
+L["uplp_pkm_brl_pkp.compactname"] = "ПСМ"  
+L["uplp_pkm_brl_pkp.description"] = "Тяжёлый ствол от модернизированного ПСМ 7.62."  
 
-////// Furniture
--- L["uplp_pkm_furn_poly.printname"] = "Polymer Furniture"
--- L["uplp_pkm_furn_poly.compactname"] = "Polymer"
--- L["uplp_pkm_furn_poly.description"] = "Replaces the wooden furniture with polymer ones.\nPurely <color=150,150,255>cosmetic</color>."
+////// Furniture  
+L["uplp_pkm_furn_poly.printname"] = "Полимерный приклад и рукоять"  
+L["uplp_pkm_furn_poly.compactname"] = "Полимер"  
+L["uplp_pkm_furn_poly.description"] = "Замена деревянную фурнитуру на полимерную.\n<color=150,150,255>Только косметика</color>."  
 
--- L["uplp_pkm_furn_zenit.printname"] = "Zenith Furniture"
--- L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
--- L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
+L["uplp_pkm_furn_zenit.printname"] = "Приклад и рукоять Zenith"  
+L["uplp_pkm_furn_zenit.compactname"] = "Zenith"  
+L["uplp_pkm_furn_zenit.description"] = "Замена деревянную фурнитуру на тактическую от Zenith."  
 
-////// Receiver
--- L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
--- L["uplp_pkm_rec_bullpup.compactname"] = "PS-BP"
--- L["uplp_pkm_rec_bullpup.description"] = "Converts the PS 7.62 into a bullpup, improving maneuverability at the cost of handling.\nComes pre-installed with the <color=100,255,100>Zenith 45-Degree Grip</color> and <color=100,255,100>XW Red Dot</color>*.\n\n*Can be swapped out for other optics."
+////// Receiver  
+L["uplp_pkm_rec_bullpup.printname"] = "Комплект переделки ПС-БП 7.62"  
+L["uplp_pkm_rec_bullpup.compactname"] = "ПС-БП"  
+L["uplp_pkm_rec_bullpup.description"] = "Переводит ПС 7.62 в буллпап, повышая манёвренность за счёт управления.\nВключает <color=100,255,100>45-градусную рукоять Zenith</color> и <color=100,255,100>красную точку XW</color>*.\n*Можно заменить на другую оптику."  
 
-////// Misc.
--- L["uplp_pkm_bipod.printname"] = "PS 7.62 Bipod"
--- L["uplp_pkm_bipod.compactname"] = "Bipod"
--- L["uplp_pkm_bipod.description"] = "Standard-issue bipod."
+////// Misc.  
+L["uplp_pkm_bipod.printname"] = "Сошки ПС 7.62"  
+L["uplp_pkm_bipod.compactname"] = "Сошки"  
+L["uplp_pkm_bipod.description"] = "Стандартный сошки."  
 
--- L["uplp_pkm_taccover.printname"] = "Tactical Top Cover"
--- L["uplp_pkm_taccover.compactname"] = "Tac. TC"
--- L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the RIS rail.\nPurely <color=150,150,255>cosmetic</color>."
+L["uplp_pkm_taccover.printname"] = "Тактическая верхняя крышка"  
+L["uplp_pkm_taccover.compactname"] = "Такт. Крышка"  
+L["uplp_pkm_taccover.description"] = "Тактическая верхняя крышка с RIS-рейкой.\n<color=150,150,255>Только косметика</color>."  
 
--- L["uplp_pkm_handguard.printname"] = "Tactical Hand Guard"
--- L["uplp_pkm_handguard.compactname"] = "Tac. HG"
--- L["uplp_pkm_handguard.description"] = "Displays the tactical handguard with bottom and side rails.\nPurely <color=150,150,255>cosmetic</color>."
+L["uplp_pkm_handguard.printname"] = "Тактическое цевьё"  
+L["uplp_pkm_handguard.compactname"] = "Такт. Цевьё"  
+L["uplp_pkm_handguard.description"] = "Тактическое цевьё с нижними и боковыми рейками.\n<color=150,150,255>Только косметика</color>."  

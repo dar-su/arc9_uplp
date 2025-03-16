@@ -2,10 +2,13 @@
 [list]
 	[*] Added the [b]PS 7.62[/b], a large calibre light machine gun. PolyArms' first!
 	[*] Added the [b]RZ 12.7[/b], a very large calibre Russian revolver.
+	[*] Added a new [b]Chrome Frame[/b] attachment to the [u]Deagle[/u].
 [/list]
 
 [h1]Changed content[/h1]
 [list]
+	[*] Tweaked the animations on the SPAW-12 - Contributed by Fesiug
+	[*] Tweaked all weapon minimum progress values, ensuring minimal downtime when performing certain actions - Contributed by Fesiug
 	[*] All the holographic reticles have been adjusted to have a more realistic appearance.
 	[*] Updated certain localizations, including community ones.
 [/list]

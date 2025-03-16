@@ -424,7 +424,7 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-        MinProgress = 0.75,
+        MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
