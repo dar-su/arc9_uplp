@@ -7,8 +7,8 @@
 
 [h1]Changed content[/h1]
 [list]
-	[*] Tweaked the animations on the SPAW-12 - Contributed by fesiug
-	[*] Tweaked all weapon minimum progress values, ensuring minimal downtime when performing certain actions - Contributed by fesiug
+	[*] Tweaked the animations on the SPAW-12 - Contributed by Fesiug
+	[*] Tweaked all weapon minimum progress values, ensuring minimal downtime when performing certain actions - Contributed by Fesiug
 	[*] All the holographic reticles have been adjusted to have a more realistic appearance.
 	[*] Updated certain localizations, including community ones.
 [/list]
