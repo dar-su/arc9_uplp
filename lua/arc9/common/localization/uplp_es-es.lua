@@ -2334,11 +2334,41 @@ L["uplp_aug_stock_black.description"] = "Cambia el aspecto de la culata AW-UG, l
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "El \"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Wrist Destroyer 12\") es un revólver ruso muy potente que dispara el gran cartucho de 12,7x55 mm. Incluso cuando dispara desde la cámara inferior del cilindro, a diferencia de la mayoría de los revólveres, se dice que el retroceso tiene la tendencia a arruinar las muñecas de sus usuarios, de ahí que reciba el apodo de \"Wrist Destroyer\"."
+L["uplp_weapon_rsh12_desc"] = "El RZ 12.7 (En ruso: Разрушитель запястий | Razrushitel' zapyastiy, \"Wrist Destroyer\") es un revólver ruso muy potente que dispara el gran cartucho de 12,7x55 mm. Incluso cuando dispara desde la cámara inferior del cilindro, a diferencia de la mayoría de los revólveres, se dice que el retroceso tiene la tendencia a arruinar las muñecas de sus usuarios, de ahí que reciba el apodo de \"Wrist Destroyer\"."
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
+
+L["uplp_weapon_rsh12_rr"] = "RR 12.7 \"Okhotnik\""
+
+/////////// Attachments
+////// Barrel
+-- L["uplp_rsh12_bar_long.printname"] = "Extended Anodized Barrel"
+-- L["uplp_rsh12_bar_long.compactname"] = "Ext."
+-- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the RZ 12.7."
+
+-- L["uplp_rsh12_bar_long_o.printname"] = "Extended Anodized Barrel (Hunter Orange)"
+-- L["uplp_rsh12_bar_long_o.compactname"] = "Ext. (O)"
+-- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the RZ 12.7 - now in Hunter Orange!"
+
+-- L["uplp_rsh12_bar_short.printname"] = "RR \"Okhotnik\" Barrel"
+-- L["uplp_rsh12_bar_short.compactname"] = "Okhotnik"
+-- L["uplp_rsh12_bar_short.description"] = "Short barrel made for the civilian RR 12.7 \"Okhotnik\" (Revolver Rifle \"Hunter\").
+
+////// Grips
+-- L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"
+-- L["uplp_rsh12_grip_tac.compactname"] = "SS"
+-- L["uplp_rsh12_grip_tac.description"] = "Custom-made pistol grip for the RZ 12.7 made for sport shooting.\n\nUnsure if the weapon can be used for sport shooting, but what the hell."
+
+-- L["uplp_rsh12_grip_stock.printname"] = "\"Okhotnik\" Stock"
+-- L["uplp_rsh12_grip_stock.compactname"] = "Stock"
+-- L["uplp_rsh12_grip_stock.description"] = "Custom stock for the civilian RR 12.7 \"Okhotnik\"."
+
+////// Muzzles
+-- L["uplp_rsh12_supp.printname"] = "Behemoth Suppressor"
+-- L["uplp_rsh12_supp.compactname"] = "Behemoth"
+-- L["uplp_rsh12_supp.description"] = "Large suppressor made for the large 12.7×55mm round."
 
 //////////////////// Mick Strider's Bowie Knife
 L["uplp_weapon_knife"] = "Badlands Bowie"

@@ -2344,12 +2344,42 @@ L["uplp_aug_stock_black.compactname"] = "Svart"
 L["uplp_aug_stock_black.description"] = "Ändrar utseendet på kolven, manöverhandtaget och det vikbara framgreppet på AW-UG med några som är svarta."
 
 //////////////////// RSh-12
-L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12\" (Razrushitel' zapyastiy 12, \"Handledsförstöraren 12\") är en väldigt kraftfull rysk revolver som skjuter den stora 12,7 × 55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."
+L["uplp_weapon_rsh12"] = "RZ 12,7"
+L["uplp_weapon_rsh12_desc"] = "RZ 12,7 (Ryska: Разрушитель запястий | Razrushitel' zapyastiy, \"Handledsförstöraren\") är en väldigt kraftfull rysk revolver som skjuter den stora 12,7 × 55mm patronen. Även om den skjuter från ned nedre delen av cylindern till motsat från andra revolvrar så rapporteras det att rekylen har förmågan att förstöra användarnas handleder, vilket har gett den smeknamnet \"Handledsförstöraren\"."
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
+
+L["uplp_weapon_rsh12_rr"] = "RR 12,7 \"Okhotnik\""
+
+/////////// Attachments
+////// Barrel
+L["uplp_rsh12_bar_long.printname"] = "Förlängd Anodiserad Pipa"
+L["uplp_rsh12_bar_long.compactname"] = "Förl."
+L["uplp_rsh12_bar_long.description"] = "Förlängd pipa gjord från anodiserad stål till RZ 12,7."
+
+L["uplp_rsh12_bar_long_o.printname"] = "Förlängd Anodiserad Pipa (Hunter Orange)"
+L["uplp_rsh12_bar_long_o.compactname"] = "Ext. (O)"
+L["uplp_rsh12_bar_long_o.description"] = "Förlängd pipa gjord på anodiserad stål till RZ 12,7 - nu i Hunter Orange!"
+
+L["uplp_rsh12_bar_short.printname"] = "RR \"Okhotnik\" Pipa"
+L["uplp_rsh12_bar_short.compactname"] = "Okhotnik"
+L["uplp_rsh12_bar_short.description"] = "Kort pipa gjord till den civila RR 12,7 \"Okhotnik\" (Revolvergevär \"Jägare\")."
+
+////// Grips
+L["uplp_rsh12_grip_tac.printname"] = "Sportskytte Grepp"
+L["uplp_rsh12_grip_tac.compactname"] = "SS"
+L["uplp_rsh12_grip_tac.description"] = "Anpassat pistolgrepp till RZ 12,7 gjord för sportskytte.\n\nOsäker om vapnet kommer användas i sportskytte, men vad fan."
+
+L["uplp_rsh12_grip_stock.printname"] = "\"Okhotnik\"-Kolv"
+L["uplp_rsh12_grip_stock.compactname"] = "Kolv"
+L["uplp_rsh12_grip_stock.description"] = "Anpassad kolv till den civila RR 12,7 \"Okhotnik\"."
+
+////// Muzzles
+L["uplp_rsh12_supp.printname"] = "Behemot Ljuddämpare"
+L["uplp_rsh12_supp.compactname"] = "Behemot"
+L["uplp_rsh12_supp.description"] = "Massiv ljuddämpare gjord till den stora 12,7 × 55 mm patronen."
 
 //////////////////// Mick Strider's Bowie Knife
 L["uplp_weapon_knife"] = "Badlands-Bowie"

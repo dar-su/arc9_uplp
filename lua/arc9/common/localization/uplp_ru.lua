@@ -2346,12 +2346,42 @@ L["uplp_aug_stock_black.compactname"] = "Чёрный"
 L["uplp_aug_stock_black.description"] = "Изменяет цвет ложи, рукоятки взведения и складной рукоятки на чёрный."
 
 //////////////////// RSh-12
-L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12.7\" - это мощный российский револьвер, стреляющий крупным патроном 12.7x55 мм. Не смотря на стрельбу из нижней камеры барабана, отдача может повреждать запястья стрелкой, что и привело к прозвищу \"Разрушитель запястий\"."
+L["uplp_weapon_rsh12"] = "РЗ 12,7"
+L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12,7\" - это мощный российский револьвер, стреляющий крупным патроном 12.7x55 мм. Не смотря на стрельбу из нижней камеры барабана, отдача может повреждать запястья стрелкой, что и привело к прозвищу \"Разрушитель запястий\"."
 
 L["uplp_weapon_rsh12_real"] = "РШ-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "Конструкторское бюро приборостроения"
+
+L["uplp_weapon_rsh12_rr"] = "РР 12,7 «Охотник»"
+
+/////////// Attachments
+////// Barrel
+-- L["uplp_rsh12_bar_long.printname"] = "Extended Anodized Barrel"
+-- L["uplp_rsh12_bar_long.compactname"] = "Ext."
+-- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the РЗ 12,7."
+
+-- L["uplp_rsh12_bar_long_o.printname"] = "Extended Anodized Barrel (Hunter Orange)"
+-- L["uplp_rsh12_bar_long_o.compactname"] = "Ext. (O)"
+-- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the РЗ 12,7 - now in Hunter Orange!"
+
+-- L["uplp_rsh12_bar_short.printname"] = "РР «Охотник» Barrel"
+-- L["uplp_rsh12_bar_short.compactname"] = "Охотник"
+-- L["uplp_rsh12_bar_short.description"] = "Short barrel made for the civilian РР 12,7 «Охотник». («Револьверное ружье»)
+
+////// Grips
+-- L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"
+-- L["uplp_rsh12_grip_tac.compactname"] = "SS"
+-- L["uplp_rsh12_grip_tac.description"] = "Custom-made pistol grip for the РЗ 12,7 made for sport shooting.\n\nUnsure if the weapon can be used for sport shooting, but what the hell."
+
+-- L["uplp_rsh12_grip_stock.printname"] = "«Охотник» Stock"
+-- L["uplp_rsh12_grip_stock.compactname"] = "Stock"
+-- L["uplp_rsh12_grip_stock.description"] = "Custom stock for the civilian РЗ 12,7 «Охотник»."
+
+////// Muzzles
+-- L["uplp_rsh12_supp.printname"] = "Behemoth Suppressor"
+-- L["uplp_rsh12_supp.compactname"] = "Behemoth"
+-- L["uplp_rsh12_supp.description"] = "Large suppressor made for the large 12.7×55mm round."
 
 //////////////////// Mick Strider's Bowie Knife
 L["uplp_weapon_knife"] = "Нож Боуи"
