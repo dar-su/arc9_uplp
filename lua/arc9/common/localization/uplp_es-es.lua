@@ -2344,17 +2344,17 @@ L["uplp_weapon_rsh12_rr"] = "RR 12.7 \"Okhotnik\""
 
 /////////// Attachments
 ////// Barrel
--- L["uplp_rsh12_bar_long.printname"] = "Extended Anodized Barrel"
--- L["uplp_rsh12_bar_long.compactname"] = "Ext."
--- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the RZ 12.7."
+-- L["uplp_rsh12_bar_long.printname"] = "RR \"Okhotnik\" Barrel"
+-- L["uplp_rsh12_bar_long.compactname"] = "Okhotnik"
+-- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the civilian RR 12.7 \"Okhotnik\" (Revolver Rifle \"Hunter\")."
 
--- L["uplp_rsh12_bar_long_o.printname"] = "Extended Anodized Barrel (Hunter Orange)"
--- L["uplp_rsh12_bar_long_o.compactname"] = "Ext. (O)"
--- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the RZ 12.7 - now in Hunter Orange!"
+-- L["uplp_rsh12_bar_long_o.printname"] = "RR \"Okhotnik\" Barrel (Hunter Orange)"
+-- L["uplp_rsh12_bar_long_o.compactname"] = "Okhot. (O)"
+-- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the civilian RR 12.7 \"Okhotnik\" (Revolver Rifle \"Hunter\") - now in Hunter Orange!"
 
--- L["uplp_rsh12_bar_short.printname"] = "RR \"Okhotnik\" Barrel"
--- L["uplp_rsh12_bar_short.compactname"] = "Okhotnik"
--- L["uplp_rsh12_bar_short.description"] = "Short barrel made for the civilian RR 12.7 \"Okhotnik\" (Revolver Rifle \"Hunter\").
+-- L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
+-- L["uplp_rsh12_bar_short.compactname"] = "WW"
+-- L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
 
 ////// Grips
 -- L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"

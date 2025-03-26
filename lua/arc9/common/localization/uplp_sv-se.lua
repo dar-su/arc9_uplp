@@ -2355,17 +2355,17 @@ L["uplp_weapon_rsh12_rr"] = "RR 12,7 \"Okhotnik\""
 
 /////////// Attachments
 ////// Barrel
-L["uplp_rsh12_bar_long.printname"] = "Förlängd Anodiserad Pipa"
-L["uplp_rsh12_bar_long.compactname"] = "Förl."
-L["uplp_rsh12_bar_long.description"] = "Förlängd pipa gjord från anodiserad stål till RZ 12,7."
+L["uplp_rsh12_bar_long.printname"] = "RR \"Okhotnik\" Pipa"
+L["uplp_rsh12_bar_long.compactname"] = "Okhotnik"
+L["uplp_rsh12_bar_long.description"] = "Förlängd pipa gjord från anodiserad stål till civilia RR 12,7 \"Okhotnik\" (Revolvergevär \"Jägare\")."
 
-L["uplp_rsh12_bar_long_o.printname"] = "Förlängd Anodiserad Pipa (Hunter Orange)"
-L["uplp_rsh12_bar_long_o.compactname"] = "Ext. (O)"
-L["uplp_rsh12_bar_long_o.description"] = "Förlängd pipa gjord på anodiserad stål till RZ 12,7 - nu i Hunter Orange!"
+L["uplp_rsh12_bar_long_o.printname"] = "RR \"Okhotnik\" Pipa (Hunter Orange)"
+L["uplp_rsh12_bar_long_o.compactname"] = "Okhot. (O)"
+L["uplp_rsh12_bar_long_o.description"] = "Förlängd pipa gjord på anodiserad stål till den civila RR 12,7 \"Okhotnik\" (Revolvergevär \"Jägare\") - nu i Hunter Orange!"
 
-L["uplp_rsh12_bar_short.printname"] = "RR \"Okhotnik\" Pipa"
-L["uplp_rsh12_bar_short.compactname"] = "Okhotnik"
-L["uplp_rsh12_bar_short.description"] = "Kort pipa gjord till den civila RR 12,7 \"Okhotnik\" (Revolvergevär \"Jägare\")."
+L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
+L["uplp_rsh12_bar_short.compactname"] = "WW"
+L["uplp_rsh12_bar_short.description"] = "Förkortad pipa gjord till RZ 12,7.\n\n<color=255,100,100>Varning</color>: Om du tycker om dina handleder, <color=255,100,100>använd ej</color>."
 
 ////// Grips
 L["uplp_rsh12_grip_tac.printname"] = "Sportskytte Grepp"

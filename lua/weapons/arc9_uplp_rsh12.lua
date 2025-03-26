@@ -230,9 +230,9 @@ SWEP.PeekPosReloading = Vector(0.5, 0, -1)
 SWEP.PeekAngReloading = Angle(0, 0.4, -5)
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(15, 30, 2.5)
+SWEP.CustomizePos = Vector(17, 30, 3)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(15, -1.93, -3)
+SWEP.CustomizeRotateAnchor = Vector(17, -2.5, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 15, 0)
 SWEP.CustomizeSnapshotFOV = 60
@@ -469,8 +469,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
+		RefillProgress = 0.75,
 		FireASAP = true,
         DropMagAt = 51/30,
         MagSwapTime = 23/30,
@@ -502,6 +501,8 @@ SWEP.Animations = {
 
     ["inspect"] = {
         Source = "inspect",
+        MinProgress = 0.85,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
@@ -539,31 +540,21 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 end
 
 SWEP.AttachmentElements = {
-    ["uplp_deag_mag_ext"] = { Bodygroups = { { 2, 1 } } },
-    ["uplp_deag_mag_tac"] = { Bodygroups = { { 2, 2 } } },
-
-    ["uplp_deag_grip_tac"] = { Bodygroups = { { 3, 1 } } },
-
-    ["uplp_deag_trig_heavy"] = { Bodygroups = { { 4, 1 } } },
-    ["uplp_deag_trig_light"] = { Bodygroups = { { 4, 2 } } },
-    ["uplp_deag_trig_sport"] = { Bodygroups = { { 4, 3 } } },
-
-    ["uplp_deag_barrel_classic"] = { Bodygroups = { { 5, 1 } } },
-    ["uplp_deag_barrel_long"] = { Bodygroups = { { 5, 2 } } },
-    ["uplp_deag_barrel_tac"] = { Bodygroups = { { 5, 3 } } },
-    ["uplp_deag_barrel_longtac"] = { Bodygroups = { { 5, 4 } }, AttPosMods = {
-    [7] = { Pos = Vector(0, -1.05, 9.5), },
+    ["uplp_rsh12_bar_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
+		[3] = { Pos = Vector(0, -0.95, 3.7), }, -- Muzzle
+		[5] = { Pos = Vector(0, -0.1, 2.5), }, -- Tac.
+    }},
+    ["uplp_rsh12_bar_long"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
+		[3] = { Pos = Vector(0, -0.95, 12.35), }, -- Muzzle
+		[5] = { Pos = Vector(0, -0.1, 10), }, -- Tac.
+    }},
+    ["uplp_rsh12_bar_long_o"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
+		[3] = { Pos = Vector(0, -0.95, 12.35), }, -- Muzzle
+		[5] = { Pos = Vector(0, -0.1, 10), }, -- Tac.
     }},
 
-    ["uplp_deag_muzzle_cut"] = { Bodygroups = { { 6, 1 } } },
-    ["uplp_deag_muzzle_heavy"] = { Bodygroups = { { 6, 2 } } },
-    ["uplp_deag_muzzle_tri"] = { Bodygroups = { { 6, 3 } } },
-
-    ["uplp_deagle_skin_black"] = { Skin = 1 },
-    ["uplp_deagle_skin_gold"] = { Skin = 2 },
-    ["uplp_deagle_skin_blue"] = { Skin = 3 },
-    ["uplp_deagle_skin_admin"] = { Skin = 4, Bodygroups = { { 7, 1 } } },
-    ["uplp_deagle_skin_frame"] = { Bodygroups = { { 0, 1 } } },
+    ["uplp_rsh12_grip_tac"] = { Bodygroups = { { 1, 1 } } },
+    ["uplp_rsh12_grip_stock"] = { Bodygroups = { { 1, 2 } } },
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -574,8 +565,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0, -3, 5),
+        Bone = "topcover",
+        Pos = Vector(0, -2.8, 2.5),
         ExtraSightDistance = 4,
         Ang = Angle(90, 90, 180),
     },
@@ -584,15 +575,14 @@ SWEP.Attachments = {
         Category = {"uplp_rsh12_bar"},
         DefaultIcon = Material(defatt2 .. "deagbr.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -2.75, 3.5),
+        Pos = Vector(0, -0.15, 4),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        -- Category = {"uplp_rsh12_supp"},
-        Category = {"REPLACEME"},
-        Bone = "body",
-        Pos = Vector(0, -2.5, 10),
+        Category = {"uplp_rsh12_supp"},
+        Bone = "topcover",
+        Pos = Vector(0, -0.95, 7.65),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"nomuz"}
     },
@@ -601,15 +591,15 @@ SWEP.Attachments = {
         Category = {"uplp_rsh12_grip"},
         DefaultIcon = Material(defatt2 .. "argrip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0, 0.7),
+        Pos = Vector(0, 2.5, -4),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac_pistol"},
         ExcludeElements = {"notac"},
-        Bone = "body",
-        Pos = Vector(0, -1.05, 7),
+        Bone = "topcover",
+        Pos = Vector(0, -0.1, 6.5),
         Ang = Angle(90, 90, 0),
     },
 
@@ -666,6 +656,6 @@ SWEP.Hook_TranslateSource = function(swep, anim)
     end
 end
 
-SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
-    ent:SetPoseParameter("cyl", 5 - (swep:GetUPLPCylinderSpin() or 0))
-end
+-- SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    -- ent:SetPoseParameter("cyl", 5 - (swep:GetUPLPCylinderSpin() or 0))
+-- end

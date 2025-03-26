@@ -2357,17 +2357,17 @@ L["uplp_weapon_rsh12_rr"] = "РР 12.7 «Охотник»"
 
 /////////// Attachments
 ////// Barrel
--- L["uplp_rsh12_bar_long.printname"] = "Extended Anodized Barrel"
--- L["uplp_rsh12_bar_long.compactname"] = "Ext."
--- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the РЗ 12,7."
+-- L["uplp_rsh12_bar_long.printname"] = "РР «Охотник» Barrel"
+-- L["uplp_rsh12_bar_long.compactname"] = "Охотник"
+-- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the civilian РР 12.7 «Охотник» (револьверное ружье)."
 
--- L["uplp_rsh12_bar_long_o.printname"] = "Extended Anodized Barrel (Hunter Orange)"
--- L["uplp_rsh12_bar_long_o.compactname"] = "Ext. (O)"
--- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the РЗ 12,7 - now in Hunter Orange!"
+-- L["uplp_rsh12_bar_long_o.printname"] = "РР «Охотник» Barrel (Hunter Orange)"
+-- L["uplp_rsh12_bar_long_o.compactname"] = "Охот. (O)"
+-- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the civilian РР 12.7 «Охотник» (револьверное ружье) - now in Hunter Orange!"
 
--- L["uplp_rsh12_bar_short.printname"] = "РР «Охотник» Barrel"
--- L["uplp_rsh12_bar_short.compactname"] = "Охотник"
--- L["uplp_rsh12_bar_short.description"] = "Short barrel made for the civilian РР 12,7 «Охотник». («Револьверное ружье»)
+-- L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
+-- L["uplp_rsh12_bar_short.compactname"] = "WW"
+-- L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
 
 ////// Grips
 -- L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"
