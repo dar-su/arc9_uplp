@@ -26,8 +26,8 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Kaan",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Darsu",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Dummified",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
@@ -42,18 +42,18 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50ae.mdl"
-SWEP.ShellScale = 1.2
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_127.mdl"
+SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 90
 SWEP.ShellVelocity = 0.75
 
 SWEP.CaseEffectQCA = 2
-SWEP.CamQCA = 3
+SWEP.CamQCA = 2
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
-SWEP.ViewModel = "models/weapons/arc9/c_uplp_deagle.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_deagle.mdl"
+SWEP.ViewModel = "models/weapons/arc9/c_uplp_rsh12.mdl"
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_rsh12.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -182,8 +182,23 @@ SWEP.RPM = 200 -- How fast gun shoot
 SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    { Mode = 1 }, -- Semi
+    { Mode = 1, PrintName = "Single action", PoseParam = 1, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
+    { Mode = 1, PrintName = "Double action", PoseParam = 0  },
 }
+
+SWEP.NoShellEject = true
+SWEP.ShellSmoke = false 
+SWEP.EjectDelay = 1111111111
+
+SWEP.TriggerDelay = true
+SWEP.TriggerDelayTime = 0.12
+SWEP.TriggerDelayCancellable = false
+SWEP.TriggerStartFireAnim = true
+SWEP.ShellVelocity = 0
+SWEP.NoForceSetLoadedRoundsOnReload = true 
+SWEP.ManualActionNoLastCycle = false
+SWEP.ManualActionEjectAnyway = false
+SWEP.FiremodeAnimLock = true
 
 SWEP.ShootPitch = 90
 SWEP.ShootVolume = 120
@@ -225,9 +240,9 @@ SWEP.CustomizeSnapshotFOV = 60
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = true
-SWEP.DropMagazineModel = "models/weapons/arc9/uplp/deagle_mag_std.mdl"
-SWEP.DropMagazineTime = 0.66
-SWEP.DropMagazineQCA = 4
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/rsh12_loader_dropped.mdl"
+SWEP.DropMagazineTime = 1337
+SWEP.DropMagazineQCA = 3
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -40, 0)
@@ -290,39 +305,26 @@ SWEP.BulletBones = {
     [3] = "bullet3",
     [4] = "bullet4",
     [5] = "bullet5",
-    [6] = "bullet6",
-    [7] = "bullet7",
 }
 
 SWEP.HideBones = {
-    "magb",
+    "speedreloader",
+    "speedreloader_button",
 }
 
 SWEP.ReloadHideBoneTables = {
     [1] = {
-        "magb",
+        "speedreloader",
+        "speedreloader_button",
     },
-    [2] = {
-        "mag",
-        "bullet1",
-        "bullet2",
-        "bullet3",
-        "bullet4",
-        "bullet5",
-        "bullet6",
-        "bullet7",
-    },
-    [3] = {
-        "magb",
-        "mag",
-        "bullet1",
-        "bullet2",
-        "bullet3",
-        "bullet4",
-        "bullet5",
-        "bullet6",
-        "bullet7",
-    }
+    -- [2] = {
+        -- "mag",
+        -- "bullet1",
+        -- "bullet2",
+        -- "bullet3",
+        -- "bullet4",
+        -- "bullet5",
+    -- },
 }
 
 local thetoggle = {{
@@ -335,6 +337,28 @@ local thetoggle = {{
         "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
     }, t = 0
 }}
+
+local function spincylinderbutnospam(swep)
+    if CurTime() > (swep.UPLPNextCylinderSpin or 0) then -- fucking cycle plays twice or somethign
+        swep:SetUPLPCylinderSpin((swep:GetUPLPCylinderSpin() + 1) % 5)
+        swep.UPLPNextCylinderSpin = CurTime() + 0.1
+    end
+end
+
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if SERVER then
+        local fm = swep:GetFiremode()
+        if fm == 2 and anim == "fire" or anim == "cycle" or anim == "dryfire" then
+            spincylinderbutnospam(swep)
+            -- print(anim, fm, swep:GetUPLPCylinderSpin())
+            if anim == "fire" then return "fire_da" end
+            if fm == 2 and anim == "dryfire" then return "dryfire_da" end
+        end
+
+        if anim == "ready" and fm == 2 then return "draw" end
+        -- if anim == "idle" and fm == 1 then return "idle_cock" end
+    end
+end
 
 -- Animations
 SWEP.Animations = {
@@ -390,42 +414,54 @@ SWEP.Animations = {
         },
     },
 
-    ["draw_empty"] = {
-        Source = "draw_empty",
-		MinProgress = 0.65,
-		FireASAP = true,
-        EventTable = {
-            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-    },
-    ["holster_empty"] = {
-        Source = "holster_empty",
-        MinProgress = 0.5,
-        EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 60, c = ca },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-    },
 
 
     ["fire"] = {
         Source = "fire",
         -- Time = 1,
-        ShellEjectAt = 0.01,
         EventTable = { { s = mech, t = 0, v = 0.6 } },
     },
-    ["fire_empty"] = {
-        Source = "fire_empty",
+    ["fire_da"] = {
+        Source = "fire_da",
         -- Time = 1,
-        ShellEjectAt = 0.01,
-        EventTable = { { s = mech, t = 0, v = 0.99 } },
+        EventTable = { { s = mech, t = 0, v = 0.6 } },
+    },
+
+    ["dryfire"] = {
+        Source = "dryfire",
+        -- Time = 1,
+        EventTable = { { s = mech, t = 0, v = 0.6 } },
+    },
+    ["dryfire_da"] = {
+        Source = "dryfire_da",
+        -- Time = 1,
+        EventTable = { { s = mech, t = 0, v = 0.6 } },
+    },
+
+    ["cycle"] = {
+        Source = {"cycle1", "cycle2"},
+        MinProgress = 0.75,
+        Mult = 1.1,
+        EventTable = {
+            {s = pathUT .. "boltup.ogg",          t = 0.1},
+            {s = pathUT .. "boltback.ogg",        t = 0.2},
+            {s = pathUT .. "boltforward.ogg",     t = 0.32},
+            {s = pathUT .. "eject.ogg",           t = 0.4},
+            {s = pathUT .. "boltdown.ogg",        t = 0.5},
+        },
+    },
+
+    ["cycle_sights"] = {
+        Source = "cycle1",
+        MinProgress = 0.75,
+        Mult = 1.1,
+        EventTable = {
+            {s = pathUT .. "boltup.ogg",          t = 0.1},
+            {s = pathUT .. "boltback.ogg",        t = 0.2},
+            {s = pathUT .. "boltforward.ogg",     t = 0.32},
+            {s = pathUT .. "eject.ogg",           t = 0.4},
+            {s = pathUT .. "boltdown.ogg",        t = 0.5},
+        },
     },
 
     -- Reloads --
@@ -436,6 +472,9 @@ SWEP.Animations = {
 		PeekProgress = 0.85,
 		RefillProgress = 0.6,
 		FireASAP = true,
+        DropMagAt = 51/30,
+        MagSwapTime = 23/30,
+        
         EventTable = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -443,8 +482,14 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 50 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 23/30},
+            {hide = 1, t = 51/30},
+
+            {shelleject = true, att = 4, t = 22/30 },  
+            {shelleject = true, att = 5, t = 22/30 },  
+            {shelleject = true, att = 6, t = 22/30 },  
+            {shelleject = true, att = 7, t = 22/30 },  
+            {shelleject = true, att = 8, t = 22/30 }, 
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -453,102 +498,10 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    ["reload_empty"] = {
-        Source = "reload_empty",
-        MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.7,
-		FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.6 },
-            { s = pathUT .. "magin.ogg", t = 60 / 60, c = ca },
-            { s = pathUT .. "chamber.ogg", t = 75 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 85 / 60, c = ca },
-
-            {hide = 1, t = 0},
-            {hide = 3, t = 0.66},
-            {hide = 1, t = 0.8},
-            {hide = 1, t = 2},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-    },
-
-    ["reload_ext"] = {
-        Source = "reload_ext",
-        MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 65 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 90 / 60, c = ca },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.3},
-            {hide = 2, t = 1.733}
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.2, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },
-    ["reload_empty_ext"] = {
-        Source = "reload_empty_ext",
-        MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.7,
-		FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 23 / 60, v = 0.6 },
-            { s = pathUT .. "magin.ogg", t = 75 / 60, c = ca },
-            { s = pathUT .. "chamber.ogg", t = 85 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 100 / 60, c = ca },
-            {hide = 1, t = 0},
-            {hide = 3, t = 0.733},
-            {hide = 1, t = 1.07},
-            {hide = 1, t = 2.333},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.75, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },
-
     -- Inspecc --
 
     ["inspect"] = {
         Source = "inspect",
-        EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
-            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
-            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
-            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30, c = ca },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.75, lhik = 0 },
-            { t = 1, lhik = 1 },
-        },
-    },
-    ["inspect_empty"] = {
-        Source = "inspect_empty",
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
@@ -567,17 +520,9 @@ SWEP.Animations = {
         Source = "modeswitch",
         EventTable = thetoggle
     },
-    ["toggle_empty"] = {
-        Source = "modeswitch_empty",
-        EventTable = thetoggle
-    },
 
     ["switchsights"] = {
         Source = "modeswitch",
-        EventTable = thetoggle
-    },
-    ["switchsights_empty"] = {
-        Source = "modeswitch_empty",
         EventTable = thetoggle
     },
 }
@@ -673,7 +618,23 @@ SWEP.Attachments = {
     -- Cosmetic shit
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
-        StickerModel = "models/weapons/arc9/uplp/stickers/deagle_1.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/rsh12_1.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.55, -2.5 + 1.5, 2),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
+        StickerModel = "models/weapons/arc9/uplp/stickers/rsh12_2.mdl",
+        Category = "stickers",
+        Bone = "body",
+        Pos = Vector(0.55, -2.5 + 1.5, 2),
+        Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
+        StickerModel = "models/weapons/arc9/uplp/stickers/rsh12_3.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.55, -2.5 + 1.5, 2),
@@ -687,3 +648,24 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
 }
+
+SWEP.ReloadInSights = false
+
+DEFINE_BASECLASS(SWEP.Base)
+function SWEP:SetupDataTables(...)
+    BaseClass.SetupDataTables(self, ...)
+    self:NetworkVar("Int", "UPLPCylinderSpin")
+    self:SetUPLPCylinderSpin(0)
+end
+
+SWEP.Hook_TranslateSource = function(swep, anim)
+    if anim == "reload" then
+        -- if has okp then return anim .. _scope_okp
+        -- if has elite, hawkeye, kobra, reddot, xw return anim .. _scope_slim
+        -- else return anim .. _scope_bulky
+    end
+end
+
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    ent:SetPoseParameter("cyl", 5 - (swep:GetUPLPCylinderSpin() or 0))
+end

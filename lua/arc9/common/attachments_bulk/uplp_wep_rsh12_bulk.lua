@@ -12,6 +12,8 @@ ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 ATT.Category = "uplp_rsh12_bar"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.MuzzleEffectQCA = 9
+
 ARC9.LoadAttachment(ATT, "uplp_rsh12_bar_long")
 
 -------------------------------------------
@@ -25,6 +27,8 @@ ATT.Icon = Material(iconfolder .. "longorange.png", "mips smooth")
 ATT.Category = "uplp_rsh12_bar"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.MuzzleEffectQCA = 9
+
 ARC9.LoadAttachment(ATT, "uplp_rsh12_bar_long_o")
 
 -------------------------------------------
@@ -37,6 +41,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "short.png", "mips smooth")
 ATT.Category = "uplp_rsh12_bar"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.MuzzleEffectQCA = 10
 
 ARC9.LoadAttachment(ATT, "uplp_rsh12_bar_short")
 
