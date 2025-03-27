@@ -30,7 +30,7 @@ $bbox -22.295 -0.912 -5.555 19.88 0.889 16.148
 
 $definebone "ValveBiped.Bip01_R_Hand" "" -0.678304 13.183071 4.586786 10.000005 -89.999982 -179.999978 0 0 0 0 0 0
 
-$collisionmodel "m4lod.smd"
+$collisionmodel "m4col.smd"
 {
 	$mass 22.0
 	// $concave
