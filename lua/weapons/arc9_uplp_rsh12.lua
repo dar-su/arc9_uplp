@@ -445,7 +445,7 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.65,
+		MinProgress = 0.35,
 		FireASAP = true,
         EventTable = {
             { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
@@ -459,7 +459,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgress = 0.4,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 60, c = ca },
         },
@@ -652,17 +652,17 @@ SWEP.AttachmentTableOverrides = {
 
 SWEP.AttachmentElements = {
     ["uplp_rsh12_bar_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
-		[3] = { Pos = Vector(0, -0.95, 3.7), }, -- Muzzle
+		[3] = { Pos = Vector(0, 0.015, -4), }, -- Muzzle
 		[5] = { Pos = Vector(0, 0, -3.9), }, -- Tac.
 		[10] = { Pos = Vector(0.55, -0.85, 1.0), }, -- Charm
     }},
     ["uplp_rsh12_bar_long"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
-		[3] = { Pos = Vector(0, -0.95, 12.35), }, -- Muzzle
+		[3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
 		[5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
 		[10] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
     ["uplp_rsh12_bar_long_o"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-		[3] = { Pos = Vector(0, -0.95, 12.35), }, -- Muzzle
+		[3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
 		[5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
 		[10] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
@@ -701,8 +701,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_rsh12_supp"},
-        Bone = "topcover",
-        Pos = Vector(0, -0.95, 7.65),
+        Bone = "barrel",
+        Pos = Vector(0, 0, -0.2),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"nomuz"}
     },
@@ -795,4 +795,19 @@ end
 
 SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     ent:SetPoseParameter("cyl", 5 - (swep:GetUPLPCylinderSpin() or 0))
+end
+
+SWEP.HookP_NameChange = function(self, name)
+    local att = self:GetElements()
+
+    local civ = (att["uplp_rsh12_bar_long_o"] or att["uplp_rsh12_bar_long"]) and att["uplp_rsh12_grip_stock"]
+    local short = att["uplp_rsh12_bar_short"]
+
+    if civ then
+        name = ARC9:GetPhrase("uplp_weapon_rsh12_rr")
+    elseif short then
+        name = ARC9:GetPhrase("uplp_weapon_rsh12_short")
+    end
+
+    return name
 end

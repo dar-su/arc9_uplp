@@ -2356,6 +2356,7 @@ L["uplp_weapon_rsh12_real"] = "RSh-12"
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
 
 L["uplp_weapon_rsh12_rr"] = "RR 12.7 \"Okhotnik\""
+L["uplp_weapon_rsh12_short"] = "RZ-U 12.7"
 
 /////////// Attachments
 ////// Barrel
@@ -2369,7 +2370,7 @@ L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized ste
 
 L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
 L["uplp_rsh12_bar_short.compactname"] = "WW"
-L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
+L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ-U 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
 
 ////// Grips
 L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"

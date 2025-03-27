@@ -2347,41 +2347,42 @@ L["uplp_aug_stock_black.description"] = "Изменяет цвет ложи, р�
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "РЗ 12.7"
-L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12.7\" - это мощный российский револьвер, стреляющий крупным патроном 12.7x55 мм. Не смотря на стрельбу из нижней камеры барабана, отдача может повреждать запястья стрелкой, что и привело к прозвищу \"Разрушитель запястий\"."
+L["uplp_weapon_rsh12_desc"] = "\"Разрушитель запястий 12.7\" - это мощный российский револьвер, стреляющий крупным патроном 12.7x55 мм. Не смотря на стрельбу из нижней каморы барабана, отдача способна повредить запястье пользователя, что и привело к прозвищу \"Разрушитель запястий\"."
 
 L["uplp_weapon_rsh12_real"] = "РШ-12"
 
 L["uplp_weapon_rsh12_manufacturer"] = "Конструкторское бюро приборостроения"
 
 L["uplp_weapon_rsh12_rr"] = "РР 12.7 «Охотник»"
+L["uplp_weapon_rsh12_short"] = "РЗ-У 12.7"
 
 /////////// Attachments
 ////// Barrel
--- L["uplp_rsh12_bar_long.printname"] = "РР «Охотник» Barrel"
--- L["uplp_rsh12_bar_long.compactname"] = "Охотник"
--- L["uplp_rsh12_bar_long.description"] = "Extended barrel made from anodized steel for the civilian РР 12.7 «Охотник» (револьверное ружье)."
+L["uplp_rsh12_bar_long.printname"] = "Ствол РР «Охотник»"
+L["uplp_rsh12_bar_long.compactname"] = "Охотник"
+L["uplp_rsh12_bar_long.description"] = "Удлиненный ствол из анодированной стали для гражданского Револьверного Ружья 12.7 «Охотник»."
 
--- L["uplp_rsh12_bar_long_o.printname"] = "РР «Охотник» Barrel (Hunter Orange)"
--- L["uplp_rsh12_bar_long_o.compactname"] = "Охот. (O)"
--- L["uplp_rsh12_bar_long_o.description"] = "Extended barrel made from anodized steel for the civilian РР 12.7 «Охотник» (револьверное ружье) - now in Hunter Orange!"
+L["uplp_rsh12_bar_long_o.printname"] = "Ствол РР «Охотник» (Охотничий оранжевый)"
+L["uplp_rsh12_bar_long_o.compactname"] = "Охот. (O)"
+L["uplp_rsh12_bar_long_o.description"] = "Удлиненный ствол из анодированной стали для гражданского Револьверного Ружья 12.7 «Охотник» - теперь в оранжевом цвете!"
 
--- L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
--- L["uplp_rsh12_bar_short.compactname"] = "WW"
--- L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
+L["uplp_rsh12_bar_short.printname"] = "Укороченный ствол «Разрушитель запястий»"
+L["uplp_rsh12_bar_short.compactname"] = "РЗ-У"
+L["uplp_rsh12_bar_short.description"] = "Укороченный ствол для РЗ-У 12.7.\n\n<color=255,100,100>Внимание</color>: Если вам нужны ваши кисти, <color=255,100,100>не используйте</color>."
 
 ////// Grips
--- L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"
--- L["uplp_rsh12_grip_tac.compactname"] = "SS"
--- L["uplp_rsh12_grip_tac.description"] = "Custom-made pistol grip for the РЗ 12,7 made for sport shooting.\n\nUnsure if the weapon can be used for sport shooting, but what the hell."
+L["uplp_rsh12_grip_tac.printname"] = "Спортивная рукоять"
+L["uplp_rsh12_grip_tac.compactname"] = "Спорт"
+L["uplp_rsh12_grip_tac.description"] = "Рукоять для РЗ 12.7 созданная для спортивной стрельбы.\n\nНе уверен, что эту пушку можно использовать для спортивной стрельбы, но дело твоё."
 
--- L["uplp_rsh12_grip_stock.printname"] = "«Охотник» Stock"
--- L["uplp_rsh12_grip_stock.compactname"] = "Stock"
--- L["uplp_rsh12_grip_stock.description"] = "Custom stock for the civilian РЗ 12,7 «Охотник»."
+L["uplp_rsh12_grip_stock.printname"] = "Приклад «Охотник»"
+L["uplp_rsh12_grip_stock.compactname"] = "Приклад"
+L["uplp_rsh12_grip_stock.description"] = "Приклад для граждажского Револьверного Ружья 12.7 «Охотник»."
 
 ////// Muzzles
--- L["uplp_rsh12_supp.printname"] = "Behemoth Suppressor"
--- L["uplp_rsh12_supp.compactname"] = "Behemoth"
--- L["uplp_rsh12_supp.description"] = "Large suppressor made for the large 12.7×55mm round."
+L["uplp_rsh12_supp.printname"] = "Глушитель «Бегемот»"
+L["uplp_rsh12_supp.compactname"] = "«Бегемот»"
+L["uplp_rsh12_supp.description"] = "Большой глушитель для большого патрона 12.7x55 мм."
 
 //////////////////// Mick Strider's Bowie Knife
 L["uplp_weapon_knife"] = "Нож Боуи"
