@@ -17,6 +17,8 @@ ATT.MuzzleEffectQCA = 9
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
+ATT.ActivateElements = {"uplp_canusegrips"}
+
 ARC9.LoadAttachment(ATT, "uplp_rsh12_bar_long")
 
 -------------------------------------------
@@ -35,6 +37,8 @@ ATT.MuzzleEffectQCA = 9
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
+ATT.ActivateElements = {"uplp_canusegrips"}
+
 ARC9.LoadAttachment(ATT, "uplp_rsh12_bar_long_o")
 
 -------------------------------------------
@@ -49,6 +53,8 @@ ATT.Category = "uplp_rsh12_bar"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.MuzzleEffectQCA = 10
+
+ATT.ActivateElements = {"uplp_shortopticonly"}
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end

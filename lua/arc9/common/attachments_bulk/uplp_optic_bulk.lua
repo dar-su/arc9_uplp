@@ -91,6 +91,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "553.png", "mips smooth")
 
@@ -141,6 +142,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "kobra.png", "mips smooth")
 
@@ -235,6 +237,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "srs.png", "mips smooth")
 
@@ -282,6 +285,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "m2.png", "mips smooth")
 
@@ -328,6 +332,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "dcl.png", "mips smooth")
 
@@ -411,6 +416,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "acog.png", "mips smooth")
 
@@ -474,6 +480,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "elcan.png", "mips smooth")
 
@@ -1373,6 +1380,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "imi.png", "mips smooth")
 
@@ -1562,6 +1570,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "3-7x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
 
@@ -1624,7 +1633,7 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 618/1080
 
-ATT.Category = "uplp_optic_big"
+ATT.Category = {"uplp_optic_big", "uplp_ez6x"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_midbig)
@@ -2540,6 +2549,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "okp.png", "mips smooth")
 
