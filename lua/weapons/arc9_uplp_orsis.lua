@@ -49,18 +49,19 @@ SWEP.TracerSize = 5
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50bmg.mdl"
 SWEP.ShellScale = 1.0
-SWEP.ShellPitch = 90
+SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.75
--- SWEP.ShellSounds = {
---     "arc9/casings/casing_12ga_1.ogg", -- add heavy shell sound!
---     "arc9/casings/casing_12ga_2.ogg",
---     "arc9/casings/casing_12ga_3.ogg",
---     "arc9/casings/casing_12ga_4.ogg",
---     "arc9/casings/casing_12ga_1.ogg",
---     "arc9/casings/casing_12ga_2.ogg",
---     "arc9/casings/casing_12ga_3.ogg",
---     "arc9/casings/casing_12ga_4.ogg",
--- }
+SWEP.ShellSounds = {
+    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- might be overkill
+    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- but i dont have other sounds
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+}
+-- SWEP.ShellSounds = ARC9.Shell308SoundsTable
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3

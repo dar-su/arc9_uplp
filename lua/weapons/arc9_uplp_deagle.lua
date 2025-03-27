@@ -48,6 +48,7 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_50ae.mdl"
 SWEP.ShellScale = 1.2
 SWEP.ShellPitch = 90
 SWEP.ShellVelocity = 0.75
+-- SWEP.ShellSounds = ARC9.Shell308SoundsTable
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3

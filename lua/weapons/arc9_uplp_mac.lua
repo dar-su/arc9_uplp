@@ -49,6 +49,7 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 90
 SWEP.EjectDelay = 0.05
+SWEP.ShellSounds = ARC9.PistolShellSoundsTable
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3

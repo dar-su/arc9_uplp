@@ -52,6 +52,7 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
 SWEP.ShellScale = 1.3
 SWEP.ShellPitch = 0
 SWEP.ShellVelocity = 0.75
+SWEP.ShellSounds = ARC9.Shell308SoundsTable
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
@@ -727,7 +728,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_pkm_hg"},
-        -- DefaultIcon = Material(defatt2 .. "armag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1, 6),
         -- Ang = Angle(90, 90, 180),
@@ -737,7 +738,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = "uplp_pkm_barrel",
-        -- DefaultIcon = Material(defatt2 .. "scarupper.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "scarupper.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -1.1, 10),
         Ang = Angle(90, 90, 180),
@@ -746,7 +747,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_furniture"),
         Category = {"uplp_pkm_receiver", "uplp_pkm_furniture"},
-        -- DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0),
         Icon_Offset = Vector(-7, 0, 0),
@@ -756,7 +757,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_bipod"),
         Category = "uplp_pkm_bipod",
-        -- DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt .. "bipod.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1.5, 13),
         Ang = Angle(90, 90, 180),
