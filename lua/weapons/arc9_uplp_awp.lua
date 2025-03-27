@@ -68,8 +68,10 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-3.5, 3, -8),
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-6, 2, -5),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    TPIKAng = Angle(-12, -0, 180),
+    Scale = 1,
+
+    TPIKPosSightOffset = Vector(-1, 2, -3),
 }
 
 SWEP.ViewModelFOVBase = 65
@@ -495,7 +497,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         Mult = 1.1,
-        DropMagAt = 0.35 * 1.1,
+        DropMagAt = 0.35 * 1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -522,7 +524,7 @@ SWEP.Animations = {
 		RefillProgress = 0.85,
 		FireASAP = true,
         Mult = 1.1,
-        DropMagAt = 1 * 1.1,
+        DropMagAt = 1 * 1,
         EjectAt = 0.37,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0 / 30},
@@ -557,7 +559,7 @@ SWEP.Animations = {
 		PeekProgress = 0.775,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        DropMagAt = 0.35 * 1.1,
+        DropMagAt = 0.35 * 1,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -584,7 +586,7 @@ SWEP.Animations = {
 		PeekProgress = 0.925,
 		RefillProgress = 0.85,
 		FireASAP = true,
-        DropMagAt = 1 * 1.1,
+        DropMagAt = 1 * 1,
         Mult = 1.1,
         EjectAt = 0.37,
         EventTable = {

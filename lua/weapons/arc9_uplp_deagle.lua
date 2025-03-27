@@ -66,8 +66,10 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-9, 3, -5),
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-16, 3, -1),
-    TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    TPIKAng = Angle(-5, -0, 180),
+    Scale = 1,
+
+    TPIKPosSightOffset = Vector(3, 1, -4.5),
 }
 
 SWEP.ViewModelFOVBase = 75
@@ -215,6 +217,11 @@ SWEP.PeekAng = Angle(-0.3, 0.1, -40)
 
 SWEP.PeekPosReloading = Vector(0.5, 0, -1)
 SWEP.PeekAngReloading = Angle(0, 0.4, -5)
+
+SWEP.OneHandedSprint = true
+SWEP.SprintAng = Angle(2, 33, -7)
+SWEP.SprintPos = Vector(3, -2.1, -9)
+SWEP.HoldTypeSprint = "normal"
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(15, 30, 2.5)

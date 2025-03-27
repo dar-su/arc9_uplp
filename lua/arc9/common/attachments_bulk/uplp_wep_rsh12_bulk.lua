@@ -17,6 +17,17 @@ ATT.MuzzleEffectQCA = 9
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
+ATT.TPIKAlternativePos = true
+ATT.HoldTypeDefaultHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "ar2" end end
+ATT.HoldTypeSprintHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "passive" end end
+ATT.HoldTypeHolstered = nil
+ATT.HoldTypeSightsHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "smg" end end
+
+ATT.OneHandedSprintHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return false end end
+ATT.SprintPosHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Vector(3, 0, 0) end end
+ATT.SprintAngHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Angle(35, -10, -20) end end
+
+
 ATT.ActivateElements = {"uplp_canusegrips"}
 
 ARC9.LoadAttachment(ATT, "uplp_rsh12_bar_long")
@@ -36,6 +47,17 @@ ATT.MuzzleEffectQCA = 9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
+ATT.TPIKAlternativePos = true
+ATT.HoldTypeDefaultHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "ar2" end end
+ATT.HoldTypeSprintHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "passive" end end
+ATT.HoldTypeHolstered = nil
+ATT.HoldTypeSightsHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "smg" end end
+
+ATT.OneHandedSprintHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return false end end
+ATT.SprintPosHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Vector(3, 0, 0) end end
+ATT.SprintAngHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Angle(35, -10, -20) end end
+
 
 ATT.ActivateElements = {"uplp_canusegrips"}
 

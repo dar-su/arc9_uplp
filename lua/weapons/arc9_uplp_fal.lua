@@ -69,9 +69,11 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-3.5, 3.5, -7),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-4.5, 2, -7),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    TPIKPos = Vector(-4.5, 2, -5),
+    TPIKAng = Angle(-12, -0, 180),
+    Scale = 1,
+
+    TPIKPosSightOffset = Vector(1, 2.5, -3),
 }
 
 SWEP.ViewModelFOVBase = 70
@@ -342,14 +344,14 @@ SWEP.HideBones = {
 SWEP.ReloadHideBoneTables = {
     [1] = {
         "fakemag",
-        "fakerounds",
-    },
-    [2] = {
-        "mag",
         "bullet1",
         "bullet2",
         "bullet3",
         "bullet4",
+    },
+    [2] = {
+        "mag",
+        "fakerounds",
     },
 }
 
@@ -471,9 +473,9 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magout.ogg", t = 8 / 30 - 0.15, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magin.ogg", t = 25 / 30 - 0.05, c = ca, v = 0.8 },
             { s = UTCrattle, t = 23.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 1, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -499,9 +501,9 @@ SWEP.Animations = {
             { s = pathUTScar .. "chpull.ogg", t = 37 / 30 - 0.05, c = ca, v = 0.5 },
             { s = pathUTREAL .. "chforward.ogg", t = 40 / 30 - 0.1, c = ca, v = 1 },
             { s = UTCrattle, t = 51 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 1, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -526,9 +528,9 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magout.ogg", t = 8 / 30 - 0.15, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magin.ogg", t = 21 / 30 - 0.05, c = ca, v = 0.8 },
             { s = UTCrattle, t = 23.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 1, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -555,9 +557,9 @@ SWEP.Animations = {
             { s = pathUTScar .. "chpull.ogg", t = 32 / 30 - 0.05, c = ca, v = 0.5 },
             { s = pathUTREAL .. "chforward.ogg", t = 34 / 30 - 0.1, c = ca, v = 1 },
             { s = UTCrattle, t = 39 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 1, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -582,9 +584,9 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magout.ogg", t = 8 / 30 - 0.15, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magin.ogg", t = 32 / 30 - 0.05, c = ca, v = 0.8 },
             { s = UTCrattle, t = 36.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 1, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -610,9 +612,9 @@ SWEP.Animations = {
             { s = pathUTREAL .. "chback.ogg", t = 44 / 30 - 0.1, c = ca, v = 0.8 },
             { s = pathUTREAL .. "chforward.ogg", t = 52 / 30 - 0.05, c = ca, v = 0.8 },
             { s = UTCrattle, t = 51 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 2, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 1, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

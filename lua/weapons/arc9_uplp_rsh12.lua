@@ -73,7 +73,10 @@ SWEP.WorldModelOffset = {
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-16, 3, -1),
     TPIKAng = Angle(-5, 0, 180),
-    Scale = 1
+    Scale = 1,
+
+    TPIKPosAlternative = Vector(-14, 1, -1), -- enabled with SWEP.TPIKAlternativePos, for grips here
+    TPIKPosSightOffset = Vector(3, 1, -4.5),
 }
 
 SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
@@ -84,6 +87,7 @@ SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
 SWEP.ActivePos = Vector(-0.1, -0.2, -0.1)
+-- SWEP.ActivePosHook = function(wep, pos) if wep:GetElements()["uplp_grip_used"] then return pos + Vector(-0.5, -2, -0.5) end end
 SWEP.ActiveAng = Angle(0, 0, -3)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
@@ -239,6 +243,11 @@ SWEP.PeekAng = Angle(-0.3, 0.1, -40)
 
 SWEP.PeekPosReloading = Vector(0.5, 0, -1)
 SWEP.PeekAngReloading = Angle(0, 0.4, -5)
+
+SWEP.OneHandedSprint = true
+SWEP.SprintAng = Angle(2, 33, -7)
+SWEP.SprintPos = Vector(3, -2.1, -9)
+SWEP.HoldTypeSprint = "normal"
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(17, 30, 2)
@@ -647,6 +656,10 @@ SWEP.AttachmentTableOverrides = {
     ["uplp_bipod"] = {
         ModelAngleOffset = Angle(0, 0, 180),
         ModelOffset = Vector(0, 0, -0.2),
+    },
+    ["uplp_grip_rk45"] = {
+        ActivePos = Vector(-0.2, -2, -0.2), -- arm clip fix
+        RestPos = Vector(3, 0, -2),
     },
 }
 

@@ -69,9 +69,11 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-3.5, 3, -8),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-4.5, 2, -7),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    TPIKPos = Vector(-4.5, 2, -5),
+    TPIKAng = Angle(-12, -0, 180),
+    Scale = 1,
+
+    TPIKPosSightOffset = Vector(-1, 2, -3),
 }
 
 SWEP.ViewModelFOVBase = 70
@@ -357,16 +359,16 @@ SWEP.ReloadHideBoneTables = {
     [1] = {
         "mag",
         "bizonmag",
-        "fakerounds",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+        "bullet4",
         "fakeroundsbizon",
     },
     [2] = {
         "fakemag",
         "fakebizonmag",
-        "bullet1",
-        "bullet2",
-        "bullet3",
-        "bullet4",
+        "fakerounds",
         "bullet1bizon",
         "bullet2bizon",
     }
@@ -496,9 +498,9 @@ SWEP.Animations = {
             { s = "uplp_urban_temp/mp7/magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
             { s = "uplp_urban_temp/mp7/magtap.ogg", t = 29 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 41 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 2, t = 0},
             {hide = 0, t = 0.3},
-            {hide = 2, t = 1.1825/0.9}
+            {hide = 1, t = 1.1825/0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -527,9 +529,9 @@ SWEP.Animations = {
             { s = pathUT .. "chback_9.ogg", t = 34 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber_9.ogg", t = 40 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 52 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 2, t = 0},
             {hide = 0, t = 0.29},
-            {hide = 2, t = 1.1825/1.075}
+            {hide = 1, t = 1.1825/1.075}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -621,7 +623,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 93 / 30, c = ca, v = 0.65 },
             { s = "uplp_urban_temp/mp7/magin.ogg", t = 108 / 30, c = ca, v = 0.9 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 138 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 2, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

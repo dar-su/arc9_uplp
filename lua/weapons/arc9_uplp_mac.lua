@@ -66,8 +66,10 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-10.5, 4, -6.5),
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-9.5, 4, -5),
-    TPIKAng = Angle(0, 0, 180),
-    Scale = 1
+    TPIKAng = Angle(-12, -0, 180),
+    Scale = 1,
+
+    TPIKPosSightOffset = Vector(1, 2.5, -3),
 }
 
 SWEP.ViewModelFOVBase = 65
@@ -245,6 +247,12 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
     end
 
 end
+
+
+SWEP.OneHandedSprint = true
+SWEP.SprintAng = Angle(2, 33, -7)
+SWEP.SprintPos = Vector(2, -2.1, -9)
+SWEP.HoldTypeSprint = "normal"
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(15, 32.5, 4.5)
