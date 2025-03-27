@@ -35,8 +35,7 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-    -- "[PS-BP]XQAAAQD0AAAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdErcFqoUCCiwDcwPNZAQLcf3tqCb0H7YHrexjN1FneB049D96aNOaAeUkpoR/NIkF1obUTZ3GiBJN9PnK1TsWolT0gF/QJR7IIKyHUyXaWsLinVj2GX1p5/ke0CiA=="
-    -- do bp preset pls  this one is outdated
+    "[PS-BP]XQAAAQDSAAAAAAAAAAA9iIIiM7tupQCpkwPUTAQrJv/AnsP/L3QPGJLHt83ptggUZYNAUwH5M6U/YvWMyL9p7U3Ofi5dv9kU1WYokhLE17kc5wBh5L2CotaRr8H+gOXMXvofpkceCLqNb5WNucqZVaGQc70C+vZsQKFXXMTEyAA="
 }
 
 SWEP.DefaultBodygroups = "00000000000000" -- Might as well prepare for the future
@@ -60,7 +59,7 @@ SWEP.CamOffsetAng = Angle(0, 0, 90)
 
 ---- View & Worldmodel
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_pkm.mdl"
-SWEP.WorldModel = "models/weapons/arc9/w_uplp_ar18.mdl" -- PLACEHOLDER
+SWEP.WorldModel = "models/weapons/arc9/w_uplp_pkm.mdl"
 
 SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
@@ -265,6 +264,7 @@ SWEP.DropMagazineVelocity = Vector(0, -15, 10)
 -- urbna!
 local pathUT = "uplp_urban_temp/ak/"
 local pathUTT = "uplp_urban_temp/m60/"
+local pathM249 = "uplp_urban_temp/m249/"
 local pathUTC = "uplp_urban_temp/common/"
 
 SWEP.TriggerDownSound = pathUTT .. "prefire.ogg"
@@ -497,9 +497,12 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "lidopen.ogg", t = 4 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "boxremove.ogg", t = 18 / 30, c = ca, v = 1 },
+            { s = pathM249 .. "belt1.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 33 / 30, c = ca, v = 0.8 },
+            { s = pathM249 .. "beltshake1.ogg", t = 47 / 30, c = ca, v = 0.3 },
             { s = pathUTT .. "boxinsert.ogg", t = 66 / 30, c = ca, v = 1 },
             { s = pathUTT .. "belt2.ogg", t = 85 / 30, c = ca, v = 0.8 },
+            { s = pathM249 .. "beltadjust.ogg", t = 86 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "lidclose.ogg", t = 120 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 130 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt2.ogg", t = 131 / 30, c = ca, v = 0.25 },
@@ -526,9 +529,12 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "lidopen.ogg", t = 4 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "boxremove.ogg", t = 18 / 30, c = ca, v = 1 },
+            { s = pathM249 .. "belt1.ogg", t = 30 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 33 / 30, c = ca, v = 0.8 },
+            { s = pathM249 .. "beltshake1.ogg", t = 47 / 30, c = ca, v = 0.3 },
             { s = pathUTT .. "boxinsert.ogg", t = 66 / 30, c = ca, v = 1 },
             { s = pathUTT .. "belt2.ogg", t = 85 / 30, c = ca, v = 0.8 },
+            { s = pathM249 .. "beltadjust.ogg", t = 86 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "lidclose.ogg", t = 120 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 123 / 30, c = ca, v = 0.25 },
             { s = pathUTT .. "chback.ogg", t = 132.5 / 30, c = ca, v = 0.8 },
@@ -555,7 +561,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTT .. "belt2.ogg", t = 4 / 30, c = ca, v = 0.3 },
+            { s = pathM249 .. "beltshake1.ogg", t = 4 / 30, c = ca, v = 0.4 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 78 / 30, c = ca, v = 0.4 },
             { s = pathUTT .. "belt2.ogg", t = 82 / 30, c = ca, v = 0.2 },
@@ -563,6 +569,7 @@ SWEP.Animations = {
             -- { s = pathUT .. "chback.ogg", t = 91 / 30, c = ca, v = 1 },
             -- { s = pathUT .. "chamber.ogg", t = 118 / 30, c = ca, v = 1 },
             { s = pathUTT .. "belt2.ogg", t = 145 / 30, c = ca, v = 0.5 },
+            -- { s = pathM249 .. "beltshake1.ogg", t = 140 / 30, c = ca, v = 0.1 },
             { s = pathUTC .. "cloth_3.ogg", t = 150 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 147.5 / 30, c = ca, v = 0.8 },
         },
