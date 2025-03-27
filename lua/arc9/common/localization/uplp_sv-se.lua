@@ -456,9 +456,9 @@ L["uplp_muzzle_brake.printname"] = "Tung Mynningsbroms"
 L["uplp_muzzle_brake.compactname"] = "T BM"
 L["uplp_muzzle_brake.description"] = "Tung mynningsbroms som omdirigerar framdrivna gaser till sidan för kraftigt nedsänkt horisontal rekyl."
 
-L["uplp_muzzle_evilsup.printname"] = "Evil-Ljuddämpare"
-L["uplp_muzzle_evilsup.compactname"] = "Evil-Ljud."
-L["uplp_muzzle_evilsup.description"] = "Gevärsljuddämpare med ett zick-zack-mönster som dämpar vapnets skottljud med kostnad på räckvidd och träffsäkerhet."
+L["uplp_muzzle_evilsup.printname"] = "Ond Ljuddämpare"
+L["uplp_muzzle_evilsup.compactname"] = "Ond Ljud."
+L["uplp_muzzle_evilsup.description"] = "Gevärsljuddämpare med ett sicksack mönster som dämpar vapnets skottljud med kostnad på räckvidd och träffsäkerhet."
 
 L["uplp_muzzle_heavypistolsup.printname"] = "Tung Pistol Ljuddämpare"
 L["uplp_muzzle_heavypistolsup.compactname"] = "T Ljud."

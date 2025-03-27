@@ -547,7 +547,7 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.85,
-		RefillProgress = 0.75,
+		RefillProgress = 0.675,
 		FireASAP = true,
         DropMagAt = 50/30,
         MagSwapTime = 23/30,
@@ -618,6 +618,8 @@ SWEP.Animations = {
     
     ["firemode_2"] = {
         Source = "cycle1",
+        MinProgress = 0.65,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
