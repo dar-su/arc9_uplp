@@ -19,7 +19,7 @@ SWEP.Trivia = {
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_rsh12_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_127x55mm"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase("uplp_mechanism_doubleaction"),
+    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase("uplp_mechanism_doublesingleaction"),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_russia" ),
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "2014" ),
 }
@@ -193,8 +193,8 @@ SWEP.RPM = 200 -- How fast gun shoot
 SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = "Single action", PoseParam = 1, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
-    { Mode = 1, PrintName = "Double action", PoseParam = 0  },
+    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
+    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_doubleaction"), PoseParam = 0  },
 }
 
 SWEP.NoShellEject = true

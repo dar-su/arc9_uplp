@@ -228,7 +228,7 @@ L["uplp_optic_compm4.description"] = "Mira reflex de origen sueco con diseño ci
 
 L["uplp_optic_dcl110.printname"] = "Mira Reflex para Ametralladora con Magnificador"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Mirilla réflex grande y voluminosa con magnificador incorporado destinada a ametralladoras.\n¿Estás seguro de equiparla? ¡Ni siquiera parece una ametralladora!" .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Mirilla réflex grande y voluminosa con magnificador incorporado destinada a ametralladoras." .. desc_magoptic
 
 L["uplp_optic_acog.printname"] = "Visor 4x NCOG-4"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
@@ -2341,6 +2341,7 @@ L["uplp_weapon_rsh12_real"] = "RSh-12"
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
 
 L["uplp_weapon_rsh12_rr"] = "RR 12.7 \"Okhotnik\""
+L["uplp_weapon_rsh12_short"] = "RZ-U 12.7"
 
 /////////// Attachments
 ////// Barrel
@@ -2354,7 +2355,7 @@ L["uplp_weapon_rsh12_rr"] = "RR 12.7 \"Okhotnik\""
 
 -- L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
 -- L["uplp_rsh12_bar_short.compactname"] = "WW"
--- L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
+-- L["uplp_rsh12_bar_short.description"] = "Shortened barrel made for the RZ-U 12.7.\n\n<color=255,100,100>Warning</color>: If you value your wrists, <color=255,100,100>do not use</color>."
 
 ////// Grips
 -- L["uplp_rsh12_grip_tac.printname"] = "Sport Shooter Grip"

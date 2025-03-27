@@ -228,7 +228,7 @@ L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cyli
 
 L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight w. Magnifier"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns.\nAre you sure about equipping it? Your gun doesn't even look like a machine gun! (unless it's PS 7.62)" .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns." .. desc_magoptic
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"

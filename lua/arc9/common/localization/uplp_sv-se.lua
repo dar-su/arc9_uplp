@@ -228,7 +228,7 @@ L["uplp_optic_compm4.description"] = "Reflexsikte av svenskt ursprung med en cyl
 
 L["uplp_optic_dcl110.printname"] = "Kulspruta Reflexsikte med Förstoringsglas"
 L["uplp_optic_dcl110.compactname"] = "KR F"
-L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd förstoringsglas gjorda för användning på kulsprutor.\nÄr du säker på att du vill utrusta den? Den ser inte ens ut som en kulspruta!"  .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd förstoringsglas gjorda för användning på kulsprutor."  .. desc_magoptic
 
 L["uplp_optic_acog.printname"] = "4x NCOG-4-Sikte"
 L["uplp_optic_acog.compactname"] = "4x NCOG-4"
@@ -2352,6 +2352,7 @@ L["uplp_weapon_rsh12_real"] = "RSh-12"
 L["uplp_weapon_rsh12_manufacturer"] = "KBP Instrument Design Bureau"
 
 L["uplp_weapon_rsh12_rr"] = "RR 12,7 \"Okhotnik\""
+L["uplp_weapon_rsh12_short"] = "RZ-U 12,7"
 
 /////////// Attachments
 ////// Barrel
@@ -2365,7 +2366,7 @@ L["uplp_rsh12_bar_long_o.description"] = "Förlängd pipa gjord på anodiserad s
 
 L["uplp_rsh12_bar_short.printname"] = "Wrist Wrecker Barrel"
 L["uplp_rsh12_bar_short.compactname"] = "WW"
-L["uplp_rsh12_bar_short.description"] = "Förkortad pipa gjord till RZ 12,7.\n\n<color=255,100,100>Varning</color>: Om du tycker om dina handleder, <color=255,100,100>använd ej</color>."
+L["uplp_rsh12_bar_short.description"] = "Förkortad pipa gjord till RZ-U 12,7.\n\n<color=255,100,100>Varning</color>: Om du tycker om dina handleder, <color=255,100,100>använd ej</color>."
 
 ////// Grips
 L["uplp_rsh12_grip_tac.printname"] = "Sportskytte Grepp"
