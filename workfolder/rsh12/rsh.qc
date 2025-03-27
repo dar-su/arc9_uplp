@@ -125,7 +125,7 @@ $sequence "dryfire" {
 }
 $sequence "dryfire_da" {
 	"anims\dryfire_da.smd"
-	"anims\dryfire_ads.smd"
+	"anims\dryfire_da_ads.smd"
  	blend "sights" 0 1
 	fps 30
 	snap

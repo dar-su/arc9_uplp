@@ -69,12 +69,14 @@ SWEP.NoTPIKVMPos = true
 -- SWEP.TPIKParentToSpine4 = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_deagle.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-9, 3, -5),
+    Pos = Vector(-7.5, 4.4, -6),
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-16, 3, -1),
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1
 }
+
+SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER
 
 SWEP.ViewModelFOVBase = 75
 
@@ -435,8 +437,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.45, lhik = 0 },
+            { t = 0.66, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -450,6 +452,8 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.35, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -461,7 +465,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 1, lhik = 1 },
+            { t = 0.3, lhik = 1 },
+            { t = 0.9, lhik = 0 },
+            { t = 1, lhik = 0 },
         },
     },
 
@@ -562,8 +568,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.2, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.68, lhik = 0 },
+            { t = 0.81, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -583,8 +590,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.75, lhik = 0 },
+            { t = 0.076, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
