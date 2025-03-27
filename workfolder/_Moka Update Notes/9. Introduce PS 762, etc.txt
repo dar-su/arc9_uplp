@@ -1,17 +1,23 @@
 [h1]New content[/h1]
 [list]
-	[*] Added the [b]PS 7.62[/b], a large calibre light machine gun. PolyArms' first! Thanks to Dummified for epic animations!
-	[*] Added a new [b]Chrome Frame[/b] attachment to the [u]Deagle[/u].
-	[*] Full translation to Russian of all attachments and weapons.
+	[*] Added the [b]PS 7.62[/b], PolyArms' first light machine gun; Thanks to Dummified for its epic animations!
+	[*] Added the [b]RZ 12.7[/b], a very large calibre Russian revolver; Thanks to Dummified for its sweet animations!
+	[*] Added a new [b]Chrome Frame[/b] attachment to the [u]Deagle[/u]
+	[*] Added full Russian localization
 [/list]
 
 [h1]Changed content[/h1]
 [list]
-	[*] Tweaked the animations on the SPAW-12 - Contributed by Fesiug
-	[*] Tweaked all reloads/draw/holster animations minimum progress percentage, allowing to fire after reloads and switching weapons before animation fully ends - Contributed by Fesiug
-	[*] All the holographic reticles have been adjusted to have a more realistic appearance. Might look worse in bright environments though.
-	[*] Updated certain localizations, including community ones.
-	[*] Correct ejected shells position and scale on all guns.
-	[*] Improved glass on PV-9's 10mm magazine. (proper render order)
-	[*] (change of ARC9 but whatever) Fixed some reloads in third person having magazine glitching in the end.
+	[*] Contributed by Fesiug:
+	[list]
+		[*] Tweaked the animations on the SPAW-12
+		[*] Tweaked the reload, draw and holster animation minimum progress values
+	[/list]
+	[*] Added support for ADS and/or Reload TPIK Offsets on all weapons
+	[*] Added One-Handed Sprints to all pistols
+	[*] Adjusted the holographic reticles to have a more realistic appearance (Might look worse in bright areas)
+	[*] Improved the glass on PV-9 10mm magazine (proper render order)
+	[*] Fixed some reloads in third person having magazine glitching in the end (ARC9 change, but whatever)
+	[*] Tweaked the ejected shell positions, scales and sounds on all weapons
+	[*] Updated certain localizations, including community ones
 [/list]
