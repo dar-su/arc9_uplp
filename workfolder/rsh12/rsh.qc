@@ -51,6 +51,7 @@ $sequence "idle"{
 	fps 30
  	blend "sights" 0 1
 	// loop
+	snap
 	// fadein 0
 	// fadeout 0.2
 	// blendlayer "cylrotate" 0 0 0 0 local
@@ -82,15 +83,15 @@ $sequence "firemode_pose" {
 	subtract "idle2" 0
 }
 
-// $sequence "firemode_antipose" {
-// 	"anims\idle_cock.smd"
-// 	blendwidth 1
-// 	delta
-// 	loop
-// 	fps 24
-// 	snap
-// 	subtract "idle_cock" 0
-// }
+$sequence "firemode_antipose" {
+	"anims\idle_cock.smd"
+	blendwidth 1
+	delta
+	loop
+	fps 24
+	snap
+	subtract "idle2" 0
+}
 
 $sequence "fire" {
 	"anims\fire.smd"
@@ -100,6 +101,8 @@ $sequence "fire" {
  	blend "sights" 0 1
 	fadein 0.02
 	fadeout 0.08
+	
+	subtract "firemode_antipose" 0
 }
 $sequence "fire_da" {
 	"anims\fire_da.smd"
@@ -117,9 +120,13 @@ $sequence "dryfire" {
  	blend "sights" 0 1
 	fps 30
 	snap
+	
+	subtract "firemode_antipose" 0
 }
 $sequence "dryfire_da" {
 	"anims\dryfire_da.smd"
+	"anims\dryfire_ads.smd"
+ 	blend "sights" 0 1
 	fps 30
 	snap
 }
@@ -133,7 +140,7 @@ $sequence "cycle1" {
 	fadein 0
 	fadeout 0.08
 	
-	// subtract "firemode_antipose" 0
+	subtract "firemode_antipose" 0
 }
 $sequence "cycle2" {
 	"anims\cycle2.smd"
@@ -142,7 +149,16 @@ $sequence "cycle2" {
  	blend "sights" 0 1
 	fadein 0
 	fadeout 0.08
-	// subtract "firemode_antipose" 0
+	subtract "firemode_antipose" 0
+}
+$sequence "uncock" {
+	"anims\uncock.smd"
+	"anims\uncock_ads.smd"
+ 	blend "sights" 0 1
+	fps 30
+	fadein 0
+	fadeout 0.08
+	subtract "firemode_antipose" 0
 }
 
 
@@ -151,6 +167,8 @@ $sequence "ready" {
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
+	
+	subtract "firemode_antipose" 0
 }
 
 
@@ -180,31 +198,36 @@ $sequence "reload" {
 	"anims\reload.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
-	snap
+	fadein 0.02
+	fadeout 0.08
 }
 $sequence "reload_optic_bulky" {
 	"anims\reload_optic_bulky.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
-	snap
+	fadein 0.02
+	fadeout 0.08
 }
 $sequence "reload_optic_slim" {
 	"anims\reload_optic_slim.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
-	snap
+	fadein 0.02
+	fadeout 0.08
 }
 $sequence "reload_optic_okp" {
 	"anims\reload_optic_okp.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
-	snap
+	fadein 0.02
+	fadeout 0.08
 }
 
 $sequence "inspect" {
 	"anims\inspect.smd"
 	fps 30
-	snap
+	fadein 0.02
+	fadeout 0.08
 }
 
 
