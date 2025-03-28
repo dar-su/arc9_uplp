@@ -94,7 +94,7 @@ ATT.Icon = Material(iconfolder .. "lighttrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RPMMult = 1.35
+ATT.RPMMult = 1.2
 ATT.RecoilMult = 1.1
 ATT.RecoilUpMult = 1.1
 ATT.RecoilSideMult = 1.4
@@ -115,11 +115,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.5
 ATT.Firemodes = { { Mode = -1 } }
-ATT.RecoilMult = 0.8
-ATT.RecoilAutoControlMult = 1.5
+ATT.RecoilMult = 1.25
+ATT.RecoilAutoControlMult = 0.75
 ATT.RecoilAutoControlMultShooting = 0.2
 ATT.RecoilSideMult = 5
 ATT.SpreadAddRecoil = 0.025
+ATT.DamageMaxMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")
 
