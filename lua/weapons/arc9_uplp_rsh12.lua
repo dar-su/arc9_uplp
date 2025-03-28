@@ -95,14 +95,14 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 64
-SWEP.DamageMin = 22
+SWEP.DamageMax = 77
+SWEP.DamageMin = 36
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
-    [HITGROUP_CHEST] = 1.25,
-    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1.1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -110,8 +110,8 @@ SWEP.BodyDamageMults = {
 }
 
 
-SWEP.Penetration = 45 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 12 -- How much kick things will have when hit
+SWEP.Penetration = 45*1.5 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 12*2 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 3 / ARC9.HUToM
@@ -197,7 +197,8 @@ SWEP.RPM = 200 -- How fast gun shoot
 SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, EFTSingleAction = true, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
+    -- { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
+    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, ManualAction = true, RPM = 300, TriggerDelay = false, RecoilKickMult = 0.75 },
     { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_doubleaction"), PoseParam = 0  },
 }
 
@@ -206,9 +207,9 @@ SWEP.ShellSmoke = false
 SWEP.EjectDelay = 1111111111
 
 SWEP.TriggerDelay = true
-SWEP.TriggerDelayTime = 0.12
-SWEP.TriggerDelayCancellable = false
-SWEP.TriggerStartFireAnim = true
+SWEP.TriggerDelayTime = 0.15
+SWEP.TriggerDelayCancellable = true --false
+SWEP.TriggerStartFireAnim = false --true
 -- SWEP.ShellVelocity = 0
 SWEP.NoForceSetLoadedRoundsOnReload = true 
 SWEP.ManualActionNoLastCycle = false
@@ -407,19 +408,23 @@ local function spincylinderbutnospam(swep)
 end
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if SERVER then
+    -- if SERVER then
         local fm = swep:GetFiremode()
-        if fm == 2 and anim == "fire" or anim == "cycle" or anim == "firemode_2" or anim == "cycle_sights" or anim == "dryfire" then
+        -- if anim == "cycle" or anim == "firemode_2" or anim == "cycle_sights" or anim == "dryfire" or anim == "dryfire_sights" then
+        if fm == 1 and anim == "fire" or anim == "firemode_2" or anim == "dryfire" or anim == "dryfire_sights" then
             spincylinderbutnospam(swep)
-            -- print(anim, fm, swep:GetUPLPCylinderSpin())
-            if anim == "fire" then return "fire_da" end
-            if fm == 2 and anim == "dryfire" then return "dryfire_da" end
+
+            if fm == 2 and (anim == "dryfire" or anim == "dryfire_sights") then return "dryfire_da" end
+        elseif anim == "fire" and fm == 2 then
+            spincylinderbutnospam(swep)
+            return "fire_da" 
         end
 
         if anim == "ready" and fm == 2 then return "draw" end
         -- if anim == "idle" and fm == 1 then return "idle_cock" end
         if anim == "cycle" and (swep:GetElements()["uplp_grip_used"] or swep:GetBipod()) then return "cycle_sights" end -- alt cycle anim doesnt look well with lhik
-    end
+        if anim == "dryfire" and (swep:GetElements()["uplp_grip_used"] or swep:GetBipod()) then return "dryfire_sights" end -- alt cycle anim doesnt look well with lhik
+    -- end
 end
 
 -- Animations
@@ -491,16 +496,39 @@ SWEP.Animations = {
         NoIdle = true
     },
     ["fire_da"] = {
-        Source = "fire_da",
+        Source = "fire_da", -- same as fire but without hammer poseparam
+        -- Time = 1,
+        EventTable = {
+            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
+        },
+    },
+    ["trigger"] = {
+        Source = "trigger",
         -- Time = 1,
         EventTable = {
             {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},
-            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.05},
+        },
+    },
+    ["untrigger"] = {
+        Source = "untrigger",
+        -- Time = 1,
+        EventTable = {
+            {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0},
         },
     },
 
     ["dryfire"] = {
+        Source = {"dryfire", "dryfire2"},
+        -- Time = 1,
+        EventTable = {
+            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, c = ca, v = 0.2 },
+            {s = pathUTC .. "revolver_cock.ogg", t = 0.4},
+            {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.4},
+        },
+    },
+    ["dryfire_sights"] = {
         Source = "dryfire",
         -- Time = 1,
         EventTable = {
@@ -617,7 +645,7 @@ SWEP.Animations = {
     },
     
     ["firemode_2"] = {
-        Source = "cycle1",
+        Source = "cycle_nofade",
         MinProgress = 0.65,
 		FireASAP = true,
         EventTable = {

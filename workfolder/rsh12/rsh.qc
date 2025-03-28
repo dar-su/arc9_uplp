@@ -94,28 +94,56 @@ $sequence "firemode_antipose" {
 }
 
 $sequence "fire" {
-	"anims\fire.smd"
-	"anims\fire_ads.smd"
-	fps 30
-	"ACT_VM_PRIMARYATTACK" 1
- 	blend "sights" 0 1
-	fadein 0.02
-	fadeout 0.08
-	
-	subtract "firemode_antipose" 0
-}
-$sequence "fire_da" {
-	"anims\fire_da.smd"
-	"anims\fire_da_ads.smd"
+	"anims\fire_sa_new.smd"
+	"anims\fire_ads_sa_new.smd"
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
 	fadein 0
-	fadeout 0.08
+	fadeout 0.2
+	
+	subtract "firemode_antipose" 0
+}
+$sequence "fire_da" {
+	"anims\fire_new.smd"
+	"anims\fire_ads_new.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.05
+	fadeout 0.1
+}
+
+$sequence "trigger" {
+	"anims\fire_trigger_da.smd"
+	"anims\fire_trigger_da_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0
+	fadeout 0.1
+}
+$sequence "untrigger" {
+	"anims\fire_untrigger.smd"
+	"anims\fire_untrigger_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.2
+	fadeout 0.2
 }
 
 $sequence "dryfire" {
 	"anims\dryfire.smd"
+	"anims\dryfire_ads.smd"
+ 	blend "sights" 0 1
+	fps 30
+	snap
+	
+	subtract "firemode_antipose" 0
+}
+$sequence "dryfire2" {
+	"anims\dryfire2.smd"
 	"anims\dryfire_ads.smd"
  	blend "sights" 0 1
 	fps 30
@@ -133,11 +161,11 @@ $sequence "dryfire_da" {
 
 
 $sequence "cycle1" {
-	"anims\cycle1.smd"
+	"anims\cycle1_new.smd"
 	"anims\cycle1_ads.smd"
 	fps 30
  	blend "sights" 0 1
-	fadein 0
+	fadein 0.1
 	fadeout 0.08
 	
 	subtract "firemode_antipose" 0
@@ -147,8 +175,18 @@ $sequence "cycle2" {
 	"anims\cycle2_ads.smd"
 	fps 30
  	blend "sights" 0 1
-	fadein 0
+	fadein 0.1
 	fadeout 0.08
+	subtract "firemode_antipose" 0
+}
+$sequence "cycle_nofade" {
+	"anims\cycle1_new.smd"
+	"anims\cycle1_ads.smd"
+	fps 30
+ 	blend "sights" 0 1
+	fadein 0.0
+	fadeout 0.08
+	
 	subtract "firemode_antipose" 0
 }
 $sequence "uncock" {
