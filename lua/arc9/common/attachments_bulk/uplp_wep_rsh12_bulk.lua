@@ -24,7 +24,7 @@ ATT.HoldTypeHolstered = nil
 ATT.HoldTypeSightsHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "smg" end end
 
 ATT.OneHandedSprintHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return false end end
-ATT.SprintPosHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Vector(3, 0, 0) end end
+ATT.SprintPosHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Vector(3, 0, -1) end end
 ATT.SprintAngHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Angle(35, -10, -20) end end
 
 
@@ -55,7 +55,7 @@ ATT.HoldTypeHolstered = nil
 ATT.HoldTypeSightsHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return "smg" end end
 
 ATT.OneHandedSprintHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return false end end
-ATT.SprintPosHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Vector(3, 0, 0) end end
+ATT.SprintPosHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Vector(3, 0, -1) end end
 ATT.SprintAngHook = function(wep, val) if wep:GetElements()["uplp_grip_used"] then return Angle(35, -10, -20) end end
 
 

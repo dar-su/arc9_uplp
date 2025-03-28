@@ -689,7 +689,6 @@ SWEP.AttachmentTableOverrides = {
     },
     ["uplp_grip_rk45"] = {
         ActivePos = Vector(-0.2, -2, -0.2), -- arm clip fix
-        RestPos = Vector(3, 0, -2),
     },
 }
 
@@ -697,17 +696,17 @@ SWEP.AttachmentElements = {
     ["uplp_rsh12_bar_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
 		[3] = { Pos = Vector(0, 0.015, -4), }, -- Muzzle
 		[5] = { Pos = Vector(0, 0, -3.9), }, -- Tac.
-		[10] = { Pos = Vector(0.55, -0.85, 1.0), }, -- Charm
+		[11] = { Pos = Vector(0.55, -0.85, 1.0), }, -- Charm
     }},
     ["uplp_rsh12_bar_long"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
 		[3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
 		[5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
-		[10] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
+		[11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
     ["uplp_rsh12_bar_long_o"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
 		[3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
 		[5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
-		[10] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
+		[11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
 
     ["uplp_rsh12_grip_tac"] = { Bodygroups = { { 1, 1 } } },
@@ -775,6 +774,19 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_canusegrips"},
     },
+    {
+        Hidden = true,
+        PrintName = ARC9:GetPhrase("uplp_category_optic"),
+        DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        Category = {"uplp_optic_direct"},
+        Bone = "topcover",
+        Pos = Vector(0, -2.8, -1.5),
+        Scale = 0.9,
+        ExtraSightDistance = 1,
+        Ang = Angle(90, 90, 180),
+        CorrectiveAng = Angle(0.9, 3.08, 0),
+        MergeSlots = {1}
+    },
 
 
 
@@ -828,7 +840,7 @@ end
 SWEP.Hook_TranslateSource = function(swep, anim)
     if anim == "reload" then
         local eles = swep:GetElements()
-        if eles["uplp_optic_used"] then
+        if eles["uplp_optic_used"] and !eles["uplp_optic_direct"] then
             if eles["uplp_optic_okp"] then return anim .. "_optic_okp" 
             elseif eles["uplp_optic_holosun"] or eles["uplp_optic_genericrds"] or eles["uplp_optic_kobra"] or eles["uplp_optic_d1"] or eles["uplp_optic_tacrds"] or eles["uplp_optic_rmr"] then return anim .. "_optic_slim" end
             return anim .. "_optic_bulky"
