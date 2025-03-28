@@ -71,7 +71,7 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
 
-    TPIKPosSightOffset = Vector(-1, 2, -3),
+    TPIKPosSightOffset = Vector(-1, 2, -2),
 }
 
 SWEP.ViewModelFOVBase = 65
@@ -631,7 +631,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 145 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 150 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 0, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -654,7 +654,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 145 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 150 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 0, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -677,7 +677,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 145 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 150 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 0, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -700,7 +700,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 145 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 150 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
+            {hide = 0, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
