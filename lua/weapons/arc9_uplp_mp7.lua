@@ -233,7 +233,7 @@ end
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(12, 40, 4)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(16, -3, -3)
+SWEP.CustomizeRotateAnchor = Vector(12, -3, -3)
 
 SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotFOV = 60
