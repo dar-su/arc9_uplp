@@ -197,9 +197,8 @@ SWEP.RPM = 200 -- How fast gun shoot
 SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    -- { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, ManualAction = true, RPM = 300, TriggerDelayTime = 0.05, RecoilKickMult = 0.75 },
-    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, ManualAction = true, RPM = 300, TriggerDelay = false, RecoilKickMult = 0.75 },
     { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_doubleaction"), PoseParam = 0  },
+    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, ManualAction = true, RPM = 300, TriggerDelay = false, RecoilKickMult = 0.75 },
 }
 
 SWEP.NoShellEject = true
@@ -410,18 +409,18 @@ end
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     -- if SERVER then
         local fm = swep:GetFiremode()
-        -- if anim == "cycle" or anim == "firemode_2" or anim == "cycle_sights" or anim == "dryfire" or anim == "dryfire_sights" then
-        if fm == 1 and anim == "fire" or anim == "firemode_2" or anim == "dryfire" or anim == "dryfire_sights" then
+        -- if anim == "cycle" or anim == "firemode_1" or anim == "cycle_sights" or anim == "dryfire" or anim == "dryfire_sights" then
+        if fm == 2 and anim == "fire" or anim == "firemode_1" or anim == "dryfire" or anim == "dryfire_sights" then
             spincylinderbutnospam(swep)
 
-            if fm == 2 and (anim == "dryfire" or anim == "dryfire_sights") then return "dryfire_da" end
-        elseif anim == "fire" and fm == 2 then
+            if fm == 1 and (anim == "dryfire" or anim == "dryfire_sights") then return "dryfire_da" end
+        elseif anim == "fire" and fm == 1 then
             spincylinderbutnospam(swep)
             return "fire_da" 
         end
 
-        if anim == "ready" and fm == 2 then return "draw" end
-        -- if anim == "idle" and fm == 1 then return "idle_cock" end
+        if anim == "ready" and fm == 1 then return "draw" end
+        -- if anim == "idle" and fm == 2 then return "idle_cock" end
         if anim == "cycle" and (swep:GetElements()["uplp_grip_used"] or swep:GetBipod()) then return "cycle_sights" end -- alt cycle anim doesnt look well with lhik
         if anim == "dryfire" and (swep:GetElements()["uplp_grip_used"] or swep:GetBipod()) then return "dryfire_sights" end -- alt cycle anim doesnt look well with lhik
     -- end
@@ -644,7 +643,7 @@ SWEP.Animations = {
         EventTable = thetoggle
     },
     
-    ["firemode_2"] = {
+    ["firemode_1"] = {
         Source = "cycle_nofade",
         MinProgress = 0.65,
 		FireASAP = true,
@@ -654,7 +653,7 @@ SWEP.Animations = {
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
     },
-    ["firemode_1"] = {
+    ["firemode_2"] = {
         Source = "uncock",
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
