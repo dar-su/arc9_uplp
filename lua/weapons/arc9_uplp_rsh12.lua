@@ -75,7 +75,7 @@ SWEP.WorldModelOffset = {
     TPIKAng = Angle(-5, 0, 180),
     Scale = 1,
 
-    TPIKPosAlternative = Vector(-14, 1, -1), -- enabled with SWEP.TPIKAlternativePos, for grips here
+    TPIKPosAlternative = Vector(-8, 3, -2), -- enabled with SWEP.TPIKAlternativePos, for grips here
     TPIKPosSightOffset = Vector(3, 1, -4.5),
 }
 
