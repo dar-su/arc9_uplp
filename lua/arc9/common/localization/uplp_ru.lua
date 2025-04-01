@@ -2793,6 +2793,10 @@ L["uplp_r870_handle_flash.printname"] = "Рукоятка ApexCore Arsenal"
 L["uplp_r870_handle_flash.compactname"] = "ApexCore"  
 L["uplp_r870_handle_flash.description"] = "Кастомная рукоятка с фонарём от ApexCore Arsenal."  
 
+////// Magazines
+L["uplp_r870_mag_6.printname"] = "6-зарядный съемный магазин"  
+L["uplp_r870_mag_6.compactname"] = "6R С."  
+
 ////// Stocks  
 L["uplp_r870_stock_short.printname"] = "Укороченный полимерный приклад"  
 L["uplp_r870_stock_short.compactname"] = "Укор. (П)"  

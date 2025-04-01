@@ -2793,6 +2793,10 @@ L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Handtag"
 L["uplp_r870_handle_flash.compactname"] = "ApexCore"
 L["uplp_r870_handle_flash.description"] = "Anpassat handtag med inbyggd ficklampa gjord av ApexCore Arsenal."
 
+////// Magazines
+L["uplp_r870_mag_6.printname"] = "Avtagbart 6-Patronersmagasin"
+L["uplp_r870_mag_6.compactname"] = "A. 6P"
+
 ////// Stocks
 L["uplp_r870_stock_short.printname"] = "Avsågad Polymer Kolv"
 L["uplp_r870_stock_short.compactname"] = "Avsågad (P)"

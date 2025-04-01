@@ -2819,9 +2819,9 @@ L["uplp_r870_handle_magpul.compactname"] = ARC9:GetPhrase("uplp_m590_handle_magp
 L["uplp_r870_handle_magpul.description"] = ARC9:GetPhrase("uplp_m590_handle_magpul.description")
 
 ////// Magazines
-L["uplp_r870_mag_5.printname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5-R Detachable Magazine"
-L["uplp_r870_mag_5.compactname"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "5R D."
-L["uplp_r870_mag_5.description"] = ARC9:GetPhrase("uplp_m590_mag_5.printname") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
+L["uplp_r870_mag_6.printname"] = "6-R Detachable Magazine"
+L["uplp_r870_mag_6.compactname"] = "6R D."
+L["uplp_r870_mag_6.description"] = ARC9:GetPhrase("uplp_m590_mag_5.description") or "Installs a detachable magazine onto the weapon, making full top-ups quicker."
 
 ////// Stocks
 L["uplp_r870_stock_short.printname"] = "Cut-Off Polymer Stock"

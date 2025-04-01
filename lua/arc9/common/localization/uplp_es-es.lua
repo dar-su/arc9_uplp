@@ -2780,6 +2780,10 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 -- L["uplp_r870_handle_flash.compactname"] = "ApexCore"
 -- L["uplp_r870_handle_flash.description"] = "Custom pump handle with built-in flashlight made by ApexCore Arsenal."
 
+////// Magazines
+-- L["uplp_r870_mag_6.printname"] = "6-R Detachable Magazine"
+-- L["uplp_r870_mag_6.compactname"] = "6R D."
+
 ////// Stocks
 -- L["uplp_r870_stock_short.printname"] = "Cut-Off Polymer Stock"
 -- L["uplp_r870_stock_short.compactname"] = "C.O. (P)"
