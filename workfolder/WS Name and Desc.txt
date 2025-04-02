@@ -24,8 +24,7 @@ Made using custom assets and pure love, all you need is the [url=https://steamco
 [*] Most of the addon's size are of the [i]models[/i].
 [*] If your attachments disappear when you install them, you might have too many addons installed. Disable or unsubscribe from a few of them, then restart.
 [*] If you are having issues in multiplayer, don't forget to disable physical bullets, and set the tickrate to 66 or above.
-[*] If you dislike the suppressor overheat mechanic, then copy this into the console:
-[b]arc9_modifiers “OverheatOverride\tfalse”;arc9_modifiers_invalidateall[/b]
+[*] If you dislike the suppressor overheat mechanic, then open the [b]ARC9 Settings menu[/b], navigate to [b]Modifiers[/b], and disable [b]Enable Overheating[/b].
 [/list]
 
 [url=https://boosty.to/darsu/donate][img]https://i.imgur.com/SuorNau.png[/img][/url]
@@ -48,7 +47,7 @@ Made using custom assets and pure love, all you need is the [url=https://steamco
 [*]Бoльшaя чacть paзмepa aддoнa зaнятa чиcто мoдeлями
 [*]Ecли oбвecы пpoпaдaeт cpaзy пocлe ycтaнoвки - у тебя установлено слишком много аддонов, удали несколько. Этo пpoблeмa ARC9 кoтopyю я нe в cилax иcпpaвить
 [*]Для мультиплеера не забудь отключить физ. пули и установить тикрейт на 66+
-[*]Чтобы отключить мexaнику пepeгpeвa глyшитeлeй, пиши в кoнcoль: [b][i]arc9_modifiers “OverheatOverride\tfalse”;arc9_modifiers_invalidateall[/i][/b]
+[*]Чтобы отключить мexaнику пepeгpeвa глyшитeлeй - открой [b]Настройки ARC9[/b], перейди в [b]Модификаторы[/b] и отключи [b]Включить перегревы[/b].
 [/list]
 
 [url=https://boosty.to/darsu/donate][img]https://i.imgur.com/QcSMbcL.png[/img][/url]
@@ -72,8 +71,7 @@ Gjort med anpassade tillgångar och kärlek, allt som krävs är [url=https://st
 [*] Tilläggets storlek är mestadels [b]modellerna[/b].
 [*] Om dina tillbehör plockas bort efter du sätter på dem så har du förmodligen för många tillägg installerade. Avaktivera eller avprenumerera några av dem, och starta om.
 [*] Om du har problem i flerspelareläget, glöm inte att att avaktivera fysiska skott, och sätta tickrate till 66 eller högre.
-[*] Om du inte tycker om mekanismen där ljuddämparen överhettas, skriv då in detta i konsolen:
-[b]arc9_modifiers “OverheatOverride\tfalse”;arc9_modifiers_invalidateall[/b]
+[*] Om du inte tycker om mekanismen där ljuddämparen överhettas, öppna då [b]ARC9-Inställningarna[/b], navigera till [b]Modifierare[/b], och stäng av [b]Aktivera Överhettning[/b].
 [/list]
 
 [url=https://boosty.to/darsu/donate][img]https://i.imgur.com/SuorNau.png[/img][/url]
