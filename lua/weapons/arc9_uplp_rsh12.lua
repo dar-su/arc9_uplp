@@ -557,7 +557,8 @@ SWEP.Animations = {
         Source = {"cycle1", "cycle2"},
         MinProgress = 0.55,
         -- Mult = 1.0,
-        Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
+        -- Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
+        -- now its ok
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
