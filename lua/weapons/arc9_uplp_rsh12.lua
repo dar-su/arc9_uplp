@@ -90,19 +90,19 @@ SWEP.ActivePos = Vector(-0.1, -0.2, -0.1)
 -- SWEP.ActivePosHook = function(wep, pos) if wep:GetElements()["uplp_grip_used"] then return pos + Vector(-0.5, -2, -0.5) end end
 SWEP.ActiveAng = Angle(0, 0, -3)
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 77
-SWEP.DamageMin = 36
+SWEP.DamageMax = 68
+SWEP.DamageMin = 35
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 1.1,
+    [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
@@ -110,12 +110,12 @@ SWEP.BodyDamageMults = {
 }
 
 
-SWEP.Penetration = 45*1.5 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 12*2 -- How much kick things will have when hit
+SWEP.Penetration = 45 * 1.5 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 12 * 2 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 3 / ARC9.HUToM
-SWEP.RangeMax = 45 / ARC9.HUToM
+SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMax = 80 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 410 * 39.37
@@ -129,18 +129,22 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 5
 
 -- Recoil
-SWEP.Recoil = 5
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 0.3
+SWEP.Recoil = 3
+SWEP.RecoilUp = 2
+SWEP.RecoilSide = 0.5
 
 SWEP.RecoilRandomUp = 0.4
 SWEP.RecoilRandomSide = 0.2
 
+SWEP.RecoilAddRecoil = 1
+SWEP.RecoilRandomUpAddRecoil = 1
+SWEP.RecoilRandomSideAddRecoil = 3
+
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.75
-SWEP.RecoilAutoControlShooting = 0.5
+SWEP.RecoilAutoControl = 0.75
+SWEP.RecoilAutoControlShooting = 1
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -166,33 +170,35 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.007
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.005
+SWEP.SpreadAddHipFire = 0.015
 
-SWEP.SpreadAddRecoil = 0.025
-SWEP.SpreadAddMove = 0.01
+SWEP.SpreadAddRecoil = 0.03
+SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 4
+SWEP.RecoilDissipationRate = 3.5
 SWEP.RecoilResetTime = 0.01
-SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilPerShot = 1 / 1.5
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.85 -- When aiming
+SWEP.SpeedMultSights = 0.8 -- When aiming
 
+SWEP.SwayAddSights = 0
+SWEP.SwayMultSights = 1.5
 SWEP.BarrelLength = 24
 
 SWEP.AimDownSightsTime = 0.25 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
-SWEP.RPM = 200 -- How fast gun shoot
+SWEP.RPM = 180 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -202,7 +208,7 @@ SWEP.Firemodes = {
 }
 
 SWEP.NoShellEject = true
-SWEP.ShellSmoke = false 
+SWEP.ShellSmoke = false
 SWEP.EjectDelay = 1111111111
 
 SWEP.TriggerDelay = true
@@ -210,7 +216,7 @@ SWEP.TriggerDelayTime = 0.15
 SWEP.TriggerDelayCancellable = true --false
 SWEP.TriggerStartFireAnim = false --true
 -- SWEP.ShellVelocity = 0
-SWEP.NoForceSetLoadedRoundsOnReload = true 
+SWEP.NoForceSetLoadedRoundsOnReload = true
 SWEP.ManualActionNoLastCycle = false
 SWEP.ManualActionEjectAnyway = false
 SWEP.FiremodeAnimLock = true
@@ -416,7 +422,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
             if fm == 1 and (anim == "dryfire" or anim == "dryfire_sights") then return "dryfire_da" end
         elseif anim == "fire" and fm == 1 then
             spincylinderbutnospam(swep)
-            return "fire_da" 
+            return "fire_da"
         end
 
         if anim == "ready" and fm == 1 then return "draw" end
@@ -438,8 +444,8 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Mult = 1.0,
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
@@ -458,8 +464,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.35,
-		FireASAP = true,
+        MinProgress = 0.35,
+        FireASAP = true,
         EventTable = {
             { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -549,8 +555,9 @@ SWEP.Animations = {
 
     ["cycle"] = {
         Source = {"cycle1", "cycle2"},
-        MinProgress = 0.75,
-        Mult = 1.0,
+        MinProgress = 0.55,
+        -- Mult = 1.0,
+        Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
@@ -560,7 +567,7 @@ SWEP.Animations = {
 
     ["cycle_sights"] = {
         Source = "cycle1",
-        MinProgress = 0.75,
+        MinProgress = 0.55,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
@@ -574,11 +581,11 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.85,
-		RefillProgress = 0.675,
-		FireASAP = true,
+        RefillProgress = 0.675,
+        FireASAP = true,
         DropMagAt = 50/30,
         MagSwapTime = 23/30,
-        
+
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
             { s = pathDeagle .. "slidepull.ogg", t = 10/30 },
@@ -596,11 +603,11 @@ SWEP.Animations = {
             {hide = 0, t = 24/30},
             {hide = 1, t = 50/30},
 
-            {shelleject = 1001, att = 4, t = 16/30 },  
-            {shelleject = 1002, att = 5, t = 16/30 },  
-            {shelleject = 1003, att = 6, t = 16/30 },  
-            {shelleject = 1004, att = 7, t = 16/30 },  
-            {shelleject = 1005, att = 8, t = 16/30 }, 
+            {shelleject = 1001, att = 4, t = 16/30 },
+            {shelleject = 1002, att = 5, t = 16/30 },
+            {shelleject = 1003, att = 6, t = 16/30 },
+            {shelleject = 1004, att = 7, t = 16/30 },
+            {shelleject = 1005, att = 8, t = 16/30 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -615,7 +622,7 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         MinProgress = 0.85,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca },
             { s = pathUTC .. "cloth_3.ogg", t = 45 / 30, c = ca, v = 0.15 },
@@ -642,11 +649,11 @@ SWEP.Animations = {
         Source = "modeswitch",
         EventTable = thetoggle
     },
-    
+
     ["firemode_1"] = {
         Source = "cycle_nofade",
         MinProgress = 0.65,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
@@ -693,19 +700,19 @@ SWEP.AttachmentTableOverrides = {
 
 SWEP.AttachmentElements = {
     ["uplp_rsh12_bar_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
-		[3] = { Pos = Vector(0, 0.015, -4), }, -- Muzzle
-		[5] = { Pos = Vector(0, 0, -3.9), }, -- Tac.
-		[11] = { Pos = Vector(0.55, -0.85, 1.0), }, -- Charm
+        [3] = { Pos = Vector(0, 0.015, -4), }, -- Muzzle
+        [5] = { Pos = Vector(0, 0, -3.9), }, -- Tac.
+        [11] = { Pos = Vector(0.55, -0.85, 1.0), }, -- Charm
     }},
     ["uplp_rsh12_bar_long"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
-		[3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
-		[5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
-		[11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
+        [3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
+        [5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
+        [11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
     ["uplp_rsh12_bar_long_o"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-		[3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
-		[5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
-		[11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
+        [3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
+        [5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
+        [11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
 
     ["uplp_rsh12_grip_tac"] = { Bodygroups = { { 1, 1 } } },
@@ -840,7 +847,7 @@ SWEP.Hook_TranslateSource = function(swep, anim)
     if anim == "reload" then
         local eles = swep:GetElements()
         if eles["uplp_optic_used"] and !eles["uplp_optic_direct"] then
-            if eles["uplp_optic_okp"] then return anim .. "_optic_okp" 
+            if eles["uplp_optic_okp"] then return anim .. "_optic_okp"
             elseif eles["uplp_optic_holosun"] or eles["uplp_optic_genericrds"] or eles["uplp_optic_kobra"] or eles["uplp_optic_d1"] or eles["uplp_optic_tacrds"] or eles["uplp_optic_rmr"] then return anim .. "_optic_slim" end
             return anim .. "_optic_bulky"
         end
