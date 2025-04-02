@@ -2968,7 +2968,7 @@ L["uplp_pkm_furn_poly.description"] = "Ersätter träbitarna med några av polym
 
 L["uplp_pkm_furn_zenit.printname"] = "Zenith-Bitar"
 L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
-L["uplp_pkm_furn_zenit.description"] = "Ersätter träbitarna med några taktiska Zenith-delar.\nEndast <color=150,150,255>kosmetiskt</color>."
+L["uplp_pkm_furn_zenit.description"] = "Ersätter träbitarna med några taktiska Zenith-delar."
 
 ////// Receiver
 L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7,62 Konverteringskit"

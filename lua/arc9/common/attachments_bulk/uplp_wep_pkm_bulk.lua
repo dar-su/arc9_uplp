@@ -27,9 +27,24 @@ ATT.CustomPros = {
 	[	ARC9:GetPhrase("uplp_stat_suppressed")	] = " ",
 }
 
+-- mp5sd stats placeholder
 -- Positives
+ATT.SpreadAddRecoil = -0.003
+ATT.RecoilSideMult = 0.8
+ATT.RecoilUpMult = 0.9
 
 -- Negatives
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.RPMMult = 0.875
+
+ATT.Overheat = true
+ATT.HeatCapacityMult = 1 --
+ATT.HeatDissipation = 5 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+ATT.SpreadAddHot = 0.03
+ATT.RPMMultHot = 0.85
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.25, 6, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.25, 0, 0) end
@@ -49,9 +64,20 @@ ATT.Icon = Material(iconfolder .. "pkp.png", "mips smooth")
 ATT.Category = "uplp_pkm_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+-- fal mid barrel stats placeholder
 -- Positives
+ATT.RecoilPerShot = 1 / 13
+ATT.RangeMinAdd = 10 / ARC9.HUToM
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
 
 -- Negatives
+ATT.RPMMult = 0.85
+ATT.SpreadAddHipFire = 0.01
+ATT.SwayMultSights = 1.2
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.02
+
+ATT.ReocilAdd = 0.1
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_brl_pkp")
 
@@ -81,13 +107,23 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "zenit.png", "mips smooth")
 
--- make this one have some stats plz
-
 ATT.Category = "uplp_pkm_furniture"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
+
+-- fal foldable stock stats placeholder
+-- Positives
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpreadAddHipFire = -0.008
+ATT.SpeedMultSights = 1.15
+ATT.SpeedAdd = 0.03
+
+-- Negatives
+ATT.RecoilAdd = 0.3
+ATT.RecoilAutoControlMult = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_furn_zenit")
 
@@ -126,6 +162,18 @@ ATT.Attachments = {
     },
 }
 
+-- my own placeholder stats idk honestly
+-- Positives
+ATT.RecoilMult = 0.85
+ATT.RecoilAutoControlMult = 1.1
+ATT.SprintToFireTimeMult = 0.75
+ATT.AimDownSightsTimeMult = 0.95
+
+-- Negatives
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.DamageMaxMult = 0.9
+ATT.RecoilSideMult = 1.2
+
 ARC9.LoadAttachment(ATT, "uplp_pkm_rec_bullpup")
 
 -------------------- OTHER
@@ -157,6 +205,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "bipod.png", "mips smooth")
 
 ATT.Bipod = true
+
+-- Negatives
+ATT.SprintToFireTimeAdd = 0.04
 
 ATT.Category = "uplp_pkm_bipod"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

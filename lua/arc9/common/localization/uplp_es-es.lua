@@ -2955,7 +2955,7 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 -- L["uplp_pkm_furn_zenit.printname"] = "Zenith Furniture"
 -- L["uplp_pkm_furn_zenit.compactname"] = "Zenith"
--- L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture.\nPurely <color=150,150,255>cosmetic</color>."
+-- L["uplp_pkm_furn_zenit.description"] = "Replaces the wooden furniture with tactical Zenith furniture."
 
 ////// Receiver
 -- L["uplp_pkm_rec_bullpup.printname"] = "PS-BP 7.62 Conversion Kit"
