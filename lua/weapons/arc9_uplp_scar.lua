@@ -89,7 +89,7 @@ SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2.2,
-    [HITGROUP_CHEST] = 1.15,
+    [HITGROUP_CHEST] = 1.0,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,

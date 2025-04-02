@@ -8,6 +8,16 @@ SWEP.UseHands = true
 
 SWEP.PrintName = "UPLP Weapon Base (If seen; what the fuck even?)"
 
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
+
 -------------------------- MELEE
 SWEP.DefaultBodygroups = "00000000000000000000000" -- Might as well prepare for the future
 
