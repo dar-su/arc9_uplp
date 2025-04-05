@@ -642,6 +642,7 @@ SWEP.AttachmentElements = {
     Bodygroups = { { 1, 2 } },
     AttPosMods = {
         [3] = { Pos = Vector(0, 1.3, 8) },
+        [5] = { Pos = Vector(0, 0.3, 0) }, -- moving whole furniture slot just to have good position if bullpap and aek together
         }
     },
 
