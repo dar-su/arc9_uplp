@@ -1577,8 +1577,8 @@ ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
 
-R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
-R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
+local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
+-- local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
@@ -1591,20 +1591,20 @@ ATT.Sights = {
         Blur = false,
 
         SwayAddSights = sway_midbig,
-        Reticle = R1
+        Reticle = R0
     },
-    {
-        Pos = Vector(0, 10, -1.69),
-        Ang = Angle(0, -0, 0),
-        Magnification = 1.25,
-        ViewModelFOV = 20,
-        RTScopeFOV = 40,
-        RTScopeMagnification = 1,
-        Blur = false,
-        Reticle = R0,
+    -- {
+    --     Pos = Vector(0, 10, -1.69),
+    --     Ang = Angle(0, -0, 0),
+    --     Magnification = 1.25,
+    --     ViewModelFOV = 20,
+    --     RTScopeFOV = 40,
+    --     RTScopeMagnification = 1,
+    --     Blur = false,
+    --     Reticle = R0,
 
-        SwayAddSights = sway_midbig,
-    },
+    --     SwayAddSights = sway_midbig,
+    -- },
 }
 
 ATT.ActivePosHook = function(swep, pos)
@@ -1613,16 +1613,24 @@ end
 
 ATT.DrawFunc = function(swep, model, wm)
     if !wm then
-        model:SetBodygroup(1, 2-swep:GetMultiSight())
+        local active = swep:GetInSights() and model.slottbl.Address == swep:GetActiveSightSlotTable().Address
+
+        if active then
+            local scrollevel = swep:GetSight().ScrollLevel or 0 -- SmoothScrollLevel
+            -- model:SetPoseParameter("switch", 1 - scrollevel)
+            model:SetBodygroup(1, 1 - scrollevel)
+        end
     end
 end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
--- ATT.RTScopeAdjustable = true
--- ATT.RTScopeAdjustmentLevels = 1
--- ATT.RTScopeFOVMin = 40
--- ATT.RTScopeFOVMax = 57 / 6
+ATT.RTScopeAdjustable = true
+ATT.RTScopeAdjustmentLevels = 1
+ATT.RTScopeFOVMin = 57
+ATT.RTScopeFOVMax = 57 / 6
+ATT.RTScopeMagnificationMin = 1
+ATT.RTScopeMagnificationMax = 6
 ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = R0
 ATT.RTScopeReticleScale = 1.1
