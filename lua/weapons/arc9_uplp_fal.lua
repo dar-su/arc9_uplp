@@ -296,6 +296,8 @@ SWEP.DistantShootSoundIndoor = {
     pathUTC .. "308tails/fire-dist-308-rif-int-06.ogg"
 }
 
+SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
+
 SWEP.DistantShootSoundSilenced = {
     pathUTC .. "generictails/sup-tail-01.ogg",
     pathUTC .. "generictails/sup-tail-02.ogg",

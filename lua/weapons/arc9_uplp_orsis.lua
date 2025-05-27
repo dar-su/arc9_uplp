@@ -311,6 +311,8 @@ SWEP.DistantShootSoundIndoor = {
     pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-06.ogg",
 }
 
+SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
+
 SWEP.DropMagazineSounds = {
     pathUTC .. "rifle_magdrop_1.ogg",
     pathUTC .. "rifle_magdrop_2.ogg",

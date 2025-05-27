@@ -109,7 +109,7 @@ function ENT:Detonate()
 
         if self:WaterLevel() >= 1 then
             util.Effect("WaterSurfaceExplosion", effectdata)
-            self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO)
+            self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
         else
             -- util.Effect("Explosion", effectdata)
 
@@ -118,7 +118,7 @@ function ENT:Detonate()
             -- explosion_HE_claymore_fas2
             -- explosion_grenade_fas2
 
-            self:EmitSound(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], 125, 100, 1, CHAN_AUTO)
+            self:EmitSound(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], 125, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
             ParticleEffect("explosion_m79", self:GetPos(), Angle(-90, 0, 0))
 
             --self:EmitSound("phx/kaboom.wav", 125, 100, 1, CHAN_AUTO)
@@ -142,7 +142,7 @@ function ENT:Detonate()
             mask = MASK_SOLID_BRUSHONLY
         })
         if trace.Hit then
-            self:EmitSound(self.DebrisSounds[math.random(1,#self.DebrisSounds)], 85, 100, 1, CHAN_AUTO)
+            self:EmitSound(self.DebrisSounds[math.random(1,#self.DebrisSounds)], 85, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
         end
     end
 
