@@ -312,72 +312,52 @@ SWEP.PeekAng = Angle(0, 0.4, -40)
 ---- Sounds
 
 -- urbna!
-local pathUT = "uplp_urban_temp/870/"
-local pathUTREAL = "uplp_rz/mossberg/"
-local pathUTSaiga = "uplp_urban_temp/vepr/"
-local pathUTM82 = "uplp_urban_temp/m82/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/870/"
+local pathUTREAL = ")uplp_rz/mossberg/"
+local pathUTSaiga = ")uplp_urban_temp/vepr/"
+local pathUTM82 = ")uplp_urban_temp/m82/"
+local pathUTC = "))uplp_urban_temp/common/"
 -- local pathUO = "uplp_unofficial/"
 
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.ogg",
-    pathUT .. "fire-02.ogg",
-    pathUT .. "fire-03.ogg",
-    pathUT .. "fire-04.ogg",
-    pathUT .. "fire-05.ogg",
-    pathUT .. "fire-06.ogg",
+    pathUT .. "fire-01.wav",
+    pathUT .. "fire-02.wav",
+    pathUT .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
-    pathUT .. "fire-sup-01.ogg",
-    pathUT .. "fire-sup-02.ogg",
-    pathUT .. "fire-sup-03.ogg",
-    pathUT .. "fire-sup-04.ogg",
-    pathUT .. "fire-sup-05.ogg",
-    pathUT .. "fire-sup-06.ogg",
+    pathUT .. "fire-sup-01.wav",
+    pathUT .. "fire-sup-02.wav",
+    pathUT .. "fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-01.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-02.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-03.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-04.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-05.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-06.ogg",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-03.wav",
 }
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-01.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-02.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-04.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-05.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-06.ogg",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
 
 SWEP.DistantShootSoundSilenced = {
-    pathUTC .. "generictails/sup-tail-01.ogg",
-    pathUTC .. "generictails/sup-tail-02.ogg",
-    pathUTC .. "generictails/sup-tail-03.ogg",
-    pathUTC .. "generictails/sup-tail-04.ogg",
-    pathUTC .. "generictails/sup-tail-05.ogg",
-    pathUTC .. "generictails/sup-tail-06.ogg",
-    pathUTC .. "generictails/sup-tail-07.ogg",
-    pathUTC .. "generictails/sup-tail-08.ogg",
-    pathUTC .. "generictails/sup-tail-09.ogg",
-    pathUTC .. "generictails/sup-tail-10.ogg"
+    pathUTC .. "generictails/sup-tail-01.wav",
+    pathUTC .. "generictails/sup-tail-02.wav",
+    pathUTC .. "generictails/sup-tail-03.wav",
+    pathUTC .. "generictails/sup-tail-04.wav",
+    pathUTC .. "generictails/sup-tail-05.wav",
 }
 SWEP.DistantShootSoundIndoorSilenced = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
 ---- Animations
@@ -396,12 +376,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.ogg",
-    pathUT .. "mech-02.ogg",
-    pathUT .. "mech-03.ogg",
-    pathUT .. "mech-04.ogg",
-    pathUT .. "mech-05.ogg",
-    pathUT .. "mech-06.ogg",
+    pathUT .. "mech-01.wav",
+    pathUT .. "mech-02.wav",
+    pathUT .. "mech-03.wav",
+    pathUT .. "mech-04.wav",
 }
 
 local UTCrattle = {
@@ -763,7 +741,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
+            { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
             { s = pathUTREAL .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
             { s = ShellInsert, t = 57 / 30, v = 0.6 },
         },
@@ -785,7 +763,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
+            { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
             { s = pathUTREAL .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 44 / 30, v = 0.6 },
         },

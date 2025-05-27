@@ -462,24 +462,18 @@ ATT.ReloadHideBoneTables = {
     },
 }
 
-local pathUT = "uplp_urban_temp/mp5/"
+local pathUT = ")uplp_urban_temp/mp5/"
 
 local shoot40 = {
-    pathUT .. "fire-40-01.ogg",
-    pathUT .. "fire-40-02.ogg",
-    pathUT .. "fire-40-03.ogg",
-    pathUT .. "fire-40-04.ogg",
-    pathUT .. "fire-40-05.ogg",
-    pathUT .. "fire-40-06.ogg",
+    pathUT .. "fire-40-01.wav",
+    pathUT .. "fire-40-02.wav",
+    pathUT .. "fire-40-03.wav",
 }
 
 local shoot40sil = {
-    pathUT .. "fire-40-sup-01.ogg",
-    pathUT .. "fire-40-sup-02.ogg",
-    pathUT .. "fire-40-sup-03.ogg",
-    pathUT .. "fire-40-sup-04.ogg",
-    pathUT .. "fire-40-sup-05.ogg",
-    pathUT .. "fire-40-sup-06.ogg",
+    pathUT .. "fire-40-sup-01.wav",
+    pathUT .. "fire-40-sup-02.wav",
+    pathUT .. "fire-40-sup-03.wav",
 }
 
 

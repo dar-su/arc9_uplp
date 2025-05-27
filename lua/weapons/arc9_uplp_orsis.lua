@@ -279,36 +279,30 @@ SWEP.DropMagazineVelocity = Vector(-80, 10, -20)
 
 ---- Sounds
 
-local pathRZ = "uplp_rz/awp/"
+local pathRZ = ")uplp_rz/awp/"
 -- urbna!
-local pathUT = "uplp_urban_temp/awp/"
-local pathUT2 = "uplp_urban_temp/m82/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/awp/"
+local pathUT2 = ")uplp_urban_temp/m82/"
+local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT2 .. "fire-01.ogg",
-    pathUT2 .. "fire-02.ogg",
-    pathUT2 .. "fire-03.ogg",
-    pathUT2 .. "fire-04.ogg",
-    pathUT2 .. "fire-05.ogg",
-    pathUT2 .. "fire-06.ogg",
+    pathUT2 .. "fire-01.wav",
+    pathUT2 .. "fire-02.wav",
+    pathUT2 .. "fire-03.wav",
+    pathUT2 .. "fire-04.wav",
+    pathUT2 .. "fire-05.wav",
+    pathUT2 .. "fire-06.wav",
 }
 
 SWEP.DistantShootSound = {
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-01.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-02.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-03.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-04.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-05.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-06.ogg",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-01.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-02.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-03.wav",
 }
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-01.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-02.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-03.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-04.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-05.ogg",
-    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-06.ogg",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-01.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-02.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
@@ -339,12 +333,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.ogg",
-    pathUT .. "mech-02.ogg",
-    pathUT .. "mech-03.ogg",
-    pathUT .. "mech-04.ogg",
-    pathUT .. "mech-05.ogg",
-    pathUT .. "mech-06.ogg",
+    pathUT .. "mech-01.wav",
+    pathUT .. "mech-02.wav",
+    pathUT .. "mech-03.wav",
+    pathUT .. "mech-04.wav",
 }
 
 local thetoggle = {{

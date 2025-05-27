@@ -185,7 +185,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_30_pmag.mdl"
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-local pathUT = "uplp_urban_temp/ar15/"
+local pathUT = ")uplp_urban_temp/ar15/"
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     if data.sound == pathUT .. "magout.ogg" then
@@ -275,38 +275,29 @@ ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_52")
 
 ---------- uplp_aug_mag_919_25
 
-local pathUT = "uplp_urban_temp/ar15/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/ar15/"
+local pathUTC = ")uplp_urban_temp/common/"
 
 local shoot9 = {
-    pathUT .. "9mm/fire_9.ogg",
+    pathUT .. "9mm/fire_9.wav",
 }
 
 local shoot9sil = {
-    pathUT .. "9mm/fire-sup-01.ogg",
-    pathUT .. "9mm/fire-sup-02.ogg",
-    pathUT .. "9mm/fire-sup-03.ogg",
-    pathUT .. "9mm/fire-sup-04.ogg",
-    pathUT .. "9mm/fire-sup-05.ogg",
-    pathUT .. "9mm/fire-sup-06.ogg",
+    pathUT .. "9mm/fire-sup-01.wav",
+    pathUT .. "9mm/fire-sup-02.wav",
+    pathUT .. "9mm/fire-sup-03.wav",
 }
 
 local shoot9dist = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.wav",
 }
 
 local shoot9distindoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
 local dropsound9 = {

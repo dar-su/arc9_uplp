@@ -160,32 +160,23 @@ ARC9.LoadAttachment(ATT, "uplp_mac_mag_50")
 
 
 
-local pathUT = "uplp_urban_temp/uzi/"
-local pathUT2 = "uplp_urban_temp/mp5/"
+local pathUT = ")uplp_urban_temp/uzi/"
+local pathUT2 = ")uplp_urban_temp/mp5/"
 
 local shoot45 = {
-    pathUT .. "fire-45-01.ogg",
-    pathUT .. "fire-45-02.ogg",
-    pathUT .. "fire-45-03.ogg",
-    pathUT .. "fire-45-04.ogg",
-    pathUT .. "fire-45-05.ogg",
-    pathUT .. "fire-45-06.ogg",
+    pathUT .. "fire-45-01.wav",
+    pathUT .. "fire-45-02.wav",
+    pathUT .. "fire-45-03.wav",
 }
 local shoot40sil = {
-    pathUT2 .. "fire-40-sup-01.ogg",
-    pathUT2 .. "fire-40-sup-02.ogg",
-    pathUT2 .. "fire-40-sup-03.ogg",
-    pathUT2 .. "fire-40-sup-04.ogg",
-    pathUT2 .. "fire-40-sup-05.ogg",
-    pathUT2 .. "fire-40-sup-06.ogg",
+    pathUT2 .. "fire-40-sup-01.wav",
+    pathUT2 .. "fire-40-sup-02.wav",
+    pathUT2 .. "fire-40-sup-03.wav",
 }
 local shoot45dist = {
-    pathUT .. "fire-45-dist-01.ogg",
-    pathUT .. "fire-45-dist-01.ogg",
-    pathUT .. "fire-45-dist-03.ogg",
-    pathUT .. "fire-45-dist-04.ogg",
-    pathUT .. "fire-45-dist-05.ogg",
-    pathUT .. "fire-45-dist-06.ogg",
+    pathUT .. "fire-45-dist-01.wav",
+    pathUT .. "fire-45-dist-01.wav",
+    pathUT .. "fire-45-dist-03.wav",
 }
 
 local stats45acp = {

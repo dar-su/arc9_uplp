@@ -571,43 +571,31 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_20")
 
 ---------- uplp_scar_mag_hk
 
-local pathUT = "uplp_urban_temp/scar/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/scar/"
+local pathUTC = ")uplp_urban_temp/common/"
 
 local shoot556 = {
-    pathUT .. "fire-556-01.ogg",
-    pathUT .. "fire-556-02.ogg",
-    pathUT .. "fire-556-03.ogg",
-    pathUT .. "fire-556-04.ogg",
-    pathUT .. "fire-556-05.ogg",
-    pathUT .. "fire-556-06.ogg",
+    pathUT .. "fire-556-01.wav",
+    pathUT .. "fire-556-02.wav",
+    pathUT .. "fire-556-03.wav",
 }
 
 local shoot556sil = {
-    pathUT .. "fire-556-sup-01.ogg",
-    pathUT .. "fire-556-sup-02.ogg",
-    pathUT .. "fire-556-sup-03.ogg",
-    pathUT .. "fire-556-sup-04.ogg",
-    pathUT .. "fire-556-sup-05.ogg",
-    pathUT .. "fire-556-sup-06.ogg",
+    pathUT .. "fire-556-sup-01.wav",
+    pathUT .. "fire-556-sup-02.wav",
+    pathUT .. "fire-556-sup-03.wav",
 }
 
 local shoot556dist = {
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-04.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-05.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.wav",
 }
 
 local shoot556distindoor = {
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-04.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-05.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.wav",
 }
 
 local stats556 = {

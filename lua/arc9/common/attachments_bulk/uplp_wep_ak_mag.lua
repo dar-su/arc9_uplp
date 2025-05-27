@@ -255,43 +255,31 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 
 ----- 5.45 MAGS -----
 
-local pathUT = "uplp_urban_temp/ak/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/ak/"
+local pathUTC = ")uplp_urban_temp/common/"
 
 local shoot545 = {
-    pathUT .. "545/fire-01.ogg",
-    pathUT .. "545/fire-02.ogg",
-    pathUT .. "545/fire-03.ogg",
-    pathUT .. "545/fire-04.ogg",
-    pathUT .. "545/fire-05.ogg",
-    pathUT .. "545/fire-06.ogg",
+    pathUT .. "545/fire-01.wav",
+    pathUT .. "545/fire-02.wav",
+    pathUT .. "545/fire-03.wav",
 }
 
 local shoot545sil = {
-    pathUT .. "545/fire-sup-01.ogg",
-    pathUT .. "545/fire-sup-02.ogg",
-    pathUT .. "545/fire-sup-03.ogg",
-    pathUT .. "545/fire-sup-04.ogg",
-    pathUT .. "545/fire-sup-05.ogg",
-    pathUT .. "545/fire-sup-06.ogg",
+    pathUT .. "545/fire-sup-01.wav",
+    pathUT .. "545/fire-sup-02.wav",
+    pathUT .. "545/fire-sup-03.wav",
 }
 
 local shoot556dist = {
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-04.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-05.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-ext-06.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-01.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-02.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-ext-03.wav",
 }
 
 local shoot556distindoor = {
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-04.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-05.ogg",
-    pathUTC .. "556tails/fire-dist-556x45-rif-int-06.ogg",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-01.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-02.wav",
+    pathUTC .. "556tails/fire-dist-556x45-rif-int-03.wav",
 }
 
 ATT = {}
@@ -597,21 +585,15 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 
 -----5.56-----
 local shoot556 = {
-    pathUT .. "556/fire-01.ogg",
-    pathUT .. "556/fire-02.ogg",
-    pathUT .. "556/fire-03.ogg",
-    pathUT .. "556/fire-04.ogg",
-    pathUT .. "556/fire-05.ogg",
-    pathUT .. "556/fire-06.ogg",
+    pathUT .. "556/fire-01.wav",
+    pathUT .. "556/fire-02.wav",
+    pathUT .. "556/fire-03.wav",
 }
 
 local shoot556sil = {
-    pathUT .. "556/fire-sup-01.ogg",
-    pathUT .. "556/fire-sup-02.ogg",
-    pathUT .. "556/fire-sup-03.ogg",
-    pathUT .. "556/fire-sup-04.ogg",
-    pathUT .. "556/fire-sup-05.ogg",
-    pathUT .. "556/fire-sup-06.ogg",
+    pathUT .. "556/fire-sup-01.wav",
+    pathUT .. "556/fire-sup-02.wav",
+    pathUT .. "556/fire-sup-03.wav",
 }
 
 ATT = {}
@@ -729,28 +711,21 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_556_30_12")
 
 ----- OTHER CALIBERS -----
 local shoot308 = {
-    pathUT .. "308/fire_308_1.ogg",
-    pathUT .. "308/fire_308_2.ogg",
-    pathUT .. "308/fire_308_3.ogg",
-    pathUT .. "308/fire_308_4.ogg",
+    pathUT .. "308/fire_308_1.wav",
+    pathUT .. "308/fire_308_2.wav",
+    pathUT .. "308/fire_308_3.wav",
 }
 
 local shoot308dist = {
-    pathUTC .. "308tails/fire-dist-308-rif-ext-01.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-02.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-03.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-04.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-05.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-06.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-01.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-02.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-03.wav",
 }
 
 local shoot308distindoor = {
-    pathUTC .. "308tails/fire-dist-308-rif-int-01.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-int-02.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-int-03.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-int-04.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-int-05.ogg",
-    pathUTC .. "308tails/fire-dist-308-rif-int-06.ogg",
+    pathUTC .. "308tails/fire-dist-308-rif-int-01.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-02.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-03.wav",
 }
 
 ATT = {}
@@ -827,39 +802,27 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 -------------------------------------------
 
 local shoot9 = {
-    pathUT .. "9mm/fire-9-01.ogg",
-    pathUT .. "9mm/fire-9-02.ogg",
-    pathUT .. "9mm/fire-9-03.ogg",
-    pathUT .. "9mm/fire-9-04.ogg",
-    pathUT .. "9mm/fire-9-05.ogg",
-    pathUT .. "9mm/fire-9-06.ogg",
+    pathUT .. "9mm/fire-9-01.wav",
+    pathUT .. "9mm/fire-9-02.wav",
+    pathUT .. "9mm/fire-9-03.wav",
 }
 
 local shoot9sil = {
-    pathUT .. "9mm/fire-sup-01.ogg",
-    pathUT .. "9mm/fire-sup-02.ogg",
-    pathUT .. "9mm/fire-sup-03.ogg",
-    pathUT .. "9mm/fire-sup-04.ogg",
-    pathUT .. "9mm/fire-sup-05.ogg",
-    pathUT .. "9mm/fire-sup-06.ogg",
+    pathUT .. "9mm/fire-sup-01.wav",
+    pathUT .. "9mm/fire-sup-02.wav",
+    pathUT .. "9mm/fire-sup-03.wav",
 }
 
 local shoot9dist = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.wav",
 }
 
 local shoot9distindoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
 ATT = {}

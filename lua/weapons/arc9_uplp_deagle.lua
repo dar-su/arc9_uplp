@@ -245,35 +245,26 @@ SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 ---- Sounds
 
 -- urbna!
-local pathUT = "uplp_urban_temp/deagle/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/deagle/"
+local pathUTC = ")uplp_urban_temp/common/"
 
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.ogg",
-    pathUT .. "fire-02.ogg",
-    pathUT .. "fire-03.ogg",
-    pathUT .. "fire-04.ogg",
-    pathUT .. "fire-05.ogg",
-    pathUT .. "fire-06.ogg",
+    pathUT .. "fire-01.wav",
+    pathUT .. "fire-02.wav",
+    pathUT .. "fire-03.wav",
 }
 
 SWEP.DistantShootSound = {
-    pathUT .. "tails/fire-dist-50ae-pistol-ext-01.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-ext-02.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-ext-03.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-ext-04.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-ext-05.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-ext-06.ogg"
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-01.wav",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-02.wav",
+    pathUT .. "tails/fire-dist-50ae-pistol-ext-03.wav",
 }
 
 SWEP.DistantShootSoundIndoor = {
-    pathUT .. "tails/fire-dist-50ae-pistol-int-01.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-int-02.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-int-03.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-int-04.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-int-05.ogg",
-    pathUT .. "tails/fire-dist-50ae-pistol-int-06.ogg"
+    pathUT .. "tails/fire-dist-50ae-pistol-int-01.wav",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-02.wav",
+    pathUT .. "tails/fire-dist-50ae-pistol-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
@@ -286,12 +277,10 @@ SWEP.DropMagazineSounds = {
 }
 
 local mech = {
-    pathUT .. "mech-01.ogg",
-    pathUT .. "mech-02.ogg",
-    pathUT .. "mech-03.ogg",
-    pathUT .. "mech-04.ogg",
-    pathUT .. "mech-05.ogg",
-    pathUT .. "mech-06.ogg",
+    pathUT .. "mech-01.wav",
+    pathUT .. "mech-02.wav",
+    pathUT .. "mech-03.wav",
+    pathUT .. "mech-04.wav",
 }
 
 ---- Animations
@@ -363,7 +352,7 @@ SWEP.Animations = {
 		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
-            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "slidepull.ogg", t = 11 / 60, c = ca },
             { s = pathUT .. "chamber.ogg", t = 21 / 60, c = ca },
@@ -383,7 +372,7 @@ SWEP.Animations = {
 		MinProgress = 0.65,
 		FireASAP = true,
         EventTable = {
-            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -407,7 +396,7 @@ SWEP.Animations = {
 		MinProgress = 0.65,
 		FireASAP = true,
         EventTable = {
-            { s = "uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

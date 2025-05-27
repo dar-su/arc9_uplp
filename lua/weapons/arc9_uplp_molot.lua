@@ -260,68 +260,48 @@ SWEP.DropMagazineVelocity = Vector(0, -5, 10)
 ---- Sounds
 
 -- urbna!
-local pathUT = "uplp_urban_temp/vepr/"
-local pathUTC = "uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/vepr/"
+local pathUTC = "))uplp_urban_temp/common/"
 
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.ogg",
-    pathUT .. "fire-02.ogg",
-    pathUT .. "fire-03.ogg",
-    pathUT .. "fire-04.ogg",
-    pathUT .. "fire-05.ogg",
-    pathUT .. "fire-06.ogg",
+    pathUT .. "fire-01.wav",
+    pathUT .. "fire-02.wav",
+    pathUT .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
-    pathUT .. "fire-sup-01.ogg",
-    pathUT .. "fire-sup-02.ogg",
-    pathUT .. "fire-sup-03.ogg",
-    pathUT .. "fire-sup-04.ogg",
-    pathUT .. "fire-sup-05.ogg",
-    pathUT .. "fire-sup-06.ogg",
+    pathUT .. "fire-sup-01.wav",
+    pathUT .. "fire-sup-02.wav",
+    pathUT .. "fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-01.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-02.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-03.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-04.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-05.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-06.ogg",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-03.wav",
 }
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-01.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-02.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-04.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-05.ogg",
-    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-06.ogg",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
 
 SWEP.DistantShootSoundSilenced = {
-    pathUTC .. "generictails/sup-tail-01.ogg",
-    pathUTC .. "generictails/sup-tail-02.ogg",
-    pathUTC .. "generictails/sup-tail-03.ogg",
-    pathUTC .. "generictails/sup-tail-04.ogg",
-    pathUTC .. "generictails/sup-tail-05.ogg",
-    pathUTC .. "generictails/sup-tail-06.ogg",
-    pathUTC .. "generictails/sup-tail-07.ogg",
-    pathUTC .. "generictails/sup-tail-08.ogg",
-    pathUTC .. "generictails/sup-tail-09.ogg",
-    pathUTC .. "generictails/sup-tail-10.ogg"
+    pathUTC .. "generictails/sup-tail-01.wav",
+    pathUTC .. "generictails/sup-tail-02.wav",
+    pathUTC .. "generictails/sup-tail-03.wav",
+    pathUTC .. "generictails/sup-tail-04.wav",
+    pathUTC .. "generictails/sup-tail-05.wav",
 }
 SWEP.DistantShootSoundSilencedIndoor = {
-    pathUTC .. "generictails/fire-dist-int-pistol-light-01.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-02.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-03.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-04.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-05.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-01.wav",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-02.wav",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-03.wav",
 }
 
 SWEP.DropMagazineSounds = {
@@ -388,12 +368,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.ogg",
-    pathUT .. "mech-02.ogg",
-    pathUT .. "mech-03.ogg",
-    pathUT .. "mech-04.ogg",
-    pathUT .. "mech-05.ogg",
-    pathUT .. "mech-06.ogg",
+    pathUT .. "mech-01.wav",
+    pathUT .. "mech-02.wav",
+    pathUT .. "mech-03.wav",
+    pathUT .. "mech-04.wav",
 }
 
 local UTCrattle = {
@@ -626,7 +604,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 30 / 30, v = 0.6 },
             { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 82.5 / 30, c = ca, v = 0.8 },
 
             -- {hide = 0, t = 0.3},
@@ -654,7 +632,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 15 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 30 / 30, v = 0.6 },
             { s = pathUT .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/ak/bonk.ogg", t = 75 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 87.5 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 92.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 102.5 / 30, c = ca, v = 0.8 },
@@ -774,7 +752,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 115 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -796,7 +774,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 115 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -818,7 +796,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 117.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -839,7 +817,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 117.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -861,7 +839,7 @@ SWEP.Animations = {
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = "uplp_urban_temp/ak/scrape.ogg", t = 68 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/scrape.ogg", t = 68 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 122.5 / 30, c = ca, v = 0.8 },
             -- {hide = 1, t = 0},

@@ -240,74 +240,60 @@ SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
 ---- Sounds
 
--- local pathRZ = "uplp_rz/57/"
+-- local pathRZ = ")uplp_rz/57/"
 -- urbna!
-local pathUT = "uplp_urban_temp/beretta/"
-local pathUTC = "uplp_urban_temp/common/"
-local path1911 = "uplp_urban_temp/1911/"
+local pathUT = ")uplp_urban_temp/beretta/"
+local pathUTC = ")uplp_urban_temp/common/"
+local path1911 = ")uplp_urban_temp/1911/"
 
 
 SWEP.ShootSound = {
-    path1911 .. "fire-9-01.ogg",
-    path1911 .. "fire-9-02.ogg",
-    path1911 .. "fire-9-03.ogg",
-    path1911 .. "fire-9-04.ogg",
-    path1911 .. "fire-9-05.ogg",
-    path1911 .. "fire-9-06.ogg",
+    path1911 .. "fire-9-01.wav",
+    path1911 .. "fire-9-02.wav",
+    path1911 .. "fire-9-03.wav",
+    path1911 .. "fire-9-04.wav",
+    path1911 .. "fire-9-05.wav",
+    path1911 .. "fire-9-06.wav",
 }
 
 
 SWEP.ShootSoundSilenced = {
-    path1911 .. "fire-9-sup-01.ogg",
-    path1911 .. "fire-9-sup-02.ogg",
-    path1911 .. "fire-9-sup-03.ogg",
-    path1911 .. "fire-9-sup-04.ogg",
-    path1911 .. "fire-9-sup-05.ogg",
-    path1911 .. "fire-9-sup-06.ogg",
+    path1911 .. "fire-9-sup-01.wav",
+    path1911 .. "fire-9-sup-02.wav",
+    path1911 .. "fire-9-sup-03.wav",
+    path1911 .. "fire-9-sup-04.wav",
+    path1911 .. "fire-9-sup-05.wav",
+    path1911 .. "fire-9-sup-06.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.wav",
 }
 
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-04.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-05.ogg",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-06.ogg",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
+    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
 
 SWEP.DistantShootSoundSilenced = {
-    pathUTC .. "generictails/sup-tail-01.ogg",
-    pathUTC .. "generictails/sup-tail-02.ogg",
-    pathUTC .. "generictails/sup-tail-03.ogg",
-    pathUTC .. "generictails/sup-tail-04.ogg",
-    pathUTC .. "generictails/sup-tail-05.ogg",
-    pathUTC .. "generictails/sup-tail-06.ogg",
-    pathUTC .. "generictails/sup-tail-07.ogg",
-    pathUTC .. "generictails/sup-tail-08.ogg",
-    pathUTC .. "generictails/sup-tail-09.ogg",
-    pathUTC .. "generictails/sup-tail-10.ogg"
+    pathUTC .. "generictails/sup-tail-01.wav",
+    pathUTC .. "generictails/sup-tail-02.wav",
+    pathUTC .. "generictails/sup-tail-03.wav",
+    pathUTC .. "generictails/sup-tail-04.wav",
+    pathUTC .. "generictails/sup-tail-05.wav",
 }
 
 SWEP.DistantShootSoundSilencedIndoor = {
-    pathUTC .. "generictails/fire-dist-int-pistol-light-01.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-02.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-03.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-04.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-05.ogg",
-    pathUTC .. "generictails/fire-dist-int-pistol-light-06.ogg",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-01.wav",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-02.wav",
+    pathUTC .. "generictails/fire-dist-int-pistol-light-03.wav",
 }
 
 SWEP.DropMagazineSounds = {
@@ -341,12 +327,10 @@ SWEP.ReloadHideBoneTables = {
 
 
 local mechh = {
-    path1911 .. "mech-01.ogg",
-    path1911 .. "mech-02.ogg",
-    path1911 .. "mech-03.ogg",
-    path1911 .. "mech-04.ogg",
-    path1911 .. "mech-05.ogg",
-    path1911 .. "mech-06.ogg",
+    path1911 .. "mech-01.wav",
+    path1911 .. "mech-02.wav",
+    path1911 .. "mech-03.wav",
+    path1911 .. "mech-04.wav",
 }
 
 local UTCrattle = {
