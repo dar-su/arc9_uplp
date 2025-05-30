@@ -289,9 +289,6 @@ SWEP.ShootSound = {
     pathUT2 .. "fire-01.wav",
     pathUT2 .. "fire-02.wav",
     pathUT2 .. "fire-03.wav",
-    pathUT2 .. "fire-04.wav",
-    pathUT2 .. "fire-05.wav",
-    pathUT2 .. "fire-06.wav",
 }
 
 SWEP.DistantShootSound = {

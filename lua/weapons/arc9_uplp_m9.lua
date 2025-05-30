@@ -251,9 +251,6 @@ SWEP.ShootSound = {
     path1911 .. "fire-9-01.wav",
     path1911 .. "fire-9-02.wav",
     path1911 .. "fire-9-03.wav",
-    path1911 .. "fire-9-04.wav",
-    path1911 .. "fire-9-05.wav",
-    path1911 .. "fire-9-06.wav",
 }
 
 
@@ -261,9 +258,6 @@ SWEP.ShootSoundSilenced = {
     path1911 .. "fire-9-sup-01.wav",
     path1911 .. "fire-9-sup-02.wav",
     path1911 .. "fire-9-sup-03.wav",
-    path1911 .. "fire-9-sup-04.wav",
-    path1911 .. "fire-9-sup-05.wav",
-    path1911 .. "fire-9-sup-06.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
