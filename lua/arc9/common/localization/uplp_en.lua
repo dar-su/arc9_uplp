@@ -3028,3 +3028,46 @@ L["uplp_pkm_taccover.description"] = "Displays the tactical top cover with the R
 L["uplp_pkm_handguard.printname"] = "Tactical Hand Guard"
 L["uplp_pkm_handguard.compactname"] = "Tac. HG"
 L["uplp_pkm_handguard.description"] = "Displays the tactical handguard with bottom and side rails.\nPurely <color=150,150,255>cosmetic</color>."
+
+//////////////////// A.H. Fox Sterlingworth Philly
+L["uplp_weapon_fox"] = "Authority SBS"
+
+L["uplp_weapon_fox_desc"] = "Anaconda Industrial Tooling constructed their final sporting shotgun for the civilian market in 1910. The Authority SBS (Side-by-Side) double-barrel shotgun offers quick double-tap firepower with a proven double-barrel design."
+
+L["uplp_weapon_fox_short"] = "Outlaw SBS"
+
+L["uplp_weapon_fox_real"] = "A.H. Fox Sterlingworth Philly"
+
+L["uplp_weapon_fox_manufacturer"] = "A.H. Fox"
+
+/////////// Attachments
+////// Barrels
+L["uplp_fox_brl_long.printname"] = "Full-Length Barrel"
+L["uplp_fox_brl_long.compactname"] = "Full"
+L["uplp_fox_brl_long.description"] = "Factory-made full-length barrel for the Authority SBS."
+
+L["uplp_fox_brl_short.printname"] = "Sawed-off Outlaw Barrel"
+L["uplp_fox_brl_short.compactname"] = "Outlaw"
+L["uplp_fox_brl_short.description"] = "Factory-made shortened barrel for the less-known Outlaw SBS."
+
+////// Handguard
+L["uplp_fox_hg_crude.printname"] = "Crude PAWCO Handguard"
+L["uplp_fox_hg_crude.compactname"] = "PAWCO"
+L["uplp_fox_hg_crude.description"] = "Crudely attaches a <color=100,100,255>cosmetic only</color> PAWCO handguard originally developed for the Wingmaster 12G.\n\n<color=255,255,50>Note</color>: Does not turn your double-barrel shotgun into a pump-action shotgun."
+
+////// Stocks
+L["uplp_fox_stock_short.printname"] = "Sawed-off Outlaw Stock"
+L["uplp_fox_stock_short.compactname"] = "Sawed"
+L["uplp_fox_stock_short.description"] = "Attaches the factory-made shortened stock from the lesser known Outlaw SBS."
+
+L["uplp_fox_stock_cursed.printname"] = "Apocalypse Prepped Stock"
+L["uplp_fox_stock_cursed.compactname"] = "Apocalypse"
+L["uplp_fox_stock_cursed.description"] = "Prepare for the apocalypse with this custom but crudely made stock for most old-school shotguns."
+
+L["uplp_fox_stock_tactical.printname"] = "PAWCO Stock"
+L["uplp_fox_stock_tactical.compactname"] = "PAWCO"
+L["uplp_fox_stock_tactical.description"] = "Modern polymer stock adapted for the Authority SBS.\n\n<color=255,100,100>Warning</color>: PAWCO is not responsible if people see you using this and you get hurt as a consequence."
+
+L["uplp_fox_stock_tactical_short.printname"] = "Sawed-off PAWCO Stock"
+L["uplp_fox_stock_tactical_short.compactname"] = "PAWCO S"
+L["uplp_fox_stock_tactical_short.description"] = "Sawed-off version of the modern polymer stock from PAWCO.\n\n<color=255,100,100>Warning</color>: PAWCO is not responsible if people see you using this and you get hurt as a consequence."
