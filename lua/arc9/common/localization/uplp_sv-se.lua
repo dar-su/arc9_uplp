@@ -84,6 +84,8 @@ L["uplp_mechanism_doublesingleaction"] = "Double-Action / Single-Action"
 L["uplp_mechanism_gasoperated_shortstroke"] = "Kort gaslås"
 L["uplp_mechanism_gasoperated_longstroke"] = "Långt gaslås"
 
+L["uplp_mechanism_breakaction"] = "Brytvapen"
+
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Kort piprekyl"
 L["uplp_mechanism_longrecoil"] = "Lång piprekyl"
@@ -176,10 +178,11 @@ L["uplp_stat_semi"] = "Halvautomateld: "
 L["uplp_stat_suppressed"] = "Ljuddämpad"
 L["uplp_stat_ignite_chance"] = "Vid Träff: Chans att Tända Fyr på Mål"
 L["uplp_stat_ignite"] = "Vid Träff: Tänder Fyr på Mål"
-L["uplp_stat_scopedsway"] = "Sväjning i Siktet"
+L["uplp_stat_scopedsway"] = "Sväjning i Siktet" // Since the stat is on the sight and not the attachment, need a custom con
 
 //////////////////// Firemodes
 L["uplp_firemode_pump"] = "PUMP"
+L["uplp_firemode_both"] = "BÅDA"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
@@ -2989,44 +2992,44 @@ L["uplp_pkm_handguard.compactname"] = "Tak. HS"
 L["uplp_pkm_handguard.description"] = "Visar taktiska handskyddet med under- och sidomonterade skenor.\nEndast <color=150,150,255>kosmetiskt</color>."
 
 //////////////////// A.H. Fox Sterlingworth Philly
-L["uplp_weapon_fox"] = "Authority SBS"
+L["uplp_weapon_dbs"] = "Authority SBS"
 
-L["uplp_weapon_fox_desc"] = "Anaconda Industrial Tooling byggde deras sista hagelbössa för sportskytte till civila marknaden år 1910. Dubbelpipiga hagelbössan Authority SBS (Side-by-Side) erbjuder snabb dubbeltryck stoppkraft med en välkänd dubbelpipig design."
+L["uplp_weapon_dbs_desc"] = "Anaconda Industrial Tooling byggde deras sista hagelbössa för sportskytte till civila marknaden år 1910. Dubbelpipiga hagelbössan Authority SBS (Side-by-Side) erbjuder snabb dubbeltryck stoppkraft med en välkänd dubbelpipig design."
 
-L["uplp_weapon_fox_short"] = "Outlaw SBS"
+L["uplp_weapon_dbs_short"] = "Outlaw SBS"
 
-L["uplp_weapon_fox_real"] = "A.H. Fox Sterlingworth Philly"
+L["uplp_weapon_dbs_real"] = "A.H. Fox Sterlingworth Philly"
 
-L["uplp_weapon_fox_manufacturer"] = "A.H. Fox"
+L["uplp_weapon_dbs_manufacturer"] = "A.H. Fox"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_fox_brl_long.printname"] = "Hellängd Pipa"
-L["uplp_fox_brl_long.compactname"] = "Hel"
-L["uplp_fox_brl_long.description"] = "Fabrikstillverkad hellängd pipa till Authority SBS."
+L["uplp_dbs_brl_long.printname"] = "Hellängd Pipa"
+L["uplp_dbs_brl_long.compactname"] = "Hel"
+L["uplp_dbs_brl_long.description"] = "Fabrikstillverkad hellängd pipa till Authority SBS."
 
-L["uplp_fox_brl_short.printname"] = "Avsågad \"Outlaw\"-Pipa"
-L["uplp_fox_brl_short.compactname"] = "Outlaw"
-L["uplp_fox_brl_short.description"] = "Fabrikstillverkad, förkortad pipa till den mindre välkända Outlaw SBS."
+L["uplp_dbs_brl_short.printname"] = "Avsågad \"Outlaw\"-Pipa"
+L["uplp_dbs_brl_short.compactname"] = "Outlaw"
+L["uplp_dbs_brl_short.description"] = "Fabrikstillverkad, förkortad pipa till den mindre välkända Outlaw SBS."
 
 ////// Handguard
-L["uplp_fox_hg_crude.printname"] = "Grov PAWCO-Handskydd"
-L["uplp_fox_hg_crude.compactname"] = "PAWCO"
-L["uplp_fox_hg_crude.description"] = "Installerar grovt ett <color=100,100,255>endast kosmetiskt</color> PAWCO-handskydd egentligen gjort till Wingmaster 12G.\n\n<color=255,255,50>Notera</color>: Förvandlar inte din dubbelpipiga hagelbössa till en pumprepeter."
+L["uplp_dbs_hg_crude.printname"] = "Grov PAWCO-Handskydd"
+L["uplp_dbs_hg_crude.compactname"] = "PAWCO"
+L["uplp_dbs_hg_crude.description"] = "Installerar grovt ett <color=100,100,255>endast kosmetiskt</color> PAWCO-handskydd egentligen gjort till Wingmaster 12G.\n\n<color=255,255,50>Notera</color>: Förvandlar inte din dubbelpipiga hagelbössa till en pumprepeter."
 
 ////// Stocks
-L["uplp_fox_stock_short.printname"] = "Avsågad \"Outlaw\"-Kolv"
-L["uplp_fox_stock_short.compactname"] = "Outlaw"
-L["uplp_fox_stock_short.description"] = "Installerar den fabrikstillverkade, förkortade kolven från den mindre kända Outlaw SBS."
+L["uplp_dbs_stock_short.printname"] = "Avsågad \"Outlaw\"-Kolv"
+L["uplp_dbs_stock_short.compactname"] = "Outlaw"
+L["uplp_dbs_stock_short.description"] = "Installerar den fabrikstillverkade, förkortade kolven från den mindre kända Outlaw SBS."
 
-L["uplp_fox_stock_cursed.printname"] = "Apokalypsförberedd Kolv"
-L["uplp_fox_stock_cursed.compactname"] = "Apokalyps"
-L["uplp_fox_stock_cursed.description"] = "Förbered dig för apokalypsen med denna anpassade, men grovt tillverkade kolven till dem flesta gammaldags hagelbössorna."
+L["uplp_dbs_stock_cursed.printname"] = "Apokalypsförberedd Kolv"
+L["uplp_dbs_stock_cursed.compactname"] = "Apokalyps"
+L["uplp_dbs_stock_cursed.description"] = "Förbered dig för apokalypsen med denna anpassade, men grovt tillverkade kolven till dem flesta gammaldags hagelbössorna."
 
-L["uplp_fox_stock_tactical.printname"] = "PAWCO-Kolv"
-L["uplp_fox_stock_tactical.compactname"] = "PAWCO"
-L["uplp_fox_stock_tactical.description"] = "Modern kolv av polymer anpassad för Authority SBS.\n\n<color=255,100,100>Varning</color>: PAWCO är inte ansvarig ifall folk ser dig med detta och du blir skadad som en konsekvens."
+L["uplp_dbs_stock_tactical.printname"] = "PAWCO-Kolv"
+L["uplp_dbs_stock_tactical.compactname"] = "PAWCO"
+L["uplp_dbs_stock_tactical.description"] = "Modern kolv av polymer anpassad för Authority SBS.\n\n<color=255,100,100>Varning</color>: PAWCO är inte ansvarig ifall folk ser dig med detta och du blir skadad som en konsekvens."
 
-L["uplp_fox_stock_tactical_short.printname"] = "Avsågad PAWCO-Kolv"
-L["uplp_fox_stock_tactical_short.compactname"] = "PAWCO A"
-L["uplp_fox_stock_tactical_short.description"] = "Avsågad version av den moderna kolven av polymer från PAWCO.\n\n<color=255,100,100>Varning</color>: PAWCO är inte ansvarig ifall folk ser dig med detta och du blir skadad som en konsekvens."
+L["uplp_dbs_stock_tactical_short.printname"] = "Avsågad PAWCO-Kolv"
+L["uplp_dbs_stock_tactical_short.compactname"] = "PAWCO A"
+L["uplp_dbs_stock_tactical_short.description"] = "Avsågad version av den moderna kolven av polymer från PAWCO.\n\n<color=255,100,100>Varning</color>: PAWCO är inte ansvarig ifall folk ser dig med detta och du blir skadad som en konsekvens."
