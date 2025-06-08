@@ -10,8 +10,9 @@ $bodygroup "br" { // 1
 }
 
 $bodygroup "hg" { // 2
-	blank
-	studio "hg.smd" // 1
+	studio "hg def.smd" // 0
+	studio "hg poly.smd" // 1
+	studio "hg tac.smd" // 2
 }
 $bodygroup "stock" { // 3
 	studio "stock def.smd" // 0
@@ -45,14 +46,14 @@ $cdmaterials "models\weapons\arc9\uplp"
 $attachment "muzzle1" "barrel1" 0 0 0 rotate -90 0 0
 $attachment "muzzle2" "barrel2" 0 0 0 rotate -90 0 0
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
-$attachment "muzzle1s" "barrel1" 0 0 0 rotate -90 0 0
-$attachment "muzzle2s" "barrel2" 0 0 0 rotate -90 0 0
-$attachment "muzzle1l" "barrel1" 0 0 0 rotate -90 0 0
-$attachment "muzzle2l" "barrel2" 0 0 0 rotate -90 0 0
-$attachment "ejectparticle1" "barrel1" 0 0 0 rotate -90 0 0
-$attachment "ejectparticle2" "barrel2" 0 0 0 rotate -90 0 0
-$attachment "shell1" "bullet1" 0 0 0 rotate -90 0 0
-$attachment "shell2" "bullet2" 0 0 0 rotate -90 0 0
+$attachment "muzzle1s" "barrel1" 0 0 -8 rotate -90 0 0
+$attachment "muzzle2s" "barrel2" 0 0 -8 rotate -90 0 0
+$attachment "muzzle1l" "barrel1" 0 0 9.5 rotate -90 0 0
+$attachment "muzzle2l" "barrel2" 0 0 9.5 rotate -90 0 0
+$attachment "ejectparticle1" "barrel1" 0 0 -19.80 rotate -90 0 0
+$attachment "ejectparticle2" "barrel2" 0 0 -19.80 rotate -90 0 0
+$attachment "shell1" "bullet1" 0 0 0 rotate 0 -90 0
+$attachment "shell2" "bullet2" 0 0 0 rotate 0 -90 0
  
 $surfaceprop "default"
  
@@ -88,6 +89,16 @@ $sequence "fire" {
 	fadeout 0.08
 }
 
+$sequence "fire2" {
+	"anims\fire2.smd"
+	"anims\fire_iron.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.08
+}
+
 
 $sequence "draw" {
 	"anims\draw.smd"
@@ -101,7 +112,7 @@ $sequence "holster" {
 }
 
 $sequence "modeswitch" {
-	"anims\switch.smd"
+	"anims\switch2.smd"
 	fps 30
 	snap
 }
@@ -186,6 +197,10 @@ $bonemerge "ValveBiped.Bip01_R_Finger12"
 $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
+$bonemerge "shell1"
+$bonemerge "shell2"
+$bonemerge "barrel1"
+$bonemerge "barrel2"
 
 // $collisionmodel "col.smd"
 // {
