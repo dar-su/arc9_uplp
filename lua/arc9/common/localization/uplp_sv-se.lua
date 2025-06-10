@@ -3017,6 +3017,10 @@ L["uplp_dbs_hg_crude.printname"] = "Grov PAWCO-Handskydd"
 L["uplp_dbs_hg_crude.compactname"] = "PAWCO"
 L["uplp_dbs_hg_crude.description"] = "Installerar grovt ett <color=100,100,255>endast kosmetiskt</color> PAWCO-handskydd egentligen gjort till Wingmaster 12G.\n\n<color=255,255,50>Notera</color>: Förvandlar inte din dubbelpipiga hagelbössa till en pumprepeter."
 
+L["uplp_dbs_hg_poly.printname"] = "Polymer Handskydd"
+L["uplp_dbs_hg_poly.compactname"] = "Poly."
+L["uplp_dbs_hg_poly.description"] = "Modernt handskydd till hagelbössan Authority SBS."
+
 ////// Stocks
 L["uplp_dbs_stock_short.printname"] = "Avsågad \"Outlaw\"-Kolv"
 L["uplp_dbs_stock_short.compactname"] = "Outlaw"

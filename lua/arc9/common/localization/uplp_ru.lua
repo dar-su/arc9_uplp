@@ -3018,6 +3018,10 @@ L["uplp_pkm_handguard.description"] = "Тактическое цевьё с ни
 -- L["uplp_dbs_hg_crude.compactname"] = "PAWCO"
 -- L["uplp_dbs_hg_crude.description"] = "Crudely attaches a <color=100,100,255>cosmetic only</color> PAWCO handguard originally developed for the Wingmaster 12G.\n\n<color=255,255,50>Note</color>: Does not turn your double-barrel shotgun into a pump-action shotgun."
 
+-- L["uplp_dbs_hg_poly.printname"] = "Полимерное цевьё"  
+-- L["uplp_dbs_hg_poly.compactname"] = "Поли"  
+-- L["uplp_dbs_hg_poly.description"] = "Современное полимерное цевьё для Authority SBS."  
+
 ////// Stocks
 -- L["uplp_dbs_stock_short.printname"] = "Sawed-off Outlaw Stock"
 -- L["uplp_dbs_stock_short.compactname"] = "Sawed"
