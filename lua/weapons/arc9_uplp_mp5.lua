@@ -734,7 +734,7 @@ SWEP.AttachmentElements = {
     -- HANDGUARDS & BARRELS
     ["uplp_mp5_hg_navy"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-        [3] = { Pos = Vector(0, 1.05, 9) },
+        [3] = { Pos = Vector(0, 1.13, 9) },
         [4] = { Pos = Vector(-0.15, 0, 2) },
         [14] = { Pos = Vector(0, 2.8, 9.1) },
     } },
@@ -786,10 +786,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
-        Category = {"uplp_grip_vert", "uplp_mp5_grip"},
+        Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_long", "uplp_mp5_grip"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0.5, 10),
+        Pos = Vector(0, 0.55, 10),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0.5, 0, -1),
         ExcludeElements = {"uplp_mp5_hg_navy"},
