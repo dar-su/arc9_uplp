@@ -3078,3 +3078,21 @@ L["uplp_dbs_stock_tactical.description"] = "Modern polymer stock adapted for the
 L["uplp_dbs_stock_tactical_short.printname"] = "Sawed-off PAWCO Stock"
 L["uplp_dbs_stock_tactical_short.compactname"] = "PAWCO S"
 L["uplp_dbs_stock_tactical_short.description"] = "Sawed-off version of the modern polymer stock from PAWCO.\n\n<color=255,100,100>Warning</color>: PAWCO is not responsible if people see you using this and you get hurt as a consequence."
+
+//////////////////// M134 Minigun
+L["uplp_weapon_minigun"] = "O.A. MG-RB Minigun"
+
+L["uplp_weapon_minigun_desc"] = "Omega Arms were contracted by the U.S. military during the 60's to create a door-mounted machine gun. They delivered tenfold, creating the MG-RB (\"Machine Gun, Rotating Barrel\"), while also making more lightweight, man-portable variants of it with reduced rates of fire."
+
+L["uplp_weapon_minigun_real"] = "M134 Minigun"
+
+L["uplp_weapon_minigun_manufacturer"] = "General Electric"
+
+//////////////////// Marlin Model 1895
+L["uplp_weapon_marlin"] = "Model 94"
+
+L["uplp_weapon_marlin_desc"] = "In 1894, Anaconda Industrial Tooling provided the world with its lever-action rifle, the Model 94, chambered in the powerful .45/70 cartridge, providing higher damage to the chest and head."
+
+L["uplp_weapon_marlin_real"] = "Marlin Model 1895"
+
+L["uplp_weapon_marlin_manufacturer"] = "Marlin Firearms"
