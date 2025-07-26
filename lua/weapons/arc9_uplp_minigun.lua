@@ -244,6 +244,7 @@ SWEP.DropMagazineVelocity = Vector(0, 30, 0)
 local pathUT = ")uplp_urban_temp/mp7/"
 local pathUTREAL = ")uplp_rz/mp7/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathUTT = ")uplp_urban_temp/m60/"
 
 SWEP.ShootSound = {
     pathUTREAL .. "fire-01.wav",
@@ -380,15 +381,18 @@ SWEP.Animations = {
         MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "raise.ogg", t = 3 / 30, c = ca, v = 1 },
+            { s = pathUTT .. "belt1.ogg", t = 6 / 30, c = ca, v = 0.3 },
+            { s = pathUTT .. "belt2.ogg", t = 8 / 30, c = ca, v = 0.5 },
         },
     },
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTT .. "belt1.ogg", t = 2 / 30, c = ca, v = 0.2 },
         },
     },
 
@@ -409,7 +413,7 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         EventTable = {
             {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spin_plr.wav", v = 0.2, t = 0/30},
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.3, t = 4/30},
+            -- {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.3, t = 4/30},
         },
     },
     ["fire_empty"] = {
@@ -439,11 +443,18 @@ SWEP.Animations = {
         MagSwapTime = 72/30,
 		FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTREAL .. "magout.ogg", t = 1 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 9 / 30, v = 0.6 },
-            { s = pathUTREAL .. "magin.ogg", t = 22 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
+
+            { s = pathUTT .. "boxremove.ogg", t = 45 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 66 / 30, v = 0.6 },
+            { s = pathUTT .. "boxinsert.ogg", t = 75 / 30, c = ca, v = 1 },
+            { s = pathUTT .. "belt1.ogg", t = 97 / 30, c = ca, v = 1 },
+            { s = pathUTT .. "belt2.ogg", t = 103 / 30, c = ca, v = 0.5 },
+            { s = pathUTT .. "chforward.ogg", t = 105 / 30, c = ca, v = 0.2 },
+
+            { s = pathUTC .. "cloth_4.ogg", t = 110 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-05.ogg", t = 115 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 58/30},
@@ -458,11 +469,23 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-smg-03.ogg", t = 3 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTT .. "belt1.ogg", t = 13 / 30, c = ca, v = 0.5 },
+            { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_5.ogg", t = 70 / 30, c = ca, v = 0.8 },
+            { s = pathUTT .. "belt2.ogg", t = 75 / 30, c = ca, v = 0.5 },
+            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.2, t = 90/30},
+            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.2, t = 105/30},
+
+            { s = pathUTC .. "cloth_4.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-05.ogg", t = 132 / 30, c = ca, v = 0.8 },
+
+
+            -- { s = pathUTC .. "movement-smg-03.ogg", t = 3 / 30, c = ca, v = 0.8 },
+            -- { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
+            -- { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
+            -- { s = pathUTC .. "movement-rifle-04.ogg", t = 120 / 30, c = ca, v = 0.8 },
         },
     },
     -- Firemodee --

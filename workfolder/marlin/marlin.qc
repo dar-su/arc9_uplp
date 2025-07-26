@@ -128,7 +128,7 @@ $sequence "fire" {
 }
 $sequence "ready" {
 	"anims\ready_fast.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	// snap
 }
@@ -137,25 +137,25 @@ $sequence "ready" {
 
 $sequence "draw" {
 	"anims\draw.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	// snap
 }
 $sequence "draw_empty" {
 	"anims\draw_e.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	// snap
 }
 $sequence "holster" {
 	"anims\holster.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	// snap
 }
 $sequence "holster_empty" {
 	"anims\holster_e.smd"
-	fps 30
+	fps 24
 	"ACT_VM_DRAW" 1
 	// snap
 }
@@ -186,12 +186,14 @@ $sequence "sg_start_empty" {
 	fps 28
 	"ACT_VM_RELOAD" 1
 	// snap
+	frame 0 50
 }
 $sequence "sg_insert" {
 	"anims\sg_insert.smd"
 	fps 24
 	"ACT_VM_RELOAD" 1
 	snap
+	frame 0 16
 }
 $sequence "sg_insert_first" {
 	"anims\sg_insert_first.smd"
@@ -199,6 +201,7 @@ $sequence "sg_insert_first" {
 	"ACT_VM_RELOAD" 1
 	fadein 0.15
 	fadeout 0
+	frame 0 15
 }
 $sequence "sg_end" {
 	"anims\sg_end.smd"
