@@ -76,14 +76,14 @@ $bodygroup "ammos" {
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "body" 0.00 -0.60 30.00 rotate -90 -0 0
-$attachment "2" "body" 0.00 -0.60 2.50 rotate -10 140 180
+$attachment "1" "body" 0.00 0.25 28.50 rotate -90 -0 0
+$attachment "2" "body" 0.00 0.20 -0.80 rotate -20 160 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 // $attachment "4" "mag" 0 0 0 rotate -90 0 0
 
-$attachment "5" "body" 0.00 -0.60 34.00 rotate -90 -0 0
-$attachment "6" "body" 0.00 -0.60 23.00 rotate -90 -0 0
-$attachment "7" "body" 0.00 -0.60 27.50 rotate -90 -0 0
+$attachment "5" "body" 0.00 0.25 20.50 rotate -90 -0 0 // short barrel
+$attachment "6" "body" 0.00 0.25 30.50 rotate -90 -0 0 // long barrel
+$attachment "7" "body" 0.00 0.25 25.50 rotate -90 -0 0 // suppresed barrel
  
 $surfaceprop "default"
  
