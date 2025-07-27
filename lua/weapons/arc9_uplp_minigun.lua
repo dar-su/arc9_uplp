@@ -243,35 +243,38 @@ SWEP.DropMagazineVelocity = Vector(0, 30, 0)
 ---- Sounds
 
 -- urbna!
-local pathUT = ")uplp_urban_temp/mp7/"
-local pathUTREAL = ")uplp_rz/mp7/"
+local pathUTREAL = ")uplp_rz/badminigunplaceholders/"
 local pathUTC = ")uplp_urban_temp/common/"
 local pathUTT = ")uplp_urban_temp/m60/"
 
+SWEP.ShootPitchVariation = 15
+SWEP.DistantShootVolume = 0.5
+SWEP.DistantShootVolumeActual = 0.5
+
 SWEP.ShootSound = {
-    pathUTREAL .. "fire-01.wav",
-    pathUTREAL .. "fire-02.wav",
-    pathUTREAL .. "fire-03.wav",
+    ")uplp_rz/fal/" .. "fire-01.wav",
+    ")uplp_rz/fal/" .. "fire-02.wav",
+    ")uplp_rz/fal/" .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
-    pathUT .. "fire-sup-01.wav",
-    pathUT .. "fire-sup-02.wav",
-    pathUT .. "fire-sup-03.wav",
+    ")uplp_urban_temp/scar/" .. "fire-sup-01.wav",
+    ")uplp_urban_temp/scar/" .. "fire-sup-02.wav",
+    ")uplp_urban_temp/scar/" .. "fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUT .. "fire-dist-01.wav",
-    pathUT .. "fire-dist-02.wav",
-    pathUT .. "fire-dist-03.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-01.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-02.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-03.wav",
 }
 
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.wav",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-01.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-02.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
@@ -291,14 +294,18 @@ SWEP.DistantShootSoundSilencedIndoor = {
 }
 
 SWEP.DropMagazineSounds = {
-    pathUTC .. "smg_pistol_magdrop_1.ogg",
-    pathUTC .. "smg_pistol_magdrop_2.ogg",
-    pathUTC .. "smg_pistol_magdrop_3.ogg",
-    pathUTC .. "smg_pistol_magdrop_4.ogg",
+    pathUTC .. "rifle_magdrop_1.ogg",
+    pathUTC .. "rifle_magdrop_2.ogg",
+    pathUTC .. "rifle_magdrop_3.ogg",
+    pathUTC .. "rifle_magdrop_4.ogg",
+    pathUTC .. "rifle_magdrop.ogg",
 }
 
 SWEP.EnterSightsSound = pathUTC .. "rattle2.ogg"
 SWEP.ExitSightsSound = pathUTC .. "rattle3.ogg"
+
+SWEP.TriggerDownSound = false 
+SWEP.TriggerUpSound = false 
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -313,15 +320,6 @@ SWEP.BulletBones = {
     [8] = "bullet8",
     [9] = "bullet9",
 }
-
--- SWEP.HideBones = {
-    -- "fakemag",
-    -- "fakerounds",
-    -- "bullet1",
-    -- "bullet2",
-    -- "bullet3",
-    -- "bullet4",
--- }
 
 SWEP.ReloadHideBoneTables = {
     [1] = {
@@ -342,13 +340,6 @@ SWEP.ReloadHideBoneTables = {
 
 
 -- Animations
-
-local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
-}
 
 local UTCrattle = {
     -- pathUTC .. "rattle.ogg",
@@ -401,37 +392,33 @@ SWEP.Animations = {
     ["trigger"] = {
         Source = {"trigger"},
         EventTable = {
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spinup_plr_01.wav", v = 0.5, t = 0/30},
+            {s = pathUTREAL .. "electrosaw_windup.wav", v = 0.5, t = 0/30},
+            {s = pathUTREAL .. "electrosaw_winddown.ogg", v = 0.3, t = 22/30},
         },
     },
     ["trigger_empty"] = {
         Source = {"trigger"},
-        EventTable = {
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spinup_plr_01.wav", v = 0.5, t = 0/30},
-        },
     },
     ["fire"] = {
         Source = {"fire"},
         ShellEjectAt = 0.01,
         EventTable = {
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spin_plr.wav", v = 0.2, t = 0/30},
-            -- {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.3, t = 4/30},
+            {s = pathUTREAL .. "electrosaw_mech.wav", v = 1, t = 0},
+            {s = pathUTREAL .. "electrosaw_winddown.ogg", v = 0.25, t = 3/30},
         },
     },
     ["fire_empty"] = {
         Source = {"fire_empty"},
         ShellEjectAt = 0.01,
         EventTable = {
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spin_plr.wav", v = 0.2, t = 0/30},
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.3, t = 4/30},
+            {s = pathUTREAL .. "electrosaw_winddown.ogg", v = 0.25, t = 3/30},
         },
     },
 
     ["dryfire"] = {
         Source = "dryfire",
         EventTable = {
-            -- {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spin_plr.wav", v = 0.2, t = 0/30},
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.3, t = 4/30},
+            {s = pathUTREAL .. "electrosaw_dry.ogg", v = 0.25, t = 0},
         },
     },
 
@@ -448,6 +435,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
 
+            { s = ")uplp_urban_temp/awp/magout.ogg", t = 44 / 30, c = ca, v = 1 },
             { s = pathUTT .. "boxremove.ogg", t = 45 / 30, c = ca, v = 1 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 66 / 30, v = 0.6 },
             { s = pathUTT .. "boxinsert.ogg", t = 75 / 30, c = ca, v = 1 },
@@ -477,17 +465,10 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt2.ogg", t = 75 / 30, c = ca, v = 0.5 },
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.2, t = 90/30},
-            {s = "weapons/cod2019/minigun/" .. "weap_dblmg_spindown_plr_01.wav", v = 0.2, t = 105/30},
+            {s = pathUTREAL .. "electrosaw_try.ogg", v = 0.4, t = 90/30},
 
             { s = pathUTC .. "cloth_4.ogg", t = 130 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-05.ogg", t = 132 / 30, c = ca, v = 0.8 },
-
-
-            -- { s = pathUTC .. "movement-smg-03.ogg", t = 3 / 30, c = ca, v = 0.8 },
-            -- { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
-            -- { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
-            -- { s = pathUTC .. "movement-rifle-04.ogg", t = 120 / 30, c = ca, v = 0.8 },
         },
     },
     -- Firemodee --
