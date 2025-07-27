@@ -40,14 +40,14 @@ $sequence "idle_tired"{
 $sequence "trigger" {
 	"anims\trigger.smd"
 	fps 24
-	fadein 0
-	fadeout 0.2
+	fadein 0.4
+	fadeout 0.6
 }
 
 $sequence "fire_empty" {
 	"anims\spin.smd"
 	fps 24
-	fadein 0
+	fadein 0.2
 	fadeout 0.2
 }
 $sequence "dryfire" {

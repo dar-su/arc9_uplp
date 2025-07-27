@@ -3,6 +3,7 @@ $modelname "weapons\arc9\c_uplp_marlin.mdl"
 $bodygroup "marlin" {
 	studio "body.smd"
 	studio "body blk.smd"
+	studio "body gold.smd"
 }   
 $bodygroup "lever" {
 	studio "lever.smd"
@@ -37,9 +38,12 @@ $bodygroup "fs" {
 	studio "fs.smd"
 	studio "fs l.smd"
 	studio "fs s.smd"
+	studio "fs sup.smd"
+
 	studio "fs tac.smd"
 	studio "fs tac l.smd"
 	studio "fs tac s.smd"
+	studio "fs tac sup.smd"
 }
 $bodygroup "rs" {
 	blank
@@ -164,12 +168,16 @@ $sequence "holster_empty" {
 
 $sequence "modeswitch" {
 	"anims\switch.smd"
+	"anims\switch_iron.smd"
+	blend "sights" 0 1
 	fps 30
 	// snap
 }
 
 $sequence "modeswitch_empty" {
 	"anims\switch_e.smd"
+	"anims\switch_e_iron.smd"
+	blend "sights" 0 1
 	fps 30
 	// snap
 }
@@ -278,3 +286,5 @@ $bonemerge "ValveBiped.Bip01_R_Finger12"
 $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
+
+$bonemerge "tac"

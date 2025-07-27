@@ -53,6 +53,7 @@ L["uplp_caliber_127x108mm"] = "12.7×108mm Soviet"
 L["uplp_caliber_9x39mm"] = "9×39mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
 L["uplp_caliber_308auto"] = ".380 ACP"
+L["uplp_caliber_4570"] = ".45-70 Government"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -85,6 +86,7 @@ L["uplp_mechanism_gasoperated_shortstroke"] = "Short-stroke gas system"
 L["uplp_mechanism_gasoperated_longstroke"] = "Long-stroke gas system"
 
 L["uplp_mechanism_breakaction"] = "Break-Action"
+L["uplp_mechanism_lever"] = "Lever action"
 
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Short-recoil"
@@ -117,6 +119,8 @@ L["uplp_class_weapon_pistol"] = "Pistol"
 L["uplp_class_weapon_shotgun"] = "Shotgun"
 L["uplp_class_weapon_smg"] = "Submachine Gun"
 L["uplp_class_weapon_sniper"] = "Sniper Rifle"
+L["uplp_class_weapon_lever"] = "Lever-Action Rifle"
+L["uplp_class_weapon_dmr"] = "Designated Marksman Rifle"
 L["uplp_class_weapon_throwable"] = "Throwable"
 
 //////////////////////////////////////////////////////////////////////
@@ -3080,7 +3084,7 @@ L["uplp_dbs_stock_tactical_short.compactname"] = "PAWCO S"
 L["uplp_dbs_stock_tactical_short.description"] = "Sawed-off version of the modern polymer stock from PAWCO.\n\n<color=255,100,100>Warning</color>: PAWCO is not responsible if people see you using this and you get hurt as a consequence."
 
 //////////////////// M134 Minigun
-L["uplp_weapon_minigun"] = "O.A. MG-RB Minigun"
+L["uplp_weapon_minigun"] = "O.A. Minigun"
 
 L["uplp_weapon_minigun_desc"] = "Omega Arms were contracted by the U.S. military during the 60's to create a door-mounted machine gun. They delivered tenfold, creating the MG-RB (\"Machine Gun, Rotating Barrel\"), while also making more lightweight, man-portable variants of it with reduced rates of fire."
 
@@ -3114,11 +3118,11 @@ L["uplp_marlin_brl_supp.description"] = "Modernized, integrally suppressed barre
 ////// Handguards
 L["uplp_marlin_hg_wood.printname"] = "Wooden Handguard"
 L["uplp_marlin_hg_wood.compactname"] = "Wood"
-L["uplp_marlin_hg_wood.description"] = "Old-school handguard from the earlier Model 94 and its variants."
+L["uplp_marlin_hg_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
 
 L["uplp_marlin_hg_poly.printname"] = "Polymer Handguard"
 L["uplp_marlin_hg_poly.compactname"] = "Polymer"
-L["uplp_marlin_hg_poly.description"] = "Modernized polymer handguard for the Model 94.\nCombine with <color=160,160,255>Polymer Stock</color> or <color=160,160,255>Sawed-off Polymer Stock</color> to change receiver appearance."
+L["uplp_marlin_hg_poly.description"] = "Modernized polymer handguard for the Model 94."
 
 L["uplp_marlin_hg_tac.printname"] = "PAWCO Handguard"
 L["uplp_marlin_hg_tac.compactname"] = "PAWCO"
@@ -3131,23 +3135,23 @@ L["uplp_marlin_hg_tac_cover.description"] = "Tactical handguard from ApexCore Ar
 ////// Stocks
 L["uplp_marlin_stock_wood.printname"] = "Wooden Stock"
 L["uplp_marlin_stock_wood.compactname"] = "Wood"
-L["uplp_marlin_stock_wood.description"] = "Old-school stock from the earlier Model 94 and its variants."
+L["uplp_marlin_stock_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
 
 L["uplp_marlin_stock_poly.printname"] = "Polymer Stock"
 L["uplp_marlin_stock_poly.compactname"] = "Polymer"
-L["uplp_marlin_stock_poly.description"] = "Modernized polymer stock for the Model 94.\nCombine with <color=160,160,255>Polymer Handguard</color> to change receiver appearance."
+L["uplp_marlin_stock_poly.description"] = "Modernized polymer stock for the Model 94."
 
 L["uplp_marlin_stock_cut_wood.printname"] = "Sawed-Off Wooden Stock"
-L["uplp_marlin_stock_cut_wood.compactname"] = "Sawed Wood"
+L["uplp_marlin_stock_cut_wood.compactname"] = "Sawed-Off"
 L["uplp_marlin_stock_cut_wood.description"] = "Sawed-off wooden stock for the Model 94."
 
 L["uplp_marlin_stock_cut_poly.printname"] = "Sawed-off Polymer Stock"
-L["uplp_marlin_stock_cut_poly.compactname"] = "Classic"
-L["uplp_marlin_stock_cut_poly.description"] = "Sawed-off polymer stock for the Model 94.\nCombine with <color=160,160,255>Polymer Handguard</color> to change receiver appearance."
+L["uplp_marlin_stock_cut_poly.compactname"] = "Sawed Poly"
+L["uplp_marlin_stock_cut_poly.description"] = "Sawed-off polymer stock for the Model 94."
 
 L["uplp_marlin_stock_sniper.printname"] = "Eagle Eye Stock"
 L["uplp_marlin_stock_sniper.compactname"] = "Eagle Eye"
-L["uplp_marlin_stock_sniper.description"] = "Beefy stock for the Model 94, used by the most eagle-eyed marksmen."
+L["uplp_marlin_stock_sniper.description"] = "Homemade modification of polymer stock with raised cheekrest." --"Beefy stock for the Model 94, used by the most eagle-eyed marksmen."
 
 L["uplp_marlin_stock_tac.printname"] = "PAWCO Stock"
 L["uplp_marlin_stock_tac.compactname"] = "PAWCO"
@@ -3155,30 +3159,42 @@ L["uplp_marlin_stock_tac.description"] = "Tactical stock from PAWCO made for the
 
 ////// Internals
 L["uplp_marlin_bolt_light.printname"] = "Lightweight Internals"
-L["uplp_marlin_bolt_light.compactname"] = "Classic"
-L["uplp_marlin_bolt_light.description"] = "Replaces the internal parts with more lightweight parts, improving speed and maneuverability."
+L["uplp_marlin_bolt_light.compactname"] = "Light"
+L["uplp_marlin_bolt_light.description"] = "Replaces the internal parts with more lightweight parts."
 
 L["uplp_marlin_bolt_heavy.printname"] = "Reinforced Internals"
 L["uplp_marlin_bolt_heavy.compactname"] = "Reinforced"
-L["uplp_marlin_bolt_heavy.description"] = "Replaces the internal parts with more reinforced parts, improving accuracy and recoil control."
+L["uplp_marlin_bolt_heavy.description"] = "Replaces the internal parts with more reinforced parts."
 
 ////// Extras
-L["uplp_marlin_hg_ammo.printname"] = "Cartridge Holder"
-L["uplp_marlin_hg_ammo.compactname"] = "Holder"
-L["uplp_marlin_hg_ammo.description"] = "Installs a cartridge holder on your handguard."
+L["uplp_marlin_hg_ammo1.printname"] = "Handguard Cartridge Holder I"
+L["uplp_marlin_hg_ammo1.compactname"] = "Holder I"
+L["uplp_marlin_hg_ammo1.description"] = "Installs a cartridge holder on your handguard."
 
-L["uplp_marlin_hg_ammo.printname"] = "Cartridge Holder II"
-L["uplp_marlin_hg_ammo.compactname"] = "Holder II"
-L["uplp_marlin_hg_ammo.description"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.description") or "Installs a cartridge holder on your handguard."
+L["uplp_marlin_hg_ammo2.printname"] = "Handguard Cartridge Holder II"
+L["uplp_marlin_hg_ammo2.compactname"] = "Holder II"
+L["uplp_marlin_hg_ammo2.description"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.description") or "Installs a cartridge holder on your handguard."
 
-L["uplp_marlin_hg_ammo.printname"] = "Cartridge Holder III"
-L["uplp_marlin_hg_ammo.compactname"] = "Holder III"
-L["uplp_marlin_hg_ammo.description"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.description") or "Installs a cartridge holder on your handguard."
+L["uplp_marlin_hg_ammo3.printname"] = "Handguard Cartridge Holder III"
+L["uplp_marlin_hg_ammo3.compactname"] = "Holder III"
+L["uplp_marlin_hg_ammo3.description"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.description") or "Installs a cartridge holder on your handguard."
 
-L["uplp_marlin_stock_ammo.printname"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.printname") or "Cartridge Holder"
-L["uplp_marlin_stock_ammo.compactname"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.compactname") or "Holder"
+L["uplp_marlin_stock_ammo.printname"] = "Stock Cartridge Holder"
+L["uplp_marlin_stock_ammo.compactname"] = "Holder"
 L["uplp_marlin_stock_ammo.description"] = "Installs a cartridge holder on your stock."
 
 L["uplp_marlin_skin_black.printname"] = "Tactical Black"
-L["uplp_marlin_skin_black.compactname"] = "T. Black"
-L["uplp_marlin_skin_black.description"] = "Replaces the chrome receiver and barrel with aftermarket matte black versions."
+L["uplp_marlin_skin_black.compactname"] = "Black"
+L["uplp_marlin_skin_black.description"] = "Replaces the chrome receiver and barrel with matte black versions."
+
+L["uplp_marlin_skin_gold.printname"] = "Tactical Black with gold-plated internals"
+L["uplp_marlin_skin_gold.compactname"] = "Gold"
+L["uplp_marlin_skin_gold.description"] = "Replaces the chrome receiver and barrel with matte black versions and changes the internals to gold-plated ones."
+
+L["uplp_marlin_rs_railsight.printname"] = "Top Rail with Ring Sight"
+L["uplp_marlin_rs_railsight.compactname"] = "Rail"
+L["uplp_marlin_rs_railsight.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+
+L["uplp_marlin_rs_railsight_long.printname"] = "Extended Top Rail with Ring Sight"
+L["uplp_marlin_rs_railsight_long.compactname"] = "Ext. Rail"
+L["uplp_marlin_rs_railsight_long.description"] = "Top-mounted extended rail for optics with built-in front and rear sight."

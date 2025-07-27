@@ -331,7 +331,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
 
-ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup", "uplp_optic_long_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "dcl.png", "mips smooth")
@@ -538,7 +538,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "bigass.png", "mips smooth")
 
@@ -662,7 +662,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "bigass.png", "mips smooth")
 
@@ -972,7 +972,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "3-7x"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "psor.png", "mips smooth")
 
@@ -1491,7 +1491,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "snip.png", "mips smooth")
 
@@ -1569,7 +1569,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "3-7x"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
@@ -1661,7 +1661,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "ez8.png", "mips smooth")
 
@@ -1719,7 +1719,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "pm3.png", "mips smooth")
 
@@ -1888,7 +1888,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "gen.png", "mips smooth")
 
@@ -1947,7 +1947,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "dedal.png", "mips smooth")
 
@@ -2006,7 +2006,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "8x+"
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 
@@ -2372,7 +2372,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
 
-ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup", "uplp_optic_long_used"}
 
 ATT.Icon = Material(iconfolder .. "devom.png", "mips smooth")
 

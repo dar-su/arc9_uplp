@@ -2,6 +2,7 @@ AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - Poly Arms"
 SWEP.Spawnable = true
+SWEP.AdminOnly = true
 
 ---- FUNDAMENTALS
 
@@ -18,12 +19,12 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_minigun_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_minigun_manufacturer" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_4.6x30mm"),
-    [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
-                                                                        ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
-    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_germany" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1999" ),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x51mm"),
+    -- [ ARC9:GetPhrase( "uplp_mechanism" ) ] = string.format( ARC9:GetPhrase("uplp_mechanism_2" ),
+    --                                                                     ARC9:GetPhrase( "uplp_mechanism_gasoperated" ),
+    --                                                                     ARC9:GetPhrase( "uplp_mechanism_rotatingbolt" ) ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1963" ),
 }
 
 SWEP.Credits = {
@@ -93,13 +94,13 @@ SWEP.DamageMin = 15
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 1.1,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 0.9,
+    [HITGROUP_STOMACH] = 0.7,
     [HITGROUP_LEFTARM] = 0.8,
     [HITGROUP_RIGHTARM] = 0.8,
-    [HITGROUP_LEFTLEG] = 0.75,
-    [HITGROUP_RIGHTLEG] = 0.75,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
 }
 
 SWEP.Penetration = 30 -- Units of wood that can be penetrated
@@ -118,7 +119,7 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "smg" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 0
-SWEP.ClipSize = 100
+SWEP.ClipSize = 200
 
 -- Recoil
 SWEP.Recoil = 0.8 * 0.75
@@ -157,8 +158,8 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.02
+SWEP.SpreadAddHipFire = 0.015
 
 SWEP.SpreadAddRecoil = 0.02
 SWEP.SpreadAddMove = 0.01
@@ -174,9 +175,9 @@ SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.8 -- Walk speed multiplier
+SWEP.SpeedMult = 0.7 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
-SWEP.SpeedMultShooting = 0.85
+SWEP.SpeedMultShooting = 0.7
 
 SWEP.BarrelLength = 45
 
@@ -218,6 +219,7 @@ SWEP.IronSights = {
      Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
+     CrosshairInSights = true
 }
 
 -- Customization Menu Info
@@ -533,24 +535,24 @@ SWEP.Attachments = {
 }
 
 -- Moka's shit
-SWEP.Recoil = 0.4
-SWEP.RecoilAutoControl = 1.75
-SWEP.RecoilAutoControlMultShooting = 0.1
+-- SWEP.Recoil = 0.4
+-- SWEP.RecoilAutoControl = 1.75
+-- SWEP.RecoilAutoControlMultShooting = 0.1
 
-SWEP.RecoilMultRecoil = 1.6
-SWEP.RecoilMultSights = 0.875
+-- SWEP.RecoilMultRecoil = 1.6
+-- SWEP.RecoilMultSights = 0.875
 
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.025
+-- SWEP.Spread = 0
+-- SWEP.SpreadAddHipFire = 0.025
 
-SWEP.SpreadAddRecoil = 0.025
-SWEP.SpreadAddMove = 0.015
+-- SWEP.SpreadAddRecoil = 0.025
+-- SWEP.SpreadAddMove = 0.015
 
-SWEP.RecoilPerShot = 0.2
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
+-- SWEP.RecoilPerShot = 0.2
+-- SWEP.RecoilDissipationRate = 5
+-- SWEP.RecoilResetTime = 0.05
 
-SWEP.RecoilModifierCapSights = 0.2
+-- SWEP.RecoilModifierCapSights = 0.2
 
 SWEP.DryFireDelay = 0.02
 
