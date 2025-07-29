@@ -3151,19 +3151,19 @@ L["uplp_marlin_stock_cut_poly.description"] = "Sawed-off polymer stock for the M
 
 L["uplp_marlin_stock_sniper.printname"] = "Eagle Eye Stock"
 L["uplp_marlin_stock_sniper.compactname"] = "Eagle Eye"
-L["uplp_marlin_stock_sniper.description"] = "Homemade modification of polymer stock with raised cheekrest." --"Beefy stock for the Model 94, used by the most eagle-eyed marksmen."
+L["uplp_marlin_stock_sniper.description"] = "Homemade modified polymer stock with a raised cheekrest."
 
 L["uplp_marlin_stock_tac.printname"] = "PAWCO Stock"
 L["uplp_marlin_stock_tac.compactname"] = "PAWCO"
 L["uplp_marlin_stock_tac.description"] = "Tactical stock from PAWCO made for the Model 94."
 
 ////// Internals
-L["uplp_marlin_bolt_light.printname"] = "Lightweight Internals"
-L["uplp_marlin_bolt_light.compactname"] = "Light"
+L["uplp_marlin_bolt_light.printname"] = ARC9:GetPhrase("uplp_molot_bolt_light.printname") or "Lightweight Internals"
+L["uplp_marlin_bolt_light.compactname"] = ARC9:GetPhrase("uplp_molot_bolt_light.compactname") or "Lightweight"
 L["uplp_marlin_bolt_light.description"] = "Replaces the internal parts with more lightweight parts."
 
-L["uplp_marlin_bolt_heavy.printname"] = "Reinforced Internals"
-L["uplp_marlin_bolt_heavy.compactname"] = "Reinforced"
+L["uplp_marlin_bolt_heavy.printname"] = ARC9:GetPhrase("uplp_molot_bolt_heavy.printname") or "Reinforced Internals"
+L["uplp_marlin_bolt_heavy.compactname"] = ARC9:GetPhrase("uplp_molot_bolt_heavy.compactname") or "Reinforced"
 L["uplp_marlin_bolt_heavy.description"] = "Replaces the internal parts with more reinforced parts."
 
 ////// Extras
@@ -3187,9 +3187,9 @@ L["uplp_marlin_skin_black.printname"] = "Tactical Black"
 L["uplp_marlin_skin_black.compactname"] = "Black"
 L["uplp_marlin_skin_black.description"] = "Replaces the chrome receiver and barrel with matte black versions."
 
-L["uplp_marlin_skin_gold.printname"] = "Tactical Black with gold-plated internals"
-L["uplp_marlin_skin_gold.compactname"] = "Gold"
-L["uplp_marlin_skin_gold.description"] = "Replaces the chrome receiver and barrel with matte black versions and changes the internals to gold-plated ones."
+L["uplp_marlin_skin_gold.printname"] = "Tactical Black w/ Gold Internals"
+L["uplp_marlin_skin_gold.compactname"] = "Black+Gold"
+L["uplp_marlin_skin_gold.description"] = "Replaces the chrome receiver and barrel with matte black versions, and the internals with gold-plated ones."
 
 L["uplp_marlin_rs_railsight.printname"] = "Top Rail with Ring Sight"
 L["uplp_marlin_rs_railsight.compactname"] = "Rail"
@@ -3197,4 +3197,4 @@ L["uplp_marlin_rs_railsight.description"] = "Top-mounted rail for optics with bu
 
 L["uplp_marlin_rs_railsight_long.printname"] = "Extended Top Rail with Ring Sight"
 L["uplp_marlin_rs_railsight_long.compactname"] = "Ext. Rail"
-L["uplp_marlin_rs_railsight_long.description"] = "Top-mounted extended rail for optics with built-in front and rear sight."
+L["uplp_marlin_rs_railsight_long.description"] = "Top-mounted extended rail for bigger optics with built-in front and rear sight."
