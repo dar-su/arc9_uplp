@@ -189,7 +189,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 SWEP.UseDispersion = true
 
 SWEP.Spread = 0.048
-SWEP.SpreadAddMidAir = 0.05
+SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
 SWEP.DispersionSpreadAddHipFire = 0.025

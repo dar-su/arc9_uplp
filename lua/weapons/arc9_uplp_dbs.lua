@@ -72,7 +72,7 @@ SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 90
 SWEP.ShellVelocity = -0.7
 SWEP.ShellAngleVelocity = 0.15
-SWEP.ShellSmoke = false 
+SWEP.ShellSmoke = false
 SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
 
 SWEP.CaseEffectQCA = 2
@@ -110,17 +110,18 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 225
-SWEP.DamageMin = 12
+SWEP.DamageMax = 200
+SWEP.DamageMin = 36
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
 
+-- edited to be square root instead of quarter root
 SWEP.CurvedDamageScaling = true
 function SWEP:Hook_GetDamageAtRange(data)
     local d = self:GetDamageDeltaAtRange(data.range)
 
-    local dmgv = Lerp(d ^ 0.25, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
+    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
     local num = self:GetProcessedValue("Num")
 
     if self:GetProcessedValue("DistributeDamage", true) then
@@ -158,7 +159,7 @@ SWEP.RangeMin = 4.5 / ARC9.HUToM
 SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 480 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 2
 
@@ -169,27 +170,27 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 2
 
 -- Recoil
-SWEP.Recoil = 3.5
-SWEP.RecoilUp = 2.5
-SWEP.RecoilSide = 1.5
+SWEP.Recoil = 1.5
+SWEP.RecoilUp = 5
+SWEP.RecoilSide = 5
 
 -- Additional recoil when firing rapidly
 SWEP.RecoilMultRecoil = 1
-SWEP.RecoilAddRecoil = 0.5
+SWEP.RecoilAddRecoil = 0
 
-SWEP.RecoilRandomUp = 1.25
-SWEP.RecoilRandomSide = 1.2
+SWEP.RecoilRandomUp = 4
+SWEP.RecoilRandomSide = 2
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
 -- Visual Recoil
-SWEP.UseVisualRecoil = false 
+SWEP.UseVisualRecoil = false
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
@@ -212,52 +213,70 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.048 * 1.5
-SWEP.SpreadAddMidAir = 0.05
+SWEP.Spread = 0.038
+SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.025
+SWEP.DispersionSpreadAddHipFire = 0.04
 
-SWEP.DispersionSpreadAddRecoil = 0.05
-SWEP.DispersionSpreadAddMove = 0.03
+SWEP.DispersionSpreadAddRecoil = 0.035
+SWEP.DispersionSpreadAddMove = 0.035
 SWEP.DispersionSpreadAddMidAir = 0.05
 
-SWEP.RecoilDissipationRate = 1
+SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.75
+SWEP.RecoilPerShot = 1
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.SpeedMult = 0.82
-SWEP.SpeedMultSights = 0.67
+SWEP.SpeedMult = 0.85
+SWEP.SpeedMultSights = 0.62
 
-SWEP.AimDownSightsTime = 0.44
-SWEP.SprintToFireTime = 0.42
+SWEP.AimDownSightsTime = 0.42
+SWEP.SprintToFireTime = 0.45
 
 SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 42
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot -- as fast for cycle anim to play instantly
+SWEP.RPM = 150 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 12 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    { 
-		Mode = 1
-	},
-    { 
-		Mode = 2,
-		PrintName = ARC9:GetPhrase("uplp_firemode_both"),
-		RPMMult = 5,
-		RunawayBurst = true, 
-		RecoilFirstShot = 0.01, 
-		RecoilMult = 2, 
-		RecoilAddShooting = 2, 
-		-- VisualRecoilAddShooting = 0.75, 
-	},
+    {
+        Mode = 1
+    },
+    {
+        Mode = 2,
+        PrintName = ARC9:GetPhrase("uplp_firemode_both"),
+        RPMOverride = 10000,
+        SpreadAdd = 0.035,
+        DamageMaxMult = 0.8,
+        RunawayBurst = true,
+        PostBurstDelay = 0.666667,
+        RecoilFirstShot = 0,
+        RecoilAddShooting = 1,
+        DispersionSpreadMultRecoil = 0,
+    },
 }
+
+-- Trying to fire with 1 round left on BOTH firemode will switch to SINGLE forcefully
+-- This is so the player doesn't gimp themselves with the weakened per-shot power on BOTH firemode
+SWEP.Hook_PrimaryAttack = function(wep)
+    local cfm = wep:GetCurrentFiremodeTable()
+    if cfm.Mode == 2 and wep:Clip1() == 1 and wep:GetBurstCount() == 0 then
+        wep:SetFiremode(1)
+        wep:InvalidateCache()
+        if game.SinglePlayer() then
+            wep:CallOnClient("InvalidateCache")
+        end
+    elseif cfm.Mode == 2 and wep:GetBurstCount() == 0 and IsFirstTimePredicted() then
+        -- Fucking Badass
+        util.ScreenShake( wep:GetOwner():GetPos(), 4, 50, 0.75, 328, true)
+    end
+end
 
 SWEP.NoShellEject = true
 SWEP.EjectDelay = 1111111111
@@ -291,10 +310,10 @@ SWEP.IronSights = {
 
      -- if attached["uplp_m590_rs_railsight"] then
         -- return {
-			 -- Pos = Vector(-2.64, -5.5, 0.36),
-			 -- Ang = Angle(0, 0, 0),
-			 -- Magnification = 1.15,
-			 -- ViewModelFOV = 55,
+             -- Pos = Vector(-2.64, -5.5, 0.36),
+             -- Ang = Angle(0, 0, 0),
+             -- Magnification = 1.15,
+             -- ViewModelFOV = 55,
         -- }
     -- end
 
@@ -431,9 +450,9 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     local empty = swep:Clip1() == 0
 
     -- if anim == "reload_start" or anim == "reload_start_empty" then
-	
-	-- end
-	
+
+    -- end
+
     return anim
 end
 
@@ -445,8 +464,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.6,
-		FireASAP = true,
+        MinProgress = 0.6,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "close.ogg", t = 4 / 30, c = ca, v = 0.8 },
@@ -476,7 +495,7 @@ SWEP.Animations = {
         MinProgress= 0.8,
         -- DropMagAt = 29/30,
         MagSwapTime = 20/30,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "open.ogg", t = 3.5 / 30, c = ca, v = 1 },
@@ -485,14 +504,14 @@ SWEP.Animations = {
             { s = pathUT .. "close.ogg", t = 35 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 42.5 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 2, t = 10/30},
             {hide = 0, t = 20/30},
-            
+
             {shelleject = true, att = 10, t = 10/30 },
 
-		    {e = "arc9_uplp_db_smoke", t = 2/30},
+            {e = "arc9_uplp_db_smoke", t = 2/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -509,7 +528,7 @@ SWEP.Animations = {
         MinProgress= 0.85,
         -- DropMagAt = 29/30,
         MagSwapTime = 20/30,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "open.ogg", t = 3.5 / 30, c = ca, v = 1 },
@@ -520,15 +539,15 @@ SWEP.Animations = {
             { s = pathUT .. "close.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 57.5 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 10/30},
             {hide = 0, t = 20/30},
-            
+
             {shelleject = true, att = 10, t = 10/30 },
             {shelleject = true, att = 11, t = 10/30 },
-            
-		    {e = "arc9_uplp_db_smoke", t = 2/30},
+
+            {e = "arc9_uplp_db_smoke", t = 2/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -631,33 +650,33 @@ SWEP.AttachmentElements = {
     ["uplp_sg_shell_orange"] = { Bodygroups = { { 6, 4 } } },
     ["uplp_sg_shell_yellow"] = { Bodygroups = { { 6, 5 } } },
 
-	-- BARRELS
-    ["uplp_dbs_brl_long"] = { 
+    -- BARRELS
+    ["uplp_dbs_brl_long"] = {
         Bodygroups = { { 1, 1 } },
         AttPosMods = { [3] = { Pos = Vector(0, 0, 9.535) } },
     },
 
-    ["uplp_dbs_brl_short"] = { 
+    ["uplp_dbs_brl_short"] = {
         Bodygroups = { { 1, 2 } },
         AttPosMods = { [3] = { Pos = Vector(0, 0, -8.08) } },
     },
-	
-	-- HANDGUARD
+
+    -- HANDGUARD
     ["uplp_dbs_hg_poly"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_dbs_hg_crude"] = { Bodygroups = { { 2, 2 } } },
-	
-	-- STOCK
+
+    -- STOCK
     ["uplp_dbs_stock_short"] = { Bodygroups = { { 3, 1 } } },
     ["uplp_dbs_stock_cursed"] = { Bodygroups = { { 3, 2 } } },
     ["uplp_dbs_stock_tactical"] = { Bodygroups = { { 3, 3 } } },
     ["uplp_dbs_stock_tactical_short"] = { Bodygroups = { { 3, 4 } } },
-	
-	-- OTHER
+
+    -- OTHER
     ["uplp_optic_used"] =  { Bodygroups = { { 5, 1 } } },
     ["uplp_grip_used"] =  { Bodygroups = { { 2, 2 } } },
 }
 
-SWEP.DuplicateAttachments = true 
+SWEP.DuplicateAttachments = true
 
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
@@ -778,13 +797,3 @@ SWEP.Attachments = {
         RequireElements = {"uplp_dbs_stock_tactical"},
     },
 }
-
-SWEP.HookP_NameChange = function(self, name)
-    local eles = self:GetElements()
-
-    if eles["uplp_m590_mag_5"] or eles["uplp_m590_mag_10"] then
-        name = ARC9:GetPhrase("uplp_weapon_m590m")
-    end
-
-    return name
-end

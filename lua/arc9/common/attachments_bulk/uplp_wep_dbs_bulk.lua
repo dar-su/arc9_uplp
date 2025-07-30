@@ -17,16 +17,41 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.RecoilMult = 0.75
-ATT.SpreadMult = 0.8
-ATT.RangeMaxMult = 1.25
+ATT.RecoilAdd = -0.2
+ATT.SpreadAdd = -0.014
+ATT.RangeMaxMult = 1.15
+ATT.DamageMinMult = 1.33333333333
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAddSights = -0.1
-ATT.SpeedAdd = -0.015
+ATT.SpeedAdd = -0.04
 ATT.BarrelLengthAdd = 6
+ATT.DispersionSpreadAddHipFire = 0.012
+ATT.DispersionSpreadAddRecoil = 0.005
+ATT.DispersionSpreadAddMove = 0.01
+ATT.RPMAdd = -30
+ATT.ReloadTimeMult = 1.1
+ATT.SwayMultSights = 1.5
+
+ATT.Firemodes = {
+    {
+        Mode = 1
+    },
+    {
+        Mode = 2,
+        PrintName = ARC9:GetPhrase("uplp_firemode_both"),
+        RPMOverride = 10000,
+        SpreadAdd = 0.02,
+        DamageMaxMult = 0.8,
+        RunawayBurst = true,
+        PostBurstDelay = 0.75,
+        RecoilFirstShot = 0,
+        RecoilAddShooting = 1,
+        DispersionSpreadMultRecoil = 0,
+    },
+}
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
@@ -47,20 +72,41 @@ ATT.Category = "uplp_dbs_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-
-ATT.DispersionSpreadAddHipFire = -0.01
-ATT.DispersionSpreadAddMove = -0.01
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.05
+ATT.DispersionSpreadAddHipFire = -0.012
+ATT.DispersionSpreadAddRecoil = -0.015
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.05
 ATT.SpeedAddSights = 0.1
-ATT.BarrelLengthAdd = -5
+ATT.BarrelLengthAdd = -18
+ATT.ReloadTimeMult = 0.95
+ATT.SwayMultSights = 0.6666667
 
 -- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.RecoilMult = 1.3
-ATT.SpreadMult = 1.15
-ATT.RangeMaxMult = 0.9
+ATT.PhysBulletMuzzleVelocityMult = 0.75
+ATT.RecoilAdd = 0.25
+ATT.SpreadAdd = 0.022
+ATT.RangeMaxMult = 0.75
+ATT.RPMAdd = 60
+ATT.DamageMinMult = 0.33333333333
+
+ATT.Firemodes = {
+    {
+        Mode = 1
+    },
+    {
+        Mode = 2,
+        PrintName = ARC9:GetPhrase("uplp_firemode_both"),
+        RPMOverride = 10000,
+        SpreadAdd = 0.025,
+        DamageMaxMult = 0.8,
+        RunawayBurst = true,
+        PostBurstDelay = 0.5,
+        RecoilFirstShot = 0,
+        RecoilAddShooting = 1,
+        DispersionSpreadMultRecoil = 0,
+    },
+}
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
@@ -81,6 +127,10 @@ ATT.Icon = Material(iconfolder .. "hgpoly.png", "mips smooth")
 ATT.Category = "uplp_dbs_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = -98
+
+ATT.RecoilAdd = 0.1
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SpeedAddSights = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_dbs_hg_poly")
 
@@ -122,13 +172,14 @@ ATT.Icon = Material(iconfolder .. "cut.png", "mips smooth")
 ATT.Category = "uplp_dbs_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.6
-ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.RecoilAdd = 0.5
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.15
+ATT.SprintToFireTimeAdd = -0.17
+ATT.SpeedAddSights = 0.12
+ATT.SpeedAdd = 0.05
+ATT.DispersionSpreadAddHipFire = -0.015
+ATT.DispersionSpreadAddMove = -0.01
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then return anim .. "_sawedoff" end
@@ -150,8 +201,10 @@ ATT.Icon = Material(iconfolder .. "cursed.png", "mips smooth")
 ATT.Category = "uplp_dbs_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilRandomSideAdd = 0.3
-ATT.SprintToFireTimeAdd = -0.03
+ATT.RecoilRandomSideAdd = 1.5
+ATT.SprintToFireTimeAdd = -0.04
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SpeedAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_dbs_stock_cursed")
 
@@ -166,8 +219,10 @@ ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 ATT.Category = "uplp_dbs_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilRandomSideAdd = 0.3
-ATT.SpeedAddSights = 0.05
+ATT.RecoilRandomSideAdd = 1.25
+ATT.SpeedAddSights = 0.1
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SwayMultSights = 0.6666667
 
 ARC9.LoadAttachment(ATT, "uplp_dbs_stock_tactical")
 
@@ -182,13 +237,14 @@ ATT.Icon = Material(iconfolder .. "taccut.png", "mips smooth")
 ATT.Category = "uplp_dbs_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.6
-ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.RecoilAdd = 0.5
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.18
+ATT.SprintToFireTimeAdd = -0.2
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.04
+ATT.DispersionSpreadAddHipFire = -0.015
+ATT.DispersionSpreadAddMove = -0.01
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then return anim .. "_sawedoff" end
