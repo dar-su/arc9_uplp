@@ -557,6 +557,76 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+    ["reload_slower"] = {
+        Source = "reload1_slower",
+        RefillProgress= 0.725,
+        MinProgress= 0.8,
+        -- DropMagAt = 29/30,
+        MagSwapTime = 20/30,
+        Mult = 0.975,
+        FireASAP = true,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "open.ogg", t = 3.5 / 30, c = ca, v = 1 },
+            { s = pathUT .. "struggle.ogg", t = 24 / 30, c = ca, v = 0.5 },
+            { s = shellin, t = 30 / 30, c = ca, v = 1 }, -- Shell
+            { s = pathUT .. "close.ogg", t = 39 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 46.5 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 2, t = 10/30},
+            {hide = 0, t = 20/30},
+
+            {shelleject = true, att = 10, t = 10/30 },
+
+            {e = "arc9_uplp_db_smoke", t = 2/30},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.5, lhik = 0 },
+            { t = 0.6, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_slower"] = {
+        Source = "reload2_slower",
+        -- EjectAt = 2.25,
+        RefillProgress= 0.65,
+        MinProgress= 0.85,
+        -- DropMagAt = 29/30,
+        Mult = 0.975,
+        MagSwapTime = 20/30,
+        FireASAP = true,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "open.ogg", t = 3.5 / 30, c = ca, v = 1 },
+            { s = pathUT .. "struggle.ogg", t = 24 / 30, c = ca, v = 0.5 },
+            { s = shellin, t = 30 / 30, c = ca, v = 1 }, -- Shell
+            { s = pathUT .. "struggle.ogg", t = 40 / 30, c = ca, v = 0.5 },
+            { s = shellin, t = 46 / 30, c = ca, v = 1 }, -- Shell
+            { s = pathUT .. "close.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 62 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 64.5 / 30, c = ca, v = 0.8 },
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 10/30},
+            {hide = 0, t = 20/30},
+
+            {shelleject = true, att = 10, t = 10/30 },
+            {shelleject = true, att = 11, t = 10/30 },
+
+            {e = "arc9_uplp_db_smoke", t = 2/30},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.55, lhik = 0 },
+            { t = 0.775, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
 
     ["inspect"] = {
         Source = "look",

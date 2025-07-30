@@ -32,7 +32,7 @@ ATT.DispersionSpreadAddHipFire = 0.012
 ATT.DispersionSpreadAddRecoil = 0.005
 ATT.DispersionSpreadAddMove = 0.01
 ATT.RPMAdd = -30
-ATT.ReloadTimeMult = 1.1
+-- ATT.ReloadTimeMult = 1.1 -- anims are slower
 ATT.SwayMultSights = 1.5
 
 ATT.Firemodes = {
@@ -46,7 +46,7 @@ ATT.Firemodes = {
         SpreadAdd = 0.02,
         DamageMaxMult = 0.8,
         RunawayBurst = true,
-        PostBurstDelay = 0.75,
+        PostBurstDelay = 0.3,
         RecoilFirstShot = 0,
         RecoilAddShooting = 1,
         DispersionSpreadMultRecoil = 0,
@@ -57,6 +57,16 @@ ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ATT.MuzzleEffectQCA = 6
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_slower"
+    end
+end
+
+ATT.CustomCons = {
+[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
+}
 
 ARC9.LoadAttachment(ATT, "uplp_dbs_brl_long")
 
@@ -101,7 +111,7 @@ ATT.Firemodes = {
         SpreadAdd = 0.025,
         DamageMaxMult = 0.8,
         RunawayBurst = true,
-        PostBurstDelay = 0.5,
+        PostBurstDelay = 0.15,
         RecoilFirstShot = 0,
         RecoilAddShooting = 1,
         DispersionSpreadMultRecoil = 0,
