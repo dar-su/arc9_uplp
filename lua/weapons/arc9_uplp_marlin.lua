@@ -207,6 +207,7 @@ SWEP.SwayMultSights = 0.75
 
 -- Shooting and Firemodes
 SWEP.RPM = 360 -- How fast gun shoot
+SWEP.HeatCapacity = 10 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
 

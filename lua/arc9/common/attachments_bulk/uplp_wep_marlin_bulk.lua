@@ -28,10 +28,17 @@ ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
-ATT.HeadshotDamageMult = 1.2
+-- Positives
+
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedAddSights = 0.05
+ATT.HeadshotDamageMult = 1.15
+ATT.StomachDamageMult = 1.2
+
 ATT.TracerNumOverride = 0
 ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.DamageMaxMult = 0.9
+ATT.DamageMaxMult = 0.93
 ATT.BarrelLengthAdd = -4
 ATT.ClipSizeAdd = -3
 ATT.RPMMult = 0.9
@@ -62,7 +69,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.PhysBulletMuzzleVelocityMult = 1.2
 ATT.DamageMinMult = 1.18
 ATT.RecoilMult = 0.85
-ATT.HeadshotDamageMult = 1
+-- ATT.HeadshotDamageMult = 1
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
@@ -75,6 +82,7 @@ ATT.RPMMult = 0.8
 ATT.SpreadAddHipFire = 0.025
 ATT.SpeedMultShooting = 0.666667
 ATT.SwayMultSights = 1.25
+ATT.RecoilMult = 0.85
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
@@ -109,7 +117,7 @@ ATT.SwayMultSights = 0.75
 
 -- Negatives
 ATT.SpreadAdd = 0.01
-ATT.RecoilMult = 1.75
+ATT.RecoilMult = 1.5
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.DamageMinMult = 0.8
 ATT.BarrelLengthAdd = -7
