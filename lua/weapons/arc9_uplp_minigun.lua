@@ -89,18 +89,20 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 22
-SWEP.DamageMin = 15
+SWEP.DamageMax = 25
+SWEP.DamageMin = 18
 SWEP.DamageType = DMG_BULLET
 
+SWEP.ArmorPiercing = 0.15 -- Fuck a Combine Helicopter Really Hard
+
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.1,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 0.7,
-    [HITGROUP_LEFTARM] = 0.8,
-    [HITGROUP_RIGHTARM] = 0.8,
-    [HITGROUP_LEFTLEG] = 0.5,
-    [HITGROUP_RIGHTLEG] = 0.5,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 1,
+    [HITGROUP_RIGHTLEG] = 1,
 }
 
 SWEP.Penetration = 30 -- Units of wood that can be penetrated
@@ -108,7 +110,7 @@ SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMax = 50 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -122,24 +124,26 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 200
 
 -- Recoil
-SWEP.Recoil = 0.8 * 0.75
-SWEP.RecoilUp = 0.65
-SWEP.RecoilSide = 0.75
+SWEP.Recoil = 1
+SWEP.RecoilUp = 0.55
+SWEP.RecoilSide = 0.55
 
 SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomSide = 2
+
+SWEP.RecoilRandomSideMultSights = 0.333333
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25 * 1.5
+SWEP.RecoilAutoControl = 1.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
-SWEP.VisualRecoilMultSights = 1
+SWEP.VisualRecoilMultSights = 0.75
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.007 -- Horizontal tilt
@@ -158,26 +162,26 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.02
-SWEP.SpreadAddHipFire = 0.015
+SWEP.Spread = 0.05
+SWEP.SpreadAddHipFire = 0
 
-SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddRecoil = -0.03
 SWEP.SpreadAddMove = 0.01
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 10
-SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilDissipationRate = 3
+SWEP.RecoilResetTime = 0.1
+SWEP.RecoilPerShot = 1 / 75
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 0.7 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
-SWEP.SpeedMultShooting = 0.7
+SWEP.SpeedMultShooting = 0.5
 
 SWEP.BarrelLength = 45
 
@@ -186,7 +190,7 @@ SWEP.SprintToFireTime = 0.5
 
 -- Shooting and Firemodes
 SWEP.RPM = 1500 -- How fast gun shoot
-SWEP.HeatCapacity = 90 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
+SWEP.HeatCapacity = 90 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -199,7 +203,7 @@ SWEP.ShootVolume = 120
 
 SWEP.TriggerDelay = 0.33 -- Set to > 0 to play the "trigger" animation before shooting. Delay time is based on this value.
 SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
-SWEP.TriggerDelayTime = 0.45 -- Time until weapon fires.
+SWEP.TriggerDelayTime = 0.33 -- Time until weapon fires.
 
 -- HoldType Info
 SWEP.HoldType = "shotgun"
@@ -221,6 +225,8 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
      CrosshairInSights = true
 }
+
+SWEP.NoCrosshairShootTimeGap = true
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(27, 55, 15)
@@ -304,8 +310,8 @@ SWEP.DropMagazineSounds = {
 SWEP.EnterSightsSound = pathUTC .. "rattle2.ogg"
 SWEP.ExitSightsSound = pathUTC .. "rattle3.ogg"
 
-SWEP.TriggerDownSound = false 
-SWEP.TriggerUpSound = false 
+SWEP.TriggerDownSound = false
+SWEP.TriggerUpSound = false
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -372,7 +378,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.5,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "raise.ogg", t = 3 / 30, c = ca, v = 1 },
@@ -427,10 +433,10 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.65,
+        PeekProgress = 0.775,
+        RefillProgress = 0.65,
         MagSwapTime = 72/30,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
