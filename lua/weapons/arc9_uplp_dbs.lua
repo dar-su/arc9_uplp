@@ -240,7 +240,7 @@ SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 42
 
 -- Shooting and Firemodes
-SWEP.RPM = 150 -- How fast gun shoot -- as fast for cycle anim to play instantly
+SWEP.RPM = 300 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 12 -- How many bullets shot at once
 
@@ -255,7 +255,7 @@ SWEP.Firemodes = {
         SpreadAdd = 0.035,
         DamageMaxMult = 0.8,
         RunawayBurst = true,
-        PostBurstDelay = 0.666667,
+        PostBurstDelay = 0.2,
         RecoilFirstShot = 0,
         RecoilAddShooting = 1,
         DispersionSpreadMultRecoil = 0,
