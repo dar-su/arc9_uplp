@@ -28,16 +28,13 @@ ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
--- Negatives
--- ATT.AimDownSightsTimeAdd = 0.01
--- ATT.SprintToFireTimeAdd = 0.01
-ATT.PhysBulletMuzzleVelocityMult = 0.85
-ATT.DamageMaxMult = 0.92
--- ATT.DamageMinMult = 0.92
--- ATT.SpeedAddSights = -0.05
-ATT.BarrelLengthAdd = -2
-
+ATT.HeadshotDamageMult = 1.2
+ATT.TracerNumOverride = 0
+ATT.PhysBulletMuzzleVelocityMult = 0.8
+ATT.DamageMaxMult = 0.9
+ATT.BarrelLengthAdd = -4
 ATT.ClipSizeAdd = -3
+ATT.RPMMult = 0.9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
@@ -62,18 +59,22 @@ ATT.Category = "uplp_marlin_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.DamageMinMult = 1.12
+ATT.PhysBulletMuzzleVelocityMult = 1.2
+ATT.DamageMinMult = 1.18
 ATT.RecoilMult = 0.85
+ATT.HeadshotDamageMult = 1
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAddSights = -0.1
-ATT.SpeedAdd = -0.015
+ATT.SpeedAdd = -0.02
 ATT.BarrelLengthAdd = 4
-
 ATT.ClipSizeAdd = -1
+ATT.RPMMult = 0.8
+ATT.SpreadAddHipFire = 0.025
+ATT.SpeedMultShooting = 0.666667
+ATT.SwayMultSights = 1.25
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
@@ -98,23 +99,28 @@ ATT.Category = "uplp_marlin_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.03
-ATT.SpeedAddSights = 0.08
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.SprintToFireTimeAdd = -0.04
+ATT.SpeedAddSights = 0.12
 ATT.SpeedAdd = 0.01
+ATT.SpreadAddHipFire = -0.012
+ATT.SpeedMultShooting = 1.75
+ATT.SwayMultSights = 0.75
 
 -- Negatives
-ATT.RecoilMult = 1.4
-ATT.PhysBulletMuzzleVelocityMult = 0.75
-ATT.DamageMinMult = 0.85
+ATT.SpreadAdd = 0.01
+ATT.RecoilMult = 1.75
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.DamageMinMult = 0.8
 ATT.BarrelLengthAdd = -7
+ATT.ClipSizeAdd = -2
+ATT.SpreadAddMove = 0.005
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
 ATT.MuzzleEffectQCA = 4
 
-ATT.ClipSizeAdd = -2
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_brl_short")
 
@@ -137,6 +143,9 @@ ATT.Icon = Material(iconfolder .. "hg.png", "mips smooth")
 ATT.Category = "uplp_marlin_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 0.95
+ATT.AimDownSightsTimeAdd = 0.02
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_hg_wood")
 
 ---------- uplp_marlin_hg_poly
@@ -150,6 +159,10 @@ ATT.Icon = Material(iconfolder .. "hgb.png", "mips smooth")
 ATT.Category = "uplp_marlin_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.RecoilMult = 1.1
+ATT.SwayMultSights = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_hg_poly")
 
 ---------- uplp_marlin_hg_tac
@@ -162,6 +175,12 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "hgtac2.png", "mips smooth")
 ATT.Category = "uplp_marlin_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.SpeedMultShooting = 1.25
+ATT.SpeedAddSights = 0.05
+ATT.SpeedAdd = 0.02
+ATT.SwayMultSights = 1.25
+ATT.RecoilMult = 1.15
 
 ATT.Attachments = {
     {
@@ -186,6 +205,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "hgtac1.png", "mips smooth")
 ATT.Category = "uplp_marlin_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilSideMult = 0.8
+ATT.RecoilUpMult = 1.25
+ATT.SwayMultSights = 0.85
 
 ATT.Attachments = {
     {
@@ -219,6 +242,10 @@ ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 ATT.Category = "uplp_marlin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 0.9
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.03
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_stock_wood")
 
 ---------- uplp_marlin_stock_poly
@@ -231,6 +258,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "stockb.png", "mips smooth")
 ATT.Category = "uplp_marlin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 1.15
+ATT.SpeedAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_stock_poly")
 
@@ -245,13 +275,17 @@ ATT.Icon = Material(iconfolder .. "stockcut.png", "mips smooth")
 ATT.Category = "uplp_marlin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.6
-ATT.SwayAddSights = 0.5
+ATT.RecoilAdd = 0.8
+ATT.SwayAddSights = 0.75
 ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpreadAddHipFire = -0.02
+ATT.SpreadAddMove = 0.012
+ATT.SpeedAddSights = 0.12
+ATT.SpeedAdd = 0.05
+
+ATT.VisualRecoilMult = 1.5
+ATT.VisualRecoilPunchMultHipFire = 2
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
@@ -269,13 +303,17 @@ ATT.Icon = Material(iconfolder .. "stockcutbpng.png", "mips smooth")
 ATT.Category = "uplp_marlin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.6
-ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
+ATT.RecoilAdd = 0.8
+ATT.SwayAddSights = 0.75
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.12
+ATT.SpreadAddHipFire = -0.02
+ATT.SpreadAddMove = 0.012
 ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.SpeedAdd = 0.03
+
+ATT.VisualRecoilMult = 1.5
+ATT.VisualRecoilPunchMultHipFire = 2
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
@@ -293,6 +331,11 @@ ATT.Icon = Material(iconfolder .. "stocksnip.png", "mips smooth")
 ATT.Category = "uplp_marlin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilUpMult = 0.9
+ATT.SpeedAdd = 0.03
+ATT.SpeedAddSights = -0.1
+ATT.SwayMultSights = 0.5
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_stock_sniper")
 
 ---------- uplp_marlin_stock_tac
@@ -305,6 +348,9 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "stocktac.png", "mips smooth")
 ATT.Category = "uplp_marlin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.SpeedAddSights = 0.1
+ATT.SpeedMultShooting = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_stock_tac")
 
@@ -325,6 +371,12 @@ ATT.Icon = Material(iconfolder .. "light.png", "mips smooth")
 ATT.Category = "uplp_marlin_bolt"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.CycleTimeMult = 0.92
+ATT.RPMMult = 1.05
+
+ATT.RecoilAddRecoil = 0.3
+ATT.ReloadTimeMult = 1.05
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_bolt_light")
 
 ---------- uplp_marlin_bolt_heavy
@@ -337,6 +389,10 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "heavy.png", "mips smooth")
 ATT.Category = "uplp_marlin_bolt"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.CycleTimeMult = 1.05
+ATT.RecoilAddRecoil = -0.3
+ATT.ReloadTimeMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_bolt_heavy")
 
@@ -355,6 +411,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "h1.png", "mips smooth")
 ATT.Category = "uplp_marlin_holder_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_hg_ammo1")
 
@@ -368,6 +425,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "h2.png", "mips smooth")
 ATT.Category = "uplp_marlin_holder_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_hg_ammo2")
 
@@ -381,6 +439,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "h3.png", "mips smooth")
 ATT.Category = "uplp_marlin_holder_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ATT.ExcludeElements = {"uplp_marlin_hg_tac_cover"}
 
@@ -396,6 +455,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "holder.png", "mips smooth")
 ATT.Category = "uplp_marlin_holder_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ATT.ExcludeElements = {"uplp_marlin_stock_cut_wood", "uplp_marlin_stock_cut_poly"}
 
@@ -411,6 +471,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "black.png", "mips smooth")
 ATT.Category = "uplp_marlin_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_skin_black")
 
@@ -424,6 +485,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "gold.png", "mips smooth")
 ATT.Category = "uplp_marlin_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_skin_gold")
 
@@ -439,6 +501,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 ATT.Category = {"uplp_marlin_rs"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ATT.SortOrder = -98
 
@@ -455,212 +518,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "rslong.png", "mips smooth")
 ATT.Category = {"uplp_marlin_rs"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.Free = true
 
 ATT.SortOrder = -98
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_rs_railsight_long")
-
-
-
-
-
-
-
-
-
-
--- ---------- uplp_dbs_brl_long
-
--- ATT = {}
-
--- ATT.PrintName = "Full-Length Barrel"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
--- ATT.Category = "uplp_dbs_barrel"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- -- Positives
-
--- ATT.PhysBulletMuzzleVelocityMult = 1.1
--- ATT.RecoilMult = 0.75
--- ATT.SpreadMult = 0.8
--- ATT.RangeMaxMult = 1.25
-
--- -- Negatives
--- ATT.AimDownSightsTimeAdd = 0.03
--- ATT.SprintToFireTimeAdd = 0.05
--- ATT.SpeedAddSights = -0.1
--- ATT.SpeedAdd = -0.015
--- ATT.BarrelLengthAdd = 6
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 3, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
-
--- ATT.MuzzleEffectQCA = 6
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_brl_long")
-
--- ---------- uplp_dbs_brl_short
-
--- ATT = {}
-
--- ATT.PrintName = "Sawed-Off Outlaw Barrel"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "short.png", "mips smooth")
--- ATT.Category = "uplp_dbs_barrel"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- -- Positives
-
--- ATT.DispersionSpreadAddHipFire = -0.01
--- ATT.DispersionSpreadAddMove = -0.01
--- ATT.AimDownSightsTimeAdd = -0.08
--- ATT.SprintToFireTimeAdd = -0.05
--- ATT.SpeedAdd = 0.05
--- ATT.SpeedAddSights = 0.1
--- ATT.BarrelLengthAdd = -5
-
--- -- Negatives
--- ATT.PhysBulletMuzzleVelocityMult = 0.8
--- ATT.RecoilMult = 1.3
--- ATT.SpreadMult = 1.15
--- ATT.RangeMaxMult = 0.9
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, -3, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
-
--- ATT.MuzzleEffectQCA = 4
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_brl_short")
-
--- -------------------- HANDGUARD
--- ---------- uplp_dbs_hg_poly
-
--- ATT = {}
-
--- ATT.PrintName = "Polymer Handguard"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "hgpoly.png", "mips smooth")
--- ATT.Category = "uplp_dbs_hg"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
--- ATT.SortOrder = -98
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_hg_poly")
-
--- ---------- uplp_dbs_hg_crude
-
--- ATT = {}
-
--- ATT.PrintName = "Crude PAWCO Handguard"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "hg.png", "mips smooth")
--- ATT.Category = "uplp_dbs_hg"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
--- ATT.SortOrder = -99
-
--- ATT.Model = "models/weapons/arc9/uplp/db_lhik_hg.mdl"
--- ATT.ModelOffset = Vector(-19, -2.85, 4.2)
--- ATT.ModelAngleOffset = Angle(-90, 0, 90)
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 5
-
--- ATT.ActivateElements = {"uplp_grip_used"}
-
--- -- Positives
-
--- -- Negatives
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_hg_crude")
-
--- -------------------- STOCKS
--- ---------- uplp_dbs_stock_short
-
--- ATT = {}
-
--- ATT.PrintName = "Sawed-off Outlaw Stock"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "cut.png", "mips smooth")
--- ATT.Category = "uplp_dbs_stock"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.RecoilAdd = 0.6
--- ATT.SwayAddSights = 0.5
--- ATT.AimDownSightsTimeAdd = -0.08
--- ATT.SprintToFireTimeAdd = -0.06
--- ATT.SpreadAddHipFire = -0.005
--- ATT.SpeedAddSights = 0.08
--- ATT.SpeedAdd = 0.02
-
--- ATT.Hook_TranslateAnimation = function(wep, anim)
---     if anim == "inspect" then return anim .. "_sawedoff" end
--- end
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_stock_short")
-
--- ---------- uplp_dbs_stock_cursed
-
--- ATT = {}
-
--- ATT.PrintName = "Apocalypse Prepped Stock"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "cursed.png", "mips smooth")
--- ATT.Category = "uplp_dbs_stock"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.RecoilRandomSideAdd = 0.3
--- ATT.SprintToFireTimeAdd = -0.03
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_stock_cursed")
-
--- ---------- uplp_dbs_stock_tactical
-
--- ATT = {}
-
--- ATT.PrintName = "PAWCO Stock"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
--- ATT.Category = "uplp_dbs_stock"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.RecoilRandomSideAdd = 0.3
--- ATT.SpeedAddSights = 0.05
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_stock_tactical")
-
--- ---------- uplp_dbs_stock_tactical_short
-
--- ATT = {}
-
--- ATT.PrintName = "PAWCO Sawed-off Stock"
--- ATT.Description = ATT.PrintName
-
--- ATT.Icon = Material(iconfolder .. "taccut.png", "mips smooth")
--- ATT.Category = "uplp_dbs_stock"
--- ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
--- ATT.RecoilAdd = 0.6
--- ATT.SwayAddSights = 0.5
--- ATT.AimDownSightsTimeAdd = -0.08
--- ATT.SprintToFireTimeAdd = -0.06
--- ATT.SpreadAddHipFire = -0.005
--- ATT.SpeedAddSights = 0.08
--- ATT.SpeedAdd = 0.02
-
--- ATT.Hook_TranslateAnimation = function(wep, anim)
---     if anim == "inspect" then return anim .. "_sawedoff" end
--- end
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
-
--- ARC9.LoadAttachment(ATT, "uplp_dbs_stock_tactical_short")

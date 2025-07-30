@@ -241,8 +241,8 @@ ATT.RecoilAdd = 0.5
 ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.18
 ATT.SprintToFireTimeAdd = -0.2
-ATT.SpeedAddSights = 0.1
-ATT.SpeedAdd = 0.04
+ATT.SpeedAddSights = 0.08
+ATT.SpeedAdd = 0.03
 ATT.DispersionSpreadAddHipFire = -0.015
 ATT.DispersionSpreadAddMove = -0.01
 

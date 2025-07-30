@@ -256,28 +256,28 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
      if attached["uplp_m590_rs_railsight"] then
         return {
-			 Pos = Vector(-2.64, -5.5, 0.36),
-			 Ang = Angle(0, 0, 0),
-			 Magnification = 1.15,
-			 ViewModelFOV = 55,
+             Pos = Vector(-2.64, -5.5, 0.36),
+             Ang = Angle(0, 0, 0),
+             Magnification = 1.15,
+             ViewModelFOV = 55,
         }
     end
 
      if attached["uplp_m590_rs_winged"] then
         return {
-			 Pos = Vector(-2.64, -5.5, 0.49),
-			 Ang = Angle(0, 0, 0),
-			 Magnification = 1.15,
-			 ViewModelFOV = 55,
+             Pos = Vector(-2.64, -5.5, 0.49),
+             Ang = Angle(0, 0, 0),
+             Magnification = 1.15,
+             ViewModelFOV = 55,
         }
     end
 
      if attached["uplp_m590_rs_ghost"] then
         return {
-			 Pos = Vector(-2.64, -5.5, 0.32),
-			 Ang = Angle(0, 0.6, 0),
-			 Magnification = 1.15,
-			 ViewModelFOV = 55,
+             Pos = Vector(-2.64, -5.5, 0.32),
+             Ang = Angle(0, 0.6, 0),
+             Magnification = 1.15,
+             ViewModelFOV = 55,
         }
     end
 
@@ -426,9 +426,9 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
                 return "reload_start_empty_only"
             end
 
-            if eles["uplp_r870_bar_serbu"] then 
-                swep.itwasemptystartbro = true 
-                return "reload_start" 
+            if eles["uplp_r870_bar_serbu"] then
+                swep.itwasemptystartbro = true
+                return "reload_start"
             end
         end
     elseif anim == "reload_finish" or anim == "reload_insert" then
@@ -438,14 +438,14 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         end
 
         if eles["uplp_r870_bar_serbu"] and anim == "reload_finish" and swep.itwasemptystartbro then
-            swep.itwasemptystartbro = nil 
-            return "reload_finish_emptyalt" 
+            swep.itwasemptystartbro = nil
+            return "reload_finish_emptyalt"
         end
     end
 
     if anim == "reload" or anim == "reload_empty" then
         -- if eles["uplp_m590_mag_5"] then return anim .. "_5" else
-        if eles["uplp_r870_mag_6"] then return anim .. "_6" 
+        if eles["uplp_r870_mag_6"] then return anim .. "_6"
         elseif eles["uplp_m590_mag_10"] then return anim .. "_10" end
     end
 
@@ -462,7 +462,7 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         MinProgress = 0.75,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "rack_1.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -480,8 +480,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.6,
-		FireASAP = true,
+        MinProgress = 0.6,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
@@ -534,7 +534,7 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 43 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
@@ -571,7 +571,7 @@ SWEP.Animations = {
 
             { s = pathUTC .. "cloth_2.ogg", t = 78 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
@@ -601,7 +601,7 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 43 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
@@ -638,7 +638,7 @@ SWEP.Animations = {
 
             { s = pathUTC .. "cloth_2.ogg", t = 78 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 29/30},
             {hide = 0, t = 33/30}
@@ -668,7 +668,7 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 58 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 66 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 70 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 32/30},
             {hide = 0, t = 39/30}
@@ -705,7 +705,7 @@ SWEP.Animations = {
 
             { s = pathUTC .. "cloth_2.ogg", t = 90 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 92 / 30, c = ca, v = 0.8 },
-        
+
             {hide = 0, t = 0},
             {hide = 1, t = 32/30},
             {hide = 0, t = 39/30}
@@ -718,7 +718,7 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-	
+
     ["reload_start"] = {
         Source = "reload_start",
         RestoreAmmo = 1,
@@ -923,7 +923,7 @@ SWEP.AttachmentElements = {
     ["uplp_sg_shell_orange"] = { Bodygroups = { { 9, 4 } } },
     ["uplp_sg_shell_yellow"] = { Bodygroups = { { 9, 5 } } },
 
-	-- BARRELS
+    -- BARRELS
     ["uplp_m590_bar_short"] = {
         Bodygroups = { { 1, 0 }, { 4, 1 } },
         AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 19.5), Icon_Offset = Vector(-3.25, 0, 0) },
@@ -934,30 +934,30 @@ SWEP.AttachmentElements = {
         AttPosMods = { [4] = { Pos = Vector(-0.1, 0.015, 25.4), Icon_Offset = Vector(1, 0, 0) },
     }},
 
-	-- PUMPS
+    -- PUMPS
     ["uplp_m590_handle_strap"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_m590_handle_flash"] = { Bodygroups = { { 2, 2 } } },
     ["uplp_m590_handle_magpul"] = { Bodygroups = { { 2, 3 } } },
 
-	-- STOCKS
+    -- STOCKS
     ["uplp_m590_stock_short"] = { Bodygroups = { { 3, 1 } } },
     ["uplp_m590_stock_magpul"] = { Bodygroups = { { 3, 2 } } },
     ["uplp_m590_stock_buffer"] = { Bodygroups = { { 3, 3 } } },
 
-	-- REAR & SIGHTS & RAILS
+    -- REAR & SIGHTS & RAILS
     ["uplp_m590_rs_railsight"] = { Bodygroups = { { 4, 4 }, { 5, 1 } } },
     ["uplp_m590_rs_ghost"] = { Bodygroups = { { 4, 2 }, { 5, 2 } } },
     ["uplp_m590_rs_winged"] = { Bodygroups = { { 4, 3 }, { 5, 3 } } },
 
-	-- HEATSHIELD
+    -- HEATSHIELD
     ["uplp_m590_heatshield"] = { Bodygroups = { { 6, 1 } } },
 
-	-- SHELL HOLDERS
+    -- SHELL HOLDERS
     ["uplp_m590_shellholder"] = { Bodygroups = { { 7, 1 } } }, -- Use bodygroup modifications to alter depending on SG shell type
 
-	-- MAGAZINES
-	["uplp_m590_mag_10"] = { Bodygroups = { { 0, 1 }, { 8, 1 } } },
-	["uplp_m590_mag_5"] = { Bodygroups = { { 0, 1 }, { 8, 2 } } },
+    -- MAGAZINES
+    ["uplp_m590_mag_10"] = { Bodygroups = { { 0, 1 }, { 8, 1 } } },
+    ["uplp_m590_mag_5"] = { Bodygroups = { { 0, 1 }, { 8, 2 } } },
 }
 
 SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
@@ -1061,7 +1061,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-0.1, -1, 8),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
@@ -1070,7 +1070,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(-0.1, 2.5, 1),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 
     -- Cosmetic shit

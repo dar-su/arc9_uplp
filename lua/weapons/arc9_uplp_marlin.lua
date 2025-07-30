@@ -81,35 +81,53 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 102
-SWEP.DamageMin = 42
+SWEP.DamageMax = 68
+SWEP.DamageMin = 34
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
-    [HITGROUP_CHEST] = 1,
-    [HITGROUP_STOMACH] = 0.8,
-    [HITGROUP_LEFTARM] = 0.9,
-    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_CHEST] = 1.25,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
     [HITGROUP_LEFTLEG] = 0.9,
     [HITGROUP_RIGHTLEG] = 0.9,
 }
 
 
-SWEP.Penetration = 45 * 1.5 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 12 * 2 -- How much kick things will have when hit
+SWEP.Penetration = 40 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 12 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 70 / ARC9.HUToM
+SWEP.RangeMax = 50 / ARC9.HUToM
+
+SWEP.CurvedDamageScaling = true
+function SWEP:Hook_GetDamageAtRange(data)
+    local d = self:GetDamageDeltaAtRange(data.range)
+
+    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
+    local num = self:GetProcessedValue("Num")
+
+    if self:GetProcessedValue("DistributeDamage", true) then
+        dmgv = dmgv / num
+    elseif self:GetProcessedValue("NormalizeNumDamage", true) then
+        dmgv = dmgv / (num / self.Num)
+    end
+
+    data.dmg = dmgv
+    return data
+end
+
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 410 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 350 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
-SWEP.Ammo = "ar2" -- What ammo type this gun uses.
+SWEP.Ammo = "357" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 7
@@ -123,25 +141,27 @@ SWEP.EjectDelay = 0.1
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.5
-SWEP.RecoilSide = 1.5
+SWEP.RecoilUp = 3
+SWEP.RecoilSide = 3
 
-SWEP.RecoilRandomUp = 1.2
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 0.5
 
 SWEP.RecoilRise = 1
 SWEP.MaxRecoilBlowback = 1
 SWEP.RecoilPunch = 1
-SWEP.RecoilAutoControl = 0
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 1
 
 SWEP.RecoilMultBipod = 0.4
 
+SWEP.RecoilAddRecoil = 0.5
+SWEP.RecoilRandomSideAddRecoil = 1
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.2
+SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
@@ -168,9 +188,9 @@ SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 
-SWEP.RecoilDissipationRate = 1
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 1
+SWEP.RecoilDissipationRate = 10
+SWEP.RecoilResetTime = 0.4
+SWEP.RecoilPerShot = 1 / 4
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
@@ -178,15 +198,15 @@ SWEP.Speed = 0.8
 SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.5
 
-SWEP.AimDownSightsTime = 0.39
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.4
+SWEP.SprintToFireTime = 0.42
 
 SWEP.BarrelLength = 50
 
 SWEP.SwayMultSights = 0.75
 
 -- Shooting and Firemodes
-SWEP.RPM = 450 -- How fast gun shoot
+SWEP.RPM = 360 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -233,7 +253,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
     end
 end
 
-SWEP.LaserCorrectBySightAng = false 
+SWEP.LaserCorrectBySightAng = false
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(16.5, 50, 5)
@@ -391,8 +411,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.8,
-		FireASAP = true,
+        MinProgress = 0.8,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
             {s = pathUTREAL .. "cycle1.ogg",          t = 0.2},
@@ -405,12 +425,12 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		Mult = 0.8,
-		FireASAP = true,
+        Mult = 0.8,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
-        IKTimeLine = { 
+        IKTimeLine = {
             { t = 0, lhik = 0 },
             { t = 0.15, lhik = 0 },
             { t = 0.45, lhik = 1 },
@@ -419,11 +439,11 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
-		Mult = 0.8,
+        Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
-        IKTimeLine = { 
+        IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.05, lhik = 1 },
             { t = 0.5, lhik = 0 },
@@ -432,12 +452,12 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
-		Mult = 0.8,
-		FireASAP = true,
+        Mult = 0.8,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
-        IKTimeLine = { 
+        IKTimeLine = {
             { t = 0, lhik = 0 },
             { t = 0.15, lhik = 0 },
             { t = 0.45, lhik = 1 },
@@ -446,11 +466,11 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
-		Mult = 0.8,
+        Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
-        IKTimeLine = { 
+        IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.05, lhik = 1 },
             { t = 0.5, lhik = 0 },
@@ -633,14 +653,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local barsup, barlong, barshort, blk, rail, tachg = eles["uplp_marlin_brl_supp"], eles["uplp_marlin_brl_long"], eles["uplp_marlin_brl_short"], eles["uplp_marlin_skin_black"] or eles["uplp_marlin_skin_gold"], eles["uplp_marlin_rs_railsight"] or eles["uplp_marlin_rs_railsight_long"] or eles["uplp_optic_used"], eles["uplp_marlin_hg_tac"] or eles["uplp_marlin_hg_tac_cover"]
 
     if blk then
-        if barshort then mdl:SetBodygroup(3, 3) 
-        elseif !barsup and !barlong then mdl:SetBodygroup(3, 1) end 
+        if barshort then mdl:SetBodygroup(3, 3)
+        elseif !barsup and !barlong then mdl:SetBodygroup(3, 1) end
     end
 
     if barlong then mdl:SetBodygroup(5, rail and 5 or 1)
     elseif barshort then mdl:SetBodygroup(5, rail and 6 or 2)
     elseif barsup then mdl:SetBodygroup(5, rail and 7 or 3) end
-    
+
     if eles["uplp_marlin_stock_ammo"] then
         if eles["uplp_marlin_stock_sniper"] then mdl:SetBodygroup(8, 2)
         elseif eles["uplp_marlin_stock_tac"] then mdl:SetBodygroup(8, 3) end
@@ -699,7 +719,7 @@ SWEP.AttachmentElements = {
     ["uplp_marlin_hg_ammo3"] = { Bodygroups = { { 7, 3 } } },
 
     ["uplp_marlin_stock_ammo"] = { Bodygroups = { { 8, 1 } } }, -- snip 2, tac 3
-    
+
     ["uplp_marlin_skin_black"] = { Bodygroups = { { 0, 1 } } },
     ["uplp_marlin_skin_gold"] = { Bodygroups = { { 0, 2 } } },
 
@@ -792,7 +812,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.4, 6),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
@@ -801,7 +821,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 2, -7),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_appearance"),
@@ -810,7 +830,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -1.15, -0.5),
         Ang = Angle(90, 90, 180),
-		CosmeticOnly = true,
+        CosmeticOnly = true,
     },
 
     -- Cosmetic shit
