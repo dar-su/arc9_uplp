@@ -2321,10 +2321,9 @@ L["uplp_aug_mag_919_40.printname"] = "40 Rondas 9×19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9×19mm"
 L["uplp_aug_mag_919_40.description"] = "Convierte la AW-UG en la AW-MP, una variante de pistola ametralladora con recámara de 9×19mm.\nEquipado con un <color=175,175,255>Cargador extendido de 40 rondas</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 SP"
+L["uplp_aug_mag_300_10.printname"] = "10 Rondas .300 BLK"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 SP especializado</color>.\nRestringe el arma a <color=255,100,100>sólo semi-automático</color>."
--- ".300 Sound Proof"
+L["uplp_aug_mag_300_10.description"] = "Cargador acortado de 10 balas para la AW-UG.\nCargado con un <color=255,255,100>cartucho .300 BLK especializado</color>.\nRestringe el arma a <color=255,100,100>sólo semi-automático</color>."
 
 ////// Stocks
 L["uplp_aug_stock_white.printname"] = "Culata Blanca"
@@ -3081,7 +3080,7 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 ////// Stocks
 -- L["uplp_marlin_stock_wood.printname"] = "Wooden Stock"
 -- L["uplp_marlin_stock_wood.compactname"] = "Wood"
--- L["uplp_marlin_stock_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
+-- L["uplp_marlin_stock_wood.description"] = "Modern wooden stock resembling the earlier Model 94 and its variants."
 
 -- L["uplp_marlin_stock_poly.printname"] = "Polymer Stock"
 -- L["uplp_marlin_stock_poly.compactname"] = "Polymer"

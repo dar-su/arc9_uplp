@@ -2334,10 +2334,9 @@ L["uplp_aug_mag_919_40.printname"] = "40-зарядный 9×19мм"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9×19мм"
 L["uplp_aug_mag_919_40.description"] = "Преобразует AW-UG в AW-MP, вариант пистолета-пулемёта под патрон 9×19мм.\nИспользует <color=175,175,255>40-зарядный расширенный магазин</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_300_10.printname"] = "10-зарядный .300 SP"
+L["uplp_aug_mag_300_10.printname"] = "10-зарядный .300 BLK"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "Укороченный 10-зарядный магазин для AW-UG.\nИспользует <color=255,255,100>специальный патрон .300 SP</color>.\nТолько <color=255,100,100>полуавтоматический режим</color>."
--- ".300 Sound Proof"
+L["uplp_aug_mag_300_10.description"] = "Укороченный 10-зарядный магазин для AW-UG.\nИспользует <color=255,255,100>специальный патрон .300 BLK</color>.\nТолько <color=255,100,100>полуавтоматический режим</color>."
 
 ////// Stocks
 L["uplp_aug_stock_white.printname"] = "Белая ложа"
@@ -3095,7 +3094,7 @@ L["uplp_pkm_handguard.description"] = "Тактическое цевьё с ни
 ////// Stocks
 -- L["uplp_marlin_stock_wood.printname"] = "Wooden Stock"
 -- L["uplp_marlin_stock_wood.compactname"] = "Wood"
--- L["uplp_marlin_stock_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
+-- L["uplp_marlin_stock_wood.description"] = "Modern wooden stock resembling the earlier Model 94 and its variants."
 
 -- L["uplp_marlin_stock_poly.printname"] = "Polymer Stock"
 -- L["uplp_marlin_stock_poly.compactname"] = "Polymer"

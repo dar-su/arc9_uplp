@@ -2336,10 +2336,9 @@ L["uplp_aug_mag_919_40.printname"] = "40-Round 9×19mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9×19mm"
 L["uplp_aug_mag_919_40.description"] = "Converts the AW-UG into the AW-MP, a machine pistol variant chambered in 9×19mm.\nEquipped with a <color=175,175,255>40-round extended magazine</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_300_10.printname"] = "10-Round .300 SP"
+L["uplp_aug_mag_300_10.printname"] = "10-Round .300 BLK"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 SP cartridge</color>.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
--- ".300 Sound Proof"
+L["uplp_aug_mag_300_10.description"] = "10-round shortened magazine for the AW-UG.\nLoaded with a <color=255,255,100>specialized .300 BLK cartridge</color>.\nRestricts the weapon to <color=255,100,100>semi-automatic only</color>."
 
 ////// Stocks
 L["uplp_aug_stock_white.printname"] = "White Stock"
@@ -3135,7 +3134,7 @@ L["uplp_marlin_hg_tac_cover.description"] = "Tactical handguard from ApexCore Ar
 ////// Stocks
 L["uplp_marlin_stock_wood.printname"] = "Wooden Stock"
 L["uplp_marlin_stock_wood.compactname"] = "Wood"
-L["uplp_marlin_stock_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
+L["uplp_marlin_stock_wood.description"] = "Modern wooden stock resembling the earlier Model 94 and its variants."
 
 L["uplp_marlin_stock_poly.printname"] = "Polymer Stock"
 L["uplp_marlin_stock_poly.compactname"] = "Polymer"
@@ -3198,3 +3197,12 @@ L["uplp_marlin_rs_railsight.description"] = "Top-mounted rail for optics with bu
 L["uplp_marlin_rs_railsight_long.printname"] = "Extended Top Rail with Ring Sight"
 L["uplp_marlin_rs_railsight_long.compactname"] = "Ext. Rail"
 L["uplp_marlin_rs_railsight_long.description"] = "Top-mounted extended rail for bigger optics with built-in front and rear sight."
+
+//////////////////// AR-57
+L["uplp_weapon_ar57"] = "MCAR-57"
+
+L["uplp_weapon_ar57_desc"] = "Designed in 2008, the MCAR-57 (Magazine Converted AR) is essentially a modified upper receiver for AR-15 rifles designed to utilize top-mounted 5.7×28mm rounds. The MCAR is a fast-firing, very deadly CQB beast perfect for fans of the AR-15."
+
+L["uplp_weapon_ar57_real"] = "AR-57"
+
+L["uplp_weapon_ar57_manufacturer"] = "AR57 LLC"

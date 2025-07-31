@@ -2332,10 +2332,9 @@ L["uplp_aug_mag_919_40.printname"] = "40-Patroner 9 × 19 mm"
 L["uplp_aug_mag_919_40.compactname"] = "40R 9 × 19 mm"
 L["uplp_aug_mag_919_40.description"] = "Konverterar AW-UG till AW-MP, en kulsprutepistol version matad med 9 × 19 mm-patroner.\nUtrustad med ett  <color=175,175,255>förstorat 40-patronersmagasin</color>." .. changeammo.pistol
 
-L["uplp_aug_mag_300_10.printname"] = "10-Patroner .300 SP"
+L["uplp_aug_mag_300_10.printname"] = "10-Patroner .300 BLK"
 L["uplp_aug_mag_300_10.compactname"] = "10R .300"
-L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-UG.\nLaddad med <color=255,255,100>specialiserad .300 SP-patroner</color>.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
--- ".300 Sound Proof"
+L["uplp_aug_mag_300_10.description"] = "Förkortat 10-patronersmagasin till AW-UG.\nLaddad med <color=255,255,100>specialiserad .300 BLK-patroner</color>.\nBegränsar vapnet till <color=255,100,100>endast halvautomat</color>."
 
 ////// Stocks
 L["uplp_aug_stock_white.printname"] = "Vit Kolv"
@@ -3043,111 +3042,111 @@ L["uplp_dbs_stock_tactical_short.compactname"] = "PAWCO A"
 L["uplp_dbs_stock_tactical_short.description"] = "Avsågad version av den moderna kolven av polymer från PAWCO.\n\n<color=255,100,100>Varning</color>: PAWCO är inte ansvarig ifall folk ser dig med detta och du blir skadad som en konsekvens."
 
 //////////////////// M134 Minigun
--- L["uplp_weapon_minigun"] = "O.A. Minigun"
+L["uplp_weapon_minigun"] = "O.A. Minigun"
 
--- L["uplp_weapon_minigun_desc"] = "Omega Arms were contracted by the U.S. military during the 60's to create a door-mounted machine gun. They delivered tenfold, creating the MG-RB (\"Machine Gun, Rotating Barrel\"), while also making more lightweight, man-portable variants of it with reduced rates of fire."
+L["uplp_weapon_minigun_desc"] = "Omega Arms fick ett kontrakt av den amerikanska militären under 60-talet för att skapa en dörrmonterad kulspruta. De levererade tiofaldigt och skapade MG-RB (\"Machine Gun, Rotating Barrel\"), men gjorde också en lättare, manövrerbar variant med sänkt eldhastighet."
 
--- L["uplp_weapon_minigun_real"] = "M134 Minigun"
+L["uplp_weapon_minigun_real"] = "M134 Minigun"
 
--- L["uplp_weapon_minigun_manufacturer"] = "General Electric"
+L["uplp_weapon_minigun_manufacturer"] = "General Electric"
 
 //////////////////// Marlin Model 1895
--- L["uplp_weapon_marlin"] = "Model 94"
+L["uplp_weapon_marlin"] = "Modell 94"
 
--- L["uplp_weapon_marlin_desc"] = "In 1894, Anaconda Industrial Tooling provided the world with its lever-action rifle, the Model 94, chambered in the powerful .45/70 cartridge, providing higher damage to the chest and head."
+L["uplp_weapon_marlin_desc"] = "I 1894 erbjöd Anaconda Industrial Tooling världen dess bygelrepetergevär, Modell 94, matad med den kraftfulla .45/70-patronen som erbjuder högre skada på bröst och huvud. "
 
--- L["uplp_weapon_marlin_real"] = "Marlin Model 1895"
+L["uplp_weapon_marlin_real"] = "Marlin Model 1895"
 
--- L["uplp_weapon_marlin_manufacturer"] = "Marlin Firearms"
+L["uplp_weapon_marlin_manufacturer"] = "Marlin Firearms"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_marlin_brl_long.printname"] = "Long Barrel"
--- L["uplp_marlin_brl_long.compactname"] = "Long"
--- L["uplp_marlin_brl_long.description"] = "Aftermarket long barrel for the Model 94."
+L["uplp_marlin_brl_long.printname"] = "Lång Pipa"
+L["uplp_marlin_brl_long.compactname"] = "Lång"
+L["uplp_marlin_brl_long.description"] = "Eftermarknads lång pipa till Modell 94:an."
 
--- L["uplp_marlin_brl_short.printname"] = "Short Barrel"
--- L["uplp_marlin_brl_short.compactname"] = "Short"
--- L["uplp_marlin_brl_short.description"] = "Factory-made short barrel for the Model 94."
+L["uplp_marlin_brl_short.printname"] = "Kort Pipa"
+L["uplp_marlin_brl_short.compactname"] = "Kort"
+L["uplp_marlin_brl_short.description"] = "Fabrikstillverkad kort pipa till Modell 94:an."
 
--- L["uplp_marlin_brl_supp.printname"] = "Whisper Barrel"
--- L["uplp_marlin_brl_supp.compactname"] = "Whisper"
--- L["uplp_marlin_brl_supp.description"] = "Modernized, integrally suppressed barrel for the Model 94."
+L["uplp_marlin_brl_supp.printname"] = "\"Whisper\"-Pipa"
+L["uplp_marlin_brl_supp.compactname"] = "Whisper"
+L["uplp_marlin_brl_supp.description"] = "Modern, internt ljuddämpad pipa till Modell 94:an."
 
 ////// Handguards
--- L["uplp_marlin_hg_wood.printname"] = "Wooden Handguard"
--- L["uplp_marlin_hg_wood.compactname"] = "Wood"
--- L["uplp_marlin_hg_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
+L["uplp_marlin_hg_wood.printname"] = "Trähandskydd"
+L["uplp_marlin_hg_wood.compactname"] = "Trä"
+L["uplp_marlin_hg_wood.description"] = "Modernt trähandskydd som liknar den tidiga Modell 94:an och dess varianter."
 
--- L["uplp_marlin_hg_poly.printname"] = "Polymer Handguard"
--- L["uplp_marlin_hg_poly.compactname"] = "Polymer"
--- L["uplp_marlin_hg_poly.description"] = "Modernized polymer handguard for the Model 94."
+L["uplp_marlin_hg_poly.printname"] = "Polymer Handskydd"
+L["uplp_marlin_hg_poly.compactname"] = "Polymer"
+L["uplp_marlin_hg_poly.description"] = "Modernt handskydd av polymer till Modell 94:an."
 
--- L["uplp_marlin_hg_tac.printname"] = "PAWCO Handguard"
--- L["uplp_marlin_hg_tac.compactname"] = "PAWCO"
--- L["uplp_marlin_hg_tac.description"] = "Tactical handguard from PAWCO made for the Model 94."
+L["uplp_marlin_hg_tac.printname"] = "PAWCO-Handskydd"
+L["uplp_marlin_hg_tac.compactname"] = "PAWCO"
+L["uplp_marlin_hg_tac.description"] = "Taktiskt handskydd från PAWCO gjort till Modell 94:an."
 
--- L["uplp_marlin_hg_tac_cover.printname"] = "ApexCore Arsenal Handguard"
--- L["uplp_marlin_hg_tac_cover.compactname"] = "ApexCore"
--- L["uplp_marlin_hg_tac_cover.description"] = "Tactical handguard from ApexCore Arsenal made for the Model 94."
+L["uplp_marlin_hg_tac_cover.printname"] = "ApexCore Arsenal-Handskydd"
+L["uplp_marlin_hg_tac_cover.compactname"] = "ApexCore"
+L["uplp_marlin_hg_tac_cover.description"] = "Taktiskt handskydd från ApexCore Arsenal gjort till Modell 94:an."
 
 ////// Stocks
--- L["uplp_marlin_stock_wood.printname"] = "Wooden Stock"
--- L["uplp_marlin_stock_wood.compactname"] = "Wood"
--- L["uplp_marlin_stock_wood.description"] = "Modern wooden handguard resembling the earlier Model 94 and its variants."
+L["uplp_marlin_stock_wood.printname"] = "Träkolv"
+L["uplp_marlin_stock_wood.compactname"] = "Wood"
+L["uplp_marlin_stock_wood.description"] = "Modern träkolv som liknar den tidiga Modell 94:an och dess varianter."
 
--- L["uplp_marlin_stock_poly.printname"] = "Polymer Stock"
--- L["uplp_marlin_stock_poly.compactname"] = "Polymer"
--- L["uplp_marlin_stock_poly.description"] = "Modernized polymer stock for the Model 94."
+L["uplp_marlin_stock_poly.printname"] = "Polymer Kolv"
+L["uplp_marlin_stock_poly.compactname"] = "Polymer"
+L["uplp_marlin_stock_poly.description"] = "Modern kolv av polymer till Modell 94:an."
 
--- L["uplp_marlin_stock_cut_wood.printname"] = "Sawed-Off Wooden Stock"
--- L["uplp_marlin_stock_cut_wood.compactname"] = "Sawed-Off"
--- L["uplp_marlin_stock_cut_wood.description"] = "Sawed-off wooden stock for the Model 94."
+L["uplp_marlin_stock_cut_wood.printname"] = "Avsågad Träkolv"
+L["uplp_marlin_stock_cut_wood.compactname"] = "Avsågad"
+L["uplp_marlin_stock_cut_wood.description"] = "Avsågad träkolv till Modell 94:an."
 
--- L["uplp_marlin_stock_cut_poly.printname"] = "Sawed-off Polymer Stock"
--- L["uplp_marlin_stock_cut_poly.compactname"] = "Sawed Poly"
--- L["uplp_marlin_stock_cut_poly.description"] = "Sawed-off polymer stock for the Model 94."
+L["uplp_marlin_stock_cut_poly.printname"] = "Avsågad Polymer Kolv"
+L["uplp_marlin_stock_cut_poly.compactname"] = "Avs. Poly."
+L["uplp_marlin_stock_cut_poly.description"] = "Avsågad kolv av polymer till Modell 94:an."
 
--- L["uplp_marlin_stock_sniper.printname"] = "Eagle Eye Stock"
--- L["uplp_marlin_stock_sniper.compactname"] = "Eagle Eye"
--- L["uplp_marlin_stock_sniper.description"] = "Homemade modified polymer stock with a raised cheekrest."
+L["uplp_marlin_stock_sniper.printname"] = "\"Eagle Eye\"-Kolv"
+L["uplp_marlin_stock_sniper.compactname"] = "Eagle Eye"
+L["uplp_marlin_stock_sniper.description"] = "Hemmagjord, modifierad kolv av polymer med höjd kindstöd."
 
--- L["uplp_marlin_stock_tac.printname"] = "PAWCO Stock"
--- L["uplp_marlin_stock_tac.compactname"] = "PAWCO"
--- L["uplp_marlin_stock_tac.description"] = "Tactical stock from PAWCO made for the Model 94."
+L["uplp_marlin_stock_tac.printname"] = "PAWCO-Kolv"
+L["uplp_marlin_stock_tac.compactname"] = "PAWCO"
+L["uplp_marlin_stock_tac.description"] = "Taktiskt kolv från PAWCO gjord till Modell 94:an."
 
 ////// Internals
--- L["uplp_marlin_bolt_light.description"] = "Replaces the internal parts with more lightweight parts."
+L["uplp_marlin_bolt_light.description"] = "Ersätter interna delarna med mycket mer lättare delar."
 
--- L["uplp_marlin_bolt_heavy.description"] = "Replaces the internal parts with more reinforced parts."
+L["uplp_marlin_bolt_heavy.description"] = "Ersätter interna delarna med förstärkta och starkare delar."
 
 ////// Extras
--- L["uplp_marlin_hg_ammo1.printname"] = "Handguard Cartridge Holder I"
--- L["uplp_marlin_hg_ammo1.compactname"] = "Holder I"
--- L["uplp_marlin_hg_ammo1.description"] = "Installs a cartridge holder on your handguard."
+L["uplp_marlin_hg_ammo1.printname"] = "Patronficka till Handskydd I"
+L["uplp_marlin_hg_ammo1.compactname"] = "Ficka I"
+L["uplp_marlin_hg_ammo1.description"] = "Installerar en patronficka på ditt handskydd."
 
--- L["uplp_marlin_hg_ammo2.printname"] = "Handguard Cartridge Holder II"
--- L["uplp_marlin_hg_ammo2.compactname"] = "Holder II"
+L["uplp_marlin_hg_ammo2.printname"] = "Patronficka till Handskydd II"
+L["uplp_marlin_hg_ammo2.compactname"] = "Ficka II"
 
--- L["uplp_marlin_hg_ammo3.printname"] = "Handguard Cartridge Holder III"
--- L["uplp_marlin_hg_ammo3.compactname"] = "Holder III"
+L["uplp_marlin_hg_ammo3.printname"] = "Patronficka till Handskydd III"
+L["uplp_marlin_hg_ammo3.compactname"] = "Ficka III"
 
--- L["uplp_marlin_stock_ammo.printname"] = "Stock Cartridge Holder"
--- L["uplp_marlin_stock_ammo.compactname"] = "Holder"
--- L["uplp_marlin_stock_ammo.description"] = "Installs a cartridge holder on your stock."
+L["uplp_marlin_stock_ammo.printname"] = "Patronficka till Kolv"
+L["uplp_marlin_stock_ammo.compactname"] = "Ficka"
+L["uplp_marlin_stock_ammo.description"] = "Installerar en patronficka på din kolv."
 
--- L["uplp_marlin_skin_black.printname"] = "Tactical Black"
--- L["uplp_marlin_skin_black.compactname"] = "Black"
--- L["uplp_marlin_skin_black.description"] = "Replaces the chrome receiver and barrel with matte black versions."
+L["uplp_marlin_skin_black.printname"] = "Taktiskt Svart"
+L["uplp_marlin_skin_black.compactname"] = "Svart"
+L["uplp_marlin_skin_black.description"] = "Ersätter lådan och pipan av krom med mattsvarta versioner."
 
--- L["uplp_marlin_skin_gold.printname"] = "Tactical Black w/ Gold Internals"
--- L["uplp_marlin_skin_gold.compactname"] = "Black+Gold"
--- L["uplp_marlin_skin_gold.description"] = "Replaces the chrome receiver and barrel with matte black versions, and the internals with gold-plated ones."
+L["uplp_marlin_skin_gold.printname"] = "Taktiskt Svart med Gulddetaljer"
+L["uplp_marlin_skin_gold.compactname"] = "Svart+Guld"
+L["uplp_marlin_skin_gold.description"] = "Ersätter lådan och pipan av krom med mattsvarta versioner, och interna delarna med gulddetaljerade versioner."
 
--- L["uplp_marlin_rs_railsight.printname"] = "Top Rail with Ring Sight"
--- L["uplp_marlin_rs_railsight.compactname"] = "Rail"
--- L["uplp_marlin_rs_railsight.description"] = "Top-mounted rail for optics with built-in front and rear sight."
+L["uplp_marlin_rs_railsight.printname"] = "Toppmonterad Skena med Ringsikte"
+L["uplp_marlin_rs_railsight.compactname"] = "Skena"
+L["uplp_marlin_rs_railsight.description"] = "Toppmonterad skena till riktmedel med inbyggd stolpkorn och bakre sikte."
 
--- L["uplp_marlin_rs_railsight_long.printname"] = "Extended Top Rail with Ring Sight"
--- L["uplp_marlin_rs_railsight_long.compactname"] = "Ext. Rail"
--- L["uplp_marlin_rs_railsight_long.description"] = "Top-mounted extended rail for bigger optics with built-in front and rear sight."
+L["uplp_marlin_rs_railsight_long.printname"] = "Förlängd Toppmonterad Skena med Ringsikte"
+L["uplp_marlin_rs_railsight_long.compactname"] = "Förl. Skena"
+L["uplp_marlin_rs_railsight_long.description"] = "Toppmonterad förlängd skena till större riktmedel med inbyggd stolpkorn och bakre sikte."
