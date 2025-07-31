@@ -45,7 +45,7 @@ function ENT:Detonate()
         // Overpressure radius
         util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 256, 200)
 
-        self:EmitSound("weapons/underwater_explode3.wav", 100, _, _, _, _, _, ARC9.EveryoneRecipientFilter)
+        self:EmitSound("weapons/underwater_explode3.wav", 100, 100, 1, CHAN_AUTO, 0, 0, ARC9.EveryoneRecipientFilter)
     else
         ParticleEffect("explosion_grenade", self:GetPos(), Angle(0, 0, 0), nil)
 
@@ -54,7 +54,7 @@ function ENT:Detonate()
         -- // Shrapnel radius
         -- util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 1024, 100)
 
-        self:EmitSound(table.Random(self.ExplosionSounds), 130, _, _, _, _, _, ARC9.EveryoneRecipientFilter)
+        self:EmitSound(table.Random(self.ExplosionSounds), 130, 100, 1, CHAN_AUTO, 0, 0, ARC9.EveryoneRecipientFilter)
         
         if self.GrenadePos == nil then
             self.GrenadePos = self:GetPos()
@@ -69,7 +69,7 @@ function ENT:Detonate()
             mask = MASK_SOLID_BRUSHONLY
         })
         if trace.Hit then
-            self:EmitSound(self.DebrisSounds[math.random(1,#self.DebrisSounds)], 85, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
+            self:EmitSound(self.DebrisSounds[math.random(1,#self.DebrisSounds)], 85, 100, 1, CHAN_AUTO, 0, 0, ARC9.EveryoneRecipientFilter)
         end
     end
 
