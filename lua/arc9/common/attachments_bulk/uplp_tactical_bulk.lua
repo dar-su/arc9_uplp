@@ -477,7 +477,7 @@ ATT.IKAnimationProxy = {
     ["fire_ubgl"] = {
         Source = "fire",
         EventTable = {
-            { s = "uplp_urban_temp/scar/mech-03.ogg", t = 0 },
+            { s = "uplp_urban_temp/scar/mech-03.wav", t = 0 },
         }
     },
     ["fire_empty_ubgl"] = {
