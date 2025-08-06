@@ -842,7 +842,9 @@ SWEP.AttachmentElements = {
     [2] = { Pos = Vector(0, -0.9, -1.65), },
     }},
     ["uplp_m9_receiver_a3"] = { Bodygroups = { { 0, 2 } } },
-    ["uplp_m9_receiver_92x"] = { Bodygroups = { { 0, 6 } } },
+    ["uplp_m9_receiver_92x"] = { Bodygroups = { { 0, 6 } }, AttPosMods = {
+    [3] = { Pos = Vector(0, -2.465, 6.2), },
+    }},
     ["uplp_m9_receiver_a3t"] = { Bodygroups = { { 0, 3 }, { 2, 1 } } },
     ["uplp_m9_receiver_sc"] = { Bodygroups = { { 0, 4 }, { 1, 2 } }, AttPosMods = {
     [3] = { Pos = Vector(0, -2.465, 9.5), },
