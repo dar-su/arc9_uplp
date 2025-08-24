@@ -101,22 +101,22 @@ $sequence "idle"{
 	fadeout 0.2
 }
 
+$sequence "idle2"{
+	"anims\idle_iron.smd"
+	fps 30
+}
+
 $sequence "firemode_pose" {
-	"anims\idle.smd"
-	"anims\idle_firemode.smd"
 	"anims\idle_iron.smd"
 	"anims\idle_firemode_iron.smd"
 	blend "firemode" 1 2
- 	blend "sights" 0 1
-	blendwidth 2
 	delta
 	autoplay
 	loop
-	fps 24
+	fps 30
 	snap
-	subtract "idle" 0
+	subtract "idle2" 0
 }
-
 $sequence "idle_empty"{
 	"anims\idle_empty.smd" 
 	"anims\idle_empty_iron.smd"

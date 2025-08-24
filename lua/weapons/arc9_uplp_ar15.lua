@@ -200,24 +200,22 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.275, -3, 0.35),
-     Ang = Angle(0.35, 0.125, -3),
+     Pos = Vector(-2.239, -3, 0.5),
+     Ang = Angle(0, -0.05, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
 
+local iironsightt = {
+    Pos = Vector(-2.239, -3, 0.5 - 0.125),
+    Ang = Angle(0, -0.05, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
-
-    if attached["uplp_ar15_rs_tall"] then
-        return {
-            Pos = Vector(-2.275, -3, 0.225),
-            Ang = Angle(0.35, 0.125, -3),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    end
-
+    if attached["uplp_ar15_rs_tall"] then return iironsightt end
 end
 
 -- Customization Menu Info
@@ -1088,7 +1086,7 @@ SWEP.Animations = {
         Source = "inspect",
         FireASAP = true,
         MinProgress = 0.925,
-        Mult = 1.2,
+        -- Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -1099,7 +1097,7 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.07, lhik = 0 },
             { t = 0.8, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
@@ -1109,7 +1107,7 @@ SWEP.Animations = {
         Source = "inspect_empty",
         FireASAP = true,
         MinProgress = 0.925,
-        Mult = 1.2,
+        -- Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -1120,7 +1118,7 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.07, lhik = 0 },
             { t = 0.8, lhik = 0 },
             { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
@@ -1184,6 +1182,15 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
     },
 }
+
+SWEP.Hook_TranslateSource = function(swep, anim)
+    if anim == "inspect" or anim == "inspect_empty" then
+        local eles = swep:GetElements()
+        if eles["uplp_ubgl_m203_rail"] or eles["uplp_grip_cqr"] or eles["uplp_ar15_mag_pmag60"] or eles["uplp_ar15_mag_drum"] then
+            return anim .. "_alt"
+        end
+    end
+end
 
 ---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
@@ -1391,7 +1398,7 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp", "uplp_ar15_reciever_a2"},
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, 0),
+        -- CorrectiveAng = Angle(0, 0, 0),
         Installed = "uplp_ar15_rs_m4",
         Pos = Vector(0.045, -0.2, 0.326),
         Ang = Angle(90, 90, 180),
@@ -1403,7 +1410,7 @@ SWEP.Attachments = {
         Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        CorrectiveAng = Angle(0.4, -0.4, 0),
+        -- CorrectiveAng = Angle(0, 0, 0),
         Pos = Vector(0.045, -0.1, 1.326),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),

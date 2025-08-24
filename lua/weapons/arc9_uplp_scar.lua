@@ -209,25 +209,24 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.37, -3, 0.015),
-     Ang = Angle(0.365, -0.1, -2.5),
+     Pos = Vector(-2.345, -3, 0.14),
+     Ang = Angle(0, -0.24, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
+}
+
+local iironsightt = {
+    Pos = Vector(-2.345, -3, 0.14 + 0.135),
+    Ang = Angle(0, -0.24 + 0.1, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
 }
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local att = self:GetElements()
     local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
 
-    if lowsight then
-        return {
-            Pos = Vector(-2.37, -3, 0.15),
-            Ang = Angle(0.365, 0, -2.5),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    end
-
+    if lowsight then return iironsightt end
 end
 
 -- Customization Menu Info
@@ -999,7 +998,7 @@ SWEP.Attachments = {
         Category = {"uplp_scar_rs", "uplp_ar15_rs", "uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
-        CorrectiveAng = Angle(0.35, -0.35, 0),
+        -- CorrectiveAng = Angle(0, 0, 0),
         Installed = "uplp_scar_is",
         RejectAttachments = {
         ["uplp_ar15_rs_carry"] = true,
@@ -1013,7 +1012,7 @@ SWEP.Attachments = {
         Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        CorrectiveAng = Angle(0.35, -0.35, 0),
+        -- CorrectiveAng = Angle(0, 0, 0),
         Pos = Vector(-0.06, -0.45, 2),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0, 0, 0),
