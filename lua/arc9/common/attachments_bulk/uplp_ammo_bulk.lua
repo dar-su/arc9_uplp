@@ -335,6 +335,7 @@ ATT.Hook_BulletImpact = function(wep,data)
                 CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, data.dmg:GetDamage() * 0.02)
             else
                 ent:Ignite(1.5, 0)
+                data.dmg:SetDamageType(DMG_BURN)
             end
         end
     end
