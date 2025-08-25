@@ -35,8 +35,9 @@ SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
--- SWEP.StandardPresets = {
--- }
+SWEP.StandardPresets = {
+    "[Ares]XQAAAQD3AQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmkmevSb+idjqmeDYU/YecSMk3WWm2Bm3Nsx3s5CbQ3JAJN78yHUk6/j7dMwxE4G+AOfn03BUtW7+VL+cOoRfi6+1upeWbZ5/N/He1vjXMIWEmbFqBbIIAaU5pescJmjIg8yAbBpxm4qQoj8ZMoUmpiyYFCLRYZRfdVYUX1qswEt/Qdb/zc8kbZ86TGiduWNCXsRuArHXmBEgQtHCS"
+}
 
 SWEP.DefaultBodygroups = "0000000000000000" -- Might as well prepare for the future
 
