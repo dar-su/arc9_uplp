@@ -345,16 +345,39 @@ $sequence "reload_empty_20" {
 
 
 $sequence "inspect" {
-	"anims\a9inspect.smd"
-	snap
-	fps 24
+	"anims\inspect_dum_h.smd"
+	// snap
+	fps 30
 }
 $sequence "inspect_empty" {
-	"anims\a9inspect_empty.smd"
-	snap
-	fps 24
+	"anims\inspect_dum_h_empty.smd"
+	// snap
+	fps 30
 }
 
+
+$sequence "inspect_l" {
+	"anims\inspect_dum_l.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_l" {
+	"anims\inspect_dum_l_empty.smd"
+	// snap
+	fps 30
+}
+
+
+$sequence "inspect_alt" {
+	"anims\inspect_dum_alt.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_alt" {
+	"anims\inspect_dum_alt_empty.smd"
+	// snap
+	fps 30
+}
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"

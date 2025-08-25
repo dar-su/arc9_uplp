@@ -751,17 +751,21 @@ SWEP.Animations = {
         Source = "inspect",
         FireASAP = true,
         MinProgress = 0.925,
+        -- Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 52 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 58 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -769,17 +773,21 @@ SWEP.Animations = {
         Source = "inspect_empty",
         FireASAP = true,
         MinProgress = 0.925,
+        -- Mult = 1.2,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 52 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 58 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 120 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.825, lhik = 0 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -840,6 +848,17 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
     },
 }
+
+SWEP.Hook_TranslateSource = function(swep, anim)
+    if anim == "inspect" or anim == "inspect_empty" then
+        local eles = swep:GetElements()
+        if eles["uplp_ubgl_m203_rail"] or eles["uplp_grip_cqr"] or eles["uplp_scar_mag_pmag60"] or eles["uplp_scar_mag_drum"] then
+            return anim .. "_alt"
+        elseif eles["uplp_ar15_mag"] then
+            return anim .. "_l"
+        end
+    end
+end
 
 ---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
