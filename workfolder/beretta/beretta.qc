@@ -7,6 +7,7 @@ $bodygroup "body" {
 	studio "9a4 tan.smd"
 	studio "92fs sword.smd"
 	studio "93r robo.smd"
+	studio "92x.smd"
 }   
 $bodygroup "irons" {
 	studio "irons def.smd"
