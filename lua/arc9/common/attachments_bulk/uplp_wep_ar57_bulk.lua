@@ -75,7 +75,7 @@ ATT.RecoilUpMult = 0.9
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMMult = 0.875
+ATT.RPMMult = 0.95
 
 ATT.Overheat = true
 ATT.HeatCapacityMult = 1 --

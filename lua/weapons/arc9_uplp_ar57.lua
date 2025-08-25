@@ -167,7 +167,7 @@ SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 35
 
 -- Shooting and Firemodes
-SWEP.RPM = 800 -- How fast gun shoot
+SWEP.RPM = 700 -- How fast gun shoot
 SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
@@ -231,7 +231,7 @@ SWEP.DropMagazineTime = 0.95
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, 10, -60)
+SWEP.DropMagazineVelocity = Vector(10, 20, -80)
 
 ---- Sounds
 
@@ -418,12 +418,6 @@ local mechh = {
     pathUT .. "mech-04.wav",
 }
 
-local mechh45 = {
-    pathUT .. "45/mech-01.wav",
-    pathUT .. "45/mech-02.wav",
-    pathUT .. "45/mech-03.wav",
-    pathUT .. "45/mech-04.wav",
-}
 
 local thetoggle = {{
     s = {
@@ -448,15 +442,15 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 3 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 9 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, c = ca },
+            { s = pathUT .. "chback.ogg", t = 4 / 30, c = ca, v = 1 },
+            { s = pathUT .. "chforward.ogg", t = 9.5 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_4.ogg", t = 30 / 60, c = ca, v = 0.6 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.5, lhik = 0 },
-            { t = 0.8, lhik = 1 },
+            { t = 0.01, lhik = 0 },
+            { t = 0.4, lhik = 0 },
+            { t = 0.7, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -497,12 +491,19 @@ SWEP.Animations = {
         MagSwapTime = 1.1,
         -- Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.25, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 32 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUT .. "magrel.ogg", t = 4 / 30, c = ca, v = 1 },
+            { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "magpouch.ogg", t = 20 / 30, v = 0.35 },
+            { s = pathUTC .. "movement-smg-04.ogg", t = 12 / 30, v = 1 },
+            { s = ")uplp_urban_temp/m249/beltdrag.ogg", t = 16 / 30, c = ca, v = 0.3 },
+
+            { s = pathUTC .. "movement-sniper-02.ogg", t = 28 / 30, v = 1 },
+            { s = pathUT .. "struggle.ogg", t = 39 / 30, c = ca, v = 1 },
+            { s = pathUT .. "magin.ogg", t = 56 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/bonk.ogg", t = 60 / 30, c = ca, v = 0.7 },
+
+            { s = pathUTC .. "cloth_4.ogg", t = 66 / 30, c = ca, v = 0.4 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.95},
@@ -525,13 +526,24 @@ SWEP.Animations = {
 		FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magin.ogg", t = 20 / 30 - 0.3, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "boltdrop.ogg", t = 32 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 42 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUT .. "magrel.ogg", t = 4 / 30, c = ca, v = 1 },
+            { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "magpouch.ogg", t = 20 / 30, v = 0.35 },
+            { s = pathUTC .. "movement-smg-04.ogg", t = 12 / 30, v = 1 },
+            { s = ")uplp_urban_temp/m249/beltdrag.ogg", t = 16 / 30, c = ca, v = 0.3 },
+
+            { s = pathUTC .. "movement-sniper-02.ogg", t = 28 / 30, v = 1 },
+            { s = pathUT .. "struggle.ogg", t = 39 / 30, c = ca, v = 1 },
+            { s = pathUT .. "magin.ogg", t = 56 / 30, c = ca, v = 1 },
+            { s = ")uplp_urban_temp/ak/bonk.ogg", t = 60 / 30, c = ca, v = 0.7 },
+
+            
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 62 / 30, v = 1 },
+            { s = pathUT .. "chback.ogg", t = 74 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chforward.ogg", t = 82 / 30, c = ca, v = 0.8 },
+
+            { s = pathUTC .. "cloth_4.ogg", t = 86 / 30, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.95},
@@ -556,11 +568,11 @@ SWEP.Animations = {
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 37 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 45 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
-            -- {hide = 1, t = 0},
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -654,7 +666,8 @@ SWEP.AttachmentElements = {
 
 
 SWEP.DefaultElements = {
-    "canshortstock"
+    "canshortstock",
+    -- "uplp_shortopticonly"
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -674,11 +687,19 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
+        RejectAttachments = {
+            ["uplp_optic_hhs1"] = true,
+            ["uplp_optic_kobra"] = true,
+            ["uplp_optic_dcl110"] = true,
+            ["uplp_optic_devom"] = true,
+            ["uplp_optic_halo_thermal"] = true,
+            ["uplp_optic_notacog"] = true,
+        },
         -- CorrectiveAng = Angle(0, 0, 0),
-        Pos = Vector(0.045, -0.62, -0.2),
+        Pos = Vector(0.045, -0.52, -0.2),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
     },
@@ -803,7 +824,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ar57_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 3 + 1.5, 4),
+        Pos = Vector(0, 3 + 1.5, 3.75),
         Ang = Angle(90, 90, 180),
     },
 
@@ -812,7 +833,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ar57_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1 + 1.5, 0.5),
+        Pos = Vector(0, 1 + 1.5, 0.25),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -820,7 +841,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ar57_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 1 + 1.5, 0.5),
+        Pos = Vector(0, -1 + 1.5, -2.5),
         Ang = Angle(90, 90, 180),
     },
 }
@@ -832,6 +853,7 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     ent:SetPoseParameter("magspring", 1-math.Clamp(loadedronds/50, 0, 1))
 end
 
+SWEP.ReloadInSights = false
 
 -- Moka's shit
 -- SWEP.Recoil = 1.5
