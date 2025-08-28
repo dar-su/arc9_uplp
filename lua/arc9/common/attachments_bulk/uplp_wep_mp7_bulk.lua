@@ -22,13 +22,14 @@ ATT.ActivateElements = {"uplp_mp7_stock_folded"}
 -- Positives
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.03
-ATT.SpeedMultSights = 1.05
+ATT.SpeedMultSights = 1.1
+ATT.SpreadAddHipFire = -0.004
 
 -- Negatives
-ATT.RecoilAdd = 0.1
+ATT.RecoilAdd = 0.2
 ATT.RecoilAutoControlMult = 1 / 1.25
 ATT.VisualRecoilMult = 1.25
-ATT.SwayMultSights = 1.25
+ATT.SwayMultSights = 1.5
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
@@ -58,7 +59,9 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_20.mdl"
 ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.01
 ATT.SpeedAdd = 0.01
-ATT.SwayMultSights = 0.6
+ATT.SpeedMultSights = 1.1
+ATT.SwayMultSights = 0.8
+ATT.SpreadAddHipFire = -0.008
 -- ATT.ReloadTimeMult = 0.9
 
 ATT.CustomPros = {

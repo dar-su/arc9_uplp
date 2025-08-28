@@ -72,8 +72,8 @@ ATT.HeatDissipation = 5 --
 -- ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.0075
--- ATT.RPMMultHot = 0.9
+ATT.SpreadAddHot = 0.009
+ATT.RPMMultHot = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_ar57_barrel_sd")
 
