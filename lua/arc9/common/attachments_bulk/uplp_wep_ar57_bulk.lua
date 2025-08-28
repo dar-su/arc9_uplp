@@ -18,33 +18,20 @@ ATT.Category = "uplp_ar57_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 15
 
--- -- Positives
--- ATT.SpreadAdd = -0.002
--- ATT.RangeMaxAdd = 35 / ARC9.HUToM
--- ATT.RangeMinAdd = 10 / ARC9.HUToM
--- ATT.PhysBulletMuzzleVelocityMult = 1.1
--- ATT.RecoilPerShot = 1 / 10
--- ATT.RecoilMult = 0.9
-
--- -- Negatives
--- ATT.SpreadAddHipFire = 0.003 + 0.002
--- ATT.SpreadAddRecoil = 0.003 * 0.75
--- ATT.AimDownSightsTimeAdd = 0.02*1.25
--- ATT.SprintToFireTimeAdd = 0.03*1.25
--- ATT.SpeedMultSights = 0.925
--- ATT.RPMAdd = -30
--- ATT.BarrelLengthAdd = 2
-
-
 -- Positives
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.3
+ATT.SpreadAdd = -0.002
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
+ATT.RangeMinAdd = 8 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RecoilPerShot = 1 / 24
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.1
+ATT.SpreadAddHipFire = 0.01
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.08
+ATT.SpeedMultSights = 0.925
 ATT.BarrelLengthAdd = 5
+ATT.SwayMultSights = 1.25
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
@@ -69,22 +56,24 @@ ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
 ATT.MuzzleParticleOverride_Priority = 10
 
 -- Positives
-ATT.SpreadAddRecoil = -0.003
-ATT.RecoilSideMult = 0.8
-ATT.RecoilUpMult = 0.9
+ATT.SpreadAddRecoil = -0.008
+ATT.SpreadAddHipFire = -0.004
+ATT.RecoilMult = 0.85
+ATT.ShootVolumeMult = 0.7
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMMult = 0.95
+ATT.RangeMaxAdd = -15 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1 --
+-- ATT.HeatCapacityMult = 1 --
 ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
+-- ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.03
-ATT.RPMMultHot = 0.85
+ATT.SpreadAddHot = 0.0075
+-- ATT.RPMMultHot = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_ar57_barrel_sd")
 

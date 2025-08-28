@@ -81,15 +81,25 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 14 -- Damage dealt after maximum range
+SWEP.DamageMax = 24 -- Damage dealt point-blank
+SWEP.DamageMin = 15 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
-SWEP.Penetration = 15 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 2 -- How much kick things will have when hit
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 0.85,
+    [HITGROUP_LEFTARM] = 0.8,
+    [HITGROUP_RIGHTARM] = 0.8,
+    [HITGROUP_LEFTLEG] = 0.75,
+    [HITGROUP_RIGHTLEG] = 0.75,
+}
+
+SWEP.Penetration = 30 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMin = 12 / ARC9.HUToM
 SWEP.RangeMax = 60 / ARC9.HUToM
 
 -- Physical Bullets
@@ -104,17 +114,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 50
 
 -- Recoil
-SWEP.Recoil = 2 * 0.75
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.4
+SWEP.Recoil = 1.75
+SWEP.RecoilUp = 0.5
+SWEP.RecoilSide = 0.75
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1.1
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 0.75
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.5 * 1.5
+SWEP.RecoilAutoControl = 2 * 1.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -126,13 +136,13 @@ SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0 -- Vertical tilt
 SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
 SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
-SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilPunch = 4 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 2
+SWEP.VisualRecoilUpHipFire = 1
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
 SWEP.VisualRecoilPunchHipFire = 2
@@ -140,11 +150,11 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.008
-SWEP.SpreadAddHipFire = 0.025 - 0.01
+SWEP.Spread = 0.005
+SWEP.SpreadAddHipFire = 0.03 - 0.01
 
-SWEP.SpreadAddRecoil = 0.012
-SWEP.SpreadAddMove = 0.01
+SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddMove = 0.014
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
@@ -152,23 +162,24 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.03
-SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilPerShot = 1 / 15
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1 / 2
 
 -- Weapon handling
 SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
-SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.37 - 0.1 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.39 - 0.1 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 35
 
 -- Shooting and Firemodes
-SWEP.RPM = 700 -- How fast gun shoot
+SWEP.RPM = 720 -- How fast gun shoot
 SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
@@ -855,21 +866,3 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
 end
 
 SWEP.ReloadInSights = false
-
--- Moka's shit
--- SWEP.Recoil = 1.5
-SWEP.RecoilAutoControl = 1.5
-SWEP.RecoilAutoControlMultShooting = 0.05
-
-SWEP.RecoilMultSights = 0.875
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.016
-
-SWEP.SpreadAddRecoil = 0.04
-SWEP.SpreadAddMove = 0.02
-
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.2
