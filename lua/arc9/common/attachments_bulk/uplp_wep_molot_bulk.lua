@@ -448,13 +448,11 @@ ATT.Category = "uplp_molot_bolt"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RPMMult = 1.25
-ATT.ReloadTimeMult = 0.95
+ATT.RPMMult = 1.05
 
 -- Negatives
-ATT.RecoilMult = 1.15
+ATT.RecoilAdd = 0.3
 ATT.RecoilAutoControlMult = 0.5
-ATT.DamageMaxMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_molot_bolt_light")
 
@@ -471,12 +469,11 @@ ATT.Category = "uplp_molot_bolt"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.85
+ATT.RecoilAdd = -0.35
 ATT.RecoilAutoControlMult = 1.5
 
 -- Negatives
-ATT.RPMMult = 0.75
-ATT.ReloadTimeMult = 1.05
+ATT.RPMMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_molot_bolt_heavy")
 
@@ -499,6 +496,13 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_long.mdl"
 ATT.DropMagazineVelocity = Vector(0, -30, 15)
 
 ATT.ClipSize = 9
+
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.06
+ATT.DispersionSpreadAddHipFire = 0.012
+ATT.SpeedMult = 0.96
+ATT.SpeedMultSights = 0.9
+ATT.SpeedMultShooting = 0.92
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
@@ -527,8 +531,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ClipSize = 19
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.35
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.12
+ATT.DispersionSpreadAddHipFire = 0.03
+ATT.DispersionSpreadAddRecoil = 0.005
+ATT.SpeedMult = 0.9
+ATT.SpeedMultSights = 0.85
+ATT.SpeedMultShooting = 0.8
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
@@ -567,8 +576,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ClipSize = 19
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.2
-ATT.SprintToFireTimeMult = 1.35
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.12
+ATT.DispersionSpreadAddHipFire = 0.03
+ATT.DispersionSpreadAddRecoil = 0.005
+ATT.SpeedMult = 0.9
+ATT.SpeedMultSights = 0.85
+ATT.SpeedMultShooting = 0.8
+
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
