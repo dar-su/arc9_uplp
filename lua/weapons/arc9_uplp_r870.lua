@@ -19,6 +19,14 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1951" ),
 }
 
+SWEP.StandardPresets = {
+    "[Entryway]XQAAAQBvAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJjf/j+CjsZsUbyGI4R6SsM2iDOYswk9IojXqIQUHO95TC9VWja1+z2QU/C5119wq8Q6tRwfshlV6WHi0VbEL/TAiPk/fwgXvPofYJv45ywVgwRtb9BLPLvXm6A3005NMIBENRJDta2wGD76YBQxmcoff5MLOF5N2Y0qydNiOjvCU2/0jk6lrA==",
+    "[Bank Robber]XQAAAQBbAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJjf/j+CjsZsUbyGFG7quhBNvWSBMefD2fGs3JsOWltbTYTOoUz9g7i1WuqI7OyRZfjhWs9JtoxRnb+v/pH1L1/7+xEyRv6d89uybw9cUS0jYeLgb/Zke/jy5lHIoKA6Ct5rdhouB9tJEUu7Fa26gXPxnUbs3u7Yt8KZA8xxF6sWr6Y=",
+    "[Breacher]XQAAAQCuAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJjf/j+CjsZsUbyGFG7quhBNvWSBMefD2fGs3JsOWltbTYTOoUz9g7i1WuqI7O1YVFl5MdkEUJzMaNO0EPK2Uw3oDSKXxaJfcyCmxHbe/W5tePQ26ljb2C6jg1xi1ZMpXwgiUhsl2uDD3Lm9/QiaegruAV84Alc9hgKRHmxEYhVJwlPTSz1zbuyuQphEdjHA4fRdAA==",
+    "[USMC]XQAAAQChAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJjf/j+CjsZsUbyOniqZNXv0WSzqvIjqFQL/QVNkcgXlok+YC3mB1d4nr2HqaB6jQQvlNww5NUQ8NEQyAbkz2AcoA/zt1yxB8MGbtKwCZasCaNLybu5NIBV+HVYCz/Ia2mtX66cQB0dK56cU+lj3j56yzSR5nPUVjPx8AXMC8H0JpR+uF2BNRoUZyMkeKgDwdJs4v9lZXQA=",
+    "[Hunter]XQAAAQCkAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJjf/j+CjsZsUb9x4HICzSzkEU2HXYa+r3hUNs1fhS6ZzyipASCMESgF8eRF32WixQBx8cA39GBVEaU640a4s6myexPI3fdop/uciWQ4LbGhxVizJSstbUdAlbHo6/jsPGCXwBk/yXGvo5CNf8kQf81j8zhcjkq2h8Qoq/2oiehrntmlkNO9w/yS3JO/8c+aVsHyjoDR3XqX7KA/mg==",
+}
+
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_870.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_870.mdl"
 
