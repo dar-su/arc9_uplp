@@ -3150,9 +3150,9 @@ L["uplp_marlin_rs_railsight_long.compactname"] = "Förl. Skena"
 L["uplp_marlin_rs_railsight_long.description"] = "Toppmonterad förlängd skena till större riktmedel med inbyggd stolpkorn och bakre sikte."
 
 //////////////////// AR-57
-L["uplp_weapon_ar57"] = "MCAR-57"
+L["uplp_weapon_ar57"] = "PCC-57"
 
-L["uplp_weapon_ar57_desc"] = "Designad 2008, MCAR-57 (\"Magazine Converted AR\" - \"Magasinändrad Automatkarbin\") är egentligen en ändrad övre låda till AR-15-gevär designad att använda toppmonterade 5.7×28 mm magasin. MCAR är en snabbskjutande, väldigt dödligt monster i närstrid och perfekt för AR-15 fans."
+L["uplp_weapon_ar57_desc"] = "Designad 2008, PCC-57 (\"Pistol Caliber Carbine\" - \"Pistolkaliber Karbin\") är egentligen en ändrad övre låda till AR-15-gevär designad att använda toppmonterade 5.7×28 mm magasin. PCC-57 är en snabbskjutande, väldigt dödligt monster i närstrid och perfekt för AR-15 fans."
 
 L["uplp_weapon_ar57_real"] = "AR-57"
 
@@ -3162,8 +3162,8 @@ L["uplp_weapon_ar57_manufacturer"] = "AR57 LLC"
 ////// Barrels
 L["uplp_ar57_barrel_sd.printname"] = "180 mm SD-Pipa"
 L["uplp_ar57_barrel_sd.compactname"] = "180 mm SD"
-L["uplp_ar57_barrel_sd.description"] = "Modifierad 180 mm pipa med inbyggd ljuddämpare till MCAR-57."
+L["uplp_ar57_barrel_sd.description"] = "Modifierad 180 mm pipa med inbyggd ljuddämpare till PCC-57."
 
 L["uplp_ar57_barrel_long.printname"] = "455 mm Pipa"
 L["uplp_ar57_barrel_long.compactname"] = "455 mm"
-L["uplp_ar57_barrel_long.description"] = "Lång 455 mm pipa till MCAR-57."
+L["uplp_ar57_barrel_long.description"] = "Lång 455 mm pipa till PCC-57."

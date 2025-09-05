@@ -89,7 +89,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 24
+SWEP.DamageMax = 25
 SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
@@ -108,10 +108,10 @@ SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 8 / ARC9.HUToM
-SWEP.RangeMax = 25 / ARC9.HUToM
+SWEP.RangeMax = 24 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -122,7 +122,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1.75 * 0.75
+SWEP.Recoil = 1.75
 SWEP.RecoilUp = 0.65
 SWEP.RecoilSide = 0.55
 
@@ -158,28 +158,30 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.012
+SWEP.Spread = 0.008
+SWEP.SpreadAddHipFire = 0.006
 
 SWEP.SpreadAddRecoil = 0.015
-SWEP.SpreadAddMove = 0.005
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMove = 0.004
+SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 10
+SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 8
-SWEP.RecoilModifierCap = 1
+SWEP.RecoilPerShot = 1 / 5
+
 SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 2 / 3
 
 -- Weapon handling
 SWEP.SpeedMult = 0.99 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
-SWEP.SwayAddSights = 1 -- Either using Kurz handguard or any stock removes this
+SWEP.SwayAddSights = 0 -- Pistol form factor, sway appears with barrel extension
 SWEP.BarrelLength = 20
 
 SWEP.AimDownSightsTime = 0.2
@@ -891,23 +893,3 @@ SWEP.Attachments = {
         CosmeticOnly = true
     },
 }
-
--- Moka's shit
-SWEP.Recoil = 0.95
-SWEP.RecoilAutoControl = 2.25
-SWEP.RecoilAutoControlMultShooting = 0.05
-
-SWEP.RecoilMultRecoil = 1
-SWEP.RecoilMultSights = 0.875
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.02
-
-SWEP.SpreadAddRecoil = 0.02
-SWEP.SpreadAddMove = 0.0125
-
-SWEP.RecoilPerShot = 0.2
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.5

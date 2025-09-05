@@ -68,9 +68,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mac_stock_buffer"}
 
 -- AR15 stocks reduce too much recoil so this is to counterbalance them
-ATT.RecoilAdd = 0.85
+ATT.RecoilAdd = 0.5
 ATT.SpreadAddHipFire = 0.01
-ATT.RecoilAutoControlAddShooting = 1
 
 ATT.Attachments = {
     {
@@ -348,10 +347,10 @@ ATT.LHIK_Priority = 0
 
 -- Positives
 ATT.RecoilAdd = -0.15
-ATT.RecoilPerShot = 1 / 18
-ATT.SpreadAdd = -0.003
-ATT.RangeMinAdd = 5 / ARC9.HUToM
-ATT.RangeMaxAdd = 15 / ARC9.HUToM
+ATT.RecoilPerShot = 1 / 12
+ATT.SpreadAdd = -0.0015
+ATT.RangeMinAdd = 3 / ARC9.HUToM
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMMult = 0.9
@@ -391,10 +390,9 @@ ATT.LHIK_Priority = 0
 
 -- Positives
 ATT.RecoilAdd = -0.1
-ATT.RecoilPerShot = 1 / 14
+ATT.RecoilPerShot = 1 / 8
 ATT.SpreadAddRecoil = -0.01
-ATT.RangeMinAdd = 3 / ARC9.HUToM
-ATT.RangeMaxAdd = 6 / ARC9.HUToM
+ATT.RangeMaxAdd = 5 / ARC9.HUToM
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.008
@@ -458,10 +456,9 @@ ATT.ToggleStats = {
 
 -- Positives
 ATT.RecoilAdd = -0.1
-ATT.RecoilPerShot = 1 / 14
+ATT.RecoilPerShot = 1 / 8
 ATT.SpreadAddRecoil = -0.01
-ATT.RangeMinAdd = 3 / ARC9.HUToM
-ATT.RangeMaxAdd = 6 / ARC9.HUToM
+ATT.RangeMaxAdd = 5 / ARC9.HUToM
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.008
@@ -546,7 +543,7 @@ ATT.ExcludeElements = {"uplp_mac_mac10"}
 ATT.RecoilSideAdd = -0.2
 ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.04
-ATT.RecoilPerShotMult = 0.85
+ATT.RecoilPerShotMult = 0.7
 ATT.RPMMult = 0.9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 1.5, 0) end
@@ -592,7 +589,7 @@ ATT.RecoilSideAdd = -0.2
 ATT.SwayAddSights = 0.3
 ATT.SwayMultSights = 1.15
 ATT.SprintToFireTimeAdd = 0.04
-ATT.RecoilPerShotMult = 0.85
+ATT.RecoilPerShotMult = 0.7
 ATT.RPMMult = 0.9
 
 ATT.ActivePos = Vector(-0.7, 0.5, -0.1)

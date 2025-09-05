@@ -68,7 +68,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp9_stock_full"}
 
 -- -- Positives
-ATT.SwayAddSights = -1.2
+ATT.SwayAddSights = -1
 ATT.RecoilAdd = -0.5
 ATT.RecoilAutoControlMult = 1.1
 
@@ -152,6 +152,7 @@ ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.01
 ATT.SpeedAdd = 0.01
 ATT.SwayMultSights = 0.6
+ATT.SwayAddHipFire = -0.004
 -- ATT.ReloadTimeMult = 0.9
 
 ATT.CustomPros = {
@@ -194,7 +195,7 @@ ATT.SpeedMultSights = 0.9
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "+20%",
     }
-    
+
 -- Negatives
 ATT.ClipSizeOverride = 42
 
@@ -339,7 +340,7 @@ ATT.RangeMaxAdd = 6 / ARC9.HUToM
 ATT.SpreadAddHipFire = 0.008
 ATT.SprintToFireTimeAdd = 0.03
 ATT.AimDownSightsTimeAdd = 0.05
-ATT.SwayAddSights = 0.7
+ATT.SwayAddSights = 1
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.015
 
@@ -371,24 +372,21 @@ ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 ATT.Category = "uplp_mp9_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/mac11_lhik_heatshield.mdl"
--- ATT.ModelOffset = Vector(-21, -3.1, 2.6)
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
-
 -- Positives
+ATT.DamageMinMult = 1.1
 ATT.RecoilAdd = -0.15
-ATT.RecoilPerShot = 1 / 18
-ATT.SpreadAdd = -0.003
-ATT.RangeMinAdd = 5 / ARC9.HUToM
-ATT.RangeMaxAdd = 15 / ARC9.HUToM
+ATT.RecoilPerShot = 1 / 10
+ATT.SpreadAdd = -0.002
+ATT.SpreadAddRecoil = -0.002
+ATT.RangeMaxAdd = 11 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMMult = 0.9
-ATT.SpreadAddHipFire = 0.01
+ATT.SpreadAddHipFire = 0.006
+ATT.SpreadAddMove = 0.002
 ATT.SprintToFireTimeAdd = 0.02
 ATT.AimDownSightsTimeAdd = 0.04
-ATT.SwayAddSights = 0.7
+ATT.SwayAddSights = 1
 ATT.SpeedMultSights = 0.92
 ATT.SpeedAdd = -0.01
 
