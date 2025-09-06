@@ -316,15 +316,15 @@ SWEP.TriggerUpSound = false
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
-    [1] = "bullet1",
-    [2] = "bullet2",
-    [3] = "bullet3",
-    [4] = "bullet4",
+    [9] = "bullet1",
+    [8] = "bullet2",
+    [7] = "bullet3",
+    [6] = "bullet4",
     [5] = "bullet5",
-    [6] = "bullet6",
-    [7] = "bullet7",
-    [8] = "bullet8",
-    [9] = "bullet9",
+    [4] = "bullet6",
+    [3] = "bullet7",
+    [2] = "bullet8",
+    [1] = "bullet9",
 }
 
 SWEP.ReloadHideBoneTables = {
@@ -450,7 +450,7 @@ SWEP.Animations = {
             { s = pathUTT .. "chforward.ogg", t = 105 / 30, c = ca, v = 0.2 },
 
             { s = pathUTC .. "cloth_4.ogg", t = 110 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-05.ogg", t = 115 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 115 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 58/30},
@@ -474,7 +474,7 @@ SWEP.Animations = {
             {s = pathUTREAL .. "electrosaw_try.ogg", v = 0.4, t = 90/30},
 
             { s = pathUTC .. "cloth_4.ogg", t = 130 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-05.ogg", t = 132 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 132 / 30, c = ca, v = 0.8 },
         },
     },
     -- Firemodee --
@@ -521,30 +521,12 @@ SWEP.Attachments = {
     },
 }
 
--- Moka's shit
--- SWEP.Recoil = 0.4
--- SWEP.RecoilAutoControl = 1.75
--- SWEP.RecoilAutoControlMultShooting = 0.1
-
--- SWEP.RecoilMultRecoil = 1.6
--- SWEP.RecoilMultSights = 0.875
-
--- SWEP.Spread = 0
--- SWEP.SpreadAddHipFire = 0.025
-
--- SWEP.SpreadAddRecoil = 0.025
--- SWEP.SpreadAddMove = 0.015
-
--- SWEP.RecoilPerShot = 0.2
--- SWEP.RecoilDissipationRate = 5
--- SWEP.RecoilResetTime = 0.05
-
--- SWEP.RecoilModifierCapSights = 0.2
-
 SWEP.DryFireDelay = 0.02
 
 
 SWEP.CantPeek = true
+
+SWEP.ReloadInSights = false
 
 -- function SWEP:HasAmmoInClip()
 

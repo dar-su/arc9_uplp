@@ -22,12 +22,13 @@ ATT.MuzzleParticleOverride_Priority = 10
 
 -- Positives
 ATT.SpreadAddRecoil = -0.003
-ATT.RecoilSideMult = 0.8
-ATT.RecoilUpMult = 0.9
+ATT.RecoilMult = 0.8
+ATT.ShootVolumeMult = 0.7
 
 -- Negatives
+ATT.RangeMaxAdd = -5 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMMult = 0.875
+ATT.PhysBulletMuzzleVelocityMult = 0.8
 
 ATT.Overheat = true
 ATT.HeatCapacityMult = 1 --
@@ -35,7 +36,7 @@ ATT.HeatDissipation = 5 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.03
+ATT.SpreadAddHot = 0.01
 ATT.RPMMultHot = 0.85
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
@@ -73,12 +74,18 @@ ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.015
 ATT.SpeedMultSights = 1.05
 ATT.SwayAddSights = -1
+ATT.SpreadAddHipFire = -0.01
+ATT.SpreadAddMove = -0.003
+ATT.SpreadAddRecoil = 0
 
 -- Negatives
+ATT.DamageMinMult = 0.8
 ATT.SpreadAdd = 0.005
-ATT.RangeMaxMult = 0.6
-ATT.RecoilAdd = 0.1
-ATT.RecoilPerShotOverride = 1 / 9
+ATT.RangeMinAdd = -5 / ARC9.HUToM
+ATT.RangeMaxAdd = -5 / ARC9.HUToM
+ATT.RecoilAdd = 0.4
+ATT.RecoilRandomSideAdd = 0.4
+ATT.RecoilPerShotOverride = 1 / 5
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
@@ -212,13 +219,12 @@ ATT.RecoilAutoControlMult = 1.3
 ATT.VisualRecoilMultHipFire = 0.5
 
 -- Buffer Tube stats
-ATT.RecoilAdd = -0.7
+ATT.RecoilAdd = -0.55
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1 - 0.02
 ATT.SprintToFireTimeAdd = 0.1 - 0.03
 ATT.SpeedMultSights = 0.85 + 0.1
 ATT.SpeedAdd = -0.05 + 0.03
-ATT.SpreadAddHipFire = nil
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
@@ -245,27 +251,27 @@ ATT.RecoilAutoControlMult = 1.2
 ATT.VisualRecoilMultHipFire = 0.5
 
 -- Buffer Tube stats
-ATT.RecoilAdd = -0.6
+ATT.RecoilAdd = -0.45
 ATT.SwayAddSights = -1
-ATT.AimDownSightsTimeAdd = 0.1 - 0.03
-ATT.SprintToFireTimeAdd = 0.1 - 0.05
-ATT.SpeedMultSights = 0.85 + 0.1
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultSights = 0.95
 ATT.SpeedAdd = -0.05 + 0.03
-ATT.SpreadAddHipFire = nil
 
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_mp5_stock_col"},
-		CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_mp5_stock_col_f"},
         AimDownSightsTimeAdd = -0.04,
         SprintToFireTimeAdd = -0.03,
-        RecoilAdd = 0.2,
+        RecoilAdd = 0.3,
+        SpreadAddHipFire = -0.005,
     },
 }
 
@@ -291,7 +297,7 @@ ATT.RecoilAutoControlMult = 1.5
 ATT.VisualRecoilMultHipFire = 0.35
 
 -- Buffer Tube stats
-ATT.RecoilAdd = -0.9
+ATT.RecoilAdd = -0.7
 ATT.SwayAddSights = -1
 ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1
@@ -363,9 +369,10 @@ ATT.ClipSizeOverride = 15
 
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.02
-ATT.SwayMultSights = 0.9
+ATT.SwayMultSights = 0.6
 ATT.SpeedMultSights = 1.1
 ATT.ReloadTimeMult = 0.925
+ATT.SpreadAddHipFire = -0.003
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_mag_15")
 

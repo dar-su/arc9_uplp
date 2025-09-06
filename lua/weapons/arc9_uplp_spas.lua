@@ -89,18 +89,29 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 80
-SWEP.DamageMin = 5
+SWEP.DamageMax = 96
+SWEP.DamageMin = 48
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
+SWEP.HullSize = 1
 
--- for faster falloff after ~5 meters
-SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 160
-SWEP.SweetSpotRange = 2 / ARC9.HUToM
-SWEP.SweetSpotWidth = 2 / ARC9.HUToM
-SWEP.SweetSpotPeak = 2 / ARC9.HUToM
+SWEP.CurvedDamageScaling = true
+function SWEP:Hook_GetDamageAtRange(data)
+    local d = self:GetDamageDeltaAtRange(data.range)
+
+    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
+    local num = self:GetProcessedValue("Num")
+
+    if self:GetProcessedValue("DistributeDamage", true) then
+        dmgv = dmgv / num
+    elseif self:GetProcessedValue("NormalizeNumDamage", true) then
+        dmgv = dmgv / (num / self.Num)
+    end
+
+    data.dmg = dmgv
+    return data
+end
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1,
@@ -116,8 +127,8 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 2 / ARC9.HUToM
-SWEP.RangeMax = 30 / ARC9.HUToM
+SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
@@ -136,10 +147,10 @@ SWEP.RecoilUp = 2
 SWEP.RecoilSide = 1.25
 
 -- Additional recoil when firing rapidly
-SWEP.RecoilMultRecoil = 1.75
+SWEP.RecoilMultRecoil = 2
 
 SWEP.RecoilRandomUp = 1.15
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomSide = 2
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -172,8 +183,8 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.055
-SWEP.SpreadAddMidAir = 0.05
+SWEP.Spread = 0.044
+SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
 SWEP.DispersionSpreadAddHipFire = 0.04
@@ -182,11 +193,13 @@ SWEP.DispersionSpreadAddRecoil = 0.06
 SWEP.DispersionSpreadAddMove = 0.03
 SWEP.DispersionSpreadAddMidAir = 0.05
 
-SWEP.RecoilDissipationRate = 2
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.4
+SWEP.RecoilDissipationRate = 2.5
+SWEP.RecoilResetTime = 0.05
+SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 2 / 3
+
 
 -- Weapon handling
 SWEP.SpeedMult = 0.82 + 0.05 -- Walk speed multiplier
@@ -199,28 +212,27 @@ SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 42
 
 -- Shooting and Firemodes
-SWEP.RPM = 200 -- How fast gun shoot -- as fast for cycle anim to play instantly
+SWEP.RPM = 180 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 8 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    { Mode = 1, -- Pump
+    {
+        Mode = 1, -- Pump
         PrintName = ARC9:GetPhrase("uplp_firemode_pump"),
         ManualAction = true,
         ManualActionNoLastCycle = true,
         NoShellEjectManualAction = true,
         uplp_semi = true,
         SuppressEmptySuffix = true,
-        DispersionSpreadAddHipFire = -0.01,
-        SpreadMult = 0.8,
-        DamageMaxMult = 1.25, -- blehh :p
-        SweetSpotDamageMult = 1.25, -- blehh :p
-
-        RPM = 60/0.2,
+        DispersionSpreadAddHipFire = -0.02,
+        Spread = 0.032,
+        DamageMax = 200,
+        RPM = 60 / 0.2,
     },
-    { Mode = 1, -- Semi
+    {
+        Mode = 1, -- Semi
         ManualAction = false,
-        SweetSpotDamageMult = 0.8,
     },
 }
 
@@ -455,8 +467,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.75,
-		FireASAP = true,
+        MinProgress = 0.75,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 5 / 30, c = ca, v = 0.8 },
@@ -549,7 +561,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EjectAt = 5 / 30,
-        MinProgress = 0.4,
+        MinProgress = 0.55,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 4 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 8 / 30, v = 0.6 },
@@ -578,7 +590,7 @@ SWEP.Animations = {
             { s = pathUT .. "breechload.ogg", t = 0 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
             { s = ")uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
-			
+
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 1 },
             { s = pathUTC .. "grab-polymer.ogg", t = 49 / 30, c = ca, v = 0.4 },
         },
@@ -595,7 +607,7 @@ SWEP.Animations = {
             { s = ShellInsert, t = 10 / 30, v = 0.6 },
             { s = pathUT .. "forearm_back.ogg", t = 26 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 33 / 30, v = 0.6 },
-			
+
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 37 / 30, c = ca, v = 1 },
             { s = pathUTC .. "grab-polymer.ogg", t = 54 / 30, c = ca, v = 0.6 },
         },

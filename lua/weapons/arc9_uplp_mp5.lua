@@ -106,7 +106,7 @@ SWEP.RangeMin = 10 / ARC9.HUToM
 SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -117,7 +117,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1.6 * 0.75
+SWEP.Recoil = 1.5
 SWEP.RecoilUp = 0.65
 SWEP.RecoilSide = 0.35
 
@@ -154,20 +154,22 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.003
-SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddHipFire = 0.014
 
-SWEP.SpreadAddRecoil = 0.01
+SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.1
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 10
+SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 12
-SWEP.RecoilModifierCap = 1
+SWEP.RecoilPerShot = 1 / 10
+
 SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 2 / 3
 
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier
@@ -889,7 +891,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 2.25, 8.9),
         Ang = Angle(90, 90, 0),
         Icon_Offset = Vector(0.5, 0, -1),
-        Hidden = false,
         MergeSlots = {3},
         Hidden = true,
         ExcludeElements = {"uplp_mp5_bar_kurz"},
@@ -923,23 +924,3 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
     if loadedronds <= 15 then loadedronds = loadedronds - 0.75 end
     ent:SetPoseParameter("magspring", 1-math.Clamp(loadedronds/30, 0, 1))
 end
-
--- Moka's shit
-SWEP.Recoil = 1.25
-SWEP.RecoilAutoControl = 2.25
-SWEP.RecoilAutoControlMultShooting = 0.05
-
-SWEP.RecoilMultRecoil = 1.3
-SWEP.RecoilMultSights = 0.875
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.02
-
-SWEP.SpreadAddRecoil = 0.026
-SWEP.SpreadAddMove = 0.0175
-
-SWEP.RecoilPerShot = 0.2
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.2

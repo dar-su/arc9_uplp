@@ -3151,3 +3151,22 @@ L["uplp_pkm_handguard.description"] = "Тактическое цевьё с ни
 -- L["uplp_marlin_rs_railsight_long.printname"] = "Extended Top Rail with Ring Sight"
 -- L["uplp_marlin_rs_railsight_long.compactname"] = "Ext. Rail"
 -- L["uplp_marlin_rs_railsight_long.description"] = "Top-mounted extended rail for bigger optics with built-in front and rear sight."
+
+//////////////////// AR-57
+-- L["uplp_weapon_ar57"] = "PCC-57"
+
+-- L["uplp_weapon_ar57_desc"] = "Designed in 2008, the PCC-57 (\"Pistol Caliber Carbine\") is essentially a modified upper receiver for AR-15 rifles designed to utilize top-mounted 5.7×28mm magazines. The PCC-57 is a fast-firing, very deadly CQB beast perfect for fans of the AR-15."
+
+-- L["uplp_weapon_ar57_real"] = "AR-57"
+
+-- L["uplp_weapon_ar57_manufacturer"] = "AR57 LLC"
+
+/////////// Attachments
+////// Barrels
+-- L["uplp_ar57_barrel_sd.printname"] = "180mm SD Barrel"
+-- L["uplp_ar57_barrel_sd.compactname"] = "180mm SD"
+-- L["uplp_ar57_barrel_sd.description"] = "Modified 180mm (7\") barrel with built-in suppressor for the PCC-57."
+
+-- L["uplp_ar57_barrel_long.printname"] = "455mm Barrel"
+-- L["uplp_ar57_barrel_long.compactname"] = "455mm"
+-- L["uplp_ar57_barrel_long.description"] = "Long 455mm (18\") barrel for the PCC-57."

@@ -101,11 +101,11 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 3 / ARC9.HUToM
-SWEP.RangeMax = 35 / ARC9.HUToM
+SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMax = 25 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 300 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 340 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -116,11 +116,11 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 32
 
 -- Recoil
-SWEP.Recoil = 1.3 * 0.75
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.5
+SWEP.Recoil = 1
+SWEP.RecoilUp = 0.9
+SWEP.RecoilSide = 1.3
 
-SWEP.RecoilRandomUp = 1
+SWEP.RecoilRandomUp = 0.8
 SWEP.RecoilRandomSide = 1.2
 
 SWEP.RecoilRise = 0
@@ -152,21 +152,23 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.008
-SWEP.SpreadAddHipFire = 0.01
+SWEP.Spread = 0.007
+SWEP.SpreadAddHipFire = 0.007
 
-SWEP.SpreadAddRecoil = 0.022
-SWEP.SpreadAddMove = 0.005
-SWEP.SpreadAddMidAir = 0.04
+SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddMove = 0.004
+SWEP.SpreadAddMidAir = 0.03
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 18
+SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 11
-SWEP.RecoilModifierCap = 1
+SWEP.RecoilPerShot = 1 / 7
+
 SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 2 / 3
 
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier
@@ -1105,23 +1107,3 @@ SWEP.HookP_NameChange = function(self, name)
     if att["uplp_mac_mac10"] then name = ARC9:GetPhrase("uplp_weapon_mac10") end
     return name
 end
-
--- Moka's shit
-SWEP.Recoil = 0.6
-SWEP.RecoilAutoControl = 2
-SWEP.RecoilAutoControlMultShooting = 0.05
-
-SWEP.RecoilMultRecoil = 1.75
-SWEP.RecoilMultSights = 0.875
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.018
-
-SWEP.SpreadAddRecoil = 0.026
-SWEP.SpreadAddMove = 0.0175
-
-SWEP.RecoilPerShot = 0.2
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.2

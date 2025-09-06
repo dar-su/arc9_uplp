@@ -87,17 +87,18 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 225
-SWEP.DamageMin = 12
+SWEP.DamageMax = 200
+SWEP.DamageMin = 72
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
+SWEP.HullSize = 1
 
 SWEP.CurvedDamageScaling = true
 function SWEP:Hook_GetDamageAtRange(data)
     local d = self:GetDamageDeltaAtRange(data.range)
 
-    local dmgv = Lerp(d ^ 0.25, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
+    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
     local num = self:GetProcessedValue("Num")
 
     if self:GetProcessedValue("DistributeDamage", true) then
@@ -128,11 +129,11 @@ SWEP.BodyDamageMults = {
 }
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 3 -- How much kick things will have when hit
+SWEP.ImpactForce = 1 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 4.5 / ARC9.HUToM
-SWEP.RangeMax = 30 / ARC9.HUToM
+SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
@@ -188,21 +189,22 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.048
+SWEP.Spread = 0.032
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.025
+SWEP.DispersionSpreadAddHipFire = 0.012
 
-SWEP.DispersionSpreadAddRecoil = 0.05
-SWEP.DispersionSpreadAddMove = 0.03
+SWEP.DispersionSpreadAddRecoil = 0.04
+SWEP.DispersionSpreadAddMove = 0.015
 SWEP.DispersionSpreadAddMidAir = 0.05
 
 SWEP.RecoilDissipationRate = 1
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 0.75
+SWEP.RecoilResetTime = 0.35
+SWEP.RecoilPerShot = 0.5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1 / 3
 
 -- Weapon handling
 SWEP.SpeedMult = 0.82

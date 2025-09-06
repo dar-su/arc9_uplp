@@ -101,22 +101,22 @@ $sequence "idle"{
 	fadeout 0.2
 }
 
+$sequence "idle2"{
+	"anims\idle_iron.smd"
+	fps 30
+}
+
 $sequence "firemode_pose" {
-	"anims\idle.smd"
-	"anims\idle_firemode.smd"
 	"anims\idle_iron.smd"
 	"anims\idle_firemode_iron.smd"
 	blend "firemode" 1 2
- 	blend "sights" 0 1
-	blendwidth 2
 	delta
 	autoplay
 	loop
-	fps 24
+	fps 30
 	snap
-	subtract "idle" 0
+	subtract "idle2" 0
 }
-
 $sequence "idle_empty"{
 	"anims\idle_empty.smd" 
 	"anims\idle_empty_iron.smd"
@@ -345,16 +345,39 @@ $sequence "reload_empty_20" {
 
 
 $sequence "inspect" {
-	"anims\a9inspect.smd"
-	snap
-	fps 24
+	"anims\inspect_dum_h.smd"
+	// snap
+	fps 30
 }
 $sequence "inspect_empty" {
-	"anims\a9inspect_empty.smd"
-	snap
-	fps 24
+	"anims\inspect_dum_h_empty.smd"
+	// snap
+	fps 30
 }
 
+
+$sequence "inspect_l" {
+	"anims\inspect_dum_l.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_l" {
+	"anims\inspect_dum_l_empty.smd"
+	// snap
+	fps 30
+}
+
+
+$sequence "inspect_alt" {
+	"anims\inspect_dum_alt.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_alt" {
+	"anims\inspect_dum_alt_empty.smd"
+	// snap
+	fps 30
+}
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
