@@ -2155,14 +2155,6 @@ L["uplp_weapon_dvl10_real"] = "DVL-10"
 
 L["uplp_weapon_dvl10_manufacturer"] = "Integrated Systems Design Bureau (KBIS)"
 
-//////////////////// SR-25
-L["uplp_weapon_sr25"] = "DMR-10"
-L["uplp_weapon_sr25_desc"] = "Baserad på den välkända AR-15-plattformen, DMR-10 är en kraftfull, endast halvautomatiskt marksman-gevär. Även då den förlorade en tävling under 50-talet till BR-14 så fann DMR-10 fortfarande dess väg till militära händer av flertal styrkor."
-
-L["uplp_weapon_sr25_real"] = "KAC SR-25"
-
-L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
-
 -- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
@@ -3167,3 +3159,129 @@ L["uplp_ar57_barrel_sd.description"] = "Modifierad 180 mm pipa med inbyggd ljudd
 L["uplp_ar57_barrel_long.printname"] = "455 mm Pipa"
 L["uplp_ar57_barrel_long.compactname"] = "455 mm"
 L["uplp_ar57_barrel_long.description"] = "Lång 455 mm pipa till PCC-57."
+
+//////////////////// SR-25
+L["uplp_weapon_sr25"] = "DMR-10"
+L["uplp_weapon_sr25_desc"] = "Baserad på den välkända AR-15-plattformen, DMR-10 är en kraftfull, endast halvautomatiskt marksman-gevär. Även då den förlorade en tävling under 50-talet till BR-14 så fann DMR-10 fortfarande dess väg till militära händer av flertal styrkor."
+
+L["uplp_weapon_sr25_real"] = "KAC SR-25"
+
+L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
+
+/////////// Attachments
+////// Receivers
+-- L["uplp_sr25_rec_ar10.printname"] = "AR-10 Receiver"
+-- L["uplp_sr25_rec_ar10.compactname"] = "AR-10"
+-- L["uplp_sr25_rec_ar10.description"] = "Classic AR-10 receiver with select-fire capability.\nNot compatible with <color=255,100,100>25 or 30-round 6.8mm magazines</color>."
+
+-- L["uplp_sr25_rec_troy.printname"] = "Home Defense 61 Receiver"
+-- L["uplp_sr25_rec_troy.compactname"] = "HD61"
+-- L["uplp_sr25_rec_troy.description"] = "Aftermarket pump-action receiver for the DMR-10.\nNot compatible with <color=255,100,100>other handguards</color>."
+
+////// Magazines
+-- L["uplp_sr25_mag_10.printname"] = "10-Round 7.62×51mm (Aluminium)"
+-- L["uplp_sr25_mag_10.compactname"] = "10R Alum"
+-- L["uplp_sr25_mag_10.description"] = "10-round magazine made out of aluminium."
+
+-- L["uplp_sr25_mag_10_poly.printname"] = "10-Round 7.62×51mm (Polymer)"
+-- L["uplp_sr25_mag_10_poly.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_pmag10.compactname") or "10R Poly"
+-- L["uplp_sr25_mag_10_poly.description"] = ARC9:GetPhrase("uplp_ar15_mag_pmag10.description") or "10-round magazine made out of polymer by SynPoly."
+
+-- L["uplp_sr25_mag_20.printname"] = "20-Round 7.62×51mm (Aluminium)"
+-- L["uplp_sr25_mag_20.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_stanag20.compactname") or "20R Alum"
+-- L["uplp_sr25_mag_20.description"] = ARC9:GetPhrase("uplp_ar15_mag_stanag20.description") or "20-round magazine made out of aluminium."
+
+-- L["uplp_sr25_mag_20_old.printname"] = "20-Round 7.62×51mm (Classic)"
+-- L["uplp_sr25_mag_20_old.compactname"] = "20R Classic"
+-- L["uplp_sr25_mag_20_old.description"] = "Classic 20-round magazine made out of aluminium."
+
+-- L["uplp_sr25_mag_20_poly.printname"] = "20-Round 7.62×51mm (Polymer)"
+-- L["uplp_sr25_mag_20_poly.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_pmag20.compactname") or "20R Poly"
+-- L["uplp_sr25_mag_20_poly.description"] = ARC9:GetPhrase("uplp_ar15_mag_pmag20.description") or "20-round magazine made out of polymer by SynPoly."
+
+-- L["uplp_sr25_mag_25_spear.printname"] = "25-Round 6.8×51mm"
+-- L["uplp_sr25_mag_25_spear.compactname"] = "25R 6.8mm"
+-- L["uplp_sr25_mag_25_spear.description"] = "25-round magazine chambered in 6.8mm for the DMR-10.\nExtremely good for long range fights."
+
+-- L["uplp_sr25_mag_30_spear.printname"] = "30-Round 6.8×51mm"
+-- L["uplp_sr25_mag_30_spear.compactname"] = "30R 6.8mm"
+-- L["uplp_sr25_mag_30_spear.description"] = "30-round magazine chambered in 6.8mm for the DMR-10.\nExtremely good for long range fights."
+
+////// Handguards & Barrels
+local sr25brll = {
+	vshort = "\nComes with a 356mm (14\") barrel.",
+	short = "\nComes with a 410mm (16\") barrel.",
+	med = "\nComes with a 510mm (20\") barrel.",
+	long = "\nComes with a 610mm (24\") barrel.",
+	vlong = "\nComes with a 710mm (28\") barrel.",
+}
+
+-- L["uplp_sr25_hg_short.printname"] = "Tactical Short Handguard & Very Short Barrel"
+-- L["uplp_sr25_hg_short.compactname"] = "Short"
+-- L["uplp_sr25_hg_short.description"] = "Short, tactical handguard for the DMR-10." .. sr25brll.vshort
+
+-- L["uplp_sr25_hg_s15.printname"] = "Nowosuku S-15 Handguard & Short Barrel"
+-- L["uplp_sr25_hg_s15.compactname"] = "S-15"
+-- L["uplp_sr25_hg_s15.description"] = "Lightweight S-15 handguard manufactured by Nowosuku." .. sr25brll.short
+
+-- L["uplp_sr25_hg_mutant.printname"] = "Nowosuku SX6 Handguard & Short Barrel"
+-- L["uplp_sr25_hg_mutant.compactname"] = "SX6"
+-- L["uplp_sr25_hg_mutant.description"] = "Lightweight SX6 handguard manufactured by Nowosuku." .. sr25brll.short
+
+-- L["uplp_sr25_hg_tac.printname"] = "Tactical Handguard"
+-- L["uplp_sr25_hg_tac.compactname"] = "Tac."
+-- L["uplp_sr25_hg_tac.description"] = "Tactical handguard for the DMR-10." .. sr25brll.med
+
+-- L["uplp_sr25_hg_s15xl.printname"] = "Nowosuku S-15 XL Handguard"
+-- L["uplp_sr25_hg_s15xl.compactname"] = "S-15 XL"
+-- L["uplp_sr25_hg_s15xl.description"] = "Longer variant of the lightweight S-15 handguard manufactured by Nowosuku." .. sr25brll.med
+
+-- L["uplp_sr25_hg_ar50.printname"] = "Hoki Armory J-CLAP Handguard"
+-- L["uplp_sr25_hg_ar50.compactname"] = "J-CLAP"
+-- L["uplp_sr25_hg_ar50.description"] = "Lightweight tactical handguard for the DMR-10 made by Hoki Armory." .. sr25brll.med
+
+-- L["uplp_sr25_hg_mutantxl.printname"] = "Nowosuku SX6 XL Handguard"
+-- L["uplp_sr25_hg_mutantxl.compactname"] = "SX6 XL"
+-- L["uplp_sr25_hg_mutantxl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. sr25brll.med
+
+-- L["uplp_sr25_hg_mlok.printname"] = "M-LOK Handguard"
+-- L["uplp_sr25_hg_mlok.compactname"] = "M-LOK"
+-- L["uplp_sr25_hg_mlok.description"] = "Tactical M-LOK handguard allowing installation of various accessories." .. sr25brll.med
+
+-- L["uplp_sr25_hg_mp10.printname"] = "S&H Handguard"
+-- L["uplp_sr25_hg_mp10.compactname"] = "S&H"
+-- L["uplp_sr25_hg_mp10.description"] = "Aftermarket Sport & Hunting handguard for the DMR-10." .. sr25brll.med
+
+-- L["uplp_sr25_hg_m110.printname"] = "LRR-30 Handguard & Long Barrel"
+-- L["uplp_sr25_hg_m110.compactname"] = "LRR-30"
+-- L["uplp_sr25_hg_m110.description"] = "Modernized handguard from the LRR-30 (\"Long-Range Rifle, Model 30\")." .. sr25brll.long
+
+-- L["uplp_sr25_hg_fns.printname"] = "FNS-90 Handguard & Long Barrel"
+-- L["uplp_sr25_hg_fns.compactname"] = "FNS-90"
+-- L["uplp_sr25_hg_fns.description"] = "Aftermarket handguard with <color=100,255,100>built-in bipod</color>." .. sr25brll.long
+
+-- L["uplp_sr25_hg_ar10.printname"] = "AR-10 Handguard & Long Barrel"
+-- L["uplp_sr25_hg_ar10.compactname"] = "AR-10"
+-- L["uplp_sr25_hg_ar10.description"] = "Classic AR-10 handguard. Comes with a very long barrel.\nNot compatible with <color=255,100,100>muzzle devices</color>." .. sr25brll.long
+
+////// Muzzles
+-- L["uplp_sr25_muz_def.printname"] = "DMR-10 Flash Hider"
+-- L["uplp_sr25_muz_def.compactname"] = "DMR-10"
+-- L["uplp_sr25_muz_def.description"] = "Factory-spec flash hider for the DMR-10."
+
+-- L["uplp_sr25_muz_fns.printname"] = "FNS-762 Muzzle Brake"
+-- L["uplp_sr25_muz_fns.compactname"] = "FNS-762"
+-- L["uplp_sr25_muz_fns.description"] = "Aftermarket muzzle brake for the DMR-10."
+
+-- L["uplp_sr25_muz_m110.printname"] = "LRR-30 Suppressor"
+-- L["uplp_sr25_muz_m110.compactname"] = "LRR-30"
+-- L["uplp_sr25_muz_m110.description"] = "Factory-made suppressor for the LRR-30 (\"Long-Range Rifle, Model 30\")."
+
+////// Wooden Pieces
+-- L["uplp_sr25_stock_wood.printname"] = "Wooden AR-10 Stock"
+-- L["uplp_sr25_stock_wood.compactname"] = "Wood"
+-- L["uplp_sr25_stock_wood.description"] = "Replaces the stock with a wooden AR-10 stock.\nPurely <color=160,160,255>cosmetic</color>."
+
+-- L["uplp_sr25_pgrip_wood.printname"] = "Wooden AR-10 Pistol Grip"
+-- L["uplp_sr25_pgrip_wood.compactname"] = "Wood"
+-- L["uplp_sr25_pgrip_wood.description"] = "Replaces the pistol grip with a wooden AR-10 pistol grip.\nPurely <color=160,160,255>cosmetic</color>."
