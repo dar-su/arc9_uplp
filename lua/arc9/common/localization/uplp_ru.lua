@@ -877,6 +877,14 @@ L["uplp_ak_mag_762_30_oldest.printname"] = "30-зарядный 7.62×39мм (Г
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (ГС)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-зарядный магазин из гладкой стали. Очень старый экземпляр, который на удивление всё ещё работает! Может, вернёте его в музей?" .. loaded762
 
+L["uplp_ak_mag_762_30_poly.printname"] = "30-зарядный 7.62×39мм (SynPoly)"
+L["uplp_ak_mag_762_30_poly.compactname"] ="30R 7.62 (SP)"
+L["uplp_ak_mag_762_30_poly.description"] = "30-зарядный SPMAG производства SynPoly." .. loaded762
+
+L["uplp_ak_mag_762_30_banana.printname"] = "30-зарядный 7.62×39мм (бананом)"
+L["uplp_ak_mag_762_30_banana.compactname"] ="30R 7.62 (Бан.)"
+-- L["uplp_ak_mag_762_30_banana.description"] = "30-round magazine painted to look like a banana. Comes with a <color=100,255,100>free sticker</color>!" .. loaded762
+
 L["uplp_ak_mag_762_40.printname"] = "40-зарядный 7.62×39мм (Бакелит)"
 L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (Б)"
 L["uplp_ak_mag_762_40.description"] = "40-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded762
@@ -1143,6 +1151,10 @@ L["uplp_ar15_chandle_tac.description"] = "Спортивная тактичес�
 L["uplp_ar15_chandle_tacblack.printname"] = "Рукоятка затвора Hoki Armory (Черная)"
 L["uplp_ar15_chandle_tacblack.compactname"] = "Hoki (Ч)"
 L["uplp_ar15_chandle_tacblack.description"] = "Спортивная тактическая рукоятка затвора для винтовок AR-15 от Hoki Armory." .. pitchblack
+
+L["uplp_ar15_chandle_sr25.printname"] = "Рукоятка затвора DMR-10"
+L["uplp_ar15_chandle_sr25.compactname"] = "DMR-10"
+-- L["uplp_ar15_chandle_sr25.description"] = "Sturdy charging handle used on the DMR-10."
 
 ////// Front Sights
 L["uplp_ar15_fs_mbus.printname"] = "Откидная мушка PAWCO"
@@ -1594,8 +1606,8 @@ L["uplp_deagle_skin_frame.compactname"] = "Хром"
 L["uplp_deagle_skin_frame.description"] = "Заменяет матовую раму на хромированную."
 
 //////////////////// Mutant
-L["uplp_weapon_mutant"] = "Мутант"
-L["uplp_weapon_mutant_desc"] = "Мутант - уникальная гибридная винтовка, объединяющая точность и эргономику платформы AR-15 с мощным патроном 7.62×39 мм, традиционно используемым в винтовках АК. Она предоставляет стрелкам универсальное и надежное оружие, способное выпускать мощные патроны, сохраняя при этом знакомые элементы управления и возможности настройки в стиле AR. Изначально представленная как полуавтоматическая винтовка для гражданского рынка, эта модификация предназначена для военного использования и, таким образом, позволяет осуществлять автоматическую стрельбу."
+L["uplp_weapon_mutant"] = "H-51 \"Оборотень\""
+L["uplp_weapon_mutant_desc"] = "H-51 \"Оборотень\" - уникальная гибридная винтовка, объединяющая точность и эргономику платформы AR-15 с мощным патроном 7.62×39 мм, традиционно используемым в винтовках АК. Она предоставляет стрелкам универсальное и надежное оружие, способное выпускать мощные патроны, сохраняя при этом знакомые элементы управления и возможности настройки в стиле AR. Изначально представленная как полуавтоматическая винтовка для гражданского рынка, эта модификация предназначена для военного использования и, таким образом, позволяет осуществлять автоматическую стрельбу."
 
 L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
@@ -1605,18 +1617,18 @@ L["uplp_weapon_mutant_manufacturer"] = "CMMG Inc."
 ////// Barrels
 L["uplp_mutant_barrel_long.printname"] = "500mm Barrel"
 L["uplp_mutant_barrel_long.compactname"] = "500mm"
-L["uplp_mutant_barrel_long.description"] = "Extended 500mm (19.7\") barrel for the Mutant."
+L["uplp_mutant_barrel_long.description"] = "Extended 500mm (19.7\") barrel for the H-51."
 
 L["uplp_mutant_barrel_short.printname"] = "409mm Barrel"
 L["uplp_mutant_barrel_short.compactname"] = "409mm"
-L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the Mutant."
+L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the H-51."
 
 ////// Handguards
 local requires19 = "\n\n" .. "Требует ствол длинною в 500мм (19.7\") или больше."
 
 L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL Handguard"
 L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
-L["uplp_mutant_hg_long.description"] = "Longer variant of the tactical handguard made for the Mutant by Hoki Armory." .. requires19
+L["uplp_mutant_hg_long.description"] = "Longer variant of the tactical handguard made for the H-51 by Hoki Armory." .. requires19
 
 L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6 Handguard"
 L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
@@ -1628,7 +1640,7 @@ L["uplp_mutant_hg_nowosuku_xl.description"] = "Longer variant of the lightweight
 
 L["uplp_mutant_hg_short.printname"] = "Hoki Armory Handguard"
 L["uplp_mutant_hg_short.compactname"] = "Hoki"
-L["uplp_mutant_hg_short.description"] = "Tactical handguard made for the Mutant by Hoki Armory."
+L["uplp_mutant_hg_short.description"] = "Tactical handguard made for the H-51 by Hoki Armory."
 
 ////// Magazines
 L["uplp_mutant_mag_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
@@ -3187,28 +3199,22 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 -- L["uplp_sr25_mag_10.description"] = "10-round magazine made out of aluminium."
 
 -- L["uplp_sr25_mag_10_poly.printname"] = "10-Round 7.62×51mm (Polymer)"
--- L["uplp_sr25_mag_10_poly.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_pmag10.compactname") or "10R Poly"
--- L["uplp_sr25_mag_10_poly.description"] = ARC9:GetPhrase("uplp_ar15_mag_pmag10.description") or "10-round magazine made out of polymer by SynPoly."
 
 -- L["uplp_sr25_mag_20.printname"] = "20-Round 7.62×51mm (Aluminium)"
--- L["uplp_sr25_mag_20.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_stanag20.compactname") or "20R Alum"
--- L["uplp_sr25_mag_20.description"] = ARC9:GetPhrase("uplp_ar15_mag_stanag20.description") or "20-round magazine made out of aluminium."
 
 -- L["uplp_sr25_mag_20_old.printname"] = "20-Round 7.62×51mm (Classic)"
 -- L["uplp_sr25_mag_20_old.compactname"] = "20R Classic"
 -- L["uplp_sr25_mag_20_old.description"] = "Classic 20-round magazine made out of aluminium."
 
 -- L["uplp_sr25_mag_20_poly.printname"] = "20-Round 7.62×51mm (Polymer)"
--- L["uplp_sr25_mag_20_poly.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_pmag20.compactname") or "20R Poly"
--- L["uplp_sr25_mag_20_poly.description"] = ARC9:GetPhrase("uplp_ar15_mag_pmag20.description") or "20-round magazine made out of polymer by SynPoly."
 
--- L["uplp_sr25_mag_25_spear.printname"] = "25-Round 6.8×51mm"
--- L["uplp_sr25_mag_25_spear.compactname"] = "25R 6.8mm"
--- L["uplp_sr25_mag_25_spear.description"] = "25-round magazine chambered in 6.8mm for the DMR-10.\nExtremely good for long range fights."
+-- L["uplp_sr25_mag_25.printname"] = "25-Round 7.62×51mm (Polymer)"
+-- L["uplp_sr25_mag_25.compactname"] = "25R Poly"
+-- L["uplp_sr25_mag_25.description"] = "25-round extended magazine made out of polymer."
 
--- L["uplp_sr25_mag_30_spear.printname"] = "30-Round 6.8×51mm"
--- L["uplp_sr25_mag_30_spear.compactname"] = "30R 6.8mm"
--- L["uplp_sr25_mag_30_spear.description"] = "30-round magazine chambered in 6.8mm for the DMR-10.\nExtremely good for long range fights."
+-- L["uplp_sr25_mag_30.printname"] = "30-Round 7.62×51mm (Polymer)"
+-- L["uplp_sr25_mag_30.compactname"] = "30R Poly"
+-- L["uplp_sr25_mag_30.description"] = "30-round round extended magazine made out of polymer."
 
 ////// Handguards & Barrels
 local sr25brll = {
@@ -3280,10 +3286,21 @@ local sr25brll = {
 -- L["uplp_sr25_muz_m110.compactname"] = "LRR-30"
 -- L["uplp_sr25_muz_m110.description"] = "Factory-made suppressor for the LRR-30 (\"Long-Range Rifle, Model 30\")."
 
+////// Iron Sights
+-- L["uplp_sr25_rstroy.printname"] = "Home Defence M-22 Rear Sight"
+-- L["uplp_sr25_rstroy.compactname"] = "M-22"
+-- L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
+-- ↨Whichever of these is correct ↨
+-- L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
+
+-- L["uplp_sr25_fstroy.printname"] = "Home Defence M-22 Front Sight"
+-- L["uplp_sr25_fstroy.compactname"] = "M-22"
+-- L["uplp_sr25_fstroy.description"] = "Aftermarket front sight made by Home Defence for AR-10 rifles."
+
 ////// Wooden Pieces
 -- L["uplp_sr25_stock_wood.printname"] = "Wooden AR-10 Stock"
 -- L["uplp_sr25_stock_wood.compactname"] = "Wood"
--- L["uplp_sr25_stock_wood.description"] = "Replaces the stock with a wooden AR-10 stock.\nPurely <color=160,160,255>cosmetic</color>."
+-- L["uplp_sr25_stock_wood.description"] = "Replaces the stock with a wooden AR-10 stock." .. desc_stock_l .. desc_stock_standard
 
 -- L["uplp_sr25_pgrip_wood.printname"] = "Wooden AR-10 Pistol Grip"
 -- L["uplp_sr25_pgrip_wood.compactname"] = "Wood"
