@@ -141,6 +141,40 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_oldest")
 
 ATT = {}
 
+ATT.PrintName = "30-Round 7.62x39mm (SynPoly)"
+ATT.CompactName = "30R 7.62 (Poly)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "762p.png", "mips smooth")
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_762"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_pmag.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_pmag")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "30-Round 7.62x39mm (SynPoly Banana)"
+ATT.CompactName = "30R 7.62 (Banana)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "762pb.png", "mips smooth")
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_762"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Folder = "7.62"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_pmagb.mdl"
+
+ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_pmagb")
+
+-------------------------------------------
+
+ATT = {}
+
 ATT.PrintName = "40-Round 7.62x39mm (Bakelite)"
 ATT.CompactName = "40R 7.62 (B)"
 ATT.Description = ATT.PrintName

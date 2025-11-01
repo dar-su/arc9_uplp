@@ -103,6 +103,9 @@ $bodygroup "mag" { // 6
 
 	studio "mag 308.smd" // 18
 	studio "mag 939.smd" // 19
+
+	studio "mag 762 pmag.smd" // 20
+	studio "mag 762 pmagb.smd" // 21
 }   
 
 $bodygroup "nmount" { // 7
