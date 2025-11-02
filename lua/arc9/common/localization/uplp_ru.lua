@@ -3305,3 +3305,27 @@ local sr25brll = {
 -- L["uplp_sr25_pgrip_wood.printname"] = "Wooden AR-10 Pistol Grip"
 -- L["uplp_sr25_pgrip_wood.compactname"] = "Wood"
 -- L["uplp_sr25_pgrip_wood.description"] = "Replaces the pistol grip with a wooden AR-10 pistol grip.\nPurely <color=160,160,255>cosmetic</color>."
+
+//////////////////// SWORD MK-18 Mjölnir
+-- L["uplp_u_weapon_mjolnir"] = "Tor .338"
+-- L["uplp_u_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Tor .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
+
+-- L["uplp_u_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
+
+-- L["uplp_u_weapon_mjolnir_manufacturer"] = "S.W.O.R.D. International"
+
+/////////// Attachments
+////// Handguard
+-- L["uplp_mjolnir_hg_short.printname"] = "ApexCore Compact Handguard & Short Barrel"
+-- L["uplp_mjolnir_hg_short.compactname"] = "ApexCore"
+-- L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Tor .338, and installs the ApexCore Compect handguard."
+
+////// Magazine
+-- L["uplp_mjolnir_mag_20.printname"] = "20-Round PAWCO .338 Drum"
+-- L["uplp_mjolnir_mag_20.compactname"] = "20R .338"
+-- L["uplp_mjolnir_mag_20.description"] = "Aftermarket 20-round drum magazine made by PAWCO."
+
+////// Other
+-- L["uplp_mjolnir_black.printname"] = "Tactical Black"
+-- L["uplp_mjolnir_black.compactname"] = "Black"
+-- L["uplp_mjolnir_black.description"] = "Replaces the receiver with a black coloured one."
