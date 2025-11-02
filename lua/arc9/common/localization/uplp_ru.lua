@@ -3307,12 +3307,12 @@ local sr25brll = {
 -- L["uplp_sr25_pgrip_wood.description"] = "Replaces the pistol grip with a wooden AR-10 pistol grip.\nPurely <color=160,160,255>cosmetic</color>."
 
 //////////////////// SWORD MK-18 Mjölnir
--- L["uplp_u_weapon_mjolnir"] = "Tor .338"
--- L["uplp_u_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Tor .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
+-- L["uplp_weapon_mjolnir"] = "Tor .338"
+-- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Tor .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
 
--- L["uplp_u_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
+-- L["uplp_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
 
--- L["uplp_u_weapon_mjolnir_manufacturer"] = "S.W.O.R.D. International"
+-- L["uplp_weapon_mjolnir_manufacturer"] = "S.W.O.R.D. International"
 
 /////////// Attachments
 ////// Handguard
