@@ -418,11 +418,10 @@ SWEP.ReloadHideBoneTables = {
     },
 }
 
-local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+local mech = {
+    pathNEW .. "mech-01.wav",
+    pathNEW .. "mech-02.wav",
+    pathNEW .. "mech-03.wav",
 }
 
 local UTCrattle = {
@@ -487,7 +486,7 @@ SWEP.Animations = {
         Source = {"fire"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = mechh, t = 0, v = 0.25 },
+            { s = mech, t = 0, v = 0.25 },
         },
     },
     -- Reloads --
