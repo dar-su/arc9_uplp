@@ -119,8 +119,8 @@ L["uplp_class_weapon_pistol"] = "Pistola"
 L["uplp_class_weapon_shotgun"] = "Escopeta"
 L["uplp_class_weapon_smg"] = "Subfusil"
 L["uplp_class_weapon_sniper"] = "Rifle de Francotirador"
--- L["uplp_class_weapon_lever"] = "Lever-Action Rifle"
--- L["uplp_class_weapon_dmr"] = "Designated Marksman Rifle"
+L["uplp_class_weapon_lever"] = "Fusil con acción de palanca"
+L["uplp_class_weapon_dmr"] = "Fusil de tirador designado"
 L["uplp_class_weapon_throwable"] = "Arrojadizo"
 
 //////////////////////////////////////////////////////////////////////
@@ -613,6 +613,7 @@ L["uplp_sticker_pawgray.description"] = "ooo brillante\n\nSticker incluido en <c
 ///////////////////////////// Weapon Names, Descriptions and unique attachments
 //////////////////// AK
 L["uplp_weapon_ak"] = "AK"
+L["uplp_weapon_ak_def"] = "AK 7.62"
 L["uplp_weapon_ak_desc"] = "El fusil de asalto AK, diseñado en 1947, es famoso por su robustez, fiabilidad y sencillez. Normalmente dispara el cartucho 7.62x39mm y ha sido ampliamente utilizado por fuerzas militares e insurgentes de todo el mundo debido a su durabilidad y capacidad de fuego selecto."
 
 L["uplp_weapon_ak12"] = "AK M23"
@@ -878,9 +879,9 @@ L["uplp_ak_mag_762_30_poly.printname"] = "30-Rondas 7.62x39mm (SynPoly)"
 L["uplp_ak_mag_762_30_poly.compactname"] ="30R 7.62 (SP)"
 L["uplp_ak_mag_762_30_poly.description"] = "SPMAG de 30 balas fabricado por SynPoly." .. loaded762
 
-L["uplp_ak_mag_762_30_banana.printname"] = "30-Rondas 7.62x39mm (Banana)"
-L["uplp_ak_mag_762_30_banana.compactname"] ="30R 7.62 (Ban.)"
--- L["uplp_ak_mag_762_30_banana.description"] = "30-round magazine painted to look like a banana. Comes with a <color=100,255,100>free sticker</color>!" .. loaded762
+L["uplp_ak_mag_762_30_pmagb.printname"] = "30-Rondas 7.62x39mm (Banana)"
+L["uplp_ak_mag_762_30_pmagb.compactname"] ="30R 7.62 (Ban.)"
+-- L["uplp_ak_mag_762_30_pmagb.description"] = "30-round magazine painted to look like a banana. Comes with a <color=100,255,100>free sticker</color>!" .. loaded762
 
 L["uplp_ak_mag_762_40.printname"] = "40 Rondas 7.62x39mm (Baquelita)"
 L["uplp_ak_mag_762_40.compactname"] = "40R 7.62 (B)"
@@ -1093,7 +1094,7 @@ L["uplp_ak_smg_conf_ppk20.description"] = "Convierte el AK SMG a la Configuraci�
 L["uplp_weapon_ar15"] = "AR-15"
 L["uplp_weapon_ar15_desc"] = "El AR-15 es un rifle totalmente automático, ligero, refrigerado por aire, accionado por gas y alimentado por cargador que ha ganado popularidad por su modularidad y versatilidad. Es ampliamente utilizado por el ejército y las fuerzas del orden, conocido por su precisión y adaptabilidad a diversas situaciones de combate."
 
-L["uplp_weapon_ar15_smg9"] = "AR-SMG 9mm"
+L["uplp_weapon_ar15_smg9"] = "AR-SMG 9×19"
 L["uplp_weapon_ar15_smg45"] = "AR-SMG .45"
 
 L["uplp_weapon_ar15_real"] = "Colt M4A1"
@@ -1603,8 +1604,9 @@ L["uplp_deagle_skin_blue.description"] = "Sustituye la corredera y el cañón po
 -- L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
 
 //////////////////// Mutant
-L["uplp_weapon_mutant"] = "H-51 \"Werewolf\""
-L["uplp_weapon_mutant_desc"] = "El H-51 \"Werewolf\" es un rifle híbrido único que combina la precisión y la ergonomía de la plataforma AR-15 con el potente cartucho de 7,62x39 mm utilizado tradicionalmente en los rifles AK. Ofrece a los tiradores un arma de fuego versátil y fiable, capaz de disparar ráfagas contundentes sin renunciar a los controles y opciones de personalización del estilo AR. Originalmente un rifle semiautomático hecho para el mercado civil, esta variante fue hecha para uso militar, y por lo tanto permite el fuego totalmente automático."
+L["uplp_weapon_mutant"] = "Werefox"
+L["uplp_weapon_mutant_def"] = "Werefox 7.62"
+L["uplp_weapon_mutant_desc"] = "El H-51 \"Werefox\" es un rifle híbrido único que combina la precisión y la ergonomía de la plataforma AR-15 con el potente cartucho de 7,62x39 mm utilizado tradicionalmente en los rifles AK. Ofrece a los tiradores un arma de fuego versátil y fiable, capaz de disparar ráfagas contundentes sin renunciar a los controles y opciones de personalización del estilo AR. Originalmente un rifle semiautomático hecho para el mercado civil, esta variante fue hecha para uso militar, y por lo tanto permite el fuego totalmente automático."
 
 L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
 
@@ -3176,7 +3178,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 -- L["uplp_sr25_rec_ar10.description"] = "Classic AR-10 receiver with select-fire capability.\nNot compatible with <color=255,100,100>25 or 30-round 6.8mm magazines</color>."
 
 -- L["uplp_sr25_rec_troy.printname"] = "Home Defense 61 Receiver"
--- L["uplp_sr25_rec_troy.compactname"] = "HD61"
+-- L["uplp_sr25_rec_troy.compactname"] = "HD-61"
 -- L["uplp_sr25_rec_troy.description"] = "Aftermarket pump-action receiver for the DMR-10.\nNot compatible with <color=255,100,100>other handguards</color>."
 
 ////// Magazines
@@ -3200,7 +3202,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 
 -- L["uplp_sr25_mag_30.printname"] = "30-Round 7.62×51mm (Polymer)"
 -- L["uplp_sr25_mag_30.compactname"] = "30R Poly"
--- L["uplp_sr25_mag_30.description"] = "30-round round extended magazine made out of polymer."
+-- L["uplp_sr25_mag_30.description"] = "30-round extended magazine made out of polymer."
 
 ////// Handguards & Barrels
 local sr25brll = {
@@ -3235,29 +3237,29 @@ local sr25brll = {
 -- L["uplp_sr25_hg_ar50.compactname"] = "J-CLAP"
 -- L["uplp_sr25_hg_ar50.description"] = "Lightweight tactical handguard for the DMR-10 made by Hoki Armory." .. sr25brll.med
 
--- L["uplp_sr25_hg_mutantxl.printname"] = "Nowosuku SX6 XL Handguard"
+-- L["uplp_sr25_hg_mutantxl.printname"] = "Nowosuku SX6 XL Handguard & Long Barrel"
 -- L["uplp_sr25_hg_mutantxl.compactname"] = "SX6 XL"
--- L["uplp_sr25_hg_mutantxl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. sr25brll.med
+-- L["uplp_sr25_hg_mutantxl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. sr25brll.long
 
 -- L["uplp_sr25_hg_mlok.printname"] = "M-LOK Handguard"
 -- L["uplp_sr25_hg_mlok.compactname"] = "M-LOK"
 -- L["uplp_sr25_hg_mlok.description"] = "Tactical M-LOK handguard allowing installation of various accessories." .. sr25brll.med
 
--- L["uplp_sr25_hg_mp10.printname"] = "S&H Handguard"
+-- L["uplp_sr25_hg_mp10.printname"] = "S&H Handguard & Long Barrel"
 -- L["uplp_sr25_hg_mp10.compactname"] = "S&H"
--- L["uplp_sr25_hg_mp10.description"] = "Aftermarket Sport & Hunting handguard for the DMR-10." .. sr25brll.med
+-- L["uplp_sr25_hg_mp10.description"] = "Aftermarket Sport & Hunting handguard for the DMR-10." .. sr25brll.long
 
--- L["uplp_sr25_hg_m110.printname"] = "LRR-30 Handguard & Long Barrel"
+-- L["uplp_sr25_hg_m110.printname"] = "LRR-30 Handguard & Very Long Barrel"
 -- L["uplp_sr25_hg_m110.compactname"] = "LRR-30"
--- L["uplp_sr25_hg_m110.description"] = "Modernized handguard from the LRR-30 (\"Long-Range Rifle, Model 30\")." .. sr25brll.long
+-- L["uplp_sr25_hg_m110.description"] = "Modernized handguard from the LRR-30 (\"Long-Range Rifle, Model 30\")." .. sr25brll.vlong
 
--- L["uplp_sr25_hg_fns.printname"] = "FNS-90 Handguard & Long Barrel"
+-- L["uplp_sr25_hg_fns.printname"] = "FNS-90 Handguard & Very Long Barrel"
 -- L["uplp_sr25_hg_fns.compactname"] = "FNS-90"
--- L["uplp_sr25_hg_fns.description"] = "Aftermarket handguard with <color=100,255,100>built-in bipod</color>." .. sr25brll.long
+-- L["uplp_sr25_hg_fns.description"] = "Aftermarket handguard with <color=100,255,100>built-in bipod</color>." .. sr25brll.vlong
 
--- L["uplp_sr25_hg_ar10.printname"] = "AR-10 Handguard & Long Barrel"
+-- L["uplp_sr25_hg_ar10.printname"] = "AR-10 Handguard & Very Long Barrel"
 -- L["uplp_sr25_hg_ar10.compactname"] = "AR-10"
--- L["uplp_sr25_hg_ar10.description"] = "Classic AR-10 handguard. Comes with a very long barrel.\nNot compatible with <color=255,100,100>muzzle devices</color>." .. sr25brll.long
+-- L["uplp_sr25_hg_ar10.description"] = "Classic AR-10 handguard. Comes with a very long barrel.\nNot compatible with <color=255,100,100>muzzle devices</color>." .. sr25brll.vlong
 
 ////// Muzzles
 -- L["uplp_sr25_muz_def.printname"] = "DMR-10 Flash Hider"
@@ -3302,9 +3304,9 @@ local sr25brll = {
 
 /////////// Attachments
 ////// Handguard
--- L["uplp_mjolnir_hg_short.printname"] = "ApexCore Compact Handguard & Short Barrel"
--- L["uplp_mjolnir_hg_short.compactname"] = "ApexCore"
--- L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Tor .338, and installs the ApexCore Compect handguard."
+-- L["uplp_mjolnir_hg_short.printname"] = "Compact Handguard & Short Barrel"
+-- L["uplp_mjolnir_hg_short.compactname"] = "Compact"
+-- L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Tor .338, and installs a compact handguard.\nNot a great idea on such powerful weapon, but we won't stop you."
 
 ////// Magazine
 -- L["uplp_mjolnir_mag_20.printname"] = "20-Round PAWCO .338 Drum"
@@ -3314,4 +3316,8 @@ local sr25brll = {
 ////// Other
 -- L["uplp_mjolnir_black.printname"] = "Tactical Black"
 -- L["uplp_mjolnir_black.compactname"] = "Black"
--- L["uplp_mjolnir_black.description"] = "Replaces the receiver with a black coloured one."
+-- L["uplp_mjolnir_black.description"] = "Replaces the receiver and handguard with a black coloured ones."
+
+-- L["uplp_mjolnir_sup.printname"] = "Heavy Suppressor"
+-- L["uplp_mjolnir_sup.compactname"] = "Suppressor"
+-- L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Tor .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
