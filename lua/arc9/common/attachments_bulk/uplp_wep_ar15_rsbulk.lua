@@ -250,3 +250,26 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type3")
 
+
+---------- uplp_sr25_rstroy
+
+
+ATT = {}
+
+ATT.PrintName = "Troy"
+ATT.CompactName = "Troy"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rstroy.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/troy_rs.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_rs_short"}
+
+ATT.ExcludeElements = {"uplp_optic_used", "uplp_ar15_no_rs"}
+
+ATT.Category = "uplp_ar15_rs"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.ModelOffset = Vector(-0.42, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_rstroy")

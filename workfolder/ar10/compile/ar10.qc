@@ -34,7 +34,7 @@ $bodygroup "hgrail" { // 3
 	studio "hg mutant rail.smd"
 	studio "rec troy cover.smd"
 }
-$bodygroup "hgextra" { // 3
+$bodygroup "hgextra" { // 4
 	blank
 	studio "hg fns bipod.smd"
 	studio "hg fns bipod open.smd"
@@ -42,7 +42,7 @@ $bodygroup "hgextra" { // 3
 	studio "mz m110 sup.smd"
 }
 
-$bodygroup "barrel" { // 3
+$bodygroup "barrel" { // 5
 	studio "brl def.smd"
 	studio "brl shortest.smd"
 	studio "brl short.smd"
@@ -52,31 +52,36 @@ $bodygroup "barrel" { // 3
 	blank
 } 
 
-$bodygroup "ammo" { // 4
+$bodygroup "ammo" { // 6
 	studio "762.smd" // 0
 	blank
 }
 
 
 
-$bodygroup "gripdef" { // 5
+$bodygroup "gripdef" { // 7
 	studio "grip_stda.smd" // 0
 	studio "grip ar10.smd" // 0
 	blank
 }
 
-$bodygroup "magdef" { // 7
+$bodygroup "magdef" { // 8
 	studio "mag def.smd" // 0
 	blank
 }
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0 0 0 rotate -90 0 0
+$attachment "1" "barrel" 0.00 0.00 4.50 rotate -90 -0 0
 $attachment "2" "bolt" 0 -0.375 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
- 
+$attachment "5" "barrel" 0.00 0.00 -2.50 rotate -90 -0 0 // very short
+$attachment "6" "barrel" 0.00 0.00 0.00 rotate -90 -0 0 // short
+$attachment "7" "barrel" 0.00 0.00 5.00 rotate -90 -0 0 // long
+$attachment "8" "barrel" 0.00 0.00 9.00 rotate -90 -0 0 // verylong
+$attachment "9" "barrel" 0.00 0.00 14.00 rotate -90 -0 0 // m110 sup
+
 $surfaceprop "default"
  
 $contents "solid"

@@ -572,3 +572,49 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_cqr")
 
+
+-- exclusive to sr25
+---------- uplp_sr25_stock_wood
+ATT = {}
+
+ATT.PrintName = "M16 Fixed Stock"
+ATT.CompactName = "M16"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("entities/uplp_attachements/sr25/stockar10.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar10_stock.mdl"
+ATT.ModelOffset = Vector(0, 0, 0.05)
+
+ATT.SortOrder = -1
+ATT.Category = "uplp_ar10_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- Positives
+ATT.RecoilAutoControlMult = 1.75
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.85
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 + 0.02
+ATT.SpeedMultSights = 0.85 - 0.05
+ATT.SpeedAdd = -0.05 - 0.02
+ATT.SpreadAddHipFire = 0.01 + 0.005
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker_stock"),
+        StickerModel = "models/weapons/arc9/uplp/stickers/ar15_m16stock_1.mdl",
+        Category = "stickers",
+        Pos = Vector(7, 0, 0),
+        Ang = Angle(0, 0, 0),
+    },
+}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_stock_wood")

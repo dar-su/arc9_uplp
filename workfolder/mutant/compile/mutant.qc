@@ -92,12 +92,18 @@ $bodygroup "gripdef" { // 5
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0 0 0 rotate -90 0 0
+$attachment "1" "barrel" 0.00 0.00 4.50 rotate -90 -0 0
 $attachment "2" "bolt" 0 -0.375 0 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
- 
+$attachment "5" "barrel" 0.00 0.00 -2.50 rotate -90 -0 0 // very short
+$attachment "6" "barrel" 0.00 0.00 0.00 rotate -90 -0 0 // short
+$attachment "7" "barrel" 0.00 0.00 5.00 rotate -90 -0 0 // long
+$attachment "8" "barrel" 0.00 0.00 9.00 rotate -90 -0 0 // verylong
+$attachment "9" "barrel" 0.00 0.00 14.00 rotate -90 -0 0 // m110 sup
+$attachment "10" "fakemag" 0 0 0 rotate -90 0 0
+
 $surfaceprop "default"
  
 $contents "solid"

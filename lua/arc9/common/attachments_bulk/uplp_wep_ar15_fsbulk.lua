@@ -116,3 +116,26 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_utg")
 
+
+
+
+---------- uplp_sr25_fstroy
+
+
+ATT = {}
+
+ATT.PrintName = "Troy"
+ATT.CompactName = "Troy"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "fstroy.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/troy_fs.mdl"
+
+ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
+
+ATT.Category = "uplp_ar15_fs"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+-- ATT.ModelOffset = Vector(-0.42, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_fstroy")

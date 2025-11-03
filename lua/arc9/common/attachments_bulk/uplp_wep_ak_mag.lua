@@ -167,7 +167,7 @@ ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_762"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_pmagb.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag_banan.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_pmagb")
 

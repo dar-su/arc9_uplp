@@ -93,3 +93,36 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tacblack")
 
+
+---------- uplp_ar15_chandle_sr25
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_ar15_chandle_sr25"
+ATT.CompactName = "uplp_ar15_chandle_sr25"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "cmod.png", "mips smooth")
+
+ATT.Category = "uplp_ar10_chandle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_sr25")
+
+---------- uplp_ar15_chandle_tac_ar10
+
+
+ATT = {}
+
+ATT.PrintName = ARC9:GetPhrase("uplp_ar15_chandle_tac.printname")
+ATT.CompactName = ARC9:GetPhrase("uplp_ar15_chandle_tac.compactname")
+ATT.Description = ARC9:GetPhrase("uplp_ar15_chandle_tac.description")
+
+ATT.Icon = Material(iconfolder .. "ctac.png", "mips smooth")
+
+ATT.Category = "uplp_ar10_chandle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tac_ar10")

@@ -15,7 +15,7 @@ ATT.Icon = Material(iconfolder .. "g416.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "4"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.09, 0, 0)
 
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = -0.02
@@ -67,7 +67,7 @@ ATT.Icon = Material(iconfolder .. "gtac.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_pgrips.mdl"
 ATT.ModelBodygroups = "2"
--- ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(-0.05, 0, 0)
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_pgrip"
@@ -242,4 +242,26 @@ ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_a1")
+
+-- exclusive to sr25
+---------- uplp_sr25_pgrip_wood
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_sr25_pgrip_wood"
+ATT.CompactName = "uplp_sr25_pgrip_wood"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = -1
+
+ATT.Icon = Material("entities/uplp_attachements/sr25/gripar10.png", "mips smooth")
+
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SprintToFireTimeAdd = 0.02
+
+-- ATT.SortOrder = 0
+ATT.Category = "uplp_ar10_pgrip"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_pgrip_wood")
 

@@ -8,7 +8,7 @@ SWEP.Spawnable = true
 SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
-SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak")
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak_def")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
 
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu

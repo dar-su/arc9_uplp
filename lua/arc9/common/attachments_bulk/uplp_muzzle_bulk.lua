@@ -825,3 +825,60 @@ ATT.NoFlash = true
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_xm")
 
+
+
+---------- uplp_sr25_muz_def
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_sr25_muz_def"
+ATT.CompactName = "uplp_sr25_muz_def"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 45
+
+ATT.Icon = Material(iconfolder .. "sr25/mzsr25.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar10_muzzles.mdl"
+ATT.ModelBodygroups = "0"
+ATT.Scale = 1.0
+
+ATT.Category = "uplp_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
+-- ATT.MuzzleParticleOverride = "muzzleflash_OTS"
+-- ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+-- ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_muz_def")
+
+---------- uplp_sr25_muz_fns
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_sr25_muz_fns"
+ATT.CompactName = "uplp_sr25_muz_fns"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 45
+
+ATT.Icon = Material(iconfolder .. "sr25/mzfns.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar10_muzzles.mdl"
+ATT.ModelBodygroups = "0"
+ATT.Scale = 1.0
+
+ATT.Category = "uplp_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
+-- ATT.MuzzleParticleOverride = "muzzleflash_OTS"
+-- ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+-- ATT.NoFlash = true
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_muz_fns")
