@@ -47,7 +47,7 @@ SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 SWEP.ShellScale = 1.0
-SWEP.ShellPitch = 90
+SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.75
 SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
 
@@ -212,7 +212,7 @@ SWEP.Firemodes = {
     }
 }
 
-SWEP.ShootPitch = 90
+SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
 
 -- HoldType Info

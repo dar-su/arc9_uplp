@@ -108,7 +108,7 @@ L["uplp_category_weapon_mg"] = "3Пулемёты"
 L["uplp_category_weapon_pistol"] = "6Пистолеты"
 L["uplp_category_weapon_shotgun"] = "4Дробовики"
 L["uplp_category_weapon_smg"] = "2Пистолеты-пулеметы"
-L["uplp_category_weapon_sniper"] = "5Снайперские винтовки"
+L["uplp_category_weapon_sniper"] = "5Снайперские и марксманские винтовки"
 L["uplp_category_weapon_utils"] = "7Утилитарное"
 
 /////////// Weapon Classes

@@ -700,8 +700,8 @@ ATT.RecoilAdd = 0.3
 ATT.RangeMinAdd = -20 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
 
-ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -3, 0) end
-ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-7, -7, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-7, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mjolnir_hg_short")
 
@@ -734,6 +734,12 @@ ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
 }
 
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_drum"
+    end
+end
+
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/mjolnir_mag_drum.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_mjolnir_mag_20")
@@ -752,3 +758,69 @@ ATT.Category = "uplp_mjolnir_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ARC9.LoadAttachment(ATT, "uplp_mjolnir_black")
+
+
+---------- uplp_mjolnir_sup
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_mjolnir_sup"
+ATT.CompactName = "uplp_mjolnir_sup"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
+
+ATT.Icon = Material("entities/uplp_attachements/lightsup.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/muzzle_shortsup.mdl"
+ATT.ModelOffset = Vector(-0.125, 0, 0)
+ATT.Scale = Vector(2, 1.4, 1.4)
+
+ATT.Category = "uplp_mjolnir_muzzle"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_muzzle_used"}
+
+ATT.Silencer = true
+ATT.MuzzleParticleOverride = "muzzleflash_suppressed"
+ATT.MuzzleParticleOverride_Priority = 10
+ATT.MuzzleDevice = true
+
+ATT.CustomPros = {
+[ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
+}
+
+ATT.ShootVolumeMult = 0.75
+
+ATT.BarrelLengthAdd = 3
+ATT.SpreadMult = 1.1
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.02
+
+ATT.Overheat = true
+ATT.HeatDissipation = 2 --
+ATT.HeatPerShot = 1
+ATT.HeatLockout = false
+ATT.MalfunctionWait = 0
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.012)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 5, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_mjolnir_sup")

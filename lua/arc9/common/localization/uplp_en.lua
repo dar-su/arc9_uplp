@@ -108,7 +108,7 @@ L["uplp_category_weapon_mg"] = "3Machine Guns"
 L["uplp_category_weapon_pistol"] = "6Pistols"
 L["uplp_category_weapon_shotgun"] = "4Shotguns"
 L["uplp_category_weapon_smg"] = "2Submachine Guns"
-L["uplp_category_weapon_sniper"] = "5Sniper Rifles"
+L["uplp_category_weapon_sniper"] = "5Sniper & Marksman Rifles"
 L["uplp_category_weapon_utils"] = "7Utilities"
 
 /////////// Weapon Classes
@@ -3358,3 +3358,7 @@ L["uplp_mjolnir_mag_20.description"] = "Aftermarket 20-round drum magazine made 
 L["uplp_mjolnir_black.printname"] = "Tactical Black"
 L["uplp_mjolnir_black.compactname"] = "Black"
 L["uplp_mjolnir_black.description"] = "Replaces the receiver and handguard with a black coloured ones."
+
+L["uplp_mjolnir_sup.printname"] = "Heavy Suppressor"
+L["uplp_mjolnir_sup.compactname"] = "Suppressor"
+L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Tor .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."

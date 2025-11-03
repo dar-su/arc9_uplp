@@ -48,7 +48,7 @@ SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_4570.mdl"
 SWEP.ShellScale = 1
-SWEP.ShellPitch = 90
+SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.6
 SWEP.ShellSounds = ARC9.Shell308SoundsTable
 

@@ -196,6 +196,16 @@ $sequence "inspect_empty" {
 	// snap
 	fps 30
 }
+$sequence "inspect_alt" {
+	"anims\inspect_alt.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_alt" {
+	"anims\inspect_e_alt.smd"
+	// snap
+	fps 30
+}
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"
@@ -238,6 +248,27 @@ $bonemerge "ValveBiped.Bip01_R_Finger12"
 $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
+
+$bonemerge "bullet1"
+$bonemerge "bullet2"
+$bonemerge "bullet3"
+$bonemerge "bullet_5"
+$bonemerge "bullet_6"
+$bonemerge "bullet_7"
+$bonemerge "bullet_8"
+$bonemerge "bullet_9"
+$bonemerge "bullet_10"
+$bonemerge "bullet_11"
+$bonemerge "bullet_12"
+$bonemerge "bullet_13"
+$bonemerge "bullet_14"
+$bonemerge "bullet_15"
+$bonemerge "bullet_16"
+$bonemerge "bullet_17"
+$bonemerge "bullet_18"
+$bonemerge "bullet_19"
+$bonemerge "bullet_20"
+$bonemerge "bullet_21"
 
 // $collisionmodel "col.smd"
 // {
