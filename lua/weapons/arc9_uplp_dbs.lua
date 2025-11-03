@@ -342,12 +342,13 @@ SWEP.PeekAng = Angle(0, 0.4, -40)
 
 -- urbna!
 local pathUT = ")uplp_urban_temp/dbs/"
+local pathNEW = ")uplp_rz/dbs/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.wav",
-    pathUT .. "fire-02.wav",
-    pathUT .. "fire-03.wav",
+    pathNEW .. "fire-01.wav",
+    pathNEW .. "fire-02.wav",
+    pathNEW .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
