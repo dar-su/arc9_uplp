@@ -36,7 +36,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+    "[HD-61]XQAAAQAqAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrhNtDwWqZ571IeTw0sRjEW/q/kaLLtji7K1yaw1YEurSKu47tnY3az2j/A9AMJC1h/uOOPBEMCk1/lYuOCoXrVtuYIfkwfc9JcddSfn4uov/Y32aLRB+WUbTz3CfI+ek/g4QnL9eShfU333OV6Syz5CPBggkpsCA1fgPopRIpqHl/yi1Y3Nu9Ifv13qDKbSycPYr/Kzyze2uVTegPaT9KPDcssadS/sAwELsdUVpZKgg=",
+    "[AR-10]XQAAAQAYAgAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmiovXEOR9Bh1Ccpk3zQ2EI5GwbKalmQLkgw4l5J6XYXf2rOffkEzMUL6PKLKmnmTi+C1YsA3gcbD82KYbcNGbMX9g2njwkrCxcVvan7wCuAjG2TivXOykc+t9phfBmJKhVudY1cARVgnUGxGnzhUhKi/HANTXLLP17CVXsjbVI2M+Qgjx8HwsF4c1r4Gngb86nvojf3y6kA==",
+    "[LRR-30]XQAAAQBQAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt8Uhya1ju26pY08L1cXQOzA3MedyAvS8GLnWTy8e8NSRFUZPx41hrQbLtUlw8jPOdrI3k+1uAF4aNzkQnKh8YCqNnHo4doNrtCEOKGlIRODYDnWZiXI/AfojT/ECtGtu3F5+vdxQUdRfE/aSH269obeRmGq6Ls3PseqZdBZRxTkRFNE8L2nbO96y/9T6OpKg+XED1+lyw1Uvhji2JZ2HMay"
 }
 
 SWEP.DefaultBodygroups = "0000000000000000" -- Might as well prepare for the future
@@ -82,19 +84,30 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 14 -- Damage dealt after maximum range
+SWEP.DamageMax = 40
+SWEP.DamageMin = 28
+SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
-SWEP.Penetration = 15 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 2 -- How much kick things will have when hit
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2.2,
+    [HITGROUP_CHEST] = 1.0,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
+
+SWEP.Penetration = 30 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 8
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 60 / ARC9.HUToM
+SWEP.RangeMin = 30 / ARC9.HUToM
+SWEP.RangeMax = 120 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 840 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -105,68 +118,68 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 2 * 0.75
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.4
+SWEP.Recoil = 1.6
+SWEP.RecoilUp = 1.55
+SWEP.RecoilSide = 1.2
 
-SWEP.RecoilRandomUp = 1
+SWEP.RecoilRandomUp = 1.1
 SWEP.RecoilRandomSide = 1.1
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.5 * 1.5
+SWEP.RecoilAutoControl = 1.25 * 1.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.5
+SWEP.VisualRecoil = 1.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0 -- Vertical tilt
-SWEP.VisualRecoilSide = 0.01 -- Horizontal tilt
-SWEP.VisualRecoilRoll = -2.5 -- Roll tilt
-SWEP.VisualRecoilPunch = 10 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
+SWEP.VisualRecoilRoll = 2.5 -- Roll tilt
+SWEP.VisualRecoilPunch = 2.5 -- How far back visual recoil moves the gun
 SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
-SWEP.VisualRecoilPositionBumpUp = .25
+SWEP.VisualRecoilPositionBumpUp = .1
 
-SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 2
-SWEP.VisualRecoilSideHipFire = -0.1
+SWEP.VisualRecoilMultHipFire = 0.5
+SWEP.VisualRecoilUpHipFire = 0.75
+SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 2
+SWEP.VisualRecoilPunchHipFire = 0.5
 SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.008
-SWEP.SpreadAddHipFire = 0.025 - 0.01
+SWEP.Spread = 0.003
+SWEP.SpreadAddHipFire = 0.035
 
-SWEP.SpreadAddRecoil = 0.012
-SWEP.SpreadAddMove = 0.01
+SWEP.SpreadAddRecoil = 0.013
+SWEP.SpreadAddMove = 0.012
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 8
-SWEP.RecoilResetTime = 0.03
-SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 8
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
-SWEP.SpeedMultShooting = 0.9
+SWEP.Speed = 0.8
+SWEP.SpeedMultSights = 0.6
+SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.33 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.34 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.4
+SWEP.SprintToFireTime = 0.43
 
-SWEP.SwayAddSights = 1
-SWEP.BarrelLength = 35
+SWEP.SwayAddSights = 0
+SWEP.BarrelLength = 45
 
 -- Shooting and Firemodes
 SWEP.RPM = 400 -- How fast gun shoot
@@ -344,6 +357,18 @@ local thetoggle = {{
     }, t = 0
 }}
 
+local pumpbck = {
+    ")uplp_rz/ksg/forearm-back-01.ogg",
+    ")uplp_rz/ksg/forearm-back-02.ogg",
+    ")uplp_rz/ksg/forearm-back-03.ogg",
+}
+
+local pumpfwd = {
+    ")uplp_rz/ksg/forearm-forward-01.ogg",
+    ")uplp_rz/ksg/forearm-forward-02.ogg",
+    ")uplp_rz/ksg/forearm-forward-03.ogg",
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -427,6 +452,10 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
+    },
+    ["fire_nomech"] = {
+        Source = "fire",
+        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
@@ -695,6 +724,19 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
+
+    ["cycle"] = {
+        Source = {"cycle1", "cycle2"},
+        -- ShellEjectAt = 5,
+        MinProgress = 0.4,
+        FireASAP = true,
+        Mult = 0.9,
+        EventTable = {
+            {s = pumpbck, t = 0.0, v = 1},
+            {s = pumpfwd, t = 0.05},
+        },
+    },
+
     -- Firemodee --
 
     ["firemode_1"] = {
@@ -826,9 +868,9 @@ SWEP.AttachmentElements = {
         [7] = { Pos = Vector(0.015, 0.97, 21.25) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-2.0) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-1.2) },
-        [10] = { Pos = Vector(0.045, 1.85+0.1, 13) },
+        [10] = { Pos = Vector(0.045, 1.85+0.1, 13) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55+0.1, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-2.0) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-2.0) },
     }},
 
 
@@ -839,79 +881,81 @@ SWEP.AttachmentElements = {
         [7] = { Pos = Vector(0.015, 0.95, 14.4) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-6.9) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-6.9) },
-        [10] = { Pos = Vector(0.045, 1.85-0.15, 10) },
+        [10] = { Pos = Vector(0.045, 1.85-0.15, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55-0.15, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-6.9) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-6.9) },
     }},
 
     ["uplp_sr25_hg_s15"] = { Bodygroups = { { 2, 7 }, { 5, 2 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 17.11) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-4.5) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-4.5) },
-        [10] = { Pos = Vector(0.045, 1.85-0.26, 10) },
+        [10] = { Pos = Vector(0.045, 1.85-0.26, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55-0.26, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-4.5) },
+        [12] = { Pos = Vector(0.045, 1.85, 15) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-4.5) },
     }},
     ["uplp_sr25_hg_mutant"] = { Bodygroups = { { 2, 5 }, { 5, 2 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 17.11) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-5.1) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-5.1) },
-        [10] = { Pos = Vector(0.045, 1.85+0.15, 10) },
+        [10] = { Pos = Vector(0.045, 1.85+0.15, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55+0.15, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-5.1) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-5.1) },
     }},
 
     ["uplp_sr25_hg_tac"] = { Bodygroups = { { 2, 9 }, { 5, 0 } }, AttPosMods = {
         [8] = { Pos = Vector(0.02, -0.32, 20.2-1.2) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-1.2) },
-        [10] = { Pos = Vector(0.045, 1.85-0.15, 10) },
+        [10] = { Pos = Vector(0.045, 1.85-0.15, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55-0.15, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-1.2) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-1.2) },
     }},
     ["uplp_sr25_hg_s15xl"] = { Bodygroups = { { 2, 8 }, { 5, 0 } }, AttPosMods = {
         [8] = { Pos = Vector(0.02, -0.32, 20.2-1.2) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-1.2) },
-        [10] = { Pos = Vector(0.045, 1.85-0.26, 10) },
+        [10] = { Pos = Vector(0.045, 1.85-0.26, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55-0.26, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-1.2) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-1.2) },
     }},
     ["uplp_sr25_hg_ar50"] = { Bodygroups = { { 2, 1 }, { 5, 0 } }, AttPosMods = {
         [8] = { Pos = Vector(0.02, -0.32, 20.2-3.6) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-1.2) },
-        [10] = { Pos = Vector(0.045, 1.85-0.22, 10) },
+        [10] = { Pos = Vector(0.045, 1.85-0.22, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55-0.22, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-3.6) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-3.6) },
     }},
 
     ["uplp_sr25_hg_mutantxl"] = { Bodygroups = { { 2, 6 }, { 5, 3 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 21.9) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-0.1) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-0.1) },
-        [10] = { Pos = Vector(0.045, 1.85+0.15, 10) },
+        [10] = { Pos = Vector(0.045, 1.85+0.15, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55+0.15, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-0.1) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-0.1) },
     }},
     ["uplp_sr25_hg_mp10"] = { Bodygroups = { { 2, 4 }, { 5, 6 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 21.9) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-4.25) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-4.25) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-4.25) },
     }},
 
     ["uplp_sr25_hg_fns"] = { Bodygroups = { { 2, 2 }, { 5, 4 }, { 4, 1 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 26.0) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2+1.1) },
         [9] = { Pos = Vector(-0.9, 0.95, 20+1.1) },
-        [10] = { Pos = Vector(0.045, 1.85+0.37, 10) },
+        [10] = { Pos = Vector(0.045, 1.85+0.37, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55+0.37, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2+1.1) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2+1.1) },
     }},
     ["uplp_sr25_hg_m110"] = { Bodygroups = { { 2, 3 }, { 5, 6 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 24.9) },
         [8] = { Pos = Vector(0.02, -0.32, 20.2-2.9) },
         [9] = { Pos = Vector(-0.9, 0.95, 20-2.9) },
-        [10] = { Pos = Vector(0.045, 1.85-0.25, 10) },
+        [10] = { Pos = Vector(0.045, 1.85-0.25, 10) + Vector(-0.05, -1.12, -7.75) },
         [11] = { Pos = Vector(0.045, 3.55-0.25, 8.8) },
-        [13] = { Pos = Vector(0.02, -0.32, 20.2-2.9) },
+        [12] = { Pos = Vector(0.045, 1.85, 15.5) },
+        [14] = { Pos = Vector(0.02, -0.32, 20.2-2.9) },
     }},
     ["uplp_sr25_hg_ar10"] = { Bodygroups = { { 2, 11 }, { 5, 5 }, { 4, 3 } }, AttPosMods = {
         [7] = { Pos = Vector(0.015, 0.95, 26.0) },
@@ -975,8 +1019,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = {"uplp_sr25_reciever"},
         DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0, 1.5, 1.5),
+        Bone = "pump",
+        Pos = Vector(0, 0, -5.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -1023,8 +1067,10 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
         Category = {"uplp_grip_vert", "uplp_grip_horiz", "uplp_grip_horiz_cclamp", "uplp_grip_horiz_long"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0.045, 1.85, 10),
+        -- Bone = "body",
+        -- Pos = Vector(0.045, 1.85, 10),
+        Bone = "pump",
+        Pos = Vector(0.045, 1.85, 10) + Vector(-0.05, -1.12, -7.75),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_no_grip"},
     },
@@ -1038,6 +1084,15 @@ SWEP.Attachments = {
         ExcludeElements = {"uplp_sr25_rec_troy"},
         MergeSlots = {10}, 
         Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = {"uplp_bipod"},
+        DefaultIcon = Material(defatt .. "bipod.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0.045, 1.85, 19),
+        Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_no_grip", "uplp_no_bipod"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
@@ -1137,21 +1192,3 @@ SWEP.HookP_NameChange = function(self, name)
 
     return name
 end
-
--- Moka's shit
--- SWEP.Recoil = 1.5
-SWEP.RecoilAutoControl = 1.5
-SWEP.RecoilAutoControlMultShooting = 0.05
-
-SWEP.RecoilMultSights = 0.875
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.016
-
-SWEP.SpreadAddRecoil = 0.04
-SWEP.SpreadAddMove = 0.02
-
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.2

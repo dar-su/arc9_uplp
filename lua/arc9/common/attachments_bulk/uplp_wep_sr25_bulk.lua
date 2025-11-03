@@ -63,6 +63,42 @@ ATT.SwayMultSights = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_rec_tac")
 
+---------- uplp_sr25_rec_auto
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_sr25_rec_auto"
+ATT.CompactName = "uplp_sr25_rec_auto"
+ATT.Description = ATT.PrintName
+
+ATT.SortOrder = 999
+ATT.AdminOnly = true -- !!!
+-- i don't really want this gun to be auto in any way
+-- ar10 is exclusion cuz its realistic and has no atts and old and shit
+-- this att is for  fun
+
+ATT.Icon = Material("entities/uplp_attachements/ar15/recm4.png", "mips smooth")
+
+ATT.Category = "uplp_sr25_reciever"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Firemodes = {
+    {
+        Mode = -1, -- aut0
+        RPM = 650,
+        PoseParam = 2
+    },
+    {
+        Mode = 1, -- Semi
+        RPM = 500,
+        PoseParam = 1,
+    }
+}
+
+
+ARC9.LoadAttachment(ATT, "uplp_sr25_rec_auto")
+
 ---------- uplp_sr25_rec_troy
 
 
@@ -74,14 +110,42 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "rectroy.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_no_barrel", "uplp_ar15_hg_riscover"}
+ATT.ActivateElements = {"uplp_no_barrel", "uplp_ar15_hg_riscover", "uplp_no_bipod"}
 
 ATT.Category = "uplp_sr25_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.PumpAction = true
+ATT.Firemodes = {
+    { Mode = 1, RPM = 7000, PrintName = ARC9:GetPhrase("uplp_firemode_pump") },
+}
 
--- ATT.ExcludeElements = {"uplp_grip_horiz", "uplp_grip_horiz_long"}
+ATT.ManualAction = true
+ATT.SlamFire = true -- or true?
+ATT.NoLastCycle = true
+ATT.ManualActionNoLastCycle = true 
+ATT.ManualActionEjectAnyway = false
+ATT.NoShellEject = true
+ATT.CanReloadWhileUnCycled = true
+ATT.EjectDelay = 0.1
+
+-- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_bizon.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 1
+-- ATT.ModelOffset = Vector(12, 0.5, -1)
+ATT.ModelOffset = Vector(-7.9, -2.3, 5.25)
+
+ATT.SuppressEmptySuffix = true
+
+ATT.Hook_TranslateAnimation = function(wep, anim) -- hack so i won't have to make pump variant for all anims, works suprisingly well
+    if anim == "reload" and wep:Clip1() == 0 then
+        wep:SetNeedsCycle(true)
+    end
+
+    if anim == "fire" then return "fire_nomech" end
+
+    if anim == "ready" then wep:SetNeedsCycle(true) return "draw" end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_rec_troy")
 
@@ -350,6 +414,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brltacshort.png", "mips smooth")
 ATT.SortOrder = 1
+ATT.ActivateElements = {"uplp_no_bipod"}
 
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -410,6 +475,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brlmutant.png", "mips smooth")
 ATT.SortOrder = 2
+ATT.ActivateElements = {"uplp_no_bipod"}
 
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -561,6 +627,7 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "brlfns.png", "mips smooth")
 ATT.SortOrder = 5
+ATT.ActivateElements = {"uplp_no_bipod"}
 
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

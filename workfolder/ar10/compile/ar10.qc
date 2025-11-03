@@ -315,6 +315,19 @@ $sequence "reload_emptyretro" {
 }
 
 
+$sequence "cycle1" {
+	"anims\cycle_1.smd"
+	"anims\cycle_iron.smd"
+	blend "sights" 0 1
+	fps 30
+}
+$sequence "cycle2" {
+	"anims\cycle_2.smd"
+	"anims\cycle_iron.smd"
+	blend "sights" 0 1
+	fps 30
+}
+
 
 
 $sequence "inspect" {

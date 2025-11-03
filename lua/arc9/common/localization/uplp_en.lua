@@ -3216,6 +3216,10 @@ L["uplp_sr25_rec_tac.printname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.pri
 L["uplp_sr25_rec_tac.compactname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.printname") or "Hoki"
 L["uplp_sr25_rec_tac.description"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.printname") or "Tactical, lightweight receiver built for speed made by Hoki Armory."
 
+L["uplp_sr25_rec_auto.printname"] = "Auto Receiver"
+L["uplp_sr25_rec_auto.compactname"] = "Auto"
+L["uplp_sr25_rec_auto.description"] = "Automatic receiver for the DMR-10.\n\n<color=255,255,100>Admin only - drastically improves stats and unbalanced. It is here for fun reason only - this SWEP is meant to be used only as semi-auto DMR!</color>"
+
 ////// Magazines
 L["uplp_sr25_mag_10.printname"] = "10-Round 7.62×51mm (Aluminium)"
 L["uplp_sr25_mag_10.compactname"] = "10R Alum"
