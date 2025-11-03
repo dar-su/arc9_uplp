@@ -201,7 +201,7 @@ SWEP.Firemodes = {
     { Mode = -1, PoseParam = 1 }, -- Automatic
 }
 
-SWEP.ShootPitch = 90
+SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
 
 -- HoldType Info

@@ -141,7 +141,7 @@ SWEP.Firemodes = {
 	}, -- Semi
 }
 
-SWEP.ShootPitch = 90
+SWEP.ShootPitch = 100
 SWEP.ShootVol = 110
 
 -- HoldType Info

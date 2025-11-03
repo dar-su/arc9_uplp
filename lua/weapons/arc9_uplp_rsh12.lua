@@ -222,7 +222,7 @@ SWEP.ManualActionNoLastCycle = false
 SWEP.ManualActionEjectAnyway = false
 SWEP.FiremodeAnimLock = true
 
-SWEP.ShootPitch = 90
+SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
 
 -- HoldType Info

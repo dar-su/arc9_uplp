@@ -52,7 +52,7 @@ SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 SWEP.ShellScale = 1.0
-SWEP.ShellPitch = 90
+SWEP.ShellPitch = 100
 SWEP.ShellSounds = ARC9.PistolShellSoundsTable
 
 SWEP.CaseEffectQCA = 2
@@ -197,7 +197,7 @@ SWEP.Firemodes = {
     PoseParam = 2 }
 }
 
-SWEP.ShootPitch = 90
+SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
 
 -- HoldType Info
