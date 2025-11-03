@@ -1613,8 +1613,8 @@ L["uplp_deagle_skin_frame.compactname"] = "Chrome"
 L["uplp_deagle_skin_frame.description"] = "Replaces the matte frame with a chromed one."
 
 //////////////////// Mutant
-L["uplp_weapon_mutant_def"] = "Werefox 7.62"
 L["uplp_weapon_mutant"] = "Werefox"
+L["uplp_weapon_mutant_def"] = "Werefox 7.62"
 L["uplp_weapon_mutant_desc"] = "The H-51 \"Werefox\" is a unique hybrid rifle that combines the accuracy and ergonomics of the AR-15 platform with the powerful 7.62×39mm cartridge traditionally used in AK rifles. It offers shooters a versatile and reliable firearm capable of delivering hard-hitting rounds while still maintaining familiar AR-style controls and customization options. Originally a semi-automatic rifle made for the civilian market, this variant was made for military use, and therefore allows for fully automatic fire."
 
 L["uplp_weapon_mutant_real"] = "CMMG Mk47 Mutant"
@@ -3347,7 +3347,7 @@ L["uplp_weapon_mjolnir_manufacturer"] = "S.W.O.R.D. International"
 ////// Handguard
 L["uplp_mjolnir_hg_short.printname"] = "Compact Handguard & Short Barrel"
 L["uplp_mjolnir_hg_short.compactname"] = "Compact"
-L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Tor .338, and installs the compact handguard.\nNot a great idea on such powerful weapon, but we won't stop you."
+L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Tor .338, and installs a compact handguard.\nNot a great idea on such powerful weapon, but we won't stop you."
 
 ////// Magazine
 L["uplp_mjolnir_mag_20.printname"] = "20-Round PAWCO .338 Drum"
