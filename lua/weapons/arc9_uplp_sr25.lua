@@ -118,17 +118,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1.6
-SWEP.RecoilUp = 1.55
-SWEP.RecoilSide = 1.2
+SWEP.Recoil = 2 * 0.75
+SWEP.RecoilUp = 1
+SWEP.RecoilSide = 0.85
 
-SWEP.RecoilRandomUp = 1.1
-SWEP.RecoilRandomSide = 1.1
+SWEP.RecoilRandomUp = 0.85
+SWEP.RecoilRandomSide = 0.85
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25 * 1.5
+SWEP.RecoilAutoControl = 1.75 * 1.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -154,35 +154,35 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.003
-SWEP.SpreadAddHipFire = 0.035
+SWEP.Spread = 0.0015
+SWEP.SpreadAddHipFire = 0.04 - 0.01
 
-SWEP.SpreadAddRecoil = 0.013
-SWEP.SpreadAddMove = 0.012
+SWEP.SpreadAddRecoil = 0.007
+SWEP.SpreadAddMove = 0.014
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 8
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 8
+SWEP.RecoilDissipationRate = 6
+SWEP.RecoilResetTime = 0
+SWEP.RecoilPerShot = 1 / 6
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.8
-SWEP.SpeedMultSights = 0.6
+SWEP.Speed = 0.8 + 0.05
+SWEP.SpeedMultSights = 0.55 / 0.85
 SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.43
+SWEP.AimDownSightsTime = 0.38 - 0.1
+SWEP.SprintToFireTime = 0.4 - 0.1
 
-SWEP.SwayAddSights = 0
+SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 45
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot
+SWEP.RPM = 360 -- How fast gun shoot
 SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once

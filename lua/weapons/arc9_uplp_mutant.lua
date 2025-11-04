@@ -90,11 +90,11 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 90 / ARC9.HUToM
+SWEP.RangeMin = 35 / ARC9.HUToM
+SWEP.RangeMax = 120 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 760 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -141,10 +141,10 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.0045
-SWEP.SpreadAddHipFire = 0.03 - 0.01
+SWEP.Spread = 0.0038
+SWEP.SpreadAddHipFire = 0.04 - 0.01
 
-SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddRecoil = 0.012
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.05
 
@@ -153,20 +153,20 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 9
+SWEP.RecoilPerShot = 1 / 11
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.6 / 0.85 -- When aiming
+SWEP.Speed = 0.8 + 0.05
+SWEP.SpeedMultSights = 0.55 / 0.85
 SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.37 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.37 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.38 - 0.1
+SWEP.SprintToFireTime = 0.4 - 0.1
 
 SWEP.SwayAddSights = 1
-SWEP.BarrelLength = 40
+SWEP.BarrelLength = 45
 
 -- Shooting and Firemodes
 SWEP.RPM = 600 -- How fast gun shoot
