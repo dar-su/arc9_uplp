@@ -126,7 +126,7 @@ ATT.ManualActionNoLastCycle = true
 ATT.ManualActionEjectAnyway = false
 ATT.NoShellEject = true
 ATT.CanReloadWhileUnCycled = true
-ATT.EjectDelay = 0.1
+ATT.EjectDelay = 0.025
 
 -- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_bizon.mdl"
@@ -419,10 +419,10 @@ ATT.ActivateElements = {"uplp_no_bipod"}
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tacshort.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(4, 0.05, -1.3)
 
 -- Positives
 ATT.SpreadAddHipFire = -0.01
@@ -455,10 +455,10 @@ ATT.SortOrder = 2
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(4, -0.05, -1.3)
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
@@ -480,10 +480,10 @@ ATT.ActivateElements = {"uplp_no_bipod"}
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tacshort.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5.5, 0.05, -1.3)
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
@@ -523,10 +523,10 @@ ATT.SortOrder = 3
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tac.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(6, 0.2, -1.3)
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_tac")
 
@@ -542,10 +542,10 @@ ATT.SortOrder = 3
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsuxl.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(4, -0.05, -1.3)
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_s15xl")
 
@@ -561,10 +561,10 @@ ATT.SortOrder = 3
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tacshort.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(6, -0.08, -1.07)
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_ar50")
 
@@ -581,10 +581,10 @@ ATT.SortOrder = 4
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tac.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(6, 0.2, -1.3)
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
@@ -605,10 +605,10 @@ ATT.SortOrder = 4
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5, 0.3, -0.8)
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
@@ -632,10 +632,10 @@ ATT.ActivateElements = {"uplp_no_bipod"}
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_a1.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(6, 0.1, -1.2)
 
 -- Positives
 ATT.RecoilPerShot = 1 / 13
@@ -669,10 +669,10 @@ ATT.SortOrder = 5
 ATT.Category = "uplp_sr25_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_a1.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(5, 0.1, -0.8)
 
 -- Positives
 ATT.RecoilPerShot = 1 / 13
@@ -706,10 +706,10 @@ ATT.ActivateElements = {"uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_tactica
 ATT.Category = "uplp_sr25_barrel_ar10"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_nwsu.mdl"
--- ATT.LHIK = true
--- ATT.LHIK_Priority = 0
--- ATT.ModelOffset = Vector(-5, -0.3, -1.6)
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(4.6, 0.1, -1.1)
 
 -- Positives
 ATT.RecoilPerShot = 1 / 13
