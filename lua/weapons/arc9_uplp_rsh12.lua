@@ -174,16 +174,16 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.Spread = 0.005
 SWEP.SpreadAddHipFire = 0.015
 
-SWEP.SpreadAddRecoil = 0.03
+SWEP.SpreadAddRecoil = 0.045
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 3.5
-SWEP.RecoilResetTime = 0.01
-SWEP.RecoilPerShot = 1 / 1.5
+SWEP.RecoilDissipationRate = 2
+SWEP.RecoilResetTime = 0
+SWEP.RecoilPerShot = 1 / 2
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
@@ -204,8 +204,21 @@ SWEP.RPM = 180 -- How fast gun shoot
 SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_doubleaction"), PoseParam = 0  },
-    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"), PoseParam = 1, ManualAction = true, RPM = 300, TriggerDelay = false, RecoilKickMult = 0.75 },
+    {
+        Mode = 1,
+        PrintName = ARC9:GetPhrase("uplp_mechanism_doubleaction"),
+        PoseParam = 0
+    },
+    {
+        Mode = 1,
+        PrintName = ARC9:GetPhrase("uplp_mechanism_singleaction"),
+        PoseParam = 1,
+        ManualAction = true,
+        RPM = 300,
+        TriggerDelay = false,
+        RecoilKickMult = 0.75,
+        RecoilResetTime = 0.15,
+    },
 }
 
 SWEP.NoShellEject = true
@@ -536,7 +549,7 @@ SWEP.Animations = {
 
     ["cycle"] = {
         Source = {"cycle1", "cycle2"},
-        MinProgress = 0.55,
+        MinProgress = 0.35,
         -- Mult = 1.0,
         -- Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
         -- now its ok
@@ -549,7 +562,7 @@ SWEP.Animations = {
 
     ["cycle_sights"] = {
         Source = "cycle1",
-        MinProgress = 0.55,
+        MinProgress = 0.35,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },

@@ -510,6 +510,7 @@ SWEP.Animations = {
         Source = {"cycle_1", "cycle_2", "cycle_3"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         EjectAt = 3.5 / 30,
+        MinProgress = 0.8,
         EventTable = {
             { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.6 },

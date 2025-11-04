@@ -228,7 +228,7 @@ SWEP.Firemodes = {
         DispersionSpreadAddHipFire = -0.02,
         Spread = 0.032,
         DamageMax = 200,
-        RPM = 60 / 0.2,
+        RPM = 600,
     },
     {
         Mode = 1, -- Semi
