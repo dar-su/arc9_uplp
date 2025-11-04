@@ -245,6 +245,12 @@ SWEP.RPM = 300 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 12 -- How many bullets shot at once
 
+local dupletsounds = {
+    ")uplp_rz/dbs/" .. "fire-both-01.wav",
+    ")uplp_rz/dbs/" .. "fire-both-02.wav",
+    ")uplp_rz/dbs/" .. "fire-both-03.wav",
+}
+
 SWEP.Firemodes = {
     {
         Mode = 1
@@ -260,6 +266,9 @@ SWEP.Firemodes = {
         RecoilFirstShot = 0,
         RecoilAddShooting = 1,
         DispersionSpreadMultRecoil = 0,
+
+        NoShootSoundAfterFirstShot = true,
+        ShootSound = dupletsounds,
     },
 }
 

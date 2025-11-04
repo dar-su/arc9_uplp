@@ -126,7 +126,7 @@ ATT.ManualActionNoLastCycle = true
 ATT.ManualActionEjectAnyway = false
 ATT.NoShellEject = true
 ATT.CanReloadWhileUnCycled = true
-ATT.EjectDelay = 0.1
+ATT.EjectDelay = 0.025
 
 -- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_bizon.mdl"
