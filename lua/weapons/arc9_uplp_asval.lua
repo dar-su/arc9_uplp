@@ -301,6 +301,7 @@ SWEP.DropMagazineVelocity = Vector(0, 80, -80)
 
 ---- Sounds
 local pathRZ = ")uplp_rz/asval/"
+local pathRZAK = ")uplp_rz/ak/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/ak/"
 local pathUTC = ")uplp_urban_temp/common/"
@@ -518,7 +519,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "bonk.ogg", t = 10 / 30, c = ca, v = 1 },
+            { s = pathRZAK .. "magout.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -544,7 +546,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "bonk.ogg", t = 10 / 30, c = ca, v = 1 },
+            { s = pathRZAK .. "magout.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "chback.ogg", t = 36 / 30 - 0.1, c = ca, v = 1 },
             { s = pathRZ .. "chforward.ogg", t = 41 / 30, c = ca, v = 1 },
@@ -573,7 +576,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "bonk.ogg", t = 10 / 30, c = ca, v = 1 },
+            { s = pathRZAK .. "magout.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -599,7 +603,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 8 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "bonk.ogg", t = 10 / 30, c = ca, v = 1 },
+            { s = pathRZAK .. "magout.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "chback.ogg", t = 36 / 30 - 0.1, c = ca, v = 1 },
             { s = pathRZ .. "chforward.ogg", t = 41 / 30, c = ca, v = 1 },
@@ -628,7 +633,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 12 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "bonk.ogg", t = 14 / 30, c = ca, v = 1 },
+            { s = pathRZAK .. "magout.ogg", t = 15 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 22.5 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
@@ -654,7 +660,8 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.6 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, c = ca, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 12 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 13 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "bonk.ogg", t = 14 / 30, c = ca, v = 1 },
+            { s = pathRZAK .. "magout.ogg", t = 15 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "chback.ogg", t = 46 / 30 - 0.1, c = ca, v = 1 },
             { s = pathRZ .. "chforward.ogg", t = 53 / 30, c = ca, v = 1 },

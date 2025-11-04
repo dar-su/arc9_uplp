@@ -47,6 +47,8 @@ local stats556 = {
     DamageMinAdd = -4, -- from 18
 }
 
+local pathRZ = ")uplp_rz/ak/"
+local pathUT = ")uplp_urban_temp/ak/"
 
 
 ----- 7.62 MAGS -----
@@ -78,7 +80,7 @@ ATT.Description = ATT.PrintName
 ATT.ActivateElements = {"can762sticker"}
 
 ATT.Icon = Material(iconfolder .. "762.png", "mips smooth")
-ATT.Category = "uplp_ak_mag_308"
+ATT.Category = {"uplp_ak_mag_308", "uplp_ak_mag_def"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
@@ -118,6 +120,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_old.mdl"
 
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathRZ .. "magout.ogg" then
+        data.sound = pathUT .. "magout.ogg"
+    -- elseif data.sound == pathUT .. "magin.ogg" then
+    --     data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_old")
 
 -------------------------------------------
@@ -134,6 +145,16 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_oldest.mdl"
+
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathRZ .. "magout.ogg" then
+        data.sound = pathUT .. "magout.ogg"
+    -- elseif data.sound == pathUT .. "magin.ogg" then
+    --     data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_oldest")
 
@@ -202,7 +223,7 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
 ATT.SwayMultSights = 1.1
 ATT.SpeedMultSights = 0.9
-ATT.ReloadTimeMult = 1.05
+-- ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40")
 
@@ -237,7 +258,17 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
 ATT.SwayMultSights = 1.1
 ATT.SpeedMultSights = 0.9
-ATT.ReloadTimeMult = 1.05
+-- ATT.ReloadTimeMult = 1.05
+
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathRZ .. "magout.ogg" then
+        data.sound = pathUT .. "magout.ogg"
+    -- elseif data.sound == pathUT .. "magin.ogg" then
+    --     data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_40_old")
 
@@ -502,7 +533,7 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
 ATT.SwayMultSights = 1.1
 ATT.SpeedMultSights = 0.9
-ATT.ReloadTimeMult = 1.05
+-- ATT.ReloadTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
