@@ -309,7 +309,9 @@ ATT.CustomPros = {
 ATT.ClipSizeOverride = 10
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_10"
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_10"
+    end
 end
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_mag_10")
@@ -345,7 +347,9 @@ ATT.CustomPros = {
 ATT.ClipSizeOverride = 10
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_10"
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_10"
+    end
 end
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_mag_10_poly")
@@ -446,7 +450,9 @@ ATT.Category = "uplp_sr25_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
-    return anim .. "_ext"
+    if anim == "reload" or anim == "reload_empty" then
+        return anim .. "_ext"
+    end
 end
 
 -- Positives

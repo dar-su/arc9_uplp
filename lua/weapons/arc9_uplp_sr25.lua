@@ -30,7 +30,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Cylo (inspect)",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
@@ -371,6 +371,23 @@ local pumpfwd = {
     ")uplp_rz/ksg/forearm-forward-03.ogg",
 }
 
+local cylospecttable = {
+    { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+    { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, c = ca, v = 0.8 },
+    { s = pathRZ .. "magrel.ogg", t = 53 / 30, c = ca, v = 1 },
+    { s = pathRZ .. "magout.ogg", t = 61 / 30, c = ca, v = 1 },
+
+    { s = pathUTC .. "movement-sniper-03.ogg", t = 105 / 30, c = ca, v = 0.8 },
+    { s = pathUTC .. "cloth_2.ogg", t = 135 / 30, c = ca, v = 0.8 },
+
+    { s = pathRZ .. "struggle.ogg", t = 159 / 30, c = ca, v = 0.5 },
+    { s = pathRZ .. "maginc1.ogg", t = 162 / 30, c = ca, v = 1 },
+    { s = ")uplp_urban_temp/ak/bonk.ogg", t = 177 / 30, c = ca, v = 0.5 },
+    { s = pathUTC .. "movement-rifle-02.ogg", t = 180 / 30, c = ca, v = 0.8 },
+    { s = pathUTC .. "cloth_4.ogg", t = 185 / 30, c = ca, v = 0.8 },
+    { s = pathUTC .. "cloth_4.ogg", t = 191 / 30 - 0.07, c = ca, v = 0.3 },
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -682,47 +699,110 @@ SWEP.Animations = {
 
     -- Inspecc --
 
+    -- dummified inspect
+    -- ["inspect"] = {
+    --     Source = "inspect",
+    --     FireASAP = true,
+    --     MinProgress = 0.925,
+    --     -- Mult = 1.2,
+    --     EventTable = {
+    --         { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
+    --         { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
+    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
+    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
+    --         { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
+    --         -- {hide = 1, t = 0},
+    --     },
+    --     IKTimeLine = {
+    --         { t = 0, lhik = 1 },
+    --         { t = 0.07, lhik = 0 },
+    --         { t = 0.8, lhik = 0 },
+    --         { t = 0.95, lhik = 1 },
+    --         { t = 1, lhik = 1 },
+    --     },
+    -- },
+    -- ["inspect_empty"] = {
+    --     Source = "inspect_empty",
+    --     FireASAP = true,
+    --     MinProgress = 0.925,
+    --     -- Mult = 1.2,
+    --     EventTable = {
+    --         { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
+    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
+    --         { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
+    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
+    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
+    --         { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
+    --         -- {hide = 1, t = 0},
+    --     },
+    --     IKTimeLine = {
+    --         { t = 0, lhik = 1 },
+    --         { t = 0.07, lhik = 0 },
+    --         { t = 0.8, lhik = 0 },
+    --         { t = 0.95, lhik = 1 },
+    --         { t = 1, lhik = 1 },
+    --     },
+    -- },
+
+    -- cylo inspect
+
     ["inspect"] = {
-        Source = "inspect",
+        Source = "inspect_cylo",
         FireASAP = true,
         MinProgress = 0.925,
         -- Mult = 1.2,
-        EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
-            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
-            -- {hide = 1, t = 0},
-        },
+        EventTable = cylospecttable,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.07, lhik = 0 },
-            { t = 0.8, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.86, lhik = 0 },
+            { t = 0.96, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
     ["inspect_empty"] = {
-        Source = "inspect_empty",
+        Source = "inspect_cylo_empty",
         FireASAP = true,
         MinProgress = 0.925,
         -- Mult = 1.2,
-        EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.3 },
-            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, c = ca, v = 0.2 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, c = ca, v = 0.4 },
-            -- {hide = 1, t = 0},
-        },
+        EventTable = cylospecttable,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.07, lhik = 0 },
-            { t = 0.8, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.86, lhik = 0 },
+            { t = 0.96, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["inspect_alt"] = {
+        Source = "inspect_cylo",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- Mult = 1.2,
+        EventTable = cylospecttable,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.27, lhik = 1 },
+            { t = 0.35, lhik = 0 },
+            { t = 0.86, lhik = 0 },
+            { t = 0.96, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["inspect_empty_alt"] = {
+        Source = "inspect_cylo_empty",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- Mult = 1.2,
+        EventTable = cylospecttable,
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.27, lhik = 1 },
+            { t = 0.35, lhik = 0 },
+            { t = 0.86, lhik = 0 },
+            { t = 0.96, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -798,10 +878,32 @@ SWEP.Animations = {
     },
 }
 
+-- SWEP.Hook_TranslateSource = function(swep, anim) -- dummified
+--     if anim == "inspect" or anim == "inspect_empty" then
+--         local eles = swep:GetElements()
+--         if eles["uplp_ubgl_m203_rail"] or eles["uplp_grip_cqr"] then
+--             return anim .. "_alt"
+--         end
+--     end
+-- end
+
 SWEP.Hook_TranslateSource = function(swep, anim)
+    if anim == "inspect_cylo" or anim == "inspect_cylo_empty" then
+        local eles = swep:GetElements()
+        if eles["uplp_sr25_mag_25"] then
+            return anim .. "_25"
+        elseif eles["uplp_sr25_mag_30"] then
+            return anim .. "_30"
+        elseif eles["uplp_sr25_mag_10"] then
+            return anim .. "_10"
+        end
+    end
+end
+
+SWEP.Hook_TranslateAnimation = function(swep, anim)
     if anim == "inspect" or anim == "inspect_empty" then
         local eles = swep:GetElements()
-        if eles["uplp_ubgl_m203_rail"] or eles["uplp_grip_cqr"] or eles["uplp_ar15_mag_pmag60"] or eles["uplp_ar15_mag_drum"] then
+        if eles["uplp_ubgl_m203_rail"] or eles["uplp_grip_cqr"] or eles["uplp_grip_rk45"] then
             return anim .. "_alt"
         end
     end

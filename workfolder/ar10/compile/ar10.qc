@@ -353,6 +353,51 @@ $sequence "inspect_empty_alt" {
 	fps 30
 }
 
+$sequence "inspect_cylo" {
+	"anims\inspect_cylo.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_cylo_empty" {
+	"anims\inspect_cylo_e.smd"
+	// snap
+	fps 30
+}
+
+$sequence "inspect_cylo_10" {
+	"anims\inspect_cylo_10.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_cylo_empty_10" {
+	"anims\inspect_cylo_10_e.smd"
+	// snap
+	fps 30
+}
+
+$sequence "inspect_cylo_25" {
+	"anims\inspect_cylo_25.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_cylo_empty_25" {
+	"anims\inspect_cylo_25_e.smd"
+	// snap
+	fps 30
+}
+
+$sequence "inspect_cylo_30" {
+	"anims\inspect_cylo_30.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_cylo_empty_30" {
+	"anims\inspect_cylo_30_e.smd"
+	// snap
+	fps 30
+}
+
+
 
 $bonemerge "ValveBiped.Bip01_Spine4"
 $bonemerge "ValveBiped.Bip01_L_Clavicle"
