@@ -3302,8 +3302,8 @@ local sr25brll = {
 -- L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Tor .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
 
 //////////////////// H&K USP
--- L["uplp_weapon_usp"] = "SHW45"
--- L["uplp_weapon_usp_desc"] = "The Self-Loading Handgun (\"Selbstladende Handfeuerwaffe\"), chambered in .45 Auto, is a highly customizable German handgun, initially created for a U.S. Special Forces program requesting a purpose-built handgun, resulting in the Mk. 40 Mod 0."
+-- L["uplp_weapon_usp"] = "MSW .45"
+-- L["uplp_weapon_usp_desc"] = "The Modular Sidearm (\"Modulare Seitenwaffe\"), chambered in .45 Auto, is a highly customizable German handgun, initially created for a U.S. Special Forces program requesting a purpose-built handgun, resulting in the Mk. 40 Mod 0."
 
 -- L["uplp_weapon_usp_real"] = "H&K USP"
 
@@ -3313,20 +3313,20 @@ local sr25brll = {
 ////// Slide
 -- L["uplp_usp_slide_compact.printname"] = "Compact Slide & Frame"
 -- L["uplp_usp_slide_compact.compactname"] = "Compact"
--- L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact SHW40-C."
+-- L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact MSW-C."
 
 -- L["uplp_usp_slide_expert.printname"] = "Expert Slide"
 -- L["uplp_usp_slide_expert.compactname"] = "Expert"
--- L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the SHW40 Expert."
+-- L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the MSW .45 Expert."
 
 -- L["uplp_usp_slide_elite.printname"] = "Elite Slide"
 -- L["uplp_usp_slide_elite.compactname"] = "Compact"
--- L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the SWH45 Elite."
+-- L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the MSW .45 Elite."
 
 ////// Muzzle
 -- L["uplp_usp_muz_heavy.printname"] = "\"Präzision\" Muzzle Brake"
 -- L["uplp_usp_muz_heavy.compactname"] = "Präzision"
--- L["uplp_usp_muz_heavy.description"] = "Aftermarket German muzzle brake for the SHW pistols."
+-- L["uplp_usp_muz_heavy.description"] = "Aftermarket German muzzle brake for the MSW."
 
 -- L["uplp_usp_muz_match.printname"] = "Match Barrel Weight"
 -- L["uplp_usp_muz_match.compactname"] = "Match"
@@ -3337,11 +3337,11 @@ local sr25brll = {
 -- L["uplp_usp_muz_supp.description"] = "Aftermarket suppressor for low-calibre handguns."
 
 ////// Magazines
--- L["uplp_usp_mag_20.printname"] = "20-Round .45 Auto"
+-- L["uplp_usp_mag_20.printname"] = "20-Round .45 ACP"
 -- L["uplp_usp_mag_20.compactname"] = "20R .45"
--- L["uplp_usp_mag_20.description"] = "Extended 20-round .45 Auto magazine for the SHW45."
+-- L["uplp_usp_mag_20.description"] = "Extended 20-round .45 ACP magazine for the MSW .45."
 
--- L["uplp_usp_mag_tac.printname"] = "12-Round .45 Auto Ergo Mag"
+-- L["uplp_usp_mag_tac.printname"] = "12-Round .45 ACP Ergo Mag"
 -- L["uplp_usp_mag_tac.compactname"] = "12R .45 Ergo"
 
 ////// Irons
@@ -3352,18 +3352,29 @@ local sr25brll = {
 ////// Skins
 -- L["uplp_usp_skin_chrome.printname"] = "Chrome"
 -- L["uplp_usp_skin_chrome.compactname"] = "Chrome"
--- L["uplp_usp_skin_chrome.description"] = "Replaces the matte frame with a chromed one."
+-- L["uplp_usp_skin_chrome.description"] = "Replaces the slide with a chromed one."
 
--- L["uplp_usp_skin_gold.description"] = "Replaces the slide and barrel with golden ones."
+-- L["uplp_usp_skin_gold.description"] = "Replaces the slide with golden one."
+
+-- L["uplp_usp_skin_cylo.description"] = "Replaces the slide with one painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
 -- L["uplp_usp_skin_red.printname"] = "Red"
 -- L["uplp_usp_skin_red.compactname"] = "Red"
--- L["uplp_usp_skin_red.description"] = "Replaces the matte frame with a red one."
+-- L["uplp_usp_skin_red.description"] = "Replaces the slide with a shiny red one."
 
 -- L["uplp_usp_skin_white.printname"] = "Matte White"
 -- L["uplp_usp_skin_white.compactname"] = "White"
--- L["uplp_usp_skin_white.description"] = "Replaces the frame with a white one."
+-- L["uplp_usp_skin_white.description"] = "Replaces the slide with a matte white one."
 
 -- L["uplp_usp_skin_black.printname"] = "Matte Black"
 -- L["uplp_usp_skin_black.compactname"] = "Black"
--- L["uplp_usp_skin_black.description"] = "Replaces the frame with a black one."
+-- L["uplp_usp_skin_black.description"] = "Replaces the slide with a matte black one."
+
+////// Other
+-- L["uplp_sticker_usp_paw.printname"] = "MSW .45 Match Paw Sticker"
+-- L["uplp_sticker_usp_paw.compactname"] = "Paw"
+-- L["uplp_sticker_usp_paw.description"] = "Sticker for the MSW .45 Match muzzle attachment."
+
+-- L["uplp_sticker_usp_match.printname"] = "MSW .45 Match <Insert funny text> Sticker"
+-- L["uplp_sticker_usp_match.compactname"] = "<Insert funny text>"
+-- L["uplp_sticker_usp_match.description"] = "Sticker for the MSW .45 Match muzzle attachment."

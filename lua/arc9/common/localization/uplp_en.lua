@@ -3348,8 +3348,8 @@ L["uplp_mjolnir_sup.compactname"] = "Suppressor"
 L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Tor .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
 
 //////////////////// H&K USP
-L["uplp_weapon_usp"] = "SHW45"
-L["uplp_weapon_usp_desc"] = "The Self-Loading Handgun (\"Selbstladende Handfeuerwaffe\"), chambered in .45 ACP, is a highly customizable German handgun, initially created for a U.S. Special Forces program requesting a purpose-built handgun, resulting in the Mk. 40 Mod 0."
+L["uplp_weapon_usp"] = "MSW .45"
+L["uplp_weapon_usp_desc"] = "The Modular Sidearm (\"Modulare Seitenwaffe\"), chambered in .45 ACP, is a highly customizable German handgun, initially created for a U.S. Special Forces program requesting a purpose-built handgun, resulting in the Mk. 40 Mod 0."
 
 L["uplp_weapon_usp_real"] = "H&K USP"
 
@@ -3359,20 +3359,20 @@ L["uplp_weapon_usp_manufacturer"] = "Heckler & Koch"
 ////// Slide
 L["uplp_usp_slide_compact.printname"] = "Compact Slide & Frame"
 L["uplp_usp_slide_compact.compactname"] = "Compact"
-L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact SHW40-C."
+L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact MSW-C."
 
 L["uplp_usp_slide_expert.printname"] = "Expert Slide"
 L["uplp_usp_slide_expert.compactname"] = "Expert"
-L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the SHW40 Expert."
+L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the MSW .40 Expert."
 
 L["uplp_usp_slide_elite.printname"] = "Elite Slide"
 L["uplp_usp_slide_elite.compactname"] = "Elite"
-L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the SWH45 Elite."
+L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the MSW .45 Elite."
 
 ////// Muzzle
 L["uplp_usp_muz_heavy.printname"] = "\"Präzision\" Muzzle Brake"
 L["uplp_usp_muz_heavy.compactname"] = "Präzision"
-L["uplp_usp_muz_heavy.description"] = "Aftermarket German muzzle brake for the SHW pistols."
+L["uplp_usp_muz_heavy.description"] = "Aftermarket German muzzle brake for the MSW."
 
 L["uplp_usp_muz_match.printname"] = "Match Barrel Weight"
 L["uplp_usp_muz_match.compactname"] = "Match"
@@ -3385,21 +3385,21 @@ L["uplp_usp_muz_supp.description"] = "Aftermarket suppressor for low-calibre han
 ////// Magazines
 L["uplp_usp_mag_20.printname"] = "20-Round .45 ACP"
 L["uplp_usp_mag_20.compactname"] = "20R .45"
-L["uplp_usp_mag_20.description"] = "Extended 20-round .45 ACP magazine for the SHW45."
+L["uplp_usp_mag_20.description"] = "Extended 20-round .45 ACP magazine for the MSW .45."
 
 L["uplp_usp_mag_tac.printname"] = "12-Round .45 ACP Ergo Mag"
 L["uplp_usp_mag_tac.compactname"] = "12R .45 Ergo"
 L["uplp_usp_mag_tac.description"] = ARC9:GetPhrase("uplp_deag_mag_tac.description") or "Standard magazine with an ergonomic base plate for faster reloads."
 
 ////// Irons
-L["uplp_usp_irons_tac.printname"] = "SHW-T Iron Sights"
-L["uplp_usp_irons_tac.compactname"] = "SHW-T"
-L["uplp_usp_irons_tac.description"] = "Adjustable suppressor height iron sights from the SHW-T."
+L["uplp_usp_irons_tac.printname"] = "MSW-T Iron Sights"
+L["uplp_usp_irons_tac.compactname"] = "MSW-T"
+L["uplp_usp_irons_tac.description"] = "Adjustable suppressor height iron sights from the MSW-T."
 
 ////// Skins
 L["uplp_usp_skin_chrome.printname"] = "Chrome"
 L["uplp_usp_skin_chrome.compactname"] = "Chrome"
-L["uplp_usp_skin_chrome.description"] = "Replaces the matte frame with a chromed one."
+L["uplp_usp_skin_chrome.description"] = "Replaces the slide with a chromed one."
 
 L["uplp_usp_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
 L["uplp_usp_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
@@ -3407,7 +3407,7 @@ L["uplp_usp_skin_gold.description"] = "Replaces the slide with golden one."
 
 L["uplp_usp_skin_cylo.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo Blue"
 L["uplp_usp_skin_cylo.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname") or "Cylo"
-L["uplp_usp_skin_cylo.description"] = ARC9:GetPhrase("uplp_deagle_skin_blue.description") or "Replaces the slide with one painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+L["uplp_usp_skin_cylo.description"] = "Replaces the slide with one painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
 
 L["uplp_usp_skin_red.printname"] = "Red"
 L["uplp_usp_skin_red.compactname"] = "Red"
@@ -3421,10 +3421,11 @@ L["uplp_usp_skin_black.printname"] = "Matte Black"
 L["uplp_usp_skin_black.compactname"] = "Black"
 L["uplp_usp_skin_black.description"] = "Replaces the slide with a matte black one."
 
-L["uplp_sticker_usp_paw.printname"] = "SHW45 Match Paw Sticker"
+////// Other
+L["uplp_sticker_usp_paw.printname"] = "MSW .45 Match Paw Sticker"
 L["uplp_sticker_usp_paw.compactname"] = "Paw"
-L["uplp_sticker_usp_paw.description"] = "Sticker for the SHW45 Match muzzle device."
+L["uplp_sticker_usp_paw.description"] = "Sticker for the MSW .45 Match muzzle attachment."
 
-L["uplp_sticker_usp_match.printname"] = "SHW45 Match <Insert funny text> Sticker"
+L["uplp_sticker_usp_match.printname"] = "MSW .45 Match <Insert funny text> Sticker"
 L["uplp_sticker_usp_match.compactname"] = "<Insert funny text>"
-L["uplp_sticker_usp_match.description"] = "Sticker for the SHW45 Match muzzle device."
+L["uplp_sticker_usp_match.description"] = "Sticker for the MSW .45 Match muzzle attachment."
