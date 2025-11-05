@@ -56,7 +56,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 ATT.RecoilMult = 0.85
-ATT.RecoilPerShot = 1 / 10
+ATT.RecoilPerShot = 1 / 6
 
 -- Negatives
 ATT.SpeedShootingMult = 0.75
@@ -114,7 +114,7 @@ ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(-5, -0.1, -1.6)
 
 -- Positives
-ATT.RecoilPerShot = 1 / 13
+ATT.RecoilPerShot = 1 / 8
 ATT.RangeMinAdd = 10 / ARC9.HUToM
 ATT.RangeMaxAdd = 20 / ARC9.HUToM
 
@@ -149,7 +149,7 @@ ATT.Category = "uplp_fal_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilPerShot = 1 / 13
+ATT.RecoilPerShot = 1 / 8
 ATT.RangeMinAdd = 10 / ARC9.HUToM
 ATT.RangeMaxAdd = 20 / ARC9.HUToM
 
@@ -222,7 +222,7 @@ ATT.SprintToFireTimeAdd = -0.04
 
 -- Negatives
 ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 6
+ATT.RecoilPerShot = 1 / 4
 ATT.RecoilAdd = 0.3
 ATT.RangeMinAdd = -20 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM

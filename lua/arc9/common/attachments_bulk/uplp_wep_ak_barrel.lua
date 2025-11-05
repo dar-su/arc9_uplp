@@ -69,7 +69,7 @@ ATT.RecoilMult = 1.15
 ATT.SpreadAdd = 0.0035
 ATT.RangeMaxAdd = -30 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.9
-ATT.RecoilPerShot = 1 / 7
+ATT.RecoilPerShot = 1 / 4
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2.5, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2.5, 0, 0) end
@@ -92,7 +92,7 @@ ATT.ActivateElements = {"uplp_ak_brl_akm"}
 
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.01
-ATT.RecoilPerShot = 1 / 10
+ATT.RecoilPerShot = 1 / 6
 ATT.RecoilMult = 0.95
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(0.5, 1, 0) end
@@ -120,7 +120,7 @@ ATT.SpreadAdd = -0.002
 ATT.RangeMaxAdd = 30 / ARC9.HUToM
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.2
-ATT.RecoilPerShot = 1 / 12
+ATT.RecoilPerShot = 1 / 9
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
@@ -179,7 +179,7 @@ ATT.RecoilMult = 0.75
 ATT.RangeMaxAdd = 20 / ARC9.HUToM
 ATT.RangeMinAdd = 2 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.RecoilPerShot = 1 / 10
+ATT.RecoilPerShot = 1 / 6
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.003
@@ -237,7 +237,7 @@ ATT.SpreadAdd = 0.005
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
 ATT.RangeMinAdd = -4 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.RecoilPerShot = 1 / 6
+ATT.RecoilPerShot = 1 / 3.5
 
 ATT.Attachments = {
     {
@@ -325,7 +325,7 @@ ATT.SpreadAdd = 0.0055
 ATT.RangeMaxAdd = -50 / ARC9.HUToM
 ATT.RangeMinAdd = -5 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.RecoilPerShot = 1 / 6
+ATT.RecoilPerShot = 1 / 4
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2.5, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2.5, 0, 0) end
@@ -350,7 +350,7 @@ ATT.ActivateElements = {"uplp_ak_brl_19", "ak12_part"}
 ATT.SpreadAdd = -0.001
 ATT.RangeMaxAdd = 10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.RecoilPerShot = 1 / 10
+ATT.RecoilPerShot = 1 / 7
 ATT.RecoilMult = 0.95
 
 -- Negatives
@@ -385,7 +385,7 @@ ATT.SpreadAdd = -0.002
 ATT.RangeMaxAdd = 30 / ARC9.HUToM
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.2
-ATT.RecoilPerShot = 1 / 12
+ATT.RecoilPerShot = 1 / 9
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03

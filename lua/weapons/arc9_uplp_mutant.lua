@@ -105,7 +105,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 2 * 0.75
+SWEP.Recoil = 2
 SWEP.RecoilUp = 1.35
 SWEP.RecoilSide = 1.2
 
@@ -153,9 +153,11 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 11
+SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 -- Weapon handling
 SWEP.Speed = 0.8 + 0.05
@@ -1226,6 +1228,7 @@ SWEP.HookP_NameChange = function(self, name)
 end
 
 -- Moka's shit
+--[[
 -- SWEP.Recoil = 1.5
 SWEP.RecoilAutoControl = 2.25
 SWEP.RecoilAutoControlMultShooting = 0.15
@@ -1242,3 +1245,4 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.05
 
 SWEP.RecoilModifierCapSights = 0.2
+]]

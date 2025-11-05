@@ -103,12 +103,12 @@ ATT.Bipod = true
 ATT.ActivateElements = {"uplp_aug_brl_mg"}
 
 -- Positives
-ATT.SpreadAdd = -0.002
+ATT.SpreadAdd = -0.00125
 ATT.RecoilSideAdd = -0.2
 ATT.RangeMaxAdd = 40 / ARC9.HUToM
 ATT.RangeMinAdd = 10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.25
-ATT.RecoilPerShot = 1 / 14
+ATT.RecoilPerShot = 1 / 12
 ATT.RecoilMult = 0.85
 ATT.SweetSpotRangeAdd = 25 / ARC9.HUToM
 ATT.SweetSpotWidthAdd = 20 / ARC9.HUToM
@@ -155,14 +155,14 @@ ATT.BarrelLengthAdd = -10
 -- Negatives
 ATT.RecoilMult = 1.25
 ATT.RecoilSideAdd = 0.25
-ATT.SpreadAdd = 0.004
+ATT.SpreadAdd = 0.0025
 ATT.RangeMaxMult = 0.85
 ATT.SweetSpotRangeAdd = -15 / ARC9.HUToM
 ATT.SweetSpotWidthAdd = -10 / ARC9.HUToM
 ATT.SweetSpotPeakAdd = -5 / ARC9.HUToM
 ATT.RangeMinAdd = -4 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.RecoilPerShot = 1 / 5
+ATT.RecoilPerShot = 1 / 6
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
@@ -459,7 +459,8 @@ ATT.RPMMult = 0.7
 ATT.RecoilUpAdd = 0.6
 ATT.RecoilSideAdd = 1.25
 ATT.ClipSizeOverride = 10
-ATT.RecoilPerShotMult = 2
+ATT.RecoilPerShotMult = 2.5
+ATT.RecoilDissipationRateMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_300_10")
 

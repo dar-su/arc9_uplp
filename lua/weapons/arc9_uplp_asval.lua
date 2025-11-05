@@ -118,8 +118,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 36
-SWEP.DamageMin = 16
+SWEP.DamageMax = 35
+SWEP.DamageMin = 18
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -127,8 +127,8 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 25 / ARC9.HUToM
-SWEP.RangeMax = 75 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMax = 70 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 280 / ARC9.HUToM
@@ -142,17 +142,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1 * 0.75
-SWEP.RecoilUp = 1.1
-SWEP.RecoilSide = 1.2
+SWEP.Recoil = 1
+SWEP.RecoilUp = 0.5
+SWEP.RecoilSide = 0.5
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 0.45
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25 * 1.5
+SWEP.RecoilAutoControl = 1.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -178,6 +178,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
+--[[]
 SWEP.Spread = 0.0025
 SWEP.SpreadAddHipFire = 0.03 - 0.01
 
@@ -193,12 +194,33 @@ SWEP.RecoilResetTime = 0.02
 SWEP.RecoilPerShot = 1 / 6
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+]]
+
+-- 8Z balance pass
+SWEP.Spread = 0.0025
+SWEP.SpreadAddHipFire = 0.03 - 0.01
+
+SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddMove = 0.014
+SWEP.SpreadAddMidAir = 0.05
+
+SWEP.SpreadMultSights = 1
+SWEP.SpreadMultMove = 1
+
+SWEP.RecoilDissipationRate = 7
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- HOT HOT HOT
 SWEP.Overheat = true
 SWEP.HeatCapacity = 80 * 1.5
-SWEP.HeatDissipation = 3.5
-SWEP.HeatDelayTime = 1
+SWEP.HeatDissipation = 5
+SWEP.HeatDelayTime = 2
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 SWEP.MalfunctionWait = -1 -- -1 for instant unjam anim
@@ -1014,6 +1036,7 @@ SWEP.Hook_ModifyElements = function(self, eles)
 end
 
 -- Moka's shit
+--[[
 SWEP.Recoil = 0.5
 SWEP.RecoilAutoControl = 1.5
 SWEP.RecoilAutoControlMultShooting = 0.05
@@ -1028,3 +1051,4 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.05
 
 SWEP.RecoilModifierCapSights = 0.1
+]]

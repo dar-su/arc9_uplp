@@ -87,6 +87,16 @@ SWEP.DamageMax = 25 -- Damage dealt point-blank
 SWEP.DamageMin = 14 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
+
 SWEP.Penetration = 15 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 2 -- How much kick things will have when hit
 
@@ -106,17 +116,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 2 * 0.75
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.4
+SWEP.Recoil = 2
+SWEP.RecoilUp = 0.9
+SWEP.RecoilSide = 1.2
 
-SWEP.RecoilRandomUp = 1
+SWEP.RecoilRandomUp = 0.8
 SWEP.RecoilRandomSide = 1.1
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.5 * 1.5
+SWEP.RecoilAutoControl = 2.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -142,6 +152,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
+--[[]
 SWEP.Spread = 0.008
 SWEP.SpreadAddHipFire = 0.025 - 0.01
 
@@ -157,6 +168,28 @@ SWEP.RecoilResetTime = 0.03
 SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+]]
+
+-- 8Z balance pass
+-- This is 10 inch barrel! short as hell!
+SWEP.Spread = 0.008
+SWEP.SpreadAddHipFire = 0.025 - 0.01 -- buffer tube
+
+SWEP.SpreadAddRecoil = 0.012
+SWEP.SpreadAddMove = 0.01
+SWEP.SpreadAddMidAir = 0.05
+
+SWEP.SpreadMultSights = 1
+SWEP.SpreadMultMove = 1
+
+SWEP.RecoilDissipationRate = 8
+SWEP.RecoilResetTime = 0.03
+SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 -- Weapon handling
 SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier
@@ -1658,6 +1691,7 @@ end
 
 -- Moka's shit
 -- SWEP.Recoil = 1.5
+--[[]
 SWEP.RecoilAutoControl = 1.5
 SWEP.RecoilAutoControlMultShooting = 0.05
 
@@ -1673,3 +1707,4 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.05
 
 SWEP.RecoilModifierCapSights = 0.2
+]]

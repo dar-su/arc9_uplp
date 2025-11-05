@@ -57,11 +57,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.SpreadAdd = -0.0025
 ATT.SpreadAddRecoil = -0.001
-ATT.RecoilPerShot = 1 / 9
+ATT.RecoilPerShot = 1 / 8
 ATT.RangeMinAdd = 5 / ARC9.HUToM
-ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.85
 
 ATT.SweetSpotRangeAdd = 15 / ARC9.HUToM
 ATT.SweetSpotWidthAdd = 7.5 / ARC9.HUToM
@@ -76,6 +76,8 @@ ATT.SpeedMultSights = 0.9
 ATT.BarrelLengthAdd = 7
 ATT.SpreadAddHipFire = 0.02
 ATT.RecoilDissipationRateMult = 0.5
+ATT.SwayMultSights = 1.2
+ATT.RPMMult = 0.9
 
 ATT.Attachments = {
     {
@@ -113,11 +115,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.SpreadAdd = -0.0025
 ATT.SpreadAddRecoil = -0.001
-ATT.RecoilPerShot = 1 / 9
+ATT.RecoilPerShot = 1 / 8
 ATT.RangeMinAdd = 5 / ARC9.HUToM
-ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.RecoilMult = 0.75
+ATT.RecoilMult = 0.85
 
 ATT.SweetSpotRangeAdd = 15 / ARC9.HUToM
 ATT.SweetSpotWidthAdd = 7.5 / ARC9.HUToM
@@ -132,6 +134,8 @@ ATT.SpeedMultSights = 0.9
 ATT.BarrelLengthAdd = 7
 ATT.SpreadAddHipFire = 0.02
 ATT.RecoilDissipationRateMult = 0.5
+ATT.SwayMultSights = 1.2
+ATT.RPMMult = 0.9
 
 ATT.Attachments = {
     {
@@ -182,7 +186,7 @@ ATT.RPMAdd = 50
 
 -- Negatives
 ATT.SpreadAdd = 0.003
-ATT.RecoilPerShot = 1 / 5
+ATT.RecoilPerShot = 1 / 3.5
 ATT.RangeMinAdd = -10 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
@@ -225,7 +229,7 @@ ATT.RPMAdd = 50
 
 -- Negatives
 ATT.SpreadAdd = 0.003
-ATT.RecoilPerShot = 1 / 5
+ATT.RecoilPerShot = 1 / 3.5
 ATT.RangeMinAdd = -10 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
@@ -262,7 +266,7 @@ ATT.SpreadAddHipFire = -0.008
 
 -- Negatives
 ATT.SpreadAdd = 0.0015
-ATT.RecoilPerShot = 1 / 6
+ATT.RecoilPerShot = 1 / 4
 ATT.RangeMinAdd = -5 / ARC9.HUToM
 ATT.RangeMaxAdd = -20 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.9
@@ -324,7 +328,7 @@ ATT.Attachments = {
 -- Positives
 ATT.SpreadAdd = -0.0015
 ATT.RangeMinAdd = 10 / ARC9.HUToM
-ATT.RangeMaxAdd = 40 / ARC9.HUToM
+ATT.RangeMaxAdd = 30 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
 ATT.SweetSpotRangeAdd = 20 / ARC9.HUToM
@@ -332,13 +336,16 @@ ATT.SweetSpotWidthAdd = 15 / ARC9.HUToM
 ATT.SweetSpotPeakAdd = 15 / ARC9.HUToM
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.03
-ATT.RPMMult = 0.75
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.04
+ATT.RPMMult = 0.85
+ATT.SpeedMult = 0.97
 ATT.SpeedMultSights = 0.9
 ATT.BarrelLengthAdd = 5
 ATT.SpreadAddHipFire = 0.01
 ATT.RecoilDissipationRateMult = 0.75
+ATT.RecoilPerShotMult = 0.85
+ATT.SwayMultSights = 1.5
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
@@ -381,13 +388,13 @@ ATT.ActivateElements = {"uplp_scar_stock_h"}
 
 -- Positives
 ATT.RecoilMult = 0.85
-ATT.SwayMultSights = 0.7
+ATT.SwayMultSights = 0.45
 ATT.VisualRecoilMultHipFire = 0.85
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.03
-ATT.SpeedMultSights = 0.9
+ATT.SpeedMultSights = 0.8
 ATT.SpreadAddHipFire = 0.015
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_h")
@@ -410,13 +417,13 @@ ATT.ActivateElements = {"uplp_scar_stock_hb"}
 
 -- Positives
 ATT.RecoilMult = 0.85
-ATT.SwayMultSights = 0.7
+ATT.SwayMultSights = 0.45
 ATT.VisualRecoilMultHipFire = 0.85
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.03
-ATT.SpeedMultSights = 0.9
+ATT.SpeedMultSights = 0.8
 ATT.SpreadAddHipFire = 0.015
 
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_hb")
@@ -618,9 +625,12 @@ local stats556 = {
 
     -- Positives
     RPMAdd = 100,
-    RecoilPerShotMult = 0.9,
-    RecoilUpAdd = -0.35,
-    RecoilSideAdd = -0.15,
+    RecoilPerShotMult = 0.75,
+    RecoilUpAdd = -0.5,
+    RecoilSideAdd = -0.35,
+
+    RecoilRandomUpAdd = -0.2,
+    RecoilRandomSide = -0.2,
 
     -- Negatives
     DamageMaxAdd = -15, -- from 40
@@ -628,6 +638,16 @@ local stats556 = {
     PhysBulletMuzzleVelocityMult = 0.8165,
     RangeMaxAdd = -10 / ARC9.HUToM,
     RangeMinAdd = -5 / ARC9.HUToM,
+
+    BodyDamageMults = {
+        [HITGROUP_HEAD] = 1.4,
+        [HITGROUP_CHEST] = 1,
+        [HITGROUP_STOMACH] = 1,
+        [HITGROUP_LEFTARM] = 0.9,
+        [HITGROUP_RIGHTARM] = 0.9,
+        [HITGROUP_LEFTLEG] = 0.5,
+        [HITGROUP_RIGHTLEG] = 0.5,
+    },
 
 }
 

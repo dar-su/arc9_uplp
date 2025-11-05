@@ -27,10 +27,13 @@ ATT.MuzzleEffectQCA = 6
 -- Positives
 ATT.RecoilSideMult = 0.75
 ATT.RecoilUpMult = 0.65
+ATT.SpreadAddRecoil = -0.0025
+ATT.PhysBulletMuzzleVelocityAdd = 70 / ARC9.HUToM
+ATT.RecoilPerShot = 1 / 7
+ATT.SpreadAddHipFire = -0.0075
 
 -- Negatives
 ATT.SpreadAdd = 0.003
-ATT.SpreadAddRecoil = 0.006
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.RPMAdd = -150
 
@@ -64,6 +67,7 @@ ATT.LHIK_Priority = 5
 ATT.RecoilSideMult = 0.75
 ATT.RecoilUpMult = 0.65
 ATT.HeatCapacityMult = 1.1
+ATT.RecoilPerShot = 1 / 6
 
 -- Negatives
 ATT.SpreadAddRecoil = 0.003

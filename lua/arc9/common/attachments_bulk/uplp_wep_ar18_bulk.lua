@@ -23,11 +23,11 @@ ATT.AimDownSightsTimeAdd = -0.04
 ATT.SprintToFireTimeAdd = -0.04
 
 -- Negatives
-ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 4
+ATT.SpreadAdd = 0.0035
+ATT.RecoilPerShot = 1 / 5
 ATT.RecoilAdd = 0.15
-ATT.RangeMinAdd = -30 / ARC9.HUToM
-ATT.RangeMaxAdd = -70 / ARC9.HUToM
+ATT.RangeMinAdd = -20 / ARC9.HUToM
+ATT.RangeMaxAdd = -60 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
@@ -63,11 +63,11 @@ ATT.AimDownSightsTimeAdd = -0.04
 ATT.SprintToFireTimeAdd = -0.04
 
 -- Negatives
-ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 4
+ATT.SpreadAdd = 0.0035
+ATT.RecoilPerShot = 1 / 5
 ATT.RecoilAdd = 0.15
-ATT.RangeMinAdd = -30 / ARC9.HUToM
-ATT.RangeMaxAdd = -70 / ARC9.HUToM
+ATT.RangeMinAdd = -20 / ARC9.HUToM
+ATT.RangeMaxAdd = -60 / ARC9.HUToM
 
 
 -- idk how they ll mix but this is some grip stats here

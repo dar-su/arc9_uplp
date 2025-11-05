@@ -105,17 +105,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 1 * 0.75
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 1.4
+SWEP.Recoil = 1
+SWEP.RecoilUp = 0.7
+SWEP.RecoilSide = 0.9
 
-SWEP.RecoilRandomUp = 1.1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 0.6
+SWEP.RecoilRandomSide = 0.8
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.5 * 1.5
+SWEP.RecoilAutoControl = 2.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -141,6 +141,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
+--[[]
 SWEP.Spread = 0.005
 SWEP.SpreadAddHipFire = 0.025
 
@@ -156,6 +157,27 @@ SWEP.RecoilResetTime = 0.03
 SWEP.RecoilPerShot = 1 / 8
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+]]
+
+-- 8Z balance pass
+SWEP.Spread = 0.004
+SWEP.SpreadAddHipFire = 0.03
+
+SWEP.SpreadAddRecoil = 0.01
+SWEP.SpreadAddMove = 0.006
+SWEP.SpreadAddMidAir = 0.05
+
+SWEP.SpreadMultSights = 1
+SWEP.SpreadMultMove = 1
+
+SWEP.RecoilDissipationRate = 7
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 8
+SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 -- Weapon handling
 SWEP.Speed = 0.85 -- Walk speed multiplier
@@ -366,8 +388,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.75,
-		FireASAP = true,
+        MinProgress = 0.75,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/chback.ogg", t = 3 / 30, c = ca, v = 1 },
@@ -386,14 +408,14 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.6,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
-		Mult = 0.8,
+        Mult = 0.8,
         MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -403,7 +425,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.6,
-		FireASAP = true,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -411,7 +433,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
-		Mult = 0.8,
+        Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -444,9 +466,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -471,9 +493,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.87,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -502,9 +524,9 @@ SWEP.Animations = {
     ["reload_10"] = {
         Source = "reload10",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -529,9 +551,9 @@ SWEP.Animations = {
     ["reload_empty_10"] = {
         Source = "reload_empty10",
         MinProgress = 0.87,
-		PeekProgress = 0.875,
-		RefillProgress = 0.775,
-		FireASAP = true,
+        PeekProgress = 0.875,
+        RefillProgress = 0.775,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -560,9 +582,9 @@ SWEP.Animations = {
     ["reload_40"] = {
         Source = "reload40",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -587,9 +609,9 @@ SWEP.Animations = {
     ["reload_empty_40"] = {
         Source = "reload_empty40",
         MinProgress = 0.87,
-		PeekProgress = 0.85,
-		RefillProgress = 0.675,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.675,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -618,9 +640,9 @@ SWEP.Animations = {
     ["reload_52"] = {
         Source = "reload60",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.65,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.65,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -646,9 +668,9 @@ SWEP.Animations = {
     ["reload_empty_52"] = {
         Source = "reload_empty60",
         MinProgress = 0.87,
-		PeekProgress = 0.85,
-		RefillProgress = 0.7,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.7,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -678,9 +700,9 @@ SWEP.Animations = {
     ["reload_9_25"] = {
         Source = "reload9_25",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -705,9 +727,9 @@ SWEP.Animations = {
     ["reload_empty_9_25"] = {
         Source = "reload_empty9_25",
         MinProgress = 0.87,
-		PeekProgress = 0.85,
-		RefillProgress = 0.75,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.75,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -736,9 +758,9 @@ SWEP.Animations = {
     ["reload_9_40"] = {
         Source = "reload9_40",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -763,9 +785,9 @@ SWEP.Animations = {
     ["reload_empty_9_40"] = {
         Source = "reload_empty9_40",
         MinProgress = 0.87,
-		PeekProgress = 0.85,
-		RefillProgress = 0.75,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.75,
+        FireASAP = true,
         Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
@@ -1203,6 +1225,7 @@ SWEP.HookP_NameChange = function(self, name)
 end
 
 -- Moka's shit
+--[[]
 SWEP.Recoil = 0.33
 SWEP.RecoilAutoControl = 2.5
 SWEP.RecoilAutoControlMultShooting = 0.3
@@ -1223,3 +1246,4 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.05
 
 SWEP.RecoilModifierCapSights = 0.2
+]]

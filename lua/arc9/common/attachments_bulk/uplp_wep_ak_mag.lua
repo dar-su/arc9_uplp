@@ -11,7 +11,7 @@ local stats545 = {
 
     -- Positives
     RPMAdd = 50,
-    RecoilPerShotMult = 0.9,
+    RecoilPerShotMult = 0.75,
     RecoilUpAdd = -0.3,
     RangeMinAdd = 5 / ARC9.HUToM,
     RangeMaxAdd = 30 / ARC9.HUToM,
@@ -21,6 +21,16 @@ local stats545 = {
     Spread = 0.005,
     DamageMaxAdd = -6, -- from 34
     DamageMinAdd = -5, -- from 18
+
+    BodyDamageMults = {
+        [HITGROUP_HEAD] = 1.4,
+        [HITGROUP_CHEST] = 1,
+        [HITGROUP_STOMACH] = 1,
+        [HITGROUP_LEFTARM] = 0.9,
+        [HITGROUP_RIGHTARM] = 0.9,
+        [HITGROUP_LEFTLEG] = 0.5,
+        [HITGROUP_RIGHTLEG] = 0.5,
+    },
 }
 
 

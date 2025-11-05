@@ -110,17 +110,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 2 * 0.75
-SWEP.RecoilUp = 1.35
-SWEP.RecoilSide = 1.2
+SWEP.Recoil = 2
+SWEP.RecoilUp = 1
+SWEP.RecoilSide = 0.7
 
-SWEP.RecoilRandomUp = 1
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomUp = 0.8
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25 * 1.5
+SWEP.RecoilAutoControl = 2
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -146,6 +146,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
+--[[
 SWEP.Spread = 0.0045
 SWEP.SpreadAddHipFire = 0.03 - 0.01
 
@@ -161,6 +162,25 @@ SWEP.RecoilResetTime = 0.02
 SWEP.RecoilPerShot = 1 / 9
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+]]
+
+-- 8Z balance pass
+-- 15" barrel
+SWEP.Spread = 0.0045
+SWEP.SpreadAddHipFire = 0.03 - 0.01 -- buffer tube
+
+SWEP.SpreadAddRecoil = 0.014
+SWEP.SpreadAddMove = 0.015
+SWEP.SpreadAddMidAir = 0.05
+
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilMax = 1
+SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 -- Weapon handling
 SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
@@ -1608,6 +1628,7 @@ end
 
 -- Moka's shit
 -- SWEP.Recoil = 1.5
+--[[]
 SWEP.RecoilAutoControl = 2.25
 SWEP.RecoilAutoControlMultShooting = 0.15
 
@@ -1623,3 +1644,4 @@ SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.05
 
 SWEP.RecoilModifierCapSights = 0.2
+]]
