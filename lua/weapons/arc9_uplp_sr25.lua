@@ -158,7 +158,7 @@ SWEP.Spread = 0.002
 SWEP.SpreadAddHipFire = 0.04 - 0.01
 
 SWEP.SpreadAddRecoil = 0.0075
-SWEP.SpreadAddMove = 0.014
+SWEP.SpreadAddMove = 0.016
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
@@ -166,9 +166,11 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.008
-SWEP.RecoilPerShot = 1 / 6
+SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 -- Weapon handling
 SWEP.Speed = 0.8 + 0.05
