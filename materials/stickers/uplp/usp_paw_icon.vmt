@@ -1,0 +1,9 @@
+UnLitGeneric
+{
+    "$basetexture" "stickers\uplp\usp_paw"
+    "$nocull"		"1"
+    "$ignorez"		"1"
+    "$alphatest"    "1"
+}
+
+    

@@ -85,6 +85,7 @@ ATT.Folder = ".45 ACP"
 ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_rs", "canshortstock"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
+ATT.ShellScale = 1.25
 
 ATT.ShootSound = shoot45
 ATT.ShootSoundSilenced = shoot9sil
@@ -139,6 +140,7 @@ ATT.Folder = ".45 ACP"
 ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_rs_short", "uplp_ar15_rs", "canshortstock"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
+ATT.ShellScale = 1.25
 
 ATT.ShootSound = shoot45
 ATT.ShootSoundSilenced = shoot9sil
