@@ -2122,27 +2122,6 @@ L["uplp_m9_mag_20.printname"] = "20-Round Extended"
 L["uplp_m9_mag_20.compactname"] = "20R"
 L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM92."
 
-//////////////////// Colt M1911
-L["uplp_weapon_m1911"] = "CM .45"
-L["uplp_weapon_m1911_desc"] = "The CM .45, a classic semi-automatic pistol, is renowned for its enduring design and service history, originally adopted by the United States military in 1911. It has since become an iconic and widely-used handgun, cherished for its .45 Auto caliber and solid construction."
-
-L["uplp_weapon_m1911_real"] = "Colt M1911"
-
-L["uplp_weapon_m1911_manufacturer"] = "Colt's Manufacturing Company"
-
-//////////////////// DVL-10
-L["uplp_weapon_dvl10"] = "RR-40"
-L["uplp_weapon_dvl10_desc"] = "The lightweight \"Rapid Repeater 40\", or RR-40 for short, is a heavily customizable bolt-action rifle of Russian origin. It is renowned for being heavily customizable for military use with one of its many unique models."
-
-L["uplp_weapon_dvl10_m1"] = "RR-40 Saboteur"
-L["uplp_weapon_dvl10_m2"] = "RR-40 Urbana"
-L["uplp_weapon_dvl10_m3"] = "RR-40 Wolfhound"
-
-L["uplp_weapon_dvl10_real"] = "DVL-10"
-
-L["uplp_weapon_dvl10_manufacturer"] = "Integrated Systems Design Bureau (KBIS)"
-
--- Expansion 2
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
 L["uplp_weapon_orsis_desc"] = "The Gryphon X108 is the latest and most powerful precision rifle out of Russia in modern times. X108 is chambered for the powerful 12.7×108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
@@ -3366,3 +3345,77 @@ L["uplp_mjolnir_black.description"] = "Replaces the receiver and handguard with 
 L["uplp_mjolnir_sup.printname"] = "Heavy Suppressor"
 L["uplp_mjolnir_sup.compactname"] = "Suppressor"
 L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Tor .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
+
+//////////////////// H&K USP
+L["uplp_weapon_usp"] = "SHW45"
+L["uplp_weapon_usp_desc"] = "The Self-Loading Handgun (\"Selbstladende Handfeuerwaffe\"), chambered in .45 Auto, is a highly customizable German handgun, initially created for a U.S. Special Forces program requesting a purpose-built handgun, resulting in the Mk. 40 Mod 0."
+
+L["uplp_weapon_usp_real"] = "H&K USP"
+
+L["uplp_weapon_usp_manufacturer"] = "Heckler & Koch"
+
+/////////// Attachments
+////// Slide
+L["uplp_usp_slide_compact.printname"] = "Compact Slide & Frame"
+L["uplp_usp_slide_compact.compactname"] = "Compact"
+L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact SHW40-C."
+
+L["uplp_usp_slide_expert.printname"] = "Expert Slide"
+L["uplp_usp_slide_expert.compactname"] = "Expert"
+L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the SHW40 Expert."
+
+L["uplp_usp_slide_elite.printname"] = "Elite Slide"
+L["uplp_usp_slide_elite.compactname"] = "Compact"
+L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the SWH45 Elite."
+
+////// Muzzle
+L["uplp_usp_muz_heavy.printname"] = "\"Präzision\" Muzzle Brake"
+L["uplp_usp_muz_heavy.compactname"] = "Präzision"
+L["uplp_usp_muz_heavy.description"] = "Aftermarket German muzzle brake for the SHW pistols."
+
+L["uplp_usp_muz_match.printname"] = "Match Barrel Weight"
+L["uplp_usp_muz_match.compactname"] = "Match"
+L["uplp_usp_muz_match.description"] = "Factory-built muzzle attachment that provides recoil counterbalance."
+
+L["uplp_usp_muz_supp.printname"] = "\"Silent Strike\" Suppressor"
+L["uplp_usp_muz_supp.compactname"] = "S.S. Supp."
+L["uplp_usp_muz_supp.description"] = "Aftermarket suppressor for low-calibre handguns."
+
+////// Magazines
+L["uplp_usp_mag_20.printname"] = "20-Round .45 Auto"
+L["uplp_usp_mag_20.compactname"] = "20R .45"
+L["uplp_usp_mag_20.description"] = "Extended 20-round .45 Auto magazine for the SHW45."
+
+L["uplp_usp_mag_tac.printname"] = "12-Round .45 Auto Ergo Mag"
+L["uplp_usp_mag_tac.compactname"] = "12R .45 Ergo"
+L["uplp_usp_mag_tac.description"] = ARC9:GetPhrase("uplp_deag_mag_tac.description") or "Standard magazine with an ergonomic base plate for faster reloads."
+
+////// Irons
+L["uplp_usp_irons_tac.printname"] = "SHW-T Iron Sights"
+L["uplp_usp_irons_tac.compactname"] = "SHW-T"
+L["uplp_usp_irons_tac.description"] = "Adjustable suppressor height iron sights from the SHW-T."
+
+////// Skins
+L["uplp_usp_skin_chrome.printname"] = "Chrome"
+L["uplp_usp_skin_chrome.compactname"] = "Chrome"
+L["uplp_usp_skin_chrome.description"] = "Replaces the matte frame with a chromed one."
+
+L["uplp_usp_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_usp_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_usp_skin_gold.description"] = "Replaces the slide and barrel with golden ones."
+
+L["uplp_usp_skin_cylo.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo Blue"
+L["uplp_usp_skin_cylo.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname") or "Cylo"
+L["uplp_usp_skin_cylo.description"] = ARC9:GetPhrase("uplp_deagle_skin_blue.description") or "Replaces the slide and barrel with ones painted metallic blue.\nThis variant of blue is nicknamed \"Cylo Blue\", named after an exotic species of bat."
+
+L["uplp_usp_skin_red.printname"] = "Red"
+L["uplp_usp_skin_red.compactname"] = "Red"
+L["uplp_usp_skin_red.description"] = "Replaces the matte frame with a red one."
+
+L["uplp_usp_skin_white.printname"] = "Matte White"
+L["uplp_usp_skin_white.compactname"] = "White"
+L["uplp_usp_skin_white.description"] = "Replaces the frame with a white one."
+
+L["uplp_usp_skin_black.printname"] = "Matte Black"
+L["uplp_usp_skin_black.compactname"] = "Black"
+L["uplp_usp_skin_black.description"] = "Replaces the frame with a black one."
