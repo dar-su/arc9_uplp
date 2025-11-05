@@ -3357,25 +3357,25 @@ L["uplp_weapon_usp_manufacturer"] = "Heckler & Koch"
 
 /////////// Attachments
 ////// Slide
-L["uplp_usp_slide_compact.printname"] = "Compact Slide & Frame"
-L["uplp_usp_slide_compact.compactname"] = "Compact"
-L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact MSW-C."
+L["uplp_usp_slide_compact.printname"] = "\"Kompakt\" Slide & Frame"
+L["uplp_usp_slide_compact.compactname"] = "Kompakt"
+L["uplp_usp_slide_compact.description"] = "Compact slide and frame from the more compact MSWK."
 
-L["uplp_usp_slide_expert.printname"] = "Expert Slide"
-L["uplp_usp_slide_expert.compactname"] = "Expert"
-L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the MSW .40 Expert."
+L["uplp_usp_slide_expert.printname"] = "\"Experte\" Slide"
+L["uplp_usp_slide_expert.compactname"] = "Experte"
+L["uplp_usp_slide_expert.description"] = "Slightly longer slide from the MSW .40 Experte."
 
-L["uplp_usp_slide_elite.printname"] = "Elite Slide"
-L["uplp_usp_slide_elite.compactname"] = "Elite"
-L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the MSW .45 Elite."
+L["uplp_usp_slide_elite.printname"] = "\"Prestige\" Slide"
+L["uplp_usp_slide_elite.compactname"] = "Prestige"
+L["uplp_usp_slide_elite.description"] = "Hand-fitted extended slide from the MSW .45 Prestige."
 
 ////// Muzzle
-L["uplp_usp_muz_heavy.printname"] = "\"Präzision\" Muzzle Brake"
-L["uplp_usp_muz_heavy.compactname"] = "Präzision"
+L["uplp_usp_muz_heavy.printname"] = "\"Schwer\" Muzzle Brake"
+L["uplp_usp_muz_heavy.compactname"] = "Schwer"
 L["uplp_usp_muz_heavy.description"] = "Aftermarket German muzzle brake for the MSW."
 
-L["uplp_usp_muz_match.printname"] = "Match Barrel Weight"
-L["uplp_usp_muz_match.compactname"] = "Match"
+L["uplp_usp_muz_match.printname"] = "\"Präzision\" Barrel Weight"
+L["uplp_usp_muz_match.compactname"] = "Präzision"
 L["uplp_usp_muz_match.description"] = "Factory-built muzzle attachment that provides recoil counterbalance."
 
 L["uplp_usp_muz_supp.printname"] = "\"Silent Strike\" Suppressor"
