@@ -157,6 +157,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"nomuz", "notac"}
 
+ATT.SpreadAdd = -0.005
+ATT.SpreadAddRecoil = -0.0025
+ATT.SpreadAddHipFire = 0.01
 ATT.AimDownSightsTimeMult = 1.35
 ATT.RecoilMult = 0.9
 ATT.RecoilSideMult = 0.65

@@ -96,12 +96,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 74
-SWEP.DamageMin = 42
+SWEP.DamageMax = 70
+SWEP.DamageMin = 36
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -130,21 +130,21 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 5
 
 -- Recoil
-SWEP.Recoil = 3
-SWEP.RecoilUp = 2
-SWEP.RecoilSide = 0.5
+SWEP.Recoil = 1
+SWEP.RecoilUp = 4
+SWEP.RecoilSide = 3
 
-SWEP.RecoilRandomUp = 0.4
-SWEP.RecoilRandomSide = 0.2
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 3
 
 SWEP.RecoilAddRecoil = 1
-SWEP.RecoilRandomUpAddRecoil = 1
-SWEP.RecoilRandomSideAddRecoil = 3
+SWEP.RecoilRandomUpAddRecoil = 0
+SWEP.RecoilRandomSideAddRecoil = 1
 
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 0.75
+SWEP.RecoilAutoControl = 1
 SWEP.RecoilAutoControlShooting = 1
 
 SWEP.RecoilMultSights = 0.75
@@ -163,29 +163,42 @@ SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
--- SWEP.VisualRecoilUpHipFire = 2
+SWEP.VisualRecoilUpHipFire = 5
+SWEP.VisualRecoilSideHipFire = 0.2
+SWEP.VisualRecoilPunchHipFire = 5
 -- SWEP.VisualRecoilSideHipFire = -0.1
 -- SWEP.VisualRecoilRollHipFire = 20
--- SWEP.VisualRecoilPunchHipFire = 2
+--
 -- SWEP.VisualRecoilDampingConstHipFire = 45
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.015
+SWEP.SpreadAddHipFire = 0.01
 
-SWEP.SpreadAddRecoil = 0.045
+SWEP.SpreadAddRecoil = 0.02
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
+
+-- Intensify recoil-induced spread when hipfiring
+local additionalHipFireRecoilSpread = 0.01
+SWEP.SpreadHookHipFire = function(wep, data)
+    local sightAmt = wep:GetSightAmount()
+    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
+    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
+end
+
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 2
-SWEP.RecoilResetTime = 0
+SWEP.RecoilResetTime = 0.1
 SWEP.RecoilPerShot = 1 / 2
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
@@ -549,7 +562,7 @@ SWEP.Animations = {
 
     ["cycle"] = {
         Source = {"cycle1", "cycle2"},
-        MinProgress = 0.35,
+        MinProgress = 0.4,
         -- Mult = 1.0,
         -- Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
         -- now its ok
@@ -562,7 +575,7 @@ SWEP.Animations = {
 
     ["cycle_sights"] = {
         Source = "cycle1",
-        MinProgress = 0.35,
+        MinProgress = 0.4,
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },

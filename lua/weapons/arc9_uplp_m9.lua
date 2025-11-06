@@ -83,12 +83,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 28
+SWEP.DamageMax = 25
 SWEP.DamageMin = 12
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1.0,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -102,10 +102,10 @@ SWEP.ImpactForce = 4 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 6 / ARC9.HUToM
-SWEP.RangeMax = 32 / ARC9.HUToM
+SWEP.RangeMax = 45 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 625 * 39.37
+SWEP.PhysBulletMuzzleVelocity = 380 * 39.37
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
@@ -116,7 +116,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 15
 
 -- Recoil
-SWEP.Recoil = 1 * 0.75
+SWEP.Recoil = 1
 SWEP.RecoilUp = 1.2
 SWEP.RecoilSide = 0.9
 
@@ -152,21 +152,31 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.004
-SWEP.SpreadAddHipFire = 0.012
+SWEP.Spread = 0.0045
+SWEP.SpreadAddHipFire = 0.0085
 
 SWEP.SpreadAddRecoil = 0.01
 SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.05
 
+-- Intensify recoil-induced spread when hipfiring
+local additionalHipFireRecoilSpread = 0.017
+SWEP.SpreadHookHipFire = function(wep, data)
+    local sightAmt = wep:GetSightAmount()
+    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
+    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
+end
+
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 4
-SWEP.RecoilResetTime = 0.01
-SWEP.RecoilPerShot = 1 / 4
+SWEP.RecoilResetTime = 0.015
+SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
