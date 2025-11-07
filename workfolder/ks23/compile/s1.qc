@@ -1,8 +1,8 @@
-$modelname "weapons/arc9/uplp/stickers/590_1.mdl"
+$modelname "weapons/arc9/uplp/stickers/ks23_1.mdl"
 
 $bodygroup "studio"
 {
-	studio "590 s1.smd"
+	studio "s1.smd"
 }
 
 $surfaceprop "default"
@@ -11,6 +11,6 @@ $cdmaterials "models\weapons\customization\stickers\"
 
 $cbox 0 0 0 0 0 0
 $sequence "idle" {
-	"anims\idle2.smd"
+	"anims\idle_iron.smd"
 	fps 30
 }
