@@ -403,3 +403,73 @@ ATT.Category = "uplp_usp_stickers"
 ATT.StickerMaterial = "stickers/uplp/usp_match"
 
 ARC9.LoadAttachment(ATT, "uplp_sticker_usp_match")
+
+
+-- probably should make few modes, not just combined
+-- flashlight not so tactical for super tactical pistol
+-- also need to balance it out
+
+---------- uplp_usp_laser
+
+ATT = {}
+
+ATT.PrintName = "uplp_usp_laser"
+ATT.CompactName = "uplp_usp_laser"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "lam.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_usp_lam.mdl"
+-- ATT.ActivateElements = {"uplp_tac_used"}
+
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        Laser = true,
+        LaserStrength = 1,
+        LaserColor = Color(255, 0, 0),
+        LaserAttachment = 2,
+
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 512,
+        FlashlightFOV = 31,
+        FlashlightAttachment = 1,
+
+        Flare = true,
+        FlareColor = Color(255, 0, 0),
+        FlareSize = 1,
+        FlareAttachment = 1,
+        FlareFocus = false,
+        -- Positives
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+}
+
+-- ATT.CustomCons = {
+-- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
+-- }
+
+ATT.SprintToFireTimeMult = 1.05
+
+ATT.Category = {"uplp_usp_tac"}
+-- ATT.Category = "uplp_tac_pistol"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_usp_laser")

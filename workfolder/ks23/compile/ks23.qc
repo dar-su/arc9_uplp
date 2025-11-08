@@ -172,53 +172,55 @@ $sequence "cycle_2" {
 
 
 $sequence "reload_start" {
-	"anims\sgreload_start2.smd"
-	"anims\sgreload_start2_iron.smd"
-	blend "sights" 0 1
+	"anims\sgreload_start.smd"
+	// "anims\sgreload_start_iron.smd"
+	// blend "sights" 0 1
 	fps 30
-	snap
+	// snap
+	fadein 0.2
+	fadeout 0
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
 $sequence "reload_start_empty" {
 	"anims\sgreload_start_empty.smd"
-	"anims\sgreload_start_empty_iron.smd"
-	blend "sights" 0 1
+	// "anims\sgreload_start_empty_iron.smd"
+	// blend "sights" 0 1
 	fps 30
-	snap
+	// snap
+	fadein 0.2
+	fadeout 0
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
 $sequence "reload_insert_first" {
-	"anims\sgreload_insert_start.smd"
+	"anims\sgreload_insert3.smd"
 	fps 30
-	snap
+	// snap
 	// frame 1 19
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 $sequence "reload_insert" {
-	"anims\sgreload_insert.smd"
-	"anims\sgreload_insert_iron.smd"
-	blend "sights" 0 1
+	"anims\sgreload_insert2.smd"
 	fps 30
-	snap
+	// snap
 	// frame 1 19
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
 $sequence "reload_end_alt" {
 	"anims\sgreload_end.smd"
-	"anims\sgreload_end_iron.smd"
-	blend "sights" 0 1
+	// "anims\sgreload_end_iron.smd"
+	// blend "sights" 0 1
 	fps 30
-	snap
+	// snap
 	ikrule "rhand" touch "rhandikbleh" usesource
 }
 
 $sequence "reload_end" {
 	"anims\sgreload_end2.smd"
-	"anims\sgreload_end2_iron.smd"
-	blend "sights" 0 1
+	// "anims\sgreload_end2_iron.smd"
+	// blend "sights" 0 1
 	fps 30
 	snap
 	ikrule "rhand" touch "rhandikbleh" usesource

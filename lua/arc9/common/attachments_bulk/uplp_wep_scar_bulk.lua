@@ -57,7 +57,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.SpreadAdd = -0.0025
 ATT.SpreadAddRecoil = -0.001
-ATT.RecoilPerShot = 1 / 8
+ATT.RecoilPerShot = 1 / 7
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = 15 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
@@ -77,7 +77,7 @@ ATT.BarrelLengthAdd = 7
 ATT.SpreadAddHipFire = 0.02
 ATT.RecoilDissipationRateMult = 0.5
 ATT.SwayMultSights = 1.2
-ATT.RPMMult = 0.9
+ATT.RPMMult = 0.8
 
 ATT.Attachments = {
     {
@@ -115,7 +115,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 ATT.SpreadAdd = -0.0025
 ATT.SpreadAddRecoil = -0.001
-ATT.RecoilPerShot = 1 / 8
+ATT.RecoilPerShot = 1 / 7
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = 15 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
@@ -135,7 +135,7 @@ ATT.BarrelLengthAdd = 7
 ATT.SpreadAddHipFire = 0.02
 ATT.RecoilDissipationRateMult = 0.5
 ATT.SwayMultSights = 1.2
-ATT.RPMMult = 0.9
+ATT.RPMMult = 0.8
 
 ATT.Attachments = {
     {
@@ -344,7 +344,7 @@ ATT.SpeedMultSights = 0.9
 ATT.BarrelLengthAdd = 5
 ATT.SpreadAddHipFire = 0.01
 ATT.RecoilDissipationRateMult = 0.75
-ATT.RecoilPerShotMult = 0.85
+ATT.RecoilPerShotMult = 0.9
 ATT.SwayMultSights = 1.5
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end

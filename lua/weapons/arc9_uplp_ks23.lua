@@ -20,10 +20,9 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ks23_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_ks23_manufacturer" ),
-    -- [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_12gauge"),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = "moka add caliber here",
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_2375"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase( "uplp_mechanism_pumpaction" ),
-    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_russia" ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_sovietunion" ),
     [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "1985" ),
 }
 
@@ -39,7 +38,7 @@ SWEP.StandardPresets = {
 
 }
 
-SWEP.DefaultBodygroups = "00020000000000000" -- Might as well prepare for the future
+SWEP.DefaultBodygroups = "00010000000000000" -- Might as well prepare for the future
 
 ---- Muzzle Effects, Shell Effects, Camera
 SWEP.MuzzleParticle = "muzzleflash_m3"
@@ -48,10 +47,10 @@ SWEP.MuzzleEffectQCA = 1
 SWEP.TracerNum = 1
 SWEP.TracerSize = 1
 
-SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
+SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_2375_buck.mdl"
 SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 100
-SWEP.ShellVelocity = 0.75
+SWEP.ShellVelocity = 0.5
 SWEP.ShellSounds = ARC9.ShotgunShellSoundsTable
 
 SWEP.CaseEffectQCA = 2
@@ -90,8 +89,8 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 96
-SWEP.DamageMin = 48
+SWEP.DamageMax = 340
+SWEP.DamageMin = 120
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -114,6 +113,13 @@ function SWEP:Hook_GetDamageAtRange(data)
     return data
 end
 
+-- for faster falloff after ~5 meters
+SWEP.SweetSpot = false
+-- SWEP.SweetSpotDamage = 160 * 1.25
+-- SWEP.SweetSpotRange = 2 / ARC9.HUToM
+-- SWEP.SweetSpotWidth = 2 / ARC9.HUToM
+-- SWEP.SweetSpotPeak = 2 / ARC9.HUToM
+
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 1,
     [HITGROUP_CHEST] = 1,
@@ -125,14 +131,14 @@ SWEP.BodyDamageMults = {
 }
 
 SWEP.Penetration = 2 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 3 -- How much kick things will have when hit
+SWEP.ImpactForce = 1 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
 SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 300 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 2
 
@@ -140,23 +146,20 @@ SWEP.PhysBulletDrag = 2
 SWEP.Ammo = "buckshot" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 8
+SWEP.ClipSize = 3
 
 -- Recoil
-SWEP.Recoil = 1 + 1
-SWEP.RecoilUp = 2
-SWEP.RecoilSide = 1.25
+SWEP.Recoil = 2
+SWEP.RecoilUp = 5
+SWEP.RecoilSide = 5
 
--- Additional recoil when firing rapidly
-SWEP.RecoilMultRecoil = 2
-
-SWEP.RecoilRandomUp = 1.15
+SWEP.RecoilRandomUp = 2
 SWEP.RecoilRandomSide = 2
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
@@ -184,60 +187,45 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.044
+SWEP.Spread = 0.035
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.04
+SWEP.DispersionSpreadAddHipFire = 0.015
 
-SWEP.DispersionSpreadAddRecoil = 0.06
-SWEP.DispersionSpreadAddMove = 0.03
+SWEP.DispersionSpreadAddRecoil = 0.02
+SWEP.DispersionSpreadAddMove = 0.015
 SWEP.DispersionSpreadAddMidAir = 0.05
 
-SWEP.RecoilDissipationRate = 2.5
-SWEP.RecoilResetTime = 0.05
-SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilDissipationRate = 1
+SWEP.RecoilResetTime = 0.35
+SWEP.RecoilPerShot = 0.5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 2 / 3
-
+SWEP.RecoilModifierCapSights = 1 / 2
 
 -- Weapon handling
-SWEP.SpeedMult = 0.82 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.67 / 0.85 -- When aiming
+SWEP.SpeedMult = 0.82
+SWEP.SpeedMultSights = 0.55
 
-SWEP.AimDownSightsTime = 0.44 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.42 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.44
+SWEP.SprintToFireTime = 0.42
 
-SWEP.SwayAddSights = 1
+SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 42
 
 -- Shooting and Firemodes
-SWEP.RPM = 180 -- How fast gun shoot -- as fast for cycle anim to play instantly
+SWEP.RPM = 240 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
-SWEP.Num = 8 -- How many bullets shot at once
+SWEP.Num = 20 -- How many bullets shot at once
 
 SWEP.Firemodes = {
-    {
-        Mode = 1, -- Pump
-        PrintName = ARC9:GetPhrase("uplp_firemode_pump"),
-        ManualAction = true,
-        ManualActionNoLastCycle = true,
-        NoShellEjectManualAction = true,
-        uplp_semi = true,
-        SuppressEmptySuffix = true,
-        DispersionSpreadAddHipFire = -0.02,
-        Spread = 0.032,
-        DamageMax = 200,
-        RPM = 600,
-    },
-    {
-        Mode = 1, -- Semi
-        ManualAction = false,
-    },
+    { Mode = 1, PrintName = ARC9:GetPhrase("uplp_firemode_pump") },
 }
 
-SWEP.NoFiremodeWhenEmpty = true
+SWEP.NoShellEjectManualAction = true
+SWEP.ManualActionNoLastCycle = true
+SWEP.ManualAction = true
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 
 SWEP.ShootPitch = 100
@@ -257,35 +245,18 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.65, -6, 0.2),
-     Ang = Angle(0.025, 0.2, 0),
+     Pos = Vector(-2.65, -4.5, 0.79),
+     Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 55,
 }
 
-local is2 = {
-    Pos = Vector(-1.0, -4, -2.5),
-    Ang = Angle(0, 0, 0),
-    Magnification = 1.05,
-    Blur = false,
-    ViewModelFOV = 55,
-}
-
-SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    local attached = self:GetElements()
-
-     if attached["uplp_spas_stock_folding_f"] then
-        return is2
-    end
-
-end
-
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(22, 45, 3.25)
+SWEP.CustomizePos = Vector(16, 42, 3.25)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(22, -3, -4)
 
-SWEP.CustomizeSnapshotPos = Vector(1.5, 40, 0)
+SWEP.CustomizeSnapshotPos = Vector(1.5, 25, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
@@ -300,21 +271,23 @@ SWEP.ShouldDropMagEmpty = false
 
 SWEP.ReloadInSights = false
 SWEP.ShotgunReload = true
-SWEP.ShotgunReloadIncludesChamber = false
+SWEP.ShotgunReloadIncludesChamber = true 
 
 ---- Sounds
+local pathRZ = ")uplp_rz/ks23/"
+local pathMossberg = ")uplp_rz/mossberg/"
 
 -- urbna!
 local pathUT2 = ")uplp_urban_temp/"
 local pathUT = ")uplp_urban_temp/spas12/"
-local pathUTC = "))uplp_urban_temp/common/"
+local pathUTC = ")uplp_urban_temp/common/"
 -- local pathUO = "uplp_unofficial/"
 
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.wav",
-    pathUT .. "fire-02.wav",
-    pathUT .. "fire-03.wav",
+    pathRZ .. "fire-01.wav",
+    pathRZ .. "fire-02.wav",
+    pathRZ .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -357,44 +330,15 @@ SWEP.BulletBones = {
 }
 
 SWEP.HideBones = {
-    -- "fakemag",
-    -- "fakerounds",
 }
 
 SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "round1",
-        -- "round2",
-        -- "round3",
-        -- "round4",
-        -- "round5",
-        -- "round6",
-        -- "round7",
-        -- "round8",
-        -- "round9",
-        -- "round10",
-        -- "round11",
-        -- "round12",
-        -- "round13",
-        -- "round14",
-        -- "round15",
-        -- "round16",
-        -- "round17",
-        -- "round18",
-        -- "round19",
-    -- },
-    -- [2] = {
-        -- "fakemag",
-        -- "fakerounds",
-    -- }
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathRZ .. "mech-01.wav",
+    pathRZ .. "mech-02.wav",
+    pathRZ .. "mech-03.wav",
 }
 
 local UTCrattle = {
@@ -405,18 +349,12 @@ local UTCrattle = {
 }
 
 local ShellInsert = {
-    pathUT .. "shell-insert-01.ogg",
-    pathUT .. "shell-insert-02.ogg",
-    pathUT .. "shell-insert-03.ogg",
-    pathUT .. "shell-insert-04.ogg",
-    pathUT .. "shell-insert-05.ogg",
-    pathUT .. "shell-insert-06.ogg",
-    pathUT .. "shell-insert-07.ogg",
-    pathUT .. "shell-insert-08.ogg",
-    pathUT .. "shell-insert-09.ogg",
-    pathUT .. "shell-insert-10.ogg",
-    pathUT .. "shell-insert-11.ogg",
-    pathUT .. "shell-insert-12.ogg",
+    pathMossberg .. "shellin-01.ogg",
+    pathMossberg .. "shellin-02.ogg",
+    pathMossberg .. "shellin-03.ogg",
+    pathMossberg .. "shellin-04.ogg",
+    pathMossberg .. "shellin-05.ogg",
+    pathMossberg .. "shellin-06.ogg",
 }
 
 local thetoggle = {{
@@ -432,30 +370,21 @@ local thetoggle = {{
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
+    local eles = swep:GetElements()
 
-    local clip = swep:Clip1()
-    local empty = clip == 0
-    local insemi = swep:GetValue("uplp_semi") -- This is a lie. This is pump-action mode.
-
-    --if (true or swep:GetEmptyReload()) and anim == "reload_finish" then
-    --    return "reload_finish_empty"
-    --end
-
-    -- Pump-action mode suppresses the empty suffix
-    if anim == "reload_start_empty" or (anim == "reload_start" and swep:GetEmptyReload()) then
-        swep:SetEmptyReload(false)
-        timer.Simple( 0, function()
-            swep:SetLoadedRounds(1)
-            swep:SetLastLoadedRounds(1)
+    if anim == "reload_start" or anim == "reload_start_empty" then
+        swep.firstanim = true
+        timer.Simple(0.12, function()
+            if IsValid(swep) then swep:SetLoadedRounds(1) end -- magswap doesnt want to replinish our ammo!
         end)
-        if insemi then
-            return "reload_start_empty_pumpy"
+    elseif anim == "reload_finish" or anim == "reload_insert" then
+        if swep.firstanim then
+            swep.firstanim = nil
+            return anim .. "_first"
         end
     end
 
-    if insemi and anim == "fire" then
-        return "fire_pump"
-    end
+    return anim
 end
 
 -- Animations
@@ -463,18 +392,15 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
     },
-    ["idle_empty"] = {
-        Source = "idle_empty",
-    },
     ["ready"] = {
         Source = "ready",
         MinProgress = 0.75,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "presscheck1.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "forearm_forward.ogg", t = 11.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 36 / 60, c = ca },
+            { s = pathMossberg .. "rack_1.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathMossberg .. "rack_2.ogg", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, c = ca, v = 0.5 },
         },
     },
 
@@ -495,39 +421,6 @@ SWEP.Animations = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
     },
-    ["draw_quick"] = {
-        Source = "draw_quick",
-        MinProgress = 0.5,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-        },
-    },
-    ["holster_quick"] = {
-        Source = "holster_quick",
-        Mult = 0.5,
-        MinProgress = 0.3,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-        },
-    },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-        },
-    },
-    ["holster_empty"] = {
-        Source = "holster_empty",
-        MinProgress = 0.5,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-        },
-    },
 
 
     ["fire"] = {
@@ -539,45 +432,28 @@ SWEP.Animations = {
         },
     },
 
-    ["fire_pump"] = {
-        Source = {"fire_pumpy"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        Mult = 1,
-        EventTable = {
-            -- { s = mechh, t = 0, v = 0.75 },
-        },
-    },
-
-    ["fire_empty"] = {
-        Source = "fire_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        Mult = 1,
-        EventTable = {
-            { s = mechh, t = 0, v = 0.25 },
-        },
-    },
 
     ["cycle"] = {
-        Source = {"cycle"},
+        Source = {"cycle_1", "cycle_2"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EjectAt = 5 / 30,
-        MinProgress = 0.55,
+        MinProgress = 0.7,
         EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 4 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 8 / 30, v = 0.6 },
+            { s = pathMossberg .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.8 },
+            { s = pathMossberg .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
         },
     },
 
     -- Reloads --
 
     ["reload_start"] = {
-        Source = "reload_start_insert",
-        RestoreAmmo = 1,
+        Source = "reload_start",
+        RestoreAmmo = 0,
         MinProgress = 0.5,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = ShellInsert, t = 12 / 30, v = 0.6 },
         },
     },
 
@@ -585,40 +461,30 @@ SWEP.Animations = {
         Source = "reload_start_empty",
         RestoreAmmo = 1,
         MinProgress = 0.5,
-        Mult = 0.85,
+        Mult = 1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 0 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
-            { s = ")uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
-
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "grab-polymer.ogg", t = 49 / 30, c = ca, v = 0.4 },
+            { s = pathMossberg .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
+            { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
+            { s = pathMossberg .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
         },
     },
 
-    ["reload_start_empty_pumpy"] = {
-        Source = "reload_start_empty_pumpy",
-        RestoreAmmo = 1,
-        MinProgress = 0.5,
-        Mult = 0.85,
-        EjectAt = 31 / 30,
-        EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = ShellInsert, t = 10 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_back.ogg", t = 26 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 33 / 30, v = 0.6 },
-
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 37 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "grab-polymer.ogg", t = 54 / 30, c = ca, v = 0.6 },
-        },
-    },
 
     ["reload_insert"] = {
         Source = "reload_insert",
-        MinProgress = 0.334,
+        MinProgress = 0.5,
+        RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 1 / 30, v = 0.6 },
+            { s = ShellInsert, t = 6 / 30, v = 0.6 },
+        },
+    },
+    ["reload_insert_first"] = {
+        Source = "reload_insert_first",
+        MinProgress = 0.5,
+        RestoreAmmo = 0,
+        EventTable = {
+            { s = ShellInsert, t = 2 / 30, v = 0.6 },
         },
     },
 
@@ -632,18 +498,16 @@ SWEP.Animations = {
         },
     },
 
-    ["reload_finish_empty"] = {
-        Source = "reload_end_pump",
+    ["reload_finish_first"] = {
+        Source = "reload_end_alt",
         MinProgress = 0.5,
         FireASAP = true,
-        EjectAt = 4 / 30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
     },
+
 
     ["inspect"] = {
         Source = {"look"},
@@ -652,66 +516,24 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "ar15/selector-01.ogg", t = 55 / 30, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, c = ca, v = 1 },
             { s = pathUT .. "presscheck2.ogg", t = 90 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "ar15/selector-06.ogg", t = 94 / 30, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 107.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
     },
 
-    ["inspect_empty"] = {
-        Source = {"look_empty"},
-        MinProgress = 0.95,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 85 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 87.5 / 30, c = ca, v = 0.8 },
-            {hide = 1, t = 0},
-        },
-    },
 
-    ["firemode_1"] = {
-        Source = "modeswitch",
-        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
-    },
-    ["firemode_1_empty"] = {
-        Source = "modeswitch_empty",
-        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
-    },
-    ["firemode_2"] = {
-        Source = "modeswitch",
-        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0, v = 1 } },
-    },
-    ["firemode_2_empty"] = {
-        Source = "modeswitch_empty",
-        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0, v = 1 } },
-    },
     ["toggle"] = {
         Source = "modeswitch",
-        EventTable = thetoggle
-    },
-    ["toggle_empty"] = {
-        Source = "modeswitch_empty",
         EventTable = thetoggle
     },
 
     ["switchsights"] = {
         Source = "modeswitch",
-        EventTable = thetoggle
-    },
-    ["switchsights_empty"] = {
-        Source = "modeswitch_empty",
         EventTable = thetoggle
     },
 }
@@ -722,40 +544,39 @@ SWEP.Animations = {
 --     local eles = data.elements
 --     local mdl = data.model
 
-    -- if eles["uplp_spas_mag_drum"] or eles["uplp_spas_mag_drum_soda"] then -- many shells on drum
-        -- for k, v in pairs(aaaaaa) do
-            -- if eles[k] then
-                -- mdl:SetBodygroup(6, v)
-            -- end
-        -- end
-    -- end
-
 -- end
 
 SWEP.AttachmentElements = {
-    ["uplp_spas_short"] = {
-        Bodygroups = { { 1, 1 }, { 2, 1 } },
-        AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(4.75, 0, 0) },
-    }},
+    -- ["uplp_spas_short"] = {
+    --     Bodygroups = { { 1, 1 }, { 2, 1 } },
+    --     AttPosMods = { [3] = { Pos = Vector(-0.1, 0.015, 20.9), Icon_Offset = Vector(4.75, 0, 0) },
+    -- }},
 
-    ["uplp_spas_stock_fixed"] = { Bodygroups = { { 3, 1 } } },
-    ["uplp_spas_stock_folding_e"] = { Bodygroups = { { 3, 0 } } },
-    ["uplp_spas_stock_folding_f"] = { Bodygroups = { { 3, 3 } } },
-    ["uplp_spas_stock_tube"] = { Bodygroups = { { 3, 4 } } },
+    ["uplp_ks23_bar_short"] = { Bodygroups = { { 1, 1 } } },
+    ["uplp_ks23_bar_ext"] = { Bodygroups = { { 1, 2 } } },
+    ["uplp_ks23_bar_sniper"] = { Bodygroups = { { 1, 3 } } },
+    ["uplp_ks23_stock_grip"] = { Bodygroups = { { 2, 1 } } },
+    ["uplp_ks23_stock_grip_stock"] = { Bodygroups = { { 2, 2 } } },
 
-    ["uplp_spas_hook"] = { Bodygroups = { { 4, 1 } } },
-    ["uplp_spas_hookf"] = { Bodygroups = { { 4, 2 } } },
-
-    ["uplp_optic_used"] = { Bodygroups = { { 5, 1 } } },
+    ["uplp_optic_used"] = { Bodygroups = { { 3, 2 } } },
+    ["uplp_grip_used"] = { Bodygroups = { { 4, 1 } } },
+    ["uplp_tac_used"] = { Bodygroups = { { 5, 1 } } },
 
     -- SHELLS
-    ["uplp_sg_shell_red"] = { Bodygroups = { { 6, 0 } } },
-    ["uplp_sg_shell_blue"] = { Bodygroups = { { 6, 1 } } },
-    ["uplp_sg_shell_black"] = { Bodygroups = { { 6, 2 } } },
-    ["uplp_sg_shell_green"] = { Bodygroups = { { 6, 3 } } },
-    ["uplp_sg_shell_orange"] = { Bodygroups = { { 6, 4 } } },
-    ["uplp_sg_shell_yellow"] = { Bodygroups = { { 6, 5 } } },
+    ["uplp_ks23_shell_buck"] = { Bodygroups = { { 6, 0 } } },
+    ["uplp_ks23_shell_slug"] = { Bodygroups = { { 6, 1 } } },
+    ["uplp_ks23_shell_flash"] = { Bodygroups = { { 6, 2 } } },
+    ["uplp_ks23_shell_rubber"] = { Bodygroups = { { 6, 3 } } },
 }
+
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    local eles = swep:GetElements()
+    if eles["uplp_grippose"] then
+        ent:SetPoseParameter("owo", 1) -- different animations for grip stocks
+    else
+        ent:SetPoseParameter("owo", 0)
+    end
+end
 
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
@@ -766,60 +587,56 @@ SWEP.Attachments = {
         Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(-0.1, -0.9, 0.75),
+        Pos = Vector(-0.1, -0.65, -0.5),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_no_optics"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
-        Category = {"uplp_spas_barrel"},
+        Category = {"uplp_ks23_barrel"},
         DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0.5, 19.5),
+        Pos = Vector(0, 0.5, 7),
         Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_molot_muzzle"},
-        Bone = "body",
-        Scale = 1.25,
-        Pos = Vector(-0.1, 0.015, 25.1),
-        Ang = Angle(90, 90, 180),
-        ExcludeElements = {"nomuz"},
-        RejectAttachments = {
-        ["uplp_sg_mz_vepr"] = true,
-        }
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
-        Category = {"uplp_sg_ammo"},
+        Category = {"uplp_ks23_ammo"},
         Bone = "body",
         Pos = Vector(-0.1, 2, 5),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_sg_shell_red",
-        Integral = "uplp_sg_shell_red",
+        Installed = "uplp_ks23_shell_buck",
+        Integral = "uplp_ks23_shell_buck",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
-        Category = {"uplp_spas_stock"},
+        Category = {"uplp_ks23_stock"},
         DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.1, 1.5, -4.5),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_spas_stock_folding",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
-        Bone = "tac",
-        Pos = Vector(0, 0, 0),
+        Bone = "body",
+        Pos = Vector(-0.9, 0.3, 19.2),
         Ang = Angle(90, 90, -90),
+        ExcludeElements = {"uplp_no_tac"},
     },
 
     -- Cosmetic shit
     {
+        PrintName = ARC9:GetPhrase("uplp_category_charm"),
+        Category = "charm",
+        Bone = "pump",
+        Pos = Vector(1, -2.8, 9.625),
+        Ang = Angle(90, 0, -90),
+    },
+
+    {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_1.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ks23_1.mdl",
         Category = "stickers",
         Bone = "pump",
         Pos = Vector(0.5, -3.3 + 1.5, 8),
@@ -827,7 +644,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_2.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ks23_2.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.5, 0.5 + 1.5, 3),
@@ -835,26 +652,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_3.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/ks23_3.mdl",
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0.5, 0.5 + 1.5, -1.5),
         Ang = Angle(90, 90, 180),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
-        StickerModel = "models/weapons/arc9/uplp/stickers/spas_4.mdl",
-        Category = "stickers",
-        Bone = "body",
-        Pos = Vector(0, -0.5 - 1.5, -3),
-        Ang = Angle(90, 90, 180),
-    },
-
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_charm"),
-        Category = "charm",
-        Bone = "pump",
-        Pos = Vector(1, -2.8, 9.625),
-        Ang = Angle(90, 0, -90),
     },
 }
