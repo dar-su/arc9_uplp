@@ -54,6 +54,7 @@ L["uplp_caliber_9x39mm"] = "9×39mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
 L["uplp_caliber_308auto"] = ".380 ACP"
 L["uplp_caliber_4570"] = ".45-70 Government"
+L["uplp_caliber_2375"] = " 23×75mm R"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
@@ -3470,10 +3471,12 @@ L["uplp_ks23_shell_slug.description"] = ARC9:GetPhrase("uplp_sg_shell_green.desc
 L["uplp_ks23_shell_flash.printname"] = "\"Zvezda\" Flash Rounds"
 L["uplp_ks23_shell_flash.compactname"] = "Zvezda"
 L["uplp_ks23_shell_flash.description"] = "Shotshells loaded with a unique compound that creates a blinding flash when shot.\n\nNote: Does not actually fire any <color=255,100,100>damaging projectile</color>."
+L["uplp_ks23_shell_flash.pro"] = "Target will be blinded"
 
 L["uplp_ks23_shell_rubber.printname"] = "\"Privet\" Buckshot Rounds"
 L["uplp_ks23_shell_rubber.compactname"] = "Privet"
-L["uplp_ks23_shell_rubber.description"] = "Riot control shotshells loaded with a single rubber projectile."
+L["uplp_ks23_shell_rubber.description"] = "Less-lethal riot control shotshells loaded with a single rubber projectile.\n\nWelcome back, Urban \"BATON\" rounds."
+L["uplp_ks23_shell_rubber.pro"] = "Target may drop their weapon"
 
 //////////////////// H&K G36
 L["uplp_weapon_g36"] = "STG-95"
