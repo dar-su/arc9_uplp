@@ -2,58 +2,73 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/sr25/"
 
+local stats14 = {
+    -- Positives
+    SpreadAddHipFire = -0.01,
+    AimDownSightsTimeAdd = -0.05,
+    SprintToFireTimeAdd = -0.08,
+    RPMMult = 1.1,
+    SpeedMultSights = 1.2,
+
+    -- Negatives
+    SpreadAdd = 0.004,
+    SpreadAddRecoil = 0.005,
+    RecoilPerShot = 1 / 3,
+    RecoilAdd = 0.5,
+    RangeMinAdd = -25 / ARC9.HUToM,
+    RangeMaxAdd = -50 / ARC9.HUToM,
+    RecoilResetTimeAdd = 0.012,
+}
+
 local stats16 = {
     -- Positives
     SpreadAddHipFire = -0.005,
-    AimDownSightsTimeAdd = -0.03,
-    SprintToFireTimeAdd = -0.06,
+    AimDownSightsTimeAdd = -0.02,
+    SprintToFireTimeAdd = -0.04,
     SpeedMultSights = 1.1,
     BarrelLengthAdd = -6,
-    RecoilMult = 1.1,
 
     -- Negatives
-    SpreadAdd = 0.0012,
-    RangeMaxAdd = -20 / ARC9.HUToM,
-    RangeMinAdd = -5 / ARC9.HUToM,
+    SpreadAdd = 0.0014,
+    RangeMaxAdd = -30 / ARC9.HUToM,
+    RangeMinAdd = -15 / ARC9.HUToM,
     PhysBulletMuzzleVelocityMult = 0.94,
-    RecoilPerShot = 1 / 5,
+    RecoilPerShot = 1 / 4,
+    RecoilAdd = 0.1,
 }
 
 local stats24 = {
     -- Positives
-    SpreadAdd = -0.0006,
-    RangeMaxAdd = 40 / ARC9.HUToM,
-    RangeMinAdd = 10 / ARC9.HUToM,
-    PhysBulletMuzzleVelocityMult = 1.07,
-    RecoilPerShot = 1 / 9,
-    RecoilMult = 0.925,
+    SpreadAdd = -0.0003,
+    RangeMaxAdd = 10 / ARC9.HUToM,
+    RangeMinAdd = 5 / ARC9.HUToM,
+    PhysBulletMuzzleVelocityMult = 1.05,
+    RecoilPerShot = 1 / 6,
+    RecoilAdd = -0.07,
 
     -- Negatives
-    SpreadAddHipFire = 0.008,
-    AimDownSightsTimeAdd = 0.03,
-    SprintToFireTimeAdd = 0.04,
-    SpeedMult = 0.98,
-    SpeedMultSights = 0.85,
-    RPMAdd = -30,
-    BarrelLengthAdd = 4,
+    SpreadAddHipFire = 0.006,
+    AimDownSightsTimeAdd = 0.04,
+    SprintToFireTimeAdd = 0.06,
+    SpeedMultSights = 0.95,
+    BarrelLengthAdd = 2,
 }
 
 local stats28 = {
     -- Positives
-    SpreadAdd = -0.0012,
-    RangeMaxAdd = 60 / ARC9.HUToM,
+    SpreadAdd = -0.001,
+    RangeMaxAdd = 40 / ARC9.HUToM,
     RangeMinAdd = 20 / ARC9.HUToM,
     PhysBulletMuzzleVelocityMult = 1.15,
-    RecoilPerShot = 1 / 11,
-    RecoilMult = 0.85,
+    RecoilPerShot = 1 / 10,
+    RecoilAdd = -0.15,
 
     -- Negatives
     SpreadAddHipFire = 0.012,
-    AimDownSightsTimeAdd = 0.05,
-    SprintToFireTimeAdd = 0.06,
-    SpeedMult = 0.97,
-    SpeedMultSights = 0.8,
-    RPMAdd = -60,
+    AimDownSightsTimeAdd = 0.08,
+    SprintToFireTimeAdd = 0.1,
+    SpeedMultSights = 0.85,
+    RPMMult = 0.9,
     BarrelLengthAdd = 8,
 }
 
@@ -73,17 +88,21 @@ ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_tall", "uplp_ar1
 ATT.Category = "uplp_sr25_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilUpAdd = 0.25
-ATT.RecoilSideAdd = 0.3
-ATT.RecoilRandomSideAdd = 0.15
-ATT.SpreadAdd = 0.0055
-ATT.RecoilResetTimeAdd = 0.01
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
+}
+
+ATT.RecoilAdd = 0.75
+ATT.SpreadAdd = 0.004
+ATT.SpreadAddRecoil = 0.007
 
 ATT.Firemodes = {
     {
         Mode = -1, -- aut0
         RPM = 600,
-        PoseParam = 2
+        PoseParam = 2,
+
+        RecoilRandomSideAdd = 0,
     },
     {
         Mode = 1, -- Semi
@@ -143,6 +162,14 @@ ATT.Icon = Material("entities/uplp_attachements/ar15/recm4.png", "mips smooth")
 ATT.Category = "uplp_sr25_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
+}
+
+ATT.RecoilAdd = 0.9
+ATT.SpreadAdd = 0.004
+ATT.SpreadAddRecoil = 0.01
+
 ATT.Firemodes = {
     {
         Mode = -1, -- aut0
@@ -176,17 +203,23 @@ ATT.Category = "uplp_sr25_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Firemodes = {
-    { Mode = 1, RPM = 7000, PrintName = ARC9:GetPhrase("uplp_firemode_pump") },
+    { Mode = 1, RPM = 1000, PrintName = ARC9:GetPhrase("uplp_firemode_pump") },
 }
 
 ATT.ManualAction = true
 ATT.SlamFire = true -- or true?
 ATT.NoLastCycle = true
-ATT.ManualActionNoLastCycle = true 
+ATT.ManualActionNoLastCycle = true
 ATT.ManualActionEjectAnyway = false
 ATT.NoShellEject = true
 ATT.CanReloadWhileUnCycled = true
 ATT.EjectDelay = 0.025
+
+ATT.RecoilMult = 0.9
+ATT.RecoilPerShot = 1 / 2
+ATT.RecoilResetTimeAdd = 0.2
+ATT.SpreadAddHipFire = -0.025
+ATT.SpreadAddMove = -0.006
 
 -- ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
 ATT.Model = "models/weapons/arc9/uplp/ak_lhik_bizon.mdl"
@@ -490,22 +523,12 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(4, 0.05, -1.3)
 
--- Positives
-ATT.SpreadAddHipFire = -0.01
-ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.04
-
--- Negatives
-ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 6
-ATT.RecoilAdd = 0.3
-ATT.RangeMinAdd = -20 / ARC9.HUToM
-ATT.RangeMaxAdd = -40 / ARC9.HUToM
-
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
 ATT.MuzzleEffectQCA = 5
+
+table.Merge(ATT, stats14)
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_short")
 
@@ -533,6 +556,10 @@ ATT.MuzzleEffectQCA = 6
 
 table.Merge(ATT, stats16)
 
+-- Signficantly faster ADS, less accurate when moving
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SpreadAddMove = 0.0035
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_s15")
 
 ---------- uplp_sr25_hg_mutant -- Short
@@ -559,6 +586,10 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0)
 ATT.MuzzleEffectQCA = 6
 
 table.Merge(ATT, stats16)
+
+-- Less horizontal recoil, more sway
+ATT.RecoilSideAdd = -0.25
+ATT.SwayMultSights = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_mutant")
 
@@ -598,6 +629,9 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(6, 0.2, -1.3)
 
+ATT.SpeedMultSights = 1.15
+ATT.SpeedMultShooting = 0.7
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_tac")
 
 ---------- uplp_sr25_hg_s15xl -- Std length
@@ -617,6 +651,10 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(4, -0.05, -1.3)
 
+-- Faster ADS, less accurate when moving
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SpreadAddMove = 0.0035
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_s15xl")
 
 ---------- uplp_sr25_hg_ar50 -- Std length
@@ -635,6 +673,10 @@ ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tacshort.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(6, -0.08, -1.07)
+
+-- less up recoil, more side recoil
+ATT.RecoilUpAdd = -0.3
+ATT.RecoilSideAdd = 0.25
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_ar50")
 
@@ -662,6 +704,10 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) 
 ATT.MuzzleEffectQCA = 7
 
 table.Merge(ATT, stats24)
+
+-- Less horizontal recoil, more sway
+ATT.RecoilSideAdd = -0.35
+ATT.SwayMultSights = 1.75
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_mutantxl")
 
@@ -691,6 +737,10 @@ ATT.MuzzleEffectQCA = 7
 
 table.Merge(ATT, stats24)
 
+-- Increase recoil control, reduce movespeed
+ATT.RecoilAutoControlMult = 1.1
+ATT.SpeedMult = 0.98
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_mp10")
 
 ---------- uplp_sr25_hg_fns -- Very Long
@@ -716,12 +766,13 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) 
 
 ATT.MuzzleEffectQCA = 8
 
--- TODO stats
-
 table.Merge(ATT, stats28)
 
 ATT.Bipod = true
 
+-- Less ADS penalty, more side recoil
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.RecoilSideAdd = 0.15
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_fns")
 
@@ -749,7 +800,7 @@ ATT.MuzzleEffectQCA = 8
 
 table.Merge(ATT, stats28)
 
--- TODO stats
+-- "Standard" 28"
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_m110")
 
@@ -779,7 +830,10 @@ ATT.MuzzleEffectQCA = 8
 
 table.Merge(ATT, stats28)
 
--- TODO stats
+ATT.RecoilAdd = -0.2
+ATT.RPMMult = 1
+ATT.SpeedMultSights = 0.75
+ATT.SpreadAdd = -0.002
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_ar10")
 

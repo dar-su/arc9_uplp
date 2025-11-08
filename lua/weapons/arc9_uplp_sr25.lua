@@ -165,12 +165,12 @@ SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.008
+SWEP.RecoilResetTime = 0.015
 SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 
-SWEP.RecoilPerShotMultSights = 0.5
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- Weapon handling
 SWEP.Speed = 0.8 + 0.05
@@ -212,20 +212,20 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.239, -3, 0.5),
-     Ang = Angle(0, -0.05, 0),
+     Pos = Vector(-2.249, -3, 0.41),
+     Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
 
 local iironsightt = {
-    Pos = Vector(-2.239, -3, 0.5 - 0.2),
-    Ang = Angle(0, -0.05, 0),
+    Pos = Vector(-2.249, -3, 0.27),
+    Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
 }
 local iironsighttar10 = {
-    Pos = Vector(-2.239, -3, 0.5 - 0.45),
+    Pos = Vector(-2.249, -3, 0.025),
     Ang = Angle(0, -0.05, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
@@ -233,7 +233,7 @@ local iironsighttar10 = {
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
-    if attached["uplp_sr25_rec_ar10"] then return iironsighttar10 
+    if attached["uplp_sr25_rec_ar10"] then return iironsighttar10
     elseif attached["uplp_ar15_rs_tall"] then return iironsightt end
 end
 
