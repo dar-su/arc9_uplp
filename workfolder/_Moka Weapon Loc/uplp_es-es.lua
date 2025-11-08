@@ -17,3 +17,11 @@ L["uplp_weapon_dvl10_m3"] = "RR-40 Wolfhound"
 L["uplp_weapon_dvl10_real"] = "DVL-10"
 
 L["uplp_weapon_dvl10_manufacturer"] = "Integrated Systems Design Bureau (KBIS)"
+
+//////////////////// ASh-12
+L["uplp_weapon_ash12"] = "RZ 12.7"
+L["uplp_weapon_ash12_desc"] = "El RZ 12.7 ruso es un potente fusil de asalto bullpup con recámara del grueso calibre 12.7×55 mm, diseñado para el combate cuerpo a cuerpo y la lucha antimaterial, con un sistema distinto de mitigación del retroceso y una combinación única de potencia de parada y precisión. Su diseño incorpora características para mejorar el control y la estabilidad a pesar de su importante calibre, lo que la hace adecuada para aplicaciones militares especializadas."
+
+L["uplp_weapon_ash12_real"] = "ASh-12"
+
+L["uplp_weapon_ash12_manufacturer"] = "Izhmash"

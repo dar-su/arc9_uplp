@@ -2226,14 +2226,6 @@ L["uplp_asval_mag_30.printname"] = "30-Round ECP"
 L["uplp_asval_mag_30.compactname"] = "30R ECP"
 L["uplp_asval_mag_30.description"] = "Extended 30-round magazine with \"Experimental Cheap Precision\" rounds intended for the MK Lightning."
 
-//////////////////// ASh-12
-L["uplp_weapon_ash12"] = "RZ 12.7"
-L["uplp_weapon_ash12_desc"] = "The Russian RZ 12.7 is a powerful bullpup assault rifle chambered for the hefty 12.7×55mm caliber, designed for close-quarters combat and anti-material purposes, with a distinct recoil-mitigating system and a unique combination of stopping power and accuracy. Its design incorporates features for enhanced control and stability despite its substantial caliber, making it suitable for specialized military applications."
-
-L["uplp_weapon_ash12_real"] = "ASh-12"
-
-L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
-
 //////////////////// Steyr AUG
 L["uplp_weapon_aug"] = "AW-UG"
 L["uplp_weapon_aug_desc"] = "The \"Automatisches Waffen-Universal-Gewehr\" (Automatic Weapon Universal Rifle) is the main service weapon of the Austrian military and has been the base for multiple other bullpup-based firearms all around the world. The AW has also been the base for many different variations of the weapon, turning it into either a support machine gun or a submachine gun."
@@ -3391,6 +3383,11 @@ L["uplp_usp_mag_tac.printname"] = "12-Round .45 ACP Ergo Mag"
 L["uplp_usp_mag_tac.compactname"] = "12R .45 Ergo"
 L["uplp_usp_mag_tac.description"] = ARC9:GetPhrase("uplp_deag_mag_tac.description") or "Standard magazine with an ergonomic base plate for faster reloads."
 
+////// Tactical
+L["uplp_usp_laser.printname"] = "LuminaFire Armaments S-MOD"
+L["uplp_usp_laser.compactname"] = "S-MOD"
+L["uplp_usp_laser.description"] = "Custom-made laser and flashlight module designed for the MSW .45 made by LuminaFire Armaments.\n\nPerfect for a special forces guru that finds cardboard boxes an excellent hiding place."
+
 ////// Irons
 L["uplp_usp_irons_tac.printname"] = "MSW-T Iron Sights"
 L["uplp_usp_irons_tac.compactname"] = "MSW-T"
@@ -3429,3 +3426,155 @@ L["uplp_sticker_usp_paw.description"] = "Sticker for the MSW .45 Match muzzle at
 L["uplp_sticker_usp_match.printname"] = "MSW .45 Match <Insert funny text> Sticker"
 L["uplp_sticker_usp_match.compactname"] = "<Insert funny text>"
 L["uplp_sticker_usp_match.description"] = "Sticker for the MSW .45 Match muzzle attachment."
+
+//////////////////// KS23
+L["uplp_weapon_ks23"] = "Pushka-23"
+L["uplp_weapon_ks23_desc"] = "The Pushka-23 (Russian: Пушка | Pushka, \"Cannon\") is a Soviet 23 mm large-bore smoothbore shotgun developed for law-enforcement and correctional use, built to deliver powerful, short-range effect with specially designed low-velocity cartridges."
+
+L["uplp_weapon_ks23_real"] = "KS-23"
+
+L["uplp_weapon_ks23_manufacturer"] = "Tula Arms Plant"
+
+/////////// Attachments
+////// Barrels
+L["uplp_ks23_bar_short.printname"] = "Compact Barrel"
+L["uplp_ks23_bar_short.compactname"] = "Compact"
+L["uplp_ks23_bar_short.description"] = "Shortened barrel for the Pushka-23.\nComes with a <color=255,100,100>4-round</color> tube."
+
+L["uplp_ks23_bar_ext.printname"] = "Extended Tube"
+L["uplp_ks23_bar_ext.compactname"] = "Ext."
+L["uplp_ks23_bar_ext.description"] = "Factory barrel with an extended <color=100,255,100>7-round</color> capacity tube."
+
+L["uplp_ks23_bar_sniper.printname"] = "Sniper Barrel"
+L["uplp_ks23_bar_sniper.compactname"] = "Sniper"
+L["uplp_ks23_bar_sniper.description"] = "Long barrel for the Pushka-23.\nComes with a <color=100,255,100>5-round</color> tube."
+
+////// Stock
+L["uplp_ks23_stock_grip.printname"] = "Pistol Grip"
+L["uplp_ks23_stock_grip.compactname"] = "Pistol"
+L["uplp_ks23_stock_grip.description"] = "Removes the stock from the Pushka-23, replacing it with a regular pistol grip.\n\nNot advised to use, as it can, and most likely will, break your wrist."
+
+L["uplp_ks23_stock_grip_stock.printname"] = "Pistol Grip w/ Wire Stock"
+L["uplp_ks23_stock_grip_stock.compactname"] = "Pist. Wire"
+L["uplp_ks23_stock_grip_stock.description"] = "Removes the stock from the Pushka-23, replacing it with a regular pistol grip. Also attaches a wire stock to it.\n\nConstruction of said stock might not be up to code, but who are we to judge?"
+
+////// Ammo
+L["uplp_ks23_shell_buck.printname"] = "\"Oskolok\" Buckshot Rounds"
+L["uplp_ks23_shell_buck.compactname"] = "Oskolok"
+L["uplp_ks23_shell_buck.description"] = ARC9:GetPhrase("uplp_sg_shell_red.description") or "Standard shotshells loading medium-sized pellets."
+
+L["uplp_ks23_shell_slug.printname"] = "\"Okhotnik\" Slug Rounds"
+L["uplp_ks23_shell_slug.compactname"] = "Okhotnik"
+L["uplp_ks23_shell_slug.description"] = ARC9:GetPhrase("uplp_sg_shell_green.description") or "Shotshells used to hunt prey at medium distances. Fires a single accurate pellet."
+
+L["uplp_ks23_shell_flash.printname"] = "\"Zvezda\" Flash Rounds"
+L["uplp_ks23_shell_flash.compactname"] = "Zvezda"
+L["uplp_ks23_shell_flash.description"] = "Shotshells loaded with a unique compound that creates a blinding flash when shot.\n\nNote: Does not actually fire any <color=255,100,100>damaging projectile</color>."
+
+L["uplp_ks23_shell_rubber.printname"] = "\"Privet\" Buckshot Rounds"
+L["uplp_ks23_shell_rubber.compactname"] = "Privet"
+L["uplp_ks23_shell_rubber.description"] = "Riot control shotshells loaded with a single rubber projectile."
+
+//////////////////// H&K G36
+L["uplp_weapon_g36"] = "STG-95"
+L["uplp_weapon_g36_desc"] = "The STG-95 (\"Sturmgewehr 95\"), a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
+
+L["uplp_weapon_g36_sl8"] = "ZJG-98" -- "Ziviles Jagdgewehr"
+
+L["uplp_weapon_g36_real"] = "H&K G36"
+
+L["uplp_weapon_g36_manufacturer"] = "Heckler & Koch GmbH"
+
+/////////// Attachments
+////// Stocks
+L["uplp_g36_stock_sl8.printname"] = "ZJG-98 Frame"
+L["uplp_g36_stock_sl8.compactname"] = "ZJG-98"
+L["uplp_g36_stock_sl8.description"] = "Swaps out the exteriour of the STG-95 with the civilian ZJG-98, a <color=255,100,100>semi-auto only</color> version."
+
+L["uplp_g36_stock_idz.printname"] = "Ravenforce Tactical Stock"
+L["uplp_g36_stock_idz.compactname"] = "Ravenforge"
+L["uplp_g36_stock_idz.description"] = "Aftermarket stock made by Ravenforce for the STG-95."
+
+L["uplp_g36_stock_default.printname"] = "STG-95 Factory Stock"
+L["uplp_g36_stock_default.compactname"] = "STG-95"
+L["uplp_g36_stock_default.description"] = "Factory stock for the STG-95."
+
+L["uplp_g36_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
+L["uplp_g36_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
+L["uplp_g36_stock_buffer.description"] = "Aftermarket buffer tube assembly compatible with the STG-95. Allows installation of AR-15 compatible stocks."
+
+////// Top Rails
+L["uplp_g36_top_c.printname"] = "STG-95C Top Rail"
+L["uplp_g36_top_c.compactname"] = "STG-95C"
+L["uplp_g36_top_c.description"] = "Top rail for mounting scopes, used on the STG-95C."
+
+L["uplp_g36_top_scope.printname"] = "STG-95 Zielfernrohr"
+L["uplp_g36_top_scope.compactname"] = "Scope"
+L["uplp_g36_top_scope.description"] = "Factory-made optic made specifically for the STG-95."
+
+L["uplp_g36_top_scope_rds.printname"] = "STG-95 Rotpunktvisier"
+L["uplp_g36_top_scope_rds.compactname"] = "RDS"
+L["uplp_g36_top_scope_rds.description"] = "Factory-made red dot sight made to be attached on top of the STG-95 scope."
+
+L["uplp_g36_top_sl8.printname"] = "ZJG-98 Top Rail"
+L["uplp_g36_top_sl8.compactname"] = "ZJG-98"
+L["uplp_g36_top_sl8.description"] = "Top rail for mounting scopes, used on the civilian ZJG-98."
+
+L["uplp_g36_top_short.printname"] = "Ravenforge Top Rail"
+L["uplp_g36_top_short.compactname"] = "Ravenforge"
+L["uplp_g36_top_short.description"] = "Shortened top rail made by Ravenforge."
+
+L["uplp_g36_top_modern.printname"] = "Sentinel Precision Top Rail"
+L["uplp_g36_top_modern.compactname"] = "S.P."
+L["uplp_g36_top_modern.description"] = "Slim top rail made by Sentinel Precision. Comes with foldable iron sights."
+
+////// Frontends
+L["uplp_g36_hg_c.printname"] = "STG-95C Frontend"
+L["uplp_g36_hg_c.compactname"] = "STG-95C"
+L["uplp_g36_hg_c.description"] = "228mm (9\") barrel and handguard from the STG-95C."
+
+L["uplp_g36_hg_default.printname"] = "STG-95 Frontend"
+L["uplp_g36_hg_default.compactname"] = "STG-95"
+L["uplp_g36_hg_default.description"] = "318mm (12.5\") barrel and handguard from the STG-95."
+
+L["uplp_g36_hg_k.printname"] = "STG-95K Frontend"
+L["uplp_g36_hg_k.compactname"] = "STG-95K"
+L["uplp_g36_hg_k.description"] = "318mm (12.5\") barrel and handguard from the STG-95K."
+
+L["uplp_g36_hg_sl8.printname"] = "ZJG-98 Frontend"
+L["uplp_g36_hg_sl8.compactname"] = "ZJG-98"
+L["uplp_g36_hg_sl8.description"] = "510mm (20.1\") barrel and handguard from the ZJG-98.\nDoes not support <color=255,100,100>muzzle attachments</color>."
+
+L["uplp_g36_hg_keymod.printname"] = "Ravenforge Frontend"
+L["uplp_g36_hg_keymod.compactname"] = "Ravenforge"
+L["uplp_g36_hg_keymod.description"] = "318mm (12.5\") barrel with an aftermarket handguard from Ravenforge."
+
+L["uplp_g36_hg_modern.printname"] = "Sentinel Precision STG-95 Frontend"
+L["uplp_g36_hg_modern.compactname"] = "S.P. STG-95"
+L["uplp_g36_hg_modern.description"] = "318mm (12.5\") barrel with an aftermarket handguard from Ravenforge."
+
+L["uplp_g36_hg_modern_short.printname"] = "Sentinel Precision STG-95C Frontend"
+L["uplp_g36_hg_modern_short.compactname"] = "S.P. STG-95C"
+L["uplp_g36_hg_modern_short.description"] = "228mm (9\") barrel with an aftermarket handguard from Ravenforge."
+
+L["uplp_g36_hg_modern_long.printname"] = "Sentinel Precision MG-95 Frontend"
+L["uplp_g36_hg_modern_long.compactname"] = "S.P. MG-95"
+L["uplp_g36_hg_modern_long.description"] = "480mm (18.9\") barrel with an aftermarket handguard from Ravenforge."
+
+////// Magazines
+L["uplp_g36_mag_10.printname"] = "10-Round 5.56×45mm"
+L["uplp_g36_mag_10.compactname"] = "10R 5.56"
+L["uplp_g36_mag_10.description"] = "Short 10-round magazine made for the STG-95."
+
+L["uplp_g36_mag_30_transparent.printname"] = "30-Round 5.56×45mm"
+L["uplp_g36_mag_30_transparent.compactname"] = "30R 5.56"
+L["uplp_g36_mag_30_transparent.description"] = "Transparent version of the STG-95's default 30-round magazine."
+
+L["uplp_g36_mag_drum.printname"] = ARC9:GetPhrase("uplp_ar15_mag_drum.printname") or "100-Round 5.56×45mm Drum"
+L["uplp_g36_mag_drum.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_drum.compactname") or "90R Drum"
+L["uplp_g36_mag_drum.description"] = ARC9:GetPhrase("uplp_ar15_mag_drum.description") or "90-Round C-shaped drum magazine.\nLoading more than 90 rounds is not recommeneded as it could cause jams."
+
+////// Other
+L["uplp_g36_bipod.printname"] = "STG-95 Bipod"
+L["uplp_g36_bipod.compactname"] = "Bipod"
+L["uplp_g36_bipod.description"] = "Integrated bipod for the STG-95."

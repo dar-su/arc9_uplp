@@ -17,3 +17,11 @@ L["uplp_weapon_dvl10_m3"] = "RR-40 Wolfhound"
 L["uplp_weapon_dvl10_real"] = "DVL-10"
 
 L["uplp_weapon_dvl10_manufacturer"] = "Integrated Systems Design Bureau (KBIS)"
+
+//////////////////// ASh-12
+L["uplp_weapon_ash12"] = "RZ 12.7"
+L["uplp_weapon_ash12_desc"] = "The Russian RZ 12.7 is a powerful bullpup assault rifle chambered for the hefty 12.7×55mm caliber, designed for close-quarters combat and anti-material purposes, with a distinct recoil-mitigating system and a unique combination of stopping power and accuracy. Its design incorporates features for enhanced control and stability despite its substantial caliber, making it suitable for specialized military applications."
+
+L["uplp_weapon_ash12_real"] = "ASh-12"
+
+L["uplp_weapon_ash12_manufacturer"] = "Izhmash"
