@@ -111,7 +111,7 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 ---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 200
-SWEP.DamageMin = 64
+SWEP.DamageMin = 72
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -214,11 +214,11 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.033
+SWEP.Spread = 0.03
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.04
+SWEP.DispersionSpreadAddHipFire = 0.02
 
 SWEP.DispersionSpreadAddRecoil = 0.035
 SWEP.DispersionSpreadAddMove = 0.025
@@ -259,12 +259,12 @@ SWEP.Firemodes = {
         Mode = 2,
         PrintName = ARC9:GetPhrase("uplp_firemode_both"),
         RPMOverride = 10000,
-        SpreadAdd = 0.03,
-        DamageMaxMult = 0.7,
+        SpreadAdd = 0.02,
+        DamageMaxMult = 0.85,
         RunawayBurst = true,
         PostBurstDelay = 0.2,
         RecoilFirstShot = 0,
-        RecoilAddShooting = 1,
+        RecoilAddShooting = 0.5,
         DispersionSpreadMultRecoil = 0,
 
         NoShootSoundAfterFirstShot = true,

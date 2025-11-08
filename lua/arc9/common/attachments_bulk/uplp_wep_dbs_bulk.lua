@@ -18,9 +18,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.RecoilAdd = -0.2
-ATT.SpreadAdd = -0.014
-ATT.RangeMaxMult = 1.15
-ATT.DamageMinMult = 1.33333333333
+ATT.SpreadAdd = -0.01
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.03
@@ -28,7 +27,7 @@ ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAddSights = -0.1
 ATT.SpeedAdd = -0.04
 ATT.BarrelLengthAdd = 6
-ATT.DispersionSpreadAddHipFire = 0.012
+ATT.DispersionSpreadAddHipFire = 0.02
 ATT.DispersionSpreadAddRecoil = 0.005
 ATT.DispersionSpreadAddMove = 0.01
 ATT.RPMAdd = -30
@@ -43,12 +42,12 @@ ATT.Firemodes = {
         Mode = 2,
         PrintName = ARC9:GetPhrase("uplp_firemode_both"),
         RPMOverride = 10000,
-        SpreadAdd = 0.03,
-        DamageMaxMult = 0.7,
+        SpreadAdd = 0.01,
+        DamageMaxMult = 0.85,
         RunawayBurst = true,
         PostBurstDelay = 0.3,
         RecoilFirstShot = 0,
-        RecoilAddShooting = 1,
+        RecoilAddShooting = 0.5,
         DispersionSpreadMultRecoil = 0,
     },
 }
@@ -96,9 +95,9 @@ ATT.SwayMultSights = 0.6666667
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.RecoilAdd = 0.25
 ATT.SpreadAdd = 0.022
-ATT.RangeMaxMult = 0.85
+ATT.RangeMaxAdd = -5 / ARC9.HUToM
 ATT.RPMAdd = 60
-ATT.DamageMinMult = 0.33333333333
+
 
 ATT.Firemodes = {
     {
@@ -109,11 +108,11 @@ ATT.Firemodes = {
         PrintName = ARC9:GetPhrase("uplp_firemode_both"),
         RPMOverride = 10000,
         SpreadAdd = 0.025,
-        DamageMaxMult = 0.8,
+        DamageMaxMult = 0.85,
         RunawayBurst = true,
         PostBurstDelay = 0.15,
         RecoilFirstShot = 0,
-        RecoilAddShooting = 1,
+        RecoilAddShooting = 0.5,
         DispersionSpreadMultRecoil = 0,
     },
 }
