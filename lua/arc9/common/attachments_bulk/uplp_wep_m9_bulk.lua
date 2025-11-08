@@ -61,10 +61,12 @@ ATT.Firemodes = {
 
 ATT.RecoilUpMult = 0.7
 ATT.RecoilPerShotOverride = 1 / 6
-ATT.SpreadAddHipFire = 0.008
+ATT.SpreadAddHipFire = 0.003
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.04
-ATT.SpeedMultSights = 0.9
+ATT.SpeedMultSights = 0.8
+
+ATT.SwayAddSights = -0.5
 
 ATT.RecoilAutoControlMult = 1.25
 ATT.RecoilAutoControlMultShooting = 0.2
@@ -260,10 +262,12 @@ ATT.DropMagazineVelocity = Vector(0, -20, 0)
 -- Negatives
 ATT.ClipSizeOverride = 20
 
-ATT.SpreadAddHipFire = 0.005
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.03
-ATT.SpeedMultSights = 0.9
+ATT.SwayAddSights = 0.5
+ATT.SprintToFireTimeAdd = 0.06
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SpeedSightsMult = 0.92
+ATT.SpreadAddHipFire = 0.003
+ATT.DeployTimeMult = 1.25
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ext"

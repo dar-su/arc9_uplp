@@ -17,9 +17,12 @@ ATT.ClipSizeOverride = 13
 ATT.DropMagazineTime = 0.733
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/deagle_mag_ext.mdl"
 
+ATT.SwayAddSights = 0.5
+ATT.SprintToFireTimeAdd = 0.06
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SpeedSightsMult = 0.92
+ATT.SpreadAddHipFire = 0.003
 ATT.DeployTimeMult = 1.25
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.25
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_ext"
@@ -41,8 +44,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/deagle_mag_tac.mdl"
 
-ATT.ReloadTimeMult = 0.9
-ATT.SprintToFireTimeMult = 1.25
+ATT.ReloadTimeMult = 0.95
+ATT.SprintToFireTimeAdd = 0.04
+ATT.DeployTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_deag_mag_tac")
 

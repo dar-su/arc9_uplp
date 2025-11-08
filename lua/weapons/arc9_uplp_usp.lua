@@ -388,8 +388,8 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Mult = 1.0,
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUT .. "slidepull.ogg", t = 8 / 60, c = ca, v = 0.8 },
@@ -407,8 +407,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -422,8 +422,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
@@ -484,9 +484,9 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.8,
-		PeekProgress = 0.75,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.75,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -510,9 +510,9 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.85,
-		PeekProgress = 0.85,
-		RefillProgress = 0.675,
-		FireASAP = true,
+        PeekProgress = 0.85,
+        RefillProgress = 0.675,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -539,9 +539,9 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
         MinProgress = 0.8,
-		PeekProgress = 0.725,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.725,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
@@ -565,9 +565,9 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
         MinProgress = 0.85,
-		PeekProgress = 0.8,
-		RefillProgress = 0.675,
-		FireASAP = true,
+        PeekProgress = 0.8,
+        RefillProgress = 0.675,
+        FireASAP = true,
         Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },

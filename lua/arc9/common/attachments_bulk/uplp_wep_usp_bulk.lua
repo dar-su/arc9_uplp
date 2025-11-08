@@ -13,6 +13,13 @@ ATT.SortOrder = 1
 
 ATT.Icon = Material(iconfolder .. "compact.png", "mips smooth")
 
+ATT.RangeMaxAdd = -5 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = -0.07
+ATT.RecoilMult = 1.3
+ATT.SpreadAddHipFire = -0.004
+ATT.RecoilPerShotMultHipFire = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
 ATT.Category = "uplp_usp_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
@@ -32,6 +39,14 @@ ATT.Icon = Material(iconfolder .. "expert.png", "mips smooth")
 ATT.Category = "uplp_usp_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RangeMaxAdd = 5 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SpreadAddHipFire = 0.0028
+ATT.PhysBulletMuzzleVelocityMult = 1.05
+ATT.SpreadAdd = -0.0008
+ATT.SpreadAddRecoil = -0.002
+
+
 ARC9.LoadAttachment(ATT, "uplp_usp_slide_expert")
 
 ---------- uplp_usp_slide_elite
@@ -47,6 +62,16 @@ ATT.Icon = Material(iconfolder .. "elite.png", "mips smooth")
 
 ATT.Category = "uplp_usp_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RangeMinAdd = 4 / ARC9.HUToM
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SpreadAddHipFire = 0.0055
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.SpreadAdd = -0.0015
+ATT.SpreadAddRecoil = -0.0035
+ATT.RPMAdd = -50
+ATT.RecoilSideAdd = -0.3
 
 -- ATT.ExcludeElements = {"uplp_usp_muz_heavy", "uplp_usp_muz_match"}
 
@@ -81,7 +106,14 @@ ATT.Category = "uplp_usp_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_usp_slide_elite"}
-            
+
+ATT.RecoilUpAdd = -0.5
+ATT.RecoilSideAdd = 0.4
+ATT.RecoilAutoControlMult = 1.25
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SpeedMultSights = 0.9
+ATT.RPMAdd = -30
+
 ARC9.LoadAttachment(ATT, "uplp_usp_muz_heavy")
 
 
@@ -99,7 +131,13 @@ ATT.Category = "uplp_usp_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_usp_slide_elite"}
-            
+
+ATT.SpreadAdd = -0.001
+ATT.SpreadAddRecoil = -0.003
+ATT.RecoilSideAdd = -0.25
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SpeedMultSights = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_usp_muz_match")
 
 
@@ -121,9 +159,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ClipSizeOverride = 20
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/usp_mag_ext.mdl"
 
+ATT.SwayAddSights = 0.3
+ATT.SprintToFireTimeAdd = 0.06
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SpeedSightsMult = 0.92
+ATT.SpreadAddHipFire = 0.003
 ATT.DeployTimeMult = 1.25
-ATT.AimDownSightsTimeMult = 1.25
-ATT.SprintToFireTimeMult = 1.25
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
@@ -150,7 +191,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/usp_mag_tac.mdl"
 
 ATT.ReloadTimeMult = 0.95
-ATT.SprintToFireTimeMult = 1.1
+ATT.SprintToFireTimeAdd = 0.04
+ATT.DeployTimeMult = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_usp_mag_tac")
 
