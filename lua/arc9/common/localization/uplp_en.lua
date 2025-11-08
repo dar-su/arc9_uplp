@@ -3185,8 +3185,8 @@ L["uplp_sr25_rec_troy.compactname"] = "HD-61"
 L["uplp_sr25_rec_troy.description"] = "Aftermarket pump-action receiver for the DMR-10.\nNot compatible with <color=255,100,100>other handguards</color>."
 
 L["uplp_sr25_rec_tac.printname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.printname") or "Hoki Armory Tactical Receiver"
-L["uplp_sr25_rec_tac.compactname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.printname") or "Hoki"
-L["uplp_sr25_rec_tac.description"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.printname") or "Tactical, lightweight receiver built for speed made by Hoki Armory."
+L["uplp_sr25_rec_tac.compactname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.compactname") or "Hoki"
+L["uplp_sr25_rec_tac.description"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.description") or "Tactical, lightweight receiver built for speed made by Hoki Armory."
 
 L["uplp_sr25_rec_auto.printname"] = "Auto Receiver"
 L["uplp_sr25_rec_auto.compactname"] = "Auto"
@@ -3399,7 +3399,7 @@ L["uplp_usp_skin_chrome.compactname"] = "Chrome"
 L["uplp_usp_skin_chrome.description"] = "Replaces the slide with a chromed one."
 
 L["uplp_usp_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
-L["uplp_usp_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "Gold"
+L["uplp_usp_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "Gold"
 L["uplp_usp_skin_gold.description"] = "Replaces the slide with golden one."
 
 L["uplp_usp_skin_cylo.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo Blue"
