@@ -240,6 +240,25 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, -0.5, 
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_robocop")
 
+---------- uplp_m9_receiver_92x
+
+ATT = {}
+
+ATT.PrintName = "PM92X RDO Receiver"
+ATT.CompactName = "RDO"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "a3.png", "mips smooth")
+
+ATT.Category = "uplp_m9_receiver"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+ATT.AimDownSightsTimeAdd = 0.01
+ATT.RecoilMult = 0.9
+
+ARC9.LoadAttachment(ATT, "uplp_m9_receiver_92x")
+
 -------------------- MAGAZINES
 ---------- uplp_m9_mag_20
 

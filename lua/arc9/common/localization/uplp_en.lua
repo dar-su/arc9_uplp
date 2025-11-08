@@ -2095,6 +2095,8 @@ L["uplp_weapon_m9_robocop"] = "Robotic Arms Hyper-V"
 
 L["uplp_weapon_m9_real"] = "Beretta M92FS"
 
+L["uplp_weapon_m9_92x"] = "PM92X RDO"
+
 L["uplp_weapon_m9_manufacturer"] = "Fabbrica d'Armi Pietro Beretta S.p.A."
 
 /////////// Attachments
