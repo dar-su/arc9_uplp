@@ -29,8 +29,8 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.015,
-        RecoilPerShotMult = 0.5,
+        SpreadAddHipFire = -0.008,
+        RecoilPerShotMultHipFire = 0.7,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.3,
@@ -41,8 +41,8 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.015",
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.008",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×70%",
 }
 
 -- ATT.CustomCons = {
@@ -93,8 +93,8 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.01,
-        RecoilPerShotMult = 0.5,
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.2,
@@ -105,8 +105,8 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.01",
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
 }
 
 -- ATT.CustomCons = {
@@ -226,8 +226,8 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.0125,
-        RecoilPerShotMult = 0.5,
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.25,
@@ -238,8 +238,8 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0125",
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
 }
 
 -- ATT.CustomCons = {
@@ -282,8 +282,8 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.0125,
-        RecoilPerShotMult = 0.5,
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.25,
@@ -294,8 +294,8 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0125",
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
 }
 
 -- ATT.CustomCons = {
@@ -339,8 +339,8 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.0125,
-        RecoilPerShotMult = 0.5,
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.25,
@@ -351,8 +351,8 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0125",
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
 }
 
 -- ATT.CustomCons = {
@@ -395,8 +395,8 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.01,
-        RecoilPerShotMult = 0.5,
+        SpreadAddHipFire = -0.0005,
+        RecoilPerShotMultHipFire = 0.8,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.1,
@@ -407,8 +407,8 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.01",
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoilpershot")] = "-50%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0005",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×80%",
 }
 
 -- ATT.CustomCons = {
@@ -432,7 +432,7 @@ ARC9.LoadAttachment(ATT, "uplp_tac_laser_pistol")
 ATT = {}
 
 
-ATT.PrintName = "Model 40 Grenade Launcher" 
+ATT.PrintName = "Model 40 Grenade Launcher"
 ATT.CompactName = "M40 GL"
 ATT.Icon = Material(iconfolder .. "m203.png", "mips smooth")
 ATT.Description = "Undermounted grenade launcher that fires highly explosive 40MM grenades."
@@ -450,7 +450,7 @@ ATT.SpeedMultUBGL = 0.75
 
 ATT.ActivateElements = {"uplp_m203_used"}
 
-ATT.ReloadInSightsUBGL = false 
+ATT.ReloadInSightsUBGL = false
 
 ATT.Model = "models/weapons/arc9/uplp_ubgl_m203.mdl"
 ATT.ModelBodygroups = "1" -- 0 for m16 gren hg
@@ -459,7 +459,7 @@ ATT.LHIK_Priority = 100
 
 ATT.MuzzleEffectQCAUBGL = 1
 -- ATT.MuzzleDeviceUBGL = true
-ATT.DropMagazineAmountUBGL = 1 
+ATT.DropMagazineAmountUBGL = 1
 ATT.DropMagazineModelUBGL = "models/weapons/arc9/uplp_ubgl_m203_casing.mdl"
 ATT.DropMagazineTimeUBGL = 0.75
 ATT.DropMagazinePosUBGL = Vector(0, -9, 5)
@@ -485,9 +485,9 @@ ATT.IKAnimationProxy = {
     },
     ["reload_ubgl"] = {
         Source = "reload",
-		MinProgress = 0.87,
-		FireASAP = true,
-		RefillProgress = 0.75,
+        MinProgress = 0.87,
+        FireASAP = true,
+        RefillProgress = 0.75,
         EventTable = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0/30, v = 0.8 },
             { s = path .. "breaker_open.ogg", t = 13/30 },
@@ -501,8 +501,8 @@ ATT.IKAnimationProxy = {
     },
     ["enter_ubgl"] = {
         Source = "to_armed",
-		MinProgress = 0.65,
-		FireASAP = true,
+        MinProgress = 0.65,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 2/30, v = 0.8 },
@@ -513,8 +513,8 @@ ATT.IKAnimationProxy = {
     },
     ["exit_ubgl"] = {
         Source = "to_idle",
-		MinProgress = 0.65,
-		FireASAP = true,
+        MinProgress = 0.65,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 1 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 2/30, v = 0.3 },
@@ -598,7 +598,7 @@ ATT.Sights = {
 
 -- ATT.UBGLExclusiveSightsUBGL = true
 
-ATT.DrawFunc = function(swep, model) 
+ATT.DrawFunc = function(swep, model)
     local eles = swep:GetElements()
 
     if eles["uplp_ar15_hg_grenadier"] then
