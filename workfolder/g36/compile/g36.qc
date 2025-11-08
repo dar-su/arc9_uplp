@@ -21,6 +21,7 @@ $bodygroup "hgrail" { // 3
 	studio "hgrails k.smd"
 	studio "hgrails std.smd"
 	studio "hgrails c.smd"
+	studio "hgrails sl8.smd"
 }
 $bodygroup "muz" { // 3
 	studio "mz k.smd"
@@ -66,16 +67,15 @@ $bodygroup "mag" { // 6
 $mostlyopaque
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "barrel" 0.00 0.00 4.50 rotate -90 -0 0
-$attachment "2" "bolt" 0 -0.375 0 rotate -10 140 180
+$attachment "1" "barrel" 0.00 0.00 3 rotate -90 -0 0
+$attachment "2" "body" 0.00 -0.78 0.00 rotate -10 140 -180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
-// $attachment "5" "barrel" 0.00 0.00 -2.50 rotate -90 -0 0 // very short
-// $attachment "6" "barrel" 0.00 0.00 0.00 rotate -90 -0 0 // short
-// $attachment "7" "barrel" 0.00 0.00 5.00 rotate -90 -0 0 // long
-// $attachment "8" "barrel" 0.00 0.00 9.00 rotate -90 -0 0 // verylong
-// $attachment "9" "barrel" 0.00 0.00 14.00 rotate -90 -0 0 // m110 sup
+$attachment "5" "barrel" 0.00 0.00 -1 rotate -90 -0 0 // short
+$attachment "6" "barrel" 0.00 0.00 7 rotate -90 -0 0 // long
+$attachment "7" "barrel" 0.00 0.00 8.6 rotate -90 -0 0 // very long
+
 
 $surfaceprop "default"
  
@@ -108,7 +108,7 @@ $sequence "idle2"{
 
 $sequence "firemode_pose" {
 	"anims\idle2.smd"
-	"anims\idle_firemode2.smd"
+	"anims\idle_firemode1.smd"
 	blend "firemode" 1 2
 	delta
 	autoplay
@@ -131,7 +131,7 @@ $sequence "magspring_pose" {
 	loop
 	fps 30
 	snap
-	subtract "idle" 0
+	subtract "idle2" 0
 }
 
 $sequence "idle_empty"{

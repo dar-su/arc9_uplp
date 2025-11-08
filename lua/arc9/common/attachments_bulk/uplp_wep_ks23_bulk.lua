@@ -34,6 +34,8 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.75, 0,
 
 ATT.ActivateElements = {"uplp_no_tac"}
 
+ATT.MuzzleEffectQCA = 4
+
 ARC9.LoadAttachment(ATT, "uplp_ks23_bar_short")
 
 
@@ -97,6 +99,8 @@ ATT.RPMMult = 0.9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
+ATT.MuzzleEffectQCA = 5
 
 ARC9.LoadAttachment(ATT, "uplp_ks23_bar_sniper")
 

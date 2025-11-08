@@ -44,6 +44,8 @@ $attachment "2" "bolt" 0 0 3.5 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 // $attachment "4" "fakemag" 0 0 0 rotate -90 0 0
 // $attachment "4" "mag" 0 0 0 rotate -90 0 0
+$attachment "5" "barrel" 0 0 -6 rotate -90 0 0 // short
+$attachment "6" "barrel" 0 0 6 rotate -90 0 0 // long
  
 $surfaceprop "default"
  

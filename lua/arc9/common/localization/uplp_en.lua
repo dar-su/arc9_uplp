@@ -3483,6 +3483,7 @@ L["uplp_weapon_g36"] = "STG-95"
 L["uplp_weapon_g36_desc"] = "The STG-95 (\"Sturmgewehr 95\"), a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
 
 L["uplp_weapon_g36_sl8"] = "ZJG-98" -- "Ziviles Jagdgewehr"
+L["uplp_weapon_g36_c"] = " Compact"
 
 L["uplp_weapon_g36_real"] = "H&K G36"
 
@@ -3507,10 +3508,6 @@ L["uplp_g36_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.co
 L["uplp_g36_stock_buffer.description"] = "Aftermarket buffer tube assembly compatible with the STG-95. Allows installation of AR-15 compatible stocks."
 
 ////// Top Rails
-L["uplp_g36_top_c.printname"] = "STG-95C Top Rail"
-L["uplp_g36_top_c.compactname"] = "STG-95C"
-L["uplp_g36_top_c.description"] = "Top rail for mounting scopes, used on the STG-95C."
-
 L["uplp_g36_top_scope.printname"] = "STG-95 Zielfernrohr"
 L["uplp_g36_top_scope.compactname"] = "Scope"
 L["uplp_g36_top_scope.description"] = "Factory-made optic made specifically for the STG-95."
@@ -3538,19 +3535,11 @@ L["uplp_g36_hg_c.description"] = "228mm (9\") barrel and handguard from the STG-
 
 L["uplp_g36_hg_default.printname"] = "STG-95 Frontend"
 L["uplp_g36_hg_default.compactname"] = "STG-95"
-L["uplp_g36_hg_default.description"] = "318mm (12.5\") barrel and handguard from the STG-95."
-
-L["uplp_g36_hg_k.printname"] = "STG-95K Frontend"
-L["uplp_g36_hg_k.compactname"] = "STG-95K"
-L["uplp_g36_hg_k.description"] = "318mm (12.5\") barrel and handguard from the STG-95K."
+L["uplp_g36_hg_default.description"] = "480mm (18.9\") barrel and handguard from the STG-95."
 
 L["uplp_g36_hg_sl8.printname"] = "ZJG-98 Frontend"
 L["uplp_g36_hg_sl8.compactname"] = "ZJG-98"
 L["uplp_g36_hg_sl8.description"] = "510mm (20.1\") barrel and handguard from the ZJG-98.\nDoes not support <color=255,100,100>muzzle attachments</color>."
-
-L["uplp_g36_hg_keymod.printname"] = "Ravenforge Frontend"
-L["uplp_g36_hg_keymod.compactname"] = "Ravenforge"
-L["uplp_g36_hg_keymod.description"] = "318mm (12.5\") barrel with an aftermarket handguard from Ravenforge."
 
 L["uplp_g36_hg_modern.printname"] = "Sentinel Precision STG-95 Frontend"
 L["uplp_g36_hg_modern.compactname"] = "S.P. STG-95"
@@ -3569,9 +3558,9 @@ L["uplp_g36_mag_10.printname"] = "10-Round 5.56×45mm"
 L["uplp_g36_mag_10.compactname"] = "10R 5.56"
 L["uplp_g36_mag_10.description"] = "Short 10-round magazine made for the STG-95."
 
-L["uplp_g36_mag_30_transparent.printname"] = "30-Round 5.56×45mm"
-L["uplp_g36_mag_30_transparent.compactname"] = "30R 5.56"
-L["uplp_g36_mag_30_transparent.description"] = "Transparent version of the STG-95's default 30-round magazine."
+L["uplp_g36_mag_30.printname"] = "30-Round 5.56×45mm"
+L["uplp_g36_mag_30.compactname"] = "30R 5.56"
+L["uplp_g36_mag_30.description"] = "STG-95's default 30-round magazine."
 
 L["uplp_g36_mag_drum.printname"] = ARC9:GetPhrase("uplp_ar15_mag_drum.printname") or "100-Round 5.56×45mm Drum"
 L["uplp_g36_mag_drum.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_drum.compactname") or "90R Drum"

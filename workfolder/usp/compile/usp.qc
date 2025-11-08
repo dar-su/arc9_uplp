@@ -121,7 +121,7 @@ $sequence "idle_empty"{
 
 $sequence "fire" {
 	"anims\fire.smd"
-	"anims\fire_iron.smd"
+	"anims\fire_iron2.smd"
 	fps 26
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1

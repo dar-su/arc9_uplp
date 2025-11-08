@@ -868,7 +868,7 @@ ATT.SortOrder = 45
 ATT.Icon = Material(iconfolder .. "sr25/mzfns.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar10_muzzles.mdl"
-ATT.ModelBodygroups = "0"
+ATT.ModelBodygroups = "1"
 ATT.Scale = 1.0
 
 ATT.Category = "uplp_muzzle"

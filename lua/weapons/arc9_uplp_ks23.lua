@@ -437,7 +437,7 @@ SWEP.Animations = {
         Source = {"cycle_1", "cycle_2"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
-        EjectAt = 5 / 30,
+        EjectAt = 7.5 / 30,
         MinProgress = 0.7,
         EventTable = {
             { s = pathMossberg .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
@@ -462,6 +462,7 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         MinProgress = 0.5,
         Mult = 1,
+        EjectAt = 7.5 / 30,
         EventTable = {
             { s = pathMossberg .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
@@ -629,8 +630,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
-        Bone = "pump",
-        Pos = Vector(1, -2.8, 9.625),
+        Bone = "body",
+        Pos = Vector(0.76, 1.7, 4.4),
         Ang = Angle(90, 0, -90),
     },
 
@@ -638,8 +639,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
         StickerModel = "models/weapons/arc9/uplp/stickers/ks23_1.mdl",
         Category = "stickers",
-        Bone = "pump",
-        Pos = Vector(0.5, -3.3 + 1.5, 8),
+        Bone = "body",
+        Pos = Vector(0.5, -2.3 + 1.5, -2.2),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -647,7 +648,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ks23_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 0.5 + 1.5, 3),
+        Pos = Vector(0.5, -2.3 + 1.5, 0.5),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -655,7 +656,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/ks23_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0.5, 0.5 + 1.5, -1.5),
+        Pos = Vector(0.5, -2.3 + 1.5, 3.2),
         Ang = Angle(90, 90, 180),
     },
 }

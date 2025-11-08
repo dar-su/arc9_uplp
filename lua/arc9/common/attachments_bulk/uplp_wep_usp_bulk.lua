@@ -470,6 +470,9 @@ ATT.Category = {"uplp_usp_tac"}
 -- ATT.Category = "uplp_tac_pistol"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ModelOffset = Vector(0, 0, 0)
+ATT.ModelOffset = Vector(0.05, 0, 0.37)
+ATT.ModelAngleOffset = Angle(0, 180, 0)
+
+ATT.ExcludeElements = {"uplp_usp_slide_compact", "uplp_usp_slide_expert", "uplp_usp_slide_elite", "uplp_usp_muz_heavy", "uplp_usp_muz_match"}
 
 ARC9.LoadAttachment(ATT, "uplp_usp_laser")

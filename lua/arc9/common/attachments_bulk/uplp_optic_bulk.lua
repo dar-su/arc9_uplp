@@ -539,6 +539,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "bigass.png", "mips smooth")
 
@@ -663,6 +664,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "bigass.png", "mips smooth")
 
@@ -1492,6 +1494,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "snip.png", "mips smooth")
 
@@ -1662,6 +1665,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "ez8.png", "mips smooth")
 
@@ -1720,6 +1724,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "pm3.png", "mips smooth")
 
@@ -1788,6 +1793,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material("arc9/seasonal/birthday3.png", "mips smooth")
 
@@ -1889,6 +1895,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "gen.png", "mips smooth")
 
@@ -1948,6 +1955,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "dedal.png", "mips smooth")
 
@@ -2007,6 +2015,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "8x+"
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_long_used"}
+ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
 
@@ -2786,3 +2795,51 @@ table.Merge(ATT, stats_cqc)
 ARC9.LoadAttachment(ATT, "uplp_optic_thermholo")
 
 
+
+---------- uplp_g36_top_scope_rds
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_g36_top_scope_rds"
+ATT.CompactName = "uplp_g36_top_scope_rds"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "g36/reddot.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_g36_rds.mdl"
+ATT.ModelOffset = Vector(0.4, 0, 0)
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 13, -0.7),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 30,
+
+        SwayAddSights = sway_cqc,
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightSize = 88
+ATT.HoloSightColorable = false
+ATT.HoloSightDepthAdjustment = -0.003
+
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+table.Merge(ATT, stats_cqc)
+
+ARC9.LoadAttachment(ATT, "uplp_g36_top_scope_rds")

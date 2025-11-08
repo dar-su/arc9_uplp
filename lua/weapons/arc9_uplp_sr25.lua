@@ -1110,7 +1110,6 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_ar15_pgrip", "uplp_ar10_pgrip"},
         DefaultIcon = Material(defatt .. "grip_ar.png", "mips smooth"),
-        ActiveElements = {"uplp_ar15_pgrip"},
         ExcludeElements = {"uplp_no_pgrip"},
         Bone = "body",
         RejectAttachments = {
