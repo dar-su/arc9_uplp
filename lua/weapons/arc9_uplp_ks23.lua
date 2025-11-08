@@ -89,8 +89,8 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 200
-SWEP.DamageMin = 72
+SWEP.DamageMax = 340
+SWEP.DamageMin = 120
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -134,11 +134,11 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 1 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
 SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 300 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 2
 
@@ -149,21 +149,17 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 3
 
 -- Recoil
-SWEP.Recoil = 1.5
-SWEP.RecoilUp = 2.5
-SWEP.RecoilSide = 1.5
+SWEP.Recoil = 2
+SWEP.RecoilUp = 5
+SWEP.RecoilSide = 5
 
--- Additional recoil when firing rapidly
-SWEP.RecoilMultRecoil = 1
-SWEP.RecoilAddRecoil = 0.5
-
-SWEP.RecoilRandomUp = 1.25
-SWEP.RecoilRandomSide = 1.2
+SWEP.RecoilRandomUp = 2
+SWEP.RecoilRandomSide = 2
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
@@ -191,13 +187,13 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.032
+SWEP.Spread = 0.035
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.012
+SWEP.DispersionSpreadAddHipFire = 0.015
 
-SWEP.DispersionSpreadAddRecoil = 0.04
+SWEP.DispersionSpreadAddRecoil = 0.02
 SWEP.DispersionSpreadAddMove = 0.015
 SWEP.DispersionSpreadAddMidAir = 0.05
 
@@ -206,11 +202,11 @@ SWEP.RecoilResetTime = 0.35
 SWEP.RecoilPerShot = 0.5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 1 / 3
+SWEP.RecoilModifierCapSights = 1 / 2
 
 -- Weapon handling
 SWEP.SpeedMult = 0.82
-SWEP.SpeedMultSights = 0.67
+SWEP.SpeedMultSights = 0.55
 
 SWEP.AimDownSightsTime = 0.44
 SWEP.SprintToFireTime = 0.42
@@ -219,9 +215,9 @@ SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 42
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot -- as fast for cycle anim to play instantly
+SWEP.RPM = 240 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
-SWEP.Num = 8 -- How many bullets shot at once
+SWEP.Num = 20 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = 1, PrintName = ARC9:GetPhrase("uplp_firemode_pump") },
@@ -442,7 +438,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EjectAt = 5 / 30,
-        MinProgress = 0.55,
+        MinProgress = 0.7,
         EventTable = {
             { s = pathMossberg .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.8 },

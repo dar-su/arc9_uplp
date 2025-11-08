@@ -16,16 +16,18 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 
-ATT.DispersionSpreadAddHipFire = -0.008
+ATT.DispersionSpreadAddHipFire = -0.01
+ATT.DispersionSpreadAddMove = -0.008
 ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.05
 ATT.SpeedAdd = 0.02
-ATT.SpeedAddSights = 0.05
+ATT.SpeedAddSights = 0.1
 
 -- Negatives
-ATT.RangeMaxMult = 0.6667
-ATT.SpreadAdd = 0.01
-ATT.RecoilUpMult = 1.5
+ATT.RangeMaxAdd = -10 / ARC9.HUToM
+ATT.SpreadAdd = 0.015
+ATT.RecoilMult = 1.25
+ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.75, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.75, 0, 0) end
@@ -48,18 +50,16 @@ ATT.Category = "uplp_ks23_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RangeMaxMult = 1.5
 ATT.ClipSizeAdd = 2
-ATT.SpreadAdd = -0.008
-ATT.RecoilUpMult = 0.75
 
 -- Negatives
 ATT.DispersionSpreadAddHipFire = 0.012
-ATT.DispersionSpreadAddMove = 0.006
+ATT.DispersionSpreadAddMove = 0.008
 ATT.AimDownSightsTimeAdd = 0.05
-ATT.SprintToFireTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.04
 ATT.SpeedAdd = -0.02
 ATT.SpeedAddSights = -0.05
+ATT.RPMMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_ks23_bar_ext")
 
@@ -78,16 +78,22 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 5
 
 -- Positives
-ATT.RangeMaxMult = 2
-ATT.SpreadAdd = -0.015
+ATT.ClipSizeAdd = 1
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
+ATT.SpreadAdd = -0.02
 ATT.RecoilUpMult = 0.667
+ATT.PhysBulletMuzzleVelocityMult = 1.2
 
 -- Negatives
 ATT.CycleTimeMult = 1.1
-ATT.DispersionSpreadAddHipFire = 0.03
-ATT.AimDownSightsTimeAdd = 0.05
-ATT.SprintToFireTimeAdd = 0.03
+ATT.DispersionSpreadAddHipFire = 0.015
+ATT.DispersionSpreadAddMove = 0.008
+ATT.AimDownSightsTimeAdd = 0.08
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedAdd = -0.03
 ATT.SpeedAddSights = -0.1
+ATT.RPMMult = 0.9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
@@ -172,21 +178,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_2375_slug.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.1
+ATT.SpreadMult = 0.25
 
-ATT.HeadshotDamage = 2
-ATT.RangeMinMult = 4
-ATT.RangeMaxMult = 2
+ATT.HeadshotDamage = 2.5
+ATT.RangeMinMult = 1
+ATT.RangeMaxMult = 1.75
 ATT.DispersionSpreadAddRecoil = -0.025
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxMult = 0.75
 ATT.DamageMaxOverride = 100
-ATT.DamageMinOverride = 25
+ATT.DamageMinOverride = 30
 ATT.RecoilDissipationRateMult = 0.75
 
-ATT.SweetSpotOverride = false 
+ATT.SweetSpotOverride = false
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -229,14 +234,14 @@ ATT.Hook_PrimaryAttack = function(self)
 
     sound.EmitHint(SOUND_DANGER, flashpos, radius, 6, nil)
 
-    local potentionalcontusioned = ents.FindInCone(flashpos, owner:GetAimVector(), radius / 0.0254, 0.1) -- 
+    local potentionalcontusioned = ents.FindInCone(flashpos, owner:GetAimVector(), radius / 0.0254, 0.1) --
     for i = 1, #potentionalcontusioned do
         local ply = potentionalcontusioned[i]
         if ply == self:GetOwner() then continue end
 
         if ply:IsPlayer() or ply:IsNPC() then
             local contmult = (radius - flashpos:Distance(ply:GetPos()) * 0.0254) / radius * 2 -- how close we are
-            
+
             if ply:IsPlayer() then
                 local dot = ply:EyeAngles():Forward():Dot((ply:GetPos() - flashpos):GetNormalized())
                 local strength = math.max(-dot, 0.1) * 2 * contmult
@@ -245,7 +250,7 @@ ATT.Hook_PrimaryAttack = function(self)
                 ply:ScreenFade(SCREENFADE.IN, color_white, strength, strength * 0.5)
                 ply:SetDSP(35)
                 ply:ViewPunch(Angle(1.5, 0, -7.5) * strength)
-                
+
             elseif ply:IsNPC() then
                 ply:SetNPCState(NPC_STATE_PLAYDEAD)
                 ply:SetSchedule(SCHED_COWER)
@@ -281,17 +286,19 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_ks23_shell_rubber.pro")] = "",
 }
 
+ATT.SpreadMult = 0.4
+
 ATT.Num = 1
-ATT.RecoilMult = 0.5
-ATT.DamageMaxMult = 0.2
-ATT.DamageMinMult = 0.2
+ATT.RecoilMult = 0.4
+ATT.DamageMaxOverride = 60
+ATT.DamageMinOverride = 50
 ATT.PenetrationMult = 0
+ATT.DispersionSpreadAddRecoil = -0.025
+
 ATT.DamageType = DMG_CLUB
 ATT.AlwaysPhysBullet = true
-ATT.PhysBulletMuzzleVelocityMult = 0.5
-ATT.PhysBulletGravityMult = 2
-ATT.RangeMaxMult = 0.33
-ATT.RangeMinMult = 0.33
+ATT.PhysBulletMuzzleVelocityMult = 0.45
+ATT.PhysBulletGravityMult = 1.5
 
 local path = ")uplp_rz/ks23/"
 
@@ -301,7 +308,7 @@ ATT.ShootSound = {
 }
 
 ATT.DistantShootSound = false
-ATT.DistantShootSoundIndoor = false 
+ATT.DistantShootSoundIndoor = false
 
 -- welcome back, urbna
 
