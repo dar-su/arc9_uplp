@@ -408,9 +408,9 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeMagnification = 1.5
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/aug.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeMagnification = 3
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/g36.png", "mips smooth")
+ATT.RTScopeReticleScale = 1.6
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
