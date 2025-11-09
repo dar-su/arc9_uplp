@@ -523,11 +523,11 @@ SWEP.Animations = {
     },
     ["holster_unfold"] = {
         Source = "holster",
-        MinProgress = 0.4,
+        MinProgress = 0.48,
         Mult = 0.85,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "alt/struggle.ogg", t = 3 / 30, c = ca, v = 0.5 },
+            { s = pathRZ .. "alt/struggle.ogg", t = 1 / 30, c = ca, v = 0.5 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
@@ -543,11 +543,11 @@ SWEP.Animations = {
     },
     ["holster_empty_unfold"] = {
         Source = "holster_empty",
-        MinProgress = 0.4,
+        MinProgress = 0.48,
         Mult = 0.85,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "alt/struggle.ogg", t = 3 / 30, c = ca, v = 0.5 },
+            { s = pathRZ .. "alt/struggle.ogg", t = 1 / 30, c = ca, v = 0.5 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },

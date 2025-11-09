@@ -1,0 +1,23 @@
+[h1]It's second anniversary for polyarms yay !!![/h1]
+Thanks for supporting i think
+
+[h1]New content[/h1]
+[list]
+	[*] Added the [b]STG-95[/b], a cool german assault rifle with bunch of attachments!	
+	[*] Added the [b]Werefox 7.62[/b], a unique hybrid assault rifle!
+	[*] Added the [b]DMR-10[/b], the first true DMR in PolyArms!
+	[*] Added the [b]Excalibur .338[/b], an overpowered DMR! Admin only cuz it's too good :-)
+	[*] Added the [b]Pushka-23[/b], a very big shotgun!
+	[*] Added the [b]MSW .45[/b], a cool german pistol!
+[/list]
+
+[h1]Changed content[/h1]
+[list]	
+	[*] Reduced ADS visual recoil across all guns by ~50%, fixed weird snapping after fire	
+	[*] ARs and Pistols fully rebalanced
+	[*] Minor rebalance for Shotguns & some attachments across all guns
+	[*] Shoot sounds now play at correct pitch (was 90% instead of 100% for some reason)
+	[*] New Authority SBS shoot sounds, including different one for double-tap mode
+	[*] Some new reload sounds for MRD57, SK Shadow & AK
+	[*] Fixed moving camera during idle on some guns
+[/list]
