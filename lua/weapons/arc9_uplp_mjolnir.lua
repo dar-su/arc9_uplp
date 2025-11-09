@@ -37,7 +37,7 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+    "[Mayhem]XQAAAQD7AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT7HVA5Cp6s0IpZjqVDrxu5AV7pK8cv+fie0uaOOm1E8NEXDrYVqMaPMyePPq+aksXhSNm/hJOr4kse6oaUVckdsZF0QgGaBjvQW7hZNtOJwZbVZxUpqXimv8sWq7/JK8BUEY8sBJHd3jcmpwup0/LA58aCa905Nav+rjfV33jLWW407BVNq1AqRb32Fl2aw8ekbRFWv8ltKouueXhpo199ngA="
 }
 
 SWEP.DefaultBodygroups = "0000000000000000" -- Might as well prepare for the future
