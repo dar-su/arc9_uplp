@@ -3280,8 +3280,8 @@ local sr25brll = {
 -- L["uplp_sr25_pgrip_wood.description"] = "Replaces the pistol grip with a wooden AR-10 pistol grip.\nPurely <color=160,160,255>cosmetic</color>."
 
 //////////////////// SWORD MK-18 Mjölnir
--- L["uplp_weapon_mjolnir"] = "Tor .338"
--- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Tor .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
+-- L["uplp_weapon_mjolnir"] = "Excalibur .338"
+-- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
 
 -- L["uplp_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
 
@@ -3291,7 +3291,7 @@ local sr25brll = {
 ////// Handguard
 -- L["uplp_mjolnir_hg_short.printname"] = "Compact Handguard & Short Barrel"
 -- L["uplp_mjolnir_hg_short.compactname"] = "Compact"
--- L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Tor .338, and installs a compact handguard.\nNot a great idea on such powerful weapon, but we won't stop you."
+-- L["uplp_mjolnir_hg_short.description"] = "Applies a shorter barrel to the Excalibur .338, and installs a compact handguard.\nNot a great idea on such powerful weapon, but we won't stop you."
 
 ////// Magazine
 -- L["uplp_mjolnir_mag_20.printname"] = "20-Round PAWCO .338 Drum"
@@ -3305,7 +3305,7 @@ local sr25brll = {
 
 -- L["uplp_mjolnir_sup.printname"] = "Heavy Suppressor"
 -- L["uplp_mjolnir_sup.compactname"] = "Suppressor"
--- L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Tor .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
+-- L["uplp_mjolnir_sup.description"] = "Heavy suppressor for the Excalibur .338 that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
 
 //////////////////// H&K USP
 -- L["uplp_weapon_usp"] = "MSW .45"
