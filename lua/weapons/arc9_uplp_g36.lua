@@ -988,33 +988,33 @@ SWEP.AttachmentTableOverrides = {
 SWEP.AttachmentElements = {
     ["uplp_g36_hg_default"] = { Bodygroups = { { 1, 1 }, { 3, 1 } }, AttPosMods = {
         [1] = { Pos = Vector(0, 0.61485, 21.5) },
-        [4] = { Pos = Vector(-1.22, 0.55, 14.5) },
+        [4] = { Pos = Vector(-0.1, 0.05, 3) },
     }},
     ["uplp_g36_hg_modern_long"] = { Bodygroups = { { 1, 5 }, { 3, 1 } }, AttPosMods = {
         [1] = { Pos = Vector(0, 0.61485, 21.5) },
         [3] = { Pos = Vector(0, 1.98 - 0.375, 10) },
-        [4] = { Pos = Vector(0, -1.15, 16), Ang = Angle(90, 0, -90) },
+        [4] = { Pos = Vector(1.07, -1.64, 3), Ang = Angle(90, 0, -90) },
         [12] = { Pos = Vector(0, 3.25, 5.7) },
     }},
     ["uplp_g36_hg_c"] = { Bodygroups = { { 1, 2 }, { 3, 2 } }, AttPosMods = {
         [1] = { Pos = Vector(0, 0.61485, 11.6) },
         [3] = { Pos = Vector(0, 1.98, 8.2) },
-        [4] = { Pos = Vector(-1.22, 0.55, 9.5) }
+        [4] = { Pos = Vector(-0.1, 0.05, -2) }
     }},
     ["uplp_g36_hg_modern_short"] = { Bodygroups = { { 1, 6 }, { 3, 2 } }, AttPosMods = {
         [1] = { Pos = Vector(0, 0.61485, 11.6) },
         [3] = { Pos = Vector(0, 1.98 - 0.375, 8.4) },
-        [4] = { Pos = Vector(0, -1.15, 10), Ang = Angle(90, 0, -90) },
+        [4] = { Pos = Vector(1.07, -1.64, -2), Ang = Angle(90, 0, -90) },
     }},
     ["uplp_g36_hg_sl8"] = { Bodygroups = { { 1, 3 }, { 3, 3 } }, AttPosMods = {
         [1] = { Pos = Vector(0, 0.61485, 21.5) },
         [3] = { Pos = Vector(0, 1.98 - 0.375, 10) },
-        [4] = { Pos = Vector(-1.22, 0.55, 14.5) },
+        [4] = { Pos = Vector(-0.1, 0.05, 3) },
         [12] = { Pos = Vector(0, 3.25, 8.2) },
     }},
     ["uplp_g36_hg_modern"] = { Bodygroups = { { 1, 4 }, { 3, 0 } }, AttPosMods = {
         [3] = { Pos = Vector(0, 1.98 - 0.375, 10) },
-        [4] = { Pos = Vector(0, -1.15, 13), Ang = Angle(90, 0, -90) },
+        [4] = { Pos = Vector(1.07, -1.64, 1), Ang = Angle(90, 0, -90) },
         [12] = { Pos = Vector(0, 3.25, 5.7) },
     }},
 
@@ -1092,8 +1092,10 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = "uplp_tac",
-        Bone = "body",
-        Pos = Vector(-1.22, 0.55, 12),
+        -- Bone = "body",
+        -- Pos = Vector(-1.22, 0.55, 12),
+        Bone = "tac",
+        Pos = Vector(-0.1, 0.05, 0),
         Ang = Angle(90, 90, -90),
         Icon_Offset = Vector(0, 0, 1),
         ExcludeElements = {"uplp_no_tac"},

@@ -622,7 +622,7 @@ SWEP.Attachments = {
         Category = {"uplp_tac"},
         Bone = "body",
         Pos = Vector(-0.9, 0.3, 19.2),
-        Ang = Angle(90, 90, -90),
+        Ang = Angle(91, 90, -90),
         ExcludeElements = {"uplp_no_tac"},
     },
 
