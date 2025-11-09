@@ -212,8 +212,8 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-1.92, -2, 0.79),
-     Ang = Angle(0, 0.25, 0),
+     Pos = Vector(-1.92, -2, 0.78),
+     Ang = Angle(0, 0.15, 0),
      Magnification = 1.1,
      ViewModelFOV = 70,
 }
@@ -461,8 +461,26 @@ SWEP.Animations = {
             { t = 1, lhik = 1, rhik = 1 },
         },
     },
+    ["fire_sights"] = {
+        Source = {"fire_sights"},
+        -- Time = 1,
+        Mult = 0.7,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        IKTimeLine = {
+            { t = 0, lhik = 0, rhik = 0 },
+            { t = 0.5, lhik = 0, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
+    },
 
     ["fire_empty"] = {
+        Source = "fire_empty",
+        -- Time = 1,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+    },
+    ["fire_sights_empty"] = {
         Source = "fire_empty",
         -- Time = 1,
         ShellEjectAt = 0.01,
@@ -728,8 +746,21 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },
+    ["rc_fire_sights"] = {
+        Source = {"rc_fire_sights"},
+        -- Time = 1,
+        Mult = 0.7,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+    },
 
     ["rc_fire_empty"] = {
+        Source = "rc_fire_empty",
+        -- Time = 1,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+    },
+    ["rc_fire_sights_empty"] = {
         Source = "rc_fire_empty",
         -- Time = 1,
         ShellEjectAt = 0.01,

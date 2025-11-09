@@ -102,6 +102,14 @@ $sequence "fire" {
 	fadein 0.02
 	fadeout 0.08
 }
+
+$sequence "fire_sights" {
+	"anims\fire_iron.smd"
+	fps 26
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.02
+	fadeout 0.2
+}
 $sequence "fire_empty" {
 	"anims\fire_empty.smd"
 	"anims\fire_empty_iron.smd"

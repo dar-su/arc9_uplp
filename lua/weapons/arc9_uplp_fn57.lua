@@ -212,7 +212,7 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-1.93, -0, 0.65),
+     Pos = Vector(-1.93, -0, 0.6),
      Ang = Angle(0, 0.1, 0),
      Magnification = 1.1,
      ViewModelFOV = 70,
@@ -475,8 +475,20 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
+    ["fire_sights"] = {
+        Source = {"fire_sights"},
+        Mult = 1,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mechh, t = 0 } },
+    },
 
     ["fire_empty"] = {
+        Source = "fire_empty",
+        -- Time = 1,
+        ShellEjectAt = 0.01,
+        EventTable = { { s = mechh, t = 0 } },
+    },
+    ["fire_sights_empty"] = {
         Source = "fire_empty",
         -- Time = 1,
         ShellEjectAt = 0.01,
