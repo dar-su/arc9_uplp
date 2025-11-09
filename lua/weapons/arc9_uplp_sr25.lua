@@ -218,13 +218,13 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
-local iironsightt = {
+local is_tall = {
     Pos = Vector(-2.249, -3, 0.27),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
 }
-local iironsighttar10 = {
+local is_ar10 = {
     Pos = Vector(-2.249, -3, 0.025),
     Ang = Angle(0, -0.05, 0),
     Magnification = 1.15,
@@ -233,8 +233,8 @@ local iironsighttar10 = {
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
-    if attached["uplp_sr25_rec_ar10"] then return iironsighttar10
-    elseif attached["uplp_ar15_rs_tall"] then return iironsightt end
+    if attached["uplp_sr25_rec_ar10"] then return is_ar10
+    elseif attached["uplp_ar15_rs_tall"] then return is_tall end
 end
 
 -- Customization Menu Info
@@ -939,8 +939,10 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
             mdl:SetBodygroup(1, 1)
         end
     else
-        if eles["uplp_sr25_hg_ar10"] and eles["uplp_optic_used"] then
-            mdl:SetBodygroup(4, 0)
+        if eles["uplp_sr25_hg_ar10"] then
+            if eles["uplp_optic_used"] then mdl:SetBodygroup(4, 0)
+            elseif eles["uplp_ar15_rs_tall"] then mdl:SetBodygroup(4, 5)
+            elseif eles["uplp_ar15_rs_short"] then mdl:SetBodygroup(4, 6) end
         end
     end
 
@@ -1099,14 +1101,13 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
         Category = {"uplp_ar15_rs", "uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
-        ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_ar15_reciever_45acp", "uplp_ar15_reciever_a2"},
         Bone = "body",
         -- CorrectiveAng = Angle(0, 0, 0),
         Installed = "uplp_ar15_rs_type1",
         Pos = Vector(0.02, -0.32, -0.5),
         Ang = Angle(90, 90, 180),
         -- ExcludeElements = {"uplp_ar15_reciever_m16", "uplp_optic_used"},
-        -- ExcludeElements = {"uplp_ar15_reciever_m16"},
+        ExcludeElements = {"uplp_no_irons"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -1117,6 +1118,7 @@ SWEP.Attachments = {
         Pos = Vector(0.02, -0.32, 1.326),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
+        ExcludeElements = {"uplp_ar15_rs_carry"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),

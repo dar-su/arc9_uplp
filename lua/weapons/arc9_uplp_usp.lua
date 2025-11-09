@@ -221,17 +221,16 @@ SWEP.IronSights = {
 }
 
 
-local iironsightt = {
+local is_tac = {
      Pos = Vector(-1.927, -0, 0.51),
      Ang = Angle(0, 0, 0),
      Magnification = 1.1,
      ViewModelFOV = 70,
 }
 
-
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
-    if attached["uplp_usp_irons_tac"] then return iironsightt end
+    if attached["uplp_usp_irons_tac"] then return is_tac end
 end
 
 SWEP.PeekPos = Vector(-0.5, 0, -3)

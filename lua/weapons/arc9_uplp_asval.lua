@@ -289,18 +289,19 @@ SWEP.IronSights = {
      ViewModelFOV = 55,
 }
 
+local is_sr3 = {
+        Pos = Vector(-2.25, -2, 0.9),
+        Ang = Angle(0, 0, 0),
+        Magnification = 1.15,
+        ViewModelFOV = 55,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if (attached["uplp_asval_hg_sr3"] or attached["uplp_asval_hg_sr3s"]) then
-        return {
-             Pos = Vector(-2.25, -2, 0.9),
-             Ang = Angle(0, 0, 0),
-             Magnification = 1.15,
-             ViewModelFOV = 55,
-        }
+     if attached["uplp_asval_hg_sr3"] or attached["uplp_asval_hg_sr3s"] then
+        return is_sr3
     end
-
 end
 
 -- Customization Menu Info

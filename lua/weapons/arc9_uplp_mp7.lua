@@ -218,18 +218,19 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
+local is_folded = {
+    Pos = Vector(-3.09, -5, 0.95),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
     if attached["uplp_mp7_sight_folded"] then
-        return {
-             Pos = Vector(-3.09, -5, 0.95),
-             Ang = Angle(0, 0, 0),
-             Magnification = 1.15,
-             ViewModelFOV = 65,
-        }
+        return is_folded
     end
-
 end
 
 -- Customization Menu Info

@@ -83,7 +83,8 @@ ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "recar10.png", "mips smooth")
 
-ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_tall", "uplp_ar15_rs"}
+-- ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_tall", "uplp_ar15_rs"}
+ATT.ActivateElements = {"uplp_no_irons"}
 
 ATT.Category = "uplp_sr25_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

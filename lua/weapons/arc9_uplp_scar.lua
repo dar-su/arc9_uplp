@@ -237,7 +237,7 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
-local iironsightt = {
+local is_short = {
     Pos = Vector(-2.345, -3, 0.14 + 0.135),
     Ang = Angle(0, -0.24 + 0.1, 0),
     Magnification = 1.15,
@@ -248,7 +248,7 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
     local att = self:GetElements()
     local lowsight = (att["uplp_ar15_rs_m4"] or att["uplp_ar15_rs_scalar"] or att["uplp_ar15_rs_type2"] or att["uplp_ar15_rs_carry"])
 
-    if lowsight then return iironsightt end
+    if lowsight then return is_short end
 end
 
 -- Customization Menu Info

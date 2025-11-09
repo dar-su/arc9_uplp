@@ -224,50 +224,28 @@ SWEP.IronSights = {
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
-
+local is_tall = {
+    Pos = Vector(-2.32, -4, 0.23),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+local is_short = {
+    Pos = Vector(-2.32, -4, 0.38),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
     if attached["uplp_ar15_rs_tall"] then
-        return {
-            Pos = Vector(-2.32, -4, 0.23),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
+        return is_tall
     elseif attached["uplp_ar15_rs_short"] then
-        return {
-            Pos = Vector(-2.32, -4, 0.38),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
+        return is_short
     end
 
 end
-
--- SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    -- local attached = self:GetElements()
-
-    -- if attached["uplp_awp_rs_mbus"] or attached["uplp_awp_rs_type1"] then
-        -- return {
-            -- Pos = Vector(-2.275, -3, 0.225),
-            -- Ang = Angle(0.35, 0.125, -3),
-            -- Magnification = 1.15,
-            -- ViewModelFOV = 65,
-        -- }
-    -- end
-
-    -- if attached["uplp_awp_rs_type3"] then
-        -- return {
-             -- Pos = Vector(-2.275, -3, 0.15),
-             -- Ang = Angle(0.35, 0.65, -3),
-             -- Magnification = 1.15,
-             -- ViewModelFOV = 65,
-        -- }
-    -- end
-
--- end
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(18.5, 45, 5)

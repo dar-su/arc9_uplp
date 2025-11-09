@@ -224,24 +224,24 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
-local IronSights2 = {
-    Pos = Vector(-3.5, -3.5, 0.6),
-    Ang = Angle(-0.020862 + 0.1, 0.001625 + 0.9, -1.66288),
-    Magnification = 1.1,
-    ViewModelFOV = 54,
-}
-local IronSights3 = {
+local is_taccover = {
     Pos = Vector(-2.97, -3.5, 0.96),
      Ang = Angle(-0.083013 + 0.1, -0.019307 + 0.95, 3.46919),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
+local is_bp = {
+    Pos = Vector(-3.5, -3.5, 0.6),
+    Ang = Angle(-0.020862 + 0.1, 0.001625 + 0.9, -1.66288),
+    Magnification = 1.1,
+    ViewModelFOV = 54,
+}
 
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     if self:GetElements()["uplp_pkm_taccover"] then
-        return IronSights3
+        return is_taccover
     elseif self:GetElements()["uplp_pkm_rec_bullpup"] then
-        return IronSights2
+        return is_bp
     end
 end
 

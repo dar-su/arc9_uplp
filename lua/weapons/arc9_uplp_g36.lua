@@ -239,30 +239,56 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
-SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    local attached = self:GetElements()
+local is_rs_tall = {
+    Pos = Vector(-3.05491, -3, -0.2154),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
 
-    if attached["uplp_ar15_rs_tall"] then
-        return {
-            Pos = Vector(-3.05491, -3, -0.17),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    elseif attached["uplp_ar15_rs_short"] then
-        return {
-            Pos = Vector(-3.05491, -3, -0.03),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
-    elseif attached["uplp_g36_receiver_sl8"] then
-        return {
-            Pos = Vector(-3.05491, -3, 0.05944),
-            Ang = Angle(0, 0, 0),
-            Magnification = 1.15,
-            ViewModelFOV = 65,
-        }
+local is_rs_short = {
+    Pos = Vector(-3.05491, -3, -0.075),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
+local is_sl8 = {
+    Pos = Vector(-3.05491, -3, 0.05944),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
+local is_modern = {
+    Pos = Vector(-3.05491, -3, 0.2245),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
+local is_sl8_offset = Vector(0, 0, -0.1332)
+local is_short_offset = Vector(0, 0, 0.164)
+
+SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
+    local eles = self:GetElements()
+
+    local sl8, short = eles["uplp_g36_top_sl8"], eles["uplp_g36_top_short"]
+
+    if eles["uplp_ar15_rs_tall"] then
+        local is = table.Copy(is_rs_tall)
+        if sl8 then is.Pos = is.Pos + is_sl8_offset end
+        if short then is.Pos = is.Pos + is_short_offset end
+        return is
+    elseif eles["uplp_ar15_rs_short"] then
+        local is = table.Copy(is_rs_short)
+        if sl8 then is.Pos = is.Pos + is_sl8_offset end
+        if short then is.Pos = is.Pos + is_short_offset end
+        return is
+    elseif sl8 then
+        return is_sl8
+    elseif eles["uplp_g36_top_modern"] then
+        return is_modern
     end
 end
 
@@ -1090,6 +1116,7 @@ SWEP.Attachments = {
         Pos = Vector(0, -2.085, -2),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
+        ExcludeElements = {"uplp_ar15_rs_carry"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sight_front"),

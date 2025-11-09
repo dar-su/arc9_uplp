@@ -41,6 +41,7 @@ $bodygroup "hgextra" { // 4
 	studio "brl ar10 fs.smd"
 	studio "mz m110 sup.smd"
 	studio "brl ar10 fst1.smd"
+	studio "brl ar10 fst2.smd"
 }
 
 $bodygroup "barrel" { // 5

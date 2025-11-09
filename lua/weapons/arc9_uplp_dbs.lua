@@ -315,19 +315,6 @@ SWEP.IronSights = {
      ViewModelFOV = 55,
 }
 
--- SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
-    -- local attached = self:GetElements()
-
-     -- if attached["uplp_m590_rs_railsight"] then
-        -- return {
-             -- Pos = Vector(-2.64, -5.5, 0.36),
-             -- Ang = Angle(0, 0, 0),
-             -- Magnification = 1.15,
-             -- ViewModelFOV = 55,
-        -- }
-    -- end
-
--- end
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(14.5, 40, 4)

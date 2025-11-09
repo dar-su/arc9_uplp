@@ -253,36 +253,36 @@ SWEP.IronSights = {
      ViewModelFOV = 55,
 }
 
+local is_railsight = {
+    Pos = Vector(-2.64, -5.5, 0.36),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+local is_winged = {
+    Pos = Vector(-2.64, -5.5, 0.49),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+
+local is_ghost = {
+    Pos = Vector(-2.64, -5.5, 0.32),
+    Ang = Angle(0, 0.6, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 55,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if attached["uplp_m590_rs_railsight"] then
-        return {
-             Pos = Vector(-2.64, -5.5, 0.36),
-             Ang = Angle(0, 0, 0),
-             Magnification = 1.15,
-             ViewModelFOV = 55,
-        }
+    if attached["uplp_m590_rs_railsight"] then
+        return is_railsight
+    elseif attached["uplp_m590_rs_winged"] then
+        return is_winged
+    elseif attached["uplp_m590_rs_ghost"] then
+        return is_ghost
     end
-
-     if attached["uplp_m590_rs_winged"] then
-        return {
-             Pos = Vector(-2.64, -5.5, 0.49),
-             Ang = Angle(0, 0, 0),
-             Magnification = 1.15,
-             ViewModelFOV = 55,
-        }
-    end
-
-     if attached["uplp_m590_rs_ghost"] then
-        return {
-             Pos = Vector(-2.64, -5.5, 0.32),
-             Ang = Angle(0, 0.6, 0),
-             Magnification = 1.15,
-             ViewModelFOV = 55,
-        }
-    end
-
 end
 
 -- Customization Menu Info

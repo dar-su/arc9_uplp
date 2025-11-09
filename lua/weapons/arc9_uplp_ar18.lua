@@ -229,19 +229,6 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 
--- SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
---     local attached = self:GetElements()
-
---     if attached["uplp_ar15_rs_tall"] then
---         return {
---             Pos = Vector(-2.275, -3, 0.225),
---             Ang = Angle(0.35, 0.125, -3),
---             Magnification = 1.15,
---             ViewModelFOV = 65,
---         }
---     end
-
--- end
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(16, 40, 4)

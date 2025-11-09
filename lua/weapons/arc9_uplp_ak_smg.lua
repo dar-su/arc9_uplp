@@ -220,25 +220,26 @@ SWEP.IronSights = {
      ViewModelFOV = 55,
 }
 
+local is_ppk20 = {
+    Pos = Vector(-2.29, -1.5, 0.865),
+    Ang = Angle(0.375, 0.1, -2.5),
+    Magnification = 1.15,
+    ViewModelFOV = 60,
+}
+local is_bizon = {
+    Pos = Vector(-2.29, -1, 1.125),
+    Ang = Angle(0.375, 0.1, -2.5),
+    Magnification = 1.15,
+    ViewModelFOV = 60,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
-     if attached["uplp_ak_smg_rec_ppk20"] then
-        return {
-             Pos = Vector(-2.29, -1.5, 0.865),
-             Ang = Angle(0.375, 0.1, -2.5),
-             Magnification = 1.15,
-             ViewModelFOV = 60,
-        }
-    end
-
-     if attached["uplp_ak_smg_rec_bizon"] then
-        return {
-             Pos = Vector(-2.29, -1, 1.125),
-             Ang = Angle(0.375, 0.1, -2.5),
-             Magnification = 1.15,
-             ViewModelFOV = 60,
-        }
+    if attached["uplp_ak_smg_rec_ppk20"] then
+        return is_ppk20
+    elseif attached["uplp_ak_smg_rec_bizon"] then
+        return is_bizon
     end
 end
 
