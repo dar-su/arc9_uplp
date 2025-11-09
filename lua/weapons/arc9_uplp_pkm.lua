@@ -458,6 +458,14 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } }, -- add belt rattle plz, belt1/2 too long
     },
+    ["fire_sights"] = {
+        Source = {"fire_sights"},
+        Mult = 0.65,
+        ShellEjectAt = 0.01,
+        NoIdle = true,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = mechh, t = 0 } },
+    },
     ["dryfire"] = {
         Source = {"modeswitch"},
     },

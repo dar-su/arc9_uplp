@@ -98,6 +98,14 @@ $sequence "fire" {
 	fadein 0
 	fadeout 0.15
 }
+
+$sequence "fire_sights" {
+	"anims\fire2_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.02
+	fadeout 0.2
+}
 $sequence "fire_zl" {
 	"anims\fire2.smd"
 	"anims\fire2_ads.smd"
@@ -107,6 +115,14 @@ $sequence "fire_zl" {
 	addlayer "zerolinks_pose" 
 	fadein 0
 	fadeout 0.15
+}
+$sequence "fire_sights_zl" {
+	"anims\fire2_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	addlayer "zerolinks_pose" 
+	fadein 0.02
+	fadeout 0.2
 }
 
 $sequence "ready" {
@@ -207,6 +223,13 @@ $sequence "fire_bp" {
 	fadein 0.02
 	fadeout 0.08
 }
+$sequence "fire_sights_bp" {
+	"anims\fire_bp2_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.02
+	fadeout 0.2
+}
 $sequence "fire_zl_bp" {
 	"anims\fire2_bp.smd"
 	"anims\fire_bp2_ads.smd"
@@ -216,6 +239,14 @@ $sequence "fire_zl_bp" {
 	addlayer "zerolinks_pose" 
 	fadein 0.02
 	fadeout 0.08
+}
+$sequence "fire_sights_zl_bp" {
+	"anims\fire_bp2_ads.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	addlayer "zerolinks_pose" 
+	fadein 0.02
+	fadeout 0.2
 }
 
 $sequence "ready_bp" {

@@ -491,6 +491,14 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
+    ["fire_sights"] = {
+        Source = {"fire_sights"},
+        ShellEjectAt = 0.01,
+        Mult = 0.65,
+        NoIdle = true,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = mechh, t = 0 } },
+    },
 
     -- Reloads --
 

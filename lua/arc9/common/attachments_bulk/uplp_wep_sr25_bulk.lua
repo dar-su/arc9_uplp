@@ -235,7 +235,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim) -- hack so i won't have to mak
         wep:SetNeedsCycle(true)
     end
 
-    if anim == "fire" then return "fire_nomech" end
+    if anim == "fire" or anim == "fire_sights" then return anim .."_nomech" end
 
     if anim == "ready" then wep:SetNeedsCycle(true) return "draw" end
 end

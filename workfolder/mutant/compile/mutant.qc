@@ -174,6 +174,14 @@ $sequence "fire_03" {
 	fadeout 0.08
 }
 
+$sequence "fire_sights" {
+	"anims\fire_iron.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.02
+	fadeout 0.2
+}
+
 
 $sequence "ready" {
 	"anims\ready_new.smd"

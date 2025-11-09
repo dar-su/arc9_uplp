@@ -40,6 +40,7 @@ $bodygroup "hgextra" { // 4
 	studio "hg fns bipod open.smd"
 	studio "brl ar10 fs.smd"
 	studio "mz m110 sup.smd"
+	studio "brl ar10 fst1.smd"
 }
 
 $bodygroup "barrel" { // 5
@@ -143,6 +144,14 @@ $sequence "fire" {
  	blend "sights" 0 1
 	fadein 0.02
 	fadeout 0.08
+}
+
+$sequence "fire_sights" {
+	"anims\fire_iron.smd"
+	fps 30
+	"ACT_VM_PRIMARYATTACK" 1
+	fadein 0.02
+	fadeout 0.2
 }
 
 $sequence "fire_empty" {

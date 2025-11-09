@@ -485,8 +485,22 @@ SWEP.Animations = {
             { s = mechh, t = 0, v = 0.75 },
         },
     },
+    ["fire_sights"] = {
+        Source = {"fire_sights"},
+        Mult = 1,
+        NoIdle = true,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = mechh, t = 0 } },
+    },
 
     ["fire_empty"] = {
+        Source = "fire_empty",
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = mechh, t = 0, v = 0.75 },
+        },
+    },
+    ["fire_sights_empty"] = {
         Source = "fire_empty",
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {

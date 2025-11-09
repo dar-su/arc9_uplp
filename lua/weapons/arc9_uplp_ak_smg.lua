@@ -453,6 +453,14 @@ SWEP.Animations = {
             { s = mechh, t = 0 },
         },
     },
+    ["fire_sights"] = {
+        Source = {"fire_sights"},
+        ShellEjectAt = 0.01,
+        Mult = 0.65,
+        NoIdle = true,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = mechh, t = 0 } },
+    },
 
     ["fire_bizon"] = {
         Source = {"fire_01_bizon","fire_02_bizon","fire_03_bizon"},
@@ -460,6 +468,14 @@ SWEP.Animations = {
         EventTable = {
             { s = mechh, t = 0 },
         },
+    },
+    ["fire_sights_bizon"] = {
+        Source = {"fire_sights_bizon"},
+        ShellEjectAt = 0.01,
+        Mult = 0.65,
+        NoIdle = true,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = { { s = mechh, t = 0 } },
     },
 
     -- Reloads --
