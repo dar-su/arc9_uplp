@@ -31,16 +31,17 @@ SWEP.Trivia = {
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, inspect by Cylo",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu, Fesiug",
 }
 
 SWEP.StandardPresets = {
--- "[416]XQAAAQDhAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ34UCCQs9Ta/xSvCyxLNexALqfMtZlGexYMeO6aD0MAhCTvhwLcFp8zKgw+wsMqND7gRoeyCXrZ5xSq+/BTgcKYAybtebsmG6MTWFpxJkoIkXFkrEv9M6rNR8utqvr1JssjAb1Zmr/Ndi+UZsyjJL7yPA==",
--- "[A1]XQAAAQDrAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC2iSHCJwrlAYaf/YT16tmwSbV6q6mxsRLbYxxlBSyemA555/Ceaq0hOnyryDtInKwEDAv9pYiPhtDf25wfn3gDXWA80GyNmbQfGCpxVDaI/BpO6enUt7q1YTtwbPJuwCmqn5cEBQV2EzhDZtkQ7y2qE9WYBXbc6UNtDfK4ojZ0ihrZWi9GdTPyzr7/8OFiNGZGx+uIA==",
--- "[Sport]XQAAAQCOAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6t+gfb2u7phOPKfC+2nR0SGxNhMV7j379gITOgT9sIVIYX/mxsAcZmcg6zaeJSsbQIpy/uQLAMMMqOfkkWLOH/rOvnXU9M4sxtkFlFwnU4Eb/mN20bviFPzHYOpi9KvmoRGgkKMjslXd4hkVvEUN/DbFk9Lw1s6wW/+7OilH7Al0LKzW+DTmhjgEoES2tEoqezRuHFkNypCloPk8JmQUTDGFXtgu0z5lwrPXXMbmzPq+K6fM40hFblI83nsGt8Glggwir8JwA=",
--- "[Hoki]XQAAAQB3AgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT/ifQCK5SlTJbmAAaseaElv0CNCKUvsQ07KKZJjS8KiExsKyKudoesLVmckFB3KspRgzmKGU44iCbs9m1oiSHeDBaslK9ojOdpmkzpAq9e8m8IsFPz4kt9TkvyYPksMdUr8fa2NA4E5o1KTYpsxMDvNLJjB7mdu067NhJayvfLq6VczghryaK2VyQWGebVX+9a4toEZYMOlKZWO5l7zxxZi1hcUCmIGwxZSmQ7Dg8f+uuhYyE1LtqiOPnvGD7PUxz6Hyn//qSyhK/DwKvxeqOFAA=="
+    "[The Classic]XQAAAQC9AQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJWbgMedMdAdY5KVcQPG+leIcJb6BJZhrGD+3Yp3dM0C6nRR28KFSx13Z4MSGtFY5KiTwMY2XczASTPi81+uDEW7Y60ZQIR9mc7NJvdwDIrkI10/mcIXVMVW5Agwuwobc3q9FoG0YGBYI/YL9MF1NNGPc6sQLIa85wCG8v1rjdJ0tq+VHNiHb/5YOvb0zetF",
+    "[The Ultimate]XQAAAQDuAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJWbgMedMdAdY5KVcQPG+leIcJb6BUrET1Ht6Aw0cRxtlZbx1rGs1B7DnBIGpB0c5SJTVpIhBbkzIan5Vupc8cth7bCdPqAXlXammHkFBxEeSf+8rqP72GTCFGpg/7/p5ybD4aUxQhlhKp5om6mb+pLbrEzse92eM54068cZQ4EJZCDLZhmvp/omWDVqpnnzQsDGdASPIURhLSfk+Lu4UuZKH0bzAA==",
+    "[ZJG-98]XQAAAQCWAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJWbgMedMdAdruGoz7jArnAYZoUR9NmsDMNS43u3fEzD/c/3y04izC/qpjGRSfxEkb4CxD/gnQGu34oT3XhK7HwJJYYXiCAR0Ux6cg/zqGi6c09AJQmCUWU8a1byg7j8qhOuypf6kaKctQTgaD0NOYJ6kkfcXsNak5znDt6LUeWrBQA=",
+    "[Field of Battle]XQAAAQC6AQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJWbgMedMdAdkrL+zsOQKsPfWfVRYV3J/B1W5m8XciE5WmgNan3qOlHQXupGDjTvkZCGu2mMBCX/cC+2wS7XsEtmJhPJEfRoapkjOYgRCQOskBJEW/lqKkR+luAw6AOZdikuZcbBb8g9ifCOCZbpXCihN8fYI9orYpOHILlqnFUhq7j8mfE5OQqrPQ3yUvXYvrqPnLbLavXj",
+    -- ^ bf6 reference
 }
 
 SWEP.DefaultBodygroups = "0000000000000000" -- Might as well prepare for the future

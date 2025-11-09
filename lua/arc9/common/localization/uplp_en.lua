@@ -3420,13 +3420,13 @@ L["uplp_usp_skin_black.compactname"] = "Black"
 L["uplp_usp_skin_black.description"] = "Replaces the slide with a matte black one."
 
 ////// Other
-L["uplp_sticker_usp_paw.printname"] = "MSW .45 Match Paw Sticker"
+L["uplp_sticker_usp_paw.printname"] = "MSW .45 \"Präzision\" Paw Sticker"
 L["uplp_sticker_usp_paw.compactname"] = "Paw"
-L["uplp_sticker_usp_paw.description"] = "Sticker for the MSW .45 Match muzzle attachment."
+L["uplp_sticker_usp_paw.description"] = "Sticker for the MSW .45 \"Präzision\" muzzle attachment."
 
-L["uplp_sticker_usp_match.printname"] = "MSW .45 Match <Insert funny text> Sticker"
-L["uplp_sticker_usp_match.compactname"] = "<Insert funny text>"
-L["uplp_sticker_usp_match.description"] = "Sticker for the MSW .45 Match muzzle attachment."
+L["uplp_sticker_usp_match.printname"] = "MSW .45 \"Präzision\" Logo Sticker"
+L["uplp_sticker_usp_match.compactname"] = "Präzision"
+L["uplp_sticker_usp_match.description"] = "Sticker for the MSW .45 \"Präzision\" muzzle attachment.\n\nSticker made by short sales alex."
 
 //////////////////// KS23
 L["uplp_weapon_ks23"] = "Pushka-23"
