@@ -1,23 +1,27 @@
-[h1]It's second anniversary for polyarms yay !!![/h1]
-Thanks for supporting i think
+[h1]!! Anniversary Time !![/h1]
+PolyArms is two years old soon! What started life as a smaller weapons pack with plenty of customization for those guns has turned into a much larger pack with lots of customization. 10 guns were present when we began the project, and with these new additions, we're bumping that number up to [b]36[/b]!
+
+Celebrate PolyArms' second anniversary with plenty of new toys to play with, plus a few changes to existing weapons:
 
 [h1]New content[/h1]
 [list]
-	[*] Added the [b]STG-95[/b], a cool german assault rifle with bunch of attachments!	
-	[*] Added the [b]Werefox 7.62[/b], a unique hybrid assault rifle!
-	[*] Added the [b]DMR-10[/b], the first true DMR in PolyArms!
-	[*] Added the [b]Excalibur .338[/b], an overpowered DMR! Admin only cuz it's too good :-)
-	[*] Added the [b]Pushka-23[/b], a very big shotgun!
-	[*] Added the [b]MSW .45[/b], a cool german pistol!
+	[*] Added the [b]STG-95[/b], the German military rifle of choice since the late 90's.
+	[*] Added the [b]Werefox 7.62[/b], the solution for when you want AK mags and ammunition on an AR platform.
+	[*] Added the [b]DMR-10[/b], an AR-15 platform marksman rifle built to replace the BR14.
+	[*] Added the [b]Excalibur .338[/b], an oversized DMR-10 exclusively wielded by the king (admin).
+	[*] Added the [b]Pushka-23[/b], the result for when you take an anti-aircraft gun barrel and tape it onto a shotgun frame.
+	[*] Added the [b]MSW .45[/b], a well-known modular German handgun wielded by infiltration specialists, resistance fighters and officers alike.
 [/list]
 
 [h1]Changed content[/h1]
-[list]	
-	[*] Reduced ADS visual recoil across all guns by ~50%, fixed weird snapping after fire	
-	[*] ARs and Pistols fully rebalanced
-	[*] Minor rebalance for Shotguns & some attachments across all guns
-	[*] Shoot sounds now play at correct pitch (was 90% instead of 100% for some reason)
-	[*] New Authority SBS shoot sounds, including different one for double-tap mode
-	[*] Some new reload sounds for MRD57, SK Shadow & AK
-	[*] Fixed moving camera during idle on some guns
+[list]
+	[*] Rebalanced all ARs and Pistols
+	[*] Slightly rebalanced all Shotguns & some attachments
+	[*] Firing sounds on all weapons now use the correct pitch
+	[*] Reduced the visual recoil while ADS by ~50% on all weapons
+	[*] Fixed a weird snapping issue after firing on some guns	
+	[*] Fixed that the camera movement when idle on some guns
+	
+	[*] Authority SBS: New firing sounds
+	[*] MRD57, SK Shadow & AK: New reload sounds
 [/list]

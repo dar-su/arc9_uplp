@@ -3155,44 +3155,44 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 
 /////////// Attachments
 ////// Receivers
--- L["uplp_sr25_rec_ar10.printname"] = "AR-10 Receiver"
--- L["uplp_sr25_rec_ar10.compactname"] = "AR-10"
--- L["uplp_sr25_rec_ar10.description"] = "Classic AR-10 receiver with select-fire capability.\nNot compatible with <color=255,100,100>25 or 30-round 6.8mm magazines</color>."
+L["uplp_sr25_rec_ar10.printname"] = "AR-10-Låda"
+L["uplp_sr25_rec_ar10.compactname"] = "AR-10"
+L["uplp_sr25_rec_ar10.description"] = "Klassisk AR-10-låda med väljbara skjutlägen.\nEj kompatibel med <color=255,100,100>25- eller 30-patronersmagasin</color>."
 
--- L["uplp_sr25_rec_troy.printname"] = "Home Defense 61 Receiver"
--- L["uplp_sr25_rec_troy.compactname"] = "HD-61"
--- L["uplp_sr25_rec_troy.description"] = "Aftermarket pump-action receiver for the DMR-10.\nNot compatible with <color=255,100,100>other handguards</color>."
+L["uplp_sr25_rec_troy.printname"] = "Home Defense 61 Låda"
+L["uplp_sr25_rec_troy.compactname"] = "HD-61"
+L["uplp_sr25_rec_troy.description"] = "Eftermarknads pumprepeter låda till DMR-10:an.\nEj kompatibel med <color=255,100,100>other handguards</color>."
 
 ////// Magazines
--- L["uplp_sr25_mag_10.printname"] = "10-Round 7.62×51mm (Aluminium)"
--- L["uplp_sr25_mag_10.compactname"] = "10R Alum"
--- L["uplp_sr25_mag_10.description"] = "10-round magazine made out of aluminium."
+L["uplp_sr25_mag_10.printname"] = "10-Patroners 7,62 × 51 mm (Aluminium)"
+L["uplp_sr25_mag_10.compactname"] = "10P Alum"
+L["uplp_sr25_mag_10.description"] = "10-patronersmagasin tillverkat av aluminium."
 
--- L["uplp_sr25_mag_10_poly.printname"] = "10-Round 7.62×51mm (Polymer)"
+L["uplp_sr25_mag_10_poly.printname"] = "10-Patroners 7,62 × 51 mm (Polymer)"
 
--- L["uplp_sr25_mag_20.printname"] = "20-Round 7.62×51mm (Aluminium)"
+L["uplp_sr25_mag_20.printname"] = "20-Patroners 7,62 × 51 mm (Aluminium)"
 
--- L["uplp_sr25_mag_20_old.printname"] = "20-Round 7.62×51mm (Classic)"
--- L["uplp_sr25_mag_20_old.compactname"] = "20R Classic"
--- L["uplp_sr25_mag_20_old.description"] = "Classic 20-round magazine made out of aluminium."
+L["uplp_sr25_mag_20_old.printname"] = "20-Patroners 7,62 × 51 mm (Klassiskt)"
+L["uplp_sr25_mag_20_old.compactname"] = "20P Klassisk"
+L["uplp_sr25_mag_20_old.description"] = "Klassiskt 20-patronersmagasin tillverkat av aluminium."
 
--- L["uplp_sr25_mag_20_poly.printname"] = "20-Round 7.62×51mm (Polymer)"
+L["uplp_sr25_mag_20_poly.printname"] = "20-Patroners 7,62 × 51 mm (Polymer)"
 
--- L["uplp_sr25_mag_25.printname"] = "25-Round 7.62×51mm (Polymer)"
--- L["uplp_sr25_mag_25.compactname"] = "25R Poly"
--- L["uplp_sr25_mag_25.description"] = "25-round extended magazine made out of polymer."
+L["uplp_sr25_mag_25.printname"] = "25-Patroners 7,62 × 51 mm (Polymer)"
+L["uplp_sr25_mag_25.compactname"] = "25P Poly"
+L["uplp_sr25_mag_25.description"] = "Förstorat 25-patronersmagasin tillverkat av polymer."
 
--- L["uplp_sr25_mag_30.printname"] = "30-Round 7.62×51mm (Polymer)"
--- L["uplp_sr25_mag_30.compactname"] = "30R Poly"
--- L["uplp_sr25_mag_30.description"] = "30-round extended magazine made out of polymer."
+L["uplp_sr25_mag_30.printname"] = "30-Patroners 7,62 × 51 mm (Polymer)"
+L["uplp_sr25_mag_30.compactname"] = "30P Poly"
+L["uplp_sr25_mag_30.description"] = "Förstorat 30-patronersmagasin tillverkat av polymer."
 
 ////// Handguards & Barrels
 local sr25brll = {
-	vshort = "\nComes with a 356mm (14\") barrel.",
-	short = "\nComes with a 410mm (16\") barrel.",
-	med = "\nComes with a 510mm (20\") barrel.",
-	long = "\nComes with a 610mm (24\") barrel.",
-	vlong = "\nComes with a 710mm (28\") barrel.",
+	vshort = "\nKommer med en 356mm lång pipa.",
+	short = "\nKommer med en 410mm lång pipa.",
+	med = "\nKommer med en 510mm lång pipa.",
+	long = "\nKommer med en 610mm lång pipa.",
+	vlong = "\nKommer med en 710mm lång pipa.",
 }
 
 -- L["uplp_sr25_hg_short.printname"] = "Tactical Short Handguard & Very Short Barrel"
@@ -3241,7 +3241,7 @@ local sr25brll = {
 
 -- L["uplp_sr25_hg_ar10.printname"] = "AR-10 Handguard & Very Long Barrel"
 -- L["uplp_sr25_hg_ar10.compactname"] = "AR-10"
--- L["uplp_sr25_hg_ar10.description"] = "Classic AR-10 handguard. Comes with a very long barrel.\nNot compatible with <color=255,100,100>muzzle devices</color>." .. sr25brll.vlong
+-- L["uplp_sr25_hg_ar10.description"] = "Classic AR-10 handguard. Comes with a very long barrel.\nEj kompatibel med <color=255,100,100>muzzle devices</color>." .. sr25brll.vlong
 
 ////// Muzzles
 -- L["uplp_sr25_muz_def.printname"] = "DMR-10 Flash Hider"
@@ -3261,7 +3261,7 @@ local sr25brll = {
 -- L["uplp_sr25_rstroy.compactname"] = "M-22"
 -- L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
 -- ↨Whichever of these is correct ↨
--- L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
+-- L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nEj kompatibel med the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
 
 -- L["uplp_sr25_fstroy.printname"] = "Home Defence M-22 Front Sight"
 -- L["uplp_sr25_fstroy.compactname"] = "M-22"
@@ -3278,7 +3278,7 @@ local sr25brll = {
 
 //////////////////// SWORD MK-18 Mjölnir
 -- L["uplp_weapon_mjolnir"] = "Excalibur .338"
--- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
+-- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only the real king is worthy of wielding this rifle."
 
 -- L["uplp_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
 

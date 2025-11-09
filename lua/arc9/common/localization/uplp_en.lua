@@ -3179,7 +3179,7 @@ L["uplp_weapon_sr25_manufacturer"] = "Knight's Armament Company"
 ////// Receivers
 L["uplp_sr25_rec_ar10.printname"] = "AR-10 Receiver"
 L["uplp_sr25_rec_ar10.compactname"] = "AR-10"
-L["uplp_sr25_rec_ar10.description"] = "Classic AR-10 receiver with select-fire capability.\nNot compatible with <color=255,100,100>25 or 30-round 6.8mm magazines</color>."
+L["uplp_sr25_rec_ar10.description"] = "Classic AR-10 receiver with select-fire capability.\nNot compatible with <color=255,100,100>25 or 30-round magazines</color>."
 
 L["uplp_sr25_rec_troy.printname"] = "Home Defense 61 Receiver"
 L["uplp_sr25_rec_troy.compactname"] = "HD-61"
@@ -3314,7 +3314,7 @@ L["uplp_sr25_pgrip_wood.description"] = "Replaces the pistol grip with a wooden 
 
 //////////////////// SWORD MK-18 Mjölnir
 L["uplp_weapon_mjolnir"] = "Excalibur .338"
-L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
+L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only the real king is worthy of wielding this rifle."
 
 L["uplp_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
 

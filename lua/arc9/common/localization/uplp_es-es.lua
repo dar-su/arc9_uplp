@@ -3267,7 +3267,7 @@ local sr25brll = {
 
 //////////////////// SWORD MK-18 Mjölnir
 -- L["uplp_weapon_mjolnir"] = "Excalibur .338"
--- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10 but crafted by dwarves, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only a God of Thunder would be crazy enough to use this rifle."
+-- L["uplp_weapon_mjolnir_desc"] = "Essentially an oversized DMR-10, the Excalibur .338 is a cutting-edge rifle known for its modular design and versatility in various tactical scenarios. Only the real king is worthy of wielding this rifle."
 
 -- L["uplp_weapon_mjolnir_real"] = "S.W.O.R.D. MK-18 Mjölnir"
 
