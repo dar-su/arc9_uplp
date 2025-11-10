@@ -229,7 +229,7 @@ SWEP.ManualAction = true
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 
 SWEP.ShootPitch = 100
-SWEP.ShootVolume = 120
+SWEP.ShootVolume = 200
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
