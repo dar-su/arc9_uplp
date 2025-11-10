@@ -430,7 +430,7 @@ SWEP.Animations = {
         Source = {"cycle_1", "cycle_2"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
-        EjectAt = 7.5 / 30,
+        EjectAt = 8 / 30,
         MinProgress = 0.7,
         EventTable = {
             { s = pathRZ .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
@@ -455,7 +455,7 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         MinProgress = 0.5,
         Mult = 1,
-        EjectAt = 7.5 / 30,
+        EjectAt = 6.5 / 30,
         EventTable = {
             { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },

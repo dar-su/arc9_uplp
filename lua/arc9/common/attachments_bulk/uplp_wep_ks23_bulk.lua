@@ -165,6 +165,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_2375_buck.mdl"
 
+ATT.ShellSounds = {
+    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- might be overkill
+    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- but i dont have other sounds
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+}
+
 ARC9.LoadAttachment(ATT, "uplp_ks23_shell_buck")
 
 ---------- uplp_ks23_shell_slug
@@ -228,6 +239,13 @@ ATT.DamageMin = 0
 ATT.Num = 0
 ATT.RecoilMult = 2
 ATT.VisualRecoilMult = 2
+
+local path = ")uplp_rz/ks23/"
+
+ATT.ShootSound = {
+    path .. "shotgun-lesslethal-01.ogg",
+    path .. "shotgun-lesslethal-02.ogg",
+}
 
 ATT.Hook_PrimaryAttack = function(self)
     if CLIENT then return end

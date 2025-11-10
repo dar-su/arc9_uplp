@@ -1,27 +1,31 @@
 [h1]!! Anniversary Time !![/h1]
-PolyArms is two years old soon! What started life as a smaller weapons pack with plenty of customization for those guns has turned into a much larger pack with lots of customization. 10 guns were present when we began the project, and with these new additions, we're bumping that number up to [b]36[/b]!
+PolyArms Project is two years old today! What started as a small weapon pack with plenty of customization has turned into a much larger pack with lots of customization and fun. 10 guns were present when we first released the project, and with today's new additions, we're bumping that number up to [b]35[/b]!
 
 Celebrate PolyArms' second anniversary with plenty of new toys to play with, plus a few changes to existing weapons:
 
 [h1]New content[/h1]
 [list]
-	[*] Added the [b]STG-95[/b], the German military rifle of choice since the late 90's.
-	[*] Added the [b]Werefox 7.62[/b], the solution for when you want AK mags and ammunition on an AR platform.
-	[*] Added the [b]DMR-10[/b], an AR-15 platform marksman rifle built to replace the BR14.
-	[*] Added the [b]Excalibur .338[/b], an oversized DMR-10 exclusively wielded by the king (admin).
-	[*] Added the [b]Pushka-23[/b], the result for when you take an anti-aircraft gun barrel and tape it onto a shotgun frame.
-	[*] Added the [b]MSW .45[/b], a well-known modular German handgun wielded by infiltration specialists, resistance fighters and officers alike.
+	[*] Added the [b]DMR-10[/b], a first dedicated marksman rifle in PolyArms!
+	[*] Added the [b]Excalibur .338[/b], an oversized DMR-10 exclusively wielded by the king (admin)
+	[*] Added the [b]STG-95[/b], the German military rifle of choice since the late 90's
+	[*] Added the [b]Werefox 7.62[/b] - when you can't decide between AK and AR platforms
+	[*] Added the [b]Pushka-23[/b], the result for when you take an anti-aircraft gun barrel and tape it onto a shotgun frame
+	[*] Added the [b]MSW .45[/b], a well-known modular German handgun wielded by infiltration specialists, resistance fighters and officers alike
+	[*] Some attachments made for those weapons are usable on other guns too!
 [/list]
 
 [h1]Changed content[/h1]
 [list]
 	[*] Rebalanced all ARs and Pistols
-	[*] Slightly rebalanced all Shotguns & some attachments
-	[*] Firing sounds on all weapons now use the correct pitch
+	[*] Slightly rebalanced all Shotguns and SMGs & some attachments
 	[*] Reduced the visual recoil while ADS by ~50% on all weapons
-	[*] Fixed a weird snapping issue after firing on some guns	
-	[*] Fixed that the camera movement when idle on some guns
+	[*] Fixed annoying weapon model snap after firing in sights
+	[*] CMP .380 now has trigger delay
+	[*] Removed idle camera movement on some guns
+	[*] Lots of small changes & fixes across all of the guns
 	
 	[*] Authority SBS: New firing sounds
 	[*] MRD57, SK Shadow & AK: New reload sounds
+	[*] All weapons now have dryfire sounds
+	[*] Firing sounds on all weapons now use the correct pitch
 [/list]
