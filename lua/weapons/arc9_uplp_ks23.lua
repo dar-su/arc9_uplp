@@ -229,7 +229,6 @@ SWEP.ManualAction = true
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 
 SWEP.ShootPitch = 100
-SWEP.ShootVolume = 0
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -349,12 +348,9 @@ local UTCrattle = {
 }
 
 local ShellInsert = {
-    pathMossberg .. "shellin-01.ogg",
-    pathMossberg .. "shellin-02.ogg",
-    pathMossberg .. "shellin-03.ogg",
-    pathMossberg .. "shellin-04.ogg",
-    pathMossberg .. "shellin-05.ogg",
-    pathMossberg .. "shellin-06.ogg",
+    pathRZ .. "shellin-01.wav",
+    pathRZ .. "shellin-02.wav",
+    pathRZ .. "shellin-03.wav",
 }
 
 local thetoggle = {{
@@ -477,7 +473,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 6 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0 / 30, v = 0.8 },
         },
     },
     ["reload_insert_first"] = {
@@ -485,7 +481,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 2 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0 / 30, v = 0.6 },
         },
     },
 
