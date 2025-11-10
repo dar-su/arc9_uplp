@@ -274,13 +274,10 @@ SWEP.ShotgunReloadIncludesChamber = true
 
 ---- Sounds
 local pathRZ = ")uplp_rz/ks23/"
-local pathMossberg = ")uplp_rz/mossberg/"
 
 -- urbna!
-local pathUT2 = ")uplp_urban_temp/"
 local pathUT = ")uplp_urban_temp/spas12/"
 local pathUTC = ")uplp_urban_temp/common/"
--- local pathUO = "uplp_unofficial/"
 
 
 SWEP.ShootSound = {
@@ -348,9 +345,9 @@ local UTCrattle = {
 }
 
 local ShellInsert = {
-    pathRZ .. "shellin-01.wav",
-    pathRZ .. "shellin-02.wav",
-    pathRZ .. "shellin-03.wav",
+    pathRZ .. "shellin-01.ogg",
+    pathRZ .. "shellin-02.ogg",
+    pathRZ .. "shellin-03.ogg",
 }
 
 local thetoggle = {{
@@ -394,8 +391,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "rack_1.wav", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "rack_2.wav", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "rack_2.ogg", t = 10 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, c = ca, v = 0.5 },
         },
     },
@@ -436,9 +433,9 @@ SWEP.Animations = {
         EjectAt = 7.5 / 30,
         MinProgress = 0.7,
         EventTable = {
-            { s = pathRZ .. "rack_1.wav", t = 0 / 30, v = 0.8 },
-            { s = pathMossberg .. "eject.ogg", t = 3 / 30, v = 0.8 },
-            { s = pathRZ .. "rack_2.wav", t = 7 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
+            { s = ")uplp_urban_temp/870/eject.ogg", t = 3 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
         },
     },
 
@@ -460,10 +457,10 @@ SWEP.Animations = {
         Mult = 1,
         EjectAt = 7.5 / 30,
         EventTable = {
-            { s = pathRZ .. "rack_1.wav", t = 1 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
-            { s = pathRZ .. "rack_2.wav", t = 37 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
         },
     },
 
