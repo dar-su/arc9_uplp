@@ -199,6 +199,11 @@ SWEP.Firemodes = {
     PoseParam = 2 }
 }
 
+SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
+SWEP.TriggerDelayTime = 0.05 -- Time until weapon fires.
+SWEP.TriggerDelayRepeat = false -- Whether to do it for every shot on automatics.
+SWEP.TriggerDelayCancellable = false
+
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
 
@@ -339,6 +344,14 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_3.ogg",
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
+
+SWEP.TriggerDownSound = {
+    pathUT .. "prefire-01.wav",
+    pathUT .. "prefire-02.wav",
+    pathUT .. "prefire-03.wav",
+}
+
+SWEP.TriggerUpSound = ""
 
 SWEP.DryFireSound = pathUT .. "dryfire.ogg"
 
@@ -491,7 +504,6 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = pathUT .. "prefire.ogg", t = 0, v = 0.5 },
             { s = mechh, t = 0 },
         },
     },
@@ -501,7 +513,6 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = pathUT .. "prefire.ogg", t = 0, v = 0.5 },
             { s = mechh, t = 0 },
         },
     },
