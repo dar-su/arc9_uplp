@@ -63,3 +63,5 @@ lua_backup/arc9/common/attachments-toremove/sticker_silly.lua
 lua/weapons/.idea/encodings.xml
 lua/weapons/.idea/indexLayout.xml
 lua/weapons/.idea/vcs.xml
+lua/weapons/.idea/workspace.xml
+*.idea/*
