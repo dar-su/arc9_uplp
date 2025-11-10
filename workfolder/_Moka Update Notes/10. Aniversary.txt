@@ -1,17 +1,17 @@
 [h1]!! Anniversary Time !![/h1]
-PolyArms Project is two years old today! What started as a small weapon pack with plenty of customization has turned into a much larger pack with lots of customization and fun. 10 guns were present when we first released the project, and with today's new additions, we're bumping that number up to [b]35[/b]!
+PolyArms Project is two years old today! What started as a fun little idea of a lightweight, highly-customizable and full-featured weapon pack has turned into a much larger and more ambitious project among friends. The pack originally released with only 10 weapons. Now, with today's new additions, we're bumping that number up to a Call of Duty sized [b]35[/b]!
 
 Celebrate PolyArms' second anniversary with plenty of new toys to play with, plus a few changes to existing weapons:
 
 [h1]New content[/h1]
 [list]
-	[*] Added the [b]DMR-10[/b], a first dedicated marksman rifle in PolyArms!
+	[*] Added the [b]DMR-10[/b], the first dedicated marksman rifle in PolyArms!
 	[*] Added the [b]Excalibur .338[/b], an oversized DMR-10 exclusively wielded by the king (admin)
 	[*] Added the [b]STG-95[/b], the German military rifle of choice since the late 90's
-	[*] Added the [b]Werefox 7.62[/b] - when you can't decide between AK and AR platforms
-	[*] Added the [b]Pushka-23[/b], the result for when you take an anti-aircraft gun barrel and tape it onto a shotgun frame
+	[*] Added the [b]Werefox 7.62[/b] - when you can't decide between the AK and AR platform
+	[*] Added the [b]Pushka-23[/b], the result of someone taking a rejected 23mm anti-aircraft barrel and building a shotgun around it
 	[*] Added the [b]MSW .45[/b], a well-known modular German handgun wielded by infiltration specialists, resistance fighters and officers alike
-	[*] Some attachments made for those weapons are usable on other guns too!
+	[*] An assortment of brand-new attachments!
 [/list]
 
 [h1]Changed content[/h1]
