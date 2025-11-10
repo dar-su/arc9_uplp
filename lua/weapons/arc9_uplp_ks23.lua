@@ -229,7 +229,7 @@ SWEP.ManualAction = true
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 
 SWEP.ShootPitch = 100
-SWEP.ShootVolume = 200
+SWEP.ShootVolume = 0
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -335,7 +335,7 @@ SWEP.HideBones = {
 SWEP.ReloadHideBoneTables = {
 }
 
-local mechh = {
+local mech = {
     pathRZ .. "mech-01.wav",
     pathRZ .. "mech-02.wav",
     pathRZ .. "mech-03.wav",
@@ -398,8 +398,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathMossberg .. "rack_1.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathMossberg .. "rack_2.ogg", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "rack_1.wav", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "rack_2.wav", t = 10 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, c = ca, v = 0.5 },
         },
     },
@@ -428,7 +428,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
-            { s = mechh, t = 0, v = 0.25 },
+            { s = mech, t = 0, v = 0.25 },
         },
     },
 
@@ -440,9 +440,9 @@ SWEP.Animations = {
         EjectAt = 7.5 / 30,
         MinProgress = 0.7,
         EventTable = {
-            { s = pathMossberg .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.8 },
-            { s = pathMossberg .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.wav", t = 0 / 30, v = 0.8 },
+            { s = pathMossberg .. "eject.ogg", t = 3 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_2.wav", t = 7 / 30, v = 0.8 },
         },
     },
 
@@ -464,10 +464,10 @@ SWEP.Animations = {
         Mult = 1,
         EjectAt = 7.5 / 30,
         EventTable = {
-            { s = pathMossberg .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_1.wav", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
-            { s = pathMossberg .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_2.wav", t = 37 / 30, v = 0.6 },
         },
     },
 

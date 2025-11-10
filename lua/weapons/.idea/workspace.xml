@@ -6,10 +6,11 @@
   <component name="ChangeListManager">
     <list default="true" id="2367c675-4c7c-4fcc-ad6c-85337ac5ca1c" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/arc9_uplp_g36.lua" beforeDir="false" afterPath="$PROJECT_DIR$/arc9_uplp_g36.lua" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/arc9_uplp_ks23.lua" beforeDir="false" afterPath="$PROJECT_DIR$/arc9_uplp_ks23.lua" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sound/uplp_rz/ks23/fire-01.wav" beforeDir="false" afterPath="$PROJECT_DIR$/../../sound/uplp_rz/ks23/fire-01.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sound/uplp_rz/ks23/fire-02.wav" beforeDir="false" afterPath="$PROJECT_DIR$/../../sound/uplp_rz/ks23/fire-02.wav" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../sound/uplp_rz/ks23/fire-03.wav" beforeDir="false" afterPath="$PROJECT_DIR$/../../sound/uplp_rz/ks23/fire-03.wav" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../workfolder/ks23/fire/fire.swv" beforeDir="false" afterPath="$PROJECT_DIR$/../../workfolder/ks23/fire/fire.swv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +58,7 @@
       <workItem from="1762212212126" duration="1419000" />
       <workItem from="1762230610699" duration="6292000" />
       <workItem from="1762737493139" duration="8997000" />
-      <workItem from="1762756202131" duration="840000" />
+      <workItem from="1762756202131" duration="3081000" />
     </task>
     <servers />
   </component>
