@@ -276,6 +276,8 @@ local pathUTC = ")uplp_urban_temp/common/"
 SWEP.TriggerDownSound = pathUTT .. "prefire.wav"
 SWEP.TriggerUpSound = ""
 
+SWEP.DryFireSound = "" -- we have own in sound tables
+
 SWEP.ShootSound = {
     pathUTT .. "fire-01.wav",
     pathUTT .. "fire-02.wav",

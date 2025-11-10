@@ -929,6 +929,13 @@ SWEP.Animations = {
     ["exit_bipod_empty"] = {
         Source = "modeswitch_empty",
     },
+
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
+    },
 }
 
 ---- Attachments

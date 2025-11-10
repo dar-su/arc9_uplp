@@ -307,6 +307,8 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "rifle_magdrop.ogg",
 }
 
+SWEP.DryFireSound = "" -- we have own in sound tables
+
 SWEP.EnterSightsSound = pathUTC .. "rattle2.ogg"
 SWEP.ExitSightsSound = pathUTC .. "rattle3.ogg"
 

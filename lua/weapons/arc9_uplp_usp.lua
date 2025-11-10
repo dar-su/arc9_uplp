@@ -319,6 +319,8 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+SWEP.DryFireSound = pathUT .. "dryfire.ogg"
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
@@ -661,6 +663,13 @@ SWEP.Animations = {
     ["switchsights_empty"] = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
+    },
+
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
     },
 }
 
