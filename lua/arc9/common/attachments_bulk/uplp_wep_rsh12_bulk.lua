@@ -12,6 +12,7 @@ local stats_rshlbar = {
     RPMMult = 0.85,
     SpreadAddHipFire = 0.03,
     DeployTimeMult = 1.25,
+    PhysBulletMuzzleVelocityMult = 1.2,
 }
 
 local ATT = {}

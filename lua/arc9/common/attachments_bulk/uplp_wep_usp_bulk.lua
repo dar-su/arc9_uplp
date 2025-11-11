@@ -226,16 +226,16 @@ ATT.MuzzleDevice = true
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
-
 ATT.ShootVolumeMult = 0.8
 ATT.BarrelLengthAdd = 3
 ATT.RecoilRandomSideMult = 1.2
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.01
+ATT.SpreadAddRecoil = -0.002
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 0.8 --
-ATT.HeatDissipation = 5 --
+ATT.HeatCapacityMult = 0.7 --
+ATT.HeatDissipation = 4 --
 ATT.HeatPerShot = 1
 ATT.HeatLockout = false
 ATT.MalfunctionWait = 0
@@ -244,19 +244,14 @@ ATT.MalfunctionWait = 0
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
-    return Lerp(heat ^ 2, stat, stat + 0.012)
+    if heat > 0.3 then
+        return Lerp(((heat - 0.3) / 0.7) ^ 2, stat, stat + 0.01)
+    end
 end
 
 ATT.HeatDissipationHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
     return Lerp(heat ^ 2, stat, stat * 2)
-end
-
-ATT.RPMHook = function(wep, stat)
-    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
-    if heat >= 0.5 then
-        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
-    end
 end
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end

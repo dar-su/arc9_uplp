@@ -54,17 +54,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_trigger_auto"}
 
-ATT.RPMMult = 1.35
+ATT.RPMMult = 1.4
 ATT.Firemodes = { { Mode = -1 } }
 
-ATT.RecoilMultRecoil = 1.5
+ATT.RecoilMultRecoil = 2
 ATT.RecoilSideMult = 2
-ATT.SpreadAddRecoil = 0.025
-ATT.DeployTimeMult = 1.33
-ATT.SpreadAdd = 0.01
+ATT.SpreadAddHipFire = 0.0025
+ATT.SpreadAddRecoil = 0.005
+ATT.SpreadAdd = 0.0075
 
-ATT.RecoilAutoControlMult = 1.25
-ATT.RecoilAutoControlMultShooting = 0.2
+-- ATT.RecoilAutoControlMult = 1.25
+-- ATT.RecoilAutoControlMultShooting = 0.2
 -- ATT.DamageMax = 24 -- balanced >w<
 -- ATT.DamageMin = 13
 ATT.CustomPros = {

@@ -115,10 +115,10 @@ SWEP.ClipSize = 20
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.3
+SWEP.RecoilUp = 1
 SWEP.RecoilSide = 0.9
 
-SWEP.RecoilRandomUp = 0.4
+SWEP.RecoilRandomUp = 0.3
 SWEP.RecoilRandomSide = 0.75
 
 SWEP.RecoilRise = 10
@@ -153,7 +153,7 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.Spread = 0.0035
 SWEP.SpreadAddHipFire = 0.0105
 
-SWEP.SpreadAddRecoil = 0.014
+SWEP.SpreadAddRecoil = 0.011
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
@@ -170,7 +170,7 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 4
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 4
+SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
