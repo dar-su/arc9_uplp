@@ -320,9 +320,9 @@ local pathUT = ")uplp_urban_temp/ar15/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    patar18 .. "fire-01.wav",
-    patar18 .. "fire-02.wav",
-    patar18 .. "fire-03.wav",
+    pathRZ .. "fire-01.wav",
+    pathRZ .. "fire-02.wav",
+    pathRZ .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -946,6 +946,13 @@ SWEP.Animations = {
     ["switchsights_empty"] = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
+    },
+
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
     },
 
 }

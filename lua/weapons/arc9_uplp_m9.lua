@@ -307,6 +307,8 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+SWEP.DryFireSound = ")uplp_urban_temp/usp/" .. "dryfire.ogg"
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
@@ -665,6 +667,13 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
 
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
+    },
+
     -- robocop, alt anim set
 
 
@@ -854,6 +863,13 @@ SWEP.Animations = {
         Source = "rc_modeswitch_empty",
         EventTable = thetoggle,
         IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
+    },
+
+    ["rc_dryfire"] = {
+        Source = "rc_modeswitch",
+    },
+    ["rc_dryfire_empty"] = {
+        Source = "rc_modeswitch_empty",
     },
 
 }

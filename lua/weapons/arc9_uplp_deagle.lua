@@ -286,6 +286,8 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+SWEP.DryFireSound = pathUT .. "dryfire.ogg"
+
 local mech = {
     pathUT .. "mech-01.wav",
     pathUT .. "mech-02.wav",
@@ -603,6 +605,13 @@ SWEP.Animations = {
     ["switchsights_empty"] = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
+    },
+
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
     },
 }
 

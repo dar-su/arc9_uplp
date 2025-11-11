@@ -229,7 +229,6 @@ SWEP.ManualAction = true
 SWEP.FiremodeSound = "" -- we will have own in sound tables
 
 SWEP.ShootPitch = 100
-SWEP.ShootVolume = 120
 
 -- HoldType Info
 SWEP.HoldType = "ar2"
@@ -275,13 +274,10 @@ SWEP.ShotgunReloadIncludesChamber = true
 
 ---- Sounds
 local pathRZ = ")uplp_rz/ks23/"
-local pathMossberg = ")uplp_rz/mossberg/"
 
 -- urbna!
-local pathUT2 = ")uplp_urban_temp/"
 local pathUT = ")uplp_urban_temp/spas12/"
 local pathUTC = ")uplp_urban_temp/common/"
--- local pathUO = "uplp_unofficial/"
 
 
 SWEP.ShootSound = {
@@ -335,7 +331,7 @@ SWEP.HideBones = {
 SWEP.ReloadHideBoneTables = {
 }
 
-local mechh = {
+local mech = {
     pathRZ .. "mech-01.wav",
     pathRZ .. "mech-02.wav",
     pathRZ .. "mech-03.wav",
@@ -349,12 +345,9 @@ local UTCrattle = {
 }
 
 local ShellInsert = {
-    pathMossberg .. "shellin-01.ogg",
-    pathMossberg .. "shellin-02.ogg",
-    pathMossberg .. "shellin-03.ogg",
-    pathMossberg .. "shellin-04.ogg",
-    pathMossberg .. "shellin-05.ogg",
-    pathMossberg .. "shellin-06.ogg",
+    pathRZ .. "shellin-01.ogg",
+    pathRZ .. "shellin-02.ogg",
+    pathRZ .. "shellin-03.ogg",
 }
 
 local thetoggle = {{
@@ -398,8 +391,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathMossberg .. "rack_1.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathMossberg .. "rack_2.ogg", t = 10 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "rack_2.ogg", t = 10 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, c = ca, v = 0.5 },
         },
     },
@@ -428,7 +421,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
-            { s = mechh, t = 0, v = 0.25 },
+            { s = mech, t = 0, v = 0.25 },
         },
     },
 
@@ -437,12 +430,12 @@ SWEP.Animations = {
         Source = {"cycle_1", "cycle_2"},
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
-        EjectAt = 7.5 / 30,
+        EjectAt = 8 / 30,
         MinProgress = 0.7,
         EventTable = {
-            { s = pathMossberg .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.8 },
-            { s = pathMossberg .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
+            { s = ")uplp_urban_temp/870/eject.ogg", t = 3 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
         },
     },
 
@@ -462,12 +455,12 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         MinProgress = 0.5,
         Mult = 1,
-        EjectAt = 7.5 / 30,
+        EjectAt = 6.5 / 30,
         EventTable = {
-            { s = pathMossberg .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
             { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
-            { s = pathMossberg .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
         },
     },
 
@@ -477,7 +470,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 6 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0 / 30, v = 0.8 },
         },
     },
     ["reload_insert_first"] = {
@@ -485,7 +478,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 2 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0 / 30, v = 0.6 },
         },
     },
 
@@ -536,6 +529,10 @@ SWEP.Animations = {
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
+    },
+
+    ["dryfire"] = {
+        Source = "modeswitch",
     },
 }
 

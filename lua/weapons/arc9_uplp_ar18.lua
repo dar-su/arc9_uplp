@@ -686,6 +686,13 @@ SWEP.Animations = {
         EventTable = thetoggle
     },
 
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
+    },
+
 }
 
 ---- Attachments

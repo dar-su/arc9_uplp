@@ -3398,11 +3398,11 @@ local sr25brll = {
 
 -- L["uplp_ks23_bar_ext.printname"] = "Extended Tube"
 -- L["uplp_ks23_bar_ext.compactname"] = "Ext."
--- L["uplp_ks23_bar_ext.description"] = "Factory barrel with an extended <color=100,255,100>7-round</color> capacity tube."
+-- L["uplp_ks23_bar_ext.description"] = "Factory barrel with an extended <color=100,255,100>5-round</color> capacity tube."
 
 -- L["uplp_ks23_bar_sniper.printname"] = "Sniper Barrel"
 -- L["uplp_ks23_bar_sniper.compactname"] = "Sniper"
--- L["uplp_ks23_bar_sniper.description"] = "Long barrel for the Pushka-23.\nComes with a <color=100,255,100>5-round</color> tube."
+-- L["uplp_ks23_bar_sniper.description"] = "Long barrel for the Pushka-23.\nComes with a <color=100,255,100>4-round</color> tube."
 
 ////// Stock
 -- L["uplp_ks23_stock_grip.printname"] = "Pistol Grip"

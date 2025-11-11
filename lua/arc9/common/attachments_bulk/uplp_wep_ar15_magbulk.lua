@@ -86,6 +86,7 @@ ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 ATT.ShellScale = 1.25
+ATT.ShellSounds = ARC9.PistolShellSoundsTable
 
 ATT.ShootSound = shoot45
 ATT.ShootSoundSilenced = shoot9sil
@@ -141,6 +142,7 @@ ATT.ActivateElements = {"uplp_ar15_reciever_45acp", "uplp_ar15_mag", "uplp_ar15_
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
 ATT.ShellScale = 1.25
+ATT.ShellSounds = ARC9.PistolShellSoundsTable
 
 ATT.ShootSound = shoot45
 ATT.ShootSoundSilenced = shoot9sil
@@ -227,6 +229,7 @@ ATT.Folder = "9x19mm"
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "canshortstock", "ar9sticker"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
+ATT.ShellSounds = ARC9.PistolShellSoundsTable
 
 ATT.ShootSound = shoot9
 ATT.ShootSoundSilenced = shoot9sil
@@ -299,6 +302,7 @@ ATT.Folder = "9x19mm"
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "canshortstock", "ar9sticker"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
+ATT.ShellSounds = ARC9.PistolShellSoundsTable
 
 ATT.ShootSound = shoot9
 ATT.ShootSoundSilenced = shoot9sil
@@ -370,6 +374,7 @@ ATT.Folder = "9x19mm"
 ATT.ActivateElements = {"uplp_ar15_reciever_stm9", "uplp_ar15_mag", "canshortstock", "ar9sticker"}
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl"
+ATT.ShellSounds = ARC9.PistolShellSoundsTable
 
 ATT.ShootSound = shoot9
 ATT.ShootSoundSilenced = shoot9sil

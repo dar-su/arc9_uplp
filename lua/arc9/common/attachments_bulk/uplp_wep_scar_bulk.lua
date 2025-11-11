@@ -729,6 +729,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -757,6 +758,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -788,6 +790,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -816,6 +819,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
@@ -844,6 +848,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30_tan.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -875,6 +880,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
@@ -926,6 +932,7 @@ ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 ATT.DropMagazineTime = 0.5 * 1.1 * 0.8
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
@@ -977,6 +984,7 @@ ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 ATT.DropMagazineTime = 0.42 * 1.1 * 0.8
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
+ATT.ShellSounds = ARC9.ShellSoundsTable
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
 ATT.ExcludeElements = {"uplp_ar15_mag_no_drum"}

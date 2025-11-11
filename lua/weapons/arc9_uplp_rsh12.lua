@@ -358,6 +358,8 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+SWEP.DryFireSound = "" -- we have own in sound tables
+
 -- local mech = {
 --     pathUT .. "mech-01.wav",
 --     pathUT .. "mech-02.wav",

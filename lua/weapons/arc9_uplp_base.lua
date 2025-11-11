@@ -105,3 +105,7 @@ end
 SWEP.ShootPitchVariation = 0
 SWEP.DistantShootVolume = 0.05
 SWEP.DistantShootVolumeActual = 0.05
+
+
+SWEP.DryFireSound = { ")uplp_rz/g36/alt/dryfire-01.ogg", ")uplp_rz/g36/alt/dryfire-02.ogg" }
+SWEP.DryFireDelay = 0.25
