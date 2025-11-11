@@ -65,3 +65,4 @@ lua/weapons/.idea/indexLayout.xml
 lua/weapons/.idea/vcs.xml
 lua/weapons/.idea/workspace.xml
 *.idea/*
+/lua/weapons/.idea
