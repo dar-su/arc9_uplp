@@ -278,6 +278,7 @@ SWEP.TriggerDownSound = pathUTT .. "prefire.wav"
 SWEP.TriggerUpSound = ""
 
 SWEP.DryFireSound = "" -- we have own in sound tables
+SWEP.DryFireDelay = false
 
 SWEP.ShootSound = {
     pathUTT .. "fire-01.wav",

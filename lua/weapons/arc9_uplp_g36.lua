@@ -533,6 +533,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_out.ogg", t = 9 / 30, c = ca },
         },
@@ -542,6 +543,7 @@ SWEP.Animations = {
         MinProgress = 0.48,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_in.ogg", t = 8 / 30, c = ca },
         },
@@ -553,6 +555,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_out.ogg", t = 9 / 30, c = ca },
         },
@@ -562,6 +565,7 @@ SWEP.Animations = {
         MinProgress = 0.48,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_in.ogg", t = 4 / 30, c = ca },
         },

@@ -359,6 +359,7 @@ SWEP.DropMagazineSounds = {
 }
 
 SWEP.DryFireSound = "" -- we have own in sound tables
+SWEP.DryFireDelay = false
 
 -- local mech = {
 --     pathUT .. "mech-01.wav",
