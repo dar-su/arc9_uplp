@@ -22,15 +22,17 @@ ATT.SortOrder = 4
 ATT.MuzzleEffectQCA = 6
 
 -- Positives
--- ATT.HeatCapacityMult = 1.24
--- ATT.SpreadAddHipFire = -0.01
--- ATT.RecoilUpMult = 0.65
--- ATT.RecoilSideMult = 0.7
--- ATT.RecoilAutoControlMult = 1.2
+ATT.RangeMinAdd = 15 / ARC9.HUToM
+ATT.RangeMaxAdd = 50 / ARC9.HUToM
+ATT.SpreadAdd = -0.0015
+ATT.RecoilPerShot = 1 / 8
 
--- -- Negatives
--- ATT.AimDownSightsTimeAdd = 0.06
--- ATT.SprintToFireTimeAdd = 0.06
+-- Negatives
+ATT.SwayMultSights = 1.5
+ATT.RPMMult = 0.9
+ATT.RecoilResetTimeAdd = 0.01
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.06
 
 ATT.Attachments = {
     {
@@ -62,15 +64,18 @@ ATT.SortOrder = 5
 ATT.MuzzleEffectQCA = 6
 
 -- Positives
--- ATT.HeatCapacityMult = 1.24
--- ATT.SpreadAddHipFire = -0.01
--- ATT.RecoilUpMult = 0.65
--- ATT.RecoilSideMult = 0.7
--- ATT.RecoilAutoControlMult = 1.2
+ATT.RangeMinAdd = 15 / ARC9.HUToM
+ATT.RangeMaxAdd = 50 / ARC9.HUToM
+ATT.SpreadAdd = -0.0015
+ATT.RecoilPerShot = 1 / 8
+ATT.RecoilRandomUpMult = 0.9
 
--- -- Negatives
--- ATT.AimDownSightsTimeAdd = 0.06
--- ATT.SprintToFireTimeAdd = 0.06
+-- Negatives
+ATT.SwayMultSights = 1.65
+ATT.RPMMult = 0.9
+ATT.RecoilResetTimeAdd = 0.01
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.06
 
 ATT.ActivateElements = {"uplp_top_tac"}
 
@@ -106,14 +111,16 @@ ATT.SortOrder = 1
 ATT.MuzzleEffectQCA = 5
 
 -- Positives
-ATT.SpreadAddHipFire = -0.01
+ATT.SpreadAddHipFire = -0.008
 ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SwayMultSights = 0.9
+ATT.RPMAdd = 40
 
 -- Negatives
 ATT.SpreadAdd = 0.0035
-ATT.RecoilPerShot = 1 / 5
-ATT.RecoilAdd = 0.15
+ATT.RecoilPerShot = 1 / 4
+ATT.RecoilAdd = 0.2
 ATT.RangeMinAdd = -20 / ARC9.HUToM
 ATT.RangeMaxAdd = -60 / ARC9.HUToM
 
@@ -143,14 +150,17 @@ ATT.ActivateElements = {"uplp_top_tac"}
 ATT.ExcludeElements = {"uplp_m203_rail"}
 
 -- Positives
-ATT.SpreadAddHipFire = -0.01
-ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.04
+ATT.SpreadAddHipFire = -0.008
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SwayMultSights = 1.05
+ATT.RPMAdd = 40
+ATT.RecoilRandomUpMult = 0.9
 
 -- Negatives
 ATT.SpreadAdd = 0.0035
-ATT.RecoilPerShot = 1 / 5
-ATT.RecoilAdd = 0.15
+ATT.RecoilPerShot = 1 / 4
+ATT.RecoilAdd = 0.2
 ATT.RangeMinAdd = -20 / ARC9.HUToM
 ATT.RangeMaxAdd = -60 / ARC9.HUToM
 
@@ -177,8 +187,18 @@ ATT.ActivateElements = {"uplp_no_muzzle"}
 ATT.MuzzleEffectQCA = 7
 
 -- Positives
+ATT.RangeMinAdd = 40 / ARC9.HUToM
+ATT.RangeMaxAdd = 80 / ARC9.HUToM
+ATT.SpreadAdd = -0.0025
+ATT.RecoilPerShot = 1 / 10
 
 -- Negatives
+ATT.SwayAdd = 0.2
+ATT.SwayMultSights = 2
+ATT.RPMMult = 0.65
+ATT.RecoilResetTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.08
 
 ATT.Attachments = {
     {
@@ -211,13 +231,11 @@ ATT.SortOrder = 3
 
 ATT.ActivateElements = {"uplp_top_tac"}
 
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.RecoilRandomUpMult = 0.9
+ATT.SwayMultSights = 1.15
+
 ARC9.LoadAttachment(ATT, "uplp_g36_hg_modern")
-
-
-
-
-
-
 
 
 
@@ -236,22 +254,29 @@ ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 ATT.Category = "uplp_g36_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.AimDownSightsTimeAdd = -0.1
--- ATT.SprintToFireTimeAdd = -0.1
--- ATT.SpreadAddHipFire = -0.01
--- ATT.SpeedMultSights = 1.11
-
--- ATT.RecoilAutoControlMult = 0.8
-
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
-
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "draw" or anim == "draw_empty" or anim == "holster" or anim == "holster_empty" then
         return anim .. "_unfold"
     end
 end
+
+-- M4 stock with more flat recoil reduction and less recoil control
+
+-- Positives
+ATT.RecoilAutoControlMult = 1.1
+ATT.VisualRecoilMultHipFire = 0.35
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -0.85
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 - 0.02
+ATT.SpeedMultSights = 0.85
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01
 
 ARC9.LoadAttachment(ATT, "uplp_g36_stock_default")
 
@@ -267,12 +292,21 @@ ATT.Icon = Material(iconfolder .. "idz.png", "mips smooth")
 ATT.Category = "uplp_g36_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.AimDownSightsTimeAdd = -0.1
--- ATT.SprintToFireTimeAdd = -0.1
--- ATT.SpreadAddHipFire = -0.01
--- ATT.SpeedMultSights = 1.11
+-- M16 stock with more sway reduction
 
--- ATT.RecoilAutoControlMult = 0.8
+-- Positives
+ATT.RecoilAutoControlMult = 1.5
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.7
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1
+ATT.SprintToFireTimeAdd = 0.1 + 0.02
+ATT.SpeedMultSights = 0.85 - 0.05
+ATT.SpeedAdd = -0.05 - 0.02
+ATT.SpreadAddHipFire = 0.01 + 0.005
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
@@ -298,15 +332,35 @@ ATT.Icon = Material(iconfolder .. "sl8.png", "mips smooth")
 ATT.Category = "uplp_g36_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.AimDownSightsTimeAdd = -0.1
--- ATT.SprintToFireTimeAdd = -0.1
--- ATT.SpreadAddHipFire = -0.01
--- ATT.SpeedMultSights = 1.11
+-- sharpshooter stock but more effective
 
--- ATT.RecoilAutoControlMult = 0.8
+-- Positives
+ATT.RecoilAutoControlMult = 3
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.65
+ATT.SpreadMult = 0.75
+ATT.RecoilSideMult = 0.75
+
+-- Negatives
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.08
+ATT.SpeedMultSights = 0.9
+ATT.SpeedAdd = -0.05
+ATT.SpreadAddHipFire = 0.01 + 0.018
 
 -- semi only
 -- :-)
+ATT.Firemodes = {
+    {
+        Mode = 1,
+        PoseParam = 2
+    },
+}
+
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
@@ -334,7 +388,7 @@ ATT.Attachments = {
         Pos = Vector(0.6, 0, -0.75),
         Ang = Angle(0, 0, 0),
         Scale = 1.05,
-		Icon_Offset = Vector(-3, 0, 0.4),
+        Icon_Offset = Vector(-3, 0, 0.4),
     },
 }
 
@@ -385,8 +439,8 @@ ATT.FoldSights = true
 -- magnifier stats
 local sway_mid = 1.5
 local stats_mid = {
-    SpeedAddSights = -0.15,
-    AimDownSightsTimeAdd = 0.03,
+    SpeedAddSights = -0.05,
+    AimDownSightsTimeAdd = 0.02,
 
     CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mid },
 }
@@ -437,6 +491,9 @@ ATT.Icon = Material(iconfolder .. "topmodern.png", "mips smooth")
 ATT.Category = "uplp_g36_top"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = -0.01
+ATT.SpeedMultShooting = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_g36_top_modern")
 
 ---------- uplp_g36_top_sl8
@@ -451,6 +508,9 @@ ATT.Icon = Material(iconfolder .. "topsl8.png", "mips smooth")
 
 ATT.Category = "uplp_g36_top"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.SwayMultSights = 0.9
+ATT.SpreadAddHipFire = 0.002
 
 ARC9.LoadAttachment(ATT, "uplp_g36_top_sl8")
 
@@ -469,13 +529,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_shortopticonly"}
 
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SpeedMultShooting = 0.9
+ATT.SwayMultSights = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_g36_top_short")
-
-
-
-
-
-
 
 
 
@@ -498,10 +556,12 @@ ATT.TranslucentPass = true
 ATT.BoneMerge = true
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.03
+ATT.AimDownSightsTimeAdd = -0.07
+ATT.SprintToFireTimeAdd = -0.05
 ATT.SpeedMultSights = 1.25
-ATT.SwayMultSights = 0.75
+ATT.SwayMultSights = 0.7
+ATT.SwayAdd = -0.2
+ATT.SpreadAddHipFire = -0.01
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
