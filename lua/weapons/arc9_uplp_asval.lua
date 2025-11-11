@@ -892,7 +892,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_asval_handguard"},
-        DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "valbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),
@@ -921,7 +921,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_asval_mag"},
-        DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "saigamag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 5, 5),
         Ang = Angle(90, 90, 180),

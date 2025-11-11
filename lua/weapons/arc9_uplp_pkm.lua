@@ -744,7 +744,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = "uplp_pkm_barrel",
-        DefaultIcon = Material(defatt2 .. "scarupper.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "pkmbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -1.1, 10),
         Ang = Angle(90, 90, 180),
@@ -753,7 +753,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_furniture"),
         Category = {"uplp_pkm_receiver", "uplp_pkm_furniture"},
-        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "pkmstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0),
         Icon_Offset = Vector(-7, 0, 0),

@@ -418,8 +418,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chback_308.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward_308.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_308.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_308.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 60, c = ca },
         },
         IKTimeLine = {
@@ -921,8 +921,8 @@ SWEP.Animations = {
             { s = pathUT .. "bonk.ogg", t = 10 / 30, c = ca, v = 1 },
             { s = pathRZ .. "magout.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin_308.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chback_308.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward_308.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_308.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_308.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},

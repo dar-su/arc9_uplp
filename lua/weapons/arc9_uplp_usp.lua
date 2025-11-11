@@ -833,7 +833,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_slide"),
         Category = {"uplp_usp_slide"},
-        DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "slide.png", "mips smooth"),
         Bone = "slide",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),

@@ -1232,7 +1232,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_sr25_mag"},
-        DefaultIcon = Material(defatt2 .. "scarmag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falmag.png", "mips smooth"),
         -- RejectAttachments = {
         -- ["uplp_ar15_mag_stanag30"] = true,
         -- },
