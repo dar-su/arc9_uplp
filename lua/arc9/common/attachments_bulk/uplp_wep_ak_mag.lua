@@ -944,7 +944,7 @@ ATT.RecoilPerShotMult = 1.2
 ATT.RecoilMult = 0.667
 
 -- Negatives
-ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMinAdd = -15 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
 ATT.DamageMinAdd = -6 * 0.5
 ATT.ClipSizeOverride = 20

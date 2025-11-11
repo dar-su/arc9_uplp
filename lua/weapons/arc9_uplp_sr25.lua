@@ -118,7 +118,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 2
+SWEP.Recoil = 2.25
 SWEP.RecoilUp = 1
 SWEP.RecoilSide = 0.85
 
@@ -155,9 +155,9 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.002
-SWEP.SpreadAddHipFire = 0.04 - 0.01
+SWEP.SpreadAddHipFire = 0.04
 
-SWEP.SpreadAddRecoil = 0.0075
+SWEP.SpreadAddRecoil = 0.05
 SWEP.SpreadAddMove = 0.016
 SWEP.SpreadAddMidAir = 0.05
 

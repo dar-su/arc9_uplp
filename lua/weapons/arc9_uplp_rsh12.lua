@@ -174,9 +174,9 @@ SWEP.VisualRecoilPunchHipFire = 5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0.015
 
-SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddRecoil = 0.025
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
@@ -230,8 +230,9 @@ SWEP.Firemodes = {
         RPM = 300,
         TriggerDelay = false,
         RecoilKickMult = 0.75,
-        RecoilResetTime = 0.15,
+        RecoilResetTime = 0.2,
         DamageMaxMult = 1.2,
+        RecoilDissipationRateMult = 0.5,
     },
 }
 

@@ -103,7 +103,8 @@ ATT.Firemodes = {
         RPM = 600,
         PoseParam = 2,
 
-        RecoilRandomSideAdd = 0,
+        RecoilRandomSideAdd = 0.5,
+        DamageMaxMult = 0.75
     },
     {
         Mode = 1, -- Semi
@@ -215,6 +216,8 @@ ATT.ManualActionEjectAnyway = false
 ATT.NoShellEject = true
 ATT.CanReloadWhileUnCycled = true
 ATT.EjectDelay = 0.025
+ATT.DamageMaxMult = 1.2
+ATT.SpreadAddRecoil = 0.03
 
 ATT.RecoilMult = 0.9
 ATT.RecoilPerShot = 1 / 2

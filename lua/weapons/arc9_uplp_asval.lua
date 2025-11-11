@@ -127,7 +127,7 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
 SWEP.RangeMax = 70 / ARC9.HUToM
 
 -- Physical Bullets
@@ -142,7 +142,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1.25
 SWEP.RecoilUp = 0.5
 SWEP.RecoilSide = 0.5
 
@@ -198,7 +198,7 @@ SWEP.RecoilModifierCap = 1
 
 -- 8Z balance pass
 SWEP.Spread = 0.0025
-SWEP.SpreadAddHipFire = 0.03 - 0.01
+SWEP.SpreadAddHipFire = 0.04
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.014
