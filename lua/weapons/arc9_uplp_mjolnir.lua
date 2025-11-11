@@ -83,20 +83,20 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 60 -- Damage dealt point-blank
-SWEP.DamageMin = 60 -- Damage dealt after maximum range
+SWEP.DamageMax = 70 -- Damage dealt point-blank
+SWEP.DamageMin = 70 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 -- Lethal in one shot on 13 meters, falls under 100 dmg on >68 m
 SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 105
-SWEP.SweetSpotRange = 40 / ARC9.HUToM
-SWEP.SweetSpotWidth = 90 / ARC9.HUToM
-SWEP.SweetSpotPeak = 15 / ARC9.HUToM
+SWEP.SweetSpotDamage = 100
+SWEP.SweetSpotRange = 70 / ARC9.HUToM
+SWEP.SweetSpotWidth = 110 / ARC9.HUToM
+SWEP.SweetSpotPeak = 25 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 2.5,
-    [HITGROUP_CHEST] = 1.15,
+    [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
     [HITGROUP_RIGHTARM] = 1,
@@ -109,7 +109,7 @@ SWEP.ImpactForce = 15 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 0 / ARC9.HUToM
-SWEP.RangeMax = 200 / ARC9.HUToM
+SWEP.RangeMax = 140 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 936 / 1.1 / ARC9.HUToM
@@ -123,11 +123,11 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 10
 
 -- Recoil
-SWEP.Recoil = 2.5
-SWEP.RecoilUp = 1.5
-SWEP.RecoilSide = 1.5
+SWEP.Recoil = 2
+SWEP.RecoilUp = 4
+SWEP.RecoilSide = 3
 
-SWEP.RecoilRandomUp = 1.2
+SWEP.RecoilRandomUp = 1
 SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilRise = 1
@@ -138,8 +138,7 @@ SWEP.RecoilAutoControl = 0
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 1
 
-SWEP.RecoilMultBipod = 0.4
-
+SWEP.RecoilMultBipod = 0.3
 
 -- Visual Recoil
 SWEP.VisualRecoil = 1
@@ -165,14 +164,18 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 SWEP.Spread = 0
 SWEP.SpreadAddHipFire = 0.05
 
-SWEP.SpreadAddRecoil = 0
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddMove = 0.03
 SWEP.SpreadAddMidAir = 0.03
 
-SWEP.RecoilDissipationRate = 1
-SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 1
+SWEP.RecoilDissipationRate = 3
+SWEP.RecoilResetTime = 0.01
+SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- Weapon handling
 SWEP.Speed = 0.8
@@ -185,9 +188,10 @@ SWEP.SprintToFireTime = 0.4
 SWEP.BarrelLength = 60
 
 SWEP.SwayMultSights = 0.75
+SWEP.SwayAddSights = 1
 
 -- Shooting and Firemodes
-SWEP.RPM = 350 -- How fast gun shoot
+SWEP.RPM = 300 -- How fast gun shoot
 SWEP.HeatCapacity = 20 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once

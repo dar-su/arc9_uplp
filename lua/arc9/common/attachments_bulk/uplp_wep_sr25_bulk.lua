@@ -865,16 +865,21 @@ ATT.Category = "uplp_mjolnir_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.SpreadAddHipFire = -0.01
-ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.04
+ATT.SpreadAddHipFire = -0.02
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.08
+ATT.RPMAdd = 60
 
 -- Negatives
 ATT.SpreadAdd = 0.005
-ATT.RecoilPerShot = 1 / 6
+ATT.RecoilPerShot = 1 / 2
 ATT.RecoilAdd = 0.3
-ATT.RangeMinAdd = -20 / ARC9.HUToM
+
+ATT.RangeMinAdd = 20 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
+ATT.DamageMinAdd = -18
+
+ATT.SweetSpot = false
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-7, -7, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-7, 0, 0) end
@@ -896,6 +901,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 ATT.ClipSize = 20
+ATT.RecoilUpMult = 0.85
 
 -- Negatives
 ATT.AimDownSightsTimeAdd = 0.1
@@ -905,6 +911,8 @@ ATT.DispersionSpreadAddRecoil = 0.005
 ATT.SpeedMult = 0.9
 ATT.SpeedMultSights = 0.85
 ATT.SpeedMultShooting = 0.8
+ATT.SwayAddSights = 0.3
+ATT.SwayMultSights = 1.5
 
 ATT.CustomCons = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "-20%",
