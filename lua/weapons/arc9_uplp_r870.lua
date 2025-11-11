@@ -35,7 +35,7 @@ SWEP.DefaultBodygroups = "0000000000000000000"
 SWEP.DefaultElements = {"uplp_r870"}
 
 -- Slightly lower spread and recoil, 1 more round, slightly worse handling
-SWEP.Spread = 0.028
+SWEP.Spread = 0.028 * 1.5
 
 SWEP.DispersionSpreadAddHipFire = 0.015
 

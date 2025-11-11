@@ -89,8 +89,8 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 96
-SWEP.DamageMin = 48
+SWEP.DamageMax = 50 -- 96
+SWEP.DamageMin = 25 -- 48
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -127,8 +127,8 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 2 / ARC9.HUToM
+SWEP.RangeMax = 45 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
@@ -183,7 +183,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.044
+SWEP.Spread = 0.044 * 1.5
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
@@ -226,8 +226,8 @@ SWEP.Firemodes = {
         uplp_semi = true,
         SuppressEmptySuffix = true,
         DispersionSpreadAddHipFire = -0.02,
-        Spread = 0.032,
-        DamageMax = 200,
+        Spread = 0.032 * 1.5,
+        DamageMax = 70, -- 200
         RPM = 600,
     },
     {

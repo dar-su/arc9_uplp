@@ -228,14 +228,14 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 ATT.SpreadMult = 0.1
 
 ATT.HeadshotDamage = 2
-ATT.RangeMinMult = 4
-ATT.RangeMaxMult = 2
+ATT.RangeMin = 6
+ATT.RangeMaxMult = 4
 ATT.DispersionSpreadAddRecoil = -0.025
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxMult = 0.75
-ATT.DamageMaxOverride = 100
+ATT.DamageMaxMult = 0.8
+-- ATT.DamageMaxOverride = 60
 ATT.DamageMinOverride = 25
 ATT.RecoilDissipationRateMult = 0.75
 
@@ -264,7 +264,8 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 ATT.SpreadMult = 0.3
 
 ATT.HeadshotDamage = 1.5
-ATT.RangeMaxMult = 1.5
+ATT.RangeMin = 4
+ATT.RangeMaxMult = 2
 ATT.DispersionSpreadAddRecoil = -0.01
 
 -- Negatives
@@ -304,8 +305,8 @@ ATT.CustomPros = {
 
 -- Negatives
 ATT.RPMMult = 0.75
-ATT.DamageMaxMult = 0.667
-ATT.RangeMaxMult = 0.75
+ATT.DamageMaxMult = 0.6
+ATT.RangeMaxMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.5
 
 ATT.ImpactDecal = "FadingScorch"
@@ -368,7 +369,7 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 ATT.SpreadMult = 0.5
 
 ATT.ExplosionRadiusOverride = 96
-ATT.ExplosionDamageOverride = 60
+ATT.ExplosionDamageOverride = 45
 ATT.ExplosionEffect = "HelicopterMegaBomb" -- placeholder
 ATT.ImpactDecal = "FadingScorch"
 
@@ -376,8 +377,8 @@ ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 -- Negatives
-ATT.DamageMaxMult = 0.4
-ATT.DamageMinMult = 0.5
+ATT.DamageMaxMult = 0.3
+ATT.DamageMinMult = 0.4
 ATT.RPMMult = 0.75
 ATT.NumOverride = 1
 ATT.PhysBulletGravityMult = 2
