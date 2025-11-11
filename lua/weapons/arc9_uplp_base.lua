@@ -9,7 +9,7 @@ SWEP.UseHands = true
 SWEP.PrintName = "UPLP Weapon Base (If seen; what the fuck even?)"
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 1.85,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,

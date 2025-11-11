@@ -206,8 +206,8 @@ ATT.SpeedMultSights = 1.1
 
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMaxAdd = 3 -- from 40
-ATT.DamageMinAdd = 9 -- from 28
+ATT.DamageMaxAdd = 3 * 0.5 -- from 40
+ATT.DamageMinAdd = 9 * 0.5 -- from 28
 ATT.RangeMaxMult = 2
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 

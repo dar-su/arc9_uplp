@@ -185,7 +185,7 @@ local stats45acp = {
 
     ActivePos = Vector(-0.5, 0.5, 0.2),
 
-    DamageMaxAdd = 10,
+    DamageMaxAdd = 10 * 0.5,
     RangeMaxAdd = -10 / ARC9.HUToM,
     RPM = 900,
     RecoilPerShotMult = 1.5,

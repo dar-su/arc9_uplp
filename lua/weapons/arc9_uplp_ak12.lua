@@ -85,8 +85,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 -- This is actually the 7.62 statline
-SWEP.DamageMax = 34
-SWEP.DamageMin = 18
+SWEP.DamageMax = 34 * 0.5
+SWEP.DamageMin = 18 * 0.5
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -1272,6 +1272,8 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_762_30_12"] = { Bodygroups = { { 6, 2 } } },
     ["uplp_ak_mag_762_30_old"] = { Bodygroups = { { 6, 3 } } },
     ["uplp_ak_mag_762_30_oldest"] = { Bodygroups = { { 6, 4 } } },
+    ["uplp_ak_mag_762_30_pmag"] = { Bodygroups = { { 6, 20 } } },
+    ["uplp_ak_mag_762_30_pmagb"] = { Bodygroups = { { 6, 21 } } },
 
     ["uplp_ak_mag_762_40"] = { Bodygroups = { { 6, 5 } } },
     ["uplp_ak_mag_762_40_old"] = { Bodygroups = { { 6, 6 } } },

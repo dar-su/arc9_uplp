@@ -62,8 +62,8 @@ ATT.CustomCons = {
 }
 
 -- Positives
-ATT.DamageMinAdd = 6
-ATT.DamageMaxAdd = 12
+ATT.DamageMinAdd = 6 * 0.5
+ATT.DamageMaxAdd = 12 * 0.5
 
 -- Negatives
 ATT.RPMMult = 0.75
@@ -144,8 +144,8 @@ ATT.CustomCons = {
 }
 
 -- Positives
-ATT.DamageMinAdd = 4
-ATT.DamageMaxAdd = 14
+ATT.DamageMinAdd = 4 * 0.5
+ATT.DamageMaxAdd = 14 * 0.5
 
 -- Negatives
 ATT.RPMMult = 0.6

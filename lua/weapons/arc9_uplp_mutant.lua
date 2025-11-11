@@ -81,8 +81,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 -- make sure ak12 matches this
-SWEP.DamageMax = 34
-SWEP.DamageMin = 18
+SWEP.DamageMax = 34 * 0.5
+SWEP.DamageMin = 18 * 0.5
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 

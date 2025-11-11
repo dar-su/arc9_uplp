@@ -488,8 +488,8 @@ ATT.ShootSound = shoot40
 ATT.ShootSoundSilenced = shoot40sil
 
 -- Positives
-ATT.DamageMaxAdd = 3
-ATT.DamageMinAdd = 2
+ATT.DamageMaxAdd = 3 * 0.5
+ATT.DamageMinAdd = 2 * 0.5
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 
 -- Negatives

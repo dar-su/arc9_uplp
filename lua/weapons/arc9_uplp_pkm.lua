@@ -85,8 +85,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 36 -- Damage dealt point-blank
-SWEP.DamageMin = 22 -- Damage dealt after maximum range
+SWEP.DamageMax = 36 * 0.45 -- Damage dealt point-blank
+SWEP.DamageMin = 22 * 0.45 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 18 -- Units of wood that can be penetrated

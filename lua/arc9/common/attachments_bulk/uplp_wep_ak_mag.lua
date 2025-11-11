@@ -19,8 +19,8 @@ local stats545 = {
 
     -- Negatives
     Spread = 0.005,
-    DamageMaxAdd = -6, -- from 34
-    DamageMinAdd = -5, -- from 18
+    DamageMaxAdd = -6 * 0.5, -- from 34
+    DamageMinAdd = -5 * 0.5, -- from 18
 
     BodyDamageMults = {
         [HITGROUP_HEAD] = 1.4,
@@ -53,8 +53,8 @@ local stats556 = {
     PhysBulletMuzzleVelocityMult = 1.3,
 
     -- Negatives
-    DamageMaxAdd = -8, -- from 34
-    DamageMinAdd = -4, -- from 18
+    DamageMaxAdd = -8 * 0.5, -- from 34
+    DamageMinAdd = -4 * 0.5, -- from 18
 }
 
 local pathRZ = ")uplp_rz/ak/"
@@ -842,8 +842,8 @@ ATT.CustomPros = {
 
 -- Positives
 ATT.SpreadAdd = -0.002
-ATT.DamageMaxAdd = 11
-ATT.DamageMinAdd = 4
+ATT.DamageMaxAdd = 11 * 0.5
+ATT.DamageMinAdd = 4 * 0.5
 
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = 60 / ARC9.HUToM
@@ -938,7 +938,7 @@ ATT.CustomPros = {
 }
 
 -- Positives
-ATT.DamageMaxAdd = 4
+ATT.DamageMaxAdd = -4 * 0.5
 ATT.RPMAdd = 150
 ATT.RecoilPerShotMult = 1.2
 ATT.RecoilMult = 0.667
@@ -946,7 +946,7 @@ ATT.RecoilMult = 0.667
 -- Negatives
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = -40 / ARC9.HUToM
-ATT.DamageMinAdd = -6
+ATT.DamageMinAdd = -6 * 0.5
 ATT.ClipSizeOverride = 20
 ATT.PhysBulletMuzzleVelocityMult = 0.45
 

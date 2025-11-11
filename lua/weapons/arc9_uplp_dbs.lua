@@ -156,7 +156,7 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 1 / ARC9.HUToM
+SWEP.RangeMin = 2 / ARC9.HUToM
 SWEP.RangeMax = 25 / ARC9.HUToM
 
 -- Physical Bullets
