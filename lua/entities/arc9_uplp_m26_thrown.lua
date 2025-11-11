@@ -21,6 +21,8 @@ ENT.SmokeTrail = false
 
 ENT.BounceSound = "weapons/hegrenade/he_bounce-1.wav"
 
+local DAMAGA = 125
+
 local path = "uplp_urban_temp/m203/"
 ENT.ExplosionSounds = {path .. "explosion-close-01.ogg", path .. "explosion-close-02.ogg", path .. "explosion-close-03.ogg", path .. "explosion-close-04.ogg", path .. "explosion-close-05.ogg", path .. "explosion-close-06.ogg"}
 ENT.DebrisSounds = {path .. "debris-01.ogg", path .. "debris-02.ogg", path .. "debris-03.ogg", path .. "debris-04.ogg", path .. "debris-05.ogg"}
@@ -43,14 +45,14 @@ function ENT:Detonate()
         ParticleEffect("water_explosion", tr2.HitPos + Vector(0, 0, 8), Angle(0, 0, 0), nil)
 
         // Overpressure radius
-        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 256, 200)
+        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 256, DAMAGA)
 
         self:EmitSound("weapons/underwater_explode3.wav", 100, 100, 1, CHAN_AUTO, 0, 0, ARC9.EveryoneRecipientFilter)
     else
         ParticleEffect("explosion_grenade", self:GetPos(), Angle(0, 0, 0), nil)
 
         // Overpressure radius
-        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 256, 200)
+        util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 256, DAMAGA)
         -- // Shrapnel radius
         -- util.BlastDamage(self, IsValid(self:GetOwner()) and self:GetOwner() or self, self:GetPos(), 1024, 100)
 
