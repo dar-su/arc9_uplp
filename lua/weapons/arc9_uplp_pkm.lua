@@ -180,11 +180,12 @@ SWEP.BarrelLength = 35
 
 -- SWEP.Bipod = true
 SWEP.SpreadAddBipod = -0.003
-SWEP.RecoilMultBipod = 0.5
-SWEP.RecoilPerShotMultBipod = 1
+SWEP.RecoilMultBipod = 0.2
+SWEP.RecoilPerShotMultBipod = 0.7
 -- SWEP.CantPeek = true
 SWEP.ReloadInSights = false
 SWEP.LaserCorrectBySightAng = true
+
 
 -- Shooting and Firemodes
 SWEP.RPM = 600 -- How fast gun shoot
