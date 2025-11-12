@@ -2,6 +2,7 @@
 
 $modelname "weapons\arc9\w_uplp_mp5.mdl"
  
+$scale 0.78
 
 $bodygroup "body"
 {

@@ -74,7 +74,7 @@ ATT.MuzzleParticleOverride = "muzzleflash_4"
 
 ATT.RPMMult = 1.125
 ATT.Model = "models/weapons/arc9/uplp/mp5_lhik_kurz.mdl"
-ATT.ModelOffset = Vector(-16.5, -2.2, 3.5)
+ATT.ModelOffset = Vector(-15.1, -2.2, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
@@ -121,7 +121,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ExcludeElements = {"uplp_mp5_bar_sd"}
 
 ATT.Model = "models/weapons/arc9/uplp/tac_flashlight_pistol.mdl" -- secret small flashlight inside model
-ATT.ModelOffset = Vector(3.4, 1.17, -1.2)
+ATT.ModelOffset = Vector(3.4, 1.17, -1.2) * 0.78
 ATT.Scale = 0.1
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
@@ -162,7 +162,7 @@ ATT.Category = "uplp_mp5_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Model = "models/weapons/arc9/uplp/mp5_lhik_kurzgrip.mdl"
-ATT.ModelOffset = Vector(-19.9, -2.2, 4.0)
+ATT.ModelOffset = Vector(-16.5, -2.5, 4.9)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
@@ -196,9 +196,9 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock"},
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
-        Pos = Vector(0.55, 0, -0.55),
+        Pos = Vector(0.55, 0, -0.55) * 0.78,
         Ang = Angle(0, 0, 0),
-        Scale = 1.2
+        Scale = 1.0
     },
 }
 
@@ -447,6 +447,8 @@ ATT.BulletBones = {
 ATT.ReloadHideBoneTables = {
     [1] = {
         "mag",
+        "springend",
+        "springstart",
         "bullet1",
         "bullet2",
         "bullet3",

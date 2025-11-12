@@ -11,21 +11,22 @@ Celebrate PolyArms' second anniversary with plenty of new toys to play with, plu
 	[*] Added the [b]Werefox 7.62[/b] - when you can't decide between the AK and AR platform
 	[*] Added the [b]Pushka-23[/b], the result of someone taking a rejected 23mm anti-aircraft barrel and building a shotgun around it
 	[*] Added the [b]MSW .45[/b], a well-known modular German handgun wielded by infiltration specialists, resistance fighters and officers alike
-	[*] An assortment of brand-new attachments!
+	[*] [b]PV-9[/b] was rescaled to proper size and got its animations a bit improved blehh i suck at english please rewrite (idk if this should be in new content or changed)
+	[*] An few brand-new attachments!
 [/list]
 
 [h1]Changed content[/h1]
 [list]
-	[*] Rebalanced all ARs and Pistols
-	[*] Slightly rebalanced all Shotguns and SMGs & some attachments
-	[*] Reduced the visual recoil while ADS by ~50% on all weapons
+	[*] ‼️ All weapons were greatly rebalanced, mainly reducing TTK (time to kill) from ~0.15s to ~0.5s, based on weapon and attachments, making fights be more fair and less relient on luck
+	[*] Some attachments stats got a little bit of polishing too
+	[*] ‼️Reduced the visual recoil while ADS by ~50% on all weapons
 	[*] Fixed annoying weapon model snap after firing in sights
 	[*] CMP .380 now has trigger delay
 	[*] Removed idle camera movement on some guns
 	[*] Lots of small changes & fixes across all of the guns
+	[*] All weapons now have dryfire animation with sound
 	
 	[*] Authority SBS: New firing sounds
 	[*] MRD57, SK Shadow & AK: New reload sounds
-	[*] All weapons now have dryfire sounds
 	[*] Firing sounds on all weapons now use the correct pitch
 [/list]
