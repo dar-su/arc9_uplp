@@ -119,11 +119,11 @@ SWEP.ClipSize = 30
 
 -- Recoil
 SWEP.Recoil = 2
-SWEP.RecoilUp = 0.95
-SWEP.RecoilSide = 0.75
+SWEP.RecoilUp = 0.85
+SWEP.RecoilSide = 0.85
 
 SWEP.RecoilRandomUp = 0.9
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0

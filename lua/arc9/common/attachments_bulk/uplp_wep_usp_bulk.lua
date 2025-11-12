@@ -234,13 +234,8 @@ ATT.SprintToFireTimeAdd = 0.01
 ATT.SpreadAddRecoil = -0.002
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 0.7 --
-ATT.HeatDissipation = 4 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.05
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 0.7
+ATT.HeatDissipationMult = 0.8
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)

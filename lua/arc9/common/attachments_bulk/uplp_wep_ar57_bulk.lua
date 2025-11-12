@@ -67,13 +67,23 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 
 ATT.Overheat = true
--- ATT.HeatCapacityMult = 1 --
-ATT.HeatDissipation = 5 --
--- ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.009
-ATT.RPMMultHot = 0.9
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.009)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_ar57_barrel_sd")
 

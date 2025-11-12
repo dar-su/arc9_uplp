@@ -286,13 +286,7 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1.1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.03
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 1.1
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -989,10 +983,7 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
 
 ATT.Overheat = true
-ATT.HeatDissipation = 2 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
+ATT.HeatDissipationMult = 0.5
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)

@@ -31,13 +31,24 @@ ATT.AimDownSightsTimeAdd = 0.03
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.01
-ATT.RPMMultHot = 0.85
+--ATT.HeatCapacityMult = 1
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.01)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
