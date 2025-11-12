@@ -118,8 +118,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 35
-SWEP.DamageMin = 18
+SWEP.DamageMax = 15
+SWEP.DamageMin = 12
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -127,7 +127,7 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
 SWEP.RangeMax = 70 / ARC9.HUToM
 
 -- Physical Bullets
@@ -142,7 +142,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1.25
 SWEP.RecoilUp = 0.5
 SWEP.RecoilSide = 0.5
 
@@ -198,7 +198,7 @@ SWEP.RecoilModifierCap = 1
 
 -- 8Z balance pass
 SWEP.Spread = 0.0025
-SWEP.SpreadAddHipFire = 0.03 - 0.01
+SWEP.SpreadAddHipFire = 0.04
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.014
@@ -892,7 +892,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_asval_handguard"},
-        DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "valbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),
@@ -921,7 +921,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_asval_mag"},
-        DefaultIcon = Material(defatt2 .. "akmag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "saigamag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 5, 5),
         Ang = Angle(90, 90, 180),

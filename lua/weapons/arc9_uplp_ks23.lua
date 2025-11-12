@@ -89,8 +89,8 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 340
-SWEP.DamageMin = 120
+SWEP.DamageMax = 107 -- 340
+SWEP.DamageMin = 40 -- 120
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -134,8 +134,8 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 1 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 1 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 300 / ARC9.HUToM
@@ -187,7 +187,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.035
+SWEP.Spread = 0.035 * 1.5
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
@@ -205,7 +205,7 @@ SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 1 / 2
 
 -- Weapon handling
-SWEP.SpeedMult = 0.82
+SWEP.SpeedMult = 0.8
 SWEP.SpeedMultSights = 0.55
 
 SWEP.AimDownSightsTime = 0.44
@@ -592,7 +592,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_ks23_barrel"},
-        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "sgbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.5, 7),
         Ang = Angle(90, 90, 180),
@@ -609,7 +609,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ks23_stock"},
-        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "sgstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.1, 1.5, -4.5),
         Ang = Angle(90, 90, 180),

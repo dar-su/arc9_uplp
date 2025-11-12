@@ -96,8 +96,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 70
-SWEP.DamageMin = 36
+SWEP.DamageMax = 70 * 0.7
+SWEP.DamageMin = 36 * 0.7
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -174,9 +174,9 @@ SWEP.VisualRecoilPunchHipFire = 5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.01
+SWEP.SpreadAddHipFire = 0.015
 
-SWEP.SpreadAddRecoil = 0.02
+SWEP.SpreadAddRecoil = 0.025
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
@@ -230,7 +230,9 @@ SWEP.Firemodes = {
         RPM = 300,
         TriggerDelay = false,
         RecoilKickMult = 0.75,
-        RecoilResetTime = 0.15,
+        RecoilResetTime = 0.2,
+        DamageMaxMult = 1.2,
+        RecoilDissipationRateMult = 0.5,
     },
 }
 
@@ -359,6 +361,7 @@ SWEP.DropMagazineSounds = {
 }
 
 SWEP.DryFireSound = "" -- we have own in sound tables
+SWEP.DryFireDelay = false
 
 -- local mech = {
 --     pathUT .. "mech-01.wav",
@@ -751,7 +754,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_rsh12_bar"},
-        DefaultIcon = Material(defatt2 .. "deagbr.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "rshbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.15, 4),
         Ang = Angle(90, 90, 180),
@@ -767,7 +770,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_rsh12_grip"},
-        DefaultIcon = Material(defatt2 .. "argrip.png", "mips smooth"),
+        DefaultIcon = Material(defatt .. "grip_ak.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 2.5, -4),
         Ang = Angle(90, 90, 180),

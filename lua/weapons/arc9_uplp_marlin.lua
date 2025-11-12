@@ -86,11 +86,11 @@ SWEP.DamageMin = 34
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_HEAD] = 1.8,
     [HITGROUP_CHEST] = 1.25,
     [HITGROUP_STOMACH] = 1,
-    [HITGROUP_LEFTARM] = 1,
-    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTARM] = 1.15,
+    [HITGROUP_RIGHTARM] = 1.15,
     [HITGROUP_LEFTLEG] = 0.9,
     [HITGROUP_RIGHTLEG] = 0.9,
 }
@@ -182,7 +182,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddHipFire = 0.075
 
 SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.02
@@ -757,7 +757,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_marlin_barrel"},
-        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "sgbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.2, 3),
         Ang = Angle(90, 90, 180),
@@ -792,7 +792,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_internals"),
         Category = {"uplp_marlin_bolt"},
-        DefaultIcon = Material(defatt2 .. "trigger.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "lever.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 3.5, -5),
         Ang = Angle(90, 90, 180),
@@ -800,7 +800,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_marlin_hg"},
-        DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "pump.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.4, 8),
         Ang = Angle(90, 90, 180),
@@ -808,7 +808,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_marlin_stock"},
-        DefaultIcon = Material(defatt2 .. "snipstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "sgstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 2, -7),
         Ang = Angle(90, 90, 180),

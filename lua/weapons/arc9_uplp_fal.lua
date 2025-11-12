@@ -84,8 +84,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 40
-SWEP.DamageMin = 28
+SWEP.DamageMax = 20
+SWEP.DamageMin = 14
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -103,8 +103,8 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8
 
 -- Range
-SWEP.RangeMin = 30 / ARC9.HUToM
-SWEP.RangeMax = 120 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMax = 90 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 840 * 39.37
@@ -119,10 +119,10 @@ SWEP.ClipSize = 20
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.25
-SWEP.RecoilSide = 0.9
+SWEP.RecoilUp = 2
+SWEP.RecoilSide = 1.25
 
-SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomUp = 0.75
 SWEP.RecoilRandomSide = 0.75
 
 SWEP.RecoilRise = 0
@@ -197,8 +197,8 @@ SWEP.Speed = 0.8
 SWEP.SpeedMultSights = 0.6
 SWEP.SpeedMultShooting = 0.8
 
-SWEP.AimDownSightsTime = 0.4
-SWEP.SprintToFireTime = 0.43
+SWEP.AimDownSightsTime = 0.46
+SWEP.SprintToFireTime = 0.54
 
 SWEP.SwayAddSights = 0
 SWEP.BarrelLength = 40
@@ -823,7 +823,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = {"uplp_fal_rec"},
-        -- DefaultIcon = Material(defatt2 .. "akhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "dc.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1, 5),
     },
@@ -856,7 +856,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handguard"),
         Category = {"uplp_fal_hg"},
-        DefaultIcon = Material(defatt2 .. "scarupper.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.5, 17),
         Ang = Angle(90, 90, 180),
@@ -865,7 +865,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_fal_mag"},
-        DefaultIcon = Material(defatt2 .. "scarmag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falmag.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 5, 5),
         Ang = Angle(90, 90, 180),
@@ -873,7 +873,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_fal_grip"},
-        DefaultIcon = Material(defatt2 .. "argrip.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falgrip.png", "mips smooth"),
         ActiveElements = {"uplp_ak_grip"},
         Bone = "body",
         Pos = Vector(0, 5, -1.5),
@@ -882,7 +882,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_fal_stock"},
-        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1.5, -5.25),
         Ang = Angle(90, 90, 180),

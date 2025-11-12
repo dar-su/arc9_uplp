@@ -89,8 +89,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25
-SWEP.DamageMin = 10
+SWEP.DamageMax = 14
+SWEP.DamageMin = 7
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -108,7 +108,7 @@ SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 8 / ARC9.HUToM
-SWEP.RangeMax = 24 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
@@ -828,7 +828,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = "uplp_mp9_mag",
-        DefaultIcon = Material(defatt2 .. "mp7mag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "mp9mag.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(0, 1, -0.15),
         Ang = Angle(90, 90, 180),

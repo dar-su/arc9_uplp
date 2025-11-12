@@ -84,8 +84,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 40
-SWEP.DamageMin = 28
+SWEP.DamageMax = 25
+SWEP.DamageMin = 18
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -118,7 +118,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 20
 
 -- Recoil
-SWEP.Recoil = 2
+SWEP.Recoil = 2.25
 SWEP.RecoilUp = 1
 SWEP.RecoilSide = 0.85
 
@@ -154,10 +154,10 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.002
-SWEP.SpreadAddHipFire = 0.04 - 0.01
+SWEP.Spread = 0.003
+SWEP.SpreadAddHipFire = 0.04
 
-SWEP.SpreadAddRecoil = 0.0075
+SWEP.SpreadAddRecoil = 0.02
 SWEP.SpreadAddMove = 0.016
 SWEP.SpreadAddMidAir = 0.05
 
@@ -165,7 +165,7 @@ SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.015
+SWEP.RecoilResetTime = 0.018
 SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
@@ -1232,7 +1232,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_sr25_mag"},
-        DefaultIcon = Material(defatt2 .. "scarmag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falmag.png", "mips smooth"),
         -- RejectAttachments = {
         -- ["uplp_ar15_mag_stanag30"] = true,
         -- },

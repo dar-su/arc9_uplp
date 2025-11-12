@@ -624,7 +624,7 @@ local stats556 = {
     DistantShootSoundIndoor = shoot556distindoor,
 
     -- Positives
-    RPMAdd = 100,
+    RPMAdd = 200,
     RecoilPerShotMult = 0.75,
     RecoilUpAdd = -0.5,
     RecoilSideAdd = -0.35,
@@ -633,14 +633,14 @@ local stats556 = {
     RecoilRandomSide = -0.2,
 
     -- Negatives
-    DamageMaxAdd = -15, -- from 40
-    DamageMinAdd = -14, -- from 28
+    DamageMaxAdd = -11 * 0.5, -- from 40
+    DamageMinAdd = -10 * 0.5, -- from 28
     PhysBulletMuzzleVelocityMult = 0.8165,
     RangeMaxAdd = -10 / ARC9.HUToM,
     RangeMinAdd = -5 / ARC9.HUToM,
 
     BodyDamageMults = {
-        [HITGROUP_HEAD] = 1.4,
+        [HITGROUP_HEAD] = 1.8,
         [HITGROUP_CHEST] = 1,
         [HITGROUP_STOMACH] = 1,
         [HITGROUP_LEFTARM] = 0.9,
@@ -686,11 +686,11 @@ ATT.SpeedMultSights = 1.1
 
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMaxAdd = -1 -- from 40
-ATT.DamageMinAdd = 10 -- from 28
+ATT.DamageMaxAdd = -1 * 0.5 -- from 40
+ATT.DamageMinAdd = 10 * 0.5 -- from 28
 
 ATT.SweetSpot = true
-ATT.SweetSpotDamage = 65
+ATT.SweetSpotDamage = 65 * 0.5
 ATT.SweetSpotRange = 62.5 / ARC9.HUToM
 ATT.SweetSpotWidth = 50 / ARC9.HUToM
 ATT.SweetSpotPeak = 25 / ARC9.HUToM

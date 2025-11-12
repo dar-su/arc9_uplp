@@ -83,8 +83,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 14 -- Damage dealt after maximum range
+SWEP.DamageMax = 14
+SWEP.DamageMin = 11
 SWEP.DamageType = DMG_BULLET
 
 SWEP.Penetration = 18 -- Units of wood that can be penetrated
@@ -776,7 +776,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = "uplp_ar18_barrel",
-        -- DefaultIcon = Material(defatt2 .. "scarupper.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.5, 17),
         Ang = Angle(90, 90, 180),
@@ -793,7 +793,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = "uplp_ar18_stock",
-        DefaultIcon = Material(defatt2 .. "akstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 1.5, -5.25),
         Ang = Angle(90, 90, 180),

@@ -81,8 +81,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 96
-SWEP.DamageMin = 48
+SWEP.DamageMax = 30 -- 96
+SWEP.DamageMin = 25 -- 48
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -119,7 +119,7 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 2 / ARC9.HUToM
+SWEP.RangeMin = 1 / ARC9.HUToM
 SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
@@ -175,7 +175,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.035
+SWEP.Spread = 0.035 * 1.15
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.DispersionSpread = 0

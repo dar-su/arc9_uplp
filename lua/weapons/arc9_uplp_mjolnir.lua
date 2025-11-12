@@ -83,13 +83,13 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 70 -- Damage dealt point-blank
-SWEP.DamageMin = 70 -- Damage dealt after maximum range
+SWEP.DamageMax = 75 -- Damage dealt point-blank
+SWEP.DamageMin = 75 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 -- Lethal in one shot on 13 meters, falls under 100 dmg on >68 m
 SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 100
+SWEP.SweetSpotDamage = 140
 SWEP.SweetSpotRange = 70 / ARC9.HUToM
 SWEP.SweetSpotWidth = 110 / ARC9.HUToM
 SWEP.SweetSpotPeak = 25 / ARC9.HUToM
@@ -807,7 +807,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_mjolnir_barrel"},
-        DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "falbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.05, 0.633, 10),
         Ang = Angle(90, 90, 180),
@@ -863,7 +863,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = {"uplp_mjolnir_mag"},
-        DefaultIcon = Material(defatt2 .. "scarmag.png", "mips smooth"),
+        DefaultIcon = Material(defatt .. "mag_sniper.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),

@@ -84,8 +84,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25
-SWEP.DamageMin = 15
+SWEP.DamageMax = 14
+SWEP.DamageMin = 8
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -102,8 +102,8 @@ SWEP.Penetration = 12 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 12 / ARC9.HUToM
+SWEP.RangeMax = 60 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
@@ -795,7 +795,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_mp5_handguard"},
-        DefaultIcon = Material(defatt2 .. "scarbr.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "mp5front.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 6.5),
         Ang = Angle(90, 90, 180),
@@ -830,7 +830,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_mp5_stock"},
-        DefaultIcon = Material(defatt2 .. "mp7stock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "mp5stock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.35, -5),
         Ang = Angle(90, 90, 180),

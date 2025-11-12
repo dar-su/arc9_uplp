@@ -62,16 +62,18 @@ ATT.ActivateElements = {"uplp_ar15_barrel_mid"}
 -- Positives
 ATT.SpreadAdd = -0.0015
 ATT.RangeMaxAdd = 20 / ARC9.HUToM
-ATT.RangeMinAdd = 8 / ARC9.HUToM
-ATT.PhysBulletMuzzleVelocityMult = 1.08
-ATT.RecoilPerShot = 1 / 9
-ATT.RecoilMult = 0.925
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.PhysBulletMuzzleVelocityMult = 1.05
+ATT.RecoilPerShot = 1 / 5
+--ATT.RecoilMult = 0.925
+ATT.RecoilUpMult = 0.95
+ATT.RecoilSideMult = 0.95
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.0015 + 0.0015
 ATT.SpreadAddRecoil = 0.0015
-ATT.AimDownSightsTimeAdd = 0.01*2
-ATT.SprintToFireTimeAdd = 0.02*2
+ATT.AimDownSightsTimeAdd = 0.01 * 2
+ATT.SprintToFireTimeAdd = 0.02 * 2
 ATT.SpeedMultSights = 0.95
 ATT.RPMAdd = -25
 ATT.BarrelLengthAdd = 1
@@ -101,17 +103,18 @@ ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
 ATT.SpreadAdd = -0.0015
-ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RangeMaxAdd = 25 / ARC9.HUToM
 ATT.RangeMinAdd = 8 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.08
-ATT.RecoilPerShot = 1 / 9
-ATT.RecoilMult = 0.925
+ATT.RecoilPerShot = 1 / 6
+ATT.RecoilUpMult = 0.9
+ATT.RecoilSideMult = 0.9
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.0015 + 0.0015
 ATT.SpreadAddRecoil = 0.0015
-ATT.AimDownSightsTimeAdd = 0.01*2
-ATT.SprintToFireTimeAdd = 0.02*2
+ATT.AimDownSightsTimeAdd = 0.01 * 2
+ATT.SprintToFireTimeAdd = 0.02 * 2
 ATT.SpeedMultSights = 0.95
 ATT.RPMAdd = -25
 ATT.BarrelLengthAdd = 1
@@ -143,17 +146,18 @@ ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
 ATT.SpreadAdd = -0.002
-ATT.RangeMaxAdd = 35 / ARC9.HUToM
+ATT.RangeMaxAdd = 30 / ARC9.HUToM
 ATT.RangeMinAdd = 10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.RecoilPerShot = 1 / 10
-ATT.RecoilMult = 0.9
+ATT.RecoilUpMult = 0.875
+ATT.RecoilSideMult = 0.875
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.003 + 0.002
 ATT.SpreadAddRecoil = 0.003 * 0.75
-ATT.AimDownSightsTimeAdd = 0.02*1.25
-ATT.SprintToFireTimeAdd = 0.03*1.25
+ATT.AimDownSightsTimeAdd = 0.02 * 1.25
+ATT.SprintToFireTimeAdd = 0.03 * 1.25
 ATT.SpeedMultSights = 0.925
 ATT.RPMAdd = -30
 ATT.BarrelLengthAdd = 2
@@ -182,18 +186,20 @@ ATT.SortOrder = 16
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
+ATT.DamageMinAdd = 1
 ATT.SpreadAdd = -0.003
-ATT.RangeMaxAdd = 40 / ARC9.HUToM
+ATT.RangeMaxAdd = 30 / ARC9.HUToM
 ATT.RangeMinAdd = 15 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.15
 ATT.RecoilPerShot = 1 / 10
-ATT.RecoilMult = 0.85
+ATT.RecoilUpMult = 0.85
+ATT.RecoilSideMult = 0.85
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.003 + 0.003
 ATT.SpreadAddRecoil = 0.003 * 0.75
-ATT.AimDownSightsTimeAdd = 0.02*2
-ATT.SprintToFireTimeAdd = 0.03*2
+ATT.AimDownSightsTimeAdd = 0.02 * 2
+ATT.SprintToFireTimeAdd = 0.03 * 2
 ATT.SpeedMultSights = 0.9
 ATT.RPMAdd = -50
 ATT.BarrelLengthAdd = 2
@@ -260,18 +266,20 @@ ATT.SortOrder = 20
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
+ATT.DamageMinAdd = 2
 ATT.SpreadAdd = -0.004
-ATT.RangeMaxAdd = 80 / ARC9.HUToM
-ATT.RangeMinAdd = 30 / ARC9.HUToM
+ATT.RangeMaxAdd = 50 / ARC9.HUToM
+ATT.RangeMinAdd = 25 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.3
 ATT.RecoilPerShot = 1 / 15
-ATT.RecoilMult = 0.8
+ATT.RecoilUpMult = 0.75
+ATT.RecoilSideMult = 0.75
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.004 + 0.005
 ATT.SpreadAddRecoil = 0.004 * 0.5
-ATT.AimDownSightsTimeAdd = 0.03*2
-ATT.SprintToFireTimeAdd = 0.04*2
+ATT.AimDownSightsTimeAdd = 0.03 * 2
+ATT.SprintToFireTimeAdd = 0.04 * 2
 ATT.SpeedMultSights = 0.85
 ATT.RPMAdd = -100
 ATT.BarrelLengthAdd = 4
@@ -300,18 +308,20 @@ ATT.SortOrder = 22
 ATT.ActivateElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
 
 -- Positives
+ATT.DamageMinAdd = 3
 ATT.SpreadAdd = -0.006
-ATT.RangeMaxAdd = 120 / ARC9.HUToM
-ATT.RangeMinAdd = 40 / ARC9.HUToM
+ATT.RangeMaxAdd = 70 / ARC9.HUToM
+ATT.RangeMinAdd = 30 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.5
 ATT.RecoilPerShot = 1 / 18
-ATT.RecoilMult = 0.7
+ATT.RecoilUpMult = 0.675
+ATT.RecoilSideMult = 0.675
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.006 + 0.01
 ATT.SpreadAddRecoil = 0.006 * 0.25
-ATT.AimDownSightsTimeAdd = 0.04*2
-ATT.SprintToFireTimeAdd = 0.05*2
+ATT.AimDownSightsTimeAdd = 0.04 * 2
+ATT.SprintToFireTimeAdd = 0.05 * 2
 ATT.SpeedMultSights = 0.8
 ATT.RPMAdd = -150
 ATT.BarrelLengthAdd = 7

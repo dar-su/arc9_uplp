@@ -25,12 +25,12 @@ ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilAutoControlMult = 1.2
+ATT.AimDownSightsTimeMult = 0.92
+ATT.RecoilAutoControlMult = 1.14
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMultSights = 0.94
 
 ATT.ModelOffset = Vector(-1.5, 0, 0)
 
@@ -58,12 +58,12 @@ ATT.Category = "uplp_grip_horiz_cclamp"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.9
-ATT.RecoilAutoControlMult = 1.2
+ATT.AimDownSightsTimeMult = 0.92
+ATT.RecoilAutoControlMult = 1.14
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMultSights = 0.94
 
 ATT.ModelOffset = Vector(-1.5, 0, 0)
 
@@ -92,11 +92,11 @@ ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.9
 
 -- Negatives
-ATT.RecoilAutoControlMult = 0.8
+ATT.RecoilAutoControlMult = 0.85
+ATT.SwayMultSights = 1.3
 
 ATT.ModelOffset = Vector(-1, 0, 0)
 
@@ -126,11 +126,11 @@ ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.9
 
 -- Negatives
-ATT.RecoilAutoControlMult = 0.8
+ATT.RecoilAutoControlMult = 0.85
+ATT.SwayMultSights = 1.3
 
 ATT.ModelOffset = Vector(-1, 0, 0)
 
@@ -158,12 +158,11 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.95
-ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
+ATT.RecoilAutoControlMult = 1.15
 
 -- Negatives
-ATT.RecoilAutoControlMult = 0.85
+ATT.RecoilSideMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_grip_skelet")
 
@@ -191,12 +190,11 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.95
-ATT.AimDownSightsTimeMult = 0.85
 ATT.SprintToFireTimeMult = 0.9
+ATT.RecoilAutoControlMult = 1.15
 
 -- Negatives
-ATT.RecoilAutoControlMult = 0.85
+ATT.RecoilSideMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_grip_skelet_black")
 
@@ -223,9 +221,8 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.RecoilMult = 0.95
--- ATT.RecoilAutoControlMult = 1.2
+ATT.AimDownSightsTimeMult = 0.95
+ATT.RecoilAutoControlMult = 1.15
 
 -- Negatives
 ATT.SprintToFireTimeMult = 1.15
@@ -256,12 +253,14 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.8
 ATT.RecoilAutoControlMult = 1.2
+ATT.RecoilUpMult = 0.85
+ATT.RecoilSideMult = 0.85
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMultSights = 0.92
 
 ARC9.LoadAttachment(ATT, "uplp_grip_vert")
 
@@ -289,12 +288,13 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.8
+ATT.RecoilUpMult = 0.75
 ATT.RecoilAutoControlMult = 1.2
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.1
 ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMultSights = 0.92
 
 ARC9.LoadAttachment(ATT, "uplp_grip_classic")
 
@@ -322,12 +322,12 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeMult = 0.9
-ATT.RecoilMult = 0.95
--- ATT.RecoilAutoControlMult = 1.2
+ATT.AimDownSightsTimeMult = 0.95
+ATT.RecoilAutoControlMult = 1.15
 
 -- Negatives
-ATT.SprintToFireTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.08
+ATT.SpeedMultShooting = 0.92
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk0")
 
@@ -355,12 +355,13 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.8
+ATT.RecoilUpMult = 0.75
 ATT.RecoilAutoControlMult = 1.2
 
 -- Negatives
 ATT.AimDownSightsTimeMult = 1.05
 ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMultShooting = 0.92
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk1")
 
@@ -388,12 +389,15 @@ ATT.Category = "uplp_grip_vert"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.8
-ATT.RecoilAutoControlMult = 1.2
+ATT.RecoilUpMult = 0.85
+ATT.RecoilPerShotMultHipFire = 0.75
+ATT.RecoilAutoControlMult = 1.3
+ATT.RecoilAutoControlMultHipFire = 1.2
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.05
+ATT.AimDownSightsTimeMult = 1.15
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMultShooting = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_grip_rk45")
 
@@ -421,7 +425,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Bipod = true
 
 -- Negatives
-ATT.SprintToFireTimeAdd = 0.04
+ATT.SpeedMultSights = 0.96
 
 ATT.DrawFunc = function(self, model, wm)
 	if self:GetBipod() then
@@ -460,12 +464,13 @@ ATT.Category = "uplp_grip_horiz_long"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RecoilMult = 0.725
-ATT.RecoilAutoControlMult = 1.25
+ATT.RecoilAutoControlMult = 1.4
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.1
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeMult = 1.05
+ATT.SprintToFireTimeMult = 1.05
+ATT.SpeedMultSights = 0.95
+
 
 ATT.ModelOffset = Vector(0, -1.5, 0)
 ATT.ModelAngleOffset = Angle(90, 90, -90)

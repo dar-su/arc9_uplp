@@ -9,7 +9,7 @@ SWEP.UseHands = true
 SWEP.PrintName = "UPLP Weapon Base (If seen; what the fuck even?)"
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 1.85,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -109,3 +109,9 @@ SWEP.DistantShootVolumeActual = 0.05
 
 SWEP.DryFireSound = { ")uplp_rz/g36/alt/dryfire-01.ogg", ")uplp_rz/g36/alt/dryfire-02.ogg" }
 SWEP.DryFireDelay = 0.25
+
+-- For suppressors
+SWEP.HeatPerShot = 1
+SWEP.HeatLockout = false
+SWEP.MalfunctionWait = 0
+SWEP.HeatDissipation = 4

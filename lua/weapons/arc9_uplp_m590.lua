@@ -87,8 +87,8 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 200
-SWEP.DamageMin = 72
+SWEP.DamageMax = 70 -- 200
+SWEP.DamageMin = 40 -- 72
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -132,8 +132,8 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 1 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 2 / ARC9.HUToM
+SWEP.RangeMax = 35 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 450 / ARC9.HUToM
@@ -189,7 +189,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.032
+SWEP.Spread = 0.032 * 1.5
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
@@ -993,7 +993,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = {"uplp_m590_barrel"},
-        DefaultIcon = Material(defatt .. "barrel.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "sgbar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.1, 0, 5),
         Ang = Angle(90, 90, 180),
@@ -1022,7 +1022,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_handle"),
         Category = {"uplp_m590_handle"},
-        DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "pump.png", "mips smooth"),
         Bone = "pump",
         Pos = Vector(-0.1, -3.1, 3),
         Ang = Angle(90, 90, 180),
@@ -1030,7 +1030,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_m590_stock"},
-        DefaultIcon = Material(defatt2 .. "argrip.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "sgstock.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(-0.1, 1.5, -4.5),
         Ang = Angle(90, 90, 180),

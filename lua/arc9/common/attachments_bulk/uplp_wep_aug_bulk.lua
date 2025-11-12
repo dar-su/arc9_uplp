@@ -313,8 +313,8 @@ local stat9 = {
     SpreadAdd = 0.005,
     RPMAdd = -20,
     -- RecoilAdd = -0.5,
-    DamageMaxAdd = -2,
-    DamageMinAdd = -4,
+    DamageMaxAdd = -2 * 0.5,
+    DamageMinAdd = -4 * 0.5,
     RangeMaxMult = 0.4,
     RangeMinMult = 0.7,
     PhysBulletMuzzleVelocity = 370 / ARC9.HUToM,
@@ -442,10 +442,10 @@ ATT.SpeedMultSights = 1.1
 ATT.Ammo = "ar2"
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMinAdd = 6 -- from 14
+ATT.DamageMinAdd = 6 * 0.5 -- from 14
 
 ATT.SweetSpot = true
-ATT.SweetSpotDamage = 42
+ATT.SweetSpotDamage = 42 * 0.5
 ATT.SweetSpotRange = 60 / ARC9.HUToM
 ATT.SweetSpotWidth = 50 / ARC9.HUToM
 ATT.SweetSpotPeak = 20 / ARC9.HUToM

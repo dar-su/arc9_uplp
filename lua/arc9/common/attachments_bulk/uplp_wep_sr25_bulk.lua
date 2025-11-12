@@ -93,21 +93,26 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }
 
+ATT.DamageMaxAdd = -5
+ATT.DamageMinAdd = -3
 ATT.RecoilAdd = 0.75
 ATT.SpreadAdd = 0.004
-ATT.SpreadAddRecoil = 0.007
+ATT.SpreadAddRecoil = 0.003
+ATT.RecoilPerShotMult = 1.5
+ATT.RPMMult = 600 / 360
 
 ATT.Firemodes = {
     {
         Mode = -1, -- aut0
-        RPM = 600,
         PoseParam = 2,
 
-        RecoilRandomSideAdd = 0,
+        RecoilRandomSideAdd = 0.5,
     },
     {
         Mode = 1, -- Semi
         PoseParam = 1,
+        RPMMult = 450 / 600,
+        RecoilPerShotMult = 1 / 1.5,
     }
 }
 
@@ -215,6 +220,8 @@ ATT.ManualActionEjectAnyway = false
 ATT.NoShellEject = true
 ATT.CanReloadWhileUnCycled = true
 ATT.EjectDelay = 0.025
+ATT.DamageMaxMult = 1.2
+ATT.SpreadAddRecoil = 0.03
 
 ATT.RecoilMult = 0.9
 ATT.RecoilPerShot = 1 / 2
@@ -279,13 +286,7 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1.1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.03
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 1.1
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -982,10 +983,7 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
 
 ATT.Overheat = true
-ATT.HeatDissipation = 2 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
+ATT.HeatDissipationMult = 0.5
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)

@@ -83,8 +83,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25
-SWEP.DamageMin = 12
+SWEP.DamageMax = 25 * 0.8
+SWEP.DamageMin = 12 * 0.8
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -928,6 +928,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = {"uplp_m9_receiver"},
+        DefaultIcon = Material(defatt2 .. "pistol.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -1.25, 0.75),
         Ang = Angle(90, 0, -90),
@@ -962,6 +963,7 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
+        DefaultIcon = Material(defatt .. "mag_pistol.png", "mips smooth"),
         Category = {"uplp_m9_mag"},
         ExcludeElements = {"nomag"},
         Bone = "body",

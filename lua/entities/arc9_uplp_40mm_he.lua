@@ -5,7 +5,7 @@ AddCSLuaFile()
 ENT.Base = "arc9_uplp_riflegrenade"
 ENT.PrintName = "40mm HE"
 
-ENT.GrenadeDamage = 150
+ENT.GrenadeDamage = 97
 ENT.GrenadeRadius = 300
 ENT.DragCoefficient = 0.25
 ENT.FuseTimeMin = 0.075 -- Wont explode until it fly for x seconds

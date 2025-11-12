@@ -83,12 +83,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 14 -- Damage dealt after maximum range
+SWEP.DamageMax = 15
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 1.8,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -101,8 +101,8 @@ SWEP.Penetration = 15 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 2 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 60 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
+SWEP.RangeMax = 50 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -117,16 +117,16 @@ SWEP.ClipSize = 30
 
 -- Recoil
 SWEP.Recoil = 2
-SWEP.RecoilUp = 0.9
-SWEP.RecoilSide = 1.2
+SWEP.RecoilUp = 1.45
+SWEP.RecoilSide = 1.65
 
-SWEP.RecoilRandomUp = 0.8
-SWEP.RecoilRandomSide = 1.1
+SWEP.RecoilRandomUp = 0.6
+SWEP.RecoilRandomSide = 0.7
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 2.5
+SWEP.RecoilAutoControl = 2
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -184,7 +184,7 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.03
-SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilPerShot = 1 / 4
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 1

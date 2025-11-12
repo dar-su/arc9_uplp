@@ -86,17 +86,27 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 -- make sure ak12 matches this
-SWEP.DamageMax = 34
-SWEP.DamageMin = 18
+SWEP.DamageMax = 18
+SWEP.DamageMin = 15
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
 
 SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
 SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 90 / ARC9.HUToM
+SWEP.RangeMax = 70 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -415,8 +425,8 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chback_308.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward_308.ogg", t = 9 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_308.ogg", t = 4.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_308.ogg", t = 9 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 60, c = ca },
         },
         IKTimeLine = {
@@ -918,8 +928,8 @@ SWEP.Animations = {
             { s = pathUT .. "bonk.ogg", t = 10 / 30, c = ca, v = 1 },
             { s = pathRZ .. "magout.ogg", t = 11 / 30, c = ca, v = 1 },
             { s = pathUT .. "magin_308.ogg", t = 18 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chback_308.ogg", t = 36 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward_308.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chback_308.ogg", t = 36 / 30, c = ca, v = 0.8 },
+            { s = pathUT .. "chamber_308.ogg", t = 39.5 / 30, c = ca, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.29},

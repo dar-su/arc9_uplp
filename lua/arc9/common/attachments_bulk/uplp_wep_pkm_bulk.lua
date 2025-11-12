@@ -24,7 +24,7 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
 ATT.CustomPros = {
-	[	ARC9:GetPhrase("uplp_stat_suppressed")	] = " ",
+    [	ARC9:GetPhrase("uplp_stat_suppressed")	] = " ",
 }
 
 -- mp5sd stats placeholder
@@ -38,13 +38,24 @@ ATT.AimDownSightsTimeAdd = 0.03
 ATT.RPMMult = 0.875
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
-ATT.SpreadAddHot = 0.03
-ATT.RPMMultHot = 0.85
+--ATT.HeatCapacityMult = 1
+
+ATT.SpreadHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat + 0.018)
+end
+
+ATT.HeatDissipationHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    return Lerp(heat ^ 2, stat, stat * 2)
+end
+
+ATT.RPMHook = function(wep, stat)
+    local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+    if heat >= 0.5 then
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+    end
+end
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.25, 6, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.25, 0, 0) end
@@ -155,9 +166,9 @@ ATT.Attachments = {
         Category = {"uplp_optic_micro", "uplp_optic_small"},
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(-7, 0, -3.3),
-		Ang = Angle(0, 0, 0),
-		ExtraSightDistance = 4,
-		Installed = "uplp_optic_rmr",
+        Ang = Angle(0, 0, 0),
+        ExtraSightDistance = 4,
+        Installed = "uplp_optic_rmr",
         Integral = "uplp_optic_rmr",
     },
 }

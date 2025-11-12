@@ -28,8 +28,8 @@ ATT.ActivateElements = {"uplp_muzzle_used"}
 
 ATT.MuzzleDevice = true
 
-ATT.RecoilUpMult = 0.85
-ATT.RecoilSideMult = 1.2
+ATT.RecoilRandomUpMult = 0.85
+ATT.RecoilRandomSideMult = 1.1
 ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_3h")
@@ -88,12 +88,13 @@ ATT.MuzzleParticleOverride = "muzzleflash_1"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-ATT.RecoilRandomUpMult = 0.9
-ATT.RecoilRandomSideMult = 0.9
+ATT.RecoilRandomUpMult = 0.92
+ATT.RecoilRandomSideMult = 0.92
 
 ATT.BarrelLengthAdd = 1
 ATT.SpeedMultSights = 0.95
-
+ATT.SpeedMultShooting = 0.95
+ATT.AimDownSightsTimeAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_fat")
 
@@ -124,8 +125,9 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
 
-ATT.SpreadMult = 1.12
-ATT.RecoilMult = 0.95
+ATT.SpreadMultSights = 1.1
+ATT.RecoilRandomUpMult = 0.97
+ATT.RecoilRandomSideMult = 0.97
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_fhider")
 
@@ -158,10 +160,9 @@ ATT.MuzzleParticleOverride = "muzzleflash_ak74"
 ATT.MuzzleParticleOverride_Priority = 1
 ATT.MuzzleDevice = true
 
-ATT.RecoilUpMult = 1.2
-ATT.RecoilSideMult = 0.85
+ATT.RecoilRandomUpMult = 1.15
+ATT.RecoilRandomSideMult = 0.9
 
--- TODO Stats
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_slim")
 
@@ -343,10 +344,12 @@ ATT.MuzzleParticleOverride = "muzzleflash_m24"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 
-ATT.RecoilUpMult = 1.25
-ATT.RecoilSideMult = 0.7
+ATT.RecoilRandomSideMult = 0.82
+ATT.RecoilRandomUpMult = 0.96
 
-ATT.AimDownSightsTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SpeedMultSights = 0.9
+ATT.SpeedMultShooting = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_brake")
 
@@ -387,15 +390,10 @@ ATT.BarrelLengthAdd = 3
 ATT.SpreadMult = 1.1
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
+ATT.SpeedMultShooting = 1.1
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1.1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.03
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 1.1
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -457,15 +455,10 @@ ATT.RangeMaxMult = 0.85
 ATT.RecoilMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.04
 ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMultShooting = 1.1
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.05
--- ATT.RPMMultHot = 0.85
+--ATT.HeatCapacityMult = 1
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -523,22 +516,16 @@ ATT.CustomPros = {
 
 ATT.ShootVolumeMult = 0.8
 ATT.BarrelLengthAdd = 3
-ATT.RecoilRandomSideMult = 1.2
+ATT.RecoilRandomSideMult = 1.08
 ATT.AimDownSightsTimeAdd = 0.01
-ATT.SprintToFireTimeAdd = 0.01
+ATT.SpeedMultShooting = 1.1
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 0.8 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.05
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 0.7
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
-    return Lerp(heat ^ 2, stat, stat + 0.012)
+    return Lerp(heat ^ 2, stat, stat + 0.008)
 end
 
 ATT.HeatDissipationHook = function(wep, stat)
@@ -549,7 +536,7 @@ end
 ATT.RPMHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
     if heat >= 0.5 then
-        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.85)
+        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.9)
     end
 end
 
@@ -595,15 +582,10 @@ ATT.BarrelLengthAdd = 3
 ATT.RangeMaxMult = 0.9
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.02
+ATT.SpeedMultShooting = 1.1
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 0.8 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.04
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 0.8
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -662,18 +644,12 @@ ATT.ShootVolumeMult = 0.75
 
 ATT.BarrelLengthAdd = 2.5
 ATT.RangeMinMult = 0.5
-ATT.SpreadMult = 0.85
-ATT.AimDownSightsTimeAdd = 0.02
-ATT.SprintToFireTimeAdd = 0.02
+ATT.SpreadMult = 0.75
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SpeedMultShooting = 1.1
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 1 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.025
--- ATT.RPMMultHot = 0.85
+--ATT.HeatCapacityMult = 1
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -729,20 +705,14 @@ ATT.ShootVolumeMult = 0.8
 ATT.BarrelLengthAdd = 2
 ATT.RangeMaxMult = 0.75
 ATT.AimDownSightsTimeAdd = 0.01
-ATT.SprintToFireTimeAdd = 0.01
+ATT.SpeedMultShooting = 1.15
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
 
 ATT.Overheat = true
-ATT.HeatCapacityMult = 0.9 --
-ATT.HeatDissipation = 5 --
-ATT.HeatPerShot = 1
-ATT.HeatLockout = false
-ATT.MalfunctionWait = 0
--- ATT.SpreadAddHot = 0.05
--- ATT.RPMMultHot = 0.85
+ATT.HeatCapacityMult = 0.85
 
 ATT.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
@@ -790,9 +760,9 @@ ATT.ActivateElements = {"uplp_muzzle_used"}
 
 ATT.MuzzleDevice = true
 
-ATT.RecoilMult = 0.9
-ATT.RecoilRandomUpMult = 1.08
-ATT.RecoilRandomSideMult = 1.08
+ATT.RecoilAutoControlMult = 1.12
+ATT.RecoilRandomUpMult = 1.03
+ATT.RecoilRandomSideMult = 1.03
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_zenit")
 
@@ -853,6 +823,9 @@ ATT.ActivateElements = {"uplp_muzzle_used"}
 ATT.MuzzleDevice = true
 -- ATT.NoFlash = true
 
+ATT.RecoilAutoControlMult = 0.92
+ATT.RecoilRandomSideMult = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_muz_def")
 
 ---------- uplp_sr25_muz_fns
@@ -880,5 +853,7 @@ ATT.ActivateElements = {"uplp_muzzle_used"}
 -- ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 -- ATT.NoFlash = true
+ATT.RecoilAutoControlMult = 1.12
+ATT.RecoilRandomSideMult = 1.03
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_muz_fns")

@@ -85,12 +85,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 -- Damage dealt point-blank
-SWEP.DamageMin = 14 -- Damage dealt after maximum range
+SWEP.DamageMax = 14 -- Damage dealt point-blank
+SWEP.DamageMin = 12 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 1.75,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.9,
@@ -103,8 +103,8 @@ SWEP.Penetration = 15 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 2 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 40 / ARC9.HUToM
-SWEP.RangeMax = 120 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMax = 100 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 991 / ARC9.HUToM
@@ -119,11 +119,11 @@ SWEP.ClipSize = 30
 
 -- Recoil
 SWEP.Recoil = 2
-SWEP.RecoilUp = 0.95
-SWEP.RecoilSide = 0.75
+SWEP.RecoilUp = 0.85
+SWEP.RecoilSide = 0.85
 
 SWEP.RecoilRandomUp = 0.9
-SWEP.RecoilRandomSide = 1
+SWEP.RecoilRandomSide = 0.6
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
@@ -533,6 +533,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_out.ogg", t = 9 / 30, c = ca },
         },
@@ -542,6 +543,7 @@ SWEP.Animations = {
         MinProgress = 0.48,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_in.ogg", t = 8 / 30, c = ca },
         },
@@ -553,6 +555,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_out.ogg", t = 9 / 30, c = ca },
         },
@@ -562,6 +565,7 @@ SWEP.Animations = {
         MinProgress = 0.48,
         Mult = 0.85,
         EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "stock_grab.ogg", t = 0 / 30, c = ca },
             { s = pathRZ .. "stock_in.ogg", t = 4 / 30, c = ca },
         },
@@ -1070,7 +1074,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_barrel"),
         Category = "uplp_g36_barrel",
-        DefaultIcon = Material(defatt2 .. "arhg.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "g36bar.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.61485, 5),
         Ang = Angle(90, 90, 180),
@@ -1140,7 +1144,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = "uplp_g36_stock",
-        DefaultIcon = Material(defatt2 .. "arstock.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "g36stock.png", "mips smooth"),
         Bone = "stock",
         Pos = Vector(0.8, 0.53, -1.54),
         Ang = Angle(90, 90, 180),
@@ -1150,7 +1154,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = "uplp_g36_top",
-        DefaultIcon = Material(defatt2 .. "rec.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "g36top.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0, 0),
         Ang = Angle(90, 90, 180),

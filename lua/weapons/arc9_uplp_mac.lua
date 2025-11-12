@@ -83,8 +83,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 20
-SWEP.DamageMin = 10
+SWEP.DamageMax = 13
+SWEP.DamageMin = 7
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -102,7 +102,7 @@ SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 25 / ARC9.HUToM
+SWEP.RangeMax = 35 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 340 * 39.37
@@ -116,7 +116,7 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 32
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 1.25
 SWEP.RecoilUp = 0.9
 SWEP.RecoilSide = 1.3
 
@@ -152,8 +152,8 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.007
-SWEP.SpreadAddHipFire = 0.007
+SWEP.Spread = 0.009
+SWEP.SpreadAddHipFire = 0.02
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.004
@@ -961,6 +961,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_receiver"),
         Category = "uplp_mac_receiver",
+        DefaultIcon = Material(defatt2 .. "g36top.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 0.4, 3),
         Ang = Angle(90, 90, 180),
@@ -968,7 +969,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
         Category = "uplp_mac_mag",
-        DefaultIcon = Material(defatt2 .. "mp7mag.png", "mips smooth"),
+        DefaultIcon = Material(defatt2 .. "mp9mag.png", "mips smooth"),
         Bone = "mag",
         Pos = Vector(0, 0, -0.4),
         Ang = Angle(90, 90, 180),
