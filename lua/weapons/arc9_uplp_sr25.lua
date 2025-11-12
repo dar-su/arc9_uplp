@@ -84,8 +84,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 40 * 0.66
-SWEP.DamageMin = 28 * 0.62
+SWEP.DamageMax = 25
+SWEP.DamageMin = 18
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 
@@ -154,10 +154,10 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.002
+SWEP.Spread = 0.003
 SWEP.SpreadAddHipFire = 0.04
 
-SWEP.SpreadAddRecoil = 0.05
+SWEP.SpreadAddRecoil = 0.02
 SWEP.SpreadAddMove = 0.016
 SWEP.SpreadAddMidAir = 0.05
 
@@ -165,7 +165,7 @@ SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.015
+SWEP.RecoilResetTime = 0.018
 SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1

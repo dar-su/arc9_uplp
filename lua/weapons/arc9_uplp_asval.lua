@@ -118,8 +118,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 35 * 0.41
-SWEP.DamageMin = 18 * 0.41
+SWEP.DamageMax = 15
+SWEP.DamageMin = 12
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
 

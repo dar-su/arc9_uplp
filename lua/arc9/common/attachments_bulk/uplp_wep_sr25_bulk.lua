@@ -93,22 +93,26 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }
 
+ATT.DamageMaxAdd = -5
+ATT.DamageMinAdd = -3
 ATT.RecoilAdd = 0.75
 ATT.SpreadAdd = 0.004
-ATT.SpreadAddRecoil = 0.007
+ATT.SpreadAddRecoil = 0.003
+ATT.RecoilPerShotMult = 1.5
+ATT.RPMMult = 600 / 360
 
 ATT.Firemodes = {
     {
         Mode = -1, -- aut0
-        RPM = 600,
         PoseParam = 2,
 
         RecoilRandomSideAdd = 0.5,
-        DamageMaxMult = 0.75
     },
     {
         Mode = 1, -- Semi
         PoseParam = 1,
+        RPMMult = 450 / 600,
+        RecoilPerShotMult = 1 / 1.5,
     }
 }
 

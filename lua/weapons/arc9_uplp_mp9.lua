@@ -89,8 +89,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 * 0.55
-SWEP.DamageMin = 10 * 0.6
+SWEP.DamageMax = 14
+SWEP.DamageMin = 7
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -108,7 +108,7 @@ SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 8 / ARC9.HUToM
-SWEP.RangeMax = 24 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 400 * 39.37

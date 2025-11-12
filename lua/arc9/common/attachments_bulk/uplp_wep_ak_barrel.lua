@@ -232,10 +232,11 @@ ATT.RPMAdd = 50
 ATT.BarrelLengthAdd = -10
 
 -- Negatives
+ATT.DamageMinAdd = -2
 ATT.RecoilMult = 1.25
 ATT.SpreadAdd = 0.005
-ATT.RangeMaxAdd = -40 / ARC9.HUToM
-ATT.RangeMinAdd = -4 / ARC9.HUToM
+ATT.RangeMaxAdd = -30 / ARC9.HUToM
+ATT.RangeMinAdd = -5 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RecoilPerShot = 1 / 3.5
 
@@ -320,9 +321,10 @@ ATT.RPMAdd = 50
 ATT.BarrelLengthAdd = -3
 
 -- Negatives
+ATT.DamageMinAdd = -2
 ATT.RecoilMult = 1.3
 ATT.SpreadAdd = 0.0055
-ATT.RangeMaxAdd = -50 / ARC9.HUToM
+ATT.RangeMaxAdd = -20 / ARC9.HUToM
 ATT.RangeMinAdd = -5 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RecoilPerShot = 1 / 4
@@ -381,6 +383,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_ak_brl_rpk16", "ak12_part"}
 
 -- Positives
+ATT.DamageMinAdd = 1
 ATT.SpreadAdd = -0.002
 ATT.RangeMaxAdd = 30 / ARC9.HUToM
 ATT.RangeMinAdd = 5 / ARC9.HUToM

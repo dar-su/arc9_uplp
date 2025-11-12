@@ -89,8 +89,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 * 0.5
-SWEP.DamageMin = 18 * 0.5
+SWEP.DamageMax = 14
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.ArmorPiercing = 0.15 -- Fuck a Combine Helicopter Really Hard
@@ -110,7 +110,7 @@ SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 50 / ARC9.HUToM
+SWEP.RangeMax = 80 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
@@ -162,7 +162,7 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.05
+SWEP.Spread = 0.045
 SWEP.SpreadAddHipFire = 0
 
 SWEP.SpreadAddRecoil = -0.03

@@ -86,17 +86,27 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 -- make sure ak12 matches this
-SWEP.DamageMax = 34 * 0.5
-SWEP.DamageMin = 18 * 0.5
+SWEP.DamageMax = 18
+SWEP.DamageMin = 15
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
 
 SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
 SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 90 / ARC9.HUToM
+SWEP.RangeMax = 70 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -110,7 +120,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 30
 
 -- Recoil
-SWEP.Recoil = 2.5
+SWEP.Recoil = 2
 SWEP.RecoilUp = 1
 SWEP.RecoilSide = 0.7
 

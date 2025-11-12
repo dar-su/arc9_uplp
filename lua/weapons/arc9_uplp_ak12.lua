@@ -85,10 +85,20 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 -- This is actually the 7.62 statline
-SWEP.DamageMax = 34 * 0.5
-SWEP.DamageMin = 18 * 0.5
+SWEP.DamageMax = 18
+SWEP.DamageMin = 15
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET
+
+SWEP.BodyDamageMults = {
+    [HITGROUP_HEAD] = 2,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 0.9,
+    [HITGROUP_RIGHTARM] = 0.9,
+    [HITGROUP_LEFTLEG] = 0.5,
+    [HITGROUP_RIGHTLEG] = 0.5,
+}
 
 SWEP.Penetration = 18
 SWEP.ImpactForce = 4

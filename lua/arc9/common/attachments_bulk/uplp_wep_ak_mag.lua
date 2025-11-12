@@ -11,16 +11,15 @@ local stats545 = {
 
     -- Positives
     RPMAdd = 50,
-    RecoilPerShotMult = 0.75,
+    RecoilPerShotMult = 0.8,
     RecoilUpAdd = -0.3,
-    RangeMinAdd = 5 / ARC9.HUToM,
-    RangeMaxAdd = 30 / ARC9.HUToM,
+    RecoilSideAdd = -0.25,
     PhysBulletMuzzleVelocityMult = 1.25,
 
     -- Negatives
-    Spread = 0.005,
-    DamageMaxAdd = -6 * 0.5, -- from 34
-    DamageMinAdd = -5 * 0.5, -- from 18
+    SpreadAdd = 0.0012,
+    DamageMaxAdd = -3,
+    DamageMinAdd = -3, -- from 18
 
     BodyDamageMults = {
         [HITGROUP_HEAD] = 1.4,
@@ -44,17 +43,16 @@ local stats556 = {
     },
 
     -- Positives
-    RPMAdd = 50, -- The AK-101 (5.56mm) curiously still has a cyclic rate of 600RPM
+    RPMAdd = 75, -- The AK-101 (5.56mm) curiously still has a cyclic rate of 600RPM
     RecoilPerShotMult = 0.85,
-    RecoilUpAdd = -0.35,
+    RecoilUpAdd = -0.25,
     RecoilSideAdd = -0.1,
-    RangeMinAdd = 15 / ARC9.HUToM,
-    RangeMaxAdd = 40 / ARC9.HUToM,
     PhysBulletMuzzleVelocityMult = 1.3,
 
     -- Negatives
-    DamageMaxAdd = -8 * 0.5, -- from 34
-    DamageMinAdd = -4 * 0.5, -- from 18
+    SpreadAdd = 0.0008,
+    DamageMaxAdd = -3,
+    DamageMinAdd = -5,
 }
 
 local pathRZ = ")uplp_rz/ak/"

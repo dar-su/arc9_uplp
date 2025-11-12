@@ -118,11 +118,12 @@ ATT.SwayMultSights = 0.9
 ATT.RPMAdd = 40
 
 -- Negatives
+ATT.DamageMinAdd = -2
 ATT.SpreadAdd = 0.0035
 ATT.RecoilPerShot = 1 / 4
 ATT.RecoilAdd = 0.2
-ATT.RangeMinAdd = -20 / ARC9.HUToM
-ATT.RangeMaxAdd = -60 / ARC9.HUToM
+ATT.RangeMinAdd = -10 / ARC9.HUToM
+ATT.RangeMaxAdd = -40 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
@@ -158,11 +159,12 @@ ATT.RPMAdd = 40
 ATT.RecoilRandomUpMult = 0.9
 
 -- Negatives
+ATT.DamageMinAdd = -2
 ATT.SpreadAdd = 0.0035
 ATT.RecoilPerShot = 1 / 4
 ATT.RecoilAdd = 0.2
-ATT.RangeMinAdd = -20 / ARC9.HUToM
-ATT.RangeMaxAdd = -60 / ARC9.HUToM
+ATT.RangeMinAdd = -10 / ARC9.HUToM
+ATT.RangeMaxAdd = -40 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
@@ -187,18 +189,20 @@ ATT.ActivateElements = {"uplp_no_muzzle"}
 ATT.MuzzleEffectQCA = 7
 
 -- Positives
-ATT.RangeMinAdd = 40 / ARC9.HUToM
-ATT.RangeMaxAdd = 80 / ARC9.HUToM
+ATT.DamageMinAdd = 1
+ATT.RangeMinAdd = 20 / ARC9.HUToM
+ATT.RangeMaxAdd = 70 / ARC9.HUToM
 ATT.SpreadAdd = -0.0025
 ATT.RecoilPerShot = 1 / 10
 
 -- Negatives
 ATT.SwayAdd = 0.2
 ATT.SwayMultSights = 2
-ATT.RPMMult = 0.65
+ATT.RPMMult = 0.8
 ATT.RecoilResetTimeAdd = 0.02
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.08
+ATT.SpreadAddHipFire = 0.008
 
 ATT.Attachments = {
     {
@@ -335,6 +339,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- sharpshooter stock but more effective
 
 -- Positives
+ATT.DamageMaxAdd = 5
+ATT.DamageMinAdd = 1
+ATT.HeadshotDamageMult = 1.5
 ATT.RecoilAutoControlMult = 3
 ATT.VisualRecoilMultHipFire = 0.25
 ATT.SwayMultSights = 0.65
@@ -350,7 +357,11 @@ ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.08
 ATT.SpeedMultSights = 0.9
 ATT.SpeedAdd = -0.05
-ATT.SpreadAddHipFire = 0.01 + 0.018
+ATT.SpreadAddHipFire = 0.01 + 0.012
+
+
+ATT.RPMMult = 0.9
+ATT.RangeMaxAdd = -30 / ARC9.HUToM
 
 -- semi only
 -- :-)
