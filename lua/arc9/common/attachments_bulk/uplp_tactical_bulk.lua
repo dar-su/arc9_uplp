@@ -146,7 +146,7 @@ ATT.ToggleStats = {
         FlashlightAttachment = 1,
 
         RecoilDissipationRateMultHipFire = 1.15,
-        RecoilPerShotHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.75,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -192,7 +192,7 @@ ATT.ToggleStats = {
         FlashlightFOV = 25,
         FlashlightAttachment = 1,
 
-        RecoilPerShotHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.75,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
