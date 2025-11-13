@@ -84,8 +84,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 15
-SWEP.DamageMin = 10
+SWEP.DamageMax = 14
+SWEP.DamageMin = 7
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -103,7 +103,7 @@ SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 8 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMax = 50 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 420 * 39.37
@@ -118,16 +118,16 @@ SWEP.ClipSize = 30
 
 -- Recoil
 SWEP.Recoil = 2
-SWEP.RecoilUp = 0.6
-SWEP.RecoilSide = 0.85
+SWEP.RecoilUp = 0.55
+SWEP.RecoilSide = 0.35
 
-SWEP.RecoilRandomUp = 0.75
-SWEP.RecoilRandomSide = 0.75
+SWEP.RecoilRandomUp = 0.7
+SWEP.RecoilRandomSide = 0.55
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 0.95 * 1.5
+SWEP.RecoilAutoControl = 2
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -154,9 +154,9 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.006
-SWEP.SpreadAddHipFire = 0.027 - 0.01
+SWEP.SpreadAddHipFire = 0.028 - 0.01
 
-SWEP.SpreadAddRecoil = 0.01
+SWEP.SpreadAddRecoil = 0.012
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.05
 
@@ -165,11 +165,13 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 8
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 12
+SWEP.RecoilPerShot = 1 / 8
 
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 2 / 3
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 30

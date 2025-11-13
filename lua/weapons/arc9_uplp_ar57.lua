@@ -82,7 +82,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 14
-SWEP.DamageMin = 11
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -115,16 +115,16 @@ SWEP.ClipSize = 50
 
 -- Recoil
 SWEP.Recoil = 2
-SWEP.RecoilUp = 0.5
-SWEP.RecoilSide = 0.75
+SWEP.RecoilUp = 0.4
+SWEP.RecoilSide = 0.65
 
-SWEP.RecoilRandomUp = 0.65
-SWEP.RecoilRandomSide = 0.8
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 0.65
 
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 2 * 1.5
+SWEP.RecoilAutoControl = 2.5
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -160,12 +160,14 @@ SWEP.SpreadAddMidAir = 0.05
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.03
+SWEP.RecoilDissipationRate = 6
+SWEP.RecoilResetTime = 0.05
 SWEP.RecoilPerShot = 1 / 10
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 2 / 3
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- Weapon handling
 SWEP.Speed = 0.85 + 0.05 -- Walk speed multiplier

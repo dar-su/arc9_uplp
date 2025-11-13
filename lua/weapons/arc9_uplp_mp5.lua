@@ -102,8 +102,8 @@ SWEP.Penetration = 12 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 12 / ARC9.HUToM
-SWEP.RangeMax = 60 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
+SWEP.RangeMax = 65 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
@@ -154,7 +154,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.003
-SWEP.SpreadAddHipFire = 0.014
+SWEP.SpreadAddHipFire = 0.017
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.01
@@ -163,13 +163,15 @@ SWEP.SpreadAddMidAir = 0.1
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 8
+SWEP.RecoilDissipationRate = 6
 SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 10
+SWEP.RecoilPerShot = 1 / 8
 
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 2 / 3
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
 
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier

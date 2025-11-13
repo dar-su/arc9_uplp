@@ -309,6 +309,7 @@ ATT.SpreadAddHot = 0.012
 ATT.RPMMultHot = 0.9
 ATT.HeatCapacityMult = 0.75
 ATT.HeatDissipationMult = 1.25
+ATT.SpeedMultShooting = 1.1
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
@@ -331,18 +332,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 ATT.RecoilAdd = -0.1
-ATT.RecoilPerShot = 1 / 14
+ATT.RecoilPerShot = 1 / 7
 ATT.SpreadAddRecoil = -0.01
 ATT.RangeMinAdd = 3 / ARC9.HUToM
 ATT.RangeMaxAdd = 6 / ARC9.HUToM
+ATT.SpeedMultShooting = 1.1
 
 -- Negatives
+ATT.RecoilSideMult = 1.15
 ATT.SpreadAddHipFire = 0.008
 ATT.SprintToFireTimeAdd = 0.03
-ATT.AimDownSightsTimeAdd = 0.05
-ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SwayMultSights = 2
 ATT.SpeedMultSights = 0.85
-ATT.SpeedAdd = -0.015
+ATT.SpeedAdd = -0.01
 
 ATT.MuzzleEffectQCA = 6
 
@@ -373,20 +376,20 @@ ATT.Category = "uplp_mp9_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.DamageMinMult = 1.1
+ATT.DamageMinAdd = 1
 ATT.RecoilAdd = -0.15
-ATT.RecoilPerShot = 1 / 10
+ATT.RecoilPerShot = 1 / 8
 ATT.SpreadAdd = -0.002
 ATT.SpreadAddRecoil = -0.002
-ATT.RangeMaxAdd = 11 / ARC9.HUToM
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMMult = 0.9
-ATT.SpreadAddHipFire = 0.006
+ATT.SpreadAddHipFire = 0.01
 ATT.SpreadAddMove = 0.002
-ATT.SprintToFireTimeAdd = 0.02
-ATT.AimDownSightsTimeAdd = 0.04
-ATT.SwayAddSights = 1
+ATT.SprintToFireTimeAdd = 0.04
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SwayMultSights = 1.5
 ATT.SpeedMultSights = 0.92
 ATT.SpeedAdd = -0.01
 

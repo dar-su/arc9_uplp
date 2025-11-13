@@ -83,8 +83,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 13
-SWEP.DamageMin = 7
+SWEP.DamageMax = 12
+SWEP.DamageMin = 5
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -101,8 +101,8 @@ SWEP.Penetration = 30 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 35 / ARC9.HUToM
+SWEP.RangeMin = 6 / ARC9.HUToM
+SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 340 * 39.37
@@ -153,7 +153,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.009
-SWEP.SpreadAddHipFire = 0.02
+SWEP.SpreadAddHipFire = 0.012
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.004
@@ -162,13 +162,15 @@ SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 8
+SWEP.RecoilDissipationRate = 6
 SWEP.RecoilResetTime = 0.02
 SWEP.RecoilPerShot = 1 / 7
 
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 2 / 3
+SWEP.RecoilModifierCapSights = 1
+
+SWEP.RecoilPerShotMultSights = 0.5
 
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier

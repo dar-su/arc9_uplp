@@ -205,14 +205,17 @@ ATT.Category = "uplp_ak_barrel_smg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.3
+ATT.RangeMinAdd = 4 / ARC9.HUToM
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
+ATT.RecoilPerShot = 1 / 9
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.1
-ATT.BarrelLengthAdd = 5
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAd = 0.02
+ATT.SwayMultSights = 1.3
+ATT.SpreadAddHipFire = 0.006
+ATT.BarrelLengthAdd = 4
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
@@ -243,13 +246,16 @@ ATT.Attachments = {
 }
 
 -- Positives
-ATT.RangeMaxMult = 1.2
-ATT.RangeMinMult = 1.3
-ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.RangeMinAdd = 6 / ARC9.HUToM
+ATT.RangeMaxAdd = 20 / ARC9.HUToM
+ATT.RecoilPerShot = 1 / 9.5
+ATT.PhysBulletMuzzleVelocityMult = 1.12
 
 -- Negatives
-ATT.AimDownSightsTimeMult = 1.15
-ATT.SprintToFireTimeMult = 1.1
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAd = 0.04
+ATT.SwayMultSights = 1.5
+ATT.SpreadAddHipFire = 0.008
 ATT.BarrelLengthAdd = 5
 
 ATT.ActivateElements = {

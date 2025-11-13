@@ -346,14 +346,15 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 -- Positives
+ATT.DamageMinAdd = 1
 ATT.RecoilAdd = -0.15
 ATT.RecoilPerShot = 1 / 12
 ATT.SpreadAdd = -0.0015
 ATT.RangeMinAdd = 3 / ARC9.HUToM
-ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
 
 -- Negatives
-ATT.RPMMult = 0.9
+ATT.RPMMult = 0.85
 ATT.SpreadAddHipFire = 0.01
 ATT.SprintToFireTimeAdd = 0.02
 ATT.AimDownSightsTimeAdd = 0.04
@@ -389,6 +390,7 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
 -- Positives
+ATT.DamageMinAdd = 1
 ATT.RecoilAdd = -0.1
 ATT.RecoilPerShot = 1 / 8
 ATT.SpreadAddRecoil = -0.01
@@ -455,6 +457,7 @@ ATT.ToggleStats = {
 }
 
 -- Positives
+ATT.DamageMinAdd = 1
 ATT.RecoilAdd = -0.1
 ATT.RecoilPerShot = 1 / 8
 ATT.SpreadAddRecoil = -0.01

@@ -22,11 +22,10 @@ ATT.MuzzleParticleOverride_Priority = 10
 
 -- Positives
 ATT.SpreadAddRecoil = -0.003
-ATT.RecoilMult = 0.8
+ATT.RecoilMult = 0.9
 ATT.ShootVolumeMult = 0.7
 
 -- Negatives
-ATT.RangeMaxAdd = -5 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 
