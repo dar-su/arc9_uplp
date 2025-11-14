@@ -2,7 +2,7 @@ $modelname "weapons\arc9\uplp\tac_grip_handstop.mdl"
  
 $bodygroup "owo" { // 0
 	studio "tac_grip_handstop.smd" // 0
-	studio "tac_grip_handstopb.smd" // 0
+	studio "tac_grip_handstop_blk.smd" // 0
 }   
 
 $cdmaterials "models\weapons\arc9\uplp"
@@ -19,6 +19,7 @@ $cbox 0 0 0 0 0 0
 
 $sequence "idle" {
 	"anims\lhik_flat.smd"
+	angles 0 0 -90
 	fps 30
 	snap
 }

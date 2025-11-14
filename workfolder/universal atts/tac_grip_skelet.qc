@@ -2,7 +2,7 @@ $modelname "weapons\arc9\uplp\tac_grip_skelet.mdl"
  
 $bodygroup "owo" { // 0
 	studio "tac_grip_skelet.smd" // 0
-	studio "tac_grip_skeletb.smd" // 0
+	studio "tac_grip_skelet_blk.smd" // 0
 }   
 
 $cdmaterials "models\weapons\arc9\uplp"
