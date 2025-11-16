@@ -83,7 +83,7 @@ ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.015
 ATT.SpeedMultSights = 1.05
-ATT.SwayAddSights = -1
+ATT.SwayAddSights = -0.5
 ATT.SpreadAddHipFire = -0.01
 ATT.SpreadAddMove = -0.003
 ATT.SpreadAddRecoil = 0
@@ -203,6 +203,7 @@ ATT.Attachments = {
 
 -- AR15 stocks reduce too much recoil so this is to counterbalance them
 ATT.RecoilAdd = 0.25
+ATT.SwayAddSights = 0.5
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
@@ -230,7 +231,7 @@ ATT.VisualRecoilMultHipFire = 0.5
 
 -- Buffer Tube stats
 ATT.RecoilAdd = -0.55
-ATT.SwayAddSights = -1
+ATT.SwayAddSights = -0.5
 ATT.AimDownSightsTimeAdd = 0.1 - 0.02
 ATT.SprintToFireTimeAdd = 0.1 - 0.03
 ATT.SpeedMultSights = 0.85 + 0.1
@@ -262,11 +263,10 @@ ATT.VisualRecoilMultHipFire = 0.5
 
 -- Buffer Tube stats
 ATT.RecoilAdd = -0.45
-ATT.SwayAddSights = -1
+ATT.SwayAddSights = -0.5
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.03
 ATT.SpeedMultSights = 0.95
-ATT.SpeedAdd = -0.05 + 0.03
 
 ATT.ToggleStats = {
     {
@@ -278,10 +278,11 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_mp5_stock_col_f"},
-        AimDownSightsTimeAdd = -0.04,
-        SprintToFireTimeAdd = -0.03,
-        RecoilAdd = 0.3,
-        SpreadAddHipFire = -0.005,
+        AimDownSightsTimeAdd = -0.03,
+        SprintToFireTimeAdd = -0.02,
+        RecoilAdd = 0.15,
+        RecoilAutoControlMult = 1 / 1.2,
+        SpeedMultSights = 1 / 0.95,
     },
 }
 
@@ -308,7 +309,7 @@ ATT.VisualRecoilMultHipFire = 0.35
 
 -- Buffer Tube stats
 ATT.RecoilAdd = -0.7
-ATT.SwayAddSights = -1
+ATT.SwayAddSights = -0.5
 ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1
 ATT.SpeedMultSights = 0.85
@@ -348,7 +349,7 @@ ATT.SpreadAddHipFire = 0.012
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.07
 ATT.DeployTimeMult = 1.25
-ATT.SwayAddSights = 0.15
+ATT.SwayAddSights = 0.3
 ATT.SwayMultSights = 1.25
 ATT.SpeedAdd = -0.025
 ATT.SpeedMultSights = 0.8

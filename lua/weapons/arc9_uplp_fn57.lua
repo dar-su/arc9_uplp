@@ -81,8 +81,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 * 0.8
-SWEP.DamageMin = 16 * 0.8
+SWEP.DamageMax = 18
+SWEP.DamageMin = 12
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -99,7 +99,7 @@ SWEP.Penetration = 40 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
 SWEP.RangeMax = 50 / ARC9.HUToM
 
 -- Physical Bullets
@@ -150,27 +150,22 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.0035
-SWEP.SpreadAddHipFire = 0.0105
+SWEP.Spread = 0.003
+SWEP.SpreadAddHipFire = 0.012
 
 SWEP.SpreadAddRecoil = 0.011
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
--- Intensify recoil-induced spread when hipfiring
-local additionalHipFireRecoilSpread = 0.018
-SWEP.SpreadHookHipFire = function(wep, data)
-    local sightAmt = wep:GetSightAmount()
-    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
-    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
-end
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.75
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 4
 SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 5
+SWEP.RecoilPerShot = 1 / 7
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
@@ -186,7 +181,7 @@ SWEP.AimDownSightsTime = 0.2
 SWEP.SprintToFireTime = 0.18
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot
+SWEP.RPM = 440 -- How fast gun shoot
 SWEP.HeatCapacity = 50 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
@@ -194,6 +189,8 @@ SWEP.Num = 1 -- How many bullets shot at once
 SWEP.Firemodes = {
     { Mode = 1 }, -- Semi
 }
+
+SWEP.SwayMultSights = 1.25
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120

@@ -115,3 +115,17 @@ SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 SWEP.MalfunctionWait = 0
 SWEP.HeatDissipation = 4
+
+SWEP.RecoilMax = 1
+SWEP.HipfireBloomAmplification = 0
+SWEP.SpreadHookHipFire = function(wep, data)
+    local mult = wep:GetValue("HipfireBloomAmplification")
+    if (mult or 0) > 0 and not wep.UPLP_SPREADADD then
+        wep.UPLP_SPREADADD = true -- anti infinite recursion
+        local addSpread = wep:GetValue("Spread", 0, "HipFire")
+        local sightAmt = wep:GetSightAmount()
+        local rec = math.Clamp(wep:GetRecoilAmount() / (wep:GetProcessedValue("RecoilMax", true) or 1), 0, 1)
+        wep.UPLP_SPREADADD = nil
+        return Lerp(1 - sightAmt, data, data + addSpread * rec * mult)
+    end
+end

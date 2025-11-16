@@ -23,7 +23,7 @@ ATT.ClipSizeOverride = 27
 -- ATT.DropMagazineTime = 0.733
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/fn57_mag_ext.mdl"
 
-ATT.SwayAddSights = 0.5
+ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.06
 ATT.SpeedSightsMult = 0.92

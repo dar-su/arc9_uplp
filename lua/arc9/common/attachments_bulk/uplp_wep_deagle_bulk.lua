@@ -17,7 +17,7 @@ ATT.ClipSizeOverride = 13
 ATT.DropMagazineTime = 0.733
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/deagle_mag_ext.mdl"
 
-ATT.SwayAddSights = 0.5
+ATT.SwayAddSights = 0.4
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.06
 ATT.SpeedSightsMult = 0.92
@@ -163,12 +163,15 @@ ATT.ActivateElements = {"nomuz", "notac"}
 
 ATT.SpreadAdd = -0.005
 ATT.SpreadAddRecoil = -0.0025
-ATT.SpreadAddHipFire = 0.01
 ATT.AimDownSightsTimeMult = 1.35
 ATT.RecoilMult = 0.9
 ATT.RecoilSideMult = 0.65
 ATT.RecoilAutoControlMult = 1.25
 ATT.BarrelLengthAdd = 2
+ATT.RPMMult = 0.85
+ATT.SwayMultSights = 1.1
+ATT.SpreadAddHipFire = 0.004
+ATT.RangeMaxAdd = 15 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
@@ -212,6 +215,10 @@ ATT.RecoilMult = 0.75
 ATT.RecoilSideMult = 1.35
 ATT.RecoilAutoControlMult = 0.8
 ATT.BarrelLengthAdd = 2
+ATT.RPMMult = 0.9
+ATT.SwayMultSights = 1.1
+ATT.SpreadAddHipFire = 0.0022
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end

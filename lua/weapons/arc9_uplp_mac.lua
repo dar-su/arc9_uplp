@@ -116,7 +116,7 @@ SWEP.ChamberSize = 0
 SWEP.ClipSize = 32
 
 -- Recoil
-SWEP.Recoil = 1.25
+SWEP.Recoil = 1.5
 SWEP.RecoilUp = 0.9
 SWEP.RecoilSide = 1.3
 
@@ -153,7 +153,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.009
-SWEP.SpreadAddHipFire = 0.012
+SWEP.SpreadAddHipFire = 0.01
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.004
@@ -162,15 +162,18 @@ SWEP.SpreadAddMidAir = 0.03
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 6
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 7
+SWEP.RecoilDissipationRate = 4
+SWEP.RecoilResetTime = 0.03
+SWEP.RecoilPerShot = 1 / 9
 
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 1
 
-SWEP.RecoilPerShotMultSights = 0.5
+SWEP.RecoilPerShotMultSights = 0.75
+
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier

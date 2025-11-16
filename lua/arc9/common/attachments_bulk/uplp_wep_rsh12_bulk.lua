@@ -3,16 +3,20 @@
 local iconfolder = "entities/uplp_attachements/rsh12/"
 
 local stats_rshlbar = {
-    RangeMinAdd = 10 / ARC9.HUToM,
+    -- RangeMinAdd = 10 / ARC9.HUToM,
     RangeMaxAdd = 40 / ARC9.HUToM,
-    SpreadMult = 0.25,
+    SpreadMult = 0.5,
     AimDownSightsTimeAdd = 0.03,
     SprintToFireTimeAdd = 0.02,
-    RecoilAdd = -0.4,
+    RecoilUpMult = 0.85,
     RPMMult = 0.85,
     SpreadAddHipFire = 0.03,
     DeployTimeMult = 1.25,
     PhysBulletMuzzleVelocityMult = 1.2,
+    SwayAddSights = 0.5,
+    BarrelLengthAdd = 10,
+    SpeedAdd = -0.02,
+    SpeedMultShooting = 0.8,
 }
 
 local ATT = {}
@@ -119,9 +123,9 @@ ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
 ATT.Category = "uplp_rsh12_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.SwayMultSights = 1 / 1.5
-ATT.AimDownSightsTimeAdd = -0.01
-ATT.RecoilPerShotMult = 1.2
+ATT.SwayMultSights = 0.9
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.RecoilMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_rsh12_grip_tac")
 
@@ -139,13 +143,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, 6, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
 
-ATT.SwayMultSights = 1 / 1.5
+ATT.SwayAddSights = -0.5
+ATT.SwayMultSights = 0.75
 ATT.SpreadAddRecoil = -0.01
 ATT.RecoilAddRecoil = -0.15
-ATT.RecoilRandomSideAddRecoil = -1
+ATT.RecoilRandomSideAddRecoil = -0.5
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.05
-ATT.SpeedMultSights = 0.6
+ATT.SpeedAddSights = -0.25
 ATT.SpreadAddHipFire = 0.01
 
 ARC9.LoadAttachment(ATT, "uplp_rsh12_grip_stock")
@@ -173,10 +178,9 @@ ATT.MuzzleDevice = true
 ATT.BarrelLengthAdd = 6
 ATT.ShootVolumeMult = 0.8
 
-ATT.RecoilAdd = -0.8
 ATT.AimDownSightsTimeAdd = 0.04
 ATT.SprintToFireTimeAdd = 0.03
-ATT.SpeedMultAdd = -0.02
+ATT.SpeedMultShooting = 1.12
 ATT.RPMMult = 0.9
 ATT.SwayMultSights = 1.5
 

@@ -83,8 +83,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25 * 0.8
-SWEP.DamageMin = 12 * 0.8
+SWEP.DamageMax = 20
+SWEP.DamageMin = 8
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -101,7 +101,7 @@ SWEP.Penetration = 12 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 4 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 6 / ARC9.HUToM
+SWEP.RangeMin = 15 / ARC9.HUToM
 SWEP.RangeMax = 45 / ARC9.HUToM
 
 -- Physical Bullets
@@ -159,13 +159,8 @@ SWEP.SpreadAddRecoil = 0.01
 SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.05
 
--- Intensify recoil-induced spread when hipfiring
-local additionalHipFireRecoilSpread = 0.017
-SWEP.SpreadHookHipFire = function(wep, data)
-    local sightAmt = wep:GetSightAmount()
-    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
-    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
-end
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 2
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
@@ -194,6 +189,8 @@ SWEP.Num = 1 -- How many bullets shot at once
 SWEP.Firemodes = {
     { Mode = 1 }, -- Semi
 }
+
+SWEP.SwayMultSights = 1.25
 
 SWEP.ShootPitch = 100
 SWEP.ShootVol = 110

@@ -13,10 +13,10 @@ ATT.SortOrder = 1
 
 ATT.Icon = Material(iconfolder .. "compact.png", "mips smooth")
 
-ATT.RangeMaxAdd = -5 / ARC9.HUToM
+ATT.RangeMaxAdd = -10 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = -0.07
-ATT.RecoilMult = 1.3
-ATT.SpreadAddHipFire = -0.004
+ATT.RecoilMult = 1.15
+ATT.SpreadAddHipFire = -0.0015
 ATT.RecoilPerShotMultHipFire = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.9
 
@@ -41,7 +41,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RangeMaxAdd = 5 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = 0.03
-ATT.SpreadAddHipFire = 0.0028
+ATT.SpreadAddHipFire = 0.001
 ATT.PhysBulletMuzzleVelocityMult = 1.05
 ATT.SpreadAdd = -0.0008
 ATT.SpreadAddRecoil = -0.002
@@ -66,7 +66,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.RangeMinAdd = 4 / ARC9.HUToM
 ATT.RangeMaxAdd = 10 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = 0.05
-ATT.SpreadAddHipFire = 0.0055
+ATT.SpreadAddHipFire = 0.0016
 ATT.PhysBulletMuzzleVelocityMult = 1.1
 ATT.SpreadAdd = -0.0015
 ATT.SpreadAddRecoil = -0.0035
@@ -163,7 +163,7 @@ ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.06
 ATT.SpeedSightsMult = 0.92
-ATT.SpreadAddHipFire = 0.003
+ATT.SpreadAddHipFire = 0.0015
 ATT.DeployTimeMult = 1.25
 
 ATT.Hook_TranslateAnimation = function(wep, anim)

@@ -86,12 +86,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 56 * 0.65
-SWEP.DamageMin = 22 * 0.65
+SWEP.DamageMax = 40
+SWEP.DamageMin = 20
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.8,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1.0,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -121,11 +121,11 @@ SWEP.ClipSize = 7
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 5
-SWEP.RecoilSide = 4
+SWEP.RecoilUp = 4
+SWEP.RecoilSide = 2.5
 
 SWEP.RecoilRandomUp = 0.7
-SWEP.RecoilRandomSide = 3
+SWEP.RecoilRandomSide = 2.4
 
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
@@ -157,26 +157,21 @@ SWEP.VisualRecoilMultHipFire = 1
 
 -- Accuracy and Spread
 SWEP.Spread = 0.008
-SWEP.SpreadAddHipFire = 0.012
+SWEP.SpreadAddHipFire = 0.01
 
-SWEP.SpreadAddRecoil = 0.025
+SWEP.SpreadAddRecoil = 0.022
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.05
 
--- Intensify recoil-induced spread when hipfiring
-local additionalHipFireRecoilSpread = 0.01
-SWEP.SpreadHookHipFire = function(wep, data)
-    local sightAmt = wep:GetSightAmount()
-    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
-    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
-end
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 1.25
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 3
+SWEP.RecoilDissipationRate = 2.5
 SWEP.RecoilResetTime = 0
-SWEP.RecoilPerShot = 1 / 2.5
+SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
@@ -192,13 +187,15 @@ SWEP.AimDownSightsTime = 0.25 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
-SWEP.RPM = 280 -- How fast gun shoot
+SWEP.RPM = 250 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
 SWEP.Firemodes = {
     { Mode = 1 }, -- Semi
 }
+
+SWEP.SwayMultSights = 1.5
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120

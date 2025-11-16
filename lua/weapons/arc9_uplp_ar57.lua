@@ -151,14 +151,17 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.028 - 0.01
+SWEP.SpreadAddHipFire = 0.022 - 0.01
 
-SWEP.SpreadAddRecoil = 0.014
-SWEP.SpreadAddMove = 0.018
+SWEP.SpreadAddRecoil = 0.012
+SWEP.SpreadAddMove = 0.009
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
+
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.2
 
 SWEP.RecoilDissipationRate = 6
 SWEP.RecoilResetTime = 0.05

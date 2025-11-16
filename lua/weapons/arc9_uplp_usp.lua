@@ -82,8 +82,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 34 * 0.75
-SWEP.DamageMin = 12 * 0.75
+SWEP.DamageMax = 25
+SWEP.DamageMin = 8
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -100,7 +100,7 @@ SWEP.Penetration = 40 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
 SWEP.RangeMax = 35 / ARC9.HUToM
 
 -- Physical Bullets
@@ -158,13 +158,8 @@ SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.003
 SWEP.SpreadAddMidAir = 0.05
 
--- Intensify recoil-induced spread when hipfiring
-local additionalHipFireRecoilSpread = 0.016
-SWEP.SpreadHookHipFire = function(wep, data)
-    local sightAmt = wep:GetSightAmount()
-    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
-    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
-end
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 2
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
@@ -188,7 +183,7 @@ SWEP.AimDownSightsTime = 0.2
 SWEP.SprintToFireTime = 0.18
 
 -- Shooting and Firemodes
-SWEP.RPM = 400 -- How fast gun shoot
+SWEP.RPM = 380 -- How fast gun shoot
 SWEP.HeatCapacity = 50 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
@@ -196,6 +191,8 @@ SWEP.Num = 1 -- How many bullets shot at once
 SWEP.Firemodes = {
     { Mode = 1 }, -- Semi
 }
+
+SWEP.SwayMultSights = 1.25
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120

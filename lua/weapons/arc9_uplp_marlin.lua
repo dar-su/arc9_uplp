@@ -182,16 +182,22 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.075
+SWEP.SpreadAddHipFire = 0.03
 
 SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.03
 
-SWEP.RecoilDissipationRate = 10
-SWEP.RecoilResetTime = 0.4
-SWEP.RecoilPerShot = 1 / 4
+SWEP.RecoilDissipationRate = 2
+SWEP.RecoilResetTime = 0.44
+SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilModifierCap = 1
+SWEP.RecoilMax = 1
+
+SWEP.RecoilPerShotMultSights = 0.75
+
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.75
 
 -- Weapon handling
 SWEP.Speed = 0.8
@@ -204,6 +210,7 @@ SWEP.SprintToFireTime = 0.42
 SWEP.BarrelLength = 50
 
 SWEP.SwayMultSights = 0.75
+SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes
 SWEP.RPM = 360 -- How fast gun shoot

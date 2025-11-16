@@ -201,7 +201,8 @@ SWEP.BarrelLength = 60
 SWEP.AimDownSightsTime = 0.5
 SWEP.SprintToFireTime = 0.42
 
-SWEP.SwayMultSights = 0.75
+SWEP.SwayMultSights = 1.5
+SWEP.SwayMultMove = 8
 
 SWEP.ReloadInSights = false
 

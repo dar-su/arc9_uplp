@@ -185,7 +185,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp9_mag_50.mdl"
 ATT.DropMagazineTime = 0.7
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.008
+ATT.SpreadAddHipFire = 0.005
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
@@ -295,7 +295,7 @@ ATT.SpreadAddRecoil = -0.006
 ATT.RangeMinAdd = 2 / ARC9.HUToM
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.004
+ATT.SpreadAddHipFire = 0.002
 ATT.AimDownSightsTimeAdd = 0.03
 
 ATT.MuzzleEffectQCA = 5
@@ -340,7 +340,7 @@ ATT.SpeedMultShooting = 1.1
 
 -- Negatives
 ATT.RecoilSideMult = 1.15
-ATT.SpreadAddHipFire = 0.008
+ATT.SpreadAddHipFire = 0.005
 ATT.SprintToFireTimeAdd = 0.03
 ATT.AimDownSightsTimeAdd = 0.06
 ATT.SwayMultSights = 2
@@ -385,7 +385,7 @@ ATT.RangeMaxAdd = 10 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMMult = 0.9
-ATT.SpreadAddHipFire = 0.01
+ATT.SpreadAddHipFire = 0.006
 ATT.SpreadAddMove = 0.002
 ATT.SprintToFireTimeAdd = 0.04
 ATT.AimDownSightsTimeAdd = 0.06

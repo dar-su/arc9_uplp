@@ -190,7 +190,8 @@ SWEP.SprintToFireTime = 0.4
 
 SWEP.BarrelLength = 50
 
-SWEP.SwayMultSights = 0.75
+SWEP.SwayMultSights = 1
+SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes
 SWEP.RPM = 450 -- How fast gun shoot

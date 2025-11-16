@@ -96,8 +96,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 70 * 0.7
-SWEP.DamageMin = 36 * 0.7
+SWEP.DamageMax = 50
+SWEP.DamageMin = 30
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -111,12 +111,12 @@ SWEP.BodyDamageMults = {
 }
 
 
-SWEP.Penetration = 45 * 1.5 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 12 * 2 -- How much kick things will have when hit
+SWEP.Penetration = 45 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 12  -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 80 / ARC9.HUToM
+SWEP.RangeMin = 15 / ARC9.HUToM
+SWEP.RangeMax = 50 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 410 * 39.37
@@ -180,19 +180,13 @@ SWEP.SpreadAddRecoil = 0.025
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
--- Intensify recoil-induced spread when hipfiring
-local additionalHipFireRecoilSpread = 0.01
-SWEP.SpreadHookHipFire = function(wep, data)
-    local sightAmt = wep:GetSightAmount()
-    local rec = math.Clamp(wep:GetRecoilAmount() / wep:GetProcessedValue("RecoilMax", true), 0, 1) ^ 0.75
-    return Lerp(1 - sightAmt, data, data + additionalHipFireRecoilSpread * rec)
-end
-
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.5
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 2
+SWEP.RecoilDissipationRate = 3
 SWEP.RecoilResetTime = 0.1
 SWEP.RecoilPerShot = 1 / 2
 SWEP.RecoilModifierCap = 1
@@ -203,6 +197,7 @@ SWEP.RecoilPerShotMultSights = 0.75
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.8 -- When aiming
+SWEP.SpeedMultShooting = 0.75
 
 SWEP.SwayAddSights = 0
 SWEP.SwayMultSights = 1.5
@@ -230,9 +225,9 @@ SWEP.Firemodes = {
         RPM = 300,
         TriggerDelay = false,
         RecoilKickMult = 0.75,
-        RecoilResetTime = 0.2,
-        DamageMaxMult = 1.2,
+        RecoilResetTime = 0.22,
         RecoilDissipationRateMult = 0.5,
+        RangeMinAdd = 10 / ARC9.HUToM,
     },
 }
 

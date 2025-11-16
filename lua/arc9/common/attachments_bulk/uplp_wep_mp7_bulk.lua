@@ -22,8 +22,7 @@ ATT.ActivateElements = {"uplp_mp7_stock_folded"}
 -- Positives
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.03
-ATT.SpeedMultSights = 1.1
-ATT.SpreadAddHipFire = -0.004
+ATT.SpeedMultSights = 1.08
 
 -- Negatives
 ATT.RecoilAdd = 0.2
@@ -59,9 +58,9 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_20.mdl"
 ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.01
 ATT.SpeedAdd = 0.01
-ATT.SpeedMultSights = 1.1
-ATT.SwayMultSights = 0.8
-ATT.SpreadAddHipFire = -0.008
+ATT.SpeedMultSights = 1.05
+ATT.SwayMultSights = 0.85
+ATT.SpreadAddHipFire = -0.0035
 -- ATT.ReloadTimeMult = 0.9
 
 ATT.CustomPros = {
@@ -126,13 +125,13 @@ ATT.ModelOffset = Vector(-19, -2.4, 3.5)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
+ATT.Free = true
+
 -- Positives
-ATT.SprintToFireTimeAdd = -0.01
-ATT.AimDownSightsTimeAdd = -0.02
+ATT.AimDownSightsTimeAdd = -0.03
 ATT.DeployTimeMult = 0.85
 
 -- Negatives
-ATT.RecoilMult = 1.2
-ATT.RecoilAutoControlMult = 0.8
+ATT.RecoilAutoControlMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_grip_none")

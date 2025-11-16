@@ -206,19 +206,22 @@ ATT.SpeedMultSights = 1.1
 
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMaxAdd = 3 * 0.5 -- from 40
-ATT.DamageMinAdd = 9 * 0.5 -- from 28
-ATT.RangeMaxMult = 2
-ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.DamageMaxAdd = 5
+ATT.DamageMinAdd = 6
+ATT.RangeMaxAdd = 50 / ARC9.HUToM
+ATT.RangeMinAdd = 20 / ARC9.HUToM
 
 -- ATT.CustomPros = {
 --     [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
 -- }
 
 -- Negatives
-ATT.RPMAdd = -350
+ATT.RPMMult = 500 / 850
 ATT.RecoilUpAdd = 0.6
 ATT.RecoilSideAdd = 1.5
+ATT.RecoilPerShotMult = 1.25
+ATT.RecoilDissipationRateMult = 0.75
+ATT.HeatPerShotMult = 2
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty"  then return anim .. "_10" end

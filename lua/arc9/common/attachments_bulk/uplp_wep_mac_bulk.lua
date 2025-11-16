@@ -27,7 +27,7 @@ ATT.SprintToFireTimeAdd = 0.03
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+20%",
 [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-0.25",
-[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.sway") )] = "-1",
+[ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.sway") )] = "-0.7",
 }
 
 ATT.CustomCons = {
@@ -40,9 +40,9 @@ ATT.ToggleStats = {
         AimDownSightsTimeAdd = 0.03,
         RecoilAdd = -0.25,
         RecoilAutoControlMult = 1.2,
-        SwayAddSights = -1,
-		CustomizePosHook = function(wep, vec) return vec + Vector(-4, 4, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
+        SwayAddSights = -0.7,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-4, 4, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -69,7 +69,6 @@ ATT.ActivateElements = {"uplp_mac_stock_buffer"}
 
 -- AR15 stocks reduce too much recoil so this is to counterbalance them
 ATT.RecoilAdd = 0.5
-ATT.SpreadAddHipFire = 0.01
 
 ATT.Attachments = {
     {
@@ -142,11 +141,11 @@ ATT.CustomCons = {
 ATT.ClipSizeOverride = 50
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.008
+ATT.SpreadAddHipFire = 0.003
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.02
 ATT.DeployTimeMult = 1.15
-ATT.SwayMultSights = 1.1
+ATT.SwayAddSights = 0.2
 ATT.SpeedMultSights = 0.9
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -185,12 +184,13 @@ local stats45acp = {
 
     ActivePos = Vector(-0.5, 0.5, 0.2),
 
-    DamageMaxAdd = 10 * 0.5,
-    RangeMaxAdd = -10 / ARC9.HUToM,
-    RPM = 900,
+    DamageMaxAdd = 4,
+    DamageMinAdd = -1,
+    RPMMult = 900 / 1200,
     RecoilPerShotMult = 1.5,
-    RecoilUpAdd = 0.5,
-    RecoilSideAdd = 0.2,
+    RecoilUpAdd = 0.75,
+    RecoilSideAdd = 0.4,
+    RecoilRandomSideAdd = 0.2,
     PhysBulletMuzzleVelocityMult = 0.9,
     SpreadAdd = 0.003,
 
@@ -219,7 +219,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/mac10_mag.mdl"
 
 ATT.ClipSizeOverride = 30
 
-ATT.SpreadAddHipFire = 0.004
+ATT.SpreadAddHipFire = 0.001
 ATT.AimDownSightsTimeAdd = 0.04
 ATT.SprintToFireTimeAdd = 0.06
 
@@ -253,9 +253,14 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/mac10_mag_drum.mdl"
 
 ATT.ClipSizeOverride = 50
 
-ATT.SpreadAddHipFire = 0.008
-ATT.AimDownSightsTimeAdd = 0.06
-ATT.SprintToFireTimeAdd = 0.08
+ATT.SpreadAddHipFire = 0.006
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.07
+ATT.DeployTimeMult = 1.25
+ATT.SwayAddSights = 0.5
+ATT.SwayMultSights = 1.25
+ATT.SpeedAdd = -0.025
+ATT.SpeedMultSights = 0.8
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "+30%",
@@ -355,7 +360,7 @@ ATT.RangeMaxAdd = 15 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMMult = 0.85
-ATT.SpreadAddHipFire = 0.01
+ATT.SpreadAddHipFire = 0.004
 ATT.SprintToFireTimeAdd = 0.02
 ATT.AimDownSightsTimeAdd = 0.04
 ATT.SwayAddSights = 0.7
@@ -397,7 +402,7 @@ ATT.SpreadAddRecoil = -0.01
 ATT.RangeMaxAdd = 5 / ARC9.HUToM
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.008
+ATT.SpreadAddHipFire = 0.005
 ATT.SprintToFireTimeAdd = 0.03
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SwayAddSights = 0.7
@@ -464,7 +469,7 @@ ATT.SpreadAddRecoil = -0.01
 ATT.RangeMaxAdd = 5 / ARC9.HUToM
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.008
+ATT.SpreadAddHipFire = 0.005
 ATT.SprintToFireTimeAdd = 0.03
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SwayAddSights = 0.7
@@ -506,7 +511,7 @@ ATT.SpreadAddRecoil = -0.006
 ATT.RangeMinAdd = 2 / ARC9.HUToM
 
 -- Negatives
-ATT.SpreadAddHipFire = 0.004
+ATT.SpreadAddHipFire = 0.002
 ATT.AimDownSightsTimeAdd = 0.03
 
 ATT.MuzzleEffectQCA = 7
@@ -544,10 +549,10 @@ ATT.ActivateElements = {"uplp_mac_rec_long", "uplp_mac_rec_long_stick"}
 ATT.ExcludeElements = {"uplp_mac_mac10"}
 
 ATT.RecoilSideAdd = -0.2
-ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.04
 ATT.RecoilPerShotMult = 0.7
 ATT.RPMMult = 0.9
+ATT.SpeedAdd = -0.02
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 1.5, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end

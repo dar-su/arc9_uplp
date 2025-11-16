@@ -102,8 +102,8 @@ SWEP.Penetration = 12 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 65 / ARC9.HUToM
+SWEP.RangeMin = 15 / ARC9.HUToM
+SWEP.RangeMax = 75 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
@@ -127,7 +127,7 @@ SWEP.RecoilRandomSide = 0.5
 SWEP.RecoilRise = 0
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.25 * 1.5
+SWEP.RecoilAutoControl = 2
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -154,11 +154,11 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.003
-SWEP.SpreadAddHipFire = 0.017
+SWEP.SpreadAddHipFire = 0.014
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.01
-SWEP.SpreadAddMidAir = 0.1
+SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
@@ -173,12 +173,15 @@ SWEP.RecoilModifierCapSights = 1
 
 SWEP.RecoilPerShotMultSights = 0.75
 
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.75
+
 -- Weapon handling
 SWEP.SpeedMult = 0.97 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.75 -- When aiming
 SWEP.SpeedMultShooting = 0.85
 
-SWEP.SwayAddSights = 1 -- Either using Kurz handguard or any stock removes this
+SWEP.SwayAddSights = 0.5
 SWEP.BarrelLength = 28
 
 SWEP.AimDownSightsTime = 0.36 - 0.1
