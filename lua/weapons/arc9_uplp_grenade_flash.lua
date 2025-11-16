@@ -16,7 +16,7 @@ SWEP.DefaultBodygroups = "00000000000000000"
 
 SWEP.ShootEnt = "arc9_uplp_m84_thrown"
 SWEP.Ammo = "grenade"
-SWEP.FuseTimer = 3.0
+SWEP.FuseTimer = 2
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/skoba_m84.mdl" -- guh
 

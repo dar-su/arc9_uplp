@@ -26,7 +26,7 @@ SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
     [ string.sub(ARC9:GetPhrase( "uplp_animations" ), 1, -2) .. " & " .. ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
-    -- [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",  
+    -- [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
 SWEP.StandardPresets = {
@@ -69,7 +69,7 @@ SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 SWEP.AnimDraw = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
-SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE 
+SWEP.AnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_KNIFE
 
 SWEP.SprintPos = Vector(0, 0, 0)
 SWEP.SprintAng = Angle(0, 0, 0)
@@ -82,33 +82,41 @@ SWEP.VManipOffsetAng = Angle(0, -5, 4)
 ---- Weapon Stats and Behaviour
 SWEP.Bash = true
 SWEP.PrimaryBash = true
-SWEP.SecondaryBash = false
+SWEP.SecondaryBash = true
 SWEP.HasSights = false
 SWEP.NoAimAssist = true
-SWEP.CanLean = false 
-SWEP.Crosshair = false  
-SWEP.NotForNPCs = true   
-SWEP.CantSafety = true   
+SWEP.CanLean = false
+SWEP.Crosshair = false
+SWEP.NotForNPCs = true
+SWEP.CantSafety = true
 SWEP.SprintToFireTime = 0.5
 
 -- Damage
 SWEP.BashDamage = 50
 SWEP.BashDamageType = DMG_SLASH
+SWEP.Bash2Damage = 50
+SWEP.Bash2DamageType = DMG_SLASH
 
 -- Range
-SWEP.BashRange = 2 / ARC9.HUToM
-SWEP.BashLungeRange = 3 / ARC9.HUToM
+SWEP.BashRange = 80
+SWEP.Bash2Range = 80
+SWEP.BashLungeRange = 0
+SWEP.Bash2LungeRange = 2 / ARC9.HUToM
+SWEP.Bash2LungeRangeMultSprint = 2
+SWEP.Bash2LungeRangeMultMidAir = 0
 
 -- Timings
 SWEP.PreBashTime = 0.175
 SWEP.PostBashTime = 0.4
+SWEP.PreBash2Time = 0.175
+SWEP.PostBash2Time = 0.5
 
 -- Backstabbing
 SWEP.Backstab = true
-SWEP.BackstabDamage = 250
+SWEP.BackstabDamage = 150
 SWEP.BackstabRange = 2 / ARC9.HUToM
-SWEP.PreBackstabTime = 0.3
-SWEP.PostBackstabTime = 0.5
+SWEP.PreBackstabTime = 0.175
+SWEP.PostBackstabTime = 0.65
 SWEP.BackstabDamageType = DMG_SLASH
 
 -- Magazine Info
@@ -130,15 +138,15 @@ SWEP.SpreadMultMove = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
-SWEP.ShootWhileSprint = true 
-SWEP.BashWhileSprint = true 
+SWEP.ShootWhileSprint = true
+SWEP.BashWhileSprint = true
 
 -- Shooting and Firemodes
 
 SWEP.Firemodes = {
     { Mode = 1,
-		PrintName = "Swish Swosh",
-	}, -- Semi
+        PrintName = "Swish Swosh",
+    }, -- Semi
 }
 
 SWEP.ShootPitch = 100
@@ -216,21 +224,21 @@ SWEP.Animations = {
 
     ["idle_sprint"] = {
         Source = "sprint",
-		Mult = 0.90,
+        Mult = 0.90,
     },
     ["exit_sprint"] = {
         Source = "sprint_out",
-		Mult = 3.0,
+        Mult = 3.0,
     },
     ["enter_sprint"] = {
         Source = "sprint_in",
-		Mult = 3.0,
+        Mult = 3.0,
     },
-	
+
     ["bash"] = {
-        Source = {"swing1", "swing2", "swing3"},
-		Mult = 0.85,
-        
+        Source = {"swing2", "swing3"},
+        Mult = 0.85,
+
         MinProgress = 0.4,
         FireASAP = true,
 
@@ -239,6 +247,17 @@ SWEP.Animations = {
         },
     },
 
+    ["backstab"] = {
+        Source = "swing1",
+        Mult = 1,
+
+        MinProgress = 0.4,
+        FireASAP = true,
+
+        EventTable = {
+            { s = randcloth, t = 0.3 },
+        },
+    },
 
     -- ["ready"] = {
     --     Source = "ready",
@@ -274,7 +293,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.7,
-		Mult = 0.8,
+        Mult = 0.8,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -304,7 +323,7 @@ SWEP.Animations = {
 --     local mdl = data.model
 
     -- if eles["uplp_m9_mag_20"] then mdl:SetBodygroup(2, 2) end
-	
+
 -- end
 
 SWEP.AttachmentElements = {
@@ -356,11 +375,11 @@ SWEP.Attachments = {
         Bone = "charmbone",
         Pos = Vector(0, 0, 0),
         Ang = Angle(-5, 180, 0),
-		RejectAttachments = {
-		["charm_gs_clock"] = true,
-		["charm_gs_killcounter"] = true,
-		["charm_gs_sticker"] = true,
-		},
+        RejectAttachments = {
+        ["charm_gs_clock"] = true,
+        ["charm_gs_killcounter"] = true,
+        ["charm_gs_sticker"] = true,
+        },
     },
 }
 

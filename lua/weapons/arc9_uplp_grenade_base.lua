@@ -1,7 +1,7 @@
 SWEP.Base = "arc9_base_nade"
 SWEP.Category = "ARC9 - Poly Arms"
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnmenu
-SWEP.Spawnable = false 
+SWEP.Spawnable = false
 SWEP.AdminOnly = false
 SWEP.NoDynamicKillIcon = true
 SWEP.NotForNPCs = true
@@ -65,7 +65,7 @@ SWEP.ChamberSize = 0 -- The amount of rounds this gun can chamber.
 SWEP.ClipSize = 1 -- Self-explanatory.
 SWEP.SupplyLimit = 3 -- Amount of magazines of ammo this gun can take from an ARC9 supply crate.
 SWEP.SecondarySupplyLimit = 0 -- Amount of reserve UBGL magazines you can take.
-SWEP.Crosshair = false 
+SWEP.Crosshair = false
 
 SWEP.FreeAimRadius = 0 -- In degrees, how much this gun can free aim in hip fire.
 SWEP.Sway = 0 -- How much the gun sways.
@@ -97,7 +97,7 @@ SWEP.TossForce = 500 -- Force that the grenade will be thrown with when right cl
 SWEP.ThrowChargeTime = 0 -- How long it takes to charge the grenade to its maximum throw force.
 
 SWEP.ThrowTumble = true -- Grenade tumbles when thrown.
-SWEP.Disposable = true 
+SWEP.Disposable = true
 
 -------------------------- HANDLING
 SWEP.SprintToFireTime = 0.2 -- How long it takes to go from sprinting to being able to fire.
@@ -151,7 +151,7 @@ SWEP.ShootPosOffset = Vector(2, 2, -2)
 SWEP.QuickSwapTo = true
 SWEP.NoHolsterOnPrimed = true
 SWEP.CanLean = false
-SWEP.CantSafety = true 
+SWEP.CantSafety = true
 SWEP.IsQuickGrenade = true
 
 -- copy of original func but with extra key and holstering if bind throw
