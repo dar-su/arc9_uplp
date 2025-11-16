@@ -181,33 +181,33 @@ SWEP.VisualRecoilPositionBumpUpHipFire = 0
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.065
+SWEP.SpreadAddHipFire = 0.06
 
-SWEP.SpreadAddRecoil = 0.05
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddRecoil = 0
+SWEP.SpreadAddMove = 0.05
 SWEP.SpreadAddMidAir = 0.03
 
-SWEP.RecoilDissipationRate = 0.75
-SWEP.RecoilResetTime = 0
+SWEP.RecoilDissipationRate = 2
+SWEP.RecoilResetTime = 0.8
 SWEP.RecoilPerShot = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
 SWEP.Speed = 0.75
-SWEP.SpeedMultSights = 0.5
-SWEP.SpeedMultShooting = 0.25
+SWEP.SpeedMultSights = 0.333
+SWEP.SpeedMultShooting = 0.1
 SWEP.BarrelLength = 60
 
 SWEP.AimDownSightsTime = 0.5
 SWEP.SprintToFireTime = 0.42
 
 SWEP.SwayMultSights = 1.5
-SWEP.SwayMultMove = 8
+SWEP.SwayMultMove = 10
 
 SWEP.ReloadInSights = false
 
 -- Shooting and Firemodes
-SWEP.RPM = 700 -- How fast gun shoot
+SWEP.RPM = 180 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
