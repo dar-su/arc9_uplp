@@ -178,7 +178,7 @@ SWEP.HipfireBloomAmplification = 0.15
 -- Weapon handling
 SWEP.SpeedMult = 0.82
 SWEP.SpeedMultSights = 0.65
-SWEP.SpeedMultShooting = 0.8
+SWEP.SpeedMultShooting = 0.7
 
 SWEP.BarrelLength = 40
 
