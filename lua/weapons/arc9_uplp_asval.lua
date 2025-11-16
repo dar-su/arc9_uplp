@@ -127,7 +127,7 @@ SWEP.Penetration = 18
 SWEP.ImpactForce = 4
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
 SWEP.RangeMax = 70 / ARC9.HUToM
 
 -- Physical Bullets
@@ -178,27 +178,9 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
---[[]
-SWEP.Spread = 0.0025
-SWEP.SpreadAddHipFire = 0.03 - 0.01
-
-SWEP.SpreadAddRecoil = 0.014
-SWEP.SpreadAddMove = 0.02
-SWEP.SpreadAddMidAir = 0.05
-
-SWEP.SpreadMultSights = 1
-SWEP.SpreadMultMove = 1
-
-SWEP.RecoilDissipationRate = 7
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 6
-SWEP.RecoilMax = 1
-SWEP.RecoilModifierCap = 1
-]]
-
 -- 8Z balance pass
 SWEP.Spread = 0.0025
-SWEP.SpreadAddHipFire = 0.04
+SWEP.SpreadAddHipFire = 0.025
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.014
@@ -216,18 +198,21 @@ SWEP.RecoilModifierCapSights = 1
 
 SWEP.RecoilPerShotMultSights = 0.75
 
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.2
+
 -- HOT HOT HOT
 SWEP.Overheat = true
 SWEP.HeatCapacity = 80 * 1.5
 SWEP.HeatDissipation = 5
-SWEP.HeatDelayTime = 2
+SWEP.HeatDelayTime = 1
 SWEP.HeatPerShot = 1
 SWEP.HeatLockout = false
 SWEP.MalfunctionWait = -1 -- -1 for instant unjam anim
 
 SWEP.SpreadHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
-    return Lerp(heat ^ 2, stat, stat + 0.012)
+    return Lerp(heat, stat, stat + 0.012)
 end
 
 SWEP.HeatDissipationHook = function(wep, stat)
@@ -237,8 +222,8 @@ end
 
 SWEP.RPMHook = function(wep, stat)
     local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
-    if heat >= 0.5 then
-        return Lerp((heat - 0.5) / 0.5, stat, stat * 0.7)
+    if heat >= 0.3 then
+        return Lerp(((heat - 0.3) / 0.3) ^ 2, stat, stat * 0.7)
     end
 end
 

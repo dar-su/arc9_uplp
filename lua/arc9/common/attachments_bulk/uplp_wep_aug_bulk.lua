@@ -110,9 +110,9 @@ ATT.RangeMinAdd = 10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 1.25
 ATT.RecoilPerShot = 1 / 12
 ATT.RecoilMult = 0.85
-ATT.SweetSpotRangeAdd = 25 / ARC9.HUToM
-ATT.SweetSpotWidthAdd = 20 / ARC9.HUToM
-ATT.SweetSpotPeakAdd = 20 / ARC9.HUToM
+ATT.SweetSpotRangeAdd = 15 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 5 / ARC9.HUToM
+ATT.SweetSpotPeakAdd = 5 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMAdd = -30
@@ -157,10 +157,10 @@ ATT.RecoilMult = 1.25
 ATT.RecoilSideAdd = 0.25
 ATT.SpreadAdd = 0.0025
 ATT.RangeMaxMult = 0.85
-ATT.SweetSpotRangeAdd = -15 / ARC9.HUToM
-ATT.SweetSpotWidthAdd = -10 / ARC9.HUToM
+ATT.SweetSpotRangeAdd = -5 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 10 / ARC9.HUToM
 ATT.SweetSpotPeakAdd = -5 / ARC9.HUToM
-ATT.RangeMinAdd = -4 / ARC9.HUToM
+ATT.RangeMinAdd = -10 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocityMult = 0.8
 ATT.RecoilPerShot = 1 / 6
 
@@ -262,7 +262,7 @@ end
 ATT.ClipSizeOverride = 52
 
 -- Negatives
--- ATT.SpreadAddHipFire = 0.03
+ATT.SpreadAddHipFire = 0.012
 ATT.AimDownSightsTimeAdd = 0.07
 ATT.SprintToFireTimeAdd = 0.09
 ATT.DeployTimeMult = 1.5
@@ -310,13 +310,12 @@ local dropsound9 = {
 }
 
 local stat9 = {
-    SpreadAdd = 0.005,
-    RPMAdd = -20,
-    -- RecoilAdd = -0.5,
-    DamageMaxAdd = -2 * 0.5,
-    DamageMinAdd = -4 * 0.5,
-    RangeMaxMult = 0.4,
-    RangeMinMult = 0.7,
+    SpreadAdd = 0.0015,
+    RPMAdd = -30,
+    DamageMaxAdd = -1,
+    DamageMinAdd = -1,
+    RangeMaxMult = 0.8,
+    RangeMinMult = 0.8,
     PhysBulletMuzzleVelocity = 370 / ARC9.HUToM,
 
     ShootSound = shoot9,
@@ -328,13 +327,13 @@ local stat9 = {
     DropMagazineSounds = dropsound9,
 
     Ammo = "pistol",
-	ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl",
+    ShellModel = "models/weapons/arc9/uplp/shells/shell_919.mdl",
 
     HeadshotDamageMult = 0.65,
-	
+
     RecoilMult = 0.7,
-    RecoilAutoControlMult = 1.6,
-	SpreadAddRecoil = -0.01,
+    RecoilAutoControlMult = 1.75,
+    SpreadAddHipFire = -0.012,
 }
 
 ATT = {}
@@ -363,8 +362,6 @@ table.Merge(ATT, stat9)
 
 ATT.AimDownSightsTimeAdd = -0.02
 ATT.SprintToFireTimeAdd = -0.03
-
-ATT.SpreadAddHipFire = 0.01
 
 ATT.CustomPros = {
     [	ARC9:GetPhrase("autostat.reloadtime")	] = "-5%",
@@ -397,10 +394,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 table.Merge(ATT, stat9)
-
+ATT.SpreadAddHipFire = -0.004
 ATT.ClipSizeOverride = 40
-
-ATT.SpreadAddHipFire = 0.01
 
 ATT.CustomPros = {
     [ARC9:GetPhrase("customize.stats.ammo")] = ARC9:GetPhrase("ammo.pistol"),
@@ -440,15 +435,16 @@ ATT.SprintToFireTimeAdd = -0.02
 ATT.SwayMultSights = 0.9
 ATT.SpeedMultSights = 1.1
 ATT.Ammo = "ar2"
+ATT.SpreadAddHipFire = -0.006
+
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15
-ATT.DamageMinAdd = 6 * 0.5 -- from 14
 
 ATT.SweetSpot = true
-ATT.SweetSpotDamage = 42 * 0.5
-ATT.SweetSpotRange = 60 / ARC9.HUToM
-ATT.SweetSpotWidth = 50 / ARC9.HUToM
-ATT.SweetSpotPeak = 20 / ARC9.HUToM
+ATT.SweetSpotDamage = 20
+ATT.SweetSpotRange = 45 / ARC9.HUToM
+ATT.SweetSpotWidth = 25 / ARC9.HUToM
+ATT.SweetSpotPeak = 25 / ARC9.HUToM
 
 ATT.CustomPros = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
@@ -459,7 +455,7 @@ ATT.RPMMult = 0.7
 ATT.RecoilUpAdd = 0.6
 ATT.RecoilSideAdd = 1.25
 ATT.ClipSizeOverride = 10
-ATT.RecoilPerShotMult = 2.5
+ATT.RecoilPerShotMult = 3
 ATT.RecoilDissipationRateMult = 0.75
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_300_10")

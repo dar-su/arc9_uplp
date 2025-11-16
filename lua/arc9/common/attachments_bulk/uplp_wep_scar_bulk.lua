@@ -624,7 +624,7 @@ local stats556 = {
     DistantShootSoundIndoor = shoot556distindoor,
 
     -- Positives
-    RPMAdd = 200,
+    RPMMult = 750 / 550,
     RecoilPerShotMult = 0.75,
     RecoilUpAdd = -0.5,
     RecoilSideAdd = -0.35,
@@ -636,8 +636,10 @@ local stats556 = {
     DamageMaxAdd = -11 * 0.5, -- from 40
     DamageMinAdd = -10 * 0.5, -- from 28
     PhysBulletMuzzleVelocityMult = 0.8165,
-    RangeMaxAdd = -10 / ARC9.HUToM,
-    RangeMinAdd = -5 / ARC9.HUToM,
+    RangeMaxMult = 0.8,
+    RangeMinMult = 0.8,
+    SpreadAddHipFire = -0.006,
+    SpreadAdd = 0.001,
 
     BodyDamageMults = {
         [HITGROUP_HEAD] = 1.8,

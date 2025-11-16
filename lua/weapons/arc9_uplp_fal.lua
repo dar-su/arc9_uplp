@@ -174,7 +174,7 @@ SWEP.RecoilModifierCap = 1
 
 -- 8Z balance pass
 SWEP.Spread = 0.003
-SWEP.SpreadAddHipFire = 0.035
+SWEP.SpreadAddHipFire = 0.032
 
 SWEP.SpreadAddRecoil = 0.02
 SWEP.SpreadAddMove = 0.01
@@ -191,6 +191,9 @@ SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 1
 
 SWEP.RecoilPerShotMultSights = 0.5
+
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.1
 
 -- Weapon handling
 SWEP.Speed = 0.8

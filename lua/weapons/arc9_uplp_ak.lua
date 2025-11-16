@@ -192,6 +192,9 @@ SWEP.RecoilModifierCapSights = 1
 
 SWEP.RecoilPerShotMultSights = 0.5
 
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.15
+
 -- Weapon handling
 SWEP.Speed = 0.82 + 0.05 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.6 / 0.85 -- When aiming

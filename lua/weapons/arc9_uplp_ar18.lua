@@ -83,7 +83,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 14
+SWEP.DamageMax = 15
 SWEP.DamageMin = 11
 SWEP.DamageType = DMG_BULLET
 
@@ -91,8 +91,8 @@ SWEP.Penetration = 18 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 40 / ARC9.HUToM
-SWEP.RangeMax = 120 / ARC9.HUToM
+SWEP.RangeMin = 20 / ARC9.HUToM
+SWEP.RangeMax = 100 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 991 / ARC9.HUToM
@@ -142,25 +142,6 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
---[[]
-SWEP.Spread = 0.004
-SWEP.SpreadAddHipFire = 0.034 - 0.01
-
-SWEP.SpreadAddRecoil = 0.01
-SWEP.SpreadAddMove = 0.01
-SWEP.SpreadAddMidAir = 0.05
-
-SWEP.SpreadMultSights = 1
-SWEP.SpreadMultMove = 1
-
-SWEP.RecoilDissipationRate = 10
-SWEP.RecoilResetTime = 0.03
-SWEP.RecoilPerShot = 1 / 12
-SWEP.RecoilMax = 1
-SWEP.RecoilModifierCap = 1
-]]
-
--- 8Z balance pass
 -- 15" barrel
 SWEP.Spread = 0.004
 SWEP.SpreadAddHipFire = 0.034 - 0.01 -- buffer tube
@@ -172,7 +153,7 @@ SWEP.SpreadAddMidAir = 0.05
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 6
+SWEP.RecoilDissipationRate = 5
 SWEP.RecoilResetTime = 0.02
 SWEP.RecoilPerShot = 1 / 7
 SWEP.RecoilMax = 1
@@ -181,13 +162,16 @@ SWEP.RecoilModifierCapSights = 1
 
 SWEP.RecoilPerShotMultSights = 0.5
 
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.15
+
 -- Weapon handling
-SWEP.Speed = 0.85 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.7 / 0.85 -- When aiming
+SWEP.Speed = 0.83 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.65 / 0.85 -- When aiming
 SWEP.SpeedMultShooting = 0.9
 
-SWEP.AimDownSightsTime = 0.35 - 0.05 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.38 - 0.05 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.37 - 0.05 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.4 - 0.05 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 35

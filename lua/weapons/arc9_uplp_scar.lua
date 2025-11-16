@@ -152,27 +152,9 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
---[[]
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.03
-
-SWEP.SpreadAddRecoil = 0.01
-SWEP.SpreadAddMove = 0.01
-SWEP.SpreadAddMidAir = 0.05
-
-SWEP.SpreadMultSights = 1
-SWEP.SpreadMultMove = 1
-
-SWEP.RecoilDissipationRate = 8
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 7
-SWEP.RecoilMax = 1
-SWEP.RecoilModifierCap = 1
-]]
-
 -- 8Z balance pass
 SWEP.Spread = 0.004
-SWEP.SpreadAddHipFire = 0.032
+SWEP.SpreadAddHipFire = 0.034
 
 SWEP.SpreadAddRecoil = 0.01
 SWEP.SpreadAddMove = 0.01
@@ -189,6 +171,9 @@ SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 1
 
 SWEP.RecoilPerShotMultSights = 0.75
+
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 0.15
 
 -- Weapon handling
 SWEP.SpeedMult = 0.82
