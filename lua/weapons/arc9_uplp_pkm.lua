@@ -85,7 +85,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 20
+SWEP.DamageMax = 25
 SWEP.DamageMin = 16
 SWEP.DamageType = DMG_BULLET
 
@@ -93,8 +93,8 @@ SWEP.Penetration = 18 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 30 / ARC9.HUToM
-SWEP.RangeMax = 120 / ARC9.HUToM
+SWEP.RangeMin = 25 / ARC9.HUToM
+SWEP.RangeMax = 100 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 715 / ARC9.HUToM
@@ -109,8 +109,8 @@ SWEP.ClipSize = 100
 
 -- Recoil
 SWEP.Recoil = 1.3
-SWEP.RecoilUp = 1.1
-SWEP.RecoilSide = 1.3
+SWEP.RecoilUp = 1.3
+SWEP.RecoilSide = 1.5
 
 SWEP.RecoilRandomUp = 1
 SWEP.RecoilRandomSide = 1
@@ -121,8 +121,8 @@ SWEP.RecoilPunch = 0
 SWEP.RecoilAutoControl = 2
 SWEP.RecoilAutoControlMultShooting = 1
 
-SWEP.RecoilMultRecoil = 0.7
-SWEP.RecoilRandomSideAddRecoil = 1
+SWEP.RecoilMultRecoil = 1 / 1.3
+SWEP.RecoilRandomSideAddRecoil = 0.5
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.85
 
@@ -148,11 +148,11 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.007
-SWEP.SpreadAddHipFire = 0.02
+SWEP.Spread = 0.008
+SWEP.SpreadAddHipFire = 0.016
 
 SWEP.SpreadAddRecoil = 0.01
-SWEP.SpreadAddMove = 0.05
+SWEP.SpreadAddMove = 0.02
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultRecoil = 1
@@ -161,17 +161,21 @@ SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 4
 SWEP.RecoilResetTime = 0.05
-SWEP.RecoilPerShot = 1 / 8
+SWEP.RecoilPerShot = 1 / 10
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 1
 
-SWEP.RecoilPerShotMultSights = 0.5
+SWEP.RecoilPerShotMultSights = 0.75
+
+-- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
+SWEP.HipfireBloomAmplification = 1
+
 
 -- Weapon handling
 SWEP.Speed = 0.8 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.5 / 0.85 -- When aiming
-SWEP.SpeedMultShooting = 0.5
+SWEP.SpeedMultShooting = 0.4
 
 SWEP.AimDownSightsTime = 0.45 - 0.05 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.48 - 0.05 -- Time it takes to fully enter sprint
@@ -183,7 +187,7 @@ SWEP.BarrelLength = 35
 -- SWEP.Bipod = true
 SWEP.SpreadAddBipod = -0.003
 SWEP.RecoilMultBipod = 0.2
-SWEP.RecoilPerShotMultBipod = 0.7
+SWEP.RecoilPerShotMultBipod = 0.5
 -- SWEP.CantPeek = true
 SWEP.ReloadInSights = false
 SWEP.LaserCorrectBySightAng = true

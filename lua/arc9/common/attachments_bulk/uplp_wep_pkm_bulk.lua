@@ -27,14 +27,16 @@ ATT.CustomPros = {
     [	ARC9:GetPhrase("uplp_stat_suppressed")	] = " ",
 }
 
--- mp5sd stats placeholder
 -- Positives
-ATT.SpreadAddRecoil = -0.003
-ATT.RecoilSideMult = 0.8
+ATT.SpreadAdd = -0.002
+ATT.SpreadAddRecoil = -0.001
+ATT.SpeedMultShooting = 1.3
 ATT.RecoilUpMult = 0.9
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.03
+ATT.SpreadAddHipFire = 0.0035
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SpeedMultSights = 0.9
 ATT.RPMMult = 0.875
 
 ATT.Overheat = true
@@ -75,20 +77,20 @@ ATT.Icon = Material(iconfolder .. "pkp.png", "mips smooth")
 ATT.Category = "uplp_pkm_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- fal mid barrel stats placeholder
 -- Positives
+ATT.SpreadAdd = -0.002
 ATT.RecoilPerShot = 1 / 13
-ATT.RangeMinAdd = 10 / ARC9.HUToM
+ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = 20 / ARC9.HUToM
 
 -- Negatives
 ATT.RPMMult = 0.85
 ATT.SpreadAddHipFire = 0.01
-ATT.SwayMultSights = 1.2
-ATT.AimDownSightsTimeAdd = 0.02
-ATT.SprintToFireTimeAdd = 0.02
-
-ATT.ReocilAdd = 0.1
+ATT.SwayMultSights = 1.5
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.03
+ATT.SpeedMult = 0.96
+ATT.SpeedMultShooting = 0.8
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_brl_pkp")
 
@@ -124,17 +126,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
--- fal foldable stock stats placeholder
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.04
-ATT.SprintToFireTimeAdd = -0.03
-ATT.SpreadAddHipFire = -0.008
-ATT.SpeedMultSights = 1.15
+ATT.SpeedMultSights = 1.2
 ATT.SpeedAdd = 0.03
+ATT.SwayMultSights = 0.7
 
 -- Negatives
-ATT.RecoilAdd = 0.3
-ATT.RecoilAutoControlMult = 0.85
+ATT.RecoilAutoControlMult = 0.7
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_furn_zenit")
 
@@ -173,17 +171,18 @@ ATT.Attachments = {
     },
 }
 
--- my own placeholder stats idk honestly
 -- Positives
-ATT.RecoilMult = 0.85
-ATT.RecoilAutoControlMult = 1.1
-ATT.SprintToFireTimeMult = 0.75
-ATT.AimDownSightsTimeMult = 0.95
+ATT.RecoilUpMult = 0.7
+ATT.RecoilAutoControlMultHipFire = 1.5
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SpreadAddHipFire = -0.007
+ATT.SpeedAdd = 0.05
+ATT.BarrelLengthAdd = -6
 
 -- Negatives
-ATT.PhysBulletMuzzleVelocityMult = 0.8
-ATT.DamageMaxMult = 0.9
-ATT.RecoilSideMult = 1.2
+ATT.RecoilSideMult = 1.1
+ATT.SpreadAddRecoil = 0.005
+ATT.AimDownSightsTimeAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_rec_bullpup")
 
