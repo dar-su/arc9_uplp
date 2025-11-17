@@ -132,6 +132,6 @@ ATT.AimDownSightsTimeAdd = -0.03
 ATT.DeployTimeMult = 0.85
 
 -- Negatives
-ATT.RecoilAutoControlMult = 0.75
+ATT.RecoilAutoControlMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_grip_none")

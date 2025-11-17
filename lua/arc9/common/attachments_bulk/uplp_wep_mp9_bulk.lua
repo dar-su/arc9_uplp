@@ -230,13 +230,13 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
-ATT.SprintToFireTimeAdd = -0.01
-ATT.AimDownSightsTimeAdd = -0.02
+ATT.AimDownSightsTimeAdd = -0.03
 ATT.DeployTimeMult = 0.85
 
 -- Negatives
-ATT.RecoilMult = 1.2
 ATT.RecoilAutoControlMult = 0.8
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_grip_rail")
 
@@ -263,13 +263,13 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
-ATT.SprintToFireTimeAdd = -0.01
-ATT.AimDownSightsTimeAdd = -0.02
+ATT.AimDownSightsTimeAdd = -0.03
 ATT.DeployTimeMult = 0.85
 
 -- Negatives
-ATT.RecoilMult = 1.2
 ATT.RecoilAutoControlMult = 0.8
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_grip_raw")
 

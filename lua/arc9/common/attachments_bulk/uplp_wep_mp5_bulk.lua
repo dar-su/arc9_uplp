@@ -86,14 +86,14 @@ ATT.SpeedMultSights = 1.05
 ATT.SwayAddSights = -0.5
 ATT.SpreadAddHipFire = -0.01
 ATT.SpreadAddMove = -0.003
-ATT.SpreadAddRecoil = 0
+ATT.SpreadAddRecoil = 0.001
 
 -- Negatives
 ATT.DamageMinMult = 0.8
-ATT.SpreadAdd = 0.005
+ATT.SpreadAdd = 0.006
 ATT.RangeMinAdd = -5 / ARC9.HUToM
-ATT.RangeMaxAdd = -5 / ARC9.HUToM
-ATT.RecoilAdd = 0.4
+ATT.RangeMaxAdd = -15 / ARC9.HUToM
+ATT.RecoilAutoControlMult = 0.75
 ATT.RecoilRandomSideAdd = 0.4
 ATT.RecoilPerShotOverride = 1 / 5
 
@@ -166,11 +166,12 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 5
 
 -- Positives
-ATT.RecoilMult = 0.75
+ATT.RecoilRandomSideAdd = -0.25
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.RecoilAutoControlMult = 0.9
+ATT.SpeedMultSights = 1 / 1.05
+ATT.SpreadAddHipFire = 0.002
+
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_grip_kurz")
 

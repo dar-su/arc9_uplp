@@ -721,7 +721,7 @@ L["uplp_ak_dc_azen.description"] = "Modernized dust cover for AK rifles. Comes w
 
 L["uplp_ak_dc_internals.printname"] = "Remove Dust Cover"
 L["uplp_ak_dc_internals.compactname"] = "Remove"
-L["uplp_ak_dc_internals.description"] = "Removes the dust cover, exposing the internal workings of the AK rifle.\nPurely <color=160,160,255>cosmetic</color>."
+L["uplp_ak_dc_internals.description"] = "Removes the dust cover, exposing the internal workings of the AK rifle."
 
 L["uplp_ak_dc_beryl.printname"] = "Szermierz Dust Cover & Rail"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"

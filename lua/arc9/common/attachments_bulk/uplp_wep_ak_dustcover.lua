@@ -126,10 +126,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_beryl","use_optics"}
 
-ATT.SprintToFireTimeAdd = 0.1
-ATT.RecoilMult = 0.95
-ATT.SpeedAddSights = -0.05
-ATT.AimDownSightsTimeAdd = 0.03
+ATT.RecoilUpMult = 0.95
+ATT.RecoilSideMult = 1.03
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_beryl")
 
@@ -146,6 +144,13 @@ ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_internals"}
+
+ATT.Free = true
+
+ATT.AimDownSightsTimeAdd = -0.02
+ATT.SpeedMultSights = 1.03
+ATT.SpreadAdd = 0.0008
+ATT.RecoilRandomSideAdd = 0.05
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_internals")
 

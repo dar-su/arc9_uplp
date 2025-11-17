@@ -333,7 +333,7 @@ local stat9 = {
 
     RecoilMult = 0.7,
     RecoilAutoControlMult = 1.75,
-    SpreadAddHipFire = -0.012,
+    SpreadAddHipFire = -0.015,
 }
 
 ATT = {}
@@ -394,7 +394,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 table.Merge(ATT, stat9)
-ATT.SpreadAddHipFire = -0.004
+ATT.SpreadAddHipFire = -0.007
 ATT.ClipSizeOverride = 40
 
 ATT.CustomPros = {

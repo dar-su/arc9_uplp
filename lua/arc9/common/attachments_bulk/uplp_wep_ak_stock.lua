@@ -112,9 +112,9 @@ ATT.ToggleStats = {
         SprintToFireTimeAdd = 0.1 - 0.05,
         SpeedMultSights = 0.85 + 0.1,
         SpeedAdd = -0.05 + 0.04,
-		
-		CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, 5, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end,
+
+        CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, 5, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
@@ -304,16 +304,16 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_pt1"},
         ModelBodygroups = "6",
-		CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt1_ext"},
         ModelBodygroups = "7",
         UPLPFoldStock = true,
-		CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, 5, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, 5, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end,
     },
 }
 
@@ -359,16 +359,16 @@ ATT.ToggleStats = {
         PrintName = ARC9:GetPhrase("uplp_togglestat_default"),
         ActivateElements = {"uplp_ak_stock_pt3"},
         ModelBodygroups = "8",
-		CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
         ActivateElements = {"uplp_ak_stock_pt3_ext"},
         ModelBodygroups = "9",
         UPLPFoldStock = true,
-		CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, 5, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-4.5, 5, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4.5, 0, 0) end,
     },
 }
 
@@ -755,8 +755,8 @@ ATT.ToggleStats = {
         SpeedMultSights = 0.85 + 0.1,
         SpeedAdd = -0.05 + 0.03,
 
-		CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(-3, 3, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),

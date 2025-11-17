@@ -29,8 +29,10 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.014,
+        --SpreadAddHipFire = -0.014,
+        SpreadMultHipFire = 0.7,
         RecoilDissipationRateMult = 0.85,
+        SpeedMultShooting = 0.9,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -38,11 +40,12 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.01",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×70%",
 }
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×85%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×90%",
 }
 
 ATT.AimDownSightsTimeAdd = 0.05
@@ -90,8 +93,10 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.003,
+        --SpreadAddHipFire = -0.003,
+        SpreadMultHipFire = 0.8,
         RecoilPerShotMultHipFire = 0.75,
+        SpeedMultShooting = 0.95,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.2,
@@ -102,13 +107,13 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×80%",
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
 }
 
--- ATT.CustomCons = {
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
--- }
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×95%",
+}
 
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.02
@@ -241,8 +246,10 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.004,
+        --SpreadAddHipFire = -0.004,
+        SpreadMultHipFire = 0.85,
         RecoilPerShotMultHipFire = 0.9,
+        SpeedMultShooting = 0.92,
 
         -- Negatives
         RecoilDissipationRateMult = 0.9,
@@ -253,12 +260,13 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.004",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×85%",
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
 }
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
 }
 
 ATT.AimDownSightsTimeAdd = 0.05
@@ -297,11 +305,13 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.0075,
-        RecoilPerShotMultHipFire = 0.85,
+        --SpreadAddHipFire = -0.0075,
+        SpreadMultHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.9,
 
         -- Negatives
         RecoilDissipationRateMult = 0.85,
+        SpeedMultShooting = 0.95,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -309,12 +319,13 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.0075",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×85%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
 }
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×85%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×95%",
 }
 
 ATT.AimDownSightsTimeAdd = 0.05
@@ -354,8 +365,10 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.004,
+        --SpreadAddHipFire = -0.004,
+        SpreadMultHipFire = 0.85,
         RecoilPerShotMultHipFire = 0.9,
+        SpeedMultShooting = 0.92,
 
         -- Negatives
         RecoilDissipationRateMult = 0.9,
@@ -366,12 +379,13 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.004",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×85%",
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
 }
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
 }
 
 ATT.AimDownSightsTimeAdd = 0.05
@@ -410,7 +424,9 @@ ATT.ToggleStats = {
         FlareAttachment = 1,
         FlareFocus = false,
         -- Positives
-        SpreadAddHipFire = -0.002,
+        --SpreadAddHipFire = -0.002,
+        SpreadMultHipFire = 0.9,
+        SpeedMultShooting = 0.98,
 
         -- Negatives
         -- AimDownSightsTimeMult = 1.1,
@@ -421,14 +437,14 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×90%",
 }
 
--- ATT.CustomCons = {
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+10%",
--- }
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×98%",
+}
 
-ATT.SprintToFireTimeAdd = 0.01
+ATT.SprintToFireTimeAdd = 0.02
 
 ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
 -- ATT.Category = "uplp_tac_pistol"

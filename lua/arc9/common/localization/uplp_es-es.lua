@@ -713,7 +713,7 @@ L["uplp_ak_dc_azen.description"] = "Guardapolvo modernizado para fusiles AK. Vie
 
 L["uplp_ak_dc_internals.printname"] = "Remover la Cubierta Antipolvo"
 L["uplp_ak_dc_internals.compactname"] = "Remover"
-L["uplp_ak_dc_internals.description"] = "Quita el guardapolvo y deja al descubierto el funcionamiento interno del fusil AK.\nPuramente <color=160,160,255>cosmetico</color>."
+L["uplp_ak_dc_internals.description"] = "Quita el guardapolvo y deja al descubierto el funcionamiento interno del fusil AK."
 
 L["uplp_ak_dc_beryl.printname"] = "Guardapolvo y Raíl Szermierz"
 L["uplp_ak_dc_beryl.compactname"] = "Szermierz"
