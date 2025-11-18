@@ -159,7 +159,7 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.Spread = 0.008
 SWEP.SpreadAddHipFire = 0.01
 
-SWEP.SpreadAddRecoil = 0.022
+SWEP.SpreadAddRecoil = 0.02
 SWEP.SpreadAddMove = 0.01
 SWEP.SpreadAddMidAir = 0.05
 
@@ -169,7 +169,7 @@ SWEP.HipfireBloomAmplification = 1.25
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 2.5
+SWEP.RecoilDissipationRate = 3
 SWEP.RecoilResetTime = 0
 SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilModifierCap = 1

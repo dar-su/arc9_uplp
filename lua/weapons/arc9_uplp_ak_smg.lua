@@ -103,7 +103,7 @@ SWEP.ImpactForce = 5 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 8 / ARC9.HUToM
-SWEP.RangeMax = 50 / ARC9.HUToM
+SWEP.RangeMax = 65 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 420 * 39.37
@@ -154,7 +154,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.006
-SWEP.SpreadAddHipFire = 0.025 - 0.01
+SWEP.SpreadAddHipFire = 0.024 - 0.01
 
 SWEP.SpreadAddRecoil = 0.012
 SWEP.SpreadAddMove = 0.006

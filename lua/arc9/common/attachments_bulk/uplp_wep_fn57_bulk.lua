@@ -27,7 +27,7 @@ ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.06
 ATT.SpeedSightsMult = 0.92
-ATT.SpreadAddHipFire = 0.003
+ATT.SpreadAddHipFire = 0.0012
 ATT.DeployTimeMult = 1.25
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
@@ -58,9 +58,9 @@ ATT.RPMMult = 1.4
 ATT.Firemodes = { { Mode = -1 } }
 
 ATT.RecoilMultRecoil = 2
-ATT.RecoilSideMult = 2
-ATT.SpreadAddHipFire = 0.0025
-ATT.SpreadAddRecoil = 0.005
+ATT.RecoilRandomSideAdd = 0.3
+ATT.SpreadAddHipFire = 0.003
+ATT.SpreadAddRecoil = 0.003
 ATT.SpreadAdd = 0.0075
 
 -- ATT.RecoilAutoControlMult = 1.25

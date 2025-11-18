@@ -151,10 +151,10 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.022 - 0.01
+SWEP.SpreadAddHipFire = 0.024 - 0.01
 
-SWEP.SpreadAddRecoil = 0.012
-SWEP.SpreadAddMove = 0.009
+SWEP.SpreadAddRecoil = 0.014
+SWEP.SpreadAddMove = 0.012
 SWEP.SpreadAddMidAir = 0.05
 
 SWEP.SpreadMultSights = 1
@@ -184,7 +184,7 @@ SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 35
 
 -- Shooting and Firemodes
-SWEP.RPM = 750 -- How fast gun shoot
+SWEP.RPM = 720 -- How fast gun shoot
 SWEP.HeatCapacity = 100 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once

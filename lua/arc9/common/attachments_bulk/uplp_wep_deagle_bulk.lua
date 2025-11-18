@@ -79,10 +79,8 @@ ATT.Icon = Material(iconfolder .. "heavytrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RPMMult = 0.8
-ATT.RecoilMult = 0.85
-ATT.RecoilSideMult = 1.15
-ATT.RecoilAutoControlMult = 2
+ATT.RPMMult = 0.9
+ATT.RecoilAutoControlMult = 1.5
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_heavy")
 
@@ -98,10 +96,10 @@ ATT.Icon = Material(iconfolder .. "lighttrig.png", "mips smooth")
 ATT.Category = "uplp_deag_trig"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RPMMult = 1.2
-ATT.RecoilMult = 1.1
-ATT.RecoilUpMult = 1.1
-ATT.RecoilSideMult = 1.4
+ATT.RPMMult = 1.15
+ATT.RecoilAutoControlMult = 0.4
+ATT.RecoilUpMult = 1.15
+ATT.RecoilSideMult = 1.35
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_light")
 
@@ -119,12 +117,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.5
 ATT.Firemodes = { { Mode = -1 } }
-ATT.RecoilMult = 1.25
 ATT.RecoilAutoControlMult = 0.75
-ATT.RecoilAutoControlMultShooting = 0.2
-ATT.RecoilSideMult = 5
-ATT.SpreadAddRecoil = 0.025
-ATT.DamageMaxMult = 0.75
+ATT.RecoilMultRecoil = 1.5
+ATT.RecoilPerShotMult = 1.5
+ATT.RecoilRandomSideAdd = 0.5
+ATT.SpreadAddHipFire = 0.0015
+ATT.SpreadAddRecoil = 0.002
+ATT.SpreadAdd = 0.0075
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")
 
@@ -364,23 +363,58 @@ ATT.ActivateElements = {"uplp_deagle_skin_admin"}
 
 ATT.CustomPros = { [ ARC9:GetPhrase("uplp_deagle_skin_admin.pro") ] = ARC9:GetPhrase("uplp_deagle_skin_admin.pro_stat")}
 ATT.CustomCons = { [ ARC9:GetPhrase("uplp_deagle_skin_admin.con") ] = " "}
-ATT.DamageMaxOverride = 1000
-ATT.DamageMinOverride = 1000
+ATT.DamageMaxOverride = 999
+ATT.DamageMinOverride = 999
+
+ATT.NeverPhysBullet = true
+ATT.RicochetChance = 0
+ATT.AimDownSightsTimeOverride = 0.1
+ATT.SprintToFireTimeOverride = 0.1
+
+local pathUTC = ")uplp_urban_temp/common/"
 ATT.Firemodes = {
     {
         PrintName = "BEAM",
         Mode = -1,
         SpreadAdd = -999,
-        RPMOverride = 3000,
+        RPMOverride = 2000,
+
+        -- minigun sounds
+        ShootSound = {
+            ")uplp_rz/fal/" .. "fire-01.wav",
+            ")uplp_rz/fal/" .. "fire-02.wav",
+            ")uplp_rz/fal/" .. "fire-03.wav",
+        },
+        DistantShootSound = {
+            pathUTC .. "308tails/fire-dist-308-rif-ext-01.wav",
+            pathUTC .. "308tails/fire-dist-308-rif-ext-02.wav",
+            pathUTC .. "308tails/fire-dist-308-rif-ext-03.wav",
+        },
+        DistantShootSoundIndoor = {
+            pathUTC .. "308tails/fire-dist-308-rif-int-01.wav",
+            pathUTC .. "308tails/fire-dist-308-rif-int-02.wav",
+            pathUTC .. "308tails/fire-dist-308-rif-int-03.wav",
+        },
+
+        MuzzleParticleOverride = "muzzleflash_OTS",
+        MuzzleParticleOverride_Priority = 10,
+        MuzzleDevice = true,
+        NoFlash = true,
     },
     {
         PrintName = "BUCK",
-        Mode = 5,
-        SpreadOverride = 0.08,
+        Mode = 3,
+        SpreadOverride = 0.05,
         NumOverride = 10,
-        PostBurstDelay = 0.25,
+        PostBurstDelay = 0.15,
         RunawayBurst = true,
-        RPMOverride = 3000,
+        RPMOverride = 4000,
+        HullSizeOverride = 1,
+
+        MuzzleParticleOverride = "muzzleflash_OTS",
+        MuzzleParticleOverride_Priority = 10,
+        MuzzleDevice = true,
+        NoFlash = true,
     },
     {
         PrintName = "BLAST",

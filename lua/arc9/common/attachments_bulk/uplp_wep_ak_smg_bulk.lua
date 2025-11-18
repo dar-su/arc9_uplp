@@ -2,6 +2,16 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/ak/"
 
+local bizonstats = {
+    ClipSizeOverride = 64,
+    RPMAdd = -100,
+    SprintToFireTimeAdd = 0.05,
+    SpeedMultShooting = 0.9,
+    RecoilDissipationRateMult = 0.5,
+    RangeMinAdd = 4 / ARC9.HUToM,
+    RecoilMult = 0.85,
+}
+
 -------------------- FRAMES / MAGAZINES
 ---------- uplp_ak_smg_rec_vityaz
 
@@ -92,12 +102,7 @@ ATT.BulletBones = { -- im suprised that this works in att
     [2] = "bullet2bizon",
 }
 
--- Positives
-ATT.ClipSizeOverride = 64
-ATT.RPMMult = 0.85
-ATT.AimDownSightsTimeMult = 1.2
-ATT.DamageMaxMult = 1.05
-ATT.DamageMinMult = 1.05
+table.Merge(ATT, bizonstats)
 
 ATT.Attachments = {
     {
@@ -162,12 +167,7 @@ ATT.BulletBones = { -- im suprised that this works in att
     [2] = "bullet2bizon",
 }
 
--- Positives
-ATT.ClipSizeOverride = 64
-ATT.RPMMult = 0.85
-ATT.AimDownSightsTimeMult = 1.2
-ATT.DamageMaxMult = 1.05
-ATT.DamageMinMult = 1.05
+table.Merge(ATT, bizonstats)
 
 ATT.Attachments = {
     {
