@@ -43,25 +43,27 @@ local dropsound9 = {
 }
 
 local stat9 = {
-    SpreadAdd = 0.0015,
+    SpreadAdd = 0.001,
+    SpreadAddRecoil = 0.0007,
     RPMMult = 1.15,
-    RecoilAdd = -0.4,
-    DamageMinAdd = -4 * 0.5,
+    RecoilAdd = -0.25,
+    DamageMinAdd = -2,
     RangeMaxMult = 0.75,
-    RangeMinMult = 0.25,
+    RangeMinMult = 0.5,
     PhysBulletMuzzleVelocity = 370 / ARC9.HUToM,
 }
 
 local stat45 = {
-    SpreadAdd = 0.004,
-    SpreadAddRecoil = 0.002,
+    SpreadAdd = 0.002,
+    SpreadAddRecoil = 0.0015,
     -- RPMMult = 0.85,
     RecoilAdd = -0.15,
-    DamageMaxAdd = 3 * 0.5,
-    DamageMinAdd = -6 * 0.5,
+    RecoilRandomSideAdd = 0.1,
+    DamageMaxAdd = 1,
+    DamageMinAdd = -4,
     RangeMaxMult = 0.5,
-    RangeMinMult = 0.125,
-    PhysBulletMuzzleVelocity = 320 / ARC9.HUToM,
+    RangeMinMult = 0.5,
+    PhysBulletMuzzleVelocity = 300 / ARC9.HUToM,
 }
 
 

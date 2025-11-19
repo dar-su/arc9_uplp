@@ -30,12 +30,13 @@ ATT.RecoilUpMult = 0.65
 ATT.SpreadAddRecoil = -0.0025
 ATT.PhysBulletMuzzleVelocityAdd = 70 / ARC9.HUToM
 ATT.RecoilPerShot = 1 / 7
-ATT.SpreadAddHipFire = -0.0075
+ATT.SpreadAddHipFire = -0.005
 
 -- Negatives
 ATT.SpreadAdd = 0.003
 ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMAdd = -150
+ATT.RPMAdd = -120
+ATT.RangeMaxAdd = -20 / ARC9.HUToM
 
 ATT.Overheat = false -- no silencer
 
@@ -103,7 +104,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
         Pos = Vector(0.15, 0, -0.1),
         Ang = Angle(0, 0, 0),
-		Icon_Offset = Vector(-1, 0, 0),
+        Icon_Offset = Vector(-1, 0, 0),
         Scale = 1.0
     },
 }

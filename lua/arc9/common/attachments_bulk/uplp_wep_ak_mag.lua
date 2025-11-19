@@ -936,15 +936,14 @@ ATT.CustomPros = {
 }
 
 -- Positives
-ATT.DamageMaxAdd = -4 * 0.5
 ATT.RPMAdd = 150
-ATT.RecoilPerShotMult = 1.2
-ATT.RecoilMult = 0.667
+ATT.RecoilMult = 0.7
 
 -- Negatives
-ATT.RangeMinAdd = -15 / ARC9.HUToM
-ATT.RangeMaxAdd = -40 / ARC9.HUToM
-ATT.DamageMinAdd = -6 * 0.5
+ATT.DamageMaxAdd = -2
+ATT.DamageMinAdd = -3
+ATT.RangeMinAdd = -10 / ARC9.HUToM
+ATT.RangeMaxAdd = -20 / ARC9.HUToM
 ATT.ClipSizeOverride = 20
 ATT.PhysBulletMuzzleVelocityMult = 0.45
 

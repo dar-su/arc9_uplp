@@ -315,7 +315,7 @@ ATT.AimDownSightsTimeAdd = 0.1
 ATT.SprintToFireTimeAdd = 0.1
 ATT.SpeedMultSights = 0.85
 ATT.SpeedAdd = -0.05
-ATT.SpreadAddHipFire = 0.01
+ATT.SpreadAddHipFire = 0.0025
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
@@ -346,7 +346,7 @@ end
 
 ATT.ClipSizeOverride = 50
 
-ATT.SpreadAddHipFire = 0.012
+ATT.SpreadAddHipFire = 0.008
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.07
 ATT.DeployTimeMult = 1.25
