@@ -87,9 +87,9 @@ SWEP.ViewModelFOVBase = 75
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
-SWEP.ActivePos = Vector(-0.1, -0.2, -0.1)
+SWEP.ActivePos = Vector(-0.8, -1, 0.4)
 -- SWEP.ActivePosHook = function(wep, pos) if wep:GetElements()["uplp_grip_used"] then return pos + Vector(-0.5, -2, -0.5) end end
-SWEP.ActiveAng = Angle(0, 0, -3)
+SWEP.ActiveAng = Angle(-1, 2, 6)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_REVOLVER
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -774,8 +774,8 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac", "uplp_bipod"},
         ExcludeElements = {"notac"},
-        Bone = "tac",
-        Pos = Vector(0, 0, -0.2),
+        Bone = "topcover",
+        Pos = Vector(0, -0.1, 6),
         Ang = Angle(90, 90, 0),
     },
     {
