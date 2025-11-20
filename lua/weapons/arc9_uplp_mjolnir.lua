@@ -37,7 +37,7 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-    "[Mayhem]XQAAAQD7AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT7HVA5Cp6s0IpZjqVDrxu5AV7pK8cv+fie0uaOOm1E8NEXDrYVqMaPMyePPq+aksXhSNm/hJOr4kse6oaUVckdsZF0QgGaBjvQW7hZNtOJwZbVZxUpqXimv8sWq7/JK8BUEY8sBJHd3jcmpwup0/LA58aCa905Nav+rjfV33jLWW407BVNq1AqRb32Fl2aw8ekbRFWv8ltKouueXhpo199ngA="
+	"[Mayhem]XQAAAQADAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT7HVA5Cp6s0IpZjqVDrxu5AV7pK8cv+fie0uaOOm1E8NEXDrYVqMaPMyePPq+aksXhSNm/hJOr4kse6oaUVckdsZF0QgGaBjvQW7hZNtOJwZbVZxVM2rCUaA/zLrXwqgh23ZJU2FiZdOG85Q4VKC6j/g6jxtdSAFGOqhe7Tb98ddpVFD8ISBz1LFXN/0FoahhIhlC0yLT1rQskNtwWJgGOUZ6kAA=="
 }
 
 SWEP.DefaultBodygroups = "0000000000000000" -- Might as well prepare for the future
@@ -881,7 +881,15 @@ SWEP.Attachments = {
         Integral = "uplp_backup_optic_is_front",
         Hidden = true,
     },
-
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_bipod"),
+        Category = "uplp_bipod",
+        DefaultIcon = Material(defatt .. "bipod.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(-0.05, 2.2, 26.7),
+        Ang = Angle(90, 90, 180),
+        ExcludeElements = {"uplp_no_grip", "uplp_no_bipod"},
+    },
 
 
     -- Cosmetic shit
