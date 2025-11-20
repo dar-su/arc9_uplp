@@ -81,6 +81,9 @@ SWEP.ViewModelFOVBase = 60
 SWEP.ActivePos = Vector(-0.1, -1.1, 0.1)
 SWEP.ActiveAng = Angle(0, 0, 0)
 
+SWEP.SprintPos = Vector(2, -5, -20)
+SWEP.SprintAng = Angle(20, 45, 20)
+
 SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
 SWEP.BobSettingsSpeed = {0.91, 1, 1.0,    1, 0.92, 0.8}
 
