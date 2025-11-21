@@ -447,7 +447,8 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.35,
+        MinProgress = 0.3 / 0.75,
+        Mult = 0.75,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },

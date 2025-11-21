@@ -442,7 +442,8 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.3,
+        MinProgress = 0.15 / 0.5,
+        Mult = 0.5,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -456,7 +457,8 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.3,
+        MinProgress = 0.15 / 0.5,
+        Mult = 0.5,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },

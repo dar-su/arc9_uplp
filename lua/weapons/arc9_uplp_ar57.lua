@@ -484,8 +484,8 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.4,
-		Mult = 0.8,
+        MinProgress = 0.3 / 0.8,
+        Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },

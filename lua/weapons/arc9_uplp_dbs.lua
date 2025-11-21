@@ -472,13 +472,23 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
+        MinProgress = 0.5,
+        IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+        },
+    },
+    --[[ Looks buggy in SP??
+    ["draw_quick"] = {
+        Source = "holster",
+        Reverse = true,
         MinProgress = 0.4,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
     },
-
+    ]]
     ["fire"] = {
         Source = {"fire"},
         IKTimeLine = { { t = 0, lhik = 1 } },

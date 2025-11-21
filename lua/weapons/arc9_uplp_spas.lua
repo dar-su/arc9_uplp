@@ -67,11 +67,11 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-5.5, 4, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-16, 3, 4),
+    TPIKPos = Vector(-14, 3, 0),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
 
-    TPIKPosSightOffset = Vector(4, 1, -10),
+    TPIKPosSightOffset = Vector(4, 1, -6),
 }
 
 SWEP.ViewModelFOVBase = 66
@@ -487,7 +487,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.4,
+        MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
@@ -504,8 +504,8 @@ SWEP.Animations = {
     },
     ["holster_quick"] = {
         Source = "holster_quick",
+        MinProgress = 0.15 / 0.5,
         Mult = 0.5,
-        MinProgress = 0.3,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },

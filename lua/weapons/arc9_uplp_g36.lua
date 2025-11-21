@@ -504,7 +504,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster_nofold",
-        MinProgress = 0.4,
+        MinProgress = 0.4 / 1.1,
         Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
@@ -523,7 +523,6 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty_nofold",
         MinProgress = 0.4,
-        Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -543,8 +542,8 @@ SWEP.Animations = {
     },
     ["holster_unfold"] = {
         Source = "holster",
-        MinProgress = 0.48,
-        Mult = 0.85,
+        MinProgress = 0.4 / 0.75,
+        Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30, c = ca },
@@ -565,8 +564,8 @@ SWEP.Animations = {
     },
     ["holster_empty_unfold"] = {
         Source = "holster_empty",
-        MinProgress = 0.48,
-        Mult = 0.85,
+        MinProgress = 0.4 / 0.75,
+        Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "stock_grab.ogg", t = 0 / 30, c = ca },
@@ -575,8 +574,8 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_quick"] = {
-        Source = "draw_quick",
-        MinProgress = 0.0025,
+        Source = "draw_nofold",
+        MinProgress = 0.5,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -584,7 +583,8 @@ SWEP.Animations = {
     },
     ["holster_quick"] = {
         Source = "holster_quick",
-        MinProgress = 0.25,
+        MinProgress = 0.25 / 0.5,
+        Mult = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -600,7 +600,8 @@ SWEP.Animations = {
     },
     ["holster_empty_quick"] = {
         Source = "holster_empty_quick",
-        MinProgress = 0.25,
+        MinProgress = 0.25 / 0.5,
+        Mult = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
         },
