@@ -48,8 +48,8 @@ SWEP.TPIKNoSprintAnim = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-8.5, 13, 5),
     Ang = Angle(0, 35, 70),
-    TPIKPos = Vector(7, 3, 2),
-    TPIKAng = Angle(-10, 65, 90),
+    TPIKPos = Vector(-4, -2, -2),
+    TPIKAng = Angle(12, 12, 90),
     Scale = 1
 }
 

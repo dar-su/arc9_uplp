@@ -71,13 +71,13 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-7.5, 4.4, -6),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-16, 3, -1),
-    TPIKAng = Angle(-5, 0, 180),
+    TPIKPos = Vector(-18, 5, 8),
+    TPIKAng = Angle(-5, -0, 180+12),
     Scale = 1,
 
-    TPIKPosAlternative = Vector(-8, 3, -2), -- enabled with SWEP.TPIKAlternativePos, for grips here
-    TPIKPosSightOffset = Vector(3, 1, -4.5),
-    TPIKHolsterOffset = Vector(15, 1, -4),
+    TPIKPosAlternative = Vector(-12, 4, 0), -- enabled with SWEP.TPIKAlternativePos, for grips here
+    TPIKPosSightOffset = Vector(3, 1, -8),
+    TPIKHolsterOffset = Vector(12, 0, -2),
 }
 
 SWEP.NonTPIKAnimReload = ACT_HL2MP_GESTURE_RELOAD_REVOLVER

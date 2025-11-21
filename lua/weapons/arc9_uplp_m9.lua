@@ -63,11 +63,11 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-8, 3, -4.5),
     Ang = Angle(0, 0, 180),
-    TPIKPos = Vector(-16, 3, -2),
+    TPIKPos = Vector(-18, 5, 8),
     TPIKAng = Angle(-5, -0, 180),
     Scale = 1,
 
-    TPIKPosSightOffset = Vector(3, 1, -4.5),
+    TPIKPosSightOffset = Vector(3, 1, -8),
     TPIKHolsterOffset = Vector(12, 0, -2),
 }
 
@@ -78,7 +78,7 @@ SWEP.ActiveAng = Angle(0, 0, -1)
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
-SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_PISTOL
+SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour

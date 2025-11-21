@@ -88,11 +88,11 @@ SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-5.5, 4, -5),
     Ang = Angle(-5, 0, 180),
-    TPIKPos = Vector(-8, 2, -2),
+    TPIKPos = Vector(-12, 4, 5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
 
-    TPIKPosSightOffset = Vector(0, 3, -4),
+    TPIKPosSightOffset = Vector(4, 1, -10),
 }
 
 SWEP.ViewModelFOVBase = 66
