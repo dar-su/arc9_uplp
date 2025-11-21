@@ -258,11 +258,12 @@ SWEP.DropMagazineVelocity = Vector(0, -15, 10)
 -- urbna!
 local pathUT = ")uplp_urban_temp/ar15/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathRZ = ")uplp_rz/ar15/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.wav",
-    pathUT .. "fire-02.wav",
-    pathUT .. "fire-03.wav",
+    pathRZ .. "fire-01.wav",
+    pathRZ .. "fire-02.wav",
+    pathRZ .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
