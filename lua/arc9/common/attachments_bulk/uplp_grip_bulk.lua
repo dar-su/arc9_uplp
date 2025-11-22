@@ -98,7 +98,8 @@ ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilAutoControlMult = 0.85
 ATT.SwayMultSights = 1.3
 
-ATT.ModelOffset = Vector(-1, 0, 0)
+ATT.ModelOffset = Vector(0, -0.5, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_handstop")
 
@@ -132,7 +133,8 @@ ATT.AimDownSightsTimeMult = 0.9
 ATT.RecoilAutoControlMult = 0.85
 ATT.SwayMultSights = 1.3
 
-ATT.ModelOffset = Vector(-1, 0, 0)
+ATT.ModelOffset = Vector(0, -0.5, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_handstop_black")
 

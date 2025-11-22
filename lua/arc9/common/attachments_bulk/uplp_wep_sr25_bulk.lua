@@ -865,6 +865,8 @@ ATT.SortOrder = 1
 ATT.Category = "uplp_mjolnir_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ActivateElements = {"uplp_no_bipod"}
+
 -- Positives
 ATT.SpreadAddHipFire = -0.02
 ATT.AimDownSightsTimeAdd = -0.1
