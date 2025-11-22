@@ -415,11 +415,20 @@ ATT.Model = "models/weapons/arc9/uplp/tac_usp_lam.mdl"
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        PrintName = ARC9:GetPhrase("uplp_togglestat_laser"),
         Laser = true,
         LaserStrength = 1,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
+        -- Positives
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_flash"),
 
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
@@ -428,11 +437,6 @@ ATT.ToggleStats = {
         FlashlightFOV = 31,
         FlashlightAttachment = 1,
 
-        Flare = true,
-        FlareColor = Color(255, 0, 0),
-        FlareSize = 1,
-        FlareAttachment = 1,
-        FlareFocus = false,
         -- Positives
         SpreadAddHipFire = -0.003,
         RecoilPerShotMultHipFire = 0.75,
@@ -461,7 +465,7 @@ ATT.Category = {"uplp_usp_tac"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0.05, 0, 0.37)
-ATT.ModelAngleOffset = Angle(0, 180, 0)
+ATT.ModelAngleOffset = Angle(-1.45, 180, 0)
 
 ATT.ExcludeElements = {"uplp_usp_slide_compact", "uplp_usp_slide_expert", "uplp_usp_slide_elite", "uplp_usp_muz_heavy", "uplp_usp_muz_match"}
 
