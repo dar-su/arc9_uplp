@@ -91,7 +91,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
-ATT.ExcludeElements = {"uplp_shortopticonly"}
+-- ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "553.png", "mips smooth")
 
