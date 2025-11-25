@@ -319,8 +319,11 @@ SWEP.ShootSound = {
     pathUT .. "9mm/fire-9-02.wav",
     pathUT .. "9mm/fire-9-03.wav",
 }
-
-SWEP.ShootSoundSilenced = nil
+SWEP.ShootSoundSilenced = {
+    pathUT .. "9mm/fire-sup-01.wav",
+    pathUT .. "9mm/fire-sup-02.wav",
+    pathUT .. "9mm/fire-sup-03.wav",
+}
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
