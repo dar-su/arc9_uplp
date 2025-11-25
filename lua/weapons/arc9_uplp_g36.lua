@@ -134,7 +134,7 @@ SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
-SWEP.VisualRecoil = 0.6
+SWEP.VisualRecoil = 0.4
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
 SWEP.VisualRecoilUp = 0 -- Vertical tilt
