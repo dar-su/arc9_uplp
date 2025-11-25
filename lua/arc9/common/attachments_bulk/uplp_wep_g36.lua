@@ -658,12 +658,6 @@ end
 ARC9.LoadAttachment(ATT, "uplp_g36_mag_drum")
 
 
-
-
-
-
-
-
 ---------- uplp_g36_bipod
 
 
@@ -685,5 +679,10 @@ ATT.Bipod = true
 ATT.SprintToFireTimeAdd = 0.05
 
 ATT.ExcludeElements = {"uplp_grip_rk45"}
+
+ATT.Model = "models/weapons/arc9/uplp/g36_lhik_bipod.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(-30.5, -2.8, 3.9)
 
 ARC9.LoadAttachment(ATT, "uplp_g36_bipod")

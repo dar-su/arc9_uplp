@@ -386,16 +386,56 @@ $sequence "reload_empty100" {
 
 
 
-// $sequence "inspect" {
-// 	"anims\inspect_dum.smd"
-// 	// snap
-// 	fps 30
-// }
-// $sequence "inspect_empty" {
-// 	"anims\inspect_dum_empty.smd"
-// 	// snap
-// 	fps 30
-// }
+$sequence "inspect" {
+	"anims\inspect_cylo.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty" {
+	"anims\inspect_cylo_empty.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_bipod" {
+	"anims\inspect_cylo_bipod.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_bipod" {
+	"anims\inspect_cylo_bipod_empty.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_lhik" {
+	"anims\inspect_cylo_lhik.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty_lhik" {
+	"anims\inspect_cylo_lhik_empty.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_drum" {
+	"anims\inspect_cylo_drum.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_drum_lhik" {
+	"anims\inspect_cylo_drum_empty.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_short" {
+	"anims\inspect_cylo_short.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_short_lhik" {
+	"anims\inspect_cylo_short_empty.smd"
+	// snap
+	fps 30
+}
 
 
 

@@ -844,44 +844,49 @@ SWEP.Animations = {
 
     -- Inspecc --
 
-    -- ["inspect"] = {
-    --     Source = {"inspect"},
-    --     EventTable = {
-    --         { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, c = ca, v = 0.8 },
-    --         { s = pathRZ .. "chpull.ogg", t = 91 / 30, c = ca, v = 1 },
-    --         { s = pathRZ .. "chamber.ogg", t = 118 / 30, c = ca, v = 1 },
-    --         { s = pathUTC .. "cloth_3.ogg", t = 122 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 130 / 30, c = ca, v = 0.8 },
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.15, lhik = 0 },
-    --         { t = 0.65, lhik = 0 },
-    --         { t = 0.85, lhik = 0 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    -- },
-    -- ["inspect_empty"] = {
-    --     Source = {"inspect_empty"},
-    --     EventTable = {
-    --         { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "cloth_3.ogg", t = 100 / 30, c = ca, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 110 / 30, c = ca, v = 0.8 },
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.15, lhik = 0 },
-    --         { t = 0.65, lhik = 0 },
-    --         { t = 0.85, lhik = 0 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    -- },
+    ["inspect"] = {
+        Source = {"inspect"},
+        EventTable = {
+            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 47 / 30, c = ca, v = 0.8 },
+            -- { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 59 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "wah/grab.ogg", t = 78 / 30, c = ca, v = 1 },
+            { s = pathRZ .. "wah/chback.ogg", t = 84 / 30, c = ca, v = 1 },
+            { s = pathRZ .. "wah/boltforward.ogg", t = 100 / 30, c = ca, v = 1 },
+            { s = pathRZ .. "wah/boing.ogg", t = 103 / 30, c = ca, v = 0.1, p = 80 },
+            { s = pathUTC .. "cloth_3.ogg", t = 109 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 120 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.01, lhik = 1 },
+            { t = 0.08, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.9, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["inspect_empty"] = {
+        Source = {"inspect_empty"},
+        EventTable = {
+            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 47 / 30, c = ca, v = 0.8 },
+            -- { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 59 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 109 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 120 / 30, c = ca, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.85, lhik = 0 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+
     -- Firemodee --
 
     ["firemode_1"] = {
@@ -953,6 +958,21 @@ SWEP.Animations = {
     },
 
 }
+
+SWEP.Hook_TranslateSource = function(swep, anim)
+    if anim == "inspect" or anim == "inspect_empty" then
+        local eles = swep:GetElements()
+        if eles["uplp_grip_cqr"] or eles["uplp_ubgl_m203_rail"] then
+            return anim .. "_lhik"
+        elseif eles["uplp_g36_hg_c"] or eles["uplp_g36_hg_modern_short"] then
+            return anim .. "_short"
+        elseif eles["uplp_g36_bipod"] then
+            return anim .. "_bipod"
+        elseif eles["uplp_g36_mag_drum"] then
+            return anim .. "_drum"
+        end
+    end
+end
 
 ---- Attachments
 SWEP.Hook_ModifyBodygroups = function(wep, data)
