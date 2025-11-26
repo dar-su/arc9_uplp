@@ -263,11 +263,12 @@ local pathUT = ")uplp_urban_temp/ar15/"
 local pathUTM14 = ")uplp_urban_temp/m14/"
 local pathUTScar = ")uplp_urban_temp/scar/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathRZ10 = ")uplp_rz/ar10/"
 
 SWEP.ShootSound = {
-    ")uplp_rz/fal/stev/fire-01.wav",
-    ")uplp_rz/fal/stev/fire-02.wav",
-    ")uplp_rz/fal/stev/fire-03.wav",
+    pathRZ10 .. "fire-01.wav",
+    pathRZ10 .. "fire-02.wav",
+    pathRZ10 .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -344,10 +345,9 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUTM14 .. "mech-01.wav",
-    pathUTM14 .. "mech-02.wav",
-    pathUTM14 .. "mech-03.wav",
-    pathUTM14 .. "mech-04.wav",
+    pathRZ10 .. "mech-01.wav",
+    pathRZ10 .. "mech-02.wav",
+    pathRZ10 .. "mech-03.wav",
 }
 
 local thetoggle = {{
