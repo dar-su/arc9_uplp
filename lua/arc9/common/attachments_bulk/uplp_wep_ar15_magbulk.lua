@@ -3,6 +3,7 @@ local ATT = {}
 local iconfolder = "entities/uplp_attachements/ar15/mag/"
 
 local pathUT = ")uplp_urban_temp/ar15/"
+local pathRZ = ")uplp_rz/ar15/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 local shoot9 = {
@@ -545,7 +546,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
-    if data.sound == pathUT .. "magout.ogg" then
+    if data.sound == pathRZ .. "magout.ogg" then
         data.sound = pathUT .. "pmagout.ogg"
     elseif data.sound == pathUT .. "magin.ogg" then
         data.sound = pathUT .. "pmagin.ogg"
