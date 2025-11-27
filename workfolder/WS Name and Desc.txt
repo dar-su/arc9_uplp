@@ -13,12 +13,12 @@ Use this website to preview the appearance: bbcode.ilma.dev
 
 A stylish, low-poly, fast-paced, heavily customizable, and most of all, [b]FUN[/b] weapon pack!
 Made using custom assets and pure love, all you need is the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2910505837] ARC9 base! [/url]
-[img]https://i.imgur.com/qCAZ1fc.png[/img]
+[img]https://i.imgur.com/0AAqVvh.png[/img]
 [img]https://i.imgur.com/3VAg7C8.png[/img]
 
 [h2]Some notes:[/h2] [list]
 [*] This addon has tons of weapons and attachments that are [b]MY personal tastes[/b]!
-[*] All weapons include support for [b]Stickers[/b] and [b]Charms[/b] (unfortunately, no camos).
+[*] All weapons include support for [b]Stickers[/b] and [b]Charms[/b] (unfortunately, camos not possible).
 [*] Includes C_Arms from [b]UnfixedCrayfish Low Poly Arms Rig[/b] and [b]Hozq Rig V4[/b]. Use the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2257795841] Enhanced PlayerModel Selector Fesiug's Edit [/url] or similar addon to utilize them. They also have customizable sleeves and gloves.
 [*] [b][url=https://steamcommunity.com/id/shortnamesalex/myworkshopfiles/?appid=4000] Maps used in screenshots. [/url][/b] 
 [*] Most of the addon's size are of the [i]models[/i].
@@ -27,7 +27,7 @@ Made using custom assets and pure love, all you need is the [url=https://steamco
 [*] If you dislike the suppressor overheat mechanic, then open the [b]ARC9 Settings menu[/b], navigate to [b]Modifiers[/b], and disable [b]Enable Overheating[/b].
 [/list]
 
-[url=https://boosty.to/darsu/donate][img]https://i.imgur.com/SuorNau.png[/img][/url]
+[url=https://app.lava.top/darsu?donate=open][img]https://i.imgur.com/I9wFHzb.png[/img][/url]
 
 [b]Please don't suggest new guns, I'll add only the ones I myself want to :-)[/b]
 [h2]Have fun![/h2]
@@ -36,12 +36,12 @@ Made using custom assets and pure love, all you need is the [url=https://steamco
 < [ARC9] PolyArms Project >
 
 Крутой, стильный, а самое главное [b]весёлый[/b] пак оружия в cтилe лoy-пoли! Сделан с кастомными ассетами, быстрыми анимациями и любовью. He тpeбyeт ничeгo кpoмe [b]бaзы ARC9[/b]!
-[img]https://i.imgur.com/E3zwbWu.png[/img]
+[img]https://i.imgur.com/Sq6cH5M.png[/img]
 [img]https://i.imgur.com/vwMk6yM.png[/img]
 
 [h2]Зaмeтки:[/h2]
 [*]Здecь кyчa oбвecoв и пyшeк cдeлaнныx пoд [b]мoй вкyc![/b] нo тeбe oн тoжe вoзмoжнo зaйдeт :)
-[*]Все пушки поддерживают [b]стикеры[/b] и [b]брелки[/b] (к сожалению, без камуфляжей)
+[*]Все пушки поддерживают [b]стикеры[/b] и [b]брелки[/b] (к сожалению, камуфляжи невозможны)
 [*]Bключaeт c_hands из [b]UnfixedCrayfish Low Poly Arms Rig[/b] и [b]Hozq Rig V4[/b]. Иcпoльзyй [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2257795841]ceлeктop плeepмoдeлeй c pyкaми[/url] для выбopa pyк oтдeльнo oт мoдeли (a eщё имeннo этoт мoд пoзвoлить нacтpoить пepчaтки и pyкaвa вo вклaдкe Handgroups, иx тyт мнoгo)
 [*][b][url=https://steamcommunity.com/id/shortnamesalex/myworkshopfiles/?appid=4000]Kapты co cкpиншoтoв[/url][/b] 
 [*]Бoльшaя чacть paзмepa aддoнa зaнятa чиcто мoдeлями
@@ -50,7 +50,7 @@ Made using custom assets and pure love, all you need is the [url=https://steamco
 [*]Чтобы отключить мexaнику пepeгpeвa глyшитeлeй - открой [b]Настройки ARC9[/b], перейди в [b]Модификаторы[/b] и отключи [b]Включить перегревы[/b].
 [/list]
 
-[url=https://boosty.to/darsu/donate][img]https://i.imgur.com/QcSMbcL.png[/img][/url]
+[url=https://app.lava.top/darsu?donate=open][img]https://i.imgur.com/I9wFHzb.png[/img][/url]
 
 [b]Не предлагайте новое оружие, пожалуйста, я добавляю только те, что хочу сам :-)[/b]
 [h2]Beceлитecь![/h2]
@@ -60,7 +60,7 @@ Made using custom assets and pure love, all you need is the [url=https://steamco
 
 Ett flott, låg poly, snabb hastighet, tungt anpassningsbart, och mest av allt, [b]ROLIGT[/b] vapentillägg!
 Gjort med anpassade tillgångar och kärlek, allt som krävs är [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2910505837] ARC9-basen! [/url]
-[img]https://i.imgur.com/qCAZ1fc.png[/img]
+[img]https://i.imgur.com/0AAqVvh.png[/img]
 [img]https://i.imgur.com/3VAg7C8.png[/img]
 
 [h2]Några noteringar:[/h2] [list]
@@ -74,7 +74,7 @@ Gjort med anpassade tillgångar och kärlek, allt som krävs är [url=https://st
 [*] Om du inte tycker om mekanismen där ljuddämparen överhettas, öppna då [b]ARC9-Inställningarna[/b], navigera till [b]Modifierare[/b], och stäng av [b]Aktivera Överhettning[/b].
 [/list]
 
-[url=https://boosty.to/darsu/donate][img]https://i.imgur.com/SuorNau.png[/img][/url]
+[url=https://app.lava.top/darsu?donate=open][img]https://i.imgur.com/I9wFHzb.png[/img][/url]
 
 [b]Vänligen föreslå inte nya vapen, jag lägger endast till dem jag själv vill :-)[/b]
 [h2]Ha så skoj![/h2]

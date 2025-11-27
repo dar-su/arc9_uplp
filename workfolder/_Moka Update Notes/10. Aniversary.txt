@@ -12,7 +12,7 @@ Celebrate PolyArms' second anniversary with plenty of new toys to play with, plu
 	[*] Added the [b]Pushka-23[/b], the result of someone taking a rejected 23mm anti-aircraft barrel and building a shotgun around it
 	[*] Added the [b]MSW .45[/b], a well-known modular German handgun wielded by infiltration specialists, resistance fighters and officers alike
 	[*] [b]PV-9[/b] was rescaled to proper size and got its animations a bit improved blehh i suck at english please rewrite (idk if this should be in new content or changed)
-	[*] An few brand-new attachments!
+	[*] An few new attachments!
 [/list]
 
 [h1]Changed content[/h1]
@@ -23,10 +23,11 @@ Celebrate PolyArms' second anniversary with plenty of new toys to play with, plu
 	[*] Fixed annoying weapon model snap after firing in sights
 	[*] CMP .380 now has trigger delay
 	[*] Removed idle camera movement on some guns
-	[*] Lots of small changes & fixes across all of the guns
 	[*] All weapons now have dryfire animation with sound
+	[*] Holster animations now have consistent speed based on weapon type	
+	[*] Lots of small changes & fixes across all of the guns
 	
-	[*] Authority SBS: New firing sounds
-	[*] MRD57, SK Shadow & AK: New reload sounds
+	[*] AR-15 & Authority SBS: New firing sounds
+	[*] MRD57, SK Shadow, AR-15 & AK: New reload sounds
 	[*] Firing sounds on all weapons now use the correct pitch
 [/list]
