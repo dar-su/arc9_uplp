@@ -125,11 +125,12 @@ ARC9.LoadAttachment(ATT, "uplp_vector_stock_buffer")
 -------------------- MAGAZINES
 
 local pathUT = ")uplp_urban_temp/mp5/"
+local pathRZ = ")uplp_rz/vector/"
 
 local shoot40 = {
-    pathUT .. "fire-40-01.wav",
-    pathUT .. "fire-40-02.wav",
-    pathUT .. "fire-40-03.wav",
+    pathRZ .. "fire-45-01.wav",
+    pathRZ .. "fire-45-02.wav",
+    pathRZ .. "fire-45-03.wav",
 }
 
 local shoot40sil = {
