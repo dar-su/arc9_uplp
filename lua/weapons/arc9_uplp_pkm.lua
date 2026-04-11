@@ -402,7 +402,6 @@ local mechh = {
     pathUTT .. "mech-01.wav",
     pathUTT .. "mech-02.wav",
     pathUTT .. "mech-03.wav",
-    pathUTT .. "mech-04.wav",
 }
 
 local thetoggle = {{
