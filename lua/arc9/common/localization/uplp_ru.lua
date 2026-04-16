@@ -3581,12 +3581,8 @@ L["uplp_vector_stock_def.printname"] = "Складной приклад"
 L["uplp_vector_stock_def.compactname"] = "Приклад"
 L["uplp_vector_stock_def.description"] = "Заводской складной приклад для Сервала GEN2."
 
--- L["uplp_vector_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
--- L["uplp_vector_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
 L["uplp_vector_stock_buffer.description"] = "Кастомная буферная трубка, совместимая с Сервалом GEN2. Позволяет устанавливать приклады, совместимые с AR-15."
 
--- L["uplp_vector_stock_awp.printname"] = ARC9:GetPhrase("uplp_ar15_stock_veryheavy.printname") or "ApexCore Systems Heavy Stock"
--- L["uplp_vector_stock_awp.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_veryheavy.compactname") or "ApexCore"
 L["uplp_vector_stock_awp.description"] = "Тяжелый приклад для Сервала GEN2, созданный компанией ApexCore Systems."
 
 ////// Mags
@@ -3630,3 +3626,17 @@ L["uplp_vector_skin_red.description"] = "Перекрашивает нижний
 L["uplp_vector_skin_orange.printname"] = "Охотничий оранжевый ресивер"
 L["uplp_vector_skin_orange.compactname"] = "Оранжевый"
 L["uplp_vector_skin_orange.description"] = "Перекрашивает нижний ресивер Сервала GEN2 в оранжевый.\nЧисто <color=160,160,255>косметика</color>."
+
+
+//////////////////// SIG SG 550
+-- L["uplp_weapon_sg550"] = "Krieg 90"
+-- L["uplp_weapon_sg550_desc"] = "The Krieg 90, manufactured by the Austrian manufacturer \"Eidgenössische Waffenfabrik\" (\"Federal Armory\"), was the replacement for the previous Austrian main service rifle, the STG-77. The Krieg 90 was built to be a modular platform, providing weapon configurations to every possible military unit, from marksmen and riflemen, to vehicle crew and paratroopers."
+
+-- L["uplp_weapon_sg550_real"] = "SIG SG 550"
+
+-- L["uplp_weapon_sg550sr"] = "Krieg 90 Sniper"
+-- L["uplp_weapon_sg551"] = "Krieg 90-1"
+-- L["uplp_weapon_sg552"] = "Krieg 90-2"
+-- L["uplp_weapon_sg553"] = "Krieg 90-3"
+
+-- L["uplp_weapon_sg550_manufacturer"] = "SIG Holding AG"

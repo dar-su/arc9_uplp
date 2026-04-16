@@ -3516,41 +3516,41 @@ local sr25brll = {
 -- L["uplp_g36_bipod.description"] = "Integrated bipod for the STG-95."
 
 //////////////////// Kriss Vector
--- L["uplp_weapon_vector"] = "Serval SMG"
--- L["uplp_weapon_vector_desc"] = "The Serval SMG is a compact submachine gun known for its distinctive futuristic design and unconventional recoil mitigation system that redirects energy downward rather than straight back. This design helps improve control during rapid fire, making it especially notable for its stability and reduced muzzle climb compared to traditional SMGs."
+-- L["uplp_weapon_vector"] = "Serval GEN2"
+-- L["uplp_weapon_vector_desc"] = "The Serval GEN2 is a compact submachine gun known for its distinctive futuristic design and unconventional recoil mitigation system that redirects energy downward rather than straight back. This design helps improve control during rapid fire, making it especially notable for its stability and reduced muzzle climb compared to traditional SMGs."
 
 -- L["uplp_weapon_vector_real"] = "KRISS Vector"
 
--- L["uplp_weapon_vector_45acp"] = "Serval .45 SMG"
+-- L["uplp_weapon_vector_45acp"] = "Serval GEN2 .45"
 
 -- L["uplp_weapon_vector_manufacturer"] = "KRISS USA"
 
 /////////// Attachments
 ////// Barrels
--- L["uplp_vector_barrel_short.printname"] = "Centurion Industries Frontend"
--- L["uplp_vector_barrel_short.compactname"] = "C.I."
--- L["uplp_vector_barrel_short.description"] = "Shortened barrel for the Serval SMG made by Centurion Industries."
+-- L["uplp_vector_barrel_short.printname"] = "Standard Short Barrel"
+-- L["uplp_vector_barrel_short.compactname"] = "Short"
+-- L["uplp_vector_barrel_short.description"] = "Factory-made short barrel for the Serval GEN2."
 
 -- L["uplp_vector_barrel_mid.printname"] = "Lisyan Tactical Model II-3 Frontend"
 -- L["uplp_vector_barrel_mid.compactname"] = "L.T. II-3"
--- L["uplp_vector_barrel_mid.description"] = "Medium-length barrel and handguard for the Serval SMG made by Lisyan Tactical."
+-- L["uplp_vector_barrel_mid.description"] = "Medium-length barrel and handguard for the Serval GEN2 made by Lisyan Tactical."
 
 -- L["uplp_vector_barrel_sup.printname"] = "Ghost Frontend"
 -- L["uplp_vector_barrel_sup.compactname"] = "Ghost"
--- L["uplp_vector_barrel_sup.description"] = "Aftermarket long handguard with integral suppressor for the Serval SMG."
+-- L["uplp_vector_barrel_sup.description"] = "Aftermarket long handguard with integral suppressor for the Serval GEN2."
 
 -- L["uplp_vector_barrel_long.printname"] = "Hoki Armory Frontend"
 -- L["uplp_vector_barrel_long.compactname"] = "H.A."
--- L["uplp_vector_barrel_long.description"] = "Long barrel and handguard for the Serval SMG, manufactured by Hoki Armory."
+-- L["uplp_vector_barrel_long.description"] = "Long barrel and handguard for the Serval GEN2, manufactured by Hoki Armory."
 
 ////// Stocks
 -- L["uplp_vector_stock_def.printname"] = "Foldable Stock"
 -- L["uplp_vector_stock_def.compactname"] = "Fold."
--- L["uplp_vector_stock_def.description"] = "Factory-built foldable stock made for the Serval SMG."
+-- L["uplp_vector_stock_def.description"] = "Factory-built foldable stock made for the Serval GEN2."
 
--- L["uplp_vector_stock_buffer.description"] = "Aftermarket buffer tube assembly compatible with the Serval SMG. Allows installation of AR-15 compatible stocks."
+-- L["uplp_vector_stock_buffer.description"] = "Aftermarket buffer tube assembly compatible with the Serval GEN2. Allows installation of AR-15 compatible stocks."
 
--- L["uplp_vector_stock_awp.description"] = "Heavy stock for the Serval SMG made by ApexCore Systems."
+-- L["uplp_vector_stock_awp.description"] = "Heavy stock for the Serval GEN2 made by ApexCore Systems."
 
 ////// Mags
 -- L["uplp_vector_mag_33.printname"] = "33-Round 9×19"
@@ -3567,16 +3567,16 @@ local sr25brll = {
 
 -- L["uplp_vector_mag_13.printname"] = "13-Round .45 ACP"
 -- L["uplp_vector_mag_13.compactname"] = "13R .45"
--- L["uplp_vector_mag_13.description"] = "Rechambers the Serval SMG to .45 ACP, providing it more stopping power. Also provides it with a shortened 13-round magazine.\n\nRestricted to <color=255,100,100>2-round burst</color>."
+-- L["uplp_vector_mag_13.description"] = "Rechambers the Serval GEN2 to .45 ACP, providing it more stopping power. Also provides it with a shortened 13-round magazine.\n\nRestricted to <color=255,100,100>2-round burst</color>."
 
 -- L["uplp_vector_mag_30.printname"] = "30-Round .45 ACP"
 -- L["uplp_vector_mag_30.compactname"] = "30R .45"
--- L["uplp_vector_mag_30.description"] = "Rechambers the Serval SMG to .45 ACP, providing it more stopping power. Also provides it with a 30-round magazine.\n\nExclusive to <color=255,255,100>Admin only</color>."
+-- L["uplp_vector_mag_30.description"] = "Rechambers the Serval GEN2 to .45 ACP, providing it more stopping power. Also provides it with a 30-round magazine.\n\nExclusive to <color=255,255,100>Admin only</color>."
 
 ////// Receivers
 -- L["uplp_vector_skin_blk.printname"] = "Black Receiver"
 -- L["uplp_vector_skin_blk.compactname"] = "Black"
--- L["uplp_vector_skin_blk.description"] = "Repainted lower receiver for the Serval SMG.\nPurely <color=160,160,255>cosmetic</color>."
+-- L["uplp_vector_skin_blk.description"] = "Repainted lower receiver for the Serval GEN2.\nPurely <color=160,160,255>cosmetic</color>."
 
 -- L["uplp_vector_skin_tan.printname"] = "Desert Tan Receiver"
 -- L["uplp_vector_skin_tan.compactname"] = "Tan"
@@ -3589,3 +3589,17 @@ local sr25brll = {
 
 -- L["uplp_vector_skin_orange.printname"] = "Hunter Orange Receiver"
 -- L["uplp_vector_skin_orange.compactname"] = "Orange"
+
+
+//////////////////// SIG SG 550
+-- L["uplp_weapon_sg550"] = "Krieg 90"
+-- L["uplp_weapon_sg550_desc"] = "The Krieg 90, manufactured by the Austrian manufacturer \"Eidgenössische Waffenfabrik\" (\"Federal Armory\"), was the replacement for the previous Austrian main service rifle, the STG-77. The Krieg 90 was built to be a modular platform, providing weapon configurations to every possible military unit, from marksmen and riflemen, to vehicle crew and paratroopers."
+
+-- L["uplp_weapon_sg550_real"] = "SIG SG 550"
+
+-- L["uplp_weapon_sg550sr"] = "Krieg 90 Sniper"
+-- L["uplp_weapon_sg551"] = "Krieg 90-1"
+-- L["uplp_weapon_sg552"] = "Krieg 90-2"
+-- L["uplp_weapon_sg553"] = "Krieg 90-3"
+
+-- L["uplp_weapon_sg550_manufacturer"] = "SIG Holding AG"

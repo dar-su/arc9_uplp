@@ -3653,3 +3653,17 @@ L["uplp_vector_skin_red.description"] = ARC9:GetPhrase("uplp_vector_skin_blk.des
 L["uplp_vector_skin_orange.printname"] = "Hunter Orange Receiver"
 L["uplp_vector_skin_orange.compactname"] = "Orange"
 L["uplp_vector_skin_orange.description"] = ARC9:GetPhrase("uplp_vector_skin_blk.description") or "Repainted lower receiver for the Serval GEN2.\nPurely <color=160,160,255>cosmetic</color>."
+
+
+//////////////////// SIG SG 550
+L["uplp_weapon_sg550"] = "Krieg 90"
+L["uplp_weapon_sg550_desc"] = "The Krieg 90, manufactured by the Austrian manufacturer \"Eidgenössische Waffenfabrik\" (\"Federal Armory\"), was the replacement for the previous Austrian main service rifle, the STG-77. The Krieg 90 was built to be a modular platform, providing weapon configurations to every possible military unit, from marksmen and riflemen, to vehicle crew and paratroopers."
+
+L["uplp_weapon_sg550_real"] = "SIG SG 550"
+
+L["uplp_weapon_sg550sr"] = "Krieg 90 Sniper"
+L["uplp_weapon_sg551"] = "Krieg 90-1"
+L["uplp_weapon_sg552"] = "Krieg 90-2"
+L["uplp_weapon_sg553"] = "Krieg 90-3"
+
+L["uplp_weapon_sg550_manufacturer"] = "SIG Holding AG"
