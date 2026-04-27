@@ -308,6 +308,10 @@ SWEP.DropMagazineSounds = {
 
 SWEP.DryFireSound = ")uplp_urban_temp/usp/" .. "dryfire.ogg"
 
+SWEP.TriggerDownSound = {path1911 .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {path1911 .. "trigger2.wav"}
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {

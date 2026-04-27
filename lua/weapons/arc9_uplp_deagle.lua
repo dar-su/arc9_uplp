@@ -287,12 +287,18 @@ SWEP.DropMagazineSounds = {
 
 SWEP.DryFireSound = pathUT .. "dryfire.ogg"
 
+SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+
 local mech = {
     pathUT .. "mech-01.wav",
     pathUT .. "mech-02.wav",
     pathUT .. "mech-03.wav",
     pathUT .. "mech-04.wav",
 }
+
+local last = {pathUT .. "mech_last.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -445,13 +451,13 @@ SWEP.Animations = {
         Source = "fire_empty",
         -- Time = 1,
         ShellEjectAt = 0.01,
-        EventTable = { { s = mech, t = 0, v = 0.99 } },
+        EventTable = { { s = last, t = 0, v = 0.99 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
         -- Time = 1,
         ShellEjectAt = 0.01,
-        EventTable = { { s = mech, t = 0, v = 0.99 } },
+        EventTable = { { s = last, t = 0, v = 0.99 } },
     },
 
     -- Reloads --
