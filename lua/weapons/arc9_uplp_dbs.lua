@@ -339,8 +339,10 @@ SWEP.PeekAng = Angle(0, 0.4, -40)
 
 -- urbna!
 local pathUT = ")uplp_urban_temp/dbs/"
+local path870 = ")uplp_urban_temp/870/"
 local pathNEW = ")uplp_rz/dbs/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathUT = ")uplp_urban_temp/dbs/"
 
 SWEP.ShootSound = {
     pathNEW .. "fire-01.wav",
@@ -382,6 +384,10 @@ SWEP.DistantShootSoundIndoorSilenced = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
+
+SWEP.TriggerDownSound = {path870 .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {path870 .. "trigger2.wav"}
 
 
 ---- Animations
