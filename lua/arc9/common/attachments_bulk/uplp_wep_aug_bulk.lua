@@ -35,7 +35,7 @@ local stats_mid = {
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.01, 9, 0.2825),
+        Pos = Vector(-0.01, 8, 0.2825),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -52,11 +52,12 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeMagnification = 1.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/aug.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_DisableRTVM = true
 
 ATT.ScopeScreenRatio = 500/1080
 

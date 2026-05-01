@@ -353,7 +353,7 @@ ATT.Sights = {
         SwayAddSights = sway_cqc,
     },
     {
-        Pos = Vector(-0.64, 13, -2.49),
+        Pos = Vector(-0.64, 10, -2.49),
         Ang = Angle(0, 0, 0),
         Magnification = 1.25,
         RTScopeFOV = 38 / 4,
@@ -382,12 +382,13 @@ ATT.RTScopeSubmatIndex = 3
 ATT.RTScopeMagnification = 4
 ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo4rt.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 0.5
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
-ATT.ScopeScreenRatio = 453/1080
+-- ATT.ScopeScreenRatio = 453/1080
+ATT.RTScopeNew_ShadowScale = 2.25
 
 ATT.DrawFunc = function(swep, model, wm)
     if !wm then
@@ -425,7 +426,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.448),
+        Pos = Vector(0, 6.5, -1.448),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -453,7 +454,7 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
@@ -489,7 +490,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -1.511),
+        Pos = Vector(0, 6.5, -1.511),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 45,
@@ -509,7 +510,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/elca.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
@@ -517,7 +518,7 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 538/1080
 
-ATT.Category = "uplp_optic_mid"
+ATT.Category = {"uplp_optic_mid", "eft_optic_small"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(1, 0, 0)
@@ -548,7 +549,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -1.15),
+        Pos = Vector(0, 9, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -583,7 +584,9 @@ ATT.RTScopeAdjustmentLevels = 3
 ATT.RTScopeMagnificationMin = 8
 ATT.RTScopeMagnificationMax = 16
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
+ATT.RTScopeNew_ShadowScale = 1.5
+ATT.RTScopeNew_ShadowIntensity = 2
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
@@ -642,6 +645,20 @@ ATT.DrawFunc = function(swep, model, wm)
         draw.SimpleText(text, "arc9uplp_bigass_range", 0, 1, textcolor, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
     cam.End3D2D()
 end
+
+ATT.RTScopeDrawFunc = function(swep, rtsize)
+    local w, h = rtsize, rtsize
+
+    surface.SetDrawColor(0, 0, 0, 150)
+    surface.SetFont("arc9uplp_halo_range")
+    local textw, texth = surface.GetTextSize(text .. " M")
+    surface.DrawRect((w - textw) / 2 + 190, (h - texth) / 2 + 100, textw + 20, texth)
+
+    surface.SetTextColor(255, 243, 80)
+    surface.SetTextPos((w - textw) / 2 + 200, (h - texth) / 2 + 100)
+    surface.DrawText(text .. " M")
+end
+
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -830,7 +847,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -1.15),
+        Pos = Vector(0, 10, -1.19),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -851,11 +868,12 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57/6
 ATT.RTScopeMagnification = 6
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/halo.png", "mips smooth")
-ATT.RTScopeReticleScale = 0.92
+ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 7
-ATT.RTScopeBlackBox = true  
-ATT.RTScopeBlackBoxShadow = false 
+-- ATT.RTScopeBlackBox = true  
+ATT.RTScopeNew_ReticleBlackBox = true 
+ATT.RTScopeNew_DisableShader = true 
 
 ATT.ScopeScreenRatio = 691/1080
 
@@ -863,43 +881,41 @@ ATT.ScopeScreenRatio = 691/1080
 ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
 ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 5/255,
-    ["$pp_colour_addg"] = 74/255,
-    ["$pp_colour_addb"] = 121/255,
-    ["$pp_colour_brightness"] = 0.07,
-    ["$pp_colour_contrast"] = 0.69,
-    ["$pp_colour_colour"] = 0.12,
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 0,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0.45,
+    ["$pp_colour_contrast"] = 0.4,
+    ["$pp_colour_colour"] = 0.2,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
 ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 15/255,
-    ["$pp_colour_addg"] = 74/255,
-    ["$pp_colour_addb"] = 200/255,
-    ["$pp_colour_brightness"] = -0.4,
-    ["$pp_colour_contrast"] = 1,
-    ["$pp_colour_colour"] = -0.9,
+    ["$pp_colour_addr"] = 0/255,
+    ["$pp_colour_addg"] = 0/255,
+    ["$pp_colour_addb"] = 0/255,
+    ["$pp_colour_brightness"] = 0.35,
+    ["$pp_colour_contrast"] = 1.2,
+    ["$pp_colour_colour"] = 0.2,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
-
+ATT.RTScopeNew_FPSLock = 50
 ATT.RTScopeCustomPPFunc = function(swep)
-    DrawMotionBlur(0.7, 0.85, 1/40)
+    -- DrawMotionBlur(0.7, 0.85, 1/40)
     DrawBloom(0.31, 1.4, 1.15, 0, 0, 1, 1, 1, 1)
     -- DrawSharpen(4, 0.6)
 end
 
-ATT.RTScopeFLIRHotOnlyFunc = function(swep)
-    DrawSharpen(4, 0.6)
-    DrawSobel(0.03)
-end
+-- ATT.RTScopeFLIRHotOnlyFunc = function(swep)
+-- end
 
-ATT.RTScopePostInvertFunc = function(swep)
-    DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
-    DrawSharpen(4, 0.6)
-end
+-- ATT.RTScopePostInvertFunc = function(swep)
+--     -- DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
+--     -- DrawSharpen(4, 0.6)
+-- end
 
 
 
@@ -907,7 +923,7 @@ if CLIENT then
     
     surface.CreateFont( "arc9uplp_halo_range", {
         font = "Venryn Sans",
-        size = 50,
+        size = 60,
         weight = 500,
         antialias = true,
         extended = true,
@@ -983,7 +999,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 9, -1.235),
+        Pos = Vector(0, 8.5, -1.235),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -1002,11 +1018,12 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 2
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/pso.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 0.8
 ATT.RTScopeColorable = false 
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.1
 
 ATT.ScopeScreenRatio = 679/1080
 
@@ -1391,7 +1408,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 5.5, -1.328),
+        Pos = Vector(0, 5.25, -1.328),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 45,
@@ -1410,7 +1427,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 3
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/somescope.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 0.6
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
@@ -1444,7 +1461,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 6, -1.635),
+        Pos = Vector(0, 8, -1.635),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -1465,7 +1482,7 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 3
 ATT.RTScopeMagnification = 1.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.2
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
@@ -1506,7 +1523,7 @@ local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 12, -1.49),
+        Pos = Vector(0, 10.5, -1.49),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1543,11 +1560,13 @@ ATT.RTScopeFOVMax = 57 / 8
 ATT.RTScopeMagnificationMin = 6
 ATT.RTScopeMagnificationMax = 10
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.2
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.3
+ATT.RTScopeNew_ShadowIntensity = 1.5
 
 ATT.ScopeScreenRatio = 815/1080
 
@@ -1585,7 +1604,7 @@ local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 10, -1.69),
+        Pos = Vector(0, 8.5, -1.69),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1629,18 +1648,19 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeAdjustable = true
-ATT.RTScopeAdjustmentLevels = 1
+ATT.RTScopeAdjustmentLevels = 3
 ATT.RTScopeFOVMin = 57
 ATT.RTScopeFOVMax = 57 / 6
 ATT.RTScopeMagnificationMin = 1
 ATT.RTScopeMagnificationMax = 6
 ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeReticle = R0
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.4
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.0
 
 ATT.ScopeScreenRatio = 618/1080
 
@@ -1674,7 +1694,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 13, -1.305),
+        Pos = Vector(0, 10, -1.305),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1700,6 +1720,7 @@ ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.2
 
 ATT.ScopeScreenRatio = 664/1080
 
@@ -1742,7 +1763,7 @@ ATT.Attachments = {
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 14, -1.38),
+        Pos = Vector(0, 11.5, -1.38),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1768,6 +1789,7 @@ ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.3
 
 ATT.ScopeScreenRatio = 763/1080
 
@@ -1904,7 +1926,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 14, -1.33),
+        Pos = Vector(0, 10.5, -1.33),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1925,11 +1947,12 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 6
 ATT.RTScopeMagnification = 10
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/optic.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.15
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.35
 
 ATT.ScopeScreenRatio = 637/1080
 
@@ -1964,7 +1987,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 14, -1.885),
+        Pos = Vector(0, 10.5, -1.885),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -1985,13 +2008,13 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 12
 ATT.RTScopeMagnification = 12
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/dedal.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
-
-ATT.ScopeScreenRatio = 711/1080
+ATT.RTScopeNew_ShadowScale = 1.7
+-- ATT.ScopeScreenRatio = 711/1080
 
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2024,7 +2047,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 14, -1.35),
+        Pos = Vector(0, 11, -1.35),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 20,
@@ -2045,11 +2068,12 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 7
 ATT.RTScopeMagnification = 7
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/old.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.3
 
 ATT.ScopeScreenRatio = 0.66
 
@@ -2096,7 +2120,7 @@ ATT.Sights = {
         SwayAddSights = sway_cqc,
     },
     {
-        Pos = Vector(0, 10, -1.4675),
+        Pos = Vector(0, 9, -1.4675),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -2124,13 +2148,14 @@ ATT.HoloSightDepthAdjustment = -0.003
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV = 5 -- idk 
+ATT.RTScopeMagnification = 3
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2rt.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 0.6
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.5
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2174,7 +2199,7 @@ ATT.Sights = {
         SwayAddSights = sway_cqc,
     },
     {
-        Pos = Vector(0, 11.5, -1.675),
+        Pos = Vector(0, 10, -1.675),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -2202,13 +2227,14 @@ ATT.HoloSightDepthAdjustment = -0.003
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeFOV =  5 -- idk 
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo3rt.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeMagnification = 3
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2rt.png", "mips smooth")
+ATT.RTScopeReticleScale = 0.6
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 1.5
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2402,7 +2428,7 @@ ATT.Sights = {
         SwayAddSights = sway_cqc,
     },
     {
-        Pos = Vector(0, 8, -0.83),
+        Pos = Vector(0, 7, -0.83),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
@@ -2430,13 +2456,17 @@ ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 5 -- idk 
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/devo.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 0.9
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.ScopeScreenRatio = 316/1080
 ATT.RTScopeNoBlur = true
+
+ATT.RTScopeNew_ForceExpensive = true
+ATT.RTScopeNew_DisableRTVM = true
+ATT.RTScopeNew_ShadowScale = 1.5
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2517,7 +2547,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(-0.01, 10, -3.295),
+        Pos = Vector(-0.01, 9, -3.295),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -2538,7 +2568,7 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 2
 ATT.RTScopeMagnification = 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/pso.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.1
+ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = false 
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
@@ -2701,7 +2731,7 @@ ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 17
 ATT.RTScopeMagnification = 1
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/yellowx2.png", "mips smooth")
-ATT.RTScopeReticleScale = 1
+ATT.RTScopeReticleScale = 0.8
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 3
 ATT.RTScopeBlackBox = false 
@@ -2712,72 +2742,80 @@ ATT.RTScopeNoBlur = true
 ATT.RTCollimator = true
 ATT.ScopeScreenRatio = 350/1080
 
+ATT.RTScopeNew_FrontShadow = false 
+ATT.RTScopeNew_BackShadow = true 
+ATT.RTScopeNew_BackShadowScale = 4
+ATT.RTScopeNew_ChromaticAberrationMult = 0.01
+ATT.RTScopeNew_ShadowIntensity = 0.9
+
 
 
 ATT.RTScopeFLIR = true
 ATT.RTScopeFLIRSolid = false -- Solid color FLIR instead of like a shaded look
 ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 0.5,
-    ["$pp_colour_addg"] = 0.5,
-    ["$pp_colour_addb"] = 0.5,
-    ["$pp_colour_brightness"] = 0,
-    ["$pp_colour_contrast"] = 0.9,
-    -- ["$pp_colour_addr"] = 25/255*3,
-    -- ["$pp_colour_addg"] = 11/255*3,
-    -- ["$pp_colour_addb"] = 0,
-    -- ["$pp_colour_brightness"] = 0,
-    -- ["$pp_colour_contrast"] = 0.9,
-    ["$pp_colour_colour"] = 1,
-    ["$pp_colour_mulr"] = 0,
-    ["$pp_colour_mulg"] = 0,
-    ["$pp_colour_mulb"] = 0,
-    ["$pp_colour_inv"] = 1
-}
-ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
-    ["$pp_colour_addr"] = 0,
-    ["$pp_colour_addg"] = 11/255*7,
-    ["$pp_colour_addb"] = 25/255*7,
-    ["$pp_colour_brightness"] = -.25,
-    ["$pp_colour_contrast"] = 0.7,
+    ["$pp_colour_addr"] = 25/255*5,
+    ["$pp_colour_addg"] = 11/255*5,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_contrast"] = 1.25,
+    ["$pp_colour_brightness"] = -0.4,
+    ["$pp_colour_addb"] = 0,
     ["$pp_colour_colour"] = 0.5,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0,
     ["$pp_colour_inv"] = 0
 }
+ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
+    ["$pp_colour_addr"] = 0,
+    ["$pp_colour_addg"] = 0,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0.23,
+    ["$pp_colour_contrast"] = 1,
+    ["$pp_colour_colour"] = 0.5,
+    ["$pp_colour_mulr"] = 0,
+    ["$pp_colour_mulg"] = 0,
+    ["$pp_colour_mulb"] = 0,
+    ["$pp_colour_inv"] = 1
+}
 
 local meow = {
     ["$pp_colour_addr"] = 0,
-    ["$pp_colour_addg"] = 11/255*1,
-    ["$pp_colour_addb"] = 25/255*1,
-	[ "$pp_colour_brightness" ] = 0.1,
-	[ "$pp_colour_contrast" ] = 1.5,
-	[ "$pp_colour_colour" ] = 1.15,
-	[ "$pp_colour_mulr" ] = 0,
-	[ "$pp_colour_mulg" ] = 0,
-	[ "$pp_colour_mulb" ] = 0,
+    ["$pp_colour_addg"] = 0,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0,
+    ["$pp_colour_contrast"] = 1.5,
+	["$pp_colour_colour" ] = 1,
+	["$pp_colour_mulr" ] = 0,
+	["$pp_colour_mulg" ] = 0,
+	["$pp_colour_mulb" ] = 0,
+    ["$pp_colour_inv"] = 1
+}
+local meow2 = {
+    ["$pp_colour_addr"] = 25/255*4,
+    ["$pp_colour_addg"] = 11/255*4,
+    ["$pp_colour_addb"] = 0,
+    ["$pp_colour_brightness"] = 0,
+    ["$pp_colour_contrast"] = 1,
+	["$pp_colour_colour" ] = 1,
+	["$pp_colour_mulr" ] = 0,
+	["$pp_colour_mulg" ] = 0,
+	["$pp_colour_mulb" ] = 0,
     ["$pp_colour_inv"] = 0
 }
 ATT.RTScopeCustomPPFunc = function(swep)
-    -- DrawMotionBlur(0.7, 0.85, 1/40)
-    -- DrawBloom(0.7, 1.4, 11.15, 1, 0, 1, 1, 1, 1)
-    -- DrawSharpen(4, 0.6)
-	DrawColorModify( meow )
+    -- DrawBloom(0.7, 2.4, 6.15, 1, 0, 1, 1, 1, 1)
+    -- DrawSharpen(2, 0.2)
 end
 
 local arc9_cheapscopes = GetConVar("arc9_cheapscopes")
 
 ATT.RTScopeFLIRHotOnlyFunc = function(swep)
-    -- DrawSharpen(4, 0.6)
-    -- DrawSobel(0.5)
+    DrawSobel(0.8)
+	DrawColorModify( meow )
+	DrawColorModify( meow2 )
 
-    if arc9_cheapscopes:GetBool() then
-        DrawSobel(0.1)	    
-        DrawColorModify( meow ) -- for some reason required for cheap scope
-    else
-        DrawSobel(0.005)
-    end
-    -- DrawBloom(0.61, 3, 2, 2, 0, 1, 1, 1, 1)
+    -- if arc9_cheapscopes:GetBool() then
+    -- end
 end
 
 ATT.RTScopePostInvertFunc = function(swep)
@@ -2785,7 +2823,7 @@ ATT.RTScopePostInvertFunc = function(swep)
 end
 
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid", "eft_optic_small"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0.15, 0, -0.1)

@@ -10,7 +10,7 @@ $bodygroup "body"
 
 $bodygroup "rt"
 {
-	studio "holotherm rt.smd"
+	studio "holotherm rtfar.smd"
 	blank
 }
 

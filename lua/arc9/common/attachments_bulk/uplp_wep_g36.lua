@@ -458,7 +458,7 @@ local stats_mid = {
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 11, -2.568),
+        Pos = Vector(0, 10.5, -2.568),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -480,6 +480,7 @@ ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_DisableRTVM = true
 
 ATT.ScopeScreenRatio = 500/1080
 
