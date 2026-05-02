@@ -289,12 +289,12 @@ ATT.ExcludeElements = {"uplp_shortopticonly"}
 
 ATT.Icon = Material(iconfolder .. "m2.png", "mips smooth")
 
-ATT.Model = "models/weapons/arc9/uplp/optic_compm2.mdl"
+ATT.Model = "models/weapons/arc9/uplp/optic_compm2rt.mdl"
 ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 13, -1.15),
+        Pos = Vector(0, 10, -1.15),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
@@ -307,12 +307,23 @@ ATT.ActivePosHook = function(swep, pos)
     return pos - Vector(0, 0, 0.3)
 end
 
-ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
-ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 150
-ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = -0.003
+ATT.RTScope = true
+ATT.RTScopeSubmatIndex = 3
+ATT.RTScopeFOV = 57 / 3
+ATT.RTScopeMagnification = 1
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
+-- ATT.RTScopeReticle:SetInt("$flags", bit.bor(ATT.RTScopeReticle:GetInt("$flags"), 128)) -- additive
+ATT.RTScopeReticleScale = 0.15
+ATT.RTScopeColorable = true
+ATT.RTScopeShadowIntensity = 10
+ATT.RTScopeBlackBox = true
+ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShadowScale = 8
+ATT.RTCollimator = true
+ATT.RTScopeNew_DisableShader = true
+
+
+ATT.ScopeScreenRatio = 556/1080
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -518,7 +529,7 @@ ATT.RTScopeBlackBoxShadow = true
 
 ATT.ScopeScreenRatio = 538/1080
 
-ATT.Category = {"uplp_optic_mid", "eft_optic_small"}
+ATT.Category = {"uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(1, 0, 0)
@@ -2823,7 +2834,7 @@ ATT.RTScopePostInvertFunc = function(swep)
 end
 
 
-ATT.Category = {"uplp_optic_small", "uplp_optic_mid", "eft_optic_small"}
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0.15, 0, -0.1)
