@@ -318,6 +318,10 @@ SWEP.DistantShootSoundIndoorSilenced = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
+SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathRZ .. "trigger2.wav"}
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
