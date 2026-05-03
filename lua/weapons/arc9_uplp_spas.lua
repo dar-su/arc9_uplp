@@ -347,6 +347,10 @@ SWEP.DistantShootSoundIndoorSilenced = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
+SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
@@ -563,7 +567,7 @@ SWEP.Animations = {
         MinProgress = 0.55,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 4 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 8 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 7 / 30, v = 0.6 },
         },
     },
 
