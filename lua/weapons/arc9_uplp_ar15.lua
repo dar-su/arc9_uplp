@@ -261,9 +261,9 @@ local pathUTC = ")uplp_urban_temp/common/"
 local pathRZ = ")uplp_rz/ar15/"
 
 SWEP.ShootSound = {
-    pathRZ .. "fire-01.wav",
-    pathRZ .. "fire-02.wav",
-    pathRZ .. "fire-03.wav",
+    pathUT .. "fire-01.wav",
+    pathUT .. "fire-02.wav",
+    pathUT .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -309,6 +309,10 @@ SWEP.DropMagazineSounds = {
 }
 
 SWEP.DryFireSound = pathUT .. "dryfire.ogg"
+
+SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 
 
 ---- Animations
