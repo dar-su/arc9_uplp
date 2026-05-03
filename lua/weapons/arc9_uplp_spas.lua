@@ -566,8 +566,8 @@ SWEP.Animations = {
         EjectAt = 5 / 30,
         MinProgress = 0.55,
         EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 4 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 7 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.8 },
+            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.8 },
         },
     },
 
