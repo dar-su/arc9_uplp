@@ -602,6 +602,8 @@ ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
+ATT.RTScopeNew_ShaderDistorsionMult = 0.35
+ATT.RTScopeNew_ChromaticAberrationMult = 0.5
 
 ATT.ScopeScreenRatio = 941/1080
 
@@ -1672,6 +1674,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.RTScopeNew_ShadowScale = 1.0
+ATT.RTScopeNew_ShaderDistorsionMult = 0.5
 
 ATT.ScopeScreenRatio = 618/1080
 
@@ -1732,6 +1735,8 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.RTScopeNew_ShadowScale = 1.2
+ATT.RTScopeNew_ShaderDistorsionMult = 0.5
+ATT.RTScopeNew_ChromaticAberrationMult = 0.5
 
 ATT.ScopeScreenRatio = 664/1080
 
@@ -1801,6 +1806,7 @@ ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.RTScopeNew_ShadowScale = 1.3
+ATT.RTScopeNew_ShaderDistorsionMult = 0.5
 
 ATT.ScopeScreenRatio = 763/1080
 
@@ -2019,12 +2025,16 @@ ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 12
 ATT.RTScopeMagnification = 12
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/dedal.png", "mips smooth")
-ATT.RTScopeReticleScale = 1.0
+ATT.RTScopeReticleScale = 1.8
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
 ATT.RTScopeBlackBox = true
 ATT.RTScopeBlackBoxShadow = true
 ATT.RTScopeNew_ShadowScale = 1.7
+ATT.RTScopeNew_ChromaticAberrationMult = 0.5
+ATT.RTScopeNew_ShaderDistorsionMult = 0.5
+ATT.RTScopeNew_ShadowIntensity = 0.5
+
 -- ATT.ScopeScreenRatio = 711/1080
 
 ATT.Category = "uplp_optic_big"
