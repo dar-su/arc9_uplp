@@ -880,7 +880,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57/6
 ATT.RTScopeMagnification = 6
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/halo.png", "mips smooth")
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/halo.png", "")
 ATT.RTScopeReticleScale = 1
 ATT.RTScopeColorable = false
 ATT.RTScopeShadowIntensity = 7
@@ -897,7 +897,7 @@ ATT.RTScopeFLIRCCCold = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_addr"] = 0,
     ["$pp_colour_addg"] = 0,
     ["$pp_colour_addb"] = 0,
-    ["$pp_colour_brightness"] = 0.45,
+    ["$pp_colour_brightness"] = 0.65,
     ["$pp_colour_contrast"] = 0.4,
     ["$pp_colour_colour"] = 0.2,
     ["$pp_colour_mulr"] = 0,
@@ -908,14 +908,15 @@ ATT.RTScopeFLIRCCHot = { -- Color correction drawn only on FLIR targets
     ["$pp_colour_addr"] = 0/255,
     ["$pp_colour_addg"] = 0/255,
     ["$pp_colour_addb"] = 0/255,
-    ["$pp_colour_brightness"] = 0.35,
+    ["$pp_colour_brightness"] = 0.55,
     ["$pp_colour_contrast"] = 1.2,
     ["$pp_colour_colour"] = 0.2,
     ["$pp_colour_mulr"] = 0,
     ["$pp_colour_mulg"] = 0,
     ["$pp_colour_mulb"] = 0
 }
-ATT.RTScopeNew_FPSLock = 50
+ATT.RTScopeNew_FPSLock = 45
+ATT.RTScopeNew_Pixelation = 360
 ATT.RTScopeCustomPPFunc = function(swep)
     -- DrawMotionBlur(0.7, 0.85, 1/40)
     DrawBloom(0.31, 1.4, 1.15, 0, 0, 1, 1, 1, 1)
@@ -944,8 +945,8 @@ if CLIENT then
     
     local crosss = Material("vgui/uplp_reticles/halo_cross.png", "mips")
     local nextcall = CurTime()
-    local textcol = Color(255, 255, 255)
-    local redcol = Color(255, 0, 0)
+    local textcol = Color(255, 255, 255, 255)
+    local redcol = Color(255, 0, 0, 255)
 
     local thatsenemy = false 
     
@@ -2768,6 +2769,7 @@ ATT.RTScopeNew_BackShadow = true
 ATT.RTScopeNew_BackShadowScale = 4
 ATT.RTScopeNew_ChromaticAberrationMult = 0.01
 ATT.RTScopeNew_ShadowIntensity = 0.9
+-- ATT.RTScopeNew_Pixelation = 640 -- eh
 
 
 
