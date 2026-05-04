@@ -89,8 +89,8 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 107 -- 340
-SWEP.DamageMin = 40 -- 120
+SWEP.DamageMax = 107 * 1.5 -- 340
+SWEP.DamageMin = 40 * 1.5 -- 120
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
