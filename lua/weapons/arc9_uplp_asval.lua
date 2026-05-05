@@ -315,14 +315,14 @@ local pathUT = ")uplp_urban_temp/ak/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "9mm/fire-9-01.wav",
-    pathUT .. "9mm/fire-9-02.wav",
-    pathUT .. "9mm/fire-9-03.wav",
+    pathUT .. "vss/fire-vss-01.wav",
+    pathUT .. "vss/fire-vss-02.wav",
+    pathUT .. "vss/fire-vss-03.wav",
 }
 SWEP.ShootSoundSilenced = {
-    pathUT .. "9mm/fire-sup-01.wav",
-    pathUT .. "9mm/fire-sup-02.wav",
-    pathUT .. "9mm/fire-sup-03.wav",
+    pathUT .. "vss/fire-sup-01.wav",
+    pathUT .. "vss/fire-sup-02.wav",
+    pathUT .. "vss/fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
@@ -364,6 +364,10 @@ SWEP.DropMagazineSounds = {
 }
 
 SWEP.DryFireSound = pathUT .. "dryfire.ogg"
+
+SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.

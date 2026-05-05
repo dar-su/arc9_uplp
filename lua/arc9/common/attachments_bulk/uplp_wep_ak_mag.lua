@@ -875,15 +875,15 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 -------------------------------------------
 
 local shoot9 = {
-    pathUT .. "9mm/fire-9-01.wav",
-    pathUT .. "9mm/fire-9-02.wav",
-    pathUT .. "9mm/fire-9-03.wav",
+    pathUT .. "vss/fire-vss-01.wav",
+    pathUT .. "vss/fire-vss-02.wav",
+    pathUT .. "vss/fire-vss-03.wav",
 }
 
 local shoot9sil = {
-    pathUT .. "9mm/fire-sup-01.wav",
-    pathUT .. "9mm/fire-sup-02.wav",
-    pathUT .. "9mm/fire-sup-03.wav",
+    pathUT .. "vss/fire-sup-01.wav",
+    pathUT .. "vss/fire-sup-02.wav",
+    pathUT .. "vss/fire-sup-03.wav",
 }
 
 local shoot9dist = {
