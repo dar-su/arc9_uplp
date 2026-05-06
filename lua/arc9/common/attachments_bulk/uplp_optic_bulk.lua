@@ -357,7 +357,6 @@ ATT.Sights = {
         Magnification = 1.25,
         ShadowPos = Vector(16,0,0),
         Disassociate = true,
-        Blur = true,
         ViewModelFOV = 57,
 		CantPeek = true,
 
@@ -369,7 +368,6 @@ ATT.Sights = {
         Magnification = 1.25,
         RTScopeFOV = 38 / 4,
         RTScopeMagnification = 4,
-        Blur = false,
         ViewModelFOV = 30,
 
         SwayAddSights = sway_mag,
@@ -566,7 +564,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 8,
         RTScopeMagnification = 8,
-        Blur = false,
 
         SwayAddSights = sway_big,
     },
@@ -576,7 +573,6 @@ ATT.Sights = {
         -- Magnification = 1.25,
         -- ViewModelFOV = 20,
         -- RTScopeFOV = 57 / 16,
-        -- Blur = false,
     -- },
 }
 
@@ -708,7 +704,6 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 8,
-        Blur = false,
 
         SwayAddSights = sway_bigger,
     },
@@ -718,7 +713,6 @@ ATT.Sights = {
         -- Magnification = 1.25,
         -- ViewModelFOV = 20,
         -- RTScopeFOV = 57 / 16,
-        -- Blur = false,
     -- },
 }
 
@@ -866,7 +860,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 6,
-        Blur = false,
 
         SwayAddSights = sway_bigger,
     },
@@ -1543,7 +1536,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 6,
-        Blur = false,
         Reticle = R0,
 
         SwayAddSights = sway_big,
@@ -1554,7 +1546,6 @@ ATT.Sights = {
         -- Magnification = 1.25,
         -- ViewModelFOV = 20,
         -- RTScopeFOV = 57/10,
-        -- Blur = false,
         -- Reticle = R1
     -- },
 }
@@ -1624,7 +1615,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 6,
-        Blur = false,
 
         SwayAddSights = sway_midbig,
         Reticle = R0
@@ -1636,7 +1626,6 @@ ATT.Sights = {
     --     ViewModelFOV = 20,
     --     RTScopeFOV = 40,
     --     RTScopeMagnification = 1,
-    --     Blur = false,
     --     Reticle = R0,
 
     --     SwayAddSights = sway_midbig,
@@ -1715,7 +1704,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 8,
-        Blur = false,
 
         SwayAddSights = sway_big,
     },
@@ -1786,7 +1774,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 12,
-        Blur = false,
 
         SwayAddSights = sway_big,
     },
@@ -1950,7 +1937,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 10,
-        Blur = false,
 
         SwayAddSights = sway_big,
     },
@@ -2011,7 +1997,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 12,
         RTScopeMagnification = 12,
-        Blur = false,
 
         SwayAddSights = sway_big,
     },
@@ -2075,7 +2060,6 @@ ATT.Sights = {
         ViewModelFOV = 20,
         RTScopeFOV = 57 / 6,
         RTScopeMagnification = 7,
-        Blur = false,
 
         SwayAddSights = sway_midbig,
     },
