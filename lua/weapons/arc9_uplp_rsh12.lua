@@ -712,17 +712,17 @@ SWEP.AttachmentTableOverrides = {
 SWEP.AttachmentElements = {
     ["uplp_rsh12_bar_short"] = { Bodygroups = { { 2, 1 } }, AttPosMods = {
         [3] = { Pos = Vector(0, 0.015, -4), }, -- Muzzle
-        [5] = { Pos = Vector(0, 0, -3.9), }, -- Tac.
+        [5] = { Pos = Vector(0, -0.1, 2.7), }, -- Tac.
         [11] = { Pos = Vector(0.55, -0.85, 1.0), }, -- Charm
     }},
     ["uplp_rsh12_bar_long"] = { Bodygroups = { { 2, 2 } }, AttPosMods = {
         [3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
-        [5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
+        [5] = { Pos = Vector(0, -0.1, 10), }, -- Tac.
         [11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
     ["uplp_rsh12_bar_long_o"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
         [3] = { Pos = Vector(0, 0.015, 4.5), }, -- Muzzle
-        [5] = { Pos = Vector(0, 0, 3.1), }, -- Tac.
+        [5] = { Pos = Vector(0, -0.1, 10), }, -- Tac.
         [11] = { Pos = Vector(0.55, -0.85, 10.6), }, -- Charm
     }},
 
