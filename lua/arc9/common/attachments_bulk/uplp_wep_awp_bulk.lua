@@ -164,7 +164,39 @@ ATT.RecoilAutoControlMult = 0.25
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awm")
 --]]
 
+
+
 ---------- uplp_awp_mag_awp
+
+local pathRZ = ")uplp_rz/awp/"
+
+local pathUT = ")uplp_urban_temp/ak/"
+
+local pathUTC = ")uplp_urban_temp/common/"
+
+local shoot308dist = {
+    pathUTC .. "308tails/fire-dist-308-rif-ext-01.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-02.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-ext-03.wav",
+}
+
+local shoot308distindoor = {
+    pathUTC .. "308tails/fire-dist-308-rif-int-01.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-02.wav",
+    pathUTC .. "308tails/fire-dist-308-rif-int-03.wav",
+}
+
+local shoot308 = {
+    pathRZ .. "fire-308-01.wav",
+    pathRZ .. "fire-308-02.wav",
+    pathRZ .. "fire-308-03.wav",
+}
+
+--[[local shoot308sil = {   i haven't made this yet -rz
+    pathRZ .. "308tails/fire-dist-308-rif-ext-01.wav",
+    pathRZ .. "308tails/fire-dist-308-rif-ext-02.wav",
+    pathRZ .. "308tails/fire-dist-308-rif-ext-03.wav",
+}]]
 
 
 ATT = {}
@@ -202,6 +234,12 @@ ATT.SweetSpotRange = 60 / ARC9.HUToM
 ATT.SweetSpotWidth = 120 / ARC9.HUToM
 ATT.SweetSpotPeak = 0 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
+
+ATT.ShootSound = shoot308
+--ATT.ShootSoundSilenced = shoot308sil
+
+ATT.DistantShootSound = shoot308dist
+ATT.DistantShootSoundIndoor = shoot308distindoor
 
 ARC9.LoadAttachment(ATT, "uplp_awp_mag_awp")
 
@@ -249,6 +287,12 @@ ATT.SweetSpotRange = 60 / ARC9.HUToM
 ATT.SweetSpotWidth = 120 / ARC9.HUToM
 ATT.SweetSpotPeak = 0 / ARC9.HUToM
 ATT.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
+
+ATT.ShootSound = shoot308
+--ATT.ShootSoundSilenced = shoot308sil
+
+ATT.DistantShootSound = shoot308dist
+ATT.DistantShootSoundIndoor = shoot308distindoor
 
 
 ATT.CustomCons = {
