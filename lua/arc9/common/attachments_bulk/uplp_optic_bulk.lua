@@ -1606,8 +1606,8 @@ ATT.Icon = Material(iconfolder .. "snip.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_sniper.mdl"
 ATT.FoldSights = true
 
-local R0 = Material("vgui/uplp_reticles/new/optic.png", "mips smooth")
--- local R1 = Material("vgui/uplp_reticles/new/opticcloser.png", "mips")
+local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
+-- local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
@@ -1685,8 +1685,8 @@ ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
 
-local R0 = Material("vgui/uplp_reticles/new/optic.png", "mips smooth")
--- local R1 = Material("vgui/uplp_reticles/new/opticcloser.png", "mips")
+local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
+-- local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
