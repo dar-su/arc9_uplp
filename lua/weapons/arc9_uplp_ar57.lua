@@ -304,7 +304,11 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
-SWEP.DryFireSound = ")uplp_urban_temp/ar15/" .. "dryfire.ogg"
+SWEP.DryFireSound = nil
+
+SWEP.TriggerDownSound = {pathUTar15 .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUTar15 .. "trigger2.wav"}
 
 
 

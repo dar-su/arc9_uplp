@@ -260,6 +260,7 @@ local pathRZ = ")uplp_rz/ak/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/ak/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathUTar15 = ")uplp_urban_temp/ar15/"
 
 SWEP.ShootSound = {
     pathUT .. "762/fire-01.wav",
@@ -312,7 +313,11 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "rifle_magdrop.ogg",
 }
 
-SWEP.DryFireSound = ")uplp_urban_temp/ar15/" .. "dryfire.ogg"
+SWEP.DryFireSound = nil
+
+SWEP.TriggerDownSound = {pathUTar15 .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUTar15 .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
