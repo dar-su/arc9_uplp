@@ -248,6 +248,8 @@ SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter
 
 end
 
+SWEP.DoFDepth = 0.05 -- Adjust if front sight getting blurred too
+
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(18.5, 45, 5)
 SWEP.CustomizeAng = Angle(90, 0, 0)

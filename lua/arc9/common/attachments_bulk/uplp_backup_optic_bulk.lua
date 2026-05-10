@@ -32,10 +32,20 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig45.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$additive", 1)
-ATT.HoloSightSize = 100
+ATT.HoloSightSize = 150
 ATT.HoloSightColorable = false
+local mat2 = Material("vgui/uplp_reticles/new/trig c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.9
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+local angol = Angle(0, 0, 45)
+ATT.DrawFunc = function(self, csmodel, wm)
+    csmodel.FakeHolosightAngleOffset = angol
+end
 
 ATT.Category = "uplp_backup_optic"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
