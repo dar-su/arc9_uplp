@@ -345,9 +345,9 @@ SWEP.DropMagazineSounds = {
 
 SWEP.DryFireSound = nil
 
-SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
+SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
 
-SWEP.TriggerUpSound = {pathRZ .. "trigger2.wav"}
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.

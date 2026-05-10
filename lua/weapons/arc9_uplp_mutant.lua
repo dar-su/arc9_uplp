@@ -349,10 +349,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathUTar15 .. "mech-01.wav",
+    pathUTar15 .. "mech-02.wav",
+    pathUTar15 .. "mech-03.wav",
+    pathUTar15 .. "mech-04.wav",
 }
 
 local UTCrattle = {
