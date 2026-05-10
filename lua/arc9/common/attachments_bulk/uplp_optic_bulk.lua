@@ -114,12 +114,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 -- ATT.HoloSightReticle:SetVector("$color2", Vector(1, 1, 1)) -- bright color
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo2 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -165,11 +171,17 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/kobra.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/kobraс.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = "uplp_optic_mid"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -214,9 +226,15 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo4.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 355
+ATT.HoloSightSize = 550
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/holo4c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -260,11 +278,17 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo5.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo5.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo5 с.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -385,6 +409,12 @@ ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
 ATT.HoloSightAlwaysOn = true
+local mat2 = Material("vgui/uplp_reticles/holo4 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
@@ -1072,11 +1102,17 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 150
-ATT.HoloSightColorable = false
+ATT.HoloSightSize = 177
+ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1120,11 +1156,17 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 150
-ATT.HoloSightColorable = false
+ATT.HoloSightSize = 177
+ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = "uplp_optic_micro"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1165,11 +1207,17 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+ATT.HoloSightDepthAdjustment = -0.008
+local mat2 = Material("vgui/uplp_reticles/new/cross c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1207,11 +1255,17 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/cross c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
 
 ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1249,11 +1303,18 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 188
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/trig c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_direct"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1293,11 +1354,18 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 188
+ATT.HoloSightSize = 250
 ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = -0.003
+ATT.HoloSightDepthAdjustment = -0.007
+local mat2 = Material("vgui/uplp_reticles/new/trig c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.9
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1336,11 +1404,18 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/trig.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/trig.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 188
+ATT.HoloSightSize = 250
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/trig c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.9
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = "uplp_optic_micro"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1381,11 +1456,18 @@ ATT.Sights = {
 }
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/rds.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/rds.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 500
+ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/rds c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -1488,7 +1570,6 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 3
 ATT.RTScopeMagnification = 1.5
-ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.2
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
@@ -1525,8 +1606,8 @@ ATT.Icon = Material(iconfolder .. "snip.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_sniper.mdl"
 ATT.FoldSights = true
 
-local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
--- local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
+local R0 = Material("vgui/uplp_reticles/new/optic.png", "mips smooth")
+-- local R1 = Material("vgui/uplp_reticles/new/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
@@ -1604,8 +1685,8 @@ ATT.Icon = Material(iconfolder .. "ez6.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/optic_ez6x.mdl"
 ATT.FoldSights = true
 
-local R0 = Material("vgui/uplp_reticles/optic.png", "mips smooth")
--- local R1 = Material("vgui/uplp_reticles/opticcloser.png", "mips")
+local R0 = Material("vgui/uplp_reticles/new/optic.png", "mips smooth")
+-- local R1 = Material("vgui/uplp_reticles/new/opticcloser.png", "mips")
 
 ATT.Sights = {
     {
@@ -2146,11 +2227,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo2 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
@@ -2225,11 +2313,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo3.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo3 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
@@ -2286,11 +2381,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo3.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo3 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2336,11 +2438,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/cross2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/cross2 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2386,11 +2495,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot3.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot3 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2451,11 +2567,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot3.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot3 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
@@ -2518,11 +2641,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/kobra.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/kobra.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 511
 ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/kobra c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2625,11 +2755,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 466
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/okp c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2675,11 +2812,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/okp.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 466
 ATT.HoloSightColorable = false
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/okp c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -2876,11 +3020,18 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/dot2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 88
-ATT.HoloSightColorable = false
+ATT.HoloSightSize = 122
+ATT.HoloSightColorable = true
 ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
