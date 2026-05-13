@@ -448,11 +448,11 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.25,
         EventTable = {
-            {s = pathUT .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 0.1},
-            {s = pathUT .. "eject.ogg",           t = 0.35, v = 0.5},
-            {s = pathUT .. "boltback_reload.ogg",     t = 0.6 - 0.2},
-            {s = pathUT .. "boltdown.ogg",        t = 0.74 - 0.12, v = 0.5},
+            {s = pathUT2 .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
+            {s = pathUT2 .. "boltback.ogg",        t = 0.1},
+            {s = pathUT2 .. "eject.ogg",           t = 0.35, v = 0.5},
+            {s = pathUT2 .. "boltforward.ogg",     t = 0.6 - 0.2},
+            {s = pathUT2 .. "boltdown.ogg",        t = 0.74 - 0.12, v = 0.5},
         },
     },
 
