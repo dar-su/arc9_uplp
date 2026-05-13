@@ -287,9 +287,11 @@ SWEP.DropMagazineSounds = {
 
 SWEP.DryFireSound = pathUT .. "dryfire.ogg"
 
-SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+SWEP.DryFireSound = nil
 
-SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+SWEP.TriggerDownSound = pathUT .. "trigger1.wav"
+
+SWEP.TriggerUpSound = pathUT .. "trigger2.wav"
 
 local mech = {
     pathUT .. "mech-01.wav",

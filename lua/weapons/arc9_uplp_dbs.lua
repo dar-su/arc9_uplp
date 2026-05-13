@@ -385,6 +385,8 @@ SWEP.DistantShootSoundIndoorSilenced = {
     pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
 }
 
+SWEP.DryFireSound = nil
+
 SWEP.TriggerDownSound = {path870 .. "trigger1.wav"}
 
 SWEP.TriggerUpSound = {path870 .. "trigger2.wav"}
