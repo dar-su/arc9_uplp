@@ -257,6 +257,7 @@ SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 local pathRZ = ")uplp_rz/57/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/57/"
+local pathUTB = ")uplp_urban_temp/usp/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 
@@ -367,10 +368,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathUTB .. "mech-01.wav",
+    pathUTB .. "mech-02.wav",
+    pathUTB .. "mech-03.wav",
+    pathUTB .. "mech-04.wav",
 }
 
 local UTCrattle = {
