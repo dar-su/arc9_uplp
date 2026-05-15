@@ -261,16 +261,16 @@ local pathUTC = ")uplp_urban_temp/common/"
 
 
 SWEP.ShootSound = {
-    pathRZ .. "rzenith_57_outdoor1.wav",
-    pathRZ .. "rzenith_57_outdoor2.wav",
-    pathRZ .. "rzenith_57_outdoor3.wav",
+    pathRZ .. "fire-01.wav",
+    pathRZ .. "fire-02.wav",
+    pathRZ .. "fire-03.wav",
 }
 
-SWEP.ShootSoundIndoor = {
+--[[SWEP.ShootSoundIndoor = {
     pathRZ .. "rzenith_57_indoor1.wav",
     pathRZ .. "rzenith_57_indoor2.wav",
     pathRZ .. "rzenith_57_indoor3.wav",
-}
+}]]
 
 SWEP.ShootSoundSilenced = {
     ")uplp_urban_temp/ar57/fire-sup-01.wav",
@@ -317,7 +317,11 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
-SWEP.DryFireSound = ")uplp_urban_temp/usp/" .. "dryfire.ogg"
+SWEP.DryFireSound = ""
+
+SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
