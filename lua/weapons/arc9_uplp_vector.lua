@@ -328,6 +328,12 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "smg_pistol_magdrop_4.ogg",
 }
 
+SWEP.DryFireSound = ""
+
+SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathRZ .. "trigger2.wav"}
+
 ---- Animations
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
