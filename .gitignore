@@ -66,4 +66,3 @@ lua/weapons/.idea/vcs.xml
 lua/weapons/.idea/workspace.xml
 *.idea/*
 /lua/weapons/.idea
-sound/wav-ogg.sh
