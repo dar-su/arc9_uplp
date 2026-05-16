@@ -421,8 +421,8 @@ SWEP.Animations = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
 
-            { s = pathRZ .. "chback.wav", t = 11 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward.wav", t = 17 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chback.ogg", t = 11 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chforward.ogg", t = 17 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 40 / 60, c = ca },
         },
         IKTimeLine = {
@@ -597,8 +597,8 @@ SWEP.Animations = {
             { s = pathRZ .. "magin.wav", t = 32 / 30, c = ca, v = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 38 / 30, c = ca, v = 0.6 },
 
-            { s = pathRZ .. "chback.wav", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward.wav", t = 56 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chback.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chforward.ogg", t = 56 / 30, c = ca, v = 0.8 },
 
             { s = pathUTC .. "cloth_4.ogg", t = 60 / 30, c = ca, v = 0.6 },
 
@@ -665,7 +665,7 @@ SWEP.Animations = {
             { s = pathRZ .. "magin_pistol.wav", t = 39 / 30, c = ca, v = 1 },
 
             { s = pathRZ .. "magrel.wav", t = 53 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward.wav", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chforward.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.6 },
 
             {hide = 2, t = 0},
@@ -730,8 +730,8 @@ SWEP.Animations = {
             { s = pathRZ .. "magplace.wav", t = 32 / 30, c = ca, v = 1 },
             { s = pathRZ .. "magin.wav", t = 41 / 30, c = ca, v = 1 },
 
-            { s = pathRZ .. "chback.wav", t = 62 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward.wav", t = 68 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chback.ogg", t = 62 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chforward.ogg", t = 68 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 75 / 30, c = ca, v = 0.6 },
 
             {hide = 0, t = 0},
@@ -758,8 +758,8 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 67 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chback.wav", t = 76 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "chforward.wav", t = 93 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chback.ogg", t = 76 / 30, c = ca, v = 0.8 },
+            { s = pathRZ .. "chforward.ogg", t = 93 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_3.ogg", t = 107 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 115 / 30, c = ca, v = 0.6 },
         },
