@@ -217,6 +217,8 @@ SWEP.IronSights = {
      ViewModelFOV = 70,
 }
 
+SWEP.DoFDepth = 0.06 -- Adjust if front sight getting blurred too
+
 SWEP.PeekPos = Vector(-1, 1, -3)
 SWEP.PeekAng = Angle(-0.25, 0.5, -40)
 

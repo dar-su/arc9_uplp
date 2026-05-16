@@ -119,7 +119,7 @@ ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flag
 -- ATT.HoloSightReticle:SetVector("$color2", Vector(1, 1, 1)) -- bright color
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/holo2 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -175,8 +175,8 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/kobra.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
-local mat2 = Material("vgui/uplp_reticles/new/kobraс.png", "mips smooth")
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/kobra c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
     render.SetMaterial(mat2)
@@ -228,7 +228,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo4.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 550
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/holo4c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -282,8 +282,8 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo5.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
-local mat2 = Material("vgui/uplp_reticles/new/holo5 с.png", "mips smooth")
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo5 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
     render.SetMaterial(mat2)
@@ -403,13 +403,13 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/holo4.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo4rt.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 666
+ATT.HoloSightSize = 1200
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 ATT.HoloSightAlwaysOn = true
-local mat2 = Material("vgui/uplp_reticles/holo4 c.png", "mips smooth")
+local mat2 = Material("vgui/uplp_reticles/new/holo4rt c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
     render.SetMaterial(mat2)
@@ -1106,7 +1106,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 177
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -1160,7 +1160,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 177
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -1211,7 +1211,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.008
+-- ATT.HoloSightDepthAdjustment = -0.008
 local mat2 = Material("vgui/uplp_reticles/new/cross c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -1259,7 +1259,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/cross c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -1307,7 +1307,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/trig.png", "mips smooth"
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 188
 ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/trig c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -1408,7 +1408,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/trig.png", "mips smooth"
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 250
 ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/trig c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.9
@@ -1460,7 +1460,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/rds.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 400
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/rds c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -1570,6 +1570,7 @@ ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
 ATT.RTScopeFOV = 57 / 3
 ATT.RTScopeMagnification = 1.5
+ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.2
 ATT.RTScopeColorable = true
 ATT.RTScopeShadowIntensity = 10
@@ -2231,7 +2232,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo2.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/holo2 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2317,7 +2318,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo3.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/holo3 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2385,7 +2386,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo3.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 600
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/holo3 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2442,7 +2443,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross2.png", "mips smoot
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 666
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/cross2 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2499,7 +2500,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot3.png", "mips smooth"
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot3 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2571,7 +2572,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot3.png", "mips smooth"
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 444
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot3 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2645,7 +2646,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/kobra.png", "mips smooth
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 511
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/kobra c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2759,7 +2760,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 466
 ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/okp c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -2816,7 +2817,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/okp.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 466
 ATT.HoloSightColorable = false
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/okp c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
@@ -3024,7 +3025,7 @@ ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
 ATT.HoloSightSize = 122
 ATT.HoloSightColorable = true
-ATT.HoloSightDepthAdjustment = -0.003
+-- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75

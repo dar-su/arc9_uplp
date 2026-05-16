@@ -289,6 +289,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/vector_mag_30.mdl"
 
+ATT.ClipSizeOverride = 30
+
 -- Negatives
 --ATT.ClipSizeOverride = 25
 
