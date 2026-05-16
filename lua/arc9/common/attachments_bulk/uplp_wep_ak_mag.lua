@@ -329,6 +329,7 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 ----- 5.45 MAGS -----
 
 local pathUT = ")uplp_urban_temp/ak/"
+local pathAR = ")uplp_urban_temp/ar15/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 local shoot545 = {
@@ -658,9 +659,9 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 
 -----5.56-----
 local shoot556 = {
-    pathUT .. "556/fire-01.wav",
-    pathUT .. "556/fire-02.wav",
-    pathUT .. "556/fire-03.wav",
+    pathAR .. "fire-01.wav",
+    pathAR .. "fire-02.wav",
+    pathAR .. "fire-03.wav",
 }
 
 local shoot556sil = {
