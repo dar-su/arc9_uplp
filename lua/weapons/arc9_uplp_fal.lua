@@ -74,6 +74,7 @@ SWEP.WorldModelOffset = {
     Scale = 1,
 
     TPIKPosSightOffset = Vector(0, 2, -4),
+    TPIKHolsterOffset = Vector(5, 0, 2),
 }
 
 SWEP.ViewModelFOVBase = 70

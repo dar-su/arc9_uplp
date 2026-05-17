@@ -69,7 +69,7 @@ SWEP.WorldModelOffset = {
     Scale = 1,
 
     TPIKPosSightOffset = Vector(2, 1, -2),
-    TPIKHolsterOffset = Vector(12, 0, -2),
+    TPIKHolsterOffset = Vector(11, 0, -2),
     TPIKPosReloadOffset = Vector(-4, 0, 0),
     TPIKAngReloadOffset = Angle(0, 0, 0),
 }
