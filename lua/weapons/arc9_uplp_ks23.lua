@@ -321,6 +321,8 @@ SWEP.DistantShootSoundIndoorSilenced = {
 
 SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
 
+SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
+
 SWEP.TriggerUpSound = {pathRZ .. "trigger2.wav"}
 
 ---- Animations
