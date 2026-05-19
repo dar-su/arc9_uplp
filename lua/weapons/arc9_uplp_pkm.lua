@@ -434,7 +434,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "chback.ogg", t = 15 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "chforward.ogg", t = 26 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 63 / 60, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_heavy.ogg", t = 63 / 60, c = ca, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 17 / 30, c = ca, v = 1 },
             { s = pathUTT .. "belt2.ogg", t = 33 / 30, c = ca, v = 0.5 },
         },
@@ -511,7 +511,7 @@ SWEP.Animations = {
             { s = pathUTT .. "lidclose.ogg", t = 120 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 130 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt2.ogg", t = 131 / 30, c = ca, v = 0.25 },
-            { s = pathUTC .. "cloth_4.ogg", t = 142 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "shoulder_heavy.ogg", t = 142 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1.25},
@@ -546,7 +546,7 @@ SWEP.Animations = {
             { s = pathUTT .. "chforward.ogg", t = 142.5 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 155 / 30, c = ca, v = 0.8 },
             { s = pathUTT .. "belt2.ogg", t = 156 / 30, c = ca, v = 0.25 },
-            { s = pathUTC .. "cloth_4.ogg", t = 157 / 30 - 0.07, c = ca, v = 0.3 },
+            { s = pathUTC .. "shoulder_heavy.ogg", t = 157 / 30 - 0.07, c = ca, v = 0.3 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1.25},
