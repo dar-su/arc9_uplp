@@ -474,7 +474,7 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "rack_1.ogg", t = 5 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "rack_2.ogg", t = 17 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 39 / 60, c = ca },
+            { s = pathUTC .. "shoulder_med.ogg", t = 39 / 60, c = ca },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -540,7 +540,7 @@ SWEP.Animations = {
             { s = pathUTM82 .. "struggle.ogg", t = 41 / 30, c = ca, v = 0.8 },
             { s = pathUTM82 .. "magin.ogg", t = 45 / 30, c = ca, v = 0.8 },
             -- { s = pathUTSaiga .. "magin.ogg", t = 43 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -577,7 +577,7 @@ SWEP.Animations = {
             { s = pathUT .. "eject.ogg", t = 68 / 30, v = 0.6 },
             { s = pathUTREAL .. "rack_2.ogg", t = 70 / 30, v = 0.6 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 78 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 78 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -607,7 +607,7 @@ SWEP.Animations = {
             -- { s = pathUTM82 .. "struggle.ogg", t = 41 / 30, c = ca, v = 0.8 },
             { s = pathUTM82 .. "magin.ogg", t = 42 / 30, c = ca, v = 0.8 },
             -- { s = pathUTSaiga .. "magin.ogg", t = 43 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 55 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 55 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 60 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -644,7 +644,7 @@ SWEP.Animations = {
             { s = pathUT .. "eject.ogg", t = 70 / 30, v = 0.6 },
             { s = pathUTREAL .. "rack_2.ogg", t = 73 / 30, v = 0.6 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 78 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 78 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -674,7 +674,7 @@ SWEP.Animations = {
             { s = pathUTM82 .. "struggle.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTM82 .. "magin.ogg", t = 55 / 30, c = ca, v = 0.8 },
             -- { s = pathUTSaiga .. "magin.ogg", t = 58 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 66 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 66 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 70 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -711,7 +711,7 @@ SWEP.Animations = {
             { s = pathUT .. "eject.ogg", t = 81.5 / 30, v = 0.6 },
             { s = pathUTREAL .. "rack_2.ogg", t = 84 / 30, v = 0.6 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 90 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 92 / 30, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -819,7 +819,7 @@ SWEP.Animations = {
             { s = pathUT .. "eject.ogg", t = 11 / 30, v = 0.6 },
             { s = pathUTREAL .. "rack_2.ogg", t = 16 / 30, v = 0.6 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 21 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 21 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 25 / 30, c = ca, v = 0.8 },
         },
         IKTimeLine = {
@@ -840,7 +840,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "rack_1.ogg", t = 61 / 30, c = ca, v = 1 },
             { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 83 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
@@ -864,7 +864,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "rack_1.ogg", t = 63 / 30, c = ca, v = 1 },
             { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 83 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
             {hide = 1, t = 0},
         },
