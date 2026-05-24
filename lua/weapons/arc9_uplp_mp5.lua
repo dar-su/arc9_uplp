@@ -440,8 +440,8 @@ SWEP.Animations = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 0.25*0.9 - 0.15, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.5*0.9, v = 0.6 },
-            -- { s = pathUT .. "magin.ogg", t = 1.03, c = ca, v = 0.8 },
-            { s = pathUT .. "magtap.ogg", t = 1.05*0.9 - 0.035, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 0.8, c = ca, v = 0.8 },
+            -- { s = pathUT .. "magtap.ogg", t = 1.05*0.9 - 0.035, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 1.2*0.9, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -466,16 +466,16 @@ SWEP.Animations = {
         Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "rack1.ogg", t = 0.2, c = ca, v = 0.8 },
+            { s = pathUT .. "chback.ogg", t = 0, c = ca, v = 0.8 },
             { s = pathUT .. "chlock.ogg", t = 0.3, c = ca, v = 0.8 },
 
             { s = pathUT .. "magout.ogg", t = 0.73 - 0.15, c = ca, v = 0.8 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 1.0, v = 0.6 },
-            { s = pathUT .. "magtap.ogg", t = 1.44 - 0.08, c = ca, v = 0.8 },
-            -- { s = pathUT .. "magin.ogg", t = 1.4, c = ca, v = 0.8 },
+            -- { s = pathUT .. "magtap.ogg", t = 1.44 - 0.08, c = ca, v = 0.8 },
+            { s = pathUT .. "magin.ogg", t = 1.2, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 1.65, c = ca, v = 0.5 },
             --{ s = ")uplp_urban_temp/ak/scrape.ogg", t = 1.82, c = ca, v = 1 },
-            { s = pathUTREAL .. "slap.ogg", t = 1.9, c = ca, v = 0.75 },
+            { s = pathUTREAL .. "slap.ogg", t = 1.9, c = ca },
             { s = pathUTC .. "cloth_4.ogg", t = 2.0, c = ca, v = 0.8 },
 
             {hide = 0, t = 0},

@@ -331,7 +331,18 @@ SWEP.DistantShootSoundSilencedIndoor = {
 }
 
 SWEP.DropMagazineSounds = {
-    pathUTT .. "belt1.ogg",
+    pathUTT .. "links-01.ogg",
+    pathUTT .. "links-02.ogg",
+    pathUTT .. "links-03.ogg",
+    pathUTT .. "links-04.ogg",
+    pathUTT .. "links-05.ogg",
+    pathUTT .. "links-06.ogg",
+    pathUTT .. "links-07.ogg",
+    pathUTT .. "links-08.ogg",
+    pathUTT .. "links-09.ogg",
+    pathUTT .. "links-10.ogg",
+    pathUTT .. "links-11.ogg",
+    pathUTT .. "links-12.ogg",
 }
 SWEP.DropMagazineSoundsReal = {
     pathUTC .. "rifle_magdrop_p.ogg",
