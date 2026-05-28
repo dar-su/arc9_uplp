@@ -394,8 +394,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    {pathUT .. "forearm_back.ogg", t = 0 / 30, v = 0.8 },
-    {pathUT .. "forearm_forward.ogg", t = 2 / 30, v = 0.8 },
+    pathUT .. "mech-01.wav",
+    pathUT .. "mech-02.wav",
+    pathUT .. "mech-03.wav",
+    pathUT .. "mech-04.wav",
 }
 
 local UTCrattle = {
@@ -536,8 +538,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 0 / 30, v = 0.2 },
-            { s = pathUT .. "forearm_forward.ogg", t = 0 / 30, v = 0.4 },
+            { s = mechh, t = 0, v = 0.75 },
         },
     },
 
@@ -555,7 +556,7 @@ SWEP.Animations = {
         IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 0 / 30, v = 0.6 },
+            { s = pathUT .. "mech_last.wav", t = 0 / 30, v = 0.6 },
         },
     },
 
