@@ -360,6 +360,12 @@ SWEP.DropMagazineSounds = {
 SWEP.DryFireSound = "" -- we have own in sound tables
 SWEP.DryFireDelay = false
 
+SWEP.TriggerUpSound = {
+    pathUTC .. "revolver_release-01.ogg", 
+    pathUTC .. "revolver_release-02.ogg", 
+    pathUTC .. "revolver_release-03.ogg",
+}
+
 -- local mech = {
 --     pathUT .. "mech-01.wav",
 --     pathUT .. "mech-02.wav",
@@ -369,6 +375,7 @@ SWEP.DryFireDelay = false
 
 ---- Animations
 -- HideBones, BulletBones, etc.
+
 SWEP.BulletBones = {
     [1] = "bullet1",
     [2] = "bullet2",
