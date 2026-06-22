@@ -3614,3 +3614,31 @@ L["uplp_weapon_sg552"] = "Krieg 90-2"
 L["uplp_weapon_sg553"] = "Krieg 90-3"
 
 L["uplp_weapon_sg550_manufacturer"] = "SIG Holding AG"
+
+
+//////////////////// RPG-7
+L["uplp_weapon_rpg7"] = "ZPG-61"
+L["uplp_weapon_rpg7_desc"] = "En av dem mest välkända pansarvärnsvapnen, ZPG-61:an (Ryska: ЗПГ-61) bevisade att det var möjligt att konstruera ett kompetent, tuff, simplistisk och billigt pansarvärnsvapen. Adopterad i över 40 länder världen runt, ZPG-61:an utmärker sig genom att vara lätthanterlig, och att ha förmågan att använda ungefär vilka granater som helst som är tillgängliga på marknaden, inklusive några... ovanliga.\n\n\"Shit, lemme get that mystery gift.\""
+
+L["uplp_weapon_rpg7_real"] = "RPG-7"
+
+L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
+
+/////////// Attachments
+////// Scopes
+L["uplp_rpg7_scope.printname"] = "OPP1 2,7x"
+L["uplp_rpg7_scope.compactname"] = "OPP1"
+L["uplp_rpg7_scope.description"] = "Sovjetisk magnifierat riktmedel till ZPG-61 pansarvärns-granatgeväret." .. desc_midoptic
+
+////// Rockets
+L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""
+L["uplp_rpg7_rocket_cover.compactname"] = "Slon"
+L["uplp_rpg7_rocket_cover.description"] = "En granat till ZPG-61:an som är utmärker sig att <color=100,255,100>penetrera befästningar</color>."
+
+L["uplp_rpg7_rocket_thermo.printname"] = "RGM-40 \"Choker\""
+L["uplp_rpg7_rocket_thermo.compactname"] = "Choker"
+L["uplp_rpg7_rocket_thermo.description"] = "En termobarisk granat till ZPG-61:an."
+
+L["uplp_rpg7_rocket_shovel.printname"] = "...Spade"
+L["uplp_rpg7_rocket_shovel.compactname"] = "Spade"
+L["uplp_rpg7_rocket_shovel.description"] = "En bondes bästa vän, och din måltavlas värsta mardröm.\n\n...det är en spade, behöver du verkligen mer info?"

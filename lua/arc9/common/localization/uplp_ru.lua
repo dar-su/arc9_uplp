@@ -3640,3 +3640,31 @@ L["uplp_vector_skin_orange.description"] = "Перекрашивает нижн�
 -- L["uplp_weapon_sg553"] = "Krieg 90-3"
 
 -- L["uplp_weapon_sg550_manufacturer"] = "SIG Holding AG"
+
+
+//////////////////// RPG-7
+L["uplp_weapon_rpg7"] = "ЗПГ-61"
+-- L["uplp_weapon_rpg7_desc"] = "One of the most well-known anti-tank weapons, the ZPG-61 (Russian: ЗПГ-61) proved it was possible to build a competent, rugged, simplistic and cost effective anti-tank weapon. Adopted by over 40 countries around the world, the ZPG-61 excels in being easy to use, and having the ability to utilize just about any possible rocket propelled grenade available on the market, including some rather... unorthodox ones.\n\n\"Shit, lemme get that mystery gift.\""
+
+L["uplp_weapon_rpg7_real"] = "РПГ-7"
+
+L["uplp_weapon_rpg7_manufacturer"] = "НПО «Базальт»"
+
+/////////// Attachments
+////// Scopes
+-- L["uplp_rpg7_scope.printname"] = "OPP1 2.7x"
+-- L["uplp_rpg7_scope.compactname"] = "OPP1"
+-- L["uplp_rpg7_scope.description"] = "Soviet-era magnified optic for the ZPG-61 anti-tank launcher." .. desc_midoptic
+
+////// Rockets
+-- L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""
+-- L["uplp_rpg7_rocket_cover.compactname"] = "Slon"
+-- L["uplp_rpg7_rocket_cover.description"] = "A rocket for the ZPG-61 that excells at <color=100,255,100>piercing fortifications</color>."
+
+-- L["uplp_rpg7_rocket_thermo.printname"] = "RGM-40 \"Choker\""
+-- L["uplp_rpg7_rocket_thermo.compactname"] = "Choker"
+-- L["uplp_rpg7_rocket_thermo.description"] = "A thermobaric rocket for the ZPG-61."
+
+-- L["uplp_rpg7_rocket_shovel.printname"] = "...Shovel"
+-- L["uplp_rpg7_rocket_shovel.compactname"] = "Shovel"
+-- L["uplp_rpg7_rocket_shovel.description"] = "A farmer's best friend, and your target's worst nightmare.\n\n...It's a shovel, do you really need more info?"
