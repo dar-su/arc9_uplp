@@ -3679,9 +3679,9 @@ L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
 
 /////////// Attachments
 ////// Scopes
-L["uplp_rpg7_scope.printname"] = "OPP1 2.7x"
-L["uplp_rpg7_scope.compactname"] = "OPP1"
-L["uplp_rpg7_scope.description"] = "Soviet-era magnified optic for the ZPG-61 anti-tank launcher." .. desc_midoptic
+L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
+L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
+L["uplp_rpg7_scope_pgo.description"] = "Soviet-era magnified optic for the ZPG-61 anti-tank launcher." .. desc_midoptic
 
 ////// Rockets
 L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""

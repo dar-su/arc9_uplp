@@ -124,12 +124,6 @@ $sequence "reload" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
-$sequence "reload_tp" {
-	"anims\relaoding 3rd person.smd"
-	fps 30
-	"ACT_VM_RELOAD" 1
-	snap
-}
 
 
 $sequence "inspect" {
@@ -138,15 +132,6 @@ $sequence "inspect" {
 }
 $sequence "inspect_empty" {
 	"anims\inspecte.smd"
-	fps 30
-}
-
-$sequence "inspect_tp" {
-	"anims\inspect 3rd person.smd"
-	fps 30
-}
-$sequence "inspect_empty_tp" {
-	"anims\inspect 3rd persone.smd"
 	fps 30
 }
 
