@@ -399,13 +399,11 @@ SWEP.Animations = {
         Source = "fire_dry",
         -- Time = 1,
         Mult = 2,
-        EventTable = { { s = mechh, t = 0 } },
     },
     ["dryfire_empty"] = {
         Source = "fire_dry",
         -- Time = 1,
         Mult = 2,
-        EventTable = { { s = mechh, t = 0 } },
     },
 
     -- Reloads --
