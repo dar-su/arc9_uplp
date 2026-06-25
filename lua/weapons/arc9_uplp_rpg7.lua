@@ -102,8 +102,8 @@ SWEP.DamageMax = 34
 SWEP.DamageMin = 18
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = nil
-SWEP.ShootEnt = "uplp_proj_panzerfaust" -- Set to an entity to launch it out of this weapon.
-SWEP.ShootEntForce = 4500
+SWEP.ShootEnt = "arc9_uplp_rpg_missle" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEntForce = 10000
 SWEP.ShootEntityData = {}
 
 SWEP.BodyDamageMults = {

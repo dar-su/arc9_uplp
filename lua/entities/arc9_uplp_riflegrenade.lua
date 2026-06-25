@@ -22,6 +22,7 @@ ENT.DragCoefficient = 1
 ENT.DetonateOnImpact = true
 
 ENT.Model = "models/weapons/arc9/uplp_ubgl_m203_projectile.mdl"
+ENT.Mass = nil
 ENT.ExplosionEffect = true
 ENT.Scorch = "Scorch"
 ENT.SmokeTrail = true
@@ -43,6 +44,7 @@ if SERVER then
             phys:Wake()
             phys:SetDragCoefficient(self.DragCoefficient)
             phys:SetBuoyancyRatio(0.1)
+            if self.Mass then phys:SetMass(self.Mass) end
         end
 
         self.SpawnTime = CurTime()
@@ -54,6 +56,10 @@ if SERVER then
         end
     end
 else
+    function ENT:Initialize()
+        self.SpawnTime = CurTime()
+    end
+
     function ENT:Think()
         if self.SmokeTrail then
             if self.Ticks % 5 == 0 then
@@ -183,7 +189,18 @@ function ENT:PhysicsCollide(colData, collider)
     end)
 end
 
+local mat = Material("effects/ar2_altfire1b")
 
 function ENT:Draw()
+    if self:GetOwner() == LocalPlayer() and (self.SpawnTime + 0.05) > CurTime() then return end
+
     self:DrawModel()
+    if self.FlareColor and ((self.RocketLifetime or 0) <= 0 or self.SpawnTime + self.RocketLifetime >= CurTime()) then
+        render.SetMaterial(mat)
+        render.DrawSprite(self:GetPos() + (self:GetAngles():Forward() * -16), math.Rand(50, 200), math.Rand(50, 200), self.FlareColor)
+    end
 end
+
+-- function ENT:Draw()
+--     self:DrawModel()
+-- end

@@ -44,6 +44,8 @@ ATT.Icon = Material(iconfolder .. "lopata.png", "mips smooth")
 ATT.Category = "uplp_rpg7_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ShootEnt = "arc9_uplp_rpg_lopata"
+ATT.ShootEntForce = 1000
 
 ARC9.LoadAttachment(ATT, "uplp_rpg7_rocket_shovel")
 
