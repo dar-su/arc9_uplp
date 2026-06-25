@@ -264,26 +264,26 @@ SWEP.ShootSound = {
 }]]
 
 SWEP.DistantShootSound = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-01.wav",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-02.wav",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-ext-03.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-03.wav",
 }
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-01.wav",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-02.wav",
-    pathUTC .. "9mmtails/fire-dist-9x19-pistol-int-03.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
 
--- SWEP.DistantShootVolume = 0.01 -- already tail in fire sound
-SWEP.DistantShootVolumeActual = 0.01
+-- SWEP.DistantShootVolume = 0.01 -- 
+-- SWEP.DistantShootVolumeActual = 0.01
 
 SWEP.DryFireSound = {pathUT .. "dryfire.wav"}
 
 SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
 
-SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+--SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
