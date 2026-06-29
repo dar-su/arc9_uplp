@@ -24,8 +24,8 @@ ENT.DragCoefficient = -22
 
 local DAMAGA = 125
 
-local path = "uplp_urban_temp/m203/"
-ENT.ExplosionSounds = {path .. "40mm_casing_1.ogg"}
+local path = "uplp_urban_temp/common/"
+ENT.ExplosionSounds = {path .. "rpg_clang-01.ogg", path .. "rpg_clang-02.ogg", path .. "rpg_clang-03.ogg", path .. "rpg_clang-04.ogg"}
 
 function ENT:Detonate()
     if not self:IsValid() then return end
