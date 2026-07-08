@@ -340,10 +340,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathRZ .. "mech-01.wav",
+    pathRZ .. "mech-02.wav",
+    pathRZ .. "mech-03.wav",
+    pathRZ .. "mech-04.wav",
 }
 
 local thetoggle = {{
