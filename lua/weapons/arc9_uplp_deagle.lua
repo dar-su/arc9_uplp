@@ -474,7 +474,7 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 50 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 45 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
@@ -497,7 +497,7 @@ SWEP.Animations = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.6 },
-            { s = pathUT .. "magin.ogg", t = 60 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 52 / 60, c = ca },
             { s = pathUT .. "chamber.ogg", t = 75 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 85 / 60, c = ca },
 
