@@ -422,6 +422,14 @@ local ShellInsert = {
     pathUT .. "shell-insert-12.ogg",
 }
 
+local b2i = {
+    pathUTC .. "shoulder_med.ogg",
+}
+
+local touchh = {
+    pathUTC .. "grab_heavy.ogg",
+}
+
 local thetoggle = {{
     s = {
         "arc9/toggles/flashlight_laser_toggle_off_01.ogg",
@@ -595,8 +603,8 @@ SWEP.Animations = {
             { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
             { s = ")uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
 
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "grab-polymer.ogg", t = 49 / 30, c = ca, v = 0.4 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 0.2 },
+            { s = touchh, t = 49 / 30, c = ca, v = 0.3 },
         },
     },
 
@@ -607,13 +615,13 @@ SWEP.Animations = {
         Mult = 0.85,
         EjectAt = 31 / 30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.6 },
             { s = ShellInsert, t = 10 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_back.ogg", t = 26 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 33 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 24 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 30 / 30, v = 0.6 },
 
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 37 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "grab-polymer.ogg", t = 54 / 30, c = ca, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30, c = ca, v = 1 },
+            { s = touchh, t = 50 / 30, c = ca, v = 0.5 },
         },
     },
 
@@ -621,7 +629,7 @@ SWEP.Animations = {
         Source = "reload_insert",
         MinProgress = 0.334,
         EventTable = {
-            { s = ShellInsert, t = 1 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0 / 30, v = 0.6 },
         },
     },
 
@@ -630,8 +638,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
+            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.4 },
+            { s = b2i, t = 2 / 30, v = 0.6 },
         },
     },
 
@@ -644,7 +652,7 @@ SWEP.Animations = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 12 / 30, v = 0.6 },
+            { s = b2i, t = 12 / 30, v = 0.6 },
         },
     },
 
