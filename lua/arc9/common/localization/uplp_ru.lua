@@ -374,6 +374,10 @@ L["uplp_optic_dedal.printname"] = "Снайперский прицел CWI Annih
 L["uplp_optic_dedal.compactname"] = "12x CWI"
 L["uplp_optic_dedal.description"] = "Прицел с 12-кратным увеличением от Cerberus Weapons Institute, предназначен для военного использования." .. desc_bigoptic
 
+-- L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
+-- L["uplp_optic_rsa.compactname"] = "Type-7"
+-- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Угловая красная точка"
 L["uplp_backup_optic_rmr.compactname"] = "Угл. RDS"
@@ -1911,10 +1915,25 @@ L["uplp_weapon_mp7_real"] = "H&K MP7"
 L["uplp_weapon_mp7_manufacturer"] = "Heckler & Koch"
 
 /////////// Attachments
+////// Receiver
+-- L["uplp_mp7_rec_long.printname"] = "Tactical Handguard & Long Barrel"
+-- L["uplp_mp7_rec_long.compactname"] = "Tactical"
+-- L["uplp_mp7_rec_long.description"] = "Longer barrel and custom handguard for the PDW-7, allowing the installation of larger underbarrel accessories."
+
+-- L["uplp_mp7_rec_proto.printname"] = "Civil Protection Receiver"
+-- L["uplp_mp7_rec_proto.compactname"] = "Civ. Prot."
+-- L["uplp_mp7_rec_proto.description"] = "Custom receiver from the prototype version of the PDW-7.\n\nNo, this does not enable the ability to shoot grenades..."
+
 ////// Stocks
 L["uplp_mp7_stock_folded.printname"] = "Сложенный приклад"
 L["uplp_mp7_stock_folded.compactname"] = "Сложенный"
 L["uplp_mp7_stock_folded.description"] = "Складывает приклад."
+
+-- L["uplp_mp7_stock_tac.printname"] = "Tactical Stock"
+-- L["uplp_mp7_stock_tac.compactname"] = "Tactical"
+-- L["uplp_mp7_stock_tac.description"] = "Tactical stock made for the PDW-7."
+
+-- L["uplp_mp7_stock_tube.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
 
 ////// Mags
 L["uplp_mp7_mag_20.printname"] = "Магазин на 20 патронов"
@@ -1926,7 +1945,7 @@ L["uplp_mp7_sight_folded.printname"] = "Механические прицелы 
 L["uplp_mp7_sight_folded.compactname"] = "PDW МП"
 L["uplp_mp7_sight_folded.description"] = "Опускает механические прицелы PDW-7, превращая их в похожие на пистолетные прицелы.\nУлучшает скорость прицеливания за счёт уменьшения увеличения."
 
-////// "Grip"
+////// Grip
 L["uplp_mp7_grip_none.printname"] = "Нет"
 L["uplp_mp7_grip_none.compactname"] = "Нет"
 L["uplp_mp7_grip_none.description"] = "Используйте нижнюю рейку PDW-7 как цевьё."

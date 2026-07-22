@@ -369,6 +369,10 @@ L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
 L["uplp_optic_dedal.compactname"] = "12x CWI"
 L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12x magnifiering från Cerberus Weapons Institude gjord för militär användning." .. desc_bigoptic
 
+-- L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
+-- L["uplp_optic_rsa.compactname"] = "Type-7"
+-- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
 L["uplp_backup_optic_rmr.compactname"] = "VRPS"
@@ -1907,10 +1911,25 @@ L["uplp_weapon_mp7_real"] = "H&K MP7"
 L["uplp_weapon_mp7_manufacturer"] = "Heckler & Koch"
 
 /////////// Attachments
+////// Receiver
+-- L["uplp_mp7_rec_long.printname"] = "Tactical Handguard & Long Barrel"
+-- L["uplp_mp7_rec_long.compactname"] = "Tactical"
+-- L["uplp_mp7_rec_long.description"] = "Longer barrel and custom handguard for the PDW-7, allowing the installation of larger underbarrel accessories."
+
+-- L["uplp_mp7_rec_proto.printname"] = "Civil Protection Receiver"
+-- L["uplp_mp7_rec_proto.compactname"] = "Civ. Prot."
+-- L["uplp_mp7_rec_proto.description"] = "Custom receiver from the prototype version of the PDW-7.\n\nNo, this does not enable the ability to shoot grenades..."
+
 ////// Stocks
 L["uplp_mp7_stock_folded.printname"] = "Kollapsad Kolv"
 L["uplp_mp7_stock_folded.compactname"] = "Kollapsad"
 L["uplp_mp7_stock_folded.description"] = "Kollapsar kolven."
+
+-- L["uplp_mp7_stock_tac.printname"] = "Tactical Stock"
+-- L["uplp_mp7_stock_tac.compactname"] = "Tactical"
+-- L["uplp_mp7_stock_tac.description"] = "Tactical stock made for the PDW-7."
+
+-- L["uplp_mp7_stock_tube.description"] = "Replaces the stock with a buffer tube that supports AR-15 stocks."
 
 ////// Mags
 L["uplp_mp7_mag_20.printname"] = "20-Patronersmagasin"
@@ -1922,7 +1941,7 @@ L["uplp_mp7_sight_folded.printname"] = "PDW-Riktmedel"
 L["uplp_mp7_sight_folded.compactname"] = "PDW-R"
 L["uplp_mp7_sight_folded.description"] = "Fäller ner PDW-7:ans riktmedel vilket förvandlar dem till pistolliknande riktmedel.\nFörbättrar målförvärv med kostnad på magnifiering."
 
-////// "Grip"
+////// Grip
 L["uplp_mp7_grip_none.printname"] = "Ingen"
 L["uplp_mp7_grip_none.compactname"] = "Ingen"
 L["uplp_mp7_grip_none.description"] = "Använd den undermonterade skenan på PDW-7 som handstöd."
