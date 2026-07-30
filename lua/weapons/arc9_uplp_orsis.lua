@@ -442,14 +442,13 @@ SWEP.Animations = {
     ["cycle"] = {
         Source = {"cycle"},
         IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = { { s = mechh, t = 0 } },
         MinProgress = 0.72,
 		FireASAP = true,
         Mult = 1.25,
         EventTable = {
             {s = pathUT2 .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
-            {s = pathUT2 .. "boltback.ogg",        t = 0.1},
-            {s = pathUT2 .. "eject.ogg",           t = 0.35, v = 0.5},
+            {s = pathUT2 .. "boltback.ogg",        t = 0.03},
+            {s = pathUT2 .. "eject.ogg",           t = 0.3, v = 0.5},
             {s = pathUT2 .. "boltforward.ogg",     t = 0.6 - 0.2},
             {s = pathUT2 .. "boltdown.ogg",        t = 0.74 - 0.12, v = 0.5},
         },

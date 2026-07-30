@@ -373,8 +373,8 @@ SWEP.Animations = {
         EventTable = {
             { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "slidepull.ogg", t = 11 / 60, c = ca },
-            { s = pathUT .. "chamber.ogg", t = 21 / 60, c = ca },
+            { s = pathUT .. "slideback.ogg", t = 8.5 / 60, c = ca },
+            { s = pathUT .. "slideforth.ogg", t = 18 / 60, c = ca },
             { s = pathUTC .. "cloth_4.ogg", t = 29 / 60, c = ca },
         },
         IKTimeLine = {
@@ -473,8 +473,9 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 0.0, v = 0.6 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "magrel1.ogg", t = 10 / 60, c = ca, v = 0.6 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60, c = ca },
-            { s = pathUT .. "magin.ogg", t = 45 / 60, c = ca },
+            { s = pathUT .. "magin.ogg", t = 44 / 60, c = ca },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 70 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
@@ -495,6 +496,7 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "magrel1.ogg", t = 4 / 60, c = ca },
             { s = pathUT .. "magout_old.ogg", t = 12.5 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.6 },
             { s = pathUT .. "magin.ogg", t = 52 / 60, c = ca },
