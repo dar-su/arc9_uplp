@@ -11,6 +11,6 @@ $cdmaterials "models\weapons\customization\stickers\"
 
 $cbox 0 0 0 0 0 0
 $sequence "idle" {
-	"anims\idle2.smd"
+	"anims\idle.smd"
 	fps 30
 }

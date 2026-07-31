@@ -29,7 +29,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, inspect by Darsu",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Dummified",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
@@ -75,7 +75,8 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 65
-SWEP.ActivePos = Vector(-0.5, 0, -0.1)
+SWEP.ActivePos = Vector(-0.5, 0, 0.2)
+SWEP.ActiveAng = Angle(0.1, -0.2, -2)
 
 SWEP.BobSettingsMove =  {1.2, -0.8, 1.3,    0.6, 1.5, 1.2}
 SWEP.BobSettingsSpeed = {0.91, 1, 1.0,    1, 0.92, 0.8}
@@ -218,14 +219,14 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-3.09, -5, 0.15),
+     Pos = Vector(-3.09, -5, 0.15) + Vector(-0.17, 0, 0.55),
      Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
 
 local is_folded = {
-    Pos = Vector(-3.09, -5, 0.95),
+    Pos = Vector(-3.09, -5, 0.95) + Vector(-0.17, 0, 0.5),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
@@ -248,14 +249,14 @@ SWEP.CustomizeSnapshotPos = Vector(0, 20, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = true
+SWEP.ShouldDropMag = false 
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mp7_mag_std.mdl"
-SWEP.DropMagazineTime = 0.25*1.1
+SWEP.DropMagazineTime = 12/30
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, -60, 0)
+SWEP.DropMagazineVelocity = Vector(0, -70, 0)
 
 ---- Sounds
 
@@ -327,24 +328,30 @@ SWEP.BulletBones = {
     [3] = "round3",
 }
 
--- SWEP.HideBones = {
-    -- "fakemag",
-    -- "fakerounds",
-    -- "bullet1",
-    -- "bullet2",
-    -- "bullet3",
-    -- "bullet4",
--- }
+SWEP.HideBones = {
+    "mag2",
+}
 
 SWEP.ReloadHideBoneTables = {
     [1] = {
+        "mag2",
+    },
+    [2] = {
         "mag",
         "round1",
         "round2",
         "round3",
     },
+    [3] = {
+        "mag2",
+        "mag",
+        "round1",
+        "round2",
+        "round3",
+    }
 }
 
+SWEP.ReloadHideBonesFirstPerson = true 
 
 -- Animations
 
@@ -377,10 +384,16 @@ SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
         IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            {hide = 1, t = 0},
+        },
     },
     ["idle_empty"] = {
         Source = "idle_empty",
         IKTimeLine = { { t = 0, lhik = 1 } },
+        EventTable = {
+            {hide = 1, t = 0},
+        },
     },
     ["ready"] = {
         Source = "ready",
@@ -415,7 +428,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.3 / 0.65,
-        Mult = 0.65,
+        -- Mult = 0.65,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -433,7 +446,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.3 / 0.65,
-        Mult = 0.65,
+        -- Mult = 0.65,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
         },
@@ -482,7 +495,7 @@ SWEP.Animations = {
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
-        Mult = 1.1,
+        -- Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magout.ogg", t = 1 / 30, c = ca, v = 0.8 },
@@ -490,9 +503,9 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magin.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 0},
+            {hide = 0, t = 15/30},
+            {hide = 2, t = 56/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -508,7 +521,7 @@ SWEP.Animations = {
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
-        Mult = 1.1,
+        -- Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magout.ogg", t = 1 / 30, c = ca, v = 0.8 },
@@ -517,15 +530,15 @@ SWEP.Animations = {
             { s = pathUTREAL .. "chamber.ogg", t = 27 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 40 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 0},
+            {hide = 3, t = 12/30},
+            {hide = 1, t = 22/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -536,7 +549,7 @@ SWEP.Animations = {
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
-        Mult = 1.1,
+        -- Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magout.ogg", t = 1 / 30, c = ca, v = 0.8 },
@@ -544,9 +557,9 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magin.ogg", t = 22 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 0},
+            {hide = 0, t = 15/30},
+            {hide = 2, t = 56/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -562,7 +575,7 @@ SWEP.Animations = {
 		PeekProgress = 0.775,
 		RefillProgress = 0.65,
 		FireASAP = true,
-        Mult = 1.1,
+        -- Mult = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, c = ca, v = 0.8 },
             { s = pathUTREAL .. "magout.ogg", t = 1 / 30, c = ca, v = 0.8 },
@@ -571,15 +584,15 @@ SWEP.Animations = {
             { s = pathUTREAL .. "chamber.ogg", t = 25 / 30, c = ca, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 40 / 30, c = ca, v = 0.8 },
 
-            {hide = 0, t = 0},
-            {hide = 1, t = 0.25},
-            {hide = 0, t = 0.4}
+            {hide = 1, t = 0},
+            {hide = 3, t = 12/30},
+            {hide = 1, t = 22/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
             { t = 0.65, lhik = 0 },
-            { t = 0.9, lhik = 1 },
+            { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -715,7 +728,7 @@ SWEP.Attachments = {
         Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_mp7_optic"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.9, 0),
+        Pos = Vector(0, -0.9, 0) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1, 0, 0),
     },
@@ -724,7 +737,7 @@ SWEP.Attachments = {
         Category = {"uplp_grip_vert", "uplp_mp7_grip"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 1.6, 6),
+        Pos = Vector(0, 1.6, 6) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0.5, 0, -1),
     },
@@ -741,7 +754,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
         Category = {"uplp_muzzle"},
         Bone = "body",
-        Pos = Vector(0, 1, 8.96),
+        Pos = Vector(0, 1, 8.96) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -749,7 +762,7 @@ SWEP.Attachments = {
         Category = {"uplp_mp7_stock"},
         DefaultIcon = Material(defatt2 .. "mp7stock.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0.35, -5),
+        Pos = Vector(0, 0.35, -5) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -765,7 +778,7 @@ SWEP.Attachments = {
         Category = {"uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.95, -2),
+        Pos = Vector(0, -0.95, -2) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_no_backup"},
         Icon_Offset = Vector(-1, 0, 0),
@@ -774,7 +787,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic_front"},
         Bone = "body",
-        Pos = Vector(0, -0.95, 7),
+        Pos = Vector(0, -0.95, 7) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_backup_optic_is"},
         Installed = "uplp_backup_optic_is_front",
@@ -791,7 +804,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_1.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0.35 + 1.5, -2),
+        Pos = Vector(0, 0.35 + 1.5, -2) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -799,7 +812,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_2.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, 0 + 1.5, 0),
+        Pos = Vector(0, 0 + 1.5, 0) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -807,7 +820,7 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_3.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3 + 0.75, 1.85),
+        Pos = Vector(0, -0.3 + 0.75, 1.85) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
     },
     {
@@ -815,14 +828,14 @@ SWEP.Attachments = {
         StickerModel = "models/weapons/arc9/uplp/stickers/mp7_4.mdl",
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -0.3 + 0.75, 3),
+        Pos = Vector(0, -0.3 + 0.75, 3) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
         Bone = "body",
-        Pos = Vector(0.6, 1.15, 8.5),
+        Pos = Vector(0.6, 1.15, 8.5) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 0, -90),
     },
 }

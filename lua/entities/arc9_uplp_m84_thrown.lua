@@ -97,6 +97,7 @@ end
 function ENT:Detonate()
     if not self:IsValid() then return end
     if self.Defused then return end
+    _ = nil
     if self:WaterLevel() > 0 then
         local tr = util.TraceLine({
             start = self:GetPos(),

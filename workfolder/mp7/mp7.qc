@@ -2,6 +2,8 @@ $modelname "weapons\arc9\c_uplp_mp7.mdl"
  
 $bodygroup "body" {
 	studio "mp7.smd"
+	studio "mp7 old.smd"
+	studio "mp7 tac.smd"
 }   
 $bodygroup "mz" {
 	studio "mzdef.smd"
@@ -10,6 +12,10 @@ $bodygroup "mz" {
 $bodygroup "stock" {
 	studio "stock.smd"
 	studio "stockc.smd"
+	studio "stock old.smd"
+	studio "stockc old.smd"
+	studio "stock tube.smd"
+	studio "stock tac.smd"
 }  
 $bodygroup "grip" {
 	studio "grip.smd"
@@ -47,25 +53,17 @@ $poseparameter "sights" 0 1 loop 0
 
 $sequence "idle"{
 	"anims\idle.smd" 
-	"anims\idle_iron.smd"
 	fps 30
- 	blend "sights" 0 1
 	loop
-	fadein 0
-	fadeout 0.2
+	snap
 }
 
 $sequence "idle_empty"{
-	"anims\idle_empty.smd" 
-	"anims\idle_empty_iron.smd"
+	"anims\idle_e.smd" 
 	fps 30
 	"ACT_VM_IDLE" 1
- 	blend "sights" 0 1
 	loop
 	snap
-	node "Ready"
-	fadein 0
-	fadeout 0.2
 }
 
 $sequence "fire" {
@@ -86,8 +84,8 @@ $sequence "fire_sights" {
 	fadeout 0.2
 }
 $sequence "fire_empty" {
-	"anims\fire_empty.smd"
-	"anims\fire_empty_iron.smd"
+	"anims\fire_e.smd"
+	"anims\fire_e_iron.smd"
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
@@ -97,8 +95,6 @@ $sequence "fire_empty" {
 
 $sequence "ready" {
 	"anims\ready.smd"
-	"anims\ready_iron.smd"
- 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -113,7 +109,7 @@ $sequence "draw" {
 	snap
 }
 $sequence "draw_empty" {
-	"anims\draw_empty.smd"
+	"anims\draw_e.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -125,7 +121,7 @@ $sequence "holster" {
 	snap
 }
 $sequence "holster_empty" {
-	"anims\holster_empty.smd"
+	"anims\holster_e.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -135,16 +131,12 @@ $sequence "holster_empty" {
 
 $sequence "modeswitch" {
 	"anims\switch.smd"
-	"anims\switch_iron.smd"
- 	blend "sights" 0 1
 	fps 24
 	snap
 }
 
 $sequence "modeswitch_empty" {
-	"anims\switch_empty.smd"
-	"anims\switch_empty_iron.smd"
- 	blend "sights" 0 1
+	"anims\switch_e.smd"
 	fps 24
 	snap
 }
@@ -152,7 +144,7 @@ $sequence "modeswitch_empty" {
 
 $sequence "reload" {
 	"anims\reload.smd"
-	"anims\reload_iron.smd"
+	"anims\reload_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -160,8 +152,8 @@ $sequence "reload" {
 }
 
 $sequence "reload_empty" {
-	"anims\reload_empty.smd"
-	"anims\reload_empty_iron.smd"
+	"anims\reload_e.smd"
+	"anims\reload_e_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -170,7 +162,7 @@ $sequence "reload_empty" {
 
 $sequence "reload_20" {
 	"anims\reload20.smd"
-	"anims\reload20_iron.smd"
+	"anims\reload20_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -178,8 +170,8 @@ $sequence "reload_20" {
 }
 
 $sequence "reload_empty_20" {
-	"anims\reload_empty20.smd"
-	"anims\reload_empty20_iron.smd"
+	"anims\reload20_e.smd"
+	"anims\reload20_e_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -192,7 +184,7 @@ $sequence "inspect" {
 	fps 30
 }
 $sequence "inspect_empty" {
-	"anims\inspect_empty.smd"
+	"anims\inspect_e.smd"
 	// snap
 	fps 30
 }
@@ -289,6 +281,7 @@ $bonemerge "round1"
 $bonemerge "round2"
 $bonemerge "round3"
 $bonemerge "laseradj"
+$bonemerge "mag2"
 
 // $collisionmodel "col.smd"
 // {

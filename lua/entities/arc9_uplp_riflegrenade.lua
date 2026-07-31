@@ -113,6 +113,7 @@ function ENT:Detonate()
         local effectdata = EffectData()
         effectdata:SetOrigin(self:GetPos())
 
+        _ = nil
         if self:WaterLevel() >= 1 then
             util.Effect("WaterSurfaceExplosion", effectdata)
             self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
