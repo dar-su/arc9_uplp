@@ -3661,3 +3661,171 @@ L["uplp_rpg7_rocket_thermo.description"] = "En termobarisk granat till ZPG-61:an
 L["uplp_rpg7_rocket_shovel.printname"] = "...Spade"
 L["uplp_rpg7_rocket_shovel.compactname"] = "Spade"
 L["uplp_rpg7_rocket_shovel.description"] = "En bondes bästa vän, och din måltavlas värsta mardröm.\n\n...det är en spade, behöver du verkligen mer info?"
+
+
+//////////////////// Colt 1911
+-- L["uplp_weapon_1911"] = "ASP 1911"
+-- L["uplp_weapon_1911_desc"] = "The ASP 1911 (\"American Service Pistol\", Model of 1911) is a rugged, single-action, semi-automatic handgun chambered in .45 ACP, renowned for its reliability, stopping power, and ergonomic design. Adopted as a standard military sidearm in 1911, the ASP 1911 earned a legendary reputation through decades of service and remains one of the most influential pistol designs ever created."
+
+-- L["uplp_weapon_1911_real"] = "M1911"
+
+-- L["uplp_weapon_1911_manufacturer"] = "Colt Manufacturing Company"
+
+/////////// Attachments
+////// Frame & Internals
+-- L["uplp_1911_frame_auto.printname"] = "Automatic Frame & Internals"
+-- L["uplp_1911_frame_auto.compactname"] = "Auto"
+-- L["uplp_1911_frame_auto.description"] = "Custom-made frame and internals, converting the ASP 1911 to <color=100,255,100>fully automatic</color> fire, and converting it to fire <color=255,255,100>.38 Super</color>."
+
+-- L["uplp_1911_frame_m45a1.printname"] = "USMC Frame"
+-- L["uplp_1911_frame_m45a1.compactname"] = "USMC"
+-- L["uplp_1911_frame_m45a1.description"] = "Modernized, military-spec frame and internals for the ASP 1911."
+
+-- L["uplp_1911_frame_m45a1fde.printname"] = "USMC Frame (FDE)"
+-- L["uplp_1911_frame_m45a1fde.compactname"] = "USMC (FDE)"
+-- L["uplp_1911_frame_m45a1fde.description"] = "Modernized, military-spec frame and internals for the ASP 1911. Now in Flat Dark Earth."
+
+-- L["uplp_1911_frame_silver.printname"] = "Silverstrike Frame"
+-- L["uplp_1911_frame_silver.compactname"] = "Silverstrike"
+-- L["uplp_1911_frame_silver.description"] = "Custom silver-plated frame made by Silverstrike."
+
+////// Magazine
+-- L["uplp_1911_mag_23.printname"] = "23-Round .45 ACP"
+-- L["uplp_1911_mag_23.compactname"] = "23R .45"
+-- L["uplp_1911_mag_23.description"] = "Extended 23-round magazine for the ASP 1911."
+
+-- L["uplp_1911_mag_23_38s.printname"] = "23-Round .38 Super"
+-- L["uplp_1911_mag_23_38s.compactname"] = "23R .38"
+-- L["uplp_1911_mag_23_38s.description"] = "Extended 23-round magazine for the ASP 1911."
+
+////// Pistol Grip
+-- L["uplp_1911_grip_pachmayr.printname"] = "Wooden Pistol Grip w/ Finger Grooves"
+-- L["uplp_1911_grip_pachmayr.compactname"] = "Wood FG"
+-- L["uplp_1911_grip_pachmayr.description"] = "Durable wooden pistol grip with a built-in finger groove accessory for improved ergonomics."
+
+-- L["uplp_1911_grip_acryl.printname"] = "Acryl Glass Pistol Grip"
+-- L["uplp_1911_grip_acryl.compactname"] = "Acryl"
+-- L["uplp_1911_grip_acryl.description"] = "Custom pistol grip for the ASP 1911 allowing the user to attach a picture inside. Personalization at its finest!"
+
+-- L["uplp_1911_grip_hardballer.printname"] = "Silverstrike Pistol Grip"
+-- L["uplp_1911_grip_hardballer.compactname"] = "Silverstrike"
+-- L["uplp_1911_grip_hardballer.description"] = "Custom pistol grip for the ASP 1911."
+
+-- L["uplp_1911_grip_m45a1.printname"] = "USMC Pistol Grip"
+-- L["uplp_1911_grip_m45a1.compactname"] = "USMC"
+-- L["uplp_1911_grip_m45a1.description"] = "Military-spec pistol grip for maximum comfort."
+
+-- L["uplp_1911_grip_m45a1fde.printname"] = "USMC Pistol Grip (FDE)"
+-- L["uplp_1911_grip_m45a1fde.compactname"] = "USMC (FDE)"
+-- L["uplp_1911_grip_m45a1fde.description"] = "Military-spec pistol grip for maximum comfort. Now in Flat Dark Earth."
+
+-- L["uplp_1911_grip_polymer.printname"] = "Black Polymer Pistol Grip"
+-- L["uplp_1911_grip_polymer.compactname"] = "Polymer"
+-- L["uplp_1911_grip_polymer.description"] = "Lightweight polymer pistol grip for the ASP 1911."
+
+////// Slide
+-- L["uplp_1911_slide_hardballer.printname"] = "Silverstrike Slide"
+-- L["uplp_1911_slide_hardballer.compactname"] = "Silverstrike"
+-- L["uplp_1911_slide_hardballer.description"] = "Extended stainless steel slide and barrel for the ASP 1911."
+
+-- L["uplp_1911_slide_m45a1.printname"] = "USMC Slide"
+-- L["uplp_1911_slide_m45a1.compactname"] = "USMC"
+-- L["uplp_1911_slide_m45a1.description"] = "Modernized, reinforced slide and barrel for the ASP 1911."
+
+-- L["uplp_1911_slide_m45a1fde.printname"] = "USMC Slide (FDE)"
+-- L["uplp_1911_slide_m45a1fde.compactname"] = "USMC (FDE)"
+-- L["uplp_1911_slide_m45a1fde.description"] = "Modernized, reinforced slide and barrel for the ASP 1911. Now in Flat Dark Earth."
+
+-- L["uplp_1911_slide_sub.printname"] = "Subcompact Slide"
+-- L["uplp_1911_slide_sub.compactname"] = "Compact"
+-- L["uplp_1911_slide_sub.description"] = "Shortened slide and barrel for the ASP 1911."
+
+-- L["uplp_1911_slide_tac.printname"] = "Tactical Slide"
+-- L["uplp_1911_slide_tac.compactname"] = "Tac."
+-- L["uplp_1911_slide_tac.description"] = "Aftermarket tactical slide for the ASP 1911."
+
+-- L["uplp_1911_slide_shotgun.printname"] = "Crowd Control Slide"
+-- L["uplp_1911_slide_shotgun.compactname"] = "CC"
+-- L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun."
+
+////// Other
+-- L["uplp_1911_comp.printname"] = "Compensator"
+-- L["uplp_1911_comp.compactname"] = "Comp."
+-- L["uplp_1911_comp.description"] = "Aftermarket compensator, pushing gases upwards to reduce vertical recoil."
+
+-- L["uplp_1911_stock.printname"] = "Wooden Stock"
+-- L["uplp_1911_stock.compactname"] = "Wood S."
+-- L["uplp_1911_stock.description"] = "Real tough wooden stock for the ASP 1911."
+
+-- L["uplp_1911_wirestock.printname"] = "Wire Stock"
+-- L["uplp_1911_wirestock.compactname"] = "Wire S."
+-- L["uplp_1911_wirestock.description"] = "Lightweight metal stock for the ASP 1911.\nNot necessarily the most comfortable option, but it's lightweight, and gets the job done."
+
+-- L["uplp_1911_grip.printname"] = "Foregrip"
+-- L["uplp_1911_grip.compactname"] = "Grip"
+-- L["uplp_1911_grip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
+
+//////////////////// Staccato 2011
+-- L["uplp_weapon_s2011"] = "LA M11X"
+-- L["uplp_weapon_s2011_desc"] = "A modernized service pistol retaining the spirit of the original while incorporating advanced ergonomics. Manufactured by Liberty Arms, the M11X offers a lighter, yet stronger construction while also allowing for larger customizability."
+
+-- L["uplp_weapon_s2011_real"] = "Staccato P"
+
+-- L["uplp_weapon_s2011_manufacturer"] = "Staccato 2011"
+
+/////////// Attachments
+////// Pistol Grip
+-- L["uplp_s2011_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
+-- L["uplp_s2011_grip_skeleton.compactname"] = "Skeleton"
+-- L["uplp_s2011_grip_skeleton.description"] = "Ultra-lightweight pistol grip with most, if not all, comfort removed. Also allows the user to attach a picture inside. Personalization at its finest!"
+
+-- L["uplp_s2011_grip_jw.printname"] = "Assassin's Pistol Grip"
+-- L["uplp_s2011_grip_jw.compactname"] = "Assassin"
+-- L["uplp_s2011_grip_jw.description"] = "Custom-made pistol grip for the M11X."
+
+-- L["uplp_s2011_grip_tac.printname"] = "Tactical Pistol Grip"
+-- L["uplp_s2011_grip_tac.compactname"] = "Tac."
+-- L["uplp_s2011_grip_tac.description"] = "Sleek tactical pistol grip with built-in magwell."
+
+-- L["uplp_s2011_grip_solid.printname"] = "Aluminium Pistol Grip"
+-- L["uplp_s2011_grip_solid.compactname"] = "Alum."
+-- L["uplp_s2011_grip_solid.description"] = "Durable aluminium pistol grip for the M11X."
+
+////// Internals
+-- L["uplp_s2011_int_hardened.printname"] = "Reinforced Internals"
+-- L["uplp_s2011_int_hardened.compactname"] = "Reinforced"
+-- L["uplp_s2011_int_hardened.description"] = "Aftermarket internals for the M11X with improved durability that improve range and stability, at the cost of speed."
+
+-- L["uplp_s2011_int_jw.printname"] = "Assassin's Internals"
+-- L["uplp_s2011_int_jw.compactname"] = "Assassin"
+-- L["uplp_s2011_int_jw.description"] = "Aftermarket internals for the M11X that improve accuracy and speed, at the cost of range."
+
+////// Magazines
+-- L["uplp_s2011_mag_20.printname"] = "20-Round .45 ACP"
+-- L["uplp_s2011_mag_20.compactname"] = "20R"
+-- L["uplp_s2011_mag_20.description"] = "20-round magazine for the M11X."
+
+-- L["uplp_s2011_mag_24.printname"] = "24-Round .45 ACP"
+-- L["uplp_s2011_mag_24.compactname"] = "24R"
+-- L["uplp_s2011_mag_24.description"] = "24-round magazine for the M11X."
+
+////// Slides
+-- L["uplp_s2011_slide_jw.printname"] = "Assassin's Slide & Frame"
+-- L["uplp_s2011_slide_jw.compactname"] = "Assassin (C)"
+-- L["uplp_s2011_slide_jw.description"] = "Custom-made slide with extended frame and a built-in compensator. Also comes with modified front sights, allowing rapid target acquisition."
+
+-- L["uplp_s2011_slide_jw_bronze.printname"] = "Assassin's Slide, Frame & Bronze Internals"
+-- L["uplp_s2011_slide_jw_bronze.compactname"] = "Assassin (B)"
+-- L["uplp_s2011_slide_jw_bronze.description"] = "Custom-made slide with an extended frame, built-in compensator, and bronze internals. Also comes with modified front sights, allowing rapid target acquisition."
+
+-- L["uplp_s2011_slide_long.printname"] = "Extended Slide"
+-- L["uplp_s2011_slide_long.compactname"] = "Ext."
+-- L["uplp_s2011_slide_long.description"] = "Extended slide."
+
+-- L["uplp_s2011_slide_short.printname"] = "Compact Slide"
+-- L["uplp_s2011_slide_short.compactname"] = "Comp."
+-- L["uplp_s2011_slide_short.description"] = "Shortened slide."
+
+-- L["uplp_s2011_slide_vshort.printname"] = "Subcompact Slide & Frame"
+-- L["uplp_s2011_slide_vshort.compactname"] = "Subcomp."
+-- L["uplp_s2011_slide_vshort.description"] = "Even more shortened slide and custom frame with built-in compensator. Also comes with modified front sights, allowing rapid target acquisition."
