@@ -2826,7 +2826,7 @@ ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
 end
 
 
-ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact"}
+ATT.Category = {"uplp_optic_dovetail", "uplp_optic_dovetail_compact", "uplp_rpg7_scope"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_cqc)
@@ -3056,7 +3056,7 @@ ATT.Folder = "1-2x"
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
-ATT.Icon = Material(iconfolder .. "hl2.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "mp7/reflex.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/optic_griddy.mdl"
 ATT.FoldSights = true
@@ -3077,12 +3077,12 @@ ATT.ActivePosHook = function(swep, pos)
 end
 
 ATT.HoloSight = true
-ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/cross2.png", "mips smooth")
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/hl2.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 666
+ATT.HoloSightSize = 450
 ATT.HoloSightColorable = true
--- ATT.HoloSightDepthAdjustment = -0.003
-local mat2 = Material("vgui/uplp_reticles/new/cross2 c.png", "mips smooth")
+ATT.HoloSightDepthAdjustment = -0.007
+local mat2 = Material("vgui/uplp_reticles/new/hl2 c.png", "mips smooth")
 ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
     col.a = 255 * 0.75
     render.SetMaterial(mat2)

@@ -1,14 +1,21 @@
-"VertexLitGeneric"
+// "VertexLitGeneric"
+"UnLitGeneric"
 {
 	"$basetexture" "models/weapons/arc9/uplp/glass"
 	"$bumpmap" "models/weapons/arc9/uplp/nrm"
 
-	// "$phong" "1"
-	// "$phongboost" "0.3"
-	// "$phongexponent" "1500"
+	"$phong" "1"
+	"$phongboost" "0.3"
+	"$phongalbedotint" "1"
+	"$phongexponent" "300"
+	"$phongfresnelranges" "[5.22 5.856 20]"
 
 	"$detail" "models/weapons/arc9/uplp/glass"
 	"$detailscale" "1"
-	"$detailblendfactor" "0.95"
+	"$detailblendfactor" "0.5"
 	"$detailblendmode" "5"
+
+	"$ignorez" "1"
+	"$model" "1"
+	$flags 32768 
 }

@@ -123,6 +123,7 @@ L["uplp_class_weapon_sniper"] = "Sniper Rifle"
 L["uplp_class_weapon_lever"] = "Lever-Action Rifle"
 L["uplp_class_weapon_dmr"] = "Designated Marksman Rifle"
 L["uplp_class_weapon_throwable"] = "Throwable"
+L["uplp_class_weapon_launcher"] = "Grenade Launcher"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments

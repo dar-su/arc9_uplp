@@ -30,6 +30,10 @@ $bodygroup "irons" {
 	studio "irons.smd"
 	studio "ironsdown.smd"
 }
+$bodygroup "rail" {
+	blank
+	studio "mp7 old rail.smd"
+}
 
 $cdmaterials "models\weapons\arc9\uplp"
 

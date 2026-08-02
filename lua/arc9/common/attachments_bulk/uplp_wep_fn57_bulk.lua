@@ -130,3 +130,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_fn57_skin_panda"}
 
 ARC9.LoadAttachment(ATT, "uplp_fn57_skin_panda")
+
+
+
+
+-- ATT.Model = "models/weapons/arc9/uplp/raffica_lrhik.mdl"
+-- ATT.DrawFunc = function(swep, model, wm)
+--     ARC9.UPLP_CallAlyxGripRT(swep)
+-- end

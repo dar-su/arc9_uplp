@@ -35,6 +35,69 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) 
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_stock_folded")
 
+---------- uplp_mp7_stock_tac
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_mp7_stock_tac"
+ATT.CompactName = "uplp_mp7_stock_tac"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "tac.png", "mips smooth")
+
+ATT.Category = "uplp_mp7_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- -- Positives
+--ATT.SwayAddSights = -1
+ATT.RecoilAdd = -0.35
+ATT.RecoilAutoControlMult = 1.35
+
+-- -- Negatives
+ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.03
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_mp7_stock_tac")
+
+---------- uplp_mp7_stock_tube
+
+
+ATT = {}
+
+ATT.PrintName = "uplp_mp7_stock_tube"
+ATT.CompactName = "uplp_mp7_stock_tube"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "tube.png", "mips smooth")
+
+ATT.Category = "uplp_mp7_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
+
+
+-- AR15 stocks reduce too much recoil so this is to counterbalance them
+ATT.RecoilAdd = 0.25
+ATT.SwayAddSights = 0.5
+
+ATT.Attachments = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_stock"),
+        Category = {"uplp_ar15_stock"},
+        DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
+        Pos = Vector(1.2, -0.0, 0.2),
+        Ang = Angle(0, 0, 0),
+        Scale = 1.085
+    },
+}
+
+ARC9.LoadAttachment(ATT, "uplp_mp7_stock_tube")
+
 
 -------------------- MAGAZINES
 ---------- uplp_mp7_mag_20
@@ -86,7 +149,7 @@ ATT = {}
 ATT.PrintName = "PDW Iron Sights"
 ATT.CompactName = "PDW IS"
 ATT.Description = ATT.PrintName
-
+ATT.SortOrder = -1
 ATT.Icon = Material(iconfolder .. "down.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_optic"
@@ -98,6 +161,9 @@ ATT.ExcludeElements = {"uplp_backup_optic"}
 
 ATT.AimDownSightsTimeAdd = -0.02
 ATT.SpeedMultSights = 0.9
+
+ATT.ExcludeElements = {"uplp_mp7_rec_proto"}
+
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_sight_folded")
 
@@ -135,3 +201,56 @@ ATT.DeployTimeMult = 0.85
 ATT.RecoilAutoControlMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_grip_none")
+
+---------- uplp_mp7_rec_proto
+
+ATT = {}
+
+ATT.PrintName = "uplp_mp7_rec_proto"
+ATT.CompactName = "uplp_mp7_rec_proto"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "old.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_no_backup"}
+
+ATT.Category = "uplp_mp7_receiver"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+ARC9.LoadAttachment(ATT, "uplp_mp7_rec_proto")
+
+---------- uplp_mp7_rec_long
+
+ATT = {}
+
+ATT.PrintName = "uplp_mp7_rec_long"
+ATT.CompactName = "uplp_mp7_rec_long"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
+
+ATT.Category = "uplp_mp7_receiver"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+-- Positives
+ATT.DamageMinAdd = 1
+ATT.RecoilAdd = -0.15
+ATT.RecoilPerShot = 1 / 8
+ATT.SpreadAdd = -0.002
+ATT.SpreadAddRecoil = -0.002
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+
+-- Negatives
+ATT.RPMMult = 0.9
+ATT.SpreadAddHipFire = 0.006
+ATT.SpreadAddMove = 0.002
+ATT.SprintToFireTimeAdd = 0.04
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SwayMultSights = 1.5
+ATT.SpeedMultSights = 0.92
+ATT.SpeedAdd = -0.01
+
+
+ARC9.LoadAttachment(ATT, "uplp_mp7_rec_long")

@@ -35,7 +35,7 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-
+    "[Civil Protection]XQAAAQCMAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZrgpRXm4Oq2wKh3L0Ih81wtRzQIY5FQmTvncckIcgYnkJa3/GdfbTzsqfP0tIq5nqAGyFKjQGUMwUvFSEDlZIh5am4nV6GrqiBuFEYCDPb0QTi2+nx/Qf/BAcBAjhUflMRl/CGZfMSOYoM+3GvnaCJab2MxW1/76Cfvpcykv/r70vS+8guqr4A"
 }
 
 SWEP.DefaultBodygroups = "0000010000000000" -- Might as well prepare for the future
@@ -232,11 +232,37 @@ local is_folded = {
     ViewModelFOV = 65,
 }
 
+local is_proto = {
+    Pos = Vector(-3.09, -5, 0.95) + Vector(-0.17, 0, 0.91),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
+local is_tall = {
+     Pos = Vector(-3.1, -5, 0.05) + Vector(-0.17, 0, 0.55),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+local is_short = {
+     Pos = Vector(-3.1, -5, 0.2) + Vector(-0.17, 0, 0.55),
+    Ang = Angle(0, 0, 0),
+    Magnification = 1.15,
+    ViewModelFOV = 65,
+}
+
 SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
     local attached = self:GetElements()
 
     if attached["uplp_mp7_sight_folded"] then
         return is_folded
+    elseif attached["uplp_mp7_rec_proto"] then
+        return is_proto
+    elseif attached["uplp_ar15_rs_tall"] then
+        return is_tall
+    elseif attached["uplp_ar15_rs_short"] then
+        return is_short
     end
 end
 
@@ -693,10 +719,29 @@ SWEP.DeployTime = 1
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
-    if eles["uplp_backup_optic"] or eles["uplp_no_backup"] then
+    if eles["uplp_backup_optic"] or eles["uplp_no_backup"] or eles["uplp_mp7_rec_proto"] or eles["uplp_ar15_rs"] then
         mdl:SetBodygroup(5, 0)
     end
+
+    if eles["uplp_mp7_rec_proto"] then
+        if eles["uplp_mp7_stock_folded"] then
+            mdl:SetBodygroup(2, 3)
+        elseif !eles["uplp_mp7_stock"] then
+            mdl:SetBodygroup(2, 2)
+        end
+
+        if eles["uplp_tac_used"] then
+            mdl:SetBodygroup(6, 1)
+        end
+    end
 end
+
+SWEP.AttachmentTableOverrides = {
+    ["uplp_grip_cqr"] = {
+        ModelOffset = Vector(0, 0, 1.85),
+        ModelAngleOffset = Angle(90, 90, 90),
+    },
+}
 
 SWEP.AttachmentElements = {
     -- STOCKS
@@ -710,12 +755,29 @@ SWEP.AttachmentElements = {
 
     -- GRIPS
     ["uplp_grip_used"] = { Bodygroups={ { 3, 1 } } },
+    ["uplp_ubgl_m203_rail"] = { Bodygroups={ { 3, 1 } } },
 
     -- IRONS
     -- ["uplp_optic_used"] = { Bodygroups={ { 5, 0 } } },
     -- ["uplp_mp7_pdw"] = { Bodygroups={ { 5, 2 } } },
 
     ["uplp_optic_used"] = { Bodygroups={ { 5, 2 } } },
+
+
+
+    ["uplp_mp7_rec_proto"] = { Bodygroups={ { 0, 1 }, { 1, 1 } }, AttPosMods = {
+        [1] = { Pos = Vector(0, -0.9, -1.5) + Vector(0, -1.6, -0.95) },
+    } },
+    ["uplp_mp7_rec_long"] = { Bodygroups={ { 0, 2 }, { 1, 1 } }, AttPosMods = {
+        [4] = { Pos = Vector(0, 1, 14.2) + Vector(0, -1.6, -0.95) },
+        [2] = { Pos = Vector(0, 1.6, 9) + Vector(0, -1.6, -0.95) },
+        [3] = { Pos = Vector(-1.25, -1.4, 10.5) },
+        [16] = { Pos = Vector(0, -0.95, 11.05) + Vector(0, -1.6, -0.95) },
+    } },
+
+    ["uplp_mp7_stock_tac"] = { Bodygroups = { { 2, 5 } } },
+    ["uplp_mp7_stock_tube"] = { Bodygroups = { { 2, 4 } } },
+
 
 }
 
@@ -725,7 +787,7 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_mp7_optic"},
+        Category = {"uplp_optic_micro", "uplp_optic_mid"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.9, 0) + Vector(0, -1.6, -0.95),
@@ -745,10 +807,12 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
         -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
-        Bone = "laseradj",
-        Pos = Vector(0.25, 0, 0),
+        -- Bone = "laseradj",
+        -- Pos = Vector(0.25, 0, 0),
+        Bone = "body",
+        Pos = Vector(-0.92, -0.72, 5.5),
         Ang = Angle(90, 90, -90),
-        Icon_Offset = Vector(0, -0.5, 0),
+        Icon_Offset = Vector(0, -0.0, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
@@ -774,8 +838,11 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_backup"),
-        Category = {"uplp_backup_optic"},
+        PrintName = ARC9:GetPhrase("uplp_category_sight_rear"),
+        Category = {"uplp_ar15_rs", "uplp_backup_optic", "uplp_mp7_optic"},
+        RejectAttachments = {
+            ["uplp_ar15_rs_carry"] = true,
+        },
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, -0.95, -2) + Vector(0, -1.6, -0.95),
@@ -837,5 +904,37 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.6, 1.15, 8.5) + Vector(0, -1.6, -0.95),
         Ang = Angle(90, 0, -90),
+    },
+
+
+
+    -- here to not make presets bad
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_receiver"),
+        Category = {"uplp_mp7_receiver"},
+        DefaultIcon = Material(defatt2 .. "g36bar.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0.35, 3) + Vector(0, -1.6, -0.95),
+        Ang = Angle(90, 90, 180),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail", "uplp_grip_horiz_long"},
+        -- DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 3.5, 6.7) + Vector(0, -1.6, -0.95),
+        Ang = Angle(90, 90, 0),
+        RequireElements = {"uplp_mp7_rec_long"},
+        MergeSlots = {2}, 
+        Hidden = true,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sight_front"),
+        Category = {"uplp_ar15_fs"},
+        DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, -0.95, 6.7) + Vector(0, -1.6, -0.95),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_ar15_rs"},
     },
 }

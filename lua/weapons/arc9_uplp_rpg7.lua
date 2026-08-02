@@ -8,15 +8,12 @@ SWEP.Spawnable = true
 SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
--- SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_rpg7")
--- SWEP.Description = ARC9:GetPhrase("uplp_weapon_rpg7_desc")
+SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_rpg7")
+SWEP.Description = ARC9:GetPhrase("uplp_weapon_rpg7_desc")
 
--- SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_launcher") -- In the Customization Menu
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_launcher") -- In the Customization Menu
 
-SWEP.PrintName = "Mystery gift"
-SWEP.Description = "Mystery gift"
 
-SWEP.Class = "roket launcher"
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnmenu
 
 SWEP.Trivia = {
@@ -231,11 +228,11 @@ SWEP.OneHandedSprint = true
 -- SWEP.HoldTypeSprint = "normal"
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(14, 30, 2.5)
-SWEP.CustomizeAng = Angle(90, 0, 0)
+SWEP.CustomizePos = Vector(16, 52, 2.5)
+SWEP.CustomizeAng = Angle(90, 0, 9.5)
 SWEP.CustomizeRotateAnchor = Vector(14, -1.93, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 5, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine

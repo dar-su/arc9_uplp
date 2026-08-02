@@ -10,21 +10,25 @@
 	"$phongexponent" "1000"
 	"$phongfresnelranges" "[5.22 5.856 20]"
 
-	"$envmap" "env_cubemap"
-	"$envmaptint" "[0.2 0.2 0.2]"
-	"$envmapfresnel" "0.1"
-	"$normalmapalphaenvmapmask" "0"
-	"$basemapalphaenvmapmask" "1"
+    "$basemapalphaenvmapmask" "1"
+    "$envmapfresnel" "1"
+    "$envmap" "env_cubemap"
+    "$envmaptint" "[0.325 0.325 0.325]"
 
-	$rimlight               1
-	$rimlightexponent       2
-	$rimlightboost          .2	
-	
-	"Proxies"
-	{
-		"arc9_scope_alpha"
-		{
-			"resultVar" "$envmaptint"
-		}
-	}
+	// $rimlight               1
+	// $rimlightexponent       2
+	// $rimlightboost          .2	
+
+
+
+    "Proxies"
+    {
+        "Arc9EnvMapTint"
+        {
+            "specularity" "0.5"             //0.25, 0.5, 0.75, 1
+            "min" "0"
+            "max" "2"                       //change this if too bright in game
+            "color"	"[0.45 0.45 0.45]"
+        }
+    }
 }
