@@ -3745,13 +3745,9 @@ L["uplp_1911_frame_silver.compactname"] = "Silverstrike"
 L["uplp_1911_frame_silver.description"] = "Custom silver-plated frame made by Silverstrike."
 
 ////// Magazine
-L["uplp_1911_mag_23.printname"] = "23-Round .45 ACP"
-L["uplp_1911_mag_23.compactname"] = "23R .45"
-L["uplp_1911_mag_23.description"] = "Extended 23-round magazine for the ASP 1911."
-
-L["uplp_1911_mag_23_38s.printname"] = "23-Round .38 Super"
-L["uplp_1911_mag_23_38s.compactname"] = "23R .38"
-L["uplp_1911_mag_23_38s.description"] = "Extended 23-round magazine for the ASP 1911."
+L["uplp_1911_mag_ext.printname"] = "Extended magazine"
+L["uplp_1911_mag_ext.compactname"] = "20R"
+L["uplp_1911_mag_ext.description"] = "Extended magazine for the ASP 1911. Fits 20 rounds of .45 ACP or 25 rounds of .38 Super."
 
 ////// Pistol Grip
 L["uplp_1911_grip_pachmayr.printname"] = "Wooden Pistol Grip w/ Finger Grooves"
@@ -3821,66 +3817,66 @@ L["uplp_1911_grip.compactname"] = "Grip"
 L["uplp_1911_grip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
 
 //////////////////// Staccato 2011
-L["uplp_weapon_s2011"] = "LA M11X"
-L["uplp_weapon_s2011_desc"] = "A modernized service pistol retaining the spirit of the original while incorporating advanced ergonomics. Manufactured by Liberty Arms, the M11X offers a lighter, yet stronger construction while also allowing for larger customizability."
+L["uplp_weapon_2011"] = "LA M2K11"
+L["uplp_weapon_2011_desc"] = "A modernized service pistol retaining the spirit of the original while incorporating advanced ergonomics. Manufactured by Liberty Arms, the M2K11 offers a lighter, yet stronger construction while also allowing for larger customizability."
 
-L["uplp_weapon_s2011_real"] = "Staccato P"
+L["uplp_weapon_2011_real"] = "Staccato P"
 
-L["uplp_weapon_s2011_manufacturer"] = "Staccato 2011"
+L["uplp_weapon_2011_manufacturer"] = "Staccato 2011"
 
 /////////// Attachments
 ////// Pistol Grip
-L["uplp_s2011_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
-L["uplp_s2011_grip_skeleton.compactname"] = "Skeleton"
-L["uplp_s2011_grip_skeleton.description"] = "Ultra-lightweight pistol grip with most, if not all, comfort removed. Also allows the user to attach a picture inside. Personalization at its finest!"
+L["uplp_2011_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
+L["uplp_2011_grip_skeleton.compactname"] = "Skeleton"
+L["uplp_2011_grip_skeleton.description"] = "Lightweight pistol grip with glass insert. Also allows the user to attach a picture inside. Personalization at its finest!"
 
-L["uplp_s2011_grip_jw.printname"] = "Assassin's Pistol Grip"
-L["uplp_s2011_grip_jw.compactname"] = "Assassin"
-L["uplp_s2011_grip_jw.description"] = "Custom-made pistol grip for the M11X."
+L["uplp_2011_grip_jw.printname"] = "Assassin's Pistol Grip"
+L["uplp_2011_grip_jw.compactname"] = "Assassin"
+L["uplp_2011_grip_jw.description"] = "Custom-made pistol grip for the M2K11."
 
-L["uplp_s2011_grip_tac.printname"] = "Tactical Pistol Grip"
-L["uplp_s2011_grip_tac.compactname"] = "Tac."
-L["uplp_s2011_grip_tac.description"] = "Sleek tactical pistol grip with built-in magwell."
+L["uplp_2011_grip_tac.printname"] = "Tactical Pistol Grip"
+L["uplp_2011_grip_tac.compactname"] = "Tac."
+L["uplp_2011_grip_tac.description"] = "Sleek tactical pistol grip with built-in magwell."
 
-L["uplp_s2011_grip_solid.printname"] = "Aluminium Pistol Grip"
-L["uplp_s2011_grip_solid.compactname"] = "Alum."
-L["uplp_s2011_grip_solid.description"] = "Durable aluminium pistol grip for the M11X."
+L["uplp_2011_grip_solid.printname"] = "Aluminium Pistol Grip"
+L["uplp_2011_grip_solid.compactname"] = "Alum."
+L["uplp_2011_grip_solid.description"] = "Durable aluminium pistol grip for the M2K11."
 
 ////// Internals
-L["uplp_s2011_int_hardened.printname"] = "Reinforced Internals"
-L["uplp_s2011_int_hardened.compactname"] = "Reinforced"
-L["uplp_s2011_int_hardened.description"] = "Aftermarket internals for the M11X with improved durability that improve range and stability, at the cost of speed."
+L["uplp_2011_int_hardened.printname"] = "Reinforced Internals"
+L["uplp_2011_int_hardened.compactname"] = "Reinforced"
+L["uplp_2011_int_hardened.description"] = "Aftermarket internals for the M2K11 with improved durability that improve range and stability, at the cost of speed."
 
-L["uplp_s2011_int_jw.printname"] = "Assassin's Internals"
-L["uplp_s2011_int_jw.compactname"] = "Assassin"
-L["uplp_s2011_int_jw.description"] = "Aftermarket internals for the M11X that improve accuracy and speed, at the cost of range."
+L["uplp_2011_int_jw.printname"] = "Assassin's Internals"
+L["uplp_2011_int_jw.compactname"] = "Assassin"
+L["uplp_2011_int_jw.description"] = "Aftermarket internals for the M2K11 that improve accuracy and speed, at the cost of range."
 
 ////// Magazines
-L["uplp_s2011_mag_20.printname"] = "20-Round .45 ACP"
-L["uplp_s2011_mag_20.compactname"] = "20R"
-L["uplp_s2011_mag_20.description"] = "20-round magazine for the M11X."
+L["uplp_2011_mag_20.printname"] = "20-Round .45 ACP"
+L["uplp_2011_mag_20.compactname"] = "20R"
+L["uplp_2011_mag_20.description"] = "20-round magazine for the M2K11."
 
-L["uplp_s2011_mag_24.printname"] = "24-Round .45 ACP"
-L["uplp_s2011_mag_24.compactname"] = "24R"
-L["uplp_s2011_mag_24.description"] = "24-round magazine for the M11X."
+L["uplp_2011_mag_24.printname"] = "24-Round .45 ACP"
+L["uplp_2011_mag_24.compactname"] = "24R"
+L["uplp_2011_mag_24.description"] = "24-round magazine for the M2K11."
 
 ////// Slides
-L["uplp_s2011_slide_jw.printname"] = "Assassin's Slide & Frame"
-L["uplp_s2011_slide_jw.compactname"] = "Assassin (C)"
-L["uplp_s2011_slide_jw.description"] = "Custom-made slide with extended frame and a built-in compensator. Also comes with modified front sights, allowing rapid target acquisition."
+L["uplp_2011_slide_jw.printname"] = "Assassin's Slide & Frame"
+L["uplp_2011_slide_jw.compactname"] = "Assassin"
+L["uplp_2011_slide_jw.description"] = "Custom-made slide with extended frame and a built-in compensator. Front sights are located directly on the frame, allowing rapid target acquisition."
 
-L["uplp_s2011_slide_jw_bronze.printname"] = "Assassin's Slide, Frame & Bronze Internals"
-L["uplp_s2011_slide_jw_bronze.compactname"] = "Assassin (B)"
-L["uplp_s2011_slide_jw_bronze.description"] = "Custom-made slide with an extended frame, built-in compensator, and bronze internals. Also comes with modified front sights, allowing rapid target acquisition."
+L["uplp_2011_slide_jw_bronze.printname"] = "Assassin's Slide, Frame & Bronze Internals"
+L["uplp_2011_slide_jw_bronze.compactname"] = "Assassin (B)"
+L["uplp_2011_slide_jw_bronze.description"] = "Custom-made slide with an extended frame, built-in compensator and bronze internals. Front sights are located directly on the frame, allowing rapid target acquisition."
 
-L["uplp_s2011_slide_long.printname"] = "Extended Slide"
-L["uplp_s2011_slide_long.compactname"] = "Ext."
-L["uplp_s2011_slide_long.description"] = "Extended slide."
+L["uplp_2011_slide_long.printname"] = "Extended Slide"
+L["uplp_2011_slide_long.compactname"] = "Ext."
+L["uplp_2011_slide_long.description"] = "Extended slide."
 
-L["uplp_s2011_slide_short.printname"] = "Compact Slide"
-L["uplp_s2011_slide_short.compactname"] = "Comp."
-L["uplp_s2011_slide_short.description"] = "Shortened slide."
+L["uplp_2011_slide_short.printname"] = "Compact Slide"
+L["uplp_2011_slide_short.compactname"] = "Compact"
+L["uplp_2011_slide_short.description"] = "Shortened slide."
 
-L["uplp_s2011_slide_vshort.printname"] = "Subcompact Slide & Frame"
-L["uplp_s2011_slide_vshort.compactname"] = "Subcomp."
-L["uplp_s2011_slide_vshort.description"] = "Even more shortened slide and custom frame with built-in compensator. Also comes with modified front sights, allowing rapid target acquisition."
+L["uplp_2011_slide_vshort.printname"] = "Subcompact Slide & Frame"
+L["uplp_2011_slide_vshort.compactname"] = "Subcompact"
+L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom frame with built-in compensator. Front sights are located directly on the frame, allowing rapid target acquisition."
