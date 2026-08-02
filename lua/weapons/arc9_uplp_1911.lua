@@ -26,15 +26,15 @@ SWEP.Trivia = {
 
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
-    [ ARC9:GetPhrase( "uplp_assets" ) ] = "Tastytony, Darsu",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, inspect by Cylo",
+    [ ARC9:GetPhrase( "uplp_assets" ) ] = "notcplkerry, Darsu",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, inspect by Dummified",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
 
 SWEP.StandardPresets = {
-    "[MSW-S]XQAAAQB3AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZsMV7HF9zV/Vk+zLb7C86non3gUuIi6jwFmLY+5/J1yXKe+UAfnNcUOU5Qy0CGsGV7+C4zaWRS/ZhWWd87sovy2piO5sK7qn8iqxccWyc4AS7vXMtgogCHnIPyMIbtIO5u0HQjJa7P7W4v35w=",
-    "[Subcompact]XQAAAQAyAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26Hms3ty05suDvy9yTZ5H1JIkSaE6LzJJ5CktI9yXd6lJ9pR8KQMlS1CML08SFDZNU6V7Jbak5lLop0GQizISJiysdSrvhUTQXJiAA=="
+    -- "[MSW-S]XQAAAQB3AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZsMV7HF9zV/Vk+zLb7C86non3gUuIi6jwFmLY+5/J1yXKe+UAfnNcUOU5Qy0CGsGV7+C4zaWRS/ZhWWd87sovy2piO5sK7qn8iqxccWyc4AS7vXMtgogCHnIPyMIbtIO5u0HQjJa7P7W4v35w=",
+    -- "[Subcompact]XQAAAQAyAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26Hms3ty05suDvy9yTZ5H1JIkSaE6LzJJ5CktI9yXd6lJ9pR8KQMlS1CML08SFDZNU6V7Jbak5lLop0GQizISJiysdSrvhUTQXJiAA=="
 }
 
 ---- Muzzle Effects, Shell Effects, Camera
@@ -682,124 +682,124 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
 
-    if eles["uplp_optic_direct"] then mdl:SetBodygroup(3, 3) end
+    -- if eles["uplp_optic_direct"] then mdl:SetBodygroup(3, 3) end
 
-    local compact, expert, elite = eles["uplp_usp_slide_compact"], eles["uplp_usp_slide_expert"], eles["uplp_usp_slide_elite"]
-    local tacsight = eles["uplp_usp_irons_tac"]
+    -- local compact, expert, elite = eles["uplp_usp_slide_compact"], eles["uplp_usp_slide_expert"], eles["uplp_usp_slide_elite"]
+    -- local tacsight = eles["uplp_usp_irons_tac"]
 
-    if compact then
-        mdl:SetBodygroup(4, tacsight and 5 or 1) -- front sight
-        if eles["uplp_usp_muz_match"] then mdl:SetBodygroup(2, 3) end
-        if eles["uplp_usp_muz_heavy"] then mdl:SetBodygroup(2, 6) end
-        if eles["uplp_tac_used"] then mdl:SetBodygroup(6, 2) end
-    elseif expert then
-        mdl:SetBodygroup(4, tacsight and 6 or 2) -- front sight
-        if eles["uplp_usp_muz_match"] then mdl:SetBodygroup(2, 4) end
-        if eles["uplp_usp_muz_heavy"] then mdl:SetBodygroup(2, 7) end
-    elseif elite then
-        mdl:SetBodygroup(4, tacsight and 7 or 3) -- front sight
-    end
+    -- if compact then
+    --     mdl:SetBodygroup(4, tacsight and 5 or 1) -- front sight
+    --     if eles["uplp_usp_muz_match"] then mdl:SetBodygroup(2, 3) end
+    --     if eles["uplp_usp_muz_heavy"] then mdl:SetBodygroup(2, 6) end
+    --     if eles["uplp_tac_used"] then mdl:SetBodygroup(6, 2) end
+    -- elseif expert then
+    --     mdl:SetBodygroup(4, tacsight and 6 or 2) -- front sight
+    --     if eles["uplp_usp_muz_match"] then mdl:SetBodygroup(2, 4) end
+    --     if eles["uplp_usp_muz_heavy"] then mdl:SetBodygroup(2, 7) end
+    -- elseif elite then
+    --     mdl:SetBodygroup(4, tacsight and 7 or 3) -- front sight
+    -- end
 
-    if eles["uplp_tac_used"] and (elite or eles["uplp_usp_muz_heavy"]) then
-        mdl:SetBodygroup(6, 3)
-    end
+    -- if eles["uplp_tac_used"] and (elite or eles["uplp_usp_muz_heavy"]) then
+    --     mdl:SetBodygroup(6, 3)
+    -- end
 
-    if eles["uplp_usp_skin_white"] then
-        mdl:SetBodygroup(1, compact and 9 or (expert and 10 or (elite and 11 or 8)))
-    elseif eles["uplp_usp_skin_chrome"] then
-        mdl:SetBodygroup(1, compact and 5 or (expert and 6 or (elite and 7 or 4)))
-    end
+    -- if eles["uplp_usp_skin_white"] then
+    --     mdl:SetBodygroup(1, compact and 9 or (expert and 10 or (elite and 11 or 8)))
+    -- elseif eles["uplp_usp_skin_chrome"] then
+    --     mdl:SetBodygroup(1, compact and 5 or (expert and 6 or (elite and 7 or 4)))
+    -- end
 end
 
 SWEP.AttachmentElements = {
-    ["uplp_usp_mag_tac"] = { Bodygroups = { { 5, 1 } } },
-    ["uplp_usp_mag_20"] = { Bodygroups = { { 5, 2 } } },
+    -- ["uplp_usp_mag_tac"] = { Bodygroups = { { 5, 1 } } },
+    -- ["uplp_usp_mag_20"] = { Bodygroups = { { 5, 2 } } },
 
-    ["uplp_usp_slide_compact"] = { Bodygroups = { { 1, 1 }, { 0, 1 }, { 2, 1 } }, AttPosMods = {
-        [2] = { Pos = Vector(0, 0, -1.7) },
-    }},
-    ["uplp_usp_slide_expert"] = { Bodygroups = { { 1, 2 }, { 2, 1 } }, AttPosMods = {
-        [2] = { Pos = Vector(0, 0, -0.05) },
-    }},
-    ["uplp_usp_slide_elite"] = { Bodygroups = { { 1, 3 }, { 2, 1 } }, AttPosMods = {
-        [2] = { Pos = Vector(0, 0, 0.86) },
-    }},
+    -- ["uplp_usp_slide_compact"] = { Bodygroups = { { 1, 1 }, { 0, 1 }, { 2, 1 } }, AttPosMods = {
+    --     [2] = { Pos = Vector(0, 0, -1.7) },
+    -- }},
+    -- ["uplp_usp_slide_expert"] = { Bodygroups = { { 1, 2 }, { 2, 1 } }, AttPosMods = {
+    --     [2] = { Pos = Vector(0, 0, -0.05) },
+    -- }},
+    -- ["uplp_usp_slide_elite"] = { Bodygroups = { { 1, 3 }, { 2, 1 } }, AttPosMods = {
+    --     [2] = { Pos = Vector(0, 0, 0.86) },
+    -- }},
 
-    ["uplp_muzzle_used"] = { Bodygroups = { { 2, 1 } } },
-    ["uplp_usp_muz_match"] = { Bodygroups = { { 2, 2 } } },
-    ["uplp_usp_muz_heavy"] = { Bodygroups = { { 2, 5 } } },
+    -- ["uplp_muzzle_used"] = { Bodygroups = { { 2, 1 } } },
+    -- ["uplp_usp_muz_match"] = { Bodygroups = { { 2, 2 } } },
+    -- ["uplp_usp_muz_heavy"] = { Bodygroups = { { 2, 5 } } },
 
-    ["uplp_optic_used"] = { Bodygroups = { { 3, 2 } } },
-    ["uplp_usp_irons_tac"] = { Bodygroups = { { 3, 1 }, { 4, 4 } } },
+    -- ["uplp_optic_used"] = { Bodygroups = { { 3, 2 } } },
+    -- ["uplp_usp_irons_tac"] = { Bodygroups = { { 3, 1 }, { 4, 4 } } },
 
-    ["uplp_tac_used"] = { Bodygroups = { { 6, 1 } } },
+    -- ["uplp_tac_used"] = { Bodygroups = { { 6, 1 } } },
 
-    ["uplp_usp_skin_black"] = { Skin = 1 },
-    ["uplp_usp_skin_gold"] = { Skin = 2 },
-    ["uplp_usp_skin_blue"] = { Skin = 3 },
-    ["uplp_usp_skin_red"] = { Skin = 4 },
+    -- ["uplp_usp_skin_black"] = { Skin = 1 },
+    -- ["uplp_usp_skin_gold"] = { Skin = 2 },
+    -- ["uplp_usp_skin_blue"] = { Skin = 3 },
+    -- ["uplp_usp_skin_red"] = { Skin = 4 },
 
-    ["uplp_optic_direct"] = { AttPosMods = {
-        [1] = { Pos = Vector(0, -0.7, -2.3) },
-    }},
+    -- ["uplp_optic_direct"] = { AttPosMods = {
+    --     [1] = { Pos = Vector(0, -0.7, -2.3) },
+    -- }},
 
-    -- wah wah
+    -- -- wah wah
     
-    ["tacpos_match"] = { AttPosMods = {
-        [5] = { Pos = Vector(0, -0.625, 5.7) },
-        [7] = { Pos = Vector(0.6, -1.25, 6.8) },
-    }},
-    ["tacpos_heavy"] = { AttPosMods = { -- fits elite too
-        [5] = { Pos = Vector(0, -0.82, 5.7) },
-        [7] = { Pos = Vector(0.6, -1.4, 7.95) },
-    }},
-    ["tacpos_compact_raw"] = { AttPosMods = {
-        [5] = { Pos = Vector(0, -1.05, 5) },
-        [7] = { Pos = Vector(0.48, -1.62, 5.7) },
-    }},
-    ["tacpos_compact_match"] = { AttPosMods = {
-        [5] = { Pos = Vector(0, -0.625, 5.0) },
-        [7] = { Pos = Vector(0.6, -1.25, 5.9) },
-    }},
-    ["tacpos_compact_heavy"] = { AttPosMods = {
-        [5] = { Pos = Vector(0, -0.82, 5.7) },
-        [7] = { Pos = Vector(0.6, -1.4, 7.2) },
-    }},
-    ["tacpos_expert_match"] = { AttPosMods = {
-        [5] = { Pos = Vector(0, -0.625, 5.7) },
-        [7] = { Pos = Vector(0.6, -1.25, 7.5) },
-    }},
-    ["tacpos_expert_heavy"] = { AttPosMods = {
-        [5] = { Pos = Vector(0, -0.82, 5.7) },
-        [7] = { Pos = Vector(0.6, -1.4, 8.7) },
-    }},
+    -- ["tacpos_match"] = { AttPosMods = {
+    --     [5] = { Pos = Vector(0, -0.625, 5.7) },
+    --     [7] = { Pos = Vector(0.6, -1.25, 6.8) },
+    -- }},
+    -- ["tacpos_heavy"] = { AttPosMods = { -- fits elite too
+    --     [5] = { Pos = Vector(0, -0.82, 5.7) },
+    --     [7] = { Pos = Vector(0.6, -1.4, 7.95) },
+    -- }},
+    -- ["tacpos_compact_raw"] = { AttPosMods = {
+    --     [5] = { Pos = Vector(0, -1.05, 5) },
+    --     [7] = { Pos = Vector(0.48, -1.62, 5.7) },
+    -- }},
+    -- ["tacpos_compact_match"] = { AttPosMods = {
+    --     [5] = { Pos = Vector(0, -0.625, 5.0) },
+    --     [7] = { Pos = Vector(0.6, -1.25, 5.9) },
+    -- }},
+    -- ["tacpos_compact_heavy"] = { AttPosMods = {
+    --     [5] = { Pos = Vector(0, -0.82, 5.7) },
+    --     [7] = { Pos = Vector(0.6, -1.4, 7.2) },
+    -- }},
+    -- ["tacpos_expert_match"] = { AttPosMods = {
+    --     [5] = { Pos = Vector(0, -0.625, 5.7) },
+    --     [7] = { Pos = Vector(0.6, -1.25, 7.5) },
+    -- }},
+    -- ["tacpos_expert_heavy"] = { AttPosMods = {
+    --     [5] = { Pos = Vector(0, -0.82, 5.7) },
+    --     [7] = { Pos = Vector(0.6, -1.4, 8.7) },
+    -- }},
 }
 
-SWEP.Hook_ModifyElements = function(self, eles)
-    local compact, elite, expert, match, heavy = eles["uplp_usp_slide_compact"], eles["uplp_usp_slide_elite"], eles["uplp_usp_slide_expert"], eles["uplp_usp_muz_match"], eles["uplp_usp_muz_heavy"]
+-- SWEP.Hook_ModifyElements = function(self, eles)
+--     local compact, elite, expert, match, heavy = eles["uplp_usp_slide_compact"], eles["uplp_usp_slide_elite"], eles["uplp_usp_slide_expert"], eles["uplp_usp_muz_match"], eles["uplp_usp_muz_heavy"]
 
-    if compact then
-        if match then
-            eles["tacpos_compact_match"] = true
-        elseif heavy then
-            eles["tacpos_compact_heavy"] = true
-        else
-            eles["tacpos_compact_raw"] = true
-        end
-    elseif expert then
-        if match then
-            eles["tacpos_expert_match"] = true
-        elseif heavy then
-            eles["tacpos_expert_heavy"] = true
-        end
-    elseif elite or heavy then
-        eles["tacpos_heavy"] = true
-    elseif match then
-        eles["tacpos_match"] = true
-    end
+--     if compact then
+--         if match then
+--             eles["tacpos_compact_match"] = true
+--         elseif heavy then
+--             eles["tacpos_compact_heavy"] = true
+--         else
+--             eles["tacpos_compact_raw"] = true
+--         end
+--     elseif expert then
+--         if match then
+--             eles["tacpos_expert_match"] = true
+--         elseif heavy then
+--             eles["tacpos_expert_heavy"] = true
+--         end
+--     elseif elite or heavy then
+--         eles["tacpos_heavy"] = true
+--     elseif match then
+--         eles["tacpos_match"] = true
+--     end
 
-    return eles 
-end
+--     return eles 
+-- end
 
 local defatt = "arc9/def_att_icons/"
 local defatt2 = "entities/uplp_attachements/def/"
@@ -807,36 +807,33 @@ local defatt2 = "entities/uplp_attachements/def/"
 SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
-        Category = {"uplp_optic_micro", "uplp_optic_direct", "uplp_usp_sight"},
+        Category = {"uplp_optic_micro", "uplp_optic_direct", "uplp_1911_sight"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "slide",
         Pos = Vector(0, -1.025, -2.5),
         -- Pos = Vector(0, -2, -1.6),
         Ang = Angle(90, 90, 180),
         ExtraSightDistance = 4,
-        Installed = "uplp_usp_irons_tac",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
-        Category = {"uplp_muzzle_pistol", "uplp_usp_muzzle"},
+        Category = {"uplp_muzzle_pistol", "uplp_1911_muzzle"},
         Bone = "barrel",
         Pos = Vector(0, 0, -0.7),
         Ang = Angle(90, 90, 180),
-        Scale = 0.85,
-        Installed = "uplp_usp_muz_match",
+        Scale = 1,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_magazine"),
-        Category = {"uplp_usp_mag"},
+        Category = {"uplp_1911_mag"},
         DefaultIcon = Material(defatt .. "mag_pistol.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0, 2.15, 0.4),
         Ang = Angle(90, 90, 180),
-        Installed = "uplp_usp_mag_tac",
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_slide"),
-        Category = {"uplp_usp_slide"},
+        Category = {"uplp_1911_slide"},
         DefaultIcon = Material(defatt2 .. "slide.png", "mips smooth"),
         Bone = "slide",
         Pos = Vector(0, 0, 0),
@@ -844,20 +841,10 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
-        Category = {"uplp_tac_pistol", "uplp_usp_tac"},
+        Category = {"uplp_tac_pistol", "uplp_1911_tac"},
         Bone = "body",
         Pos = Vector(0, -1.05, 5.6),
         Ang = Angle(90+0.7, 90, 0),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_appearance"),
-        Category = {"uplp_usp_skin"},
-        DefaultIcon = Material(defatt .. "skin.png", "mips smooth"),
-        Bone = "body",
-        Pos = Vector(0, 0, 0.8),
-        Ang = Angle(90, 90, 180),
-        CosmeticOnly = true,
-        Installed = "uplp_usp_skin_chrome",
     },
 
 
@@ -872,7 +859,8 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
-        StickerModel = "models/weapons/arc9/uplp/stickers/usp_1.mdl",
+        StickerModel = "models/weapons/arc9/uplp/stickers/1911_1.mdl",
+        ExcludeElements = {"uplp_1911_slide_sg"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, -2.5 + 1, 1.5),
@@ -880,49 +868,20 @@ SWEP.Attachments = {
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
-        StickerModel = "models/weapons/arc9/uplp/stickers/usp_2.mdl",
-        ExcludeElements = {"uplp_usp_slide_elite"},
+        StickerModel = "models/weapons/arc9/uplp/stickers/1911_2.mdl",
+        ExcludeElements = {"uplp_1911_slide_sg"},
         Category = "stickers",
         Bone = "body",
         Pos = Vector(0, -2.5 + 1, 5),
         Ang = Angle(90, 0, -90),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
-        StickerModel = "models/weapons/arc9/uplp/stickers/usp_2_elite.mdl",
-        RequireElements = {"uplp_usp_slide_elite"},
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " A",
+        StickerModel = "models/weapons/arc9/uplp/stickers/1911_sg.mdl",
+        RequireElements = {"uplp_1911_slide_sg"},
         Category = "stickers",
         Bone = "body",
-        Pos = Vector(0, -2.5 + 1, 5),
-        Ang = Angle(90, 0, -90),
-    },
-
-
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
-        StickerModel = "models/weapons/arc9/uplp/stickers/usp_3_match.mdl",
-        RequireElements = {"tacpos_match"},
-        Category = {"stickers", "uplp_usp_stickers"},
-        Bone = "body",
-        Pos = Vector(0, -2.5 + 1, 7),
-        Ang = Angle(90, 0, -90),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
-        StickerModel = "models/weapons/arc9/uplp/stickers/usp_3_match_elite.mdl",
-        RequireElements = {"tacpos_expert_match"},
-        Category = {"stickers", "uplp_usp_stickers"},
-        Bone = "body",
-        Pos = Vector(0, -2.5 + 1, 7),
-        Ang = Angle(90, 0, -90),
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " C",
-        StickerModel = "models/weapons/arc9/uplp/stickers/usp_3_match_compact.mdl",
-        RequireElements = {"tacpos_compact_match"},
-        Category = {"stickers", "uplp_usp_stickers"},
-        Bone = "body",
-        Pos = Vector(0, -2.5 + 1, 7),
+        Pos = Vector(0, -2.5 + 1, 1.5),
         Ang = Angle(90, 0, -90),
     },
 }
