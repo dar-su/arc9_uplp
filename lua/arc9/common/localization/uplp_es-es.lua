@@ -3679,13 +3679,9 @@ local sr25brll = {
 -- L["uplp_1911_frame_silver.description"] = "Custom silver-plated frame made by Silverstrike."
 
 ////// Magazine
--- L["uplp_1911_mag_23.printname"] = "23-Round .45 ACP"
--- L["uplp_1911_mag_23.compactname"] = "23R .45"
--- L["uplp_1911_mag_23.description"] = "Extended 23-round magazine for the ASP 1911."
-
--- L["uplp_1911_mag_23_38s.printname"] = "23-Round .38 Super"
--- L["uplp_1911_mag_23_38s.compactname"] = "23R .38"
--- L["uplp_1911_mag_23_38s.description"] = "Extended 23-round magazine for the ASP 1911."
+-- L["uplp_1911_mag_ext.printname"] = "Extended Magazine"
+-- L["uplp_1911_mag_ext.compactname"] = "Ext."
+-- L["uplp_1911_mag_ext.description"] = "An extended magazine for the ASP 1911 that fits either 20 rounds of .45 Auto or 25 rounds of .38 Super."
 
 ////// Pistol Grip
 -- L["uplp_1911_grip_pachmayr.printname"] = "Wooden Pistol Grip w/ Finger Grooves"
@@ -3712,6 +3708,10 @@ local sr25brll = {
 -- L["uplp_1911_grip_polymer.compactname"] = "Polymer"
 -- L["uplp_1911_grip_polymer.description"] = "Lightweight polymer pistol grip for the ASP 1911."
 
+-- L["uplp_1911_grip_alyx.printname"] = "Rebel Pistol Grip w/ Ammo Counter"
+-- L["uplp_1911_grip_alyx.compactname"] = "Rebel"
+-- L["uplp_1911_grip_alyx.description"] = "Futuristic aftermarket pistol grip for the ASP 1911 with a custom built-in ammo counter."
+
 ////// Slide
 -- L["uplp_1911_slide_hardballer.printname"] = "Silverstrike Slide"
 -- L["uplp_1911_slide_hardballer.compactname"] = "Silverstrike"
@@ -3737,6 +3737,10 @@ local sr25brll = {
 -- L["uplp_1911_slide_shotgun.compactname"] = "CC"
 -- L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun."
 
+-- L["uplp_1911_slide_alyx.printname"] = "Rebel Slide"
+-- L["uplp_1911_slide_alyx.compactname"] = "Rebel"
+-- L["uplp_1911_slide_alyx.description"] = "Futuristic aftermarket slide for the ASP 1911. Comes with cyan-colored, illuminating front and rear sights."
+
 ////// Other
 -- L["uplp_1911_comp.printname"] = "Compensator"
 -- L["uplp_1911_comp.compactname"] = "Comp."
@@ -3753,6 +3757,18 @@ local sr25brll = {
 -- L["uplp_1911_grip.printname"] = "Foregrip"
 -- L["uplp_1911_grip.compactname"] = "Grip"
 -- L["uplp_1911_grip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
+
+-- L["uplp_1911_laser.printname"] = "Silverstrike Laser Optic"
+-- L["uplp_1911_laser.compactname"] = "Silverstrike"
+-- L["uplp_1911_laser.description"] = "Frame-mounted laser optic specifically made for the ASP 1911."
+
+-- L["uplp_1911_mb_alyx.printname"] = "Rebel Muzzle Brake"
+-- L["uplp_1911_mb_alyx.compactname"] = "Rebel"
+-- L["uplp_1911_mb_alyx.description"] = "Large aftermarket muzzle brake for the ASP 1911."
+
+-- L["uplp_1911_mb.printname"] = "X45 Muzzle Brake"
+-- L["uplp_1911_mb.compactname"] = "X45"
+-- L["uplp_1911_mb.description"] = "Aftermarket muzzle brake for the ASP 1911."
 
 //////////////////// Staccato 2011
 -- L["uplp_weapon_s2011"] = "LA M11X"
