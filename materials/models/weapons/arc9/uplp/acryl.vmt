@@ -1,0 +1,30 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/uplp/acryl"
+	"$bumpmap" "models/weapons/arc9/uplp/nrm"
+	"$translucent" 1
+	
+	"$phong" "1"
+	"$phongboost" "2"
+	"$phongalbedotint" "1"
+	"$phongexponent" "1000"
+	"$phongfresnelranges" "[5.22 5.856 20]"
+
+	"$envmap" "env_cubemap"
+	"$envmaptint" "[0.2 0.2 0.2]"
+	"$envmapfresnel" "0.1"
+	"$normalmapalphaenvmapmask" "0"
+	"$basemapalphaenvmapmask" "1"
+
+	$rimlight               1
+	$rimlightexponent       2
+	$rimlightboost          .2	
+	
+	"Proxies"
+	{
+		"arc9_scope_alpha"
+		{
+			"resultVar" "$envmaptint"
+		}
+	}
+}

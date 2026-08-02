@@ -1,0 +1,14 @@
+"VertexLitGeneric"
+{
+	"$basetexture" "models/weapons/arc9/uplp/glass"
+	"$bumpmap" "models/weapons/arc9/uplp/nrm"
+
+	// "$phong" "1"
+	// "$phongboost" "0.3"
+	// "$phongexponent" "1500"
+
+	"$detail" "models/weapons/arc9/uplp/glass"
+	"$detailscale" "1"
+	"$detailblendfactor" "0.95"
+	"$detailblendmode" "5"
+}
