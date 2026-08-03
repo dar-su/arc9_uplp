@@ -87,8 +87,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 25
-SWEP.DamageMin = 8
+SWEP.DamageMax = 28
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -105,8 +105,8 @@ SWEP.Penetration = 40 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 10 / ARC9.HUToM
-SWEP.RangeMax = 35 / ARC9.HUToM
+SWEP.RangeMin = 15 / ARC9.HUToM
+SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 280 * 39.37
@@ -121,10 +121,10 @@ SWEP.ClipSize = 8
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.3
-SWEP.RecoilSide = 0.9
+SWEP.RecoilUp = 1.6
+SWEP.RecoilSide = 0.7
 
-SWEP.RecoilRandomUp = 0.4
+SWEP.RecoilRandomUp = 0.5
 SWEP.RecoilRandomSide = 0.75
 
 SWEP.RecoilRise = 10
@@ -156,10 +156,10 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.004
-SWEP.SpreadAddHipFire = 0.008
+SWEP.Spread = 0.0045
+SWEP.SpreadAddHipFire = 0.007
 
-SWEP.SpreadAddRecoil = 0.015
+SWEP.SpreadAddRecoil = 0.013
 SWEP.SpreadAddMove = 0.003
 SWEP.SpreadAddMidAir = 0.05
 
@@ -169,9 +169,9 @@ SWEP.HipfireBloomAmplification = 2
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 4
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 4
+SWEP.RecoilDissipationRate = 8
+SWEP.RecoilResetTime = 0.025
+SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCapSights = 1
@@ -184,8 +184,8 @@ SWEP.SpeedMultSights = 0.85 -- When aiming
 
 SWEP.BarrelLength = 24
 
-SWEP.AimDownSightsTime = 0.2
-SWEP.SprintToFireTime = 0.18
+SWEP.AimDownSightsTime = 0.22
+SWEP.SprintToFireTime = 0.2
 
 -- Shooting and Firemodes
 SWEP.RPM = 380 -- How fast gun shoot

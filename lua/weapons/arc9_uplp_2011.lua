@@ -86,7 +86,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 25
-SWEP.DamageMin = 8
+SWEP.DamageMin = 9
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -118,12 +118,12 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 16
 
 -- Recoil
-SWEP.Recoil = 0.5
-SWEP.RecoilUp = 1.3
-SWEP.RecoilSide = 0.9
+SWEP.Recoil = 1
+SWEP.RecoilUp = 1.6
+SWEP.RecoilSide = 1.2
 
-SWEP.RecoilRandomUp = 0.4
-SWEP.RecoilRandomSide = 0.75
+SWEP.RecoilRandomUp = 0.5
+SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
@@ -154,11 +154,11 @@ SWEP.VisualRecoilMultHipFire = 1
 -- SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0.004
-SWEP.SpreadAddHipFire = 0.008
+SWEP.Spread = 0.0035
+SWEP.SpreadAddHipFire = 0.0085
 
-SWEP.SpreadAddRecoil = 0.015
-SWEP.SpreadAddMove = 0.003
+SWEP.SpreadAddRecoil = 0.012
+SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.05
 
 -- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
@@ -167,9 +167,9 @@ SWEP.HipfireBloomAmplification = 2
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 4
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 4
+SWEP.RecoilDissipationRate = 5
+SWEP.RecoilResetTime = 0.025
+SWEP.RecoilPerShot = 1 / 5
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCapSights = 1
@@ -182,11 +182,11 @@ SWEP.SpeedMultSights = 0.85 -- When aiming
 
 SWEP.BarrelLength = 24
 
-SWEP.AimDownSightsTime = 0.2
-SWEP.SprintToFireTime = 0.18
+SWEP.AimDownSightsTime = 0.22
+SWEP.SprintToFireTime = 0.2
 
 -- Shooting and Firemodes
-SWEP.RPM = 450 -- How fast gun shoot
+SWEP.RPM = 360 -- How fast gun shoot
 SWEP.HeatCapacity = 50 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
