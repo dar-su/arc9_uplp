@@ -90,6 +90,7 @@ ATT.Category = "uplp_1911_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_ext.mdl"
+ATT.DropMagazineModel_Priority = 5
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
@@ -130,6 +131,20 @@ ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_clear.mdl"
+
+ATT.Model = "models/weapons/arc9/uplp/1911_glass_grip2.mdl"
+ATT.TranslucentPass = true
+ATT.BoneMerge = true
+
+ATT.DrawFunc = function(swep, model, wm)
+    if !model.appliedmeow then
+        model.appliedmeow = true
+        local slott = swep:LocateSlotFromAddress(14)
+        if slott and slott.Installed then
+            model:SetSubMaterial(1, ARC9.GetAttTable(slott.Installed).StickerMaterial)
+        end
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_acryl")
 
@@ -317,7 +332,7 @@ ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
         Category = {"uplp_sg_ammo"},
-        Pos = Vector(0, 0, 2),
+        Pos = Vector(-2, 0, 0),
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, 0),
         Installed = "uplp_sg_shell_red",

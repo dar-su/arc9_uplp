@@ -723,6 +723,12 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     else
         mdl:SetBodygroup(2, optic and 2 or (alt and 1 or 0))
     end
+
+    if eles["uplp_1911_gripimage"] then
+        mdl:SetBodygroup(3, 5)
+    elseif eles["stikerglass"] then
+        mdl:SetBodygroup(3, 6)
+    end
 end
 
 SWEP.AttachmentElements = {
@@ -730,6 +736,7 @@ SWEP.AttachmentElements = {
     ["uplp_2011_grip_solid"] = { Bodygroups = { { 3, 2 } } },
     ["uplp_2011_grip_jw"] = { Bodygroups = { { 3, 3 } } },
     ["uplp_2011_grip_skeleton"] = { Bodygroups = { { 3, 4 } } },
+    ["uplp_1911_gripimage"] = { Bodygroups = { { 3, 5 } } },
 
     ["uplp_2011_int_hardened"] = { Bodygroups = { { 4, 1 } } },
     ["uplp_2011_int_jw"] = { Bodygroups = { { 4, 2 } } },
@@ -764,8 +771,15 @@ SWEP.Hook_ModifyElements = function(self, eles)
         eles["ironsights_tall"] = true
     end
 
+    local probstikerslot = self:LocateSlotFromAddress(11)
+    if eles["stickers"] and probstikerslot and probstikerslot.Installed then
+        eles["stikerglass"] = true
+    end
+
     return eles 
 end
+
+SWEP.StickersNoNocull = true
 
 
 
@@ -858,5 +872,16 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -2.5 + 1, 1.5),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " Grip",
+        DefaultIcon = Material(defatt .. "sticker.png", "mips smooth"),
+        StickerModel = "models/weapons/arc9/uplp/stickers/2011_grip.mdl",
+        RequireElements = {"uplp_2011_grip_skeleton"},
+        Category = {"stickers", "uplp_1911_gripimage"},
+        Bone = "body",
+        Pos = Vector(0, 1, 0.8),
+        Ang = Angle(90, 0, -90),
+        ForceNoCosmetics = true
     },
 }

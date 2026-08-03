@@ -702,6 +702,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if !eles["uplp_1911_grip"] and eles["uplp_1911_laser"] then
         mdl:SetBodygroup(4, 8)
+    elseif eles["uplp_1911_gripimage"] then
+        mdl:SetBodygroup(4, 7)
     end
 
     if !eles["uplp_1911_frame"] and (eles["uplp_1911_slide_alyx"] or eles["uplp_1911_slide_tac"]) then
@@ -714,6 +716,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if eles["uplp_1911_mag_ext"] then
         mdl:SetBodygroup(6, 3)
+    elseif eles["uplp_1911_grip_acryl"] then
+        mdl:SetBodygroup(6, 2)
     end
 
     if eles["uplp_tac_used"] and !eles["uplp_1911_frame_m45a1"] and !eles["uplp_1911_frame_m45a1fde"] then
@@ -745,6 +749,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
     end
 end
 
+SWEP.StickersNoNocull = true
+
 SWEP.AttachmentElements = {
     ["uplp_1911_frame_m45a1"] = { Bodygroups = { { 0, 1 }, { 5, 1 }, { 6, 1 } },
         AttPosMods = { [6] = { Pos = Vector(0, -0.85, 5.1) } },
@@ -762,6 +768,7 @@ SWEP.AttachmentElements = {
     ["uplp_1911_grip_m45a1fde"] = { Bodygroups = { { 4, 4 } } },
     ["uplp_1911_grip_polymer"] = { Bodygroups = { { 4, 1 } } },
     ["uplp_1911_grip_alyx"] = { Bodygroups = { { 4, 9 } } },
+    ["uplp_1911_gripimage"] = { Bodygroups = { { 4, 7 } } },
 
     ["uplp_1911_slide_hardballer"] = { Bodygroups = { { 1, 1 } },
         AttPosMods = {
@@ -921,5 +928,16 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -2.5 + 1, 1.5),
         Ang = Angle(90, 0, -90),
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " Grip",
+        DefaultIcon = Material(defatt .. "sticker.png", "mips smooth"),
+        StickerModel = "models/weapons/arc9/uplp/stickers/1911_grip.mdl",
+        RequireElements = {"uplp_1911_grip_acryl"},
+        Category = {"stickers", "uplp_1911_gripimage"},
+        Bone = "body",
+        Pos = Vector(0, 1, 0.8),
+        Ang = Angle(90, 0, -90),
+        ForceNoCosmetics = true
     },
 }

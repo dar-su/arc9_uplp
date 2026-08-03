@@ -3905,3 +3905,15 @@ L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom 
 L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
 L["uplp_2011_sight_alt.compactname"] = "Alternative"
 L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron sights for the M2K11. Style depends on equipped slide."
+
+L["uplp_1911_gripimage_cylo.printname"] = "\"Cylo\" Grip Image"
+L["uplp_1911_gripimage_cylo.compactname"] = "Cylo"
+L["uplp_1911_gripimage_cylo.description"] = "An insertable image of a cartoonish bat for ASP 1911/M2K11 acryl grips.\n\nDrawn by Cylowalker."
+
+L["uplp_1911_gripimage_dars.printname"] = "\"Platinum Fox\" Grip Image"
+L["uplp_1911_gripimage_dars.compactname"] = "Platinum Fox"
+L["uplp_1911_gripimage_dars.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
+
+L["uplp_1911_gripimage_rzen.printname"] = "\"Red Dog\" Grip Image"
+L["uplp_1911_gripimage_rzen.compactname"] = "Red Dog"
+L["uplp_1911_gripimage_rzen.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."

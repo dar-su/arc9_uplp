@@ -41,6 +41,7 @@ $bodygroup "grip" {
 	studio "2011 grip jw.smd"
 	studio "2011 grip holed glass.smd"
 	studio "2011 grip holed image.smd"
+	studio "2011 grip holed glass2.smd"
 
 	blank
 }

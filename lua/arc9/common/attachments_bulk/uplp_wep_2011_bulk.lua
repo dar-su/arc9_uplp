@@ -12,8 +12,23 @@ ATT.CompactName = "uplp_2011_grip_skeleton"
 ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "gglass.png", "mips smooth")
 
+ATT.Model = "models/weapons/arc9/uplp/2011_glass_grip2.mdl"
+ATT.TranslucentPass = true
+ATT.BoneMerge = true
+
 ATT.Category = "uplp_2011_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+ATT.DrawFunc = function(swep, model, wm)
+    if !model.appliedmeow then
+        model.appliedmeow = true
+        local slott = swep:LocateSlotFromAddress(11)
+        if slott and slott.Installed then
+            model:SetSubMaterial(0, ARC9.GetAttTable(slott.Installed).StickerMaterial)
+        end
+    end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_2011_grip_skeleton")
 
@@ -221,3 +236,61 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ExcludeElements = {"uplp_2011_slide_jw"}
 
 ARC9.LoadAttachment(ATT, "uplp_2011_sight_alt")
+
+
+
+
+
+
+---------- uplp_1911_gripimage_cylo
+
+ATT = {}
+
+ATT.PrintName = "uplp_1911_gripimage_cylo"
+ATT.CompactName = "uplp_1911_gripimage_cylo"
+ATT.Description = ATT.PrintName
+ATT.Icon = Material(iconfolder .. "cylo.png", "mips smooth")
+ATT.Free = true
+
+ATT.Category = "uplp_1911_gripimage"
+
+ATT.SubMaterial3 = "models/weapons/arc9/uplp/gripimage_cylo"
+ATT.SortOrder = -3
+
+ARC9.LoadAttachment(ATT, "uplp_1911_gripimage_cylo")
+
+---------- uplp_1911_gripimage_dars
+
+ATT = {}
+
+ATT.PrintName = "uplp_1911_gripimage_dars"
+ATT.CompactName = "uplp_1911_gripimage_dars"
+ATT.Description = ATT.PrintName
+ATT.Icon = Material(iconfolder .. "dars.png", "mips smooth")
+ATT.Free = true
+
+ATT.Category = "uplp_1911_gripimage"
+
+ATT.SubMaterial3 = "models/weapons/arc9/uplp/gripimage_dars"
+-- ATT.StickerMaterial = "stickers/uplp/paw"
+ATT.SortOrder = -1
+
+ARC9.LoadAttachment(ATT, "uplp_1911_gripimage_dars")
+
+---------- uplp_1911_gripimage_rzen
+
+ATT = {}
+
+ATT.PrintName = "uplp_1911_gripimage_rzen"
+ATT.CompactName = "uplp_1911_gripimage_rzen"
+ATT.Description = ATT.PrintName
+ATT.Icon = Material(iconfolder .. "rzen.png", "mips smooth")
+ATT.Free = true
+
+ATT.Category = "uplp_1911_gripimage"
+
+ATT.SubMaterial3 = "models/weapons/arc9/uplp/gripimage_rzen"
+-- ATT.StickerMaterial = "stickers/uplp/paw"
+ATT.SortOrder = -2
+
+ARC9.LoadAttachment(ATT, "uplp_1911_gripimage_rzen")
