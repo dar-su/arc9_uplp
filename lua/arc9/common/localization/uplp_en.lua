@@ -3703,7 +3703,7 @@ L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
 ////// Scopes
 L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
 L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
-L["uplp_rpg7_scope_pgo.description"] = "Soviet-era magnified optic for the ZPG-61 anti-tank launcher." .. desc_midoptic
+L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher." .. desc_midoptic .. "\nCan be equipped on any AK-style rifle if desired. Just ignore the range marks though - your 7.62 rounds travel farther than those indicate."
 
 ////// Rockets
 L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""
@@ -3904,4 +3904,4 @@ L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom 
 
 L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
 L["uplp_2011_sight_alt.compactname"] = "Alternative"
-L["uplp_2011_sight_alt.description"] = "Alternative pair of rear and front sight for the M2K11. Style depends on equipped slide."
+L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron sights for the M2K11. Style depends on equipped slide."

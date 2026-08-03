@@ -54,6 +54,7 @@ L["uplp_caliber_9x39mm"] = "9×39mm"
 L["uplp_caliber_45acp"] = ".45 ACP"
 L["uplp_caliber_308auto"] = ".380 ACP"
 L["uplp_caliber_4570"] = ".45-70 Government"
+L["uplp_caliber_2375"] = " 23×75mm R"
 
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Fabricante2"
@@ -122,6 +123,7 @@ L["uplp_class_weapon_sniper"] = "Rifle de Francotirador"
 L["uplp_class_weapon_lever"] = "Fusil con acción de palanca"
 L["uplp_class_weapon_dmr"] = "Fusil de tirador designado"
 L["uplp_class_weapon_throwable"] = "Arrojadizo"
+-- L["uplp_class_weapon_launcher"] = "Grenade Launcher"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments
@@ -3636,7 +3638,7 @@ local sr25brll = {
 ////// Scopes
 -- L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
 -- L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
--- L["uplp_rpg7_scope_pgo.description"] = "Soviet-era magnified optic for the ZPG-61 anti-tank launcher." .. desc_midoptic
+-- L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher." .. desc_midoptic .. "\nCan be equipped on any AK-style rifle if desired. Just ignore the range marks though - your 7.62 rounds travel farther than those indicate."
 
 ////// Rockets
 -- L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""
@@ -3754,9 +3756,9 @@ local sr25brll = {
 -- L["uplp_1911_wirestock.compactname"] = "Wire S."
 -- L["uplp_1911_wirestock.description"] = "Lightweight metal stock for the ASP 1911.\nNot necessarily the most comfortable option, but it's lightweight, and gets the job done."
 
--- L["uplp_1911_grip.printname"] = "Foregrip"
--- L["uplp_1911_grip.compactname"] = "Grip"
--- L["uplp_1911_grip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
+-- L["uplp_1911_thompsongrip.printname"] = "Foregrip"
+-- L["uplp_1911_thompsongrip.compactname"] = "Grip"
+-- L["uplp_1911_thompsongrip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
 
 -- L["uplp_1911_laser.printname"] = "Silverstrike Laser Optic"
 -- L["uplp_1911_laser.compactname"] = "Silverstrike"
@@ -3771,66 +3773,70 @@ local sr25brll = {
 -- L["uplp_1911_mb.description"] = "Aftermarket muzzle brake for the ASP 1911."
 
 //////////////////// Staccato 2011
--- L["uplp_weapon_s2011"] = "LA M11X"
--- L["uplp_weapon_s2011_desc"] = "A modernized service pistol retaining the spirit of the original while incorporating advanced ergonomics. Manufactured by Liberty Arms, the M11X offers a lighter, yet stronger construction while also allowing for larger customizability."
+-- L["uplp_weapon_2011"] = "LA M2K11"
+-- L["uplp_weapon_2011_desc"] = "A modernized service pistol retaining the spirit of the original while incorporating advanced ergonomics. Manufactured by Liberty Arms, the M2K11 offers a lighter, yet stronger construction while also allowing for larger customizability."
 
--- L["uplp_weapon_s2011_real"] = "Staccato P"
+-- L["uplp_weapon_2011_real"] = "Staccato P"
 
--- L["uplp_weapon_s2011_manufacturer"] = "Staccato 2011"
+-- L["uplp_weapon_2011_manufacturer"] = "Staccato 2011"
 
 /////////// Attachments
 ////// Pistol Grip
--- L["uplp_s2011_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
--- L["uplp_s2011_grip_skeleton.compactname"] = "Skeleton"
--- L["uplp_s2011_grip_skeleton.description"] = "Ultra-lightweight pistol grip with most, if not all, comfort removed. Also allows the user to attach a picture inside. Personalization at its finest!"
+-- L["uplp_2011_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
+-- L["uplp_2011_grip_skeleton.compactname"] = "Skeleton"
+-- L["uplp_2011_grip_skeleton.description"] = "Lightweight pistol grip with glass insert. Also allows the user to attach a picture inside. Personalization at its finest!"
 
--- L["uplp_s2011_grip_jw.printname"] = "Assassin's Pistol Grip"
--- L["uplp_s2011_grip_jw.compactname"] = "Assassin"
--- L["uplp_s2011_grip_jw.description"] = "Custom-made pistol grip for the M11X."
+-- L["uplp_2011_grip_jw.printname"] = "Assassin's Pistol Grip"
+-- L["uplp_2011_grip_jw.compactname"] = "Assassin"
+-- L["uplp_2011_grip_jw.description"] = "Custom-made pistol grip for the M2K11."
 
--- L["uplp_s2011_grip_tac.printname"] = "Tactical Pistol Grip"
--- L["uplp_s2011_grip_tac.compactname"] = "Tac."
--- L["uplp_s2011_grip_tac.description"] = "Sleek tactical pistol grip with built-in magwell."
+-- L["uplp_2011_grip_tac.printname"] = "Tactical Pistol Grip"
+-- L["uplp_2011_grip_tac.compactname"] = "Tac."
+-- L["uplp_2011_grip_tac.description"] = "Sleek tactical pistol grip with built-in magwell."
 
--- L["uplp_s2011_grip_solid.printname"] = "Aluminium Pistol Grip"
--- L["uplp_s2011_grip_solid.compactname"] = "Alum."
--- L["uplp_s2011_grip_solid.description"] = "Durable aluminium pistol grip for the M11X."
+-- L["uplp_2011_grip_solid.printname"] = "Aluminium Pistol Grip"
+-- L["uplp_2011_grip_solid.compactname"] = "Alum."
+-- L["uplp_2011_grip_solid.description"] = "Durable aluminium pistol grip for the M2K11."
 
 ////// Internals
--- L["uplp_s2011_int_hardened.printname"] = "Reinforced Internals"
--- L["uplp_s2011_int_hardened.compactname"] = "Reinforced"
--- L["uplp_s2011_int_hardened.description"] = "Aftermarket internals for the M11X with improved durability that improve range and stability, at the cost of speed."
+-- L["uplp_2011_int_hardened.printname"] = "Reinforced Internals"
+-- L["uplp_2011_int_hardened.compactname"] = "Reinforced"
+-- L["uplp_2011_int_hardened.description"] = "Aftermarket internals for the M2K11 with improved durability that improve range and stability, at the cost of speed."
 
--- L["uplp_s2011_int_jw.printname"] = "Assassin's Internals"
--- L["uplp_s2011_int_jw.compactname"] = "Assassin"
--- L["uplp_s2011_int_jw.description"] = "Aftermarket internals for the M11X that improve accuracy and speed, at the cost of range."
+-- L["uplp_2011_int_jw.printname"] = "Assassin's Internals"
+-- L["uplp_2011_int_jw.compactname"] = "Assassin"
+-- L["uplp_2011_int_jw.description"] = "Aftermarket internals for the M2K11 that improve accuracy and speed, at the cost of range."
 
 ////// Magazines
--- L["uplp_s2011_mag_20.printname"] = "20-Round .45 ACP"
--- L["uplp_s2011_mag_20.compactname"] = "20R"
--- L["uplp_s2011_mag_20.description"] = "20-round magazine for the M11X."
+-- L["uplp_2011_mag_20.printname"] = "20-Round .45 ACP"
+-- L["uplp_2011_mag_20.compactname"] = "20R"
+-- L["uplp_2011_mag_20.description"] = "20-round magazine for the M2K11."
 
--- L["uplp_s2011_mag_24.printname"] = "24-Round .45 ACP"
--- L["uplp_s2011_mag_24.compactname"] = "24R"
--- L["uplp_s2011_mag_24.description"] = "24-round magazine for the M11X."
+-- L["uplp_2011_mag_24.printname"] = "24-Round .45 ACP"
+-- L["uplp_2011_mag_24.compactname"] = "24R"
+-- L["uplp_2011_mag_24.description"] = "24-round magazine for the M2K11."
 
 ////// Slides
--- L["uplp_s2011_slide_jw.printname"] = "Assassin's Slide & Frame"
--- L["uplp_s2011_slide_jw.compactname"] = "Assassin (C)"
--- L["uplp_s2011_slide_jw.description"] = "Custom-made slide with extended frame and a built-in compensator. Also comes with modified front sights, allowing rapid target acquisition."
+-- L["uplp_2011_slide_jw.printname"] = "Assassin's Slide & Frame"
+-- L["uplp_2011_slide_jw.compactname"] = "Assassin"
+-- L["uplp_2011_slide_jw.description"] = "Custom-made slide with extended frame and a built-in compensator. Front sights are located directly on the frame, allowing rapid target acquisition."
 
--- L["uplp_s2011_slide_jw_bronze.printname"] = "Assassin's Slide, Frame & Bronze Internals"
--- L["uplp_s2011_slide_jw_bronze.compactname"] = "Assassin (B)"
--- L["uplp_s2011_slide_jw_bronze.description"] = "Custom-made slide with an extended frame, built-in compensator, and bronze internals. Also comes with modified front sights, allowing rapid target acquisition."
+-- L["uplp_2011_slide_jw_bronze.printname"] = "Assassin's Slide, Frame & Bronze Internals"
+-- L["uplp_2011_slide_jw_bronze.compactname"] = "Assassin (B)"
+-- L["uplp_2011_slide_jw_bronze.description"] = "Custom-made slide with an extended frame, built-in compensator and bronze internals. Front sights are located directly on the frame, allowing rapid target acquisition."
 
--- L["uplp_s2011_slide_long.printname"] = "Extended Slide"
--- L["uplp_s2011_slide_long.compactname"] = "Ext."
--- L["uplp_s2011_slide_long.description"] = "Extended slide."
+-- L["uplp_2011_slide_long.printname"] = "Extended Slide"
+-- L["uplp_2011_slide_long.compactname"] = "Ext."
+-- L["uplp_2011_slide_long.description"] = "Extended slide."
 
--- L["uplp_s2011_slide_short.printname"] = "Compact Slide"
--- L["uplp_s2011_slide_short.compactname"] = "Comp."
--- L["uplp_s2011_slide_short.description"] = "Shortened slide."
+-- L["uplp_2011_slide_short.printname"] = "Compact Slide"
+-- L["uplp_2011_slide_short.compactname"] = "Compact"
+-- L["uplp_2011_slide_short.description"] = "Shortened slide."
 
--- L["uplp_s2011_slide_vshort.printname"] = "Subcompact Slide & Frame"
--- L["uplp_s2011_slide_vshort.compactname"] = "Subcomp."
--- L["uplp_s2011_slide_vshort.description"] = "Even more shortened slide and custom frame with built-in compensator. Also comes with modified front sights, allowing rapid target acquisition."
+-- L["uplp_2011_slide_vshort.printname"] = "Subcompact Slide & Frame"
+-- L["uplp_2011_slide_vshort.compactname"] = "Subcompact"
+-- L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom frame with built-in compensator. Front sights are located directly on the frame, allowing rapid target acquisition."
+
+-- L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
+-- L["uplp_2011_sight_alt.compactname"] = "Alternative"
+-- L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron sights for the M2K11. Style depends on equipped slide."
