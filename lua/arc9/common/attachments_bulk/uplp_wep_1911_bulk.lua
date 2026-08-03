@@ -458,8 +458,8 @@ ATT.Icon = Material(iconfolder .. "thompsongrip.png", "mips smooth")
 ATT.Category = "uplp_1911_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/ak_lhik_dong.mdl"
-ATT.ModelOffset = Vector(-19, -2.0, 3.5)
+ATT.Model = "models/weapons/arc9/uplp/1911_lhik_thomp.mdl"
+ATT.ModelOffset = Vector(-16, -1.7, 3)
 ATT.ModelAngleOffset = Angle(0, 0, 180)
 ATT.LHIK = true
 ATT.LHIK_Priority = 5
