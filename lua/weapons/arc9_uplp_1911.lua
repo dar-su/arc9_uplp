@@ -33,8 +33,9 @@ SWEP.Credits = {
 }
 
 SWEP.StandardPresets = {
-    -- "[MSW-S]XQAAAQB3AQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZsMV7HF9zV/Vk+zLb7C86non3gUuIi6jwFmLY+5/J1yXKe+UAfnNcUOU5Qy0CGsGV7+C4zaWRS/ZhWWd87sovy2piO5sK7qn8iqxccWyc4AS7vXMtgogCHnIPyMIbtIO5u0HQjJa7P7W4v35w=",
-    -- "[Subcompact]XQAAAQAyAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26Hms3ty05suDvy9yTZ5H1JIkSaE6LzJJ5CktI9yXd6lJ9pR8KQMlS1CML08SFDZNU6V7Jbak5lLop0GQizISJiysdSrvhUTQXJiAA=="
+    "[Rebel]XQAAAQCzAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmkmevSb+idjqmeC+6RALBkYThHAl/ZziP4a5Opzia/8fPJUnzOxjs9cLuyjSV83Ff903+c2mkhpRd/VVIWjPw2cQHL3hP/PAWitjs61Bfqwf0FLaL3vB02VUHTx+G",
+    "[Auto]XQAAAQDhAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmkmevSb+idjqmeC+6RALBhiL33oqfwhipNAn/5oaKbjOXCwNFT8NK+oItjUHSl58geJkuo1CLv/A35qRV8X6lpF284OXqKYYXOS4OwMluVBVqUjLx61fVy7mFO3CS/xhgRJGRTumsus6E+OnMQ6lcszsR",
+    "[Silverstrike]XQAAAQDaAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26Hms3ty03vQgryWZdZBf/3g4wizMHeZeiE4wHqMY9PRRQG4nMlk3/QaiDM2UOldxsdw+0VeWOErEMeMClxFQTZz1qa1PLxDPV44pc4+n6BhjW6gxIrem5DRS6s/05biktWvXgt9h/dM9iWoQIs=",
 }
 
 ---- Muzzle Effects, Shell Effects, Camera
@@ -703,6 +704,14 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(4, 8)
     end
 
+    if !eles["uplp_1911_frame"] and (eles["uplp_1911_slide_alyx"] or eles["uplp_1911_slide_tac"]) then
+        mdl:SetBodygroup(5, 1)
+    end
+
+    if eles["uplp_1911_frame_m45a1fde"] and eles["uplp_1911_slide_m45a1fde"] then
+        mdl:SetBodygroup(5, 4)
+    end
+
     if eles["uplp_1911_mag_ext"] then
         mdl:SetBodygroup(6, 3)
     end
@@ -740,7 +749,7 @@ SWEP.AttachmentElements = {
     ["uplp_1911_frame_m45a1"] = { Bodygroups = { { 0, 1 }, { 5, 1 }, { 6, 1 } },
         AttPosMods = { [6] = { Pos = Vector(0, -0.85, 5.1) } },
     },
-    ["uplp_1911_frame_m45a1fde"] = { Bodygroups = { { 0, 2 }, { 5, 4 }, { 6, 1 } },
+    ["uplp_1911_frame_m45a1fde"] = { Bodygroups = { { 0, 2 }, { 5, 1 }, { 6, 1 } },
         AttPosMods = { [6] = { Pos = Vector(0, -0.85, 5.1) } },
     },
     ["uplp_1911_frame_silver"] = { Bodygroups = { { 0, 3 }, { 5, 2 } } },
@@ -755,15 +764,25 @@ SWEP.AttachmentElements = {
     ["uplp_1911_grip_alyx"] = { Bodygroups = { { 4, 9 } } },
 
     ["uplp_1911_slide_hardballer"] = { Bodygroups = { { 1, 1 } },
-        AttPosMods = { [2] = { Pos = Vector(0, 0.01, 1.96) } },
+        AttPosMods = {
+            [2] = { Pos = Vector(0, 0.01, 1.96) },
+            [10] = { Pos = Vector(0.32, 0.68, 6.55) },
+        },
     },
     ["uplp_1911_slide_m45a1"] = { Bodygroups = { { 1, 4 } } },
     ["uplp_1911_slide_m45a1fde"] = { Bodygroups = { { 1, 5 } } },
     ["uplp_1911_slide_sub"] = { Bodygroups = { { 1, 2 } },
-        AttPosMods = { [2] = { Pos = Vector(0, 0.01, -1.5) } },
+        AttPosMods = {
+            [2] = { Pos = Vector(0, 0.01, -1.5) },
+            [10] = { Pos = Vector(0.45, 0.2, 3.22) },
+        },
     },
     ["uplp_1911_slide_tac"] = { Bodygroups = { { 1, 3 } } },
-    ["uplp_1911_slide_shotgun"] = { Bodygroups = { { 1, 7 }, { 6, 4 }, { 7, 2 } } },
+    ["uplp_1911_slide_shotgun"] = { Bodygroups = { { 1, 7 }, { 6, 4 }, { 7, 2 } },
+        AttPosMods = {
+            [10] = { Pos = Vector(0.38, 0.75, 2.7) },
+        },
+    },
     ["uplp_1911_slide_alyx"] = { Bodygroups = { { 1, 6 } } },
 
     ["uplp_1911_comp"] = { Bodygroups = { { 2, 1 } } },
@@ -840,7 +859,7 @@ SWEP.Attachments = {
         Ang = Angle(90+0.7, 90, 0),
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_category_grip"),
+        PrintName = ARC9:GetPhrase("uplp_category_pistol_grip"),
         Category = {"uplp_1911_grip"},
         DefaultIcon = Material(defatt2 .. "falgrip.png", "mips smooth"),
         Bone = "body",
@@ -872,8 +891,8 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_charm"),
         Category = "charm",
-        Bone = "body",
-        Pos = Vector(0.38, -1.41, 5.65),
+        Bone = "slide",
+        Pos = Vector(0.45, 0.2, 4.37),
         Ang = Angle(90, 0, -90),
     },
     {

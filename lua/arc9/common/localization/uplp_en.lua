@@ -3901,3 +3901,7 @@ L["uplp_2011_slide_short.description"] = "Shortened slide."
 L["uplp_2011_slide_vshort.printname"] = "Subcompact Slide & Frame"
 L["uplp_2011_slide_vshort.compactname"] = "Subcompact"
 L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom frame with built-in compensator. Front sights are located directly on the frame, allowing rapid target acquisition."
+
+L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
+L["uplp_2011_sight_alt.compactname"] = "Alternative"
+L["uplp_2011_sight_alt.description"] = "Alternative pair of rear and front sight for the M2K11. Style depends on equipped slide."
