@@ -232,6 +232,7 @@ ATT.Icon = Material(iconfolder .. "long.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_receiver"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.MuzzleEffectQCA = 5
 
 
 -- Positives

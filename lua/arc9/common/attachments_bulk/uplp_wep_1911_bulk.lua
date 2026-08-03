@@ -244,6 +244,7 @@ ATT.RPMAdd = -50
 ATT.RecoilSideAdd = -0.3
 
 ATT.ActivateElements = {"uplp_1911_irons_tac"}
+ATT.MuzzleEffectQCA = 6
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_hardballer")
 
@@ -294,6 +295,7 @@ ATT.RecoilMult = 1.15
 ATT.SpreadAddHipFire = -0.0015
 ATT.RecoilPerShotMultHipFire = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.MuzzleEffectQCA = 5
 
 ATT.ActivateElements = {"uplp_1911_irons_m45"}
 

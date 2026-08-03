@@ -190,6 +190,7 @@ ATT.Icon = Material(iconfolder .. "slidelong.png", "mips smooth")
 
 ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.MuzzleEffectQCA = 5
 
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_long")
 
@@ -204,6 +205,7 @@ ATT.Icon = Material(iconfolder .. "slideshort.png", "mips smooth")
 
 ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.MuzzleEffectQCA = 6
 
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_short")
 
