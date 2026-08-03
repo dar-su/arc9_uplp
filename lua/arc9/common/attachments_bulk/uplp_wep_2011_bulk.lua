@@ -99,6 +99,8 @@ ATT.Icon = Material(iconfolder .. "ext.png", "mips smooth")
 ATT.Category = "uplp_2011_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/2011_mag_ext.mdl"
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
         return anim .. "_ext"
@@ -121,6 +123,7 @@ ATT.Icon = Material(iconfolder .. "ext2.png", "mips smooth")
 ATT.Category = "uplp_2011_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/2011_mag_ext2.mdl"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then

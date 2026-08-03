@@ -15,6 +15,8 @@ ATT.Icon = Material(iconfolder .. "m45.png", "mips smooth")
 ATT.Category = "uplp_1911_frame"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_m45a1")
 
 ---------- uplp_1911_frame_m45a1fde
@@ -29,6 +31,8 @@ ATT.Icon = Material(iconfolder .. "m45fde.png", "mips smooth")
 
 ATT.Category = "uplp_1911_frame"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_m45a1fde")
 
@@ -85,6 +89,8 @@ ATT.Icon = Material(iconfolder .. "ext.png", "mips smooth")
 ATT.Category = "uplp_1911_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_ext.mdl"
+
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
         return anim .. "_ext"
@@ -122,6 +128,9 @@ ATT.Description = "uplp_1911_grip_acryl"
 ATT.Icon = Material(iconfolder .. "gglass.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_clear.mdl"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_acryl")
 
 ---------- uplp_1911_grip_hardballer
@@ -134,6 +143,7 @@ ATT.Description = "uplp_1911_grip_hardballer"
 ATT.Icon = Material(iconfolder .. "glong.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_hardballer")
 
 ---------- uplp_1911_grip_m45a1
@@ -146,6 +156,7 @@ ATT.Description = "uplp_1911_grip_m45a1"
 ATT.Icon = Material(iconfolder .. "gm45.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_m45a1")
 
 ---------- uplp_1911_grip_m45a1fde
@@ -158,6 +169,7 @@ ATT.Description = "uplp_1911_grip_m45a1fde"
 ATT.Icon = Material(iconfolder .. "gfde.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_m45a1fde")
 
 ---------- uplp_1911_grip_polymer
@@ -170,6 +182,7 @@ ATT.Description = "uplp_1911_grip_polymer"
 ATT.Icon = Material(iconfolder .. "gpoly.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_polymer")
 
 ---------- uplp_1911_grip_alyx
@@ -183,12 +196,10 @@ ATT.Icon = Material(iconfolder .. "galyx.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-
 ATT.Model = "models/weapons/arc9/uplp/empty_model.mdl"
 ATT.DrawFunc = function(swep, model, wm)
     ARC9.UPLP_CallAlyxGripRT(swep)
 end
-
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_alyx")
 
