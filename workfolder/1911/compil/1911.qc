@@ -98,6 +98,7 @@ $bodygroup "stock" {
 }
 $bodygroup "front" {
 	blank
+	studio "rail.smd"
 	studio "thompsongrip.smd"
 }
 

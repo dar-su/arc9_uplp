@@ -3821,9 +3821,9 @@ L["uplp_1911_wirestock.printname"] = "Wire Stock"
 L["uplp_1911_wirestock.compactname"] = "Wire S."
 L["uplp_1911_wirestock.description"] = "Lightweight metal stock for the ASP 1911.\nNot necessarily the most comfortable option, but it's lightweight, and gets the job done."
 
-L["uplp_1911_grip.printname"] = "Foregrip"
-L["uplp_1911_grip.compactname"] = "Grip"
-L["uplp_1911_grip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
+L["uplp_1911_thompsongrip.printname"] = "Foregrip"
+L["uplp_1911_thompsongrip.compactname"] = "Grip"
+L["uplp_1911_thompsongrip.description"] = "Wooden foregrip taken from a post-war submachine gun, attached to the front to control recoil.\n\nEssential if firing in automatic fire, but who are we to stop you?"
 
 L["uplp_1911_laser.printname"] = "Silverstrike Laser Optic"
 L["uplp_1911_laser.compactname"] = "Silverstrike"
