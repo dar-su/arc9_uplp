@@ -95,7 +95,7 @@ SWEP.SweetSpotWidth = 55 / ARC9.HUToM
 SWEP.SweetSpotPeak = 25 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2.5,
+    [HITGROUP_HEAD] = 3,
     [HITGROUP_CHEST] = 1.15,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1.1,

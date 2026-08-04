@@ -100,7 +100,7 @@ SWEP.DamageType = DMG_BULLET
 SWEP.ArmorPiercing = 0.15 -- Fuck a Combine Helicopter Really Hard
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 1.85,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,

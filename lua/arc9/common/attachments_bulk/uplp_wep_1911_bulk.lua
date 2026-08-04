@@ -383,7 +383,7 @@ ATT.CurvedDamageScaling = true
 
 ATT.SweetSpot = false
 ATT.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1,
+    [HITGROUP_HEAD] = 1.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,

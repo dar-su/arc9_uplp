@@ -31,7 +31,7 @@ ATT.DamageMax = 25 -- balanced >w<
 ATT.DamageMin = 15
 
 ATT.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.8,
@@ -184,7 +184,7 @@ ATT.DamageMax = 25 -- balanced >w<
 ATT.DamageMin = 15
 
 ATT.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.4,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 0.8,

@@ -107,7 +107,7 @@ function SWEP:Hook_GetDamageAtRange(data)
 end
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1,
+    [HITGROUP_HEAD] = 1.35,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,

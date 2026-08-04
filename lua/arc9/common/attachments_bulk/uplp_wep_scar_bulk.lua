@@ -642,7 +642,7 @@ local stats556 = {
     SpreadAdd = 0.001,
 
     BodyDamageMults = {
-        [HITGROUP_HEAD] = 1.8,
+        [HITGROUP_HEAD] = 2.0,
         [HITGROUP_CHEST] = 1,
         [HITGROUP_STOMACH] = 1,
         [HITGROUP_LEFTARM] = 0.9,
