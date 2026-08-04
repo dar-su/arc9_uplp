@@ -216,6 +216,8 @@ ATT.DrawFunc = function(swep, model, wm)
     ARC9.UPLP_CallAlyxGripRT(swep)
 end
 
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_alyx")
 
 

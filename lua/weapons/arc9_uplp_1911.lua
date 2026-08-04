@@ -392,6 +392,17 @@ local thetoggle = {{
     }, t = 0
 }}
 
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if !IsValid(swep:GetOwner()) then return end
+
+    if anim == "ready" then
+        local eles = swep:GetElements()
+        if eles["uplp_optic_used"] or eles["uplp_1911_laser"] then
+            return "ready_alt"
+        end
+    end
+end
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -403,6 +414,25 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+        Mult = 1.0,
+        MinProgress = 0.5,
+        FireASAP = true,
+        EventTable = {
+            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidepull.ogg", t = 10 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidedrop.ogg", t = 35 / 60, c = ca, v = 0.8 },
+            {s = pathUTC .. "cloth_4.ogg", t = 34 / 60},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["ready_alt"] = {
+        Source = "ready_alt",
         Mult = 1.0,
         MinProgress = 0.5,
         FireASAP = true,
@@ -749,6 +779,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(6, 3)
     elseif eles["uplp_1911_grip_acryl"] then
         mdl:SetBodygroup(6, 2)
+    elseif eles["uplp_1911_grip_alyx"] then
+        mdl:SetBodygroup(6, 1)
     end
 
     if eles["uplp_tac_used"] and !eles["uplp_1911_frame_m45a1"] and !eles["uplp_1911_frame_m45a1fde"] then

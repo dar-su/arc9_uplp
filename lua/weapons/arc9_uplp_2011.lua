@@ -118,7 +118,7 @@ SWEP.ChamberSize = 1
 SWEP.ClipSize = 16
 
 -- Recoil
-SWEP.Recoil = 1
+SWEP.Recoil = 0.5
 SWEP.RecoilUp = 1.6
 SWEP.RecoilSide = 1.2
 
@@ -186,7 +186,7 @@ SWEP.AimDownSightsTime = 0.22
 SWEP.SprintToFireTime = 0.2
 
 -- Shooting and Firemodes
-SWEP.RPM = 360 -- How fast gun shoot
+SWEP.RPM = 450 -- How fast gun shoot
 SWEP.HeatCapacity = 50 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
@@ -396,6 +396,17 @@ local thetoggle = {{
     }, t = 0
 }}
 
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if !IsValid(swep:GetOwner()) then return end
+
+    if anim == "ready" then
+        local eles = swep:GetElements()
+        if eles["uplp_optic_used"] then
+            return "ready_alt"
+        end
+    end
+end
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -407,6 +418,25 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+        Mult = 1.0,
+        MinProgress = 0.5,
+        FireASAP = true,
+        EventTable = {
+            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidepull.ogg", t = 10 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidedrop.ogg", t = 35 / 60, c = ca, v = 0.8 },
+            {s = pathUTC .. "cloth_4.ogg", t = 34 / 60},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["ready_alt"] = {
+        Source = "ready_alt",
         Mult = 1.0,
         MinProgress = 0.5,
         FireASAP = true,
@@ -520,7 +550,7 @@ SWEP.Animations = {
         PeekProgress = 0.75,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -546,7 +576,7 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.675,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -575,7 +605,7 @@ SWEP.Animations = {
         PeekProgress = 0.725,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -601,7 +631,62 @@ SWEP.Animations = {
         PeekProgress = 0.8,
         RefillProgress = 0.675,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
+            { s = pathUT .. "magout.ogg", t = 0 / 60, c = ca },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 7 / 60, v = 0.3 },
+            { s = pathUT .. "magin.ogg", t = 27 / 60 + 6/30, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 56 / 60 + 6/30, c = ca },
+            { s = pathUT .. "slidedrop.ogg", t = 61 / 60 + 6/30, c = ca },
+            { s = UTCrattle, t = 75 / 60 + 6/30, c = ca },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.2},
+            {hide = 2, t = 1.44}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["reload_ext2"] = {
+        Source = "reload_ext2",
+        MinProgress = 0.8,
+        PeekProgress = 0.725,
+        RefillProgress = 0.6,
+        FireASAP = true,
+        -- Mult = 1.05,
+        EventTable = {
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
+            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
+            { s = pathUT .. "magout.ogg", t = 0 / 60, c = ca },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 7 / 60, v = 0.3 },
+            { s = pathUT .. "magin.ogg", t = 27 / 60 + 6/30, c = ca },
+            { s = UTCrattle, t = 52 / 60 + 6/30, c = ca },
+            {hide = 1, t = 0},
+            {hide = 0, t = 0.3},
+            {hide = 2, t = 1.733}
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["reload_empty_ext2"] = {
+        Source = "reload_empty_ext2",
+        MinProgress = 0.85,
+        PeekProgress = 0.8,
+        RefillProgress = 0.675,
+        FireASAP = true,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -744,21 +829,21 @@ SWEP.AttachmentElements = {
     ["uplp_2011_mag_20"] = { Bodygroups = { { 5, 1 } } },
     ["uplp_2011_mag_24"] = { Bodygroups = { { 5, 2 } } },
 
-    ["uplp_2011_slide_short"] = { Bodygroups = { { 1, 1 } },
-        AttPosMods = { [2] = { Pos = Vector(0, 0.088, -1.55) } },
-        AttPosMods = { [8] = { Pos = Vector(0.46, 0.2, 3.33) } },
-    },
-    ["uplp_2011_slide_long"] = { Bodygroups = { { 1, 2 } },
-        AttPosMods = { [2] = { Pos = Vector(0, 0.088, 0.68) } },
-        AttPosMods = { [8] = { Pos = Vector(0.32, 0.7, 5.5) } },
-    },
-    ["uplp_2011_slide_vshort"] = { Bodygroups = { { 1, 3 }, { 0, 1 } },
-        AttPosMods = { [8] = { Pos = Vector(0.46, 0.2, 3.0) } },
-    },
-    ["uplp_2011_slide_jw"] = { Bodygroups = { { 1, 4 }, { 0, 2 } },
-        AttPosMods = { [1] = { Pos = Vector(0, -0.227, -2.04), Scale = 0.92 } },
-        AttPosMods = { [8] = { Pos = Vector(0.45, 0.2, 3.7) } },
-    },
+    ["uplp_2011_slide_short"] = { Bodygroups = { { 1, 1 } }, AttPosMods = { 
+        [2] = { Pos = Vector(0, 0.088, -1.55) },
+        [8] = { Pos = Vector(0.46, 0.2, 3.33) } 
+    }},
+    ["uplp_2011_slide_long"] = { Bodygroups = { { 1, 2 } }, AttPosMods = { 
+        [2] = { Pos = Vector(0, 0.088, 0.68) },
+        [8] = { Pos = Vector(0.32, 0.7, 5.5) } 
+    }},
+    ["uplp_2011_slide_vshort"] = { Bodygroups = { { 1, 3 }, { 0, 1 } }, AttPosMods = { 
+        [8] = { Pos = Vector(0.46, 0.2, 3.0) }
+    }},
+    ["uplp_2011_slide_jw"] = { Bodygroups = { { 1, 4 }, { 0, 2 } }, AttPosMods = { 
+        [1] = { Pos = Vector(0, -0.227, -2.04), Scale = 0.92 },
+        [8] = { Pos = Vector(0.45, 0.2, 3.7) } 
+    }},
 }
 
 SWEP.Hook_ModifyElements = function(self, eles)
