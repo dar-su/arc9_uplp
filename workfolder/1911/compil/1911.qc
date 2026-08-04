@@ -110,7 +110,10 @@ $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 
 $attachment "5" "barrel" 0.00 0 -1.4 rotate -90 -0 0
-$attachment "6" "barrel" 0.00 0 2.2 rotate -90 -0 0
+$attachment "6" "barrel" 0.00 0 2.2 rotate -90 -0 
+
+$attachment "ejectparticle1" "slidesg" 0 1 -5 rotate -90 0 0
+$attachment "shell1" "sg_round" 0 0 0 rotate 0 -90 0
 
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
  
@@ -125,6 +128,7 @@ $bbox 0 0 0 0 0 0
 $cbox 0 0 0 0 0 0
 
 $poseparameter "sights" 0 1 loop 0
+$poseparameter "magspring" 0 1 loop 0
 
 $sequence "idle"{
 	"anims\idle.smd" 
@@ -134,6 +138,20 @@ $sequence "idle"{
 	loop
 	fadein 0
 	fadeout 0.2
+}
+
+$sequence "magspring_pose" {
+	"anims\idle.smd"
+	"anims\idle_spring.smd"
+	blend "magspring" 0 1
+ 	// blend "sights" 0 1
+	blendwidth 2
+	delta
+	autoplay
+	loop
+	fps 30
+	snap
+	subtract "idle" 0
 }
 
 $sequence "idle_empty"{
@@ -175,50 +193,53 @@ $sequence "ready" {
 	snap
 }
 
-
-
-// $sequence "draw" {
-// 	"anims\draw.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "draw_empty" {
-// 	"anims\draw_e.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "holster" {
-// 	"anims\holster.smd"
-// 	fps 24
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "holster_empty" {
-// 	"anims\holster_e.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
+$sequence "ready_alt" {
+	"anims\ready_alt.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
 
 
-// $sequence "modeswitch" {
-// 	"anims\switch.smd"
-// 	"anims\switch_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	snap
-// }
+$sequence "draw" {
+	"anims\draw.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "draw_empty" {
+	"anims\draw_e.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster" {
+	"anims\holster.smd"
+	fps 24
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster_empty" {
+	"anims\holster_e.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
-// $sequence "modeswitch_empty" {
-// 	"anims\switch_e.smd"
-// 	"anims\switch_e_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	snap
-// }
+
+
+$sequence "modeswitch" {
+	"anims\switch.smd"
+	fps 30
+	snap
+}
+
+$sequence "modeswitch_empty" {
+	"anims\switch_e.smd"
+	fps 30
+	snap
+}
 
 
 $sequence "reload" {
@@ -239,34 +260,98 @@ $sequence "reload_empty" {
 	snap
 }
 
-// $sequence "reload_ext" {
-// 	"anims\reload_ext.smd"
-// 	"anims\reload_ext_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	"ACT_VM_RELOAD" 1
-// 	snap
-// }
+$sequence "reload_ext" {
+	"anims\reloade.smd"
+	"anims\reloade_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
 
-// $sequence "reload_empty_ext" {
-// 	"anims\reload_empty_ext.smd"
-// 	"anims\reload_empty_ext_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	"ACT_VM_RELOAD" 1
-// 	snap
-// }
+$sequence "reload_empty_ext" {
+	"anims\reloade_empty.smd"
+	"anims\reloade_empty_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
 
-// $sequence "inspect" {
-// 	"anims\look.smd"
-// 	// snap
-// 	fps 30
-// }
-// $sequence "inspect_empty" {
-// 	"anims\look_empty.smd"
-// 	// snap
-// 	fps 30
-// }
+$sequence "inspect" {
+	"anims\inspect_old.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty" {
+	"anims\inspect_old_e.smd"
+	// snap
+	fps 30
+}
+
+
+
+
+
+
+
+
+
+$sequence "idle_empty_sg"{
+	"anims\idle_esg.smd" 
+	fps 30
+	"ACT_VM_IDLE" 1
+	loop
+	snap
+	fadein 0
+	fadeout 0.2
+}
+
+$sequence "fire_sg" {
+	"anims\fire_sg.smd"
+	"anims\fire_sg_iron.smd"
+	fps 26
+	"ACT_VM_PRIMARYATTACK" 1
+ 	blend "sights" 0 1
+	fadein 0.02
+	fadeout 0.08
+}
+
+$sequence "draw_empty_sg" {
+	"anims\draw_esg.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "holster_empty_sg" {
+	"anims\holster_esg.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+
+$sequence "modeswitch_empty_sg" {
+	"anims\switch_esg.smd"
+	fps 30
+	snap
+}
+
+$sequence "reload_sg" {
+	"anims\reload_sg.smd"
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "inspect_empty_sg" {
+	"anims\inspect_old_esg.smd"
+	// snap
+	fps 30
+}
+
+
+
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"
@@ -320,3 +405,5 @@ $bonemerge "bullet7"
 $bonemerge "bullet8"
 $bonemerge "bullet9"
 $bonemerge "bullet10"
+$bonemerge "sg_round"
+$bonemerge "sg_shell"
