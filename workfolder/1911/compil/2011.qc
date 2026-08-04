@@ -114,8 +114,8 @@ $sequence "idle_empty"{
 }
 
 $sequence "fire" {
-	"anims\fire.smd"
-	"anims\fire_iron.smd"
+	"anims\fire_light.smd"
+	"anims\fire_light_iron.smd"
 	fps 26
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
@@ -123,8 +123,8 @@ $sequence "fire" {
 	fadeout 0.08
 }
 $sequence "fire_empty" {
-	"anims\fire_empty.smd"
-	"anims\fire_empty_iron.smd"
+	"anims\fire_light_empty.smd"
+	"anims\fire_light_empty_iron.smd"
 	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
@@ -139,55 +139,58 @@ $sequence "ready" {
 	snap
 }
 
-
-
-// $sequence "draw" {
-// 	"anims\draw.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "draw_empty" {
-// 	"anims\draw_e.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "holster" {
-// 	"anims\holster.smd"
-// 	fps 24
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "holster_empty" {
-// 	"anims\holster_e.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
+$sequence "ready_alt" {
+	"anims\ready_alt.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
 
 
-// $sequence "modeswitch" {
-// 	"anims\switch.smd"
-// 	"anims\switch_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	snap
-// }
+$sequence "draw" {
+	"anims\draw.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "draw_empty" {
+	"anims\draw_e.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster" {
+	"anims\holster.smd"
+	fps 24
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster_empty" {
+	"anims\holster_e.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
-// $sequence "modeswitch_empty" {
-// 	"anims\switch_e.smd"
-// 	"anims\switch_e_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	snap
-// }
+
+
+$sequence "modeswitch" {
+	"anims\switch.smd"
+	fps 30
+	snap
+}
+
+$sequence "modeswitch_empty" {
+	"anims\switch_e.smd"
+	fps 30
+	snap
+}
 
 
 $sequence "reload" {
-	"anims\reload.smd"
-	"anims\reload_iron.smd"
+	"anims\reload2.smd"
+	"anims\reload2_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -195,42 +198,60 @@ $sequence "reload" {
 }
 
 $sequence "reload_empty" {
-	"anims\reload_empty.smd"
-	"anims\reload_empty_iron.smd"
+	"anims\reload2_empty.smd"
+	"anims\reload2_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 
-// $sequence "reload_ext" {
-// 	"anims\reload_ext.smd"
-// 	"anims\reload_ext_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	"ACT_VM_RELOAD" 1
-// 	snap
-// }
+$sequence "reload_ext" {
+	"anims\reload2e.smd"
+	"anims\reload2e_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
 
-// $sequence "reload_empty_ext" {
-// 	"anims\reload_empty_ext.smd"
-// 	"anims\reload_empty_ext_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	"ACT_VM_RELOAD" 1
-// 	snap
-// }
+$sequence "reload_empty_ext" {
+	"anims\reload2e_empty.smd"
+	"anims\reload2e_empty_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
 
-// $sequence "inspect" {
-// 	"anims\look.smd"
-// 	// snap
-// 	fps 30
-// }
-// $sequence "inspect_empty" {
-// 	"anims\look_empty.smd"
-// 	// snap
-// 	fps 30
-// }
+$sequence "reload_ext2" {
+	"anims\reload2ee.smd"
+	"anims\reload2ee_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty_ext2" {
+	"anims\reload2ee_empty.smd"
+	"anims\reload2ee_empty_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "inspect" {
+	"anims\inspect_old.smd"
+	// snap
+	fps 30
+}
+$sequence "inspect_empty" {
+	"anims\inspect_old_e.smd"
+	// snap
+	fps 30
+}
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"

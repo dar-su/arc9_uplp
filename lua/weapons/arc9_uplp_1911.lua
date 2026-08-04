@@ -92,7 +92,7 @@ SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1.0,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -338,15 +338,17 @@ SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 -- HideBones, BulletBones, etc.
 SWEP.BulletBones = {
     [1] = "bullet1",
-    [2] = "bullet2",
-    [3] = "bullet3",
-    [4] = "bullet4",
-    [5] = "bullet5",
-    [6] = "bullet6",
-    [7] = "bullet7",
-    [8] = "bullet8",
-    [9] = "bullet9",
-    [10] = "bullet10",
+    [2] = "uwu",
+    [3] = "bullet2",
+    [4] = "bullet3",
+    [5] = "bullet4",
+    [6] = "bullet5",
+    [7] = "bullet6",
+    [8] = "bullet7",
+    [9] = "bullet8",
+    
+    [10] = "bullet9",
+    [11] = "bullet10",
 }
 
 SWEP.ReloadHideBoneTables = {
@@ -390,6 +392,17 @@ local thetoggle = {{
     }, t = 0
 }}
 
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if !IsValid(swep:GetOwner()) then return end
+
+    if anim == "ready" then
+        local eles = swep:GetElements()
+        if eles["uplp_optic_used"] or eles["uplp_1911_laser"] then
+            return "ready_alt"
+        end
+    end
+end
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -401,6 +414,25 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
+        Mult = 1.0,
+        MinProgress = 0.5,
+        FireASAP = true,
+        EventTable = {
+            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidepull.ogg", t = 10 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "slidedrop.ogg", t = 35 / 60, c = ca, v = 0.8 },
+            {s = pathUTC .. "cloth_4.ogg", t = 34 / 60},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["ready_alt"] = {
+        Source = "ready_alt",
         Mult = 1.0,
         MinProgress = 0.5,
         FireASAP = true,
@@ -514,7 +546,7 @@ SWEP.Animations = {
         PeekProgress = 0.75,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -540,7 +572,7 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.675,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -569,7 +601,7 @@ SWEP.Animations = {
         PeekProgress = 0.725,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -595,7 +627,7 @@ SWEP.Animations = {
         PeekProgress = 0.8,
         RefillProgress = 0.675,
         FireASAP = true,
-        Mult = 1.05,
+        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
@@ -618,6 +650,35 @@ SWEP.Animations = {
         },
     },
 
+    ["reload_sg"] = {
+        Source = "reload_sg",
+        MinProgress = 0.8,
+        PeekProgress = 0.75,
+        RefillProgress = 0.6,
+        MagSwapTime = 25/30,
+        FireASAP = true,
+        -- Mult = 1.05,
+        EventTable = {
+
+            {hide = 0, t = 0},
+            {hide = 1, t = 16/30},
+            {hide = 0, t = 25/30},
+
+            {shelleject = true, att = 7, t = 16/30 },
+
+            {e = "arc9_uplp_db_smoke", t = 0/30},
+
+
+
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.15, lhik = 0 },
+            { t = 0.65, lhik = 0 },
+            { t = 0.92, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
     -- Inspecc --
 
     ["inspect"] = {
@@ -718,6 +779,8 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(6, 3)
     elseif eles["uplp_1911_grip_acryl"] then
         mdl:SetBodygroup(6, 2)
+    elseif eles["uplp_1911_grip_alyx"] then
+        mdl:SetBodygroup(6, 1)
     end
 
     if eles["uplp_tac_used"] and !eles["uplp_1911_frame_m45a1"] and !eles["uplp_1911_frame_m45a1fde"] then
@@ -941,3 +1004,15 @@ SWEP.Attachments = {
         ForceNoCosmetics = true
     },
 }
+
+
+
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    local loadedronds = swep:GetLoadedRounds()
+    
+    if swep:HasElement("uplp_1911_frame_auto") then  
+        ent:SetPoseParameter("magspring", math.Clamp(1.15 - 0.1 * loadedronds, 0, 1))
+    else
+        ent:SetPoseParameter("magspring", math.Clamp(1.2 - (2 / 15) * loadedronds, 0, 1))
+    end
+end

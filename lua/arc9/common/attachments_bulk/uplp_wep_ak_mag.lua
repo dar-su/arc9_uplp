@@ -22,7 +22,7 @@ local stats545 = {
     DamageMinAdd = -3, -- from 18
 
     BodyDamageMults = {
-        [HITGROUP_HEAD] = 1.4,
+        [HITGROUP_HEAD] = 2,
         [HITGROUP_CHEST] = 1,
         [HITGROUP_STOMACH] = 1,
         [HITGROUP_LEFTARM] = 0.9,

@@ -88,7 +88,7 @@ SWEP.DamageMin = 12
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 2,
     [HITGROUP_CHEST] = 1.0,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -248,7 +248,7 @@ SWEP.CustomizeSnapshotFOV = 60
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/fn57_mag_std.mdl"
-SWEP.DropMagazineTime = 0.4 * 1.1
+SWEP.DropMagazineTime = 0.4 * 1.12
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
@@ -516,7 +516,7 @@ SWEP.Animations = {
 		PeekProgress = 0.75,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        Mult = 1.02,
+        Mult = 1.12,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathRZ .. "magout.ogg", t = 2 / 60, c = ca },
@@ -542,7 +542,7 @@ SWEP.Animations = {
 		PeekProgress = 0.85,
 		RefillProgress = 0.675,
 		FireASAP = true,
-        Mult = 1.02,
+        Mult = 1.12,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathRZ .. "magout.ogg", t = 2 / 60, c = ca },
@@ -572,7 +572,7 @@ SWEP.Animations = {
 		PeekProgress = 0.725,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        Mult = 1.05,
+        Mult = 1.12,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathRZ .. "magout_tac.ogg", t = 2 / 60, c = ca },
@@ -598,7 +598,7 @@ SWEP.Animations = {
 		PeekProgress = 0.8,
 		RefillProgress = 0.675,
 		FireASAP = true,
-        Mult = 1.05,
+        Mult = 1.12,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
             { s = pathRZ .. "magout_empty.ogg", t = 2 / 60, c = ca },

@@ -222,6 +222,7 @@ end
 ATT.ReloadTimeMult = 0.95
 ATT.SpreadAddHipFire = 0.001
 ATT.SpeedMultSights = 0.9
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_alyx")
 
@@ -353,6 +354,129 @@ ATT.Attachments = {
 
     },
 }
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "reload" or anim == "reload_empty" then
+        return "reload_sg"
+    elseif anim == "fire_empty" then
+        return "fire_sg"
+    elseif anim == "ready" then
+        return "draw"
+    end
+end
+
+ATT.Hook_TranslateSource = function(wep, anim)
+    if anim == "idle_empty" or anim == "fire" or anim == "draw_empty" or anim == "holster_empty" or anim == "modeswitch_empty" or anim == "inspect_empty" then
+        return anim .. "_sg"
+    end
+end
+
+ATT.MuzzleParticle = "muzzleflash_slug"
+
+ATT.AfterShotEffect = "arc9_uplp_db_aftershoteffect"
+ATT.AfterShotParticle = nil
+ATT.AfterShotParticleDelay = 2
+ATT.ShellPitch = 100
+ATT.ShellVelocity = -0.7
+ATT.ShellAngleVelocity = 0.15
+ATT.ShellSmoke = false
+ATT.ShellSounds = ARC9.ShotgunShellSoundsTable
+ATT.DamageMax = 100 * 1.5 -- 200
+ATT.DamageMin = 60 * 1.5 -- 72
+ATT.DistributeDamage = true
+ATT.HeadshotDamage = 1
+ATT.DamageType = DMG_BULLET + DMG_BUCKSHOT
+ATT.HullSize = 1
+
+-- edited to be square root instead of quarter root
+ATT.CurvedDamageScaling = true
+
+ATT.SweetSpot = false
+ATT.BodyDamageMults = {
+    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_CHEST] = 1,
+    [HITGROUP_STOMACH] = 1,
+    [HITGROUP_LEFTARM] = 1,
+    [HITGROUP_RIGHTARM] = 1,
+    [HITGROUP_LEFTLEG] = 1,
+    [HITGROUP_RIGHTLEG] = 1,
+}
+
+
+ATT.Penetration = 2 -- Units of wood that can be penetrated
+ATT.ImpactForce = 3 -- How much kick things will have when hit
+-- Range
+ATT.RangeMin = 2 / ARC9.HUToM
+ATT.RangeMax = 25 / ARC9.HUToM
+
+-- Physical Bullets
+ATT.PhysBulletMuzzleVelocity = 480 / ARC9.HUToM
+ATT.PhysBulletGravity = 1.5
+ATT.PhysBulletDrag = 2
+
+-- Magazine Info
+ATT.Ammo = "buckshot" -- What ammo type this gun uses.
+-- Accuracy and Spread
+ATT.UseDispersion = true
+
+ATT.Spread = 0.03 * 1.5
+ATT.SpreadAddMidAir = 0
+
+ATT.DispersionSpread = 0
+ATT.DispersionSpreadAddHipFire = 0.02
+
+ATT.DispersionSpreadAddRecoil = 0.035
+ATT.DispersionSpreadAddMove = 0.025
+ATT.DispersionSpreadAddMidAir = 0.05
+
+ATT.Num = 12 -- How many bullets shot at once
+ATT.NoShellEject = true
+ATT.EjectDelay = 1111111111
+
+local pathNEW = ")uplp_rz/dbs/"
+local pathUTC = ")uplp_urban_temp/common/"
+
+ATT.ShootSound = {
+    pathNEW .. "fire-01.wav",
+    pathNEW .. "fire-02.wav",
+    pathNEW .. "fire-03.wav",
+}
+
+ATT.DistantShootSound = {
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-ext-03.wav",
+}
+
+ATT.DistantShootSoundIndoor = {
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-01.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-02.wav",
+    pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.wav",
+}
+
+ATT.LayerSoundIndoor = ATT.DistantShootSoundIndoor
+ATT.Hook_HideBones = function(swep, bons)
+    local loaded = swep:GetLoadedRounds()
+    bons["sg_shell"] = bons["sg_shell"] or loaded == 1
+
+    return bons
+end
+
+ATT.ReloadHideBonesFirstPerson = true
+
+ATT.BulletBones = {
+    [1] = "sg_round",
+}
+
+ATT.ReloadHideBoneTables = {
+    [1] = {
+        "sg_shell",
+        "sg_round",
+    },
+}
+
+ATT.ShouldDropMag = false 
+ATT.ShouldDropMagEmpty = false 
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_shotgun")
 
