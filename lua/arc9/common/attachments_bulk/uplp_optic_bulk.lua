@@ -2974,6 +2974,7 @@ ATT.RTScopePostInvertFunc = function(swep)
 	-- DrawColorModify( meow )
 end
 
+ATT.RTScopeNew_BlurTexture = "models/weapons/arc9/uplp/glass" -- fixes weird dof cuz rt plane is in far
 
 ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
