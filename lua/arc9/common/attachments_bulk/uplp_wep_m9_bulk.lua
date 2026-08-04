@@ -98,8 +98,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_a3", "uplp_can_tac"}
 
-ATT.AimDownSightsTimeAdd = 0.01
-ATT.RecoilMult = 0.9
+ATT.RecoilMult = 0.92
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.04
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_a3")
 
@@ -265,7 +266,7 @@ ATT.ClipSizeOverride = 20
 ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.06
-ATT.SpeedSightsMult = 0.92
+ATT.SpeedMultSights = 0.92
 ATT.SpreadAddHipFire = 0.001
 ATT.DeployTimeMult = 1.25
 

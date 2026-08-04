@@ -92,7 +92,7 @@ SWEP.DamageMin = 9
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
+    [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1.0,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -157,7 +157,7 @@ SWEP.VisualRecoilMultHipFire = 1
 
 -- Accuracy and Spread
 SWEP.Spread = 0.0045
-SWEP.SpreadAddHipFire = 0.0065
+SWEP.SpreadAddHipFire = 0.006
 
 SWEP.SpreadAddRecoil = 0.013
 SWEP.SpreadAddMove = 0.005

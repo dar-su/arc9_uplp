@@ -162,7 +162,7 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/usp_mag_ext.mdl"
 ATT.SwayAddSights = 0.3
 ATT.SprintToFireTimeAdd = 0.06
 ATT.AimDownSightsTimeAdd = 0.06
-ATT.SpeedSightsMult = 0.92
+ATT.SpeedMultSights = 0.92
 ATT.SpreadAddHipFire = 0.0015
 ATT.DeployTimeMult = 1.25
 
