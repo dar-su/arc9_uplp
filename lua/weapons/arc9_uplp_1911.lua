@@ -25,7 +25,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "notcplkerry, Darsu",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, inspect by Dummified",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
@@ -87,8 +87,8 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 28
-SWEP.DamageMin = 10
+SWEP.DamageMax = 30
+SWEP.DamageMin = 9
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -105,8 +105,8 @@ SWEP.Penetration = 40 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 8 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 15 / ARC9.HUToM
-SWEP.RangeMax = 40 / ARC9.HUToM
+SWEP.RangeMin = 5 / ARC9.HUToM
+SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 280 * 39.37
@@ -117,7 +117,7 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 8
+SWEP.ClipSize = 7
 
 -- Recoil
 SWEP.Recoil = 1
@@ -157,10 +157,10 @@ SWEP.VisualRecoilMultHipFire = 1
 
 -- Accuracy and Spread
 SWEP.Spread = 0.0045
-SWEP.SpreadAddHipFire = 0.007
+SWEP.SpreadAddHipFire = 0.0065
 
 SWEP.SpreadAddRecoil = 0.013
-SWEP.SpreadAddMove = 0.003
+SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.05
 
 -- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
@@ -169,8 +169,8 @@ SWEP.HipfireBloomAmplification = 2
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 8
-SWEP.RecoilResetTime = 0.025
+SWEP.RecoilDissipationRate = 4
+SWEP.RecoilResetTime = 0.015
 SWEP.RecoilPerShot = 1 / 3
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
@@ -184,11 +184,11 @@ SWEP.SpeedMultSights = 0.85 -- When aiming
 
 SWEP.BarrelLength = 24
 
-SWEP.AimDownSightsTime = 0.22
-SWEP.SprintToFireTime = 0.2
+SWEP.AimDownSightsTime = 0.16
+SWEP.SprintToFireTime = 0.15
 
 -- Shooting and Firemodes
-SWEP.RPM = 380 -- How fast gun shoot
+SWEP.RPM = 360 -- How fast gun shoot
 SWEP.HeatCapacity = 50 * 1.5 -- For suppresors; how many shots for full heat With big silencer (Small silencers will make this number lower down to 70%)
 
 SWEP.Num = 1 -- How many bullets shot at once
