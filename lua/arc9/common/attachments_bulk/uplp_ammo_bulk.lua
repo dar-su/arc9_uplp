@@ -335,8 +335,11 @@ ATT.Hook_BulletImpact = function(wep,data)
             if vFireInstalled then
                 CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, data.dmg:GetDamage() * 0.02)
             else
-                ent:Ignite(1.5, 0)
-                data.dmg:SetDamageType(DMG_BURN)
+                ent:Ignite(ent:IsPlayer() and 1.5 or 5, 0)
+                -- HL2 zombies ignore DMG_BURN damage, making pellets do no damage
+                if !(ent:IsNPC() and string.find(ent:GetClass(), "zombie")) then
+                    data.dmg:SetDamageType(DMG_BURN)
+                end
             end
         end
     end
