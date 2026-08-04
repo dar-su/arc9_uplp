@@ -89,7 +89,7 @@ ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 
 ATT.Category = "uplp_usp_sight"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-            
+
 ARC9.LoadAttachment(ATT, "uplp_usp_irons_tac")
 
 ---------- uplp_usp_muz_heavy

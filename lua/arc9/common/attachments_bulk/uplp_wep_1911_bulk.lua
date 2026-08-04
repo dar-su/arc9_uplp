@@ -49,6 +49,9 @@ ATT.Icon = Material(iconfolder .. "silver.png", "mips smooth")
 ATT.Category = "uplp_1911_frame"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RecoilMult = 0.925
+ATT.AimDownSightsTimeMult = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_silver")
 
 ---------- uplp_1911_frame_auto
@@ -216,6 +219,10 @@ ATT.DrawFunc = function(swep, model, wm)
     ARC9.UPLP_CallAlyxGripRT(swep)
 end
 
+ATT.ReloadTimeMult = 0.95
+ATT.SpreadAddHipFire = 0.001
+ATT.SpeedMultSights = 0.9
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_alyx")
 
 
@@ -233,14 +240,14 @@ ATT.Icon = Material(iconfolder .. "slidelong.png", "mips smooth")
 ATT.Category = "uplp_1911_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RangeMinAdd = 4 / ARC9.HUToM
+ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = 10 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = 0.05
-ATT.SpreadAddHipFire = 0.0016
+ATT.SpreadAddHipFire = 0.003
 ATT.PhysBulletMuzzleVelocityMult = 1.1
-ATT.SpreadAdd = -0.0015
+ATT.SpreadAdd = -0.001
 ATT.SpreadAddRecoil = -0.0035
-ATT.RPMAdd = -50
+ATT.RPMAdd = -60
 ATT.RecoilSideAdd = -0.3
 
 ATT.ActivateElements = {"uplp_1911_irons_tac"}
@@ -289,8 +296,9 @@ ATT.Icon = Material(iconfolder .. "slidesub.png", "mips smooth")
 ATT.Category = "uplp_1911_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RangeMaxAdd = -10 / ARC9.HUToM
-ATT.AimDownSightsTimeAdd = -0.07
+ATT.RPMMult = 1.05
+ATT.RangeMaxAdd = -15 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = -0.05
 ATT.RecoilMult = 1.15
 ATT.SpreadAddHipFire = -0.0015
 ATT.RecoilPerShotMultHipFire = 0.8
@@ -313,6 +321,9 @@ ATT.Category = "uplp_1911_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_1911_irons_tac"}
+
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.RecoilSideMult = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_tac")
 
@@ -360,8 +371,8 @@ ATT.ActivateElements = {"uplp_1911_irons_tac"}
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_alyx")
 
-
-
+ATT.RecoilUpMult = 0.8
+ATT.RecoilRandomSideMult = 1.1
 
 ---------- uplp_1911_comp
 
