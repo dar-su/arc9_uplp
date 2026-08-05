@@ -194,6 +194,39 @@ L["uplp_stat_scopedsway"] = "Стабильность в прицеле" // Sinc
 L["uplp_firemode_pump"] = "ПОМПА"
 L["uplp_firemode_both"] = "ОБА"
 
+//////////////////// Settings
+-- L["setting.uplp"] = "Addon - PolyArms"
+-- L["setting.uplp.label"] = "Settings for PolyArms weapons :3"
+
+-- L["setting.uplp.dmgmult.title"] = "Damage Multipliers"
+-- L["setting.uplp.dmgmult.desc"] = "Tweak the damage multiplier for all PolyArms weapons.\n\nNote: Unofficial PolyArms-like weapons' damage values might not be affected by these."
+
+-- L["setting.uplp_mult_ar.title"] = "Assault Rifles"
+-- L["setting.uplp_mult_ar.desc"] = "Affects the damage on all Assault Rifles.\n\nNote: Assault Rifles with magazine capacities over 90 will use the \"Machine Gun\" multiplier."
+-- L["setting.uplp_mult_smg.title"] = "Submachine Guns"
+-- L["setting.uplp_mult_smg.desc"] = "Affects the damage on all Submachine Guns.\nAlso affects weapons converted to Submachine Guns."
+-- L["setting.uplp_mult_mg.title"] = "Machine Guns"
+-- L["setting.uplp_mult_mg.desc"] = "Affects the damage on all Machine Guns."
+-- L["setting.uplp_mult_shotgun.title"] = "Shotguns"
+-- L["setting.uplp_mult_shotgun.desc"] = "Affects the damage on all Shotguns.\nAlso affects weapons converted to Shotguns."
+-- L["setting.uplp_mult_dmr.title"] = "Marksman Rifles"
+-- L["setting.uplp_mult_dmr.desc"] = "Affects the damage on all Designated Marksman Rifles.\nAlso affects weapons converted to Designated Marksman Rifles."
+-- L["setting.uplp_mult_sniper.title"] = "Sniper Rifles"
+-- L["setting.uplp_mult_sniper.desc"] = "Affects the damage on all Sniper Rifles."
+-- L["setting.uplp_mult_pistol.title"] = "Pistols"
+-- L["setting.uplp_mult_pistol.desc"] = "Affects the damage on all Pistols."
+-- L["setting.uplp_mult_machinepistol.title"] = "Machine Pistols"
+-- L["setting.uplp_mult_machinepistol.desc"] = "Affects the damage on all fully automatic Pistols.\nAlso affects pistols that add full auto functionality."
+
+-- L["setting.uplp_mult_melee.title"] = "Melee"
+-- L["setting.uplp_mult_melee.desc"] = "Affects the damage on all Melee weapons."
+-- L["setting.uplp_mult_explosive.title"] = "Explosives"
+-- L["setting.uplp_mult_explosive.desc"] = "Affects the damage on all Grenades and Rocket Launchers."
+
+-- L["setting.uplp_overheat.title"] = "Enable Suppressed Overheating"
+-- L["setting.uplp_overheat.desc"] = "When enabled, firing suppressed weapons will overheat the suppressor, which in turn reduces weapon effectiveness.\n\nAlso enables the overheat mechanic for other weapon packs."
+
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
 //////////////////// Universal translations for easy use

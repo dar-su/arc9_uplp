@@ -194,6 +194,39 @@ L["uplp_stat_scopedsway"] = "Sväjning i Siktet" // Since the stat is on the sig
 L["uplp_firemode_pump"] = "PUMP"
 L["uplp_firemode_both"] = "BÅDA"
 
+//////////////////// Settings
+L["setting.uplp"] = "Tillägg - PolyArms"
+L["setting.uplp.label"] = "Inställningar till PolyArms-vapen :3"
+
+L["setting.uplp.dmgmult.title"] = "Skadamultiplikator"
+L["setting.uplp.dmgmult.desc"] = "Finjustera skada multiplikatorn på alla PolyArms-vapen.\n\n<color=255,100,100>NOTERA</color>: Icke-officiella PolyArms-liknande vapens skada kanske inte påverkas av dessa."
+
+L["setting.uplp_mult_ar.title"] = "Automatkarbiner"
+L["setting.uplp_mult_ar.desc"] = "Påverkar skadan på alla Automatkarbiner.\n\nNotera: Automatkarbiner med magasinkapacitet över 90 kommer använda \"Kulspruta\"-multiplikatorn."
+L["setting.uplp_mult_smg.title"] = "Kulsprutepistoler"
+L["setting.uplp_mult_smg.desc"] = "Påverkar skadan på alla Kulsprutepistoler.\nPåverkar också vapen som modifieras till Kulsprutepistoler."
+L["setting.uplp_mult_mg.title"] = "Kulsprutor"
+L["setting.uplp_mult_mg.desc"] = "Påverkar skadan på alla Kulsprutor."
+L["setting.uplp_mult_shotgun.title"] = "Hagelbössor"
+L["setting.uplp_mult_shotgun.desc"] = "Påverkar skadan på alla Hagelbössor.\nPåverkar också vapen som modifieras till Hagelbössor."
+L["setting.uplp_mult_dmr.title"] = "Precisionsgevär"
+L["setting.uplp_mult_dmr.desc"] = "Påverkar skadan på alla Precisionsgevär.\nPåverkar också vapen som modifieras till Precisionsgevär."
+L["setting.uplp_mult_sniper.title"] = "Prickskyttegevär"
+L["setting.uplp_mult_sniper.desc"] = "Påverkar skadan på alla Prickskyttegevär."
+L["setting.uplp_mult_pistol.title"] = "Pistoler"
+L["setting.uplp_mult_pistol.desc"] = "Påverkar skadan på alla Pistoler."
+L["setting.uplp_mult_machinepistol.title"] = "Automatpistoler"
+L["setting.uplp_mult_machinepistol.desc"] = "Påverkar skadan på alla helautomatiska Pistoler.\nPåverkar också pistoler som lägger till automateld-funktionen."
+
+L["setting.uplp_mult_melee.title"] = "Närstrid"
+L["setting.uplp_mult_melee.desc"] = "Påverkar skadan på alla Närstridsvapen."
+L["setting.uplp_mult_explosive.title"] = "Sprängmedel"
+L["setting.uplp_mult_explosive.desc"] = "Påverkar skadan på alla Granater och Raketgevär."
+
+L["setting.uplp_overheat.title"] = "Aktivera Ljuddämpade Överhettande"
+L["setting.uplp_overheat.desc"] = "Om påslaget så kommer skjutande av ljuddämpade vapen överhetta ljuddämparen vilket leder till sänkt effektivitet.\n\nAktiverar också överhettningsfunktionen på andra vapentillägg."
+
+
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
 //////////////////// Universal translations for easy use
