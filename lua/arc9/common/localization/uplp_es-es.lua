@@ -56,6 +56,8 @@ L["uplp_caliber_308auto"] = ".380 ACP"
 L["uplp_caliber_4570"] = ".45-70 Government"
 L["uplp_caliber_2375"] = " 23×75mm R"
 
+-- L["uplp_caliber_rpg7"] = "Rocket-Propelled Grenades"
+
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Fabricante2"
 
@@ -88,6 +90,8 @@ L["uplp_mechanism_doublesingleaction"] = "Doble Acción Única"
 
 L["uplp_mechanism_breakaction"] = "Cañón basculante"
 L["uplp_mechanism_lever"] = "Acción de palanca"
+
+-- L["uplp_mechanism_rocket"] = "Rocket-propelled"
 
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Retroceso corto"
@@ -3771,6 +3775,18 @@ local sr25brll = {
 -- L["uplp_1911_mb.printname"] = "X45 Muzzle Brake"
 -- L["uplp_1911_mb.compactname"] = "X45"
 -- L["uplp_1911_mb.description"] = "Aftermarket muzzle brake for the ASP 1911."
+
+-- L["uplp_1911_gripimage_cylo.printname"] = "\"Cylo\" Grip Image"
+-- L["uplp_1911_gripimage_cylo.compactname"] = "Cylo"
+-- L["uplp_1911_gripimage_cylo.description"] = "An insertable image of a cartoonish bat for ASP 1911/M2K11 acryl grips.\n\nDrawn by Cylowalker."
+
+-- L["uplp_1911_gripimage_dars.printname"] = "\"Platinum Fox\" Grip Image"
+-- L["uplp_1911_gripimage_dars.compactname"] = "Platinum Fox"
+-- L["uplp_1911_gripimage_dars.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
+
+-- L["uplp_1911_gripimage_rzen.printname"] = "\"Red Dog\" Grip Image"
+-- L["uplp_1911_gripimage_rzen.compactname"] = "Red Dog"
+-- L["uplp_1911_gripimage_rzen.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
 
 //////////////////// Staccato 2011
 -- L["uplp_weapon_2011"] = "LA M2K11"

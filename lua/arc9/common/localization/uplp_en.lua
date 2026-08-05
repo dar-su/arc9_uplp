@@ -56,6 +56,8 @@ L["uplp_caliber_308auto"] = ".380 ACP"
 L["uplp_caliber_4570"] = ".45-70 Government"
 L["uplp_caliber_2375"] = " 23×75mm R"
 
+L["uplp_caliber_rpg7"] = "Rocket-Propelled Grenades"
+
 /////////// Manufacturer
 L["uplp_manufacturer"] = "Manufacturer2"
 
@@ -88,6 +90,8 @@ L["uplp_mechanism_gasoperated_longstroke"] = "Long-stroke gas system"
 
 L["uplp_mechanism_breakaction"] = "Break-Action"
 L["uplp_mechanism_lever"] = "Lever action"
+
+L["uplp_mechanism_rocket"] = "Rocket-propelled"
 
 -- Requested by fesiug
 L["uplp_mechanism_shortrecoil"] = "Short-recoil"
@@ -3837,6 +3841,18 @@ L["uplp_1911_mb.printname"] = "X45 Muzzle Brake"
 L["uplp_1911_mb.compactname"] = "X45"
 L["uplp_1911_mb.description"] = "Aftermarket muzzle brake for the ASP 1911."
 
+L["uplp_1911_gripimage_cylo.printname"] = "\"Cylo\" Grip Image"
+L["uplp_1911_gripimage_cylo.compactname"] = "Cylo"
+L["uplp_1911_gripimage_cylo.description"] = "An insertable image of a cartoonish bat for ASP 1911/M2K11 acryl grips.\n\nDrawn by Cylowalker."
+
+L["uplp_1911_gripimage_dars.printname"] = "\"Platinum Fox\" Grip Image"
+L["uplp_1911_gripimage_dars.compactname"] = "Platinum Fox"
+L["uplp_1911_gripimage_dars.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
+
+L["uplp_1911_gripimage_rzen.printname"] = "\"Red Dog\" Grip Image"
+L["uplp_1911_gripimage_rzen.compactname"] = "Red Dog"
+L["uplp_1911_gripimage_rzen.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
+
 //////////////////// Staccato 2011
 L["uplp_weapon_2011"] = "LA M2K11"
 L["uplp_weapon_2011_desc"] = "A modernized service pistol retaining the spirit of the original while incorporating advanced ergonomics. Manufactured by Liberty Arms, the M2K11 offers a lighter, yet stronger construction while also allowing for larger customizability."
@@ -3905,15 +3921,3 @@ L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom 
 L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
 L["uplp_2011_sight_alt.compactname"] = "Alternative"
 L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron sights for the M2K11. Style depends on equipped slide."
-
-L["uplp_1911_gripimage_cylo.printname"] = "\"Cylo\" Grip Image"
-L["uplp_1911_gripimage_cylo.compactname"] = "Cylo"
-L["uplp_1911_gripimage_cylo.description"] = "An insertable image of a cartoonish bat for ASP 1911/M2K11 acryl grips.\n\nDrawn by Cylowalker."
-
-L["uplp_1911_gripimage_dars.printname"] = "\"Platinum Fox\" Grip Image"
-L["uplp_1911_gripimage_dars.compactname"] = "Platinum Fox"
-L["uplp_1911_gripimage_dars.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
-
-L["uplp_1911_gripimage_rzen.printname"] = "\"Red Dog\" Grip Image"
-L["uplp_1911_gripimage_rzen.compactname"] = "Red Dog"
-L["uplp_1911_gripimage_rzen.description"] = "An insertable image of a certain fictional character for ASP 1911/M2K11 acryl grips."
