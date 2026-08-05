@@ -14,6 +14,8 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_1911_desc")
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_pistol") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol") -- In the Spawnmenu
 
+SWEP.UPLP_Class = "pist"
+
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_1911_real"),
 
@@ -117,7 +119,7 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 7
+SWEP.ClipSize = 8
 
 -- Recoil
 SWEP.Recoil = 1

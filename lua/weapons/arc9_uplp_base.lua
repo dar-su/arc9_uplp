@@ -18,6 +18,42 @@ SWEP.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.5,
 }
 
+local wepclasses = {
+    ["ar"] = { GetConVar("arc9_uplp_mult_ar"), "uplp_class_weapon_ar"},
+    ["smg"] = { GetConVar("arc9_uplp_mult_smg"), "uplp_class_weapon_smg"},
+    ["mg"] = { GetConVar("arc9_uplp_mult_mg"), "uplp_class_weapon_mg"},
+    ["sg"] = { GetConVar("arc9_uplp_mult_shotgun"), "uplp_class_weapon_shotgun"},
+    ["dmr"] = { GetConVar("arc9_uplp_mult_dmr"), "uplp_class_weapon_dmr"},
+    ["snip"] = { GetConVar("arc9_uplp_mult_sniper"), "uplp_class_weapon_sniper"},
+    ["pist"] = { GetConVar("arc9_uplp_mult_pistol"), "uplp_class_weapon_pistol"},
+    ["mpist"] = { GetConVar("arc9_uplp_mult_machinepistol"), "uplp_class_weapon_machinepistol"},
+    ["expl"] = { GetConVar("arc9_uplp_mult_explosive"), "???"},
+    ["melee"] = { GetConVar("arc9_uplp_mult_melee"), "uplp_class_weapon_melee"},
+}
+
+SWEP.DamageMaxHook = function(swep, dmg)
+    local wepclass = swep:GetValue("UPLP_Class") or "ar"
+
+    return dmg * (wepclasses[wepclass][1]:GetFloat() or 1)
+end
+
+SWEP.DamageMinHook = function(swep, dmg) 
+    local wepclass = swep:GetValue("UPLP_Class") or "ar"
+
+    return dmg * (wepclasses[wepclass][1]:GetFloat() or 1)
+end
+
+SWEP.HookP_ClassChange = function(swep, value)
+    local wepclass = swep:GetValue("UPLP_Class") or "ar"
+    local realsweptbl = weapons.GetStored(swep:GetClass())
+
+    if wepclass != (realsweptbl.UPLP_Class or "ar") then
+        return ARC9:GetPhrase(wepclasses[wepclass][2])
+    else 
+        return realsweptbl.Class
+    end
+end
+
 -------------------------- MELEE
 SWEP.DefaultBodygroups = "00000000000000000000000" -- Might as well prepare for the future
 

@@ -14,6 +14,8 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_knife_desc")
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_melee") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnmenu
 
+SWEP.UPLP_Class = "melee"
+
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_knife_real"),
 
@@ -96,6 +98,16 @@ SWEP.BashDamage = 50
 SWEP.BashDamageType = DMG_SLASH
 SWEP.Bash2Damage = 50
 SWEP.Bash2DamageType = DMG_SLASH
+
+local meleecvar = GetConVar("arc9_uplp_mult_melee")
+
+SWEP.BashDamageHook = function(swep, dmg) 
+    return dmg * (meleecvar:GetFloat() or 1)
+end
+
+SWEP.Bash2DamageHook = function(swep, dmg) 
+    return dmg * (meleecvar:GetFloat() or 1)
+end
 
 -- Range
 SWEP.BashRange = 80

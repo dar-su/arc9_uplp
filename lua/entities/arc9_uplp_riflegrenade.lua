@@ -87,10 +87,12 @@ else
     end
 end
 
+local explcvar = GetConVar("arc9_uplp_mult_explosive")
+
 -- overwrite to do special explosion things
 function ENT:DoDetonation()
     local attacker = IsValid(self:GetOwner()) and self:GetOwner() or self
-    util.BlastDamage(self, attacker, self:GetPos(), self.GrenadeRadius, self.GrenadeDamage or self.Damage or 0)
+    util.BlastDamage(self, attacker, self:GetPos(), self.GrenadeRadius, (self.GrenadeDamage or self.Damage or 0) * (explcvar:GetFloat() or 1))
 end
 
 function ENT:DoImpact(ent)
@@ -164,6 +166,8 @@ end
 
 function ENT:PhysicsCollide(colData, collider)
     timer.Simple(0, function()
+        if !IsValid(self) then return end
+        
         self.GrenadeDir = colData.OurOldVelocity:GetNormalized()
         self.GrenadePos = colData.HitPos
 
@@ -173,7 +177,7 @@ function ENT:PhysicsCollide(colData, collider)
             if CurTime() > self.SpawnTime + self.FuseTimeMin then
                 self:Detonate()
             else
-                self:FireBullets({Attacker = self:GetOwner(), Damage = self.GrenadeDamageDirect, Force = 16, HullSize = 16, Tracer = false, Dir = self:GetAngles():Forward(), Src = self:GetPos(), IgnoreEntity = self, AmmoType = 9})
+                self:FireBullets({Attacker = self:GetOwner(), Damage = self.GrenadeDamageDirect * (explcvar:GetFloat() or 1), Force = 16, HullSize = 16, Tracer = false, Dir = self:GetAngles():Forward(), Src = self:GetPos(), IgnoreEntity = self, AmmoType = 9})
                 self:Remove()
             end
         else

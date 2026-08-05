@@ -8,7 +8,7 @@ ENT.PrintName = "RPG Rocket"
 ENT.GrenadeDamage = 111
 ENT.GrenadeRadius = 300
 ENT.DragCoefficient = -22
-ENT.FuseTimeMin = nil
+ENT.FuseTimeMin = 0.05
 ENT.Mass = 1
 
 ENT.FlareColor = Color(255, 174, 0)

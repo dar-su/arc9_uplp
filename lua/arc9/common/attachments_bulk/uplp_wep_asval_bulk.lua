@@ -228,6 +228,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty"  then return anim .. "_10" end
 end
 
+ATT.UPLP_Class = "dmr"
+
 ARC9.LoadAttachment(ATT, "uplp_asval_mag_10")
 
 ---------- uplp_asval_mag_30

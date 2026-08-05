@@ -85,6 +85,8 @@ ATT.Firemodes = {
     PoseParam = 1 }
 }
 
+ATT.UPLP_Class = "dmr"
+
 -- ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_ammo_458")
@@ -166,6 +168,8 @@ ATT.Firemodes = {
     -- RPM = 450,
     PoseParam = 1 }
 }
+
+ATT.UPLP_Class = "dmr"
 
 -- ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 

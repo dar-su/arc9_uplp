@@ -322,6 +322,8 @@ ATT.SwayMultSights = 1.4
 ATT.SpeedAdd = -0.05
 ATT.SpeedMultSights = 0.65
 
+ATT.UPLP_Class = "mg"
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_drum")
 
 -------------------------------------------
@@ -653,6 +655,8 @@ ATT.SwayMultSights = 1.4
 ATT.SpeedAdd = -0.05
 ATT.SpeedMultSights = 0.65
 
+ATT.UPLP_Class = "mg"
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_drum")
 
 -------------------------------------------
@@ -870,6 +874,8 @@ ATT.Firemodes = {
     { Mode = -1, -- Full
     PoseParam = 2, },
 }
+
+ATT.UPLP_Class = "dmr"
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_308_20")
 

@@ -713,6 +713,8 @@ end
 
 ATT.ActivateElements = {"uplp_scar_mag_20_68"}
 
+ATT.UPLP_Class = "dmr"
+
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_20_68")
 
 ---------- uplp_scar_mag_hk
@@ -1017,6 +1019,8 @@ end
 ATT.CustomCons = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "+25%",
 }
+
+ATT.UPLP_Class = "mg"
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_drum")
 

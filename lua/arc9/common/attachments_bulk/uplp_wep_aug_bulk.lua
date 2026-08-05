@@ -371,6 +371,10 @@ ATT.CustomPros = {
 
 ATT.ClipSizeOverride = 25
 
+ATT.Ammo = "pistol"
+
+ATT.UPLP_Class = "smg"
+
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_919_25")
 
 ---------- uplp_aug_mag_919_40
@@ -401,6 +405,10 @@ ATT.ClipSizeOverride = 40
 ATT.CustomPros = {
     [ARC9:GetPhrase("customize.stats.ammo")] = ARC9:GetPhrase("ammo.pistol"),
 }
+
+ATT.Ammo = "pistol"
+
+ATT.UPLP_Class = "smg"
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_919_40")
 
@@ -458,6 +466,8 @@ ATT.RecoilSideAdd = 1.25
 ATT.ClipSizeOverride = 10
 ATT.RecoilPerShotMult = 3
 ATT.RecoilDissipationRateMult = 0.75
+
+ATT.UPLP_Class = "dmr"
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_300_10")
 

@@ -125,6 +125,8 @@ ATT.SpreadAddHipFire = 0.0015
 ATT.SpreadAddRecoil = 0.002
 ATT.SpreadAdd = 0.0075
 
+ATT.UPLP_Class = "mpist"
+
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")
 
 -------------------------------------------
@@ -434,6 +436,8 @@ ATT.RecoilPerShotMult = 0
 
 ATT.InfiniteAmmo = true
 ATT.BottomlessClip = true
+
+ATT.UPLP_Class = "mpist"
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_admin")
 

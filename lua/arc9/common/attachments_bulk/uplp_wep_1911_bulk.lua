@@ -97,6 +97,8 @@ ATT.CustomPros = {
 
 ATT.ClipSizeMult = 1.25
 
+ATT.UPLP_Class = "mpist"
+
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_auto")
 
 ---------- uplp_1911_mag_ext
@@ -527,6 +529,8 @@ ATT.ReloadHideBoneTables = {
 
 ATT.ShouldDropMag = false
 ATT.ShouldDropMagEmpty = false
+
+ATT.UPLP_Class = "sg"
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_shotgun")
 

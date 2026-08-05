@@ -9,6 +9,8 @@ SWEP.Category = "ARC9 - Poly Arms"
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_r870")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_r870_desc")
 
+SWEP.UPLP_Class = "sg"
+
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_r870_real"),
 

@@ -14,7 +14,7 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_orsis_desc")
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sniper") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sniper") -- In the Spawnmenu
 
-SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sniper")
+SWEP.UPLP_Class = "snip"
 
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_orsis_real"),

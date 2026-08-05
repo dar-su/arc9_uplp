@@ -372,6 +372,8 @@ ATT.Firemodes = {
     },
 }
 
+ATT.UPLP_Class = "dmr"
+
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
@@ -659,6 +661,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
         return anim .. "_100"
     end
 end
+
+ATT.UPLP_Class = "mg"
 
 ARC9.LoadAttachment(ATT, "uplp_g36_mag_drum")
 

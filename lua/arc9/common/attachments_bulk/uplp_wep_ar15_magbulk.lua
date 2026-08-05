@@ -122,6 +122,8 @@ ATT.SpreadAddHipFire = -0.005
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.UPLP_Class = "smg"
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_20")
 
 
@@ -182,6 +184,8 @@ ATT.ReloadTimeMult = 1.15
 
 ATT.Category = "uplp_ar15_45_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.UPLP_Class = "smg"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_45_40")
 
@@ -283,6 +287,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.UPLP_Class = "smg"
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_glock_17")
 
 
@@ -354,6 +360,8 @@ ATT.Attachments = {
         RequireElements = {"uplp_ar15_rec_smg"},
     },
 }
+
+ATT.UPLP_Class = "smg"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_glock_33")
 
@@ -431,6 +439,8 @@ ATT.Attachments = {
         RequireElements = {"uplp_ar15_rec_smg"},
     },
 }
+
+ATT.UPLP_Class = "smg"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_glock_50")
 
@@ -839,5 +849,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_100"
 end
+
+ATT.UPLP_Class = "mg"
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_drum")

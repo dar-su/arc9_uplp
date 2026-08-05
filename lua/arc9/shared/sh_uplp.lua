@@ -5,6 +5,67 @@ list.Set("ContentCategoryIcons", "ARC9 - Poly Arms", "uplp_16.png")
 list.Set("ContentCategoryIcons", "ARC9 - Poly Arms Attachments", "uplp_16.png")
 
 
+local conVars = {
+    {name = "uplp_mult_ar", default = "1", replicated = true },
+    {name = "uplp_mult_smg", default = "1", replicated = true },
+    {name = "uplp_mult_mg", default = "1", replicated = true },
+    {name = "uplp_mult_shotgun", default = "1", replicated = true },
+    {name = "uplp_mult_dmr", default = "1", replicated = true },
+    {name = "uplp_mult_sniper", default = "1", replicated = true },
+    {name = "uplp_mult_pistol", default = "1", replicated = true },
+    {name = "uplp_mult_machinepistol", default = "1", replicated = true },
+
+    {name = "uplp_mult_explosive", default = "1", replicated = true },
+    {name = "uplp_mult_melee", default = "1", replicated = true },
+}
+
+for _, var in ipairs(conVars) do
+    local convar_name = "arc9_" .. var.name
+
+    if var.client and CLIENT then
+        CreateClientConVar(convar_name, var.default, true, var.userinfo)
+    else
+        local flags = FCVAR_ARCHIVE
+        if var.replicated then
+            flags = flags + FCVAR_REPLICATED
+        end
+        if var.userinfo then
+            flags = flags + FCVAR_USERINFO
+        end
+        CreateConVar(convar_name, var.default, flags, var.helptext, var.min, var.max)
+    end
+end
+
+
+
+
+if CLIENT then
+    timer.Simple(1, function()
+        local uplpsettings = {
+            TabName = "setting.uplp",
+            sv = true,
+            { type = "label", text = "setting.uplp.label" },
+            { type = "label", text = "setting.uplp.dmgmult.title", desc = "setting.uplp.dmgmult.desc" },
+ 
+            { sv = true, type = "slider", text = "setting.uplp_mult_ar.title", convar = "uplp_mult_ar", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_ar.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_smg.title", convar = "uplp_mult_smg", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_smg.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_mg.title", convar = "uplp_mult_mg", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_mg.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_shotgun.title", convar = "uplp_mult_shotgun", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_shotgun.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_dmr.title", convar = "uplp_mult_dmr", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_dmr.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_sniper.title", convar = "uplp_mult_sniper", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_sniper.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_pistol.title", convar = "uplp_mult_pistol", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_pistol.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_machinepistol.title", convar = "uplp_mult_machinepistol", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_machinepistol.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_melee.title", convar = "uplp_mult_melee", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_melee.desc" },
+            { sv = true, type = "slider", text = "setting.uplp_mult_explosive.title", convar = "uplp_mult_explosive", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_explosive.desc" },
+            { sv = true, type = "bool", text = "setting.uplp_overheat.title", desc = "setting.uplp_overheat.desc", convar = "mod_overheat" },
+        }
+        
+        table.insert(ARC9.SettingsTable, 337, uplpsettings)
+    end)
+end
+
+
+
 
 -- code for 1911's alyx grip screen
 if CLIENT then

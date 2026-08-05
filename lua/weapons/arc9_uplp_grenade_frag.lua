@@ -10,6 +10,8 @@ SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_throwable") or "Throwable"
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_grenade_frag_desc") or "High-explosive fragmentation grenade."
 SWEP.CustomSelectIcon =  Material("entities/arc9_uplp_grenade_frag_wide.png", "mips smooth")
 
+SWEP.UPLP_Class = "expl"
+
 SWEP.ViewModel = "models/weapons/arc9/c_uplp_grenades.mdl"
 SWEP.WorldModel = "models/weapons/arc9/w_uplp_m26.mdl" -- guh
 SWEP.DefaultBodygroups = "00000000000000000"

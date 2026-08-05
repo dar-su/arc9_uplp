@@ -14,6 +14,8 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_fal_desc")
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
+SWEP.UPLP_Class = "ar"
+
 SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_fal_real"),
 
@@ -201,6 +203,7 @@ SWEP.Firemodes = {
     { Mode = 1, -- Semi
     RPM = 350,
     RecoilMult = 0.66,
+    UPLP_Class = "dmr",
     PoseParam = 2 }
 }
 

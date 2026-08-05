@@ -122,6 +122,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
 end
 
+ATT.UPLP_Class = "ar"
+
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_rec_ar10")
 
@@ -188,6 +190,8 @@ ATT.Firemodes = {
         PoseParam = 1,
     }
 }
+
+ATT.UPLP_Class = "ar"
 
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_rec_auto")

@@ -71,6 +71,8 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }
 
+ATT.UPLP_Class = "mpist"
+
 ARC9.LoadAttachment(ATT, "uplp_fn57_trigger_auto")
 
 

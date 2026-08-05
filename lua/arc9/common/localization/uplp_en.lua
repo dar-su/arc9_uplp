@@ -128,6 +128,7 @@ L["uplp_class_weapon_lever"] = "Lever-Action Rifle"
 L["uplp_class_weapon_dmr"] = "Designated Marksman Rifle"
 L["uplp_class_weapon_throwable"] = "Throwable"
 L["uplp_class_weapon_launcher"] = "Grenade Launcher"
+L["uplp_class_weapon_machinepistol"] = "Machine Pistol"
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Attachments
@@ -194,6 +195,43 @@ L["uplp_stat_scopedsway"] = "Scope Sway" // Since the stat is on the sight and n
 //////////////////// Firemodes
 L["uplp_firemode_pump"] = "PUMP"
 L["uplp_firemode_both"] = "BOTH"
+
+-- [[ Settings ]]
+L["setting.uplp"] = "Addon - PolyArms"
+L["setting.uplp.label"] = "Settings for PolyArms weapons :3"
+
+
+L["setting.uplp.dmgmult.title"] = "Damage Multipliers"
+L["setting.uplp.dmgmult.desc"] = "Damage multipliers for the various weapon types."
+
+L["setting.uplp_mult_ar.title"] = "Assault Rifles"
+L["setting.uplp_mult_ar.desc"] = [[Affects all Assault Rifles.]]
+L["setting.uplp_mult_smg.title"] = "Submachine Guns"
+L["setting.uplp_mult_smg.desc"] = [[Affects all Submachine Guns, including conversions.]]
+L["setting.uplp_mult_mg.title"] = "Machine Guns"
+L["setting.uplp_mult_mg.desc"] = [[Affects all Machine Guns.]]
+L["setting.uplp_mult_shotgun.title"] = "Shotguns"
+L["setting.uplp_mult_shotgun.desc"] = [[Affects all Shotguns, including conversions.]]
+L["setting.uplp_mult_dmr.title"] = "Marksman Rifles"
+L["setting.uplp_mult_dmr.desc"] = [[Affects all Designated Marksman Rifles, including conversions.]]
+L["setting.uplp_mult_sniper.title"] = "Sniper Rifles"
+L["setting.uplp_mult_sniper.desc"] = [[Affects all Sniper Rifles.]]
+L["setting.uplp_mult_pistol.title"] = "Pistols"
+L["setting.uplp_mult_pistol.desc"] = [[Affects all Pistols.]]
+L["setting.uplp_mult_machinepistol.title"] = "Machine Pistols"
+L["setting.uplp_mult_machinepistol.desc"] = [[Affects all conversions of pistols to automatic fire.]]
+
+L["setting.uplp_mult_melee.title"] = "Melee"
+L["setting.uplp_mult_melee.desc"] = [[Affects all Melee weapons.]]
+L["setting.uplp_mult_explosive.title"] = "Explosives"
+L["setting.uplp_mult_explosive.desc"] = [[Affects all Grenades and Rockets.]]
+
+L["setting.uplp_overheat.title"] = "Enable Silencer Overheating"
+L["setting.uplp_overheat.desc"] = [[Shooting silenced weapons too often will overheat the silencer, reducing weapon performance.
+
+This also enables/disables overheat mechanic for other weapon packs too!]]
+
+
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments

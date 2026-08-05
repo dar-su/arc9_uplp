@@ -81,6 +81,8 @@ ATT.Sights = {
     }
 }
 
+ATT.UPLP_Class = "mpist"
+
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_raffica")
 
 ---------- uplp_m9_receiver_a3
@@ -238,6 +240,8 @@ ATT.RangeMaxAdd = 8 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 5, 1.5) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, -0.5, 0) end
+
+ATT.UPLP_Class = "mpist"
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_robocop")
 
