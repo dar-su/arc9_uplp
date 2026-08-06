@@ -275,15 +275,15 @@ SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 
 ---- Sounds
 
-local pathRZ = ")uplp_rz/57/"
+local pathRZ = ")uplp_rz/1911/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/usp/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.wav",
-    pathUT .. "fire-02.wav",
-    pathUT .. "fire-03.wav",
+    pathRZ .. "fire-01.wav",
+    pathRZ .. "fire-02.wav",
+    pathRZ .. "fire-03.wav",
 }
 
 
@@ -332,9 +332,9 @@ SWEP.DropMagazineSounds = {
 
 SWEP.DryFireSound = ""
 
-SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+SWEP.TriggerDownSound = {pathRZ .. "trigger1.wav"}
 
-SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+SWEP.TriggerUpSound = {pathRZ .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -370,10 +370,9 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathRZ .. "mech-01.wav",
+    pathRZ .. "mech-02.wav",
+    pathRZ .. "mech-03.wav",
 }
 
 local UTCrattle = {
@@ -420,9 +419,9 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-            { s = pathUT .. "slidepull.ogg", t = 10 / 60, c = ca, v = 0.8 },
-            { s = pathUT .. "slidedrop.ogg", t = 35 / 60, c = ca, v = 0.8 },
+            { s = pathRZ .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathRZ .. "presscheck1.ogg", t = 11 / 60, c = ca, v = 0.8 },
+            { s = pathRZ .. "presscheck2.ogg", t = 36 / 60, c = ca },
             {s = pathUTC .. "cloth_4.ogg", t = 34 / 60},
         },
         IKTimeLine = {
@@ -551,10 +550,10 @@ SWEP.Animations = {
         -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
-            { s = pathUT .. "magout.ogg", t = 0 / 60, c = ca },
+            { s = pathRZ .. "magrel.ogg", t = 1 / 60, c = ca },
+            { s = pathRZ .. "magout.ogg", t = 2 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 22 / 60, c = ca },
+            { s = pathRZ .. "magin.ogg", t = 22 / 60, c = ca },
             { s = UTCrattle, t = 52 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
@@ -577,12 +576,12 @@ SWEP.Animations = {
         -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60, c = ca },
-            { s = pathUT .. "magout.ogg", t = 0 / 60, c = ca },
+            { s = pathRZ .. "magrel.ogg", t = 1 / 60, c = ca },
+            { s = pathRZ .. "magout.ogg", t = 2 / 60, c = ca },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 24 / 60, c = ca },
-            { s = pathUT .. "sliderel_deact.ogg", t = 56 / 60, c = ca },
-            { s = pathUT .. "slidedrop.ogg", t = 61 / 60, c = ca },
+            { s = pathRZ .. "magin.ogg", t = 24 / 60, c = ca },
+            { s = pathRZ .. "sliderel1.ogg", t = 58 / 60, c = ca },
+            { s = pathRZ .. "sliderel2.ogg", t = 61 / 60, c = ca },
             { s = UTCrattle, t = 75 / 60, c = ca },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
