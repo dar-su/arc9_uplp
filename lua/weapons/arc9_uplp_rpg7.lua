@@ -91,40 +91,19 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 -- If we arent aiming, dont fire
 SWEP.HookP_BlockFire = function(self)
-    return self:GetSightAmount() < 0.8
+    return self:GetSightAmount() < 0.666667
 end
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 34
-SWEP.DamageMin = 18
+SWEP.DamageMax = 300
+SWEP.DamageMin = 300
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = nil
 SWEP.ShootEnt = "arc9_uplp_rpg_missle" -- Set to an entity to launch it out of this weapon.
-SWEP.ShootEntForce = 10000
+SWEP.ShootEntForce = 7000
 SWEP.ShootEntityData = {}
 
-SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 2,
-    [HITGROUP_CHEST] = 1.0,
-    [HITGROUP_STOMACH] = 1,
-    [HITGROUP_LEFTARM] = 1,
-    [HITGROUP_RIGHTARM] = 1,
-    [HITGROUP_LEFTLEG] = 0.9,
-    [HITGROUP_RIGHTLEG] = 0.9,
-}
-
-SWEP.Penetration = 40 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 8 -- How much kick things will have when hit
-
--- Range
-SWEP.RangeMin = 20 / ARC9.HUToM
-SWEP.RangeMax = 50 / ARC9.HUToM
-
--- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 715 * 39.37
-SWEP.PhysBulletGravity = 1.5
-SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
 SWEP.Ammo = "RPG_round" -- What ammo type this gun uses.
@@ -134,11 +113,11 @@ SWEP.ClipSize = 1
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1
-SWEP.RecoilSide = 0.9
+SWEP.RecoilUp = 3
+SWEP.RecoilSide = 1
 
-SWEP.RecoilRandomUp = 0.3
-SWEP.RecoilRandomSide = 0.75
+SWEP.RecoilRandomUp = 0
+SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
@@ -149,43 +128,34 @@ SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
 -- Visual Recoil
-SWEP.UseVisualRecoil = false 
+SWEP.UseVisualRecoil = false
 
 -- Accuracy and Spread
-SWEP.Spread = 0.003
-SWEP.SpreadAddHipFire = 0.012
+SWEP.Spread = 0.005
+SWEP.SpreadAddHipFire = 0.15
 
-SWEP.SpreadAddRecoil = 0.011
-SWEP.SpreadAddMove = 0.008
-SWEP.SpreadAddMidAir = 0.05
+SWEP.SpreadAddRecoil = 0
+SWEP.SpreadAddMove = 0.03
+SWEP.SpreadAddMidAir = 0.1
 
--- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
-SWEP.HipfireBloomAmplification = 0.75
-
-SWEP.SpreadMultSights = 1
-SWEP.SpreadMultMove = 1
-
-SWEP.RecoilDissipationRate = 4
-SWEP.RecoilResetTime = 0.02
-SWEP.RecoilPerShot = 1 / 7
+SWEP.RecoilDissipationRate = 2
+SWEP.RecoilResetTime = 0
+SWEP.RecoilPerShot = 1 / 1
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 
-SWEP.RecoilPerShotMultSights = 0.75
-
 -- Weapon handling
-SWEP.Speed = 0.7 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.45 / 0.85 -- When aiming
-SWEP.SpeedMultShooting = 0.8
+SWEP.Speed = 0.75 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.75
+SWEP.SpeedMultShooting = 0.5
 
 SWEP.BarrelLength = 50
 
 SWEP.AimDownSightsTime = 0.6
-SWEP.SprintToFireTime = 0.4
+SWEP.SprintToFireTime = 0.6
 
 -- Shooting and Firemodes
--- SWEP.RPM = 440 -- How fast gun shoot
-SWEP.RPM = 500 -- How fast gun shoot
+SWEP.RPM = 100 -- How fast gun shoot
 SWEP.HeatCapacity = 1000
 
 SWEP.Num = 1 -- How many bullets shot at once
@@ -237,8 +207,8 @@ SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = false 
-SWEP.ShouldDropMagEmpty = false 
+SWEP.ShouldDropMag = false
+SWEP.ShouldDropMagEmpty = false
 
 ---- Sounds
 
@@ -274,7 +244,7 @@ SWEP.DistantShootSoundIndoor = {
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
 
--- SWEP.DistantShootVolume = 0.01 -- 
+-- SWEP.DistantShootVolume = 0.01 --
 -- SWEP.DistantShootVolumeActual = 0.01
 
 SWEP.DryFireSound = {pathUT .. "dryfire.wav"}
@@ -338,8 +308,8 @@ SWEP.Animations = {
     ["ready"] = {
         Source = "ready",
         Mult = 1.0,
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
             { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
@@ -350,8 +320,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
             { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
@@ -359,8 +329,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-		MinProgress = 0.5,
-		FireASAP = true,
+        MinProgress = 0.5,
+        FireASAP = true,
         EventTable = {
             { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
             { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
@@ -408,10 +378,10 @@ SWEP.Animations = {
 
     ["reload"] = {
         Source = "reload",
-        MinProgress = 0.8,
-		PeekProgress = 0.75,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        MinProgress = 0.75,
+        PeekProgress = 0.75,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.02,
         EventTable = {
             { s = UTCrattle, t = 0 / 60, c = ca },
@@ -537,16 +507,16 @@ SWEP.ReloadInSights = false
 function SWEP:ThinkGrenade()
     local owner = self:GetOwner()
 
-	if self:GetSafe() and owner:KeyPressed(IN_ATTACK) then self:ToggleSafety(false) return end
+    if self:GetSafe() and owner:KeyPressed(IN_ATTACK) then self:ToggleSafety(false) return end
 
-	if self:GetSightAmount() == 0 and owner:KeyPressed(IN_ATTACK) and self:Clip1() > 0 then self:EnterSights() return end
-    
+    if self:GetSightAmount() == 0 and owner:KeyPressed(IN_ATTACK) and self:Clip1() > 0 then self:EnterSights() return end
+
     if self:GetAnimLockTime() > CurTime() then return end
 end
 
 SWEP.Hook_PrimaryAttack = function(self)
     self:PlayAnimation("fire", 1, true, true)
-    
+
     self:SetGrenadePrimed(false)
 
     -- self:ExitSights() -- sights out anim too bad
@@ -566,11 +536,11 @@ SWEP.Hook_PrimaryAttack = function(self)
 
         -- debugoverlay.Line(owner:EyePos(), tr.HitPos)
         if tr.Hit then
-            timer.Simple(0, function() 
+            timer.Simple(0, function()
                 local d = DamageInfo()
                 d:SetDamage( 105 )
                 d:SetAttacker( owner )
-                d:SetDamageType( DMG_SLOWBURN ) 
+                d:SetDamageType( DMG_SLOWBURN )
                 -- d:SetDamageType( DMG_DISSOLVE ) -- this one is funny
 
                 owner:TakeDamageInfo( d )

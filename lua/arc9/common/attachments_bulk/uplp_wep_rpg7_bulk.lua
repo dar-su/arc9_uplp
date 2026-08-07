@@ -45,7 +45,13 @@ ATT.Category = "uplp_rpg7_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootEnt = "arc9_uplp_rpg_lopata"
-ATT.ShootEntForce = 1000
+ATT.ShootEntForce = 1500
+ATT.AmmoOverride = "xbowbolt"
+ATT.ReloadTimeMult = 0.7
+ATT.AimDownSightsTimeMult = 0.666667
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.1
+ATT.SpreadAddHipFire = -0.05
 
 ARC9.LoadAttachment(ATT, "uplp_rpg7_rocket_shovel")
 

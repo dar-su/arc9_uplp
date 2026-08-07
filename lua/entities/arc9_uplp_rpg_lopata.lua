@@ -1,60 +1,85 @@
 AddCSLuaFile()
 
-ENT.Type 				= "anim"
-ENT.Base 				= "arc9_nade_base"
-ENT.PrintName 			= "Lopata"
-
-ENT.Spawnable 			= false
-ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
+ENT.Base                     = "arc9_uplp_proj_base"
+ENT.PrintName                = "RPG-7 Shovel"
+ENT.Spawnable                = false
 
 ENT.Model = "models/weapons/arc9/w_uplp_rpg_lopata.mdl"
-ENT.PhysMat = "grenade"
 
-ENT.PhysBoxSize = nil
-ENT.SphereSize = nil
+ENT.IsRocket = true // projectile has a booster and will not drop.
+ENT.InstantFuse = false // projectile is armed immediately after firing.
+ENT.RemoteFuse = false // allow this projectile to be triggered by remote detonator.
+ENT.ImpactFuse = true // projectile explodes on impact.
 
-ENT.LifeTime = 4
+ENT.ExplodeOnDamage = false
+ENT.ExplodeUnderwater = false
 
-ENT.ExplodeOnImpact = false
+ENT.Delay = 0
+ENT.SafetyFuse = 0
 
 ENT.SmokeTrail = false
-
-ENT.BounceSound = "weapons/hegrenade/he_bounce-1.wav"
-ENT.DragCoefficient = -22
-
-local DAMAGA = 125
+ENT.FlareColor = nil
 
 local path = "uplp_urban_temp/common/"
 ENT.ExplosionSounds = {path .. "rpg_clang-01.ogg", path .. "rpg_clang-02.ogg", path .. "rpg_clang-03.ogg", path .. "rpg_clang-04.ogg"}
 
-function ENT:Detonate()
-    if not self:IsValid() then return end
-    if self.Defused then return end
-    if self:WaterLevel() > 0 then
-
-    else
-        self:EmitSound(table.Random(self.ExplosionSounds), 130, 100, 1, CHAN_AUTO, 0, 0, ARC9.EveryoneRecipientFilter)
+function ENT:OnInitialize()
+    if SERVER then
+        self:GetPhysicsObject():SetMass(20)
+        self:GetPhysicsObject():SetDragCoefficient(6)
+        self.Armed = false
+        util.SpriteTrail(self, 0, Color(15, 15, 15), false, 3, 1, 0.5, 2, "trails/tube.vmt")
     end
-
-    self.Defused = true
-
-    -- SafeRemoveEntityDelayed(self, self.SmokeTrailTime)
-    -- self:SetRenderMode(RENDERMODE_NONE)
-    -- self:SetMoveType(MOVETYPE_NONE)
-    -- self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
 end
 
+function ENT:Impact(data, collider)
+    local attacker = self.Attacker or self:GetOwner()
+    local ang = data.OurOldVelocity:Angle()
 
+    if IsValid(data.HitEntity) then
+        self:EmitSound(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], 90, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
+        local dmginfo = DamageInfo()
+        dmginfo:SetAttacker(attacker)
+        dmginfo:SetInflictor(self)
+        dmginfo:SetDamageType(DMG_CRUSH + DMG_CLUB)
+        dmginfo:SetDamage(200)
+        dmginfo:SetDamageForce(data.OurOldVelocity * 25)
+        dmginfo:SetDamagePosition(data.HitPos)
+        data.HitEntity:TakeDamageInfo(dmginfo)
+    end
 
-function ENT:PhysicsCollide(data, phys)
     timer.Simple(0, function()
-        if IsValid(self) then
-            -- if CurTime() > self.SpawnTime + self.FuseTime then
-                self:Detonate()
-            -- else
-                -- self:FireBullets({Attacker = self:GetOwner(), Damage = self.dmg, Force = 16, HullSize = 16, Tracer = false, Dir = self:GetAngles():Forward(), Src = self:GetPos(), IgnoreEntity = self, AmmoType = 9})
-                -- self:Remove()
-            -- end
-        end
+        local prop = ents.Create("prop_physics")
+        prop:SetPos(self:GetPos())
+        prop:SetAngles(self:GetAngles())
+        prop:SetModel("models/weapons/arc9/w_uplp_rpg_lopata.mdl")
+        prop:Spawn()
+        prop:GetPhysicsObject():SetVelocityInstantaneous(data.OurNewVelocity * 1 + VectorRand() * 72)
+        prop:GetPhysicsObject():SetAngleVelocityInstantaneous(data.OurOldAngularVelocity + VectorRand() * 256)
+        prop:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+        SafeRemoveEntityDelayed(prop, 1)
     end)
+
+    local fx = EffectData()
+    fx:SetOrigin(data.HitPos)
+    fx:SetNormal(-ang:Forward())
+    fx:SetAngles(-ang)
+    util.Effect("ManhackSparks", fx)
+
+    self:GetPhysicsObject():EnableMotion(false)
+    self:SetCollisionGroup(COLLISION_GROUP_DEBRIS)
+    self:SetNoDraw(true)
+    SafeRemoveEntityDelayed(self, 1)
+    return true
+end
+
+local g = Vector(0, 0, -9.81 * 0.75)
+function ENT:PhysicsUpdate(phys)
+    if !self.Armed and self:WaterLevel() <= 2 then
+        local v = phys:GetVelocity()
+        local a = v:Angle()
+        --a:RotateAroundAxis(a:Right(), 90)
+        self:SetAngles(a)
+        phys:SetVelocityInstantaneous(v + g)
+    end
 end
