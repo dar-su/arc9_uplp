@@ -505,7 +505,8 @@ ATT.DistantShootSoundIndoor = {
 ATT.LayerSoundIndoor = ATT.DistantShootSoundIndoor
 ATT.Hook_HideBones = function(swep, bons)
     local loaded = swep:GetLoadedRounds()
-    bons["sg_shell"] = bons["sg_shell"] or loaded == 1
+    -- bons["sg_shell"] = bons["sg_shell"] or loaded == 1
+    bons["sg_shell"] = bons["sg_round"]
 
     return bons
 end
@@ -517,6 +518,9 @@ ATT.BulletBones = {
 }
 
 ATT.ReloadHideBoneTables = {
+    [0] = {
+        "sg_shell",
+    },
     [1] = {
         "sg_shell",
         "sg_round",
