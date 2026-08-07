@@ -208,9 +208,10 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_blue.mdl"
 
 -- Positives
 ATT.NumMult = 1.5
+ATT.RecoilMult = 0.9
 
 -- Negatives
-ATT.SpreadMult = 1.25
+ATT.SpreadMult = 1.15
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_blue")
 
@@ -300,21 +301,17 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_orange.mdl"
 
--- Positives
-ATT.RecoilMult = 0.85
-
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_ignite_chance")] = "25%",
 }
 
 -- Negatives
 ATT.RPMMult = 0.75
-ATT.DamageMaxMult = 0.6
-ATT.RangeMaxMult = 0.5
-ATT.PhysBulletMuzzleVelocityMult = 0.5
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 0.75
+ATT.PhysBulletMuzzleVelocityMult = 0.4
 
 ATT.ImpactDecal = "FadingScorch"
-
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1

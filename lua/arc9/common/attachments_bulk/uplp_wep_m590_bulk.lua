@@ -172,13 +172,14 @@ ATT.Icon = Material(iconfolder .. "stockshort.png", "mips smooth")
 ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.6
+ATT.RecoilAdd = 0.7
 ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.AimDownSightsTimeAdd = -0.12
+ATT.SprintToFireTimeAdd = -0.12
+ATT.DispersionSpreadAddHipFire = -0.005
+ATT.DispersionSpreadAddMove = 0.008
+ATT.SpeedAddSights = 0.2
+ATT.SpeedAdd = 0.1
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
@@ -197,6 +198,7 @@ ATT.Icon = Material(iconfolder .. "stockmpul.png", "mips smooth")
 ATT.Category = "uplp_m590_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.SwayMultSights = 0.75
 ATT.RecoilRandomSideAdd = -0.25
 ATT.SprintToFireTimeAdd = 0.03
 
@@ -220,7 +222,7 @@ ATT.RecoilAdd = 1
 ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.1
 ATT.SprintToFireTimeAdd = -0.1
-ATT.SpreadAddHipFire = -0.01
+ATT.DispersionSpreadAddHipFire = -0.01
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
 

@@ -20,10 +20,10 @@ ATT.SortOrder = 3
 ATT.CycleTimeMult = 0.9
 ATT.DispersionSpreadAddHipFire = -0.01
 ATT.DispersionSpreadAddMove = -0.01
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.05
-ATT.SpeedAdd = 0.05
-ATT.SpeedAddSights = 0.1
+ATT.AimDownSightsTimeAdd = -0.12
+ATT.SprintToFireTimeAdd = -0.1
+ATT.SpeedAdd = 0.1
+ATT.SpeedAddSights = 0.12
 
 -- Negatives
 ATT.RangeMaxMult = 0.5
@@ -32,7 +32,7 @@ ATT.RecoilUpAdd = 0.3
 ATT.RecoilSideAdd = 0.5
 ATT.ClipSize = 3
 
-ATT.ShotgunReloadIncludesChamber = false 
+ATT.ShotgunReloadIncludesChamber = false
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
@@ -151,13 +151,13 @@ ATT.SortOrder = 5
 
 -- Positives
 ATT.DispersionSpreadAddHipFire = -0.006
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.03
-ATT.SpeedAdd = 0.02
-ATT.SpeedAddSights = 0.05
+ATT.AimDownSightsTimeAdd = -0.06
+ATT.SprintToFireTimeAdd = -0.06
+ATT.SpeedAdd = 0.06
+ATT.SpeedAddSights = 0.1
 
 -- Negatives
-ATT.RangeMaxMult = 0.6667
+ATT.RangeMaxMult = 0.7
 ATT.SpreadAdd = 0.015
 ATT.RecoilUpAdd = 0.15
 ATT.RecoilSideAdd = 0.3
@@ -438,13 +438,15 @@ ATT.Icon = Material(iconfolder .. "stockshort.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.6
+ATT.RecoilAdd = 0.7
 ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.AimDownSightsTimeAdd = -0.12
+ATT.SprintToFireTimeAdd = -0.12
+ATT.DispersionSpreadAddHipFire = -0.005
+ATT.DispersionSpreadAddMove = 0.008
+ATT.SpeedAddSights = 0.2
+ATT.SpeedAdd = 0.1
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
@@ -463,13 +465,15 @@ ATT.Icon = Material(iconfolder .. "stockshortwood.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.45
-ATT.SwayAddSights = 0.75
-ATT.AimDownSightsTimeAdd = -0.08
-ATT.SprintToFireTimeAdd = -0.06
-ATT.SpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.02
+ATT.RecoilAdd = 0.5
+ATT.SwayAddSights = 0.5
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.DispersionSpreadAddHipFire = -0.005
+ATT.DispersionSpreadAddMove = 0.008
+ATT.SpeedAddSights = 0.16
+ATT.SpeedAdd = 0.08
+ATT.RecoilRandomSideAdd = 0.5
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
@@ -527,7 +531,8 @@ ATT.RecoilAdd = 1
 ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.1
 ATT.SprintToFireTimeAdd = -0.1
-ATT.SpreadAddHipFire = -0.01
+ATT.DispersionSpreadAddHipFire = -0.01
+ATT.DispersionSpreadAddMove = 0.008
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
 
@@ -561,13 +566,15 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
-ATT.RecoilAdd = 0.75
-ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.1
-ATT.SprintToFireTimeAdd = -0.1
-ATT.SpreadAddHipFire = -0.01
-ATT.SpeedAddSights = 0.1
-ATT.SpeedAdd = 0.05
+ATT.RecoilAdd = 1
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.15
+ATT.SprintToFireTimeAdd = -0.15
+ATT.DispersionSpreadAddHipFire = -0.012
+ATT.DispersionSpreadAddMove = 0.008
+ATT.SpeedAddSights = 0.22
+ATT.SpeedAdd = 0.1
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(6, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end
@@ -589,50 +596,44 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
--- HERE STATS COPIED FROM SPAS STOCK
--- but since spas is stockless by default they wont work correctly :p
-
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "+40%",
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-0.8",
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.visualrecoil") .. " " .. ARC9:GetPhrase("autostat.secondary.hipfire")] = "-65%",
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "-1",
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sway") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "-0.5",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "-0.1s",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "-0.1s",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. string.format(ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.speed"))] = "+12%",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.speed")] = "+6%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+0.1s",
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+0.08s",
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.speed")] = "-5%",
-    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.speed") .. " " .. ARC9:GetPhrase("autostat.secondary.sights")] = "×85%",
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "+0.05s",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "+0.6",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. string.format(ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.sway"))] = "+0.5",
 }
+
+ATT.RecoilAdd = 0.4
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.05
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.04
+ATT.RecoilRandomSideAdd = 0.4
 
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
-
-        RecoilAdd = 0.75,
-        AimDownSightsTimeAdd = -0.05,
-        SprintToFireTimeAdd = -0.05,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_foldedstock", "uplp_grippose", "uplp_gripposemoar"},
 
-		CantPeek = true,
+        CantPeek = true,
 
-        RecoilAdd = 0.75,
+        RecoilAdd = 0.6,
         SwayAddSights = 0.5,
         AimDownSightsTimeAdd = -0.1,
         SprintToFireTimeAdd = -0.1,
-        SpreadAddHipFire = -0.01,
-        SpeedAddSights = 0.1,
-        SpeedAdd = 0.05,
-		
+        SpeedAddSights = 0.12,
+        SpeedAdd = 0.06,
 
-		CustomizePosHook = function(wep, vec) return vec + Vector(6, -4, 0) end,
-		CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end,
+        CustomizePosHook = function(wep, vec) return vec + Vector(6, -4, 0) end,
+        CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end,
 
     },
 }
