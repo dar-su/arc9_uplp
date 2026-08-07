@@ -1,34 +1,23 @@
 [h1]New content[/h1]
 [list]
-	[*] Added the [b]ZPG-61[/b], PolyArms' first official rocket launcher!
-	[list]
-		[*] Use a variety of rockets - or just steal a farmer's shovel, that works too.
-	[/list]
-	
-	[*] Added the [b]ASP 1911[/b], an old-school service pistol
-	[list]
-		[*] Can be converted to plenty of iconic variants
-	[/list]
-	
+	[*] Added the [b]ZPG-61[/b], PolyArms' first official rocket launcher! And uhh, you can put shovel in it
+	[*] Added the [b]ASP 1911[/b], an well-known service pistol that went through two world wars! Can be converted to plenty of iconic variants too
 	[*] Added the [b]LA M2K11[/b], a modernized version of the aforementioned service pistol
 	
-	[*] [b]PDW-7[/b] now has a new animation set
-	[*] Added new attachments for the [b]PDW-7[/b]
+	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified and few new attachments!
 	
 	[*] Added new [b]Damage Multiplier[/b] settings inside the ARC9 Settings menu
 	[list]
-		[*] Also added a dynamic weapon class system
 		[*] Weapons now use damage multipliers depending on their class
+		[*] Some attachments change the weapon class, making them use different multiplier (visually indicated in customization menu)
 	[/list]
 [/list]
 
 [h1]Changed content[/h1]
 [list]
-	[*] MRD57: Reduced reloading speed by ~10%
-	[*] PM92: Tweaked animations
-	
-	[*] Tweaked certain sound SFX audio levels
-	[*] Headshots now deal up to +50% more damage, depending on the weapon
 	[*] Updated plenty of firing and reloading SFX
+	[*] Headshots now deal up to 50% more damage, depending on the weapon
+	[*] PM92: Tweaked reload animations
+	[*] MRD57: Reduced reloading speed by ~10%
 	[*] Fixed various bugs
 [/list]
