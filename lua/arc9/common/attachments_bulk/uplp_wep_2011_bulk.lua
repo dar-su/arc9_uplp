@@ -128,6 +128,33 @@ ATT.RangeMaxAdd = -5 / ARC9.HUToM
 
 ARC9.LoadAttachment(ATT, "uplp_2011_int_jw")
 
+---------- uplp_2011_int_double
+
+ATT = {}
+
+ATT.PrintName = "uplp_2011_int_double"
+ATT.CompactName = "uplp_2011_int_double"
+ATT.Description = ATT.PrintName
+ATT.Icon = Material(iconfolder .. "intjw.png", "mips smooth")
+
+ATT.Category = "uplp_2011_int"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RPMMult = 2.5
+ATT.RunawayBurst = true
+ATT.PostBurstDelay = 0.15
+ATT.RecoilPerShotMultHipFire = 0.5
+ATT.RecoilRandomUpMult = 1.5
+ATT.RecoilRandomSideMult = 1.25
+
+ATT.Firemodes = {
+    {
+        Mode = 2,
+    }
+}
+
+ARC9.LoadAttachment(ATT, "uplp_2011_int_double")
+
 ---------- uplp_2011_mag_20
 
 ATT = {}
