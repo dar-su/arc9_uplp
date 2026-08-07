@@ -19,6 +19,10 @@ ATT.BoneMerge = true
 ATT.Category = "uplp_2011_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SpeedMultSights = 1.05
+ATT.RecoilSideMult = 1.1
+ATT.RecoilRandomSideMult = 1.1
 
 ATT.DrawFunc = function(swep, model, wm)
     if !model.appliedmeow then
@@ -44,6 +48,9 @@ ATT.Icon = Material(iconfolder .. "gjw.png", "mips smooth")
 ATT.Category = "uplp_2011_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.SpeedMultShooting = 0.95
+ATT.SpeedMultSights = 1.05
+
 ARC9.LoadAttachment(ATT, "uplp_2011_grip_jw")
 
 ---------- uplp_2011_grip_tac
@@ -57,6 +64,10 @@ ATT.Icon = Material(iconfolder .. "gtac.png", "mips smooth")
 
 ATT.Category = "uplp_2011_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ReloadTimeMult = 0.96
+ATT.SpeedMultSights = 0.92
+ATT.DeployTimeMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_2011_grip_tac")
 
@@ -72,6 +83,9 @@ ATT.Icon = Material(iconfolder .. "gsolid.png", "mips smooth")
 ATT.Category = "uplp_2011_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.SpeedMultShooting = 1.05
+ATT.SpeedMultSights = 0.95
+
 ARC9.LoadAttachment(ATT, "uplp_2011_grip_solid")
 
 ---------- uplp_2011_int_hardened
@@ -86,6 +100,12 @@ ATT.Icon = Material(iconfolder .. "inthard.png", "mips smooth")
 ATT.Category = "uplp_2011_int"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.RangeMinAdd = 2 / ARC9.HUToM
+ATT.RangeMaxAdd = 5 / ARC9.HUToM
+ATT.RecoilRandomUpMult = 0.85
+ATT.RecoilRandomSideMult = 0.85
+ATT.RPMAdd = -30
+
 ARC9.LoadAttachment(ATT, "uplp_2011_int_hardened")
 
 ---------- uplp_2011_int_jw
@@ -99,6 +119,12 @@ ATT.Icon = Material(iconfolder .. "intjw.png", "mips smooth")
 
 ATT.Category = "uplp_2011_int"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.SpreadAdd = -0.001
+ATT.SpreadAddRecoil = -0.0015
+ATT.RPMAdd = 20
+ATT.RangeMinAdd = -3 / ARC9.HUToM
+ATT.RangeMaxAdd = -5 / ARC9.HUToM
 
 ARC9.LoadAttachment(ATT, "uplp_2011_int_jw")
 
@@ -124,6 +150,13 @@ end
 
 ATT.ClipSize = 20
 
+ATT.SwayAddSights = 0.15
+ATT.SprintToFireTimeAdd = 0.04
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SpeedMultSights = 0.95
+ATT.SpreadAddHipFire = 0.0008
+ATT.DeployTimeMult = 1.15
+
 ARC9.LoadAttachment(ATT, "uplp_2011_mag_20")
 
 ---------- uplp_2011_mag_24
@@ -148,6 +181,13 @@ end
 
 ATT.ClipSize = 24
 
+ATT.SwayAddSights = 0.3
+ATT.SprintToFireTimeAdd = 0.08
+ATT.AimDownSightsTimeAdd = 0.08
+ATT.SpeedMultSights = 0.9
+ATT.SpreadAddHipFire = 0.0016
+ATT.DeployTimeMult = 1.3
+
 ARC9.LoadAttachment(ATT, "uplp_2011_mag_24")
 
 ---------- uplp_2011_slide_jw
@@ -161,6 +201,11 @@ ATT.Icon = Material(iconfolder .. "slidejw.png", "mips smooth")
 
 ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 0.92
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.RecoilPerShotMultHipFire = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_jw")
 
@@ -177,6 +222,11 @@ ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_2011_slide_jw"}
 
+ATT.RecoilMult = 0.92
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.RecoilPerShotMultHipFire = 1.1
+
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_jw_bronze")
 
 ---------- uplp_2011_slide_long
@@ -191,6 +241,15 @@ ATT.Icon = Material(iconfolder .. "slidelong.png", "mips smooth")
 ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.MuzzleEffectQCA = 5
+
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SpreadAddHipFire = 0.002
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.SpreadAdd = -0.002
+ATT.SpreadAddRecoil = -0.0025
+ATT.SpeedMultSights = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_long")
 
@@ -207,6 +266,13 @@ ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.MuzzleEffectQCA = 6
 
+ATT.RangeMaxAdd = -10 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.RecoilMult = 1.15
+ATT.SpreadAddHipFire = -0.0015
+ATT.RecoilPerShotMultHipFire = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_short")
 
 ---------- uplp_2011_slide_vshort
@@ -220,6 +286,14 @@ ATT.Icon = Material(iconfolder .. "slidesub.png", "mips smooth")
 
 ATT.Category = "uplp_2011_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RangeMaxAdd = -15 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.RecoilUpMult = 0.7
+ATT.RecoilRandomSideMult = 1.2
+ATT.SpreadAddHipFire = -0.0015
+ATT.RecoilPerShotMultHipFire = 0.8
+ATT.PhysBulletMuzzleVelocityMult = 0.86
 
 ARC9.LoadAttachment(ATT, "uplp_2011_slide_vshort")
 

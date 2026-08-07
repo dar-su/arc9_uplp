@@ -17,8 +17,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
-ATT.SpreadAdd = -0.0015
-ATT.RecoilAutoControlMult = 0.95
+ATT.SpreadAdd = -0.0005
+ATT.RecoilMult = 0.97
+ATT.SpeedMultSights = 0.97
 
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_m45a1")
 
@@ -37,8 +38,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
-ATT.SpreadAdd = -0.0015
-ATT.RecoilAutoControlMult = 0.95
+ATT.SpreadAdd = -0.0005
+ATT.RecoilMult = 0.97
+ATT.SpeedMultSights = 0.97
 
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_m45a1fde")
 
@@ -55,10 +57,8 @@ ATT.Icon = Material(iconfolder .. "silver.png", "mips smooth")
 ATT.Category = "uplp_1911_frame"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RangeMinAdd = 2 / ARC9.HUToM
-ATT.RangeMaxAdd = 2 / ARC9.HUToM
-ATT.RecoilMult = 0.92
-ATT.RPMMult = 0.95
+ATT.SpeedMultSights = 1.05
+ATT.SpeedMultShooting = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_silver")
 
@@ -84,7 +84,6 @@ ATT.RangeMaxAdd = -8 / ARC9.HUToM
 ATT.SpreadAdd = 0.0025
 ATT.SpreadAddRecoil = 0.0015
 ATT.RecoilMult = 1.3
-ATT.RecoilPerShotMult = 0.75
 ATT.RecoilRandomSideMult = 1.5
 
 ATT.HipfireBloomAmplificationOverride = 1.5
@@ -143,9 +142,9 @@ ATT.Icon = Material(iconfolder .. "gcomfy.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.SpeedMultSights = 0.9
-ATT.RecoilMult = 0.95
-ATT.SwayMultSights = 0.5
+ATT.ReloadTimeMult = 1.05
+ATT.RecoilAutoControlMult = 1.1
+ATT.SpeedMultShooting = 1.05
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_pachmayr")
 
@@ -189,8 +188,8 @@ ATT.Icon = Material(iconfolder .. "glong.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.SpreadAddMove = -0.0025
-ATT.SpreadAddHipFire = 0.0015
+ATT.SpeedMultSights = 1.05
+ATT.SpeedMultShooting = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_hardballer")
 
@@ -205,8 +204,8 @@ ATT.Icon = Material(iconfolder .. "gm45.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAutoControlMult = 0.9
-ATT.SpeedMultSights = 1.05
+ATT.RecoilAutoControlMult = 0.95
+ATT.RecoilSideMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_m45a1")
 
@@ -221,8 +220,8 @@ ATT.Icon = Material(iconfolder .. "gfde.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAutoControlMult = 0.9
-ATT.SpeedMultSights = 1.05
+ATT.RecoilAutoControlMult = 0.95
+ATT.RecoilSideMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_m45a1fde")
 
@@ -237,8 +236,8 @@ ATT.Icon = Material(iconfolder .. "gpoly.png", "mips smooth")
 ATT.Category = "uplp_1911_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.AimDownSightsTimeAdd = -0.02
-ATT.RecoilSideMult = 1.05
+ATT.SpeedMultSights = 1.03
+ATT.RecoilAutoControlMult = 0.92
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_polymer")
 
@@ -259,8 +258,8 @@ ATT.DrawFunc = function(swep, model, wm)
 end
 
 ATT.ReloadTimeMult = 0.95
-ATT.SpreadAddHipFire = 0.001
-ATT.SpeedMultSights = 0.95
+ATT.SpeedMultSights = 0.94
+ATT.AimDownSightsTimeAdd = 0.03
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_alyx")
@@ -280,11 +279,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.RangeMinAdd = 5 / ARC9.HUToM
 ATT.RangeMaxAdd = 10 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = 0.05
-ATT.SpreadAddHipFire = 0.002
-ATT.PhysBulletMuzzleVelocityMult = 1.12
-ATT.SpreadAdd = -0.001
-ATT.SpreadAddRecoil = -0.0015
-ATT.RPMMult = 0.87
+ATT.SpreadAddHipFire = 0.0025
+ATT.PhysBulletMuzzleVelocityMult = 1.14
+ATT.SpreadAdd = -0.002
+ATT.SpreadAddRecoil = -0.002
+ATT.SpeedMultSights = 0.9
+ATT.RPMAdd = -30
 
 ATT.ActivateElements = {"uplp_1911_irons_tac"}
 ATT.MuzzleEffectQCA = 6
@@ -306,9 +306,7 @@ ATT.ActivateElements = {"uplp_1911_irons_m45"}
 
 ATT.RangeMaxAdd = 3 / ARC9.HUToM
 ATT.SpreadAdd = -0.0005
-ATT.RecoilMult = 0.93
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.04
+ATT.RecoilSideMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_m45a1")
 
@@ -327,9 +325,7 @@ ATT.ActivateElements = {"uplp_1911_irons_m45"}
 
 ATT.RangeMaxAdd = 3 / ARC9.HUToM
 ATT.SpreadAdd = -0.0005
-ATT.RecoilMult = 0.93
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.04
+ATT.RecoilSideMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_m45a1fde")
 
@@ -344,13 +340,13 @@ ATT.Icon = Material(iconfolder .. "slidesub.png", "mips smooth")
 ATT.Category = "uplp_1911_slide"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RPMMult = 1.05
-ATT.RangeMaxAdd = -8 / ARC9.HUToM
+ATT.RangeMaxAdd = -5 / ARC9.HUToM
 ATT.AimDownSightsTimeAdd = -0.05
-ATT.RecoilMult = 1.15
 ATT.SpreadAddHipFire = -0.0015
-ATT.RecoilPerShotMultHipFire = 0.8
 ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.SpeedMultSights = 1.08
+ATT.RecoilMult = 1.15
+
 ATT.MuzzleEffectQCA = 5
 
 ATT.ActivateElements = {"uplp_1911_irons_m45"}
@@ -370,9 +366,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_1911_irons_tac"}
 
-ATT.AimDownSightsTimeAdd = -0.02
+ATT.AimDownSightsTimeAdd = -0.04
 ATT.SpreadAdd = -0.001
-ATT.SpreadAddMove = 0.0012
+ATT.RecoilUpMult = 1.12
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_tac")
 
@@ -429,8 +425,8 @@ ATT.ShellVelocity = -0.7
 ATT.ShellAngleVelocity = 0.15
 ATT.ShellSmoke = false
 ATT.ShellSounds = ARC9.ShotgunShellSoundsTable
-ATT.DamageMax = 90 * 1.5 -- 200
-ATT.DamageMin = 50 * 1.5 -- 72
+ATT.DamageMax = 132
+ATT.DamageMin = 48
 ATT.DistributeDamage = true
 ATT.HeadshotDamage = 1
 ATT.DamageType = DMG_BULLET + DMG_BUCKSHOT
@@ -454,8 +450,8 @@ ATT.BodyDamageMults = {
 ATT.Penetration = 2 -- Units of wood that can be penetrated
 ATT.ImpactForce = 3 -- How much kick things will have when hit
 -- Range
-ATT.RangeMin = 2 / ARC9.HUToM
-ATT.RangeMax = 25 / ARC9.HUToM
+ATT.RangeMinOverride = 3 / ARC9.HUToM
+ATT.RangeMaxOverride = 15 / ARC9.HUToM
 
 -- Physical Bullets
 ATT.PhysBulletMuzzleVelocity = 250 / ARC9.HUToM
@@ -478,7 +474,7 @@ ATT.DispersionSpreadAddRecoil = 0.035
 ATT.DispersionSpreadAddMove = 0.01
 ATT.DispersionSpreadAddMidAir = 0.05
 
-ATT.RecoilMult = 3
+ATT.RecoilAdd = 3
 ATT.RecoilAutoControlMult = 0.5
 
 ATT.Num = 12 -- How many bullets shot at once
@@ -549,8 +545,10 @@ ATT.ActivateElements = {"uplp_1911_irons_tac"}
 
 ARC9.LoadAttachment(ATT, "uplp_1911_slide_alyx")
 
-ATT.RecoilUpMult = 0.8
-ATT.RecoilSideMult = 1.25
+ATT.RangeMinAdd = 3 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.RecoilRandomUpMult = 1.12
+ATT.RecoilRandomSideMult = 1.12
 
 ---------- uplp_1911_comp
 
@@ -563,12 +561,9 @@ ATT.Icon = Material(iconfolder .. "mcomp.png", "mips smooth")
 ATT.Category = "uplp_1911_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilUpAdd = -0.5
-ATT.RecoilSideAdd = 0.4
-ATT.RecoilAutoControlMult = 1.25
-ATT.AimDownSightsTimeAdd = 0.05
-ATT.SpeedMultSights = 0.9
-ATT.RPMAdd = -30
+ATT.RecoilAutoControlMult = 1.1
+ATT.RecoilUpAdd = -0.3
+ATT.RecoilSideAdd = 0.45
 
 ARC9.LoadAttachment(ATT, "uplp_1911_comp")
 
@@ -583,11 +578,10 @@ ATT.Icon = Material(iconfolder .. "mbrake.png", "mips smooth")
 ATT.Category = "uplp_1911_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.SpreadAdd = -0.001
-ATT.SpreadAddRecoil = -0.003
-ATT.RecoilSideAdd = -0.25
-ATT.AimDownSightsTimeAdd = 0.03
+ATT.RecoilMult = 0.85
+ATT.AimDownSightsTimeAdd = 0.04
 ATT.SpeedMultSights = 0.95
+ATT.SpeedMultShooting = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_1911_mb")
 
@@ -602,11 +596,9 @@ ATT.Icon = Material(iconfolder .. "malyx.png", "mips smooth")
 ATT.Category = "uplp_1911_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.SpreadAdd = -0.001
-ATT.SpreadAddRecoil = -0.003
-ATT.RecoilSideAdd = -0.25
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SpeedMultSights = 0.95
+ATT.RPMAdd = -10
+ATT.RecoilRandomUpMult = 0.9
+ATT.RecoilRandomSideMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_1911_mb_alyx")
 
@@ -632,6 +624,7 @@ ATT.SprintToFireTimeAdd = 0.07
 ATT.SpreadAddHipFire = 0.003
 ATT.SpreadAddRecoil = -0.005
 ATT.SpeedMultSights = 0.85
+ATT.RecoilPerShotMultSights = 0.5
 
 ARC9.LoadAttachment(ATT, "uplp_1911_stock")
 
@@ -656,6 +649,7 @@ ATT.SprintToFireTimeAdd = 0.05
 ATT.SpreadAddHipFire = 0.001
 ATT.SpreadAddRecoil = -0.002
 ATT.SpeedMultSights = 0.9
+ATT.RecoilPerShotMultSights = 0.7
 
 ---------- uplp_1911_thompsongrip
 
@@ -710,13 +704,9 @@ ATT.ToggleStats = {
         LaserStrength = 6,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
-        -- Positives
-        SpreadMultHipFire = 0.75,
+        SpreadMultHipFire = 0.7,
         RecoilDissipationRateMult = 0.8,
         SpeedMultShooting = 0.80,
-
-        -- Negatives
-        -- AimDownSightsTimeMult = 1.2,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -729,14 +719,13 @@ ATT.SprintToFireTimeAdd = 0.04
 ATT.SpeedAdd = -0.02
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×70%",
 }
 
 ATT.CustomCons = {
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×80%",
     [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×80%",
 }
-
 
 
 ARC9.LoadAttachment(ATT, "uplp_1911_laser")

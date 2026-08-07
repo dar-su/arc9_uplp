@@ -38,6 +38,7 @@ SWEP.StandardPresets = {
     "[Rebel]XQAAAQCzAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmkmevSb+idjqmeC+6RALBkYThHAl/ZziP4a5Opzia/8fPJUnzOxjs9cLuyjSV83Ff903+c2mkhpRd/VVIWjPw2cQHL3hP/PAWitjs61Bfqwf0FLaL3vB02VUHTx+G",
     "[Auto]XQAAAQDhAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26HmkmevSb+idjqmeC+6RALBhiL33oqfwhipNAn/5oaKbjOXCwNFT8NK+oItjUHSl58geJkuo1CLv/A35qRV8X6lpF284OXqKYYXOS4OwMluVBVqUjLx61fVy7mFO3CS/xhgRJGRTumsus6E+OnMQ6lcszsR",
     "[Silverstrike]XQAAAQDaAQAAAAAAAAA9iIIiM7tupQCpjrtF9qJbeNZaSCEX4Y6O26Hms3ty03vQgryWZdZBf/3g4wizMHeZeiE4wHqMY9PRRQG4nMlk3/QaiDM2UOldxsdw+0VeWOErEMeMClxFQTZz1qa1PLxDPV44pc4+n6BhjW6gxIrem5DRS6s/05biktWvXgt9h/dM9iWoQIs=",
+    "[USMC]XQAAAQBrAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvLjTdSR47frAkuOSPG4PWJgI68KwY7OBiNtTLiFh71aIF4JG2eLRZ4yTVev/WwnDf5g9vzPMKAvHLsvpzMYvzEcRCkoGq7QFd1t2UufSvhpeqmh9jnHXQz4+EaUJq/ZhRXdS5Djn5tIMkZAABIazgIA",
 }
 
 ---- Muzzle Effects, Shell Effects, Camera
@@ -90,7 +91,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 30
-SWEP.DamageMin = 9
+SWEP.DamageMin = 10
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
@@ -161,7 +162,7 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.Spread = 0.0045
 SWEP.SpreadAddHipFire = 0.006
 
-SWEP.SpreadAddRecoil = 0.013
+SWEP.SpreadAddRecoil = 0.018
 SWEP.SpreadAddMove = 0.005
 SWEP.SpreadAddMidAir = 0.05
 
@@ -172,8 +173,8 @@ SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
 SWEP.RecoilDissipationRate = 4
-SWEP.RecoilResetTime = 0.015
-SWEP.RecoilPerShot = 1 / 3
+SWEP.RecoilResetTime = 0.02
+SWEP.RecoilPerShot = 1 / 4
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCapSights = 1

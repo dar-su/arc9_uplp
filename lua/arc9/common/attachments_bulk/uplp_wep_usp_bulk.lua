@@ -14,7 +14,7 @@ ATT.SortOrder = 1
 ATT.Icon = Material(iconfolder .. "compact.png", "mips smooth")
 
 ATT.RangeMaxAdd = -10 / ARC9.HUToM
-ATT.AimDownSightsTimeAdd = -0.07
+ATT.AimDownSightsTimeAdd = -0.05
 ATT.RecoilMult = 1.15
 ATT.SpreadAddHipFire = -0.0015
 ATT.RecoilPerShotMultHipFire = 0.8
