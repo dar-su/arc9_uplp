@@ -3893,6 +3893,10 @@ L["uplp_weapon_rpg7_manufacturer"] = "НПО «Базальт»"
 -- L["uplp_2011_int_jw.compactname"] = "Assassin"
 -- L["uplp_2011_int_jw.description"] = "Aftermarket internals for the M2K11 that improve accuracy and speed, at the cost of range."
 
+-- L["uplp_2011_int_double.printname"] = "Double Tap Internals"
+-- L["uplp_2011_int_double.compactname"] = "Double Tap"
+-- L["uplp_2011_int_double.description"] = "Aftermarket internals for the M2K11 that fires a rapid two round burst."
+
 ////// Magazines
 -- L["uplp_2011_mag_20.printname"] = "20-Round .45 ACP"
 -- L["uplp_2011_mag_20.compactname"] = "20R"
