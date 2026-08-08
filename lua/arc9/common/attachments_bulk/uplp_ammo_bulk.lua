@@ -326,7 +326,7 @@ ATT.PhysBulletGravityMult = 0.75
 -- Negatives
 ATT.SpreadMult = 1.75
 ATT.DamageMaxMult = 0.5
-ATT.DamageMinMult = 0.25
+ATT.DamageMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.25
 ATT.AlwaysPhysBulletOverride = true
 ATT.RPMMult = 0.9
@@ -376,9 +376,12 @@ ATT.Hook_BulletImpact = function(wep, data)
     -- volume check threshold is about as big as models/props_junk/trashdumpster02.mdl (the big blue dumpster)
     local dur = 0
     if ent:IsPlayer() then
-        dur = 5
+        dur = 3
     elseif ent:IsNPC() or ent:IsNextBot() then
-        dur = 15
+        -- burning will cause CC or even instant kill some NPCs so only burn if they're weak (or zombies)
+        if dontburn[data.tr.Entity:GetClass()] or ent:Health() / ent:GetMaxHealth() <= 0.6 then
+            dur = 10
+        end
     elseif ent:GetPhysicsObject():IsValid() then
         dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 0, 15)
     end
