@@ -594,7 +594,7 @@ L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Kompakt skenamonterad siktemodul gjord av LuminaFire Armaments designad för sidovapen som erbjuder ett lasersikte för användning i mörker."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nPatroner med lågt tryck som den har kan normalt sett inte laddas i halvautomatiska hagelbössor, men låt inte det hindra dig från att ha roligt."
+local shotgun_lp = "\n\nSpecialladdning orsakar otrolig spänning på vapnet och kan orsaka destruktiva konsekvenser efter utökad användning."
 
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM-Patroner"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
@@ -610,23 +610,23 @@ L["uplp_sg_shell_red.description"] = "Standard hagelpatroner laddade med medelst
 
 L["uplp_sg_shell_blue.printname"] = "Fågelskott Patroner"
 L["uplp_sg_shell_blue.compactname"] = "Fågelskott"
-L["uplp_sg_shell_blue.description"] = "Hagelpatroner användna för att jaga fåglar. Skjuter större antal mindre skott med större spridning så det ökar chansen att träffa mål."
+L["uplp_sg_shell_blue.description"] = "Hagelskott som används för att skjuta snabbrörande måltavlor, exempelvis fåglar eller drönare. Skjuter mindre hagel med högre antal och spridning."
 
 L["uplp_sg_shell_green.printname"] = "Brennekepatroner"
 L["uplp_sg_shell_green.compactname"] = "Brenneke"
-L["uplp_sg_shell_green.description"] = "Hagelpatroner som används för att jaga byten vid medeldistanser. Skjut en enda träffsäker kula."
+L["uplp_sg_shell_green.description"] = "Hagelskott som används för att jaga rovdjur på medelavstånd. Skjuter en enda bit hagel med hög skada som påverkas kraftigt av gravitation."
 
-L["uplp_sg_shell_black.printname"] = "Dubbla Brennekepatroner"
-L["uplp_sg_shell_black.compactname"] = "Brenneke x2"
-L["uplp_sg_shell_black.description"] = "Hagelpatroner laddade med två stora kulor. Mer stoppkraft än en enda kula, men mindre träffsäker."
+L["uplp_sg_shell_black.printname"] = "Drivspegel Brennekepatroner"
+L["uplp_sg_shell_black.compactname"] = "Drivspegel"
+L["uplp_sg_shell_black.description"] = "Drivspegelpatroner laddade med en enda formad projektil inlagd i en engångspatron. Mindre stoppkraft jämfört med brennekepatroner, men betydligt högre ballistikprestanda."
 
 L["uplp_sg_shell_orange.printname"] = "\"Dragon's Breath\"-Patroner"
-L["uplp_sg_shell_orange.compactname"] = "DB"
-L["uplp_sg_shell_orange.description"] = "Hagelpatroner fyllda med magnesium. Inte lika dödlig på träff men har chansen att tända fyr på mål." .. shotgun_lp
+L["uplp_sg_shell_orange.compactname"] = "Dragon"
+L["uplp_sg_shell_orange.description"] = "Hagelskott fylld med magnesiumpulver med möjlighet att tända fyr på måltavlor. Svaga projektiler med låg hastighet som lämnar en otrolig flamma av gnistor i dess kölvatten." .. shotgun_lp
 
 L["uplp_sg_shell_yellow.printname"] = "Explosiva Granatskott"
 L["uplp_sg_shell_yellow.compactname"] = "Granat"
-L["uplp_sg_shell_yellow.description"] = "Hagelpatroner laddade med en mindre explosiv granat. Spränger ett mindre område med granatsplitter." .. shotgun_lp
+L["uplp_sg_shell_yellow.description"] = "Hagelskott laddade med en mindre sprängladdning. Projektilen är långsam och tung, men orsakar en sprängning med låg radie vid kontakt." .. shotgun_lp
 
 /////////// Underbarrel Weapons
 L["uplp_ubgl_m203_rail.printname"] = "Modell 40 Granattillsats"
@@ -3709,6 +3709,12 @@ L["uplp_rpg7_rocket_shovel.description"] = "En bondes bästa vän, och din målt
 -- L["uplp_weapon_1911_real"] = "M1911"
 
 -- L["uplp_weapon_1911_manufacturer"] = "Colt Manufacturing Company"
+
+-- L["uplp_weapon_1911_alyx"] = "RRP 1191" -- Russell's Resistance Pistol, 1191.
+-- L["uplp_weapon_1911_sg"] = "SPP-12" -- Survival Pocket Pistol 12
+-- L["uplp_weapon_1911_hardballer"] = "Silverstrike .45"
+-- L["uplp_weapon_1911_auto"] = "ASP 1911-A" -- (-Automatic)
+-- L["uplp_weapon_1911_usmc"] = "ASP \"Ranger\"" -- "Rangers lead the way."
 
 /////////// Attachments
 ////// Frame & Internals

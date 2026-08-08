@@ -594,7 +594,7 @@ L["uplp_tac_laser_pistol.compactname"] = "L. LuminaFire"
 L["uplp_tac_laser_pistol.description"] = "Módulo de puntería compacto montado en raíl fabricado por LuminaFire Armaments y diseñado para pistolas que proporciona una mira láser para su uso en la oscuridad."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nLos cartuchos de baja presión como éste no se pueden utilizar normalmente en escopetas de carga automática, pero no deje que eso le impida divertirse."
+-- local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
 
 L["uplp_ar15_ammo_458.printname"] = "Munición .458 SOCOM"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
@@ -610,23 +610,23 @@ L["uplp_sg_shell_red.description"] = "Cartuchos estándar que cargan perdigones 
 
 L["uplp_sg_shell_blue.printname"] = "Cartucho Birdshot"
 L["uplp_sg_shell_blue.compactname"] = "Birdshot"
-L["uplp_sg_shell_blue.description"] = "Cartucho utilizado para cazar aves. Dispara perdigones más pequeños en mayor cantidad y dispersión, por lo que tiene más probabilidades de dar en el blanco."
+-- L["uplp_sg_shell_blue.description"] = "Shotshells used to shoot fast moving targets like birds and drones. Fires smaller pellets at a greater quantity and spread."
 
 L["uplp_sg_shell_green.printname"] = "Cartuchos Slug"
 L["uplp_sg_shell_green.compactname"] = "Slug"
-L["uplp_sg_shell_green.description"] = "Cartuchos utilizados para cazar presas a media distancia. Dispara un único perdigón preciso."
+-- L["uplp_sg_shell_green.description"] = "Shotshells used to hunt prey at medium distances. Fires a single high-damage pellet that is heavily affected by gravity."
 
-L["uplp_sg_shell_black.printname"] = "Cartuchos Double Slug"
-L["uplp_sg_shell_black.compactname"] = "Slug x2"
-L["uplp_sg_shell_black.description"] = "Cartuchos que cargan dos perdigones grandes. Más poder de parada que un solo proyectil, pero menos preciso."
+-- L["uplp_sg_shell_black.printname"] = "Sabot Slug Rounds"
+-- L["uplp_sg_shell_black.compactname"] = "Sabot"
+-- L["uplp_sg_shell_black.description"] = "Shotshells loading a single shaped projectile encased in a disposable shell. Less stopping power compared to slugs, but has far better ballistics performance."
 
 L["uplp_sg_shell_orange.printname"] = "Cartuchos Aliento de Dragón"
-L["uplp_sg_shell_orange.compactname"] = "AD"
-L["uplp_sg_shell_orange.description"] = "Proyectiles rellenos de magnesio. No es muy letal al impactar, pero puede incendiar objetivos." .. shotgun_lp
+L["uplp_sg_shell_orange.compactname"] = "Dragón"
+-- L["uplp_sg_shell_orange.description"] = "Shotshells filled with magnesium powder, capable of igniting targets. The projectiles are weak and travels slowly, leaving an impressive blaze of sparks in their wake." .. shotgun_lp
 
 L["uplp_sg_shell_yellow.printname"] = "Cartuchos Slug Explosivos"
 L["uplp_sg_shell_yellow.compactname"] = "Slug Exp."
-L["uplp_sg_shell_yellow.description"] = "Proyectiles que cargan una pequeña cabeza explosiva. Explota un área pequeña con metralla." .. shotgun_lp
+-- L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. The projectile is slow and heavy, but explodes in a small radius on impact." .. shotgun_lp
 
 /////////// Underbarrel Weapons
 L["uplp_ubgl_m203_rail.printname"] = "Lanzagranadas Modelo 40"
@@ -3698,6 +3698,12 @@ local sr25brll = {
 -- L["uplp_weapon_1911_real"] = "M1911"
 
 -- L["uplp_weapon_1911_manufacturer"] = "Colt Manufacturing Company"
+
+-- L["uplp_weapon_1911_alyx"] = "RRP 1191" -- Russell's Resistance Pistol, 1191.
+-- L["uplp_weapon_1911_sg"] = "SPP-12" -- Survival Pocket Pistol 12
+-- L["uplp_weapon_1911_hardballer"] = "Silverstrike .45"
+-- L["uplp_weapon_1911_auto"] = "ASP 1911-A" -- (-Automatic)
+-- L["uplp_weapon_1911_usmc"] = "ASP \"Ranger\"" -- "Rangers lead the way."
 
 /////////// Attachments
 ////// Frame & Internals

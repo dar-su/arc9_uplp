@@ -599,7 +599,7 @@ L["uplp_tac_laser_pistol.compactname"] = "LuminaF L."
 L["uplp_tac_laser_pistol.description"] = "Компактный навесной лазерный целеуказатель для пистолетов производства LuminaFire Armaments."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nНизконапорные патроны обычно нельзя использовать в самозарядных дробовиках, но это не должно мешать вашему веселью."
+-- local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
 
 L["uplp_ar15_ammo_458.printname"] = "Патроны .458 SOCOM"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
@@ -615,23 +615,23 @@ L["uplp_sg_shell_red.description"] = "Стандартные патроны с �
 
 L["uplp_sg_shell_blue.printname"] = "Мелкая дробь"
 L["uplp_sg_shell_blue.compactname"] = "Дробь"
-L["uplp_sg_shell_blue.description"] = "Патроны для охоты на птиц. Выстреливает мелкую дробь в большом количестве и с широким разбросом, повышая шансы попадания."
+-- L["uplp_sg_shell_blue.description"] = "Shotshells used to shoot fast moving targets like birds and drones. Fires smaller pellets at a greater quantity and spread."
 
 L["uplp_sg_shell_green.printname"] = "Патроны с пулей"
 L["uplp_sg_shell_green.compactname"] = "Пуля"
-L["uplp_sg_shell_green.description"] = "Патроны для охоты на средних дистанциях. Выстреливает единичный точный снаряд."
+-- L["uplp_sg_shell_green.description"] = "Shotshells used to hunt prey at medium distances. Fires a single high-damage pellet that is heavily affected by gravity."
 
-L["uplp_sg_shell_black.printname"] = "Патроны с двумя пулями"
-L["uplp_sg_shell_black.compactname"] = "Пуля x2"
-L["uplp_sg_shell_black.description"] = "Патроны с двумя крупными снарядами. Больше останавливающей силы, чем у одной пули, но ниже точность."
+-- L["uplp_sg_shell_black.printname"] = "Sabot Slug Rounds"
+-- L["uplp_sg_shell_black.compactname"] = "Sabot"
+-- L["uplp_sg_shell_black.description"] = "Shotshells loading a single shaped projectile encased in a disposable shell. Less stopping power compared to slugs, but has far better ballistics performance."
 
 L["uplp_sg_shell_orange.printname"] = "Патроны \"Дыхание Дракона\""
-L["uplp_sg_shell_orange.compactname"] = "DB"
-L["uplp_sg_shell_orange.description"] = "Патроны с наполнением из магния. Не смертельны при попадании, но могут поджечь цели." .. shotgun_lp
+L["uplp_sg_shell_orange.compactname"] = "Дракон"
+-- L["uplp_sg_shell_orange.description"] = "Shotshells filled with magnesium powder, capable of igniting targets. The projectiles are weak and travels slowly, leaving an impressive blaze of sparks in their wake." .. shotgun_lp
 
 L["uplp_sg_shell_yellow.printname"] = "Патроны со взрывной пулей"
 L["uplp_sg_shell_yellow.compactname"] = "Взр. Пуля"
-L["uplp_sg_shell_yellow.description"] = "Патроны с малым взрывным зарядом. Создает взрыв с осколками в небольшом радиусе." .. shotgun_lp
+-- L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. The projectile is slow and heavy, but explodes in a small radius on impact." .. shotgun_lp
 
 /////////// Underbarrel Weapons
 L["uplp_ubgl_m203_rail.printname"] = "Гранатомёт Model 40"
@@ -3735,6 +3735,12 @@ L["uplp_weapon_rpg7_manufacturer"] = "НПО «Базальт»"
 -- L["uplp_weapon_1911_real"] = "M1911"
 
 -- L["uplp_weapon_1911_manufacturer"] = "Colt Manufacturing Company"
+
+-- L["uplp_weapon_1911_alyx"] = "RRP 1191" -- Russell's Resistance Pistol, 1191.
+-- L["uplp_weapon_1911_sg"] = "SPP-12" -- Survival Pocket Pistol 12
+-- L["uplp_weapon_1911_hardballer"] = "Silverstrike .45"
+-- L["uplp_weapon_1911_auto"] = "ASP 1911-A" -- (-Automatic)
+-- L["uplp_weapon_1911_usmc"] = "ASP \"Ranger\"" -- "Rangers lead the way."
 
 /////////// Attachments
 ////// Frame & Internals

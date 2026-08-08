@@ -3766,11 +3766,11 @@ L["uplp_weapon_1911_real"] = "Colt M1911"
 
 L["uplp_weapon_1911_manufacturer"] = "Colt Manufacturing Company"
 
-L["uplp_weapon_1911_alyx"] = "LC 1911" -- or CMB?
-L["uplp_weapon_1911_sg"] = "ASP 1911 12gauge or something"
+L["uplp_weapon_1911_alyx"] = "RRP 1191" -- Russell's Resistance Pistol, 1191.
+L["uplp_weapon_1911_sg"] = "SPP-12" -- Survival Pocket Pistol 12
 L["uplp_weapon_1911_hardballer"] = "Silverstrike .45"
-L["uplp_weapon_1911_auto"] = "ASP 1911 Auto"
-L["uplp_weapon_1911_usmc"] = "USMC MEW" -- its like MEU(SOC) irl. maybe Mew-mew or 1985 idkk
+L["uplp_weapon_1911_auto"] = "ASP 1911-A" -- (-Automatic)
+L["uplp_weapon_1911_usmc"] = "ASP \"Ranger\"" -- "Rangers lead the way."
 
 /////////// Attachments
 ////// Frame & Internals
