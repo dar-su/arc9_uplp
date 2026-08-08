@@ -8,7 +8,7 @@ list.Set("ContentCategoryIcons", "ARC9 - Poly Arms Attachments", "uplp_16.png")
 -- And by "we" I mean me - 8Z
 ARC9.UPLP_ShotgunSpreadModifier = 1.25
 ARC9.UPLP_ShotgunDamageMaxModifier = 2
-ARC9.UPLP_ShotgunDamageMinModifier = 1
+ARC9.UPLP_ShotgunDamageMinModifier = 1 -- if you change this, you should also change slug/sabot min damage!
 
 ARC9.UPLP_ShotgunFalloffFunc = function(self, data)
     local d = self:GetDamageDeltaAtRange(data.range)

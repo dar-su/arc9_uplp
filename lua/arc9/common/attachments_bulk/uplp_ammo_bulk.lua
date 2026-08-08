@@ -236,11 +236,11 @@ ATT.SpreadMult = 0.25
 ATT.HeadshotDamageAdd = 0.5
 ATT.DispersionSpreadAddRecoil = -0.015
 ATT.PenetrationAdd = 10
+ATT.DamageMinMult = 1.2
 
 -- Negatives
 ATT.NumOverride = 1
 ATT.DamageMaxMult = 0.5
-ATT.DamageMinMult = 0.8
 ATT.RecoilDissipationRateMult = 0.75
 ATT.HullSizeOverride = 0
 ATT.PhysBulletGravityMult = 2.5
@@ -284,7 +284,7 @@ ATT.PenetrationAdd = 25
 -- Negatives
 ATT.NumOverride = 1
 ATT.DamageMaxMult = 0.4
-ATT.DamageMinMult = 0.7
+--ATT.DamageMinMult = 0.9
 ATT.HullSizeOverride = 0
 ATT.LegDamageMult = 0.75
 ATT.DispersionSpreadAddHipFire = 0.015
