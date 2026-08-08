@@ -144,7 +144,8 @@ ATT.RPMMult = 1.5
 ATT.SpreadAdd = 0.002
 ATT.RecoilMultRecoil = 2
 ATT.RecoilRandomSideMult = 1.25
-ATT.PostBurstDelay = 0.09
+ATT.PostBurstDelay = 0.12
+ATT.RecoilResetTimeAdd = 0.03
 ATT.RunawayBurst = true
 
 ATT.Firemodes = {
