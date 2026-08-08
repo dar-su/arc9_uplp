@@ -24,6 +24,7 @@
 	[/list]
 	[*] Updated plenty of firing and reloading SFX
 	[*] Headshots now deal up to 50% more damage, depending on the weapon
+	[*] Debuffed attachments that enabled automatic/burst fire on pistols
 	[*] PM92: Tweaked reload animations
 	[*] MRD57: Reduced reloading speed by ~10%
 	[*] Fixed various bugs

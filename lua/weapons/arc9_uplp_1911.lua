@@ -1024,8 +1024,6 @@ SWEP.HookP_NameChange = function(self, name)
 
     if att["uplp_1911_grip_alyx"] and att["uplp_1911_slide_alyx"] and att["uplp_1911_mb_alyx"] then
         name = ARC9:GetPhrase("uplp_weapon_1911_alyx")
-    elseif att["uplp_1911_frame_auto"] then
-        name = ARC9:GetPhrase("uplp_weapon_1911_auto")
     elseif att["uplp_1911_slide_hardballer"] and att["uplp_1911_frame_silver"] then
         name = ARC9:GetPhrase("uplp_weapon_1911_hardballer")
     elseif att["uplp_1911_slide_shotgun"] then
@@ -1034,5 +1032,9 @@ SWEP.HookP_NameChange = function(self, name)
         name = ARC9:GetPhrase("uplp_weapon_1911_usmc")
     end
 
+    if att["uplp_1911_frame_auto"] then
+        name = name .. ARC9:GetPhrase("uplp_weapon_1911_auto")
+    end
+    
     return name
 end

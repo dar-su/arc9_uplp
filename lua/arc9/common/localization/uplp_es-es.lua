@@ -3702,7 +3702,7 @@ local sr25brll = {
 -- L["uplp_weapon_1911_alyx"] = "RRP 1191" -- Russell's Resistance Pistol, 1191.
 -- L["uplp_weapon_1911_sg"] = "SPP-12" -- Survival Pocket Pistol 12
 -- L["uplp_weapon_1911_hardballer"] = "Silverstrike .45"
--- L["uplp_weapon_1911_auto"] = "ASP 1911-A" -- (-Automatic)
+-- L["uplp_weapon_1911_auto"] = "-A" -- (-Automatic)
 -- L["uplp_weapon_1911_usmc"] = "ASP \"Ranger\"" -- "Rangers lead the way."
 
 /////////// Attachments

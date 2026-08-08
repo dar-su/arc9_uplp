@@ -63,6 +63,9 @@ ATT.SpreadAddHipFire = 0.003
 ATT.SpreadAddRecoil = 0.003
 ATT.SpreadAdd = 0.0075
 
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 0.75
+
 -- ATT.RecoilAutoControlMult = 1.25
 -- ATT.RecoilAutoControlMultShooting = 0.2
 -- ATT.DamageMax = 24 -- balanced >w<

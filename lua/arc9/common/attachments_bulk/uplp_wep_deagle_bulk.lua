@@ -125,6 +125,9 @@ ATT.SpreadAddHipFire = 0.0015
 ATT.SpreadAddRecoil = 0.002
 ATT.SpreadAdd = 0.0075
 
+ATT.DamageMaxMult = 0.75
+ATT.DamageMinMult = 0.75
+
 ATT.UPLP_Class = "mpist"
 
 ARC9.LoadAttachment(ATT, "uplp_deag_trig_sport")

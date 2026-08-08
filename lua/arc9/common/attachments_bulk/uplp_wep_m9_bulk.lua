@@ -27,8 +27,11 @@ ATT.RHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(-11.65, -1.918, 2.62)
 
-ATT.DamageMax = 25 -- balanced >w<
-ATT.DamageMin = 15
+-- ATT.DamageMax = 25 -- balanced >w<
+-- ATT.DamageMin = 15
+
+ATT.DamageMaxMult = 0.78
+ATT.DamageMinMult = 0.78
 
 ATT.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
@@ -183,8 +186,11 @@ ATT.CantPeek = true
 ATT.RunawayBurst = true
 ATT.ShootWhileSprint = true
 
-ATT.DamageMax = 25 -- balanced >w<
-ATT.DamageMin = 15
+-- ATT.DamageMax = 25 -- balanced >w<
+-- ATT.DamageMin = 15
+
+ATT.DamageMaxMult = 0.78
+ATT.DamageMinMult = 0.78
 
 ATT.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
