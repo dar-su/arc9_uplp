@@ -149,7 +149,7 @@ ATT.RecoilResetTimeAdd = 0.03
 ATT.RunawayBurst = true
 
 ATT.Firemodes = {
-    {Mode = 2},
+    { Mode = 2, PrintName = ARC9:GetPhrase("uplp_firemode_binary") },
 }
 
 ATT.HookP_BlockFire = function(wep)

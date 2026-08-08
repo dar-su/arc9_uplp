@@ -4,7 +4,7 @@
 	[*] Added the [b]ASP 1911[/b], an well-known service pistol that went through two world wars! Can be converted to plenty of iconic variants too
 	[*] Added the [b]LA M2K11[/b], a modernized version of the aforementioned service pistol
 	
-	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified and few new attachments!
+	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified, few new attachments and slight rebalance!
 	
 	[*] Added new [b]Damage Multiplier[/b] settings inside the ARC9 Settings menu
 	[list]
@@ -13,8 +13,15 @@
 	[/list]
 [/list]
 
+
 [h1]Changed content[/h1]
 [list]
+	[*] Shotguns rebalanced, once again lol
+	[list]
+		[*] More damage, less spread
+		[*] New Sabot Slug replaces Double Slug
+		[*] Cooler effects for Dragon Breath and Explosive Slugs
+	[/list]
 	[*] Updated plenty of firing and reloading SFX
 	[*] Headshots now deal up to 50% more damage, depending on the weapon
 	[*] PM92: Tweaked reload animations

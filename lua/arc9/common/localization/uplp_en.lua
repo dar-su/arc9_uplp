@@ -195,6 +195,7 @@ L["uplp_stat_scopedsway"] = "Scope Sway" // Since the stat is on the sight and n
 //////////////////// Firemodes
 L["uplp_firemode_pump"] = "PUMP"
 L["uplp_firemode_both"] = "BOTH"
+L["uplp_firemode_binary"] = "BINARY"
 
 //////////////////// Settings
 L["setting.uplp"] = "Addon - PolyArms"
@@ -3922,9 +3923,9 @@ L["uplp_2011_int_jw.printname"] = "Assassin's Internals"
 L["uplp_2011_int_jw.compactname"] = "Assassin"
 L["uplp_2011_int_jw.description"] = "Aftermarket internals for the M2K11 that improve accuracy and speed, at the cost of range."
 
-L["uplp_2011_int_double.printname"] = "Double Tap Internals"
-L["uplp_2011_int_double.compactname"] = "Double Tap"
-L["uplp_2011_int_double.description"] = "Aftermarket internals for the M2K11 that fires once on trigger press and once on release, allowing for two rapid shots. Sustained burst becomes very unstable."
+L["uplp_2011_int_double.printname"] = "Binary Trigger"
+L["uplp_2011_int_double.compactname"] = "Binary Trigger"
+L["uplp_2011_int_double.description"] = "Aftermarket internals with the Binary Trigger for the M2K11 that fires once on trigger press and once on release, allowing for two rapid shots. Sustained burst becomes very unstable."
 
 ////// Magazines
 L["uplp_2011_mag_20.printname"] = "20-Round .45 ACP"
