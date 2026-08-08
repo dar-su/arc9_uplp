@@ -20,8 +20,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mp7_stock_folded"}
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.03
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.04
 ATT.SpeedMultSights = 1.08
 
 -- Negatives
@@ -82,8 +82,13 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) 
 
 
 -- AR15 stocks reduce too much recoil so this is to counterbalance them
-ATT.RecoilAdd = 0.25
-ATT.SwayAddSights = 0.5
+ATT.RecoilAdd = 0.3
+ATT.RecoilAutoControlMult = 0.7
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.04
+ATT.SpeedMultSights = 1.1
+ATT.SpeedAdd = 0.02
 
 ATT.Attachments = {
     {
