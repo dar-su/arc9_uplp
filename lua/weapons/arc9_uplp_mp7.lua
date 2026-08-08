@@ -118,7 +118,7 @@ SWEP.PhysBulletDrag = 1.5
 SWEP.Ammo = "pistol" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
-SWEP.ClipSize = 35
+SWEP.ClipSize = 40
 
 -- Recoil
 SWEP.Recoil = 1

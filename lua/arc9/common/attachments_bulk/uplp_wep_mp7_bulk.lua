@@ -222,7 +222,7 @@ ATT.ActivateElements = {"uplp_no_backup"}
 ATT.Category = "uplp_mp7_receiver"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ClipSizeMult = 1.274
+ATT.ClipSizeAdd = 5
 ATT.RecoilAdd = -0.15
 ATT.SpreadAddRecoil = -0.004
 ATT.SpreadAddHipFire = -0.002
