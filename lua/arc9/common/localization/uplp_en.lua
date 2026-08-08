@@ -3762,9 +3762,15 @@ L["uplp_rpg7_rocket_shovel.description"] = "A farmer's best friend, and your tar
 L["uplp_weapon_1911"] = "ASP 1911"
 L["uplp_weapon_1911_desc"] = "The ASP 1911 (\"American Service Pistol\", Model of 1911) is a rugged, single-action, semi-automatic handgun chambered in .45 ACP, renowned for its reliability, stopping power, and ergonomic design. Adopted as a standard military sidearm in 1911, the ASP 1911 earned a legendary reputation through decades of service and remains one of the most influential pistol designs ever created."
 
-L["uplp_weapon_1911_real"] = "M1911"
+L["uplp_weapon_1911_real"] = "Colt M1911"
 
 L["uplp_weapon_1911_manufacturer"] = "Colt Manufacturing Company"
+
+L["uplp_weapon_1911_alyx"] = "LC 1911" -- or CMB?
+L["uplp_weapon_1911_sg"] = "ASP 1911 12gauge or something"
+L["uplp_weapon_1911_hardballer"] = "Silverstrike .45"
+L["uplp_weapon_1911_auto"] = "ASP 1911 Auto"
+L["uplp_weapon_1911_usmc"] = "USMC MEW" -- its like MEU(SOC) irl. maybe Mew-mew or 1985 idkk
 
 /////////// Attachments
 ////// Frame & Internals

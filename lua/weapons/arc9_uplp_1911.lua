@@ -1018,3 +1018,21 @@ SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
         ent:SetPoseParameter("magspring", math.Clamp(1.2 - (2 / 15) * loadedronds, 0, 1))
     end
 end
+
+SWEP.HookP_NameChange = function(self, name)
+    local att = self:GetElements()
+
+    if att["uplp_1911_grip_alyx"] and att["uplp_1911_slide_alyx"] and att["uplp_1911_mb_alyx"] then
+        name = ARC9:GetPhrase("uplp_weapon_1911_alyx")
+    elseif att["uplp_1911_frame_auto"] then
+        name = ARC9:GetPhrase("uplp_weapon_1911_auto")
+    elseif att["uplp_1911_slide_hardballer"] and att["uplp_1911_frame_silver"] then
+        name = ARC9:GetPhrase("uplp_weapon_1911_hardballer")
+    elseif att["uplp_1911_slide_shotgun"] then
+        name = ARC9:GetPhrase("uplp_weapon_1911_sg")
+    elseif (att["uplp_1911_slide_m45a1"] or att["uplp_1911_slide_m45a1fde"]) and (att["uplp_1911_frame_m45a1"] or att["uplp_1911_frame_m45a1fde"])  then
+        name = ARC9:GetPhrase("uplp_weapon_1911_usmc")
+    end
+
+    return name
+end
