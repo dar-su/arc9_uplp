@@ -262,6 +262,20 @@ ATT.SpeedMultSights = 0.94
 ATT.AimDownSightsTimeAdd = 0.03
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
+local pathRZ = ")uplp_rz/1911/"
+
+ATT.HookP_TranslateSound = function(self, data) -- example
+    if data.sound == pathRZ .. "magout.ogg" then
+        data.sound = pathRZ .. "hlvr/pistol_foley_clip_release_01.wav"
+    elseif data.sound == pathRZ .. "magin.ogg" then
+        data.sound = pathRZ .. "hlvr/pistol_foley_clip_insert_01.wav"
+    elseif data.sound == pathRZ .. "sliderel2.ogg" then
+        data.sound = pathRZ .. "hlvr/pistol_foley_slide_lock_01.wav"
+    end
+
+    return data
+end
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_alyx")
 
 
