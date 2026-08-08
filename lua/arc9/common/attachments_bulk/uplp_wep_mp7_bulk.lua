@@ -217,6 +217,14 @@ ATT.ActivateElements = {"uplp_no_backup"}
 ATT.Category = "uplp_mp7_receiver"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ClipSizeMult = 1.274
+ATT.RecoilAdd = -0.15
+ATT.SpreadAddRecoil = -0.004
+ATT.SpreadAddHipFire = -0.002
+
+ATT.SpreadAdd = 0.003
+ATT.RPMMult = 700 / 950
+
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_rec_proto")
 
@@ -236,22 +244,20 @@ ATT.MuzzleEffectQCA = 5
 
 
 -- Positives
-ATT.DamageMinAdd = 1
-ATT.RecoilAdd = -0.15
-ATT.RecoilPerShot = 1 / 8
+ATT.RecoilPerShot = 1 / 7
 ATT.SpreadAdd = -0.002
 ATT.SpreadAddRecoil = -0.002
 ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.RangeMinAdd = 2 / ARC9.HUToM
 
 -- Negatives
-ATT.RPMMult = 0.9
-ATT.SpreadAddHipFire = 0.006
+ATT.RPMMult = 850 / 950
+ATT.SpreadAddHipFire = 0.007
 ATT.SpreadAddMove = 0.002
-ATT.SprintToFireTimeAdd = 0.04
-ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.07
 ATT.SwayMultSights = 1.5
 ATT.SpeedMultSights = 0.92
-ATT.SpeedAdd = -0.01
 
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_rec_long")
