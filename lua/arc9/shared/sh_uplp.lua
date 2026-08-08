@@ -7,8 +7,8 @@ list.Set("ContentCategoryIcons", "ARC9 - Poly Arms Attachments", "uplp_16.png")
 -- Because I know we'll be tuning shotguns until the end of time
 -- And by "we" I mean me - 8Z
 ARC9.UPLP_ShotgunSpreadModifier = 1.25
-ARC9.UPLP_ShotgunDamageMaxModifier = 2
-ARC9.UPLP_ShotgunDamageMinModifier = 1 -- if you change this, you should also change slug/sabot min damage!
+ARC9.UPLP_ShotgunDamageMaxModifier = 1.25
+ARC9.UPLP_ShotgunDamageMinModifier = 0.75 -- if you change this, you should also change slug/sabot min damage!
 
 ARC9.UPLP_ShotgunFalloffFunc = function(self, data)
     local d = self:GetDamageDeltaAtRange(data.range)
@@ -38,6 +38,7 @@ local conVars = {
 
     {name = "uplp_mult_explosive", default = "1", replicated = true },
     {name = "uplp_mult_melee", default = "1", replicated = true },
+    {name = "uplp_enablehull", default = "1", replicated = true },
 }
 
 for _, var in ipairs(conVars) do
@@ -79,6 +80,7 @@ if CLIENT then
             { sv = true, type = "slider", text = "setting.uplp_mult_melee.title", convar = "uplp_mult_melee", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_melee.desc" },
             { sv = true, type = "slider", text = "setting.uplp_mult_explosive.title", convar = "uplp_mult_explosive", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_explosive.desc" },
             { sv = true, type = "bool", text = "setting.uplp_overheat.title", desc = "setting.uplp_overheat.desc", convar = "mod_overheat" },
+            { sv = true, type = "bool", text = "setting.uplp_enablehull.title", desc = "setting.uplp_enablehull.desc", convar = "uplp_enablehull" },
         }
 
         table.insert(ARC9.SettingsTable, 337, uplpsettings)

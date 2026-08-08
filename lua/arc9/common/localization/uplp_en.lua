@@ -229,6 +229,9 @@ L["setting.uplp_mult_explosive.desc"] = "Affects the damage on all Grenades and 
 L["setting.uplp_overheat.title"] = "Enable Suppressed Overheating"
 L["setting.uplp_overheat.desc"] = "When enabled, firing suppressed weapons will overheat the suppressor, which in turn reduces weapon effectiveness.\n\nAlso enables the overheat mechanic for other weapon packs."
 
+L["setting.uplp_enablehull.title"] = "Enable Hull Traces for Shotguns"
+L["setting.uplp_enablehull.desc"] = "When enabled, Moka please make good desc. enabled = sorta aim assist, shooting in bounding box of enemy will still register shot as sucessful. off = more hardcore, pellets are thin traces."
+
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments

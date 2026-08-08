@@ -439,15 +439,19 @@ ATT.ShellVelocity = -0.7
 ATT.ShellAngleVelocity = 0.15
 ATT.ShellSmoke = false
 ATT.ShellSounds = ARC9.ShotgunShellSoundsTable
-ATT.DamageMax = 132
-ATT.DamageMin = 48
+ATT.DamageMax = 90 * ARC9.UPLP_ShotgunDamageMaxModifier
+ATT.DamageMin = 40 * ARC9.UPLP_ShotgunDamageMaxModifier
 ATT.DistributeDamage = true
 ATT.HeadshotDamage = 1
-ATT.DamageType = DMG_BULLET + DMG_BUCKSHOT
+ATT.DamageType = DMG_BUCKSHOT
 ATT.HullSize = 1
+local hullcvar = GetConVar("arc9_uplp_enablehull")
+ATT.HullSizeHook = function(self, val) if !hullcvar:GetBool() then return 0 end end
 
 -- edited to be square root instead of quarter root
+
 ATT.CurvedDamageScaling = true
+ATT.Hook_GetDamageAtRange = ARC9.UPLP_ShotgunFalloffFunc
 
 ATT.SweetSpot = false
 ATT.BodyDamageMults = {
@@ -477,7 +481,7 @@ ATT.Ammo = "buckshot" -- What ammo type this gun uses.
 -- Accuracy and Spread
 ATT.UseDispersion = true
 
-ATT.Spread = 0.025
+ATT.Spread = 0.025 * ARC9.UPLP_ShotgunSpreadModifier
 ATT.SpreadAddMove = -0.005
 ATT.SpreadAddMidAir = -0.05
 

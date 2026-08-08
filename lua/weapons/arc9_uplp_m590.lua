@@ -96,6 +96,8 @@ SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = DMG_BUCKSHOT
 SWEP.HullSize = 1
+local hullcvar = GetConVar("arc9_uplp_enablehull")
+SWEP.HullSizeHook = function(self, val) if !hullcvar:GetBool() then return 0 end end
 
 SWEP.CurvedDamageScaling = true
 SWEP.Hook_GetDamageAtRange = ARC9.UPLP_ShotgunFalloffFunc
@@ -108,7 +110,7 @@ SWEP.SweetSpot = false
 -- SWEP.SweetSpotPeak = 2 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1, -- When using HullSize, body damage mults cannot apply!
+    [HITGROUP_HEAD] = 1.5, -- When using HullSize, body damage mults cannot apply!
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
