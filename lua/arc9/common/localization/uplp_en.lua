@@ -3924,7 +3924,7 @@ L["uplp_2011_int_jw.description"] = "Aftermarket internals for the M2K11 that im
 
 L["uplp_2011_int_double.printname"] = "Double Tap Internals"
 L["uplp_2011_int_double.compactname"] = "Double Tap"
-L["uplp_2011_int_double.description"] = "Aftermarket internals for the M2K11 that fires a rapid two round burst."
+L["uplp_2011_int_double.description"] = "Aftermarket internals for the M2K11 that fires once on trigger press and once on release, allowing for two rapid shots. Sustained burst becomes very unstable."
 
 ////// Magazines
 L["uplp_2011_mag_20.printname"] = "20-Round .45 ACP"

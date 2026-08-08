@@ -140,18 +140,21 @@ ATT.Icon = Material(iconfolder .. "intjw.png", "mips smooth")
 ATT.Category = "uplp_2011_int"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RPMMult = 2.5
-ATT.RunawayBurst = true
-ATT.PostBurstDelay = 0.15
-ATT.RecoilPerShotMultHipFire = 0.5
-ATT.RecoilRandomUpMult = 1.5
+ATT.RPMMult = 1.5
+ATT.SpreadAdd = 0.002
+ATT.RecoilMultRecoil = 2
 ATT.RecoilRandomSideMult = 1.25
+ATT.PostBurstDelay = 0.09
+ATT.RunawayBurst = true
 
 ATT.Firemodes = {
-    {
-        Mode = 2,
-    }
+    {Mode = 2},
 }
+
+ATT.HookP_BlockFire = function(wep)
+    local ply = wep:GetOwner()
+    if wep:GetBurstCount() > 0 and ply:IsPlayer() and ply:KeyDown(IN_ATTACK) then return true end
+end
 
 ARC9.LoadAttachment(ATT, "uplp_2011_int_double")
 
