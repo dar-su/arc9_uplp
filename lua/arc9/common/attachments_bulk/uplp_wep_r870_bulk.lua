@@ -18,8 +18,8 @@ ATT.SortOrder = 3
 
 -- Positives
 ATT.CycleTimeMult = 0.9
-ATT.DispersionSpreadAddHipFire = -0.01
-ATT.DispersionSpreadAddMove = -0.01
+ATT.DispersionSpreadAddHipFire = -0.006
+ATT.DispersionSpreadAddMove = -0.006
 ATT.AimDownSightsTimeAdd = -0.12
 ATT.SprintToFireTimeAdd = -0.1
 ATT.SpeedAdd = 0.1
@@ -99,11 +99,13 @@ ATT.SpreadAdd = -0.015
 ATT.RecoilUpMult = 0.667
 
 -- Negatives
-ATT.CycleTimeMult = 1.1
-ATT.DispersionSpreadAddHipFire = 0.03
-ATT.AimDownSightsTimeAdd = 0.05
-ATT.SprintToFireTimeAdd = 0.03
+ATT.CycleTimeMult = 1.15
+ATT.DispersionSpreadAddHipFire = 0.02
+ATT.DispersionSpreadAddMove = 0.005
+ATT.AimDownSightsTimeAdd = 0.07
+ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAddSights = -0.1
+ATT.SpeedAdd = -0.02
 
 -- Negatives
 ATT.ClipSize = 5
@@ -150,7 +152,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 5
 
 -- Positives
-ATT.DispersionSpreadAddHipFire = -0.006
+ATT.DispersionSpreadAddHipFire = -0.003
+ATT.DispersionSpreadAddMove = -0.003
 ATT.AimDownSightsTimeAdd = -0.06
 ATT.SprintToFireTimeAdd = -0.06
 ATT.SpeedAdd = 0.06
@@ -202,14 +205,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SortOrder = 8
 
 -- Positives
-ATT.RangeMaxMult = 1.25
 ATT.ClipSize = 8
-ATT.SpreadAdd = -0.008
-ATT.RecoilUpMult = 0.75
-ATT.RecoilSideMult = 0.85
+ATT.SpreadAdd = -0.005
+ATT.RecoilUpMult = 0.85
 
 -- Negatives
-ATT.DispersionSpreadAddHipFire = 0.008
+ATT.DispersionSpreadAddHipFire = 0.007
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.03
 ATT.SpeedAdd = -0.03
@@ -272,7 +273,7 @@ ATT.RecoilUpMult = 0.667
 
 -- Negatives
 ATT.CycleTimeMult = 1.1
-ATT.DispersionSpreadAddHipFire = 0.018
+ATT.DispersionSpreadAddHipFire = 0.012
 ATT.AimDownSightsTimeAdd = 0.06
 ATT.SprintToFireTimeAdd = 0.06
 ATT.SpeedAdd = -0.02
@@ -443,7 +444,6 @@ ATT.SwayAddSights = 0.5
 ATT.AimDownSightsTimeAdd = -0.12
 ATT.SprintToFireTimeAdd = -0.12
 ATT.DispersionSpreadAddHipFire = -0.005
-ATT.DispersionSpreadAddMove = 0.008
 ATT.SpeedAddSights = 0.2
 ATT.SpeedAdd = 0.1
 ATT.RecoilRandomSideAdd = 0.4
@@ -470,7 +470,6 @@ ATT.SwayAddSights = 0.5
 ATT.AimDownSightsTimeAdd = -0.1
 ATT.SprintToFireTimeAdd = -0.1
 ATT.DispersionSpreadAddHipFire = -0.005
-ATT.DispersionSpreadAddMove = 0.008
 ATT.SpeedAddSights = 0.16
 ATT.SpeedAdd = 0.08
 ATT.RecoilRandomSideAdd = 0.5
@@ -532,7 +531,6 @@ ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.1
 ATT.SprintToFireTimeAdd = -0.1
 ATT.DispersionSpreadAddHipFire = -0.01
-ATT.DispersionSpreadAddMove = 0.008
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
 
@@ -571,7 +569,6 @@ ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.15
 ATT.SprintToFireTimeAdd = -0.15
 ATT.DispersionSpreadAddHipFire = -0.012
-ATT.DispersionSpreadAddMove = 0.008
 ATT.SpeedAddSights = 0.22
 ATT.SpeedAdd = 0.1
 ATT.RecoilRandomSideAdd = 0.4

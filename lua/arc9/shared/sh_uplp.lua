@@ -4,6 +4,27 @@
 list.Set("ContentCategoryIcons", "ARC9 - Poly Arms", "uplp_16.png")
 list.Set("ContentCategoryIcons", "ARC9 - Poly Arms Attachments", "uplp_16.png")
 
+-- Because I know we'll be tuning shotguns until the end of time
+-- And by "we" I mean me - 8Z
+ARC9.UPLP_ShotgunSpreadModifier = 1.25
+ARC9.UPLP_ShotgunDamageMaxModifier = 2
+ARC9.UPLP_ShotgunDamageMinModifier = 1
+
+ARC9.UPLP_ShotgunFalloffFunc = function(self, data)
+    local d = self:GetDamageDeltaAtRange(data.range)
+
+    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
+    local num = self:GetProcessedValue("Num")
+
+    if self:GetProcessedValue("DistributeDamage", true) then
+        dmgv = dmgv / num
+    elseif self:GetProcessedValue("NormalizeNumDamage", true) then
+        dmgv = dmgv / (num / self.Num)
+    end
+
+    data.dmg = dmgv
+    return data
+end
 
 local conVars = {
     {name = "uplp_mult_ar", default = "1", replicated = true },
@@ -46,7 +67,7 @@ if CLIENT then
             sv = true,
             { type = "label", text = "setting.uplp.label" },
             { type = "label", text = "setting.uplp.dmgmult.title", desc = "setting.uplp.dmgmult.desc" },
- 
+
             { sv = true, type = "slider", text = "setting.uplp_mult_ar.title", convar = "uplp_mult_ar", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_ar.desc" },
             { sv = true, type = "slider", text = "setting.uplp_mult_smg.title", convar = "uplp_mult_smg", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_smg.desc" },
             { sv = true, type = "slider", text = "setting.uplp_mult_mg.title", convar = "uplp_mult_mg", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_mg.desc" },
@@ -59,7 +80,7 @@ if CLIENT then
             { sv = true, type = "slider", text = "setting.uplp_mult_explosive.title", convar = "uplp_mult_explosive", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_explosive.desc" },
             { sv = true, type = "bool", text = "setting.uplp_overheat.title", desc = "setting.uplp_overheat.desc", convar = "mod_overheat" },
         }
-        
+
         table.insert(ARC9.SettingsTable, 337, uplpsettings)
     end)
 end
@@ -69,34 +90,34 @@ end
 
 -- code for 1911's alyx grip screen
 if CLIENT then
-	local uplp_1911alyx_RT = GetRenderTargetEx("uplp_1911alyx_RT1", 16, 128, RT_SIZE_LITERAL, MATERIAL_RT_DEPTH_NONE, 1+256, 0, IMAGE_FORMAT_RGBA8888)
+    local uplp_1911alyx_RT = GetRenderTargetEx("uplp_1911alyx_RT1", 16, 128, RT_SIZE_LITERAL, MATERIAL_RT_DEPTH_NONE, 1+256, 0, IMAGE_FORMAT_RGBA8888)
 
-	local uplp_1911alyx_mat = Material("models/weapons/arc9/uplp/alyxscreen")
-	uplp_1911alyx_mat:SetTexture("$basetexture", uplp_1911alyx_RT:GetName())
-	uplp_1911alyx_mat:SetTexture("$detail", uplp_1911alyx_RT:GetName())
-	
-	local nextcallrt = 0
+    local uplp_1911alyx_mat = Material("models/weapons/arc9/uplp/alyxscreen")
+    uplp_1911alyx_mat:SetTexture("$basetexture", uplp_1911alyx_RT:GetName())
+    uplp_1911alyx_mat:SetTexture("$detail", uplp_1911alyx_RT:GetName())
+
+    local nextcallrt = 0
     local lasthadroundtime = 0
 
-	function ARC9.UPLP_CallAlyxGripRT(wep)
-		if CurTime() < nextcallrt then return end
-		nextcallrt = CurTime() + 0.06
+    function ARC9.UPLP_CallAlyxGripRT(wep)
+        if CurTime() < nextcallrt then return end
+        nextcallrt = CurTime() + 0.06
 
         if !IsValid(wep) or !wep.ARC9 then return end
-        
+
         local clip = wep:Clip1()
         local clipsize = wep:GetMaxClip1()
         local reloading = wep:GetReloading()
         local reloadtime = wep:GetReloadTime()
         local reloadprogress = math.min(1, 1 - (reloadtime - CurTime()))
 
-		render.PushRenderTarget(uplp_1911alyx_RT)
-		render.OverrideAlphaWriteEnable(true, true)
+        render.PushRenderTarget(uplp_1911alyx_RT)
+        render.OverrideAlphaWriteEnable(true, true)
 
-		render.ClearDepth()
-		render.Clear(13, 12, 19, 255)
+        render.ClearDepth()
+        render.Clear(13, 12, 19, 255)
 
-		cam.Start2D()
+        cam.Start2D()
             if clip == 1 then
                 surface.SetDrawColor(255, 255, 17, 190)
                 surface.DrawRect(0, 0, 8, 10) -- left
@@ -161,15 +182,24 @@ if CLIENT then
                     surface.DrawRect(0, 17 + (i * 2 + 1) * 14 + yofset, 16, 10)
                 end
             end
-		cam.End2D()
+        cam.End2D()
 
-		render.OverrideAlphaWriteEnable(false)
-		render.PopRenderTarget()
-	end
+        render.OverrideAlphaWriteEnable(false)
+        render.PopRenderTarget()
+    end
 
-	timer.Simple(15, function()
-		uplp_1911alyx_mat = Material("models/weapons/arc9/uplp/alyxscreen")
-		uplp_1911alyx_mat:SetTexture("$basetexture", uplp_1911alyx_RT:GetName())
-		uplp_1911alyx_mat:SetTexture("$detail", uplp_1911alyx_RT:GetName())
-	end)
+    timer.Simple(15, function()
+        uplp_1911alyx_mat = Material("models/weapons/arc9/uplp/alyxscreen")
+        uplp_1911alyx_mat:SetTexture("$basetexture", uplp_1911alyx_RT:GetName())
+        uplp_1911alyx_mat:SetTexture("$detail", uplp_1911alyx_RT:GetName())
+    end)
 end
+
+-- dragon's breath, not double barrel
+sound.Add({
+    name = "UPLP_DB_ADD",
+    channel = CHAN_AUTO,
+    volume = 1.0,
+    level = 100,
+    sound = {"^uplp_urban_temp/common/db_add_1.ogg", "^uplp_urban_temp/common/db_add_2.ogg", "^uplp_urban_temp/common/db_add_3.ogg"}
+})

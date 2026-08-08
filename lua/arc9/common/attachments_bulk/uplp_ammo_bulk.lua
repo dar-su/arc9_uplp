@@ -209,9 +209,11 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_blue.mdl"
 -- Positives
 ATT.NumMult = 1.5
 ATT.RecoilMult = 0.9
+ATT.HullSizeAdd = 1
 
 -- Negatives
-ATT.SpreadMult = 1.15
+ATT.SpreadMult = 1.2
+ATT.PhysBulletMuzzleVelocityMult = 0.95
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_blue")
 
@@ -230,21 +232,25 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.1
-
-ATT.HeadshotDamage = 2
-ATT.RangeMin = 6
-ATT.RangeMaxMult = 4
-ATT.DispersionSpreadAddRecoil = -0.025
+ATT.SpreadMult = 0.25
+ATT.HeadshotDamageAdd = 0.5
+ATT.DispersionSpreadAddRecoil = -0.015
+ATT.PenetrationAdd = 10
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxMult = 0.8
--- ATT.DamageMaxOverride = 60
-ATT.DamageMinOverride = 25
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.8
 ATT.RecoilDissipationRateMult = 0.75
+ATT.HullSizeOverride = 0
+ATT.PhysBulletGravityMult = 2.5
+ATT.PhysBulletDragMult = 3
+ATT.DispersionSpreadAddHipFire = 0.015
+ATT.LegDamageMult = 0.5
+ATT.PhysBulletMuzzleVelocityMult = 0.85
 
-ATT.SweetSpotOverride = false 
+ATT.AlwaysPhysBulletOverride = true
+ATT.SweetSpotOverride = false
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -255,8 +261,9 @@ ARC9.LoadAttachment(ATT, "uplp_sg_shell_green")
 
 ATT = {}
 
-ATT.PrintName = "12-Gauge Double Slug"
-ATT.CompactName = "Slug x2"
+--
+ATT.PrintName = "12-Gauge Sabot Slug"
+ATT.CompactName = "Sabot"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfoldersg .. "bl.png", "mips smooth")
@@ -266,21 +273,25 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.3
-
-ATT.HeadshotDamage = 1.5
-ATT.RangeMin = 4
 ATT.RangeMaxMult = 2
-ATT.DispersionSpreadAddRecoil = -0.01
+ATT.SpreadMult = 0.1
+ATT.HeadshotDamageAdd = 1.5
+ATT.DispersionSpreadAddRecoil = -0.02
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.PhysBulletDragMult = 0.75
+ATT.PenetrationAdd = 25
 
 -- Negatives
-ATT.NumOverride = 2
--- ATT.DamageMaxMult = 0.667
-ATT.DamageMaxOverride = 100
-ATT.DamageMinOverride = 16
-ATT.RecoilDissipationRateMult = 0.9
+ATT.NumOverride = 1
+ATT.DamageMaxMult = 0.4
+ATT.DamageMinMult = 0.7
+ATT.HullSizeOverride = 0
+ATT.LegDamageMult = 0.75
+ATT.DispersionSpreadAddHipFire = 0.015
 
-ATT.SweetSpotOverride = false 
+ATT.DamageTypeOverride = DMG_BULLET
+ATT.AlwaysPhysBulletOverride = true
+ATT.SweetSpotOverride = false
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
@@ -302,55 +313,160 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_orange.mdl"
 
 ATT.CustomPros = {
-[ARC9:GetPhrase("uplp_stat_ignite_chance")] = "25%",
+[ARC9:GetPhrase("uplp_stat_ignite_chance")] = "100%",
 }
 
+-- Positives
+ATT.RangeMaxMult = 1.5
+ATT.RecoilMult = 0.75
+ATT.NumOverride = 24
+ATT.HullSizeOverride = 6
+ATT.PhysBulletGravityMult = 0.75
+
 -- Negatives
-ATT.RPMMult = 0.75
-ATT.DamageMaxMult = 0.75
-ATT.DamageMinMult = 0.75
-ATT.PhysBulletMuzzleVelocityMult = 0.4
+ATT.SpreadMult = 1.75
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.25
+ATT.PhysBulletMuzzleVelocityMult = 0.25
+ATT.AlwaysPhysBulletOverride = true
+ATT.RPMMult = 0.9
 
 ATT.ImpactDecal = "FadingScorch"
 
-ATT.MuzzleParticleOverride = "muzzleflash_slug"
-ATT.MuzzleParticleOverride_Priority = 1
+ATT.Overheat = true
 
--- This is code from the CoD2019 pack - consider replacing at some point
-local cov = 1 -- ??
-
-local badblood = { -- it's actually the good type
-    [-1] = true,
-    [3] = true,
-}
-
-ATT.Hook_BulletImpact = function(wep,data)
-    if CLIENT then return end
-    local ent = data.tr.Entity
-
-    local test1 = !(ent:IsNPC() or ent:IsPlayer() or ent:IsNextBot()) and true or false
-    local test2 = (!ent:GetBloodColor() or badblood[ent:GetBloodColor()]) and true or false
-
-    if IsValid(ent) and !test1 then
-        if math.Rand(0, 1) <= 0.25 then
-            if vFireInstalled then
-                CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, data.dmg:GetDamage() * 0.02)
-            else
-                ent:Ignite(ent:IsPlayer() and 1.5 or 5, 0)
-                -- HL2 zombies ignore DMG_BURN damage, making pellets do no damage
-                if !(ent:IsNPC() and string.find(ent:GetClass(), "zombie")) then
-                    data.dmg:SetDamageType(DMG_BURN)
-                end
-            end
+ATT.RPMHook = function(wep, stat)
+    if !wep:GetProcessedValue("ManualAction", true) then
+        local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+        if heat >= 0.3 then
+            return Lerp((heat - 0.3) / (1 - 0.3), stat, stat * 0.8)
         end
     end
+end
 
-    if IsValid(ent) and (test1 or test2) then
-        data.dmg:SetDamage(data.dmg:GetDamage() * cov)
-        local eff = EffectData()
-        eff:SetOrigin(data.tr.HitPos)
-        util.Effect("cball_bounce", eff)
+ATT.Hook_PrimaryAttack = function(wep, data)
+    wep:EmitSound("UPLP_DB_ADD")
+    if SERVER and wep:GetHeatAmount() >= wep:GetProcessedValue("HeatCapacity", true) then
+        local dmg = DamageInfo()
+        dmg:SetAttacker(wep:GetOwner())
+        dmg:SetInflictor(wep)
+        dmg:SetDamage(10)
+        dmg:SetDamageType(DMG_BURN)
+        dmg:SetDamagePosition(wep:GetOwner():GetPos())
+        wep:GetOwner():TakeDamageInfo(dmg)
+        wep:GetOwner():Ignite(math.Rand(2, 3))
     end
+end
+
+local dontburn = {
+    npc_zombie = true,
+    npc_zombie_torso = true,
+    npc_zombine = true,
+    npc_fastzombie = true,
+    npc_fastzombie_torso = true,
+    npc_headcrab = true,
+    npc_headcrab_fast = true,
+    npc_headcrab_black = true,
+}
+
+ATT.Hook_BulletImpact = function(wep, data)
+    local ent = data.tr.Entity
+    if !IsValid(ent) then return end
+
+    -- volume check threshold is about as big as models/props_junk/trashdumpster02.mdl (the big blue dumpster)
+    local dur = 0
+    if ent:IsPlayer() then
+        dur = 5
+    elseif ent:IsNPC() or ent:IsNextBot() then
+        dur = 15
+    elseif ent:GetPhysicsObject():IsValid() then
+        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 0, 15)
+    end
+    if dur <= 0 then return end
+
+    dur = Lerp(wep:GetDamageDeltaAtRange(data.range), dur, 0.5)
+
+    if IsValid(ent) then
+        if vFireInstalled then
+            CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, dur / 5)
+        else
+            ent:Extinguish()
+            ent:Ignite(dur)
+            -- HL2 zombies ignore DMG_BURN damage, making pellets do no damage
+            data.dmg:SetDamageType(dontburn[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
+        end
+    end
+end
+
+ATT.Hook_PhysBulletImpact = function(wep, data)
+    local emitter = ParticleEmitter(data.tr.HitPos)
+    if !IsValid(emitter) then return end
+
+    local dir = data.tr.Normal
+    local reflect = dir:Dot(data.tr.HitNormal) * 2 * data.tr.HitNormal - dir
+    local vec = (reflect + VectorRand() * 0.1):GetNormalized()
+
+    for i = 1, math.random(16, 32) do
+        local ember = emitter:Add("effects/spark", data.tr.HitPos + VectorRand() * 4)
+        ember:SetVelocity(VectorRand() * 100 - vec * math.Rand(100, 500) + Vector(0, 0, math.Rand(75, 150)))
+        ember:SetGravity(Vector(0, 0, -600))
+        ember:SetDieTime(math.Rand(0.6, 1.2))
+        ember:SetStartAlpha(255)
+        ember:SetEndAlpha(0)
+        ember:SetStartSize(math.Rand(3, 6))
+        ember:SetEndSize(0)
+        ember:SetRoll(math.Rand(-180, 180))
+        ember:SetRollDelta(math.Rand(-0.2, 0.2))
+        ember:SetColor(255, 220, 175)
+        ember:SetAirResistance(80)
+        ember:SetLighting(false)
+        ember:SetCollide(true)
+        ember:SetBounce(0.5)
+    end
+
+    emitter:Finish()
+end
+
+ATT.HookC_DrawBullet = function(wep, bullet)
+    if bullet.Travelled <= 72 then return false end
+    local a = Lerp(bullet.Travelled / 1000, 0, 1) or 0
+    if a == 0 then return false end
+
+    -- Do not try to keep emitting while time is frozen (singleplayer pause)
+    if (bullet.LastTick or 0) == CurTime() then return false end
+    bullet.LastTick = CurTime()
+
+    local emitter = ParticleEmitter(bullet.Pos)
+    if !IsValid(emitter) then return end
+
+    local vec = bullet.Vel * engine.TickInterval()
+    local count = math.ceil(vec:Length() / 12)
+
+    local count2 = math.ceil(math.sqrt(count) / 3 * a)
+    for j = 1, count2 do
+        local p = bullet.Pos - vec * (j / count2) + VectorRand() * math.Clamp((CurTime() - bullet.StartTime) / 0.5, 0, 8)
+
+        local spark = emitter:Add("effects/spark", p)
+        spark:SetVelocity(VectorRand() * 100 + vec * 0.75)
+        spark:SetGravity(Vector(math.Rand(-10, 10), math.Rand(-10, 10), -75))
+        spark:SetDieTime(math.Rand(0.15, 0.2))
+        spark:SetStartAlpha(255)
+        spark:SetEndAlpha(0)
+        spark:SetStartSize(math.Rand(3, 6))
+        spark:SetEndSize(0)
+        spark:SetRoll(math.Rand(-180, 180))
+        spark:SetRollDelta(math.Rand(-0.2, 0.2))
+        spark:SetColor(255, 220, 175)
+        spark:SetAirResistance(50)
+        spark:SetLighting(false)
+        spark:SetCollide(true)
+        spark:SetBounce(0.8)
+    end
+
+    emitter:Finish()
+    bullet.RenderTick = (bullet.RenderTick or 0) + 1
+
+    return false
 end
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_orange")
@@ -370,26 +486,140 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.5
+ATT.SpreadMult = 0.75
 
-ATT.ExplosionRadiusOverride = 96
-ATT.ExplosionDamageOverride = 45
-ATT.ExplosionEffect = "HelicopterMegaBomb" -- placeholder
+ATT.ExplosionRadiusOverride = 150
+ATT.ExplosionDamageOverride = 20
 ATT.ImpactDecal = "FadingScorch"
 
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 -- Negatives
-ATT.DamageMaxMult = 0.3
-ATT.DamageMinMult = 0.4
-ATT.RPMMult = 0.75
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.5
 ATT.NumOverride = 1
 ATT.PhysBulletGravityMult = 2
-ATT.PhysBulletMuzzleVelocityMult = 0.6667
+ATT.PhysBulletMuzzleVelocityMult = 0.33333333
+ATT.AlwaysPhysBulletOverride = true
+ATT.RPMMult = 0.9
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"
 ATT.MuzzleParticleOverride_Priority = 1
+
+ATT.Overheat = true
+ATT.HeatPerShotMult = 1.25
+
+ATT.RPMHook = function(wep, stat)
+    if !wep:GetProcessedValue("ManualAction", true) then
+        local heat = wep:GetHeatAmount() / wep:GetProcessedValue("HeatCapacity", true)
+        if heat >= 0.3 then
+            return Lerp((heat - 0.3) / (1 - 0.3), stat, stat * 0.8)
+        end
+    end
+end
+
+ATT.Hook_PrimaryAttack = function(wep, data)
+    if SERVER and wep:GetHeatAmount() >= wep:GetProcessedValue("HeatCapacity", true) then
+        local dmg = DamageInfo()
+        dmg:SetAttacker(wep:GetOwner())
+        dmg:SetInflictor(wep)
+        dmg:SetDamage(10)
+        dmg:SetDamageType(DMG_BURN)
+        dmg:SetDamagePosition(wep:GetOwner():GetPos())
+        wep:GetOwner():TakeDamageInfo(dmg)
+        wep:GetOwner():Ignite(math.Rand(2, 3))
+    end
+end
+
+ATT.HookC_DrawBullet = function(wep, bullet)
+    if bullet.Travelled <= 128 then return false end
+    local a = Lerp(bullet.Travelled / 3000, 0, 1) or 0
+    if a == 0 then return false end
+
+    -- Do not try to keep emitting while time is frozen (singleplayer pause)
+    if (bullet.LastTick or 0) == CurTime() then return false end
+    bullet.LastTick = CurTime()
+
+    local emitter = ParticleEmitter(bullet.Pos)
+    if !IsValid(emitter) then return end
+
+    local vec = bullet.Vel * engine.TickInterval()
+    local count = math.ceil(vec:Length() / 8)
+
+    local count2 = math.ceil(math.sqrt(count) / 3 * a)
+    for j = 1, count2 do
+        local p = bullet.Pos - vec * (j / count2) + VectorRand() * math.Clamp((CurTime() - bullet.StartTime) / 0.5, 0, 8)
+
+        local spark = emitter:Add("effects/combinemuzzle1", p)
+        spark:SetVelocity(VectorRand() * 4 + vec * 0.75)
+        spark:SetGravity(Vector(math.Rand(-10, 10), math.Rand(-10, 10), -75))
+        spark:SetDieTime(math.Rand(0.06, 0.12))
+        spark:SetStartAlpha(200)
+        spark:SetEndAlpha(0)
+        spark:SetStartSize(math.Rand(2, 3))
+        spark:SetEndSize(math.Rand(6, 9))
+        spark:SetRoll(math.Rand(-180, 180))
+        spark:SetRollDelta(math.Rand(-0.2, 0.2))
+        spark:SetColor(255, 220, 220)
+        spark:SetAirResistance(50)
+        spark:SetLighting(false)
+        spark:SetCollide(true)
+        spark:SetBounce(0.8)
+    end
+
+    emitter:Finish()
+    bullet.RenderTick = (bullet.RenderTick or 0) + 1
+
+    return false
+end
+
+ATT.Hook_PhysBulletImpact = function(wep, data)
+    local emitter = ParticleEmitter(data.tr.HitPos)
+    if !IsValid(emitter) then return end
+
+    local dir = data.tr.Normal
+    local reflect = dir:Dot(data.tr.HitNormal) * 2 * data.tr.HitNormal - dir
+    local vec = (reflect + VectorRand() * 0.1):GetNormalized()
+
+    for i = 1, math.random(36, 48) do
+        local ember = emitter:Add("effects/spark", data.tr.HitPos + VectorRand() * 4)
+        ember:SetVelocity(VectorRand() * 900 - vec * math.Rand(200, 500) + Vector(0, 0, math.Rand(75, 150)))
+        ember:SetGravity(Vector(0, 0, -1200))
+        ember:SetDieTime(math.Rand(0.15, 0.5))
+        ember:SetStartAlpha(255)
+        ember:SetEndAlpha(0)
+        ember:SetStartSize(math.Rand(3, 6))
+        ember:SetEndSize(0)
+        ember:SetRoll(math.Rand(-180, 180))
+        ember:SetRollDelta(math.Rand(-0.2, 0.2))
+        ember:SetColor(255, 255, 220)
+        ember:SetAirResistance(350)
+        ember:SetLighting(false)
+        ember:SetCollide(true)
+        ember:SetBounce(0.5)
+    end
+
+    for i = 1, 3 do
+        local spark = emitter:Add("effects/fire_cloud" .. math.random(1, 2), data.tr.HitPos + VectorRand() * 4)
+        spark:SetVelocity(VectorRand() * 32 - vec * math.Rand(100, 200))
+        spark:SetGravity(Vector(math.Rand(-10, 10), math.Rand(-10, 10), -75))
+        spark:SetDieTime(math.Rand(0.04, 0.12))
+        spark:SetStartAlpha(20)
+        spark:SetEndAlpha(0)
+        spark:SetStartSize(math.Rand(30, 50))
+        spark:SetEndSize(math.Rand(120, 150))
+        spark:SetRoll(math.Rand(-180, 180))
+        spark:SetRollDelta(math.Rand(-0.5, 0.5))
+        spark:SetColor(255, 255, 255)
+        spark:SetAirResistance(50)
+        spark:SetLighting(false)
+        spark:SetCollide(false)
+        spark:SetBounce(0.8)
+    end
+
+    emitter:Finish()
+end
 
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_yellow")
 

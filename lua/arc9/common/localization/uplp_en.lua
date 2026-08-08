@@ -602,7 +602,7 @@ L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module made by LuminaFire Armaments designed for handguns that provides a laser sight for use in the dark."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nLow pressure shells like this typically can't be used in self-loading shotguns, but don't let that get in the way of your fun."
+local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
 
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
@@ -618,23 +618,23 @@ L["uplp_sg_shell_red.description"] = "Standard shotshells loading medium-sized p
 
 L["uplp_sg_shell_blue.printname"] = "Birdshot Rounds"
 L["uplp_sg_shell_blue.compactname"] = "Birdshot"
-L["uplp_sg_shell_blue.description"] = "Shotshells used to hunt birds. Fires smaller pellets at a greater quantity and spread, so it's more likely to hit a target."
+L["uplp_sg_shell_blue.description"] = "Shotshells used to shoot fast moving targets like birds and drones. Fires smaller pellets at a greater quantity and spread."
 
 L["uplp_sg_shell_green.printname"] = "Slug Rounds"
 L["uplp_sg_shell_green.compactname"] = "Slug"
-L["uplp_sg_shell_green.description"] = "Shotshells used to hunt prey at medium distances. Fires a single accurate pellet."
+L["uplp_sg_shell_green.description"] = "Shotshells used to hunt prey at medium distances. Fires a single high-damage pellet that is heavily affected by gravity."
 
-L["uplp_sg_shell_black.printname"] = "Double Slug Rounds"
-L["uplp_sg_shell_black.compactname"] = "Slug x2"
-L["uplp_sg_shell_black.description"] = "Shotshells loading two large pellets. More stopping power than a single slug, but is less accurate."
+L["uplp_sg_shell_black.printname"] = "Sabot Slug Rounds"
+L["uplp_sg_shell_black.compactname"] = "Sabot"
+L["uplp_sg_shell_black.description"] = "Shotshells loading a single shaped projectile encased in a disposable shell. Less stopping power compared to slugs, but has far better ballistics performance."
 
 L["uplp_sg_shell_orange.printname"] = "Dragon's Breath Rounds"
-L["uplp_sg_shell_orange.compactname"] = "DB"
-L["uplp_sg_shell_orange.description"] = "Shotshells filled with magnesium. Not very lethal on hit, but is likely to ignite targets." .. shotgun_lp
+L["uplp_sg_shell_orange.compactname"] = "Dragon"
+L["uplp_sg_shell_orange.description"] = "Shotshells filled with magnesium powder, capable of igniting targets. The projectiles are weak and travels slowly, leaving an impressive blaze of sparks in their wake." .. shotgun_lp
 
 L["uplp_sg_shell_yellow.printname"] = "Explosive Slug Rounds"
 L["uplp_sg_shell_yellow.compactname"] = "Exp. Slug"
-L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. Blasts a small area with shrapnel." .. shotgun_lp
+L["uplp_sg_shell_yellow.description"] = "Shotshells loading a small explosive warhead. The projectile is slow and heavy, but explodes in a small radius on impact." .. shotgun_lp
 
 /////////// Underbarrel Weapons
 L["uplp_ubgl_m203_rail.printname"] = "Model 40 Grenade Launcher"

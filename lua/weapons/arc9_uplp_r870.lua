@@ -37,9 +37,10 @@ SWEP.DefaultBodygroups = "0000000000000000000"
 SWEP.DefaultElements = {"uplp_r870"}
 
 -- Slightly lower spread and recoil, 1 more round, slightly worse handling
-SWEP.Spread = 0.028 * 1.5
+SWEP.Spread = 0.028 * ARC9.UPLP_ShotgunSpreadModifier
 
-SWEP.DispersionSpreadAddHipFire = 0.015
+SWEP.DispersionSpreadAddHipFire = 0.01
+SWEP.DispersionSpreadAddMove = 0.01
 
 SWEP.RecoilUp = 2
 SWEP.RecoilRandomSide = 1
@@ -148,7 +149,7 @@ SWEP.AttachmentElements = {
     ["uplp_sg_shell_orange"] = { Bodygroups = { { 7, 4 } } },
     ["uplp_sg_shell_yellow"] = { Bodygroups = { { 7, 5 } } },
 
-	-- BARRELS
+    -- BARRELS
     ["uplp_r870_bar_serbu"] = {
         Bodygroups = { { 1, 6 }, { 2, 6 } },
         AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 12.5), Icon_Offset = Vector(1.25, 0, 0) },
@@ -158,14 +159,14 @@ SWEP.AttachmentElements = {
         AttPosMods = { [4] = { Pos = Vector(-0.1, -0.1, 33.2), Icon_Offset = Vector(1.25, 0, 0) },
     }},
 
-	-- PUMPS
+    -- PUMPS
     ["uplp_r870_handle_old"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_r870_handle_poly"] = { Bodygroups = { { 2, 2 } } },
     ["uplp_r870_handle_rail"] = { Bodygroups = { { 2, 3 } } },
     ["uplp_r870_handle_flash"] = { Bodygroups = { { 2, 4 } } },
     ["uplp_r870_handle_magpul"] = { Bodygroups = { { 2, 5 } } },
 
-	-- STOCKS
+    -- STOCKS
     ["uplp_r870_stock_short"] = { Bodygroups = { { 3, 5 }, { 5, 0 } } },
     ["uplp_r870_stock_short_wood"] = { Bodygroups = { { 3, 6 }, { 5, 0 } } },
     ["uplp_r870_stock_poly"] = { Bodygroups = { { 3, 1 } } },
@@ -178,14 +179,14 @@ SWEP.AttachmentElements = {
 
     ["uplp_m590_rs_railsight"] = { Bodygroups = { { 4, 1 }, { 100, 0 } } },
 
-	-- skin
+    -- skin
     ["uplp_r870_gold"] = { Bodygroups = { { 0, 1 } } },
 
-	-- SHELL HOLDERS
+    -- SHELL HOLDERS
     ["uplp_m590_shellholder"] = { Bodygroups = { { 5, 1 } } }, -- Use bodygroup modifications to alter depending on SG shell type
 
-	-- MAGAZINES
-	["uplp_r870_mag_6"] = { Bodygroups = { { 6, 1 } } },
+    -- MAGAZINES
+    ["uplp_r870_mag_6"] = { Bodygroups = { { 6, 1 } } },
 
 
     ["uplp_r870_bar_lessmag"] = {
@@ -236,7 +237,7 @@ SWEP.Attachments = {
     },
     { -- stock
         Category = {"uplp_r870_stock"},
-    }, 
+    },
     _, -- tac
     { -- mag
         Category = {"uplp_r870_magazine"},

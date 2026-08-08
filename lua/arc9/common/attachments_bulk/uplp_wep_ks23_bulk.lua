@@ -193,19 +193,27 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_2375_slug.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.25
-
-ATT.HeadshotDamage = 2.5
-ATT.RangeMinMult = 1
-ATT.RangeMaxMult = 1.75
-ATT.DispersionSpreadAddRecoil = -0.025
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.SpreadMult = 0.1
+ATT.HeadshotDamageAdd = 0.5
+ATT.DispersionSpreadAddRecoil = -0.015
+ATT.PenetrationAdd = 10
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxOverride = 100
-ATT.DamageMinOverride = 30
+ATT.DamageMaxMult = 0.5
+ATT.DamageMinMult = 0.85
 ATT.RecoilDissipationRateMult = 0.75
+ATT.HullSizeOverride = 0
+ATT.PhysBulletMuzzleVelocityMult = 0.9
+ATT.PhysBulletGravityMult = 2
+ATT.PhysBulletDragMult = 3
+ATT.DispersionSpreadAddHipFire = 0.02
+ATT.LegDamageMult = 0.5
 
+ATT.DamageTypeOverride = DMG_BULLET
+ATT.AlwaysPhysBulletOverride = true
 ATT.SweetSpotOverride = false
 
 ATT.MuzzleParticleOverride = "muzzleflash_slug"

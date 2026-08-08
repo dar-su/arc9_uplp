@@ -17,7 +17,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
 
-ATT.DispersionSpreadAddHipFire = -0.008
+ATT.DispersionSpreadAddHipFire = -0.002
+ATT.DispersionSpreadAddMove = -0.006
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.02
@@ -53,8 +54,8 @@ ATT.SpreadAdd = -0.008
 ATT.RecoilUpMult = 0.75
 
 -- Negatives
-ATT.DispersionSpreadAddHipFire = 0.012
-ATT.DispersionSpreadAddMove = 0.006
+ATT.DispersionSpreadAddHipFire = 0.008
+ATT.DispersionSpreadAddMove = 0.004
 ATT.AimDownSightsTimeAdd = 0.05
 ATT.SprintToFireTimeAdd = 0.05
 ATT.SpeedAdd = -0.02
@@ -176,8 +177,8 @@ ATT.RecoilAdd = 0.7
 ATT.SwayAddSights = 0.5
 ATT.AimDownSightsTimeAdd = -0.12
 ATT.SprintToFireTimeAdd = -0.12
-ATT.DispersionSpreadAddHipFire = -0.005
-ATT.DispersionSpreadAddMove = 0.008
+ATT.DispersionSpreadAddHipFire = -0.003
+
 ATT.SpeedAddSights = 0.2
 ATT.SpeedAdd = 0.1
 

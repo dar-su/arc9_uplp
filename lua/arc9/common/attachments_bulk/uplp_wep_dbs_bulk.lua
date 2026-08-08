@@ -22,35 +22,16 @@ ATT.SpreadAdd = -0.01
 ATT.RangeMaxAdd = 10 / ARC9.HUToM
 
 -- Negatives
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.04
 ATT.SpeedAddSights = -0.1
 ATT.SpeedAdd = -0.04
 ATT.BarrelLengthAdd = 6
 ATT.DispersionSpreadAddHipFire = 0.02
 ATT.DispersionSpreadAddRecoil = 0.005
-ATT.DispersionSpreadAddMove = 0.01
+ATT.DispersionSpreadAddMove = 0.005
 ATT.RPMAdd = -30
 -- ATT.ReloadTimeMult = 1.1 -- anims are slower
-ATT.SwayMultSights = 1.5
-
-ATT.Firemodes = {
-    {
-        Mode = 1
-    },
-    {
-        Mode = 2,
-        PrintName = ARC9:GetPhrase("uplp_firemode_both"),
-        RPMOverride = 10000,
-        SpreadAdd = 0.01,
-        DamageMaxMult = 0.85,
-        RunawayBurst = true,
-        PostBurstDelay = 0.3,
-        RecoilFirstShot = 0,
-        RecoilAddShooting = 0.5,
-        DispersionSpreadMultRecoil = 0,
-    },
-}
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
@@ -89,33 +70,14 @@ ATT.SpeedAdd = 0.05
 ATT.SpeedAddSights = 0.1
 ATT.BarrelLengthAdd = -18
 ATT.ReloadTimeMult = 0.95
-ATT.SwayMultSights = 0.6666667
+ATT.RPMAdd = 60
 
 -- Negatives
 ATT.PhysBulletMuzzleVelocityMult = 0.75
 ATT.RecoilAdd = 0.25
 ATT.SpreadAdd = 0.022
-ATT.RangeMaxAdd = -5 / ARC9.HUToM
-ATT.RPMAdd = 60
-
-
-ATT.Firemodes = {
-    {
-        Mode = 1
-    },
-    {
-        Mode = 2,
-        PrintName = ARC9:GetPhrase("uplp_firemode_both"),
-        RPMOverride = 10000,
-        SpreadAdd = 0.025,
-        DamageMaxMult = 0.85,
-        RunawayBurst = true,
-        PostBurstDelay = 0.15,
-        RecoilFirstShot = 0,
-        RecoilAddShooting = 0.5,
-        DispersionSpreadMultRecoil = 0,
-    },
-}
+ATT.RangeMinAdd = -5 / ARC9.HUToM
+ATT.RangeMaxAdd = -25 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end

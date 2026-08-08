@@ -90,29 +90,15 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 107 * 1.5 -- 340
-SWEP.DamageMin = 40 * 1.5 -- 120
+SWEP.DamageMax = 100 * ARC9.UPLP_ShotgunDamageMaxModifier
+SWEP.DamageMin = 40 * ARC9.UPLP_ShotgunDamageMinModifier
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
-SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
-SWEP.HullSize = 1
+SWEP.DamageType = DMG_BUCKSHOT
+SWEP.HullSize = 2
 
 SWEP.CurvedDamageScaling = true
-function SWEP:Hook_GetDamageAtRange(data)
-    local d = self:GetDamageDeltaAtRange(data.range)
-
-    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
-    local num = self:GetProcessedValue("Num")
-
-    if self:GetProcessedValue("DistributeDamage", true) then
-        dmgv = dmgv / num
-    elseif self:GetProcessedValue("NormalizeNumDamage", true) then
-        dmgv = dmgv / (num / self.Num)
-    end
-
-    data.dmg = dmgv
-    return data
-end
+SWEP.Hook_GetDamageAtRange = ARC9.UPLP_ShotgunFalloffFunc
 
 -- for faster falloff after ~5 meters
 SWEP.SweetSpot = false
@@ -122,7 +108,7 @@ SWEP.SweetSpot = false
 -- SWEP.SweetSpotPeak = 2 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 1, -- When using HullSize, body damage mults cannot apply!
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -135,7 +121,7 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 1 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 1 / ARC9.HUToM
+SWEP.RangeMin = 6 / ARC9.HUToM
 SWEP.RangeMax = 30 / ARC9.HUToM
 
 -- Physical Bullets
@@ -188,26 +174,27 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.035 * 1.5
+SWEP.Spread = 0.03 * ARC9.UPLP_ShotgunSpreadModifier
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.015
+SWEP.DispersionSpreadAddHipFire = 0.012
 
 SWEP.DispersionSpreadAddRecoil = 0.02
-SWEP.DispersionSpreadAddMove = 0.015
+SWEP.DispersionSpreadAddMove = 0.012
 SWEP.DispersionSpreadAddMidAir = 0.05
 
 SWEP.RecoilDissipationRate = 1
-SWEP.RecoilResetTime = 0.35
-SWEP.RecoilPerShot = 0.5
+SWEP.RecoilResetTime = 0.4
+SWEP.RecoilPerShot = 0.6
 SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
-SWEP.RecoilModifierCapSights = 1 / 2
+SWEP.RecoilModifierCapSights = 1
 
 -- Weapon handling
 SWEP.SpeedMult = 0.8
 SWEP.SpeedMultSights = 0.55
+SWEP.SpeedMultShooting = 0.7 -- big fuck-all shell eh
 
 SWEP.AimDownSightsTime = 0.44
 SWEP.SprintToFireTime = 0.42
@@ -219,6 +206,10 @@ SWEP.BarrelLength = 42
 SWEP.RPM = 240 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 20 -- How many bullets shot at once
+
+SWEP.HeatCapacity = 40
+SWEP.HeatDissipation = 1
+SWEP.HeatDelayTime = 1
 
 SWEP.Firemodes = {
     { Mode = 1, PrintName = ARC9:GetPhrase("uplp_firemode_pump") },

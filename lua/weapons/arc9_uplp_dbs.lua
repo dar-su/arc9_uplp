@@ -113,30 +113,15 @@ SWEP.LaserAlwaysOnTargetInPeek = false
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 100 * 1.5 -- 200
-SWEP.DamageMin = 60 * 1.5 -- 72
+SWEP.DamageMax = 90 * ARC9.UPLP_ShotgunDamageMaxModifier
+SWEP.DamageMin = 40 * ARC9.UPLP_ShotgunDamageMinModifier
 SWEP.DistributeDamage = true
 SWEP.HeadshotDamage = 1
-SWEP.DamageType = DMG_BULLET + DMG_BUCKSHOT
+SWEP.DamageType = DMG_BUCKSHOT
 SWEP.HullSize = 1
 
--- edited to be square root instead of quarter root
 SWEP.CurvedDamageScaling = true
-function SWEP:Hook_GetDamageAtRange(data)
-    local d = self:GetDamageDeltaAtRange(data.range)
-
-    local dmgv = Lerp(d ^ 0.5, self:GetProcessedValue("DamageMax"), self:GetProcessedValue("DamageMin"))
-    local num = self:GetProcessedValue("Num")
-
-    if self:GetProcessedValue("DistributeDamage", true) then
-        dmgv = dmgv / num
-    elseif self:GetProcessedValue("NormalizeNumDamage", true) then
-        dmgv = dmgv / (num / self.Num)
-    end
-
-    data.dmg = dmgv
-    return data
-end
+SWEP.Hook_GetDamageAtRange = ARC9.UPLP_ShotgunFalloffFunc
 
 -- for faster falloff after ~5 meters
 SWEP.SweetSpot = false
@@ -146,7 +131,7 @@ SWEP.SweetSpot = false
 -- SWEP.SweetSpotPeak = 2 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 1.5,
+    [HITGROUP_HEAD] = 1, -- When using HullSize, body damage mults cannot apply!
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -159,11 +144,11 @@ SWEP.Penetration = 2 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 2 / ARC9.HUToM
-SWEP.RangeMax = 25 / ARC9.HUToM
+SWEP.RangeMin = 10 / ARC9.HUToM
+SWEP.RangeMax = 45 / ARC9.HUToM
 
 -- Physical Bullets
-SWEP.PhysBulletMuzzleVelocity = 480 / ARC9.HUToM
+SWEP.PhysBulletMuzzleVelocity = 420 / ARC9.HUToM
 SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 2
 
@@ -217,13 +202,13 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 SWEP.UseDispersion = true
 
-SWEP.Spread = 0.03 * 1.5
+SWEP.Spread = 0.03 * ARC9.UPLP_ShotgunSpreadModifier
 SWEP.SpreadAddMidAir = 0
 
 SWEP.DispersionSpread = 0
-SWEP.DispersionSpreadAddHipFire = 0.02
+SWEP.DispersionSpreadAddHipFire = 0.03
 
-SWEP.DispersionSpreadAddRecoil = 0.035
+SWEP.DispersionSpreadAddRecoil = 0.04
 SWEP.DispersionSpreadAddMove = 0.025
 SWEP.DispersionSpreadAddMidAir = 0.05
 
@@ -248,6 +233,10 @@ SWEP.RPM = 300 -- How fast gun shoot -- as fast for cycle anim to play instantly
 
 SWEP.Num = 12 -- How many bullets shot at once
 
+SWEP.HeatCapacity = 15
+SWEP.HeatDelayTime = 2
+SWEP.HeatDissipation = 1.5
+
 local dupletsounds = {
     ")uplp_rz/dbs/" .. "fire-both-01.wav",
     ")uplp_rz/dbs/" .. "fire-both-02.wav",
@@ -261,15 +250,16 @@ SWEP.Firemodes = {
     {
         Mode = 2,
         PrintName = ARC9:GetPhrase("uplp_firemode_both"),
-        RPMOverride = 10000,
-        SpreadAdd = 0.02,
-        DamageMaxMult = 0.75,
-        DamageMinMult = 0.75,
+        RPMOverride = 2000,
+        SpreadMult = 2,
+        SpreadAdd = 0,
         RunawayBurst = true,
-        PostBurstDelay = 0.2,
-        RecoilFirstShot = 0,
-        RecoilAddShooting = 0.5,
-        DispersionSpreadMultRecoil = 0,
+        PostBurstDelay = 0.3,
+        RecoilAddShooting = 1,
+        DispersionSpreadAddRecoil = -0.04,
+        SpeedMultShooting = 0.1,
+        HeatPerShot = 1.25,
+        HullSize = 2,
 
         NoShootSoundAfterFirstShot = true,
         ShootSound = dupletsounds,
@@ -288,7 +278,13 @@ SWEP.Hook_PrimaryAttack = function(wep)
         end
     elseif cfm.Mode == 2 and wep:GetBurstCount() == 0 and IsFirstTimePredicted() then
         -- Fucking Badass
-        util.ScreenShake( wep:GetOwner():GetPos(), 4, 50, 0.75, 328, true)
+        util.ScreenShake( wep:GetOwner():GetPos(), 10, 60, 0.6, 328, true)
+        if wep:GetOwner():IsPlayer() then
+            local dir = wep:GetOwner():GetAngles()
+            dir.p = 0
+            dir = dir:Forward()
+            wep:GetOwner():SetVelocity(dir * (wep:GetOwner():IsOnGround() and -600 or -200))
+        end
     end
 end
 
