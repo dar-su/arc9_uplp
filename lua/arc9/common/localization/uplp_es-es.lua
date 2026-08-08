@@ -226,6 +226,9 @@ L["uplp_firemode_both"] = "AMBOS"
 -- L["setting.uplp_overheat.title"] = "Enable Suppressed Overheating"
 -- L["setting.uplp_overheat.desc"] = "When enabled, firing suppressed weapons will overheat the suppressor, which in turn reduces weapon effectiveness.\n\nAlso enables the overheat mechanic for other weapon packs."
 
+-- L["setting.uplp_enablehull.title"] = "Enable Hull Traces (Shotguns)"
+-- L["setting.uplp_enablehull.desc"] = "When enabled, shots that land inside the bounding box of the target will register as a hit.\n\nNote: Only applies to shotguns."
+
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments

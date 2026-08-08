@@ -226,6 +226,9 @@ L["setting.uplp_mult_explosive.desc"] = "Påverkar skadan på alla Granater och 
 L["setting.uplp_overheat.title"] = "Aktivera Ljuddämpade Överhettande"
 L["setting.uplp_overheat.desc"] = "Om påslaget så kommer skjutande av ljuddämpade vapen överhetta ljuddämparen vilket leder till sänkt effektivitet.\n\nAktiverar också överhettningsfunktionen på andra vapentillägg."
 
+L["setting.uplp_enablehull.title"] = "Aktivera \"Hull Traces\" (Hagelbössor)"
+L["setting.uplp_enablehull.desc"] = "Om påslaget så kommer skott som landar inne i måltavlans \"bounding box\" räknas som en träff.\n\nNotera: Tillämpas endast på hagelbössor."
+
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
