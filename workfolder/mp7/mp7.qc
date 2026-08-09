@@ -20,6 +20,7 @@ $bodygroup "stock" {
 $bodygroup "grip" {
 	studio "grip.smd"
 	studio "griprail.smd"
+	studio "grip_folded.smd"
 }  
 $bodygroup "mag" {
 	studio "magdef.smd"

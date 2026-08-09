@@ -207,6 +207,40 @@ ATT.RecoilAutoControlMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_grip_none")
 
+---------- uplp_mp7_grip_folded
+
+
+ATT = {}
+
+ATT.PrintName = "Folded Grip"
+ATT.CompactName = "Folded"
+ATT.Description = ATT.PrintName
+ATT.SortOrder = 100
+
+ATT.Icon = Material(iconfolder .. "rail.png", "mips smooth")
+
+ATT.Category = "uplp_mp7_grip"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_grip_folded"}
+
+ATT.Model = "models/weapons/arc9/uplp/ak_lhik_short.mdl"
+ATT.ModelOffset = Vector(-19, -2.4, 3.2)
+ATT.ModelAngleOffset = Angle(-22, -10, 10)
+ATT.LHIK = true
+ATT.LHIK_Priority = 5
+
+ATT.Free = true
+
+-- Positives
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.DeployTimeMult = 0.85
+
+-- Negatives
+ATT.RecoilAutoControlMult = 0.9
+
+ARC9.LoadAttachment(ATT, "uplp_mp7_grip_folded")
+
 ---------- uplp_mp7_rec_proto
 
 ATT = {}
