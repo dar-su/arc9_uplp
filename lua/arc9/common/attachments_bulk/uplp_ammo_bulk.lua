@@ -358,7 +358,7 @@ ATT.Hook_PrimaryAttack = function(wep, data)
     end
 end
 
-local dontburn = {
+local ignore_threshold = {
     npc_zombie = true,
     npc_zombie_torso = true,
     npc_zombine = true,
@@ -367,6 +367,11 @@ local dontburn = {
     npc_headcrab = true,
     npc_headcrab_fast = true,
     npc_headcrab_black = true,
+    npc_headcrab_poison = true,
+    -- poison zombie intentionally missing, as it loses most of its hp immediately on ignite
+    npc_antlionguard = true,
+    npc_antlionguardian = true,
+    npc_barnacle = true,
 }
 
 ATT.Hook_BulletImpact = function(wep, data)
@@ -375,28 +380,37 @@ ATT.Hook_BulletImpact = function(wep, data)
 
     -- volume check threshold is about as big as models/props_junk/trashdumpster02.mdl (the big blue dumpster)
     local dur = 0
+    local max_dur = 30
     if ent:IsPlayer() then
-        dur = 3
+        dur = 4 / 24
+        max_dur = 5
     elseif ent:IsNPC() or ent:IsNextBot() then
         -- burning will cause CC or even instant kill some NPCs so only burn if they're weak (or zombies)
-        if dontburn[data.tr.Entity:GetClass()] or ent:Health() / ent:GetMaxHealth() <= 0.6 then
-            dur = 10
+        if ent:IsNextBot() or ignore_threshold[data.tr.Entity:GetClass()] or ent:Health() / ent:GetMaxHealth() <= 0.6 then
+            dur = 8 / 24
         end
     elseif ent:GetPhysicsObject():IsValid() then
-        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 0, 15)
+        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 2, 10) / 24
     end
-    if dur <= 0 then return end
+    if dur <= 0 then
 
-    dur = Lerp(wep:GetDamageDeltaAtRange(data.range), dur, 0.5)
+        return
+    end
+    dur = Lerp(wep:GetDamageDeltaAtRange(data.range), dur, dur / 2)
 
     if IsValid(ent) then
         if vFireInstalled then
             CreateVFire(ent, data.tr.HitPos, data.tr.HitNormal, dur / 5)
         else
+            ent.UPLP_BurnTag = wep:GetOwner()
+            if (ent.UPLP_BurnTime or 0) < CurTime() then
+                ent.UPLP_BurnTime = CurTime()
+            end
+            ent.UPLP_BurnTime = math.min(CurTime() + max_dur, ent.UPLP_BurnTime + dur)
             ent:Extinguish()
-            ent:Ignite(dur)
+            ent:Ignite(ent.UPLP_BurnTime - CurTime())
             -- HL2 zombies ignore DMG_BURN damage, making pellets do no damage
-            data.dmg:SetDamageType(dontburn[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
+            data.dmg:SetDamageType(ignore_threshold[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
         end
     end
 end
@@ -405,13 +419,15 @@ ATT.Hook_PhysBulletImpact = function(wep, data)
     local emitter = ParticleEmitter(data.tr.HitPos)
     if !IsValid(emitter) then return end
 
-    local dir = data.tr.Normal
+    local a = wep:GetDamageDeltaAtRange(data.bullet.Travelled)
+
+    local dir = data.bullet.Vel:GetNormalized()
     local reflect = dir:Dot(data.tr.HitNormal) * 2 * data.tr.HitNormal - dir
     local vec = (reflect + VectorRand() * 0.1):GetNormalized()
 
-    for i = 1, math.random(16, 32) do
+    for i = 1, math.ceil(math.Rand(16, 32) * Lerp(a, 1, 0.25) ) do
         local ember = emitter:Add("effects/spark", data.tr.HitPos + VectorRand() * 4)
-        ember:SetVelocity(VectorRand() * 100 - vec * math.Rand(100, 500) + Vector(0, 0, math.Rand(75, 150)))
+        ember:SetVelocity(VectorRand() * Lerp(a, 300, 150) - vec * math.Rand(100, 300) + Vector(0, 0, math.Rand(75, 150)))
         ember:SetGravity(Vector(0, 0, -600))
         ember:SetDieTime(math.Rand(0.6, 1.2))
         ember:SetStartAlpha(255)
@@ -420,7 +436,7 @@ ATT.Hook_PhysBulletImpact = function(wep, data)
         ember:SetEndSize(0)
         ember:SetRoll(math.Rand(-180, 180))
         ember:SetRollDelta(math.Rand(-0.2, 0.2))
-        ember:SetColor(255, 220, 175)
+        ember:SetColor(255, Lerp(a, 220, 100), Lerp(a, 175, 0))
         ember:SetAirResistance(80)
         ember:SetLighting(false)
         ember:SetCollide(true)
@@ -432,7 +448,7 @@ end
 
 ATT.HookC_DrawBullet = function(wep, bullet)
     if bullet.Travelled <= 72 then return false end
-    local a = Lerp(bullet.Travelled / 1000, 0, 1) or 0
+    local a = wep:GetDamageDeltaAtRange(bullet.Travelled)
     if a == 0 then return false end
 
     -- Do not try to keep emitting while time is frozen (singleplayer pause)
@@ -459,7 +475,7 @@ ATT.HookC_DrawBullet = function(wep, bullet)
         spark:SetEndSize(0)
         spark:SetRoll(math.Rand(-180, 180))
         spark:SetRollDelta(math.Rand(-0.2, 0.2))
-        spark:SetColor(255, 220, 175)
+        spark:SetColor(255, Lerp(a, 220, 100), Lerp(a, 175, 0))
         spark:SetAirResistance(50)
         spark:SetLighting(false)
         spark:SetCollide(true)

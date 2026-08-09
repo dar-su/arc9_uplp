@@ -58,7 +58,13 @@ for _, var in ipairs(conVars) do
     end
 end
 
-
+hook.Add("EntityTakeDamage", "ARC9_UPLP_DragonsBreath", function(ent, dmginfo)
+    local inflictor = dmginfo:GetInflictor()
+    if IsValid(ent.UPLP_BurnTag) and (ent.UPLP_BurnTime or 0) >= CurTime() and IsValid(inflictor) and inflictor:GetClass() == "entityflame" then
+        dmginfo:SetAttacker(ent.UPLP_BurnTag)
+        dmginfo:ScaleDamage(1.5)
+    end
+end)
 
 
 if CLIENT then
