@@ -96,24 +96,3 @@ ATT.CharmAngle = Angle(0, 0, 180)
 ATT.Category = "charm"
 
 ARC9.LoadAttachment(ATT, "uplp_charm_title")
-
----------- uplp_charm_onehand
-
-ATT = {}
-
-ATT.PrintName = "Cowboy Style"
-ATT.CompactName = "Cowboy Style"
-ATT.Icon = Material(iconfolder .. "titlecharm.png", "mips smooth")
-ATT.Description = [[cowboy style
-
-Charm included in Poly Arms Project.]]
-ATT.MenuCategory = "ARC9 - Charms"
-
-ATT.Model = "models/weapons/arc9/uplp/ak_lhik_short.mdl"
-ATT.ModelOffset = Vector(-30, -5, -10)
-ATT.LHIK = true
-ATT.LHIK_Priority = 10
-
-ATT.Category = "charm"
-
-ARC9.LoadAttachment(ATT, "uplp_charm_onehand")

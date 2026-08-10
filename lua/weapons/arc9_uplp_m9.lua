@@ -466,6 +466,11 @@ SWEP.Animations = {
         -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        IKTimeLine = {
+            { t = 0, lhik = 0, rhik = 0 },
+            { t = 0.5, lhik = 0, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
     },
     ["fire_sights"] = {
         Source = {"fire_sights"},
@@ -473,6 +478,11 @@ SWEP.Animations = {
         Mult = 0.7,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        IKTimeLine = {
+            { t = 0, lhik = 0, rhik = 0 },
+            { t = 0.5, lhik = 0, rhik = 0 },
+            { t = 1, lhik = 1, rhik = 1 },
+        },
     },
 
     ["fire_empty"] = {
