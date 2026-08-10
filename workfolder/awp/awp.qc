@@ -7,27 +7,27 @@ $bodygroup "awoopa" {
 $bodygroup "stock" {
 	studio "stock awp.smd"
 	studio "stock awm.smd"
-	//studio "stock tube.smd"
-	//studio "stock at.smd"
-	//studio "stock atx.smd"
-	//studio "stock atx BLUE.smd"
-	//studio "stock atx GRAY.smd"
-	//studio "stock atx GREEN.smd"
-	//studio "stock atx ORANGE.smd"
-	//studio "stock atx PURPLE.smd"
-	//studio "stock atx WHITE.smd"
+	studio "stock tube.smd"
+	studio "stock at.smd"
+	studio "stock atx.smd"
+	studio "stock atx BLUE.smd"
+	studio "stock atx GRAY.smd"
+	studio "stock atx GREEN.smd"
+	studio "stock atx ORANGE.smd"
+	studio "stock atx PURPLE.smd"
+	studio "stock atx WHITE.smd"
 }
 $bodygroup "barrel" {
 	studio "barrel awp.smd"
 	studio "barrel long.smd"
-	//studio "barrel short.smd"
-	//studio "barrel aws.smd"
+	studio "barrel short.smd"
+	studio "barrel aws.smd"
 }
 $bodygroup "fs" {
 	blank
-	//studio "fs mid.smd"
-	//studio "fs long.smd"
-	//studio "fs short.smd"
+	studio "fs mid.smd"
+	studio "fs long.smd"
+	studio "fs short.smd"
 }
 $bodygroup "mag" {
 	studio "mag awm.smd"
@@ -35,26 +35,26 @@ $bodygroup "mag" {
 	studio "mag awp big.smd"
 	studio "mag awp tac.smd"
 
-	//studio "mag awp IN ATX.smd"
-	//studio "mag awp big IN ATX.smd"
-	//studio "mag awp tac IN ATX.smd"
+	studio "mag awp IN ATX.smd"
+	studio "mag awp big IN ATX.smd"
+	studio "mag awp tac IN ATX.smd"
 } 
 $bodygroup "bipod" {
 	blank
-	//studio "bipod fold.smd"
-	//studio "bipod unfold.smd"
-	//studio "hbipod fold.smd"
-	//studio "hbipod unfold.smd"
+	studio "bipod fold.smd"
+	studio "bipod unfold.smd"
+	studio "hbipod fold.smd"
+	studio "hbipod unfold.smd"
 }
 $bodygroup "mount" {
 	blank
-	//studio "mount.smd"
-	//studio "mount atx.smd"
+	studio "mount.smd"
+	studio "mount atx.smd"
 }
 $bodygroup "rs" {
 	blank
-	//studio "rs.smd"
-	//studio "rs down.smd"
+	studio "rs.smd"
+	studio "rs down.smd"
 }
 
 $cdmaterials "models\weapons\arc9\uplp"

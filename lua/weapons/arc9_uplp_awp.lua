@@ -383,7 +383,7 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cycle",
-        MinProgress = 0.95,
+        MinProgress = 0.75,
         Mult = 1.15,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0},
