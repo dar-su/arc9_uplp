@@ -1,7 +1,7 @@
 // Created by Crowbar 0.74
 
 $modelname "weapons\arc9\w_uplp_awp.mdl"
- 
+$scale 1.15
 
 $bodygroup "body"
 {
