@@ -5,6 +5,7 @@
 	[*] Added the [b]LA M2K11[/b], a modernized version of the aforementioned service pistol
 	
 	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified, few new attachments and slight rebalance!
+	[*] Added lots of new universal attachments
 	
 	[*] Added new [b]Damage Multiplier[/b] settings inside the ARC9 Settings menu
 	[list]
@@ -22,6 +23,8 @@
 		[*] New Sabot Slug replaces Double Slug
 		[*] Cooler effects for Dragon Breath and Explosive Slugs
 	[/list]
+	[*] AW Sniper was rescaled to IRL size, animations were tweaked
+	[*] PV-9' ironsights are way shorter now (sadly, sticker slot in rear sight was removed)
 	[*] Updated plenty of firing and reloading SFX
 	[*] Headshots now deal up to 50% more damage, depending on the weapon
 	[*] Debuffed attachments that enabled automatic/burst fire on pistols
