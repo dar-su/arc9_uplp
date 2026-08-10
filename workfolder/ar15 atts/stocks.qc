@@ -20,6 +20,7 @@ $bodygroup "body"
 	studio "stock_m4ss.smd" // 12 c
 
 	studio "stock_cqr.smd" // 13 d
+	studio "adarstock.smd" // 14 e
 }
 
 $sequence "idle" {

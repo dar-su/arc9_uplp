@@ -40,6 +40,7 @@ $bodygroup "hg" { // 2
 
 	studio "hg_xm.smd"
 	studio "hg_rislong_covers.smd"
+	studio "adarhg.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"

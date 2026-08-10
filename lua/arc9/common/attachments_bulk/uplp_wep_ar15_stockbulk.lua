@@ -572,6 +572,49 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_cqr")
 
+---------- uplp_ar15_stock_adar
+ATT = {}
+
+ATT.PrintName = "Adar"
+ATT.CompactName = "Adar"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "adarstock.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
+ATT.ModelBodygroups = "e"
+-- ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.SortOrder = 3
+ATT.Category = "uplp_ar15_stock_grip_combined"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_no_pgrip", "uplp_ar15_pgrip"}
+
+-- reduces more recoil than m16
+
+-- Positives
+ATT.RecoilAutoControlMult = 2
+ATT.VisualRecoilMultHipFire = 0.25
+ATT.SwayMultSights = 0.85
+
+-- Negatives
+ATT.SpeedMultShooting = 0.85
+
+-- Buffer Tube stats
+ATT.RecoilAdd = -1.15
+ATT.SwayAddSights = -1
+ATT.AimDownSightsTimeAdd = 0.1 + 0.03
+ATT.SprintToFireTimeAdd = 0.1 + 0.02
+ATT.SpeedMultSights = 0.85 - 0.08
+ATT.SpeedAdd = -0.05 - 0.02
+ATT.SpreadAddHipFire = 0.01 + 0.01
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_stock_adar")
+
 
 -- exclusive to sr25
 ---------- uplp_sr25_stock_wood

@@ -41,7 +41,8 @@ SWEP.StandardPresets = {
 "[416]XQAAAQDhAQAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrs4OI6dTSJt77JfvIpuy+e6dRbrd3I4q5cBedufeWIoNR3lGwPSLGNhTXJZ34UCCQs9Ta/xSvCyxLNexALqfMtZlGexYMeO6aD0MAhCTvhwLcFp8zKgw+wsMqND7gRoeyCXrZ5xSq+/BTgcKYAybtebsmG6MTWFpxJkoIkXFkrEv9M6rNR8utqvr1JssjAb1Zmr/Ndi+UZsyjJL7yPA==",
 "[A1]XQAAAQDrAQAAAAAAAAA9iIIiM7tupQCpjtobRJEkdYYzR6F4P3FJEqy9RgTXBPo9Utbzsdt9mvHqXCUqUhDC2iSHCJwrlAYaf/YT16tmwSbV6q6mxsRLbYxxlBSyemA555/Ceaq0hOnyryDtInKwEDAv9pYiPhtDf25wfn3gDXWA80GyNmbQfGCpxVDaI/BpO6enUt7q1YTtwbPJuwCmqn5cEBQV2EzhDZtkQ7y2qE9WYBXbc6UNtDfK4ojZ0ihrZWi9GdTPyzr7/8OFiNGZGx+uIA==",
 "[Sport]XQAAAQCOAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAUCqlMrjd0SKMmAyPITES4rkUVkdpiVULCIr1fwTdWljx6t+gfb2u7phOPKfC+2nR0SGxNhMV7j379gITOgT9sIVIYX/mxsAcZmcg6zaeJSsbQIpy/uQLAMMMqOfkkWLOH/rOvnXU9M4sxtkFlFwnU4Eb/mN20bviFPzHYOpi9KvmoRGgkKMjslXd4hkVvEUN/DbFk9Lw1s6wW/+7OilH7Al0LKzW+DTmhjgEoES2tEoqezRuHFkNypCloPk8JmQUTDGFXtgu0z5lwrPXXMbmzPq+K6fM40hFblI83nsGt8Glggwir8JwA=",
-"[Hoki]XQAAAQB3AgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT/ifQCK5SlTJbmAAaseaElv0CNCKUvsQ07KKZJjS8KiExsKyKudoesLVmckFB3KspRgzmKGU44iCbs9m1oiSHeDBaslK9ojOdpmkzpAq9e8m8IsFPz4kt9TkvyYPksMdUr8fa2NA4E5o1KTYpsxMDvNLJjB7mdu067NhJayvfLq6VczghryaK2VyQWGebVX+9a4toEZYMOlKZWO5l7zxxZi1hcUCmIGwxZSmQ7Dg8f+uuhYyE1LtqiOPnvGD7PUxz6Hyn//qSyhK/DwKvxeqOFAA=="
+"[Hoki]XQAAAQB3AgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT/ifQCK5SlTJbmAAaseaElv0CNCKUvsQ07KKZJjS8KiExsKyKudoesLVmckFB3KspRgzmKGU44iCbs9m1oiSHeDBaslK9ojOdpmkzpAq9e8m8IsFPz4kt9TkvyYPksMdUr8fa2NA4E5o1KTYpsxMDvNLJjB7mdu067NhJayvfLq6VczghryaK2VyQWGebVX+9a4toEZYMOlKZWO5l7zxxZi1hcUCmIGwxZSmQ7Dg8f+uuhYyE1LtqiOPnvGD7PUxz6Hyn//qSyhK/DwKvxeqOFAA==",
+"[Survivor]XQAAAQCoAgAAAAAAAAA9iIIiM7tuo1AtUBf3wUZreRPidMvXAAT/fIh60Z52+Mdnq5BhO/7uzMOpmWAFz5IJBCk2ZPioYJsMCOg+0+Evgt/c0SNAVwq0LvaGZvF5jDz1OP62Vfy7evMP3eMqAC97c81iaS5TKzm8g2w+T5qFymGGKAZSB5up1zLIkGRLDy2Rc0DOkhxTXLOXKPFlILA1At5g4dzbVAM+RSMJrN2ld+QyrOsiEpZdbOcDQcAQ0rd+28Y+XeuqIxq1sXvZ6IBTV0eC6pj9FNZS6nBOh0AJ3mA="
 }
 
 SWEP.DefaultBodygroups = "0011000000000000" -- Might as well prepare for the future
@@ -1448,6 +1449,9 @@ SWEP.AttachmentElements = {
     [12] = { Pos = Vector(0.045, 1.72, 11.5), },
     }},
     ["uplp_ar15_hg_xm"] = { Bodygroups =      { { 2, 16 }, { 9, 2 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 15.6) },
+    }},
+    ["uplp_ar15_hg_adar"] = { Bodygroups =      { { 2, 18 }, { 9, 2 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 15.6) },
     }},
 

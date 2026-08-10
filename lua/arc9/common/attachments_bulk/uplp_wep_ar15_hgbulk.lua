@@ -568,3 +568,31 @@ ATT.AimDownSightsTimeAdd = -0.02
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_xm")
 
+
+---------- uplp_ar15_hg_adar
+
+
+ATT = {}
+
+ATT.PrintName = "Adar"
+ATT.CompactName = "Adar"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material("entities/uplp_attachements/ar15/adarhg.png", "mips smooth")
+
+ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip", "uplp_no_tactical"}
+ATT.RequireElements = {"uplp_ar15_barrel_mid", "uplp_ar15_barrel_long"}
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_m16short.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0.4, -0.7)
+
+ATT.Category = "uplp_ar15_hg_mid"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 1.1
+ATT.SprintToFireTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = -0.02
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_adar")
