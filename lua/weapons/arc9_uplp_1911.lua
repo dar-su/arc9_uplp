@@ -460,13 +460,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
         },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -474,13 +467,6 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
-            { t = 1, lhik = 1 },
         },
     },
     ["holster"] = {
@@ -490,26 +476,12 @@ SWEP.Animations = {
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.3,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
-            { t = 1, lhik = 1 },
         },
     },
 
