@@ -226,7 +226,7 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.515, -2, 1.7875),
+     Pos = Vector(-2.515, -2, 2.025),
      Ang = Angle(0, 0.48, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
@@ -879,14 +879,6 @@ SWEP.Attachments = {
         Pos = Vector(0, 0.35 + 1.5, 7),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_mp5_bar_kurz", "uplp_mp5_bar_sd", "uplp_grip_used", "uplp_tac_used"},
-    },
-    {
-        PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " D",
-        StickerModel = "models/weapons/arc9/uplp/stickers/mp5_5.mdl",
-        Category = "stickers",
-        Bone = "body",
-        Pos = Vector(0, -2, -2.5 - 1.5),
-        Ang = Angle(90, 90, 180),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker_stock"),
