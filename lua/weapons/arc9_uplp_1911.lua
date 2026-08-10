@@ -1032,7 +1032,7 @@ SWEP.HookP_NameChange = function(self, name)
         name = ARC9:GetPhrase("uplp_weapon_1911_usmc")
     end
 
-    if att["uplp_1911_frame_auto"] then
+    if att["uplp_1911_frame_auto"] and !string.EndsWith(name, ARC9:GetPhrase("uplp_weapon_1911_auto")) then
         name = name .. ARC9:GetPhrase("uplp_weapon_1911_auto")
     end
     
