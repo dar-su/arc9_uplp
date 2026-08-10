@@ -619,3 +619,243 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_ubgl_m203_rail")
 
 
+
+---------- uplp_tac_flashlight_tac
+
+ATT = {}
+
+ATT.PrintName = "Fltac"
+ATT.CompactName = "Fltac"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "fltac.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_flashlight_tac.mdl"
+ATT.ActivateElements = {"uplp_tac_used"}
+
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 45,
+        FlashlightAttachment = 1,
+
+        RecoilDissipationRateMultHipFire = 1.15,
+        RecoilPerShotMultHipFire = 0.75,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
+
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×115%",
+}
+
+-- Negatives
+ATT.SprintToFireTimeAdd = 0.05
+
+
+ATT.Category = {"uplp_tac", "uplp_tac_top"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(-0.2, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_tac_flashlight_tac")
+
+---------- uplp_tac_flashlight_lastac
+
+ATT = {}
+
+ATT.PrintName = "Lastac"
+ATT.CompactName = "Lastac"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "lastac.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_lastac.mdl"
+ATT.ActivateElements = {"uplp_tac_used"}
+
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 25,
+        FlashlightAttachment = 1,
+
+        RecoilPerShotMultHipFire = 0.75,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
+
+ATT.Category = {"uplp_tac", "uplp_tac_top", "uplp_tac_pistol"}
+-- ATT.Category = "uplp_tac_pistol"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0, 0, 0)
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+}
+
+-- Negatives
+ATT.SprintToFireTimeAdd = 0.02
+
+ATT.ModelOffset = Vector(-0.1, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_tac_flashlight_lastac")
+
+---------- uplp_tac_piscomb_dbal
+
+ATT = {}
+
+ATT.PrintName = "Dbal"
+ATT.CompactName = "Dbal"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "dbalpist.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_dbal_pistol.mdl"
+ATT.ActivateElements = {"uplp_tac_used"}
+
+
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_laser"),
+        Laser = true,
+        LaserStrength = 1,
+        LaserColor = Color(255, 0, 0),
+        LaserAttachment = 2,
+        -- Positives
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_flash"),
+
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 512,
+        FlashlightFOV = 31,
+        FlashlightAttachment = 1,
+
+        -- Positives
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+}
+
+-- ATT.CustomCons = {
+-- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
+-- }
+
+ATT.SprintToFireTimeAdd = 0.06
+ATT.AimDownSightsTimeAdd = 0.02
+
+ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
+-- ATT.Category = "uplp_tac_pistol"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(-0.2, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_tac_piscomb_dbal")
+
+---------- uplp_tac_piscomb_viri
+
+ATT = {}
+
+ATT.PrintName = "Viri"
+ATT.CompactName = "Viri"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "viri.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_viri.mdl"
+ATT.ActivateElements = {"uplp_tac_used"}
+
+
+ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
+ATT.ToggleStats = {
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_laser"),
+        Laser = true,
+        LaserStrength = 1,
+        LaserColor = Color(255, 0, 0),
+        LaserAttachment = 2,
+        -- Positives
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_flash"),
+
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 255),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 512,
+        FlashlightFOV = 31,
+        FlashlightAttachment = 1,
+
+        -- Positives
+        SpreadAddHipFire = -0.003,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        -- AimDownSightsTimeMult = 1.2,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
+    }
+}
+
+ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+}
+
+-- ATT.CustomCons = {
+-- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
+-- }
+
+ATT.SprintToFireTimeAdd = 0.06
+ATT.AimDownSightsTimeAdd = 0.02
+
+ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
+-- ATT.Category = "uplp_tac_pistol"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(-0.25, 0, 0)
+
+ARC9.LoadAttachment(ATT, "uplp_tac_piscomb_viri")

@@ -447,8 +447,8 @@ ARC9.LoadAttachment(ATT, "uplp_bipod")
 
 ATT = {}
 
-ATT.PrintName = "uplp_grip_cqr"
-ATT.CompactName = "uplp_grip_cqr"
+ATT.PrintName = "Ares"
+ATT.CompactName = "Ares"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "cqrgrip.png", "mips smooth")
@@ -478,3 +478,74 @@ ATT.ModelOffset = Vector(0, -1.5, 0)
 ATT.ModelAngleOffset = Angle(90, 90, -90)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_cqr")
+
+
+---------- uplp_grip_afg
+
+
+ATT = {}
+
+ATT.PrintName = "AFG"
+ATT.CompactName = "AFG"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "afg.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_afg.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
+
+ATT.Category = "uplp_grip_horiz"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- Positives
+-- ATT.AimDownSightsTimeMult = 0.9
+
+-- -- Negatives
+-- ATT.RecoilAutoControlMult = 0.85
+-- ATT.SwayMultSights = 1.3
+
+ATT.ModelOffset = Vector(0, -0.5, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+
+ARC9.LoadAttachment(ATT, "uplp_grip_afg")
+
+
+---------- uplp_grip_cqr_mini
+
+
+ATT = {}
+
+ATT.PrintName = "Ares mini"
+ATT.CompactName = "Ares mini"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "cqrmini.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/tac_grip_cqr_mini.mdl"
+-- ATT.ModelBodygroups = "1"
+ATT.LHIK = true
+ATT.LHIK_Priority = 8
+
+ATT.ActivateElements = {"uplp_grip_used"}
+ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
+
+ATT.Category = "uplp_grip_horiz"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+-- -- Positives
+-- ATT.RecoilAutoControlMult = 1.4
+
+-- -- Negatives
+-- ATT.AimDownSightsTimeMult = 1.05
+-- ATT.SprintToFireTimeMult = 1.05
+-- ATT.SpeedMultSights = 0.95
+
+
+ATT.ModelOffset = Vector(0, -3.5, 0)
+ATT.ModelAngleOffset = Angle(90, 90, -90)
+
+ARC9.LoadAttachment(ATT, "uplp_grip_cqr_mini")

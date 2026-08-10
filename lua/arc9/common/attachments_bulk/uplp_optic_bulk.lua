@@ -1344,7 +1344,7 @@ ATT.FoldSights = true
 
 ATT.Sights = {
     {
-        Pos = Vector(0, 7, -0.55),
+        Pos = Vector(0, 7, -0.64),
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 57,
@@ -1371,6 +1371,8 @@ ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 table.Merge(ATT, stats_small)
+ATT.Scale = 1.1
+ATT.ModelOffset = Vector(0, 0, -0.03)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rmr")
 
@@ -2498,7 +2500,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 444
+ATT.HoloSightSize = 555
 ATT.HoloSightColorable = true
 -- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot3 c.png", "mips smooth")
@@ -2570,7 +2572,7 @@ end
 ATT.HoloSight = true
 ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot3.png", "mips smooth")
 ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
-ATT.HoloSightSize = 444
+ATT.HoloSightSize = 555
 ATT.HoloSightColorable = true
 -- ATT.HoloSightDepthAdjustment = -0.003
 local mat2 = Material("vgui/uplp_reticles/new/dot3 c.png", "mips smooth")
@@ -2992,8 +2994,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_thermholo")
 
 ATT = {}
 
-ATT.PrintName = "uplp_g36_top_scope_rds"
-ATT.CompactName = "uplp_g36_top_scope_rds"
+ATT.PrintName = "STP"
+ATT.CompactName = "STP"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -3049,8 +3051,8 @@ ARC9.LoadAttachment(ATT, "uplp_g36_top_scope_rds")
 
 ATT = {}
 
-ATT.PrintName = "uplp_optic_rsa"
-ATT.CompactName = "uplp_optic_rsa"
+ATT.PrintName = "Type 7"
+ATT.CompactName = "Type 7"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1-2x"
@@ -3100,3 +3102,325 @@ ATT.Scale = 1.05
 table.Merge(ATT, stats_cqc)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rsa")
+
+
+
+---------- uplp_optic_falco
+
+
+ATT = {}
+
+ATT.PrintName = "Falco"
+ATT.CompactName = "Falco"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+-- ATT.ExcludeElements = {"uplp_shortopticonly"}
+
+ATT.Icon = Material(iconfolder .. "falco.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_falco.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7, -1.36),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/holo6.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+-- ATT.HoloSightReticle:SetVector("$color2", Vector(1, 1, 1)) -- bright color
+ATT.HoloSightSize = 530
+ATT.HoloSightColorable = true
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/holo6 c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0.2, 0, -0.1)
+ATT.Scale = 1.1
+
+table.Merge(ATT, stats_cqc)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_falco")
+
+
+---------- uplp_optic_uh1
+
+
+ATT = {}
+
+ATT.PrintName = "UH1"
+ATT.CompactName = "UH1"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "uh1.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_uh1.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 8, -1.66),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_cqc,
+    }
+}
+
+ATT.ActivePosHook = function(swep, pos)
+    return pos - Vector(0, 0, 0.3)
+end
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/uh.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightSize = 400
+ATT.HoloSightColorable = true
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/uh c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
+
+ATT.Category = {"uplp_optic_small", "uplp_optic_mid"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ModelOffset = Vector(0.2, 0, -0.1)
+ATT.Scale = 1.1
+
+table.Merge(ATT, stats_cqc)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_uh1")
+
+
+
+---------- uplp_optic_sro_direct
+
+
+ATT = {}
+
+ATT.PrintName = "SRo"
+ATT.CompactName = "SRo"
+ATT.Description = ATT.PrintName
+
+-- ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "sro.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_sro_direct.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -0.77),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightSize = 220
+ATT.HoloSightColorable = true
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
+
+ATT.Category = {"uplp_optic_direct"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.InvAtt = "uplp_optic_sro"
+
+table.Merge(ATT, stats_pistol)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_sro_direct")
+
+---------- uplp_optic_sro
+
+
+ATT = {}
+
+ATT.PrintName = "SRo"
+ATT.CompactName = "SRo"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "Compact"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "sro.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_sro.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7, -0.8),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_small,
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightSize = 220
+ATT.HoloSightColorable = true
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
+
+ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+table.Merge(ATT, stats_small)
+ATT.Scale = 1.1
+ATT.ModelOffset = Vector(0, 0, -0.03)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_sro")
+
+---------- uplp_optic_justice_direct
+
+
+ATT = {}
+
+ATT.PrintName = "Just"
+ATT.CompactName = "Just"
+ATT.Description = ATT.PrintName
+
+-- ATT.Folder = "1-2x"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "justice.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_justice_direct.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 10, -0.6),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightSize = 177
+ATT.HoloSightColorable = true
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
+
+ATT.Category = {"uplp_optic_direct"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+ATT.InvAtt = "uplp_optic_justice"
+
+table.Merge(ATT, stats_pistol)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_justice_direct")
+
+---------- uplp_optic_justice
+
+
+ATT = {}
+
+ATT.PrintName = "Just"
+ATT.CompactName = "Just"
+ATT.Description = ATT.PrintName
+
+ATT.Folder = "Compact"
+
+ATT.ActivateElements = {"uplp_optic_used"}
+
+ATT.Icon = Material(iconfolder .. "justice.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/optic_justice.mdl"
+ATT.FoldSights = true
+
+ATT.Sights = {
+    {
+        Pos = Vector(0, 7, -0.61),
+        Ang = Angle(0, -0, 0),
+        Magnification = 1.25,
+        ViewModelFOV = 57,
+
+        SwayAddSights = sway_small,
+    }
+}
+
+ATT.HoloSight = true
+ATT.HoloSightReticle = Material("vgui/uplp_reticles/new/dot.png", "mips smooth")
+ATT.HoloSightReticle:SetInt("$flags", bit.bor(ATT.HoloSightReticle:GetInt("$flags"), 128)) -- additive
+ATT.HoloSightSize = 177
+ATT.HoloSightColorable = true
+-- ATT.HoloSightDepthAdjustment = -0.003
+local mat2 = Material("vgui/uplp_reticles/new/dot c.png", "mips smooth")
+ATT.HoloSightEzFunc = function(self, v1, v2, v3, v4, col)
+    col.a = 255 * 0.75
+    render.SetMaterial(mat2)
+    render.DrawQuad(v1, v2, v3, v4, col)
+end
+
+
+ATT.Category = {"uplp_optic_micro", "uplp_optic_backup"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+table.Merge(ATT, stats_small)
+ATT.Scale = 1.1
+ATT.ModelOffset = Vector(0, 0, -0.03)
+
+ARC9.LoadAttachment(ATT, "uplp_optic_justice")
