@@ -80,7 +80,7 @@ SWEP.ViewModelFOVBase = 66
 SWEP.BobSettingsMove =  {0.85, -0.45, 0.5,    0.9, -1.5, 1.15}
 SWEP.BobSettingsSpeed = {0.9, 1, 0.92,    1, 0.92, 0.8}
 
-SWEP.ActivePos = Vector(-0.1, -1, -0.6)
+SWEP.ActivePos = Vector(0.4, -1, -1.15)
 SWEP.ActiveAng = Angle(0, 0, -0)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
@@ -165,9 +165,9 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 5
 SWEP.VisualRecoilSideHipFire = -0.2
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 0.5
-SWEP.VisualRecoilDampingConstHipFire = 45
-SWEP.VisualRecoilPositionBumpUpHipFire = .5
+SWEP.VisualRecoilPunchHipFire = 10
+SWEP.VisualRecoilDampingConstHipFire = 15
+SWEP.VisualRecoilPositionBumpUpHipFire = -.5
 
 -- Accuracy and Spread
 SWEP.UseDispersion = true
