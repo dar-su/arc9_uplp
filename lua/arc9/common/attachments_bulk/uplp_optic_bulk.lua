@@ -2110,7 +2110,7 @@ ATT.RTScopeNew_ShadowIntensity = 0.5
 ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ModelOffset = Vector(0, 0, -0.025)
+ATT.ModelOffset = Vector(0, 0, -0.125)
 ATT.Scale = 0.85
 
 table.Merge(ATT, stats_big)

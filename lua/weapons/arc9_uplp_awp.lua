@@ -78,7 +78,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 65
-SWEP.ActivePos = Vector(-0.25, 0, 0.5)
+SWEP.ActivePos = Vector(1.0, 0, 0.75)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -154,11 +154,11 @@ SWEP.RecoilMultBipod = 0.4
 SWEP.VisualRecoil = 1
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
+SWEP.VisualRecoilUp = 0.1 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 30 -- Roll tilt
-SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 80
+SWEP.VisualRecoilPunch = 32 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilDampingConst = 10
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
@@ -166,9 +166,9 @@ SWEP.VisualRecoilMultHipFire = 1
 SWEP.VisualRecoilUpHipFire = 2
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 2
-SWEP.VisualRecoilDampingConstHipFire = 45
-SWEP.VisualRecoilPositionBumpUpHipFire = .5
+SWEP.VisualRecoilPunchHipFire = 7
+SWEP.VisualRecoilDampingConstHipFire = 15
+SWEP.VisualRecoilPositionBumpUpHipFire = -.5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
@@ -197,7 +197,7 @@ SWEP.SwayMultSights = 1
 SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes
-SWEP.RPM = 450 -- How fast gun shoot
+SWEP.RPM = 120 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -275,14 +275,16 @@ SWEP.DropMagazineVelocity = Vector(0, -20, -10)
 ---- Sounds
 
 local pathRZ = ")uplp_rz/awp/"
+local pathRZ2 = ")uplp_urban_temp/awp/"
+local pathRZ3 = ")uplp_rz/lever/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/awp/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathRZ .. "fire-01.wav",
-    pathRZ .. "fire-02.wav",
-    pathRZ .. "fire-03.wav",
+    pathRZ2 .. "fire-01.wav",
+    pathRZ2 .. "fire-02.wav",
+    pathRZ2 .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -294,14 +296,14 @@ SWEP.ShootSoundSilenced = {
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
 
 SWEP.DistantShootSound = {
-    pathUTC .. "308tails/fire-dist-308-rif-ext-01.wav",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-02.wav",
-    pathUTC .. "308tails/fire-dist-308-rif-ext-03.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-01.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-02.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-ext-03.wav",
 }
 SWEP.DistantShootSoundIndoor = {
-    pathUTC .. "308tails/fire-dist-308-rif-int-01.wav",
-    pathUTC .. "308tails/fire-dist-308-rif-int-02.wav",
-    pathUTC .. "308tails/fire-dist-308-rif-int-03.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-01.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-02.wav",
+    pathUTC .. "50bmgtails/fire-dist-50bmg-rif-int-03.wav",
 }
 
 SWEP.LayerSoundIndoor = SWEP.DistantShootSoundIndoor
@@ -381,19 +383,14 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cycle",
-        -- ShellEjectAt = 5,
-        MinProgress = 0.75,
-        Mult = 1.1,
+        MinProgress = 0.95,
+        Mult = 1.15,
         EventTable = {
-            -- { s = reloadsound .. "reload_boltopen_v2.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            -- { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, c = ca, v = 0.8 },
-
-            -- {s = ratel,                             t = 0.07},
-            {s = pathUT .. "boltup.ogg",          t = 0.1},
-            {s = pathUT .. "boltback.ogg",        t = 0.2},
-            {s = pathUT .. "boltforward.ogg",     t = 0.32},
-            {s = pathUT .. "eject.ogg",           t = 0.4},
-            {s = pathUT .. "boltdown.ogg",        t = 0.5},
+            {s = pathUT .. "boltup.ogg",          t = 0},
+            {s = pathRZ3 .. "cycle1.ogg",        t = 0.18},
+            {s = pathUT .. "eject.ogg",           t = 0.3},
+            {s = pathRZ3 .. "cycle2.ogg",     t = 0.36},
+            {s = pathUT .. "boltdown.ogg",        t = 0.54},
         },
     },
     ["ready"] = {
@@ -417,7 +414,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		Mult = 0.8,
+		Mult = 1.2,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
@@ -454,6 +451,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
         NoIdle = true,
+        Mult = 1.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
@@ -823,7 +821,7 @@ SWEP.Attachments = {
         Category = {"uplp_awp_rs", "uplp_backup_optic"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.3, 0.55),
+        Pos = Vector(0, -0.35, 0.45),
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"uplp_no_backup"},
         MergeSlots = {11},
@@ -834,7 +832,7 @@ SWEP.Attachments = {
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),
-        Pos = Vector(0, -0.3, 1.326),
+        Pos = Vector(0, -0.35, 1.1),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.748, 0, 0),
         MergeSlots = {14}, -- large optics are merged (they're not compatible with AR-15 rear iron)
@@ -889,7 +887,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_backup"),
         Category = {"uplp_backup_optic_front"},
         Bone = "body",
-        Pos = Vector(0, -0.3, 6.25),
+        Pos = Vector(0, -0.35, 6.25),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_backup_optic_is"},
         Installed = "uplp_backup_optic_is_front",
@@ -922,7 +920,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_rs"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.4, 1),
+        Pos = Vector(0, -0.35, 1),
         Ang = Angle(90, 90, 180),
         Hidden = true,
         InstalledElements = {"uplp_awp_push_optic"},
@@ -933,7 +931,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_fs"},
         DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.4, 26),
+        Pos = Vector(0, -0.35, 29),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_awp_brl_aws"},
     },
@@ -948,13 +946,13 @@ SWEP.Attachments = {
         RequireElements = {"uplp_ar15_rs"},
         ExcludeElements = {"uplp_awp_brl_aws", "uplp_optic_used", "uplp_ar15_rs_carry"},
     },
-    {   --
+    {   -- big optic
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_big"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         CorrectiveAng = Angle(0, 0, 0),
-        Pos = Vector(0, -0.3, 1.326),
+        Pos = Vector(0, -0.35, 1.4),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.748, 0, 0),
         ExcludeElements = {"uplp_ar15_rs_tall", "uplp_ar15_rs_short"},
