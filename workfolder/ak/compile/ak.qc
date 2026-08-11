@@ -214,9 +214,9 @@ $sequence "fire_sights" {
 }
 
 $sequence "ready" {
-	"anims\ready.smd"
-	"anims\ready_iron.smd"
- 	blend "sights" 0 1
+	"anims\ready_NEW.smd"
+	// "anims\ready_iron.smd"
+ 	// blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -293,16 +293,16 @@ $sequence "modeswitch" {
 
 
 $sequence "reload_545" {
-	"anims\reload_545.smd"
-	"anims\reload_iron_545.smd"
+	"anims\reload_NEW.smd"
+	"anims\reload_NEW_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_545" {
-	"anims\reload_empty_545.smd"
-	"anims\reload_empty_iron_545.smd"
+	"anims\reload_NEW_empty.smd"
+	"anims\reload_NEW_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -311,16 +311,16 @@ $sequence "reload_empty_545" {
 
 
 $sequence "reload_556" {
-	"anims\reload_556.smd"
-	"anims\reload_iron_556.smd"
+	"anims\reload_NEW5.smd"
+	"anims\reload_NEW5_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_556" {
-	"anims\reload_empty_556.smd"
-	"anims\reload_empty_iron_556.smd"
+	"anims\reload_NEW5_empty.smd"
+	"anims\reload_NEW5_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -329,16 +329,16 @@ $sequence "reload_empty_556" {
 
 
 $sequence "reload_545fat" {
-	"anims\reload_545fat.smd"
-	"anims\reload_iron_545fat.smd"
+	"anims\reload_NEWF.smd"
+	"anims\reload_NEWF_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_545fat" {
-	"anims\reload_empty_545fat.smd"
-	"anims\reload_empty_iron_545fat.smd"
+	"anims\reload_NEWF_empty.smd"
+	"anims\reload_NEWF_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -347,16 +347,16 @@ $sequence "reload_empty_545fat" {
 
 
 $sequence "reload_545long" {
-	"anims\reload_545long.smd"
-	"anims\reload_iron_545long.smd"
+	"anims\reload_NEWL.smd"
+	"anims\reload_NEWL_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_545long" {
-	"anims\reload_empty_545long.smd"
-	"anims\reload_empty_iron_545long.smd"
+	"anims\reload_NEWL_empty.smd"
+	"anims\reload_NEWL_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -365,16 +365,16 @@ $sequence "reload_empty_545long" {
 
 
 $sequence "reload_308" {
-	"anims\reload_308.smd"
-	"anims\reload_iron_308.smd"
+	"anims\reload_NEW308.smd"
+	"anims\reload_NEW308_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_308" {
-	"anims\reload_empty_308.smd"
-	"anims\reload_empty_iron_308.smd"
+	"anims\reload_NEW308_empty.smd"
+	"anims\reload_NEW308_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -383,16 +383,16 @@ $sequence "reload_empty_308" {
 
 
 $sequence "reload_762" {
-	"anims\reload_762.smd"
-	"anims\reload_iron_762.smd"
+	"anims\reload_NEW7.smd"
+	"anims\reload_NEW7_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_762" {
-	"anims\reload_empty_762.smd"
-	"anims\reload_empty_iron_762.smd"
+	"anims\reload_NEW7_empty.smd"
+	"anims\reload_NEW7_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -401,16 +401,16 @@ $sequence "reload_empty_762" {
 
 
 $sequence "reload_762long" {
-	"anims\reload_762long.smd"
-	"anims\reload_iron_762long.smd"
+	"anims\reload_NEWL7.smd"
+	"anims\reload_NEWL7_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty_762long" {
-	"anims\reload_empty_762long.smd"
-	"anims\reload_empty_iron_762long.smd"
+	"anims\reload_NEWL7_empty.smd"
+	"anims\reload_NEWL7_empty_iron.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
