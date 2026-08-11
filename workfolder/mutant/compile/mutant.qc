@@ -56,32 +56,34 @@ $bodygroup "rnd" { // 5
 }   
 
 $bodygroup "mag" { // 6
-	studio "mag 762.smd" // 0
-	studio "mag 762 bak.smd" // 1
+	studio "mag 762 new.smd" // 0
+	studio "mag 762 bak new.smd" // 1
 	studio "mag 762 12.smd" // 2
 	studio "mag 762 old.smd" // 3
 	studio "mag 762 oldest.smd" // 4
-	studio "mag 762 40.smd" // 5
+	studio "mag 762 40 new.smd" // 5
 	studio "mag 762 40 old.smd" // 6
 	studio "mag 762 drum.smd" // 7
 	
-	studio "mag 545.smd" // 8
-	studio "mag 545 bak.smd" // 9
-	studio "mag 545 pmag.smd" // 10
+	studio "mag 545 new.smd" // 8
+	studio "mag 545 bak new.smd" // 9
+	studio "mag 545 pmag new.smd" // 10
 	studio "mag 545 12.smd" // 11
-	studio "mag 545 45.smd" // 12
+	studio "mag 545 45 new.smd" // 12
 	blank
 	studio "mag 545 drum.smd" // 14
 
-	studio "mag 556.smd" // 15
+	studio "mag 556 new.smd" // 15
 	studio "mag 556 12.smd" // 16
-	studio "mag 556 pmag.smd" // 17
+	studio "mag 556 pmag new.smd" // 17
 
 	blank
-	studio "mag 939.smd" // 19
+	studio "mag 939 new.smd" // 19
 
-	studio "mag 762 pmag.smd" // 20
-	studio "mag 762 pmagb.smd" // 21
+	studio "mag 762 pmag new.smd" // 20
+	studio "mag 762 pmagb new.smd" // 21
+
+	studio "mag 545 45 poly new.smd" // 22
 }   
 
 

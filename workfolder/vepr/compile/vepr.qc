@@ -48,7 +48,9 @@ $bodygroup "hg" { // 3
 	studio "hg mini.smd" // 20 k
 	studio "hg micro.smd" // 21 l
 
-	blank  // 22 m
+	blank  // 22 
+	
+	studio "hg rpk74.smd" // 23 m
 }
 
 $bodygroup "underhg" { // 4

@@ -43,7 +43,7 @@ SWEP.StandardPresets = {
 "[7.62 Classic]XQAAAQAnAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKO9eE5FX+iP9PuTM3N/SfEx/VpOoAdhT2NRRlF/O9Pj25PG8iEPO4wqrtYL2ac5tpCoehPFPTBCO/kKNyA4q2i5yg4RMpI8EYxuN4lrkpgXd34W",
 "[HPK 7.62]XQAAAQAhAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2CIHmQQzGjP1+VLoOe3JBT/nozKOym7sUWN7uq5HCUCYYAO0/dn5tSfNnOajWMbGI2QPB1bP698Xo/OtF3XD0zUeFYJuNWLKUBryImARlUJ1ex+Xe2FKYgyH+bZOpVoYPjr4Z7Q==",
 "[5.45 Short]XQAAAQAlAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnze9HPYmS8spMTibtSril7Sakm05iZUG2v11sSd3eOEMxJ6KFpw6yQV/yDfYyccIHSSN68VGxSO3JY3fu1AY+5li7kxzfQgXJL8RNzC75fVbt22sDn+Hg",
-"[HPK 5.45]XQAAAQARAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJPehJl2Adrwt7Pbx/DWkhjgp3deKiFuJj3jHJRrWnDnxYUkamNJSikwllpcdPluZRVpEDcoCycv+lki7XSdE7tRdiUDQzRy6kWM9d9P3Hn7v3Ia+6o0NXx9dY3j8orB8xlTSQLeoWRfwtKlrv4A",
+"[HPK 5.45]XQAAAQAMAgAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPmCZlzL7XO8ZTj43WfasFvO1IlW21AGjazNTHE78WZs6de5WM5F7j4u1a3WmTpOgEsMgXHHtIF4SEE+7hu+yJObRvPvbCpG6qmTQQq0tE7EmMhxYTLm94NviH0JWBaLetEt3zPhYliivSJtCWELqoqAOxD9E6ofjlnmBzmaDXlQlaGVoydwRk34/NVMNQFVEM7HTjgCqL6Ua4qpYGwIIMlAA=",
 "[7.62 Sport]XQAAAQBqAQAAAAAAAAA9iIIiM7hMNz0dhIkbkvJZHs6byFCnDJdwgfXjhzuPx++rG+SXv8mjUlUNsYBBZvylRPuy/QKOqKePGum19amiUNWoKnIG5eUDcEThoNBnUjkNtZbLMJAWk5zg7PN4JBoagEzJiuYTih6vxCvHGAE0YgH3oxRa9nZr4qP0xNLDu62elI/tnViNUrPlYUEhMovrTyptDxYQPk++CWs6P9cgM9GieJlYAA==",
 }
 
@@ -1259,7 +1259,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
 
     if eles["uplp_ak_brl_rpk"] and wep:GetBipod() then
         if wep:GetEnterBipodTime() + 0.2 < CurTime() then
-            mdl:SetBodygroup(2, 10)
+            mdl:SetBodygroup(2, 6)
         end
     end
 
@@ -1293,8 +1293,8 @@ SWEP.AttachmentElements = {
     [9] = { Pos = Vector(0, -0.35, 0.25), },
     [10] = { Pos = Vector(0, -0.35, 6.5), }
     }},
-    ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 8 } } },
-    ["uplp_ak_dc_internals"] =            { Bodygroups = { { 3, 9 } } },
+    ["uplp_ak_dc_no"] =            { Bodygroups = { { 3, 7 } } },
+    ["uplp_ak_dc_internals"] =            { Bodygroups = { { 3, 7 } } },
 
     -- PISTOL GRIPS
     ["uplp_ak_grip_used"] =       { Bodygroups = { { 9, 1 } } },
@@ -1313,6 +1313,7 @@ SWEP.AttachmentElements = {
 
     ["uplp_ak_hg_su_tac"] =  { Bodygroups = { { 4, 11 } } },
     ["uplp_ak_hg_su_dong"] = { Bodygroups = { { 4, 12 } } },
+    ["uplp_ak_hg_rpk74"] = { Bodygroups = { { 4, 13 } } },
 
     --CALIBERS
     ["uplp_ak_calib_545"] = { Bodygroups = { { 5, 1 } } },
@@ -1341,6 +1342,7 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_545_30_12"] = { Bodygroups = { { 6, 11 } } },
 
     ["uplp_ak_mag_545_45"] = { Bodygroups = { { 6, 12 } } },
+    ["uplp_ak_mag_545_45p"] = { Bodygroups = { { 6, 22 } } },
 
     ["uplp_ak_mag_545_60"] = { Bodygroups = { { 6, 13 } } },
 

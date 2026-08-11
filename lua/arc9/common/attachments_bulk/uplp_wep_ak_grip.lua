@@ -254,3 +254,26 @@ ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_ak_grip_agr")
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "Rk3"
+ATT.CompactName = "Rk3"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rk3.png", "mips smooth")
+ATT.Category = "uplp_ak_grip"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.ActivateElements = {"uplp_ak_grip_used"}
+
+ATT.Model = "models/weapons/arc9/uplp/ak_grips.mdl"
+ATT.ModelBodygroups = "b"
+ATT.ModelOffset = Vector(-10.925, -3.55, 7.8)
+
+ATT.AimDownSightsTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = -0.02
+
+ARC9.LoadAttachment(ATT, "uplp_ak_grip_rk3")

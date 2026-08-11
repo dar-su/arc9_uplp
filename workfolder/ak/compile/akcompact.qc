@@ -52,6 +52,7 @@ $bodygroup "hg" { // 4
 	studio "hgp dong.smd" // 6
 	studio "hgp zenith compact.smd" // 7
 	blank  // 8
+	studio "hgp rpk74.smd" // 7
 }   
 
 // $bodygroup "stock" { // 6

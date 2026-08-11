@@ -444,3 +444,20 @@ ATT.SwayMultSights = 1.25
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_12tac")
 
 -------------------------------------------
+
+-------------------------------------------
+
+ATT = {}
+
+ATT.PrintName = "RPK74 Handguard"
+ATT.CompactName = "RPK74"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "rpk74.png", "mips smooth")
+ATT.Category = {"uplp_handguard_normal", "uplp_molot_handguard"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+
+ATT.ActivateElements = {"uplp_ak_hg_rpk74"}
+
+ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk74")

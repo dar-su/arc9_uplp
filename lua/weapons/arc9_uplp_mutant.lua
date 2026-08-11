@@ -1041,6 +1041,7 @@ SWEP.AttachmentElements = {
     ["uplp_ak_mag_545_30_12"] = { Bodygroups = { { 7, 11 } } },
 
     ["uplp_ak_mag_545_45"] = { Bodygroups = { { 7, 12 } } },
+    ["uplp_ak_mag_545_45p"] = { Bodygroups = { { 7, 22 } } },
 
     ["uplp_ak_mag_545_60"] = { Bodygroups = { { 7, 13 } } },
 

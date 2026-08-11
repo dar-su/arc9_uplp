@@ -850,6 +850,7 @@ SWEP.AttachmentElements = {
     ["uplp_ak_hg_dong"] =  { Bodygroups = { { 4, 6 } } },
     ["uplp_ak_hg_azen_c"] = { Bodygroups = { { 4, 7 } } },
     ["uplp_ak_hg_bizon"] = { Bodygroups = { { 4, 8 } } },
+    ["uplp_ak_hg_rpk74"] = { Bodygroups = { { 4, 9 } } },
 
     --CALIBERS
     ["uplp_ak_smg_calib_bizon"] = { Bodygroups = { { 5, 1 } } },

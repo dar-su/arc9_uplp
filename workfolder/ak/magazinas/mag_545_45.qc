@@ -4,7 +4,7 @@ $cdmaterials "models/weapons/arc9/uplp"
 
 $bodygroup "body"
 {
-	studio "mag_545_45.smd"
+	studio "mag 545 45 new.smd"
 }
 
 $collisionmodel "mag_545_45.smd"

@@ -998,6 +998,7 @@ SWEP.AttachmentElements = {
     ["uplp_molot_hg_tac_w"] =   { Bodygroups = { { 3, 11 } } },
     ["uplp_molot_hg_cool"] =    { Bodygroups = { { 3, 14 }, { 4, 1 } } },
     ["uplp_molot_hg_cool2"] =   { Bodygroups = { { 3, 17 }, { 4, 1 } } },
+    ["uplp_ak_hg_rpk74"] = { Bodygroups = { { 3, 23 } } },
 
     -- MAGAZINES
     ["uplp_molot_mag_long"] = { Bodygroups = { { 5, 1 } } },

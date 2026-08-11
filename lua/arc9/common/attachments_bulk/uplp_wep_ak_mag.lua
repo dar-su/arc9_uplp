@@ -957,3 +957,50 @@ ATT.PhysBulletMuzzleVelocityMult = 0.45
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_939_30")
 
 -------------------------------------------
+
+
+ATT = {}
+
+ATT.PrintName = "40-Round 5.45x39mm (Polymer)"
+ATT.CompactName = "40R 5.45 (P)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "54545p.png", "mips smooth")
+ATT.Category = {"uplp_ak_mag", "uplp_ak_mag_545"}
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Folder = "5.45"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_545_45_poly.mdl"
+
+ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
+
+ATT.ShootSound = shoot545
+ATT.ShootSoundSilenced = shoot545sil
+
+ATT.DistantShootSound = shoot556dist
+ATT.DistantShootSoundIndoor = shoot556distindoor
+
+ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    if anim == "inspect" then
+        return anim .. "_545"
+    end
+    return anim .. "_545_45rnd"
+end
+
+ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
+
+table.Merge(ATT, stats545)
+
+ATT.ClipSizeOverride = 40
+
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
+-- ATT.ReloadTimeMult = 1.05
+
+ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45p")

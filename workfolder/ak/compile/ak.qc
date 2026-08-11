@@ -3,15 +3,11 @@ $modelname "weapons\arc9\c_uplp_ak.mdl"
 $bodygroup "rec" { // 0
 	studio "main.smd" // 0
 	studio "main old.smd" // 1
-	studio "main 12.smd" // 2
-	studio "main 12 alt.smd" // 3
 }   
 
 $bodygroup "fireselector" { // 1
 	studio "fireselector std.smd" // 0
 	studio "fireselector old.smd" // 1
-	studio "fireselector 12.smd" // 2
-	studio "fireselector m1.smd" // 3
 }   
 
 $bodygroup "br" { // 2
@@ -21,10 +17,6 @@ $bodygroup "br" { // 2
 	studio "br rpk.smd" // 3
 	studio "br 109.smd" // 4
 	studio "br su.smd" // 5
-	studio "br 12.smd" // 6
-	studio "br 12 k.smd" // 7
-	studio "br 19.smd" // 8
-	studio "br rpk16.smd" // 9
 	
 	studio "br rpkunfold.smd" // 10 a
 }   
@@ -37,9 +29,7 @@ $bodygroup "dc" { // 3
 	studio "dc rail2.smd" // 4
 	studio "dc zenith.smd" // 5
 	studio "dc beryl.smd" // 6
-	studio "dc 12.smd" // 7
 	blank  // 8
-	studio "internals.smd" // 9
 }   
 
 // $bodygroup "grip" { // 4
@@ -60,12 +50,9 @@ $bodygroup "hg" { // 4
 	studio "br su hg.smd" // 8
 	studio "br su hg tac.smd" // 8
 	studio "br su hg dong.smd" // 8
-	studio "hg 12.smd" // 9
-	studio "hg rpk16.smd" // 10
+	studio "hg rpk74.smd" // 13
 	blank  // 11
-	studio "hg 12m1.smd" // 12 c
-	studio "hg 12custom.smd" // 13 d
-}   
+}
 
 // $bodygroup "stock" { // 6
 // 	blank // 20
@@ -80,33 +67,35 @@ $bodygroup "rnd" { // 5
 }   
 
 $bodygroup "mag" { // 6
-	studio "mag 762.smd" // 0
-	studio "mag 762 bak.smd" // 1
+	studio "mag 762 new.smd" // 0
+	studio "mag 762 bak new.smd" // 1
 	studio "mag 762 12.smd" // 2
 	studio "mag 762 old.smd" // 3
 	studio "mag 762 oldest.smd" // 4
-	studio "mag 762 40.smd" // 5
+	studio "mag 762 40 new.smd" // 5
 	studio "mag 762 40 old.smd" // 6
 	studio "mag 762 drum.smd" // 7
 	
-	studio "mag 545.smd" // 8
-	studio "mag 545 bak.smd" // 9
-	studio "mag 545 pmag.smd" // 10
+	studio "mag 545 new.smd" // 8
+	studio "mag 545 bak new.smd" // 9
+	studio "mag 545 pmag new.smd" // 10
 	studio "mag 545 12.smd" // 11
-	studio "mag 545 45.smd" // 12
-	studio "mag 545 60.smd" // 13
+	studio "mag 545 45 new.smd" // 12
+	studio "mag 545 60 new.smd" // 13
 	studio "mag 545 drum.smd" // 14
 
-	studio "mag 556.smd" // 15
+	studio "mag 556 new.smd" // 15
 	studio "mag 556 12.smd" // 16
-	studio "mag 556 pmag.smd" // 17
+	studio "mag 556 pmag new.smd" // 17
 
 	studio "mag 308.smd" // 18
-	studio "mag 939.smd" // 19
+	studio "mag 939 new.smd" // 19
 
-	studio "mag 762 pmag.smd" // 20
-	studio "mag 762 pmagb.smd" // 21
-}   
+	studio "mag 762 pmag new.smd" // 20
+	studio "mag 762 pmagb new.smd" // 21
+
+	studio "mag 545 45 poly new.smd" // 22
+}
 
 $bodygroup "nmount" { // 7
 	blank // 0
@@ -118,13 +107,15 @@ $bodygroup "nmount" { // 7
 $bodygroup "rs" { // 8 HITTING LIMITS AFTER SU RS!!!!!!!!! dont add anything more or gun will become funny
 	blank // 0
 	studio "rs su.smd" // 1
-	studio "rs 12.smd" // 2
-	studio "rs 12 evo.smd" // 3
-	studio "rs m1.smd" // 3
 }   
 	
 $bodygroup "gripdef" { // 9
 	studio "grip std.smd" // 0
+	blank
+}
+	
+$bodygroup "internals" { // 9
+	studio "internals.smd" // 0
 	blank
 }
 
