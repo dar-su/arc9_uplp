@@ -135,6 +135,7 @@ $sequence "idle"{
 	"anims\idle_iron.smd"
 	fps 30
  	blend "sights" 0 1
+	snap
 	// loop
 	// fadein 0
 	// fadeout 0.2
@@ -145,6 +146,7 @@ $sequence "idle_empty"{
 	"anims\idle_empty_iron.smd"
 	fps 30
  	blend "sights" 0 1
+	snap
 	// loop
 	// fadein 0
 	// fadeout 0.2
@@ -200,8 +202,8 @@ $sequence "fire_sights" {
 
 $sequence "ready" {
 	"anims\ready.smd"
-	"anims\ready_iron.smd"
- 	blend "sights" 0 1
+	// "anims\ready_iron.smd"
+ 	// blend "sights" 0 1
 	fps 28
 	"ACT_VM_DRAW" 1
 	snap
@@ -257,16 +259,16 @@ $sequence "modeswitch_empty" {
 
 
 $sequence "reload" {
-	"anims\reload_vepr.smd"
-	"anims\reload_vepr_iron.smd"
+	"anims\reload_veprnew.smd"
+	"anims\reload_veprnew_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_empty" {
-	"anims\reload_vepr_empty.smd"
-	"anims\reload_vepr_empty_iron.smd"
+	"anims\reload_veprnew_empty.smd"
+	"anims\reload_veprnew_empty_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -274,16 +276,16 @@ $sequence "reload_empty" {
 }
 
 $sequence "reload_long" {
-	"anims\reload_vepr_long.smd"
-	"anims\reload_vepr_long_iron.smd"
+	"anims\reload_veprnew_long.smd"
+	"anims\reload_veprnew_long_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_long_empty" {
-	"anims\reload_vepr_long_empty.smd"
-	"anims\reload_vepr_long_empty_iron.smd"
+	"anims\reload_veprnew_long_empty.smd"
+	"anims\reload_veprnew_long_empty_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -291,16 +293,16 @@ $sequence "reload_long_empty" {
 }
 
 $sequence "reload_drum" {
-	"anims\reload_vepr_drum.smd"
-	"anims\reload_vepr_drum_iron.smd"
+	"anims\reload_veprnew_drum.smd"
+	"anims\reload_veprnew_drum_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_drum_empty" {
-	"anims\reload_vepr_drum_empty.smd"
-	"anims\reload_vepr_drum_empty_iron.smd"
+	"anims\reload_veprnew_drum_empty.smd"
+	"anims\reload_veprnew_drum_empty_ads.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -403,6 +405,8 @@ $bonemerge "ValveBiped.Bip01_R_Finger12"
 $bonemerge "ValveBiped.Bip01_R_Finger0"
 $bonemerge "ValveBiped.Bip01_R_Finger01"
 $bonemerge "ValveBiped.Bip01_R_Finger02"
+
+$bonemerge "fakerounds"
 
 // $collisionmodel "col.smd"
 // {

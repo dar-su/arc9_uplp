@@ -557,6 +557,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_drum"
 end
 
+ATT.ReloadInSights = false
+
 ARC9.LoadAttachment(ATT, "uplp_molot_mag_drum")
 
 -------------------------------------------
@@ -602,6 +604,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 
     return anim .. "_drum"
 end
+
+ATT.ReloadInSights = false
 
 ARC9.LoadAttachment(ATT, "uplp_molot_mag_drum_soda")
 
