@@ -217,7 +217,7 @@ ATT.CompactName = "Folded"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 100
 
-ATT.Icon = Material(iconfolder .. "rail.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "grip.png", "mips smooth")
 
 ATT.Category = "uplp_mp7_grip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

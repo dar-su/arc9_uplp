@@ -5,7 +5,8 @@
 	[*] Added the [b]LA M2K11[/b], a modernized version of the aforementioned service pistol
 	
 	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified, few new attachments and slight rebalance!
-	[*] Added lots of new universal attachments
+	[*] AK, AR-15 and Molot reloads were remade! Fresher and nicer
+	[*] Added lots of new universal attachments, extra stuff for AK and AR too!
 	
 	[*] Added new [b]Damage Multiplier[/b] settings inside the ARC9 Settings menu
 	[list]
@@ -30,5 +31,6 @@
 	[*] Debuffed attachments that enabled automatic/burst fire on pistols
 	[*] PM92: Tweaked reload animations
 	[*] MRD57: Reduced reloading speed by ~10%
+	[*] AK-12 code was remade, so your presets will be removed. Sorry
 	[*] Fixed various bugs
 [/list]
