@@ -508,7 +508,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.RecoilAutoControlMult = 0.85
 -- ATT.SwayMultSights = 1.3
 
-ATT.ModelOffset = Vector(0, -0.5, 0)
+ATT.ModelOffset = Vector(0, -0.5, -0.05)
 ATT.ModelAngleOffset = Angle(90, 90, -90)
 
 ARC9.LoadAttachment(ATT, "uplp_grip_afg")
