@@ -476,10 +476,10 @@ SWEP.Animations = {
         MinProgress = 0.75,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "presscheck1.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "forearm_forward.ogg", t = 11.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 36 / 60, c = ca },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
+            { s = pathUT .. "presscheck1.ogg", t = 5 / 30, v = 0.8 },
+            { s = pathUT .. "forearm_forward.ogg", t = 11.5 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 36 / 60 },
         },
     },
 
@@ -488,8 +488,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -497,7 +497,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
     ["draw_quick"] = {
@@ -505,8 +505,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
     ["holster_quick"] = {
@@ -515,14 +515,14 @@ SWEP.Animations = {
         Mult = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -530,7 +530,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
 
@@ -581,7 +581,7 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = ShellInsert, t = 12 / 30, v = 0.6 },
         },
     },
@@ -592,13 +592,13 @@ SWEP.Animations = {
         MinProgress = 0.5,
         Mult = 0.85,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUT .. "breechload.ogg", t = 0 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
             { s = ")uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
 
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, c = ca, v = 0.2 },
-            { s = touchh, t = 49 / 30, c = ca, v = 0.3 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, v = 0.2 },
+            { s = touchh, t = 49 / 30, v = 0.3 },
         },
     },
 
@@ -609,13 +609,13 @@ SWEP.Animations = {
         Mult = 0.85,
         EjectAt = 31 / 30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.6 },
+            { s = UTCrattle, t = 0 / 30, v = 0.6 },
             { s = ShellInsert, t = 10 / 30, v = 0.6 },
             { s = pathUT .. "forearm_back.ogg", t = 24 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 30 / 30, v = 0.6 },
 
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30, c = ca, v = 1 },
-            { s = touchh, t = 50 / 30, c = ca, v = 0.5 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30, v = 1 },
+            { s = touchh, t = 50 / 30, v = 0.5 },
         },
     },
 
@@ -632,7 +632,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.4 },
+            { s = UTCrattle, t = 0 / 30, v = 0.4 },
             { s = b2i, t = 2 / 30, v = 0.6 },
         },
     },
@@ -643,7 +643,7 @@ SWEP.Animations = {
         FireASAP = true,
         EjectAt = 4 / 30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
             { s = b2i, t = 12 / 30, v = 0.6 },
@@ -655,17 +655,17 @@ SWEP.Animations = {
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
             { s = pathUT2 .. "ar15/selector-01.ogg", t = 55 / 30, v = 0.8 },
-            { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, c = ca, v = 1 },
-            { s = pathUT .. "presscheck2.ogg", t = 90 / 30, c = ca, v = 1 },
+            { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, v = 1 },
+            { s = pathUT .. "presscheck2.ogg", t = 90 / 30, v = 1 },
             { s = pathUT2 .. "ar15/selector-06.ogg", t = 94 / 30, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 107.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 107.5 / 30, v = 0.8 },
             {hide = 1, t = 0},
         },
     },
@@ -675,13 +675,13 @@ SWEP.Animations = {
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 12.5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 85 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 87.5 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
+            { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 85 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 87.5 / 30, v = 0.8 },
             {hide = 1, t = 0},
         },
     },

@@ -311,9 +311,9 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
-            { s = pathRZ .. "hammer.ogg", t = 36 / 60, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 60, v = 0.8 },
+            { s = UTCloth, t = 0 / 60, v = 0.8 },
+            { s = pathRZ .. "hammer.ogg", t = 36 / 60, v = 0.8 },
             {s = UTCrattle, t = 56 / 60},
         },
     },
@@ -323,8 +323,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 60, v = 0.8 },
+            { s = UTCloth, t = 0 / 60, v = 0.8 },
         },
     },
     ["draw_empty"] = {
@@ -332,8 +332,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 60, v = 0.8 },
+            { s = UTCloth, t = 0 / 60, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -341,8 +341,8 @@ SWEP.Animations = {
         MinProgress = 0.15 / 0.5,
         Mult = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 60, v = 0.8 },
+            { s = UTCloth, t = 0 / 60, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -350,8 +350,8 @@ SWEP.Animations = {
         MinProgress = 0.15 / 0.5,
         Mult = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, c = ca, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 60, v = 0.8 },
+            { s = UTCloth, t = 0 / 60, v = 0.8 },
         },
     },
 
@@ -384,18 +384,18 @@ SWEP.Animations = {
         FireASAP = true,
         Mult = 1.02,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, c = ca },
-            { s = UTCloth, t = 0 / 60, c = ca, v = 0.25, },
-            { s = UTCrattle, t = 26 / 60, c = ca },
-            { s = UTCloth, t = 28 / 60, c = ca },
-            { s = pathRZ .. "tap.ogg", t =  48/ 60, c = ca },
+            { s = UTCrattle, t = 0 / 60 },
+            { s = UTCloth, t = 0 / 60, v = 0.25, },
+            { s = UTCrattle, t = 26 / 60 },
+            { s = UTCloth, t = 28 / 60 },
+            { s = pathRZ .. "tap.ogg", t =  48/ 60 },
             { s = pathRZ .. "slide.ogg", t = 60 / 60, },
-            { s = pathRZ .. "insert.ogg", t = 82 / 60, c = ca },
-            { s = pathRZ .. "turn.ogg", t = 110 / 60, c = ca },
-            { s = UTCloth, t = 132 / 60, c = ca, v = 0.25, },
-            { s = UTCrattle, t = 132 / 60, c = ca },
-            { s = pathRZ .. "hammer.ogg", t = 166 / 60, c = ca },
-            { s = UTCrattle, t = 186 / 60, c = ca },
+            { s = pathRZ .. "insert.ogg", t = 82 / 60 },
+            { s = pathRZ .. "turn.ogg", t = 110 / 60 },
+            { s = UTCloth, t = 132 / 60, v = 0.25, },
+            { s = UTCrattle, t = 132 / 60 },
+            { s = pathRZ .. "hammer.ogg", t = 166 / 60 },
+            { s = UTCrattle, t = 186 / 60 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
@@ -407,12 +407,12 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = UTCrattle, t = 5 / 30, c = ca },
-            { s = UTCrattle, t = 42 / 30, c = ca },
-            { s = UTCloth, t = 74 / 30, c = ca, v = 0.15, },
-            { s = UTCrattle, t = 78 / 30, c = ca, v = 0.5, },
-            { s = UTCloth, t = 124 / 30, c = ca, v = 0.25, },
-            { s = UTCrattle, t = 128 / 30, c = ca, v = 0.5, },
+            { s = UTCrattle, t = 5 / 30 },
+            { s = UTCrattle, t = 42 / 30 },
+            { s = UTCloth, t = 74 / 30, v = 0.15, },
+            { s = UTCrattle, t = 78 / 30, v = 0.5, },
+            { s = UTCloth, t = 124 / 30, v = 0.25, },
+            { s = UTCrattle, t = 128 / 30, v = 0.5, },
         },
     },
 }

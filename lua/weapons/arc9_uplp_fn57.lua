@@ -408,9 +408,9 @@ SWEP.Animations = {
 		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-            { s = pathRZ .. "slide_pull.ogg", t = 5 / 60, c = ca, v = 0.8 },
-            { s = pathRZ .. "slide_rel.ogg", t = 11 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = pathRZ .. "slide_pull.ogg", t = 5 / 60, v = 0.8 },
+            { s = pathRZ .. "slide_rel.ogg", t = 11 / 60, v = 0.8 },
             {s = pathUTC .. "cloth_4.ogg", t = 22 / 60},
         },
         IKTimeLine = {
@@ -427,7 +427,7 @@ SWEP.Animations = {
 		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -442,7 +442,7 @@ SWEP.Animations = {
 		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -520,12 +520,12 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.12,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathRZ .. "magout.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathRZ .. "magout.ogg", t = 2 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
-            { s = pathRZ .. "struggle.ogg", t = 5 / 60, c = ca },
-            { s = pathRZ .. "magin.ogg", t = 7 / 60 + 0.28, c = ca },
-            { s = UTCrattle, t = 50 / 60, c = ca },
+            { s = pathRZ .. "struggle.ogg", t = 5 / 60 },
+            { s = pathRZ .. "magin.ogg", t = 7 / 60 + 0.28 },
+            { s = UTCrattle, t = 50 / 60 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
             {hide = 2, t = 1.44}
@@ -546,13 +546,13 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.12,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathRZ .. "magout.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathRZ .. "magout.ogg", t = 2 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
-            { s = pathRZ .. "struggle.ogg", t = 5 / 60 + 0.28, c = ca },
-            { s = pathRZ .. "magin.ogg", t = 7 / 60 + 0.28, c = ca },
-            { s = pathRZ .. "sliderel.ogg", t = 41 / 60, c = ca },
-            { s = UTCrattle, t = 60 / 60, c = ca },
+            { s = pathRZ .. "struggle.ogg", t = 5 / 60 + 0.28 },
+            { s = pathRZ .. "magin.ogg", t = 7 / 60 + 0.28 },
+            { s = pathRZ .. "sliderel.ogg", t = 41 / 60 },
+            { s = UTCrattle, t = 60 / 60 },
 
             -- {hide = 1, t = 0},
             -- {hide = 3, t = 0.66},
@@ -576,12 +576,12 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.12,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathRZ .. "magout_tac.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathRZ .. "magout_tac.ogg", t = 2 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 6 / 60, v = 0.3 },
-            { s = pathRZ .. "struggle.ogg", t = 13 / 60 + 0.28, c = ca },
-            { s = pathRZ .. "magin.ogg", t = 17 / 60 + 0.28, c = ca },
-            { s = UTCrattle, t = 60 / 60, c = ca },
+            { s = pathRZ .. "struggle.ogg", t = 13 / 60 + 0.28 },
+            { s = pathRZ .. "magin.ogg", t = 17 / 60 + 0.28 },
+            { s = UTCrattle, t = 60 / 60 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.733}
@@ -602,14 +602,14 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.12,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60, c = ca },
-            { s = pathRZ .. "magout_empty.ogg", t = 2 / 60, c = ca },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathRZ .. "magout_empty.ogg", t = 2 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 6 / 60, v = 0.3 },
-            { s = pathRZ .. "struggle.ogg", t = 15 / 60 + 0.28, c = ca },
-            { s = pathRZ .. "magin.ogg", t = 19.5 / 60 + 0.28, c = ca },
-            { s = pathRZ .. "sliderel.ogg", t = 50 / 60, c = ca },
-            { s = UTCrattle, t = 65 / 60, c = ca },
-            { s = pathUTC .. "magpouch_replace_small.ogg", t = 65 / 60, c = ca },
+            { s = pathRZ .. "struggle.ogg", t = 15 / 60 + 0.28 },
+            { s = pathRZ .. "magin.ogg", t = 19.5 / 60 + 0.28 },
+            { s = pathRZ .. "sliderel.ogg", t = 50 / 60 },
+            { s = UTCrattle, t = 65 / 60 },
+            { s = pathUTC .. "magpouch_replace_small.ogg", t = 65 / 60 },
             -- {hide = 1, t = 0},
             -- {hide = 3, t = 0.733},
             -- {hide = 1, t = 1.07},
@@ -629,10 +629,10 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = "inspect",
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
-            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
-            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
-            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30, c = ca },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30 },
+            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30 },
+            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, v = 0.5 },
+            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -645,10 +645,10 @@ SWEP.Animations = {
     ["inspect_empty"] = {
         Source = "inspect_empty",
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca },
-            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30, c = ca },
-            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, c = ca, v = 0.5 },
-            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30, c = ca },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30 },
+            { s = pathUTC .. "movement-pistol-02.ogg", t = 52 / 30 },
+            { s = pathUTC .. "cloth_4.ogg", t = 56 / 30, v = 0.5 },
+            { s = pathUTC .. "cloth_1.ogg", t = 92 / 30 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

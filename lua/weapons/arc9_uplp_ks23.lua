@@ -390,10 +390,10 @@ SWEP.Animations = {
         MinProgress = 0.75,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "rack_1.ogg", t = 2 / 30, c = ca, v = 0.8 },
-            { s = pathRZ .. "rack_2.ogg", t = 10 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, c = ca, v = 0.5 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 2 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_2.ogg", t = 10 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, v = 0.5 },
         },
     },
 
@@ -402,8 +402,8 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -411,7 +411,7 @@ SWEP.Animations = {
         MinProgress = 0.4,
         IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
 
@@ -446,7 +446,7 @@ SWEP.Animations = {
         RestoreAmmo = 0,
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
 
@@ -458,7 +458,7 @@ SWEP.Animations = {
         EjectAt = 6.5 / 30,
         EventTable = {
             { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
-            { s = UTCrattle, t = 3 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 3 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30, v = 1 },
             { s = pathRZ .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
         },
@@ -487,7 +487,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
     },
@@ -497,7 +497,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, c = ca, v = 0.8 },
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
     },
@@ -508,14 +508,14 @@ SWEP.Animations = {
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, c = ca, v = 0.8 },
-            { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, c = ca, v = 1 },
-            { s = pathUT .. "presscheck2.ogg", t = 90 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
+            { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, v = 1 },
+            { s = pathUT .. "presscheck2.ogg", t = 90 / 30, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 83 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, v = 0.8 },
             {hide = 1, t = 0},
         },
     },

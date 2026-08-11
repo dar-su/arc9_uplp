@@ -358,14 +358,14 @@ local thetoggle = {{
 }}
 
 local inspectst = {
-    { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "movement-rifle-02.ogg", t = 95 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "movement-rifle-03.ogg", t = 150 / 30, c = ca, v = 0.8 },
-    { s = pathUTC .. "movement-rifle-02.ogg", t = 156 / 30, c = ca, v = 0.8 },
+    { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+    { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
+    { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
+    { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, v = 0.8 },
+    { s = pathUTC .. "movement-rifle-02.ogg", t = 95 / 30, v = 0.8 },
+    { s = pathUTC .. "cloth_2.ogg", t = 140 / 30, v = 0.8 },
+    { s = pathUTC .. "movement-rifle-03.ogg", t = 150 / 30, v = 0.8 },
+    { s = pathUTC .. "movement-rifle-02.ogg", t = 156 / 30, v = 0.8 },
 }
 
 -- Animations
@@ -383,12 +383,12 @@ SWEP.Animations = {
 		MinProgress = 0.7,
 		FireASAP = true,
         EventTable = {
-            { s = pathUT2 .. "grab.ogg", t = 0 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 0 / 30, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
 
             {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2 + 0.7, v = 1},
             {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12 + 0.7, v = 1},
-            { s = pathUTC .. "rattle2.ogg", t = 24 / 30 + 0.7, c = ca, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 24 / 30 + 0.7, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
     },
@@ -398,15 +398,15 @@ SWEP.Animations = {
         MinProgress = 0.75,
 		FireASAP = true,
         EventTable = {
-            { s = pathUT2 .. "grab.ogg", t = 0 / 30, c = ca, v = 1 },
-            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, c = ca, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 0 / 30, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
         },
         IKTimeLine = { { t = 0, lhik = 1 } },
@@ -475,20 +475,20 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "grab.ogg", t = 1 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
-            { s = pathUT2 .. "magrel.ogg", t = 15 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magout.ogg", t = 23 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "magrel.ogg", t = 15 / 30, v = 1 },
+            { s = pathUT2 .. "magout.ogg", t = 23 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 39 / 30, v = 0.3 },
 
-            { s = pathUT2 .. "struggle.ogg", t = 55 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magin.ogg", t = 62 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "struggle.ogg", t = 55 / 30, v = 1 },
+            { s = pathUT2 .. "magin.ogg", t = 62 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 85 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 85 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 36/30},
@@ -511,20 +511,20 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "grab.ogg", t = 1 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 0.8 },
 
-            { s = pathUT2 .. "magrel.ogg", t = 15 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magout.ogg", t = 23 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "magrel.ogg", t = 15 / 30, v = 1 },
+            { s = pathUT2 .. "magout.ogg", t = 23 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 39 / 30, v = 0.3 },
 
-            { s = pathUT2 .. "struggle.ogg", t = 55 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magin.ogg", t = 62 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "struggle.ogg", t = 55 / 30, v = 1 },
+            { s = pathUT2 .. "magin.ogg", t = 62 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 85 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 85 / 30, v = 0.8 },
 
             {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06, v = 0.5},
             {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4},
@@ -554,20 +554,20 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.0,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "grab.ogg", t = 1 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
-            { s = pathUT2 .. "magrel.ogg", t = 13 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magout.ogg", t = 21 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "magrel.ogg", t = 13 / 30, v = 1 },
+            { s = pathUT2 .. "magout.ogg", t = 21 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 27 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 27 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 37 / 30, v = 0.3 },
 
-            { s = pathUT2 .. "struggle.ogg", t = 43 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magin.ogg", t = 55 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "struggle.ogg", t = 43 / 30, v = 1 },
+            { s = pathUT2 .. "magin.ogg", t = 55 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 75 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 75 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 36/30},
@@ -590,20 +590,20 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.0,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "grab.ogg", t = 1 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
-            { s = pathUT2 .. "magrel.ogg", t = 13 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magout.ogg", t = 21 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "magrel.ogg", t = 13 / 30, v = 1 },
+            { s = pathUT2 .. "magout.ogg", t = 21 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 27 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 27 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 37 / 30, v = 0.3 },
 
-            { s = pathUT2 .. "struggle.ogg", t = 43 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magin.ogg", t = 55 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "struggle.ogg", t = 43 / 30, v = 1 },
+            { s = pathUT2 .. "magin.ogg", t = 55 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 75 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 75 / 30, v = 0.8 },
 
             {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 - 0.2, v = 0.5},
             {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 - 0.2},
@@ -633,20 +633,20 @@ SWEP.Animations = {
         DropMagAt = 39/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "grab.ogg", t = 1 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
-            { s = pathUT2 .. "magrel.ogg", t = 16 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magout.ogg", t = 26 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "magrel.ogg", t = 16 / 30, v = 1 },
+            { s = pathUT2 .. "magout.ogg", t = 26 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 42 / 30, v = 0.3 },
 
-            { s = pathUT2 .. "struggle.ogg", t = 63 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magin.ogg", t = 70 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "struggle.ogg", t = 63 / 30, v = 1 },
+            { s = pathUT2 .. "magin.ogg", t = 70 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 93 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 93 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 39/30},
@@ -669,20 +669,20 @@ SWEP.Animations = {
         DropMagAt = 39/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 0.8 },
-            { s = pathUT2 .. "grab.ogg", t = 1 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 0.8 },
 
-            { s = pathUT2 .. "magrel.ogg", t = 16 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magout.ogg", t = 26 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "magrel.ogg", t = 16 / 30, v = 1 },
+            { s = pathUT2 .. "magout.ogg", t = 26 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 29 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 42 / 30, v = 0.3 },
 
-            { s = pathUT2 .. "struggle.ogg", t = 63 / 30, c = ca, v = 1 },
-            { s = pathUT2 .. "magin.ogg", t = 70 / 30, c = ca, v = 1 },
+            { s = pathUT2 .. "struggle.ogg", t = 63 / 30, v = 1 },
+            { s = pathUT2 .. "magin.ogg", t = 70 / 30, v = 1 },
 
-            { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, c = ca, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 93 / 30, c = ca, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 93 / 30, v = 0.8 },
 
             {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 + 0.267, v = 0.5},
             {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 + 0.267},

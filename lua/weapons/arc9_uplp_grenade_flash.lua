@@ -61,7 +61,7 @@ SWEP.Animations = {
         MinProgress = 0.15,
         FireASAP = true,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0, c = ca, v = 0.2 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.2 },
             { hide = 0, t = 0 },
         },
     },
@@ -92,7 +92,7 @@ SWEP.Animations = {
         MinProgress = 0.6,
         FireASAP = true,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0, c = ca, v = 0.4 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.4 },
             { s = path .. "pinpull.ogg", t = 0.45 },
             { s = path .. "spooneject.ogg", t = 0.65, v = 0.5 },
             {hide = 0, t = 0},

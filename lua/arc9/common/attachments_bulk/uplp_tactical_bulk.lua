@@ -494,7 +494,7 @@ ATT.IKAnimationProxy = {
             { s = pathUTC .. "magpouch.ogg", t = 25/30, v = 0.6 },
             { s = path .. "gl_insert.ogg", t = 30/30 },
             { s = path .. "breaker_close.ogg", t = 55/30 },
-            { s = pathUTC .. "cloth_1.ogg", t = 70 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_1.ogg", t = 70 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 70/30, v = 0.8 },
         }
     },
@@ -503,7 +503,7 @@ ATT.IKAnimationProxy = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 2/30, v = 0.8 },
         }
     },
@@ -515,7 +515,7 @@ ATT.IKAnimationProxy = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, c = ca, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 2/30, v = 0.3 },
         }
     },

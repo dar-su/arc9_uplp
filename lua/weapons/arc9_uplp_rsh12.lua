@@ -465,11 +465,11 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 0 / 60, c = ca },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0 / 60 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.3 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.3},
-            { s = pathUTC .. "cloth_4.ogg", t = 29 / 60, c = ca },
+            { s = pathUTC .. "cloth_4.ogg", t = 29 / 60 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -485,7 +485,7 @@ SWEP.Animations = {
         MinProgress = 0.35,
         FireASAP = true,
         EventTable = {
-            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, c = ca, v = 0.8 },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -499,7 +499,7 @@ SWEP.Animations = {
         MinProgress = 0.3 / 0.75,
         Mult = 0.75,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 60, c = ca },
+            { s = pathUTC .. "rattle2.ogg", t = 0 / 60 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -547,7 +547,7 @@ SWEP.Animations = {
         -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, v = 0.2 },
             {s = pathUTC .. "revolver_cock.ogg", t = 0.4},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.4},
         },
@@ -557,7 +557,7 @@ SWEP.Animations = {
         -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, v = 0.2 },
             {s = pathUTC .. "revolver_cock.ogg", t = 0.4},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.4},
         },
@@ -579,7 +579,7 @@ SWEP.Animations = {
         -- Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
         -- now its ok
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
@@ -590,7 +590,7 @@ SWEP.Animations = {
         MinProgress = 0.4,
         Mult = 1.0,
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
@@ -644,12 +644,12 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 1 / 30, c = ca },
-            { s = pathUTC .. "cloth_3.ogg", t = 45 / 30, c = ca, v = 0.15 },
-            { s = pathUTC .. "movement-pistol-02.ogg", t = 79 / 30, c = ca },
-            { s = pathUTC .. "grab.ogg", t = 89 / 30, c = ca, v = 0.05 },
-            { s = pathUTC .. "cloth_3.ogg", t = 97 / 30, c = ca, v = 0.15 },
-            { s = pathUTC .. "cloth_1.ogg", t = 145 / 30, c = ca, v = 0.5 },
+            { s = pathUTC .. "cloth_2.ogg", t = 1 / 30 },
+            { s = pathUTC .. "cloth_3.ogg", t = 45 / 30, v = 0.15 },
+            { s = pathUTC .. "movement-pistol-02.ogg", t = 79 / 30 },
+            { s = pathUTC .. "grab.ogg", t = 89 / 30, v = 0.05 },
+            { s = pathUTC .. "cloth_3.ogg", t = 97 / 30, v = 0.15 },
+            { s = pathUTC .. "cloth_1.ogg", t = 145 / 30, v = 0.5 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -675,7 +675,7 @@ SWEP.Animations = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
@@ -683,7 +683,7 @@ SWEP.Animations = {
     ["firemode_2"] = {
         Source = "uncock",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, c = ca, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
             { s = pathUTC .. "revolver_trigger-01.ogg", t = 0.1 },
             { s = pathUTC .. "revolver_trigger-01.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.1},
