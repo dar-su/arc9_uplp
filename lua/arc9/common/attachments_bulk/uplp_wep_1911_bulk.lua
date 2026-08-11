@@ -439,8 +439,8 @@ ATT.ShellVelocity = -0.7
 ATT.ShellAngleVelocity = 0.15
 ATT.ShellSmoke = false
 ATT.ShellSounds = ARC9.ShotgunShellSoundsTable
-ATT.DamageMax = 90 * ARC9.UPLP_ShotgunDamageMaxModifier
-ATT.DamageMin = 40 * ARC9.UPLP_ShotgunDamageMaxModifier
+ATT.DamageMax = 90 * 1.25 -- ARC9.UPLP_ShotgunDamageMaxModifier -- not active yet!
+ATT.DamageMin = 40 * 0.75 -- ARC9.UPLP_ShotgunDamageMinModifier -- not active yet!
 ATT.DistributeDamage = true
 ATT.HeadshotDamage = 1
 ATT.DamageType = DMG_BUCKSHOT
@@ -481,7 +481,7 @@ ATT.Ammo = "buckshot" -- What ammo type this gun uses.
 -- Accuracy and Spread
 ATT.UseDispersion = true
 
-ATT.Spread = 0.025 * ARC9.UPLP_ShotgunSpreadModifier
+ATT.Spread = 0.025 * 1.25 -- ARC9.UPLP_ShotgunSpreadModifier -- not active yet!
 ATT.SpreadAddMove = -0.005
 ATT.SpreadAddMidAir = -0.05
 
