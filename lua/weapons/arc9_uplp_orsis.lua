@@ -427,6 +427,7 @@ SWEP.Animations = {
         Source = {"fire"},
         EventTable = { { s = mechh, t = 0 } },
         MinProgress = 0.95,
+        NoIdle = true,
         -- Mult = 1.15,
         EventTable = {
             {s = mechh, t = 0},
@@ -450,6 +451,7 @@ SWEP.Animations = {
         Source = {"fire"},
         EventTable = { { s = mechh, t = 0 } },
         MinProgress = 0.95,
+        NoIdle = true,
         -- Mult = 1.15,
         EventTable = {
             {s = mechh, t = 0},

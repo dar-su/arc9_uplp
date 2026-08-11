@@ -449,6 +449,7 @@ SWEP.Animations = {
         -- Time = 1,
         Mult = 0.9,
         ShellEjectAt = 0.01,
+        NoIdle = true,
         EventTable = { { s = mech, t = 0 } },
     },
     ["fire_empty"] = {

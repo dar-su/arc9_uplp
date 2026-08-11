@@ -446,6 +446,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         Mult = 1,
+        NoIdle = true,
         EventTable = { { s = mechh, t = 0 } },
     },
 

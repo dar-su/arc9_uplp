@@ -477,6 +477,7 @@ SWEP.Animations = {
         -- Time = 1,
         Mult = 0.7,
         ShellEjectAt = 0.01,
+        NoIdle = true,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
         -- IKTimeLine = {
         --     { t = 0, lhik = 0, rhik = 0 },
@@ -495,6 +496,7 @@ SWEP.Animations = {
         Source = "fire_empty",
         -- Time = 1,
         ShellEjectAt = 0.01,
+        NoIdle = true,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },
 

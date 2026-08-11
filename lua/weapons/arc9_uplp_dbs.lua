@@ -501,6 +501,7 @@ SWEP.Animations = {
         EventTable = {
             { s = mech, t = 0, v = 0.25 },
         },
+        NoIdle = true,
     },
     -- Reloads --
     ["reload"] = {

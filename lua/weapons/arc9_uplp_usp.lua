@@ -480,6 +480,7 @@ SWEP.Animations = {
     },
     ["fire_sights"] = {
         Source = {"fire"},
+        NoIdle = true,
         Mult = 0.6,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
@@ -493,6 +494,7 @@ SWEP.Animations = {
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
+        NoIdle = true,
         -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },

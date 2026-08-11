@@ -524,6 +524,7 @@ SWEP.Animations = {
         Source = {"fire"},
         Mult = 0.6,
         ShellEjectAt = 0.01,
+        NoIdle = true,
         EventTable = { { s = mechh, t = 0 } },
     },
 
