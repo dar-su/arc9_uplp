@@ -242,6 +242,14 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
         Icon_Offset = Vector(0, 0, -1),
     },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
+        Category = {"uplp_m203_rail"},
+        Pos = Vector(5.5, 0, 3.2),
+        Ang = Angle(0, 180, 0),
+        MergeSlots = {1},
+        Hidden = true,
+    },
 }
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, -3, 0) end
