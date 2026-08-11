@@ -394,7 +394,6 @@ local thetoggle = {{
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
@@ -430,7 +429,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -447,81 +445,39 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
         Source = {"fire_sights"},
         ShellEjectAt = 0.01,
         Mult = 0.65,
-        NoIdle = true,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
 
     ["fire_45"] = {
         Source = {"fire_01","fire_02","fire_03"},
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh45, t = 0 } },
     },
     ["fire_empty_45"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
-    },
-
-    -- ["fire_g17"] = {
-        -- Source = {"fire_01","fire_02","fire_03"},
-        -- ShellEjectAt = 0.01,
-        -- IKTimeLine = { { t = 0, lhik = 1 } },
-        -- EventTable = {
-            -- { s = {
-            -- shootsound9 .. "mech_01.wav",
-            -- shootsound9 .. "mech_02.wav",
-            -- shootsound9 .. "mech_03.wav",
-            -- shootsound9 .. "mech_04.wav",
-            -- }, t = 0 },
-            -- { s = {
-            -- shootsound9 .. "punch.ogg",
-            -- }, t = 0 },
-        -- },
-    -- },
-    ["fire_empty_g17"] = {
-        Source = "fire_empty",
-        ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
-        EventTable = {
-            { s = pathUT .. "mech_last.wav", t = 0 }
-            -- { s = {
-            -- shootsound9 .. "mech_01.wav",
-            -- shootsound9 .. "mech_02.wav",
-            -- shootsound9 .. "mech_03.wav",
-            -- shootsound9 .. "mech_04.wav",
-            -- }, t = 0 },
-            -- { s = {
-            -- shootsound9 .. "punch.ogg",
-            -- }, t = 0 },
-        },
     },
 
     -- Reloads --

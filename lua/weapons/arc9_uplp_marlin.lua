@@ -407,11 +407,9 @@ local BulletsRattle = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["cycle"] = {
         Source = {"cycle1","cycle2"},
@@ -434,7 +432,6 @@ SWEP.Animations = {
             {s = pathUTREAL .. "cycle2.ogg",          t = 0.5},
             { s = pathUTC .. "rattle2.ogg", t = 45 / 60, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["draw"] = {
@@ -492,8 +489,6 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire"},
-        NoIdle = true,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
 

@@ -657,23 +657,19 @@ SWEP.Animations = {
     ["firemode_1"] = {
         Source = "modeswitch",
         EventTable = thetoggle,
-        IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
     ["firemode_1_empty"] = {
         Source = "modeswitch_empty",
         EventTable = thetoggle,
-        IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
 
     ["firemode_2"] = {
         Source = "modeswitch",
         EventTable = thetoggle,
-        IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
     ["firemode_2_empty"] = {
         Source = "modeswitch_empty",
         EventTable = thetoggle,
-        IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
 
     ["dryfire"] = {
@@ -866,12 +862,10 @@ SWEP.Animations = {
     ["rc_firemode_2"] = {
         Source = "rc_modeswitch",
         EventTable = thetoggle,
-        IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
     ["rc_firemode_2_empty"] = {
         Source = "rc_modeswitch_empty",
         EventTable = thetoggle,
-        IKTimeLine = { { t = 0, lhik = 1, rhik = 1  } },
     },
 
     ["rc_dryfire"] = {

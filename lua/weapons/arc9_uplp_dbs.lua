@@ -482,7 +482,6 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -492,7 +491,6 @@ SWEP.Animations = {
         Source = "holster",
         Reverse = true,
         MinProgress = 0.4,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -500,7 +498,6 @@ SWEP.Animations = {
     ]]
     ["fire"] = {
         Source = {"fire"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mech, t = 0, v = 0.25 },
         },

@@ -372,11 +372,9 @@ local inspectst = {
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
@@ -390,7 +388,6 @@ SWEP.Animations = {
             {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12 + 0.7, v = 1},
             { s = pathUTC .. "rattle2.ogg", t = 24 / 30 + 0.7, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["draw"] = {
@@ -409,7 +406,6 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -425,14 +421,11 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["fire"] = {
         Source = {"fire"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
-        NoIdle = true,
         MinProgress = 0.95,
         -- Mult = 1.15,
         EventTable = {
@@ -441,7 +434,6 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = {"cycle"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         MinProgress = 0.72,
 		FireASAP = true,
         Mult = 1.25,
@@ -456,7 +448,6 @@ SWEP.Animations = {
 
     ["fire_empty"] = {
         Source = {"fire"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
         MinProgress = 0.95,
         -- Mult = 1.15,

@@ -495,7 +495,6 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.5,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -503,6 +502,7 @@ SWEP.Animations = {
     ["draw_quick"] = {
         Source = "draw_quick",
         MinProgress = 0.5,
+        Mult = 0.75,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
@@ -513,7 +513,6 @@ SWEP.Animations = {
         Source = "holster_quick",
         MinProgress = 0.15 / 0.5,
         Mult = 0.5,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -528,7 +527,6 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.5,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -537,7 +535,6 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
             { s = mechh, t = 0, v = 0.75 },
@@ -546,7 +543,6 @@ SWEP.Animations = {
 
     ["fire_pump"] = {
         Source = {"fire_pumpy"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
             -- { s = mechh, t = 0, v = 0.75 },
@@ -555,7 +551,6 @@ SWEP.Animations = {
 
     ["fire_empty"] = {
         Source = "fire_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
             { s = pathUT .. "mech_last.wav", t = 0 / 30, v = 0.6 },
@@ -564,7 +559,6 @@ SWEP.Animations = {
 
     ["cycle"] = {
         Source = {"cycle"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EjectAt = 5 / 30,
         MinProgress = 0.55,

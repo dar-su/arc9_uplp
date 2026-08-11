@@ -409,7 +409,6 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.4,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -418,7 +417,6 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EventTable = {
             { s = mech, t = 0, v = 0.25 },
@@ -428,7 +426,6 @@ SWEP.Animations = {
 
     ["cycle"] = {
         Source = {"cycle_1", "cycle_2"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         Mult = 1,
         EjectAt = 8 / 30,
         MinProgress = 0.7,

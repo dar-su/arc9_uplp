@@ -411,14 +411,12 @@ local thetoggle = {{
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             {hide = 1, t = 0},
         },
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             {hide = 1, t = 0},
         },
@@ -460,7 +458,6 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -478,13 +475,11 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["fire"] = {
         Source = {"fire"},
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0 },
         },
@@ -493,15 +488,12 @@ SWEP.Animations = {
         Source = {"fire_sights"},
         Mult = 0.65,
         ShellEjectAt = 0.01,
-        NoIdle = true,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
 
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0 },
         },
@@ -509,7 +501,6 @@ SWEP.Animations = {
     ["fire_sights_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0 },
         },

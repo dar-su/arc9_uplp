@@ -517,7 +517,6 @@ SWEP.Animations = {
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
         },
-        NoIdle = true
     },
     ["fire_da"] = {
         Source = "fire_da", -- same as fire but without hammer poseparam

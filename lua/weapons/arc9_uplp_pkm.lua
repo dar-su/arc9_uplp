@@ -433,11 +433,9 @@ local thetoggle = {{
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["idle_bp"] = {
         Source = "idle_bp",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
@@ -472,21 +470,17 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["fire"] = {
         Source = {"fire"},
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } }, -- add belt rattle plz, belt1/2 too long
     },
     ["fire_sights"] = {
         Source = {"fire_sights"},
         Mult = 0.65,
         ShellEjectAt = 0.01,
-        NoIdle = true,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
     ["dryfire"] = {

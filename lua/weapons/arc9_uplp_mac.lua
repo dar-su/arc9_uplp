@@ -440,11 +440,9 @@ end
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
@@ -458,10 +456,9 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 60 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.01, lhik = 0 },
+            { t = 0, lhik = 0 },
             { t = 0.45, lhik = 0 },
-            { t = 0.95, lhik = 1 },
+            { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -474,7 +471,12 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0.3, lhik = 0 }, { t = 0.63, lhik = 1 }, { t = 1, lhik = 1 } },
+        IKTimeLine = {
+            { t = 0.0, lhik = 0 },
+            { t = 0.1, lhik = 0 },
+            { t = 0.6, lhik = 1 },
+            { t = 1, lhik = 1 }
+        },
     },
     ["holster"] = {
         Source = "holster",
@@ -483,7 +485,10 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 }, { t = 0.5, lhik = 0 } },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.5, lhik = 0 }
+        },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -493,7 +498,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0.3, lhik = 0 }, { t = 0.63, lhik = 1 }, { t = 1, lhik = 1 } },
+        IKTimeLine = {
+            { t = 0.3, lhik = 0 },
+            { t = 0.63, lhik = 1 },
+            { t = 1, lhik = 1 }
+        },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
@@ -501,13 +510,15 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 }, { t = 0.5, lhik = 0 } },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.5, lhik = 0 }
+        },
     },
 
     ["fire"] = {
         Source = "fire",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0 },
         },
@@ -516,7 +527,6 @@ SWEP.Animations = {
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0 },
         },

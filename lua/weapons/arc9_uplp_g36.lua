@@ -479,7 +479,6 @@ local thetoggle = {{
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["ready"] = {
         Source = "ready",
@@ -516,7 +515,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty"] = {
         Source = "draw_empty_nofold",
@@ -533,7 +531,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["draw_unfold"] = {
@@ -556,7 +553,6 @@ SWEP.Animations = {
             { s = pathRZ .. "stock_grab.ogg", t = 0 / 30 },
             { s = pathRZ .. "stock_in.ogg", t = 8 / 30 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty_unfold"] = {
         Source = "draw_empty",
@@ -578,24 +574,23 @@ SWEP.Animations = {
             { s = pathUTC .. "stock_grab.ogg", t = 0 / 30 },
             { s = pathRZ .. "stock_in.ogg", t = 4 / 30 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_quick"] = {
         Source = "draw_nofold",
         MinProgress = 0.5,
+        Mult = 0.75,
+		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["holster_quick"] = {
         Source = "holster_quick",
-        MinProgress = 0.25 / 0.5,
-        Mult = 0.5,
+        MinProgress = 0.5,
+        Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty_quick"] = {
         Source = "draw_empty_quick",
@@ -603,7 +598,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["holster_empty_quick"] = {
         Source = "holster_empty_quick",
@@ -612,7 +606,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["draw_empty"] = {
@@ -629,33 +622,27 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["fire"] = {
         Source = {"fire"},
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
         Source = {"fire_sights"},
         ShellEjectAt = 0.01,
         Mult = 0.65,
-        NoIdle = true,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
 
