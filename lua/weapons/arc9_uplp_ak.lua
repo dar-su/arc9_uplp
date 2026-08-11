@@ -462,7 +462,6 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.4,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
@@ -470,17 +469,14 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = {
             { s = mechh, t = 0 },
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         ShellEjectAt = 0.01,
         Mult = 0.65,
-        NoIdle = true,
-        IKTimeLine = { { t = 0, lhik = 1 } },
         EventTable = { { s = mechh, t = 0 } },
     },
 
@@ -960,7 +956,7 @@ SWEP.Animations = {
     -- Inspect
 
     ["inspect"] = {
-        Source = {"inspect_762"},
+        Source = "inspect_762",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -982,7 +978,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look"] = {
-        Source = {"inspect0"},
+        Source = "inspect0",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1001,7 +997,7 @@ SWEP.Animations = {
     },
 
     ["inspect_545"] = {
-        Source = {"inspect_545"},
+        Source = "inspect_545",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1023,7 +1019,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look_545"] = {
-        Source = {"inspect0"},
+        Source = "inspect0",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1042,7 +1038,7 @@ SWEP.Animations = {
     },
 
     ["inspect_556"] = {
-        Source = {"inspect_556"},
+        Source = "inspect_556",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1064,7 +1060,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look_556"] = {
-        Source = {"inspect0"},
+        Source = "inspect0",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1083,7 +1079,7 @@ SWEP.Animations = {
     },
 
     ["inspect_drum"] = {
-        Source = {"inspect_drum"},
+        Source = "inspect_drum",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1104,7 +1100,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look_drum"] = {
-        Source = {"inspect0_drum"},
+        Source = "inspect0_drum",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1122,7 +1118,7 @@ SWEP.Animations = {
     },
 
     ["inspect_308"] = {
-        Source = {"inspect_308"},
+        Source = "inspect_308",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -1144,7 +1140,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look_308"] = {
-        Source = {"inspect0"},
+        Source = "inspect0",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },

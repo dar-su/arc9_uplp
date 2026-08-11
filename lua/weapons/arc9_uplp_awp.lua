@@ -375,11 +375,9 @@ local thetoggle = {{
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["idle_empty"] = {
         Source = "idle_empty",
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["cycle"] = {
         Source = "cycle",
@@ -408,7 +406,6 @@ SWEP.Animations = {
             -- {s = pathUT .. "eject.ogg",           t = 0.4},
             { s = pathUTC .. "rattle2.ogg", t = 45 / 60, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["draw"] = {
@@ -427,7 +424,6 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -445,14 +441,11 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
-        IKTimeLine = { { t = 0, lhik = 1 } },
     },
 
     ["fire"] = {
-        Source = {"fire"},
-        NoIdle = true,
-        Mult = 1.5,
-        IKTimeLine = { { t = 0, lhik = 1 } },
+        Source = "fire",
+        Mult = 1,
         EventTable = { { s = mechh, t = 0 } },
     },
 
