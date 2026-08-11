@@ -511,6 +511,8 @@ ATT.CustomCons = {
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_long"
 end
+ATT.DropMagazineQCA = 5
+ATT.DropMagazineVelocity = Vector(0, -30, 15)
 
 ARC9.LoadAttachment(ATT, "uplp_molot_mag_long")
 
