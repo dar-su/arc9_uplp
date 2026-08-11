@@ -9,6 +9,9 @@ SWEP.Category = "ARC9 - Poly Arms"
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_r870")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_r870_desc")
 
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun") -- In the Customization Menu
+SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun") -- In the Spawnmenu
+
 SWEP.UPLP_Class = "sg"
 
 SWEP.Trivia = {

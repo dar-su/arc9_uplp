@@ -1233,17 +1233,6 @@ end
 
 ---- Attachments
 
-SWEP.Hook_TranslateSource = function(swep, anim)
-    local eles = swep:GetElements()
-	
-	if eles["uplp_ak_dc_12_22"] or eles["uplp_ak_dc_12_16"] then
-		if anim == "firemode_0" or anim == "firemode_1" then return anim .. "_12" end
-	elseif eles["uplp_ak_dc_12"] then
-        if anim == "firemode_0" or anim == "firemode_1" then return anim .. "_evo" end
-    end
-	
-end
-
 SWEP.Hook_ModifyBodygroups = function(wep, data)
     local eles = data.elements
     local mdl = data.model
@@ -1371,53 +1360,42 @@ SWEP.AttachmentElements = {
     -- Alternative Irons
     ["uplp_ak_rearsight"] =  { Bodygroups = { { 8, 1 } } },
 
-	-- AK-12-specific
-    -- RECIEVERS
-    ["uplp_ak_rec_12"] =          { Bodygroups = { { 0, 2 } } },
-    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 3 } } },
 
-    -- FIRE SELECTORS
-    ["uplp_ak_fs_12"] =          { Bodygroups = { { 1, 2 } } },
-    ["uplp_ak_fs_12alt"] =          { Bodygroups = { { 1, 3 } } },
+
+	-- AK-12-specific
+    ["uplp_ak_rec_12alt"] =       { Bodygroups = { { 0, 1 } } },
+    ["uplp_ak_fs_12alt"] =          { Bodygroups = { { 1, 1 } } },
+    ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 1 } } },
+    ["uplp_ak12_rearsight_evo"] =  { Bodygroups = { { 8, 2 } } },
+    ["uplp_ak12_rearsight_m1"] =  { Bodygroups = { { 8, 3 } } },
 
     -- BARRELS
-    ["uplp_ak_brl_12"] =    { Bodygroups = { { 2, 6 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 20.5), }}},
-    ["uplp_ak_brl_12k"] =   { Bodygroups = { { 2, 7 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 15.2), }}},
-    ["uplp_ak_brl_19"] =    { Bodygroups = { { 2, 8 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
-    ["uplp_ak_brl_rpk16"] = { Bodygroups = { { 2, 9 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
-
-    -- DUST COVERS
-    ["uplp_ak_dc_12"] =            { Bodygroups = { { 3, 7 } } },
+    ["uplp_ak_brl_12k"] =   { Bodygroups = { { 2, 1 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 15.2), }}},
+    ["uplp_ak_brl_19"] =    { Bodygroups = { { 2, 2 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 22.7), }}},
+    ["uplp_ak_brl_rpk16"] = { Bodygroups = { { 2, 3 } } , AttPosMods = {[2] = { Pos = Vector(0, 1.72, 27.1), }}},
 	
     -- HANDGUARDS
-    ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 13 } } , AttPosMods = {
-		[5] = { Pos = Vector(0, 2.6, 12), },
-		[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
-		[12] = { Pos = Vector(0, -0.1, 15), },
-		[13] = { Pos = Vector(0.71, 1.96, 14), },
+    ["uplp_ak_hg_12"] =      { Bodygroups = { { 4, 0 } } , AttPosMods = {
+		[11] = { Pos = Vector(0, 2.6, 12), },
+		[15] = { Pos = Vector(-0.95, 0.675, 13.25), },
+		[10] = { Pos = Vector(0, -0.1, 14.5), },
+		[12] = { Pos = Vector(0.71, 1.96, 14), },
     }},
-    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 14 } } , AttPosMods = {
-		[5] = { Pos = Vector(0, 2.6, 12), },
-		[6] = { Pos = Vector(-0.95, 0.675, 15.25), },
-		[12] = { Pos = Vector(0, -0.1, 15), },
-		[13] = { Pos = Vector(0.77, 1.96, 16), },
+    ["uplp_ak_hg_rpk16"] =   { Bodygroups = { { 4, 1 } } , AttPosMods = {
+		[11] = { Pos = Vector(0, 2.6, 12), },
+		[15] = { Pos = Vector(-0.95, 0.675, 15.25), },
+		[10] = { Pos = Vector(0, -0.1, 15), },
+		[12] = { Pos = Vector(0.77, 1.96, 16), },
     }},
-    ["uplp_ak_hg_12tac"] =      { Bodygroups = { { 4, 17 } } , AttPosMods = {
-		[5] = { Pos = Vector(0, 2.6, 12), },
-		[6] = { Pos = Vector(-0.95, 0.675, 13.25), },
-		[12] = { Pos = Vector(0, -0.1, 15), },
-		[13] = { Pos = Vector(0.55, 1.96, 20.2), },
+    ["uplp_ak_hg_12tac"] =      { Bodygroups = { { 4, 3 } } , AttPosMods = {
+		[11] = { Pos = Vector(0, 2.6, 12), },
+		[15] = { Pos = Vector(-0.95, 0.675, 13.25), },
+		[10] = { Pos = Vector(0, -0.1, 14.5), },
+		[12] = { Pos = Vector(0.55, 1.96, 20.2), },
     }},
 
     -- MAGAZINES
-    -- Other
     ["uplp_ak_mag_308_20"] = { Bodygroups = { { 6, 18 } } },
-
-    -- Alternative Irons
-    ["uplp_ak12_rearsight"] =  { Bodygroups = { { 8, 2 } } },
-    ["uplp_ak12_rearsight_evo"] =  { Bodygroups = { { 8, 3 } } },
-    ["uplp_ak12_rearsight_m1"] =  { Bodygroups = { { 8, 4 } } },
-
 }
 
 local defatt = "arc9/def_att_icons/"
@@ -1663,23 +1641,3 @@ SWEP.HookP_NameChange = function(self, name)
 
     return names
 end
-
--- Moka's shit
--- SWEP.Recoil = 1.5
---[[]
-SWEP.RecoilAutoControl = 2.25
-SWEP.RecoilAutoControlMultShooting = 0.15
-
-SWEP.RecoilMultSights = 0.85
-
-SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.014
-
-SWEP.SpreadAddRecoil = 0.04
-SWEP.SpreadAddMove = 0.02
-
-SWEP.RecoilDissipationRate = 5
-SWEP.RecoilResetTime = 0.05
-
-SWEP.RecoilModifierCapSights = 0.2
-]]
