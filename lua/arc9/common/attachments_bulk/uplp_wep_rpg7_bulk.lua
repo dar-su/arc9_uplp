@@ -14,6 +14,8 @@ ATT.Icon = Material(iconfolder .. "thermo.png", "mips smooth")
 ATT.Category = "uplp_rpg7_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ShootEnt = "arc9_uplp_rpg_thermobaric"
+ATT.ShootEntForceMult = 0.9
 
 ARC9.LoadAttachment(ATT, "uplp_rpg7_rocket_thermo")
 
@@ -30,7 +32,10 @@ ATT.Category = "uplp_rpg7_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShootEnt = "arc9_uplp_rpg_cover"
-ATT.ShootEntForceMult = 0.85
+ATT.ShootEntForceMult = 1.1
+
+ATT.DamageMinOverride = 150
+ATT.DamageMaxOverride = 150
 
 ARC9.LoadAttachment(ATT, "uplp_rpg7_rocket_cover")
 

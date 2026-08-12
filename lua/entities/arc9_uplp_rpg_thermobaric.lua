@@ -2,11 +2,11 @@ AddCSLuaFile()
 
 AddCSLuaFile()
 
-ENT.Base                     = "arc9_uplp_rocket_base"
-ENT.PrintName                = "RPG-7 Rocket"
+ENT.Base                     = "arc9_uplp_rpg_heat"
+ENT.PrintName                = "RPG-7 Thermobaric Rocket"
 ENT.Spawnable                = false
 
-ENT.Model = "models/weapons/arc9/w_uplp_rpg_rocket.mdl"
+ENT.Model = "models/weapons/arc9/w_uplp_rpg_rocket_thermo.mdl"
 
 ENT.IsRocket = true // projectile has a booster and will not drop.
 
@@ -23,42 +23,13 @@ ENT.SafetyFuse = 0.05
 ENT.SmokeTrail = false
 ENT.RocketTrail = true
 
-ENT.FlareColor = Color(255, 155, 0)
-ENT.Radius = 350
+ENT.FlareColor = Color(255, 120, 0)
+ENT.Radius = 512
 
 local pathd = "uplp_urban_temp/m203/"
 local path = "uplp_urban_temp/common/"
 ENT.ExplosionSounds = {path .. "explosion-rpg-01.ogg", path .. "explosion-rpg-02.ogg", path .. "explosion-rpg-03.ogg", path .. "explosion-rpg-04.ogg", path .. "explosion-rpg-05.ogg", path .. "explosion-rpg-06.ogg"}
 ENT.DebrisSounds = {pathd .. "debris-01.ogg", pathd .. "debris-02.ogg", pathd .. "debris-03.ogg", pathd .. "debris-04.ogg", pathd .. "debris-05.ogg"}
-
-function ENT:Impact(data, collider)
-    if self.SpawnTime + self.SafetyFuse > CurTime() then
-        local attacker = self.Attacker or self:GetOwner()
-        local ang = data.OurOldVelocity:Angle()
-        local fx = EffectData()
-        fx:SetOrigin(data.HitPos)
-        fx:SetNormal(-ang:Forward())
-        fx:SetAngles(-ang)
-        util.Effect("ManhackSparks", fx)
-
-        if IsValid(data.HitEntity) then
-            local dmginfo = DamageInfo()
-            dmginfo:SetAttacker(attacker)
-            dmginfo:SetInflictor(self)
-            dmginfo:SetDamageType(DMG_CRUSH + DMG_CLUB)
-            dmginfo:SetDamage(100)
-            dmginfo:SetDamageForce(data.OurOldVelocity * 25)
-            dmginfo:SetDamagePosition(data.HitPos)
-            data.HitEntity:TakeDamageInfo(dmginfo)
-        end
-
-        self:EmitSound("weapons/rpg/shotdown.wav", 80)
-
-        self:Remove()
-        return true
-    end
-    util.Decal("Scorch", data.HitPos + data.HitNormal, data.HitPos - data.HitNormal)
-end
 
 function ENT:Detonate(hitEnt, data)
     local attacker = self.Attacker or self:GetOwner()
@@ -67,15 +38,13 @@ function ENT:Detonate(hitEnt, data)
 
     local dmg = DamageInfo()
     dmg:SetAttacker(attacker)
-    dmg:SetDamageType(DMG_BLAST)
+    dmg:SetDamageType(DMG_BLAST + DMG_BURN)
     dmg:SetInflictor(self)
     dmg:SetDamageForce(self:GetForward() * 5000)
     dmg:SetDamagePosition(src)
-    dmg:SetDamage(200)
+    dmg:SetDamage(100)
     util.BlastDamageInfo(dmg, self:GetPos(), self.Radius)
-    if istable(data) then
-        self:ImpactTraceAttack(data.HitEntity, 300, 18000)
-    end
+    util.BlastDamageInfo(dmg, self:GetPos(), self.Radius / 3)
 
     local fx = EffectData()
     fx:SetOrigin(self:GetPos())
@@ -122,7 +91,7 @@ function ENT:Detonate(hitEnt, data)
     timer.Simple(0, function() self:Remove() end)
 end
 
-local g = Vector(0, 0, -9.81 * 0.2)
+local g = Vector(0, 0, -9.81 * 0.333333)
 function ENT:PhysicsUpdate(phys)
     if !self.Armed and self:WaterLevel() == 0 then
         local v = phys:GetVelocity()

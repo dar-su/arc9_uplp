@@ -50,7 +50,10 @@ function ENT:Detonate(hitEnt, data)
     // ParticleEffect("Generic_explo_tiny", self:GetPos(), data.HitNormal:Angle() * -1, nil)
     ParticleEffect("explosion_he_grenade_fas2", data.HitPos, data.HitNormal:Angle())
 
-    util.BlastDamage(self, attacker, self:GetPos(), 300, 60)
+    util.BlastDamage(self, attacker, self:GetPos(), 250, 50)
+    if istable(data) then
+        self:ImpactTraceAttack(data.HitEntity, 200, 30000)
+    end
 
     if self:WaterLevel() >= 1 then
         util.Effect("WaterSurfaceExplosion", effectdata)
@@ -91,13 +94,13 @@ function ENT:Detonate(hitEnt, data)
         ParticleEffect("explosion_m79", tr.HitPos + data.HitNormal * 48, a)
         debugoverlay.Sphere(tr.HitPos + data.HitNormal * 48, 256, 3, Color(255, 255, 255, 0), true)
 
-        util.BlastDamage(self, attacker, tr.HitPos + data.HitNormal * 48, 350, 140)
+        util.BlastDamage(self, attacker, tr.HitPos + data.HitNormal * 48, 300, 100)
     end
 
     SafeRemoveEntity(self)
 end
 
-local g = Vector(0, 0, -9.81 * 0.3)
+local g = Vector(0, 0, -9.81 * 0.15)
 function ENT:PhysicsUpdate(phys)
     if !self.Armed and self:WaterLevel() == 0 then
         local v = phys:GetVelocity()
