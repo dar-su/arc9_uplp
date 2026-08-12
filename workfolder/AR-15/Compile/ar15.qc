@@ -200,8 +200,20 @@ $sequence "fire_sights" {
 	fadeout 0.2
 }
 
-$sequence "ready" {
-	"anims\ready_alt.smd"
+$sequence "ready1" {
+	"anims\ready.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "ready2" {
+	"anims\ready 2.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "ready3" {
+	"anims\ready 3.smd"
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -282,8 +294,8 @@ $sequence "modeswitch_empty" {
 
 
 $sequence "reload" {
-	"anims\reload.smd"
-	"anims\reload_iron.smd"
+	"anims\reload_NEW.smd"
+	"anims\reload_NEW_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -291,8 +303,17 @@ $sequence "reload" {
 }
 
 $sequence "reload_empty" {
-	"anims\reload_empty.smd"
-	"anims\reload_empty_iron.smd"
+	"anims\reload_NEW_e_1.smd"
+	"anims\reload_NEW_e_1_i.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty_2" {
+	"anims\reload_NEW_e_2.smd"
+	"anims\reload_NEW_e_2_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -318,8 +339,8 @@ $sequence "reload_empty10" {
 }
 
 $sequence "reload20" {
-	"anims\reload20.smd"
-	"anims\reload_iron20.smd"
+	"anims\reload_NEW20.smd"
+	"anims\reload_NEW20_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -327,8 +348,8 @@ $sequence "reload20" {
 }
 
 $sequence "reload_empty20" {
-	"anims\reload_empty20.smd"
-	"anims\reload_empty_iron20.smd"
+	"anims\reload_NEW20_e.smd"
+	"anims\reload_NEW20_e_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -336,7 +357,7 @@ $sequence "reload_empty20" {
 }
 
 $sequence "reload40" {
-	"anims\reload40.smd"
+	"anims\reload_NEW40.smd"
 	"anims\reload_iron40.smd"
 	blend "sights" 0 1
 	fps 30
@@ -345,8 +366,16 @@ $sequence "reload40" {
 }
 
 $sequence "reload_empty40" {
-	"anims\reload_empty40.smd"
-	"anims\reload_empty_iron40.smd"
+	"anims\reload_NEW40_e_1.smd"
+	"anims\reload_NEW40_e_1_i.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_empty40_2" {
+	"anims\reload_NEW40_e_2.smd"
+	"anims\reload_NEW40_e_2_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -354,8 +383,8 @@ $sequence "reload_empty40" {
 }
 
 $sequence "reload60" {
-	"anims\reload60.smd"
-	"anims\reload_iron60.smd"
+	"anims\reload_NEW60.smd"
+	"anims\reload_NEW60_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -363,8 +392,8 @@ $sequence "reload60" {
 }
 
 $sequence "reload_empty60" {
-	"anims\reload_empty60.smd"
-	"anims\reload_empty_iron60.smd"
+	"anims\reload_NEW60_e.smd"
+	"anims\reload_NEW60_e_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
