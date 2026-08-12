@@ -319,12 +319,12 @@ ATT.CustomPros = {
 -- Positives
 ATT.RangeMaxMult = 1.5
 ATT.RecoilMult = 0.75
-ATT.NumOverride = 24
+ATT.NumOverride = 30
 ATT.HullSizeOverride = 6
 ATT.PhysBulletGravityMult = 0.75
 
 -- Negatives
-ATT.SpreadMult = 1.75
+ATT.SpreadMult = 1.5
 ATT.DamageMaxMult = 0.5
 ATT.DamageMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.25
@@ -358,7 +358,7 @@ ATT.Hook_PrimaryAttack = function(wep, data)
     end
 end
 
-local ignore_threshold = {
+local direct_burn = {
     npc_zombie = true,
     npc_zombie_torso = true,
     npc_zombine = true,
@@ -368,10 +368,19 @@ local ignore_threshold = {
     npc_headcrab_fast = true,
     npc_headcrab_black = true,
     npc_headcrab_poison = true,
-    -- poison zombie intentionally missing, as it loses most of its hp immediately on ignite
+    npc_poisonzombie = true,
     npc_antlionguard = true,
     npc_antlionguardian = true,
     npc_barnacle = true,
+}
+
+local ignite_threshold = {
+    -- instantly killed by fire
+    npc_combine_s = 0.6,
+    npc_metropolice = 0.6,
+
+    -- loses a lot of hp on ignite
+    npc_poisonzombie = 0.5,
 }
 
 ATT.Hook_BulletImpact = function(wep, data)
@@ -382,15 +391,15 @@ ATT.Hook_BulletImpact = function(wep, data)
     local dur = 0
     local max_dur = 30
     if ent:IsPlayer() then
-        dur = 4 / 24
+        dur = 4 / 30
         max_dur = 5
     elseif ent:IsNPC() or ent:IsNextBot() then
         -- burning will cause CC or even instant kill some NPCs so only burn if they're weak (or zombies)
-        if ent:IsNextBot() or ignore_threshold[data.tr.Entity:GetClass()] or ent:Health() / ent:GetMaxHealth() <= 0.6 then
-            dur = 8 / 24
+        if ent:IsNextBot() or ent:Health() / ent:GetMaxHealth() <= (ignite_threshold[data.tr.Entity:GetClass()] or 1) then
+            dur = 8 / 30
         end
     elseif ent:GetPhysicsObject():IsValid() then
-        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 2, 10) / 24
+        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 2, 10) / 30
     end
     if dur <= 0 then
 
@@ -410,7 +419,7 @@ ATT.Hook_BulletImpact = function(wep, data)
             ent:Extinguish()
             ent:Ignite(ent.UPLP_BurnTime - CurTime())
             -- HL2 zombies ignore DMG_BURN damage, making pellets do no damage
-            data.dmg:SetDamageType(ignore_threshold[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
+            data.dmg:SetDamageType(direct_burn[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
         end
     end
 end
@@ -427,7 +436,7 @@ ATT.Hook_PhysBulletImpact = function(wep, data)
 
     for i = 1, math.ceil(math.Rand(16, 32) * Lerp(a, 1, 0.25) ) do
         local ember = emitter:Add("effects/spark", data.tr.HitPos + VectorRand() * 4)
-        ember:SetVelocity(VectorRand() * Lerp(a, 300, 150) - vec * math.Rand(100, 300) + Vector(0, 0, math.Rand(75, 150)))
+        ember:SetVelocity(VectorRand() * 300 - vec * math.Rand(100, 300) + Vector(0, 0, math.Rand(75, 150)))
         ember:SetGravity(Vector(0, 0, -600))
         ember:SetDieTime(math.Rand(0.6, 1.2))
         ember:SetStartAlpha(255)
