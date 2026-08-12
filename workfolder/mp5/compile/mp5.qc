@@ -48,7 +48,7 @@ $cdmaterials "models\weapons\arc9\uplp"
 
 
 $attachment "1" "barrel" 0 0 0 rotate -90 0 0
-$attachment "2" "bolt" 0 -0.6 -4 rotate -10 140 180
+$attachment "2" "bolt" 0 -0.468 -3.14 rotate -10 140 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "mag" 0 0 0 rotate -90 0 0
 // $attachment "5" "fakemag" 0 0 0 rotate -90 0 0
@@ -81,10 +81,7 @@ $sequence "idle"{
 $sequence "firemode_pose" {
 	"anims\idle2.smd"
 	"anims\idle_firemode.smd"
-	"anims\idle_iron.smd"
-	"anims\idle_firemode_iron.smd"
 	blend "firemode" 1 2
- 	blend "sights" 0 1
 	blendwidth 2
 	delta
 	autoplay
@@ -97,8 +94,6 @@ $sequence "firemode_pose" {
 $sequence "magspring_pose" {
 	"anims\idle2.smd"
 	"anims\idle_spring.smd"
-	// "anims\idle_iron.smd"
-	// "anims\idle_spring_iron.smd"
 	blend "magspring" 0 1
  	// blend "sights" 0 1
 	blendwidth 2
@@ -141,16 +136,12 @@ $sequence "ready" {
 
 $sequence "draw" {
 	"anims\draw.smd"
-	"anims\draw_iron.smd"
- 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster" {
 	"anims\holster.smd"
-	"anims\holster_iron.smd"
- 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -170,18 +161,18 @@ $sequence "modeswitch" {
 
 $sequence "reload" {
 	"anims\reload.smd"
-	"anims\reload_iron.smd"
+	"anims\reload_i.smd"
 	blend "sights" 0 1
-	fps 33
+	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 
 $sequence "reload_empty" {
 	"anims\reload_empty.smd"
-	"anims\reload_empty_iron.smd"
+	"anims\reload_empty_i.smd"
 	"anims\reload_empty_k.smd"
-	"anims\reload_empty_k_iron.smd"
+	"anims\reload_empty_k_i.smd"
 	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
@@ -190,19 +181,19 @@ $sequence "reload_empty" {
 }
 
 $sequence "reload_15" {
-	"anims\reload_15.smd"
-	"anims\reload_15_iron.smd"
+	"anims\reload_10.smd"
+	"anims\reload_10_i.smd"
 	blend "sights" 0 1
-	fps 34
+	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 
 $sequence "reload_empty_15" {
-	"anims\reload_empty_15.smd"
-	"anims\reload_empty_15_iron.smd"
-	"anims\reload_empty_15_k.smd"
-	"anims\reload_empty_15_k_iron.smd"
+	"anims\reload_10_empty.smd"
+	"anims\reload_10_empty_i.smd"
+	"anims\reload_10_empty_k.smd"
+	"anims\reload_10_empty_k_i.smd"
 	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
@@ -212,18 +203,18 @@ $sequence "reload_empty_15" {
 
 $sequence "reload_50" {
 	"anims\reload_50.smd"
-	"anims\reload_50_iron.smd"
+	"anims\reload_50_i.smd"
 	blend "sights" 0 1
-	fps 33
+	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 
 $sequence "reload_empty_50" {
-	"anims\reload_empty_50.smd"
-	"anims\reload_empty_50_iron.smd"
-	"anims\reload_empty_50_k.smd"
-	"anims\reload_empty_50_k_iron.smd"
+	"anims\reload_50_empty.smd"
+	"anims\reload_50_empty_i.smd"
+	"anims\reload_50_empty_k.smd"
+	"anims\reload_50_empty_k_i.smd"
 	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
@@ -233,7 +224,7 @@ $sequence "reload_empty_50" {
 
 $sequence "reload_empty_catch" {
 	"anims\reload_empty_catch.smd"
-	"anims\reload_empty_catch_iron.smd"
+	"anims\reload_empty_catch_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -242,7 +233,7 @@ $sequence "reload_empty_catch" {
 
 $sequence "inspect" {
 	"anims\inspect.smd"
-	"anims\inspect_k.smd"
+	"anims\inspect_kk.smd"
 	blend "owo" 0 1
 	fps 30
 }
