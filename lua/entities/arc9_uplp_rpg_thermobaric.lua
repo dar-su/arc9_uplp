@@ -44,6 +44,7 @@ function ENT:Detonate(hitEnt, data)
     dmg:SetDamagePosition(src)
     dmg:SetDamage(100)
     util.BlastDamageInfo(dmg, self:GetPos(), self.Radius)
+    dmg:SetDamageType(DMG_BLAST + DMG_AIRBOAT)
     util.BlastDamageInfo(dmg, self:GetPos(), self.Radius / 3)
 
     local fx = EffectData()

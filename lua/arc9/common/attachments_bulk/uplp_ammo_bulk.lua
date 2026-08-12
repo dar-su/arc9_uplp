@@ -517,17 +517,17 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 ATT.SpreadMult = 0.75
 
 ATT.ExplosionRadiusOverride = 150
-ATT.ExplosionDamageOverride = 20
+ATT.ExplosionDamageOverride = 25
 ATT.ImpactDecal = "FadingScorch"
 
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 -- Negatives
-ATT.DamageMaxMult = 0.5
-ATT.DamageMinMult = 0.5
+ATT.DamageMaxMult = 0.45
+ATT.DamageMinMult = 0.45
 ATT.NumOverride = 1
-ATT.PhysBulletGravityMult = 2
+ATT.PhysBulletGravityMult = 1.5
 ATT.PhysBulletMuzzleVelocityMult = 0.33333333
 ATT.AlwaysPhysBulletOverride = true
 ATT.RPMMult = 0.9
@@ -645,6 +645,8 @@ ATT.Hook_PhysBulletImpact = function(wep, data)
         spark:SetCollide(false)
         spark:SetBounce(0.8)
     end
+
+    sound.Play("^weapons/shotgun/shotgun_dbl_fire.wav", data.tr.HitPos, 95, 145, 0.7)
 
     emitter:Finish()
 end
