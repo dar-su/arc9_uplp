@@ -5,7 +5,7 @@ SWEP.Spawnable = true
 
 ---- FUNDAMENTALS
 
-SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
+SWEP.Slot = 4 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_rpg7")
@@ -100,8 +100,8 @@ SWEP.DamageMax = 300
 SWEP.DamageMin = 300
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = nil
-SWEP.ShootEnt = "arc9_uplp_rpg_missle" -- Set to an entity to launch it out of this weapon.
-SWEP.ShootEntForce = 7000
+SWEP.ShootEnt = "arc9_uplp_rpg_heat" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEntForce = 4000
 SWEP.ShootEntityData = {}
 
 
@@ -504,6 +504,9 @@ SWEP.CantPeek = true
 
 SWEP.ReloadInSights = false
 
+SWEP.HasBackblast = true
+SWEP.CauseFear = true
+
 function SWEP:ThinkGrenade()
     local owner = self:GetOwner()
 
@@ -523,11 +526,27 @@ SWEP.Hook_PrimaryAttack = function(self)
     self:SetInSights(false)
     self:SetShouldHoldType()
 
-
-    -- backblast
     local owner = self:GetOwner()
 
-    if IsValid(owner) and owner:IsPlayer() then
+    -- some NPCs aimed at will cower
+    if self:GetProcessedValue("CauseFear") then
+        for _, ent in pairs(ents.FindInCone(self:GetShootPos(), self:GetShootDir(true):Forward(), 8000, math.cos(math.rad(6)))) do
+            if not ent:IsNPC() or not ent:Visible(owner) or math.random() ^ 2 < ent:GetPos():DistToSqr(self:GetPos()) / (8000 ^ 2) then continue end
+            timer.Simple(math.Rand(0, 0.2), function()
+                if IsValid(ent) then
+                    ent:SetSchedule(SCHED_COWER)
+                end
+            end)
+        end
+    end
+
+    -- backblast
+
+    if IsValid(owner) and owner:IsPlayer() and self:GetProcessedValue("HasBackblast") then
+
+        -- Secret tech! Combines, rebels and some other NPCs will cower and run and scream and stuff
+        sound.EmitHint(SOUND_DANGER, self:GetPos(), 256, math.Rand(0.75, 1.5))
+
         local tr = util.TraceLine( {
             start = owner:EyePos(),
             endpos = owner:EyePos() + owner:EyeAngles():Forward() * -48,

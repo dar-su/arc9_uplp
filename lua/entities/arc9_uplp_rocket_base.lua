@@ -1,3 +1,4 @@
+// shamefully I added "arc9_uplp_proj_base" to speedonerd's unofficial pack first since it needed rockets, and I need to modify this, so it's gotta be named something else
 AddCSLuaFile()
 
 ENT.Type                     = "anim"
@@ -220,7 +221,7 @@ function ENT:PhysicsCollide(data, collider)
         end
 
         if self.Delay == 0 or self.ExplodeOnImpact then
-            self:PreDetonate(data.HitEntity)
+            self:PreDetonate(data.HitEntity, data)
         end
     elseif self.ImpactDamage > 0 and (self.NextImpactDamage or 0) < CurTime() and data.Speed >= 10 and IsValid(data.HitEntity) and (engine.ActiveGamemode() != "terrortown" or !data.HitEntity:IsPlayer()) then
         local dmg = DamageInfo()
@@ -485,7 +486,7 @@ function ENT:RemoteDetonate()
     self.Armed = true
 end
 
-function ENT:PreDetonate(ent)
+function ENT:PreDetonate(ent, data)
     if CLIENT then return end
 
     if !self.Detonated then
@@ -493,11 +494,11 @@ function ENT:PreDetonate(ent)
 
         if !IsValid(self.Attacker) and !IsValid(self:GetOwner()) then self.Attacker = game.GetWorld() end
 
-        self:Detonate(ent)
+        self:Detonate(ent, data)
     end
 end
 
-function ENT:Detonate(ent)
+function ENT:Detonate(ent, data)
     // fill this in :)
 end
 

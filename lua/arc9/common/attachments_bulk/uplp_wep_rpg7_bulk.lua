@@ -29,6 +29,8 @@ ATT.Icon = Material(iconfolder .. "pierce.png", "mips smooth")
 ATT.Category = "uplp_rpg7_ammo"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.ShootEnt = "arc9_uplp_rpg_cover"
+ATT.ShootEntForceMult = 0.85
 
 ARC9.LoadAttachment(ATT, "uplp_rpg7_rocket_cover")
 
@@ -52,6 +54,12 @@ ATT.AimDownSightsTimeMult = 0.666667
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.1
 ATT.SpreadAddHipFire = -0.05
+
+ATT.DamageMinOverride = 150
+ATT.DamageMaxOverride = 150
+
+ATT.CauseFearOverride = false
+ATT.HasBackblastOverride = false
 
 ARC9.LoadAttachment(ATT, "uplp_rpg7_rocket_shovel")
 

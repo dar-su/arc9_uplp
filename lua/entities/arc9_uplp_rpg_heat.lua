@@ -2,7 +2,7 @@ AddCSLuaFile()
 
 AddCSLuaFile()
 
-ENT.Base                     = "arc9_uplp_proj_base"
+ENT.Base                     = "arc9_uplp_rocket_base"
 ENT.PrintName                = "RPG-7 Rocket"
 ENT.Spawnable                = false
 
@@ -24,7 +24,7 @@ ENT.SmokeTrail = false
 ENT.RocketTrail = true
 
 ENT.FlareColor = Color(255, 155, 0)
-ENT.Radius = 420
+ENT.Radius = 350
 
 local pathd = "uplp_urban_temp/m203/"
 local path = "uplp_urban_temp/common/"
@@ -60,7 +60,7 @@ function ENT:Impact(data, collider)
     util.Decal("Scorch", data.HitPos + data.HitNormal, data.HitPos - data.HitNormal)
 end
 
-function ENT:Detonate(data)
+function ENT:Detonate(hitEnt, data)
     local attacker = self.Attacker or self:GetOwner()
     local dir = self:GetVelocity():GetNormalized()
     local src = self:GetPos() - dir * 64
@@ -84,7 +84,7 @@ function ENT:Detonate(data)
     fx:SetEntity(self)
 
     if self:WaterLevel() >= 1 then
-        util.Effect("WaterSurfaceExplosion", effectdata)
+        util.Effect("WaterSurfaceExplosion", fx)
         self:EmitSound("weapons/underwater_explode3.wav", 125, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
     else
 
@@ -120,4 +120,14 @@ function ENT:Detonate(data)
         end
     end
     timer.Simple(0, function() self:Remove() end)
+end
+
+local g = Vector(0, 0, -9.81 * 0.2)
+function ENT:PhysicsUpdate(phys)
+    if !self.Armed and self:WaterLevel() == 0 then
+        local v = phys:GetVelocity()
+        local a = v:Angle()
+        self:SetAngles(a)
+        phys:SetVelocityInstantaneous(v + g)
+    end
 end
