@@ -30,7 +30,7 @@ local pathd = "uplp_urban_temp/m203/"
 local path = "uplp_urban_temp/common/"
 ENT.ExplosionSounds = {path .. "explosion-rpg-01.ogg", path .. "explosion-rpg-02.ogg", path .. "explosion-rpg-03.ogg", path .. "explosion-rpg-04.ogg", path .. "explosion-rpg-05.ogg", path .. "explosion-rpg-06.ogg"}
 ENT.DebrisSounds = {pathd .. "debris-01.ogg", pathd .. "debris-02.ogg", pathd .. "debris-03.ogg", pathd .. "debris-04.ogg", pathd .. "debris-05.ogg"}
-ENT.ExplosionSounds2 = {path .. "explosion-close-01.ogg", path .. "explosion-close-02.ogg", path .. "explosion-close-03.ogg", path .. "explosion-close-04.ogg", path .. "explosion-close-05.ogg", path .. "explosion-close-06.ogg"}
+ENT.ExplosionSounds2 = {pathd .. "explosion-close-01.ogg", pathd .. "explosion-close-02.ogg", pathd .. "explosion-close-03.ogg", pathd .. "explosion-close-04.ogg", pathd .. "explosion-close-05.ogg", pathd .. "explosion-close-06.ogg"}
 
 
 function ENT:Detonate(hitEnt, data)

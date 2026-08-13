@@ -571,7 +571,7 @@ SWEP.Animations = {
         Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUTC .. "stock_grab.ogg", t = 0 / 30 },
+            { s = pathRZ .. "stock_grab.ogg", t = 0 / 30 },
             { s = pathRZ .. "stock_in.ogg", t = 4 / 30 },
         },
     },
