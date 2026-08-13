@@ -244,7 +244,7 @@ SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_std.mdl"
 SWEP.DropMagazineTime = 0.6
-SWEP.DropMagazineQCA = 4
+SWEP.DropMagazineQCA = 5
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
 SWEP.DropMagazineVelocity = Vector(0, -5, 10)
@@ -517,17 +517,18 @@ SWEP.Animations = {
 		RefillProgress = 0.725,
 		FireASAP = true,
         -- Mult = 0.95,
+        MagSwapTime = 50/30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 0 / 30, v = 0.9 },
             { s = pathUT .. "magout.ogg", t = 13 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 34 / 30, v = 0.8 },
             { s = UTCrattle, t = 50 / 30, v = 0.4 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.25},
-            {hide = 2, t = 0.86},
+            {hide = 2, t = 0},
+            {hide = 0, t = 10/30},
+            {hide = 1, t = 26/30},
         },
-        DropMagAt = 0.86,
+        DropMagAt = 26/30,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.1, lhik = 0 },
@@ -543,6 +544,7 @@ SWEP.Animations = {
 		RefillProgress = 0.775,
 		FireASAP = true,
         Mult = 0.97,
+        MagSwapTime = 50/30,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 0 / 30, v = 0.9 },
@@ -551,11 +553,11 @@ SWEP.Animations = {
             { s = pathUT .. "chback.ogg", t = 53 / 30, v = 0.8 },
             { s = pathUT .. "chamber.ogg", t = 57 / 30, v = 0.8 },
             { s = UTCrattle, t = 65 / 30, v = 0.4 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.25},
-            {hide = 2, t = 0.86},
+            {hide = 2, t = 0},
+            {hide = 0, t = 10/30},
+            {hide = 1, t = 26/30},
         },
-        DropMagAt = 0.86,
+        DropMagAt = 26/30,
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.1, lhik = 0 },
