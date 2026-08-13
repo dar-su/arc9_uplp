@@ -17,12 +17,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
-ATT.SprintToFireTimeAdd = 0.03
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMAdd = -20
-
-ATT.ClipSizeOverride = 8
-ATT.ClipSizeOverride_Priority = 0
+ATT.SpreadAdd = -0.0005
+ATT.RecoilMult = 0.97
+ATT.SpeedMultSights = 0.97
 
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_m45a1")
 
@@ -41,12 +38,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_m45.mdl"
 
-ATT.SprintToFireTimeAdd = 0.03
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.RPMAdd = -20
-
-ATT.ClipSizeOverride = 8
-ATT.ClipSizeOverride_Priority = 0
+ATT.SpreadAdd = -0.0005
+ATT.RecoilMult = 0.97
+ATT.SpeedMultSights = 0.97
 
 ARC9.LoadAttachment(ATT, "uplp_1911_frame_m45a1fde")
 
