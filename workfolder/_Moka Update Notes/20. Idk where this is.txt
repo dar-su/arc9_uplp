@@ -5,9 +5,15 @@
 	[*] Added the [b]LA M2K11[/b], a modernized version of the aforementioned service pistol
 	
 	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified, few new attachments and slight rebalance!
-	[*] AK, AR-15 and Molot reloads were remade! Fresher and nicer
-	[*] Added lots of new universal attachments, extra stuff for AK and AR too!
-	
+	[*] [b]AR-15[/b], [b]AR-15[/b] and [b]AR-15[/b] have received new reload animations - more fancy now!
+	[*] Added many new attachments
+	[list]
+		[*] 6 new universal optics
+		[*] 3 new tactical accessories
+		[*] [b]AR-15[/b]: New [b]Civilian-Spec[/b] Handguard and Stock
+		[*] [b]AK[/b]: New [b]45-Round 5.45 Polymer Magazine[/b]
+		[*] [b]AK[/b] & [b]Molot[/b]: New [b]HPKM[/b] Handguard and [b]Zenith Pistol Grip[/b]
+	[/list]
 	[*] Added new [b]Damage Multiplier[/b] settings inside the ARC9 Settings menu
 	[list]
 		[*] Weapons now use damage multipliers depending on their class
@@ -18,11 +24,14 @@
 
 [h1]Changed content[/h1]
 [list]
-	[*] Shotguns rebalanced, once again lol
+	[*] All Shotguns have been rebalanced, and some shotgun shells have been redesigned;
 	[list]
-		[*] More damage, less spread
-		[*] New Sabot Slug replaces Double Slug
-		[*] Cooler effects for Dragon Breath and Explosive Slugs
+		[*] Improved damage and accuracy on all Shotguns
+		[*] Added [b]Sabot Slugs[/b], a single accurate slug round with reduced stopping power.
+		[list]
+			[*] This replaces [b]Double Slugs[/b] (Black shells).
+		[/list]
+		[*] Improved the visual effects when using Dragon's Breath and Explosive Slug Rounds.
 	[/list]
 	[*] AW Sniper was rescaled to IRL size, animations were tweaked
 	[*] PV-9' ironsights are way shorter now (sadly, sticker slot in rear sight was removed)

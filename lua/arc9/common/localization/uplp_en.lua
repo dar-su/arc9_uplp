@@ -424,6 +424,30 @@ L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
 L["uplp_optic_rsa.compactname"] = "Type-7"
 L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
 
+L["uplp_optic_falco.printname"] = "NPI Red Dot"
+L["uplp_optic_falco.compactname"] = "NPI"
+L["uplp_optic_falco.description"] = "Modern top-tier reflex optic made by the newly formed Northstar Precision Institute (NPI)." .. desc_cqcoptic
+
+L["uplp_optic_uh1.printname"] = "SightLine™ Gen-II Holographic Sight"
+L["uplp_optic_uh1.compactname"] = "SL Gen-II"
+L["uplp_optic_uh1.description"] = "Next generation holographic sight made by SightLine™." .. desc_cqcoptic
+
+L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
+L["uplp_optic_sro_direct.compactname"] = "VOC-1"
+L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+L["uplp_optic_sro.printname"] = ARC9:GetPhrase("uplp_optic_sro_direct.printname") or "VOC-1 Red Dot"
+L["uplp_optic_sro.compactname"] = ARC9:GetPhrase("uplp_optic_sro_direct.compactname") or "VOC-1"
+L["uplp_optic_sro.description"] = ARC9:GetPhrase("uplp_optic_sro_direct.description") or "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
+L["uplp_optic_justice_direct.compactname"] = "Redmark"
+L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
+
+L["uplp_optic_justice.printname"] = ARC9:GetPhrase("uplp_optic_justice_direct.printname") or "Redmark Arms Reflex"
+L["uplp_optic_justice.compactname"] = ARC9:GetPhrase("uplp_optic_justice_direct.compactname") or "Redmark"
+L["uplp_optic_justice.description"] = ARC9:GetPhrase("uplp_optic_justice_direct.description") or "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
 L["uplp_backup_optic_rmr.compactname"] = "Canted RDS"
@@ -485,6 +509,14 @@ L["uplp_grip_rk45.description"] = "Angled foregrip tilted 45 degrees made for mo
 L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
 L["uplp_grip_cqr.compactname"] = "Ares"
 L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
+
+L["uplp_grip_afg.printname"] = "Angled Grip"
+L["uplp_grip_afg.compactname"] = "Angled"
+L["uplp_grip_afg.description"] = "Rail-mounted angle foregrip."
+
+L["uplp_grip_cqr_mini.printname"] = "PAWCO \"Ares\" Mini-Grip"
+L["uplp_grip_cqr_mini.compactname"] = "Ares (M)"
+L["uplp_grip_cqr_mini.description"] = "Miniature variant of PAWCO's \"Ares\" division's custom-made foregrip."
 
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Bipod"
@@ -593,9 +625,9 @@ L["uplp_tac_laser_blue.printname"] = "ApexAim Laser Sight (Blue)"
 L["uplp_tac_laser_blue.compactname"] = "ApexAim (B)"
 L["uplp_tac_laser_blue.description"] = "Rail-mounted aiming module made by ApexAim that provides a blue laser sight for use in the dark."
 
-L["uplp_tac_laser_dbal.printname"] = "Laser Sight (DBAL)"
-L["uplp_tac_laser_dbal.compactname"] = "Laser (DBAL)"
-L["uplp_tac_laser_dbal.description"] = "Rail-mounted aiming module that provides a laser sight for use in the dark."
+L["uplp_tac_laser_dbal.printname"] = "Veyron Tactics Laser Module"
+L["uplp_tac_laser_dbal.compactname"] = "Veyron"
+L["uplp_tac_laser_dbal.description"] = "Rail-mounted aiming module made by Veyron Tactics that provides a laser sight for use in the dark."
 
 L["uplp_tac_laser_green.printname"] = "ApexAim Laser Sight (Green)"
 L["uplp_tac_laser_green.compactname"] = "ApexAim (G)"
@@ -604,6 +636,22 @@ L["uplp_tac_laser_green.description"] = "Rail-mounted aiming module made by Apex
 L["uplp_tac_laser_pistol.printname"] = "LuminaFire Armaments Laser Sight"
 L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module made by LuminaFire Armaments designed for handguns that provides a laser sight for use in the dark."
+
+L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
+L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
+L["uplp_tac_flashlight_tac.description"] = "Lightweight tactical flashlight made by LuminaFire Armaments."
+
+L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
+L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
+L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight made by NightStrike Illumination, intended for smaller firearms."
+
+L["uplp_tac_piscomb_dbal.printname"] = ARC9:GetPhrase("uplp_tac_laser_dbal.printname") or "Veyron Tactics Laser Module"
+L["uplp_tac_piscomb_dbal.compactname"] = ARC9:GetPhrase("uplp_tac_laser_dbal.compactname") or "Veyron"
+L["uplp_tac_piscomb_dbal.description"] = ARC9:GetPhrase("uplp_tac_laser_dbal.description") or "Rail-mounted aiming module made by Veyron Tactics that provides a laser sight for use in the dark."
+
+L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
+L["uplp_tac_piscomb_viri.compactname"] = "Helios"
+L["uplp_tac_piscomb_viri.description"] = ARC9:GetPhrase("uplp_tac_piscomb.description") or "Compact rail-mounted module providing a weaker flashlight and laser sight in one."
 
 /////////// Ammunition
 local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
@@ -682,6 +730,7 @@ L["uplp_weapon_ak_545"] = "%s 5.45"
 L["uplp_weapon_ak_556"] = "%s 5.56"
 L["uplp_weapon_ak_9x39"] = "%s 9×39"
 L["uplp_weapon_ak_rpk"] = "HPK"
+L["uplp_weapon_ak_rpkm"] = "HPKM"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
 L["uplp_weapon_ak12_16"] = "AK M16"
@@ -836,6 +885,10 @@ L["uplp_ak_grip_agr.printname"] = "ApexCore Systems Pistol Grip"
 L["uplp_ak_grip_agr.compactname"] = "ApexCore"
 L["uplp_ak_grip_agr.description"] = "Heavy pistol grip with built-in palm shelf for AK-based rifles made by ApexCore Systems."
 
+L["uplp_ak_grip_rk3.printname"] = "Zenith Pistol Grip"
+L["uplp_ak_grip_rk3.compactname"] = "Zenith"
+L["uplp_ak_grip_rk3.description"] = "Lightweight pistol grip for AK-style rifles."
+
 L["uplp_ak_grip_12.printname"] = "AK M22 Pistol Grip"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Standard pistol grip used on the AK M22."
@@ -900,6 +953,10 @@ L["uplp_ak_hg_rpk16.description"] = "Longer handguard used on the HPK M16.\nAdds
 L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Model 23 Handguard"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Very long tactical handguard made by Lisyan Tactical.\nNot compatible with the <color=255,100,100>230mm AK M22-K Barrel</color>."
+
+L["uplp_ak_hg_rpk74.printname"] = "HPKM Handguard"
+L["uplp_ak_hg_rpk74.compactname"] = "HPKM"
+L["uplp_ak_hg_rpk74.description"] = "Modern polymer handguard used on the modernized HPKM."
 
 ////// Magazines
 /// 7.62×39mm
@@ -980,6 +1037,10 @@ L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizo
 L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45×39mm HPK M16 Drum"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"
 L["uplp_ak_mag_545_drum.description"] = "85-round cylindrical drum magazine from the HPK M16." .. loaded545
+
+L["uplp_ak_mag_545_45p.printname"] = "45-Round 5.45×39mm (Polymer)"
+L["uplp_ak_mag_545_45p.compactname"] = "40R 5.45 (P)"
+L["uplp_ak_mag_545_45p.description"] = "45-round polymer magazine used by the modernized HPKM." .. loaded545
 
 /// 5.56×45mm NATO
 local loaded556 = loaded .. "Loaded with <color=160,160,255>5.56×45mm</color> used by the AK M10 5.56." .. changeammo.smg1
@@ -1338,6 +1399,10 @@ L["uplp_ar15_hg_xm.printname"] = "Commando Handguard"
 L["uplp_ar15_hg_xm.compactname"] = "Commando"
 L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
 
+L["uplp_ar15_hg_adar.printname"] = "Civilian-Spec Handguard"
+L["uplp_ar15_hg_adar.compactname"] = "Civilian"
+L["uplp_ar15_hg_adar.description"] = "Wooden handguard intended for a Russian hunting version of the AR-15." .. requires14
+
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 Auto"
@@ -1567,6 +1632,10 @@ L["uplp_ar15_stock_m4ss.description"] = "Lightweight stock for AR-15 rifles." ..
 L["uplp_ar15_stock_cqr.printname"] = "PAWCO \"Ares\" Stock"
 L["uplp_ar15_stock_cqr.compactname"] = "Ares"
 L["uplp_ar15_stock_cqr.description"] = "Custom-made, heavy-weight stock and pistol grip made by PAWCO's \"Ares\" division." ..desc_stock_l .. "\n<color=100,255,100>Reduces more recoil</color> compared to other heavy stocks."
+
+L["uplp_ar15_stock_adar.printname"] = "Civilian-Spec Stock"
+L["uplp_ar15_stock_adar.compactname"] = "Civilian"
+L["uplp_ar15_stock_adar.description"] = "Civilian stock and pistol grip intended for a civilian-spec, Russian-made, semi-automatic AR-15." .. desc_stock_l
 
 //////////////////// Deagle
 L["uplp_weapon_deagle"] = "Deagle"

@@ -415,6 +415,22 @@ L["uplp_optic_dedal.description"] = "Visor con 12 aumentos del Instituto de Arma
 -- L["uplp_optic_rsa.compactname"] = "Type-7"
 -- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
 
+-- L["uplp_optic_falco.printname"] = "NPI Red Dot"
+-- L["uplp_optic_falco.compactname"] = "NPI"
+-- L["uplp_optic_falco.description"] = "Modern top-tier reflex optic made by the newly formed Northstar Precision Institute (NPI)." .. desc_cqcoptic
+
+-- L["uplp_optic_uh1.printname"] = "SightLine™ Gen-II Holographic Sight"
+-- L["uplp_optic_uh1.compactname"] = "SL Gen-II"
+-- L["uplp_optic_uh1.description"] = "Next generation holographic sight made by SightLine™." .. desc_cqcoptic
+
+-- L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
+-- L["uplp_optic_sro_direct.compactname"] = "VOC-1"
+-- L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+-- L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
+-- L["uplp_optic_justice_direct.compactname"] = "Redmark"
+-- L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Punto Rojo Inclinado"
 L["uplp_backup_optic_rmr.compactname"] = "PRI Inclinado"
@@ -476,6 +492,14 @@ L["uplp_grip_rk45.description"] = "Empuñadura inclinada 45 grados para la mayor
 -- L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
 -- L["uplp_grip_cqr.compactname"] = "Ares"
 -- L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
+
+-- L["uplp_grip_afg.printname"] = "Angled Grip"
+-- L["uplp_grip_afg.compactname"] = "Angled"
+-- L["uplp_grip_afg.description"] = "Rail-mounted angle foregrip."
+
+-- L["uplp_grip_cqr_mini.printname"] = "PAWCO \"Ares\" Mini-Grip"
+-- L["uplp_grip_cqr_mini.compactname"] = "Ares (M)"
+-- L["uplp_grip_cqr_mini.description"] = "Miniature variant of PAWCO's \"Ares\" division's custom-made foregrip."
 
 /////////// Bipod
 L["uplp_bipod.printname"] = "Bípode SynPoly WildCat X"
@@ -584,9 +608,9 @@ L["uplp_tac_laser_blue.printname"] = "Mira Láser ApexAim (Azul)"
 L["uplp_tac_laser_blue.compactname"] = "ApexAim (A)"
 L["uplp_tac_laser_blue.description"] = "Módulo de puntería montado en raíl fabricado por ApexAim que proporciona una mira láser azul para su uso en la oscuridad."
 
-L["uplp_tac_laser_dbal.printname"] = "Mira Láser (DBAL)"
-L["uplp_tac_laser_dbal.compactname"] = "Láser (DBAL)"
-L["uplp_tac_laser_dbal.description"] = "Módulo de puntería montado en raíl que proporciona una mira láser para su uso en la oscuridad."
+L["uplp_tac_laser_dbal.printname"] = "Módulo Láser Veyron Tactics"
+L["uplp_tac_laser_dbal.compactname"] = "Veyron"
+L["uplp_tac_laser_dbal.description"] = "Módulo de puntería montado en raíl fabricado por Veyron Tactics que proporciona una mira láser para su uso en la oscuridad."
 
 L["uplp_tac_laser_green.printname"] = "Mira Láser ApexAim (Verde)"
 L["uplp_tac_laser_green.compactname"] = "ApexAim (V)"
@@ -595,6 +619,17 @@ L["uplp_tac_laser_green.description"] = "Módulo de puntería montado en raíl f
 L["uplp_tac_laser_pistol.printname"] = "Mira Láser LuminaFire Armaments"
 L["uplp_tac_laser_pistol.compactname"] = "L. LuminaFire"
 L["uplp_tac_laser_pistol.description"] = "Módulo de puntería compacto montado en raíl fabricado por LuminaFire Armaments y diseñado para pistolas que proporciona una mira láser para su uso en la oscuridad."
+
+-- L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
+-- L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
+-- L["uplp_tac_flashlight_tac.description"] = "Lightweight tactical flashlight made by LuminaFire Armaments."
+
+-- L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
+-- L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
+-- L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight made by NightStrike Illumination, intended for smaller firearms."
+
+-- L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
+-- L["uplp_tac_piscomb_viri.compactname"] = "Helios"
 
 /////////// Ammunition
 -- local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
@@ -673,6 +708,7 @@ L["uplp_weapon_ak_545"] = "%s 5.45"
 L["uplp_weapon_ak_556"] = "%s 5.56"
 L["uplp_weapon_ak_9x39"] = "%s 9×39"
 L["uplp_weapon_ak_rpk"] = "HPK"
+L["uplp_weapon_ak_rpkm"] = "HPKM"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
 L["uplp_weapon_ak12_16"] = "AK M16"
@@ -827,6 +863,10 @@ L["uplp_ak_grip_agr.printname"] = "Empuñadura de Pistola ApexCore Systems"
 L["uplp_ak_grip_agr.compactname"] = "ApexCore"
 L["uplp_ak_grip_agr.description"] = "Empuñadura de pistola pesada con estante de palma incorporado para rifles basados en AK fabricados por ApexCore Systems."
 
+-- L["uplp_ak_grip_rk3.printname"] = "Zenith Pistol Grip"
+-- L["uplp_ak_grip_rk3.compactname"] = "Zenith"
+-- L["uplp_ak_grip_rk3.description"] = "Lightweight pistol grip for AK-style rifles."
+
 L["uplp_ak_grip_12.printname"] = "Empuñadura de Pistola AK M22"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Empuñadura de pistola estándar utilizada en el AK M22."
@@ -891,6 +931,10 @@ L["uplp_ak_hg_rpk16.description"] = "Guardamanos más largo utilizado en el HPK 
 L["uplp_ak_hg_12tac.printname"] = "Guardamanos Lisyan Tactical Modelo 23"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Guardamanos táctico muy largo fabricado por Lisyan Tactical.\nNo compatible con el <color=255,100,100>Cañón AK M22-K de 230mm</color>."
+
+-- L["uplp_ak_hg_rpk74.printname"] = "HPKM Handguard"
+-- L["uplp_ak_hg_rpk74.compactname"] = "HPKM"
+-- L["uplp_ak_hg_rpk74.description"] = "Modern polymer handguard used on the modernized HPKM."
 
 ////// Magazines
 /// 7.62x39mm
@@ -971,6 +1015,10 @@ L["uplp_ak_mag_545_60.description"] = "Cargador de polímero de 52 balas expandi
 L["uplp_ak_mag_545_drum.printname"] = "Tambor HPK M16 de 5,45x39 mm de 85 Rondas"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 T"
 L["uplp_ak_mag_545_drum.description"] = "Cargador de tambor cilíndrico de 85 balas del HPK M16." .. loaded545
+
+L["uplp_ak_mag_545_45p.printname"] = "45 Rondas 5.45x39mm (Polímero)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5.45 (P)"
+-- L["uplp_ak_mag_545_45p.description"] = "45-round polymer magazine used by the modernized HPKM." .. loaded545
 
 /// 5.56×45mm  NATO
 local loaded556 = loaded .. "Cargado con <color=160,160,255>5.56×45mm </color> utilizado por el AK M10 5.56." .. changeammo.smg1
