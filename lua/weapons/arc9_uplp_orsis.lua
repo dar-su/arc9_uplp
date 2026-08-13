@@ -399,14 +399,6 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
         },
     },
-    ["holster"] = {
-        Source = "holster",
-        MinProgress = 0.5,
-        EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
-        },
-    },
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
@@ -415,9 +407,17 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
     },
+    ["holster"] = {
+        Source = "holster",
+        MinProgress = 0.75,
+        EventTable = {
+            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
+        },
+    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.5,
+        MinProgress = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
