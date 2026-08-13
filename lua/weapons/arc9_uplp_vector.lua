@@ -92,7 +92,7 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 14
+SWEP.DamageMax = 12
 SWEP.DamageMin = 5
 SWEP.DamageType = DMG_BULLET
 
@@ -111,7 +111,7 @@ SWEP.ImpactForce = 3 -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 5 / ARC9.HUToM
-SWEP.RangeMax = 45 / ARC9.HUToM
+SWEP.RangeMax = 40 / ARC9.HUToM
 
 -- Physical Bullets
 SWEP.PhysBulletMuzzleVelocity = 400 * 39.37
@@ -126,10 +126,10 @@ SWEP.ClipSize = 33
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = -0.25 -- something about fancy recoil absorption tech
+SWEP.RecoilUp = -0.2 -- something about fancy recoil absorption tech
 SWEP.RecoilSide = 6
 
-SWEP.RecoilRandomUp = -0.25
+SWEP.RecoilRandomUp = -0.2
 SWEP.RecoilRandomSide = 1
 
 SWEP.RecoilRise = 0
@@ -183,7 +183,7 @@ SWEP.RecoilPerShotMultSights = 0.75
 SWEP.RecoilPerShotMultFirstShot = 0.5
 
 -- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
-SWEP.HipfireBloomAmplification = 0.5
+SWEP.HipfireBloomAmplification = 0.75
 
 -- Weapon handling
 SWEP.SpeedMult = 0.99 -- Walk speed multiplier
