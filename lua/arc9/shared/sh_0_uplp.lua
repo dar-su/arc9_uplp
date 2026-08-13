@@ -211,3 +211,34 @@ sound.Add({
     level = 100,
     sound = {"^uplp_urban_temp/common/dragon-01.wav", "^uplp_urban_temp/common/dragon-02.wav", "^uplp_urban_temp/common/dragon-03.wav", "^uplp_urban_temp/common/dragon-04.wav", "^uplp_urban_temp/common/dragon-05.wav", "^uplp_urban_temp/common/dragon-06.wav"}
 })
+
+
+
+if CLIENT then
+    matproxy.Add({
+        name = "ARC9_UPLP_FAKEAMMO",
+        init = function(self, mat, values)
+            self.Frame = values.resultvar
+            self.Minusframe = values.minusframe
+        end,
+
+        bind = function(self, mat, ent)
+            mat:SetFloat(self.Frame, 30 - self.Minusframe)
+            
+            if IsValid(ent) then
+                if ent:GetClass() == "class CLuaEffect" then -- is dropped
+                    if IsValid(ent.weapon) and ent.weapon.ARC9 then
+                        self.LastRound = math.Clamp(30 - ent.weapon:GetLoadedRounds() + 1, 0,  30 - self.Minusframe)
+                        ent.weapon = nil
+                    end
+                    
+                    mat:SetFloat(self.Frame, self.LastRound or 30)
+                else
+                    if IsValid(ent.weapon) and ent.weapon.ARC9 then -- is gun
+                        mat:SetFloat(self.Frame, math.Clamp(30 - ent.weapon:GetLoadedRounds() + 1, 0,  30 - self.Minusframe))
+                    end
+                end
+            end
+        end
+    })
+end
