@@ -146,8 +146,7 @@ $sequence "idle"{
 	fps 30
  	blend "sights" 0 1
 	loop
-	fadein 0
-	fadeout 0.2
+	snap
 }
 
 $sequence "firemode_pose" {
