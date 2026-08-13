@@ -163,14 +163,13 @@ end
 function ENT:PhysicsCollide(colData, collider)
     timer.Simple(0, function()
         if !IsValid(self) then return end
-        
+
         self.GrenadeDir = colData.OurOldVelocity:GetNormalized()
         self.GrenadePos = colData.HitPos
 
         self:DoImpact(colData.HitEntity)
 
         if self.DetonateOnImpact then
-            print(CurTime() - (self.SpawnTime + self.FuseTimeMin))
             if CurTime() >= self.SpawnTime + self.FuseTimeMin then
                 self:Detonate()
             else
