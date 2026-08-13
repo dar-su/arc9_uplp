@@ -197,7 +197,7 @@ SWEP.SwayMultSights = 1
 SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes
-SWEP.RPM = 120 -- How fast gun shoot
+SWEP.RPM = 200 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -223,19 +223,19 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.35, -4, 1.1),
+     Pos = Vector(-2.35, -4, 0.98),
      Ang = Angle(0, 0, -1),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
 local is_tall = {
-    Pos = Vector(-2.32, -4, 0.23),
+    Pos = Vector(-2.32, -4, 0.28),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
 }
 local is_short = {
-    Pos = Vector(-2.32, -4, 0.38),
+    Pos = Vector(-2.32, -4, 0.42),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
@@ -381,8 +381,8 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cycle",
-        MinProgress = 0.75,
-        Mult = 1.15,
+        MinProgress = 0.66,
+        Mult = 1,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0},
             {s = pathRZ3 .. "cycle1.ogg",        t = 0.18},
@@ -415,6 +415,12 @@ SWEP.Animations = {
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.3, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     ["holster"] = {
@@ -474,8 +480,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.7, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -509,8 +515,8 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 1 },
             { t = 0.3, lhik = 0 },
-            { t = 0.625, lhik = 0 },
-            { t = 0.725, lhik = 1 },
+            { t = 0.58, lhik = 0 },
+            { t = 0.68, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },

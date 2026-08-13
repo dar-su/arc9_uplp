@@ -389,11 +389,6 @@ ATT.Icon = Material(iconfolder .. "stock/xr.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
-
 ATT.ActivateElements = {"uplp_awp_stock_atx", "xstock", "uplp_awp_stock"}
 
 local exstock = {
@@ -406,6 +401,19 @@ local exstock = {
     SwayMultSights = 1.25,
     RecoilRandomSideMult = 1.5,
     RecoilAdd = 0.5,
+
+    -- Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl",
+    -- -- ModelOffset = Vector(-8, -2.3, 3.5),
+    -- Model = "models/weapons/arc9/uplp/ak_lhik_short.mdl",
+    -- ModelOffset = Vector(-7, -2.1, 1.9),
+    -- ModelAngleOffset = Angle(-5, -5, 5),
+
+    Model = "models/weapons/arc9/uplp/ak_lhik_short.mdl",
+    ModelOffset = Vector(-6, -2.0, 0.2),
+    ModelAngleOffset = Angle(-12, -6, 6),
+
+    LHIK = true,
+    LHIK_Priority = 5,
 }
 table.Merge(ATT, exstock)
 
@@ -459,11 +467,6 @@ ATT.Icon = Material(iconfolder .. "stock/xb.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
-
 ATT.ActivateElements = {"uplp_awp_stock_atx_blue", "xstock", "uplp_awp_stock"}
 
 table.Merge(ATT, exstock)
@@ -482,11 +485,6 @@ ATT.Icon = Material(iconfolder .. "stock/xg.png", "mips smooth")
 
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_gray", "xstock", "uplp_awp_stock"}
 
@@ -507,11 +505,6 @@ ATT.Icon = Material(iconfolder .. "stock/xgr.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
-
 ATT.ActivateElements = {"uplp_awp_stock_atx_green", "xstock", "uplp_awp_stock"}
 
 table.Merge(ATT, exstock)
@@ -530,11 +523,6 @@ ATT.Icon = Material(iconfolder .. "stock/xo.png", "mips smooth")
 
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_orange", "xstock", "uplp_awp_stock"}
 
@@ -556,11 +544,6 @@ ATT.Icon = Material(iconfolder .. "stock/xp.png", "mips smooth")
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
-
 ATT.ActivateElements = {"uplp_awp_stock_atx_purple", "xstock", "uplp_awp_stock"}
 
 table.Merge(ATT, exstock)
@@ -579,11 +562,6 @@ ATT.Icon = Material(iconfolder .. "stock/xw.png", "mips smooth")
 
 ATT.Category = "uplp_awp_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
-
-ATT.Model = "models/weapons/arc9/uplp/awp_lhik_xstock.mdl"
-ATT.ModelOffset = Vector(-8, -2.3, 3.5)
-ATT.LHIK = true
-ATT.LHIK_Priority = 5
 
 ATT.ActivateElements = {"uplp_awp_stock_atx_white", "xstock", "uplp_awp_stock"}
 
