@@ -9,11 +9,11 @@
 
     "$bumpmap" "models/weapons/arc9/uplp/nrm"
     "$phongexponenttexture" "models/weapons/arc9/uplp/exp"
-    "$color2" "[0.4 0.4 0.4]"
+    "$color2" "[0.5 0.5 0.5]"
     "$blendtintbybasealpha" "1"
 
     "$phong" "1"
-    "$phongboost" "0.5"
+    "$phongboost" "0.3"
 	"$phongalbedoboost" "45"
     "$phongfresnelranges" "[0 0.1 1]"
     "$phongalbedotint" "1"
@@ -35,7 +35,7 @@
         {
             "specularity" "0.25"             //0.25, 0.5, 0.75, 1
             "min" "0"
-            "max" "0.14"                       //change this if too bright in game
+            "max" "0.1"                       //change this if too bright in game
         }
     }
 }
