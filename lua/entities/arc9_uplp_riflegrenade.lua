@@ -1,6 +1,6 @@
 -- stolen from arccw urban coalition blah blah
-
 AddCSLuaFile()
+
 ENT.Type = "anim"
 ENT.Base = "base_entity"
 ENT.PrintName = "Base Rifle Grenade"
@@ -11,14 +11,13 @@ ENT.Spawnable = false
 ENT.Ticks = 0
 ENT.CollisionGroup = COLLISION_GROUP_PROJECTILE
 
-
 -- Intentionally not ENT.Damage since ArcCW base overwrites it with weapon damage (for some reason)
 ENT.GrenadeDamage = false
 ENT.GrenadeDamageDirect = 105
-ENT.GrenadeRadius = 0
-ENT.FuseTimeMin = 0.25
+ENT.GrenadeRadius = 180
+ENT.FuseTimeMin = 0
 ENT.FuseTime = 10
-ENT.DragCoefficient = 1
+ENT.DragCoefficient = 0.5
 ENT.DetonateOnImpact = true
 
 ENT.Model = "models/weapons/arc9/uplp_ubgl_m203_projectile.mdl"
@@ -31,9 +30,8 @@ local path = "uplp_urban_temp/m203/"
 ENT.ExplosionSounds = {path .. "explosion-close-01.ogg", path .. "explosion-close-02.ogg", path .. "explosion-close-03.ogg", path .. "explosion-close-04.ogg", path .. "explosion-close-05.ogg", path .. "explosion-close-06.ogg"}
 ENT.DebrisSounds = {path .. "debris-01.ogg", path .. "debris-02.ogg", path .. "debris-03.ogg", path .. "debris-04.ogg", path .. "debris-05.ogg"}
 
-
-if SERVER then
-    function ENT:Initialize()
+function ENT:Initialize()
+    if SERVER then
         local pb_vert = 1
         local pb_hor = 1
         self:SetModel(self.Model)
@@ -46,37 +44,35 @@ if SERVER then
             phys:SetBuoyancyRatio(0.1)
             if self.Mass then phys:SetMass(self.Mass) end
         end
-
-        self.SpawnTime = CurTime()
     end
 
+    self.SpawnTime = CurTime()
+end
+
+if SERVER then
     function ENT:Think()
         if SERVER and CurTime() - self.SpawnTime >= self.FuseTime then
             self:Detonate()
         end
     end
 else
-    function ENT:Initialize()
-        self.SpawnTime = CurTime()
-    end
-
     function ENT:Think()
-        if self.SmokeTrail then
-            if self.Ticks % 5 == 0 then
+        if self.SmokeTrail and CurTime() - self.SpawnTime > 0.1 then
+            if self.Ticks % 2 == 0 then
                 local emitter = ParticleEmitter(self:GetPos())
                 if not self:IsValid() or self:WaterLevel() > 2 then return end
                 if not IsValid(emitter) then return end
                 local smoke = emitter:Add("particle/particle_smokegrenade", self:GetPos())
-                smoke:SetVelocity(VectorRand() * 25)
+                smoke:SetVelocity(VectorRand() * 5)
                 smoke:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), math.Rand(-20, -25)))
-                smoke:SetDieTime(math.Rand(1.5, 2.0))
-                smoke:SetStartAlpha(255)
+                smoke:SetDieTime(math.Rand(0.75, 1))
+                smoke:SetStartAlpha(150)
                 smoke:SetEndAlpha(0)
                 smoke:SetStartSize(0)
-                smoke:SetEndSize(100)
+                smoke:SetEndSize(32)
                 smoke:SetRoll(math.Rand(-180, 180))
                 smoke:SetRollDelta(math.Rand(-0.2, 0.2))
-                smoke:SetColor(20, 20, 20)
+                smoke:SetColor(35, 35, 35)
                 smoke:SetAirResistance(5)
                 smoke:SetPos(self:GetPos())
                 smoke:SetLighting(false)
@@ -136,7 +132,7 @@ function ENT:Detonate()
             -- what sound bich
         end
 
-        util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.GrenadeRadius * 4)
+        util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.GrenadeRadius * 2)
 
         if self.GrenadePos == nil then
             self.GrenadePos = self:GetPos()
@@ -174,7 +170,8 @@ function ENT:PhysicsCollide(colData, collider)
         self:DoImpact(colData.HitEntity)
 
         if self.DetonateOnImpact then
-            if CurTime() > self.SpawnTime + self.FuseTimeMin then
+            print(CurTime() - (self.SpawnTime + self.FuseTimeMin))
+            if CurTime() >= self.SpawnTime + self.FuseTimeMin then
                 self:Detonate()
             else
                 self:FireBullets({Attacker = self:GetOwner(), Damage = self.GrenadeDamageDirect * (explcvar:GetFloat() or 1), Force = 16, HullSize = 16, Tracer = false, Dir = self:GetAngles():Forward(), Src = self:GetPos(), IgnoreEntity = self, AmmoType = 9})

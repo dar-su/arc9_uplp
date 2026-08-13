@@ -636,7 +636,7 @@ ATT.TriggerDelayUBGL = false
 -- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
 
 ATT.ShootEntUBGL = "arc9_uplp_40mm_he"
-ATT.ShootEntForceUBGL = 20000
+ATT.ShootEntForceUBGL = 6000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
