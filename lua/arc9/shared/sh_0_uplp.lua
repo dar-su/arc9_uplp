@@ -234,6 +234,13 @@ if CLIENT then
                     
                     mat:SetFloat(self.Frame, self.LastRound or 30)
                 else
+                    if !ent.weapon then -- in case its viewmodel
+                        local ownr = ent:GetOwner()
+                        if IsValid(ownr) then
+                            ent.weapon = ownr:GetActiveWeapon()
+                        end
+                    end
+                    
                     if IsValid(ent.weapon) and ent.weapon.ARC9 then -- is gun
                         mat:SetFloat(self.Frame, math.Clamp(30 - ent.weapon:GetLoadedRounds() + 1, 0,  30 - self.Minusframe))
                     end
