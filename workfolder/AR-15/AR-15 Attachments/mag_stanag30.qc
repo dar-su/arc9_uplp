@@ -4,7 +4,7 @@ $cdmaterials "models/weapons/arc9/uplp"
 
 $bodygroup "body"
 {
-	studio "mag_stanag30.smd"
+	studio "mag_stanag30 new.smd"
 }
 
 $sequence "idle" {
