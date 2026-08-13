@@ -174,6 +174,7 @@ L["uplp_category_sticker_stock"] = "Sticker Stock"
 //////////////////// Folder Names
 L["uplp_folder_flashlight"] = "Flashlights"
 L["uplp_folder_laser"] = "Lasers"
+L["uplp_folder_hybrid"] = "Hybrid"
 L["uplp_folder_suppressor"] = "Suppressors"
 
 //////////////////// Toggle Stats Names
@@ -184,6 +185,7 @@ L["uplp_togglestat_folded"] = "Folded"
 L["uplp_togglestat_laser"] = "Laser"
 L["uplp_togglestat_off"] = "Off"
 L["uplp_togglestat_on"] = "On"
+L["uplp_togglestat_combo"] = "Combo" // combo flashlight/laser
 
 //////////////////// Stat
 L["uplp_stat_semi"] = "When Semi-Auto: "
@@ -304,7 +306,7 @@ L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms.
 
 L["uplp_optic_d1high.printname"] = "D-1 Red Dot w. Riser"
 L["uplp_optic_d1high.compactname"] = "D-1 R"
-L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
+L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms, mounted on a riser." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
@@ -324,7 +326,7 @@ L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and sma
 
 L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
 L["uplp_optic_rmrhigh.compactname"] = "XW R."
-L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
+L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms, mounted on a riser." .. desc_smalloptic
 
 L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
@@ -573,9 +575,9 @@ L["uplp_sg_mz_silencer_heavy.compactname"] = "H SG Supp."
 L["uplp_sg_mz_silencer_heavy.description"] = "Heavy shotgun suppressor that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
 
 /////////// Tacticals
-L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Laser Sight"
+L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Hybrid Module"
 L["uplp_tac_anpeq.compactname"] = "BeamMaster"
-L["uplp_tac_anpeq.description"] = "Rail-mounted aiming module made by BeamMaster Optics that provides a laser sight for use in the dark."
+L["uplp_tac_anpeq.description"] = "Rail-mounted aiming module made by BeamMaster Optics that provides a laser sight and flashlight in one.\nThe laser and light can be used independently or together."
 
 L["uplp_tac_piscomb.printname"] = "LuminaFire Armaments Hybrid Module"
 L["uplp_tac_piscomb.compactname"] = "LuminaFire H."
@@ -604,6 +606,22 @@ L["uplp_tac_laser_green.description"] = "Rail-mounted aiming module made by Apex
 L["uplp_tac_laser_pistol.printname"] = "LuminaFire Armaments Laser Sight"
 L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module made by LuminaFire Armaments designed for handguns that provides a laser sight for use in the dark."
+
+L["uplp_tac_piscomb_dbal.printname"] = "DBAL Hybrid Module"
+L["uplp_tac_piscomb_dbal.compactname"] = "DBAL H."
+L["uplp_tac_piscomb_dbal.description"] = "Compact rail-mounted module with laser and flashlight capabilities.\nThe laser can be toggled on without the flashlight, providing a stronger effect when used alone."
+
+L["uplp_tac_piscomb_viri.printname"] = "Viri Hybrid Module"
+L["uplp_tac_piscomb_viri.compactname"] = "Viri H."
+L["uplp_tac_piscomb_viri.description"] = "Compact rail-mounted module with laser and flashlight capabilities.\nThe modes cannot be used together, but provides a stronger effect than typical hybrid modules."
+
+L["uplp_tac_flashlight_lastac.printname"] = "Lastac Flashlight"
+L["uplp_tac_flashlight_lastac.compactname"] = "Lastac F."
+L["uplp_tac_flashlight_lastac.description"] = "Compact flashlight with a wide illumination field of view."
+
+L["uplp_tac_flashlight_tac.printname"] = "FLTAC Flashlight"
+L["uplp_tac_flashlight_tac.compactname"] = "FLTAC F."
+L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view."
 
 /////////// Ammunition
 local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
