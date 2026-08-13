@@ -30,8 +30,7 @@ ATT.ModelOffset = Vector(-11.65, -1.918, 2.62)
 -- ATT.DamageMax = 25 -- balanced >w<
 -- ATT.DamageMin = 15
 
-ATT.DamageMaxMult = 0.78
-ATT.DamageMinMult = 0.78
+ATT.DamageMaxMult = 18 / 20
 
 ATT.BodyDamageMults = {
     [HITGROUP_HEAD] = 2,
@@ -43,7 +42,6 @@ ATT.BodyDamageMults = {
     [HITGROUP_RIGHTLEG] = 0.75,
 }
 
-ATT.PostBurstDelay = 0.2
 ATT.RPM = 1000
 ATT.RunawayBurst = true
 ATT.Firemodes = {
@@ -53,6 +51,7 @@ ATT.Firemodes = {
 
         RecoilRandomSideAddRecoil = 1,
         SpreadAddRecoil = 0.01,
+        PostBurstDelay = 0.2,
     },
     {
         Mode = 1, -- semi
@@ -63,11 +62,11 @@ ATT.Firemodes = {
 }
 
 ATT.RecoilUpMult = 0.7
-ATT.RecoilPerShotOverride = 1 / 6
--- ATT.SpreadAddHipFire = 0.0012
-ATT.AimDownSightsTimeAdd = 0.02
-ATT.SprintToFireTimeAdd = 0.04
-ATT.SpeedMultSights = 0.8
+ATT.RecoilPerShotOverride = 1 / 9
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedMultSights = 0.85
+ATT.SpeedMultShooting = 0.9
 
 ATT.SwayAddSights = -0.5
 
@@ -103,9 +102,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_a3", "uplp_can_tac"}
 
-ATT.RecoilMult = 0.92
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.04
+ATT.RecoilAutoControlMult = 0.85
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.03
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_a3")
 
@@ -124,8 +123,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_a3t", "uplp_can_tac"}
 
-ATT.AimDownSightsTimeAdd = 0.01
-ATT.RecoilMult = 0.9
+ATT.RecoilAutoControlMult = 0.85
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.03
 
 ARC9.LoadAttachment(ATT, "uplp_m9_receiver_a3t")
 
@@ -144,10 +144,13 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_m9_receiver_sc"}
 
-ATT.RangeMaxAdd = 6 / ARC9.HUToM
-ATT.RecoilUpMult = 0.9
-
-ATT.AimDownSightsTimeAdd = 0.02
+ATT.RangeMinAdd = 5 / ARC9.HUToM
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.AimDownSightsTimeAdd = 0.05
+ATT.SpreadAddHipFire = 0.003
+ATT.PhysBulletMuzzleVelocityMult = 1.1
+ATT.SpreadAdd = -0.002
+ATT.SpreadAddRecoil = -0.0025
 ATT.SpeedMultSights = 0.9
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 1, 0) end

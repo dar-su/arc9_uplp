@@ -140,11 +140,11 @@ local shoot40sil = {
 }
 
 local stats_45acp = {
-    DamageMaxAdd = 7,
+    DamageMaxAdd = 8,
     DamageMinAdd = 5,
     RangeMinAdd = 5 / ARC9.HUToM,
     RecoilAdd = 0.4,
-    RecoilPerShotMult = 1.5,
+    RecoilPerShotMult = 1.25,
 
     ShootSound = shoot40,
     ShootSoundSilenced = shoot40sil,

@@ -1,6 +1,10 @@
 local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
+local SortOrderLight = 1000
+local SortOrderLaser = 0
+local SortOrderHybrid = 500
+local SortOrderPistol = 100
 
 ---------- uplp_tac_anpeq
 
@@ -9,6 +13,8 @@ ATT = {}
 ATT.PrintName = "BeamMaster Optics Laser Sight"
 ATT.CompactName = "BeamMaster"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_laser")
+ATT.SortOrder = SortOrderHybrid
 
 ATT.Icon = Material(iconfolder .. "anpeq.png", "mips smooth")
 
@@ -18,16 +24,57 @@ ATT.ActivateElements = {"uplp_tac_used"}
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {
     {
-        PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
+        PrintName = ARC9:GetPhrase("uplp_togglestat_laser"),
         Laser = true,
         LaserStrength = 2,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
+
         -- Positives
-        --SpreadAddHipFire = -0.014,
-        SpreadMultHipFire = 0.7,
-        RecoilDissipationRateMult = 0.85,
-        SpeedMultShooting = 0.9,
+        SpreadMultHipFire = 0.75,
+
+        -- Negatives
+        SpeedMultShooting = 0.85,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_combo"),
+        Laser = true,
+        LaserStrength = 2,
+        LaserColor = Color(255, 0, 0),
+        LaserAttachment = 1,
+
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 220),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 30,
+        FlashlightAttachment = 2,
+        FlashlightBrightness = 3,
+
+        -- Positives
+        SpreadMultHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        RecoilDissipationRateMultHipFire = 0.80,
+        SpeedMultShooting = 0.85,
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_togglestat_flash"),
+
+        Flashlight = true,
+        FlashlightColor = Color(255, 255, 220),
+        FlashlightMaterial = "effects/flashlight001",
+        FlashlightDistance = 1024,
+        FlashlightFOV = 30,
+        FlashlightAttachment = 2,
+        FlashlightBrightness = 3,
+
+        -- Positives
+        RecoilPerShotMultHipFire = 0.75,
+
+        -- Negatives
+        RecoilDissipationRateMultHipFire = 0.80,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -35,15 +82,16 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×70%",
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot") )] = "×75%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×85%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed") )] = "×85%",
+    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate") )] = "×80%",
 }
 
-ATT.AimDownSightsTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.06
 ATT.SprintToFireTimeAdd = 0.06
 
 ATT.Category = {"uplp_tac", "uplp_tac_top"}
@@ -60,6 +108,8 @@ ATT = {}
 ATT.PrintName = "LuminaFire Armaments Hybrid Module"
 ATT.CompactName = "LuminaFire H."
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_hybrid")
+ATT.SortOrder = SortOrderHybrid + SortOrderPistol
 
 ATT.Icon = Material(iconfolder .. "pistcomb.png", "mips smooth")
 
@@ -71,25 +121,25 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Laser = true,
-        LaserStrength = 1,
+        LaserStrength = 0.5,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 2,
 
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 512,
+        FlashlightDistance = 728,
         FlashlightFOV = 31,
         FlashlightAttachment = 1,
+        FlashlightBrightness = 1.5,
 
         -- Positives
-        --SpreadAddHipFire = -0.003,
-        SpreadMultHipFire = 0.8,
-        RecoilPerShotMultHipFire = 0.75,
-        SpeedMultShooting = 0.95,
+        SpreadMultHipFire = 0.9,
+        RecoilPerShotMultHipFire = 0.9,
 
         -- Negatives
-        -- AimDownSightsTimeMult = 1.2,
+        SpeedMultShooting = 0.92,
+        RecoilDissipationRateMultHipFire = 0.9,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -97,15 +147,17 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×80%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×95%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×90%",
+
 }
 
-ATT.SprintToFireTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.04
 ATT.AimDownSightsTimeAdd = 0.02
 
 ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
@@ -123,6 +175,8 @@ ATT = {}
 ATT.PrintName = "NightStrike Illumination Flashlight"
 ATT.CompactName = "NightStrike"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_flashlight")
+ATT.SortOrder = SortOrderLight
 
 ATT.Icon = Material(iconfolder .. "flash.png", "mips smooth")
 
@@ -134,14 +188,15 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Flashlight = true,
+        FlashlightBrightness = 4,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 1024,
+        FlashlightDistance = 1500,
         FlashlightFOV = 45,
         FlashlightAttachment = 1,
 
-        RecoilDissipationRateMultHipFire = 1.15,
-        RecoilPerShotMultHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.7,
+        RecoilDissipationRateMultHipFire = 0.8,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -152,12 +207,16 @@ ATT.Category = "uplp_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×115%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×70%",
+}
+
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×80%",
 }
 
 -- Negatives
-ATT.SprintToFireTimeAdd = 0.05
+ATT.SprintToFireTimeAdd = 0.04
+ATT.AimDownSightsTimeAdd = 0.04
 
 ATT.ModelOffset = Vector(0, 0, 0)
 
@@ -170,6 +229,8 @@ ATT = {}
 ATT.PrintName = "LuminaFire Armaments Flashlight"
 ATT.CompactName = "LuminaFire F."
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_flashlight")
+ATT.SortOrder = SortOrderLight + SortOrderPistol
 
 ATT.Icon = Material(iconfolder .. "pistflash.png", "mips smooth")
 
@@ -183,11 +244,13 @@ ATT.ToggleStats = {
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
+        FlashlightBrightness = 2,
         FlashlightDistance = 1024,
-        FlashlightFOV = 25,
+        FlashlightFOV = 40,
         FlashlightAttachment = 1,
 
-        RecoilPerShotMultHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.85,
+        RecoilDissipationRateMultHipFire = 0.9,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -201,11 +264,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×85%",
+}
+
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate") )] = "×90%",
 }
 
 -- Negatives
-ATT.SprintToFireTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_tac_flashlight_pistol")
 
@@ -216,6 +283,8 @@ ATT = {}
 ATT.PrintName = "ApexAim Laser Sight (Blue)"
 ATT.CompactName = "ApexAim (B)"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_laser")
+ATT.SortOrder = SortOrderLaser
 
 ATT.Icon = Material(iconfolder .. "laserb.png", "mips smooth")
 
@@ -227,17 +296,16 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Laser = true,
-        LaserStrength = 2,
+        LaserStrength = 1.5,
         LaserColor = Color(0, 0, 255),
         LaserAttachment = 1,
+
         -- Positives
-        --SpreadAddHipFire = -0.004,
-        SpreadMultHipFire = 0.85,
-        RecoilPerShotMultHipFire = 0.9,
-        SpeedMultShooting = 0.92,
+        SpreadMultHipFire = 0.75,
+        RecoilAutoControlMultHipFire = 1.1,
 
         -- Negatives
-        RecoilDissipationRateMult = 0.9,
+        SpeedMultShooting = 0.85,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -245,15 +313,15 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×85%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilautocontrol"))] = "×110%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×90%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×85%",
 }
 
+ATT.SprintToFireTimeAdd = 0.05
 ATT.AimDownSightsTimeAdd = 0.05
 
 ATT.Category = "uplp_tac"
@@ -270,6 +338,8 @@ ATT = {}
 ATT.PrintName = "Laser Sight (DBAL)"
 ATT.CompactName = "Laser (DBAL)"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_laser")
+ATT.SortOrder = SortOrderLaser
 
 ATT.Icon = Material(iconfolder .. "dbal.png", "mips smooth")
 
@@ -281,17 +351,14 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Laser = true,
-        LaserStrength = 2,
+        LaserStrength = 3,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
         -- Positives
-        --SpreadAddHipFire = -0.0075,
-        SpreadMultHipFire = 0.75,
-        RecoilPerShotMultHipFire = 0.9,
+        SpreadMultHipFire = 0.7,
 
         -- Negatives
-        RecoilDissipationRateMult = 0.85,
-        SpeedMultShooting = 0.95,
+        SpeedMultShooting = 0.85,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -299,16 +366,14 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×75%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×70%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×85%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×95%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×85%",
 }
 
-ATT.AimDownSightsTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.06
 ATT.SprintToFireTimeAdd = 0.06
 
 ATT.Category = {"uplp_tac", "uplp_tac_top"}
@@ -325,6 +390,8 @@ ATT = {}
 ATT.PrintName = "ApexAim Laser Sight (Green)"
 ATT.CompactName = "ApexAim (G)"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_laser")
+ATT.SortOrder = SortOrderLaser
 
 ATT.Icon = Material(iconfolder .. "laserg.png", "mips smooth")
 
@@ -336,17 +403,16 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Laser = true,
-        LaserStrength = 2,
+        LaserStrength = 1.5,
         LaserColor = Color(0, 255, 0),
         LaserAttachment = 1,
+
         -- Positives
-        --SpreadAddHipFire = -0.004,
-        SpreadMultHipFire = 0.85,
-        RecoilPerShotMultHipFire = 0.9,
-        SpeedMultShooting = 0.92,
+        SpreadMultHipFire = 0.8,
+        RecoilAutoControlMultHipFire = 1.2,
 
         -- Negatives
-        RecoilDissipationRateMult = 0.9,
+        SpeedMultShooting = 0.85,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -354,16 +420,16 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×85%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×80%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilautocontrol"))] = "×120%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×90%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×85%",
 }
 
-ATT.AimDownSightsTimeAdd = 0.05
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.06
 
 ATT.Category = "uplp_tac"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -379,6 +445,8 @@ ATT = {}
 ATT.PrintName = "LuminaFire Armaments Laser Sight"
 ATT.CompactName = "LuminaFire L."
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_laser")
+ATT.SortOrder = SortOrderLaser + SortOrderPistol
 
 ATT.Icon = Material(iconfolder .. "pistlaser.png", "mips smooth")
 
@@ -390,16 +458,14 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Laser = true,
-        LaserStrength = 1,
+        LaserStrength = 0.75,
         LaserColor = Color(255, 0, 0),
         LaserAttachment = 1,
         -- Positives
-        --SpreadAddHipFire = -0.002,
-        SpreadMultHipFire = 0.9,
-        SpeedMultShooting = 0.98,
+        SpreadMultHipFire = 0.85,
 
         -- Negatives
-        -- AimDownSightsTimeMult = 1.1,
+        SpeedMultShooting = 0.92,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -407,14 +473,14 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×85%",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×98%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
 }
 
-ATT.SprintToFireTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
 
 ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
 -- ATT.Category = "uplp_tac_pistol"
@@ -570,7 +636,7 @@ ATT.TriggerDelayUBGL = false
 -- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
 
 ATT.ShootEntUBGL = "arc9_uplp_40mm_he"
-ATT.ShootEntForceUBGL = 20000
+ATT.ShootEntForceUBGL = 6000
 
 ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
@@ -627,6 +693,8 @@ ATT = {}
 ATT.PrintName = "Fltac"
 ATT.CompactName = "Fltac"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_flashlight")
+ATT.SortOrder = SortOrderLight
 
 ATT.Icon = Material(iconfolder .. "fltac.png", "mips smooth")
 
@@ -638,14 +706,16 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Flashlight = true,
-        FlashlightColor = Color(255, 255, 255),
+        FlashlightBrightness = 2,
+        FlashlightColor = Color(220, 220, 255),
         FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 1024,
-        FlashlightFOV = 45,
+        FlashlightDistance = 728,
+        FlashlightFOV = 70,
         FlashlightAttachment = 1,
 
-        RecoilDissipationRateMultHipFire = 1.15,
-        RecoilPerShotMultHipFire = 0.75,
+        SpreadMultMove = 0.85,
+
+        RecoilDissipationRateMultHipFire = 0.8,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -655,13 +725,16 @@ ATT.ToggleStats = {
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×115%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.move"), ARC9:GetPhrase("autostat.spread"))] = "×85%",
+}
+
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×80%",
 }
 
 -- Negatives
-ATT.SprintToFireTimeAdd = 0.05
-
+ATT.SprintToFireTimeAdd = 0.04
+ATT.AimDownSightsTimeAdd = 0.04
 
 ATT.Category = {"uplp_tac", "uplp_tac_top"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -677,6 +750,8 @@ ATT = {}
 ATT.PrintName = "Lastac"
 ATT.CompactName = "Lastac"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_flashlight")
+ATT.SortOrder = SortOrderLight + SortOrderPistol
 
 ATT.Icon = Material(iconfolder .. "lastac.png", "mips smooth")
 
@@ -688,13 +763,15 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_on"),
         Flashlight = true,
-        FlashlightColor = Color(255, 255, 255),
+        FlashlightColor = Color(220, 220, 255),
         FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 1024,
-        FlashlightFOV = 25,
+        FlashlightBrightness = 1.5,
+        FlashlightDistance = 512,
+        FlashlightFOV = 60,
         FlashlightAttachment = 1,
 
-        RecoilPerShotMultHipFire = 0.75,
+        SpreadMultMove = 0.9,
+        RecoilDissipationRateMultHipFire = 0.9,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -708,11 +785,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(0, 0, 0)
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.move"), ARC9:GetPhrase("autostat.spread"))] = "×90%",
 }
 
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×90%",
+}
 -- Negatives
-ATT.SprintToFireTimeAdd = 0.02
+ATT.SprintToFireTimeAdd = 0.03
 
 ATT.ModelOffset = Vector(-0.1, 0, 0)
 
@@ -725,6 +805,8 @@ ATT = {}
 ATT.PrintName = "Dbal"
 ATT.CompactName = "Dbal"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_hybrid")
+ATT.SortOrder = SortOrderHybrid + SortOrderPistol
 
 ATT.Icon = Material(iconfolder .. "dbalpist.png", "mips smooth")
 
@@ -737,32 +819,38 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_laser"),
         Laser = true,
-        LaserStrength = 1,
-        LaserColor = Color(255, 0, 0),
+        LaserStrength = 0.75,
+        LaserColor = Color(0, 255, 0),
         LaserAttachment = 2,
+
         -- Positives
-        SpreadAddHipFire = -0.003,
-        RecoilPerShotMultHipFire = 0.75,
+        SpreadMultHipFire = 0.8,
 
         -- Negatives
-        -- AimDownSightsTimeMult = 1.2,
+        SpeedMultShooting = 0.92,
     },
     {
-        PrintName = ARC9:GetPhrase("uplp_togglestat_flash"),
+        PrintName = ARC9:GetPhrase("uplp_togglestat_combo"),
+        Laser = true,
+        LaserStrength = 0.5,
+        LaserColor = Color(0, 255, 0),
+        LaserAttachment = 2,
 
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 512,
+        FlashlightDistance = 728,
         FlashlightFOV = 31,
         FlashlightAttachment = 1,
+        FlashlightBrightness = 1.5,
 
         -- Positives
-        SpreadAddHipFire = -0.003,
-        RecoilPerShotMultHipFire = 0.75,
+        SpreadMultHipFire = 0.90,
+        RecoilPerShotMultHipFire = 0.9,
 
         -- Negatives
-        -- AimDownSightsTimeMult = 1.2,
+        SpeedMultShooting = 0.92,
+        RecoilDissipationRateMult = 0.9,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -770,15 +858,17 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×80%",
+    [ARC9:GetPhrase("uplp_togglestat_combo") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×90%",
+    [ARC9:GetPhrase("uplp_togglestat_combo") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×90%",
 }
 
--- ATT.CustomCons = {
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
--- }
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
+    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×90%",
+}
 
-ATT.SprintToFireTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.04
 ATT.AimDownSightsTimeAdd = 0.02
 
 ATT.Category = {"uplp_tac", "uplp_tac_pistol"}
@@ -796,6 +886,8 @@ ATT = {}
 ATT.PrintName = "Viri"
 ATT.CompactName = "Viri"
 ATT.Description = ATT.PrintName
+-- ATT.Folder = ARC9:GetPhrase("uplp_folder_hybrid")
+ATT.SortOrder = SortOrderHybrid + SortOrderPistol
 
 ATT.Icon = Material(iconfolder .. "viri.png", "mips smooth")
 
@@ -808,15 +900,15 @@ ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_laser"),
         Laser = true,
-        LaserStrength = 1,
-        LaserColor = Color(255, 0, 0),
+        LaserStrength = 0.75,
+        LaserColor = Color(0, 0, 255),
         LaserAttachment = 2,
+
         -- Positives
-        SpreadAddHipFire = -0.003,
-        RecoilPerShotMultHipFire = 0.75,
+        SpreadMultHipFire = 0.85,
 
         -- Negatives
-        -- AimDownSightsTimeMult = 1.2,
+        SpeedMultShooting = 0.92,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_flash"),
@@ -824,16 +916,16 @@ ATT.ToggleStats = {
         Flashlight = true,
         FlashlightColor = Color(255, 255, 255),
         FlashlightMaterial = "effects/flashlight001",
-        FlashlightDistance = 512,
-        FlashlightFOV = 31,
+        FlashlightBrightness = 2,
+        FlashlightDistance = 1024,
+        FlashlightFOV = 40,
         FlashlightAttachment = 1,
 
         -- Positives
-        SpreadAddHipFire = -0.003,
-        RecoilPerShotMultHipFire = 0.75,
+        RecoilPerShotMultHipFire = 0.8,
 
         -- Negatives
-        -- AimDownSightsTimeMult = 1.2,
+        RecoilDissipationRateMultHipFire = 0.9,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_off"),
@@ -841,15 +933,16 @@ ATT.ToggleStats = {
 }
 
 ATT.CustomPros = {
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "-0.003",
-    [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×75%",
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.spread") )] = "×85%",
+    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoilpershot"))] = "×80%",
 }
 
--- ATT.CustomCons = {
--- [ARC9:GetPhrase("uplp_togglestat_on") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "+20%",
--- }
+ATT.CustomCons = {
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×92%",
+    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate"))] = "×90%",
+}
 
-ATT.SprintToFireTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.04
 ATT.AimDownSightsTimeAdd = 0.02
 
 ATT.Category = {"uplp_tac", "uplp_tac_pistol"}

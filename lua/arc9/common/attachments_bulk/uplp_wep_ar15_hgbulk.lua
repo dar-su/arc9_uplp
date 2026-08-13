@@ -596,3 +596,33 @@ ATT.SprintToFireTimeAdd = 0.02
 ATT.AimDownSightsTimeAdd = -0.02
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_hg_adar")
+
+
+
+---------- uplp_ar15_hg_m4ss
+
+
+ATT = {}
+
+ATT.PrintName = "Commando Handguard"
+ATT.CompactName = "Commando"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "m4ss.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/lhik_hg_tacshort.mdl"
+ATT.LHIK = true
+ATT.LHIK_Priority = 0
+ATT.ModelOffset = Vector(2, 0, -0.8)
+
+-- ATT.ActivateElements = {"uplp_no_tactical"}
+ATT.ActivateElements = {"uplp_ar15_handguard_mid", "uplp_no_backup_is", "uplp_ar15_no_fs", "uplp_no_grip", "uplp_no_tactical"}
+
+ATT.Category = "uplp_ar15_hg"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilMult = 1.1
+ATT.SprintToFireTimeAdd = 0.02
+ATT.AimDownSightsTimeAdd = -0.02
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_hg_m4ss")

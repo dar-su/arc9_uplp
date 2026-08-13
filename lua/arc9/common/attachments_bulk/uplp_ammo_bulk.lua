@@ -232,7 +232,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.25
+ATT.SpreadMult = 0.15
 ATT.HeadshotDamageAdd = 0.5
 ATT.DispersionSpreadAddRecoil = -0.015
 ATT.PenetrationAdd = 10
@@ -240,12 +240,12 @@ ATT.DamageMinMult = 1.2
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxMult = 0.5
+ATT.DamageMaxMult = 0.55
 ATT.RecoilDissipationRateMult = 0.75
 ATT.HullSizeOverride = 0
 ATT.PhysBulletGravityMult = 2.5
 ATT.PhysBulletDragMult = 3
-ATT.DispersionSpreadAddHipFire = 0.015
+ATT.DispersionSpreadAddHipFire = 0.02
 ATT.LegDamageMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 
@@ -274,7 +274,7 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
 -- Positives
 ATT.RangeMaxMult = 2
-ATT.SpreadMult = 0.1
+ATT.SpreadMult = 0.07
 ATT.HeadshotDamageAdd = 1.5
 ATT.DispersionSpreadAddRecoil = -0.02
 ATT.PhysBulletMuzzleVelocityMult = 1.1
@@ -284,10 +284,10 @@ ATT.PenetrationAdd = 25
 -- Negatives
 ATT.NumOverride = 1
 ATT.DamageMaxMult = 0.4
---ATT.DamageMinMult = 0.9
+ATT.DamageMinMult = 0.9
 ATT.HullSizeOverride = 0
 ATT.LegDamageMult = 0.75
-ATT.DispersionSpreadAddHipFire = 0.015
+ATT.DispersionSpreadAddHipFire = 0.03
 
 ATT.DamageTypeOverride = DMG_BULLET
 ATT.AlwaysPhysBulletOverride = true
@@ -319,12 +319,12 @@ ATT.CustomPros = {
 -- Positives
 ATT.RangeMaxMult = 1.5
 ATT.RecoilMult = 0.75
-ATT.NumOverride = 24
+ATT.NumOverride = 30
 ATT.HullSizeOverride = 6
 ATT.PhysBulletGravityMult = 0.75
 
 -- Negatives
-ATT.SpreadMult = 1.75
+ATT.SpreadMult = 1.5
 ATT.DamageMaxMult = 0.5
 ATT.DamageMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.25
@@ -358,7 +358,7 @@ ATT.Hook_PrimaryAttack = function(wep, data)
     end
 end
 
-local ignore_threshold = {
+local direct_burn = {
     npc_zombie = true,
     npc_zombie_torso = true,
     npc_zombine = true,
@@ -368,10 +368,19 @@ local ignore_threshold = {
     npc_headcrab_fast = true,
     npc_headcrab_black = true,
     npc_headcrab_poison = true,
-    -- poison zombie intentionally missing, as it loses most of its hp immediately on ignite
+    npc_poisonzombie = true,
     npc_antlionguard = true,
     npc_antlionguardian = true,
     npc_barnacle = true,
+}
+
+local ignite_threshold = {
+    -- instantly killed by fire
+    npc_combine_s = 0.6,
+    npc_metropolice = 0.6,
+
+    -- loses a lot of hp on ignite
+    npc_poisonzombie = 0.5,
 }
 
 ATT.Hook_BulletImpact = function(wep, data)
@@ -382,15 +391,15 @@ ATT.Hook_BulletImpact = function(wep, data)
     local dur = 0
     local max_dur = 30
     if ent:IsPlayer() then
-        dur = 4 / 24
+        dur = 4 / 30
         max_dur = 5
     elseif ent:IsNPC() or ent:IsNextBot() then
         -- burning will cause CC or even instant kill some NPCs so only burn if they're weak (or zombies)
-        if ent:IsNextBot() or ignore_threshold[data.tr.Entity:GetClass()] or ent:Health() / ent:GetMaxHealth() <= 0.6 then
-            dur = 8 / 24
+        if ent:IsNextBot() or ent:Health() / ent:GetMaxHealth() <= (ignite_threshold[data.tr.Entity:GetClass()] or 1) then
+            dur = 8 / 30
         end
     elseif ent:GetPhysicsObject():IsValid() then
-        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 2, 10) / 24
+        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 2, 10) / 30
     end
     if dur <= 0 then
 
@@ -410,7 +419,7 @@ ATT.Hook_BulletImpact = function(wep, data)
             ent:Extinguish()
             ent:Ignite(ent.UPLP_BurnTime - CurTime())
             -- HL2 zombies ignore DMG_BURN damage, making pellets do no damage
-            data.dmg:SetDamageType(ignore_threshold[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
+            data.dmg:SetDamageType(direct_burn[data.tr.Entity:GetClass()] and DMG_BUCKSHOT or (DMG_BURN + DMG_BUCKSHOT))
         end
     end
 end
@@ -427,7 +436,7 @@ ATT.Hook_PhysBulletImpact = function(wep, data)
 
     for i = 1, math.ceil(math.Rand(16, 32) * Lerp(a, 1, 0.25) ) do
         local ember = emitter:Add("effects/spark", data.tr.HitPos + VectorRand() * 4)
-        ember:SetVelocity(VectorRand() * Lerp(a, 300, 150) - vec * math.Rand(100, 300) + Vector(0, 0, math.Rand(75, 150)))
+        ember:SetVelocity(VectorRand() * 300 - vec * math.Rand(100, 300) + Vector(0, 0, math.Rand(75, 150)))
         ember:SetGravity(Vector(0, 0, -600))
         ember:SetDieTime(math.Rand(0.6, 1.2))
         ember:SetStartAlpha(255)
@@ -505,20 +514,20 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.75
+ATT.SpreadMult = 0.6
 
 ATT.ExplosionRadiusOverride = 150
-ATT.ExplosionDamageOverride = 20
+ATT.ExplosionDamageOverride = 25
 ATT.ImpactDecal = "FadingScorch"
 
 ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 -- Negatives
-ATT.DamageMaxMult = 0.5
-ATT.DamageMinMult = 0.5
+ATT.DamageMaxMult = 0.4
+ATT.DamageMinMult = 0.6
 ATT.NumOverride = 1
-ATT.PhysBulletGravityMult = 2
+ATT.PhysBulletGravityMult = 1.3
 ATT.PhysBulletMuzzleVelocityMult = 0.33333333
 ATT.AlwaysPhysBulletOverride = true
 ATT.RPMMult = 0.9
@@ -636,6 +645,8 @@ ATT.Hook_PhysBulletImpact = function(wep, data)
         spark:SetCollide(false)
         spark:SetBounce(0.8)
     end
+
+    sound.Play("^weapons/shotgun/shotgun_dbl_fire.wav", data.tr.HitPos, 95, 145, 0.7)
 
     emitter:Finish()
 end

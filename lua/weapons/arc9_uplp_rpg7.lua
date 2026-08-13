@@ -5,7 +5,7 @@ SWEP.Spawnable = true
 
 ---- FUNDAMENTALS
 
-SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
+SWEP.Slot = 4 -- Which slot the weapon is in; starts at 0
 
 ---- Name, Description, Class, Category and Trivia
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_rpg7")
@@ -100,8 +100,8 @@ SWEP.DamageMax = 300
 SWEP.DamageMin = 300
 SWEP.HeadshotDamage = 1
 SWEP.DamageType = nil
-SWEP.ShootEnt = "arc9_uplp_rpg_missle" -- Set to an entity to launch it out of this weapon.
-SWEP.ShootEntForce = 7000
+SWEP.ShootEnt = "arc9_uplp_rpg_heat" -- Set to an entity to launch it out of this weapon.
+SWEP.ShootEntForce = 4000
 SWEP.ShootEntityData = {}
 
 
@@ -122,7 +122,7 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.15 * 1.5
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -131,8 +131,8 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.UseVisualRecoil = false
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.15
+SWEP.Spread = 0.01
+SWEP.SpreadAddHipFire = 0.1
 
 SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.03
@@ -146,7 +146,7 @@ SWEP.RecoilMax = 1
 
 -- Weapon handling
 SWEP.Speed = 0.75 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.75
+SWEP.SpeedMultSights = 0.5
 SWEP.SpeedMultShooting = 0.5
 
 SWEP.BarrelLength = 50
@@ -168,8 +168,6 @@ SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
 SWEP.TriggerDelayTime = 0.02 -- Time until weapon fires.
 SWEP.TriggerDelayRepeat = false -- Whether to do it for every shot on automatics.
 SWEP.TriggerDelayCancellable = false
-
-SWEP.SwayMultSights = 1.25
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
@@ -504,6 +502,9 @@ SWEP.CantPeek = true
 
 SWEP.ReloadInSights = false
 
+SWEP.HasBackblast = true
+SWEP.CauseFear = true
+
 function SWEP:ThinkGrenade()
     local owner = self:GetOwner()
 
@@ -523,32 +524,49 @@ SWEP.Hook_PrimaryAttack = function(self)
     self:SetInSights(false)
     self:SetShouldHoldType()
 
-
-    -- backblast
     local owner = self:GetOwner()
 
-    if IsValid(owner) and owner:IsPlayer() then
-        local tr = util.TraceLine( {
-            start = owner:EyePos(),
-            endpos = owner:EyePos() + owner:EyeAngles():Forward() * -48,
-            filter = owner
-        } )
-
-        -- debugoverlay.Line(owner:EyePos(), tr.HitPos)
-        if tr.Hit then
-            timer.Simple(0, function()
-                local d = DamageInfo()
-                d:SetDamage( 105 )
-                d:SetAttacker( owner )
-                d:SetDamageType( DMG_SLOWBURN )
-                -- d:SetDamageType( DMG_DISSOLVE ) -- this one is funny
-
-                owner:TakeDamageInfo( d )
-
-                if IsValid(tr.Entity) and (tr.Entity:IsNPC() or tr.Entity:IsPlayer() or tr.Entity:IsNextBot()) then
-                    tr.Entity:TakeDamageInfo( d )
+    -- some NPCs aimed at will cower
+    if self:GetProcessedValue("CauseFear") then
+        for _, ent in pairs(ents.FindInCone(self:GetShootPos(), self:GetShootDir(true):Forward(), 8000, math.cos(math.rad(6)))) do
+            if not ent:IsNPC() or not ent:Visible(owner) or math.random() ^ 2 < ent:GetPos():DistToSqr(self:GetPos()) / (8000 ^ 2) then continue end
+            timer.Simple(math.Rand(0, 0.2), function()
+                if IsValid(ent) then
+                    ent:SetSchedule(SCHED_COWER)
                 end
             end)
+        end
+    end
+
+    -- backblast
+
+    if IsValid(owner) and owner:IsPlayer() and self:GetProcessedValue("HasBackblast") then
+        if SERVER then
+            -- Secret tech! Combines, rebels and some other NPCs will cower and run and scream and stuff
+            sound.EmitHint(SOUND_DANGER, self:GetPos(), 256, math.Rand(0.75, 1.5))
+
+            local tr = util.TraceLine( {
+                start = owner:EyePos(),
+                endpos = owner:EyePos() + owner:EyeAngles():Forward() * -48,
+                filter = owner
+            } )
+
+            -- debugoverlay.Line(owner:EyePos(), tr.HitPos)
+            if tr.Hit then
+                timer.Simple(0, function()
+                    local d = DamageInfo()
+                    d:SetDamage( 105 )
+                    d:SetAttacker( owner )
+                    d:SetDamageType( DMG_SLOWBURN )
+                    -- d:SetDamageType( DMG_DISSOLVE ) -- this one is funny
+
+                    owner:TakeDamageInfo( d )
+
+                    if IsValid(tr.Entity) and (tr.Entity:IsNPC() or tr.Entity:IsPlayer() or tr.Entity:IsNextBot()) then
+                        tr.Entity:TakeDamageInfo( d )
+                    end
+                end)
+            end
 
             ParticleEffect( "m79_smoke_e", tr.HitPos, Angle( 0, 0, 0 ) )
         end

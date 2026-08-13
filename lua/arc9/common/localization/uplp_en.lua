@@ -174,6 +174,7 @@ L["uplp_category_sticker_stock"] = "Sticker Stock"
 //////////////////// Folder Names
 L["uplp_folder_flashlight"] = "Flashlights"
 L["uplp_folder_laser"] = "Lasers"
+L["uplp_folder_hybrid"] = "Hybrid"
 L["uplp_folder_suppressor"] = "Suppressors"
 
 //////////////////// Toggle Stats Names
@@ -184,6 +185,7 @@ L["uplp_togglestat_folded"] = "Folded"
 L["uplp_togglestat_laser"] = "Laser"
 L["uplp_togglestat_off"] = "Off"
 L["uplp_togglestat_on"] = "On"
+L["uplp_togglestat_combo"] = "Combo" // combo flashlight/laser
 
 //////////////////// Stat
 L["uplp_stat_semi"] = "When Semi-Auto: "
@@ -255,7 +257,7 @@ local desc_midbigoptic = "\nHas <color=255,150,100>somewhat high sway and handli
 local desc_bigoptic = "\nHas <color=255,100,100>high sway and handling penalities</color>."
 local desc_biggeroptic = "\nHas <color=255,100,100>very high sway and handling penalities</color>."
 
-local desc_dovetail = "\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+local desc_dovetail = "\nMounted on the side via a dovetail rail; incompatible with <color=255,100,100>regular scopes and railed dust covers</color>."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
@@ -304,7 +306,7 @@ L["uplp_optic_d1.description"] = "Compact red dot intended for smaller firearms.
 
 L["uplp_optic_d1high.printname"] = "D-1 Red Dot w. Riser"
 L["uplp_optic_d1high.compactname"] = "D-1 R"
-L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms." .. desc_smalloptic
+L["uplp_optic_d1high.description"] = "Compact red dot intended for smaller firearms, mounted on a riser." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
@@ -324,7 +326,7 @@ L["uplp_optic_rmr.description"] = "Compact red dot intended for handguns and sma
 
 L["uplp_optic_rmrhigh.printname"] = "XW Red Dot w. Riser"
 L["uplp_optic_rmrhigh.compactname"] = "XW R."
-L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
+L["uplp_optic_rmrhigh.description"] = "Compact red dot intended for handguns and smaller caliber firearms, mounted on a riser." .. desc_smalloptic
 
 L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
@@ -392,18 +394,18 @@ L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elit
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
-L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail
+L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail .. desc_cqcoptic
 
 L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail
+L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail .. desc_midoptic
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
 
 L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflex Sight"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
-L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail
+L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail .. desc_cqcoptic
 
 L["uplp_optic_okp.printname"] = "OPWK-B Reflex Sight"
 L["uplp_optic_okp.compactname"] = "OPWK"
@@ -605,9 +607,9 @@ L["uplp_sg_mz_silencer_heavy.compactname"] = "H SG Supp."
 L["uplp_sg_mz_silencer_heavy.description"] = "Heavy shotgun suppressor that dampens the firing noise and improves recoil control at the larger cost of range and mobility."
 
 /////////// Tacticals
-L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Laser Sight"
+L["uplp_tac_anpeq.printname"] = "BeamMaster Optics Hybrid Module"
 L["uplp_tac_anpeq.compactname"] = "BeamMaster"
-L["uplp_tac_anpeq.description"] = "Rail-mounted aiming module made by BeamMaster Optics that provides a laser sight for use in the dark."
+L["uplp_tac_anpeq.description"] = "Rail-mounted aiming module made by BeamMaster Optics that provides a laser sight and flashlight in one.\nThe laser and light can be used independently or together."
 
 L["uplp_tac_piscomb.printname"] = "LuminaFire Armaments Hybrid Module"
 L["uplp_tac_piscomb.compactname"] = "LuminaFire H."
@@ -639,7 +641,7 @@ L["uplp_tac_laser_pistol.description"] = "Compact rail-mounted aiming module mad
 
 L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
 L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
-L["uplp_tac_flashlight_tac.description"] = "Lightweight tactical flashlight made by LuminaFire Armaments."
+L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view made by LuminaFire Armaments."
 
 L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
 L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
@@ -647,14 +649,14 @@ L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight 
 
 L["uplp_tac_piscomb_dbal.printname"] = ARC9:GetPhrase("uplp_tac_laser_dbal.printname") or "Veyron Tactics Laser Module"
 L["uplp_tac_piscomb_dbal.compactname"] = ARC9:GetPhrase("uplp_tac_laser_dbal.compactname") or "Veyron"
-L["uplp_tac_piscomb_dbal.description"] = ARC9:GetPhrase("uplp_tac_laser_dbal.description") or "Rail-mounted aiming module made by Veyron Tactics that provides a laser sight for use in the dark."
+L["uplp_tac_piscomb_dbal.description"] = "Compact rail-mounted hybrid module made by Veyron Tactics.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
 L["uplp_tac_piscomb_viri.compactname"] = "Helios"
-L["uplp_tac_piscomb_viri.description"] = ARC9:GetPhrase("uplp_tac_piscomb.description") or "Compact rail-mounted module providing a weaker flashlight and laser sight in one."
+L["uplp_tac_piscomb_viri.description"] = "Compact rail-mounted hybrid module.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
+local shotgun_lp = "\n\nSpeciality load puts <color=255,200,100>immense heat stress</color> on the weapon, and may cause <color=255,100,100>destructive consequences</color> if overheated."
 
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
@@ -3812,9 +3814,13 @@ L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
 
 /////////// Attachments
 ////// Scopes
-L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
-L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
-L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher." .. desc_midoptic .. "\nCan be equipped on any AK-style rifle if desired. Just ignore the range marks though - your 7.62 rounds travel farther than those indicate."
+L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x Optical Sight"
+L["uplp_rpg7_scope_pgo.compactname"] = "2.7x OPP1"
+L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher.\nSignificantly improves launcher accuracy."
+
+L["uplp_scope_pgo.printname"] = "OPP1 2.7x Optical Sight"
+L["uplp_scope_pgo.compactname"] = "2.7x OPP1"
+L["uplp_scope_pgo.description"] = "Soviet magnified optic specifically made for the ZPG-61 anti-tank launcher.\nCan be used on AK pattern rifles too - just ignore the range marks." .. desc_dovetail .. desc_midoptic
 
 ////// Rockets
 L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""
