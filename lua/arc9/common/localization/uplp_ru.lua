@@ -1009,20 +1009,20 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-зарядный 5.45×39мм (M23)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-зарядный магазин, используемый на АК M23." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-зарядный 5.45×39мм (Бакелит)"
-L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (Б)"
-L["uplp_ak_mag_545_45.description"] = "40-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45-зарядный 5.45×39мм (Бакелит)"
+L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (Б)"
+L["uplp_ak_mag_545_45.description"] = "45-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-зарядный четырёхрядный 5.45×39мм"
-L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-зарядный полимерный магазин увеличенной ширины для размещения боеприпасов." .. loaded545 .. "\n\nПожалуйста, не заряжайте более 52 патронов!"
+L["uplp_ak_mag_545_60.printname"] = "60-зарядный четырёхрядный 5.45×39мм"
+L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-зарядный полимерный магазин увеличенной ширины для размещения боеприпасов." .. loaded545
 
 L["uplp_ak_mag_545_drum.printname"] = "85-зарядный барабан 5.45×39мм ХПК M16"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 Б"
 L["uplp_ak_mag_545_drum.description"] = "85-зарядный цилиндрический барабан от ХПК M16." .. loaded545
 
 L["uplp_ak_mag_545_45p.printname"] = "45-зарядный 5.45×39мм (Полимер)"
-L["uplp_ak_mag_545_45p.compactname"] = "40R 5.45 (П)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5.45 (П)"
 -- L["uplp_ak_mag_545_45p.description"] = "45-round polymer magazine used by the modernized HPKM." .. loaded545
 
 /// 5.56×45mm NATO
@@ -1435,9 +1435,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30-зарядный полимерный 
 L["uplp_ar15_mag_pmag30.compactname"] = "30 Поли"
 L["uplp_ar15_mag_pmag30.description"] = "30-зарядный полимерный магазин производства SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-зарядный полимерный барабан 5.56×45 мм"
-L["uplp_ar15_mag_pmag60.compactname"] = "52 Барабан"
-L["uplp_ar15_mag_pmag60.description"] = "52-зарядный барабанный магазин из полимера производства SynPoly.\nЗагрузка более 52 патронов не рекомендуется - возможны задержки."
+L["uplp_ar15_mag_pmag60.printname"] = "60-зарядный полимерный барабан 5.56×45 мм"
+L["uplp_ar15_mag_pmag60.compactname"] = "60 Барабан"
+L["uplp_ar15_mag_pmag60.description"] = "60-зарядный барабанный магазин из полимера производства SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-зарядный алюминиевый 5.56×45 мм"
 L["uplp_ar15_mag_stanag20.compactname"] = "20 Алюм"
@@ -1451,9 +1451,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-зарядный алюминиев�
 L["uplp_ar15_mag_stanag40.compactname"] = "40 Алюм"
 L["uplp_ar15_mag_stanag40.description"] = "40-зарядный алюминиевый магазин."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-зарядный четырёхрядный 5.56×45 мм"
-L["uplp_ar15_mag_stanag60.compactname"] = "52 Четыр."
-L["uplp_ar15_mag_stanag60.description"] = "52-зарядный алюминиевый магазин с горизонтальным расположением патронов.\nЗагрузка более 52 патронов не рекомендуется - возможны задержки."
+L["uplp_ar15_mag_stanag60.printname"] = "60-зарядный четырёхрядный 5.56×45 мм"
+L["uplp_ar15_mag_stanag60.compactname"] = "60 Четыр."
+L["uplp_ar15_mag_stanag60.description"] = "60-зарядный алюминиевый магазин с горизонтальным расположением патронов."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "Пистолетная рукоять 416"
@@ -2155,9 +2155,9 @@ L["uplp_scar_mag_pmag30.printname"] = "Магазин на 30 патронов 5
 L["uplp_scar_mag_pmag30.compactname"] = "30R Поли"
 L["uplp_scar_mag_pmag30.description"] = "30-зарядный магазин из полимера, изготовленный SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "Полимерный барабанный магазин на 52 патрона 5.56×45мм"
-L["uplp_scar_mag_pmag60.compactname"] = "52R Барабан"
-L["uplp_scar_mag_pmag60.description"] = "52-зарядный барабанный магазин из полимера, изготовленный SynPoly. Загрузка более чем 52 патронов не рекомендуется, так как это может вызвать заклинивание." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "Полимерный барабанный магазин на 60 патрона 5.56×45мм"
+L["uplp_scar_mag_pmag60.compactname"] = "60R Барабан"
+L["uplp_scar_mag_pmag60.description"] = "60-зарядный барабанный магазин из полимера, изготовленный SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "Магазин на 30 патронов 5.56×45мм (Алюминий)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Алюм"
@@ -2167,9 +2167,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "Магазин на 30 патрон
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Пуст."
 L["uplp_scar_mag_stanag30_tan.description"] = "30-зарядный магазин из алюминия, окрашенный в пустынный." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "Четырёхрядный магазин на 52 патрона 5.56×45мм"
-L["uplp_scar_mag_stanag60.compactname"] = "52R Четыр."
-L["uplp_scar_mag_stanag60.description"] = "52-зарядный алюминиевый магазин, расширенный горизонтально для большего количества патронов. Загрузка более чем 52 патронов не рекомендуется, так как это может вызвать заклинивание." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "Четырёхрядный магазин на 60 патрона 5.56×45мм"
+L["uplp_scar_mag_stanag60.compactname"] = "60R Четыр."
+L["uplp_scar_mag_stanag60.description"] = "60-зарядный алюминиевый магазин, расширенный горизонтально для большего количества патронов." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "Рукоятка XAR (Чёрная)"
@@ -2417,9 +2417,9 @@ L["uplp_aug_mag_556_40.printname"] = "40-зарядный 5.56×45мм"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "40-зарядный расширенный магазин для AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-зарядный барабан 5.56×45мм"
-L["uplp_aug_mag_556_52.compactname"] = "52Р 5.56"
-L["uplp_aug_mag_556_52.description"] = "52-зарядный барабанный магазин для AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "60-зарядный барабан 5.56×45мм"
+L["uplp_aug_mag_556_52.compactname"] = "60Р 5.56"
+L["uplp_aug_mag_556_52.description"] = "60-зарядный барабанный магазин для AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-зарядный 9×19мм"
 L["uplp_aug_mag_919_25.compactname"] = "25Р 9×19мм"

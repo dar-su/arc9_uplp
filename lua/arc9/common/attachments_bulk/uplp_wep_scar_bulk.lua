@@ -881,8 +881,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30_tan")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.56x45mm Drum"
-ATT.CompactName = "52R 5.56 D"
+ATT.PrintName = "60-Round 5.56x45mm Drum"
+ATT.CompactName = "60R 5.56 D"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 60
 
@@ -906,7 +906,7 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012
@@ -934,8 +934,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag60")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.56x45mm Quadstacked"
-ATT.CompactName = "52R 5.56 (Q)"
+ATT.PrintName = "60-Round 5.56x45mm Quadstacked"
+ATT.CompactName = "60R 5.56 (Q)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 60
 
@@ -957,7 +957,7 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012

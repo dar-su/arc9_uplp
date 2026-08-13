@@ -1007,13 +1007,13 @@ L["uplp_ak_mag_545_30_12.printname"] = "30 Rondas 5.45x39mm (Estilo M23)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "Cargador de 30 balas utilizado en el fusil AK M23." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40 Rondas 5.45x39mm (Baquelita)"
-L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (B)"
-L["uplp_ak_mag_545_45.description"] = "Cargador de 40 balas de compuesto de moldeo AG-4S, pero se asemeja a la baquelita." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45 Rondas 5.45x39mm (Baquelita)"
+L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
+L["uplp_ak_mag_545_45.description"] = "Cargador de 45 balas de compuesto de moldeo AG-4S, pero se asemeja a la baquelita." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52 Rondas 5.45x39mm Quadstacked"
-L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "Cargador de polímero de 52 balas expandido horizontalmente para alojar más munición." .. loaded545 .. "\n\nChico grueso. ¡Por favor, no cargue más de 52 cartuchos!"
+L["uplp_ak_mag_545_60.printname"] = "60 Rondas 5.45x39mm Quadstacked"
+L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "Cargador de polímero de 60 balas expandido horizontalmente para alojar más munición." .. loaded545
 
 L["uplp_ak_mag_545_drum.printname"] = "Tambor HPK M16 de 5,45x39 mm de 85 Rondas"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 T"
@@ -1434,9 +1434,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_ar15_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 52 Rondas 5.56×45mm  "
-L["uplp_ar15_mag_pmag60.compactname"] = "52R Tambor"
-L["uplp_ar15_mag_pmag60.description"] = "Cargador de tambor de 52 cartuchos fabricado en polímero por SynPoly.\nNo se recomienda cargar más de 52 balas, ya que podrían producirse atascos."
+L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 60 Rondas 5.56×45mm  "
+L["uplp_ar15_mag_pmag60.compactname"] = "60R Tambor"
+L["uplp_ar15_mag_pmag60.description"] = "Cargador de tambor de 60 cartuchos fabricado en polímero por SynPoly.\nNo se recomienda cargar más de 60 balas, ya que podrían producirse atascos."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
@@ -1450,9 +1450,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "Cargador de 40 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52 Rondas 5.56×45mm Quadstacked"
-L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_ar15_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para albergar más munición.\nNo se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos."
+L["uplp_ar15_mag_stanag60.printname"] = "60 Rondas 5.56×45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_ar15_mag_stanag60.description"] = "Cargador de aluminio de 60 balas expandido horizontalmente para albergar más munición."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "Empuñadura de Pistola 416"
@@ -2138,7 +2138,7 @@ L["uplp_scar_mag_20_68.description"] = "Cargador de 10 balas con recámara de 6.
 
 L["uplp_scar_mag_drum.printname"] = "Tambor doble 5.56×45mm de 90 Rondas"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
-L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 52 balas, ya que podrían producirse atascos.\nNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 60 balas, ya que podrían producirse atascos.\nNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
 
 L["uplp_scar_mag_hk.printname"] = "30 Rondas 5.56×45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
@@ -2152,9 +2152,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polímero)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm de 52 Rondas"
-L["uplp_scar_mag_pmag60.compactname"] = "52R Tambor"
-L["uplp_scar_mag_pmag60.description"] = "Cargador de tambor de 52 balas fabricado en polímero por SynPoly. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm de 60 Rondas"
+L["uplp_scar_mag_pmag60.compactname"] = "60R Tambor"
+L["uplp_scar_mag_pmag60.description"] = "Cargador de tambor de 60 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30 Rondas 5.56×45mm (Aluminio)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
@@ -2164,9 +2164,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30 Rondas 5.56×45mm (Bronceado)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Bronceado"
 L["uplp_scar_mag_stanag30_tan.description"] = "Cargador de 30 balas de aluminio pintado de color tostado." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52 Rondas 5.56×45mm Quadstacked"
-L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_scar_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para contener más munición. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "60 Rondas 5.56×45mm Quadstacked"
+L["uplp_scar_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_scar_mag_stanag60.description"] = "Cargador de aluminio de 60 balas expandido horizontalmente para contener más munición." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "Empuñadura de Pistola XAR (Negro)"
@@ -2406,9 +2406,9 @@ L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56×45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "Cargador extendido de 40 balas para la AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm de 52 Rondas"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
-L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm de 60 Rondas"
+L["uplp_aug_mag_556_52.compactname"] = "60R 5.56"
+L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 60 balas para la AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9×19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"

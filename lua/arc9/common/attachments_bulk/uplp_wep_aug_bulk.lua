@@ -240,8 +240,8 @@ ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_40")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.56x45mm Drum"
-ATT.CompactName = "52R 5.56"
+ATT.PrintName = "60-Round 5.56x45mm Drum"
+ATT.CompactName = "60R 5.56"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p60.png", "mips smooth")
@@ -262,7 +262,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012

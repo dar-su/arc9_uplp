@@ -1028,20 +1028,20 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-Round 5.45×39mm (M23 Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-round magazine used on AK M23 rifle." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-Round 5.45×39mm (Bakelite)"
-L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (B)"
-L["uplp_ak_mag_545_45.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45-Round 5.45×39mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
+L["uplp_ak_mag_545_45.description"] = "45-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-Round 5.45×39mm Quadstacked"
-L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\nThicc boi. Please don't load more than 52 rounds!"
+L["uplp_ak_mag_545_60.printname"] = "60-Round 5.45×39mm Quadstacked"
+L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-Round polymer magazine expanded horizontally to hold more ammunition." .. loaded545 .. "\n\nThicc boi."
 
 L["uplp_ak_mag_545_drum.printname"] = "85-Round 5.45×39mm HPK M16 Drum"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 D"
 L["uplp_ak_mag_545_drum.description"] = "85-round cylindrical drum magazine from the HPK M16." .. loaded545
 
 L["uplp_ak_mag_545_45p.printname"] = "45-Round 5.45×39mm (Polymer)"
-L["uplp_ak_mag_545_45p.compactname"] = "40R 5.45 (P)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5.45 (P)"
 L["uplp_ak_mag_545_45p.description"] = "45-round polymer magazine used by the modernized HPKM." .. loaded545
 
 /// 5.56×45mm NATO
@@ -1461,9 +1461,9 @@ L["uplp_ar15_mag_pmag40.printname"] = "40-Round 5.56×45mm (Polymer)"
 L["uplp_ar15_mag_pmag40.compactname"] = "40R Poly"
 L["uplp_ar15_mag_pmag40.description"] = "40-round magazine made out of polymer by SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
-L["uplp_ar15_mag_pmag60.compactname"] = "52R Drum"
-L["uplp_ar15_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_pmag60.printname"] = "60-Round 5.56×45mm Polymer Drum"
+L["uplp_ar15_mag_pmag60.compactname"] = "60R Drum"
+L["uplp_ar15_mag_pmag60.description"] = "60-Round drum magazine made out of polymer by SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Round 5.56×45mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
@@ -1477,9 +1477,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-Round 5.56×45mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-round magazine made out of aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-Round 5.56×45mm Quadstacked"
-L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_ar15_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition.\nLoading more than 52 rounds is not recommeneded as it could cause jams."
+L["uplp_ar15_mag_stanag60.printname"] = "60-Round 5.56×45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_ar15_mag_stanag60.description"] = "60-Round aluminium magazine expanded horizontally to hold more ammunition."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416 Pistol Grip"
@@ -2159,9 +2159,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
-L["uplp_scar_mag_pmag60.compactname"] = "52R Drum"
-L["uplp_scar_mag_pmag60.description"] = "52-Round drum magazine made out of polymer by SynPoly. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "60-Round 5.56×45mm Polymer Drum"
+L["uplp_scar_mag_pmag60.compactname"] = "60R Drum"
+L["uplp_scar_mag_pmag60.description"] = "60-Round drum magazine made out of polymer by SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Round 5.56×45mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
@@ -2171,9 +2171,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30-Round 5.56×45mm (Tan)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Tan"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-round magazine made out of aluminium painted tan." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52-Round 5.56×45mm Quadstacked"
-L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_scar_mag_stanag60.description"] = "52-Round aluminium magazine expanded horizontally to hold more ammunition. Loading more than 52 rounds is not recommeneded as it could cause jams." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "60-Round 5.56×45mm Quadstacked"
+L["uplp_scar_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_scar_mag_stanag60.description"] = "60-Round aluminium magazine expanded horizontally to hold more ammunition." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "XAR Pistol Grip (Black)"
@@ -2417,9 +2417,9 @@ L["uplp_aug_mag_556_40.printname"] = "40-Round 5.56×45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "40-round extended magazine for the AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Round 5.56×45mm Drum"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
-L["uplp_aug_mag_556_52.description"] = "52-round drum magazine for the AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "60-Round 5.56×45mm Drum"
+L["uplp_aug_mag_556_52.compactname"] = "60R 5.56"
+L["uplp_aug_mag_556_52.description"] = "60-Round drum magazine for the AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-Round 9×19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"

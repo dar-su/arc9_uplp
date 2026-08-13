@@ -1007,20 +1007,20 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45 × 39 mm (M23-Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-patronersmagasin som används på AK M23-geväret." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-Patroner 5,45 × 39 mm (Bakelite)"
-L["uplp_ak_mag_545_45.compactname"] = "40P 5,45 (B)"
-L["uplp_ak_mag_545_45.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45-Patroner 5,45 × 39 mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "45P 5,45 (B)"
+L["uplp_ak_mag_545_45.description"] = "45-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-Patroner 5,45 × 39 mm Quadstack"
-L["uplp_ak_mag_545_60.compactname"] = "52P 5,45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\nTjock jäkel. Snälla Ladda inte mer än 52 patroner!"
+L["uplp_ak_mag_545_60.printname"] = "60-Patroner 5,45 × 39 mm Quadstack"
+L["uplp_ak_mag_545_60.compactname"] = "60P 5,45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-Patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545
 
 L["uplp_ak_mag_545_drum.printname"] = "85-Patroner 5,45 × 39 mm HPK M16 Trumma"
 L["uplp_ak_mag_545_drum.compactname"] = "85P 5,45 T"
 L["uplp_ak_mag_545_drum.description"] = "85-patroners cylindriskt trummagasin från HPK M16." .. loaded545
 
 L["uplp_ak_mag_545_45p.printname"] = "45-Patroner 5,45 × 39 mm (Polymer)"
-L["uplp_ak_mag_545_45p.compactname"] = "40R 5,45 (P)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5,45 (P)"
 L["uplp_ak_mag_545_45p.description"] = "45-patroners polymermagasin som används av den moderna HPKM." .. loaded545
 
 /// 5,56 × 45mm NATO
@@ -1434,9 +1434,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56 × 45 mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-Patroner 5,56 × 45 mm Trumma"
-L["uplp_ar15_mag_pmag60.compactname"] = "52P Trumma"
-L["uplp_ar15_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
+L["uplp_ar15_mag_pmag60.printname"] = "60-Patroner 5,56 × 45 mm Trumma"
+L["uplp_ar15_mag_pmag60.compactname"] = "60P Trumma"
+L["uplp_ar15_mag_pmag60.description"] = "60-Patroners trummagasin gjord utav polymer av SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56 × 45 mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20P Alum"
@@ -1450,9 +1450,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56 × 45 mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40P Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkat av aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-Patroner 5,56 × 45 mm Quadstack"
-L["uplp_ar15_mag_stanag60.compactname"] = "52P Quad."
-L["uplp_ar15_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
+L["uplp_ar15_mag_stanag60.printname"] = "60-Patroner 5,56 × 45 mm Quadstack"
+L["uplp_ar15_mag_stanag60.compactname"] = "60P Quad."
+L["uplp_ar15_mag_stanag60.description"] = "60-Patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416-Pistolgrepp"
@@ -2153,9 +2153,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Patroner 5,56 × 45 mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "52-Patroner 5,56 × 45 mm Polymer Trumma"
-L["uplp_scar_mag_pmag60.compactname"] = "52P Trumma"
-L["uplp_scar_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "60-Patroner 5,56 × 45 mm Polymer Trumma"
+L["uplp_scar_mag_pmag60.compactname"] = "60P Trumma"
+L["uplp_scar_mag_pmag60.description"] = "60-Patroners trummagasin gjord utav polymer av SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Patroner 5,56 × 45 mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30P Alum"
@@ -2165,9 +2165,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30-Patroner 5,56 × 45 mm (Tanfärg
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30P Tanfärg"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-patronersmagasin tillverkat av aluminium med tanfärg." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52-Patroner 5,56 × 45 mm Quadstack"
-L["uplp_scar_mag_stanag60.compactname"] = "52P Quad"
-L["uplp_scar_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "60-Patroner 5,56 × 45 mm Quadstack"
+L["uplp_scar_mag_stanag60.compactname"] = "60P Quad"
+L["uplp_scar_mag_stanag60.description"] = "60-Patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "XAR Pistolgrepp (Svart)"
@@ -2417,9 +2417,9 @@ L["uplp_aug_mag_556_40.printname"] = "40-Patroner 5,56 × 45 mm"
 L["uplp_aug_mag_556_40.compactname"] = "40P 5,56"
 L["uplp_aug_mag_556_40.description"] = "Förlängt 40-patronersmagasin till AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Patroner 5,56 × 45 mm Trumma"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5,56"
-L["uplp_aug_mag_556_52.description"] = "52-patroners trummagasin till AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "60-Patroner 5,56 × 45 mm Trumma"
+L["uplp_aug_mag_556_52.compactname"] = "60R 5,56"
+L["uplp_aug_mag_556_52.description"] = "60-Patroners trummagasin till AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-Patroner 9 × 19 mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9 × 19 mm"
