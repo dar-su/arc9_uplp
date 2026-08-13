@@ -122,7 +122,7 @@ SWEP.RecoilRandomSide = 1
 SWEP.RecoilRise = 10
 SWEP.MaxRecoilBlowback = 0
 SWEP.RecoilPunch = 0
-SWEP.RecoilAutoControl = 1.15 * 1.5
+SWEP.RecoilAutoControl = 1
 
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
@@ -131,8 +131,8 @@ SWEP.RecoilMultCrouch = 0.85
 SWEP.UseVisualRecoil = false
 
 -- Accuracy and Spread
-SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.15
+SWEP.Spread = 0.01
+SWEP.SpreadAddHipFire = 0.1
 
 SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.03
@@ -168,8 +168,6 @@ SWEP.TriggerDelay = true -- Add a delay before the weapon fires.
 SWEP.TriggerDelayTime = 0.02 -- Time until weapon fires.
 SWEP.TriggerDelayRepeat = false -- Whether to do it for every shot on automatics.
 SWEP.TriggerDelayCancellable = false
-
-SWEP.SwayMultSights = 1.25
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
@@ -543,31 +541,32 @@ SWEP.Hook_PrimaryAttack = function(self)
     -- backblast
 
     if IsValid(owner) and owner:IsPlayer() and self:GetProcessedValue("HasBackblast") then
+        if SERVER then
+            -- Secret tech! Combines, rebels and some other NPCs will cower and run and scream and stuff
+            sound.EmitHint(SOUND_DANGER, self:GetPos(), 256, math.Rand(0.75, 1.5))
 
-        -- Secret tech! Combines, rebels and some other NPCs will cower and run and scream and stuff
-        sound.EmitHint(SOUND_DANGER, self:GetPos(), 256, math.Rand(0.75, 1.5))
+            local tr = util.TraceLine( {
+                start = owner:EyePos(),
+                endpos = owner:EyePos() + owner:EyeAngles():Forward() * -48,
+                filter = owner
+            } )
 
-        local tr = util.TraceLine( {
-            start = owner:EyePos(),
-            endpos = owner:EyePos() + owner:EyeAngles():Forward() * -48,
-            filter = owner
-        } )
+            -- debugoverlay.Line(owner:EyePos(), tr.HitPos)
+            if tr.Hit then
+                timer.Simple(0, function()
+                    local d = DamageInfo()
+                    d:SetDamage( 105 )
+                    d:SetAttacker( owner )
+                    d:SetDamageType( DMG_SLOWBURN )
+                    -- d:SetDamageType( DMG_DISSOLVE ) -- this one is funny
 
-        -- debugoverlay.Line(owner:EyePos(), tr.HitPos)
-        if tr.Hit then
-            timer.Simple(0, function()
-                local d = DamageInfo()
-                d:SetDamage( 105 )
-                d:SetAttacker( owner )
-                d:SetDamageType( DMG_SLOWBURN )
-                -- d:SetDamageType( DMG_DISSOLVE ) -- this one is funny
+                    owner:TakeDamageInfo( d )
 
-                owner:TakeDamageInfo( d )
-
-                if IsValid(tr.Entity) and (tr.Entity:IsNPC() or tr.Entity:IsPlayer() or tr.Entity:IsNextBot()) then
-                    tr.Entity:TakeDamageInfo( d )
-                end
-            end)
+                    if IsValid(tr.Entity) and (tr.Entity:IsNPC() or tr.Entity:IsPlayer() or tr.Entity:IsNextBot()) then
+                        tr.Entity:TakeDamageInfo( d )
+                    end
+                end)
+            end
 
             ParticleEffect( "m79_smoke_e", tr.HitPos, Angle( 0, 0, 0 ) )
         end

@@ -232,7 +232,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_green.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.25
+ATT.SpreadMult = 0.15
 ATT.HeadshotDamageAdd = 0.5
 ATT.DispersionSpreadAddRecoil = -0.015
 ATT.PenetrationAdd = 10
@@ -240,12 +240,12 @@ ATT.DamageMinMult = 1.2
 
 -- Negatives
 ATT.NumOverride = 1
-ATT.DamageMaxMult = 0.5
+ATT.DamageMaxMult = 0.55
 ATT.RecoilDissipationRateMult = 0.75
 ATT.HullSizeOverride = 0
 ATT.PhysBulletGravityMult = 2.5
 ATT.PhysBulletDragMult = 3
-ATT.DispersionSpreadAddHipFire = 0.015
+ATT.DispersionSpreadAddHipFire = 0.02
 ATT.LegDamageMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.85
 
@@ -274,7 +274,7 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_black.mdl"
 
 -- Positives
 ATT.RangeMaxMult = 2
-ATT.SpreadMult = 0.1
+ATT.SpreadMult = 0.07
 ATT.HeadshotDamageAdd = 1.5
 ATT.DispersionSpreadAddRecoil = -0.02
 ATT.PhysBulletMuzzleVelocityMult = 1.1
@@ -284,10 +284,10 @@ ATT.PenetrationAdd = 25
 -- Negatives
 ATT.NumOverride = 1
 ATT.DamageMaxMult = 0.4
---ATT.DamageMinMult = 0.9
+ATT.DamageMinMult = 0.9
 ATT.HullSizeOverride = 0
 ATT.LegDamageMult = 0.75
-ATT.DispersionSpreadAddHipFire = 0.015
+ATT.DispersionSpreadAddHipFire = 0.03
 
 ATT.DamageTypeOverride = DMG_BULLET
 ATT.AlwaysPhysBulletOverride = true
@@ -514,7 +514,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_yellow.mdl"
 
 -- Positives
-ATT.SpreadMult = 0.75
+ATT.SpreadMult = 0.6
 
 ATT.ExplosionRadiusOverride = 150
 ATT.ExplosionDamageOverride = 25
@@ -524,10 +524,10 @@ ATT.Override_DamageType = DMG_BLAST + DMG_AIRBOAT
 ATT.DamageType = DMG_BLAST + DMG_AIRBOAT
 
 -- Negatives
-ATT.DamageMaxMult = 0.45
-ATT.DamageMinMult = 0.45
+ATT.DamageMaxMult = 0.4
+ATT.DamageMinMult = 0.6
 ATT.NumOverride = 1
-ATT.PhysBulletGravityMult = 1.5
+ATT.PhysBulletGravityMult = 1.3
 ATT.PhysBulletMuzzleVelocityMult = 0.33333333
 ATT.AlwaysPhysBulletOverride = true
 ATT.RPMMult = 0.9

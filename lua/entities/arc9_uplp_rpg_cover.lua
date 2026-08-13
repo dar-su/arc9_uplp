@@ -30,6 +30,7 @@ local pathd = "uplp_urban_temp/m203/"
 local path = "uplp_urban_temp/common/"
 ENT.ExplosionSounds = {path .. "explosion-rpg-01.ogg", path .. "explosion-rpg-02.ogg", path .. "explosion-rpg-03.ogg", path .. "explosion-rpg-04.ogg", path .. "explosion-rpg-05.ogg", path .. "explosion-rpg-06.ogg"}
 ENT.DebrisSounds = {pathd .. "debris-01.ogg", pathd .. "debris-02.ogg", pathd .. "debris-03.ogg", pathd .. "debris-04.ogg", pathd .. "debris-05.ogg"}
+ENT.ExplosionSounds2 = {path .. "explosion-close-01.ogg", path .. "explosion-close-02.ogg", path .. "explosion-close-03.ogg", path .. "explosion-close-04.ogg", path .. "explosion-close-05.ogg", path .. "explosion-close-06.ogg"}
 
 
 function ENT:Detonate(hitEnt, data)
@@ -67,11 +68,14 @@ function ENT:Detonate(hitEnt, data)
         return
     end
 
+    self:EmitSound(self.ExplosionSounds2[math.random(1,#self.ExplosionSounds2)], 100, 110)
+
     --effects on their side
     local tr = util.TraceLine({
         start = data.HitPos + data.HitNormal * 2, --start inside
         endpos = data.HitPos + data.HitNormal * 2 + dir * 128, --go forward until we hit something
         filter = {self},
+        mask = MASK_SOLID,
     })
 
     debugoverlay.Line(data.HitPos + data.HitNormal * 2, data.HitPos + data.HitNormal * 2 + dir * 128 * tr.Fraction, 2, Color(0, 255, 0, 255), true)
@@ -82,6 +86,7 @@ function ENT:Detonate(hitEnt, data)
             start = tr.HitPos, --start where we hit
             endpos = tr.StartPos, --go back to start
             filter = {self},
+            mask = MASK_SOLID,
         })
 
         debugoverlay.Line(tr.StartPos, tr.HitPos, 4, Color(0, 255, 255, 255), true)

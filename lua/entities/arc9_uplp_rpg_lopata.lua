@@ -87,7 +87,7 @@ function ENT:Impact(data, collider)
         dmginfo:SetAttacker(attacker)
         dmginfo:SetInflictor(self)
         dmginfo:SetDamageType(DMG_CRUSH + DMG_CLUB)
-        dmginfo:SetDamage(150)
+        dmginfo:SetDamage(120)
         dmginfo:SetDamageForce(data.OurOldVelocity * 25)
         dmginfo:SetDamagePosition(data.HitPos)
         data.HitEntity:TakeDamageInfo(dmginfo)
@@ -118,7 +118,7 @@ function ENT:Impact(data, collider)
     return true
 end
 
-local g = Vector(0, 0, -9.81 * 0.75)
+local g = Vector(0, 0, -9.81 * 0.25)
 function ENT:PhysicsUpdate(phys)
     if !self.Armed and self:WaterLevel() == 0 then
         local v = phys:GetVelocity()

@@ -122,7 +122,7 @@ function ENT:Detonate(hitEnt, data)
     timer.Simple(0, function() self:Remove() end)
 end
 
-local g = Vector(0, 0, -9.81 * 0.2)
+local g = Vector(0, 0, -9.81 * 0.125)
 function ENT:PhysicsUpdate(phys)
     if !self.Armed and self:WaterLevel() == 0 then
         local v = phys:GetVelocity()

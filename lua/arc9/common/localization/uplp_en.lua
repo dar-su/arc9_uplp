@@ -257,7 +257,7 @@ local desc_midbigoptic = "\nHas <color=255,150,100>somewhat high sway and handli
 local desc_bigoptic = "\nHas <color=255,100,100>high sway and handling penalities</color>."
 local desc_biggeroptic = "\nHas <color=255,100,100>very high sway and handling penalities</color>."
 
-local desc_dovetail = "\nMounted on the side via a dovetail rail.\nCannot equip <color=255,100,100>regular scopes or certain dust covers</color>."
+local desc_dovetail = "\nMounted on the side via a dovetail rail; incompatible with <color=255,100,100>regular scopes and railed dust covers</color>."
 
 /////////// Optics
 L["uplp_optic_553.printname"] = "SightLine™ 500 Series Holographic Sight"
@@ -394,18 +394,18 @@ L["uplp_optic_devom.description"] = "High quality red dot sight made by the Elit
 
 L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
-L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail
+L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail .. desc_cqcoptic
 
 L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail
+L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail .. desc_midoptic
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
 
 L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflex Sight"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
-L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail
+L["uplp_optic_dovetail_okp.description"] = "Slim and lightweight collimator sight of Russian origin." .. desc_dovetail .. desc_cqcoptic
 
 L["uplp_optic_okp.printname"] = "OPWK-B Reflex Sight"
 L["uplp_optic_okp.compactname"] = "OPWK"
@@ -624,7 +624,7 @@ L["uplp_tac_flashlight_tac.compactname"] = "FLTAC F."
 L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
+local shotgun_lp = "\n\nSpeciality load puts <color=255,200,100>immense heat stress</color> on the weapon, and may cause <color=255,100,100>destructive consequences</color> if overheated."
 
 L["uplp_ar15_ammo_458.printname"] = ".458 SOCOM Ammo"
 L["uplp_ar15_ammo_458.compactname"] = ".458 SOCOM"
@@ -3761,9 +3761,13 @@ L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
 
 /////////// Attachments
 ////// Scopes
-L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
-L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
-L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher." .. desc_midoptic .. "\nCan be equipped on any AK-style rifle if desired. Just ignore the range marks though - your 7.62 rounds travel farther than those indicate."
+L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x Optical Sight"
+L["uplp_rpg7_scope_pgo.compactname"] = "2.7x OPP1"
+L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher.\nSignificantly improves launcher accuracy."
+
+L["uplp_scope_pgo.printname"] = "OPP1 2.7x Optical Sight"
+L["uplp_scope_pgo.compactname"] = "2.7x OPP1"
+L["uplp_scope_pgo.description"] = "Soviet magnified optic specifically made for the ZPG-61 anti-tank launcher.\nCan be used on AK pattern rifles too - just ignore the range marks." .. desc_dovetail .. desc_midoptic
 
 ////// Rockets
 L["uplp_rpg7_rocket_cover.printname"] = "RGM-40 \"Slon\""
