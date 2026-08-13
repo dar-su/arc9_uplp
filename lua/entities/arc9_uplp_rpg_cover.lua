@@ -91,6 +91,8 @@ function ENT:Detonate(hitEnt, data)
 
         debugoverlay.Line(tr.StartPos, tr.HitPos, 4, Color(0, 255, 255, 255), true)
 
+        util.Decal("Scorch", tr.HitPos + data.HitNormal, data.HitPos - data.HitNormal)
+
         sound.Play(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], tr.HitPos + data.HitNormal * 3, 125, 100, 1)
 
         util.ScreenShake(tr.HitPos + data.HitNormal * 48, 25, 4, .75, 128 * 4)
