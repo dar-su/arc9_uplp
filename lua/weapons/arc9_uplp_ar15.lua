@@ -492,9 +492,9 @@ SWEP.Animations = {
         Mult = 1.05,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
-            { s = pathRZ .. "magout.ogg", t = 2 / 30 },
+            { s = pathRZ .. "magout.ogg", t = 6 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = pathRZ .. "struggle.ogg", t = 22 / 30 },
+            { s = pathRZ .. "struggle.ogg", t = 18 / 30 },
             { s = pathRZ .. "magin.ogg", t = 27 / 30 },
             { s = UTCloth, t = 20 / 30, v = 0.25 },
             { s = UTCloth, t = 36 / 30 - 0.07, v = 0.25 },
@@ -522,9 +522,9 @@ SWEP.Animations = {
         Mult = 1.05,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
-            { s = pathRZ .. "magout.ogg", t = 2 / 30 },
+            { s = pathRZ .. "magout.ogg", t = 6 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = pathRZ .. "struggle.ogg", t = 22 / 30 },
+            { s = pathRZ .. "struggle.ogg", t = 18 / 30 },
             { s = pathRZ .. "magin.ogg", t = 27 / 30 },
             { s = UTCloth, t = 20 / 30, v = 0.25 },
             { s = pathRZ .. "boltrel.ogg", t = 37 / 30 },

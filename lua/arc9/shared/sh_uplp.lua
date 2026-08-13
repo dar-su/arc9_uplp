@@ -209,5 +209,5 @@ sound.Add({
     channel = CHAN_AUTO,
     volume = 1.0,
     level = 100,
-    sound = {"^uplp_urban_temp/common/db_add_1.ogg", "^uplp_urban_temp/common/db_add_2.ogg", "^uplp_urban_temp/common/db_add_3.ogg"}
+    sound = {"^uplp_urban_temp/common/dragon-01.wav", "^uplp_urban_temp/common/dragon-02.wav", "^uplp_urban_temp/common/dragon-03.wav", "^uplp_urban_temp/common/dragon-04.wav", "^uplp_urban_temp/common/dragon-05.wav", "^uplp_urban_temp/common/dragon-06.wav"}
 })
