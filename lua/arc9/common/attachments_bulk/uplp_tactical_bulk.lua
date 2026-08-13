@@ -87,8 +87,8 @@ ATT.CustomPros = {
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed"))] = "×85%",
-    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. ARC9:GetPhrase("autostat.recoildissipationrate")] = "×80%",
+    [ARC9:GetPhrase("uplp_togglestat_laser") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.shooting"), ARC9:GetPhrase("autostat.speed") )] = "×85%",
+    [ARC9:GetPhrase("uplp_togglestat_flash") .. " - " .. string.format( ARC9:GetPhrase("autostat.secondary.hipfire"), ARC9:GetPhrase("autostat.recoildissipationrate") )] = "×80%",
 }
 
 ATT.AimDownSightsTimeAdd = 0.06
