@@ -89,6 +89,7 @@ $bodygroup "mag" { // 6
 
 $bodygroup "gripdef" { // 5
 	studio "grip_stda.smd" // 0
+	studio "grip ar10.smd" // 0
 	blank
 }
 

@@ -420,6 +420,22 @@ L["uplp_optic_dedal.description"] = "Прицел с 12-кратным увел�
 -- L["uplp_optic_rsa.compactname"] = "Type-7"
 -- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
 
+-- L["uplp_optic_falco.printname"] = "NPI Red Dot"
+-- L["uplp_optic_falco.compactname"] = "NPI"
+-- L["uplp_optic_falco.description"] = "Modern top-tier reflex optic made by the newly formed Northstar Precision Institute (NPI)." .. desc_cqcoptic
+
+-- L["uplp_optic_uh1.printname"] = "SightLine™ Gen-II Holographic Sight"
+-- L["uplp_optic_uh1.compactname"] = "SL Gen-II"
+-- L["uplp_optic_uh1.description"] = "Next generation holographic sight made by SightLine™." .. desc_cqcoptic
+
+-- L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
+-- L["uplp_optic_sro_direct.compactname"] = "VOC-1"
+-- L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+-- L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
+-- L["uplp_optic_justice_direct.compactname"] = "Redmark"
+-- L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Угловая красная точка"
 L["uplp_backup_optic_rmr.compactname"] = "Угл. RDS"
@@ -481,6 +497,14 @@ L["uplp_grip_rk45.description"] = "Угловая рукоятка под 45° �
 L["uplp_grip_cqr.printname"] = "Передний хват PAWCO «Ares»"
 L["uplp_grip_cqr.compactname"] = "Ares"
 L["uplp_grip_cqr.description"] = "Специальная тяжёлая рукоятка от подразделения PAWCO «Ares»."
+
+-- L["uplp_grip_afg.printname"] = "Angled Grip"
+-- L["uplp_grip_afg.compactname"] = "Angled"
+-- L["uplp_grip_afg.description"] = "Rail-mounted angle foregrip."
+
+-- L["uplp_grip_cqr_mini.printname"] = "PAWCO \"Ares\" Mini-Grip"
+-- L["uplp_grip_cqr_mini.compactname"] = "Ares (M)"
+-- L["uplp_grip_cqr_mini.description"] = "Miniature variant of PAWCO's \"Ares\" division's custom-made foregrip."
 
 /////////// Bipod
 L["uplp_bipod.printname"] = "Сошки SynPoly WildCat X"
@@ -589,9 +613,9 @@ L["uplp_tac_laser_blue.printname"] = "Лазерный целеуказател�
 L["uplp_tac_laser_blue.compactname"] = "ApexAim (Г)"
 L["uplp_tac_laser_blue.description"] = "Навесной модуль целеуказания производства ApexAim с синим лазером для использования в темноте."
 
-L["uplp_tac_laser_dbal.printname"] = "Лазерный целеуказатель (DBAL)"
-L["uplp_tac_laser_dbal.compactname"] = "Лазер (DBAL)"
-L["uplp_tac_laser_dbal.description"] = "Навесной модуль целеуказания с лазером для использования в темноте."
+-- L["uplp_tac_laser_dbal.printname"] = "Veyron Tactics Laser Module"
+-- L["uplp_tac_laser_dbal.compactname"] = "Veyron"
+-- L["uplp_tac_laser_dbal.description"] = "Rail-mounted aiming module made by Veyron Tactics that provides a laser sight for use in the dark."
 
 L["uplp_tac_laser_green.printname"] = "Лазерный целеуказатель ApexAim (Зелёный)"
 L["uplp_tac_laser_green.compactname"] = "ApexAim (З)"
@@ -600,6 +624,20 @@ L["uplp_tac_laser_green.description"] = "Навесной модуль целе�
 L["uplp_tac_laser_pistol.printname"] = "Лазерный целеуказатель LuminaFire Armaments"
 L["uplp_tac_laser_pistol.compactname"] = "LuminaF L."
 L["uplp_tac_laser_pistol.description"] = "Компактный навесной лазерный целеуказатель для пистолетов производства LuminaFire Armaments."
+
+-- L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
+-- L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
+-- L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view made by LuminaFire Armaments."
+
+-- L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
+-- L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
+-- L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight made by NightStrike Illumination, intended for smaller firearms."
+
+-- L["uplp_tac_piscomb_dbal.description"] = "Compact rail-mounted hybrid module made by Veyron Tactics.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
+
+-- L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
+-- L["uplp_tac_piscomb_viri.compactname"] = "Helios"
+-- L["uplp_tac_piscomb_viri.description"] = "Compact rail-mounted hybrid module.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 /////////// Ammunition
 -- local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
@@ -676,8 +714,9 @@ L["uplp_weapon_ak_smg_desc"] = "Различные компактные пист
 L["uplp_weapon_ak_762"] = "%s 7.62"
 L["uplp_weapon_ak_545"] = "%s 5.45"
 L["uplp_weapon_ak_556"] = "%s 5.56"
-L["uplp_weapon_ak_9x39"] = "%s 9x39"
+L["uplp_weapon_ak_9x39"] = "%s 9×39"
 L["uplp_weapon_ak_rpk"] = "ТПК"
+L["uplp_weapon_ak_rpkm"] = "ТПКМ"
 
 L["uplp_weapon_ak12_22"] = "АК М22"
 L["uplp_weapon_ak12_16"] = "АК М16"
@@ -833,6 +872,10 @@ L["uplp_ak_grip_agr.printname"] = "Рукоятка ApexCore Systems"
 L["uplp_ak_grip_agr.compactname"] = "ApexCore"
 L["uplp_ak_grip_agr.description"] = "Утяжелённая рукоятка с подставкой под ладонь для АК от ApexCore Systems."
 
+-- L["uplp_ak_grip_rk3.printname"] = "Zenith Pistol Grip"
+-- L["uplp_ak_grip_rk3.compactname"] = "Zenith"
+-- L["uplp_ak_grip_rk3.description"] = "Lightweight pistol grip for AK-style rifles."
+
 L["uplp_ak_grip_12.printname"] = "Рукоятка AK M22"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Стандартная рукоятка, используемая на AK M22."
@@ -840,7 +883,6 @@ L["uplp_ak_grip_12.description"] = "Стандартная рукоятка, и�
 L["uplp_ak_grip_12evo.printname"] = "Рукоятка EVO"
 L["uplp_ak_grip_12evo.compactname"] = "EVO"
 L["uplp_ak_grip_12evo.description"] = "Улучшенная рукоятка и спусковая скоба для AK M23."
-
 
 ////// Handguards
 L["uplp_ak_hg_100.printname"] = "Цевьё M10"
@@ -898,6 +940,10 @@ L["uplp_ak_hg_rpk16.description"] = "Удлинённое цевьё ХПК M16.
 L["uplp_ak_hg_12tac.printname"] = "Тактическое Цевьё Lisyan Model 23"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Очень длинное тактическое цевьё от Lisyan Tactical.\nНе совместимо с <color=255,100,100>230mm AK M22-K Стволом</color>."
+
+-- L["uplp_ak_hg_rpk74.printname"] = "HPKM Handguard"
+-- L["uplp_ak_hg_rpk74.compactname"] = "HPKM"
+-- L["uplp_ak_hg_rpk74.description"] = "Modern polymer handguard used on the modernized HPKM."
 
 ////// Magazines
 /// 7.62×39mm
@@ -963,17 +1009,21 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-зарядный 5.45×39мм (M23)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-зарядный магазин, используемый на АК M23." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-зарядный 5.45×39мм (Бакелит)"
-L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (Б)"
-L["uplp_ak_mag_545_45.description"] = "40-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45-зарядный 5.45×39мм (Бакелит)"
+L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (Б)"
+L["uplp_ak_mag_545_45.description"] = "45-зарядный магазин из композита AG-4S, внешне напоминающего бакелит." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-зарядный четырёхрядный 5.45×39мм"
-L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-зарядный полимерный магазин увеличенной ширины для размещения боеприпасов." .. loaded545 .. "\n\nПожалуйста, не заряжайте более 52 патронов!"
+L["uplp_ak_mag_545_60.printname"] = "60-зарядный четырёхрядный 5.45×39мм"
+L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-зарядный полимерный магазин увеличенной ширины для размещения боеприпасов." .. loaded545
 
 L["uplp_ak_mag_545_drum.printname"] = "85-зарядный барабан 5.45×39мм ХПК M16"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 Б"
 L["uplp_ak_mag_545_drum.description"] = "85-зарядный цилиндрический барабан от ХПК M16." .. loaded545
+
+L["uplp_ak_mag_545_45p.printname"] = "45-зарядный 5.45×39мм (Полимер)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5.45 (П)"
+-- L["uplp_ak_mag_545_45p.description"] = "45-round polymer magazine used by the modernized HPKM." .. loaded545
 
 /// 5.56×45mm NATO
 local loaded556 = loaded .. "Заряжен патронами <color=160,160,255>5.56×45мм</color> используемый AK M10 5.56." .. changeammo.smg1
@@ -1329,6 +1379,13 @@ L["uplp_ar15_hg_xm.printname"] = "Цевьё Commando"
 L["uplp_ar15_hg_xm.compactname"] = "Commando"
 L["uplp_ar15_hg_xm.description"] = "Укороченное цевьё AR-15, используемое на XM177." .. requires14
 
+-- L["uplp_ar15_hg_adar.printname"] = "Civilian-Spec Handguard"
+-- L["uplp_ar15_hg_adar.compactname"] = "Civilian"
+-- L["uplp_ar15_hg_adar.description"] = "Wooden handguard intended for a Russian hunting version of the AR-15." .. requires14
+
+-- L["uplp_ar15_hg_m4ss.printname"] = "Carbine Handguard"
+-- L["uplp_ar15_hg_m4ss.compactname"] = "Carbine"
+-- L["uplp_ar15_hg_m4ss.description"] = "Original handguard used by shortened AR-15 carbines." .. requires14
 
 ////// Magazines
 /// .45 ACP
@@ -1362,9 +1419,9 @@ L["uplp_ar15_mag_drum.printname"] = "90-зарядный двойной бара
 L["uplp_ar15_mag_drum.compactname"] = "90 Барабан"
 L["uplp_ar15_mag_drum.description"] = "90-зарядный С-образный барабанный магазин.\nЗагрузка более 90 патронов не рекомендуется - возможны задержки."
 
-L["uplp_ar15_mag_hk.printname"] = "30-зарядный 5.56×45 мм (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30 (416)"
-L["uplp_ar15_mag_hk.description"] = "30-зарядный магазин от модифицированной AR-15 немецкого производства."
+L["uplp_ar15_mag_hk.printname"] = "30-зарядный 5.56×45 мм (Hoki Armory)"
+L["uplp_ar15_mag_hk.compactname"] = "30 (H.A.)"
+-- L["uplp_ar15_mag_hk.description"] = "30-round magazine with a tactical hexagonal appearance made by Hoki Armory."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-зарядный полимерный 5.56×45 мм"
 L["uplp_ar15_mag_pmag10.compactname"] = "10 Поли"
@@ -1378,9 +1435,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30-зарядный полимерный 
 L["uplp_ar15_mag_pmag30.compactname"] = "30 Поли"
 L["uplp_ar15_mag_pmag30.description"] = "30-зарядный полимерный магазин производства SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-зарядный полимерный барабан 5.56×45 мм"
-L["uplp_ar15_mag_pmag60.compactname"] = "52 Барабан"
-L["uplp_ar15_mag_pmag60.description"] = "52-зарядный барабанный магазин из полимера производства SynPoly.\nЗагрузка более 52 патронов не рекомендуется - возможны задержки."
+L["uplp_ar15_mag_pmag60.printname"] = "60-зарядный полимерный барабан 5.56×45 мм"
+L["uplp_ar15_mag_pmag60.compactname"] = "60 Барабан"
+L["uplp_ar15_mag_pmag60.description"] = "60-зарядный барабанный магазин из полимера производства SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-зарядный алюминиевый 5.56×45 мм"
 L["uplp_ar15_mag_stanag20.compactname"] = "20 Алюм"
@@ -1394,9 +1451,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-зарядный алюминиев�
 L["uplp_ar15_mag_stanag40.compactname"] = "40 Алюм"
 L["uplp_ar15_mag_stanag40.description"] = "40-зарядный алюминиевый магазин."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-зарядный четырёхрядный 5.56×45 мм"
-L["uplp_ar15_mag_stanag60.compactname"] = "52 Четыр."
-L["uplp_ar15_mag_stanag60.description"] = "52-зарядный алюминиевый магазин с горизонтальным расположением патронов.\nЗагрузка более 52 патронов не рекомендуется - возможны задержки."
+L["uplp_ar15_mag_stanag60.printname"] = "60-зарядный четырёхрядный 5.56×45 мм"
+L["uplp_ar15_mag_stanag60.compactname"] = "60 Четыр."
+L["uplp_ar15_mag_stanag60.description"] = "60-зарядный алюминиевый магазин с горизонтальным расположением патронов."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "Пистолетная рукоять 416"
@@ -2098,9 +2155,9 @@ L["uplp_scar_mag_pmag30.printname"] = "Магазин на 30 патронов 5
 L["uplp_scar_mag_pmag30.compactname"] = "30R Поли"
 L["uplp_scar_mag_pmag30.description"] = "30-зарядный магазин из полимера, изготовленный SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "Полимерный барабанный магазин на 52 патрона 5.56×45мм"
-L["uplp_scar_mag_pmag60.compactname"] = "52R Барабан"
-L["uplp_scar_mag_pmag60.description"] = "52-зарядный барабанный магазин из полимера, изготовленный SynPoly. Загрузка более чем 52 патронов не рекомендуется, так как это может вызвать заклинивание." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "Полимерный барабанный магазин на 60 патрона 5.56×45мм"
+L["uplp_scar_mag_pmag60.compactname"] = "60R Барабан"
+L["uplp_scar_mag_pmag60.description"] = "60-зарядный барабанный магазин из полимера, изготовленный SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "Магазин на 30 патронов 5.56×45мм (Алюминий)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Алюм"
@@ -2110,9 +2167,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "Магазин на 30 патрон
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Пуст."
 L["uplp_scar_mag_stanag30_tan.description"] = "30-зарядный магазин из алюминия, окрашенный в пустынный." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "Четырёхрядный магазин на 52 патрона 5.56×45мм"
-L["uplp_scar_mag_stanag60.compactname"] = "52R Четыр."
-L["uplp_scar_mag_stanag60.description"] = "52-зарядный алюминиевый магазин, расширенный горизонтально для большего количества патронов. Загрузка более чем 52 патронов не рекомендуется, так как это может вызвать заклинивание." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "Четырёхрядный магазин на 60 патрона 5.56×45мм"
+L["uplp_scar_mag_stanag60.compactname"] = "60R Четыр."
+L["uplp_scar_mag_stanag60.description"] = "60-зарядный алюминиевый магазин, расширенный горизонтально для большего количества патронов." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "Рукоятка XAR (Чёрная)"
@@ -2360,9 +2417,9 @@ L["uplp_aug_mag_556_40.printname"] = "40-зарядный 5.56×45мм"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "40-зарядный расширенный магазин для AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-зарядный барабан 5.56×45мм"
-L["uplp_aug_mag_556_52.compactname"] = "52Р 5.56"
-L["uplp_aug_mag_556_52.description"] = "52-зарядный барабанный магазин для AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "60-зарядный барабан 5.56×45мм"
+L["uplp_aug_mag_556_52.compactname"] = "60Р 5.56"
+L["uplp_aug_mag_556_52.description"] = "60-зарядный барабанный магазин для AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-зарядный 9×19мм"
 L["uplp_aug_mag_919_25.compactname"] = "25Р 9×19мм"

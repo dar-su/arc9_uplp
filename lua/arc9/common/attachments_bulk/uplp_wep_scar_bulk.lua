@@ -729,6 +729,7 @@ ATT.SortOrder = 30
 ATT.Icon = Material(iconfolderar15 .. "hk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
+
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
@@ -747,7 +748,7 @@ ATT.ClipSizeOverride = 30
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hk")
 
 ---------- uplp_scar_mag_pmag20
-
+--[[
 ATT = {}
 
 ATT.PrintName = "20-Round 5.56x45mm (SPMAG)"
@@ -758,12 +759,14 @@ ATT.SortOrder = 20
 ATT.Icon = Material(iconfolderar15 .. "p20.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
+
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_556.mdl"
 ATT.ShellSounds = ARC9.ShellSoundsTable
 
+ATT.Category = "uplp_scar_mag" -- someone forgot to include category lol, there's no anims anyway
 ATT.ActivateElements = {"uplp_ar15_mag"}
 
 -- Positives
@@ -771,13 +774,17 @@ ATT.ClipSizeOverride = 20
 
 table.Merge(ATT, stats556)
 
+-- ATT.Hook_TranslateAnimation = function(wep, anim)
+--     return anim .. "_20"
+-- end
+
 ATT.CustomPros = {
     [ARC9:GetPhrase("autostat.reloadtime")] = "-5%",
 }
 
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag20")
-
+]]--
 ---------- uplp_scar_mag_pmag30
 
 ATT = {}
@@ -790,6 +797,7 @@ ATT.SortOrder = 30
 ATT.Icon = Material(iconfolderar15 .. "p30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
+
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
@@ -819,6 +827,7 @@ ATT.SortOrder = 30
 ATT.Icon = Material(iconfolderar15 .. "30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
+
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag30.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
@@ -864,7 +873,7 @@ table.Merge(ATT, stats556)
 
 ATT.ClipSizeOverride = 30
 
-ATT.ModelOffset = Vector(1.4, 0, -3.5)
+-- ATT.ModelOffset = Vector(1.4, 0, -3.5)
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30_tan")
 
@@ -872,14 +881,16 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_stanag30_tan")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.56x45mm Drum"
-ATT.CompactName = "52R 5.56 D"
+ATT.PrintName = "60-Round 5.56x45mm Drum"
+ATT.CompactName = "60R 5.56 D"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 60
 
 ATT.Icon = Material(iconfolderar15 .. "p60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+
+ATT.ModelOffset = Vector(0, 0.03, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 ATT.DropMagazinePos = Vector(0, 2.1, -2.0)
 
@@ -895,7 +906,7 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012
@@ -923,8 +934,8 @@ ARC9.LoadAttachment(ATT, "uplp_scar_mag_pmag60")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.56x45mm Quadstacked"
-ATT.CompactName = "52R 5.56 (Q)"
+ATT.PrintName = "60-Round 5.56x45mm Quadstacked"
+ATT.CompactName = "60R 5.56 (Q)"
 ATT.Description = ATT.PrintName
 ATT.SortOrder = 60
 
@@ -946,7 +957,7 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012

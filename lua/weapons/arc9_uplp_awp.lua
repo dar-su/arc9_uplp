@@ -151,24 +151,24 @@ SWEP.RecoilMultBipod = 0.4
 
 
 -- Visual Recoil
-SWEP.VisualRecoil = 1
+SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
 SWEP.VisualRecoilCenter = Vector(2, 11, 2)
-SWEP.VisualRecoilUp = 0.1 -- Vertical tilt
+SWEP.VisualRecoilUp = -0.15 -- Vertical tilt
 SWEP.VisualRecoilSide = -0.015 -- Horizontal tilt
 SWEP.VisualRecoilRoll = 30 -- Roll tilt
-SWEP.VisualRecoilPunch = 32 -- How far back visual recoil moves the gun
-SWEP.VisualRecoilDampingConst = 10
+SWEP.VisualRecoilPunch = 1 -- How far back visual recoil moves the gun
+SWEP.VisualRecoilDampingConst = 80
 SWEP.VisualRecoilSpringMagnitude = 0.44
 SWEP.VisualRecoilPositionBumpUp = .25
 
 SWEP.VisualRecoilMultHipFire = 1
-SWEP.VisualRecoilUpHipFire = 2
+SWEP.VisualRecoilUpHipFire = 1.5
 SWEP.VisualRecoilSideHipFire = -0.1
 SWEP.VisualRecoilRollHipFire = 20
-SWEP.VisualRecoilPunchHipFire = 7
-SWEP.VisualRecoilDampingConstHipFire = 15
-SWEP.VisualRecoilPositionBumpUpHipFire = -.5
+SWEP.VisualRecoilPunchHipFire = 2
+SWEP.VisualRecoilDampingConstHipFire = 45
+SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
@@ -197,7 +197,7 @@ SWEP.SwayMultSights = 1
 SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes
-SWEP.RPM = 120 -- How fast gun shoot
+SWEP.RPM = 300 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -223,19 +223,19 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.35, -4, 1.1),
+     Pos = Vector(-2.35, -4, 0.98),
      Ang = Angle(0, 0, -1),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
 local is_tall = {
-    Pos = Vector(-2.32, -4, 0.23),
+    Pos = Vector(-2.32, -4, 0.28),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
 }
 local is_short = {
-    Pos = Vector(-2.32, -4, 0.38),
+    Pos = Vector(-2.32, -4, 0.42),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
@@ -381,8 +381,8 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = "cycle",
-        MinProgress = 0.75,
-        Mult = 1.15,
+        MinProgress = 0.66,
+        Mult = 1,
         EventTable = {
             {s = pathUT .. "boltup.ogg",          t = 0},
             {s = pathRZ3 .. "cycle1.ogg",        t = 0.18},
@@ -416,13 +416,11 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
-    },
-    ["holster"] = {
-        Source = "holster",
-        MinProgress = 0.5 / 0.8,
-		Mult = 0.8,
-        EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
+        IKTimeLine = {
+            { t = 0, lhik = 0 },
+            { t = 0.2, lhik = 0 },
+            { t = 0.3, lhik = 1 },
+            { t = 1, lhik = 1 },
         },
     },
     ["draw_empty"] = {
@@ -434,9 +432,17 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
     },
+    ["holster"] = {
+        Source = "holster",
+        MinProgress = 0.75,
+		Mult = 0.8,
+        EventTable = {
+            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
+        },
+    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.5,
+        MinProgress = 0.75,
 		Mult = 0.8,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
@@ -474,8 +480,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.85, lhik = 1 },
+            { t = 0.6, lhik = 0 },
+            { t = 0.7, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -509,8 +515,8 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 1 },
             { t = 0.3, lhik = 0 },
-            { t = 0.625, lhik = 0 },
-            { t = 0.725, lhik = 1 },
+            { t = 0.58, lhik = 0 },
+            { t = 0.68, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },

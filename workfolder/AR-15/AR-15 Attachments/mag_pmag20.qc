@@ -4,13 +4,13 @@ $cdmaterials "models/weapons/arc9/uplp"
 
 $bodygroup "body"
 {
-	studio "mag_pmag20.smd"
+	studio "mag_pmag20 new.smd"
 }
 
 $sequence "idle" {
-	"mag_pmag20.smd"
+	"mag_pmag20 new.smd"
 }
-$collisionmodel "mag_pmag20.smd"
+$collisionmodel "mag_pmag20 new.smd"
 
     
 

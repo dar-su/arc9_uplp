@@ -16,7 +16,7 @@ $bodygroup "body"
 	studio "rs_mbusf.smd" // 9
 	studio "rs_sw.smd" // a 10
 	studio "rs_swf.smd" // b 11
-	studio "rs_carry.smd" // c 12
+	studio "rs_carry new.smd" // c 12
 }
 
 $sequence "idle" {

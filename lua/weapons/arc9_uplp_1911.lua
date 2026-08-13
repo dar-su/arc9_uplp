@@ -279,6 +279,7 @@ SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 local pathRZ = ")uplp_rz/1911/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/usp/"
+local pathUTold = ")uplp_urban_temp/1911/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
@@ -420,7 +421,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathRZ .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = pathUTold .. "draw.ogg", t = 0 / 60, v = 0.8 },
             { s = pathRZ .. "presscheck1.ogg", t = 11 / 60, v = 0.8 },
             { s = pathRZ .. "presscheck2.ogg", t = 36 / 60 },
             {s = pathUTC .. "cloth_4.ogg", t = 34 / 60},
@@ -439,7 +440,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = pathUTold .. "draw.ogg", t = 0 / 60, v = 0.8 },
             { s = pathUT .. "slidepull.ogg", t = 8 / 60, v = 0.8 },
             { s = pathUT .. "slidedrop.ogg", t = 18 / 60, v = 0.8 },
             {s = pathUTC .. "cloth_4.ogg", t = 22 / 60},
@@ -458,7 +459,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = pathUTold .. "draw.ogg", t = 0 / 60, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -473,7 +474,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = pathUTold .. "draw.ogg", t = 0 / 60, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

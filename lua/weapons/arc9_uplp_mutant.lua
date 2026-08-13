@@ -1010,7 +1010,8 @@ SWEP.AttachmentElements = {
     --     [7] = { Pos = Vector(0.015, 0.95, 26.0 + 0.16) },
     -- }},
 
-    ["uplp_ar15_pgrip"] = { Bodygroups = { { 8, 1 } } },
+    ["uplp_ar15_pgrip"] = { Bodygroups = { { 8, 2 } } },
+    ["uplp_sr25_pgrip_wood"] = { Bodygroups = { { 8, 1 } } },
     ["uplp_ar15_chandle_tac_ar10"] = { Bodygroups = { { 1, 1 } } },
     ["uplp_ar15_chandle_sr25"] = { Bodygroups = { { 1, 2 } } },
 

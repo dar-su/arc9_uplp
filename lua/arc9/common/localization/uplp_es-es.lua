@@ -415,6 +415,22 @@ L["uplp_optic_dedal.description"] = "Visor con 12 aumentos del Instituto de Arma
 -- L["uplp_optic_rsa.compactname"] = "Type-7"
 -- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
 
+-- L["uplp_optic_falco.printname"] = "NPI Red Dot"
+-- L["uplp_optic_falco.compactname"] = "NPI"
+-- L["uplp_optic_falco.description"] = "Modern top-tier reflex optic made by the newly formed Northstar Precision Institute (NPI)." .. desc_cqcoptic
+
+-- L["uplp_optic_uh1.printname"] = "SightLine™ Gen-II Holographic Sight"
+-- L["uplp_optic_uh1.compactname"] = "SL Gen-II"
+-- L["uplp_optic_uh1.description"] = "Next generation holographic sight made by SightLine™." .. desc_cqcoptic
+
+-- L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
+-- L["uplp_optic_sro_direct.compactname"] = "VOC-1"
+-- L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+-- L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
+-- L["uplp_optic_justice_direct.compactname"] = "Redmark"
+-- L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Punto Rojo Inclinado"
 L["uplp_backup_optic_rmr.compactname"] = "PRI Inclinado"
@@ -476,6 +492,14 @@ L["uplp_grip_rk45.description"] = "Empuñadura inclinada 45 grados para la mayor
 -- L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\" Foregrip"
 -- L["uplp_grip_cqr.compactname"] = "Ares"
 -- L["uplp_grip_cqr.description"] = "Custom-made, heavy-weight foregrip made by PAWCO's \"Ares\" division."
+
+-- L["uplp_grip_afg.printname"] = "Angled Grip"
+-- L["uplp_grip_afg.compactname"] = "Angled"
+-- L["uplp_grip_afg.description"] = "Rail-mounted angle foregrip."
+
+-- L["uplp_grip_cqr_mini.printname"] = "PAWCO \"Ares\" Mini-Grip"
+-- L["uplp_grip_cqr_mini.compactname"] = "Ares (M)"
+-- L["uplp_grip_cqr_mini.description"] = "Miniature variant of PAWCO's \"Ares\" division's custom-made foregrip."
 
 /////////// Bipod
 L["uplp_bipod.printname"] = "Bípode SynPoly WildCat X"
@@ -584,9 +608,9 @@ L["uplp_tac_laser_blue.printname"] = "Mira Láser ApexAim (Azul)"
 L["uplp_tac_laser_blue.compactname"] = "ApexAim (A)"
 L["uplp_tac_laser_blue.description"] = "Módulo de puntería montado en raíl fabricado por ApexAim que proporciona una mira láser azul para su uso en la oscuridad."
 
-L["uplp_tac_laser_dbal.printname"] = "Mira Láser (DBAL)"
-L["uplp_tac_laser_dbal.compactname"] = "Láser (DBAL)"
-L["uplp_tac_laser_dbal.description"] = "Módulo de puntería montado en raíl que proporciona una mira láser para su uso en la oscuridad."
+L["uplp_tac_laser_dbal.printname"] = "Módulo Láser Veyron Tactics"
+L["uplp_tac_laser_dbal.compactname"] = "Veyron"
+L["uplp_tac_laser_dbal.description"] = "Módulo de puntería montado en raíl fabricado por Veyron Tactics que proporciona una mira láser para su uso en la oscuridad."
 
 L["uplp_tac_laser_green.printname"] = "Mira Láser ApexAim (Verde)"
 L["uplp_tac_laser_green.compactname"] = "ApexAim (V)"
@@ -595,6 +619,20 @@ L["uplp_tac_laser_green.description"] = "Módulo de puntería montado en raíl f
 L["uplp_tac_laser_pistol.printname"] = "Mira Láser LuminaFire Armaments"
 L["uplp_tac_laser_pistol.compactname"] = "L. LuminaFire"
 L["uplp_tac_laser_pistol.description"] = "Módulo de puntería compacto montado en raíl fabricado por LuminaFire Armaments y diseñado para pistolas que proporciona una mira láser para su uso en la oscuridad."
+
+-- L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
+-- L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
+-- L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view made by LuminaFire Armaments."
+
+-- L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
+-- L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
+-- L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight made by NightStrike Illumination, intended for smaller firearms."
+
+-- L["uplp_tac_piscomb_dbal.description"] = "Compact rail-mounted hybrid module made by Veyron Tactics.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
+
+-- L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
+-- L["uplp_tac_piscomb_viri.compactname"] = "Helios"
+-- L["uplp_tac_piscomb_viri.description"] = "Compact rail-mounted hybrid module.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 /////////// Ammunition
 -- local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
@@ -673,6 +711,7 @@ L["uplp_weapon_ak_545"] = "%s 5.45"
 L["uplp_weapon_ak_556"] = "%s 5.56"
 L["uplp_weapon_ak_9x39"] = "%s 9×39"
 L["uplp_weapon_ak_rpk"] = "HPK"
+L["uplp_weapon_ak_rpkm"] = "HPKM"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
 L["uplp_weapon_ak12_16"] = "AK M16"
@@ -827,6 +866,10 @@ L["uplp_ak_grip_agr.printname"] = "Empuñadura de Pistola ApexCore Systems"
 L["uplp_ak_grip_agr.compactname"] = "ApexCore"
 L["uplp_ak_grip_agr.description"] = "Empuñadura de pistola pesada con estante de palma incorporado para rifles basados en AK fabricados por ApexCore Systems."
 
+-- L["uplp_ak_grip_rk3.printname"] = "Zenith Pistol Grip"
+-- L["uplp_ak_grip_rk3.compactname"] = "Zenith"
+-- L["uplp_ak_grip_rk3.description"] = "Lightweight pistol grip for AK-style rifles."
+
 L["uplp_ak_grip_12.printname"] = "Empuñadura de Pistola AK M22"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Empuñadura de pistola estándar utilizada en el AK M22."
@@ -891,6 +934,10 @@ L["uplp_ak_hg_rpk16.description"] = "Guardamanos más largo utilizado en el HPK 
 L["uplp_ak_hg_12tac.printname"] = "Guardamanos Lisyan Tactical Modelo 23"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Guardamanos táctico muy largo fabricado por Lisyan Tactical.\nNo compatible con el <color=255,100,100>Cañón AK M22-K de 230mm</color>."
+
+-- L["uplp_ak_hg_rpk74.printname"] = "HPKM Handguard"
+-- L["uplp_ak_hg_rpk74.compactname"] = "HPKM"
+-- L["uplp_ak_hg_rpk74.description"] = "Modern polymer handguard used on the modernized HPKM."
 
 ////// Magazines
 /// 7.62x39mm
@@ -960,17 +1007,21 @@ L["uplp_ak_mag_545_30_12.printname"] = "30 Rondas 5.45x39mm (Estilo M23)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30R 5.45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "Cargador de 30 balas utilizado en el fusil AK M23." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40 Rondas 5.45x39mm (Baquelita)"
-L["uplp_ak_mag_545_45.compactname"] = "40R 5.45 (B)"
-L["uplp_ak_mag_545_45.description"] = "Cargador de 40 balas de compuesto de moldeo AG-4S, pero se asemeja a la baquelita." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45 Rondas 5.45x39mm (Baquelita)"
+L["uplp_ak_mag_545_45.compactname"] = "45R 5.45 (B)"
+L["uplp_ak_mag_545_45.description"] = "Cargador de 45 balas de compuesto de moldeo AG-4S, pero se asemeja a la baquelita." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52 Rondas 5.45x39mm Quadstacked"
-L["uplp_ak_mag_545_60.compactname"] = "52R 5.45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "Cargador de polímero de 52 balas expandido horizontalmente para alojar más munición." .. loaded545 .. "\n\nChico grueso. ¡Por favor, no cargue más de 52 cartuchos!"
+L["uplp_ak_mag_545_60.printname"] = "60 Rondas 5.45x39mm Quadstacked"
+L["uplp_ak_mag_545_60.compactname"] = "60R 5.45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "Cargador de polímero de 60 balas expandido horizontalmente para alojar más munición." .. loaded545
 
 L["uplp_ak_mag_545_drum.printname"] = "Tambor HPK M16 de 5,45x39 mm de 85 Rondas"
 L["uplp_ak_mag_545_drum.compactname"] = "85R 5.45 T"
 L["uplp_ak_mag_545_drum.description"] = "Cargador de tambor cilíndrico de 85 balas del HPK M16." .. loaded545
+
+L["uplp_ak_mag_545_45p.printname"] = "45 Rondas 5.45x39mm (Polímero)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5.45 (P)"
+-- L["uplp_ak_mag_545_45p.description"] = "45-round polymer magazine used by the modernized HPKM." .. loaded545
 
 /// 5.56×45mm  NATO
 local loaded556 = loaded .. "Cargado con <color=160,160,255>5.56×45mm </color> utilizado por el AK M10 5.56." .. changeammo.smg1
@@ -1327,6 +1378,14 @@ L["uplp_ar15_hg_a1.description"] = "Guardamanos clásico AR-15 utilizado en los 
 -- L["uplp_ar15_hg_xm.compactname"] = "Commando"
 -- L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
 
+-- L["uplp_ar15_hg_adar.printname"] = "Civilian-Spec Handguard"
+-- L["uplp_ar15_hg_adar.compactname"] = "Civilian"
+-- L["uplp_ar15_hg_adar.description"] = "Wooden handguard intended for a Russian hunting version of the AR-15." .. requires14
+
+-- L["uplp_ar15_hg_m4ss.printname"] = "Carbine Handguard"
+-- L["uplp_ar15_hg_m4ss.compactname"] = "Carbine"
+-- L["uplp_ar15_hg_m4ss.description"] = "Original handguard used by shortened AR-15 carbines." .. requires14
+
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20 Rondas .45 Auto"
@@ -1359,9 +1418,9 @@ L["uplp_ar15_mag_drum.printname"] = "Tambor Dual de 90 Rondas 5.56×45mm"
 L["uplp_ar15_mag_drum.compactname"] = "90R Tambor"
 L["uplp_ar15_mag_drum.description"] = "Cargador de tambor en forma de C de 90 balas."
 
-L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
-L["uplp_ar15_mag_hk.description"] = "Cargador de 30 balas de un AR-15 modificado de origen alemán."
+L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm (Hoki Armory)"
+L["uplp_ar15_mag_hk.compactname"] = "30R (H.A.)"
+-- L["uplp_ar15_mag_hk.description"] = "30-round magazine with a tactical hexagonal appearance made by Hoki Armory."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Polí"
@@ -1375,9 +1434,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_ar15_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 52 Rondas 5.56×45mm  "
-L["uplp_ar15_mag_pmag60.compactname"] = "52R Tambor"
-L["uplp_ar15_mag_pmag60.description"] = "Cargador de tambor de 52 cartuchos fabricado en polímero por SynPoly.\nNo se recomienda cargar más de 52 balas, ya que podrían producirse atascos."
+L["uplp_ar15_mag_pmag60.printname"] = "Tambor de Polímero de 60 Rondas 5.56×45mm  "
+L["uplp_ar15_mag_pmag60.compactname"] = "60R Tambor"
+L["uplp_ar15_mag_pmag60.description"] = "Cargador de tambor de 60 cartuchos fabricado en polímero por SynPoly.\nNo se recomienda cargar más de 60 balas, ya que podrían producirse atascos."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20R Alum"
@@ -1391,9 +1450,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40 Rondas 5.56×45mm (Aluminio)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40R Alum"
 L["uplp_ar15_mag_stanag40.description"] = "Cargador de 40 balas fabricado en aluminio."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52 Rondas 5.56×45mm Quadstacked"
-L["uplp_ar15_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_ar15_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para albergar más munición.\nNo se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos."
+L["uplp_ar15_mag_stanag60.printname"] = "60 Rondas 5.56×45mm Quadstacked"
+L["uplp_ar15_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_ar15_mag_stanag60.description"] = "Cargador de aluminio de 60 balas expandido horizontalmente para albergar más munición."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "Empuñadura de Pistola 416"
@@ -2079,7 +2138,7 @@ L["uplp_scar_mag_20_68.description"] = "Cargador de 10 balas con recámara de 6.
 
 L["uplp_scar_mag_drum.printname"] = "Tambor doble 5.56×45mm de 90 Rondas"
 L["uplp_scar_mag_drum.compactname"] = "90R 5.56"
-L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 52 balas, ya que podrían producirse atascos.\nNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
+L["uplp_scar_mag_drum.description"] = "Cargador de tambor en forma de C de 90 rondas. No se recomienda cargar más de 60 balas, ya que podrían producirse atascos.\nNo se puede poner <color=255,100,100>ya sea Receptor Superior PDW</color>." .. changeammo.smg1
 
 L["uplp_scar_mag_hk.printname"] = "30 Rondas 5.56×45mm (416)"
 L["uplp_scar_mag_hk.compactname"] = "30R (416)"
@@ -2093,9 +2152,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polímero)"
 L["uplp_scar_mag_pmag30.compactname"] = "30R Polí"
 L["uplp_scar_mag_pmag30.description"] = "Cargador de 30 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm de 52 Rondas"
-L["uplp_scar_mag_pmag60.compactname"] = "52R Tambor"
-L["uplp_scar_mag_pmag60.description"] = "Cargador de tambor de 52 balas fabricado en polímero por SynPoly. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "Tambor de Polímero 5.56×45mm de 60 Rondas"
+L["uplp_scar_mag_pmag60.compactname"] = "60R Tambor"
+L["uplp_scar_mag_pmag60.description"] = "Cargador de tambor de 60 balas fabricado en polímero por SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30 Rondas 5.56×45mm (Aluminio)"
 L["uplp_scar_mag_stanag30.compactname"] = "30R Alum"
@@ -2105,9 +2164,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30 Rondas 5.56×45mm (Bronceado)"
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30R Bronceado"
 L["uplp_scar_mag_stanag30_tan.description"] = "Cargador de 30 balas de aluminio pintado de color tostado." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52 Rondas 5.56×45mm Quadstacked"
-L["uplp_scar_mag_stanag60.compactname"] = "52R Quad"
-L["uplp_scar_mag_stanag60.description"] = "Cargador de aluminio de 52 balas expandido horizontalmente para contener más munición. No se recomienda cargar más de 52 cartuchos, ya que podrían producirse atascos." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "60 Rondas 5.56×45mm Quadstacked"
+L["uplp_scar_mag_stanag60.compactname"] = "60R Quad"
+L["uplp_scar_mag_stanag60.description"] = "Cargador de aluminio de 60 balas expandido horizontalmente para contener más munición." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "Empuñadura de Pistola XAR (Negro)"
@@ -2347,9 +2406,9 @@ L["uplp_aug_mag_556_40.printname"] = "40 Rondas 5.56×45mm"
 L["uplp_aug_mag_556_40.compactname"] = "40R 5.56"
 L["uplp_aug_mag_556_40.description"] = "Cargador extendido de 40 balas para la AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm de 52 Rondas"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5.56"
-L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 52 balas para la AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "Tambor 5.56×45mm de 60 Rondas"
+L["uplp_aug_mag_556_52.compactname"] = "60R 5.56"
+L["uplp_aug_mag_556_52.description"] = "Cargador de tambor de 60 balas para la AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25 Rondas 9×19mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9×19mm"

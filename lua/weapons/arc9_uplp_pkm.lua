@@ -51,7 +51,7 @@ SWEP.TracerSize = 1
 
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_762.mdl"
 SWEP.ShellScale = 1.3
-SWEP.ShellPitch = 0
+SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.75
 SWEP.ShellSounds = ARC9.Shell308SoundsTable
 
@@ -105,7 +105,7 @@ SWEP.PhysBulletGravity = 1.5
 SWEP.PhysBulletDrag = 1.5
 
 -- Magazine Info
-SWEP.Ammo = "smg1" -- What ammo type this gun uses.
+SWEP.Ammo = "ar2" -- What ammo type this gun uses.
 
 SWEP.ChamberSize = 1
 SWEP.ClipSize = 100

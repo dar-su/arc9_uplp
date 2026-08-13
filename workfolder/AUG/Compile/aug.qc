@@ -42,10 +42,10 @@ $bodygroup "grip" { // 6
 
 $bodygroup "mag" { // 7
 	studio "556 30.smd"
-	studio "556 30 pmag.smd"
+	studio "556 30 pmag new.smd"
 	studio "556 40.smd"
-	studio "556 60.smd"
-	studio "300blk 10.smd"
+	studio "556 60 new.smd"
+	studio "300blk 10 new.smd"
 	studio "919 25.smd"
 	studio "919 40.smd"
 	blank

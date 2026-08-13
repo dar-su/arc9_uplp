@@ -415,6 +415,22 @@ L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12x magnifiering
 -- L["uplp_optic_rsa.compactname"] = "Type-7"
 -- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
 
+-- L["uplp_optic_falco.printname"] = "NPI Red Dot"
+-- L["uplp_optic_falco.compactname"] = "NPI"
+-- L["uplp_optic_falco.description"] = "Modern top-tier reflex optic made by the newly formed Northstar Precision Institute (NPI)." .. desc_cqcoptic
+
+-- L["uplp_optic_uh1.printname"] = "SightLine™ Gen-II Holographic Sight"
+-- L["uplp_optic_uh1.compactname"] = "SL Gen-II"
+-- L["uplp_optic_uh1.description"] = "Next generation holographic sight made by SightLine™." .. desc_cqcoptic
+
+-- L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
+-- L["uplp_optic_sro_direct.compactname"] = "VOC-1"
+-- L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+-- L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
+-- L["uplp_optic_justice_direct.compactname"] = "Redmark"
+-- L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
+
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Vinklat Rödpunktsikte"
 L["uplp_backup_optic_rmr.compactname"] = "VRPS"
@@ -476,6 +492,14 @@ L["uplp_grip_rk45.description"] = "Vinklat framgrepp lutat 45 grader gjort för 
 L["uplp_grip_cqr.printname"] = "PAWCO \"Ares\"-Framgrepp"
 L["uplp_grip_cqr.compactname"] = "Ares"
 L["uplp_grip_cqr.description"] = "Anpassat, tungt framgrepp gjort av PAWCOs \"Ares\"-avdelning."
+
+-- L["uplp_grip_afg.printname"] = "Angled Grip"
+-- L["uplp_grip_afg.compactname"] = "Angled"
+-- L["uplp_grip_afg.description"] = "Rail-mounted angle foregrip."
+
+-- L["uplp_grip_cqr_mini.printname"] = "PAWCO \"Ares\" Mini-Grip"
+-- L["uplp_grip_cqr_mini.compactname"] = "Ares (M)"
+-- L["uplp_grip_cqr_mini.description"] = "Miniature variant of PAWCO's \"Ares\" division's custom-made foregrip."
 
 /////////// Bipod
 L["uplp_bipod.printname"] = "SynPoly WildCat X Benstöd"
@@ -584,9 +608,9 @@ L["uplp_tac_laser_blue.printname"] = "ApexAim Lasersikte (Blå)"
 L["uplp_tac_laser_blue.compactname"] = "ApexAim (B)"
 L["uplp_tac_laser_blue.description"] = "Skenamonterad siktemodul gjord av ApexAim som erbjuder ett blått lasersikte för användning i mörker."
 
-L["uplp_tac_laser_dbal.printname"] = "Lasersikte (DBAL)"
-L["uplp_tac_laser_dbal.compactname"] = "Laser (DBAL)"
-L["uplp_tac_laser_dbal.description"] = "Skenamonterad siktemodul som erbjuder ett lasersikte för användning i mörker."
+L["uplp_tac_laser_dbal.printname"] = "Veyron Tactics Lasermodul"
+L["uplp_tac_laser_dbal.compactname"] = "Veyron"
+L["uplp_tac_laser_dbal.description"] = "Skenamonterad siktemodul gjord av Veyron Tactics som erbjuder ett lasersikte för användning i mörker."
 	
 L["uplp_tac_laser_green.printname"] = "ApexAim Lasersikte (Grön)"
 L["uplp_tac_laser_green.compactname"] = "ApexAim (G)"
@@ -595,6 +619,20 @@ L["uplp_tac_laser_green.description"] = "Skenamonterad siktemodul gjord av ApexA
 L["uplp_tac_laser_pistol.printname"] = "LuminaFire Armaments Lasersikte"
 L["uplp_tac_laser_pistol.compactname"] = "LuminaFire L."
 L["uplp_tac_laser_pistol.description"] = "Kompakt skenamonterad siktemodul gjord av LuminaFire Armaments designad för sidovapen som erbjuder ett lasersikte för användning i mörker."
+
+-- L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
+-- L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
+-- L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view made by LuminaFire Armaments."
+
+-- L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
+-- L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
+-- L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight made by NightStrike Illumination, intended for smaller firearms."
+
+-- L["uplp_tac_piscomb_dbal.description"] = "Compact rail-mounted hybrid module made by Veyron Tactics.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
+
+-- L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
+-- L["uplp_tac_piscomb_viri.compactname"] = "Helios"
+-- L["uplp_tac_piscomb_viri.description"] = "Compact rail-mounted hybrid module.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 /////////// Ammunition
 local shotgun_lp = "\n\nSpecialladdning orsakar otrolig spänning på vapnet och kan orsaka destruktiva konsekvenser efter utökad användning."
@@ -673,6 +711,7 @@ L["uplp_weapon_ak_545"] = "%s 5,45"
 L["uplp_weapon_ak_556"] = "%s 5,56"
 L["uplp_weapon_ak_9x39"] = "%s 9 × 39"
 L["uplp_weapon_ak_rpk"] = "HPK"
+L["uplp_weapon_ak_rpkm"] = "HPKM"
 
 L["uplp_weapon_ak12_22"] = "AK M22"
 L["uplp_weapon_ak12_16"] = "AK M16"
@@ -827,6 +866,10 @@ L["uplp_ak_grip_agr.printname"] = "ApexCore Systems-Pistolgrepp"
 L["uplp_ak_grip_agr.compactname"] = "ApexCore"
 L["uplp_ak_grip_agr.description"] = "Tungt pistolgrepp med inbyggt handledsstöd till AK-baserade gevär gjort av ApexCore Systems."
 
+L["uplp_ak_grip_rk3.printname"] = "Zenith Pistolgrepp"
+L["uplp_ak_grip_rk3.compactname"] = "Zenith"
+L["uplp_ak_grip_rk3.description"] = "Lätt pistolgrepp till AK-baserade gevär."
+
 L["uplp_ak_grip_12.printname"] = "AK M22 Pistolgrepp"
 L["uplp_ak_grip_12.compactname"] = "AK M22"
 L["uplp_ak_grip_12.description"] = "Standard pistolgrepp som används på AK M22:an."
@@ -891,6 +934,10 @@ L["uplp_ak_hg_rpk16.description"] = "Längre handskydd som används på HPK M16.
 L["uplp_ak_hg_12tac.printname"] = "Lisyan Tactical Modell 23 Handskydd"
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Väldigt långt och taktiskt handskydd gjort av Lisyan Tactical.\nEj kompatibel med <color=255,100,100>230 mm AK M22-K Pipan</color>."
+
+L["uplp_ak_hg_rpk74.printname"] = "HPKM Handskydd"
+L["uplp_ak_hg_rpk74.compactname"] = "HPKM"
+L["uplp_ak_hg_rpk74.description"] = "Modernt handskydd av polymer som används på den moderna HPKM."
 
 ////// Magazines
 /// 7.62x39 mm
@@ -960,17 +1007,21 @@ L["uplp_ak_mag_545_30_12.printname"] = "30-Patroner 5,45 × 39 mm (M23-Style)"
 L["uplp_ak_mag_545_30_12.compactname"] = "30P 5,45 (M23)"
 L["uplp_ak_mag_545_30_12.description"] = "30-patronersmagasin som används på AK M23-geväret." .. loaded545
 
-L["uplp_ak_mag_545_45.printname"] = "40-Patroner 5,45 × 39 mm (Bakelite)"
-L["uplp_ak_mag_545_45.compactname"] = "40P 5,45 (B)"
-L["uplp_ak_mag_545_45.description"] = "40-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
+L["uplp_ak_mag_545_45.printname"] = "45-Patroner 5,45 × 39 mm (Bakelite)"
+L["uplp_ak_mag_545_45.compactname"] = "45P 5,45 (B)"
+L["uplp_ak_mag_545_45.description"] = "45-patronersmagasin gjorda utav formmassan AG-4S, men liknar bakelit." .. loaded545
 
-L["uplp_ak_mag_545_60.printname"] = "52-Patroner 5,45 × 39 mm Quadstack"
-L["uplp_ak_mag_545_60.compactname"] = "52P 5,45 (Q)"
-L["uplp_ak_mag_545_60.description"] = "52-patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545 .. "\n\nTjock jäkel. Snälla Ladda inte mer än 52 patroner!"
+L["uplp_ak_mag_545_60.printname"] = "60-Patroner 5,45 × 39 mm Quadstack"
+L["uplp_ak_mag_545_60.compactname"] = "60P 5,45 (Q)"
+L["uplp_ak_mag_545_60.description"] = "60-Patroners polymermagasin expanderade horisontalt för att hålla mer ammunition." .. loaded545
 
 L["uplp_ak_mag_545_drum.printname"] = "85-Patroner 5,45 × 39 mm HPK M16 Trumma"
 L["uplp_ak_mag_545_drum.compactname"] = "85P 5,45 T"
 L["uplp_ak_mag_545_drum.description"] = "85-patroners cylindriskt trummagasin från HPK M16." .. loaded545
+
+L["uplp_ak_mag_545_45p.printname"] = "45-Patroner 5,45 × 39 mm (Polymer)"
+L["uplp_ak_mag_545_45p.compactname"] = "45R 5,45 (P)"
+L["uplp_ak_mag_545_45p.description"] = "45-patroners polymermagasin som används av den moderna HPKM." .. loaded545
 
 /// 5,56 × 45mm NATO
 local loaded556 = loaded .. "Laddat med <color=160,160,255>5,56 × 45 mm</color> som används av AK M10 5,56." .. changeammo.smg1
@@ -1327,6 +1378,14 @@ L["uplp_ar15_hg_xm.printname"] = "Kommando Handskydd"
 L["uplp_ar15_hg_xm.compactname"] = "Kommando"
 L["uplp_ar15_hg_xm.description"] = "Förkortat AR-15-handskydd som används på XM117." .. requires14
 
+-- L["uplp_ar15_hg_adar.printname"] = "Civilian-Spec Handguard"
+-- L["uplp_ar15_hg_adar.compactname"] = "Civilian"
+-- L["uplp_ar15_hg_adar.description"] = "Wooden handguard intended for a Russian hunting version of the AR-15." .. requires14
+
+-- L["uplp_ar15_hg_m4ss.printname"] = "Carbine Handguard"
+-- L["uplp_ar15_hg_m4ss.compactname"] = "Carbine"
+-- L["uplp_ar15_hg_m4ss.description"] = "Original handguard used by shortened AR-15 carbines." .. requires14
+
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Patroner .45 Auto"
@@ -1359,9 +1418,9 @@ L["uplp_ar15_mag_drum.printname"] = "90-Patroner 5,56 × 45 mm Dubbeltrumma"
 L["uplp_ar15_mag_drum.compactname"] = "90P Trumma"
 L["uplp_ar15_mag_drum.description"] = "90-patroners C-format trummagasin."
 
-L["uplp_ar15_mag_hk.printname"] = "30-Patroner 5,56 × 45 mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30P (416)"
-L["uplp_ar15_mag_hk.description"] = "30-patronersmagasin från en anpassad AR-15 av tyskt ursprung."
+L["uplp_ar15_mag_hk.printname"] = "30-Patroner 5,56 × 45 mm (Hoki Armory)"
+L["uplp_ar15_mag_hk.compactname"] = "30P (H.A.)"
+L["uplp_ar15_mag_hk.description"] = "30-patroners magasin med ett taktiskt hexagonalt utseende tillverkad av Hoki Armory."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Patroner 5,56 × 45 mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10P Poly"
@@ -1375,9 +1434,9 @@ L["uplp_ar15_mag_pmag30.printname"] = "30-Patroner 5,56 × 45 mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly."
 
-L["uplp_ar15_mag_pmag60.printname"] = "52-Patroner 5,56 × 45 mm Trumma"
-L["uplp_ar15_mag_pmag60.compactname"] = "52P Trumma"
-L["uplp_ar15_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
+L["uplp_ar15_mag_pmag60.printname"] = "60-Patroner 5,56 × 45 mm Trumma"
+L["uplp_ar15_mag_pmag60.compactname"] = "60P Trumma"
+L["uplp_ar15_mag_pmag60.description"] = "60-Patroners trummagasin gjord utav polymer av SynPoly."
 
 L["uplp_ar15_mag_stanag20.printname"] = "20-Patroner 5,56 × 45 mm (Aluminium)"
 L["uplp_ar15_mag_stanag20.compactname"] = "20P Alum"
@@ -1391,9 +1450,9 @@ L["uplp_ar15_mag_stanag40.printname"] = "40-Patroner 5,56 × 45 mm (Aluminium)"
 L["uplp_ar15_mag_stanag40.compactname"] = "40P Alum"
 L["uplp_ar15_mag_stanag40.description"] = "40-patronersmagasin tillverkat av aluminium."
 
-L["uplp_ar15_mag_stanag60.printname"] = "52-Patroner 5,56 × 45 mm Quadstack"
-L["uplp_ar15_mag_stanag60.compactname"] = "52P Quad."
-L["uplp_ar15_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition.\nLaddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp."
+L["uplp_ar15_mag_stanag60.printname"] = "60-Patroner 5,56 × 45 mm Quadstack"
+L["uplp_ar15_mag_stanag60.compactname"] = "60P Quad."
+L["uplp_ar15_mag_stanag60.description"] = "60-Patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition."
 
 ////// Pistol Grips
 L["uplp_ar15_pgrip_416.printname"] = "416-Pistolgrepp"
@@ -2094,9 +2153,9 @@ L["uplp_scar_mag_pmag30.printname"] = "30-Patroner 5,56 × 45 mm (Polymer)"
 L["uplp_scar_mag_pmag30.compactname"] = "30P Poly"
 L["uplp_scar_mag_pmag30.description"] = "30-patronersmagasin tillverkade av polymer av SynPoly." .. changeammo.smg1
 
-L["uplp_scar_mag_pmag60.printname"] = "52-Patroner 5,56 × 45 mm Polymer Trumma"
-L["uplp_scar_mag_pmag60.compactname"] = "52P Trumma"
-L["uplp_scar_mag_pmag60.description"] = "52-patroners trummagasin gjord utav polymer av SynPoly. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
+L["uplp_scar_mag_pmag60.printname"] = "60-Patroner 5,56 × 45 mm Polymer Trumma"
+L["uplp_scar_mag_pmag60.compactname"] = "60P Trumma"
+L["uplp_scar_mag_pmag60.description"] = "60-Patroners trummagasin gjord utav polymer av SynPoly." .. changeammo.smg1
 
 L["uplp_scar_mag_stanag30.printname"] = "30-Patroner 5,56 × 45 mm (Aluminium)"
 L["uplp_scar_mag_stanag30.compactname"] = "30P Alum"
@@ -2106,9 +2165,9 @@ L["uplp_scar_mag_stanag30_tan.printname"] = "30-Patroner 5,56 × 45 mm (Tanfärg
 L["uplp_scar_mag_stanag30_tan.compactname"] = "30P Tanfärg"
 L["uplp_scar_mag_stanag30_tan.description"] = "30-patronersmagasin tillverkat av aluminium med tanfärg." .. changeammo.smg1
 
-L["uplp_scar_mag_stanag60.printname"] = "52-Patroner 5,56 × 45 mm Quadstack"
-L["uplp_scar_mag_stanag60.compactname"] = "52P Quad"
-L["uplp_scar_mag_stanag60.description"] = "52-patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition. Laddning av mer än 52 patroner rekommenderas ej då det kan orsaka stopp." .. changeammo.smg1
+L["uplp_scar_mag_stanag60.printname"] = "60-Patroner 5,56 × 45 mm Quadstack"
+L["uplp_scar_mag_stanag60.compactname"] = "60P Quad"
+L["uplp_scar_mag_stanag60.description"] = "60-Patronersmagasin utav aluminium expanderad horisontalt för att hålla mer ammunition." .. changeammo.smg1
 
 ////// Pistol Grips
 L["uplp_scar_pgrip_b.printname"] = "XAR Pistolgrepp (Svart)"
@@ -2358,9 +2417,9 @@ L["uplp_aug_mag_556_40.printname"] = "40-Patroner 5,56 × 45 mm"
 L["uplp_aug_mag_556_40.compactname"] = "40P 5,56"
 L["uplp_aug_mag_556_40.description"] = "Förlängt 40-patronersmagasin till AW-UG."
 
-L["uplp_aug_mag_556_52.printname"] = "52-Patroner 5,56 × 45 mm Trumma"
-L["uplp_aug_mag_556_52.compactname"] = "52R 5,56"
-L["uplp_aug_mag_556_52.description"] = "52-patroners trummagasin till AW-UG."
+L["uplp_aug_mag_556_52.printname"] = "60-Patroner 5,56 × 45 mm Trumma"
+L["uplp_aug_mag_556_52.compactname"] = "60R 5,56"
+L["uplp_aug_mag_556_52.description"] = "60-Patroners trummagasin till AW-UG."
 
 L["uplp_aug_mag_919_25.printname"] = "25-Patroner 9 × 19 mm"
 L["uplp_aug_mag_919_25.compactname"] = "25R 9 × 19 mm"

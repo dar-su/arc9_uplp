@@ -504,8 +504,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_30_12")
 
 ATT = {}
 
-ATT.PrintName = "40-Round 5.45x39mm (Bakelite)"
-ATT.CompactName = "40R 5.45 (B)"
+ATT.PrintName = "45-Round 5.45x39mm (Bakelite)"
+ATT.CompactName = "45R 5.45 (B)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54545.png", "mips smooth")
@@ -536,7 +536,7 @@ ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
 table.Merge(ATT, stats545)
 
-ATT.ClipSizeOverride = 40
+ATT.ClipSizeOverride = 45
 
 ATT.SpreadAddHipFire = 0.005
 ATT.AimDownSightsTimeAdd = 0.03
@@ -552,8 +552,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_545_45")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.45 Quadstacked"
-ATT.CompactName = "52R 5.45 (Q)"
+ATT.PrintName = "60-Round 5.45 Quadstacked"
+ATT.CompactName = "60R 5.45 (Q)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54560.png", "mips smooth")
@@ -585,7 +585,7 @@ ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 table.Merge(ATT, stats545)
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012
@@ -961,8 +961,8 @@ ARC9.LoadAttachment(ATT, "uplp_ak_mag_939_30")
 
 ATT = {}
 
-ATT.PrintName = "40-Round 5.45x39mm (Polymer)"
-ATT.CompactName = "40R 5.45 (P)"
+ATT.PrintName = "45-Round 5.45x39mm (Polymer)"
+ATT.CompactName = "45R 5.45 (P)"
 ATT.Description = ATT.PrintName
 
 ATT.Icon = Material(iconfolder .. "54545p.png", "mips smooth")
@@ -993,7 +993,7 @@ ATT.ExcludeElements = {"uplp_ak_stock_underfold"}
 
 table.Merge(ATT, stats545)
 
-ATT.ClipSizeOverride = 40
+ATT.ClipSizeOverride = 45
 
 ATT.SpreadAddHipFire = 0.005
 ATT.AimDownSightsTimeAdd = 0.03

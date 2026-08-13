@@ -1,17 +1,17 @@
 $modelname "weapons\arc9\c_uplp_ar15.mdl"
  
 $bodygroup "ar15" { // 0
-	studio "reciever_m4.smd"
-	studio "reciever_m16.smd"
-	studio "reciever_45acp.smd"
-	studio "reciever_modern.smd"
-	studio "reciever_9.smd"
+	studio "reciever_m4 new.smd"
+	studio "reciever_m16 new.smd"
+	studio "reciever_45acp new.smd"
+	studio "reciever_modern new.smd"
+	studio "reciever_9 new.smd"
 	
-	studio "reciever_modern_black.smd"
+	studio "reciever_modern_black new.smd"
 	studio "stm9_reciever.smd"
 	studio "stm9_reciever_black.smd"
 
-	studio "reciever_m16a2.smd"
+	studio "reciever_m16a2 new.smd"
 }   
 $bodygroup "addition" { // 1
 	blank
@@ -41,6 +41,7 @@ $bodygroup "hg" { // 2
 	studio "hg_xm.smd"
 	studio "hg_rislong_covers.smd"
 	studio "adarhg.smd"
+	studio "hg_m4ss.smd"
 }  
 $bodygroup "barrel" { // 3
 	studio "brl_16.smd"
@@ -69,12 +70,12 @@ $bodygroup "gripdef" { // 5
 }
 
 $bodygroup "chargedef" { // 6
-	studio "charge_stda.smd" // 0
+	studio "charge_stda new.smd" // 0
 	blank
 }
 
 $bodygroup "magdef" { // 7
-	studio "mag_stanag30.smd" // 0
+	studio "mag_stanag30 def new.smd" // 0
 	blank
 }
 
@@ -358,7 +359,7 @@ $sequence "reload_empty20" {
 
 $sequence "reload40" {
 	"anims\reload_NEW40.smd"
-	"anims\reload_iron40.smd"
+	"anims\reload_NEW40_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -394,6 +395,24 @@ $sequence "reload60" {
 $sequence "reload_empty60" {
 	"anims\reload_NEW60_e.smd"
 	"anims\reload_NEW60_e_i.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload61" {
+	"anims\reload_NEW61.smd"
+	"anims\reload_NEW61_i.smd"
+	blend "sights" 0 1
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+
+$sequence "reload_empty61" {
+	"anims\reload_NEW61_e.smd"
+	"anims\reload_NEW61_e_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1

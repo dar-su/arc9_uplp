@@ -179,9 +179,10 @@ ATT.PrintName = "30-Round 5.56x45mm (Plastic)"
 ATT.CompactName = "30R 5.56 (P)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "30p.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p30.png", "mips smooth")
 
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_30_pmag.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -0.8)
 
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -239,13 +240,14 @@ ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_40")
 
 ATT = {}
 
-ATT.PrintName = "52-Round 5.56x45mm Drum"
-ATT.CompactName = "52R 5.56"
+ATT.PrintName = "60-Round 5.56x45mm Drum"
+ATT.CompactName = "60R 5.56"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p60.png", "mips smooth")
 
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_60.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -0.8)
 ATT.DropMagazineTime = 0.65
 ATT.DropMagazineQCA = 4
 ATT.DropMagazineVelocity = Vector(0, -10, -5)
@@ -260,7 +262,7 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
 end
 
 -- Positives
-ATT.ClipSizeOverride = 52
+ATT.ClipSizeOverride = 60
 
 -- Negatives
 ATT.SpreadAddHipFire = 0.012
@@ -420,9 +422,11 @@ ATT.PrintName = "10-Round .300 SP"
 ATT.CompactName = "10R .300"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "10.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "10.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p10.png", "mips smooth")
 
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_300blk_10.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
+ATT.DropMagazinePos = Vector(0, 2.1, -0.8)
 
 ATT.Category = "uplp_aug_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

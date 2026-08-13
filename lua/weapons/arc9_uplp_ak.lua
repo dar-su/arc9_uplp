@@ -279,8 +279,8 @@ SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
-SWEP.ShouldDropMag = true
-SWEP.ShouldDropMagEmpty = true
+SWEP.ShouldDropMag = false -- controlling in each anim now
+SWEP.ShouldDropMagEmpty = false 
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762.mdl"
 SWEP.DropMagazineTime = 0.75 * 1.05
 SWEP.DropMagazineQCA = 5
@@ -490,6 +490,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, v = 0.8 },
@@ -499,13 +500,13 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 22 / 30, v = 0.8 },
             { s = UTCrattle, t = 36 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
+            {hide = 0, t = 0.3},
             {hide = 2, t = 0.75}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.62, lhik = 0 },
             { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -517,6 +518,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, v = 0.8 },
@@ -549,6 +551,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -558,14 +561,14 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 22 / 30 + 8 / 30, v = 0.8 },
             { s = UTCrattle, t = 36 / 30 + 8 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.61, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -576,6 +579,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -587,8 +591,8 @@ SWEP.Animations = {
             { s = pathRZ .. "chforward.ogg", t = 49 / 30 + 8 / 30, v = 0.8 },
             { s = UTCrattle, t = 56 / 30 + 8 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -608,6 +612,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, v = 0.8 },
@@ -623,8 +628,8 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.62, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -635,6 +640,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, v = 0.8 },
@@ -667,6 +673,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -676,14 +683,14 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 22 / 30 + 8 / 30, v = 0.8 },
             { s = UTCrattle, t = 36 / 30 + 8 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.61, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -694,6 +701,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -705,8 +713,8 @@ SWEP.Animations = {
             { s = pathRZ .. "chforward.ogg", t = 49 / 30 + 8 / 30, v = 0.8 },
             { s = UTCrattle, t = 56 / 30 + 8 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.9}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -726,6 +734,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -735,14 +744,14 @@ SWEP.Animations = {
             { s = pathUT .. "magin.ogg", t = 22 / 30 + 10 / 30, v = 0.8 },
             { s = UTCrattle, t = 36 / 30 + 10 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 1}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.7, lhik = 0 },
-            { t = 0.925, lhik = 1 },
+            { t = 0.61, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -753,6 +762,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -764,8 +774,8 @@ SWEP.Animations = {
             { s = pathRZ .. "chforward.ogg", t = 49 / 30 + 10 / 30, v = 0.8 },
             { s = UTCrattle, t = 56 / 30 + 10 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 1}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -785,6 +795,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, v = 0.8 },
@@ -800,7 +811,7 @@ SWEP.Animations = {
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
+            { t = 0.62, lhik = 0 },
             { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
@@ -812,6 +823,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025, v = 0.8 },
@@ -844,6 +856,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         Mult = 0.92,
+        -- DropMagAt = 0.75,
         EventTable = {
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 10 / 30, v = 1 },
@@ -871,6 +884,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         Mult = 0.92,
+        DropMagAt = 0.75,
         EventTable = {
             { s = pathUT .. "reload_start.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUT .. "magrelease.ogg", t = 10 / 30, v = 1 },
@@ -883,8 +897,8 @@ SWEP.Animations = {
             { s = UTCrattle, t = 90 / 30, v = 0.8 },
 
             {hide = 0, t = 0.3},
-            {hide = 2, t = 22 / 30},
-            {hide = 0, t = 1.1},
+            {hide = 2, t = 0.75},
+            {hide = 0, t = 1.2},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -904,6 +918,7 @@ SWEP.Animations = {
 		RefillProgress = 0.6,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.95,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -912,15 +927,16 @@ SWEP.Animations = {
             { s = pathRZ .. "magout.ogg", t = 12 / 30 + 7 / 30, v = 1 },
             { s = pathUT .. "magin_308.ogg", t = 22 / 30 + 8 / 30, v = 0.8 },
             { s = UTCrattle, t = 36 / 30 + 8 / 30, v = 0.4 },
+
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.95}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.62, lhik = 0 },
+            { t = 0.9, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -931,6 +947,7 @@ SWEP.Animations = {
 		RefillProgress = 0.7,
 		FireASAP = true,
         -- Mult = 1.05,
+        DropMagAt = 0.95,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
             { s = pathUT .. "reload_start.ogg", t = 0.025 + 1 / 30, v = 0.8 },
@@ -942,14 +959,14 @@ SWEP.Animations = {
             { s = pathUT .. "chamber_308.ogg", t = 49 / 30 + 6 / 30, v = 0.8 },
             { s = UTCrattle, t = 56 / 30 + 8 / 30, v = 0.4 },
             {hide = 1, t = 0},
-            {hide = 0, t = 0.29},
-            {hide = 2, t = 0.75}
+            {hide = 0, t = 0.4},
+            {hide = 2, t = 0.95}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
             { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.75, lhik = 0 },
+            { t = 0.96, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
