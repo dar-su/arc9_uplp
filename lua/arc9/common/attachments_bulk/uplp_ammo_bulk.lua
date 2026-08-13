@@ -399,7 +399,7 @@ ATT.Hook_BulletImpact = function(wep, data)
             dur = 8 / 30
         end
     elseif ent:GetPhysicsObject():IsValid() then
-        dur = Lerp(1 - ent:GetPhysicsObject():GetVolume() / 750000, 2, 10) / 30
+        dur = Lerp(1 - ((ent:GetPhysicsObject():GetVolume() or 0) / 750000), 2, 10) / 30
     end
     if dur <= 0 then
 
