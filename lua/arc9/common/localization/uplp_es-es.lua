@@ -622,14 +622,17 @@ L["uplp_tac_laser_pistol.description"] = "Módulo de puntería compacto montado 
 
 -- L["uplp_tac_flashlight_tac.printname"] = "LuminaFire Armaments Tac-Light"
 -- L["uplp_tac_flashlight_tac.compactname"] = "LuminaFire TL"
--- L["uplp_tac_flashlight_tac.description"] = "Lightweight tactical flashlight made by LuminaFire Armaments."
+-- L["uplp_tac_flashlight_tac.description"] = "Rail-mounted flashlight with a wide illumination field of view made by LuminaFire Armaments."
 
 -- L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination Compact Flashlight"
 -- L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
 -- L["uplp_tac_flashlight_lastac.description"] = "Rail-mounted, compact flashlight made by NightStrike Illumination, intended for smaller firearms."
 
+-- L["uplp_tac_piscomb_dbal.description"] = "Compact rail-mounted hybrid module made by Veyron Tactics.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
+
 -- L["uplp_tac_piscomb_viri.printname"] = "Helios Defense Compact Hybrid Module"
 -- L["uplp_tac_piscomb_viri.compactname"] = "Helios"
+-- L["uplp_tac_piscomb_viri.description"] = "Compact rail-mounted hybrid module.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 /////////// Ammunition
 -- local shotgun_lp = "\n\nSpeciality load puts immense stress on the weapon, and may cause destructive consequences after extended use."
@@ -1375,6 +1378,14 @@ L["uplp_ar15_hg_a1.description"] = "Guardamanos clásico AR-15 utilizado en los 
 -- L["uplp_ar15_hg_xm.compactname"] = "Commando"
 -- L["uplp_ar15_hg_xm.description"] = "Shortened AR-15 handguard used on the XM177." .. requires14
 
+-- L["uplp_ar15_hg_adar.printname"] = "Civilian-Spec Handguard"
+-- L["uplp_ar15_hg_adar.compactname"] = "Civilian"
+-- L["uplp_ar15_hg_adar.description"] = "Wooden handguard intended for a Russian hunting version of the AR-15." .. requires14
+
+-- L["uplp_ar15_hg_m4ss.printname"] = "Carbine Handguard"
+-- L["uplp_ar15_hg_m4ss.compactname"] = "Carbine"
+-- L["uplp_ar15_hg_m4ss.description"] = "Original handguard used by shortened AR-15 carbines." .. requires14
+
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20 Rondas .45 Auto"
@@ -1407,9 +1418,9 @@ L["uplp_ar15_mag_drum.printname"] = "Tambor Dual de 90 Rondas 5.56×45mm"
 L["uplp_ar15_mag_drum.compactname"] = "90R Tambor"
 L["uplp_ar15_mag_drum.description"] = "Cargador de tambor en forma de C de 90 balas."
 
-L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
-L["uplp_ar15_mag_hk.description"] = "Cargador de 30 balas de un AR-15 modificado de origen alemán."
+L["uplp_ar15_mag_hk.printname"] = "30 Rondas 5.56×45mm (Hoki Armory)"
+L["uplp_ar15_mag_hk.compactname"] = "30R (H.A.)"
+-- L["uplp_ar15_mag_hk.description"] = "30-round magazine with a tactical hexagonal appearance made by Hoki Armory."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10 Rondas 5.56×45mm (Polímero)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Polí"

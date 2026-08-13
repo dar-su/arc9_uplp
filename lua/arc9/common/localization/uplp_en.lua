@@ -1405,6 +1405,10 @@ L["uplp_ar15_hg_adar.printname"] = "Civilian-Spec Handguard"
 L["uplp_ar15_hg_adar.compactname"] = "Civilian"
 L["uplp_ar15_hg_adar.description"] = "Wooden handguard intended for a Russian hunting version of the AR-15." .. requires14
 
+L["uplp_ar15_hg_m4ss.printname"] = "Carbine Handguard"
+L["uplp_ar15_hg_m4ss.compactname"] = "Carbine"
+L["uplp_ar15_hg_m4ss.description"] = "Original handguard used by shortened AR-15 carbines." .. requires14
+
 ////// Magazines
 /// .45 ACP
 L["uplp_ar15_mag_45_20.printname"] = "20-Round .45 Auto"
@@ -1437,9 +1441,9 @@ L["uplp_ar15_mag_drum.printname"] = "90-Round 5.56×45mm Dual Drum"
 L["uplp_ar15_mag_drum.compactname"] = "90R Drum"
 L["uplp_ar15_mag_drum.description"] = "90-Round C-shaped drum magazine.\nLoading more than 90 rounds is not recommeneded as it could cause jams."
 
-L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56×45mm (416)"
-L["uplp_ar15_mag_hk.compactname"] = "30R (416)"
-L["uplp_ar15_mag_hk.description"] = "30-round magazine from a modified AR-15 of German origin."
+L["uplp_ar15_mag_hk.printname"] = "30-Round 5.56×45mm (Hoki Armory)"
+L["uplp_ar15_mag_hk.compactname"] = "30R (H.A.)"
+L["uplp_ar15_mag_hk.description"] = "30-round magazine with a tactical hexagonal appearance made by Hoki Armory."
 
 L["uplp_ar15_mag_pmag10.printname"] = "10-Round 5.56×45mm (Polymer)"
 L["uplp_ar15_mag_pmag10.compactname"] = "10R Poly"
@@ -1452,6 +1456,10 @@ L["uplp_ar15_mag_pmag20.description"] = "20-round magazine made out of polymer b
 L["uplp_ar15_mag_pmag30.printname"] = "30-Round 5.56×45mm (Polymer)"
 L["uplp_ar15_mag_pmag30.compactname"] = "30R Poly"
 L["uplp_ar15_mag_pmag30.description"] = "30-round magazine made out of polymer by SynPoly."
+
+L["uplp_ar15_mag_pmag40.printname"] = "40-Round 5.56×45mm (Polymer)"
+L["uplp_ar15_mag_pmag40.compactname"] = "40R Poly"
+L["uplp_ar15_mag_pmag40.description"] = "40-round magazine made out of polymer by SynPoly."
 
 L["uplp_ar15_mag_pmag60.printname"] = "52-Round 5.56×45mm Polymer Drum"
 L["uplp_ar15_mag_pmag60.compactname"] = "52R Drum"
