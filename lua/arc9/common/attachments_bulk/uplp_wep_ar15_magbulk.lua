@@ -457,6 +457,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "hk.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
+ATT.ModelOffset = Vector(0.15, 0, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_hk.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -482,6 +483,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "p10.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
+ATT.ModelOffset = Vector(0.1, 0, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag10.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -530,6 +532,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "p20.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
+ATT.ModelOffset = Vector(0.1, 0, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag20.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -579,6 +582,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "p30.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
+ATT.ModelOffset = Vector(0.1, 0, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag30.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag"}
@@ -711,6 +715,63 @@ end
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag40")
 
 
+---------- uplp_ar15_mag_pmag40
+
+
+ATT = {}
+
+ATT.PrintName = "40-Round 5.56x45mm (SPMAG)"
+ATT.CompactName = "40R 5.56 (SPMAG)"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "p40.png", "mips smooth")
+
+ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag40.mdl"
+ATT.ModelOffset = Vector(0.1, 0, 0)
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag40.mdl"
+
+ATT.ActivateElements = {"uplp_ar15_mag"}
+-- ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
+-- ATT.ExcludeElements = {"uplp_ar15_ammo"}
+
+-- Positives
+ATT.ClipSizeOverride = 40
+
+-- Negatives
+ATT.SpreadAddHipFire = 0.005
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.SprintToFireTimeAdd = 0.02
+ATT.DeployTimeMult = 1.15
+ATT.SwayMultSights = 1.1
+ATT.SpeedMultSights = 0.9
+
+-- ATT.ReloadTimeMult = 1.1
+
+ATT.CustomCons = {
+[ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
+}
+
+ATT.ModelOffset = Vector(0.15, 0, 0)
+
+ATT.Category = "uplp_ar15_556_mag"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Hook_TranslateAnimation = function(wep, anim)
+    return anim .. "_40"
+end
+
+ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
+    if data.sound == pathUT .. "magout.ogg" then
+        data.sound = pathUT .. "pmagout.ogg"
+    elseif data.sound == pathUT .. "magin.ogg" then
+        data.sound = pathUT .. "pmagin.ogg"
+    end
+    return data
+end
+
+ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag40")
+
+
 ---------- uplp_ar15_mag_pmag60
 
 
@@ -723,6 +784,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "p60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
+ATT.ModelOffset = Vector(0.1, 0, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_pmag60.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
@@ -776,6 +838,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
 
 ATT.Model = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
+ATT.ModelOffset = Vector(0.2, 0, 0)
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar15_mag_stanag60.mdl"
 
 ATT.ActivateElements = {"uplp_ar15_mag", "uplp_ar15_mag_ext"}
@@ -803,6 +866,11 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     return anim .. "_60"
+end
+
+ATT.Hook_TranslateSource = function(wep, anim)
+    if anim == "reload60" then return "reload61"
+    elseif anim == "reload_empty60" then return "reload_empty61" end
 end
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag60")

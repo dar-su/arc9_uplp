@@ -179,7 +179,7 @@ ATT.PrintName = "30-Round 5.56x45mm (Plastic)"
 ATT.CompactName = "30R 5.56 (P)"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "30p.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p30.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_30_pmag.mdl"
 
@@ -243,7 +243,7 @@ ATT.PrintName = "52-Round 5.56x45mm Drum"
 ATT.CompactName = "52R 5.56"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "60.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p60.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_556_60.mdl"
 ATT.DropMagazineTime = 0.65
@@ -420,7 +420,8 @@ ATT.PrintName = "10-Round .300 SP"
 ATT.CompactName = "10R .300"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "10.png", "mips smooth")
+-- ATT.Icon = Material(iconfolder .. "10.png", "mips smooth")
+ATT.Icon = Material("entities/uplp_attachements/ar15/mag/" .. "p10.png", "mips smooth")
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/aug_mag_300blk_10.mdl"
 

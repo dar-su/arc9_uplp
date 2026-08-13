@@ -359,7 +359,7 @@ $sequence "reload_empty20" {
 
 $sequence "reload40" {
 	"anims\reload_NEW40.smd"
-	"anims\reload_iron40.smd"
+	"anims\reload_NEW40_i.smd"
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1

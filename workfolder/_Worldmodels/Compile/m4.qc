@@ -5,12 +5,12 @@ $modelname "weapons\arc9\w_uplp_ar15.mdl"
 
 $bodygroup "body"
 {
-	studio "m4.smd"
+	studio "ar15 new.smd"
 }
 
 $lod 16
 {
-	replacemodel "m4.smd" "m4lod.smd"
+	replacemodel "ar15 new.smd" "ar15 new lod.smd"
 }
 
 $surfaceprop "weapon"
@@ -37,5 +37,5 @@ $collisionmodel "m4col.smd"
 }
 
 $sequence "idle" {
-	"m4.smd"
+	"ar15 new lod.smd"
 }

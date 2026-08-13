@@ -1442,6 +1442,9 @@ SWEP.AttachmentElements = {
     ["uplp_ar15_hg_adar"] = { Bodygroups =      { { 2, 18 }, { 9, 2 } }, AttPosMods = {
     [7] = { Pos = Vector(0.045, 1.02, 15.6) },
     }},
+    ["uplp_ar15_hg_m4ss"] = { Bodygroups =      { { 2, 19 }, { 9, 2 } }, AttPosMods = {
+    [7] = { Pos = Vector(0.045, 1.02, 13.8) },
+    }},
 
     -- PISTOL GRIPS
     ["uplp_ar15_pgrip"] = { Bodygroups = { { 5, 1 } } },

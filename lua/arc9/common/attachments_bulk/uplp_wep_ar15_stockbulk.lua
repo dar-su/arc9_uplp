@@ -145,7 +145,7 @@ ARC9.LoadAttachment(ATT, "uplp_ar15_stock_modern")
 -------------------- MEDIUM STOCKS --------------------
 -------------------------------------------------------
 
----------- uplp_ar15_stock_m4
+---------- uplp_ar15_stock_m4ss
 ATT = {}
 
 ATT.PrintName = "M4 Stock"
@@ -178,7 +178,7 @@ ATT.SpreadAddHipFire = 0.01
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
 
-ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4")
+ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4ss")
 
 ---------- uplp_ar15_stock_416
 ATT = {}
@@ -362,7 +362,7 @@ ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0)
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_stock_mpul")
 
----------- uplp_ar15_stock_m4ss
+---------- uplp_ar15_stock_m4
 ATT = {}
 
 ATT.PrintName = "Commando Stock"
@@ -374,7 +374,8 @@ ATT.Icon = Material(iconfolder .. "sm4ss.png", "mips smooth")
 ATT.Model = "models/weapons/arc9/uplp/ar15_stocks.mdl"
 ATT.ModelBodygroups = "c"
 -- ATT.ModelOffset = Vector(0, 0, 0)
-ATT.ModelAngleOffset = Angle(90, 90, -90)
+-- ATT.ModelAngleOffset = Angle(90, 90, -90)
+ATT.Scale = 0.96
 
 ATT.SortOrder = 2 - 0.1
 ATT.Category = "uplp_ar15_stock"
@@ -396,7 +397,7 @@ ATT.SpreadAddHipFire = 0.01
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end
 
-ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4ss")
+ARC9.LoadAttachment(ATT, "uplp_ar15_stock_m4")
 
 ------------------------------------------------------
 -------------------- HEAVY STOCKS --------------------

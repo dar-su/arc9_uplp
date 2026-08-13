@@ -8,9 +8,9 @@ $bodygroup "body"
 }
 
 $sequence "idle" {
-	"mag_pmag30.smd"
+	"mag_stanag30 new.smd"
 }
-$collisionmodel "mag_pmag30.smd"
+$collisionmodel "mag_stanag30 new.smd"
 
     
 
