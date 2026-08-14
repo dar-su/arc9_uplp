@@ -16,6 +16,7 @@ $bodygroup "stock" {
 	studio "stock atx ORANGE.smd"
 	studio "stock atx PURPLE.smd"
 	studio "stock atx WHITE.smd"
+	studio "stock awm white.smd"
 }
 $bodygroup "barrel" {
 	studio "barrel awp.smd"

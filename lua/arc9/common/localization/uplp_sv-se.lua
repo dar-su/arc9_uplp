@@ -1963,6 +1963,10 @@ L["uplp_awp_stock_awm.printname"] = "Vikbar Kolv"
 L["uplp_awp_stock_awm.compactname"] = "Vikbar"
 L["uplp_awp_stock_awm.description"] = "Standardkolv med möjlighet att vikas till sidan för lagring."
 
+L["uplp_awp_stock_awm_white.printname"] = "Vikbar Kolv (Arctic White)"
+L["uplp_awp_stock_awm_white.compactname"] = "Vikbar (AW)"
+L["uplp_awp_stock_awm_white.description"] = "Standardkolv med möjlighet att vikas till sidan för lagring." .. arcticwhite
+
 L["uplp_awp_stock_awp.printname"] = "Polis Kolv"
 L["uplp_awp_stock_awp.compactname"] = "Polis"
 L["uplp_awp_stock_awp.description"] = "Standard, fast kolv som används av flertal rättsväsende byrån världen runt."

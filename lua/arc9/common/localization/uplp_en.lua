@@ -1965,6 +1965,10 @@ L["uplp_awp_stock_awm.printname"] = "Foldable Stock"
 L["uplp_awp_stock_awm.compactname"] = "Foldable"
 L["uplp_awp_stock_awm.description"] = "Standard stock with foldable capabilities for storage."
 
+L["uplp_awp_stock_awm_white.printname"] = "Foldable Stock (Arctic White)"
+L["uplp_awp_stock_awm_white.compactname"] = "Foldable AW"
+L["uplp_awp_stock_awm_white.description"] = "Standard stock with foldable capabilities for storage." .. arcticwhite
+
 L["uplp_awp_stock_awp.printname"] = "Police Stock"
 L["uplp_awp_stock_awp.compactname"] = "Police"
 L["uplp_awp_stock_awp.description"] = "Standard solid stock used by various law enforcement agencies world-wide."

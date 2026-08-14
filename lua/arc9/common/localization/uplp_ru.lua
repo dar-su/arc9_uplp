@@ -1965,6 +1965,10 @@ L["uplp_awp_stock_awm.printname"] = "Складная ложа"
 L["uplp_awp_stock_awm.compactname"] = "Склад."
 L["uplp_awp_stock_awm.description"] = "Стандартная ложа со складывающимся прикладом для хранения."
 
+L["uplp_awp_stock_awm_white.printname"] = "Складная ложа (Арктический белый)"
+L["uplp_awp_stock_awm_white.compactname"] = "Склад. (АБ)"
+L["uplp_awp_stock_awm_white.description"] = "Стандартная ложа со складывающимся прикладом для хранения." .. arcticwhite
+
 L["uplp_awp_stock_awp.printname"] = "Полицейская ложа"
 L["uplp_awp_stock_awp.compactname"] = "Полиция"
 L["uplp_awp_stock_awp.description"] = "Стандартный цельный ложа, используемый различными правоохранительными органами по всему миру."

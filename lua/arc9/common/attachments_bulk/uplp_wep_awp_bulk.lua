@@ -592,6 +592,27 @@ ATT.SpeedAdd = 0.02
 
 ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm")
 
+---------- uplp_awp_stock_awm_white
+
+ATT = {}
+
+ATT.PrintName = "Foldable Stock"
+ATT.CompactName = "Foldable"
+ATT.Description = ATT.PrintName
+
+ATT.Icon = Material(iconfolder .. "stock/awmw.png", "mips smooth")
+
+ATT.Category = "uplp_awp_stock"
+ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.DeployTimeMult = 0.75
+ATT.HolsterTimeMult = 0.75
+ATT.SprintToFireTimeAdd = -0.05
+ATT.RecoilAdd = 0.1
+ATT.SpeedAdd = 0.02
+
+ARC9.LoadAttachment(ATT, "uplp_awp_stock_awm_white")
+
 
 ---------- uplp_awp_stock_awp
 
@@ -636,6 +657,7 @@ ATT.Attachments = {
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
         Pos = Vector(3.65, 0, 0.15),
         Ang = Angle(0, 0, 0),
+        Scale = 1.07
     },
 }
 

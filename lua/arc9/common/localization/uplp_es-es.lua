@@ -1962,6 +1962,10 @@ L["uplp_awp_stock_awm.printname"] = "Culata Plegable"
 L["uplp_awp_stock_awm.compactname"] = "Plegable"
 L["uplp_awp_stock_awm.description"] = "Culata estándar plegable para su almacenamiento."
 
+L["uplp_awp_stock_awm_white.printname"] = "Culata Plegable (Blanco Ártico)"
+L["uplp_awp_stock_awm_white.compactname"] = "Plegable (BA)"
+L["uplp_awp_stock_awm_white.description"] = "Culata estándar plegable para su almacenamiento." .. arcticwhite
+
 L["uplp_awp_stock_awp.printname"] = "Culata Policial"
 L["uplp_awp_stock_awp.compactname"] = "Policial"
 L["uplp_awp_stock_awp.description"] = "Material sólido estándar utilizado por diversas fuerzas del orden de todo el mundo."
