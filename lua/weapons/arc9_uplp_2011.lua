@@ -282,17 +282,18 @@ SWEP.DropMagazineVelocity = Vector(0, -40, 0)
 ---- Sounds
 
 local pathRZ = ")uplp_rz/57/"
+local path1911 = ")uplp_rz/1911/"
+local path2011 = ")uplp_rz/2011/"
 -- urbna!
 local pathUT = ")uplp_urban_temp/usp/"
 local pathUTold = ")uplp_urban_temp/1911/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.wav",
-    pathUT .. "fire-02.wav",
-    pathUT .. "fire-03.wav",
+    path2011 .. "fire-01.wav",
+    path2011 .. "fire-02.wav",
+    path2011 .. "fire-03.wav",
 }
-
 
 SWEP.ShootSoundSilenced = {
     pathUT .. "fire-sup-01.wav",
@@ -339,9 +340,9 @@ SWEP.DropMagazineSounds = {
 
 SWEP.DryFireSound = ""
 
-SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
+SWEP.TriggerDownSound = {path1911 .. "trigger1.wav"}
 
-SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+SWEP.TriggerUpSound = {path1911 .. "trigger2.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -375,10 +376,10 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathUTold .. "mech-01.wav",
+    pathUTold .. "mech-02.wav",
+    pathUTold .. "mech-03.wav",
+    pathUTold .. "mech-04.wav",
 }
 
 local UTCrattle = {
@@ -426,8 +427,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUTold .. "draw.ogg", t = 0 / 60, v = 0.8 },
-            { s = pathUT .. "slidepull.ogg", t = 10 / 60, v = 0.8 },
-            { s = pathUT .. "slidedrop.ogg", t = 35 / 60, v = 0.8 },
+            { s = path2011 .. "slidepull.ogg", t = 10 / 60, v = 0.8 },
+            { s = path2011 .. "slidedrop.ogg", t = 35 / 60, v = 0.8 },
             {s = pathUTC .. "cloth_4.ogg", t = 34 / 60},
         },
         IKTimeLine = {
@@ -445,8 +446,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUTold .. "draw.ogg", t = 0 / 60, v = 0.8 },
-            { s = pathUT .. "slidepull.ogg", t = 8 / 60, v = 0.8 },
-            { s = pathUT .. "slidedrop.ogg", t = 18 / 60, v = 0.8 },
+            { s = path2011 .. "slidepull.ogg", t = 8 / 60, v = 0.8 },
+            { s = path2011 .. "slidedrop.ogg", t = 18 / 60, v = 0.8 },
             {s = pathUTC .. "cloth_4.ogg", t = 22 / 60},
         },
         IKTimeLine = {
@@ -557,10 +558,10 @@ SWEP.Animations = {
         -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
-            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60 },
-            { s = pathUT .. "magout.ogg", t = 0 / 60 },
+            { s = path2011 .. "magrel.ogg", t = 1 / 60 },
+            { s = path2011 .. "magout.ogg", t = 6 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 22 / 60 },
+            { s = path2011 .. "magin.ogg", t = 36 / 60 },
             { s = UTCrattle, t = 52 / 60 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
@@ -583,12 +584,12 @@ SWEP.Animations = {
         -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
-            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60 },
-            { s = pathUT .. "magout.ogg", t = 0 / 60 },
+            { s = path2011 .. "magrel.ogg", t = 1 / 60 },
+            { s = path2011 .. "magout.ogg", t = 6 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 24 / 60 },
-            { s = pathUT .. "sliderel_deact.ogg", t = 56 / 60 },
-            { s = pathUT .. "slidedrop.ogg", t = 61 / 60 },
+            { s = path2011 .. "magin.ogg", t = 36 / 60 },
+            { s = path1911 .. "sliderel1.ogg", t = 62 / 60 },
+            { s = path1911 .. "sliderel2.ogg", t = 68 / 60 },
             { s = UTCrattle, t = 75 / 60 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.2},
@@ -612,11 +613,11 @@ SWEP.Animations = {
         -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
-            { s = pathUT .. "sliderel_deact.ogg", t = 1 / 60 },
-            { s = pathUT .. "magout.ogg", t = 0 / 60 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 7 / 60, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 27 / 60 + 6/30 },
-            { s = UTCrattle, t = 52 / 60 + 6/30 },
+            { s = pathRZ .. "magrel.ogg", t = 1 / 60 },
+            { s = pathRZ .. "magout.ogg", t = 2 / 60 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60 + 6/30, v = 0.3 },
+            { s = pathRZ .. "magin.ogg", t = 22 / 60 + 9/30 },
+            { s = UTCrattle, t = 52 / 60 + 9/30 },
             {hide = 1, t = 0},
             {hide = 0, t = 0.3},
             {hide = 2, t = 1.733}
