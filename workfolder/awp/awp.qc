@@ -106,7 +106,7 @@ $sequence "idle_empty"{
 $sequence "fire" {
 	"anims\fire.smd"
 	"anims\fire_iron.smd"
-	fps 26
+	fps 30
 	"ACT_VM_PRIMARYATTACK" 1
  	blend "sights" 0 1
 	fadein 0.02
@@ -114,8 +114,6 @@ $sequence "fire" {
 }
 $sequence "ready" {
 	"anims\ready.smd"
-	"anims\ready_iron.smd"
- 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -124,26 +122,26 @@ $sequence "ready" {
 
 
 $sequence "draw" {
-	"anims\draw_fes.smd"
-	fps 24
+	"anims\draw2.smd"
+	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "draw_empty" {
-	"anims\draw_empty.smd"
-	fps 24
+	"anims\draw2_empty.smd"
+	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster" {
 	"anims\holster.smd"
-	fps 20
+	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "holster_empty" {
 	"anims\holster_empty.smd"
-	fps 20
+	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
@@ -222,8 +220,15 @@ $sequence "inspect_empty_xstock" {
 }
 
 $sequence "cycle" {
-	"anims\cycle_fes.smd"
-	"anims\cycle_fes_iron.smd"
+	"anims\cycle.smd"
+	"anims\cycle_iron.smd"
+	blend "sights" 0 1
+	fps 30
+}
+
+$sequence "cycle2" {
+	"anims\cycle2.smd"
+	"anims\cycle2_iron.smd"
 	blend "sights" 0 1
 	fps 30
 }

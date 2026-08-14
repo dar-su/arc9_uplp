@@ -78,7 +78,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 65
-SWEP.ActivePos = Vector(1.0, 0, 0.75)
+SWEP.ActivePos = Vector(0.5, 0, 0.8)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -223,19 +223,19 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.35, -4, 0.98),
-     Ang = Angle(0, 0, -1),
+     Pos = Vector(-2.32, -4, 1.02),
+     Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
 local is_tall = {
-    Pos = Vector(-2.32, -4, 0.28),
+    Pos = Vector(-2.32, -4, 0.285),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
 }
 local is_short = {
-    Pos = Vector(-2.32, -4, 0.42),
+    Pos = Vector(-2.32, -4, 0.421),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
@@ -380,7 +380,7 @@ SWEP.Animations = {
         Source = "idle_empty",
     },
     ["cycle"] = {
-        Source = "cycle",
+        Source = {"cycle", "cycle2"},
         MinProgress = 0.66,
         Mult = 1,
         EventTable = {
@@ -411,7 +411,7 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		Mult = 1.2,
+		Mult = 1,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
@@ -426,7 +426,7 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
-		Mult = 0.8,
+		Mult = 1,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
@@ -435,7 +435,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.75,
-		Mult = 0.8,
+		Mult = 1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -443,7 +443,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.75,
-		Mult = 0.8,
+		Mult = 1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -763,10 +763,6 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
 end
 
 SWEP.AttachmentElements = {
-    -- RECEIVERS
-    ["uplp_awp_reciever_m16"] = { Bodygroups = { { 0, 1 } }, AttPosMods = {[2] = { Pos = Vector(0.045, -1.7, 1.5) }}},
-    ["uplp_awp_reciever_modern"] = { Bodygroups = { { 0, 3 } } },
-
     -- STOCKS
     -- ["uplp_awp_stock_awp"] = { Bodygroups = { { 1, 0 } } },
     ["uplp_awp_stock_awm"] = { Bodygroups = { { 1, 1 } } },
@@ -791,7 +787,7 @@ SWEP.AttachmentElements = {
     ["uplp_awp_barrel_awp"] = { Bodygroups = { { 2, 0 } } },
     ["uplp_awp_barrel_long"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_awp_barrel_short"] = { Bodygroups = { { 2, 2 } } },
-    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = { [8] = { Pos = Vector(0, -0.3, 26.5) } }},
+    ["uplp_awp_barrel_aws"] = { Bodygroups = { { 2, 3 } }, AttPosMods = { [8] = { Pos = Vector(0, -0.3, 31) } }},
 
     -- MAGAZINES
     ["uplp_awp_mag_awm"] = { Bodygroups = { { 4, 0 }, { 0, 0 } } },
@@ -931,7 +927,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_fs"},
         DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.35, 29),
+        Pos = Vector(0, -0.35, 30),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_awp_brl_aws"},
     },
@@ -940,7 +936,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_fs"},
         DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.4, 5.4),
+        Pos = Vector(0, -0.4, 6.3),
         Icon_Offset = Vector(0, 0, -0.1),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_ar15_rs"},
