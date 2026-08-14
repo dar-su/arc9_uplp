@@ -29,7 +29,7 @@ SWEP.Trivia = {
 SWEP.Credits = {
     [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka, 8Z",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "TastyTony, Darsu",
-    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, Fesiug, inspect by Darsu",
+    [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd, inspect by Darsu",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
     [ ARC9:GetPhrase( "uplp_general" ) ] = "Darsu",
 }
@@ -197,7 +197,7 @@ SWEP.SwayMultSights = 1
 SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes
-SWEP.RPM = 300 -- How fast gun shoot
+SWEP.RPM = 255 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -254,11 +254,11 @@ end
 SWEP.DoFDepth = 0.05 -- Adjust if front sight getting blurred too
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(18.5, 45, 5)
+SWEP.CustomizePos = Vector(18.5, 52, 3.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
 SWEP.CustomizeRotateAnchor = Vector(18.5, -2, -3)
 
-SWEP.CustomizeSnapshotPos = Vector(0, 50, 0)
+SWEP.CustomizeSnapshotPos = Vector(0, 45, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
 -- Dropped Magazine
@@ -371,6 +371,22 @@ local thetoggle = {{
     }, t = 0
 }}
 
+local UTCrattle = {
+    -- pathUTC .. "rattle.ogg",
+    pathUTC .. "rattle1.ogg",
+    pathUTC .. "rattle2.ogg",
+    pathUTC .. "rattle3.ogg",
+}
+
+local UTCloth = {
+    pathUTC .. "cloth_1.ogg",
+    pathUTC .. "cloth_2.ogg",
+    pathUTC .. "cloth_3.ogg",
+    pathUTC .. "cloth_4.ogg",
+    pathUTC .. "cloth_5.ogg",
+    pathUTC .. "cloth_6.ogg",
+}
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -396,25 +412,23 @@ SWEP.Animations = {
 		MinProgress = 0.8,
 		FireASAP = true,
         EventTable = {
-            -- { s = reloadsound .. "firstraise_lift_v2.ogg", t = 0 / 30, v = 0.8 },
-            -- { s = reloadsound .. "reload_boltclose_v2.ogg", t = 15 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
-            -- {s = pathUT .. "boltup.ogg",          t = 0.1},
-            -- {s = pathUT .. "boltback.ogg",        t = 0.25},
             {s = pathUT .. "boltforward.ogg",     t = 0.32},
             {s = pathUT .. "boltdown.ogg",        t = 0.55},
-            -- {s = pathUT .. "eject.ogg",           t = 0.4},
-            { s = pathUTC .. "rattle2.ogg", t = 45 / 60, v = 0.8 },
+            { s = UTCrattle, t = 19 / 30, v = 0.4 },
         },
     },
 
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		Mult = 1,
+		Mult = 1.0,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
+            { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
             { t = 0, lhik = 0 },
@@ -426,26 +440,30 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
-		Mult = 1,
+		Mult = 1.0,
 		FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
+            { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
     },
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.75,
-		Mult = 1,
+		Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.7 },
+            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.2 },
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.75,
-		Mult = 1,
+		Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.7 },
+            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.2 },
         },
     },
 
@@ -502,10 +520,10 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 35 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltforward.ogg",     t = 56 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 59 / 30},
+            {s = pathUT .. "boltforward.ogg",     t = 52 / 30},
+            {s = pathUT .. "boltdown.ogg",        t = 58.5 / 30},
 
-            { s = pathUTC .. "rattle2.ogg", t = 70 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 66 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1},
@@ -565,8 +583,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch.ogg", t = 31 / 30, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 41 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltforward.ogg",     t = 64 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 66.5 / 30},
+
+            {s = pathUT .. "boltforward.ogg",     t = 59 / 30},
+            {s = pathUT .. "boltdown.ogg",        t = 63.5 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 77 / 30, v = 0.8 },
 
@@ -768,6 +787,7 @@ SWEP.AttachmentElements = {
     ["uplp_awp_stock_awm"] = { Bodygroups = { { 1, 1 } } },
     ["uplp_awp_stock_tube"] = { Bodygroups = { { 1, 2 } } },
     ["uplp_awp_stock_at"] = { Bodygroups = { { 1, 3 } } },
+    ["uplp_awp_stock_awm_white"] = { Bodygroups = { { 1, 11 } } },
 
     ["uplp_awp_stock_atx"] = { Bodygroups = { { 1, 4 } } },
     ["uplp_awp_stock_atx_blue"] = { Bodygroups = { { 1, 5 } } },
