@@ -500,12 +500,13 @@ ATT.NoShellEject = true
 ATT.EjectDelay = 1111111111
 
 local pathNEW = ")uplp_rz/dbs/"
+local path1911 = ")uplp_urban_temp/1911/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 ATT.ShootSound = {
-    pathNEW .. "fire-01.wav",
-    pathNEW .. "fire-02.wav",
-    pathNEW .. "fire-03.wav",
+    path1911 .. "fire-shotgun-01.wav",
+    path1911 .. "fire-shotgun-02.wav",
+    path1911 .. "fire-shotgun-03.wav",
 }
 
 ATT.DistantShootSound = {

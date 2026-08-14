@@ -376,8 +376,8 @@ ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_545.mdl"
 ATT.ShootSound = shoot545
 ATT.ShootSoundSilenced = shoot545sil
 
-ATT.DistantShootSound = shoot556dist
-ATT.DistantShootSoundIndoor = shoot556distindoor
+-- ATT.DistantShootSound = shoot556dist
+-- ATT.DistantShootSoundIndoor = shoot556distindoor
 
 ATT.ActivateElements = {"uplp_ak_calib_545", "can545sticker"}
 
