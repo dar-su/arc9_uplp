@@ -655,9 +655,9 @@ ATT.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_stock"),
         Category = {"uplp_ar15_stock"},
         DefaultIcon = Material("entities/uplp_attachements/def/arstock.png", "mips smooth"),
-        Pos = Vector(3.65, 0, 0.15),
+        Pos = Vector(4, 0, 0.42),
         Ang = Angle(0, 0, 0),
-        Scale = 1.07
+        Scale = 1.06
     },
 }
 
