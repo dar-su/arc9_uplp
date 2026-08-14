@@ -279,20 +279,20 @@ L["uplp_optic_dcl110.printname"] = "Рефлекторный прицел для
 L["uplp_optic_dcl110.compactname"] = "ПК-РС"
 L["uplp_optic_dcl110.description"] = "Крупный и громоздкий коллиматорный прицел с встроенным магнифером, предназначенным для пулемётов." .. desc_magoptic
 
-L["uplp_optic_acog.printname"] = "Прицел NCOG-4 4x"
-L["uplp_optic_acog.compactname"] = "4x NCOG-4"
+L["uplp_optic_acog.printname"] = "Прицел NCOG-4 4×"
+L["uplp_optic_acog.compactname"] = "4× NCOG-4"
 L["uplp_optic_acog.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением. Оснащён встроенными <color=100,255,100>резервными механическими прицельными приспособлениями</color>." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "Боевой прицел 4x"
-L["uplp_optic_elcan.compactname"] = "4x Боев."
+L["uplp_optic_elcan.printname"] = "Боевой прицел 4×"
+L["uplp_optic_elcan.compactname"] = "4× Боев."
 L["uplp_optic_elcan.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "Прицел переменной кратности 8-16x с дальномером"
-L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
+L["uplp_optic_bigass.printname"] = "Прицел переменной кратности 8-16× с дальномером"
+L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
 L["uplp_optic_bigass.description"] = "Дальнобойный прицел с переменной кратностью 8-10x. Оснащён: - Модулем дальномера, определяющим расстояние до цели в метрах." .. desc_bigoptic
 
-L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
-L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6×"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6×"
 L["uplp_optic_halo_thermal.description"] = "Специальный тепловизионный прицел с 6-кратным увеличением производства PurrPoint™, обеспечивающий тепловизионное изображение с подсветкой целей." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "Красная точка D-1"
@@ -327,39 +327,39 @@ L["uplp_optic_genericrds.printname"] = "Красная точка HawkEye"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "Классический прицел с красной точкой, который клонировали и копировали с момента его появления." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "Военный прицел 3x"
-L["uplp_optic_notacog.compactname"] = "3x Воен."
+L["uplp_optic_notacog.printname"] = "Военный прицел 3×"
+L["uplp_optic_notacog.compactname"] = "3× Воен."
 L["uplp_optic_notacog.description"] = "Прочный военный прицел израильского производства с 3-кратным увеличением." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Соревновательный прицел"
 L["uplp_optic_compm1.compactname"] = "Соревн."L["uplp_optic_compm1.description"] = "Прицел с увеличением шведского производства, предназначенный для соревнований и спортивной стрельбы." .. "Имеет <color=100,255,100>незначительный штраф по скорости</color>, но <color=255,255,100>немного уменьшает стабильность</color> из-за увеличения."
 
-L["uplp_optic_sniper.printname"] = "Прицел переменной кратности 6-8x"
-L["uplp_optic_sniper.compactname"] = "6-8x VZS"
+L["uplp_optic_sniper.printname"] = "Прицел переменной кратности 6-8×"
+L["uplp_optic_sniper.compactname"] = "6-8× VZS"
 L["uplp_optic_sniper.description"] = "Дальнобойный прицел с переменной кратностью 6-8x." .. desc_bigoptic
 
-L["uplp_optic_ez6x.printname"] = "Охотничий прицел 1-6x"
-L["uplp_optic_ez6x.compactname"] = "1-6x Охотн."
+L["uplp_optic_ez6x.printname"] = "Охотничий прицел 1-6×"
+L["uplp_optic_ez6x.compactname"] = "1-6× Охотн."
 L["uplp_optic_ez6x.description"] = "Прицел с переменным увеличением 1-6x." .. desc_midbigoptic
 
-L["uplp_optic_ez8x.printname"] = "Охотничий прицел 8x"
-L["uplp_optic_ez8x.compactname"] = "8x Охотн."
+L["uplp_optic_ez8x.printname"] = "Охотничий прицел 8×"
+L["uplp_optic_ez8x.compactname"] = "8× Охотн."
 L["uplp_optic_ez8x.description"] = "Дальнобойный прицел с 8-кратным увеличением." .. desc_bigoptic
 
-L["uplp_optic_pm3.printname"] = "Марксманский прицел 12x"
-L["uplp_optic_pm3.compactname"] = "12x MMS"
+L["uplp_optic_pm3.printname"] = "Марксманский прицел 12×"
+L["uplp_optic_pm3.compactname"] = "12× MMS"
 L["uplp_optic_pm3.description"] = "Дальнобойный снайперский прицел с 12-кратным увеличением. Может оснащаться <color=100,255,100>резервным прицелом</color>." .. desc_bigoptic
 
-L["uplp_optic_generic.printname"] = "Точный прицел 10x"
-L["uplp_optic_generic.compactname"] = "10x Precis."
+L["uplp_optic_generic.printname"] = "Точный прицел 10×"
+L["uplp_optic_generic.compactname"] = "10× Precis."
 L["uplp_optic_generic.description"] = "Дальнобойный снайперский прицел с 10-кратным увеличением." .. desc_bigoptic
 
-L["uplp_optic_old.printname"] = "Прицел Kraken 7x"
-L["uplp_optic_old.compactname"] = "7x Kraken"
+L["uplp_optic_old.printname"] = "Прицел Kraken 7×"
+L["uplp_optic_old.compactname"] = "7× Kraken"
 L["uplp_optic_old.description"] = "Прицел средней дальности с 7-кратным увеличением." .. desc_midbigoptic
 
-L["uplp_optic_pso_rail.printname"] = "OПП2-Б 4x"
-L["uplp_optic_pso_rail.compactname"] = "OПП2-Б"
+L["uplp_optic_pso_rail.printname"] = "OПП2-Б 4×"
+L["uplp_optic_pso_rail.compactname"] = "4× OПП2-Б"
 L["uplp_optic_pso_rail.description"] = "Прицел с увеличением российского производства с 4-кратным увеличением." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "Голографический прицел SightLine™ 500 Series с магнифером"
@@ -390,7 +390,7 @@ L["uplp_optic_dovetail_kobra.printname"] = "Коллиматорный приц�
 L["uplp_optic_dovetail_kobra.compactname"] = "Кобра"
 L["uplp_optic_dovetail_kobra.description"] = "Военный коллиматорный прицел российского производства с крестообразной сеткой." .. desc_dovetail
 
-L["uplp_optic_dovetail_pso.printname"] = "ОПП2 4x"
+L["uplp_optic_dovetail_pso.printname"] = "ОПП2 4×"
 L["uplp_optic_dovetail_pso.compactname"] = "ОПП2"
 L["uplp_optic_dovetail_pso.description"] = "Прицел с увеличением российского производства с 4-кратным увеличением." .. desc_dovetail
 
@@ -412,8 +412,8 @@ L["uplp_optic_thermholo.printname"] = "Мини-тепловизор Aegis Preci
 L["uplp_optic_thermholo.compactname"] = "Aegis"
 L["uplp_optic_thermholo.description"] = "Компактный лёгкий тепловизионный голографический прицел производства Aegis Precision." .. desc_cqcoptic
 
-L["uplp_optic_dedal.printname"] = "Снайперский прицел CWI Annihilator 12x"
-L["uplp_optic_dedal.compactname"] = "12x CWI"
+L["uplp_optic_dedal.printname"] = "Снайперский прицел CWI Annihilator 12×"
+L["uplp_optic_dedal.compactname"] = "12× CWI"
 L["uplp_optic_dedal.description"] = "Прицел с 12-кратным увеличением от Cerberus Weapons Institute, предназначен для военного использования." .. desc_bigoptic
 
 -- L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
@@ -2978,8 +2978,8 @@ L["uplp_ar18_stock_fixed_wood.description"] = "Деревянная версия
 
 ////// Optics
 L["uplp_ar18_scope_real.printname"] = "Оптический прицел MAR"  
-L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"  
-L["uplp_ar18_scope_real.description"] = "Фабричный оптический прицел с 3x увеличением для MAR-63."  
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 3×"  
+L["uplp_ar18_scope_real.description"] = "Фабричный оптический прицел с 3× увеличением для MAR-63."  
 
 //////////////////// MP9N
 L["uplp_weapon_mp9"] = "F9 \"Гепард\""
@@ -3774,7 +3774,7 @@ L["uplp_weapon_rpg7_manufacturer"] = "НПО «Базальт»"
 
 /////////// Attachments
 ////// Scopes
--- L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
+-- L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7×"
 -- L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
 -- L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher." .. desc_midoptic .. "\nCan be equipped on any AK-style rifle if desired. Just ignore the range marks though - your 7.62 rounds travel farther than those indicate."
 

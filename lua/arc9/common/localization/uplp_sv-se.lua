@@ -279,21 +279,21 @@ L["uplp_optic_dcl110.printname"] = "Kulspruta Reflexsikte med Förstoringsglas"
 L["uplp_optic_dcl110.compactname"] = "KR F"
 L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd förstoringsglas gjorda för användning på kulsprutor."  .. desc_magoptic
 
-L["uplp_optic_acog.printname"] = "4x NCOG-4-Sikte"
-L["uplp_optic_acog.compactname"] = "4x NCOG-4"
-L["uplp_optic_acog.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering." .. desc_midoptic
+L["uplp_optic_acog.printname"] = "4× NCOG-4-Sikte"
+L["uplp_optic_acog.compactname"] = "4× NCOG-4"
+L["uplp_optic_acog.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4× magnifiering." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "4x Stridssikte"
-L["uplp_optic_elcan.compactname"] = "4x Strid"
-L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4x magnifiering." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "4× Stridssikte"
+L["uplp_optic_elcan.compactname"] = "4× Strid"
+L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4× magnifiering." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-16x Variabel Zoom Kikarsikte med Avståndsmätare"
-L["uplp_optic_bigass.compactname"] = "8-16x VZK-A"
-L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10x variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är." .. desc_bigoptic
+L["uplp_optic_bigass.printname"] = "8-16× Variabel Zoom Kikarsikte med Avståndsmätare"
+L["uplp_optic_bigass.compactname"] = "8-16× VZK-A"
+L["uplp_optic_bigass.description"] = "Långt avståndssikte med 8-10× variabel magnifiering.\nKommer utrustat med:\n- Avståndsmätare som mäter hur många meter målet är." .. desc_bigoptic
 
-L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
-L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
-L["uplp_optic_halo_thermal.description"] = "Speciellt värmesikte med 6x magnifiering tillverkat av PurrPoint™ som erbjuder värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6×"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6×"
+L["uplp_optic_halo_thermal.description"] = "Speciellt värmesikte med 6× magnifiering tillverkat av PurrPoint™ som erbjuder värmesikte förmåga som märker måltavlor." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Rödpunktsikte"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -327,41 +327,41 @@ L["uplp_optic_genericrds.printname"] = "HawkEye Precision Rödpunktsikte"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "Klassiskt rödpunktsikte som har klonats och kopierats enda sedan den introducerats." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "3x Militärsikte"
-L["uplp_optic_notacog.compactname"] = "3x Militär"
-L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt ursprung med 3x magnifiering." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "3× Militärsikte"
+L["uplp_optic_notacog.compactname"] = "3× Militär"
+L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt ursprung med 3× magnifiering." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Tävlingssikte"
 L["uplp_optic_compm1.compactname"] = "Tävling"
 L["uplp_optic_compm1.description"] = "Magnifierat sikte av svenskt ursprung gjord för tävling och sportskytte." .. "\nHar <color=100,255,100>lätt hanteringsstraff</color> men <color=255,255,100>lite sväjning i siktet</color> tack vare magnifieringen."
 
-L["uplp_optic_sniper.printname"] = "6-8x Variabel Zoom Kikarsikte"
-L["uplp_optic_sniper.compactname"] = "6-8x VZK"
-L["uplp_optic_sniper.description"] = "Lång räckvidd sikte med 6-8x variabel magnifiering." .. desc_bigoptic
+L["uplp_optic_sniper.printname"] = "6-8× Variabel Zoom Kikarsikte"
+L["uplp_optic_sniper.compactname"] = "6-8× VZK"
+L["uplp_optic_sniper.description"] = "Lång räckvidd sikte med 6-8× variabel magnifiering." .. desc_bigoptic
 
-L["uplp_optic_ez6x.printname"] = "1-6x Jägare Sikte"
-L["uplp_optic_ez6x.compactname"] = "1-6x Jägare"
-L["uplp_optic_ez6x.description"] = "Variabel zoom sikte med 1-6x magnifiering." .. desc_midbigoptic
+L["uplp_optic_ez6x.printname"] = "1-6× Jägare Sikte"
+L["uplp_optic_ez6x.compactname"] = "1-6× Jägare"
+L["uplp_optic_ez6x.description"] = "Variabel zoom sikte med 1-6× magnifiering." .. desc_midbigoptic
 
-L["uplp_optic_ez8x.printname"] = "8x Jägare Sikte"
-L["uplp_optic_ez8x.compactname"] = "8x Jägare"
-L["uplp_optic_ez8x.description"] = "Lång räckvidd sikte med 8x magnifiering." .. desc_bigoptic
+L["uplp_optic_ez8x.printname"] = "8× Jägare Sikte"
+L["uplp_optic_ez8x.compactname"] = "8× Jägare"
+L["uplp_optic_ez8x.description"] = "Lång räckvidd sikte med 8× magnifiering." .. desc_bigoptic
 
-L["uplp_optic_pm3.printname"] = "12x Marksman-Kikarsikte"
-L["uplp_optic_pm3.compactname"] = "12x MK"
-L["uplp_optic_pm3.description"] = "Lång räckvidd precisionssikte med 12x magnifiering.\nKan utrusta <color=100,255,100>ett reservsikte</color>." .. desc_bigoptic
+L["uplp_optic_pm3.printname"] = "12× Marksman-Kikarsikte"
+L["uplp_optic_pm3.compactname"] = "12× MK"
+L["uplp_optic_pm3.description"] = "Lång räckvidd precisionssikte med 12× magnifiering.\nKan utrusta <color=100,255,100>ett reservsikte</color>." .. desc_bigoptic
 
-L["uplp_optic_generic.printname"] = "10x Precisionssikte"
-L["uplp_optic_generic.compactname"] = "10x Precision"
-L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10x magnifiering." .. desc_biggeroptic
+L["uplp_optic_generic.printname"] = "10× Precisionssikte"
+L["uplp_optic_generic.compactname"] = "10× Precision"
+L["uplp_optic_generic.description"] = "Lång räckvidd precisionssikte med 10× magnifiering." .. desc_biggeroptic
 
-L["uplp_optic_old.printname"] = "7x Kraken-Kikarsikte"
-L["uplp_optic_old.compactname"] = "7x Kraken"
-L["uplp_optic_old.description"] = "Medium räckvidd kikarsikte med 7x magnifiering." .. desc_midbigoptic
+L["uplp_optic_old.printname"] = "7× Kraken-Kikarsikte"
+L["uplp_optic_old.compactname"] = "7× Kraken"
+L["uplp_optic_old.description"] = "Medium räckvidd kikarsikte med 7× magnifiering." .. desc_midbigoptic
 
-L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
-L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
-L["uplp_optic_pso_rail.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering." .. desc_midbigoptic
+L["uplp_optic_pso_rail.printname"] = "4× OPP2-B"
+L["uplp_optic_pso_rail.compactname"] = "4× OPP2-B"
+L["uplp_optic_pso_rail.description"] = "Magnifierat riktmedel av ryskt ursprung med 4× magnifiering." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holografiskt Sikte med Förstoringsglas"
 L["uplp_optic_hhs1.compactname"] = "500S F."
@@ -391,9 +391,9 @@ L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
 L["uplp_optic_dovetail_kobra.description"] = "Militär grad reflexsikte av ryskt ursprung med ett kors hårkors." .. desc_dovetail
 
-L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
+L["uplp_optic_dovetail_pso.printname"] = "4× OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4x magnifiering." .. desc_dovetail
+L["uplp_optic_dovetail_pso.description"] = "Magnifierat riktmedel av ryskt ursprung med 4× magnifiering." .. desc_dovetail
 
 L["uplp_optic_dovetail_okp.printname"] = "OPWK-A Reflexsikte"
 L["uplp_optic_dovetail_okp.compactname"] = "OPWK"
@@ -407,9 +407,9 @@ L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
 L["uplp_optic_thermholo.compactname"] = "Aegis"
 L["uplp_optic_thermholo.description"] = "Kompakt, holografiskt värmesikte med låg vikt gjort av Aegis Precision." .. desc_cqcoptic
 
-L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
-L["uplp_optic_dedal.compactname"] = "12x CWI"
-L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12x magnifiering från Cerberus Weapons Institude gjord för militär användning." .. desc_bigoptic
+L["uplp_optic_dedal.printname"] = "12× CWI Annihilator"
+L["uplp_optic_dedal.compactname"] = "12× CWI"
+L["uplp_optic_dedal.description"] = "Magnifierat kikarsikte med 12× magnifiering från Cerberus Weapons Institude gjord för militär användning." .. desc_bigoptic
 
 -- L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
 -- L["uplp_optic_rsa.compactname"] = "Type-7"
@@ -2977,8 +2977,8 @@ L["uplp_ar18_stock_fixed_wood.description"] = "Trävariant av fabrikskolven och 
 
 ////// Optics
 L["uplp_ar18_scope_real.printname"] = "MAR-Riktmedel"
-L["uplp_ar18_scope_real.compactname"] = "MAR-R 3x"
-L["uplp_ar18_scope_real.description"] = "Fabrikstillverkat riktmedel med 3x magnifiering exklusivt gjord till MAR-63."
+L["uplp_ar18_scope_real.compactname"] = "MAR-R 3×"
+L["uplp_ar18_scope_real.description"] = "Fabrikstillverkat riktmedel med 3× magnifiering exklusivt gjord till MAR-63."
 
 //////////////////// MP9N
 L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
@@ -3750,7 +3750,7 @@ L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
 
 /////////// Attachments
 ////// Scopes
-L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2,7x"
+L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2,7×"
 L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
 L["uplp_rpg7_scope_pgo.description"] = "Sovjetisk, laxstjärtmonterat, magnifierat riktmedel till pansarvärns-granatgeväret ZPG-61." .. desc_midoptic .. "\nKan också utrustas på AK-baserade gevär om det önskas. Ignorera dock räckviddsmarkörerna - dina 7,62-skott har högre räckvidd än vad markörerna visar."
 

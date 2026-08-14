@@ -279,21 +279,21 @@ L["uplp_optic_dcl110.printname"] = "Mira Reflex para Ametralladora con Magnifica
 L["uplp_optic_dcl110.compactname"] = "MG RS"
 L["uplp_optic_dcl110.description"] = "Mirilla réflex grande y voluminosa con magnificador incorporado destinada a ametralladoras." .. desc_magoptic
 
-L["uplp_optic_acog.printname"] = "Visor 4x NCOG-4"
-L["uplp_optic_acog.compactname"] = "4x NCOG-4"
+L["uplp_optic_acog.printname"] = "Visor 4× NCOG-4"
+L["uplp_optic_acog.compactname"] = "4× NCOG-4"
 L["uplp_optic_acog.description"] = "Óptica de combate de calidad militar de origen americano con 4 aumentos. Viene con <color=100,255,100>miras de hierro de reserva</color>." .. desc_midoptic
 
 L["uplp_optic_elcan.printname"] = "Visor de Combate 4x"
-L["uplp_optic_elcan.compactname"] = "4x Combate"
+L["uplp_optic_elcan.compactname"] = "4× Combate"
 L["uplp_optic_elcan.description"] = "Óptica de combate de calidad militar de origen americano con 4 aumentos." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-16x y Telémetro"
-L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
+L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-16× y Telémetro"
+L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
 L["uplp_optic_bigass.description"] = "Visor de largo alcance con aumentos variables de 8-10x.\nViene equipado con:\n - Módulo telémetro que calcula a cuántos metros está el objetivo." .. desc_bigoptic
 
-L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
-L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
-L["uplp_optic_halo_thermal.description"] = "Óptica térmica especial con magnificación 6x fabricada por PurrPoint™ que ofrece capacidades de imagen térmica que resaltan los objetivos." .. desc_biggeroptic
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6×"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6×"
+L["uplp_optic_halo_thermal.description"] = "Óptica térmica especial con magnificación 6× fabricada por PurrPoint™ que ofrece capacidades de imagen térmica que resaltan los objetivos." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "Punto Rojo D-1"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -328,7 +328,7 @@ L["uplp_optic_genericrds.compactname"] = "HawkEye"
 -- L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic -- NEW
 
 L["uplp_optic_notacog.printname"] = "Visor Militar 3x"
-L["uplp_optic_notacog.compactname"] = "3x Militar"
+L["uplp_optic_notacog.compactname"] = "3× Militar"
 L["uplp_optic_notacog.description"] = "Robusto visor militar de origen israelí con 3 aumentos." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Visor de Competición"
@@ -336,31 +336,31 @@ L["uplp_optic_compm1.compactname"] = "Comp."
 L["uplp_optic_compm1.description"] = "Visor magnificado de origen sueco destinado al tiro deportivo y de competición." .. "\nTiene <color=100,255,100>penalizaciones menores de manejo</color> pero <color=255,255,100>ligero balanceo de la puntería</color> por la magnificación."
 
 L["uplp_optic_sniper.printname"] = "Visor con Zoom Variable 6-8x"
-L["uplp_optic_sniper.compactname"] = "6-8x VZS"
+L["uplp_optic_sniper.compactname"] = "6-8× VZS"
 L["uplp_optic_sniper.description"] = "Visor de largo alcance con aumentos variables de 6-8x." .. desc_bigoptic
 
 L["uplp_optic_ez6x.printname"] = "Visor Hunter 1-6x"
-L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
+L["uplp_optic_ez6x.compactname"] = "1-6× Hunter"
 L["uplp_optic_ez6x.description"] = "Visor de zoom variable con aumentos de 1-6x." .. desc_midbigoptic
 
 L["uplp_optic_ez8x.printname"] = "Visor Hunter 8x"
-L["uplp_optic_ez8x.compactname"] = "8x Hunter"
+L["uplp_optic_ez8x.compactname"] = "8× Hunter"
 L["uplp_optic_ez8x.description"] = "Visor de largo alcance con 8 aumentos." .. desc_bigoptic
 
 L["uplp_optic_pm3.printname"] = "Visor de Puntería 12x"
-L["uplp_optic_pm3.compactname"] = "12x MMS"
+L["uplp_optic_pm3.compactname"] = "12× MMS"
 L["uplp_optic_pm3.description"] = "Visor de largo alcance con 12 aumentos.\nPuede equipar <color=100,255,100>una óptica de reserva</color>." .. desc_bigoptic
 
 L["uplp_optic_generic.printname"] = "Visor de Precisión 10x"
-L["uplp_optic_generic.compactname"] = "10x Precisión"
+L["uplp_optic_generic.compactname"] = "10× Precisión"
 L["uplp_optic_generic.description"] = "Visor de largo alcance con 10 aumentos." .. desc_bigoptic
 
 L["uplp_optic_old.printname"] = "Visor Kraken 7x"
-L["uplp_optic_old.compactname"] = "7x Kraken"
+L["uplp_optic_old.compactname"] = "7× Kraken"
 L["uplp_optic_old.description"] = "Visor de medio alcance con 7 aumentos." .. desc_midbigoptic
 
-L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
-L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
+L["uplp_optic_pso_rail.printname"] = "4× OPP2-B"
+L["uplp_optic_pso_rail.compactname"] = "4× OPP2-B"
 L["uplp_optic_pso_rail.description"] = "Visor de origen ruso con 4 aumentos." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "Mira Holográfica SightLine™ Serie 500 c. Magnificador."
@@ -391,7 +391,7 @@ L["uplp_optic_dovetail_kobra.printname"] = "Colimador Kobra"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
 L["uplp_optic_dovetail_kobra.description"] = "Mira réflex militar de origen ruso con retícula en cruz." .. desc_dovetail
 
-L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
+L["uplp_optic_dovetail_pso.printname"] = "4× OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
 L["uplp_optic_dovetail_pso.description"] = "Visor de origen ruso con 4 aumentos." .. desc_dovetail
 
@@ -407,8 +407,8 @@ L["uplp_optic_okp.description"] = "Mira colimadora delgada y ligera de origen ru
 -- L["uplp_optic_thermholo.compactname"] = "Aegis"
 -- L["uplp_optic_thermholo.description"] = "Compact, low-weight thermal holographic sight made by Aegis Precision." .. desc_cqcoptic
 
-L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
-L["uplp_optic_dedal.compactname"] = "12x CWI"
+L["uplp_optic_dedal.printname"] = "12× CWI Annihilator"
+L["uplp_optic_dedal.compactname"] = "12× CWI"
 L["uplp_optic_dedal.description"] = "Visor con 12 aumentos del Instituto de Armamento Cerberus destinado a uso militar." .. desc_bigoptic
 
 -- L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
@@ -2966,8 +2966,8 @@ L["uplp_weapon_m590_manufacturer"] = "O.F. Mossberg & Sons, Inc."
 
 ////// Optics
 -- L["uplp_ar18_scope_real.printname"] = "MAR Optical Sight"
--- L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"
--- L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
+-- L["uplp_ar18_scope_real.compactname"] = "MAR-O 3×"
+-- L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3× magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
 -- L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
@@ -3739,7 +3739,7 @@ local sr25brll = {
 
 /////////// Attachments
 ////// Scopes
--- L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x"
+-- L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7×"
 -- L["uplp_rpg7_scope_pgo.compactname"] = "OPP1"
 -- L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher." .. desc_midoptic .. "\nCan be equipped on any AK-style rifle if desired. Just ignore the range marks though - your 7.62 rounds travel farther than those indicate."
 

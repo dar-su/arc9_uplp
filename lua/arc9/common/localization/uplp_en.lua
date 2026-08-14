@@ -284,21 +284,21 @@ L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight w. Magnifier"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
 L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns." .. desc_magoptic
 
-L["uplp_optic_acog.printname"] = "4x NCOG-4 Scope"
-L["uplp_optic_acog.compactname"] = "4x NCOG-4"
-L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4x magnification. Comes with built in <color=100,255,100>backup iron sights</color>." .. desc_midoptic
+L["uplp_optic_acog.printname"] = "4× NCOG-4 Scope"
+L["uplp_optic_acog.compactname"] = "4× NCOG-4"
+L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4× magnification. Comes with built in <color=100,255,100>backup iron sights</color>." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "4x Combat Scope"
-L["uplp_optic_elcan.compactname"] = "4x Combat"
-L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4x magnification." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "4× Combat Scope"
+L["uplp_optic_elcan.compactname"] = "4× Combat"
+L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4× magnification." .. desc_midoptic
 
-L["uplp_optic_bigass.printname"] = "8-16x Variable Zoom Scope w. Rangefinder"
-L["uplp_optic_bigass.compactname"] = "8-16x VZS-R"
-L["uplp_optic_bigass.description"] = "Long range scope with 8-10x variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
+L["uplp_optic_bigass.printname"] = "8-16× Variable Zoom Scope w. Rangefinder"
+L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
+L["uplp_optic_bigass.description"] = "Long range scope with 8-10× variable magnification.\nComes equipped with:\n - Rangefinder module that calculates how many meters away the target is." .. desc_bigoptic
 
-L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6x"
-L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6x"
-L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6x magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
+L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6×"
+L["uplp_optic_halo_thermal.compactname"] = "IR-PRO 6×"
+L["uplp_optic_halo_thermal.description"] = "Special purpose thermal optic with 6× magnification made by PurrPoint™ that offers thermal imaging capabilities that highlights targets." .. desc_biggeroptic
 
 L["uplp_optic_d1.printname"] = "D-1 Red Dot"
 L["uplp_optic_d1.compactname"] = "D-1"
@@ -332,41 +332,41 @@ L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "3x Military Scope"
-L["uplp_optic_notacog.compactname"] = "3x Military"
-L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3x magnification." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "3× Military Scope"
+L["uplp_optic_notacog.compactname"] = "3× Military"
+L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3× magnification." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Competition Scope"
 L["uplp_optic_compm1.compactname"] = "Comp."
 L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. "\nHas <color=100,255,100>minor handling penalities</color> but <color=255,255,100>slight aim sway</color> from the magnification."
 
-L["uplp_optic_sniper.printname"] = "6-8x Variable Zoom Scope"
-L["uplp_optic_sniper.compactname"] = "6-8x VZS"
-L["uplp_optic_sniper.description"] = "Long range scope with 6-8x variable magnification." .. desc_bigoptic
+L["uplp_optic_sniper.printname"] = "6-8× Variable Zoom Scope"
+L["uplp_optic_sniper.compactname"] = "6-8× VZS"
+L["uplp_optic_sniper.description"] = "Long range scope with 6-8× variable magnification." .. desc_bigoptic
 
-L["uplp_optic_ez6x.printname"] = "1-6x Hunter Scope"
-L["uplp_optic_ez6x.compactname"] = "1-6x Hunter"
-L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6x magnification." .. desc_midbigoptic
+L["uplp_optic_ez6x.printname"] = "1-6× Hunter Scope"
+L["uplp_optic_ez6x.compactname"] = "1-6× Hunter"
+L["uplp_optic_ez6x.description"] = "Variable zoom scope with 1-6× magnification." .. desc_midbigoptic
 
-L["uplp_optic_ez8x.printname"] = "8x Hunter Scope"
-L["uplp_optic_ez8x.compactname"] = "8x Hunter"
-L["uplp_optic_ez8x.description"] = "Long range scope with 8x magnification." .. desc_bigoptic
+L["uplp_optic_ez8x.printname"] = "8× Hunter Scope"
+L["uplp_optic_ez8x.compactname"] = "8× Hunter"
+L["uplp_optic_ez8x.description"] = "Long range scope with 8× magnification." .. desc_bigoptic
 
-L["uplp_optic_pm3.printname"] = "12x Marksman Scope"
-L["uplp_optic_pm3.compactname"] = "12x MMS"
-L["uplp_optic_pm3.description"] = "Long range marksman scope with 12x magnification.\nCan equip <color=100,255,100>a backup optic</color>." .. desc_bigoptic
+L["uplp_optic_pm3.printname"] = "12× Marksman Scope"
+L["uplp_optic_pm3.compactname"] = "12× MMS"
+L["uplp_optic_pm3.description"] = "Long range marksman scope with 12× magnification.\nCan equip <color=100,255,100>a backup optic</color>." .. desc_bigoptic
 
-L["uplp_optic_generic.printname"] = "10x Precision Scope"
-L["uplp_optic_generic.compactname"] = "10x Precision"
-L["uplp_optic_generic.description"] = "Long range marksman scope with 10x magnification." .. desc_bigoptic
+L["uplp_optic_generic.printname"] = "10× Precision Scope"
+L["uplp_optic_generic.compactname"] = "10× Precision"
+L["uplp_optic_generic.description"] = "Long range marksman scope with 10× magnification." .. desc_bigoptic
 
-L["uplp_optic_old.printname"] = "7x Kraken Scope"
-L["uplp_optic_old.compactname"] = "7x Kraken"
-L["uplp_optic_old.description"] = "Medium range scope with 7x magnification." .. desc_midbigoptic
+L["uplp_optic_old.printname"] = "7× Kraken Scope"
+L["uplp_optic_old.compactname"] = "7× Kraken"
+L["uplp_optic_old.description"] = "Medium range scope with 7× magnification." .. desc_midbigoptic
 
-L["uplp_optic_pso_rail.printname"] = "4x OPP2-B"
-L["uplp_optic_pso_rail.compactname"] = "OPP2-B"
-L["uplp_optic_pso_rail.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_midbigoptic
+L["uplp_optic_pso_rail.printname"] = "4× OPP2-B"
+L["uplp_optic_pso_rail.compactname"] = "4× OPP2-B"
+L["uplp_optic_pso_rail.description"] = "Magnified scope of Russian origin with 4× magnification." .. desc_midbigoptic
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."
@@ -396,9 +396,9 @@ L["uplp_optic_dovetail_kobra.printname"] = "Kobra Collimator"
 L["uplp_optic_dovetail_kobra.compactname"] = "Kobra"
 L["uplp_optic_dovetail_kobra.description"] = "Military-grade reflex sight of Russian origin with a cross reticle." .. desc_dovetail .. desc_cqcoptic
 
-L["uplp_optic_dovetail_pso.printname"] = "4x OPP2"
+L["uplp_optic_dovetail_pso.printname"] = "4× OPP2"
 L["uplp_optic_dovetail_pso.compactname"] = "OPP2"
-L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4x magnification." .. desc_dovetail .. desc_midoptic
+L["uplp_optic_dovetail_pso.description"] = "Magnified scope of Russian origin with 4× magnification." .. desc_dovetail .. desc_midoptic
 
  -- "Optical Precision Scope" in Russian
  -- "Оптический прецизионный прицел" - 'OPP'
@@ -418,9 +418,9 @@ L["uplp_optic_thermholo.printname"] = "Aegis Precision Mini-Thermal"
 L["uplp_optic_thermholo.compactname"] = "Aegis"
 L["uplp_optic_thermholo.description"] = "Compact, low-weight thermal holographic sight made by Aegis Precision." .. desc_cqcoptic
 
-L["uplp_optic_dedal.printname"] = "12x CWI Annihilator"
-L["uplp_optic_dedal.compactname"] = "12x CWI"
-L["uplp_optic_dedal.description"] = "Magnified scope with 12x magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic
+L["uplp_optic_dedal.printname"] = "12× CWI Annihilator"
+L["uplp_optic_dedal.compactname"] = "12× CWI"
+L["uplp_optic_dedal.description"] = "Magnified scope with 12× magnification from Cerberus Weapons Institute intended for military use." .. desc_bigoptic
 
 L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
 L["uplp_optic_rsa.compactname"] = "Type-7"
@@ -3016,8 +3016,8 @@ L["uplp_ar18_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffe
 
 ////// Optics
 L["uplp_ar18_scope_real.printname"] = "MAR Optical Sight"
-L["uplp_ar18_scope_real.compactname"] = "MAR-O 3x"
-L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3x magnification exclusively made for the MAR-63."
+L["uplp_ar18_scope_real.compactname"] = "MAR-O 3×"
+L["uplp_ar18_scope_real.description"] = "Factory-made optic with 3× magnification exclusively made for the MAR-63."
 
 //////////////////// MP9N
 L["uplp_weapon_mp9"] = "F9 \"Cheetah\""
@@ -3826,12 +3826,12 @@ L["uplp_weapon_rpg7_manufacturer"] = "Bazalt"
 
 /////////// Attachments
 ////// Scopes
-L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7x Optical Sight"
-L["uplp_rpg7_scope_pgo.compactname"] = "2.7x OPP1"
+L["uplp_rpg7_scope_pgo.printname"] = "OPP1 2.7× Optical Sight"
+L["uplp_rpg7_scope_pgo.compactname"] = "2.7× OPP1"
 L["uplp_rpg7_scope_pgo.description"] = "Soviet-era, dovetail-mounted, magnified optic specifically made for the ZPG-61 anti-tank launcher.\nSignificantly improves launcher accuracy."
 
-L["uplp_scope_pgo.printname"] = "OPP1 2.7x Optical Sight"
-L["uplp_scope_pgo.compactname"] = "2.7x OPP1"
+L["uplp_scope_pgo.printname"] = "OPP1 2.7× Optical Sight"
+L["uplp_scope_pgo.compactname"] = "2.7× OPP1"
 L["uplp_scope_pgo.description"] = "Soviet magnified optic specifically made for the ZPG-61 anti-tank launcher.\nCan be used on AK pattern rifles too - just ignore the range marks." .. desc_dovetail .. desc_midoptic
 
 ////// Rockets

@@ -183,10 +183,10 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 -- L["uplp_vintage_optic_hiLux.printname"] = "Reflector Sight"
 -- L["uplp_vintage_optic_hiLux.compactname"] = "Reflector"
 
--- L["uplp_vintage_optic_hunting.printname"] = "3x Jäger Telescopic Sight"
+-- L["uplp_vintage_optic_hunting.printname"] = "3× Jäger Telescopic Sight"
 -- L["uplp_vintage_optic_hunting.compactname"] = "Jäger"
 
--- L["uplp_vintage_optic_musket.printname"] = "3.4x Musket Telescopic Sight"
+-- L["uplp_vintage_optic_musket.printname"] = "3.4× Musket Telescopic Sight"
 -- L["uplp_vintage_optic_musket.compactname"] = "Musket"
 -- L["uplp_vintage_optic_musket.description"] = "Magnified scope with medium magnification." .. desc_midoptic
 
@@ -194,10 +194,10 @@ L["uplp_m249_bipod.description"] = "Standard issue bipod for the SAW-46."
 -- L["uplp_vintage_optic_sharps.compactname"] = "Buffalo"
 -- L["uplp_vintage_optic_sharps.description"] = "Magnified scope with high magnification." .. desc_midoptic
 
--- L["uplp_vintage_optic_mg08.printname"] = "4x Visier-08 Scope"
+-- L["uplp_vintage_optic_mg08.printname"] = "4× Visier-08 Scope"
 -- L["uplp_vintage_optic_mg08.compactname"] = "Visier-08"
 
--- L["uplp_vintage_optic_box.printname"] = "6x Longthorn Telescopic Sight"
+-- L["uplp_vintage_optic_box.printname"] = "6× Longthorn Telescopic Sight"
 -- L["uplp_vintage_optic_box.compactname"] = "Longhorn"
 
 -- L["uplp_vintage_optic_long.printname"] = "9x Reacher Long Scope"

@@ -89,6 +89,7 @@ ATT.CompactName = "500S"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.7
 
 ATT.ActivateElements = {"uplp_optic_used"}
 -- ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -146,6 +147,7 @@ ATT.CompactName = "Kobra"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.8
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -200,6 +202,7 @@ ATT.CompactName = "Military"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.6
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -253,6 +256,7 @@ ATT.CompactName = "SWX"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.5
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -307,6 +311,7 @@ ATT.CompactName = "Spec-Ops"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.79
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -450,8 +455,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
 ATT = {}
 
-ATT.PrintName = "4x NCOG-4 Scope" -- "ACOG 4x32 Scope"
-ATT.CompactName = "4x NCOG-4"
+ATT.PrintName = "4× NCOG-4 Scope" -- "ACOG 4x32 Scope"
+ATT.CompactName = "4× NCOG-4"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
@@ -515,8 +520,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_acog")
 
 ATT = {}
 
-ATT.PrintName = "4x Combat Scope" -- ELCAN Scope
-ATT.CompactName = "4x Combat"
+ATT.PrintName = "4× Combat Scope" -- ELCAN Scope
+ATT.CompactName = "4× Combat"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
@@ -575,8 +580,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_elcan")
 
 ATT = {}
 
-ATT.PrintName = "8-16x Variable Zoom Scope with Rangefinder" -- B.ASS Variable Zoom Scope with Rangefinder
-ATT.CompactName = "8-16x VZS-R"
+ATT.PrintName = "8-16× Variable Zoom Scope with Rangefinder" -- B.ASS Variable Zoom Scope with Rangefinder
+ATT.CompactName = "8-16× VZS-R"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -717,8 +722,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass")
 
 ATT = {}
 
-ATT.PrintName = "8-12x Variable Zoom Thermal Scope with Rangefinder" -- B.ASS Variable Zoom Thermal Scope with Rangefinder
-ATT.CompactName = "8-12x VZTS-R"
+ATT.PrintName = "8-12× Variable Zoom Thermal Scope with Rangefinder" -- B.ASS Variable Zoom Thermal Scope with Rangefinder
+ATT.CompactName = "8-12× VZTS-R"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -872,8 +877,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_bigass_thermal")
 
 ATT = {}
 
-ATT.PrintName = "PurrPoint™ IR-PRO 6x"
-ATT.CompactName = "6x IR-PRO"
+ATT.PrintName = "PurrPoint™ IR-PRO 6×"
+ATT.CompactName = "6× IR-PRO"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
@@ -1026,8 +1031,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_halo_thermal")
 
 ATT = {}
 
-ATT.PrintName = "4x OPP2-B" -- "ACOG 4x32 Scope"
-ATT.CompactName = "OPP2-B"
+ATT.PrintName = "4× OPP2-B" -- "ACOG 4x32 Scope"
+ATT.CompactName = "4× OPP2-B"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
@@ -1088,6 +1093,7 @@ ATT.CompactName = "D-1"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
+ATT.SortOrder = 1.8
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1138,7 +1144,7 @@ ATT.CompactName = "D-1 R"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
-ATT.SortOrder = 9
+ATT.SortOrder = 10
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1194,6 +1200,7 @@ ATT.CompactName = "Pistol"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
+ATT.SortOrder = 1
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1341,6 +1348,7 @@ ATT.CompactName = "XW"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
+ATT.SortOrder = 0.91
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1445,6 +1453,7 @@ ATT.CompactName = "HawkEye"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.2
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -1491,8 +1500,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_genericrds")
 
 ATT = {}
 
-ATT.PrintName = "3x Military Scope" -- IMI X3 Scope
-ATT.CompactName = "3x Military"
+ATT.PrintName = "3× Military Scope" -- IMI X3 Scope
+ATT.CompactName = "3× Military"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
@@ -1605,8 +1614,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_compm1")
 
 ATT = {}
 
-ATT.PrintName = "6-8x Variable Zoom Scope" -- Precision Systems Variable Zoom Scope
-ATT.CompactName = "6-8x VZS"
+ATT.PrintName = "6-8× Variable Zoom Scope" -- Precision Systems Variable Zoom Scope
+ATT.CompactName = "6-8× VZS"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -1685,8 +1694,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_sniper")
 
 ATT = {}
 
-ATT.PrintName = "1-6x Hunter Scope"
-ATT.CompactName = "1-6x Hunter"
+ATT.PrintName = "1-6× Hunter Scope"
+ATT.CompactName = "1-6× Hunter"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
@@ -1778,8 +1787,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_ez6x")
 
 ATT = {}
 
-ATT.PrintName = "8x Hunter Scope"
-ATT.CompactName = "8x Hunter"
+ATT.PrintName = "8× Hunter Scope"
+ATT.CompactName = "8× Hunter"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -1840,8 +1849,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_ez8x")
 
 ATT = {}
 
-ATT.PrintName = "12x Marksman Scope"
-ATT.CompactName = "12x MMS"
+ATT.PrintName = "12× Marksman Scope"
+ATT.CompactName = "12× MMS"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -2013,8 +2022,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_testthermal")
 
 ATT = {}
 
-ATT.PrintName = "10x Precision Scope"
-ATT.CompactName = "10x Precision"
+ATT.PrintName = "10× Precision Scope"
+ATT.CompactName = "10× Precision"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -2074,8 +2083,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_generic")
 
 ATT = {}
 
-ATT.PrintName = "12x CWI Annihilator"
-ATT.CompactName = "12x CWI"
+ATT.PrintName = "12× CWI Annihilator"
+ATT.CompactName = "12× CWI"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -2138,8 +2147,8 @@ ARC9.LoadAttachment(ATT, "uplp_optic_dedal")
 
 ATT = {}
 
-ATT.PrintName = "7x Kraken Scope"
-ATT.CompactName = "7x Kraken"
+ATT.PrintName = "7× Kraken Scope"
+ATT.CompactName = "7× Kraken"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "> 6×"
@@ -2379,6 +2388,7 @@ ATT.CompactName = "10S"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.3
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -2436,6 +2446,7 @@ ATT.CompactName = "ELITE"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.0
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -2493,6 +2504,7 @@ ATT.CompactName = "Wraith"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.35
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -2753,6 +2765,7 @@ ATT.CompactName = "OPWK-B"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.25
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -3020,6 +3033,7 @@ ATT.CompactName = "STP"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.99
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -3077,6 +3091,7 @@ ATT.CompactName = "Type 7"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
+ATT.SortOrder = 2
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -3136,6 +3151,7 @@ ATT.CompactName = "Falco"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.32
 
 ATT.ActivateElements = {"uplp_optic_used"}
 -- ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -3195,6 +3211,7 @@ ATT.CompactName = "UH1"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "1×"
+ATT.SortOrder = 1.58
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -3303,6 +3320,7 @@ ATT.CompactName = "SRo"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
+ATT.SortOrder = 1.2
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
@@ -3404,6 +3422,7 @@ ATT.CompactName = "Just"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "Compact"
+ATT.SortOrder = 0.9
 
 ATT.ActivateElements = {"uplp_optic_used"}
 
