@@ -1012,6 +1012,7 @@ SWEP.Attachments = {
         Installed = "uplp_ar15_rs_mbus",
         Pos = Vector(0, -3.45, -4.5),
         Ang = Angle(90, 90, 180),
+        CorrectiveAng = Angle(-0.49, 0.7, 0),
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
@@ -1130,6 +1131,17 @@ SWEP.Attachments = {
         Pos = Vector(1, 2.5, 1.5),
         Ang = Angle(90, 0, -90),
         CosmeticOnly = true
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_backup"),
+        Category = {"uplp_backup_optic_front"},
+        Bone = "body",
+        Pos = Vector(0, -3.45, 7.4),
+        Ang = Angle(90, 90, 180),
+        RequireElements = {"uplp_backup_optic_is"},
+        Installed = "uplp_backup_optic_is_front",
+        Integral = "uplp_backup_optic_is_front",
+        Hidden = true,
     },
 }
 
