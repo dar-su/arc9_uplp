@@ -5,14 +5,14 @@
 	[*] Added the [b]LA M2K11[/b], a modernized version of the aforementioned service pistol
 	
 	[*] [b]PDW-7[/b] got a refresh - new animation set by Dummified, few new attachments and slight rebalance!
-	[*] [b]AR-15[/b], [b]AR-15[/b] and [b]AR-15[/b] have received new reload animations - more fancy now!
-	[*] Added many new attachments
+	[*] [b]AR-15[/b], [b]AK[/b] and [b]Molot[/b] have received new fresh reload animations!
+	[*] [b]AR-15[/b] and [b]AK[/b] got new detailed magazine models and a little facelift
+	[*] Added many new attachments:
 	[list]
-		[*] 6 new universal optics
-		[*] 3 new tactical accessories
-		[*] [b]AR-15[/b]: New [b]Civilian-Spec[/b] Handguard and Stock
-		[*] [b]AK[/b]: New [b]45-Round 5.45 Polymer Magazine[/b]
-		[*] [b]AK[/b] & [b]Molot[/b]: New [b]HPKM[/b] Handguard and [b]Zenith Pistol Grip[/b]
+		[*] 5 new universal optics, 3 new tactical accessories, 2 new grips
+		[*] [b]AR-15[/b]: New [b]Civilian-Spec[/b] Handguard and Stock, [b]Carbine Handguard[/b] and [b]40-Round Polymer Magazine[/b]
+		[*] [b]AK[/b]: New [b]45-Round 5.45 Polymer Magazine[/b], [b]HPKM[/b] Handguard and [b]Zenith Pistol Grip[/b]
+		[*] [b]AW Sniper[/b]: New white foldable stock
 	[/list]
 	[*] Added new [b]Damage Multiplier[/b] settings inside the ARC9 Settings menu
 	[list]
@@ -24,22 +24,30 @@
 
 [h1]Changed content[/h1]
 [list]
-	[*] All Shotguns have been rebalanced, and some shotgun shells have been redesigned;
+	[*] Updated half of firing and reloading SFX again
+
+	[*] All Shotguns have been rebalanced, and some shotgun shells have been redesigned:
 	[list]
 		[*] Improved damage and accuracy on all Shotguns
-		[*] Added [b]Sabot Slugs[/b], a single accurate slug round with reduced stopping power.
-		[list]
-			[*] This replaces [b]Double Slugs[/b] (Black shells).
-		[/list]
-		[*] Improved the visual effects when using Dragon's Breath and Explosive Slug Rounds.
+		[*] [b]Double Slugs[/b] were replaced with [b]Sabot Slugs[/b], a single more lighter and faster slug round.
+		[*] Improved the visual effects for Dragon's Breath and Explosive Slug Rounds.
 	[/list]
-	[*] AW Sniper was rescaled to IRL size, animations were tweaked
-	[*] PV-9' ironsights are way shorter now (sadly, sticker slot in rear sight was removed)
-	[*] Updated plenty of firing and reloading SFX
+
+	[*] Tactical Modules were rebalanced
 	[*] Headshots now deal up to 50% more damage, depending on the weapon
 	[*] Debuffed attachments that enabled automatic/burst fire on pistols
-	[*] PM92: Tweaked reload animations
+	[*] Sway was greatly reduced
 	[*] MRD57: Reduced reloading speed by ~10%
+	[*] 5.56mm 52R magazines hold 60 rounds now; 5.45mm 40R hold 45 now
+
+	[*] AW Sniper was rescaled to IRL size, animations were tweaked (now it has two different cycle anims)
+	[*] Added tape to most SMG magazines, to match with PV-9 and F9
+	[*] PM92: Tweaked reload animations
+	[*] PV-9' ironsights are way shorter now (sadly, sticker slot in rear sight was removed)
+	[*] Since AR-15 got new magazines, XAR and AW-UG were updated to use them too
+	[*] M40 GL: Properly works in third person now
+	[*] Deagle got wider ironsights
 	[*] AK-12 code was remade, so your presets will be removed. Sorry
-	[*] Fixed various bugs
+
+	[*] Fixed lots of bugs
 [/list]

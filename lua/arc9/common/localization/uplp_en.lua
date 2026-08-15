@@ -2055,6 +2055,10 @@ L["uplp_mp7_grip_none.printname"] = "None"
 L["uplp_mp7_grip_none.compactname"] = "None"
 L["uplp_mp7_grip_none.description"] = "Utilise the PDW-7's undermounted rail as a hand support."
 
+L["uplp_mp7_grip_folded.printname"] = "Folded Grip"
+L["uplp_mp7_grip_folded.compactname"] = "Folded"
+L["uplp_mp7_grip_folded.description"] = "Folds the PDW-7's grip."
+
 //////////////////// SCAR
 L["uplp_weapon_scar"] = "XAR"
 L["uplp_weapon_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."

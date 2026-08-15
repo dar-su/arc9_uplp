@@ -1172,6 +1172,7 @@ SWEP.Attachments = {
         Pos = Vector(-0.06, -1.8, -1.8),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(1.5, 0, -3),
+        Scale = 1.05
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_extra"),
