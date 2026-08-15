@@ -9,7 +9,7 @@ $cdmaterials "models\weapons\arc9\uplp"
 $surfaceprop "weapon"
 $contents "solid"
 
-$attachment "1" "barrel_ubgl" 0 14 0.5 rotate -90 0 0
+$attachment "1" "barrel_ubgl" 0 0 2 rotate -90 0 0
 $attachment "2" "body"   0 0 0 rotate 0 0 0
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 
@@ -22,7 +22,7 @@ $sequence "idle_armed" {
 	fps 30
 }
 $sequence "reload" {
-	"anims/reload_ubgl.smd"
+	"anims/reload_ubgl_new.smd"
 	fadein 0.1
 	fadeout 0.1
 	fps 24

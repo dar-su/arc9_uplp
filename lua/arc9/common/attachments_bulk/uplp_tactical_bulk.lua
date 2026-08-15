@@ -523,11 +523,15 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 100
 
 ATT.MuzzleEffectQCAUBGL = 1
--- ATT.MuzzleDeviceUBGL = true
+ATT.MuzzleDeviceUBGL = true
+ATT.MuzzleParticleUBGL = "muzzleflash_m79"
+
 ATT.DropMagazineAmountUBGL = 1
 ATT.DropMagazineModelUBGL = "models/weapons/arc9/uplp_ubgl_m203_casing.mdl"
-ATT.DropMagazineTimeUBGL = 0.75
-ATT.DropMagazinePosUBGL = Vector(0, -9, 5)
+ATT.DropMagazineTimeUBGL = 0.65
+ATT.DropMagazinePosUBGL = Vector(0, -1, 4)
+ATT.ShouldDropMagUBGL = true
+-- ATT.DropMagazineQCAUBGL = 2
 ATT.DropMagazineVelocityUBGL = Vector(0, -30, 0)
 ATT.DropMagazineAngUBGL = Angle(90, 100, 80)
 
@@ -594,8 +598,9 @@ ATT.IKAnimationProxy = {
 } -- When an animation event plays, override it with one based on this LHIK model.
 ATT.IKGunMotionQCA = 2
 
-ATT.IKGunMotionMult = 0.5
-ATT.IKGunMotionAngleMult = 0.5
+-- ATT.IKGunMotionMult = 0.5
+ATT.IKGunMotionAngleMultReal = 0.75
+ATT.IKGunMotionAnchor = Vector(-5, -1, -7)
 
 ATT.IKCameraMotionQCA = 3
 ATT.IKCameraMotionOffsetAngle = Angle(0, 0, 90)
@@ -637,8 +642,6 @@ ATT.TriggerDelayUBGL = false
 
 ATT.ShootEntUBGL = "arc9_uplp_40mm_he"
 ATT.ShootEntForceUBGL = 6000
-
-ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
 ATT.ModelOffset = Vector(-0.55, 0.05, 1.5)
 ATT.ModelAngleOffset = Angle(0, 180, 0)
