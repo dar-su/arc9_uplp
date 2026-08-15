@@ -273,7 +273,7 @@ SWEP.CustomizeSnapshotFOV = 60
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/2011_mag_std.mdl"
-SWEP.DropMagazineTime = 0.4
+SWEP.DropMagazineTime = 0.45
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
@@ -415,9 +415,6 @@ end
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        EventTable = {
-            {hide = 1, t = 0},
-        },
         -- Time = 0.1,
     },
     ["ready"] = {
@@ -563,9 +560,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = path2011 .. "magin.ogg", t = 36 / 60 },
             { s = UTCrattle, t = 52 / 60 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -591,9 +588,9 @@ SWEP.Animations = {
             { s = path2011 .. "sliderel1.ogg", t = 64 / 60 },
             { s = path2011 .. "sliderel2.ogg", t = 71 / 60 },
             { s = UTCrattle, t = 75 / 60 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -618,9 +615,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60 + 6/30, v = 0.3 },
             { s = path2011 .. "magin.ogg", t = 36 / 60 + 5/30 },
             { s = UTCrattle, t = 52 / 60 + 7/30 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.3},
-            {hide = 2, t = 1.733}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.7}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -646,9 +643,9 @@ SWEP.Animations = {
             { s = path2011 .. "sliderel1.ogg", t = 64 / 60 + 6/30 },
             { s = path2011 .. "sliderel2.ogg", t = 71 / 60 + 6/30 },
             { s = UTCrattle, t = 75 / 60 + 6/30 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.7}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -673,9 +670,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60 + 6/30, v = 0.3 },
             { s = path2011 .. "magin.ogg", t = 36 / 60 + 8/30 },
             { s = UTCrattle, t = 52 / 60 + 9/30 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.3},
-            {hide = 2, t = 1.733}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.7}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -701,9 +698,9 @@ SWEP.Animations = {
             { s = path2011 .. "sliderel1.ogg", t = 64 / 60 + 6/30 },
             { s = path2011 .. "sliderel2.ogg", t = 71 / 60 + 6/30 },
             { s = UTCrattle, t = 75 / 60 + 6/30 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.7}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

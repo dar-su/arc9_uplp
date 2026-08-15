@@ -268,7 +268,7 @@ SWEP.CustomizeSnapshotFOV = 60
 SWEP.ShouldDropMag = true
 SWEP.ShouldDropMagEmpty = true
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/1911_mag_std.mdl"
-SWEP.DropMagazineTime = 0.4
+SWEP.DropMagazineTime = 0.45
 SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(80, 90, 90)
@@ -358,6 +358,8 @@ SWEP.BulletBones = {
 SWEP.ReloadHideBoneTables = {
     [1] = {
         "mag",
+        "springstart",
+        "springend",
         "bullet1",
         "bullet2",
         "bullet3",
@@ -410,9 +412,6 @@ end
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        EventTable = {
-            {hide = 1, t = 0},
-        },
         -- Time = 0.1,
     },
     ["ready"] = {
@@ -558,9 +557,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = pathRZ .. "magin.ogg", t = 22 / 60 },
             { s = UTCrattle, t = 52 / 60 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -586,9 +585,9 @@ SWEP.Animations = {
             { s = pathRZ .. "sliderel1.ogg", t = 58 / 60 },
             { s = pathRZ .. "sliderel2.ogg", t = 61 / 60 },
             { s = UTCrattle, t = 75 / 60 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.55}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -613,9 +612,9 @@ SWEP.Animations = {
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60 + 6/30, v = 0.3 },
             { s = pathRZ .. "magin.ogg", t = 22 / 60 + 9/30 },
             { s = UTCrattle, t = 52 / 60 + 9/30 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.733}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.7}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -641,9 +640,9 @@ SWEP.Animations = {
             { s = pathRZ .. "sliderel1.ogg", t = 58 / 60 + 11/30 },
             { s = pathRZ .. "sliderel2.ogg", t = 61 / 60 + 11/30 },
             { s = UTCrattle, t = 75 / 60 + 6/30 },
-            {hide = 1, t = 0},
-            {hide = 0, t = 0.2},
-            {hide = 2, t = 1.44}
+            {hide = 0, t = 0},
+            {hide = 1, t = 0.45},
+            {hide = 0, t = 0.7}
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

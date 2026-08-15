@@ -14,8 +14,4 @@
 	"$detailscale" "1"
 	"$detailblendfactor" "0.5"
 	"$detailblendmode" "5"
-
-	"$ignorez" "1"
-	"$model" "1"
-	$flags 32768 
 }
