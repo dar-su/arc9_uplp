@@ -135,7 +135,7 @@ ATT = {}
 ATT.PrintName = "uplp_2011_int_double"
 ATT.CompactName = "uplp_2011_int_double"
 ATT.Description = ATT.PrintName
-ATT.Icon = Material(iconfolder .. "intjw.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "intb.png", "mips smooth")
 
 ATT.Category = "uplp_2011_int"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"

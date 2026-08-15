@@ -39,6 +39,7 @@
 	[*] Sway was greatly reduced
 	[*] MRD57: Reduced reloading speed by ~10%
 	[*] 5.56mm 52R magazines hold 60 rounds now; 5.45mm 40R hold 45 now
+	[*] Swapped default AR-15 stock with updated Commando one
 
 	[*] AW Sniper was rescaled to IRL size, animations were tweaked (now it has two different cycle anims)
 	[*] Added tape to most SMG magazines, to match with PV-9 and F9

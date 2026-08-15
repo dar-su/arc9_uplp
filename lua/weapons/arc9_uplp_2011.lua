@@ -837,6 +837,7 @@ SWEP.AttachmentElements = {
 
     ["uplp_2011_int_hardened"] = { Bodygroups = { { 4, 1 } } },
     ["uplp_2011_int_jw"] = { Bodygroups = { { 4, 2 } } },
+    ["uplp_2011_int_double"] = { Bodygroups = { { 4, 4 } } },
 
     ["uplp_2011_mag_20"] = { Bodygroups = { { 5, 1 } } },
     ["uplp_2011_mag_24"] = { Bodygroups = { { 5, 2 } } },

@@ -51,6 +51,7 @@ $bodygroup "internals" {
 	studio "2011 internals sharp.smd"
 	studio "2011 internals jw.smd"
 	studio "2011 internals jw bronze.smd"
+	studio "2011 internals binary.smd"
 	blank
 }
 
