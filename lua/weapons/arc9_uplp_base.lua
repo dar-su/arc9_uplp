@@ -74,7 +74,7 @@ SWEP.AimDownSightsTimeMultBipod = 0.5
 
 -------------------------- SWAY
 SWEP.Sway = 0
-SWEP.SwayMultSights = 1
+SWEP.SwayMultSights = 0.1
 -------------------------- EXTRAS / ADDED LATER FOR ALL WEAPONS
 
 SWEP.RicochetChance = 0.05 -- Low ricochet chance

@@ -193,7 +193,7 @@ SWEP.SprintToFireTime = 0.4
 
 SWEP.BarrelLength = 50
 
-SWEP.SwayMultSights = 1
+SWEP.SwayMultSights = 0.1
 SWEP.SwayMultMove = 5
 
 -- Shooting and Firemodes

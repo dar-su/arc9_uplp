@@ -184,7 +184,7 @@ SWEP.AimDownSightsTime = 0.45 - 0.05 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.48 - 0.05 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 0
-SWEP.SwayMultSights = 2
+SWEP.SwayMultSights = 0.2
 SWEP.BarrelLength = 35
 
 -- SWEP.Bipod = true

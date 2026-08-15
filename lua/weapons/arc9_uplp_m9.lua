@@ -194,7 +194,7 @@ SWEP.Firemodes = {
     { Mode = 1 }, -- Semi
 }
 
-SWEP.SwayMultSights = 1.25
+SWEP.SwayMultSights = 0.125
 
 SWEP.ShootPitch = 100
 SWEP.ShootVol = 110
@@ -464,6 +464,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire"},
         -- Time = 1,
+        Mult = 0.75,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
         -- IKTimeLine = {

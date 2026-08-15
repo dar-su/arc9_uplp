@@ -196,7 +196,7 @@ SWEP.Firemodes = {
     { Mode = 1 }, -- Semi
 }
 
-SWEP.SwayMultSights = 1.25
+SWEP.SwayMultSights = 0.125
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120

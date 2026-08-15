@@ -200,7 +200,7 @@ SWEP.TriggerDelayTime = 0.02 -- Time until weapon fires.
 SWEP.TriggerDelayRepeat = false -- Whether to do it for every shot on automatics.
 SWEP.TriggerDelayCancellable = false
 
-SWEP.SwayMultSights = 1.25
+SWEP.SwayMultSights = 0.125
 
 SWEP.ShootPitch = 100
 SWEP.ShootVolume = 120
