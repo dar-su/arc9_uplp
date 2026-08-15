@@ -528,7 +528,7 @@ ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
 ATT.DropMagazineAmountUBGL = 1
 ATT.DropMagazineModelUBGL = "models/weapons/arc9/uplp_ubgl_m203_casing.mdl"
-ATT.DropMagazineTimeUBGL = 22/30
+ATT.DropMagazineTimeUBGL = 20/30
 ATT.DropMagazinePosUBGL = Vector(0, -1, 4)
 ATT.ShouldDropMagUBGL = true
 -- ATT.DropMagazineQCAUBGL = 2
@@ -542,7 +542,7 @@ ATT.DropMagazineSoundsUBGL = {
     path .. "40mm_casing_1.ogg",
 }
 
-ATT.ReloadPoseParameterTablesUBGL = { -- using this cuz its quite unused free nwint (regular ReloadHideBoneTables interfers with base weapon hidden bones)
+local ReloadPoseParameterTablesUBGL = { -- using this cuz its quite unused free nwint (regular ReloadHideBoneTables interfers with base weapon hidden bones)
     [8] = {
         "grenade",
     },
@@ -578,8 +578,8 @@ ATT.IKAnimationProxy = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 70/30, v = 0.8 },
 
             {ppi = 8, t = 0},
-            {ppi = 9, t = 22/30},
-            {ppi = 1, t = 35/30},
+            {ppi = 9, t = 20/30},
+            {ppi = 1, t = 30/30},
         }
     },
     ["enter_ubgl"] = {
@@ -681,7 +681,7 @@ local v1 = Vector(1, 1, 1)
 local function getHiddenBones2(self)
     local bones = {}
     local index = self:GetPoseParameterIndex()
-    local reloadhidebones = index != 0 and ATT.ReloadPoseParameterTables
+    local reloadhidebones = index != 0 and ReloadPoseParameterTablesUBGL
 
     if reloadhidebones and reloadhidebones[index] then
         for _, bone in ipairs(reloadhidebones[index]) do
