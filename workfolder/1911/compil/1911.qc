@@ -279,17 +279,15 @@ $sequence "reload_empty_ext" {
 }
 
 $sequence "inspect" {
-	"anims\inspect_old.smd"
+	"anims\inspect.smd"
 	// snap
 	fps 30
 }
 $sequence "inspect_empty" {
-	"anims\inspect_old_e.smd"
+	"anims\inspect_e.smd"
 	// snap
 	fps 30
 }
-
-
 
 
 
@@ -344,8 +342,13 @@ $sequence "reload_sg" {
 	snap
 }
 
+$sequence "inspect_sg" {
+	"anims\inspect_sg.smd"
+	// snap
+	fps 30
+}
 $sequence "inspect_empty_sg" {
-	"anims\inspect_old_esg.smd"
+	"anims\inspect_sg_e.smd"
 	// snap
 	fps 30
 }

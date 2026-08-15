@@ -420,11 +420,13 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
         return "fire_sg"
     elseif anim == "ready" then
         return "draw"
+    elseif anim == "inspect" or anim == "inspect_empty" then
+        return anim .. "_sg"
     end
 end
 
 ATT.Hook_TranslateSource = function(wep, anim)
-    if anim == "idle_empty" or anim == "fire" or anim == "draw_empty" or anim == "holster_empty" or anim == "modeswitch_empty" or anim == "inspect_empty" then
+    if anim == "idle_empty" or anim == "fire" or anim == "draw_empty" or anim == "holster_empty" or anim == "modeswitch_empty" then
         return anim .. "_sg"
     end
 end
