@@ -3892,7 +3892,7 @@ L["uplp_1911_grip_pachmayr.description"] = "Durable wooden pistol grip with a bu
 
 L["uplp_1911_grip_acryl.printname"] = "Acryl Glass Pistol Grip"
 L["uplp_1911_grip_acryl.compactname"] = "Acryl"
-L["uplp_1911_grip_acryl.description"] = "Custom pistol grip for the ASP 1911 allowing the user to attach a picture inside. Personalization at its finest!"
+L["uplp_1911_grip_acryl.description"] = "Custom pistol grip for the ASP 1911 allowing the user to attach a <color=100,219,255>image</color> or <color=100,219,255>sticker</color> inside. Personalization at its finest!"
 
 L["uplp_1911_grip_hardballer.printname"] = "Silverstrike Pistol Grip"
 L["uplp_1911_grip_hardballer.compactname"] = "Silverstrike"
@@ -3996,7 +3996,7 @@ L["uplp_weapon_2011_manufacturer"] = "Staccato 2011"
 ////// Pistol Grip
 L["uplp_2011_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
 L["uplp_2011_grip_skeleton.compactname"] = "Skeleton"
-L["uplp_2011_grip_skeleton.description"] = "Lightweight pistol grip with glass insert. Also allows the user to attach a picture inside. Personalization at its finest!"
+L["uplp_2011_grip_skeleton.description"] = "Lightweight pistol grip with glass insert. Also allows the user to attach an <color=100,219,255>image</color> or <color=100,219,255>sticker</color> inside. Personalization at its finest!"
 
 L["uplp_2011_grip_jw.printname"] = "Assassin's Pistol Grip"
 L["uplp_2011_grip_jw.compactname"] = "Assassin"
