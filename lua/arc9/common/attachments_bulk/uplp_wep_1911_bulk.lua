@@ -94,6 +94,24 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }
 
+local pathUT = ")uplp_urban_temp/1911/"
+
+local shoot9 = {
+    pathUT .. "fire-9-01.wav",
+    pathUT .. "fire-9-02.wav",
+    pathUT .. "fire-9-03.wav",
+}
+
+local shoot9sil = {
+    pathUT .. "fire-9-sup-01.wav",
+    pathUT .. "fire-9-sup-02.wav",
+    pathUT .. "fire-9-sup-03.wav",
+}
+
+
+ATT.ShootSound = shoot9
+ATT.ShootSoundSilenced = shoot9sil
+
 ATT.ClipSizeMult = 1.25
 
 ATT.UPLP_Class = "mpist"
