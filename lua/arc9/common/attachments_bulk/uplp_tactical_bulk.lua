@@ -528,7 +528,7 @@ ATT.MuzzleParticleUBGL = "muzzleflash_m79"
 
 ATT.DropMagazineAmountUBGL = 1
 ATT.DropMagazineModelUBGL = "models/weapons/arc9/uplp_ubgl_m203_casing.mdl"
-ATT.DropMagazineTimeUBGL = 0.65
+ATT.DropMagazineTimeUBGL = 22/30
 ATT.DropMagazinePosUBGL = Vector(0, -1, 4)
 ATT.ShouldDropMagUBGL = true
 -- ATT.DropMagazineQCAUBGL = 2
@@ -540,6 +540,16 @@ local pathUTC = "uplp_urban_temp/common/"
 
 ATT.DropMagazineSoundsUBGL = {
     path .. "40mm_casing_1.ogg",
+}
+
+ATT.ReloadPoseParameterTablesUBGL = { -- using this cuz its quite unused free nwint (regular ReloadHideBoneTables interfers with base weapon hidden bones)
+    [8] = {
+        "grenade",
+    },
+    [9] = {
+        "casing",
+        "grenade",
+    },
 }
 
 ATT.IKAnimationProxy = {
@@ -566,6 +576,10 @@ ATT.IKAnimationProxy = {
             { s = path .. "breaker_close.ogg", t = 55/30 },
             { s = pathUTC .. "cloth_1.ogg", t = 70 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 70/30, v = 0.8 },
+
+            {ppi = 8, t = 0},
+            {ppi = 9, t = 22/30},
+            {ppi = 1, t = 35/30},
         }
     },
     ["enter_ubgl"] = {
@@ -637,9 +651,6 @@ ATT.HasSightsUBGL = true
 
 ATT.TriggerDelayUBGL = false
 
--- ATT.EnterUBGLSound = path.."m203_hand_out_tube.ogg"
--- ATT.ExitUBGLSound = path.."m203_hand_on_tube.ogg"
-
 ATT.ShootEntUBGL = "arc9_uplp_40mm_he"
 ATT.ShootEntForceUBGL = 6000
 
@@ -664,13 +675,45 @@ ATT.Sights = {
     },
 }
 
--- ATT.UBGLExclusiveSightsUBGL = true
+local v0 = Vector(0, 0, 0)
+local v1 = Vector(1, 1, 1)
+
+local function getHiddenBones2(self)
+    local bones = {}
+    local index = self:GetPoseParameterIndex()
+    local reloadhidebones = index != 0 and ATT.ReloadPoseParameterTables
+
+    if reloadhidebones and reloadhidebones[index] then
+        for _, bone in ipairs(reloadhidebones[index]) do
+            bones[bone] = true
+        end
+    end
+
+    return bones
+end
 
 ATT.DrawFunc = function(swep, model)
-    local eles = swep:GetElements()
-
-    if eles["uplp_ar15_hg_grenadier"] then
+    if swep:GetElements()["uplp_ar15_hg_grenadier"] then
         model:SetBodygroup(0, 0)
+    end
+
+    if !swep:GetUBGL() then return end
+
+    local hidebones = getHiddenBones2(swep)
+
+    if table.IsEmpty(hidebones) then
+        for i = 0, model:GetBoneCount() do
+            model:ManipulateBoneScale(i, v1)
+        end
+    else
+        for bone, enabled in pairs(hidebones) do
+            if enabled then
+                local boneid = isnumber(bone) and bone or model:LookupBone(bone)
+                if boneid then 
+                    model:ManipulateBoneScale(boneid, v0) 
+                end
+            end
+        end
     end
 end
 
