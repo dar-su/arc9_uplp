@@ -921,7 +921,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["uplp_1911_slide_tac"] = { Bodygroups = { { 1, 3 } } },
-    ["uplp_1911_slide_shotgun"] = { Bodygroups = { { 1, 7 }, { 6, 4 }, { 7, 2 } },
+    ["uplp_1911_slide_shotgun"] = { Bodygroups = { { 1, 7 }, { 6, 4 } },
         AttPosMods = {
             [10] = { Pos = Vector(0.38, 0.75, 2.7) },
         },

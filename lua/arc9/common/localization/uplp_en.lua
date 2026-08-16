@@ -234,6 +234,9 @@ L["setting.uplp_overheat.desc"] = "When enabled, firing suppressed weapons will 
 L["setting.uplp_enablehull.title"] = "Enable Hull Traces (Shotguns)"
 L["setting.uplp_enablehull.desc"] = "When enabled, shots that land inside the bounding box of the target will register as a hit.\n\nNote: Only applies to shotguns."
 
+L["setting.uplp_enablechands.title"] = "Generate C_Hands"
+L["setting.uplp_enablechands.desc"] = "When enabled, custom C_Hands included in this mod will be generated and included in playermodel list. Disable if using on server or something.\n\nHands are: UnfixedCrayfish Low Poly Arms Rig and Hozq Rig V4.\n\nUse Enhanced PlayerModel Selector Fesiug's Edit to select hands seperatly from playermodel.\n\nRequires server restart."
+
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
