@@ -149,6 +149,8 @@ SWEP.RecoilMultCrouch = 1
 
 SWEP.RecoilMultBipod = 0.4
 
+SWEP.RecoilKickRoll = 60/70
+
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
