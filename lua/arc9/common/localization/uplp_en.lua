@@ -3941,7 +3941,7 @@ L["uplp_1911_slide_tac.description"] = "Aftermarket tactical slide for the ASP 1
 
 L["uplp_1911_slide_shotgun.printname"] = "Crowd Control Slide"
 L["uplp_1911_slide_shotgun.compactname"] = "CC"
-L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun."
+L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun.\n\nReload animation by <color=134,100,255>bsmntoid</color>!"
 
 L["uplp_1911_slide_alyx.printname"] = "Rebel Slide"
 L["uplp_1911_slide_alyx.compactname"] = "Rebel"

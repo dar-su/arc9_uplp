@@ -74,7 +74,7 @@ SWEP.WorldModelOffset = {
 
     TPIKPosSightOffset = Vector(2, 1, -2),
     TPIKHolsterOffset = Vector(11, 0, -2),
-    TPIKPosReloadOffset = Vector(-4, 0, 0),
+    TPIKPosReloadOffset = Vector(-10, 0, 0),
     TPIKAngReloadOffset = Angle(0, 0, 0),
 
     TPIKPosAlternative = Vector(-19, -2, -2), -- enabled with SWEP.TPIKAlternativePos, for grips here
@@ -281,6 +281,7 @@ local pathRZ = ")uplp_rz/1911/"
 local pathUT = ")uplp_urban_temp/usp/"
 local pathUTold = ")uplp_urban_temp/1911/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathDB = ")uplp_urban_temp/dbs/"
 
 SWEP.ShootSound = {
     pathRZ .. "fire-01.wav",
@@ -396,6 +397,8 @@ local thetoggle = {{
         "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
     }, t = 0
 }}
+
+local shellin = {pathDB .. "dbs-shell-insert-01.ogg", pathDB .. "dbs-shell-insert-02.ogg", pathDB .. "dbs-shell-insert-03.ogg", pathDB .. "dbs-shell-insert-04.ogg", pathDB .. "dbs-shell-insert-05.ogg", pathDB .. "dbs-shell-insert-06.ogg", pathDB .. "dbs-shell-insert-07.ogg", pathDB .. "dbs-shell-insert-08.ogg", pathDB .. "dbs-shell-insert-09.ogg", pathDB .. "dbs-shell-insert-10.ogg", pathDB .. "dbs-shell-insert-11.ogg", pathDB .. "dbs-shell-insert-12.ogg"}
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
@@ -660,14 +663,27 @@ SWEP.Animations = {
         RefillProgress = 0.6,
         MagSwapTime = 25/30,
         FireASAP = true,
-        -- Mult = 1.05,
+        Mult = 1,
         EventTable = {
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = "uplp_rz/rpg7/hammer.ogg", t = 4 / 30, v = 1 },
+            -- { s = pathDB .. "grab.ogg", t = 7 / 30, v = 1 },
+            { s = pathDB .. "open.ogg", t = 11 / 30, v = 1 },
+            { s = pathDB .. "eject.ogg", t = 24 / 30, v = 1 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 26 / 30, v = 0.9 },
+            { s = pathDB .. "struggle.ogg", t = 40 / 30, v = 0.5 },
+            { s = shellin, t = 43 / 30, v = 1 }, -- Shell
+            { s = pathDB .. "close.ogg", t = 51 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 30 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 47 / 30, v = 0.8 },
+            { s = UTCrattle, t = 60 / 30 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 16/30},
-            {hide = 0, t = 25/30},
+            {hide = 1, t = 28/30},
+            {hide = 0, t = 34/30},
 
-            {shelleject = true, att = 7, t = 16/30 },
+            {shelleject = true, att = 7, t = 28/30 },
 
             {e = "arc9_uplp_db_smoke", t = 0/30},
 

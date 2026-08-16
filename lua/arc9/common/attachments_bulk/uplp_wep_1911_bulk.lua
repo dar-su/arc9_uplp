@@ -418,6 +418,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ChamberSize = 0
 ATT.ClipSize = 1
 
+ATT.ExcludeElements = {"uplp_optic_tall"}
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_ammo"),
@@ -447,6 +449,10 @@ ATT.Hook_TranslateSource = function(wep, anim)
     if anim == "idle_empty" or anim == "fire" or anim == "draw_empty" or anim == "holster_empty" or anim == "modeswitch_empty" then
         return anim .. "_sg"
     end
+
+    if anim == "reload_sg" and wep:HasElement("uplp_optic_used") then 
+        return "reload_sg_alt"
+    end
 end
 
 ATT.MuzzleParticle = "muzzleflash_slug"
@@ -459,8 +465,8 @@ ATT.ShellVelocity = -0.7
 ATT.ShellAngleVelocity = 0.15
 ATT.ShellSmoke = false
 ATT.ShellSounds = ARC9.ShotgunShellSoundsTable
-ATT.DamageMax = 90 * 1.25 -- ARC9.UPLP_ShotgunDamageMaxModifier -- not active yet!
-ATT.DamageMin = 40 * 0.75 -- ARC9.UPLP_ShotgunDamageMinModifier -- not active yet!
+ATT.DamageMax = 90 * ARC9.UPLP_ShotgunDamageMaxModifier
+ATT.DamageMin = 40 * ARC9.UPLP_ShotgunDamageMinModifier
 ATT.DistributeDamage = true
 ATT.HeadshotDamage = 1
 ATT.DamageType = DMG_BUCKSHOT
@@ -501,7 +507,7 @@ ATT.Ammo = "buckshot" -- What ammo type this gun uses.
 -- Accuracy and Spread
 ATT.UseDispersion = true
 
-ATT.Spread = 0.025 * 1.25 -- ARC9.UPLP_ShotgunSpreadModifier -- not active yet!
+ATT.Spread = 0.025 * ARC9.UPLP_ShotgunSpreadModifier
 ATT.SpreadAddMove = -0.005
 ATT.SpreadAddMidAir = -0.05
 
@@ -551,6 +557,7 @@ ATT.Hook_HideBones = function(swep, bons)
 end
 
 ATT.ReloadHideBonesFirstPerson = true
+ATT.ReloadInSights = false
 
 ATT.BulletBones = {
     [1] = "sg_round",
@@ -737,7 +744,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/tac_laser_hardball.mdl"
 
 -- ATT.ActivateElements = {"uplp_tac_used"}
-ATT.ExcludeElements = {"uplp_1911_grip_pachmayr"}
+ATT.ExcludeElements = {"uplp_1911_grip_pachmayr", "uplp_1911_slide_shotgun"}
 
 ATT.ToggleOnF = true -- This attachment is toggleable with the flashlight key.
 ATT.ToggleStats = {

@@ -39,14 +39,14 @@
 	[*] Sway was greatly reduced
 	[*] MRD57: Reduced reloading speed by ~10%
 	[*] 5.56mm 52R magazines hold 60 rounds now; 5.45mm 40R hold 45 now
-	[*] Swapped default AR-15 stock with updated Commando one
 
 	[*] AW Sniper was rescaled to IRL size, animations were tweaked (now it has two different cycle anims)
 	[*] Added tape to most SMG magazines, to match with PV-9 and F9
 	[*] PM92: Tweaked reload animations
 	[*] PV-9' ironsights are way shorter now (sadly, sticker slot in rear sight was removed)
 	[*] Since AR-15 got new magazines, XAR and AW-UG were updated to use them too
-	[*] M40 GL: Properly works in third person now
+	[*] Swapped default AR-15 stock with updated Commando one
+	[*] M40 GL: Properly works in third person now, also slightly updated anims
 	[*] Deagle got wider ironsights
 	[*] AK-12 code was remade, so your presets will be removed. Sorry
 
