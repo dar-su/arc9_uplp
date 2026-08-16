@@ -282,9 +282,9 @@ local pathUT = ")uplp_urban_temp/awp/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathRZ2 .. "fire-01.wav",
-    pathRZ2 .. "fire-02.wav",
-    pathRZ2 .. "fire-03.wav",
+    pathRZ .. "fire-01.wav",
+    pathRZ .. "fire-02.wav",
+    pathRZ .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -400,11 +400,11 @@ SWEP.Animations = {
         MinProgress = 0.66,
         Mult = 1,
         EventTable = {
-            {s = pathUT .. "boltup.ogg",          t = 0},
-            {s = pathRZ3 .. "cycle1.ogg",        t = 0.18},
+            {s = pathRZ .. "bolt1.ogg",          t = 0},
+            {s = pathRZ .. "bolt2.ogg",        t = 0.15},
             {s = pathUT .. "eject.ogg",           t = 0.3},
-            {s = pathRZ3 .. "cycle2.ogg",     t = 0.36},
-            {s = pathUT .. "boltdown.ogg",        t = 0.54},
+            {s = pathRZ .. "bolt3.ogg",     t = 0.34},
+            {s = pathRZ .. "bolt4.ogg",        t = 0.59},
         },
     },
     ["ready"] = {
@@ -486,9 +486,9 @@ SWEP.Animations = {
         DropMagAt = 0.35 * 1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 5 / 30, v = 0.8 },
+            { s = pathRZ .. "magout.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 10 / 30, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 16.25 / 30, v = 0.8 },
+            { s = pathRZ .. "magin.ogg", t = 16.25 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 30 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -513,15 +513,15 @@ SWEP.Animations = {
         DropMagAt = 1 * 1,
         EjectAt = 0.37,
         EventTable = {
-            {s = pathUT .. "boltup.ogg",          t = 0 / 30},
-            {s = pathUT .. "boltback.ogg",        t = 5 / 30},
+            {s = pathRZ .. "bolt1.ogg",          t = 0 / 30},
+            {s = pathRZ .. "bolt2.ogg",        t = 5 / 30},
 
             { s = pathUT .. "magout.ogg", t = 22.5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 35 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltforward.ogg",     t = 52 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 58.5 / 30},
+            {s = pathRZ .. "bolt3.ogg",     t = 52 / 30},
+            {s = pathRZ .. "bolt4.ogg",        t = 58.5 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 66 / 30, v = 0.8 },
 
