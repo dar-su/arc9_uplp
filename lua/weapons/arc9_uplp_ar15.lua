@@ -401,8 +401,8 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 4 / 30, v = 0.8 },
-            { s = pathUT .. "chamber.ogg", t = 10 / 30, v = 0.8 },
+            { s = pathRZ .. "bolt1.ogg", t = 4 / 30 },
+            { s = pathRZ .. "bolt2.ogg", t = 10 / 30 },
             { s = UTCloth, t = 32 / 60, v = 0.6 },
         },
         IKTimeLine = {
