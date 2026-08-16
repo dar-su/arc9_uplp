@@ -74,7 +74,7 @@ SWEP.WorldModelOffset = {
 
     TPIKPosSightOffset = Vector(2, 1, -2),
     TPIKHolsterOffset = Vector(11, 0, -2),
-    TPIKPosReloadOffset = Vector(-10, 0, 0),
+    TPIKPosReloadOffset = Vector(-4, 0, 0),
     TPIKAngReloadOffset = Angle(0, 0, 0),
 
     TPIKPosAlternative = Vector(-19, -2, -2), -- enabled with SWEP.TPIKAlternativePos, for grips here
@@ -663,14 +663,14 @@ SWEP.Animations = {
         RefillProgress = 0.6,
         MagSwapTime = 25/30,
         FireASAP = true,
-        Mult = 1,
+        Mult = 1.05,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
             { s = "uplp_rz/rpg7/hammer.ogg", t = 4 / 30, v = 1 },
             -- { s = pathDB .. "grab.ogg", t = 7 / 30, v = 1 },
-            { s = pathDB .. "open.ogg", t = 11 / 30, v = 1 },
-            { s = pathDB .. "eject.ogg", t = 24 / 30, v = 1 },
+            { s = pathDB .. "open.ogg", t = 17 / 30, v = 1 },
+            { s = pathDB .. "eject.ogg", t = 22 / 30, v = 1 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 26 / 30, v = 0.9 },
             { s = pathDB .. "struggle.ogg", t = 40 / 30, v = 0.5 },
             { s = shellin, t = 43 / 30, v = 1 }, -- Shell
@@ -692,9 +692,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.09, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -941,7 +941,7 @@ SWEP.AttachmentElements = {
     ["uplp_sg_shell_orange"] = { Bodygroups = { { 7, 6 } } },
     ["uplp_sg_shell_yellow"] = { Bodygroups = { { 7, 7 } } },
 
-    ["uplp_1911_stock"] = { Bodygroups = { { 8, 1 } } },
+    ["uplp_1911_stock_wooden"] = { Bodygroups = { { 8, 1 } } },
     ["uplp_1911_wirestock"] = { Bodygroups = { { 8, 2 } } },
     ["uplp_1911_thompsongrip"] = { Bodygroups = { { 9, 2 } } },
 }
@@ -1075,6 +1075,20 @@ SWEP.Attachments = {
         Pos = Vector(0, 1, 0.8),
         Ang = Angle(90, 0, -90),
         ForceNoCosmetics = true
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_molot_muzzle"},
+        RejectAttachments = {
+            ["uplp_sg_mz_vepr"] = true,
+            -- ["uplp_sg_mz_silencer"] = true,
+        },
+        RequireElements = {"uplp_1911_slide_shotgun"},
+        ExcludeElements = {"nomuz"},
+        Bone = "slidesg",
+        Pos = Vector(0, -0.96, 1.7),
+        Ang = Angle(90, 90, 180),
+        Scale = 1,
     },
 }
 

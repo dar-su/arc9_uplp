@@ -436,7 +436,7 @@ ATT.Attachments = {
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
         return "reload_sg"
-    elseif anim == "fire_empty" then
+    elseif anim == "fire_empty" or anim == "fire_sights_empty" then
         return "fire_sg"
     elseif anim == "ready" then
         return "draw"
@@ -547,6 +547,14 @@ ATT.DistantShootSoundIndoor = {
     pathUTC .. "12gatails/fire-dist-12ga-pasg-int-03.wav",
 }
 
+ATT.ShootSoundSilenced = {
+    ")uplp_urban_temp/870/fire-sup-01.wav",
+    ")uplp_urban_temp/870/fire-sup-02.wav",
+    ")uplp_urban_temp/870/fire-sup-03.wav",
+}
+
+ATT.ShootSoundSilencedIndoor = ATT.ShootSoundSilenced
+
 ATT.LayerSoundIndoor = ATT.DistantShootSoundIndoor
 ATT.Hook_HideBones = function(swep, bons)
     local loaded = swep:GetLoadedRounds()
@@ -654,13 +662,13 @@ ARC9.LoadAttachment(ATT, "uplp_1911_mb_alyx")
 
 
 
----------- uplp_1911_stock
+---------- uplp_1911_stock_wooden
 
 ATT = {}
 
-ATT.PrintName = "uplp_1911_stock"
-ATT.CompactName = "uplp_1911_stock"
-ATT.Description = "uplp_1911_stock"
+ATT.PrintName = "uplp_1911_stock_wooden"
+ATT.CompactName = "uplp_1911_stock_wooden"
+ATT.Description = "uplp_1911_stock_wooden"
 ATT.Icon = Material(iconfolder .. "stock.png", "mips smooth")
 ATT.Category = "uplp_1911_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
@@ -676,7 +684,7 @@ ATT.SpreadAddRecoil = -0.005
 ATT.SpeedMultSights = 0.85
 ATT.RecoilPerShotMultSights = 0.5
 
-ARC9.LoadAttachment(ATT, "uplp_1911_stock")
+ARC9.LoadAttachment(ATT, "uplp_1911_stock_wooden")
 
 ---------- uplp_1911_wirestock
 

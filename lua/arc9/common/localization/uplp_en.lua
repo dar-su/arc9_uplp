@@ -3952,9 +3952,9 @@ L["uplp_1911_comp.printname"] = "Compensator"
 L["uplp_1911_comp.compactname"] = "Comp."
 L["uplp_1911_comp.description"] = "Aftermarket compensator, pushing gases upwards to reduce vertical recoil."
 
-L["uplp_1911_stock.printname"] = "Wooden Stock"
-L["uplp_1911_stock.compactname"] = "Wood S."
-L["uplp_1911_stock.description"] = "Real tough wooden stock for the ASP 1911."
+L["uplp_1911_stock_wooden.printname"] = "Wooden Stock"
+L["uplp_1911_stock_wooden.compactname"] = "Wood S."
+L["uplp_1911_stock_wooden.description"] = "Real tough wooden stock for the ASP 1911."
 
 L["uplp_1911_wirestock.printname"] = "Wire Stock"
 L["uplp_1911_wirestock.compactname"] = "Wire S."
