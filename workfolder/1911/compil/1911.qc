@@ -341,6 +341,12 @@ $sequence "reload_sg" {
 	"ACT_VM_RELOAD" 1
 	snap
 }
+$sequence "reload_sg_alt" {
+	"anims\reload_sg_alt.smd"
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
 
 $sequence "inspect_sg" {
 	"anims\inspect_sg.smd"

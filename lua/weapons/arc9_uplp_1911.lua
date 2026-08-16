@@ -138,6 +138,8 @@ SWEP.RecoilAutoControl = 1.15 * 1.5
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
+SWEP.RecoilKickRoll = 40/70
+
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
 SWEP.VisualRecoilMultSights = 1
@@ -281,6 +283,7 @@ local pathRZ = ")uplp_rz/1911/"
 local pathUT = ")uplp_urban_temp/usp/"
 local pathUTold = ")uplp_urban_temp/1911/"
 local pathUTC = ")uplp_urban_temp/common/"
+local pathDB = ")uplp_urban_temp/dbs/"
 
 SWEP.ShootSound = {
     pathRZ .. "fire-01.wav",
@@ -396,6 +399,8 @@ local thetoggle = {{
         "arc9/toggles/flashlight_laser_toggle_on_03.ogg",
     }, t = 0
 }}
+
+local shellin = {pathDB .. "dbs-shell-insert-01.ogg", pathDB .. "dbs-shell-insert-02.ogg", pathDB .. "dbs-shell-insert-03.ogg", pathDB .. "dbs-shell-insert-04.ogg", pathDB .. "dbs-shell-insert-05.ogg", pathDB .. "dbs-shell-insert-06.ogg", pathDB .. "dbs-shell-insert-07.ogg", pathDB .. "dbs-shell-insert-08.ogg", pathDB .. "dbs-shell-insert-09.ogg", pathDB .. "dbs-shell-insert-10.ogg", pathDB .. "dbs-shell-insert-11.ogg", pathDB .. "dbs-shell-insert-12.ogg"}
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
@@ -660,14 +665,27 @@ SWEP.Animations = {
         RefillProgress = 0.6,
         MagSwapTime = 25/30,
         FireASAP = true,
-        -- Mult = 1.05,
+        Mult = 1.05,
         EventTable = {
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = "uplp_rz/rpg7/hammer.ogg", t = 4 / 30, v = 1 },
+            -- { s = pathDB .. "grab.ogg", t = 7 / 30, v = 1 },
+            { s = pathDB .. "open.ogg", t = 17 / 30, v = 1 },
+            { s = pathDB .. "eject.ogg", t = 22 / 30, v = 1 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 26 / 30, v = 0.9 },
+            { s = pathDB .. "struggle.ogg", t = 40 / 30, v = 0.5 },
+            { s = shellin, t = 43 / 30, v = 1 }, -- Shell
+            { s = pathDB .. "close.ogg", t = 51 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 30 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 47 / 30, v = 0.8 },
+            { s = UTCrattle, t = 60 / 30 },
 
             {hide = 0, t = 0},
-            {hide = 1, t = 16/30},
-            {hide = 0, t = 25/30},
+            {hide = 1, t = 28/30},
+            {hide = 0, t = 34/30},
 
-            {shelleject = true, att = 7, t = 16/30 },
+            {shelleject = true, att = 7, t = 28/30 },
 
             {e = "arc9_uplp_db_smoke", t = 0/30},
 
@@ -676,9 +694,9 @@ SWEP.Animations = {
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.65, lhik = 0 },
-            { t = 0.92, lhik = 1 },
+            { t = 0.09, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
@@ -905,7 +923,7 @@ SWEP.AttachmentElements = {
         },
     },
     ["uplp_1911_slide_tac"] = { Bodygroups = { { 1, 3 } } },
-    ["uplp_1911_slide_shotgun"] = { Bodygroups = { { 1, 7 }, { 6, 4 }, { 7, 2 } },
+    ["uplp_1911_slide_shotgun"] = { Bodygroups = { { 1, 7 }, { 6, 4 } },
         AttPosMods = {
             [10] = { Pos = Vector(0.38, 0.75, 2.7) },
         },
@@ -925,7 +943,7 @@ SWEP.AttachmentElements = {
     ["uplp_sg_shell_orange"] = { Bodygroups = { { 7, 6 } } },
     ["uplp_sg_shell_yellow"] = { Bodygroups = { { 7, 7 } } },
 
-    ["uplp_1911_stock"] = { Bodygroups = { { 8, 1 } } },
+    ["uplp_1911_stock_wooden"] = { Bodygroups = { { 8, 1 } } },
     ["uplp_1911_wirestock"] = { Bodygroups = { { 8, 2 } } },
     ["uplp_1911_thompsongrip"] = { Bodygroups = { { 9, 2 } } },
 }
@@ -1059,6 +1077,20 @@ SWEP.Attachments = {
         Pos = Vector(0, 1, 0.8),
         Ang = Angle(90, 0, -90),
         ForceNoCosmetics = true
+    },
+    {
+        PrintName = ARC9:GetPhrase("uplp_category_muzzle"),
+        Category = {"uplp_molot_muzzle"},
+        RejectAttachments = {
+            ["uplp_sg_mz_vepr"] = true,
+            -- ["uplp_sg_mz_silencer"] = true,
+        },
+        RequireElements = {"uplp_1911_slide_shotgun"},
+        ExcludeElements = {"nomuz"},
+        Bone = "slidesg",
+        Pos = Vector(0, -0.96, 1.7),
+        Ang = Angle(90, 90, 180),
+        Scale = 1,
     },
 }
 

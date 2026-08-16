@@ -1,11 +1,13 @@
 if SERVER then AddCSLuaFile() end
 
-player_manager.AddValidModel("UnfixedCrayfish Low-Poly Rig", "models/player/darsu/c_unfixedcrayfish_rig.mdl")
-player_manager.AddValidHands( "UnfixedCrayfish Low-Poly Rig", "models/player/darsu/c_unfixedcrayfish_rig.mdl", 0, "00000000" )
+-- player_manager.AddValidModel("UnfixedCrayfish Low-Poly Rig", "models/player/darsu/c_unfixedcrayfish_rig.mdl")
+-- player_manager.AddValidHands( "UnfixedCrayfish Low-Poly Rig", "models/player/darsu/c_unfixedcrayfish_rig.mdl", 0, "00000000" )
 
 
-player_manager.AddValidModel("Hozq Low-Poly Rig V4", "models/player/darsu/c_hozq_v4_rig.mdl")
-player_manager.AddValidHands( "Hozq Low-Poly Rig V4", "models/player/darsu/c_hozq_v4_rig.mdl", 0, "00000000" )
+-- player_manager.AddValidModel("Hozq Low-Poly Rig V4", "models/player/darsu/c_hozq_v4_rig.mdl")
+-- player_manager.AddValidHands( "Hozq Low-Poly Rig V4", "models/player/darsu/c_hozq_v4_rig.mdl", 0, "00000000" )
+
+-- moved to sh_0_uplp
 
 if CLIENT then
 	local fontsizes = {350}

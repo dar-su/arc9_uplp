@@ -3846,7 +3846,7 @@ local sr25brll = {
 
 -- L["uplp_1911_slide_shotgun.printname"] = "Crowd Control Slide"
 -- L["uplp_1911_slide_shotgun.compactname"] = "CC"
--- L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun."
+-- L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun.\n\nReload animation by <color=134,100,255>bsmntoid</color>!"
 
 -- L["uplp_1911_slide_alyx.printname"] = "Rebel Slide"
 -- L["uplp_1911_slide_alyx.compactname"] = "Rebel"
@@ -3857,9 +3857,9 @@ local sr25brll = {
 -- L["uplp_1911_comp.compactname"] = "Comp."
 -- L["uplp_1911_comp.description"] = "Aftermarket compensator, pushing gases upwards to reduce vertical recoil."
 
--- L["uplp_1911_stock.printname"] = "Wooden Stock"
--- L["uplp_1911_stock.compactname"] = "Wood S."
--- L["uplp_1911_stock.description"] = "Real tough wooden stock for the ASP 1911."
+-- L["uplp_1911_stock_wooden.printname"] = "Wooden Stock"
+-- L["uplp_1911_stock_wooden.compactname"] = "Wood S."
+-- L["uplp_1911_stock_wooden.description"] = "Real tough wooden stock for the ASP 1911."
 
 -- L["uplp_1911_wirestock.printname"] = "Wire Stock"
 -- L["uplp_1911_wirestock.compactname"] = "Wire S."

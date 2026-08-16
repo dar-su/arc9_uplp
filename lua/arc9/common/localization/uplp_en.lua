@@ -234,6 +234,9 @@ L["setting.uplp_overheat.desc"] = "When enabled, firing suppressed weapons will 
 L["setting.uplp_enablehull.title"] = "Enable Hull Traces (Shotguns)"
 L["setting.uplp_enablehull.desc"] = "When enabled, shots that land inside the bounding box of the target will register as a hit.\n\nNote: Only applies to shotguns."
 
+L["setting.uplp_enablechands.title"] = "Generate C_Hands"
+L["setting.uplp_enablechands.desc"] = "When enabled, custom C_Hands included in this mod will be generated and included in playermodel list. Disable if using on server or something.\n\nHands are: UnfixedCrayfish Low Poly Arms Rig and Hozq Rig V4.\n\nUse Enhanced PlayerModel Selector Fesiug's Edit to select hands seperatly from playermodel.\n\nRequires server restart."
+
 
 //////////////////////////////////////////////////////////////////////
 ///////////////////////////// Universal Attachments
@@ -3941,7 +3944,7 @@ L["uplp_1911_slide_tac.description"] = "Aftermarket tactical slide for the ASP 1
 
 L["uplp_1911_slide_shotgun.printname"] = "Crowd Control Slide"
 L["uplp_1911_slide_shotgun.compactname"] = "CC"
-L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun."
+L["uplp_1911_slide_shotgun.description"] = "Aftermarket conversion of the ASP 1911, effectively turning it into a compact, single-shot shotgun.\n\nReload animation by <color=134,100,255>bsmntoid</color>!"
 
 L["uplp_1911_slide_alyx.printname"] = "Rebel Slide"
 L["uplp_1911_slide_alyx.compactname"] = "Rebel"
@@ -3952,9 +3955,9 @@ L["uplp_1911_comp.printname"] = "Compensator"
 L["uplp_1911_comp.compactname"] = "Comp."
 L["uplp_1911_comp.description"] = "Aftermarket compensator, pushing gases upwards to reduce vertical recoil."
 
-L["uplp_1911_stock.printname"] = "Wooden Stock"
-L["uplp_1911_stock.compactname"] = "Wood S."
-L["uplp_1911_stock.description"] = "Real tough wooden stock for the ASP 1911."
+L["uplp_1911_stock_wooden.printname"] = "Wooden Stock"
+L["uplp_1911_stock_wooden.compactname"] = "Wood S."
+L["uplp_1911_stock_wooden.description"] = "Real tough wooden stock for the ASP 1911."
 
 L["uplp_1911_wirestock.printname"] = "Wire Stock"
 L["uplp_1911_wirestock.compactname"] = "Wire S."

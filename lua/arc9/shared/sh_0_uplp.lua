@@ -39,6 +39,7 @@ local conVars = {
     {name = "uplp_mult_explosive", default = "1", replicated = true },
     {name = "uplp_mult_melee", default = "1", replicated = true },
     {name = "uplp_enablehull", default = "1", replicated = true },
+    {name = "uplp_enablechands", default = "1", replicated = true },
 }
 
 for _, var in ipairs(conVars) do
@@ -57,6 +58,15 @@ for _, var in ipairs(conVars) do
         CreateConVar(convar_name, var.default, flags, var.helptext, var.min, var.max)
     end
 end
+
+if GetConVar("arc9_uplp_enablechands"):GetBool() then
+    player_manager.AddValidModel("UnfixedCrayfish Low-Poly Rig", "models/player/darsu/c_unfixedcrayfish_rig.mdl")
+    player_manager.AddValidHands( "UnfixedCrayfish Low-Poly Rig", "models/player/darsu/c_unfixedcrayfish_rig.mdl", 0, "00000000" )
+
+    player_manager.AddValidModel("Hozq Low-Poly Rig V4", "models/player/darsu/c_hozq_v4_rig.mdl")
+    player_manager.AddValidHands( "Hozq Low-Poly Rig V4", "models/player/darsu/c_hozq_v4_rig.mdl", 0, "00000000" )
+end
+
 
 hook.Add("EntityTakeDamage", "ARC9_UPLP_DragonsBreath", function(ent, dmginfo)
     local inflictor = dmginfo:GetInflictor()
@@ -87,6 +97,7 @@ if CLIENT then
             { sv = true, type = "slider", text = "setting.uplp_mult_explosive.title", convar = "uplp_mult_explosive", min = 0.1, max = 5, decimals = 2, desc = "setting.uplp_mult_explosive.desc" },
             { sv = true, type = "bool", text = "setting.uplp_overheat.title", desc = "setting.uplp_overheat.desc", convar = "mod_overheat" },
             { sv = true, type = "bool", text = "setting.uplp_enablehull.title", desc = "setting.uplp_enablehull.desc", convar = "uplp_enablehull" },
+            { sv = true, type = "bool", text = "setting.uplp_enablechands.title", desc = "setting.uplp_enablechands.desc", convar = "uplp_enablechands" },
         }
 
         table.insert(ARC9.SettingsTable, 337, uplpsettings)

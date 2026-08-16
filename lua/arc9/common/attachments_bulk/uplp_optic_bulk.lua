@@ -1146,7 +1146,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "Compact"
 ATT.SortOrder = 10
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_tall"}
 
 ATT.Icon = Material(iconfolder .. "t1h.png", "mips smooth")
 
@@ -1403,7 +1403,7 @@ ATT.Description = ATT.PrintName
 ATT.Folder = "Compact"
 ATT.SortOrder = 9
 
-ATT.ActivateElements = {"uplp_optic_used"}
+ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_tall"}
 
 ATT.Icon = Material(iconfolder .. "rmrh.png", "mips smooth")
 

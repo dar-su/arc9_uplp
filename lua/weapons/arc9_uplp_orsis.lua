@@ -157,6 +157,8 @@ SWEP.RecoilAutoControl = 0
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 1
 
+SWEP.RecoilKickRoll = 100/70
+
 SWEP.RecoilMultBipod = 0.4
 
 

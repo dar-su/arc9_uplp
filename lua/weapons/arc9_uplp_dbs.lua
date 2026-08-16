@@ -180,6 +180,8 @@ SWEP.RecoilAutoControl = 0
 SWEP.RecoilMultSights = 1
 SWEP.RecoilMultCrouch = 0.75
 
+SWEP.RecoilKickRoll = 70/70
+
 -- Visual Recoil
 SWEP.UseVisualRecoil = false
 SWEP.VisualRecoil = 0.5
