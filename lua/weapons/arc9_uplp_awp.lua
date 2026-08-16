@@ -406,7 +406,7 @@ SWEP.Animations = {
             {s = pathRZ .. "bolt2.ogg",        t = 0.15},
             {s = pathUT .. "eject.ogg",           t = 0.3},
             {s = pathRZ .. "bolt3.ogg",     t = 0.34},
-            {s = pathRZ .. "bolt4.ogg",        t = 0.59},
+            {s = pathRZ .. "bolt4.ogg",        t = 0.64},
         },
     },
     ["ready"] = {
@@ -490,7 +490,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 10 / 30, v = 0.3 },
-            { s = pathRZ .. "magin.ogg", t = 16.25 / 30, v = 0.8 },
+            { s = pathRZ .. "magin.ogg", t = 16 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 30 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -516,14 +516,14 @@ SWEP.Animations = {
         EjectAt = 0.37,
         EventTable = {
             {s = pathRZ .. "bolt1.ogg",          t = 0 / 30},
-            {s = pathRZ .. "bolt2.ogg",        t = 5 / 30},
+            {s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
 
-            { s = pathUT .. "magout.ogg", t = 22.5 / 30, v = 0.8 },
+            { s = pathRZ .. "magout.ogg", t = 22.5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 35 / 30, v = 0.8 },
+            { s = pathRZ .. "magin.ogg", t = 34 / 30, v = 0.8 },
 
-            {s = pathRZ .. "bolt3.ogg",     t = 52 / 30},
-            {s = pathRZ .. "bolt4.ogg",        t = 58.5 / 30},
+            {s = pathRZ .. "bolt3.ogg",     t = 53 / 30},
+            {s = pathRZ .. "bolt4.ogg",        t = 62 / 30},
 
             { s = pathUTC .. "rattle2.ogg", t = 66 / 30, v = 0.8 },
 
