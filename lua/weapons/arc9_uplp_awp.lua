@@ -488,7 +488,7 @@ SWEP.Animations = {
         DropMagAt = 0.35 * 1,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathRZ .. "magout.ogg", t = 5 / 30, v = 0.8 },
+            { s = pathRZ .. "magout.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 10 / 30, v = 0.3 },
             { s = pathRZ .. "magin.ogg", t = 16 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 30 / 30, v = 0.8 },
@@ -518,7 +518,7 @@ SWEP.Animations = {
             {s = pathRZ .. "bolt1.ogg",          t = 0 / 30},
             {s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
 
-            { s = pathRZ .. "magout.ogg", t = 22.5 / 30, v = 0.8 },
+            { s = pathRZ .. "magout.ogg", t = 20 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.3 },
             { s = pathRZ .. "magin.ogg", t = 34 / 30, v = 0.8 },
 
