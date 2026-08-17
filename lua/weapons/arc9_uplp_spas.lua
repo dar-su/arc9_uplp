@@ -218,7 +218,6 @@ SWEP.Firemodes = {
         ManualAction = true,
         ManualActionNoLastCycle = true,
         NoShellEjectManualAction = true,
-        uplp_semi = true,
         SuppressEmptySuffix = true,
         DispersionSpreadAddHipFire = -0.022,
         Spread = 0.032 * ARC9.UPLP_ShotgunSpreadModifier,
@@ -440,28 +439,19 @@ local thetoggle = {{
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
 
-    local clip = swep:Clip1()
-    local empty = clip == 0
-    local insemi = swep:GetValue("uplp_semi") -- This is a lie. This is pump-action mode.
-
-    --if (true or swep:GetEmptyReload()) and anim == "reload_finish" then
-    --    return "reload_finish_empty"
-    --end
-
-    -- Pump-action mode suppresses the empty suffix
-    if anim == "reload_start_empty" or (anim == "reload_start" and swep:GetEmptyReload()) then
-        swep:SetEmptyReload(false)
+    if anim == "reload_start" or anim == "reload_start_empty" then
         timer.Simple( 0, function()
             swep:SetLoadedRounds(1)
             swep:SetLastLoadedRounds(1)
         end)
-        if insemi then
-            return "reload_start_empty_pumpy"
-        end
     end
 
-    if insemi and anim == "fire" then
-        return "fire_pump"
+    if swep:GetProcessedValue("ManualAction") then
+        if anim == "fire" then
+            return "fire_pump"
+        elseif anim == "reload_start" then
+            return "reload_start_empty_pumpy"
+        end
     end
 end
 
