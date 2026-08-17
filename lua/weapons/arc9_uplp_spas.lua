@@ -449,7 +449,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     if swep:GetProcessedValue("ManualAction") then
         if anim == "fire" then
             return "fire_pump"
-        elseif anim == "reload_start" then
+        elseif anim == "reload_start" and swep:Clip1() == 0 then
             return "reload_start_empty_pumpy"
         end
     end
