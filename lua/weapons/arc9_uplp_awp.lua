@@ -399,7 +399,7 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = {"cycle", "cycle2"},
-        MinProgress = 0.66,
+        MinProgress = 0.85,
         Mult = 1,
         EventTable = {
             {s = pathRZ .. "bolt1.ogg",          t = 0},
@@ -411,8 +411,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.8,
-		FireASAP = true,
+        MinProgress = 0.8,
+        FireASAP = true,
         EventTable = {
             { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
@@ -425,8 +425,8 @@ SWEP.Animations = {
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.75,
-		Mult = 1.0,
-		FireASAP = true,
+        Mult = 1.0,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
             { s = UTCloth, t = 0, v = 0.8 },
@@ -442,8 +442,8 @@ SWEP.Animations = {
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgress = 0.75,
-		Mult = 1.0,
-		FireASAP = true,
+        Mult = 1.0,
+        FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
             { s = UTCloth, t = 0, v = 0.8 },
@@ -453,7 +453,7 @@ SWEP.Animations = {
     ["holster"] = {
         Source = "holster",
         MinProgress = 0.75,
-		Mult = 1.1,
+        Mult = 1.1,
         EventTable = {
             { s = UTCloth, t = 0, v = 0.7 },
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.2 },
@@ -462,7 +462,7 @@ SWEP.Animations = {
     ["holster_empty"] = {
         Source = "holster_empty",
         MinProgress = 0.75,
-		Mult = 1.1,
+        Mult = 1.1,
         EventTable = {
             { s = UTCloth, t = 0, v = 0.7 },
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.2 },
@@ -481,17 +481,17 @@ SWEP.Animations = {
     ["reload"] = {
         Source = "reload",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.6,
-		FireASAP = true,
+        PeekProgress = 0.775,
+        RefillProgress = 0.6,
+        FireASAP = true,
         Mult = 1.1,
-        DropMagAt = 0.35 * 1,
+        DropMagAt = 0.35,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathRZ .. "magout.ogg", t = 2 / 30, v = 0.8 },
-            { s = pathUTC .. "magpouch.ogg", t = 10 / 30, v = 0.3 },
-            { s = pathRZ .. "magin.ogg", t = 16 / 30, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 30 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg",     t = 0 / 30, v = 0.8 },
+            { s = pathRZ .. "magout.ogg",       t = 2 / 30, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg",    t = 10 / 30, v = 0.3 },
+            { s = pathRZ .. "magin.ogg",        t = 16 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg",     t = 30 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.35},
@@ -508,24 +508,21 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         MinProgress = 0.9,
-		PeekProgress = 0.925,
-		RefillProgress = 0.85,
-		FireASAP = true,
+        PeekProgress = 0.925,
+        RefillProgress = 0.85,
+        FireASAP = true,
         Mult = 1.1,
         DropMagAt = 1 * 1,
         EjectAt = 0.37,
         EventTable = {
-            {s = pathRZ .. "bolt1.ogg",          t = 0 / 30},
-            {s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
-
-            { s = pathRZ .. "magout.ogg", t = 20 / 30, v = 0.8 },
-            { s = pathUTC .. "magpouch.ogg", t = 28 / 30, v = 0.3 },
-            { s = pathRZ .. "magin.ogg", t = 34 / 30, v = 0.8 },
-
-            {s = pathRZ .. "bolt3.ogg",     t = 53 / 30},
-            {s = pathRZ .. "bolt4.ogg",        t = 62 / 30},
-
-            { s = pathUTC .. "rattle2.ogg", t = 66 / 30, v = 0.8 },
+            { s = pathRZ .. "bolt1.ogg",        t = 0 / 30},
+            { s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
+            { s = pathRZ .. "magout.ogg",       t = 20 / 30, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg",    t = 28 / 30, v = 0.3 },
+            { s = pathRZ .. "magin.ogg",        t = 34 / 30, v = 0.8 },
+            { s = pathRZ .. "bolt3.ogg",        t = 53 / 30},
+            { s = pathRZ .. "bolt4.ogg",        t = 62 / 30},
+            { s = pathUTC .. "rattle2.ogg",     t = 66 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1},
@@ -544,17 +541,17 @@ SWEP.Animations = {
     ["reload_ext"] = {
         Source = "reload_ext",
         MinProgress = 0.9,
-		PeekProgress = 0.775,
-		RefillProgress = 0.6,
-		FireASAP = true,
-        DropMagAt = 0.35 * 1,
+        PeekProgress = 0.775,
+        RefillProgress = 0.6,
+        FireASAP = true,
+        DropMagAt = 0.35,
         Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUT .. "magout.ogg", t = 5 / 30, v = 0.8 },
-            { s = pathUTC .. "magpouch.ogg", t = 13 / 30, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 22.5 / 30, v = 0.8 },
-            { s = pathUTC .. "rattle2.ogg", t = 35 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg",     t = 0 / 30, v = 0.8 },
+            { s = pathRZ .. "magout.ogg",       t = 5 / 30, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg",    t = 13 / 30, v = 0.3 },
+            { s = pathRZ .. "magin.ogg",        t = 22.5 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg",     t = 35 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 0.35},
@@ -571,25 +568,21 @@ SWEP.Animations = {
     ["reload_empty_ext"] = {
         Source = "reload_empty_ext",
         MinProgress = 0.9,
-		PeekProgress = 0.925,
-		RefillProgress = 0.85,
-		FireASAP = true,
+        PeekProgress = 0.925,
+        RefillProgress = 0.85,
+        FireASAP = true,
         DropMagAt = 1 * 1,
         Mult = 1.1,
         EjectAt = 0.37,
         EventTable = {
-            {s = pathUT .. "boltup.ogg",          t = 0 / 30},
-            {s = pathUT .. "boltback.ogg",        t = 5 / 30},
-
-            { s = pathUT .. "magout.ogg", t = 22.5 / 30, v = 0.8 },
-            { s = pathUTC .. "magpouch.ogg", t = 31 / 30, v = 0.3 },
-            { s = pathUT .. "magin.ogg", t = 41 / 30, v = 0.8 },
-
-
-            {s = pathUT .. "boltforward.ogg",     t = 59 / 30},
-            {s = pathUT .. "boltdown.ogg",        t = 63.5 / 30},
-
-            { s = pathUTC .. "rattle2.ogg", t = 77 / 30, v = 0.8 },
+            { s = pathRZ .. "bolt1.ogg",        t = 0 / 30},
+            { s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
+            { s = pathRZ .. "magout.ogg",       t = 22.5 / 30, v = 0.8 },
+            { s = pathUTC .. "magpouch.ogg",    t = 28 / 30, v = 0.3 },
+            { s = pathRZ .. "magin.ogg",        t = 41 / 30, v = 0.8 },
+            { s = pathRZ .. "bolt3.ogg",        t = 57 / 30},
+            { s = pathRZ .. "bolt4.ogg",        t = 66 / 30},
+            { s = pathUTC .. "rattle2.ogg",     t = 70 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
             {hide = 1, t = 1},
