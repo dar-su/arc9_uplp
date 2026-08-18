@@ -36,6 +36,7 @@ ENT.ExplosionSounds2 = {pathd .. "explosion-close-01.ogg", pathd .. "explosion-c
 function ENT:Detonate(hitEnt, data)
     local attacker = self.Attacker or self:GetOwner()
     local dir = data and data.OurOldVelocity:GetNormalized()
+    local normal = data.HitNormal or -dir
 
     util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.Radius * 3)
 
@@ -46,10 +47,10 @@ function ENT:Detonate(hitEnt, data)
     effectdata:SetMagnitude(4)
     effectdata:SetScale(2)
     effectdata:SetRadius(8)
-    effectdata:SetNormal(data.HitNormal)
+    effectdata:SetNormal(normal)
     util.Effect("Sparks", effectdata)
     // ParticleEffect("Generic_explo_tiny", self:GetPos(), data.HitNormal:Angle() * -1, nil)
-    ParticleEffect("explosion_he_grenade_fas2", data.HitPos, data.HitNormal:Angle())
+    ParticleEffect("explosion_he_grenade_fas2", data.HitPos, normal:Angle())
 
     util.BlastDamage(self, attacker, self:GetPos(), 250, 50)
     if istable(data) then
