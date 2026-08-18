@@ -704,7 +704,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -722,7 +722,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -741,7 +741,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -759,7 +759,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -800,7 +800,7 @@ SWEP.Animations = {
             { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 115 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -822,7 +822,7 @@ SWEP.Animations = {
             { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 115 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -844,7 +844,7 @@ SWEP.Animations = {
             { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 117.5 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -865,7 +865,7 @@ SWEP.Animations = {
             { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 117.5 / 30, v = 0.8 },
-            {hide = 1, t = 0},
+            -- {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },

@@ -345,7 +345,8 @@ $sequence "reload20" {
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
-	snap
+	fadein 0.2
+	fadeout 0.05
 }
 
 $sequence "reload_empty20" {
@@ -354,7 +355,8 @@ $sequence "reload_empty20" {
 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
-	snap
+	fadein 0.2
+	fadeout 0.05
 }
 
 $sequence "reload40" {
