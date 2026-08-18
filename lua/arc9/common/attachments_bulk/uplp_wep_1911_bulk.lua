@@ -285,13 +285,13 @@ local pathUT = ")uplp_urban_temp/usp/"
 
 ATT.HookP_TranslateSound = function(self, data) -- example
     if data.sound == pathRZ .. "magout.ogg" then
-        data.sound = pathRZ .. "hlvr/pistol_foley_clip_release_01.ogg"
+        data.sound = pathRZ .. "hlvr/pistol_foley_clip_release_01_comb.ogg"
     elseif data.sound == pathRZ .. "magin.ogg" then
-        data.sound = pathRZ .. "hlvr/pistol_foley_clip_insert_01.ogg"
+        data.sound = pathRZ .. "hlvr/pistol_foley_clip_insert_01_comb.ogg"
     elseif data.sound == pathRZ .. "sliderel2.ogg" then
-        data.sound = pathRZ .. "hlvr/pistol_foley_slide_lock_01.ogg"
+        data.sound = pathRZ .. "hlvr/pistol_foley_slide_lock_01_comb.ogg"
     elseif data.sound == pathUT .. "slidedrop.ogg" then
-        data.sound = pathRZ .. "hlvr/pistol_foley_close_slide_01.ogg"
+        data.sound = pathRZ .. "hlvr/pistol_foley_close_slide_01_comb.ogg"
     end
 
     return data

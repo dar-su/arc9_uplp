@@ -740,7 +740,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-pistol-03.ogg", t = 115 / 30, v = 0.3 },
             { s = pathUTC .. "cloth_4.ogg", t = 110 / 30, v = 0.2 },
             { s = pathRZ .. "presscheck1.ogg", t = 138.5 / 30, v = 0.6 },
-            { s = pathRZ .. "slidelock.ogg", t = 161 / 30 - 7/30, v = 0.55, p = 130 },
+            { s = pathRZ .. "slidelock.ogg", t = 161 / 30 - 7/30, v = 0.8, p = 100 },
             { s = pathUTC .. "cloth_4.ogg", t = 171 / 30 - 7/30, v = 0.1 },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 171 / 30 - 7/30, v = 0.5 },
         },
