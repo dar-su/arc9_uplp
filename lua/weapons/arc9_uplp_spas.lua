@@ -191,13 +191,12 @@ SWEP.RecoilMax = 1
 SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 2 / 3
 
-
 -- Weapon handling
-SWEP.SpeedMult = 0.82 + 0.05 -- Walk speed multiplier
+SWEP.SpeedMult = 0.78 + 0.05 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.67 / 0.85 -- When aiming
 
-SWEP.AimDownSightsTime = 0.44 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.42 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.46 - 0.1 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.44 - 0.08 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 42
@@ -285,12 +284,6 @@ SWEP.CustomizeSnapshotFOV = 60
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
--- SWEP.DropMagazineModel = "models/weapons/arc9/uplp/vepr_mag_std.mdl"
--- SWEP.DropMagazineTime = 0.6
--- SWEP.DropMagazineQCA = 4
--- SWEP.DropMagazinePos = Vector(0, 0, 0)
--- SWEP.DropMagazineAng = Angle(90, 90, 90)
--- SWEP.DropMagazineVelocity = Vector(0, -5, 10)
 
 SWEP.ReloadInSights = false
 SWEP.ShotgunReload = true
@@ -302,8 +295,6 @@ SWEP.ShotgunReloadIncludesChamber = false
 local pathUT2 = ")uplp_urban_temp/"
 local pathUT = ")uplp_urban_temp/spas12/"
 local pathUTC = "))uplp_urban_temp/common/"
--- local pathUO = "uplp_unofficial/"
-
 
 SWEP.ShootSound = {
     pathUT .. "fire-01.wav",
@@ -344,7 +335,6 @@ SWEP.DistantShootSoundIndoorSilenced = {
 }
 
 SWEP.TriggerDownSound = {pathUT .. "trigger1.wav"}
-
 SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 
 ---- Animations
@@ -352,40 +342,6 @@ SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
 SWEP.BulletBones = {
     [1] = "bullet1",
     [2] = "bullet2",
-}
-
-SWEP.HideBones = {
-    -- "fakemag",
-    -- "fakerounds",
-}
-
-SWEP.ReloadHideBoneTables = {
-    -- [1] = {
-        -- "mag",
-        -- "round1",
-        -- "round2",
-        -- "round3",
-        -- "round4",
-        -- "round5",
-        -- "round6",
-        -- "round7",
-        -- "round8",
-        -- "round9",
-        -- "round10",
-        -- "round11",
-        -- "round12",
-        -- "round13",
-        -- "round14",
-        -- "round15",
-        -- "round16",
-        -- "round17",
-        -- "round18",
-        -- "round19",
-    -- },
-    -- [2] = {
-        -- "fakemag",
-        -- "fakerounds",
-    -- }
 }
 
 local mechh = {
@@ -474,13 +430,12 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 60 },
         },
     },
-
     ["draw"] = {
         Source = "draw",
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -488,7 +443,7 @@ SWEP.Animations = {
         Source = "holster",
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ["draw_quick"] = {
@@ -497,7 +452,7 @@ SWEP.Animations = {
         Mult = 0.75,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -506,13 +461,13 @@ SWEP.Animations = {
         MinProgress = 0.15 / 0.5,
         Mult = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -520,77 +475,63 @@ SWEP.Animations = {
         Source = "holster_empty",
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
-
-
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         Mult = 1,
         NoIdle = true,
         EventTable = {
             { s = mechh, t = 0, v = 0.75 },
         },
     },
-
     ["fire_pump"] = {
-        Source = {"fire_pumpy"},
+        Source = "fire_pumpy",
         Mult = 1,
         NoIdle = true,
-        EventTable = {
-            -- { s = mechh, t = 0, v = 0.75 },
-        },
     },
-
     ["fire_empty"] = {
         Source = "fire_empty",
         Mult = 1,
         NoIdle = true,
         EventTable = {
-            { s = pathUT .. "mech_last.wav", t = 0 / 30, v = 0.6 },
+            { s = pathUT .. "mech_last.wav", t = 0, v = 0.6 },
         },
     },
-
     ["cycle"] = {
-        Source = {"cycle"},
+        Source = "cycle",
         Mult = 1,
         EjectAt = 5 / 30,
-        MinProgress = 0.55,
+        MinProgress = 0.65,
         EventTable = {
             { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.8 },
         },
     },
-
-    -- Reloads --
-
     ["reload_start"] = {
         Source = "reload_start_insert",
         RestoreAmmo = 1,
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ShellInsert, t = 12 / 30, v = 0.6 },
         },
     },
-
     ["reload_start_empty"] = {
         Source = "reload_start_empty",
         RestoreAmmo = 1,
         MinProgress = 0.5,
         Mult = 0.85,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
-            { s = pathUT .. "breechload.ogg", t = 0 / 30, v = 0.6 },
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = pathUT .. "breechload.ogg", t = 0, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
             { s = ")uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
-
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, v = 0.2 },
             { s = touchh, t = 49 / 30, v = 0.3 },
         },
     },
-
     ["reload_start_empty_pumpy"] = {
         Source = "reload_start_empty_pumpy",
         RestoreAmmo = 1,
@@ -598,54 +539,48 @@ SWEP.Animations = {
         Mult = 0.85,
         EjectAt = 31 / 30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.6 },
+            { s = UTCrattle, t = 0, v = 0.6 },
             { s = ShellInsert, t = 10 / 30, v = 0.6 },
             { s = pathUT .. "forearm_back.ogg", t = 24 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 30 / 30, v = 0.6 },
-
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30, v = 1 },
             { s = touchh, t = 50 / 30, v = 0.5 },
         },
     },
-
     ["reload_insert"] = {
         Source = "reload_insert",
         MinProgress = 0.334,
-        -- EarlyFinishTime = 0.5,
         EventTable = {
-            { s = ShellInsert, t = 0 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0, v = 0.6 },
         },
     },
-
     ["reload_finish"] = {
         Source = "reload_end",
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.4 },
+            { s = UTCrattle, t = 0, v = 0.4 },
             { s = b2i, t = 2 / 30, v = 0.6 },
         },
     },
-
     ["reload_finish_empty"] = {
         Source = "reload_end_pump",
         MinProgress = 0.5,
         FireASAP = true,
         EjectAt = 4 / 30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.6 },
             { s = b2i, t = 12 / 30, v = 0.6 },
         },
     },
-
     ["inspect"] = {
-        Source = {"look"},
+        Source = "look",
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
@@ -659,13 +594,12 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
     },
-
     ["inspect_empty"] = {
-        Source = {"look_empty"},
+        Source = "look_empty",
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
@@ -675,7 +609,6 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
     },
-
     ["firemode_1"] = {
         Source = "modeswitch",
         EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
@@ -700,7 +633,6 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
-
     ["switchsights"] = {
         Source = "modeswitch",
         EventTable = thetoggle
@@ -709,7 +641,6 @@ SWEP.Animations = {
         Source = "modeswitch_empty",
         EventTable = thetoggle
     },
-
     ["dryfire"] = {
         Source = "modeswitch",
     },
@@ -789,7 +720,7 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         ExcludeElements = {"nomuz"},
         RejectAttachments = {
-        ["uplp_sg_mz_vepr"] = true,
+            ["uplp_sg_mz_vepr"] = true,
         }
     },
     {

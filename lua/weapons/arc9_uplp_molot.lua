@@ -186,11 +186,11 @@ SWEP.RecoilModifierCap = 1
 SWEP.RecoilModifierCapSights = 2 / 3
 
 -- Weapon handling
-SWEP.SpeedMult = 0.8 + 0.05 -- Walk speed multiplier
-SWEP.SpeedMultSights = 0.65 / 0.85 -- When aiming
+SWEP.SpeedMult = 0.76 + 0.02 -- Walk speed multiplier
+SWEP.SpeedMultSights = 0.67 / 0.91 -- When aiming
 
-SWEP.AimDownSightsTime = 0.45 - 0.1 -- Time it takes to fully enter ADS
-SWEP.SprintToFireTime = 0.42 - 0.1 -- Time it takes to fully enter sprint
+SWEP.AimDownSightsTime = 0.45 - 0.08 -- Time it takes to fully enter ADS
+SWEP.SprintToFireTime = 0.42 - 0.06 -- Time it takes to fully enter sprint
 
 SWEP.SwayAddSights = 1
 SWEP.BarrelLength = 42
