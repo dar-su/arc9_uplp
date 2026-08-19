@@ -502,11 +502,12 @@ ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
--- ATT.AimDownSightsTimeMult = 0.9
+ATT.AimDownSightsTimeMult = 0.92
+ATT.RecoilAutoControlMult = 1.14
 
--- -- Negatives
--- ATT.RecoilAutoControlMult = 0.85
--- ATT.SwayMultSights = 1.3
+-- Negatives
+ATT.SprintToFireTimeMult = 1.1
+ATT.SpeedMultSights = 0.94
 
 ATT.ModelOffset = Vector(0, -0.5, -0.05)
 ATT.ModelAngleOffset = Angle(90, 90, -90)
@@ -536,13 +537,13 @@ ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 ATT.Category = "uplp_grip_horiz"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- -- Positives
--- ATT.RecoilAutoControlMult = 1.4
+-- Positives
+ATT.RecoilAutoControlMult = 1.2
 
--- -- Negatives
--- ATT.AimDownSightsTimeMult = 1.05
--- ATT.SprintToFireTimeMult = 1.05
--- ATT.SpeedMultSights = 0.95
+-- Negatives
+ATT.AimDownSightsTimeMult = 1.025
+ATT.SprintToFireTimeMult = 1.025
+ATT.SpeedMultSights = 0.975
 
 
 ATT.ModelOffset = Vector(0, -3.5, 0)
