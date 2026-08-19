@@ -21,6 +21,7 @@ ATT.SprintToFireTimeAdd = -0.03
 ATT.SpeedAdd = 0.02
 ATT.RPMAdd = 20
 ATT.ReloadTimeMult = 0.92
+ATT.BarrelLengthAdd = -6
 
 -- Negatives
 ATT.SpreadAdd = 0.005

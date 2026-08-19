@@ -186,9 +186,9 @@ ATT.MuzzleDevice = true
 ATT.SpreadAdd = -0.01
 
 -- Negatives
-ATT.RecoilMult = 1.15
+ATT.DispersionSpreadMultMove = 1.15
 ATT.RecoilRandomSideMult = 1.25
-ATT.BarrelLengthAdd = 0.5
+ATT.BarrelLengthAdd = 1
 
 ARC9.LoadAttachment(ATT, "uplp_sg_mz_choke")
 
@@ -207,10 +207,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_gk.mdl"
 ATT.MuzzleDevice = true
 
-ATT.RecoilSideMult = 0.85
+ATT.RecoilSideMult = 0.8
+ATT.RecoilRandomSideMult = 0.85
 ATT.AimDownSightsTimeAdd = 0.02
 ATT.SprintToFireTimeAdd = 0.03
-ATT.BarrelLengthAdd = 1.5
+ATT.SpeedMultShooting = 0.95
+ATT.BarrelLengthAdd = 2
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, 0.5, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
@@ -232,10 +234,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Model = "models/weapons/arc9/uplp/muzzle_sg_heavy.mdl"
 ATT.MuzzleDevice = true
 
-ATT.RecoilSideMult = 0.75
-ATT.AimDownSightsTimeAdd = 0.03
-ATT.SprintToFireTimeAdd = 0.04
-ATT.BarrelLengthAdd = 2.5
+ATT.RecoilSideMult = 0.6
+ATT.RecoilRandomSideMult = 0.7
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedMultShooting = 0.9
+ATT.BarrelLengthAdd = 3
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1.5, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1.5, 0, 0) end
@@ -265,10 +269,11 @@ ATT.MuzzleDevice = true
 
 ATT.BarrelLengthAdd = 3
 ATT.ShootVolumeMult = 0.85
+ATT.SpreadAdd = -0.002
 
-ATT.RecoilMult = 1.15
-ATT.RangeMaxMult = 0.85
-ATT.AimDownSightsTimeAdd = 0.02
+ATT.RangeMaxMult = 0.9
+ATT.DispersionSpreadMultHipFire = 1.1
+ATT.AimDownSightsTimeAdd = 0.03
 ATT.SprintToFireTimeAdd = 0.02
 
 ATT.CustomPros = {
@@ -303,11 +308,14 @@ ATT.MuzzleDevice = true
 
 ATT.BarrelLengthAdd = 3
 ATT.ShootVolumeMult = 0.75
+ATT.RecoilMult = 0.85
+ATT.SpreadAdd = -0.005
 
-ATT.RecoilMult = 0.9
-ATT.RangeMaxMult = 0.9
-ATT.AimDownSightsTimeAdd = 0.04
-ATT.SprintToFireTimeAdd = 0.04
+ATT.RangeMaxMult = 0.75
+ATT.DispersionSpreadMultHipFire = 1.25
+ATT.AimDownSightsTimeAdd = 0.06
+ATT.SprintToFireTimeAdd = 0.05
+ATT.SpeedMultSights = 0.95
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
