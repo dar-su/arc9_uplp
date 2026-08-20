@@ -35,22 +35,23 @@ ENT.ExplosionSounds2 = {pathd .. "explosion-close-01.ogg", pathd .. "explosion-c
 
 function ENT:Detonate(hitEnt, data)
     local attacker = self.Attacker or self:GetOwner()
-    local dir = data and data.OurOldVelocity:GetNormalized()
-    local normal = data.HitNormal or -dir
+    local dir = data and data.OurOldVelocity:GetNormalized() or self:GetForward()
+    local normal = data and data.HitNormal or -dir
+    local pos = data and data.HitPos or self:GetPos()
 
     util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.Radius * 3)
 
     --effects on our side
     self:EmitSound(self.DebrisSounds[math.random(1,#self.DebrisSounds)], 100, 110)
     local effectdata = EffectData()
-    effectdata:SetOrigin(self:GetPos())
+    effectdata:SetOrigin(pos)
     effectdata:SetMagnitude(4)
     effectdata:SetScale(2)
     effectdata:SetRadius(8)
     effectdata:SetNormal(normal)
     util.Effect("Sparks", effectdata)
     // ParticleEffect("Generic_explo_tiny", self:GetPos(), data.HitNormal:Angle() * -1, nil)
-    ParticleEffect("explosion_he_grenade_fas2", data.HitPos, normal:Angle())
+    ParticleEffect("explosion_he_grenade_fas2", pos, normal:Angle())
 
     util.BlastDamage(self, attacker, self:GetPos(), 250, 50)
     if istable(data) then
@@ -73,13 +74,13 @@ function ENT:Detonate(hitEnt, data)
 
     --effects on their side
     local tr = util.TraceLine({
-        start = data.HitPos + data.HitNormal * 2, --start inside
-        endpos = data.HitPos + data.HitNormal * 2 + dir * 128, --go forward until we hit something
+        start = pos + normal * 2, --start inside
+        endpos = pos + normal * 2 + dir * 128, --go forward until we hit something
         filter = {self},
         mask = MASK_SOLID,
     })
 
-    debugoverlay.Line(data.HitPos + data.HitNormal * 2, data.HitPos + data.HitNormal * 2 + dir * 128 * tr.Fraction, 2, Color(0, 255, 0, 255), true)
+    debugoverlay.Line(pos + normal * 2, pos + normal * 2 + dir * 128 * tr.Fraction, 2, Color(0, 255, 0, 255), true)
 
     if !tr.HitSky and bit.band(util.PointContents(tr.HitPos), CONTENTS_SOLID) == 0 then
         --ok now shoot backwards to find our exit point
@@ -92,17 +93,17 @@ function ENT:Detonate(hitEnt, data)
 
         debugoverlay.Line(tr.StartPos, tr.HitPos, 4, Color(0, 255, 255, 255), true)
 
-        util.Decal("Scorch", tr.HitPos + data.HitNormal, data.HitPos - data.HitNormal)
+        util.Decal("Scorch", tr.HitPos + normal, pos - normal)
 
-        sound.Play(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], tr.HitPos + data.HitNormal * 3, 125, 100, 1)
+        sound.Play(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], tr.HitPos + normal * 3, 125, 100, 1)
 
-        util.ScreenShake(tr.HitPos + data.HitNormal * 48, 25, 4, .75, 128 * 4)
+        util.ScreenShake(tr.HitPos + normal * 48, 25, 4, .75, 128 * 4)
         local a = tr.HitNormal:Angle()
         a:RotateAroundAxis(self:GetRight(), 90)
-        ParticleEffect("explosion_m79", tr.HitPos + data.HitNormal * 48, a)
-        debugoverlay.Sphere(tr.HitPos + data.HitNormal * 48, 256, 3, Color(255, 255, 255, 0), true)
+        ParticleEffect("explosion_m79", tr.HitPos + normal * 48, a)
+        debugoverlay.Sphere(tr.HitPos + normal * 48, 256, 3, Color(255, 255, 255, 0), true)
 
-        util.BlastDamage(self, attacker, tr.HitPos + data.HitNormal * 48, 300, 100)
+        util.BlastDamage(self, attacker, tr.HitPos + normal * 48, 300, 100)
     end
 
     SafeRemoveEntity(self)
