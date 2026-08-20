@@ -1,7 +1,7 @@
 AddCSLuaFile()
 SWEP.Base = "arc9_uplp_base"
 SWEP.Category = "ARC9 - Poly Arms"
-SWEP.Spawnable = false
+SWEP.Spawnable = true
 
 ---- FUNDAMENTALS
 
@@ -20,10 +20,10 @@ SWEP.Trivia = {
     [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_sw629_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_sw629_manufacturer" ),
-    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_127x55mm"),
+    [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_44magnum"),
     [ ARC9:GetPhrase( "uplp_mechanism" ) ] = ARC9:GetPhrase("uplp_mechanism_doublesingleaction"),
-    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_russia" ),
-    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "2014" ),
+    [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),
+    [ ARC9:GetPhrase( "uplp_year" ) ] = string.format( ARC9:GetPhrase("uplp_year_present"), "2002" ), -- Kaan's model is the Stealth Hunter variant. If we change the default model, also change this or we lose nerd cred.
 }
 
 SWEP.Credits = {
@@ -74,7 +74,7 @@ SWEP.WorldModelOffset = {
     Pos = Vector(-7.5, 4.4, -6),
     Ang = Angle(0, 0, 180),
     TPIKPos = Vector(-12, 2, -4),
-    TPIKAng = Angle(-5, -0, 180+12),
+    TPIKAng = Angle(-5, -0, 180 + 12),
     Scale = 1,
 
     TPIKPosSightOffset = Vector(3, 1, -3),
@@ -100,12 +100,12 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 
 ---- Weapon Stats and Behaviour
 -- Damage
-SWEP.DamageMax = 50
-SWEP.DamageMin = 30
+SWEP.DamageMax = 40
+SWEP.DamageMin = 25
 SWEP.DamageType = DMG_BULLET
 
 SWEP.BodyDamageMults = {
-    [HITGROUP_HEAD] = 3,
+    [HITGROUP_HEAD] = 2.5,
     [HITGROUP_CHEST] = 1,
     [HITGROUP_STOMACH] = 1,
     [HITGROUP_LEFTARM] = 1,
@@ -115,8 +115,8 @@ SWEP.BodyDamageMults = {
 }
 
 
-SWEP.Penetration = 45 -- Units of wood that can be penetrated
-SWEP.ImpactForce = 12  -- How much kick things will have when hit
+SWEP.Penetration = 35 -- Units of wood that can be penetrated
+SWEP.ImpactForce = 10  -- How much kick things will have when hit
 
 -- Range
 SWEP.RangeMin = 15 / ARC9.HUToM
@@ -135,11 +135,11 @@ SWEP.ClipSize = 6
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 4
-SWEP.RecoilSide = 3
+SWEP.RecoilUp = 3
+SWEP.RecoilSide = 2
 
 SWEP.RecoilRandomUp = 0.5
-SWEP.RecoilRandomSide = 3
+SWEP.RecoilRandomSide = 1.75
 
 SWEP.RecoilAddRecoil = 1
 SWEP.RecoilRandomUpAddRecoil = 0
@@ -154,7 +154,7 @@ SWEP.RecoilAutoControlShooting = 1
 SWEP.RecoilMultSights = 0.75
 SWEP.RecoilMultCrouch = 0.85
 
-SWEP.RecoilKickRoll = 60/70
+SWEP.RecoilKickRoll = 60 / 70
 
 -- Visual Recoil
 SWEP.VisualRecoil = 0.5
@@ -180,19 +180,19 @@ SWEP.VisualRecoilPunchHipFire = 5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.005
-SWEP.SpreadAddHipFire = 0.015
+SWEP.SpreadAddHipFire = 0.01
 
-SWEP.SpreadAddRecoil = 0.025
+SWEP.SpreadAddRecoil = 0.018
 SWEP.SpreadAddMove = 0.008
 SWEP.SpreadAddMidAir = 0.05
 
 -- Intensify recoil-induced spread when hipfiring; as a fraction of SpreadAddHipFire
-SWEP.HipfireBloomAmplification = 0.5
+SWEP.HipfireBloomAmplification = 1.5
 
 SWEP.SpreadMultSights = 1
 SWEP.SpreadMultMove = 1
 
-SWEP.RecoilDissipationRate = 3
+SWEP.RecoilDissipationRate = 2
 SWEP.RecoilResetTime = 0.1
 SWEP.RecoilPerShot = 1 / 2
 SWEP.RecoilModifierCap = 1
@@ -203,17 +203,17 @@ SWEP.RecoilPerShotMultSights = 0.75
 -- Weapon handling
 SWEP.SpeedMult = 1 -- Walk speed multiplier
 SWEP.SpeedMultSights = 0.8 -- When aiming
-SWEP.SpeedMultShooting = 0.75
+SWEP.SpeedMultShooting = 0.85
 
 SWEP.SwayAddSights = 0
-SWEP.SwayMultSights = 0.15
+SWEP.SwayMultSights = 1.25
 SWEP.BarrelLength = 24
 
 SWEP.AimDownSightsTime = 0.25 -- Time it takes to fully enter ADS
 SWEP.SprintToFireTime = 0.2 -- Time it takes to fully enter sprint
 
 -- Shooting and Firemodes
-SWEP.RPM = 180 -- How fast gun shoot
+SWEP.RPM = 240 -- How fast gun shoot
 
 SWEP.Num = 1 -- How many bullets shot at once
 
@@ -231,9 +231,6 @@ SWEP.Firemodes = {
         RPM = 300,
         TriggerDelay = false,
         RecoilKickMult = 0.75,
-        RecoilResetTime = 0.22,
-        RecoilDissipationRateMult = 0.5,
-        RangeMinAdd = 10 / ARC9.HUToM,
     },
 }
 

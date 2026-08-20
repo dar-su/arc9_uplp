@@ -55,6 +55,8 @@ L["uplp_caliber_45acp"] = ".45 ACP"
 L["uplp_caliber_308auto"] = ".380 ACP"
 L["uplp_caliber_4570"] = ".45-70 Government"
 L["uplp_caliber_2375"] = " 23×75mm R"
+L["uplp_caliber_357magnum"] = ".357 Magnum"
+L["uplp_caliber_44magnum"] = ".44 Magnum"
 
 L["uplp_caliber_rpg7"] = "Rocket-Propelled Grenades"
 
@@ -2237,6 +2239,13 @@ L["uplp_spas_stock_folding_hook.description"] = "Collapsible folding stock for t
 L["uplp_spas_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_spas_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_spas_stock_tube.description"] = "Aftermarket pistol grip with built-in buffer tube for attaching AR-15 stocks."
+
+//////////////////// SW 629
+L["uplp_weapon_sw629"] = "S621" // get it? cause of the furry website? trololololol
+L["uplp_weapon_sw629_real"] = "S&W Model 629"
+L["uplp_weapon_sw629_desc"] = "The S621 is a six-shot, double-action revolver with an enduring legacy. Once the most powerful production handgun in the world and a cinema icon, it remains relevant in the modern day thanks to its reliability, accuracy, and stopping power."
+
+L["uplp_weapon_sw629_manufacturer"] = "Smith & Wesson Brands, Inc."
 
 //////////////////// M92FS
 L["uplp_weapon_m9"] = "PM92"
