@@ -1,10 +1,10 @@
 function EFFECT:Init(data)
     self.Weapon = data:GetEntity()
-    self.Owner = self.Weapon:GetOwner()
-    
+    self.Owner = IsValid(self.Weapon) and self.Weapon:GetOwner() or self:GetOwner()
+
     if IsValid(self.Owner) and self.Owner:IsPlayer() then
         self.ViewModel = self.Owner:GetViewModel()
-        
+
         if IsValid(self.ViewModel) then
             ParticleEffectAttach("barrel_smoke_3", PATTACH_POINT_FOLLOW, self.ViewModel, 8)
             -- port_shellsmoke
@@ -17,8 +17,8 @@ function EFFECT:Init(data)
 end
 
 function EFFECT:Think()
-    if not IsValid(self.Weapon) or not IsValid(self.Owner) or not IsValid(self.ViewModel) then 
-        return false 
+    if not IsValid(self.Weapon) or not IsValid(self.Owner) or not IsValid(self.ViewModel) then
+        return false
     end
     return true
 end
