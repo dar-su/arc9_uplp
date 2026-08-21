@@ -579,6 +579,9 @@ function ENT:ImpactTraceAttack(ent, damage, pen, pos)
         dmginfo:SetDamageForce(self:GetForward() * pen)
         dmginfo:SetDamageType(DMG_AIRBOAT)
         dmginfo:SetDamage(damage)
+        if gunship[ent:GetClass()] then
+            dmginfo:ScaleDamage(1.5)
+        end
         ent:DispatchTraceAttack(dmginfo, tr, self:GetForward())
     end
 end
@@ -623,6 +626,6 @@ end
 
 hook.Add("EntityTakeDamage", "arc9_uplp_proj_collision", function(ent, dmginfo)
     if IsValid(dmginfo:GetInflictor())
-            and scripted_ents.IsBasedOn(dmginfo:GetInflictor():GetClass(), "arc9_uplp_proj_base")
+            and scripted_ents.IsBasedOn(dmginfo:GetInflictor():GetClass(), "arc9_uplp_rocket_base")
             and dmginfo:GetDamageType() == DMG_CRUSH then dmginfo:SetDamage(0) return true end
 end)

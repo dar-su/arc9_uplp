@@ -54,8 +54,8 @@ function ENT:Detonate(hitEnt, data)
     ParticleEffect("explosion_he_grenade_fas2", pos, normal:Angle())
 
     util.BlastDamage(self, attacker, self:GetPos(), 250, 50)
-    if istable(data) then
-        self:ImpactTraceAttack(data.HitEntity, 200, 30000)
+    if IsValid(hitEnt) then
+        self:ImpactTraceAttack(hitEnt, 200, 30000)
     end
 
     if self:WaterLevel() >= 1 then

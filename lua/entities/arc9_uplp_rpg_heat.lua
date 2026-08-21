@@ -73,8 +73,8 @@ function ENT:Detonate(hitEnt, data)
     dmg:SetDamagePosition(src)
     dmg:SetDamage(200)
     util.BlastDamageInfo(dmg, self:GetPos(), self.Radius)
-    if istable(data) then
-        self:ImpactTraceAttack(data.HitEntity, 300, 18000)
+    if IsValid(hitEnt) then
+        self:ImpactTraceAttack(hitEnt, 300, 18000)
     end
 
     local fx = EffectData()
