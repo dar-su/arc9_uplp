@@ -127,7 +127,7 @@ if CLIENT then
         local clip = wep:Clip1()
         local clipsize = wep:GetMaxClip1()
         local reloading = wep:GetReloading()
-        local reloadtime = wep:GetReloadTime()
+        local reloadtime = wep:GetRefillTime()
         local reloadprogress = math.min(1, 1 - (reloadtime - CurTime()))
 
         render.PushRenderTarget(uplp_1911alyx_RT)
