@@ -87,15 +87,15 @@ function ENT:Detonate(hitEnt, data)
         -- explosion_grenade_fas2
 
         self:EmitSound(self.ExplosionSounds[math.random(1,#self.ExplosionSounds)], 125, 100, 1, CHAN_AUTO, _, _, ARC9.EveryoneRecipientFilter)
-        ParticleEffect("explosion_HE_m79_fas2", self:GetPos(), dir:Angle())
+        ParticleEffect("explosion_HE_m79", self:GetPos(), dir:Angle())
 
-        if d >= 0.5 then
+        -- if d >= 0.5 then
             ParticleEffect("grenade_explosion_01", self:GetPos(), dir:Angle())
             ParticleEffect("striderbuster_attach_flash", self:GetPos(), dir:Angle())
             ParticleEffect("striderbuster_break_b", self:GetPos(), dir:Angle())
             ParticleEffect("striderbuster_break_explode", self:GetPos(), dir:Angle())
             ParticleEffect("striderbuster_explode_dummy_core", self:GetPos(), dir:Angle())
-        end
+        -- end
     end
 
     util.ScreenShake(self:GetPos(), 25, 4, 0.75, self.Radius * 3)
