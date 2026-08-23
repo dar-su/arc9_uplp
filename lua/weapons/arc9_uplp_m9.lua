@@ -393,7 +393,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgressTime = 0.2,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
             { s = pathUT .. "slidepull.ogg", t = 5 / 60, v = 0.8 },
             { s = pathUT .. "sliderel.ogg", t = 15 / 60, v = 0.8 },
             {s = pathUTC .. "cloth_4.ogg", t = 22 / 60},
@@ -410,7 +410,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgressTime = 0.2,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 0 },
@@ -425,7 +425,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgressTime = 0.2,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1, rhik = 0 },
@@ -497,7 +497,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 35 / 60 },
@@ -522,7 +522,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 35 / 60 },
@@ -549,7 +549,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 17.5 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 45 / 60 },
@@ -574,7 +574,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 17.5 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 45 / 60 },
@@ -694,7 +694,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.1,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
             {s = pathUTC .. "pistol_rattle_1.ogg", t = 10 / 60},
             {s = pathUTC .. "pistol_rattle_2.ogg", t = 20 / 60},
             {s = pathUTC .. "pistol_rattle_3.ogg", t = 30 / 60},
@@ -706,14 +706,14 @@ SWEP.Animations = {
     ["rc_draw"] = {
         -- Source = "rc_draw",
         -- EventTable = {
-        --     { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+        --     { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
         -- },
         Source = "rc_ready",
 		MinProgress = 0.5,
 		FireASAP = true,
         Mult = 1.1,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
             {s = pathUTC .. "pistol_rattle_1.ogg", t = 10 / 60},
             {s = pathUTC .. "pistol_rattle_2.ogg", t = 20 / 60},
             {s = pathUTC .. "pistol_rattle_3.ogg", t = 30 / 60},
@@ -726,7 +726,7 @@ SWEP.Animations = {
 		MinProgress = 0.5,
 		FireASAP = true,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
         },
     },
     ["rc_holster"] = {
@@ -780,7 +780,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.12,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 7.5 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 20 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 30 / 60 },
@@ -798,7 +798,7 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.12,
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 7.5 / 60 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 4 / 60, v = 0.3 },
             { s = pathUT .. "magin.ogg", t = 30 / 60 },

@@ -486,7 +486,7 @@ SWEP.Animations = {
         MinProgressTime = 0.5 / 1.25,
         Mult = 1.25,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     --[[ Looks buggy in SP??
@@ -495,7 +495,7 @@ SWEP.Animations = {
         Reverse = true,
         MinProgress = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ]]
@@ -515,7 +515,7 @@ SWEP.Animations = {
         MagSwapTime = 20/30,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUT .. "open.ogg", t = 3.5 / 30, v = 1 },
             { s = pathUT .. "struggle.ogg", t = 19 / 30, v = 0.5 },
             { s = shellin, t = 23 / 30, v = 1 }, -- Shell
@@ -548,7 +548,7 @@ SWEP.Animations = {
         MagSwapTime = 20/30,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUT .. "open.ogg", t = 3.5 / 30, v = 1 },
             { s = pathUT .. "struggle.ogg", t = 19 / 30, v = 0.5 },
             { s = shellin, t = 23 / 30, v = 1 }, -- Shell
@@ -584,7 +584,7 @@ SWEP.Animations = {
         Mult = 0.975,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUT .. "open.ogg", t = 3.5 / 30, v = 1 },
             { s = pathUT .. "struggle.ogg", t = 24 / 30, v = 0.5 },
             { s = shellin, t = 30 / 30, v = 1 }, -- Shell
@@ -618,7 +618,7 @@ SWEP.Animations = {
         MagSwapTime = 20/30,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUT .. "open.ogg", t = 3.5 / 30, v = 1 },
             { s = pathUT .. "struggle.ogg", t = 24 / 30, v = 0.5 },
             { s = shellin, t = 30 / 30, v = 1 }, -- Shell
@@ -651,7 +651,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-shotgun-01.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 25 / 30, v = 0.8 },
             { s = pathUTC .. "movement-shotgun-04.ogg", t = 35 / 30, v = 0.8 },
@@ -676,7 +676,7 @@ SWEP.Animations = {
         MinProgress = 0.85,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-shotgun-01.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 25 / 30, v = 0.8 },
             { s = pathUTC .. "movement-shotgun-04.ogg", t = 35 / 30, v = 0.8 },

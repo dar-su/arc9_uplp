@@ -310,8 +310,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = pathRZ .. "hammer.ogg", t = 36 / 60, v = 0.8 },
             {s = UTCrattle, t = 56 / 60},
         },
@@ -322,8 +322,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
         },
     },
     ["draw_empty"] = {
@@ -331,8 +331,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -340,8 +340,8 @@ SWEP.Animations = {
         MinProgressTime = 0.6 / 2,
         Mult = 2,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -349,8 +349,8 @@ SWEP.Animations = {
         MinProgressTime = 0.6 / 2,
         Mult = 2,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60, v = 0.8 },
-            { s = UTCloth, t = 0 / 60, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
         },
     },
 
@@ -383,8 +383,8 @@ SWEP.Animations = {
         FireASAP = true,
         Mult = 1.02,
         EventTable = {
-            { s = UTCrattle, t = 0 / 60 },
-            { s = UTCloth, t = 0 / 60, v = 0.25, },
+            { s = UTCrattle, t = 0 },
+            { s = UTCloth, t = 0, v = 0.25, },
             { s = UTCrattle, t = 26 / 60 },
             { s = UTCloth, t = 28 / 60 },
             { s = pathRZ .. "tap.ogg", t =  48/ 60 },

@@ -486,7 +486,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.6,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -494,7 +494,7 @@ SWEP.Animations = {
         Source = "holster",
         MinProgressTime = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 
@@ -525,7 +525,7 @@ SWEP.Animations = {
         DropMagAt = 29/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
 
             { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, v = 0.8 },
@@ -556,7 +556,7 @@ SWEP.Animations = {
         DropMagAt = 29/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
 
             { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, v = 0.8 },
@@ -592,7 +592,7 @@ SWEP.Animations = {
         DropMagAt = 29/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
 
             { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, v = 0.8 },
             -- { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, v = 0.8 },
@@ -623,7 +623,7 @@ SWEP.Animations = {
         DropMagAt = 29/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
 
             { s = pathUTM82 .. "magrel.ogg", t = 5 / 30, v = 0.8 },
             -- { s = pathUTSaiga .. "magout.ogg", t = 12 / 30, v = 0.8 },
@@ -659,7 +659,7 @@ SWEP.Animations = {
         DropMagAt = 32/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
 
             { s = pathUTM82 .. "magrel.ogg", t = 6 / 30, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 11 / 30, v = 0.8 },
@@ -690,7 +690,7 @@ SWEP.Animations = {
         DropMagAt = 32/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
 
             { s = pathUTM82 .. "magrel.ogg", t = 6 / 30, v = 0.8 },
             { s = pathUTSaiga .. "magout.ogg", t = 11 / 30, v = 0.8 },
@@ -726,7 +726,7 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         -- MinProgress= 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ShellInsert, t = 13.5 / 30, v = 0.6 },
         },
         IKTimeLine = {
@@ -791,7 +791,7 @@ SWEP.Animations = {
         Source = "reload_end",
         MinProgress = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
@@ -806,7 +806,7 @@ SWEP.Animations = {
         MinProgress = 0.75,
         EjectAt = 11/30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
 
             { s = pathUTREAL .. "rack_1.ogg", t = 8 / 30, v = 0.6 },
@@ -828,7 +828,7 @@ SWEP.Animations = {
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
@@ -852,7 +852,7 @@ SWEP.Animations = {
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },

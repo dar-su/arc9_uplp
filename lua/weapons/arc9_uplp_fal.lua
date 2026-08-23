@@ -375,7 +375,7 @@ SWEP.Animations = {
 		FireASAP = true,
         MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUTREAL .. "chback.ogg", t = 1 / 30, v = 0.8 },
             { s = pathUTREAL .. "chforward.ogg", t = 11 / 30, v = 0.8 },
@@ -395,7 +395,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -404,7 +404,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -413,7 +413,7 @@ SWEP.Animations = {
         MinProgressTime = 0.3 / 0.75,
         Mult = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -421,7 +421,7 @@ SWEP.Animations = {
         MinProgressTime = 0.3 / 0.75,
         Mult = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 
@@ -624,7 +624,7 @@ SWEP.Animations = {
     ["inspect"] = {
         Source = {"inspect"},
         EventTable = {
-            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, v = 0.8 },
@@ -644,7 +644,7 @@ SWEP.Animations = {
     ["inspect_empty"] = {
         Source = {"inspect_empty"},
         EventTable = {
-            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, v = 0.8 },

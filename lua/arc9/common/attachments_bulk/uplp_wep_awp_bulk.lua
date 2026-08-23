@@ -226,13 +226,13 @@ ATT.Ammo = "ar2"
 -- Negatives
 ATT.DamageMax = 48
 ATT.DamageMin = 48
--- ATT.RangeMin = 0 / ARC9.HUToM
+-- ATT.RangeMin = 0
 ATT.RangeMax = 120 / ARC9.HUToM
 ATT.SweetSpot = true
 ATT.SweetSpotDamage = 70
 ATT.SweetSpotRange = 60 / ARC9.HUToM
 ATT.SweetSpotWidth = 120 / ARC9.HUToM
-ATT.SweetSpotPeak = 0 / ARC9.HUToM
+ATT.SweetSpotPeak = 0
 ATT.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
 
 ATT.ShootSound = shoot308
@@ -279,13 +279,13 @@ ATT.ClipSize = 8
 -- Negatives
 ATT.DamageMax = 48
 ATT.DamageMin = 48
--- ATT.RangeMin = 0 / ARC9.HUToM
+-- ATT.RangeMin = 0
 ATT.RangeMax = 120 / ARC9.HUToM
 ATT.SweetSpot = true
 ATT.SweetSpotDamage = 70
 ATT.SweetSpotRange = 60 / ARC9.HUToM
 ATT.SweetSpotWidth = 120 / ARC9.HUToM
-ATT.SweetSpotPeak = 0 / ARC9.HUToM
+ATT.SweetSpotPeak = 0
 ATT.PhysBulletMuzzleVelocity = 850 / ARC9.HUToM
 
 ATT.ShootSound = shoot308
@@ -333,7 +333,7 @@ ATT.Ammo = "357"
 -- lethal from 44 to 109 meters
 ATT.DamageMax = 52
 ATT.DamageMin = 70
--- ATT.RangeMin = 0 / ARC9.HUToM
+-- ATT.RangeMin = 0
 ATT.RangeMax = 150 / ARC9.HUToM
 
 ATT.SweetSpot = true

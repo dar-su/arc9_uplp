@@ -587,7 +587,7 @@ ATT.IKAnimationProxy = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_1.ogg", t = 0 / 30, v = 1 },
+            { s = pathUTC .. "cloth_1.ogg", t = 0, v = 1 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 2/30, v = 0.8 },
         }
     },
@@ -599,7 +599,7 @@ ATT.IKAnimationProxy = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 1 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 1 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 2/30, v = 0.3 },
         }
     },

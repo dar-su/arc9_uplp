@@ -466,8 +466,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 0 / 60 },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.3 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.3},
             { s = pathUTC .. "cloth_4.ogg", t = 29 / 60 },
@@ -486,7 +486,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0, v = 0.8 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -500,7 +500,7 @@ SWEP.Animations = {
         MinProgressTime = 0.3 / 0.75,
         Mult = 0.75,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "rattle2.ogg", t = 0 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -581,7 +581,7 @@ SWEP.Animations = {
         -- Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
         -- now its ok
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
@@ -592,7 +592,7 @@ SWEP.Animations = {
         MinProgress = 0.4,
         Mult = 1.0,
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
@@ -609,7 +609,7 @@ SWEP.Animations = {
         MagSwapTime = 23/30,
 
         EventTable = {
-            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 / 60 },
+            { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathDeagle .. "slidepull.ogg", t = 10/30 },
             { s = pathUT .. "cylinder_extract.ogg", t = 12/30 },
             -- { s = pathUTC .. "revolver_extractor.ogg", t = 12/30 },
@@ -677,7 +677,7 @@ SWEP.Animations = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.1},
         },
@@ -685,7 +685,7 @@ SWEP.Animations = {
     ["firemode_2"] = {
         Source = "uncock",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = pathUTC .. "revolver_trigger-01.ogg", t = 0.1 },
             { s = pathUTC .. "revolver_trigger-01.ogg", t = 0.1 },
             {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.1},

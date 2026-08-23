@@ -393,7 +393,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.75,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 1 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 1 },
             { s = pathUTC .. "raise.ogg", t = 3 / 30, v = 1 },
             { s = pathUTT .. "belt1.ogg", t = 6 / 30, v = 0.3 },
             { s = pathUTT .. "belt2.ogg", t = 8 / 30, v = 0.5 },
@@ -403,7 +403,7 @@ SWEP.Animations = {
         Source = "holster",
         MinProgressTime = 0.6,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 1 },
+            { s = UTCrattle, t = 0, v = 1 },
             { s = pathUTT .. "belt1.ogg", t = 2 / 30, v = 0.2 },
         },
     },
@@ -451,8 +451,8 @@ SWEP.Animations = {
         MagSwapTime = 72/30,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
 
             { s = ")uplp_urban_temp/awp/magout.ogg", t = 44 / 30, v = 1 },
             { s = pathUTT .. "boxremove.ogg", t = 45 / 30, v = 1 },
@@ -478,8 +478,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 13 / 30, v = 0.5 },
             { s = pathUTC .. "cloth_4.ogg", t = 35 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_5.ogg", t = 70 / 30, v = 0.8 },

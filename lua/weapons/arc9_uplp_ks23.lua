@@ -404,7 +404,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.6,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
@@ -412,7 +412,7 @@ SWEP.Animations = {
         Source = "holster",
         MinProgressTime = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 
@@ -432,7 +432,7 @@ SWEP.Animations = {
         EjectAt = 8 / 30,
         MinProgress = 0.7,
         EventTable = {
-            { s = pathRZ .. "rack_1.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/870/eject.ogg", t = 3 / 30, v = 0.8 },
             { s = pathRZ .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
         },
@@ -445,7 +445,7 @@ SWEP.Animations = {
         RestoreAmmo = 0,
         MinProgress = 0.5,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 
@@ -469,7 +469,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 0 / 30, v = 0.8 },
+            { s = ShellInsert, t = 0, v = 0.8 },
         },
     },
     ["reload_insert_first"] = {
@@ -477,7 +477,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         RestoreAmmo = 0,
         EventTable = {
-            { s = ShellInsert, t = 0 / 30, v = 0.6 },
+            { s = ShellInsert, t = 0, v = 0.6 },
         },
     },
 
@@ -486,7 +486,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
     },
@@ -496,7 +496,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         FireASAP = true,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
         },
     },
@@ -507,7 +507,7 @@ SWEP.Animations = {
         MinProgress = 0.95,
         FireASAP = true,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },

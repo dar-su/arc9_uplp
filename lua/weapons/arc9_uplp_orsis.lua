@@ -120,7 +120,7 @@ SWEP.Penetration = 80 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 20 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 0 / ARC9.HUToM
+SWEP.RangeMin = 0
 SWEP.RangeMax = 250 / ARC9.HUToM
 
 -- Physical Bullets
@@ -360,7 +360,7 @@ local thetoggle = {{
 }}
 
 local inspectst = {
-    { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+    { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
     { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
     { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
     { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, v = 0.8 },
@@ -383,7 +383,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgressTime = 0.75,
         EventTable = {
-            { s = pathUT2 .. "grab.ogg", t = 0 / 30, v = 1 },
+            { s = pathUT2 .. "grab.ogg", t = 0, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
 
             {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2 + 0.7, v = 1},
@@ -397,7 +397,7 @@ SWEP.Animations = {
 		FireASAP = true,
         MinProgressTime = 0.75,
         EventTable = {
-            { s = pathUT2 .. "grab.ogg", t = 0 / 30, v = 1 },
+            { s = pathUT2 .. "grab.ogg", t = 0, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
         },
     },
@@ -414,7 +414,7 @@ SWEP.Animations = {
         MinProgressTime = 0.6 / 1.25,
         Mult = 1.25,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
         },
     },
@@ -470,7 +470,7 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
             { s = pathUT2 .. "magrel.ogg", t = 15 / 30, v = 1 },
@@ -506,7 +506,7 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 0.8 },
 
             { s = pathUT2 .. "magrel.ogg", t = 15 / 30, v = 1 },
@@ -549,7 +549,7 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.0,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
             { s = pathUT2 .. "magrel.ogg", t = 13 / 30, v = 1 },
@@ -585,7 +585,7 @@ SWEP.Animations = {
         DropMagAt = 36/30,
         MagSwapTime = 1.0,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
             { s = pathUT2 .. "magrel.ogg", t = 13 / 30, v = 1 },
@@ -628,7 +628,7 @@ SWEP.Animations = {
         DropMagAt = 39/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 1 },
 
             { s = pathUT2 .. "magrel.ogg", t = 16 / 30, v = 1 },
@@ -664,7 +664,7 @@ SWEP.Animations = {
         DropMagAt = 39/30,
         MagSwapTime = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg", t = 0, v = 0.8 },
             { s = pathUT2 .. "grab.ogg", t = 1 / 30, v = 0.8 },
 
             { s = pathUT2 .. "magrel.ogg", t = 16 / 30, v = 1 },

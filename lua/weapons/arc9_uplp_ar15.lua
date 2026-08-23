@@ -402,7 +402,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
             { s = pathRZ .. "bolt1.ogg", t = 4 / 30 },
             { s = pathRZ .. "bolt2.ogg", t = 10 / 30 },
             { s = UTCloth, t = 32 / 60, v = 0.6 },
@@ -421,7 +421,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
         },
     },
     ["draw_empty"] = {
@@ -429,7 +429,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -437,7 +437,7 @@ SWEP.Animations = {
         MinProgressTime = 0.3 / 0.5,
         Mult = 0.5,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -445,7 +445,7 @@ SWEP.Animations = {
         MinProgressTime = 0.3 / 0.5,
         Mult = 0.5,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
     },
 
@@ -494,7 +494,7 @@ SWEP.Animations = {
         Mult = 1.05,
         DropMagAt = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 6 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
             { s = pathRZ .. "struggle.ogg", t = 18 / 30 },
@@ -525,7 +525,7 @@ SWEP.Animations = {
         Mult = 1.05,
         DropMagAt = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 6 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
             { s = pathRZ .. "struggle.ogg", t = 18 / 30 },
@@ -559,7 +559,7 @@ SWEP.Animations = {
         DropMagAt = 0.3,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30 },
             { s = pathRZ .. "struggle.ogg", t = 25 / 30 - 0.25 },
             { s = pathRZ .. "magin.ogg", t = 30 / 30 - 0.25 },
@@ -590,7 +590,7 @@ SWEP.Animations = {
         DropMagAt = 0.3,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30 },
             { s = pathRZ .. "struggle.ogg", t = 25 / 30 - 0.25 },
             { s = pathRZ .. "magin.ogg", t = 30 / 30 - 0.25 },
@@ -623,7 +623,7 @@ SWEP.Animations = {
         DropMagAt = 0.35,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30 },
             { s = pathRZ .. "struggle.ogg", t = 25 / 30 - 0.3 },
             { s = pathRZ .. "magin.ogg", t = 30 / 30 - 0.3 },
@@ -654,7 +654,7 @@ SWEP.Animations = {
         DropMagAt = 0.35,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30 },
             { s = pathRZ .. "struggle.ogg", t = 25 / 30 - 0.3 },
             { s = pathRZ .. "magin.ogg", t = 30 / 30 - 0.3 },
@@ -686,7 +686,7 @@ SWEP.Animations = {
         Mult = 1.05,
         DropMagAt = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 2 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
             { s = pathRZ .. "struggle.ogg", t = 22 / 30 + 5 / 30 },
@@ -717,7 +717,7 @@ SWEP.Animations = {
         Mult = 1.05,
         DropMagAt = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 2 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
             { s = pathRZ .. "struggle.ogg", t = 22 / 30 + 5 / 30 },
@@ -750,7 +750,7 @@ SWEP.Animations = {
         Mult = 1.0,
         DropMagAt = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 2 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 7 / 30, v = 1 },
             { s = pathRZ .. "struggle.ogg", t = 22 / 30 + 9 / 30 },
@@ -781,7 +781,7 @@ SWEP.Animations = {
         Mult = 1.05,
         DropMagAt = 0.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 2 / 30 },
             { s = pathUTC .. "magpouch.ogg", t = 7 / 30, v = 1 },
             { s = pathRZ .. "struggle.ogg", t = 22 / 30 + 6 / 30 },
@@ -816,7 +816,7 @@ SWEP.Animations = {
         DropMagAt = 0.4,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30 },
             { s = pathRZ .. "struggle.ogg", t = 25 / 30 - 0.2 },
             { s = pathRZ .. "magin.ogg", t = 30 / 30 - 0.1 },
@@ -849,7 +849,7 @@ SWEP.Animations = {
         DropMagAt = 0.4,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg", t = 5 / 30 },
             { s = pathRZ .. "struggle.ogg", t = 25 / 30 - 0.2 },
             { s = pathRZ .. "magin.ogg", t = 30 / 30 - 0.1 },
@@ -882,7 +882,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 15.5 / 30 + 0.15, v = 0.8 },
             { s = UTCrattle, t = 27 / 30, v = 0.2 },
@@ -910,7 +910,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 15.5 / 30 + 0.15, v = 0.8 },
             { s = UTCloth, t = 22 / 30, v = 0.8 },
@@ -941,7 +941,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30 + 0.15, v = 0.8 },
             { s = UTCrattle, t = 29 / 30, v = 0.2 },
@@ -969,7 +969,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30 + 0.15, v = 0.8 },
             { s = UTCloth, t = 25 / 30, v = 0.8 },
@@ -1000,7 +1000,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30 + 0.23, v = 0.8 },
             { s = UTCrattle, t = 29 / 30 + 0.1, v = 0.2 },
@@ -1028,7 +1028,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30 + 0.23, v = 0.8 },
             { s = UTCloth, t = 20 / 30, v = 0.8 },
@@ -1059,7 +1059,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 15.5 / 30 + 0.15, v = 0.8 },
             { s = UTCrattle, t = 27 / 30, v = 0.2 },
@@ -1087,7 +1087,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 15.5 / 30 + 0.15, v = 0.8 },
             { s = UTCloth, t = 22 / 30, v = 0.8 },
@@ -1118,7 +1118,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30 + 0.15, v = 0.8 },
             { s = UTCrattle, t = 29 / 30, v = 0.2 },
@@ -1146,7 +1146,7 @@ SWEP.Animations = {
         DropMagAt = 0.33,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 1 },
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magout-9.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/mp7/scar9/magin-9.ogg", t = 17 / 30 + 0.15, v = 0.8 },
             { s = UTCloth, t = 25 / 30, v = 0.8 },
@@ -1175,7 +1175,7 @@ SWEP.Animations = {
         MinProgress = 0.925,
         -- Mult = 1.2,
         EventTable = {
-            { s = UTCloth, t = 0 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = UTCrattle, t = 5 / 30, v = 0.3 },
             { s = UTCloth, t = 57 / 30, v = 0.8 },
             { s = UTCrattle, t = 110 / 30, v = 0.2 },
@@ -1197,7 +1197,7 @@ SWEP.Animations = {
         MinProgress = 0.925,
         -- Mult = 1.2,
         EventTable = {
-            { s = UTCloth, t = 0 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = UTCrattle, t = 5 / 30, v = 0.3 },
             { s = UTCloth, t = 57 / 30, v = 0.8 },
             { s = UTCrattle, t = 110 / 30, v = 0.2 },

@@ -503,7 +503,7 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         -- MinProgress= 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
             { s = BulletsRattle, t = 0.05},
             { s = ShellInsert, t = 2 / 30, v = 1 },
         },
@@ -550,7 +550,7 @@ SWEP.Animations = {
         Source = "sg_end",
         MinProgress = 0.75,
         EventTable = {
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -560,7 +560,7 @@ SWEP.Animations = {
         Source = "sg_end_first",
         MinProgress = 0.75,
         EventTable = {
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0 / 30, v = 0.6 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -575,7 +575,7 @@ SWEP.Animations = {
         MinProgress = 0.925,
         Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 37 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 38 / 30, v = 0.8 },
@@ -602,7 +602,7 @@ SWEP.Animations = {
         MinProgress = 0.925,
         Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 37 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 38 / 30, v = 0.8 },

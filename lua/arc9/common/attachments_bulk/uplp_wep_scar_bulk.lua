@@ -273,7 +273,7 @@ ATT.PhysBulletMuzzleVelocityMult = 0.9
 ATT.RecoilMult = 1.1
 
 ATT.SweetSpotRangeAdd = -12.5 / ARC9.HUToM
-ATT.SweetSpotWidthAdd = 0 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 0
 ATT.SweetSpotPeakAdd = -15 / ARC9.HUToM
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, -1, 0) end

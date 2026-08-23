@@ -252,7 +252,7 @@ SWEP.Animations = {
         Mult = 0.75,
         FireASAP = true,
         EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+            { s = path1911 .. "draw.ogg", t = 0, v = 0.8 },
         },
     },
     ["holster"] = {

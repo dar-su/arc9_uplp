@@ -434,7 +434,7 @@ SWEP.Animations = {
 		FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            -- { s = UTCloth, t = 0 / 30, v = 0.8 },
+            -- { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
 
             { s = pathRZ .. "chback.ogg", t = 11 / 30, v = 0.8 },
@@ -454,8 +454,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 / 30 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
+            { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 },
             { s = ")uplp_rz/g36/" .. "stock_out.ogg", t = 9 / 30 },
         },
     },
@@ -464,8 +464,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 / 30 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
+            { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 },
             { s = ")uplp_rz/g36/" .. "stock_out.ogg", t = 9 / 30 },
         },
     },
@@ -474,7 +474,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            { s = UTCloth, t = 0 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 10 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/scar/selector-02.ogg", t = 10 / 30, v = 0.8 },
@@ -492,7 +492,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.4,
         EventTable = {
-            { s = UTCloth, t = 0 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 20 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/scar/selector-02.ogg", t = 10 / 30, v = 0.8 },
@@ -510,7 +510,7 @@ SWEP.Animations = {
         MinProgressTime = 0.2 / 0.667,
         Mult = 0.667,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ["holster_empty"] = {
@@ -518,7 +518,7 @@ SWEP.Animations = {
         MinProgressTime = 0.2 / 0.667,
         Mult = 0.667,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 
@@ -564,9 +564,9 @@ SWEP.Animations = {
         FireASAP = true,
         DropMagAt = 1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.5 },
+            { s = UTCrattle, t = 0, v = 0.5 },
             { s = UTCloth, t = 1 / 30, v = 1 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0 / 30, v = 0.6 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0, v = 0.6 },
             { s = pathRZ ..  "bam.ogg", t = 16 / 30, v = 0.8 },
             { s = pathRZ ..  "magrel.ogg", t = 16 / 30, v = 1 },
             { s = pathRZ ..  "magout.ogg", t = 19 / 30, v = 1 },
@@ -595,9 +595,9 @@ SWEP.Animations = {
         FireASAP = true,
         DropMagAt = 1,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.5 },
+            { s = UTCrattle, t = 0, v = 0.5 },
             { s = UTCloth, t = 1 / 30, v = 1 },
-            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0 / 30, v = 0.6 },
+            { s = pathUTC .. "magpouch_pull_small.ogg", t = 0, v = 0.6 },
             { s = pathRZ ..  "bam.ogg", t = 16 / 30, v = 0.8 },
             { s = pathRZ .. "magrel.ogg", t = 16 / 30, v = 1 },
             { s = pathRZ .. "magout.ogg", t = 19 / 30, v = 1 },
@@ -631,7 +631,7 @@ SWEP.Animations = {
         Mult = 1.0,
         DropMagAt = 1.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.5 },
+            { s = UTCrattle, t = 0, v = 0.5 },
             { s = UTCloth, t = 1 / 30, v = 1 },
             { s = pathRZ .. "magrel_pistol.ogg", t = 3 / 30, v = 1 },
             { s = pathRZ .. "magout_pistol.ogg", t = 14 / 30, v = 1 },
@@ -663,7 +663,7 @@ SWEP.Animations = {
         Mult = 1.0,
         DropMagAt = 1.4,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.5 },
+            { s = UTCrattle, t = 0, v = 0.5 },
             { s = UTCloth, t = 1 / 30, v = 1 },
             { s = pathRZ .. "magrel_pistol.ogg", t = 3 / 30, v = 1 },
             { s = pathRZ .. "magout_pistol.ogg", t = 14 / 30, v = 1 },
@@ -699,7 +699,7 @@ SWEP.Animations = {
         Mult = 1.0,
         DropMagAt = 18/30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.5 },
+            { s = UTCrattle, t = 0, v = 0.5 },
             { s = UTCloth, t = 1 / 30, v = 1 },
             { s = pathRZ .. "magrel.ogg", t = 3 / 30, v = 1 },
             { s = pathRZ .. "magout.ogg", t = 7 / 30, v = 1 },
@@ -730,7 +730,7 @@ SWEP.Animations = {
         Mult = 1.0,
         DropMagAt = 18/30,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.5 },
+            { s = UTCrattle, t = 0, v = 0.5 },
             { s = UTCloth, t = 1 / 30, v = 1 },
             { s = pathRZ .. "magrel.ogg", t = 3 / 30, v = 1 },
             { s = pathRZ .. "magout.ogg", t = 7 / 30, v = 1 },
@@ -762,7 +762,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = UTCloth, t = 0 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
             { s = UTCloth, t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 67 / 30, v = 0.8 },
@@ -784,7 +784,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = UTCloth, t = 0 / 30, v = 0.8 },
+            { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
             { s = UTCloth, t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 67 / 30, v = 0.8 },
@@ -828,7 +828,7 @@ SWEP.Animations = {
     ["firemode_1"] = {
         Source = "firemode_1",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-01.ogg", t = 5 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -842,7 +842,7 @@ SWEP.Animations = {
     ["firemode_2"] = {
         Source = "firemode_2",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-02.ogg", t = 5 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -856,7 +856,7 @@ SWEP.Animations = {
     ["firemode_3"] = {
         Source = "firemode_3",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-03.ogg", t = 7 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -870,7 +870,7 @@ SWEP.Animations = {
     ["firemode_4"] = {
         Source = "firemode_4",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-04.ogg", t = 7 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -885,7 +885,7 @@ SWEP.Animations = {
     ["firemode_1_empty"] = {
         Source = "firemode_1_empty",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-01.ogg", t = 5 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -899,7 +899,7 @@ SWEP.Animations = {
     ["firemode_2_empty"] = {
         Source = "firemode_2_empty",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-02.ogg", t = 5 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -913,7 +913,7 @@ SWEP.Animations = {
     ["firemode_3_empty"] = {
         Source = "firemode_3_empty",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-03.ogg", t = 7 / 30, v = 0.8 },
         },
         IKTimeLine = {
@@ -927,7 +927,7 @@ SWEP.Animations = {
     ["firemode_4_empty"] = {
         Source = "firemode_4_empty",
         EventTable = {
-            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t  = 0, v = 0.2 },
             { s = ")uplp_urban_temp/scar/selector-04.ogg", t = 7 / 30, v = 0.8 },
         },
         IKTimeLine = {

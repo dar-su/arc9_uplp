@@ -110,7 +110,7 @@ SWEP.Penetration = 50 -- Units of wood that can be penetrated
 SWEP.ImpactForce = 15 -- How much kick things will have when hit
 
 -- Range
-SWEP.RangeMin = 0 / ARC9.HUToM
+SWEP.RangeMin = 0
 SWEP.RangeMax = 80 / ARC9.HUToM
 
 -- Physical Bullets
@@ -482,7 +482,7 @@ SWEP.Animations = {
         Mult = 1.1,
         DropMagAt = 0.35,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg",     t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg",     t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg",       t = 2 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg",    t = 10 / 30, v = 0.3 },
             { s = pathRZ .. "magin.ogg",        t = 16 / 30, v = 0.8 },
@@ -510,7 +510,7 @@ SWEP.Animations = {
         DropMagAt = 1 * 1,
         EjectAt = 0.37,
         EventTable = {
-            { s = pathRZ .. "bolt1.ogg",        t = 0 / 30},
+            { s = pathRZ .. "bolt1.ogg",        t = 0},
             { s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
             { s = pathRZ .. "magout.ogg",       t = 20 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg",    t = 28 / 30, v = 0.3 },
@@ -542,7 +542,7 @@ SWEP.Animations = {
         DropMagAt = 0.35,
         Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "cloth_2.ogg",     t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_2.ogg",     t = 0, v = 0.8 },
             { s = pathRZ .. "magout.ogg",       t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg",    t = 13 / 30, v = 0.3 },
             { s = pathRZ .. "magin.ogg",        t = 22.5 / 30, v = 0.8 },
@@ -570,7 +570,7 @@ SWEP.Animations = {
         Mult = 1.1,
         EjectAt = 0.37,
         EventTable = {
-            { s = pathRZ .. "bolt1.ogg",        t = 0 / 30},
+            { s = pathRZ .. "bolt1.ogg",        t = 0},
             { s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
             { s = pathRZ .. "magout.ogg",       t = 22.5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg",    t = 28 / 30, v = 0.3 },
@@ -600,7 +600,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, v = 0.8 },
@@ -623,7 +623,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, v = 0.8 },
@@ -646,7 +646,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, v = 0.8 },
@@ -669,7 +669,7 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgress = 0.925,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 85 / 30, v = 0.8 },

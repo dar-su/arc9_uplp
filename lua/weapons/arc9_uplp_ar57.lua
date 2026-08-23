@@ -468,7 +468,7 @@ SWEP.Animations = {
 		FireASAP = true,
 		MinProgressTime = 0.4,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 4 / 30, v = 1 },
             { s = pathUT .. "chforward.ogg", t = 9.5 / 30, v = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 30 / 60, v = 0.6 },
@@ -488,7 +488,7 @@ SWEP.Animations = {
         MinProgressTime = 0.4 / 0.75,
         Mult = 0.75,
         EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
         },
     },
     ["holster"] = {
@@ -496,7 +496,7 @@ SWEP.Animations = {
         MinProgressTime = 0.2 / 0.5,
         Mult = 0.5,
         EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
     },
 
@@ -524,7 +524,7 @@ SWEP.Animations = {
         MagSwapTime = 1.1,
         -- Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
             { s = pathUT .. "magrel.ogg", t = 4 / 30, v = 1 },
             { s = pathUT .. "magout.ogg", t = 13 / 30, v = 1 },
             { s = pathUTC .. "magpouch.ogg", t = 20 / 30, v = 0.35 },
@@ -559,7 +559,7 @@ SWEP.Animations = {
 		FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
-            { s = pathUTC .. "movement-rifle-04.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
             { s = pathUT .. "magrel.ogg", t = 4 / 30, v = 1 },
             { s = pathUT .. "magout.ogg", t = 13 / 30, v = 1 },
             { s = pathUTC .. "magpouch.ogg", t = 20 / 30, v = 0.35 },
@@ -600,7 +600,7 @@ SWEP.Animations = {
         MinProgress = 0.925,
         Mult = 1.0,
         EventTable = {
-            { s = pathUTC .. "cloth_4.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.3 },
             { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, v = 0.2 },
