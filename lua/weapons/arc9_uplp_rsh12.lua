@@ -515,7 +515,6 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         NoIdle = true,
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
         },
@@ -523,14 +522,12 @@ SWEP.Animations = {
     ["fire_da"] = {
         Source = "fire_da", -- same as fire but without hammer poseparam
         NoIdle = true,
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
         },
     },
     ["trigger"] = {
         Source = "trigger",
-        -- Time = 1,
         EventTable = {
             {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},
@@ -538,7 +535,6 @@ SWEP.Animations = {
     },
     ["untrigger"] = {
         Source = "untrigger",
-        -- Time = 1,
         EventTable = {
             {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0},
         },
@@ -546,7 +542,6 @@ SWEP.Animations = {
 
     ["dryfire"] = {
         Source = {"dryfire", "dryfire2"},
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, v = 0.2 },
@@ -556,7 +551,6 @@ SWEP.Animations = {
     },
     ["dryfire_sights"] = {
         Source = "dryfire",
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, v = 0.2 },
@@ -566,7 +560,6 @@ SWEP.Animations = {
     },
     ["dryfire_da"] = {
         Source = "dryfire_da",
-        -- Time = 1,
         EventTable = {
             {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},

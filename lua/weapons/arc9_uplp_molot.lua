@@ -486,7 +486,7 @@ SWEP.Animations = {
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         NoIdle = true,
         Mult = 1,
         EventTable = { { s = mechh, t = 0 } },
@@ -675,7 +675,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 98 / 30 , v = 0.6},
 
             { s = pathUT .. "chback.ogg", t = 113 / 30, v = 0.9 },
-            { s = pathUT .. "chamber.ogg", t = 118 / 30, v = 1 },
+            { s = pathUT .. "chamber.ogg", t = 118 / 30 },
             { s = UTCrattle, t = 126 / 30, v = 0.45 },
 
             {hide = 0, t = 0.3},
@@ -693,7 +693,7 @@ SWEP.Animations = {
     },
 
     ["inspect_look"] = {
-        Source = {"look"},
+        Source = "look",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -711,7 +711,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look_empty"] = {
-        Source = {"look_empty"},
+        Source = "look_empty",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -730,7 +730,7 @@ SWEP.Animations = {
     },
 
     ["inspect_look_long"] = {
-        Source = {"look_long"},
+        Source = "look_long",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -748,7 +748,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_look_long_empty"] = {
-        Source = {"look_long_empty"},
+        Source = "look_long_empty",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -767,7 +767,7 @@ SWEP.Animations = {
     },
 
     ["inspect_look_drum"] = {
-        Source = {"look_drum"},
+        Source = "look_drum",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -786,14 +786,14 @@ SWEP.Animations = {
     },
 
     ["inspect"] = {
-        Source = {"check"},
+        Source = "check",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 115 / 30, v = 0.8 },
             -- {hide = 1, t = 0},
@@ -808,14 +808,14 @@ SWEP.Animations = {
     },
 
     ["inspect_empty"] = {
-        Source = {"check_empty"},
+        Source = "check_empty",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 115 / 30, v = 0.8 },
             -- {hide = 1, t = 0},
@@ -830,14 +830,14 @@ SWEP.Animations = {
     },
 
     ["inspect_long"] = {
-        Source = {"check_long"},
+        Source = "check_long",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 117.5 / 30, v = 0.8 },
             -- {hide = 1, t = 0},
@@ -851,14 +851,14 @@ SWEP.Animations = {
         },
     },
     ["inspect_long_empty"] = {
-        Source = {"check_long_empty"},
+        Source = "check_long_empty",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30, v = 1 },
+            { s = ")uplp_urban_temp/ak/grab.ogg", t = 63 / 30 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 117.5 / 30, v = 0.8 },
             -- {hide = 1, t = 0},
@@ -873,14 +873,14 @@ SWEP.Animations = {
     },
 
     ["inspect_drum"] = {
-        Source = {"check_drum"},
+        Source = "check_drum",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = ")uplp_urban_temp/ak/scrape.ogg", t = 68 / 30, v = 1 },
+            { s = ")uplp_urban_temp/ak/scrape.ogg", t = 68 / 30 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 122.5 / 30, v = 0.8 },
             -- {hide = 1, t = 0},

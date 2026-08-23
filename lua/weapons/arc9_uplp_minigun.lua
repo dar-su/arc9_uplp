@@ -393,8 +393,8 @@ SWEP.Animations = {
         FireASAP = true,
         MinProgressTime = 0.75,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 1 },
-            { s = pathUTC .. "raise.ogg", t = 3 / 30, v = 1 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0 },
+            { s = pathUTC .. "raise.ogg", t = 3 / 30 },
             { s = pathUTT .. "belt1.ogg", t = 6 / 30, v = 0.3 },
             { s = pathUTT .. "belt2.ogg", t = 8 / 30, v = 0.5 },
         },
@@ -403,7 +403,7 @@ SWEP.Animations = {
         Source = "holster",
         MinProgressTime = 0.6,
         EventTable = {
-            { s = UTCrattle, t = 0, v = 1 },
+            { s = UTCrattle, t = 0 },
             { s = pathUTT .. "belt1.ogg", t = 2 / 30, v = 0.2 },
         },
     },
@@ -422,7 +422,7 @@ SWEP.Animations = {
         Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = {
-            {s = pathUTREAL .. "electrosaw_mech.wav", v = 1, t = 0},
+            {s = pathUTREAL .. "electrosaw_mech.wav", t = 0},
             {s = pathUTREAL .. "electrosaw_winddown.ogg", v = 0.25, t = 3/30},
         },
     },
@@ -454,11 +454,11 @@ SWEP.Animations = {
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
 
-            { s = ")uplp_urban_temp/awp/magout.ogg", t = 44 / 30, v = 1 },
-            { s = pathUTT .. "boxremove.ogg", t = 45 / 30, v = 1 },
+            { s = ")uplp_urban_temp/awp/magout.ogg", t = 44 / 30 },
+            { s = pathUTT .. "boxremove.ogg", t = 45 / 30 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 66 / 30, v = 0.6 },
-            { s = pathUTT .. "boxinsert.ogg", t = 75 / 30, v = 1 },
-            { s = pathUTT .. "belt1.ogg", t = 97 / 30, v = 1 },
+            { s = pathUTT .. "boxinsert.ogg", t = 75 / 30 },
+            { s = pathUTT .. "belt1.ogg", t = 97 / 30 },
             { s = pathUTT .. "belt2.ogg", t = 103 / 30, v = 0.5 },
             { s = pathUTT .. "chforward.ogg", t = 105 / 30, v = 0.2 },
 

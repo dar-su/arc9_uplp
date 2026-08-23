@@ -549,7 +549,7 @@ SWEP.Animations = {
             { s = ShellInsert, t = 10 / 30, v = 0.6 },
             { s = pathUT .. "forearm_back.ogg", t = 24 / 30, v = 0.6 },
             { s = pathUT .. "forearm_forward.ogg", t = 30 / 30, v = 0.6 },
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30, v = 1 },
+            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30 },
             { s = touchh, t = 50 / 30, v = 0.5 },
         },
     },
@@ -592,8 +592,8 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 44 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
             { s = pathUT2 .. "ar15/selector-01.ogg", t = 55 / 30, v = 0.8 },
-            { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30, v = 1 },
-            { s = pathUT .. "presscheck2.ogg", t = 90 / 30, v = 1 },
+            { s = pathUT .. "presscheck1.ogg", t = 62.5 / 30 },
+            { s = pathUT .. "presscheck2.ogg", t = 90 / 30 },
             { s = pathUT2 .. "ar15/selector-06.ogg", t = 94 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 105 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 107.5 / 30, v = 0.8 },
@@ -617,19 +617,19 @@ SWEP.Animations = {
     },
     ["firemode_1"] = {
         Source = "modeswitch",
-        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
+        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0 } },
     },
     ["firemode_1_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0, v = 1 } },
+        EventTable = { { s = pathUT2 .. "ar15/selector-01.ogg", t = 0 } },
     },
     ["firemode_2"] = {
         Source = "modeswitch",
-        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0, v = 1 } },
+        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0 } },
     },
     ["firemode_2_empty"] = {
         Source = "modeswitch_empty",
-        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0, v = 1 } },
+        EventTable = { { s = pathUT2 .. "ar15/selector-06.ogg", t = 0 } },
     },
     ["toggle"] = {
         Source = "modeswitch",

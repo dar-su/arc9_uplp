@@ -471,7 +471,7 @@ SWEP.Animations = {
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         ShellEjectAt = 0.01,
         Mult = 0.65,
         NoIdle = true,
@@ -485,7 +485,7 @@ SWEP.Animations = {
         },
     },
     ["fire_sights_bizon"] = {
-        Source = {"fire_sights_bizon"},
+        Source = "fire_sights_bizon",
         ShellEjectAt = 0.01,
         Mult = 0.65,
         NoIdle = true,
@@ -623,7 +623,7 @@ SWEP.Animations = {
     -- Inspect
 
     ["inspect"] = {
-        Source = {"inspect_9mm"},
+        Source = "inspect_9mm",
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
@@ -645,27 +645,9 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    -- ["inspect_look"] = {
-    --     Source = {"inspect0"},
-    --     EventTable = {
-    --         { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, v = 0.8 },
-    --         {hide = 1, t = 0},
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.15, lhik = 0 },
-    --         { t = 0.65, lhik = 0 },
-    --         { t = 0.85, lhik = 0 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    -- },
 
     ["inspect_bizon"] = {
-        Source = {"inspect_bizon"},
+        Source = "inspect_bizon",
         EventTable = {
             { s = pathUTC .. "cloth_5.ogg", t = 0, v = 0.5 },
             { s = pathUTC .. "movement-rifle-01.ogg", t = 10 / 30, v = 0.8 },
@@ -673,16 +655,9 @@ SWEP.Animations = {
             { s = pathUT .. "grab.ogg", t = 82 / 30, v = 0.25 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 125 / 30, v = 0.8 },
 
-            -- { s = pathUT .. "magrelease.ogg", t = 10 / 30, v = 0.7 },
-            -- { s = pathUT .. "grab.ogg", t = 14 / 30, v = 0.8 },
-            -- { s = pathUTC .. "movement-rifle-02.ogg", t = 18 / 30, v = 0.8 },
-            -- { s = pathUT .. "presscheck_1.ogg", t = 155 / 30, v = 0.2 },
             { s = ")uplp_rz/mjolnir/chunlock.ogg", t = 155 / 30, v = 0.1, p = 80 },
             { s = ")uplp_rz/ak/struggle.ogg", t = 173 / 30, v = 0.35, p = 110 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 185 / 30, v = 0.8 },
-            -- {hide = 1, t = 0},
-            -- {hide = 1, t = 1.5},
-            -- {hide = 2, t = 1.8},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -692,25 +667,6 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-    -- ["inspect_look_bizon"] = {
-    --     Source = {"inspect0"},
-    --     EventTable = {
-    --         { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 56 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 62 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 110 / 30, v = 0.8 },
-    --         -- {hide = 1, t = 0},
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.15, lhik = 0 },
-    --         { t = 0.65, lhik = 0 },
-    --         { t = 0.85, lhik = 0 },
-    --         { t = 0.925, lhik = 1 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    -- },
 
     ["firemode_1"] = {
         Source = "firemode_0",

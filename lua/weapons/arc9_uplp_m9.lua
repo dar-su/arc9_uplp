@@ -463,13 +463,13 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         Mult = 0.75,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 0.7,
         ShellEjectAt = 0.01,
         NoIdle = true,
@@ -745,14 +745,12 @@ SWEP.Animations = {
     },
 
     ["rc_fire"] = {
-        Source = {"rc_fire"},
-        -- Time = 1,
+        Source = "rc_fire",
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },
     ["rc_fire_sights"] = {
-        Source = {"rc_fire_sights"},
-        -- Time = 1,
+        Source = "rc_fire_sights",
         Mult = 0.7,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
@@ -760,13 +758,11 @@ SWEP.Animations = {
 
     ["rc_fire_empty"] = {
         Source = "rc_fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },
     ["rc_fire_sights_empty"] = {
         Source = "rc_fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0, v = 0.3 } },
     },

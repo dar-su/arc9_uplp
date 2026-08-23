@@ -448,7 +448,7 @@ SWEP.Animations = {
         MinProgressTime = 0.75,
         EventTable = {
             { s = UTCloth, t = 0, v = 0.8 },
-            { s = pathRZ .. "chback.ogg", t = 0, v = 1 },
+            { s = pathRZ .. "chback.ogg", t = 0 },
             { s = pathRZ .. "chforward.ogg", t = 2 / 30, v = 0.8 },
             { s = pathRZ .. "chamber.ogg", t = 2 / 30, v = 0.8 },
             { s = UTCrattle, t = 18 / 30, v = 0.6 },
@@ -494,12 +494,12 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         ShellEjectAt = 0.01,
         NoIdle = true,
         Mult = 0.8,
@@ -566,8 +566,8 @@ SWEP.Animations = {
             { s = pathRZ .. "magin.ogg", t = 13 / 30, v = 0.8 },
             { s = pathRZ .. "magseat.ogg", t = 25 / 30, v = 0.8 },
             { s = UTCloth, t = 25 / 30, v = 0.6 },
-            { s = pathRZ .. "chunlock.ogg", t = 37 / 30, v = 1 },
-            { s = pathRZ .. "chamber.ogg", t = 30 / 30, v = 1 },
+            { s = pathRZ .. "chunlock.ogg", t = 37 / 30 },
+            { s = pathRZ .. "chamber.ogg", t = 30 / 30 },
             { s = touchh, t = 26 / 30, v = 0.3 },
             { s = b2i, t = 50 / 30 - 0.07, v = 0.3 },
 
@@ -631,8 +631,8 @@ SWEP.Animations = {
             { s = pathRZ .. "magin.ogg", t = 13 / 30 + 0.3, v = 0.8 },
             { s = pathRZ .. "magseat.ogg", t = 28 / 30 + 0.3, v = 0.8 },
             { s = UTCloth, t = 25 / 30 + 0.3, v = 0.8 },
-            { s = pathRZ .. "chunlock.ogg", t = 39 / 30 + 0.3, v = 1 },
-            { s = pathRZ .. "chamber.ogg", t = 32 / 30 + 0.3, v = 1 },
+            { s = pathRZ .. "chunlock.ogg", t = 39 / 30 + 0.3 },
+            { s = pathRZ .. "chamber.ogg", t = 32 / 30 + 0.3 },
             { s = touchh, t = 38 / 30 + 0.3, v = 0.3 },
             { s = b2i, t = 47 / 30 + 0.3, v = 0.3 },
 

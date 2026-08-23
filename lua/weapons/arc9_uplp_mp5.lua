@@ -411,14 +411,14 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = {
             { s = mechh, t = 0 },
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 0.65,
         ShellEjectAt = 0.01,
         NoIdle = true,
@@ -474,7 +474,7 @@ SWEP.Animations = {
             -- { s = pathUT .. "magtap.ogg", t = 1.44 - 0.08, v = 0.8 },
             { s = pathUT .. "magin.ogg", t = 1.2, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 1.65, v = 0.5 },
-            --{ s = ")uplp_urban_temp/ak/scrape.ogg", t = 1.82, v = 1 },
+            --{ s = ")uplp_urban_temp/ak/scrape.ogg", t = 1.82 },
             { s = pathUTREAL .. "slap.ogg", t = 1.9 },
             { s = pathUTC .. "cloth_4.ogg", t = 2.0, v = 0.8 },
 
@@ -537,7 +537,7 @@ SWEP.Animations = {
             { s = pathUT .. "magtap.ogg", t = 1.44 - 0.08 - 0.125, v = 0.8 },
             -- { s = pathUT .. "magin.ogg", t = 1.4, v = 0.8 },
             { s = pathUTC .. "cloth_1.ogg", t = 1.65 - 0.125, v = 0.5 },
-            --{ s = ")uplp_urban_temp/ak/scrape.ogg", t = 1.82, v = 1 },
+            --{ s = ")uplp_urban_temp/ak/scrape.ogg", t = 1.82 },
             { s = pathUTREAL .. "slap.ogg", t = 1.9 - 0.125, v = 0.75 },
             { s = pathUTC .. "cloth_4.ogg", t = 2.0 - 0.125, v = 0.8 },
 
@@ -659,7 +659,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 67 / 30, v = 0.8 },
             { s = pathUT .. "rack1.ogg", t = 88 / 30, v = 0.5 },
-            { s = pathUT .. "chlock.ogg", t = 108 / 30, v = 1 },
+            { s = pathUT .. "chlock.ogg", t = 108 / 30 },
             { s = pathUTC .. "cloth_3.ogg", t = 119 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 127 / 30, v = 0.8 },
         },

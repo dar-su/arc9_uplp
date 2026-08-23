@@ -519,13 +519,12 @@ SWEP.Animations = {
 
 
     ["fire"] = {
-        Source = {"fire"},
-        -- Time = 1,
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
-        Source = {"fire"},
+        Source = "fire",
         Mult = 0.6,
         ShellEjectAt = 0.01,
         NoIdle = true,
@@ -534,13 +533,11 @@ SWEP.Animations = {
 
     ["fire_empty"] = {
         Source = "fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
@@ -668,13 +665,13 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0, v = 0.6 },
-            { s = "uplp_rz/rpg7/hammer.ogg", t = 4 / 30, v = 1 },
-            -- { s = pathDB .. "grab.ogg", t = 7 / 30, v = 1 },
-            { s = pathRZ .. "shotgun-open.ogg", t = 14 / 30, v = 1 },
-            { s = pathDB .. "eject.ogg", t = 23 / 30, v = 1 },
+            { s = "uplp_rz/rpg7/hammer.ogg", t = 4 / 30 },
+            -- { s = pathDB .. "grab.ogg", t = 7 / 30 },
+            { s = pathRZ .. "shotgun-open.ogg", t = 14 / 30 },
+            { s = pathDB .. "eject.ogg", t = 23 / 30 },
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 26 / 30, v = 0.6 },
             { s = pathDB .. "struggle.ogg", t = 40 / 30, v = 0.5 },
-            { s = shellin, t = 43 / 30, v = 1 }, -- Shell
+            { s = shellin, t = 43 / 30 }, -- Shell
             { s = pathRZ .. "shotgun-insert.ogg", t = 38 / 30, v = 0.4 },
             { s = pathRZ .. "shotgun-close.ogg", t = 53 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 32 / 30, v = 0.4 },
@@ -739,7 +736,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-pistol-03.ogg", t = 115 / 30, v = 0.3 },
             { s = pathUTC .. "cloth_4.ogg", t = 110 / 30, v = 0.2 },
             { s = pathRZ .. "presscheck1.ogg", t = 138.5 / 30, v = 0.6 },
-            { s = pathRZ .. "slidelock.ogg", t = 161 / 30 - 7/30, v = 0.8, p = 100 },
+            { s = pathRZ .. "slidelock.ogg", t = 161 / 30 - 7/30, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 171 / 30 - 7/30, v = 0.1 },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 171 / 30 - 7/30, v = 0.5 },
         },

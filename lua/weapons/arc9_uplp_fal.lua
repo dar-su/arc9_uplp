@@ -426,25 +426,25 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         EventTable = {
             { s = mechh, t = 0 },
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 0.65,
         NoIdle = true,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_empty"] = {
-        Source = {"fire_empty"},
+        Source = "fire_empty",
         EventTable = {
             { s = mechh, t = 0 },
         },
     },
     ["fire_sights_empty"] = {
-        Source = {"fire_empty"},
+        Source = "fire_empty",
         NoIdle = true,
         EventTable = {
             { s = mechh, t = 0 },
@@ -493,7 +493,7 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magout.ogg", t = 8 / 30 - 0.15, v = 0.8 },
             { s = pathUTREAL .. "magin.ogg", t = 25 / 30 - 0.05, v = 0.8 },
             { s = pathUTScar .. "chpull.ogg", t = 37 / 30 - 0.05, v = 0.5 },
-            { s = pathUTREAL .. "chforward.ogg", t = 40 / 30 - 0.1, v = 1 },
+            { s = pathUTREAL .. "chforward.ogg", t = 40 / 30 - 0.1 },
             { s = UTCrattle, t = 51 / 30, v = 0.8 },
             {hide = 2, t = 0},
             {hide = 0, t = 0.2},
@@ -549,7 +549,7 @@ SWEP.Animations = {
             { s = pathUTREAL .. "magin.ogg", t = 21 / 30 - 0.05, v = 0.8 },
 
             { s = pathUTScar .. "chpull.ogg", t = 32 / 30 - 0.05, v = 0.5 },
-            { s = pathUTREAL .. "chforward.ogg", t = 34 / 30 - 0.1, v = 1 },
+            { s = pathUTREAL .. "chforward.ogg", t = 34 / 30 - 0.1 },
             { s = UTCrattle, t = 39 / 30, v = 0.8 },
             {hide = 2, t = 0},
             {hide = 0, t = 0.2},
@@ -622,14 +622,14 @@ SWEP.Animations = {
     -- Inspect
 
     ["inspect"] = {
-        Source = {"inspect"},
+        Source = "inspect",
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, v = 0.8 },
-            { s = pathUTREAL .. "chback.ogg", t = 88 / 30, v = 1 },
-            { s = pathUTREAL .. "chforward.ogg", t = 112 / 30, v = 1 },
+            { s = pathUTREAL .. "chback.ogg", t = 88 / 30 },
+            { s = pathUTREAL .. "chforward.ogg", t = 112 / 30 },
             { s = pathUTC .. "cloth_3.ogg", t = 122 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 130 / 30, v = 0.8 },
         },
@@ -642,7 +642,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_empty"] = {
-        Source = {"inspect_empty"},
+        Source = "inspect_empty",
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },

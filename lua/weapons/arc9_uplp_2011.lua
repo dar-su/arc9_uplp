@@ -519,13 +519,12 @@ SWEP.Animations = {
 
 
     ["fire"] = {
-        Source = {"fire"},
-        -- Time = 1,
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
-        Source = {"fire"},
+        Source = "fire",
         Mult = 0.6,
         ShellEjectAt = 0.01,
         NoIdle = true,
@@ -534,13 +533,11 @@ SWEP.Animations = {
 
     ["fire_empty"] = {
         Source = "fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
     },
@@ -752,7 +749,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-pistol-03.ogg", t = 115 / 30, v = 0.3 },
             { s = pathUTC .. "cloth_4.ogg", t = 110 / 30, v = 0.2 },
             { s = path2011 .. "slidepull.ogg", t = 138.5 / 30, v = 0.6 },
-            { s = path1911 .. "slidelock.ogg", t = 161 / 30 - 7/30, v = 0.8, p = 100 },
+            { s = path1911 .. "slidelock.ogg", t = 161 / 30 - 7/30, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 171 / 30 - 7/30, v = 0.1 },
             { s = pathUTC .. "movement-pistol-02.ogg", t = 171 / 30 - 7/30, v = 0.5 },
         },

@@ -486,12 +486,11 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = {"fire_01", "fire_02", "fire_03"},
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 1,
         NoIdle = true,
         ShellEjectAt = 0.01,
@@ -500,13 +499,11 @@ SWEP.Animations = {
 
     ["fire_empty"] = {
         Source = "fire_empty",
-        -- Time = 1,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
-        -- Time = 1,
         NoIdle = true,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },

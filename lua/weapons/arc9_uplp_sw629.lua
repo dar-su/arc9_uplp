@@ -515,7 +515,6 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         NoIdle = true,
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
         },
@@ -523,14 +522,12 @@ SWEP.Animations = {
     ["fire_da"] = {
         Source = "fire", -- same as fire but without hammer poseparam
         NoIdle = true,
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
         },
     },
     ["trigger"] = {
         Source = "trigger",
-        -- Time = 1,
         EventTable = {
             {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},
@@ -538,15 +535,13 @@ SWEP.Animations = {
     },
     ["untrigger"] = {
         Source = "untrigger",
-        -- Time = 1,
         EventTable = {
             {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0},
         },
     },
 
     ["dryfire"] = {
-        Source = {"dryfire"},
-        -- Time = 1,
+        Source = "dryfire",
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, v = 0.2 },
@@ -556,7 +551,6 @@ SWEP.Animations = {
     },
     ["dryfire_sights"] = {
         Source = "dryfire",
-        -- Time = 1,
         EventTable = {
             {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0.2, v = 0.2 },
@@ -566,7 +560,6 @@ SWEP.Animations = {
     },
     ["dryfire_da"] = {
         Source = "dryfire_da",
-        -- Time = 1,
         EventTable = {
             {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
             {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},
@@ -575,11 +568,8 @@ SWEP.Animations = {
     },
 
     ["cycle"] = {
-        Source = {"cock"},
+        Source = "cock",
         MinProgress = 0.4,
-        -- Mult = 1.0,
-        -- Time = 1.1666666269302, -- This is cycle1's time, setting this will make cycle2 consistent with it
-        -- now its ok
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },

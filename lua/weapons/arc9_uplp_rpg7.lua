@@ -356,20 +356,17 @@ SWEP.Animations = {
 
 
     ["fire"] = {
-        Source = {"fire"},
-        -- Time = 1,
+        Source = "fire",
         Mult = 1.4,
         EventTable = { { s = mechh, t = 0 } },
     },
 
     ["dryfire"] = {
         Source = "fire_dry",
-        -- Time = 1,
         Mult = 2,
     },
     ["dryfire_empty"] = {
         Source = "fire_dry",
-        -- Time = 1,
         Mult = 2,
     },
 

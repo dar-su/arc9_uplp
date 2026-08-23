@@ -490,7 +490,7 @@ SWEP.Animations = {
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         NoIdle = true,
         EventTable = { { s = mechh, t = 0 } },
     },
@@ -505,7 +505,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
             { s = BulletsRattle, t = 0.05},
-            { s = ShellInsert, t = 2 / 30, v = 1 },
+            { s = ShellInsert, t = 2 / 30 },
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -534,7 +534,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         Mult = 0.925,
         EventTable = {
-            { s = ShellInsert, t = 0, v = 1 },
+            { s = ShellInsert, t = 0 },
             { s = BulletsRattle, t = 0.1},
         },
     },

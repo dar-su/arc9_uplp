@@ -413,7 +413,7 @@ SWEP.Animations = {
         EventTable = { { s = mechh, t = 0 } },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         ShellEjectAt = 0.01,
         Mult = 0.65,
         NoIdle = true,
@@ -606,14 +606,14 @@ SWEP.Animations = {
     -- Inspecc --
 
     ["inspect"] = {
-        Source = {"inspect"},
+        Source = "inspect",
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 75 / 30, v = 0.8 },
-            { s = pathUT .. "chback.ogg", t = 91 / 30, v = 1 },
-            { s = pathUT .. "chamber.ogg", t = 118 / 30, v = 1 },
+            { s = pathUT .. "chback.ogg", t = 91 / 30 },
+            { s = pathUT .. "chamber.ogg", t = 118 / 30 },
             { s = pathUTC .. "cloth_3.ogg", t = 122 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 130 / 30, v = 0.8 },
         },
@@ -626,7 +626,7 @@ SWEP.Animations = {
         },
     },
     ["inspect_empty"] = {
-        Source = {"inspect_empty"},
+        Source = "inspect_empty",
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
