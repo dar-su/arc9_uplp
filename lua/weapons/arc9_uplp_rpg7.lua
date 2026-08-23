@@ -527,7 +527,7 @@ SWEP.Hook_PrimaryAttack = function(self)
     -- some NPCs aimed at will cower
     if self:GetProcessedValue("CauseFear") then
         for _, ent in pairs(ents.FindInCone(self:GetShootPos(), self:GetShootDir(true):Forward(), 8000, math.cos(math.rad(6)))) do
-            if not ent:IsNPC() or not ent:Visible(owner) or math.random() ^ 2 < ent:GetPos():DistToSqr(self:GetPos()) / (8000 ^ 2) then continue end
+            if not ent:IsNPC() or not (ent.Visible and ent:Visible(owner)) or math.random() ^ 2 < ent:GetPos():DistToSqr(self:GetPos()) / (8000 ^ 2) then continue end
             timer.Simple(math.Rand(0, 0.2), function()
                 if IsValid(ent) and ent:IsNPC() then
                     ent:SetSchedule(SCHED_COWER)
