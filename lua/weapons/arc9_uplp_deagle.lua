@@ -371,9 +371,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        Mult = 1.0,
-		MinProgress = 0.5,
 		FireASAP = true,
+		MinProgressTime = 0.4,
         EventTable = {
             { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 / 60 },
@@ -392,8 +391,20 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.65,
 		FireASAP = true,
+		MinProgressTime = 0.4,
+        EventTable = {
+            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
             { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
         },
@@ -404,7 +415,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.3 / 0.5,
+        MinProgressTime = 0.3 / 0.5,
         Mult = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 60 },
@@ -414,22 +425,10 @@ SWEP.Animations = {
             { t = 1, lhik = 1 },
         },
     },
-
-    ["draw_empty"] = {
-        Source = "draw_empty",
-		MinProgress = 0.65,
-		FireASAP = true,
-        EventTable = {
-            { s = ")uplp_urban_temp/57/draw.ogg", t = 0 / 60, v = 0.8 },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 1, lhik = 1 },
-        },
-    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.5,
+        MinProgressTime = 0.3 / 0.5,
+        Mult = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 60 },
         },

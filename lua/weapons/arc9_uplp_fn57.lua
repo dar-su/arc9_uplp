@@ -402,13 +402,11 @@ SWEP.Animations = {
         EventTable = {
             {hide = 1, t = 0},
         },
-        -- Time = 0.1,
     },
     ["ready"] = {
         Source = "ready",
-        Mult = 1.0,
-		MinProgress = 0.5,
 		FireASAP = true,
+		MinProgressTime = 0.2,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
             { s = pathRZ .. "slide_pull.ogg", t = 5 / 60, v = 0.8 },
@@ -426,8 +424,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.5,
 		FireASAP = true,
+		MinProgressTime = 0.2,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
         },
@@ -441,8 +439,8 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-		MinProgress = 0.5,
 		FireASAP = true,
+		MinProgressTime = 0.2,
         EventTable = {
             { s = pathUT .. "draw.ogg", t = 0 / 60, v = 0.8 },
         },
@@ -456,8 +454,8 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.15 / 0.5,
-        Mult = 0.5,
+        MinProgressTime = 0.2 / 0.75,
+        Mult = 0.75,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
@@ -471,8 +469,8 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.15 / 0.5,
-        Mult = 0.5,
+        MinProgressTime = 0.2 / 0.75,
+        Mult = 0.75,
         EventTable = {
             {s = pathUTC .. "cloth_2.ogg", t = 0},
         },

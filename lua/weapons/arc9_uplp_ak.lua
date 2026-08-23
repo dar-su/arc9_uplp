@@ -413,11 +413,11 @@ SWEP.Animations = {
         Source = "idle",
     },
     ["ready"] = {
-        Source = "ready",		
-        MinProgress = 0.75,
+        Source = "ready",
 		FireASAP = true,
+        MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathRZ .. "chback.ogg", t = 8 / 30, v = 0.8 },
             { s = pathRZ .. "chforward.ogg", t = 14 / 30, v = 0.8 },
@@ -434,10 +434,10 @@ SWEP.Animations = {
 
     ["ready_308"] = {
         Source = "ready",
-		MinProgress = 0.75,
 		FireASAP = true,
+		MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUT .. "chback_308.ogg", t = 6 / 30, v = 0.8 },
             { s = pathUT .. "chamber_308.ogg", t = 12 / 30, v = 0.8 },
@@ -454,18 +454,19 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-		MinProgress = 0.6,
 		FireASAP = true,
+		MinProgressTime = 0.5,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.4,
+        MinProgressTime = 0.3 / 0.75,
+        Mult = 0.75,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 

@@ -399,8 +399,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = { "ready1", "ready2", "ready3", "ready3", "ready3" }, -- more chances for third one cuz its new and cool
-        MinProgress = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.5,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = pathRZ .. "bolt1.ogg", t = 4 / 30 },
@@ -418,32 +418,32 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.6,
         FireASAP = true,
+        MinProgressTime = 0.5,
+        EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        FireASAP = true,
+        MinProgressTime = 0.5,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.4 / 0.8,
-        Mult = 0.8,
+        MinProgressTime = 0.3 / 0.5,
+        Mult = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
     },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.6,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-        },
-    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.4 / 0.8,
-        Mult = 0.8,
+        MinProgressTime = 0.3 / 0.5,
+        Mult = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },

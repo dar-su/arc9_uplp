@@ -431,8 +431,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.75,
 		FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
             -- { s = UTCloth, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -442,8 +442,7 @@ SWEP.Animations = {
             { s = UTCloth, t = 40 / 60 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.0, lhik = 0 },
             { t = 0.5, lhik = 0 },
             { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
@@ -452,8 +451,18 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.7,
         FireASAP = true,
+        MinProgressTime = 0.4,
+        EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 / 30 },
+            { s = ")uplp_rz/g36/" .. "stock_out.ogg", t = 9 / 30 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 / 30 },
@@ -462,8 +471,8 @@ SWEP.Animations = {
     },
     ["draw_alt"] = {
         Source = "draw_alt",
-        MinProgress = 0.7,
         FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
             { s = UTCloth, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -472,35 +481,16 @@ SWEP.Animations = {
             { s = UTCloth, t = 10 / 30, v = 0.8 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.0, lhik = 0 },
             { t = 0.4, lhik = 0 },
             { t = 0.75, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
-    ["holster"] = {
-        Source = "holster",
-        MinProgress = 0.3 / 0.65,
-        Mult = 0.65,
-        EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
-        },
-    },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.7,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = ")uplp_rz/g36/" .. "stock_grab.ogg", t = 0 / 30 },
-            { s = ")uplp_rz/g36/" .. "stock_out.ogg", t = 9 / 30 },
-        },
-    },
-    ["draw_alt_empty"] = {
+    ["draw_empty_alt"] = {
         Source = "draw_alt_empty",
-        MinProgress = 0.7,
         FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
             { s = UTCloth, t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -509,31 +499,38 @@ SWEP.Animations = {
             { s = UTCloth, t = 20 / 30, v = 0.8 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.0, lhik = 0 },
             { t = 0.4, lhik = 0 },
             { t = 0.75, lhik = 1 },
             { t = 1, lhik = 1 },
         },
     },
+    ["holster"] = {
+        Source = "holster",
+        MinProgressTime = 0.2 / 0.667,
+        Mult = 0.667,
+        EventTable = {
+            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+        },
+    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.3 / 0.65,
-        Mult = 0.65,
+        MinProgressTime = 0.2 / 0.667,
+        Mult = 0.667,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = {
             { s = mechh, t = 0 },
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 0.65,
         ShellEjectAt = 0.01,
         NoIdle = true,

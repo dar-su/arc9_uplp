@@ -378,17 +378,20 @@ local thetoggle = {{
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        RareSource = "idle_tired",
-        RareSourceChance = 0.005,
     },
     ["idle_sights"] = {
         Source = "idle",
     },
+    ["exit_sights"] = {
+        Source = "idle",
+        RareSource = "idle_tired",
+        RareSourceChance = 1/20,
+    },
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.5,
         FireASAP = true,
+        MinProgressTime = 0.75,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 1 },
             { s = pathUTC .. "raise.ogg", t = 3 / 30, v = 1 },
@@ -398,7 +401,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 1 },
             { s = pathUTT .. "belt1.ogg", t = 2 / 30, v = 0.2 },
@@ -406,17 +409,17 @@ SWEP.Animations = {
     },
 
     ["trigger"] = {
-        Source = {"trigger"},
+        Source = "trigger",
         EventTable = {
             {s = pathUTREAL .. "electrosaw_windup.wav", v = 0.5, t = 0/30},
             {s = pathUTREAL .. "electrosaw_winddown.ogg", v = 0.3, t = 22/30},
         },
     },
     ["trigger_empty"] = {
-        Source = {"trigger"},
+        Source = "trigger",
     },
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = {
             {s = pathUTREAL .. "electrosaw_mech.wav", v = 1, t = 0},
@@ -424,7 +427,7 @@ SWEP.Animations = {
         },
     },
     ["fire_empty"] = {
-        Source = {"fire_empty"},
+        Source = "fire_empty",
         ShellEjectAt = 0.01,
         EventTable = {
             {s = pathUTREAL .. "electrosaw_winddown.ogg", v = 0.25, t = 3/30},

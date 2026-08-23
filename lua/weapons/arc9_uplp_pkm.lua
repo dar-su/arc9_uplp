@@ -441,8 +441,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.65,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTT .. "chback.ogg", t = 15 / 30, v = 0.8 },
@@ -458,8 +458,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.65,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTT .. "belt1.ogg", t = 6 / 30, v = 0.1 },
@@ -468,34 +468,28 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgressTime = 0.6 / 1.25,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } }, -- add belt rattle plz, belt1/2 too long
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 0.65,
         NoIdle = true,
         ShellEjectAt = 0.01,
         EventTable = { { s = mechh, t = 0 } },
     },
     ["dryfire"] = {
-        Source = {"modeswitch"},
+        Source = "modeswitch",
     },
-
-    -- ["fire_empty"] = {
-        -- Source = "fire_empty",
-        -- ShellEjectAt = 0.01,
-        -- IKTimeLine = { { t = 0, lhik = 1 } },
-        -- EventTable = { { s = pathUT .. "mech_last.wav", t = 0 } },
-    -- },
 
     -- Reloads --
 

@@ -477,6 +477,9 @@ local thetoggle = {{
     }, t = 0
 }}
 
+local QuickHolsterMult = 0.75 -- Like the base.
+local QuickDrawMult = 0.75
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -484,8 +487,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.75,
 		FireASAP = true,
+		MinProgressTime = 0.5,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = pathRZ .. "chpull.ogg", t = 3 / 30, v = 0.8 },
@@ -493,8 +496,7 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 60 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.15, lhik = 0 },
+            { t = 0.0, lhik = 0 },
             { t = 0.5, lhik = 0 },
             { t = 0.8, lhik = 1 },
             { t = 1, lhik = 1 },
@@ -503,8 +505,17 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw_nofold",
-        MinProgress = 0.6,
 		FireASAP = true,
+        MinProgressTime = 0.5 / 0.85,
+        Mult = 0.85,
+        EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty_nofold",
+        FireASAP = true,
+        MinProgressTime = 0.5 / 0.85,
         Mult = 0.85,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
@@ -512,24 +523,16 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster_nofold",
-        MinProgress = 0.4 / 1.1,
-        Mult = 1.1,
+        MinProgressTime = 0.3 / 0.75,
+        Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
     },
-    ["draw_empty"] = {
-        Source = "draw_empty_nofold",
-        MinProgress = 0.6,
-		FireASAP = true,
-        Mult = 0.85,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-        },
-    },
     ["holster_empty"] = {
         Source = "holster_empty_nofold",
-        MinProgress = 0.4,
+        MinProgressTime = 0.3 / 0.75,
+        Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
@@ -537,8 +540,19 @@ SWEP.Animations = {
 
     ["draw_unfold"] = {
         Source = "draw",
-        MinProgress = 0.6,
 		FireASAP = true,
+        MinProgressTime = 0.5 / 0.85,
+        Mult = 0.85,
+        EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathRZ .. "stock_grab.ogg", t = 0 / 30 },
+            { s = pathRZ .. "stock_out.ogg", t = 9 / 30 },
+        },
+    },
+    ["draw_empty_unfold"] = {
+        Source = "draw_empty",
+		FireASAP = true,
+        MinProgressTime = 0.5 / 0.85,
         Mult = 0.85,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
@@ -548,7 +562,7 @@ SWEP.Animations = {
     },
     ["holster_unfold"] = {
         Source = "holster",
-        MinProgress = 0.4 / 0.75,
+        MinProgressTime = 0.3 / 0.75,
         Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
@@ -556,20 +570,9 @@ SWEP.Animations = {
             { s = pathRZ .. "stock_in.ogg", t = 8 / 30 },
         },
     },
-    ["draw_empty_unfold"] = {
-        Source = "draw_empty",
-        MinProgress = 0.6,
-		FireASAP = true,
-        Mult = 0.85,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathRZ .. "stock_grab.ogg", t = 0 / 30 },
-            { s = pathRZ .. "stock_out.ogg", t = 9 / 30 },
-        },
-    },
     ["holster_empty_unfold"] = {
         Source = "holster_empty",
-        MinProgress = 0.4 / 0.75,
+        MinProgressTime = 0.3 / 0.75,
         Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
@@ -577,50 +580,36 @@ SWEP.Animations = {
             { s = pathRZ .. "stock_in.ogg", t = 4 / 30 },
         },
     },
+
     ["draw_quick"] = {
-        Source = "draw_nofold",
-        MinProgress = 0.5,
-        Mult = 0.75,
+        Source = "draw_quick",
+        MinProgressTime = 0.5 / 0.75,
+        Mult = 0.75 * QuickDrawMult,
 		FireASAP = true,
+        EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty_quick"] = {
+        Source = "draw_empty_quick",
+        MinProgressTime = 0.5 / 0.75,
+        Mult = 0.75 * QuickDrawMult,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
         },
     },
     ["holster_quick"] = {
         Source = "holster_quick",
-        MinProgress = 0.5,
-        Mult = 0.75,
+        MinProgressTime = 0.3 / 0.75,
+        Mult = 0.75 * QuickHolsterMult,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
-        },
-    },
-    ["draw_empty_quick"] = {
-        Source = "draw_empty_quick",
-        MinProgress = 0.0025,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
         },
     },
     ["holster_empty_quick"] = {
         Source = "holster_empty_quick",
-        MinProgress = 0.25 / 0.5,
-        Mult = 0.5,
-        EventTable = {
-            { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
-        },
-    },
-
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.6,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-        },
-    },
-    ["holster_empty"] = {
-        Source = "holster_empty",
-        MinProgress = 0.4,
+        MinProgressTime = 0.3 / 0.75,
+        Mult = 0.75 * QuickHolsterMult,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },

@@ -464,8 +464,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUTREAL .. "rack_1.ogg", t = 5 / 30, v = 0.8 },
@@ -483,8 +483,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.6,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -492,14 +492,14 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgressTime = 0.5,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         NoIdle = true,
         EventTable = {
             { s = mechh, t = 0, v = 0.25 },

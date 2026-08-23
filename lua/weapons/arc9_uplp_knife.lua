@@ -246,6 +246,23 @@ SWEP.Animations = {
         Source = "sprint_in",
         Mult = 3.0,
     },
+    ["draw"] = {
+        Source = "draw",
+        MinProgressTime = 0.2 / 0.75,
+        Mult = 0.75,
+        FireASAP = true,
+        EventTable = {
+            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
+        },
+    },
+    ["holster"] = {
+        Source = "holster",
+        MinProgressTime = 0.2 / 0.333,
+        Mult = 0.333,
+        EventTable = {
+            {s = pathUTC .. "cloth_2.ogg", t = 0},
+        },
+    },
 
     ["bash"] = {
         Source = {"swing2", "swing3"},
@@ -268,48 +285,6 @@ SWEP.Animations = {
 
         EventTable = {
             { s = randcloth, t = 0.3 },
-        },
-    },
-
-    -- ["ready"] = {
-    --     Source = "ready",
-    --     Mult = 0.95,
-    --     EventTable = {
-    --         { s = pathUTC .. "magpouch.ogg", t = 0, v = 0.5 },
-    --         { s = pathUTC .. "grab.ogg", t = 7 / 30, v = 0.1 },
-    --         { s = pathUTC .. "cloth_5.ogg", t = 17.5 / 30 },
-    --         -- { s = pathUTC .. "cloth_4.ogg", t = 50 / 30 },
-    --         { s = pathUTC .. "grab.ogg", t = 50 / 30, v = 0.1 },
-    --         { s = pathUTC .. "cloth_1.ogg", t = 45 / 30 },
-    --     },
-    -- },
-
-    ["ready"] = {
-        Source = "draw",
-        MinProgress = 0.4,
-        Mult = .75,
-        FireASAP = true,
-        EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
-        },
-    },
-
-    ["draw"] = {
-        Source = "draw",
-        MinProgress = 0.4,
-        Mult = .75,
-        FireASAP = true,
-        EventTable = {
-            { s = path1911 .. "draw.ogg", t = 0 / 60, v = 0.8 },
-        },
-    },
-
-    ["holster"] = {
-        Source = "holster",
-        MinProgress = 0.15 / 0.2,
-        Mult = 0.2,
-        EventTable = {
-            {s = pathUTC .. "cloth_2.ogg", t = 0},
         },
     },
 

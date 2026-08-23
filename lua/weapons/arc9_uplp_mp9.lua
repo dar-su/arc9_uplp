@@ -378,12 +378,11 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.75,
 		FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
-            -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            -- { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
-
             { s = pathREALLYREAL .. "chback.ogg", t = 3 / 30, v = 0.8 },
             { s = pathREALLYREAL .. "chforward.ogg", t = 12 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_4.ogg", t = 28 / 60 },
@@ -399,36 +398,36 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.7,
         FireASAP = true,
+        MinProgressTime = 0.4,
         EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        FireASAP = true,
+        MinProgressTime = 0.4,
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.3 / 0.65,
-        Mult = 0.65,
+        MinProgressTime = 0.2 / 0.667,
+        Mult = 0.667,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
-        },
-    },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.7,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.3 / 0.65,
-        Mult = 0.65,
+        MinProgressTime = 0.2 / 0.667,
+        Mult = 0.667,
         EventTable = {
-            { s = UTCrattle, t = 0 / 30, v = 0.8 },
+            { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
 

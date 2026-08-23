@@ -425,8 +425,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.5,
 		FireASAP = true,
+		MinProgressTime = 0.4,
         EventTable = {
             -- { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -446,8 +446,19 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.5,
 		FireASAP = true,
+        MinProgressTime = 0.4 / 0.667,
+        Mult = 0.667,
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+		FireASAP = true,
+        MinProgressTime = 0.4 / 0.667,
+        Mult = 0.667,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -455,39 +466,30 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.3 / 0.65,
-        -- Mult = 0.65,
+        MinProgressTime = 0.2 / 0.75,
+        Mult = 0.75,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.5,
-		FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0 / 30, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
-        },
-    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.3 / 0.65,
-        -- Mult = 0.65,
+        MinProgressTime = 0.2 / 0.75,
+        Mult = 0.75,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = {
             { s = mechh, t = 0 },
         },
     },
     ["fire_sights"] = {
-        Source = {"fire_sights"},
+        Source = "fire_sights",
         Mult = 0.65,
         ShellEjectAt = 0.01,
         NoIdle = true,

@@ -444,8 +444,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.75,
         EventTable = {
             { s = UTCloth, t = 0 / 30, v = 0.8 },
             { s = pathRZ .. "chback.ogg", t = 0 / 30, v = 1 },
@@ -464,34 +464,30 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.75,
-        Mult = 0.8,
         FireASAP = true,
+        MinProgressTime = 0.75,
+        EventTable = {
+            { s = UTCrattle, t = 0.1, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        FireASAP = true,
+        MinProgressTime = 0.75,
         EventTable = {
             { s = UTCrattle, t = 0.1, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5 / 0.8,
-        Mult = 0.8,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.75,
-        Mult = 0.8,
-        FireASAP = true,
-        EventTable = {
-            { s = UTCrattle, t = 0.1, v = 0.8 },
-        },
-    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.5 / 0.8,
-        Mult = 0.8,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
         },

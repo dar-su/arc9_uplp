@@ -406,8 +406,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = ")uplp_rz/stg/chback.ogg", t = 3 / 30, v = 1 },
@@ -424,8 +424,8 @@ SWEP.Animations = {
     },
     ["ready_retro"] = {
         Source = "ready_retro",
-        MinProgress = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
             { s = ")uplp_rz/fal/stev/chpull.ogg", t = 3 / 30, v = 1 },
@@ -443,7 +443,15 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.6,
+        FireASAP = true,
+        MinProgressTime = 0.6,
+        EventTable = {
+            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        MinProgressTime = 0.6,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
@@ -451,24 +459,14 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5 / 0.8,
-        Mult = 0.8,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },
     },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        MinProgress = 0.6,
-        FireASAP = true,
-        EventTable = {
-            { s = pathUTC .. "raise.ogg", t = 0 / 30, v = 0.8 },
-        },
-    },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.5 / 0.8,
-        Mult = 0.8,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 / 30, v = 0.8 },
         },

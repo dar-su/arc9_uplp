@@ -411,6 +411,9 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
     end
 end
 
+local QuickHolsterMult = 0.75 -- Like the base.
+local QuickDrawMult = 0.75
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -421,8 +424,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-        MinProgress = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 5 / 30, v = 0.8 },
@@ -432,8 +435,17 @@ SWEP.Animations = {
     },
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.5,
         FireASAP = true,
+        MinProgressTime = 0.6,
+        EventTable = {
+            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
+        },
+    },
+    ["draw_empty"] = {
+        Source = "draw_empty",
+        FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -441,16 +453,23 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgressTime = 0.5,
+        EventTable = {
+            { s = UTCrattle, t = 0, v = 0.8 },
+        },
+    },
+    ["holster_empty"] = {
+        Source = "holster_empty",
+        MinProgressTime = 0.5,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
     ["draw_quick"] = {
         Source = "draw_quick",
-        MinProgress = 0.5,
-        Mult = 0.75,
         FireASAP = true,
+        MinProgressTime = 0.6,
+        Mult = QuickDrawMult,
         EventTable = {
             { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
@@ -458,26 +477,13 @@ SWEP.Animations = {
     },
     ["holster_quick"] = {
         Source = "holster_quick",
-        MinProgress = 0.15 / 0.5,
-        Mult = 0.5,
+        MinProgressTime = 0.5,
+        Mult = QuickHolsterMult,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
         },
     },
-    ["draw_empty"] = {
-        Source = "draw_empty",
-        EventTable = {
-            { s = pathUTC .. "cloth_3.ogg", t = 0, v = 0.8 },
-            { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
-        },
-    },
-    ["holster_empty"] = {
-        Source = "holster_empty",
-        MinProgress = 0.5,
-        EventTable = {
-            { s = UTCrattle, t = 0, v = 0.8 },
-        },
-    },
+    
     ["fire"] = {
         Source = "fire",
         Mult = 1,

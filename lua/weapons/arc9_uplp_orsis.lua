@@ -380,8 +380,8 @@ SWEP.Animations = {
     },
     ["ready"] = {
         Source = "ready",
-		MinProgress = 0.7,
 		FireASAP = true,
+		MinProgressTime = 0.75,
         EventTable = {
             { s = pathUT2 .. "grab.ogg", t = 0 / 30, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
@@ -394,8 +394,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.75,
 		FireASAP = true,
+        MinProgressTime = 0.75,
         EventTable = {
             { s = pathUT2 .. "grab.ogg", t = 0 / 30, v = 1 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
@@ -403,15 +403,16 @@ SWEP.Animations = {
     },
     ["draw_empty"] = {
         Source = "draw_empty",
-        MinProgress = 0.75,
 		FireASAP = true,
+        MinProgressTime = 0.75,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
         },
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.75,
+        MinProgressTime = 0.6 / 1.25,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "cloth_2.ogg", t = 0 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 5, v = 0.8 },
@@ -419,25 +420,24 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgress = 0.75,
+        MinProgressTime = 0.6 / 1.25,
+        Mult = 1.25,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
     },
 
     ["fire"] = {
-        Source = {"fire"},
+        Source = "fire",
         EventTable = { { s = mechh, t = 0 } },
-        MinProgress = 0.95,
         NoIdle = true,
-        -- Mult = 1.15,
         EventTable = {
             {s = mechh, t = 0},
         },
     },
     ["cycle"] = {
-        Source = {"cycle"},
-        MinProgress = 0.72,
+        Source = "cycle",
+        MinProgressTime = 1.3 / 1.25,
 		FireASAP = true,
         Mult = 1.25,
         EventTable = {

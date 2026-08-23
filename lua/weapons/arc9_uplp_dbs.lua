@@ -473,8 +473,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.6,
         FireASAP = true,
+        MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUT .. "close.ogg", t = 4 / 30, v = 0.8 },
@@ -483,7 +483,8 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.5,
+        MinProgressTime = 0.5 / 1.25,
+        Mult = 1.25,
         EventTable = {
             { s = UTCrattle, t = 0 / 30, v = 0.8 },
         },
