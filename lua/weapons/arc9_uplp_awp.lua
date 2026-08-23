@@ -231,13 +231,13 @@ SWEP.IronSights = {
      ViewModelFOV = 65,
 }
 local is_tall = {
-    Pos = Vector(-2.32, -4, 0.285),
+    Pos = Vector(-2.32, -4, 0.235),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
 }
 local is_short = {
-    Pos = Vector(-2.32, -4, 0.421),
+    Pos = Vector(-2.32, -4, 0.371),
     Ang = Angle(0, 0, 0),
     Magnification = 1.15,
     ViewModelFOV = 65,
@@ -903,7 +903,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
         Category = {"uplp_tac"},
         Bone = "body",
-        Pos = Vector(-1.12, 0.79, 10.5),
+        Pos = Vector(-1.28, 0.85, 13.5),
         Ang = Angle(90, 90, -90),
         ExcludeElements = {"uplp_no_tactical"},
     },
@@ -925,7 +925,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_rs"},
         DefaultIcon = Material(defatt .. "rs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.35, 1),
+        Pos = Vector(0, -0.4, 1),
         Ang = Angle(90, 90, 180),
         Hidden = true,
         InstalledElements = {"uplp_awp_push_optic"},
@@ -936,7 +936,7 @@ SWEP.Attachments = {
         Category = {"uplp_ar15_fs"},
         DefaultIcon = Material(defatt .. "fs.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, -0.35, 30),
+        Pos = Vector(0, -0.4, 30),
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_awp_brl_aws"},
     },
