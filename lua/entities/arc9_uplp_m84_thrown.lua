@@ -11,7 +11,7 @@ ENT.Model = "models/weapons/arc9/w_uplp_m84_thrown.mdl"
 ENT.PhysMat = "grenade"
 
 ENT.PhysBoxSize = nil
-ENT.SphereSize = nil
+ENT.SphereSize = 4
 
 ENT.LifeTime = 4
 
