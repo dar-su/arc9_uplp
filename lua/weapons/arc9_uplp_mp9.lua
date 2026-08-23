@@ -529,7 +529,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 0.7,
         FireASAP = true,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30 },
@@ -557,7 +556,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 0.7,
         FireASAP = true,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30 },
@@ -587,7 +585,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 0.8,
         FireASAP = true,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30 },
@@ -615,7 +612,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 0.8,
         FireASAP = true,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 1 / 30 },

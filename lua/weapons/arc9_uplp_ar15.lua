@@ -747,7 +747,6 @@ SWEP.Animations = {
         PeekProgress = 0.775,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 0.4,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },

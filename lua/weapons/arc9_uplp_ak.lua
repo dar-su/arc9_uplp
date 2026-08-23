@@ -492,7 +492,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -520,7 +519,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -553,7 +551,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -581,7 +578,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -614,7 +610,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -642,7 +637,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -675,7 +669,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -703,7 +696,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.9,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -736,7 +728,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -764,7 +755,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -797,7 +787,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -825,7 +814,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.75,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -920,7 +908,6 @@ SWEP.Animations = {
 		PeekProgress = 0.865,
 		RefillProgress = 0.6,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.95,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },
@@ -949,7 +936,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.7,
 		FireASAP = true,
-        -- Mult = 1.05,
         DropMagAt = 0.95,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 0.0, v = 0.9 },

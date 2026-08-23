@@ -458,13 +458,11 @@ SWEP.Animations = {
         EventTable = {
             {hide = 1, t = 0},
         },
-        -- Time = 0.1,
     },
     ["ready"] = {
         Source = "ready",
-        Mult = 1.0,
-        MinProgress = 0.5,
         FireASAP = true,
+        MinProgressTime = 0.2,
         EventTable = {
             { s = ")uplp_urban_temp/57/draw.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0 },
@@ -483,8 +481,8 @@ SWEP.Animations = {
 
     ["draw"] = {
         Source = "draw",
-        MinProgress = 0.35,
         FireASAP = true,
+        MinProgressTime = 0.2,
         EventTable = {
             { s = ")uplp_urban_temp/57/draw.ogg", t = 0, v = 0.8 },
         },
@@ -497,7 +495,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgress = 0.3 / 0.75,
+        MinProgressTime = 0.2 / 0.75,
         Mult = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0 },
@@ -580,7 +578,6 @@ SWEP.Animations = {
     ["cycle_sights"] = {
         Source = "cock",
         MinProgress = 0.4,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 0.2 },
             { s = pathUTC .. "revolver_cock.ogg", t = 0.1 },

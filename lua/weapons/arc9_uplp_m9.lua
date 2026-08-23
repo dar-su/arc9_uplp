@@ -495,7 +495,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.675,
 		FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60 },
@@ -520,7 +519,6 @@ SWEP.Animations = {
 		PeekProgress = 0.85,
 		RefillProgress = 0.725,
 		FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 12.5 / 60 },
@@ -547,7 +545,6 @@ SWEP.Animations = {
 		PeekProgress = 0.825,
 		RefillProgress = 0.675,
 		FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 17.5 / 60 },
@@ -572,7 +569,6 @@ SWEP.Animations = {
 		PeekProgress = 0.85,
 		RefillProgress = 0.725,
 		FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = pathUT .. "magout.ogg", t = 17.5 / 60 },

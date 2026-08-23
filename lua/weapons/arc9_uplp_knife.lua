@@ -278,7 +278,6 @@ SWEP.Animations = {
 
     ["backstab"] = {
         Source = "swing1",
-        Mult = 1,
 
         MinProgress = 0.4,
         FireASAP = true,

@@ -598,7 +598,6 @@ SWEP.Animations = {
         Source = "inspect",
         FireASAP = true,
         MinProgress = 0.925,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.3 },

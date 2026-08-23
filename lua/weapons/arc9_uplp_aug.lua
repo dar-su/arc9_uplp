@@ -474,7 +474,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -501,7 +500,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -532,7 +530,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -559,7 +556,6 @@ SWEP.Animations = {
         PeekProgress = 0.875,
         RefillProgress = 0.775,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -590,7 +586,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -617,7 +612,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.675,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -648,7 +642,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.65,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -676,7 +669,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.7,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -708,7 +700,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -735,7 +726,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.75,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -766,7 +756,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.6,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -793,7 +782,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.75,
         FireASAP = true,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
@@ -824,7 +812,6 @@ SWEP.Animations = {
         Source = "inspect",
         FireASAP = true,
         MinProgress = 0.925,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },
@@ -847,7 +834,6 @@ SWEP.Animations = {
         Source = "inspect_empty",
         FireASAP = true,
         MinProgress = 0.925,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "cloth_1.ogg", t = 0, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 5 / 30, v = 0.8 },

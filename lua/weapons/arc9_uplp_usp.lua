@@ -391,7 +391,6 @@ SWEP.Animations = {
         EventTable = {
             {hide = 1, t = 0},
         },
-        -- Time = 0.1,
     },
     ["ready"] = {
         Source = "ready",

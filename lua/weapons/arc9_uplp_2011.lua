@@ -417,7 +417,6 @@ end
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
-        -- Time = 0.1,
     },
     ["ready"] = {
         Source = "ready",
@@ -550,7 +549,6 @@ SWEP.Animations = {
         PeekProgress = 0.75,
         RefillProgress = 0.6,
         FireASAP = true,
-        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = path2011 .. "magrel.ogg", t = 1 / 60 },
@@ -576,7 +574,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.675,
         FireASAP = true,
-        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = path2011 .. "magrel.ogg", t = 1 / 60 },
@@ -605,7 +602,6 @@ SWEP.Animations = {
         PeekProgress = 0.725,
         RefillProgress = 0.6,
         FireASAP = true,
-        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = path2011 .. "magrel.ogg", t = 1 / 60 },
@@ -631,7 +627,6 @@ SWEP.Animations = {
         PeekProgress = 0.8,
         RefillProgress = 0.675,
         FireASAP = true,
-        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = path2011 .. "magrel.ogg", t = 1 / 60 },
@@ -660,7 +655,6 @@ SWEP.Animations = {
         PeekProgress = 0.725,
         RefillProgress = 0.6,
         FireASAP = true,
-        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = path2011 .. "magrel.ogg", t = 1 / 60 },
@@ -686,7 +680,6 @@ SWEP.Animations = {
         PeekProgress = 0.8,
         RefillProgress = 0.675,
         FireASAP = true,
-        -- Mult = 1.05,
         EventTable = {
             { s = pathUTC .. "pistol_rattle_2.ogg", t = 0 },
             { s = path2011 .. "magrel.ogg", t = 1 / 60 },

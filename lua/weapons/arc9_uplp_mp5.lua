@@ -435,7 +435,6 @@ SWEP.Animations = {
         RefillProgress = 0.7,
         FireASAP = true,
         DropMagAt = 0.6,
-        Mult = 1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
             { s = pathUT .. "magout.ogg", t = 0.25*0.9 - 0.15, v = 0.8 },
@@ -463,7 +462,6 @@ SWEP.Animations = {
         RefillProgress = 0.75,
         FireASAP = true,
         DropMagAt = 1.05,
-        Mult = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
             { s = pathUT .. "chback.ogg", t = 0, v = 0.8 },
@@ -497,7 +495,6 @@ SWEP.Animations = {
         PeekProgress = 0.875,
         RefillProgress = 0.75,
         FireASAP = true,
-        Mult = 1,
         DropMagAt = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
@@ -525,7 +522,6 @@ SWEP.Animations = {
         PeekProgress = 0.825,
         RefillProgress = 0.75,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 1.0,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
@@ -560,7 +556,6 @@ SWEP.Animations = {
         PeekProgress = 0.85,
         RefillProgress = 0.7,
         FireASAP = true,
-        Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
@@ -587,7 +582,6 @@ SWEP.Animations = {
         PeekProgress = 0.875,
         RefillProgress = 0.85,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 1.1,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
@@ -621,7 +615,6 @@ SWEP.Animations = {
         RefillProgress = 0.725,
         MagSwapTime = 0.8,
         FireASAP = true,
-        Mult = 1,
         DropMagAt = 0.6,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },

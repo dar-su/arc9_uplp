@@ -628,7 +628,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 1.4,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 1.4,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.5 },
@@ -660,7 +659,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 1.4,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 1.4,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.5 },
@@ -696,7 +694,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 0.7,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 18/30,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.5 },
@@ -727,7 +724,6 @@ SWEP.Animations = {
         RefillProgress = 0.65,
         MagSwapTime = 0.7,
         FireASAP = true,
-        Mult = 1.0,
         DropMagAt = 18/30,
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.5 },

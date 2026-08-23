@@ -419,7 +419,6 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = "fire",
-        Mult = 1,
         NoIdle = true,
         EventTable = {
             { s = mech, t = 0, v = 0.25 },
@@ -453,7 +452,6 @@ SWEP.Animations = {
         Source = "reload_start_empty",
         RestoreAmmo = 1,
         MinProgress = 0.5,
-        Mult = 1,
         EjectAt = 6.5 / 30,
         EventTable = {
             { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
