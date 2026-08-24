@@ -399,7 +399,7 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = {"cycle", "cycle2"},
-        MinProgressTime = 0.6,
+        MinProgressTime = 0.9,
         EventTable = {
             {s = pathRZ .. "bolt1.ogg",          t = 0},
             {s = pathRZ .. "bolt2.ogg",        t = 0.15},
