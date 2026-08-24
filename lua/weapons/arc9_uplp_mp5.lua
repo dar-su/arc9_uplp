@@ -749,14 +749,14 @@ SWEP.AttachmentElements = {
     -- HANDGUARDS & BARRELS
     ["uplp_mp5_hg_navy"] = { Bodygroups = { { 2, 1 } } },
     ["uplp_mp5_bar_sd"] = { Bodygroups = { { 2, 3 } }, AttPosMods = {
-        [3] = { Pos = Vector(0, 1.13, 9.5) * 0.78 },
-        [4] = { Pos = Vector(-0.15, 0.05, 2) * 0.78 },
-        [14] = { Pos = Vector(0, 2.8, 9.8) * 0.78 },
+        [3] = { Pos = Vector(0, 0.45, 8.5) },
+        [4] = { Pos = Vector(-0.14, 0.05, 1.6) },
+        [13] = { Pos = Vector(0, 2.4, 7.66) },
+        [14] = { Pos = Vector(0, 0.86, 7.5) },
     } },
     ["uplp_mp5_bar_kurz"] = { Bodygroups = { { 2, 5 }, { 1, 1 } }, AttPosMods = {
-        [5] = { Pos = Vector(0, -0.2, 10.25) * 0.78 },
         [3] = { Pos = Vector(0, 0.75, 8.25) * 0.78 },
-        [14] = { Pos = Vector(0, 2.5, 8.7) * 0.78 },
+        [5] = { Pos = Vector(0, -0.2, 10.25) * 0.78 },
     } },
     ["uplp_mp5_grip_kurz"] = { Bodygroups = { { 2, 6 }} },
 
@@ -804,7 +804,7 @@ SWEP.Attachments = {
         Category = {"uplp_grip_vert", "uplp_mp5_grip"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 0.45, 8.5),
+        Pos = Vector(0, 0.63, 8.5),
         Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0.5, 0, -1),
         ExcludeElements = {"uplp_mp5_hg_navy"},
@@ -888,13 +888,25 @@ SWEP.Attachments = {
         Ang = Angle(90, 0, -90),
     },
 
-    {
+    { -- 13
         PrintName = ARC9:GetPhrase("uplp_category_ubgl") or "ubgl",
         Category = {"uplp_m203_rail"},
         DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
         Bone = "body",
-        Pos = Vector(0, 2.25, 7.66),
+        Pos = Vector(0, 2.15, 7.46),
         Ang = Angle(90, 90, 0),
+        Icon_Offset = Vector(0.5, 0, -1),
+        MergeSlots = {3},
+        Hidden = true,
+        ExcludeElements = {"uplp_mp5_bar_kurz"},
+    },
+    { -- 14
+        PrintName = "grip horizontal",
+        Category = {"uplp_grip_horiz_cclamp", "uplp_grip_handstop"},
+        DefaultIcon = Material(defatt2 .. "grip.png", "mips smooth"),
+        Bone = "body",
+        Pos = Vector(0, 0.63, 7.5),
+        Ang = Angle(90, 90, 180),
         Icon_Offset = Vector(0.5, 0, -1),
         MergeSlots = {3},
         Hidden = true,

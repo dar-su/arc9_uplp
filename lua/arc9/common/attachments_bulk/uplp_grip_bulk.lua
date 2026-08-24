@@ -88,7 +88,7 @@ ATT.LHIK_Priority = 8
 ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
-ATT.Category = "uplp_grip_horiz"
+ATT.Category = {"uplp_grip_horiz", "uplp_grip_handstop"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
@@ -123,7 +123,7 @@ ATT.LHIK_Priority = 8
 ATT.ActivateElements = {"uplp_grip_used"}
 ATT.ExcludeElements = {"uplp_grip_no_pdw", "uplp_ar15_hg_riscover"}
 
-ATT.Category = "uplp_grip_horiz"
+ATT.Category = {"uplp_grip_horiz", "uplp_grip_handstop"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
