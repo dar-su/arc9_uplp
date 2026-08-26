@@ -277,15 +277,15 @@ L["uplp_optic_compm4.description"] = "Reflexsikte av svenskt ursprung med en cyl
 
 L["uplp_optic_dcl110.printname"] = "Kulspruta Reflexsikte med Förstoringsglas"
 L["uplp_optic_dcl110.compactname"] = "KR F"
-L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd förstoringsglas gjorda för användning på kulsprutor."  .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Stor och tung reflexsikte med inbyggd förstoringsglas gjorda för användning på kulsprutor."  .. desc_midbigoptic
 
-L["uplp_optic_acog.printname"] = "4× NCOG-4-Sikte"
-L["uplp_optic_acog.compactname"] = "4× NCOG-4"
+L["uplp_optic_acog.printname"] = "3.5× NCOG-4-Sikte"
+L["uplp_optic_acog.compactname"] = "3.5× NCOG-4"
 L["uplp_optic_acog.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4× magnifiering." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "4× Stridssikte"
-L["uplp_optic_elcan.compactname"] = "4× Strid"
-L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 4× magnifiering." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "3× Stridssikte"
+L["uplp_optic_elcan.compactname"] = "3× Strid"
+L["uplp_optic_elcan.description"] = "Militär grad stridssikte av amerikanskt ursprung med 3× magnifiering." .. desc_midoptic
 
 L["uplp_optic_bigass.printname"] = "8-16× Variabel Zoom Kikarsikte med Avståndsmätare"
 L["uplp_optic_bigass.compactname"] = "8-16× VZK-A"
@@ -327,9 +327,9 @@ L["uplp_optic_genericrds.printname"] = "HawkEye Precision Rödpunktsikte"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "Klassiskt rödpunktsikte som har klonats och kopierats enda sedan den introducerats." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "3× Militärsikte"
-L["uplp_optic_notacog.compactname"] = "3× Militär"
-L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt ursprung med 3× magnifiering." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "2.5× Militärsikte"
+L["uplp_optic_notacog.compactname"] = "2.5× Militär"
+L["uplp_optic_notacog.description"] = "Starkt militärsikte av israeliskt ursprung med 2.5× magnifiering." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Tävlingssikte"
 L["uplp_optic_compm1.compactname"] = "Tävling"

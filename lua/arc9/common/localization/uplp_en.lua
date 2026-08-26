@@ -1,14 +1,14 @@
 L = {}
 
 local changeammo = {
-pistol = "\nChanges ammo type to <color=255,255,100>Pistol Ammo</color>.",
-["357"] = "\nChanges ammo type to <color=255,255,100>Magnum Ammo</color>.",
-smg1 = "\nChanges ammo type to <color=255,255,100>Carbine Ammo</color>.",
-ar2 = "\nChanges ammo type to <color=255,255,100>Rifle Ammo</color>.",
-buckshot = "\nChanges ammo type to <color=255,255,100>Shotgun Ammo</color>.",
-sniperpenetratedround = "\nChanges ammo type to <color=255,255,100>Sniper Ammo</color>.",
-smg1_grenade = "\nChanges ammo type to <color=255,255,100>Rifle Grenades</color>.",
-xbowbolt = "\nChanges ammo type to <color=255,255,100>Crossbow Bolts</color>.",
+    pistol = "\nChanges ammo type to <color=255,255,100>Pistol Ammo</color>.",
+    ["357"] = "\nChanges ammo type to <color=255,255,100>Magnum Ammo</color>.",
+    smg1 = "\nChanges ammo type to <color=255,255,100>Carbine Ammo</color>.",
+    ar2 = "\nChanges ammo type to <color=255,255,100>Rifle Ammo</color>.",
+    buckshot = "\nChanges ammo type to <color=255,255,100>Shotgun Ammo</color>.",
+    sniperpenetratedround = "\nChanges ammo type to <color=255,255,100>Sniper Ammo</color>.",
+    smg1_grenade = "\nChanges ammo type to <color=255,255,100>Rifle Grenades</color>.",
+    xbowbolt = "\nChanges ammo type to <color=255,255,100>Crossbow Bolts</color>.",
 }
 
 //////////////////////////////////////////////////////////////////////
@@ -252,15 +252,16 @@ local forestgreen = "\n\n" .. "Special Forest Green version."
 local hunterorange = "\n\n" .. "Special Hunter Orange version."
 local partypurple = "\n\n" .. "Special Party Purple version."
 
-local desc_pistoloptic = "\nHas <color=100,255,100>minor handling penalties</color>."
-local desc_smalloptic = "\nHas <color=100,255,100>no handling penalties</color>, but <color=255,200,100>reduces move speed while aiming</color>."
-local desc_cqcoptic = "\nHas <color=100,255,100>minor handling penalities</color>."
-local desc_magoptic = "\nHas <color=255,200,100>small handling penalities</color>. <color=100,255,100>Adjustable magnifier</color> provides zoom at the cost of <color=255,255,100>slight aim sway</color>."
+local desc_pistoloptic = "\nHas <color=100,255,100>negligible handling penalties</color>." -- direct compact
+local desc_smalloptic = "\nHas <color=100,255,100>very light handling penalties</color>." -- indirect compact
+local desc_cqcoptic = "\nHas <color=100,255,100>light handling penalities</color>." -- 1x
+local desc_shortoptic = "\nHas <color=100,255,100>light handling penalities</color> but <color=255,255,100>light aim sway</color> from the magnification." -- 1.5x
+local desc_magoptic = "\nHas <color=200,255,100>minor handling penalities</color>. <color=100,255,100>Adjustable magnifier</color> provides zoom at the cost of <color=255,255,100>light aim sway</color>." -- magnified 1x
 local desc_midoptic = "\nHas <color=255,200,100>medium sway and handling penalties</color>."
-local desc_midbigoptic = "\nHas <color=255,150,100>somewhat high sway and handling penalties</color>."
+local desc_midbigoptic = "\nHas <color=255,150,100>moderate sway and handling penalties</color>."
 
-local desc_bigoptic = "\nHas <color=255,100,100>high sway and handling penalities</color>."
-local desc_biggeroptic = "\nHas <color=255,100,100>very high sway and handling penalities</color>."
+local desc_bigoptic = "\nHas <color=255,100,100>major sway and handling penalities</color>."
+local desc_biggeroptic = "\nHas <color=255,100,100>severe sway and handling penalities</color>."
 
 local desc_dovetail = "\nMounted on the side via a dovetail rail; incompatible with <color=255,100,100>regular scopes and railed dust covers</color>."
 
@@ -287,15 +288,15 @@ L["uplp_optic_compm4.description"] = "Reflex sight of Swedish origin with a cyli
 
 L["uplp_optic_dcl110.printname"] = "Machine Gun Reflex Sight w. Magnifier"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns." .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Large and bulky reflex sight with built-in magnifier intended for use on machine guns." .. desc_midbigoptic
 
-L["uplp_optic_acog.printname"] = "4× NCOG-4 Scope"
-L["uplp_optic_acog.compactname"] = "4× NCOG-4"
-L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 4× magnification. Comes with built in <color=100,255,100>backup iron sights</color>." .. desc_midoptic
+L["uplp_optic_acog.printname"] = "3.5× NCOG-4 Scope"
+L["uplp_optic_acog.compactname"] = "3.5× NCOG-4"
+L["uplp_optic_acog.description"] = "Military-grade combat optic of American origin with 3.5× magnification. Comes with built in <color=100,255,100>backup iron sights</color>." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "4× Combat Scope"
-L["uplp_optic_elcan.compactname"] = "4× Combat"
-L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 4× magnification." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "3× Combat Scope"
+L["uplp_optic_elcan.compactname"] = "3× Combat"
+L["uplp_optic_elcan.description"] = "Military-grade combat optic of American origin with 3× magnification." .. desc_midoptic
 
 L["uplp_optic_bigass.printname"] = "8-16× Variable Zoom Scope w. Rangefinder"
 L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
@@ -317,6 +318,7 @@ L["uplp_optic_tacrds.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds.compactname"] = "Pistol"
 L["uplp_optic_tacrds.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_smalloptic
 
+-- direct
 L["uplp_optic_tacrds_direct.printname"] = "Pistol Red Dot"
 L["uplp_optic_tacrds_direct.compactname"] = "Pistol"
 L["uplp_optic_tacrds_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
@@ -324,6 +326,22 @@ L["uplp_optic_tacrds_direct.description"] = "Compact red dot intended for handgu
 L["uplp_optic_rmr_direct.printname"] = "XW Red Dot"
 L["uplp_optic_rmr_direct.compactname"] = "XW"
 L["uplp_optic_rmr_direct.description"] = "Compact red dot intended for handguns and smaller caliber firearms." .. desc_pistoloptic
+
+L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
+L["uplp_optic_sro_direct.compactname"] = "VOC-1"
+L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_pistoloptic
+
+L["uplp_optic_sro.printname"] = "VOC-1 Red Dot"
+L["uplp_optic_sro.compactname"] = "VOC-1"
+L["uplp_optic_sro.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
+
+L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
+L["uplp_optic_justice_direct.compactname"] = "Redmark"
+L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_pistoloptic
+
+L["uplp_optic_justice.printname"] = "Redmark Arms Reflex"
+L["uplp_optic_justice.compactname"] = "Redmark"
+L["uplp_optic_justice.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
 
 L["uplp_optic_rmr.printname"] = "XW Red Dot"
 L["uplp_optic_rmr.compactname"] = "XW"
@@ -337,13 +355,13 @@ L["uplp_optic_genericrds.printname"] = "HawkEye Precision Red Dot"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "3× Military Scope"
-L["uplp_optic_notacog.compactname"] = "3× Military"
-L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 3× magnification." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "2.5× Military Scope"
+L["uplp_optic_notacog.compactname"] = "2.5× Military"
+L["uplp_optic_notacog.description"] = "Rugged military scope of Israeli origin with 2.5× magnification." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Competition Scope"
 L["uplp_optic_compm1.compactname"] = "Comp."
-L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. "\nHas <color=100,255,100>minor handling penalities</color> but <color=255,255,100>slight aim sway</color> from the magnification."
+L["uplp_optic_compm1.description"] = "Magnified scope of Swedish origin intended for competition and sport shooting." .. desc_shortoptic
 
 L["uplp_optic_sniper.printname"] = "6-8× Variable Zoom Scope"
 L["uplp_optic_sniper.compactname"] = "6-8× VZS"
@@ -371,7 +389,7 @@ L["uplp_optic_old.description"] = "Medium range scope with 7× magnification." .
 
 L["uplp_optic_pso_rail.printname"] = "4× OPP2-B"
 L["uplp_optic_pso_rail.compactname"] = "4× OPP2-B"
-L["uplp_optic_pso_rail.description"] = "Magnified scope of Russian origin with 4× magnification." .. desc_midbigoptic
+L["uplp_optic_pso_rail.description"] = "Magnified scope of Russian origin with 4× magnification." .. desc_midoptic
 
 L["uplp_optic_hhs1.printname"] = "SightLine™ 500 Series Holographic Sight w. Magnifier"
 L["uplp_optic_hhs1.compactname"] = "500S M."
@@ -429,7 +447,7 @@ L["uplp_optic_dedal.description"] = "Magnified scope with 12× magnification fro
 
 L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
 L["uplp_optic_rsa.compactname"] = "Type-7"
-L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
+L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_smalloptic
 
 L["uplp_optic_falco.printname"] = "NPI Red Dot"
 L["uplp_optic_falco.compactname"] = "NPI"
@@ -438,22 +456,6 @@ L["uplp_optic_falco.description"] = "Modern top-tier reflex optic made by the ne
 L["uplp_optic_uh1.printname"] = "SightLine™ Gen-II Holographic Sight"
 L["uplp_optic_uh1.compactname"] = "SL Gen-II"
 L["uplp_optic_uh1.description"] = "Next generation holographic sight made by SightLine™." .. desc_cqcoptic
-
-L["uplp_optic_sro_direct.printname"] = "VOC-1 Red Dot"
-L["uplp_optic_sro_direct.compactname"] = "VOC-1"
-L["uplp_optic_sro_direct.description"] = "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
-
-L["uplp_optic_sro.printname"] = ARC9:GetPhrase("uplp_optic_sro_direct.printname") or "VOC-1 Red Dot"
-L["uplp_optic_sro.compactname"] = ARC9:GetPhrase("uplp_optic_sro_direct.compactname") or "VOC-1"
-L["uplp_optic_sro.description"] = ARC9:GetPhrase("uplp_optic_sro_direct.description") or "Miniature red dot optic by Vanguard Optics Corporation (VOC) intended for handguns and smaller caliber firearms." .. desc_smalloptic
-
-L["uplp_optic_justice_direct.printname"] = "Redmark Arms Reflex"
-L["uplp_optic_justice_direct.compactname"] = "Redmark"
-L["uplp_optic_justice_direct.description"] = "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
-
-L["uplp_optic_justice.printname"] = ARC9:GetPhrase("uplp_optic_justice_direct.printname") or "Redmark Arms Reflex"
-L["uplp_optic_justice.compactname"] = ARC9:GetPhrase("uplp_optic_justice_direct.compactname") or "Redmark"
-L["uplp_optic_justice.description"] = ARC9:GetPhrase("uplp_optic_justice_direct.description") or "Compact reflex optic made by Redmark Arms - their first military-grade optical sight. Intended for smaller caliber firearms." .. desc_smalloptic
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "Canted Red Dot"
@@ -3677,7 +3679,7 @@ L["uplp_g36_top_scope.description"] = "Factory-made optic made specifically for 
 
 L["uplp_g36_top_scope_rds.printname"] = "STG-95 Rotpunktvisier"
 L["uplp_g36_top_scope_rds.compactname"] = "RDS"
-L["uplp_g36_top_scope_rds.description"] = "Factory-made red dot sight made to be attached on top of the STG-95 scope."
+L["uplp_g36_top_scope_rds.description"] = "Factory-made red dot sight made to be attached on top of the STG-95 scope." .. desc_cqcoptic
 
 L["uplp_g36_top_sl8.printname"] = "ZJG-98 Top Rail"
 L["uplp_g36_top_sl8.compactname"] = "ZJG-98"
