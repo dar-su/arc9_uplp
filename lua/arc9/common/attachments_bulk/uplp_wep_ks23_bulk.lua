@@ -118,13 +118,14 @@ ATT.Category = "uplp_ks23_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose"}
 
-ATT.RecoilAdd = 0.75
-ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.1
-ATT.SprintToFireTimeAdd = -0.1
-ATT.SpreadAddHipFire = -0.01
-ATT.SpeedAddSights = 0.1
-ATT.SpeedAdd = 0.05
+ATT.RecoilAdd = 0.5
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.08
+ATT.SprintToFireTimeAdd = -0.08
+ATT.DispersionSpreadAdd = 0.01
+ATT.SpeedAdd = 0.03
+ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilAutoControlMult = 0.25
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end
@@ -144,8 +145,12 @@ ATT.Category = "uplp_ks23_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose"}
 
-ATT.RecoilRandomSideAdd = 0.3
-ATT.SpeedAddSights = 0.05
+ATT.RecoilAdd = 0.2
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SpeedAdd = 0.02
+ATT.RecoilAutoControlMult = 0.75
+ATT.DispersionSpreadAdd = 0.005
 
 ARC9.LoadAttachment(ATT, "uplp_ks23_stock_grip_stock")
 

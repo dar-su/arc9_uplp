@@ -143,14 +143,14 @@ ATT.Icon = Material(iconfolder .. "cut.png", "mips smooth")
 ATT.Category = "uplp_dbs_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.5
+ATT.RecoilAdd = 0.3
 ATT.SwayAddSights = 1
-ATT.AimDownSightsTimeAdd = -0.15
-ATT.SprintToFireTimeAdd = -0.17
-ATT.SpeedAddSights = 0.12
-ATT.SpeedAdd = 0.05
-ATT.DispersionSpreadAddHipFire = -0.015
-ATT.DispersionSpreadAddMove = -0.01
+ATT.AimDownSightsTimeAdd = -0.09
+ATT.SprintToFireTimeAdd = -0.09
+ATT.DispersionSpreadAdd = 0.01
+ATT.SpeedAdd = 0.1
+ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilAutoControlMult = 0.35
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then return anim .. "_sawedoff" end
@@ -172,10 +172,9 @@ ATT.Icon = Material(iconfolder .. "cursed.png", "mips smooth")
 ATT.Category = "uplp_dbs_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilRandomSideAdd = 1.5
-ATT.SprintToFireTimeAdd = -0.04
-ATT.AimDownSightsTimeAdd = -0.02
-ATT.SpeedAdd = 0.02
+ATT.SpeedMultShooting = 0.8
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SpeedAdd = 0.03
 
 ARC9.LoadAttachment(ATT, "uplp_dbs_stock_cursed")
 
@@ -210,12 +209,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RecoilAdd = 0.5
 ATT.SwayAddSights = 1
-ATT.AimDownSightsTimeAdd = -0.18
-ATT.SprintToFireTimeAdd = -0.2
-ATT.SpeedAddSights = 0.08
-ATT.SpeedAdd = 0.03
-ATT.DispersionSpreadAddHipFire = -0.015
-ATT.DispersionSpreadAddMove = -0.01
+ATT.AimDownSightsTimeAdd = -0.12
+ATT.SprintToFireTimeAdd = -0.12
+ATT.DispersionSpreadAdd = 0.01
+ATT.SpeedAdd = 0.1
+ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilAutoControlMult = 0.25
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "inspect" then return anim .. "_sawedoff" end

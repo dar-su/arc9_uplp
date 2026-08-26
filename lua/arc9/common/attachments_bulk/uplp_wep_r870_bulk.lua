@@ -440,13 +440,13 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RecoilAdd = 0.7
-ATT.SwayAddSights = 0.5
+ATT.SwayAddSights = 1
 ATT.AimDownSightsTimeAdd = -0.12
 ATT.SprintToFireTimeAdd = -0.12
-ATT.DispersionSpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.2
+ATT.DispersionSpreadAdd = 0.01
 ATT.SpeedAdd = 0.1
-ATT.RecoilRandomSideAdd = 0.4
+ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilAutoControlMult = 0.25
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
@@ -465,14 +465,14 @@ ATT.Icon = Material(iconfolder .. "stockshortwood.png", "mips smooth")
 ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.RecoilAdd = 0.5
-ATT.SwayAddSights = 0.5
-ATT.AimDownSightsTimeAdd = -0.1
-ATT.SprintToFireTimeAdd = -0.1
-ATT.DispersionSpreadAddHipFire = -0.005
-ATT.SpeedAddSights = 0.16
-ATT.SpeedAdd = 0.08
+ATT.RecoilAdd = 0.4
+ATT.SwayAddSights = 1
+ATT.AimDownSightsTimeAdd = -0.09
+ATT.SprintToFireTimeAdd = -0.09
+ATT.DispersionSpreadAdd = 0.01
+ATT.SpeedAdd = 0.1
 ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilAutoControlMult = 0.35
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
@@ -564,14 +564,15 @@ ATT.Category = "uplp_r870_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
-ATT.RecoilAdd = 1
-ATT.SwayAddSights = 1
-ATT.AimDownSightsTimeAdd = -0.15
-ATT.SprintToFireTimeAdd = -0.15
-ATT.DispersionSpreadAddHipFire = -0.012
-ATT.SpeedAddSights = 0.22
+ATT.RecoilAdd = 0.7
+ATT.SwayAddSights = 0.5
+ATT.AimDownSightsTimeAdd = -0.1
+ATT.SprintToFireTimeAdd = -0.1
+ATT.DispersionSpreadAdd = 0.01
+ATT.SpeedAddSights = 0.06
 ATT.SpeedAdd = 0.1
-ATT.RecoilRandomSideAdd = 0.4
+ATT.RecoilRandomSideAdd = 0.5
+ATT.RecoilAutoControlMult = 0.25
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(6, -4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end
@@ -594,44 +595,41 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_grippose", "uplp_gripposemoar"}
 
 ATT.CustomPros = {
+    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "-0.5",
     [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "-0.1s",
     [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "-0.1s",
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. string.format(ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.speed"))] = "+12%",
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.speed")] = "+6%",
+    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.aimdownsightstime")] = "-0.04s",
+    [ARC9:GetPhrase("uplp_togglestat_extended") .. " - " .. ARC9:GetPhrase("autostat.sprinttofiretime")] = "-0.02s",
 }
 
 ATT.CustomCons = {
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.recoil")] = "+0.6",
-    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. string.format(ARC9:GetPhrase("autostat.secondary.sights"), ARC9:GetPhrase("autostat.sway"))] = "+0.5",
+    [ARC9:GetPhrase("uplp_togglestat_folded") .. " - " .. ARC9:GetPhrase("autostat.recoilautocontrol")] = "×50%",
 }
 
-ATT.RecoilAdd = 0.4
-ATT.AimDownSightsTimeAdd = -0.05
-ATT.SprintToFireTimeAdd = -0.05
-ATT.SpeedAddSights = 0.1
-ATT.SpeedAdd = 0.04
-ATT.RecoilRandomSideAdd = 0.4
+ATT.RecoilAdd = 0.7
+ATT.DispersionSpreadAdd = 0.01
+ATT.SpeedAddSights = 0.03
+ATT.SpeedAdd = 0.05
+ATT.RecoilRandomSideAdd = 0.3
 
 ATT.ToggleStats = {
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_extended"),
+        RecoilAdd = -0.5,
+        AimDownSightsTimeAdd = -0.04,
+        SprintToFireTimeAdd = -0.02,
     },
     {
         PrintName = ARC9:GetPhrase("uplp_togglestat_folded"),
         ActivateElements = {"uplp_foldedstock", "uplp_grippose", "uplp_gripposemoar"},
 
         CantPeek = true,
-
-        RecoilAdd = 0.6,
-        SwayAddSights = 0.5,
+        RecoilAutoControlMult = 0.5,
         AimDownSightsTimeAdd = -0.1,
         SprintToFireTimeAdd = -0.1,
-        SpeedAddSights = 0.12,
-        SpeedAdd = 0.06,
 
         CustomizePosHook = function(wep, vec) return vec + Vector(6, -4, 0) end,
         CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(6, 0, 0) end,
-
     },
 }
 
