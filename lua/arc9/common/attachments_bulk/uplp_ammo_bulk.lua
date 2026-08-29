@@ -330,7 +330,8 @@ ATT.DamageMinMult = 0.5
 ATT.PhysBulletMuzzleVelocityMult = 0.25
 ATT.AlwaysPhysBulletOverride = true
 ATT.RPMMult = 0.9
-
+ATT.RicochetChanceOverride = 0
+ATT.PenetrationOverride = 0
 ATT.ImpactDecal = "FadingScorch"
 
 ATT.Overheat = true

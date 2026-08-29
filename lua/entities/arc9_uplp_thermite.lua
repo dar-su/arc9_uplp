@@ -1,0 +1,377 @@
+-- basically same as arc9 mw19
+AddCSLuaFile()
+
+ENT.Type = "anim"
+ENT.Base = "base_entity"
+ENT.PrintName = "Fire Particle"
+ENT.Author = ""
+ENT.Information = ""
+ENT.Spawnable = false
+ENT.AdminSpawnable = false
+ENT.DrawModelExt = false
+game.AddParticles("particles/sdrk_molotov.pcf")
+PrecacheParticleSystem("arrow_thermite")
+PrecacheParticleSystem("arrow_thermite_smokeleft")
+ENT.ModelEnt = "models/hunter/misc/sphere025x025.mdl"
+ENT.FireTime = 7
+ENT.Armed = false
+ENT.NextDamageTick = 0
+ENT.Ticks = 0
+ENT.FireLength = 1
+ENT.FireRadius = 10
+
+function ENT:Initialize()
+    self.SpawnTime = CurTime()
+
+    if not self:GetNWBool("Children", false) then
+        self:SetNWBool("Children", true)
+    end
+
+    if SERVER then
+        self:SetModel(self.ModelEnt)
+        self:SetMoveType(MOVETYPE_VPHYSICS)
+        self:SetSolid(SOLID_VPHYSICS)
+        local maxs = Vector(1, 1, 1)
+        local mins = -maxs
+        self:PhysicsInitBox(mins, maxs)
+        self:DrawShadow(false)
+        self:SetAngles(self:GetAngles())
+        local phys = self:GetPhysicsObject()
+
+        if phys:IsValid() then
+            phys:Wake()
+            phys:SetBuoyancyRatio(0)
+            phys:EnableMotion(true)
+        end
+
+        self:Detonate()
+
+        -- self.FireTime = self.FireTime * math.Rand(0.8, 1.2)
+        -- self:SetNWFloat("FireTime", CurTime() + self.FireTime)
+        timer.Simple(0, function()
+            if not IsValid(self) then return end
+            self:SetCollisionGroup(COLLISION_GROUP_PROJECTILE)
+        end)
+
+        ParticleEffectAttach("arrow_thermite", PATTACH_ABSORIGIN_FOLLOW, self, 0)
+    end
+end
+
+
+function ENT:PhysicsCollide(data, physobj)
+    local hitPos = data.HitPos -- Get the position where the grenade hit
+    local hitNormal = data.HitNormal -- Get the normal vector of the surface hit
+    local hitEntity = data.HitEntity -- Get the entity that was hit (can be nil if it hit the world)
+
+    if SERVER then
+        if not self.HasCollided then
+            self.HasCollided = true
+            local phys = self:GetPhysicsObject()
+
+            if phys:IsValid() then
+                phys:SetVelocity(Vector(0, 0, 0))
+                phys:EnableMotion(true)
+            end
+        else
+            return
+        end
+
+        if hitEntity:GetClass() == "worldspawn" then
+            timer.Simple(0, function()
+                self:SetMoveType(MOVETYPE_NONE)
+                self:SetAngles(data.OurOldVelocity:Angle() + Angle(-55, 0, 0))
+                self:SetPos(data.HitPos - (data.HitNormal * 2))
+            end)
+            self.StuckWorld = true
+        elseif not hitEntity:IsPlayer() then
+            timer.Simple(0, function()
+                if not IsValid(self) or not IsValid(hitEntity) then
+                    if IsValid(self) then
+                        self.HasCollided = false
+                        self:GetPhysicsObject():SetVelocityInstantaneous(data.OurNewVelocity)
+                    end
+                    return
+                end
+                self:SetPos(data.HitPos - (data.HitNormal * 2))
+                self:SetAngles(data.OurOldVelocity:Angle() + Angle(-55, 0, 0))
+                self.StuckEntity = hitEntity
+                self.StuckEntityWeld = constraint.Weld(self, hitEntity, 0, 0, 0, true, false)
+            end)
+        end
+    end
+end
+
+function ENT:Think()
+    if CLIENT then
+        local d = Lerp((self.SpawnTime + self.FireTime - CurTime()) / 8, 1, 0.000001) ^ 2
+
+        if not self.Light then
+            self.Light = DynamicLight(self:EntIndex())
+
+            if self.Light then
+                self.Light.Pos = self:GetPos()
+                self.Light.r = 255
+                self.Light.g = 75
+                self.Light.b = 0
+                self.Light.Brightness = 5
+                self.Light.Size = math.random(50, 64)
+                self.Light.DieTime = CurTime() + self.FireTime
+            end
+        else
+            self.Light.Pos = self:GetPos()
+        end
+
+        local emitter = ParticleEmitter(self:GetPos())
+        if not self:IsValid() or self:WaterLevel() > 2 then return end
+        if not IsValid(emitter) then return end
+
+        if self.Ticks % math.ceil(1 + d * 6) == 0 then
+            local fire = emitter:Add("effects/spark", self:GetPos() + Vector(math.Rand(-32, 32), math.Rand(-32, 32), 0))
+            fire:SetVelocity(VectorRand() * 512)
+            fire:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), -2000))
+            fire:SetDieTime(math.Rand(0.5, 1))
+            fire:SetStartAlpha(55)
+            fire:SetEndAlpha(0)
+            fire:SetStartSize(2)
+            fire:SetEndSize(0)
+            fire:SetRoll(math.Rand(-180, 180))
+            fire:SetRollDelta(math.Rand(-0.2, 0.2))
+            fire:SetColor(255, 75, 0)
+            fire:SetAirResistance(50)
+            fire:SetPos(self:GetPos())
+            fire:SetLighting(false)
+            fire:SetCollide(true)
+            fire:SetBounce(0.2)
+            fire.Ticks = 0
+        end
+
+        self.NextFlareTime = self.NextFlareTime or CurTime()
+
+        if self.NextFlareTime <= CurTime() then
+            self.NextFlareTime = CurTime() + math.Rand(0.1, 0.5)
+            local fire = emitter:Add("sprites/orangeflare1", self:GetPos())
+            fire:SetVelocity(VectorRand() * 256)
+            fire:SetGravity(Vector(math.Rand(-5, 5), math.Rand(-5, 5), -2000))
+            fire:SetDieTime(math.Rand(1, 2))
+            fire:SetStartAlpha(55)
+            fire:SetEndAlpha(0)
+            fire:SetStartSize(5)
+            fire:SetEndSize(0)
+            fire:SetRoll(math.Rand(-180, 180))
+            fire:SetRollDelta(math.Rand(-0.2, 0.2))
+            fire:SetColor(255, 255, 255)
+            fire:SetAirResistance(50)
+            fire:SetPos(self:GetPos())
+            fire:SetLighting(false)
+            fire:SetCollide(true)
+            fire:SetBounce(0.5)
+            fire.Ticks = 0
+            fire:SetNextThink(CurTime() + FrameTime())
+
+            fire:SetThinkFunction(function(pa)
+                if not pa then return end
+                local aemitter = ParticleEmitter(pa:GetPos())
+                local d = pa:GetLifeTime() / pa:GetDieTime()
+                if not IsValid(aemitter) then return end
+
+                if pa.Ticks % 5 == 0 then
+                    local afire = aemitter:Add("particles/smokey", pa:GetPos())
+                    afire:SetVelocity(VectorRand() * 5)
+                    afire:SetGravity(Vector(0, 0, 1500))
+                    afire:SetDieTime(math.Rand(0.25, 0.5) * d)
+                    afire:SetStartAlpha(55)
+                    afire:SetEndAlpha(0)
+                    afire:SetStartSize(5 * d)
+                    afire:SetEndSize(15)
+                    afire:SetRoll(math.Rand(-180, 180))
+                    afire:SetRollDelta(math.Rand(-0.2, 0.2))
+                    afire:SetColor(255, 255, 255)
+                    afire:SetAirResistance(150)
+                    afire:SetPos(pa:GetPos())
+                    afire:SetLighting(false)
+                    afire:SetCollide(true)
+                    afire:SetBounce(0.9)
+                    afire:SetNextThink(CurTime() + FrameTime())
+
+                    afire:SetThinkFunction(function(apa)
+                        if not apa then return end
+                        local col1 = Color(255, 135, 0)
+                        local col2 = Color(255, 255, 255)
+                        local col3 = col1
+                        local d2 = apa:GetLifeTime() / apa:GetDieTime()
+                        col3.r = Lerp(d2, col1.r, col2.r)
+                        col3.g = Lerp(d2, col1.g, col2.g)
+                        col3.b = Lerp(d2, col1.b, col2.b)
+                        apa:SetColor(col3.r, col3.g, col3.b)
+                        apa:SetNextThink(CurTime() + FrameTime())
+                    end)
+                end
+
+                aemitter:Finish()
+                pa.Ticks = pa.Ticks + 1
+                pa:SetNextThink(CurTime() + FrameTime())
+            end)
+        end
+
+        emitter:Finish()
+        self.Ticks = self.Ticks + 1
+    else
+        if self.HasCollided and not self.StuckWorld and not IsValid(self.StuckEntityWeld) then
+            self:SetParent(NULL)
+            self.HasCollided = false
+            self.StuckEntityWeld = nil
+            self.StuckEntity = nil
+            self:SetSolid(SOLID_VPHYSICS)
+            self:SetMoveType(MOVETYPE_VPHYSICS)
+            self:PhysicsInitBox(Vector(-1, -1, -6), Vector(1, 1, 10), "grenade", Vector(0, 0, 7))
+            local phys = self:GetPhysicsObject()
+            if phys:IsValid() then
+                local v = VectorRand() * 64 + Vector(0, 0, 128)
+                phys:SetVelocity(v)
+                phys:EnableMotion(true)
+                phys:AddAngleVelocity(v:GetNormalized():Cross(self:GetUp()) * math.Rand(500, 1000))
+            end
+        end
+
+        if self.NextDamageTick > CurTime() then return end
+
+        if self:WaterLevel() > 2 then
+            self:Remove()
+
+            return
+        end
+
+        local dmg = DamageInfo()
+        dmg:SetDamageType(DMG_BURN + DMG_AIRBOAT)
+        dmg:SetDamage(Lerp((self.SpawnTime + self.FireTime - CurTime()) / self.FireTime, 16, 8))
+        dmg:SetInflictor(self)
+        dmg:SetAttacker(self:GetOwner())
+        util.BlastDamageInfo(dmg, self:GetPos(), 84)
+        self.NextDamageTick = CurTime() + 0.1
+
+        if IsValid(self.StuckEntity) then
+            dmg:SetDamage(15)
+            dmg:SetDamageCustom(2345)
+            dmg:SetDamagePosition(self:GetPos())
+            dmg:SetDamageForce(VectorRand())
+            self.StuckEntity:TakeDamageInfo(dmg)
+        end
+
+        if self.SpawnTime + self.FireTime <= CurTime() then
+            self:Remove()
+
+            return
+        end
+    end
+end
+
+function ENT:OnRemove()
+    if self.Light then
+        self.Light.dietime = CurTime() + 0.5
+        self.Light.decay = 2000
+    end
+
+    if not self.FireSound then return end
+    self.FireSound:Stop()
+    self:EmitSound("weapons/cod2019/shared/weap_thermite_loop_end_01.ogg", 100)
+    ParticleEffectAttach("arrow_thermite_smokeleft", PATTACH_ABSORIGIN_FOLLOW, self, 0)
+end
+
+function ENT:Detonate()
+    if not self:IsValid() then return end
+    self.Armed = true
+    if self.Order and self.Order ~= 1 then return end
+    --util.Decal("Scorch", self:GetPos(), self:GetPos() - Vector(0, 0, 50), self)
+    -- self.FireSound = CreateSound(self, "tacrp_extras/grenades/fire_loop_1.wav")
+    self.FireSound = CreateSound(self, "weapons/cod2019/shared/weap_thermite_loop.ogg")
+    self.FireSound:Play()
+    self.FireSound:ChangePitch(120)
+    self.FireSound:ChangePitch(100, self.FireTime)
+
+    -- self:FireBullets({
+    -- Attacker = attacker,
+    -- Damage = 200,
+    -- Force = 5,
+    -- Tracer = 0,
+    -- Distance = 20000,
+    -- Dir = self:GetVelocity(),
+    -- Src = self:GetPos(),
+    -- Callback = function(att, tr, dmg)
+    -- util.Decal("Scorch", tr.StartPos, tr.HitPos - (tr.HitNormal * 16), self)
+    -- end
+    -- })
+    timer.Simple(self.FireTime - 1, function()
+        if not IsValid(self) then return end
+        self.FireSound:ChangeVolume(0, 1)
+    end)
+
+    timer.Simple(self.FireTime, function()
+        if not IsValid(self) then return end
+        self:Remove()
+    end)
+end
+
+function ENT:Draw()
+    if self.DrawModelExt then
+        self:DrawModel()
+    end
+end
+
+local directfiredamage = {
+    ["npc_zombie"] = true,
+    ["npc_zombie_torso"] = true,
+    ["npc_fastzombie"] = true,
+    ["npc_fastzombie_torso"] = true,
+    ["npc_poisonzombie"] = true,
+    ["npc_zombine"] = true,
+    ["npc_headcrab"] = true,
+    ["npc_headcrab_fast"] = true,
+    ["npc_headcrab_black"] = true,
+    ["npc_headcrab_poison"] = true,
+}
+
+hook.Add("EntityTakeDamage", "arc9_uplp_thermite", function(ent, dmginfo)
+    if IsValid(dmginfo:GetInflictor()) and dmginfo:GetInflictor():GetClass() == "arc9_uplp_thermite" and dmginfo:GetDamageType() == DMG_BURN then
+
+        -- When stuck to an entity, the damage is applied separately (to ensure large objects take the same amount of damage regardless of distance to origin)
+        if IsValid(dmginfo:GetInflictor():GetParent()) and ent == dmginfo:GetInflictor():GetParent().StuckEntity and dmginfo:GetDamageCustom() ~= 2345 then
+            return true
+        end
+
+        if ent:IsNPC() then
+            if directfiredamage[ent:GetClass()] then
+                dmginfo:SetDamageType(DMG_SLOWBURN) -- DMG_BURN does not hurt HL2 zombies and instead turns them black.
+            end
+        elseif not ent:IsNextBot() and not ent:IsPlayer() then
+            if ent:GetClass() == "prop_physics" then
+                dmginfo:SetDamageType(DMG_DIRECT) -- some props like to burn slowly against DMG_BURN or DMG_SLOWBURN. don't.
+            end
+
+            local m = 2
+            if ent.IsGlideVehicle then
+                m = 4 -- they take very little damage for some reason
+            elseif ent.LVS or ent:IsVehicle() then
+                m = 2
+            end
+            dmginfo:ScaleDamage(m) -- tremendous damage to props
+        end
+
+        dmginfo:SetDamageForce(Vector() * 0.01) -- fire does not push things around. still applies to players, but that can't be helped.
+
+        -- ^ you fool. you absolute bafoon. you are like a baby.
+        if ent:IsPlayer() and not ent:IsEFlagSet(EFL_NO_DAMAGE_FORCES) then
+            ent:AddEFlags(EFL_NO_DAMAGE_FORCES)
+            ent.ARC9_MW19_ForceCancel = true
+        end
+    end
+end)
+
+hook.Add("PostEntityTakeDamage", "arc9_uplp_thermite", function(ent, dmginfo, took)
+    if took and IsValid(dmginfo:GetInflictor()) and dmginfo:GetInflictor():GetClass() == "arc9_uplp_thermite" then
+        ent:Ignite(1)
+    end
+    if ent.ARC9_MW19_ForceCancel then
+        ent.ARC9_MW19_ForceCancel = nil
+        ent:RemoveEFlags(EFL_NO_DAMAGE_FORCES)
+    end
+end)
