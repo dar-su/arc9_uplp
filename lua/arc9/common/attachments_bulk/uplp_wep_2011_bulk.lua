@@ -142,10 +142,10 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RPMMult = 1.5
 ATT.SpreadAdd = 0.002
-ATT.RecoilMultRecoil = 2
-ATT.RecoilRandomSideMult = 1.25
-ATT.PostBurstDelay = 0.12
-ATT.RecoilResetTimeAdd = 0.03
+ATT.SpreadAddRecoil = 0.003
+ATT.RecoilMultRecoil = 2.5
+ATT.PostBurstDelay = 0.11
+ATT.RecoilResetTimeAdd = 0.02
 ATT.RunawayBurst = true
 
 ATT.Firemodes = {
