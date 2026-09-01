@@ -277,15 +277,15 @@ L["uplp_optic_compm4.description"] = "Коллиматорный прицел ш
 
 L["uplp_optic_dcl110.printname"] = "Рефлекторный прицел для пулемёта с магнифером"
 L["uplp_optic_dcl110.compactname"] = "ПК-РС"
-L["uplp_optic_dcl110.description"] = "Крупный и громоздкий коллиматорный прицел с встроенным магнифером, предназначенным для пулемётов." .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Крупный и громоздкий коллиматорный прицел с встроенным магнифером, предназначенным для пулемётов." .. desc_midbigoptic
 
 L["uplp_optic_acog.printname"] = "Прицел NCOG-4 4×"
-L["uplp_optic_acog.compactname"] = "4× NCOG-4"
+L["uplp_optic_acog.compactname"] = "3.5× NCOG-4"
 L["uplp_optic_acog.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением. Оснащён встроенными <color=100,255,100>резервными механическими прицельными приспособлениями</color>." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "Боевой прицел 4×"
-L["uplp_optic_elcan.compactname"] = "4× Боев."
-L["uplp_optic_elcan.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "Боевой прицел 3×"
+L["uplp_optic_elcan.compactname"] = "3× Боев."
+L["uplp_optic_elcan.description"] = "Военный боевой прицел американского производства с 3-кратным увеличением." .. desc_midoptic
 
 L["uplp_optic_bigass.printname"] = "Прицел переменной кратности 8-16× с дальномером"
 L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
@@ -327,9 +327,9 @@ L["uplp_optic_genericrds.printname"] = "Красная точка HawkEye"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "Классический прицел с красной точкой, который клонировали и копировали с момента его появления." .. desc_cqcoptic
 
-L["uplp_optic_notacog.printname"] = "Военный прицел 3×"
-L["uplp_optic_notacog.compactname"] = "3× Воен."
-L["uplp_optic_notacog.description"] = "Прочный военный прицел израильского производства с 3-кратным увеличением." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "Военный прицел 2.5×"
+L["uplp_optic_notacog.compactname"] = "2.5× Воен."
+L["uplp_optic_notacog.description"] = "Прочный военный прицел израильского производства с 2.5-кратным увеличением." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Соревновательный прицел"
 L["uplp_optic_compm1.compactname"] = "Соревн."L["uplp_optic_compm1.description"] = "Прицел с увеличением шведского производства, предназначенный для соревнований и спортивной стрельбы." .. "Имеет <color=100,255,100>незначительный штраф по скорости</color>, но <color=255,255,100>немного уменьшает стабильность</color> из-за увеличения."
