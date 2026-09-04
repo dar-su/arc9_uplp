@@ -197,13 +197,12 @@ ATT.Firemodes = {
     PoseParam = 2 }
 }
 
-ATT.ClipSizeOverride = 10
-
 -- Mag
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.02
-ATT.SwayMultSights = 0.9
-ATT.SpeedMultSights = 1.1
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.12
+ATT.SpreadAddHipFire = -0.015
 
 -- Positives
 ATT.PhysBulletMuzzleVelocityMult = 1.15

@@ -572,12 +572,13 @@ ATT.TranslucentPassBlend = 0.5
 ATT.BoneMerge = true
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.07
-ATT.SprintToFireTimeAdd = -0.05
-ATT.SpeedMultSights = 1.25
-ATT.SwayMultSights = 0.7
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.12
+ATT.SpreadAddHipFire = -0.015
+
 ATT.SwayAdd = -0.2
-ATT.SpreadAddHipFire = -0.01
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",

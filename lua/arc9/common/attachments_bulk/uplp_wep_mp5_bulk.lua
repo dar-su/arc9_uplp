@@ -381,9 +381,9 @@ ATT.ClipSizeOverride = 15
 
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SprintToFireTimeAdd = -0.02
-ATT.SwayMultSights = 0.6
-ATT.SpeedMultSights = 1.1
-ATT.ReloadTimeMult = 0.925
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.12
+ATT.ReloadTimeMult = 0.9
 ATT.SpreadAddHipFire = -0.003
 
 ARC9.LoadAttachment(ATT, "uplp_mp5_mag_15")

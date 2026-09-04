@@ -256,8 +256,8 @@ ATT.SortOrder = -1
 
 ATT.Icon = Material("entities/uplp_attachements/sr25/gripar10.png", "mips smooth")
 
-ATT.AimDownSightsTimeAdd = -0.02
-ATT.SprintToFireTimeAdd = 0.02
+ATT.SwayMultSights = 0.95
+ATT.SpeedMultShooting = 0.98
 
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar10_pgrip"

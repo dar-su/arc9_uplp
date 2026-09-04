@@ -233,10 +233,11 @@ ATT.Category = "uplp_ar18_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.02
-ATT.SwayMultSights = 0.9
-ATT.SpeedMultSights = 1.1
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.12
+ATT.SpreadAddHipFire = -0.015
 
 -- Negatives
 ATT.ClipSizeOverride = 20

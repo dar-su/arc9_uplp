@@ -167,15 +167,12 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/vector_mag_13.mdl"
 ATT.DropMagazineTime = 0.57
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.02
-ATT.SpeedAdd = 0.01
-ATT.SwayMultSights = 0.6
-ATT.SpreadAddHipFire = -0.003
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.08
+ATT.SpreadAddHipFire = -0.005
 ATT.ReloadTimeMult = 0.9
-
-ATT.CustomPros = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
-}
 
 -- Negatives
 ATT.ClipSizeOverride = 13
@@ -220,15 +217,12 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/vector_mag_13.mdl"
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.02
-ATT.SpeedAdd = 0.01
-ATT.SwayMultSights = 0.6
-ATT.SpreadAddHipFire = -0.003
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.08
+ATT.SpreadAddHipFire = -0.005
 ATT.ReloadTimeMult = 0.9
-
-ATT.CustomPros = {
-[ARC9:GetPhrase("autostat.reloadtime")] = "-10%",
-}
 
 -- Negatives
 ATT.ClipSizeOverride = 17
