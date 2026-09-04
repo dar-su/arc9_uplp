@@ -47,9 +47,9 @@ local stats24 = {
     RecoilAdd = -0.07,
 
     -- Negatives
-    SpreadAddHipFire = 0.006,
-    AimDownSightsTimeAdd = 0.04,
-    SprintToFireTimeAdd = 0.06,
+    SpreadAddHipFire = 0.004,
+    AimDownSightsTimeAdd = 0.02,
+    SprintToFireTimeAdd = 0.04,
     SpeedMultSights = 0.95,
     BarrelLengthAdd = 2,
 }
@@ -64,10 +64,10 @@ local stats28 = {
     RecoilAdd = -0.15,
 
     -- Negatives
-    SpreadAddHipFire = 0.012,
-    AimDownSightsTimeAdd = 0.08,
-    SprintToFireTimeAdd = 0.1,
-    SpeedMultSights = 0.85,
+    SpreadAddHipFire = 0.01,
+    AimDownSightsTimeAdd = 0.03,
+    SprintToFireTimeAdd = 0.06,
+    SpeedMultSights = 0.9,
     RPMMult = 0.9,
     BarrelLengthAdd = 8,
 }
@@ -93,26 +93,30 @@ ATT.CustomPros = {
     [ARC9:GetPhrase("uplp_fn57_trigger_auto.printname")] = ARC9:GetPhrase("autostat.enable.pre"),
 }
 
+
+
 ATT.DamageMaxAdd = -5
 ATT.DamageMinAdd = -3
-ATT.RecoilAdd = 0.75
+ATT.RecoilAdd = 0.5
+ATT.RecoilSideRandomAdd = 0.3
 ATT.SpreadAdd = 0.004
-ATT.SpreadAddRecoil = 0.003
-ATT.RecoilPerShotMult = 1.5
-ATT.RPMMult = 600 / 360
+ATT.SpreadAddRecoil = -0.006
+ATT.RecoilPerShotMult = 2
+ATT.RPMMult = 600 / 360 / 1.1
+ATT.SwayMultSights = 1.1
+ATT.RangeMinAdd = -10 / ARC9.HUToM
 
 ATT.Firemodes = {
     {
         Mode = -1, -- aut0
         PoseParam = 2,
-
-        RecoilRandomSideAdd = 0.5,
+        VisualRecoilSideMult = 0.25,
     },
     {
         Mode = 1, -- Semi
         PoseParam = 1,
         RPMMult = 450 / 600,
-        RecoilPerShotMult = 1 / 1.5,
+        RecoilPerShotMult = 1 / 2,
     }
 }
 
@@ -335,10 +339,11 @@ ATT.Category = "uplp_sr25_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.02
-ATT.SwayMultSights = 0.9
-ATT.SpeedMultSights = 1.1
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.12
+ATT.SpreadAddHipFire = -0.015
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
@@ -373,10 +378,11 @@ ATT.Category = "uplp_sr25_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Positives
-ATT.AimDownSightsTimeAdd = -0.03
-ATT.SprintToFireTimeAdd = -0.02
-ATT.SwayMultSights = 0.9
-ATT.SpeedMultSights = 1.1
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.03
+ATT.SwayMultSights = 0.75
+ATT.SpeedMultSights = 1.12
+ATT.SpreadAddHipFire = -0.015
 
 ATT.CustomPros = {
 [ARC9:GetPhrase("autostat.reloadtime")] = "+10%",
@@ -410,6 +416,9 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar10_mag_20ar10.mdl"
 ATT.Category = "uplp_sr25_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.SwayMultSights = 0.9
+ATT.SpeedMultSights = 0.97
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_mag_20_old")
 ---------- uplp_sr25_mag_20_poly
 
@@ -427,6 +436,9 @@ ATT.DropMagazineModel = "models/weapons/arc9/uplp/ar10_mag_20p.mdl"
 
 ATT.Category = "uplp_sr25_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.SwayMultSights = 1.1
+ATT.ReloadTimeMult = 0.98
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_mag_20_poly")
 
@@ -836,10 +848,11 @@ ATT.MuzzleEffectQCA = 8
 
 table.Merge(ATT, stats28)
 
-ATT.RecoilAdd = -0.2
-ATT.RPMMult = 1
+ATT.RecoilAdd = -0.4
 ATT.SpeedMultSights = 0.75
-ATT.SpreadAdd = -0.002
+ATT.SpreadAdd = -0.003
+ATT.SwayMultSights = 0.7
+ATT.RPMMult = 1.1
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_hg_ar10")
 
