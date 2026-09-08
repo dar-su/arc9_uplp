@@ -2,18 +2,18 @@ local ATT = {}
 
 local iconfolder = "entities/uplp_attachements/"
 
--- pistol optics on pistols
+-- pistol optics on pistols (direct)
 local stats_pistol = {
-    SpeedAddSights = -0.1,
-    AimDownSightsTimeAdd = 0.02,
+    -- SpeedAddSights = -0.1,
+    AimDownSightsTimeAdd = 0.01,
 }
 
--- pistol optics on full rails
+-- pistol optics on full rails (indirect)
 local sway_small = nil --0.25
 local stats_small = {
     -- SwayAddSights = 0.25,
-    SpeedAddSights = -0.15,
-    --AimDownSightsTimeAdd = 0.01,
+    SpeedAddSights = -0.05,
+    AimDownSightsTimeAdd = 0.02,
 
     --CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_small },
 }
@@ -42,8 +42,8 @@ local stats_mag = {
 local sway_mid = 2
 local stats_mid = {
     -- SwayAddSights = 1,
-    SpeedAddSights = -0.2,
-    AimDownSightsTimeAdd = 0.05,
+    SpeedAddSights = -0.17,
+    AimDownSightsTimeAdd = 0.04,
 
     CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_mid },
 }
@@ -52,8 +52,8 @@ local stats_mid = {
 local sway_midbig = 2.5
 local stats_midbig = {
     -- SwayAddSights = 1,
-    SpeedAddSights = -0.27,
-    AimDownSightsTimeAdd = 0.06,
+    SpeedAddSights = -0.2,
+    AimDownSightsTimeAdd = 0.05,
 
     CustomCons = { [ARC9:GetPhrase("uplp_stat_scopedsway")] = sway_midbig },
 }
@@ -370,7 +370,7 @@ ATT.CompactName = "MG RS"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
-ATT.SortOrder = 2.3
+ATT.SortOrder = 4 + .01
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup", "uplp_optic_long_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -446,7 +446,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(2, 0, 0)
 
-table.Merge(ATT, stats_mag)
+table.Merge(ATT, stats_midbig)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
@@ -455,12 +455,12 @@ ARC9.LoadAttachment(ATT, "uplp_optic_dcl110")
 
 ATT = {}
 
-ATT.PrintName = "4× NCOG-4 Scope" -- "ACOG 4x32 Scope"
-ATT.CompactName = "4× NCOG-4"
+ATT.PrintName = "3.5× NCOG-4 Scope" -- "ACOG 4x32 Scope"
+ATT.CompactName = "3.5× NCOG-4"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
-ATT.SortOrder = 3.9
+ATT.SortOrder = 3.5
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -476,8 +476,8 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 30,
-        RTScopeFOV = 57 / 4,
-        RTScopeMagnification = 4,
+        RTScopeFOV = 57 / 3.5,
+        RTScopeMagnification = 3.5,
 
         SwayAddSights = sway_mid,
     },
@@ -497,8 +497,8 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57 / 4
-ATT.RTScopeMagnification = 4
+ATT.RTScopeFOV = 57 / 3.5
+ATT.RTScopeMagnification = 3.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/acog2.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = true
@@ -520,12 +520,12 @@ ARC9.LoadAttachment(ATT, "uplp_optic_acog")
 
 ATT = {}
 
-ATT.PrintName = "4× Combat Scope" -- ELCAN Scope
-ATT.CompactName = "4× Combat"
+ATT.PrintName = "3× Combat Scope" -- ELCAN Scope
+ATT.CompactName = "3× Combat"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
-ATT.SortOrder = 3.9
+ATT.SortOrder = 3
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -541,8 +541,8 @@ ATT.Sights = {
         Ang = Angle(0, -0, 0),
         Magnification = 1.25,
         ViewModelFOV = 45,
-        RTScopeFOV = 57 / 4,
-        RTScopeMagnification = 4,
+        RTScopeFOV = 57 / 3,
+        RTScopeMagnification = 3,
 
         SwayAddSights = sway_mid,
     },
@@ -555,7 +555,6 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 2
-ATT.RTScopeFOV = 57 / 4
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/elca.png", "mips smooth")
 ATT.RTScopeReticleScale = 1.0
 ATT.RTScopeColorable = true
@@ -1079,7 +1078,7 @@ ATT.Category = "uplp_optic_big"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Scale = 0.975
 
-table.Merge(ATT, stats_midbig)
+table.Merge(ATT, stats_mid)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_pso_rail")
 
@@ -1092,7 +1091,7 @@ ATT.PrintName = "D-1 Red Dot" -- Aimpoint T1 Red Dot - Low Profile
 ATT.CompactName = "D-1"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 1.8
 
 ATT.ActivateElements = {"uplp_optic_used"}
@@ -1143,7 +1142,7 @@ ATT.PrintName = "D-1 Red Dot w. Riser" -- Aimpoint T1 Red Dot - High Profile
 ATT.CompactName = "D-1 R"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 10
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_tall"}
@@ -1199,7 +1198,7 @@ ATT.PrintName = "Pistol Red Dot" -- Tactical Red Dot
 ATT.CompactName = "Pistol"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 1
 
 ATT.ActivateElements = {"uplp_optic_used"}
@@ -1347,7 +1346,7 @@ ATT.PrintName = "XW Red Dot" -- RMR Sight - Low Profile
 ATT.CompactName = "XW"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 0.91
 
 ATT.ActivateElements = {"uplp_optic_used"}
@@ -1400,7 +1399,7 @@ ATT.PrintName = "XW Red Dot w. Riser" -- RMR Sight - High Profile
 ATT.CompactName = "XW R"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 9
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_optic_tall"}
@@ -1500,12 +1499,12 @@ ARC9.LoadAttachment(ATT, "uplp_optic_genericrds")
 
 ATT = {}
 
-ATT.PrintName = "3× Military Scope" -- IMI X3 Scope
-ATT.CompactName = "3× Military"
+ATT.PrintName = "2.5× Military Scope" -- IMI X3 Scope
+ATT.CompactName = "2.5× Military"
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
-ATT.SortOrder = 3
+ATT.SortOrder = 2.5
 
 ATT.ActivateElements = {"uplp_optic_used"}
 ATT.ExcludeElements = {"uplp_shortopticonly"}
@@ -1522,7 +1521,7 @@ ATT.Sights = {
         Magnification = 1.25,
         ViewModelFOV = 45,
         RTScopeFOV = 57 / 3,
-        RTScopeMagnification = 3,
+        RTScopeMagnification = 2.5,
 
         SwayAddSights = sway_mid,
     }
@@ -2214,7 +2213,7 @@ ATT.CompactName = "500S M."
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
-ATT.SortOrder = 2
+ATT.SortOrder = 1.5 + .02
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
 
@@ -2272,7 +2271,7 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeMagnification = 3
+ATT.RTScopeMagnification = 1.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.6
 ATT.RTScopeColorable = true
@@ -2301,7 +2300,7 @@ ATT.CompactName = "10S M."
 ATT.Description = ATT.PrintName
 
 ATT.Folder = "2 - 6×"
-ATT.SortOrder = 2
+ATT.SortOrder = 1.5 + .01
 
 ATT.ActivateElements = {"uplp_optic_used", "uplp_no_backup"}
 
@@ -2359,7 +2358,7 @@ end
 
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 3
-ATT.RTScopeMagnification = 3
+ATT.RTScopeMagnification = 1.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/holo2rt.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.6
 ATT.RTScopeColorable = true
@@ -2580,7 +2579,6 @@ ATT.Sights = {
         Blur = true,
         ViewModelFOV = 57,
         NoSensAdjustment = true,
-        RTScopeMagnification = 4,
 
         SwayAddSights = sway_cqc,
     },
@@ -2592,7 +2590,6 @@ ATT.Sights = {
         Blue = false,
 
         SwayAddSights = sway_mag,
-        RTScopeMagnification = 4,
 		CantPeek = true,
     },
 }
@@ -2618,7 +2615,7 @@ end
 ATT.RTScope = true
 ATT.RTScopeSubmatIndex = 4
 ATT.RTScopeFOV = 5 -- idk 
-ATT.RTScopeMagnification = 4
+ATT.RTScopeMagnification = 1.5
 ATT.RTScopeReticle = Material("vgui/uplp_reticles/devo.png", "mips smooth")
 ATT.RTScopeReticleScale = 0.9
 ATT.RTScopeColorable = false
@@ -3090,7 +3087,7 @@ ATT.PrintName = "Type 7"
 ATT.CompactName = "Type 7"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 2
 
 ATT.ActivateElements = {"uplp_optic_used"}
@@ -3135,7 +3132,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(0.2, 0, -0.1)
 ATT.Scale = 1.05
 
-table.Merge(ATT, stats_cqc)
+table.Merge(ATT, stats_small)
 
 ARC9.LoadAttachment(ATT, "uplp_optic_rsa")
 
@@ -3319,7 +3316,7 @@ ATT.PrintName = "SRo"
 ATT.CompactName = "SRo"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 1.2
 
 ATT.ActivateElements = {"uplp_optic_used"}
@@ -3421,7 +3418,7 @@ ATT.PrintName = "Just"
 ATT.CompactName = "Just"
 ATT.Description = ATT.PrintName
 
-ATT.Folder = "Compact"
+ATT.Folder = "1× Compact"
 ATT.SortOrder = 0.9
 
 ATT.ActivateElements = {"uplp_optic_used"}

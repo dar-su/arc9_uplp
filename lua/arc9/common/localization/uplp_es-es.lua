@@ -277,15 +277,15 @@ L["uplp_optic_compm4.description"] = "Mira reflex de origen sueco con diseño ci
 
 L["uplp_optic_dcl110.printname"] = "Mira Reflex para Ametralladora con Magnificador"
 L["uplp_optic_dcl110.compactname"] = "MG RS"
-L["uplp_optic_dcl110.description"] = "Mirilla réflex grande y voluminosa con magnificador incorporado destinada a ametralladoras." .. desc_magoptic
+L["uplp_optic_dcl110.description"] = "Mirilla réflex grande y voluminosa con magnificador incorporado destinada a ametralladoras." .. desc_midbigoptic
 
-L["uplp_optic_acog.printname"] = "Visor 4× NCOG-4"
-L["uplp_optic_acog.compactname"] = "4× NCOG-4"
+L["uplp_optic_acog.printname"] = "Visor 3.5× NCOG-4"
+L["uplp_optic_acog.compactname"] = "3.5× NCOG-4"
 L["uplp_optic_acog.description"] = "Óptica de combate de calidad militar de origen americano con 4 aumentos. Viene con <color=100,255,100>miras de hierro de reserva</color>." .. desc_midoptic
 
-L["uplp_optic_elcan.printname"] = "Visor de Combate 4x"
-L["uplp_optic_elcan.compactname"] = "4× Combate"
-L["uplp_optic_elcan.description"] = "Óptica de combate de calidad militar de origen americano con 4 aumentos." .. desc_midoptic
+L["uplp_optic_elcan.printname"] = "Visor de Combate 3x"
+L["uplp_optic_elcan.compactname"] = "3× Combate"
+L["uplp_optic_elcan.description"] = "Óptica de combate de calidad militar de origen americano con 3 aumentos." .. desc_midoptic
 
 L["uplp_optic_bigass.printname"] = "Visor con Zoom Variable 8-16× y Telémetro"
 L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
@@ -327,9 +327,9 @@ L["uplp_optic_genericrds.printname"] = "Punto Rojo HawkEye Precision"
 L["uplp_optic_genericrds.compactname"] = "HawkEye"
 -- L["uplp_optic_genericrds.description"] = "A classic red dot sight that has been cloned and copied ever since its introduction." .. desc_cqcoptic -- NEW
 
-L["uplp_optic_notacog.printname"] = "Visor Militar 3x"
-L["uplp_optic_notacog.compactname"] = "3× Militar"
-L["uplp_optic_notacog.description"] = "Robusto visor militar de origen israelí con 3 aumentos." .. desc_midoptic
+L["uplp_optic_notacog.printname"] = "Visor Militar 2.5x"
+L["uplp_optic_notacog.compactname"] = "2.5× Militar"
+L["uplp_optic_notacog.description"] = "Robusto visor militar de origen israelí con 2.5× aumentos." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Visor de Competición"
 L["uplp_optic_compm1.compactname"] = "Comp."
