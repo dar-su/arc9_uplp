@@ -276,9 +276,9 @@ local pathUTREAL = ")uplp_rz/aug/"
 local pathUTC = ")uplp_urban_temp/common/"
 
 SWEP.ShootSound = {
-    pathUT .. "fire-01.wav",
-    pathUT .. "fire-02.wav",
-    pathUT .. "fire-03.wav",
+    pathUTREAL .. "fire-01.wav",
+    pathUTREAL .. "fire-02.wav",
+    pathUTREAL .. "fire-03.wav",
 }
 
 SWEP.ShootSoundSilenced = {
@@ -323,6 +323,10 @@ SWEP.DropMagazineSounds = {
     pathUTC .. "rifle_magdrop.ogg",
 }
 
+SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
+
+SWEP.TriggerUpSound = {pathUT .. "trigger2.wav"}
+
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -356,10 +360,9 @@ SWEP.ReloadHideBoneTables = {
 }
 
 local mechh = {
-    pathUT .. "mech-01.wav",
-    pathUT .. "mech-02.wav",
-    pathUT .. "mech-03.wav",
-    pathUT .. "mech-04.wav",
+    pathUTREAL .. "mech-01.wav",
+    pathUTREAL .. "mech-02.wav",
+    pathUTREAL .. "mech-03.wav",
 }
 
 local mechh45 = {
@@ -477,7 +480,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
-            { s = pathUTREAL .. "bonk.ogg", t = 6 / 30, v = 0.6 },
+            { s = pathUTREAL .. "bonk.ogg", t = 7 / 30, v = 0.6 },
             { s = pathUTREAL .. "magout.ogg", t = 6 / 30 },
             { s = pathUTREAL .. "struggle.ogg", t = 20 / 30 },
             { s = pathUTREAL .. "magin.ogg", t = 22 / 30 },
@@ -505,12 +508,12 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "magpouch.ogg", t = 4 / 30, v = 0.4 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 0, v = 0.8 },
-            { s = pathUTREAL .. "bonk.ogg", t = 6 / 30, v = 0.6 },
+            { s = pathUTREAL .. "bonk.ogg", t = 7 / 30, v = 0.6 },
             { s = pathUTREAL .. "magout.ogg", t = 6 / 30 },
             { s = pathUTREAL .. "struggle.ogg", t = 20 / 30 },
             { s = pathUTREAL .. "magin.ogg", t = 22 / 30 },
             { s = pathUTC .. "cloth_1.ogg", t = 25 / 30, v = 0.8 },
-            { s = pathUTREAL .. "boltforward.ogg", t = 38 / 30 },
+            { s = pathUTREAL .. "boltforward.ogg", t = 36 / 30 },
             { s = pathUTC .. "cloth_4.ogg", t = 47 / 30, v = 0.3 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 50 / 30, v = 0.3 },
 
