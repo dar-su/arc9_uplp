@@ -1523,6 +1523,9 @@ L["uplp_ar15_reciever_m16a3.description"] = "Militär grad låda med inbyggt bä
 L["uplp_ar15_reciever_a2.printname"] = "A2-Låda med Bärhandtag"
 L["uplp_ar15_reciever_a2.compactname"] = "A2-BH"
 
+L["uplp_ar15_reciever_a2_burst.printname"] = "A2 Receiver with Carry Handle (Burst)"
+L["uplp_ar15_reciever_a2_burst.compactname"] = "A2 CH (B)"
+
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Bakre Sikte"
 L["uplp_ar15_rs_m4.compactname"] = "M4 BS"

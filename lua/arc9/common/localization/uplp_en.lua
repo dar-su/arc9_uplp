@@ -1556,6 +1556,10 @@ L["uplp_ar15_reciever_a2.printname"] = "A2 Receiver with Carry Handle"
 L["uplp_ar15_reciever_a2.compactname"] = "A2 CH"
 L["uplp_ar15_reciever_a2.description"] = ARC9:GetPhrase("uplp_ar15_reciever_m16a3.description") or "Military-grade receiver with built-in carrying handle.\nPurely <color=160,160,255>cosmetic</color>."
 
+L["uplp_ar15_reciever_a2_burst.printname"] = "A2 Receiver with Carry Handle (Burst)"
+L["uplp_ar15_reciever_a2_burst.compactname"] = "A2 CH (B)"
+L["uplp_ar15_reciever_a2_burst.description"] = ARC9:GetPhrase("uplp_ar15_reciever_m16.description") or "Military-grade receiver with built-in carrying handle.\nChanges firing mode to <color=100,255,100>3-round burst</color>/<color=100,255,100>semi-automatic</color>."
+
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 Rear Sight"
 L["uplp_ar15_rs_m4.compactname"] = "M4 RS"
@@ -2289,7 +2293,7 @@ L["uplp_m9_mag_20.description"] = "Aftermarket 20-round extended mags for the PM
 
 //////////////////// ORSIS 12.7
 L["uplp_weapon_orsis"] = "Gryphon X108"
-L["uplp_weapon_orsis_desc"] = "The Gryphon X108 is the latest and most powerful precision rifle out of Russia in modern times. X108 is chambered for the powerful 12.7×108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
+L["uplp_weapon_orsis_desc"] = "The Gryphon X108 is the latest and most powerful precision rifle out of Russia in modern times. The X108 is chambered for the powerful 12.7×108mm cartridge making it very effective against light to medium armored vehicles and especially soft targets."
 
 L["uplp_weapon_orsis_real"] = "ORSIS 12.7"
 
@@ -2468,7 +2472,7 @@ L["uplp_aug_stock_black.description"] = "Changes the appearance of the AW-UG sto
 
 //////////////////// RSh-12
 L["uplp_weapon_rsh12"] = "RZ 12.7"
-L["uplp_weapon_rsh12_desc"] = "The RZ 12.7 (Russian: Разрушитель запястий | Razrushitel' zapyastiy, \"Wrist Destroyer\"),  is a very powerful Russian revolver firing the very large 12.7×55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"."
+L["uplp_weapon_rsh12_desc"] = "The RZ 12.7 (Russian: Разрушитель запястий | Razrushitel' zapyastiy, \"Wrist Destroyer\"), is a very powerful Russian revolver firing the very large 12.7×55mm cartridge. Even when it fires from the bottom chamber of the cylinder unlike most revolvers, it is reported that the recoil has the tendency of ruining the wrists of its users, hense it getting the nickname \"Wrist Destroyer\"."
 
 L["uplp_weapon_rsh12_real"] = "RSh-12"
 
@@ -2750,7 +2754,7 @@ L["uplp_mac_muz_supp_surv.description"] = "Large suppressor intended for use on 
 ////// Stocks
 L["uplp_mac_stock_wire.printname"] = "Foldable Wire Stock"
 L["uplp_mac_stock_wire.compactname"] = "Foldable"
-L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380"
+L["uplp_mac_stock_wire.description"] = "Foldable wire stock for the CMP .380."
 
 L["uplp_mac_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
 L["uplp_mac_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "Buffer"
@@ -2933,9 +2937,9 @@ L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal Pump Handle"
 L["uplp_r870_handle_flash.compactname"] = "ApexCore"
 L["uplp_r870_handle_flash.description"] = "Custom pump handle with built-in flashlight made by ApexCore Arsenal."
 
-L["uplp_r870_handle_magpul.printname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.printname")
-L["uplp_r870_handle_magpul.compactname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.compactname")
-L["uplp_r870_handle_magpul.description"] = ARC9:GetPhrase("uplp_m590_handle_magpul.description")
+L["uplp_r870_handle_magpul.printname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.printname") or "SynPoly Pump Handle"
+L["uplp_r870_handle_magpul.compactname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.compactname") or "SynPoly"
+L["uplp_r870_handle_magpul.description"] = ARC9:GetPhrase("uplp_m590_handle_magpul.description") or "Tactical pump handle from SynPoly."
 
 ////// Magazines
 L["uplp_r870_mag_6.printname"] = "6-R Detachable Magazine"
@@ -2949,14 +2953,14 @@ L["uplp_r870_stock_short.description"] = "Sawing off the stock off of the Wingma
 
 L["uplp_r870_stock_short_wood.printname"] = "Cut-Off Wooden Stock"
 L["uplp_r870_stock_short_wood.compactname"] = "C.O. (W)"
-L["uplp_r870_stock_short_wood.description"] = ARC9:GetPhrase("uplp_r870_stock_short.description")
+L["uplp_r870_stock_short_wood.description"] = ARC9:GetPhrase("uplp_r870_stock_short.description") or "Sawing off the stock off of the Wingmaster 12G improves maneuverability at the cost of recoil control."
 
 L["uplp_r870_stock_poly.printname"] = "Polymer Stock"
 L["uplp_r870_stock_poly.compactname"] = "Polymer"
 L["uplp_r870_stock_poly.description"] = "Modernized polymer stock for the Wingmaster 12G."
 
 L["uplp_r870_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly Stock"
-L["uplp_r870_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly"
+L["uplp_r870_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.compactname") or "SynPoly"
 L["uplp_r870_stock_magpul.description"] = "Reinforced tactical stock for the Wingmaster 12G."
 
 L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "Buffer Tube"
@@ -3459,8 +3463,6 @@ L["uplp_sr25_muz_m110.description"] = "Factory-made suppressor for the LRR-30 (\
 L["uplp_sr25_rstroy.printname"] = "Home Defence M-22 Rear Sight"
 L["uplp_sr25_rstroy.compactname"] = "M-22"
 L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>IronWorks | Type II | Type III</color> ]\nAlso compatible with the <color=100,255,100>Gas Block with Built-in Front Sight</color>."
--- ↨Whichever of these is correct ↨
-L["uplp_sr25_rstroy.description"] = "Aftermarket rear sight made by Home Defence for AR-10 rifles.\nOnly compatible with the following front sights:\n[ <color=100,255,100>PAWCO | Type I | Standard (XAR)</color> ]\nNot compatible with the <color=255,100,100>Gas Block with Built-in Front Sight</color>."
 
 L["uplp_sr25_fstroy.printname"] = "Home Defence M-22 Front Sight"
 L["uplp_sr25_fstroy.compactname"] = "M-22"

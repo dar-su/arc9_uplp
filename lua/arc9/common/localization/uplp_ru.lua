@@ -1518,11 +1518,14 @@ L["uplp_ar15_reciever_modern_black_smg.compactname"] = "Hoki (Чёрн, 9×19)"
 L["uplp_ar15_reciever_modern_black_smg.description"] = "Лёгкий тактический ресивер для AR-15 под патрон 9×19 мм производства Hoki Armory." .. pitchblack
 
 L["uplp_ar15_reciever_m16a3.printname"] = "Ресивер A1 с рукояткой переноски"
-L["uplp_ar15_reciever_m16a3.compactname"] = "A1 CH"
+L["uplp_ar15_reciever_m16a3.compactname"] = "A1 CH (К)"
 L["uplp_ar15_reciever_m16a3.description"] = "Военный ресивер с интегрированной рукояткой переноски.\nЧисто <color=160,160,255>косметический обвес</color>."
 
 L["uplp_ar15_reciever_a2.printname"] = "Ресивер A2 с рукояткой переноски"
 L["uplp_ar15_reciever_a2.compactname"] = "A2 CH"
+
+L["uplp_ar15_reciever_a2_burst.printname"] = "Ресивер A2 с рукояткой переноски (Burst)"
+L["uplp_ar15_reciever_a2_burst.compactname"] = "A2 CH (К)"
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "Целик M4"

@@ -12,13 +12,16 @@ SWEP.Slot = 3 -- Which slot the weapon is in; starts at 0
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_mjolnir")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_mjolnir_desc")
 
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_mjolnir")
+SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_mjolnir_desc")
+
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_dmr") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sniper") -- In the Spawnmenu
 
 SWEP.UPLP_Class = "dmr"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mjolnir_real"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mjolnir"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_mjolnir_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_.338"),

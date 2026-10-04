@@ -11,6 +11,9 @@ SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_mp7")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_mp7_desc")
 
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_mp7")
+SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_mp7_desc")
+
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_smg") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_smg") -- In the Spawnmenu
 

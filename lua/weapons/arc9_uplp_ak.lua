@@ -11,13 +11,16 @@ SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ak_def")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ak_desc")
 
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_ak")
+SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_ak_desc")
+
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_ar") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 
 SWEP.UPLP_Class = "ar"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ak_real"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ak"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_ak_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x39mm"),
@@ -1617,6 +1620,38 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
+	local defname, names
+	local tn = ARC9:UseTrueNames() and "_true" or ""
+
+	if tn then -- This shit is making me wanna jump off a building
+		if att["uplp_ak_brl_rpk"] then
+			defname = ARC9:GetPhrase("uplp_weapon_true_ak_rpk")
+		else
+			defname = ARC9:GetPhrase("uplp_weapon_true_ak_def")
+		end
+	
+		-- Calibres
+		if att["uplp_ak_calib_545"] then
+			cal = ARC9:GetPhrase("uplp_weapon_true_ak_545")
+		elseif att["uplp_ak_calib_556"] then
+			cal = ARC9:GetPhrase("uplp_weapon_true_ak_556")
+		elseif att["uplp_ak_calib_939"] then
+			cal = ARC9:GetPhrase("uplp_weapon_true_ak_9x39")
+		else
+			cal = ARC9:GetPhrase("uplp_weapon_true_ak_762")
+		end
+
+		name = string.format( cal, defname )
+
+		-- If 5.45 and Short
+		if att["uplp_ak_calib_545"] and att["uplp_ak_brl_su"] then
+			names = ARC9:GetPhrase("uplp_weapon_true_ak_74u")
+		else
+			names = name
+		end
+
+		return names
+	end
 
     -- Default Name (If RPK name or not)
     if att["uplp_ak_brl_rpk"] then
@@ -1644,6 +1679,8 @@ SWEP.HookP_NameChange = function(self, name)
     else
         names = name
     end
+
+	
 
     return names
 end

@@ -11,13 +11,16 @@ SWEP.Slot = 1 -- Which slot the weapon is in; starts at 0
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_1911")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_1911_desc")
 
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_1911")
+SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_1911_desc")
+
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_pistol") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_pistol") -- In the Spawnmenu
 
 SWEP.UPLP_Class = "pist"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_1911_real"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_1911"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_1911_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_45acp"),
@@ -1099,20 +1102,23 @@ end
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
+	local tn = ARC9:UseTrueNames() and "_true" or ""
 
     if att["uplp_1911_grip_alyx"] and att["uplp_1911_slide_alyx"] and att["uplp_1911_mb_alyx"] then
-        name = ARC9:GetPhrase("uplp_weapon_1911_alyx")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_1911_alyx")
     elseif att["uplp_1911_slide_hardballer"] and att["uplp_1911_frame_silver"] then
-        name = ARC9:GetPhrase("uplp_weapon_1911_hardballer")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_1911_hardballer")
     elseif att["uplp_1911_slide_shotgun"] then
-        name = ARC9:GetPhrase("uplp_weapon_1911_sg")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_1911_sg")
     elseif (att["uplp_1911_slide_m45a1"] or att["uplp_1911_slide_m45a1fde"]) and (att["uplp_1911_frame_m45a1"] or att["uplp_1911_frame_m45a1fde"])  then
-        name = ARC9:GetPhrase("uplp_weapon_1911_usmc")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_1911_usmc")
     end
 
     if att["uplp_1911_frame_auto"] then
         name = name .. ARC9:GetPhrase("uplp_weapon_1911_auto")
     end
-    
+
+	print(name)
+	
     return name
 end

@@ -9,13 +9,16 @@ SWEP.Category = "ARC9 - Poly Arms"
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_r870")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_r870_desc")
 
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_r870")
+SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_r870_desc")
+
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_shotgun") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_shotgun") -- In the Spawnmenu
 
 SWEP.UPLP_Class = "sg"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_r870_real"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_r870"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_r870_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_12gauge"),

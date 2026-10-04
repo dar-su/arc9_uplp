@@ -1523,6 +1523,9 @@ L["uplp_ar15_reciever_m16a3.description"] = "Receptor de grado militar con asa d
 L["uplp_ar15_reciever_a2.printname"] = "Receptor A2 con Asa de Transporte"
 L["uplp_ar15_reciever_a2.compactname"] = "A2 AT"
 
+L["uplp_ar15_reciever_a2_burst.printname"] = "Receptor A2 con Asa de Transporte (Burst)"
+L["uplp_ar15_reciever_a2_burst.compactname"] = "A2 AT (B)"
+
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "Mira Trasera M4"
 L["uplp_ar15_rs_m4.compactname"] = "M4 MT"

@@ -11,13 +11,16 @@ SWEP.Slot = 2 -- Which slot the weapon is in; starts at 0
 SWEP.PrintName = ARC9:GetPhrase("uplp_weapon_ar57")
 SWEP.Description = ARC9:GetPhrase("uplp_weapon_ar57_desc")
 
+SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_ar57")
+SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_ar57_desc")
+
 SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_smg") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_smg") -- In the Spawnmenu
 
 SWEP.UPLP_Class = "smg"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ar57_real"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ar57"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_ar57_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.7x28mm"),
