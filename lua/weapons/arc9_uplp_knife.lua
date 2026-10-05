@@ -20,7 +20,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_utils") -- In the Spawnm
 SWEP.UPLP_Class = "melee"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_knife"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_knife_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_knife_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_country" ) ] = ARC9:GetPhrase( "uplp_country_usa" ),

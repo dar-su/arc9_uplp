@@ -20,7 +20,7 @@ SWEP.SaveBase = "arc9_uplp_ak12_new"
 SWEP.UPLP_Class = "ar"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ak12"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ak12_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_ak_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.45x39mm"),
@@ -94,6 +94,7 @@ end
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
+	local tn = ARC9:UseTrueNames() and "_true" or ""
 
     local m2023 = att["uplp_ak_dc_12"]
     local m2022 = att["uplp_ak_dc_12_22"]
@@ -101,13 +102,13 @@ SWEP.HookP_NameChange = function(self, name)
     local m308 = att["uplp_ak_calib_308"]
 
     if m2022 then
-        name = ARC9:GetPhrase("uplp_weapon_ak12_22")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_ak12_22")
     elseif m2016 then
-        name = ARC9:GetPhrase("uplp_weapon_ak12_16")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_ak12_16")
     end
 
     if m308 then
-        name = ARC9:GetPhrase("uplp_weapon_ak12_308")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_ak12_308")
     end
 
     return name

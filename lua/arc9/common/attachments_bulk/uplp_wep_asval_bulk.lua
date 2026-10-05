@@ -198,6 +198,7 @@ ATT.Firemodes = {
 }
 
 -- Mag
+ATT.ClipSizeAdd = -10
 ATT.AimDownSightsTimeAdd = -0.05
 ATT.SprintToFireTimeAdd = -0.03
 ATT.SwayMultSights = 0.75

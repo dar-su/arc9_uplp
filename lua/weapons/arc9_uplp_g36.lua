@@ -20,7 +20,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 SWEP.UPLP_Class = "ar"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_g36"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_g36_real_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_g36_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_5.56x45mm"),
@@ -1243,14 +1243,23 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local eles = self:GetElements()
+	local tn = ARC9:UseTrueNames() and "_true" or ""
 
     if eles["uplp_g36_stock_sl8"] then
-        name = ARC9:GetPhrase("uplp_weapon_g36_sl8")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_g36_sl8")
     end
 
     if eles["uplp_g36_hg_c"] or eles["uplp_g36_hg_modern_short"] then
-        name = name .. ARC9:GetPhrase("uplp_weapon_g36_c")
+		name = string.format( ARC9:GetPhrase("uplp_weapon" .. tn .. "_g36_c"), name )
     end
+
+    if eles["uplp_g36_hg_default"] or eles["uplp_g36_hg_modern_long"] then
+		if eles["uplp_g36_mag_drum"] then
+			name = string.format( ARC9:GetPhrase("uplp_weapon" .. tn .. "_g36_mg36"), name )
+		else
+			name = string.format( ARC9:GetPhrase("uplp_weapon" .. tn .. "_g36_k"), name )
+		end
+	end
 
     return name
 end

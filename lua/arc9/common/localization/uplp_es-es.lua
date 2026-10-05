@@ -968,9 +968,9 @@ L["uplp_ak_mag_762_30_oldest.printname"] = "30 Rondas 7.62x39mm (Acero Liso)"
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (AL)"
 L["uplp_ak_mag_762_30_oldest.description"] = "Cargador de 30 balas fabricado con acero alisado. ¡Una pieza realmente antigua que sorprendentemente aún funciona! ¿Quizás deberías entregarla a un museo?" .. loaded762
 
-L["uplp_ak_mag_762_30_poly.printname"] = "30-Rondas 7.62x39mm (SynPoly)"
-L["uplp_ak_mag_762_30_poly.compactname"] ="30R 7.62 (SP)"
-L["uplp_ak_mag_762_30_poly.description"] = "SPMAG de 30 balas fabricado por SynPoly." .. loaded762
+L["uplp_ak_mag_762_30_pmag.printname"] = "30-Rondas 7.62x39mm (SynPoly)"
+L["uplp_ak_mag_762_30_pmag.compactname"] ="30R 7.62 (SP)"
+L["uplp_ak_mag_762_30_pmag.description"] = "SPMAG de 30 balas fabricado por SynPoly." .. loaded762
 
 L["uplp_ak_mag_762_30_pmagb.printname"] = "30-Rondas 7.62x39mm (Banana)"
 L["uplp_ak_mag_762_30_pmagb.compactname"] ="30R 7.62 (Ban.)"
@@ -2514,6 +2514,7 @@ L["uplp_weapon_mp5_desc"] = "El \"Persönliche Verteidigungswaffe 9 mm\" (Person
 
 L["uplp_weapon_mp5k"] = "PV-9K"
 L["uplp_weapon_mp5sd"] = "PV-9S"
+L["uplp_weapon_mp5_10mm"] = "PV-10"
 
 L["uplp_weapon_mp5_real"] = "H&K MP5"
 
@@ -3549,6 +3550,9 @@ local sr25brll = {
 -- L["uplp_weapon_g36_desc"] = "The STG-95 (\"Sturmgewehr 95\"), a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
 
 -- L["uplp_weapon_g36_sl8"] = "ZJG-98" -- "Ziviles Jagdgewehr"
+-- L["uplp_weapon_g36_c"] = "%s Compact"
+-- L["uplp_weapon_g36_k"] = "%s"
+-- L["uplp_weapon_g36_mg36"] = "MG-95" -- "Maschinengewehr"
 
 -- L["uplp_weapon_g36_real"] = "H&K G36"
 

@@ -970,9 +970,9 @@ L["uplp_ak_mag_762_30_oldest.printname"] = "30-зарядный 7.62×39мм (Г
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (ГС)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-зарядный магазин из гладкой стали. Очень старый экземпляр, который на удивление всё ещё работает! Может, вернёте его в музей?" .. loaded762
 
-L["uplp_ak_mag_762_30_poly.printname"] = "30-зарядный 7.62×39мм (SynPoly)"
-L["uplp_ak_mag_762_30_poly.compactname"] ="30R 7.62 (SP)"
-L["uplp_ak_mag_762_30_poly.description"] = "30-зарядный SPMAG производства SynPoly." .. loaded762
+L["uplp_ak_mag_762_30_pmag.printname"] = "30-зарядный 7.62×39мм (SynPoly)"
+L["uplp_ak_mag_762_30_pmag.compactname"] ="30R 7.62 (SP)"
+L["uplp_ak_mag_762_30_pmag.description"] = "30-зарядный SPMAG производства SynPoly." .. loaded762
 
 L["uplp_ak_mag_762_30_pmagb.printname"] = "30-зарядный 7.62×39мм (бананом)"
 L["uplp_ak_mag_762_30_pmagb.compactname"] ="30R 7.62 (Бан.)"
@@ -2525,6 +2525,7 @@ L["uplp_weapon_mp5_desc"] = "«Persönliche Verteidigungswaffe 9x19» (Оруж�
 
 -- L["uplp_weapon_mp5k"] = "PV-9K"
 -- L["uplp_weapon_mp5sd"] = "PV-9S"
+-- L["uplp_weapon_mp5_10mm"] = "PV-10"
 
 -- L["uplp_weapon_mp5_real"] = "H&K MP5"
 
@@ -3581,7 +3582,10 @@ L["uplp_weapon_g36"] = "STG-95"
 
 L["uplp_weapon_g36_desc"] = "STG-95 (от \"Sturmgewehr 95\") - штурмовая винтовка с возможностью выбора режима огня, известная своей модульной конструкцией и надёжностью. Поддерживает как полуавтоматический, так и автоматический режимы стрельбы. Используется различными военными и правоохранительными подразделениями по всему миру благодаря точности и универсальности в различных боевых сценариях."
 
-L["uplp_weapon_g36_sl8"] = "ZJG-98 - \"Ziviles Jagdgewehr\""
+-- L["uplp_weapon_g36_sl8"] = "ZJG-98" -- "Ziviles Jagdgewehr"
+-- L["uplp_weapon_g36_c"] = "%s Compact"
+-- L["uplp_weapon_g36_k"] = "%s"
+-- L["uplp_weapon_g36_mg36"] = "MG-95" -- "Maschinengewehr"
 
 L["uplp_weapon_g36_real"] = "H&K G36"
 

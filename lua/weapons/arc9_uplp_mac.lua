@@ -20,7 +20,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_smg") -- In the Spawnmen
 SWEP.UPLP_Class = "smg"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mac"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mac_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_mac_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_308auto"),
@@ -1152,6 +1152,9 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
-    if att["uplp_mac_mac10"] then name = ARC9:GetPhrase("uplp_weapon_mac10") end
+	local tn = ARC9:UseTrueNames() and "_true" or ""
+	
+    if att["uplp_mac_mac10"] then name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_mac10") end
+	
     return name
 end

@@ -481,9 +481,9 @@ L["uplp_ak_mag_762_30_old.truedescription"] = "30-round magazine made with good,
 L["uplp_ak_mag_762_30_old.truedescription"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
 L["uplp_ak_mag_762_30_oldest.truedescription"] = "30-round magazine made with smoothened out steel. Really old piece that surprisingly still works! Maybe you should hand it in to a museum?" .. loaded762
 
-L["uplp_ak_mag_762_30_poly.truename"] = "30-Round 7.62×39mm (SynPoly)"
-L["uplp_ak_mag_762_30_poly.truecompactname"] ="30R 7.62 (SP)"
-L["uplp_ak_mag_762_30_poly.truedescription"] = "30-round SPMAG manufactured by SynPoly." .. loaded762
+L["uplp_ak_mag_762_30_pmag.truename"] = "30-Round 7.62×39mm (Magpul)"
+L["uplp_ak_mag_762_30_pmag.truecompactname"] ="30R 7.62 (MP)"
+L["uplp_ak_mag_762_30_pmag.truedescription"] = "30-round PMAG manufactured by Magpul." .. loaded762
 
 L["uplp_ak_mag_762_30_pmagb.truedescription"] = "30-round magazine painted to look like a banana. Comes with a <color=100,255,100>free sticker</color>!" .. loaded762
 L["uplp_ak_mag_762_40.truedescription"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded762
@@ -498,9 +498,9 @@ L["uplp_ak_mag_545_30.truecompactname"] = "30R 5.45 (P)"
 L["uplp_ak_mag_545_30.truedescription"] = "30-round magazine made out of polymer." .. loaded545
 L["uplp_ak_mag_545_30_bak.truedescription"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
-L["uplp_ak_mag_545_30_pmag.truename"] = "30-Round 5.45×39mm (SynPoly)"
-L["uplp_ak_mag_545_30_pmag.truecompactname"] = "30R 5.45 (SP)"
-L["uplp_ak_mag_545_30_pmag.truedescription"] = "30-round SPMAG manufactured by SynPoly." .. loaded545
+L["uplp_ak_mag_545_30_pmag.truename"] = "30-Round 5.45×39mm (Magpul)"
+L["uplp_ak_mag_545_30_pmag.truecompactname"] = "30R 5.45 (MP)"
+L["uplp_ak_mag_545_30_pmag.truedescription"] = "30-round PMAG manufactured by Magpul." .. loaded545
 
 L["uplp_ak_mag_545_30_12.truename"] = "30-Round 5.45×39mm (AK-12 Style)"
 L["uplp_ak_mag_545_30_12.truecompactname"] = "30R 5.45 (AK-12)"
@@ -519,9 +519,9 @@ local loaded556 = loaded .. "Loaded with <color=160,160,255>5.56×45mm</color>."
 
 L["uplp_ak_mag_556_30.truedescription"] = "30-round magazine made out of polymer." .. loaded556
 
-L["uplp_ak_mag_556_30_pmag.truename"] = "30-Round 5.56×45mm (SynPoly)"
-L["uplp_ak_mag_556_30_pmag.truecompactname"] = "30R 5.56 (SP)"
-L["uplp_ak_mag_556_30_pmag.truedescription"] = "30-round SPMAG manufactured by SynPoly." .. loaded556
+L["uplp_ak_mag_556_30_pmag.truename"] = "30-Round 5.56×45mm (Magpul)"
+L["uplp_ak_mag_556_30_pmag.truecompactname"] = "30R 5.56 (MP)"
+L["uplp_ak_mag_556_30_pmag.truedescription"] = "30-round PMAG manufactured by Magpul." .. loaded556
 
 L["uplp_ak_mag_556_30_12.truename"] = "30-Round 5.56×45mm (AK-12 Style)"
 L["uplp_ak_mag_556_30_12.truecompactname"] = "30R 5.56 (AK-12)"
@@ -933,7 +933,7 @@ L["uplp_sg_mz_vepr.truedescription"] = "Standard choke for the Molot Vepr-12 sho
 
 //////////////////// AW Sniper
 L["uplp_weapon_true_awp"] = "AI AW"
-L["uplp_weapon_true_awp_desc"] = "The Arctic Warfare Arctic Warfare rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
+L["uplp_weapon_true_awp_desc"] = "The Accuracy International Arctic Warfare rifle is a renowned bolt-action sniper rifle recognized for its exceptional accuracy and reliability. It has been used by military and law enforcement agencies worldwide and is designed to perform effectively in extreme cold weather conditions, showcasing its robust construction and precision engineering."
 
 L["uplp_weapon_true_awp_atx"] = "AI AT-CX"
 
@@ -1019,7 +1019,7 @@ L["uplp_mp7_grip_folded.truedescription"] = "Folds the MP7's grip."
 
 //////////////////// SCAR
 L["uplp_weapon_true_scar"] = "FN SCAR"
-L["uplp_weapon_true_scar_desc"] = "The XAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
+L["uplp_weapon_true_scar_desc"] = "The FN SCAR is a modular and versatile assault rifle designed for use by special forces and military units. It is known for its ability to quickly adapt to different mission requirements through interchangeable barrels and components, making it a reliable choice for a wide range of combat scenarios."
 
 L["uplp_weapon_true_scar_heavy"] = "FN SCAR-H"
 L["uplp_weapon_true_scar_light"] = "FN SCAR-L"
@@ -1100,7 +1100,7 @@ L["uplp_weapon_true_m9_desc"] = "The Beretta M92FS is a semi-automatic 9mm handg
 
 L["uplp_weapon_true_m9_raffica"] = "Beretta 93R"
 L["uplp_weapon_true_m9_a3"] = "Beretta M9A3"
-L["uplp_weapon_true_m9_sc"] = "Beretta M9 Sword Cutlass"
+L["uplp_weapon_true_m9_sc"] = "Beretta M9 \"Sword Cutlass\""
 L["uplp_weapon_true_m9_robocop"] = "Auto 9"
 
 /////////// Attachments
@@ -1274,7 +1274,7 @@ L["uplp_weapon_true_mp5_10mm"] = "H&K MP5/10"
 
 /////////// Attachments
 ////// Barrel
-L["uplp_mp5_bar_sd.truedescription"] = "Modified 146mm (5.7\") barrel with built-in suppressor, converting the MP5 to the MP5S."
+L["uplp_mp5_bar_sd.truedescription"] = "Modified 146mm (5.7\") barrel with built-in suppressor, converting the MP5 to the MP5SD."
 L["uplp_mp5_bar_kurz.truedescription"] = "Shortened 114mm (4.5\") Kurz barrel, converting the MP5 to the MP5K."
 
 ////// Stocks
@@ -1355,41 +1355,41 @@ L["uplp_fal_scope_suit.truecompactname"] = "SUIT"
 L["uplp_fal_scope_suit.truedescription"] = "The \"Sight Unit Infantry Trilux\" optic provides excellent target acquisition."
 
 //////////////////// Mac-10
-L["uplp_weapon_true_mac"] = "MAC-11"
-L["uplp_weapon_true_mac_desc"] = "The MAC-11 is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
+L["uplp_weapon_true_mac"] = "MAC-10"
+L["uplp_weapon_true_mac_desc"] = "The MAC-10 is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
 
-L["uplp_weapon_true_mac10"] = "MAC-10"
+L["uplp_weapon_true_mac10"] = "MAC-11"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mac_bar_long.truedescription"] = "Longer barrel for the MAC-11. Also equipped with a protective heat shield."
+L["uplp_mac_bar_long.truedescription"] = "Longer barrel for the MAC-10. Also equipped with a protective heat shield."
 
 ////// Muzzles
-L["uplp_mac_muz_supp.truename"] = "MAC-11 Suppressor"
+L["uplp_mac_muz_supp.truename"] = "MAC-10 Suppressor"
 L["uplp_mac_muz_supp.truecompactname"] = "MAC"
-L["uplp_mac_muz_supp.truedescription"] = "Large suppressor intended for use on the MAC-11."
+L["uplp_mac_muz_supp.truedescription"] = "Large suppressor intended for use on the MAC-10."
 
-L["uplp_mac_muz_supptac.truedescription"] = "Compact but effective suppressor made by Centurion Industries. Intended for the MAC-11."
+L["uplp_mac_muz_supptac.truedescription"] = "Compact but effective suppressor made by Centurion Industries. Intended for the MAC-10."
 
-L["uplp_mac_muz_supp_surv.truename"] = "MAC-11 Suppressor with Flashlight"
+L["uplp_mac_muz_supp_surv.truename"] = "MAC-10 Suppressor with Flashlight"
 L["uplp_mac_muz_supp_surv.truecompactname"] = "MAC (F)"
-L["uplp_mac_muz_supp_surv.truedescription"] = "Large suppressor intended for use on the MAC-11.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
+L["uplp_mac_muz_supp_surv.truedescription"] = "Large suppressor intended for use on the MAC-10.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
 
 ////// Stocks
-L["uplp_mac_stock_wire.truedescription"] = "Foldable wire stock for the MAC-11."
+L["uplp_mac_stock_wire.truedescription"] = "Foldable wire stock for the MAC-10."
 
 -- L["uplp_mac_stock_tac.truename"] = "Centurion Industries IronWorks Stock"
 -- L["uplp_mac_stock_tac.truecompactname"] = "IronWorks"
 -- L["uplp_mac_stock_tac.truedescription"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
 
 ////// Magazines
-L["uplp_mac_mag10_30.truedescription"] = "Converts the MAC-11 into the larger M-11, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
-L["uplp_mac_mag10_50.truedescription"] = "Converts the MAC-11 into the larger M-11, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
-L["uplp_mac_mag_50.truedescription"] = "Extended 50-round magazine for the MAC-11."
+L["uplp_mac_mag10_30.truedescription"] = "Converts the MAC-10 into the larger MAC-11, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
+L["uplp_mac_mag10_50.truedescription"] = "Converts the MAC-10 into the larger MAC-11, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
+L["uplp_mac_mag_50.truedescription"] = "Extended 50-round magazine for the MAC-10."
 
 // Grips
-L["uplp_mac_strap.truename"] = "MAC-11 Front Strap"
-L["uplp_mac_strap_cosmetic.truename"] = "MAC-11 Front Strap (Cosmetic Only)"
+L["uplp_mac_strap.truename"] = "MAC-10 Front Strap"
+L["uplp_mac_strap_cosmetic.truename"] = "MAC-10 Front Strap (Cosmetic Only)"
 
 // Receivers
 -- L["uplp_mac_rec_long.truename"] = "Ironclad Arms Receiver"
@@ -1531,7 +1531,7 @@ L["uplp_mp9_skin_white.truedescription"] = "Tactical white variant of the B&T MP
 L["uplp_weapon_true_pkm"] = "PK"
 L["uplp_weapon_true_pkm_desc"] = "Kalashnikov's machine gun (Russian: Пулемёт Калашникова | Pulemyot Kalashnikova) is a reliable, belt-fed weapon known for its durability and accuracy. It has been used in various conflicts, providing support fire with impressive range and power."
 
-L["uplp_weapon_true_pkm_pkp"] = "PKM"
+L["uplp_weapon_true_pkm_pkp"] = "PKP Pecheneg"
 L["uplp_weapon_true_pkm_bp"] = "PK Bullpup"
 
 /////////// Attachments
@@ -1746,7 +1746,9 @@ L["uplp_weapon_true_g36"] = "H&K G36"
 L["uplp_weapon_true_g36_desc"] = "The H&K G36 (\"Gewehr 36\"), a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
 
 L["uplp_weapon_true_g36_sl8"] = "H&K SL8"
-L["uplp_weapon_true_g36_c"] = "C"
+L["uplp_weapon_true_g36_c"] = "%sC"
+L["uplp_weapon_true_g36_k"] = "%sK"
+L["uplp_weapon_true_g36_mg36"] = "H&K MG36"
 
 /////////// Attachments
 ////// Stocks
@@ -1790,9 +1792,9 @@ L["uplp_g36_hg_c.truename"] = "H&K G36C Frontend"
 L["uplp_g36_hg_c.truecompactname"] = "G36C"
 L["uplp_g36_hg_c.truedescription"] = "228mm (9\") barrel and handguard from the H&K G36C."
 
-L["uplp_g36_hg_default.truename"] = "G36 Frontend"
-L["uplp_g36_hg_default.truecompactname"] = "G36"
-L["uplp_g36_hg_default.truedescription"] = "480mm (18.9\") barrel and handguard from the H&K G36."
+L["uplp_g36_hg_default.truename"] = "H&K G36K Frontend"
+L["uplp_g36_hg_default.truecompactname"] = "G36K"
+L["uplp_g36_hg_default.truedescription"] = "480mm (18.9\") barrel and handguard from the H&K G36K."
 
 L["uplp_g36_hg_sl8.truename"] = "SL8 Frontend"
 L["uplp_g36_hg_sl8.truecompactname"] = "SL8"

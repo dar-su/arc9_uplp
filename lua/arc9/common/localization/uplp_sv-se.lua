@@ -968,9 +968,9 @@ L["uplp_ak_mag_762_30_oldest.printname"] = "30-Patroner 7,62 × 39 mm (Utjämnad
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30P 7,62 (US)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-patronersmagasin gjorda utav utjämnad stål. Riktigt gammal grej som faktiskt fortfarande fungerar! Du kanske borde lämna in den till ett museum?" .. loaded762
 
-L["uplp_ak_mag_762_30_poly.printname"] = "30-Patroner 7,62 × 39 mm (SynPoly)"
-L["uplp_ak_mag_762_30_poly.compactname"] ="30P 7,62 (SP)"
-L["uplp_ak_mag_762_30_poly.description"] = "30-patroners SPMAG tillverkad av SynPoly." .. loaded762
+L["uplp_ak_mag_762_30_pmag.printname"] = "30-Patroner 7,62 × 39 mm (SynPoly)"
+L["uplp_ak_mag_762_30_pmag.compactname"] ="30P 7,62 (SP)"
+L["uplp_ak_mag_762_30_pmag.description"] = "30-patroners SPMAG tillverkad av SynPoly." .. loaded762
 
 L["uplp_ak_mag_762_30_pmagb.printname"] = "30-Patroner 7,62 × 39 mm (Banan)"
 L["uplp_ak_mag_762_30_pmagb.compactname"] ="30P 7,62 (Ban.)"
@@ -2525,6 +2525,7 @@ L["uplp_weapon_mp5_desc"] = "\"Persönliche Verteidigungswaffe 9 mm\" (Personlig
 
 L["uplp_weapon_mp5k"] = "PV-9K"
 L["uplp_weapon_mp5sd"] = "PV-9S"
+L["uplp_weapon_mp5_10mm"] = "PV-10"
 
 L["uplp_weapon_mp5_real"] = "H&K MP5"
 
@@ -3560,6 +3561,9 @@ local sr25brll = {
 -- L["uplp_weapon_g36_desc"] = "The STG-95 (\"Sturmgewehr 95\"), a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
 
 -- L["uplp_weapon_g36_sl8"] = "ZJG-98" -- "Ziviles Jagdgewehr"
+-- L["uplp_weapon_g36_c"] = "%s Compact"
+-- L["uplp_weapon_g36_k"] = "%s"
+-- L["uplp_weapon_g36_mg36"] = "MG-95" -- "Maschinengewehr"
 
 -- L["uplp_weapon_g36_real"] = "H&K G36"
 

@@ -994,9 +994,9 @@ L["uplp_ak_mag_762_30_oldest.printname"] = "30-Round 7.62×39mm (Smooth Steel)"
 L["uplp_ak_mag_762_30_oldest.compactname"] = "30R 7.62 (SS)"
 L["uplp_ak_mag_762_30_oldest.description"] = "30-round magazine made with smoothened out steel. Really old piece that surprisingly still works! Maybe you should hand it in to a museum?" .. loaded762
 
-L["uplp_ak_mag_762_30_poly.printname"] = "30-Round 7.62×39mm (SynPoly)"
-L["uplp_ak_mag_762_30_poly.compactname"] ="30R 7.62 (SP)"
-L["uplp_ak_mag_762_30_poly.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded762
+L["uplp_ak_mag_762_30_pmag.printname"] = "30-Round 7.62×39mm (SynPoly)"
+L["uplp_ak_mag_762_30_pmag.compactname"] ="30R 7.62 (SP)"
+L["uplp_ak_mag_762_30_pmag.description"] = "30-round SPMAG manufactured by SynPoly." .. loaded762
 
 L["uplp_ak_mag_762_30_pmagb.printname"] = "30-Round 7.62×39mm (Banana)"
 L["uplp_ak_mag_762_30_pmagb.compactname"] ="30R 7.62 (Ban.)"
@@ -2548,6 +2548,7 @@ L["uplp_weapon_mp5_desc"] = "The \"Persönliche Verteidigungswaffe 9 mm\" (Perso
 
 L["uplp_weapon_mp5k"] = "PV-9K" -- "Kurz", "Short"
 L["uplp_weapon_mp5sd"] = "PV-9S" -- "Schalldämper", "Suppressor"
+L["uplp_weapon_mp5_10mm"] = "PV-10"
 
 L["uplp_weapon_mp5_real"] = "H&K MP5"
 
@@ -3648,7 +3649,9 @@ L["uplp_weapon_g36"] = "STG-95"
 L["uplp_weapon_g36_desc"] = "The STG-95 (\"Sturmgewehr 95\"), a select-fire assault rifle, is renowned for its modular design and reliability, offering both semi-automatic and fully automatic firing modes. It is favored by various military and law enforcement units worldwide for its accuracy and versatility in a wide range of combat scenarios."
 
 L["uplp_weapon_g36_sl8"] = "ZJG-98" -- "Ziviles Jagdgewehr"
-L["uplp_weapon_g36_c"] = " Compact"
+L["uplp_weapon_g36_c"] = "%s Compact"
+L["uplp_weapon_g36_k"] = "%s"
+L["uplp_weapon_g36_mg36"] = "MG-95" -- "Maschinengewehr"
 
 L["uplp_weapon_g36_real"] = "H&K G36"
 

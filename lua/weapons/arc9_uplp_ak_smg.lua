@@ -20,7 +20,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_smg") -- In the Spawnmen
 SWEP.UPLP_Class = "smg"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ak_smg"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_ak_smg_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_ak_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_9x19mm"),
@@ -1046,17 +1046,18 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
-
+	local tn = ARC9:UseTrueNames() and "_true" or ""
+	
     local ppk20 = att["uplp_ak_smg_rec_ppk20"]
     local bizon = (att["uplp_ak_smg_rec_bizon"] or att["uplp_ak_smg_rec_bizonm"])
     local vityaz = (att["uplp_ak_smg_rec_vityaz"] or att["uplp_ak_smg_rec_vityaz_tac"])
 
     if ppk20 then
-        name = ARC9:GetPhrase("uplp_weapon_ak_smg_ppk20")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_ak_smg_ppk20")
     elseif bizon then
-        name = ARC9:GetPhrase("uplp_weapon_ak_smg_bizon")
-    -- elseif vityaz then
-        -- name = ARC9:GetPhrase("uplp_weapon_ak_smg_vityaz")
+        name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_ak_smg_bizon")
+    elseif vityaz then
+        name = ARC9:UseTrueNames() and ARC9:GetPhrase("uplp_weapon_true_ak_smg_vityaz") or nil
     end
 
     return name

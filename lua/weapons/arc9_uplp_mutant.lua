@@ -20,7 +20,7 @@ SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_ar") -- In the Spawnmenu
 SWEP.UPLP_Class = "ar"
 
 SWEP.Trivia = {
-    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mutant"),
+    [ ARC9:GetPhrase( "uplp_realname" ) ] = ARC9:GetPhrase("uplp_weapon_mutant_real"),
 
     [ ARC9:GetPhrase( "uplp_manufacturer" ) ] = ARC9:GetPhrase( "uplp_weapon_mutant_manufacturer" ),
     [ ARC9:GetPhrase( "uplp_caliber" ) ] = ARC9:GetPhrase( "uplp_caliber_7.62x39mm"),
@@ -1246,21 +1246,26 @@ SWEP.Attachments = {
 
 SWEP.HookP_NameChange = function(self, name)
     local att = self:GetElements()
+	local tn = ARC9:UseTrueNames() and "_true" or ""
 
-    local defname = ARC9:GetPhrase("uplp_weapon_mutant")
+    local defname = ARC9:GetPhrase("uplp_weapon" .. tn .. "_mutant")
 
-    -- Calibres
-    if att["uplp_ak_calib_545"] then
-        cal = ARC9:GetPhrase("uplp_weapon_ak_545")
-    elseif att["uplp_ak_calib_556"] then
-        cal = ARC9:GetPhrase("uplp_weapon_ak_556")
-    elseif att["uplp_ak_calib_939"] then
-        cal = ARC9:GetPhrase("uplp_weapon_ak_9x39")
-    else
-        cal = ARC9:GetPhrase("uplp_weapon_ak_762")
-    end
+	if not ARC9:UseTrueNames() then
+		-- Calibres
+		if att["uplp_ak_calib_545"] then
+			cal = ARC9:GetPhrase("uplp_weapon_ak_545")
+		elseif att["uplp_ak_calib_556"] then
+			cal = ARC9:GetPhrase("uplp_weapon_ak_556")
+		elseif att["uplp_ak_calib_939"] then
+			cal = ARC9:GetPhrase("uplp_weapon_ak_9x39")
+		else
+			cal = ARC9:GetPhrase("uplp_weapon_ak_762")
+		end
 
-    return string.format( cal, defname )
+		return string.format( cal, defname )
+	else
+		return defname
+	end
 end
 
 -- Moka's shit
