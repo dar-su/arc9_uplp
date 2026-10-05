@@ -89,8 +89,8 @@ L["uplp_optic_rmrhigh.truecompactname"] = "RMR R."
 L["uplp_optic_genericrds.truename"] = "Aimpoint Red Dot"
 L["uplp_optic_genericrds.truecompactname"] = "Aimpoint"
 
--- L["uplp_optic_notacog.truename"] = "3× Military Scope"
--- L["uplp_optic_notacog.truecompactname"] = "3× Military"
+L["uplp_optic_notacog.truename"] = "3× SIGTAC CP1 Prismatic"
+L["uplp_optic_notacog.truecompactname"] = "3× SIGTAC"
 
 L["uplp_optic_compm1.truename"] = "Aimpoint Comp M1"
 L["uplp_optic_compm1.truecompactname"] = "M1"
