@@ -280,15 +280,15 @@ L["uplp_optic_dcl110.compactname"] = "ПК-РС"
 L["uplp_optic_dcl110.description"] = "Крупный и громоздкий коллиматорный прицел с встроенным магнифером, предназначенным для пулемётов." .. desc_magoptic
 
 L["uplp_optic_acog.printname"] = "Прицел NCOG-4 4×"
-L["uplp_optic_acog.compactname"] = "4× NCOG-4"
+L["uplp_optic_acog.compactname"] = "NCOG-4 4×"
 L["uplp_optic_acog.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением. Оснащён встроенными <color=100,255,100>резервными механическими прицельными приспособлениями</color>." .. desc_midoptic
 
 L["uplp_optic_elcan.printname"] = "Боевой прицел 4×"
-L["uplp_optic_elcan.compactname"] = "4× Боев."
+L["uplp_optic_elcan.compactname"] = "Боев. 4×"
 L["uplp_optic_elcan.description"] = "Военный боевой прицел американского производства с 4-кратным увеличением." .. desc_midoptic
 
 L["uplp_optic_bigass.printname"] = "Прицел переменной кратности 8-16× с дальномером"
-L["uplp_optic_bigass.compactname"] = "8-16× VZS-R"
+L["uplp_optic_bigass.compactname"] = "VZS-R 8-16×"
 L["uplp_optic_bigass.description"] = "Дальнобойный прицел с переменной кратностью 8-10x. Оснащён: - Модулем дальномера, определяющим расстояние до цели в метрах." .. desc_bigoptic
 
 L["uplp_optic_halo_thermal.printname"] = "PurrPoint™ IR-PRO 6×"
@@ -300,7 +300,7 @@ L["uplp_optic_d1.compactname"] = "D-1"
 L["uplp_optic_d1.description"] = "Компактная красная точка для небольших огнестрельных оружий." .. desc_smalloptic
 
 L["uplp_optic_d1high.printname"] = "Красная точка D-1 на кронштейне"
-L["uplp_optic_d1high.compactname"] = "D-1 R"
+L["uplp_optic_d1high.compactname"] = "D-1 К."
 L["uplp_optic_d1high.description"] = "Компактная красная точка для небольших огнестрельных оружий." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Пистолетная красная точка"
@@ -320,7 +320,7 @@ L["uplp_optic_rmr.compactname"] = "XW"
 L["uplp_optic_rmr.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
 L["uplp_optic_rmrhigh.printname"] = "Красная точка XW на кронштейне"
-L["uplp_optic_rmrhigh.compactname"] = "XW R."
+L["uplp_optic_rmrhigh.compactname"] = "XW К."
 L["uplp_optic_rmrhigh.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
 L["uplp_optic_genericrds.printname"] = "Красная точка HawkEye"
@@ -328,11 +328,12 @@ L["uplp_optic_genericrds.compactname"] = "HawkEye"
 L["uplp_optic_genericrds.description"] = "Классический прицел с красной точкой, который клонировали и копировали с момента его появления." .. desc_cqcoptic
 
 L["uplp_optic_notacog.printname"] = "Военный прицел 3×"
-L["uplp_optic_notacog.compactname"] = "3× Воен."
+L["uplp_optic_notacog.compactname"] = "Воен. 3×"
 L["uplp_optic_notacog.description"] = "Прочный военный прицел израильского производства с 3-кратным увеличением." .. desc_midoptic
 
 L["uplp_optic_compm1.printname"] = "Соревновательный прицел"
-L["uplp_optic_compm1.compactname"] = "Соревн."L["uplp_optic_compm1.description"] = "Прицел с увеличением шведского производства, предназначенный для соревнований и спортивной стрельбы." .. "Имеет <color=100,255,100>незначительный штраф по скорости</color>, но <color=255,255,100>немного уменьшает стабильность</color> из-за увеличения."
+L["uplp_optic_compm1.compactname"] = "Соревн."
+L["uplp_optic_compm1.description"] = "Прицел с увеличением шведского производства, предназначенный для соревнований и спортивной стрельбы." .. "Имеет <color=100,255,100>незначительный штраф по скорости</color>, но <color=255,255,100>немного уменьшает стабильность</color> из-за увеличения."
 
 L["uplp_optic_sniper.printname"] = "Прицел переменной кратности 6-8×"
 L["uplp_optic_sniper.compactname"] = "6-8× VZS"
@@ -416,7 +417,7 @@ L["uplp_optic_dedal.printname"] = "Снайперский прицел CWI Annih
 L["uplp_optic_dedal.compactname"] = "12× CWI"
 L["uplp_optic_dedal.description"] = "Прицел с 12-кратным увеличением от Cerberus Weapons Institute, предназначен для военного использования." .. desc_bigoptic
 
--- L["uplp_optic_rsa.printname"] = "Type-7 Prototype Reflex"
+-- L["uplp_optic_rsa.printname"] = "Коллиматорный прицел Type-7 Prototype Reflex"
 -- L["uplp_optic_rsa.compactname"] = "Type-7"
 -- L["uplp_optic_rsa.description"] = "Prototype reflex optic made for the prototype PDW-7 personal defence weapon. Never entered full-scale production." .. desc_cqcoptic
 
@@ -483,15 +484,15 @@ L["uplp_grip_classic.compactname"] = "Классика"
 L["uplp_grip_classic.description"] = "Рельсовая рукоятка, уменьшающая отдачу."
 
 L["uplp_grip_rk0.printname"] = "Короткая рукоятка Zenith"
-L["uplp_grip_rk0.compactname"] = "Zenith S"
+L["uplp_grip_rk0.compactname"] = "Zenith К"
 L["uplp_grip_rk0.description"] = "Компактная тактическая рукоятка для оружия с RIS-рейкой."
 
 L["uplp_grip_rk1.printname"] = "Вертикальная рукоятка Zenith"
-L["uplp_grip_rk1.compactname"] = "Zenith V"
+L["uplp_grip_rk1.compactname"] = "Zenith В"
 L["uplp_grip_rk1.description"] = "Тактическая рукоятка для оружия с RIS-рейкой."
 
 L["uplp_grip_rk45.printname"] = "Рукоятка Zenith под 45°"
-L["uplp_grip_rk45.compactname"] = "Zenith 45D"
+L["uplp_grip_rk45.compactname"] = "Zenith 45°"
 L["uplp_grip_rk45.description"] = "Угловая рукоятка под 45° для оружия с RIS-рейкой."
 
 L["uplp_grip_cqr.printname"] = "Передний хват PAWCO «Ares»"
@@ -747,7 +748,6 @@ L["uplp_ak_brl_comp.description"] = "Компактный 300-мм (12\") ств
 L["uplp_ak_brl_akm.printname"] = "Ствол 400mm AK 7.62"
 L["uplp_ak_brl_akm.compactname"] = "400mm"
 L["uplp_ak_brl_akm.description"] = "Стандартный 400-мм (16\") ствол, используемый на AK 7.62."
-
 
 L["uplp_ak_brl_rpk.printname"] = "Ствол 585mm ХПК"
 L["uplp_ak_brl_rpk.compactname"] = "585mm ХПК"

@@ -296,13 +296,13 @@ L["uplp_weapon_true_ak_smg_ppk20"] = "PPK-20"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_ak_brl_16.truename"] = "400mm RPK-16 Barrel"
+L["uplp_ak_brl_16.truename"] = "400mm AK-103 Barrel"
 L["uplp_ak_brl_16.truecompactname"] = "400mm"
-L["uplp_ak_brl_16.truedescription"] = "Standard 400mm (16\") barrel used on the RPK-16."
+L["uplp_ak_brl_16.truedescription"] = "Standard 400mm (16\") barrel used on the AK-103."
 
-L["uplp_ak_brl_comp.truename"] = "300mm RPK-16 Barrel"
+L["uplp_ak_brl_comp.truename"] = "300mm AK-103 Barrel"
 L["uplp_ak_brl_comp.truecompactname"] = "300mm"
-L["uplp_ak_brl_comp.truedescription"] = "Compact 300mm (12\") barrel used on the RPK-16."
+L["uplp_ak_brl_comp.truedescription"] = "Compact 300mm (12\") barrel used on the AK-103."
 
 L["uplp_ak_brl_akm.truename"] = "400mm AKM Barrel"
 L["uplp_ak_brl_akm.truecompactname"] = "400mm"

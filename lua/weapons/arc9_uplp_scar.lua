@@ -821,6 +821,96 @@ SWEP.Animations = {
         },
     },
 
+    ["inspect_l"] = {
+        Source = "inspect_l",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- Mult = 1.2,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, v = 0.4 },
+            -- {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["inspect_empty_l"] = {
+        Source = "inspect_empty_l",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- Mult = 1.2,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, v = 0.4 },
+            -- {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
+    ["inspect_alt"] = {
+        Source = "inspect_alt",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- Mult = 1.2,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, v = 0.4 },
+            -- {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+    ["inspect_empty_alt"] = {
+        Source = "inspect_empty_alt",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- Mult = 1.2,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.3 },
+            { s = pathUTC .. "cloth_2.ogg", t = 57 / 30, v = 0.8 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 110 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 130 / 30, v = 0.8 },
+            { s = pathUTC .. "cloth_4.ogg", t = 135 / 30, v = 0.4 },
+            -- {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+            { t = 0.07, lhik = 0 },
+            { t = 0.8, lhik = 0 },
+            { t = 0.95, lhik = 1 },
+            { t = 1, lhik = 1 },
+        },
+    },
+
     -- Firemodee --
 
     ["firemode_1"] = {
