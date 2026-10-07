@@ -254,8 +254,6 @@ L["uplp_tac_anpeq.truedescription"] = "Rail-mounted aiming module made by L3Harr
 -- L["uplp_tac_piscomb_viri.truedescription"] = "Compact rail-mounted hybrid module.\nLaser and Flashlight cannot be used together. However, both have <color=100,255,100>stronger effects</color> compared to other hybrid modules."
 
 /////////// Ammunition
-local shotgun_lp = "\n\nSpeciality load puts <color=255,200,100>immense heat stress</color> on the weapon, and may cause <color=255,100,100>destructive consequences</color> if overheated."
-
 L["uplp_ar15_ammo_50.truename"] = ".50 Beowulf Ammo"
 L["uplp_ar15_ammo_50.truecompactname"] = ".50 Beowulf"
 L["uplp_ar15_ammo_50.truedescription"] = "Large and powerful .50 Beowulf cartridges that pack a huge punch." .. changeammo["357"]
@@ -316,8 +314,8 @@ L["uplp_ak_brl_109.truename"] = "432mm AK-107 Barrel"
 L["uplp_ak_brl_109.truecompactname"] = "432mm AK-107"
 L["uplp_ak_brl_109.truedescription"] = "Longer 432mm (17\") barrel used on the AK-107 with its built-in Balanced Automatics Recoil System."
 
-L["uplp_ak_brl_su.truename"] = "203mm Short Barrel"
-L["uplp_ak_brl_su.truecompactname"] = "203mm Short"
+L["uplp_ak_brl_su.truename"] = "203mm 74U Barrel"
+L["uplp_ak_brl_su.truecompactname"] = "203mm 74U"
 L["uplp_ak_brl_su.truedescription"] = "Short 203mm (8\") barrel used on the AKS-74U."
 
 L["uplp_ak_brl_12.truename"] = "400mm AK-12 Barrel"
@@ -420,8 +418,8 @@ L["uplp_ak_grip_12.truedescription"] = "Standard pistol grip used on the AK-12."
 L["uplp_ak_grip_12evo.truedescription"] = "Upgraded pistol grip and trigger guard for use on the AK-12."
 
 ////// Handguards
-L["uplp_ak_hg_100.truename"] = "AK-103 Handguard"
-L["uplp_ak_hg_100.truecompactname"] = "AK-103"
+L["uplp_ak_hg_100.truename"] = "AK 100-Series Handguard"
+L["uplp_ak_hg_100.truecompactname"] = "AK 100"
 L["uplp_ak_hg_100.truedescription"] = "Modern plastic handguard used on the AK-103. Comes with a bottom rail for use with foregrips."
 
 L["uplp_ak_hg_old.truedescription"] = "Vintage handguard used on the AK-47."
