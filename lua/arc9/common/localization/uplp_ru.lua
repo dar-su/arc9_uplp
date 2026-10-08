@@ -299,8 +299,8 @@ L["uplp_optic_d1.printname"] = "Красная точка D-1"
 L["uplp_optic_d1.compactname"] = "D-1"
 L["uplp_optic_d1.description"] = "Компактная красная точка для небольших огнестрельных оружий." .. desc_smalloptic
 
-L["uplp_optic_d1high.printname"] = "Красная точка D-1 на кронштейне"
-L["uplp_optic_d1high.compactname"] = "D-1 К."
+L["uplp_optic_d1high.printname"] = "Красная точка D-1 на повышающей планке"
+L["uplp_optic_d1high.compactname"] = "D-1 (ПП)"
 L["uplp_optic_d1high.description"] = "Компактная красная точка для небольших огнестрельных оружий." .. desc_smalloptic
 
 L["uplp_optic_tacrds.printname"] = "Пистолетная красная точка"
@@ -319,8 +319,8 @@ L["uplp_optic_rmr.printname"] = "Красная точка XW"
 L["uplp_optic_rmr.compactname"] = "XW"
 L["uplp_optic_rmr.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
-L["uplp_optic_rmrhigh.printname"] = "Красная точка XW на кронштейне"
-L["uplp_optic_rmrhigh.compactname"] = "XW К."
+L["uplp_optic_rmrhigh.printname"] = "Красная точка XW на повышающей планке"
+L["uplp_optic_rmrhigh.compactname"] = "XW (ПП)"
 L["uplp_optic_rmrhigh.description"] = "Компактная красная точка для пистолетов и оружия малого калибра." .. desc_smalloptic
 
 L["uplp_optic_genericrds.printname"] = "Красная точка HawkEye"

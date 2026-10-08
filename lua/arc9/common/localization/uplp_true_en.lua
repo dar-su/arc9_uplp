@@ -137,7 +137,7 @@ L["uplp_optic_devom.truename"] = "Leupold D-EVO 6x20 Red Dot"
 L["uplp_optic_devom.truecompactname"] = "D-EVO 6x20"
 L["uplp_optic_devom.truedescription"] = "High quality red dot sight made by Leupold. Has a unique Over-Under™ Magnifier." .. desc_magoptic .. "\n\nWarning: does not work as intended with ARC9 Cheap Scopes on."
 
-L["uplp_optic_dovetail_kobra.truename"] = "Kobra EKP-1S-03" -- Might be wrong
+L["uplp_optic_dovetail_kobra.truename"] = "Kobra EKP-8-02" -- Might be wrong
 -- L["uplp_optic_dovetail_kobra.truecompactname"] = "Kobra"
 
 L["uplp_optic_dovetail_pso.truename"] = "4× PSO-1"
@@ -219,21 +219,21 @@ L["uplp_tac_anpeq.truedescription"] = "Rail-mounted aiming module made by L3Harr
 -- L["uplp_tac_flashlight.truecompactname"] = "NightStrike"
 -- L["uplp_tac_flashlight.truedescription"] = "Rail-mounted flashlight made by NightStrike Illumination."
 
--- L["uplp_tac_flashlight_pistol.truename"] = "LuminaFire Armaments Flashlight"
--- L["uplp_tac_flashlight_pistol.truecompactname"] = "LuminaFire F."
--- L["uplp_tac_flashlight_pistol.truedescription"] = "Compact rail-mounted flashlight designed for handguns made by LuminaFire Armaments."
+L["uplp_tac_flashlight_pistol.truename"] = "Surefire XC1"
+L["uplp_tac_flashlight_pistol.truecompactname"] = "XC1"
+L["uplp_tac_flashlight_pistol.truedescription"] = "Compact rail-mounted flashlight designed for handguns made by Surefire."
 
--- L["uplp_tac_laser_blue.truename"] = "ApexAim Laser Sight (Blue)"
--- L["uplp_tac_laser_blue.truecompactname"] = "ApexAim (B)"
--- L["uplp_tac_laser_blue.truedescription"] = "Rail-mounted aiming module made by ApexAim that provides a blue laser sight for use in the dark."
+L["uplp_tac_laser_blue.truename"] = "NcSTAR TBL"
+L["uplp_tac_laser_blue.truecompactname"] = "TBL"
+L["uplp_tac_laser_blue.truedescription"] = "Rail-mounted aiming module made by NcSTAR that provides a blue laser sight for use in the dark."
 
--- L["uplp_tac_laser_dbal.truename"] = "Veyron Tactics Laser Module"
--- L["uplp_tac_laser_dbal.truecompactname"] = "Veyron"
--- L["uplp_tac_laser_dbal.truedescription"] = "Rail-mounted aiming module made by Veyron Tactics that provides a laser sight for use in the dark."
+L["uplp_tac_laser_dbal.truename"] = "B.E. Meyers MAWL-C1"
+L["uplp_tac_laser_dbal.truecompactname"] = "MAWL-C1"
+L["uplp_tac_laser_dbal.truedescription"] = "Rail-mounted aiming module made by B.E. Meyers that provides a laser sight for use in the dark."
 
--- L["uplp_tac_laser_green.truename"] = "ApexAim Laser Sight (Green)"
--- L["uplp_tac_laser_green.truecompactname"] = "ApexAim (G)"
--- L["uplp_tac_laser_green.truedescription"] = "Rail-mounted aiming module made by ApexAim that provides a green laser sight for use in the dark."
+L["uplp_tac_laser_green.truename"] = "NcSTAR TGL"
+L["uplp_tac_laser_green.truecompactname"] = "TGL"
+L["uplp_tac_laser_green.truedescription"] = "Rail-mounted aiming module made by NcSTAR that provides a green laser sight for use in the dark."
 
 -- L["uplp_tac_laser_pistol.truename"] = "LuminaFire Armaments Laser Sight"
 -- L["uplp_tac_laser_pistol.truecompactname"] = "LuminaFire L."
@@ -275,7 +275,7 @@ L["uplp_weapon_true_ak_smg"] = "PP-19"
 
 L["uplp_weapon_true_ak_762"] = "%sM"
 L["uplp_weapon_true_ak_545"] = "%s-74"
-L["uplp_weapon_true_ak_556"] = "%s-556"
+L["uplp_weapon_true_ak_556"] = "%s-101"
 L["uplp_weapon_true_ak_9x39"] = "%s-9"
 L["uplp_weapon_true_ak_rpk"] = "RPK"
 L["uplp_weapon_true_ak_rpkm"] = "RPKM"
@@ -347,9 +347,9 @@ L["uplp_ak_dc_old.truedescription"] = "Vintage dust cover used on the AKM.\nComb
 -- L["uplp_ak_dc_rail.truecompactname"] = "PAWCO"
 -- L["uplp_ak_dc_rail.truedescription"] = "Tactical dust cover with built-in rail for optics made by PAWCO."
 
--- L["uplp_ak_dc_rail2.truename"] = "Lisyan Tactical Dust Cover with Rail"
--- L["uplp_ak_dc_rail2.truecompactname"] = "Lisyan"
--- L["uplp_ak_dc_rail2.truedescription"] = "Tactical dust cover with built-in rail for optics made by Lisyan Tactical."
+L["uplp_ak_dc_rail2.truename"] = "AKademia Bastion Dust Cover with Rail"
+L["uplp_ak_dc_rail2.truecompactname"] = "Bastion"
+L["uplp_ak_dc_rail2.truedescription"] = "Tactical dust cover with built-in rail for optics made by AKademia."
 
 L["uplp_ak_dc_azen.truename"] = "CYMA AK Rail with Top Cover"
 L["uplp_ak_dc_azen.truecompactname"] = "CYMA"
@@ -402,9 +402,9 @@ L["uplp_ak_grip_beryl.truecompactname"] = "Beryl"
 
 L["uplp_ak_grip_molot.truedescription"] = "Standard pistol grip used on the Molot Vepr-12 shotgun."
 
--- L["uplp_ak_grip_agr.truename"] = "ApexCore Systems Pistol Grip"
--- L["uplp_ak_grip_agr.truecompactname"] = "ApexCore"
--- L["uplp_ak_grip_agr.truedescription"] = "Heavy pistol grip with built-in palm shelf for AK-based rifles made by ApexCore Systems."
+L["uplp_ak_grip_agr.truename"] = "AGS-74 PRO Sniper Kit Pistol Grip"
+L["uplp_ak_grip_agr.truecompactname"] = "AGS-74"
+L["uplp_ak_grip_agr.truedescription"] = "Heavy pistol grip with built-in palm shelf for AK-based rifles made by Custom Arms."
 
 L["uplp_ak_grip_rk3.truename"] = "ZenitCo RK-3 Pistol Grip"
 L["uplp_ak_grip_rk3.truecompactname"] = "ZenitCo"
@@ -605,12 +605,12 @@ L["uplp_ak_stock_pt1.truecompactname"] = "PT-1"
 L["uplp_ak_stock_pt1.truedescription"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
 
 L["uplp_ak_stock_pt3.truename"] = "ZenitCo PT-3 Stock"
-L["uplp_ak_stock_pt3.truecompactname"] = "PT-2"
+L["uplp_ak_stock_pt3.truecompactname"] = "PT-3"
 L["uplp_ak_stock_pt3.truedescription"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
 
 -- L["uplp_ak_stock_evo.truename"] = "EVO Stock"
 -- L["uplp_ak_stock_evo.truecompactname"] = "EVO"
--- L["uplp_ak_stock_evo.truedescription"] = "Adjustable tactical stock for use on the AK-12.\nCan be <color=255,255,100>extended</color> to reduce both recoil and handling by 10%."
+L["uplp_ak_stock_evo.truedescription"] = "Adjustable tactical stock for use on the AK-12.\nCan be <color=255,255,100>extended</color> to reduce both recoil and handling by 10%."
 
 L["uplp_ak_stock_ppk.truename"] = "PPK-20 Stock"
 L["uplp_ak_stock_ppk.truecompactname"] = "PPK-20"
@@ -644,8 +644,8 @@ L["uplp_ak_smg_brl_ppk20_long.truecompactname"] = "425mm"
 L["uplp_ak_smg_brl_ppk20_long.truedescription"] = "Long 425mm (16.73\") barrel for the PP-19 with the PPK-20 Configuration."
 
 ////// Receivers
-L["uplp_ak_smg_conf_ppk20.truename"] = "PP-19 M20 Configuration"
-L["uplp_ak_smg_conf_ppk20.truecompactname"] = "AK M20"
+L["uplp_ak_smg_conf_ppk20.truename"] = "PPK-20 Configuration"
+L["uplp_ak_smg_conf_ppk20.truecompactname"] = "PPK-20"
 L["uplp_ak_smg_conf_ppk20.truedescription"] = "Converts the PP-19 to the \"PPK-20\" configuration.\nModernized receiver with support for AK-12 pistol grips, foregrips and optics."
 
 //////////////////// AR15
@@ -991,6 +991,8 @@ L["uplp_weapon_true_fn57_desc"] = "The FN Five-seven Mk3 MRD is a semi-automatic
 
 /////////// Attachments
 ////// Mags
+L["uplp_fn57_mag_ext.printname"] = "ProMag Industries FN Five-seveN 27-Round"
+L["uplp_fn57_mag_ext.compactname"] = "ProMag 27R"
 L["uplp_fn57_mag_ext.truedescription"] = "Aftermarket 27-round extended magazine for the FN Five-seven."
 
 ////// Trigger
@@ -1353,41 +1355,41 @@ L["uplp_fal_scope_suit.truecompactname"] = "SUIT"
 L["uplp_fal_scope_suit.truedescription"] = "The \"Sight Unit Infantry Trilux\" optic provides excellent target acquisition."
 
 //////////////////// Mac-10
-L["uplp_weapon_true_mac"] = "MAC-10"
-L["uplp_weapon_true_mac_desc"] = "The MAC-10 is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
+L["uplp_weapon_true_mac"] = "MAC-11"
+L["uplp_weapon_true_mac_desc"] = "The MAC-11 is a compact submachine gun known for its high rate of fire and small size, making it easily concealable. It is chambered in .380 ACP, featuring a simplistic blowback operation and a boxy design that has garnered a reputation for reliability and ease of use in close-quarters combat."
 
-L["uplp_weapon_true_mac10"] = "MAC-11"
+L["uplp_weapon_true_mac10"] = "MAC-10"
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mac_bar_long.truedescription"] = "Longer barrel for the MAC-10. Also equipped with a protective heat shield."
+L["uplp_mac_bar_long.truedescription"] = "Longer barrel for the MAC-11. Also equipped with a protective heat shield."
 
 ////// Muzzles
-L["uplp_mac_muz_supp.truename"] = "MAC-10 Suppressor"
+L["uplp_mac_muz_supp.truename"] = "MAC-11 Suppressor"
 L["uplp_mac_muz_supp.truecompactname"] = "MAC"
-L["uplp_mac_muz_supp.truedescription"] = "Large suppressor intended for use on the MAC-10."
+L["uplp_mac_muz_supp.truedescription"] = "Large suppressor intended for use on the MAC-11."
 
-L["uplp_mac_muz_supptac.truedescription"] = "Compact but effective suppressor made by Centurion Industries. Intended for the MAC-10."
+L["uplp_mac_muz_supptac.truedescription"] = "Compact but effective suppressor made by Centurion Industries. Intended for the MAC-11."
 
-L["uplp_mac_muz_supp_surv.truename"] = "MAC-10 Suppressor with Flashlight"
+L["uplp_mac_muz_supp_surv.truename"] = "MAC-11 Suppressor with Flashlight"
 L["uplp_mac_muz_supp_surv.truecompactname"] = "MAC (F)"
-L["uplp_mac_muz_supp_surv.truedescription"] = "Large suppressor intended for use on the MAC-10.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
+L["uplp_mac_muz_supp_surv.truedescription"] = "Large suppressor intended for use on the MAC-11.\nComes with a flashlight attached using cable ties.\nPerfect for survivors who needs to see in the dark on their way to the safe room."
 
 ////// Stocks
-L["uplp_mac_stock_wire.truedescription"] = "Foldable wire stock for the MAC-10."
+L["uplp_mac_stock_wire.truedescription"] = "Foldable wire stock for the MAC-11."
 
 -- L["uplp_mac_stock_tac.truename"] = "Centurion Industries IronWorks Stock"
 -- L["uplp_mac_stock_tac.truecompactname"] = "IronWorks"
 -- L["uplp_mac_stock_tac.truedescription"] = "Replace the wire stock with a reinforced stock from IronWorks, a subsidiary to Centurion Industries."
 
 ////// Magazines
-L["uplp_mac_mag10_30.truedescription"] = "Converts the MAC-10 into the larger MAC-11, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
-L["uplp_mac_mag10_50.truedescription"] = "Converts the MAC-10 into the larger MAC-11, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
-L["uplp_mac_mag_50.truedescription"] = "Extended 50-round magazine for the MAC-10."
+L["uplp_mac_mag10_30.truedescription"] = "Converts the MAC-11 into the larger MAC-10, improving its performance at the cost of increased size and weight.\nChambered with a standard 30-round magazine fed with .45 ACP."
+L["uplp_mac_mag10_50.truedescription"] = "Converts the MAC-11 into the larger MAC-10, improving its performance at the cost of increased size and weight.\nChambered with a large <color=100,255,100>50-round</color> drum magazine fed with .45 ACP."
+L["uplp_mac_mag_50.truedescription"] = "Extended 50-round magazine for the MAC-11."
 
 // Grips
-L["uplp_mac_strap.truename"] = "MAC-10 Front Strap"
-L["uplp_mac_strap_cosmetic.truename"] = "MAC-10 Front Strap (Cosmetic Only)"
+L["uplp_mac_strap.truename"] = "MAC-11 Front Strap"
+L["uplp_mac_strap_cosmetic.truename"] = "MAC-11 Front Strap (Cosmetic Only)"
 
 // Receivers
 -- L["uplp_mac_rec_long.truename"] = "Ironclad Arms Receiver"
@@ -1892,8 +1894,8 @@ L["uplp_scope_pgo.truecompactname"] = "2.7× PGO-7"
 L["uplp_scope_pgo.truedescription"] = "Soviet magnified optic specifically made for the RPG-7 anti-tank launcher.\nCan be used on AK pattern rifles too - just ignore the range marks." .. desc_dovetail .. desc_midoptic
 
 ////// Rockets
-L["uplp_rpg7_rocket_cover.truename"] = "PG-7VL" -- May be wrong
-L["uplp_rpg7_rocket_cover.truecompactname"] = "PG-7VL" -- May be wrong
+L["uplp_rpg7_rocket_cover.truename"] = "PG-7VR Resume"
+L["uplp_rpg7_rocket_cover.truecompactname"] = "PG-7VR"
 L["uplp_rpg7_rocket_cover.truedescription"] = "A rocket for the RPG-7 that excells at <color=100,255,100>piercing fortifications</color>."
 
 L["uplp_rpg7_rocket_thermo.truename"] = "TBG-7V Tanin"

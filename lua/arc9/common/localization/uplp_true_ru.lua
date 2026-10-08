@@ -68,8 +68,8 @@ L["uplp_optic_halo_thermal.truedescription"] = "Специальный тепл�
 L["uplp_optic_d1.truename"] = "Aimpoint Micro T-1"
 L["uplp_optic_d1.truecompactname"] = "T-1"
 
-L["uplp_optic_d1high.truename"] = "Aimpoint Micro T-1 на кронштейне"
-L["uplp_optic_d1high.truecompactname"] = "T-1 К."
+L["uplp_optic_d1high.truename"] = "Aimpoint Micro T-1 на повышающей планке"
+L["uplp_optic_d1high.truecompactname"] = "T-1 (ПП)"
 
 -- L["uplp_optic_tacrds.truename"] = "Pistol Red Dot"
 -- L["uplp_optic_tacrds.truecompactname"] = "Pistol"
@@ -83,8 +83,8 @@ L["uplp_optic_rmr_direct.truecompactname"] = "RMR"
 L["uplp_optic_rmr.truename"] = "Trijicon RMR"
 L["uplp_optic_rmr.truecompactname"] = "RMR"
 
-L["uplp_optic_rmrhigh.truename"] = "Trijicon RMR на кронштейне"
-L["uplp_optic_rmrhigh.truecompactname"] = "RMR К."
+L["uplp_optic_rmrhigh.truename"] = "Trijicon RMR на повышающей планке"
+L["uplp_optic_rmrhigh.truecompactname"] = "RMR (ПП)"
 
 L["uplp_optic_genericrds.truename"] = "Коллиматорный Aimpoint"
 L["uplp_optic_genericrds.truecompactname"] = "Aimpoint"
@@ -137,7 +137,7 @@ L["uplp_optic_devom.truename"] = "Красная точка Leupold D-EVO 6x20"
 L["uplp_optic_devom.truecompactname"] = "D-EVO 6x20"
 -- L["uplp_optic_devom.truedescription"] = "High quality red dot sight made by Leupold. Has a unique Over-Under™ Magnifier." .. desc_magoptic .. "\n\nWarning: does not work as intended with ARC9 Cheap Scopes on."
 
-L["uplp_optic_dovetail_kobra.truename"] = "Кобра ЕКП-1С-03" -- Might be wrong
+L["uplp_optic_dovetail_kobra.truename"] = "Кобра ЭКП-8-02" -- Might be wrong
 -- L["uplp_optic_dovetail_kobra.truecompactname"] = "Kobra"
 
 L["uplp_optic_dovetail_pso.truename"] = "ПСО-1 4×"
@@ -219,21 +219,21 @@ L["uplp_tac_anpeq.truedescription"] = "Навесной модуль целеу�
 -- L["uplp_tac_flashlight.truecompactname"] = "NightStrike"
 -- L["uplp_tac_flashlight.truedescription"] = "Rail-mounted flashlight made by NightStrike Illumination."
 
--- L["uplp_tac_flashlight_pistol.truename"] = "LuminaFire Armaments Flashlight"
--- L["uplp_tac_flashlight_pistol.truecompactname"] = "LuminaFire F."
--- L["uplp_tac_flashlight_pistol.truedescription"] = "Compact rail-mounted flashlight designed for handguns made by LuminaFire Armaments."
+L["uplp_tac_flashlight_pistol.truename"] = "Surefire XC1"
+L["uplp_tac_flashlight_pistol.truecompactname"] = "XC1"
+L["uplp_tac_flashlight_pistol.truedescription"] = "Компактный навесной фонарь для пистолетов производства Surefire."
 
--- L["uplp_tac_laser_blue.truename"] = "ApexAim Laser Sight (Blue)"
--- L["uplp_tac_laser_blue.truecompactname"] = "ApexAim (B)"
--- L["uplp_tac_laser_blue.truedescription"] = "Rail-mounted aiming module made by ApexAim that provides a blue laser sight for use in the dark."
+L["uplp_tac_laser_blue.truename"] = "NcSTAR TBL"
+L["uplp_tac_laser_blue.truecompactname"] = "TBL"
+L["uplp_tac_laser_blue.truedescription"] = "Навесной модуль целеуказания производства NcSTAR с синим лазером для использования в темноте."
 
--- L["uplp_tac_laser_dbal.truename"] = "Veyron Tactics Laser Module"
--- L["uplp_tac_laser_dbal.truecompactname"] = "Veyron"
--- L["uplp_tac_laser_dbal.truedescription"] = "Rail-mounted aiming module made by Veyron Tactics that provides a laser sight for use in the dark."
+L["uplp_tac_laser_dbal.truename"] = "B.E. Meyers MAWL-C1"
+L["uplp_tac_laser_dbal.truecompactname"] = "MAWL-C1"
+-- L["uplp_tac_laser_dbal.truedescription"] = "Rail-mounted aiming module made by B.E. Meyers that provides a laser sight for use in the dark."
 
--- L["uplp_tac_laser_green.truename"] = "ApexAim Laser Sight (Green)"
--- L["uplp_tac_laser_green.truecompactname"] = "ApexAim (G)"
--- L["uplp_tac_laser_green.truedescription"] = "Rail-mounted aiming module made by ApexAim that provides a green laser sight for use in the dark."
+L["uplp_tac_laser_green.truename"] = "NcSTAR TGL"
+L["uplp_tac_laser_green.truecompactname"] = "TGL"
+L["uplp_tac_laser_green.truedescription"] = "Навесной модуль целеуказания производства NcSTAR с зелёным лазером для использования в темноте."
 
 -- L["uplp_tac_laser_pistol.truename"] = "LuminaFire Armaments Laser Sight"
 -- L["uplp_tac_laser_pistol.truecompactname"] = "LuminaFire L."
@@ -275,7 +275,7 @@ L["uplp_weapon_true_ak_smg"] = "ПП-19"
 
 L["uplp_weapon_true_ak_762"] = "%sМ"
 L["uplp_weapon_true_ak_545"] = "%s-74"
-L["uplp_weapon_true_ak_556"] = "%s-556"
+L["uplp_weapon_true_ak_556"] = "%s-101"
 L["uplp_weapon_true_ak_9x39"] = "%s-9"
 L["uplp_weapon_true_ak_rpk"] = "РПК"
 L["uplp_weapon_true_ak_rpkm"] = "РПКМ"
