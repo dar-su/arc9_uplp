@@ -941,9 +941,9 @@ L["uplp_ak_hg_12tac.printname"] = "Тактическое Цевьё Lisyan Mode
 L["uplp_ak_hg_12tac.compactname"] = "Lisyan"
 L["uplp_ak_hg_12tac.description"] = "Очень длинное тактическое цевьё от Lisyan Tactical.\nНе совместимо с <color=255,100,100>230mm AK M22-K Стволом</color>."
 
--- L["uplp_ak_hg_rpk74.printname"] = "HPKM Handguard"
--- L["uplp_ak_hg_rpk74.compactname"] = "HPKM"
--- L["uplp_ak_hg_rpk74.description"] = "Modern polymer handguard used on the modernized HPKM."
+L["uplp_ak_hg_rpk74.printname"] = "Цевьё ХПКМ"
+L["uplp_ak_hg_rpk74.compactname"] = "ХПКМ"
+-- L["uplp_ak_hg_rpk74.description"] = "Modern polymer handguard used on the modernized ХПКМ."
 
 ////// Magazines
 /// 7.62×39mm
@@ -1305,11 +1305,11 @@ local requires14 = "\n" .. "Необходим ствол длинною 356мм
 local requires16 = "\n" .. "Необходим ствол длинною 406мм (16\") или больше."
 local requires20 = "\n" .. "Необходим ствол длинною 508мм (20\") или больше."
 local requires22 = "\n" .. "Необходим ствол длинною 559мм (22\") или больше."
-local onlycompact = "\n" .. "Можно использовать только с Compact Gas Block."
+local onlycompact = "\n" .. "Можно использовать только с Минимальный газовый блок."
 
 L["uplp_ar15_hg_grenadier.printname"] = "Гранатомётное цевьё Grenadier"
 L["uplp_ar15_hg_grenadier.compactname"] = "Grenadier"
-L["uplp_ar15_hg_grenadier.description"] = "Цевьё AR-15, используемое на M16 с гранатомётом M203." .. requires16
+L["uplp_ar15_hg_grenadier.description"] = "Цевьё AR-15, используемое на M16 с гранатомётом Model 40." .. requires16
 
 L["uplp_ar15_hg_m16.printname"] = "Цевьё A2"
 L["uplp_ar15_hg_m16.compactname"] = "A2"
@@ -1655,7 +1655,7 @@ L["uplp_deag_trig_light.description"] = "Заменяет спусковой м�
 
 L["uplp_deag_trig_sport.printname"] = "Автоматический режим"
 L["uplp_deag_trig_sport.compactname"] = "Автомат"
-L["uplp_deag_trig_sport.description"] = "Переводит режим стрельбы Desert Eagle в <color=100,255,100>полностью автоматический</color>, жертвуя отдачей.\nТакже заменяет спусковой механизм на тактические.\nТехнически запрещено <color=255,100,100>законом</color>, но мы будем молчать... на этот раз."
+L["uplp_deag_trig_sport.description"] = "Переводит режим стрельбы Deagle в <color=100,255,100>полностью автоматический</color>, жертвуя отдачей.\nТакже заменяет спусковой механизм на тактические.\nТехнически запрещено <color=255,100,100>законом</color>, но мы будем молчать... на этот раз."
 
 ////// Barrels
 L["uplp_deag_barrel_classic.printname"] = "Классический ствол"
@@ -1723,61 +1723,61 @@ L["uplp_weapon_mutant_manufacturer"] = "CMMG Inc."
 
 /////////// Attachments
 ////// Barrels
-L["uplp_mutant_barrel_long.printname"] = "500mm Barrel"
-L["uplp_mutant_barrel_long.compactname"] = "500mm"
-L["uplp_mutant_barrel_long.description"] = "Extended 500mm (19.7\") barrel for the H-51."
+-- L["uplp_mutant_barrel_long.printname"] = "500mm Barrel"
+-- L["uplp_mutant_barrel_long.compactname"] = "500mm"
+-- L["uplp_mutant_barrel_long.description"] = "Extended 500mm (19.7\") barrel for the H-51."
 
-L["uplp_mutant_barrel_short.printname"] = "409mm Barrel"
-L["uplp_mutant_barrel_short.compactname"] = "409mm"
-L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the H-51."
+-- L["uplp_mutant_barrel_short.printname"] = "409mm Barrel"
+-- L["uplp_mutant_barrel_short.compactname"] = "409mm"
+-- L["uplp_mutant_barrel_short.description"] = "Standard 409mm (16.1\") barrel for the H-51."
 
 ////// Handguards
 local requires19 = "\n\n" .. "Требует ствол длинною в 500мм (19.7\") или больше."
 
-L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL Handguard"
-L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
-L["uplp_mutant_hg_long.description"] = "Longer variant of the tactical handguard made for the H-51 by Hoki Armory." .. requires19
+-- L["uplp_mutant_hg_long.printname"] = "Hoki Armory XL Handguard"
+-- L["uplp_mutant_hg_long.compactname"] = "Hoki XL"
+-- L["uplp_mutant_hg_long.description"] = "Longer variant of the tactical handguard made for the H-51 by Hoki Armory." .. requires19
 
-L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6 Handguard"
-L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
-L["uplp_mutant_hg_nowosuku.description"] = "Lightweight SX6 handguard manufactured by Nowosuku."
+-- L["uplp_mutant_hg_nowosuku.printname"] = "Nowosuku SX6 Handguard"
+-- L["uplp_mutant_hg_nowosuku.compactname"] = "SX6"
+-- L["uplp_mutant_hg_nowosuku.description"] = "Lightweight SX6 handguard manufactured by Nowosuku."
 
-L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
-L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
-L["uplp_mutant_hg_nowosuku_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. requires19
+-- L["uplp_mutant_hg_nowosuku_xl.printname"] = "Nowosuku SX6 XL Handguard"
+-- L["uplp_mutant_hg_nowosuku_xl.compactname"] = "SX6 XL"
+-- L["uplp_mutant_hg_nowosuku_xl.description"] = "Longer variant of the lightweight SX6 handguard manufactured by Nowosuku." .. requires19
 
-L["uplp_mutant_hg_short.printname"] = "Hoki Armory Handguard"
-L["uplp_mutant_hg_short.compactname"] = "Hoki"
-L["uplp_mutant_hg_short.description"] = "Tactical handguard made for the H-51 by Hoki Armory."
+-- L["uplp_mutant_hg_short.printname"] = "Hoki Armory Handguard"
+-- L["uplp_mutant_hg_short.compactname"] = "Hoki"
+-- L["uplp_mutant_hg_short.description"] = "Tactical handguard made for the H-51 by Hoki Armory."
 
 ////// Magazines
-L["uplp_mutant_mag_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
-L["uplp_mutant_mag_30_bak.compactname"] = "30R 7.62 (B)"
-L["uplp_mutant_mag_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite."
+-- L["uplp_mutant_mag_30_bak.printname"] = "30-Round 7.62×39mm (Bakelite)"
+-- L["uplp_mutant_mag_30_bak.compactname"] = "30R 7.62 (B)"
+-- L["uplp_mutant_mag_30_bak.description"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite."
 
-L["uplp_mutant_mag_30_12.printname"] = "30-Round 7.62×39mm (AK-12-Style)"
-L["uplp_mutant_mag_30_12.compactname"] = "30R 7.62 (M23)"
-L["uplp_mutant_mag_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine."
+-- L["uplp_mutant_mag_30_12.printname"] = "30-Round 7.62×39mm (AK-12-Style)"
+-- L["uplp_mutant_mag_30_12.compactname"] = "30R 7.62 (M23)"
+-- L["uplp_mutant_mag_30_12.description"] = "30-round magazine made to resemble the AK-12 magazine."
 
-L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
-L["uplp_mutant_mag_30_old.compactname"] = "30R 7.62 (S)"
-L["uplp_mutant_mag_30_old.description"] = "30-round magazine made with good, old-fashioned steel."
+-- L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
+-- L["uplp_mutant_mag_30_old.compactname"] = "30R 7.62 (S)"
+-- L["uplp_mutant_mag_30_old.description"] = "30-round magazine made with good, old-fashioned steel."
 
-L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
-L["uplp_mutant_mag_30_old.compactname"] = "30R 7.62 (S)"
-L["uplp_mutant_mag_30_old.description"] = "30-round magazine made with good, old-fashioned steel."
+-- L["uplp_mutant_mag_30_old.printname"] = "30-Round 7.62×39mm (Steel)"
+-- L["uplp_mutant_mag_30_old.compactname"] = "30R 7.62 (S)"
+-- L["uplp_mutant_mag_30_old.description"] = "30-round magazine made with good, old-fashioned steel."
 
-L["uplp_mutant_mag_30_oldest.printname"] = "30-Round 7.62×39mm (Smooth Steel)"
-L["uplp_mutant_mag_30_oldest.compactname"] = "30R 7.62 (SS)"
-L["uplp_mutant_mag_30_oldest.description"] = "30-round magazine made with smoothened out steel."
+-- L["uplp_mutant_mag_30_oldest.printname"] = "30-Round 7.62×39mm (Smooth Steel)"
+-- L["uplp_mutant_mag_30_oldest.compactname"] = "30R 7.62 (SS)"
+-- L["uplp_mutant_mag_30_oldest.description"] = "30-round magazine made with smoothened out steel."
 
-L["uplp_mutant_mag_40.printname"] = "40-Round 7.62×39mm (Bakelite)"
-L["uplp_mutant_mag_40.compactname"] = "40R 7.62 (B)"
-L["uplp_mutant_mag_40.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite."
+-- L["uplp_mutant_mag_40.printname"] = "40-Round 7.62×39mm (Bakelite)"
+-- L["uplp_mutant_mag_40.compactname"] = "40R 7.62 (B)"
+-- L["uplp_mutant_mag_40.description"] = "40-round magazine out of AG-4S molding compound, but resembles bakelite."
 
-L["uplp_mutant_mag_40_old.printname"] = "40-Round 7.62×39mm (Steel)"
-L["uplp_mutant_mag_40_old.compactname"] = "40R 7.62 (S)"
-L["uplp_mutant_mag_40_old.description"] = "40-round magazine made with good, old-fashioned steel."
+-- L["uplp_mutant_mag_40_old.printname"] = "40-Round 7.62×39mm (Steel)"
+-- L["uplp_mutant_mag_40_old.compactname"] = "40R 7.62 (S)"
+-- L["uplp_mutant_mag_40_old.description"] = "40-round magazine made with good, old-fashioned steel."
 
 //////////////////// Молот
 L["uplp_weapon_molot"] = "Молот"
@@ -1810,9 +1810,9 @@ L["uplp_molot_hg_100.printname"] = "Цевьё 100-й серии"
 L["uplp_molot_hg_100.compactname"] = "100-S"
 L["uplp_molot_hg_100.description"] = "Современное пластиковое цевьё, изначально использовавшееся на AK M10. Оснащена нижней рейкой для установки передних рукояток."
 
-L["uplp_molot_hg_wood.printname"] = "Классическое цевьё РПК"
-L["uplp_molot_hg_wood.compactname"] = "C. РПК"
-L["uplp_molot_hg_wood.description"] = "Деревянное цевьё, изначально использовавшееся на РПК и ХПК M74."
+L["uplp_molot_hg_wood.printname"] = "Классическое цевьё ХПК"
+L["uplp_molot_hg_wood.compactname"] = "К. ХПК"
+L["uplp_molot_hg_wood.description"] = "Деревянное цевьё, изначально использовавшееся на ХПК и ХПК M74."
 
 L["uplp_molot_hg_azen.printname"] = "Цевьё Zenith"
 L["uplp_molot_hg_azen.compactname"] = "Zenith"
@@ -2199,14 +2199,6 @@ L["uplp_scar_rail_ext.compactname"] = "Планка"
 L["uplp_scar_rail_ext.description"] = "Послепродажная расширенная планка для XAR."
 
 -- Expansion 1
-//////////////////// Mossberg 590
-L["uplp_weapon_mossberg"] = "Thunder 500"
-L["uplp_weapon_mossberg_desc"] = "Если вы ищете что-то для защиты дома, то серия дробовиков Thunder 500 от компании Centurion Industries создана именно для вас. Thunder 500 - это помповый дробовик калибра 12 с отсутствием предохранителя и высокой степенью кастомизации. Он очень популярен для использования среди гражданских, правоохранительных органов и военных."
-
-L["uplp_weapon_mossberg_real"] = "Mossberg 590"
-
-L["uplp_weapon_mossberg_manufacturer"] = "O.F. Mossberg & Sons, Inc."
-
 //////////////////// SPAS-12
 L["uplp_weapon_spas"] = "SPAW-12"
 L["uplp_weapon_spas_desc"] = "SPAW-12 (Special Purpose Assault Weapon model 12), - это универсальный дробовик итальянского производства, известный своей способностью переключаться между режимами помпового действия и полуавтоматической стрельбы. Он стал популярным в различных военных и правоохранительных структурах благодаря своей надежности."
@@ -2242,7 +2234,7 @@ L["uplp_weapon_m9_desc"] = "\"Pistola Modello 92\", сокращенно PM92, -
 
 L["uplp_weapon_m9_raffica"] = "PM92-A"
 L["uplp_weapon_m9_a3"] = "PM92-M"
-L["uplp_weapon_m9_sc"] = "PM92 Sword Cutlass"
+L["uplp_weapon_m9_sc"] = "PM92 «Sword Cutlass»"
 L["uplp_weapon_m9_robocop"] = "Robotic Arms Hyper-V"
 
 L["uplp_weapon_m9_real"] = "Beretta M92FS"
@@ -2263,7 +2255,7 @@ L["uplp_m9_receiver_a3t.printname"] = "Ресивер PM92-M (Пустынный
 L["uplp_m9_receiver_a3t.compactname"] = "Moderno (П)"
 L["uplp_m9_receiver_a3t.description"] = "Современный ресивер \"Moderno\", позволяющий устанавливать лазерные целеуказатели.\n<color=255,255,100>Пустынная версия</color>."
 
-L["uplp_m9_receiver_sc.printname"] = "Ресивер PM92 Sword Cutlass"
+L["uplp_m9_receiver_sc.printname"] = "Ресивер PM92 «Sword Cutlass»"
 L["uplp_m9_receiver_sc.compactname"] = "Sword"
 L["uplp_m9_receiver_sc.description"] = "Модифицированный PM92, вдохновлённый личным оружием Ребекки \"Реви\" Ли.\nВключает удлинённый 150 мм (5.9\") ствол."
 

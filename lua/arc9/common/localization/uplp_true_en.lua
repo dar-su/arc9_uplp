@@ -359,7 +359,7 @@ L["uplp_ak_dc_beryl.truecompactname"] = "Beryl"
 
 L["uplp_ak_dc_12.truename"] = "AK-12 Configuration"
 L["uplp_ak_dc_12.truecompactname"] = " AK-12"
-L["uplp_ak_dc_12.truedescription"] = "Modern AK M23 configuration that performs the following changes to the weapon:\n- Removes the <color=255,100,100>2-round burst firing mode</color>.\n- Replaces the rear sight with a more robust peephole sight.\n- Adds an ambidextrous fire selector."
+L["uplp_ak_dc_12.truedescription"] = "Modern AK-12 configuration that performs the following changes to the weapon:\n- Removes the <color=255,100,100>2-round burst firing mode</color>.\n- Replaces the rear sight with a more robust peephole sight.\n- Adds an ambidextrous fire selector."
 
 L["uplp_ak_dc_12_22.truename"] = "AK-12 2022 Configuration"
 L["uplp_ak_dc_12_22.truecompactname"] = "AK-12 '22"
@@ -476,7 +476,6 @@ L["uplp_ak_mag_762_30_12.truecompactname"] = "30R 7.62 (AK-12)"
 L["uplp_ak_mag_762_30_12.truedescription"] = "30-round magazine used on the AK-12 rifle." .. loaded762
 
 L["uplp_ak_mag_762_30_old.truedescription"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
-L["uplp_ak_mag_762_30_old.truedescription"] = "30-round magazine made with good, old-fashioned steel." .. loaded762
 L["uplp_ak_mag_762_30_oldest.truedescription"] = "30-round magazine made with smoothened out steel. Really old piece that surprisingly still works! Maybe you should hand it in to a museum?" .. loaded762
 
 L["uplp_ak_mag_762_30_pmag.truename"] = "30-Round 7.62×39mm (Magpul)"
@@ -491,8 +490,6 @@ L["uplp_ak_mag_762_drum.truedescription"] = "75-round cylindrical drum magazine.
 /// 5.45×39mm
 local loaded545 = loaded .. "Loaded with <color=160,160,255>5.45×39mm</color> used by the AK-74 and derivatives." .. changeammo.smg1
 
-L["uplp_ak_mag_545_30.truename"] = "30-Round 5.45×39mm (Polymer)"
-L["uplp_ak_mag_545_30.truecompactname"] = "30R 5.45 (P)"
 L["uplp_ak_mag_545_30.truedescription"] = "30-round magazine made out of polymer." .. loaded545
 L["uplp_ak_mag_545_30_bak.truedescription"] = "30-round magazine out of AG-4S molding compound, but resembles bakelite." .. loaded545
 
@@ -530,8 +527,8 @@ L["uplp_ak_mag_308_20.truedescription"] = "20-round magazine loaded with <color=
 L["uplp_ak_mag_939_30.truedescription"] = "20-round magazine loaded with <color=160,160,255>9×39mm rounds</color> used by the AK-9.\nOnly a few hundred of the AK-9 were ever made!" .. changeammo.smg1
 
 ////// Muzzles
-L["uplp_ak_mz_std.truename"] = "AK-103 Muzzle Brake"
-L["uplp_ak_mz_std.truecompactname"] = "AK-103 MB"
+L["uplp_ak_mz_std.truename"] = "AK 100-Series Muzzle Brake"
+L["uplp_ak_mz_std.truecompactname"] = "AK 100"
 L["uplp_ak_mz_std.truedescription"] = "Standard muzzle brake used on the AK-103."
 
 L["uplp_ak_mz_akm.truename"] = "AKM Muzzle Brake"
@@ -602,11 +599,9 @@ L["uplp_ak_stock_underfold.truedescription"] = "Classic stock that can fold unde
 
 L["uplp_ak_stock_pt1.truename"] = "ZenitCo PT-1 Stock"
 L["uplp_ak_stock_pt1.truecompactname"] = "PT-1"
-L["uplp_ak_stock_pt1.truedescription"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
 
 L["uplp_ak_stock_pt3.truename"] = "ZenitCo PT-3 Stock"
 L["uplp_ak_stock_pt3.truecompactname"] = "PT-3"
-L["uplp_ak_stock_pt3.truedescription"] = "Tactical stock with Russian origin.\nWhen \"Extended\": Adds 5% to all benefits but also adds 10% to all downsides."
 
 -- L["uplp_ak_stock_evo.truename"] = "EVO Stock"
 -- L["uplp_ak_stock_evo.truecompactname"] = "EVO"
@@ -649,9 +644,6 @@ L["uplp_ak_smg_conf_ppk20.truecompactname"] = "PPK-20"
 L["uplp_ak_smg_conf_ppk20.truedescription"] = "Converts the PP-19 to the \"PPK-20\" configuration.\nModernized receiver with support for AK-12 pistol grips, foregrips and optics."
 
 //////////////////// AR15
-L["uplp_weapon_true_ar15"] = "AR-15"
-L["uplp_weapon_true_ar15_desc"] = "The AR-15 is a lightweight, air-cooled, gas-operated, magazine-fed fully automatic rifle that has gained popularity for its modularity and versatility. It's widely used by military and law enforcement agencies, known for its accuracy and adaptability to various combat situations."
-
 L["uplp_weapon_true_ar15_smg9"] = "Colt Model 635"
 L["uplp_weapon_true_ar15_smg45"] = "Colt Model 635 (.45)"
 
@@ -680,11 +672,9 @@ L["uplp_ar15_fs_scalar.truedescription"] = "Adjustable front sights manufactured
 
 -- L["uplp_ar15_fs_type1.truename"] = "Type I Front Sight"
 -- L["uplp_ar15_fs_type1.truecompactname"] = "Type I"
--- L["uplp_ar15_fs_type1.truedescription"] = "Alternative flip-up front sights for use on AR-15 rifles."
 
 -- L["uplp_ar15_fs_type2.truename"] = "Type II Front Sight"
 -- L["uplp_ar15_fs_type2.truecompactname"] = "Type II"
--- L["uplp_ar15_fs_type2.truedescription"] = "Alternative flip-up front sights for use on AR-15 rifles."
 
 L["uplp_ar15_fs_utg.truename"] = "UTG Front Sight"
 L["uplp_ar15_fs_utg.truecompactname"] = "UTG"
@@ -937,8 +927,6 @@ L["uplp_weapon_true_awp_atx"] = "AI AT-CX"
 
 /////////// Attachments
 ////// Irons
-L["uplp_awp_rs.truename"] = "AW Iron Sights"
-L["uplp_awp_rs.truecompactname"] = "Iron Sights"
 L["uplp_awp_rs.truedescription"] = "Factory set of iron sights for the AI AW.\nComes in handy when you forget to zero your scope or lost it on the battlefield."
 
 ////// Barrels
@@ -957,6 +945,7 @@ L["uplp_awp_bp.truedescription"] = "Standard built-in bipod used on the AI AW an
 
 ////// Stocks
 local uplp_awp_stock_atx = "Lightweight competition stock.\nSignificant faster handling and higher mobility at the cost of worse recoil and sway."
+
 L["uplp_awp_stock_atx.truename"] = "AT-XC Stock (Sporty Red)"
 L["uplp_awp_stock_atx.truecompactname"] = "AT-XC (SR)"
 L["uplp_awp_stock_atx.truedescription"] = uplp_awp_stock_atx .. sportyred
@@ -1028,11 +1017,6 @@ L["uplp_weapon_true_scar_mg"] = "FN HAMR IAR"
 L["uplp_weapon_true_scar_pdw"] = "FN SCAR PDW"
 
 /////////// Attachments
-////// Lower Receiver
-L["uplp_scar_lower_b.truename"] = "Black Lower Receiver"
-L["uplp_scar_lower_b.truecompactname"] = "Black"
-L["uplp_scar_lower_b.truedescription"] = "Replaces the lower receiver with a black colored one."
-
 ////// Upper Receivers
 L["uplp_scar_upper_20.truedescription"] = "Very long upper receiver and handguard used on the FN SCAR-20."
 L["uplp_scar_upper_20b.truedescription"] = "Very long upper receiver and handguard painted black that is used on the FN SCAR-20."
@@ -1126,8 +1110,6 @@ L["uplp_m9_receiver_robocop.truecompactname"] = "Auto 9"
 L["uplp_m9_receiver_robocop.truedescription"] = "Heavily modified Beretta M9 originally made for use in an experimental robotic personnel program.\nComes with an extended 250mm (9.84\") barrel, <color=100,255,100>20-round</color> extended magazine, heat shield and raised iron sights.\nSwitches the firing mode to <color=100,255,100>3-round burst</color>.\nCannot equip <color=255,100,100>any other attachments</color>."
 
 ////// Magazines
-L["uplp_m9_mag_20.truename"] = "20-Round Extended"
-L["uplp_m9_mag_20.truecompactname"] = "20R"
 L["uplp_m9_mag_20.truedescription"] = "Aftermarket 20-round extended mags for the Beretta M9."
 
 //////////////////// ORSIS 12.7
