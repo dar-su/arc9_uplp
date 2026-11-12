@@ -393,7 +393,7 @@ SWEP.DistantShootSoundIndoorSilenced = {
 
 SWEP.DryFireSound = "uplp_urban_temp/deagle/dryfire.ogg"
 
-SWEP.TriggerDownSound = {path870 .. "trigger1.wav"}
+SWEP.TriggerDownSound = {pathNEW .. "trigger1.wav"}
 
 SWEP.TriggerUpSound = {path870 .. "trigger2.wav"}
 
