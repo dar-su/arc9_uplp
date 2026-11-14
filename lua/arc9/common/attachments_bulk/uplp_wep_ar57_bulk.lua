@@ -106,4 +106,7 @@ ATT.TranslucentPassExtraMat = Material( "models/weapons/arc9/uplp/lowpoly_metal"
 ATT.TranslucentPassBlend = 0.5
 ATT.BoneMerge = true
 
+ATT.Free = true
+ATT.Hidden = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar57_mag_internal")

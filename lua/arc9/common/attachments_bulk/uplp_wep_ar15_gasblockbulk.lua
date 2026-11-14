@@ -28,6 +28,8 @@ ATT.ModelOffset = Vector(0.6, 0, 0)
 ATT.Category = "uplp_ar15_gasblock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16")
 
@@ -53,6 +55,8 @@ ATT.ModelOffset = Vector(0.6, 0, 0)
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_gasblock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16_nosling")
@@ -91,6 +95,8 @@ ATT.Attachments = {
         Icon_Offset = Vector(0, 0, 0.5),
     },
 }
+
+ATT.Free = true
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_m16rail")
@@ -140,6 +146,8 @@ ATT.ModelBodygroups = "1"
 ATT.Category = "uplp_ar15_gasblock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_min_red")
 
@@ -176,6 +184,8 @@ ATT.Attachments = {
         Ang = Angle(0, 0, 0),
     },
 }
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_gasblock_rail")
 

@@ -83,6 +83,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Negatives
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_m590_handle_strap")
 
 ---------- uplp_m590_handle_flash
@@ -238,6 +240,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.Free = true
+
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
@@ -262,6 +266,8 @@ ATT.ExcludeElements = {"uplp_r870_bar_police", "uplp_r870_bar_usmc"}
 
 -- Negatives
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_m590_rs_railsight")
 
 ---------- uplp_m590_rs_winged
@@ -280,6 +286,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- Negatives
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_m590_rs_winged")
 
 ---------- uplp_m590_rs_ghost
@@ -297,6 +305,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- Positives
 
 -- Negatives
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_m590_rs_ghost")
 
@@ -374,6 +384,8 @@ ATT.Icon = Material(iconfolder .. "heat.png", "mips smooth")
 ATT.Category = "uplp_m590_heatshield"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_m590_heatshield")
 
 ---------- uplp_m590_shellholder
@@ -387,5 +399,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "holder.png", "mips smooth")
 ATT.Category = "uplp_m590_shellholder"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_m590_shellholder")

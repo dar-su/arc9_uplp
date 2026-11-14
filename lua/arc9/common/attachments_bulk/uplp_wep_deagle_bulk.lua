@@ -315,6 +315,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_deagle_skin_black"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_black")
 
 ---------- uplp_deagle_skin_gold
@@ -332,6 +334,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_deagle_skin_gold"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_gold")
 
 ---------- uplp_deagle_skin_blue
@@ -348,6 +352,8 @@ ATT.Category = "uplp_deagle_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_deagle_skin_blue"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_blue")
 
@@ -458,5 +464,7 @@ ATT.Category = "uplp_deagle_skin_frame"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_deagle_skin_frame"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_deagle_skin_frame")

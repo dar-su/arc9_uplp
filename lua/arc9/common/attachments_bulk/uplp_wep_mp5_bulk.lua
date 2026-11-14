@@ -209,6 +209,8 @@ ATT.SwayAddSights = 0.5
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1.5, 3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1.5, 0, 0) end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_mp5_stock_buffer")
 
 ---------- uplp_mp5_stock_pdw

@@ -52,6 +52,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_old"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_old")
 
 -------------------------------------------
@@ -68,6 +70,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_rpk"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk")
 
@@ -165,6 +169,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_wood"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_wood")
 
@@ -382,6 +388,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_hg_12", "ak12_part"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_12")
 
 -------------------------------------------
@@ -459,5 +467,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 ATT.ActivateElements = {"uplp_ak_hg_rpk74"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_hg_rpk74")

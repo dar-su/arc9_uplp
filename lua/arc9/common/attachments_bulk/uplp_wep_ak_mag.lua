@@ -76,6 +76,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_bak.mdl"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_bak")
 
 -------------------------------------------
@@ -94,6 +96,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762.mdl"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_std")
 
 -------------------------------------------
@@ -110,6 +114,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_12.mdl"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_12")
 
@@ -136,6 +142,8 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     end
     return data
 end
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_old")
 
@@ -164,6 +172,8 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
 end
 
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_oldest")
 
 -------------------------------------------
@@ -181,6 +191,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_762_pmag.mdl"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_pmag")
 
 -------------------------------------------
@@ -197,6 +209,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Folder = "7.62"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak762_mag_pmag_banan.mdl"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_mag_762_30_pmagb")
 

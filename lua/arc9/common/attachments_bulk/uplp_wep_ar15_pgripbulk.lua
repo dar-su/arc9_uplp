@@ -191,6 +191,8 @@ ATT.ModelBodygroups = "0"
 ATT.Category = "uplp_ar15_pgrip"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_pgrip_std")
 
 

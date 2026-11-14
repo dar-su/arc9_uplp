@@ -11,11 +11,13 @@ def resize_images(input_dir, target_size=256):
 
                 # Open the image file
                 with Image.open(input_path) as img:
-                    # Resize the image
-                    resized_img = img.resize((target_size, target_size))
+                    # Check if the image is already the target size
+                    if img.size != (target_size, target_size):
+                        # Resize the image
+                        resized_img = img.resize((target_size, target_size))
 
-                    # Save the resized image, overwriting the existing file
-                    resized_img.save(input_path)
+                        # Save the resized image, overwriting the existing file
+                        resized_img.save(input_path)
 
 if __name__ == "__main__":
     # Use the current working directory as the input directory

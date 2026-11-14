@@ -32,6 +32,8 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(-13.2, -2.3, 6.35)
 
+ATT.Free = true
+
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_rec_vityaz")
 
@@ -56,6 +58,8 @@ ATT.Model = "models/weapons/arc9/uplp/ak_lhik_short.mdl"
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 ATT.ModelOffset = Vector(-13.2, -2.3, 6.35)
+
+ATT.Free = true
 
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/ak_mag_919_tac.mdl"
 
@@ -365,5 +369,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.Icon = Material(iconfolder .. "mag/b.png", "mips smooth")
 ATT.Category = "uplp_ak_smg_bizon_optic_alt"
+
+ATT.Free = true
+ATT.Hidden = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_smg_bizon_optic_alt")

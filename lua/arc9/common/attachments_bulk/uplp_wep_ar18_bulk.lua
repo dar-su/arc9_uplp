@@ -218,6 +218,8 @@ ATT.Attachments = {
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar18_stock_buffer")
 
 -------------------- Magazines

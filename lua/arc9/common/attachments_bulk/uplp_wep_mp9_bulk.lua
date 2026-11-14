@@ -125,6 +125,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_mp9_stock_strap"}
 
+ATT.Free = true
+
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_stock_strap")
 
@@ -424,5 +426,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "white.png", "mips smooth")
 ATT.Category = "uplp_mp9_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_mp9_skin_white")

@@ -466,6 +466,8 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_hk")
@@ -599,6 +601,8 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
     return data
 end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_pmag30")
 
 
@@ -663,6 +667,8 @@ ATT.ActivateElements = {"uplp_ar15_mag"}
 -- ATT.SortOrder = 0
 ATT.Category = "uplp_ar15_556_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_mag_stanag30")
 

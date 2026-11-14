@@ -16,6 +16,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 
 
+ATT.Free = true
+
 ATT.ActivateElements = {"use_optics"}
 
 ARC9.LoadAttachment(ATT, "uplp_fal_rec_para")
@@ -94,6 +96,9 @@ ATT.LHIK = true
 ATT.LHIK_Priority = 1
 -- ATT.LHIK_PriorityHook = function(wep, val) print(val, wep) return 11  end
 ATT.ModelOffset = Vector(-25.5, -2.2, 2.5)
+
+ATT.Free = true
+ATT.Hidden = true
 
 ARC9.LoadAttachment(ATT, "uplp_fal_hg_aus_extralhik")
 
@@ -431,6 +436,8 @@ ATT.Attachments = {
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_fal_stock_buffer")
 

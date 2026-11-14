@@ -415,6 +415,8 @@ ATT.Hook_TranslateAnimation = function(wep, anim)
     end
 end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_g36_stock_buffer")
 
 
@@ -508,6 +510,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.AimDownSightsTimeAdd = -0.01
 ATT.SpeedMultShooting = 0.95
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_g36_top_modern")
 
 ---------- uplp_g36_top_sl8
@@ -525,6 +529,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.SwayMultSights = 0.9
 ATT.SpreadAddHipFire = 0.002
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_g36_top_sl8")
 
@@ -546,6 +552,8 @@ ATT.ActivateElements = {"uplp_shortopticonly"}
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.SpeedMultShooting = 0.9
 ATT.SwayMultSights = 1.1
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_g36_top_short")
 
@@ -619,6 +627,9 @@ ATT.BoneMerge = true
 
 ATT.Category = "uplp_g36_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
+ATT.Hidden = true
 
 ARC9.LoadAttachment(ATT, "uplp_g36_mag_30")
 

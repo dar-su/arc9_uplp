@@ -181,6 +181,9 @@ ATT.ShellSounds = {
     "uplp_urban_temp/m203/40mm_casing_1.ogg",
 }
 
+ATT.Free = true
+ATT.Hidden = true
+
 ARC9.LoadAttachment(ATT, "uplp_ks23_shell_buck")
 
 ---------- uplp_ks23_shell_slug

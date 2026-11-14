@@ -673,6 +673,8 @@ ATT.SpreadAddHipFire = -0.01
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
 
+ATT.Free = true
+
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(1, -1, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(1, 0, 0) end
 
@@ -747,6 +749,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_awp_rs"}
 ATT.ExcludeElements = {"uplp_awp_brl_aws"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_awp_rs")
 

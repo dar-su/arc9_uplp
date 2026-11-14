@@ -120,6 +120,8 @@ ATT.SpeedAdd = 0.05
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_asval_stock_buffer")
 
 ---------- uplp_asval_stock_vss

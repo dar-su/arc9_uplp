@@ -14,6 +14,8 @@ ATT.Icon = Material(iconfolder .. "blk.png", "mips smooth")
 ATT.Category = "uplp_knife_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_knife_skin_black")
 
 ---------- uplp_knife_skin_blue
@@ -29,6 +31,8 @@ ATT.Icon = Material(iconfolder .. "blu.png", "mips smooth")
 ATT.Category = "uplp_knife_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_knife_skin_blue")
 
 ---------- uplp_knife_skin_chrome
@@ -43,6 +47,8 @@ ATT.Icon = Material(iconfolder .. "chrom.png", "mips smooth")
 
 ATT.Category = "uplp_knife_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_knife_skin_chrome")
 
@@ -74,6 +80,8 @@ ATT.Icon = Material(iconfolder .. "red.png", "mips smooth")
 ATT.Category = "uplp_knife_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_knife_skin_red")
 
 ---------- uplp_knife_skin_orange
@@ -88,5 +96,7 @@ ATT.Icon = Material(iconfolder .. "orange.png", "mips smooth")
 
 ATT.Category = "uplp_knife_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_knife_skin_orange")

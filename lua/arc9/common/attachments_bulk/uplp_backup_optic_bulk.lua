@@ -120,4 +120,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(0, 0, -0.12)
 
+ATT.Free = true
+ATT.Hidden = true
+
 ARC9.LoadAttachment(ATT, "uplp_backup_optic_is_front")

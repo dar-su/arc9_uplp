@@ -55,6 +55,9 @@ ATT.ModelOffset = Vector(-21.4, -3.0, 6.0) -- adjust later maybe
 ATT.LHIK = true
 ATT.LHIK_Priority = 0
 
+ATT.Free = true
+ATT.Hidden = true
+
 ARC9.LoadAttachment(ATT, "uplp_r870_bar_serbu_extralhik")
 
 ---------- uplp_r870_bar_lessmag
@@ -548,6 +551,8 @@ ATT.Attachments = {
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3.5, -3, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3.5, 0, 0) end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_r870_stock_buffer")
 
 
@@ -681,5 +686,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "gold.png", "mips smooth")
 ATT.Category = "uplp_r870_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_r870_gold")

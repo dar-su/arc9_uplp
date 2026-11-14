@@ -90,6 +90,8 @@ ATT.Icon = Material(iconfolder .. "rs.png", "mips smooth")
 ATT.Category = "uplp_usp_sight"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_usp_irons_tac")
 
 ---------- uplp_usp_muz_heavy
@@ -271,6 +273,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_usp_skin_chrome"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_usp_skin_black")
 
 ---------- uplp_usp_skin_white
@@ -286,6 +290,8 @@ ATT.Icon = Material(iconfolder .. "white.png", "mips smooth")
 ATT.Category = "uplp_usp_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_usp_skin_white")
 
 ---------- uplp_usp_skin_chrome
@@ -300,6 +306,8 @@ ATT.Icon = Material(iconfolder .. "chr.png", "mips smooth")
 
 ATT.Category = "uplp_usp_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_usp_skin_chrome")
 
@@ -318,6 +326,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_usp_skin_chrome"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_usp_skin_gold")
 
 ---------- uplp_usp_skin_blue
@@ -335,6 +345,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_usp_skin_chrome"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_usp_skin_blue")
 
 ---------- uplp_usp_skin_red
@@ -351,6 +363,8 @@ ATT.Category = "uplp_usp_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_usp_skin_chrome"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_usp_skin_red")
 

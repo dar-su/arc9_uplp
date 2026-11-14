@@ -20,6 +20,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_lower_b"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_scar_lower_b")
 
 -------------------- UPPER RECEIVERS
@@ -37,6 +39,8 @@ ATT.Category = "uplp_scar_upper"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_upper_hb"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_scar_upper_hb")
 
@@ -368,6 +372,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_stock_lb"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_lb")
 
 ---------- uplp_scar_stock_h
@@ -466,6 +472,8 @@ ATT.SpeedAdd = 0.05
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(2, -2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(2, 0, 0) end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_scar_stock_tube")
 
 ---------- uplp_scar_stock_pdw
@@ -536,6 +544,8 @@ ATT.Category = "uplp_scar_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_mag_hb"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_scar_mag_hb")
 
@@ -1051,6 +1061,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_pgrip_b"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_scar_pgrip_b")
 
 -------------------- IRON SIGHTS
@@ -1075,6 +1087,9 @@ ATT.ActivateElements = {"uplp_scar_is"}
 ATT.ExcludeElements = {"uplp_scar_no_is"}
 
 ATT.ModelOffset = Vector(-0.42, 0, 0)
+
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_scar_is")
 
 -------------------- MUZZLES
@@ -1122,5 +1137,7 @@ ATT.Category = "uplp_scar_extra"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_scar_rail_ext"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_scar_rail_ext")

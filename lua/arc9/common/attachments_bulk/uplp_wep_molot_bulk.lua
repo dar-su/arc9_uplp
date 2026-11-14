@@ -135,6 +135,8 @@ ATT.ExcludeElements = {"uplp_molot_brl_mini", "uplp_molot_brl_micro"}
 
 ATT.AimDownSightsTimeAdd = 0.02
 
+ATT.Free = true
+
 ATT.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_grip"),
@@ -175,6 +177,8 @@ ATT.Category = "uplp_molot_handguard"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_molot_brl_mini", "uplp_molot_brl_micro"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_molot_hg_wood")
 

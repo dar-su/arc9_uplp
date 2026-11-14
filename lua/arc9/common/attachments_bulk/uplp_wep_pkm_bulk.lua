@@ -108,6 +108,8 @@ ATT.Icon = Material(iconfolder .. "black.png", "mips smooth")
 ATT.Category = "uplp_pkm_furniture"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_pkm_furn_poly")
 
 ---------- uplp_pkm_furn_zenit
@@ -202,6 +204,8 @@ ATT.ActivateElements = {"uplp_optic_used"}
 ATT.Category = "uplp_pkm_topcover"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_pkm_taccover")
 
 ---------- uplp_pkm_bipod
@@ -244,5 +248,7 @@ ATT.Category = "uplp_pkm_hg"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_pkm_brl_aek"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_pkm_handguard")

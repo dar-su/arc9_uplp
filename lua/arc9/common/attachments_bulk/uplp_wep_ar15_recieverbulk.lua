@@ -149,6 +149,8 @@ ATT.ActivateElements = {"uplp_ar15_reciever_m16", "uplp_ar15_rs_short", "uplp_ar
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_m16a3")
 
 ---------- uplp_ar15_reciever_a2
@@ -166,6 +168,8 @@ ATT.ActivateElements = {"uplp_ar15_reciever_a2", "uplp_ar15_rs_short", "uplp_ar1
 
 ATT.Category = "uplp_ar15_reciever"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_reciever_a2")
 

@@ -190,6 +190,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ShellModel = "models/weapons/arc9/uplp/shells/shell_red.mdl"
 
+ATT.Free = true
+ATT.Hidden = true
+
 ARC9.LoadAttachment(ATT, "uplp_sg_shell_red")
 
 -------------------------------------------

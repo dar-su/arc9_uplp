@@ -22,6 +22,8 @@ ATT.ExcludeElements = {"uplp_ar15_rs_short"}
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_mbus")
 
 
@@ -44,6 +46,8 @@ ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_scalar")
 
@@ -68,6 +72,8 @@ ATT.ExcludeElements = {"uplp_ar15_rs_short"}
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type1")
 
 
@@ -90,6 +96,8 @@ ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_type2")
 
@@ -114,6 +122,8 @@ ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_fs_utg")
 
 
@@ -137,5 +147,7 @@ ATT.ExcludeElements = {"uplp_ar15_rs_tall"}
 ATT.Category = "uplp_ar15_fs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.ModelOffset = Vector(-0.42, 0, 0)
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_fstroy")

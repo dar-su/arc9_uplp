@@ -32,6 +32,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_flat"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_flat")
 
 -------------------------------------------
@@ -47,6 +49,8 @@ ATT.Category = "uplp_ak_dc"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_old"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_old")
 
@@ -152,6 +156,8 @@ ATT.SpeedMultSights = 1.03
 ATT.SpreadAdd = 0.0008
 ATT.RecoilRandomSideAdd = 0.05
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_internals")
 
 
@@ -170,6 +176,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12alt","use_optics", "uplp_ak12_rearsight_m1"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12")
 
 -------------------------------------------
@@ -187,6 +195,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight_evo"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ak_dc_12_22")
 
 -------------------------------------------
@@ -203,6 +213,8 @@ ATT.Category = "uplp_ak_dc_12"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_ak_dc_12","uplp_ak_fs_12","use_optics", "uplp_ak12_rearsight"}
+
+ATT.Free = true
 
 ATT.Firemodes = {
     { Mode = -1, -- Full
@@ -238,6 +250,8 @@ ATT.Icon = Material(iconfolder12 .. "nstd.png", "mips smooth")
 
 ATT.Category = {"uplp_optic_dovetail_cosmetic"}
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ak_dovetail_visualonly")
 

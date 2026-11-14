@@ -419,6 +419,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.SwayMultSights = 0.9
 ATT.SpeedMultSights = 0.97
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_sr25_mag_20_old")
 ---------- uplp_sr25_mag_20_poly
 
@@ -439,6 +441,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.SwayMultSights = 1.1
 ATT.ReloadTimeMult = 0.98
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_mag_20_poly")
 
@@ -960,6 +964,8 @@ ATT.Icon = Material(iconfolder .. "blk.png", "mips smooth")
 
 ATT.Category = "uplp_mjolnir_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_mjolnir_black")
 

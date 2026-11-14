@@ -31,6 +31,8 @@ ATT.DrawFunc = function(swep, model) model:SetBodygroup(0,     6     + (swep:Get
     -- }
 -- }
 
+ATT.Free = true
+
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
@@ -66,6 +68,8 @@ ATT.ModelBodygroups = "c"
 
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_carry")
 
@@ -104,6 +108,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ModelOffset = Vector(-0.42, 0, 0)
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_mbus")
 
 
@@ -139,6 +145,8 @@ ATT.ModelOffset = Vector(-0.2, 0, 0)
 		-- IsIronSight = true,
     -- }
 -- }
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_scalar")
 
@@ -176,6 +184,8 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
     -- }
 -- }
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type1")
 
 
@@ -211,6 +221,8 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
 		-- IsIronSight = true,
     -- }
 -- }
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type2")
 
@@ -248,6 +260,8 @@ ATT.ModelOffset = Vector(-0.42, 0, 0)
     -- }
 -- }
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_ar15_rs_type3")
 
 
@@ -271,5 +285,7 @@ ATT.ExcludeElements = {"uplp_optic_used", "uplp_ar15_no_rs"}
 ATT.Category = "uplp_ar15_rs"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ModelOffset = Vector(-0.42, 0, 0)
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_sr25_rstroy")

@@ -21,6 +21,7 @@ ATT.ModelBodygroups = "1"
 ATT.Category = "uplp_ar15_chandle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_modern")
 
@@ -44,6 +45,7 @@ ATT.ModelBodygroups = "0"
 ATT.Category = "uplp_ar15_chandle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_std")
 
@@ -67,6 +69,7 @@ ATT.ModelBodygroups = "2"
 ATT.Category = "uplp_ar15_chandle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tac")
 
@@ -90,6 +93,7 @@ ATT.ModelBodygroups = "3"
 ATT.Category = "uplp_ar15_chandle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tacblack")
 
@@ -108,6 +112,7 @@ ATT.Icon = Material(iconfolder .. "cmod.png", "mips smooth")
 ATT.Category = "uplp_ar10_chandle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_sr25")
 
@@ -124,5 +129,7 @@ ATT.Icon = Material(iconfolder .. "ctac.png", "mips smooth")
 
 ATT.Category = "uplp_ar10_chandle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_ar15_chandle_tac_ar10")

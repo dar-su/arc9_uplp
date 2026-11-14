@@ -61,6 +61,8 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_muzzle_cage")
 
 
@@ -800,6 +802,8 @@ ATT.MuzzleParticleOverride = "muzzleflash_OTS"
 ATT.MuzzleParticleOverride_Priority = 10
 ATT.MuzzleDevice = true
 ATT.NoFlash = true
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_muzzle_xm")
 

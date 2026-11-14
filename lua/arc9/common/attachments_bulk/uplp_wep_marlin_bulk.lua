@@ -154,6 +154,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.RecoilMult = 0.95
 ATT.AimDownSightsTimeAdd = 0.02
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_hg_wood")
 
 ---------- uplp_marlin_hg_poly
@@ -170,6 +172,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.AimDownSightsTimeAdd = -0.03
 ATT.RecoilMult = 1.1
 ATT.SwayMultSights = 1.1
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_hg_poly")
 
@@ -254,6 +258,8 @@ ATT.RecoilMult = 0.9
 ATT.AimDownSightsTimeAdd = 0.01
 ATT.SprintToFireTimeAdd = 0.03
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_marlin_stock_wood")
 
 ---------- uplp_marlin_stock_poly
@@ -269,6 +275,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.RecoilMult = 1.15
 ATT.SpeedAdd = 0.03
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_marlin_stock_poly")
 

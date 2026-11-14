@@ -83,6 +83,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_bot_alt"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_aug_bot_alt")
 
 -------------------- BARRELS
@@ -199,6 +201,8 @@ ATT.HookP_TranslateSound = function(self, data) -- that is metal mag
 end
 
 ATT.ActivateElements = {"uplp_aug_mag_556_30p"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_aug_mag_556_30p")
 
@@ -491,6 +495,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_stock_white"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_aug_stock_white")
 
 ---------- uplp_aug_stock_tan
@@ -508,6 +514,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_stock_tan"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_aug_stock_tan")
 
 ---------- uplp_aug_stock_black
@@ -524,5 +532,7 @@ ATT.Category = "uplp_aug_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_aug_stock_black"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_aug_stock_black")

@@ -119,6 +119,8 @@ ATT.SwayAddSights = 0.5
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-3, 4, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-3, 0, 0) end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_vector_stock_buffer")
 
 
@@ -474,6 +476,8 @@ ATT.Icon = Material(iconfolder .. "blk.png", "mips smooth")
 ATT.Category = "uplp_vector_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_vector_skin_blk")
 
 ---------- uplp_vector_skin_tan
@@ -486,6 +490,8 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "tan.png", "mips smooth")
 ATT.Category = "uplp_vector_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_vector_skin_tan")
 
@@ -500,6 +506,8 @@ ATT.Icon = Material(iconfolder .. "orange.png", "mips smooth")
 ATT.Category = "uplp_vector_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_vector_skin_orange")
 
 ---------- uplp_vector_skin_purple
@@ -513,6 +521,8 @@ ATT.Icon = Material(iconfolder .. "pur.png", "mips smooth")
 ATT.Category = "uplp_vector_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_vector_skin_purple")
 
 ---------- uplp_vector_skin_red
@@ -525,5 +535,7 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "red.png", "mips smooth")
 ATT.Category = "uplp_vector_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_vector_skin_red")

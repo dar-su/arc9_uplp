@@ -193,6 +193,8 @@ ATT.DrawFunc = function(swep, model, wm)
     end
 end
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_1911_grip_acryl")
 
 ---------- uplp_1911_grip_hardballer

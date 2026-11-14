@@ -606,6 +606,8 @@ ATT.Model = "models/weapons/arc9/uplp/ak_stocks.mdl"
 ATT.ModelBodygroups = "f"
 ATT.ModelOffset = Vector(-9, -3.55, 4.9)
 
+ATT.Free = true
+
 -- ATT.Folder = "Buffer Tube"
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
@@ -643,6 +645,8 @@ ATT.ModelBodygroups = "c"
 ATT.ModelOffset = Vector(-8.9, -3.55, 4.85)
 
 -- ATT.Folder = "Buffer Tube"
+
+ATT.Free = true
 
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-2, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-2, 0, 0) end

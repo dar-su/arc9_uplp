@@ -169,6 +169,8 @@ ATT.SpeedMultSights = 0.9
 
 ATT.ExcludeElements = {"uplp_mp7_rec_proto"}
 
+ATT.Free = true
+
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_sight_folded")
 
@@ -205,6 +207,8 @@ ATT.DeployTimeMult = 0.85
 -- Negatives
 ATT.RecoilAutoControlMult = 0.9
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_mp7_grip_none")
 
 ---------- uplp_mp7_grip_folded
@@ -238,6 +242,8 @@ ATT.DeployTimeMult = 0.85
 
 -- Negatives
 ATT.RecoilAutoControlMult = 0.9
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_mp7_grip_folded")
 

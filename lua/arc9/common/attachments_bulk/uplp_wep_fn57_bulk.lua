@@ -96,6 +96,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_skin_tan_full"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_fn57_skin_tan_full")
 
 
@@ -115,6 +117,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_skin_tan_half"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_fn57_skin_tan_half")
 
 
@@ -133,5 +137,7 @@ ATT.Category = "uplp_fn57_skin"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ActivateElements = {"uplp_fn57_skin_panda"}
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_fn57_skin_panda")

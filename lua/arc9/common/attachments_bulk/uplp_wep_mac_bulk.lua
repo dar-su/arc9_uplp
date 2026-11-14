@@ -81,6 +81,8 @@ ATT.Attachments = {
     },
 }
 
+ATT.Free = true
+
 ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-1, 2, 0) end
 ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-1, 0, 0) end
 
@@ -328,6 +330,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 ATT.ExcludeElements = {"uplp_mac_rec_tac"}
 
+ATT.Free = true
+
 ARC9.LoadAttachment(ATT, "uplp_mac_strap_cosmetic")
 
 ---------- uplp_mac_bar_long
@@ -574,6 +578,8 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.ActivateElements = {"uplp_mac_rec_rail", "use_optics"}
 
 ATT.SwayAddSights = 0.3
+
+ATT.Free = true
 
 ARC9.LoadAttachment(ATT, "uplp_mac_rec_rail")
 
