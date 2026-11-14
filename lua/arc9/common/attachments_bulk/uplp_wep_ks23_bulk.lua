@@ -358,7 +358,7 @@ ATT.Hook_BulletImpact = function(wep, data)
     local maxrange = wep:GetProcessedValue("RangeMax", true) or 1024
     -- PrintTable(data)
 
-    if tr.Entity and (tr.Entity:IsPlayer() or tr.Entity:IsNPC()) and tr.Entity:GetActiveWeapon() then
+    if tr.Entity and (tr.Entity:IsPlayer() or tr.Entity:IsNPC()) and IsValid(tr.Entity:GetActiveWeapon()) then
         -- local delta = math.Clamp(range / maxrange, 0, 1)
         local dmg = data.dmgv / (data.dmg:GetDamage() or 1)
         local chance = math.random()
