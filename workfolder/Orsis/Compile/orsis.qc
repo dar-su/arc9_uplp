@@ -22,6 +22,7 @@ $bodygroup "mag" {
 	studio "mag5.smd"
 	studio "mag3.smd"
 	studio "mag7.smd"
+	studio "mag3t.smd"
 }
 $bodygroup "muzzle" {
 	studio "muzzle.smd"

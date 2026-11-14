@@ -848,6 +848,7 @@ SWEP.AttachmentElements = {
 
     ["uplp_orsis_mag_3"] = { Bodygroups = { { 4, 1 } } },
     ["uplp_orsis_mag_7"] = { Bodygroups = { { 4, 2 } } },
+    ["uplp_orsis_mag_thermite"] = { Bodygroups = { { 4, 3 } } },
 
     ["uplp_orsis_stock_sniper"] = { Bodygroups = { { 1, 1 } } },
     ["uplp_orsis_stock_atx"] = { Bodygroups = { { 1, 3 } } },

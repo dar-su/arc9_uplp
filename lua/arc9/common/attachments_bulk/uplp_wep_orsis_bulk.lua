@@ -138,7 +138,7 @@ ATT.SpeedAddSights = -0.04
 ATT.SwayMultSights = 1.25
 
 ARC9.LoadAttachment(ATT, "uplp_orsis_mag_7")
----------- uplp_orsis_mag_3
+---------- uplp_orsis_mag_thermite
 
 
 ATT = {}
@@ -147,14 +147,14 @@ ATT.PrintName = "3-Round Thermite Magazine"
 ATT.CompactName = "Thermite"
 ATT.Description = ATT.PrintName
 
-ATT.Icon = Material(iconfolder .. "3.png", "mips smooth")
+ATT.Icon = Material(iconfolder .. "3t.png", "mips smooth")
 
 ATT.Category = "uplp_orsis_mag"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.DropMagazineModel = "models/weapons/arc9/uplp/orsis_mag_3.mdl"
+ATT.DropMagazineModel = "models/weapons/arc9/uplp/orsis_mag_3t.mdl"
 
-ATT.ActivateElements = {"uplp_orsis_mag_3"}
+-- ATT.ActivateElements = {"uplp_orsis_mag_3"}
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" or anim == "inspect" or anim == "inspect_empty" then
@@ -168,7 +168,7 @@ ATT.SprintToFireTimeAdd = -0.02
 ATT.SpeedAddSights = 0.04
 ATT.SwayMultSights = 0.6
 
-ATT.PhysBulletMuzzleVelocityMult = 0.5
+ATT.PhysBulletMuzzleVelocityMult = 0.3
 
 ATT.DamageMaxOverride = 40
 ATT.DamageMinOverride = 40

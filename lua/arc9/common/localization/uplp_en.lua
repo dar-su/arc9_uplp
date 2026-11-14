@@ -2318,6 +2318,10 @@ L["uplp_orsis_mag_7.printname"] = "7-Round Magazine"
 L["uplp_orsis_mag_7.compactname"] = "7R"
 L["uplp_orsis_mag_7.description"] = "Extended <color=100,255,100>7-round</color> magazine for the Gryphon X108."
 
+L["uplp_orsis_mag_thermite.printname"] = "3-Round Magazine with Thermite Bullets"
+L["uplp_orsis_mag_thermite.compactname"] = "Thermite"
+L["uplp_orsis_mag_thermite.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108 with exclusive Thermite bullets, igniting targets at the point of impact. Please make better loc later. This att is WIP i think, i forgot 8z added that loll"
+
 ////// Stocks
 L["uplp_orsis_stock_sniper.printname"] = "Precision Stock"
 L["uplp_orsis_stock_sniper.compactname"] = "Precision"
