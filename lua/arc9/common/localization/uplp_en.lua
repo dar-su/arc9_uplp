@@ -2318,9 +2318,9 @@ L["uplp_orsis_mag_7.printname"] = "7-Round Magazine"
 L["uplp_orsis_mag_7.compactname"] = "7R"
 L["uplp_orsis_mag_7.description"] = "Extended <color=100,255,100>7-round</color> magazine for the Gryphon X108."
 
-L["uplp_orsis_mag_thermite.printname"] = "3-Round Magazine with Thermite Bullets"
-L["uplp_orsis_mag_thermite.compactname"] = "Thermite"
-L["uplp_orsis_mag_thermite.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108 with exclusive Thermite bullets, igniting targets at the point of impact. Please make better loc later. This att is WIP i think, i forgot 8z added that loll"
+L["uplp_orsis_mag_thermite.printname"] = "3-Round Magazine w/ Thermite Rounds"
+L["uplp_orsis_mag_thermite.compactname"] = "3R Th."
+L["uplp_orsis_mag_thermite.description"] = "Shortened <color=255,100,100>3-round</color> magazine for the Gryphon X108 loaded with rounds with Thermite.\n\n<color=255,255,100>Ignites</color> the target on hit."
 
 ////// Stocks
 L["uplp_orsis_stock_sniper.printname"] = "Precision Stock"
@@ -4081,3 +4081,18 @@ L["uplp_2011_slide_vshort.description"] = "Even more shortened slide and custom 
 L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
 L["uplp_2011_sight_alt.compactname"] = "Alternative"
 L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron sights for the M2K11. Style depends on equipped slide."
+
+
+//////////////////// Mosin-Nagant M1891
+L["uplp_weapon_mosin"] = "Three-Line"
+L["uplp_weapon_mosin_desc"] = "The Three-Line is a bolt-action, magazine-fed rifle of Russian origin, originally adopted by the Imperial Russian Army in 1891. Renowned for its ruggedness, reliability, and relatively simple construction, it saw service across countless conflicts around the globe, and underwent several modifications throughout its history. Its exceptionally long service life, spanning well over a century, makes it one of the longest-serving military rifle designs in history."
+
+L["uplp_weapon_mosin_real"] = "Mosin-Nagant M1891"
+
+L["uplp_weapon_mosin_manufacturer"] = "Tula"
+
+/////////// Attachments
+////// Pistol Grip
+-- L["uplp_mosin_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
+-- L["uplp_mosin_grip_skeleton.compactname"] = "Skeleton"
+-- L["uplp_mosin_grip_skeleton.description"] = "Lightweight pistol grip with glass insert. Also allows the user to attach an <color=100,219,255>image</color> or <color=100,219,255>sticker</color> inside. Personalization at its finest!"

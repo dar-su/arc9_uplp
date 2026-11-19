@@ -1124,6 +1124,7 @@ L["uplp_orsis_barrel_short.truedescription"] = "Укороченная конф�
 ////// Magazines
 L["uplp_orsis_mag_3.truedescription"] = "Укороченный <color=255,100,100>3-зарядный</color> магазин для ОРСИС 12.7."
 L["uplp_orsis_mag_7.truedescription"] = "Расширенный <color=100,255,100>7-зарядный</color> магазин для ОРСИС 12.7."
+-- L["uplp_orsis_mag_thermite.truedescription"] = "Shortened <color=255,100,100>3-round</color> magazine for the ORSIS 12.7 loaded with rounds with Thermite.\n\n<color=255,255,100>Ignites</color> the target on hit."
 
 ////// Stocks
 L["uplp_orsis_stock_sniper.truedescription"] = "Конфигурация приклада для стрельбы на дальние дистанции."
@@ -1945,3 +1946,8 @@ L["uplp_2011_mag_24.truedescription"] = "24-round magazine for the Staccato P."
 
 ////// Slides
 L["uplp_2011_sight_alt.truedescription"] = "Alternative pair of front and rear iron sights for the Staccato P. Style depends on equipped slide."
+
+
+//////////////////// Mosin-Nagant M1891
+L["uplp_weapon_true_mosin"] = "Винтовка Мосина образца 1891 года"
+-- L["uplp_weapon_true_mosin_desc"] = "The Mosin-Nagant is a bolt-action, magazine-fed rifle of Russian origin, originally adopted by the Imperial Russian Army in 1891. Renowned for its ruggedness, reliability, and relatively simple construction, it saw service across countless conflicts around the globe, and underwent several modifications throughout its history. Its exceptionally long service life, spanning well over a century, makes it one of the longest-serving military rifle designs in history."

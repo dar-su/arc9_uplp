@@ -2303,6 +2303,10 @@ L["uplp_orsis_mag_7.printname"] = "7-Patronersmagasin"
 L["uplp_orsis_mag_7.compactname"] = "7P"
 L["uplp_orsis_mag_7.description"] = "Förlängt <color=100,255,100>7-patronersmagasin</color> till Gryphon X108."
 
+L["uplp_orsis_mag_thermite.printname"] = "3-Patronersmagasin med Termitskott"
+L["uplp_orsis_mag_thermite.compactname"] = "3P T.S."
+L["uplp_orsis_mag_thermite.description"] = "Förkortat <color=255,100,100>3-Patronersmagasin</color> till Gryphon X108, laddat med Termitpatroner.\n\n<color=255,255,100>Tänder fyr</color> på måltavlan vid träff."
+
 ////// Stocks
 L["uplp_orsis_stock_sniper.printname"] = "Precisionskolv"
 L["uplp_orsis_stock_sniper.compactname"] = "Precision"
@@ -3983,3 +3987,12 @@ L["uplp_rpg7_rocket_shovel.description"] = "En bondes bästa vän, och din målt
 -- L["uplp_2011_sight_alt.printname"] = "Alternative Iron Sights"
 -- L["uplp_2011_sight_alt.compactname"] = "Alternative"
 -- L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron sights for the M2K11. Style depends on equipped slide."
+
+
+//////////////////// Mosin-Nagant M1891
+-- L["uplp_weapon_mosin"] = "Three-Line"
+-- L["uplp_weapon_mosin_desc"] = "The Three-Line is a bolt-action, magazine-fed rifle of Russian origin, originally adopted by the Imperial Russian Army in 1891. Renowned for its ruggedness, reliability, and relatively simple construction, it saw service across countless conflicts around the globe, and underwent several modifications throughout its history. Its exceptionally long service life, spanning well over a century, makes it one of the longest-serving military rifle designs in history."
+
+-- L["uplp_weapon_mosin_real"] = "Mosin-Nagant M1891"
+
+-- L["uplp_weapon_mosin_manufacturer"] = "Tula"
