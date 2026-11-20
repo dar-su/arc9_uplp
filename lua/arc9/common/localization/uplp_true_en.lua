@@ -980,8 +980,8 @@ L["uplp_weapon_true_fn57_desc"] = "The FN Five-seven Mk3 MRD is a semi-automatic
 
 /////////// Attachments
 ////// Mags
-L["uplp_fn57_mag_ext.printname"] = "ProMag Industries FN Five-seveN 27-Round"
-L["uplp_fn57_mag_ext.compactname"] = "ProMag 27R"
+L["uplp_fn57_mag_ext.truename"] = "ProMag Industries FN Five-seveN 27-Round"
+L["uplp_fn57_mag_ext.truecompactname"] = "ProMag 27R"
 L["uplp_fn57_mag_ext.truedescription"] = "Aftermarket 27-round extended magazine for the FN Five-seven."
 
 ////// Trigger
@@ -1975,3 +1975,31 @@ L["uplp_2011_sight_alt.truedescription"] = "Alternative pair of front and rear i
 //////////////////// Mosin-Nagant M1891
 L["uplp_weapon_true_mosin"] = "Mosin-Nagant M1891"
 L["uplp_weapon_true_mosin_desc"] = "The Mosin-Nagant is a bolt-action, magazine-fed rifle of Russian origin, originally adopted by the Imperial Russian Army in 1891. Renowned for its ruggedness, reliability, and relatively simple construction, it saw service across countless conflicts around the globe, and underwent several modifications throughout its history. Its exceptionally long service life, spanning well over a century, makes it one of the longest-serving military rifle designs in history."
+
+/////////// Attachments
+////// Barrels
+L["uplp_mosin_brl_obrez.truedescription"] = "Sawed-off Mosin-Nagant barrel. Not recommended if you value range."
+
+////// Stocks
+L["uplp_mosin_stock_polymer.truedescription"] = "Custom-made stock for Mosin-Nagant rifles, modernizing it with a polymer appearance."
+L["uplp_mosin_stock_obrez.truedescription"] = "Sawed-off Mosin-Nagant stock. Perfect if you enjoy to move faster but at the cost of stability."
+L["uplp_mosin_stock_pgrip.truedescription"] = "Custom-made but crudely attached pistol grip for the Mosin-Nagant without a stock to shoulder the rifle with.\n\nForces the user to wield the rifle one-handed. Not recommended for those without the strength to carry a rifle one-handed."
+
+L["uplp_mosin_stock_awp.truename"] = "Crude AI AW Stock"
+L["uplp_mosin_stock_awp.truecompactname"] = "AI AW"
+L["uplp_mosin_stock_awp.truedescription"] = "Custom-made stock for the Mosin-Nagant that uses the shell of the AI AW."
+
+L["uplp_mosin_stock_atx.truename"] = "Crude AI AT-CX Stock"
+L["uplp_mosin_stock_atx.truecompactname"] = "AI AT-CX"
+L["uplp_mosin_stock_atx.truedescription"] = "Custom-made stock for the Mosin-Nagant that uses the shell of the sporty AT-CX Stocks originally intended for the AI AW."
+
+////// Other
+L["uplp_mosin_bayonet.truedescription"] = "Barrel-mounted bayonet for the Mosin-Nagant, allowing quick and deadly attacks without firing a shot.\n\nDespite resembling a spear, it is ill-advised to throw it like one."
+
+L["uplp_mosin_supp.truename"] = "BraMit Suppressor"
+L["uplp_mosin_supp.truecompactname"] = "BraMit"
+L["uplp_mosin_supp.truedescription"] = "Old-school suppressor specifically made for the Mosin-Nagant."
+
+L["uplp_mosin_pu.truename"] = "3.5x PU Scope"
+L["uplp_mosin_pu.truecompactname"] = "3.5x PU"
+L["uplp_mosin_pu.truedescription"] = "Soviet-manufactured telescopic sight made for the Mosin-Nagant."

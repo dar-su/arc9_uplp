@@ -980,8 +980,8 @@ L["uplp_weapon_true_fn57_desc"] = "FN Five-seven Mk3 MRD - полуавтома�
 
 /////////// Attachments
 ////// Mags
-L["uplp_fn57_mag_ext.printname"] = "ProMag Industries FN Five-seveN 27 патронов"
-L["uplp_fn57_mag_ext.compactname"] = "ProMag 27R"
+L["uplp_fn57_mag_ext.truename"] = "ProMag Industries FN Five-seveN 27 патронов"
+L["uplp_fn57_mag_ext.truecompactname"] = "ProMag 27R"
 L["uplp_fn57_mag_ext.truedescription"] = "Расширенный магазин на 27 патронов для FN Five-seven."
 
 ////// Trigger
