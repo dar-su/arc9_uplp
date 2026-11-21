@@ -338,7 +338,9 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- bayonet shit by mytton thanks
 
 ATT.Bash = true
+ATT.BashUBGL = false
 ATT.PrimaryBash = false
+ATT.BashImpact = false
 ATT.BashDamageType = DMG_SLASH
 ATT.BashDamage = 30
 ATT.BashLungeRange = 0
@@ -346,10 +348,36 @@ ATT.BashRange = 124
 ATT.PreBashTime = 0.05
 ATT.PostBashTime = 0.4
 
+local function sprintfuk(self)
+    local owner = self:GetOwner()
+
+    if !owner:IsValid() or owner:IsNPC() then
+        return false
+    end
+    if owner:KeyDown(IN_ATTACK2) then return end
+    if self:GetInSights() then return false end
+    if self:GetCustomize() then return false end
+    -- if self:GetIsNearWall() then return true end
+    if !owner:KeyDown(IN_SPEED) then return false end
+    if !owner:OnGround() or owner:GetMoveType() == MOVETYPE_NOCLIP then return false end
+    if !owner:KeyDown(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT) then return false end
+    if !owner:IsSprinting() then return false end
+
+    if (self:GetAnimLockTime() > CurTime()) and self:GetProcessedValue("NoSprintWhenLocked", true) then
+        return false
+    end
+
+    if owner.GetSliding and owner:GetSliding() then return false end
+
+    if owner:Crouching() then return false end
+
+    return true
+end
+
 ATT.BashDamageHook = function(wep, dmg)
 	--if wep:GetOwner():KeyDown(IN_SPEED) and wep:GetOwner():KeyDown(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT) and !wep:GetUBGL() then
-	if wep:GetIsSprinting() and !wep:GetUBGL() then -- this does the same thing
-		return dmg * 4
+	if sprintfuk(wep) and !wep:GetUBGL() then -- this does the same thing
+		return dmg * 2
 	end
 end
 

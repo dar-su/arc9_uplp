@@ -254,22 +254,37 @@ SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
 SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mosin_clip.mdl"
 SWEP.DropMagazineTime = 1337
-SWEP.DropMagazineQCA = 3
+SWEP.DropMagazineQCA = 4
 SWEP.DropMagazinePos = Vector(0, 0, 0)
 SWEP.DropMagazineAng = Angle(90, 90, 90)
-SWEP.DropMagazineVelocity = Vector(0, -60, -20)
+SWEP.DropMagazineVelocity = Vector(40, 60, 0)
+
+SWEP.DropMagazineSounds = {
+    ")uplp_urban_temp/m60/" .. "links-01.ogg",
+    ")uplp_urban_temp/m60/" .. "links-02.ogg",
+    ")uplp_urban_temp/m60/" .. "links-03.ogg",
+    ")uplp_urban_temp/m60/" .. "links-04.ogg",
+    ")uplp_urban_temp/m60/" .. "links-05.ogg",
+    ")uplp_urban_temp/m60/" .. "links-06.ogg",
+    ")uplp_urban_temp/m60/" .. "links-07.ogg",
+    ")uplp_urban_temp/m60/" .. "links-08.ogg",
+    ")uplp_urban_temp/m60/" .. "links-09.ogg",
+    ")uplp_urban_temp/m60/" .. "links-10.ogg",
+    ")uplp_urban_temp/m60/" .. "links-11.ogg",
+    ")uplp_urban_temp/m60/" .. "links-12.ogg",
+}
 
 SWEP.ReloadInSights = false
 SWEP.ShotgunReload = false
 -- SWEP.ShotgunReloadIncludesChamber = true
 
 function SWEP:GetShouldShotgunReload()
-    return self:Clip1() > 1 and !self:GetElements()["mosin_sniper_bolt"] and !self.nosgreload
+    return (self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sniper_bolt"]
 end
 ---- Sounds
 
 local pathUTC = ")uplp_urban_temp/common/"
-local pathUTREAL = ")uplp_rz/lever/"
+local pathUTREAL = ")uplp_rz/mosin/"
 
 SWEP.ShootSound = {
     pathUTREAL .. "fire-01.wav",
@@ -278,9 +293,9 @@ SWEP.ShootSound = {
 }
 
 SWEP.ShootSoundSilenced = {
-    ")uplp_urban_temp/scar/" .. "fire-762-sup-01.wav",
-    ")uplp_urban_temp/scar/" .. "fire-762-sup-02.wav",
-    ")uplp_urban_temp/scar/" .. "fire-762-sup-03.wav",
+    ")uplp_urban_temp/awp/" .. "fire-sup-01.wav",
+    ")uplp_urban_temp/awp/" .. "fire-sup-02.wav",
+    ")uplp_urban_temp/awp/" .. "fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
@@ -311,18 +326,9 @@ SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "generictails/fire-dist-int-pistol-light-02.wav",
     pathUTC .. "generictails/fire-dist-int-pistol-light-03.wav",
 }
-
-SWEP.DropMagazineSounds = {
-    pathUTC .. "rifle_magdrop_1.ogg",
-    pathUTC .. "rifle_magdrop_2.ogg",
-    pathUTC .. "rifle_magdrop_3.ogg",
-    pathUTC .. "rifle_magdrop_4.ogg",
-    pathUTC .. "rifle_magdrop.ogg",
-}
-
 SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
 
-SWEP.TriggerUpSound = {pathUTREAL .. "trigger2.wav"}
+SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
 
 ---- Animations
 -- HideBones, BulletBones, etc.
@@ -334,20 +340,30 @@ SWEP.BulletBones = {
     [5] = "bullet5",
 }
 
--- SWEP.ReloadHideBoneTables = {
---     [1] = {
---         "mag",
---         "round1",
---         "round2",
---         "round3",
---     },
--- }
+SWEP.HideBones = {
+    "clip",
+}
+
+SWEP.ReloadHideBoneTables = {
+    [1] = {
+        "clip",
+    },
+    [2] = {
+        "clip",
+        "bullet1",
+        "bullet2",
+        "bullet3",
+        "bullet4",
+        "bullet5",
+    },
+}
+
+SWEP.ReloadHideBonesFirstPerson = true
 
 local mechh = {
-    ")uplp_urban_temp/awp/" .. "mech-01.wav",
-    ")uplp_urban_temp/awp/" .. "mech-02.wav",
-    ")uplp_urban_temp/awp/" .. "mech-03.wav",
-    ")uplp_urban_temp/awp/" .. "mech-04.wav",
+    pathUTREAL .. "mech-01.wav",
+    pathUTREAL .. "mech-02.wav",
+    pathUTREAL .. "mech-03.wav",
 }
 
 local thetoggle = {{
@@ -398,8 +414,10 @@ SWEP.Animations = {
         FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
-            {s = pathUTREAL .. "cycle1.ogg",          t = 0.0},
-            {s = pathUTREAL .. "cycle2.ogg",          t = 0.05},
+            {s = pathUTREAL .. "up.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            {s = pathUTREAL .. "forth.wav",          t = 10/30},
+            {s = pathUTREAL .. "down.wav",          t = 20/30},
         },
     },
     ["ready"] = {
@@ -408,8 +426,10 @@ SWEP.Animations = {
         MinProgressTime = 0.5,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
-            {s = pathUTREAL .. "cycle1.ogg",          t = 0.2},
-            {s = pathUTREAL .. "cycle2.ogg",          t = 0.5},
+            {s = pathUTREAL .. "up.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            {s = pathUTREAL .. "forth.wav",          t = 10/30},
+            {s = pathUTREAL .. "down.wav",          t = 20/30},
             { s = pathUTC .. "rattle2.ogg", t = 45 / 60, v = 0.8 },
         },
     },
@@ -477,10 +497,22 @@ SWEP.Animations = {
 
 
     ["reload"] = {
-        Source = "reload_empty",
+        Source = "reload_empty", -- needs new anim with hammer uncocked
         EjectAt = 0.45,
+        RestoreAmmo = 4,
+        DropMagAt = 67/30,
         EventTable = {
+            {s = pathUTREAL .. "up.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            
+            {s = pathUTREAL .. "forth.wav",          t = 70/30},
+            {s = pathUTREAL .. "down.wav",          t = 80/30},
+
             { s = ShellInsert, t = 2 / 30 },
+
+            {hide = 2, t = 0},
+            {hide = 0, t = 20/30},
+            {hide = 1, t = 67/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -489,8 +521,19 @@ SWEP.Animations = {
     ["reload_empty"] = {
         Source = "reload_empty",
         EjectAt = 0.45,
+        DropMagAt = 67/30,
         EventTable = {
+            {s = pathUTREAL .. "up.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            
+            {s = pathUTREAL .. "forth.wav",          t = 70/30},
+            {s = pathUTREAL .. "down.wav",          t = 80/30},
+
             { s = ShellInsert, t = 2 / 30 },
+
+            {hide = 2, t = 0},
+            {hide = 0, t = 20/30},
+            {hide = 1, t = 67/30},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -502,9 +545,14 @@ SWEP.Animations = {
         RestoreAmmo = 1,
         -- MinProgress= 0.75,
         EventTable = {
+            {s = pathUTREAL .. "up.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+
             { s = UTCrattle, t = 0, v = 0.8 },
             { s = BulletsRattle, t = 0.05},
             { s = ShellInsert, t = 2 / 30 },
+
+            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -516,11 +564,14 @@ SWEP.Animations = {
         EjectAt = 0.45,
         RestoreAmmo = 1,
         EventTable = {
-            {s = pathUTREAL .. "cycle1.ogg",          t = 0.02},
-            {s = UTCrattle, t = 0, v = 0.8 },
-            {s = BulletsRattle, t = 0.35},
-            {s = pathUTREAL .. "mr73_round_insert-03.ogg", t = 0.6},
-            {s = pathUTREAL .. "cycle2.ogg",          t = 1.15},
+            {s = pathUTREAL .. "up.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+
+            { s = UTCrattle, t = 0, v = 0.8 },
+            { s = BulletsRattle, t = 0.05},
+            { s = ShellInsert, t = 2 / 30 },
+
+            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -535,6 +586,8 @@ SWEP.Animations = {
         EventTable = {
             { s = ShellInsert, t = 0 },
             { s = BulletsRattle, t = 0.1},
+
+            {hide = 1, t = 0},
         },
     },
     -- ["reload_insert_first"] = {
@@ -549,7 +602,12 @@ SWEP.Animations = {
         Source = "sgreload_finish",
         MinProgress = 0.75,
         EventTable = {
+            {s = pathUTREAL .. "forth.wav",          t = 0/30},
+            {s = pathUTREAL .. "down.wav",          t = 13/30},
+
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
+
+            {hide = 1, t = 0},
         },
         IKTimeLine = {
             { t = 0, lhik = 1 },
@@ -660,6 +718,9 @@ SWEP.Animations = {
     -- ["dryfire_empty"] = {
     --     Source = "modeswitch_empty",
     -- },
+    ["bash"] = {
+        Source = "fire",
+    },
 }
 
 ---- Attachments
