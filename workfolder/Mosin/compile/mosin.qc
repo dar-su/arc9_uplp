@@ -8,8 +8,8 @@ $bodygroup "bolt" {
 	studio "bolt snip.smd"
 }   
 $bodygroup "barrel" {
-	studio "barrl.smd"
 	studio "barrl c.smd"
+	studio "barrl.smd"
 	studio "barrl s.smd"
 	blank
 }
@@ -26,8 +26,8 @@ $bodygroup "stock" {
 	blank
 }
 $bodygroup "hg" {
-	studio "stok hg.smd"
 	studio "stok hg c.smd"
+	studio "stok hg.smd"
 	blank
 } 
 $bodygroup "fs" {
@@ -42,17 +42,17 @@ $bodygroup "fs" {
 
 $bodygroup "mz" {
 	blank
-	studio "bayonet.smd"
 	studio "bayonet c.smd"
+	studio "bayonet.smd"
 	studio "bayonet s.smd"
-	studio "silencer.smd"
 	studio "silencer c.smd"
+	studio "silencer.smd"
 	studio "silencer s.smd"
 }
 $bodygroup "tac" {
 	blank
-	studio "tac std.smd"
 	studio "tac c.smd"
+	studio "tac std.smd"
 	studio "tac poly.smd"
 	studio "tac awp.smd"
 }

@@ -4093,6 +4093,10 @@ L["uplp_weapon_mosin_manufacturer"] = "Tula"
 
 /////////// Attachments
 ////// Barrels
+L["uplp_mosin_brl_long.printname"] = "Long Barrel"
+L["uplp_mosin_brl_long.compactname"] = "Long"
+L["uplp_mosin_brl_long.description"] = "Default originally made for sniper troops in World War 2."
+
 L["uplp_mosin_brl_carbine.printname"] = "Carbine Barrel"
 L["uplp_mosin_brl_carbine.compactname"] = "Carbine"
 L["uplp_mosin_brl_carbine.description"] = "Shortened barrel originally made for noncombatant troops in World War 2."

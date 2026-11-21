@@ -165,3 +165,6 @@ SWEP.SpreadHookHipFire = function(wep, data)
         return Lerp(1 - sightAmt, data, data + addSpread * rec * mult)
     end
 end
+
+
+SWEP.StickersNoNocull = true
