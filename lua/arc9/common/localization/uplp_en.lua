@@ -4085,14 +4085,63 @@ L["uplp_2011_sight_alt.description"] = "Alternative pair of front and rear iron 
 
 //////////////////// Mosin-Nagant M1891
 L["uplp_weapon_mosin"] = "Three-Line"
-L["uplp_weapon_mosin_desc"] = "The Three-Line is a bolt-action, magazine-fed rifle of Russian origin, originally adopted by the Imperial Russian Army in 1891. Renowned for its ruggedness, reliability, and relatively simple construction, it saw service across countless conflicts around the globe, and underwent several modifications throughout its history. Its exceptionally long service life, spanning well over a century, makes it one of the longest-serving military rifle designs in history."
+L["uplp_weapon_mosin_desc"] = "The Three-Line is a bolt-action, magazine-fed rifle of Russian origin, originally adopted by the Imperial Russian Army in 1891. Renowned for its ruggedness, reliability, and relatively simple construction, it saw service across countless conflicts around the globe. Its exceptionally long service life, spanning well over a century, makes it one of the longest-serving military rifle designs in history."
 
 L["uplp_weapon_mosin_real"] = "Mosin-Nagant M1891"
 
 L["uplp_weapon_mosin_manufacturer"] = "Tula"
 
+L["uplp_weapon_mosin_obrez"] = "Obrez-Line"
+L["uplp_weapon_mosin_obrez_stop"] = "Obrez-Please-Stop"
+
 /////////// Attachments
-////// Pistol Grip
--- L["uplp_mosin_grip_skeleton.printname"] = "Lightweight Skeletonized Pistol Grip"
--- L["uplp_mosin_grip_skeleton.compactname"] = "Skeleton"
--- L["uplp_mosin_grip_skeleton.description"] = "Lightweight pistol grip with glass insert. Also allows the user to attach an <color=100,219,255>image</color> or <color=100,219,255>sticker</color> inside. Personalization at its finest!"
+////// Barrels
+L["uplp_mosin_brl_long.printname"] = "Long Barrel"
+L["uplp_mosin_brl_long.compactname"] = "Long"
+L["uplp_mosin_brl_long.description"] = "Default originally made for sniper troops in World War 2."
+
+-- L["uplp_mosin_brl_carbine.printname"] = "Carbine Barrel"
+-- L["uplp_mosin_brl_carbine.compactname"] = "Carbine"
+-- L["uplp_mosin_brl_carbine.description"] = "Shortened barrel originally made for noncombatant troops in World War 2."
+
+L["uplp_mosin_brl_obrez.printname"] = "Obrez Barrel"
+L["uplp_mosin_brl_obrez.compactname"] = "Obrez"
+L["uplp_mosin_brl_obrez.description"] = "Sawed-off Three-Line barrel. Not recommended if you value range."
+
+////// Stocks
+L["uplp_mosin_stock_polymer.printname"] = "Polymer Stock"
+L["uplp_mosin_stock_polymer.compactname"] = "Polymer"
+L["uplp_mosin_stock_polymer.description"] = "Custom-made stock for Three-Line rifles, modernizing it with a polymer appearance."
+
+L["uplp_mosin_stock_obrez.printname"] = "Obrez Stock"
+L["uplp_mosin_stock_obrez.compactname"] = "Obrez"
+L["uplp_mosin_stock_obrez.description"] = "Sawed-off Three-Line stock. Perfect if you enjoy to move faster but at the cost of stability."
+
+L["uplp_mosin_stock_pgrip.printname"] = "Crudely Attached Pistol Grip"
+L["uplp_mosin_stock_pgrip.compactname"] = "Pistol Grip"
+L["uplp_mosin_stock_pgrip.description"] = "Crudely attached AK pistol grip to the Three-Line receiver.\n\nForces the user to wield the rifle one-handed. Not recommended for those without the strength to carry a rifle one-handed."
+
+L["uplp_mosin_stock_awp.printname"] = "Crude AW Stock"
+L["uplp_mosin_stock_awp.compactname"] = "AW"
+L["uplp_mosin_stock_awp.description"] = "Custom-made stock for the Three-Line that uses the shell of the AW Sniper."
+
+L["uplp_mosin_stock_atx.printname"] = "Crude eXtreme Stock"
+L["uplp_mosin_stock_atx.compactname"] = "eXtreme"
+L["uplp_mosin_stock_atx.description"] = "Custom-made stock for the Three-Line that uses the shell of the sporty eXtreme Stocks originally intended for the AW Sniper."
+
+////// Other
+L["uplp_mosin_bayonet.printname"] = "Cruciform Bayonet"
+L["uplp_mosin_bayonet.compactname"] = "Bayonet"
+L["uplp_mosin_bayonet.description"] = "Barrel-mounted bayonet for the Three-Line, allowing quick and deadly attacks without firing a shot.\n\nDespite resembling a spear, it is ill-advised to throw it like one."
+
+L["uplp_mosin_supp.printname"] = "Ubiytsa Suppressor"
+L["uplp_mosin_supp.compactname"] = "Suppressor"
+L["uplp_mosin_supp.description"] = "Old-school suppressor specifically made for the Three-Line."
+
+L["uplp_mosin_pu.printname"] = "3.5x KP Optic" -- "Short-Range Scope" - "Короткий Прицел" (КП, i.e. "KP")
+L["uplp_mosin_pu.compactname"] = "3.5x KP"
+L["uplp_mosin_pu.description"] = "Soviet-manufactured telescopic sight made for the Three-Line."
+
+L["uplp_mosin_closerail.printname"] = "Closer Rail Mount"
+L["uplp_mosin_closerail.compactname"] = "Closer Mount"
+L["uplp_mosin_closerail.description"] = "Attaches a scope mount closer to the action.\n\nDisables <color=255,100,100>stripper clip reloading</color>."

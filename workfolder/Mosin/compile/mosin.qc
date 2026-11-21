@@ -8,8 +8,8 @@ $bodygroup "bolt" {
 	studio "bolt snip.smd"
 }   
 $bodygroup "barrel" {
-	studio "barrl.smd"
 	studio "barrl c.smd"
+	studio "barrl.smd"
 	studio "barrl s.smd"
 	blank
 }
@@ -26,8 +26,8 @@ $bodygroup "stock" {
 	blank
 }
 $bodygroup "hg" {
-	studio "stok hg.smd"
 	studio "stok hg c.smd"
+	studio "stok hg.smd"
 	blank
 } 
 $bodygroup "fs" {
@@ -42,33 +42,33 @@ $bodygroup "fs" {
 
 $bodygroup "mz" {
 	blank
-	studio "bayonet.smd"
 	studio "bayonet c.smd"
+	studio "bayonet.smd"
 	studio "bayonet s.smd"
-	studio "silencer.smd"
 	studio "silencer c.smd"
+	studio "silencer.smd"
 	studio "silencer s.smd"
 }
 $bodygroup "tac" {
 	blank
-	studio "tac std.smd"
 	studio "tac c.smd"
+	studio "tac std.smd"
 	studio "tac poly.smd"
 	studio "tac awp.smd"
 }
 
 $cdmaterials "models\weapons\arc9\uplp"
 
-$attachment "1" "body" 0.00 -0.33 31.00 rotate -90 -0 0
-$attachment "2" "body" 0.00 -0.30 -3.00 rotate 10 145 180
+$attachment "1" "body" 0.00 -0.33 23 rotate -90 -0 0
+$attachment "2" "body" 0.00 -0.35 -3.25 rotate -40 130 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "clip" 0 0 0 rotate -90 0 0
 
-$attachment "5" "body" 0.00 -0.33 23.00 rotate -90 -0 0 // compact barrel
+$attachment "5" "body" 0.00 -0.33 31.00 rotate -90 -0 0 // long barrel
 $attachment "6" "body" 0.00 -0.60 10.00 rotate -90 -0 0 // short
 
-$attachment "7" "body" 0.00 -0.60 37.00 rotate -90 -0 0 // sup + std barrel
-$attachment "8" "body" 0.00 -0.60 29.60 rotate -90 -0 0 // sup + compact
+$attachment "8" "body" 0.00 -0.60 29.60 rotate -90 -0 0 // sup + std barrel
+$attachment "7" "body" 0.00 -0.60 37.00 rotate -90 -0 0 // sup + long
 $attachment "9" "body" 0.00 -0.60 17.00 rotate -90 -0 0 // sup + short
  
 $surfaceprop "default"
@@ -160,6 +160,7 @@ $sequence "reload_empty" {
 	snap
 }
 
+// add reload empty but with hammer on place
 
 // $sequence "draw" {
 // 	"anims\draw2.smd"
