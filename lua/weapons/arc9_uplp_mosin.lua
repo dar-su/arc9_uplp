@@ -14,7 +14,7 @@ SWEP.Description = ARC9:GetPhrase("uplp_weapon_mosin_desc")
 SWEP.TrueName = ARC9:GetPhrase("uplp_weapon_true_mosin")
 SWEP.TrueDescription = ARC9:GetPhrase("uplp_weapon_true_mosin_desc")
 
-SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_lever") -- In the Customization Menu
+SWEP.Class = ARC9:GetPhrase("uplp_class_weapon_sniper") -- In the Customization Menu
 SWEP.SubCategory = ARC9:GetPhrase("uplp_category_weapon_sniper") -- In the Spawnmenu
 
 SWEP.UPLP_Class = "snip"
@@ -54,8 +54,16 @@ SWEP.TracerSize = 1
 SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_76254r.mdl"
 SWEP.ShellScale = 1
 SWEP.ShellPitch = 100
-SWEP.ShellVelocity = 0.6
+SWEP.ShellVelocity = 0.66
+SWEP.ShellAngleVelocity = 0.6
 SWEP.ShellSounds = ARC9.Shell308SoundsTable
+SWEP.EjectDelay = 0.45
+SWEP.ShellSmoke = true
+
+SWEP.ShellSmokeHook = function(swep, old) 
+    if swep:GetReloading() and swep:Clip1() > 0 then return false end
+    return old
+end
 
 SWEP.CaseEffectQCA = 2
 SWEP.CamQCA = 3
@@ -80,7 +88,7 @@ SWEP.WorldModelOffset = {
 }
 
 SWEP.ViewModelFOVBase = 65
-SWEP.ActivePos = Vector(0.5, 0, 0.8)
+SWEP.ActivePos = Vector(-0.5, 0, 0.5)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
@@ -131,7 +139,6 @@ SWEP.NoLastCycle = true
 SWEP.ManualActionNoLastCycle = true
 SWEP.ManualActionEjectAnyway = false
 SWEP.NoShellEject = true
-SWEP.EjectDelay = 0.4
 
 -- Recoil
 SWEP.Recoil = 1
@@ -227,26 +234,11 @@ SWEP.NPCWeight = 60
 
 -- Iron Sight and Sight Info
 SWEP.IronSights = {
-     Pos = Vector(-2.29, -5, 1.44),
+     Pos = Vector(-3.07, -5, 1.64),
      Ang = Angle(0, 0, 0),
      Magnification = 1.15,
      ViewModelFOV = 65,
 }
-
--- local is_railsight = {
---      Pos = Vector(-2.29, -4, 1.25),
---      Ang = Angle(-1.24211 + 0.3, -0.896527 - 0.4, 4.10095 - 0.5),
---      Magnification = 1.15,
---      ViewModelFOV = 55,
--- }
-
--- SWEP.IronSightsHook = function(self) -- If any attachments equipped should alter Irons
---     local attached = self:GetElements()
-
---     if attached["uplp_mosin_rs_railsight"] or attached["uplp_mosin_rs_railsight_long"] or attached["uplp_optic_used"] then
---         return is_railsight
---     end
--- end
 
 -- SWEP.LaserCorrectBySightAng = false
 
@@ -260,18 +252,20 @@ SWEP.CustomizeSnapshotFOV = 60
 -- Dropped Magazine
 SWEP.ShouldDropMag = false
 SWEP.ShouldDropMagEmpty = false
--- SWEP.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
--- SWEP.DropMagazineTime = 0.35
--- SWEP.DropMagazineTimeEmpty = 0.9
--- SWEP.DropMagazineQCA = 4
--- SWEP.DropMagazinePos = Vector(0, 0, 0)
--- SWEP.DropMagazineAng = Angle(90, 90, 90)
--- SWEP.DropMagazineVelocity = Vector(0, -20, -10)
+SWEP.DropMagazineModel = "models/weapons/arc9/uplp/mosin_clip.mdl"
+SWEP.DropMagazineTime = 1337
+SWEP.DropMagazineQCA = 3
+SWEP.DropMagazinePos = Vector(0, 0, 0)
+SWEP.DropMagazineAng = Angle(90, 90, 90)
+SWEP.DropMagazineVelocity = Vector(0, -60, -20)
 
 SWEP.ReloadInSights = false
-SWEP.ShotgunReload = true
-SWEP.ShotgunReloadIncludesChamber = true
+SWEP.ShotgunReload = false
+-- SWEP.ShotgunReloadIncludesChamber = true
 
+function SWEP:GetShouldShotgunReload()
+    return self:Clip1() > 1 and !self:GetElements()["mosin_sniper_bolt"] and !self.nosgreload
+end
 ---- Sounds
 
 local pathUTC = ")uplp_urban_temp/common/"
@@ -402,7 +396,7 @@ SWEP.Animations = {
         -- ShellEjectAt = 5,
         MinProgress = 0.65,
         FireASAP = true,
-        Mult = 1.1,
+        -- Mult = 1.1,
         EventTable = {
             {s = pathUTREAL .. "cycle1.ogg",          t = 0.0},
             {s = pathUTREAL .. "cycle2.ogg",          t = 0.05},
@@ -482,8 +476,29 @@ SWEP.Animations = {
     -- Reloads --
 
 
+    ["reload"] = {
+        Source = "reload_empty",
+        EjectAt = 0.45,
+        EventTable = {
+            { s = ShellInsert, t = 2 / 30 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+        },
+    },
+    ["reload_empty"] = {
+        Source = "reload_empty",
+        EjectAt = 0.45,
+        EventTable = {
+            { s = ShellInsert, t = 2 / 30 },
+        },
+        IKTimeLine = {
+            { t = 0, lhik = 1 },
+        },
+    },
+
     ["reload_start"] = {
-        Source = "sg_start",
+        Source = "sgreload_start",
         RestoreAmmo = 1,
         -- MinProgress= 0.75,
         EventTable = {
@@ -496,9 +511,9 @@ SWEP.Animations = {
         },
     },
     ["reload_start_empty"] = {
-        Source = "sg_start_empty",
+        Source = "sgreload_start_empty",
         MinProgress= 0.65,
-        EjectAt = 0.2,
+        EjectAt = 0.45,
         RestoreAmmo = 1,
         EventTable = {
             {s = pathUTREAL .. "cycle1.ogg",          t = 0.02},
@@ -514,7 +529,7 @@ SWEP.Animations = {
 
 
     ["reload_insert"] = {
-        Source = "sg_insert",
+        Source = "sgreload_insert",
         MinProgress = 0.5,
         Mult = 0.925,
         EventTable = {
@@ -522,16 +537,16 @@ SWEP.Animations = {
             { s = BulletsRattle, t = 0.1},
         },
     },
-    ["reload_insert_first"] = {
-        Source = "sg_insert_first",
-        MinProgress = 0.5,
-        EventTable = {
-            { s = ShellInsert, t = 0, v = 0.6 },
-        },
-    },
+    -- ["reload_insert_first"] = {
+    --     Source = "sg_insert_first",
+    --     MinProgress = 0.5,
+    --     EventTable = {
+    --         { s = ShellInsert, t = 0, v = 0.6 },
+    --     },
+    -- },
 
     ["reload_finish"] = {
-        Source = "sg_end",
+        Source = "sgreload_finish",
         MinProgress = 0.75,
         EventTable = {
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
@@ -540,16 +555,16 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
         },
     },
-    ["reload_finish_first"] = {
-        Source = "sg_end_first",
-        MinProgress = 0.75,
-        EventTable = {
-            { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
-        },
-        IKTimeLine = {
-            { t = 0, lhik = 1 },
-        },
-    },
+    -- ["reload_finish_first"] = {
+    --     Source = "sg_end_first",
+    --     MinProgress = 0.75,
+    --     EventTable = {
+    --         { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
+    --     },
+    --     IKTimeLine = {
+    --         { t = 0, lhik = 1 },
+    --     },
+    -- },
 
     -- Inspecc --
 
@@ -727,10 +742,17 @@ SWEP.AttachmentTableOverrides = {
     ["uplp_optic_pso_rail"] = { ModelOffset = Vector(0.7, 0, 0) },
 }
 
--- SWEP.Hook_TranslateAnimation = function(swep, anim)
---     if !IsValid(swep:GetOwner()) then return end
---     local eles = swep:GetElements()
 
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if !IsValid(swep:GetOwner()) then return end
+    local eles = swep:GetElements()
+    
+
+    if anim == "idle" and swep.nosgreload then swep.nosgreload = nil end
+
+    if anim == "reload" or anim == "reload_empty" then swep.nosgreload = true end
+
+    -- if (anim == "reload_insert" or anim == "reload_finish") and swep.nosgreload
 --     local empty = swep:Clip1() == 0
 
 --     if (anim == "reload_start" and empty) or anim == "reload_start_empty" then
@@ -741,7 +763,7 @@ SWEP.AttachmentTableOverrides = {
 --     end
 
 --     return anim
--- end
+end
 
 SWEP.AttachmentElements = {
     ["uplp_mosin_brl_long"] = { Bodygroups = { { 2, 1 } }, AttPosMods = { [4] = { Pos = Vector(0, 0.25, 31) } } },
@@ -790,6 +812,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_dovetail", "uplp_mosin_scope"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
+        KeepBaseIrons = true,
         RejectAttachments = {
             ["uplp_ak_dovetail_rail"] = true,
         },
@@ -813,6 +836,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, 0.25, 23),
         Ang = Angle(90, 90, 180),
+        Installed = "uplp_mosin_bayonet"
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_tactical"),
@@ -853,7 +877,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -1, 1),
         Ang = Angle(90, 90, 180),
-        ExcludeElements = {"uplp_mosin_stock_polymer", "uplp_mosin_stock_awp", "uplp_mosin_stock_atx", "uplp_mosin_stock_pgrip"},
+        ExcludeElements = {"uplp_mosin_stock_polymer", "uplp_mosin_stock_awp", "uplp_mosin_stock_atx", "uplp_mosin_stock_pgrip", "uplp_optic_dovetail_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
@@ -883,7 +907,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -1, 1),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_mosin_stock_polymer"},
+        RequireElements = {"uplp_mosin_stock_polymer", "uplp_optic_dovetail_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
@@ -913,7 +937,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0, -1, 1),
         Ang = Angle(90, 90, 180),
-        RequireElements = {"uplp_mosin_stock_awp"},
+        RequireElements = {"uplp_mosin_stock_awp", "uplp_optic_dovetail_used"},
     },
     {
         PrintName = ARC9:GetPhrase("uplp_category_sticker") .. " B",
@@ -954,7 +978,35 @@ SWEP.Attachments = {
         Ang = Angle(90, 90, 180),
         RequireElements = {"uplp_mosin_stock_atx"},
     },
-
-
-
 }
+
+SWEP.DynamicConditions = {
+    ["Recoil"] = true,
+    ["ShellModel"] = true,
+    ["ShellSmoke"] = true,
+    ["ShootWhileSprint"] = true,
+}
+
+SWEP.HookP_NameChange = function(self, name)
+    local att = self:GetElements()
+	-- local tn = ARC9:UseTrueNames() and "_true" or ""
+
+    if att["uplp_mosin_brl_obrez"] and att["uplp_mosin_stock_pgrip"] then
+        -- name = ARC9:GetPhrase("uplp_weapon" .. tn .. "_mosin_obrez")
+        if att["uplp_mosin_muzzle"] and ((att["uplp_optic_used"] and att["uplp_mosin_closerail"]) or att["uplp_optic_long_used"]) then
+            name = ARC9:GetPhrase("uplp_weapon_mosin_obrez_stop")
+        else
+            name = ARC9:GetPhrase("uplp_weapon_mosin_obrez")
+        end
+    end
+
+    return name
+end
+
+SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
+    -- if swep:GetElements()["mosin_sniper_bolt"] then
+    --     ent:SetPoseParameter("owo", 1) -- different animations for mpk5
+    -- else
+    --     ent:SetPoseParameter("owo", 0)
+    -- end
+end

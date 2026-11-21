@@ -18,6 +18,9 @@ ATT.Icon = Material(iconfolder .. "big.png", "mips smooth")
 ATT.Category = "uplp_mosin_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+ATT.BashRangeAdd = 12
+ATT.BarrelLengthAdd = 8
+
 -- Positives
 -- ATT.PhysBulletMuzzleVelocityMult = 1.2
 -- ATT.DamageMinMult = 1.18
@@ -40,7 +43,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
 -- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
--- ATT.MuzzleEffectQCA = 5
+ATT.MuzzleEffectQCA = 5
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_brl_long")
 
@@ -58,6 +61,9 @@ ATT.Icon = Material(iconfolder .. "small.png", "mips smooth")
 
 ATT.Category = "uplp_mosin_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.BashRangeAdd = -35
+ATT.BarrelLengthAdd = -16
 
 -- -- Positives
 -- ATT.AimDownSightsTimeAdd = -0.06
@@ -80,7 +86,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -4, 0) end
 -- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
 
--- ATT.MuzzleEffectQCA = 4
+ATT.MuzzleEffectQCA = 6
 
 -- ATT.ActivateElements = {"uplp_no_tactical"}
 
@@ -174,6 +180,14 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
 -- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
+ATT.Model = "models/weapons/arc9/uplp/mosin_lrhik_pistol.mdl"
+ATT.ModelOffset = Vector(-6.5, -3.1, 4.4)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.LHIK = true
+ATT.RHIK = true
+ATT.LHIK_Priority = 1
+ATT.RHIK_Priority = 1
+
 ATT.ActivateElements = {"uplp_no_tactical"}
 ATT.ExcludeElements = {"uplp_optic_dovetail"}
 
@@ -194,6 +208,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 -- ATT.SpeedAdd = 0.03
 -- ATT.SpeedAddSights = -0.1
 -- ATT.SwayMultSights = 0.5
+
+ATT.Model = "models/weapons/arc9/uplp/mosin_lrhik_awp.mdl"
+ATT.ModelOffset = Vector(-6.5, -3.1, 4.4)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.LHIK = true
+ATT.RHIK = true
+ATT.LHIK_Priority = 1
+ATT.RHIK_Priority = 1
+
 
 
 ATT.Attachments = {
@@ -241,6 +264,15 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
 -- ATT.SpeedAddSights = 0.1
 -- ATT.SpeedMultShooting = 0.75
+
+ATT.Model = "models/weapons/arc9/uplp/mosin_lrhik_atx.mdl"
+ATT.ModelOffset = Vector(-6.5, -3.1, 4.4)
+ATT.ModelAngleOffset = Angle(0, 0, 0)
+ATT.LHIK = true
+ATT.RHIK = true
+ATT.LHIK_Priority = 1
+ATT.RHIK_Priority = 1
+
 
 ATT.Attachments = {
     {
@@ -303,6 +335,42 @@ ATT.Icon = Material(iconfolder .. "bayo.png", "mips smooth")
 ATT.Category = "uplp_mosin_muzzle"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
+-- bayonet shit by mytton thanks
+
+ATT.Bash = true
+ATT.PrimaryBash = false
+ATT.BashDamageType = DMG_SLASH
+ATT.BashDamage = 30
+ATT.BashLungeRange = 0
+ATT.BashRange = 124
+ATT.PreBashTime = 0.05
+ATT.PostBashTime = 0.4
+
+ATT.BashDamageHook = function(wep, dmg)
+	--if wep:GetOwner():KeyDown(IN_SPEED) and wep:GetOwner():KeyDown(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT) and !wep:GetUBGL() then
+	if wep:GetIsSprinting() and !wep:GetUBGL() then -- this does the same thing
+		return dmg * 4
+	end
+end
+
+ATT.SprintPos = Vector(1, -3, -7)
+ATT.SprintAng = Angle(0, 6, -35)
+ATT.NearWallPos = Vector(0, -5, -4)
+ATT.NearWallAng = Angle(0, 2, -15)
+ATT.BobSprintMult = 0.5
+
+ATT.BarrelLengthAdd = 12
+ATT.SpeedMultMelee = 2
+
+ATT.BashWhileSprint = true
+ATT.ShootWhileSprint = true
+ATT.ShootWhileSprintHook = function(self)
+	if !self:GetOwner():KeyDown(IN_USE) then
+		return false
+	end
+end
+
+ATT.HoldTypeSprint = "physgun"
 
 ATT.ExcludeElements = {"uplp_no_bayonet"}
 
@@ -326,6 +394,12 @@ ATT.MuzzleParticleOverride_Priority = 10
 ATT.CustomPros = {
 [ARC9:GetPhrase("uplp_stat_suppressed")] = " ",
 }
+
+ATT.MuzzleEffectQCAHook = function(wep, orig)
+    if orig == 1 then return 7
+    elseif orig == 5 then return 8
+    elseif orig == 6 then return 9 end
+end
 
 -- ATT.MuzzleEffectQCA = 6
 
