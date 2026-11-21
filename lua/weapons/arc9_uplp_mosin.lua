@@ -60,7 +60,7 @@ SWEP.ShellSounds = ARC9.Shell308SoundsTable
 SWEP.EjectDelay = 0.45
 SWEP.ShellSmoke = true
 
-SWEP.ShellSmokeHook = function(swep, old) 
+SWEP.ShellSmokeHook = function(swep, old)
     if swep:GetReloading() and swep:Clip1() > 0 then return false end
     return old
 end
@@ -96,15 +96,15 @@ SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
 ---- Weapon Stats and Behaviour
 -- Damage
 SWEP.DamageMax = 70 -- Damage dealt point-blank
-SWEP.DamageMin = 70 -- Damage dealt after maximum range
+SWEP.DamageMin = 50 -- Damage dealt after maximum range
 SWEP.DamageType = DMG_BULLET
 
--- Lethal in one shot on 13 meters, falls under 100 dmg on >68 m
+-- Lethal to chest 20-50m
 SWEP.SweetSpot = true
-SWEP.SweetSpotDamage = 100
-SWEP.SweetSpotRange = 40 / ARC9.HUToM
-SWEP.SweetSpotWidth = 55 / ARC9.HUToM
-SWEP.SweetSpotPeak = 25 / ARC9.HUToM
+SWEP.SweetSpotDamage = 87
+SWEP.SweetSpotRange = 35 / ARC9.HUToM
+SWEP.SweetSpotWidth = 40 / ARC9.HUToM
+SWEP.SweetSpotPeak = 30 / ARC9.HUToM
 
 SWEP.BodyDamageMults = {
     [HITGROUP_HEAD] = 3,
@@ -142,8 +142,8 @@ SWEP.NoShellEject = true
 
 -- Recoil
 SWEP.Recoil = 1
-SWEP.RecoilUp = 1.5
-SWEP.RecoilSide = 1.5
+SWEP.RecoilUp = 1.2
+SWEP.RecoilSide = 1.2
 
 SWEP.RecoilRandomUp = 1.2
 SWEP.RecoilRandomSide = 1
@@ -158,7 +158,7 @@ SWEP.RecoilMultCrouch = 1
 
 SWEP.RecoilMultBipod = 0.4
 
-SWEP.RecoilKickRoll = 60/70
+SWEP.RecoilKickRoll = 60 / 70
 
 
 -- Visual Recoil
@@ -182,11 +182,11 @@ SWEP.VisualRecoilDampingConstHipFire = 45
 SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
-SWEP.Spread = 0
+SWEP.Spread = 0.0025 -- WW2 infantry rifles aren't that accurate comrade
 SWEP.SpreadAddHipFire = 0.05
 
 SWEP.SpreadAddRecoil = 0
-SWEP.SpreadAddMove = 0.02
+SWEP.SpreadAddMove = 0.015
 SWEP.SpreadAddMidAir = 0.03
 
 SWEP.RecoilDissipationRate = 1
@@ -195,12 +195,12 @@ SWEP.RecoilPerShot = 1
 SWEP.RecoilModifierCap = 1
 
 -- Weapon handling
-SWEP.Speed = 0.8
-SWEP.SpeedMultSights = 0.6
+SWEP.Speed = 0.85
+SWEP.SpeedMultSights = 0.65
 SWEP.SpeedMultShooting = 0.5
 
-SWEP.AimDownSightsTime = 0.39
-SWEP.SprintToFireTime = 0.4
+SWEP.AimDownSightsTime = 0.32
+SWEP.SprintToFireTime = 0.38
 
 SWEP.BarrelLength = 50
 
@@ -504,7 +504,7 @@ SWEP.Animations = {
         EventTable = {
             {s = pathUTREAL .. "up.wav",          t = 4/30},
             {s = pathUTREAL .. "back.wav",          t = 4/30},
-            
+
             {s = pathUTREAL .. "forth.wav",          t = 70/30},
             {s = pathUTREAL .. "down.wav",          t = 80/30},
 
@@ -525,7 +525,7 @@ SWEP.Animations = {
         EventTable = {
             {s = pathUTREAL .. "up.wav",          t = 4/30},
             {s = pathUTREAL .. "back.wav",          t = 4/30},
-            
+
             {s = pathUTREAL .. "forth.wav",          t = 70/30},
             {s = pathUTREAL .. "down.wav",          t = 80/30},
 
@@ -750,7 +750,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         elseif stockpoly then tacbg = 3
         elseif eles["mosin_hg_std"] and !stockatx then tacbg = 1
         elseif eles["mosin_hg_long"] and !stockatx then tacbg = 2 end
-        
+
         mdl:SetBodygroup(7, tacbg)
     end
 
@@ -790,7 +790,7 @@ SWEP.Hook_ModifyElements = function(self, eles)
         eles["uplp_optic_long_used"] = true
     end
 
-    return eles 
+    return eles
 end
 
 SWEP.AttachmentTableOverrides = {
@@ -807,7 +807,7 @@ SWEP.AttachmentTableOverrides = {
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
     local eles = swep:GetElements()
-    
+
 
     if anim == "idle" and swep.nosgreload then swep.nosgreload = nil end
 
@@ -880,7 +880,7 @@ SWEP.Attachments = {
         Bone = "body",
         Pos = Vector(0.7, 1.35, -1),
         Ang = Angle(90, 90, 180),
-        MergeSlots = {1}, 
+        MergeSlots = {1},
         Hidden = true,
     },
     {

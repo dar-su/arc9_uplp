@@ -22,26 +22,21 @@ ATT.BashRangeAdd = 12
 ATT.BarrelLengthAdd = 8
 
 -- Positives
--- ATT.PhysBulletMuzzleVelocityMult = 1.2
--- ATT.DamageMinMult = 1.18
--- ATT.RecoilMult = 0.85
--- ATT.HeadshotDamageMult = 1
+ATT.SpreadAdd = -0.0025
+ATT.PhysBulletMuzzleVelocityMult = 1.08
+
+-- One shots chest 20-60m (from 20-50m default)
+ATT.RangeMaxAdd = 10 / ARC9.HUToM
+ATT.SweetSpotRangeAdd = 5 / ARC9.HUToM
+ATT.SweetSpotPeakAdd = 10 / ARC9.HUToM
+ATT.SweetSpotWidthAdd = 10 / ARC9.HUToM
 
 -- Negatives
--- ATT.AimDownSightsTimeAdd = 0.03
--- ATT.SprintToFireTimeAdd = 0.05
--- ATT.SpeedAddSights = -0.1
--- ATT.SpeedAdd = -0.02
--- ATT.BarrelLengthAdd = 4
--- ATT.ClipSizeAdd = -1
--- ATT.RPMMult = 0.8
--- ATT.SpreadAddHipFire = 0.025
--- ATT.SpeedMultShooting = 0.666667
--- ATT.SwayMultSights = 1.25
--- ATT.RecoilMult = 0.85
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
+ATT.AimDownSightsTimeAdd = 0.04
+ATT.SprintToFireTimeAdd = 0.02
+ATT.SpeedAddSights = -0.05
+ATT.BarrelLengthAdd = 8
+ATT.SpreadAddHipFire = 0.015
 
 ATT.MuzzleEffectQCA = 5
 
@@ -62,26 +57,26 @@ ATT.Icon = Material(iconfolder .. "small.png", "mips smooth")
 ATT.Category = "uplp_mosin_barrel"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.BashRangeAdd = -35
-ATT.BarrelLengthAdd = -16
-
 -- -- Positives
--- ATT.AimDownSightsTimeAdd = -0.06
--- ATT.SprintToFireTimeAdd = -0.04
--- ATT.SpeedAddSights = 0.12
--- ATT.SpeedAdd = 0.01
--- ATT.SpreadAddHipFire = -0.01
--- ATT.SpeedMultShooting = 1.5
--- ATT.SwayMultSights = 0.75
+ATT.BarrelLengthAdd = -16
+ATT.SpreadAddHipFire = -0.02
+ATT.SpreadAddMove = -0.008
+ATT.AimDownSightsTimeAdd = -0.04
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SpeedAdd = 0.006
+ATT.SpeedAddShooting = 0.3
+ATT.SpeedAddSights = 0.15
+ATT.SpreadAddHipFire = -0.03
+ATT.SwayAddSights = -1
 
 -- -- Negatives
--- ATT.SpreadAdd = 0.004
--- ATT.RecoilMult = 1.5
--- ATT.PhysBulletMuzzleVelocityMult = 0.9
--- ATT.DamageMinAdd = -4
--- ATT.BarrelLengthAdd = -7
--- ATT.ClipSizeAdd = -2
--- ATT.SpreadAddMove = 0.003
+ATT.BashRangeAdd = -35
+ATT.SpreadAdd = 0.0075
+ATT.RecoilMult = 1.5
+ATT.PhysBulletMuzzleVelocityMult = 0.86
+ATT.SweetSpotOverride = false
+ATT.RangeMaxAdd = -50 / ARC9.HUToM
+ATT.DamageMinAdd = -2
 
 -- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -4, 0) end
 -- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
@@ -109,8 +104,8 @@ ATT.Icon = Material(iconfolder .. "poly.png", "mips smooth")
 ATT.Category = "uplp_mosin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.RecoilMult = 1.15
--- ATT.SpeedAdd = 0.03
+ATT.SprintToFireTimeAdd = -0.02
+ATT.SpeedAddShooting = -0.1
 
 ATT.Attachments = {
     {
@@ -137,14 +132,15 @@ ATT.Icon = Material(iconfolder .. "cut.png", "mips smooth")
 ATT.Category = "uplp_mosin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.RecoilAdd = 0.8
--- ATT.SwayAddSights = 0.75
--- ATT.AimDownSightsTimeAdd = -0.08
--- ATT.SprintToFireTimeAdd = -0.1
--- ATT.SpreadAddHipFire = -0.008
--- ATT.SpreadAddMove = 0.012
--- ATT.SpeedAddSights = 0.12
--- ATT.SpeedAdd = 0.05
+ATT.RecoilAdd = 1.0
+ATT.SwayAddSights = 1
+ATT.SwayMultSights = 1.5
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.SprintToFireTimeAdd = -0.07
+ATT.SpreadAddHipFire = -0.008
+ATT.SpreadAddMove = 0.005
+ATT.SpeedAddSights = 0.1
+ATT.SpeedAdd = 0.05
 
 -- ATT.VisualRecoilMult = 1.5
 -- ATT.VisualRecoilPunchMultHipFire = 2
@@ -164,6 +160,16 @@ ATT.Description = ATT.PrintName
 ATT.Icon = Material(iconfolder .. "grip.png", "mips smooth")
 ATT.Category = "uplp_mosin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
+
+ATT.RecoilAdd = 1.5
+ATT.SwayAddSights = 1
+ATT.SwayMultSights = 2
+ATT.AimDownSightsTimeAdd = -0.05
+ATT.SprintToFireTimeAdd = -0.08
+ATT.SpreadAddHipFire = -0.01
+ATT.SpreadAddMove = 0.008
+ATT.SpeedAddSights = 0.15
+ATT.SpeedAdd = 0.1
 
 -- ATT.RecoilAdd = 0.8
 -- ATT.SwayAddSights = 0.75
@@ -204,10 +210,10 @@ ATT.Icon = Material(iconfolder .. "awp.png", "mips smooth")
 ATT.Category = "uplp_mosin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.RecoilUpMult = 0.9
--- ATT.SpeedAdd = 0.03
--- ATT.SpeedAddSights = -0.1
--- ATT.SwayMultSights = 0.5
+ATT.SwayMultSights = 0.75
+ATT.SpeedAddSights = -0.02
+ATT.AimDownSightsTimeAdd = 0.03
+ATT.RecoilMult = 0.7
 
 ATT.Model = "models/weapons/arc9/uplp/mosin_lrhik_awp.mdl"
 ATT.ModelOffset = Vector(-6.5, -3.1, 4.4)
@@ -262,8 +268,10 @@ ATT.Icon = Material(iconfolder .. "atx.png", "mips smooth")
 ATT.Category = "uplp_mosin_stock"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
--- ATT.SpeedAddSights = 0.1
--- ATT.SpeedMultShooting = 0.75
+ATT.SwayMultSights = 1.25
+ATT.SpeedAddSights = 0.05
+ATT.AimDownSightsTimeAdd = -0.03
+ATT.RecoilMult = 1.25
 
 ATT.Model = "models/weapons/arc9/uplp/mosin_lrhik_atx.mdl"
 ATT.ModelOffset = Vector(-6.5, -3.1, 4.4)
