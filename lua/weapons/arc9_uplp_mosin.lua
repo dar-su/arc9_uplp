@@ -440,13 +440,19 @@ local ShellInsert = {
     ")uplp_rz/lever/" .. "round-insert-10.ogg",
 }
 
+local alwayslrhik = { { t = 0, lhik = 1, rhik = 1 }, { t = 1, lhik = 1, rhik = 1 } }
+local onlylhik = { { t = 0, lhik = 1, rhik = 0 }, { t = 1, lhik = 1, rhik = 0 } }
+local bayohik = { { t = 0, lhik = 1, rhik = 1 }, { t = 0.5, lhik = 0.85, rhik = 1 }, { t = 1, lhik = 1, rhik = 1 } }
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
+        IKTimeLine = alwayslrhik,
     },
     ["idle_empty"] = {
         Source = "idle_empty",
+        IKTimeLine = alwayslrhik,
     },
     ["cycle"] = {
         Source = {"cycle"},
@@ -460,6 +466,13 @@ SWEP.Animations = {
             {s = pathUTREAL .. "forth.wav",          t = 10/30},
             {s = pathUTREAL .. "down.wav",          t = 20/30},
         },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/46,     lhik = 1, rhik = 0 },
+            { t = 28/46,    lhik = 1, rhik = 0 },
+            { t = 42/46,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
+        },
     },
     ["cycle_snip"] = {
         Source = {"cycle"},
@@ -471,6 +484,13 @@ SWEP.Animations = {
             {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
             {s = pathUTREAL .. "forth.wav",          t = 11/30},
             {s = pathUTREAL .. "down.wav",          t = 23/30},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/46,     lhik = 1, rhik = 0 },
+            { t = 28/46,    lhik = 1, rhik = 0 },
+            { t = 42/46,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
     ["ready"] = {
@@ -487,6 +507,13 @@ SWEP.Animations = {
             {s = pathUTREAL .. "forth.wav",          t = 10/30},
             {s = pathUTREAL .. "down.wav",          t = 20/30},
         },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 3/45,     lhik = 1, rhik = 0 },
+            { t = 29/45,    lhik = 1, rhik = 0 },
+            { t = 42/45,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
+        },
     },
 
     ["draw"] = {
@@ -500,10 +527,10 @@ SWEP.Animations = {
             { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 0 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.45, lhik = 1 },
-         },
+            { t = 0,    lhik = 0, rhik = 1 },
+            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0.7,  lhik = 1, rhik = 1 },
+        },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -516,10 +543,10 @@ SWEP.Animations = {
             { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 0 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.45, lhik = 1 },
-         },
+            { t = 0,    lhik = 0, rhik = 1 },
+            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0.7,  lhik = 1, rhik = 1 },
+        },
     },
     ["holster"] = {
         Source = "holster",
@@ -529,10 +556,11 @@ SWEP.Animations = {
             { s = pathUTC .. "shoulder_heavy.ogg", t = 0.0, v = 1 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.05, lhik = 1 },
-            { t = 0.5, lhik = 0 },
-         },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/20,    lhik = 1, rhik = 0 },
+            { t = 29/20,    lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
+        },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
@@ -542,15 +570,17 @@ SWEP.Animations = {
             { s = pathUTC .. "shoulder_heavy.ogg", t = 0.0, v = 1 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.05, lhik = 1 },
-            { t = 0.5, lhik = 0 },
-         },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/20,    lhik = 1, rhik = 0 },
+            { t = 29/20,    lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
+        },
     },
 
     ["fire"] = {
         Source = "fire",
         EventTable = { { s = mechh, t = 0 } },
+        IKTimeLine = alwayslrhik,
     },
 
     -- Reloads --
@@ -587,7 +617,11 @@ SWEP.Animations = {
             {hide = 1, t = 67/30},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/103,    lhik = 1, rhik = 0 },
+            { t = 87/103,   lhik = 1, rhik = 0 },
+            { t = 99/103,   lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
     ["reload_empty"] = {
@@ -619,7 +653,11 @@ SWEP.Animations = {
             {hide = 1, t = 67/30},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/103,    lhik = 1, rhik = 0 },
+            { t = 87/103,   lhik = 1, rhik = 0 },
+            { t = 99/103,   lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
 
@@ -643,7 +681,11 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/43,    lhik = 0, rhik = 0 },
+            { t = 22/43,   lhik = 0, rhik = 0 },
+            { t = 32/43,   lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
         },
     },
     ["reload_start_empty"] = {
@@ -666,7 +708,9 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/43,    lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
         },
     },
 
@@ -681,6 +725,7 @@ SWEP.Animations = {
 
             {hide = 1, t = 0},
         },
+        IKTimeLine = onlylhik
     },
 
     ["reload_finish"] = {
@@ -696,7 +741,10 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 0 },
+            { t = 17/33,    lhik = 1, rhik = 0 },
+            { t = 25/33,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
 
@@ -801,7 +849,7 @@ SWEP.Animations = {
             { s = {pathUTC .. "rattle_b2i_rifle.ogg", pathUTC .. "rattle3.ogg", pathUTC .. "rattle_b2i_rifle.ogg"}, t = 0, v = 0.3 },
             {hide = 1, t = 0},
         },
-        
+        IKTimeLine = bayohik,
     },
     ["bash_empty"] = {
         Source = "bayonet_empty",
@@ -810,6 +858,7 @@ SWEP.Animations = {
             { s = {pathUTC .. "rattle_b2i_rifle.ogg", pathUTC .. "rattle3.ogg", pathUTC .. "rattle_b2i_rifle.ogg"}, t = 0, v = 0.3 },
             {hide = 1, t = 0},
         },
+        IKTimeLine = bayohik,
     },
 }
 
