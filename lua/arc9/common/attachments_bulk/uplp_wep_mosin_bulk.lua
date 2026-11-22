@@ -356,38 +356,14 @@ ATT.BashRange = 124
 ATT.PreBashTime = 0.08
 ATT.PostBashTime = 0.6
 
-local function sprintfuk(self)
-    local owner = self:GetOwner()
-
-    if !owner:IsValid() or owner:IsNPC() then
-        return false
-    end
-    if owner:KeyDown(IN_ATTACK2) then return end
-    if self:GetInSights() then return false end
-    if self:GetCustomize() then return false end
-    -- if self:GetIsNearWall() then return true end
-    if !owner:KeyDown(IN_SPEED) then return false end
-    if !owner:OnGround() or owner:GetMoveType() == MOVETYPE_NOCLIP then return false end
-    if !owner:KeyDown(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT) then return false end
-    if !owner:IsSprinting() then return false end
-
-    if (self:GetAnimLockTime() > CurTime()) and self:GetProcessedValue("NoSprintWhenLocked", true) then
-        return false
-    end
-
-    if owner.GetSliding and owner:GetSliding() then return false end
-
-    if owner:Crouching() then return false end
-
-    return true
-end
-
 ATT.BashDamageHook = function(wep, dmg)
-	--if wep:GetOwner():KeyDown(IN_SPEED) and wep:GetOwner():KeyDown(IN_FORWARD + IN_BACK + IN_MOVELEFT + IN_MOVERIGHT) and !wep:GetUBGL() then
-	if sprintfuk(wep) and !wep:GetUBGL() then -- this does the same thing
+	if wep:GetSprintAmount() > 0.1 and !wep:GetUBGL() then
 		return dmg * 2
 	end
 end
+
+    -- return self:MeleeAttack()
+
 
 ATT.SprintPos = Vector(1, -3, -7)
 ATT.SprintAng = Angle(0, 6, -35)
@@ -400,11 +376,11 @@ ATT.SpeedMultMelee = 3
 
 ATT.BashWhileSprint = true
 ATT.ShootWhileSprint = true
-ATT.ShootWhileSprintHook = function(self)
-	if !self:GetOwner():KeyDown(IN_USE) then
-		return false
-	end
-end
+-- ATT.ShootWhileSprintHook = function(self)
+-- 	if !self:GetOwner():KeyDown(IN_USE) then
+-- 		return false
+-- 	end
+-- end
 
 ATT.HoldTypeSprint = "physgun"
 
