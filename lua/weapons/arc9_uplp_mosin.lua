@@ -284,7 +284,7 @@ SWEP.ShotgunReload = false
 -- SWEP.ShotgunReloadIncludesChamber = true
 
 function SWEP:GetShouldShotgunReload()
-    return (self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sniper_bolt"]
+    return !self:GetUBGL() and ((self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sniper_bolt"])
 end
 ---- Sounds
 
