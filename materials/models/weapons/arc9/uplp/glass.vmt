@@ -12,7 +12,7 @@
 
 	"$envmap" "env_cubemap"
 	"$envmaptint" "[0.2 0.2 0.2]"
-	"$envmapfresnel" "0.1"
+	"$envmapfresnel" "0.3"
 	"$normalmapalphaenvmapmask" "0"
 	"$basemapalphaenvmapmask" "1"
 
