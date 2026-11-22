@@ -893,7 +893,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(7, tacbg)
     end
 
-    if eles["uplp_mosin_closerail"] then
+    if eles["uplp_mosin_closerail"] and eles["uplp_optic_used"] then
         mdl:SetBodygroup(5, 2)
     elseif eles["uplp_optic_used"] and !eles["uplp_optic_long_used"] then
         mdl:SetBodygroup(5, 1)
@@ -979,7 +979,7 @@ SWEP.AttachmentElements = {
     -- ["uplp_mosin_bayonet"] = { Bodygroups = { { 6, 1 } } },
     -- ["uplp_mosin_supp"] = { Bodygroups = { { 6, 4 } } },
 
-    ["uplp_mosin_closerail"] = { Bodygroups = { { 5, 1 } }, AttPosMods = { [1] = { Pos = Vector(0, -0.85, -0) } } },
+    ["uplp_mosin_closerail"] = { AttPosMods = { [1] = { Pos = Vector(0, -0.85, -0) } } },
     ["uplp_mosin_pu"] = { Bodygroups = { { 5, 5 } } },
     ["uplp_optic_dovetail_used"] = { Bodygroups = { { 5, 4 } } },
 

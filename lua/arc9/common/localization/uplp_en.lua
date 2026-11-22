@@ -4140,8 +4140,8 @@ L["uplp_mosin_supp.description"] = "Old-school suppressor specifically made for 
 
 L["uplp_mosin_pu.printname"] = "3.5x KP Optic" -- "Short-Range Scope" - "Короткий Прицел" (КП, i.e. "KP")
 L["uplp_mosin_pu.compactname"] = "3.5x KP"
-L["uplp_mosin_pu.description"] = "Soviet-manufactured telescopic sight made for the Three-Line."
+L["uplp_mosin_pu.description"] = "Soviet-manufactured telescopic sight made for the Three-Line.\n\nDisables <color=255,100,100>stripper clip reloading</color>."
 
-L["uplp_mosin_closerail.printname"] = "Closer Rail Mount"
-L["uplp_mosin_closerail.compactname"] = "Closer Mount"
-L["uplp_mosin_closerail.description"] = "Attaches a scope mount closer to the action.\n\nDisables <color=255,100,100>stripper clip reloading</color>."
+L["uplp_mosin_closerail.printname"] = "Sniper Variant + Closer Rail Mount"
+L["uplp_mosin_closerail.compactname"] = "Sniper Mount"
+L["uplp_mosin_closerail.description"] = "Turns rifle into Sniper variant with special bolt and allows installing scopes closer to eyes.\n\nDisables <color=255,100,100>stripper clip reloading</color>."
