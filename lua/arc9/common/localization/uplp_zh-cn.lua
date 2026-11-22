@@ -443,17 +443,9 @@ L["uplp_optic_sro_direct.printname"] = "VOC-1 红点"
 L["uplp_optic_sro_direct.compactname"] = "VOC-1"
 L["uplp_optic_sro_direct.description"] = "Vanguard Optics Corporation (VOC) 制造的微型红点瞄具，用于手枪和小口径枪械。" .. desc_smalloptic
 
-L["uplp_optic_sro.printname"] = ARC9:GetPhrase("uplp_optic_sro_direct.printname") or "VOC-1 红点"
-L["uplp_optic_sro.compactname"] = ARC9:GetPhrase("uplp_optic_sro_direct.compactname") or "VOC-1"
-L["uplp_optic_sro.description"] = ARC9:GetPhrase("uplp_optic_sro_direct.description") or "Vanguard Optics Corporation (VOC) 制造的微型红点瞄具，用于手枪和小口径枪械。" .. desc_smalloptic
-
 L["uplp_optic_justice_direct.printname"] = "Redmark Arms 反射瞄具"
 L["uplp_optic_justice_direct.compactname"] = "Redmark"
 L["uplp_optic_justice_direct.description"] = "Redmark Arms 制造的紧凑反射瞄具，是其首款军用级光学瞄具。用于小口径枪械。" .. desc_smalloptic
-
-L["uplp_optic_justice.printname"] = ARC9:GetPhrase("uplp_optic_justice_direct.printname") or "Redmark Arms 反射瞄具"
-L["uplp_optic_justice.compactname"] = ARC9:GetPhrase("uplp_optic_justice_direct.compactname") or "Redmark"
-L["uplp_optic_justice.description"] = ARC9:GetPhrase("uplp_optic_justice_direct.description") or "Redmark Arms 制造的紧凑反射瞄具，是其首款军用级光学瞄具。用于小口径枪械。" .. desc_smalloptic
 
 /////////// Backup Optics
 L["uplp_backup_optic_rmr.printname"] = "倾斜红点"
@@ -652,8 +644,6 @@ L["uplp_tac_flashlight_lastac.printname"] = "NightStrike Illumination 紧凑手�
 L["uplp_tac_flashlight_lastac.compactname"] = "NightStrike C"
 L["uplp_tac_flashlight_lastac.description"] = "NightStrike Illumination 制造的紧凑导轨安装手电，用于小型枪械。"
 
-L["uplp_tac_piscomb_dbal.printname"] = ARC9:GetPhrase("uplp_tac_laser_dbal.printname") or "Veyron Tactics 激光模块"
-L["uplp_tac_piscomb_dbal.compactname"] = ARC9:GetPhrase("uplp_tac_laser_dbal.compactname") or "Veyron"
 L["uplp_tac_piscomb_dbal.description"] = "Veyron Tactics 制造的紧凑导轨安装混合模块。\n激光和手电不能同时使用，但两者都有 <color=100,255,100>更强的效果</color>。"
 
 L["uplp_tac_piscomb_viri.printname"] = "Helios Defense 紧凑混合模块"
@@ -1155,8 +1145,6 @@ L["uplp_ak_stock_tube12.printname"] = "缓冲管"
 L["uplp_ak_stock_tube12.compactname"] = "缓冲管"
 L["uplp_ak_stock_tube12.description"] = "AK M23 使用的侧折叠缓冲管组件，可安装 AR-15 兼容枪托。\n有趣事实：该管直径与标准 AR-15 略有不同，导致大多数 AR-15 枪托会晃动。\n（但这是游戏，所以... 扔）"
 
-L["uplp_ak_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_ak_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_ak_stock_tube.description"] = "适用于 AK 步枪的改装缓冲管组件，可安装 AR-15 兼容枪托。"
 
 L["uplp_ak_stock_molot.printname"] = "Molot 枪托"
@@ -1554,11 +1542,9 @@ L["uplp_ar15_reciever_m16a3.description"] = "带内置提把的军用级机匣�
 
 L["uplp_ar15_reciever_a2.printname"] = "A2 机匣带提把"
 L["uplp_ar15_reciever_a2.compactname"] = "A2 CH"
-L["uplp_ar15_reciever_a2.description"] = ARC9:GetPhrase("uplp_ar15_reciever_m16a3.description") or "带内置提把的军用级机匣。\n仅 <color=160,160,255>外观</color>。"
 
 L["uplp_ar15_reciever_a2_burst.printname"] = "A2 机匣带提把 (三连发)"
 L["uplp_ar15_reciever_a2_burst.compactname"] = "A2 CH (B)"
-L["uplp_ar15_reciever_a2_burst.description"] = ARC9:GetPhrase("uplp_ar15_reciever_m16.description") or "带内置提把的军用级机匣。\n将射击模式改为 <color=100,255,100>三连发</color>/<color=100,255,100>半自动</color>。"
 
 ////// Rear Sights
 L["uplp_ar15_rs_m4.printname"] = "M4 照门"
@@ -2045,8 +2031,6 @@ L["uplp_mp7_stock_tac.printname"] = "战术枪托"
 L["uplp_mp7_stock_tac.compactname"] = "战术"
 L["uplp_mp7_stock_tac.description"] = "为 PDW-7 制造的战术枪托。"
 
-L["uplp_mp7_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_mp7_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_mp7_stock_tube.description"] = "将枪托替换为支持 AR-15 枪托的缓冲管。"
 
 ////// Mags
@@ -2135,8 +2119,6 @@ L["uplp_scar_stock_hb.printname"] = "DMR 枪托 (黑色)"
 L["uplp_scar_stock_hb.compactname"] = "DMR (黑)"
 L["uplp_scar_stock_hb.description"] = "将枪托更换为黑色的 XAR DMR 重型枪托。"
 
-L["uplp_scar_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_scar_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_scar_stock_tube.description"] = "将枪托替换为支持 AR-15 枪托的缓冲管。"
 
 L["uplp_scar_stock_pdw.printname"] = "PDW 枪托"
@@ -2240,8 +2222,6 @@ L["uplp_spas_stock_folding_hook.printname"] = "带钩折叠枪托"
 L["uplp_spas_stock_folding_hook.compactname"] = "折叠 (H)"
 L["uplp_spas_stock_folding_hook.description"] = "SPAW-12 的可折叠枪托。\n带有原厂钩子，用于单手射击。\n“折叠”时：无法装备 <color=255,100,100>光学瞄具</color>。"
 
-L["uplp_spas_stock_tube.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_spas_stock_tube.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
 L["uplp_spas_stock_tube.description"] = "带缓冲管的改装手枪握把，可安装 AR-15 枪托。"
 
 //////////////////// SW 629
@@ -2364,8 +2344,6 @@ L["uplp_weapon_asval_manufacturer"] = "Imperial Tula Arms Plant"
 
 /////////// Attachments
 ////// Stocks
-L["uplp_asval_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_asval_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
 L["uplp_asval_stock_buffer.description"] = "将枪托替换为支持 AR-15 枪托的缓冲管。"
 
 L["uplp_asval_stock_vss.printname"] = "SK Shadow 木质枪托"
@@ -2521,21 +2499,15 @@ L["uplp_weapon_knife_real"] = "Mick Strider's Bowie Knife"
 
 L["uplp_weapon_knife_manufacturer"] = "Mick Strider"
 
-////// Skins -- Ignore the GetPhrase strings here. If this is a community language, you can remove them entirely to save space.
-L["uplp_knife_skin_black.printname"] = ARC9:GetPhrase("uplp_deagle_skin_black.printname") or "哑光黑"
-L["uplp_knife_skin_black.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_black.compactname") or "黑色"
+////// Skins
 L["uplp_knife_skin_black.description"] = "Badlands Bowie 的深哑光黑版本。"
 
 L["uplp_knife_skin_chrome.printname"] = "镀铬"
 L["uplp_knife_skin_chrome.compactname"] = "Chrome"
 L["uplp_knife_skin_chrome.description"] = "Badlands Bowie 的镀铬版本，配红色刀柄。"
 
-L["uplp_knife_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "金色"
-L["uplp_knife_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "金色"
 L["uplp_knife_skin_gold.description"] = "Badlands Bowie 的金色版本，配沙漠沙色刀柄。\n\n<color=255,255,100>仅限 darsubscribers - 在 boosty.to/darsu 订阅</color><color=255,55,55>（非订阅者请勿装备）</color>"
 
-L["uplp_knife_skin_blue.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo 蓝"
-L["uplp_knife_skin_blue.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname") or "Cylo"
 L["uplp_knife_skin_blue.description"] = "Badlands Bowie 的金属蓝版本，配深蓝色刀柄。\n这种蓝色被称为 \"Cylo Blue\"，以某种外来蝙蝠物种命名。"
 
 L["uplp_knife_skin_red.printname"] = "红色苏打"
@@ -2579,10 +2551,6 @@ L["uplp_mp5_grip_kurz.compactname"] = "Kurz"
 L["uplp_mp5_grip_kurz.description"] = "带内置前握把的前护木，用于控制后坐力。\n需要 <color=175,175,255>114mm Kurz 枪管</color>。"
 
 ////// Stocks
-L["uplp_mp5_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_mp5_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_mp5_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "将枪托替换为支持 AR-15 枪托的缓冲管。"
-
 L["uplp_mp5_stock_pdw.printname"] = "折叠 PDW 枪托"
 L["uplp_mp5_stock_pdw.compactname"] = "F. PDW"
 L["uplp_mp5_stock_pdw.description"] = "PV-9 的侧折叠 PDW 枪托。"
@@ -2701,10 +2669,6 @@ L["uplp_fal_stock_sniper.printname"] = "精确射手枪托"
 L["uplp_fal_stock_sniper.compactname"] = "Marksman"
 L["uplp_fal_stock_sniper.description"] = "为 FCM 设计的坚固枪托，保持射击稳定。"
 
-L["uplp_fal_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_fal_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
-L["uplp_fal_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "将枪托替换为支持 AR-15 枪托的缓冲管。"
-
 ////// Magazines
 L["uplp_fal_mag_10.printname"] = "10 发 7.62mm"
 L["uplp_fal_mag_10.compactname"] = "10R 7.62"
@@ -2761,8 +2725,6 @@ L["uplp_mac_stock_wire.printname"] = "可折叠金属丝枪托"
 L["uplp_mac_stock_wire.compactname"] = "可折叠"
 L["uplp_mac_stock_wire.description"] = "CMP .380 的可折叠金属丝枪托。"
 
-L["uplp_mac_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_mac_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_mac_stock_buffer.description"] = "将金属丝枪托替换为传统缓冲管，可安装 AR-15 枪托。"
 
 L["uplp_mac_stock_tac.printname"] = "Centurion Industries IronWorks 枪托"
@@ -2841,12 +2803,8 @@ L["uplp_m590_stock_short.printname"] = "截短枪托"
 L["uplp_m590_stock_short.compactname"] = "Cut-Off"
 L["uplp_m590_stock_short.description"] = "从 Thunder 500 上锯掉枪托，提高机动性但牺牲后坐力控制。"
 
-L["uplp_m590_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly 枪托"
-L["uplp_m590_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.compactname") or "SynPoly"
 L["uplp_m590_stock_magpul.description"] = "SynPoly 为 Thunder 500 制造的加固战术枪托。"
 
-L["uplp_m590_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_m590_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_m590_stock_buffer.description"] = "定制手枪握把和缓冲管，可安装 AR-15 式枪托。"
 
 ////// Irons
@@ -2942,14 +2900,9 @@ L["uplp_r870_handle_flash.printname"] = "ApexCore Arsenal 泵动握把"
 L["uplp_r870_handle_flash.compactname"] = "ApexCore"
 L["uplp_r870_handle_flash.description"] = "ApexCore Arsenal 制造的内置手电定制泵动握把。"
 
-L["uplp_r870_handle_magpul.printname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.printname")
-L["uplp_r870_handle_magpul.compactname"] = ARC9:GetPhrase("uplp_m590_handle_magpul.compactname")
-L["uplp_r870_handle_magpul.description"] = ARC9:GetPhrase("uplp_m590_handle_magpul.description")
-
 ////// Magazines
 L["uplp_r870_mag_6.printname"] = "6 发可拆卸弹匣"
 L["uplp_r870_mag_6.compactname"] = "6R D."
-L["uplp_r870_mag_6.description"] = ARC9:GetPhrase("uplp_m590_mag_5.description") or "安装可拆卸弹匣，加快完全装填速度。"
 
 ////// Stocks
 L["uplp_r870_stock_short.printname"] = "截短聚合物枪托"
@@ -2958,18 +2911,13 @@ L["uplp_r870_stock_short.description"] = "从 Wingmaster 12G 上锯掉枪托，�
 
 L["uplp_r870_stock_short_wood.printname"] = "截短木质枪托"
 L["uplp_r870_stock_short_wood.compactname"] = "C.O. (W)"
-L["uplp_r870_stock_short_wood.description"] = ARC9:GetPhrase("uplp_r870_stock_short.description")
 
 L["uplp_r870_stock_poly.printname"] = "聚合物枪托"
 L["uplp_r870_stock_poly.compactname"] = "Polymer"
 L["uplp_r870_stock_poly.description"] = "Wingmaster 12G 的现代化聚合物枪托。"
 
-L["uplp_r870_stock_magpul.printname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly 枪托"
-L["uplp_r870_stock_magpul.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_mpul.printname") or "SynPoly"
 L["uplp_r870_stock_magpul.description"] = "Wingmaster 12G 的加固战术枪托。"
 
-L["uplp_r870_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_r870_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_r870_stock_buffer.description"] = "定制手枪握把和缓冲管，可安装 AR-15 式枪托。"
 
 L["uplp_r870_stock_grip.printname"] = "无枪托手枪握把"
@@ -2986,12 +2934,6 @@ L["uplp_r870_iron_none.compactname"] = "N/A"
 L["uplp_r870_iron_none.description"] = "移除顶部导轨以获得更流畅外观。"
 
 ////// Extras & Skins
-L["uplp_r870_extra_holster.printname"] = ARC9:GetPhrase("uplp_m590_extra_holster.printname") or "弹药携行器"
-L["uplp_r870_extra_holster.compactname"] = ARC9:GetPhrase("uplp_m590_extra_holster.compactname") or "Holster"
-L["uplp_r870_extra_holster.description"] = ARC9:GetPhrase("uplp_m590_extra_holster.description") or "在武器左侧安装装饰性弹药携行器。"
-
-L["uplp_r870_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "金色"
-L["uplp_r870_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "金色"
 L["uplp_r870_gold.description"] = "将内部组件更换为金色。\n\n<color=255,255,100>指挥官 (Lv55) 解锁</color>"
 
 //////////////////// ArmaLite AR-18
@@ -3034,10 +2976,6 @@ L["uplp_ar18_stock_fixed.description"] = "原厂固定枪托。"
 L["uplp_ar18_stock_fixed_wood.printname"] = "固定木质枪托和护木"
 L["uplp_ar18_stock_fixed_wood.compactname"] = "Wooden"
 L["uplp_ar18_stock_fixed_wood.description"] = "原厂枪托和前护木的木质版本。"
-
-L["uplp_ar18_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_ar18_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
-L["uplp_ar18_stock_buffer.description"] = ARC9:GetPhrase("uplp_asval_stock_buffer.description") or "将枪托替换为支持 AR-15 枪托的缓冲管。"
 
 ////// Optics
 L["uplp_ar18_scope_real.printname"] = "MAR 光学瞄具"
@@ -3279,12 +3217,8 @@ L["uplp_marlin_stock_tac.compactname"] = "PAWCO"
 L["uplp_marlin_stock_tac.description"] = "PAWCO 为 Model 94 制造的战术枪托。"
 
 ////// Internals
-L["uplp_marlin_bolt_light.printname"] = ARC9:GetPhrase("uplp_molot_bolt_light.printname") or "轻量内部组件"
-L["uplp_marlin_bolt_light.compactname"] = ARC9:GetPhrase("uplp_molot_bolt_light.compactname") or "轻量"
 L["uplp_marlin_bolt_light.description"] = "将内部部件更换为更轻量的部件。"
 
-L["uplp_marlin_bolt_heavy.printname"] = ARC9:GetPhrase("uplp_molot_bolt_heavy.printname") or "强化内部组件"
-L["uplp_marlin_bolt_heavy.compactname"] = ARC9:GetPhrase("uplp_molot_bolt_heavy.compactname") or "强化"
 L["uplp_marlin_bolt_heavy.description"] = "将内部部件更换为更坚固的部件。"
 
 ////// Extras
@@ -3294,11 +3228,9 @@ L["uplp_marlin_hg_ammo1.description"] = "在护木上安装弹药携行器。"
 
 L["uplp_marlin_hg_ammo2.printname"] = "护木弹药携行器 II"
 L["uplp_marlin_hg_ammo2.compactname"] = "Holder II"
-L["uplp_marlin_hg_ammo2.description"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.description") or "在护木上安装弹药携行器。"
 
 L["uplp_marlin_hg_ammo3.printname"] = "护木弹药携行器 III"
 L["uplp_marlin_hg_ammo3.compactname"] = "Holder III"
-L["uplp_marlin_hg_ammo3.description"] = ARC9:GetPhrase("uplp_marlin_hg_ammo.description") or "在护木上安装弹药携行器。"
 
 L["uplp_marlin_stock_ammo.printname"] = "枪托弹药携行器"
 L["uplp_marlin_stock_ammo.compactname"] = "Holder"
@@ -3357,10 +3289,6 @@ L["uplp_sr25_rec_troy.printname"] = "Home Defense 61 机匣"
 L["uplp_sr25_rec_troy.compactname"] = "HD-61"
 L["uplp_sr25_rec_troy.description"] = "DMR-10 的改装泵动机匣。\n不兼容 <color=255,100,100>其他护木</color>。"
 
-L["uplp_sr25_rec_tac.printname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.printname") or "Hoki Armory 战术机匣"
-L["uplp_sr25_rec_tac.compactname"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.compactname") or "Hoki"
-L["uplp_sr25_rec_tac.description"] = ARC9:GetPhrase("uplp_ar15_reciever_modern.description") or "Hoki Armory 制造的轻量战术机匣，专为速度而设计。"
-
 L["uplp_sr25_rec_auto.printname"] = "自动机匣"
 L["uplp_sr25_rec_auto.compactname"] = "Auto"
 L["uplp_sr25_rec_auto.description"] = "DMR-10 的自动机匣。\n\n<color=255,255,100>仅限管理员 - 大幅提升属性且不平衡。仅供娱乐 - 此武器应作为半自动 DMR 使用！</color>"
@@ -3371,20 +3299,13 @@ L["uplp_sr25_mag_10.compactname"] = "10R Alum"
 L["uplp_sr25_mag_10.description"] = "铝制 10 发弹匣。"
 
 L["uplp_sr25_mag_10_poly.printname"] = "10 发 7.62×51mm (聚合物)"
-L["uplp_sr25_mag_10_poly.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_pmag10.compactname") or "10R Poly"
-L["uplp_sr25_mag_10_poly.description"] = ARC9:GetPhrase("uplp_ar15_mag_pmag10.description") or "SynPoly 制造的聚合物 10 发弹匣。"
-
 L["uplp_sr25_mag_20.printname"] = "20 发 7.62×51mm (铝制)"
-L["uplp_sr25_mag_20.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_stanag20.compactname") or "20R Alum"
-L["uplp_sr25_mag_20.description"] = ARC9:GetPhrase("uplp_ar15_mag_stanag20.description") or "铝制 20 发弹匣。"
 
 L["uplp_sr25_mag_20_old.printname"] = "20 发 7.62×51mm (经典)"
 L["uplp_sr25_mag_20_old.compactname"] = "20R 经典"
 L["uplp_sr25_mag_20_old.description"] = "经典铝制 20 发弹匣。"
 
 L["uplp_sr25_mag_20_poly.printname"] = "20 发 7.62×51mm (聚合物)"
-L["uplp_sr25_mag_20_poly.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_pmag20.compactname") or "20R Poly"
-L["uplp_sr25_mag_20_poly.description"] = ARC9:GetPhrase("uplp_ar15_mag_pmag20.description") or "SynPoly 制造的聚合物 20 发弹匣。"
 
 L["uplp_sr25_mag_25.printname"] = "25 发 7.62×51mm (聚合物)"
 L["uplp_sr25_mag_25.compactname"] = "25R Poly"
@@ -3552,7 +3473,6 @@ L["uplp_usp_mag_20.description"] = "MSW .45 的加长 20 发 .45 ACP 弹匣。"
 
 L["uplp_usp_mag_tac.printname"] = "12 发 .45 ACP 人机工程弹匣"
 L["uplp_usp_mag_tac.compactname"] = "12R .45 Ergo"
-L["uplp_usp_mag_tac.description"] = ARC9:GetPhrase("uplp_deag_mag_tac.description") or "带人机工程底板的 12 发标准弹匣，加快换弹速度。"
 
 ////// Tactical
 L["uplp_usp_laser.printname"] = "LuminaFire Armaments S-MOD"
@@ -3569,12 +3489,8 @@ L["uplp_usp_skin_chrome.printname"] = "镀铬"
 L["uplp_usp_skin_chrome.compactname"] = "Chrome"
 L["uplp_usp_skin_chrome.description"] = "将套筒更换为镀铬款。"
 
-L["uplp_usp_skin_gold.printname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.printname") or "金色"
-L["uplp_usp_skin_gold.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_gold.compactname") or "金色"
 L["uplp_usp_skin_gold.description"] = "将套筒更换为金色。"
 
-L["uplp_usp_skin_cylo.printname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.printname") or "Cylo 蓝"
-L["uplp_usp_skin_cylo.compactname"] = ARC9:GetPhrase("uplp_deagle_skin_blue.compactname") or "Cylo"
 L["uplp_usp_skin_cylo.description"] = "将套筒更换为金属蓝色。\n这种蓝色被称为 \"Cylo Blue\"，以某种外来蝙蝠物种命名。"
 
 L["uplp_usp_skin_red.printname"] = "红色"
@@ -3632,11 +3548,9 @@ L["uplp_ks23_stock_grip_stock.description"] = "移除 Pushka-23 的枪托，换�
 ////// Ammo
 L["uplp_ks23_shell_buck.printname"] = "\"Oskolok\" 鹿弹"
 L["uplp_ks23_shell_buck.compactname"] = "Oskolok"
-L["uplp_ks23_shell_buck.description"] = ARC9:GetPhrase("uplp_sg_shell_red.description") or "装填中型弹丸的标准霰弹。"
 
 L["uplp_ks23_shell_slug.printname"] = "\"Okhotnik\" 独头弹"
 L["uplp_ks23_shell_slug.compactname"] = "Okhotnik"
-L["uplp_ks23_shell_slug.description"] = ARC9:GetPhrase("uplp_sg_shell_green.description") or "用于中距离狩猎的霰弹，发射单发精确弹丸。"
 
 L["uplp_ks23_shell_flash.printname"] = "\"Zvezda\" 闪光弹"
 L["uplp_ks23_shell_flash.compactname"] = "Zvezda"
@@ -3675,8 +3589,6 @@ L["uplp_g36_stock_default.printname"] = "STG-95 原厂枪托"
 L["uplp_g36_stock_default.compactname"] = "STG-95"
 L["uplp_g36_stock_default.description"] = "STG-95 的原厂枪托。"
 
-L["uplp_g36_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_g36_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_g36_stock_buffer.description"] = "适用于 STG-95 的改装缓冲管组件，可安装 AR-15 兼容枪托。"
 
 ////// Top Rails
@@ -3734,10 +3646,6 @@ L["uplp_g36_mag_30.printname"] = "30 发 5.56×45mm"
 L["uplp_g36_mag_30.compactname"] = "30R 5.56"
 L["uplp_g36_mag_30.description"] = "STG-95 的默认 30 发弹匣。"
 
-L["uplp_g36_mag_drum.printname"] = ARC9:GetPhrase("uplp_ar15_mag_drum.printname") or "100 发 5.56×45mm 弹鼓"
-L["uplp_g36_mag_drum.compactname"] = ARC9:GetPhrase("uplp_ar15_mag_drum.compactname") or "90R Drum"
-L["uplp_g36_mag_drum.description"] = ARC9:GetPhrase("uplp_ar15_mag_drum.description") or "90 发 C 形弹鼓。不建议装填超过 90 发，以免卡弹。"
-
 ////// Other
 L["uplp_g36_bipod.printname"] = "STG-95 两脚架"
 L["uplp_g36_bipod.compactname"] = "Bipod"
@@ -3776,12 +3684,7 @@ L["uplp_vector_stock_def.printname"] = "折叠枪托"
 L["uplp_vector_stock_def.compactname"] = "Fold."
 L["uplp_vector_stock_def.description"] = "Serval GEN2 的原厂折叠枪托。"
 
-L["uplp_vector_stock_buffer.printname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.printname") or "缓冲管"
-L["uplp_vector_stock_buffer.compactname"] = ARC9:GetPhrase("uplp_ak_stock_tube12.compactname") or "缓冲管"
 L["uplp_vector_stock_buffer.description"] = "适用于 Serval GEN2 的改装缓冲管组件，可安装 AR-15 兼容枪托。"
-
-L["uplp_vector_stock_awp.printname"] = ARC9:GetPhrase("uplp_ar15_stock_veryheavy.printname") or "ApexCore Systems 重型枪托"
-L["uplp_vector_stock_awp.compactname"] = ARC9:GetPhrase("uplp_ar15_stock_veryheavy.compactname") or "ApexCore"
 L["uplp_vector_stock_awp.description"] = "ApexCore Systems 为 Serval GEN2 制造的重型枪托。"
 
 ////// Mags
@@ -3812,20 +3715,15 @@ L["uplp_vector_skin_blk.description"] = "Serval GEN2 的重新涂漆下机匣。
 
 L["uplp_vector_skin_tan.printname"] = "沙漠沙色机匣"
 L["uplp_vector_skin_tan.compactname"] = "沙色"
-L["uplp_vector_skin_tan.description"] = ARC9:GetPhrase("uplp_vector_skin_blk.description") or "Serval GEN2 的重新涂漆下机匣。\n仅 <color=160,160,255>外观</color>。"
 
 L["uplp_vector_skin_purple.printname"] = "派对紫机匣"
 L["uplp_vector_skin_purple.compactname"] = "紫色"
-L["uplp_vector_skin_purple.description"] = ARC9:GetPhrase("uplp_vector_skin_blk.description") or "Serval GEN2 的重新涂漆下机匣。\n仅 <color=160,160,255>外观</color>。"
 
 L["uplp_vector_skin_red.printname"] = "运动红机匣"
 L["uplp_vector_skin_red.compactname"] = "红色"
-L["uplp_vector_skin_red.description"] = ARC9:GetPhrase("uplp_vector_skin_blk.description") or "Serval GEN2 的重新涂漆下机匣。\n仅 <color=160,160,255>外观</color>。"
 
 L["uplp_vector_skin_orange.printname"] = "猎户橙机匣"
 L["uplp_vector_skin_orange.compactname"] = "橙色"
-L["uplp_vector_skin_orange.description"] = ARC9:GetPhrase("uplp_vector_skin_blk.description") or "Serval GEN2 的重新涂漆下机匣。\n仅 <color=160,160,255>外观</color>。"
-
 
 //////////////////// SIG SG 550
 L["uplp_weapon_sg550"] = "Krieg 90"
@@ -4100,10 +3998,6 @@ L["uplp_mosin_brl_long.printname"] = "长枪管"
 L["uplp_mosin_brl_long.compactname"] = "长"
 L["uplp_mosin_brl_long.description"] = "最初为二战狙击部队制造的默认枪管。"
 
--- L["uplp_mosin_brl_carbine.printname"] = "Carbine Barrel"
--- L["uplp_mosin_brl_carbine.compactname"] = "Carbine"
--- L["uplp_mosin_brl_carbine.description"] = "Shortened barrel originally made for noncombatant troops in World War 2."
-
 L["uplp_mosin_brl_obrez.printname"] = "截短枪管"
 L["uplp_mosin_brl_obrez.compactname"] = "截短"
 L["uplp_mosin_brl_obrez.description"] = "锯短的三线枪管。如果你看重射程，不建议使用。"
@@ -4142,6 +4036,6 @@ L["uplp_mosin_pu.printname"] = "3.5× KP 瞄具"
 L["uplp_mosin_pu.compactname"] = "3.5× KP"
 L["uplp_mosin_pu.description"] = "为三线步枪制造的苏联望远镜式瞄具。"
 
-L["uplp_mosin_closerail.printname"] = "近机匣导轨座"
-L["uplp_mosin_closerail.compactname"] = "近机匣座"
-L["uplp_mosin_closerail.description"] = "将瞄具支座安装得更靠近机匣。\n\n禁用 <color=255,100,100>桥夹装填</color>。"
+-- L["uplp_mosin_closerail.printname"] = "Sniper Variant & Closer Rail Mount"
+-- L["uplp_mosin_closerail.compactname"] = "S.V. Mount"
+-- L["uplp_mosin_closerail.description"] = "Converts the Three-Line into a sniper variant. Comes with an altered bolt, and allows the installation of optics closer to the action.\n\nDisables <color=255,100,100>reloading with stripper clips</color>."

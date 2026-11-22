@@ -2003,3 +2003,5 @@ L["uplp_mosin_supp.truedescription"] = "Old-school suppressor specifically made 
 L["uplp_mosin_pu.truename"] = "3.5x PU Scope"
 L["uplp_mosin_pu.truecompactname"] = "3.5x PU"
 L["uplp_mosin_pu.truedescription"] = "Soviet-manufactured telescopic sight made for the Mosin-Nagant."
+
+L["uplp_mosin_closerail.description"] = "Converts the Mosin-Nagant into a sniper variant. Comes with an altered bolt, and allows the installation of optics closer to the action.\n\nDisables <color=255,100,100>reloading with stripper clips</color>."

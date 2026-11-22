@@ -4098,11 +4098,7 @@ L["uplp_weapon_mosin_obrez_stop"] = "Obrez-Please-Stop"
 ////// Barrels
 L["uplp_mosin_brl_long.printname"] = "Long Barrel"
 L["uplp_mosin_brl_long.compactname"] = "Long"
-L["uplp_mosin_brl_long.description"] = "Default originally made for sniper troops in World War 2."
-
--- L["uplp_mosin_brl_carbine.printname"] = "Carbine Barrel"
--- L["uplp_mosin_brl_carbine.compactname"] = "Carbine"
--- L["uplp_mosin_brl_carbine.description"] = "Shortened barrel originally made for noncombatant troops in World War 2."
+L["uplp_mosin_brl_long.description"] = "Factory barrel originally made for snipers in World War 2."
 
 L["uplp_mosin_brl_obrez.printname"] = "Obrez Barrel"
 L["uplp_mosin_brl_obrez.compactname"] = "Obrez"
@@ -4142,6 +4138,6 @@ L["uplp_mosin_pu.printname"] = "3.5x KP Optic" -- "Short-Range Scope" - "Кор�
 L["uplp_mosin_pu.compactname"] = "3.5x KP"
 L["uplp_mosin_pu.description"] = "Soviet-manufactured telescopic sight made for the Three-Line.\n\nDisables <color=255,100,100>stripper clip reloading</color>."
 
-L["uplp_mosin_closerail.printname"] = "Sniper Variant + Closer Rail Mount"
-L["uplp_mosin_closerail.compactname"] = "Sniper Mount"
-L["uplp_mosin_closerail.description"] = "Turns rifle into Sniper variant with special bolt and allows installing scopes closer to eyes.\n\nDisables <color=255,100,100>stripper clip reloading</color>."
+L["uplp_mosin_closerail.printname"] = "Sniper Variant & Closer Rail Mount"
+L["uplp_mosin_closerail.compactname"] = "S.V. Mount"
+L["uplp_mosin_closerail.description"] = "Converts the Three-Line into a sniper variant. Comes with an altered bolt, and allows the installation of optics closer to the action.\n\nDisables <color=255,100,100>reloading with stripper clips</color>."

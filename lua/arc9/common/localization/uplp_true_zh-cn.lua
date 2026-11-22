@@ -2003,3 +2003,5 @@ L["uplp_mosin_supp.truedescription"] = "专为莫辛-纳甘制造的老式消音
 L["uplp_mosin_pu.truename"] = "3.5× PU 瞄具"
 L["uplp_mosin_pu.truecompactname"] = "3.5x PU"
 L["uplp_mosin_pu.truedescription"] = "为莫辛-纳甘制造的苏联望远镜式瞄具。"
+
+-- L["uplp_mosin_closerail.description"] = "Converts the Mosin-Nagant into a sniper variant. Comes with an altered bolt, and allows the installation of optics closer to the action.\n\nDisables <color=255,100,100>reloading with stripper clips</color>."
