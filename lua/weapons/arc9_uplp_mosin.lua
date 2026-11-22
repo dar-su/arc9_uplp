@@ -82,13 +82,13 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_awp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
-    Ang = Angle(0, 0, 180),
+    Pos = Vector(-8, 4, -5) + Vector(4, 0, -0.5),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-8, 4, -5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
 
-    TPIKPosSightOffset = Vector(1, 1, -2),
+    TPIKPosSightOffset = Vector(1, 1, -4),
     TPIKHolsterOffset = Vector(3, 0, 2),
 }
 

@@ -383,6 +383,7 @@ ATT.ShootWhileSprint = true
 -- end
 
 ATT.HoldTypeSprint = "physgun"
+ATT.AnimMelee = ACT_FLINCH_SHOULDER_RIGHT
 
 ATT.ExcludeElements = {"uplp_no_bayonet"}
 
