@@ -353,8 +353,8 @@ ATT.BashDamageType = DMG_SLASH
 ATT.BashDamage = 30
 ATT.BashLungeRange = 0
 ATT.BashRange = 124
-ATT.PreBashTime = 0.05
-ATT.PostBashTime = 0.4
+ATT.PreBashTime = 0.08
+ATT.PostBashTime = 0.6
 
 local function sprintfuk(self)
     local owner = self:GetOwner()
@@ -396,7 +396,7 @@ ATT.NearWallAng = Angle(0, 2, -15)
 ATT.BobSprintMult = 0.5
 
 ATT.BarrelLengthAdd = 12
-ATT.SpeedMultMelee = 2
+ATT.SpeedMultMelee = 3
 
 ATT.BashWhileSprint = true
 ATT.ShootWhileSprint = true

@@ -409,7 +409,6 @@ SWEP.Animations = {
     },
     ["cycle"] = {
         Source = {"cycle"},
-        -- ShellEjectAt = 5,
         MinProgress = 0.65,
         FireASAP = true,
         -- Mult = 1.1,
@@ -418,6 +417,17 @@ SWEP.Animations = {
             {s = pathUTREAL .. "back.wav",          t = 4/30},
             {s = pathUTREAL .. "forth.wav",          t = 10/30},
             {s = pathUTREAL .. "down.wav",          t = 20/30},
+        },
+    },
+    ["cycle_snip"] = {
+        Source = {"cycle"},
+        MinProgress = 0.65,
+        FireASAP = true,
+        EventTable = {
+            {s = pathUTREAL .. "up.wav",          t = 5/30},
+            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            {s = pathUTREAL .. "forth.wav",          t = 11/30},
+            {s = pathUTREAL .. "down.wav",          t = 23/30},
         },
     },
     ["ready"] = {
@@ -464,7 +474,7 @@ SWEP.Animations = {
     },
     ["holster"] = {
         Source = "holster",
-        MinProgressTime = 0.3,
+        MinProgressTime = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -476,7 +486,7 @@ SWEP.Animations = {
     },
     ["holster_empty"] = {
         Source = "holster_empty",
-        MinProgressTime = 0.3,
+        MinProgressTime = 0.5,
         EventTable = {
             { s = pathUTC .. "rattle2.ogg", t = 0, v = 0.8 },
         },
@@ -497,9 +507,9 @@ SWEP.Animations = {
 
 
     ["reload"] = {
-        Source = "reload_empty", -- needs new anim with hammer uncocked
+        Source = "reload_notempty",
         EjectAt = 0.45,
-        RestoreAmmo = 4,
+        RestoreAmmo = 4, -- hardcoded :/
         DropMagAt = 67/30,
         EventTable = {
             {s = pathUTREAL .. "up.wav",          t = 4/30},
@@ -590,13 +600,6 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
     },
-    -- ["reload_insert_first"] = {
-    --     Source = "sg_insert_first",
-    --     MinProgress = 0.5,
-    --     EventTable = {
-    --         { s = ShellInsert, t = 0, v = 0.6 },
-    --     },
-    -- },
 
     ["reload_finish"] = {
         Source = "sgreload_finish",
@@ -613,16 +616,6 @@ SWEP.Animations = {
             { t = 0, lhik = 1 },
         },
     },
-    -- ["reload_finish_first"] = {
-    --     Source = "sg_end_first",
-    --     MinProgress = 0.75,
-    --     EventTable = {
-    --         { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 0, v = 0.6 },
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --     },
-    -- },
 
     -- Inspecc --
 
@@ -681,45 +674,48 @@ SWEP.Animations = {
     -- },
 
 
-    -- ["toggle"] = {
-    --     Source = "modeswitch",
-    --     EventTable = thetoggle
-    -- },
-    -- ["toggle_empty"] = {
-    --     Source = "modeswitch_empty",
-    --     EventTable = thetoggle
-    -- },
+    ["toggle"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle
+    },
+    ["toggle_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = thetoggle
+    },
 
-    -- ["switchsights"] = {
-    --     Source = "modeswitch",
-    --     EventTable = thetoggle
-    -- },
-    -- ["switchsights_empty"] = {
-    --     Source = "modeswitch_empty",
-    --     EventTable = thetoggle
-    -- },
+    ["switchsights"] = {
+        Source = "modeswitch",
+        EventTable = thetoggle
+    },
+    ["switchsights_empty"] = {
+        Source = "modeswitch_empty",
+        EventTable = thetoggle
+    },
 
-    -- ["enter_bipod"] = {
-    --     Source = "modeswitch",
-    -- },
-    -- ["enter_bipod_empty"] = {
-    --     Source = "modeswitch_empty",
-    -- },
-    -- ["exit_bipod"] = {
-    --     Source = "modeswitch",
-    -- },
-    -- ["exit_bipod_empty"] = {
-    --     Source = "modeswitch_empty",
-    -- },
+    ["enter_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["enter_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
+    ["exit_bipod"] = {
+        Source = "modeswitch",
+    },
+    ["exit_bipod_empty"] = {
+        Source = "modeswitch_empty",
+    },
 
-    -- ["dryfire"] = {
-    --     Source = "modeswitch",
-    -- },
-    -- ["dryfire_empty"] = {
-    --     Source = "modeswitch_empty",
-    -- },
+    ["dryfire"] = {
+        Source = "modeswitch",
+    },
+    ["dryfire_empty"] = {
+        Source = "modeswitch_empty",
+    },
     ["bash"] = {
-        Source = "fire",
+        Source = "bayonet",
+    },
+    ["bash_empty"] = {
+        Source = "bayonet_empty",
     },
 }
 
@@ -780,7 +776,7 @@ SWEP.Hook_ModifyElements = function(self, eles)
         eles["uplp_no_bayonet"] = true
     end
 
-    if eles["uplp_optic_dovetail_used"] then
+    if eles["uplp_optic_dovetail_used"] and !eles["uplp_optic_dovetail_okp"] then
         eles["mosin_sniper_bolt"] = true
     end
 
@@ -801,29 +797,29 @@ SWEP.AttachmentTableOverrides = {
     ["uplp_optic_sniper"] = { ModelOffset = Vector(0.1, 0, 0) },
     ["uplp_optic_old"] = { ModelOffset = Vector(1, 0, -0.06) },
     ["uplp_optic_pso_rail"] = { ModelOffset = Vector(0.7, 0, 0) },
+    ["uplp_optic_dovetail_okp"] = { ModelOffset = Vector(0.8, 0.2, 0) },
 }
 
+-- SWEP.NoForceSetLoadedRoundsOnReload = true
 
 SWEP.Hook_TranslateAnimation = function(swep, anim)
     if !IsValid(swep:GetOwner()) then return end
     local eles = swep:GetElements()
 
-
     if anim == "idle" and swep.nosgreload then swep.nosgreload = nil end
 
     if anim == "reload" or anim == "reload_empty" then swep.nosgreload = true end
 
-    -- if (anim == "reload_insert" or anim == "reload_finish") and swep.nosgreload
---     local empty = swep:Clip1() == 0
+    swep.NoForceSetLoadedRoundsOnReload = nil
 
---     if (anim == "reload_start" and empty) or anim == "reload_start_empty" then
---         swep.itwasemptystartbro = true
---     elseif (anim == "reload_insert" or anim == "reload_finish") and swep.itwasemptystartbro then
---         swep.itwasemptystartbro = nil
---         return anim .. "_first"
---     end
-
---     return anim
+    if anim == "reload_start" and swep:Clip1() == 1 then
+        swep.NoForceSetLoadedRoundsOnReload = true
+        swep:SetLoadedRounds(swep:Clip1()+1)
+    end
+    
+    if anim == "cycle" and eles["mosin_sniper_bolt"] then
+        return "cycle_snip"
+    end
 end
 
 SWEP.AttachmentElements = {
@@ -1065,9 +1061,9 @@ SWEP.HookP_NameChange = function(self, name)
 end
 
 SWEP.CustomPoseParamsHandler = function(swep, ent, iswm)
-    -- if swep:GetElements()["mosin_sniper_bolt"] then
-    --     ent:SetPoseParameter("owo", 1) -- different animations for mpk5
-    -- else
-    --     ent:SetPoseParameter("owo", 0)
-    -- end
+    if swep:GetElements()["mosin_sniper_bolt"] then
+        ent:SetPoseParameter("owo", 1) -- different animations for mpk5
+    else
+        ent:SetPoseParameter("owo", 0)
+    end
 end

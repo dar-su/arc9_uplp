@@ -82,6 +82,7 @@ $bbox 0 0 0 0 0 0
 $cbox 0 0 0 0 0 0
 
 $poseparameter "sights" 0 1 loop 0
+$poseparameter "owo" 0 1 loop 0
 
 $sequence "idle"{
 	"anims\idle.smd"
@@ -114,8 +115,22 @@ $sequence "fire" {
 	fadein 0.03
 	fadeout 0.07
 }
+
+$sequence "cycle" {
+	"anims\cycle.smd"
+	"anims\cycle_iron.smd"
+	"anims\cycle_snip.smd"
+	"anims\cycle_snip_iron2.smd"
+	blend "sights" 0 1
+	blend "owo" 0 1
+	fps 30
+}
+
+
 $sequence "ready" {
 	"anims\ready.smd"
+	"anims\ready_snip.smd"
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -123,12 +138,16 @@ $sequence "ready" {
 
 $sequence "sgreload_start" {
 	"anims\reload_start.smd"
+	"anims\reload_start_snip.smd"
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "sgreload_start_empty" {
 	"anims\reload_start_empty.smd"
+	"anims\reload_start_empty_snip.smd"
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
@@ -136,6 +155,8 @@ $sequence "sgreload_start_empty" {
 
 $sequence "sgreload_insert" {
 	"anims\reload_insert.smd"
+	"anims\reload_insert_snip.smd"
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
@@ -143,8 +164,8 @@ $sequence "sgreload_insert" {
 
 $sequence "sgreload_finish" {
 	"anims\reload_end.smd"
-	// "anims\reload_end_iron.smd"
- 	// blend "sights" 0 1
+	"anims\reload_end_snip.smd"
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
@@ -152,9 +173,13 @@ $sequence "sgreload_finish" {
 
 
 $sequence "reload_empty" {
-	"anims\reload_empty.smd"
-	"anims\reload_empty_iron.smd"
- 	blend "sights" 0 1
+	"anims\reload_empty2.smd"
+	fps 30
+	"ACT_VM_RELOAD" 1
+	snap
+}
+$sequence "reload_notempty" {
+	"anims\reload_empty2_butnotempty.smd"
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
@@ -162,48 +187,58 @@ $sequence "reload_empty" {
 
 // add reload empty but with hammer on place
 
-// $sequence "draw" {
-// 	"anims\draw2.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "draw_empty" {
-// 	"anims\draw2_empty.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "holster" {
-// 	"anims\holster.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
-// $sequence "holster_empty" {
-// 	"anims\holster_empty.smd"
-// 	fps 30
-// 	"ACT_VM_DRAW" 1
-// 	snap
-// }
+$sequence "draw" {
+	"anims\draw.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "draw_empty" {
+	"anims\draw_empty.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster" {
+	"anims\holster.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
+$sequence "holster_empty" {
+	"anims\holster_empty.smd"
+	fps 30
+	"ACT_VM_DRAW" 1
+	snap
+}
 
 
 
-// $sequence "modeswitch" {
-// 	"anims\switch.smd"
-// 	"anims\switch_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	snap
-// }
+$sequence "modeswitch" {
+	"anims\switch.smd"
+	"anims\switch_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
 
-// $sequence "modeswitch_empty" {
-// 	"anims\switch_empty.smd"
-// 	"anims\switch_empty_iron.smd"
-// 	blend "sights" 0 1
-// 	fps 30
-// 	snap
-// }
+$sequence "modeswitch_empty" {
+	"anims\switch_empty.smd"
+	"anims\switch_empty_iron.smd"
+	blend "sights" 0 1
+	fps 30
+	snap
+}
+
+$sequence "bayonet" {
+	"anims\bayonet.smd"
+	fps 30
+}
+$sequence "bayonet_empty" {
+	"anims\bayonet_empty.smd"
+	fps 30
+}
+
 
 
 // $sequence "inspect" {
@@ -214,13 +249,6 @@ $sequence "reload_empty" {
 // 	"anims\inspect_empty.smd"
 // 	fps 30
 // }
-
-$sequence "cycle" {
-	"anims\cycle.smd"
-	"anims\cycle_iron.smd"
-	blend "sights" 0 1
-	fps 30
-}
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"
