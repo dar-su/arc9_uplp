@@ -428,16 +428,13 @@ local thetoggle = {{
 }}
 
 local ShellInsert = {
-    ")uplp_rz/lever/" .. "round-insert-01.ogg",
-    ")uplp_rz/lever/" .. "round-insert-02.ogg",
-    ")uplp_rz/lever/" .. "round-insert-03.ogg",
-    ")uplp_rz/lever/" .. "round-insert-04.ogg",
-    ")uplp_rz/lever/" .. "round-insert-05.ogg",
-    ")uplp_rz/lever/" .. "round-insert-06.ogg",
-    ")uplp_rz/lever/" .. "round-insert-07.ogg",
-    ")uplp_rz/lever/" .. "round-insert-08.ogg",
-    ")uplp_rz/lever/" .. "round-insert-09.ogg",
-    ")uplp_rz/lever/" .. "round-insert-10.ogg",
+    pathUTREAL .. "insert-01.ogg",
+    pathUTREAL .. "insert-02.ogg",
+    pathUTREAL .. "insert-03.ogg",
+    pathUTREAL .. "insert-04.ogg",
+    pathUTREAL .. "insert-05.ogg",
+    pathUTREAL .. "insert-06.ogg",
+
 }
 
 local alwayslrhik = { { t = 0, lhik = 1, rhik = 1 }, { t = 1, lhik = 1, rhik = 1 } }
@@ -603,7 +600,7 @@ SWEP.Animations = {
             {s = pathUTREAL .. "tempk98/clipplace.ogg", t = 35/30},
             {s = pathUTREAL .. "tempk98/clipinsert.ogg", t = 46/30},
             {s = pathUTREAL .. "tempk98/cliprelease.ogg", t = 64/30},
-            {s = pathUTREAL .. "tempk98/clipeject1.ogg", t = 62/30, v = 0.2},
+            {s = pathUTREAL .. "clip.ogg", t = 62/30, v = 0.2},
 
 
             {s = pathUTREAL .. "forth.wav",          t = 70/30},
@@ -640,7 +637,7 @@ SWEP.Animations = {
             {s = pathUTREAL .. "tempk98/clipplace.ogg", t = 35/30},
             {s = pathUTREAL .. "tempk98/clipinsert.ogg", t = 46/30},
             {s = pathUTREAL .. "tempk98/cliprelease.ogg", t = 64/30},
-            {s = pathUTREAL .. "tempk98/clipeject1.ogg", t = 62/30, v = 0.2},
+            {s = pathUTREAL .. "clip.ogg", t = 62/30, v = 0.4},
 
             {s = pathUTREAL .. "forth.wav",          t = 70/30},
             {s = pathUTREAL .. "down.wav",          t = 80/30},
