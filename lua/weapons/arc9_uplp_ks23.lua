@@ -396,8 +396,8 @@ SWEP.Animations = {
         MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
-            { s = pathRZ .. "rack_1.ogg", t = 2 / 30, v = 0.8 },
-            { s = pathRZ .. "rack_2.ogg", t = 10 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 2 / 30, v = 0.66, v_sighted = 1 },
+            { s = pathRZ .. "rack_2.ogg", t = 10 / 30, v = 0.66, v_sighted = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 32 / 60, v = 0.5 },
         },
     },
@@ -434,9 +434,9 @@ SWEP.Animations = {
         EjectAt = 8 / 30,
         MinProgress = 0.7,
         EventTable = {
-            { s = pathRZ .. "rack_1.ogg", t = 0, v = 0.8 },
-            { s = ")uplp_urban_temp/870/eject.ogg", t = 3 / 30, v = 0.8 },
-            { s = pathRZ .. "rack_2.ogg", t = 7 / 30, v = 0.8 },
+            { s = pathRZ .. "rack_1.ogg", t = 0, v = 0.66, v_sighted = 1 },
+            { s = ")uplp_urban_temp/870/eject.ogg", t = 3 / 30, v = 0.5, v_sighted = 1 },
+            { s = pathRZ .. "rack_2.ogg", t = 7 / 30, v = 0.66, v_sighted = 1 },
         },
     },
 
@@ -457,10 +457,10 @@ SWEP.Animations = {
         MinProgress = 0.5,
         EjectAt = 6.5 / 30,
         EventTable = {
-            { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_1.ogg", t = 1 / 30, v = 0.66, v_sighted = 1 },
             { s = UTCrattle, t = 3 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30 },
-            { s = pathRZ .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
+            { s = pathRZ .. "rack_2.ogg", t = 37 / 30, v = 0.66, v_sighted = 1 },
         },
     },
 

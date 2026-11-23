@@ -472,8 +472,8 @@ SWEP.Animations = {
         MinProgressTime = 0.6,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 5 / 30, v = 0.8 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 17 / 30, v = 0.8 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 5 / 30, v = 0.66, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 17 / 30, v = 0.66, v_sighted = 0.8 },
             { s = pathUTC .. "shoulder_med.ogg", t = 39 / 60 },
         },
         IKTimeLine = {
@@ -506,7 +506,7 @@ SWEP.Animations = {
         Source = "fire",
         NoIdle = true,
         EventTable = {
-            { s = mechh, t = 0, v = 0.25, v_sighted = 1 },
+            { s = mechh, t = 0, v = 0.25, v_sighted = 0.8 },
         },
     },
 
@@ -515,9 +515,9 @@ SWEP.Animations = {
         EjectAt = 3.5 / 30,
         MinProgress = 0.8,
         EventTable = {
-            { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.6 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 5 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUT .. "eject.ogg", t = 3 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 5 / 30, v = 0.5, v_sighted = 0.8 },
         },
     },
 
@@ -571,9 +571,9 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 43 / 30, v = 0.8 },
 
             { s = pathUTC .. "movement-shotgun-03.ogg", t = 57 / 30 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 66 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 68 / 30, v = 0.6 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 70 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 66 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUT .. "eject.ogg", t = 68 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 70 / 30, v = 0.5, v_sighted = 0.8 },
 
             { s = pathUTC .. "shoulder_med.ogg", t = 78 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
@@ -638,9 +638,9 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 43 / 30, v = 0.8 },
 
             { s = pathUTC .. "movement-shotgun-03.ogg", t = 57 / 30 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 66 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 70 / 30, v = 0.6 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 73 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 66 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUT .. "eject.ogg", t = 70 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 73 / 30, v = 0.5, v_sighted = 0.8 },
 
             { s = pathUTC .. "shoulder_med.ogg", t = 78 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 80 / 30, v = 0.8 },
@@ -705,9 +705,9 @@ SWEP.Animations = {
             -- { s = pathUTSaiga .. "magin.ogg", t = 58 / 30, v = 0.8 },
 
             { s = pathUTC .. "movement-shotgun-03.ogg", t = 57 / 30 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 78 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 81.5 / 30, v = 0.6 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 84 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 78 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUT .. "eject.ogg", t = 81.5 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 84 / 30, v = 0.5, v_sighted = 0.8 },
 
             { s = pathUTC .. "shoulder_med.ogg", t = 90 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 92 / 30, v = 0.8 },
@@ -745,10 +745,10 @@ SWEP.Animations = {
         EjectAt = 0.15,
         RestoreAmmo = 2,
         EventTable = {
-            { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.5, v_sighted = 0.8 },
             { s = UTCrattle, t = 3 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 37 / 30, v = 0.5, v_sighted = 0.8 },
             { s = ShellInsert, t = 57 / 30, v = 0.6 },
         },
         IKTimeLine = {
@@ -767,10 +767,10 @@ SWEP.Animations = {
         EjectAt = 0.15,
         -- MinProgress= 0.35,
         EventTable = {
-            { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 1 / 30, v = 0.5, v_sighted = 0.8 },
             { s = UTCrattle, t = 3 / 30, v = 0.8 },
             { s = ")uplp_urban_temp/spas12/breechload.ogg", t = 22 / 30 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 37 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 37 / 30, v = 0.5, v_sighted = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 44 / 30, v = 0.6 },
         },
         IKTimeLine = {
@@ -813,9 +813,9 @@ SWEP.Animations = {
             { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 5 / 30, v = 0.6 },
 
-            { s = pathUTREAL .. "rack_1.ogg", t = 8 / 30, v = 0.6 },
-            { s = pathUT .. "eject.ogg", t = 11 / 30, v = 0.6 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 16 / 30, v = 0.6 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 8 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUT .. "eject.ogg", t = 11 / 30, v = 0.5, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 16 / 30, v = 0.5, v_sighted = 0.8 },
 
             { s = pathUTC .. "shoulder_med.ogg", t = 21 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 25 / 30, v = 0.8 },
@@ -836,8 +836,8 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 61 / 30 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 61 / 30, v = 0.7, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30, v = 0.7, v_sighted = 0.8 },
             { s = pathUTC .. "shoulder_med.ogg", t = 83 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, v = 0.8 },
             {hide = 1, t = 0},
@@ -860,8 +860,8 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-03.ogg", t = 5 / 30, v = 0.8 },
             { s = pathUTC .. "cloth_2.ogg", t = 40 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-04.ogg", t = 50 / 30, v = 0.8 },
-            { s = pathUTREAL .. "rack_1.ogg", t = 63 / 30 },
-            { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30 },
+            { s = pathUTREAL .. "rack_1.ogg", t = 63 / 30, v = 0.7, v_sighted = 0.8 },
+            { s = pathUTREAL .. "rack_2.ogg", t = 87 / 30, v = 0.7, v_sighted = 0.8 },
             { s = pathUTC .. "shoulder_med.ogg", t = 83 / 30, v = 0.8 },
             { s = pathUTC .. "movement-rifle-02.ogg", t = 90 / 30, v = 0.8 },
             {hide = 1, t = 0},
