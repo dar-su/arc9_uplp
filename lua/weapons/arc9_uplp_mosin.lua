@@ -312,9 +312,9 @@ SWEP.ShootSound = {
 }
 
 SWEP.ShootSoundSilenced = {
-    ")uplp_urban_temp/awp/" .. "fire-sup-01.wav",
-    ")uplp_urban_temp/awp/" .. "fire-sup-02.wav",
-    ")uplp_urban_temp/awp/" .. "fire-sup-03.wav",
+    pathUTREAL .. "fire-sup-01.wav",
+    pathUTREAL .. "fire-sup-02.wav",
+    pathUTREAL .. "fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
@@ -347,7 +347,8 @@ SWEP.DistantShootSoundSilencedIndoor = {
 }
 
 SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
-SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
+--SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
+SWEP.DryFireSound = {pathUTREAL .. "dryfire.wav"}
 
 local pathKNIF = "uplp_rz/knife/"
 SWEP.MeleeSwingSound = false
