@@ -298,7 +298,7 @@ SWEP.ShotgunReload = false
 -- SWEP.ShotgunReloadIncludesChamber = true
 
 function SWEP:GetShouldShotgunReload()
-    return !self:GetUBGL() and ((self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sniper_bolt"])
+    return !self:GetUBGL() and ((self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sgreload"])
 end
 ---- Sounds
 
@@ -972,7 +972,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         swep.NoForceSetLoadedRoundsOnReload = true
         swep:SetLoadedRounds(swep:Clip1()+1)
     end
-    
+
     if anim == "cycle" and eles["mosin_sniper_bolt"] then
         return "cycle_snip"
     end
@@ -1014,7 +1014,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big", "uplp_mosin_mount"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
-        ExcludeElements = {"uplp_optic_dovetail_used"},
+        ExcludeElements = {"uplp_optic_dovetail_used", "uplp_mosin_pu"},
         Bone = "body",
         Pos = Vector(0, -0.85, 2),
         Ang = Angle(90, 90, 180),

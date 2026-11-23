@@ -445,12 +445,13 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 1),
+        Icon_Offset = Vector(0, 0, 0),
         ExtraSightDistance = -2.5,
+        InstalledElements = {"mosin_sgreload"},
     },
 }
 
-ATT.AimDownSightsTimeAdd = -0.03
+ATT.SpeedAddSights = 0.05
 
 ATT.ActivateElements = {"mosin_sniper_bolt"}
 
@@ -468,7 +469,7 @@ ATT.Icon = Material(iconfolder .. "scope.png", "mips smooth")
 ATT.Category = "uplp_mosin_scope"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"mosin_sniper_bolt"}
+ATT.ActivateElements = {"mosin_sniper_bolt", "mosin_sgreload"}
 
 ATT.Model = "models/weapons/arc9/uplp/optic_mosin.mdl"
 ATT.FoldSights = true

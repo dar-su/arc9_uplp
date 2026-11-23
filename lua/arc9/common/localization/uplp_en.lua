@@ -4140,4 +4140,4 @@ L["uplp_mosin_pu.description"] = "Soviet-manufactured telescopic sight made for 
 
 L["uplp_mosin_closerail.printname"] = "Sniper Variant & Closer Rail Mount"
 L["uplp_mosin_closerail.compactname"] = "S.V. Mount"
-L["uplp_mosin_closerail.description"] = "Converts the Three-Line into a sniper variant. Comes with an altered bolt, and allows the installation of optics closer to the action.\n\nDisables <color=255,100,100>reloading with stripper clips</color>."
+L["uplp_mosin_closerail.description"] = "Converts the Three-Line into a sniper variant. Comes with an altered bolt, and allows the installation of optics closer to the action.\n\nWhen optics are mounted, <color=255,100,100>cannot reload using stripper clips</color>."
