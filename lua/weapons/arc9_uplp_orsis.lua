@@ -55,14 +55,14 @@ SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.75
 SWEP.ShellSounds = {
-    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- might be overkill
-    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- but i dont have other sounds
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
 }
 -- SWEP.ShellSounds = ARC9.Shell308SoundsTable
 
