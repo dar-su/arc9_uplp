@@ -414,6 +414,13 @@ ATT.MuzzleEffectQCAHook = function(wep, orig)
     elseif orig == 6 then return 9 end
 end
 
+-- Positives
+ATT.ShootVolumeMult = 0.8
+
+ATT.RecoilMult = 0.85
+ATT.DamageMaxAdd = -5
+ATT.AimDownSightsTimeAdd = 0.02
+
 -- ATT.MuzzleEffectQCA = 6
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_supp")
@@ -442,6 +449,8 @@ ATT.Attachments = {
         ExtraSightDistance = -2.5,
     },
 }
+
+ATT.AimDownSightsTimeAdd = -0.03
 
 ATT.ActivateElements = {"mosin_sniper_bolt"}
 
