@@ -519,11 +519,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 85 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06, v = 0.3, v_sighted = 1},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltup.ogg",          t = 3.18 - 0.06, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 3.37 - 0.4, v = 0.6, v_sighted = 1},
             {s = pathUT .. "eject.ogg",           t = 3.43, v = 0.3, v_sighted = 1},
-            {s = pathUT .. "boltback_reload.ogg",     t = 3.6 - 0.3, v = 0.6, v_sighted = 1},
-            {s = pathUT .. "boltdown.ogg",        t = 3.73 - 0.1, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 3.6 - 0.3, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 3.73 - 0.1, v = 0.3, v_sighted = 1},
 
             {hide = 0, t = 0},
             {hide = 1, t = 36/30},
@@ -598,11 +598,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 75 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 - 0.2, v = 0.3, v_sighted = 1},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 - 0.2, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltup.ogg",          t = 3.18 - 0.06 - 0.2, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 3.37 - 0.4 - 0.2, v = 0.6, v_sighted = 1},
             {s = pathUT .. "eject.ogg",           t = 3.43 - 0.2, v = 0.3, v_sighted = 1},
-            {s = pathUT .. "boltback_reload.ogg",     t = 3.6 - 0.3 - 0.2, v = 0.6, v_sighted = 1},
-            {s = pathUT .. "boltdown.ogg",        t = 3.73 - 0.1 - 0.2, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 3.6 - 0.3 - 0.2, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 3.73 - 0.1 - 0.2, v = 0.3, v_sighted = 1},
 
             {hide = 0, t = 0},
             {hide = 1, t = 36/30},
@@ -677,11 +677,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 93 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 + 0.267, v = 0.3, v_sighted = 1},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 + 0.267, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltup.ogg",          t = 3.18 - 0.06 + 0.267, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 3.37 - 0.4 + 0.267, v = 0.6, v_sighted = 1},
             {s = pathUT .. "eject.ogg",           t = 3.43 + 0.267, v = 0.3, v_sighted = 1},
-            {s = pathUT .. "boltback_reload.ogg",     t = 3.6 - 0.3 + 0.267, v = 0.6, v_sighted = 1},
-            {s = pathUT .. "boltdown.ogg",        t = 3.73 - 0.1 + 0.267, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 3.6 - 0.3 + 0.267, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 3.73 - 0.1 + 0.267, v = 0.3, v_sighted = 1},
 
             {hide = 0, t = 0},
             {hide = 1, t = 39/30},

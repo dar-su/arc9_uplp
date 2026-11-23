@@ -688,7 +688,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 19/30, v = 0.25 },
 
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 19 / 30, v = 0.75 },
-            { s = ShellInsert, t = 36/30 - 0.5 },
+            { s = ShellInsert, t = 36/30 - 0.5, v = 0.3 },
 
             {hide = 1, t = 0},
         },
@@ -715,7 +715,7 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-rifle-04.ogg", t = 19/30, v = 0.5 },
 
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 19 / 30, v = 0.5 },
-            { s = ShellInsert, t = 36/30 - 0.5 },
+            { s = ShellInsert, t = 36/30 - 0.5, v = 0.3 },
 
             {hide = 1, t = 0},
         },
@@ -732,7 +732,7 @@ SWEP.Animations = {
         MinProgress = 0.5,
         -- Mult = 0.925,
         EventTable = {
-            { s = ShellInsert, t = 0.07 },
+            { s = ShellInsert, t = 0.07, v = 0.3 },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 5 / 30, v = 0.5 },
 
             {hide = 1, t = 0},
