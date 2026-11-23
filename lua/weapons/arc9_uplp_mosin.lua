@@ -56,7 +56,17 @@ SWEP.ShellScale = 1
 SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.66
 SWEP.ShellAngleVelocity = 0.6
-SWEP.ShellSounds = ARC9.Shell308SoundsTable
+-- SWEP.ShellSounds = ARC9.Shell308SoundsTable
+SWEP.ShellSounds = {
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+}
 SWEP.EjectDelay = 0.45
 SWEP.ShellSmoke = true
 
