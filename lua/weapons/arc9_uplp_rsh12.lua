@@ -51,7 +51,17 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_127.mdl"
 SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 100
 SWEP.ShellVelocity = -0.25
-SWEP.ShellSounds = ARC9.Shell308SoundsTable
+-- SWEP.ShellSounds = ARC9.Shell308SoundsTable
+SWEP.ShellSounds = {
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+}
 
 SWEP.ExtraShellModels = {
     [1] = {
