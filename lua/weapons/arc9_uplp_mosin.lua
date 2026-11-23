@@ -94,9 +94,13 @@ SWEP.WorldModelOffset = {
 
 SWEP.ViewModelFOVBase = 65
 SWEP.ActivePos = Vector(-0.5, 0, 0.5)
+SWEP.PeekPos = Vector(-0.5, 4, -5.25)
+SWEP.PeekAng = Angle(0, 0.4, -50)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.AnimMelee = ACT_FLINCH_SHOULDER_RIGHT
+SWEP.NonTPIKAnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_FIST
 
 ---- Weapon Stats and Behaviour
 -- Damage
@@ -331,9 +335,11 @@ SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "generictails/fire-dist-int-pistol-light-02.wav",
     pathUTC .. "generictails/fire-dist-int-pistol-light-03.wav",
 }
-SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
 
+SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
 SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
+SWEP.TriggerSoundVolume = 0.4
+SWEP.TriggerSoundSightVolume = 1
 
 local pathKNIF = "uplp_rz/knife/"
 SWEP.MeleeSwingSound = false
@@ -457,11 +463,11 @@ SWEP.Animations = {
         FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
-            {s = pathUTREAL .. "up.wav",          t = 3/30},
-            {s = pathUTREAL .. "back.wav",          t = 2/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
-            {s = pathUTREAL .. "forth.wav",          t = 8/30},
-            {s = pathUTREAL .. "down.wav",          t = 20/30},
+            {s = pathUTREAL .. "up.wav",          t = 3/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 2/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5, v_sighted = 1},
+            {s = pathUTREAL .. "forth.wav",          t = 8/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 20/30, v = 0.6, v_sighted = 1},
         },
         IKTimeLine = {
             { t = 0,        lhik = 1, rhik = 1 },
@@ -476,11 +482,11 @@ SWEP.Animations = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            {s = pathUTREAL .. "up.wav",          t = 5/30},
-            {s = pathUTREAL .. "back.wav",          t = 3/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
-            {s = pathUTREAL .. "forth.wav",          t = 11/30},
-            {s = pathUTREAL .. "down.wav",          t = 23/30},
+            {s = pathUTREAL .. "up.wav",          t = 5/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 3/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5, v_sighted = 1},
+            {s = pathUTREAL .. "forth.wav",          t = 11/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 23/30, v = 0.6, v_sighted = 1},
         },
         IKTimeLine = {
             { t = 0,        lhik = 1, rhik = 1 },
@@ -576,7 +582,7 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = "fire",
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
         IKTimeLine = alwayslrhik,
         NoIdle = true,
     },
@@ -601,7 +607,7 @@ SWEP.Animations = {
             {s = pathUTREAL .. "tempk98/clipplace.ogg", t = 35/30},
             {s = pathUTREAL .. "tempk98/clipinsert.ogg", t = 46/30},
             {s = pathUTREAL .. "tempk98/cliprelease.ogg", t = 64/30},
-            {s = pathUTREAL .. "clip.ogg", t = 62/30, v = 0.2},
+            {s = pathUTREAL .. "clip.ogg", t = 62/30, v = 0.4},
 
 
             {s = pathUTREAL .. "forth.wav",          t = 70/30},
