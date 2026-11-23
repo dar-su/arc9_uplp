@@ -880,26 +880,26 @@ SWEP.Animations = {
     ["firemode_1"] = {
         Source = "modeswitch",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
         }
     },
     ["firemode_1_empty"] = {
         Source = "modeswitch_empty",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
         }
     },
 
     ["firemode_2"] = {
         Source = "modeswitch",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
         }
     },
     ["firemode_2_empty"] = {
         Source = "modeswitch_empty",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
         }
     },
     ["enter_bipod"] = {
