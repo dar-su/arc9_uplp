@@ -1117,8 +1117,6 @@ SWEP.HookP_NameChange = function(self, name)
     if att["uplp_1911_frame_auto"] then
         name = name .. ARC9:GetPhrase("uplp_weapon_1911_auto")
     end
-
-	print(name)
 	
     return name
 end
