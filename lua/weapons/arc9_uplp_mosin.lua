@@ -460,10 +460,10 @@ SWEP.Animations = {
         FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            {s = pathUTREAL .. "up.wav",          t = 3/30},
+            {s = pathUTREAL .. "back.wav",          t = 2/30},
             {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
-            {s = pathUTREAL .. "forth.wav",          t = 10/30},
+            {s = pathUTREAL .. "forth.wav",          t = 8/30},
             {s = pathUTREAL .. "down.wav",          t = 20/30},
         },
         IKTimeLine = {
@@ -480,7 +480,7 @@ SWEP.Animations = {
         FireASAP = true,
         EventTable = {
             {s = pathUTREAL .. "up.wav",          t = 5/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            {s = pathUTREAL .. "back.wav",          t = 3/30},
             {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
             {s = pathUTREAL .. "forth.wav",          t = 11/30},
             {s = pathUTREAL .. "down.wav",          t = 23/30},
