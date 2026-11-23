@@ -578,6 +578,7 @@ SWEP.Animations = {
         Source = "fire",
         EventTable = { { s = mechh, t = 0 } },
         IKTimeLine = alwayslrhik,
+        NoIdle = true,
     },
 
     -- Reloads --
