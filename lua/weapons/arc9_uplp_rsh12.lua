@@ -518,27 +518,27 @@ SWEP.Animations = {
         Source = "fire",
         NoIdle = true,
         EventTable = {
-            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
+            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
     ["fire_da"] = {
         Source = "fire_da", -- same as fire but without hammer poseparam
         NoIdle = true,
         EventTable = {
-            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
+            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
     ["trigger"] = {
         Source = "trigger",
         EventTable = {
-            {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
-            {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},
+            {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0, v = 0.5, v_sighted = 1},
+            {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
     ["untrigger"] = {
         Source = "untrigger",
         EventTable = {
-            {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0},
+            {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
 

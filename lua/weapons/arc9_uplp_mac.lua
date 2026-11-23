@@ -528,7 +528,7 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         NoIdle = true,
         EventTable = {
-            { s = mechh, t = 0 },
+            { s = mechh, t = 0, v = 0.5, v_sighted = 1 },
         },
     },
 
@@ -537,7 +537,7 @@ SWEP.Animations = {
         ShellEjectAt = 0.01,
         NoIdle = true,
         EventTable = {
-            { s = mechh, t = 0 },
+            { s = mechh, t = 0, v = 0.5, v_sighted = 1 },
         },
     },
 

@@ -338,8 +338,6 @@ SWEP.DistantShootSoundSilencedIndoor = {
 
 SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
 SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
-SWEP.TriggerSoundVolume = 0.4
-SWEP.TriggerSoundSightVolume = 1
 
 local pathKNIF = "uplp_rz/knife/"
 SWEP.MeleeSwingSound = false

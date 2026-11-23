@@ -426,14 +426,14 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
         EventTable = {
-            { s = mechh, t = 0 },
+            { s = mechh, t = 0, v = 0.5, v_sighted = 1 },
         },
     },
     ["fire_sights"] = {
         Source = "fire_sights",
         Mult = 0.65,
         NoIdle = true,
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
     },
 
     -- Reloads --

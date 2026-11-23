@@ -433,11 +433,8 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = "fire",
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
         NoIdle = true,
-        EventTable = {
-            {s = mechh, t = 0},
-        },
     },
     ["cycle"] = {
         Source = "cycle",
@@ -455,13 +452,10 @@ SWEP.Animations = {
 
     ["fire_empty"] = {
         Source = "fire",
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
         MinProgress = 0.95,
         NoIdle = true,
         -- Mult = 1.15,
-        EventTable = {
-            {s = mechh, t = 0},
-        },
     },
 
     -- Reloads --

@@ -482,14 +482,14 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         ShellEjectAt = 0.01,
-        EventTable = { { s = mechh, t = 0 } }, -- add belt rattle plz, belt1/2 too long
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } }, -- add belt rattle plz, belt1/2 too long
     },
     ["fire_sights"] = {
         Source = "fire_sights",
         Mult = 0.65,
         NoIdle = true,
         ShellEjectAt = 0.01,
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
     },
     ["dryfire"] = {
         Source = "modeswitch",
