@@ -69,8 +69,9 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_mp5.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
-    Ang = Angle(0, 0, 180),
+    DroppedPos = Vector(-8, 4, -5) + Vector(2, -1, -0.75),
+    Pos = Vector(-8, 4, -5) + Vector(1, -1, -1.5),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-8, 4, -6),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
@@ -417,7 +418,7 @@ SWEP.Animations = {
         Source = "fire",
         ShellEjectAt = 0.01,
         EventTable = {
-            { s = mechh, t = 0 },
+            { s = mechh, t = 0, v = 0.5, v_sighted = 1 },
         },
     },
     ["fire_sights"] = {
@@ -425,7 +426,7 @@ SWEP.Animations = {
         Mult = 0.65,
         ShellEjectAt = 0.01,
         NoIdle = true,
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
     },
 
 

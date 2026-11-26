@@ -469,26 +469,26 @@ SWEP.Animations = {
         Source = "fire",
         Mult = 0.75,
         ShellEjectAt = 0.01,
-        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        EventTable = { { s = mechh, t = 0, v = 0.3, v_sighted = 1 } },
     },
     ["fire_sights"] = {
         Source = "fire_sights",
         Mult = 0.7,
         ShellEjectAt = 0.01,
         NoIdle = true,
-        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        EventTable = { { s = mechh, t = 0, v = 0.3, v_sighted = 1 } },
     },
 
     ["fire_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
-        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        EventTable = { { s = mechh, t = 0, v = 0.3, v_sighted = 1 } },
     },
     ["fire_sights_empty"] = {
         Source = "fire_empty",
         ShellEjectAt = 0.01,
         NoIdle = true,
-        EventTable = { { s = mechh, t = 0, v = 0.3 } },
+        EventTable = { { s = mechh, t = 0, v = 0.3, v_sighted = 1 } },
     },
 
     -- Reloads --

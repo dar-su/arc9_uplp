@@ -51,7 +51,17 @@ SWEP.ShellModel = "models/weapons/arc9/uplp/shells/shell_127.mdl"
 SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 100
 SWEP.ShellVelocity = -0.25
-SWEP.ShellSounds = ARC9.Shell308SoundsTable
+-- SWEP.ShellSounds = ARC9.Shell308SoundsTable
+SWEP.ShellSounds = {
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+}
 
 SWEP.ExtraShellModels = {
     [1] = {
@@ -518,27 +528,27 @@ SWEP.Animations = {
         Source = "fire",
         NoIdle = true,
         EventTable = {
-            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
+            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
     ["fire_da"] = {
         Source = "fire_da", -- same as fire but without hammer poseparam
         NoIdle = true,
         EventTable = {
-            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0},
+            {s = {pathUTC .. "revolver_hammer-01.ogg", pathUTC .. "revolver_hammer-02.ogg", pathUTC .. "revolver_hammer-03.ogg"}, t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
     ["trigger"] = {
         Source = "trigger",
         EventTable = {
-            {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0},
-            {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0},
+            {s = pathUTC .. "revolver_trigger-02.ogg", t = 0.0, v = 0.5, v_sighted = 1},
+            {s = pathUT .. "cylinder_rotate_large.ogg", t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
     ["untrigger"] = {
         Source = "untrigger",
         EventTable = {
-            {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0},
+            {s = pathUT .. "cylinder_rotate_small.ogg", t = 0.0, v = 0.5, v_sighted = 1},
         },
     },
 

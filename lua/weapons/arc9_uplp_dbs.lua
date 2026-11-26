@@ -92,7 +92,7 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 SWEP.WorldModelOffset = {
     Pos = Vector(-5.5, 4, -5),
-    Ang = Angle(-5, 0, 180),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-12, 4, 5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
@@ -505,7 +505,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = {
-            { s = mech, t = 0, v = 0.25 },
+            { s = mech, t = 0, v = 0.25, v_sighted = 1 },
         },
         NoIdle = true,
     },

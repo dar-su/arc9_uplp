@@ -55,14 +55,14 @@ SWEP.ShellScale = 1.0
 SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.75
 SWEP.ShellSounds = {
-    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- might be overkill
-    "uplp_urban_temp/m203/40mm_casing_1.ogg", -- but i dont have other sounds
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
-    "uplp_urban_temp/m203/40mm_casing_1.ogg",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
 }
 -- SWEP.ShellSounds = ARC9.Shell308SoundsTable
 
@@ -78,8 +78,9 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_corvo.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
-    Ang = Angle(0, 0, 180),
+    DroppedPos = Vector(-8, 4, -5) + Vector(5.5, -1, -0.5),
+    Pos = Vector(-8, 4, -5) + Vector(2, 1, -2),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-8, 4, -5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
@@ -389,8 +390,8 @@ SWEP.Animations = {
             { s = pathUT2 .. "grab.ogg", t = 0 },
             { s = pathUTC .. "cloth_2.ogg", t = 5 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2 + 0.7},
-            {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12 + 0.7},
+            {s = pathUT .. "boltback_reload.ogg",     t = 16/30 - 0.2 + 0.7, v = 0.6, v_sighted = 1},
+            {s = pathUT .. "boltdown.ogg",        t = 20/30 - 0.12 + 0.7, v = 0.6, v_sighted = 1},
             { s = pathUTC .. "rattle2.ogg", t = 24 / 30 + 0.7, v = 0.8 },
         },
     },
@@ -432,11 +433,8 @@ SWEP.Animations = {
 
     ["fire"] = {
         Source = "fire",
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
         NoIdle = true,
-        EventTable = {
-            {s = mechh, t = 0},
-        },
     },
     ["cycle"] = {
         Source = "cycle",
@@ -444,23 +442,20 @@ SWEP.Animations = {
 		FireASAP = true,
         Mult = 1.25,
         EventTable = {
-            {s = pathUT2 .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.5},
-            {s = pathUT2 .. "boltback.ogg",        t = 0.03},
-            {s = pathUT2 .. "eject.ogg",           t = 0.3, v = 0.5},
-            {s = pathUT2 .. "boltforward.ogg",     t = 0.6 - 0.2},
-            {s = pathUT2 .. "boltdown.ogg",        t = 0.74 - 0.12, v = 0.5},
+            {s = pathUT2 .. "boltup.ogg",          t = 0.17 - 0.06, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 0.03, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "eject.ogg",           t = 0.3, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 0.6 - 0.2, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 0.74 - 0.12, v = 0.3, v_sighted = 1},
         },
     },
 
     ["fire_empty"] = {
         Source = "fire",
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
         MinProgress = 0.95,
         NoIdle = true,
         -- Mult = 1.15,
-        EventTable = {
-            {s = mechh, t = 0},
-        },
     },
 
     -- Reloads --
@@ -524,11 +519,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 80 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 85 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06, v = 0.5},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4},
-            {s = pathUT .. "eject.ogg",           t = 3.43, v = 0.5},
-            {s = pathUT .. "boltback_reload.ogg",     t = 3.6 - 0.3},
-            {s = pathUT .. "boltdown.ogg",        t = 3.73 - 0.1, v = 0.5},
+            {s = pathUT2 .. "boltup.ogg",          t = 3.18 - 0.06, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 3.37 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUT .. "eject.ogg",           t = 3.43, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 3.6 - 0.3, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 3.73 - 0.1, v = 0.3, v_sighted = 1},
 
             {hide = 0, t = 0},
             {hide = 1, t = 36/30},
@@ -603,11 +598,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 70 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 75 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 - 0.2, v = 0.5},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 - 0.2},
-            {s = pathUT .. "eject.ogg",           t = 3.43 - 0.2, v = 0.5},
-            {s = pathUT .. "boltback_reload.ogg",     t = 3.6 - 0.3 - 0.2},
-            {s = pathUT .. "boltdown.ogg",        t = 3.73 - 0.1 - 0.2, v = 0.5},
+            {s = pathUT2 .. "boltup.ogg",          t = 3.18 - 0.06 - 0.2, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 3.37 - 0.4 - 0.2, v = 0.6, v_sighted = 1},
+            {s = pathUT .. "eject.ogg",           t = 3.43 - 0.2, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 3.6 - 0.3 - 0.2, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 3.73 - 0.1 - 0.2, v = 0.3, v_sighted = 1},
 
             {hide = 0, t = 0},
             {hide = 1, t = 36/30},
@@ -682,11 +677,11 @@ SWEP.Animations = {
             { s = pathUTC .. "cloth_2.ogg", t = 88 / 30, v = 0.8 },
             { s = pathUTC .. "rattle2.ogg", t = 93 / 30, v = 0.8 },
 
-            {s = pathUT .. "boltup.ogg",          t = 3.18 - 0.06 + 0.267, v = 0.5},
-            {s = pathUT .. "boltforward_reload.ogg",        t = 3.37 - 0.4 + 0.267},
-            {s = pathUT .. "eject.ogg",           t = 3.43 + 0.267, v = 0.5},
-            {s = pathUT .. "boltback_reload.ogg",     t = 3.6 - 0.3 + 0.267},
-            {s = pathUT .. "boltdown.ogg",        t = 3.73 - 0.1 + 0.267, v = 0.5},
+            {s = pathUT2 .. "boltup.ogg",          t = 3.18 - 0.06 + 0.267, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltback.ogg",        t = 3.37 - 0.4 + 0.267, v = 0.6, v_sighted = 1},
+            {s = pathUT .. "eject.ogg",           t = 3.43 + 0.267, v = 0.3, v_sighted = 1},
+            {s = pathUT2 .. "boltforward.ogg",     t = 3.6 - 0.3 + 0.267, v = 0.6, v_sighted = 1},
+            {s = pathUT2 .. "boltdown.ogg",        t = 3.73 - 0.1 + 0.267, v = 0.3, v_sighted = 1},
 
             {hide = 0, t = 0},
             {hide = 1, t = 39/30},

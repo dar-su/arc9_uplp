@@ -56,7 +56,17 @@ SWEP.ShellScale = 1
 SWEP.ShellPitch = 100
 SWEP.ShellVelocity = 0.66
 SWEP.ShellAngleVelocity = 0.6
-SWEP.ShellSounds = ARC9.Shell308SoundsTable
+-- SWEP.ShellSounds = ARC9.Shell308SoundsTable
+SWEP.ShellSounds = {
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+    ")uplp_rz/common/casing_50bmg_1.wav",
+    ")uplp_rz/common/casing_50bmg_2.wav",
+    ")uplp_rz/common/casing_50bmg_3.wav",
+    ")uplp_rz/common/casing_50bmg_4.wav",
+}
 SWEP.EjectDelay = 0.45
 SWEP.ShellSmoke = true
 
@@ -82,21 +92,25 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_awp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
-    Ang = Angle(0, 0, 180),
+    Pos = Vector(-8, 4, -5) + Vector(4, 0, -0.5),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-8, 4, -5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
 
-    TPIKPosSightOffset = Vector(1, 1, -2),
+    TPIKPosSightOffset = Vector(1, 1, -4),
     TPIKHolsterOffset = Vector(3, 0, 2),
 }
 
 SWEP.ViewModelFOVBase = 65
 SWEP.ActivePos = Vector(-0.5, 0, 0.5)
+SWEP.PeekPos = Vector(-0.5, 4, -5.25)
+SWEP.PeekAng = Angle(0, 0.4, -50)
 
 SWEP.AnimShoot = ACT_HL2MP_GESTURE_RANGE_ATTACK_AR2
 SWEP.AnimReload = ACT_HL2MP_GESTURE_RELOAD_MAGIC
+SWEP.AnimMelee = ACT_FLINCH_SHOULDER_RIGHT
+SWEP.NonTPIKAnimMelee = ACT_HL2MP_GESTURE_RANGE_ATTACK_FIST
 
 ---- Weapon Stats and Behaviour
 -- Damage
@@ -284,7 +298,7 @@ SWEP.ShotgunReload = false
 -- SWEP.ShotgunReloadIncludesChamber = true
 
 function SWEP:GetShouldShotgunReload()
-    return (self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sniper_bolt"]
+    return !self:GetUBGL() and ((self:Clip1() > 1 and !self.nosgreload) or self:GetElements()["mosin_sgreload"])
 end
 ---- Sounds
 
@@ -298,9 +312,9 @@ SWEP.ShootSound = {
 }
 
 SWEP.ShootSoundSilenced = {
-    ")uplp_urban_temp/awp/" .. "fire-sup-01.wav",
-    ")uplp_urban_temp/awp/" .. "fire-sup-02.wav",
-    ")uplp_urban_temp/awp/" .. "fire-sup-03.wav",
+    pathUTREAL .. "fire-sup-01.wav",
+    pathUTREAL .. "fire-sup-02.wav",
+    pathUTREAL .. "fire-sup-03.wav",
 }
 
 SWEP.ShootSoundSilencedIndoor = SWEP.ShootSoundSilenced
@@ -331,9 +345,10 @@ SWEP.DistantShootSoundSilencedIndoor = {
     pathUTC .. "generictails/fire-dist-int-pistol-light-02.wav",
     pathUTC .. "generictails/fire-dist-int-pistol-light-03.wav",
 }
-SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
 
-SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
+SWEP.TriggerDownSound = {pathUTREAL .. "trigger1.wav"}
+--SWEP.TriggerUpSound = {pathUTREAL .. "trigger1.wav"}
+SWEP.DryFireSound = {pathUTREAL .. "dryfire.wav"}
 
 local pathKNIF = "uplp_rz/knife/"
 SWEP.MeleeSwingSound = false
@@ -428,25 +443,28 @@ local thetoggle = {{
 }}
 
 local ShellInsert = {
-    ")uplp_rz/lever/" .. "round-insert-01.ogg",
-    ")uplp_rz/lever/" .. "round-insert-02.ogg",
-    ")uplp_rz/lever/" .. "round-insert-03.ogg",
-    ")uplp_rz/lever/" .. "round-insert-04.ogg",
-    ")uplp_rz/lever/" .. "round-insert-05.ogg",
-    ")uplp_rz/lever/" .. "round-insert-06.ogg",
-    ")uplp_rz/lever/" .. "round-insert-07.ogg",
-    ")uplp_rz/lever/" .. "round-insert-08.ogg",
-    ")uplp_rz/lever/" .. "round-insert-09.ogg",
-    ")uplp_rz/lever/" .. "round-insert-10.ogg",
+    pathUTREAL .. "insert-01.ogg",
+    pathUTREAL .. "insert-02.ogg",
+    pathUTREAL .. "insert-03.ogg",
+    pathUTREAL .. "insert-04.ogg",
+    pathUTREAL .. "insert-05.ogg",
+    pathUTREAL .. "insert-06.ogg",
+
 }
+
+local alwayslrhik = { { t = 0, lhik = 1, rhik = 1 }, { t = 1, lhik = 1, rhik = 1 } }
+local onlylhik = { { t = 0, lhik = 1, rhik = 0 }, { t = 1, lhik = 1, rhik = 0 } }
+local bayohik = { { t = 0, lhik = 1, rhik = 1 }, { t = 0.5, lhik = 0.85, rhik = 1 }, { t = 1, lhik = 1, rhik = 1 } }
 
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
         Source = "idle",
+        IKTimeLine = alwayslrhik,
     },
     ["idle_empty"] = {
         Source = "idle_empty",
+        IKTimeLine = alwayslrhik,
     },
     ["cycle"] = {
         Source = {"cycle"},
@@ -454,11 +472,18 @@ SWEP.Animations = {
         FireASAP = true,
         -- Mult = 1.1,
         EventTable = {
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
-            {s = pathUTREAL .. "forth.wav",          t = 10/30},
-            {s = pathUTREAL .. "down.wav",          t = 20/30},
+            {s = pathUTREAL .. "up.wav",          t = 3/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 2/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.4, v_sighted = 0.7},
+            {s = pathUTREAL .. "forth.wav",          t = 8/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 20/30, v = 0.6, v_sighted = 1},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/46,     lhik = 1, rhik = 0 },
+            { t = 28/46,    lhik = 1, rhik = 0 },
+            { t = 42/46,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
     ["cycle_snip"] = {
@@ -466,11 +491,18 @@ SWEP.Animations = {
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {
-            {s = pathUTREAL .. "up.wav",          t = 5/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
-            {s = pathUTREAL .. "forth.wav",          t = 11/30},
-            {s = pathUTREAL .. "down.wav",          t = 23/30},
+            {s = pathUTREAL .. "up.wav",          t = 5/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 3/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.4, v_sighted = 0.7},
+            {s = pathUTREAL .. "forth.wav",          t = 11/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 23/30, v = 0.6, v_sighted = 1},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/46,     lhik = 1, rhik = 0 },
+            { t = 28/46,    lhik = 1, rhik = 0 },
+            { t = 42/46,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
     ["ready"] = {
@@ -482,10 +514,17 @@ SWEP.Animations = {
             { s = UTCloth, t = 0, v = 0.5 },
             { s = UTCrattle, t = 26 / 30, v = 0.3 },
 
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
-            {s = pathUTREAL .. "forth.wav",          t = 10/30},
-            {s = pathUTREAL .. "down.wav",          t = 20/30},
+            {s = pathUTREAL .. "up.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "forth.wav",          t = 10/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 20/30, v = 0.6, v_sighted = 1},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 3/45,     lhik = 1, rhik = 0 },
+            { t = 29/45,    lhik = 1, rhik = 0 },
+            { t = 42/45,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
 
@@ -500,10 +539,10 @@ SWEP.Animations = {
             { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 0 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.45, lhik = 1 },
-         },
+            { t = 0,    lhik = 0, rhik = 1 },
+            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0.7,  lhik = 1, rhik = 1 },
+        },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
@@ -516,10 +555,10 @@ SWEP.Animations = {
             { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 0 },
-            { t = 0.15, lhik = 0 },
-            { t = 0.45, lhik = 1 },
-         },
+            { t = 0,    lhik = 0, rhik = 1 },
+            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0.7,  lhik = 1, rhik = 1 },
+        },
     },
     ["holster"] = {
         Source = "holster",
@@ -529,10 +568,11 @@ SWEP.Animations = {
             { s = pathUTC .. "shoulder_heavy.ogg", t = 0.0, v = 1 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.05, lhik = 1 },
-            { t = 0.5, lhik = 0 },
-         },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/20,    lhik = 1, rhik = 0 },
+            { t = 29/20,    lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
+        },
     },
     ["holster_empty"] = {
         Source = "holster_empty",
@@ -542,15 +582,18 @@ SWEP.Animations = {
             { s = pathUTC .. "shoulder_heavy.ogg", t = 0.0, v = 1 },
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
-            { t = 0.05, lhik = 1 },
-            { t = 0.5, lhik = 0 },
-         },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/20,    lhik = 1, rhik = 0 },
+            { t = 29/20,    lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
+        },
     },
 
     ["fire"] = {
         Source = "fire",
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
+        IKTimeLine = alwayslrhik,
+        NoIdle = true,
     },
 
     -- Reloads --
@@ -564,20 +607,20 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 1 },
 
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
+            {s = pathUTREAL .. "up.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.4, v_sighted = 0.7},
 
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 18 / 30, v = 0.4 },
 
             {s = pathUTREAL .. "tempk98/clipplace.ogg", t = 35/30},
             {s = pathUTREAL .. "tempk98/clipinsert.ogg", t = 46/30},
             {s = pathUTREAL .. "tempk98/cliprelease.ogg", t = 64/30},
-            {s = pathUTREAL .. "tempk98/clipeject1.ogg", t = 62/30, v = 0.2},
+            {s = pathUTREAL .. "clip.ogg", t = 62/30, v = 0.4},
 
 
-            {s = pathUTREAL .. "forth.wav",          t = 70/30},
-            {s = pathUTREAL .. "down.wav",          t = 80/30},
+            {s = pathUTREAL .. "forth.wav",          t = 70/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 80/30, v = 0.6, v_sighted = 1},
 
             { s = pathUTC .. "movement-rifle-03.ogg", t = 62/30, v = 1 },
             { s = pathUTC .. "shoulder_med.ogg", t = 86/30, v = 1 },
@@ -587,7 +630,11 @@ SWEP.Animations = {
             {hide = 1, t = 67/30},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/103,    lhik = 1, rhik = 0 },
+            { t = 87/103,   lhik = 1, rhik = 0 },
+            { t = 99/103,   lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
     ["reload_empty"] = {
@@ -597,19 +644,19 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 1 },
 
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
+            {s = pathUTREAL .. "up.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.4, v_sighted = 0.7},
 
             { s = pathUTC .. "magpouch_pull_small.ogg", t = 18 / 30, v = 0.4 },
 
             {s = pathUTREAL .. "tempk98/clipplace.ogg", t = 35/30},
             {s = pathUTREAL .. "tempk98/clipinsert.ogg", t = 46/30},
             {s = pathUTREAL .. "tempk98/cliprelease.ogg", t = 64/30},
-            {s = pathUTREAL .. "tempk98/clipeject1.ogg", t = 62/30, v = 0.2},
+            {s = pathUTREAL .. "clip.ogg", t = 62/30, v = 0.4},
 
-            {s = pathUTREAL .. "forth.wav",          t = 70/30},
-            {s = pathUTREAL .. "down.wav",          t = 80/30},
+            {s = pathUTREAL .. "forth.wav",          t = 70/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 80/30, v = 0.6, v_sighted = 1},
 
             { s = pathUTC .. "movement-rifle-03.ogg", t = 62/30, v = 1 },
             { s = pathUTC .. "shoulder_med.ogg", t = 86/30, v = 1 },
@@ -619,7 +666,11 @@ SWEP.Animations = {
             {hide = 1, t = 67/30},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 9/103,    lhik = 1, rhik = 0 },
+            { t = 87/103,   lhik = 1, rhik = 0 },
+            { t = 99/103,   lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
 
@@ -632,18 +683,22 @@ SWEP.Animations = {
             { s = pathUTC .. "movement-shotgun-03.ogg", t = 0, v = 1 },
             {s = pathUTREAL .. "tempk98/clipplace.ogg", t = 7/30},
 
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
+            {s = pathUTREAL .. "up.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 4/30, v = 0.6, v_sighted = 1},
 
             { s = pathUTC .. "movement-rifle-04.ogg", t = 19/30, v = 0.25 },
 
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 19 / 30, v = 0.75 },
-            { s = ShellInsert, t = 36/30 - 0.5 },
+            { s = ShellInsert, t = 36/30 - 0.5, v = 0.3 },
 
             {hide = 1, t = 0},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/43,    lhik = 0, rhik = 0 },
+            { t = 22/43,   lhik = 0, rhik = 0 },
+            { t = 32/43,   lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
         },
     },
     ["reload_start_empty"] = {
@@ -654,19 +709,21 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 1 },
 
-            {s = pathUTREAL .. "up.wav",          t = 4/30},
-            {s = pathUTREAL .. "back.wav",          t = 4/30},
-            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.5},
+            {s = pathUTREAL .. "up.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 4/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 10/30, v = 0.4, v_sighted = 0.7},
 
             { s = pathUTC .. "movement-rifle-04.ogg", t = 19/30, v = 0.5 },
 
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 19 / 30, v = 0.5 },
-            { s = ShellInsert, t = 36/30 - 0.5 },
+            { s = ShellInsert, t = 36/30 - 0.5, v = 0.3 },
 
             {hide = 1, t = 0},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 10/43,    lhik = 1, rhik = 0 },
+            { t = 1,        lhik = 1, rhik = 0 },
         },
     },
 
@@ -676,19 +733,20 @@ SWEP.Animations = {
         MinProgress = 0.5,
         -- Mult = 0.925,
         EventTable = {
-            { s = ShellInsert, t = 0.07 },
+            { s = ShellInsert, t = 0.07, v = 0.3 },
             { s = pathUTC .. "magpouch_replace_small.ogg", t = 5 / 30, v = 0.5 },
 
             {hide = 1, t = 0},
         },
+        IKTimeLine = onlylhik
     },
 
     ["reload_finish"] = {
         Source = "sgreload_finish",
         MinProgress = 0.75,
         EventTable = {
-            {s = pathUTREAL .. "forth.wav",          t = 0/30},
-            {s = pathUTREAL .. "down.wav",          t = 13/30},
+            {s = pathUTREAL .. "forth.wav",          t = 0/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 13/30, v = 0.6, v_sighted = 1},
 
             { s = pathUTC .. "movement-rifle-03.ogg", t = 7/30, v = 1 },
             { s = pathUTC .. "shoulder_med.ogg", t = 16/30, v = 0.7 },
@@ -696,7 +754,10 @@ SWEP.Animations = {
             {hide = 1, t = 0},
         },
         IKTimeLine = {
-            { t = 0, lhik = 1 },
+            { t = 0,        lhik = 1, rhik = 0 },
+            { t = 17/33,    lhik = 1, rhik = 0 },
+            { t = 25/33,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
         },
     },
 
@@ -797,19 +858,20 @@ SWEP.Animations = {
     ["bash"] = {
         Source = "bayonet",
         EventTable = {
-            { s = MeleeSwingSound, t = 0.1 },
+            { s = MeleeSwingSound, t = 0.1, v = 1.25 },
             { s = {pathUTC .. "rattle_b2i_rifle.ogg", pathUTC .. "rattle3.ogg", pathUTC .. "rattle_b2i_rifle.ogg"}, t = 0, v = 0.3 },
             {hide = 1, t = 0},
         },
-        
+        IKTimeLine = bayohik,
     },
     ["bash_empty"] = {
         Source = "bayonet_empty",
         EventTable = {
-            { s = MeleeSwingSound, t = 0.1 },
+            { s = MeleeSwingSound, t = 0.1, v = 1.25 },
             { s = {pathUTC .. "rattle_b2i_rifle.ogg", pathUTC .. "rattle3.ogg", pathUTC .. "rattle_b2i_rifle.ogg"}, t = 0, v = 0.3 },
             {hide = 1, t = 0},
         },
+        IKTimeLine = bayohik,
     },
 }
 
@@ -844,7 +906,7 @@ SWEP.Hook_ModifyBodygroups = function(wep, data)
         mdl:SetBodygroup(7, tacbg)
     end
 
-    if eles["uplp_mosin_closerail"] then
+    if eles["uplp_mosin_closerail"] and eles["uplp_optic_used"] then
         mdl:SetBodygroup(5, 2)
     elseif eles["uplp_optic_used"] and !eles["uplp_optic_long_used"] then
         mdl:SetBodygroup(5, 1)
@@ -910,7 +972,7 @@ SWEP.Hook_TranslateAnimation = function(swep, anim)
         swep.NoForceSetLoadedRoundsOnReload = true
         swep:SetLoadedRounds(swep:Clip1()+1)
     end
-    
+
     if anim == "cycle" and eles["mosin_sniper_bolt"] then
         return "cycle_snip"
     end
@@ -930,7 +992,7 @@ SWEP.AttachmentElements = {
     -- ["uplp_mosin_bayonet"] = { Bodygroups = { { 6, 1 } } },
     -- ["uplp_mosin_supp"] = { Bodygroups = { { 6, 4 } } },
 
-    ["uplp_mosin_closerail"] = { Bodygroups = { { 5, 1 } }, AttPosMods = { [1] = { Pos = Vector(0, -0.85, -0) } } },
+    ["uplp_mosin_closerail"] = { AttPosMods = { [1] = { Pos = Vector(0, -0.85, -0) } } },
     ["uplp_mosin_pu"] = { Bodygroups = { { 5, 5 } } },
     ["uplp_optic_dovetail_used"] = { Bodygroups = { { 5, 4 } } },
 
@@ -952,7 +1014,7 @@ SWEP.Attachments = {
         PrintName = ARC9:GetPhrase("uplp_category_optic"),
         Category = {"uplp_optic_micro", "uplp_optic_mid", "uplp_optic_big", "uplp_mosin_mount"},
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
-        ExcludeElements = {"uplp_optic_dovetail_used"},
+        ExcludeElements = {"uplp_optic_dovetail_used", "uplp_mosin_pu"},
         Bone = "body",
         Pos = Vector(0, -0.85, 2),
         Ang = Angle(90, 90, 180),

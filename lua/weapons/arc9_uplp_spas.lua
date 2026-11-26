@@ -68,8 +68,9 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_vepr.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-5.5, 4, -5),
-    Ang = Angle(-5, 0, 180),
+    DroppedPos = Vector(-5, 4, -5),
+    Pos = Vector(-7, 4, -4),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-14, 3, 0),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
@@ -432,7 +433,7 @@ SWEP.Animations = {
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 2 / 30, v = 0.8 },
             { s = pathUT .. "presscheck1.ogg", t = 5 / 30, v = 0.8 },
-            { s = pathUT .. "forearm_forward.ogg", t = 11.5 / 30, v = 0.8 },
+            { s = pathUT .. "forearm_forward.ogg", t = 11.5 / 30, v = 0.5, v_sighted = 1 },
             { s = pathUTC .. "cloth_4.ogg", t = 36 / 60 },
         },
     },
@@ -491,7 +492,7 @@ SWEP.Animations = {
         Source = "fire",
         NoIdle = true,
         EventTable = {
-            { s = mechh, t = 0, v = 0.75 },
+            { s = mechh, t = 0, v = 0.5, v_sighted = 1 },
         },
     },
     ["fire_pump"] = {
@@ -502,7 +503,7 @@ SWEP.Animations = {
         Source = "fire_empty",
         NoIdle = true,
         EventTable = {
-            { s = pathUT .. "mech_last.wav", t = 0, v = 0.6 },
+            { s = pathUT .. "mech_last.wav", t = 0, v = 0.5, v_sighted = 1 },
         },
     },
     ["cycle"] = {
@@ -510,8 +511,8 @@ SWEP.Animations = {
         EjectAt = 5 / 30,
         MinProgress = 0.65,
         EventTable = {
-            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.8 },
-            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.8 },
+            { s = pathUT .. "forearm_back.ogg", t = 2 / 30, v = 0.5, v_sighted = 1 },
+            { s = pathUT .. "forearm_forward.ogg", t = 6 / 30, v = 0.5, v_sighted = 1 },
         },
     },
     ["reload_start"] = {
@@ -531,7 +532,7 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.8 },
             { s = pathUT .. "breechload.ogg", t = 0, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_forward.ogg", t = 26 / 30, v = 0.5, v_sighted = 1 },
             { s = ")uplp_urban_temp/ar15/" .. "boltdrop.ogg", t = 27 / 30, v = 0.6 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 30 / 30, v = 0.2 },
             { s = touchh, t = 49 / 30, v = 0.3 },
@@ -546,8 +547,8 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCrattle, t = 0, v = 0.6 },
             { s = ShellInsert, t = 10 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_back.ogg", t = 24 / 30, v = 0.6 },
-            { s = pathUT .. "forearm_forward.ogg", t = 30 / 30, v = 0.6 },
+            { s = pathUT .. "forearm_back.ogg", t = 24 / 30, v = 0.5, v_sighted = 1 },
+            { s = pathUT .. "forearm_forward.ogg", t = 30 / 30, v = 0.5, v_sighted = 1 },
             { s = pathUTC .. "rattle_b2i_rifle.ogg", t = 34 / 30 },
             { s = touchh, t = 50 / 30, v = 0.5 },
         },

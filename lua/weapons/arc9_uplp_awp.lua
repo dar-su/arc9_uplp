@@ -70,8 +70,9 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_awp.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-3.5, 3, -8),
-    Ang = Angle(0, 0, 180),
+    DroppedPos = Vector(-8, 4, -5) + Vector(6, -1, -0.5),
+    Pos = Vector(-8, 4, -5) + Vector(3, -0.5, -0.5),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-8, 4, -5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
@@ -404,11 +405,11 @@ SWEP.Animations = {
         Source = {"cycle", "cycle2"},
         MinProgressTime = 0.9,
         EventTable = {
-            {s = pathRZ .. "bolt1.ogg",          t = 0},
-            {s = pathRZ .. "bolt2.ogg",        t = 0.15},
-            {s = pathUT .. "eject.ogg",           t = 0.3},
-            {s = pathRZ .. "bolt3.ogg",     t = 0.34},
-            {s = pathRZ .. "bolt4.ogg",        t = 0.64},
+            {s = pathRZ .. "bolt1.ogg",          t = 0, v = 0.6, v_sighted = 1},
+            {s = pathRZ .. "bolt2.ogg",        t = 0.15, v = 0.6, v_sighted = 1},
+            {s = pathUT .. "eject.ogg",           t = 0.3, v = 0.6, v_sighted = 1},
+            {s = pathRZ .. "bolt3.ogg",     t = 0.34, v = 0.6, v_sighted = 1},
+            {s = pathRZ .. "bolt4.ogg",        t = 0.64, v = 0.6, v_sighted = 1},
         },
     },
     ["ready"] = {
@@ -418,8 +419,8 @@ SWEP.Animations = {
         EventTable = {
             { s = UTCloth, t = 0, v = 0.8 },
             { s = pathUTC .. "raise.ogg", t = 0, v = 0.8 },
-            {s = pathUT .. "boltforward.ogg",     t = 0.32},
-            {s = pathUT .. "boltdown.ogg",        t = 0.55},
+            {s = pathUT .. "boltforward.ogg",     t = 0.32, v = 0.6, v_sighted = 1},
+            {s = pathUT .. "boltdown.ogg",        t = 0.55, v = 0.6, v_sighted = 1},
             { s = UTCrattle, t = 19 / 30, v = 0.4 },
         },
     },
@@ -470,7 +471,7 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         NoIdle = true,
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
     },
 
     -- Reloads --
@@ -512,13 +513,13 @@ SWEP.Animations = {
         DropMagAt = 1 * 1,
         EjectAt = 0.37,
         EventTable = {
-            { s = pathRZ .. "bolt1.ogg",        t = 0},
-            { s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
+            { s = pathRZ .. "bolt1.ogg",        t = 0, v = 0.6, v_sighted = 1},
+            { s = pathRZ .. "bolt2.ogg",        t = 3 / 30, v = 0.6, v_sighted = 1},
             { s = pathRZ .. "magout.ogg",       t = 20 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg",    t = 28 / 30, v = 0.3 },
             { s = pathRZ .. "magin.ogg",        t = 34 / 30, v = 0.8 },
-            { s = pathRZ .. "bolt3.ogg",        t = 53 / 30},
-            { s = pathRZ .. "bolt4.ogg",        t = 62 / 30},
+            { s = pathRZ .. "bolt3.ogg",        t = 53 / 30, v = 0.6, v_sighted = 1},
+            { s = pathRZ .. "bolt4.ogg",        t = 62 / 30, v = 0.6, v_sighted = 1},
             { s = pathUTC .. "rattle2.ogg",     t = 66 / 30, v = 0.8 },
 
             {hide = 0, t = 0},
@@ -572,13 +573,13 @@ SWEP.Animations = {
         Mult = 1.1,
         EjectAt = 0.37,
         EventTable = {
-            { s = pathRZ .. "bolt1.ogg",        t = 0},
-            { s = pathRZ .. "bolt2.ogg",        t = 3 / 30},
+            { s = pathRZ .. "bolt1.ogg",        t = 0, v = 0.6, v_sighted = 1},
+            { s = pathRZ .. "bolt2.ogg",        t = 3 / 30, v = 0.6, v_sighted = 1},
             { s = pathRZ .. "magout.ogg",       t = 22.5 / 30, v = 0.8 },
             { s = pathUTC .. "magpouch.ogg",    t = 28 / 30, v = 0.3 },
             { s = pathRZ .. "magin.ogg",        t = 41 / 30, v = 0.8 },
-            { s = pathRZ .. "bolt3.ogg",        t = 57 / 30},
-            { s = pathRZ .. "bolt4.ogg",        t = 66 / 30},
+            { s = pathRZ .. "bolt3.ogg",        t = 57 / 30, v = 0.6, v_sighted = 1},
+            { s = pathRZ .. "bolt4.ogg",        t = 66 / 30, v = 0.6, v_sighted = 1},
             { s = pathUTC .. "rattle2.ogg",     t = 70 / 30, v = 0.8 },
 
             {hide = 0, t = 0},

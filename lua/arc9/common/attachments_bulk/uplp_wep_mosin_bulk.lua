@@ -383,6 +383,7 @@ ATT.ShootWhileSprint = true
 -- end
 
 ATT.HoldTypeSprint = "physgun"
+ATT.AnimMelee = ACT_FLINCH_SHOULDER_RIGHT
 
 ATT.ExcludeElements = {"uplp_no_bayonet"}
 
@@ -413,6 +414,13 @@ ATT.MuzzleEffectQCAHook = function(wep, orig)
     elseif orig == 6 then return 9 end
 end
 
+-- Positives
+ATT.ShootVolumeMult = 0.8
+
+ATT.RecoilMult = 0.85
+ATT.DamageMaxAdd = -5
+ATT.AimDownSightsTimeAdd = 0.02
+
 -- ATT.MuzzleEffectQCA = 6
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_supp")
@@ -437,10 +445,13 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 1),
+        Icon_Offset = Vector(0, 0, 0),
         ExtraSightDistance = -2.5,
+        InstalledElements = {"mosin_sgreload"},
     },
 }
+
+ATT.SpeedAddSights = 0.05
 
 ATT.ActivateElements = {"mosin_sniper_bolt"}
 
@@ -458,7 +469,7 @@ ATT.Icon = Material(iconfolder .. "scope.png", "mips smooth")
 ATT.Category = "uplp_mosin_scope"
 ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 
-ATT.ActivateElements = {"mosin_sniper_bolt"}
+ATT.ActivateElements = {"mosin_sniper_bolt", "mosin_sgreload"}
 
 ATT.Model = "models/weapons/arc9/uplp/optic_mosin.mdl"
 ATT.FoldSights = true

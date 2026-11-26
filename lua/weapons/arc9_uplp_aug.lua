@@ -71,8 +71,8 @@ SWEP.MirrorVMWM = true
 SWEP.NoTPIKVMPos = true
 -- SWEP.WorldModelMirror = "models/weapons/arc9/c_uplp_ar15.mdl"
 SWEP.WorldModelOffset = {
-    Pos = Vector(-5.5, 3, -6),
-    Ang = Angle(0, 0, 180),
+    Pos = Vector(-5.5, 3, -6) + Vector(0, 0, 1),
+    Ang = Angle(-10, 0, 180),
     TPIKPos = Vector(-8, 2, -5),
     TPIKAng = Angle(-12, -0, 180),
     Scale = 1,
@@ -445,14 +445,14 @@ SWEP.Animations = {
     ["fire"] = {
         Source = {"fire_01","fire_02","fire_03"},
         ShellEjectAt = 0.01,
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
     },
     ["fire_sights"] = {
         Source = "fire_sights",
         ShellEjectAt = 0.01,
         Mult = 0.65,
         NoIdle = true,
-        EventTable = { { s = mechh, t = 0 } },
+        EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
     },
 
     ["fire_empty"] = {
@@ -880,26 +880,26 @@ SWEP.Animations = {
     ["firemode_1"] = {
         Source = "modeswitch",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
         }
     },
     ["firemode_1_empty"] = {
         Source = "modeswitch_empty",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-01.ogg", t = 0.1, v = 0.4 },
         }
     },
 
     ["firemode_2"] = {
         Source = "modeswitch",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
         }
     },
     ["firemode_2_empty"] = {
         Source = "modeswitch_empty",
         EventTable = {
-            { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
+            -- { s = ")uplp_urban_temp/ar15/selector-06.ogg", t = 0.1, v = 0.4 },
         }
     },
     ["enter_bipod"] = {
