@@ -4115,7 +4115,8 @@ L["uplp_mosin_stock_obrez.description"] = "Sawed-off Three-Line stock. Perfect i
 
 L["uplp_mosin_stock_pgrip.printname"] = "Crudely Attached Pistol Grip"
 L["uplp_mosin_stock_pgrip.compactname"] = "Pistol Grip"
-L["uplp_mosin_stock_pgrip.description"] = "Crudely attached AK pistol grip to the Three-Line receiver.\n\nForces the user to wield the rifle one-handed. Not recommended for those without the strength to carry a rifle one-handed."
+-- L["uplp_mosin_stock_pgrip.description"] = "Crudely attached AK pistol grip to the Three-Line receiver.\n\nForces the user to wield the rifle one-handed. Not recommended for those without the strength to carry a rifle one-handed."
+L["uplp_mosin_stock_pgrip.description"] = "Crudely attached AK pistol grip to the Three-Line receiver."
 
 L["uplp_mosin_stock_awp.printname"] = "Crude AW Stock"
 L["uplp_mosin_stock_awp.compactname"] = "AW"
