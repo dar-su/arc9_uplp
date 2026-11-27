@@ -1,7 +1,7 @@
 $modelname "weapons\arc9\c_uplp_mosin.mdl"
  
 $bodygroup "mosinka" {
-	studio "rec.smd"
+	studio "rec2.smd"
 }   
 $bodygroup "bolt" {
 	studio "bolt inf.smd"
@@ -60,7 +60,7 @@ $bodygroup "tac" {
 $cdmaterials "models\weapons\arc9\uplp"
 
 $attachment "1" "body" 0.00 -0.33 23 rotate -90 -0 0
-$attachment "2" "body" 0.00 -0.35 -3.25 rotate -40 130 180
+$attachment "2" "body" 0.00 -0.35 -3.25 rotate -40 112 180
 $attachment "3" "Camera" 0 0 0 rotate -90 0 0
 $attachment "4" "clip" 0 0 0 rotate -90 0 0
 
@@ -70,6 +70,8 @@ $attachment "6" "body" 0.00 -0.60 10.00 rotate -90 -0 0 // short
 $attachment "8" "body" 0.00 -0.60 29.60 rotate -90 -0 0 // sup + std barrel
 $attachment "7" "body" 0.00 -0.60 37.00 rotate -90 -0 0 // sup + long
 $attachment "9" "body" 0.00 -0.60 17.00 rotate -90 -0 0 // sup + short
+
+$attachment "10" "body" 0.00 -0.35 -3.25 rotate -40 152 180
  
 $surfaceprop "default"
  
@@ -129,7 +131,10 @@ $sequence "cycle" {
 
 $sequence "ready" {
 	"anims\ready.smd"
+	"anims\ready_iron.smd"
 	"anims\ready_snip.smd"
+	"anims\ready_iron.smd"
+	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
@@ -138,15 +143,23 @@ $sequence "ready" {
 
 $sequence "sgreload_start" {
 	"anims\reload_start.smd"
+	"anims\reload_start_iron.smd"
 	"anims\reload_start_snip.smd"
+	"anims\reload_start_snip_iron.smd"
+	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "sgreload_start_empty" {
+
+
 	"anims\reload_start_empty.smd"
+	"anims\reload_start_empty_iron.smd"
 	"anims\reload_start_empty_snip.smd"
+	"anims\reload_start_empty_snip_iron.smd"
+	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
@@ -174,27 +187,39 @@ $sequence "sgreload_finish" {
 
 $sequence "reload_empty" {
 	"anims\reload_empty2.smd"
+	"anims\reload_empty_iron.smd"
+	"anims\reload_empty_snip.smd"
+	"anims\reload_empty_iron.smd"
+	blend "sights" 0 1
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 $sequence "reload_notempty" {
 	"anims\reload_empty2_butnotempty.smd"
+	"anims\reload_empty_butnotempty_iron.smd"
+	"anims\reload_empty_snip_butnotempty.smd"
+	"anims\reload_empty_butnotempty_iron.smd"
+	blend "sights" 0 1
+	blend "owo" 0 1
 	fps 30
 	"ACT_VM_RELOAD" 1
 	snap
 }
 
-// add reload empty but with hammer on place
-
 $sequence "draw" {
 	"anims\draw.smd"
+	"anims\draw_iron.smd"
+ 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
 }
 $sequence "draw_empty" {
 	"anims\draw_empty.smd"
+	"anims\draw_empty_iron.smd"
+ 	blend "sights" 0 1
 	fps 30
 	"ACT_VM_DRAW" 1
 	snap
@@ -241,14 +266,22 @@ $sequence "bayonet_empty" {
 
 
 
-// $sequence "inspect" {
-// 	"anims\inspect.smd"
-// 	fps 30
-// }
-// $sequence "inspect_empty" {
-// 	"anims\inspect_empty.smd"
-// 	fps 30
-// }
+$sequence "inspect" {
+	"anims\inspect.smd"
+	fps 30
+}
+$sequence "inspect_empty" {
+	"anims\inspect_empty.smd"
+	fps 30
+}
+$sequence "inspect_snip" {
+	"anims\inspect_snip.smd"
+	fps 30
+}
+$sequence "inspect_snip_empty" {
+	"anims\inspect_snip_empty.smd"
+	fps 30
+}
 
 
 $bonemerge "ValveBiped.Bip01_Spine4"

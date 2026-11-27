@@ -445,7 +445,7 @@ ATT.Attachments = {
         DefaultIcon = Material("arc9/def_att_icons/optic.png", "mips smooth"),
         Pos = Vector(0, 0, 0),
         Ang = Angle(0, 0, 0),
-        Icon_Offset = Vector(0, 0, 0),
+        Icon_Offset = Vector(1.5, 0, 0),
         ExtraSightDistance = -2.5,
         InstalledElements = {"mosin_sgreload"},
     },

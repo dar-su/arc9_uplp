@@ -30,7 +30,7 @@ SWEP.Trivia = {
 }
 
 SWEP.Credits = {
-    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Moka",
+    [ ARC9:GetPhrase( "uplp_lua" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_assets" ) ] = "Darsu",
     [ ARC9:GetPhrase( "uplp_animations" ) ] = "Partexedd",
     [ ARC9:GetPhrase( "uplp_sounds" ) ] = "rzen1th",
@@ -81,6 +81,11 @@ SWEP.ShellSmokeHook = function(swep, old)
 end
 
 SWEP.CaseEffectQCA = 2
+SWEP.CaseEffectQCAHook = function(swep, old)
+    if swep:GetElements()["mosin_sgreload"] then return 10 end
+    return old
+end
+
 SWEP.CamQCA = 3
 SWEP.CamOffsetAng = Angle(0, 0, 90)
 
@@ -260,6 +265,7 @@ SWEP.IronSights = {
 }
 
 -- SWEP.LaserCorrectBySightAng = false
+SWEP.LaserCorrectIdle = Angle(-1.24211, 0.896527, -3.0788)
 
 -- Customization Menu Info
 SWEP.CustomizePos = Vector(16.5, 50, 5)
@@ -456,6 +462,44 @@ local alwayslrhik = { { t = 0, lhik = 1, rhik = 1 }, { t = 1, lhik = 1, rhik = 1
 local onlylhik = { { t = 0, lhik = 1, rhik = 0 }, { t = 1, lhik = 1, rhik = 0 } }
 local bayohik = { { t = 0, lhik = 1, rhik = 1 }, { t = 0.5, lhik = 0.85, rhik = 1 }, { t = 1, lhik = 1, rhik = 1 } }
 
+
+-- SWEP.NoForceSetLoadedRoundsOnReload = true
+
+local function ejecttt(swep, time)
+    if swep.hasshellinchamber and SERVER then
+        swep:SetTimer(time, function()
+            swep:DoEject()
+        end, "ejectat")
+
+        swep.hasshellinchamber = false
+    end
+end
+
+SWEP.Hook_TranslateAnimation = function(swep, anim)
+    if !IsValid(swep:GetOwner()) then return end
+    local eles = swep:GetElements()
+
+    if anim == "idle" and swep.nosgreload then swep.nosgreload = nil end
+    if (anim == "idle" or anim == "fire") and !swep.hasshellinchamber then swep.hasshellinchamber = true end
+
+    if anim == "reload" or anim == "reload_empty" then swep.nosgreload = true end
+
+    swep.NoForceSetLoadedRoundsOnReload = nil
+
+    if anim == "reload_start" and swep:Clip1() == 1 then
+        swep.NoForceSetLoadedRoundsOnReload = true
+        swep:SetLoadedRounds(swep:Clip1()+1)
+    end
+
+    if anim == "reload_empty" then ejecttt(swep, 0.45) end
+    if anim == "reload_start_empty" then ejecttt(swep, 0.45) end
+    if anim == "inspect_empty" then ejecttt(swep, 133/30) end
+
+    if (anim == "cycle" or anim == "inspect" or anim == "inspect_empty") and eles["mosin_sniper_bolt"] then
+        return anim .. "_snip"
+    end
+end
+
 -- Animations
 SWEP.Animations = {
     ["idle"] = {
@@ -592,8 +636,13 @@ SWEP.Animations = {
     ["fire"] = {
         Source = "fire",
         EventTable = { { s = mechh, t = 0, v = 0.5, v_sighted = 1 } },
-        IKTimeLine = alwayslrhik,
         NoIdle = true,
+        IKTimeLine = { 
+            { t = 0, lhik = 1, rhik = 2 },
+            { t = 0.25, lhik = 1, rhik = 2 },
+            { t = 0.7, lhik = 1, rhik = 1 },
+            { t = 1, lhik = 1, rhik = 1 }
+        },
     },
 
     -- Reloads --
@@ -639,7 +688,7 @@ SWEP.Animations = {
     },
     ["reload_empty"] = {
         Source = "reload_empty",
-        EjectAt = 0.45,
+        -- EjectAt = 0.45, -- WE OVERRIDE IN Hook_TranslateAnimation
         DropMagAt = 67/30,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 1 },
@@ -704,7 +753,7 @@ SWEP.Animations = {
     ["reload_start_empty"] = {
         Source = "sgreload_start_empty",
         MinProgress= 0.65,
-        EjectAt = 0.45,
+        -- EjectAt = 0.45, -- WE OVERRIDE IN Hook_TranslateAnimation
         RestoreAmmo = 1,
         EventTable = {
             { s = pathUTC .. "movement-rifle-02.ogg", t = 0, v = 1 },
@@ -763,59 +812,213 @@ SWEP.Animations = {
 
     -- Inspecc --
 
-    -- ["inspect"] = {
-    --     Source = "inspect",
-    --     FireASAP = true,
-    --     MinProgress = 0.925,
-    --     Mult = 1.1,
-    --     EventTable = {
-    --         { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 37 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 38 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 48 / 30, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 89 / 30, v = 0.8 },
-    --         {s = pathUTREAL .. "cycle1.ogg",          t = 92 / 30, p = 95},
-    --         {s = pathUTREAL .. "cyclefirst2.ogg",          t = 118 / 30},
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 126 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 133 / 30, v = 0.8 },
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.28, lhik = 1 },
-    --         { t = 0.35, lhik = 0 },
-    --         { t = 0.78, lhik = 0 },
-    --         { t = 0.85, lhik = 1 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    -- },
+    ["inspect"] = {
+        Source = "inspect",
+        FireASAP = true,
+        MinProgress = 0.925,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.5 },
 
-    -- ["inspect_empty"] = {
-    --     Source = "inspect_empty",
-    --     FireASAP = true,
-    --     MinProgress = 0.925,
-    --     Mult = 1.1,
-    --     EventTable = {
-    --         { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 37 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-04.ogg", t = 38 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 48 / 30, v = 0.8 },
-    --         { s = pathUTC .. "cloth_2.ogg", t = 89 / 30, v = 0.8 },
-    --         {s = pathUTREAL .. "cycle1.ogg",          t = 92 / 30},
-    --         {s = pathUTREAL .. "cyclefirst2.ogg",          t = 118 / 30},
-    --         { s = pathUTC .. "movement-rifle-03.ogg", t = 126 / 30, v = 0.8 },
-    --         { s = pathUTC .. "movement-rifle-02.ogg", t = 133 / 30, v = 0.8 },
-    --     },
-    --     IKTimeLine = {
-    --         { t = 0, lhik = 1 },
-    --         { t = 0.28, lhik = 1 },
-    --         { t = 0.35, lhik = 0 },
-    --         { t = 0.78, lhik = 0 },
-    --         { t = 0.85, lhik = 1 },
-    --         { t = 1, lhik = 1 },
-    --     },
-    -- },
+            { s = pathUTC .. "cloth_2.ogg", t = 35 / 30, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, v = 0.7 },
+            { s = pathUTC .. "movement-sniper-02.ogg", t = 73 / 30, v = 0.88 },
+            { s = pathUTC .. "grab-wooden.ogg", t = 108 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 104 / 30, v = 0.65 },
+            
+            {s = pathUTREAL .. "up.wav",          t = 119/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 120/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 127/30, v = 0.4, v_sighted = 0.7},
+            { s = pathUTC .. "movement-sniper-04.ogg", t = 150 / 30, v = 0.88 },
+
+            { s = pathUTC .. "movement-sniper-03.ogg", t = 200 / 30, v = 0.88 },
+
+            { s = pathUTC .. "cloth_6.ogg", t = 133 / 30, v = 0.2 },
+            { s = pathUTREAL .. "movement-shell-04.ogg", t = 139/30, v = 1 },
+            { s = pathUTC .. "cloth_5.ogg", t = 180 / 30, v = 0.122 },
+
+            { s = pathUTREAL .. "insert-inspect.ogg", t = 204/30 - 0.5, v = 0.62 },
+            { s = pathUTREAL .. "insert-06.ogg", t = 208/30 - 0.5, v = 0.37 },
+
+            {s = pathUTREAL .. "forth.wav",          t = 228/30 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 241/30 - 0.4, v = 0.6, v_sighted = 1},
+
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 235/30 - 0.3, v = 0.6 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 244/30 - 0.3, v = 0.4 },
+
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 28/257,     lhik = 1, rhik = 1.5 },
+            { t = 50/257,    lhik = 0, rhik = 1.5 },
+            { t = 108/257,    lhik = 0, rhik = 1.5 },
+            { t = 115/257,    lhik = 1, rhik = 1 },
+            { t = 128/257,    lhik = 1, rhik = 0 },
+            { t = 131/257,    lhik = 1, rhik = 0 },
+            { t = 142/257,    lhik = 0, rhik = 0 },
+            { t = 218/257,    lhik = 0, rhik = 0 },
+            { t = 230/257,    lhik = 1, rhik = 0 },
+            { t = 229/257,    lhik = 1, rhik = 0 },
+            { t = 253/257,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
+        },
+    },
+
+    ["inspect_empty"] = {
+        Source = "inspect_empty",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- EjectAt = 134/30, -- WE OVERRIDE IN Hook_TranslateAnimation
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.5 },
+
+            { s = pathUTC .. "cloth_2.ogg", t = 35 / 30, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, v = 0.7 },
+            { s = pathUTC .. "movement-sniper-02.ogg", t = 73 / 30, v = 0.88 },
+            { s = pathUTC .. "grab-wooden.ogg", t = 108 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 104 / 30, v = 0.65 },
+            
+            {s = pathUTREAL .. "up.wav",          t = 119/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 120/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 127/30, v = 0.4, v_sighted = 0.7},
+            { s = pathUTC .. "movement-sniper-04.ogg", t = 150 / 30, v = 0.88 },
+
+            {s = pathUTREAL .. "forth.wav",          t = 163/30 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 175/30 - 0.4, v = 0.6, v_sighted = 1},
+
+            {s = pathUTREAL .. "up.wav",          t = 177/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 176/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "forth.wav",          t = 194/30 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 202/30 - 0.4, v = 0.6, v_sighted = 1},
+
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 200 / 30, v = 0.7 },
+
+            { s = pathUTC .. "revolver_trigger-03.ogg", t = 211 / 30, v = 0.1, p = 80 },
+            {s = pathUTREAL .. "trigger1.wav",          t = 219/30, v = 0.75},
+
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 235/30 - 0.6, v = 0.6 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 244/30 - 0.6, v = 0.4 },
+
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 31/244,     lhik = 1, rhik = 1.5 },
+            { t = 49/244,     lhik = 0, rhik = 1.5 },
+            { t = 109/244,     lhik = 0, rhik = 1.5 },
+            { t = 114/244,     lhik = 1, rhik = 1 },
+            { t = 125/244,     lhik = 1, rhik = 0 },
+            { t = 201/244,     lhik = 1, rhik = 0 },
+            { t = 214/244,     lhik = 1, rhik = 2 },
+            { t = 226/244,     lhik = 1, rhik = 2 },
+            { t = 235/244,     lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
+        },
+    },
+
+    ["inspect_snip"] = {
+        Source = "inspect_snip",
+        FireASAP = true,
+        MinProgress = 0.925,
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.5 },
+
+            { s = pathUTC .. "cloth_2.ogg", t = 35 / 30, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, v = 0.7 },
+            { s = pathUTC .. "movement-sniper-02.ogg", t = 73 / 30, v = 0.88 },
+            { s = pathUTC .. "grab-wooden.ogg", t = 108 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 104 / 30, v = 0.65 },
+            
+            {s = pathUTREAL .. "up.wav",          t = 118/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 120/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 127/30, v = 0.4, v_sighted = 0.7},
+
+            { s = pathUTC .. "cloth_2.ogg", t = 135 / 30, v = 0.2 },
+            { s = pathUTREAL .. "movement-shell-04.ogg", t = 139/30, v = 1.1 },
+            { s = pathUTC .. "movement-sniper-03.ogg", t = 176 / 30, v = 1 },
+
+            { s = pathUTC .. "cloth_5.ogg", t = 180 / 30, v = 0.122 },
+
+            -- { s = pathUTREAL .. "insert-inspect.ogg", t = 204/30 - 0.2, v = 0.62 },
+
+            { s = pathUTREAL .. "insert-02.ogg", t = 212/30 - 0.4, v = 0.32 },
+
+            {s = pathUTREAL .. "forth.wav",          t = 230/30 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 243/30 - 0.4, v = 0.6, v_sighted = 1},
+
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 235/30 - 0.2, v = 0.6 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 244/30 - 0.2, v = 0.4 },
+
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 28/257,     lhik = 1, rhik = 1.5 },
+            { t = 50/257,    lhik = 0, rhik = 1.5 },
+            { t = 108/257,    lhik = 0, rhik = 1.5 },
+            { t = 115/257,    lhik = 1, rhik = 1 },
+            { t = 126/257,    lhik = 1, rhik = 0 },
+            { t = 237/257,    lhik = 1, rhik = 0 },
+            { t = 252/257,    lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
+        },
+    },
+
+    ["inspect_empty_snip"] = {
+        Source = "inspect_snip_empty",
+        FireASAP = true,
+        MinProgress = 0.925,
+        -- EjectAt = 134/30, -- WE OVERRIDE IN Hook_TranslateAnimation
+        EventTable = {
+            { s = pathUTC .. "cloth_4.ogg", t = 0, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 2 / 30, v = 0.5 },
+
+            { s = pathUTC .. "cloth_2.ogg", t = 35 / 30, v = 0.3 },
+            { s = pathUTC .. "movement-rifle-04.ogg", t = 40 / 30, v = 0.7 },
+            { s = pathUTC .. "movement-sniper-02.ogg", t = 73 / 30, v = 0.88 },
+            { s = pathUTC .. "grab-wooden.ogg", t = 108 / 30, v = 0.2 },
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 104 / 30, v = 0.65 },
+            
+            {s = pathUTREAL .. "up.wav",          t = 119/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 120/30, v = 0.6, v_sighted = 1},
+            {s = ")uplp_urban_temp/awp/eject.ogg", t = 127/30, v = 0.4, v_sighted = 0.7},
+            { s = pathUTC .. "movement-sniper-04.ogg", t = 150 / 30, v = 0.88 },
+
+            {s = pathUTREAL .. "forth.wav",          t = 163/30 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 175/30 - 0.4, v = 0.6, v_sighted = 1},
+
+            {s = pathUTREAL .. "up.wav",          t = 177/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "back.wav",          t = 176/30, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "forth.wav",          t = 194/30 - 0.4, v = 0.6, v_sighted = 1},
+            {s = pathUTREAL .. "down.wav",          t = 202/30 - 0.4, v = 0.6, v_sighted = 1},
+
+            { s = pathUTC .. "movement-rifle-02.ogg", t = 200 / 30, v = 0.7 },
+
+            { s = pathUTC .. "revolver_trigger-03.ogg", t = 211 / 30, v = 0.1, p = 80 },
+            {s = pathUTREAL .. "trigger1.wav",          t = 219/30, v = 0.75},
+
+            { s = pathUTC .. "movement-rifle-03.ogg", t = 235/30 - 0.6, v = 0.6 },
+            { s = pathUTC .. "shoulder_med.ogg", t = 244/30 - 0.6, v = 0.4 },
+
+            {hide = 1, t = 0},
+        },
+        IKTimeLine = {
+            { t = 0,        lhik = 1, rhik = 1 },
+            { t = 31/244,     lhik = 1, rhik = 1.5 },
+            { t = 49/244,     lhik = 0, rhik = 1.5 },
+            { t = 109/244,     lhik = 0, rhik = 1.5 },
+            { t = 114/244,     lhik = 1, rhik = 1 },
+            { t = 125/244,     lhik = 1, rhik = 0 },
+            { t = 201/244,     lhik = 1, rhik = 0 },
+            { t = 214/244,     lhik = 1, rhik = 2 },
+            { t = 226/244,     lhik = 1, rhik = 2 },
+            { t = 235/244,     lhik = 1, rhik = 1 },
+            { t = 1,        lhik = 1, rhik = 1 },
+        },
+    },
 
 
     ["toggle"] = {
@@ -851,9 +1054,17 @@ SWEP.Animations = {
 
     ["dryfire"] = {
         Source = "modeswitch",
+        IKTimeLine = { 
+            { t = 0, lhik = 1, rhik = 2 },
+            { t = 1, lhik = 1, rhik = 1 }
+        },
     },
     ["dryfire_empty"] = {
         Source = "modeswitch_empty",
+        IKTimeLine = { 
+            { t = 0, lhik = 1, rhik = 2 },
+            { t = 1, lhik = 1, rhik = 1 }
+        },
     },
     ["bash"] = {
         Source = "bayonet",
@@ -955,28 +1166,6 @@ SWEP.AttachmentTableOverrides = {
     ["uplp_optic_pso_rail"] = { ModelOffset = Vector(0.7, 0, 0) },
     ["uplp_optic_dovetail_okp"] = { ModelOffset = Vector(0.8, 0.2, 0) },
 }
-
--- SWEP.NoForceSetLoadedRoundsOnReload = true
-
-SWEP.Hook_TranslateAnimation = function(swep, anim)
-    if !IsValid(swep:GetOwner()) then return end
-    local eles = swep:GetElements()
-
-    if anim == "idle" and swep.nosgreload then swep.nosgreload = nil end
-
-    if anim == "reload" or anim == "reload_empty" then swep.nosgreload = true end
-
-    swep.NoForceSetLoadedRoundsOnReload = nil
-
-    if anim == "reload_start" and swep:Clip1() == 1 then
-        swep.NoForceSetLoadedRoundsOnReload = true
-        swep:SetLoadedRounds(swep:Clip1()+1)
-    end
-
-    if anim == "cycle" and eles["mosin_sniper_bolt"] then
-        return "cycle_snip"
-    end
-end
 
 SWEP.AttachmentElements = {
     ["uplp_mosin_brl_long"] = { Bodygroups = { { 2, 1 } }, AttPosMods = { [4] = { Pos = Vector(0, 0.25, 31) } } },
