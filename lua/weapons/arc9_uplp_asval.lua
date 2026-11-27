@@ -931,6 +931,7 @@ SWEP.Attachments = {
     {
         PrintName = ARC9:GetPhrase("uplp_category_dovetail"),
         Category = {"uplp_optic_dovetail"},
+        KeepBaseIrons = true,
         DefaultIcon = Material(defatt .. "optic.png", "mips smooth"),
         Bone = "body",
         Pos = Vector(0.6, 2.8, 1),
