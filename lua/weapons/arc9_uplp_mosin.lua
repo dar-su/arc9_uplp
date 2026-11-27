@@ -207,7 +207,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0.0025 -- WW2 infantry rifles aren't that accurate comrade
-SWEP.SpreadAddHipFire = 0.05
+SWEP.SpreadAddHipFire = 0.05 * 0.5
 
 SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.015

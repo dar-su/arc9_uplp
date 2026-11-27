@@ -190,7 +190,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 
 -- Accuracy and Spread
 SWEP.Spread = 0
-SWEP.SpreadAddHipFire = 0.03
+SWEP.SpreadAddHipFire = 0.03 * 0.66
 
 SWEP.SpreadAddRecoil = 0
 SWEP.SpreadAddMove = 0.02

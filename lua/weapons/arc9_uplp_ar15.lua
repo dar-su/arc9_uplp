@@ -164,7 +164,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 -- This is 10 inch barrel! short as hell!
 SWEP.Spread = 0.008
-SWEP.SpreadAddHipFire = 0.025 - 0.01 -- buffer tube
+SWEP.SpreadAddHipFire = 0.0125 -- buffer tube
 
 SWEP.SpreadAddRecoil = 0.012
 SWEP.SpreadAddMove = 0.01

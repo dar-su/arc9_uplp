@@ -189,7 +189,7 @@ SWEP.VisualRecoilPositionBumpUpHipFire = .5
 -- Accuracy and Spread
 -- 8Z balance pass
 SWEP.Spread = 0.0025
-SWEP.SpreadAddHipFire = 0.025
+SWEP.SpreadAddHipFire = 0.02
 
 SWEP.SpreadAddRecoil = 0.015
 SWEP.SpreadAddMove = 0.014

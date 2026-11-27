@@ -13,5 +13,7 @@ Uhh third polyarm anniversary, not many guns this time but one very detailed one
 	[*] Triggers & action on all weapons are louder when aiming down now
 	[*] Pushka-23 & XAR fire got improved
 	[*] Heavy guns now use heavy casing sounds
+	[*] Dovetail sights now allow using ironsights
+	[*] Some guns should be more accurate in hipfire, although it's something that should be tackled deeper
 	[*] Some minor bug fixes
 [/list]

@@ -186,7 +186,7 @@ SWEP.RecoilModifierCap = 1
 -- 8Z balance pass
 -- 15" barrel
 SWEP.Spread = 0.0045
-SWEP.SpreadAddHipFire = 0.03 - 0.01 -- buffer tube
+SWEP.SpreadAddHipFire = 0.02 * 0.66 -- buffer tube
 
 SWEP.SpreadAddRecoil = 0.014
 SWEP.SpreadAddMove = 0.015
