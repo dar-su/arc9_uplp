@@ -213,6 +213,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag.mdl"
 ATT.ShellScale = 1.0
 ATT.EjectDelay = 0.35
+ATT.ShellSounds = ARC9.Shell308SoundsTable
 
 ATT.ActivateElements = {"uplp_awp_mag_awp"}
 
@@ -261,6 +262,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_big.mdl"
 ATT.ShellScale = 1.0
 ATT.EjectDelay = 0.35
+ATT.ShellSounds = ARC9.Shell308SoundsTable
 
 ATT.Hook_TranslateAnimation = function(wep, anim)
     if anim == "reload" or anim == "reload_empty" then
@@ -321,6 +323,7 @@ ATT.MenuCategory = "ARC9 - Poly Arms Attachments"
 ATT.DropMagazineModel = "models/weapons/arc9/uplp/awp_mag_tac.mdl"
 ATT.ShellScale = 1.0
 ATT.EjectDelay = 0.42
+ATT.ShellSounds = ARC9.Shell308SoundsTable
 
 ATT.ActivateElements = {"uplp_awp_mag_awp_tac"}
 
