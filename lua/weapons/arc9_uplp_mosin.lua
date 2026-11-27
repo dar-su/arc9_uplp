@@ -511,7 +511,7 @@ SWEP.Animations = {
         IKTimeLine = alwayslrhik,
     },
     ["cycle"] = {
-        Source = {"cycle"},
+        Source = {"cycle1", "cycle2"},
         MinProgress = 0.65,
         FireASAP = true,
         -- Mult = 1.1,
@@ -531,7 +531,7 @@ SWEP.Animations = {
         },
     },
     ["cycle_snip"] = {
-        Source = {"cycle"},
+        Source = {"cycle1", "cycle2"}, -- handled as poseparam, heres just to make diferrent sound timing
         MinProgress = 0.65,
         FireASAP = true,
         EventTable = {

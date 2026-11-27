@@ -118,11 +118,21 @@ $sequence "fire" {
 	fadeout 0.07
 }
 
-$sequence "cycle" {
+$sequence "cycle1" {
 	"anims\cycle.smd"
 	"anims\cycle_iron.smd"
 	"anims\cycle_snip.smd"
-	"anims\cycle_snip_iron2.smd"
+	"anims\cycle_snip_iron.smd"
+	blend "sights" 0 1
+	blend "owo" 0 1
+	fps 30
+}
+
+$sequence "cycle2" {
+	"anims\cycle2.smd"
+	"anims\cycle2_iron.smd"
+	"anims\cycle_snip2.smd"
+	"anims\cycle_snip2_iron.smd"
 	blend "sights" 0 1
 	blend "owo" 0 1
 	fps 30
