@@ -1143,8 +1143,12 @@ SWEP.Hook_ModifyElements = function(self, eles)
         eles["uplp_no_bayonet"] = true
     end
 
-    if eles["uplp_optic_dovetail_used"] and !eles["uplp_optic_dovetail_okp"] then
+    if eles["uplp_optic_dovetail_used"] then
         eles["mosin_sniper_bolt"] = true
+        
+        if !eles["uplp_optic_dovetail_okp"] then
+            eles["mosin_sgreload"] = true
+        end
     end
 
     if eles["uplp_mosin_closerail"] then
