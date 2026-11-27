@@ -2,18 +2,19 @@ Uhh third polyarm anniversary, not many guns this time but one very detailed one
 
 [h1]New content[/h1]
 [list]
-	[*] Added the [b]Three-Line[/b], a gun (say something about bayonet, stripper clip loading idk)
-	
-	[*] Added Simplified Chinese Translation (PR by WhatUziname7, thank you!)
+	[*] Added the [b]Three-Line[/b], a legendary bolt-action rifle.
+	[list]
+		[*] Comes with an optional-yet-functional [b]Bayonet[/b] attachment.
+		[*] Check out all the three unique inspect animations by [b]Partexedd[/b]!
+	[/list]
+	[*] Added Simplified Chinese Translation (Provided by WhatUziname7 - 谢谢你！)
 [/list]
-
 
 [h1]Changed content[/h1]
 [list]
-	[*] Triggers & action on all weapons are louder when aiming down now
-	[*] Pushka-23 & XAR fire got improved
-	[*] Heavy guns now use heavy casing sounds
-	[*] Dovetail sights now allow using ironsights
-	[*] Some guns should be more accurate in hipfire, although it's something that should be tackled deeper
-	[*] Some minor bug fixes
+	[*] Pushka-23 & XAR: Improved firing SFX
+	[*] Heavy weapons now use heavy casing SFX
+	[*] Dovetail sights can now utilize iron sights
+	[*] Trigger & action SFX are now louder when aiming
+	[*] Some weapons are more accurate when hip-firing - will expand in later updates
 [/list]
