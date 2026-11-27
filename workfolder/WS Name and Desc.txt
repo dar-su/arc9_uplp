@@ -1,3 +1,65 @@
+A stylish, low-poly, fast-paced, heavily customizable, and most of all, [b]FUN[/b] weapon pack!
+Made using custom assets and lots of love, all you need is the [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2910505837] ARC9 base! [/url]
+
+[img]https://i.imgur.com/YNwpOAA.png[/img]
+[img]https://i.imgur.com/dxZuiAn.png[/img]
+
+[hr][/hr]
+[h2][url=https://discord.gg/gdJBZh9NPR]🪀 Join our Discord server[/url][/h2]
+[h3][url=https://discord.gg/gdJBZh9NPR]to ask questions, follow up on new content, or hang out![/url][/h3]
+
+[hr][/hr]
+
+[h2]Some notes:[/h2] [list]
+[*] This addon has tons of weapons and attachments that suit [b]MY personal tastes[/b]!
+[*] All weapons include support for [b]Stickers[/b] and [b]Charms[/b] (unfortunately, camo support is not possible).
+[*] Includes C_Arms from [b]UnfixedCrayfish Low Poly Arms Rig[/b] and [b]Hozq Rig V4[/b]. Use [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2257795841] Enhanced PlayerModel Selector Fesiug's Edit [/url] (or any similar addon) to utilize them. They also have customizable sleeves and gloves.
+[*] [b][url=https://steamcommunity.com/id/shortnamesalex/myworkshopfiles/?appid=4000] Maps used in screenshots. [/url][/b] 
+[*] Most of the addon's size comes from the [i]models[/i].
+[*] If your attachments disappear when you install them, you might have too many addons installed. Disable or unsubscribe from a few of them, then restart.
+[*] If you are having issues in multiplayer, don't forget to disable physical bullets, and make sure to set the tickrate to 66 or above.
+[*] If you dislike the suppressor overheat mechanic, then open the [b]ARC9 Settings menu[/b], navigate to [b]Modifiers[/b], and disable [b]Enable Overheating[/b].
+[/list]
+
+[url=https://app.lava.top/darsu?donate=open][img]https://i.imgur.com/I9wFHzb.png[/img][/url]
+
+[b]Please don't suggest new guns, I'll add only the ones I myself want to :-)[/b]
+[h2]Have fun![/h2]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ------------ [ INFO ] ------------
 Includes the name and description for the PolyArms Project Workshop addon.
 If you want to add a translation to the project's page, please do a Pull Request editing this file.

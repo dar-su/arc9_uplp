@@ -1,0 +1,17 @@
+Uhh third polyarm anniversary, not many guns this time but one very detailed one made with love
+
+[h1]New content[/h1]
+[list]
+	[*] Added the [b]Three-Line[/b], a gun (say something about bayonet, stripper clip loading idk)
+	
+	[*] Added Simplified Chinese Translation (PR by WhatUziname7, thank you!)
+[/list]
+
+
+[h1]Changed content[/h1]
+[list]
+	[*] Triggers & action on all weapons are louder when aiming down now
+	[*] Pushka-23 & XAR fire got improved
+	[*] Heavy guns now use heavy casing sounds
+	[*] Some minor bug fixes
+[/list]
