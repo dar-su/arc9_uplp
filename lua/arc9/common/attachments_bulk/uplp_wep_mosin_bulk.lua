@@ -40,6 +40,9 @@ ATT.SpreadAddHipFire = 0.015
 
 ATT.MuzzleEffectQCA = 5
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mosin_brl_long")
 
 
@@ -78,12 +81,12 @@ ATT.SweetSpotOverride = false
 ATT.RangeMaxAdd = -50 / ARC9.HUToM
 ATT.DamageMinAdd = -2
 
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-4, -4, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-4, 0, 0) end
-
 ATT.MuzzleEffectQCA = 6
 
 -- ATT.ActivateElements = {"uplp_no_tactical"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(-5, -4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(-5, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_brl_obrez")
 
@@ -142,11 +145,8 @@ ATT.SpreadAddMove = 0.005
 ATT.SpeedAddSights = 0.1
 ATT.SpeedAdd = 0.05
 
--- ATT.VisualRecoilMult = 1.5
--- ATT.VisualRecoilPunchMultHipFire = 2
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, -4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_stock_obrez")
 
@@ -171,21 +171,6 @@ ATT.SpreadAddMove = 0.008
 ATT.SpeedAddSights = 0.15
 ATT.SpeedAdd = 0.1
 
--- ATT.RecoilAdd = 0.8
--- ATT.SwayAddSights = 0.75
--- ATT.AimDownSightsTimeAdd = -0.1
--- ATT.SprintToFireTimeAdd = -0.12
--- ATT.SpreadAddHipFire = -0.008
--- ATT.SpreadAddMove = 0.012
--- ATT.SpeedAddSights = 0.08
--- ATT.SpeedAdd = 0.03
-
--- ATT.VisualRecoilMult = 1.5
--- ATT.VisualRecoilPunchMultHipFire = 2
-
--- ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -3, 0) end
--- ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
-
 ATT.Model = "models/weapons/arc9/uplp/mosin_lrhik_pistol.mdl"
 ATT.ModelOffset = Vector(-6.5, -3.1, 4.4)
 ATT.ModelAngleOffset = Angle(0, 0, 0)
@@ -196,6 +181,9 @@ ATT.RHIK_Priority = 1
 
 ATT.ActivateElements = {"uplp_no_tactical"}
 ATT.ExcludeElements = {"uplp_optic_dovetail"}
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(4, -4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(4, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_stock_pgrip")
 
@@ -391,6 +379,9 @@ ATT.AnimMelee = ACT_FLINCH_SHOULDER_RIGHT
 
 ATT.ExcludeElements = {"uplp_no_bayonet"}
 
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(5, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(5, 0, 0) end
+
 ARC9.LoadAttachment(ATT, "uplp_mosin_bayonet")
 
 ---------- uplp_mosin_supp
@@ -426,6 +417,9 @@ ATT.DamageMaxAdd = -5
 ATT.AimDownSightsTimeAdd = 0.02
 
 -- ATT.MuzzleEffectQCA = 6
+
+ATT.CustomizePosHook = function(wep, vec) return vec + Vector(3, 4, 0) end
+ATT.CustomizeRotateAnchorHook = function(wep, vec) return vec + Vector(3, 0, 0) end
 
 ARC9.LoadAttachment(ATT, "uplp_mosin_supp")
 

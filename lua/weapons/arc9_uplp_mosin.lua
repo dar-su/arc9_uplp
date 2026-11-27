@@ -268,9 +268,9 @@ SWEP.IronSights = {
 SWEP.LaserCorrectIdle = Angle(-1.24211, 0.896527, -3.0788)
 
 -- Customization Menu Info
-SWEP.CustomizePos = Vector(16.5, 50, 5)
+SWEP.CustomizePos = Vector(15, 43, 3.5)
 SWEP.CustomizeAng = Angle(90, 0, 0)
-SWEP.CustomizeRotateAnchor = Vector(18.5, -2, -3)
+SWEP.CustomizeRotateAnchor = Vector(15, -3, -3)
 SWEP.CustomizeSnapshotPos = Vector(0, 30, 0)
 SWEP.CustomizeSnapshotFOV = 60
 
