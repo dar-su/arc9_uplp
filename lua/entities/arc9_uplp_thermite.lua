@@ -18,7 +18,7 @@ ENT.Armed = false
 ENT.NextDamageTick = 0
 ENT.Ticks = 0
 ENT.FireLength = 1
-ENT.FireRadius = 10
+ENT.FireRadius = 8
 
 function ENT:Initialize()
     self.SpawnTime = CurTime()
@@ -43,6 +43,8 @@ function ENT:Initialize()
             phys:SetBuoyancyRatio(0)
             phys:EnableMotion(true)
         end
+        
+        self:EmitSound("uplp_rz/common/therm_ignite.ogg", 140)
 
         self:Detonate()
 
@@ -119,6 +121,7 @@ function ENT:Think()
             end
         else
             self.Light.Pos = self:GetPos()
+            self.Light.Size = math.min(64, 96 * (1 - d))
         end
 
         local emitter = ParticleEmitter(self:GetPos())
@@ -273,7 +276,7 @@ function ENT:OnRemove()
 
     if not self.FireSound then return end
     self.FireSound:Stop()
-    self:EmitSound("weapons/cod2019/shared/weap_thermite_loop_end_01.ogg", 100)
+    -- self:EmitSound("weapons/cod2019/shared/weap_thermite_loop_end_01.ogg", 100)
     ParticleEffectAttach("arrow_thermite_smokeleft", PATTACH_ABSORIGIN_FOLLOW, self, 0)
 end
 
@@ -283,10 +286,10 @@ function ENT:Detonate()
     if self.Order and self.Order ~= 1 then return end
     --util.Decal("Scorch", self:GetPos(), self:GetPos() - Vector(0, 0, 50), self)
     -- self.FireSound = CreateSound(self, "tacrp_extras/grenades/fire_loop_1.wav")
-    self.FireSound = CreateSound(self, "weapons/cod2019/shared/weap_thermite_loop.ogg")
+    self.FireSound = CreateSound(self, "uplp_rz/common/therm_burn.ogg")
     self.FireSound:Play()
-    self.FireSound:ChangePitch(120)
-    self.FireSound:ChangePitch(100, self.FireTime)
+    -- self.FireSound:ChangePitch(120)
+    -- self.FireSound:ChangePitch(100, self.FireTime)
 
     -- self:FireBullets({
     -- Attacker = attacker,
