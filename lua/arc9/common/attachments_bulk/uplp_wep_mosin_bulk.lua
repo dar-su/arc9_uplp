@@ -356,10 +356,14 @@ ATT.BashRange = 124
 ATT.PreBashTime = 0.08
 ATT.PostBashTime = 0.6
 
+local multmel = GetConVar("arc9_uplp_mult_melee")
+
 ATT.BashDamageHook = function(wep, dmg)
 	if wep:GetSprintAmount() > 0.1 and !wep:GetUBGL() then
-		return dmg * 2
-	end
+		return dmg * (multmel:GetFloat() or 1) * 2
+    else
+        return dmg * (multmel:GetFloat() or 1)
+    end
 end
 
     -- return self:MeleeAttack()
