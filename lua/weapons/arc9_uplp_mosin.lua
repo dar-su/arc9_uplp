@@ -576,22 +576,22 @@ SWEP.Animations = {
         Source = "draw",
         FireASAP = true,
         MinProgressTime = 0.5 / 0.8,
-        Mult = 0.8,
+        Mult = 1,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
             { s = UTCloth, t = 0, v = 0.3 },
             { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
-            { t = 0,    lhik = 0, rhik = 1 },
-            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0,    lhik = 1, rhik = 0 },
+            { t = 0.15, lhik = 1, rhik = 0 },
             { t = 0.7,  lhik = 1, rhik = 1 },
         },
     },
     ["draw_empty"] = {
         Source = "draw_empty",
         MinProgressTime = 0.5 / 0.8,
-        Mult = 0.8,
+        Mult = 1,
         FireASAP = true,
         EventTable = {
             { s = pathUTC .. "raise.ogg", t = 0.1, v = 0.8 },
@@ -599,8 +599,8 @@ SWEP.Animations = {
             { s = UTCrattle, t = 5 / 30, v = 0.6 },
         },
         IKTimeLine = {
-            { t = 0,    lhik = 0, rhik = 1 },
-            { t = 0.15, lhik = 0, rhik = 1 },
+            { t = 0,    lhik = 1, rhik = 0 },
+            { t = 0.15, lhik = 1, rhik = 0 },
             { t = 0.7,  lhik = 1, rhik = 1 },
         },
     },
